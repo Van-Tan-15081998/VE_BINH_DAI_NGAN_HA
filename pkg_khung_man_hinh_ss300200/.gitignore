@@ -29,3 +29,5 @@ migrate_working_dir/
 .flutter-plugins
 .flutter-plugins-dependencies
 build/
+/.flutter-plugins-dependencies
+/pkg_khung_man_hinh_ss300200.iml
