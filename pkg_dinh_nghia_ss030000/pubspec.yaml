@@ -1,0 +1,655 @@
+name: pkg_dinh_nghia_ss030000
+description: "A new Flutter package project."
+version: 0.0.1
+publish_to: 'none'
+homepage: ''
+
+environment:
+  sdk: ^3.7.2
+  flutter: ">=1.17.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  pkg_dinh_nghia_ss020:
+    path: ../pkg_dinh_nghia_ss020
+  pkg_dinh_nghia_ss022:
+    path: ../pkg_dinh_nghia_ss022
+  pkg_dinh_nghia_ss030:
+    path: ../pkg_dinh_nghia_ss030
+  pkg_dinh_nghia_ss050:
+    path: ../pkg_dinh_nghia_ss050
+
+  pkg_dinh_nghia_ss020000:
+    path: ../pkg_dinh_nghia_ss020000
+  pkg_dinh_nghia_ss028000:
+    path: ../pkg_dinh_nghia_ss028000
+
+dev_dependencies:
+#  flutter_test:
+#    sdk: flutter
+  flutter_lints: ^5.0.0
+
+# For information on the generic Dart part of this file, see the
+# following page: https://dart.dev/tools/pub/pubspec
+
+# The following section is specific to Flutter packages.
+flutter:
+
+  # To add assets to your package, add an assets section, like this:
+   assets:
+     - lib/600_def00620/ADef020_0/08_SubDefs/Def020_2/02_SpriteStore/Def025_4/
+     - lib/600_def00620/ADef020_0/08_SubDefs/Def020_2/02_SpriteStore/Def200_4/
+     - lib/600_def00620/ADef020_0/08_SubDefs/Def030_2/02_SpriteStore/Def025_4/
+     - lib/600_def00620/ADef020_0/08_SubDefs/Def030_2/02_SpriteStore/Def200_4/
+     - lib/600_def00620/ADef020_0/08_SubDefs/Def040_2/02_SpriteStore/Def025_4/
+     - lib/600_def00620/ADef020_0/08_SubDefs/Def040_2/02_SpriteStore/Def200_4/
+
+     - lib/600_def00640/ADef010_0/08_SubDefs/Def020_2/02_SpriteStore/Def025_4/
+     - lib/600_def00640/ADef010_0/08_SubDefs/Def020_2/02_SpriteStore/Def200_4/
+     - lib/600_def00640/ADef010_0/08_SubDefs/Def030_2/02_SpriteStore/Def025_4/
+     - lib/600_def00640/ADef010_0/08_SubDefs/Def030_2/02_SpriteStore/Def200_4/
+     - lib/600_def00640/ADef010_0/08_SubDefs/Def040_2/02_SpriteStore/Def025_4/
+     - lib/600_def00640/ADef010_0/08_SubDefs/Def040_2/02_SpriteStore/Def200_4/
+
+     - lib/600_def00640/ADef020_0/08_SubDefs/Def020_2/02_SpriteStore/Def025_4/
+     - lib/600_def00640/ADef020_0/08_SubDefs/Def020_2/02_SpriteStore/Def200_4/
+     - lib/600_def00640/ADef020_0/08_SubDefs/Def030_2/02_SpriteStore/Def025_4/
+     - lib/600_def00640/ADef020_0/08_SubDefs/Def030_2/02_SpriteStore/Def200_4/
+     - lib/600_def00640/ADef020_0/08_SubDefs/Def040_2/02_SpriteStore/Def025_4/
+     - lib/600_def00640/ADef020_0/08_SubDefs/Def040_2/02_SpriteStore/Def200_4/
+
+     - lib/600_def00640/ADef030_0/08_SubDefs/Def020_2/02_SpriteStore/Def025_4/
+     - lib/600_def00640/ADef030_0/08_SubDefs/Def020_2/02_SpriteStore/Def200_4/
+     - lib/600_def00640/ADef030_0/08_SubDefs/Def030_2/02_SpriteStore/Def025_4/
+     - lib/600_def00640/ADef030_0/08_SubDefs/Def030_2/02_SpriteStore/Def200_4/
+     - lib/600_def00640/ADef030_0/08_SubDefs/Def040_2/02_SpriteStore/Def025_4/
+     - lib/600_def00640/ADef030_0/08_SubDefs/Def040_2/02_SpriteStore/Def200_4/
+
+     - lib/600_def00640/ADef040_0/08_SubDefs/Def020_2/02_SpriteStore/Def025_4/
+     - lib/600_def00640/ADef040_0/08_SubDefs/Def020_2/02_SpriteStore/Def200_4/
+     - lib/600_def00640/ADef040_0/08_SubDefs/Def030_2/02_SpriteStore/Def025_4/
+     - lib/600_def00640/ADef040_0/08_SubDefs/Def030_2/02_SpriteStore/Def200_4/
+     - lib/600_def00640/ADef040_0/08_SubDefs/Def040_2/02_SpriteStore/Def025_4/
+     - lib/600_def00640/ADef040_0/08_SubDefs/Def040_2/02_SpriteStore/Def200_4/
+
+     - lib/600_def00640/ADef050_0/08_SubDefs/Def020_2/02_SpriteStore/Def025_4/
+     - lib/600_def00640/ADef050_0/08_SubDefs/Def020_2/02_SpriteStore/Def200_4/
+     - lib/600_def00640/ADef050_0/08_SubDefs/Def030_2/02_SpriteStore/Def025_4/
+     - lib/600_def00640/ADef050_0/08_SubDefs/Def030_2/02_SpriteStore/Def200_4/
+     - lib/600_def00640/ADef050_0/08_SubDefs/Def040_2/02_SpriteStore/Def025_4/
+     - lib/600_def00640/ADef050_0/08_SubDefs/Def040_2/02_SpriteStore/Def200_4/
+
+     - lib/600_def00640/ADef060_0/08_SubDefs/Def020_2/02_SpriteStore/Def025_4/
+     - lib/600_def00640/ADef060_0/08_SubDefs/Def020_2/02_SpriteStore/Def200_4/
+     - lib/600_def00640/ADef060_0/08_SubDefs/Def030_2/02_SpriteStore/Def025_4/
+     - lib/600_def00640/ADef060_0/08_SubDefs/Def030_2/02_SpriteStore/Def200_4/
+     - lib/600_def00640/ADef060_0/08_SubDefs/Def040_2/02_SpriteStore/Def025_4/
+     - lib/600_def00640/ADef060_0/08_SubDefs/Def040_2/02_SpriteStore/Def200_4/
+
+     - lib/600_def00640/ADef070_0/08_SubDefs/Def020_2/02_SpriteStore/Def025_4/
+     - lib/600_def00640/ADef070_0/08_SubDefs/Def020_2/02_SpriteStore/Def200_4/
+     - lib/600_def00640/ADef070_0/08_SubDefs/Def030_2/02_SpriteStore/Def025_4/
+     - lib/600_def00640/ADef070_0/08_SubDefs/Def030_2/02_SpriteStore/Def200_4/
+     - lib/600_def00640/ADef070_0/08_SubDefs/Def040_2/02_SpriteStore/Def025_4/
+     - lib/600_def00640/ADef070_0/08_SubDefs/Def040_2/02_SpriteStore/Def200_4/
+
+     - lib/600_def00640/ADef080_0/08_SubDefs/Def020_2/02_SpriteStore/Def025_4/
+     - lib/600_def00640/ADef080_0/08_SubDefs/Def020_2/02_SpriteStore/Def200_4/
+     - lib/600_def00640/ADef080_0/08_SubDefs/Def030_2/02_SpriteStore/Def025_4/
+     - lib/600_def00640/ADef080_0/08_SubDefs/Def030_2/02_SpriteStore/Def200_4/
+     - lib/600_def00640/ADef080_0/08_SubDefs/Def040_2/02_SpriteStore/Def025_4/
+     - lib/600_def00640/ADef080_0/08_SubDefs/Def040_2/02_SpriteStore/Def200_4/
+
+     - lib/600_def00640/ADef090_0/08_SubDefs/Def020_2/02_SpriteStore/Def025_4/
+     - lib/600_def00640/ADef090_0/08_SubDefs/Def020_2/02_SpriteStore/Def200_4/
+     - lib/600_def00640/ADef090_0/08_SubDefs/Def030_2/02_SpriteStore/Def025_4/
+     - lib/600_def00640/ADef090_0/08_SubDefs/Def030_2/02_SpriteStore/Def200_4/
+     - lib/600_def00640/ADef090_0/08_SubDefs/Def040_2/02_SpriteStore/Def025_4/
+     - lib/600_def00640/ADef090_0/08_SubDefs/Def040_2/02_SpriteStore/Def200_4/
+
+     - lib/600_def00640/ADef100_0/08_SubDefs/Def020_2/02_SpriteStore/Def025_4/
+     - lib/600_def00640/ADef100_0/08_SubDefs/Def020_2/02_SpriteStore/Def200_4/
+     - lib/600_def00640/ADef100_0/08_SubDefs/Def030_2/02_SpriteStore/Def025_4/
+     - lib/600_def00640/ADef100_0/08_SubDefs/Def030_2/02_SpriteStore/Def200_4/
+     - lib/600_def00640/ADef100_0/08_SubDefs/Def040_2/02_SpriteStore/Def025_4/
+     - lib/600_def00640/ADef100_0/08_SubDefs/Def040_2/02_SpriteStore/Def200_4/
+
+     - lib/600_def00640/ADef110_0/08_SubDefs/Def020_2/02_SpriteStore/Def025_4/
+     - lib/600_def00640/ADef110_0/08_SubDefs/Def020_2/02_SpriteStore/Def200_4/
+     - lib/600_def00640/ADef110_0/08_SubDefs/Def030_2/02_SpriteStore/Def025_4/
+     - lib/600_def00640/ADef110_0/08_SubDefs/Def030_2/02_SpriteStore/Def200_4/
+     - lib/600_def00640/ADef110_0/08_SubDefs/Def040_2/02_SpriteStore/Def025_4/
+     - lib/600_def00640/ADef110_0/08_SubDefs/Def040_2/02_SpriteStore/Def200_4/
+
+     - lib/600_def00640/ADef120_0/08_SubDefs/Def020_2/02_SpriteStore/Def025_4/
+     - lib/600_def00640/ADef120_0/08_SubDefs/Def020_2/02_SpriteStore/Def200_4/
+     - lib/600_def00640/ADef120_0/08_SubDefs/Def030_2/02_SpriteStore/Def025_4/
+     - lib/600_def00640/ADef120_0/08_SubDefs/Def030_2/02_SpriteStore/Def200_4/
+     - lib/600_def00640/ADef120_0/08_SubDefs/Def040_2/02_SpriteStore/Def025_4/
+     - lib/600_def00640/ADef120_0/08_SubDefs/Def040_2/02_SpriteStore/Def200_4/
+
+     - lib/600_def00640/ADef130_0/08_SubDefs/Def020_2/02_SpriteStore/Def025_4/
+     - lib/600_def00640/ADef130_0/08_SubDefs/Def020_2/02_SpriteStore/Def200_4/
+     - lib/600_def00640/ADef130_0/08_SubDefs/Def030_2/02_SpriteStore/Def025_4/
+     - lib/600_def00640/ADef130_0/08_SubDefs/Def030_2/02_SpriteStore/Def200_4/
+     - lib/600_def00640/ADef130_0/08_SubDefs/Def040_2/02_SpriteStore/Def025_4/
+     - lib/600_def00640/ADef130_0/08_SubDefs/Def040_2/02_SpriteStore/Def200_4/
+
+     - lib/600_def00640/ADef140_0/08_SubDefs/Def020_2/02_SpriteStore/Def025_4/
+     - lib/600_def00640/ADef140_0/08_SubDefs/Def020_2/02_SpriteStore/Def200_4/
+     - lib/600_def00640/ADef140_0/08_SubDefs/Def030_2/02_SpriteStore/Def025_4/
+     - lib/600_def00640/ADef140_0/08_SubDefs/Def030_2/02_SpriteStore/Def200_4/
+     - lib/600_def00640/ADef140_0/08_SubDefs/Def040_2/02_SpriteStore/Def025_4/
+     - lib/600_def00640/ADef140_0/08_SubDefs/Def040_2/02_SpriteStore/Def200_4/
+
+     - lib/600_def00640/ADef150_0/08_SubDefs/Def020_2/02_SpriteStore/Def025_4/
+     - lib/600_def00640/ADef150_0/08_SubDefs/Def020_2/02_SpriteStore/Def200_4/
+     - lib/600_def00640/ADef150_0/08_SubDefs/Def030_2/02_SpriteStore/Def025_4/
+     - lib/600_def00640/ADef150_0/08_SubDefs/Def030_2/02_SpriteStore/Def200_4/
+     - lib/600_def00640/ADef150_0/08_SubDefs/Def040_2/02_SpriteStore/Def025_4/
+     - lib/600_def00640/ADef150_0/08_SubDefs/Def040_2/02_SpriteStore/Def200_4/
+
+     - lib/600_def00660/ADef010_0/08_SubDefs/Def020_2/02_SpriteStore/Def025_4/
+     - lib/600_def00660/ADef010_0/08_SubDefs/Def020_2/02_SpriteStore/Def200_4/
+     - lib/600_def00660/ADef010_0/08_SubDefs/Def030_2/02_SpriteStore/Def025_4/
+     - lib/600_def00660/ADef010_0/08_SubDefs/Def030_2/02_SpriteStore/Def200_4/
+     - lib/600_def00660/ADef010_0/08_SubDefs/Def040_2/02_SpriteStore/Def025_4/
+     - lib/600_def00660/ADef010_0/08_SubDefs/Def040_2/02_SpriteStore/Def200_4/
+
+     - lib/600_def00660/ADef020_0/08_SubDefs/Def020_2/02_SpriteStore/Def025_4/
+     - lib/600_def00660/ADef020_0/08_SubDefs/Def020_2/02_SpriteStore/Def200_4/
+     - lib/600_def00660/ADef020_0/08_SubDefs/Def030_2/02_SpriteStore/Def025_4/
+     - lib/600_def00660/ADef020_0/08_SubDefs/Def030_2/02_SpriteStore/Def200_4/
+     - lib/600_def00660/ADef020_0/08_SubDefs/Def040_2/02_SpriteStore/Def025_4/
+     - lib/600_def00660/ADef020_0/08_SubDefs/Def040_2/02_SpriteStore/Def200_4/
+
+     - lib/600_def00660/ADef030_0/08_SubDefs/Def020_2/02_SpriteStore/Def025_4/
+     - lib/600_def00660/ADef030_0/08_SubDefs/Def020_2/02_SpriteStore/Def200_4/
+     - lib/600_def00660/ADef030_0/08_SubDefs/Def030_2/02_SpriteStore/Def025_4/
+     - lib/600_def00660/ADef030_0/08_SubDefs/Def030_2/02_SpriteStore/Def200_4/
+     - lib/600_def00660/ADef030_0/08_SubDefs/Def040_2/02_SpriteStore/Def025_4/
+     - lib/600_def00660/ADef030_0/08_SubDefs/Def040_2/02_SpriteStore/Def200_4/
+
+     - lib/600_def00660/ADef040_0/08_SubDefs/Def020_2/02_SpriteStore/Def025_4/
+     - lib/600_def00660/ADef040_0/08_SubDefs/Def020_2/02_SpriteStore/Def200_4/
+     - lib/600_def00660/ADef040_0/08_SubDefs/Def030_2/02_SpriteStore/Def025_4/
+     - lib/600_def00660/ADef040_0/08_SubDefs/Def030_2/02_SpriteStore/Def200_4/
+     - lib/600_def00660/ADef040_0/08_SubDefs/Def040_2/02_SpriteStore/Def025_4/
+     - lib/600_def00660/ADef040_0/08_SubDefs/Def040_2/02_SpriteStore/Def200_4/
+
+     - lib/600_def00660/ADef050_0/08_SubDefs/Def020_2/02_SpriteStore/Def025_4/
+     - lib/600_def00660/ADef050_0/08_SubDefs/Def020_2/02_SpriteStore/Def200_4/
+     - lib/600_def00660/ADef050_0/08_SubDefs/Def030_2/02_SpriteStore/Def025_4/
+     - lib/600_def00660/ADef050_0/08_SubDefs/Def030_2/02_SpriteStore/Def200_4/
+     - lib/600_def00660/ADef050_0/08_SubDefs/Def040_2/02_SpriteStore/Def025_4/
+     - lib/600_def00660/ADef050_0/08_SubDefs/Def040_2/02_SpriteStore/Def200_4/
+
+     - lib/600_def00660/ADef060_0/08_SubDefs/Def020_2/02_SpriteStore/Def025_4/
+     - lib/600_def00660/ADef060_0/08_SubDefs/Def020_2/02_SpriteStore/Def200_4/
+     - lib/600_def00660/ADef060_0/08_SubDefs/Def030_2/02_SpriteStore/Def025_4/
+     - lib/600_def00660/ADef060_0/08_SubDefs/Def030_2/02_SpriteStore/Def200_4/
+     - lib/600_def00660/ADef060_0/08_SubDefs/Def040_2/02_SpriteStore/Def025_4/
+     - lib/600_def00660/ADef060_0/08_SubDefs/Def040_2/02_SpriteStore/Def200_4/
+
+     - lib/600_def00660/ADef070_0/08_SubDefs/Def020_2/02_SpriteStore/Def025_4/
+     - lib/600_def00660/ADef070_0/08_SubDefs/Def020_2/02_SpriteStore/Def200_4/
+     - lib/600_def00660/ADef070_0/08_SubDefs/Def030_2/02_SpriteStore/Def025_4/
+     - lib/600_def00660/ADef070_0/08_SubDefs/Def030_2/02_SpriteStore/Def200_4/
+     - lib/600_def00660/ADef070_0/08_SubDefs/Def040_2/02_SpriteStore/Def025_4/
+     - lib/600_def00660/ADef070_0/08_SubDefs/Def040_2/02_SpriteStore/Def200_4/
+
+     - lib/600_def00660/ADef080_0/08_SubDefs/Def020_2/02_SpriteStore/Def025_4/
+     - lib/600_def00660/ADef080_0/08_SubDefs/Def020_2/02_SpriteStore/Def200_4/
+     - lib/600_def00660/ADef080_0/08_SubDefs/Def030_2/02_SpriteStore/Def025_4/
+     - lib/600_def00660/ADef080_0/08_SubDefs/Def030_2/02_SpriteStore/Def200_4/
+     - lib/600_def00660/ADef080_0/08_SubDefs/Def040_2/02_SpriteStore/Def025_4/
+     - lib/600_def00660/ADef080_0/08_SubDefs/Def040_2/02_SpriteStore/Def200_4/
+
+     - lib/600_def00660/ADef090_0/08_SubDefs/Def020_2/02_SpriteStore/Def025_4/
+     - lib/600_def00660/ADef090_0/08_SubDefs/Def020_2/02_SpriteStore/Def200_4/
+     - lib/600_def00660/ADef090_0/08_SubDefs/Def030_2/02_SpriteStore/Def025_4/
+     - lib/600_def00660/ADef090_0/08_SubDefs/Def030_2/02_SpriteStore/Def200_4/
+     - lib/600_def00660/ADef090_0/08_SubDefs/Def040_2/02_SpriteStore/Def025_4/
+     - lib/600_def00660/ADef090_0/08_SubDefs/Def040_2/02_SpriteStore/Def200_4/
+
+     - lib/600_def00660/ADef100_0/08_SubDefs/Def020_2/02_SpriteStore/Def025_4/
+     - lib/600_def00660/ADef100_0/08_SubDefs/Def020_2/02_SpriteStore/Def200_4/
+     - lib/600_def00660/ADef100_0/08_SubDefs/Def030_2/02_SpriteStore/Def025_4/
+     - lib/600_def00660/ADef100_0/08_SubDefs/Def030_2/02_SpriteStore/Def200_4/
+     - lib/600_def00660/ADef100_0/08_SubDefs/Def040_2/02_SpriteStore/Def025_4/
+     - lib/600_def00660/ADef100_0/08_SubDefs/Def040_2/02_SpriteStore/Def200_4/
+
+     # _____[PHUONG_TIEN_MONSTER_THONG_SOAI_TOI_CAO]_____
+
+     - lib/600_def00820/ADef010_0/08_SubDefs/Def020_2/02_SpriteStore/Def025_4/
+     - lib/600_def00820/ADef010_0/08_SubDefs/Def030_2/02_SpriteStore/Def025_4/
+     - lib/600_def00820/ADef010_0/08_SubDefs/Def040_2/02_SpriteStore/Def025_4/
+     - lib/600_def00820/ADef010_0/08_SubDefs/Def050_2/02_SpriteStore/Def025_4/
+     - lib/600_def00820/ADef010_0/08_SubDefs/Def060_2/02_SpriteStore/Def025_4/
+
+     - lib/600_def00820/ADef010_0/08_SubDefs/Def020_2/02_SpriteStore/Def200_4/
+     - lib/600_def00820/ADef010_0/08_SubDefs/Def030_2/02_SpriteStore/Def200_4/
+     - lib/600_def00820/ADef010_0/08_SubDefs/Def040_2/02_SpriteStore/Def200_4/
+     - lib/600_def00820/ADef010_0/08_SubDefs/Def050_2/02_SpriteStore/Def200_4/
+     - lib/600_def00820/ADef010_0/08_SubDefs/Def060_2/02_SpriteStore/Def200_4/
+
+     - lib/600_def00820/ADef020_0/08_SubDefs/Def020_2/02_SpriteStore/Def025_4/
+     - lib/600_def00820/ADef020_0/08_SubDefs/Def030_2/02_SpriteStore/Def025_4/
+     - lib/600_def00820/ADef020_0/08_SubDefs/Def040_2/02_SpriteStore/Def025_4/
+     - lib/600_def00820/ADef020_0/08_SubDefs/Def050_2/02_SpriteStore/Def025_4/
+     - lib/600_def00820/ADef020_0/08_SubDefs/Def060_2/02_SpriteStore/Def025_4/
+
+     - lib/600_def00820/ADef020_0/08_SubDefs/Def020_2/02_SpriteStore/Def200_4/
+     - lib/600_def00820/ADef020_0/08_SubDefs/Def030_2/02_SpriteStore/Def200_4/
+     - lib/600_def00820/ADef020_0/08_SubDefs/Def040_2/02_SpriteStore/Def200_4/
+     - lib/600_def00820/ADef020_0/08_SubDefs/Def050_2/02_SpriteStore/Def200_4/
+     - lib/600_def00820/ADef020_0/08_SubDefs/Def060_2/02_SpriteStore/Def200_4/
+
+     - lib/600_def00820/ADef030_0/08_SubDefs/Def020_2/02_SpriteStore/Def025_4/
+     - lib/600_def00820/ADef030_0/08_SubDefs/Def030_2/02_SpriteStore/Def025_4/
+     - lib/600_def00820/ADef030_0/08_SubDefs/Def040_2/02_SpriteStore/Def025_4/
+     - lib/600_def00820/ADef030_0/08_SubDefs/Def050_2/02_SpriteStore/Def025_4/
+     - lib/600_def00820/ADef030_0/08_SubDefs/Def060_2/02_SpriteStore/Def025_4/
+
+     - lib/600_def00820/ADef030_0/08_SubDefs/Def020_2/02_SpriteStore/Def200_4/
+     - lib/600_def00820/ADef030_0/08_SubDefs/Def030_2/02_SpriteStore/Def200_4/
+     - lib/600_def00820/ADef030_0/08_SubDefs/Def040_2/02_SpriteStore/Def200_4/
+     - lib/600_def00820/ADef030_0/08_SubDefs/Def050_2/02_SpriteStore/Def200_4/
+     - lib/600_def00820/ADef030_0/08_SubDefs/Def060_2/02_SpriteStore/Def200_4/
+
+     - lib/600_def00820/ADef040_0/08_SubDefs/Def020_2/02_SpriteStore/Def025_4/
+     - lib/600_def00820/ADef040_0/08_SubDefs/Def030_2/02_SpriteStore/Def025_4/
+     - lib/600_def00820/ADef040_0/08_SubDefs/Def040_2/02_SpriteStore/Def025_4/
+     - lib/600_def00820/ADef040_0/08_SubDefs/Def050_2/02_SpriteStore/Def025_4/
+     - lib/600_def00820/ADef040_0/08_SubDefs/Def060_2/02_SpriteStore/Def025_4/
+
+     - lib/600_def00820/ADef040_0/08_SubDefs/Def020_2/02_SpriteStore/Def200_4/
+     - lib/600_def00820/ADef040_0/08_SubDefs/Def030_2/02_SpriteStore/Def200_4/
+     - lib/600_def00820/ADef040_0/08_SubDefs/Def040_2/02_SpriteStore/Def200_4/
+     - lib/600_def00820/ADef040_0/08_SubDefs/Def050_2/02_SpriteStore/Def200_4/
+     - lib/600_def00820/ADef040_0/08_SubDefs/Def060_2/02_SpriteStore/Def200_4/
+
+     - lib/600_def00820/ADef050_0/08_SubDefs/Def020_2/02_SpriteStore/Def025_4/
+     - lib/600_def00820/ADef050_0/08_SubDefs/Def030_2/02_SpriteStore/Def025_4/
+     - lib/600_def00820/ADef050_0/08_SubDefs/Def040_2/02_SpriteStore/Def025_4/
+     - lib/600_def00820/ADef050_0/08_SubDefs/Def050_2/02_SpriteStore/Def025_4/
+     - lib/600_def00820/ADef050_0/08_SubDefs/Def060_2/02_SpriteStore/Def025_4/
+
+     - lib/600_def00820/ADef050_0/08_SubDefs/Def020_2/02_SpriteStore/Def200_4/
+     - lib/600_def00820/ADef050_0/08_SubDefs/Def030_2/02_SpriteStore/Def200_4/
+     - lib/600_def00820/ADef050_0/08_SubDefs/Def040_2/02_SpriteStore/Def200_4/
+     - lib/600_def00820/ADef050_0/08_SubDefs/Def050_2/02_SpriteStore/Def200_4/
+     - lib/600_def00820/ADef050_0/08_SubDefs/Def060_2/02_SpriteStore/Def200_4/
+
+     - lib/600_def00820/ADef060_0/08_SubDefs/Def020_2/02_SpriteStore/Def025_4/
+     - lib/600_def00820/ADef060_0/08_SubDefs/Def030_2/02_SpriteStore/Def025_4/
+     - lib/600_def00820/ADef060_0/08_SubDefs/Def040_2/02_SpriteStore/Def025_4/
+     - lib/600_def00820/ADef060_0/08_SubDefs/Def050_2/02_SpriteStore/Def025_4/
+     - lib/600_def00820/ADef060_0/08_SubDefs/Def060_2/02_SpriteStore/Def025_4/
+
+     - lib/600_def00820/ADef060_0/08_SubDefs/Def020_2/02_SpriteStore/Def200_4/
+     - lib/600_def00820/ADef060_0/08_SubDefs/Def030_2/02_SpriteStore/Def200_4/
+     - lib/600_def00820/ADef060_0/08_SubDefs/Def040_2/02_SpriteStore/Def200_4/
+     - lib/600_def00820/ADef060_0/08_SubDefs/Def050_2/02_SpriteStore/Def200_4/
+     - lib/600_def00820/ADef060_0/08_SubDefs/Def060_2/02_SpriteStore/Def200_4/
+
+     - lib/600_def00820/ADef070_0/08_SubDefs/Def020_2/02_SpriteStore/Def025_4/
+     - lib/600_def00820/ADef070_0/08_SubDefs/Def030_2/02_SpriteStore/Def025_4/
+     - lib/600_def00820/ADef070_0/08_SubDefs/Def040_2/02_SpriteStore/Def025_4/
+     - lib/600_def00820/ADef070_0/08_SubDefs/Def050_2/02_SpriteStore/Def025_4/
+     - lib/600_def00820/ADef070_0/08_SubDefs/Def060_2/02_SpriteStore/Def025_4/
+
+     - lib/600_def00820/ADef070_0/08_SubDefs/Def020_2/02_SpriteStore/Def200_4/
+     - lib/600_def00820/ADef070_0/08_SubDefs/Def030_2/02_SpriteStore/Def200_4/
+     - lib/600_def00820/ADef070_0/08_SubDefs/Def040_2/02_SpriteStore/Def200_4/
+     - lib/600_def00820/ADef070_0/08_SubDefs/Def050_2/02_SpriteStore/Def200_4/
+     - lib/600_def00820/ADef070_0/08_SubDefs/Def060_2/02_SpriteStore/Def200_4/
+
+     - lib/600_def00820/ADef080_0/08_SubDefs/Def020_2/02_SpriteStore/Def025_4/
+     - lib/600_def00820/ADef080_0/08_SubDefs/Def030_2/02_SpriteStore/Def025_4/
+     - lib/600_def00820/ADef080_0/08_SubDefs/Def040_2/02_SpriteStore/Def025_4/
+     - lib/600_def00820/ADef080_0/08_SubDefs/Def050_2/02_SpriteStore/Def025_4/
+     - lib/600_def00820/ADef080_0/08_SubDefs/Def060_2/02_SpriteStore/Def025_4/
+
+     - lib/600_def00820/ADef080_0/08_SubDefs/Def020_2/02_SpriteStore/Def200_4/
+     - lib/600_def00820/ADef080_0/08_SubDefs/Def030_2/02_SpriteStore/Def200_4/
+     - lib/600_def00820/ADef080_0/08_SubDefs/Def040_2/02_SpriteStore/Def200_4/
+     - lib/600_def00820/ADef080_0/08_SubDefs/Def050_2/02_SpriteStore/Def200_4/
+     - lib/600_def00820/ADef080_0/08_SubDefs/Def060_2/02_SpriteStore/Def200_4/
+
+     - lib/600_def00820/ADef090_0/08_SubDefs/Def020_2/02_SpriteStore/Def025_4/
+     - lib/600_def00820/ADef090_0/08_SubDefs/Def030_2/02_SpriteStore/Def025_4/
+     - lib/600_def00820/ADef090_0/08_SubDefs/Def040_2/02_SpriteStore/Def025_4/
+     - lib/600_def00820/ADef090_0/08_SubDefs/Def050_2/02_SpriteStore/Def025_4/
+     - lib/600_def00820/ADef090_0/08_SubDefs/Def060_2/02_SpriteStore/Def025_4/
+
+     - lib/600_def00820/ADef090_0/08_SubDefs/Def020_2/02_SpriteStore/Def200_4/
+     - lib/600_def00820/ADef090_0/08_SubDefs/Def030_2/02_SpriteStore/Def200_4/
+     - lib/600_def00820/ADef090_0/08_SubDefs/Def040_2/02_SpriteStore/Def200_4/
+     - lib/600_def00820/ADef090_0/08_SubDefs/Def050_2/02_SpriteStore/Def200_4/
+     - lib/600_def00820/ADef090_0/08_SubDefs/Def060_2/02_SpriteStore/Def200_4/
+
+     - lib/600_def00820/ADef100_0/08_SubDefs/Def020_2/02_SpriteStore/Def025_4/
+     - lib/600_def00820/ADef100_0/08_SubDefs/Def030_2/02_SpriteStore/Def025_4/
+     - lib/600_def00820/ADef100_0/08_SubDefs/Def040_2/02_SpriteStore/Def025_4/
+     - lib/600_def00820/ADef100_0/08_SubDefs/Def050_2/02_SpriteStore/Def025_4/
+     - lib/600_def00820/ADef100_0/08_SubDefs/Def060_2/02_SpriteStore/Def025_4/
+
+     - lib/600_def00820/ADef100_0/08_SubDefs/Def020_2/02_SpriteStore/Def200_4/
+     - lib/600_def00820/ADef100_0/08_SubDefs/Def030_2/02_SpriteStore/Def200_4/
+     - lib/600_def00820/ADef100_0/08_SubDefs/Def040_2/02_SpriteStore/Def200_4/
+     - lib/600_def00820/ADef100_0/08_SubDefs/Def050_2/02_SpriteStore/Def200_4/
+     - lib/600_def00820/ADef100_0/08_SubDefs/Def060_2/02_SpriteStore/Def200_4/
+
+     - lib/600_def00820/ADef110_0/08_SubDefs/Def020_2/02_SpriteStore/Def025_4/
+     - lib/600_def00820/ADef110_0/08_SubDefs/Def030_2/02_SpriteStore/Def025_4/
+     - lib/600_def00820/ADef110_0/08_SubDefs/Def040_2/02_SpriteStore/Def025_4/
+     - lib/600_def00820/ADef110_0/08_SubDefs/Def050_2/02_SpriteStore/Def025_4/
+     - lib/600_def00820/ADef110_0/08_SubDefs/Def060_2/02_SpriteStore/Def025_4/
+
+     - lib/600_def00820/ADef110_0/08_SubDefs/Def020_2/02_SpriteStore/Def200_4/
+     - lib/600_def00820/ADef110_0/08_SubDefs/Def030_2/02_SpriteStore/Def200_4/
+     - lib/600_def00820/ADef110_0/08_SubDefs/Def040_2/02_SpriteStore/Def200_4/
+     - lib/600_def00820/ADef110_0/08_SubDefs/Def050_2/02_SpriteStore/Def200_4/
+     - lib/600_def00820/ADef110_0/08_SubDefs/Def060_2/02_SpriteStore/Def200_4/
+
+     - lib/600_def00820/ADef120_0/08_SubDefs/Def020_2/02_SpriteStore/Def025_4/
+     - lib/600_def00820/ADef120_0/08_SubDefs/Def030_2/02_SpriteStore/Def025_4/
+     - lib/600_def00820/ADef120_0/08_SubDefs/Def040_2/02_SpriteStore/Def025_4/
+     - lib/600_def00820/ADef120_0/08_SubDefs/Def050_2/02_SpriteStore/Def025_4/
+     - lib/600_def00820/ADef120_0/08_SubDefs/Def060_2/02_SpriteStore/Def025_4/
+
+     - lib/600_def00820/ADef120_0/08_SubDefs/Def020_2/02_SpriteStore/Def200_4/
+     - lib/600_def00820/ADef120_0/08_SubDefs/Def030_2/02_SpriteStore/Def200_4/
+     - lib/600_def00820/ADef120_0/08_SubDefs/Def040_2/02_SpriteStore/Def200_4/
+     - lib/600_def00820/ADef120_0/08_SubDefs/Def050_2/02_SpriteStore/Def200_4/
+     - lib/600_def00820/ADef120_0/08_SubDefs/Def060_2/02_SpriteStore/Def200_4/
+
+     - lib/600_def00820/ADef130_0/08_SubDefs/Def020_2/02_SpriteStore/Def025_4/
+     - lib/600_def00820/ADef130_0/08_SubDefs/Def030_2/02_SpriteStore/Def025_4/
+     - lib/600_def00820/ADef130_0/08_SubDefs/Def040_2/02_SpriteStore/Def025_4/
+     - lib/600_def00820/ADef130_0/08_SubDefs/Def050_2/02_SpriteStore/Def025_4/
+     - lib/600_def00820/ADef130_0/08_SubDefs/Def060_2/02_SpriteStore/Def025_4/
+
+     - lib/600_def00820/ADef130_0/08_SubDefs/Def020_2/02_SpriteStore/Def200_4/
+     - lib/600_def00820/ADef130_0/08_SubDefs/Def030_2/02_SpriteStore/Def200_4/
+     - lib/600_def00820/ADef130_0/08_SubDefs/Def040_2/02_SpriteStore/Def200_4/
+     - lib/600_def00820/ADef130_0/08_SubDefs/Def050_2/02_SpriteStore/Def200_4/
+     - lib/600_def00820/ADef130_0/08_SubDefs/Def060_2/02_SpriteStore/Def200_4/
+
+     - lib/600_def00820/ADef140_0/08_SubDefs/Def020_2/02_SpriteStore/Def025_4/
+     - lib/600_def00820/ADef140_0/08_SubDefs/Def030_2/02_SpriteStore/Def025_4/
+     - lib/600_def00820/ADef140_0/08_SubDefs/Def040_2/02_SpriteStore/Def025_4/
+     - lib/600_def00820/ADef140_0/08_SubDefs/Def050_2/02_SpriteStore/Def025_4/
+     - lib/600_def00820/ADef140_0/08_SubDefs/Def060_2/02_SpriteStore/Def025_4/
+
+     - lib/600_def00820/ADef140_0/08_SubDefs/Def020_2/02_SpriteStore/Def200_4/
+     - lib/600_def00820/ADef140_0/08_SubDefs/Def030_2/02_SpriteStore/Def200_4/
+     - lib/600_def00820/ADef140_0/08_SubDefs/Def040_2/02_SpriteStore/Def200_4/
+     - lib/600_def00820/ADef140_0/08_SubDefs/Def050_2/02_SpriteStore/Def200_4/
+     - lib/600_def00820/ADef140_0/08_SubDefs/Def060_2/02_SpriteStore/Def200_4/
+
+     - lib/600_def00820/ADef150_0/08_SubDefs/Def020_2/02_SpriteStore/Def025_4/
+     - lib/600_def00820/ADef150_0/08_SubDefs/Def030_2/02_SpriteStore/Def025_4/
+     - lib/600_def00820/ADef150_0/08_SubDefs/Def040_2/02_SpriteStore/Def025_4/
+     - lib/600_def00820/ADef150_0/08_SubDefs/Def050_2/02_SpriteStore/Def025_4/
+     - lib/600_def00820/ADef150_0/08_SubDefs/Def060_2/02_SpriteStore/Def025_4/
+
+     - lib/600_def00820/ADef150_0/08_SubDefs/Def020_2/02_SpriteStore/Def200_4/
+     - lib/600_def00820/ADef150_0/08_SubDefs/Def030_2/02_SpriteStore/Def200_4/
+     - lib/600_def00820/ADef150_0/08_SubDefs/Def040_2/02_SpriteStore/Def200_4/
+     - lib/600_def00820/ADef150_0/08_SubDefs/Def050_2/02_SpriteStore/Def200_4/
+     - lib/600_def00820/ADef150_0/08_SubDefs/Def060_2/02_SpriteStore/Def200_4/
+
+     # _____[PHUONG_TIEN_VU_KHI_MONSTER]_____
+
+     - lib/600_def00860/ADef010_0/08_SubDefs/Def020_2/02_SpriteStore/Def025_4/
+     - lib/600_def00860/ADef010_0/08_SubDefs/Def030_2/02_SpriteStore/Def025_4/
+     - lib/600_def00860/ADef010_0/08_SubDefs/Def040_2/02_SpriteStore/Def025_4/
+     - lib/600_def00860/ADef010_0/08_SubDefs/Def050_2/02_SpriteStore/Def025_4/
+     - lib/600_def00860/ADef010_0/08_SubDefs/Def020_2/02_SpriteStore/Def200_4/
+     - lib/600_def00860/ADef010_0/08_SubDefs/Def030_2/02_SpriteStore/Def200_4/
+     - lib/600_def00860/ADef010_0/08_SubDefs/Def040_2/02_SpriteStore/Def200_4/
+     - lib/600_def00860/ADef010_0/08_SubDefs/Def050_2/02_SpriteStore/Def200_4/
+
+     - lib/600_def00860/ADef020_0/08_SubDefs/Def020_2/02_SpriteStore/Def025_4/
+     - lib/600_def00860/ADef020_0/08_SubDefs/Def030_2/02_SpriteStore/Def025_4/
+     - lib/600_def00860/ADef020_0/08_SubDefs/Def040_2/02_SpriteStore/Def025_4/
+     - lib/600_def00860/ADef020_0/08_SubDefs/Def050_2/02_SpriteStore/Def025_4/
+     - lib/600_def00860/ADef020_0/08_SubDefs/Def020_2/02_SpriteStore/Def200_4/
+     - lib/600_def00860/ADef020_0/08_SubDefs/Def030_2/02_SpriteStore/Def200_4/
+     - lib/600_def00860/ADef020_0/08_SubDefs/Def040_2/02_SpriteStore/Def200_4/
+     - lib/600_def00860/ADef020_0/08_SubDefs/Def050_2/02_SpriteStore/Def200_4/
+
+     - lib/600_def00860/ADef030_0/08_SubDefs/Def020_2/02_SpriteStore/Def025_4/
+     - lib/600_def00860/ADef030_0/08_SubDefs/Def030_2/02_SpriteStore/Def025_4/
+     - lib/600_def00860/ADef030_0/08_SubDefs/Def040_2/02_SpriteStore/Def025_4/
+     - lib/600_def00860/ADef030_0/08_SubDefs/Def050_2/02_SpriteStore/Def025_4/
+     - lib/600_def00860/ADef030_0/08_SubDefs/Def020_2/02_SpriteStore/Def200_4/
+     - lib/600_def00860/ADef030_0/08_SubDefs/Def030_2/02_SpriteStore/Def200_4/
+     - lib/600_def00860/ADef030_0/08_SubDefs/Def040_2/02_SpriteStore/Def200_4/
+     - lib/600_def00860/ADef030_0/08_SubDefs/Def050_2/02_SpriteStore/Def200_4/
+
+     - lib/600_def00860/ADef040_0/08_SubDefs/Def020_2/02_SpriteStore/Def025_4/
+     - lib/600_def00860/ADef040_0/08_SubDefs/Def030_2/02_SpriteStore/Def025_4/
+     - lib/600_def00860/ADef040_0/08_SubDefs/Def040_2/02_SpriteStore/Def025_4/
+     - lib/600_def00860/ADef040_0/08_SubDefs/Def050_2/02_SpriteStore/Def025_4/
+     - lib/600_def00860/ADef040_0/08_SubDefs/Def020_2/02_SpriteStore/Def200_4/
+     - lib/600_def00860/ADef040_0/08_SubDefs/Def030_2/02_SpriteStore/Def200_4/
+     - lib/600_def00860/ADef040_0/08_SubDefs/Def040_2/02_SpriteStore/Def200_4/
+     - lib/600_def00860/ADef040_0/08_SubDefs/Def050_2/02_SpriteStore/Def200_4/
+
+     - lib/600_def00860/ADef050_0/08_SubDefs/Def020_2/02_SpriteStore/Def025_4/
+     - lib/600_def00860/ADef050_0/08_SubDefs/Def030_2/02_SpriteStore/Def025_4/
+     - lib/600_def00860/ADef050_0/08_SubDefs/Def040_2/02_SpriteStore/Def025_4/
+     - lib/600_def00860/ADef050_0/08_SubDefs/Def050_2/02_SpriteStore/Def025_4/
+     - lib/600_def00860/ADef050_0/08_SubDefs/Def020_2/02_SpriteStore/Def200_4/
+     - lib/600_def00860/ADef050_0/08_SubDefs/Def030_2/02_SpriteStore/Def200_4/
+     - lib/600_def00860/ADef050_0/08_SubDefs/Def040_2/02_SpriteStore/Def200_4/
+     - lib/600_def00860/ADef050_0/08_SubDefs/Def050_2/02_SpriteStore/Def200_4/
+
+     - lib/600_def00860/ADef060_0/08_SubDefs/Def020_2/02_SpriteStore/Def025_4/
+     - lib/600_def00860/ADef060_0/08_SubDefs/Def030_2/02_SpriteStore/Def025_4/
+     - lib/600_def00860/ADef060_0/08_SubDefs/Def040_2/02_SpriteStore/Def025_4/
+     - lib/600_def00860/ADef060_0/08_SubDefs/Def050_2/02_SpriteStore/Def025_4/
+     - lib/600_def00860/ADef060_0/08_SubDefs/Def020_2/02_SpriteStore/Def200_4/
+     - lib/600_def00860/ADef060_0/08_SubDefs/Def030_2/02_SpriteStore/Def200_4/
+     - lib/600_def00860/ADef060_0/08_SubDefs/Def040_2/02_SpriteStore/Def200_4/
+     - lib/600_def00860/ADef060_0/08_SubDefs/Def050_2/02_SpriteStore/Def200_4/
+
+     - lib/600_def00860/ADef070_0/08_SubDefs/Def020_2/02_SpriteStore/Def025_4/
+     - lib/600_def00860/ADef070_0/08_SubDefs/Def030_2/02_SpriteStore/Def025_4/
+     - lib/600_def00860/ADef070_0/08_SubDefs/Def040_2/02_SpriteStore/Def025_4/
+     - lib/600_def00860/ADef070_0/08_SubDefs/Def050_2/02_SpriteStore/Def025_4/
+     - lib/600_def00860/ADef070_0/08_SubDefs/Def020_2/02_SpriteStore/Def200_4/
+     - lib/600_def00860/ADef070_0/08_SubDefs/Def030_2/02_SpriteStore/Def200_4/
+     - lib/600_def00860/ADef070_0/08_SubDefs/Def040_2/02_SpriteStore/Def200_4/
+     - lib/600_def00860/ADef070_0/08_SubDefs/Def050_2/02_SpriteStore/Def200_4/
+
+     - lib/600_def00860/ADef080_0/08_SubDefs/Def020_2/02_SpriteStore/Def025_4/
+     - lib/600_def00860/ADef080_0/08_SubDefs/Def030_2/02_SpriteStore/Def025_4/
+     - lib/600_def00860/ADef080_0/08_SubDefs/Def040_2/02_SpriteStore/Def025_4/
+     - lib/600_def00860/ADef080_0/08_SubDefs/Def050_2/02_SpriteStore/Def025_4/
+     - lib/600_def00860/ADef080_0/08_SubDefs/Def020_2/02_SpriteStore/Def200_4/
+     - lib/600_def00860/ADef080_0/08_SubDefs/Def030_2/02_SpriteStore/Def200_4/
+     - lib/600_def00860/ADef080_0/08_SubDefs/Def040_2/02_SpriteStore/Def200_4/
+     - lib/600_def00860/ADef080_0/08_SubDefs/Def050_2/02_SpriteStore/Def200_4/
+
+     - lib/600_def00860/ADef090_0/08_SubDefs/Def020_2/02_SpriteStore/Def025_4/
+     - lib/600_def00860/ADef090_0/08_SubDefs/Def030_2/02_SpriteStore/Def025_4/
+     - lib/600_def00860/ADef090_0/08_SubDefs/Def040_2/02_SpriteStore/Def025_4/
+     - lib/600_def00860/ADef090_0/08_SubDefs/Def050_2/02_SpriteStore/Def025_4/
+     - lib/600_def00860/ADef090_0/08_SubDefs/Def020_2/02_SpriteStore/Def200_4/
+     - lib/600_def00860/ADef090_0/08_SubDefs/Def030_2/02_SpriteStore/Def200_4/
+     - lib/600_def00860/ADef090_0/08_SubDefs/Def040_2/02_SpriteStore/Def200_4/
+     - lib/600_def00860/ADef090_0/08_SubDefs/Def050_2/02_SpriteStore/Def200_4/
+
+     - lib/600_def00860/ADef100_0/08_SubDefs/Def020_2/02_SpriteStore/Def025_4/
+     - lib/600_def00860/ADef100_0/08_SubDefs/Def030_2/02_SpriteStore/Def025_4/
+     - lib/600_def00860/ADef100_0/08_SubDefs/Def040_2/02_SpriteStore/Def025_4/
+     - lib/600_def00860/ADef100_0/08_SubDefs/Def050_2/02_SpriteStore/Def025_4/
+     - lib/600_def00860/ADef100_0/08_SubDefs/Def020_2/02_SpriteStore/Def200_4/
+     - lib/600_def00860/ADef100_0/08_SubDefs/Def030_2/02_SpriteStore/Def200_4/
+     - lib/600_def00860/ADef100_0/08_SubDefs/Def040_2/02_SpriteStore/Def200_4/
+     - lib/600_def00860/ADef100_0/08_SubDefs/Def050_2/02_SpriteStore/Def200_4/
+
+     - lib/600_def00860/ADef110_0/08_SubDefs/Def020_2/02_SpriteStore/Def025_4/
+     - lib/600_def00860/ADef110_0/08_SubDefs/Def030_2/02_SpriteStore/Def025_4/
+     - lib/600_def00860/ADef110_0/08_SubDefs/Def040_2/02_SpriteStore/Def025_4/
+     - lib/600_def00860/ADef110_0/08_SubDefs/Def050_2/02_SpriteStore/Def025_4/
+     - lib/600_def00860/ADef110_0/08_SubDefs/Def020_2/02_SpriteStore/Def200_4/
+     - lib/600_def00860/ADef110_0/08_SubDefs/Def030_2/02_SpriteStore/Def200_4/
+     - lib/600_def00860/ADef110_0/08_SubDefs/Def040_2/02_SpriteStore/Def200_4/
+     - lib/600_def00860/ADef110_0/08_SubDefs/Def050_2/02_SpriteStore/Def200_4/
+
+     - lib/600_def00860/ADef120_0/08_SubDefs/Def020_2/02_SpriteStore/Def025_4/
+     - lib/600_def00860/ADef120_0/08_SubDefs/Def030_2/02_SpriteStore/Def025_4/
+     - lib/600_def00860/ADef120_0/08_SubDefs/Def040_2/02_SpriteStore/Def025_4/
+     - lib/600_def00860/ADef120_0/08_SubDefs/Def050_2/02_SpriteStore/Def025_4/
+     - lib/600_def00860/ADef120_0/08_SubDefs/Def020_2/02_SpriteStore/Def200_4/
+     - lib/600_def00860/ADef120_0/08_SubDefs/Def030_2/02_SpriteStore/Def200_4/
+     - lib/600_def00860/ADef120_0/08_SubDefs/Def040_2/02_SpriteStore/Def200_4/
+     - lib/600_def00860/ADef120_0/08_SubDefs/Def050_2/02_SpriteStore/Def200_4/
+
+     - lib/600_def00860/ADef130_0/08_SubDefs/Def020_2/02_SpriteStore/Def025_4/
+     - lib/600_def00860/ADef130_0/08_SubDefs/Def030_2/02_SpriteStore/Def025_4/
+     - lib/600_def00860/ADef130_0/08_SubDefs/Def040_2/02_SpriteStore/Def025_4/
+     - lib/600_def00860/ADef130_0/08_SubDefs/Def050_2/02_SpriteStore/Def025_4/
+     - lib/600_def00860/ADef130_0/08_SubDefs/Def020_2/02_SpriteStore/Def200_4/
+     - lib/600_def00860/ADef130_0/08_SubDefs/Def030_2/02_SpriteStore/Def200_4/
+     - lib/600_def00860/ADef130_0/08_SubDefs/Def040_2/02_SpriteStore/Def200_4/
+     - lib/600_def00860/ADef130_0/08_SubDefs/Def050_2/02_SpriteStore/Def200_4/
+
+     - lib/600_def00860/ADef140_0/08_SubDefs/Def020_2/02_SpriteStore/Def025_4/
+     - lib/600_def00860/ADef140_0/08_SubDefs/Def030_2/02_SpriteStore/Def025_4/
+     - lib/600_def00860/ADef140_0/08_SubDefs/Def040_2/02_SpriteStore/Def025_4/
+     - lib/600_def00860/ADef140_0/08_SubDefs/Def050_2/02_SpriteStore/Def025_4/
+     - lib/600_def00860/ADef140_0/08_SubDefs/Def020_2/02_SpriteStore/Def200_4/
+     - lib/600_def00860/ADef140_0/08_SubDefs/Def030_2/02_SpriteStore/Def200_4/
+     - lib/600_def00860/ADef140_0/08_SubDefs/Def040_2/02_SpriteStore/Def200_4/
+     - lib/600_def00860/ADef140_0/08_SubDefs/Def050_2/02_SpriteStore/Def200_4/
+
+     # _____[PHUONG_TIEN_THIEN_THACH_VU_TRU]_____
+
+     - lib/600_def00880/ADef010_0/08_SubDefs/Def020_2/02_SpriteStore/Def025_4/
+     - lib/600_def00880/ADef010_0/08_SubDefs/Def030_2/02_SpriteStore/Def025_4/
+     - lib/600_def00880/ADef010_0/08_SubDefs/Def040_2/02_SpriteStore/Def025_4/
+     - lib/600_def00880/ADef010_0/08_SubDefs/Def050_2/02_SpriteStore/Def025_4/
+     - lib/600_def00880/ADef010_0/08_SubDefs/Def020_2/02_SpriteStore/Def200_4/
+     - lib/600_def00880/ADef010_0/08_SubDefs/Def030_2/02_SpriteStore/Def200_4/
+     - lib/600_def00880/ADef010_0/08_SubDefs/Def040_2/02_SpriteStore/Def200_4/
+     - lib/600_def00880/ADef010_0/08_SubDefs/Def050_2/02_SpriteStore/Def200_4/
+
+     - lib/600_def00880/ADef020_0/08_SubDefs/Def020_2/02_SpriteStore/Def025_4/
+     - lib/600_def00880/ADef020_0/08_SubDefs/Def030_2/02_SpriteStore/Def025_4/
+     - lib/600_def00880/ADef020_0/08_SubDefs/Def040_2/02_SpriteStore/Def025_4/
+     - lib/600_def00880/ADef020_0/08_SubDefs/Def050_2/02_SpriteStore/Def025_4/
+     - lib/600_def00880/ADef020_0/08_SubDefs/Def020_2/02_SpriteStore/Def200_4/
+     - lib/600_def00880/ADef020_0/08_SubDefs/Def030_2/02_SpriteStore/Def200_4/
+     - lib/600_def00880/ADef020_0/08_SubDefs/Def040_2/02_SpriteStore/Def200_4/
+     - lib/600_def00880/ADef020_0/08_SubDefs/Def050_2/02_SpriteStore/Def200_4/
+
+     # _____[PHUONG_TIEN_VAT_PHAM_TANG_CUONG]_____
+
+     - lib/600_def00900/ADef010_0/08_SubDefs/Def020_2/02_SpriteStore/Def025_4/
+     - lib/600_def00900/ADef020_0/08_SubDefs/Def020_2/02_SpriteStore/Def025_4/
+     - lib/600_def00900/ADef030_0/08_SubDefs/Def020_2/02_SpriteStore/Def025_4/
+     - lib/600_def00900/ADef010_0/08_SubDefs/Def020_2/02_SpriteStore/Def200_4/
+     - lib/600_def00900/ADef020_0/08_SubDefs/Def020_2/02_SpriteStore/Def200_4/
+     - lib/600_def00900/ADef030_0/08_SubDefs/Def020_2/02_SpriteStore/Def200_4/
+
+     # _____[PHUONG_TIEN_VAT_PHAM_PHAN_THUONG]_____
+
+     - lib/600_def00920/ADef010_0/08_SubDefs/Def020_2/02_SpriteStore/Def025_4/
+     - lib/600_def00920/ADef010_0/08_SubDefs/Def030_2/02_SpriteStore/Def025_4/
+     - lib/600_def00920/ADef010_0/08_SubDefs/Def040_2/02_SpriteStore/Def025_4/
+     - lib/600_def00920/ADef010_0/08_SubDefs/Def050_2/02_SpriteStore/Def025_4/
+     - lib/600_def00920/ADef010_0/08_SubDefs/Def060_2/02_SpriteStore/Def025_4/
+     - lib/600_def00920/ADef010_0/08_SubDefs/Def070_2/02_SpriteStore/Def025_4/
+     - lib/600_def00920/ADef010_0/08_SubDefs/Def020_2/02_SpriteStore/Def200_4/
+     - lib/600_def00920/ADef010_0/08_SubDefs/Def030_2/02_SpriteStore/Def200_4/
+     - lib/600_def00920/ADef010_0/08_SubDefs/Def040_2/02_SpriteStore/Def200_4/
+     - lib/600_def00920/ADef010_0/08_SubDefs/Def050_2/02_SpriteStore/Def200_4/
+     - lib/600_def00920/ADef010_0/08_SubDefs/Def060_2/02_SpriteStore/Def200_4/
+     - lib/600_def00920/ADef010_0/08_SubDefs/Def070_2/02_SpriteStore/Def200_4/
+
+     # _____[PHUONG_TIEN_HIEU_UNG_VA_CHAM]_____
+
+     - lib/600_def00950/ADef010_0/08_SubDefs/Def020_2/02_SpriteStore/Def025_4/
+     - lib/600_def00950/ADef010_0/08_SubDefs/Def030_2/02_SpriteStore/Def025_4/
+     - lib/600_def00950/ADef010_0/08_SubDefs/Def040_2/02_SpriteStore/Def025_4/
+     - lib/600_def00950/ADef010_0/08_SubDefs/Def050_2/02_SpriteStore/Def025_4/
+     - lib/600_def00950/ADef010_0/08_SubDefs/Def060_2/02_SpriteStore/Def025_4/
+     - lib/600_def00950/ADef010_0/08_SubDefs/Def070_2/02_SpriteStore/Def025_4/
+     - lib/600_def00950/ADef010_0/08_SubDefs/Def080_2/02_SpriteStore/Def025_4/
+     - lib/600_def00950/ADef010_0/08_SubDefs/Def090_2/02_SpriteStore/Def025_4/
+     - lib/600_def00950/ADef010_0/08_SubDefs/Def200_2/02_SpriteStore/Def025_4/
+     - lib/600_def00950/ADef010_0/08_SubDefs/Def020_2/02_SpriteStore/Def200_4/
+     - lib/600_def00950/ADef010_0/08_SubDefs/Def030_2/02_SpriteStore/Def200_4/
+     - lib/600_def00950/ADef010_0/08_SubDefs/Def040_2/02_SpriteStore/Def200_4/
+     - lib/600_def00950/ADef010_0/08_SubDefs/Def050_2/02_SpriteStore/Def200_4/
+     - lib/600_def00950/ADef010_0/08_SubDefs/Def060_2/02_SpriteStore/Def200_4/
+     - lib/600_def00950/ADef010_0/08_SubDefs/Def070_2/02_SpriteStore/Def200_4/
+     - lib/600_def00950/ADef010_0/08_SubDefs/Def080_2/02_SpriteStore/Def200_4/
+     - lib/600_def00950/ADef010_0/08_SubDefs/Def090_2/02_SpriteStore/Def200_4/
+     - lib/600_def00950/ADef010_0/08_SubDefs/Def200_2/02_SpriteStore/Def200_4/
+
+     - lib/600_def00950/ADef020_0/08_SubDefs/Def020_2/02_SpriteStore/Def025_4/
+     - lib/600_def00950/ADef020_0/08_SubDefs/Def030_2/02_SpriteStore/Def025_4/
+     - lib/600_def00950/ADef020_0/08_SubDefs/Def040_2/02_SpriteStore/Def025_4/
+     - lib/600_def00950/ADef020_0/08_SubDefs/Def050_2/02_SpriteStore/Def025_4/
+     - lib/600_def00950/ADef020_0/08_SubDefs/Def060_2/02_SpriteStore/Def025_4/
+     - lib/600_def00950/ADef020_0/08_SubDefs/Def070_2/02_SpriteStore/Def025_4/
+     - lib/600_def00950/ADef020_0/08_SubDefs/Def080_2/02_SpriteStore/Def025_4/
+     - lib/600_def00950/ADef020_0/08_SubDefs/Def090_2/02_SpriteStore/Def025_4/
+     - lib/600_def00950/ADef020_0/08_SubDefs/Def020_2/02_SpriteStore/Def200_4/
+     - lib/600_def00950/ADef020_0/08_SubDefs/Def030_2/02_SpriteStore/Def200_4/
+     - lib/600_def00950/ADef020_0/08_SubDefs/Def040_2/02_SpriteStore/Def200_4/
+     - lib/600_def00950/ADef020_0/08_SubDefs/Def050_2/02_SpriteStore/Def200_4/
+     - lib/600_def00950/ADef020_0/08_SubDefs/Def060_2/02_SpriteStore/Def200_4/
+     - lib/600_def00950/ADef020_0/08_SubDefs/Def070_2/02_SpriteStore/Def200_4/
+     - lib/600_def00950/ADef020_0/08_SubDefs/Def080_2/02_SpriteStore/Def200_4/
+     - lib/600_def00950/ADef020_0/08_SubDefs/Def090_2/02_SpriteStore/Def200_4/
+
+     - lib/600_def00950/ADef030_0/08_SubDefs/Def020_2/02_SpriteStore/Def025_4/
+     - lib/600_def00950/ADef030_0/08_SubDefs/Def030_2/02_SpriteStore/Def025_4/
+     - lib/600_def00950/ADef030_0/08_SubDefs/Def040_2/02_SpriteStore/Def025_4/
+     - lib/600_def00950/ADef030_0/08_SubDefs/Def020_2/02_SpriteStore/Def200_4/
+     - lib/600_def00950/ADef030_0/08_SubDefs/Def030_2/02_SpriteStore/Def200_4/
+     - lib/600_def00950/ADef030_0/08_SubDefs/Def040_2/02_SpriteStore/Def200_4/
+
+     - lib/600_def00950/ADef040_0/08_SubDefs/Def020_2/02_SpriteStore/Def025_4/
+     - lib/600_def00950/ADef040_0/08_SubDefs/Def030_2/02_SpriteStore/Def025_4/
+     - lib/600_def00950/ADef040_0/08_SubDefs/Def040_2/02_SpriteStore/Def025_4/
+     - lib/600_def00950/ADef040_0/08_SubDefs/Def020_2/02_SpriteStore/Def200_4/
+     - lib/600_def00950/ADef040_0/08_SubDefs/Def030_2/02_SpriteStore/Def200_4/
+     - lib/600_def00950/ADef040_0/08_SubDefs/Def040_2/02_SpriteStore/Def200_4/
+
+  #
+  # For details regarding assets in packages, see
+  # https://flutter.dev/to/asset-from-package
+  #
+  # An image asset can refer to one or more resolution-specific "variants", see
+  # https://flutter.dev/to/resolution-aware-images
+
+  # To add custom fonts to your package, add a fonts section here,
+  # in this "flutter" section. Each entry in this list should have a
+  # "family" key with the font family name, and a "fonts" key with a
+  # list giving the asset and other descriptors for the font. For
+  # example:
+  # fonts:
+  #   - family: Schyler
+  #     fonts:
+  #       - asset: fonts/Schyler-Regular.ttf
+  #       - asset: fonts/Schyler-Italic.ttf
+  #         style: italic
+  #   - family: Trajan Pro
+  #     fonts:
+  #       - asset: fonts/TrajanPro.ttf
+  #       - asset: fonts/TrajanPro_Bold.ttf
+  #         weight: 700
+  #
+  # For details regarding fonts in packages, see
+  # https://flutter.dev/to/font-from-package

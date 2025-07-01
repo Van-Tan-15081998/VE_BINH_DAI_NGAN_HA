@@ -1,0 +1,897 @@
+name: pkg_dinh_nghia_ss030
+description: "A new Flutter package project."
+version: 0.0.1
+publish_to: 'none'
+homepage:
+
+environment:
+  sdk: ^3.7.2
+  flutter: ">=1.17.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  pkg_dinh_nghia_ss020:
+    path: ../pkg_dinh_nghia_ss020
+  pkg_dinh_nghia_ss022:
+    path: ../pkg_dinh_nghia_ss022
+  pkg_dinh_nghia_ss028a:
+    path: ../pkg_dinh_nghia_ss028a
+  pkg_dinh_nghia_ss050:
+    path: ../pkg_dinh_nghia_ss050
+  pkg_dinh_nghia_ss054:
+    path: ../pkg_dinh_nghia_ss054
+
+  pkg_dinh_nghia_ss028020:
+    path: ../pkg_dinh_nghia_ss028020
+  pkg_dinh_nghia_ss030020:
+    path: ../pkg_dinh_nghia_ss030020
+  pkg_dinh_nghia_ss030030:
+    path: ../pkg_dinh_nghia_ss030030
+  pkg_dinh_nghia_ss030050:
+    path: ../pkg_dinh_nghia_ss030050
+
+  pkg_man_hinh_ss00226:
+    path: ../pkg_man_hinh_ss00226
+
+
+dev_dependencies:
+#  flutter_test:
+#    sdk: flutter
+  flutter_lints: ^5.0.0
+
+# For information on the generic Dart part of this file, see the
+# following page: https://dart.dev/tools/pub/pubspec
+
+# The following section is specific to Flutter packages.
+flutter:
+
+  # To add assets to your package, add an assets section, like this:
+   assets:
+     #
+     #
+     # TODO: _____[PHUONG_TIEN_TRINH_SAT_CLASS_10A_SS01]_____
+     - lib/28_def0028/ADef20_0/08_SubDefs/DefA10/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def25/
+     - lib/28_def0028/ADef20_0/08_SubDefs/DefA10/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def50/
+     - lib/28_def0028/ADef20_0/08_SubDefs/DefA10/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def90/
+     #
+     # TODO: _____[PHUONG_TIEN_TRINH_SAT_CLASS_10A_SS02]_____
+     - lib/28_def0028/ADef20_0/08_SubDefs/DefA10/08_SubDefs/Def22/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def25/
+     - lib/28_def0028/ADef20_0/08_SubDefs/DefA10/08_SubDefs/Def22/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def50/
+     - lib/28_def0028/ADef20_0/08_SubDefs/DefA10/08_SubDefs/Def22/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def90/
+     #
+     # TODO: _____[PHUONG_TIEN_TRINH_SAT_CLASS_10A_SS03]_____
+     - lib/28_def0028/ADef20_0/08_SubDefs/DefA10/08_SubDefs/Def24/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def25/
+     - lib/28_def0028/ADef20_0/08_SubDefs/DefA10/08_SubDefs/Def24/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def50/
+     - lib/28_def0028/ADef20_0/08_SubDefs/DefA10/08_SubDefs/Def24/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def90/
+     #
+     #
+     # TODO: _____[PHUONG_TIEN_TRINH_SAT_CLASS_20A_SS01]_____
+     - lib/28_def0028/ADef20_0/08_SubDefs/DefA20/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def25/
+     - lib/28_def0028/ADef20_0/08_SubDefs/DefA20/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def50/
+     - lib/28_def0028/ADef20_0/08_SubDefs/DefA20/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def90/
+     #
+     # TODO: _____[PHUONG_TIEN_TRINH_SAT_CLASS_20A_SS02]_____
+     - lib/28_def0028/ADef20_0/08_SubDefs/DefA20/08_SubDefs/Def22/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def25/
+     - lib/28_def0028/ADef20_0/08_SubDefs/DefA20/08_SubDefs/Def22/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def50/
+     - lib/28_def0028/ADef20_0/08_SubDefs/DefA20/08_SubDefs/Def22/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def90/
+     #
+     # TODO: _____[PHUONG_TIEN_TRINH_SAT_CLASS_20A_SS03]_____
+     - lib/28_def0028/ADef20_0/08_SubDefs/DefA20/08_SubDefs/Def24/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def25/
+     - lib/28_def0028/ADef20_0/08_SubDefs/DefA20/08_SubDefs/Def24/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def50/
+     - lib/28_def0028/ADef20_0/08_SubDefs/DefA20/08_SubDefs/Def24/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def90/
+     #
+     #
+     # TODO: _____[PHUONG_TIEN_TRINH_SAT_CLASS_30A_SS01]_____
+     - lib/28_def0028/ADef20_0/08_SubDefs/DefA30/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def25/
+     - lib/28_def0028/ADef20_0/08_SubDefs/DefA30/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def50/
+     - lib/28_def0028/ADef20_0/08_SubDefs/DefA30/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def90/
+     #
+     # TODO: _____[PHUONG_TIEN_TRINH_SAT_CLASS_30A_SS02]_____
+     - lib/28_def0028/ADef20_0/08_SubDefs/DefA30/08_SubDefs/Def22/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def25/
+     - lib/28_def0028/ADef20_0/08_SubDefs/DefA30/08_SubDefs/Def22/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def50/
+     - lib/28_def0028/ADef20_0/08_SubDefs/DefA30/08_SubDefs/Def22/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def90/
+     #
+     # TODO: _____[PHUONG_TIEN_TRINH_SAT_CLASS_30A_SS03]_____
+     - lib/28_def0028/ADef20_0/08_SubDefs/DefA30/08_SubDefs/Def24/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def25/
+     - lib/28_def0028/ADef20_0/08_SubDefs/DefA30/08_SubDefs/Def24/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def50/
+     - lib/28_def0028/ADef20_0/08_SubDefs/DefA30/08_SubDefs/Def24/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def90/
+     #
+     #
+     # TODO: _____[PHUONG_TIEN_TRINH_SAT_CLASS_40A_SS01]_____
+     - lib/28_def0028/ADef20_0/08_SubDefs/DefA40/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def25/
+     - lib/28_def0028/ADef20_0/08_SubDefs/DefA40/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def50/
+     - lib/28_def0028/ADef20_0/08_SubDefs/DefA40/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def90/
+     #
+     # TODO: _____[PHUONG_TIEN_TRINH_SAT_CLASS_40A_SS02]_____
+     - lib/28_def0028/ADef20_0/08_SubDefs/DefA40/08_SubDefs/Def22/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def25/
+     - lib/28_def0028/ADef20_0/08_SubDefs/DefA40/08_SubDefs/Def22/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def50/
+     - lib/28_def0028/ADef20_0/08_SubDefs/DefA40/08_SubDefs/Def22/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def90/
+     #
+     # TODO: _____[PHUONG_TIEN_TRINH_SAT_CLASS_40A_SS03]_____
+     - lib/28_def0028/ADef20_0/08_SubDefs/DefA40/08_SubDefs/Def24/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def25/
+     - lib/28_def0028/ADef20_0/08_SubDefs/DefA40/08_SubDefs/Def24/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def50/
+     - lib/28_def0028/ADef20_0/08_SubDefs/DefA40/08_SubDefs/Def24/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def90/
+     #
+     #
+     # TODO: _____[PHUONG_TIEN_TRINH_SAT_CLASS_50A_SS01]_____
+     - lib/28_def0028/ADef20_0/08_SubDefs/DefA50/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def25/
+     - lib/28_def0028/ADef20_0/08_SubDefs/DefA50/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def50/
+     - lib/28_def0028/ADef20_0/08_SubDefs/DefA50/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def90/
+     #
+     # TODO: _____[PHUONG_TIEN_TRINH_SAT_CLASS_50A_SS02]_____
+     - lib/28_def0028/ADef20_0/08_SubDefs/DefA50/08_SubDefs/Def22/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def25/
+     - lib/28_def0028/ADef20_0/08_SubDefs/DefA50/08_SubDefs/Def22/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def50/
+     - lib/28_def0028/ADef20_0/08_SubDefs/DefA50/08_SubDefs/Def22/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def90/
+     #
+     # TODO: _____[PHUONG_TIEN_TRINH_SAT_CLASS_50A_SS03]_____
+     - lib/28_def0028/ADef20_0/08_SubDefs/DefA50/08_SubDefs/Def24/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def25/
+     - lib/28_def0028/ADef20_0/08_SubDefs/DefA50/08_SubDefs/Def24/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def50/
+     - lib/28_def0028/ADef20_0/08_SubDefs/DefA50/08_SubDefs/Def24/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def90/
+     #
+     #
+     # TODO: _____[PHUONG_TIEN_TRINH_SAT_CLASS_10B_SS01]_____
+     - lib/28_def0028/ADef20_0/08_SubDefs/DefB10/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def25/
+     - lib/28_def0028/ADef20_0/08_SubDefs/DefB10/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def50/
+     - lib/28_def0028/ADef20_0/08_SubDefs/DefB10/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def90/
+     #
+     # TODO: _____[PHUONG_TIEN_TRINH_SAT_CLASS_10B_SS02]_____
+     - lib/28_def0028/ADef20_0/08_SubDefs/DefB10/08_SubDefs/Def22/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def25/
+     - lib/28_def0028/ADef20_0/08_SubDefs/DefB10/08_SubDefs/Def22/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def50/
+     - lib/28_def0028/ADef20_0/08_SubDefs/DefB10/08_SubDefs/Def22/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def90/
+     #
+     # TODO: _____[PHUONG_TIEN_TRINH_SAT_CLASS_10B_SS03]_____
+     - lib/28_def0028/ADef20_0/08_SubDefs/DefB10/08_SubDefs/Def24/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def25/
+     - lib/28_def0028/ADef20_0/08_SubDefs/DefB10/08_SubDefs/Def24/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def50/
+     - lib/28_def0028/ADef20_0/08_SubDefs/DefB10/08_SubDefs/Def24/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def90/
+     #
+     #
+     # TODO: _____[PHUONG_TIEN_TRINH_SAT_CLASS_20B_SS01]_____
+     - lib/28_def0028/ADef20_0/08_SubDefs/DefB20/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def25/
+     - lib/28_def0028/ADef20_0/08_SubDefs/DefB20/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def50/
+     - lib/28_def0028/ADef20_0/08_SubDefs/DefB20/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def90/
+     #
+     # TODO: _____[PHUONG_TIEN_TRINH_SAT_CLASS_20B_SS02]_____
+     - lib/28_def0028/ADef20_0/08_SubDefs/DefB20/08_SubDefs/Def22/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def25/
+     - lib/28_def0028/ADef20_0/08_SubDefs/DefB20/08_SubDefs/Def22/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def50/
+     - lib/28_def0028/ADef20_0/08_SubDefs/DefB20/08_SubDefs/Def22/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def90/
+     #
+     # TODO: _____[PHUONG_TIEN_TRINH_SAT_CLASS_20B_SS03]_____
+     - lib/28_def0028/ADef20_0/08_SubDefs/DefB20/08_SubDefs/Def24/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def25/
+     - lib/28_def0028/ADef20_0/08_SubDefs/DefB20/08_SubDefs/Def24/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def50/
+     - lib/28_def0028/ADef20_0/08_SubDefs/DefB20/08_SubDefs/Def24/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def90/
+     #
+     #
+     # TODO: _____[PHUONG_TIEN_TRINH_SAT_CLASS_30B_SS01]_____
+     - lib/28_def0028/ADef20_0/08_SubDefs/DefB30/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def25/
+     - lib/28_def0028/ADef20_0/08_SubDefs/DefB30/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def50/
+     - lib/28_def0028/ADef20_0/08_SubDefs/DefB30/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def90/
+     #
+     # TODO: _____[PHUONG_TIEN_TRINH_SAT_CLASS_30B_SS02]_____
+     - lib/28_def0028/ADef20_0/08_SubDefs/DefB30/08_SubDefs/Def22/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def25/
+     - lib/28_def0028/ADef20_0/08_SubDefs/DefB30/08_SubDefs/Def22/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def50/
+     - lib/28_def0028/ADef20_0/08_SubDefs/DefB30/08_SubDefs/Def22/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def90/
+     #
+     # TODO: _____[PHUONG_TIEN_TRINH_SAT_CLASS_30B_SS03]_____
+     - lib/28_def0028/ADef20_0/08_SubDefs/DefB30/08_SubDefs/Def24/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def25/
+     - lib/28_def0028/ADef20_0/08_SubDefs/DefB30/08_SubDefs/Def24/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def50/
+     - lib/28_def0028/ADef20_0/08_SubDefs/DefB30/08_SubDefs/Def24/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def90/
+     #
+     #
+     # TODO: _____[PHUONG_TIEN_TRINH_SAT_CLASS_40B_SS01]_____
+     - lib/28_def0028/ADef20_0/08_SubDefs/DefB40/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def25/
+     - lib/28_def0028/ADef20_0/08_SubDefs/DefB40/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def50/
+     - lib/28_def0028/ADef20_0/08_SubDefs/DefB40/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def90/
+     #
+     # TODO: _____[PHUONG_TIEN_TRINH_SAT_CLASS_40B_SS02]_____
+     - lib/28_def0028/ADef20_0/08_SubDefs/DefB40/08_SubDefs/Def22/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def25/
+     - lib/28_def0028/ADef20_0/08_SubDefs/DefB40/08_SubDefs/Def22/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def50/
+     - lib/28_def0028/ADef20_0/08_SubDefs/DefB40/08_SubDefs/Def22/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def90/
+     #
+     # TODO: _____[PHUONG_TIEN_TRINH_SAT_CLASS_40B_SS03]_____
+     - lib/28_def0028/ADef20_0/08_SubDefs/DefB40/08_SubDefs/Def24/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def25/
+     - lib/28_def0028/ADef20_0/08_SubDefs/DefB40/08_SubDefs/Def24/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def50/
+     - lib/28_def0028/ADef20_0/08_SubDefs/DefB40/08_SubDefs/Def24/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def90/
+     #
+     #
+     # TODO: _____[PHUONG_TIEN_TRINH_SAT_CLASS_50B_SS01]_____
+     - lib/28_def0028/ADef20_0/08_SubDefs/DefB50/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def25/
+     - lib/28_def0028/ADef20_0/08_SubDefs/DefB50/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def50/
+     - lib/28_def0028/ADef20_0/08_SubDefs/DefB50/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def90/
+     #
+     # TODO: _____[PHUONG_TIEN_TRINH_SAT_CLASS_50B_SS02]_____
+     - lib/28_def0028/ADef20_0/08_SubDefs/DefB50/08_SubDefs/Def22/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def25/
+     - lib/28_def0028/ADef20_0/08_SubDefs/DefB50/08_SubDefs/Def22/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def50/
+     - lib/28_def0028/ADef20_0/08_SubDefs/DefB50/08_SubDefs/Def22/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def90/
+     #
+     # TODO: _____[PHUONG_TIEN_TRINH_SAT_CLASS_50B_SS03]_____
+     - lib/28_def0028/ADef20_0/08_SubDefs/DefB50/08_SubDefs/Def24/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def25/
+     - lib/28_def0028/ADef20_0/08_SubDefs/DefB50/08_SubDefs/Def24/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def50/
+     - lib/28_def0028/ADef20_0/08_SubDefs/DefB50/08_SubDefs/Def24/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def90/
+     #
+     #
+     # TODO: _____[PHUONG_TIEN_TRINH_SAT_CLASS_10C_SS01]_____
+     - lib/28_def0028/ADef20_0/08_SubDefs/DefC10/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def25/
+     - lib/28_def0028/ADef20_0/08_SubDefs/DefC10/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def50/
+     - lib/28_def0028/ADef20_0/08_SubDefs/DefC10/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def90/
+     #
+     # TODO: _____[PHUONG_TIEN_TRINH_SAT_CLASS_10C_SS02]_____
+     - lib/28_def0028/ADef20_0/08_SubDefs/DefC10/08_SubDefs/Def22/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def25/
+     - lib/28_def0028/ADef20_0/08_SubDefs/DefC10/08_SubDefs/Def22/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def50/
+     - lib/28_def0028/ADef20_0/08_SubDefs/DefC10/08_SubDefs/Def22/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def90/
+     #
+     # TODO: _____[PHUONG_TIEN_TRINH_SAT_CLASS_10C_SS03]_____
+     - lib/28_def0028/ADef20_0/08_SubDefs/DefC10/08_SubDefs/Def24/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def25/
+     - lib/28_def0028/ADef20_0/08_SubDefs/DefC10/08_SubDefs/Def24/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def50/
+     - lib/28_def0028/ADef20_0/08_SubDefs/DefC10/08_SubDefs/Def24/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def90/
+     #
+     #
+     # TODO: _____[PHUONG_TIEN_TRINH_SAT_CLASS_20C_SS01]_____
+     - lib/28_def0028/ADef20_0/08_SubDefs/DefC20/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def25/
+     - lib/28_def0028/ADef20_0/08_SubDefs/DefC20/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def50/
+     - lib/28_def0028/ADef20_0/08_SubDefs/DefC20/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def90/
+     #
+     # TODO: _____[PHUONG_TIEN_TRINH_SAT_CLASS_20C_SS02]_____
+     - lib/28_def0028/ADef20_0/08_SubDefs/DefC20/08_SubDefs/Def22/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def25/
+     - lib/28_def0028/ADef20_0/08_SubDefs/DefC20/08_SubDefs/Def22/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def50/
+     - lib/28_def0028/ADef20_0/08_SubDefs/DefC20/08_SubDefs/Def22/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def90/
+     #
+     # TODO: _____[PHUONG_TIEN_TRINH_SAT_CLASS_20C_SS03]_____
+     - lib/28_def0028/ADef20_0/08_SubDefs/DefC20/08_SubDefs/Def24/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def25/
+     - lib/28_def0028/ADef20_0/08_SubDefs/DefC20/08_SubDefs/Def24/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def50/
+     - lib/28_def0028/ADef20_0/08_SubDefs/DefC20/08_SubDefs/Def24/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def90/
+     #
+     #
+     # TODO: _____[PHUONG_TIEN_TRINH_SAT_CLASS_30C_SS01]_____
+     - lib/28_def0028/ADef20_0/08_SubDefs/DefC30/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def25/
+     - lib/28_def0028/ADef20_0/08_SubDefs/DefC30/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def50/
+     - lib/28_def0028/ADef20_0/08_SubDefs/DefC30/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def90/
+     #
+     # TODO: _____[PHUONG_TIEN_TRINH_SAT_CLASS_30C_SS02]_____
+     - lib/28_def0028/ADef20_0/08_SubDefs/DefC30/08_SubDefs/Def22/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def25/
+     - lib/28_def0028/ADef20_0/08_SubDefs/DefC30/08_SubDefs/Def22/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def50/
+     - lib/28_def0028/ADef20_0/08_SubDefs/DefC30/08_SubDefs/Def22/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def90/
+     #
+     # TODO: _____[PHUONG_TIEN_TRINH_SAT_CLASS_30C_SS03]_____
+     - lib/28_def0028/ADef20_0/08_SubDefs/DefC30/08_SubDefs/Def24/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def25/
+     - lib/28_def0028/ADef20_0/08_SubDefs/DefC30/08_SubDefs/Def24/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def50/
+     - lib/28_def0028/ADef20_0/08_SubDefs/DefC30/08_SubDefs/Def24/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def90/
+     #
+     #
+     # TODO: _____[PHUONG_TIEN_TRINH_SAT_CLASS_40C_SS01]_____
+     - lib/28_def0028/ADef20_0/08_SubDefs/DefC40/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def25/
+     - lib/28_def0028/ADef20_0/08_SubDefs/DefC40/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def50/
+     - lib/28_def0028/ADef20_0/08_SubDefs/DefC40/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def90/
+     #
+     # TODO: _____[PHUONG_TIEN_TRINH_SAT_CLASS_40C_SS02]_____
+     - lib/28_def0028/ADef20_0/08_SubDefs/DefC40/08_SubDefs/Def22/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def25/
+     - lib/28_def0028/ADef20_0/08_SubDefs/DefC40/08_SubDefs/Def22/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def50/
+     - lib/28_def0028/ADef20_0/08_SubDefs/DefC40/08_SubDefs/Def22/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def90/
+     #
+     # TODO: _____[PHUONG_TIEN_TRINH_SAT_CLASS_40C_SS03]_____
+     - lib/28_def0028/ADef20_0/08_SubDefs/DefC40/08_SubDefs/Def24/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def25/
+     - lib/28_def0028/ADef20_0/08_SubDefs/DefC40/08_SubDefs/Def24/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def50/
+     - lib/28_def0028/ADef20_0/08_SubDefs/DefC40/08_SubDefs/Def24/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def90/
+     #
+     #
+     # TODO: _____[PHUONG_TIEN_TRINH_SAT_CLASS_50C_SS01]_____
+     - lib/28_def0028/ADef20_0/08_SubDefs/DefC50/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def25/
+     - lib/28_def0028/ADef20_0/08_SubDefs/DefC50/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def50/
+     - lib/28_def0028/ADef20_0/08_SubDefs/DefC50/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def90/
+     #
+     # TODO: _____[PHUONG_TIEN_TRINH_SAT_CLASS_50C_SS02]_____
+     - lib/28_def0028/ADef20_0/08_SubDefs/DefC50/08_SubDefs/Def22/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def25/
+     - lib/28_def0028/ADef20_0/08_SubDefs/DefC50/08_SubDefs/Def22/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def50/
+     - lib/28_def0028/ADef20_0/08_SubDefs/DefC50/08_SubDefs/Def22/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def90/
+     #
+     # TODO: _____[PHUONG_TIEN_TRINH_SAT_CLASS_50C_SS03]_____
+     - lib/28_def0028/ADef20_0/08_SubDefs/DefC50/08_SubDefs/Def24/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def25/
+     - lib/28_def0028/ADef20_0/08_SubDefs/DefC50/08_SubDefs/Def24/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def50/
+     - lib/28_def0028/ADef20_0/08_SubDefs/DefC50/08_SubDefs/Def24/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def90/
+     #
+     # TODO:
+     # TODO:
+     # TODO:
+     # TODO:
+     # TODO:
+     #
+     # TODO: _____[PHUONG_TIEN_TAN_CONG_CLASS_10A_SS01]_____
+     - lib/28_def0028/ADef22_0/08_SubDefs/DefA10/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def25/
+     - lib/28_def0028/ADef22_0/08_SubDefs/DefA10/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def50/
+     - lib/28_def0028/ADef22_0/08_SubDefs/DefA10/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def90/
+     #
+     # TODO: _____[PHUONG_TIEN_TAN_CONG_CLASS_10A_SS02]_____
+     - lib/28_def0028/ADef22_0/08_SubDefs/DefA10/08_SubDefs/Def22/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def25/
+     - lib/28_def0028/ADef22_0/08_SubDefs/DefA10/08_SubDefs/Def22/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def50/
+     - lib/28_def0028/ADef22_0/08_SubDefs/DefA10/08_SubDefs/Def22/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def90/
+     #
+     # TODO: _____[PHUONG_TIEN_TAN_CONG_CLASS_10A_SS03]_____
+     - lib/28_def0028/ADef22_0/08_SubDefs/DefA10/08_SubDefs/Def24/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def25/
+     - lib/28_def0028/ADef22_0/08_SubDefs/DefA10/08_SubDefs/Def24/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def50/
+     - lib/28_def0028/ADef22_0/08_SubDefs/DefA10/08_SubDefs/Def24/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def90/
+     #
+     #
+     # TODO: _____[PHUONG_TIEN_TAN_CONG_CLASS_20A_SS01]_____
+     - lib/28_def0028/ADef22_0/08_SubDefs/DefA20/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def25/
+     - lib/28_def0028/ADef22_0/08_SubDefs/DefA20/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def50/
+     - lib/28_def0028/ADef22_0/08_SubDefs/DefA20/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def90/
+     #
+     # TODO: _____[PHUONG_TIEN_TAN_CONG_CLASS_20A_SS02]_____
+     - lib/28_def0028/ADef22_0/08_SubDefs/DefA20/08_SubDefs/Def22/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def25/
+     - lib/28_def0028/ADef22_0/08_SubDefs/DefA20/08_SubDefs/Def22/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def50/
+     - lib/28_def0028/ADef22_0/08_SubDefs/DefA20/08_SubDefs/Def22/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def90/
+     #
+     # TODO: _____[PHUONG_TIEN_TAN_CONG_CLASS_20A_SS03]_____
+     - lib/28_def0028/ADef22_0/08_SubDefs/DefA20/08_SubDefs/Def24/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def25/
+     - lib/28_def0028/ADef22_0/08_SubDefs/DefA20/08_SubDefs/Def24/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def50/
+     - lib/28_def0028/ADef22_0/08_SubDefs/DefA20/08_SubDefs/Def24/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def90/
+     #
+     #
+     # TODO: _____[PHUONG_TIEN_TAN_CONG_CLASS_30A_SS01]_____
+     - lib/28_def0028/ADef22_0/08_SubDefs/DefA30/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def25/
+     - lib/28_def0028/ADef22_0/08_SubDefs/DefA30/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def50/
+     - lib/28_def0028/ADef22_0/08_SubDefs/DefA30/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def90/
+     #
+     # TODO: _____[PHUONG_TIEN_TAN_CONG_CLASS_30A_SS02]_____
+     - lib/28_def0028/ADef22_0/08_SubDefs/DefA30/08_SubDefs/Def22/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def25/
+     - lib/28_def0028/ADef22_0/08_SubDefs/DefA30/08_SubDefs/Def22/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def50/
+     - lib/28_def0028/ADef22_0/08_SubDefs/DefA30/08_SubDefs/Def22/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def90/
+     #
+     # TODO: _____[PHUONG_TIEN_TAN_CONG_CLASS_30A_SS03]_____
+     - lib/28_def0028/ADef22_0/08_SubDefs/DefA30/08_SubDefs/Def24/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def25/
+     - lib/28_def0028/ADef22_0/08_SubDefs/DefA30/08_SubDefs/Def24/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def50/
+     - lib/28_def0028/ADef22_0/08_SubDefs/DefA30/08_SubDefs/Def24/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def90/
+     #
+     #
+     # TODO: _____[PHUONG_TIEN_TAN_CONG_CLASS_40A_SS01]_____
+     - lib/28_def0028/ADef22_0/08_SubDefs/DefA40/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def25/
+     - lib/28_def0028/ADef22_0/08_SubDefs/DefA40/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def50/
+     - lib/28_def0028/ADef22_0/08_SubDefs/DefA40/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def90/
+     #
+     # TODO: _____[PHUONG_TIEN_TAN_CONG_CLASS_40A_SS02]_____
+     - lib/28_def0028/ADef22_0/08_SubDefs/DefA40/08_SubDefs/Def22/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def25/
+     - lib/28_def0028/ADef22_0/08_SubDefs/DefA40/08_SubDefs/Def22/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def50/
+     - lib/28_def0028/ADef22_0/08_SubDefs/DefA40/08_SubDefs/Def22/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def90/
+     #
+     # TODO: _____[PHUONG_TIEN_TAN_CONG_CLASS_40A_SS03]_____
+     - lib/28_def0028/ADef22_0/08_SubDefs/DefA40/08_SubDefs/Def24/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def25/
+     - lib/28_def0028/ADef22_0/08_SubDefs/DefA40/08_SubDefs/Def24/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def50/
+     - lib/28_def0028/ADef22_0/08_SubDefs/DefA40/08_SubDefs/Def24/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def90/
+     #
+     #
+     # TODO: _____[PHUONG_TIEN_TAN_CONG_CLASS_50A_SS01]_____
+     - lib/28_def0028/ADef22_0/08_SubDefs/DefA50/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def25/
+     - lib/28_def0028/ADef22_0/08_SubDefs/DefA50/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def50/
+     - lib/28_def0028/ADef22_0/08_SubDefs/DefA50/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def90/
+     #
+     # TODO: _____[PHUONG_TIEN_TAN_CONG_CLASS_50A_SS02]_____
+     - lib/28_def0028/ADef22_0/08_SubDefs/DefA50/08_SubDefs/Def22/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def25/
+     - lib/28_def0028/ADef22_0/08_SubDefs/DefA50/08_SubDefs/Def22/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def50/
+     - lib/28_def0028/ADef22_0/08_SubDefs/DefA50/08_SubDefs/Def22/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def90/
+     #
+     # TODO: _____[PHUONG_TIEN_TAN_CONG_CLASS_50A_SS03]_____
+     - lib/28_def0028/ADef22_0/08_SubDefs/DefA50/08_SubDefs/Def24/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def25/
+     - lib/28_def0028/ADef22_0/08_SubDefs/DefA50/08_SubDefs/Def24/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def50/
+     - lib/28_def0028/ADef22_0/08_SubDefs/DefA50/08_SubDefs/Def24/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def90/
+     #
+     # TODO:
+     # TODO:
+     # TODO:
+     # TODO:
+     # TODO:
+     #
+     # TODO: _____[PHUONG_TIEN_TAN_CONG_CLASS_10B_SS01]_____
+     - lib/28_def0028/ADef22_0/08_SubDefs/DefB10/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def25/
+     - lib/28_def0028/ADef22_0/08_SubDefs/DefB10/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def50/
+     - lib/28_def0028/ADef22_0/08_SubDefs/DefB10/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def90/
+
+     #
+     # TODO: _____[PHUONG_TIEN_TAN_CONG_CLASS_10B_SS02]_____
+     - lib/28_def0028/ADef22_0/08_SubDefs/DefB10/08_SubDefs/Def22/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def25/
+     - lib/28_def0028/ADef22_0/08_SubDefs/DefB10/08_SubDefs/Def22/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def50/
+     - lib/28_def0028/ADef22_0/08_SubDefs/DefB10/08_SubDefs/Def22/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def90/
+
+     #
+     # TODO: _____[PHUONG_TIEN_TAN_CONG_CLASS_10B_SS03]_____
+     - lib/28_def0028/ADef22_0/08_SubDefs/DefB10/08_SubDefs/Def24/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def25/
+     - lib/28_def0028/ADef22_0/08_SubDefs/DefB10/08_SubDefs/Def24/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def50/
+     - lib/28_def0028/ADef22_0/08_SubDefs/DefB10/08_SubDefs/Def24/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def90/
+
+     #
+     # TODO: _____[PHUONG_TIEN_TAN_CONG_CLASS_20B_SS01]_____
+     - lib/28_def0028/ADef22_0/08_SubDefs/DefB20/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def25/
+     - lib/28_def0028/ADef22_0/08_SubDefs/DefB20/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def50/
+     - lib/28_def0028/ADef22_0/08_SubDefs/DefB20/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def90/
+
+     #
+     # TODO: _____[PHUONG_TIEN_TAN_CONG_CLASS_20B_SS02]_____
+     - lib/28_def0028/ADef22_0/08_SubDefs/DefB20/08_SubDefs/Def22/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def25/
+     - lib/28_def0028/ADef22_0/08_SubDefs/DefB20/08_SubDefs/Def22/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def50/
+     - lib/28_def0028/ADef22_0/08_SubDefs/DefB20/08_SubDefs/Def22/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def90/
+
+     #
+     # TODO: _____[PHUONG_TIEN_TAN_CONG_CLASS_20B_SS03]_____
+     - lib/28_def0028/ADef22_0/08_SubDefs/DefB20/08_SubDefs/Def24/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def25/
+     - lib/28_def0028/ADef22_0/08_SubDefs/DefB20/08_SubDefs/Def24/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def50/
+     - lib/28_def0028/ADef22_0/08_SubDefs/DefB20/08_SubDefs/Def24/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def90/
+
+
+     #
+     # TODO: _____[PHUONG_TIEN_TAN_CONG_CLASS_30B_SS01]_____
+     - lib/28_def0028/ADef22_0/08_SubDefs/DefB30/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def25/
+     - lib/28_def0028/ADef22_0/08_SubDefs/DefB30/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def50/
+     - lib/28_def0028/ADef22_0/08_SubDefs/DefB30/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def90/
+
+
+     #
+     # TODO: _____[PHUONG_TIEN_TAN_CONG_CLASS_30B_SS02]_____
+     - lib/28_def0028/ADef22_0/08_SubDefs/DefB30/08_SubDefs/Def22/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def25/
+     - lib/28_def0028/ADef22_0/08_SubDefs/DefB30/08_SubDefs/Def22/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def50/
+     - lib/28_def0028/ADef22_0/08_SubDefs/DefB30/08_SubDefs/Def22/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def90/
+
+
+     #
+     # TODO: _____[PHUONG_TIEN_TAN_CONG_CLASS_30B_SS03]_____
+     - lib/28_def0028/ADef22_0/08_SubDefs/DefB30/08_SubDefs/Def24/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def25/
+     - lib/28_def0028/ADef22_0/08_SubDefs/DefB30/08_SubDefs/Def24/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def50/
+     - lib/28_def0028/ADef22_0/08_SubDefs/DefB30/08_SubDefs/Def24/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def90/
+
+     #
+     # TODO: _____[PHUONG_TIEN_TAN_CONG_CLASS_30B_SS04]_____
+     - lib/28_def0028/ADef22_0/08_SubDefs/DefB30/08_SubDefs/Def26/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def25/
+     - lib/28_def0028/ADef22_0/08_SubDefs/DefB30/08_SubDefs/Def26/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def50/
+     - lib/28_def0028/ADef22_0/08_SubDefs/DefB30/08_SubDefs/Def26/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def90/
+
+
+     #
+     # TODO: _____[PHUONG_TIEN_TAN_CONG_CLASS_40B_SS01]_____
+     - lib/28_def0028/ADef22_0/08_SubDefs/DefB40/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def25/
+     - lib/28_def0028/ADef22_0/08_SubDefs/DefB40/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def50/
+     - lib/28_def0028/ADef22_0/08_SubDefs/DefB40/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def90/
+
+
+     #
+     # TODO: _____[PHUONG_TIEN_TAN_CONG_CLASS_40B_SS02]_____
+     - lib/28_def0028/ADef22_0/08_SubDefs/DefB40/08_SubDefs/Def22/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def25/
+     - lib/28_def0028/ADef22_0/08_SubDefs/DefB40/08_SubDefs/Def22/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def50/
+     - lib/28_def0028/ADef22_0/08_SubDefs/DefB40/08_SubDefs/Def22/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def90/
+
+
+     #
+     # TODO: _____[PHUONG_TIEN_TAN_CONG_CLASS_40B_SS03]_____
+     - lib/28_def0028/ADef22_0/08_SubDefs/DefB40/08_SubDefs/Def24/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def25/
+     - lib/28_def0028/ADef22_0/08_SubDefs/DefB40/08_SubDefs/Def24/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def50/
+     - lib/28_def0028/ADef22_0/08_SubDefs/DefB40/08_SubDefs/Def24/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def90/
+
+     #
+     # _____[PHUONG_TIEN_TAN_CONG_CLASS_50B_SS01]_____
+
+
+     #
+     # _____[PHUONG_TIEN_TAN_CONG_CLASS_50B_SS02]_____
+
+
+     #
+     # _____[PHUONG_TIEN_TAN_CONG_CLASS_50B_SS03]_____
+
+
+     # TODO:
+     # TODO:
+     # TODO:
+     # TODO:
+     # TODO:
+     #
+     # TODO: _____[PHUONG_TIEN_HO_VE_CLASS_10A_SS01]_____
+     - lib/28_def0028/ADef24_0/08_SubDefs/DefA10/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def25/
+     - lib/28_def0028/ADef24_0/08_SubDefs/DefA10/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def50/
+     - lib/28_def0028/ADef24_0/08_SubDefs/DefA10/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def90/
+     #
+     # TODO: _____[PHUONG_TIEN_HO_VE_CLASS_10A_SS02]_____
+     - lib/28_def0028/ADef24_0/08_SubDefs/DefA10/08_SubDefs/Def22/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def25/
+     - lib/28_def0028/ADef24_0/08_SubDefs/DefA10/08_SubDefs/Def22/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def50/
+     - lib/28_def0028/ADef24_0/08_SubDefs/DefA10/08_SubDefs/Def22/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def90/
+     #
+     # TODO: _____[PHUONG_TIEN_HO_VE_CLASS_10A_SS03]_____
+     - lib/28_def0028/ADef24_0/08_SubDefs/DefA10/08_SubDefs/Def24/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def25/
+     - lib/28_def0028/ADef24_0/08_SubDefs/DefA10/08_SubDefs/Def24/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def50/
+     - lib/28_def0028/ADef24_0/08_SubDefs/DefA10/08_SubDefs/Def24/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def90/
+     #
+     #
+     # TODO: _____[PHUONG_TIEN_HO_VE_CLASS_20A_SS01]_____
+     #
+     # TODO: _____[PHUONG_TIEN_HO_VE_CLASS_20A_SS02]_____
+     #
+     # TODO: _____[PHUONG_TIEN_HO_VE_CLASS_20A_SS03]_____
+     #
+     #
+     # TODO: _____[PHUONG_TIEN_HO_VE_CLASS_30A_SS01]_____
+     #
+     # TODO: _____[PHUONG_TIEN_HO_VE_CLASS_30A_SS02]_____
+     #
+     # TODO: _____[PHUONG_TIEN_HO_VE_CLASS_30A_SS03]_____
+     #
+     # TODO:
+     # TODO:
+     # TODO:
+     # TODO:
+     # TODO:
+     #
+     # TODO: _____[PHUONG_TIEN_CHI_HUY_CLASS_10A_SS01]_____
+     - lib/28_def0028/ADef26_0/08_SubDefs/DefA10/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def25/
+     - lib/28_def0028/ADef26_0/08_SubDefs/DefA10/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def50/
+     - lib/28_def0028/ADef26_0/08_SubDefs/DefA10/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def90/
+     - lib/28_def0028/ADef26_0/08_SubDefs/DefA10/08_SubDefs/DefVk010/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def90/
+     - lib/28_def0028/ADef26_0/08_SubDefs/DefA10/08_SubDefs/DefVk020/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def90/
+     - lib/28_def0028/ADef26_0/08_SubDefs/DefA10/08_SubDefs/DefVk030/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def90/
+     - lib/28_def0028/ADef26_0/08_SubDefs/DefA10/08_SubDefs/DefVk040/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def90/
+     #
+     # TODO: _____[PHUONG_TIEN_CHI_HUY_CLASS_10A_SS02]_____
+     #
+     # TODO: _____[PHUONG_TIEN_CHI_HUY_CLASS_10A_SS03]_____
+     #
+     #
+     # TODO: _____[PHUONG_TIEN_CHI_HUY_CLASS_20A_SS01]_____
+     - lib/28_def0028/ADef26_0/08_SubDefs/DefA20/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def25/
+     - lib/28_def0028/ADef26_0/08_SubDefs/DefA20/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def50/
+     - lib/28_def0028/ADef26_0/08_SubDefs/DefA20/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def90/
+     - lib/28_def0028/ADef26_0/08_SubDefs/DefA20/08_SubDefs/DefVk010/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def90/
+     - lib/28_def0028/ADef26_0/08_SubDefs/DefA20/08_SubDefs/DefVk020/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def90/
+     - lib/28_def0028/ADef26_0/08_SubDefs/DefA20/08_SubDefs/DefVk030/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def90/
+     - lib/28_def0028/ADef26_0/08_SubDefs/DefA20/08_SubDefs/DefVk040/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def90/
+     #
+     # TODO: _____[PHUONG_TIEN_CHI_HUY_CLASS_20A_SS02]_____
+     #
+     # TODO: _____[PHUONG_TIEN_CHI_HUY_CLASS_20A_SS03]_____
+     #
+     #
+     # TODO: _____[PHUONG_TIEN_CHI_HUY_CLASS_30A_SS01]_____
+     - lib/28_def0028/ADef26_0/08_SubDefs/DefA30/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def25/
+     - lib/28_def0028/ADef26_0/08_SubDefs/DefA30/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def50/
+     - lib/28_def0028/ADef26_0/08_SubDefs/DefA30/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def90/
+     - lib/28_def0028/ADef26_0/08_SubDefs/DefA30/08_SubDefs/DefVk010/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def90/
+     - lib/28_def0028/ADef26_0/08_SubDefs/DefA30/08_SubDefs/DefVk020/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def90/
+     - lib/28_def0028/ADef26_0/08_SubDefs/DefA30/08_SubDefs/DefVk030/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def90/
+     - lib/28_def0028/ADef26_0/08_SubDefs/DefA30/08_SubDefs/DefVk040/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def90/
+     #
+     # TODO: _____[PHUONG_TIEN_CHI_HUY_CLASS_30A_SS02]_____
+     #
+     # TODO: _____[PHUONG_TIEN_CHI_HUY_CLASS_30A_SS03]_____
+     #
+     #
+     # TODO: _____[PHUONG_TIEN_CHI_HUY_CLASS_40A_SS01]_____
+     - lib/28_def0028/ADef26_0/08_SubDefs/DefA40/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def25/
+     - lib/28_def0028/ADef26_0/08_SubDefs/DefA40/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def50/
+     - lib/28_def0028/ADef26_0/08_SubDefs/DefA40/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def90/
+     - lib/28_def0028/ADef26_0/08_SubDefs/DefA40/08_SubDefs/DefVk010/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def90/
+     - lib/28_def0028/ADef26_0/08_SubDefs/DefA40/08_SubDefs/DefVk020/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def90/
+     - lib/28_def0028/ADef26_0/08_SubDefs/DefA40/08_SubDefs/DefVk030/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def90/
+     - lib/28_def0028/ADef26_0/08_SubDefs/DefA40/08_SubDefs/DefVk040/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def90/
+     #
+     # TODO: _____[PHUONG_TIEN_CHI_HUY_CLASS_40A_SS02]_____
+     #
+     # TODO: _____[PHUONG_TIEN_CHI_HUY_CLASS_40A_SS03]_____
+     #
+     #
+     # TODO: _____[PHUONG_TIEN_CHI_HUY_CLASS_50A_SS01]_____
+     - lib/28_def0028/ADef26_0/08_SubDefs/DefA50/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def25/
+     - lib/28_def0028/ADef26_0/08_SubDefs/DefA50/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def50/
+     - lib/28_def0028/ADef26_0/08_SubDefs/DefA50/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def90/
+     - lib/28_def0028/ADef26_0/08_SubDefs/DefA50/08_SubDefs/DefVk010/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def90/
+     - lib/28_def0028/ADef26_0/08_SubDefs/DefA50/08_SubDefs/DefVk020/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def90/
+     - lib/28_def0028/ADef26_0/08_SubDefs/DefA50/08_SubDefs/DefVk030/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def90/
+     - lib/28_def0028/ADef26_0/08_SubDefs/DefA50/08_SubDefs/DefVk040/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def90/
+     #
+     # TODO: _____[PHUONG_TIEN_CHI_HUY_CLASS_50A_SS02]_____
+     #
+     # TODO: _____[PHUONG_TIEN_CHI_HUY_CLASS_50A_SS03]_____
+     #
+     #
+     # TODO: _____[PHUONG_TIEN_CHI_HUY_CLASS_10B_SS01]_____
+     - lib/28_def0028/ADef26_0/08_SubDefs/DefB10/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def25/
+     - lib/28_def0028/ADef26_0/08_SubDefs/DefB10/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def50/
+     - lib/28_def0028/ADef26_0/08_SubDefs/DefB10/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def90/
+     - lib/28_def0028/ADef26_0/08_SubDefs/DefB10/08_SubDefs/DefVk010/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def90/
+     - lib/28_def0028/ADef26_0/08_SubDefs/DefB10/08_SubDefs/DefVk020/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def90/
+     - lib/28_def0028/ADef26_0/08_SubDefs/DefB10/08_SubDefs/DefVk030/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def90/
+     - lib/28_def0028/ADef26_0/08_SubDefs/DefB10/08_SubDefs/DefVk040/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def90/
+     #
+     #
+     # TODO: _____[PHUONG_TIEN_CHI_HUY_CLASS_20B_SS01]_____
+     - lib/28_def0028/ADef26_0/08_SubDefs/DefB20/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def25/
+     - lib/28_def0028/ADef26_0/08_SubDefs/DefB20/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def50/
+     - lib/28_def0028/ADef26_0/08_SubDefs/DefB20/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def90/
+     - lib/28_def0028/ADef26_0/08_SubDefs/DefB20/08_SubDefs/DefVk010/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def90/
+     - lib/28_def0028/ADef26_0/08_SubDefs/DefB20/08_SubDefs/DefVk020/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def90/
+     - lib/28_def0028/ADef26_0/08_SubDefs/DefB20/08_SubDefs/DefVk030/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def90/
+     - lib/28_def0028/ADef26_0/08_SubDefs/DefB20/08_SubDefs/DefVk040/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def90/
+     #
+     #
+     # TODO: _____[PHUONG_TIEN_CHI_HUY_CLASS_30B_SS01]_____
+     - lib/28_def0028/ADef26_0/08_SubDefs/DefB30/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def25/
+     - lib/28_def0028/ADef26_0/08_SubDefs/DefB30/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def50/
+     - lib/28_def0028/ADef26_0/08_SubDefs/DefB30/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def90/
+     - lib/28_def0028/ADef26_0/08_SubDefs/DefB30/08_SubDefs/DefVk010/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def90/
+     - lib/28_def0028/ADef26_0/08_SubDefs/DefB30/08_SubDefs/DefVk020/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def90/
+     - lib/28_def0028/ADef26_0/08_SubDefs/DefB30/08_SubDefs/DefVk030/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def90/
+     - lib/28_def0028/ADef26_0/08_SubDefs/DefB30/08_SubDefs/DefVk040/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def90/
+     #
+     #
+     # TODO: _____[PHUONG_TIEN_CHI_HUY_CLASS_40B_SS01]_____
+     - lib/28_def0028/ADef26_0/08_SubDefs/DefB40/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def25/
+     - lib/28_def0028/ADef26_0/08_SubDefs/DefB40/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def50/
+     - lib/28_def0028/ADef26_0/08_SubDefs/DefB40/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def90/
+     - lib/28_def0028/ADef26_0/08_SubDefs/DefB40/08_SubDefs/DefVk010/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def90/
+     - lib/28_def0028/ADef26_0/08_SubDefs/DefB40/08_SubDefs/DefVk020/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def90/
+     - lib/28_def0028/ADef26_0/08_SubDefs/DefB40/08_SubDefs/DefVk030/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def90/
+     - lib/28_def0028/ADef26_0/08_SubDefs/DefB40/08_SubDefs/DefVk040/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def90/
+     #
+     #
+     # TODO: _____[PHUONG_TIEN_CHI_HUY_CLASS_50B_SS01]_____
+     - lib/28_def0028/ADef26_0/08_SubDefs/DefB50/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def25/
+     - lib/28_def0028/ADef26_0/08_SubDefs/DefB50/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def50/
+     - lib/28_def0028/ADef26_0/08_SubDefs/DefB50/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def90/
+     - lib/28_def0028/ADef26_0/08_SubDefs/DefB50/08_SubDefs/DefVk010/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def90/
+     - lib/28_def0028/ADef26_0/08_SubDefs/DefB50/08_SubDefs/DefVk020/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def90/
+     - lib/28_def0028/ADef26_0/08_SubDefs/DefB50/08_SubDefs/DefVk030/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def90/
+     - lib/28_def0028/ADef26_0/08_SubDefs/DefB50/08_SubDefs/DefVk040/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def90/
+     #
+     #
+     #
+     #
+     #
+     # TODO: _____[PHUONG_TIEN_CHI_HUY_CLASS_10C_SS01]_____
+     - lib/28_def0028/ADef26_0/08_SubDefs/DefC10/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def25/
+     - lib/28_def0028/ADef26_0/08_SubDefs/DefC10/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def50/
+     - lib/28_def0028/ADef26_0/08_SubDefs/DefC10/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def90/
+     - lib/28_def0028/ADef26_0/08_SubDefs/DefC10/08_SubDefs/DefVk010/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def90/
+     - lib/28_def0028/ADef26_0/08_SubDefs/DefC10/08_SubDefs/DefVk020/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def90/
+     - lib/28_def0028/ADef26_0/08_SubDefs/DefC10/08_SubDefs/DefVk030/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def90/
+     - lib/28_def0028/ADef26_0/08_SubDefs/DefC10/08_SubDefs/DefVk040/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def90/
+     #
+     #
+     # TODO: _____[PHUONG_TIEN_CHI_HUY_CLASS_20C_SS01]_____
+     - lib/28_def0028/ADef26_0/08_SubDefs/DefC20/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def25/
+     - lib/28_def0028/ADef26_0/08_SubDefs/DefC20/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def50/
+     - lib/28_def0028/ADef26_0/08_SubDefs/DefC20/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def90/
+     - lib/28_def0028/ADef26_0/08_SubDefs/DefC20/08_SubDefs/DefVk010/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def90/
+     - lib/28_def0028/ADef26_0/08_SubDefs/DefC20/08_SubDefs/DefVk020/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def90/
+     - lib/28_def0028/ADef26_0/08_SubDefs/DefC20/08_SubDefs/DefVk030/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def90/
+     - lib/28_def0028/ADef26_0/08_SubDefs/DefC20/08_SubDefs/DefVk040/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def90/
+     #
+     #
+     # TODO: _____[PHUONG_TIEN_CHI_HUY_CLASS_30C_SS01]_____
+     - lib/28_def0028/ADef26_0/08_SubDefs/DefC30/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def25/
+     - lib/28_def0028/ADef26_0/08_SubDefs/DefC30/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def50/
+     - lib/28_def0028/ADef26_0/08_SubDefs/DefC30/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def90/
+     - lib/28_def0028/ADef26_0/08_SubDefs/DefC30/08_SubDefs/DefVk010/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def90/
+     - lib/28_def0028/ADef26_0/08_SubDefs/DefC30/08_SubDefs/DefVk020/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def90/
+     - lib/28_def0028/ADef26_0/08_SubDefs/DefC30/08_SubDefs/DefVk030/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def90/
+     - lib/28_def0028/ADef26_0/08_SubDefs/DefC30/08_SubDefs/DefVk040/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def90/
+     #
+     #
+     # TODO: _____[PHUONG_TIEN_CHI_HUY_CLASS_40C_SS01]_____
+     - lib/28_def0028/ADef26_0/08_SubDefs/DefC40/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def25/
+     - lib/28_def0028/ADef26_0/08_SubDefs/DefC40/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def50/
+     - lib/28_def0028/ADef26_0/08_SubDefs/DefC40/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def90/
+     - lib/28_def0028/ADef26_0/08_SubDefs/DefC40/08_SubDefs/DefVk010/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def90/
+     - lib/28_def0028/ADef26_0/08_SubDefs/DefC40/08_SubDefs/DefVk020/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def90/
+     - lib/28_def0028/ADef26_0/08_SubDefs/DefC40/08_SubDefs/DefVk030/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def90/
+     - lib/28_def0028/ADef26_0/08_SubDefs/DefC40/08_SubDefs/DefVk040/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def90/
+     #
+     #
+     # TODO: _____[PHUONG_TIEN_CHI_HUY_CLASS_50C_SS01]_____
+     - lib/28_def0028/ADef26_0/08_SubDefs/DefC50/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def25/
+     - lib/28_def0028/ADef26_0/08_SubDefs/DefC50/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def50/
+     - lib/28_def0028/ADef26_0/08_SubDefs/DefC50/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def90/
+     - lib/28_def0028/ADef26_0/08_SubDefs/DefC50/08_SubDefs/DefVk010/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def90/
+     - lib/28_def0028/ADef26_0/08_SubDefs/DefC50/08_SubDefs/DefVk020/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def90/
+     - lib/28_def0028/ADef26_0/08_SubDefs/DefC50/08_SubDefs/DefVk030/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def90/
+     - lib/28_def0028/ADef26_0/08_SubDefs/DefC50/08_SubDefs/DefVk040/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def90/
+     #
+     #
+     #
+     # TODO: _____[PHUONG_TIEN_VU_KHI_CLASS_10A_SS010_VKSS010]_____
+     # TODO: _____[PHUONG_TIEN_VU_KHI_CLASS_10A_SS010_VKSS020]_____
+     # TODO: _____[PHUONG_TIEN_VU_KHI_CLASS_10A_SS010_VKSS030]_____
+     # TODO: _____[PHUONG_TIEN_VU_KHI_CLASS_10A_SS010_VKSS040]_____
+     - lib/28_def0028/ADef210_0/08_SubDefs/DefA10/08_SubDefs/DefVk010/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def90/
+     - lib/28_def0028/ADef210_0/08_SubDefs/DefA10/08_SubDefs/DefVk020/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def90/
+     - lib/28_def0028/ADef210_0/08_SubDefs/DefA10/08_SubDefs/DefVk030/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def90/
+     - lib/28_def0028/ADef210_0/08_SubDefs/DefA10/08_SubDefs/DefVk040/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def90/
+     #
+     # TODO: _____[PHUONG_TIEN_VU_KHI_CLASS_20A_SS010_VKSS010]_____
+     # TODO: _____[PHUONG_TIEN_VU_KHI_CLASS_20A_SS010_VKSS020]_____
+     # TODO: _____[PHUONG_TIEN_VU_KHI_CLASS_20A_SS010_VKSS030]_____
+     # TODO: _____[PHUONG_TIEN_VU_KHI_CLASS_20A_SS010_VKSS040]_____
+     - lib/28_def0028/ADef210_0/08_SubDefs/DefA20/08_SubDefs/DefVk010/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def90/
+     - lib/28_def0028/ADef210_0/08_SubDefs/DefA20/08_SubDefs/DefVk020/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def90/
+     - lib/28_def0028/ADef210_0/08_SubDefs/DefA20/08_SubDefs/DefVk030/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def90/
+     - lib/28_def0028/ADef210_0/08_SubDefs/DefA20/08_SubDefs/DefVk040/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def90/
+     #
+     # TODO: _____[PHUONG_TIEN_VU_KHI_CLASS_30A_SS010_VKSS010]_____
+     # TODO: _____[PHUONG_TIEN_VU_KHI_CLASS_30A_SS010_VKSS020]_____
+     # TODO: _____[PHUONG_TIEN_VU_KHI_CLASS_30A_SS010_VKSS030]_____
+     # TODO: _____[PHUONG_TIEN_VU_KHI_CLASS_30A_SS010_VKSS040]_____
+     - lib/28_def0028/ADef210_0/08_SubDefs/DefA30/08_SubDefs/DefVk010/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def90/
+     - lib/28_def0028/ADef210_0/08_SubDefs/DefA30/08_SubDefs/DefVk020/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def90/
+     - lib/28_def0028/ADef210_0/08_SubDefs/DefA30/08_SubDefs/DefVk030/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def90/
+     - lib/28_def0028/ADef210_0/08_SubDefs/DefA30/08_SubDefs/DefVk040/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def90/
+     #
+     # TODO: _____[PHUONG_TIEN_VU_KHI_CLASS_40A_SS010_VKSS010]_____
+     # TODO: _____[PHUONG_TIEN_VU_KHI_CLASS_40A_SS010_VKSS020]_____
+     # TODO: _____[PHUONG_TIEN_VU_KHI_CLASS_40A_SS010_VKSS030]_____
+     # TODO: _____[PHUONG_TIEN_VU_KHI_CLASS_40A_SS010_VKSS040]_____
+     - lib/28_def0028/ADef210_0/08_SubDefs/DefA40/08_SubDefs/DefVk010/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def90/
+     - lib/28_def0028/ADef210_0/08_SubDefs/DefA40/08_SubDefs/DefVk020/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def90/
+     - lib/28_def0028/ADef210_0/08_SubDefs/DefA40/08_SubDefs/DefVk030/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def90/
+     - lib/28_def0028/ADef210_0/08_SubDefs/DefA40/08_SubDefs/DefVk040/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def90/
+     #
+     # TODO: _____[PHUONG_TIEN_VU_KHI_CLASS_50A_SS010_VKSS010]_____
+     # TODO: _____[PHUONG_TIEN_VU_KHI_CLASS_50A_SS010_VKSS020]_____
+     # TODO: _____[PHUONG_TIEN_VU_KHI_CLASS_50A_SS010_VKSS030]_____
+     # TODO: _____[PHUONG_TIEN_VU_KHI_CLASS_50A_SS010_VKSS040]_____
+     - lib/28_def0028/ADef210_0/08_SubDefs/DefA50/08_SubDefs/DefVk010/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def90/
+     - lib/28_def0028/ADef210_0/08_SubDefs/DefA50/08_SubDefs/DefVk020/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def90/
+     - lib/28_def0028/ADef210_0/08_SubDefs/DefA50/08_SubDefs/DefVk030/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def90/
+     - lib/28_def0028/ADef210_0/08_SubDefs/DefA50/08_SubDefs/DefVk040/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def90/
+     #
+     # TODO: _____[PHUONG_TIEN_VU_KHI_CLASS_10B_SS010_VKSS010]_____
+     # TODO: _____[PHUONG_TIEN_VU_KHI_CLASS_10B_SS010_VKSS020]_____
+     # TODO: _____[PHUONG_TIEN_VU_KHI_CLASS_10B_SS010_VKSS030]_____
+     # TODO: _____[PHUONG_TIEN_VU_KHI_CLASS_10B_SS010_VKSS040]_____
+     - lib/28_def0028/ADef210_0/08_SubDefs/DefB10/08_SubDefs/DefVk010/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def90/
+     - lib/28_def0028/ADef210_0/08_SubDefs/DefB10/08_SubDefs/DefVk020/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def90/
+     - lib/28_def0028/ADef210_0/08_SubDefs/DefB10/08_SubDefs/DefVk030/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def90/
+     - lib/28_def0028/ADef210_0/08_SubDefs/DefB10/08_SubDefs/DefVk040/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def90/
+     #
+     # TODO: _____[PHUONG_TIEN_VU_KHI_CLASS_20B_SS010_VKSS010]_____
+     # TODO: _____[PHUONG_TIEN_VU_KHI_CLASS_20B_SS010_VKSS020]_____
+     # TODO: _____[PHUONG_TIEN_VU_KHI_CLASS_20B_SS010_VKSS030]_____
+     # TODO: _____[PHUONG_TIEN_VU_KHI_CLASS_20B_SS010_VKSS040]_____
+     - lib/28_def0028/ADef210_0/08_SubDefs/DefB20/08_SubDefs/DefVk010/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def90/
+     - lib/28_def0028/ADef210_0/08_SubDefs/DefB20/08_SubDefs/DefVk020/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def90/
+     - lib/28_def0028/ADef210_0/08_SubDefs/DefB20/08_SubDefs/DefVk030/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def90/
+     - lib/28_def0028/ADef210_0/08_SubDefs/DefB20/08_SubDefs/DefVk040/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def90/
+     #
+     # TODO: _____[PHUONG_TIEN_VU_KHI_CLASS_30B_SS010_VKSS010]_____
+     # TODO: _____[PHUONG_TIEN_VU_KHI_CLASS_30B_SS020_VKSS010]_____
+     # TODO: _____[PHUONG_TIEN_VU_KHI_CLASS_30B_SS030_VKSS010]_____
+     # TODO: _____[PHUONG_TIEN_VU_KHI_CLASS_30B_SS040_VKSS010]_____
+     - lib/28_def0028/ADef210_0/08_SubDefs/DefB30/08_SubDefs/DefVk010/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def90/
+     - lib/28_def0028/ADef210_0/08_SubDefs/DefB30/08_SubDefs/DefVk020/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def90/
+     - lib/28_def0028/ADef210_0/08_SubDefs/DefB30/08_SubDefs/DefVk030/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def90/
+     - lib/28_def0028/ADef210_0/08_SubDefs/DefB30/08_SubDefs/DefVk040/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def90/
+     #
+     # TODO: _____[PHUONG_TIEN_VU_KHI_CLASS_40B_SS010_VKSS010]_____
+     # TODO: _____[PHUONG_TIEN_VU_KHI_CLASS_40B_SS020_VKSS010]_____
+     # TODO: _____[PHUONG_TIEN_VU_KHI_CLASS_40B_SS030_VKSS010]_____
+     # TODO: _____[PHUONG_TIEN_VU_KHI_CLASS_40B_SS040_VKSS010]_____
+     - lib/28_def0028/ADef210_0/08_SubDefs/DefB40/08_SubDefs/DefVk010/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def90/
+     - lib/28_def0028/ADef210_0/08_SubDefs/DefB40/08_SubDefs/DefVk020/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def90/
+     - lib/28_def0028/ADef210_0/08_SubDefs/DefB40/08_SubDefs/DefVk030/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def90/
+     - lib/28_def0028/ADef210_0/08_SubDefs/DefB40/08_SubDefs/DefVk040/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def90/
+     #
+     # TODO: _____[PHUONG_TIEN_VU_KHI_CLASS_50B_SS010_VKSS010]_____
+     # TODO: _____[PHUONG_TIEN_VU_KHI_CLASS_50B_SS020_VKSS010]_____
+     # TODO: _____[PHUONG_TIEN_VU_KHI_CLASS_50B_SS030_VKSS010]_____
+     # TODO: _____[PHUONG_TIEN_VU_KHI_CLASS_50B_SS040_VKSS010]_____
+     - lib/28_def0028/ADef210_0/08_SubDefs/DefB50/08_SubDefs/DefVk010/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def90/
+     - lib/28_def0028/ADef210_0/08_SubDefs/DefB50/08_SubDefs/DefVk020/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def90/
+     - lib/28_def0028/ADef210_0/08_SubDefs/DefB50/08_SubDefs/DefVk030/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def90/
+     - lib/28_def0028/ADef210_0/08_SubDefs/DefB50/08_SubDefs/DefVk040/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def90/
+     #
+     # TODO: _____[PHUONG_TIEN_VU_KHI_CLASS_10C_SS010_VKSS010]_____
+     # TODO: _____[PHUONG_TIEN_VU_KHI_CLASS_10C_SS020_VKSS010]_____
+     # TODO: _____[PHUONG_TIEN_VU_KHI_CLASS_10C_SS030_VKSS010]_____
+     # TODO: _____[PHUONG_TIEN_VU_KHI_CLASS_10C_SS040_VKSS010]_____
+     - lib/28_def0028/ADef210_0/08_SubDefs/DefC10/08_SubDefs/DefVk010/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def90/
+     - lib/28_def0028/ADef210_0/08_SubDefs/DefC10/08_SubDefs/DefVk020/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def90/
+     - lib/28_def0028/ADef210_0/08_SubDefs/DefC10/08_SubDefs/DefVk030/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def90/
+     - lib/28_def0028/ADef210_0/08_SubDefs/DefC10/08_SubDefs/DefVk040/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def90/
+     #
+     # TODO: _____[PHUONG_TIEN_VU_KHI_CLASS_20C_SS010_VKSS010]_____
+     # TODO: _____[PHUONG_TIEN_VU_KHI_CLASS_20C_SS010_VKSS020]_____
+     # TODO: _____[PHUONG_TIEN_VU_KHI_CLASS_20C_SS010_VKSS030]_____
+     # TODO: _____[PHUONG_TIEN_VU_KHI_CLASS_20C_SS010_VKSS040]_____
+     - lib/28_def0028/ADef210_0/08_SubDefs/DefC20/08_SubDefs/DefVk010/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def90/
+     - lib/28_def0028/ADef210_0/08_SubDefs/DefC20/08_SubDefs/DefVk020/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def90/
+     - lib/28_def0028/ADef210_0/08_SubDefs/DefC20/08_SubDefs/DefVk030/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def90/
+     - lib/28_def0028/ADef210_0/08_SubDefs/DefC20/08_SubDefs/DefVk040/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def90/
+     #
+     # TODO: _____[PHUONG_TIEN_VU_KHI_CLASS_30C_SS010_VKSS010]_____
+     # TODO: _____[PHUONG_TIEN_VU_KHI_CLASS_30C_SS010_VKSS020]_____
+     # TODO: _____[PHUONG_TIEN_VU_KHI_CLASS_30C_SS010_VKSS030]_____
+     # TODO: _____[PHUONG_TIEN_VU_KHI_CLASS_30C_SS010_VKSS040]_____
+     - lib/28_def0028/ADef210_0/08_SubDefs/DefC30/08_SubDefs/DefVk010/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def90/
+     - lib/28_def0028/ADef210_0/08_SubDefs/DefC30/08_SubDefs/DefVk020/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def90/
+     - lib/28_def0028/ADef210_0/08_SubDefs/DefC30/08_SubDefs/DefVk030/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def90/
+     - lib/28_def0028/ADef210_0/08_SubDefs/DefC30/08_SubDefs/DefVk040/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def90/
+     #
+     # TODO: _____[PHUONG_TIEN_VU_KHI_CLASS_40C_SS010_VKSS010]_____
+     # TODO: _____[PHUONG_TIEN_VU_KHI_CLASS_40C_SS010_VKSS020]_____
+     # TODO: _____[PHUONG_TIEN_VU_KHI_CLASS_40C_SS010_VKSS030]_____
+     # TODO: _____[PHUONG_TIEN_VU_KHI_CLASS_40C_SS010_VKSS040]_____
+     - lib/28_def0028/ADef210_0/08_SubDefs/DefC40/08_SubDefs/DefVk010/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def90/
+     - lib/28_def0028/ADef210_0/08_SubDefs/DefC40/08_SubDefs/DefVk020/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def90/
+     - lib/28_def0028/ADef210_0/08_SubDefs/DefC40/08_SubDefs/DefVk030/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def90/
+     - lib/28_def0028/ADef210_0/08_SubDefs/DefC40/08_SubDefs/DefVk040/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def90/
+     #
+     #
+     # TODO: _____[PHUONG_TIEN_VU_KHI_CLASS_50C_SS010_VKSS010]_____
+     # TODO: _____[PHUONG_TIEN_VU_KHI_CLASS_50C_SS010_VKSS020]_____
+     # TODO: _____[PHUONG_TIEN_VU_KHI_CLASS_50C_SS010_VKSS030]_____
+     # TODO: _____[PHUONG_TIEN_VU_KHI_CLASS_50C_SS010_VKSS040]_____
+     # TODO: _____[PHUONG_TIEN_VU_KHI_CLASS_50C_SS010_VKSS050]_____
+     # TODO: _____[PHUONG_TIEN_VU_KHI_CLASS_50C_SS010_VKSS060]_____
+     # TODO: _____[PHUONG_TIEN_VU_KHI_CLASS_50C_SS010_VKSS070]_____
+     # TODO: _____[PHUONG_TIEN_VU_KHI_CLASS_50C_SS010_VKSS080]_____
+     - lib/28_def0028/ADef210_0/08_SubDefs/DefC50/08_SubDefs/DefVk010/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def90/
+     - lib/28_def0028/ADef210_0/08_SubDefs/DefC50/08_SubDefs/DefVk020/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def90/
+     - lib/28_def0028/ADef210_0/08_SubDefs/DefC50/08_SubDefs/DefVk030/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def90/
+     - lib/28_def0028/ADef210_0/08_SubDefs/DefC50/08_SubDefs/DefVk040/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def90/
+     - lib/28_def0028/ADef210_0/08_SubDefs/DefC50/08_SubDefs/DefVk050/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def90/
+     - lib/28_def0028/ADef210_0/08_SubDefs/DefC50/08_SubDefs/DefVk060/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def90/
+     - lib/28_def0028/ADef210_0/08_SubDefs/DefC50/08_SubDefs/DefVk070/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def90/
+     - lib/28_def0028/ADef210_0/08_SubDefs/DefC50/08_SubDefs/DefVk080/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def90/
+     #
+     #
+     #
+     #
+     - lib/28_def0028/ADef810_0/08_SubDefs/DefA10/08_SubDefs/DefVp010/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def90/
+     - lib/28_def0028/ADef810_0/08_SubDefs/DefA10/08_SubDefs/DefVp020/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def90/
+     - lib/28_def0028/ADef810_0/08_SubDefs/DefA10/08_SubDefs/DefVp030/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def90/
+     - lib/28_def0028/ADef810_0/08_SubDefs/DefA10/08_SubDefs/DefVp040/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def90/
+     - lib/28_def0028/ADef810_0/08_SubDefs/DefA10/08_SubDefs/DefVp050/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def90/
+     - lib/28_def0028/ADef810_0/08_SubDefs/DefA10/08_SubDefs/DefVp060/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/07_Resized/Def90/
+     #
+     #
+     #
+     #
+     #
+     #
+     #
+     #
+     #
+     #
+     #
+     #
+     #
+     #
+     #
+     #
+     #
+     #
+     #
+     #
+     #
+     #
+     #
+     #
+     #
+
+  #
+  # For details regarding assets in packages, see
+  # https://flutter.dev/to/asset-from-package
+  #
+  # An image asset can refer to one or more resolution-specific "variants", see
+  # https://flutter.dev/to/resolution-aware-images
+
+  # To add custom fonts to your package, add a fonts section here,
+  # in this "flutter" section. Each entry in this list should have a
+  # "family" key with the font family name, and a "fonts" key with a
+  # list giving the asset and other descriptors for the font. For
+  # example:
+  # fonts:
+  #   - family: Schyler
+  #     fonts:
+  #       - asset: fonts/Schyler-Regular.ttf
+  #       - asset: fonts/Schyler-Italic.ttf
+  #         style: italic
+  #   - family: Trajan Pro
+  #     fonts:
+  #       - asset: fonts/TrajanPro.ttf
+  #       - asset: fonts/TrajanPro_Bold.ttf
+  #         weight: 700
+  #
+  # For details regarding fonts in packages, see
+  # https://flutter.dev/to/font-from-package

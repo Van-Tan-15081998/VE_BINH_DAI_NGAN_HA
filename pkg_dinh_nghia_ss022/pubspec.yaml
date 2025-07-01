@@ -1,0 +1,226 @@
+name: pkg_dinh_nghia_ss022
+description: "A new Flutter package project."
+version: 0.0.1
+publish_to: 'none'
+homepage:
+
+environment:
+  sdk: ^3.7.2
+  flutter: ">=1.17.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  pkg_dinh_nghia_ss020:
+    path: ../pkg_dinh_nghia_ss020
+  pkg_dinh_nghia_ss050:
+    path: ../pkg_dinh_nghia_ss050
+
+  animate_do: 3.0.2
+  cupertino_icons: ^1.0.6
+  #  audioplayers: 6.0.0
+  collection: 1.19.1
+  carousel_slider: 4.2.1
+  go_router: 14.0.0
+  provider: 6.0.2
+  shared_preferences: 2.0.13
+  #  sqflite: 2.3.0
+  path: 1.9.0
+  #  google_mobile_ads: 5.0.0
+  google_fonts: 5.0.0
+  flame: 1.25.0
+  #  vm_service: 14.2.1
+  video_player: 2.9.3
+
+  path_provider: 2.1.5
+
+dev_dependencies:
+#  flutter_test:
+#    sdk: flutter
+  flutter_lints: ^5.0.0
+
+# For information on the generic Dart part of this file, see the
+# following page: https://dart.dev/tools/pub/pubspec
+
+# The following section is specific to Flutter packages.
+flutter:
+
+  # To add assets to your package, add an assets section, like this:
+  assets:
+    - lib/28_def0028/ADef210_0/08_SubDefs/Def210_2/07_Resized/Def90/
+    - lib/28_def0028/ADef210_0/08_SubDefs/Def220_2/07_Resized/Def90/
+    #
+    #
+    # _____[NUT_BAM_CHON_TAB_CUA_HANG_KHONG_KICH_HOAT]_____
+    - lib/28_def0028/ADef030_0/08_SubDefs/Def210_2/07_Resized/Def90/
+    # _____[NUT_BAM_CHON_TAB_CUA_HANG_KICH_HOAT]_____
+    - lib/28_def0028/ADef030_0/08_SubDefs/Def220_2/07_Resized/Def90/
+    #
+    # _____[NUT_BAM_CHON_TAB_THANH_TICH_KHONG_KICH_HOAT]_____
+    - lib/28_def0028/ADef030_0/08_SubDefs/Def310_2/07_Resized/Def90/
+    # _____[NUT_BAM_CHON_TAB_THANH_TICH_KICH_HOAT]_____
+    - lib/28_def0028/ADef030_0/08_SubDefs/Def320_2/07_Resized/Def90/
+    #
+    # _____[NUT_BAM_CHON_TAB_CHIEN_DAU_KHONG_KICH_HOAT]_____
+    - lib/28_def0028/ADef030_0/08_SubDefs/Def510_2/07_Resized/Def90/
+    # _____[NUT_BAM_CHON_TAB_CHIEN_DAU_KICH_HOAT]_____
+    - lib/28_def0028/ADef030_0/08_SubDefs/Def520_2/07_Resized/Def90/
+    #
+    # _____[NUT_BAM_CHON_TAB_THU_VIEN_KHONG_KICH_HOAT]_____
+    - lib/28_def0028/ADef030_0/08_SubDefs/Def710_2/07_Resized/Def90/
+    # _____[NUT_BAM_CHON_TAB_THU_VIEN_KICH_HOAT]_____
+    - lib/28_def0028/ADef030_0/08_SubDefs/Def720_2/07_Resized/Def90/
+    #
+    # _____[NUT_BAM_CHON_TAB_CAI_DAT_KHONG_KICH_HOAT]_____
+    - lib/28_def0028/ADef030_0/08_SubDefs/Def810_2/07_Resized/Def90/
+    # _____[NUT_BAM_CHON_TAB_CAI_DAT_KICH_HOAT]_____
+    - lib/28_def0028/ADef030_0/08_SubDefs/Def820_2/07_Resized/Def90/
+    #
+    # _____[NUT_BAM_CHON_TAB_CHIEN_DAU_CO_KHONG_KICH_HOAT]_____
+    - lib/28_def0028/ADef050_0/08_SubDefs/Def210_2/07_Resized/Def90/
+    # _____[NUT_BAM_CHON_TAB_CHIEN_DAU_CO_KICH_HOAT]_____
+    - lib/28_def0028/ADef050_0/08_SubDefs/Def220_2/07_Resized/Def90/
+    #
+    # _____[NUT_BAM_CHON_TAB_BAN_DO_KHONG_KICH_HOAT]_____
+    - lib/28_def0028/ADef050_0/08_SubDefs/Def310_2/07_Resized/Def90/
+    # _____[NUT_BAM_CHON_TAB_BAN_DO_KICH_HOAT]_____
+    - lib/28_def0028/ADef050_0/08_SubDefs/Def320_2/07_Resized/Def90/
+    #
+    # _____[NUT_BAM_CHUYEN_CHON_CHI_DINH_TRAI]_____
+    - lib/28_def0028/ADef060_0/08_SubDefs/Def210_2/07_Resized/Def90/
+    # _____[NUT_BAM_CHUYEN_CHON_CHI_DINH_PHAI]_____
+    - lib/28_def0028/ADef060_0/08_SubDefs/Def220_2/07_Resized/Def90/
+    # _____[NUT_BAM_CHON_TAB_THONG_TIN_CHIEN_DAU_CO]_____
+    - lib/28_def0028/ADef060_0/08_SubDefs/Def230_2/07_Resized/Def90/
+    # _____[NUT_BAM_CHON_TAB_NANG_CAP_CHIEN_DAU_CO]_____
+    - lib/28_def0028/ADef060_0/08_SubDefs/Def240_2/07_Resized/Def90/
+    #
+    #
+    # _____[DANG_CAP_SAO_00E03]_____
+    - lib/28_def0028/ADef062_0/08_SubDefs/Def230_2/07_Resized/Def90/
+    # _____[DANG_CAP_SAO_00D04]_____
+    - lib/28_def0028/ADef062_0/08_SubDefs/Def240_2/07_Resized/Def90/
+    # _____[DANG_CAP_SAO_00C05]_____
+    - lib/28_def0028/ADef062_0/08_SubDefs/Def250_2/07_Resized/Def90/
+    # _____[DANG_CAP_SAO_00B06]_____
+    - lib/28_def0028/ADef062_0/08_SubDefs/Def260_2/07_Resized/Def90/
+    # _____[DANG_CAP_SAO_00A07]_____
+    - lib/28_def0028/ADef062_0/08_SubDefs/Def270_2/07_Resized/Def90/
+    # _____[DANG_CAP_SAO_00S08]_____
+    - lib/28_def0028/ADef062_0/08_SubDefs/Def280_2/07_Resized/Def90/
+    # _____[DANG_CAP_SAO_0SS09]_____
+    - lib/28_def0028/ADef062_0/08_SubDefs/Def290_2/07_Resized/Def90/
+    # _____[DANG_CAP_SAO_SSS10]_____
+    - lib/28_def0028/ADef062_0/08_SubDefs/Def300_2/07_Resized/Def90/
+    #
+    #
+    #
+    #
+    #
+    #
+    #
+    # _____[KHUNG_THONG_TIN_TAI_NGUYEN_VANG_TRAO_DOI]_____
+    - lib/28_def0028/ADef040_0/08_SubDefs/Def210_2/07_Resized/Def90/
+    #
+    # _____[KHUNG_THONG_TIN_TAI_NGUYEN_NGOC_TRAO_DOI]_____
+    - lib/28_def0028/ADef040_0/08_SubDefs/Def310_2/07_Resized/Def90/
+    #
+    # _____[KHUNG_THONG_TIN_TAI_NGUYEN_DOLLAR_TRAO_DOI]_____
+    - lib/28_def0028/ADef040_0/08_SubDefs/Def510_2/07_Resized/Def90/
+    #
+    # _____[KHUNG_MAN_HINH_THU_CAP_CO_BAN]_____
+    - lib/28_def0028/ADef110_0/08_SubDefs/Def210_2/07_Resized/Def90/
+    #
+    #
+    #
+    #0_____[NUT_QUAY_VE]_____
+    - lib/28_def0028/ADef020_0/08_SubDefs/Def030_2/07_Resized/Def90/
+    #0_____[NUT_TAM_DUNG_KICH_HOAT]_____
+    - lib/28_def0028/ADef020_0/08_SubDefs/Def040_2/07_Resized/Def90/
+    #0_____[NUT_TAM_DUNG_HUY_KICH_HOAT]_____
+    - lib/28_def0028/ADef020_0/08_SubDefs/Def050_2/07_Resized/Def90/
+    #
+    #
+    #0_____[CARD_DANG_CAP_SAO_00E030]_____
+    - lib/28_def0028/ADef300_0/08_SubDefs/Def210_2/07_Resized/Def90/
+    #0_____[CARD_DANG_CAP_SAO_00D040]_____
+    - lib/28_def0028/ADef300_0/08_SubDefs/Def220_2/07_Resized/Def90/
+    #0_____[CARD_DANG_CAP_SAO_00C050]_____
+    - lib/28_def0028/ADef300_0/08_SubDefs/Def230_2/07_Resized/Def90/
+    #0_____[CARD_DANG_CAP_SAO_00B060]_____
+    - lib/28_def0028/ADef300_0/08_SubDefs/Def240_2/07_Resized/Def90/
+    #0_____[CARD_DANG_CAP_SAO_00A070]_____
+    - lib/28_def0028/ADef300_0/08_SubDefs/Def250_2/07_Resized/Def90/
+    #0_____[CARD_DANG_CAP_SAO_00S080]_____
+    - lib/28_def0028/ADef300_0/08_SubDefs/Def260_2/07_Resized/Def90/
+    #0_____[CARD_DANG_CAP_SAO_0SS090]_____
+    - lib/28_def0028/ADef300_0/08_SubDefs/Def270_2/07_Resized/Def90/
+    #0_____[CARD_DANG_CAP_SAO_SSS100]_____
+    - lib/28_def0028/ADef300_0/08_SubDefs/Def280_2/07_Resized/Def90/
+    #0_____[CARD_CHIEN_DAU_CO_KICH_HOAT]_____
+    - lib/28_def0028/ADef300_0/08_SubDefs/Def300_2/07_Resized/Def90/
+    #
+    #0_____[CARD_NHIEM_VU_CHIEN_DAU_KICH_HOAT]_____
+    - lib/28_def0028/ADef400_0/08_SubDefs/Def210_2/07_Resized/Def90/
+    #0_____[CARD_NHIEM_VU_CHIEN_DAU_HUY_KICH_HOAT]_____
+    - lib/28_def0028/ADef400_0/08_SubDefs/Def220_2/07_Resized/Def90/
+    #
+    #
+    #0_____[THANH_TICH_NHIEM_VU_CHIEN_DAU_SS010_KICH_HOAT]_____
+    - lib/28_def0028/ADef400_0/08_SubDefs/Def300_2/07_Resized/Def90/
+    #0_____[THANH_TICH_NHIEM_VU_CHIEN_DAU_SS010_HUY_KICH_HOAT]_____
+    - lib/28_def0028/ADef400_0/08_SubDefs/Def310_2/07_Resized/Def90/
+    #
+    #0_____[THANH_TICH_NHIEM_VU_CHIEN_DAU_SS020_KICH_HOAT]_____
+    - lib/28_def0028/ADef400_0/08_SubDefs/Def400_2/07_Resized/Def90/
+    #0_____[THANH_TICH_NHIEM_VU_CHIEN_DAU_SS020_HUY_KICH_HOAT]_____
+    - lib/28_def0028/ADef400_0/08_SubDefs/Def410_2/07_Resized/Def90/
+    #
+    #0_____[THANH_TICH_NHIEM_VU_CHIEN_DAU_SS030_KICH_HOAT]_____
+    - lib/28_def0028/ADef400_0/08_SubDefs/Def500_2/07_Resized/Def90/
+    #0_____[THANH_TICH_NHIEM_VU_CHIEN_DAU_SS030_HUY_KICH_HOAT]_____
+    - lib/28_def0028/ADef400_0/08_SubDefs/Def510_2/07_Resized/Def90/
+    #
+    #
+    # 0_____[NUT_BAM_CO_BAN_VA]_____
+    - lib/28_def0028/ADef020_0/08_SubDefs/Def010_2/07_Resized/Def90/
+    #
+    #0_____[NUT_CHUYEN_TIEP]_____
+    - lib/28_def0028/ADef020_0/08_SubDefs/Def032_2/07_Resized/Def90/
+    #
+    #
+    #
+    #
+    #
+    #
+    #
+    #
+    #
+    #
+
+  #
+  # For details regarding assets in packages, see
+  # https://flutter.dev/to/asset-from-package
+  #
+  # An image asset can refer to one or more resolution-specific "variants", see
+  # https://flutter.dev/to/resolution-aware-images
+
+  # To add custom fonts to your package, add a fonts section here,
+  # in this "flutter" section. Each entry in this list should have a
+  # "family" key with the font family name, and a "fonts" key with a
+  # list giving the asset and other descriptors for the font. For
+  # example:
+  # fonts:
+  #   - family: Schyler
+  #     fonts:
+  #       - asset: fonts/Schyler-Regular.ttf
+  #       - asset: fonts/Schyler-Italic.ttf
+  #         style: italic
+  #   - family: Trajan Pro
+  #     fonts:
+  #       - asset: fonts/TrajanPro.ttf
+  #       - asset: fonts/TrajanPro_Bold.ttf
+  #         weight: 700
+  #
+  # For details regarding fonts in packages, see
+  # https://flutter.dev/to/font-from-package

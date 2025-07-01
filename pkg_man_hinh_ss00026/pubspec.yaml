@@ -1,0 +1,77 @@
+name: pkg_man_hinh_ss00026
+description: "A new Flutter package project."
+version: 0.0.1
+publish_to: 'none'
+homepage:
+
+environment:
+  sdk: ^3.7.2
+  flutter: ">=1.17.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  pkg_dinh_nghia_ss020:
+    path: ../pkg_dinh_nghia_ss020
+  pkg_dinh_nghia_ss050:
+    path: ../pkg_dinh_nghia_ss050
+  pkg_dinh_nghia_dv_ss0060:
+    path: ../pkg_dinh_nghia_dv_ss0060
+
+dev_dependencies:
+#  flutter_test:
+#    sdk: flutter
+  flutter_lints: ^5.0.0
+
+# For information on the generic Dart part of this file, see the
+# following page: https://dart.dev/tools/pub/pubspec
+
+# The following section is specific to Flutter packages.
+flutter:
+
+  # To add assets to your package, add an assets section, like this:
+   assets:
+     # _____[Hinh_The_Thanh_Tich_Chien_Dau_Theo_Hang_Ngay]_____
+     - lib/20_def0020/ADef20_0/08_SubDefs/Def20_2/hinh_the_thanh_tich_chien_dau_theo_hang_ngay_ss01.png
+     # _____[Hinh_The_Thanh_Tich_Chien_Dau_Theo_Lich_Su]_____
+     - lib/20_def0020/ADef22_0/08_SubDefs/Def20_2/hinh_the_thanh_tich_chien_dau_theo_lich_su_ss01.png
+
+     # _____[Hinh_Van_Ban_Thu_Nhap_So_Huu_Phan_Thuong_THN]_____
+     - lib/20_def0020/ADef24_0/09_RootDef/hinh_van_ban_thu_nhap_so_huu_phan_thuong_theo_hang_ngay.png
+     # _____[Hinh_Van_Ban_Thu_Nhap_So_Huu_Phan_Thuong_TLS]_____
+     - lib/20_def0020/ADef26_0/09_RootDef/hinh_van_ban_thu_nhap_so_huu_phan_thuong_theo_lich_su.png
+     #
+     #
+     #
+     #
+     #
+     #
+
+
+  #
+  # For details regarding assets in packages, see
+  # https://flutter.dev/to/asset-from-package
+  #
+  # An image asset can refer to one or more resolution-specific "variants", see
+  # https://flutter.dev/to/resolution-aware-images
+
+  # To add custom fonts to your package, add a fonts section here,
+  # in this "flutter" section. Each entry in this list should have a
+  # "family" key with the font family name, and a "fonts" key with a
+  # list giving the asset and other descriptors for the font. For
+  # example:
+  # fonts:
+  #   - family: Schyler
+  #     fonts:
+  #       - asset: fonts/Schyler-Regular.ttf
+  #       - asset: fonts/Schyler-Italic.ttf
+  #         style: italic
+  #   - family: Trajan Pro
+  #     fonts:
+  #       - asset: fonts/TrajanPro.ttf
+  #       - asset: fonts/TrajanPro_Bold.ttf
+  #         weight: 700
+  #
+  # For details regarding fonts in packages, see
+  # https://flutter.dev/to/font-from-package

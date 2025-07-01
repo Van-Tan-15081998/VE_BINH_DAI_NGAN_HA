@@ -1,0 +1,100 @@
+name: pkg_dinh_nghia_ss032
+description: "A new Flutter package project."
+version: 0.0.1
+publish_to: 'none'
+homepage:
+
+environment:
+  sdk: ^3.7.2
+  flutter: ">=1.17.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  pkg_dinh_nghia_ss020:
+    path: ../pkg_dinh_nghia_ss020
+  pkg_dinh_nghia_ss022:
+    path: ../pkg_dinh_nghia_ss022
+  pkg_dinh_nghia_ss050:
+    path: ../pkg_dinh_nghia_ss050
+
+  pkg_dinh_nghia_dv_ss0020:
+    path: ../pkg_dinh_nghia_dv_ss0020
+
+  flame: 1.25.0
+
+dev_dependencies:
+#  flutter_test:
+#    sdk: flutter
+  flutter_lints: ^5.0.0
+
+# For information on the generic Dart part of this file, see the
+# following page: https://dart.dev/tools/pub/pubspec
+
+# The following section is specific to Flutter packages.
+flutter:
+
+  # To add assets to your package, add an assets section, like this:
+   assets:
+     # _____[Hat_Va_Cham_Cong_Kich_SS01]_____
+     - lib/28_def0028/ADef20_0/08_SubDefs/Def20_2/08_SubDefs/Def20_4/08_SubDefs/Def20_6/08_SubDefs/Def20_8/09_RootDef/sps_HAT_VA_CHAM_CONG_KICH_SS01_PSS01.png
+     # _____[Hat_Va_Cham_Cong_Kich_SS02]_____
+     - lib/28_def0028/ADef20_0/08_SubDefs/Def22_2/08_SubDefs/Def20_4/08_SubDefs/Def20_6/08_SubDefs/Def20_8/09_RootDef/sps_HAT_VA_CHAM_CONG_KICH_SS02_PSS01.png
+     # _____[Hat_Va_Cham_Cong_Kich_SS03]_____
+     - lib/28_def0028/ADef20_0/08_SubDefs/Def24_2/08_SubDefs/Def20_4/08_SubDefs/Def20_6/08_SubDefs/Def20_8/09_RootDef/sps_HAT_VA_CHAM_CONG_KICH_SS03_PSS01.png
+     # _____[Hat_Va_Cham_Cong_Kich_SS04]_____
+     - lib/28_def0028/ADef20_0/08_SubDefs/Def26_2/08_SubDefs/Def20_4/08_SubDefs/Def20_6/08_SubDefs/Def20_8/09_RootDef/sps_HAT_VA_CHAM_CONG_KICH_SS04_PSS01.png
+     # _____[Hat_Va_Cham_Cong_Kich_SS05]_____
+     - lib/28_def0028/ADef20_0/08_SubDefs/Def28_2/08_SubDefs/Def20_4/08_SubDefs/Def20_6/08_SubDefs/Def20_8/09_RootDef/sps_HAT_VA_CHAM_CONG_KICH_SS05_PSS01.png
+     # _____[Hat_Va_Cham_Cong_Kich_SS06]_____
+     - lib/28_def0028/ADef20_0/08_SubDefs/Def30_2/08_SubDefs/Def20_4/08_SubDefs/Def20_6/08_SubDefs/Def20_8/09_RootDef/sps_HAT_VA_CHAM_CONG_KICH_SS06_PSS01.png
+     # _____[Hat_Va_Cham_Cong_Kich_SS07]_____
+     - lib/28_def0028/ADef20_0/08_SubDefs/Def32_2/08_SubDefs/Def20_4/08_SubDefs/Def20_6/08_SubDefs/Def20_8/09_RootDef/sps_HAT_VA_CHAM_CONG_KICH_SS07_PSS01.png
+     # _____[Hat_Va_Cham_Cong_Kich_SS08]_____
+     - lib/28_def0028/ADef20_0/08_SubDefs/Def34_2/08_SubDefs/Def20_4/08_SubDefs/Def20_6/08_SubDefs/Def20_8/09_RootDef/sps_HAT_VA_CHAM_CONG_KICH_SS08_PSS01.png
+     # _____[Hat_Va_Cham_Cong_Kich_SS09]_____
+     - lib/28_def0028/ADef20_0/08_SubDefs/Def36_2/08_SubDefs/Def20_4/08_SubDefs/Def20_6/08_SubDefs/Def20_8/09_RootDef/sps_HAT_VA_CHAM_CONG_KICH_SS09_PSS01.png
+
+     # _____[Hat_Va_Cham_Pha_Huy_SS01]_____
+     - lib/28_def0028/ADef22_0/08_SubDefs/Def20_2/08_SubDefs/Def20_4/08_SubDefs/Def20_6/08_SubDefs/Def20_8/09_RootDef/
+     # _____[Hat_Va_Cham_Pha_Huy_SS02]_____
+     - lib/28_def0028/ADef22_0/08_SubDefs/Def22_2/08_SubDefs/Def20_4/08_SubDefs/Def20_6/08_SubDefs/Def20_8/09_RootDef/
+     # _____[Hat_Va_Cham_Pha_Huy_SS03]_____
+     - lib/28_def0028/ADef22_0/08_SubDefs/Def24_2/08_SubDefs/Def20_4/08_SubDefs/Def20_6/08_SubDefs/Def20_8/09_RootDef/
+     # _____[Hat_Va_Cham_Pha_Huy_SS04]_____
+     - lib/28_def0028/ADef22_0/08_SubDefs/Def26_2/08_SubDefs/Def20_4/08_SubDefs/Def20_6/08_SubDefs/Def20_8/09_RootDef/
+     # _____[Hat_Va_Cham_Pha_Huy_SS05]_____
+     - lib/28_def0028/ADef22_0/08_SubDefs/Def28_2/08_SubDefs/Def20_4/08_SubDefs/Def20_6/08_SubDefs/Def20_8/09_RootDef/
+     # _____[Hat_Va_Cham_Pha_Huy_SS06]_____
+     - lib/28_def0028/ADef22_0/08_SubDefs/Def30_2/08_SubDefs/Def20_4/08_SubDefs/Def20_6/08_SubDefs/Def20_8/09_RootDef/
+     # _____[Hat_Va_Cham_Pha_Huy_SS07]_____
+     - lib/28_def0028/ADef22_0/08_SubDefs/Def32_2/08_SubDefs/Def20_4/08_SubDefs/Def20_6/08_SubDefs/Def20_8/09_RootDef/
+     # _____[Hat_Va_Cham_Pha_Huy_SS08]_____
+     - lib/28_def0028/ADef22_0/08_SubDefs/Def34_2/08_SubDefs/Def20_4/08_SubDefs/Def20_6/08_SubDefs/Def20_8/09_RootDef/
+  #
+  # For details regarding assets in packages, see
+  # https://flutter.dev/to/asset-from-package
+  #
+  # An image asset can refer to one or more resolution-specific "variants", see
+  # https://flutter.dev/to/resolution-aware-images
+
+  # To add custom fonts to your package, add a fonts section here,
+  # in this "flutter" section. Each entry in this list should have a
+  # "family" key with the font family name, and a "fonts" key with a
+  # list giving the asset and other descriptors for the font. For
+  # example:
+  # fonts:
+  #   - family: Schyler
+  #     fonts:
+  #       - asset: fonts/Schyler-Regular.ttf
+  #       - asset: fonts/Schyler-Italic.ttf
+  #         style: italic
+  #   - family: Trajan Pro
+  #     fonts:
+  #       - asset: fonts/TrajanPro.ttf
+  #       - asset: fonts/TrajanPro_Bold.ttf
+  #         weight: 700
+  #
+  # For details regarding fonts in packages, see
+  # https://flutter.dev/to/font-from-package

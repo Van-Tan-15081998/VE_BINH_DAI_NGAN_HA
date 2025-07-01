@@ -1,0 +1,535 @@
+name: pkg_dinh_nghia_ss028
+description: "A new Flutter package project."
+version: 0.0.1
+publish_to: 'none'
+homepage:
+
+environment:
+  sdk: ^3.7.2
+  flutter: ">=1.17.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  pkg_dinh_nghia_ss020:
+    path: ../pkg_dinh_nghia_ss020
+  pkg_dinh_nghia_ss022:
+    path: ../pkg_dinh_nghia_ss022
+  pkg_dinh_nghia_ss024:
+    path: ../pkg_dinh_nghia_ss024
+  pkg_dinh_nghia_ss026:
+    path: ../pkg_dinh_nghia_ss026
+#  pkg_dinh_nghia_ss028:
+#    path: ../pkg_dinh_nghia_ss028
+  pkg_dinh_nghia_ss030:
+    path: ../pkg_dinh_nghia_ss030
+  pkg_dinh_nghia_ss032:
+    path: ../pkg_dinh_nghia_ss032
+  pkg_dinh_nghia_ss034:
+    path: ../pkg_dinh_nghia_ss034
+  pkg_dinh_nghia_ss036:
+    path: ../pkg_dinh_nghia_ss036
+  pkg_dinh_nghia_ss038:
+    path: ../pkg_dinh_nghia_ss038
+  pkg_dinh_nghia_ss040:
+    path: ../pkg_dinh_nghia_ss040
+  pkg_dinh_nghia_ss042:
+    path: ../pkg_dinh_nghia_ss042
+  pkg_dinh_nghia_ss044:
+    path: ../pkg_dinh_nghia_ss044
+  pkg_dinh_nghia_ss046:
+    path: ../pkg_dinh_nghia_ss046
+  pkg_dinh_nghia_ss048:
+    path: ../pkg_dinh_nghia_ss048
+  pkg_dinh_nghia_ss050:
+    path: ../pkg_dinh_nghia_ss050
+
+  pkg_dinh_nghia_ss028020:
+    path: ../pkg_dinh_nghia_ss028020
+  pkg_dinh_nghia_ss028022:
+    path: ../pkg_dinh_nghia_ss028022
+
+  pkg_man_hinh_ss00020:
+    path: ../pkg_man_hinh_ss00020
+  pkg_man_hinh_ss00022:
+    path: ../pkg_man_hinh_ss00022
+  pkg_man_hinh_ss00024:
+    path: ../pkg_man_hinh_ss00024
+  pkg_man_hinh_ss00026:
+    path: ../pkg_man_hinh_ss00026
+  pkg_man_hinh_ss00028:
+    path: ../pkg_man_hinh_ss00028
+  pkg_man_hinh_ss00030:
+    path: ../pkg_man_hinh_ss00030
+  pkg_man_hinh_ss00032:
+    path: ../pkg_man_hinh_ss00032
+  pkg_man_hinh_ss00034:
+    path: ../pkg_man_hinh_ss00034
+  pkg_man_hinh_ss00090:
+    path: ../pkg_man_hinh_ss00090
+
+  pkg_dinh_nghia_dv_ss0020:
+    path: ../pkg_dinh_nghia_dv_ss0020
+
+  animate_do: 3.0.2
+  cupertino_icons: ^1.0.6
+  #  audioplayers: 6.0.0
+  collection: 1.19.1
+  carousel_slider: 4.2.1
+  go_router: 14.0.0
+  provider: 6.0.2
+  shared_preferences: 2.0.13
+  #  sqflite: 2.3.0
+  path: 1.9.0
+  #  google_mobile_ads: 5.0.0
+  google_fonts: 5.0.0
+  flame: 1.25.0
+  #  vm_service: 14.2.1
+  video_player: 2.9.3
+
+  path_provider: 2.1.5
+
+dev_dependencies:
+#  flutter_test:
+#    sdk: flutter
+  flutter_lints: ^5.0.0
+
+# For information on the generic Dart part of this file, see the
+# following page: https://dart.dev/tools/pub/pubspec
+
+# The following section is specific to Flutter packages.
+flutter:
+
+  # To add assets to your package, add an assets section, like this:
+  # assets:
+  #   - images/a_dot_burr.jpeg
+  #   - images/a_dot_ham.jpeg
+  assets:
+    #   - images/a_dot_burr.jpeg
+    #   - images/a_dot_ham.jpeg
+    - assets/images/
+
+    # _____
+    # _____[Ngoai_Hinh_Than]_____
+    # _____
+
+    # _____[Chien_Dau_Co_Dang_Cap_Sao_00E03]_____
+    # _____[CHIEN_DAU_CO_DANG_CAP_SAO_00E03_SS01]_____
+#    - assets/images/Def20/08_SubDefs/Def20/08_SubDefs/Def20/09_RootDef/sprite_sheet_00E03SS01.png
+    - assets/images/Def20/08_SubDefs/Def20/08_SubDefs/Def20/09_RootDef/
+    # _____[CHIEN_DAU_CO_DANG_CAP_SAO_00E03_SS02]_____
+#    - assets/images/Def20/08_SubDefs/Def22/08_SubDefs/Def20/09_RootDef/sprite_sheet_00E03SS02.png
+    - assets/images/Def20/08_SubDefs/Def22/08_SubDefs/Def20/09_RootDef/
+    # _____[CHIEN_DAU_CO_DANG_CAP_SAO_00E03_SS03]_____
+#    - assets/images/Def20/08_SubDefs/Def24/08_SubDefs/Def20/09_RootDef/sprite_sheet_00E03SS03.png
+    - assets/images/Def20/08_SubDefs/Def24/08_SubDefs/Def20/09_RootDef/
+
+    # _____[Chien_Dau_Co_Dang_Cap_Sao_00D04]_____
+    # _____[CHIEN_DAU_CO_DANG_CAP_SAO_00D04_SS01]_____
+#    - assets/images/Def22/08_SubDefs/Def20/08_SubDefs/Def20/09_RootDef/sprite_sheet_00D04SS01.png
+    - assets/images/Def22/08_SubDefs/Def20/08_SubDefs/Def20/09_RootDef/
+
+    # _____[Chien_Dau_Co_Dang_Cap_Sao_00C05]_____
+    # _____[CHIEN_DAU_CO_DANG_CAP_SAO_00C05_SS01]_____
+#    - assets/images/Def24/08_SubDefs/Def20/08_SubDefs/Def20/09_RootDef/sprite_sheet_00C05SS01.png
+    - assets/images/Def24/08_SubDefs/Def20/08_SubDefs/Def20/09_RootDef/
+
+    # _____[Chien_Dau_Co_Dang_Cap_Sao_00B06]_____
+    # _____[CHIEN_DAU_CO_DANG_CAP_SAO_00B06_SS01]_____
+#    - assets/images/Def26/08_SubDefs/Def20/08_SubDefs/Def20/09_RootDef/sprite_sheet_00B06SS01.png
+    - assets/images/Def26/08_SubDefs/Def20/08_SubDefs/Def20/09_RootDef/
+
+    # _____[Chien_Dau_Co_Dang_Cap_Sao_00A07]_____
+    # _____[CHIEN_DAU_CO_DANG_CAP_SAO_00A07_SS01]_____
+#    - assets/images/Def28/08_SubDefs/Def20/08_SubDefs/Def20/09_RootDef/sprite_sheet_00A07SS01.png
+    - assets/images/Def28/08_SubDefs/Def20/08_SubDefs/Def20/09_RootDef/
+
+    # _____[Chien_Dau_Co_Dang_Cap_Sao_00S08]_____
+    # _____[CHIEN_DAU_CO_DANG_CAP_SAO_00S08_SS01]_____
+#    - assets/images/Def30/08_SubDefs/Def20/08_SubDefs/Def20/09_RootDef/sprite_sheet_00S08SS01.png
+    - assets/images/Def30/08_SubDefs/Def20/08_SubDefs/Def20/09_RootDef/
+
+    # _____[Chien_Dau_Co_Dang_Cap_Sao_0SS09]_____
+    # _____[CHIEN_DAU_CO_DANG_CAP_SAO_0SS09_SS01]_____
+#    - assets/images/Def32/08_SubDefs/Def20/08_SubDefs/Def20/09_RootDef/sprite_sheet_0SS09SS01.png
+    - assets/images/Def32/08_SubDefs/Def20/08_SubDefs/Def20/09_RootDef/
+    # _____[CHIEN_DAU_CO_DANG_CAP_SAO_0SS09_SS02]_____
+#    - assets/images/Def32/08_SubDefs/Def22/08_SubDefs/Def20/09_RootDef/sprite_sheet_0SS09SS02.png
+    - assets/images/Def32/08_SubDefs/Def22/08_SubDefs/Def20/09_RootDef/
+    # _____[CHIEN_DAU_CO_DANG_CAP_SAO_0SS09_SS03]_____
+#    - assets/images/Def32/08_SubDefs/Def24/08_SubDefs/Def20/09_RootDef/sprite_sheet_0SS09SS03.png
+    - assets/images/Def32/08_SubDefs/Def24/08_SubDefs/Def20/09_RootDef/
+
+    # _____[Chien_Dau_Co_Dang_Cap_Sao_SSS10]_____
+    # _____[CHIEN_DAU_CO_DANG_CAP_SAO_SSS10_SS01]_____
+#    - assets/images/Def34/08_SubDefs/Def20/08_SubDefs/Def20/09_RootDef/sprite_sheet_SSS10SS01.png
+    - assets/images/Def34/08_SubDefs/Def20/08_SubDefs/Def20/09_RootDef/
+    # _____[CHIEN_DAU_CO_DANG_CAP_SAO_SSS10_SS02]_____
+#    - assets/images/Def34/08_SubDefs/Def22/08_SubDefs/Def20/09_RootDef/sprite_sheet_SSS10SS02.png
+    - assets/images/Def34/08_SubDefs/Def22/08_SubDefs/Def20/09_RootDef/
+    # _____[CHIEN_DAU_CO_DANG_CAP_SAO_SSS10_SS03]_____
+#    - assets/images/Def34/08_SubDefs/Def24/08_SubDefs/Def20/09_RootDef/sprite_sheet_SSS10SS03.png
+    - assets/images/Def34/08_SubDefs/Def24/08_SubDefs/Def20/09_RootDef/
+    # _____[CHIEN_DAU_CO_DANG_CAP_SAO_SSS10_SS04]_____
+#    - assets/images/Def34/08_SubDefs/Def26/08_SubDefs/Def20/09_RootDef/sprite_sheet_SSS10SS04.png
+    - assets/images/Def34/08_SubDefs/Def26/08_SubDefs/Def20/09_RootDef/
+    # _____[CHIEN_DAU_CO_DANG_CAP_SAO_SSS10_SS05]_____
+#    - assets/images/Def34/08_SubDefs/Def28/08_SubDefs/Def20/09_RootDef/sprite_sheet_SSS10SS05.png
+    - assets/images/Def34/08_SubDefs/Def28/08_SubDefs/Def20/09_RootDef/
+
+    # _____
+    # _____
+    # _____[Vu_Khi_Tan_Cong_Co_Ban_SS01]_____
+    # _____
+    # _____
+
+#    # _____[Chien_Dau_Co_Dang_Cap_Sao_00E03]_____
+#    # _____[CHIEN_DAU_CO_DANG_CAP_SAO_00E03_SS01]_____
+#    # _____[Vu_Khi_Tan_Cong_Co_Ban_SS01SS01]_____
+#    - assets/images/Def20/08_SubDefs/Def20/08_SubDefs/Def22/08_SubDefs/Def20/08_SubDefs/Def20/09_RootDef/sprite_sheet_00E03SS01.png
+#    # _____[Vu_Khi_Tan_Cong_Co_Ban_SS01SS02]_____
+#    - assets/images/Def20/08_SubDefs/Def20/08_SubDefs/Def22/08_SubDefs/Def20/08_SubDefs/Def22/09_RootDef/sprite_sheet_00E03SS01.png
+#    # _____[Vu_Khi_Tan_Cong_Co_Ban_SS01SS03]_____
+#    - assets/images/Def20/08_SubDefs/Def20/08_SubDefs/Def22/08_SubDefs/Def20/08_SubDefs/Def24/09_RootDef/sprite_sheet_00E03SS01.png
+#
+#    # _____[CHIEN_DAU_CO_DANG_CAP_SAO_00E03_SS02]_____
+#    # _____[Vu_Khi_Tan_Cong_Co_Ban_SS01SS01]_____
+#    - assets/images/Def20/08_SubDefs/Def22/08_SubDefs/Def22/08_SubDefs/Def20/08_SubDefs/Def20/09_RootDef/sprite_sheet_00E03SS02.png
+#    # _____[Vu_Khi_Tan_Cong_Co_Ban_SS01SS02]_____
+#    - assets/images/Def20/08_SubDefs/Def22/08_SubDefs/Def22/08_SubDefs/Def20/08_SubDefs/Def22/09_RootDef/sprite_sheet_00E03SS02.png
+#    # _____[Vu_Khi_Tan_Cong_Co_Ban_SS01SS03]_____
+#    - assets/images/Def20/08_SubDefs/Def22/08_SubDefs/Def22/08_SubDefs/Def20/08_SubDefs/Def24/09_RootDef/sprite_sheet_00E03SS02.png
+#
+#    # _____[CHIEN_DAU_CO_DANG_CAP_SAO_00E03_SS03]_____
+#    # _____[Vu_Khi_Tan_Cong_Co_Ban_SS01SS01]_____
+#    - assets/images/Def20/08_SubDefs/Def24/08_SubDefs/Def22/08_SubDefs/Def20/08_SubDefs/Def20/09_RootDef/sprite_sheet_00E03SS03.png
+#    # _____[Vu_Khi_Tan_Cong_Co_Ban_SS01SS02]_____
+#    - assets/images/Def20/08_SubDefs/Def24/08_SubDefs/Def22/08_SubDefs/Def20/08_SubDefs/Def22/09_RootDef/sprite_sheet_00E03SS03.png
+#    # _____[Vu_Khi_Tan_Cong_Co_Ban_SS01SS03]_____
+#    - assets/images/Def20/08_SubDefs/Def24/08_SubDefs/Def22/08_SubDefs/Def20/08_SubDefs/Def24/09_RootDef/sprite_sheet_00E03SS03.png
+#
+#    # _____[Chien_Dau_Co_Dang_Cap_Sao_00D04]_____
+#    # _____[CHIEN_DAU_CO_DANG_CAP_SAO_00D04_SS01]_____
+#    # _____[Vu_Khi_Tan_Cong_Co_Ban_SS01SS01]_____
+#    - assets/images/Def22/08_SubDefs/Def20/08_SubDefs/Def22/08_SubDefs/Def20/08_SubDefs/Def20/09_RootDef/sprite_sheet_00D04SS01.png
+#    # _____[Vu_Khi_Tan_Cong_Co_Ban_SS01SS02]_____
+#    - assets/images/Def22/08_SubDefs/Def20/08_SubDefs/Def22/08_SubDefs/Def20/08_SubDefs/Def22/09_RootDef/sprite_sheet_00D04SS01.png
+#    # _____[Vu_Khi_Tan_Cong_Co_Ban_SS01SS03]_____
+#    - assets/images/Def22/08_SubDefs/Def20/08_SubDefs/Def22/08_SubDefs/Def20/08_SubDefs/Def24/09_RootDef/sprite_sheet_00D04SS01.png
+#
+#
+#    # _____[Chien_Dau_Co_Dang_Cap_Sao_00C05]_____
+#    # _____[CHIEN_DAU_CO_DANG_CAP_SAO_00C05_SS01]_____
+#    # _____[Vu_Khi_Tan_Cong_Co_Ban_SS01SS01]_____
+#    - assets/images/Def24/08_SubDefs/Def20/08_SubDefs/Def22/08_SubDefs/Def20/08_SubDefs/Def20/09_RootDef/sprite_sheet_00C05SS01.png
+#    # _____[Vu_Khi_Tan_Cong_Co_Ban_SS01SS02]_____
+#    - assets/images/Def24/08_SubDefs/Def20/08_SubDefs/Def22/08_SubDefs/Def20/08_SubDefs/Def22/09_RootDef/sprite_sheet_00C05SS01.png
+#    # _____[Vu_Khi_Tan_Cong_Co_Ban_SS01SS03]_____
+#    - assets/images/Def24/08_SubDefs/Def20/08_SubDefs/Def22/08_SubDefs/Def20/08_SubDefs/Def24/09_RootDef/sprite_sheet_00C05SS01.png
+#
+#    # _____[Chien_Dau_Co_Dang_Cap_Sao_00B06]_____
+#    # _____[CHIEN_DAU_CO_DANG_CAP_SAO_00B06_SS01]_____
+#    # _____[Vu_Khi_Tan_Cong_Co_Ban_SS01SS01]_____
+#    - assets/images/Def26/08_SubDefs/Def20/08_SubDefs/Def22/08_SubDefs/Def20/08_SubDefs/Def20/09_RootDef/sprite_sheet_00B06SS01.png
+#    # _____[Vu_Khi_Tan_Cong_Co_Ban_SS01SS02]_____
+#    - assets/images/Def26/08_SubDefs/Def20/08_SubDefs/Def22/08_SubDefs/Def20/08_SubDefs/Def22/09_RootDef/sprite_sheet_00B06SS01.png
+#    # _____[Vu_Khi_Tan_Cong_Co_Ban_SS01SS03]_____
+#    - assets/images/Def26/08_SubDefs/Def20/08_SubDefs/Def22/08_SubDefs/Def20/08_SubDefs/Def24/09_RootDef/sprite_sheet_00B06SS01.png
+#
+#    # _____[Chien_Dau_Co_Dang_Cap_Sao_00A07]_____
+#    # _____[CHIEN_DAU_CO_DANG_CAP_SAO_00A07_SS01]_____
+#    # _____[Vu_Khi_Tan_Cong_Co_Ban_SS01SS01]_____
+#    - assets/images/Def28/08_SubDefs/Def20/08_SubDefs/Def22/08_SubDefs/Def20/08_SubDefs/Def20/09_RootDef/sprite_sheet_00A07SS01.png
+#    # _____[Vu_Khi_Tan_Cong_Co_Ban_SS01SS02]_____
+#    - assets/images/Def28/08_SubDefs/Def20/08_SubDefs/Def22/08_SubDefs/Def20/08_SubDefs/Def22/09_RootDef/sprite_sheet_00A07SS01.png
+#    # _____[Vu_Khi_Tan_Cong_Co_Ban_SS01SS03]_____
+#    - assets/images/Def28/08_SubDefs/Def20/08_SubDefs/Def22/08_SubDefs/Def20/08_SubDefs/Def24/09_RootDef/sprite_sheet_00A07SS01.png
+#
+#    # _____[Chien_Dau_Co_Dang_Cap_Sao_00S08]_____
+#    # _____[CHIEN_DAU_CO_DANG_CAP_SAO_00S08_SS01]_____
+#    # _____[Vu_Khi_Tan_Cong_Co_Ban_SS01SS01]_____
+#    - assets/images/Def30/08_SubDefs/Def20/08_SubDefs/Def22/08_SubDefs/Def20/08_SubDefs/Def20/09_RootDef/sprite_sheet_00S08SS01.png
+#    # _____[Vu_Khi_Tan_Cong_Co_Ban_SS01SS02]_____
+#    - assets/images/Def30/08_SubDefs/Def20/08_SubDefs/Def22/08_SubDefs/Def20/08_SubDefs/Def22/09_RootDef/sprite_sheet_00S08SS01.png
+#    # _____[Vu_Khi_Tan_Cong_Co_Ban_SS01SS03]_____
+#    - assets/images/Def30/08_SubDefs/Def20/08_SubDefs/Def22/08_SubDefs/Def20/08_SubDefs/Def24/09_RootDef/sprite_sheet_00S08SS01.png
+#
+#    # _____[Chien_Dau_Co_Dang_Cap_Sao_0SS09]_____
+#    # _____[CHIEN_DAU_CO_DANG_CAP_SAO_0SS09_SS01]_____
+#    # _____[Vu_Khi_Tan_Cong_Co_Ban_SS01SS01]_____
+#    - assets/images/Def32/08_SubDefs/Def20/08_SubDefs/Def22/08_SubDefs/Def20/08_SubDefs/Def20/09_RootDef/sprite_sheet_0SS09SS01.png
+#    # _____[Vu_Khi_Tan_Cong_Co_Ban_SS01SS02]_____
+#    - assets/images/Def32/08_SubDefs/Def20/08_SubDefs/Def22/08_SubDefs/Def20/08_SubDefs/Def22/09_RootDef/sprite_sheet_0SS09SS01.png
+#    # _____[Vu_Khi_Tan_Cong_Co_Ban_SS01SS03]_____
+#    - assets/images/Def32/08_SubDefs/Def20/08_SubDefs/Def22/08_SubDefs/Def20/08_SubDefs/Def24/09_RootDef/sprite_sheet_0SS09SS01.png
+#
+#    # _____[CHIEN_DAU_CO_DANG_CAP_SAO_0SS09_SS02]_____
+#    # _____[Vu_Khi_Tan_Cong_Co_Ban_SS01SS01]_____
+#    - assets/images/Def32/08_SubDefs/Def22/08_SubDefs/Def22/08_SubDefs/Def20/08_SubDefs/Def20/09_RootDef/sprite_sheet_0SS09SS02.png
+#    # _____[Vu_Khi_Tan_Cong_Co_Ban_SS01SS02]_____
+#    - assets/images/Def32/08_SubDefs/Def22/08_SubDefs/Def22/08_SubDefs/Def20/08_SubDefs/Def22/09_RootDef/sprite_sheet_0SS09SS02.png
+#    # _____[Vu_Khi_Tan_Cong_Co_Ban_SS01SS03]_____
+#    - assets/images/Def32/08_SubDefs/Def22/08_SubDefs/Def22/08_SubDefs/Def20/08_SubDefs/Def24/09_RootDef/sprite_sheet_0SS09SS02.png
+#
+#    # _____[CHIEN_DAU_CO_DANG_CAP_SAO_0SS09_SS03]_____
+#    # _____[Vu_Khi_Tan_Cong_Co_Ban_SS01SS01]_____
+#    - assets/images/Def32/08_SubDefs/Def24/08_SubDefs/Def22/08_SubDefs/Def20/08_SubDefs/Def20/09_RootDef/sprite_sheet_0SS09SS03.png
+#    # _____[Vu_Khi_Tan_Cong_Co_Ban_SS01SS02]_____
+#    - assets/images/Def32/08_SubDefs/Def24/08_SubDefs/Def22/08_SubDefs/Def20/08_SubDefs/Def22/09_RootDef/sprite_sheet_0SS09SS03.png
+#    # _____[Vu_Khi_Tan_Cong_Co_Ban_SS01SS03]_____
+#    - assets/images/Def32/08_SubDefs/Def24/08_SubDefs/Def22/08_SubDefs/Def20/08_SubDefs/Def24/09_RootDef/sprite_sheet_0SS09SS03.png
+#
+#    # _____[Chien_Dau_Co_Dang_Cap_Sao_SSS10]_____
+#    # _____[CHIEN_DAU_CO_DANG_CAP_SAO_SSS10_SS01]_____
+#    # _____[Vu_Khi_Tan_Cong_Co_Ban_SS01SS01]_____
+#    - assets/images/Def34/08_SubDefs/Def20/08_SubDefs/Def22/08_SubDefs/Def20/08_SubDefs/Def20/09_RootDef/sprite_sheet_SSS10SS01.png
+#    # _____[Vu_Khi_Tan_Cong_Co_Ban_SS01SS02]_____
+#    - assets/images/Def34/08_SubDefs/Def20/08_SubDefs/Def22/08_SubDefs/Def20/08_SubDefs/Def22/09_RootDef/sprite_sheet_SSS10SS01.png
+#    # _____[Vu_Khi_Tan_Cong_Co_Ban_SS01SS03]_____
+#    - assets/images/Def34/08_SubDefs/Def20/08_SubDefs/Def22/08_SubDefs/Def20/08_SubDefs/Def24/09_RootDef/sprite_sheet_SSS10SS01.png
+#
+#    # _____[CHIEN_DAU_CO_DANG_CAP_SAO_SSS10_SS02]_____
+#    # _____[Vu_Khi_Tan_Cong_Co_Ban_SS01SS01]_____
+#    - assets/images/Def34/08_SubDefs/Def22/08_SubDefs/Def22/08_SubDefs/Def20/08_SubDefs/Def20/09_RootDef/sprite_sheet_SSS10SS02.png
+#    # _____[Vu_Khi_Tan_Cong_Co_Ban_SS01SS02]_____
+#    - assets/images/Def34/08_SubDefs/Def22/08_SubDefs/Def22/08_SubDefs/Def20/08_SubDefs/Def22/09_RootDef/sprite_sheet_SSS10SS02.png
+#    # _____[Vu_Khi_Tan_Cong_Co_Ban_SS01SS03]_____
+#    - assets/images/Def34/08_SubDefs/Def22/08_SubDefs/Def22/08_SubDefs/Def20/08_SubDefs/Def24/09_RootDef/sprite_sheet_SSS10SS02.png
+#
+#    # _____[CHIEN_DAU_CO_DANG_CAP_SAO_SSS10_SS03]_____
+#    # _____[Vu_Khi_Tan_Cong_Co_Ban_SS01SS01]_____
+#    - assets/images/Def34/08_SubDefs/Def24/08_SubDefs/Def22/08_SubDefs/Def20/08_SubDefs/Def20/09_RootDef/sprite_sheet_SSS10SS03.png
+#    # _____[Vu_Khi_Tan_Cong_Co_Ban_SS01SS02]_____
+#    - assets/images/Def34/08_SubDefs/Def24/08_SubDefs/Def22/08_SubDefs/Def20/08_SubDefs/Def22/09_RootDef/sprite_sheet_SSS10SS03.png
+#    # _____[Vu_Khi_Tan_Cong_Co_Ban_SS01SS03]_____
+#    - assets/images/Def34/08_SubDefs/Def24/08_SubDefs/Def22/08_SubDefs/Def20/08_SubDefs/Def24/09_RootDef/sprite_sheet_SSS10SS03.png
+#
+#    # _____[CHIEN_DAU_CO_DANG_CAP_SAO_SSS10_SS04]_____
+#    # _____[Vu_Khi_Tan_Cong_Co_Ban_SS01SS01]_____
+#    # _____[Vu_Khi_Tan_Cong_Co_Ban_SS01SS02]_____
+#    # _____[Vu_Khi_Tan_Cong_Co_Ban_SS01SS03]_____
+#
+#    # _____[CHIEN_DAU_CO_DANG_CAP_SAO_SSS10_SS05]_____
+#    # _____[Vu_Khi_Tan_Cong_Co_Ban_SS01SS01]_____
+#    - assets/images/Def34/08_SubDefs/Def28/08_SubDefs/Def22/08_SubDefs/Def20/08_SubDefs/Def20/09_RootDef/sprite_sheet_SSS10SS05.png
+#    # _____[Vu_Khi_Tan_Cong_Co_Ban_SS01SS02]_____
+#    - assets/images/Def34/08_SubDefs/Def28/08_SubDefs/Def22/08_SubDefs/Def20/08_SubDefs/Def22/09_RootDef/sprite_sheet_SSS10SS05.png
+#    # _____[Vu_Khi_Tan_Cong_Co_Ban_SS01SS03]_____
+#    - assets/images/Def34/08_SubDefs/Def28/08_SubDefs/Def22/08_SubDefs/Def20/08_SubDefs/Def24/09_RootDef/sprite_sheet_SSS10SS05.png
+#
+#    # _____
+#    # _____
+#    # _____[Vu_Khi_Tan_Cong_Thong_Minh_SS01]_____
+#    # _____
+#    # _____
+#
+#    # _____[Chien_Dau_Co_Dang_Cap_Sao_00E03]_____
+#    # _____[CHIEN_DAU_CO_DANG_CAP_SAO_00E03_SS01]_____
+#    # _____[Vu_Khi_Tan_Cong_Thong_Minh_SS01SS01]_____
+#    - assets/images/Def20/08_SubDefs/Def20/08_SubDefs/Def24/08_SubDefs/Def20/08_SubDefs/Def20/09_RootDef/sprite_sheet_00E03SS01.png
+#    - assets/images/Def20/08_SubDefs/Def20/08_SubDefs/Def24/08_SubDefs/Def20/09_RootDef/
+#    # _____[Vu_Khi_Tan_Cong_Thong_Minh_SS01SS02]_____
+#    - assets/images/Def20/08_SubDefs/Def20/08_SubDefs/Def24/08_SubDefs/Def20/08_SubDefs/Def22/09_RootDef/sprite_sheet_00E03SS01.png
+#    - assets/images/Def20/08_SubDefs/Def20/08_SubDefs/Def24/08_SubDefs/Def22/09_RootDef/
+#    # _____[Vu_Khi_Tan_Cong_Thong_Minh_SS01SS03]_____
+#    - assets/images/Def20/08_SubDefs/Def20/08_SubDefs/Def24/08_SubDefs/Def20/08_SubDefs/Def24/09_RootDef/sprite_sheet_00E03SS01.png
+#    - assets/images/Def20/08_SubDefs/Def20/08_SubDefs/Def24/08_SubDefs/Def24/09_RootDef/
+#
+#    # _____[CHIEN_DAU_CO_DANG_CAP_SAO_00E03_SS02]_____
+#    # _____[Vu_Khi_Tan_Cong_Thong_Minh_SS01SS01]_____
+#    - assets/images/Def20/08_SubDefs/Def22/08_SubDefs/Def24/08_SubDefs/Def20/08_SubDefs/Def20/09_RootDef/sprite_sheet_00E03SS02.png
+#    - assets/images/Def20/08_SubDefs/Def22/08_SubDefs/Def24/08_SubDefs/Def20/09_RootDef/
+#    # _____[Vu_Khi_Tan_Cong_Thong_Minh_SS01SS02]_____
+#    - assets/images/Def20/08_SubDefs/Def22/08_SubDefs/Def24/08_SubDefs/Def20/08_SubDefs/Def22/09_RootDef/sprite_sheet_00E03SS02.png
+#    - assets/images/Def20/08_SubDefs/Def22/08_SubDefs/Def24/08_SubDefs/Def22/09_RootDef/
+#    # _____[Vu_Khi_Tan_Cong_Thong_Minh_SS01SS03]_____
+#    - assets/images/Def20/08_SubDefs/Def22/08_SubDefs/Def24/08_SubDefs/Def20/08_SubDefs/Def24/09_RootDef/sprite_sheet_00E03SS02.png
+#    - assets/images/Def20/08_SubDefs/Def22/08_SubDefs/Def24/08_SubDefs/Def24/09_RootDef/
+#
+#    # _____[CHIEN_DAU_CO_DANG_CAP_SAO_00E03_SS03]_____
+#    # _____[Vu_Khi_Tan_Cong_Thong_Minh_SS01SS01]_____
+#    - assets/images/Def20/08_SubDefs/Def24/08_SubDefs/Def24/08_SubDefs/Def20/08_SubDefs/Def20/09_RootDef/sprite_sheet_00E03SS03.png
+#    - assets/images/Def20/08_SubDefs/Def24/08_SubDefs/Def24/08_SubDefs/Def20/09_RootDef/
+#    # _____[Vu_Khi_Tan_Cong_Thong_Minh_SS01SS02]_____
+#    - assets/images/Def20/08_SubDefs/Def24/08_SubDefs/Def24/08_SubDefs/Def20/08_SubDefs/Def22/09_RootDef/sprite_sheet_00E03SS03.png
+#    - assets/images/Def20/08_SubDefs/Def24/08_SubDefs/Def24/08_SubDefs/Def22/09_RootDef/
+#    # _____[Vu_Khi_Tan_Cong_Thong_Minh_SS01SS03]_____
+#    - assets/images/Def20/08_SubDefs/Def24/08_SubDefs/Def24/08_SubDefs/Def20/08_SubDefs/Def24/09_RootDef/sprite_sheet_00E03SS03.png
+#    - assets/images/Def20/08_SubDefs/Def24/08_SubDefs/Def24/08_SubDefs/Def24/09_RootDef/
+#
+#    # _____[Chien_Dau_Co_Dang_Cap_Sao_00D04]_____
+#    # _____[CHIEN_DAU_CO_DANG_CAP_SAO_00D04_SS01]_____
+#    # _____[Vu_Khi_Tan_Cong_Thong_Minh_SS01SS01]_____
+#    - assets/images/Def22/08_SubDefs/Def20/08_SubDefs/Def24/08_SubDefs/Def20/08_SubDefs/Def20/09_RootDef/sprite_sheet_00D04SS01.png
+#    - assets/images/Def22/08_SubDefs/Def20/08_SubDefs/Def24/08_SubDefs/Def20/09_RootDef/
+#    # _____[Vu_Khi_Tan_Cong_Thong_Minh_SS01SS02]_____
+#    - assets/images/Def22/08_SubDefs/Def20/08_SubDefs/Def24/08_SubDefs/Def20/08_SubDefs/Def22/09_RootDef/sprite_sheet_00D04SS01.png
+#    - assets/images/Def22/08_SubDefs/Def20/08_SubDefs/Def24/08_SubDefs/Def22/09_RootDef/
+#    # _____[Vu_Khi_Tan_Cong_Thong_Minh_SS01SS03]_____
+#    - assets/images/Def22/08_SubDefs/Def20/08_SubDefs/Def24/08_SubDefs/Def20/08_SubDefs/Def24/09_RootDef/sprite_sheet_00D04SS01.png
+#    - assets/images/Def22/08_SubDefs/Def20/08_SubDefs/Def24/08_SubDefs/Def24/09_RootDef/
+#
+#
+#    # _____[Chien_Dau_Co_Dang_Cap_Sao_00C05]_____
+#    # _____[CHIEN_DAU_CO_DANG_CAP_SAO_00C05_SS01]_____
+#    # _____[Vu_Khi_Tan_Cong_Thong_Minh_SS01SS01]_____
+#    - assets/images/Def24/08_SubDefs/Def20/08_SubDefs/Def24/08_SubDefs/Def20/08_SubDefs/Def20/09_RootDef/sprite_sheet_00C05SS01.png
+#    - assets/images/Def24/08_SubDefs/Def20/08_SubDefs/Def24/08_SubDefs/Def20/09_RootDef/
+#    # _____[Vu_Khi_Tan_Cong_Thong_Minh_SS01SS02]_____
+#    - assets/images/Def24/08_SubDefs/Def20/08_SubDefs/Def24/08_SubDefs/Def20/08_SubDefs/Def22/09_RootDef/sprite_sheet_00C05SS01.png
+#    - assets/images/Def24/08_SubDefs/Def20/08_SubDefs/Def24/08_SubDefs/Def22/09_RootDef/
+#    # _____[Vu_Khi_Tan_Cong_Thong_Minh_SS01SS03]_____
+#    - assets/images/Def24/08_SubDefs/Def20/08_SubDefs/Def24/08_SubDefs/Def20/08_SubDefs/Def24/09_RootDef/sprite_sheet_00C05SS01.png
+#    - assets/images/Def24/08_SubDefs/Def20/08_SubDefs/Def24/08_SubDefs/Def24/09_RootDef/
+#
+#    # _____[Chien_Dau_Co_Dang_Cap_Sao_00B06]_____
+#    # _____[CHIEN_DAU_CO_DANG_CAP_SAO_00B06_SS01]_____
+#    # _____[Vu_Khi_Tan_Cong_Thong_Minh_SS01SS01]_____
+#    - assets/images/Def26/08_SubDefs/Def20/08_SubDefs/Def24/08_SubDefs/Def20/08_SubDefs/Def20/09_RootDef/sprite_sheet_00B06SS01.png
+#    - assets/images/Def26/08_SubDefs/Def20/08_SubDefs/Def24/08_SubDefs/Def20/09_RootDef/
+#    # _____[Vu_Khi_Tan_Cong_Thong_Minh_SS01SS02]_____
+#    - assets/images/Def26/08_SubDefs/Def20/08_SubDefs/Def24/08_SubDefs/Def20/08_SubDefs/Def22/09_RootDef/sprite_sheet_00B06SS01.png
+#    - assets/images/Def26/08_SubDefs/Def20/08_SubDefs/Def24/08_SubDefs/Def22/09_RootDef/
+#    # _____[Vu_Khi_Tan_Cong_Thong_Minh_SS01SS03]_____
+#    - assets/images/Def26/08_SubDefs/Def20/08_SubDefs/Def24/08_SubDefs/Def20/08_SubDefs/Def24/09_RootDef/sprite_sheet_00B06SS01.png
+#    - assets/images/Def26/08_SubDefs/Def20/08_SubDefs/Def24/08_SubDefs/Def24/09_RootDef/
+#
+#    # _____[Chien_Dau_Co_Dang_Cap_Sao_00A07]_____
+#    # _____[CHIEN_DAU_CO_DANG_CAP_SAO_00A07_SS01]_____
+#    # _____[Vu_Khi_Tan_Cong_Thong_Minh_SS01SS01]_____
+#    - assets/images/Def28/08_SubDefs/Def20/08_SubDefs/Def24/08_SubDefs/Def20/08_SubDefs/Def20/09_RootDef/sprite_sheet_00A07SS01.png
+#    - assets/images/Def28/08_SubDefs/Def20/08_SubDefs/Def24/08_SubDefs/Def20/09_RootDef/
+#    # _____[Vu_Khi_Tan_Cong_Thong_Minh_SS01SS02]_____
+#    - assets/images/Def28/08_SubDefs/Def20/08_SubDefs/Def24/08_SubDefs/Def20/08_SubDefs/Def22/09_RootDef/sprite_sheet_00A07SS01.png
+#    - assets/images/Def28/08_SubDefs/Def20/08_SubDefs/Def24/08_SubDefs/Def22/09_RootDef/
+#    # _____[Vu_Khi_Tan_Cong_Thong_Minh_SS01SS03]_____
+#    - assets/images/Def28/08_SubDefs/Def20/08_SubDefs/Def24/08_SubDefs/Def20/08_SubDefs/Def24/09_RootDef/sprite_sheet_00A07SS01.png
+#    - assets/images/Def28/08_SubDefs/Def20/08_SubDefs/Def24/08_SubDefs/Def24/09_RootDef/
+#
+#    # _____[Chien_Dau_Co_Dang_Cap_Sao_00S08]_____
+#    # _____[CHIEN_DAU_CO_DANG_CAP_SAO_00S08_SS01]_____
+#    # _____[Vu_Khi_Tan_Cong_Thong_Minh_SS01SS01]_____
+#    - assets/images/Def30/08_SubDefs/Def20/08_SubDefs/Def24/08_SubDefs/Def20/08_SubDefs/Def20/09_RootDef/sprite_sheet_00S08SS01.png
+#    - assets/images/Def30/08_SubDefs/Def20/08_SubDefs/Def24/08_SubDefs/Def20/09_RootDef/
+#    # _____[Vu_Khi_Tan_Cong_Thong_Minh_SS01SS02]_____
+#    - assets/images/Def30/08_SubDefs/Def20/08_SubDefs/Def24/08_SubDefs/Def20/08_SubDefs/Def22/09_RootDef/sprite_sheet_00S08SS01.png
+#    - assets/images/Def30/08_SubDefs/Def20/08_SubDefs/Def24/08_SubDefs/Def22/09_RootDef/
+#    # _____[Vu_Khi_Tan_Cong_Thong_Minh_SS01SS03]_____
+#    - assets/images/Def30/08_SubDefs/Def20/08_SubDefs/Def24/08_SubDefs/Def20/08_SubDefs/Def24/09_RootDef/sprite_sheet_00S08SS01.png
+#    - assets/images/Def30/08_SubDefs/Def20/08_SubDefs/Def24/08_SubDefs/Def24/09_RootDef/
+#
+#    # _____[Chien_Dau_Co_Dang_Cap_Sao_0SS09]_____
+#    # _____[CHIEN_DAU_CO_DANG_CAP_SAO_0SS09_SS01]_____
+#    # _____[Vu_Khi_Tan_Cong_Thong_Minh_SS01SS01]_____
+#    - assets/images/Def32/08_SubDefs/Def20/08_SubDefs/Def24/08_SubDefs/Def20/08_SubDefs/Def20/09_RootDef/sprite_sheet_0SS09SS01.png
+#    - assets/images/Def32/08_SubDefs/Def20/08_SubDefs/Def24/08_SubDefs/Def20/09_RootDef/
+#    # _____[Vu_Khi_Tan_Cong_Thong_Minh_SS01SS02]_____
+#    - assets/images/Def32/08_SubDefs/Def20/08_SubDefs/Def24/08_SubDefs/Def20/08_SubDefs/Def22/09_RootDef/sprite_sheet_0SS09SS01.png
+#    - assets/images/Def32/08_SubDefs/Def20/08_SubDefs/Def24/08_SubDefs/Def22/09_RootDef/
+#    # _____[Vu_Khi_Tan_Cong_Thong_Minh_SS01SS03]_____
+#    - assets/images/Def32/08_SubDefs/Def20/08_SubDefs/Def24/08_SubDefs/Def20/08_SubDefs/Def24/09_RootDef/sprite_sheet_0SS09SS01.png
+#    - assets/images/Def32/08_SubDefs/Def20/08_SubDefs/Def24/08_SubDefs/Def24/09_RootDef/
+#
+#    # _____[CHIEN_DAU_CO_DANG_CAP_SAO_0SS09_SS02]_____
+#    # _____[Vu_Khi_Tan_Cong_Thong_Minh_SS01SS01]_____
+#    - assets/images/Def32/08_SubDefs/Def22/08_SubDefs/Def24/08_SubDefs/Def20/08_SubDefs/Def20/09_RootDef/sprite_sheet_0SS09SS02.png
+#    - assets/images/Def32/08_SubDefs/Def22/08_SubDefs/Def24/08_SubDefs/Def20/09_RootDef/
+#    # _____[Vu_Khi_Tan_Cong_Thong_Minh_SS01SS02]_____
+#    - assets/images/Def32/08_SubDefs/Def22/08_SubDefs/Def24/08_SubDefs/Def20/08_SubDefs/Def22/09_RootDef/sprite_sheet_0SS09SS02.png
+#    - assets/images/Def32/08_SubDefs/Def22/08_SubDefs/Def24/08_SubDefs/Def22/09_RootDef/
+#    # _____[Vu_Khi_Tan_Cong_Thong_Minh_SS01SS03]_____
+#    - assets/images/Def32/08_SubDefs/Def22/08_SubDefs/Def24/08_SubDefs/Def20/08_SubDefs/Def24/09_RootDef/sprite_sheet_0SS09SS02.png
+#    - assets/images/Def32/08_SubDefs/Def22/08_SubDefs/Def24/08_SubDefs/Def24/09_RootDef/
+#
+#    # _____[CHIEN_DAU_CO_DANG_CAP_SAO_0SS09_SS03]_____
+#    # _____[Vu_Khi_Tan_Cong_Thong_Minh_SS01SS01]_____
+#    - assets/images/Def32/08_SubDefs/Def24/08_SubDefs/Def24/08_SubDefs/Def20/08_SubDefs/Def20/09_RootDef/sprite_sheet_0SS09SS03.png
+#    - assets/images/Def32/08_SubDefs/Def24/08_SubDefs/Def24/08_SubDefs/Def20/09_RootDef/
+#    # _____[Vu_Khi_Tan_Cong_Thong_Minh_SS01SS02]_____
+#    - assets/images/Def32/08_SubDefs/Def24/08_SubDefs/Def24/08_SubDefs/Def20/08_SubDefs/Def22/09_RootDef/sprite_sheet_0SS09SS03.png
+#    - assets/images/Def32/08_SubDefs/Def24/08_SubDefs/Def24/08_SubDefs/Def22/09_RootDef/
+#    # _____[Vu_Khi_Tan_Cong_Thong_Minh_SS01SS03]_____
+#    - assets/images/Def32/08_SubDefs/Def24/08_SubDefs/Def24/08_SubDefs/Def20/08_SubDefs/Def24/09_RootDef/sprite_sheet_0SS09SS03.png
+#    - assets/images/Def32/08_SubDefs/Def24/08_SubDefs/Def24/08_SubDefs/Def24/09_RootDef/
+#
+#    # _____[Chien_Dau_Co_Dang_Cap_Sao_SSS10]_____
+#    # _____[CHIEN_DAU_CO_DANG_CAP_SAO_SSS10_SS01]_____
+#    # _____[Vu_Khi_Tan_Cong_Thong_Minh_SS01SS01]_____
+#    - assets/images/Def34/08_SubDefs/Def20/08_SubDefs/Def24/08_SubDefs/Def20/08_SubDefs/Def20/09_RootDef/sprite_sheet_SSS10SS01.png
+#    - assets/images/Def34/08_SubDefs/Def20/08_SubDefs/Def24/08_SubDefs/Def20/09_RootDef/
+#    # _____[Vu_Khi_Tan_Cong_Thong_Minh_SS01SS02]_____
+#    - assets/images/Def34/08_SubDefs/Def20/08_SubDefs/Def24/08_SubDefs/Def20/08_SubDefs/Def22/09_RootDef/sprite_sheet_SSS10SS01.png
+#    - assets/images/Def34/08_SubDefs/Def20/08_SubDefs/Def24/08_SubDefs/Def22/09_RootDef/
+#    # _____[Vu_Khi_Tan_Cong_Thong_Minh_SS01SS03]_____
+#    - assets/images/Def34/08_SubDefs/Def20/08_SubDefs/Def24/08_SubDefs/Def20/08_SubDefs/Def24/09_RootDef/sprite_sheet_SSS10SS01.png
+#    - assets/images/Def34/08_SubDefs/Def20/08_SubDefs/Def24/08_SubDefs/Def24/09_RootDef/
+#
+#    # _____[CHIEN_DAU_CO_DANG_CAP_SAO_SSS10_SS02]_____
+#    # _____[Vu_Khi_Tan_Cong_Thong_Minh_SS01SS01]_____
+#    - assets/images/Def34/08_SubDefs/Def22/08_SubDefs/Def24/08_SubDefs/Def20/08_SubDefs/Def20/09_RootDef/sprite_sheet_SSS10SS02.png
+#    - assets/images/Def34/08_SubDefs/Def22/08_SubDefs/Def24/08_SubDefs/Def20/09_RootDef/
+#    # _____[Vu_Khi_Tan_Cong_Thong_Minh_SS01SS02]_____
+#    - assets/images/Def34/08_SubDefs/Def22/08_SubDefs/Def24/08_SubDefs/Def20/08_SubDefs/Def22/09_RootDef/sprite_sheet_SSS10SS02.png
+#    - assets/images/Def34/08_SubDefs/Def22/08_SubDefs/Def24/08_SubDefs/Def22/09_RootDef/
+#    # _____[Vu_Khi_Tan_Cong_Thong_Minh_SS01SS03]_____
+#    - assets/images/Def34/08_SubDefs/Def22/08_SubDefs/Def24/08_SubDefs/Def20/08_SubDefs/Def24/09_RootDef/sprite_sheet_SSS10SS02.png
+#    - assets/images/Def34/08_SubDefs/Def22/08_SubDefs/Def24/08_SubDefs/Def24/09_RootDef/
+#
+#    # _____[CHIEN_DAU_CO_DANG_CAP_SAO_SSS10_SS03]_____
+#    # _____[Vu_Khi_Tan_Cong_Thong_Minh_SS01SS01]_____
+#    - assets/images/Def34/08_SubDefs/Def24/08_SubDefs/Def24/08_SubDefs/Def20/08_SubDefs/Def20/09_RootDef/sprite_sheet_SSS10SS03.png
+#    - assets/images/Def34/08_SubDefs/Def24/08_SubDefs/Def24/08_SubDefs/Def20/09_RootDef/
+#    # _____[Vu_Khi_Tan_Cong_Thong_Minh_SS01SS02]_____
+#    - assets/images/Def34/08_SubDefs/Def24/08_SubDefs/Def24/08_SubDefs/Def20/08_SubDefs/Def22/09_RootDef/sprite_sheet_SSS10SS03.png
+#    - assets/images/Def34/08_SubDefs/Def24/08_SubDefs/Def24/08_SubDefs/Def22/09_RootDef/
+#    # _____[Vu_Khi_Tan_Cong_Thong_Minh_SS01SS03]_____
+#    - assets/images/Def34/08_SubDefs/Def24/08_SubDefs/Def24/08_SubDefs/Def20/08_SubDefs/Def24/09_RootDef/sprite_sheet_SSS10SS03.png
+#    - assets/images/Def34/08_SubDefs/Def24/08_SubDefs/Def24/08_SubDefs/Def24/09_RootDef/
+#
+#    # _____[CHIEN_DAU_CO_DANG_CAP_SAO_SSS10_SS04]_____
+#    # _____[Vu_Khi_Tan_Cong_Thong_Minh_SS01SS01]_____
+#    - assets/images/Def34/08_SubDefs/Def26/08_SubDefs/Def24/08_SubDefs/Def20/08_SubDefs/Def20/09_RootDef/sprite_sheet_SSS10SS04.png
+#    - assets/images/Def34/08_SubDefs/Def26/08_SubDefs/Def24/08_SubDefs/Def20/09_RootDef/
+#    # _____[Vu_Khi_Tan_Cong_Thong_Minh_SS01SS02]_____
+#    - assets/images/Def34/08_SubDefs/Def26/08_SubDefs/Def24/08_SubDefs/Def20/08_SubDefs/Def22/09_RootDef/sprite_sheet_SSS10SS04.png
+#    - assets/images/Def34/08_SubDefs/Def26/08_SubDefs/Def24/08_SubDefs/Def22/09_RootDef/
+#    # _____[Vu_Khi_Tan_Cong_Thong_Minh_SS01SS03]_____
+#    - assets/images/Def34/08_SubDefs/Def26/08_SubDefs/Def24/08_SubDefs/Def20/08_SubDefs/Def24/09_RootDef/sprite_sheet_SSS10SS04.png
+#    - assets/images/Def34/08_SubDefs/Def26/08_SubDefs/Def24/08_SubDefs/Def24/09_RootDef/
+#
+#    # _____[CHIEN_DAU_CO_DANG_CAP_SAO_SSS10_SS05]_____
+#    # _____[Vu_Khi_Tan_Cong_Thong_Minh_SS01SS01]_____
+#    - assets/images/Def34/08_SubDefs/Def28/08_SubDefs/Def24/08_SubDefs/Def20/08_SubDefs/Def20/09_RootDef/sprite_sheet_SSS10SS05.png
+#    - assets/images/Def34/08_SubDefs/Def28/08_SubDefs/Def24/08_SubDefs/Def20/09_RootDef/
+#    # _____[Vu_Khi_Tan_Cong_Thong_Minh_SS01SS02]_____
+#    - assets/images/Def34/08_SubDefs/Def28/08_SubDefs/Def24/08_SubDefs/Def20/08_SubDefs/Def22/09_RootDef/sprite_sheet_SSS10SS05.png
+#    - assets/images/Def34/08_SubDefs/Def28/08_SubDefs/Def24/08_SubDefs/Def22/09_RootDef/
+#    # _____[Vu_Khi_Tan_Cong_Thong_Minh_SS01SS03]_____
+#    - assets/images/Def34/08_SubDefs/Def28/08_SubDefs/Def24/08_SubDefs/Def20/08_SubDefs/Def24/09_RootDef/sprite_sheet_SSS10SS05.png
+#    - assets/images/Def34/08_SubDefs/Def28/08_SubDefs/Def24/08_SubDefs/Def24/09_RootDef/
+
+  # For details regarding assets in packages, see
+  # https://flutter.dev/assets-and-images/#from-packages
+  #
+  # An image asset can refer to one or more resolution-specific "variants", see
+  # https://flutter.dev/assets-and-images/#resolution-aware
+
+  # To add custom fonts to your package, add a fonts section here,
+  # in this "flutter" section. Each entry in this list should have a
+  # "family" key with the font family name, and a "fonts" key with a
+  # list giving the asset and other descriptors for the font. For
+  # example:
+  # fonts:
+  #   - family: Schyler
+  #     fonts:
+  #       - asset: fonts/Schyler-Regular.ttf
+  #       - asset: fonts/Schyler-Italic.ttf
+  #         style: italic
+  #   - family: Trajan Pro
+  #     fonts:
+  #       - asset: fonts/TrajanPro.ttf
+  #       - asset: fonts/TrajanPro_Bold.ttf
+  #         weight: 700
+  #
+  # For details regarding fonts in packages, see
+  # https://flutter.dev/custom-fonts/#from-packages

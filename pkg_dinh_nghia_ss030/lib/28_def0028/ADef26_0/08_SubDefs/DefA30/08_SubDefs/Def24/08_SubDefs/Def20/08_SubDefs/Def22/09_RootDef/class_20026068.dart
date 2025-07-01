@@ -1,0 +1,26 @@
+import 'package:pkg_dinh_nghia_ss020/dinh_nghia_thanh_phan_define.dart';
+import 'package:pkg_dinh_nghia_ss030/pkg_dinh_nghia_ss030_exp.dart';
+
+/// -----
+/// TODO:
+/// -----
+class KICHTHUOCPHUONGTIENCHIHUYCLASS30ASS03 extends MoHinhThuocTinhKichThuocPhuongTien {
+  /// -----
+  /// TODO: Init Root
+  /// -----
+  @override
+  Future<void> onInitRoot() async {
+    await caiDatChieuRongThan(value: 150.0);
+    await caiDatChieuCaoThan(value: 150.0);
+
+    return;
+  }
+
+  /// -----
+  /// TODO: Reset Root
+  /// -----
+  @override
+  Future<void> onResetRoot() async {
+    return;
+  }
+}

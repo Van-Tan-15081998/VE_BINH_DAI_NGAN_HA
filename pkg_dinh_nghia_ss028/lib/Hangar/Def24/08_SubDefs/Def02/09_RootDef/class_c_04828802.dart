@@ -1,0 +1,73 @@
+import 'package:pkg_dinh_nghia_ss028/Hangar/Def24/07_AbstractDef/09_RootDef/class_c_46644860.dart';
+import 'package:pkg_dinh_nghia_ss028/Hangar/Def24/08_SubDefs/Def02/08_SubDefs/Def01/08_SubDefs/Def01/09_RootDef/class_c_46024266.dart';
+import 'package:pkg_dinh_nghia_ss028/Hangar/Def24/08_SubDefs/Def02/08_SubDefs/Def01/08_SubDefs/Def02/08_SubDefs/Def01/09_RootDef/class_c_60428820.dart';
+import 'package:pkg_dinh_nghia_ss028/Hangar/Def24/08_SubDefs/Def02/08_SubDefs/Def01/08_SubDefs/Def03/08_SubDefs/Def01/09_RootDef/class_c_64088202.dart';
+import 'package:pkg_dinh_nghia_ss028/chien_dau_co_define.dart';
+///
+/// TODO:
+///
+class ChienDauCoDangCapSao00A07SS02 extends MoHinhChienDauCoDangCapSao00A07 {
+  /// -----
+  /// TODO: Setup Root
+  /// -----
+  @override
+  Future<void> onSetupRoot() async {
+    await super.onSetupRoot();
+
+    await caiDatMaDinhDanhChienDauCo(value: maDinhDanhChienDauCo);
+
+    /// -----
+    /// TODO: Cài Đặt Kích Thước
+    /// -----
+    await getThuocTinh?.caiDatThuocTinhKichThuoc(
+        value: MoHinhThuocTinhKichThuocChienDauCoDangCapSao00A07SS02(), caiDatUuTien: true);
+
+    /// -----
+    /// TODO: Cài Đặt Cấp Độ Giáp
+    /// -----
+    await getThuocTinh?.getThuocTinhPhongThu
+        ?.caiDatCapDoGiap(value: MoHinhThuocTinhCapDoGiapChienDauCoDangCapSao00A07SS02(), caiDatUuTien: true);
+    await getThuocTinh?.getThuocTinhPhongThu?.onSetupRoot();
+
+    /// -----
+    /// TODO: Cài Đặt Cấp Độ Máu
+    /// -----
+    await getThuocTinh?.getThuocTinhSinhTon
+        ?.caiDatCapDoMau(value: MoHinhThuocTinhCapDoMauChienDauCoDangCapSao00A07SS02(), caiDatUuTien: true);
+    await getThuocTinh?.getThuocTinhSinhTon?.onSetupRoot();
+
+    /// -----
+    /// TODO: Cài Đặt Thuộc Tính Tấn Công
+    /// -----
+    // await getThuocTinh?.getThuocTinhTanCong?.getVuKhiVKTCCBSS01
+    //     ?.caiDatCapDo(value: MoHinhThuocTinhCapDoVuKhiVKTCCBSS01ChienDauCoDangCapSao00A07SS02(), caiDatUuTien: true);
+    // await getThuocTinh?.getThuocTinhTanCong?.getVuKhiVKTCCBSS01?.getCapDo?.onSetupRoot();
+    //
+    // await getThuocTinh?.getThuocTinhTanCong?.getVuKhiVKTCTMSS01
+    //     ?.caiDatCapDo(value: MoHinhThuocTinhCapDoVuKhiVKTCTMSS01ChienDauCoDangCapSao00A07SS02(), caiDatUuTien: true);
+    // await getThuocTinh?.getThuocTinhTanCong?.getVuKhiVKTCTMSS01?.getCapDo?.onSetupRoot();
+
+    return;
+  }
+
+  /// -----
+  /// TODO: Init Root
+  /// -----
+  @override
+  Future<void> onInitRoot() async {
+    await super.onInitRoot();
+    return;
+  }
+
+  /// -----
+  /// TODO: Reset Root
+  /// -----
+  @override
+  Future<void> onResetRoot() async {
+    await super.onResetRoot();
+    return;
+  }
+
+  static const String maDinhDanhChienDauCo =
+      '${MoHinhChienDauCoDangCapSao00A07.maDinhDanhDangCapSao}_[DANG_CAP_SAO_00A07_SS02]';
+}

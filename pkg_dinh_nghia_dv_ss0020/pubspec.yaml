@@ -1,0 +1,163 @@
+name: pkg_dinh_nghia_dv_ss0020
+description: "A new Flutter package project."
+version: 0.0.1
+publish_to: 'none'
+homepage: ''
+
+environment:
+  sdk: ^3.7.2
+  flutter: ">=1.17.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  pkg_dinh_nghia_ss020:
+    path: ../pkg_dinh_nghia_ss020
+  pkg_dinh_nghia_ss022:
+    path: ../pkg_dinh_nghia_ss022
+  pkg_dinh_nghia_ss030:
+    path: ../pkg_dinh_nghia_ss030
+  pkg_dinh_nghia_ss050:
+    path: ../pkg_dinh_nghia_ss050
+
+  flame_audio: 2.11.0
+  audioplayers: 6.4.0
+  just_audio: 0.10.1
+  flutter_sound: 9.28.0
+  flutter_soloud: 3.1.8
+  path_provider: 2.1.5
+
+dev_dependencies:
+#  flutter_test:
+#    sdk: flutter
+  flutter_lints: ^5.0.0
+
+# For information on the generic Dart part of this file, see the
+# following page: https://dart.dev/tools/pub/pubspec
+
+# The following section is specific to Flutter packages.
+flutter:
+
+  # To add assets to your package, add an assets section, like this:
+   assets:
+     # _____[THUOC_TINH_HIEU_UNG_AM_THANH_NUT_BAM]_____
+     - lib/26_def0026/ADef20_0/08_SubDefs/Def30_2/06_SoundSrcs/am_thanh_hieu_ung_nut_bam_ss020.mp3
+     #
+     # _____[CHIEN_DAU_CO_DANG_CAP_SAO_00E03_SS01]_____
+     - lib/26_def0026/ADef30_0/08_SubDefs/Def20_2/08_SubDefs/Def20_4/08_SubDefs/Def20_6/06_SoundSrcs/vu_khi_tan_cong_co_ban_00E03SS01.mp3
+     # _____[CHIEN_DAU_CO_DANG_CAP_SAO_00E03_SS02]_____
+     - lib/26_def0026/ADef30_0/08_SubDefs/Def20_2/08_SubDefs/Def22_4/08_SubDefs/Def20_6/06_SoundSrcs/vu_khi_tan_cong_co_ban_00E03SS02.mp3
+     # _____[CHIEN_DAU_CO_DANG_CAP_SAO_00E03_SS03]_____
+     - lib/26_def0026/ADef30_0/08_SubDefs/Def20_2/08_SubDefs/Def24_4/08_SubDefs/Def20_6/06_SoundSrcs/vu_khi_tan_cong_co_ban_00E03SS03.mp3
+     #
+     # _____[CHIEN_DAU_CO_DANG_CAP_SAO_00D04_SS01]_____
+     - lib/26_def0026/ADef30_0/08_SubDefs/Def22_2/08_SubDefs/Def20_4/08_SubDefs/Def20_6/06_SoundSrcs/vu_khi_tan_cong_co_ban_00D04SS01.mp3
+     #
+     # _____[CHIEN_DAU_CO_DANG_CAP_SAO_00C05_SS01]_____
+     - lib/26_def0026/ADef30_0/08_SubDefs/Def24_2/08_SubDefs/Def20_4/08_SubDefs/Def20_6/06_SoundSrcs/vu_khi_tan_cong_co_ban_00C05SS01.mp3
+     #
+     # _____[CHIEN_DAU_CO_DANG_CAP_SAO_00B06_SS01]_____
+     - lib/26_def0026/ADef30_0/08_SubDefs/Def26_2/08_SubDefs/Def20_4/08_SubDefs/Def20_6/06_SoundSrcs/vu_khi_tan_cong_co_ban_00B06SS01.mp3
+     #
+     # _____[CHIEN_DAU_CO_DANG_CAP_SAO_00A07_SS01]_____
+     - lib/26_def0026/ADef30_0/08_SubDefs/Def28_2/08_SubDefs/Def20_4/08_SubDefs/Def20_6/06_SoundSrcs/vu_khi_tan_cong_co_ban_00A07SS01.mp3
+     #
+     # _____[CHIEN_DAU_CO_DANG_CAP_SAO_00S08_SS01]_____
+     - lib/26_def0026/ADef30_0/08_SubDefs/Def30_2/08_SubDefs/Def20_4/08_SubDefs/Def20_6/06_SoundSrcs/vu_khi_tan_cong_co_ban_00S08SS01.mp3
+     #
+     # _____[CHIEN_DAU_CO_DANG_CAP_SAO_0SS09_SS01]_____
+     - lib/26_def0026/ADef30_0/08_SubDefs/Def32_2/08_SubDefs/Def20_4/08_SubDefs/Def20_6/06_SoundSrcs/vu_khi_tan_cong_co_ban_0SS09SS01.mp3
+     #
+     # _____[CHIEN_DAU_CO_DANG_CAP_SAO_0SS09_SS02]_____
+     - lib/26_def0026/ADef30_0/08_SubDefs/Def32_2/08_SubDefs/Def22_4/08_SubDefs/Def20_6/06_SoundSrcs/vu_khi_tan_cong_co_ban_0SS09SS02.mp3
+     #
+     # _____[CHIEN_DAU_CO_DANG_CAP_SAO_0SS09_SS03]_____
+     - lib/26_def0026/ADef30_0/08_SubDefs/Def32_2/08_SubDefs/Def24_4/08_SubDefs/Def20_6/06_SoundSrcs/vu_khi_tan_cong_co_ban_0SS09SS03.mp3
+     #
+     # _____[CHIEN_DAU_CO_DANG_CAP_SAO_SSS10_SS01]_____
+     - lib/26_def0026/ADef30_0/08_SubDefs/Def34_2/08_SubDefs/Def20_4/08_SubDefs/Def20_6/06_SoundSrcs/vu_khi_tan_cong_co_ban_SSS10SS01.mp3
+     #
+     # _____[CHIEN_DAU_CO_DANG_CAP_SAO_SSS10_SS02]_____
+     - lib/26_def0026/ADef30_0/08_SubDefs/Def34_2/08_SubDefs/Def22_4/08_SubDefs/Def20_6/06_SoundSrcs/vu_khi_tan_cong_co_ban_SSS10SS02.mp3
+     #
+     # _____[CHIEN_DAU_CO_DANG_CAP_SAO_SSS10_SS03]_____
+     - lib/26_def0026/ADef30_0/08_SubDefs/Def34_2/08_SubDefs/Def24_4/08_SubDefs/Def20_6/06_SoundSrcs/vu_khi_tan_cong_co_ban_SSS10SS03.mp3
+     #
+     # _____[CHIEN_DAU_CO_DANG_CAP_SAO_SSS10_SS04]_____
+     - lib/26_def0026/ADef30_0/08_SubDefs/Def34_2/08_SubDefs/Def26_4/08_SubDefs/Def20_6/06_SoundSrcs/vu_khi_tan_cong_co_ban_SSS10SS04.mp3
+     #
+     # _____[CHIEN_DAU_CO_DANG_CAP_SAO_SSS10_SS05]_____
+     - lib/26_def0026/ADef30_0/08_SubDefs/Def34_2/08_SubDefs/Def28_4/08_SubDefs/Def20_6/06_SoundSrcs/vu_khi_tan_cong_co_ban_SSS10SS05.mp3
+     #
+     #
+     # _____[HAT_VA_CHAM_CONG_KICH_SS01]_____
+     - lib/26_def0026/ADef40_0/08_SubDefs/Def20_2/08_SubDefs/Def20_4/06_SoundSrcs/hat_va_cham_cong_kich_ss01.mp3
+     - lib/26_def0026/ADef40_0/08_SubDefs/Def20_2/08_SubDefs/Def20_4/06_SoundSrcs/hat_va_cham_cong_kich_ss01A.mp3
+     - lib/26_def0026/ADef40_0/08_SubDefs/Def20_2/08_SubDefs/Def20_4/06_SoundSrcs/hat_va_cham_cong_kich_ss01B.mp3
+     # _____[HAT_VA_CHAM_CONG_KICH_SS02]_____
+     - lib/26_def0026/ADef40_0/08_SubDefs/Def20_2/08_SubDefs/Def22_4/06_SoundSrcs/hat_va_cham_cong_kich_ss02.mp3
+     # _____[HAT_VA_CHAM_CONG_KICH_SS03]_____
+     - lib/26_def0026/ADef40_0/08_SubDefs/Def20_2/08_SubDefs/Def24_4/06_SoundSrcs/hat_va_cham_cong_kich_ss03.mp3
+     # _____[HAT_VA_CHAM_CONG_KICH_SS04]_____
+     - lib/26_def0026/ADef40_0/08_SubDefs/Def20_2/08_SubDefs/Def26_4/06_SoundSrcs/hat_va_cham_cong_kich_ss04.mp3
+     # _____[HAT_VA_CHAM_CONG_KICH_SS05]_____
+     - lib/26_def0026/ADef40_0/08_SubDefs/Def20_2/08_SubDefs/Def28_4/06_SoundSrcs/hat_va_cham_cong_kich_ss05.mp3
+     # _____[HAT_VA_CHAM_CONG_KICH_SS06]_____
+     - lib/26_def0026/ADef40_0/08_SubDefs/Def20_2/08_SubDefs/Def30_4/06_SoundSrcs/hat_va_cham_cong_kich_ss06.mp3
+     # _____[HAT_VA_CHAM_CONG_KICH_SS07]_____
+     - lib/26_def0026/ADef40_0/08_SubDefs/Def20_2/08_SubDefs/Def32_4/06_SoundSrcs/hat_va_cham_cong_kich_ss07.mp3
+     # _____[HAT_VA_CHAM_CONG_KICH_SS08]_____
+     - lib/26_def0026/ADef40_0/08_SubDefs/Def20_2/08_SubDefs/Def34_4/06_SoundSrcs/hat_va_cham_cong_kich_ss08.mp3
+     # _____[HAT_VA_CHAM_CONG_KICH_SS09]_____
+     - lib/26_def0026/ADef40_0/08_SubDefs/Def20_2/08_SubDefs/Def36_4/06_SoundSrcs/hat_va_cham_cong_kich_ss09.mp3
+     #
+     #
+     # _____[HAT_VA_CHAM_PHA_HUY_SS01]_____
+     - lib/26_def0026/ADef40_0/08_SubDefs/Def30_2/08_SubDefs/Def20_4/06_SoundSrcs/hat_va_cham_pha_huy_ss01.mp3
+     # _____[HAT_VA_CHAM_PHA_HUY_SS02]_____
+     - lib/26_def0026/ADef40_0/08_SubDefs/Def30_2/08_SubDefs/Def22_4/06_SoundSrcs/hat_va_cham_pha_huy_ss02.mp3
+     # _____[HAT_VA_CHAM_PHA_HUY_SS03]_____
+     - lib/26_def0026/ADef40_0/08_SubDefs/Def30_2/08_SubDefs/Def24_4/06_SoundSrcs/hat_va_cham_pha_huy_ss03.mp3
+     # _____[HAT_VA_CHAM_PHA_HUY_SS04]_____
+     - lib/26_def0026/ADef40_0/08_SubDefs/Def30_2/08_SubDefs/Def26_4/06_SoundSrcs/hat_va_cham_pha_huy_ss04.mp3
+     # _____[HAT_VA_CHAM_PHA_HUY_SS05]_____
+     - lib/26_def0026/ADef40_0/08_SubDefs/Def30_2/08_SubDefs/Def28_4/06_SoundSrcs/hat_va_cham_pha_huy_ss05.mp3
+     # _____[HAT_VA_CHAM_PHA_HUY_SS06]_____
+     - lib/26_def0026/ADef40_0/08_SubDefs/Def30_2/08_SubDefs/Def30_4/06_SoundSrcs/hat_va_cham_pha_huy_ss06.mp3
+     # _____[HAT_VA_CHAM_PHA_HUY_SS07]_____
+     - lib/26_def0026/ADef40_0/08_SubDefs/Def30_2/08_SubDefs/Def32_4/06_SoundSrcs/hat_va_cham_pha_huy_ss07.mp3
+     # _____[HAT_VA_CHAM_PHA_HUY_SS08]_____
+     - lib/26_def0026/ADef40_0/08_SubDefs/Def30_2/08_SubDefs/Def34_4/06_SoundSrcs/hat_va_cham_pha_huy_ss08.mp3
+     # _____[HAT_VA_CHAM_PHA_HUY_SS09]_____
+     - lib/26_def0026/ADef40_0/08_SubDefs/Def30_2/08_SubDefs/Def36_4/06_SoundSrcs/hat_va_cham_pha_huy_ss09.mp3
+     #
+     #
+     #
+     #
+  #
+  # For details regarding assets in packages, see
+  # https://flutter.dev/to/asset-from-package
+  #
+  # An image asset can refer to one or more resolution-specific "variants", see
+  # https://flutter.dev/to/resolution-aware-images
+
+  # To add custom fonts to your package, add a fonts section here,
+  # in this "flutter" section. Each entry in this list should have a
+  # "family" key with the font family name, and a "fonts" key with a
+  # list giving the asset and other descriptors for the font. For
+  # example:
+  # fonts:
+  #   - family: Schyler
+  #     fonts:
+  #       - asset: fonts/Schyler-Regular.ttf
+  #       - asset: fonts/Schyler-Italic.ttf
+  #         style: italic
+  #   - family: Trajan Pro
+  #     fonts:
+  #       - asset: fonts/TrajanPro.ttf
+  #       - asset: fonts/TrajanPro_Bold.ttf
+  #         weight: 700
+  #
+  # For details regarding fonts in packages, see
+  # https://flutter.dev/to/font-from-package
