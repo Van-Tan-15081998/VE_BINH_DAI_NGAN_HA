@@ -68,8 +68,8 @@ class PHUONGTIENTRINHSATCLASS40CSS02 extends MOHINHPHUONGTIENTRINHSAT {
     /// -----
     final int tongSoFrame = 25;
     final int tongSoFrameTrenHang = 5;
-    final double chieuRongFrame = 250.0;
-    final double chieuCaoFrame = 260.0;
+    final double chieuRongFrame = 260.0;
+    final double chieuCaoFrame = 240.0;
     await getThuocTinh?.getThuocTinhSprite?.getDonViSpriteNgoaiHinhThanPhuongTien?.caiDatNguonHinhAnh(value: null);
     await getThuocTinh?.getThuocTinhSprite?.getDonViSpriteNgoaiHinhThanPhuongTien?.caiDatTongSoFrame(value: tongSoFrame);
     await getThuocTinh?.getThuocTinhSprite?.getDonViSpriteNgoaiHinhThanPhuongTien?.caiDatTongSoFrameTrenHang(value: tongSoFrameTrenHang);

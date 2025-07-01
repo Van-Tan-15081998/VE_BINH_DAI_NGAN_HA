@@ -23,6 +23,8 @@ export '26_def0026/ADef30_0/09_RootDef/class_20002828.dart';
 
 /// TODO: _____[THUOC_TINH_HIEU_UNG_AM_THANH_VU_KHI_TAN_CONG_CO_BAN]_____
 export '26_def0026/ADef30_0/08_SubDefs/Def02_2/08_SubDefs/Def20_4/08_SubDefs/Def20_6/09_RootDef/class_20002862.dart';
+/// TODO: _____[THUOC_TINH_HIEU_UNG_AM_THANH_VU_KHI_TAN_CONG_THONG_MINH]_____
+export '26_def0026/ADef30_0/08_SubDefs/Def02_2/08_SubDefs/Def20_4/08_SubDefs/Def30_6/09_RootDef/class_20002862.dart';
 
 /// TODO: _____[THUOC_TINH_HIEU_UNG_AM_THANH_CHIEN_DAU_CO_CO_BAN]_____
 export '26_def0026/ADef30_0/08_SubDefs/Def02_2/08_SubDefs/Def20_4/09_RootDef/class_20002860.dart';

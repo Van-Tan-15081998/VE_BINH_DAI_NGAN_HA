@@ -15,6 +15,8 @@ class THUOCTINHHIEUUNGAMTHANHCHIENDAUCOSSS10SS03 extends THUOCTINHHIEUUNGAMTHANH
     /// -----
     await caiDatVuKhiTanCongCoBan(value: THUOCTINHHIEUUNGAMTHANHVUKHITANCONGCOBANSSS10SS03());
 
+    await caiDatVuKhiTanCongThongMinh(value: THUOCTINHHIEUUNGAMTHANHVUKHITANCONGTHONGMINH());
+
     /// -----
     /// TODO: Setup Root For SubCom
     /// -----

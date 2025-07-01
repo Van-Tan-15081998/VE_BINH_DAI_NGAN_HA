@@ -360,6 +360,18 @@ abstract class QuanLyTrangThaiPhuongThucTanCongThongMinh with CauTrucThucThiCoBa
   Future<void> onThucThiTanCongTheoHieuSuatChienDauVuKhiThongMinhSS01() async {
     if (await onKiemTraThoiGianKichHoatTanCong() == true) {
       await onXuLyTanCong();
+
+      /// -----
+      /// TODO: Đưa Hiệu Ứng Âm Thanh Vào Ngăn Xếp
+      /// -----
+      await getChienDauCoTongQuat
+          ?.getChiDinhChienDauCoThucThiChienDau
+          ?.getTrangThai
+          ?.getMoHinh
+          ?.getThuocTinh
+          ?.getThuocTinhHieuUngAmThanh
+          ?.getVuKhiTanCongThongMinh
+          ?.onPlay();
     }
 
     return;
@@ -368,6 +380,18 @@ abstract class QuanLyTrangThaiPhuongThucTanCongThongMinh with CauTrucThucThiCoBa
   Future<void> onThucThiTanCongTheoHieuSuatChienDauVuKhiThongMinhSS02() async {
     if (await onKiemTraThoiGianKichHoatTanCong() == true) {
       await onXuLyTanCong();
+
+      /// -----
+      /// TODO: Đưa Hiệu Ứng Âm Thanh Vào Ngăn Xếp
+      /// -----
+      await getChienDauCoTongQuat
+          ?.getChiDinhChienDauCoThucThiChienDau
+          ?.getTrangThai
+          ?.getMoHinh
+          ?.getThuocTinh
+          ?.getThuocTinhHieuUngAmThanh
+          ?.getVuKhiTanCongThongMinh
+          ?.onPlay();
     }
 
     return;
@@ -376,6 +400,18 @@ abstract class QuanLyTrangThaiPhuongThucTanCongThongMinh with CauTrucThucThiCoBa
   Future<void> onThucThiTanCongTheoHieuSuatChienDauVuKhiThongMinhSS03() async {
     if (await onKiemTraThoiGianKichHoatTanCong() == true) {
       await onXuLyTanCong();
+
+      /// -----
+      /// TODO: Đưa Hiệu Ứng Âm Thanh Vào Ngăn Xếp
+      /// -----
+      await getChienDauCoTongQuat
+          ?.getChiDinhChienDauCoThucThiChienDau
+          ?.getTrangThai
+          ?.getMoHinh
+          ?.getThuocTinh
+          ?.getThuocTinhHieuUngAmThanh
+          ?.getVuKhiTanCongThongMinh
+          ?.onPlay();
     }
 
     return;
@@ -384,6 +420,18 @@ abstract class QuanLyTrangThaiPhuongThucTanCongThongMinh with CauTrucThucThiCoBa
   Future<void> onThucThiTanCongTheoHieuSuatChienDauVuKhiThongMinhSS04() async {
     if (await onKiemTraThoiGianKichHoatTanCong() == true) {
       await onXuLyTanCong();
+
+      /// -----
+      /// TODO: Đưa Hiệu Ứng Âm Thanh Vào Ngăn Xếp
+      /// -----
+      await getChienDauCoTongQuat
+          ?.getChiDinhChienDauCoThucThiChienDau
+          ?.getTrangThai
+          ?.getMoHinh
+          ?.getThuocTinh
+          ?.getThuocTinhHieuUngAmThanh
+          ?.getVuKhiTanCongThongMinh
+          ?.onPlay();
     }
 
     return;

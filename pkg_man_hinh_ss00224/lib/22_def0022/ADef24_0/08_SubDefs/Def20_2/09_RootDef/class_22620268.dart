@@ -34,7 +34,7 @@ class KhungVongLapSS01PkgManHinhSS00224 extends Component with VongLapThoiGianCo
   /// -----
   bool onVoidKiemTraTanXuatCapNhat() {
     if (getTrangThaiTongQuat?.getThietLapTongQuat?.onKiemTraChoPhepCapNhatTheoTocDoKhungHinh(
-        maDinhDanh: '[VONG_LAP_CHIEN_DAUCO_TAN_CONG_CO_BAN]',
+        maDinhDanh: '[VONG_LAP_CHIEN_DAU_CO_TAN_CONG_CO_BAN]',
         chiSoTangTienGiamTanXuatCapNhat: getChiSoTangTienTheoThoiGianThuc) == true) {
       return true;
     }

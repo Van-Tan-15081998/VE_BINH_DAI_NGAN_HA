@@ -93,4 +93,10 @@ class NUTBAMCHONHOISINH extends THANHPHANNUTBAMTHUOCCAPTHUANKICHHOAT {
     ///
     return;
   }
+
+  @override
+  void update(double dt) {
+    // TODO: implement update
+    super.update(dt);
+  }
 }

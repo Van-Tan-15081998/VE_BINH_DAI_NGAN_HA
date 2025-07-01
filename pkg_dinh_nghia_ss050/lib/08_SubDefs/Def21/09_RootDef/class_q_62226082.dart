@@ -346,7 +346,7 @@ class QuanLyTrangThaiThietLapTongQuat
           }
         }
         break;
-      case '[VONG_LAP_CHIEN_DAUCO_TAN_CONG_CO_BAN]':
+      case '[VONG_LAP_CHIEN_DAU_CO_TAN_CONG_CO_BAN]':
         {
           switch (getTocDoKhungHinh.floor()) {
             case 60:
