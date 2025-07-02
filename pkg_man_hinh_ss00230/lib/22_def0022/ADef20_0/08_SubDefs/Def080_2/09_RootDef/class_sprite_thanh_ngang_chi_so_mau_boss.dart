@@ -3,7 +3,7 @@ import 'package:pkg_dinh_nghia_ss022/pkg_dinh_nghia_ss022_exp.dart';
 import 'package:pkg_man_hinh_ss00230/pkg_man_hinh_ss00230_exp.dart';
 
 class SPRITETHANHNGANGCHISOMAUBOSS extends SPRITETHANHNGANGCHISOMAUCOBAN {
-  SPRITETHANHNGANGCHISOMAUBOSS({required super.trangThaiTongQuat});
+  SPRITETHANHNGANGCHISOMAUBOSS({required super.trangThaiTongQuat, required super.parentComponent});
 
   @override
   void onVoidCaiDatMoHinhChiTiet() {

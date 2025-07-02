@@ -33,6 +33,8 @@ dependencies:
 
   pkg_man_hinh_ss00226:
     path: ../pkg_man_hinh_ss00226
+  pkg_man_hinh_ss00230:
+    path: ../pkg_man_hinh_ss00230
 
 
 dev_dependencies:

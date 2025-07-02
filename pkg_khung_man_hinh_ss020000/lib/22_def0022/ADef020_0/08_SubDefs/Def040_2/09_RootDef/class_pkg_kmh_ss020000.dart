@@ -12,7 +12,8 @@ import 'package:pkg_khung_man_hinh_ss020000/pkg_khung_man_hinh_ss020000_exp.dart
 /// -----
 /// TODO: Thành Phần Màn Hình Drag Thuộc Cấp
 /// -----
-abstract class THANHPHANMANHINHDRAGTHUOCCAPCOBAN extends PositionComponent with DragCallbacks, HasGameRef, CAUTRUCTHUCTHICOBAN, KICHBANDIEUKHIENTHUOCCAPCOBAN {
+// abstract class THANHPHANMANHINHDRAGTHUOCCAPCOBAN extends PositionComponent with DragCallbacks, HasGameRef, CAUTRUCTHUCTHICOBAN, KICHBANDIEUKHIENTHUOCCAPCOBAN {
+abstract class THANHPHANMANHINHDRAGTHUOCCAPCOBAN extends PositionComponent with DragCallbacks, CAUTRUCTHUCTHICOBAN, KICHBANDIEUKHIENTHUOCCAPCOBAN {
   /// -----
   /// TODO:
   /// -----

@@ -1,7 +1,7 @@
 import 'package:pkg_man_hinh_ss00230/pkg_man_hinh_ss00230_exp.dart';
 
 class SPRITETHANHNGANGCHISOMAUSTTC extends SPRITETHANHNGANGCHISOMAUCOBAN {
-  SPRITETHANHNGANGCHISOMAUSTTC({required super.trangThaiTongQuat});
+  SPRITETHANHNGANGCHISOMAUSTTC({required super.trangThaiTongQuat, required super.parentComponent});
 
   @override
   void onVoidCaiDatMoHinhChiTiet() {

@@ -60,10 +60,48 @@ class KhungHinhTichHopBangDieuKhienDoiHinhSatThuTanCong extends Component with H
 
     try {
       await onSetupRoot();
-      await onAddRoot();
+      // await onAddRoot();
     } catch (e) {
       return;
     }
+
+    return;
+  }
+
+    @override
+  FutureOr<void> onMount() async {
+    _spritePhuongTienSS01?.onVoidCaiDatMoHinhChiTiet();
+    _spritePhuongTienSS02?.onVoidCaiDatMoHinhChiTiet();
+    _spritePhuongTienSS03?.onVoidCaiDatMoHinhChiTiet();
+    _spritePhuongTienSS04?.onVoidCaiDatMoHinhChiTiet();
+    _spritePhuongTienSS05?.onVoidCaiDatMoHinhChiTiet();
+    _spritePhuongTienSS06?.onVoidCaiDatMoHinhChiTiet();
+    _spritePhuongTienSS07?.onVoidCaiDatMoHinhChiTiet();
+    _spritePhuongTienSS08?.onVoidCaiDatMoHinhChiTiet();
+    _spritePhuongTienSS09?.onVoidCaiDatMoHinhChiTiet();
+    _spritePhuongTienSS10?.onVoidCaiDatMoHinhChiTiet();
+
+    _spritePhuongTienSS11?.onVoidCaiDatMoHinhChiTiet();
+    _spritePhuongTienSS12?.onVoidCaiDatMoHinhChiTiet();
+    _spritePhuongTienSS13?.onVoidCaiDatMoHinhChiTiet();
+    _spritePhuongTienSS14?.onVoidCaiDatMoHinhChiTiet();
+    _spritePhuongTienSS15?.onVoidCaiDatMoHinhChiTiet();
+    _spritePhuongTienSS16?.onVoidCaiDatMoHinhChiTiet();
+    _spritePhuongTienSS17?.onVoidCaiDatMoHinhChiTiet();
+    _spritePhuongTienSS18?.onVoidCaiDatMoHinhChiTiet();
+    _spritePhuongTienSS19?.onVoidCaiDatMoHinhChiTiet();
+    _spritePhuongTienSS20?.onVoidCaiDatMoHinhChiTiet();
+
+    _spritePhuongTienSS21?.onVoidCaiDatMoHinhChiTiet();
+    _spritePhuongTienSS22?.onVoidCaiDatMoHinhChiTiet();
+    _spritePhuongTienSS23?.onVoidCaiDatMoHinhChiTiet();
+    _spritePhuongTienSS24?.onVoidCaiDatMoHinhChiTiet();
+    _spritePhuongTienSS25?.onVoidCaiDatMoHinhChiTiet();
+    _spritePhuongTienSS26?.onVoidCaiDatMoHinhChiTiet();
+    _spritePhuongTienSS27?.onVoidCaiDatMoHinhChiTiet();
+    _spritePhuongTienSS28?.onVoidCaiDatMoHinhChiTiet();
+    _spritePhuongTienSS29?.onVoidCaiDatMoHinhChiTiet();
+    _spritePhuongTienSS30?.onVoidCaiDatMoHinhChiTiet();
 
     return;
   }
@@ -112,40 +150,40 @@ class KhungHinhTichHopBangDieuKhienDoiHinhSatThuTanCong extends Component with H
     /// TODO: Phương Tiện
     /// -----
     /// -----
-    _spritePhuongTienSS01 = SpritePhuongTienSS20BangDieuKhienDoiHinhSatThuTanCong(trangThaiTongQuat: getTrangThaiTongQuat);
-    _spritePhuongTienSS02 = SpritePhuongTienSS22BangDieuKhienDoiHinhSatThuTanCong(trangThaiTongQuat: getTrangThaiTongQuat);
-    _spritePhuongTienSS03 = SpritePhuongTienSS24BangDieuKhienDoiHinhSatThuTanCong(trangThaiTongQuat: getTrangThaiTongQuat);
-    _spritePhuongTienSS04 = SpritePhuongTienSS26BangDieuKhienDoiHinhSatThuTanCong(trangThaiTongQuat: getTrangThaiTongQuat);
-    _spritePhuongTienSS05 = SpritePhuongTienSS28BangDieuKhienDoiHinhSatThuTanCong(trangThaiTongQuat: getTrangThaiTongQuat);
-    _spritePhuongTienSS06 = SpritePhuongTienSS30BangDieuKhienDoiHinhSatThuTanCong(trangThaiTongQuat: getTrangThaiTongQuat);
-    _spritePhuongTienSS07 = SpritePhuongTienSS32BangDieuKhienDoiHinhSatThuTanCong(trangThaiTongQuat: getTrangThaiTongQuat);
-    _spritePhuongTienSS08 = SpritePhuongTienSS34BangDieuKhienDoiHinhSatThuTanCong(trangThaiTongQuat: getTrangThaiTongQuat);
-    _spritePhuongTienSS09 = SpritePhuongTienSS36BangDieuKhienDoiHinhSatThuTanCong(trangThaiTongQuat: getTrangThaiTongQuat);
-    _spritePhuongTienSS10 = SpritePhuongTienSS38BangDieuKhienDoiHinhSatThuTanCong(trangThaiTongQuat: getTrangThaiTongQuat);
+    _spritePhuongTienSS01 = SpritePhuongTienSS20BangDieuKhienDoiHinhSatThuTanCong(trangThaiTongQuat: getTrangThaiTongQuat, parentComponent: this);
+    _spritePhuongTienSS02 = SpritePhuongTienSS22BangDieuKhienDoiHinhSatThuTanCong(trangThaiTongQuat: getTrangThaiTongQuat, parentComponent: this);
+    _spritePhuongTienSS03 = SpritePhuongTienSS24BangDieuKhienDoiHinhSatThuTanCong(trangThaiTongQuat: getTrangThaiTongQuat, parentComponent: this);
+    _spritePhuongTienSS04 = SpritePhuongTienSS26BangDieuKhienDoiHinhSatThuTanCong(trangThaiTongQuat: getTrangThaiTongQuat, parentComponent: this);
+    _spritePhuongTienSS05 = SpritePhuongTienSS28BangDieuKhienDoiHinhSatThuTanCong(trangThaiTongQuat: getTrangThaiTongQuat, parentComponent: this);
+    _spritePhuongTienSS06 = SpritePhuongTienSS30BangDieuKhienDoiHinhSatThuTanCong(trangThaiTongQuat: getTrangThaiTongQuat, parentComponent: this);
+    _spritePhuongTienSS07 = SpritePhuongTienSS32BangDieuKhienDoiHinhSatThuTanCong(trangThaiTongQuat: getTrangThaiTongQuat, parentComponent: this);
+    _spritePhuongTienSS08 = SpritePhuongTienSS34BangDieuKhienDoiHinhSatThuTanCong(trangThaiTongQuat: getTrangThaiTongQuat, parentComponent: this);
+    _spritePhuongTienSS09 = SpritePhuongTienSS36BangDieuKhienDoiHinhSatThuTanCong(trangThaiTongQuat: getTrangThaiTongQuat, parentComponent: this);
+    _spritePhuongTienSS10 = SpritePhuongTienSS38BangDieuKhienDoiHinhSatThuTanCong(trangThaiTongQuat: getTrangThaiTongQuat, parentComponent: this);
 
     /// -----
-    _spritePhuongTienSS11 = SpritePhuongTienSS40BangDieuKhienDoiHinhSatThuTanCong(trangThaiTongQuat: getTrangThaiTongQuat);
-    _spritePhuongTienSS12 = SpritePhuongTienSS42BangDieuKhienDoiHinhSatThuTanCong(trangThaiTongQuat: getTrangThaiTongQuat);
-    _spritePhuongTienSS13 = SpritePhuongTienSS44BangDieuKhienDoiHinhSatThuTanCong(trangThaiTongQuat: getTrangThaiTongQuat);
-    _spritePhuongTienSS14 = SpritePhuongTienSS46BangDieuKhienDoiHinhSatThuTanCong(trangThaiTongQuat: getTrangThaiTongQuat);
-    _spritePhuongTienSS15 = SpritePhuongTienSS48BangDieuKhienDoiHinhSatThuTanCong(trangThaiTongQuat: getTrangThaiTongQuat);
-    _spritePhuongTienSS16 = SpritePhuongTienSS50BangDieuKhienDoiHinhSatThuTanCong(trangThaiTongQuat: getTrangThaiTongQuat);
-    _spritePhuongTienSS17 = SpritePhuongTienSS52BangDieuKhienDoiHinhSatThuTanCong(trangThaiTongQuat: getTrangThaiTongQuat);
-    _spritePhuongTienSS18 = SpritePhuongTienSS54BangDieuKhienDoiHinhSatThuTanCong(trangThaiTongQuat: getTrangThaiTongQuat);
-    _spritePhuongTienSS19 = SpritePhuongTienSS56BangDieuKhienDoiHinhSatThuTanCong(trangThaiTongQuat: getTrangThaiTongQuat);
-    _spritePhuongTienSS20 = SpritePhuongTienSS58BangDieuKhienDoiHinhSatThuTanCong(trangThaiTongQuat: getTrangThaiTongQuat);
+    _spritePhuongTienSS11 = SpritePhuongTienSS40BangDieuKhienDoiHinhSatThuTanCong(trangThaiTongQuat: getTrangThaiTongQuat, parentComponent: this);
+    _spritePhuongTienSS12 = SpritePhuongTienSS42BangDieuKhienDoiHinhSatThuTanCong(trangThaiTongQuat: getTrangThaiTongQuat, parentComponent: this);
+    _spritePhuongTienSS13 = SpritePhuongTienSS44BangDieuKhienDoiHinhSatThuTanCong(trangThaiTongQuat: getTrangThaiTongQuat, parentComponent: this);
+    _spritePhuongTienSS14 = SpritePhuongTienSS46BangDieuKhienDoiHinhSatThuTanCong(trangThaiTongQuat: getTrangThaiTongQuat, parentComponent: this);
+    _spritePhuongTienSS15 = SpritePhuongTienSS48BangDieuKhienDoiHinhSatThuTanCong(trangThaiTongQuat: getTrangThaiTongQuat, parentComponent: this);
+    _spritePhuongTienSS16 = SpritePhuongTienSS50BangDieuKhienDoiHinhSatThuTanCong(trangThaiTongQuat: getTrangThaiTongQuat, parentComponent: this);
+    _spritePhuongTienSS17 = SpritePhuongTienSS52BangDieuKhienDoiHinhSatThuTanCong(trangThaiTongQuat: getTrangThaiTongQuat, parentComponent: this);
+    _spritePhuongTienSS18 = SpritePhuongTienSS54BangDieuKhienDoiHinhSatThuTanCong(trangThaiTongQuat: getTrangThaiTongQuat, parentComponent: this);
+    _spritePhuongTienSS19 = SpritePhuongTienSS56BangDieuKhienDoiHinhSatThuTanCong(trangThaiTongQuat: getTrangThaiTongQuat, parentComponent: this);
+    _spritePhuongTienSS20 = SpritePhuongTienSS58BangDieuKhienDoiHinhSatThuTanCong(trangThaiTongQuat: getTrangThaiTongQuat, parentComponent: this);
 
     /// -----
-    _spritePhuongTienSS21 = SpritePhuongTienSS60BangDieuKhienDoiHinhSatThuTanCong(trangThaiTongQuat: getTrangThaiTongQuat);
-    _spritePhuongTienSS22 = SpritePhuongTienSS62BangDieuKhienDoiHinhSatThuTanCong(trangThaiTongQuat: getTrangThaiTongQuat);
-    _spritePhuongTienSS23 = SpritePhuongTienSS64BangDieuKhienDoiHinhSatThuTanCong(trangThaiTongQuat: getTrangThaiTongQuat);
-    _spritePhuongTienSS24 = SpritePhuongTienSS66BangDieuKhienDoiHinhSatThuTanCong(trangThaiTongQuat: getTrangThaiTongQuat);
-    _spritePhuongTienSS25 = SpritePhuongTienSS68BangDieuKhienDoiHinhSatThuTanCong(trangThaiTongQuat: getTrangThaiTongQuat);
-    _spritePhuongTienSS26 = SpritePhuongTienSS70BangDieuKhienDoiHinhSatThuTanCong(trangThaiTongQuat: getTrangThaiTongQuat);
-    _spritePhuongTienSS27 = SpritePhuongTienSS72BangDieuKhienDoiHinhSatThuTanCong(trangThaiTongQuat: getTrangThaiTongQuat);
-    _spritePhuongTienSS28 = SpritePhuongTienSS74BangDieuKhienDoiHinhSatThuTanCong(trangThaiTongQuat: getTrangThaiTongQuat);
-    _spritePhuongTienSS29 = SpritePhuongTienSS76BangDieuKhienDoiHinhSatThuTanCong(trangThaiTongQuat: getTrangThaiTongQuat);
-    _spritePhuongTienSS30 = SpritePhuongTienSS78BangDieuKhienDoiHinhSatThuTanCong(trangThaiTongQuat: getTrangThaiTongQuat);
+    _spritePhuongTienSS21 = SpritePhuongTienSS60BangDieuKhienDoiHinhSatThuTanCong(trangThaiTongQuat: getTrangThaiTongQuat, parentComponent: this);
+    _spritePhuongTienSS22 = SpritePhuongTienSS62BangDieuKhienDoiHinhSatThuTanCong(trangThaiTongQuat: getTrangThaiTongQuat, parentComponent: this);
+    _spritePhuongTienSS23 = SpritePhuongTienSS64BangDieuKhienDoiHinhSatThuTanCong(trangThaiTongQuat: getTrangThaiTongQuat, parentComponent: this);
+    _spritePhuongTienSS24 = SpritePhuongTienSS66BangDieuKhienDoiHinhSatThuTanCong(trangThaiTongQuat: getTrangThaiTongQuat, parentComponent: this);
+    _spritePhuongTienSS25 = SpritePhuongTienSS68BangDieuKhienDoiHinhSatThuTanCong(trangThaiTongQuat: getTrangThaiTongQuat, parentComponent: this);
+    _spritePhuongTienSS26 = SpritePhuongTienSS70BangDieuKhienDoiHinhSatThuTanCong(trangThaiTongQuat: getTrangThaiTongQuat, parentComponent: this);
+    _spritePhuongTienSS27 = SpritePhuongTienSS72BangDieuKhienDoiHinhSatThuTanCong(trangThaiTongQuat: getTrangThaiTongQuat, parentComponent: this);
+    _spritePhuongTienSS28 = SpritePhuongTienSS74BangDieuKhienDoiHinhSatThuTanCong(trangThaiTongQuat: getTrangThaiTongQuat, parentComponent: this);
+    _spritePhuongTienSS29 = SpritePhuongTienSS76BangDieuKhienDoiHinhSatThuTanCong(trangThaiTongQuat: getTrangThaiTongQuat, parentComponent: this);
+    _spritePhuongTienSS30 = SpritePhuongTienSS78BangDieuKhienDoiHinhSatThuTanCong(trangThaiTongQuat: getTrangThaiTongQuat, parentComponent: this);
 
     return;
   }

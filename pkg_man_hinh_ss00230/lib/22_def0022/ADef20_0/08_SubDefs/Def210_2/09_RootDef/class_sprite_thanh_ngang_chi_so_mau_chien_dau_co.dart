@@ -188,10 +188,10 @@ class SPRITETHANHNGANGCHISOMAUCHIENDAUCO extends SpriteAnimationComponent with H
   /// -----
   /// TODO:
   /// -----
-  int _boiSoCapDoGiamTanXuatCapNhat = 2;
+  int _boiSoCapDoGiamTanXuatCapNhat = 3;
   int get getBoiSoCapDoGiamTanXuatCapNhat => _boiSoCapDoGiamTanXuatCapNhat;
   Future<void> caiDatBoiSoCapDoGiamTanXuatCapNhat({required int? value}) async {
-    _boiSoCapDoGiamTanXuatCapNhat = value ?? 2;
+    _boiSoCapDoGiamTanXuatCapNhat = value ?? 3;
   }
 
   /// -----

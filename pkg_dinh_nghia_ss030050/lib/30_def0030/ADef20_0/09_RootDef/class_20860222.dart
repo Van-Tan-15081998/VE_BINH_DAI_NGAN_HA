@@ -2331,62 +2331,6 @@ class SUKIENVACHAMTHUOCPHUONGTIEN with CauTrucThucThiCoBan, DanhSachQuanLyTrangT
       for (final phuongTienVaChamVienDan in danhSachPhuongTienVaChamVienDan.entries) {
         TRANGTHAIPHUONGTIENVACHAM? phuongTienVaCham = getMapPhuongTienVaCham[phuongTienVaChamVienDan.key];
 
-        // /// -----
-        // /// TODO: Nếu Phương Tiện Có Sự Kiện Va Chạm Mới
-        // /// -----
-        // if (phuongTienVaCham?.getMoHinh?.getPhuongTien?.getMoHinh?.getTrangThaiTrongChienDau?.getTrangThaiTonTai?.isKhoiTaoHoanTat() == true) {
-        //   /// -----
-        //   /// TODO: Gán Viên Đạn Va Chạm SS001 Thuộc Phương Tiện
-        //   /// -----
-        //   if (phuongTienVaCham?.getMoHinh?.getPhuongTien?.getMoHinh?.getTrangThaiTrongChienDau?.getMaDinhDanhVienDanVaChamSS001 == null) {
-        //     if (phuongTienVaChamVienDan.value.isNotEmpty == true && phuongTienVaChamVienDan.value['[MA_DINH_DANH_VIEN_DAN_VA_CHAM]'] != '[]') {
-        //       if (phuongTienVaCham?.getMoHinh?.getPhuongTien?.getMoHinh?.getTrangThaiTrongChienDau?.getMaDinhDanhVienDanVaChamSS001 == null) {
-        //         await phuongTienVaCham?.getMoHinh?.getPhuongTien?.getMoHinh?.getTrangThaiTrongChienDau?.onCaiDatMaDinhDanhVienDanVaChamSS001(
-        //           value: phuongTienVaChamVienDan.value['[MA_DINH_DANH_VIEN_DAN_VA_CHAM]'],
-        //           caiDatUuTien: true,
-        //         );
-        //       }
-        //
-        //       if (kDebugMode) {
-        //         print(
-        //           '[📋]_[LOG]_[TICH_HOP_THANH_CONG_SU_KIEN_VA_CHAM 🎯]: ${phuongTienVaCham?.getMoHinh?.getMaDinhDanhPhuongTienVaCham} - ${phuongTienVaChamVienDan.value['[MA_DINH_DANH_VIEN_DAN_VA_CHAM]']}',
-        //         );
-        //       }
-        //     }
-        //   } else if (phuongTienVaCham?.getMoHinh?.getPhuongTien?.getMoHinh?.getTrangThaiTrongChienDau?.getMaDinhDanhVienDanVaChamSS002 == null) {
-        //     if (phuongTienVaChamVienDan.value.isNotEmpty == true && phuongTienVaChamVienDan.value['[MA_DINH_DANH_VIEN_DAN_VA_CHAM]'] != '[]') {
-        //       if (phuongTienVaCham?.getMoHinh?.getPhuongTien?.getMoHinh?.getTrangThaiTrongChienDau?.getMaDinhDanhVienDanVaChamSS002 == null) {
-        //         await phuongTienVaCham?.getMoHinh?.getPhuongTien?.getMoHinh?.getTrangThaiTrongChienDau?.onCaiDatMaDinhDanhVienDanVaChamSS002(
-        //           value: phuongTienVaChamVienDan.value['[MA_DINH_DANH_VIEN_DAN_VA_CHAM]'],
-        //           caiDatUuTien: true,
-        //         );
-        //       }
-        //
-        //       if (kDebugMode) {
-        //         print(
-        //           '[📋]_[LOG]_[TICH_HOP_THANH_CONG_SU_KIEN_VA_CHAM 🎯]: ${phuongTienVaCham?.getMoHinh?.getMaDinhDanhPhuongTienVaCham} - ${phuongTienVaChamVienDan.value['[MA_DINH_DANH_VIEN_DAN_VA_CHAM]']}',
-        //         );
-        //       }
-        //     }
-        //   } else if (phuongTienVaCham?.getMoHinh?.getPhuongTien?.getMoHinh?.getTrangThaiTrongChienDau?.getMaDinhDanhVienDanVaChamSS003 == null) {
-        //     if (phuongTienVaChamVienDan.value.isNotEmpty == true && phuongTienVaChamVienDan.value['[MA_DINH_DANH_VIEN_DAN_VA_CHAM]'] != '[]') {
-        //       if (phuongTienVaCham?.getMoHinh?.getPhuongTien?.getMoHinh?.getTrangThaiTrongChienDau?.getMaDinhDanhVienDanVaChamSS003 == null) {
-        //         await phuongTienVaCham?.getMoHinh?.getPhuongTien?.getMoHinh?.getTrangThaiTrongChienDau?.onCaiDatMaDinhDanhVienDanVaChamSS003(
-        //           value: phuongTienVaChamVienDan.value['[MA_DINH_DANH_VIEN_DAN_VA_CHAM]'],
-        //           caiDatUuTien: true,
-        //         );
-        //       }
-        //
-        //       if (kDebugMode) {
-        //         print(
-        //           '[📋]_[LOG]_[TICH_HOP_THANH_CONG_SU_KIEN_VA_CHAM 🎯]: ${phuongTienVaCham?.getMoHinh?.getMaDinhDanhPhuongTienVaCham} - ${phuongTienVaChamVienDan.value['[MA_DINH_DANH_VIEN_DAN_VA_CHAM]']}',
-        //         );
-        //       }
-        //     }
-        //   } else {
-        //     ///
-        //   }
-
         if (phuongTienVaCham?.getMoHinh?.getPhuongTien?.getMoHinh?.getTrangThaiTrongChienDau?.getTrangThaiTonTai?.isKhoiTaoHoanTat() == true) {
           if (phuongTienVaChamVienDan.value.isNotEmpty == true && phuongTienVaChamVienDan.value['[MA_DINH_DANH_VIEN_DAN_VA_CHAM]'] != '[]') {
             if (phuongTienVaCham?.getMoHinh?.getPhuongTien?.getMoHinh?.getTrangThaiTrongChienDau?.getMaDinhDanhVienDanVaCham == null) {

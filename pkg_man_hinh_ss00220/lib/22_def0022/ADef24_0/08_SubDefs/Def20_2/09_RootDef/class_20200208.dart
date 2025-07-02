@@ -58,6 +58,6 @@ class KHUNGVONGLAPSS01BANGDIEUKHIENCHIENDAU extends Component with VongLapThoiGi
       return;
     }
 
-    getTrangThaiTongQuat?.getSuKienVaChamThuocPhuongTien?.onLoop();
+    // getTrangThaiTongQuat?.getSuKienVaChamThuocPhuongTien?.onLoop();
   }
 }

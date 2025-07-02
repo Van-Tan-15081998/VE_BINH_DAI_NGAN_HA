@@ -7,7 +7,7 @@ import 'package:pkg_khung_man_hinh_ss020000/pkg_khung_man_hinh_ss020000_exp.dart
 /// -----
 abstract class KHUNGMANHINHGAMECOSO extends FlameGame
     with
-        HasCollisionDetection,
+        // HasCollisionDetection,
         CAUTRUCTHUCTHICOBAN,
         KICHBANDIEUKHIENTHUOCCAPCOBAN {
   @override
@@ -663,11 +663,11 @@ abstract class KHUNGMANHINHGAMECOSO extends FlameGame
     return;
   }
 
-  @override
-  void update(double dt) {
-    // TODO: implement update
-    super.update(dt);
-  }
+  // @override
+  // void update(double dt) {
+  //   // TODO: implement update
+  //   super.update(dt);
+  // }
 
   /// -----
   /// TODO: Loading

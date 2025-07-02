@@ -686,7 +686,7 @@ abstract class QuanLyTrangThaiPhuongThucTanCongThongMinh with CauTrucThucThiCoBa
     /// -----
     MoHinhChienDauCoTongQuat? chienDauCo = getChienDauCoTongQuat?.getChienDauCoTrucTiepThucThiChienDau?.getTrangThai?.getMoHinh;
 
-    if (QuanLyDongThoiGianCoBan.onKiemTraKichHoat(chiSoKichHoat: 200, chiSoTangTienTheoThoiGianThuc: getChiSoTangTienTheoThoiGianThuc) == true) {
+    if (QuanLyDongThoiGianCoBan.onKiemTraKichHoat(chiSoKichHoat: 500, chiSoTangTienTheoThoiGianThuc: getChiSoTangTienTheoThoiGianThuc) == true) {
       return true;
     }
 

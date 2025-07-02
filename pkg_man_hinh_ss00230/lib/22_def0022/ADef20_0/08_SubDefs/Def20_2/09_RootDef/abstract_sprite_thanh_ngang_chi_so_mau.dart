@@ -12,8 +12,9 @@ abstract class SPRITETHANHNGANGCHISOMAUCOBAN extends SpriteAnimationComponent wi
   /// -----
   /// TODO:
   /// -----
-  SPRITETHANHNGANGCHISOMAUCOBAN({required QuanLyTrangThaiTongQuat? trangThaiTongQuat}) {
+  SPRITETHANHNGANGCHISOMAUCOBAN({required QuanLyTrangThaiTongQuat? trangThaiTongQuat, required Component? parentComponent}) {
     caiDatTrangThaiTongQuat(value: trangThaiTongQuat);
+    caiDatParentComponent(value: parentComponent);
   }
 
   String? _nguonHinhAnhThanhNgangChiSoMauHienHanh;
@@ -47,6 +48,32 @@ abstract class SPRITETHANHNGANGCHISOMAUCOBAN extends SpriteAnimationComponent wi
       _nguonHinhAnhKhungVienChiSoMau = value;
     } else {
       _nguonHinhAnhKhungVienChiSoMau ??= value;
+    }
+
+    return;
+  }
+
+  /// -----
+  /// TODO:
+  /// -----
+  Component? _parentComponent;
+  Component? get getParentComponent => _parentComponent;
+  Future<void> caiDatParentComponent({required Component? value}) async {
+    _parentComponent ??= value;
+    return;
+  }
+
+  Future<void> onAddToParent() async {
+    if (getParentComponent != null && isMounted == false) {
+      await getParentComponent?.add(this);
+    }
+
+    return;
+  }
+
+  Future<void> onRemoveFromParent() async {
+    if (isMounted == true) {
+      removeFromParent();
     }
 
     return;
@@ -175,10 +202,10 @@ abstract class SPRITETHANHNGANGCHISOMAUCOBAN extends SpriteAnimationComponent wi
   /// -----
   /// TODO:
   /// -----
-  int _boiSoCapDoGiamTanXuatCapNhat = 2;
+  int _boiSoCapDoGiamTanXuatCapNhat = 3;
   int get getBoiSoCapDoGiamTanXuatCapNhat => _boiSoCapDoGiamTanXuatCapNhat;
   Future<void> caiDatBoiSoCapDoGiamTanXuatCapNhat({required int? value}) async {
-    _boiSoCapDoGiamTanXuatCapNhat = value ?? 2;
+    _boiSoCapDoGiamTanXuatCapNhat = value ?? 3;
   }
 
   /// -----

@@ -11,7 +11,8 @@ import 'package:pkg_khung_man_hinh_ss020000/pkg_khung_man_hinh_ss020000_exp.dart
 /// TODO: Thành Phần Nút Bấm Thuộc Cấp Thuần Kích Hoạt
 /// -----
 abstract class THANHPHANNUTBAMTHUOCCAPTHUANKICHHOAT extends PositionComponent
-    with TapCallbacks, GestureHitboxes, HasGameRef, CauTrucThucThiCoBan {
+    // with TapCallbacks, GestureHitboxes, HasGameRef, CauTrucThucThiCoBan {
+    with TapCallbacks, CauTrucThucThiCoBan {
   /// -----
   /// TODO:
   /// -----
@@ -1243,7 +1244,7 @@ abstract class THANHPHANNUTBAMTHUOCCAPTHUANKICHHOAT extends PositionComponent
   Future<void> onLoad() async {
     super.onLoad();
     anchor = Anchor.center;
-    add(RectangleHitbox()); // cần thiết để hitbox hoạt động
+    // add(RectangleHitbox()); // cần thiết để hitbox hoạt động
   }
 
   @override

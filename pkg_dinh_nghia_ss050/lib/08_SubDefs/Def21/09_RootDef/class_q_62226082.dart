@@ -147,16 +147,16 @@ class QuanLyTrangThaiThietLapTongQuat
   /// -----
   /// TODO: Tốc Độ Khung Hình
   /// -----
-  double _tocDoKhungHinh = 60;
-  double get getTocDoKhungHinh => _tocDoKhungHinh;
+  int _tocDoKhungHinh = 60;
+  int get getTocDoKhungHinh => _tocDoKhungHinh;
   Future<void> caiDatTocDoKhungHinh({
     required double value,
     bool? caiDatUuTien,
   }) async {
     if (caiDatUuTien == true) {
-      _tocDoKhungHinh = value;
+      _tocDoKhungHinh = value.floor();
     } else {
-      _tocDoKhungHinh ??= value;
+      _tocDoKhungHinh = value.floor();
     }
 
     return;
@@ -186,7 +186,7 @@ class QuanLyTrangThaiThietLapTongQuat
     switch (maDinhDanh) {
       case '[SPRITE_ANIMATION_CO_BAN]':
         {
-          switch (getTocDoKhungHinh.floor()) {
+          switch (getTocDoKhungHinh) {
             case 60:
               {
                 if (chiSoTangTienGiamTanXuatCapNhat % 3 == 0) {
@@ -213,7 +213,7 @@ class QuanLyTrangThaiThietLapTongQuat
         break;
       case '[SPRITE_ANIMATION_CHIEN_DAU_CO]':
         {
-          switch (getTocDoKhungHinh.floor()) {
+          switch (getTocDoKhungHinh) {
             case 60:
               {
                 if (chiSoTangTienGiamTanXuatCapNhat % 3 == 0) {
@@ -240,7 +240,7 @@ class QuanLyTrangThaiThietLapTongQuat
         break;
       case '[SPRITE_ANIMATION_VU_KHI_DIEU_KHIEN]':
         {
-          switch (getTocDoKhungHinh.floor()) {
+          switch (getTocDoKhungHinh) {
             case 60:
               {
                 if (chiSoTangTienGiamTanXuatCapNhat % 3 == 0) {
@@ -267,7 +267,7 @@ class QuanLyTrangThaiThietLapTongQuat
         break;
       case '[SPRITE_ANIMATION_CHIEN_DAU_CO_CHIEN_DAU]':
         {
-          switch (getTocDoKhungHinh.floor()) {
+          switch (getTocDoKhungHinh) {
             case 60:
               {
                 if (chiSoTangTienGiamTanXuatCapNhat % 3 == 0) {
@@ -294,7 +294,7 @@ class QuanLyTrangThaiThietLapTongQuat
         break;
       case '[KHUNG_HINH_NEN_CHIEN_DAU]':
         {
-          switch (getTocDoKhungHinh.floor()) {
+          switch (getTocDoKhungHinh) {
             case 60:
               {
                 if (chiSoTangTienGiamTanXuatCapNhat % 3 == 0) {
@@ -321,7 +321,7 @@ class QuanLyTrangThaiThietLapTongQuat
         break;
       case '[VONG_LAP_CO_BAN]':
         {
-          switch (getTocDoKhungHinh.floor()) {
+          switch (getTocDoKhungHinh) {
             case 60:
               {
                 if (chiSoTangTienGiamTanXuatCapNhat % 3 == 0) {
@@ -348,7 +348,7 @@ class QuanLyTrangThaiThietLapTongQuat
         break;
       case '[VONG_LAP_CHIEN_DAU_CO_TAN_CONG_CO_BAN]':
         {
-          switch (getTocDoKhungHinh.floor()) {
+          switch (getTocDoKhungHinh) {
             case 60:
               {
                 if (chiSoTangTienGiamTanXuatCapNhat % 3 == 0) {
@@ -375,7 +375,7 @@ class QuanLyTrangThaiThietLapTongQuat
         break;
       case '[VONG_LAP_CHIEN_DAUCO_TAN_CONG_THONG_MINH]':
         {
-          switch (getTocDoKhungHinh.floor()) {
+          switch (getTocDoKhungHinh) {
             case 60:
               {
                 if (chiSoTangTienGiamTanXuatCapNhat % 3 == 0) {
@@ -403,24 +403,24 @@ class QuanLyTrangThaiThietLapTongQuat
 
       case '[VONG_LAP_NHAN_DINH_SU_KIEN_VA_CHAM]':
         {
-          switch (getTocDoKhungHinh.floor()) {
+          switch (getTocDoKhungHinh) {
             case 60:
               {
-                if (chiSoTangTienGiamTanXuatCapNhat % 3 == 0) {
+                if (chiSoTangTienGiamTanXuatCapNhat % 5 == 0) {
                   return true;
                 }
               }
               break;
             case 90:
               {
-                if (chiSoTangTienGiamTanXuatCapNhat % 6 == 0) {
+                if (chiSoTangTienGiamTanXuatCapNhat % 5 == 0) {
                   return true;
                 }
               }
               break;
             case 120:
               {
-                if (chiSoTangTienGiamTanXuatCapNhat % 6 == 0) {
+                if (chiSoTangTienGiamTanXuatCapNhat % 5 == 0) {
                   return true;
                 }
               }
@@ -431,7 +431,7 @@ class QuanLyTrangThaiThietLapTongQuat
 
       case '[VONG_LAP_VAN_HANH_KICH_BAN_CHIEN_DAU]':
         {
-          switch (getTocDoKhungHinh.floor()) {
+          switch (getTocDoKhungHinh) {
             case 60:
               {
                 if (chiSoTangTienGiamTanXuatCapNhat % 100 == 0) {

@@ -9,6 +9,7 @@ import 'package:pkg_dinh_nghia_ss030030/pkg_dinh_nghia_ss030030_exp.dart';
 import 'package:pkg_dinh_nghia_ss030050/pkg_dinh_nghia_ss030050_exp.dart';
 import 'package:pkg_dinh_nghia_ss050/pkg_dinh_nghia_ss050_exp.dart';
 import 'package:pkg_dinh_nghia_ss054/pkg_dinh_nghia_ss054_exp.dart';
+import 'package:pkg_man_hinh_ss00230/pkg_man_hinh_ss00230_exp.dart';
 import 'package:pkg_man_hinh_ss00226/22_def0022/ADef20_0/09_RootDef/abstract_sprite_phuong_tien.dart';
 
 
@@ -248,10 +249,23 @@ class MoHinhPhuongTienTongQuat with CauTrucThucThiCoBan {
     return;
   }
 
+  /// -----
+  /// TODO:
+  /// -----
   SpritePhuongTienCoBan? _spritePhuongTien;
   SpritePhuongTienCoBan? get getSpritePhuongTien => _spritePhuongTien;
   Future<void> onCaiDatSpritePhuongTien({required SpritePhuongTienCoBan? value}) async {
     _spritePhuongTien ??= value;
+    return;
+  }
+
+  /// -----
+  /// TODO:
+  /// -----
+  SPRITETHANHNGANGCHISOMAUCOBAN? _spriteChiSoPhuongTien;
+  SPRITETHANHNGANGCHISOMAUCOBAN? get getSpriteChiSoPhuongTien => _spriteChiSoPhuongTien;
+  Future<void> onCaiDatSpriteChiSoPhuongTien({required SPRITETHANHNGANGCHISOMAUCOBAN? value}) async {
+    _spriteChiSoPhuongTien ??= value;
     return;
   }
 
@@ -451,6 +465,7 @@ class MoHinhPhuongTienTongQuat with CauTrucThucThiCoBan {
     getDuLieuJsonLamPhang['[KICH_HOAT_HOAT_DONG]'] = true;
 
     await getSpritePhuongTien?.onAddToParent();
+    await getSpriteChiSoPhuongTien?.onAddToParent();
 
     ///
     return;
@@ -462,6 +477,7 @@ class MoHinhPhuongTienTongQuat with CauTrucThucThiCoBan {
     getDuLieuJsonLamPhang['[DI_CHUYEN_HIEN_THI]'] = false;
 
     await getSpritePhuongTien?.onRemoveFromParent();
+    await getSpriteChiSoPhuongTien?.onRemoveFromParent();
 
     ///
     return;

@@ -81,6 +81,6 @@
 //         return;
 //       }
 //
-//       await getTrangThaiTongQuat?.getSuKienVaChamThuocPhuongTien?.onLoop();
+//
 //   }
 // }

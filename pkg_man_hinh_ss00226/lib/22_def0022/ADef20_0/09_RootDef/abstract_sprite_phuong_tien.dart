@@ -23,7 +23,7 @@ abstract class SpritePhuongTienCoBan extends SpriteAnimationComponent with HasVi
   Future<void> onInitRoot() async {
     onVoidCaiDatKiemTraHienThi(value: false);
 
-    await caiDatDonViSprite(value: DonViSpriteCoBan(maDinhDanh: null, nguonHinhAnh: null,  spriteAnimation: null, sprite: null));
+    await caiDatDonViSprite(value: DonViSpriteCoBan(maDinhDanh: null, nguonHinhAnh: null, spriteAnimation: null, sprite: null));
 
     // await onCaiDatMoHinhChiTiet();
 
@@ -81,7 +81,7 @@ abstract class SpritePhuongTienCoBan extends SpriteAnimationComponent with HasVi
     }
 
     return;
-    }
+  }
 
   /// -----
   /// TODO: Mã Định Danh Mô Hình Hiện Hành
@@ -118,9 +118,9 @@ abstract class SpritePhuongTienCoBan extends SpriteAnimationComponent with HasVi
 
   bool onVoidKiemTraTanXuatCapNhat() {
     if (getTrangThaiTongQuat?.getThietLapTongQuat?.onKiemTraChoPhepCapNhatTheoTocDoKhungHinh(
-      maDinhDanh: '[SPRITE_ANIMATION_CO_BAN]',
-      chiSoTangTienGiamTanXuatCapNhat: getBienTangTienGiamTanXuatCapNhat,
-    ) ==
+          maDinhDanh: '[SPRITE_ANIMATION_CO_BAN]',
+          chiSoTangTienGiamTanXuatCapNhat: getBienTangTienGiamTanXuatCapNhat,
+        ) ==
         true) {
       return true;
     }
