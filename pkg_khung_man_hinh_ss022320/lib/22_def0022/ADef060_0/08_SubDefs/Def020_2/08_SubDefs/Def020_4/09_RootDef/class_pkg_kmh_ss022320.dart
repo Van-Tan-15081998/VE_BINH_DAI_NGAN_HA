@@ -56,8 +56,6 @@ class CARDNHIEMVUSS00A001MAPSS00A extends THANHPHANNUTBAMTHUOCCAPTHUANKICHHOAT {
 
     await getGameController?.onChonChiDinhNhiemVuChienDauSS00A001MAPSS00A();
 
-    await getGameController?.onKichHoatKhungManHinhThuocCapSS223200();
-
     ///
     return;
   }

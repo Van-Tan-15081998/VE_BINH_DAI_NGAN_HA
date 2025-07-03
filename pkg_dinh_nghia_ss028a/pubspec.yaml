@@ -25,6 +25,9 @@ dependencies:
   pkg_dinh_nghia_ss054:
     path: ../pkg_dinh_nghia_ss054
 
+  pkg_dinh_nghia_ss030050:
+    path: ../pkg_dinh_nghia_ss030050
+
 
 dev_dependencies:
 #  flutter_test:

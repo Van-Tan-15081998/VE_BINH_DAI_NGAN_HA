@@ -32,6 +32,11 @@ class THUOCTINHHIEUUNGAMTHANHNUTBAM with CauTrucThucThiCoBan, CAUTRUCPHATAMTHANH
     ///
 
     /// -----
+    /// TODO:
+    /// -----
+    await caiDatTuDongNguonAmThanhLuuVaoRam();
+
+    /// -----
     /// TODO: Init Root For SubCom
     /// -----
     await onInitRootForSubCom();

@@ -2393,6 +2393,9 @@ class SUKIENVACHAMTHUOCPHUONGTIEN with CauTrucThucThiCoBan, DanhSachQuanLyTrangT
     }
   }
 
+  final List<String> _danhSachMaDinhDanhPhuongTienHoatDong = [];
+  List<String> get getDanhSachMaDinhDanhPhuongTienHoatDong => _danhSachMaDinhDanhPhuongTienHoatDong;
+
   final List<TRANGTHAIPHUONGTIENVACHAM?> _danhSachPhuongTienVaCham = [];
   List<TRANGTHAIPHUONGTIENVACHAM?> get getDanhSachPhuongTienVaCham => _danhSachPhuongTienVaCham;
 

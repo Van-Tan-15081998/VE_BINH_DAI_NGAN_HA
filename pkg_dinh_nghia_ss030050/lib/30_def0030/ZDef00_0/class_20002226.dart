@@ -467,6 +467,12 @@ class QUANLYTRANGTHAISUKIENVACHAMTHUOCPHUONGTIEN extends SUKIENVACHAMTHUOCPHUONG
       'replyTo': responsePort.sendPort,
     });
 
+    final List<Map<String, dynamic>?> danhSachPhuongTienVaCham = getDanhSachPhuongTienVaCham.map((phuongTien) => phuongTien?.getMoHinh?.toDuLieuJsonSuKienVaCham()).toList();
+    danhSachPhuongTienVaCham.removeWhere((phuongTien) => phuongTien?['[DI_CHUYEN_HIEN_THI]'] == false);
+
+    getDanhSachMaDinhDanhPhuongTienHoatDong.clear();
+    getDanhSachMaDinhDanhPhuongTienHoatDong.addAll(danhSachPhuongTienVaCham.map((element) => element?['[MA_DINH_DANH_PHUONG_TIEN_VA_CHAM]'] ?? ''));
+
     // return await responsePort.first;
     final result = await responsePort.first;
     responsePort.close();
@@ -680,6 +686,9 @@ class QUANLYTRANGTHAISUKIENVACHAMTHUOCPHUONGTIEN extends SUKIENVACHAMTHUOCPHUONG
             final dyTrongTamVienDan = duLieuVienDan['[DY_TRONG_TAM]'];
 
             for (final phuongTien in danhSachPhuongTienVaCham) {
+
+              /// Cập Nhật Danh Sách Phương Tiện Hoạt Động
+
 
               if (phuongTien['[DU_LIEU_JSON_SU_KIEN_VA_CHAM]'] != null) {
                 final duLieuPhuongTien = phuongTien['[DU_LIEU_JSON_SU_KIEN_VA_CHAM]'];

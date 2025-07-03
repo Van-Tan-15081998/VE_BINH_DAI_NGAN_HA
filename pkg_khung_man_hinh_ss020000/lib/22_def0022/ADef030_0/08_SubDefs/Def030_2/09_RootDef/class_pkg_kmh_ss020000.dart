@@ -227,6 +227,8 @@ abstract class THANHPHANNUTBAMTHUOCCAPTHUANKICHHOAT extends PositionComponent
   void onTapUp(TapUpEvent event) {
     super.onTapUp(event);
     onTapUpEvent?.call();
+
+    getGlobalState?.getDichVuMayPhatAmThanh?.getAmThanhHeThong?.getAmThanhHieuUngNutBam?.onPlay();
   }
 
   @override

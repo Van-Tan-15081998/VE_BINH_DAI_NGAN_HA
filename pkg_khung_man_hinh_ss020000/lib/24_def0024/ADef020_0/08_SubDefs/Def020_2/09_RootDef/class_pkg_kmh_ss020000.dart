@@ -25,7 +25,7 @@ abstract class QUANLYTHANHPHANMANHINHTHUOCCAPCOBAN
   }
 
   /// -----
-  /// TODO:
+  /// TODO: GlobalState sẽ bao gồm cả KHUNGMANHINHGAMECOSO
   /// -----
   KHUNGMANHINHGAMECOSO? _gameController;
   KHUNGMANHINHGAMECOSO? get getGameController => _gameController;

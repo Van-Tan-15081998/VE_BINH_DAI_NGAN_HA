@@ -23,6 +23,7 @@ abstract class QuanLyTrangThaiPhuongThucTanCongThongMinh with CauTrucThucThiCoBa
 
       await caiDatDanhSachMoHinhTongQuat(value: attachValue.getDanhSachMoHinhTongQuat);
       await caiDatDieuKhienTinhToanTongQuat(value: attachValue.getDieuKhienTinhToanTongQuat);
+      await caiDatSuKienVaChamThuocPhuongTien(value: attachValue.getSuKienVaChamThuocPhuongTien);
     }
 
     /// -----
@@ -565,6 +566,7 @@ abstract class QuanLyTrangThaiPhuongThucTanCongThongMinh with CauTrucThucThiCoBa
 
       await vienDan?.caiDatQuanLyTrangThaiDanhSachMoHinh(value: getDanhSachMoHinhTongQuat);
       await vienDan?.caiDatDieuKhienTinhToanTongQuat(value: getDieuKhienTinhToanTongQuat);
+      await vienDan?.caiDatSuKienVaChamThuocPhuongTien(value: getSuKienVaChamThuocPhuongTien);
 
       if (vienDan is VienDanThongMinhSS01) {
         await vienDan.caiDatTenLuaCanhTrai(value: true);
