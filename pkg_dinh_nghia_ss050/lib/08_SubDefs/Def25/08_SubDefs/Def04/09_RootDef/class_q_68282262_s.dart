@@ -133,7 +133,7 @@
 //   }
 //
 //   Future<void> onLoop() async {
-//     await onCapNhatChiSoTangTienTheoThoiGianThuc();
+//     onVoidCapNhatChiSoTangTienTheoThoiGianThuc();
 //
 //     await capNhatKhaNangDieuKhienChienDauCo();
 //

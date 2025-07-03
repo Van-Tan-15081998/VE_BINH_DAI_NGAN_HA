@@ -89,12 +89,12 @@ abstract class SPRITEVIENDANTANCONGXAMCHIEMCOBAN extends SpriteAnimationComponen
     return;
   }
 
-  Future<bool> kiemTraTanXuatCapNhat() async {
+  bool onBoolKiemTraTanXuatCapNhat() {
     // if (getBienTangTienGiamTanXuatCapNhat % getBoiSoCapDoGiamTanXuatCapNhat == 0) {
     //   return true;
     // }
 
-    if (await getTrangThaiTongQuat?.getThietLapTongQuat?.onKiemTraChoPhepCapNhatTheoTocDoKhungHinh(
+    if (getTrangThaiTongQuat?.getThietLapTongQuat?.onKiemTraChoPhepCapNhatTheoTocDoKhungHinh(
           maDinhDanh: '[SPRITE_ANIMATION_CO_BAN]',
           chiSoTangTienGiamTanXuatCapNhat: _bienTangTienGiamTanXuatCapNhat,
         ) ==

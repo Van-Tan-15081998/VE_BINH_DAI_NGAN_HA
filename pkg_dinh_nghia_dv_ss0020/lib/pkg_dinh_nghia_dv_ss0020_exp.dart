@@ -147,6 +147,9 @@ export '26_def0026/ADef40_0/08_SubDefs/Def30_2/09_RootDef/class_20002888.dart';
 /// TODO: _____[THUOC_TINH_HIEU_UNG_AM_THANH_SU_KIEN_VA_CHAM_TRONG_CHIEN_DAU]_____
 export '26_def0026/ADef40_0/09_RootDef/class_20006062.dart';
 
+/// TODO: _____[THUOC_TINH_AM_THANH_HIEU_UNG_VA_CHAM_VAT_PHAM_PHAN_THUONG]_____
+export '26_def0026/ADef40_0/08_SubDefs/Def40_2/09_RootDef/class_20002888.dart';
+
 // /// TODO:
 // export '';
 //

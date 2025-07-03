@@ -32,7 +32,7 @@ class KhungVongLapSS01PkgManHinhSS00222 extends Component with VongLapThoiGianCo
   /// -----
   /// TODO:
   /// -----
-  // Future<bool> kiemTraTanXuatCapNhat() async {
+  // bool onBoolKiemTraTanXuatCapNhat() {
   //   if (getChiSoTangTienTheoThoiGianThuc % 3 == 0) {
   //     return true;
   //   }
@@ -53,7 +53,7 @@ class KhungVongLapSS01PkgManHinhSS00222 extends Component with VongLapThoiGianCo
 
   @override
   FutureOr<void> update(double dt) async {
-    if (getTrangThaiTongQuat != null) {
+
       ///
       ///
       /// TODO: Chạy Vòng Loop
@@ -66,6 +66,6 @@ class KhungVongLapSS01PkgManHinhSS00222 extends Component with VongLapThoiGianCo
       }
 
       getTrangThaiTongQuat?.getChienDauCoTongQuat?.getDieuKhienDiChuyenChienDauCo?.onLoop();
-    }
+
   }
 }

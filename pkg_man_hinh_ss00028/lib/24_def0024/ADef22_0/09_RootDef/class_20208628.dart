@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:pkg_dinh_nghia_ss020/pkg_dinh_nghia_ss020_exp.dart';
 import 'package:pkg_dinh_nghia_ss028/pkg_dinh_nghia_ss028_exp.dart';
 import 'package:pkg_dinh_nghia_ss050/pkg_dinh_nghia_ss050_exp.dart';
-import 'package:pkg_man_hinh_ss00028a/pkg_man_hinh_ss00028a_exp.dart';
+// import 'package:pkg_man_hinh_ss00028a/pkg_man_hinh_ss00028a_exp.dart';
 import 'package:pkg_man_hinh_ss00028/24_def0024/ADef22_0/08_SubDefs/Def20_2/08_SubDefs/Def20_4/08_SubDefs/Def20_6/08_SubDefs/Def20_8/09_RootDef/class_20206266.dart';
 import 'package:pkg_man_hinh_ss00028/24_def0024/ADef22_0/08_SubDefs/Def20_2/08_SubDefs/Def20_4/08_SubDefs/Def20_6/08_SubDefs/Def22_8/09_RootDef/class_20880286.dart';
 import 'package:pkg_man_hinh_ss00028/24_def0024/ADef22_0/08_SubDefs/Def20_2/08_SubDefs/Def24_4/08_SubDefs/Def20_6/08_SubDefs/Def20_8/09_RootDef/class_82668626.dart';
@@ -536,15 +536,7 @@ class _MANHINHTHANHPHANAAAAState extends State<MANHINHTHANHPHANAAAA> with Automa
                     bottom: 0,
                     width: KichThuocTienIchCoBan.maxWidth(context) * 0.95,
                     height: KichThuocTienIchCoBan.maxHeight(context) * 0.80,
-                    child: MANHINHBACHKHOACHIENDAUCO(
-                      trangThaiTongQuat: getTrangThaiTongQuat,
-                      onChuyenChonTraiChienDauCoChiDinhThucThiThongTin: () async {
-                        await onChuyenChonTrai();
-                      },
-                      onChuyenChonPhaiChienDauCoChiDinhThucThiThongTin: () async {
-                        await onChuyenChonPhai();
-                      },
-                    ),
+                    child: Container()
                   ),
                 ],
               ),

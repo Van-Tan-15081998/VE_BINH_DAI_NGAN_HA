@@ -29,7 +29,7 @@ class KhungVongLapLayerSS03 extends Component with VongLapThoiGianCoBan {
   /// -----
   /// TODO:
   /// -----
-  Future<bool> kiemTraTanXuatCapNhat() async {
+  bool onBoolKiemTraTanXuatCapNhat() {
     if (getChiSoTangTienTheoThoiGianThuc % 5 == 0) {
       return true;
     }
@@ -38,17 +38,17 @@ class KhungVongLapLayerSS03 extends Component with VongLapThoiGianCoBan {
 
   @override
   FutureOr<void> update(double dt) async {
-    if (getTrangThaiTongQuat != null) {
+
       ///
       ///
       /// TODO: Chạy Vòng Loop
       ///
       ///
 
-      await onCapNhatChiSoTangTienTheoThoiGianThuc();
-      if (await kiemTraTanXuatCapNhat() == false) {
+      onVoidCapNhatChiSoTangTienTheoThoiGianThuc();
+      if (onBoolKiemTraTanXuatCapNhat() == false) {
         return;
       }
-    }
+
   }
 }

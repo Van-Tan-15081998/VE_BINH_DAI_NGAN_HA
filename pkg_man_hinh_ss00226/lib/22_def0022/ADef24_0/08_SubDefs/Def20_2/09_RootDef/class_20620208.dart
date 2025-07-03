@@ -32,7 +32,7 @@ class KhungVongLapSS01PkgManHinhSS00226 extends Component with VongLapThoiGianCo
   /// -----
   /// TODO:
   /// -----
-  Future<bool> kiemTraTanXuatCapNhat() async {
+  bool onBoolKiemTraTanXuatCapNhat() {
     // if (getChiSoTangTienTheoThoiGianThuc % 10 == 0) {
     //   return true;
     // }
@@ -50,19 +50,28 @@ class KhungVongLapSS01PkgManHinhSS00226 extends Component with VongLapThoiGianCo
 
   @override
   FutureOr<void> update(double dt) async {
-    if (getTrangThaiTongQuat != null) {
+
       ///
       ///
       /// TODO: Chạy Vòng Loop
       ///
       ///
 
-      await onCapNhatChiSoTangTienTheoThoiGianThuc();
-      if (await kiemTraTanXuatCapNhat() == false) {
+      onVoidCapNhatChiSoTangTienTheoThoiGianThuc();
+      if (onBoolKiemTraTanXuatCapNhat() == false) {
         return;
       }
+      try {
+        await getTrangThaiTongQuat?.getSuKienVaChamThuocPhuongTien?.onLoop().timeout(
+        Duration(milliseconds: 20),
+        onTimeout: () {
+          print('⏰ Quá thời gian!');
+          return 'Giá trị mặc định';
+        },
+      );
+      } catch (e) {
+        print('❌ Lỗi: $e');
+      }
 
-      getTrangThaiTongQuat?.getSuKienVaChamThuocPhuongTien?.onLoop();
-    }
   }
 }

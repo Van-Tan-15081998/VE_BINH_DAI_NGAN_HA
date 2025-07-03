@@ -76,7 +76,7 @@ abstract class SpriteCoBan extends SpriteComponent with HasVisibility {
     return;
   }
 
-  Future<bool> kiemTraTanXuatCapNhat() async {
+  bool onBoolKiemTraTanXuatCapNhat() {
     if (_bienTangTienGiamTanXuatCapNhat % _boiSoCapDoGiamTanXuatCapNhat == 0) {
       return true;
     }
@@ -193,7 +193,7 @@ abstract class SpriteCoBan extends SpriteComponent with HasVisibility {
     super.update(dt);
 
     await caiDatTuDongBienTangTienGiamTanXuatCapNhat();
-    if (await kiemTraTanXuatCapNhat() == false) {
+    if (onBoolKiemTraTanXuatCapNhat() == false) {
       return;
     }
 

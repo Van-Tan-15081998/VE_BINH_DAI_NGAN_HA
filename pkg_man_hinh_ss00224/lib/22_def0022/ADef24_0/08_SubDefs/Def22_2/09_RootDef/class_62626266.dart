@@ -44,7 +44,7 @@ class KhungVongLapSS02PkgManHinhSS00224 extends Component with VongLapThoiGianCo
 
   @override
   void update(double dt) {
-    if (getTrangThaiTongQuat != null) {
+
       ///
       ///
       /// TODO: Chạy Vòng Loop
@@ -76,6 +76,6 @@ class KhungVongLapSS02PkgManHinhSS00224 extends Component with VongLapThoiGianCo
           ?.getPhuongThucTanCongThongMinh
           ?.getPhuongThucTanCongThongMinhSS04
           ?.onLoop();
-    }
+
   }
 }

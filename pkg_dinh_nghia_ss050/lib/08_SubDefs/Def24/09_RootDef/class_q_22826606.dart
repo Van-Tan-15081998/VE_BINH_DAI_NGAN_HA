@@ -287,7 +287,7 @@ class QuanLyTrangThaiBangDieuKhienTongQuat with KhungThucThiCoBan, DanhSachQuanL
 
     return;
 
-    await onCapNhatChiSoTangTienTheoThoiGianThuc();
+    onVoidCapNhatChiSoTangTienTheoThoiGianThuc();
 
     /// TODO: Kiểm Tra Hoàn Tất Giai Đoạn Thuộc Kịch Bản, Chuyển Giai Đoạn Thuộc Kịch Bản
     await onKiemTraHoanThanhGiaiDoanThuocKichBanChienDau();

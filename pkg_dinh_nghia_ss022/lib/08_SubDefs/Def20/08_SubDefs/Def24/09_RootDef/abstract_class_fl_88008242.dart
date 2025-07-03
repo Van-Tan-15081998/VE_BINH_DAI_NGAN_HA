@@ -87,7 +87,7 @@ abstract class SpriteAnimationCoBan extends SpriteAnimationComponent with HasVis
     return;
   }
 
-  Future<bool> kiemTraTanXuatCapNhat() async {
+  bool onBoolKiemTraTanXuatCapNhat() {
     if (getTrangThaiTongQuat?.getThietLapTongQuat?.onKiemTraChoPhepCapNhatTheoTocDoKhungHinh(
         maDinhDanh: '[SPRITE_ANIMATION_CO_BAN]',
         chiSoTangTienGiamTanXuatCapNhat: _bienTangTienGiamTanXuatCapNhat) == true) {

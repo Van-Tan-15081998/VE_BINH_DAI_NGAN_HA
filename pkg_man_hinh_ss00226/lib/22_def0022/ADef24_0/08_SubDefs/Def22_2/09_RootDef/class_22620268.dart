@@ -32,7 +32,7 @@ class KhungVongLapBangDieuKhienChienDauSS01 extends Component with VongLapThoiGi
   /// -----
   /// TODO:
   /// -----
-  Future<bool> kiemTraTanXuatCapNhat() async {
+  bool onBoolKiemTraTanXuatCapNhat() {
     if (getChiSoTangTienTheoThoiGianThuc % 20 == 0) {
       return true;
     }
@@ -41,19 +41,19 @@ class KhungVongLapBangDieuKhienChienDauSS01 extends Component with VongLapThoiGi
 
   @override
   FutureOr<void> update(double dt) async {
-    if (getTrangThaiTongQuat != null) {
+
       ///
       ///
       /// TODO: Chạy Vòng Loop
       ///
       ///
 
-      await onCapNhatChiSoTangTienTheoThoiGianThuc();
-      if (await kiemTraTanXuatCapNhat() == false) {
+      onVoidCapNhatChiSoTangTienTheoThoiGianThuc();
+      if (onBoolKiemTraTanXuatCapNhat() == false) {
         return;
       }
 
       await getTrangThaiTongQuat?.getBangDieuKhienChienDauSS01?.onLoop();
-    }
+
   }
 }

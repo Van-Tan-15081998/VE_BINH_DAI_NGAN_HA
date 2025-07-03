@@ -885,7 +885,6 @@ class MoHinhPhuongTienTongQuat with CauTrucThucThiCoBan {
           kiemTraChamChienDauCo = true;
         }
 
-
       if (kiemTraChamChienDauCo == true) {
         /// -----
         /// TODO: Xử Lý Va Chạm
@@ -896,7 +895,8 @@ class MoHinhPhuongTienTongQuat with CauTrucThucThiCoBan {
         /// TODO:
         /// -----
         getDieuKhienTinhToanTongQuat?.getTinhToanSatThuongHuongDenChienDauCo?.onVoidSatThuongPhuongTienVuKhi(phuongTien: this, toaDoVaCham: toaDoVaCham);
-      } else {
+
+        } else {
         // if (onKiemTraPhuongTienDiChuyenThoatManHinh(
         //   huongBay: getPhuongThuc?.getPhuongThucBay?.getThamSoBay?.getDinhHuongBay,
         //   viTri: getPhuongThuc?.getPhuongThucBay?.getViTri,

@@ -128,7 +128,7 @@ abstract class QuanLyTrangThaiPhuongThucTanCongCoBan with CauTrucThucThiCoBan, V
     /// TODO: Kiểm Tra Tiến Trình Triển Khai Chiến Đấu
     /// -----
     if (await getTienTrinhTongQuat?.getTienTrinhThucThiChienDau?.getTrangThai?.getMoHinh?.isDangThucThi() == true) {
-      await onCapNhatChiSoTangTienTheoThoiGianThuc();
+      onVoidCapNhatChiSoTangTienTheoThoiGianThuc();
 
       ///
       /// TODO:

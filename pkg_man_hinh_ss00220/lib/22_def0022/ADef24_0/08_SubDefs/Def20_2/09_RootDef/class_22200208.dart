@@ -32,7 +32,7 @@
 //   /// -----
 //   /// TODO:
 //   /// -----
-//   Future<bool> kiemTraTanXuatCapNhat() async {
+//   bool onBoolKiemTraTanXuatCapNhat() {
 //     // if (getChiSoTangTienTheoThoiGianThuc % 10 == 0) {
 //     //   return true;
 //     // }
@@ -76,8 +76,8 @@
 //       ///
 //       ///
 //
-//       await onCapNhatChiSoTangTienTheoThoiGianThuc();
-//       if (await kiemTraTanXuatCapNhat() == false) {
+//       onVoidCapNhatChiSoTangTienTheoThoiGianThuc();
+//       if (onBoolKiemTraTanXuatCapNhat() == false) {
 //         return;
 //       }
 //
