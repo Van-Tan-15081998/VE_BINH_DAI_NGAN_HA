@@ -264,17 +264,13 @@ class THUOCTINHTAINGUYENCOBAN with CAUTRUCTHUCTHICOBAN {
     int tongSoPart = thuocTinhHinhAnh?.getTongSoPart ?? thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinh?.getTongSoPart ?? 0;
 
     if (tongSoPart == 1) {
-
       await Future.delayed(Duration.zero);
       await onTaiTaiNguyenHinhAnhNgoaiHinhPartSS01(thuocTinhHinhAnh: thuocTinhHinhAnh);
-
     } else if (tongSoPart == 2) {
-
       await Future.delayed(Duration.zero);
       await onTaiTaiNguyenHinhAnhNgoaiHinhPartSS01(thuocTinhHinhAnh: thuocTinhHinhAnh);
       await Future.delayed(Duration.zero);
       await onTaiTaiNguyenHinhAnhNgoaiHinhPartSS02(thuocTinhHinhAnh: thuocTinhHinhAnh);
-
     } else if (tongSoPart == 4) {
       // await Future.delayed(Duration.zero);
       // await Future.wait([
@@ -312,6 +308,53 @@ class THUOCTINHTAINGUYENCOBAN with CAUTRUCTHUCTHICOBAN {
       await onTaiTaiNguyenHinhAnhNgoaiHinhPartSS05(thuocTinhHinhAnh: thuocTinhHinhAnh);
       await Future.delayed(Duration.zero);
       await onTaiTaiNguyenHinhAnhNgoaiHinhPartSS06(thuocTinhHinhAnh: thuocTinhHinhAnh);
+    } else if (tongSoPart == 23) {
+      await Future.delayed(Duration.zero);
+      await onTaiTaiNguyenHinhAnhNgoaiHinhPartSS01(thuocTinhHinhAnh: thuocTinhHinhAnh);
+      await Future.delayed(Duration.zero);
+      await onTaiTaiNguyenHinhAnhNgoaiHinhPartSS02(thuocTinhHinhAnh: thuocTinhHinhAnh);
+      await Future.delayed(Duration.zero);
+      await onTaiTaiNguyenHinhAnhNgoaiHinhPartSS03(thuocTinhHinhAnh: thuocTinhHinhAnh);
+      await Future.delayed(Duration.zero);
+      await onTaiTaiNguyenHinhAnhNgoaiHinhPartSS04(thuocTinhHinhAnh: thuocTinhHinhAnh);
+      await Future.delayed(Duration.zero);
+      await onTaiTaiNguyenHinhAnhNgoaiHinhPartSS05(thuocTinhHinhAnh: thuocTinhHinhAnh);
+      await Future.delayed(Duration.zero);
+      await onTaiTaiNguyenHinhAnhNgoaiHinhPartSS06(thuocTinhHinhAnh: thuocTinhHinhAnh);
+      await Future.delayed(Duration.zero);
+      await onTaiTaiNguyenHinhAnhNgoaiHinhPartSS07(thuocTinhHinhAnh: thuocTinhHinhAnh);
+      await Future.delayed(Duration.zero);
+      await onTaiTaiNguyenHinhAnhNgoaiHinhPartSS08(thuocTinhHinhAnh: thuocTinhHinhAnh);
+      await Future.delayed(Duration.zero);
+      await onTaiTaiNguyenHinhAnhNgoaiHinhPartSS09(thuocTinhHinhAnh: thuocTinhHinhAnh);
+      await Future.delayed(Duration.zero);
+      await onTaiTaiNguyenHinhAnhNgoaiHinhPartSS10(thuocTinhHinhAnh: thuocTinhHinhAnh);
+      await Future.delayed(Duration.zero);
+      await onTaiTaiNguyenHinhAnhNgoaiHinhPartSS11(thuocTinhHinhAnh: thuocTinhHinhAnh);
+      await Future.delayed(Duration.zero);
+      await onTaiTaiNguyenHinhAnhNgoaiHinhPartSS12(thuocTinhHinhAnh: thuocTinhHinhAnh);
+      await Future.delayed(Duration.zero);
+      await onTaiTaiNguyenHinhAnhNgoaiHinhPartSS13(thuocTinhHinhAnh: thuocTinhHinhAnh);
+      await Future.delayed(Duration.zero);
+      await onTaiTaiNguyenHinhAnhNgoaiHinhPartSS14(thuocTinhHinhAnh: thuocTinhHinhAnh);
+      await Future.delayed(Duration.zero);
+      await onTaiTaiNguyenHinhAnhNgoaiHinhPartSS15(thuocTinhHinhAnh: thuocTinhHinhAnh);
+      await Future.delayed(Duration.zero);
+      await onTaiTaiNguyenHinhAnhNgoaiHinhPartSS16(thuocTinhHinhAnh: thuocTinhHinhAnh);
+      await Future.delayed(Duration.zero);
+      await onTaiTaiNguyenHinhAnhNgoaiHinhPartSS17(thuocTinhHinhAnh: thuocTinhHinhAnh);
+      await Future.delayed(Duration.zero);
+      await onTaiTaiNguyenHinhAnhNgoaiHinhPartSS18(thuocTinhHinhAnh: thuocTinhHinhAnh);
+      await Future.delayed(Duration.zero);
+      await onTaiTaiNguyenHinhAnhNgoaiHinhPartSS19(thuocTinhHinhAnh: thuocTinhHinhAnh);
+      await Future.delayed(Duration.zero);
+      await onTaiTaiNguyenHinhAnhNgoaiHinhPartSS20(thuocTinhHinhAnh: thuocTinhHinhAnh);
+      await Future.delayed(Duration.zero);
+      await onTaiTaiNguyenHinhAnhNgoaiHinhPartSS21(thuocTinhHinhAnh: thuocTinhHinhAnh);
+      await Future.delayed(Duration.zero);
+      await onTaiTaiNguyenHinhAnhNgoaiHinhPartSS22(thuocTinhHinhAnh: thuocTinhHinhAnh);
+      await Future.delayed(Duration.zero);
+      await onTaiTaiNguyenHinhAnhNgoaiHinhPartSS23(thuocTinhHinhAnh: thuocTinhHinhAnh);
     }
 
     List<SpriteAnimationFrame> ngoaiHinhFrames = [];
@@ -322,6 +365,25 @@ class THUOCTINHTAINGUYENCOBAN with CAUTRUCTHUCTHICOBAN {
     List<SpriteAnimationFrame>? ngoaiHinhFramePartSS04 = [];
     List<SpriteAnimationFrame>? ngoaiHinhFramePartSS05 = [];
     List<SpriteAnimationFrame>? ngoaiHinhFramePartSS06 = [];
+    List<SpriteAnimationFrame>? ngoaiHinhFramePartSS07 = [];
+    List<SpriteAnimationFrame>? ngoaiHinhFramePartSS08 = [];
+    List<SpriteAnimationFrame>? ngoaiHinhFramePartSS09 = [];
+    List<SpriteAnimationFrame>? ngoaiHinhFramePartSS10 = [];
+    List<SpriteAnimationFrame>? ngoaiHinhFramePartSS11 = [];
+    List<SpriteAnimationFrame>? ngoaiHinhFramePartSS12 = [];
+    List<SpriteAnimationFrame>? ngoaiHinhFramePartSS13 = [];
+    List<SpriteAnimationFrame>? ngoaiHinhFramePartSS14 = [];
+    List<SpriteAnimationFrame>? ngoaiHinhFramePartSS15 = [];
+    List<SpriteAnimationFrame>? ngoaiHinhFramePartSS16 = [];
+    List<SpriteAnimationFrame>? ngoaiHinhFramePartSS17 = [];
+    List<SpriteAnimationFrame>? ngoaiHinhFramePartSS18 = [];
+    List<SpriteAnimationFrame>? ngoaiHinhFramePartSS19 = [];
+    List<SpriteAnimationFrame>? ngoaiHinhFramePartSS20 = [];
+    List<SpriteAnimationFrame>? ngoaiHinhFramePartSS21 = [];
+    List<SpriteAnimationFrame>? ngoaiHinhFramePartSS22 = [];
+    List<SpriteAnimationFrame>? ngoaiHinhFramePartSS23 = [];
+    List<SpriteAnimationFrame>? ngoaiHinhFramePartSS24 = [];
+    List<SpriteAnimationFrame>? ngoaiHinhFramePartSS25 = [];
 
     if (thuocTinhHinhAnh?.getKichThuocRS025 == true) {
       ngoaiHinhFramePartSS01 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS010?.getSpriteAnimation?.frames ?? [];
@@ -330,6 +392,27 @@ class THUOCTINHTAINGUYENCOBAN with CAUTRUCTHUCTHICOBAN {
       ngoaiHinhFramePartSS04 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS040?.getSpriteAnimation?.frames ?? [];
       ngoaiHinhFramePartSS05 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS050?.getSpriteAnimation?.frames ?? [];
       ngoaiHinhFramePartSS06 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS060?.getSpriteAnimation?.frames ?? [];
+      ngoaiHinhFramePartSS07 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS070?.getSpriteAnimation?.frames ?? [];
+      ngoaiHinhFramePartSS08 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS080?.getSpriteAnimation?.frames ?? [];
+      ngoaiHinhFramePartSS09 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS090?.getSpriteAnimation?.frames ?? [];
+      ngoaiHinhFramePartSS10 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS100?.getSpriteAnimation?.frames ?? [];
+
+      ngoaiHinhFramePartSS11 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS110?.getSpriteAnimation?.frames ?? [];
+      ngoaiHinhFramePartSS12 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS120?.getSpriteAnimation?.frames ?? [];
+      ngoaiHinhFramePartSS13 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS130?.getSpriteAnimation?.frames ?? [];
+      ngoaiHinhFramePartSS14 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS140?.getSpriteAnimation?.frames ?? [];
+      ngoaiHinhFramePartSS15 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS150?.getSpriteAnimation?.frames ?? [];
+      ngoaiHinhFramePartSS16 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS160?.getSpriteAnimation?.frames ?? [];
+      ngoaiHinhFramePartSS17 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS170?.getSpriteAnimation?.frames ?? [];
+      ngoaiHinhFramePartSS18 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS180?.getSpriteAnimation?.frames ?? [];
+      ngoaiHinhFramePartSS19 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS190?.getSpriteAnimation?.frames ?? [];
+      ngoaiHinhFramePartSS20 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS200?.getSpriteAnimation?.frames ?? [];
+
+      ngoaiHinhFramePartSS21 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS210?.getSpriteAnimation?.frames ?? [];
+      ngoaiHinhFramePartSS22 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS220?.getSpriteAnimation?.frames ?? [];
+      ngoaiHinhFramePartSS23 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS230?.getSpriteAnimation?.frames ?? [];
+      ngoaiHinhFramePartSS24 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS240?.getSpriteAnimation?.frames ?? [];
+      ngoaiHinhFramePartSS25 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS250?.getSpriteAnimation?.frames ?? [];
     } else if (thuocTinhHinhAnh?.getKichThuocRS050 == true) {
       ngoaiHinhFramePartSS01 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS010?.getSpriteAnimation?.frames ?? [];
       ngoaiHinhFramePartSS02 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS020?.getSpriteAnimation?.frames ?? [];
@@ -337,6 +420,27 @@ class THUOCTINHTAINGUYENCOBAN with CAUTRUCTHUCTHICOBAN {
       ngoaiHinhFramePartSS04 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS040?.getSpriteAnimation?.frames ?? [];
       ngoaiHinhFramePartSS05 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS050?.getSpriteAnimation?.frames ?? [];
       ngoaiHinhFramePartSS06 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS060?.getSpriteAnimation?.frames ?? [];
+      ngoaiHinhFramePartSS07 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS070?.getSpriteAnimation?.frames ?? [];
+      ngoaiHinhFramePartSS08 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS080?.getSpriteAnimation?.frames ?? [];
+      ngoaiHinhFramePartSS09 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS090?.getSpriteAnimation?.frames ?? [];
+      ngoaiHinhFramePartSS10 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS100?.getSpriteAnimation?.frames ?? [];
+
+      ngoaiHinhFramePartSS11 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS110?.getSpriteAnimation?.frames ?? [];
+      ngoaiHinhFramePartSS12 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS120?.getSpriteAnimation?.frames ?? [];
+      ngoaiHinhFramePartSS13 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS130?.getSpriteAnimation?.frames ?? [];
+      ngoaiHinhFramePartSS14 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS140?.getSpriteAnimation?.frames ?? [];
+      ngoaiHinhFramePartSS15 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS150?.getSpriteAnimation?.frames ?? [];
+      ngoaiHinhFramePartSS16 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS160?.getSpriteAnimation?.frames ?? [];
+      ngoaiHinhFramePartSS17 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS170?.getSpriteAnimation?.frames ?? [];
+      ngoaiHinhFramePartSS18 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS180?.getSpriteAnimation?.frames ?? [];
+      ngoaiHinhFramePartSS19 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS190?.getSpriteAnimation?.frames ?? [];
+      ngoaiHinhFramePartSS20 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS200?.getSpriteAnimation?.frames ?? [];
+
+      ngoaiHinhFramePartSS21 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS210?.getSpriteAnimation?.frames ?? [];
+      ngoaiHinhFramePartSS22 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS220?.getSpriteAnimation?.frames ?? [];
+      ngoaiHinhFramePartSS23 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS230?.getSpriteAnimation?.frames ?? [];
+      ngoaiHinhFramePartSS24 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS240?.getSpriteAnimation?.frames ?? [];
+      ngoaiHinhFramePartSS25 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS250?.getSpriteAnimation?.frames ?? [];
     } else if (thuocTinhHinhAnh?.getKichThuocRS100 == true) {
       ngoaiHinhFramePartSS01 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS010?.getSpriteAnimation?.frames ?? [];
       ngoaiHinhFramePartSS02 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS020?.getSpriteAnimation?.frames ?? [];
@@ -344,6 +448,27 @@ class THUOCTINHTAINGUYENCOBAN with CAUTRUCTHUCTHICOBAN {
       ngoaiHinhFramePartSS04 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS040?.getSpriteAnimation?.frames ?? [];
       ngoaiHinhFramePartSS05 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS050?.getSpriteAnimation?.frames ?? [];
       ngoaiHinhFramePartSS06 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS060?.getSpriteAnimation?.frames ?? [];
+      ngoaiHinhFramePartSS07 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS070?.getSpriteAnimation?.frames ?? [];
+      ngoaiHinhFramePartSS08 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS080?.getSpriteAnimation?.frames ?? [];
+      ngoaiHinhFramePartSS09 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS090?.getSpriteAnimation?.frames ?? [];
+      ngoaiHinhFramePartSS10 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS100?.getSpriteAnimation?.frames ?? [];
+
+      ngoaiHinhFramePartSS11 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS110?.getSpriteAnimation?.frames ?? [];
+      ngoaiHinhFramePartSS12 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS120?.getSpriteAnimation?.frames ?? [];
+      ngoaiHinhFramePartSS13 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS130?.getSpriteAnimation?.frames ?? [];
+      ngoaiHinhFramePartSS14 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS140?.getSpriteAnimation?.frames ?? [];
+      ngoaiHinhFramePartSS15 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS150?.getSpriteAnimation?.frames ?? [];
+      ngoaiHinhFramePartSS16 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS160?.getSpriteAnimation?.frames ?? [];
+      ngoaiHinhFramePartSS17 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS170?.getSpriteAnimation?.frames ?? [];
+      ngoaiHinhFramePartSS18 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS180?.getSpriteAnimation?.frames ?? [];
+      ngoaiHinhFramePartSS19 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS190?.getSpriteAnimation?.frames ?? [];
+      ngoaiHinhFramePartSS20 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS200?.getSpriteAnimation?.frames ?? [];
+
+      ngoaiHinhFramePartSS21 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS210?.getSpriteAnimation?.frames ?? [];
+      ngoaiHinhFramePartSS22 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS220?.getSpriteAnimation?.frames ?? [];
+      ngoaiHinhFramePartSS23 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS230?.getSpriteAnimation?.frames ?? [];
+      ngoaiHinhFramePartSS24 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS240?.getSpriteAnimation?.frames ?? [];
+      ngoaiHinhFramePartSS25 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS250?.getSpriteAnimation?.frames ?? [];
     }
 
     if (ngoaiHinhFramePartSS01.isNotEmpty == true) {
@@ -364,6 +489,63 @@ class THUOCTINHTAINGUYENCOBAN with CAUTRUCTHUCTHICOBAN {
     if (ngoaiHinhFramePartSS06.isNotEmpty == true) {
       ngoaiHinhFrames.addAll(ngoaiHinhFramePartSS06);
     }
+    if (ngoaiHinhFramePartSS07.isNotEmpty == true) {
+      ngoaiHinhFrames.addAll(ngoaiHinhFramePartSS07);
+    }
+    if (ngoaiHinhFramePartSS08.isNotEmpty == true) {
+      ngoaiHinhFrames.addAll(ngoaiHinhFramePartSS08);
+    }
+    if (ngoaiHinhFramePartSS09.isNotEmpty == true) {
+      ngoaiHinhFrames.addAll(ngoaiHinhFramePartSS09);
+    }
+    if (ngoaiHinhFramePartSS10.isNotEmpty == true) {
+      ngoaiHinhFrames.addAll(ngoaiHinhFramePartSS10);
+    }
+    if (ngoaiHinhFramePartSS11.isNotEmpty == true) {
+      ngoaiHinhFrames.addAll(ngoaiHinhFramePartSS11);
+    }
+    if (ngoaiHinhFramePartSS12.isNotEmpty == true) {
+      ngoaiHinhFrames.addAll(ngoaiHinhFramePartSS12);
+    }
+    if (ngoaiHinhFramePartSS13.isNotEmpty == true) {
+      ngoaiHinhFrames.addAll(ngoaiHinhFramePartSS13);
+    }
+    if (ngoaiHinhFramePartSS14.isNotEmpty == true) {
+      ngoaiHinhFrames.addAll(ngoaiHinhFramePartSS14);
+    }
+    if (ngoaiHinhFramePartSS15.isNotEmpty == true) {
+      ngoaiHinhFrames.addAll(ngoaiHinhFramePartSS15);
+    }
+    if (ngoaiHinhFramePartSS16.isNotEmpty == true) {
+      ngoaiHinhFrames.addAll(ngoaiHinhFramePartSS16);
+    }
+    if (ngoaiHinhFramePartSS17.isNotEmpty == true) {
+      ngoaiHinhFrames.addAll(ngoaiHinhFramePartSS17);
+    }
+    if (ngoaiHinhFramePartSS18.isNotEmpty == true) {
+      ngoaiHinhFrames.addAll(ngoaiHinhFramePartSS18);
+    }
+    if (ngoaiHinhFramePartSS19.isNotEmpty == true) {
+      ngoaiHinhFrames.addAll(ngoaiHinhFramePartSS19);
+    }
+    if (ngoaiHinhFramePartSS20.isNotEmpty == true) {
+      ngoaiHinhFrames.addAll(ngoaiHinhFramePartSS20);
+    }
+    if (ngoaiHinhFramePartSS21.isNotEmpty == true) {
+      ngoaiHinhFrames.addAll(ngoaiHinhFramePartSS21);
+    }
+    if (ngoaiHinhFramePartSS22.isNotEmpty == true) {
+      ngoaiHinhFrames.addAll(ngoaiHinhFramePartSS22);
+    }
+    if (ngoaiHinhFramePartSS23.isNotEmpty == true) {
+      ngoaiHinhFrames.addAll(ngoaiHinhFramePartSS23);
+    }
+    if (ngoaiHinhFramePartSS24.isNotEmpty == true) {
+      ngoaiHinhFrames.addAll(ngoaiHinhFramePartSS24);
+    }
+    if (ngoaiHinhFramePartSS25.isNotEmpty == true) {
+      ngoaiHinhFrames.addAll(ngoaiHinhFramePartSS25);
+    }
 
     if (ngoaiHinhFrames.isNotEmpty == true) {
       SpriteAnimation spriteAnimation = SpriteAnimation(ngoaiHinhFrames);
@@ -377,6 +559,27 @@ class THUOCTINHTAINGUYENCOBAN with CAUTRUCTHUCTHICOBAN {
         thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS040?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
         thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS050?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
         thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS060?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS070?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS080?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS090?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS100?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS110?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS120?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS130?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS140?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS150?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS160?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS170?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS180?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS190?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS200?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS210?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS220?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS230?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS240?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS250?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
       } else if (thuocTinhHinhAnh?.getKichThuocRS050 == true) {
         thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050?.onVoidCaiDatSpriteAnimation(value: spriteAnimation, caiDatUuTien: true);
 
@@ -386,6 +589,27 @@ class THUOCTINHTAINGUYENCOBAN with CAUTRUCTHUCTHICOBAN {
         thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS040?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
         thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS050?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
         thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS060?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS070?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS080?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS090?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS100?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS110?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS120?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS130?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS140?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS150?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS160?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS170?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS180?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS190?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS200?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS210?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS220?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS230?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS240?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS250?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
       } else if (thuocTinhHinhAnh?.getKichThuocRS100 == true) {
         thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100?.onVoidCaiDatSpriteAnimation(value: spriteAnimation, caiDatUuTien: true);
 
@@ -395,23 +619,35 @@ class THUOCTINHTAINGUYENCOBAN with CAUTRUCTHUCTHICOBAN {
         thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS040?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
         thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS050?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
         thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS060?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS070?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS080?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS090?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS100?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS110?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS120?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS130?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS140?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS150?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS160?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS170?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS180?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS190?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS200?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS210?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS220?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS230?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS240?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS250?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
       }
 
       if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100?.getSpriteAnimation?.frames.isNotEmpty == true) {
-        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinh?.onVoidCaiDatSpriteAnimation(
-          value: thuocTinhHinhAnh.getDonViHinhAnhSpriteNgoaiHinhRS100?.getSpriteAnimation,
-          caiDatUuTien: true,
-        );
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinh?.onVoidCaiDatSpriteAnimation(value: thuocTinhHinhAnh.getDonViHinhAnhSpriteNgoaiHinhRS100?.getSpriteAnimation, caiDatUuTien: true);
       } else if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050?.getSpriteAnimation?.frames.isNotEmpty == true) {
-        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinh?.onVoidCaiDatSpriteAnimation(
-          value: thuocTinhHinhAnh.getDonViHinhAnhSpriteNgoaiHinhRS050?.getSpriteAnimation,
-          caiDatUuTien: true,
-        );
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinh?.onVoidCaiDatSpriteAnimation(value: thuocTinhHinhAnh.getDonViHinhAnhSpriteNgoaiHinhRS050?.getSpriteAnimation, caiDatUuTien: true);
       } else if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025?.getSpriteAnimation?.frames.isNotEmpty == true) {
-        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinh?.onVoidCaiDatSpriteAnimation(
-          value: thuocTinhHinhAnh.getDonViHinhAnhSpriteNgoaiHinhRS025?.getSpriteAnimation,
-          caiDatUuTien: true,
-        );
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinh?.onVoidCaiDatSpriteAnimation(value: thuocTinhHinhAnh.getDonViHinhAnhSpriteNgoaiHinhRS025?.getSpriteAnimation, caiDatUuTien: true);
       }
     }
 
@@ -886,6 +1122,1507 @@ class THUOCTINHTAINGUYENCOBAN with CAUTRUCTHUCTHICOBAN {
           .catchError((error) {
             if (kDebugMode) {
               String message = 'Truy Xuất Tài Nguyên Hình Ảnh [SpriteSheet - PartSS06] Không Thành Công: $nguonSpriteSheet';
+              throw (Exception(message));
+            }
+          });
+    }
+
+    ///
+    return;
+  }
+
+  /// -----
+  /// -----
+  /// TODO: Tải Tài Nguyên Hình Ảnh Ngoại Hình Part SS01
+  /// -----
+  /// -----
+  Future<void> onTaiTaiNguyenHinhAnhNgoaiHinhPartSS07({required THUOCTINHHINHANHCOBAN? thuocTinhHinhAnh}) async {
+    /// -----
+    /// TODO:
+    /// -----
+    int tongSoFrame = 0;
+    int soFrameTrenHang = 0;
+    double chieuRongFrame = 0;
+    double chieuCaoFrame = 0;
+    String? nguonSpriteSheet;
+
+    ///
+    if (thuocTinhHinhAnh?.getKichThuocRS025 == true) {
+      tongSoFrame = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS070?.getTongSoFrame ?? 0;
+      soFrameTrenHang = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS070?.getTongSoFrameTrenHang ?? 0;
+      chieuRongFrame = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS070?.getChieuRongFrame ?? 0;
+      chieuCaoFrame = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS070?.getChieuCaoFrame ?? 0;
+      nguonSpriteSheet = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS070?.getNguonHinhAnh;
+    } else if (thuocTinhHinhAnh?.getKichThuocRS050 == true) {
+      tongSoFrame = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS070?.getTongSoFrame ?? 0;
+      soFrameTrenHang = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS070?.getTongSoFrameTrenHang ?? 0;
+      chieuRongFrame = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS070?.getChieuRongFrame ?? 0;
+      chieuCaoFrame = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS070?.getChieuCaoFrame ?? 0;
+      nguonSpriteSheet = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS070?.getNguonHinhAnh;
+    } else if (thuocTinhHinhAnh?.getKichThuocRS100 == true) {
+      tongSoFrame = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS070?.getTongSoFrame ?? 0;
+      soFrameTrenHang = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS070?.getTongSoFrameTrenHang ?? 0;
+      chieuRongFrame = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS070?.getChieuRongFrame ?? 0;
+      chieuCaoFrame = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS070?.getChieuCaoFrame ?? 0;
+      nguonSpriteSheet = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS070?.getNguonHinhAnh;
+    }
+
+    /// -----
+    /// TODO: Tải Tài Nguyên Hình Ảnh
+    /// -----
+    if (nguonSpriteSheet != null && nguonSpriteSheet.isNotEmpty == true) {
+      await getTaiHinhAnh
+          ?.load(nguonSpriteSheet)
+          .then((spriteSheet) async {
+            /// -----
+            /// TODO: Init spriteAnimation
+            /// -----
+            SpriteAnimation spriteAnimation = SpriteAnimation.fromFrameData(
+              spriteSheet,
+              SpriteAnimationData.sequenced(
+                amount: tongSoFrame, // Số frame trong spriteSheet
+                textureSize: Vector2(chieuRongFrame, chieuCaoFrame), // Kích thước mỗi frame
+                amountPerRow: soFrameTrenHang,
+                stepTime: 0.035, // Tốc độ animation
+              ),
+            );
+
+            /// -----
+            /// TODO:
+            /// -----
+            if (thuocTinhHinhAnh?.getKichThuocRS025 == true) {
+              thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS070?.onVoidCaiDatSpriteAnimation(value: spriteAnimation.clone(), caiDatUuTien: true);
+            } else if (thuocTinhHinhAnh?.getKichThuocRS050 == true) {
+              thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS070?.onVoidCaiDatSpriteAnimation(value: spriteAnimation.clone(), caiDatUuTien: true);
+            } else if (thuocTinhHinhAnh?.getKichThuocRS100 == true) {
+              thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS070?.onVoidCaiDatSpriteAnimation(value: spriteAnimation.clone(), caiDatUuTien: true);
+            }
+          })
+          .catchError((error) {
+            if (kDebugMode) {
+              String message = 'Truy Xuất Tài Nguyên Hình Ảnh [SpriteSheet - PartSS07] Không Thành Công: $nguonSpriteSheet';
+              throw (Exception(message));
+            }
+          });
+    }
+
+    ///
+    return;
+  }
+
+  /// -----
+  /// -----
+  /// TODO: Tải Tài Nguyên Hình Ảnh Ngoại Hình Part SS01
+  /// -----
+  /// -----
+  Future<void> onTaiTaiNguyenHinhAnhNgoaiHinhPartSS08({required THUOCTINHHINHANHCOBAN? thuocTinhHinhAnh}) async {
+    /// -----
+    /// TODO:
+    /// -----
+    int tongSoFrame = 0;
+    int soFrameTrenHang = 0;
+    double chieuRongFrame = 0;
+    double chieuCaoFrame = 0;
+    String? nguonSpriteSheet;
+
+    ///
+    if (thuocTinhHinhAnh?.getKichThuocRS025 == true) {
+      tongSoFrame = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS080?.getTongSoFrame ?? 0;
+      soFrameTrenHang = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS080?.getTongSoFrameTrenHang ?? 0;
+      chieuRongFrame = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS080?.getChieuRongFrame ?? 0;
+      chieuCaoFrame = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS080?.getChieuCaoFrame ?? 0;
+      nguonSpriteSheet = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS080?.getNguonHinhAnh;
+    } else if (thuocTinhHinhAnh?.getKichThuocRS050 == true) {
+      tongSoFrame = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS080?.getTongSoFrame ?? 0;
+      soFrameTrenHang = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS080?.getTongSoFrameTrenHang ?? 0;
+      chieuRongFrame = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS080?.getChieuRongFrame ?? 0;
+      chieuCaoFrame = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS080?.getChieuCaoFrame ?? 0;
+      nguonSpriteSheet = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS080?.getNguonHinhAnh;
+    } else if (thuocTinhHinhAnh?.getKichThuocRS100 == true) {
+      tongSoFrame = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS080?.getTongSoFrame ?? 0;
+      soFrameTrenHang = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS080?.getTongSoFrameTrenHang ?? 0;
+      chieuRongFrame = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS080?.getChieuRongFrame ?? 0;
+      chieuCaoFrame = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS080?.getChieuCaoFrame ?? 0;
+      nguonSpriteSheet = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS080?.getNguonHinhAnh;
+    }
+
+    /// -----
+    /// TODO: Tải Tài Nguyên Hình Ảnh
+    /// -----
+    if (nguonSpriteSheet != null && nguonSpriteSheet.isNotEmpty == true) {
+      await getTaiHinhAnh
+          ?.load(nguonSpriteSheet)
+          .then((spriteSheet) async {
+            /// -----
+            /// TODO: Init spriteAnimation
+            /// -----
+            SpriteAnimation spriteAnimation = SpriteAnimation.fromFrameData(
+              spriteSheet,
+              SpriteAnimationData.sequenced(
+                amount: tongSoFrame, // Số frame trong spriteSheet
+                textureSize: Vector2(chieuRongFrame, chieuCaoFrame), // Kích thước mỗi frame
+                amountPerRow: soFrameTrenHang,
+                stepTime: 0.035, // Tốc độ animation
+              ),
+            );
+
+            /// -----
+            /// TODO:
+            /// -----
+            if (thuocTinhHinhAnh?.getKichThuocRS025 == true) {
+              thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS080?.onVoidCaiDatSpriteAnimation(value: spriteAnimation.clone(), caiDatUuTien: true);
+            } else if (thuocTinhHinhAnh?.getKichThuocRS050 == true) {
+              thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS080?.onVoidCaiDatSpriteAnimation(value: spriteAnimation.clone(), caiDatUuTien: true);
+            } else if (thuocTinhHinhAnh?.getKichThuocRS100 == true) {
+              thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS080?.onVoidCaiDatSpriteAnimation(value: spriteAnimation.clone(), caiDatUuTien: true);
+            }
+          })
+          .catchError((error) {
+            if (kDebugMode) {
+              String message = 'Truy Xuất Tài Nguyên Hình Ảnh [SpriteSheet - PartSS08] Không Thành Công: $nguonSpriteSheet';
+              throw (Exception(message));
+            }
+          });
+    }
+
+    ///
+    return;
+  }
+
+  /// -----
+  /// -----
+  /// TODO: Tải Tài Nguyên Hình Ảnh Ngoại Hình Part SS01
+  /// -----
+  /// -----
+  Future<void> onTaiTaiNguyenHinhAnhNgoaiHinhPartSS09({required THUOCTINHHINHANHCOBAN? thuocTinhHinhAnh}) async {
+    /// -----
+    /// TODO:
+    /// -----
+    int tongSoFrame = 0;
+    int soFrameTrenHang = 0;
+    double chieuRongFrame = 0;
+    double chieuCaoFrame = 0;
+    String? nguonSpriteSheet;
+
+    ///
+    if (thuocTinhHinhAnh?.getKichThuocRS025 == true) {
+      tongSoFrame = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS090?.getTongSoFrame ?? 0;
+      soFrameTrenHang = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS090?.getTongSoFrameTrenHang ?? 0;
+      chieuRongFrame = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS090?.getChieuRongFrame ?? 0;
+      chieuCaoFrame = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS090?.getChieuCaoFrame ?? 0;
+      nguonSpriteSheet = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS090?.getNguonHinhAnh;
+    } else if (thuocTinhHinhAnh?.getKichThuocRS050 == true) {
+      tongSoFrame = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS090?.getTongSoFrame ?? 0;
+      soFrameTrenHang = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS090?.getTongSoFrameTrenHang ?? 0;
+      chieuRongFrame = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS090?.getChieuRongFrame ?? 0;
+      chieuCaoFrame = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS090?.getChieuCaoFrame ?? 0;
+      nguonSpriteSheet = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS090?.getNguonHinhAnh;
+    } else if (thuocTinhHinhAnh?.getKichThuocRS100 == true) {
+      tongSoFrame = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS090?.getTongSoFrame ?? 0;
+      soFrameTrenHang = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS090?.getTongSoFrameTrenHang ?? 0;
+      chieuRongFrame = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS090?.getChieuRongFrame ?? 0;
+      chieuCaoFrame = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS090?.getChieuCaoFrame ?? 0;
+      nguonSpriteSheet = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS090?.getNguonHinhAnh;
+    }
+
+    /// -----
+    /// TODO: Tải Tài Nguyên Hình Ảnh
+    /// -----
+    if (nguonSpriteSheet != null && nguonSpriteSheet.isNotEmpty == true) {
+      await getTaiHinhAnh
+          ?.load(nguonSpriteSheet)
+          .then((spriteSheet) async {
+            /// -----
+            /// TODO: Init spriteAnimation
+            /// -----
+            SpriteAnimation spriteAnimation = SpriteAnimation.fromFrameData(
+              spriteSheet,
+              SpriteAnimationData.sequenced(
+                amount: tongSoFrame, // Số frame trong spriteSheet
+                textureSize: Vector2(chieuRongFrame, chieuCaoFrame), // Kích thước mỗi frame
+                amountPerRow: soFrameTrenHang,
+                stepTime: 0.035, // Tốc độ animation
+              ),
+            );
+
+            /// -----
+            /// TODO:
+            /// -----
+            if (thuocTinhHinhAnh?.getKichThuocRS025 == true) {
+              thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS090?.onVoidCaiDatSpriteAnimation(value: spriteAnimation.clone(), caiDatUuTien: true);
+            } else if (thuocTinhHinhAnh?.getKichThuocRS050 == true) {
+              thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS090?.onVoidCaiDatSpriteAnimation(value: spriteAnimation.clone(), caiDatUuTien: true);
+            } else if (thuocTinhHinhAnh?.getKichThuocRS100 == true) {
+              thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS090?.onVoidCaiDatSpriteAnimation(value: spriteAnimation.clone(), caiDatUuTien: true);
+            }
+          })
+          .catchError((error) {
+            if (kDebugMode) {
+              String message = 'Truy Xuất Tài Nguyên Hình Ảnh [SpriteSheet - PartSS09] Không Thành Công: $nguonSpriteSheet';
+              throw (Exception(message));
+            }
+          });
+    }
+
+    ///
+    return;
+  }
+
+  /// -----
+  /// -----
+  /// TODO: Tải Tài Nguyên Hình Ảnh Ngoại Hình Part SS01
+  /// -----
+  /// -----
+  Future<void> onTaiTaiNguyenHinhAnhNgoaiHinhPartSS10({required THUOCTINHHINHANHCOBAN? thuocTinhHinhAnh}) async {
+    /// -----
+    /// TODO:
+    /// -----
+    int tongSoFrame = 0;
+    int soFrameTrenHang = 0;
+    double chieuRongFrame = 0;
+    double chieuCaoFrame = 0;
+    String? nguonSpriteSheet;
+
+    ///
+    if (thuocTinhHinhAnh?.getKichThuocRS025 == true) {
+      tongSoFrame = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS100?.getTongSoFrame ?? 0;
+      soFrameTrenHang = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS100?.getTongSoFrameTrenHang ?? 0;
+      chieuRongFrame = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS100?.getChieuRongFrame ?? 0;
+      chieuCaoFrame = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS100?.getChieuCaoFrame ?? 0;
+      nguonSpriteSheet = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS100?.getNguonHinhAnh;
+    } else if (thuocTinhHinhAnh?.getKichThuocRS050 == true) {
+      tongSoFrame = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS100?.getTongSoFrame ?? 0;
+      soFrameTrenHang = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS100?.getTongSoFrameTrenHang ?? 0;
+      chieuRongFrame = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS100?.getChieuRongFrame ?? 0;
+      chieuCaoFrame = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS100?.getChieuCaoFrame ?? 0;
+      nguonSpriteSheet = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS100?.getNguonHinhAnh;
+    } else if (thuocTinhHinhAnh?.getKichThuocRS100 == true) {
+      tongSoFrame = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS100?.getTongSoFrame ?? 0;
+      soFrameTrenHang = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS100?.getTongSoFrameTrenHang ?? 0;
+      chieuRongFrame = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS100?.getChieuRongFrame ?? 0;
+      chieuCaoFrame = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS100?.getChieuCaoFrame ?? 0;
+      nguonSpriteSheet = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS100?.getNguonHinhAnh;
+    }
+
+    /// -----
+    /// TODO: Tải Tài Nguyên Hình Ảnh
+    /// -----
+    if (nguonSpriteSheet != null && nguonSpriteSheet.isNotEmpty == true) {
+      await getTaiHinhAnh
+          ?.load(nguonSpriteSheet)
+          .then((spriteSheet) async {
+            /// -----
+            /// TODO: Init spriteAnimation
+            /// -----
+            SpriteAnimation spriteAnimation = SpriteAnimation.fromFrameData(
+              spriteSheet,
+              SpriteAnimationData.sequenced(
+                amount: tongSoFrame, // Số frame trong spriteSheet
+                textureSize: Vector2(chieuRongFrame, chieuCaoFrame), // Kích thước mỗi frame
+                amountPerRow: soFrameTrenHang,
+                stepTime: 0.035, // Tốc độ animation
+              ),
+            );
+
+            /// -----
+            /// TODO:
+            /// -----
+            if (thuocTinhHinhAnh?.getKichThuocRS025 == true) {
+              thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS100?.onVoidCaiDatSpriteAnimation(value: spriteAnimation.clone(), caiDatUuTien: true);
+            } else if (thuocTinhHinhAnh?.getKichThuocRS050 == true) {
+              thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS100?.onVoidCaiDatSpriteAnimation(value: spriteAnimation.clone(), caiDatUuTien: true);
+            } else if (thuocTinhHinhAnh?.getKichThuocRS100 == true) {
+              thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS100?.onVoidCaiDatSpriteAnimation(value: spriteAnimation.clone(), caiDatUuTien: true);
+            }
+          })
+          .catchError((error) {
+            if (kDebugMode) {
+              String message = 'Truy Xuất Tài Nguyên Hình Ảnh [SpriteSheet - PartSS10] Không Thành Công: $nguonSpriteSheet';
+              throw (Exception(message));
+            }
+          });
+    }
+
+    ///
+    return;
+  }
+
+  /// -----
+  /// -----
+  /// TODO: Tải Tài Nguyên Hình Ảnh Ngoại Hình Part SS01
+  /// -----
+  /// -----
+  Future<void> onTaiTaiNguyenHinhAnhNgoaiHinhPartSS11({required THUOCTINHHINHANHCOBAN? thuocTinhHinhAnh}) async {
+    /// -----
+    /// TODO:
+    /// -----
+    int tongSoFrame = 0;
+    int soFrameTrenHang = 0;
+    double chieuRongFrame = 0;
+    double chieuCaoFrame = 0;
+    String? nguonSpriteSheet;
+
+    ///
+    if (thuocTinhHinhAnh?.getKichThuocRS025 == true) {
+      tongSoFrame = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS110?.getTongSoFrame ?? 0;
+      soFrameTrenHang = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS110?.getTongSoFrameTrenHang ?? 0;
+      chieuRongFrame = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS110?.getChieuRongFrame ?? 0;
+      chieuCaoFrame = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS110?.getChieuCaoFrame ?? 0;
+      nguonSpriteSheet = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS110?.getNguonHinhAnh;
+    } else if (thuocTinhHinhAnh?.getKichThuocRS050 == true) {
+      tongSoFrame = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS110?.getTongSoFrame ?? 0;
+      soFrameTrenHang = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS110?.getTongSoFrameTrenHang ?? 0;
+      chieuRongFrame = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS110?.getChieuRongFrame ?? 0;
+      chieuCaoFrame = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS110?.getChieuCaoFrame ?? 0;
+      nguonSpriteSheet = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS110?.getNguonHinhAnh;
+    } else if (thuocTinhHinhAnh?.getKichThuocRS100 == true) {
+      tongSoFrame = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS110?.getTongSoFrame ?? 0;
+      soFrameTrenHang = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS110?.getTongSoFrameTrenHang ?? 0;
+      chieuRongFrame = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS110?.getChieuRongFrame ?? 0;
+      chieuCaoFrame = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS110?.getChieuCaoFrame ?? 0;
+      nguonSpriteSheet = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS110?.getNguonHinhAnh;
+    }
+
+    /// -----
+    /// TODO: Tải Tài Nguyên Hình Ảnh
+    /// -----
+    if (nguonSpriteSheet != null && nguonSpriteSheet.isNotEmpty == true) {
+      await getTaiHinhAnh
+          ?.load(nguonSpriteSheet)
+          .then((spriteSheet) async {
+            /// -----
+            /// TODO: Init spriteAnimation
+            /// -----
+            SpriteAnimation spriteAnimation = SpriteAnimation.fromFrameData(
+              spriteSheet,
+              SpriteAnimationData.sequenced(
+                amount: tongSoFrame, // Số frame trong spriteSheet
+                textureSize: Vector2(chieuRongFrame, chieuCaoFrame), // Kích thước mỗi frame
+                amountPerRow: soFrameTrenHang,
+                stepTime: 0.035, // Tốc độ animation
+              ),
+            );
+
+            /// -----
+            /// TODO:
+            /// -----
+            if (thuocTinhHinhAnh?.getKichThuocRS025 == true) {
+              thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS110?.onVoidCaiDatSpriteAnimation(value: spriteAnimation.clone(), caiDatUuTien: true);
+            } else if (thuocTinhHinhAnh?.getKichThuocRS050 == true) {
+              thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS110?.onVoidCaiDatSpriteAnimation(value: spriteAnimation.clone(), caiDatUuTien: true);
+            } else if (thuocTinhHinhAnh?.getKichThuocRS100 == true) {
+              thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS110?.onVoidCaiDatSpriteAnimation(value: spriteAnimation.clone(), caiDatUuTien: true);
+            }
+          })
+          .catchError((error) {
+            if (kDebugMode) {
+              String message = 'Truy Xuất Tài Nguyên Hình Ảnh [SpriteSheet - PartSS11] Không Thành Công: $nguonSpriteSheet';
+              throw (Exception(message));
+            }
+          });
+    }
+
+    ///
+    return;
+  }
+
+  /// -----
+  /// -----
+  /// TODO: Tải Tài Nguyên Hình Ảnh Ngoại Hình Part SS01
+  /// -----
+  /// -----
+  Future<void> onTaiTaiNguyenHinhAnhNgoaiHinhPartSS12({required THUOCTINHHINHANHCOBAN? thuocTinhHinhAnh}) async {
+    /// -----
+    /// TODO:
+    /// -----
+    int tongSoFrame = 0;
+    int soFrameTrenHang = 0;
+    double chieuRongFrame = 0;
+    double chieuCaoFrame = 0;
+    String? nguonSpriteSheet;
+
+    ///
+    if (thuocTinhHinhAnh?.getKichThuocRS025 == true) {
+      tongSoFrame = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS120?.getTongSoFrame ?? 0;
+      soFrameTrenHang = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS120?.getTongSoFrameTrenHang ?? 0;
+      chieuRongFrame = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS120?.getChieuRongFrame ?? 0;
+      chieuCaoFrame = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS120?.getChieuCaoFrame ?? 0;
+      nguonSpriteSheet = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS120?.getNguonHinhAnh;
+    } else if (thuocTinhHinhAnh?.getKichThuocRS050 == true) {
+      tongSoFrame = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS120?.getTongSoFrame ?? 0;
+      soFrameTrenHang = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS120?.getTongSoFrameTrenHang ?? 0;
+      chieuRongFrame = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS120?.getChieuRongFrame ?? 0;
+      chieuCaoFrame = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS120?.getChieuCaoFrame ?? 0;
+      nguonSpriteSheet = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS120?.getNguonHinhAnh;
+    } else if (thuocTinhHinhAnh?.getKichThuocRS100 == true) {
+      tongSoFrame = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS120?.getTongSoFrame ?? 0;
+      soFrameTrenHang = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS120?.getTongSoFrameTrenHang ?? 0;
+      chieuRongFrame = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS120?.getChieuRongFrame ?? 0;
+      chieuCaoFrame = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS120?.getChieuCaoFrame ?? 0;
+      nguonSpriteSheet = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS120?.getNguonHinhAnh;
+    }
+
+    /// -----
+    /// TODO: Tải Tài Nguyên Hình Ảnh
+    /// -----
+    if (nguonSpriteSheet != null && nguonSpriteSheet.isNotEmpty == true) {
+      await getTaiHinhAnh
+          ?.load(nguonSpriteSheet)
+          .then((spriteSheet) async {
+            /// -----
+            /// TODO: Init spriteAnimation
+            /// -----
+            SpriteAnimation spriteAnimation = SpriteAnimation.fromFrameData(
+              spriteSheet,
+              SpriteAnimationData.sequenced(
+                amount: tongSoFrame, // Số frame trong spriteSheet
+                textureSize: Vector2(chieuRongFrame, chieuCaoFrame), // Kích thước mỗi frame
+                amountPerRow: soFrameTrenHang,
+                stepTime: 0.035, // Tốc độ animation
+              ),
+            );
+
+            /// -----
+            /// TODO:
+            /// -----
+            if (thuocTinhHinhAnh?.getKichThuocRS025 == true) {
+              thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS120?.onVoidCaiDatSpriteAnimation(value: spriteAnimation.clone(), caiDatUuTien: true);
+            } else if (thuocTinhHinhAnh?.getKichThuocRS050 == true) {
+              thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS120?.onVoidCaiDatSpriteAnimation(value: spriteAnimation.clone(), caiDatUuTien: true);
+            } else if (thuocTinhHinhAnh?.getKichThuocRS100 == true) {
+              thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS120?.onVoidCaiDatSpriteAnimation(value: spriteAnimation.clone(), caiDatUuTien: true);
+            }
+          })
+          .catchError((error) {
+            if (kDebugMode) {
+              String message = 'Truy Xuất Tài Nguyên Hình Ảnh [SpriteSheet - PartSS12] Không Thành Công: $nguonSpriteSheet';
+              throw (Exception(message));
+            }
+          });
+    }
+
+    ///
+    return;
+  }
+
+  /// -----
+  /// -----
+  /// TODO: Tải Tài Nguyên Hình Ảnh Ngoại Hình Part SS01
+  /// -----
+  /// -----
+  Future<void> onTaiTaiNguyenHinhAnhNgoaiHinhPartSS13({required THUOCTINHHINHANHCOBAN? thuocTinhHinhAnh}) async {
+    /// -----
+    /// TODO:
+    /// -----
+    int tongSoFrame = 0;
+    int soFrameTrenHang = 0;
+    double chieuRongFrame = 0;
+    double chieuCaoFrame = 0;
+    String? nguonSpriteSheet;
+
+    ///
+    if (thuocTinhHinhAnh?.getKichThuocRS025 == true) {
+      tongSoFrame = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS130?.getTongSoFrame ?? 0;
+      soFrameTrenHang = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS130?.getTongSoFrameTrenHang ?? 0;
+      chieuRongFrame = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS130?.getChieuRongFrame ?? 0;
+      chieuCaoFrame = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS130?.getChieuCaoFrame ?? 0;
+      nguonSpriteSheet = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS130?.getNguonHinhAnh;
+    } else if (thuocTinhHinhAnh?.getKichThuocRS050 == true) {
+      tongSoFrame = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS130?.getTongSoFrame ?? 0;
+      soFrameTrenHang = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS130?.getTongSoFrameTrenHang ?? 0;
+      chieuRongFrame = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS130?.getChieuRongFrame ?? 0;
+      chieuCaoFrame = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS130?.getChieuCaoFrame ?? 0;
+      nguonSpriteSheet = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS130?.getNguonHinhAnh;
+    } else if (thuocTinhHinhAnh?.getKichThuocRS100 == true) {
+      tongSoFrame = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS130?.getTongSoFrame ?? 0;
+      soFrameTrenHang = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS130?.getTongSoFrameTrenHang ?? 0;
+      chieuRongFrame = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS130?.getChieuRongFrame ?? 0;
+      chieuCaoFrame = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS130?.getChieuCaoFrame ?? 0;
+      nguonSpriteSheet = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS130?.getNguonHinhAnh;
+    }
+
+    /// -----
+    /// TODO: Tải Tài Nguyên Hình Ảnh
+    /// -----
+    if (nguonSpriteSheet != null && nguonSpriteSheet.isNotEmpty == true) {
+      await getTaiHinhAnh
+          ?.load(nguonSpriteSheet)
+          .then((spriteSheet) async {
+            /// -----
+            /// TODO: Init spriteAnimation
+            /// -----
+            SpriteAnimation spriteAnimation = SpriteAnimation.fromFrameData(
+              spriteSheet,
+              SpriteAnimationData.sequenced(
+                amount: tongSoFrame, // Số frame trong spriteSheet
+                textureSize: Vector2(chieuRongFrame, chieuCaoFrame), // Kích thước mỗi frame
+                amountPerRow: soFrameTrenHang,
+                stepTime: 0.035, // Tốc độ animation
+              ),
+            );
+
+            /// -----
+            /// TODO:
+            /// -----
+            if (thuocTinhHinhAnh?.getKichThuocRS025 == true) {
+              thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS130?.onVoidCaiDatSpriteAnimation(value: spriteAnimation.clone(), caiDatUuTien: true);
+            } else if (thuocTinhHinhAnh?.getKichThuocRS050 == true) {
+              thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS130?.onVoidCaiDatSpriteAnimation(value: spriteAnimation.clone(), caiDatUuTien: true);
+            } else if (thuocTinhHinhAnh?.getKichThuocRS100 == true) {
+              thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS130?.onVoidCaiDatSpriteAnimation(value: spriteAnimation.clone(), caiDatUuTien: true);
+            }
+          })
+          .catchError((error) {
+            if (kDebugMode) {
+              String message = 'Truy Xuất Tài Nguyên Hình Ảnh [SpriteSheet - PartSS13] Không Thành Công: $nguonSpriteSheet';
+              throw (Exception(message));
+            }
+          });
+    }
+
+    ///
+    return;
+  }
+
+  /// -----
+  /// -----
+  /// TODO: Tải Tài Nguyên Hình Ảnh Ngoại Hình Part SS01
+  /// -----
+  /// -----
+  Future<void> onTaiTaiNguyenHinhAnhNgoaiHinhPartSS14({required THUOCTINHHINHANHCOBAN? thuocTinhHinhAnh}) async {
+    /// -----
+    /// TODO:
+    /// -----
+    int tongSoFrame = 0;
+    int soFrameTrenHang = 0;
+    double chieuRongFrame = 0;
+    double chieuCaoFrame = 0;
+    String? nguonSpriteSheet;
+
+    ///
+    if (thuocTinhHinhAnh?.getKichThuocRS025 == true) {
+      tongSoFrame = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS140?.getTongSoFrame ?? 0;
+      soFrameTrenHang = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS140?.getTongSoFrameTrenHang ?? 0;
+      chieuRongFrame = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS140?.getChieuRongFrame ?? 0;
+      chieuCaoFrame = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS140?.getChieuCaoFrame ?? 0;
+      nguonSpriteSheet = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS140?.getNguonHinhAnh;
+    } else if (thuocTinhHinhAnh?.getKichThuocRS050 == true) {
+      tongSoFrame = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS140?.getTongSoFrame ?? 0;
+      soFrameTrenHang = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS140?.getTongSoFrameTrenHang ?? 0;
+      chieuRongFrame = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS140?.getChieuRongFrame ?? 0;
+      chieuCaoFrame = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS140?.getChieuCaoFrame ?? 0;
+      nguonSpriteSheet = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS140?.getNguonHinhAnh;
+    } else if (thuocTinhHinhAnh?.getKichThuocRS100 == true) {
+      tongSoFrame = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS140?.getTongSoFrame ?? 0;
+      soFrameTrenHang = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS140?.getTongSoFrameTrenHang ?? 0;
+      chieuRongFrame = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS140?.getChieuRongFrame ?? 0;
+      chieuCaoFrame = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS140?.getChieuCaoFrame ?? 0;
+      nguonSpriteSheet = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS140?.getNguonHinhAnh;
+    }
+
+    /// -----
+    /// TODO: Tải Tài Nguyên Hình Ảnh
+    /// -----
+    if (nguonSpriteSheet != null && nguonSpriteSheet.isNotEmpty == true) {
+      await getTaiHinhAnh
+          ?.load(nguonSpriteSheet)
+          .then((spriteSheet) async {
+            /// -----
+            /// TODO: Init spriteAnimation
+            /// -----
+            SpriteAnimation spriteAnimation = SpriteAnimation.fromFrameData(
+              spriteSheet,
+              SpriteAnimationData.sequenced(
+                amount: tongSoFrame, // Số frame trong spriteSheet
+                textureSize: Vector2(chieuRongFrame, chieuCaoFrame), // Kích thước mỗi frame
+                amountPerRow: soFrameTrenHang,
+                stepTime: 0.035, // Tốc độ animation
+              ),
+            );
+
+            /// -----
+            /// TODO:
+            /// -----
+            if (thuocTinhHinhAnh?.getKichThuocRS025 == true) {
+              thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS140?.onVoidCaiDatSpriteAnimation(value: spriteAnimation.clone(), caiDatUuTien: true);
+            } else if (thuocTinhHinhAnh?.getKichThuocRS050 == true) {
+              thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS140?.onVoidCaiDatSpriteAnimation(value: spriteAnimation.clone(), caiDatUuTien: true);
+            } else if (thuocTinhHinhAnh?.getKichThuocRS100 == true) {
+              thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS140?.onVoidCaiDatSpriteAnimation(value: spriteAnimation.clone(), caiDatUuTien: true);
+            }
+          })
+          .catchError((error) {
+            if (kDebugMode) {
+              String message = 'Truy Xuất Tài Nguyên Hình Ảnh [SpriteSheet - PartSS14] Không Thành Công: $nguonSpriteSheet';
+              throw (Exception(message));
+            }
+          });
+    }
+
+    ///
+    return;
+  }
+
+  /// -----
+  /// -----
+  /// TODO: Tải Tài Nguyên Hình Ảnh Ngoại Hình Part SS01
+  /// -----
+  /// -----
+  Future<void> onTaiTaiNguyenHinhAnhNgoaiHinhPartSS15({required THUOCTINHHINHANHCOBAN? thuocTinhHinhAnh}) async {
+    /// -----
+    /// TODO:
+    /// -----
+    int tongSoFrame = 0;
+    int soFrameTrenHang = 0;
+    double chieuRongFrame = 0;
+    double chieuCaoFrame = 0;
+    String? nguonSpriteSheet;
+
+    ///
+    if (thuocTinhHinhAnh?.getKichThuocRS025 == true) {
+      tongSoFrame = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS150?.getTongSoFrame ?? 0;
+      soFrameTrenHang = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS150?.getTongSoFrameTrenHang ?? 0;
+      chieuRongFrame = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS150?.getChieuRongFrame ?? 0;
+      chieuCaoFrame = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS150?.getChieuCaoFrame ?? 0;
+      nguonSpriteSheet = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS150?.getNguonHinhAnh;
+    } else if (thuocTinhHinhAnh?.getKichThuocRS050 == true) {
+      tongSoFrame = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS150?.getTongSoFrame ?? 0;
+      soFrameTrenHang = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS150?.getTongSoFrameTrenHang ?? 0;
+      chieuRongFrame = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS150?.getChieuRongFrame ?? 0;
+      chieuCaoFrame = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS150?.getChieuCaoFrame ?? 0;
+      nguonSpriteSheet = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS150?.getNguonHinhAnh;
+    } else if (thuocTinhHinhAnh?.getKichThuocRS100 == true) {
+      tongSoFrame = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS150?.getTongSoFrame ?? 0;
+      soFrameTrenHang = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS150?.getTongSoFrameTrenHang ?? 0;
+      chieuRongFrame = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS150?.getChieuRongFrame ?? 0;
+      chieuCaoFrame = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS150?.getChieuCaoFrame ?? 0;
+      nguonSpriteSheet = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS150?.getNguonHinhAnh;
+    }
+
+    /// -----
+    /// TODO: Tải Tài Nguyên Hình Ảnh
+    /// -----
+    if (nguonSpriteSheet != null && nguonSpriteSheet.isNotEmpty == true) {
+      await getTaiHinhAnh
+          ?.load(nguonSpriteSheet)
+          .then((spriteSheet) async {
+            /// -----
+            /// TODO: Init spriteAnimation
+            /// -----
+            SpriteAnimation spriteAnimation = SpriteAnimation.fromFrameData(
+              spriteSheet,
+              SpriteAnimationData.sequenced(
+                amount: tongSoFrame, // Số frame trong spriteSheet
+                textureSize: Vector2(chieuRongFrame, chieuCaoFrame), // Kích thước mỗi frame
+                amountPerRow: soFrameTrenHang,
+                stepTime: 0.035, // Tốc độ animation
+              ),
+            );
+
+            /// -----
+            /// TODO:
+            /// -----
+            if (thuocTinhHinhAnh?.getKichThuocRS025 == true) {
+              thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS150?.onVoidCaiDatSpriteAnimation(value: spriteAnimation.clone(), caiDatUuTien: true);
+            } else if (thuocTinhHinhAnh?.getKichThuocRS050 == true) {
+              thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS150?.onVoidCaiDatSpriteAnimation(value: spriteAnimation.clone(), caiDatUuTien: true);
+            } else if (thuocTinhHinhAnh?.getKichThuocRS100 == true) {
+              thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS150?.onVoidCaiDatSpriteAnimation(value: spriteAnimation.clone(), caiDatUuTien: true);
+            }
+          })
+          .catchError((error) {
+            if (kDebugMode) {
+              String message = 'Truy Xuất Tài Nguyên Hình Ảnh [SpriteSheet - PartSS15] Không Thành Công: $nguonSpriteSheet';
+              throw (Exception(message));
+            }
+          });
+    }
+
+    ///
+    return;
+  }
+
+  /// -----
+  /// -----
+  /// TODO: Tải Tài Nguyên Hình Ảnh Ngoại Hình Part SS01
+  /// -----
+  /// -----
+  Future<void> onTaiTaiNguyenHinhAnhNgoaiHinhPartSS16({required THUOCTINHHINHANHCOBAN? thuocTinhHinhAnh}) async {
+    /// -----
+    /// TODO:
+    /// -----
+    int tongSoFrame = 0;
+    int soFrameTrenHang = 0;
+    double chieuRongFrame = 0;
+    double chieuCaoFrame = 0;
+    String? nguonSpriteSheet;
+
+    ///
+    if (thuocTinhHinhAnh?.getKichThuocRS025 == true) {
+      tongSoFrame = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS160?.getTongSoFrame ?? 0;
+      soFrameTrenHang = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS160?.getTongSoFrameTrenHang ?? 0;
+      chieuRongFrame = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS160?.getChieuRongFrame ?? 0;
+      chieuCaoFrame = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS160?.getChieuCaoFrame ?? 0;
+      nguonSpriteSheet = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS160?.getNguonHinhAnh;
+    } else if (thuocTinhHinhAnh?.getKichThuocRS050 == true) {
+      tongSoFrame = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS160?.getTongSoFrame ?? 0;
+      soFrameTrenHang = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS160?.getTongSoFrameTrenHang ?? 0;
+      chieuRongFrame = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS160?.getChieuRongFrame ?? 0;
+      chieuCaoFrame = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS160?.getChieuCaoFrame ?? 0;
+      nguonSpriteSheet = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS160?.getNguonHinhAnh;
+    } else if (thuocTinhHinhAnh?.getKichThuocRS100 == true) {
+      tongSoFrame = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS160?.getTongSoFrame ?? 0;
+      soFrameTrenHang = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS160?.getTongSoFrameTrenHang ?? 0;
+      chieuRongFrame = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS160?.getChieuRongFrame ?? 0;
+      chieuCaoFrame = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS160?.getChieuCaoFrame ?? 0;
+      nguonSpriteSheet = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS160?.getNguonHinhAnh;
+    }
+
+    /// -----
+    /// TODO: Tải Tài Nguyên Hình Ảnh
+    /// -----
+    if (nguonSpriteSheet != null && nguonSpriteSheet.isNotEmpty == true) {
+      await getTaiHinhAnh
+          ?.load(nguonSpriteSheet)
+          .then((spriteSheet) async {
+            /// -----
+            /// TODO: Init spriteAnimation
+            /// -----
+            SpriteAnimation spriteAnimation = SpriteAnimation.fromFrameData(
+              spriteSheet,
+              SpriteAnimationData.sequenced(
+                amount: tongSoFrame, // Số frame trong spriteSheet
+                textureSize: Vector2(chieuRongFrame, chieuCaoFrame), // Kích thước mỗi frame
+                amountPerRow: soFrameTrenHang,
+                stepTime: 0.035, // Tốc độ animation
+              ),
+            );
+
+            /// -----
+            /// TODO:
+            /// -----
+            if (thuocTinhHinhAnh?.getKichThuocRS025 == true) {
+              thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS160?.onVoidCaiDatSpriteAnimation(value: spriteAnimation.clone(), caiDatUuTien: true);
+            } else if (thuocTinhHinhAnh?.getKichThuocRS050 == true) {
+              thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS160?.onVoidCaiDatSpriteAnimation(value: spriteAnimation.clone(), caiDatUuTien: true);
+            } else if (thuocTinhHinhAnh?.getKichThuocRS100 == true) {
+              thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS160?.onVoidCaiDatSpriteAnimation(value: spriteAnimation.clone(), caiDatUuTien: true);
+            }
+          })
+          .catchError((error) {
+            if (kDebugMode) {
+              String message = 'Truy Xuất Tài Nguyên Hình Ảnh [SpriteSheet - PartSS16] Không Thành Công: $nguonSpriteSheet';
+              throw (Exception(message));
+            }
+          });
+    }
+
+    ///
+    return;
+  }
+
+  /// -----
+  /// -----
+  /// TODO: Tải Tài Nguyên Hình Ảnh Ngoại Hình Part SS01
+  /// -----
+  /// -----
+  Future<void> onTaiTaiNguyenHinhAnhNgoaiHinhPartSS17({required THUOCTINHHINHANHCOBAN? thuocTinhHinhAnh}) async {
+    /// -----
+    /// TODO:
+    /// -----
+    int tongSoFrame = 0;
+    int soFrameTrenHang = 0;
+    double chieuRongFrame = 0;
+    double chieuCaoFrame = 0;
+    String? nguonSpriteSheet;
+
+    ///
+    if (thuocTinhHinhAnh?.getKichThuocRS025 == true) {
+      tongSoFrame = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS170?.getTongSoFrame ?? 0;
+      soFrameTrenHang = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS170?.getTongSoFrameTrenHang ?? 0;
+      chieuRongFrame = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS170?.getChieuRongFrame ?? 0;
+      chieuCaoFrame = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS170?.getChieuCaoFrame ?? 0;
+      nguonSpriteSheet = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS170?.getNguonHinhAnh;
+    } else if (thuocTinhHinhAnh?.getKichThuocRS050 == true) {
+      tongSoFrame = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS170?.getTongSoFrame ?? 0;
+      soFrameTrenHang = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS170?.getTongSoFrameTrenHang ?? 0;
+      chieuRongFrame = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS170?.getChieuRongFrame ?? 0;
+      chieuCaoFrame = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS170?.getChieuCaoFrame ?? 0;
+      nguonSpriteSheet = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS170?.getNguonHinhAnh;
+    } else if (thuocTinhHinhAnh?.getKichThuocRS100 == true) {
+      tongSoFrame = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS170?.getTongSoFrame ?? 0;
+      soFrameTrenHang = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS170?.getTongSoFrameTrenHang ?? 0;
+      chieuRongFrame = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS170?.getChieuRongFrame ?? 0;
+      chieuCaoFrame = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS170?.getChieuCaoFrame ?? 0;
+      nguonSpriteSheet = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS170?.getNguonHinhAnh;
+    }
+
+    /// -----
+    /// TODO: Tải Tài Nguyên Hình Ảnh
+    /// -----
+    if (nguonSpriteSheet != null && nguonSpriteSheet.isNotEmpty == true) {
+      await getTaiHinhAnh
+          ?.load(nguonSpriteSheet)
+          .then((spriteSheet) async {
+            /// -----
+            /// TODO: Init spriteAnimation
+            /// -----
+            SpriteAnimation spriteAnimation = SpriteAnimation.fromFrameData(
+              spriteSheet,
+              SpriteAnimationData.sequenced(
+                amount: tongSoFrame, // Số frame trong spriteSheet
+                textureSize: Vector2(chieuRongFrame, chieuCaoFrame), // Kích thước mỗi frame
+                amountPerRow: soFrameTrenHang,
+                stepTime: 0.035, // Tốc độ animation
+              ),
+            );
+
+            /// -----
+            /// TODO:
+            /// -----
+            if (thuocTinhHinhAnh?.getKichThuocRS025 == true) {
+              thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS170?.onVoidCaiDatSpriteAnimation(value: spriteAnimation.clone(), caiDatUuTien: true);
+            } else if (thuocTinhHinhAnh?.getKichThuocRS050 == true) {
+              thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS170?.onVoidCaiDatSpriteAnimation(value: spriteAnimation.clone(), caiDatUuTien: true);
+            } else if (thuocTinhHinhAnh?.getKichThuocRS100 == true) {
+              thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS170?.onVoidCaiDatSpriteAnimation(value: spriteAnimation.clone(), caiDatUuTien: true);
+            }
+          })
+          .catchError((error) {
+            if (kDebugMode) {
+              String message = 'Truy Xuất Tài Nguyên Hình Ảnh [SpriteSheet - PartSS17] Không Thành Công: $nguonSpriteSheet';
+              throw (Exception(message));
+            }
+          });
+    }
+
+    ///
+    return;
+  }
+
+  /// -----
+  /// -----
+  /// TODO: Tải Tài Nguyên Hình Ảnh Ngoại Hình Part SS01
+  /// -----
+  /// -----
+  Future<void> onTaiTaiNguyenHinhAnhNgoaiHinhPartSS18({required THUOCTINHHINHANHCOBAN? thuocTinhHinhAnh}) async {
+    /// -----
+    /// TODO:
+    /// -----
+    int tongSoFrame = 0;
+    int soFrameTrenHang = 0;
+    double chieuRongFrame = 0;
+    double chieuCaoFrame = 0;
+    String? nguonSpriteSheet;
+
+    ///
+    if (thuocTinhHinhAnh?.getKichThuocRS025 == true) {
+      tongSoFrame = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS180?.getTongSoFrame ?? 0;
+      soFrameTrenHang = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS180?.getTongSoFrameTrenHang ?? 0;
+      chieuRongFrame = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS180?.getChieuRongFrame ?? 0;
+      chieuCaoFrame = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS180?.getChieuCaoFrame ?? 0;
+      nguonSpriteSheet = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS180?.getNguonHinhAnh;
+    } else if (thuocTinhHinhAnh?.getKichThuocRS050 == true) {
+      tongSoFrame = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS180?.getTongSoFrame ?? 0;
+      soFrameTrenHang = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS180?.getTongSoFrameTrenHang ?? 0;
+      chieuRongFrame = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS180?.getChieuRongFrame ?? 0;
+      chieuCaoFrame = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS180?.getChieuCaoFrame ?? 0;
+      nguonSpriteSheet = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS180?.getNguonHinhAnh;
+    } else if (thuocTinhHinhAnh?.getKichThuocRS100 == true) {
+      tongSoFrame = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS180?.getTongSoFrame ?? 0;
+      soFrameTrenHang = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS180?.getTongSoFrameTrenHang ?? 0;
+      chieuRongFrame = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS180?.getChieuRongFrame ?? 0;
+      chieuCaoFrame = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS180?.getChieuCaoFrame ?? 0;
+      nguonSpriteSheet = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS180?.getNguonHinhAnh;
+    }
+
+    /// -----
+    /// TODO: Tải Tài Nguyên Hình Ảnh
+    /// -----
+    if (nguonSpriteSheet != null && nguonSpriteSheet.isNotEmpty == true) {
+      await getTaiHinhAnh
+          ?.load(nguonSpriteSheet)
+          .then((spriteSheet) async {
+            /// -----
+            /// TODO: Init spriteAnimation
+            /// -----
+            SpriteAnimation spriteAnimation = SpriteAnimation.fromFrameData(
+              spriteSheet,
+              SpriteAnimationData.sequenced(
+                amount: tongSoFrame, // Số frame trong spriteSheet
+                textureSize: Vector2(chieuRongFrame, chieuCaoFrame), // Kích thước mỗi frame
+                amountPerRow: soFrameTrenHang,
+                stepTime: 0.035, // Tốc độ animation
+              ),
+            );
+
+            /// -----
+            /// TODO:
+            /// -----
+            if (thuocTinhHinhAnh?.getKichThuocRS025 == true) {
+              thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS180?.onVoidCaiDatSpriteAnimation(value: spriteAnimation.clone(), caiDatUuTien: true);
+            } else if (thuocTinhHinhAnh?.getKichThuocRS050 == true) {
+              thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS180?.onVoidCaiDatSpriteAnimation(value: spriteAnimation.clone(), caiDatUuTien: true);
+            } else if (thuocTinhHinhAnh?.getKichThuocRS100 == true) {
+              thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS180?.onVoidCaiDatSpriteAnimation(value: spriteAnimation.clone(), caiDatUuTien: true);
+            }
+          })
+          .catchError((error) {
+            if (kDebugMode) {
+              String message = 'Truy Xuất Tài Nguyên Hình Ảnh [SpriteSheet - PartSS18] Không Thành Công: $nguonSpriteSheet';
+              throw (Exception(message));
+            }
+          });
+    }
+
+    ///
+    return;
+  }
+
+  /// -----
+  /// -----
+  /// TODO: Tải Tài Nguyên Hình Ảnh Ngoại Hình Part SS01
+  /// -----
+  /// -----
+  Future<void> onTaiTaiNguyenHinhAnhNgoaiHinhPartSS19({required THUOCTINHHINHANHCOBAN? thuocTinhHinhAnh}) async {
+    /// -----
+    /// TODO:
+    /// -----
+    int tongSoFrame = 0;
+    int soFrameTrenHang = 0;
+    double chieuRongFrame = 0;
+    double chieuCaoFrame = 0;
+    String? nguonSpriteSheet;
+
+    ///
+    if (thuocTinhHinhAnh?.getKichThuocRS025 == true) {
+      tongSoFrame = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS190?.getTongSoFrame ?? 0;
+      soFrameTrenHang = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS190?.getTongSoFrameTrenHang ?? 0;
+      chieuRongFrame = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS190?.getChieuRongFrame ?? 0;
+      chieuCaoFrame = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS190?.getChieuCaoFrame ?? 0;
+      nguonSpriteSheet = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS190?.getNguonHinhAnh;
+    } else if (thuocTinhHinhAnh?.getKichThuocRS050 == true) {
+      tongSoFrame = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS190?.getTongSoFrame ?? 0;
+      soFrameTrenHang = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS190?.getTongSoFrameTrenHang ?? 0;
+      chieuRongFrame = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS190?.getChieuRongFrame ?? 0;
+      chieuCaoFrame = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS190?.getChieuCaoFrame ?? 0;
+      nguonSpriteSheet = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS190?.getNguonHinhAnh;
+    } else if (thuocTinhHinhAnh?.getKichThuocRS100 == true) {
+      tongSoFrame = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS190?.getTongSoFrame ?? 0;
+      soFrameTrenHang = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS190?.getTongSoFrameTrenHang ?? 0;
+      chieuRongFrame = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS190?.getChieuRongFrame ?? 0;
+      chieuCaoFrame = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS190?.getChieuCaoFrame ?? 0;
+      nguonSpriteSheet = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS190?.getNguonHinhAnh;
+    }
+
+    /// -----
+    /// TODO: Tải Tài Nguyên Hình Ảnh
+    /// -----
+    if (nguonSpriteSheet != null && nguonSpriteSheet.isNotEmpty == true) {
+      await getTaiHinhAnh
+          ?.load(nguonSpriteSheet)
+          .then((spriteSheet) async {
+            /// -----
+            /// TODO: Init spriteAnimation
+            /// -----
+            SpriteAnimation spriteAnimation = SpriteAnimation.fromFrameData(
+              spriteSheet,
+              SpriteAnimationData.sequenced(
+                amount: tongSoFrame, // Số frame trong spriteSheet
+                textureSize: Vector2(chieuRongFrame, chieuCaoFrame), // Kích thước mỗi frame
+                amountPerRow: soFrameTrenHang,
+                stepTime: 0.035, // Tốc độ animation
+              ),
+            );
+
+            /// -----
+            /// TODO:
+            /// -----
+            if (thuocTinhHinhAnh?.getKichThuocRS025 == true) {
+              thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS190?.onVoidCaiDatSpriteAnimation(value: spriteAnimation.clone(), caiDatUuTien: true);
+            } else if (thuocTinhHinhAnh?.getKichThuocRS050 == true) {
+              thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS190?.onVoidCaiDatSpriteAnimation(value: spriteAnimation.clone(), caiDatUuTien: true);
+            } else if (thuocTinhHinhAnh?.getKichThuocRS100 == true) {
+              thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS190?.onVoidCaiDatSpriteAnimation(value: spriteAnimation.clone(), caiDatUuTien: true);
+            }
+          })
+          .catchError((error) {
+            if (kDebugMode) {
+              String message = 'Truy Xuất Tài Nguyên Hình Ảnh [SpriteSheet - PartSS19] Không Thành Công: $nguonSpriteSheet';
+              throw (Exception(message));
+            }
+          });
+    }
+
+    ///
+    return;
+  }
+
+  /// -----
+  /// -----
+  /// TODO: Tải Tài Nguyên Hình Ảnh Ngoại Hình Part SS01
+  /// -----
+  /// -----
+  Future<void> onTaiTaiNguyenHinhAnhNgoaiHinhPartSS20({required THUOCTINHHINHANHCOBAN? thuocTinhHinhAnh}) async {
+    /// -----
+    /// TODO:
+    /// -----
+    int tongSoFrame = 0;
+    int soFrameTrenHang = 0;
+    double chieuRongFrame = 0;
+    double chieuCaoFrame = 0;
+    String? nguonSpriteSheet;
+
+    ///
+    if (thuocTinhHinhAnh?.getKichThuocRS025 == true) {
+      tongSoFrame = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS200?.getTongSoFrame ?? 0;
+      soFrameTrenHang = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS200?.getTongSoFrameTrenHang ?? 0;
+      chieuRongFrame = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS200?.getChieuRongFrame ?? 0;
+      chieuCaoFrame = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS200?.getChieuCaoFrame ?? 0;
+      nguonSpriteSheet = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS200?.getNguonHinhAnh;
+    } else if (thuocTinhHinhAnh?.getKichThuocRS050 == true) {
+      tongSoFrame = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS200?.getTongSoFrame ?? 0;
+      soFrameTrenHang = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS200?.getTongSoFrameTrenHang ?? 0;
+      chieuRongFrame = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS200?.getChieuRongFrame ?? 0;
+      chieuCaoFrame = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS200?.getChieuCaoFrame ?? 0;
+      nguonSpriteSheet = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS200?.getNguonHinhAnh;
+    } else if (thuocTinhHinhAnh?.getKichThuocRS100 == true) {
+      tongSoFrame = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS200?.getTongSoFrame ?? 0;
+      soFrameTrenHang = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS200?.getTongSoFrameTrenHang ?? 0;
+      chieuRongFrame = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS200?.getChieuRongFrame ?? 0;
+      chieuCaoFrame = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS200?.getChieuCaoFrame ?? 0;
+      nguonSpriteSheet = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS200?.getNguonHinhAnh;
+    }
+
+    /// -----
+    /// TODO: Tải Tài Nguyên Hình Ảnh
+    /// -----
+    if (nguonSpriteSheet != null && nguonSpriteSheet.isNotEmpty == true) {
+      await getTaiHinhAnh
+          ?.load(nguonSpriteSheet)
+          .then((spriteSheet) async {
+            /// -----
+            /// TODO: Init spriteAnimation
+            /// -----
+            SpriteAnimation spriteAnimation = SpriteAnimation.fromFrameData(
+              spriteSheet,
+              SpriteAnimationData.sequenced(
+                amount: tongSoFrame, // Số frame trong spriteSheet
+                textureSize: Vector2(chieuRongFrame, chieuCaoFrame), // Kích thước mỗi frame
+                amountPerRow: soFrameTrenHang,
+                stepTime: 0.035, // Tốc độ animation
+              ),
+            );
+
+            /// -----
+            /// TODO:
+            /// -----
+            if (thuocTinhHinhAnh?.getKichThuocRS025 == true) {
+              thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS200?.onVoidCaiDatSpriteAnimation(value: spriteAnimation.clone(), caiDatUuTien: true);
+            } else if (thuocTinhHinhAnh?.getKichThuocRS050 == true) {
+              thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS200?.onVoidCaiDatSpriteAnimation(value: spriteAnimation.clone(), caiDatUuTien: true);
+            } else if (thuocTinhHinhAnh?.getKichThuocRS100 == true) {
+              thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS200?.onVoidCaiDatSpriteAnimation(value: spriteAnimation.clone(), caiDatUuTien: true);
+            }
+          })
+          .catchError((error) {
+            if (kDebugMode) {
+              String message = 'Truy Xuất Tài Nguyên Hình Ảnh [SpriteSheet - PartSS20] Không Thành Công: $nguonSpriteSheet';
+              throw (Exception(message));
+            }
+          });
+    }
+
+    ///
+    return;
+  }
+
+  /// -----
+  /// -----
+  /// TODO: Tải Tài Nguyên Hình Ảnh Ngoại Hình Part SS01
+  /// -----
+  /// -----
+  Future<void> onTaiTaiNguyenHinhAnhNgoaiHinhPartSS21({required THUOCTINHHINHANHCOBAN? thuocTinhHinhAnh}) async {
+    /// -----
+    /// TODO:
+    /// -----
+    int tongSoFrame = 0;
+    int soFrameTrenHang = 0;
+    double chieuRongFrame = 0;
+    double chieuCaoFrame = 0;
+    String? nguonSpriteSheet;
+
+    ///
+    if (thuocTinhHinhAnh?.getKichThuocRS025 == true) {
+      tongSoFrame = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS210?.getTongSoFrame ?? 0;
+      soFrameTrenHang = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS210?.getTongSoFrameTrenHang ?? 0;
+      chieuRongFrame = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS210?.getChieuRongFrame ?? 0;
+      chieuCaoFrame = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS210?.getChieuCaoFrame ?? 0;
+      nguonSpriteSheet = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS210?.getNguonHinhAnh;
+    } else if (thuocTinhHinhAnh?.getKichThuocRS050 == true) {
+      tongSoFrame = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS210?.getTongSoFrame ?? 0;
+      soFrameTrenHang = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS210?.getTongSoFrameTrenHang ?? 0;
+      chieuRongFrame = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS210?.getChieuRongFrame ?? 0;
+      chieuCaoFrame = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS210?.getChieuCaoFrame ?? 0;
+      nguonSpriteSheet = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS210?.getNguonHinhAnh;
+    } else if (thuocTinhHinhAnh?.getKichThuocRS100 == true) {
+      tongSoFrame = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS210?.getTongSoFrame ?? 0;
+      soFrameTrenHang = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS210?.getTongSoFrameTrenHang ?? 0;
+      chieuRongFrame = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS210?.getChieuRongFrame ?? 0;
+      chieuCaoFrame = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS210?.getChieuCaoFrame ?? 0;
+      nguonSpriteSheet = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS210?.getNguonHinhAnh;
+    }
+
+    /// -----
+    /// TODO: Tải Tài Nguyên Hình Ảnh
+    /// -----
+    if (nguonSpriteSheet != null && nguonSpriteSheet.isNotEmpty == true) {
+      await getTaiHinhAnh
+          ?.load(nguonSpriteSheet)
+          .then((spriteSheet) async {
+            /// -----
+            /// TODO: Init spriteAnimation
+            /// -----
+            SpriteAnimation spriteAnimation = SpriteAnimation.fromFrameData(
+              spriteSheet,
+              SpriteAnimationData.sequenced(
+                amount: tongSoFrame, // Số frame trong spriteSheet
+                textureSize: Vector2(chieuRongFrame, chieuCaoFrame), // Kích thước mỗi frame
+                amountPerRow: soFrameTrenHang,
+                stepTime: 0.035, // Tốc độ animation
+              ),
+            );
+
+            /// -----
+            /// TODO:
+            /// -----
+            if (thuocTinhHinhAnh?.getKichThuocRS025 == true) {
+              thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS210?.onVoidCaiDatSpriteAnimation(value: spriteAnimation.clone(), caiDatUuTien: true);
+            } else if (thuocTinhHinhAnh?.getKichThuocRS050 == true) {
+              thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS210?.onVoidCaiDatSpriteAnimation(value: spriteAnimation.clone(), caiDatUuTien: true);
+            } else if (thuocTinhHinhAnh?.getKichThuocRS100 == true) {
+              thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS210?.onVoidCaiDatSpriteAnimation(value: spriteAnimation.clone(), caiDatUuTien: true);
+            }
+          })
+          .catchError((error) {
+            if (kDebugMode) {
+              String message = 'Truy Xuất Tài Nguyên Hình Ảnh [SpriteSheet - PartSS21] Không Thành Công: $nguonSpriteSheet';
+              throw (Exception(message));
+            }
+          });
+    }
+
+    ///
+    return;
+  }
+
+  /// -----
+  /// -----
+  /// TODO: Tải Tài Nguyên Hình Ảnh Ngoại Hình Part SS01
+  /// -----
+  /// -----
+  Future<void> onTaiTaiNguyenHinhAnhNgoaiHinhPartSS22({required THUOCTINHHINHANHCOBAN? thuocTinhHinhAnh}) async {
+    /// -----
+    /// TODO:
+    /// -----
+    int tongSoFrame = 0;
+    int soFrameTrenHang = 0;
+    double chieuRongFrame = 0;
+    double chieuCaoFrame = 0;
+    String? nguonSpriteSheet;
+
+    ///
+    if (thuocTinhHinhAnh?.getKichThuocRS025 == true) {
+      tongSoFrame = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS220?.getTongSoFrame ?? 0;
+      soFrameTrenHang = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS220?.getTongSoFrameTrenHang ?? 0;
+      chieuRongFrame = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS220?.getChieuRongFrame ?? 0;
+      chieuCaoFrame = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS220?.getChieuCaoFrame ?? 0;
+      nguonSpriteSheet = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS220?.getNguonHinhAnh;
+    } else if (thuocTinhHinhAnh?.getKichThuocRS050 == true) {
+      tongSoFrame = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS220?.getTongSoFrame ?? 0;
+      soFrameTrenHang = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS220?.getTongSoFrameTrenHang ?? 0;
+      chieuRongFrame = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS220?.getChieuRongFrame ?? 0;
+      chieuCaoFrame = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS220?.getChieuCaoFrame ?? 0;
+      nguonSpriteSheet = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS220?.getNguonHinhAnh;
+    } else if (thuocTinhHinhAnh?.getKichThuocRS100 == true) {
+      tongSoFrame = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS220?.getTongSoFrame ?? 0;
+      soFrameTrenHang = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS220?.getTongSoFrameTrenHang ?? 0;
+      chieuRongFrame = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS220?.getChieuRongFrame ?? 0;
+      chieuCaoFrame = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS220?.getChieuCaoFrame ?? 0;
+      nguonSpriteSheet = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS220?.getNguonHinhAnh;
+    }
+
+    /// -----
+    /// TODO: Tải Tài Nguyên Hình Ảnh
+    /// -----
+    if (nguonSpriteSheet != null && nguonSpriteSheet.isNotEmpty == true) {
+      await getTaiHinhAnh
+          ?.load(nguonSpriteSheet)
+          .then((spriteSheet) async {
+            /// -----
+            /// TODO: Init spriteAnimation
+            /// -----
+            SpriteAnimation spriteAnimation = SpriteAnimation.fromFrameData(
+              spriteSheet,
+              SpriteAnimationData.sequenced(
+                amount: tongSoFrame, // Số frame trong spriteSheet
+                textureSize: Vector2(chieuRongFrame, chieuCaoFrame), // Kích thước mỗi frame
+                amountPerRow: soFrameTrenHang,
+                stepTime: 0.035, // Tốc độ animation
+              ),
+            );
+
+            /// -----
+            /// TODO:
+            /// -----
+            if (thuocTinhHinhAnh?.getKichThuocRS025 == true) {
+              thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS220?.onVoidCaiDatSpriteAnimation(value: spriteAnimation.clone(), caiDatUuTien: true);
+            } else if (thuocTinhHinhAnh?.getKichThuocRS050 == true) {
+              thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS220?.onVoidCaiDatSpriteAnimation(value: spriteAnimation.clone(), caiDatUuTien: true);
+            } else if (thuocTinhHinhAnh?.getKichThuocRS100 == true) {
+              thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS220?.onVoidCaiDatSpriteAnimation(value: spriteAnimation.clone(), caiDatUuTien: true);
+            }
+          })
+          .catchError((error) {
+            if (kDebugMode) {
+              String message = 'Truy Xuất Tài Nguyên Hình Ảnh [SpriteSheet - PartSS22] Không Thành Công: $nguonSpriteSheet';
+              throw (Exception(message));
+            }
+          });
+    }
+
+    ///
+    return;
+  }
+
+  /// -----
+  /// -----
+  /// TODO: Tải Tài Nguyên Hình Ảnh Ngoại Hình Part SS01
+  /// -----
+  /// -----
+  Future<void> onTaiTaiNguyenHinhAnhNgoaiHinhPartSS23({required THUOCTINHHINHANHCOBAN? thuocTinhHinhAnh}) async {
+    /// -----
+    /// TODO:
+    /// -----
+    int tongSoFrame = 0;
+    int soFrameTrenHang = 0;
+    double chieuRongFrame = 0;
+    double chieuCaoFrame = 0;
+    String? nguonSpriteSheet;
+
+    ///
+    if (thuocTinhHinhAnh?.getKichThuocRS025 == true) {
+      tongSoFrame = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS230?.getTongSoFrame ?? 0;
+      soFrameTrenHang = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS230?.getTongSoFrameTrenHang ?? 0;
+      chieuRongFrame = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS230?.getChieuRongFrame ?? 0;
+      chieuCaoFrame = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS230?.getChieuCaoFrame ?? 0;
+      nguonSpriteSheet = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS230?.getNguonHinhAnh;
+    } else if (thuocTinhHinhAnh?.getKichThuocRS050 == true) {
+      tongSoFrame = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS230?.getTongSoFrame ?? 0;
+      soFrameTrenHang = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS230?.getTongSoFrameTrenHang ?? 0;
+      chieuRongFrame = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS230?.getChieuRongFrame ?? 0;
+      chieuCaoFrame = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS230?.getChieuCaoFrame ?? 0;
+      nguonSpriteSheet = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS230?.getNguonHinhAnh;
+    } else if (thuocTinhHinhAnh?.getKichThuocRS100 == true) {
+      tongSoFrame = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS230?.getTongSoFrame ?? 0;
+      soFrameTrenHang = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS230?.getTongSoFrameTrenHang ?? 0;
+      chieuRongFrame = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS230?.getChieuRongFrame ?? 0;
+      chieuCaoFrame = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS230?.getChieuCaoFrame ?? 0;
+      nguonSpriteSheet = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS230?.getNguonHinhAnh;
+    }
+
+    /// -----
+    /// TODO: Tải Tài Nguyên Hình Ảnh
+    /// -----
+    if (nguonSpriteSheet != null && nguonSpriteSheet.isNotEmpty == true) {
+      await getTaiHinhAnh
+          ?.load(nguonSpriteSheet)
+          .then((spriteSheet) async {
+            /// -----
+            /// TODO: Init spriteAnimation
+            /// -----
+            SpriteAnimation spriteAnimation = SpriteAnimation.fromFrameData(
+              spriteSheet,
+              SpriteAnimationData.sequenced(
+                amount: tongSoFrame, // Số frame trong spriteSheet
+                textureSize: Vector2(chieuRongFrame, chieuCaoFrame), // Kích thước mỗi frame
+                amountPerRow: soFrameTrenHang,
+                stepTime: 0.035, // Tốc độ animation
+              ),
+            );
+
+            /// -----
+            /// TODO:
+            /// -----
+            if (thuocTinhHinhAnh?.getKichThuocRS025 == true) {
+              thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS230?.onVoidCaiDatSpriteAnimation(value: spriteAnimation.clone(), caiDatUuTien: true);
+            } else if (thuocTinhHinhAnh?.getKichThuocRS050 == true) {
+              thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS230?.onVoidCaiDatSpriteAnimation(value: spriteAnimation.clone(), caiDatUuTien: true);
+            } else if (thuocTinhHinhAnh?.getKichThuocRS100 == true) {
+              thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS230?.onVoidCaiDatSpriteAnimation(value: spriteAnimation.clone(), caiDatUuTien: true);
+            }
+          })
+          .catchError((error) {
+            if (kDebugMode) {
+              String message = 'Truy Xuất Tài Nguyên Hình Ảnh [SpriteSheet - PartSS23] Không Thành Công: $nguonSpriteSheet';
+              throw (Exception(message));
+            }
+          });
+    }
+
+    ///
+    return;
+  }
+
+  /// -----
+  /// -----
+  /// TODO: Tải Tài Nguyên Hình Ảnh Ngoại Hình Part SS01
+  /// -----
+  /// -----
+  Future<void> onTaiTaiNguyenHinhAnhNgoaiHinhPartSS24({required THUOCTINHHINHANHCOBAN? thuocTinhHinhAnh}) async {
+    /// -----
+    /// TODO:
+    /// -----
+    int tongSoFrame = 0;
+    int soFrameTrenHang = 0;
+    double chieuRongFrame = 0;
+    double chieuCaoFrame = 0;
+    String? nguonSpriteSheet;
+
+    ///
+    if (thuocTinhHinhAnh?.getKichThuocRS025 == true) {
+      tongSoFrame = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS240?.getTongSoFrame ?? 0;
+      soFrameTrenHang = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS240?.getTongSoFrameTrenHang ?? 0;
+      chieuRongFrame = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS240?.getChieuRongFrame ?? 0;
+      chieuCaoFrame = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS240?.getChieuCaoFrame ?? 0;
+      nguonSpriteSheet = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS240?.getNguonHinhAnh;
+    } else if (thuocTinhHinhAnh?.getKichThuocRS050 == true) {
+      tongSoFrame = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS240?.getTongSoFrame ?? 0;
+      soFrameTrenHang = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS240?.getTongSoFrameTrenHang ?? 0;
+      chieuRongFrame = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS240?.getChieuRongFrame ?? 0;
+      chieuCaoFrame = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS240?.getChieuCaoFrame ?? 0;
+      nguonSpriteSheet = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS240?.getNguonHinhAnh;
+    } else if (thuocTinhHinhAnh?.getKichThuocRS100 == true) {
+      tongSoFrame = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS240?.getTongSoFrame ?? 0;
+      soFrameTrenHang = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS240?.getTongSoFrameTrenHang ?? 0;
+      chieuRongFrame = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS240?.getChieuRongFrame ?? 0;
+      chieuCaoFrame = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS240?.getChieuCaoFrame ?? 0;
+      nguonSpriteSheet = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS240?.getNguonHinhAnh;
+    }
+
+    /// -----
+    /// TODO: Tải Tài Nguyên Hình Ảnh
+    /// -----
+    if (nguonSpriteSheet != null && nguonSpriteSheet.isNotEmpty == true) {
+      await getTaiHinhAnh
+          ?.load(nguonSpriteSheet)
+          .then((spriteSheet) async {
+            /// -----
+            /// TODO: Init spriteAnimation
+            /// -----
+            SpriteAnimation spriteAnimation = SpriteAnimation.fromFrameData(
+              spriteSheet,
+              SpriteAnimationData.sequenced(
+                amount: tongSoFrame, // Số frame trong spriteSheet
+                textureSize: Vector2(chieuRongFrame, chieuCaoFrame), // Kích thước mỗi frame
+                amountPerRow: soFrameTrenHang,
+                stepTime: 0.035, // Tốc độ animation
+              ),
+            );
+
+            /// -----
+            /// TODO:
+            /// -----
+            if (thuocTinhHinhAnh?.getKichThuocRS025 == true) {
+              thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS240?.onVoidCaiDatSpriteAnimation(value: spriteAnimation.clone(), caiDatUuTien: true);
+            } else if (thuocTinhHinhAnh?.getKichThuocRS050 == true) {
+              thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS240?.onVoidCaiDatSpriteAnimation(value: spriteAnimation.clone(), caiDatUuTien: true);
+            } else if (thuocTinhHinhAnh?.getKichThuocRS100 == true) {
+              thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS240?.onVoidCaiDatSpriteAnimation(value: spriteAnimation.clone(), caiDatUuTien: true);
+            }
+          })
+          .catchError((error) {
+            if (kDebugMode) {
+              String message = 'Truy Xuất Tài Nguyên Hình Ảnh [SpriteSheet - PartSS24] Không Thành Công: $nguonSpriteSheet';
+              throw (Exception(message));
+            }
+          });
+    }
+
+    ///
+    return;
+  }
+
+  /// -----
+  /// -----
+  /// TODO: Tải Tài Nguyên Hình Ảnh Ngoại Hình Part SS01
+  /// -----
+  /// -----
+  Future<void> onTaiTaiNguyenHinhAnhNgoaiHinhPartSS25({required THUOCTINHHINHANHCOBAN? thuocTinhHinhAnh}) async {
+    /// -----
+    /// TODO:
+    /// -----
+    int tongSoFrame = 0;
+    int soFrameTrenHang = 0;
+    double chieuRongFrame = 0;
+    double chieuCaoFrame = 0;
+    String? nguonSpriteSheet;
+
+    ///
+    if (thuocTinhHinhAnh?.getKichThuocRS025 == true) {
+      tongSoFrame = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS250?.getTongSoFrame ?? 0;
+      soFrameTrenHang = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS250?.getTongSoFrameTrenHang ?? 0;
+      chieuRongFrame = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS250?.getChieuRongFrame ?? 0;
+      chieuCaoFrame = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS250?.getChieuCaoFrame ?? 0;
+      nguonSpriteSheet = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS250?.getNguonHinhAnh;
+    } else if (thuocTinhHinhAnh?.getKichThuocRS050 == true) {
+      tongSoFrame = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS250?.getTongSoFrame ?? 0;
+      soFrameTrenHang = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS250?.getTongSoFrameTrenHang ?? 0;
+      chieuRongFrame = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS250?.getChieuRongFrame ?? 0;
+      chieuCaoFrame = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS250?.getChieuCaoFrame ?? 0;
+      nguonSpriteSheet = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS250?.getNguonHinhAnh;
+    } else if (thuocTinhHinhAnh?.getKichThuocRS100 == true) {
+      tongSoFrame = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS250?.getTongSoFrame ?? 0;
+      soFrameTrenHang = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS250?.getTongSoFrameTrenHang ?? 0;
+      chieuRongFrame = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS250?.getChieuRongFrame ?? 0;
+      chieuCaoFrame = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS250?.getChieuCaoFrame ?? 0;
+      nguonSpriteSheet = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS250?.getNguonHinhAnh;
+    }
+
+    /// -----
+    /// TODO: Tải Tài Nguyên Hình Ảnh
+    /// -----
+    if (nguonSpriteSheet != null && nguonSpriteSheet.isNotEmpty == true) {
+      await getTaiHinhAnh
+          ?.load(nguonSpriteSheet)
+          .then((spriteSheet) async {
+            /// -----
+            /// TODO: Init spriteAnimation
+            /// -----
+            SpriteAnimation spriteAnimation = SpriteAnimation.fromFrameData(
+              spriteSheet,
+              SpriteAnimationData.sequenced(
+                amount: tongSoFrame, // Số frame trong spriteSheet
+                textureSize: Vector2(chieuRongFrame, chieuCaoFrame), // Kích thước mỗi frame
+                amountPerRow: soFrameTrenHang,
+                stepTime: 0.035, // Tốc độ animation
+              ),
+            );
+
+            /// -----
+            /// TODO:
+            /// -----
+            if (thuocTinhHinhAnh?.getKichThuocRS025 == true) {
+              thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS250?.onVoidCaiDatSpriteAnimation(value: spriteAnimation.clone(), caiDatUuTien: true);
+            } else if (thuocTinhHinhAnh?.getKichThuocRS050 == true) {
+              thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS250?.onVoidCaiDatSpriteAnimation(value: spriteAnimation.clone(), caiDatUuTien: true);
+            } else if (thuocTinhHinhAnh?.getKichThuocRS100 == true) {
+              thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS250?.onVoidCaiDatSpriteAnimation(value: spriteAnimation.clone(), caiDatUuTien: true);
+            }
+          })
+          .catchError((error) {
+            if (kDebugMode) {
+              String message = 'Truy Xuất Tài Nguyên Hình Ảnh [SpriteSheet - PartSS25] Không Thành Công: $nguonSpriteSheet';
               throw (Exception(message));
             }
           });

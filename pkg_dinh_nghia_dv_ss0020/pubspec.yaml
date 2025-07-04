@@ -44,6 +44,11 @@ flutter:
      # _____[THUOC_TINH_HIEU_UNG_AM_THANH_NUT_BAM]_____
      - lib/26_def0026/ADef20_0/08_SubDefs/Def30_2/06_SoundSrcs/am_thanh_hieu_ung_nut_bam_ss020.mp3
      #
+     # _____[THUOC_TINH_AM_THANH_HIEU_UNG_CHIEN_DAU]_____
+     - lib/26_def0026/ADef20_0/08_SubDefs/Def40_2/06_SoundSrcs/
+     #
+     #
+     #
      # _____[CHIEN_DAU_CO_DANG_CAP_SAO_00E03_SS01]_____
      - lib/26_def0026/ADef30_0/08_SubDefs/Def20_2/08_SubDefs/Def20_4/08_SubDefs/Def20_6/06_SoundSrcs/
      # _____[CHIEN_DAU_CO_DANG_CAP_SAO_00E03_SS02]_____

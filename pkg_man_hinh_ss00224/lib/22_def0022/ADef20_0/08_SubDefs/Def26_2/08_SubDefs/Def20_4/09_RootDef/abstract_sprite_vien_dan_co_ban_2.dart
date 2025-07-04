@@ -232,11 +232,8 @@ abstract class SpriteVienDanCoBan2 extends SpriteAnimationComponent with HasVisi
         size.setValues(chieuRongThan, chieuCaoThan);
       }
 
-      // if (angle != gocXoay && getBienTangTienGiamTanXuatCapNhat % 2 == 0) {
-      //   angle = gocXoay;
-      // }
-      if (angle != 0) {
-        angle = 0;
+      if (angle != gocXoay && getBienTangTienGiamTanXuatCapNhat % 2 == 0) {
+        angle = gocXoay;
       }
     }
   }

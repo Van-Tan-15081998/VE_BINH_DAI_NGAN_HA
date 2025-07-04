@@ -33,10 +33,7 @@ abstract class QuanLyTrangThaiPhuongThucTanCongCoBan with CauTrucThucThiCoBan, V
     /// -----
     /// TODO:
     /// -----
-    await caiDatKichThuocManHinh(
-      chieuRongManHinhPhiVatLyP: getThietLapTongQuat?.getChieuRongManHinhPhiVatLy ?? 0,
-      chieuCaoManHinhPhiVatLyP: getThietLapTongQuat?.getChieuCaoManHinhPhiVatLy ?? 0,
-    );
+    await caiDatKichThuocManHinh(chieuRongManHinhPhiVatLyP: getThietLapTongQuat?.getChieuRongManHinhPhiVatLy ?? 0, chieuCaoManHinhPhiVatLyP: getThietLapTongQuat?.getChieuCaoManHinhPhiVatLy ?? 0);
 
     return;
   }
@@ -316,11 +313,7 @@ abstract class QuanLyTrangThaiPhuongThucTanCongCoBan with CauTrucThucThiCoBan, V
   ///
   /// TODO:
   ///
-  Future<void> onThucThiTanCongChiDinh({
-    required bool chiDinhSungChinhSs01,
-    required bool chiDinhSungChinhSs02,
-    required bool chiDinhSungChinhSs03,
-  }) async {
+  Future<void> onThucThiTanCongChiDinh({required bool chiDinhSungChinhSs01, required bool chiDinhSungChinhSs02, required bool chiDinhSungChinhSs03}) async {
     return;
   }
 
@@ -353,14 +346,7 @@ abstract class QuanLyTrangThaiPhuongThucTanCongCoBan with CauTrucThucThiCoBan, V
       /// -----
       /// TODO: Đưa Hiệu Ứng Âm Thanh Vào Ngăn Xếp
       /// -----
-      await getChienDauCoTongQuat
-          ?.getChiDinhChienDauCoThucThiChienDau
-          ?.getTrangThai
-          ?.getMoHinh
-          ?.getThuocTinh
-          ?.getThuocTinhHieuUngAmThanh
-          ?.getVuKhiTanCongCoBan
-          ?.onPlay();
+      await getChienDauCoTongQuat?.getChiDinhChienDauCoThucThiChienDau?.getTrangThai?.getMoHinh?.getThuocTinh?.getThuocTinhHieuUngAmThanh?.getVuKhiTanCongCoBan?.onPlay();
     }
 
     return;
@@ -505,7 +491,7 @@ abstract class QuanLyTrangThaiPhuongThucTanCongCoBan with CauTrucThucThiCoBan, V
       await vienDan?.caiDatDinhHuongBay(value: DinhHuongBayCoBan.dinhHuongTheoDuoiLenTren());
       await vienDan?.caiDatThoiGianKichHoat(value: ThoiGianKichHoatCoBan.kichHoat10());
       await vienDan?.caiDatTocDoBayNguyenBan(value: TocDoBayCoBan(tocDo: 10.000));
-       vienDan?.onVoidCaiDatGocXoay(value: pi);
+      vienDan?.onVoidCaiDatGocXoay(value: pi);
 
       await vienDan?.caiDatQuanLyTrangThaiDanhSachMoHinh(value: getDanhSachMoHinhTongQuat);
       await vienDan?.caiDatDieuKhienTinhToanTongQuat(value: getDieuKhienTinhToanTongQuat);
@@ -517,6 +503,7 @@ abstract class QuanLyTrangThaiPhuongThucTanCongCoBan with CauTrucThucThiCoBan, V
 
       if (trangThaiVienDan.getMoHinh != null) {
         await onCaiDatViTriXuatPhat(trangThai: trangThaiVienDan, chienDauCo: chienDauCo);
+        await onCaiDatViTriLayMucTieu(trangThai: trangThaiVienDan);
         await caiDatTocDoBayNguyenBan(trangThai: trangThaiVienDan, chienDauCo: chienDauCo);
       }
 
@@ -604,18 +591,37 @@ abstract class QuanLyTrangThaiPhuongThucTanCongCoBan with CauTrucThucThiCoBan, V
     return;
   }
 
+  Future<void> onCaiDatViTriLayMucTieu({required TrangThaiVienDanCoBan? trangThai}) async {
+
+    final double dxDiemXuatPhat = trangThai?.getMoHinh?.getDxTrongTam ?? 0;
+    final double dyDiemXuatPhat = trangThai?.getMoHinh?.getDyTrongTam ?? 0;
+
+    double dxDiemLayMucTieu = dxDiemXuatPhat;
+    if (getKiemTraKichHoatSungChinhSs01 == true) {
+      ///
+    }
+    if (getKiemTraKichHoatSungChinhSs02 == true) {
+      dxDiemLayMucTieu = dxDiemLayMucTieu - 20.0;
+    }
+    if (getKiemTraKichHoatSungChinhSs03 == true) {
+      dxDiemLayMucTieu = dxDiemLayMucTieu + 20.0;
+    }
+
+    final double dyDiemLayMucTieu = dyDiemXuatPhat * (-1);
+
+    trangThai?.getMoHinh?.onVoidCaiDatDxViTriLayMucTieu(value: dxDiemLayMucTieu);
+    trangThai?.getMoHinh?.onVoidCaiDatDyViTriLayMucTieu(value: dyDiemLayMucTieu);
+
+    ///
+    return;
+  }
+
   /// -----
   /// TODO: Cài Đặt Kích Thước
   /// -----
   Future<void> caiDatKichThuoc({required TrangThaiVienDanCoBan? trangThai}) async {
     final DonViSpriteCoBan? donViSpriteVuKhiTanCongCoBan =
-        getChienDauCoTongQuat
-            ?.getChienDauCoTrucTiepThucThiChienDau
-            ?.getTrangThai
-            ?.getMoHinh
-            ?.getThuocTinh
-            ?.getThuocTinhHinhAnhSprite
-            ?.getDonViSpriteNgoaiHinhVuKhiTanCongCoBanSS01SS01;
+        getChienDauCoTongQuat?.getChienDauCoTrucTiepThucThiChienDau?.getTrangThai?.getMoHinh?.getThuocTinh?.getThuocTinhHinhAnhSprite?.getDonViSpriteNgoaiHinhVuKhiTanCongCoBanSS01SS01;
 
     double chieuRongThanNguyenBan = trangThai?.getMoHinh?.getChieuRongThan ?? 20.0;
     double chieuCaoThanNguyenBan = trangThai?.getMoHinh?.getChieuCaoThan ?? 20.0;

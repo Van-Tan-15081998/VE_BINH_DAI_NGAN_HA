@@ -463,6 +463,8 @@ class QUANLYTHANHPHANMANHINHTHUOCCAP extends QUANLYTHANHPHANMANHINHTHUOCCAPCOBAN
       /// -----
 
       await getKhungManHinhSS300400?.onKichHoatThanhPhanManHinhThuocCap(kichHoatUuTien: true);
+
+      getGlobalState?.getDichVuMayPhatAmThanh?.getAmThanhHeThong?.getAmThanhHieuUngChienDauChienThang?.onPlay();
     } catch (e) {
       await onReportRootIssue(nameFunction: 'onKichHoatKhungManHinhThuocCapSS300400ChienThang');
     }

@@ -209,6 +209,7 @@ class QUANLYDIEUKHIENCHUYENKICHBANCHIENDAU with CauTrucThucThiCoBan, DanhSachQua
             await getTienTrinhTongQuat?.getTienTrinhThucThiChienDau?.getTrangThai?.getMoHinh?.caiDatThucThiHoanTat();
 
             await getMainGameController?.onKichHoatKhungManHinhThuocCapSS300400ChienThang();
+
           }
         }
       }

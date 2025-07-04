@@ -74,21 +74,21 @@ abstract class VienDanThongMinh extends VIENDANTANCONGCOBAN {
     return;
   }
 
-  double? _dxViTriLayMucTieu;
-  double? get getDxViTriLayMucTieu => _dxViTriLayMucTieu;
-  double get getDxViTriLayMucTieuNotNull => _dxViTriLayMucTieu ?? 0;
-  void onVoidCaiDatDxViTriLayMucTieu({required double? value}) {
-    if (value != null && value != 0) {
-      if (value.isNaN == false && value.isFinite == true) {
-        _dxViTriLayMucTieu = value;
-      } else {
-        _dxViTriLayMucTieu = 0;
-      }
-    } else {
-      _dxViTriLayMucTieu = null;
-    }
-    return;
-  }
+  // double? _dxViTriLayMucTieu;
+  // double? get getDxViTriLayMucTieu => _dxViTriLayMucTieu;
+  // double get getDxViTriLayMucTieuNotNull => _dxViTriLayMucTieu ?? 0;
+  // void onVoidCaiDatDxViTriLayMucTieu({required double? value}) {
+  //   if (value != null && value != 0) {
+  //     if (value.isNaN == false && value.isFinite == true) {
+  //       _dxViTriLayMucTieu = value;
+  //     } else {
+  //       _dxViTriLayMucTieu = 0;
+  //     }
+  //   } else {
+  //     _dxViTriLayMucTieu = null;
+  //   }
+  //   return;
+  // }
 
   /// -----
   /// TODO: Vị Trí Đích - Biên Dưới
@@ -109,21 +109,21 @@ abstract class VienDanThongMinh extends VIENDANTANCONGCOBAN {
     return;
   }
 
-  double? _dyViTriLayMucTieu;
-  double? get getDyViTriLayMucTieu => _dyViTriLayMucTieu;
-  double get getDyViTriLayMucTieuNotNull => _dyViTriLayMucTieu ?? 0;
-  void onVoidCaiDatDyViTriLayMucTieu({required double? value}) {
-    if (value != null && value != 0) {
-      if (value.isNaN == false && value.isFinite == true) {
-        _dyViTriLayMucTieu = value;
-      } else {
-        _dyViTriLayMucTieu = 0;
-      }
-    } else {
-      _dyViTriLayMucTieu = null;
-    }
-    return;
-  }
+  // double? _dyViTriLayMucTieu;
+  // double? get getDyViTriLayMucTieu => _dyViTriLayMucTieu;
+  // double get getDyViTriLayMucTieuNotNull => _dyViTriLayMucTieu ?? 0;
+  // void onVoidCaiDatDyViTriLayMucTieu({required double? value}) {
+  //   if (value != null && value != 0) {
+  //     if (value.isNaN == false && value.isFinite == true) {
+  //       _dyViTriLayMucTieu = value;
+  //     } else {
+  //       _dyViTriLayMucTieu = 0;
+  //     }
+  //   } else {
+  //     _dyViTriLayMucTieu = null;
+  //   }
+  //   return;
+  // }
 
   /// -----
   /// TODO: Vị Trí Phương Tiện Địch Lấy Mục Tiêu
@@ -637,7 +637,7 @@ abstract class VienDanThongMinh extends VIENDANTANCONGCOBAN {
     // final double bienTren = getBienTrenNotNull;
     final Offset diemBatDau = Offset(dxDiemBatDau, dyDiemBatDau);
 
-    double step = 5.0; // Khoảng cách giữa các điểm
+    double step = 10.0; // Khoảng cách giữa các điểm
     // Tính độ dài của đoạn thẳng AB
     final double lengthAB = (diemKetThuc - diemBatDau).distance;
     // Tính tỉ lệ khoảng cách

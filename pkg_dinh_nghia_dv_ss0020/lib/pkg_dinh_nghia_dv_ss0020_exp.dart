@@ -18,6 +18,9 @@ export '26_def0026/ADef20_0/09_RootDef/class_20002202.dart';
 /// TODO: _____[THUOC_TINH_HIEU_UNG_AM_THANH_NUT_BAM]_____
 export '26_def0026/ADef20_0/08_SubDefs/Def30_2/09_RootDef/class_20002208.dart';
 
+/// TODO: _____[THUOC_TINH_AM_THANH_HIEU_UNG_CHIEN_DAU_CHIEN_THANG]_____
+export '26_def0026/ADef20_0/08_SubDefs/Def40_2/09_RootDef/class_20002208.dart';
+
 /// TODO: _____[THUOC_TINH_HIEU_UNG_AM_THANH_CHIEN_DAU_CO]_____
 export '26_def0026/ADef30_0/09_RootDef/class_20002828.dart';
 

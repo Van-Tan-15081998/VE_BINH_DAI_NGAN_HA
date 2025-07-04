@@ -690,6 +690,38 @@ abstract class VIENDANTANCONGCOBAN with CauTrucThucThiCoBan {
     return;
   }
 
+  double? _dxViTriLayMucTieu;
+  double? get getDxViTriLayMucTieu => _dxViTriLayMucTieu;
+  double get getDxViTriLayMucTieuNotNull => _dxViTriLayMucTieu ?? 0;
+  void onVoidCaiDatDxViTriLayMucTieu({required double? value}) {
+    if (value != null && value != 0) {
+      if (value.isNaN == false && value.isFinite == true) {
+        _dxViTriLayMucTieu = value;
+      } else {
+        _dxViTriLayMucTieu = 0;
+      }
+    } else {
+      _dxViTriLayMucTieu = null;
+    }
+    return;
+  }
+
+  double? _dyViTriLayMucTieu;
+  double? get getDyViTriLayMucTieu => _dyViTriLayMucTieu;
+  double get getDyViTriLayMucTieuNotNull => _dyViTriLayMucTieu ?? 0;
+  void onVoidCaiDatDyViTriLayMucTieu({required double? value}) {
+    if (value != null && value != 0) {
+      if (value.isNaN == false && value.isFinite == true) {
+        _dyViTriLayMucTieu = value;
+      } else {
+        _dyViTriLayMucTieu = 0;
+      }
+    } else {
+      _dyViTriLayMucTieu = null;
+    }
+    return;
+  }
+
   /// -----
   /// TODO:
   /// -----
@@ -919,8 +951,8 @@ abstract class VIENDANTANCONGCOBAN with CauTrucThucThiCoBan {
 
     double tongKichThuoc = chieuRongThan + chieuCaoThan;
 
-    double chieuRongThanCapNhat = 100.0 * (chieuRongThan / tongKichThuoc);
-    double chieuCaoThanCapNhat = 100.0 * (chieuCaoThan / tongKichThuoc);
+    double chieuRongThanCapNhat = 90.0 * (chieuRongThan / tongKichThuoc);
+    double chieuCaoThanCapNhat = 90.0 * (chieuCaoThan / tongKichThuoc);
 
     await caiDatChieuRongThan(value: chieuRongThanCapNhat);
     await caiDatChieuCaoThan(value: chieuCaoThanCapNhat);
@@ -941,8 +973,8 @@ abstract class VIENDANTANCONGCOBAN with CauTrucThucThiCoBan {
 
     double tongKichThuoc = chieuRongThan + chieuCaoThan;
 
-    double chieuRongThanCapNhat = 100.0 * (chieuRongThan / tongKichThuoc);
-    double chieuCaoThanCapNhat = 100.0 * (chieuCaoThan / tongKichThuoc);
+    double chieuRongThanCapNhat = 120.0 * (chieuRongThan / tongKichThuoc);
+    double chieuCaoThanCapNhat = 120.0 * (chieuCaoThan / tongKichThuoc);
 
     await caiDatChieuRongThan(value: chieuRongThanCapNhat);
     await caiDatChieuCaoThan(value: chieuCaoThanCapNhat);
