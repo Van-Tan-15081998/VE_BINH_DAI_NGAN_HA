@@ -555,14 +555,14 @@ abstract class QuanLyTrangThaiPhuongThucTanCongThongMinh with CauTrucThucThiCoBa
       /// TODO:
       /// -----
       await vienDan?.caiDatMaDinhDanh(value: '[VIEN_DAN_THONG_MINH_SS$index]_[$timestamp]');
-      await vienDan?.caiDatChieuRongThan(value: 30.0);
-      await vienDan?.caiDatChieuCaoThan(value: 45.0);
+      await vienDan?.caiDatChieuRongThan(value: 50.0);
+      await vienDan?.caiDatChieuCaoThan(value: 60.0);
       await vienDan?.caiDatChieuRongManHinhPhiVatLy(value: getThietLapTongQuat?.getChieuRongManHinhPhiVatLy);
       await vienDan?.caiDatChieuCaoManHinhPhiVatLy(value: getThietLapTongQuat?.getChieuCaoManHinhPhiVatLy);
       await vienDan?.caiDatDinhHuongBay(value: DinhHuongBayCoBan.dinhHuongTheoDuoiLenTren());
       await vienDan?.caiDatThoiGianKichHoat(value: ThoiGianKichHoatCoBan.kichHoat10());
       await vienDan?.caiDatTocDoBayNguyenBan(value: TocDoBayCoBan(tocDo: 5.000));
-      await vienDan?.caiDatGocXoay(value: pi);
+       vienDan?.onVoidCaiDatGocXoay(value: pi);
 
       await vienDan?.caiDatQuanLyTrangThaiDanhSachMoHinh(value: getDanhSachMoHinhTongQuat);
       await vienDan?.caiDatDieuKhienTinhToanTongQuat(value: getDieuKhienTinhToanTongQuat);
@@ -586,7 +586,7 @@ abstract class QuanLyTrangThaiPhuongThucTanCongThongMinh with CauTrucThucThiCoBa
 
       await trangThaiVienDan.caiDatMoHinh(value: vienDan);
       await trangThaiVienDan.getMoHinh?.caiDatMaDinhDanhChienDauCo(value: chienDauCo?.getMaDinhDanhChienDauCo);
-      await trangThaiVienDan.getMoHinh?.onXuLyKichThuoc(chienDauCo: chienDauCo);
+      await trangThaiVienDan.getMoHinh?.onXuLyKichThuocTenLuaTanCong(chienDauCo: chienDauCo);
       await trangThaiVienDan.getMoHinh?.onXuLyMaDinhDanhHinhThuc();
 
       if (trangThaiVienDan.getMoHinh != null) {

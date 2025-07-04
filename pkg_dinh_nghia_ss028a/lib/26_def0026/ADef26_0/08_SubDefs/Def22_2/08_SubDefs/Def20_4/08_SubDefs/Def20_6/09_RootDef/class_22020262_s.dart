@@ -76,7 +76,7 @@
 //   double? _dxViTriLayMucTieu;
 //   double? get getDxViTriLayMucTieu => _dxViTriLayMucTieu;
 //   double get getDxViTriLayMucTieuNotNull => _dxViTriLayMucTieu ?? 0;
-//   Future<void> caiDatDxViTriLayMucTieu({required double? value}) async {
+//   void onVoidCaiDatDxViTriLayMucTieu({required double? value}) {
 //     if (value != null && value != 0) {
 //       if (value.isNaN == false && value.isFinite == true) {
 //         _dxViTriLayMucTieu = value;
@@ -111,7 +111,7 @@
 //   double? _dyViTriLayMucTieu;
 //   double? get getDyViTriLayMucTieu => _dyViTriLayMucTieu;
 //   double get getDyViTriLayMucTieuNotNull => _dyViTriLayMucTieu ?? 0;
-//   Future<void> caiDatDyViTriLayMucTieu({required double? value}) async {
+//   void onVoidCaiDatDyViTriLayMucTieu({required double? value}) {
 //     if (value != null && value != 0) {
 //       if (value.isNaN == false && value.isFinite == true) {
 //         _dyViTriLayMucTieu = value;
@@ -1612,7 +1612,7 @@
 //     /// TODO: Cập nhật góc quay của viên đạn so với trục Oy
 //     double angle = atan2(diemKetThuc.dx - diemBatDau.dx, diemKetThuc.dy - diemBatDau.dy);
 //     angle = angle * (-1); // Điều chỉnh góc để lấy góc với trục y
-//     await caiDatGocXoay(value: angle);
+//     onVoidCaiDatGocXoay(value: angle);
 //
 //     return;
 //   }
@@ -1684,7 +1684,7 @@
 //     /// TODO: Cập nhật góc quay của viên đạn so với trục Oy
 //     double angle = atan2(diemKetThuc.dx - diemBatDau.dx, diemKetThuc.dy - diemBatDau.dy);
 //     angle = angle * (-1); // Điều chỉnh góc để lấy góc với trục y
-//     await caiDatGocXoay(value: angle);
+//     onVoidCaiDatGocXoay(value: angle);
 //
 //     return;
 //   }

@@ -178,7 +178,7 @@ class KICHTHUOCVITRITHANHPHANGAMEUICOBAN with CauTrucThucThiCoBan {
   double? _gocXoay;
   double? get getGocXoay => _gocXoay;
   double get getGocXoayNotNull => _gocXoay ?? 0;
-  void onVoidCaiDatGocXoay({required double? value}) async {
+  void onVoidCaiDatGocXoay({required double? value}) {
     if (value != null && value != 0) {
       if (value.isNaN == false && value.isFinite == true) {
         _gocXoay = value;

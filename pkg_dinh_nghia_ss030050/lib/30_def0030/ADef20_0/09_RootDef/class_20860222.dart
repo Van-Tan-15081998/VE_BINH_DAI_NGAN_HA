@@ -2355,6 +2355,14 @@ class SUKIENVACHAMTHUOCPHUONGTIEN with CauTrucThucThiCoBan, DanhSachQuanLyTrangT
             }
           }
         }
+
+        if (phuongTienVaChamVienDan.key == '[DANH_SACH_MA_DINH_DANH_PHUONG_TIEN_HOAT_DONG]') {
+          getDanhSachMaDinhDanhPhuongTienHoatDong?.clear();
+          Map<String, dynamic> mapDanhSachMaDinhDanhPhuongTienHoatDong = phuongTienVaChamVienDan?.value ?? {};;
+          // List<dynamic> danhSachMaDinhDanhPhuongTienHoatDong = mapDanhSachMaDinhDanhPhuongTienHoatDong.values.toList();
+
+          getDanhSachMaDinhDanhPhuongTienHoatDong.addAll(mapDanhSachMaDinhDanhPhuongTienHoatDong.keys);
+        }
       }
     }
 

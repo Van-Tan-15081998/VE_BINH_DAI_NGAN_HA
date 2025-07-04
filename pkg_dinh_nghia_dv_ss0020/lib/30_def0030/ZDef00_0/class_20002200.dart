@@ -48,7 +48,7 @@ class QUANLYTRANGTHAIDICHVUMAYPHATAMTHANH with CauTrucThucThiCoBan {
     /// -----
     /// TODO: Mở Comment Để Âm Thanh Hoạt Động
     /// -----
-    await caiDatMayPhatAmThanh(value: MAYPHATAMTHANHCOBAN());
+    // await caiDatMayPhatAmThanh(value: MAYPHATAMTHANHCOBAN());
 
     /// -----
     /// TODO:

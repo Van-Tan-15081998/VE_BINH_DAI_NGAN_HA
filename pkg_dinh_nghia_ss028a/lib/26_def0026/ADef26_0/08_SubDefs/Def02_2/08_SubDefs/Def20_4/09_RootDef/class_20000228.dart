@@ -677,7 +677,7 @@ abstract class VIENDANTANCONGCOBAN with CauTrucThucThiCoBan {
   double? _gocXoay;
   double? get getGocXoay => _gocXoay;
   double get getGocXoayNotNull => _gocXoay ?? 0;
-  Future<void> caiDatGocXoay({required double? value}) async {
+  void onVoidCaiDatGocXoay({required double? value}) {
     if (value != null && value != 0) {
       if (value.isNaN == false && value.isFinite == true) {
         _gocXoay = value;
@@ -916,6 +916,28 @@ abstract class VIENDANTANCONGCOBAN with CauTrucThucThiCoBan {
         chienDauCo?.getThuocTinh?.getThuocTinhHinhAnhSprite?.getDonViSpriteNgoaiHinhVuKhiTanCongCoBanSS01SS01?.getChieuRongFrame ?? 100.0;
     double chieuCaoThan =
         chienDauCo?.getThuocTinh?.getThuocTinhHinhAnhSprite?.getDonViSpriteNgoaiHinhVuKhiTanCongCoBanSS01SS01?.getChieuCaoFrame ?? 100.0;
+
+    double tongKichThuoc = chieuRongThan + chieuCaoThan;
+
+    double chieuRongThanCapNhat = 100.0 * (chieuRongThan / tongKichThuoc);
+    double chieuCaoThanCapNhat = 100.0 * (chieuCaoThan / tongKichThuoc);
+
+    await caiDatChieuRongThan(value: chieuRongThanCapNhat);
+    await caiDatChieuCaoThan(value: chieuCaoThanCapNhat);
+
+    await onCapNhatToaDoViTri();
+
+    return;
+  }
+
+  /// -----
+  /// TODO: Hàm Xử Lý Kích Thước
+  /// -----
+  Future<void> onXuLyKichThuocTenLuaTanCong({required MoHinhChienDauCoTongQuat? chienDauCo}) async {
+    double chieuRongThan =
+        chienDauCo?.getThuocTinh?.getThuocTinhHinhAnhSprite?.getDonViSpriteNgoaiHinhVuKhiTanCongThongMinhSS01?.getChieuRongFrame ?? 100.0;
+    double chieuCaoThan =
+        chienDauCo?.getThuocTinh?.getThuocTinhHinhAnhSprite?.getDonViSpriteNgoaiHinhVuKhiTanCongThongMinhSS01?.getChieuCaoFrame ?? 100.0;
 
     double tongKichThuoc = chieuRongThan + chieuCaoThan;
 

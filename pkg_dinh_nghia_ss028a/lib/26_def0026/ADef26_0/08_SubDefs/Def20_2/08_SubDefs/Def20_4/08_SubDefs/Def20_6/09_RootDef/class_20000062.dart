@@ -74,7 +74,7 @@ abstract class VienDanCoBan extends VIENDANTANCONGCOBAN {
   double? _dxViTriLayMucTieu;
   double? get getDxViTriLayMucTieu => _dxViTriLayMucTieu;
   double get getDxViTriLayMucTieuNotNull => _dxViTriLayMucTieu ?? 0;
-  Future<void> caiDatDxViTriLayMucTieu({required double? value}) async {
+  void onVoidCaiDatDxViTriLayMucTieu({required double? value}) {
     if (value != null && value != 0) {
       if (value.isNaN == false && value.isFinite == true) {
         _dxViTriLayMucTieu = value;
@@ -109,7 +109,7 @@ abstract class VienDanCoBan extends VIENDANTANCONGCOBAN {
   double? _dyViTriLayMucTieu;
   double? get getDyViTriLayMucTieu => _dyViTriLayMucTieu;
   double get getDyViTriLayMucTieuNotNull => _dyViTriLayMucTieu ?? 0;
-  Future<void> caiDatDyViTriLayMucTieu({required double? value}) async {
+  void onVoidCaiDatDyViTriLayMucTieu({required double? value}) {
     if (value != null && value != 0) {
       if (value.isNaN == false && value.isFinite == true) {
         _dyViTriLayMucTieu = value;

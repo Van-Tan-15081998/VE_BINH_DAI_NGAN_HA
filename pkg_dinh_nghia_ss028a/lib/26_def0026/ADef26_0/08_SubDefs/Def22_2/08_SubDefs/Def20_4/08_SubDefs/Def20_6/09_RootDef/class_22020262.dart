@@ -77,7 +77,7 @@ abstract class VienDanThongMinh extends VIENDANTANCONGCOBAN {
   double? _dxViTriLayMucTieu;
   double? get getDxViTriLayMucTieu => _dxViTriLayMucTieu;
   double get getDxViTriLayMucTieuNotNull => _dxViTriLayMucTieu ?? 0;
-  Future<void> caiDatDxViTriLayMucTieu({required double? value}) async {
+  void onVoidCaiDatDxViTriLayMucTieu({required double? value}) {
     if (value != null && value != 0) {
       if (value.isNaN == false && value.isFinite == true) {
         _dxViTriLayMucTieu = value;
@@ -112,7 +112,7 @@ abstract class VienDanThongMinh extends VIENDANTANCONGCOBAN {
   double? _dyViTriLayMucTieu;
   double? get getDyViTriLayMucTieu => _dyViTriLayMucTieu;
   double get getDyViTriLayMucTieuNotNull => _dyViTriLayMucTieu ?? 0;
-  Future<void> caiDatDyViTriLayMucTieu({required double? value}) async {
+  void onVoidCaiDatDyViTriLayMucTieu({required double? value}) {
     if (value != null && value != 0) {
       if (value.isNaN == false && value.isFinite == true) {
         _dyViTriLayMucTieu = value;
@@ -307,6 +307,9 @@ abstract class VienDanThongMinh extends VIENDANTANCONGCOBAN {
     return;
   }
 
+  /// -----
+  /// TODO:
+  /// -----
   QUANLYTRANGTHAISUKIENVACHAMTHUOCPHUONGTIEN? _suKienVaChamThuocPhuongTien;
   QUANLYTRANGTHAISUKIENVACHAMTHUOCPHUONGTIEN? get getSuKienVaChamThuocPhuongTien => _suKienVaChamThuocPhuongTien;
   Future<void> caiDatSuKienVaChamThuocPhuongTien({required QUANLYTRANGTHAISUKIENVACHAMTHUOCPHUONGTIEN? value, bool? caiDatUuTien}) async {
@@ -493,19 +496,19 @@ abstract class VienDanThongMinh extends VIENDANTANCONGCOBAN {
   /// TODO: Xác Định Tọa Độ Mục Tiêu Và Hướng Bay
   /// -----
   Future<void> onXacDinhViTriPhuongTienHoatDongLayMucTieu() async {
-    if (getTrangThaiPhuongTienHoatDongLayMucTieu?.getMoHinh?.getMoHinh?.getTrangThaiTrongChienDau?.getTrangThaiTonTai?.isKhoiTaoHoanTat() == true) {
+    if (getPhuongTienHoatDongLayMucTieu?.getTrangThaiTrongChienDau?.getTrangThaiTonTai?.isKhoiTaoHoanTat() == true) {
       MoHinhViTriPhuongTien? viTriPhuongTien = getPhuongTienHoatDongLayMucTieu?.getPhuongThuc?.getPhuongThucBay?.getViTri;
 
-      double chieuRongThanPhuongTien = viTriPhuongTien?.getChieuRongThan ?? 0;
-      double chieuCaoThanPhuongTien = viTriPhuongTien?.getChieuCaoThan ?? 0;
+      // double chieuRongThanPhuongTien = viTriPhuongTien?.getChieuRongThan ?? 0;
+      // double chieuCaoThanPhuongTien = viTriPhuongTien?.getChieuCaoThan ?? 0;
 
-      await caiDatDxViTriLayMucTieu(value: (viTriPhuongTien?.getDx ?? 0) + (chieuRongThanPhuongTien / 2));
-      await caiDatDyViTriLayMucTieu(value: (viTriPhuongTien?.getDy ?? 0) + (chieuCaoThanPhuongTien / 2));
+       onVoidCaiDatDxViTriLayMucTieu(value: (viTriPhuongTien?.getDxTrongTam ?? 0));
+       onVoidCaiDatDyViTriLayMucTieu(value: (viTriPhuongTien?.getDyTrongTam ?? 0));
     } else {
       if (await getDinhHuongBay?.isDinhHuongTheoViTriPhuongTienLayMucTieu() == true) {
-        await caiDatDxViTriLayMucTieu(value: null);
-        await caiDatDyViTriLayMucTieu(value: null);
-        await getDinhHuongBay?.caiDatDinhHuongTheoQuanTinhLichSuDiChuyen();
+         onVoidCaiDatDxViTriLayMucTieu(value: null);
+         onVoidCaiDatDyViTriLayMucTieu(value: null);
+        // await getDinhHuongBay?.caiDatDinhHuongTheoQuanTinhLichSuDiChuyen();
       }
     }
 
@@ -521,10 +524,13 @@ abstract class VienDanThongMinh extends VIENDANTANCONGCOBAN {
 
   Future<void> timKiemXacDinhMucTieuNgauNhienDuyNhat() async {
     if (getPhuongTienHoatDongLayMucTieu == null) {
+
       if (getSuKienVaChamThuocPhuongTien?.getDanhSachMaDinhDanhPhuongTienHoatDong.isNotEmpty == true) {
+        List<String> danhSachMaDinhDanhPhuongTienHoatDong = List.from(getSuKienVaChamThuocPhuongTien?.getDanhSachMaDinhDanhPhuongTienHoatDong ?? []);
+
         final random = Random();
         String? maDinhDanh =
-            getSuKienVaChamThuocPhuongTien?.getDanhSachMaDinhDanhPhuongTienHoatDong[random.nextInt(getSuKienVaChamThuocPhuongTien?.getDanhSachMaDinhDanhPhuongTienHoatDong.length ?? 0)];
+        danhSachMaDinhDanhPhuongTienHoatDong[random.nextInt(danhSachMaDinhDanhPhuongTienHoatDong.length ?? 0)];
 
         // MoHinhPhuongTienTongQuat? phuongTienLayMucTieu =
         TRANGTHAIPHUONGTIENVACHAM? phuongTienLayMucTieu =
@@ -614,7 +620,7 @@ abstract class VienDanThongMinh extends VIENDANTANCONGCOBAN {
     final double dxDiemKetThuc = getDxViTriLayMucTieuNotNull;
     final double dyDiemKetThuc = getDyViTriLayMucTieuNotNull;
 
-    if ((dxDiemKetThuc == 0 || dyDiemKetThuc == 0) || await getDinhHuongBay?.isDinhHuongTheoQuanTinhLichSuDiChuyen() == true) {
+    if (getPhuongTienHoatDongLayMucTieu?.getTrangThaiTrongChienDau?.getTrangThaiTonTai?.isHuyHoanTat() == true) {
       await onDieuKhienBayTheoLichSu();
 
       return;
@@ -622,10 +628,10 @@ abstract class VienDanThongMinh extends VIENDANTANCONGCOBAN {
 
     final Offset diemKetThuc = Offset(dxDiemKetThuc, dyDiemKetThuc);
 
-    final double dxDiemBatDau = getDxNotNull;
-    final double dyDiemBatDau = getDyNotNull;
-    final double bienDuoi = getBienDuoiNotNull;
-    final double bienTren = getBienTrenNotNull;
+    final double dxDiemBatDau = getDxTrongTam ?? 0;
+    final double dyDiemBatDau = getDyTrongTam ?? 0;
+    // final double bienDuoi = getBienDuoiNotNull;
+    // final double bienTren = getBienTrenNotNull;
     final Offset diemBatDau = Offset(dxDiemBatDau, dyDiemBatDau);
 
     double step = 5.0; // Khoảng cách giữa các điểm
@@ -649,40 +655,34 @@ abstract class VienDanThongMinh extends VIENDANTANCONGCOBAN {
     /// -----
     /// TODO: Cập Nhật Vị Trí Mới
     /// -----
-    await caiDatDxTrongTamCapNhatCacGiaTriBien(value: dxTrongTamCapNhat);
-    await caiDatDyTrongTamCapNhatCacGiaTriBien(value: dyTrongTamCapNhat);
+     onVoidCaiDatDxTrongTamCapNhatCacGiaTriBien(value: dxTrongTamCapNhat);
+     onVoidCaiDatDyTrongTamCapNhatCacGiaTriBien(value: dyTrongTamCapNhat);
 
     /// TODO: Cập nhật góc quay của viên đạn so với trục Oy
     double angle = atan2(diemKetThuc.dx - diemBatDau.dx, diemKetThuc.dy - diemBatDau.dy);
     angle = angle * (-1); // Điều chỉnh góc để lấy góc với trục y
-    await caiDatGocXoay(value: angle);
+    onVoidCaiDatGocXoay(value: angle);
 
     return;
   }
 
   Future<void> onDieuKhienBayTheoLichSu() async {
-    String? maDinhDanhDoiTuongMucTieu = getMaDinhDanhDoiTuongMucTieu;
+    final dxDiemTrungGianA = getLichSuDxTrongTam ?? 0;
+    final dyDiemTrungGianA = getLichSuDyTrongTam ?? 0;
 
-    final dxDiemTrungGianA = getLichSuDxNotNull;
-    final dyDiemTrungGianA = getLichSuDyNotNull;
-    final bienTraiDiemTrungGianA = getLichSuBienTraiNotNull;
-    final bienDuoiDiemTrungGianA = getLichSuBienDuoiNotNull;
-
-    final dxDiemTrungGianB = getDxNotNull;
-    final dyDiemTrungGianB = getDyNotNull;
-    final bienTraiDiemTrungGianB = getBienTraiNotNull;
-    final bienDuoiDiemTrungGianB = getBienDuoiNotNull;
+    final dxDiemTrungGianB = getDxTrongTam ?? 0;
+    final dyDiemTrungGianB = getDyTrongTam ?? 0;
 
     Offset offsetA = Offset(dxDiemTrungGianA, dyDiemTrungGianA);
     Offset offsetB = Offset(dxDiemTrungGianB, dyDiemTrungGianB);
 
     Offset diemKetThuc = calculatePointC(offsetA, offsetB, 3000);
 
-    await caiDatDxViTriLayMucTieu(value: diemKetThuc.dx);
-    await caiDatDyViTriLayMucTieu(value: diemKetThuc.dy);
+    onVoidCaiDatDxViTriLayMucTieu(value: diemKetThuc.dx);
+    onVoidCaiDatDyViTriLayMucTieu(value: diemKetThuc.dy);
 
-    final dxDiemBatDau = getDxNotNull;
-    final dyDiemBatDau = getDyNotNull;
+    final dxDiemBatDau = getDxTrongTam ?? 0;
+    final dyDiemBatDau = getDyTrongTam ?? 0;
     final Offset diemBatDau = Offset(dxDiemBatDau, dyDiemBatDau);
 
     double step = 5.0; // Khoảng cách giữa các điểm
@@ -721,13 +721,13 @@ abstract class VienDanThongMinh extends VIENDANTANCONGCOBAN {
     /// -----
     /// TODO: Cập Nhật Vị Trí Mới
     /// -----
-    await caiDatDxTrongTamCapNhatCacGiaTriBien(value: dxTrongTamCapNhat);
-    await caiDatDyTrongTamCapNhatCacGiaTriBien(value: dyTrongTamCapNhat);
+    onVoidCaiDatDxTrongTamCapNhatCacGiaTriBien(value: dxTrongTamCapNhat);
+    onVoidCaiDatDyTrongTamCapNhatCacGiaTriBien(value: dyTrongTamCapNhat);
 
     /// TODO: Cập nhật góc quay của viên đạn so với trục Oy
     double angle = atan2(diemKetThuc.dx - diemBatDau.dx, diemKetThuc.dy - diemBatDau.dy);
     angle = angle * (-1); // Điều chỉnh góc để lấy góc với trục y
-    await caiDatGocXoay(value: angle);
+    onVoidCaiDatGocXoay(value: angle);
 
     return;
   }
