@@ -104,6 +104,14 @@ class QuanLyTrangThaiChienDauCoTrucTiepThucThiChienDau with KhungThucThiCoBan, D
   /// -----
   /// TODO:
   /// -----
+  Future<void> onResetViTriChienDauCo() async {
+
+    return;
+  }
+
+  /// -----
+  /// TODO:
+  /// -----
   Future<void> onTaiTaiNguyenChienDauCo() async {
 
     if (getTrangThai?.getMoHinh is ChienDauCoDangCapSao00E03SS01) {

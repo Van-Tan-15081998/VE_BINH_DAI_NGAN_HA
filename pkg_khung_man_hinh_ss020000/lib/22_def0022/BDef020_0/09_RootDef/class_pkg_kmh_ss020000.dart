@@ -487,14 +487,14 @@ mixin KICHBANDIEUKHIENTHUOCCAPCOBAN {
   /// -----
   /// TODO: Kích Hoạt Khung Màn Hình Thuộc Cấp SS300400 [Thực Thi Nhiệm Vụ Chiến Thắng]
   /// -----
-  Future<void> onKichHoatKhungManHinhThuocCapSS300400() async {
+  Future<void> onKichHoatKhungManHinhThuocCapSS300400ChienThang() async {
     try {
       /// -----
       /// TODO:
       /// -----
     } catch (e) {
       await onReportRootIssue(
-        nameFunction: 'onKichHoatKhungManHinhThuocCapSS300400',
+        nameFunction: 'onKichHoatKhungManHinhThuocCapSS300400ChienThang',
       );
     }
 
@@ -505,14 +505,14 @@ mixin KICHBANDIEUKHIENTHUOCCAPCOBAN {
   /// -----
   /// TODO: Hủy Kích Hoạt Khung Màn Hình Thuộc Cấp SS300400 [Thực Thi Nhiệm Vụ Chiến Thắng]
   /// -----
-  Future<void> onHuyKichHoatKhungManHinhThuocCapSS300400() async {
+  Future<void> onHuyKichHoatKhungManHinhThuocCapSS300400ChienThang() async {
     try {
       /// -----
       /// TODO:
       /// -----
     } catch (e) {
       await onReportRootIssue(
-        nameFunction: 'onHuyKichHoatKhungManHinhThuocCapSS300400',
+        nameFunction: 'onHuyKichHoatKhungManHinhThuocCapSS300400ChienThang',
       );
     }
 

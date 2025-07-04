@@ -9,24 +9,14 @@ class QUANLYTHANHPHANVANBANTHUOCCAP extends QUANLYTHANHPHANVANBANTHUOCCAPCOBAN {
   /// -----
   /// TODO:
   /// -----
-  QUANLYTHANHPHANVANBANTHUOCCAP({
-    required super.globalState,
-    required super.gameController,
-    required super.thanhPhanQuanLyThuocCapTrucTiep,
-    required super.sizeDx,
-    required super.sizeDy,
-  });
+  QUANLYTHANHPHANVANBANTHUOCCAP({required super.globalState, required super.gameController, required super.thanhPhanQuanLyThuocCapTrucTiep, required super.sizeDx, required super.sizeDy});
 
   /// -----
   /// TODO:
   /// -----
   VANBANDINHDANHKHUNGMANHINH? _vanBanDinhDanhKhungManHinh;
-  VANBANDINHDANHKHUNGMANHINH? get getVanBanDinhDanhKhungManHinh =>
-      _vanBanDinhDanhKhungManHinh;
-  Future<void> onCaiDatVanBanDinhDanhKhungManHinh({
-    required VANBANDINHDANHKHUNGMANHINH? value,
-    bool? caiDatUuTien,
-  }) async {
+  VANBANDINHDANHKHUNGMANHINH? get getVanBanDinhDanhKhungManHinh => _vanBanDinhDanhKhungManHinh;
+  Future<void> onCaiDatVanBanDinhDanhKhungManHinh({required VANBANDINHDANHKHUNGMANHINH? value, bool? caiDatUuTien}) async {
     if (caiDatUuTien == true) {
       _vanBanDinhDanhKhungManHinh = value;
     } else {
@@ -41,17 +31,8 @@ class QUANLYTHANHPHANVANBANTHUOCCAP extends QUANLYTHANHPHANVANBANTHUOCCAPCOBAN {
   /// TODO: Add Comp Root
   /// -----
   @override
-  Future<void> onAddRoot({
-    required FlameGame? flameGame,
-    required Component? component,
-  }) async {
-    await Future.wait([
-      onAddComponent(
-        flameGame: null,
-        parentComponent: component,
-        childComponent: getVanBanDinhDanhKhungManHinh,
-      ).catchError((e) => null),
-    ]);
+  Future<void> onAddRoot({required FlameGame? flameGame, required Component? component}) async {
+    await Future.wait([onAddComponent(flameGame: null, parentComponent: component, childComponent: getVanBanDinhDanhKhungManHinh).catchError((e) => null)]);
 
     /// -----
     /// TODO: Add Comp Root For SubCom
@@ -66,16 +47,8 @@ class QUANLYTHANHPHANVANBANTHUOCCAP extends QUANLYTHANHPHANVANBANTHUOCCAPCOBAN {
   /// TODO: Add Comp Root For SubCom
   /// -----
   @override
-  Future<void> onAddRootForSubCom({
-    required FlameGame? flameGame,
-    required Component? component,
-  }) async {
-    await Future.wait([
-      getVanBanDinhDanhKhungManHinh
-              ?.onAddRoot(flameGame: null, component: component)
-              .catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
-    ]);
+  Future<void> onAddRootForSubCom({required FlameGame? flameGame, required Component? component}) async {
+    await Future.wait([getVanBanDinhDanhKhungManHinh?.onAddRoot(flameGame: null, component: component).catchError((e) => null) ?? onReportRootIssue(nameFunction: '')]);
 
     ///
     return;
@@ -109,10 +82,7 @@ class QUANLYTHANHPHANVANBANTHUOCCAP extends QUANLYTHANHPHANVANBANTHUOCCAPCOBAN {
     /// -----
     /// TODO:
     /// -----
-    await Future.wait([
-      getVanBanDinhDanhKhungManHinh?.onSetupRoot().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
-    ]);
+    await Future.wait([getVanBanDinhDanhKhungManHinh?.onSetupRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: '')]);
 
     ///
     return;
@@ -128,10 +98,7 @@ class QUANLYTHANHPHANVANBANTHUOCCAP extends QUANLYTHANHPHANVANBANTHUOCCAPCOBAN {
     /// -----
     /// TODO:
     /// -----
-    await Future.wait([
-      getVanBanDinhDanhKhungManHinh?.onInitRoot().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
-    ]);
+    await Future.wait([getVanBanDinhDanhKhungManHinh?.onInitRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: '')]);
 
     ///
     return;

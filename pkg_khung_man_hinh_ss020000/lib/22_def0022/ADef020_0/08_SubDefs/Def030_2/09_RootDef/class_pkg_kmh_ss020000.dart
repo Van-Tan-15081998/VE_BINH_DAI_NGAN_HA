@@ -1726,48 +1726,48 @@ abstract class THANHPHANMANHINHCUONDYTHUOCCAPCOBAN extends PositionComponent
   /// TODO: Kích Hoạt Khung Màn Hình Thuộc Cấp SS300400 [Thực Thi Nhiệm Vụ Chiến Thắng]
   /// -----
   @override
-  Future<void> onKichHoatKhungManHinhThuocCapSS300400() async {
+  Future<void> onKichHoatKhungManHinhThuocCapSS300400ChienThang() async {
     try {
       /// -----
       /// TODO:
       /// -----
       await Future.wait([
         getQuanLyThanhPhanManHinhThuocCap
-                ?.onKichHoatKhungManHinhThuocCapSS300400()
+                ?.onKichHoatKhungManHinhThuocCapSS300400ChienThang()
                 .catchError((e) => null) ??
             onReportRootIssue(
-              nameFunction: 'onKichHoatKhungManHinhThuocCapSS300400',
+              nameFunction: 'onKichHoatKhungManHinhThuocCapSS300400ChienThang',
             ),
         getQuanLyThanhPhanNutBamThuocCap
-                ?.onKichHoatKhungManHinhThuocCapSS300400()
+                ?.onKichHoatKhungManHinhThuocCapSS300400ChienThang()
                 .catchError((e) => null) ??
             onReportRootIssue(
-              nameFunction: 'onKichHoatKhungManHinhThuocCapSS300400',
+              nameFunction: 'onKichHoatKhungManHinhThuocCapSS300400ChienThang',
             ),
         getQuanLyThanhPhanVanBanThuocCap
-                ?.onKichHoatKhungManHinhThuocCapSS300400()
+                ?.onKichHoatKhungManHinhThuocCapSS300400ChienThang()
                 .catchError((e) => null) ??
             onReportRootIssue(
-              nameFunction: 'onKichHoatKhungManHinhThuocCapSS300400',
+              nameFunction: 'onKichHoatKhungManHinhThuocCapSS300400ChienThang',
             ),
         getQuanLyThanhPhanHinhAnhThuocCap
-                ?.onKichHoatKhungManHinhThuocCapSS300400()
+                ?.onKichHoatKhungManHinhThuocCapSS300400ChienThang()
                 .catchError((e) => null) ??
             onReportRootIssue(
-              nameFunction: 'onKichHoatKhungManHinhThuocCapSS300400',
+              nameFunction: 'onKichHoatKhungManHinhThuocCapSS300400ChienThang',
             ),
         getQuanLyThanhPhanTichHopThuocCap
-                ?.onKichHoatKhungManHinhThuocCapSS300400()
+                ?.onKichHoatKhungManHinhThuocCapSS300400ChienThang()
                 .catchError((e) => null) ??
             onReportRootIssue(
-              nameFunction: 'onKichHoatKhungManHinhThuocCapSS300400',
+              nameFunction: 'onKichHoatKhungManHinhThuocCapSS300400ChienThang',
             ),
       ]);
 
       ///
     } catch (e) {
       await onReportRootIssue(
-        nameFunction: 'onKichHoatKhungManHinhThuocCapSS300400',
+        nameFunction: 'onKichHoatKhungManHinhThuocCapSS300400ChienThang',
       );
     }
 
@@ -1779,48 +1779,48 @@ abstract class THANHPHANMANHINHCUONDYTHUOCCAPCOBAN extends PositionComponent
   /// TODO: Hủy Kích Hoạt Khung Màn Hình Thuộc Cấp SS300400 [Thực Thi Nhiệm Vụ Chiến Thắng]
   /// -----
   @override
-  Future<void> onHuyKichHoatKhungManHinhThuocCapSS300400() async {
+  Future<void> onHuyKichHoatKhungManHinhThuocCapSS300400ChienThang() async {
     try {
       /// -----
       /// TODO:
       /// -----
       await Future.wait([
         getQuanLyThanhPhanManHinhThuocCap
-                ?.onHuyKichHoatKhungManHinhThuocCapSS300400()
+                ?.onHuyKichHoatKhungManHinhThuocCapSS300400ChienThang()
                 .catchError((e) => null) ??
             onReportRootIssue(
-              nameFunction: 'onHuyKichHoatKhungManHinhThuocCapSS300400',
+              nameFunction: 'onHuyKichHoatKhungManHinhThuocCapSS300400ChienThang',
             ),
         getQuanLyThanhPhanNutBamThuocCap
-                ?.onHuyKichHoatKhungManHinhThuocCapSS300400()
+                ?.onHuyKichHoatKhungManHinhThuocCapSS300400ChienThang()
                 .catchError((e) => null) ??
             onReportRootIssue(
-              nameFunction: 'onHuyKichHoatKhungManHinhThuocCapSS300400',
+              nameFunction: 'onHuyKichHoatKhungManHinhThuocCapSS300400ChienThang',
             ),
         getQuanLyThanhPhanVanBanThuocCap
-                ?.onHuyKichHoatKhungManHinhThuocCapSS300400()
+                ?.onHuyKichHoatKhungManHinhThuocCapSS300400ChienThang()
                 .catchError((e) => null) ??
             onReportRootIssue(
-              nameFunction: 'onHuyKichHoatKhungManHinhThuocCapSS300400',
+              nameFunction: 'onHuyKichHoatKhungManHinhThuocCapSS300400ChienThang',
             ),
         getQuanLyThanhPhanHinhAnhThuocCap
-                ?.onHuyKichHoatKhungManHinhThuocCapSS300400()
+                ?.onHuyKichHoatKhungManHinhThuocCapSS300400ChienThang()
                 .catchError((e) => null) ??
             onReportRootIssue(
-              nameFunction: 'onHuyKichHoatKhungManHinhThuocCapSS300400',
+              nameFunction: 'onHuyKichHoatKhungManHinhThuocCapSS300400ChienThang',
             ),
         getQuanLyThanhPhanTichHopThuocCap
-                ?.onHuyKichHoatKhungManHinhThuocCapSS300400()
+                ?.onHuyKichHoatKhungManHinhThuocCapSS300400ChienThang()
                 .catchError((e) => null) ??
             onReportRootIssue(
-              nameFunction: 'onHuyKichHoatKhungManHinhThuocCapSS300400',
+              nameFunction: 'onHuyKichHoatKhungManHinhThuocCapSS300400ChienThang',
             ),
       ]);
 
       ///
     } catch (e) {
       await onReportRootIssue(
-        nameFunction: 'onHuyKichHoatKhungManHinhThuocCapSS300400',
+        nameFunction: 'onHuyKichHoatKhungManHinhThuocCapSS300400ChienThang',
       );
     }
 

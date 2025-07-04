@@ -118,6 +118,11 @@ class KHUNGMANHINHCHINH extends KHUNGMANHINHGAMECOSO {
         ?.getChienDauCoTrucTiepThucThiChienDau
         ?.onTaiTaiNguyenChienDauCo();
 
+    await getGlobalState
+        ?.getChienDauCoTongQuat
+        ?.getDieuKhienDiChuyenChienDauCo
+        ?.onResetViTriChienDauCo();
+
     await Future.delayed(Duration.zero);
     await getGlobalState
         ?.getBangDieuKhienKichBanChienDauTheoGiaiDoan

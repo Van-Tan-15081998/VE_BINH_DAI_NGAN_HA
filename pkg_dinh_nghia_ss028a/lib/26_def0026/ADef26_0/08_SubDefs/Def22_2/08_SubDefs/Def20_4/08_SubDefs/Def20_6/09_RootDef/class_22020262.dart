@@ -620,7 +620,10 @@ abstract class VienDanThongMinh extends VIENDANTANCONGCOBAN {
     final double dxDiemKetThuc = getDxViTriLayMucTieuNotNull;
     final double dyDiemKetThuc = getDyViTriLayMucTieuNotNull;
 
-    if (getPhuongTienHoatDongLayMucTieu?.getTrangThaiTrongChienDau?.getTrangThaiTonTai?.isHuyHoanTat() == true) {
+    if (getPhuongTienHoatDongLayMucTieu?.getTrangThaiTrongChienDau?.getTrangThaiTonTai?.isHuyHoanTat() == true ||
+        getPhuongTienHoatDongLayMucTieu?.getDuLieuJsonLamPhang['[KICH_HOAT_HOAT_DONG]'] == false ||
+        getPhuongTienHoatDongLayMucTieu?.getDuLieuJsonLamPhang['[DI_CHUYEN_HIEN_THI]'] == false
+    ) {
       await onDieuKhienBayTheoLichSu();
 
       return;

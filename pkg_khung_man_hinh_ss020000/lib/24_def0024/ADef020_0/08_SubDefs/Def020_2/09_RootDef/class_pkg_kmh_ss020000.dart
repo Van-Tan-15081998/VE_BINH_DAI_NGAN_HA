@@ -866,7 +866,7 @@ abstract class QUANLYTHANHPHANMANHINHTHUOCCAPCOBAN
   /// -----
   /// TODO: Kích Hoạt Khung Màn Hình Thuộc Cấp SS300400 [Thực Thi Nhiệm Vụ Chiến Thắng]
   /// -----
-  Future<void> onKichHoatKhungManHinhThuocCapSS300400() async {
+  Future<void> onKichHoatKhungManHinhThuocCapSS300400ChienThang() async {
     try {
       /// -----
       /// TODO:
@@ -874,14 +874,14 @@ abstract class QUANLYTHANHPHANMANHINHTHUOCCAPCOBAN
       if (getDanhSachThanhPhanManHinhThuocCap.isNotEmpty == true) {
         for (THANHPHANMANHINHTHUOCCAPCOBAN? thanhPhan
             in getDanhSachThanhPhanManHinhThuocCap) {
-          await thanhPhan?.onKichHoatKhungManHinhThuocCapSS300400();
+          await thanhPhan?.onKichHoatKhungManHinhThuocCapSS300400ChienThang();
         }
       }
 
       ///
     } catch (e) {
       await onReportRootIssue(
-        nameFunction: 'onKichHoatKhungManHinhThuocCapSS300400',
+        nameFunction: 'onKichHoatKhungManHinhThuocCapSS300400ChienThang',
       );
     }
 
@@ -892,7 +892,7 @@ abstract class QUANLYTHANHPHANMANHINHTHUOCCAPCOBAN
   /// -----
   /// TODO: Hủy Kích Hoạt Khung Màn Hình Thuộc Cấp SS300400 [Thực Thi Nhiệm Vụ Chiến Thắng]
   /// -----
-  Future<void> onHuyKichHoatKhungManHinhThuocCapSS300400() async {
+  Future<void> onHuyKichHoatKhungManHinhThuocCapSS300400ChienThang() async {
     try {
       /// -----
       /// TODO:
@@ -900,14 +900,14 @@ abstract class QUANLYTHANHPHANMANHINHTHUOCCAPCOBAN
       if (getDanhSachThanhPhanManHinhThuocCap.isNotEmpty == true) {
         for (THANHPHANMANHINHTHUOCCAPCOBAN? thanhPhan
             in getDanhSachThanhPhanManHinhThuocCap) {
-          await thanhPhan?.onHuyKichHoatKhungManHinhThuocCapSS300400();
+          await thanhPhan?.onHuyKichHoatKhungManHinhThuocCapSS300400ChienThang();
         }
       }
 
       ///
     } catch (e) {
       await onReportRootIssue(
-        nameFunction: 'onHuyKichHoatKhungManHinhThuocCapSS300400',
+        nameFunction: 'onHuyKichHoatKhungManHinhThuocCapSS300400ChienThang',
       );
     }
 

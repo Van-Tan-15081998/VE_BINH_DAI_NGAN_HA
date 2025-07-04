@@ -10,28 +10,18 @@ import 'package:pkg_khung_man_hinh_ss300500/pkg_khung_man_hinh_ss300500_exp.dart
 /// -----
 /// TODO: Quản Lý Thành Phần Màn Hình
 /// -----
-class QUANLYTHANHPHANMANHINHTHUOCCAP
-    extends QUANLYTHANHPHANMANHINHTHUOCCAPCOBAN {
+class QUANLYTHANHPHANMANHINHTHUOCCAP extends QUANLYTHANHPHANMANHINHTHUOCCAPCOBAN {
   /// -----
   /// TODO:
   /// -----
-  QUANLYTHANHPHANMANHINHTHUOCCAP({
-    required super.globalState,
-    required super.gameController,
-    required super.thanhPhanQuanLyThuocCapTrucTiep,
-    required super.sizeDx,
-    required super.sizeDy,
-  });
+  QUANLYTHANHPHANMANHINHTHUOCCAP({required super.globalState, required super.gameController, required super.thanhPhanQuanLyThuocCapTrucTiep, required super.sizeDx, required super.sizeDy});
 
   /// -----
   /// TODO: Khung Màn Hình Loading Chiến Đấu
   /// -----
   KHUNGMANHINHSS300100? _khungManHinhSS300100;
   KHUNGMANHINHSS300100? get getKhungManHinhSS300100 => _khungManHinhSS300100;
-  Future<void> onCaiDatKhungManHinhSS300100({
-    required KHUNGMANHINHSS300100? value,
-    bool? caiDatUuTien,
-  }) async {
+  Future<void> onCaiDatKhungManHinhSS300100({required KHUNGMANHINHSS300100? value, bool? caiDatUuTien}) async {
     if (caiDatUuTien == true) {
       _khungManHinhSS300100 = value;
     } else {
@@ -47,10 +37,7 @@ class QUANLYTHANHPHANMANHINHTHUOCCAP
   /// -----
   KHUNGMANHINHSS300200? _khungManHinhSS300200;
   KHUNGMANHINHSS300200? get getKhungManHinhSS300200 => _khungManHinhSS300200;
-  Future<void> onCaiDatKhungManHinhSS300200({
-    required KHUNGMANHINHSS300200? value,
-    bool? caiDatUuTien,
-  }) async {
+  Future<void> onCaiDatKhungManHinhSS300200({required KHUNGMANHINHSS300200? value, bool? caiDatUuTien}) async {
     if (caiDatUuTien == true) {
       _khungManHinhSS300200 = value;
     } else {
@@ -66,10 +53,7 @@ class QUANLYTHANHPHANMANHINHTHUOCCAP
   /// -----
   KHUNGMANHINHSS300300? _khungManHinhSS300300;
   KHUNGMANHINHSS300300? get getKhungManHinhSS300300 => _khungManHinhSS300300;
-  Future<void> onCaiDatKhungManHinhSS300300({
-    required KHUNGMANHINHSS300300? value,
-    bool? caiDatUuTien,
-  }) async {
+  Future<void> onCaiDatKhungManHinhSS300300({required KHUNGMANHINHSS300300? value, bool? caiDatUuTien}) async {
     if (caiDatUuTien == true) {
       _khungManHinhSS300300 = value;
     } else {
@@ -85,10 +69,7 @@ class QUANLYTHANHPHANMANHINHTHUOCCAP
   /// -----
   KHUNGMANHINHSS300400? _khungManHinhSS300400;
   KHUNGMANHINHSS300400? get getKhungManHinhSS300400 => _khungManHinhSS300400;
-  Future<void> onCaiDatKhungManHinhSS300400({
-    required KHUNGMANHINHSS300400? value,
-    bool? caiDatUuTien,
-  }) async {
+  Future<void> onCaiDatKhungManHinhSS300400({required KHUNGMANHINHSS300400? value, bool? caiDatUuTien}) async {
     if (caiDatUuTien == true) {
       _khungManHinhSS300400 = value;
     } else {
@@ -104,10 +85,7 @@ class QUANLYTHANHPHANMANHINHTHUOCCAP
   /// -----
   KHUNGMANHINHSS300500? _khungManHinhSS300500;
   KHUNGMANHINHSS300500? get getKhungManHinhSS300500 => _khungManHinhSS300500;
-  Future<void> onCaiDatKhungManHinhSS300500({
-    required KHUNGMANHINHSS300500? value,
-    bool? caiDatUuTien,
-  }) async {
+  Future<void> onCaiDatKhungManHinhSS300500({required KHUNGMANHINHSS300500? value, bool? caiDatUuTien}) async {
     if (caiDatUuTien == true) {
       _khungManHinhSS300500 = value;
     } else {
@@ -122,40 +100,17 @@ class QUANLYTHANHPHANMANHINHTHUOCCAP
   /// TODO: Add Comp Root
   /// -----
   @override
-  Future<void> onAddRoot({
-    required FlameGame? flameGame,
-    required Component? component,
-  }) async {
+  Future<void> onAddRoot({required FlameGame? flameGame, required Component? component}) async {
     try {
       /// -----
       /// TODO:
       /// -----
       await Future.wait([
-        onAddComponent(
-          flameGame: null,
-          parentComponent: component,
-          childComponent: getKhungManHinhSS300100,
-        ).catchError((e) => null),
-        onAddComponent(
-          flameGame: null,
-          parentComponent: component,
-          childComponent: getKhungManHinhSS300200,
-        ).catchError((e) => null),
-        onAddComponent(
-          flameGame: null,
-          parentComponent: component,
-          childComponent: getKhungManHinhSS300300,
-        ).catchError((e) => null),
-        onAddComponent(
-          flameGame: null,
-          parentComponent: component,
-          childComponent: getKhungManHinhSS300400,
-        ).catchError((e) => null),
-        onAddComponent(
-          flameGame: null,
-          parentComponent: component,
-          childComponent: getKhungManHinhSS300500,
-        ).catchError((e) => null),
+        onAddComponent(flameGame: null, parentComponent: component, childComponent: getKhungManHinhSS300100).catchError((e) => null),
+        onAddComponent(flameGame: null, parentComponent: component, childComponent: getKhungManHinhSS300200).catchError((e) => null),
+        onAddComponent(flameGame: null, parentComponent: component, childComponent: getKhungManHinhSS300300).catchError((e) => null),
+        onAddComponent(flameGame: null, parentComponent: component, childComponent: getKhungManHinhSS300400).catchError((e) => null),
+        onAddComponent(flameGame: null, parentComponent: component, childComponent: getKhungManHinhSS300500).catchError((e) => null),
       ]);
 
       /// -----
@@ -174,35 +129,17 @@ class QUANLYTHANHPHANMANHINHTHUOCCAP
   /// TODO: Add Comp Root For SubCom
   /// -----
   @override
-  Future<void> onAddRootForSubCom({
-    required FlameGame? flameGame,
-    required Component? component,
-  }) async {
+  Future<void> onAddRootForSubCom({required FlameGame? flameGame, required Component? component}) async {
     try {
       /// -----
       /// TODO:
       /// -----
       await Future.wait([
-        getKhungManHinhSS300100
-                ?.onAddRoot(flameGame: flameGame, component: component)
-                .catchError((e) => null) ??
-            onReportRootIssue(nameFunction: 'onAddRootForSubCom'),
-        getKhungManHinhSS300200
-                ?.onAddRoot(flameGame: flameGame, component: component)
-                .catchError((e) => null) ??
-            onReportRootIssue(nameFunction: 'onAddRootForSubCom'),
-        getKhungManHinhSS300300
-                ?.onAddRoot(flameGame: flameGame, component: component)
-                .catchError((e) => null) ??
-            onReportRootIssue(nameFunction: 'onAddRootForSubCom'),
-        getKhungManHinhSS300400
-                ?.onAddRoot(flameGame: flameGame, component: component)
-                .catchError((e) => null) ??
-            onReportRootIssue(nameFunction: 'onAddRootForSubCom'),
-        getKhungManHinhSS300500
-                ?.onAddRoot(flameGame: flameGame, component: component)
-                .catchError((e) => null) ??
-            onReportRootIssue(nameFunction: 'onAddRootForSubCom'),
+        getKhungManHinhSS300100?.onAddRoot(flameGame: flameGame, component: component).catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onAddRootForSubCom'),
+        getKhungManHinhSS300200?.onAddRoot(flameGame: flameGame, component: component).catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onAddRootForSubCom'),
+        getKhungManHinhSS300300?.onAddRoot(flameGame: flameGame, component: component).catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onAddRootForSubCom'),
+        getKhungManHinhSS300400?.onAddRoot(flameGame: flameGame, component: component).catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onAddRootForSubCom'),
+        getKhungManHinhSS300500?.onAddRoot(flameGame: flameGame, component: component).catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onAddRootForSubCom'),
       ]);
     } catch (e) {
       await onReportRootIssue(nameFunction: 'onAddRootForSubCom');
@@ -297,11 +234,11 @@ class QUANLYTHANHPHANMANHINHTHUOCCAP
 
       if (getDanhSachThanhPhanManHinhThuocCap.isEmpty == true) {
         getDanhSachThanhPhanManHinhThuocCap.addAll([
-          getKhungManHinhSS300100,
-          getKhungManHinhSS300200,
-          getKhungManHinhSS300300,
-          getKhungManHinhSS300400,
-          getKhungManHinhSS300500,
+          getKhungManHinhSS300100, //
+          getKhungManHinhSS300200, //
+          getKhungManHinhSS300300, //
+          getKhungManHinhSS300400, //
+          getKhungManHinhSS300500, //
         ]);
       }
 
@@ -335,16 +272,11 @@ class QUANLYTHANHPHANMANHINHTHUOCCAP
       /// TODO:
       /// -----
       await Future.wait([
-        getKhungManHinhSS300100?.onSetupRoot().catchError((e) => null) ??
-            onReportRootIssue(nameFunction: 'onSetupRoot'),
-        getKhungManHinhSS300200?.onSetupRoot().catchError((e) => null) ??
-            onReportRootIssue(nameFunction: 'onSetupRoot'),
-        getKhungManHinhSS300300?.onSetupRoot().catchError((e) => null) ??
-            onReportRootIssue(nameFunction: 'onSetupRoot'),
-        getKhungManHinhSS300400?.onSetupRoot().catchError((e) => null) ??
-            onReportRootIssue(nameFunction: 'onSetupRoot'),
-        getKhungManHinhSS300500?.onSetupRoot().catchError((e) => null) ??
-            onReportRootIssue(nameFunction: 'onSetupRoot'),
+        getKhungManHinhSS300100?.onSetupRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onSetupRoot'),
+        getKhungManHinhSS300200?.onSetupRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onSetupRoot'),
+        getKhungManHinhSS300300?.onSetupRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onSetupRoot'),
+        getKhungManHinhSS300400?.onSetupRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onSetupRoot'),
+        getKhungManHinhSS300500?.onSetupRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onSetupRoot'),
       ]);
     } catch (e) {
       await onReportRootIssue(nameFunction: 'onSetupRootForSubCom');
@@ -366,16 +298,11 @@ class QUANLYTHANHPHANMANHINHTHUOCCAP
       /// TODO:
       /// -----
       await Future.wait([
-        getKhungManHinhSS300100?.onInitRoot().catchError((e) => null) ??
-            onReportRootIssue(nameFunction: 'onInitRootForSubCom'),
-        getKhungManHinhSS300200?.onInitRoot().catchError((e) => null) ??
-            onReportRootIssue(nameFunction: 'onInitRootForSubCom'),
-        getKhungManHinhSS300300?.onInitRoot().catchError((e) => null) ??
-            onReportRootIssue(nameFunction: 'onInitRootForSubCom'),
-        getKhungManHinhSS300400?.onInitRoot().catchError((e) => null) ??
-            onReportRootIssue(nameFunction: 'onInitRootForSubCom'),
-        getKhungManHinhSS300500?.onInitRoot().catchError((e) => null) ??
-            onReportRootIssue(nameFunction: 'onInitRootForSubCom'),
+        getKhungManHinhSS300100?.onInitRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onInitRootForSubCom'),
+        getKhungManHinhSS300200?.onInitRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onInitRootForSubCom'),
+        getKhungManHinhSS300300?.onInitRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onInitRootForSubCom'),
+        getKhungManHinhSS300400?.onInitRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onInitRootForSubCom'),
+        getKhungManHinhSS300500?.onInitRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onInitRootForSubCom'),
       ]);
     } catch (e) {
       await onReportRootIssue(nameFunction: 'onInitRootForSubCom');
@@ -389,10 +316,7 @@ class QUANLYTHANHPHANMANHINHTHUOCCAP
   /// TODO: Remove Comp Root
   /// -----
   @override
-  Future<void> onRemoveRoot({
-    required FlameGame? flameGame,
-    required Component? component,
-  }) async {
+  Future<void> onRemoveRoot({required FlameGame? flameGame, required Component? component}) async {
     try {
       /// -----
       /// TODO:
@@ -401,18 +325,10 @@ class QUANLYTHANHPHANMANHINHTHUOCCAP
         // onRemoveComponent(
         //   component: getKhungManHinhSS300100,
         // ).catchError((e) => null),
-        onRemoveComponent(
-          component: getKhungManHinhSS300200,
-        ).catchError((e) => null),
-        onRemoveComponent(
-          component: getKhungManHinhSS300300,
-        ).catchError((e) => null),
-        onRemoveComponent(
-          component: getKhungManHinhSS300400,
-        ).catchError((e) => null),
-        onRemoveComponent(
-          component: getKhungManHinhSS300500,
-        ).catchError((e) => null),
+        onRemoveComponent(component: getKhungManHinhSS300200).catchError((e) => null),
+        onRemoveComponent(component: getKhungManHinhSS300300).catchError((e) => null),
+        onRemoveComponent(component: getKhungManHinhSS300400).catchError((e) => null),
+        onRemoveComponent(component: getKhungManHinhSS300500).catchError((e) => null),
       ]);
 
       /// -----
@@ -437,13 +353,9 @@ class QUANLYTHANHPHANMANHINHTHUOCCAP
       /// TODO:
       /// -----
 
-      getKhungManHinhSS300100?.onKichHoatThanhPhanManHinhThuocCap(
-        kichHoatUuTien: true,
-      );
+      getKhungManHinhSS300100?.onKichHoatThanhPhanManHinhThuocCap(kichHoatUuTien: true);
     } catch (e) {
-      await onReportRootIssue(
-        nameFunction: 'onKichHoatKhungManHinhThuocCapSS300100',
-      );
+      await onReportRootIssue(nameFunction: 'onKichHoatKhungManHinhThuocCapSS300100');
     }
 
     ///
@@ -461,9 +373,7 @@ class QUANLYTHANHPHANMANHINHTHUOCCAP
       /// -----
       getKhungManHinhSS300100?.onHuyKichHoatThanhPhanManHinhThuocCap();
     } catch (e) {
-      await onReportRootIssue(
-        nameFunction: 'onHuyKichHoatKhungManHinhThuocCapSS300100',
-      );
+      await onReportRootIssue(nameFunction: 'onHuyKichHoatKhungManHinhThuocCapSS300100');
     }
 
     ///
@@ -479,13 +389,9 @@ class QUANLYTHANHPHANMANHINHTHUOCCAP
       /// -----
       /// TODO:
       /// -----
-      getKhungManHinhSS300200?.onKichHoatThanhPhanManHinhThuocCap(
-        kichHoatUuTien: true,
-      );
+      getKhungManHinhSS300200?.onKichHoatThanhPhanManHinhThuocCap(kichHoatUuTien: true);
     } catch (e) {
-      await onReportRootIssue(
-        nameFunction: 'onKichHoatKhungManHinhThuocCapSS300200',
-      );
+      await onReportRootIssue(nameFunction: 'onKichHoatKhungManHinhThuocCapSS300200');
     }
 
     ///
@@ -503,9 +409,7 @@ class QUANLYTHANHPHANMANHINHTHUOCCAP
       /// -----
       await getKhungManHinhSS300200?.onHuyKichHoatThanhPhanManHinhThuocCap();
     } catch (e) {
-      await onReportRootIssue(
-        nameFunction: 'onHuyKichHoatKhungManHinhThuocCapSS300200',
-      );
+      await onReportRootIssue(nameFunction: 'onHuyKichHoatKhungManHinhThuocCapSS300200');
     }
 
     ///
@@ -521,13 +425,9 @@ class QUANLYTHANHPHANMANHINHTHUOCCAP
       /// -----
       /// TODO:
       /// -----
-      await getKhungManHinhSS300300?.onKichHoatThanhPhanManHinhThuocCap(
-        kichHoatUuTien: true,
-      );
+      await getKhungManHinhSS300300?.onKichHoatThanhPhanManHinhThuocCap(kichHoatUuTien: true);
     } catch (e) {
-      await onReportRootIssue(
-        nameFunction: 'onKichHoatKhungManHinhThuocCapSS300300',
-      );
+      await onReportRootIssue(nameFunction: 'onKichHoatKhungManHinhThuocCapSS300300');
     }
 
     ///
@@ -545,9 +445,7 @@ class QUANLYTHANHPHANMANHINHTHUOCCAP
       /// -----
       await getKhungManHinhSS300300?.onHuyKichHoatThanhPhanManHinhThuocCap();
     } catch (e) {
-      await onReportRootIssue(
-        nameFunction: 'onHuyKichHoatKhungManHinhThuocCapSS300300',
-      );
+      await onReportRootIssue(nameFunction: 'onHuyKichHoatKhungManHinhThuocCapSS300300');
     }
 
     ///
@@ -558,15 +456,15 @@ class QUANLYTHANHPHANMANHINHTHUOCCAP
   /// TODO: Kích Hoạt Khung Màn Hình Thuộc Cấp SS300400 [Thực Thi Nhiệm Vụ Chiến Thắng]
   /// -----
   @override
-  Future<void> onKichHoatKhungManHinhThuocCapSS300400() async {
+  Future<void> onKichHoatKhungManHinhThuocCapSS300400ChienThang() async {
     try {
       /// -----
       /// TODO:
       /// -----
+
+      await getKhungManHinhSS300400?.onKichHoatThanhPhanManHinhThuocCap(kichHoatUuTien: true);
     } catch (e) {
-      await onReportRootIssue(
-        nameFunction: 'onKichHoatKhungManHinhThuocCapSS300400',
-      );
+      await onReportRootIssue(nameFunction: 'onKichHoatKhungManHinhThuocCapSS300400ChienThang');
     }
 
     ///
@@ -577,15 +475,14 @@ class QUANLYTHANHPHANMANHINHTHUOCCAP
   /// TODO: Hủy Kích Hoạt Khung Màn Hình Thuộc Cấp SS300400 [Thực Thi Nhiệm Vụ Chiến Thắng]
   /// -----
   @override
-  Future<void> onHuyKichHoatKhungManHinhThuocCapSS300400() async {
+  Future<void> onHuyKichHoatKhungManHinhThuocCapSS300400ChienThang() async {
     try {
       /// -----
       /// TODO:
       /// -----
+      await getKhungManHinhSS300400?.onHuyKichHoatThanhPhanManHinhThuocCap();
     } catch (e) {
-      await onReportRootIssue(
-        nameFunction: 'onHuyKichHoatKhungManHinhThuocCapSS300400',
-      );
+      await onReportRootIssue(nameFunction: 'onHuyKichHoatKhungManHinhThuocCapSS300400ChienThang');
     }
 
     ///
@@ -602,9 +499,7 @@ class QUANLYTHANHPHANMANHINHTHUOCCAP
       /// TODO:
       /// -----
     } catch (e) {
-      await onReportRootIssue(
-        nameFunction: 'onKichHoatKhungManHinhThuocCapSS300500',
-      );
+      await onReportRootIssue(nameFunction: 'onKichHoatKhungManHinhThuocCapSS300500');
     }
 
     ///
@@ -621,9 +516,7 @@ class QUANLYTHANHPHANMANHINHTHUOCCAP
       /// TODO:
       /// -----
     } catch (e) {
-      await onReportRootIssue(
-        nameFunction: 'onHuyKichHoatKhungManHinhThuocCapSS300500',
-      );
+      await onReportRootIssue(nameFunction: 'onHuyKichHoatKhungManHinhThuocCapSS300500');
     }
 
     ///

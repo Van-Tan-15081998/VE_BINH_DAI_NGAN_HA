@@ -1107,14 +1107,15 @@ class QUANLYTHANHPHANMANHINHKHUNGMANHINHCHINH
   /// TODO: Kích Hoạt Khung Màn Hình Thuộc Cấp SS300400 [Thực Thi Nhiệm Vụ Chiến Thắng]
   /// -----
   @override
-  Future<void> onKichHoatKhungManHinhThuocCapSS300400() async {
+  Future<void> onKichHoatKhungManHinhThuocCapSS300400ChienThang() async {
     try {
       /// -----
       /// TODO:
       /// -----
+      await getKhungManHinhSS03000?.onKichHoatKhungManHinhThuocCapSS300400ChienThang();
     } catch (e) {
       await onReportRootIssue(
-        nameFunction: 'onKichHoatKhungManHinhThuocCapSS300400',
+        nameFunction: 'onKichHoatKhungManHinhThuocCapSS300400ChienThang',
       );
     }
 
@@ -1126,14 +1127,15 @@ class QUANLYTHANHPHANMANHINHKHUNGMANHINHCHINH
   /// TODO: Hủy Kích Hoạt Khung Màn Hình Thuộc Cấp SS300400 [Thực Thi Nhiệm Vụ Chiến Thắng]
   /// -----
   @override
-  Future<void> onHuyKichHoatKhungManHinhThuocCapSS300400() async {
+  Future<void> onHuyKichHoatKhungManHinhThuocCapSS300400ChienThang() async {
     try {
       /// -----
       /// TODO:
       /// -----
+      await getKhungManHinhSS03000?.onHuyKichHoatKhungManHinhThuocCapSS300400ChienThang();
     } catch (e) {
       await onReportRootIssue(
-        nameFunction: 'onHuyKichHoatKhungManHinhThuocCapSS300400',
+        nameFunction: 'onHuyKichHoatKhungManHinhThuocCapSS300400ChienThang',
       );
     }
 

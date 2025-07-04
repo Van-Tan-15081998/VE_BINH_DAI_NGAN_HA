@@ -130,17 +130,17 @@ class TinhToanSatThuongHuongDenChienDauCo with CauTrucThucThiCoBan, DanhSachQuan
     } else {
       double chiSoMauToiDa = getTrungTamVanHanhThuocTinhChienDauTheoQuyChuan?.getCapDoMauToiDaHienHanh?.getCapDoChuanChinhThuc?.getChiSoTheoCapDo?.getChiSoMauToiDaVanHanh ?? 0;
 
-      if (chiSoMauToiDa - 10 >= 0) {
-        getTrungTamVanHanhThuocTinhChienDauTheoQuyChuan?.getCapDoMauToiDaHienHanh?.getCapDoChuanChinhThuc?.getChiSoTheoCapDo?.onCaiDatChiSoMauToiDaVanHanh(
-          value: chiSoMauToiDa - 10,
-          caiDatUuTien: true,
-        );
-      } else {
-        getTrungTamVanHanhThuocTinhChienDauTheoQuyChuan?.getCapDoMauToiDaHienHanh?.getCapDoChuanChinhThuc?.getChiSoTheoCapDo?.onCaiDatChiSoMauToiDaVanHanh(
-          value: 0,
-          caiDatUuTien: true,
-        );
-      }
+      // if (chiSoMauToiDa - 10 >= 0) {
+      //   getTrungTamVanHanhThuocTinhChienDauTheoQuyChuan?.getCapDoMauToiDaHienHanh?.getCapDoChuanChinhThuc?.getChiSoTheoCapDo?.onCaiDatChiSoMauToiDaVanHanh(
+      //     value: chiSoMauToiDa - 10,
+      //     caiDatUuTien: true,
+      //   );
+      // } else {
+      //   getTrungTamVanHanhThuocTinhChienDauTheoQuyChuan?.getCapDoMauToiDaHienHanh?.getCapDoChuanChinhThuc?.getChiSoTheoCapDo?.onCaiDatChiSoMauToiDaVanHanh(
+      //     value: 0,
+      //     caiDatUuTien: true,
+      //   );
+      // }
 
       DiemToaDoHoanHaoCoBan diemToaDoTrungTam = DiemToaDoHoanHaoCoBan(maDinhDanh: '', dx: 0, dy: 0);
 
@@ -151,6 +151,7 @@ class TinhToanSatThuongHuongDenChienDauCo with CauTrucThucThiCoBan, DanhSachQuan
       diemToaDoTrungTam.onVoidCaiDatDy(value: dy);
 
       phuongTien?.getTrangThaiTrongChienDau?.getTrangThaiTonTai?.onVoidCaiDatHuyHoanTat();
+      // phuongTien?.onVoidCaiDatHuyKichHoatHoatDongThuocGiaiDoan();
 
       /// -----
       /// TODO:

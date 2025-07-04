@@ -886,6 +886,11 @@ class MoHinhPhuongTienTongQuat with CauTrucThucThiCoBan {
         }
 
       if (kiemTraChamChienDauCo == true) {
+
+        if (this is MOHINHPHUONGTIENVUKHIDIEUKHIEN && getDuLieuJsonLamPhang['[TAN_CONG_HIEN_THI]'] == false) {
+          return;
+        }
+
         /// -----
         /// TODO: Xử Lý Va Chạm
         /// -----

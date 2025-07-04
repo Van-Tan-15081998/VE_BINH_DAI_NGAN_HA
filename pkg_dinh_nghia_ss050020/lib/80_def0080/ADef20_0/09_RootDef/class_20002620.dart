@@ -180,22 +180,37 @@ class QUANLYDIEUKHIENCHUYENKICHBANCHIENDAU with CauTrucThucThiCoBan, DanhSachQua
 
     if (getTienTrinhTongQuat?.getTienTrinhThucThiChienDau?.getTrangThai?.getMoHinh?.isDangThucThi() == true) {
       if (getChienDauCoTongQuat
-          ?.getChienDauCoTrucTiepThucThiChienDau
-          ?.getTrangThai
-          ?.getMoHinh
-          ?.getThuocTinhChienDauTheoQuyChuan
-          ?.getThuocTinhChienDauSinhTon
-          ?.getThuocTinhMauToiDa
-          ?.getCapDoMauToiDaHienHanh
-          ?.getCapDoChuanChinhThuc
-          ?.getChiSoTheoCapDo
-          ?.getChiSoMauToiDaVanHanh == 0) {
-
+              ?.getChienDauCoTrucTiepThucThiChienDau
+              ?.getTrangThai
+              ?.getMoHinh
+              ?.getThuocTinhChienDauTheoQuyChuan
+              ?.getThuocTinhChienDauSinhTon
+              ?.getThuocTinhMauToiDa
+              ?.getCapDoMauToiDaHienHanh
+              ?.getCapDoChuanChinhThuc
+              ?.getChiSoTheoCapDo
+              ?.getChiSoMauToiDaVanHanh ==
+          0) {
         await getTienTrinhTongQuat?.getTienTrinhThucThiChienDau?.getTrangThai?.getMoHinh?.caiDatChienDauCoMatKhaNangChienDau();
 
         await getMainGameController?.onKichHoatKhungManHinhThuocCapSS300300();
 
         return;
+      }
+    }
+
+    /// -----
+    /// TODO: Nhận Định Chiến Thắng
+    /// -----
+    if (getTienTrinhTongQuat?.getTienTrinhThucThiChienDau?.getTrangThai?.getMoHinh?.isDangThucThi() == true) {
+      if (getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhTSTC?.getTrangThaiPhuongTienSS070?.getMoHinh?.getTrangThaiTrongChienDau?.getTrangThaiTonTai?.isHuyHoanTat() == true) {
+        if (getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhTSTC?.getTrangThaiPhuongTienSS072?.getMoHinh?.getTrangThaiTrongChienDau?.getTrangThaiTonTai?.isHuyHoanTat() == true) {
+          if (getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhTSTC?.getTrangThaiPhuongTienSS074?.getMoHinh?.getTrangThaiTrongChienDau?.getTrangThaiTonTai?.isHuyHoanTat() == true) {
+            await getTienTrinhTongQuat?.getTienTrinhThucThiChienDau?.getTrangThai?.getMoHinh?.caiDatThucThiHoanTat();
+
+            await getMainGameController?.onKichHoatKhungManHinhThuocCapSS300400ChienThang();
+          }
+        }
       }
     }
 
@@ -242,13 +257,10 @@ class QUANLYDIEUKHIENCHUYENKICHBANCHIENDAU with CauTrucThucThiCoBan, DanhSachQua
       for (int index = 0; index < (getDanhSachMaDinhDanhPhuongTien?.length ?? 0); index++) {
         await Future.delayed(Duration.zero);
         // await getHangarPhuongTienTongQuat?.onTaiTaiNguyenPhuongTienTheoMaDinhDanh(
-        await onGetEntityResourceManagement?.getQuanLyTrangThaiHangarPhuongTien?.onTaiTaiNguyenPhuongTienTheoMaDinhDanh(
-            maDinhDanhPhuongTien: getDanhSachMaDinhDanhPhuongTien?[index]
-        );
+        await onGetEntityResourceManagement?.getQuanLyTrangThaiHangarPhuongTien?.onTaiTaiNguyenPhuongTienTheoMaDinhDanh(maDinhDanhPhuongTien: getDanhSachMaDinhDanhPhuongTien?[index]);
         // getDanhSachMaDinhDanhPhuongTien?.removeAt(index);
       }
     }
-
 
     ///
     return;
@@ -304,42 +316,41 @@ class QUANLYDIEUKHIENCHUYENKICHBANCHIENDAU with CauTrucThucThiCoBan, DanhSachQua
     // );
   }
 
-  Future<void> onTSTCThucThiTanCongLienKichHinhThucSS010({
-    required MoHinhPhuongTienTongQuat? phuongTien,
-    bool? phuongTienSS070,
-    bool? phuongTienSS072,
-    bool? phuongTienSS074,
-  }) async {
-    await getNhiemVuChienDauChonChiDinh?.getMoHinh?.getKichBanChienDau?.getBangDieuKhienGiaiDoanThuocKichBan?.getBangDieuKhienGiaiDoanThuocDoiHinhVKDK
-        ?.onTSTCThucThiTanCongLienKichHinhThucSS010(phuongTien: phuongTien, phuongTienSS070: phuongTienSS070, phuongTienSS072: phuongTienSS072, phuongTienSS074: phuongTienSS074);
+  Future<void> onTSTCThucThiTanCongLienKichHinhThucSS010({required MoHinhPhuongTienTongQuat? phuongTien, bool? phuongTienSS070, bool? phuongTienSS072, bool? phuongTienSS074}) async {
+    await getNhiemVuChienDauChonChiDinh?.getMoHinh?.getKichBanChienDau?.getBangDieuKhienGiaiDoanThuocKichBan?.getBangDieuKhienGiaiDoanThuocDoiHinhVKDK?.onTSTCThucThiTanCongLienKichHinhThucSS010(
+      phuongTien: phuongTien,
+      phuongTienSS070: phuongTienSS070,
+      phuongTienSS072: phuongTienSS072,
+      phuongTienSS074: phuongTienSS074,
+    );
   }
 
-  Future<void> onTSTCThucThiTanCongLienKichHinhThucSS020({
-    required MoHinhPhuongTienTongQuat? phuongTien,
-    bool? phuongTienSS070,
-    bool? phuongTienSS072,
-    bool? phuongTienSS074,
-  }) async {
-    await getNhiemVuChienDauChonChiDinh?.getMoHinh?.getKichBanChienDau?.getBangDieuKhienGiaiDoanThuocKichBan?.getBangDieuKhienGiaiDoanThuocDoiHinhVKDK
-        ?.onTSTCThucThiTanCongLienKichHinhThucSS020(phuongTien: phuongTien, phuongTienSS070: phuongTienSS070, phuongTienSS072: phuongTienSS072, phuongTienSS074: phuongTienSS074);
+  Future<void> onTSTCThucThiTanCongLienKichHinhThucSS020({required MoHinhPhuongTienTongQuat? phuongTien, bool? phuongTienSS070, bool? phuongTienSS072, bool? phuongTienSS074}) async {
+    await getNhiemVuChienDauChonChiDinh?.getMoHinh?.getKichBanChienDau?.getBangDieuKhienGiaiDoanThuocKichBan?.getBangDieuKhienGiaiDoanThuocDoiHinhVKDK?.onTSTCThucThiTanCongLienKichHinhThucSS020(
+      phuongTien: phuongTien,
+      phuongTienSS070: phuongTienSS070,
+      phuongTienSS072: phuongTienSS072,
+      phuongTienSS074: phuongTienSS074,
+    );
   }
 
-  Future<void> onTSTCThucThiTanCongLienKichHinhThucSS030({
-    required MoHinhPhuongTienTongQuat? phuongTien,
-    bool? phuongTienSS070,
-    bool? phuongTienSS072,
-    bool? phuongTienSS074,
-  }) async {
-    await getNhiemVuChienDauChonChiDinh?.getMoHinh?.getKichBanChienDau?.getBangDieuKhienGiaiDoanThuocKichBan?.getBangDieuKhienGiaiDoanThuocDoiHinhVKDK
-        ?.onTSTCThucThiTanCongLienKichHinhThucSS030(phuongTien: phuongTien, phuongTienSS070: phuongTienSS070, phuongTienSS072: phuongTienSS072, phuongTienSS074: phuongTienSS074);
+  Future<void> onTSTCThucThiTanCongLienKichHinhThucSS030({required MoHinhPhuongTienTongQuat? phuongTien, bool? phuongTienSS070, bool? phuongTienSS072, bool? phuongTienSS074}) async {
+    await getNhiemVuChienDauChonChiDinh?.getMoHinh?.getKichBanChienDau?.getBangDieuKhienGiaiDoanThuocKichBan?.getBangDieuKhienGiaiDoanThuocDoiHinhVKDK?.onTSTCThucThiTanCongLienKichHinhThucSS030(
+      phuongTien: phuongTien,
+      phuongTienSS070: phuongTienSS070,
+      phuongTienSS072: phuongTienSS072,
+      phuongTienSS074: phuongTienSS074,
+    );
   }
 
   /// -----
   /// TODO: Kích Hoạt Vật Phẩm Phần Thưởng [Phá Hủy Phương Tiện]
   /// -----
   void onVoidKichHoatVatPhamPhanThuong({required DiemToaDoHoanHaoCoBan? toaDoVaCham}) async {
-    getNhiemVuChienDauChonChiDinh?.getMoHinh?.getKichBanChienDau?.getBangDieuKhienGiaiDoanThuocKichBan?.getBangDieuKhienGiaiDoanThuocDoiHinhVPPT
-      ?.onVoidKichHoatVatPhamPhanThuong(toaDoVaCham: toaDoVaCham);
+    getNhiemVuChienDauChonChiDinh?.getMoHinh?.getKichBanChienDau?.getBangDieuKhienGiaiDoanThuocKichBan?.getBangDieuKhienGiaiDoanThuocDoiHinhVPPT?.onVoidKichHoatVatPhamPhanThuong(
+      toaDoVaCham: toaDoVaCham,
+    );
+
     ///
     return;
   }
@@ -1565,248 +1576,248 @@ class QUANLYDIEUKHIENCHUYENKICHBANCHIENDAU with CauTrucThucThiCoBan, DanhSachQua
       /// TODO: Đội Hình VPTC
       /// -----
       getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVPTC?.getTrangThaiPhuongTienSS020
-          ?.caiDatMoHinh(value: getNhiemVuChienDauChonChiDinh?.getMoHinh?.getKichBanChienDau?.getBangDieuKhienDoiHinhVPTC?.getTrangThaiPhuongTienSS020?.getMoHinh)
-          .catchError((e) => null) ??
+              ?.caiDatMoHinh(value: getNhiemVuChienDauChonChiDinh?.getMoHinh?.getKichBanChienDau?.getBangDieuKhienDoiHinhVPTC?.getTrangThaiPhuongTienSS020?.getMoHinh)
+              .catchError((e) => null) ??
           onReportRootIssue(nameFunction: ''),
       getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVPTC?.getTrangThaiPhuongTienSS022
-          ?.caiDatMoHinh(value: getNhiemVuChienDauChonChiDinh?.getMoHinh?.getKichBanChienDau?.getBangDieuKhienDoiHinhVPTC?.getTrangThaiPhuongTienSS022?.getMoHinh)
-          .catchError((e) => null) ??
+              ?.caiDatMoHinh(value: getNhiemVuChienDauChonChiDinh?.getMoHinh?.getKichBanChienDau?.getBangDieuKhienDoiHinhVPTC?.getTrangThaiPhuongTienSS022?.getMoHinh)
+              .catchError((e) => null) ??
           onReportRootIssue(nameFunction: ''),
       getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVPTC?.getTrangThaiPhuongTienSS024
-          ?.caiDatMoHinh(value: getNhiemVuChienDauChonChiDinh?.getMoHinh?.getKichBanChienDau?.getBangDieuKhienDoiHinhVPTC?.getTrangThaiPhuongTienSS024?.getMoHinh)
-          .catchError((e) => null) ??
+              ?.caiDatMoHinh(value: getNhiemVuChienDauChonChiDinh?.getMoHinh?.getKichBanChienDau?.getBangDieuKhienDoiHinhVPTC?.getTrangThaiPhuongTienSS024?.getMoHinh)
+              .catchError((e) => null) ??
           onReportRootIssue(nameFunction: ''),
       getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVPTC?.getTrangThaiPhuongTienSS026
-          ?.caiDatMoHinh(value: getNhiemVuChienDauChonChiDinh?.getMoHinh?.getKichBanChienDau?.getBangDieuKhienDoiHinhVPTC?.getTrangThaiPhuongTienSS026?.getMoHinh)
-          .catchError((e) => null) ??
+              ?.caiDatMoHinh(value: getNhiemVuChienDauChonChiDinh?.getMoHinh?.getKichBanChienDau?.getBangDieuKhienDoiHinhVPTC?.getTrangThaiPhuongTienSS026?.getMoHinh)
+              .catchError((e) => null) ??
           onReportRootIssue(nameFunction: ''),
       getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVPTC?.getTrangThaiPhuongTienSS028
-          ?.caiDatMoHinh(value: getNhiemVuChienDauChonChiDinh?.getMoHinh?.getKichBanChienDau?.getBangDieuKhienDoiHinhVPTC?.getTrangThaiPhuongTienSS028?.getMoHinh)
-          .catchError((e) => null) ??
+              ?.caiDatMoHinh(value: getNhiemVuChienDauChonChiDinh?.getMoHinh?.getKichBanChienDau?.getBangDieuKhienDoiHinhVPTC?.getTrangThaiPhuongTienSS028?.getMoHinh)
+              .catchError((e) => null) ??
           onReportRootIssue(nameFunction: ''),
       getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVPTC?.getTrangThaiPhuongTienSS030
-          ?.caiDatMoHinh(value: getNhiemVuChienDauChonChiDinh?.getMoHinh?.getKichBanChienDau?.getBangDieuKhienDoiHinhVPTC?.getTrangThaiPhuongTienSS030?.getMoHinh)
-          .catchError((e) => null) ??
+              ?.caiDatMoHinh(value: getNhiemVuChienDauChonChiDinh?.getMoHinh?.getKichBanChienDau?.getBangDieuKhienDoiHinhVPTC?.getTrangThaiPhuongTienSS030?.getMoHinh)
+              .catchError((e) => null) ??
           onReportRootIssue(nameFunction: ''),
       getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVPTC?.getTrangThaiPhuongTienSS032
-          ?.caiDatMoHinh(value: getNhiemVuChienDauChonChiDinh?.getMoHinh?.getKichBanChienDau?.getBangDieuKhienDoiHinhVPTC?.getTrangThaiPhuongTienSS032?.getMoHinh)
-          .catchError((e) => null) ??
+              ?.caiDatMoHinh(value: getNhiemVuChienDauChonChiDinh?.getMoHinh?.getKichBanChienDau?.getBangDieuKhienDoiHinhVPTC?.getTrangThaiPhuongTienSS032?.getMoHinh)
+              .catchError((e) => null) ??
           onReportRootIssue(nameFunction: ''),
       getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVPTC?.getTrangThaiPhuongTienSS034
-          ?.caiDatMoHinh(value: getNhiemVuChienDauChonChiDinh?.getMoHinh?.getKichBanChienDau?.getBangDieuKhienDoiHinhVPTC?.getTrangThaiPhuongTienSS034?.getMoHinh)
-          .catchError((e) => null) ??
+              ?.caiDatMoHinh(value: getNhiemVuChienDauChonChiDinh?.getMoHinh?.getKichBanChienDau?.getBangDieuKhienDoiHinhVPTC?.getTrangThaiPhuongTienSS034?.getMoHinh)
+              .catchError((e) => null) ??
           onReportRootIssue(nameFunction: ''),
       getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVPTC?.getTrangThaiPhuongTienSS036
-          ?.caiDatMoHinh(value: getNhiemVuChienDauChonChiDinh?.getMoHinh?.getKichBanChienDau?.getBangDieuKhienDoiHinhVPTC?.getTrangThaiPhuongTienSS036?.getMoHinh)
-          .catchError((e) => null) ??
+              ?.caiDatMoHinh(value: getNhiemVuChienDauChonChiDinh?.getMoHinh?.getKichBanChienDau?.getBangDieuKhienDoiHinhVPTC?.getTrangThaiPhuongTienSS036?.getMoHinh)
+              .catchError((e) => null) ??
           onReportRootIssue(nameFunction: ''),
       getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVPTC?.getTrangThaiPhuongTienSS038
-          ?.caiDatMoHinh(value: getNhiemVuChienDauChonChiDinh?.getMoHinh?.getKichBanChienDau?.getBangDieuKhienDoiHinhVPTC?.getTrangThaiPhuongTienSS038?.getMoHinh)
-          .catchError((e) => null) ??
+              ?.caiDatMoHinh(value: getNhiemVuChienDauChonChiDinh?.getMoHinh?.getKichBanChienDau?.getBangDieuKhienDoiHinhVPTC?.getTrangThaiPhuongTienSS038?.getMoHinh)
+              .catchError((e) => null) ??
           onReportRootIssue(nameFunction: ''),
       getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVPTC?.getTrangThaiPhuongTienSS040
-          ?.caiDatMoHinh(value: getNhiemVuChienDauChonChiDinh?.getMoHinh?.getKichBanChienDau?.getBangDieuKhienDoiHinhVPTC?.getTrangThaiPhuongTienSS040?.getMoHinh)
-          .catchError((e) => null) ??
+              ?.caiDatMoHinh(value: getNhiemVuChienDauChonChiDinh?.getMoHinh?.getKichBanChienDau?.getBangDieuKhienDoiHinhVPTC?.getTrangThaiPhuongTienSS040?.getMoHinh)
+              .catchError((e) => null) ??
           onReportRootIssue(nameFunction: ''),
       getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVPTC?.getTrangThaiPhuongTienSS042
-          ?.caiDatMoHinh(value: getNhiemVuChienDauChonChiDinh?.getMoHinh?.getKichBanChienDau?.getBangDieuKhienDoiHinhVPTC?.getTrangThaiPhuongTienSS042?.getMoHinh)
-          .catchError((e) => null) ??
+              ?.caiDatMoHinh(value: getNhiemVuChienDauChonChiDinh?.getMoHinh?.getKichBanChienDau?.getBangDieuKhienDoiHinhVPTC?.getTrangThaiPhuongTienSS042?.getMoHinh)
+              .catchError((e) => null) ??
           onReportRootIssue(nameFunction: ''),
       getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVPTC?.getTrangThaiPhuongTienSS044
-          ?.caiDatMoHinh(value: getNhiemVuChienDauChonChiDinh?.getMoHinh?.getKichBanChienDau?.getBangDieuKhienDoiHinhVPTC?.getTrangThaiPhuongTienSS044?.getMoHinh)
-          .catchError((e) => null) ??
+              ?.caiDatMoHinh(value: getNhiemVuChienDauChonChiDinh?.getMoHinh?.getKichBanChienDau?.getBangDieuKhienDoiHinhVPTC?.getTrangThaiPhuongTienSS044?.getMoHinh)
+              .catchError((e) => null) ??
           onReportRootIssue(nameFunction: ''),
       getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVPTC?.getTrangThaiPhuongTienSS046
-          ?.caiDatMoHinh(value: getNhiemVuChienDauChonChiDinh?.getMoHinh?.getKichBanChienDau?.getBangDieuKhienDoiHinhVPTC?.getTrangThaiPhuongTienSS046?.getMoHinh)
-          .catchError((e) => null) ??
+              ?.caiDatMoHinh(value: getNhiemVuChienDauChonChiDinh?.getMoHinh?.getKichBanChienDau?.getBangDieuKhienDoiHinhVPTC?.getTrangThaiPhuongTienSS046?.getMoHinh)
+              .catchError((e) => null) ??
           onReportRootIssue(nameFunction: ''),
       getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVPTC?.getTrangThaiPhuongTienSS048
-          ?.caiDatMoHinh(value: getNhiemVuChienDauChonChiDinh?.getMoHinh?.getKichBanChienDau?.getBangDieuKhienDoiHinhVPTC?.getTrangThaiPhuongTienSS048?.getMoHinh)
-          .catchError((e) => null) ??
+              ?.caiDatMoHinh(value: getNhiemVuChienDauChonChiDinh?.getMoHinh?.getKichBanChienDau?.getBangDieuKhienDoiHinhVPTC?.getTrangThaiPhuongTienSS048?.getMoHinh)
+              .catchError((e) => null) ??
           onReportRootIssue(nameFunction: ''),
       getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVPTC?.getTrangThaiPhuongTienSS050
-          ?.caiDatMoHinh(value: getNhiemVuChienDauChonChiDinh?.getMoHinh?.getKichBanChienDau?.getBangDieuKhienDoiHinhVPTC?.getTrangThaiPhuongTienSS050?.getMoHinh)
-          .catchError((e) => null) ??
+              ?.caiDatMoHinh(value: getNhiemVuChienDauChonChiDinh?.getMoHinh?.getKichBanChienDau?.getBangDieuKhienDoiHinhVPTC?.getTrangThaiPhuongTienSS050?.getMoHinh)
+              .catchError((e) => null) ??
           onReportRootIssue(nameFunction: ''),
       getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVPTC?.getTrangThaiPhuongTienSS052
-          ?.caiDatMoHinh(value: getNhiemVuChienDauChonChiDinh?.getMoHinh?.getKichBanChienDau?.getBangDieuKhienDoiHinhVPTC?.getTrangThaiPhuongTienSS052?.getMoHinh)
-          .catchError((e) => null) ??
+              ?.caiDatMoHinh(value: getNhiemVuChienDauChonChiDinh?.getMoHinh?.getKichBanChienDau?.getBangDieuKhienDoiHinhVPTC?.getTrangThaiPhuongTienSS052?.getMoHinh)
+              .catchError((e) => null) ??
           onReportRootIssue(nameFunction: ''),
       getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVPTC?.getTrangThaiPhuongTienSS054
-          ?.caiDatMoHinh(value: getNhiemVuChienDauChonChiDinh?.getMoHinh?.getKichBanChienDau?.getBangDieuKhienDoiHinhVPTC?.getTrangThaiPhuongTienSS054?.getMoHinh)
-          .catchError((e) => null) ??
+              ?.caiDatMoHinh(value: getNhiemVuChienDauChonChiDinh?.getMoHinh?.getKichBanChienDau?.getBangDieuKhienDoiHinhVPTC?.getTrangThaiPhuongTienSS054?.getMoHinh)
+              .catchError((e) => null) ??
           onReportRootIssue(nameFunction: ''),
       getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVPTC?.getTrangThaiPhuongTienSS056
-          ?.caiDatMoHinh(value: getNhiemVuChienDauChonChiDinh?.getMoHinh?.getKichBanChienDau?.getBangDieuKhienDoiHinhVPTC?.getTrangThaiPhuongTienSS056?.getMoHinh)
-          .catchError((e) => null) ??
+              ?.caiDatMoHinh(value: getNhiemVuChienDauChonChiDinh?.getMoHinh?.getKichBanChienDau?.getBangDieuKhienDoiHinhVPTC?.getTrangThaiPhuongTienSS056?.getMoHinh)
+              .catchError((e) => null) ??
           onReportRootIssue(nameFunction: ''),
       getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVPTC?.getTrangThaiPhuongTienSS058
-          ?.caiDatMoHinh(value: getNhiemVuChienDauChonChiDinh?.getMoHinh?.getKichBanChienDau?.getBangDieuKhienDoiHinhVPTC?.getTrangThaiPhuongTienSS058?.getMoHinh)
-          .catchError((e) => null) ??
+              ?.caiDatMoHinh(value: getNhiemVuChienDauChonChiDinh?.getMoHinh?.getKichBanChienDau?.getBangDieuKhienDoiHinhVPTC?.getTrangThaiPhuongTienSS058?.getMoHinh)
+              .catchError((e) => null) ??
           onReportRootIssue(nameFunction: ''),
       getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVPTC?.getTrangThaiPhuongTienSS060
-          ?.caiDatMoHinh(value: getNhiemVuChienDauChonChiDinh?.getMoHinh?.getKichBanChienDau?.getBangDieuKhienDoiHinhVPTC?.getTrangThaiPhuongTienSS060?.getMoHinh)
-          .catchError((e) => null) ??
+              ?.caiDatMoHinh(value: getNhiemVuChienDauChonChiDinh?.getMoHinh?.getKichBanChienDau?.getBangDieuKhienDoiHinhVPTC?.getTrangThaiPhuongTienSS060?.getMoHinh)
+              .catchError((e) => null) ??
           onReportRootIssue(nameFunction: ''),
       getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVPTC?.getTrangThaiPhuongTienSS062
-          ?.caiDatMoHinh(value: getNhiemVuChienDauChonChiDinh?.getMoHinh?.getKichBanChienDau?.getBangDieuKhienDoiHinhVPTC?.getTrangThaiPhuongTienSS062?.getMoHinh)
-          .catchError((e) => null) ??
+              ?.caiDatMoHinh(value: getNhiemVuChienDauChonChiDinh?.getMoHinh?.getKichBanChienDau?.getBangDieuKhienDoiHinhVPTC?.getTrangThaiPhuongTienSS062?.getMoHinh)
+              .catchError((e) => null) ??
           onReportRootIssue(nameFunction: ''),
       getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVPTC?.getTrangThaiPhuongTienSS064
-          ?.caiDatMoHinh(value: getNhiemVuChienDauChonChiDinh?.getMoHinh?.getKichBanChienDau?.getBangDieuKhienDoiHinhVPTC?.getTrangThaiPhuongTienSS064?.getMoHinh)
-          .catchError((e) => null) ??
+              ?.caiDatMoHinh(value: getNhiemVuChienDauChonChiDinh?.getMoHinh?.getKichBanChienDau?.getBangDieuKhienDoiHinhVPTC?.getTrangThaiPhuongTienSS064?.getMoHinh)
+              .catchError((e) => null) ??
           onReportRootIssue(nameFunction: ''),
       getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVPTC?.getTrangThaiPhuongTienSS066
-          ?.caiDatMoHinh(value: getNhiemVuChienDauChonChiDinh?.getMoHinh?.getKichBanChienDau?.getBangDieuKhienDoiHinhVPTC?.getTrangThaiPhuongTienSS066?.getMoHinh)
-          .catchError((e) => null) ??
+              ?.caiDatMoHinh(value: getNhiemVuChienDauChonChiDinh?.getMoHinh?.getKichBanChienDau?.getBangDieuKhienDoiHinhVPTC?.getTrangThaiPhuongTienSS066?.getMoHinh)
+              .catchError((e) => null) ??
           onReportRootIssue(nameFunction: ''),
       getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVPTC?.getTrangThaiPhuongTienSS068
-          ?.caiDatMoHinh(value: getNhiemVuChienDauChonChiDinh?.getMoHinh?.getKichBanChienDau?.getBangDieuKhienDoiHinhVPTC?.getTrangThaiPhuongTienSS068?.getMoHinh)
-          .catchError((e) => null) ??
+              ?.caiDatMoHinh(value: getNhiemVuChienDauChonChiDinh?.getMoHinh?.getKichBanChienDau?.getBangDieuKhienDoiHinhVPTC?.getTrangThaiPhuongTienSS068?.getMoHinh)
+              .catchError((e) => null) ??
           onReportRootIssue(nameFunction: ''),
       getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVPTC?.getTrangThaiPhuongTienSS070
-          ?.caiDatMoHinh(value: getNhiemVuChienDauChonChiDinh?.getMoHinh?.getKichBanChienDau?.getBangDieuKhienDoiHinhVPTC?.getTrangThaiPhuongTienSS070?.getMoHinh)
-          .catchError((e) => null) ??
+              ?.caiDatMoHinh(value: getNhiemVuChienDauChonChiDinh?.getMoHinh?.getKichBanChienDau?.getBangDieuKhienDoiHinhVPTC?.getTrangThaiPhuongTienSS070?.getMoHinh)
+              .catchError((e) => null) ??
           onReportRootIssue(nameFunction: ''),
       getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVPTC?.getTrangThaiPhuongTienSS072
-          ?.caiDatMoHinh(value: getNhiemVuChienDauChonChiDinh?.getMoHinh?.getKichBanChienDau?.getBangDieuKhienDoiHinhVPTC?.getTrangThaiPhuongTienSS072?.getMoHinh)
-          .catchError((e) => null) ??
+              ?.caiDatMoHinh(value: getNhiemVuChienDauChonChiDinh?.getMoHinh?.getKichBanChienDau?.getBangDieuKhienDoiHinhVPTC?.getTrangThaiPhuongTienSS072?.getMoHinh)
+              .catchError((e) => null) ??
           onReportRootIssue(nameFunction: ''),
       getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVPTC?.getTrangThaiPhuongTienSS074
-          ?.caiDatMoHinh(value: getNhiemVuChienDauChonChiDinh?.getMoHinh?.getKichBanChienDau?.getBangDieuKhienDoiHinhVPTC?.getTrangThaiPhuongTienSS074?.getMoHinh)
-          .catchError((e) => null) ??
+              ?.caiDatMoHinh(value: getNhiemVuChienDauChonChiDinh?.getMoHinh?.getKichBanChienDau?.getBangDieuKhienDoiHinhVPTC?.getTrangThaiPhuongTienSS074?.getMoHinh)
+              .catchError((e) => null) ??
           onReportRootIssue(nameFunction: ''),
       getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVPTC?.getTrangThaiPhuongTienSS076
-          ?.caiDatMoHinh(value: getNhiemVuChienDauChonChiDinh?.getMoHinh?.getKichBanChienDau?.getBangDieuKhienDoiHinhVPTC?.getTrangThaiPhuongTienSS076?.getMoHinh)
-          .catchError((e) => null) ??
+              ?.caiDatMoHinh(value: getNhiemVuChienDauChonChiDinh?.getMoHinh?.getKichBanChienDau?.getBangDieuKhienDoiHinhVPTC?.getTrangThaiPhuongTienSS076?.getMoHinh)
+              .catchError((e) => null) ??
           onReportRootIssue(nameFunction: ''),
       getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVPTC?.getTrangThaiPhuongTienSS078
-          ?.caiDatMoHinh(value: getNhiemVuChienDauChonChiDinh?.getMoHinh?.getKichBanChienDau?.getBangDieuKhienDoiHinhVPTC?.getTrangThaiPhuongTienSS078?.getMoHinh)
-          .catchError((e) => null) ??
+              ?.caiDatMoHinh(value: getNhiemVuChienDauChonChiDinh?.getMoHinh?.getKichBanChienDau?.getBangDieuKhienDoiHinhVPTC?.getTrangThaiPhuongTienSS078?.getMoHinh)
+              .catchError((e) => null) ??
           onReportRootIssue(nameFunction: ''),
 
       /// -----
       /// TODO: Đội Hình VPPT
       /// -----
       getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVPPT?.getTrangThaiPhuongTienSS020
-          ?.caiDatMoHinh(value: getNhiemVuChienDauChonChiDinh?.getMoHinh?.getKichBanChienDau?.getBangDieuKhienDoiHinhVPPT?.getTrangThaiPhuongTienSS020?.getMoHinh)
-          .catchError((e) => null) ??
+              ?.caiDatMoHinh(value: getNhiemVuChienDauChonChiDinh?.getMoHinh?.getKichBanChienDau?.getBangDieuKhienDoiHinhVPPT?.getTrangThaiPhuongTienSS020?.getMoHinh)
+              .catchError((e) => null) ??
           onReportRootIssue(nameFunction: ''),
       getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVPPT?.getTrangThaiPhuongTienSS022
-          ?.caiDatMoHinh(value: getNhiemVuChienDauChonChiDinh?.getMoHinh?.getKichBanChienDau?.getBangDieuKhienDoiHinhVPPT?.getTrangThaiPhuongTienSS022?.getMoHinh)
-          .catchError((e) => null) ??
+              ?.caiDatMoHinh(value: getNhiemVuChienDauChonChiDinh?.getMoHinh?.getKichBanChienDau?.getBangDieuKhienDoiHinhVPPT?.getTrangThaiPhuongTienSS022?.getMoHinh)
+              .catchError((e) => null) ??
           onReportRootIssue(nameFunction: ''),
       getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVPPT?.getTrangThaiPhuongTienSS024
-          ?.caiDatMoHinh(value: getNhiemVuChienDauChonChiDinh?.getMoHinh?.getKichBanChienDau?.getBangDieuKhienDoiHinhVPPT?.getTrangThaiPhuongTienSS024?.getMoHinh)
-          .catchError((e) => null) ??
+              ?.caiDatMoHinh(value: getNhiemVuChienDauChonChiDinh?.getMoHinh?.getKichBanChienDau?.getBangDieuKhienDoiHinhVPPT?.getTrangThaiPhuongTienSS024?.getMoHinh)
+              .catchError((e) => null) ??
           onReportRootIssue(nameFunction: ''),
       getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVPPT?.getTrangThaiPhuongTienSS026
-          ?.caiDatMoHinh(value: getNhiemVuChienDauChonChiDinh?.getMoHinh?.getKichBanChienDau?.getBangDieuKhienDoiHinhVPPT?.getTrangThaiPhuongTienSS026?.getMoHinh)
-          .catchError((e) => null) ??
+              ?.caiDatMoHinh(value: getNhiemVuChienDauChonChiDinh?.getMoHinh?.getKichBanChienDau?.getBangDieuKhienDoiHinhVPPT?.getTrangThaiPhuongTienSS026?.getMoHinh)
+              .catchError((e) => null) ??
           onReportRootIssue(nameFunction: ''),
       getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVPPT?.getTrangThaiPhuongTienSS028
-          ?.caiDatMoHinh(value: getNhiemVuChienDauChonChiDinh?.getMoHinh?.getKichBanChienDau?.getBangDieuKhienDoiHinhVPPT?.getTrangThaiPhuongTienSS028?.getMoHinh)
-          .catchError((e) => null) ??
+              ?.caiDatMoHinh(value: getNhiemVuChienDauChonChiDinh?.getMoHinh?.getKichBanChienDau?.getBangDieuKhienDoiHinhVPPT?.getTrangThaiPhuongTienSS028?.getMoHinh)
+              .catchError((e) => null) ??
           onReportRootIssue(nameFunction: ''),
       getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVPPT?.getTrangThaiPhuongTienSS030
-          ?.caiDatMoHinh(value: getNhiemVuChienDauChonChiDinh?.getMoHinh?.getKichBanChienDau?.getBangDieuKhienDoiHinhVPPT?.getTrangThaiPhuongTienSS030?.getMoHinh)
-          .catchError((e) => null) ??
+              ?.caiDatMoHinh(value: getNhiemVuChienDauChonChiDinh?.getMoHinh?.getKichBanChienDau?.getBangDieuKhienDoiHinhVPPT?.getTrangThaiPhuongTienSS030?.getMoHinh)
+              .catchError((e) => null) ??
           onReportRootIssue(nameFunction: ''),
       getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVPPT?.getTrangThaiPhuongTienSS032
-          ?.caiDatMoHinh(value: getNhiemVuChienDauChonChiDinh?.getMoHinh?.getKichBanChienDau?.getBangDieuKhienDoiHinhVPPT?.getTrangThaiPhuongTienSS032?.getMoHinh)
-          .catchError((e) => null) ??
+              ?.caiDatMoHinh(value: getNhiemVuChienDauChonChiDinh?.getMoHinh?.getKichBanChienDau?.getBangDieuKhienDoiHinhVPPT?.getTrangThaiPhuongTienSS032?.getMoHinh)
+              .catchError((e) => null) ??
           onReportRootIssue(nameFunction: ''),
       getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVPPT?.getTrangThaiPhuongTienSS034
-          ?.caiDatMoHinh(value: getNhiemVuChienDauChonChiDinh?.getMoHinh?.getKichBanChienDau?.getBangDieuKhienDoiHinhVPPT?.getTrangThaiPhuongTienSS034?.getMoHinh)
-          .catchError((e) => null) ??
+              ?.caiDatMoHinh(value: getNhiemVuChienDauChonChiDinh?.getMoHinh?.getKichBanChienDau?.getBangDieuKhienDoiHinhVPPT?.getTrangThaiPhuongTienSS034?.getMoHinh)
+              .catchError((e) => null) ??
           onReportRootIssue(nameFunction: ''),
       getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVPPT?.getTrangThaiPhuongTienSS036
-          ?.caiDatMoHinh(value: getNhiemVuChienDauChonChiDinh?.getMoHinh?.getKichBanChienDau?.getBangDieuKhienDoiHinhVPPT?.getTrangThaiPhuongTienSS036?.getMoHinh)
-          .catchError((e) => null) ??
+              ?.caiDatMoHinh(value: getNhiemVuChienDauChonChiDinh?.getMoHinh?.getKichBanChienDau?.getBangDieuKhienDoiHinhVPPT?.getTrangThaiPhuongTienSS036?.getMoHinh)
+              .catchError((e) => null) ??
           onReportRootIssue(nameFunction: ''),
       getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVPPT?.getTrangThaiPhuongTienSS038
-          ?.caiDatMoHinh(value: getNhiemVuChienDauChonChiDinh?.getMoHinh?.getKichBanChienDau?.getBangDieuKhienDoiHinhVPPT?.getTrangThaiPhuongTienSS038?.getMoHinh)
-          .catchError((e) => null) ??
+              ?.caiDatMoHinh(value: getNhiemVuChienDauChonChiDinh?.getMoHinh?.getKichBanChienDau?.getBangDieuKhienDoiHinhVPPT?.getTrangThaiPhuongTienSS038?.getMoHinh)
+              .catchError((e) => null) ??
           onReportRootIssue(nameFunction: ''),
       getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVPPT?.getTrangThaiPhuongTienSS040
-          ?.caiDatMoHinh(value: getNhiemVuChienDauChonChiDinh?.getMoHinh?.getKichBanChienDau?.getBangDieuKhienDoiHinhVPPT?.getTrangThaiPhuongTienSS040?.getMoHinh)
-          .catchError((e) => null) ??
+              ?.caiDatMoHinh(value: getNhiemVuChienDauChonChiDinh?.getMoHinh?.getKichBanChienDau?.getBangDieuKhienDoiHinhVPPT?.getTrangThaiPhuongTienSS040?.getMoHinh)
+              .catchError((e) => null) ??
           onReportRootIssue(nameFunction: ''),
       getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVPPT?.getTrangThaiPhuongTienSS042
-          ?.caiDatMoHinh(value: getNhiemVuChienDauChonChiDinh?.getMoHinh?.getKichBanChienDau?.getBangDieuKhienDoiHinhVPPT?.getTrangThaiPhuongTienSS042?.getMoHinh)
-          .catchError((e) => null) ??
+              ?.caiDatMoHinh(value: getNhiemVuChienDauChonChiDinh?.getMoHinh?.getKichBanChienDau?.getBangDieuKhienDoiHinhVPPT?.getTrangThaiPhuongTienSS042?.getMoHinh)
+              .catchError((e) => null) ??
           onReportRootIssue(nameFunction: ''),
       getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVPPT?.getTrangThaiPhuongTienSS044
-          ?.caiDatMoHinh(value: getNhiemVuChienDauChonChiDinh?.getMoHinh?.getKichBanChienDau?.getBangDieuKhienDoiHinhVPPT?.getTrangThaiPhuongTienSS044?.getMoHinh)
-          .catchError((e) => null) ??
+              ?.caiDatMoHinh(value: getNhiemVuChienDauChonChiDinh?.getMoHinh?.getKichBanChienDau?.getBangDieuKhienDoiHinhVPPT?.getTrangThaiPhuongTienSS044?.getMoHinh)
+              .catchError((e) => null) ??
           onReportRootIssue(nameFunction: ''),
       getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVPPT?.getTrangThaiPhuongTienSS046
-          ?.caiDatMoHinh(value: getNhiemVuChienDauChonChiDinh?.getMoHinh?.getKichBanChienDau?.getBangDieuKhienDoiHinhVPPT?.getTrangThaiPhuongTienSS046?.getMoHinh)
-          .catchError((e) => null) ??
+              ?.caiDatMoHinh(value: getNhiemVuChienDauChonChiDinh?.getMoHinh?.getKichBanChienDau?.getBangDieuKhienDoiHinhVPPT?.getTrangThaiPhuongTienSS046?.getMoHinh)
+              .catchError((e) => null) ??
           onReportRootIssue(nameFunction: ''),
       getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVPPT?.getTrangThaiPhuongTienSS048
-          ?.caiDatMoHinh(value: getNhiemVuChienDauChonChiDinh?.getMoHinh?.getKichBanChienDau?.getBangDieuKhienDoiHinhVPPT?.getTrangThaiPhuongTienSS048?.getMoHinh)
-          .catchError((e) => null) ??
+              ?.caiDatMoHinh(value: getNhiemVuChienDauChonChiDinh?.getMoHinh?.getKichBanChienDau?.getBangDieuKhienDoiHinhVPPT?.getTrangThaiPhuongTienSS048?.getMoHinh)
+              .catchError((e) => null) ??
           onReportRootIssue(nameFunction: ''),
       getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVPPT?.getTrangThaiPhuongTienSS050
-          ?.caiDatMoHinh(value: getNhiemVuChienDauChonChiDinh?.getMoHinh?.getKichBanChienDau?.getBangDieuKhienDoiHinhVPPT?.getTrangThaiPhuongTienSS050?.getMoHinh)
-          .catchError((e) => null) ??
+              ?.caiDatMoHinh(value: getNhiemVuChienDauChonChiDinh?.getMoHinh?.getKichBanChienDau?.getBangDieuKhienDoiHinhVPPT?.getTrangThaiPhuongTienSS050?.getMoHinh)
+              .catchError((e) => null) ??
           onReportRootIssue(nameFunction: ''),
       getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVPPT?.getTrangThaiPhuongTienSS052
-          ?.caiDatMoHinh(value: getNhiemVuChienDauChonChiDinh?.getMoHinh?.getKichBanChienDau?.getBangDieuKhienDoiHinhVPPT?.getTrangThaiPhuongTienSS052?.getMoHinh)
-          .catchError((e) => null) ??
+              ?.caiDatMoHinh(value: getNhiemVuChienDauChonChiDinh?.getMoHinh?.getKichBanChienDau?.getBangDieuKhienDoiHinhVPPT?.getTrangThaiPhuongTienSS052?.getMoHinh)
+              .catchError((e) => null) ??
           onReportRootIssue(nameFunction: ''),
       getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVPPT?.getTrangThaiPhuongTienSS054
-          ?.caiDatMoHinh(value: getNhiemVuChienDauChonChiDinh?.getMoHinh?.getKichBanChienDau?.getBangDieuKhienDoiHinhVPPT?.getTrangThaiPhuongTienSS054?.getMoHinh)
-          .catchError((e) => null) ??
+              ?.caiDatMoHinh(value: getNhiemVuChienDauChonChiDinh?.getMoHinh?.getKichBanChienDau?.getBangDieuKhienDoiHinhVPPT?.getTrangThaiPhuongTienSS054?.getMoHinh)
+              .catchError((e) => null) ??
           onReportRootIssue(nameFunction: ''),
       getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVPPT?.getTrangThaiPhuongTienSS056
-          ?.caiDatMoHinh(value: getNhiemVuChienDauChonChiDinh?.getMoHinh?.getKichBanChienDau?.getBangDieuKhienDoiHinhVPPT?.getTrangThaiPhuongTienSS056?.getMoHinh)
-          .catchError((e) => null) ??
+              ?.caiDatMoHinh(value: getNhiemVuChienDauChonChiDinh?.getMoHinh?.getKichBanChienDau?.getBangDieuKhienDoiHinhVPPT?.getTrangThaiPhuongTienSS056?.getMoHinh)
+              .catchError((e) => null) ??
           onReportRootIssue(nameFunction: ''),
       getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVPPT?.getTrangThaiPhuongTienSS058
-          ?.caiDatMoHinh(value: getNhiemVuChienDauChonChiDinh?.getMoHinh?.getKichBanChienDau?.getBangDieuKhienDoiHinhVPPT?.getTrangThaiPhuongTienSS058?.getMoHinh)
-          .catchError((e) => null) ??
+              ?.caiDatMoHinh(value: getNhiemVuChienDauChonChiDinh?.getMoHinh?.getKichBanChienDau?.getBangDieuKhienDoiHinhVPPT?.getTrangThaiPhuongTienSS058?.getMoHinh)
+              .catchError((e) => null) ??
           onReportRootIssue(nameFunction: ''),
       getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVPPT?.getTrangThaiPhuongTienSS060
-          ?.caiDatMoHinh(value: getNhiemVuChienDauChonChiDinh?.getMoHinh?.getKichBanChienDau?.getBangDieuKhienDoiHinhVPPT?.getTrangThaiPhuongTienSS060?.getMoHinh)
-          .catchError((e) => null) ??
+              ?.caiDatMoHinh(value: getNhiemVuChienDauChonChiDinh?.getMoHinh?.getKichBanChienDau?.getBangDieuKhienDoiHinhVPPT?.getTrangThaiPhuongTienSS060?.getMoHinh)
+              .catchError((e) => null) ??
           onReportRootIssue(nameFunction: ''),
       getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVPPT?.getTrangThaiPhuongTienSS062
-          ?.caiDatMoHinh(value: getNhiemVuChienDauChonChiDinh?.getMoHinh?.getKichBanChienDau?.getBangDieuKhienDoiHinhVPPT?.getTrangThaiPhuongTienSS062?.getMoHinh)
-          .catchError((e) => null) ??
+              ?.caiDatMoHinh(value: getNhiemVuChienDauChonChiDinh?.getMoHinh?.getKichBanChienDau?.getBangDieuKhienDoiHinhVPPT?.getTrangThaiPhuongTienSS062?.getMoHinh)
+              .catchError((e) => null) ??
           onReportRootIssue(nameFunction: ''),
       getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVPPT?.getTrangThaiPhuongTienSS064
-          ?.caiDatMoHinh(value: getNhiemVuChienDauChonChiDinh?.getMoHinh?.getKichBanChienDau?.getBangDieuKhienDoiHinhVPPT?.getTrangThaiPhuongTienSS064?.getMoHinh)
-          .catchError((e) => null) ??
+              ?.caiDatMoHinh(value: getNhiemVuChienDauChonChiDinh?.getMoHinh?.getKichBanChienDau?.getBangDieuKhienDoiHinhVPPT?.getTrangThaiPhuongTienSS064?.getMoHinh)
+              .catchError((e) => null) ??
           onReportRootIssue(nameFunction: ''),
       getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVPPT?.getTrangThaiPhuongTienSS066
-          ?.caiDatMoHinh(value: getNhiemVuChienDauChonChiDinh?.getMoHinh?.getKichBanChienDau?.getBangDieuKhienDoiHinhVPPT?.getTrangThaiPhuongTienSS066?.getMoHinh)
-          .catchError((e) => null) ??
+              ?.caiDatMoHinh(value: getNhiemVuChienDauChonChiDinh?.getMoHinh?.getKichBanChienDau?.getBangDieuKhienDoiHinhVPPT?.getTrangThaiPhuongTienSS066?.getMoHinh)
+              .catchError((e) => null) ??
           onReportRootIssue(nameFunction: ''),
       getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVPPT?.getTrangThaiPhuongTienSS068
-          ?.caiDatMoHinh(value: getNhiemVuChienDauChonChiDinh?.getMoHinh?.getKichBanChienDau?.getBangDieuKhienDoiHinhVPPT?.getTrangThaiPhuongTienSS068?.getMoHinh)
-          .catchError((e) => null) ??
+              ?.caiDatMoHinh(value: getNhiemVuChienDauChonChiDinh?.getMoHinh?.getKichBanChienDau?.getBangDieuKhienDoiHinhVPPT?.getTrangThaiPhuongTienSS068?.getMoHinh)
+              .catchError((e) => null) ??
           onReportRootIssue(nameFunction: ''),
       getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVPPT?.getTrangThaiPhuongTienSS070
-          ?.caiDatMoHinh(value: getNhiemVuChienDauChonChiDinh?.getMoHinh?.getKichBanChienDau?.getBangDieuKhienDoiHinhVPPT?.getTrangThaiPhuongTienSS070?.getMoHinh)
-          .catchError((e) => null) ??
+              ?.caiDatMoHinh(value: getNhiemVuChienDauChonChiDinh?.getMoHinh?.getKichBanChienDau?.getBangDieuKhienDoiHinhVPPT?.getTrangThaiPhuongTienSS070?.getMoHinh)
+              .catchError((e) => null) ??
           onReportRootIssue(nameFunction: ''),
       getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVPPT?.getTrangThaiPhuongTienSS072
-          ?.caiDatMoHinh(value: getNhiemVuChienDauChonChiDinh?.getMoHinh?.getKichBanChienDau?.getBangDieuKhienDoiHinhVPPT?.getTrangThaiPhuongTienSS072?.getMoHinh)
-          .catchError((e) => null) ??
+              ?.caiDatMoHinh(value: getNhiemVuChienDauChonChiDinh?.getMoHinh?.getKichBanChienDau?.getBangDieuKhienDoiHinhVPPT?.getTrangThaiPhuongTienSS072?.getMoHinh)
+              .catchError((e) => null) ??
           onReportRootIssue(nameFunction: ''),
       getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVPPT?.getTrangThaiPhuongTienSS074
-          ?.caiDatMoHinh(value: getNhiemVuChienDauChonChiDinh?.getMoHinh?.getKichBanChienDau?.getBangDieuKhienDoiHinhVPPT?.getTrangThaiPhuongTienSS074?.getMoHinh)
-          .catchError((e) => null) ??
+              ?.caiDatMoHinh(value: getNhiemVuChienDauChonChiDinh?.getMoHinh?.getKichBanChienDau?.getBangDieuKhienDoiHinhVPPT?.getTrangThaiPhuongTienSS074?.getMoHinh)
+              .catchError((e) => null) ??
           onReportRootIssue(nameFunction: ''),
       getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVPPT?.getTrangThaiPhuongTienSS076
-          ?.caiDatMoHinh(value: getNhiemVuChienDauChonChiDinh?.getMoHinh?.getKichBanChienDau?.getBangDieuKhienDoiHinhVPPT?.getTrangThaiPhuongTienSS076?.getMoHinh)
-          .catchError((e) => null) ??
+              ?.caiDatMoHinh(value: getNhiemVuChienDauChonChiDinh?.getMoHinh?.getKichBanChienDau?.getBangDieuKhienDoiHinhVPPT?.getTrangThaiPhuongTienSS076?.getMoHinh)
+              .catchError((e) => null) ??
           onReportRootIssue(nameFunction: ''),
       getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVPPT?.getTrangThaiPhuongTienSS078
-          ?.caiDatMoHinh(value: getNhiemVuChienDauChonChiDinh?.getMoHinh?.getKichBanChienDau?.getBangDieuKhienDoiHinhVPPT?.getTrangThaiPhuongTienSS078?.getMoHinh)
-          .catchError((e) => null) ??
+              ?.caiDatMoHinh(value: getNhiemVuChienDauChonChiDinh?.getMoHinh?.getKichBanChienDau?.getBangDieuKhienDoiHinhVPPT?.getTrangThaiPhuongTienSS078?.getMoHinh)
+              .catchError((e) => null) ??
           onReportRootIssue(nameFunction: ''),
     ]);
 

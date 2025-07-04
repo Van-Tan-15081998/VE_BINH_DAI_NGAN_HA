@@ -289,6 +289,19 @@ class QuanLyTrangThaiDieuKhienDiChuyenChienDauCo with KhungThucThiCoBan, DanhSac
   /// -----
   /// TODO:
   /// -----
+  Future<void> onResetViTriChienDauCo() async {
+
+    await caiDatViTriXuatPhatNguyenBanChienDauCo();
+
+    await _viTriChienDauCo?.caiDatDxTrongTamCapNhatCacGiaTriBien(value: getViTriXuatPhatNguyenBanChienDauCo?.dx ?? 0);
+    await _viTriChienDauCo?.caiDatDyTrongTamCapNhatCacGiaTriBien(value: getViTriXuatPhatNguyenBanChienDauCo?.dy ?? 0);
+
+    return;
+  }
+
+  /// -----
+  /// TODO:
+  /// -----
   Future<void> dieuKhienDiChuyenChienDauCoVeViTriXuatPhatNguyenBan() async {
     if (getChieuRongManHinhPhiVatLy != 0) {
       if (getChieuCaoManHinhPhiVatLy != 0) {
