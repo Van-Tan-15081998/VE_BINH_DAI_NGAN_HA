@@ -656,7 +656,7 @@ abstract class MoHinhCoBan with KhungThucThiCoBan{
   ThoiGianKichHoatCoBan? _thoiGianKichHoat;
   ThoiGianKichHoatCoBan? get getThoiGianKichHoat => _thoiGianKichHoat;
   ThoiGianKichHoatCoBan get getThoiGianKichHoatNotNull => _thoiGianKichHoat ?? ThoiGianKichHoatCoBan.onMacDinh();
-  Future<void> caiDatThoiGianKichHoat({required ThoiGianKichHoatCoBan? value}) async {
+  void onVoidCaiDatThoiGianKichHoat({required ThoiGianKichHoatCoBan? value}) {
     _thoiGianKichHoat = value;
     return;
   }
@@ -883,7 +883,7 @@ abstract class MoHinhCoBan with KhungThucThiCoBan{
   //
   //   ///
   //   if (getThoiGianKichHoat == null) {
-  //     await caiDatThoiGianKichHoat(value: ThoiGianKichHoatCoBan.onMacDinh());
+  //     onVoidCaiDatThoiGianKichHoat(value: ThoiGianKichHoatCoBan.onMacDinh());
   //   }
   //   await getThoiGianKichHoat?.onInitRoot();
   //
@@ -947,7 +947,7 @@ abstract class MoHinhCoBan with KhungThucThiCoBan{
     await caiDatBienDuoiViTriLayMucTieu(value: 0);
     await caiDatChieuRongManHinhPhiVatLy(value: 0);
     await caiDatChieuCaoManHinhPhiVatLy(value: 0);
-    await caiDatThoiGianKichHoat(value: ThoiGianKichHoatCoBan.kichHoat10());
+    onVoidCaiDatThoiGianKichHoat(value: ThoiGianKichHoatCoBan.kichHoat10());
     await caiDatHuongBay(value: DinhHuongBayCoBan.dinhHuongTheoTrenXuongDuoi());
     await caiDatTocDoBay(value: TocDoBayCoBan(tocDo: 0.1000));
     await caiDatTrangThaiTonTai(value: TrangThaiTonTaiCoBan.khoiTaoHoanTat());
@@ -971,7 +971,7 @@ abstract class MoHinhCoBan with KhungThucThiCoBan{
   ///
 
   Future<void> dieuKhienDiChuyen({required int chiSoTangTienTheoThoiGianThuc}) async {
-    if (await getTrangThaiTonTai?.isKhoiTaoHoanTat() == true) {
+    if (await getTrangThaiTonTai?.onCheckBoolKhoiTaoHoanTat() == true) {
       if (await kiemTraBayThoatManHinh() == true) {
         getTrangThaiTonTai?.caiDatHuyHoanTat();
       } else if (QuanLyDongThoiGianCoBan.onKiemTraKichHoat(

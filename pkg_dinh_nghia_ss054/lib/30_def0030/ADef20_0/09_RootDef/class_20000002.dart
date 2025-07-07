@@ -118,7 +118,7 @@ class TinhToanSatThuongHuongDenPhuongTien with CauTrucThucThiCoBan, DanhSachQuan
   /// -----
   /// TODO:
   /// -----
-  Future<void> onSatThuongVuKhiTanCongCoBan({required MoHinhPhuongTienTongQuat? phuongTien, required DiemToaDoHoanHaoCoBan? toaDoVaCham}) async {
+  void onVoidSatThuongVuKhiTanCongCoBan({required MoHinhPhuongTienTongQuat? phuongTien, required DiemToaDoHoanHaoCoBan? toaDoVaCham}) {
     double chiSoSatThuongCoBan =
         getTrungTamVanHanhThuocTinhChienDauTheoQuyChuan?.getCapDoSatThuongCoBanVKSCHienHanh?.getCapDoChuanChinhThuc?.getChiSoTheoCapDo?.getChiSoSatThuongVanHanh ?? 0;
     double chiSoTyLeBaoKich =
@@ -144,7 +144,7 @@ class TinhToanSatThuongHuongDenPhuongTien with CauTrucThucThiCoBan, DanhSachQuan
 
     // if (phuongTien?.getTrangThaiTrongChienDau?.getTrangThaiPhuongTienNhanSatThuong?.getSoLanNhanSatThuongDatToiDa == true) {
     if (phuongTien?.getThuocTinh?.getThuocTinhSinhTon?.getCapDoMau?.getChiSoMauTheoCapDoHienHanh?.getChiSoMauToiDaVanHanh == 0) {
-      await phuongTien?.getTrangThaiTrongChienDau?.getTrangThaiTonTai?.caiDatHuyHoanTat();
+       phuongTien?.getTrangThaiTrongChienDau?.getTrangThaiTonTai?.onVoidCaiDatHuyHoanTat();
       if (phuongTien is MOHINHPHUONGTIENVUKHIDIEUKHIEN) {
         phuongTien.getDuLieuJsonLamPhang['[TAN_CONG_HIEN_THI]'] = false;
       }
@@ -159,22 +159,17 @@ class TinhToanSatThuongHuongDenPhuongTien with CauTrucThucThiCoBan, DanhSachQuan
 
       // await diemToaDoTrungTam.caiDatDx(value: dx + chieuRongThanPhuongTien / 2);
       // await diemToaDoTrungTam.caiDatDy(value: dy + chieuCaoThanPhuongTien / 2);
-      await diemToaDoTrungTam.caiDatDx(value: dx);
-      await diemToaDoTrungTam.caiDatDy(value: dy);
-
-      /// -----
-      /// TODO: Giải Phóng Tài Nguyên Phương Tiện
-      /// -----
-      await phuongTien?.onDispose();
+       diemToaDoTrungTam.caiDatDx(value: dx);
+       diemToaDoTrungTam.caiDatDy(value: dy);
 
       /// -----
       /// TODO:
       /// -----
-      await getSuKienVaChamTrongChienDau?.getSuKienVaChamPhaHuy?.onXuLyVaCham(toaDoTrungTam: diemToaDoTrungTam);
-      await getSuKienVaChamTrongChienDau?.getSuKienVaChamPhaHuy?.onXuLySatThuongVaCham(toaDoTrungTam: diemToaDoTrungTam, satThuong: satThuong);
+       getSuKienVaChamTrongChienDau?.getSuKienVaChamPhaHuy?.onVoidXuLyVaCham(toaDoTrungTam: diemToaDoTrungTam);
+       getSuKienVaChamTrongChienDau?.getSuKienVaChamPhaHuy?.onVoidXuLySatThuongVaCham(toaDoTrungTam: diemToaDoTrungTam, satThuong: satThuong);
     } else {
-      await getSuKienVaChamTrongChienDau?.getSuKienVaChamCongKich?.onXuLyVaCham(toaDoTrungTam: toaDoVaCham);
-      await getSuKienVaChamTrongChienDau?.getSuKienVaChamCongKich?.onXuLySatThuongVaCham(toaDoTrungTam: toaDoVaCham, satThuong: satThuong);
+       getSuKienVaChamTrongChienDau?.getSuKienVaChamCongKich?.onVoidXuLyVaCham(toaDoTrungTam: toaDoVaCham);
+       getSuKienVaChamTrongChienDau?.getSuKienVaChamCongKich?.onVoidXuLySatThuongVaCham(toaDoTrungTam: toaDoVaCham, satThuong: satThuong);
     }
 
     return;
@@ -183,11 +178,11 @@ class TinhToanSatThuongHuongDenPhuongTien with CauTrucThucThiCoBan, DanhSachQuan
   /// -----
   /// TODO:
   /// -----
-  Future<void> onSatThuongVuKhiTanCongThongMinh({required MoHinhPhuongTienTongQuat? phuongTien, required DiemToaDoHoanHaoCoBan? toaDoVaCham}) async {
-    await phuongTien?.getTrangThaiTrongChienDau?.getTrangThaiPhuongTienNhanSatThuong?.caiDatTuDongTangSoLanNhanSatThuong();
+  void onVoidSatThuongVuKhiTanCongThongMinh({required MoHinhPhuongTienTongQuat? phuongTien, required DiemToaDoHoanHaoCoBan? toaDoVaCham}) {
+     phuongTien?.getTrangThaiTrongChienDau?.getTrangThaiPhuongTienNhanSatThuong?.caiDatTuDongTangSoLanNhanSatThuong();
 
     if (phuongTien?.getTrangThaiTrongChienDau?.getTrangThaiPhuongTienNhanSatThuong?.getSoLanNhanSatThuongDatToiDa == true) {
-      await phuongTien?.getTrangThaiTrongChienDau?.getTrangThaiTonTai?.caiDatHuyHoanTat();
+       phuongTien?.getTrangThaiTrongChienDau?.getTrangThaiTonTai?.onVoidCaiDatHuyHoanTat();
 
       DiemToaDoHoanHaoCoBan diemToaDoTrungTam = DiemToaDoHoanHaoCoBan(maDinhDanh: '', dx: 0, dy: 0);
 
@@ -197,12 +192,12 @@ class TinhToanSatThuongHuongDenPhuongTien with CauTrucThucThiCoBan, DanhSachQuan
       double chieuRongThanPhuongTien = phuongTien?.getPhuongThuc?.getPhuongThucBay?.getViTri?.getChieuRongThan ?? 0;
       double chieuCaoThanPhuongTien = phuongTien?.getPhuongThuc?.getPhuongThucBay?.getViTri?.getChieuCaoThan ?? 0;
 
-      await diemToaDoTrungTam.caiDatDx(value: dx + chieuRongThanPhuongTien / 2);
-      await diemToaDoTrungTam.caiDatDy(value: dy + chieuCaoThanPhuongTien / 2);
+       diemToaDoTrungTam.caiDatDx(value: dx + chieuRongThanPhuongTien / 2);
+       diemToaDoTrungTam.caiDatDy(value: dy + chieuCaoThanPhuongTien / 2);
 
-      await getSuKienVaChamTrongChienDau?.getSuKienVaChamPhaHuy?.onXuLyVaCham(toaDoTrungTam: diemToaDoTrungTam);
+       getSuKienVaChamTrongChienDau?.getSuKienVaChamPhaHuy?.onVoidXuLyVaCham(toaDoTrungTam: diemToaDoTrungTam);
     } else {
-      await getSuKienVaChamTrongChienDau?.getSuKienVaChamCongKich?.onXuLyVaCham(toaDoTrungTam: toaDoVaCham);
+       getSuKienVaChamTrongChienDau?.getSuKienVaChamCongKich?.onVoidXuLyVaCham(toaDoTrungTam: toaDoVaCham);
     }
 
     return;

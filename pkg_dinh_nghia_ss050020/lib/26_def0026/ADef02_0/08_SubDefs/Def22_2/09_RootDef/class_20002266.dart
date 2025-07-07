@@ -2890,94 +2890,94 @@ class BANGDIEUKHIENGIAIDOANTHUOCDOIHINHCOBAN with CauTrucThucThiCoBan {
   /// -----
   void onVoidKichHoatVatPhamPhanThuong({required DiemToaDoHoanHaoCoBan? toaDoVaCham}) {
     if (getDanhSachPhuongTienNhomSS00A[0]?.getMoHinh?.getDuLieuJsonLamPhang['[TRANG_THAI_TON_TAI]'] == true &&
-        getDanhSachPhuongTienNhomSS00A[0]?.getMoHinh?.getDuLieuJsonLamPhang['[VAT_PHAM_SAN_SANG]'] == true) {
+        getDanhSachPhuongTienNhomSS00A[0]?.getMoHinh?.getDuLieuJsonLamPhang['[VAT_PHAM_TON_TAI_SAN_SANG]'] == true) {
       getDanhSachPhuongTienNhomSS00A[0]?.getMoHinh?.onVoidKichHoatVatPhamPhanThuong(toaDoVaCham: toaDoVaCham);
     } else if (getDanhSachPhuongTienNhomSS00A[1]?.getMoHinh?.getDuLieuJsonLamPhang['[TRANG_THAI_TON_TAI]'] == true &&
-        getDanhSachPhuongTienNhomSS00A[1]?.getMoHinh?.getDuLieuJsonLamPhang['[VAT_PHAM_SAN_SANG]'] == true) {
+        getDanhSachPhuongTienNhomSS00A[1]?.getMoHinh?.getDuLieuJsonLamPhang['[VAT_PHAM_TON_TAI_SAN_SANG]'] == true) {
       getDanhSachPhuongTienNhomSS00A[1]?.getMoHinh?.onVoidKichHoatVatPhamPhanThuong(toaDoVaCham: toaDoVaCham);
     } else if (getDanhSachPhuongTienNhomSS00A[2]?.getMoHinh?.getDuLieuJsonLamPhang['[TRANG_THAI_TON_TAI]'] == true &&
-        getDanhSachPhuongTienNhomSS00A[2]?.getMoHinh?.getDuLieuJsonLamPhang['[VAT_PHAM_SAN_SANG]'] == true) {
+        getDanhSachPhuongTienNhomSS00A[2]?.getMoHinh?.getDuLieuJsonLamPhang['[VAT_PHAM_TON_TAI_SAN_SANG]'] == true) {
       getDanhSachPhuongTienNhomSS00A[2]?.getMoHinh?.onVoidKichHoatVatPhamPhanThuong(toaDoVaCham: toaDoVaCham);
     } else if (getDanhSachPhuongTienNhomSS00A[3]?.getMoHinh?.getDuLieuJsonLamPhang['[TRANG_THAI_TON_TAI]'] == true &&
-        getDanhSachPhuongTienNhomSS00A[3]?.getMoHinh?.getDuLieuJsonLamPhang['[VAT_PHAM_SAN_SANG]'] == true) {
+        getDanhSachPhuongTienNhomSS00A[3]?.getMoHinh?.getDuLieuJsonLamPhang['[VAT_PHAM_TON_TAI_SAN_SANG]'] == true) {
       getDanhSachPhuongTienNhomSS00A[3]?.getMoHinh?.onVoidKichHoatVatPhamPhanThuong(toaDoVaCham: toaDoVaCham);
     } else if (getDanhSachPhuongTienNhomSS00A[4]?.getMoHinh?.getDuLieuJsonLamPhang['[TRANG_THAI_TON_TAI]'] == true &&
-        getDanhSachPhuongTienNhomSS00A[4]?.getMoHinh?.getDuLieuJsonLamPhang['[VAT_PHAM_SAN_SANG]'] == true) {
+        getDanhSachPhuongTienNhomSS00A[4]?.getMoHinh?.getDuLieuJsonLamPhang['[VAT_PHAM_TON_TAI_SAN_SANG]'] == true) {
       getDanhSachPhuongTienNhomSS00A[4]?.getMoHinh?.onVoidKichHoatVatPhamPhanThuong(toaDoVaCham: toaDoVaCham);
     } else if (getDanhSachPhuongTienNhomSS00A[5]?.getMoHinh?.getDuLieuJsonLamPhang['[TRANG_THAI_TON_TAI]'] == true &&
-        getDanhSachPhuongTienNhomSS00A[5]?.getMoHinh?.getDuLieuJsonLamPhang['[VAT_PHAM_SAN_SANG]'] == true) {
+        getDanhSachPhuongTienNhomSS00A[5]?.getMoHinh?.getDuLieuJsonLamPhang['[VAT_PHAM_TON_TAI_SAN_SANG]'] == true) {
       getDanhSachPhuongTienNhomSS00A[5]?.getMoHinh?.onVoidKichHoatVatPhamPhanThuong(toaDoVaCham: toaDoVaCham);
     } else if (getDanhSachPhuongTienNhomSS00A[6]?.getMoHinh?.getDuLieuJsonLamPhang['[TRANG_THAI_TON_TAI]'] == true &&
-        getDanhSachPhuongTienNhomSS00A[6]?.getMoHinh?.getDuLieuJsonLamPhang['[VAT_PHAM_SAN_SANG]'] == true) {
+        getDanhSachPhuongTienNhomSS00A[6]?.getMoHinh?.getDuLieuJsonLamPhang['[VAT_PHAM_TON_TAI_SAN_SANG]'] == true) {
       getDanhSachPhuongTienNhomSS00A[6]?.getMoHinh?.onVoidKichHoatVatPhamPhanThuong(toaDoVaCham: toaDoVaCham);
     } else if (getDanhSachPhuongTienNhomSS00A[7]?.getMoHinh?.getDuLieuJsonLamPhang['[TRANG_THAI_TON_TAI]'] == true &&
-        getDanhSachPhuongTienNhomSS00A[7]?.getMoHinh?.getDuLieuJsonLamPhang['[VAT_PHAM_SAN_SANG]'] == true) {
+        getDanhSachPhuongTienNhomSS00A[7]?.getMoHinh?.getDuLieuJsonLamPhang['[VAT_PHAM_TON_TAI_SAN_SANG]'] == true) {
       getDanhSachPhuongTienNhomSS00A[7]?.getMoHinh?.onVoidKichHoatVatPhamPhanThuong(toaDoVaCham: toaDoVaCham);
     } else if (getDanhSachPhuongTienNhomSS00A[8]?.getMoHinh?.getDuLieuJsonLamPhang['[TRANG_THAI_TON_TAI]'] == true &&
-        getDanhSachPhuongTienNhomSS00A[8]?.getMoHinh?.getDuLieuJsonLamPhang['[VAT_PHAM_SAN_SANG]'] == true) {
+        getDanhSachPhuongTienNhomSS00A[8]?.getMoHinh?.getDuLieuJsonLamPhang['[VAT_PHAM_TON_TAI_SAN_SANG]'] == true) {
       getDanhSachPhuongTienNhomSS00A[8]?.getMoHinh?.onVoidKichHoatVatPhamPhanThuong(toaDoVaCham: toaDoVaCham);
     } else if (getDanhSachPhuongTienNhomSS00A[9]?.getMoHinh?.getDuLieuJsonLamPhang['[TRANG_THAI_TON_TAI]'] == true &&
-        getDanhSachPhuongTienNhomSS00A[9]?.getMoHinh?.getDuLieuJsonLamPhang['[VAT_PHAM_SAN_SANG]'] == true) {
+        getDanhSachPhuongTienNhomSS00A[9]?.getMoHinh?.getDuLieuJsonLamPhang['[VAT_PHAM_TON_TAI_SAN_SANG]'] == true) {
       getDanhSachPhuongTienNhomSS00A[9]?.getMoHinh?.onVoidKichHoatVatPhamPhanThuong(toaDoVaCham: toaDoVaCham);
     } else if (getDanhSachPhuongTienNhomSS00B[0]?.getMoHinh?.getDuLieuJsonLamPhang['[TRANG_THAI_TON_TAI]'] == true &&
-        getDanhSachPhuongTienNhomSS00B[0]?.getMoHinh?.getDuLieuJsonLamPhang['[VAT_PHAM_SAN_SANG]'] == true) {
+        getDanhSachPhuongTienNhomSS00B[0]?.getMoHinh?.getDuLieuJsonLamPhang['[VAT_PHAM_TON_TAI_SAN_SANG]'] == true) {
       getDanhSachPhuongTienNhomSS00B[0]?.getMoHinh?.onVoidKichHoatVatPhamPhanThuong(toaDoVaCham: toaDoVaCham);
     } else if (getDanhSachPhuongTienNhomSS00B[1]?.getMoHinh?.getDuLieuJsonLamPhang['[TRANG_THAI_TON_TAI]'] == true &&
-        getDanhSachPhuongTienNhomSS00B[1]?.getMoHinh?.getDuLieuJsonLamPhang['[VAT_PHAM_SAN_SANG]'] == true) {
+        getDanhSachPhuongTienNhomSS00B[1]?.getMoHinh?.getDuLieuJsonLamPhang['[VAT_PHAM_TON_TAI_SAN_SANG]'] == true) {
       getDanhSachPhuongTienNhomSS00B[1]?.getMoHinh?.onVoidKichHoatVatPhamPhanThuong(toaDoVaCham: toaDoVaCham);
     } else if (getDanhSachPhuongTienNhomSS00B[2]?.getMoHinh?.getDuLieuJsonLamPhang['[TRANG_THAI_TON_TAI]'] == true &&
-        getDanhSachPhuongTienNhomSS00B[2]?.getMoHinh?.getDuLieuJsonLamPhang['[VAT_PHAM_SAN_SANG]'] == true) {
+        getDanhSachPhuongTienNhomSS00B[2]?.getMoHinh?.getDuLieuJsonLamPhang['[VAT_PHAM_TON_TAI_SAN_SANG]'] == true) {
       getDanhSachPhuongTienNhomSS00B[2]?.getMoHinh?.onVoidKichHoatVatPhamPhanThuong(toaDoVaCham: toaDoVaCham);
     } else if (getDanhSachPhuongTienNhomSS00B[3]?.getMoHinh?.getDuLieuJsonLamPhang['[TRANG_THAI_TON_TAI]'] == true &&
-        getDanhSachPhuongTienNhomSS00B[3]?.getMoHinh?.getDuLieuJsonLamPhang['[VAT_PHAM_SAN_SANG]'] == true) {
+        getDanhSachPhuongTienNhomSS00B[3]?.getMoHinh?.getDuLieuJsonLamPhang['[VAT_PHAM_TON_TAI_SAN_SANG]'] == true) {
       getDanhSachPhuongTienNhomSS00B[3]?.getMoHinh?.onVoidKichHoatVatPhamPhanThuong(toaDoVaCham: toaDoVaCham);
     } else if (getDanhSachPhuongTienNhomSS00B[4]?.getMoHinh?.getDuLieuJsonLamPhang['[TRANG_THAI_TON_TAI]'] == true &&
-        getDanhSachPhuongTienNhomSS00B[4]?.getMoHinh?.getDuLieuJsonLamPhang['[VAT_PHAM_SAN_SANG]'] == true) {
+        getDanhSachPhuongTienNhomSS00B[4]?.getMoHinh?.getDuLieuJsonLamPhang['[VAT_PHAM_TON_TAI_SAN_SANG]'] == true) {
       getDanhSachPhuongTienNhomSS00B[4]?.getMoHinh?.onVoidKichHoatVatPhamPhanThuong(toaDoVaCham: toaDoVaCham);
     } else if (getDanhSachPhuongTienNhomSS00B[5]?.getMoHinh?.getDuLieuJsonLamPhang['[TRANG_THAI_TON_TAI]'] == true &&
-        getDanhSachPhuongTienNhomSS00B[5]?.getMoHinh?.getDuLieuJsonLamPhang['[VAT_PHAM_SAN_SANG]'] == true) {
+        getDanhSachPhuongTienNhomSS00B[5]?.getMoHinh?.getDuLieuJsonLamPhang['[VAT_PHAM_TON_TAI_SAN_SANG]'] == true) {
       getDanhSachPhuongTienNhomSS00B[5]?.getMoHinh?.onVoidKichHoatVatPhamPhanThuong(toaDoVaCham: toaDoVaCham);
     } else if (getDanhSachPhuongTienNhomSS00B[6]?.getMoHinh?.getDuLieuJsonLamPhang['[TRANG_THAI_TON_TAI]'] == true &&
-        getDanhSachPhuongTienNhomSS00B[6]?.getMoHinh?.getDuLieuJsonLamPhang['[VAT_PHAM_SAN_SANG]'] == true) {
+        getDanhSachPhuongTienNhomSS00B[6]?.getMoHinh?.getDuLieuJsonLamPhang['[VAT_PHAM_TON_TAI_SAN_SANG]'] == true) {
       getDanhSachPhuongTienNhomSS00B[6]?.getMoHinh?.onVoidKichHoatVatPhamPhanThuong(toaDoVaCham: toaDoVaCham);
     } else if (getDanhSachPhuongTienNhomSS00B[7]?.getMoHinh?.getDuLieuJsonLamPhang['[TRANG_THAI_TON_TAI]'] == true &&
-        getDanhSachPhuongTienNhomSS00B[7]?.getMoHinh?.getDuLieuJsonLamPhang['[VAT_PHAM_SAN_SANG]'] == true) {
+        getDanhSachPhuongTienNhomSS00B[7]?.getMoHinh?.getDuLieuJsonLamPhang['[VAT_PHAM_TON_TAI_SAN_SANG]'] == true) {
       getDanhSachPhuongTienNhomSS00B[7]?.getMoHinh?.onVoidKichHoatVatPhamPhanThuong(toaDoVaCham: toaDoVaCham);
     } else if (getDanhSachPhuongTienNhomSS00B[8]?.getMoHinh?.getDuLieuJsonLamPhang['[TRANG_THAI_TON_TAI]'] == true &&
-        getDanhSachPhuongTienNhomSS00B[8]?.getMoHinh?.getDuLieuJsonLamPhang['[VAT_PHAM_SAN_SANG]'] == true) {
+        getDanhSachPhuongTienNhomSS00B[8]?.getMoHinh?.getDuLieuJsonLamPhang['[VAT_PHAM_TON_TAI_SAN_SANG]'] == true) {
       getDanhSachPhuongTienNhomSS00B[8]?.getMoHinh?.onVoidKichHoatVatPhamPhanThuong(toaDoVaCham: toaDoVaCham);
     } else if (getDanhSachPhuongTienNhomSS00B[9]?.getMoHinh?.getDuLieuJsonLamPhang['[TRANG_THAI_TON_TAI]'] == true &&
-        getDanhSachPhuongTienNhomSS00B[9]?.getMoHinh?.getDuLieuJsonLamPhang['[VAT_PHAM_SAN_SANG]'] == true) {
+        getDanhSachPhuongTienNhomSS00B[9]?.getMoHinh?.getDuLieuJsonLamPhang['[VAT_PHAM_TON_TAI_SAN_SANG]'] == true) {
       getDanhSachPhuongTienNhomSS00B[9]?.getMoHinh?.onVoidKichHoatVatPhamPhanThuong(toaDoVaCham: toaDoVaCham);
     }  else if (getDanhSachPhuongTienNhomSS00C[0]?.getMoHinh?.getDuLieuJsonLamPhang['[TRANG_THAI_TON_TAI]'] == true &&
-        getDanhSachPhuongTienNhomSS00C[0]?.getMoHinh?.getDuLieuJsonLamPhang['[VAT_PHAM_SAN_SANG]'] == true) {
+        getDanhSachPhuongTienNhomSS00C[0]?.getMoHinh?.getDuLieuJsonLamPhang['[VAT_PHAM_TON_TAI_SAN_SANG]'] == true) {
       getDanhSachPhuongTienNhomSS00C[0]?.getMoHinh?.onVoidKichHoatVatPhamPhanThuong(toaDoVaCham: toaDoVaCham);
     } else if (getDanhSachPhuongTienNhomSS00C[1]?.getMoHinh?.getDuLieuJsonLamPhang['[TRANG_THAI_TON_TAI]'] == true &&
-        getDanhSachPhuongTienNhomSS00C[1]?.getMoHinh?.getDuLieuJsonLamPhang['[VAT_PHAM_SAN_SANG]'] == true) {
+        getDanhSachPhuongTienNhomSS00C[1]?.getMoHinh?.getDuLieuJsonLamPhang['[VAT_PHAM_TON_TAI_SAN_SANG]'] == true) {
       getDanhSachPhuongTienNhomSS00C[1]?.getMoHinh?.onVoidKichHoatVatPhamPhanThuong(toaDoVaCham: toaDoVaCham);
     } else if (getDanhSachPhuongTienNhomSS00C[2]?.getMoHinh?.getDuLieuJsonLamPhang['[TRANG_THAI_TON_TAI]'] == true &&
-        getDanhSachPhuongTienNhomSS00C[2]?.getMoHinh?.getDuLieuJsonLamPhang['[VAT_PHAM_SAN_SANG]'] == true) {
+        getDanhSachPhuongTienNhomSS00C[2]?.getMoHinh?.getDuLieuJsonLamPhang['[VAT_PHAM_TON_TAI_SAN_SANG]'] == true) {
       getDanhSachPhuongTienNhomSS00C[2]?.getMoHinh?.onVoidKichHoatVatPhamPhanThuong(toaDoVaCham: toaDoVaCham);
     } else if (getDanhSachPhuongTienNhomSS00C[3]?.getMoHinh?.getDuLieuJsonLamPhang['[TRANG_THAI_TON_TAI]'] == true &&
-        getDanhSachPhuongTienNhomSS00C[3]?.getMoHinh?.getDuLieuJsonLamPhang['[VAT_PHAM_SAN_SANG]'] == true) {
+        getDanhSachPhuongTienNhomSS00C[3]?.getMoHinh?.getDuLieuJsonLamPhang['[VAT_PHAM_TON_TAI_SAN_SANG]'] == true) {
       getDanhSachPhuongTienNhomSS00C[3]?.getMoHinh?.onVoidKichHoatVatPhamPhanThuong(toaDoVaCham: toaDoVaCham);
     } else if (getDanhSachPhuongTienNhomSS00C[4]?.getMoHinh?.getDuLieuJsonLamPhang['[TRANG_THAI_TON_TAI]'] == true &&
-        getDanhSachPhuongTienNhomSS00C[4]?.getMoHinh?.getDuLieuJsonLamPhang['[VAT_PHAM_SAN_SANG]'] == true) {
+        getDanhSachPhuongTienNhomSS00C[4]?.getMoHinh?.getDuLieuJsonLamPhang['[VAT_PHAM_TON_TAI_SAN_SANG]'] == true) {
       getDanhSachPhuongTienNhomSS00C[4]?.getMoHinh?.onVoidKichHoatVatPhamPhanThuong(toaDoVaCham: toaDoVaCham);
     } else if (getDanhSachPhuongTienNhomSS00C[5]?.getMoHinh?.getDuLieuJsonLamPhang['[TRANG_THAI_TON_TAI]'] == true &&
-        getDanhSachPhuongTienNhomSS00C[5]?.getMoHinh?.getDuLieuJsonLamPhang['[VAT_PHAM_SAN_SANG]'] == true) {
+        getDanhSachPhuongTienNhomSS00C[5]?.getMoHinh?.getDuLieuJsonLamPhang['[VAT_PHAM_TON_TAI_SAN_SANG]'] == true) {
       getDanhSachPhuongTienNhomSS00C[5]?.getMoHinh?.onVoidKichHoatVatPhamPhanThuong(toaDoVaCham: toaDoVaCham);
     } else if (getDanhSachPhuongTienNhomSS00C[6]?.getMoHinh?.getDuLieuJsonLamPhang['[TRANG_THAI_TON_TAI]'] == true &&
-        getDanhSachPhuongTienNhomSS00C[6]?.getMoHinh?.getDuLieuJsonLamPhang['[VAT_PHAM_SAN_SANG]'] == true) {
+        getDanhSachPhuongTienNhomSS00C[6]?.getMoHinh?.getDuLieuJsonLamPhang['[VAT_PHAM_TON_TAI_SAN_SANG]'] == true) {
       getDanhSachPhuongTienNhomSS00C[6]?.getMoHinh?.onVoidKichHoatVatPhamPhanThuong(toaDoVaCham: toaDoVaCham);
     } else if (getDanhSachPhuongTienNhomSS00C[7]?.getMoHinh?.getDuLieuJsonLamPhang['[TRANG_THAI_TON_TAI]'] == true &&
-        getDanhSachPhuongTienNhomSS00C[7]?.getMoHinh?.getDuLieuJsonLamPhang['[VAT_PHAM_SAN_SANG]'] == true) {
+        getDanhSachPhuongTienNhomSS00C[7]?.getMoHinh?.getDuLieuJsonLamPhang['[VAT_PHAM_TON_TAI_SAN_SANG]'] == true) {
       getDanhSachPhuongTienNhomSS00C[7]?.getMoHinh?.onVoidKichHoatVatPhamPhanThuong(toaDoVaCham: toaDoVaCham);
     } else if (getDanhSachPhuongTienNhomSS00C[8]?.getMoHinh?.getDuLieuJsonLamPhang['[TRANG_THAI_TON_TAI]'] == true &&
-        getDanhSachPhuongTienNhomSS00C[8]?.getMoHinh?.getDuLieuJsonLamPhang['[VAT_PHAM_SAN_SANG]'] == true) {
+        getDanhSachPhuongTienNhomSS00C[8]?.getMoHinh?.getDuLieuJsonLamPhang['[VAT_PHAM_TON_TAI_SAN_SANG]'] == true) {
       getDanhSachPhuongTienNhomSS00C[8]?.getMoHinh?.onVoidKichHoatVatPhamPhanThuong(toaDoVaCham: toaDoVaCham);
     } else if (getDanhSachPhuongTienNhomSS00C[9]?.getMoHinh?.getDuLieuJsonLamPhang['[TRANG_THAI_TON_TAI]'] == true &&
-        getDanhSachPhuongTienNhomSS00C[9]?.getMoHinh?.getDuLieuJsonLamPhang['[VAT_PHAM_SAN_SANG]'] == true) {
+        getDanhSachPhuongTienNhomSS00C[9]?.getMoHinh?.getDuLieuJsonLamPhang['[VAT_PHAM_TON_TAI_SAN_SANG]'] == true) {
       getDanhSachPhuongTienNhomSS00C[9]?.getMoHinh?.onVoidKichHoatVatPhamPhanThuong(toaDoVaCham: toaDoVaCham);
     }
     

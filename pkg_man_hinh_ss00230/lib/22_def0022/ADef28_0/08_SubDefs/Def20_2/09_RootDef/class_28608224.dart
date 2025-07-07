@@ -5,6 +5,7 @@ import 'package:pkg_dinh_nghia_ss050/pkg_dinh_nghia_ss050_exp.dart';
 import 'package:pkg_man_hinh_ss00230/22_def0022/ADef22_0/08_SubDefs/Def210_2/09_RootDef/class_62226266.dart';
 import 'package:pkg_man_hinh_ss00230/22_def0022/ADef22_0/08_SubDefs/Def220_2/09_RootDef/class_62226266.dart';
 import 'package:pkg_man_hinh_ss00230/22_def0022/ADef22_0/08_SubDefs/Def230_2/09_RootDef/class_62226266.dart';
+import 'package:pkg_man_hinh_ss00230/22_def0022/ADef22_0/08_SubDefs/Def610_2/09_RootDef/class_62226266.dart';
 import 'package:pkg_man_hinh_ss00230/22_def0022/ADef22_0/08_SubDefs/Def30_2/09_RootDef/class_26606266.dart';
 import 'package:pkg_man_hinh_ss00230/22_def0022/ADef22_0/08_SubDefs/Def40_2/09_RootDef/class_26626266.dart';
 import 'package:pkg_man_hinh_ss00230/22_def0022/ADef22_0/08_SubDefs/Def50_2/09_RootDef/class_66626266.dart';
@@ -49,6 +50,8 @@ class KHUNGMANHINHSS00230 extends PositionComponent {
   final KhungHinhNenBangDieuKhienDoiHinhVuKhiDieuKhien _khungHinhNenBangDieuKhienDoiHinhVuKhiDieuKhien = KhungHinhNenBangDieuKhienDoiHinhVuKhiDieuKhien(trangThaiTongQuat: null);
   final KhungHinhNenBangDieuKhienDoiHinhVuKhiNgauNhien _khungHinhNenBangDieuKhienDoiHinhVuKhiNgauNhien = KhungHinhNenBangDieuKhienDoiHinhVuKhiNgauNhien(trangThaiTongQuat: null);
 
+  final KhungHinhNenBangDieuKhienDoiHinhVatPhamTangCuong _khungHinhNenBangDieuKhienDoiHinhVatPhamTangCuong = KhungHinhNenBangDieuKhienDoiHinhVatPhamTangCuong(trangThaiTongQuat: null);
+
   @override
   Color backgroundColor() => Colors.transparent;
 
@@ -72,6 +75,8 @@ class KHUNGMANHINHSS00230 extends PositionComponent {
     await _khungHinhNenBangDieuKhienDoiHinhVuKhiTuDong.caiDatTrangThaiTongQuat(value: getTrangThaiTongQuat);
     await _khungHinhNenBangDieuKhienDoiHinhVuKhiDieuKhien.caiDatTrangThaiTongQuat(value: getTrangThaiTongQuat);
     await _khungHinhNenBangDieuKhienDoiHinhVuKhiNgauNhien.caiDatTrangThaiTongQuat(value: getTrangThaiTongQuat);
+
+    await _khungHinhNenBangDieuKhienDoiHinhVatPhamTangCuong.caiDatTrangThaiTongQuat(value: getTrangThaiTongQuat);
 
     ///
     if (_khungHinhNenBangDieuKhienDoiHinhDauSyTienPhong.isMounted == false) {
@@ -112,6 +117,10 @@ class KHUNGMANHINHSS00230 extends PositionComponent {
     }
     if (_khungHinhNenBangDieuKhienDoiHinhVuKhiNgauNhien.isMounted == false) {
       await add(_khungHinhNenBangDieuKhienDoiHinhVuKhiNgauNhien);
+    }
+
+    if (_khungHinhNenBangDieuKhienDoiHinhVatPhamTangCuong.isMounted == false) {
+      await add(_khungHinhNenBangDieuKhienDoiHinhVatPhamTangCuong);
     }
 
     return;

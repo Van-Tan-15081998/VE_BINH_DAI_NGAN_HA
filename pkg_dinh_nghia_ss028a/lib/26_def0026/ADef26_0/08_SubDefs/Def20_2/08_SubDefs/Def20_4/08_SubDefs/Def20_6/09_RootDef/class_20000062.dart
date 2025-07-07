@@ -16,7 +16,7 @@ abstract class VienDanCoBan extends VIENDANTANCONGCOBAN {
   TocDoCoBan? _tocDoBayNguyenBan;
   TocDoCoBan? get getTocDoBayNguyenBan => _tocDoBayNguyenBan;
   TocDoCoBan get getTocDoBayNguyenBanNotNull => _tocDoBayNguyenBan ?? TocDoBayCoBan.onMacDinh();
-  Future<void> caiDatTocDoBayNguyenBan({required TocDoCoBan? value}) async {
+  void onVoidCaiDatTocDoBayNguyenBan({required TocDoCoBan? value}) {
     _tocDoBayNguyenBan = value;
     return;
   }
@@ -27,7 +27,7 @@ abstract class VienDanCoBan extends VIENDANTANCONGCOBAN {
   TocDoBayCoBan? _tocDoBayTangCuong;
   TocDoBayCoBan? get getTocDoBayTangCuong => _tocDoBayTangCuong;
   TocDoBayCoBan get getTocDoBayTangCuongNotNull => _tocDoBayTangCuong ?? TocDoBayCoBan.onMacDinh();
-  Future<void> caiDatTocDoBayTangCuong({required TocDoBayCoBan? value}) async {
+  void onVoidCaiDatTocDoBayTangCuong({required TocDoBayCoBan? value}) {
     _tocDoBayTangCuong = value;
     return;
   }
@@ -191,10 +191,10 @@ abstract class VienDanCoBan extends VIENDANTANCONGCOBAN {
     caiDatBienDuoiViTriLayMucTieu(value: 0);
     caiDatChieuRongManHinhPhiVatLy(value: 0);
     caiDatChieuCaoManHinhPhiVatLy(value: 0);
-    caiDatThoiGianKichHoat(value: ThoiGianKichHoatCoBan.onMacDinh());
+    onVoidCaiDatThoiGianKichHoat(value: ThoiGianKichHoatCoBan.onMacDinh());
     caiDatDinhHuongBay(value: DinhHuongBayCoBan.onMacDinh());
-    caiDatTocDoBayNguyenBan(value: TocDoBayCoBan.onMacDinh());
-    caiDatTocDoBayTangCuong(value: null);
+    onVoidCaiDatTocDoBayNguyenBan(value: TocDoBayCoBan.onMacDinh());
+    onVoidCaiDatTocDoBayTangCuong(value: null);
     caiDatTrangThaiTonTai(value: TrangThaiTonTaiCoBan.onMacDinh());
     caiDatMaDinhDanhDoiTuongMucTieuNguyenBan();
   }

@@ -152,7 +152,7 @@ abstract class SpritePhuongTienCoBan extends SpriteAnimationComponent with HasVi
   /// -----
   /// TODO:
   /// -----
-  void onVoidCapNhatKiemTraHienThi() async {
+  void onVoidCapNhatKiemTraHienThi()  {
     if (getMoHinh?.getMoHinh?.getDuLieuJsonLamPhang['[DI_CHUYEN_HIEN_THI]'] == true) {
       /// -----
       /// TODO: Cài Đặt SpriteAnimation cho Phương Tiện Mới
@@ -209,7 +209,7 @@ abstract class SpritePhuongTienCoBan extends SpriteAnimationComponent with HasVi
   /// -----
   /// TODO: Cập Nhật Position Và Size
   /// -----
-  void onVoidCapNhatPositionSizeValues() async {
+  void onVoidCapNhatPositionSizeValues()  {
     if (getKiemTraHienThi == true) {
       ///
       /// TODO:

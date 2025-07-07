@@ -223,7 +223,7 @@ class QuanLyTrangThaiPhuongThucTanCongCoBanSS01 extends QuanLyTrangThaiPhuongThu
   /// TODO:
   /// -----
   @override
-  Future<bool> onKiemTraThoiGianKichHoatTanCong() async {
+  bool onCheckBoolThoiGianKichHoatTanCong() {
     /// -----
     /// TODO: Kiểm Tra Thời Gian Kích Hoạt Tấn Công Dựa Vào Thuộc Tính Của Chiến Đấu Cơ
     /// -----

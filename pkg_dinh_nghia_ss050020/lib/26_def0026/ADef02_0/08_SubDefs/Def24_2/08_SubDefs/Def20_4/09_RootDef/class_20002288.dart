@@ -77,6 +77,7 @@ class BANGDIEUKHIENGIAIDOANTHUOCKICHBANHINHTHUCSS010 extends BANGDIEUKHIENGIAIDO
     /// -----
     /// TODO: Đội Hình VPTC
     /// -----
+    await getBangDieuKhienGiaiDoanThuocDoiHinhVPTC?.getDonViGiaiDoanNhomSS00ATurnSS01HoatDongSS020?.caiDatTrangThaiDangKichHoat();
 
     /// -----
     /// TODO: Đội Hình VPPT
@@ -176,6 +177,11 @@ class BANGDIEUKHIENGIAIDOANTHUOCKICHBANHINHTHUCSS010 extends BANGDIEUKHIENGIAIDO
     /// -----
     await getBangDieuKhienGiaiDoanThuocDoiHinhVKNN?.getDonViGiaiDoanNhomSS00ATurnSS02HoatDongSS020?.caiDatTrangThaiDangKichHoat();
 
+    /// -----
+    /// TODO: Đội Hình VPTC
+    /// -----
+    await getBangDieuKhienGiaiDoanThuocDoiHinhVPTC?.getDonViGiaiDoanNhomSS00ATurnSS02HoatDongSS020?.caiDatTrangThaiDangKichHoat();
+
     ///
     return;
   }
@@ -270,6 +276,11 @@ class BANGDIEUKHIENGIAIDOANTHUOCKICHBANHINHTHUCSS010 extends BANGDIEUKHIENGIAIDO
     /// -----
     await getBangDieuKhienGiaiDoanThuocDoiHinhVKNN?.getDonViGiaiDoanNhomSS00BTurnSS01HoatDongSS020?.caiDatTrangThaiDangKichHoat();
 
+    /// -----
+    /// TODO: Đội Hình VPTC
+    /// -----
+    await getBangDieuKhienGiaiDoanThuocDoiHinhVPTC?.getDonViGiaiDoanNhomSS00BTurnSS01HoatDongSS020?.caiDatTrangThaiDangKichHoat();
+
     ///
     return;
   }
@@ -361,6 +372,11 @@ class BANGDIEUKHIENGIAIDOANTHUOCKICHBANHINHTHUCSS010 extends BANGDIEUKHIENGIAIDO
     /// TODO: Đội Hình VKNN
     /// -----
     await getBangDieuKhienGiaiDoanThuocDoiHinhVKNN?.getDonViGiaiDoanNhomSS00BTurnSS02HoatDongSS020?.caiDatTrangThaiDangKichHoat();
+
+    /// -----
+    /// TODO: Đội Hình VPTC
+    /// -----
+    await getBangDieuKhienGiaiDoanThuocDoiHinhVPTC?.getDonViGiaiDoanNhomSS00BTurnSS02HoatDongSS020?.caiDatTrangThaiDangKichHoat();
 
     ///
     return;
@@ -456,6 +472,11 @@ class BANGDIEUKHIENGIAIDOANTHUOCKICHBANHINHTHUCSS010 extends BANGDIEUKHIENGIAIDO
     /// -----
     await getBangDieuKhienGiaiDoanThuocDoiHinhVKNN?.getDonViGiaiDoanNhomSS00CTurnSS01HoatDongSS020?.caiDatTrangThaiDangKichHoat();
 
+    /// -----
+    /// TODO: Đội Hình VPTC
+    /// -----
+    await getBangDieuKhienGiaiDoanThuocDoiHinhVPTC?.getDonViGiaiDoanNhomSS00CTurnSS01HoatDongSS020?.caiDatTrangThaiDangKichHoat();
+
     ///
     return;
   }
@@ -547,6 +568,11 @@ class BANGDIEUKHIENGIAIDOANTHUOCKICHBANHINHTHUCSS010 extends BANGDIEUKHIENGIAIDO
     /// TODO: Đội Hình VKNN
     /// -----
     await getBangDieuKhienGiaiDoanThuocDoiHinhVKNN?.getDonViGiaiDoanNhomSS00CTurnSS02HoatDongSS020?.caiDatTrangThaiDangKichHoat();
+
+    /// -----
+    /// TODO: Đội Hình VPTC
+    /// -----
+    await getBangDieuKhienGiaiDoanThuocDoiHinhVPTC?.getDonViGiaiDoanNhomSS00CTurnSS02HoatDongSS020?.caiDatTrangThaiDangKichHoat();
 
     ///
     return;

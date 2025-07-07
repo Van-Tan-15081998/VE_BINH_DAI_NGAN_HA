@@ -66,7 +66,7 @@
 //     await _viTriChienDauCo?.caiDatBienDuoiViTriLayMucTieu(value: null);
 //     await _viTriChienDauCo?.caiDatChieuRongManHinhPhiVatLy(value: getChieuRongManHinhPhiVatLy);
 //     await _viTriChienDauCo?.caiDatChieuCaoManHinhPhiVatLy(value: getChieuCaoManHinhPhiVatLy);
-//     await _viTriChienDauCo?.caiDatThoiGianKichHoat(value: null);
+//     await _viTriChienDauCo?.onVoidCaiDatThoiGianKichHoat(value: null);
 //     await _viTriChienDauCo?.caiDatHuongBay(value: DinhHuongBayCoBan.dinhHuongTheoViTriChienDauChienDauCo());
 //     await _viTriChienDauCo?.caiDatTocDoBay(value: null);
 //     await _viTriChienDauCo?.caiDatTrangThaiTonTai(value: null);
@@ -231,7 +231,7 @@
 //       }
 //     }
 //
-//     if (await getTienTrinhTongQuat?.getTienTrinhTrienKhaiChienDau?.getTrangThai?.getMoHinh?.isDangThucThi() == true) {
+//     if (await getTienTrinhTongQuat?.getTienTrinhTrienKhaiChienDau?.getTrangThai?.getMoHinh?.onCheckBoolDangThucThi() == true) {
 //       if (await _viTriChienDauCo?.isDieuKhienSanSang() == false) {
 //         await _viTriChienDauCo?.kichHoatDieuKhien();
 //       }
@@ -452,7 +452,7 @@
 //     double bienDaoDongKhungHinhNenSs2 = 0.05;
 //
 //     if (await _viTriChienDauCo?.isDieuKhienSanSang() == true) {
-//       if (await getTienTrinhTongQuat?.getTienTrinhThucThiChienDau?.getTrangThai?.getMoHinh?.isDangThucThi() == true) {
+//       if (await getTienTrinhTongQuat?.getTienTrinhThucThiChienDau?.getTrangThai?.getMoHinh?.onCheckBoolDangThucThi() == true) {
 //         if (newPosition.dx != 0 || newPosition.dy != 0) {
 //           double currentLeftBorder = _viTriChienDauCo?.getBienTraiNotNull ?? 0;
 //           double currentBottomBorder = _viTriChienDauCo?.getBienDuoiNotNull ?? 0;

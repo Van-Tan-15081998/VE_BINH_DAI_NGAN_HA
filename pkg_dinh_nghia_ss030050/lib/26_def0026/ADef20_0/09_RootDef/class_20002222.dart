@@ -278,7 +278,37 @@ class MOHINHPHUONGTIENVACHAM with CauTrucThucThiCoBan {
   static const String maDinhDanhPhuongTienVaChamSS554 = '[PHUONG_TIEN_VA_CHAM_SS554]';
   static const String maDinhDanhPhuongTienVaChamSS556 = '[PHUONG_TIEN_VA_CHAM_SS556]';
   static const String maDinhDanhPhuongTienVaChamSS558 = '[PHUONG_TIEN_VA_CHAM_SS558]';
+
   static const String maDinhDanhPhuongTienVaChamSS560 = '[PHUONG_TIEN_VA_CHAM_SS560]';
+  static const String maDinhDanhPhuongTienVaChamSS562 = '[PHUONG_TIEN_VA_CHAM_SS562]';
+  static const String maDinhDanhPhuongTienVaChamSS564 = '[PHUONG_TIEN_VA_CHAM_SS564]';
+  static const String maDinhDanhPhuongTienVaChamSS566 = '[PHUONG_TIEN_VA_CHAM_SS566]';
+  static const String maDinhDanhPhuongTienVaChamSS568 = '[PHUONG_TIEN_VA_CHAM_SS568]';
+  static const String maDinhDanhPhuongTienVaChamSS570 = '[PHUONG_TIEN_VA_CHAM_SS570]';
+  static const String maDinhDanhPhuongTienVaChamSS572 = '[PHUONG_TIEN_VA_CHAM_SS572]';
+  static const String maDinhDanhPhuongTienVaChamSS574 = '[PHUONG_TIEN_VA_CHAM_SS574]';
+  static const String maDinhDanhPhuongTienVaChamSS576 = '[PHUONG_TIEN_VA_CHAM_SS576]';
+  static const String maDinhDanhPhuongTienVaChamSS578 = '[PHUONG_TIEN_VA_CHAM_SS578]';
+  static const String maDinhDanhPhuongTienVaChamSS580 = '[PHUONG_TIEN_VA_CHAM_SS580]';
+  static const String maDinhDanhPhuongTienVaChamSS582 = '[PHUONG_TIEN_VA_CHAM_SS582]';
+  static const String maDinhDanhPhuongTienVaChamSS584 = '[PHUONG_TIEN_VA_CHAM_SS584]';
+  static const String maDinhDanhPhuongTienVaChamSS586 = '[PHUONG_TIEN_VA_CHAM_SS586]';
+  static const String maDinhDanhPhuongTienVaChamSS588 = '[PHUONG_TIEN_VA_CHAM_SS588]';
+  static const String maDinhDanhPhuongTienVaChamSS590 = '[PHUONG_TIEN_VA_CHAM_SS590]';
+  static const String maDinhDanhPhuongTienVaChamSS592 = '[PHUONG_TIEN_VA_CHAM_SS592]';
+  static const String maDinhDanhPhuongTienVaChamSS594 = '[PHUONG_TIEN_VA_CHAM_SS594]';
+  static const String maDinhDanhPhuongTienVaChamSS596 = '[PHUONG_TIEN_VA_CHAM_SS596]';
+  static const String maDinhDanhPhuongTienVaChamSS598 = '[PHUONG_TIEN_VA_CHAM_SS598]';
+  static const String maDinhDanhPhuongTienVaChamSS600 = '[PHUONG_TIEN_VA_CHAM_SS600]';
+  static const String maDinhDanhPhuongTienVaChamSS602 = '[PHUONG_TIEN_VA_CHAM_SS602]';
+  static const String maDinhDanhPhuongTienVaChamSS604 = '[PHUONG_TIEN_VA_CHAM_SS604]';
+  static const String maDinhDanhPhuongTienVaChamSS606 = '[PHUONG_TIEN_VA_CHAM_SS606]';
+  static const String maDinhDanhPhuongTienVaChamSS608 = '[PHUONG_TIEN_VA_CHAM_SS608]';
+  static const String maDinhDanhPhuongTienVaChamSS610 = '[PHUONG_TIEN_VA_CHAM_SS610]';
+  static const String maDinhDanhPhuongTienVaChamSS612 = '[PHUONG_TIEN_VA_CHAM_SS612]';
+  static const String maDinhDanhPhuongTienVaChamSS614 = '[PHUONG_TIEN_VA_CHAM_SS614]';
+  static const String maDinhDanhPhuongTienVaChamSS616 = '[PHUONG_TIEN_VA_CHAM_SS616]';
+  static const String maDinhDanhPhuongTienVaChamSS618 = '[PHUONG_TIEN_VA_CHAM_SS618]';
 
   MOHINHPHUONGTIENVACHAM.onSS020() {
     onCaiDatMaDinhDanhPhuongTienVaCham(value: MOHINHPHUONGTIENVACHAM.maDinhDanhPhuongTienVaChamSS020, caiDatUuTien: true);
@@ -1360,8 +1390,96 @@ class MOHINHPHUONGTIENVACHAM with CauTrucThucThiCoBan {
     onCaiDatMaDinhDanhPhuongTienVaCham(value: MOHINHPHUONGTIENVACHAM.maDinhDanhPhuongTienVaChamSS558, caiDatUuTien: true);
   }
 
+  ///
   MOHINHPHUONGTIENVACHAM.onSS560() {
     onCaiDatMaDinhDanhPhuongTienVaCham(value: MOHINHPHUONGTIENVACHAM.maDinhDanhPhuongTienVaChamSS560, caiDatUuTien: true);
+  }
+  MOHINHPHUONGTIENVACHAM.onSS562() {
+    onCaiDatMaDinhDanhPhuongTienVaCham(value: MOHINHPHUONGTIENVACHAM.maDinhDanhPhuongTienVaChamSS562, caiDatUuTien: true);
+  }
+  MOHINHPHUONGTIENVACHAM.onSS564() {
+    onCaiDatMaDinhDanhPhuongTienVaCham(value: MOHINHPHUONGTIENVACHAM.maDinhDanhPhuongTienVaChamSS564, caiDatUuTien: true);
+  }
+  MOHINHPHUONGTIENVACHAM.onSS566() {
+    onCaiDatMaDinhDanhPhuongTienVaCham(value: MOHINHPHUONGTIENVACHAM.maDinhDanhPhuongTienVaChamSS566, caiDatUuTien: true);
+  }
+  MOHINHPHUONGTIENVACHAM.onSS568() {
+    onCaiDatMaDinhDanhPhuongTienVaCham(value: MOHINHPHUONGTIENVACHAM.maDinhDanhPhuongTienVaChamSS568, caiDatUuTien: true);
+  }
+  MOHINHPHUONGTIENVACHAM.onSS570() {
+    onCaiDatMaDinhDanhPhuongTienVaCham(value: MOHINHPHUONGTIENVACHAM.maDinhDanhPhuongTienVaChamSS570, caiDatUuTien: true);
+  }
+  MOHINHPHUONGTIENVACHAM.onSS572() {
+    onCaiDatMaDinhDanhPhuongTienVaCham(value: MOHINHPHUONGTIENVACHAM.maDinhDanhPhuongTienVaChamSS572, caiDatUuTien: true);
+  }
+  MOHINHPHUONGTIENVACHAM.onSS574() {
+    onCaiDatMaDinhDanhPhuongTienVaCham(value: MOHINHPHUONGTIENVACHAM.maDinhDanhPhuongTienVaChamSS574, caiDatUuTien: true);
+  }
+  MOHINHPHUONGTIENVACHAM.onSS576() {
+    onCaiDatMaDinhDanhPhuongTienVaCham(value: MOHINHPHUONGTIENVACHAM.maDinhDanhPhuongTienVaChamSS576, caiDatUuTien: true);
+  }
+  MOHINHPHUONGTIENVACHAM.onSS578() {
+    onCaiDatMaDinhDanhPhuongTienVaCham(value: MOHINHPHUONGTIENVACHAM.maDinhDanhPhuongTienVaChamSS578, caiDatUuTien: true);
+  }
+  MOHINHPHUONGTIENVACHAM.onSS580() {
+    onCaiDatMaDinhDanhPhuongTienVaCham(value: MOHINHPHUONGTIENVACHAM.maDinhDanhPhuongTienVaChamSS580, caiDatUuTien: true);
+  }
+  MOHINHPHUONGTIENVACHAM.onSS582() {
+    onCaiDatMaDinhDanhPhuongTienVaCham(value: MOHINHPHUONGTIENVACHAM.maDinhDanhPhuongTienVaChamSS582, caiDatUuTien: true);
+  }
+  MOHINHPHUONGTIENVACHAM.onSS584() {
+    onCaiDatMaDinhDanhPhuongTienVaCham(value: MOHINHPHUONGTIENVACHAM.maDinhDanhPhuongTienVaChamSS584, caiDatUuTien: true);
+  }
+  MOHINHPHUONGTIENVACHAM.onSS586() {
+    onCaiDatMaDinhDanhPhuongTienVaCham(value: MOHINHPHUONGTIENVACHAM.maDinhDanhPhuongTienVaChamSS586, caiDatUuTien: true);
+  }
+  MOHINHPHUONGTIENVACHAM.onSS588() {
+    onCaiDatMaDinhDanhPhuongTienVaCham(value: MOHINHPHUONGTIENVACHAM.maDinhDanhPhuongTienVaChamSS588, caiDatUuTien: true);
+  }
+  MOHINHPHUONGTIENVACHAM.onSS590() {
+    onCaiDatMaDinhDanhPhuongTienVaCham(value: MOHINHPHUONGTIENVACHAM.maDinhDanhPhuongTienVaChamSS590, caiDatUuTien: true);
+  }
+  MOHINHPHUONGTIENVACHAM.onSS592() {
+    onCaiDatMaDinhDanhPhuongTienVaCham(value: MOHINHPHUONGTIENVACHAM.maDinhDanhPhuongTienVaChamSS592, caiDatUuTien: true);
+  }
+  MOHINHPHUONGTIENVACHAM.onSS594() {
+    onCaiDatMaDinhDanhPhuongTienVaCham(value: MOHINHPHUONGTIENVACHAM.maDinhDanhPhuongTienVaChamSS594, caiDatUuTien: true);
+  }
+  MOHINHPHUONGTIENVACHAM.onSS596() {
+    onCaiDatMaDinhDanhPhuongTienVaCham(value: MOHINHPHUONGTIENVACHAM.maDinhDanhPhuongTienVaChamSS596, caiDatUuTien: true);
+  }
+  MOHINHPHUONGTIENVACHAM.onSS598() {
+    onCaiDatMaDinhDanhPhuongTienVaCham(value: MOHINHPHUONGTIENVACHAM.maDinhDanhPhuongTienVaChamSS598, caiDatUuTien: true);
+  }
+  MOHINHPHUONGTIENVACHAM.onSS600() {
+    onCaiDatMaDinhDanhPhuongTienVaCham(value: MOHINHPHUONGTIENVACHAM.maDinhDanhPhuongTienVaChamSS600, caiDatUuTien: true);
+  }
+  MOHINHPHUONGTIENVACHAM.onSS602() {
+    onCaiDatMaDinhDanhPhuongTienVaCham(value: MOHINHPHUONGTIENVACHAM.maDinhDanhPhuongTienVaChamSS602, caiDatUuTien: true);
+  }
+  MOHINHPHUONGTIENVACHAM.onSS604() {
+    onCaiDatMaDinhDanhPhuongTienVaCham(value: MOHINHPHUONGTIENVACHAM.maDinhDanhPhuongTienVaChamSS604, caiDatUuTien: true);
+  }
+  MOHINHPHUONGTIENVACHAM.onSS606() {
+    onCaiDatMaDinhDanhPhuongTienVaCham(value: MOHINHPHUONGTIENVACHAM.maDinhDanhPhuongTienVaChamSS606, caiDatUuTien: true);
+  }
+  MOHINHPHUONGTIENVACHAM.onSS608() {
+    onCaiDatMaDinhDanhPhuongTienVaCham(value: MOHINHPHUONGTIENVACHAM.maDinhDanhPhuongTienVaChamSS608, caiDatUuTien: true);
+  }
+  MOHINHPHUONGTIENVACHAM.onSS610() {
+    onCaiDatMaDinhDanhPhuongTienVaCham(value: MOHINHPHUONGTIENVACHAM.maDinhDanhPhuongTienVaChamSS610, caiDatUuTien: true);
+  }
+  MOHINHPHUONGTIENVACHAM.onSS612() {
+    onCaiDatMaDinhDanhPhuongTienVaCham(value: MOHINHPHUONGTIENVACHAM.maDinhDanhPhuongTienVaChamSS612, caiDatUuTien: true);
+  }
+  MOHINHPHUONGTIENVACHAM.onSS614() {
+    onCaiDatMaDinhDanhPhuongTienVaCham(value: MOHINHPHUONGTIENVACHAM.maDinhDanhPhuongTienVaChamSS614, caiDatUuTien: true);
+  }
+  MOHINHPHUONGTIENVACHAM.onSS616() {
+    onCaiDatMaDinhDanhPhuongTienVaCham(value: MOHINHPHUONGTIENVACHAM.maDinhDanhPhuongTienVaChamSS616, caiDatUuTien: true);
+  }
+  MOHINHPHUONGTIENVACHAM.onSS618() {
+    onCaiDatMaDinhDanhPhuongTienVaCham(value: MOHINHPHUONGTIENVACHAM.maDinhDanhPhuongTienVaChamSS618, caiDatUuTien: true);
   }
 
   /// -----
@@ -1370,7 +1488,7 @@ class MOHINHPHUONGTIENVACHAM with CauTrucThucThiCoBan {
   MOHINHPHUONGTIENVACHAM({required String maDinhDanh, required String maDinhDanhPhuongTienVaCham, required String maDinhDanhVienDanVaCham}) {
     onCaiDatMaDinhDanh(value: maDinhDanh);
     onCaiDatMaDinhDanhPhuongTienVaCham(value: maDinhDanhPhuongTienVaCham);
-    onCaiDatMaDinhDanhVienDanVaCham(value: maDinhDanhVienDanVaCham);
+    onVoidCaiDatMaDinhDanhVienDanVaCham(value: maDinhDanhVienDanVaCham);
   }
 
   /// -----
@@ -1505,7 +1623,7 @@ class MOHINHPHUONGTIENVACHAM with CauTrucThucThiCoBan {
   /// -----
   String? _maDinhDanhVienDanVaCham;
   String? get getMaDinhDanhVienDanVaCham => _maDinhDanhVienDanVaCham;
-  Future<void> onCaiDatMaDinhDanhVienDanVaCham({required String? value, bool? caiDatUuTien}) async {
+  void onVoidCaiDatMaDinhDanhVienDanVaCham({required String? value, bool? caiDatUuTien}) {
     if (caiDatUuTien == true) {
       _maDinhDanhVienDanVaCham = value;
     } else {
@@ -1665,7 +1783,7 @@ class MOHINHPHUONGTIENVACHAM with CauTrucThucThiCoBan {
     '[CHIEU_CAO_THAN]': getPhuongTien?.getMoHinh?.getPhuongThuc?.getPhuongThucBay?.getViTri?.getChieuCaoThan ?? 0,
     '[DX_TRONG_TAM]': getPhuongTien?.getMoHinh?.getPhuongThuc?.getPhuongThucBay?.getViTri?.getDxTrongTam ?? 0,
     '[DY_TRONG_TAM]': getPhuongTien?.getMoHinh?.getPhuongThuc?.getPhuongThucBay?.getViTri?.getDyTrongTam ?? 0,
-    '[TRANG_THAI_TON_TAI]': getPhuongTien?.getMoHinh?.getTrangThaiTrongChienDau?.getTrangThaiTonTai?.isKhoiTaoHoanTat() ?? false,
+    '[TRANG_THAI_TON_TAI]': getPhuongTien?.getMoHinh?.getTrangThaiTrongChienDau?.getTrangThaiTonTai?.onCheckBoolKhoiTaoHoanTat() ?? false,
   };
 
   Map<String, dynamic> toDuLieuJsonSuKienVaCham() => {

@@ -110,7 +110,7 @@ abstract class SpriteHatSatThuongVaChamCoBan extends TextComponent with HasVisib
   /// TODO:
   /// -----
   void onVoidCapNhatKiemTraHienThi() {
-    if (getMoHinh?.getMoHinh?.getThuocTinhTichHop?.getTrangThaiTonTai?.isKhoiTaoHoanTat() == true) {
+    if (getMoHinh?.getMoHinh?.getThuocTinhTichHop?.getTrangThaiTonTai?.onCheckBoolKhoiTaoHoanTat() == true) {
       if (getKiemTraHienThi == false) {
         onVoidCaiDatKiemTraHienThi(value: true);
       }
@@ -185,8 +185,8 @@ abstract class SpriteHatSatThuongVaChamCoBan extends TextComponent with HasVisib
       ///
       /// TODO:
       ///
-      double dy = getMoHinh?.getMoHinh?.getThuocTinhTichHop?.getDy ?? 1.0;
-      double dx = getMoHinh?.getMoHinh?.getThuocTinhTichHop?.getDx ?? 1.0;
+      double dy = getMoHinh?.getMoHinh?.getThuocTinhTichHop?.getDyTrongTam ?? 1.0;
+      double dx = getMoHinh?.getMoHinh?.getThuocTinhTichHop?.getDxTrongTam ?? 1.0;
       double chieuCaoThan = getMoHinh?.getMoHinh?.getThuocTinhTichHop?.getChieuCaoThan ?? 1.0;
       double chieuRongThan = getMoHinh?.getMoHinh?.getThuocTinhTichHop?.getChieuRongThan ?? 1.0;
 

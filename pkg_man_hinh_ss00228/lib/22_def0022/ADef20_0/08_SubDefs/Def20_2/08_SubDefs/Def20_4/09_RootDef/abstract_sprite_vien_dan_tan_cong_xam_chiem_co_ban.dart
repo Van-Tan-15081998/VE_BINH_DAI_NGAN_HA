@@ -131,7 +131,7 @@ abstract class SPRITEVIENDANTANCONGXAMCHIEMCOBAN extends SpriteAnimationComponen
     /// -----
     // await onGiaiPhongTaiNguyen();
     //
-    // if (await getMoHinh?.getMoHinh?.getTrangThaiTonTai?.isKhoiTaoHoanTat() == true) {
+    // if (await getMoHinh?.getMoHinh?.getTrangThaiTonTai?.onCheckBoolKhoiTaoHoanTat() == true) {
     //   if (getDonViSprite?.getSpriteAnimation == null) {
     //     final random = Random();
     //     int randomNumber = random.nextInt(3) + 1; // tạo số từ 1 đến 3

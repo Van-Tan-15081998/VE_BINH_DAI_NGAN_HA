@@ -68,7 +68,7 @@ class QuanLyTrangThaiDieuKhienDiChuyenChienDauCo with KhungThucThiCoBan, DanhSac
     await _viTriChienDauCo?.caiDatBienDuoiViTriLayMucTieu(value: null);
     await _viTriChienDauCo?.caiDatChieuRongManHinhPhiVatLy(value: getChieuRongManHinhPhiVatLy);
     await _viTriChienDauCo?.caiDatChieuCaoManHinhPhiVatLy(value: getChieuCaoManHinhPhiVatLy);
-    await _viTriChienDauCo?.caiDatThoiGianKichHoat(value: null);
+     _viTriChienDauCo?.onVoidCaiDatThoiGianKichHoat(value: null);
     await _viTriChienDauCo?.caiDatHuongBay(value: DinhHuongBayCoBan.dinhHuongTheoViTriChienDauChienDauCo());
     await _viTriChienDauCo?.caiDatTocDoBay(value: null);
     await _viTriChienDauCo?.caiDatTrangThaiTonTai(value: null);
@@ -236,7 +236,7 @@ class QuanLyTrangThaiDieuKhienDiChuyenChienDauCo with KhungThucThiCoBan, DanhSac
       }
     }
 
-    if ( getTienTrinhTongQuat?.getTienTrinhTrienKhaiChienDau?.getTrangThai?.getMoHinh?.isDangThucThi() == true) {
+    if ( getTienTrinhTongQuat?.getTienTrinhTrienKhaiChienDau?.getTrangThai?.getMoHinh?.onCheckBoolDangThucThi() == true) {
       if ( _viTriChienDauCo?.isDieuKhienSanSang() == false) {
         _viTriChienDauCo?.kichHoatDieuKhien();
       }
@@ -480,7 +480,7 @@ class QuanLyTrangThaiDieuKhienDiChuyenChienDauCo with KhungThucThiCoBan, DanhSac
     double bienDaoDongKhungHinhNenSs2 = 0.05;
 
     if (_viTriChienDauCo?.isDieuKhienSanSang() == true) {
-      if (getTienTrinhTongQuat?.getTienTrinhThucThiChienDau?.getTrangThai?.getMoHinh?.isDangThucThi() == true) {
+      if (getTienTrinhTongQuat?.getTienTrinhThucThiChienDau?.getTrangThai?.getMoHinh?.onCheckBoolDangThucThi() == true) {
         if (newPosition.dx != 0 || newPosition.dy != 0) {
 
           double dxTrongTamHienHanh = _viTriChienDauCo?.getDxTrongTamNotNull ?? 0;

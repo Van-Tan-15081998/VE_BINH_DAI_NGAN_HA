@@ -237,7 +237,7 @@ class SPRITETHANHNGANGCHISOMAUCHIENDAUCO extends SpriteAnimationComponent with H
 
     return;
   }
-  void onVoidCapNhatKiemTraHienThi() async {
+  void onVoidCapNhatKiemTraHienThi()  {
     onVoidCaiDatKiemTraHienThi(value: true);
 
     if (getDonViSprite?.getSpriteAnimation == null) {

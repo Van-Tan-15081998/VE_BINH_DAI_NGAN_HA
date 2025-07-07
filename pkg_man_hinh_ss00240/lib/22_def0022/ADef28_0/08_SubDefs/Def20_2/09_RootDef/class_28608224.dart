@@ -41,10 +41,10 @@ class KHUNGMANHINHSS00240 extends PositionComponent {
     await _khungHinhNenSuKienVaChamPhaHuy.caiDatTrangThaiTongQuat(value: getTrangThaiTongQuat);
 
     if (_khungHinhNenSuKienVaChamCongKich.isMounted == false) {
-      await add(_khungHinhNenSuKienVaChamCongKich);
+      // await add(_khungHinhNenSuKienVaChamCongKich);
     }
     if (_khungHinhNenSuKienVaChamPhaHuy.isMounted == false) {
-      await add(_khungHinhNenSuKienVaChamPhaHuy);
+      // await add(_khungHinhNenSuKienVaChamPhaHuy);
     }
   }
 

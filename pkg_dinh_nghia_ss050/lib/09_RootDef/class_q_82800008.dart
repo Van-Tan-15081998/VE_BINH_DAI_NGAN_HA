@@ -34,6 +34,26 @@ class QuanLyTrangThaiTongQuat {
   /// -----
   /// TODO: Chiều Rộng Màn Hình Vật Lý
   /// -----
+  int _tocDoKhungHinh = 60;
+  int get getTocDoKhungHinh => _tocDoKhungHinh;
+  Future<void> caiDatTocDoKhungHinh({
+    required double value,
+    bool? caiDatUuTien,
+  }) async {
+    if (caiDatUuTien == true) {
+      _tocDoKhungHinh = value.floor();
+    } else {
+      _tocDoKhungHinh = value.floor();
+    }
+
+    await getThietLapTongQuat?.caiDatTocDoKhungHinh(value: getTocDoKhungHinh.floorToDouble());
+
+    return;
+  }
+
+  /// -----
+  /// TODO: Chiều Rộng Màn Hình Vật Lý
+  /// -----
   double _chieuRongManHinhVatLy = 0;
   double get getChieuRongManHinhVatLy => _chieuRongManHinhVatLy;
   void onVoidCaiDatChieuRongManHinhVatLy({required double value}) {
@@ -62,6 +82,7 @@ class QuanLyTrangThaiTongQuat {
     await caiDatThietLapTongQuat(value: QuanLyTrangThaiThietLapTongQuat());
 
     await getThietLapTongQuat?.caiDatKichThuocManHinh(chieuRong: getChieuRongManHinhVatLy, chieuCao: getChieuCaoManHinhVatLy);
+    await getThietLapTongQuat?.caiDatTocDoKhungHinh(value: getTocDoKhungHinh.floorToDouble());
     await getThietLapTongQuat?.onSetupRoot();
     await getThietLapTongQuat?.onInitRoot();
 

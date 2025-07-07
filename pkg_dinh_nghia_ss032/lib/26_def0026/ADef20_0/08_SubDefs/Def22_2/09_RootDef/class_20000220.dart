@@ -9,7 +9,7 @@ class TrangThaiHatVaChamCoBan {
   /// -----
   MoHinhHatVaChamCoBan? _moHinh;
   MoHinhHatVaChamCoBan? get getMoHinh => _moHinh;
-  Future<void> caiDatMoHinh({required MoHinhHatVaChamCoBan? value}) async {
+  void onVoidCaiDatMoHinh({required MoHinhHatVaChamCoBan? value}) {
     _moHinh = value;
   }
 
@@ -17,6 +17,6 @@ class TrangThaiHatVaChamCoBan {
   /// TODO:
   /// -----
   TrangThaiHatVaChamCoBan({required MoHinhHatVaChamCoBan? moHinh}) {
-    caiDatMoHinh(value: moHinh);
+    onVoidCaiDatMoHinh(value: moHinh);
   }
 }

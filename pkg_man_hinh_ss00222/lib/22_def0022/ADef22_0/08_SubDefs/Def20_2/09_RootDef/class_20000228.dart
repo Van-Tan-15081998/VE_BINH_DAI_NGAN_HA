@@ -105,9 +105,8 @@ class KhungHinhNenSS01PkgManHinhSS00222 extends PositionComponent {
     /// TODO:
     /// -----
     if (position.x != _bienTraiCapNhatKhungHinhNen) {
-      position.setValues(_bienTraiCapNhatKhungHinhNen ?? 0, position.y);
+      position.x = _bienTraiCapNhatKhungHinhNen ?? 0;
     }
-
     /// -----
     /// TODO:
     /// -----

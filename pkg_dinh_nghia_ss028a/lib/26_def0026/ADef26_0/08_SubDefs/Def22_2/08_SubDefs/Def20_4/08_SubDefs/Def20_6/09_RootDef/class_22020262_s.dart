@@ -17,7 +17,7 @@
 //   TocDoCoBan? _tocDoBayNguyenBan;
 //   TocDoCoBan? get getTocDoBayNguyenBan => _tocDoBayNguyenBan;
 //   TocDoCoBan get getTocDoBayNguyenBanNotNull => _tocDoBayNguyenBan ?? TocDoBayCoBan.onMacDinh();
-//   Future<void> caiDatTocDoBayNguyenBan({required TocDoCoBan? value}) async {
+//   Future<void> onVoidCaiDatTocDoBayNguyenBan({required TocDoCoBan? value}) async {
 //     _tocDoBayNguyenBan = value;
 //     return;
 //   }
@@ -28,7 +28,7 @@
 //   TocDoBayCoBan? _tocDoBayTangCuong;
 //   TocDoBayCoBan? get getTocDoBayTangCuong => _tocDoBayTangCuong;
 //   TocDoBayCoBan get getTocDoBayTangCuongNotNull => _tocDoBayTangCuong ?? TocDoBayCoBan.onMacDinh();
-//   Future<void> caiDatTocDoBayTangCuong({required TocDoBayCoBan? value}) async {
+//   Future<void> onVoidCaiDatTocDoBayTangCuong({required TocDoBayCoBan? value}) async {
 //     _tocDoBayTangCuong = value;
 //     return;
 //   }
@@ -150,7 +150,7 @@
 //   bool? _tenLuaCanhTrai;
 //   bool? get getTenLuaCanhTrai => _tenLuaCanhTrai;
 //   bool get getTenLuaCanhTraiNotNull => _tenLuaCanhTrai ?? false;
-//   Future<void> caiDatTenLuaCanhTrai({required bool? value}) async {
+//   Future<void> onVoidCaiDatTenLuaCanhTrai({required bool? value}) async {
 //     _tenLuaCanhTrai = value;
 //     return;
 //   }
@@ -161,7 +161,7 @@
 //   bool? _tenLuaCanhPhai;
 //   bool? get getTenLuaCanhPhai => _tenLuaCanhPhai;
 //   bool get getTenLuaCanhPhaiNotNull => _tenLuaCanhPhai ?? false;
-//   Future<void> caiDatTenLuaCanhPhai({required bool? value}) async {
+//   Future<void> onVoidCaiDatTenLuaCanhPhai({required bool? value}) async {
 //     _tenLuaCanhPhai = value;
 //     return;
 //   }
@@ -172,7 +172,7 @@
 //   double? _bienTraiNguyenBan;
 //   double? get getBienTraiNguyenBan => _bienTraiNguyenBan;
 //   double get getBienTraiNguyenBanNotNull => _bienTraiNguyenBan ?? 0;
-//   Future<void> caiDatBienTraiNguyenBan({required double? value}) async {
+//   Future<void> onVoidCaiDatBienTraiNguyenBan({required double? value}) async {
 //     if (value != null && value != 0) {
 //       if (value.isNaN == false && value.isFinite == true) {
 //         _bienTraiNguyenBan = value;
@@ -191,7 +191,7 @@
 //   double? _bienDuoiNguyenBan;
 //   double? get getBienDuoiNguyenBan => _bienDuoiNguyenBan;
 //   double get getBienDuoiNguyenBanNotNull => _bienDuoiNguyenBan ?? 0;
-//   Future<void> caiDatBienDuoiNguyenBan({required double? value}) async {
+//   Future<void> onVoidCaiDatBienDuoiNguyenBan({required double? value}) async {
 //     if (value != null && value != 0) {
 //       if (value.isNaN == false && value.isFinite == true) {
 //         _bienDuoiNguyenBan = value;
@@ -272,10 +272,10 @@
 //     caiDatBienDuoiViTriLayMucTieu(value: 0);
 //     caiDatChieuRongManHinhPhiVatLy(value: 0);
 //     caiDatChieuCaoManHinhPhiVatLy(value: 0);
-//     caiDatThoiGianKichHoat(value: ThoiGianKichHoatCoBan.onMacDinh());
+//     onVoidCaiDatThoiGianKichHoat(value: ThoiGianKichHoatCoBan.onMacDinh());
 //     caiDatDinhHuongBay(value: DinhHuongBayCoBan.onMacDinh());
-//     caiDatTocDoBayNguyenBan(value: TocDoBayCoBan.onMacDinh());
-//     caiDatTocDoBayTangCuong(value: null);
+//     onVoidCaiDatTocDoBayNguyenBan(value: TocDoBayCoBan.onMacDinh());
+//     onVoidCaiDatTocDoBayTangCuong(value: null);
 //     caiDatTrangThaiTonTai(value: TrangThaiTonTaiCoBan.onMacDinh());
 //     caiDatMaDinhDanhDoiTuongMucTieuNguyenBan();
 //
@@ -427,7 +427,7 @@
 //     //   ///
 //     // }
 //
-//     await getDieuKhienTinhToanTongQuat?.getTinhToanSatThuongHuongDenPhuongTien?.onSatThuongVuKhiTanCongThongMinh(
+//     await getDieuKhienTinhToanTongQuat?.getTinhToanSatThuongHuongDenPhuongTien?.onVoidSatThuongVuKhiTanCongThongMinh(
 //       phuongTien: phuongTien,
 //       toaDoVaCham: toaDoVaCham,
 //     );
@@ -440,7 +440,7 @@
 //   /// -----
 //   @override
 //   Future<void> onDieuKhienDiChuyen({required int chiSoTangTienTheoThoiGianThuc}) async {
-//     if (await getTrangThaiTonTai?.isKhoiTaoHoanTat() == true) {
+//     if (await getTrangThaiTonTai?.onCheckBoolKhoiTaoHoanTat() == true) {
 //       if (QuanLyDongThoiGianCoBan.onKiemTraKichHoat(
 //         chiSoKichHoat: getThoiGianKichHoatNotNull.getChiSoKichHoat,
 //         chiSoTangTienTheoThoiGianThuc: chiSoTangTienTheoThoiGianThuc,
@@ -481,7 +481,7 @@
 //       /// -----
 //       /// TODO:
 //       /// -----
-//       await onXuLyDiChuyenTheoLoaiHinhVuKhiThongMinhTichHopPhamVi();
+//       await onVoidXuLyDiChuyenTheoLoaiHinhVuKhiThongMinhTichHopPhamVi();
 //     }
 //
 //     return;
@@ -492,7 +492,7 @@
 //   ///
 //   /// TODO: Hàm xử lý bay theo loại hình vũ khí
 //   ///
-//   // Future<void> onXuLyDiChuyenTheoLoaiHinhVuKhiThongMinh() async {
+//   // Future<void> onVoidXuLyDiChuyenTheoLoaiHinhVuKhiThongMinh() async {
 //   //   ///
 //   //   /// TODO: Check va chạm giữa viên đạn với phương tiện địch
 //   //   ///
@@ -568,7 +568,7 @@
 //   //             chieuCaoThan: null,
 //   //           );
 //   //         } else {
-//   //           await caiDatBienTraiNguyenBan(value: null);
+//   //           await onVoidCaiDatBienTraiNguyenBan(value: null);
 //   //           String? maDinhDanhDoiTuongMucTieu = getMaDinhDanhDoiTuongMucTieu;
 //   //
 //   //           ///
@@ -586,9 +586,9 @@
 //   //             );
 //   //           }
 //   //
-//   //           // await timKiemXacDinhMucTieuNgauNhienDuyNhat();
+//   //           // await onVoidTimKiemXacDinhMucTieuNgauNhienDuyNhat();
 //   //
-//   //           await onDieuKhienBayDenMucTieu();
+//   //           await onVoidDieuKhienBayDenMucTieu();
 //   //         }
 //   //       } else if (getTenLuaCanhPhai == true) {
 //   //         if ((getBienTraiNguyenBan != null && getBienTraiNguyenBan != 0) &&
@@ -603,7 +603,7 @@
 //   //             chieuCaoThan: null,
 //   //           );
 //   //         } else {
-//   //           await caiDatBienTraiNguyenBan(value: null);
+//   //           await onVoidCaiDatBienTraiNguyenBan(value: null);
 //   //           String? maDinhDanhDoiTuongMucTieu = getMaDinhDanhDoiTuongMucTieu;
 //   //
 //   //           ///
@@ -621,9 +621,9 @@
 //   //             );
 //   //           }
 //   //
-//   //           // await timKiemXacDinhMucTieuNgauNhienDuyNhat();
+//   //           // await onVoidTimKiemXacDinhMucTieuNgauNhienDuyNhat();
 //   //
-//   //           await onDieuKhienBayDenMucTieu();
+//   //           await onVoidDieuKhienBayDenMucTieu();
 //   //         }
 //   //       }
 //   //     }
@@ -645,7 +645,7 @@
 //   //           chieuCaoThan: null,
 //   //         );
 //   //       } else {
-//   //         await caiDatBienTraiNguyenBan(value: null);
+//   //         await onVoidCaiDatBienTraiNguyenBan(value: null);
 //   //
 //   //         ///
 //   //         /// TODO: Nếu là Tên lửa mới
@@ -662,7 +662,7 @@
 //   //           );
 //   //         }
 //   //
-//   //         await onDieuKhienBayTheoLichSu();
+//   //         await onVoidDieuKhienBayTheoLichSu();
 //   //       }
 //   //     } else if (getTenLuaCanhPhai == true) {
 //   //       if ((getBienTraiNguyenBan != null && getBienTraiNguyenBan != 0) &&
@@ -677,7 +677,7 @@
 //   //           chieuCaoThan: null,
 //   //         );
 //   //       } else {
-//   //         await caiDatBienTraiNguyenBan(value: null);
+//   //         await onVoidCaiDatBienTraiNguyenBan(value: null);
 //   //
 //   //         ///
 //   //         /// TODO: Nếu là Tên lửa mới
@@ -694,7 +694,7 @@
 //   //           );
 //   //         }
 //   //
-//   //         await onDieuKhienBayTheoLichSu();
+//   //         await onVoidDieuKhienBayTheoLichSu();
 //   //       }
 //   //     }
 //   //   }
@@ -705,7 +705,7 @@
 //   /// -----
 //   /// TODO: Hàm Xử Lý Di Chuyển Theo Loại Hình Vũ Khí Tích Hợp Phạm Vi
 //   /// -----
-//   Future<void> onXuLyDiChuyenTheoLoaiHinhVuKhiThongMinhTichHopPhamVi() async {
+//   Future<void> onVoidXuLyDiChuyenTheoLoaiHinhVuKhiThongMinhTichHopPhamVi() async {
 //     /// -----
 //     /// TODO: Check Va Chạm Giữa Viên Đạn Với Phương Tiện
 //     /// -----
@@ -1212,7 +1212,7 @@
 //               chieuCaoThan: null,
 //             );
 //           } else {
-//             await caiDatBienTraiNguyenBan(value: null);
+//             await onVoidCaiDatBienTraiNguyenBan(value: null);
 //             String? maDinhDanhDoiTuongMucTieu = getMaDinhDanhDoiTuongMucTieu;
 //
 //             ///
@@ -1232,7 +1232,7 @@
 //
 //             await timKiemXacDinhMucTieuTheoPhamViHuongTuGanDenXa();
 //
-//             await onDieuKhienBayDenMucTieu();
+//             await onVoidDieuKhienBayDenMucTieu();
 //           }
 //         } else if (getTenLuaCanhPhai == true) {
 //           if ((getBienTraiNguyenBan != null && getBienTraiNguyenBan != 0) &&
@@ -1247,7 +1247,7 @@
 //               chieuCaoThan: null,
 //             );
 //           } else {
-//             await caiDatBienTraiNguyenBan(value: null);
+//             await onVoidCaiDatBienTraiNguyenBan(value: null);
 //             String? maDinhDanhDoiTuongMucTieu = getMaDinhDanhDoiTuongMucTieu;
 //
 //             ///
@@ -1267,7 +1267,7 @@
 //
 //             await timKiemXacDinhMucTieuTheoPhamViHuongTuGanDenXa();
 //
-//             await onDieuKhienBayDenMucTieu();
+//             await onVoidDieuKhienBayDenMucTieu();
 //           }
 //         }
 //       }
@@ -1289,7 +1289,7 @@
 //             chieuCaoThan: null,
 //           );
 //         } else {
-//           await caiDatBienTraiNguyenBan(value: null);
+//           await onVoidCaiDatBienTraiNguyenBan(value: null);
 //
 //           ///
 //           /// TODO: Nếu là Tên lửa mới
@@ -1306,7 +1306,7 @@
 //             );
 //           }
 //
-//           await onDieuKhienBayTheoLichSu();
+//           await onVoidDieuKhienBayTheoLichSu();
 //         }
 //       } else if (getTenLuaCanhPhai == true) {
 //         if ((getBienTraiNguyenBan != null && getBienTraiNguyenBan != 0) &&
@@ -1321,7 +1321,7 @@
 //             chieuCaoThan: null,
 //           );
 //         } else {
-//           await caiDatBienTraiNguyenBan(value: null);
+//           await onVoidCaiDatBienTraiNguyenBan(value: null);
 //
 //           ///
 //           /// TODO: Nếu là Tên lửa mới
@@ -1338,7 +1338,7 @@
 //             );
 //           }
 //
-//           await onDieuKhienBayTheoLichSu();
+//           await onVoidDieuKhienBayTheoLichSu();
 //         }
 //       }
 //     }
@@ -1492,8 +1492,8 @@
 //   /// -----
 //   /// TODO: Xác Định Tọa Độ Mục Tiêu Và Hướng Bay
 //   /// -----
-//   Future<void> onXacDinhViTriPhuongTienHoatDongLayMucTieu() async {
-//     if (await getTrangThaiPhuongTienHoatDongLayMucTieu?.getMoHinh?.getMoHinh?.getTrangThaiTrongChienDau?.getTrangThaiTonTai?.isKhoiTaoHoanTat() ==
+//   Future<void> onVoidXacDinhViTriPhuongTienHoatDongLayMucTieu() async {
+//     if (await getTrangThaiPhuongTienHoatDongLayMucTieu?.getMoHinh?.getMoHinh?.getTrangThaiTrongChienDau?.getTrangThaiTonTai?.onCheckBoolKhoiTaoHoanTat() ==
 //         true) {
 //       MoHinhViTriPhuongTien? viTriPhuongTien =
 //           getTrangThaiPhuongTienHoatDongLayMucTieu?.getMoHinh?.getMoHinh?.getPhuongThuc?.getPhuongThucBay?.getViTri;
@@ -1504,7 +1504,7 @@
 //       await caiDatDxViTriLayMucTieu(value: (viTriPhuongTien?.getDx ?? 0) + (chieuRongThanPhuongTien / 2));
 //       await caiDatDyViTriLayMucTieu(value: (viTriPhuongTien?.getDy ?? 0) + (chieuCaoThanPhuongTien / 2));
 //     } else {
-//       if (await getDinhHuongBay?.isDinhHuongTheoViTriPhuongTienLayMucTieu() == true) {
+//       if (await getDinhHuongBay?.onCheckBoolXacDinhViTriPhuongTienHoatDongLayMucTieu() == true) {
 //         await caiDatDxViTriLayMucTieu(value: null);
 //         await caiDatDyViTriLayMucTieu(value: null);
 //         await getDinhHuongBay?.caiDatDinhHuongTheoQuanTinhLichSuDiChuyen();
@@ -1521,7 +1521,7 @@
 //     return;
 //   }
 //
-//   Future<void> timKiemXacDinhMucTieuNgauNhienDuyNhat() async {
+//   Future<void> onVoidTimKiemXacDinhMucTieuNgauNhienDuyNhat() async {
 //     return;
 //   }
 //
@@ -1562,17 +1562,17 @@
 //   /// -----
 //   /// TODO:
 //   /// -----
-//   Future<void> onDieuKhienBayDenMucTieu() async {
+//   Future<void> onVoidDieuKhienBayDenMucTieu() async {
 //     /// -----
 //     /// TODO:
 //     /// -----
-//     await onXacDinhViTriPhuongTienHoatDongLayMucTieu();
+//     await onVoidXacDinhViTriPhuongTienHoatDongLayMucTieu();
 //
 //     final double dxDiemKetThuc = getDxViTriLayMucTieuNotNull;
 //     final double dyDiemKetThuc = getDyViTriLayMucTieuNotNull;
 //
 //     if ((dxDiemKetThuc == 0 || dyDiemKetThuc == 0) || await getDinhHuongBay?.isDinhHuongTheoQuanTinhLichSuDiChuyen() == true) {
-//       await onDieuKhienBayTheoLichSu();
+//       await onVoidDieuKhienBayTheoLichSu();
 //
 //       return;
 //     }
@@ -1617,7 +1617,7 @@
 //     return;
 //   }
 //
-//   Future<void> onDieuKhienBayTheoLichSu() async {
+//   Future<void> onVoidDieuKhienBayTheoLichSu() async {
 //     String? maDinhDanhDoiTuongMucTieu = getMaDinhDanhDoiTuongMucTieu;
 //
 //     final dxDiemTrungGianA = getLichSuDxNotNull;

@@ -295,9 +295,9 @@ export '28_def0028/ADef22_0/08_SubDefs/DefB40/08_SubDefs/Def24/09_RootDef/class_
 /// TODO: _____[PHUONG_TIEN_TAN_CONG_CLASS_50B_SS02]_____
 /// TODO: _____[PHUONG_TIEN_TAN_CONG_CLASS_50B_SS03]_____
 
-export '28_def0028/ADef24_0/08_SubDefs/DefA10/08_SubDefs/Def20/09_RootDef/class_20020866.dart';
-export '28_def0028/ADef24_0/08_SubDefs/DefA10/08_SubDefs/Def22/09_RootDef/class_20020888.dart';
-export '28_def0028/ADef24_0/08_SubDefs/DefA10/08_SubDefs/Def24/09_RootDef/class_20022020.dart';
+// export '28_def0028/ADef24_0/08_SubDefs/DefA10/08_SubDefs/Def20/09_RootDef/class_20020866.dart';
+// export '28_def0028/ADef24_0/08_SubDefs/DefA10/08_SubDefs/Def22/09_RootDef/class_20020888.dart';
+// export '28_def0028/ADef24_0/08_SubDefs/DefA10/08_SubDefs/Def24/09_RootDef/class_20022020.dart';
 
 ///
 ///
@@ -614,6 +614,18 @@ export '28_def0028/ADef810_0/08_SubDefs/DefA10/08_SubDefs/DefVp040/09_RootDef/cl
 export '28_def0028/ADef810_0/08_SubDefs/DefA10/08_SubDefs/DefVp050/09_RootDef/class_phuong_tien_vat_pham_phan_thuong.dart';
 export '28_def0028/ADef810_0/08_SubDefs/DefA10/08_SubDefs/DefVp060/09_RootDef/class_phuong_tien_vat_pham_phan_thuong.dart';
 
+///
+/// TODO: _____[PHUONG_TIEN_VAT_PHAM_TANG_CUONG]_____
+///
+
+/// TODO: _____[PHUONG_TIEN_VAT_PHAM_TANG_CUONG_CLASS_SS00ASS010_SS010]_____
+export '28_def0028/ADef910_0/08_SubDefs/DefA10/08_SubDefs/DefVp010/09_RootDef/class_phuong_tien_vat_pham_tang_cuong.dart';
+
+/// TODO: _____[PHUONG_TIEN_VAT_PHAM_TANG_CUONG_CLASS_SS00ASS020_SS010]_____
+export '28_def0028/ADef910_0/08_SubDefs/DefA20/08_SubDefs/DefVp010/09_RootDef/class_phuong_tien_vat_pham_tang_cuong.dart';
+
+/// TODO: _____[PHUONG_TIEN_VAT_PHAM_TANG_CUONG_CLASS_SS00ASS030_SS010]_____
+export '28_def0028/ADef910_0/08_SubDefs/DefA30/08_SubDefs/DefVp010/09_RootDef/class_phuong_tien_vat_pham_tang_cuong.dart';
 
 /// A Calculator.
 class Calculator {

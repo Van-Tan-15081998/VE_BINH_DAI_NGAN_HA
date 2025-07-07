@@ -139,14 +139,14 @@ abstract class SpriteAnimationCoBan extends SpriteAnimationComponent with HasVis
   /// TODO:
   /// -----
   Future<void> capNhatKiemTraHienThi() async {
-    if (getMoHinh?.getTrangThaiTonTai?.isKhoiTaoHoanTat() == true) {
+    if (getMoHinh?.getTrangThaiTonTai?.onCheckBoolKhoiTaoHoanTat() == true) {
       await caiDatKiemTraHienThi(value: true);
     } else {
       await caiDatKiemTraHienThi(value: false);
     }
   }
   void onVoidCapNhatKiemTraHienThi() {
-    if (getMoHinh?.getTrangThaiTonTai?.isKhoiTaoHoanTat() == true) {
+    if (getMoHinh?.getTrangThaiTonTai?.onCheckBoolKhoiTaoHoanTat() == true) {
       onVoidCaiDatKiemTraHienThi(value: true);
     } else {
       onVoidCaiDatKiemTraHienThi(value: false);

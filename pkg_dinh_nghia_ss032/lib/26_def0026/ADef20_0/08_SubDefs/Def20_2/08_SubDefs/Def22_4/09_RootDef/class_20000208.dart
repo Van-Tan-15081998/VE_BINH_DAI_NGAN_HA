@@ -22,8 +22,8 @@ class MoHinhThuocTinhKichThuocHatVaCham with KhungThucThiCoBan {
   /// -----
   @override
   Future<void> onSetupRoot() async {
-    await caiDatChieuRongThan(value: 100.0);
-    await caiDatChieuCaoThan(value: 100.0);
+     onVoidCaiDatChieuRongThan(value: 100.0);
+     onVoidCaiDatChieuCaoThan(value: 100.0);
 
     /// -----
     /// TODO: Setup Root For SubCom
@@ -94,90 +94,90 @@ class MoHinhThuocTinhKichThuocHatVaCham with KhungThucThiCoBan {
   /// -----
   /// TODO: Kích Thước Cấp Độ SS01
   /// -----
-  Future<void> onCaiDatKichThuocCapDoSS01() async {
-    await caiDatChieuRongThan(value: (getChieuRongThan ?? 10.0) * 0.25);
-    await caiDatChieuCaoThan(value: (getChieuCaoThan ?? 10.0) * 0.25);
+  void onVoidCaiDatKichThuocCapDoSS01() {
+     onVoidCaiDatChieuRongThan(value: (getChieuRongThan ?? 10.0) * 0.25);
+     onVoidCaiDatChieuCaoThan(value: (getChieuCaoThan ?? 10.0) * 0.25);
     return;
   }
 
   /// -----
   /// TODO: Kích Thước Cấp Độ SS02
   /// -----
-  Future<void> onCaiDatKichThuocCapDoSS02() async {
-    await caiDatChieuRongThan(value: (getChieuRongThan ?? 10.0) * 0.50);
-    await caiDatChieuCaoThan(value: (getChieuCaoThan ?? 10.0) * 0.50);
+  void onVoidCaiDatKichThuocCapDoSS02() {
+    onVoidCaiDatChieuRongThan(value: (getChieuRongThan ?? 10.0) * 0.50);
+    onVoidCaiDatChieuCaoThan(value: (getChieuCaoThan ?? 10.0) * 0.50);
     return;
   }
 
   /// -----
   /// TODO: Kích Thước Cấp Độ SS03
   /// -----
-  Future<void> onCaiDatKichThuocCapDoSS03() async {
-    await caiDatChieuRongThan(value: (getChieuRongThan ?? 10.0) * 0.75);
-    await caiDatChieuCaoThan(value: (getChieuCaoThan ?? 10.0) * 0.75);
+  void onVoidCaiDatKichThuocCapDoSS03() {
+     onVoidCaiDatChieuRongThan(value: (getChieuRongThan ?? 10.0) * 0.75);
+     onVoidCaiDatChieuCaoThan(value: (getChieuCaoThan ?? 10.0) * 0.75);
     return;
   }
 
   /// -----
   /// TODO: Kích Thước Cấp Độ SS04
   /// -----
-  Future<void> onCaiDatKichThuocCapDoSS04() async {
-    await caiDatChieuRongThan(value: (getChieuRongThan ?? 10.0) * 1.00);
-    await caiDatChieuCaoThan(value: (getChieuCaoThan ?? 10.0) * 1.00);
+  void onVoidCaiDatKichThuocCapDoSS04() {
+     onVoidCaiDatChieuRongThan(value: (getChieuRongThan ?? 10.0) * 1.00);
+     onVoidCaiDatChieuCaoThan(value: (getChieuCaoThan ?? 10.0) * 1.00);
     return;
   }
 
   /// -----
   /// TODO: Kích Thước Cấp Độ SS05
   /// -----
-  Future<void> onCaiDatKichThuocCapDoSS05() async {
-    await caiDatChieuRongThan(value: (getChieuRongThan ?? 10.0) * 1.25);
-    await caiDatChieuCaoThan(value: (getChieuCaoThan ?? 10.0) * 1.25);
+  void onVoidCaiDatKichThuocCapDoSS05() {
+     onVoidCaiDatChieuRongThan(value: (getChieuRongThan ?? 10.0) * 1.25);
+     onVoidCaiDatChieuCaoThan(value: (getChieuCaoThan ?? 10.0) * 1.25);
     return;
   }
 
   /// -----
   /// TODO: Kích Thước Cấp Độ SS06
   /// -----
-  Future<void> onCaiDatKichThuocCapDoSS06() async {
-    await caiDatChieuRongThan(value: (getChieuRongThan ?? 10.0) * 1.50);
-    await caiDatChieuCaoThan(value: (getChieuCaoThan ?? 10.0) * 1.50);
+  void onVoidCaiDatKichThuocCapDoSS06() {
+     onVoidCaiDatChieuRongThan(value: (getChieuRongThan ?? 10.0) * 1.50);
+     onVoidCaiDatChieuCaoThan(value: (getChieuCaoThan ?? 10.0) * 1.50);
     return;
   }
 
   /// -----
   /// TODO: Kích Thước Cấp Độ SS07
   /// -----
-  Future<void> onCaiDatKichThuocCapDoSS07() async {
-    await caiDatChieuRongThan(value: (getChieuRongThan ?? 10.0) * 1.75);
-    await caiDatChieuCaoThan(value: (getChieuCaoThan ?? 10.0) * 1.75);
+  void onVoidCaiDatKichThuocCapDoSS07() {
+     onVoidCaiDatChieuRongThan(value: (getChieuRongThan ?? 10.0) * 1.75);
+     onVoidCaiDatChieuCaoThan(value: (getChieuCaoThan ?? 10.0) * 1.75);
     return;
   }
 
   /// -----
   /// TODO: Kích Thước Cấp Độ SS08
   /// -----
-  Future<void> onCaiDatKichThuocCapDoSS08() async {
-    await caiDatChieuRongThan(value: (getChieuRongThan ?? 10.0) * 2.00);
-    await caiDatChieuCaoThan(value: (getChieuCaoThan ?? 10.0) * 2.00);
+  void onVoidCaiDatKichThuocCapDoSS08() {
+     onVoidCaiDatChieuRongThan(value: (getChieuRongThan ?? 10.0) * 2.00);
+     onVoidCaiDatChieuCaoThan(value: (getChieuCaoThan ?? 10.0) * 2.00);
     return;
   }
 
   /// -----
   /// TODO: Kích Thước Cấp Độ SS09
   /// -----
-  Future<void> onCaiDatKichThuocCapDoSS09() async {
-    await caiDatChieuRongThan(value: (getChieuRongThan ?? 10.0) * 2.25);
-    await caiDatChieuCaoThan(value: (getChieuCaoThan ?? 10.0) * 2.25);
+  void onVoidCaiDatKichThuocCapDoSS09() {
+     onVoidCaiDatChieuRongThan(value: (getChieuRongThan ?? 10.0) * 2.25);
+     onVoidCaiDatChieuCaoThan(value: (getChieuCaoThan ?? 10.0) * 2.25);
     return;
   }
 
   /// -----
   /// TODO: Kích Thước Cấp Độ SS10
   /// -----
-  Future<void> onCaiDatKichThuocCapDoSS10() async {
-    await caiDatChieuRongThan(value: (getChieuRongThan ?? 10.0) * 2.50);
-    await caiDatChieuCaoThan(value: (getChieuCaoThan ?? 10.0) * 2.50);
+  void onVoidCaiDatKichThuocCapDoSS10() {
+     onVoidCaiDatChieuRongThan(value: (getChieuRongThan ?? 10.0) * 2.50);
+     onVoidCaiDatChieuCaoThan(value: (getChieuCaoThan ?? 10.0) * 2.50);
     return;
   }
 
@@ -186,7 +186,7 @@ class MoHinhThuocTinhKichThuocHatVaCham with KhungThucThiCoBan {
   ///
   double? _chieuRongThan;
   double? get getChieuRongThan => _chieuRongThan;
-  Future<void> caiDatChieuRongThan({required double? value}) async {
+  void onVoidCaiDatChieuRongThan({required double? value}) {
     _chieuRongThan = value;
     return;
   }
@@ -196,7 +196,7 @@ class MoHinhThuocTinhKichThuocHatVaCham with KhungThucThiCoBan {
   ///
   double? _chieuCaoThan;
   double? get getChieuCaoThan => _chieuCaoThan;
-  Future<void> caiDatChieuCaoThan({required double? value}) async {
+  void onVoidCaiDatChieuCaoThan({required double? value}) {
     _chieuCaoThan = value;
     return;
   }

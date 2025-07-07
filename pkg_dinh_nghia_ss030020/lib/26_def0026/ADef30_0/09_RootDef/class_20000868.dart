@@ -290,28 +290,28 @@ class PHUONGTHUCTANCONGXAMCHIEMCOBAN with KhungThucThiCoBan, DanhSachQuanLyTrang
       /// -----
       /// TODO:
       /// -----
-      await vienDan?.caiDatMaDinhDanh(value: '[VIEN_DAN_TAN_CONG_XAM_CHIEM_SS$index]_[$timestamp]');
-      await vienDan?.caiDatChieuRongThan(value: 30.0);
-      await vienDan?.caiDatChieuCaoThan(value: 30.0);
-      await vienDan?.caiDatChieuRongManHinhPhiVatLy(value: getThietLapTongQuat?.getChieuRongManHinhPhiVatLy);
-      await vienDan?.caiDatChieuCaoManHinhPhiVatLy(value: getThietLapTongQuat?.getChieuCaoManHinhPhiVatLy);
-      await vienDan?.caiDatDinhHuongBay(value: DinhHuongBayCoBan.dinhHuongTheoDuoiLenTren());
-      await vienDan?.caiDatThoiGianKichHoat(value: ThoiGianKichHoatCoBan.kichHoat10());
-      await vienDan?.caiDatTocDoBayNguyenBan(value: TocDoBayCoBan(tocDo: 10.000));
+       vienDan?.caiDatMaDinhDanh(value: '[VIEN_DAN_TAN_CONG_XAM_CHIEM_SS$index]_[$timestamp]');
+       vienDan?.caiDatChieuRongThan(value: 30.0);
+       vienDan?.caiDatChieuCaoThan(value: 30.0);
+       vienDan?.caiDatChieuRongManHinhPhiVatLy(value: getThietLapTongQuat?.getChieuRongManHinhPhiVatLy);
+       vienDan?.caiDatChieuCaoManHinhPhiVatLy(value: getThietLapTongQuat?.getChieuCaoManHinhPhiVatLy);
+       vienDan?.caiDatDinhHuongBay(value: DinhHuongBayCoBan.dinhHuongTheoDuoiLenTren());
+       vienDan?.onVoidCaiDatThoiGianKichHoat(value: ThoiGianKichHoatCoBan.kichHoat10());
+       vienDan?.onVoidCaiDatTocDoBayNguyenBan(value: TocDoBayCoBan(tocDo: 10.000));
 
-      await vienDan?.caiDatDieuKhienTinhToanTongQuat(value: getDieuKhienTinhToanTongQuat);
+       vienDan?.caiDatDieuKhienTinhToanTongQuat(value: getDieuKhienTinhToanTongQuat);
 
-      await trangThaiVienDan.caiDatMoHinh(value: vienDan);
+       trangThaiVienDan.caiDatMoHinh(value: vienDan);
       // await trangThaiVienDan.getMoHinh?.caiDatMaDinhDanhChienDauCo(value: chienDauCo?.getMaDinhDanhChienDauCo);
       // await trangThaiVienDan.getMoHinh?.onXuLyKichThuoc(chienDauCo: chienDauCo);
-      await trangThaiVienDan.getMoHinh?.onXuLyMaDinhDanhHinhThuc();
+       trangThaiVienDan.getMoHinh?.onXuLyMaDinhDanhHinhThuc();
 
       if (trangThaiVienDan.getMoHinh != null) {
-        await onCaiDatViTriXuatPhat(trangThai: trangThaiVienDan, phuongTien: phuongTien);
-        // await caiDatTocDoBayNguyenBan(trangThai: trangThaiVienDan, chienDauCo: chienDauCo);
+         onCaiDatViTriXuatPhat(trangThai: trangThaiVienDan, phuongTien: phuongTien);
+        // await onVoidCaiDatTocDoBayNguyenBan(trangThai: trangThaiVienDan, chienDauCo: chienDauCo);
       }
 
-      await trangThaiVienDan.getMoHinh?.getTrangThaiTonTai?.caiDatKhoiTaoHoanTat();
+       trangThaiVienDan.getMoHinh?.getTrangThaiTonTai?.caiDatKhoiTaoHoanTat();
     }
 
     return;

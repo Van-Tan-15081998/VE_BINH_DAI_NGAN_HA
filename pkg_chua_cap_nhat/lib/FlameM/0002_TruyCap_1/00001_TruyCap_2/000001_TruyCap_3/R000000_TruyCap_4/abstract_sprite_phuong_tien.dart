@@ -122,7 +122,7 @@ abstract class SpritePhuongTienCoBan extends SpriteAnimationComponent
             ?.getMoHinh
             ?.getTrangThaiTrongChienDau
             ?.getTrangThaiTonTai
-            ?.isKhoiTaoHoanTat() ==
+            ?.onCheckBoolKhoiTaoHoanTat() ==
         true) {
       await caiDatKiemTraHienThi(value: true);
     } else {

@@ -1167,6 +1167,129 @@ class SUKIENVACHAMTHUOCPHUONGTIEN with CauTrucThucThiCoBan, DanhSachQuanLyTrangT
               ?.onCaiDatPhuongTien(value: getDanhSachMoHinhTongQuat?.getDanhSachPhuongTienHoatDong?.getTrangThaiPhuongTienHoatDongSS558?.getMoHinh)
               .catchError((e) => null) ??
           onReportRootIssue(nameFunction: ''),
+
+      ///
+      getPhuongTienVaChamSS560?.getMoHinh
+          ?.onCaiDatPhuongTien(value: getDanhSachMoHinhTongQuat?.getDanhSachPhuongTienHoatDong?.getTrangThaiPhuongTienHoatDongSS560?.getMoHinh)
+          .catchError((e) => null) ??
+          onReportRootIssue(nameFunction: ''),
+      getPhuongTienVaChamSS562?.getMoHinh
+          ?.onCaiDatPhuongTien(value: getDanhSachMoHinhTongQuat?.getDanhSachPhuongTienHoatDong?.getTrangThaiPhuongTienHoatDongSS562?.getMoHinh)
+          .catchError((e) => null) ??
+          onReportRootIssue(nameFunction: ''),
+      getPhuongTienVaChamSS564?.getMoHinh
+          ?.onCaiDatPhuongTien(value: getDanhSachMoHinhTongQuat?.getDanhSachPhuongTienHoatDong?.getTrangThaiPhuongTienHoatDongSS564?.getMoHinh)
+          .catchError((e) => null) ??
+          onReportRootIssue(nameFunction: ''),
+      getPhuongTienVaChamSS566?.getMoHinh
+          ?.onCaiDatPhuongTien(value: getDanhSachMoHinhTongQuat?.getDanhSachPhuongTienHoatDong?.getTrangThaiPhuongTienHoatDongSS566?.getMoHinh)
+          .catchError((e) => null) ??
+          onReportRootIssue(nameFunction: ''),
+      getPhuongTienVaChamSS568?.getMoHinh
+          ?.onCaiDatPhuongTien(value: getDanhSachMoHinhTongQuat?.getDanhSachPhuongTienHoatDong?.getTrangThaiPhuongTienHoatDongSS568?.getMoHinh)
+          .catchError((e) => null) ??
+          onReportRootIssue(nameFunction: ''),
+      getPhuongTienVaChamSS570?.getMoHinh
+          ?.onCaiDatPhuongTien(value: getDanhSachMoHinhTongQuat?.getDanhSachPhuongTienHoatDong?.getTrangThaiPhuongTienHoatDongSS570?.getMoHinh)
+          .catchError((e) => null) ??
+          onReportRootIssue(nameFunction: ''),
+      getPhuongTienVaChamSS572?.getMoHinh
+          ?.onCaiDatPhuongTien(value: getDanhSachMoHinhTongQuat?.getDanhSachPhuongTienHoatDong?.getTrangThaiPhuongTienHoatDongSS572?.getMoHinh)
+          .catchError((e) => null) ??
+          onReportRootIssue(nameFunction: ''),
+      getPhuongTienVaChamSS574?.getMoHinh
+          ?.onCaiDatPhuongTien(value: getDanhSachMoHinhTongQuat?.getDanhSachPhuongTienHoatDong?.getTrangThaiPhuongTienHoatDongSS574?.getMoHinh)
+          .catchError((e) => null) ??
+          onReportRootIssue(nameFunction: ''),
+      getPhuongTienVaChamSS576?.getMoHinh
+          ?.onCaiDatPhuongTien(value: getDanhSachMoHinhTongQuat?.getDanhSachPhuongTienHoatDong?.getTrangThaiPhuongTienHoatDongSS576?.getMoHinh)
+          .catchError((e) => null) ??
+          onReportRootIssue(nameFunction: ''),
+      getPhuongTienVaChamSS578?.getMoHinh
+          ?.onCaiDatPhuongTien(value: getDanhSachMoHinhTongQuat?.getDanhSachPhuongTienHoatDong?.getTrangThaiPhuongTienHoatDongSS578?.getMoHinh)
+          .catchError((e) => null) ??
+          onReportRootIssue(nameFunction: ''),
+
+      getPhuongTienVaChamSS580?.getMoHinh
+          ?.onCaiDatPhuongTien(value: getDanhSachMoHinhTongQuat?.getDanhSachPhuongTienHoatDong?.getTrangThaiPhuongTienHoatDongSS580?.getMoHinh)
+          .catchError((e) => null) ??
+          onReportRootIssue(nameFunction: ''),
+      getPhuongTienVaChamSS582?.getMoHinh
+          ?.onCaiDatPhuongTien(value: getDanhSachMoHinhTongQuat?.getDanhSachPhuongTienHoatDong?.getTrangThaiPhuongTienHoatDongSS582?.getMoHinh)
+          .catchError((e) => null) ??
+          onReportRootIssue(nameFunction: ''),
+      getPhuongTienVaChamSS584?.getMoHinh
+          ?.onCaiDatPhuongTien(value: getDanhSachMoHinhTongQuat?.getDanhSachPhuongTienHoatDong?.getTrangThaiPhuongTienHoatDongSS584?.getMoHinh)
+          .catchError((e) => null) ??
+          onReportRootIssue(nameFunction: ''),
+      getPhuongTienVaChamSS586?.getMoHinh
+          ?.onCaiDatPhuongTien(value: getDanhSachMoHinhTongQuat?.getDanhSachPhuongTienHoatDong?.getTrangThaiPhuongTienHoatDongSS586?.getMoHinh)
+          .catchError((e) => null) ??
+          onReportRootIssue(nameFunction: ''),
+      getPhuongTienVaChamSS588?.getMoHinh
+          ?.onCaiDatPhuongTien(value: getDanhSachMoHinhTongQuat?.getDanhSachPhuongTienHoatDong?.getTrangThaiPhuongTienHoatDongSS588?.getMoHinh)
+          .catchError((e) => null) ??
+          onReportRootIssue(nameFunction: ''),
+      getPhuongTienVaChamSS590?.getMoHinh
+          ?.onCaiDatPhuongTien(value: getDanhSachMoHinhTongQuat?.getDanhSachPhuongTienHoatDong?.getTrangThaiPhuongTienHoatDongSS590?.getMoHinh)
+          .catchError((e) => null) ??
+          onReportRootIssue(nameFunction: ''),
+      getPhuongTienVaChamSS592?.getMoHinh
+          ?.onCaiDatPhuongTien(value: getDanhSachMoHinhTongQuat?.getDanhSachPhuongTienHoatDong?.getTrangThaiPhuongTienHoatDongSS592?.getMoHinh)
+          .catchError((e) => null) ??
+          onReportRootIssue(nameFunction: ''),
+      getPhuongTienVaChamSS594?.getMoHinh
+          ?.onCaiDatPhuongTien(value: getDanhSachMoHinhTongQuat?.getDanhSachPhuongTienHoatDong?.getTrangThaiPhuongTienHoatDongSS594?.getMoHinh)
+          .catchError((e) => null) ??
+          onReportRootIssue(nameFunction: ''),
+      getPhuongTienVaChamSS596?.getMoHinh
+          ?.onCaiDatPhuongTien(value: getDanhSachMoHinhTongQuat?.getDanhSachPhuongTienHoatDong?.getTrangThaiPhuongTienHoatDongSS596?.getMoHinh)
+          .catchError((e) => null) ??
+          onReportRootIssue(nameFunction: ''),
+      getPhuongTienVaChamSS598?.getMoHinh
+          ?.onCaiDatPhuongTien(value: getDanhSachMoHinhTongQuat?.getDanhSachPhuongTienHoatDong?.getTrangThaiPhuongTienHoatDongSS598?.getMoHinh)
+          .catchError((e) => null) ??
+          onReportRootIssue(nameFunction: ''),
+      getPhuongTienVaChamSS600?.getMoHinh
+          ?.onCaiDatPhuongTien(value: getDanhSachMoHinhTongQuat?.getDanhSachPhuongTienHoatDong?.getTrangThaiPhuongTienHoatDongSS600?.getMoHinh)
+          .catchError((e) => null) ??
+          onReportRootIssue(nameFunction: ''),
+      getPhuongTienVaChamSS602?.getMoHinh
+          ?.onCaiDatPhuongTien(value: getDanhSachMoHinhTongQuat?.getDanhSachPhuongTienHoatDong?.getTrangThaiPhuongTienHoatDongSS602?.getMoHinh)
+          .catchError((e) => null) ??
+          onReportRootIssue(nameFunction: ''),
+      getPhuongTienVaChamSS604?.getMoHinh
+          ?.onCaiDatPhuongTien(value: getDanhSachMoHinhTongQuat?.getDanhSachPhuongTienHoatDong?.getTrangThaiPhuongTienHoatDongSS604?.getMoHinh)
+          .catchError((e) => null) ??
+          onReportRootIssue(nameFunction: ''),
+      getPhuongTienVaChamSS606?.getMoHinh
+          ?.onCaiDatPhuongTien(value: getDanhSachMoHinhTongQuat?.getDanhSachPhuongTienHoatDong?.getTrangThaiPhuongTienHoatDongSS606?.getMoHinh)
+          .catchError((e) => null) ??
+          onReportRootIssue(nameFunction: ''),
+      getPhuongTienVaChamSS608?.getMoHinh
+          ?.onCaiDatPhuongTien(value: getDanhSachMoHinhTongQuat?.getDanhSachPhuongTienHoatDong?.getTrangThaiPhuongTienHoatDongSS608?.getMoHinh)
+          .catchError((e) => null) ??
+          onReportRootIssue(nameFunction: ''),
+      getPhuongTienVaChamSS610?.getMoHinh
+          ?.onCaiDatPhuongTien(value: getDanhSachMoHinhTongQuat?.getDanhSachPhuongTienHoatDong?.getTrangThaiPhuongTienHoatDongSS610?.getMoHinh)
+          .catchError((e) => null) ??
+          onReportRootIssue(nameFunction: ''),
+      getPhuongTienVaChamSS612?.getMoHinh
+          ?.onCaiDatPhuongTien(value: getDanhSachMoHinhTongQuat?.getDanhSachPhuongTienHoatDong?.getTrangThaiPhuongTienHoatDongSS612?.getMoHinh)
+          .catchError((e) => null) ??
+          onReportRootIssue(nameFunction: ''),
+      getPhuongTienVaChamSS614?.getMoHinh
+          ?.onCaiDatPhuongTien(value: getDanhSachMoHinhTongQuat?.getDanhSachPhuongTienHoatDong?.getTrangThaiPhuongTienHoatDongSS614?.getMoHinh)
+          .catchError((e) => null) ??
+          onReportRootIssue(nameFunction: ''),
+      getPhuongTienVaChamSS616?.getMoHinh
+          ?.onCaiDatPhuongTien(value: getDanhSachMoHinhTongQuat?.getDanhSachPhuongTienHoatDong?.getTrangThaiPhuongTienHoatDongSS616?.getMoHinh)
+          .catchError((e) => null) ??
+          onReportRootIssue(nameFunction: ''),
+      getPhuongTienVaChamSS618?.getMoHinh
+          ?.onCaiDatPhuongTien(value: getDanhSachMoHinhTongQuat?.getDanhSachPhuongTienHoatDong?.getTrangThaiPhuongTienHoatDongSS618?.getMoHinh)
+          .catchError((e) => null) ??
+          onReportRootIssue(nameFunction: ''),
     ]);
 
     getDanhSachPhuongTienVaCham.addAll([
@@ -1440,6 +1563,37 @@ class SUKIENVACHAMTHUOCPHUONGTIEN with CauTrucThucThiCoBan, DanhSachQuanLyTrangT
       getPhuongTienVaChamSS554,
       getPhuongTienVaChamSS556,
       getPhuongTienVaChamSS558,
+
+      getPhuongTienVaChamSS560,
+      getPhuongTienVaChamSS562,
+      getPhuongTienVaChamSS564,
+      getPhuongTienVaChamSS566,
+      getPhuongTienVaChamSS568,
+      getPhuongTienVaChamSS570,
+      getPhuongTienVaChamSS572,
+      getPhuongTienVaChamSS574,
+      getPhuongTienVaChamSS576,
+      getPhuongTienVaChamSS578,
+      getPhuongTienVaChamSS580,
+      getPhuongTienVaChamSS582,
+      getPhuongTienVaChamSS584,
+      getPhuongTienVaChamSS586,
+      getPhuongTienVaChamSS588,
+      getPhuongTienVaChamSS590,
+      getPhuongTienVaChamSS592,
+      getPhuongTienVaChamSS594,
+      getPhuongTienVaChamSS596,
+      getPhuongTienVaChamSS598,
+      getPhuongTienVaChamSS600,
+      getPhuongTienVaChamSS602,
+      getPhuongTienVaChamSS604,
+      getPhuongTienVaChamSS606,
+      getPhuongTienVaChamSS608,
+      getPhuongTienVaChamSS610,
+      getPhuongTienVaChamSS612,
+      getPhuongTienVaChamSS614,
+      getPhuongTienVaChamSS616,
+      getPhuongTienVaChamSS618,
     ]);
 
     _mapPhuongTienVaCham = {
@@ -1713,6 +1867,37 @@ class SUKIENVACHAMTHUOCPHUONGTIEN with CauTrucThucThiCoBan, DanhSachQuanLyTrangT
       MOHINHPHUONGTIENVACHAM.maDinhDanhPhuongTienVaChamSS554: getPhuongTienVaChamSS554,
       MOHINHPHUONGTIENVACHAM.maDinhDanhPhuongTienVaChamSS556: getPhuongTienVaChamSS556,
       MOHINHPHUONGTIENVACHAM.maDinhDanhPhuongTienVaChamSS558: getPhuongTienVaChamSS558,
+      ///
+      MOHINHPHUONGTIENVACHAM.maDinhDanhPhuongTienVaChamSS560: getPhuongTienVaChamSS560,
+      MOHINHPHUONGTIENVACHAM.maDinhDanhPhuongTienVaChamSS562: getPhuongTienVaChamSS562,
+      MOHINHPHUONGTIENVACHAM.maDinhDanhPhuongTienVaChamSS564: getPhuongTienVaChamSS564,
+      MOHINHPHUONGTIENVACHAM.maDinhDanhPhuongTienVaChamSS566: getPhuongTienVaChamSS566,
+      MOHINHPHUONGTIENVACHAM.maDinhDanhPhuongTienVaChamSS568: getPhuongTienVaChamSS568,
+      MOHINHPHUONGTIENVACHAM.maDinhDanhPhuongTienVaChamSS570: getPhuongTienVaChamSS570,
+      MOHINHPHUONGTIENVACHAM.maDinhDanhPhuongTienVaChamSS572: getPhuongTienVaChamSS572,
+      MOHINHPHUONGTIENVACHAM.maDinhDanhPhuongTienVaChamSS574: getPhuongTienVaChamSS574,
+      MOHINHPHUONGTIENVACHAM.maDinhDanhPhuongTienVaChamSS576: getPhuongTienVaChamSS576,
+      MOHINHPHUONGTIENVACHAM.maDinhDanhPhuongTienVaChamSS578: getPhuongTienVaChamSS578,
+      MOHINHPHUONGTIENVACHAM.maDinhDanhPhuongTienVaChamSS580: getPhuongTienVaChamSS580,
+      MOHINHPHUONGTIENVACHAM.maDinhDanhPhuongTienVaChamSS582: getPhuongTienVaChamSS582,
+      MOHINHPHUONGTIENVACHAM.maDinhDanhPhuongTienVaChamSS584: getPhuongTienVaChamSS584,
+      MOHINHPHUONGTIENVACHAM.maDinhDanhPhuongTienVaChamSS586: getPhuongTienVaChamSS586,
+      MOHINHPHUONGTIENVACHAM.maDinhDanhPhuongTienVaChamSS588: getPhuongTienVaChamSS588,
+      MOHINHPHUONGTIENVACHAM.maDinhDanhPhuongTienVaChamSS590: getPhuongTienVaChamSS590,
+      MOHINHPHUONGTIENVACHAM.maDinhDanhPhuongTienVaChamSS592: getPhuongTienVaChamSS592,
+      MOHINHPHUONGTIENVACHAM.maDinhDanhPhuongTienVaChamSS594: getPhuongTienVaChamSS594,
+      MOHINHPHUONGTIENVACHAM.maDinhDanhPhuongTienVaChamSS596: getPhuongTienVaChamSS596,
+      MOHINHPHUONGTIENVACHAM.maDinhDanhPhuongTienVaChamSS598: getPhuongTienVaChamSS598,
+      MOHINHPHUONGTIENVACHAM.maDinhDanhPhuongTienVaChamSS600: getPhuongTienVaChamSS600,
+      MOHINHPHUONGTIENVACHAM.maDinhDanhPhuongTienVaChamSS602: getPhuongTienVaChamSS602,
+      MOHINHPHUONGTIENVACHAM.maDinhDanhPhuongTienVaChamSS604: getPhuongTienVaChamSS604,
+      MOHINHPHUONGTIENVACHAM.maDinhDanhPhuongTienVaChamSS606: getPhuongTienVaChamSS606,
+      MOHINHPHUONGTIENVACHAM.maDinhDanhPhuongTienVaChamSS608: getPhuongTienVaChamSS608,
+      MOHINHPHUONGTIENVACHAM.maDinhDanhPhuongTienVaChamSS610: getPhuongTienVaChamSS610,
+      MOHINHPHUONGTIENVACHAM.maDinhDanhPhuongTienVaChamSS612: getPhuongTienVaChamSS612,
+      MOHINHPHUONGTIENVACHAM.maDinhDanhPhuongTienVaChamSS614: getPhuongTienVaChamSS614,
+      MOHINHPHUONGTIENVACHAM.maDinhDanhPhuongTienVaChamSS616: getPhuongTienVaChamSS616,
+      MOHINHPHUONGTIENVACHAM.maDinhDanhPhuongTienVaChamSS618: getPhuongTienVaChamSS618,
     };
 
     /// TODO: -----|-----|-----|-----|-----|-----|-----|-----|-----|-----|
@@ -2264,17 +2449,23 @@ class SUKIENVACHAMTHUOCPHUONGTIEN with CauTrucThucThiCoBan, DanhSachQuanLyTrangT
     return;
   }
 
+  Stopwatch? stopwatch;
   /// -----
   /// TODO:
   /// -----
-  Future<void> onTichHopNhanDinhSuKienVaChamThuocPhuongTien({required Map<String, Map<String, dynamic>> danhSachPhuongTienVaChamVienDan}) async {
+  void onVoidTichHopNhanDinhSuKienVaChamThuocPhuongTien({required Map<String, Map<String, dynamic>> danhSachPhuongTienVaChamVienDan}) {
+    if (kDebugMode) {
+      stopwatch = Stopwatch();
+      stopwatch?.start();
+    }
+
     /// -----
     /// TODO:
     /// -----
     final Map<String, Map<String, dynamic>> danhSach = Map.from(danhSachPhuongTienVaChamVienDan);
 
     for (TRANGTHAIPHUONGTIENVACHAM? phuongTienVaCham in getDanhSachPhuongTienVaCham) {
-      if (phuongTienVaCham?.getMoHinh?.getPhuongTien?.getMoHinh?.getTrangThaiTrongChienDau?.getTrangThaiTonTai?.isKhoiTaoHoanTat() == true) {
+      if (phuongTienVaCham?.getMoHinh?.getPhuongTien?.getMoHinh?.getTrangThaiTrongChienDau?.getTrangThaiTonTai?.onCheckBoolKhoiTaoHoanTat() == true) {
         final phuongTienVaChamVienDan = danhSach[phuongTienVaCham?.getMoHinh?.getMaDinhDanhPhuongTienVaCham ?? '[]'];
 
         /// -----
@@ -2293,16 +2484,16 @@ class SUKIENVACHAMTHUOCPHUONGTIEN with CauTrucThucThiCoBan, DanhSachQuanLyTrangT
           //   );
           // }
           if (phuongTienVaCham?.getMoHinh?.getPhuongTien?.getMoHinh?.getTrangThaiTrongChienDau?.getMaDinhDanhVienDanVaCham == null) {
-            await phuongTienVaCham?.getMoHinh?.getPhuongTien?.getMoHinh?.getTrangThaiTrongChienDau?.onCaiDatMaDinhDanhVienDanVaCham(
+             phuongTienVaCham?.getMoHinh?.getPhuongTien?.getMoHinh?.getTrangThaiTrongChienDau?.onVoidCaiDatMaDinhDanhVienDanVaCham(
               value: phuongTienVaChamVienDan?['[MA_DINH_DANH_VIEN_DAN_VA_CHAM]'],
               caiDatUuTien: true,
             );
           }
 
           if (kDebugMode) {
-            print(
-              '[📋]_[LOG]_[TICH_HOP_THANH_CONG_SU_KIEN_VA_CHAM 🎯]: ${phuongTienVaCham?.getMoHinh?.getMaDinhDanhPhuongTienVaCham} - ${phuongTienVaChamVienDan?['[MA_DINH_DANH_VIEN_DAN_VA_CHAM]']}',
-            );
+            // print(
+            //   '[📋]_[LOG]_[TICH_HOP_THANH_CONG_SU_KIEN_VA_CHAM 🎯]: ${phuongTienVaCham?.getMoHinh?.getMaDinhDanhPhuongTienVaCham} - ${phuongTienVaChamVienDan?['[MA_DINH_DANH_VIEN_DAN_VA_CHAM]']}',
+            // );
           }
         } else {
           /// -----
@@ -2310,11 +2501,16 @@ class SUKIENVACHAMTHUOCPHUONGTIEN with CauTrucThucThiCoBan, DanhSachQuanLyTrangT
           /// TODO: Xóa Thông Tin Tham Chiếu Viên Đạn Va Chạm Hiện hành Của Phương Tiện
           /// -----
           if (phuongTienVaCham?.getMoHinh?.getPhuongTien?.getMoHinh?.getTrangThaiTrongChienDau?.getMaDinhDanhVienDanVaCham != null) {
-            await phuongTienVaCham?.getMoHinh?.getPhuongTien?.getMoHinh?.getTrangThaiTrongChienDau?.onCaiDatMaDinhDanhVienDanVaCham(value: null, caiDatUuTien: true);
+             phuongTienVaCham?.getMoHinh?.getPhuongTien?.getMoHinh?.getTrangThaiTrongChienDau?.onVoidCaiDatMaDinhDanhVienDanVaCham(value: null, caiDatUuTien: true);
           }
         }
       }
     } //
+
+    if (kDebugMode) {
+      stopwatch?.stop();
+      print('[⌚️⌚️⌚️] Thời Gian Xử Lý ISOLATE onVoidTichHopNhanDinhSuKienVaChamThuocPhuongTien [⌚️⌚️⌚️]: ${stopwatch?.elapsedMilliseconds}ms');
+    }
 
     ///
     return;
@@ -2323,7 +2519,13 @@ class SUKIENVACHAMTHUOCPHUONGTIEN with CauTrucThucThiCoBan, DanhSachQuanLyTrangT
   /// -----
   /// TODO:
   /// -----
-  Future<void> onTichHopNhanDinhSuKienVaChamThuocPhuongTienV2({required Map<String, Map<String, dynamic>> danhSachPhuongTienVaChamVienDan}) async {
+  void onVoidTichHopNhanDinhSuKienVaChamThuocPhuongTienV2({required Map<String, Map<String, dynamic>> danhSachPhuongTienVaChamVienDan}) {
+
+    if (kDebugMode) {
+      stopwatch = Stopwatch();
+      stopwatch?.start();
+    }
+
     /// -----
     /// TODO:
     /// -----
@@ -2331,19 +2533,19 @@ class SUKIENVACHAMTHUOCPHUONGTIEN with CauTrucThucThiCoBan, DanhSachQuanLyTrangT
       for (final phuongTienVaChamVienDan in danhSachPhuongTienVaChamVienDan.entries) {
         TRANGTHAIPHUONGTIENVACHAM? phuongTienVaCham = getMapPhuongTienVaCham[phuongTienVaChamVienDan.key];
 
-        if (phuongTienVaCham?.getMoHinh?.getPhuongTien?.getMoHinh?.getTrangThaiTrongChienDau?.getTrangThaiTonTai?.isKhoiTaoHoanTat() == true) {
+        if (phuongTienVaCham?.getMoHinh?.getPhuongTien?.getMoHinh?.getTrangThaiTrongChienDau?.getTrangThaiTonTai?.onCheckBoolKhoiTaoHoanTat() == true) {
           if (phuongTienVaChamVienDan.value.isNotEmpty == true && phuongTienVaChamVienDan.value['[MA_DINH_DANH_VIEN_DAN_VA_CHAM]'] != '[]') {
             if (phuongTienVaCham?.getMoHinh?.getPhuongTien?.getMoHinh?.getTrangThaiTrongChienDau?.getMaDinhDanhVienDanVaCham == null) {
-              await phuongTienVaCham?.getMoHinh?.getPhuongTien?.getMoHinh?.getTrangThaiTrongChienDau?.onCaiDatMaDinhDanhVienDanVaCham(
+               phuongTienVaCham?.getMoHinh?.getPhuongTien?.getMoHinh?.getTrangThaiTrongChienDau?.onVoidCaiDatMaDinhDanhVienDanVaCham(
                 value: phuongTienVaChamVienDan.value['[MA_DINH_DANH_VIEN_DAN_VA_CHAM]'],
                 caiDatUuTien: true,
               );
             }
 
             if (kDebugMode) {
-              print(
-                '[📋]_[LOG]_[TICH_HOP_THANH_CONG_SU_KIEN_VA_CHAM 🎯]: ${phuongTienVaCham?.getMoHinh?.getMaDinhDanhPhuongTienVaCham} - ${phuongTienVaChamVienDan.value['[MA_DINH_DANH_VIEN_DAN_VA_CHAM]']}',
-              );
+              // print(
+              //   '[📋]_[LOG]_[TICH_HOP_THANH_CONG_SU_KIEN_VA_CHAM 🎯]: ${phuongTienVaCham?.getMoHinh?.getMaDinhDanhPhuongTienVaCham} - ${phuongTienVaChamVienDan.value['[MA_DINH_DANH_VIEN_DAN_VA_CHAM]']}',
+              // );
             }
           } else {
             /// -----
@@ -2351,14 +2553,15 @@ class SUKIENVACHAMTHUOCPHUONGTIEN with CauTrucThucThiCoBan, DanhSachQuanLyTrangT
             /// TODO: Xóa Thông Tin Tham Chiếu Viên Đạn Va Chạm Hiện hành Của Phương Tiện
             /// -----
             if (phuongTienVaCham?.getMoHinh?.getPhuongTien?.getMoHinh?.getTrangThaiTrongChienDau?.getMaDinhDanhVienDanVaCham != null) {
-              await phuongTienVaCham?.getMoHinh?.getPhuongTien?.getMoHinh?.getTrangThaiTrongChienDau?.onCaiDatMaDinhDanhVienDanVaCham(value: null, caiDatUuTien: true);
+               phuongTienVaCham?.getMoHinh?.getPhuongTien?.getMoHinh?.getTrangThaiTrongChienDau?.onVoidCaiDatMaDinhDanhVienDanVaCham(value: null, caiDatUuTien: true);
             }
           }
         }
 
         if (phuongTienVaChamVienDan.key == '[DANH_SACH_MA_DINH_DANH_PHUONG_TIEN_HOAT_DONG]') {
           getDanhSachMaDinhDanhPhuongTienHoatDong?.clear();
-          Map<String, dynamic> mapDanhSachMaDinhDanhPhuongTienHoatDong = phuongTienVaChamVienDan?.value ?? {};;
+          Map<String, dynamic> mapDanhSachMaDinhDanhPhuongTienHoatDong = phuongTienVaChamVienDan?.value ?? {};
+
           // List<dynamic> danhSachMaDinhDanhPhuongTienHoatDong = mapDanhSachMaDinhDanhPhuongTienHoatDong.values.toList();
 
           getDanhSachMaDinhDanhPhuongTienHoatDong.addAll(mapDanhSachMaDinhDanhPhuongTienHoatDong.keys);
@@ -2366,11 +2569,17 @@ class SUKIENVACHAMTHUOCPHUONGTIEN with CauTrucThucThiCoBan, DanhSachQuanLyTrangT
       }
     }
 
+
+    if (kDebugMode) {
+      stopwatch?.stop();
+      print('[⌚️⌚️⌚️] Thời Gian Xử Lý ISOLATE onVoidTichHopNhanDinhSuKienVaChamThuocPhuongTienV2 [⌚️⌚️⌚️]: ${stopwatch?.elapsedMilliseconds}ms');
+    }
+
     ///
     return;
   }
 
-  Future<void> onTichHopNhanDinhSuKienVaChamThuocPhuongTienV3({required Map<String, Map<String, dynamic>> danhSachPhuongTienVaChamVienDan}) async {
+  void onVoidTichHopNhanDinhSuKienVaChamThuocPhuongTienV3({required Map<String, Map<String, dynamic>> danhSachPhuongTienVaChamVienDan}) {
     if (danhSachPhuongTienVaChamVienDan.isEmpty) return;
 
     for (final entry in danhSachPhuongTienVaChamVienDan.entries) {
@@ -2380,22 +2589,22 @@ class SUKIENVACHAMTHUOCPHUONGTIEN with CauTrucThucThiCoBan, DanhSachQuanLyTrangT
       final phuongTienVaCham = getMapPhuongTienVaCham[phuongTienId];
       final trangThai = phuongTienVaCham?.getMoHinh?.getPhuongTien?.getMoHinh?.getTrangThaiTrongChienDau;
 
-      if (trangThai?.getTrangThaiTonTai?.isKhoiTaoHoanTat() != true) continue;
+      if (trangThai?.getTrangThaiTonTai?.onCheckBoolKhoiTaoHoanTat() != true) continue;
 
       final maVienDan = thongTinVaCham['[MA_DINH_DANH_VIEN_DAN_VA_CHAM]'];
       final coVienDanVaCham = maVienDan != null && maVienDan is String && maVienDan.trim().isNotEmpty && maVienDan != '[]';
 
       if (coVienDanVaCham) {
         if (trangThai!.getMaDinhDanhVienDanVaCham != maVienDan) {
-          await trangThai.onCaiDatMaDinhDanhVienDanVaCham(value: maVienDan, caiDatUuTien: true);
+           trangThai.onVoidCaiDatMaDinhDanhVienDanVaCham(value: maVienDan, caiDatUuTien: true);
         }
 
         if (kDebugMode) {
-          print('[📋]_[LOG]_[TICH_HOP_THANH_CONG_SU_KIEN_VA_CHAM 🎯]: $phuongTienId - $maVienDan');
+          // print('[📋]_[LOG]_[TICH_HOP_THANH_CONG_SU_KIEN_VA_CHAM 🎯]: $phuongTienId - $maVienDan');
         }
       } else {
         if (trangThai!.getMaDinhDanhVienDanVaCham != null) {
-          await trangThai.onCaiDatMaDinhDanhVienDanVaCham(value: null, caiDatUuTien: true);
+           trangThai.onVoidCaiDatMaDinhDanhVienDanVaCham(value: null, caiDatUuTien: true);
         }
       }
     }
@@ -3226,8 +3435,96 @@ class SUKIENVACHAMTHUOCPHUONGTIEN with CauTrucThucThiCoBan, DanhSachQuanLyTrangT
   final TRANGTHAIPHUONGTIENVACHAM _phuongTienVaChamSS558 = TRANGTHAIPHUONGTIENVACHAM(value: MOHINHPHUONGTIENVACHAM.onSS558());
   TRANGTHAIPHUONGTIENVACHAM? get getPhuongTienVaChamSS558 => _phuongTienVaChamSS558;
 
+  ///
   final TRANGTHAIPHUONGTIENVACHAM _phuongTienVaChamSS560 = TRANGTHAIPHUONGTIENVACHAM(value: MOHINHPHUONGTIENVACHAM.onSS560());
   TRANGTHAIPHUONGTIENVACHAM? get getPhuongTienVaChamSS560 => _phuongTienVaChamSS560;
+
+  final TRANGTHAIPHUONGTIENVACHAM _phuongTienVaChamSS562 = TRANGTHAIPHUONGTIENVACHAM(value: MOHINHPHUONGTIENVACHAM.onSS562());
+  TRANGTHAIPHUONGTIENVACHAM? get getPhuongTienVaChamSS562 => _phuongTienVaChamSS562;
+
+  final TRANGTHAIPHUONGTIENVACHAM _phuongTienVaChamSS564 = TRANGTHAIPHUONGTIENVACHAM(value: MOHINHPHUONGTIENVACHAM.onSS564());
+  TRANGTHAIPHUONGTIENVACHAM? get getPhuongTienVaChamSS564 => _phuongTienVaChamSS564;
+
+  final TRANGTHAIPHUONGTIENVACHAM _phuongTienVaChamSS566 = TRANGTHAIPHUONGTIENVACHAM(value: MOHINHPHUONGTIENVACHAM.onSS566());
+  TRANGTHAIPHUONGTIENVACHAM? get getPhuongTienVaChamSS566 => _phuongTienVaChamSS566;
+
+  final TRANGTHAIPHUONGTIENVACHAM _phuongTienVaChamSS568 = TRANGTHAIPHUONGTIENVACHAM(value: MOHINHPHUONGTIENVACHAM.onSS568());
+  TRANGTHAIPHUONGTIENVACHAM? get getPhuongTienVaChamSS568 => _phuongTienVaChamSS568;
+
+  final TRANGTHAIPHUONGTIENVACHAM _phuongTienVaChamSS570 = TRANGTHAIPHUONGTIENVACHAM(value: MOHINHPHUONGTIENVACHAM.onSS570());
+  TRANGTHAIPHUONGTIENVACHAM? get getPhuongTienVaChamSS570 => _phuongTienVaChamSS570;
+
+  final TRANGTHAIPHUONGTIENVACHAM _phuongTienVaChamSS572 = TRANGTHAIPHUONGTIENVACHAM(value: MOHINHPHUONGTIENVACHAM.onSS572());
+  TRANGTHAIPHUONGTIENVACHAM? get getPhuongTienVaChamSS572 => _phuongTienVaChamSS572;
+
+  final TRANGTHAIPHUONGTIENVACHAM _phuongTienVaChamSS574 = TRANGTHAIPHUONGTIENVACHAM(value: MOHINHPHUONGTIENVACHAM.onSS574());
+  TRANGTHAIPHUONGTIENVACHAM? get getPhuongTienVaChamSS574 => _phuongTienVaChamSS574;
+
+  final TRANGTHAIPHUONGTIENVACHAM _phuongTienVaChamSS576 = TRANGTHAIPHUONGTIENVACHAM(value: MOHINHPHUONGTIENVACHAM.onSS576());
+  TRANGTHAIPHUONGTIENVACHAM? get getPhuongTienVaChamSS576 => _phuongTienVaChamSS576;
+
+  final TRANGTHAIPHUONGTIENVACHAM _phuongTienVaChamSS578 = TRANGTHAIPHUONGTIENVACHAM(value: MOHINHPHUONGTIENVACHAM.onSS578());
+  TRANGTHAIPHUONGTIENVACHAM? get getPhuongTienVaChamSS578 => _phuongTienVaChamSS578;
+
+  final TRANGTHAIPHUONGTIENVACHAM _phuongTienVaChamSS580 = TRANGTHAIPHUONGTIENVACHAM(value: MOHINHPHUONGTIENVACHAM.onSS580());
+  TRANGTHAIPHUONGTIENVACHAM? get getPhuongTienVaChamSS580 => _phuongTienVaChamSS580;
+
+  final TRANGTHAIPHUONGTIENVACHAM _phuongTienVaChamSS582 = TRANGTHAIPHUONGTIENVACHAM(value: MOHINHPHUONGTIENVACHAM.onSS582());
+  TRANGTHAIPHUONGTIENVACHAM? get getPhuongTienVaChamSS582 => _phuongTienVaChamSS582;
+
+  final TRANGTHAIPHUONGTIENVACHAM _phuongTienVaChamSS584 = TRANGTHAIPHUONGTIENVACHAM(value: MOHINHPHUONGTIENVACHAM.onSS584());
+  TRANGTHAIPHUONGTIENVACHAM? get getPhuongTienVaChamSS584 => _phuongTienVaChamSS584;
+
+  final TRANGTHAIPHUONGTIENVACHAM _phuongTienVaChamSS586 = TRANGTHAIPHUONGTIENVACHAM(value: MOHINHPHUONGTIENVACHAM.onSS586());
+  TRANGTHAIPHUONGTIENVACHAM? get getPhuongTienVaChamSS586 => _phuongTienVaChamSS586;
+
+  final TRANGTHAIPHUONGTIENVACHAM _phuongTienVaChamSS588 = TRANGTHAIPHUONGTIENVACHAM(value: MOHINHPHUONGTIENVACHAM.onSS588());
+  TRANGTHAIPHUONGTIENVACHAM? get getPhuongTienVaChamSS588 => _phuongTienVaChamSS588;
+
+  final TRANGTHAIPHUONGTIENVACHAM _phuongTienVaChamSS590 = TRANGTHAIPHUONGTIENVACHAM(value: MOHINHPHUONGTIENVACHAM.onSS590());
+  TRANGTHAIPHUONGTIENVACHAM? get getPhuongTienVaChamSS590 => _phuongTienVaChamSS590;
+
+  final TRANGTHAIPHUONGTIENVACHAM _phuongTienVaChamSS592 = TRANGTHAIPHUONGTIENVACHAM(value: MOHINHPHUONGTIENVACHAM.onSS592());
+  TRANGTHAIPHUONGTIENVACHAM? get getPhuongTienVaChamSS592 => _phuongTienVaChamSS592;
+
+  final TRANGTHAIPHUONGTIENVACHAM _phuongTienVaChamSS594 = TRANGTHAIPHUONGTIENVACHAM(value: MOHINHPHUONGTIENVACHAM.onSS594());
+  TRANGTHAIPHUONGTIENVACHAM? get getPhuongTienVaChamSS594 => _phuongTienVaChamSS594;
+
+  final TRANGTHAIPHUONGTIENVACHAM _phuongTienVaChamSS596 = TRANGTHAIPHUONGTIENVACHAM(value: MOHINHPHUONGTIENVACHAM.onSS596());
+  TRANGTHAIPHUONGTIENVACHAM? get getPhuongTienVaChamSS596 => _phuongTienVaChamSS596;
+
+  final TRANGTHAIPHUONGTIENVACHAM _phuongTienVaChamSS598 = TRANGTHAIPHUONGTIENVACHAM(value: MOHINHPHUONGTIENVACHAM.onSS598());
+  TRANGTHAIPHUONGTIENVACHAM? get getPhuongTienVaChamSS598 => _phuongTienVaChamSS598;
+
+  final TRANGTHAIPHUONGTIENVACHAM _phuongTienVaChamSS600 = TRANGTHAIPHUONGTIENVACHAM(value: MOHINHPHUONGTIENVACHAM.onSS600());
+  TRANGTHAIPHUONGTIENVACHAM? get getPhuongTienVaChamSS600 => _phuongTienVaChamSS600;
+
+  final TRANGTHAIPHUONGTIENVACHAM _phuongTienVaChamSS602 = TRANGTHAIPHUONGTIENVACHAM(value: MOHINHPHUONGTIENVACHAM.onSS602());
+  TRANGTHAIPHUONGTIENVACHAM? get getPhuongTienVaChamSS602 => _phuongTienVaChamSS602;
+
+  final TRANGTHAIPHUONGTIENVACHAM _phuongTienVaChamSS604 = TRANGTHAIPHUONGTIENVACHAM(value: MOHINHPHUONGTIENVACHAM.onSS604());
+  TRANGTHAIPHUONGTIENVACHAM? get getPhuongTienVaChamSS604 => _phuongTienVaChamSS604;
+
+  final TRANGTHAIPHUONGTIENVACHAM _phuongTienVaChamSS606 = TRANGTHAIPHUONGTIENVACHAM(value: MOHINHPHUONGTIENVACHAM.onSS606());
+  TRANGTHAIPHUONGTIENVACHAM? get getPhuongTienVaChamSS606 => _phuongTienVaChamSS606;
+
+  final TRANGTHAIPHUONGTIENVACHAM _phuongTienVaChamSS608 = TRANGTHAIPHUONGTIENVACHAM(value: MOHINHPHUONGTIENVACHAM.onSS608());
+  TRANGTHAIPHUONGTIENVACHAM? get getPhuongTienVaChamSS608 => _phuongTienVaChamSS608;
+
+  final TRANGTHAIPHUONGTIENVACHAM _phuongTienVaChamSS610 = TRANGTHAIPHUONGTIENVACHAM(value: MOHINHPHUONGTIENVACHAM.onSS610());
+  TRANGTHAIPHUONGTIENVACHAM? get getPhuongTienVaChamSS610 => _phuongTienVaChamSS610;
+
+  final TRANGTHAIPHUONGTIENVACHAM _phuongTienVaChamSS612 = TRANGTHAIPHUONGTIENVACHAM(value: MOHINHPHUONGTIENVACHAM.onSS612());
+  TRANGTHAIPHUONGTIENVACHAM? get getPhuongTienVaChamSS612 => _phuongTienVaChamSS612;
+
+  final TRANGTHAIPHUONGTIENVACHAM _phuongTienVaChamSS614 = TRANGTHAIPHUONGTIENVACHAM(value: MOHINHPHUONGTIENVACHAM.onSS614());
+  TRANGTHAIPHUONGTIENVACHAM? get getPhuongTienVaChamSS614 => _phuongTienVaChamSS614;
+
+  final TRANGTHAIPHUONGTIENVACHAM _phuongTienVaChamSS616 = TRANGTHAIPHUONGTIENVACHAM(value: MOHINHPHUONGTIENVACHAM.onSS616());
+  TRANGTHAIPHUONGTIENVACHAM? get getPhuongTienVaChamSS616 => _phuongTienVaChamSS616;
+
+  final TRANGTHAIPHUONGTIENVACHAM _phuongTienVaChamSS618 = TRANGTHAIPHUONGTIENVACHAM(value: MOHINHPHUONGTIENVACHAM.onSS618());
+  TRANGTHAIPHUONGTIENVACHAM? get getPhuongTienVaChamSS618 => _phuongTienVaChamSS618;
 
   ///
   ///

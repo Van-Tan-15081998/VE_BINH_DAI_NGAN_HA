@@ -26,9 +26,9 @@ class SpritePhuongTienVatPhamPhanThuong extends SpritePhuongTienCoBan {
   /// TODO:
   /// -----
   @override
-  void onVoidCapNhatKiemTraHienThi() async {
+  void onVoidCapNhatKiemTraHienThi()  {
     if (getMoHinh?.getMoHinh?.getDuLieuJsonLamPhang['[DI_CHUYEN_HIEN_THI]'] == true &&
-        getMoHinh?.getMoHinh?.getDuLieuJsonLamPhang['[VAT_PHAM_HIEN_THI]'] == true
+        getMoHinh?.getMoHinh?.getDuLieuJsonLamPhang['[VAT_PHAM_TON_TAI_HIEN_THI]'] == true
     ) {
       /// -----
       /// TODO: Cài Đặt SpriteAnimation cho Phương Tiện Mới
@@ -64,7 +64,7 @@ class SpritePhuongTienVatPhamPhanThuong extends SpritePhuongTienCoBan {
   /// TODO: Cập Nhật Position Và Size
   /// -----
   @override
-  void onVoidCapNhatPositionSizeValues() async {
+  void onVoidCapNhatPositionSizeValues()  {
     if (getKiemTraHienThi == true) {
       ///
       /// TODO:

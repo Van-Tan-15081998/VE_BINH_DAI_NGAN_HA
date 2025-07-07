@@ -18,7 +18,7 @@ abstract class VienDanThongMinh extends VIENDANTANCONGCOBAN {
   TocDoCoBan? _tocDoBayNguyenBan;
   TocDoCoBan? get getTocDoBayNguyenBan => _tocDoBayNguyenBan;
   TocDoCoBan get getTocDoBayNguyenBanNotNull => _tocDoBayNguyenBan ?? TocDoBayCoBan.onMacDinh();
-  Future<void> caiDatTocDoBayNguyenBan({required TocDoCoBan? value}) async {
+  void onVoidCaiDatTocDoBayNguyenBan({required TocDoCoBan? value}) {
     _tocDoBayNguyenBan = value;
     return;
   }
@@ -29,7 +29,7 @@ abstract class VienDanThongMinh extends VIENDANTANCONGCOBAN {
   TocDoBayCoBan? _tocDoBayTangCuong;
   TocDoBayCoBan? get getTocDoBayTangCuong => _tocDoBayTangCuong;
   TocDoBayCoBan get getTocDoBayTangCuongNotNull => _tocDoBayTangCuong ?? TocDoBayCoBan.onMacDinh();
-  Future<void> caiDatTocDoBayTangCuong({required TocDoBayCoBan? value}) async {
+  void onVoidCaiDatTocDoBayTangCuong({required TocDoBayCoBan? value}) {
     _tocDoBayTangCuong = value;
     return;
   }
@@ -150,7 +150,7 @@ abstract class VienDanThongMinh extends VIENDANTANCONGCOBAN {
   /// -----
   MoHinhPhuongTienTongQuat? _phuongTienHoatDongLayMucTieu;
   MoHinhPhuongTienTongQuat? get getPhuongTienHoatDongLayMucTieu => _phuongTienHoatDongLayMucTieu;
-  Future<void> caiDatPhuongTienHoatDongLayMucTieu({required MoHinhPhuongTienTongQuat? value}) async {
+  void onVoidCaiDatPhuongTienHoatDongLayMucTieu({required MoHinhPhuongTienTongQuat? value}) {
     _phuongTienHoatDongLayMucTieu = value;
     return;
   }
@@ -161,7 +161,7 @@ abstract class VienDanThongMinh extends VIENDANTANCONGCOBAN {
   bool? _tenLuaCanhTrai;
   bool? get getTenLuaCanhTrai => _tenLuaCanhTrai;
   bool get getTenLuaCanhTraiNotNull => _tenLuaCanhTrai ?? false;
-  Future<void> caiDatTenLuaCanhTrai({required bool? value}) async {
+  void onVoidCaiDatTenLuaCanhTrai({required bool? value}) {
     _tenLuaCanhTrai = value;
     return;
   }
@@ -172,7 +172,7 @@ abstract class VienDanThongMinh extends VIENDANTANCONGCOBAN {
   bool? _tenLuaCanhPhai;
   bool? get getTenLuaCanhPhai => _tenLuaCanhPhai;
   bool get getTenLuaCanhPhaiNotNull => _tenLuaCanhPhai ?? false;
-  Future<void> caiDatTenLuaCanhPhai({required bool? value}) async {
+  void onVoidCaiDatTenLuaCanhPhai({required bool? value}) {
     _tenLuaCanhPhai = value;
     return;
   }
@@ -183,7 +183,7 @@ abstract class VienDanThongMinh extends VIENDANTANCONGCOBAN {
   double? _bienTraiNguyenBan;
   double? get getBienTraiNguyenBan => _bienTraiNguyenBan;
   double get getBienTraiNguyenBanNotNull => _bienTraiNguyenBan ?? 0;
-  Future<void> caiDatBienTraiNguyenBan({required double? value}) async {
+  void onVoidCaiDatBienTraiNguyenBan({required double? value}) {
     if (value != null && value != 0) {
       if (value.isNaN == false && value.isFinite == true) {
         _bienTraiNguyenBan = value;
@@ -202,7 +202,7 @@ abstract class VienDanThongMinh extends VIENDANTANCONGCOBAN {
   double? _dxTrongTamNguyenBan;
   double? get getDxTrongTamNguyenBan => _dxTrongTamNguyenBan;
   double get getDxTrongTamNguyenBanNotNull => _dxTrongTamNguyenBan ?? 0;
-  Future<void> caiDatDxTrongTamNguyenBan({required double? value}) async {
+  void onVoidCaiDatDxTrongTamNguyenBan({required double? value}) {
     if (value != null && value != 0) {
       if (value.isNaN == false && value.isFinite == true) {
         _dxTrongTamNguyenBan = value;
@@ -221,7 +221,7 @@ abstract class VienDanThongMinh extends VIENDANTANCONGCOBAN {
   double? _bienDuoiNguyenBan;
   double? get getBienDuoiNguyenBan => _bienDuoiNguyenBan;
   double get getBienDuoiNguyenBanNotNull => _bienDuoiNguyenBan ?? 0;
-  Future<void> caiDatBienDuoiNguyenBan({required double? value}) async {
+  void onVoidCaiDatBienDuoiNguyenBan({required double? value}) {
     if (value != null && value != 0) {
       if (value.isNaN == false && value.isFinite == true) {
         _bienDuoiNguyenBan = value;
@@ -240,7 +240,7 @@ abstract class VienDanThongMinh extends VIENDANTANCONGCOBAN {
   double? _dyTrongTamNguyenBan;
   double? get getDyTrongTamNguyenBan => _dyTrongTamNguyenBan;
   double get getDyTrongTamNguyenBanNotNull => _dyTrongTamNguyenBan ?? 0;
-  Future<void> caiDatDyTrongTamNguyenBan({required double? value}) async {
+  void onVoidCaiDatDyTrongTamNguyenBan({required double? value}) {
     if (value != null && value != 0) {
       if (value.isNaN == false && value.isFinite == true) {
         _dyTrongTamNguyenBan = value;
@@ -337,10 +337,10 @@ abstract class VienDanThongMinh extends VIENDANTANCONGCOBAN {
     caiDatBienDuoiViTriLayMucTieu(value: 0);
     caiDatChieuRongManHinhPhiVatLy(value: 0);
     caiDatChieuCaoManHinhPhiVatLy(value: 0);
-    caiDatThoiGianKichHoat(value: ThoiGianKichHoatCoBan.onMacDinh());
+    onVoidCaiDatThoiGianKichHoat(value: ThoiGianKichHoatCoBan.onMacDinh());
     caiDatDinhHuongBay(value: DinhHuongBayCoBan.onMacDinh());
-    caiDatTocDoBayNguyenBan(value: TocDoBayCoBan.onMacDinh());
-    caiDatTocDoBayTangCuong(value: null);
+    onVoidCaiDatTocDoBayNguyenBan(value: TocDoBayCoBan.onMacDinh());
+    onVoidCaiDatTocDoBayTangCuong(value: null);
     caiDatTrangThaiTonTai(value: TrangThaiTonTaiCoBan.onMacDinh());
     caiDatMaDinhDanhDoiTuongMucTieuNguyenBan();
 
@@ -378,7 +378,7 @@ abstract class VienDanThongMinh extends VIENDANTANCONGCOBAN {
       /// -----
       /// TODO:
       /// -----
-      onXuLyDiChuyenTheoLoaiHinhVuKhiThongMinh();
+      onVoidXuLyDiChuyenTheoLoaiHinhVuKhiThongMinh();
     }
 
     return;
@@ -389,7 +389,7 @@ abstract class VienDanThongMinh extends VIENDANTANCONGCOBAN {
   /// -----
   /// TODO: Hàm Xử Lý Di Chuyển Theo Loại Hình Vũ Khí Tích Hợp Phạm Vi
   /// -----
-  Future<void> onXuLyDiChuyenTheoLoaiHinhVuKhiThongMinh() async {
+  void onVoidXuLyDiChuyenTheoLoaiHinhVuKhiThongMinh() {
     if (getTenLuaCanhTrai == true) {
       if ((getDxTrongTamNguyenBan != null && getDxTrongTamNguyenBan != 0) && getDxTrongTamNotNull > ((getDxTrongTamNguyenBan ?? 0) - 20.0)) {
         /// -----
@@ -405,10 +405,10 @@ abstract class VienDanThongMinh extends VIENDANTANCONGCOBAN {
         /// -----
         /// TODO: Cập Nhật Vị Trí Mới
         /// -----
-        await caiDatDxTrongTamCapNhatCacGiaTriBien(value: dxTrongTamCapNhat);
-        await caiDatDyTrongTamCapNhatCacGiaTriBien(value: dyTrongTamCapNhat);
+        onVoidCaiDatDxTrongTamCapNhatCacGiaTriBien(value: dxTrongTamCapNhat);
+        onVoidCaiDatDyTrongTamCapNhatCacGiaTriBien(value: dyTrongTamCapNhat);
       } else {
-        await caiDatDxTrongTamNguyenBan(value: null);
+         onVoidCaiDatDxTrongTamNguyenBan(value: null);
 
         ///
         /// TODO: Nếu là Tên lửa mới
@@ -427,13 +427,13 @@ abstract class VienDanThongMinh extends VIENDANTANCONGCOBAN {
           /// -----
           /// TODO: Cập Nhật Vị Trí Mới
           /// -----
-          await caiDatDxTrongTamCapNhatCacGiaTriBien(value: dxTrongTamCapNhat);
-          await caiDatDyTrongTamCapNhatCacGiaTriBien(value: dyTrongTamCapNhat);
+          onVoidCaiDatDxTrongTamCapNhatCacGiaTriBien(value: dxTrongTamCapNhat);
+          onVoidCaiDatDyTrongTamCapNhatCacGiaTriBien(value: dyTrongTamCapNhat);
 
-          await timKiemXacDinhMucTieuNgauNhienDuyNhat();
+           onVoidTimKiemXacDinhMucTieuNgauNhienDuyNhat();
         }
-        await onDieuKhienBayDenMucTieu();
-        // await onDieuKhienBayTheoLichSu();
+         onVoidDieuKhienBayDenMucTieu();
+        // await onVoidDieuKhienBayTheoLichSu();
       }
     } else if (getTenLuaCanhPhai == true) {
       if ((getDxTrongTamNguyenBan != null && getDxTrongTamNguyenBan != 0) && getDxTrongTamNotNull < ((getDxTrongTamNguyenBan ?? 0) + 20.0)) {
@@ -450,10 +450,10 @@ abstract class VienDanThongMinh extends VIENDANTANCONGCOBAN {
         /// -----
         /// TODO: Cập Nhật Vị Trí Mới
         /// -----
-        await caiDatDxTrongTamCapNhatCacGiaTriBien(value: dxTrongTamCapNhat);
-        await caiDatDyTrongTamCapNhatCacGiaTriBien(value: dyTrongTamCapNhat);
+        onVoidCaiDatDxTrongTamCapNhatCacGiaTriBien(value: dxTrongTamCapNhat);
+        onVoidCaiDatDyTrongTamCapNhatCacGiaTriBien(value: dyTrongTamCapNhat);
       } else {
-        caiDatDxTrongTamNguyenBan(value: null);
+        onVoidCaiDatDxTrongTamNguyenBan(value: null);
 
         ///
         /// TODO: Nếu là Tên lửa mới
@@ -472,13 +472,13 @@ abstract class VienDanThongMinh extends VIENDANTANCONGCOBAN {
           /// -----
           /// TODO: Cập Nhật Vị Trí Mới
           /// -----
-          await caiDatDxTrongTamCapNhatCacGiaTriBien(value: dxTrongTamCapNhat);
-          await caiDatDyTrongTamCapNhatCacGiaTriBien(value: dyTrongTamCapNhat);
+          onVoidCaiDatDxTrongTamCapNhatCacGiaTriBien(value: dxTrongTamCapNhat);
+          onVoidCaiDatDyTrongTamCapNhatCacGiaTriBien(value: dyTrongTamCapNhat);
 
-          await timKiemXacDinhMucTieuNgauNhienDuyNhat();
+           onVoidTimKiemXacDinhMucTieuNgauNhienDuyNhat();
         }
 
-        await onDieuKhienBayDenMucTieu();
+         onVoidDieuKhienBayDenMucTieu();
       }
     }
 
@@ -495,8 +495,8 @@ abstract class VienDanThongMinh extends VIENDANTANCONGCOBAN {
   /// -----
   /// TODO: Xác Định Tọa Độ Mục Tiêu Và Hướng Bay
   /// -----
-  Future<void> onXacDinhViTriPhuongTienHoatDongLayMucTieu() async {
-    if (getPhuongTienHoatDongLayMucTieu?.getTrangThaiTrongChienDau?.getTrangThaiTonTai?.isKhoiTaoHoanTat() == true) {
+  void onVoidXacDinhViTriPhuongTienHoatDongLayMucTieu() {
+    if (getPhuongTienHoatDongLayMucTieu?.getTrangThaiTrongChienDau?.getTrangThaiTonTai?.onCheckBoolKhoiTaoHoanTat() == true) {
       MoHinhViTriPhuongTien? viTriPhuongTien = getPhuongTienHoatDongLayMucTieu?.getPhuongThuc?.getPhuongThucBay?.getViTri;
 
       // double chieuRongThanPhuongTien = viTriPhuongTien?.getChieuRongThan ?? 0;
@@ -505,7 +505,7 @@ abstract class VienDanThongMinh extends VIENDANTANCONGCOBAN {
        onVoidCaiDatDxViTriLayMucTieu(value: (viTriPhuongTien?.getDxTrongTam ?? 0));
        onVoidCaiDatDyViTriLayMucTieu(value: (viTriPhuongTien?.getDyTrongTam ?? 0));
     } else {
-      if (await getDinhHuongBay?.isDinhHuongTheoViTriPhuongTienLayMucTieu() == true) {
+      if ( getDinhHuongBay?.onCheckBoolXacDinhViTriPhuongTienHoatDongLayMucTieu() == true) {
          onVoidCaiDatDxViTriLayMucTieu(value: null);
          onVoidCaiDatDyViTriLayMucTieu(value: null);
         // await getDinhHuongBay?.caiDatDinhHuongTheoQuanTinhLichSuDiChuyen();
@@ -522,7 +522,7 @@ abstract class VienDanThongMinh extends VIENDANTANCONGCOBAN {
     return;
   }
 
-  Future<void> timKiemXacDinhMucTieuNgauNhienDuyNhat() async {
+  void onVoidTimKiemXacDinhMucTieuNgauNhienDuyNhat() {
     if (getPhuongTienHoatDongLayMucTieu == null) {
 
       if (getSuKienVaChamThuocPhuongTien?.getDanhSachMaDinhDanhPhuongTienHoatDong.isNotEmpty == true) {
@@ -536,7 +536,7 @@ abstract class VienDanThongMinh extends VIENDANTANCONGCOBAN {
         TRANGTHAIPHUONGTIENVACHAM? phuongTienLayMucTieu =
             getSuKienVaChamThuocPhuongTien?.getDanhSachPhuongTienVaCham.where((TRANGTHAIPHUONGTIENVACHAM? phuongTien) => phuongTien?.getMoHinh?.getMaDinhDanhPhuongTienVaCham == maDinhDanh).first;
 
-        await caiDatPhuongTienHoatDongLayMucTieu(value: phuongTienLayMucTieu?.getMoHinh?.getPhuongTien?.getMoHinh);
+         onVoidCaiDatPhuongTienHoatDongLayMucTieu(value: phuongTienLayMucTieu?.getMoHinh?.getPhuongTien?.getMoHinh);
 
         return;
       }
@@ -611,11 +611,11 @@ abstract class VienDanThongMinh extends VIENDANTANCONGCOBAN {
   /// -----
   /// TODO:
   /// -----
-  Future<void> onDieuKhienBayDenMucTieu() async {
+  void onVoidDieuKhienBayDenMucTieu() {
     /// -----
     /// TODO:
     /// -----
-    await onXacDinhViTriPhuongTienHoatDongLayMucTieu();
+     onVoidXacDinhViTriPhuongTienHoatDongLayMucTieu();
 
     final double dxDiemKetThuc = getDxViTriLayMucTieuNotNull;
     final double dyDiemKetThuc = getDyViTriLayMucTieuNotNull;
@@ -624,7 +624,7 @@ abstract class VienDanThongMinh extends VIENDANTANCONGCOBAN {
         getPhuongTienHoatDongLayMucTieu?.getDuLieuJsonLamPhang['[KICH_HOAT_HOAT_DONG]'] == false ||
         getPhuongTienHoatDongLayMucTieu?.getDuLieuJsonLamPhang['[DI_CHUYEN_HIEN_THI]'] == false
     ) {
-      await onDieuKhienBayTheoLichSu();
+       onVoidDieuKhienBayTheoLichSu();
 
       return;
     }
@@ -669,7 +669,7 @@ abstract class VienDanThongMinh extends VIENDANTANCONGCOBAN {
     return;
   }
 
-  Future<void> onDieuKhienBayTheoLichSu() async {
+  void onVoidDieuKhienBayTheoLichSu() {
     final dxDiemTrungGianA = getLichSuDxTrongTam ?? 0;
     final dyDiemTrungGianA = getLichSuDyTrongTam ?? 0;
 

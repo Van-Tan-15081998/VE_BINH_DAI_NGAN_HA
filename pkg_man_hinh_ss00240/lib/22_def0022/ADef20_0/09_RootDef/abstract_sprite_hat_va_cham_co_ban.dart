@@ -108,7 +108,7 @@ abstract class SpriteHatVaChamCoBan extends SpriteAnimationComponent with HasVis
   /// TODO:
   /// -----
   void onVoidCapNhatKiemTraHienThi() {
-    if (getMoHinh?.getMoHinh?.getThuocTinhTichHop?.getTrangThaiTonTai?.isKhoiTaoHoanTat() == true) {
+    if (getMoHinh?.getMoHinh?.getThuocTinhTichHop?.getTrangThaiTonTai?.onCheckBoolKhoiTaoHoanTat() == true) {
       /// -----
       /// TODO: Cài Đặt SpriteAnimation cho Hạt Va Chạm Mới
       /// -----
@@ -214,8 +214,8 @@ abstract class SpriteHatVaChamCoBan extends SpriteAnimationComponent with HasVis
       ///
       /// TODO:
       ///
-      double dy = getMoHinh?.getMoHinh?.getThuocTinhTichHop?.getDy ?? 1.0;
-      double dx = getMoHinh?.getMoHinh?.getThuocTinhTichHop?.getDx ?? 1.0;
+      double dy = getMoHinh?.getMoHinh?.getThuocTinhTichHop?.getDyTrongTam ?? 1.0;
+      double dx = getMoHinh?.getMoHinh?.getThuocTinhTichHop?.getDxTrongTam ?? 1.0;
       double chieuCaoThan = getMoHinh?.getMoHinh?.getThuocTinhTichHop?.getChieuCaoThan ?? 1.0;
       double chieuRongThan = getMoHinh?.getMoHinh?.getThuocTinhTichHop?.getChieuRongThan ?? 1.0;
 
@@ -253,7 +253,7 @@ abstract class SpriteHatVaChamCoBan extends SpriteAnimationComponent with HasVis
     super.update(dt);
 
     if (animationTicker?.isLastFrame == true) {
-      if (getMoHinh?.getMoHinh?.getThuocTinhTichHop?.getTrangThaiTonTai?.isKhoiTaoHoanTat() == true) {
+      if (getMoHinh?.getMoHinh?.getThuocTinhTichHop?.getTrangThaiTonTai?.onCheckBoolKhoiTaoHoanTat() == true) {
         getMoHinh?.getMoHinh?.getThuocTinhTichHop?.getTrangThaiTonTai?.caiDatHuyHoanTat();
       }
     }

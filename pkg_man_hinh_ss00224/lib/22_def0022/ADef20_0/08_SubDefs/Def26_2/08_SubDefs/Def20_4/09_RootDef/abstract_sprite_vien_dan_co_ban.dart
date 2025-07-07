@@ -120,7 +120,7 @@ abstract class SpriteVienDanCoBan extends SpriteComponent with HasVisibility {
   /// TODO:
   /// -----
   void onVoidCapNhatKiemTraHienThi() {
-    if (getMoHinh?.getMoHinh?.getTrangThaiTonTai?.isKhoiTaoHoanTat() == true) {
+    if (getMoHinh?.getMoHinh?.getTrangThaiTonTai?.onCheckBoolKhoiTaoHoanTat() == true) {
       if (getDonViSprite?.getSprite == null) {
         final random = Random();
         int randomNumber = random.nextInt(3) + 1; // tạo số từ 1 đến 3

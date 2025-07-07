@@ -27,7 +27,7 @@ class SpritePhuongTienVuKhiDieuKhien extends SpritePhuongTienCoBan {
   /// TODO:
   /// -----
   @override
-  void onVoidCapNhatKiemTraHienThi() async {
+  void onVoidCapNhatKiemTraHienThi()  {
     if (getMoHinh?.getMoHinh?.getDuLieuJsonLamPhang['[DI_CHUYEN_HIEN_THI]'] == true &&
         getMoHinh?.getMoHinh?.getDuLieuJsonLamPhang['[TAN_CONG_HIEN_THI]'] == true
     ) {
@@ -65,7 +65,7 @@ class SpritePhuongTienVuKhiDieuKhien extends SpritePhuongTienCoBan {
   /// TODO: Cập Nhật Position Và Size
   /// -----
   @override
-  void onVoidCapNhatPositionSizeValues() async {
+  void onVoidCapNhatPositionSizeValues()  {
     if (getKiemTraHienThi == true) {
       ///
       /// TODO:

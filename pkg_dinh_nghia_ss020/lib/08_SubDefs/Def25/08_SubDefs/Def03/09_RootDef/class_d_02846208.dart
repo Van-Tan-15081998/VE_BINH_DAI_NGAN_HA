@@ -60,7 +60,7 @@ class TienTrinhThucThiGanKetViTriChienDauCo {
     return;
   }
 
-  Future<bool> isDangThucThi() async {
+  bool onCheckBoolDangThucThi() {
     if (getTrangThai == '[TRANG_THAI_DANG_THUC_THI]') {
       return true;
     }

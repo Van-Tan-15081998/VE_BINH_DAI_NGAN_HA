@@ -136,16 +136,6 @@ class MoHinhTrangThaiTrongChienDauPhuongTien with CauTrucThucThiCoBan {
   /// -----
   String? _maDinhDanhVienDanVaCham;
   String? get getMaDinhDanhVienDanVaCham => _maDinhDanhVienDanVaCham;
-  Future<void> onCaiDatMaDinhDanhVienDanVaCham({required String? value, bool? caiDatUuTien}) async {
-    if (caiDatUuTien == true) {
-      _maDinhDanhVienDanVaCham = value;
-    } else {
-      _maDinhDanhVienDanVaCham ??= value;
-    }
-
-    ///
-    return;
-  }
   void onVoidCaiDatMaDinhDanhVienDanVaCham({required String? value, bool? caiDatUuTien}) {
     if (caiDatUuTien == true) {
       _maDinhDanhVienDanVaCham = value;

@@ -15,7 +15,6 @@ class TinhToanSatThuongHuongDenChienDauCo with CauTrucThucThiCoBan, DanhSachQuan
   @override
   Future<void> onAttachRoot({required dynamic attachValue}) async {
     if (attachValue is QuanLyTrangThaiTongQuat) {
-
       await caiDatDichVuMayPhatAmThanh(value: attachValue.getDichVuMayPhatAmThanh);
 
       await caiDatSuKienVaChamTrongChienDau(value: attachValue.getSuKienVaChamTrongChienDau);
@@ -122,9 +121,10 @@ class TinhToanSatThuongHuongDenChienDauCo with CauTrucThucThiCoBan, DanhSachQuan
   /// TODO:
   /// -----
   void onVoidSatThuongPhuongTienVuKhi({required MoHinhPhuongTienTongQuat? phuongTien, required DiemToaDoHoanHaoCoBan? toaDoVaCham}) async {
-
     if (phuongTien is MOHINHPHUONGTIENVATPHAMPHANTHUONG) {
-      phuongTien?.getTrangThaiTrongChienDau?.getTrangThaiTonTai?.onVoidCaiDatHuyHoanTat();
+      phuongTien.getTrangThaiTrongChienDau?.getTrangThaiTonTai?.onVoidCaiDatHuyHoanTat();
+      phuongTien.getDuLieuJsonLamPhang['[VAT_PHAM_TON_TAI_SAN_SANG]'] = true;
+      phuongTien.getDuLieuJsonLamPhang['[VAT_PHAM_TON_TAI_HIEN_THI]'] = false;
 
       await getDichVuMayPhatAmThanh?.getHieuUngAmThanhSuKienVaChamTrongChienDau?.getSuKienVaChamVatPhamPhanThuong?.getHieuUngAmThanhVaChamCoBanSS01?.onPlay();
     } else {
@@ -156,8 +156,8 @@ class TinhToanSatThuongHuongDenChienDauCo with CauTrucThucThiCoBan, DanhSachQuan
       /// -----
       /// TODO:
       /// -----
-      getSuKienVaChamTrongChienDau?.getSuKienVaChamPhaHuy?.onXuLyVaCham(toaDoTrungTam: diemToaDoTrungTam);
-      getSuKienVaChamTrongChienDau?.getSuKienVaChamPhaHuy?.onXuLySatThuongVaCham(toaDoTrungTam: diemToaDoTrungTam, satThuong: 0);
+      getSuKienVaChamTrongChienDau?.getSuKienVaChamPhaHuy?.onVoidXuLyVaCham(toaDoTrungTam: diemToaDoTrungTam);
+      getSuKienVaChamTrongChienDau?.getSuKienVaChamPhaHuy?.onVoidXuLySatThuongVaCham(toaDoTrungTam: diemToaDoTrungTam, satThuong: 0);
     }
 
     return;

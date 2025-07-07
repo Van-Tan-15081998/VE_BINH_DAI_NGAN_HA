@@ -72,7 +72,7 @@ class SPRITETHANHNGANGCHISOMAUBOSS extends SPRITETHANHNGANGCHISOMAUCOBAN {
   /// TODO:
   /// -----
   @override
-  void onVoidCapNhatKiemTraHienThi() async {
+  void onVoidCapNhatKiemTraHienThi()  {
     if (getMoHinh?.getMoHinh?.onVoidKiemTraDiChuyenHienThi() == true) {
       onVoidCaiDatKiemTraHienThi(value: true);
 

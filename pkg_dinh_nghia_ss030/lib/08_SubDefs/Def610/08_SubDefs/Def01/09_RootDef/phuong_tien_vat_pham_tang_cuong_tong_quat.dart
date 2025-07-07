@@ -12,8 +12,6 @@ class MOHINHPHUONGTIENVATPHAMTANGCUONG extends MoHinhPhuongTienTongQuat {
   Future<void> onInitRoot() async {
     await super.onInitRoot();
 
-    await getTrangThaiTrongChienDau?.getTrangThaiPhuongTienNhanSatThuong?.caiDatSoLanNhanSatThuongToiDa(value: 30);
-
     return;
   }
 

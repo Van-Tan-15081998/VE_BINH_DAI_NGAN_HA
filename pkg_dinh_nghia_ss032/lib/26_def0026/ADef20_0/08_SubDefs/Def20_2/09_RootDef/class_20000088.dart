@@ -70,7 +70,7 @@ class MoHinhHatVaChamCoBan with KhungThucThiCoBan {
   /// -----
   @override
   Future<void> onSetupRoot() async {
-    await caiDatThuocTinhSprite(value: MoHinhThuocTinhSpriteHatVaCham());
+     onVoidCaiDatThuocTinhSprite(value: MoHinhThuocTinhSpriteHatVaCham());
     await caiDatThuocTinhTichHop(value: MoHinhThuocTinhTichHopHatVaCham());
     await caiDatThuocTinhKichThuoc(value: MoHinhThuocTinhKichThuocHatVaCham());
 
@@ -128,7 +128,7 @@ class MoHinhHatVaChamCoBan with KhungThucThiCoBan {
     await getThuocTinhTichHop?.onInitRoot();
     await getThuocTinhKichThuoc?.onInitRoot();
 
-    await onXuLyKichThuocKhopVoiSprite();
+     onVoidXuLyKichThuocKhopVoiSprite();
 
     ///
     return;
@@ -146,7 +146,7 @@ class MoHinhHatVaChamCoBan with KhungThucThiCoBan {
   /// -----
   /// TODO: Xử Lý Kích Thước
   /// -----
-  Future<void> onXuLyKichThuocKhopVoiSprite() async {
+  void onVoidXuLyKichThuocKhopVoiSprite() {
     double chieuRongThanNguyenBan = getThuocTinhKichThuoc?.getChieuRongThan ?? 100.0;
     double chieuCaoThanNguyenBan = getThuocTinhKichThuoc?.getChieuCaoThan ?? 100.0;
 
@@ -158,8 +158,8 @@ class MoHinhHatVaChamCoBan with KhungThucThiCoBan {
     double chieuRongThanCapNhat = chieuRongThanNguyenBan * (chieuRongThanSpriteFrame / tongKichThuoc);
     double chieuCaoThanCapNhat = chieuCaoThanNguyenBan * (chieuCaoThanSpriteFrame / tongKichThuoc);
 
-    await getThuocTinhKichThuoc?.caiDatChieuRongThan(value: chieuRongThanCapNhat);
-    await getThuocTinhKichThuoc?.caiDatChieuCaoThan(value: chieuCaoThanCapNhat);
+     getThuocTinhKichThuoc?.onVoidCaiDatChieuRongThan(value: chieuRongThanCapNhat);
+     getThuocTinhKichThuoc?.onVoidCaiDatChieuCaoThan(value: chieuCaoThanCapNhat);
 
     return;
   }
@@ -169,7 +169,7 @@ class MoHinhHatVaChamCoBan with KhungThucThiCoBan {
   /// -----
   MoHinhThuocTinhSpriteHatVaCham? _thuocTinhSprite;
   MoHinhThuocTinhSpriteHatVaCham? get getThuocTinhSprite => _thuocTinhSprite;
-  Future<void> caiDatThuocTinhSprite({required MoHinhThuocTinhSpriteHatVaCham? value, bool? caiDatUuTien}) async {
+  void onVoidCaiDatThuocTinhSprite({required MoHinhThuocTinhSpriteHatVaCham? value, bool? caiDatUuTien}) {
     if (caiDatUuTien == true) {
       _thuocTinhSprite = value;
     } else {

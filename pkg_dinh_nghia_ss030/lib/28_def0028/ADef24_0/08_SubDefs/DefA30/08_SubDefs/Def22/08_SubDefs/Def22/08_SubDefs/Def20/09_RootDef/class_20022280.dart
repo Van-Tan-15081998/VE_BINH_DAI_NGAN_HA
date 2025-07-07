@@ -24,7 +24,7 @@ class PHUONGTHUCBAYPHUONGTIENHOVECLASS30ASS02 extends MoHinhPhuongThucBayPhuongT
     await getThamSoBay?.caiDatDinhHuongLayMucTieu(value: DinhHuongLayMucTieuCoBan.onMacDinh());
 
     ///
-    await getThamSoBay?.caiDatThoiGianKichHoat(value: ThoiGianKichHoatCoBan.kichHoat10());
+    getThamSoBay?.onVoidCaiDatThoiGianKichHoat(value: ThoiGianKichHoatCoBan.kichHoat10());
 
     ///
     await getThamSoBay?.caiDatDanhSachDoanDuongBayThuocKichBanChienDau(value: []);

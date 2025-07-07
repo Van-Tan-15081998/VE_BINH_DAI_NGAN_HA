@@ -101,7 +101,7 @@ abstract class SpriteCoBan extends SpriteComponent with HasVisibility {
   }
 
   Future<void> capNhatKiemTraHienThi() async {
-    if (await getMoHinh?.getTrangThaiTonTai?.isKhoiTaoHoanTat() == true) {
+    if (await getMoHinh?.getTrangThaiTonTai?.onCheckBoolKhoiTaoHoanTat() == true) {
       await caiDatKiemTraHienThi(value: true);
     } else {
       await caiDatKiemTraHienThi(value: false);

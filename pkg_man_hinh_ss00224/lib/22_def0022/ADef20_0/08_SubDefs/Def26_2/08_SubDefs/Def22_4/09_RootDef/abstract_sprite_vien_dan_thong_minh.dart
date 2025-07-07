@@ -112,7 +112,7 @@ abstract class SpriteVienDanThongMinh extends SpriteAnimationComponent with HasV
   /// -----
   void onVoidCapNhatKiemTraHienThi() {
 
-    if (getMoHinh?.getMoHinh?.getTrangThaiTonTai?.isKhoiTaoHoanTat() == true) {
+    if (getMoHinh?.getMoHinh?.getTrangThaiTonTai?.onCheckBoolKhoiTaoHoanTat() == true) {
       if (getDonViSprite?.getSpriteAnimation == null) {
         final random = Random();
         int randomNumber = random.nextInt(3) + 1; // tạo số từ 1 đến 3

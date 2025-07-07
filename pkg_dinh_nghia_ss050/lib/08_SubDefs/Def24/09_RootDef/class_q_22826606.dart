@@ -301,7 +301,7 @@ class QuanLyTrangThaiBangDieuKhienTongQuat with KhungThucThiCoBan, DanhSachQuanL
       await getTienTrinhThucThiTatCaGiaiDoanThuocKichBan?.caiDatDangChuanBiThucThi();
 
       await khoiTaoGame();
-    } else if (await getTienTrinhThucThiTatCaGiaiDoanThuocKichBan?.isDangThucThi() == true) {
+    } else if ( getTienTrinhThucThiTatCaGiaiDoanThuocKichBan?.onCheckBoolDangThucThi() == true) {
       /// -----
       /// TODO: Nếu Tất Cả Phương Tiện Chưa Bị Phá Hủy Hoàn Toàn
       /// -----
@@ -330,7 +330,7 @@ class QuanLyTrangThaiBangDieuKhienTongQuat with KhungThucThiCoBan, DanhSachQuanL
           /// -----
           /// TODO: Nếu Có Bất Kỳ Một Phương Tiện Nào Chưa Bị Phá Hủy => false
           /// -----
-          if (await phuongTien?.getMoHinh?.getTrangThaiTrongChienDau?.getTrangThaiTonTai?.isKhoiTaoHoanTat() == true) {
+          if (await phuongTien?.getMoHinh?.getTrangThaiTrongChienDau?.getTrangThaiTonTai?.onCheckBoolKhoiTaoHoanTat() == true) {
             isTatCaPhuongTienBiPhaHuy = false;
             break;
           }
@@ -354,7 +354,7 @@ class QuanLyTrangThaiBangDieuKhienTongQuat with KhungThucThiCoBan, DanhSachQuanL
       /// (Nếu toàn bộ máy bay của kịch bản hiện tại đã bị phá hủy)
       ///
       if (await getTienTrinhThucThiGiaiDoanThuocKichBanHienHanh?.isThucThiHoanTat() == true &&
-          await getTienTrinhThucThiTatCaGiaiDoanThuocKichBan?.isDangThucThi() == true) {
+           getTienTrinhThucThiTatCaGiaiDoanThuocKichBan?.onCheckBoolDangThucThi() == true) {
         ///
         /// TODO: Chuyển Đến Giai Đoạn Thuộc Kịch Bản Chiến Đấu Tiếp Theo
         ///
@@ -392,7 +392,7 @@ class QuanLyTrangThaiBangDieuKhienTongQuat with KhungThucThiCoBan, DanhSachQuanL
     /// -----
     await getKichBanChienDau?.getTienTrinhKhoiTaoKichBanChienDau?.caiDatKhoiTaoHoanTat();
 
-    if (await getKichBanChienDau?.getTienTrinhKhoiTaoKichBanChienDau?.isKhoiTaoHoanTat() == true) {
+    if (await getKichBanChienDau?.getTienTrinhKhoiTaoKichBanChienDau?.onCheckBoolKhoiTaoHoanTat() == true) {
       ketQuaKhoiTaoGame = await khoiTaoGiaiDoanKichBanThuocKichBanChienDauHienHanh();
     }
 
@@ -877,7 +877,7 @@ class QuanLyTrangThaiBangDieuKhienTongQuat with KhungThucThiCoBan, DanhSachQuanL
             ///
             /// TODO: Cài Đặt Thời Gian Kích Hoạt
             ///
-            await phuongTien?.getPhuongThuc?.getPhuongThucBay?.getThamSoBay?.caiDatThoiGianKichHoat(
+            await phuongTien?.getPhuongThuc?.getPhuongThucBay?.getThamSoBay?.onVoidCaiDatThoiGianKichHoat(
               value: phuongTienThuocKichBan?.getPhuongTien?.getPhuongThuc?.getPhuongThucBay?.getThamSoBay?.getThoiGianKichHoat,
             );
 
@@ -1006,7 +1006,7 @@ class QuanLyTrangThaiBangDieuKhienTongQuat with KhungThucThiCoBan, DanhSachQuanL
   /// -----
   Future<bool> khoiTaoGiaiDoanKichBanThuocKichBanChienDauHienHanh() async {
     bool result = false;
-    if (await getKichBanChienDau?.getTienTrinhKhoiTaoKichBanChienDau?.isKhoiTaoHoanTat() == true) {
+    if (await getKichBanChienDau?.getTienTrinhKhoiTaoKichBanChienDau?.onCheckBoolKhoiTaoHoanTat() == true) {
       MoHinhGiaiDoanKichBanChienDau? giaiDoanKichBanChienDau = await getKichBanChienDau!.getGiaiDoanKichBanDauTien();
 
       if (giaiDoanKichBanChienDau != null) {
@@ -1033,7 +1033,7 @@ class QuanLyTrangThaiBangDieuKhienTongQuat with KhungThucThiCoBan, DanhSachQuanL
   /// TODO: Hàm Chuyển Đến Giai Đoạn Thuộc Kịch Bản Chiến Đấu Tiếp Theo
   /// -----
   Future<void> onKhoiTaoGiaiDoanKichBanThuocKichBanChienDauTiepTheo() async {
-    if (await getKichBanChienDau?.getTienTrinhKhoiTaoKichBanChienDau?.isKhoiTaoHoanTat() == true) {
+    if (await getKichBanChienDau?.getTienTrinhKhoiTaoKichBanChienDau?.onCheckBoolKhoiTaoHoanTat() == true) {
       /// -----
       /// TODO: Khi Đến Giai Đoạn Kịch Bản Tiếp Theo Tức Giai Đoạn Kịch Bản Hiện Hành Đã Hoàn Thành
       /// -----

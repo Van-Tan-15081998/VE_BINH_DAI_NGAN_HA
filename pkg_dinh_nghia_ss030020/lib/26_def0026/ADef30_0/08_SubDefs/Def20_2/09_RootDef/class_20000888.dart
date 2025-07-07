@@ -141,7 +141,7 @@ class VIENDANTANCONGXAMCHIEMCOBAN with KhungThucThiCoBan, DanhSachQuanLyTrangTha
   TocDoCoBan? _tocDoBayNguyenBan;
   TocDoCoBan? get getTocDoBayNguyenBan => _tocDoBayNguyenBan;
   TocDoCoBan get getTocDoBayNguyenBanNotNull => _tocDoBayNguyenBan ?? TocDoBayCoBan.onMacDinh();
-  Future<void> caiDatTocDoBayNguyenBan({required TocDoCoBan? value}) async {
+  void onVoidCaiDatTocDoBayNguyenBan({required TocDoCoBan? value}) {
     _tocDoBayNguyenBan = value;
     return;
   }
@@ -152,7 +152,7 @@ class VIENDANTANCONGXAMCHIEMCOBAN with KhungThucThiCoBan, DanhSachQuanLyTrangTha
   TocDoBayCoBan? _tocDoBayTangCuong;
   TocDoBayCoBan? get getTocDoBayTangCuong => _tocDoBayTangCuong;
   TocDoBayCoBan get getTocDoBayTangCuongNotNull => _tocDoBayTangCuong ?? TocDoBayCoBan.onMacDinh();
-  Future<void> caiDatTocDoBayTangCuong({required TocDoBayCoBan? value}) async {
+  void onVoidCaiDatTocDoBayTangCuong({required TocDoBayCoBan? value}) {
     _tocDoBayTangCuong = value;
     return;
   }
@@ -551,7 +551,7 @@ class VIENDANTANCONGXAMCHIEMCOBAN with KhungThucThiCoBan, DanhSachQuanLyTrangTha
   ThoiGianKichHoatCoBan? _thoiGianKichHoat;
   ThoiGianKichHoatCoBan? get getThoiGianKichHoat => _thoiGianKichHoat;
   ThoiGianKichHoatCoBan get getThoiGianKichHoatNotNull => _thoiGianKichHoat ?? ThoiGianKichHoatCoBan.onMacDinh();
-  Future<void> caiDatThoiGianKichHoat({required ThoiGianKichHoatCoBan? value}) async {
+  Future<void> onVoidCaiDatThoiGianKichHoat({required ThoiGianKichHoatCoBan? value}) async {
     _thoiGianKichHoat = value;
     return;
   }
@@ -651,10 +651,10 @@ class VIENDANTANCONGXAMCHIEMCOBAN with KhungThucThiCoBan, DanhSachQuanLyTrangTha
     caiDatBienDuoiViTriLayMucTieu(value: 0);
     caiDatChieuRongManHinhPhiVatLy(value: 0);
     caiDatChieuCaoManHinhPhiVatLy(value: 0);
-    caiDatThoiGianKichHoat(value: ThoiGianKichHoatCoBan.onMacDinh());
+    onVoidCaiDatThoiGianKichHoat(value: ThoiGianKichHoatCoBan.onMacDinh());
     caiDatDinhHuongBay(value: DinhHuongBayCoBan.onMacDinh());
-    caiDatTocDoBayNguyenBan(value: TocDoBayCoBan.onMacDinh());
-    caiDatTocDoBayTangCuong(value: null);
+    onVoidCaiDatTocDoBayNguyenBan(value: TocDoBayCoBan.onMacDinh());
+    onVoidCaiDatTocDoBayTangCuong(value: null);
     caiDatTrangThaiTonTai(value: TrangThaiTonTaiCoBan.onMacDinh());
     caiDatMaDinhDanhDoiTuongMucTieuNguyenBan();
 
@@ -944,7 +944,7 @@ class VIENDANTANCONGXAMCHIEMCOBAN with KhungThucThiCoBan, DanhSachQuanLyTrangTha
       dy: getDy,
     );
 
-    // await getDieuKhienTinhToanTongQuat?.getTinhToanSatThuongHuongDenPhuongTien?.onSatThuongVuKhiTanCongCoBan(
+    // await getDieuKhienTinhToanTongQuat?.getTinhToanSatThuongHuongDenPhuongTien?.onVoidSatThuongVuKhiTanCongCoBan(
     //   phuongTien: phuongTien,
     //   toaDoVaCham: toaDoVaCham,
     // );
@@ -956,7 +956,7 @@ class VIENDANTANCONGXAMCHIEMCOBAN with KhungThucThiCoBan, DanhSachQuanLyTrangTha
   /// TODO: Hàm Điều Khiển Di Chuyển
   /// -----
   Future<void> onDieuKhienDiChuyen({required int chiSoTangTienTheoThoiGianThuc}) async {
-    if (await getTrangThaiTonTai?.isKhoiTaoHoanTat() == true) {
+    if (await getTrangThaiTonTai?.onCheckBoolKhoiTaoHoanTat() == true) {
       if (QuanLyDongThoiGianCoBan.onKiemTraKichHoat(
         chiSoKichHoat: getThoiGianKichHoatNotNull.getChiSoKichHoat,
         chiSoTangTienTheoThoiGianThuc: chiSoTangTienTheoThoiGianThuc,

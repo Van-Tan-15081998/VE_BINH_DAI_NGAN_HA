@@ -63,7 +63,7 @@ class TrangThaiTonTaiCoBan {
     return;
   }
 
-  bool isKhoiTaoHoanTat() {
+  bool onCheckBoolKhoiTaoHoanTat() {
     if (getTrangThai == '[KHOI_TAO_HOAN_TAT]') {
       return true;
     }

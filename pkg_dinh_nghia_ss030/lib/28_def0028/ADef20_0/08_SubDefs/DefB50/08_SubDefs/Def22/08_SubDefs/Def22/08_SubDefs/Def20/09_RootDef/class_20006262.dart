@@ -24,7 +24,7 @@ class PHUONGTHUCBAYPHUONGTIENTRINHSATCLASS50BSS02 extends MoHinhPhuongThucBayPhu
     await getThamSoBay?.caiDatDinhHuongLayMucTieu(value: DinhHuongLayMucTieuCoBan.onMacDinh());
 
     ///
-    await getThamSoBay?.caiDatThoiGianKichHoat(value: ThoiGianKichHoatCoBan.kichHoat10());
+    getThamSoBay?.onVoidCaiDatThoiGianKichHoat(value: ThoiGianKichHoatCoBan.kichHoat10());
 
     ///
     await getThamSoBay?.caiDatDanhSachDoanDuongBayThuocKichBanChienDau(value: []);

@@ -178,7 +178,7 @@ class QUANLYDIEUKHIENCHUYENKICHBANCHIENDAU with CauTrucThucThiCoBan, DanhSachQua
 
     await getNhiemVuChienDauChonChiDinh?.getMoHinh?.getKichBanChienDau?.getBangDieuKhienGiaiDoanThuocKichBan?.onLoop();
 
-    if (getTienTrinhTongQuat?.getTienTrinhThucThiChienDau?.getTrangThai?.getMoHinh?.isDangThucThi() == true) {
+    if (getTienTrinhTongQuat?.getTienTrinhThucThiChienDau?.getTrangThai?.getMoHinh?.onCheckBoolDangThucThi() == true) {
       if (getChienDauCoTongQuat
               ?.getChienDauCoTrucTiepThucThiChienDau
               ?.getTrangThai
@@ -202,7 +202,7 @@ class QUANLYDIEUKHIENCHUYENKICHBANCHIENDAU with CauTrucThucThiCoBan, DanhSachQua
     /// -----
     /// TODO: Nhận Định Chiến Thắng
     /// -----
-    if (getTienTrinhTongQuat?.getTienTrinhThucThiChienDau?.getTrangThai?.getMoHinh?.isDangThucThi() == true) {
+    if (getTienTrinhTongQuat?.getTienTrinhThucThiChienDau?.getTrangThai?.getMoHinh?.onCheckBoolDangThucThi() == true) {
       if (getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhTSTC?.getTrangThaiPhuongTienSS070?.getMoHinh?.getTrangThaiTrongChienDau?.getTrangThaiTonTai?.isHuyHoanTat() == true) {
         if (getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhTSTC?.getTrangThaiPhuongTienSS072?.getMoHinh?.getTrangThaiTrongChienDau?.getTrangThaiTonTai?.isHuyHoanTat() == true) {
           if (getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhTSTC?.getTrangThaiPhuongTienSS074?.getMoHinh?.getTrangThaiTrongChienDau?.getTrangThaiTonTai?.isHuyHoanTat() == true) {

@@ -748,7 +748,7 @@ abstract class VIENDANTANCONGCOBAN with CauTrucThucThiCoBan {
     /// -----
     _duLieuJsonSuKienVaCham['[CHIEU_RONG_MAN_HINH_PHI_VAT_LY]'] = getChieuRongManHinhPhiVatLy ?? 0;
     _duLieuJsonSuKienVaCham['[CHIEU_CAO_MAN_HINH_PHI_VAT_LY]'] = getChieuCaoManHinhPhiVatLy ?? 0;
-    _duLieuJsonSuKienVaCham['[TRANG_THAI_TON_TAI]'] = getTrangThaiTonTai?.isKhoiTaoHoanTat() ?? false;
+    _duLieuJsonSuKienVaCham['[TRANG_THAI_TON_TAI]'] = getTrangThaiTonTai?.onCheckBoolKhoiTaoHoanTat() ?? false;
     _duLieuJsonSuKienVaCham['[CHIEU_RONG_THAN]'] = getChieuRongThan ?? 0;
     _duLieuJsonSuKienVaCham['[CHIEU_CAO_THAN]'] = getChieuCaoThan ?? 0;
     _duLieuJsonSuKienVaCham['[DX_TRONG_TAM]'] = getDxTrongTam ?? 0;
@@ -782,7 +782,7 @@ abstract class VIENDANTANCONGCOBAN with CauTrucThucThiCoBan {
     /// -----
     getDuLieuJsonLamPhang['[CHIEU_RONG_MAN_HINH_PHI_VAT_LY]'] = getChieuRongManHinhPhiVatLy ?? 0;
     getDuLieuJsonLamPhang['[CHIEU_CAO_MAN_HINH_PHI_VAT_LY]'] = getChieuCaoManHinhPhiVatLy ?? 0;
-    getDuLieuJsonLamPhang['[TRANG_THAI_TON_TAI]'] = getTrangThaiTonTai?.isKhoiTaoHoanTat() ?? false;
+    getDuLieuJsonLamPhang['[TRANG_THAI_TON_TAI]'] = getTrangThaiTonTai?.onCheckBoolKhoiTaoHoanTat() ?? false;
     getDuLieuJsonLamPhang['[CHIEU_RONG_THAN]'] = getChieuRongThan ?? 0;
     getDuLieuJsonLamPhang['[CHIEU_CAO_THAN]'] = getChieuCaoThan ?? 0;
     getDuLieuJsonLamPhang['[DX_TRONG_TAM]'] = getDxTrongTam ?? 0;
@@ -882,7 +882,7 @@ abstract class VIENDANTANCONGCOBAN with CauTrucThucThiCoBan {
   ThoiGianKichHoatCoBan? _thoiGianKichHoat;
   ThoiGianKichHoatCoBan? get getThoiGianKichHoat => _thoiGianKichHoat;
   ThoiGianKichHoatCoBan get getThoiGianKichHoatNotNull => _thoiGianKichHoat ?? ThoiGianKichHoatCoBan.onMacDinh();
-  Future<void> caiDatThoiGianKichHoat({required ThoiGianKichHoatCoBan? value}) async {
+  Future<void> onVoidCaiDatThoiGianKichHoat({required ThoiGianKichHoatCoBan? value}) async {
     _thoiGianKichHoat = value;
     return;
   }

@@ -38,8 +38,10 @@ class KhungVongLapSS01PkgManHinhSS00226 extends Component with VongLapThoiGianCo
     // }
 
     if (getTrangThaiTongQuat?.getThietLapTongQuat?.onKiemTraChoPhepCapNhatTheoTocDoKhungHinh(
-        maDinhDanh: '[VONG_LAP_NHAN_DINH_SU_KIEN_VA_CHAM]',
-        chiSoTangTienGiamTanXuatCapNhat: getChiSoTangTienTheoThoiGianThuc) == true) {
+          maDinhDanh: '[VONG_LAP_NHAN_DINH_SU_KIEN_VA_CHAM]',
+          chiSoTangTienGiamTanXuatCapNhat: getChiSoTangTienTheoThoiGianThuc,
+        ) ==
+        true) {
       return true;
     }
 
@@ -50,28 +52,41 @@ class KhungVongLapSS01PkgManHinhSS00226 extends Component with VongLapThoiGianCo
 
   @override
   FutureOr<void> update(double dt) async {
+    ///
+    ///
+    /// TODO: Chạy Vòng Loop
+    ///
+    ///
 
-      ///
-      ///
-      /// TODO: Chạy Vòng Loop
-      ///
-      ///
+    onVoidCapNhatChiSoTangTienTheoThoiGianThuc();
+    // if (onBoolKiemTraTanXuatCapNhat() == false) {
+    //   return;
+    // }
 
-      onVoidCapNhatChiSoTangTienTheoThoiGianThuc();
-      if (onBoolKiemTraTanXuatCapNhat() == false) {
-        return;
+    try {
+      if (getChiSoTangTienTheoThoiGianThuc % 10 == 0) {
+        // if (getChiSoTangTienTheoThoiGianThuc % 6 == 4) {
+        getTrangThaiTongQuat?.getSuKienVaChamThuocPhuongTien?.onVoidLoopOnTimelineSS010();
+      } else if (getChiSoTangTienTheoThoiGianThuc % 10 == 5) {
+        // else if (getChiSoTangTienTheoThoiGianThuc % 6 == 1) {
+        getTrangThaiTongQuat?.getSuKienVaChamThuocPhuongTien?.onVoidLoopOnTimelineSS020();
       }
-      try {
-        await getTrangThaiTongQuat?.getSuKienVaChamThuocPhuongTien?.onLoop().timeout(
-        Duration(milliseconds: 20),
-        onTimeout: () {
-          print('⏰ Quá thời gian!');
-          return 'Giá trị mặc định';
-        },
-      );
-      } catch (e) {
-        print('❌ Lỗi: $e');
-      }
-
+    } catch (e) {
+      print('❌ Lỗi: $e');
+    }
+    // try {
+    //   stopwatch = Stopwatch();
+    //   stopwatch?.start();
+    //   await getTrangThaiTongQuat?.getSuKienVaChamThuocPhuongTien?.onLoop().timeout(
+    //     Duration(milliseconds: 20),
+    //     onTimeout: () {
+    //       stopwatch?.stop();
+    //       print('⏰ Quá thời gian!: ${stopwatch?.elapsedMilliseconds}ms');
+    //       return 'Giá trị mặc định';
+    //     },
+    //   );
+    // } catch (e) {
+    //   print('❌ Lỗi: $e');
+    // }
   }
 }

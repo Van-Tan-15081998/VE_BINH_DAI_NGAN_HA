@@ -68,7 +68,7 @@ class TienTrinhThucThiCoBan {
     return;
   }
 
-  bool isDangThucThi() {
+  bool onCheckBoolDangThucThi() {
     if (getTrangThai == '[TRANG_THAI_DANG_THUC_THI]') {
       return true;
     }

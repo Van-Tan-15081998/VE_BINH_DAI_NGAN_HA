@@ -103,7 +103,7 @@ class KhungHinhNenBangDieuKhienDoiHinhDauSyTienPhong extends PositionComponent {
     /// TODO:
     /// -----
     if (position.x != _bienTraiCapNhatKhungHinhNen) {
-      position.setValues(_bienTraiCapNhatKhungHinhNen ?? 0, position.y);
+      position.x = _bienTraiCapNhatKhungHinhNen ?? 0;
     }
 
     /// -----
