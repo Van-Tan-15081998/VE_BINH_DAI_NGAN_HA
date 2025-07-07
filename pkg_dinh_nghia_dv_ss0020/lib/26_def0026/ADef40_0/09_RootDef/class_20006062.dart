@@ -54,7 +54,7 @@ class THUOCTINHHIEUUNGAMTHANHSUKIENVACHAMTRONGCHIENDAU with CauTrucThucThiCoBan 
     /// -----
     /// TODO:
     /// -----
-    await caiDatSuKienVaChamVatPhamPhanThuong(value: THUOCTINHHIEUUNGAMTHANHSUKIENVACHAMVATPHAMPHANTHUONG());
+    await caiDatSuKienVaChamVatPhamPhanThuong(value: THUOCTINHHIEUUNGAMTHANHSUKIENVACHAMVATPHAM());
 
     /// -----
     /// TODO: Setup Root For SubCom
@@ -193,9 +193,9 @@ class THUOCTINHHIEUUNGAMTHANHSUKIENVACHAMTRONGCHIENDAU with CauTrucThucThiCoBan 
   /// -----
   /// TODO: Sự Kiện Va Chạm Phá Hủy
   /// -----
-  THUOCTINHHIEUUNGAMTHANHSUKIENVACHAMVATPHAMPHANTHUONG? _suKienVaChamVatPhamPhanThuong;
-  THUOCTINHHIEUUNGAMTHANHSUKIENVACHAMVATPHAMPHANTHUONG? get getSuKienVaChamVatPhamPhanThuong => _suKienVaChamVatPhamPhanThuong;
-  Future<void> caiDatSuKienVaChamVatPhamPhanThuong({required THUOCTINHHIEUUNGAMTHANHSUKIENVACHAMVATPHAMPHANTHUONG? value, bool? caiDatUuTien}) async {
+  THUOCTINHHIEUUNGAMTHANHSUKIENVACHAMVATPHAM? _suKienVaChamVatPhamPhanThuong;
+  THUOCTINHHIEUUNGAMTHANHSUKIENVACHAMVATPHAM? get getSuKienVaChamVatPhamPhanThuong => _suKienVaChamVatPhamPhanThuong;
+  Future<void> caiDatSuKienVaChamVatPhamPhanThuong({required THUOCTINHHIEUUNGAMTHANHSUKIENVACHAMVATPHAM? value, bool? caiDatUuTien}) async {
     if (caiDatUuTien == true) {
       _suKienVaChamVatPhamPhanThuong = value;
     } else {

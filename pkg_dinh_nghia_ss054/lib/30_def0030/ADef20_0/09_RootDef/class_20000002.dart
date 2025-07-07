@@ -15,6 +15,8 @@ class TinhToanSatThuongHuongDenPhuongTien with CauTrucThucThiCoBan, DanhSachQuan
   @override
   Future<void> onAttachRoot({required dynamic attachValue}) async {
     if (attachValue is QuanLyTrangThaiTongQuat) {
+      await caiDatDichVuMayPhatAmThanh(value: attachValue.getDichVuMayPhatAmThanh);
+
       await caiDatSuKienVaChamTrongChienDau(value: attachValue.getSuKienVaChamTrongChienDau);
 
       ///
@@ -118,7 +120,7 @@ class TinhToanSatThuongHuongDenPhuongTien with CauTrucThucThiCoBan, DanhSachQuan
   /// -----
   /// TODO:
   /// -----
-  void onVoidSatThuongVuKhiTanCongCoBan({required MoHinhPhuongTienTongQuat? phuongTien, required DiemToaDoHoanHaoCoBan? toaDoVaCham}) {
+  void onVoidSatThuongVuKhiTanCongCoBan({required MoHinhPhuongTienTongQuat? phuongTien, required DiemToaDoHoanHaoCoBan? toaDoVaCham}) async {
     double chiSoSatThuongCoBan =
         getTrungTamVanHanhThuocTinhChienDauTheoQuyChuan?.getCapDoSatThuongCoBanVKSCHienHanh?.getCapDoChuanChinhThuc?.getChiSoTheoCapDo?.getChiSoSatThuongVanHanh ?? 0;
     double chiSoTyLeBaoKich =
@@ -148,6 +150,71 @@ class TinhToanSatThuongHuongDenPhuongTien with CauTrucThucThiCoBan, DanhSachQuan
       if (phuongTien is MOHINHPHUONGTIENVUKHIDIEUKHIEN) {
         phuongTien.getDuLieuJsonLamPhang['[TAN_CONG_HIEN_THI]'] = false;
       }
+
+      ///
+       /// TODO: Vật Phẩm Tăng Cường Hồi Máu
+       ///
+      if (phuongTien is PHUONGTIENVATPHAMTANGCUONGCLASSSS00ASS010SS010) {
+        ///
+
+        await getDichVuMayPhatAmThanh?.getHieuUngAmThanhSuKienVaChamTrongChienDau?.getSuKienVaChamVatPhamPhanThuong?.getHieuUngAmThanhVaChamCoBanSS07?.onPlay();
+
+        await getTrungTamVanHanhThuocTinhChienDauTheoQuyChuan
+            ?.getCapDoMauToiDaHienHanh
+            ?.getCapDoChuanChinhThuc
+            ?.getChiSoTheoCapDo
+            ?.onTangCuong05PhanTramChiSoMauToiDaVanHanh();
+
+        // await getGlobalState?.getChienDauCoTongQuat
+        //     ?.getChienDauCoTrucTiepThucThiChienDau
+        //     ?.getTrangThai
+        //     ?.getMoHinh
+        //     ?.getThuocTinhChienDauTheoQuyChuan
+        //     ?.getThuocTinhChienDauSinhTon
+        //     ?.getThuocTinhMauToiDa
+        //     ?.getCapDoMauToiDaHienHanh
+        //     ?.getCapDoChuanChinhThuc
+        //     ?.getChiSoTheoCapDo
+        //     ?.onTangCuong05PhanTramChiSoMauToiDaVanHanh();
+      }
+
+       ///
+       /// TODO: Vật Phẩm Tăng Cường Sát Thương
+       ///
+       if (phuongTien is PHUONGTIENVATPHAMTANGCUONGCLASSSS00ASS020SS010) {
+         ///
+
+         await getTrungTamVanHanhThuocTinhChienDauTheoQuyChuan
+             ?.getCapDoSatThuongCoBanVKSCHienHanh
+             ?.getCapDoChuanChinhThuc
+             ?.getChiSoTheoCapDo
+             ?.onTangCuong05PhanTramChiSoSatThuongVanHanh();
+
+         // await getGlobalState?.getChienDauCoTongQuat
+         //     ?.getChienDauCoTrucTiepThucThiChienDau
+         //     ?.getTrangThai
+         //     ?.getMoHinh
+         //     ?.getThuocTinhChienDauTheoQuyChuan
+         //     ?.getThuocTinhChienDauTanCong
+         //     ?.getThuocTinhVuKhiSungChinh
+         //     ?.getCapDoSatThuongHienHanh
+         //     ?.getCapDoChuanChinhThuc
+         //     ?.getChiSoTheoCapDo
+         //     ?.onTangCuong05PhanTramChiSoMauToiDaVanHanh();
+
+         await getDichVuMayPhatAmThanh?.getHieuUngAmThanhSuKienVaChamTrongChienDau?.getSuKienVaChamVatPhamPhanThuong?.getHieuUngAmThanhVaChamCoBanSS08?.onPlay();
+
+       }
+
+       ///
+       /// TODO: Vật Phẩm Tăng Cường Tốc Độ Bắn
+       ///
+       if (phuongTien is PHUONGTIENVATPHAMTANGCUONGCLASSSS00ASS030SS010) {
+         ///
+
+         await getDichVuMayPhatAmThanh?.getHieuUngAmThanhSuKienVaChamTrongChienDau?.getSuKienVaChamVatPhamPhanThuong?.getHieuUngAmThanhVaChamCoBanSS09?.onPlay();
+
+       }
 
       DiemToaDoHoanHaoCoBan diemToaDoTrungTam = DiemToaDoHoanHaoCoBan(maDinhDanh: '', dx: 0, dy: 0);
 

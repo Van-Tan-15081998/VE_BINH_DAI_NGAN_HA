@@ -4,7 +4,7 @@ import 'package:pkg_man_hinh_ss00240/pkg_man_hinh_ss00240_exp.dart';
 /// TODO:
 /// -----
 class SpriteHatVaChamCongKichSS26 extends SpriteHatVaChamCoBan {
-  SpriteHatVaChamCongKichSS26({required super.trangThaiTongQuat});
+  SpriteHatVaChamCongKichSS26({required super.trangThaiTongQuat, required super.parentComponent});
 
   /// -----
   /// TODO: Init Root
@@ -30,10 +30,12 @@ class SpriteHatVaChamCongKichSS26 extends SpriteHatVaChamCoBan {
   }
 
   @override
-  Future<void> caiDatMoHinhChiTiet() async {
+  Future<void> onCaiDatMoHinhChiTiet() async {
     await caiDatMoHinh(
       value: getTrangThaiTongQuat?.getSuKienVaChamTrongChienDau?.getSuKienVaChamCongKich?.getHatVaChamSS26,
     );
+
+    await getMoHinh?.onCaiDatSpriteHatVaCham(value: this);
 
     return;
   }

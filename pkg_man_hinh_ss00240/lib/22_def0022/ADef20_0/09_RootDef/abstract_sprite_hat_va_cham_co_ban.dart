@@ -12,8 +12,9 @@ abstract class SpriteHatVaChamCoBan extends SpriteAnimationComponent with HasVis
   /// -----
   /// TODO:
   /// -----
-  SpriteHatVaChamCoBan({required QuanLyTrangThaiTongQuat? trangThaiTongQuat}) {
+  SpriteHatVaChamCoBan({required QuanLyTrangThaiTongQuat? trangThaiTongQuat, required Component? parentComponent}) {
     caiDatTrangThaiTongQuat(value: trangThaiTongQuat);
+    caiDatParentComponent(value: parentComponent);
   }
 
   /// -----
@@ -22,9 +23,9 @@ abstract class SpriteHatVaChamCoBan extends SpriteAnimationComponent with HasVis
   Future<void> onInitRoot() async {
     onVoidCaiDatKiemTraHienThi(value: false);
 
-    await caiDatDonViSprite(value: DonViSpriteCoBan(maDinhDanh: null, nguonHinhAnh: null,  spriteAnimation: null, sprite: null));
+    await caiDatDonViSprite(value: DonViSpriteCoBan(maDinhDanh: null, nguonHinhAnh: null, spriteAnimation: null, sprite: null));
 
-    await caiDatMoHinhChiTiet();
+    await onCaiDatMoHinhChiTiet();
 
     return;
   }
@@ -53,6 +54,44 @@ abstract class SpriteHatVaChamCoBan extends SpriteAnimationComponent with HasVis
   DonViSpriteCoBan? get getDonViSprite => _donViSprite;
   Future<void> caiDatDonViSprite({required DonViSpriteCoBan? value}) async {
     _donViSprite ??= value;
+    return;
+  }
+
+  /// -----
+  /// TODO:
+  /// -----
+  Component? _parentComponent;
+  Component? get getParentComponent => _parentComponent;
+  Future<void> caiDatParentComponent({required Component? value}) async {
+    _parentComponent ??= value;
+    return;
+  }
+
+  Future<void> onAddToParent() async {
+    if (getParentComponent != null && isMounted == false) {
+      await Future.delayed(Duration.zero);
+      await getParentComponent?.add(this);
+
+      animationTicker?.reset();
+
+      // isVisible = true;
+    }
+
+    return;
+  }
+
+  Future<void> onRemoveFromParent() async {
+    if (isMounted == true) {
+      await Future.delayed(Duration.zero);
+      isVisible = false;
+
+      removeFromParent();
+
+      // if (animationTicker != null && animationTicker!.currentIndex > 0) {
+      //   animationTicker!.currentIndex = 0;
+      // }
+    }
+
     return;
   }
 
@@ -108,7 +147,7 @@ abstract class SpriteHatVaChamCoBan extends SpriteAnimationComponent with HasVis
   /// TODO:
   /// -----
   void onVoidCapNhatKiemTraHienThi() {
-    if (getMoHinh?.getMoHinh?.getThuocTinhTichHop?.getTrangThaiTonTai?.onCheckBoolKhoiTaoHoanTat() == true) {
+    if (getMoHinh?.getMoHinh?.getThuocTinhTichHop?.getTrangThaiTonTai?.onCheckBoolDangKichHoat() == true) {
       /// -----
       /// TODO: Cài Đặt SpriteAnimation cho Hạt Va Chạm Mới
       /// -----
@@ -123,11 +162,13 @@ abstract class SpriteHatVaChamCoBan extends SpriteAnimationComponent with HasVis
             maDinhDanhPhuongTien: getMoHinh?.getMoHinh?.getMaDinhDanh,
           );
           animation = getDonViSprite?.getSpriteAnimation;
+          animation?.loop = false;
 
           onVoidCaiDatKiemTraHienThi(value: true);
         } else {
           if (animation == null) {
             animation = getDonViSprite?.getSpriteAnimation;
+            animation?.loop = false;
           }
         }
       }
@@ -143,11 +184,13 @@ abstract class SpriteHatVaChamCoBan extends SpriteAnimationComponent with HasVis
             maDinhDanhPhuongTien: getMoHinh?.getMoHinh?.getMaDinhDanh,
           );
           animation = getDonViSprite?.getSpriteAnimation;
+          animation?.loop = false;
 
           onVoidCaiDatKiemTraHienThi(value: true);
         } else {
           if (animation == null) {
             animation = getDonViSprite?.getSpriteAnimation;
+            animation?.loop = false;
           }
         }
       }
@@ -155,12 +198,12 @@ abstract class SpriteHatVaChamCoBan extends SpriteAnimationComponent with HasVis
       if (getDonViSprite?.getSpriteAnimation != null) {
         getDonViSprite?.onVoidCaiDatSpriteAnimation(value: null);
       }
-       if (getKiemTraHienThi == true) {
-         onVoidCaiDatKiemTraHienThi(value: false);
-       }
-       if (animation != null) {
-         animation = null;
-       }
+      if (getKiemTraHienThi == true) {
+        onVoidCaiDatKiemTraHienThi(value: false);
+      }
+      if (animation != null) {
+        // animation = null;
+      }
     }
   }
 
@@ -204,7 +247,7 @@ abstract class SpriteHatVaChamCoBan extends SpriteAnimationComponent with HasVis
   /// -----
   /// TODO: Cài Đặt Mô Hình Chi Tiết
   /// -----
-  Future<void> caiDatMoHinhChiTiet();
+  Future<void> onCaiDatMoHinhChiTiet();
 
   /// -----
   /// TODO: Cập Nhật Position Và Size
@@ -228,6 +271,10 @@ abstract class SpriteHatVaChamCoBan extends SpriteAnimationComponent with HasVis
       if (size.x != chieuRongThan || size.y != chieuCaoThan) {
         size.setValues(chieuRongThan, chieuCaoThan);
       }
+
+      if (isVisible == false) {
+        isVisible = true;
+      }
     }
   }
 
@@ -249,13 +296,19 @@ abstract class SpriteHatVaChamCoBan extends SpriteAnimationComponent with HasVis
   }
 
   @override
-  void update(double dt) {
+  void update(double dt) async {
     super.update(dt);
 
     if (animationTicker?.isLastFrame == true) {
-      if (getMoHinh?.getMoHinh?.getThuocTinhTichHop?.getTrangThaiTonTai?.onCheckBoolKhoiTaoHoanTat() == true) {
-        getMoHinh?.getMoHinh?.getThuocTinhTichHop?.getTrangThaiTonTai?.caiDatHuyHoanTat();
-      }
+      await getMoHinh?.getSpriteHatVaCham?.onRemoveFromParent().then((_) async {
+        await getMoHinh?.getMoHinh?.getThuocTinhTichHop?.getTrangThaiTonTai?.caiDatHuyHoanTat();
+      });
+
+      // if (getMoHinh?.getMoHinh?.getThuocTinhTichHop?.getTrangThaiTonTai?.onCheckBoolDangKichHoat() == true) {
+      //   getMoHinh?.getMoHinh?.getThuocTinhTichHop?.getTrangThaiTonTai?.onVoidCaiDatHuyHoanTat();
+      // }
+
+      // await getMoHinh?.getSpriteHatVaCham?.onRemoveFromParent();
     }
 
     /// -----

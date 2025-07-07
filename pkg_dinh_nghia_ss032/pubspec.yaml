@@ -22,6 +22,9 @@ dependencies:
   pkg_dinh_nghia_dv_ss0020:
     path: ../pkg_dinh_nghia_dv_ss0020
 
+  pkg_man_hinh_ss00240:
+    path: ../pkg_man_hinh_ss00240
+
   flame: 1.25.0
 
 dev_dependencies:

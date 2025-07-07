@@ -35,6 +35,8 @@ class SpriteHatSatThuongVaChamCongKichSS30 extends SpriteHatSatThuongVaChamCoBan
       value: getTrangThaiTongQuat?.getSuKienVaChamTrongChienDau?.getSuKienVaChamCongKich?.getHatSatThuongVaChamSS30,
     );
 
+    // await getMoHinh?.onCaiDatSpriteHatVaCham(value: this);
+
     return;
   }
 }
