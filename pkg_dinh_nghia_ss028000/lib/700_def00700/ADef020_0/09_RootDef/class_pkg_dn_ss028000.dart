@@ -72,6 +72,33 @@ class QUANLYTRANGTHAIHANGARCHIENDAUCO with CAUTRUCTHUCTHICOBAN {
       /// TODO:
       /// -----
 
+      _trangThaiTaiTaiNguyenChienDauCo = TRANGTHAITAITAINGUYENCHIENDAUCO.onNguyenBan();
+
+      _trangThaiTaiTaiNguyenChienDauCo00E03SS010 = TRANGTHAITAITAINGUYENCHIENDAUCO.onNguyenBan();
+      _trangThaiTaiTaiNguyenChienDauCo00E03SS020 = TRANGTHAITAITAINGUYENCHIENDAUCO.onNguyenBan();
+      _trangThaiTaiTaiNguyenChienDauCo00E03SS030 = TRANGTHAITAITAINGUYENCHIENDAUCO.onNguyenBan();
+
+      _trangThaiTaiTaiNguyenChienDauCo00D04SS010 = TRANGTHAITAITAINGUYENCHIENDAUCO.onNguyenBan();
+
+      _trangThaiTaiTaiNguyenChienDauCo00C05SS010 = TRANGTHAITAITAINGUYENCHIENDAUCO.onNguyenBan();
+
+      _trangThaiTaiTaiNguyenChienDauCo00B06SS010 = TRANGTHAITAITAINGUYENCHIENDAUCO.onNguyenBan();
+
+      _trangThaiTaiTaiNguyenChienDauCo00A07SS010 = TRANGTHAITAITAINGUYENCHIENDAUCO.onNguyenBan();
+
+      _trangThaiTaiTaiNguyenChienDauCo00S08SS010 = TRANGTHAITAITAINGUYENCHIENDAUCO.onNguyenBan();
+
+      _trangThaiTaiTaiNguyenChienDauCo0SS09SS010 = TRANGTHAITAITAINGUYENCHIENDAUCO.onNguyenBan();
+      _trangThaiTaiTaiNguyenChienDauCo0SS09SS020 = TRANGTHAITAITAINGUYENCHIENDAUCO.onNguyenBan();
+      _trangThaiTaiTaiNguyenChienDauCo0SS09SS030 = TRANGTHAITAITAINGUYENCHIENDAUCO.onNguyenBan();
+
+      _trangThaiTaiTaiNguyenChienDauCoSSS10SS010 = TRANGTHAITAITAINGUYENCHIENDAUCO.onNguyenBan();
+      _trangThaiTaiTaiNguyenChienDauCoSSS10SS020 = TRANGTHAITAITAINGUYENCHIENDAUCO.onNguyenBan();
+      _trangThaiTaiTaiNguyenChienDauCoSSS10SS030 = TRANGTHAITAITAINGUYENCHIENDAUCO.onNguyenBan();
+      _trangThaiTaiTaiNguyenChienDauCoSSS10SS040 = TRANGTHAITAITAINGUYENCHIENDAUCO.onNguyenBan();
+      _trangThaiTaiTaiNguyenChienDauCoSSS10SS050 = TRANGTHAITAITAINGUYENCHIENDAUCO.onNguyenBan();
+
+
       await Future.wait([
         onVoidCaiDatThuocTinhTaiNguyenChienDauCo(value: THUOCTINHTAINGUYENCHIENDAUCO()).catchError((e) => null),
 
@@ -1651,6 +1678,8 @@ class QUANLYTRANGTHAIHANGARCHIENDAUCO with CAUTRUCTHUCTHICOBAN {
       value: getThuocTinhTaiNguyenChienDauCo?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhTheoMaDinhDanh(maDinhDanh: getChienDauCo00E03SS010?.getMaDinhDanhChienDauCo),
     );
 
+    await _trangThaiTaiTaiNguyenChienDauCo00E03SS010?.onVoidCaiDatTrangThaiHoanTatTai();
+
     ///
     return;
   }
@@ -1675,6 +1704,8 @@ class QUANLYTRANGTHAIHANGARCHIENDAUCO with CAUTRUCTHUCTHICOBAN {
     await getTrangThaiHangarTongQuat?.getChienDauCoDangCapSao00E03SS02?.getThuocTinh?.getThuocTinhHinhAnhSprite?.getDonViSpriteNgoaiHinhThanChienDauCo?.caiDatSpriteAnimation(
       value: getThuocTinhTaiNguyenChienDauCo?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhTheoMaDinhDanh(maDinhDanh: getChienDauCo00E03SS020?.getMaDinhDanhChienDauCo),
     );
+
+    await _trangThaiTaiTaiNguyenChienDauCo00E03SS020?.onVoidCaiDatTrangThaiHoanTatTai();
 
     ///
     return;
@@ -1701,6 +1732,8 @@ class QUANLYTRANGTHAIHANGARCHIENDAUCO with CAUTRUCTHUCTHICOBAN {
       value: getThuocTinhTaiNguyenChienDauCo?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhTheoMaDinhDanh(maDinhDanh: getChienDauCo00E03SS030?.getMaDinhDanhChienDauCo),
     );
 
+    await _trangThaiTaiTaiNguyenChienDauCo00E03SS030?.onVoidCaiDatTrangThaiHoanTatTai();
+
     ///
     return;
   }
@@ -1725,6 +1758,8 @@ class QUANLYTRANGTHAIHANGARCHIENDAUCO with CAUTRUCTHUCTHICOBAN {
     await getTrangThaiHangarTongQuat?.getChienDauCoDangCapSao00D04SS01?.getThuocTinh?.getThuocTinhHinhAnhSprite?.getDonViSpriteNgoaiHinhThanChienDauCo?.caiDatSpriteAnimation(
       value: getThuocTinhTaiNguyenChienDauCo?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhTheoMaDinhDanh(maDinhDanh: getChienDauCo00D04SS010?.getMaDinhDanhChienDauCo),
     );
+
+    await _trangThaiTaiTaiNguyenChienDauCo00D04SS010?.onVoidCaiDatTrangThaiHoanTatTai();
 
     ///
     return;
@@ -1751,6 +1786,8 @@ class QUANLYTRANGTHAIHANGARCHIENDAUCO with CAUTRUCTHUCTHICOBAN {
       value: getThuocTinhTaiNguyenChienDauCo?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhTheoMaDinhDanh(maDinhDanh: getChienDauCo00C05SS010?.getMaDinhDanhChienDauCo),
     );
 
+    await _trangThaiTaiTaiNguyenChienDauCo00C05SS010?.onVoidCaiDatTrangThaiHoanTatTai();
+
     ///
     return;
   }
@@ -1775,6 +1812,8 @@ class QUANLYTRANGTHAIHANGARCHIENDAUCO with CAUTRUCTHUCTHICOBAN {
     await getTrangThaiHangarTongQuat?.getChienDauCoDangCapSao00B06SS01?.getThuocTinh?.getThuocTinhHinhAnhSprite?.getDonViSpriteNgoaiHinhThanChienDauCo?.caiDatSpriteAnimation(
       value: getThuocTinhTaiNguyenChienDauCo?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhTheoMaDinhDanh(maDinhDanh: getChienDauCo00B06SS010?.getMaDinhDanhChienDauCo),
     );
+
+    await _trangThaiTaiTaiNguyenChienDauCo00B06SS010?.onVoidCaiDatTrangThaiHoanTatTai();
 
     ///
     return;
@@ -1801,6 +1840,8 @@ class QUANLYTRANGTHAIHANGARCHIENDAUCO with CAUTRUCTHUCTHICOBAN {
       value: getThuocTinhTaiNguyenChienDauCo?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhTheoMaDinhDanh(maDinhDanh: getChienDauCo00A07SS010?.getMaDinhDanhChienDauCo),
     );
 
+    await _trangThaiTaiTaiNguyenChienDauCo00A07SS010?.onVoidCaiDatTrangThaiHoanTatTai();
+
     ///
     return;
   }
@@ -1825,6 +1866,8 @@ class QUANLYTRANGTHAIHANGARCHIENDAUCO with CAUTRUCTHUCTHICOBAN {
     await getTrangThaiHangarTongQuat?.getChienDauCoDangCapSao00S08SS01?.getThuocTinh?.getThuocTinhHinhAnhSprite?.getDonViSpriteNgoaiHinhThanChienDauCo?.caiDatSpriteAnimation(
       value: getThuocTinhTaiNguyenChienDauCo?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhTheoMaDinhDanh(maDinhDanh: getChienDauCo00S08SS010?.getMaDinhDanhChienDauCo),
     );
+
+    await _trangThaiTaiTaiNguyenChienDauCo00S08SS010?.onVoidCaiDatTrangThaiHoanTatTai();
 
     ///
     return;
@@ -1851,6 +1894,8 @@ class QUANLYTRANGTHAIHANGARCHIENDAUCO with CAUTRUCTHUCTHICOBAN {
       value: getThuocTinhTaiNguyenChienDauCo?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhTheoMaDinhDanh(maDinhDanh: getChienDauCo0SS09SS010?.getMaDinhDanhChienDauCo),
     );
 
+    await _trangThaiTaiTaiNguyenChienDauCo0SS09SS010?.onVoidCaiDatTrangThaiHoanTatTai();
+
     ///
     return;
   }
@@ -1875,6 +1920,8 @@ class QUANLYTRANGTHAIHANGARCHIENDAUCO with CAUTRUCTHUCTHICOBAN {
     await getTrangThaiHangarTongQuat?.getChienDauCoDangCapSao0SS09SS02?.getThuocTinh?.getThuocTinhHinhAnhSprite?.getDonViSpriteNgoaiHinhThanChienDauCo?.caiDatSpriteAnimation(
       value: getThuocTinhTaiNguyenChienDauCo?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhTheoMaDinhDanh(maDinhDanh: getChienDauCo0SS09SS020?.getMaDinhDanhChienDauCo),
     );
+
+    await _trangThaiTaiTaiNguyenChienDauCo0SS09SS020?.onVoidCaiDatTrangThaiHoanTatTai();
 
     ///
     return;
@@ -1901,6 +1948,8 @@ class QUANLYTRANGTHAIHANGARCHIENDAUCO with CAUTRUCTHUCTHICOBAN {
       value: getThuocTinhTaiNguyenChienDauCo?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhTheoMaDinhDanh(maDinhDanh: getChienDauCo0SS09SS030?.getMaDinhDanhChienDauCo),
     );
 
+    await _trangThaiTaiTaiNguyenChienDauCo0SS09SS030?.onVoidCaiDatTrangThaiHoanTatTai();
+
     ///
     return;
   }
@@ -1925,6 +1974,8 @@ class QUANLYTRANGTHAIHANGARCHIENDAUCO with CAUTRUCTHUCTHICOBAN {
     await getTrangThaiHangarTongQuat?.getChienDauCoDangCapSaoSSS10SS01?.getThuocTinh?.getThuocTinhHinhAnhSprite?.getDonViSpriteNgoaiHinhThanChienDauCo?.caiDatSpriteAnimation(
       value: getThuocTinhTaiNguyenChienDauCo?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhTheoMaDinhDanh(maDinhDanh: getChienDauCoSSS10SS010?.getMaDinhDanhChienDauCo),
     );
+
+    await _trangThaiTaiTaiNguyenChienDauCoSSS10SS010?.onVoidCaiDatTrangThaiHoanTatTai();
 
     ///
     return;
@@ -1951,6 +2002,8 @@ class QUANLYTRANGTHAIHANGARCHIENDAUCO with CAUTRUCTHUCTHICOBAN {
       value: getThuocTinhTaiNguyenChienDauCo?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhTheoMaDinhDanh(maDinhDanh: getChienDauCoSSS10SS020?.getMaDinhDanhChienDauCo),
     );
 
+    await _trangThaiTaiTaiNguyenChienDauCoSSS10SS020?.onVoidCaiDatTrangThaiHoanTatTai();
+
     ///
     return;
   }
@@ -1975,6 +2028,8 @@ class QUANLYTRANGTHAIHANGARCHIENDAUCO with CAUTRUCTHUCTHICOBAN {
     await getTrangThaiHangarTongQuat?.getChienDauCoDangCapSaoSSS10SS03?.getThuocTinh?.getThuocTinhHinhAnhSprite?.getDonViSpriteNgoaiHinhThanChienDauCo?.caiDatSpriteAnimation(
       value: getThuocTinhTaiNguyenChienDauCo?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhTheoMaDinhDanh(maDinhDanh: getChienDauCoSSS10SS030?.getMaDinhDanhChienDauCo),
     );
+
+    await _trangThaiTaiTaiNguyenChienDauCoSSS10SS030?.onVoidCaiDatTrangThaiHoanTatTai();
 
     ///
     return;
@@ -2001,6 +2056,8 @@ class QUANLYTRANGTHAIHANGARCHIENDAUCO with CAUTRUCTHUCTHICOBAN {
       value: getThuocTinhTaiNguyenChienDauCo?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhTheoMaDinhDanh(maDinhDanh: getChienDauCoSSS10SS040?.getMaDinhDanhChienDauCo),
     );
 
+    await _trangThaiTaiTaiNguyenChienDauCoSSS10SS040?.onVoidCaiDatTrangThaiHoanTatTai();
+
     ///
     return;
   }
@@ -2026,59 +2083,188 @@ class QUANLYTRANGTHAIHANGARCHIENDAUCO with CAUTRUCTHUCTHICOBAN {
       value: getThuocTinhTaiNguyenChienDauCo?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhTheoMaDinhDanh(maDinhDanh: getChienDauCoSSS10SS050?.getMaDinhDanhChienDauCo),
     );
 
+    await _trangThaiTaiTaiNguyenChienDauCoSSS10SS050?.onVoidCaiDatTrangThaiHoanTatTai();
+
     ///
     return;
   }
 
+  TRANGTHAITAITAINGUYENCHIENDAUCO? _trangThaiTaiTaiNguyenChienDauCo;
+
+  TRANGTHAITAITAINGUYENCHIENDAUCO? _trangThaiTaiTaiNguyenChienDauCo00E03SS010;
+  TRANGTHAITAITAINGUYENCHIENDAUCO? _trangThaiTaiTaiNguyenChienDauCo00E03SS020;
+  TRANGTHAITAITAINGUYENCHIENDAUCO? _trangThaiTaiTaiNguyenChienDauCo00E03SS030;
+
+  TRANGTHAITAITAINGUYENCHIENDAUCO? _trangThaiTaiTaiNguyenChienDauCo00D04SS010;
+
+  TRANGTHAITAITAINGUYENCHIENDAUCO? _trangThaiTaiTaiNguyenChienDauCo00C05SS010;
+
+  TRANGTHAITAITAINGUYENCHIENDAUCO? _trangThaiTaiTaiNguyenChienDauCo00B06SS010;
+
+  TRANGTHAITAITAINGUYENCHIENDAUCO? _trangThaiTaiTaiNguyenChienDauCo00A07SS010;
+
+  TRANGTHAITAITAINGUYENCHIENDAUCO? _trangThaiTaiTaiNguyenChienDauCo00S08SS010;
+
+  TRANGTHAITAITAINGUYENCHIENDAUCO? _trangThaiTaiTaiNguyenChienDauCo0SS09SS010;
+  TRANGTHAITAITAINGUYENCHIENDAUCO? _trangThaiTaiTaiNguyenChienDauCo0SS09SS020;
+  TRANGTHAITAITAINGUYENCHIENDAUCO? _trangThaiTaiTaiNguyenChienDauCo0SS09SS030;
+
+  TRANGTHAITAITAINGUYENCHIENDAUCO? _trangThaiTaiTaiNguyenChienDauCoSSS10SS010;
+  TRANGTHAITAITAINGUYENCHIENDAUCO? _trangThaiTaiTaiNguyenChienDauCoSSS10SS020;
+  TRANGTHAITAITAINGUYENCHIENDAUCO? _trangThaiTaiTaiNguyenChienDauCoSSS10SS030;
+  TRANGTHAITAITAINGUYENCHIENDAUCO? _trangThaiTaiTaiNguyenChienDauCoSSS10SS040;
+  TRANGTHAITAITAINGUYENCHIENDAUCO? _trangThaiTaiTaiNguyenChienDauCoSSS10SS050;
+
+  Future<void> onSanSangTaiTaiNguyenChienDauCo() async {
+    await _trangThaiTaiTaiNguyenChienDauCo?.onVoidCaiDatTrangThaiSanSangTai();
+
+    _trangThaiTaiTaiNguyenChienDauCo00E03SS010?.onVoidCaiDatTrangThaiSanSangTai();
+    _trangThaiTaiTaiNguyenChienDauCo00E03SS020?.onVoidCaiDatTrangThaiSanSangTai();
+    _trangThaiTaiTaiNguyenChienDauCo00E03SS030?.onVoidCaiDatTrangThaiSanSangTai();
+
+    _trangThaiTaiTaiNguyenChienDauCo00D04SS010?.onVoidCaiDatTrangThaiSanSangTai();
+
+    _trangThaiTaiTaiNguyenChienDauCo00C05SS010?.onVoidCaiDatTrangThaiSanSangTai();
+
+    _trangThaiTaiTaiNguyenChienDauCo00B06SS010?.onVoidCaiDatTrangThaiSanSangTai();
+
+    _trangThaiTaiTaiNguyenChienDauCo00A07SS010?.onVoidCaiDatTrangThaiSanSangTai();
+
+    _trangThaiTaiTaiNguyenChienDauCo00S08SS010?.onVoidCaiDatTrangThaiSanSangTai();
+
+    _trangThaiTaiTaiNguyenChienDauCo0SS09SS010?.onVoidCaiDatTrangThaiSanSangTai();
+    _trangThaiTaiTaiNguyenChienDauCo0SS09SS020?.onVoidCaiDatTrangThaiSanSangTai();
+    _trangThaiTaiTaiNguyenChienDauCo0SS09SS030?.onVoidCaiDatTrangThaiSanSangTai();
+
+    _trangThaiTaiTaiNguyenChienDauCoSSS10SS010?.onVoidCaiDatTrangThaiSanSangTai();
+    _trangThaiTaiTaiNguyenChienDauCoSSS10SS020?.onVoidCaiDatTrangThaiSanSangTai();
+    _trangThaiTaiTaiNguyenChienDauCoSSS10SS030?.onVoidCaiDatTrangThaiSanSangTai();
+    _trangThaiTaiTaiNguyenChienDauCoSSS10SS040?.onVoidCaiDatTrangThaiSanSangTai();
+    _trangThaiTaiTaiNguyenChienDauCoSSS10SS050?.onVoidCaiDatTrangThaiSanSangTai();
+
+    return;
+  }
+
   Future<void> onTaiTaiNguyenChienDauCo() async {
-    await Future.delayed(Duration.zero);
-    await onTaiTaiNguyenChienDauCo00E03SS010();
+    if (_trangThaiTaiTaiNguyenChienDauCo?.isTrangThaiSanSangTai() == true) {
+      if (_trangThaiTaiTaiNguyenChienDauCo00E03SS010?.isTrangThaiSanSangTai() == true) {
+        await _trangThaiTaiTaiNguyenChienDauCo00E03SS010?.onVoidCaiDatTrangThaiDangTai();
+        // await Future.delayed(Duration.zero);
+        // await Future.delayed(Duration(milliseconds: 100));
+        await onTaiTaiNguyenChienDauCo00E03SS010();
+      }
 
-    await Future.delayed(Duration.zero);
-    await onTaiTaiNguyenChienDauCo00E03SS020();
+      // return;
 
-    await Future.delayed(Duration.zero);
-    await onTaiTaiNguyenChienDauCo00E03SS030();
+      // await Future.delayed(Duration.zero);
+      // await Future.delayed(Duration(milliseconds: 100));
+      if (_trangThaiTaiTaiNguyenChienDauCo00E03SS020?.isTrangThaiSanSangTai() == true && _trangThaiTaiTaiNguyenChienDauCo00E03SS010?.isTrangThaiHoanTatTai() == true) {
+        await _trangThaiTaiTaiNguyenChienDauCo00E03SS020?.onVoidCaiDatTrangThaiDangTai();
+        await onTaiTaiNguyenChienDauCo00E03SS020();
+      }
 
-    await Future.delayed(Duration.zero);
-    await onTaiTaiNguyenChienDauCo00D04SS010();
+      // await Future.delayed(Duration.zero);
+      // await Future.delayed(Duration(milliseconds: 100));
+      if (_trangThaiTaiTaiNguyenChienDauCo00E03SS030?.isTrangThaiSanSangTai() == true && _trangThaiTaiTaiNguyenChienDauCo00E03SS020?.isTrangThaiHoanTatTai() == true) {
+        await _trangThaiTaiTaiNguyenChienDauCo00E03SS030?.onVoidCaiDatTrangThaiDangTai();
+        await onTaiTaiNguyenChienDauCo00E03SS030();
+      }
 
-    await Future.delayed(Duration.zero);
-    await onTaiTaiNguyenChienDauCo00C05SS010();
+      // await Future.delayed(Duration.zero);
+      // await Future.delayed(Duration(milliseconds: 100));
+      if (_trangThaiTaiTaiNguyenChienDauCo00D04SS010?.isTrangThaiSanSangTai() == true && _trangThaiTaiTaiNguyenChienDauCo00E03SS030?.isTrangThaiHoanTatTai() == true) {
+        await _trangThaiTaiTaiNguyenChienDauCo00D04SS010?.onVoidCaiDatTrangThaiDangTai();
+        await onTaiTaiNguyenChienDauCo00D04SS010();
+      }
 
-    await Future.delayed(Duration.zero);
-    await onTaiTaiNguyenChienDauCo00B06SS010();
+      // await Future.delayed(Duration.zero);
+      // await Future.delayed(Duration(milliseconds: 100));
+      if (_trangThaiTaiTaiNguyenChienDauCo00C05SS010?.isTrangThaiSanSangTai() == true && _trangThaiTaiTaiNguyenChienDauCo00D04SS010?.isTrangThaiHoanTatTai() == true) {
+        await _trangThaiTaiTaiNguyenChienDauCo00C05SS010?.onVoidCaiDatTrangThaiDangTai();
+        await onTaiTaiNguyenChienDauCo00C05SS010();
+      }
 
-    await Future.delayed(Duration.zero);
-    await onTaiTaiNguyenChienDauCo00A07SS010();
+      // await Future.delayed(Duration.zero);
+      // await Future.delayed(Duration(milliseconds: 100));
+      if (_trangThaiTaiTaiNguyenChienDauCo00B06SS010?.isTrangThaiSanSangTai() == true && _trangThaiTaiTaiNguyenChienDauCo00C05SS010?.isTrangThaiHoanTatTai() == true) {
+        await _trangThaiTaiTaiNguyenChienDauCo00B06SS010?.onVoidCaiDatTrangThaiDangTai();
+        await onTaiTaiNguyenChienDauCo00B06SS010();
+      }
 
-    await Future.delayed(Duration.zero);
-    await onTaiTaiNguyenChienDauCo00S08SS010();
+      // await Future.delayed(Duration.zero);
+      // await Future.delayed(Duration(milliseconds: 100));
+      if (_trangThaiTaiTaiNguyenChienDauCo00A07SS010?.isTrangThaiSanSangTai() == true && _trangThaiTaiTaiNguyenChienDauCo00B06SS010?.isTrangThaiHoanTatTai() == true) {
+        await _trangThaiTaiTaiNguyenChienDauCo00A07SS010?.onVoidCaiDatTrangThaiDangTai();
+        await onTaiTaiNguyenChienDauCo00A07SS010();
+      }
 
-    await Future.delayed(Duration.zero);
-    await onTaiTaiNguyenChienDauCo0SS09SS010();
+      // await Future.delayed(Duration.zero);
+      // await Future.delayed(Duration(milliseconds: 100));
+      if (_trangThaiTaiTaiNguyenChienDauCo00S08SS010?.isTrangThaiSanSangTai() == true && _trangThaiTaiTaiNguyenChienDauCo00A07SS010?.isTrangThaiHoanTatTai() == true) {
+        await _trangThaiTaiTaiNguyenChienDauCo00S08SS010?.onVoidCaiDatTrangThaiDangTai();
+        await onTaiTaiNguyenChienDauCo00S08SS010();
+      }
 
-    await Future.delayed(Duration.zero);
-    await onTaiTaiNguyenChienDauCo0SS09SS020();
+      // await Future.delayed(Duration.zero);
+      // await Future.delayed(Duration(milliseconds: 100));
+      if (_trangThaiTaiTaiNguyenChienDauCo0SS09SS010?.isTrangThaiSanSangTai() == true && _trangThaiTaiTaiNguyenChienDauCo00S08SS010?.isTrangThaiHoanTatTai() == true) {
+        await _trangThaiTaiTaiNguyenChienDauCo0SS09SS010?.onVoidCaiDatTrangThaiDangTai();
+        await onTaiTaiNguyenChienDauCo0SS09SS010();
+      }
 
-    await Future.delayed(Duration.zero);
-    await onTaiTaiNguyenChienDauCo0SS09SS030();
+      // await Future.delayed(Duration.zero);
+      // await Future.delayed(Duration(milliseconds: 100));
+      if (_trangThaiTaiTaiNguyenChienDauCo0SS09SS020?.isTrangThaiSanSangTai() == true && _trangThaiTaiTaiNguyenChienDauCo0SS09SS010?.isTrangThaiHoanTatTai() == true) {
+        await _trangThaiTaiTaiNguyenChienDauCo0SS09SS020?.onVoidCaiDatTrangThaiDangTai();
+        await onTaiTaiNguyenChienDauCo0SS09SS020();
+      }
 
-    await Future.delayed(Duration.zero);
-    await onTaiTaiNguyenChienDauCoSSS10SS010();
+      // await Future.delayed(Duration.zero);
+      // await Future.delayed(Duration(milliseconds: 100));
+      if (_trangThaiTaiTaiNguyenChienDauCo0SS09SS030?.isTrangThaiSanSangTai() == true && _trangThaiTaiTaiNguyenChienDauCo0SS09SS020?.isTrangThaiHoanTatTai() == true) {
+        await _trangThaiTaiTaiNguyenChienDauCo0SS09SS030?.onVoidCaiDatTrangThaiDangTai();
+        await onTaiTaiNguyenChienDauCo0SS09SS030();
+      }
 
-    await Future.delayed(Duration.zero);
-    await onTaiTaiNguyenChienDauCoSSS10SS020();
+      // await Future.delayed(Duration.zero);
+      // await Future.delayed(Duration(milliseconds: 100));
+      if (_trangThaiTaiTaiNguyenChienDauCoSSS10SS010?.isTrangThaiSanSangTai() == true && _trangThaiTaiTaiNguyenChienDauCo0SS09SS030?.isTrangThaiHoanTatTai() == true) {
+        await _trangThaiTaiTaiNguyenChienDauCoSSS10SS010?.onVoidCaiDatTrangThaiDangTai();
+        await onTaiTaiNguyenChienDauCoSSS10SS010();
+      }
 
-    await Future.delayed(Duration.zero);
-    await onTaiTaiNguyenChienDauCoSSS10SS030();
+      // await Future.delayed(Duration.zero);
+      // await Future.delayed(Duration(milliseconds: 100));
+      if (_trangThaiTaiTaiNguyenChienDauCoSSS10SS020?.isTrangThaiSanSangTai() == true && _trangThaiTaiTaiNguyenChienDauCoSSS10SS010?.isTrangThaiHoanTatTai() == true) {
+        await _trangThaiTaiTaiNguyenChienDauCoSSS10SS020?.onVoidCaiDatTrangThaiDangTai();
+        await onTaiTaiNguyenChienDauCoSSS10SS020();
+      }
 
-    await Future.delayed(Duration.zero);
-    await onTaiTaiNguyenChienDauCoSSS10SS040();
+      // await Future.delayed(Duration.zero);
+      // await Future.delayed(Duration(milliseconds: 100));
+      if (_trangThaiTaiTaiNguyenChienDauCoSSS10SS030?.isTrangThaiSanSangTai() == true && _trangThaiTaiTaiNguyenChienDauCoSSS10SS020?.isTrangThaiHoanTatTai() == true) {
+        await _trangThaiTaiTaiNguyenChienDauCoSSS10SS030?.onVoidCaiDatTrangThaiDangTai();
+        await onTaiTaiNguyenChienDauCoSSS10SS030();
+      }
 
-    await Future.delayed(Duration.zero);
-    await onTaiTaiNguyenChienDauCoSSS10SS050();
+      // await Future.delayed(Duration.zero);
+      // await Future.delayed(Duration(milliseconds: 100));
+      if (_trangThaiTaiTaiNguyenChienDauCoSSS10SS040?.isTrangThaiSanSangTai() == true && _trangThaiTaiTaiNguyenChienDauCoSSS10SS030?.isTrangThaiHoanTatTai() == true) {
+        await _trangThaiTaiTaiNguyenChienDauCoSSS10SS040?.onVoidCaiDatTrangThaiDangTai();
+        await onTaiTaiNguyenChienDauCoSSS10SS040();
+      }
 
+      // await Future.delayed(Duration.zero);
+      // await Future.delayed(Duration(milliseconds: 100));
+      if (_trangThaiTaiTaiNguyenChienDauCoSSS10SS050?.isTrangThaiSanSangTai() == true && _trangThaiTaiTaiNguyenChienDauCoSSS10SS040?.isTrangThaiHoanTatTai() == true) {
+        await _trangThaiTaiTaiNguyenChienDauCoSSS10SS050?.onVoidCaiDatTrangThaiDangTai();
+        await onTaiTaiNguyenChienDauCoSSS10SS050();
+      }
+
+      ///
+      // await Future.delayed(Duration.zero);
+      // await Future.delayed(Duration(milliseconds: 1000));
+    }
     ///
     return;
   }
@@ -5375,5 +5561,56 @@ class QUANLYTRANGTHAIHANGARCHIENDAUCO with CAUTRUCTHUCTHICOBAN {
 
     ///
     return;
+  }
+}
+
+class TRANGTHAITAITAINGUYENCHIENDAUCO {
+  String _trangThai = '[NGUYEN_BAN]';
+
+  Future<void> onVoidCaiDatTrangThaiSanSangTai() async {
+    _trangThai = '[SAN_SANG_TAI]';
+    ///
+    return;
+  }
+  bool isTrangThaiSanSangTai() {
+    if (_trangThai == '[SAN_SANG_TAI]') {
+      return true;
+    }
+
+    return false;
+  }
+
+  Future<void> onVoidCaiDatTrangThaiDangTai() async {
+    _trangThai = '[DANG_TAI]';
+    ///
+    return;
+  }
+  bool isTrangThaiDangTai() {
+    if (_trangThai == '[DANG_TAI]') {
+      return true;
+    }
+
+    return false;
+  }
+
+  Future<void> onVoidCaiDatTrangThaiHoanTatTai() async {
+    _trangThai = '[HOAN_TAT_TAI]';
+    ///
+    return;
+  }
+  bool isTrangThaiHoanTatTai() {
+    if (_trangThai == '[HOAN_TAT_TAI]') {
+      return true;
+    }
+
+    return false;
+  }
+
+  TRANGTHAITAITAINGUYENCHIENDAUCO.onNguyenBan() {
+    _trangThai = '[NGUYEN_BAN]';
+  }
+
+  TRANGTHAITAITAINGUYENCHIENDAUCO.onSanSangTai() {
+    _trangThai = '[SAN_SANG_TAI]';
   }
 }

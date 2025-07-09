@@ -593,7 +593,8 @@ abstract class KHUNGMANHINHGAMECOSO extends FlameGame
   Future<void> onKhoiDongGameCoSoSS020ChiTiet() async {
     await Future.delayed(Duration.zero);
 
-    await getGlobalState?.onGetEntityResourceManagement?.getQuanLyTrangThaiHangarChienDauCo?.onTaiTaiNguyenChienDauCo();
+    await getGlobalState?.onGetEntityResourceManagement?.getQuanLyTrangThaiHangarChienDauCo?.onSanSangTaiTaiNguyenChienDauCo();
+    // await getGlobalState?.onGetEntityResourceManagement?.getQuanLyTrangThaiHangarChienDauCo?.onTaiTaiNguyenChienDauCo();
 
     /// -----
     /// TODO:

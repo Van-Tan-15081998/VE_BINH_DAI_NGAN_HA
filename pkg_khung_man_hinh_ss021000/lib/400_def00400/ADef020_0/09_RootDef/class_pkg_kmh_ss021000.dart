@@ -1,3 +1,4 @@
+import 'dart:async' as flutter_async;
 import 'package:pkg_dinh_nghia_ss020000/pkg_dinh_nghia_ss020000_exp.dart';
 import 'package:pkg_khung_man_hinh_ss020000/pkg_khung_man_hinh_ss020000_exp.dart';
 import 'package:pkg_khung_man_hinh_ss021000/400_def00400/ADef020_0/08_SubDefs/Def020_2/09_RootDef/class_pkg_kmh_ss021000.dart';
@@ -164,5 +165,29 @@ class KHUNGMANHINHMASTERLOADING extends THANHPHANMANHINHTHUOCCAPCOBAN {
 
     ///
     return;
+  }
+
+  flutter_async.Timer? _timer;
+  /// -----
+  /// TODO: OnLoad
+  /// -----
+  @override
+  Future<void> onLoad() async {
+    super.onLoad();
+
+    _timer = flutter_async.Timer.periodic(Duration(milliseconds: 500), (_) async {
+
+      await getGlobalState?.onGetEntityResourceManagement?.getQuanLyTrangThaiHangarChienDauCo?.onTaiTaiNguyenChienDauCo();
+
+      // if (kDebugMode) {
+        print('Tải Tài Nguyên Chiến Đấu Cơ');
+      // }
+    });
+  }
+
+  @override
+  void onRemove() {
+    _timer?.cancel(); // rất quan trọng!
+    super.onRemove();
   }
 }

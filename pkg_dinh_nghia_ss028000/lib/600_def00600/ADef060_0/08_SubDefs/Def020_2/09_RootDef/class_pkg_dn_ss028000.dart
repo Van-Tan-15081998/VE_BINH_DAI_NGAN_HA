@@ -90,9 +90,15 @@ class MOHINHCHIENDAUCO00B06SS010 extends MOHINHCHIENDAUCOCOBAN {
     /// -----
     /// TODO: Thông Số Frame
     /// -----
-    final int tongSoPart = 6;
-    final int tongSoFrame = 16;
-    final int tongSoFrameTrenHang = 4;
+    // final int tongSoPart = 6;
+    // final int tongSoFrame = 16;
+    // final int tongSoFrameTrenHang = 4;
+    // final double chieuRongFrame = 350.0;
+    // final double chieuCaoFrame = 400.0;
+
+    final int tongSoPart = 24;
+    final int tongSoFrame = 4;
+    final int tongSoFrameTrenHang = 2;
     final double chieuRongFrame = 350.0;
     final double chieuCaoFrame = 400.0;
 
@@ -102,9 +108,9 @@ class MOHINHCHIENDAUCO00B06SS010 extends MOHINHCHIENDAUCOCOBAN {
     /// -----
     /// TODO: Kích Thước Resize
     /// -----
-    final bool kichThuocRS025 = true; // Kích Thước Resize 25
+    final bool kichThuocRS025 = false; // Kích Thước Resize 25
     final bool kichThuocRS050 = false; // Kích Thước Resize 50
-    final bool kichThuocRS100 = false; // Kích Thước Resize 100
+    final bool kichThuocRS100 = true; // Kích Thước Resize 100
 
     /// -----
     /// TODO: Nguồn Hình Ảnh Cơ Bản
