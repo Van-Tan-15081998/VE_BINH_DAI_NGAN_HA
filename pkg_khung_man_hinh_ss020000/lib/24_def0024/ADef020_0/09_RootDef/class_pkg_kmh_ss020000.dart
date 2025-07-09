@@ -489,7 +489,7 @@ abstract class KHUNGMANHINHGAMECOSO extends FlameGame
     await Future.delayed(Duration.zero);
     await onKhoiDongGameCoSoSS030();
     await Future.delayed(Duration.zero);
-    await onKhoiDongGameCoSoSS999();
+    // await onKhoiDongGameCoSoSS999();
 
     ///
     return;

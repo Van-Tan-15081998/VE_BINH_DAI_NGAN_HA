@@ -406,6 +406,8 @@ class QUANLYTRANGTHAITHANHPHANGAMEUITONGQUAT with CauTrucThucThiCoBan {
       getGameUIThanhTichChienDauSS030HuyKichHoat?.onInitRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
     ]);
 
+    // return; /// Comment To Load
+
     // await onTaiTaiNguyenThanhPhanGameUITheoMaDinhDanh(
     //   maDinhDanhThanhPhanGameUISS010: getGameUIThanhNgangChiSoMauChienDauCo?.getMaDinhDanhGameUI,
     //   maDinhDanhThanhPhanGameUISS020: getGameUIThanhNgangChiSoMauPhuongTienChiHuy?.getMaDinhDanhGameUI,

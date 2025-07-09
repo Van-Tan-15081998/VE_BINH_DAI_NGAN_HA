@@ -114,6 +114,8 @@ class QuanLyTrangThaiChienDauCoTrucTiepThucThiChienDau with KhungThucThiCoBan, D
   /// -----
   Future<void> onTaiTaiNguyenChienDauCo() async {
 
+    return;
+
     if (getTrangThai?.getMoHinh is ChienDauCoDangCapSao00E03SS01) {
       await onGetEntityResourceManagement?.getQuanLyTrangThaiHangarChienDauCo?.onTaiTaiNguyenChienDauCo00E03SS010FullSize(isLoadForMissionExecution: true);
     }

@@ -95,8 +95,8 @@ class CARDCHIENDAUCODANGCAPSAO0SS09SS02
     /// -----
     /// TODO:
     /// -----
-    await getGlobalState?.onGetEntityResourceManagement?.getQuanLyTrangThaiHangarChienDauCo
-        ?.onTaiTaiNguyenChienDauCo0SS09SS020FullSize();
+    // await getGlobalState?.onGetEntityResourceManagement?.getQuanLyTrangThaiHangarChienDauCo
+    //     ?.onTaiTaiNguyenChienDauCo0SS09SS020FullSize();
 
     ///
     return;

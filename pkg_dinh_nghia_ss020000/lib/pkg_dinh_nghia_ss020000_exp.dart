@@ -60,6 +60,9 @@ export '26_def0026/BDef070_0/08_SubDefs/Def030_2/09_RootDef/class_pkg_dn_ss02000
 /// TODO: _____[THUOC_TINH_TAI_NGUYEN_CO_BAN]_____
 export '26_def0026/BDef080_0/09_RootDef/class_pkg_dn_ss020000.dart';
 
+/// TODO: _____[TIEN_TRINH_TAI_TAI_NGUYEN_CO_BAN]_____
+export '26_def0026/BDef080_0/08_SubDefs/Def030_2/09_RootDef/class_pkg_dn_ss020000.dart';
+
 /// TODO: _____[TRANG_THAI_CO_BAN]_____
 export '26_def0026/BDef080_0/08_SubDefs/Def020_2/09_RootDef/class_pkg_dn_ss020000.dart';
 

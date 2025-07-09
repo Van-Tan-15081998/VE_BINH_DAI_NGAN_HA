@@ -67,6 +67,8 @@ class THUOCTINHHINHANHCOBAN with CAUTRUCTHUCTHICOBAN {
     try {
       onVoidCaiDatMaDinhDanhCauTrucThucThi(value: '[THUOCTINHHINHANHCOBAN]');
 
+      onVoidCaiDatTienTrinh(value: TIENTRINHTAITAINGUYENCOBAN.onTienTrinhNguyenBan(), caiDatUuTien: true);
+
       /// -----
       /// TODO:
       /// -----
@@ -2641,6 +2643,23 @@ class THUOCTINHHINHANHCOBAN with CAUTRUCTHUCTHICOBAN {
       _chieuCaoFrameRS025 = value;
     } else {
       _chieuCaoFrameRS025 ??= value;
+    }
+
+    return;
+  }
+
+  ///
+  /// TODO:
+  ///
+  TIENTRINHTAITAINGUYENCOBAN? _tienTrinh;
+  TIENTRINHTAITAINGUYENCOBAN? get getTienTrinh => _tienTrinh;
+  void onVoidCaiDatTienTrinh({required TIENTRINHTAITAINGUYENCOBAN? value, bool? caiDatUuTien}) async {
+    if (caiDatUuTien == true) {
+      _tienTrinh = value;
+    } else {
+      if (getChieuCaoFrameRS050 == null || getChieuCaoFrameRS050 == 0) {
+        _tienTrinh = value;
+      }
     }
 
     return;

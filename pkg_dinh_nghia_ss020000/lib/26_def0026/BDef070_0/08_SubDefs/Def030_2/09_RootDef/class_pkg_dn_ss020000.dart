@@ -66,11 +66,12 @@ class DONVIHINHANHSPRITECOBAN with CAUTRUCTHUCTHICOBAN {
   @override
   Future<void> onSetupRoot({bool? isIgnoreSetupRootForSubCom}) async {
     try {
-      onVoidCaiDatMaDinhDanhCauTrucThucThi(value: '[TRANGTHAIVITRICOBAN]');
+      onVoidCaiDatMaDinhDanhCauTrucThucThi(value: '[DONVIHINHANHSPRITECOBAN]');
 
       /// -----
       /// TODO:
       /// -----
+      onVoidCaiDatTienTrinh(value: TIENTRINHTAITAINGUYENCOBAN.onTienTrinhNguyenBan(), caiDatUuTien: true);
 
       /// -----
       /// TODO: Setup Root For SubCom
@@ -422,6 +423,23 @@ class DONVIHINHANHSPRITECOBAN with CAUTRUCTHUCTHICOBAN {
     } else {
       if (getChieuCaoFrameRS050 == null || getChieuCaoFrameRS050 == 0) {
         _chieuCaoFrameRS050 = value;
+      }
+    }
+
+    return;
+  }
+
+  ///
+  /// TODO:
+  ///
+  TIENTRINHTAITAINGUYENCOBAN? _tienTrinh;
+  TIENTRINHTAITAINGUYENCOBAN? get getTienTrinh => _tienTrinh;
+  void onVoidCaiDatTienTrinh({required TIENTRINHTAITAINGUYENCOBAN? value, bool? caiDatUuTien}) async {
+    if (caiDatUuTien == true) {
+      _tienTrinh = value;
+    } else {
+      if (getChieuCaoFrameRS050 == null || getChieuCaoFrameRS050 == 0) {
+        _tienTrinh = value;
       }
     }
 
