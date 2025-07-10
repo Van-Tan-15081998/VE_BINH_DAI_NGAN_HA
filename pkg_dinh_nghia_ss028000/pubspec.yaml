@@ -47,65 +47,81 @@ flutter:
     # _____[CHIEN_DAU_CO_DANG_CAP_SAO_00E03]_____
     # _____[CHIEN_DAU_CO_DANG_CAP_SAO_00E03_SS01]_____
     - lib/600_def00600/ADef030_0/08_SubDefs/Def020_2/02_SpriteStore/Def025_4/
+    - lib/600_def00600/ADef030_0/08_SubDefs/Def020_2/02_SpriteStore/Def050_4/
     - lib/600_def00600/ADef030_0/08_SubDefs/Def020_2/02_SpriteStore/Def200_4/
     # _____[CHIEN_DAU_CO_DANG_CAP_SAO_00E03_SS02]_____
     - lib/600_def00600/ADef030_0/08_SubDefs/Def030_2/02_SpriteStore/Def025_4/
+    - lib/600_def00600/ADef030_0/08_SubDefs/Def030_2/02_SpriteStore/Def050_4/
     - lib/600_def00600/ADef030_0/08_SubDefs/Def030_2/02_SpriteStore/Def200_4/
     # _____[CHIEN_DAU_CO_DANG_CAP_SAO_00E03_SS03]_____
     - lib/600_def00600/ADef030_0/08_SubDefs/Def040_2/02_SpriteStore/Def025_4/
+    - lib/600_def00600/ADef030_0/08_SubDefs/Def040_2/02_SpriteStore/Def050_4/
     - lib/600_def00600/ADef030_0/08_SubDefs/Def040_2/02_SpriteStore/Def200_4/
     #
     # _____[CHIEN_DAU_CO_DANG_CAP_SAO_00D04]_____
     # _____[CHIEN_DAU_CO_DANG_CAP_SAO_00D04_SS01]_____
     - lib/600_def00600/ADef040_0/08_SubDefs/Def020_2/02_SpriteStore/Def025_4/
+    - lib/600_def00600/ADef040_0/08_SubDefs/Def020_2/02_SpriteStore/Def050_4/
     - lib/600_def00600/ADef040_0/08_SubDefs/Def020_2/02_SpriteStore/Def200_4/
     #
     # _____[CHIEN_DAU_CO_DANG_CAP_SAO_00C05]_____
     # _____[CHIEN_DAU_CO_DANG_CAP_SAO_00C05_SS01]_____
     - lib/600_def00600/ADef050_0/08_SubDefs/Def020_2/02_SpriteStore/Def025_4/
+    - lib/600_def00600/ADef050_0/08_SubDefs/Def020_2/02_SpriteStore/Def050_4/
     - lib/600_def00600/ADef050_0/08_SubDefs/Def020_2/02_SpriteStore/Def200_4/
     #
     # _____[CHIEN_DAU_CO_DANG_CAP_SAO_00B06]_____
     # _____[CHIEN_DAU_CO_DANG_CAP_SAO_00B06_SS01]_____
     - lib/600_def00600/ADef060_0/08_SubDefs/Def020_2/02_SpriteStore/Def025_4/
+    - lib/600_def00600/ADef060_0/08_SubDefs/Def020_2/02_SpriteStore/Def050_4/
     - lib/600_def00600/ADef060_0/08_SubDefs/Def020_2/02_SpriteStore/Def200_4/
     #
     # _____[CHIEN_DAU_CO_DANG_CAP_SAO_00A07]_____
     # _____[CHIEN_DAU_CO_DANG_CAP_SAO_00A07_SS01]_____
     - lib/600_def00600/ADef070_0/08_SubDefs/Def020_2/02_SpriteStore/Def025_4/
+    - lib/600_def00600/ADef070_0/08_SubDefs/Def020_2/02_SpriteStore/Def050_4/
     - lib/600_def00600/ADef070_0/08_SubDefs/Def020_2/02_SpriteStore/Def200_4/
     #
     # _____[CHIEN_DAU_CO_DANG_CAP_SAO_00S08]_____
     # _____[CHIEN_DAU_CO_DANG_CAP_SAO_00S08_SS01]_____
     - lib/600_def00600/ADef080_0/08_SubDefs/Def020_2/02_SpriteStore/Def025_4/
+    - lib/600_def00600/ADef080_0/08_SubDefs/Def020_2/02_SpriteStore/Def050_4/
     - lib/600_def00600/ADef080_0/08_SubDefs/Def020_2/02_SpriteStore/Def200_4/
     #
     # _____[CHIEN_DAU_CO_DANG_CAP_SAO_0SS09]_____
     # _____[CHIEN_DAU_CO_DANG_CAP_SAO_0SS09_SS01]_____
     - lib/600_def00600/ADef090_0/08_SubDefs/Def020_2/02_SpriteStore/Def025_4/
+    - lib/600_def00600/ADef090_0/08_SubDefs/Def020_2/02_SpriteStore/Def050_4/
     - lib/600_def00600/ADef090_0/08_SubDefs/Def020_2/02_SpriteStore/Def200_4/
     # _____[CHIEN_DAU_CO_DANG_CAP_SAO_0SS09_SS02]_____
     - lib/600_def00600/ADef090_0/08_SubDefs/Def030_2/02_SpriteStore/Def025_4/
+    - lib/600_def00600/ADef090_0/08_SubDefs/Def030_2/02_SpriteStore/Def050_4/
     - lib/600_def00600/ADef090_0/08_SubDefs/Def030_2/02_SpriteStore/Def200_4/
     # _____[CHIEN_DAU_CO_DANG_CAP_SAO_0SS09_SS03]_____
     - lib/600_def00600/ADef090_0/08_SubDefs/Def040_2/02_SpriteStore/Def025_4/
+    - lib/600_def00600/ADef090_0/08_SubDefs/Def040_2/02_SpriteStore/Def050_4/
     - lib/600_def00600/ADef090_0/08_SubDefs/Def040_2/02_SpriteStore/Def200_4/
     #
     # _____[CHIEN_DAU_CO_DANG_CAP_SAO_SSS10]_____
     # _____[CHIEN_DAU_CO_DANG_CAP_SAO_SSS10_SS01]_____
     - lib/600_def00600/ADef200_0/08_SubDefs/Def020_2/02_SpriteStore/Def025_4/
+    - lib/600_def00600/ADef200_0/08_SubDefs/Def020_2/02_SpriteStore/Def050_4/
     - lib/600_def00600/ADef200_0/08_SubDefs/Def020_2/02_SpriteStore/Def200_4/
     # _____[CHIEN_DAU_CO_DANG_CAP_SAO_SSS10_SS02]_____
     - lib/600_def00600/ADef200_0/08_SubDefs/Def030_2/02_SpriteStore/Def025_4/
+    - lib/600_def00600/ADef200_0/08_SubDefs/Def030_2/02_SpriteStore/Def050_4/
     - lib/600_def00600/ADef200_0/08_SubDefs/Def030_2/02_SpriteStore/Def200_4/
     # _____[CHIEN_DAU_CO_DANG_CAP_SAO_SSS10_SS03]_____
     - lib/600_def00600/ADef200_0/08_SubDefs/Def040_2/02_SpriteStore/Def025_4/
+    - lib/600_def00600/ADef200_0/08_SubDefs/Def040_2/02_SpriteStore/Def050_4/
     - lib/600_def00600/ADef200_0/08_SubDefs/Def040_2/02_SpriteStore/Def200_4/
     # _____[CHIEN_DAU_CO_DANG_CAP_SAO_SSS10_SS04]_____
     - lib/600_def00600/ADef200_0/08_SubDefs/Def050_2/02_SpriteStore/Def025_4/
+    - lib/600_def00600/ADef200_0/08_SubDefs/Def050_2/02_SpriteStore/Def050_4/
     - lib/600_def00600/ADef200_0/08_SubDefs/Def050_2/02_SpriteStore/Def200_4/
     # _____[CHIEN_DAU_CO_DANG_CAP_SAO_SSS10_SS05]_____
     - lib/600_def00600/ADef200_0/08_SubDefs/Def060_2/02_SpriteStore/Def025_4/
+    - lib/600_def00600/ADef200_0/08_SubDefs/Def060_2/02_SpriteStore/Def050_4/
     - lib/600_def00600/ADef200_0/08_SubDefs/Def060_2/02_SpriteStore/Def200_4/
     #
     #

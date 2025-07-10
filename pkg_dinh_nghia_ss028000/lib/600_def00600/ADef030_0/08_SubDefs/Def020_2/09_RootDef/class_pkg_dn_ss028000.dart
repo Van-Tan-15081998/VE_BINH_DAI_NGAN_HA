@@ -106,8 +106,8 @@ class MOHINHCHIENDAUCO00E03SS010 extends MOHINHCHIENDAUCOCOBAN {
     /// TODO: Kích Thước Resize
     /// -----
     final bool kichThuocRS025 = false; // Kích Thước Resize 25
-    final bool kichThuocRS050 = false; // Kích Thước Resize 50
-    final bool kichThuocRS100 = true; // Kích Thước Resize 100
+    final bool kichThuocRS050 = true; // Kích Thước Resize 50
+    final bool kichThuocRS100 = false; // Kích Thước Resize 100
 
     /// -----
     /// TODO: Nguồn Hình Ảnh Cơ Bản
