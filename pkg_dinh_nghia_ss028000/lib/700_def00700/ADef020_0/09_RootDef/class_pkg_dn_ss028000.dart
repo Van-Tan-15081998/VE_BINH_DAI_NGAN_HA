@@ -1761,7 +1761,8 @@ class QUANLYTRANGTHAIHANGARCHIENDAUCO with CAUTRUCTHUCTHICOBAN {
     /// -----
     /// TODO:
     /// -----
-    await getThuocTinhTaiNguyenChienDauCo?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhChienDauCoRS050TheoTuanTu(
+    // await getThuocTinhTaiNguyenChienDauCo?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhTheoTuanTu(
+    await getThuocTinhTaiNguyenChienDauCo?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhTheoTuanTu(
       maDinhDanh: getChienDauCo00E03SS010?.getMaDinhDanhChienDauCo,
       thuocTinhHinhAnh: getChienDauCo00E03SS010?.getThuocTinhChienDauCo?.getThuocTinhHinhAnh,
       onThucThiHoanTat: () async {
@@ -1789,7 +1790,7 @@ class QUANLYTRANGTHAIHANGARCHIENDAUCO with CAUTRUCTHUCTHICOBAN {
     /// -----
     /// TODO:
     /// -----
-    await getThuocTinhTaiNguyenChienDauCo?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhChienDauCoRS050TheoTuanTu(
+    await getThuocTinhTaiNguyenChienDauCo?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhTheoTuanTu(
       maDinhDanh: getChienDauCo00E03SS020?.getMaDinhDanhChienDauCo,
       thuocTinhHinhAnh: getChienDauCo00E03SS020?.getThuocTinhChienDauCo?.getThuocTinhHinhAnh,
       onThucThiHoanTat: () async {
@@ -1819,7 +1820,7 @@ class QUANLYTRANGTHAIHANGARCHIENDAUCO with CAUTRUCTHUCTHICOBAN {
     /// -----
     /// TODO:
     /// -----
-    await getThuocTinhTaiNguyenChienDauCo?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhChienDauCoRS050TheoTuanTu(
+    await getThuocTinhTaiNguyenChienDauCo?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhTheoTuanTu(
       maDinhDanh: getChienDauCo00E03SS030?.getMaDinhDanhChienDauCo,
       thuocTinhHinhAnh: getChienDauCo00E03SS030?.getThuocTinhChienDauCo?.getThuocTinhHinhAnh,
       onThucThiHoanTat: () async {
@@ -1849,7 +1850,7 @@ class QUANLYTRANGTHAIHANGARCHIENDAUCO with CAUTRUCTHUCTHICOBAN {
     /// -----
     /// TODO:
     /// -----
-    await getThuocTinhTaiNguyenChienDauCo?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhChienDauCoRS050TheoTuanTu(
+    await getThuocTinhTaiNguyenChienDauCo?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhTheoTuanTu(
       maDinhDanh: getChienDauCo00D04SS010?.getMaDinhDanhChienDauCo,
       thuocTinhHinhAnh: getChienDauCo00D04SS010?.getThuocTinhChienDauCo?.getThuocTinhHinhAnh,
       onThucThiHoanTat: () async {
@@ -1879,7 +1880,7 @@ class QUANLYTRANGTHAIHANGARCHIENDAUCO with CAUTRUCTHUCTHICOBAN {
     /// -----
     /// TODO:
     /// -----
-    await getThuocTinhTaiNguyenChienDauCo?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhChienDauCoRS050TheoTuanTu(
+    await getThuocTinhTaiNguyenChienDauCo?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhTheoTuanTu(
       maDinhDanh: getChienDauCo00C05SS010?.getMaDinhDanhChienDauCo,
       thuocTinhHinhAnh: getChienDauCo00C05SS010?.getThuocTinhChienDauCo?.getThuocTinhHinhAnh,
       onThucThiHoanTat: () async {
@@ -1909,7 +1910,7 @@ class QUANLYTRANGTHAIHANGARCHIENDAUCO with CAUTRUCTHUCTHICOBAN {
     /// -----
     /// TODO:
     /// -----
-    await getThuocTinhTaiNguyenChienDauCo?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhChienDauCoRS050TheoTuanTu(
+    await getThuocTinhTaiNguyenChienDauCo?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhTheoTuanTu(
       maDinhDanh: getChienDauCo00B06SS010?.getMaDinhDanhChienDauCo,
       thuocTinhHinhAnh: getChienDauCo00B06SS010?.getThuocTinhChienDauCo?.getThuocTinhHinhAnh,
       onThucThiHoanTat: () async {
@@ -1939,7 +1940,7 @@ class QUANLYTRANGTHAIHANGARCHIENDAUCO with CAUTRUCTHUCTHICOBAN {
     /// -----
     /// TODO:
     /// -----
-    await getThuocTinhTaiNguyenChienDauCo?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhChienDauCoRS050TheoTuanTu(
+    await getThuocTinhTaiNguyenChienDauCo?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhTheoTuanTu(
       maDinhDanh: getChienDauCo00A07SS010?.getMaDinhDanhChienDauCo,
       thuocTinhHinhAnh: getChienDauCo00A07SS010?.getThuocTinhChienDauCo?.getThuocTinhHinhAnh,
       onThucThiHoanTat: () async {
@@ -1969,7 +1970,7 @@ class QUANLYTRANGTHAIHANGARCHIENDAUCO with CAUTRUCTHUCTHICOBAN {
     /// -----
     /// TODO:
     /// -----
-    await getThuocTinhTaiNguyenChienDauCo?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhChienDauCoRS050TheoTuanTu(
+    await getThuocTinhTaiNguyenChienDauCo?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhTheoTuanTu(
       maDinhDanh: getChienDauCo00S08SS010?.getMaDinhDanhChienDauCo,
       thuocTinhHinhAnh: getChienDauCo00S08SS010?.getThuocTinhChienDauCo?.getThuocTinhHinhAnh,
       onThucThiHoanTat: () async {
@@ -1999,7 +2000,7 @@ class QUANLYTRANGTHAIHANGARCHIENDAUCO with CAUTRUCTHUCTHICOBAN {
     /// -----
     /// TODO:
     /// -----
-    await getThuocTinhTaiNguyenChienDauCo?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhChienDauCoRS050TheoTuanTu(
+    await getThuocTinhTaiNguyenChienDauCo?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhTheoTuanTu(
       maDinhDanh: getChienDauCo0SS09SS010?.getMaDinhDanhChienDauCo,
       thuocTinhHinhAnh: getChienDauCo0SS09SS010?.getThuocTinhChienDauCo?.getThuocTinhHinhAnh,
       onThucThiHoanTat: () async {
@@ -2029,7 +2030,7 @@ class QUANLYTRANGTHAIHANGARCHIENDAUCO with CAUTRUCTHUCTHICOBAN {
     /// -----
     /// TODO:
     /// -----
-    await getThuocTinhTaiNguyenChienDauCo?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhChienDauCoRS050TheoTuanTu(
+    await getThuocTinhTaiNguyenChienDauCo?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhTheoTuanTu(
       maDinhDanh: getChienDauCo0SS09SS020?.getMaDinhDanhChienDauCo,
       thuocTinhHinhAnh: getChienDauCo0SS09SS020?.getThuocTinhChienDauCo?.getThuocTinhHinhAnh,
       onThucThiHoanTat: () async {
@@ -2059,7 +2060,7 @@ class QUANLYTRANGTHAIHANGARCHIENDAUCO with CAUTRUCTHUCTHICOBAN {
     /// -----
     /// TODO:
     /// -----
-    await getThuocTinhTaiNguyenChienDauCo?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhChienDauCoRS050TheoTuanTu(
+    await getThuocTinhTaiNguyenChienDauCo?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhTheoTuanTu(
       maDinhDanh: getChienDauCo0SS09SS030?.getMaDinhDanhChienDauCo,
       thuocTinhHinhAnh: getChienDauCo0SS09SS030?.getThuocTinhChienDauCo?.getThuocTinhHinhAnh,
       onThucThiHoanTat: () async {
@@ -2089,7 +2090,7 @@ class QUANLYTRANGTHAIHANGARCHIENDAUCO with CAUTRUCTHUCTHICOBAN {
     /// -----
     /// TODO:
     /// -----
-    await getThuocTinhTaiNguyenChienDauCo?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhChienDauCoRS050TheoTuanTu(
+    await getThuocTinhTaiNguyenChienDauCo?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhTheoTuanTu(
       maDinhDanh: getChienDauCoSSS10SS010?.getMaDinhDanhChienDauCo,
       thuocTinhHinhAnh: getChienDauCoSSS10SS010?.getThuocTinhChienDauCo?.getThuocTinhHinhAnh,
       onThucThiHoanTat: () async {
@@ -2119,7 +2120,7 @@ class QUANLYTRANGTHAIHANGARCHIENDAUCO with CAUTRUCTHUCTHICOBAN {
     /// -----
     /// TODO:
     /// -----
-    await getThuocTinhTaiNguyenChienDauCo?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhChienDauCoRS050TheoTuanTu(
+    await getThuocTinhTaiNguyenChienDauCo?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhTheoTuanTu(
       maDinhDanh: getChienDauCoSSS10SS020?.getMaDinhDanhChienDauCo,
       thuocTinhHinhAnh: getChienDauCoSSS10SS020?.getThuocTinhChienDauCo?.getThuocTinhHinhAnh,
       onThucThiHoanTat: () async {
@@ -2149,7 +2150,7 @@ class QUANLYTRANGTHAIHANGARCHIENDAUCO with CAUTRUCTHUCTHICOBAN {
     /// -----
     /// TODO:
     /// -----
-    await getThuocTinhTaiNguyenChienDauCo?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhChienDauCoRS050TheoTuanTu(
+    await getThuocTinhTaiNguyenChienDauCo?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhTheoTuanTu(
       maDinhDanh: getChienDauCoSSS10SS030?.getMaDinhDanhChienDauCo,
       thuocTinhHinhAnh: getChienDauCoSSS10SS030?.getThuocTinhChienDauCo?.getThuocTinhHinhAnh,
       onThucThiHoanTat: () async {
@@ -2179,7 +2180,7 @@ class QUANLYTRANGTHAIHANGARCHIENDAUCO with CAUTRUCTHUCTHICOBAN {
     /// -----
     /// TODO:
     /// -----
-    await getThuocTinhTaiNguyenChienDauCo?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhChienDauCoRS050TheoTuanTu(
+    await getThuocTinhTaiNguyenChienDauCo?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhTheoTuanTu(
       maDinhDanh: getChienDauCoSSS10SS040?.getMaDinhDanhChienDauCo,
       thuocTinhHinhAnh: getChienDauCoSSS10SS040?.getThuocTinhChienDauCo?.getThuocTinhHinhAnh,
       onThucThiHoanTat: () async {
@@ -2209,7 +2210,7 @@ class QUANLYTRANGTHAIHANGARCHIENDAUCO with CAUTRUCTHUCTHICOBAN {
     /// -----
     /// TODO:
     /// -----
-    await getThuocTinhTaiNguyenChienDauCo?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhChienDauCoRS050TheoTuanTu(
+    await getThuocTinhTaiNguyenChienDauCo?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhTheoTuanTu(
       maDinhDanh: getChienDauCoSSS10SS050?.getMaDinhDanhChienDauCo,
       thuocTinhHinhAnh: getChienDauCoSSS10SS050?.getThuocTinhChienDauCo?.getThuocTinhHinhAnh,
       onThucThiHoanTat: () async {
