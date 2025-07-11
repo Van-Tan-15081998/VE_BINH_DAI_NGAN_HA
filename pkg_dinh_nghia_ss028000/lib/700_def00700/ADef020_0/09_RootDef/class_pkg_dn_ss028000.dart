@@ -2289,12 +2289,19 @@ class QUANLYTRANGTHAIHANGARCHIENDAUCO with CAUTRUCTHUCTHICOBAN {
 
   Future<void> onTaiTaiNguyenChienDauCo({required VoidCallback? onThucThiHoanTat}) async {
     if (_trangThaiTaiTaiNguyenChienDauCo?.isTrangThaiSanSangTai() == true) {
-      if (_trangThaiTaiTaiNguyenChienDauCo00E03SS010?.isTrangThaiSanSangTai() == true || _trangThaiTaiTaiNguyenChienDauCo00E03SS010?.isTrangThaiDangTai() == true) {
+      if (_trangThaiTaiTaiNguyenChienDauCo00E03SS010?.isTrangThaiSanSangTai() == true) {
+        // || _trangThaiTaiTaiNguyenChienDauCo00E03SS010?.isTrangThaiDangTai() == true) {
         await _trangThaiTaiTaiNguyenChienDauCo00E03SS010?.onVoidCaiDatTrangThaiDangTai();
 
         await onTaiTaiNguyenChienDauCo00E03SS010(
           onThucThiHoanTat: () async {
             await _trangThaiTaiTaiNguyenChienDauCo00E03SS010?.onVoidCaiDatTrangThaiHoanTatTai();
+
+            /// temp
+            // await _trangThaiTaiTaiNguyenChienDauCo?.onVoidCaiDatTrangThaiHoanTatTai();
+            //
+            // /// temp
+            // onThucThiHoanTat?.call();
           },
         );
 
@@ -2304,7 +2311,8 @@ class QUANLYTRANGTHAIHANGARCHIENDAUCO with CAUTRUCTHUCTHICOBAN {
 
       // return;
 
-      if ((_trangThaiTaiTaiNguyenChienDauCo00E03SS020?.isTrangThaiSanSangTai() == true || _trangThaiTaiTaiNguyenChienDauCo00E03SS020?.isTrangThaiDangTai() == true) &&
+      if ((_trangThaiTaiTaiNguyenChienDauCo00E03SS020?.isTrangThaiSanSangTai() == true) // || _trangThaiTaiTaiNguyenChienDauCo00E03SS020?.isTrangThaiDangTai() == true) &&
+          &&
           _trangThaiTaiTaiNguyenChienDauCo00E03SS010?.isTrangThaiHoanTatTai() == true) {
         await _trangThaiTaiTaiNguyenChienDauCo00E03SS020?.onVoidCaiDatTrangThaiDangTai();
         await onTaiTaiNguyenChienDauCo00E03SS020(
@@ -2317,7 +2325,8 @@ class QUANLYTRANGTHAIHANGARCHIENDAUCO with CAUTRUCTHUCTHICOBAN {
         return;
       }
 
-      if ((_trangThaiTaiTaiNguyenChienDauCo00E03SS030?.isTrangThaiSanSangTai() == true || _trangThaiTaiTaiNguyenChienDauCo00E03SS030?.isTrangThaiDangTai() == true) &&
+      if ((_trangThaiTaiTaiNguyenChienDauCo00E03SS030?.isTrangThaiSanSangTai() == true) // || _trangThaiTaiTaiNguyenChienDauCo00E03SS030?.isTrangThaiDangTai() == true) &&
+          &&
           _trangThaiTaiTaiNguyenChienDauCo00E03SS020?.isTrangThaiHoanTatTai() == true) {
         await _trangThaiTaiTaiNguyenChienDauCo00E03SS030?.onVoidCaiDatTrangThaiDangTai();
         await onTaiTaiNguyenChienDauCo00E03SS030(
@@ -2330,7 +2339,8 @@ class QUANLYTRANGTHAIHANGARCHIENDAUCO with CAUTRUCTHUCTHICOBAN {
         return;
       }
 
-      if ((_trangThaiTaiTaiNguyenChienDauCo00D04SS010?.isTrangThaiSanSangTai() == true || _trangThaiTaiTaiNguyenChienDauCo00D04SS010?.isTrangThaiDangTai() == true) &&
+      if ((_trangThaiTaiTaiNguyenChienDauCo00D04SS010?.isTrangThaiSanSangTai() == true) // || _trangThaiTaiTaiNguyenChienDauCo00D04SS010?.isTrangThaiDangTai() == true) &&
+          &&
           _trangThaiTaiTaiNguyenChienDauCo00E03SS030?.isTrangThaiHoanTatTai() == true) {
         await _trangThaiTaiTaiNguyenChienDauCo00D04SS010?.onVoidCaiDatTrangThaiDangTai();
         await onTaiTaiNguyenChienDauCo00D04SS010(
@@ -2343,7 +2353,8 @@ class QUANLYTRANGTHAIHANGARCHIENDAUCO with CAUTRUCTHUCTHICOBAN {
         return;
       }
 
-      if ((_trangThaiTaiTaiNguyenChienDauCo00C05SS010?.isTrangThaiSanSangTai() == true || _trangThaiTaiTaiNguyenChienDauCo00C05SS010?.isTrangThaiDangTai() == true) &&
+      if ((_trangThaiTaiTaiNguyenChienDauCo00C05SS010?.isTrangThaiSanSangTai() == true) // || _trangThaiTaiTaiNguyenChienDauCo00C05SS010?.isTrangThaiDangTai() == true) &&
+          &&
           _trangThaiTaiTaiNguyenChienDauCo00D04SS010?.isTrangThaiHoanTatTai() == true) {
         await _trangThaiTaiTaiNguyenChienDauCo00C05SS010?.onVoidCaiDatTrangThaiDangTai();
         await onTaiTaiNguyenChienDauCo00C05SS010(
@@ -2356,7 +2367,8 @@ class QUANLYTRANGTHAIHANGARCHIENDAUCO with CAUTRUCTHUCTHICOBAN {
         return;
       }
 
-      if ((_trangThaiTaiTaiNguyenChienDauCo00B06SS010?.isTrangThaiSanSangTai() == true || _trangThaiTaiTaiNguyenChienDauCo00B06SS010?.isTrangThaiDangTai() == true) &&
+      if ((_trangThaiTaiTaiNguyenChienDauCo00B06SS010?.isTrangThaiSanSangTai() == true) // || _trangThaiTaiTaiNguyenChienDauCo00B06SS010?.isTrangThaiDangTai() == true) &&
+          &&
           _trangThaiTaiTaiNguyenChienDauCo00C05SS010?.isTrangThaiHoanTatTai() == true) {
         await _trangThaiTaiTaiNguyenChienDauCo00B06SS010?.onVoidCaiDatTrangThaiDangTai();
         await onTaiTaiNguyenChienDauCo00B06SS010(
@@ -2369,7 +2381,8 @@ class QUANLYTRANGTHAIHANGARCHIENDAUCO with CAUTRUCTHUCTHICOBAN {
         return;
       }
 
-      if ((_trangThaiTaiTaiNguyenChienDauCo00A07SS010?.isTrangThaiSanSangTai() == true || _trangThaiTaiTaiNguyenChienDauCo00A07SS010?.isTrangThaiDangTai() == true) &&
+      if ((_trangThaiTaiTaiNguyenChienDauCo00A07SS010?.isTrangThaiSanSangTai() == true) // || _trangThaiTaiTaiNguyenChienDauCo00A07SS010?.isTrangThaiDangTai() == true) &&
+          &&
           _trangThaiTaiTaiNguyenChienDauCo00B06SS010?.isTrangThaiHoanTatTai() == true) {
         await _trangThaiTaiTaiNguyenChienDauCo00A07SS010?.onVoidCaiDatTrangThaiDangTai();
         await onTaiTaiNguyenChienDauCo00A07SS010(
@@ -2382,7 +2395,8 @@ class QUANLYTRANGTHAIHANGARCHIENDAUCO with CAUTRUCTHUCTHICOBAN {
         return;
       }
 
-      if ((_trangThaiTaiTaiNguyenChienDauCo00S08SS010?.isTrangThaiSanSangTai() == true || _trangThaiTaiTaiNguyenChienDauCo00S08SS010?.isTrangThaiDangTai() == true) &&
+      if ((_trangThaiTaiTaiNguyenChienDauCo00S08SS010?.isTrangThaiSanSangTai() == true) // || _trangThaiTaiTaiNguyenChienDauCo00S08SS010?.isTrangThaiDangTai() == true) &&
+          &&
           _trangThaiTaiTaiNguyenChienDauCo00A07SS010?.isTrangThaiHoanTatTai() == true) {
         await _trangThaiTaiTaiNguyenChienDauCo00S08SS010?.onVoidCaiDatTrangThaiDangTai();
         await onTaiTaiNguyenChienDauCo00S08SS010(
@@ -2395,7 +2409,8 @@ class QUANLYTRANGTHAIHANGARCHIENDAUCO with CAUTRUCTHUCTHICOBAN {
         return;
       }
 
-      if ((_trangThaiTaiTaiNguyenChienDauCo0SS09SS010?.isTrangThaiSanSangTai() == true || _trangThaiTaiTaiNguyenChienDauCo0SS09SS010?.isTrangThaiDangTai() == true) &&
+      if ((_trangThaiTaiTaiNguyenChienDauCo0SS09SS010?.isTrangThaiSanSangTai() == true) // || _trangThaiTaiTaiNguyenChienDauCo0SS09SS010?.isTrangThaiDangTai() == true) &&
+          &&
           _trangThaiTaiTaiNguyenChienDauCo00S08SS010?.isTrangThaiHoanTatTai() == true) {
         await _trangThaiTaiTaiNguyenChienDauCo0SS09SS010?.onVoidCaiDatTrangThaiDangTai();
         await onTaiTaiNguyenChienDauCo0SS09SS010(
@@ -2408,7 +2423,8 @@ class QUANLYTRANGTHAIHANGARCHIENDAUCO with CAUTRUCTHUCTHICOBAN {
         return;
       }
 
-      if ((_trangThaiTaiTaiNguyenChienDauCo0SS09SS020?.isTrangThaiSanSangTai() == true || _trangThaiTaiTaiNguyenChienDauCo0SS09SS020?.isTrangThaiDangTai() == true) &&
+      if ((_trangThaiTaiTaiNguyenChienDauCo0SS09SS020?.isTrangThaiSanSangTai() == true) // || _trangThaiTaiTaiNguyenChienDauCo0SS09SS020?.isTrangThaiDangTai() == true) &&
+          &&
           _trangThaiTaiTaiNguyenChienDauCo0SS09SS010?.isTrangThaiHoanTatTai() == true) {
         await _trangThaiTaiTaiNguyenChienDauCo0SS09SS020?.onVoidCaiDatTrangThaiDangTai();
         await onTaiTaiNguyenChienDauCo0SS09SS020(
@@ -2421,7 +2437,8 @@ class QUANLYTRANGTHAIHANGARCHIENDAUCO with CAUTRUCTHUCTHICOBAN {
         return;
       }
 
-      if ((_trangThaiTaiTaiNguyenChienDauCo0SS09SS030?.isTrangThaiSanSangTai() == true || _trangThaiTaiTaiNguyenChienDauCo0SS09SS030?.isTrangThaiDangTai() == true) &&
+      if ((_trangThaiTaiTaiNguyenChienDauCo0SS09SS030?.isTrangThaiSanSangTai() == true) // || _trangThaiTaiTaiNguyenChienDauCo0SS09SS030?.isTrangThaiDangTai() == true) &&
+          &&
           _trangThaiTaiTaiNguyenChienDauCo0SS09SS020?.isTrangThaiHoanTatTai() == true) {
         await _trangThaiTaiTaiNguyenChienDauCo0SS09SS030?.onVoidCaiDatTrangThaiDangTai();
         await onTaiTaiNguyenChienDauCo0SS09SS030(
@@ -2434,7 +2451,8 @@ class QUANLYTRANGTHAIHANGARCHIENDAUCO with CAUTRUCTHUCTHICOBAN {
         return;
       }
 
-      if ((_trangThaiTaiTaiNguyenChienDauCoSSS10SS010?.isTrangThaiSanSangTai() == true || _trangThaiTaiTaiNguyenChienDauCoSSS10SS010?.isTrangThaiDangTai() == true) &&
+      if ((_trangThaiTaiTaiNguyenChienDauCoSSS10SS010?.isTrangThaiSanSangTai() == true) // || _trangThaiTaiTaiNguyenChienDauCoSSS10SS010?.isTrangThaiDangTai() == true) &&
+          &&
           _trangThaiTaiTaiNguyenChienDauCo0SS09SS030?.isTrangThaiHoanTatTai() == true) {
         await _trangThaiTaiTaiNguyenChienDauCoSSS10SS010?.onVoidCaiDatTrangThaiDangTai();
         await onTaiTaiNguyenChienDauCoSSS10SS010(
@@ -2447,7 +2465,8 @@ class QUANLYTRANGTHAIHANGARCHIENDAUCO with CAUTRUCTHUCTHICOBAN {
         return;
       }
 
-      if ((_trangThaiTaiTaiNguyenChienDauCoSSS10SS020?.isTrangThaiSanSangTai() == true || _trangThaiTaiTaiNguyenChienDauCoSSS10SS020?.isTrangThaiDangTai() == true) &&
+      if ((_trangThaiTaiTaiNguyenChienDauCoSSS10SS020?.isTrangThaiSanSangTai() == true) // || _trangThaiTaiTaiNguyenChienDauCoSSS10SS020?.isTrangThaiDangTai() == true) &&
+          &&
           _trangThaiTaiTaiNguyenChienDauCoSSS10SS010?.isTrangThaiHoanTatTai() == true) {
         await _trangThaiTaiTaiNguyenChienDauCoSSS10SS020?.onVoidCaiDatTrangThaiDangTai();
         await onTaiTaiNguyenChienDauCoSSS10SS020(
@@ -2460,7 +2479,8 @@ class QUANLYTRANGTHAIHANGARCHIENDAUCO with CAUTRUCTHUCTHICOBAN {
         return;
       }
 
-      if ((_trangThaiTaiTaiNguyenChienDauCoSSS10SS030?.isTrangThaiSanSangTai() == true || _trangThaiTaiTaiNguyenChienDauCoSSS10SS030?.isTrangThaiDangTai() == true) &&
+      if ((_trangThaiTaiTaiNguyenChienDauCoSSS10SS030?.isTrangThaiSanSangTai() == true) // || _trangThaiTaiTaiNguyenChienDauCoSSS10SS030?.isTrangThaiDangTai() == true) &&
+          &&
           _trangThaiTaiTaiNguyenChienDauCoSSS10SS020?.isTrangThaiHoanTatTai() == true) {
         await _trangThaiTaiTaiNguyenChienDauCoSSS10SS030?.onVoidCaiDatTrangThaiDangTai();
         await onTaiTaiNguyenChienDauCoSSS10SS030(
@@ -2473,7 +2493,8 @@ class QUANLYTRANGTHAIHANGARCHIENDAUCO with CAUTRUCTHUCTHICOBAN {
         return;
       }
 
-      if ((_trangThaiTaiTaiNguyenChienDauCoSSS10SS040?.isTrangThaiSanSangTai() == true || _trangThaiTaiTaiNguyenChienDauCoSSS10SS040?.isTrangThaiDangTai() == true) &&
+      if ((_trangThaiTaiTaiNguyenChienDauCoSSS10SS040?.isTrangThaiSanSangTai() == true) // || _trangThaiTaiTaiNguyenChienDauCoSSS10SS040?.isTrangThaiDangTai() == true) &&
+          &&
           _trangThaiTaiTaiNguyenChienDauCoSSS10SS030?.isTrangThaiHoanTatTai() == true) {
         await _trangThaiTaiTaiNguyenChienDauCoSSS10SS040?.onVoidCaiDatTrangThaiDangTai();
         await onTaiTaiNguyenChienDauCoSSS10SS040(
@@ -2486,7 +2507,8 @@ class QUANLYTRANGTHAIHANGARCHIENDAUCO with CAUTRUCTHUCTHICOBAN {
         return;
       }
 
-      if ((_trangThaiTaiTaiNguyenChienDauCoSSS10SS050?.isTrangThaiSanSangTai() == true || _trangThaiTaiTaiNguyenChienDauCoSSS10SS050?.isTrangThaiDangTai() == true) &&
+      if ((_trangThaiTaiTaiNguyenChienDauCoSSS10SS050?.isTrangThaiSanSangTai() == true) // || _trangThaiTaiTaiNguyenChienDauCoSSS10SS050?.isTrangThaiDangTai() == true) &&
+          &&
           _trangThaiTaiTaiNguyenChienDauCoSSS10SS040?.isTrangThaiHoanTatTai() == true) {
         await _trangThaiTaiTaiNguyenChienDauCoSSS10SS050?.onVoidCaiDatTrangThaiDangTai();
         await onTaiTaiNguyenChienDauCoSSS10SS050(
@@ -2512,6 +2534,9 @@ class QUANLYTRANGTHAIHANGARCHIENDAUCO with CAUTRUCTHUCTHICOBAN {
   }
 
   Future<void> onTaiTaiNguyenChienDauCo00E03SS010FullSize({bool? isLoadForMissionExecution}) async {
+
+    return;
+
     /// -----
     /// TODO:
     /// -----

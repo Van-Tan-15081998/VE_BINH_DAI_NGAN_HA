@@ -101,6 +101,7 @@ class THUOCTINHHINHANHCOBAN with CAUTRUCTHUCTHICOBAN {
         onCaiDatDonViHinhAnhSpriteNgoaiHinhPartSS250(value: DONVIHINHANHSPRITECOBAN(), caiDatUuTien: true).catchError((e) => null),
 
         onCaiDatDonViHinhAnhSpriteNgoaiHinhRS025(value: DONVIHINHANHSPRITECOBAN(), caiDatUuTien: true).catchError((e) => null),
+        onCaiDatDonViHinhAnhSpriteNgoaiHinhRS025Max(value: DONVIHINHANHSPRITECOBAN(), caiDatUuTien: true).catchError((e) => null),
         onCaiDatDonViHinhAnhSpriteNgoaiHinhRS025PartSS010(value: DONVIHINHANHSPRITECOBAN(), caiDatUuTien: true).catchError((e) => null),
         onCaiDatDonViHinhAnhSpriteNgoaiHinhRS025PartSS020(value: DONVIHINHANHSPRITECOBAN(), caiDatUuTien: true).catchError((e) => null),
         onCaiDatDonViHinhAnhSpriteNgoaiHinhRS025PartSS030(value: DONVIHINHANHSPRITECOBAN(), caiDatUuTien: true).catchError((e) => null),
@@ -128,6 +129,7 @@ class THUOCTINHHINHANHCOBAN with CAUTRUCTHUCTHICOBAN {
         onCaiDatDonViHinhAnhSpriteNgoaiHinhRS025PartSS250(value: DONVIHINHANHSPRITECOBAN(), caiDatUuTien: true).catchError((e) => null),
 
         onCaiDatDonViHinhAnhSpriteNgoaiHinhRS050(value: DONVIHINHANHSPRITECOBAN(), caiDatUuTien: true).catchError((e) => null),
+        onCaiDatDonViHinhAnhSpriteNgoaiHinhRS050Max(value: DONVIHINHANHSPRITECOBAN(), caiDatUuTien: true).catchError((e) => null),
         onCaiDatDonViHinhAnhSpriteNgoaiHinhRS050PartSS010(value: DONVIHINHANHSPRITECOBAN(), caiDatUuTien: true).catchError((e) => null),
         onCaiDatDonViHinhAnhSpriteNgoaiHinhRS050PartSS020(value: DONVIHINHANHSPRITECOBAN(), caiDatUuTien: true).catchError((e) => null),
         onCaiDatDonViHinhAnhSpriteNgoaiHinhRS050PartSS030(value: DONVIHINHANHSPRITECOBAN(), caiDatUuTien: true).catchError((e) => null),
@@ -155,6 +157,7 @@ class THUOCTINHHINHANHCOBAN with CAUTRUCTHUCTHICOBAN {
         onCaiDatDonViHinhAnhSpriteNgoaiHinhRS050PartSS250(value: DONVIHINHANHSPRITECOBAN(), caiDatUuTien: true).catchError((e) => null),
 
         onCaiDatDonViHinhAnhSpriteNgoaiHinhRS100(value: DONVIHINHANHSPRITECOBAN(), caiDatUuTien: true).catchError((e) => null),
+        onCaiDatDonViHinhAnhSpriteNgoaiHinhRS100Max(value: DONVIHINHANHSPRITECOBAN(), caiDatUuTien: true).catchError((e) => null),
         onCaiDatDonViHinhAnhSpriteNgoaiHinhRS100PartSS010(value: DONVIHINHANHSPRITECOBAN(), caiDatUuTien: true).catchError((e) => null),
         onCaiDatDonViHinhAnhSpriteNgoaiHinhRS100PartSS020(value: DONVIHINHANHSPRITECOBAN(), caiDatUuTien: true).catchError((e) => null),
         onCaiDatDonViHinhAnhSpriteNgoaiHinhRS100PartSS030(value: DONVIHINHANHSPRITECOBAN(), caiDatUuTien: true).catchError((e) => null),
@@ -258,6 +261,7 @@ class THUOCTINHHINHANHCOBAN with CAUTRUCTHUCTHICOBAN {
         getDonViHinhAnhSpriteNgoaiHinhPartSS250?.onAttachRoot(attachValue: attachValue).catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onAttachRootForSubCom'),
 
         getDonViHinhAnhSpriteNgoaiHinhRS025?.onAttachRoot(attachValue: attachValue).catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onAttachRootForSubCom'),
+        getDonViHinhAnhSpriteNgoaiHinhRS025Max?.onAttachRoot(attachValue: attachValue).catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onAttachRootForSubCom'),
         getDonViHinhAnhSpriteNgoaiHinhRS025PartSS010?.onAttachRoot(attachValue: attachValue).catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onAttachRootForSubCom'),
         getDonViHinhAnhSpriteNgoaiHinhRS025PartSS020?.onAttachRoot(attachValue: attachValue).catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onAttachRootForSubCom'),
         getDonViHinhAnhSpriteNgoaiHinhRS025PartSS030?.onAttachRoot(attachValue: attachValue).catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onAttachRootForSubCom'),
@@ -285,6 +289,7 @@ class THUOCTINHHINHANHCOBAN with CAUTRUCTHUCTHICOBAN {
         getDonViHinhAnhSpriteNgoaiHinhRS025PartSS250?.onAttachRoot(attachValue: attachValue).catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onAttachRootForSubCom'),
 
         getDonViHinhAnhSpriteNgoaiHinhRS050?.onAttachRoot(attachValue: attachValue).catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onAttachRootForSubCom'),
+        getDonViHinhAnhSpriteNgoaiHinhRS050Max?.onAttachRoot(attachValue: attachValue).catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onAttachRootForSubCom'),
         getDonViHinhAnhSpriteNgoaiHinhRS050PartSS010?.onAttachRoot(attachValue: attachValue).catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onAttachRootForSubCom'),
         getDonViHinhAnhSpriteNgoaiHinhRS050PartSS020?.onAttachRoot(attachValue: attachValue).catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onAttachRootForSubCom'),
         getDonViHinhAnhSpriteNgoaiHinhRS050PartSS030?.onAttachRoot(attachValue: attachValue).catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onAttachRootForSubCom'),
@@ -312,6 +317,7 @@ class THUOCTINHHINHANHCOBAN with CAUTRUCTHUCTHICOBAN {
         getDonViHinhAnhSpriteNgoaiHinhRS050PartSS250?.onAttachRoot(attachValue: attachValue).catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onAttachRootForSubCom'),
 
         getDonViHinhAnhSpriteNgoaiHinhRS100?.onAttachRoot(attachValue: attachValue).catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onAttachRootForSubCom'),
+        getDonViHinhAnhSpriteNgoaiHinhRS100Max?.onAttachRoot(attachValue: attachValue).catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onAttachRootForSubCom'),
         getDonViHinhAnhSpriteNgoaiHinhRS100PartSS010?.onAttachRoot(attachValue: attachValue).catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onAttachRootForSubCom'),
         getDonViHinhAnhSpriteNgoaiHinhRS100PartSS020?.onAttachRoot(attachValue: attachValue).catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onAttachRootForSubCom'),
         getDonViHinhAnhSpriteNgoaiHinhRS100PartSS030?.onAttachRoot(attachValue: attachValue).catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onAttachRootForSubCom'),
@@ -702,6 +708,10 @@ class THUOCTINHHINHANHCOBAN with CAUTRUCTHUCTHICOBAN {
     /// TODO: Nguồn Sprite Cơ Bản
     /// -----
     final String nguonSpriteCoBan = getNguonHinhAnhCoBan ?? '';
+
+    // final String nguonSpriteRS100Max = '$nguonSpriteCoBan/$nguonSpriteStoreRS100Max';
+    // final String nguonSpriteRS050Max = '$nguonSpriteCoBan/$nguonSpriteStoreRS050Max';
+    // final String nguonSpriteRS025Max = '$nguonSpriteCoBan/$nguonSpriteStoreRS025Max';
 
     /// -----
     /// TODO: Ngoại Hình Part SS010
@@ -1449,6 +1459,15 @@ class THUOCTINHHINHANHCOBAN with CAUTRUCTHUCTHICOBAN {
     /// TODO: Nguồn Sprite Cơ Bản
     /// -----
     final String nguonSpriteCoBan = getNguonHinhAnhCoBan ?? '';
+
+    final String nguonSpriteRS100Max = '$nguonSpriteCoBan/$nguonSpriteStoreRS100Max';
+    final String nguonSpriteRS050Max = '$nguonSpriteCoBan/$nguonSpriteStoreRS050Max';
+    final String nguonSpriteRS025Max = '$nguonSpriteCoBan/$nguonSpriteStoreRS025Max';
+
+    /// TODO:
+    getDonViHinhAnhSpriteNgoaiHinhRS025Max?.onVoidCaiDatNguonHinhAnh(value: nguonSpriteRS100Max, caiDatUuTien: true);
+    getDonViHinhAnhSpriteNgoaiHinhRS050Max?.onVoidCaiDatNguonHinhAnh(value: nguonSpriteRS050Max, caiDatUuTien: true);
+    getDonViHinhAnhSpriteNgoaiHinhRS100Max?.onVoidCaiDatNguonHinhAnh(value: nguonSpriteRS025Max, caiDatUuTien: true);
 
     /// -----
     /// -----
@@ -2306,7 +2325,6 @@ class THUOCTINHHINHANHCOBAN with CAUTRUCTHUCTHICOBAN {
     getDonViHinhAnhSpriteNgoaiHinhRS050PartSS250?.onVoidCaiDatNguonHinhAnh(value: nguonSpriteRS050PartSS250, caiDatUuTien: true);
     getDonViHinhAnhSpriteNgoaiHinhRS100PartSS250?.onVoidCaiDatNguonHinhAnh(value: nguonSpriteRS100PartSS250, caiDatUuTien: true);
 
-
     ///
     return;
   }
@@ -2314,6 +2332,7 @@ class THUOCTINHHINHANHCOBAN with CAUTRUCTHUCTHICOBAN {
   /// -----
   /// TODO:
   /// -----
+  final String nguonSpriteStoreRS100Max = '02_SpriteStore/Def200_4/sps_rs100_max.webp';
   final String nguonSpriteStoreRS100PartSS010 = '02_SpriteStore/Def200_4/sps_rs100_part_ss001.png';
   final String nguonSpriteStoreRS100PartSS020 = '02_SpriteStore/Def200_4/sps_rs100_part_ss002.png';
   final String nguonSpriteStoreRS100PartSS030 = '02_SpriteStore/Def200_4/sps_rs100_part_ss003.png';
@@ -2340,6 +2359,7 @@ class THUOCTINHHINHANHCOBAN with CAUTRUCTHUCTHICOBAN {
   final String nguonSpriteStoreRS100PartSS240 = '02_SpriteStore/Def200_4/sps_rs100_part_ss024.png';
   final String nguonSpriteStoreRS100PartSS250 = '02_SpriteStore/Def200_4/sps_rs100_part_ss025.png';
 
+  final String nguonSpriteStoreRS050Max = '02_SpriteStore/Def050_4/sps_rs050_max.webp';
   final String nguonSpriteStoreRS050PartSS010 = '02_SpriteStore/Def050_4/sps_rs050_part_ss001.png';
   final String nguonSpriteStoreRS050PartSS020 = '02_SpriteStore/Def050_4/sps_rs050_part_ss002.png';
   final String nguonSpriteStoreRS050PartSS030 = '02_SpriteStore/Def050_4/sps_rs050_part_ss003.png';
@@ -2366,6 +2386,7 @@ class THUOCTINHHINHANHCOBAN with CAUTRUCTHUCTHICOBAN {
   final String nguonSpriteStoreRS050PartSS240 = '02_SpriteStore/Def050_4/sps_rs050_part_ss024.png';
   final String nguonSpriteStoreRS050PartSS250 = '02_SpriteStore/Def050_4/sps_rs050_part_ss025.png';
 
+  final String nguonSpriteStoreRS025Max = '02_SpriteStore/Def025_4/sps_rs025_max.webp';
   final String nguonSpriteStoreRS025PartSS010 = '02_SpriteStore/Def025_4/sps_rs025_part_ss001.png';
   final String nguonSpriteStoreRS025PartSS020 = '02_SpriteStore/Def025_4/sps_rs025_part_ss002.png';
   final String nguonSpriteStoreRS025PartSS030 = '02_SpriteStore/Def025_4/sps_rs025_part_ss003.png';
@@ -2376,7 +2397,6 @@ class THUOCTINHHINHANHCOBAN with CAUTRUCTHUCTHICOBAN {
   final String nguonSpriteStoreRS025PartSS080 = '02_SpriteStore/Def025_4/sps_rs025_part_ss008.png';
   final String nguonSpriteStoreRS025PartSS090 = '02_SpriteStore/Def025_4/sps_rs025_part_ss009.png';
   final String nguonSpriteStoreRS025PartSS100 = '02_SpriteStore/Def025_4/sps_rs025_part_ss010.png';
-
   final String nguonSpriteStoreRS025PartSS110 = '02_SpriteStore/Def025_4/sps_rs025_part_ss011.png';
   final String nguonSpriteStoreRS025PartSS120 = '02_SpriteStore/Def025_4/sps_rs025_part_ss012.png';
   final String nguonSpriteStoreRS025PartSS130 = '02_SpriteStore/Def025_4/sps_rs025_part_ss013.png';
@@ -3060,6 +3080,33 @@ class THUOCTINHHINHANHCOBAN with CAUTRUCTHUCTHICOBAN {
   ///
   ///
   ///
+  /// TODO: Ngoại Hình Resized RS025 - Max
+  ///
+  ///
+  ///
+  ///
+  ///
+
+  /// -----
+  /// TODO: Đơn Vị Hình Ảnh Sprite Ngoại Hình Resized RS025 - Max
+  /// -----
+  DONVIHINHANHSPRITECOBAN? _donViHinhAnhSpriteNgoaiHinhRS025Max;
+  DONVIHINHANHSPRITECOBAN? get getDonViHinhAnhSpriteNgoaiHinhRS025Max => _donViHinhAnhSpriteNgoaiHinhRS025Max;
+  Future<void> onCaiDatDonViHinhAnhSpriteNgoaiHinhRS025Max({required DONVIHINHANHSPRITECOBAN? value, bool? caiDatUuTien}) async {
+    if (caiDatUuTien == true) {
+      _donViHinhAnhSpriteNgoaiHinhRS025Max = value;
+    } else {
+      _donViHinhAnhSpriteNgoaiHinhRS025Max ??= value;
+    }
+
+    return;
+  }
+
+  ///
+  ///
+  ///
+  ///
+  ///
   /// TODO: Ngoại Hình Resized RS025
   ///
   ///
@@ -3462,6 +3509,33 @@ class THUOCTINHHINHANHCOBAN with CAUTRUCTHUCTHICOBAN {
   ///
   ///
   ///
+  /// TODO: Ngoại Hình Resized RS050 - Max
+  ///
+  ///
+  ///
+  ///
+  ///
+
+  /// -----
+  /// TODO: Đơn Vị Hình Ảnh Sprite Ngoại Hình Resized RS050 - Max
+  /// -----
+  DONVIHINHANHSPRITECOBAN? _donViHinhAnhSpriteNgoaiHinhRS050Max;
+  DONVIHINHANHSPRITECOBAN? get getDonViHinhAnhSpriteNgoaiHinhRS050Max => _donViHinhAnhSpriteNgoaiHinhRS050Max;
+  Future<void> onCaiDatDonViHinhAnhSpriteNgoaiHinhRS050Max({required DONVIHINHANHSPRITECOBAN? value, bool? caiDatUuTien}) async {
+    if (caiDatUuTien == true) {
+      _donViHinhAnhSpriteNgoaiHinhRS050Max = value;
+    } else {
+      _donViHinhAnhSpriteNgoaiHinhRS050Max ??= value;
+    }
+
+    return;
+  }
+
+  ///
+  ///
+  ///
+  ///
+  ///
   /// TODO: Ngoại Hình Resized RS050
   ///
   ///
@@ -3854,6 +3928,33 @@ class THUOCTINHHINHANHCOBAN with CAUTRUCTHUCTHICOBAN {
       _donViHinhAnhSpriteNgoaiHinhRS050PartSS250 = value;
     } else {
       _donViHinhAnhSpriteNgoaiHinhRS050PartSS250 ??= value;
+    }
+
+    return;
+  }
+
+  ///
+  ///
+  ///
+  ///
+  ///
+  /// TODO: Ngoại Hình Resized RS100 - Max
+  ///
+  ///
+  ///
+  ///
+  ///
+
+  /// -----
+  /// TODO: Đơn Vị Hình Ảnh Sprite Ngoại Hình Resized RS100 - Max
+  /// -----
+  DONVIHINHANHSPRITECOBAN? _donViHinhAnhSpriteNgoaiHinhRS100Max;
+  DONVIHINHANHSPRITECOBAN? get getDonViHinhAnhSpriteNgoaiHinhRS100Max => _donViHinhAnhSpriteNgoaiHinhRS100Max;
+  Future<void> onCaiDatDonViHinhAnhSpriteNgoaiHinhRS100Max({required DONVIHINHANHSPRITECOBAN? value, bool? caiDatUuTien}) async {
+    if (caiDatUuTien == true) {
+      _donViHinhAnhSpriteNgoaiHinhRS100Max = value;
+    } else {
+      _donViHinhAnhSpriteNgoaiHinhRS100Max ??= value;
     }
 
     return;

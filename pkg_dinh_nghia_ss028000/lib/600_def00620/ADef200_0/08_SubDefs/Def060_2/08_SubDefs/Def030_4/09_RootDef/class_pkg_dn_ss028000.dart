@@ -73,7 +73,7 @@ class TENLUATANCONGSS020CDCDCSSSS10SS050 extends TENLUATANCONGCOBAN {
     /// -----
     /// TODO: Thông Số Frame
     /// -----
-    final int tongSoPart = 24;
+    final int tongSoPart = 1;
     final int tongSoFrame = 4;
     final int tongSoFrameTrenHang = 2;
     final double chieuRongFrame = 300.0;

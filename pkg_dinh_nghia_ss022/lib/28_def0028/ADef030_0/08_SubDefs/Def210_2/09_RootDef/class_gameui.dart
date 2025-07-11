@@ -75,12 +75,19 @@ class GAMEUINUTBAMCHONTABCUAHANGKHONGKICHHOAT extends THANHPHANGAMEUICOBAN {
     final String nguonSpriteRS050PartSS006 = '07_Resized/Def50/sps_rs050_part_ss006.png';
 
     /// TODO: Resized 100
-    final String nguonSpriteRS100PartSS001 = '07_Resized/Def90/sps_rs100_part_ss001.png';
-    final String nguonSpriteRS100PartSS002 = '07_Resized/Def90/sps_rs100_part_ss002.png';
-    final String nguonSpriteRS100PartSS003 = '07_Resized/Def90/sps_rs100_part_ss003.png';
-    final String nguonSpriteRS100PartSS004 = '07_Resized/Def90/sps_rs100_part_ss004.png';
-    final String nguonSpriteRS100PartSS005 = '07_Resized/Def90/sps_rs100_part_ss005.png';
-    final String nguonSpriteRS100PartSS006 = '07_Resized/Def90/sps_rs100_part_ss006.png';
+    // final String nguonSpriteRS100PartSS001 = '07_Resized/Def90/sps_rs100_part_ss001.png';
+    // final String nguonSpriteRS100PartSS002 = '07_Resized/Def90/sps_rs100_part_ss002.png';
+    // final String nguonSpriteRS100PartSS003 = '07_Resized/Def90/sps_rs100_part_ss003.png';
+    // final String nguonSpriteRS100PartSS004 = '07_Resized/Def90/sps_rs100_part_ss004.png';
+    // final String nguonSpriteRS100PartSS005 = '07_Resized/Def90/sps_rs100_part_ss005.png';
+    // final String nguonSpriteRS100PartSS006 = '07_Resized/Def90/sps_rs100_part_ss006.png';
+
+    final String nguonSpriteRS100PartSS001 = '07_Resized/Def90/sps_rs100_part_ss001.webp';
+    final String nguonSpriteRS100PartSS002 = '07_Resized/Def90/sps_rs100_part_ss002.webp';
+    final String nguonSpriteRS100PartSS003 = '07_Resized/Def90/sps_rs100_part_ss003.webp';
+    final String nguonSpriteRS100PartSS004 = '07_Resized/Def90/sps_rs100_part_ss004.webp';
+    final String nguonSpriteRS100PartSS005 = '07_Resized/Def90/sps_rs100_part_ss005.webp';
+    final String nguonSpriteRS100PartSS006 = '07_Resized/Def90/sps_rs100_part_ss006.webp';
 
     /// -----
     /// TODO: Ngoại Hình GameUI Part SS01

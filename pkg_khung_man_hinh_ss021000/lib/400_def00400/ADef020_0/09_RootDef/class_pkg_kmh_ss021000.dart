@@ -175,7 +175,9 @@ class KHUNGMANHINHMASTERLOADING extends THANHPHANMANHINHTHUOCCAPCOBAN {
   Future<void> onLoad() async {
     super.onLoad();
 
-    _timer = flutter_async.Timer.periodic(Duration(milliseconds: 20), (_) async {
+    // await getGameController?.onKhoiDongGameCoSoSS999();
+
+    _timer = flutter_async.Timer.periodic(Duration(milliseconds: 1000), (_) async {
 
       await getGlobalState?.onGetEntityResourceManagement?.getQuanLyTrangThaiHangarChienDauCo?.onTaiTaiNguyenChienDauCo(
           onThucThiHoanTat: () async {

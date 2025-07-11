@@ -65,7 +65,8 @@ class GAMEUIKHUNGMANHINHTHUOCCAPCOBAN extends THANHPHANGAMEUICOBAN {
     /// TODO: Resized 50
 
     /// TODO: Resized 100
-    final String nguonSpriteRS100FullPicture = '07_Resized/Def90/sps_rs100_full_picture.png';
+    // final String nguonSpriteRS100FullPicture = '07_Resized/Def90/sps_rs100_full_picture.png';
+    final String nguonSpriteRS100FullPicture = '07_Resized/Def90/sps_rs100_full_picture.webp';
 
     /// -----
     /// TODO: Ngoại Hình GameUI FullPicture

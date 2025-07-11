@@ -94,7 +94,7 @@ class MOHINHCHIENDAUCO00E03SS020 extends MOHINHCHIENDAUCOCOBAN {
     // final double chieuRongFrame = 320.0;
     // final double chieuCaoFrame = 350.0;
 
-    final int tongSoPart = 24;
+    final int tongSoPart = 1;
     final int tongSoFrame = 4;
     final int tongSoFrameTrenHang = 2;
     final double chieuRongFrame = 320.0;

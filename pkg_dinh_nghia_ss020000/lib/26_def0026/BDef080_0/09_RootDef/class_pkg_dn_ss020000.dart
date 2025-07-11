@@ -2146,3691 +2146,121 @@ class THUOCTINHTAINGUYENCOBAN with CAUTRUCTHUCTHICOBAN {
     return;
   }
 
-
-
   /// -----
   /// -----
-  /// TODO: Truy Xuất Tài Nguyên Hình Ảnh Ngoại Hình
+  /// TODO: Tải Tài Nguyên Hình Ảnh Ngoại Hình Part SS01
   /// -----
   /// -----
-  Future<void> onTruyXuatTaiNguyenHinhAnhNgoaiHinhTheoTuanTu({
-    required String? maDinhDanh, //
-    required THUOCTINHHINHANHCOBAN? thuocTinhHinhAnh, //
-    required VoidCallback? onThucThiHoanTat, //
-    bool? caiDatUuTienKichThuocRS100,
-    bool? caiDatUuTienKichThuocRS050,
+  Future<void> onTaiTaiNguyenHinhAnhNgoaiHinhMax({
+    required THUOCTINHHINHANHCOBAN? thuocTinhHinhAnh,
+    VoidCallback? onThucThiHoanTat,
     bool? caiDatUuTienKichThuocRS025,
+    bool? caiDatUuTienKichThuocRS050,
+    bool? caiDatUuTienKichThuocRS100,
   }) async {
     /// -----
     /// TODO:
     /// -----
+    int tongSoFrame = 90;
+    int soFrameTrenHang = 10;
+    double chieuRongFrame = 0;
+    double chieuCaoFrame = 0;
+    String? nguonSpriteSheet;
 
-    if (thuocTinhHinhAnh?.getKichThuocRS100 == true || caiDatUuTienKichThuocRS100 == true) {
-      if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100?.getSpriteAnimation?.frames.isNotEmpty == true) {
-        return;
-      }
-    }
-
-    /// -----
-    /// TODO:
-    /// -----
-    if (thuocTinhHinhAnh?.getKichThuocRS050 == true || caiDatUuTienKichThuocRS050 == true) {
-      if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050?.getSpriteAnimation?.frames.isNotEmpty == true) {
-        return;
-      }
-    }
-
-    /// -----
-    /// TODO:
-    /// -----
+    ///
     if (thuocTinhHinhAnh?.getKichThuocRS025 == true || caiDatUuTienKichThuocRS025 == true) {
-      if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025?.getSpriteAnimation?.frames.isNotEmpty == true) {
-        return;
-      }
-    }
-
-    int tongSoPart = 0;
-    tongSoPart = thuocTinhHinhAnh?.getTongSoPart ?? thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinh?.getTongSoPart ?? 0;
-
-    List<SpriteAnimationFrame>? _ngoaiHinhFrames = [];
-
-    List<SpriteAnimationFrame>? _ngoaiHinhFramePartSS01 = [];
-    List<SpriteAnimationFrame>? _ngoaiHinhFramePartSS02 = [];
-    List<SpriteAnimationFrame>? _ngoaiHinhFramePartSS03 = [];
-    List<SpriteAnimationFrame>? _ngoaiHinhFramePartSS04 = [];
-    List<SpriteAnimationFrame>? _ngoaiHinhFramePartSS05 = [];
-    List<SpriteAnimationFrame>? _ngoaiHinhFramePartSS06 = [];
-    List<SpriteAnimationFrame>? _ngoaiHinhFramePartSS07 = [];
-    List<SpriteAnimationFrame>? _ngoaiHinhFramePartSS08 = [];
-    List<SpriteAnimationFrame>? _ngoaiHinhFramePartSS09 = [];
-    List<SpriteAnimationFrame>? _ngoaiHinhFramePartSS10 = [];
-    List<SpriteAnimationFrame>? _ngoaiHinhFramePartSS11 = [];
-    List<SpriteAnimationFrame>? _ngoaiHinhFramePartSS12 = [];
-    List<SpriteAnimationFrame>? _ngoaiHinhFramePartSS13 = [];
-    List<SpriteAnimationFrame>? _ngoaiHinhFramePartSS14 = [];
-    List<SpriteAnimationFrame>? _ngoaiHinhFramePartSS15 = [];
-    List<SpriteAnimationFrame>? _ngoaiHinhFramePartSS16 = [];
-    List<SpriteAnimationFrame>? _ngoaiHinhFramePartSS17 = [];
-    List<SpriteAnimationFrame>? _ngoaiHinhFramePartSS18 = [];
-    List<SpriteAnimationFrame>? _ngoaiHinhFramePartSS19 = [];
-    List<SpriteAnimationFrame>? _ngoaiHinhFramePartSS20 = [];
-    List<SpriteAnimationFrame>? _ngoaiHinhFramePartSS21 = [];
-    List<SpriteAnimationFrame>? _ngoaiHinhFramePartSS22 = [];
-    List<SpriteAnimationFrame>? _ngoaiHinhFramePartSS23 = [];
-    List<SpriteAnimationFrame>? _ngoaiHinhFramePartSS24 = [];
-    List<SpriteAnimationFrame>? _ngoaiHinhFramePartSS25 = [];
-
-    if (thuocTinhHinhAnh?.getTienTrinh?.isTienTrinhNguyenBan() == true) {
-      /// -----
-      /// TODO:
-      /// -----
-
-      List<String> danhSachNguonHinhAnh = [];
-
-      // String nguonSpriteSheetRS100PartSS010 = '';
-      // String nguonSpriteSheetRS100PartSS020 = '';
-      // String nguonSpriteSheetRS100PartSS030 = '';
-      // String nguonSpriteSheetRS100PartSS040 = '';
-      // String nguonSpriteSheetRS100PartSS050 = '';
-      // String nguonSpriteSheetRS100PartSS060 = '';
-      // String nguonSpriteSheetRS100PartSS070 = '';
-      // String nguonSpriteSheetRS100PartSS080 = '';
-      // String nguonSpriteSheetRS100PartSS090 = '';
-      // String nguonSpriteSheetRS100PartSS100 = '';
-      //
-      // String nguonSpriteSheetRS100PartSS110 = '';
-      // String nguonSpriteSheetRS100PartSS120 = '';
-      // String nguonSpriteSheetRS100PartSS130 = '';
-      // String nguonSpriteSheetRS100PartSS140 = '';
-      // String nguonSpriteSheetRS100PartSS150 = '';
-      // String nguonSpriteSheetRS100PartSS160 = '';
-      // String nguonSpriteSheetRS100PartSS170 = '';
-      // String nguonSpriteSheetRS100PartSS180 = '';
-      // String nguonSpriteSheetRS100PartSS190 = '';
-      // String nguonSpriteSheetRS100PartSS200 = '';
-      //
-      // String nguonSpriteSheetRS100PartSS210 = '';
-      // String nguonSpriteSheetRS100PartSS220 = '';
-      // String nguonSpriteSheetRS100PartSS230 = '';
-      // String nguonSpriteSheetRS100PartSS240 = '';
-      // String nguonSpriteSheetRS100PartSS250 = '';
-      //
-      // _ngoaiHinhFrames?.clear();
-      //
-      // _ngoaiHinhFramePartSS01?.clear();
-      // _ngoaiHinhFramePartSS02?.clear();
-      // _ngoaiHinhFramePartSS03?.clear();
-      // _ngoaiHinhFramePartSS04?.clear();
-      // _ngoaiHinhFramePartSS05?.clear();
-      // _ngoaiHinhFramePartSS06?.clear();
-      // _ngoaiHinhFramePartSS07?.clear();
-      // _ngoaiHinhFramePartSS08?.clear();
-      // _ngoaiHinhFramePartSS09?.clear();
-      // _ngoaiHinhFramePartSS10?.clear();
-      // _ngoaiHinhFramePartSS11?.clear();
-      // _ngoaiHinhFramePartSS12?.clear();
-      // _ngoaiHinhFramePartSS13?.clear();
-      // _ngoaiHinhFramePartSS14?.clear();
-      // _ngoaiHinhFramePartSS15?.clear();
-      // _ngoaiHinhFramePartSS16?.clear();
-      // _ngoaiHinhFramePartSS17?.clear();
-      // _ngoaiHinhFramePartSS18?.clear();
-      // _ngoaiHinhFramePartSS19?.clear();
-      // _ngoaiHinhFramePartSS20?.clear();
-      // _ngoaiHinhFramePartSS21?.clear();
-      // _ngoaiHinhFramePartSS22?.clear();
-      // _ngoaiHinhFramePartSS23?.clear();
-      // _ngoaiHinhFramePartSS24?.clear();
-      // _ngoaiHinhFramePartSS25?.clear();
-
-      /// -----
-      /// TODO:
-      /// -----
-      if (tongSoPart >= 1) {
-        if (thuocTinhHinhAnh?.getKichThuocRS100 == true || caiDatUuTienKichThuocRS100 == true) {
-          String nguonSpriteSheetRS100PartSS010 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS010?.getNguonHinhAnh ?? '';
-          if (nguonSpriteSheetRS100PartSS010.isNotEmpty == true) {
-            danhSachNguonHinhAnh.add(nguonSpriteSheetRS100PartSS010);
-          }
-        }
-        if (thuocTinhHinhAnh?.getKichThuocRS050 == true || caiDatUuTienKichThuocRS050 == true) {
-          String nguonSpriteSheetRS050PartSS010 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS010?.getNguonHinhAnh ?? '';
-          if (nguonSpriteSheetRS050PartSS010.isNotEmpty == true) {
-            danhSachNguonHinhAnh.add(nguonSpriteSheetRS050PartSS010);
-          }
-        }
-        if (thuocTinhHinhAnh?.getKichThuocRS025 == true || caiDatUuTienKichThuocRS025 == true) {
-          String nguonSpriteSheetRS025PartSS010 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS010?.getNguonHinhAnh ?? '';
-          if (nguonSpriteSheetRS025PartSS010.isNotEmpty == true) {
-            danhSachNguonHinhAnh.add(nguonSpriteSheetRS025PartSS010);
-          }
-        }
-      }
-
-      /// -----
-      /// TODO:
-      /// -----
-      if (tongSoPart >= 2) {
-        if (thuocTinhHinhAnh?.getKichThuocRS100 == true || caiDatUuTienKichThuocRS100 == true) {
-          String nguonSpriteSheetRS100PartSS020 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS020?.getNguonHinhAnh ?? '';
-          if (nguonSpriteSheetRS100PartSS020.isNotEmpty == true) {
-            danhSachNguonHinhAnh.add(nguonSpriteSheetRS100PartSS020);
-          }
-        }
-        if (thuocTinhHinhAnh?.getKichThuocRS050 == true || caiDatUuTienKichThuocRS050 == true) {
-          String nguonSpriteSheetRS050PartSS020 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS020?.getNguonHinhAnh ?? '';
-          if (nguonSpriteSheetRS050PartSS020.isNotEmpty == true) {
-            danhSachNguonHinhAnh.add(nguonSpriteSheetRS050PartSS020);
-          }
-        }
-        if (thuocTinhHinhAnh?.getKichThuocRS025 == true || caiDatUuTienKichThuocRS025 == true) {
-          String nguonSpriteSheetRS025PartSS020 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS020?.getNguonHinhAnh ?? '';
-          if (nguonSpriteSheetRS025PartSS020.isNotEmpty == true) {
-            danhSachNguonHinhAnh.add(nguonSpriteSheetRS025PartSS020);
-          }
-        }
-      }
-
-      /// -----
-      /// TODO:
-      /// -----
-      if (tongSoPart >= 3) {
-        if (thuocTinhHinhAnh?.getKichThuocRS100 == true || caiDatUuTienKichThuocRS100 == true) {
-          String nguonSpriteSheetRS100PartSS030 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS030?.getNguonHinhAnh ?? '';
-          if (nguonSpriteSheetRS100PartSS030.isNotEmpty == true) {
-            danhSachNguonHinhAnh.add(nguonSpriteSheetRS100PartSS030);
-          }
-        }
-        if (thuocTinhHinhAnh?.getKichThuocRS050 == true || caiDatUuTienKichThuocRS050 == true) {
-          String nguonSpriteSheetRS050PartSS030 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS030?.getNguonHinhAnh ?? '';
-          if (nguonSpriteSheetRS050PartSS030.isNotEmpty == true) {
-            danhSachNguonHinhAnh.add(nguonSpriteSheetRS050PartSS030);
-          }
-        }
-        if (thuocTinhHinhAnh?.getKichThuocRS025 == true || caiDatUuTienKichThuocRS025 == true) {
-          String nguonSpriteSheetRS025PartSS030 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS030?.getNguonHinhAnh ?? '';
-          if (nguonSpriteSheetRS025PartSS030.isNotEmpty == true) {
-            danhSachNguonHinhAnh.add(nguonSpriteSheetRS025PartSS030);
-          }
-        }
-      }
-
-      /// -----
-      /// TODO:
-      /// -----
-      if (tongSoPart >= 4) {
-        if (thuocTinhHinhAnh?.getKichThuocRS100 == true || caiDatUuTienKichThuocRS100 == true) {
-          String nguonSpriteSheetRS100PartSS040 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS040?.getNguonHinhAnh ?? '';
-          if (nguonSpriteSheetRS100PartSS040.isNotEmpty == true) {
-            danhSachNguonHinhAnh.add(nguonSpriteSheetRS100PartSS040);
-          }
-        }
-        if (thuocTinhHinhAnh?.getKichThuocRS050 == true || caiDatUuTienKichThuocRS050 == true) {
-          String nguonSpriteSheetRS050PartSS040 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS040?.getNguonHinhAnh ?? '';
-          if (nguonSpriteSheetRS050PartSS040.isNotEmpty == true) {
-            danhSachNguonHinhAnh.add(nguonSpriteSheetRS050PartSS040);
-          }
-        }
-        if (thuocTinhHinhAnh?.getKichThuocRS025 == true || caiDatUuTienKichThuocRS025 == true) {
-          String nguonSpriteSheetRS025PartSS040 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS040?.getNguonHinhAnh ?? '';
-          if (nguonSpriteSheetRS025PartSS040.isNotEmpty == true) {
-            danhSachNguonHinhAnh.add(nguonSpriteSheetRS025PartSS040);
-          }
-        }
-      }
-
-      /// -----
-      /// TODO:
-      /// -----
-      if (tongSoPart >= 5) {
-        if (thuocTinhHinhAnh?.getKichThuocRS100 == true || caiDatUuTienKichThuocRS100 == true) {
-          String nguonSpriteSheetRS100PartSS050 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS050?.getNguonHinhAnh ?? '';
-          if (nguonSpriteSheetRS100PartSS050.isNotEmpty == true) {
-            danhSachNguonHinhAnh.add(nguonSpriteSheetRS100PartSS050);
-          }
-        }
-        if (thuocTinhHinhAnh?.getKichThuocRS050 == true || caiDatUuTienKichThuocRS050 == true) {
-          String nguonSpriteSheetRS050PartSS050 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS050?.getNguonHinhAnh ?? '';
-          if (nguonSpriteSheetRS050PartSS050.isNotEmpty == true) {
-            danhSachNguonHinhAnh.add(nguonSpriteSheetRS050PartSS050);
-          }
-        }
-        if (thuocTinhHinhAnh?.getKichThuocRS025 == true || caiDatUuTienKichThuocRS025 == true) {
-          String nguonSpriteSheetRS025PartSS050 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS050?.getNguonHinhAnh ?? '';
-          if (nguonSpriteSheetRS025PartSS050.isNotEmpty == true) {
-            danhSachNguonHinhAnh.add(nguonSpriteSheetRS025PartSS050);
-          }
-        }
-      }
-
-      /// -----
-      /// TODO:
-      /// -----
-      if (tongSoPart >= 6) {
-        if (thuocTinhHinhAnh?.getKichThuocRS100 == true || caiDatUuTienKichThuocRS100 == true) {
-          String nguonSpriteSheetRS100PartSS060 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS060?.getNguonHinhAnh ?? '';
-          if (nguonSpriteSheetRS100PartSS060.isNotEmpty == true) {
-            danhSachNguonHinhAnh.add(nguonSpriteSheetRS100PartSS060);
-          }
-        }
-        if (thuocTinhHinhAnh?.getKichThuocRS050 == true || caiDatUuTienKichThuocRS050 == true) {
-          String nguonSpriteSheetRS050PartSS060 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS060?.getNguonHinhAnh ?? '';
-          if (nguonSpriteSheetRS050PartSS060.isNotEmpty == true) {
-            danhSachNguonHinhAnh.add(nguonSpriteSheetRS050PartSS060);
-          }
-        }
-        if (thuocTinhHinhAnh?.getKichThuocRS025 == true || caiDatUuTienKichThuocRS025 == true) {
-          String nguonSpriteSheetRS025PartSS060 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS060?.getNguonHinhAnh ?? '';
-          if (nguonSpriteSheetRS025PartSS060.isNotEmpty == true) {
-            danhSachNguonHinhAnh.add(nguonSpriteSheetRS025PartSS060);
-          }
-        }
-      }
-
-      /// -----
-      /// TODO:
-      /// -----
-      if (tongSoPart >= 7) {
-        if (thuocTinhHinhAnh?.getKichThuocRS100 == true || caiDatUuTienKichThuocRS100 == true) {
-          String nguonSpriteSheetRS100PartSS070 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS070?.getNguonHinhAnh ?? '';
-          if (nguonSpriteSheetRS100PartSS070.isNotEmpty == true) {
-            danhSachNguonHinhAnh.add(nguonSpriteSheetRS100PartSS070);
-          }
-        }
-        if (thuocTinhHinhAnh?.getKichThuocRS050 == true || caiDatUuTienKichThuocRS050 == true) {
-          String nguonSpriteSheetRS050PartSS070 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS070?.getNguonHinhAnh ?? '';
-          if (nguonSpriteSheetRS050PartSS070.isNotEmpty == true) {
-            danhSachNguonHinhAnh.add(nguonSpriteSheetRS050PartSS070);
-          }
-        }
-        if (thuocTinhHinhAnh?.getKichThuocRS025 == true || caiDatUuTienKichThuocRS025 == true) {
-          String nguonSpriteSheetRS025PartSS070 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS070?.getNguonHinhAnh ?? '';
-          if (nguonSpriteSheetRS025PartSS070.isNotEmpty == true) {
-            danhSachNguonHinhAnh.add(nguonSpriteSheetRS025PartSS070);
-          }
-        }
-      }
-
-      /// -----
-      /// TODO:
-      /// -----
-      if (tongSoPart >= 8) {
-        if (thuocTinhHinhAnh?.getKichThuocRS100 == true || caiDatUuTienKichThuocRS100 == true) {
-          String nguonSpriteSheetRS100PartSS080 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS080?.getNguonHinhAnh ?? '';
-          if (nguonSpriteSheetRS100PartSS080.isNotEmpty == true) {
-            danhSachNguonHinhAnh.add(nguonSpriteSheetRS100PartSS080);
-          }
-        }
-        if (thuocTinhHinhAnh?.getKichThuocRS050 == true || caiDatUuTienKichThuocRS050 == true) {
-          String nguonSpriteSheetRS050PartSS080 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS080?.getNguonHinhAnh ?? '';
-          if (nguonSpriteSheetRS050PartSS080.isNotEmpty == true) {
-            danhSachNguonHinhAnh.add(nguonSpriteSheetRS050PartSS080);
-          }
-        }
-        if (thuocTinhHinhAnh?.getKichThuocRS025 == true || caiDatUuTienKichThuocRS025 == true) {
-          String nguonSpriteSheetRS025PartSS080 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS080?.getNguonHinhAnh ?? '';
-          if (nguonSpriteSheetRS025PartSS080.isNotEmpty == true) {
-            danhSachNguonHinhAnh.add(nguonSpriteSheetRS025PartSS080);
-          }
-        }
-      }
-
-      /// -----
-      /// TODO:
-      /// -----
-      if (tongSoPart >= 9) {
-        if (thuocTinhHinhAnh?.getKichThuocRS100 == true || caiDatUuTienKichThuocRS100 == true) {
-          String nguonSpriteSheetRS100PartSS090 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS090?.getNguonHinhAnh ?? '';
-          if (nguonSpriteSheetRS100PartSS090.isNotEmpty == true) {
-            danhSachNguonHinhAnh.add(nguonSpriteSheetRS100PartSS090);
-          }
-        }
-        if (thuocTinhHinhAnh?.getKichThuocRS050 == true || caiDatUuTienKichThuocRS050 == true) {
-          String nguonSpriteSheetRS050PartSS090 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS090?.getNguonHinhAnh ?? '';
-          if (nguonSpriteSheetRS050PartSS090.isNotEmpty == true) {
-            danhSachNguonHinhAnh.add(nguonSpriteSheetRS050PartSS090);
-          }
-        }
-        if (thuocTinhHinhAnh?.getKichThuocRS025 == true || caiDatUuTienKichThuocRS025 == true) {
-          String nguonSpriteSheetRS025PartSS090 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS090?.getNguonHinhAnh ?? '';
-          if (nguonSpriteSheetRS025PartSS090.isNotEmpty == true) {
-            danhSachNguonHinhAnh.add(nguonSpriteSheetRS025PartSS090);
-          }
-        }
-      }
-
-      /// -----
-      /// TODO:
-      /// -----
-      if (tongSoPart >= 10) {
-        if (thuocTinhHinhAnh?.getKichThuocRS100 == true || caiDatUuTienKichThuocRS100 == true) {
-          String nguonSpriteSheetRS100PartSS100 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS100?.getNguonHinhAnh ?? '';
-          if (nguonSpriteSheetRS100PartSS100.isNotEmpty == true) {
-            danhSachNguonHinhAnh.add(nguonSpriteSheetRS100PartSS100);
-          }
-        }
-        if (thuocTinhHinhAnh?.getKichThuocRS050 == true || caiDatUuTienKichThuocRS050 == true) {
-          String nguonSpriteSheetRS050PartSS100 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS100?.getNguonHinhAnh ?? '';
-          if (nguonSpriteSheetRS050PartSS100.isNotEmpty == true) {
-            danhSachNguonHinhAnh.add(nguonSpriteSheetRS050PartSS100);
-          }
-        }
-        if (thuocTinhHinhAnh?.getKichThuocRS025 == true || caiDatUuTienKichThuocRS025 == true) {
-          String nguonSpriteSheetRS025PartSS100 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS100?.getNguonHinhAnh ?? '';
-          if (nguonSpriteSheetRS025PartSS100.isNotEmpty == true) {
-            danhSachNguonHinhAnh.add(nguonSpriteSheetRS025PartSS100);
-          }
-        }
-      }
-
-      /// -----
-      /// TODO:
-      /// -----
-      if (tongSoPart >= 11) {
-        if (thuocTinhHinhAnh?.getKichThuocRS100 == true || caiDatUuTienKichThuocRS100 == true) {
-          String nguonSpriteSheetRS100PartSS110 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS110?.getNguonHinhAnh ?? '';
-          if (nguonSpriteSheetRS100PartSS110.isNotEmpty == true) {
-            danhSachNguonHinhAnh.add(nguonSpriteSheetRS100PartSS110);
-          }
-        }
-        if (thuocTinhHinhAnh?.getKichThuocRS050 == true || caiDatUuTienKichThuocRS050 == true) {
-          String nguonSpriteSheetRS050PartSS110 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS110?.getNguonHinhAnh ?? '';
-          if (nguonSpriteSheetRS050PartSS110.isNotEmpty == true) {
-            danhSachNguonHinhAnh.add(nguonSpriteSheetRS050PartSS110);
-          }
-        }
-        if (thuocTinhHinhAnh?.getKichThuocRS025 == true || caiDatUuTienKichThuocRS025 == true) {
-          String nguonSpriteSheetRS025PartSS110 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS110?.getNguonHinhAnh ?? '';
-          if (nguonSpriteSheetRS025PartSS110.isNotEmpty == true) {
-            danhSachNguonHinhAnh.add(nguonSpriteSheetRS025PartSS110);
-          }
-        }
-      }
-
-      /// -----
-      /// TODO:
-      /// -----
-      if (tongSoPart >= 12) {
-        if (thuocTinhHinhAnh?.getKichThuocRS100 == true || caiDatUuTienKichThuocRS100 == true) {
-          String nguonSpriteSheetRS100PartSS120 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS120?.getNguonHinhAnh ?? '';
-          if (nguonSpriteSheetRS100PartSS120.isNotEmpty == true) {
-            danhSachNguonHinhAnh.add(nguonSpriteSheetRS100PartSS120);
-          }
-        }
-        if (thuocTinhHinhAnh?.getKichThuocRS050 == true || caiDatUuTienKichThuocRS050 == true) {
-          String nguonSpriteSheetRS050PartSS120 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS120?.getNguonHinhAnh ?? '';
-          if (nguonSpriteSheetRS050PartSS120.isNotEmpty == true) {
-            danhSachNguonHinhAnh.add(nguonSpriteSheetRS050PartSS120);
-          }
-        }
-        if (thuocTinhHinhAnh?.getKichThuocRS025 == true || caiDatUuTienKichThuocRS025 == true) {
-          String nguonSpriteSheetRS025PartSS120 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS120?.getNguonHinhAnh ?? '';
-          if (nguonSpriteSheetRS025PartSS120.isNotEmpty == true) {
-            danhSachNguonHinhAnh.add(nguonSpriteSheetRS025PartSS120);
-          }
-        }
-      }
-
-      /// -----
-      /// TODO:
-      /// -----
-      if (tongSoPart >= 13) {
-        if (thuocTinhHinhAnh?.getKichThuocRS100 == true || caiDatUuTienKichThuocRS100 == true) {
-          String nguonSpriteSheetRS100PartSS130 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS130?.getNguonHinhAnh ?? '';
-          if (nguonSpriteSheetRS100PartSS130.isNotEmpty == true) {
-            danhSachNguonHinhAnh.add(nguonSpriteSheetRS100PartSS130);
-          }
-        }
-        if (thuocTinhHinhAnh?.getKichThuocRS050 == true || caiDatUuTienKichThuocRS050 == true) {
-          String nguonSpriteSheetRS050PartSS130 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS130?.getNguonHinhAnh ?? '';
-          if (nguonSpriteSheetRS050PartSS130.isNotEmpty == true) {
-            danhSachNguonHinhAnh.add(nguonSpriteSheetRS050PartSS130);
-          }
-        }
-        if (thuocTinhHinhAnh?.getKichThuocRS025 == true || caiDatUuTienKichThuocRS025 == true) {
-          String nguonSpriteSheetRS025PartSS130 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS130?.getNguonHinhAnh ?? '';
-          if (nguonSpriteSheetRS025PartSS130.isNotEmpty == true) {
-            danhSachNguonHinhAnh.add(nguonSpriteSheetRS025PartSS130);
-          }
-        }
-      }
-
-      /// -----
-      /// TODO:
-      /// -----
-      if (tongSoPart >= 14) {
-        if (thuocTinhHinhAnh?.getKichThuocRS100 == true || caiDatUuTienKichThuocRS100 == true) {
-          String nguonSpriteSheetRS100PartSS140 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS140?.getNguonHinhAnh ?? '';
-          if (nguonSpriteSheetRS100PartSS140.isNotEmpty == true) {
-            danhSachNguonHinhAnh.add(nguonSpriteSheetRS100PartSS140);
-          }
-        }
-        if (thuocTinhHinhAnh?.getKichThuocRS050 == true || caiDatUuTienKichThuocRS050 == true) {
-          String nguonSpriteSheetRS050PartSS140 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS140?.getNguonHinhAnh ?? '';
-          if (nguonSpriteSheetRS050PartSS140.isNotEmpty == true) {
-            danhSachNguonHinhAnh.add(nguonSpriteSheetRS050PartSS140);
-          }
-        }
-        if (thuocTinhHinhAnh?.getKichThuocRS025 == true || caiDatUuTienKichThuocRS025 == true) {
-          String nguonSpriteSheetRS025PartSS140 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS140?.getNguonHinhAnh ?? '';
-          if (nguonSpriteSheetRS025PartSS140.isNotEmpty == true) {
-            danhSachNguonHinhAnh.add(nguonSpriteSheetRS025PartSS140);
-          }
-        }
-      }
-
-      /// -----
-      /// TODO:
-      /// -----
-      if (tongSoPart >= 15) {
-        if (thuocTinhHinhAnh?.getKichThuocRS100 == true || caiDatUuTienKichThuocRS100 == true) {
-          String nguonSpriteSheetRS100PartSS150 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS150?.getNguonHinhAnh ?? '';
-          if (nguonSpriteSheetRS100PartSS150.isNotEmpty == true) {
-            danhSachNguonHinhAnh.add(nguonSpriteSheetRS100PartSS150);
-          }
-        }
-        if (thuocTinhHinhAnh?.getKichThuocRS050 == true || caiDatUuTienKichThuocRS050 == true) {
-          String nguonSpriteSheetRS050PartSS150 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS150?.getNguonHinhAnh ?? '';
-          if (nguonSpriteSheetRS050PartSS150.isNotEmpty == true) {
-            danhSachNguonHinhAnh.add(nguonSpriteSheetRS050PartSS150);
-          }
-        }
-        if (thuocTinhHinhAnh?.getKichThuocRS025 == true || caiDatUuTienKichThuocRS025 == true) {
-          String nguonSpriteSheetRS025PartSS150 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS150?.getNguonHinhAnh ?? '';
-          if (nguonSpriteSheetRS025PartSS150.isNotEmpty == true) {
-            danhSachNguonHinhAnh.add(nguonSpriteSheetRS025PartSS150);
-          }
-        }
-      }
-
-      /// -----
-      /// TODO:
-      /// -----
-      if (tongSoPart >= 16) {
-        if (thuocTinhHinhAnh?.getKichThuocRS100 == true || caiDatUuTienKichThuocRS100 == true) {
-          String nguonSpriteSheetRS100PartSS160 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS160?.getNguonHinhAnh ?? '';
-          if (nguonSpriteSheetRS100PartSS160.isNotEmpty == true) {
-            danhSachNguonHinhAnh.add(nguonSpriteSheetRS100PartSS160);
-          }
-        }
-        if (thuocTinhHinhAnh?.getKichThuocRS050 == true || caiDatUuTienKichThuocRS050 == true) {
-          String nguonSpriteSheetRS050PartSS160 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS160?.getNguonHinhAnh ?? '';
-          if (nguonSpriteSheetRS050PartSS160.isNotEmpty == true) {
-            danhSachNguonHinhAnh.add(nguonSpriteSheetRS050PartSS160);
-          }
-        }
-        if (thuocTinhHinhAnh?.getKichThuocRS025 == true || caiDatUuTienKichThuocRS025 == true) {
-          String nguonSpriteSheetRS025PartSS160 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS160?.getNguonHinhAnh ?? '';
-          if (nguonSpriteSheetRS025PartSS160.isNotEmpty == true) {
-            danhSachNguonHinhAnh.add(nguonSpriteSheetRS025PartSS160);
-          }
-        }
-      }
-
-      /// -----
-      /// TODO:
-      /// -----
-      if (tongSoPart >= 17) {
-        if (thuocTinhHinhAnh?.getKichThuocRS100 == true || caiDatUuTienKichThuocRS100 == true) {
-          String nguonSpriteSheetRS100PartSS170 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS170?.getNguonHinhAnh ?? '';
-          if (nguonSpriteSheetRS100PartSS170.isNotEmpty == true) {
-            danhSachNguonHinhAnh.add(nguonSpriteSheetRS100PartSS170);
-          }
-        }
-        if (thuocTinhHinhAnh?.getKichThuocRS050 == true || caiDatUuTienKichThuocRS050 == true) {
-          String nguonSpriteSheetRS050PartSS170 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS170?.getNguonHinhAnh ?? '';
-          if (nguonSpriteSheetRS050PartSS170.isNotEmpty == true) {
-            danhSachNguonHinhAnh.add(nguonSpriteSheetRS050PartSS170);
-          }
-        }
-        if (thuocTinhHinhAnh?.getKichThuocRS025 == true || caiDatUuTienKichThuocRS025 == true) {
-          String nguonSpriteSheetRS025PartSS170 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS170?.getNguonHinhAnh ?? '';
-          if (nguonSpriteSheetRS025PartSS170.isNotEmpty == true) {
-            danhSachNguonHinhAnh.add(nguonSpriteSheetRS025PartSS170);
-          }
-        }
-      }
-
-      /// -----
-      /// TODO:
-      /// -----
-      if (tongSoPart >= 18) {
-        if (thuocTinhHinhAnh?.getKichThuocRS100 == true || caiDatUuTienKichThuocRS100 == true) {
-          String nguonSpriteSheetRS100PartSS180 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS180?.getNguonHinhAnh ?? '';
-          if (nguonSpriteSheetRS100PartSS180.isNotEmpty == true) {
-            danhSachNguonHinhAnh.add(nguonSpriteSheetRS100PartSS180);
-          }
-        }
-        if (thuocTinhHinhAnh?.getKichThuocRS050 == true || caiDatUuTienKichThuocRS050 == true) {
-          String nguonSpriteSheetRS050PartSS180 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS180?.getNguonHinhAnh ?? '';
-          if (nguonSpriteSheetRS050PartSS180.isNotEmpty == true) {
-            danhSachNguonHinhAnh.add(nguonSpriteSheetRS050PartSS180);
-          }
-        }
-        if (thuocTinhHinhAnh?.getKichThuocRS025 == true || caiDatUuTienKichThuocRS025 == true) {
-          String nguonSpriteSheetRS025PartSS180 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS180?.getNguonHinhAnh ?? '';
-          if (nguonSpriteSheetRS025PartSS180.isNotEmpty == true) {
-            danhSachNguonHinhAnh.add(nguonSpriteSheetRS025PartSS180);
-          }
-        }
-      }
-
-      /// -----
-      /// TODO:
-      /// -----
-      if (tongSoPart >= 19) {
-        if (thuocTinhHinhAnh?.getKichThuocRS100 == true || caiDatUuTienKichThuocRS100 == true) {
-          String nguonSpriteSheetRS100PartSS190 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS190?.getNguonHinhAnh ?? '';
-          if (nguonSpriteSheetRS100PartSS190.isNotEmpty == true) {
-            danhSachNguonHinhAnh.add(nguonSpriteSheetRS100PartSS190);
-          }
-        }
-        if (thuocTinhHinhAnh?.getKichThuocRS050 == true || caiDatUuTienKichThuocRS050 == true) {
-          String nguonSpriteSheetRS050PartSS190 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS190?.getNguonHinhAnh ?? '';
-          if (nguonSpriteSheetRS050PartSS190.isNotEmpty == true) {
-            danhSachNguonHinhAnh.add(nguonSpriteSheetRS050PartSS190);
-          }
-        }
-        if (thuocTinhHinhAnh?.getKichThuocRS025 == true || caiDatUuTienKichThuocRS025 == true) {
-          String nguonSpriteSheetRS025PartSS190 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS190?.getNguonHinhAnh ?? '';
-          if (nguonSpriteSheetRS025PartSS190.isNotEmpty == true) {
-            danhSachNguonHinhAnh.add(nguonSpriteSheetRS025PartSS190);
-          }
-        }
-      }
-
-      /// -----
-      /// TODO:
-      /// -----
-      if (tongSoPart >= 20) {
-        if (thuocTinhHinhAnh?.getKichThuocRS100 == true || caiDatUuTienKichThuocRS100 == true) {
-          String nguonSpriteSheetRS100PartSS200 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS200?.getNguonHinhAnh ?? '';
-          if (nguonSpriteSheetRS100PartSS200.isNotEmpty == true) {
-            danhSachNguonHinhAnh.add(nguonSpriteSheetRS100PartSS200);
-          }
-        }
-        if (thuocTinhHinhAnh?.getKichThuocRS050 == true || caiDatUuTienKichThuocRS050 == true) {
-          String nguonSpriteSheetRS050PartSS200 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS200?.getNguonHinhAnh ?? '';
-          if (nguonSpriteSheetRS050PartSS200.isNotEmpty == true) {
-            danhSachNguonHinhAnh.add(nguonSpriteSheetRS050PartSS200);
-          }
-        }
-        if (thuocTinhHinhAnh?.getKichThuocRS025 == true || caiDatUuTienKichThuocRS025 == true) {
-          String nguonSpriteSheetRS025PartSS200 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS200?.getNguonHinhAnh ?? '';
-          if (nguonSpriteSheetRS025PartSS200.isNotEmpty == true) {
-            danhSachNguonHinhAnh.add(nguonSpriteSheetRS025PartSS200);
-          }
-        }
-      }
-
-      /// -----
-      /// TODO:
-      /// -----
-      if (tongSoPart >= 21) {
-        if (thuocTinhHinhAnh?.getKichThuocRS100 == true || caiDatUuTienKichThuocRS100 == true) {
-          String nguonSpriteSheetRS100PartSS210 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS210?.getNguonHinhAnh ?? '';
-          if (nguonSpriteSheetRS100PartSS210.isNotEmpty == true) {
-            danhSachNguonHinhAnh.add(nguonSpriteSheetRS100PartSS210);
-          }
-        }
-        if (thuocTinhHinhAnh?.getKichThuocRS050 == true || caiDatUuTienKichThuocRS050 == true) {
-          String nguonSpriteSheetRS050PartSS210 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS210?.getNguonHinhAnh ?? '';
-          if (nguonSpriteSheetRS050PartSS210.isNotEmpty == true) {
-            danhSachNguonHinhAnh.add(nguonSpriteSheetRS050PartSS210);
-          }
-        }
-        if (thuocTinhHinhAnh?.getKichThuocRS025 == true || caiDatUuTienKichThuocRS025 == true) {
-          String nguonSpriteSheetRS025PartSS210 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS210?.getNguonHinhAnh ?? '';
-          if (nguonSpriteSheetRS025PartSS210.isNotEmpty == true) {
-            danhSachNguonHinhAnh.add(nguonSpriteSheetRS025PartSS210);
-          }
-        }
-      }
-
-      /// -----
-      /// TODO:
-      /// -----
-      if (tongSoPart >= 22) {
-        if (thuocTinhHinhAnh?.getKichThuocRS100 == true || caiDatUuTienKichThuocRS100 == true) {
-          String nguonSpriteSheetRS100PartSS220 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS220?.getNguonHinhAnh ?? '';
-          if (nguonSpriteSheetRS100PartSS220.isNotEmpty == true) {
-            danhSachNguonHinhAnh.add(nguonSpriteSheetRS100PartSS220);
-          }
-        }
-        if (thuocTinhHinhAnh?.getKichThuocRS050 == true || caiDatUuTienKichThuocRS050 == true) {
-          String nguonSpriteSheetRS050PartSS220 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS220?.getNguonHinhAnh ?? '';
-          if (nguonSpriteSheetRS050PartSS220.isNotEmpty == true) {
-            danhSachNguonHinhAnh.add(nguonSpriteSheetRS050PartSS220);
-          }
-        }
-        if (thuocTinhHinhAnh?.getKichThuocRS025 == true || caiDatUuTienKichThuocRS025 == true) {
-          String nguonSpriteSheetRS025PartSS220 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS220?.getNguonHinhAnh ?? '';
-          if (nguonSpriteSheetRS025PartSS220.isNotEmpty == true) {
-            danhSachNguonHinhAnh.add(nguonSpriteSheetRS025PartSS220);
-          }
-        }
-      }
-
-      /// -----
-      /// TODO:
-      /// -----
-      if (tongSoPart >= 23) {
-        if (thuocTinhHinhAnh?.getKichThuocRS100 == true || caiDatUuTienKichThuocRS100 == true) {
-          String nguonSpriteSheetRS100PartSS230 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS230?.getNguonHinhAnh ?? '';
-          if (nguonSpriteSheetRS100PartSS230.isNotEmpty == true) {
-            danhSachNguonHinhAnh.add(nguonSpriteSheetRS100PartSS230);
-          }
-        }
-        if (thuocTinhHinhAnh?.getKichThuocRS050 == true || caiDatUuTienKichThuocRS050 == true) {
-          String nguonSpriteSheetRS050PartSS230 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS230?.getNguonHinhAnh ?? '';
-          if (nguonSpriteSheetRS050PartSS230.isNotEmpty == true) {
-            danhSachNguonHinhAnh.add(nguonSpriteSheetRS050PartSS230);
-          }
-        }
-        if (thuocTinhHinhAnh?.getKichThuocRS025 == true || caiDatUuTienKichThuocRS025 == true) {
-          String nguonSpriteSheetRS025PartSS230 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS230?.getNguonHinhAnh ?? '';
-          if (nguonSpriteSheetRS025PartSS230.isNotEmpty == true) {
-            danhSachNguonHinhAnh.add(nguonSpriteSheetRS025PartSS230);
-          }
-        }
-      }
-
-      /// -----
-      /// TODO:
-      /// -----
-      if (tongSoPart >= 24) {
-        if (thuocTinhHinhAnh?.getKichThuocRS100 == true || caiDatUuTienKichThuocRS100 == true) {
-          String nguonSpriteSheetRS100PartSS240 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS240?.getNguonHinhAnh ?? '';
-          if (nguonSpriteSheetRS100PartSS240.isNotEmpty == true) {
-            danhSachNguonHinhAnh.add(nguonSpriteSheetRS100PartSS240);
-          }
-        }
-        if (thuocTinhHinhAnh?.getKichThuocRS050 == true || caiDatUuTienKichThuocRS050 == true) {
-          String nguonSpriteSheetRS050PartSS240 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS240?.getNguonHinhAnh ?? '';
-          if (nguonSpriteSheetRS050PartSS240.isNotEmpty == true) {
-            danhSachNguonHinhAnh.add(nguonSpriteSheetRS050PartSS240);
-          }
-        }
-        if (thuocTinhHinhAnh?.getKichThuocRS025 == true || caiDatUuTienKichThuocRS025 == true) {
-          String nguonSpriteSheetRS025PartSS240 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS240?.getNguonHinhAnh ?? '';
-          if (nguonSpriteSheetRS025PartSS240.isNotEmpty == true) {
-            danhSachNguonHinhAnh.add(nguonSpriteSheetRS025PartSS240);
-          }
-        }
-      }
-
-      /// -----
-      /// TODO:
-      /// -----
-      if (tongSoPart >= 25) {
-        if (thuocTinhHinhAnh?.getKichThuocRS100 == true || caiDatUuTienKichThuocRS100 == true) {
-          String nguonSpriteSheetRS100PartSS250 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS250?.getNguonHinhAnh ?? '';
-
-          if (nguonSpriteSheetRS100PartSS250.isNotEmpty == true) {
-            danhSachNguonHinhAnh.add(nguonSpriteSheetRS100PartSS250);
-          }
-        }
-        if (thuocTinhHinhAnh?.getKichThuocRS050 == true || caiDatUuTienKichThuocRS050 == true) {
-          String nguonSpriteSheetRS050PartSS250 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS250?.getNguonHinhAnh ?? '';
-          if (nguonSpriteSheetRS050PartSS250.isNotEmpty == true) {
-            danhSachNguonHinhAnh.add(nguonSpriteSheetRS050PartSS250);
-          }
-        }
-        if (thuocTinhHinhAnh?.getKichThuocRS025 == true || caiDatUuTienKichThuocRS025 == true) {
-          String nguonSpriteSheetRS025PartSS250 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS250?.getNguonHinhAnh ?? '';
-          if (nguonSpriteSheetRS025PartSS250.isNotEmpty == true) {
-            danhSachNguonHinhAnh.add(nguonSpriteSheetRS025PartSS250);
-          }
-        }
-      }
-
-      await thuocTinhHinhAnh?.getTienTrinh?.onVoidCaiDatTienTrinhSanSangThucThi();
-
-      await getTaiHinhAnh?.loadAll(danhSachNguonHinhAnh).then((_) async {
-        await thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS010?.getTienTrinh?.onVoidCaiDatTienTrinhSanSangThucThi();
-        await thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS020?.getTienTrinh?.onVoidCaiDatTienTrinhSanSangThucThi();
-        await thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS030?.getTienTrinh?.onVoidCaiDatTienTrinhSanSangThucThi();
-        await thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS040?.getTienTrinh?.onVoidCaiDatTienTrinhSanSangThucThi();
-        await thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS050?.getTienTrinh?.onVoidCaiDatTienTrinhSanSangThucThi();
-        await thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS060?.getTienTrinh?.onVoidCaiDatTienTrinhSanSangThucThi();
-        await thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS070?.getTienTrinh?.onVoidCaiDatTienTrinhSanSangThucThi();
-        await thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS080?.getTienTrinh?.onVoidCaiDatTienTrinhSanSangThucThi();
-        await thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS090?.getTienTrinh?.onVoidCaiDatTienTrinhSanSangThucThi();
-        await thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS100?.getTienTrinh?.onVoidCaiDatTienTrinhSanSangThucThi();
-        await thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS110?.getTienTrinh?.onVoidCaiDatTienTrinhSanSangThucThi();
-        await thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS120?.getTienTrinh?.onVoidCaiDatTienTrinhSanSangThucThi();
-        await thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS130?.getTienTrinh?.onVoidCaiDatTienTrinhSanSangThucThi();
-        await thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS140?.getTienTrinh?.onVoidCaiDatTienTrinhSanSangThucThi();
-        await thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS150?.getTienTrinh?.onVoidCaiDatTienTrinhSanSangThucThi();
-        await thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS160?.getTienTrinh?.onVoidCaiDatTienTrinhSanSangThucThi();
-        await thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS170?.getTienTrinh?.onVoidCaiDatTienTrinhSanSangThucThi();
-        await thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS180?.getTienTrinh?.onVoidCaiDatTienTrinhSanSangThucThi();
-        await thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS190?.getTienTrinh?.onVoidCaiDatTienTrinhSanSangThucThi();
-        await thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS200?.getTienTrinh?.onVoidCaiDatTienTrinhSanSangThucThi();
-        await thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS210?.getTienTrinh?.onVoidCaiDatTienTrinhSanSangThucThi();
-        await thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS220?.getTienTrinh?.onVoidCaiDatTienTrinhSanSangThucThi();
-        await thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS230?.getTienTrinh?.onVoidCaiDatTienTrinhSanSangThucThi();
-        await thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS240?.getTienTrinh?.onVoidCaiDatTienTrinhSanSangThucThi();
-        await thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS250?.getTienTrinh?.onVoidCaiDatTienTrinhSanSangThucThi();
-
-        await thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS010?.getTienTrinh?.onVoidCaiDatTienTrinhSanSangThucThi();
-        await thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS020?.getTienTrinh?.onVoidCaiDatTienTrinhSanSangThucThi();
-        await thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS030?.getTienTrinh?.onVoidCaiDatTienTrinhSanSangThucThi();
-        await thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS040?.getTienTrinh?.onVoidCaiDatTienTrinhSanSangThucThi();
-        await thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS050?.getTienTrinh?.onVoidCaiDatTienTrinhSanSangThucThi();
-        await thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS060?.getTienTrinh?.onVoidCaiDatTienTrinhSanSangThucThi();
-        await thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS070?.getTienTrinh?.onVoidCaiDatTienTrinhSanSangThucThi();
-        await thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS080?.getTienTrinh?.onVoidCaiDatTienTrinhSanSangThucThi();
-        await thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS090?.getTienTrinh?.onVoidCaiDatTienTrinhSanSangThucThi();
-        await thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS100?.getTienTrinh?.onVoidCaiDatTienTrinhSanSangThucThi();
-        await thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS110?.getTienTrinh?.onVoidCaiDatTienTrinhSanSangThucThi();
-        await thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS120?.getTienTrinh?.onVoidCaiDatTienTrinhSanSangThucThi();
-        await thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS130?.getTienTrinh?.onVoidCaiDatTienTrinhSanSangThucThi();
-        await thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS140?.getTienTrinh?.onVoidCaiDatTienTrinhSanSangThucThi();
-        await thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS150?.getTienTrinh?.onVoidCaiDatTienTrinhSanSangThucThi();
-        await thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS160?.getTienTrinh?.onVoidCaiDatTienTrinhSanSangThucThi();
-        await thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS170?.getTienTrinh?.onVoidCaiDatTienTrinhSanSangThucThi();
-        await thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS180?.getTienTrinh?.onVoidCaiDatTienTrinhSanSangThucThi();
-        await thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS190?.getTienTrinh?.onVoidCaiDatTienTrinhSanSangThucThi();
-        await thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS200?.getTienTrinh?.onVoidCaiDatTienTrinhSanSangThucThi();
-        await thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS210?.getTienTrinh?.onVoidCaiDatTienTrinhSanSangThucThi();
-        await thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS220?.getTienTrinh?.onVoidCaiDatTienTrinhSanSangThucThi();
-        await thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS230?.getTienTrinh?.onVoidCaiDatTienTrinhSanSangThucThi();
-        await thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS240?.getTienTrinh?.onVoidCaiDatTienTrinhSanSangThucThi();
-        await thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS250?.getTienTrinh?.onVoidCaiDatTienTrinhSanSangThucThi();
-
-        await thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS010?.getTienTrinh?.onVoidCaiDatTienTrinhSanSangThucThi();
-        await thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS020?.getTienTrinh?.onVoidCaiDatTienTrinhSanSangThucThi();
-        await thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS030?.getTienTrinh?.onVoidCaiDatTienTrinhSanSangThucThi();
-        await thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS040?.getTienTrinh?.onVoidCaiDatTienTrinhSanSangThucThi();
-        await thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS050?.getTienTrinh?.onVoidCaiDatTienTrinhSanSangThucThi();
-        await thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS060?.getTienTrinh?.onVoidCaiDatTienTrinhSanSangThucThi();
-        await thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS070?.getTienTrinh?.onVoidCaiDatTienTrinhSanSangThucThi();
-        await thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS080?.getTienTrinh?.onVoidCaiDatTienTrinhSanSangThucThi();
-        await thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS090?.getTienTrinh?.onVoidCaiDatTienTrinhSanSangThucThi();
-        await thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS100?.getTienTrinh?.onVoidCaiDatTienTrinhSanSangThucThi();
-        await thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS110?.getTienTrinh?.onVoidCaiDatTienTrinhSanSangThucThi();
-        await thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS120?.getTienTrinh?.onVoidCaiDatTienTrinhSanSangThucThi();
-        await thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS130?.getTienTrinh?.onVoidCaiDatTienTrinhSanSangThucThi();
-        await thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS140?.getTienTrinh?.onVoidCaiDatTienTrinhSanSangThucThi();
-        await thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS150?.getTienTrinh?.onVoidCaiDatTienTrinhSanSangThucThi();
-        await thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS160?.getTienTrinh?.onVoidCaiDatTienTrinhSanSangThucThi();
-        await thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS170?.getTienTrinh?.onVoidCaiDatTienTrinhSanSangThucThi();
-        await thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS180?.getTienTrinh?.onVoidCaiDatTienTrinhSanSangThucThi();
-        await thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS190?.getTienTrinh?.onVoidCaiDatTienTrinhSanSangThucThi();
-        await thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS200?.getTienTrinh?.onVoidCaiDatTienTrinhSanSangThucThi();
-        await thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS210?.getTienTrinh?.onVoidCaiDatTienTrinhSanSangThucThi();
-        await thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS220?.getTienTrinh?.onVoidCaiDatTienTrinhSanSangThucThi();
-        await thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS230?.getTienTrinh?.onVoidCaiDatTienTrinhSanSangThucThi();
-        await thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS240?.getTienTrinh?.onVoidCaiDatTienTrinhSanSangThucThi();
-        await thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS250?.getTienTrinh?.onVoidCaiDatTienTrinhSanSangThucThi();
-      });
-
-      ///
-      // return;
+      // tongSoFrame = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS010?.getTongSoFrame ?? 0;
+      // soFrameTrenHang = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS010?.getTongSoFrameTrenHang ?? 0;
+      chieuRongFrame = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS010?.getChieuRongFrame ?? 0;
+      chieuCaoFrame = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS010?.getChieuCaoFrame ?? 0;
+      nguonSpriteSheet = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS010?.getNguonHinhAnh;
+    } else if (thuocTinhHinhAnh?.getKichThuocRS050 == true || caiDatUuTienKichThuocRS050 == true) {
+      // tongSoFrame = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS010?.getTongSoFrame ?? 0;
+      // soFrameTrenHang = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS010?.getTongSoFrameTrenHang ?? 0;
+      chieuRongFrame = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS010?.getChieuRongFrame ?? 0;
+      chieuCaoFrame = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS010?.getChieuCaoFrame ?? 0;
+      nguonSpriteSheet = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050Max?.getNguonHinhAnh;
+    } else if (thuocTinhHinhAnh?.getKichThuocRS100 == true || caiDatUuTienKichThuocRS100 == true) {
+      // tongSoFrame = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS010?.getTongSoFrame ?? 0;
+      // soFrameTrenHang = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS010?.getTongSoFrameTrenHang ?? 0;
+      chieuRongFrame = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS010?.getChieuRongFrame ?? 0;
+      chieuCaoFrame = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS010?.getChieuCaoFrame ?? 0;
+      nguonSpriteSheet = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS010?.getNguonHinhAnh;
     }
 
     /// -----
-    /// TODO:
-    /// -----
-    if (tongSoPart >= 1) {
-      if (thuocTinhHinhAnh?.getKichThuocRS100 == true || caiDatUuTienKichThuocRS100 == true) {
-        if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS010?.getTienTrinh?.isTienTrinhSanSangThucThi() == true) {
-          await thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS010?.getTienTrinh?.onVoidCaiDatTienTrinhDangThucThi();
-          await Future.delayed(Duration.zero);
-          await onTaiTaiNguyenHinhAnhNgoaiHinhPartSS01(
-            thuocTinhHinhAnh: thuocTinhHinhAnh,
-            caiDatUuTienKichThuocRS100: true,
-            caiDatUuTienKichThuocRS050: false,
-            caiDatUuTienKichThuocRS025: false,
-            onThucThiHoanTat: () {
-              thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS010?.getTienTrinh?.onVoidCaiDatTienTrinhHoanTatThucThi();
-            },
-          );
-
-          // return;
-        }
-      }
-
-      if (thuocTinhHinhAnh?.getKichThuocRS050 == true || caiDatUuTienKichThuocRS050 == true) {
-        if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS010?.getTienTrinh?.isTienTrinhSanSangThucThi() == true) {
-          await thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS010?.getTienTrinh?.onVoidCaiDatTienTrinhDangThucThi();
-          await Future.delayed(Duration.zero);
-          await onTaiTaiNguyenHinhAnhNgoaiHinhPartSS01(
-            thuocTinhHinhAnh: thuocTinhHinhAnh,
-            caiDatUuTienKichThuocRS100: false,
-            caiDatUuTienKichThuocRS050: true,
-            caiDatUuTienKichThuocRS025: false,
-            onThucThiHoanTat: () {
-              thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS010?.getTienTrinh?.onVoidCaiDatTienTrinhHoanTatThucThi();
-            },
-          );
-
-          // return;
-        }
-      }
-      if (thuocTinhHinhAnh?.getKichThuocRS025 == true || caiDatUuTienKichThuocRS025 == true) {
-        if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS010?.getTienTrinh?.isTienTrinhSanSangThucThi() == true) {
-          await thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS010?.getTienTrinh?.onVoidCaiDatTienTrinhDangThucThi();
-          await Future.delayed(Duration.zero);
-          await onTaiTaiNguyenHinhAnhNgoaiHinhPartSS01(
-            thuocTinhHinhAnh: thuocTinhHinhAnh,
-            caiDatUuTienKichThuocRS100: false,
-            caiDatUuTienKichThuocRS050: false,
-            caiDatUuTienKichThuocRS025: true,
-            onThucThiHoanTat: () {
-              thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS010?.getTienTrinh?.onVoidCaiDatTienTrinhHoanTatThucThi();
-            },
-          );
-
-          // return;
-        }
-      }
-    }
-
-    /// -----
-    /// TODO:
-    /// -----
-    if (tongSoPart >= 2) {
-      if (thuocTinhHinhAnh?.getKichThuocRS100 == true || caiDatUuTienKichThuocRS100 == true) {
-        if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS020?.getTienTrinh?.isTienTrinhSanSangThucThi() == true &&
-            thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS010?.getTienTrinh?.isTienTrinhHoanTatThucThi() == true) {
-          await thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS020?.getTienTrinh?.onVoidCaiDatTienTrinhDangThucThi();
-          await Future.delayed(Duration.zero);
-          await onTaiTaiNguyenHinhAnhNgoaiHinhPartSS02(
-            thuocTinhHinhAnh: thuocTinhHinhAnh,
-            caiDatUuTienKichThuocRS100: true,
-            caiDatUuTienKichThuocRS050: false,
-            caiDatUuTienKichThuocRS025: false,
-            onThucThiHoanTat: () {
-              thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS020?.getTienTrinh?.onVoidCaiDatTienTrinhHoanTatThucThi();
-            },
-          );
-
-          // return;
-        }
-      }
-      if (thuocTinhHinhAnh?.getKichThuocRS050 == true || caiDatUuTienKichThuocRS050 == true) {
-        if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS020?.getTienTrinh?.isTienTrinhSanSangThucThi() == true) {
-          await thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS020?.getTienTrinh?.onVoidCaiDatTienTrinhDangThucThi();
-          await Future.delayed(Duration.zero);
-          await onTaiTaiNguyenHinhAnhNgoaiHinhPartSS02(
-            thuocTinhHinhAnh: thuocTinhHinhAnh,
-            caiDatUuTienKichThuocRS100: false,
-            caiDatUuTienKichThuocRS050: true,
-            caiDatUuTienKichThuocRS025: false,
-            onThucThiHoanTat: () {
-              thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS020?.getTienTrinh?.onVoidCaiDatTienTrinhHoanTatThucThi();
-            },
-          );
-
-          // return;
-        }
-      }
-      if (thuocTinhHinhAnh?.getKichThuocRS025 == true || caiDatUuTienKichThuocRS025 == true) {
-        if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS020?.getTienTrinh?.isTienTrinhSanSangThucThi() == true) {
-          await thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS020?.getTienTrinh?.onVoidCaiDatTienTrinhDangThucThi();
-          await Future.delayed(Duration.zero);
-          await onTaiTaiNguyenHinhAnhNgoaiHinhPartSS02(
-            thuocTinhHinhAnh: thuocTinhHinhAnh,
-            caiDatUuTienKichThuocRS100: false,
-            caiDatUuTienKichThuocRS050: false,
-            caiDatUuTienKichThuocRS025: true,
-            onThucThiHoanTat: () {
-              thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS020?.getTienTrinh?.onVoidCaiDatTienTrinhHoanTatThucThi();
-            },
-          );
-
-          // return;
-        }
-      }
-    }
-
-    /// -----
-    /// TODO:
-    /// -----
-    if (tongSoPart >= 3) {
-      if (thuocTinhHinhAnh?.getKichThuocRS100 == true || caiDatUuTienKichThuocRS100 == true) {
-        if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS030?.getTienTrinh?.isTienTrinhSanSangThucThi() == true &&
-            thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS020?.getTienTrinh?.isTienTrinhHoanTatThucThi() == true) {
-          await thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS030?.getTienTrinh?.onVoidCaiDatTienTrinhDangThucThi();
-          await Future.delayed(Duration.zero);
-          await onTaiTaiNguyenHinhAnhNgoaiHinhPartSS03(
-            thuocTinhHinhAnh: thuocTinhHinhAnh,
-            caiDatUuTienKichThuocRS100: true,
-            caiDatUuTienKichThuocRS050: false,
-            caiDatUuTienKichThuocRS025: false,
-            onThucThiHoanTat: () {
-              thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS030?.getTienTrinh?.onVoidCaiDatTienTrinhHoanTatThucThi();
-            },
-          );
-
-          // return;
-        }
-      }
-      if (thuocTinhHinhAnh?.getKichThuocRS050 == true || caiDatUuTienKichThuocRS050 == true) {
-        if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS030?.getTienTrinh?.isTienTrinhSanSangThucThi() == true) {
-          await thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS030?.getTienTrinh?.onVoidCaiDatTienTrinhDangThucThi();
-          await Future.delayed(Duration.zero);
-          await onTaiTaiNguyenHinhAnhNgoaiHinhPartSS03(
-            thuocTinhHinhAnh: thuocTinhHinhAnh,
-            caiDatUuTienKichThuocRS100: false,
-            caiDatUuTienKichThuocRS050: true,
-            caiDatUuTienKichThuocRS025: false,
-            onThucThiHoanTat: () {
-              thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS030?.getTienTrinh?.onVoidCaiDatTienTrinhHoanTatThucThi();
-            },
-          );
-
-          // return;
-        }
-      }
-      if (thuocTinhHinhAnh?.getKichThuocRS025 == true || caiDatUuTienKichThuocRS025 == true) {
-        if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS030?.getTienTrinh?.isTienTrinhSanSangThucThi() == true) {
-          await thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS030?.getTienTrinh?.onVoidCaiDatTienTrinhDangThucThi();
-          await Future.delayed(Duration.zero);
-          await onTaiTaiNguyenHinhAnhNgoaiHinhPartSS03(
-            thuocTinhHinhAnh: thuocTinhHinhAnh,
-            caiDatUuTienKichThuocRS100: false,
-            caiDatUuTienKichThuocRS050: false,
-            caiDatUuTienKichThuocRS025: true,
-            onThucThiHoanTat: () {
-              thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS030?.getTienTrinh?.onVoidCaiDatTienTrinhHoanTatThucThi();
-            },
-          );
-
-          // return;
-        }
-      }
-    }
-
-    /// -----
-    /// TODO:
-    /// -----
-    if (tongSoPart >= 4) {
-      if (thuocTinhHinhAnh?.getKichThuocRS100 == true || caiDatUuTienKichThuocRS100 == true) {
-        if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS040?.getTienTrinh?.isTienTrinhSanSangThucThi() == true &&
-            thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS030?.getTienTrinh?.isTienTrinhHoanTatThucThi() == true) {
-          await thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS040?.getTienTrinh?.onVoidCaiDatTienTrinhDangThucThi();
-          await Future.delayed(Duration.zero);
-          await onTaiTaiNguyenHinhAnhNgoaiHinhPartSS04(
-            thuocTinhHinhAnh: thuocTinhHinhAnh,
-            caiDatUuTienKichThuocRS100: true,
-            caiDatUuTienKichThuocRS050: false,
-            caiDatUuTienKichThuocRS025: false,
-            onThucThiHoanTat: () {
-              thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS040?.getTienTrinh?.onVoidCaiDatTienTrinhHoanTatThucThi();
-            },
-          );
-
-          // return;
-        }
-      }
-      if (thuocTinhHinhAnh?.getKichThuocRS050 == true || caiDatUuTienKichThuocRS050 == true) {
-        if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS040?.getTienTrinh?.isTienTrinhSanSangThucThi() == true) {
-          await thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS040?.getTienTrinh?.onVoidCaiDatTienTrinhDangThucThi();
-          await Future.delayed(Duration.zero);
-          await onTaiTaiNguyenHinhAnhNgoaiHinhPartSS04(
-            thuocTinhHinhAnh: thuocTinhHinhAnh,
-            caiDatUuTienKichThuocRS100: false,
-            caiDatUuTienKichThuocRS050: true,
-            caiDatUuTienKichThuocRS025: false,
-            onThucThiHoanTat: () {
-              thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS040?.getTienTrinh?.onVoidCaiDatTienTrinhHoanTatThucThi();
-            },
-          );
-
-          // return;
-        }
-      }
-      if (thuocTinhHinhAnh?.getKichThuocRS025 == true || caiDatUuTienKichThuocRS025 == true) {
-        if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS040?.getTienTrinh?.isTienTrinhSanSangThucThi() == true) {
-          await thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS040?.getTienTrinh?.onVoidCaiDatTienTrinhDangThucThi();
-          await Future.delayed(Duration.zero);
-          await onTaiTaiNguyenHinhAnhNgoaiHinhPartSS04(
-            thuocTinhHinhAnh: thuocTinhHinhAnh,
-            caiDatUuTienKichThuocRS100: false,
-            caiDatUuTienKichThuocRS050: false,
-            caiDatUuTienKichThuocRS025: true,
-            onThucThiHoanTat: () {
-              thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS040?.getTienTrinh?.onVoidCaiDatTienTrinhHoanTatThucThi();
-            },
-          );
-
-          // return;
-        }
-      }
-    }
-
-    /// -----
-    /// TODO:
-    /// -----
-    if (tongSoPart >= 5) {
-      if (thuocTinhHinhAnh?.getKichThuocRS100 == true || caiDatUuTienKichThuocRS100 == true) {
-        if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS050?.getTienTrinh?.isTienTrinhSanSangThucThi() == true &&
-            thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS040?.getTienTrinh?.isTienTrinhHoanTatThucThi() == true) {
-          await thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS050?.getTienTrinh?.onVoidCaiDatTienTrinhDangThucThi();
-          await Future.delayed(Duration.zero);
-          await onTaiTaiNguyenHinhAnhNgoaiHinhPartSS05(
-            thuocTinhHinhAnh: thuocTinhHinhAnh,
-            caiDatUuTienKichThuocRS100: true,
-            caiDatUuTienKichThuocRS050: false,
-            caiDatUuTienKichThuocRS025: false,
-            onThucThiHoanTat: () {
-              thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS050?.getTienTrinh?.onVoidCaiDatTienTrinhHoanTatThucThi();
-            },
-          );
-
-          // return;
-        }
-      }
-      if (thuocTinhHinhAnh?.getKichThuocRS050 == true || caiDatUuTienKichThuocRS050 == true) {
-        if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS050?.getTienTrinh?.isTienTrinhSanSangThucThi() == true) {
-          await thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS050?.getTienTrinh?.onVoidCaiDatTienTrinhDangThucThi();
-          await Future.delayed(Duration.zero);
-          await onTaiTaiNguyenHinhAnhNgoaiHinhPartSS05(
-            thuocTinhHinhAnh: thuocTinhHinhAnh,
-            caiDatUuTienKichThuocRS100: false,
-            caiDatUuTienKichThuocRS050: true,
-            caiDatUuTienKichThuocRS025: false,
-            onThucThiHoanTat: () {
-              thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS050?.getTienTrinh?.onVoidCaiDatTienTrinhHoanTatThucThi();
-            },
-          );
-
-          // return;
-        }
-      }
-      if (thuocTinhHinhAnh?.getKichThuocRS025 == true || caiDatUuTienKichThuocRS025 == true) {
-        if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS050?.getTienTrinh?.isTienTrinhSanSangThucThi() == true) {
-          await thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS050?.getTienTrinh?.onVoidCaiDatTienTrinhDangThucThi();
-          await Future.delayed(Duration.zero);
-          await onTaiTaiNguyenHinhAnhNgoaiHinhPartSS05(
-            thuocTinhHinhAnh: thuocTinhHinhAnh,
-            caiDatUuTienKichThuocRS100: false,
-            caiDatUuTienKichThuocRS050: false,
-            caiDatUuTienKichThuocRS025: true,
-            onThucThiHoanTat: () {
-              thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS050?.getTienTrinh?.onVoidCaiDatTienTrinhHoanTatThucThi();
-            },
-          );
-
-          // return;
-        }
-      }
-    }
-
-    /// -----
-    /// TODO:
-    /// -----
-    if (tongSoPart >= 6) {
-      if (thuocTinhHinhAnh?.getKichThuocRS100 == true || caiDatUuTienKichThuocRS100 == true) {
-        if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS060?.getTienTrinh?.isTienTrinhSanSangThucThi() == true &&
-            thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS050?.getTienTrinh?.isTienTrinhHoanTatThucThi() == true) {
-          await thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS060?.getTienTrinh?.onVoidCaiDatTienTrinhDangThucThi();
-          await Future.delayed(Duration.zero);
-          await onTaiTaiNguyenHinhAnhNgoaiHinhPartSS06(
-            thuocTinhHinhAnh: thuocTinhHinhAnh,
-            caiDatUuTienKichThuocRS100: true,
-            caiDatUuTienKichThuocRS050: false,
-            caiDatUuTienKichThuocRS025: false,
-            onThucThiHoanTat: () {
-              thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS060?.getTienTrinh?.onVoidCaiDatTienTrinhHoanTatThucThi();
-            },
-          );
-
-          // return;
-        }
-      }
-      if (thuocTinhHinhAnh?.getKichThuocRS050 == true || caiDatUuTienKichThuocRS050 == true) {
-        if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS060?.getTienTrinh?.isTienTrinhSanSangThucThi() == true) {
-          await thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS060?.getTienTrinh?.onVoidCaiDatTienTrinhDangThucThi();
-          await Future.delayed(Duration.zero);
-          await onTaiTaiNguyenHinhAnhNgoaiHinhPartSS06(
-            thuocTinhHinhAnh: thuocTinhHinhAnh,
-            caiDatUuTienKichThuocRS100: false,
-            caiDatUuTienKichThuocRS050: true,
-            caiDatUuTienKichThuocRS025: false,
-            onThucThiHoanTat: () {
-              thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS060?.getTienTrinh?.onVoidCaiDatTienTrinhHoanTatThucThi();
-            },
-          );
-
-          // return;
-        }
-      }
-      if (thuocTinhHinhAnh?.getKichThuocRS025 == true || caiDatUuTienKichThuocRS025 == true) {
-        if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS060?.getTienTrinh?.isTienTrinhSanSangThucThi() == true) {
-          await thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS060?.getTienTrinh?.onVoidCaiDatTienTrinhDangThucThi();
-          await Future.delayed(Duration.zero);
-          await onTaiTaiNguyenHinhAnhNgoaiHinhPartSS06(
-            thuocTinhHinhAnh: thuocTinhHinhAnh,
-            caiDatUuTienKichThuocRS100: false,
-            caiDatUuTienKichThuocRS050: false,
-            caiDatUuTienKichThuocRS025: true,
-            onThucThiHoanTat: () {
-              thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS060?.getTienTrinh?.onVoidCaiDatTienTrinhHoanTatThucThi();
-            },
-          );
-
-          // return;
-        }
-      }
-    }
-
-    /// -----
-    /// TODO:
-    /// -----
-    if (tongSoPart >= 7) {
-      if (thuocTinhHinhAnh?.getKichThuocRS100 == true || caiDatUuTienKichThuocRS100 == true) {
-        if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS070?.getTienTrinh?.isTienTrinhSanSangThucThi() == true &&
-            thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS060?.getTienTrinh?.isTienTrinhHoanTatThucThi() == true) {
-          await thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS070?.getTienTrinh?.onVoidCaiDatTienTrinhDangThucThi();
-          await Future.delayed(Duration.zero);
-          await onTaiTaiNguyenHinhAnhNgoaiHinhPartSS07(
-            thuocTinhHinhAnh: thuocTinhHinhAnh,
-            caiDatUuTienKichThuocRS100: true,
-            caiDatUuTienKichThuocRS050: false,
-            caiDatUuTienKichThuocRS025: false,
-            onThucThiHoanTat: () {
-              thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS070?.getTienTrinh?.onVoidCaiDatTienTrinhHoanTatThucThi();
-            },
-          );
-
-          // return;
-        }
-      }
-
-      if (thuocTinhHinhAnh?.getKichThuocRS050 == true || caiDatUuTienKichThuocRS050 == true) {
-        if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS070?.getTienTrinh?.isTienTrinhSanSangThucThi() == true) {
-          await thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS070?.getTienTrinh?.onVoidCaiDatTienTrinhDangThucThi();
-          await Future.delayed(Duration.zero);
-          await onTaiTaiNguyenHinhAnhNgoaiHinhPartSS07(
-            thuocTinhHinhAnh: thuocTinhHinhAnh,
-            caiDatUuTienKichThuocRS100: false,
-            caiDatUuTienKichThuocRS050: true,
-            caiDatUuTienKichThuocRS025: false,
-            onThucThiHoanTat: () {
-              thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS070?.getTienTrinh?.onVoidCaiDatTienTrinhHoanTatThucThi();
-            },
-          );
-
-          // return;
-        }
-      }
-      if (thuocTinhHinhAnh?.getKichThuocRS025 == true || caiDatUuTienKichThuocRS025 == true) {
-        if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS070?.getTienTrinh?.isTienTrinhSanSangThucThi() == true) {
-          await thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS070?.getTienTrinh?.onVoidCaiDatTienTrinhDangThucThi();
-          await Future.delayed(Duration.zero);
-          await onTaiTaiNguyenHinhAnhNgoaiHinhPartSS07(
-            thuocTinhHinhAnh: thuocTinhHinhAnh,
-            caiDatUuTienKichThuocRS100: false,
-            caiDatUuTienKichThuocRS050: false,
-            caiDatUuTienKichThuocRS025: true,
-            onThucThiHoanTat: () {
-              thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS070?.getTienTrinh?.onVoidCaiDatTienTrinhHoanTatThucThi();
-            },
-          );
-
-          // return;
-        }
-      }
-    }
-
-    /// -----
-    /// TODO:
-    /// -----
-    if (tongSoPart >= 8) {
-      if (thuocTinhHinhAnh?.getKichThuocRS100 == true || caiDatUuTienKichThuocRS100 == true) {
-        if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS080?.getTienTrinh?.isTienTrinhSanSangThucThi() == true &&
-            thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS070?.getTienTrinh?.isTienTrinhHoanTatThucThi() == true) {
-          await thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS080?.getTienTrinh?.onVoidCaiDatTienTrinhDangThucThi();
-          await Future.delayed(Duration.zero);
-          await onTaiTaiNguyenHinhAnhNgoaiHinhPartSS08(
-            thuocTinhHinhAnh: thuocTinhHinhAnh,
-            caiDatUuTienKichThuocRS100: true,
-            caiDatUuTienKichThuocRS050: false,
-            caiDatUuTienKichThuocRS025: false,
-            onThucThiHoanTat: () {
-              thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS080?.getTienTrinh?.onVoidCaiDatTienTrinhHoanTatThucThi();
-            },
-          );
-
-          // return;
-        }
-      }
-      if (thuocTinhHinhAnh?.getKichThuocRS050 == true || caiDatUuTienKichThuocRS050 == true) {
-        if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS080?.getTienTrinh?.isTienTrinhSanSangThucThi() == true) {
-          await thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS080?.getTienTrinh?.onVoidCaiDatTienTrinhDangThucThi();
-          await Future.delayed(Duration.zero);
-          await onTaiTaiNguyenHinhAnhNgoaiHinhPartSS08(
-            thuocTinhHinhAnh: thuocTinhHinhAnh,
-            caiDatUuTienKichThuocRS100: false,
-            caiDatUuTienKichThuocRS050: true,
-            caiDatUuTienKichThuocRS025: false,
-            onThucThiHoanTat: () {
-              thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS080?.getTienTrinh?.onVoidCaiDatTienTrinhHoanTatThucThi();
-            },
-          );
-
-          // return;
-        }
-      }
-      if (thuocTinhHinhAnh?.getKichThuocRS025 == true || caiDatUuTienKichThuocRS025 == true) {
-        if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS080?.getTienTrinh?.isTienTrinhSanSangThucThi() == true) {
-          await thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS080?.getTienTrinh?.onVoidCaiDatTienTrinhDangThucThi();
-          await Future.delayed(Duration.zero);
-          await onTaiTaiNguyenHinhAnhNgoaiHinhPartSS08(
-            thuocTinhHinhAnh: thuocTinhHinhAnh,
-            caiDatUuTienKichThuocRS100: false,
-            caiDatUuTienKichThuocRS050: false,
-            caiDatUuTienKichThuocRS025: true,
-            onThucThiHoanTat: () {
-              thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS080?.getTienTrinh?.onVoidCaiDatTienTrinhHoanTatThucThi();
-            },
-          );
-
-          // return;
-        }
-      }
-    }
-
-    /// -----
-    /// TODO:
-    /// -----
-    if (tongSoPart >= 9) {
-      if (thuocTinhHinhAnh?.getKichThuocRS100 == true || caiDatUuTienKichThuocRS100 == true) {
-        if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS090?.getTienTrinh?.isTienTrinhSanSangThucThi() == true &&
-            thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS080?.getTienTrinh?.isTienTrinhHoanTatThucThi() == true) {
-          await thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS090?.getTienTrinh?.onVoidCaiDatTienTrinhDangThucThi();
-          await Future.delayed(Duration.zero);
-          await onTaiTaiNguyenHinhAnhNgoaiHinhPartSS09(
-            thuocTinhHinhAnh: thuocTinhHinhAnh,
-            caiDatUuTienKichThuocRS100: true,
-            caiDatUuTienKichThuocRS050: false,
-            caiDatUuTienKichThuocRS025: false,
-            onThucThiHoanTat: () {
-              thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS090?.getTienTrinh?.onVoidCaiDatTienTrinhHoanTatThucThi();
-            },
-          );
-
-          // return;
-        }
-      }
-      if (thuocTinhHinhAnh?.getKichThuocRS050 == true || caiDatUuTienKichThuocRS050 == true) {
-        if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS090?.getTienTrinh?.isTienTrinhSanSangThucThi() == true) {
-          await thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS090?.getTienTrinh?.onVoidCaiDatTienTrinhDangThucThi();
-          await Future.delayed(Duration.zero);
-          await onTaiTaiNguyenHinhAnhNgoaiHinhPartSS09(
-            thuocTinhHinhAnh: thuocTinhHinhAnh,
-            caiDatUuTienKichThuocRS100: false,
-            caiDatUuTienKichThuocRS050: true,
-            caiDatUuTienKichThuocRS025: false,
-            onThucThiHoanTat: () {
-              thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS090?.getTienTrinh?.onVoidCaiDatTienTrinhHoanTatThucThi();
-            },
-          );
-
-          // return;
-        }
-      }
-      if (thuocTinhHinhAnh?.getKichThuocRS025 == true || caiDatUuTienKichThuocRS025 == true) {
-        if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS090?.getTienTrinh?.isTienTrinhSanSangThucThi() == true) {
-          await thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS090?.getTienTrinh?.onVoidCaiDatTienTrinhDangThucThi();
-          await Future.delayed(Duration.zero);
-          await onTaiTaiNguyenHinhAnhNgoaiHinhPartSS09(
-            thuocTinhHinhAnh: thuocTinhHinhAnh,
-            caiDatUuTienKichThuocRS100: false,
-            caiDatUuTienKichThuocRS050: false,
-            caiDatUuTienKichThuocRS025: true,
-            onThucThiHoanTat: () {
-              thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS090?.getTienTrinh?.onVoidCaiDatTienTrinhHoanTatThucThi();
-            },
-          );
-
-          // return;
-        }
-      }
-    }
-
-    /// -----
-    /// TODO:
-    /// -----
-    if (tongSoPart >= 10) {
-      if (thuocTinhHinhAnh?.getKichThuocRS100 == true || caiDatUuTienKichThuocRS100 == true) {
-        if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS100?.getTienTrinh?.isTienTrinhSanSangThucThi() == true &&
-            thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS090?.getTienTrinh?.isTienTrinhHoanTatThucThi() == true) {
-          await thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS100?.getTienTrinh?.onVoidCaiDatTienTrinhDangThucThi();
-          await Future.delayed(Duration.zero);
-          await onTaiTaiNguyenHinhAnhNgoaiHinhPartSS10(
-            thuocTinhHinhAnh: thuocTinhHinhAnh,
-            caiDatUuTienKichThuocRS100: true,
-            caiDatUuTienKichThuocRS050: false,
-            caiDatUuTienKichThuocRS025: false,
-            onThucThiHoanTat: () {
-              thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS100?.getTienTrinh?.onVoidCaiDatTienTrinhHoanTatThucThi();
-            },
-          );
-
-          // return;
-        }
-      }
-      if (thuocTinhHinhAnh?.getKichThuocRS050 == true || caiDatUuTienKichThuocRS050 == true) {
-        if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS100?.getTienTrinh?.isTienTrinhSanSangThucThi() == true) {
-          await thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS100?.getTienTrinh?.onVoidCaiDatTienTrinhDangThucThi();
-          await Future.delayed(Duration.zero);
-          await onTaiTaiNguyenHinhAnhNgoaiHinhPartSS10(
-            thuocTinhHinhAnh: thuocTinhHinhAnh,
-            caiDatUuTienKichThuocRS100: false,
-            caiDatUuTienKichThuocRS050: true,
-            caiDatUuTienKichThuocRS025: false,
-            onThucThiHoanTat: () {
-              thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS100?.getTienTrinh?.onVoidCaiDatTienTrinhHoanTatThucThi();
-            },
-          );
-
-          // return;
-        }
-      }
-      if (thuocTinhHinhAnh?.getKichThuocRS025 == true || caiDatUuTienKichThuocRS025 == true) {
-        if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS100?.getTienTrinh?.isTienTrinhSanSangThucThi() == true) {
-          await thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS100?.getTienTrinh?.onVoidCaiDatTienTrinhDangThucThi();
-          await Future.delayed(Duration.zero);
-          await onTaiTaiNguyenHinhAnhNgoaiHinhPartSS10(
-            thuocTinhHinhAnh: thuocTinhHinhAnh,
-            caiDatUuTienKichThuocRS100: false,
-            caiDatUuTienKichThuocRS050: false,
-            caiDatUuTienKichThuocRS025: true,
-            onThucThiHoanTat: () {
-              thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS100?.getTienTrinh?.onVoidCaiDatTienTrinhHoanTatThucThi();
-            },
-          );
-
-          // return;
-        }
-      }
-    }
-
-    /// -----
-    /// TODO:
-    /// -----
-    if (tongSoPart >= 11) {
-      if (thuocTinhHinhAnh?.getKichThuocRS100 == true || caiDatUuTienKichThuocRS100 == true) {
-        if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS110?.getTienTrinh?.isTienTrinhSanSangThucThi() == true &&
-            thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS100?.getTienTrinh?.isTienTrinhHoanTatThucThi() == true) {
-          await thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS110?.getTienTrinh?.onVoidCaiDatTienTrinhDangThucThi();
-          await Future.delayed(Duration.zero);
-          await onTaiTaiNguyenHinhAnhNgoaiHinhPartSS11(
-            thuocTinhHinhAnh: thuocTinhHinhAnh,
-            caiDatUuTienKichThuocRS100: true,
-            caiDatUuTienKichThuocRS050: false,
-            caiDatUuTienKichThuocRS025: false,
-            onThucThiHoanTat: () {
-              thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS110?.getTienTrinh?.onVoidCaiDatTienTrinhHoanTatThucThi();
-            },
-          );
-
-          // return;
-        }
-      }
-      if (thuocTinhHinhAnh?.getKichThuocRS050 == true || caiDatUuTienKichThuocRS050 == true) {
-        if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS110?.getTienTrinh?.isTienTrinhSanSangThucThi() == true) {
-          await thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS110?.getTienTrinh?.onVoidCaiDatTienTrinhDangThucThi();
-          await Future.delayed(Duration.zero);
-          await onTaiTaiNguyenHinhAnhNgoaiHinhPartSS11(
-            thuocTinhHinhAnh: thuocTinhHinhAnh,
-            caiDatUuTienKichThuocRS100: false,
-            caiDatUuTienKichThuocRS050: true,
-            caiDatUuTienKichThuocRS025: false,
-            onThucThiHoanTat: () {
-              thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS110?.getTienTrinh?.onVoidCaiDatTienTrinhHoanTatThucThi();
-            },
-          );
-
-          // return;
-        }
-      }
-      if (thuocTinhHinhAnh?.getKichThuocRS025 == true || caiDatUuTienKichThuocRS025 == true) {
-        if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS110?.getTienTrinh?.isTienTrinhSanSangThucThi() == true) {
-          await thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS110?.getTienTrinh?.onVoidCaiDatTienTrinhDangThucThi();
-          await Future.delayed(Duration.zero);
-          await onTaiTaiNguyenHinhAnhNgoaiHinhPartSS11(
-            thuocTinhHinhAnh: thuocTinhHinhAnh,
-            caiDatUuTienKichThuocRS100: false,
-            caiDatUuTienKichThuocRS050: false,
-            caiDatUuTienKichThuocRS025: true,
-            onThucThiHoanTat: () {
-              thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS110?.getTienTrinh?.onVoidCaiDatTienTrinhHoanTatThucThi();
-            },
-          );
-
-          // return;
-        }
-      }
-    }
-
-    /// -----
-    /// TODO:
-    /// -----
-    if (tongSoPart >= 12) {
-      if (thuocTinhHinhAnh?.getKichThuocRS100 == true || caiDatUuTienKichThuocRS100 == true) {
-        if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS120?.getTienTrinh?.isTienTrinhSanSangThucThi() == true &&
-            thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS110?.getTienTrinh?.isTienTrinhHoanTatThucThi() == true) {
-          await thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS120?.getTienTrinh?.onVoidCaiDatTienTrinhDangThucThi();
-          await Future.delayed(Duration.zero);
-          await onTaiTaiNguyenHinhAnhNgoaiHinhPartSS12(
-            thuocTinhHinhAnh: thuocTinhHinhAnh,
-            caiDatUuTienKichThuocRS100: true,
-            caiDatUuTienKichThuocRS050: false,
-            caiDatUuTienKichThuocRS025: false,
-            onThucThiHoanTat: () {
-              thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS120?.getTienTrinh?.onVoidCaiDatTienTrinhHoanTatThucThi();
-            },
-          );
-
-          // return;
-        }
-      }
-      if (thuocTinhHinhAnh?.getKichThuocRS050 == true || caiDatUuTienKichThuocRS050 == true) {
-        if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS120?.getTienTrinh?.isTienTrinhSanSangThucThi() == true) {
-          await thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS120?.getTienTrinh?.onVoidCaiDatTienTrinhDangThucThi();
-          await Future.delayed(Duration.zero);
-          await onTaiTaiNguyenHinhAnhNgoaiHinhPartSS12(
-            thuocTinhHinhAnh: thuocTinhHinhAnh,
-            caiDatUuTienKichThuocRS100: false,
-            caiDatUuTienKichThuocRS050: true,
-            caiDatUuTienKichThuocRS025: false,
-            onThucThiHoanTat: () {
-              thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS120?.getTienTrinh?.onVoidCaiDatTienTrinhHoanTatThucThi();
-            },
-          );
-
-          // return;
-        }
-      }
-      if (thuocTinhHinhAnh?.getKichThuocRS025 == true || caiDatUuTienKichThuocRS025 == true) {
-        if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS120?.getTienTrinh?.isTienTrinhSanSangThucThi() == true) {
-          await thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS120?.getTienTrinh?.onVoidCaiDatTienTrinhDangThucThi();
-          await Future.delayed(Duration.zero);
-          await onTaiTaiNguyenHinhAnhNgoaiHinhPartSS12(
-            thuocTinhHinhAnh: thuocTinhHinhAnh,
-            caiDatUuTienKichThuocRS100: false,
-            caiDatUuTienKichThuocRS050: false,
-            caiDatUuTienKichThuocRS025: true,
-            onThucThiHoanTat: () {
-              thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS120?.getTienTrinh?.onVoidCaiDatTienTrinhHoanTatThucThi();
-            },
-          );
-
-          // return;
-        }
-      }
-    }
-
-    /// -----
-    /// TODO:
-    /// -----
-    if (tongSoPart >= 13) {
-      if (thuocTinhHinhAnh?.getKichThuocRS100 == true || caiDatUuTienKichThuocRS100 == true) {
-        if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS130?.getTienTrinh?.isTienTrinhSanSangThucThi() == true &&
-            thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS120?.getTienTrinh?.isTienTrinhHoanTatThucThi() == true) {
-          await thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS130?.getTienTrinh?.onVoidCaiDatTienTrinhDangThucThi();
-          await Future.delayed(Duration.zero);
-          await onTaiTaiNguyenHinhAnhNgoaiHinhPartSS13(
-            thuocTinhHinhAnh: thuocTinhHinhAnh,
-            caiDatUuTienKichThuocRS100: true,
-            caiDatUuTienKichThuocRS050: false,
-            caiDatUuTienKichThuocRS025: false,
-            onThucThiHoanTat: () {
-              thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS130?.getTienTrinh?.onVoidCaiDatTienTrinhHoanTatThucThi();
-            },
-          );
-
-          // return;
-        }
-      }
-      if (thuocTinhHinhAnh?.getKichThuocRS050 == true || caiDatUuTienKichThuocRS050 == true) {
-        if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS130?.getTienTrinh?.isTienTrinhSanSangThucThi() == true) {
-          await thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS130?.getTienTrinh?.onVoidCaiDatTienTrinhDangThucThi();
-          await Future.delayed(Duration.zero);
-          await onTaiTaiNguyenHinhAnhNgoaiHinhPartSS13(
-            thuocTinhHinhAnh: thuocTinhHinhAnh,
-            caiDatUuTienKichThuocRS100: false,
-            caiDatUuTienKichThuocRS050: true,
-            caiDatUuTienKichThuocRS025: false,
-            onThucThiHoanTat: () {
-              thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS130?.getTienTrinh?.onVoidCaiDatTienTrinhHoanTatThucThi();
-            },
-          );
-
-          // return;
-        }
-      }
-      if (thuocTinhHinhAnh?.getKichThuocRS025 == true || caiDatUuTienKichThuocRS025 == true) {
-        if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS130?.getTienTrinh?.isTienTrinhSanSangThucThi() == true) {
-          await thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS130?.getTienTrinh?.onVoidCaiDatTienTrinhDangThucThi();
-          await Future.delayed(Duration.zero);
-          await onTaiTaiNguyenHinhAnhNgoaiHinhPartSS13(
-            thuocTinhHinhAnh: thuocTinhHinhAnh,
-            caiDatUuTienKichThuocRS100: false,
-            caiDatUuTienKichThuocRS050: false,
-            caiDatUuTienKichThuocRS025: true,
-            onThucThiHoanTat: () {
-              thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS130?.getTienTrinh?.onVoidCaiDatTienTrinhHoanTatThucThi();
-            },
-          );
-
-          // return;
-        }
-      }
-    }
-
-    /// -----
-    /// TODO:
-    /// -----
-    if (tongSoPart >= 14) {
-      if (thuocTinhHinhAnh?.getKichThuocRS100 == true || caiDatUuTienKichThuocRS100 == true) {
-        if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS140?.getTienTrinh?.isTienTrinhSanSangThucThi() == true &&
-            thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS130?.getTienTrinh?.isTienTrinhHoanTatThucThi() == true) {
-          await thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS140?.getTienTrinh?.onVoidCaiDatTienTrinhDangThucThi();
-          await Future.delayed(Duration.zero);
-          await onTaiTaiNguyenHinhAnhNgoaiHinhPartSS14(
-            thuocTinhHinhAnh: thuocTinhHinhAnh,
-            caiDatUuTienKichThuocRS100: true,
-            caiDatUuTienKichThuocRS050: false,
-            caiDatUuTienKichThuocRS025: false,
-            onThucThiHoanTat: () {
-              thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS140?.getTienTrinh?.onVoidCaiDatTienTrinhHoanTatThucThi();
-            },
-          );
-
-          // return;
-        }
-      }
-      if (thuocTinhHinhAnh?.getKichThuocRS050 == true || caiDatUuTienKichThuocRS050 == true) {
-        if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS140?.getTienTrinh?.isTienTrinhSanSangThucThi() == true) {
-          await thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS140?.getTienTrinh?.onVoidCaiDatTienTrinhDangThucThi();
-          await Future.delayed(Duration.zero);
-          await onTaiTaiNguyenHinhAnhNgoaiHinhPartSS14(
-            thuocTinhHinhAnh: thuocTinhHinhAnh,
-            caiDatUuTienKichThuocRS100: false,
-            caiDatUuTienKichThuocRS050: true,
-            caiDatUuTienKichThuocRS025: false,
-            onThucThiHoanTat: () {
-              thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS140?.getTienTrinh?.onVoidCaiDatTienTrinhHoanTatThucThi();
-            },
-          );
-
-          // return;
-        }
-      }
-      if (thuocTinhHinhAnh?.getKichThuocRS025 == true || caiDatUuTienKichThuocRS025 == true) {
-        if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS140?.getTienTrinh?.isTienTrinhSanSangThucThi() == true) {
-          await thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS140?.getTienTrinh?.onVoidCaiDatTienTrinhDangThucThi();
-          await Future.delayed(Duration.zero);
-          await onTaiTaiNguyenHinhAnhNgoaiHinhPartSS14(
-            thuocTinhHinhAnh: thuocTinhHinhAnh,
-            caiDatUuTienKichThuocRS100: false,
-            caiDatUuTienKichThuocRS050: false,
-            caiDatUuTienKichThuocRS025: true,
-            onThucThiHoanTat: () {
-              thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS140?.getTienTrinh?.onVoidCaiDatTienTrinhHoanTatThucThi();
-            },
-          );
-
-          // return;
-        }
-      }
-    }
-
-    /// -----
-    /// TODO:
-    /// -----
-    if (tongSoPart >= 15) {
-      if (thuocTinhHinhAnh?.getKichThuocRS100 == true || caiDatUuTienKichThuocRS100 == true) {
-        if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS150?.getTienTrinh?.isTienTrinhSanSangThucThi() == true &&
-            thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS140?.getTienTrinh?.isTienTrinhHoanTatThucThi() == true) {
-          await thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS150?.getTienTrinh?.onVoidCaiDatTienTrinhDangThucThi();
-          await Future.delayed(Duration.zero);
-          await onTaiTaiNguyenHinhAnhNgoaiHinhPartSS15(
-            thuocTinhHinhAnh: thuocTinhHinhAnh,
-            caiDatUuTienKichThuocRS100: true,
-            caiDatUuTienKichThuocRS050: false,
-            caiDatUuTienKichThuocRS025: false,
-            onThucThiHoanTat: () {
-              thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS150?.getTienTrinh?.onVoidCaiDatTienTrinhHoanTatThucThi();
-            },
-          );
-
-          // return;
-        }
-      }
-      if (thuocTinhHinhAnh?.getKichThuocRS050 == true || caiDatUuTienKichThuocRS050 == true) {
-        if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS150?.getTienTrinh?.isTienTrinhSanSangThucThi() == true) {
-          await thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS150?.getTienTrinh?.onVoidCaiDatTienTrinhDangThucThi();
-          await Future.delayed(Duration.zero);
-          await onTaiTaiNguyenHinhAnhNgoaiHinhPartSS15(
-            thuocTinhHinhAnh: thuocTinhHinhAnh,
-            caiDatUuTienKichThuocRS100: false,
-            caiDatUuTienKichThuocRS050: true,
-            caiDatUuTienKichThuocRS025: false,
-            onThucThiHoanTat: () {
-              thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS150?.getTienTrinh?.onVoidCaiDatTienTrinhHoanTatThucThi();
-            },
-          );
-
-          // return;
-        }
-      }
-      if (thuocTinhHinhAnh?.getKichThuocRS025 == true || caiDatUuTienKichThuocRS025 == true) {
-        if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS150?.getTienTrinh?.isTienTrinhSanSangThucThi() == true) {
-          await thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS150?.getTienTrinh?.onVoidCaiDatTienTrinhDangThucThi();
-          await Future.delayed(Duration.zero);
-          await onTaiTaiNguyenHinhAnhNgoaiHinhPartSS15(
-            thuocTinhHinhAnh: thuocTinhHinhAnh,
-            caiDatUuTienKichThuocRS100: false,
-            caiDatUuTienKichThuocRS050: false,
-            caiDatUuTienKichThuocRS025: true,
-            onThucThiHoanTat: () {
-              thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS150?.getTienTrinh?.onVoidCaiDatTienTrinhHoanTatThucThi();
-            },
-          );
-
-          // return;
-        }
-      }
-    }
-
-    /// -----
-    /// TODO:
-    /// -----
-    if (tongSoPart >= 16) {
-      if (thuocTinhHinhAnh?.getKichThuocRS100 == true || caiDatUuTienKichThuocRS100 == true) {
-        if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS160?.getTienTrinh?.isTienTrinhSanSangThucThi() == true &&
-            thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS150?.getTienTrinh?.isTienTrinhHoanTatThucThi() == true) {
-          await thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS160?.getTienTrinh?.onVoidCaiDatTienTrinhDangThucThi();
-          await Future.delayed(Duration.zero);
-          await onTaiTaiNguyenHinhAnhNgoaiHinhPartSS16(
-            thuocTinhHinhAnh: thuocTinhHinhAnh,
-            caiDatUuTienKichThuocRS100: true,
-            caiDatUuTienKichThuocRS050: false,
-            caiDatUuTienKichThuocRS025: false,
-            onThucThiHoanTat: () {
-              thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS160?.getTienTrinh?.onVoidCaiDatTienTrinhHoanTatThucThi();
-            },
-          );
-
-          // return;
-        }
-      }
-      if (thuocTinhHinhAnh?.getKichThuocRS050 == true || caiDatUuTienKichThuocRS050 == true) {
-        if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS160?.getTienTrinh?.isTienTrinhSanSangThucThi() == true) {
-          await thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS160?.getTienTrinh?.onVoidCaiDatTienTrinhDangThucThi();
-          await Future.delayed(Duration.zero);
-          await onTaiTaiNguyenHinhAnhNgoaiHinhPartSS16(
-            thuocTinhHinhAnh: thuocTinhHinhAnh,
-            caiDatUuTienKichThuocRS100: false,
-            caiDatUuTienKichThuocRS050: true,
-            caiDatUuTienKichThuocRS025: false,
-            onThucThiHoanTat: () {
-              thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS160?.getTienTrinh?.onVoidCaiDatTienTrinhHoanTatThucThi();
-            },
-          );
-
-          // return;
-        }
-      }
-      if (thuocTinhHinhAnh?.getKichThuocRS025 == true || caiDatUuTienKichThuocRS025 == true) {
-        if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS160?.getTienTrinh?.isTienTrinhSanSangThucThi() == true) {
-          await thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS160?.getTienTrinh?.onVoidCaiDatTienTrinhDangThucThi();
-          await Future.delayed(Duration.zero);
-          await onTaiTaiNguyenHinhAnhNgoaiHinhPartSS16(
-            thuocTinhHinhAnh: thuocTinhHinhAnh,
-            caiDatUuTienKichThuocRS100: false,
-            caiDatUuTienKichThuocRS050: false,
-            caiDatUuTienKichThuocRS025: true,
-            onThucThiHoanTat: () {
-              thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS160?.getTienTrinh?.onVoidCaiDatTienTrinhHoanTatThucThi();
-            },
-          );
-
-          // return;
-        }
-      }
-    }
-
-    /// -----
-    /// TODO:
-    /// -----
-    if (tongSoPart >= 17) {
-      if (thuocTinhHinhAnh?.getKichThuocRS100 == true || caiDatUuTienKichThuocRS100 == true) {
-        if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS170?.getTienTrinh?.isTienTrinhSanSangThucThi() == true &&
-            thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS160?.getTienTrinh?.isTienTrinhHoanTatThucThi() == true) {
-          await thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS170?.getTienTrinh?.onVoidCaiDatTienTrinhDangThucThi();
-          await Future.delayed(Duration.zero);
-          await onTaiTaiNguyenHinhAnhNgoaiHinhPartSS17(
-            thuocTinhHinhAnh: thuocTinhHinhAnh,
-            caiDatUuTienKichThuocRS100: true,
-            caiDatUuTienKichThuocRS050: false,
-            caiDatUuTienKichThuocRS025: false,
-            onThucThiHoanTat: () {
-              thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS170?.getTienTrinh?.onVoidCaiDatTienTrinhHoanTatThucThi();
-            },
-          );
-
-          // return;
-        }
-      }
-      if (thuocTinhHinhAnh?.getKichThuocRS050 == true || caiDatUuTienKichThuocRS050 == true) {
-        if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS170?.getTienTrinh?.isTienTrinhSanSangThucThi() == true) {
-          await thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS170?.getTienTrinh?.onVoidCaiDatTienTrinhDangThucThi();
-          await Future.delayed(Duration.zero);
-          await onTaiTaiNguyenHinhAnhNgoaiHinhPartSS17(
-            thuocTinhHinhAnh: thuocTinhHinhAnh,
-            caiDatUuTienKichThuocRS100: false,
-            caiDatUuTienKichThuocRS050: true,
-            caiDatUuTienKichThuocRS025: false,
-            onThucThiHoanTat: () {
-              thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS170?.getTienTrinh?.onVoidCaiDatTienTrinhHoanTatThucThi();
-            },
-          );
-
-          // return;
-        }
-      }
-      if (thuocTinhHinhAnh?.getKichThuocRS025 == true || caiDatUuTienKichThuocRS025 == true) {
-        if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS170?.getTienTrinh?.isTienTrinhSanSangThucThi() == true) {
-          await thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS170?.getTienTrinh?.onVoidCaiDatTienTrinhDangThucThi();
-          await Future.delayed(Duration.zero);
-          await onTaiTaiNguyenHinhAnhNgoaiHinhPartSS17(
-            thuocTinhHinhAnh: thuocTinhHinhAnh,
-            caiDatUuTienKichThuocRS100: false,
-            caiDatUuTienKichThuocRS050: false,
-            caiDatUuTienKichThuocRS025: true,
-            onThucThiHoanTat: () {
-              thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS170?.getTienTrinh?.onVoidCaiDatTienTrinhHoanTatThucThi();
-            },
-          );
-
-          // return;
-        }
-      }
-    }
-
-    /// -----
-    /// TODO:
-    /// -----
-    if (tongSoPart >= 18) {
-      if (thuocTinhHinhAnh?.getKichThuocRS100 == true || caiDatUuTienKichThuocRS100 == true) {
-        if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS180?.getTienTrinh?.isTienTrinhSanSangThucThi() == true &&
-            thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS170?.getTienTrinh?.isTienTrinhHoanTatThucThi() == true) {
-          await thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS180?.getTienTrinh?.onVoidCaiDatTienTrinhDangThucThi();
-          await Future.delayed(Duration.zero);
-          await onTaiTaiNguyenHinhAnhNgoaiHinhPartSS18(
-            thuocTinhHinhAnh: thuocTinhHinhAnh,
-            caiDatUuTienKichThuocRS100: true,
-            caiDatUuTienKichThuocRS050: false,
-            caiDatUuTienKichThuocRS025: false,
-            onThucThiHoanTat: () {
-              thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS180?.getTienTrinh?.onVoidCaiDatTienTrinhHoanTatThucThi();
-            },
-          );
-
-          // return;
-        }
-      }
-      if (thuocTinhHinhAnh?.getKichThuocRS050 == true || caiDatUuTienKichThuocRS050 == true) {
-        if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS180?.getTienTrinh?.isTienTrinhSanSangThucThi() == true) {
-          await thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS180?.getTienTrinh?.onVoidCaiDatTienTrinhDangThucThi();
-          await Future.delayed(Duration.zero);
-          await onTaiTaiNguyenHinhAnhNgoaiHinhPartSS18(
-            thuocTinhHinhAnh: thuocTinhHinhAnh,
-            caiDatUuTienKichThuocRS100: false,
-            caiDatUuTienKichThuocRS050: true,
-            caiDatUuTienKichThuocRS025: false,
-            onThucThiHoanTat: () {
-              thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS180?.getTienTrinh?.onVoidCaiDatTienTrinhHoanTatThucThi();
-            },
-          );
-
-          // return;
-        }
-      }
-      if (thuocTinhHinhAnh?.getKichThuocRS025 == true || caiDatUuTienKichThuocRS025 == true) {
-        if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS180?.getTienTrinh?.isTienTrinhSanSangThucThi() == true) {
-          await thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS180?.getTienTrinh?.onVoidCaiDatTienTrinhDangThucThi();
-          await Future.delayed(Duration.zero);
-          await onTaiTaiNguyenHinhAnhNgoaiHinhPartSS18(
-            thuocTinhHinhAnh: thuocTinhHinhAnh,
-            caiDatUuTienKichThuocRS100: false,
-            caiDatUuTienKichThuocRS050: false,
-            caiDatUuTienKichThuocRS025: true,
-            onThucThiHoanTat: () {
-              thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS180?.getTienTrinh?.onVoidCaiDatTienTrinhHoanTatThucThi();
-            },
-          );
-
-          // return;
-        }
-      }
-    }
-
-    /// -----
-    /// TODO:
-    /// -----
-    if (tongSoPart >= 19) {
-      if (thuocTinhHinhAnh?.getKichThuocRS100 == true || caiDatUuTienKichThuocRS100 == true) {
-        if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS190?.getTienTrinh?.isTienTrinhSanSangThucThi() == true &&
-            thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS180?.getTienTrinh?.isTienTrinhHoanTatThucThi() == true) {
-          await thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS190?.getTienTrinh?.onVoidCaiDatTienTrinhDangThucThi();
-          await Future.delayed(Duration.zero);
-          await onTaiTaiNguyenHinhAnhNgoaiHinhPartSS19(
-            thuocTinhHinhAnh: thuocTinhHinhAnh,
-            caiDatUuTienKichThuocRS100: true,
-            caiDatUuTienKichThuocRS050: false,
-            caiDatUuTienKichThuocRS025: false,
-            onThucThiHoanTat: () {
-              thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS190?.getTienTrinh?.onVoidCaiDatTienTrinhHoanTatThucThi();
-            },
-          );
-
-          // return;
-        }
-      }
-      if (thuocTinhHinhAnh?.getKichThuocRS050 == true || caiDatUuTienKichThuocRS050 == true) {
-        if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS190?.getTienTrinh?.isTienTrinhSanSangThucThi() == true) {
-          await thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS190?.getTienTrinh?.onVoidCaiDatTienTrinhDangThucThi();
-          await Future.delayed(Duration.zero);
-          await onTaiTaiNguyenHinhAnhNgoaiHinhPartSS19(
-            thuocTinhHinhAnh: thuocTinhHinhAnh,
-            caiDatUuTienKichThuocRS100: false,
-            caiDatUuTienKichThuocRS050: true,
-            caiDatUuTienKichThuocRS025: false,
-            onThucThiHoanTat: () {
-              thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS190?.getTienTrinh?.onVoidCaiDatTienTrinhHoanTatThucThi();
-            },
-          );
-
-          // return;
-        }
-      }
-      if (thuocTinhHinhAnh?.getKichThuocRS025 == true || caiDatUuTienKichThuocRS025 == true) {
-        if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS190?.getTienTrinh?.isTienTrinhSanSangThucThi() == true) {
-          await thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS190?.getTienTrinh?.onVoidCaiDatTienTrinhDangThucThi();
-          await Future.delayed(Duration.zero);
-          await onTaiTaiNguyenHinhAnhNgoaiHinhPartSS19(
-            thuocTinhHinhAnh: thuocTinhHinhAnh,
-            caiDatUuTienKichThuocRS100: false,
-            caiDatUuTienKichThuocRS050: false,
-            caiDatUuTienKichThuocRS025: true,
-            onThucThiHoanTat: () {
-              thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS190?.getTienTrinh?.onVoidCaiDatTienTrinhHoanTatThucThi();
-            },
-          );
-
-          // return;
-        }
-      }
-    }
-
-    /// -----
-    /// TODO:
-    /// -----
-    if (tongSoPart >= 20) {
-      if (thuocTinhHinhAnh?.getKichThuocRS100 == true || caiDatUuTienKichThuocRS100 == true) {
-        if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS200?.getTienTrinh?.isTienTrinhSanSangThucThi() == true &&
-            thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS190?.getTienTrinh?.isTienTrinhHoanTatThucThi() == true) {
-          await thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS200?.getTienTrinh?.onVoidCaiDatTienTrinhDangThucThi();
-          await Future.delayed(Duration.zero);
-          await onTaiTaiNguyenHinhAnhNgoaiHinhPartSS20(
-            thuocTinhHinhAnh: thuocTinhHinhAnh,
-            caiDatUuTienKichThuocRS100: true,
-            caiDatUuTienKichThuocRS050: false,
-            caiDatUuTienKichThuocRS025: false,
-            onThucThiHoanTat: () {
-              thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS200?.getTienTrinh?.onVoidCaiDatTienTrinhHoanTatThucThi();
-            },
-          );
-
-          // return;
-        }
-      }
-      if (thuocTinhHinhAnh?.getKichThuocRS050 == true || caiDatUuTienKichThuocRS050 == true) {
-        if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS200?.getTienTrinh?.isTienTrinhSanSangThucThi() == true) {
-          await thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS200?.getTienTrinh?.onVoidCaiDatTienTrinhDangThucThi();
-          await Future.delayed(Duration.zero);
-          await onTaiTaiNguyenHinhAnhNgoaiHinhPartSS20(
-            thuocTinhHinhAnh: thuocTinhHinhAnh,
-            caiDatUuTienKichThuocRS100: false,
-            caiDatUuTienKichThuocRS050: true,
-            caiDatUuTienKichThuocRS025: false,
-            onThucThiHoanTat: () {
-              thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS200?.getTienTrinh?.onVoidCaiDatTienTrinhHoanTatThucThi();
-            },
-          );
-
-          // return;
-        }
-      }
-      if (thuocTinhHinhAnh?.getKichThuocRS025 == true || caiDatUuTienKichThuocRS025 == true) {
-        if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS200?.getTienTrinh?.isTienTrinhSanSangThucThi() == true) {
-          await thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS200?.getTienTrinh?.onVoidCaiDatTienTrinhDangThucThi();
-          await Future.delayed(Duration.zero);
-          await onTaiTaiNguyenHinhAnhNgoaiHinhPartSS20(
-            thuocTinhHinhAnh: thuocTinhHinhAnh,
-            caiDatUuTienKichThuocRS100: false,
-            caiDatUuTienKichThuocRS050: false,
-            caiDatUuTienKichThuocRS025: true,
-            onThucThiHoanTat: () {
-              thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS200?.getTienTrinh?.onVoidCaiDatTienTrinhHoanTatThucThi();
-            },
-          );
-
-          // return;
-        }
-      }
-    }
-
-    /// -----
-    /// TODO:
-    /// -----
-    if (tongSoPart >= 21) {
-      if (thuocTinhHinhAnh?.getKichThuocRS100 == true || caiDatUuTienKichThuocRS100 == true) {
-        if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS210?.getTienTrinh?.isTienTrinhSanSangThucThi() == true &&
-            thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS200?.getTienTrinh?.isTienTrinhHoanTatThucThi() == true) {
-          await thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS210?.getTienTrinh?.onVoidCaiDatTienTrinhDangThucThi();
-          await Future.delayed(Duration.zero);
-          await onTaiTaiNguyenHinhAnhNgoaiHinhPartSS21(
-            thuocTinhHinhAnh: thuocTinhHinhAnh,
-            caiDatUuTienKichThuocRS100: true,
-            caiDatUuTienKichThuocRS050: false,
-            caiDatUuTienKichThuocRS025: false,
-            onThucThiHoanTat: () {
-              thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS210?.getTienTrinh?.onVoidCaiDatTienTrinhHoanTatThucThi();
-            },
-          );
-
-          // return;
-        }
-      }
-      if (thuocTinhHinhAnh?.getKichThuocRS050 == true || caiDatUuTienKichThuocRS050 == true) {
-        if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS210?.getTienTrinh?.isTienTrinhSanSangThucThi() == true) {
-          await thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS210?.getTienTrinh?.onVoidCaiDatTienTrinhDangThucThi();
-          await Future.delayed(Duration.zero);
-          await onTaiTaiNguyenHinhAnhNgoaiHinhPartSS21(
-            thuocTinhHinhAnh: thuocTinhHinhAnh,
-            caiDatUuTienKichThuocRS100: false,
-            caiDatUuTienKichThuocRS050: true,
-            caiDatUuTienKichThuocRS025: false,
-            onThucThiHoanTat: () {
-              thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS210?.getTienTrinh?.onVoidCaiDatTienTrinhHoanTatThucThi();
-            },
-          );
-
-          // return;
-        }
-      }
-      if (thuocTinhHinhAnh?.getKichThuocRS025 == true || caiDatUuTienKichThuocRS025 == true) {
-        if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS210?.getTienTrinh?.isTienTrinhSanSangThucThi() == true) {
-          await thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS210?.getTienTrinh?.onVoidCaiDatTienTrinhDangThucThi();
-          await Future.delayed(Duration.zero);
-          await onTaiTaiNguyenHinhAnhNgoaiHinhPartSS21(
-            thuocTinhHinhAnh: thuocTinhHinhAnh,
-            caiDatUuTienKichThuocRS100: false,
-            caiDatUuTienKichThuocRS050: false,
-            caiDatUuTienKichThuocRS025: true,
-            onThucThiHoanTat: () {
-              thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS210?.getTienTrinh?.onVoidCaiDatTienTrinhHoanTatThucThi();
-            },
-          );
-
-          // return;
-        }
-      }
-    }
-
-    /// -----
-    /// TODO:
-    /// -----
-    if (tongSoPart >= 22) {
-      if (thuocTinhHinhAnh?.getKichThuocRS100 == true || caiDatUuTienKichThuocRS100 == true) {
-        if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS220?.getTienTrinh?.isTienTrinhSanSangThucThi() == true &&
-            thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS210?.getTienTrinh?.isTienTrinhHoanTatThucThi() == true) {
-          await thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS220?.getTienTrinh?.onVoidCaiDatTienTrinhDangThucThi();
-          await Future.delayed(Duration.zero);
-          await onTaiTaiNguyenHinhAnhNgoaiHinhPartSS22(
-            thuocTinhHinhAnh: thuocTinhHinhAnh,
-            caiDatUuTienKichThuocRS100: true,
-            caiDatUuTienKichThuocRS050: false,
-            caiDatUuTienKichThuocRS025: false,
-            onThucThiHoanTat: () {
-              thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS220?.getTienTrinh?.onVoidCaiDatTienTrinhHoanTatThucThi();
-            },
-          );
-
-          // return;
-        }
-      }
-
-      if (thuocTinhHinhAnh?.getKichThuocRS050 == true || caiDatUuTienKichThuocRS050 == true) {
-        if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS220?.getTienTrinh?.isTienTrinhSanSangThucThi() == true) {
-          await thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS220?.getTienTrinh?.onVoidCaiDatTienTrinhDangThucThi();
-          await Future.delayed(Duration.zero);
-          await onTaiTaiNguyenHinhAnhNgoaiHinhPartSS22(
-            thuocTinhHinhAnh: thuocTinhHinhAnh,
-            caiDatUuTienKichThuocRS100: false,
-            caiDatUuTienKichThuocRS050: true,
-            caiDatUuTienKichThuocRS025: false,
-            onThucThiHoanTat: () {
-              thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS220?.getTienTrinh?.onVoidCaiDatTienTrinhHoanTatThucThi();
-            },
-          );
-
-          // return;
-        }
-      }
-
-      if (thuocTinhHinhAnh?.getKichThuocRS025 == true || caiDatUuTienKichThuocRS025 == true) {
-        if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS220?.getTienTrinh?.isTienTrinhSanSangThucThi() == true) {
-          await thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS220?.getTienTrinh?.onVoidCaiDatTienTrinhDangThucThi();
-          await Future.delayed(Duration.zero);
-          await onTaiTaiNguyenHinhAnhNgoaiHinhPartSS22(
-            thuocTinhHinhAnh: thuocTinhHinhAnh,
-            caiDatUuTienKichThuocRS100: false,
-            caiDatUuTienKichThuocRS050: false,
-            caiDatUuTienKichThuocRS025: true,
-            onThucThiHoanTat: () {
-              thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS220?.getTienTrinh?.onVoidCaiDatTienTrinhHoanTatThucThi();
-            },
-          );
-
-          // return;
-        }
-      }
-    }
-
-    /// -----
-    /// TODO:
-    /// -----
-    if (tongSoPart >= 23) {
-      if (thuocTinhHinhAnh?.getKichThuocRS100 == true || caiDatUuTienKichThuocRS100 == true) {
-        if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS230?.getTienTrinh?.isTienTrinhSanSangThucThi() == true &&
-            thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS220?.getTienTrinh?.isTienTrinhHoanTatThucThi() == true) {
-          await thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS230?.getTienTrinh?.onVoidCaiDatTienTrinhDangThucThi();
-          await Future.delayed(Duration.zero);
-          await onTaiTaiNguyenHinhAnhNgoaiHinhPartSS23(
-            thuocTinhHinhAnh: thuocTinhHinhAnh,
-            caiDatUuTienKichThuocRS100: true,
-            caiDatUuTienKichThuocRS050: false,
-            caiDatUuTienKichThuocRS025: false,
-            onThucThiHoanTat: () {
-              thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS230?.getTienTrinh?.onVoidCaiDatTienTrinhHoanTatThucThi();
-            },
-          );
-
-          // return;
-        }
-      }
-
-      /// -----
-      /// TODO:
-      /// -----
-      if (thuocTinhHinhAnh?.getKichThuocRS050 == true || caiDatUuTienKichThuocRS050 == true) {
-        if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS230?.getTienTrinh?.isTienTrinhSanSangThucThi() == true) {
-          await thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS230?.getTienTrinh?.onVoidCaiDatTienTrinhDangThucThi();
-          await Future.delayed(Duration.zero);
-          await onTaiTaiNguyenHinhAnhNgoaiHinhPartSS23(
-            thuocTinhHinhAnh: thuocTinhHinhAnh,
-            caiDatUuTienKichThuocRS100: false,
-            caiDatUuTienKichThuocRS050: true,
-            caiDatUuTienKichThuocRS025: false,
-            onThucThiHoanTat: () {
-              thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS230?.getTienTrinh?.onVoidCaiDatTienTrinhHoanTatThucThi();
-            },
-          );
-
-          // return;
-        }
-      }
-
-      /// -----
-      /// TODO:
-      /// -----
-      if (thuocTinhHinhAnh?.getKichThuocRS025 == true || caiDatUuTienKichThuocRS025 == true) {
-        if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS230?.getTienTrinh?.isTienTrinhSanSangThucThi() == true) {
-          await thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS230?.getTienTrinh?.onVoidCaiDatTienTrinhDangThucThi();
-          await Future.delayed(Duration.zero);
-          await onTaiTaiNguyenHinhAnhNgoaiHinhPartSS23(
-            thuocTinhHinhAnh: thuocTinhHinhAnh,
-            caiDatUuTienKichThuocRS100: false,
-            caiDatUuTienKichThuocRS050: false,
-            caiDatUuTienKichThuocRS025: true,
-            onThucThiHoanTat: () {
-              thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS230?.getTienTrinh?.onVoidCaiDatTienTrinhHoanTatThucThi();
-            },
-          );
-
-          // return;
-        }
-      }
-    }
-
-    /// -----
-    /// TODO:
-    /// -----
-    if (tongSoPart >= 24) {
-      if (thuocTinhHinhAnh?.getKichThuocRS100 == true || caiDatUuTienKichThuocRS100 == true) {
-        if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS240?.getTienTrinh?.isTienTrinhSanSangThucThi() == true &&
-            thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS230?.getTienTrinh?.isTienTrinhHoanTatThucThi() == true) {
-          await thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS240?.getTienTrinh?.onVoidCaiDatTienTrinhDangThucThi();
-          await Future.delayed(Duration.zero);
-          await onTaiTaiNguyenHinhAnhNgoaiHinhPartSS24(
-            thuocTinhHinhAnh: thuocTinhHinhAnh,
-            caiDatUuTienKichThuocRS100: true,
-            caiDatUuTienKichThuocRS050: false,
-            caiDatUuTienKichThuocRS025: false,
-            onThucThiHoanTat: () {
-              thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS240?.getTienTrinh?.onVoidCaiDatTienTrinhHoanTatThucThi();
-            },
-          );
-
-          // return;
-        }
-      }
-
-      if (thuocTinhHinhAnh?.getKichThuocRS050 == true || caiDatUuTienKichThuocRS050 == true) {
-        if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS240?.getTienTrinh?.isTienTrinhSanSangThucThi() == true) {
-          await thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS240?.getTienTrinh?.onVoidCaiDatTienTrinhDangThucThi();
-          await Future.delayed(Duration.zero);
-          await onTaiTaiNguyenHinhAnhNgoaiHinhPartSS24(
-            thuocTinhHinhAnh: thuocTinhHinhAnh,
-            caiDatUuTienKichThuocRS100: false,
-            caiDatUuTienKichThuocRS050: true,
-            caiDatUuTienKichThuocRS025: false,
-            onThucThiHoanTat: () {
-              thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS240?.getTienTrinh?.onVoidCaiDatTienTrinhHoanTatThucThi();
-            },
-          );
-
-          // return;
-        }
-      }
-
-      if (thuocTinhHinhAnh?.getKichThuocRS025 == true || caiDatUuTienKichThuocRS025 == true) {
-        if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS240?.getTienTrinh?.isTienTrinhSanSangThucThi() == true) {
-          await thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS240?.getTienTrinh?.onVoidCaiDatTienTrinhDangThucThi();
-          await Future.delayed(Duration.zero);
-          await onTaiTaiNguyenHinhAnhNgoaiHinhPartSS24(
-            thuocTinhHinhAnh: thuocTinhHinhAnh,
-            caiDatUuTienKichThuocRS100: false,
-            caiDatUuTienKichThuocRS050: false,
-            caiDatUuTienKichThuocRS025: true,
-            onThucThiHoanTat: () {
-              thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS240?.getTienTrinh?.onVoidCaiDatTienTrinhHoanTatThucThi();
-            },
-          );
-
-          // return;
-        }
-      }
-    }
-
-    /// -----
-    /// TODO:
-    /// -----
-    if (tongSoPart >= 25) {
-      if (thuocTinhHinhAnh?.getKichThuocRS100 == true || caiDatUuTienKichThuocRS100 == true) {
-        if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS250?.getTienTrinh?.isTienTrinhSanSangThucThi() == true &&
-            thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS240?.getTienTrinh?.isTienTrinhHoanTatThucThi() == true) {
-          await thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS250?.getTienTrinh?.onVoidCaiDatTienTrinhDangThucThi();
-          await Future.delayed(Duration.zero);
-          await onTaiTaiNguyenHinhAnhNgoaiHinhPartSS25(
-            thuocTinhHinhAnh: thuocTinhHinhAnh,
-            caiDatUuTienKichThuocRS100: true,
-            caiDatUuTienKichThuocRS050: false,
-            caiDatUuTienKichThuocRS025: false,
-            onThucThiHoanTat: () {
-              thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS250?.getTienTrinh?.onVoidCaiDatTienTrinhHoanTatThucThi();
-            },
-          );
-
-          // return;
-        }
-      }
-
-      if (thuocTinhHinhAnh?.getKichThuocRS050 == true || caiDatUuTienKichThuocRS050 == true) {
-        if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS250?.getTienTrinh?.isTienTrinhSanSangThucThi() == true) {
-          await thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS250?.getTienTrinh?.onVoidCaiDatTienTrinhDangThucThi();
-          await Future.delayed(Duration.zero);
-          await onTaiTaiNguyenHinhAnhNgoaiHinhPartSS25(
-            thuocTinhHinhAnh: thuocTinhHinhAnh,
-            caiDatUuTienKichThuocRS100: false,
-            caiDatUuTienKichThuocRS050: true,
-            caiDatUuTienKichThuocRS025: false,
-            onThucThiHoanTat: () {
-              thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS250?.getTienTrinh?.onVoidCaiDatTienTrinhHoanTatThucThi();
-            },
-          );
-
-          // return;
-        }
-      }
-
-      if (thuocTinhHinhAnh?.getKichThuocRS025 == true || caiDatUuTienKichThuocRS025 == true) {
-        if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS250?.getTienTrinh?.isTienTrinhSanSangThucThi() == true) {
-          await thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS250?.getTienTrinh?.onVoidCaiDatTienTrinhDangThucThi();
-          await Future.delayed(Duration.zero);
-          await onTaiTaiNguyenHinhAnhNgoaiHinhPartSS25(
-            thuocTinhHinhAnh: thuocTinhHinhAnh,
-            caiDatUuTienKichThuocRS100: false,
-            caiDatUuTienKichThuocRS050: false,
-            caiDatUuTienKichThuocRS025: true,
-            onThucThiHoanTat: () {
-              thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS250?.getTienTrinh?.onVoidCaiDatTienTrinhHoanTatThucThi();
-            },
-          );
-
-          // return;
-        }
-      }
-    }
-
-    /// -----
-    /// TODO:
-    /// -----
-
-    /// -----
-    /// TODO:
-    /// -----
-    if (tongSoPart >= 1 && _ngoaiHinhFramePartSS01?.isEmpty == true) {
-      if (thuocTinhHinhAnh?.getKichThuocRS100 == true || caiDatUuTienKichThuocRS100 == true) {
-        if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS010?.getTienTrinh?.isTienTrinhHoanTatThucThi() == true) {
-          if (thuocTinhHinhAnh?.getKichThuocRS100 == true) {
-            _ngoaiHinhFramePartSS01 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS010?.getSpriteAnimation?.frames ?? [];
-
-            if (_ngoaiHinhFramePartSS01?.isNotEmpty == true) {
-              _ngoaiHinhFrames?.addAll(List.from(_ngoaiHinhFramePartSS01 ?? []));
-            }
-          }
-        }
-      }
-      if (thuocTinhHinhAnh?.getKichThuocRS050 == true || caiDatUuTienKichThuocRS050 == true) {
-        if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS010?.getTienTrinh?.isTienTrinhHoanTatThucThi() == true) {
-          if (thuocTinhHinhAnh?.getKichThuocRS050 == true) {
-            _ngoaiHinhFramePartSS01 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS010?.getSpriteAnimation?.frames ?? [];
-
-            if (_ngoaiHinhFramePartSS01?.isNotEmpty == true) {
-              _ngoaiHinhFrames?.addAll(List.from(_ngoaiHinhFramePartSS01 ?? []));
-            }
-          }
-        }
-      }
-      if (thuocTinhHinhAnh?.getKichThuocRS025 == true || caiDatUuTienKichThuocRS025 == true) {
-        if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS010?.getTienTrinh?.isTienTrinhHoanTatThucThi() == true) {
-          if (thuocTinhHinhAnh?.getKichThuocRS025 == true) {
-            _ngoaiHinhFramePartSS01 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS010?.getSpriteAnimation?.frames ?? [];
-
-            if (_ngoaiHinhFramePartSS01?.isNotEmpty == true) {
-              _ngoaiHinhFrames?.addAll(List.from(_ngoaiHinhFramePartSS01 ?? []));
-            }
-          }
-        }
-      }
-    }
-
-    /// -----
-    /// TODO:
-    /// -----
-    if (tongSoPart >= 2 && _ngoaiHinhFramePartSS02?.isEmpty == true) {
-      if (thuocTinhHinhAnh?.getKichThuocRS100 == true || caiDatUuTienKichThuocRS100 == true) {
-        if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS020?.getTienTrinh?.isTienTrinhHoanTatThucThi() == true) {
-          if (thuocTinhHinhAnh?.getKichThuocRS100 == true) {
-            _ngoaiHinhFramePartSS02 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS020?.getSpriteAnimation?.frames ?? [];
-
-            if (_ngoaiHinhFramePartSS02?.isNotEmpty == true) {
-              _ngoaiHinhFrames?.addAll(List.from(_ngoaiHinhFramePartSS02 ?? []));
-            }
-          }
-        }
-      }
-      if (thuocTinhHinhAnh?.getKichThuocRS050 == true || caiDatUuTienKichThuocRS050 == true) {
-        if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS020?.getTienTrinh?.isTienTrinhHoanTatThucThi() == true) {
-          if (thuocTinhHinhAnh?.getKichThuocRS050 == true) {
-            _ngoaiHinhFramePartSS02 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS020?.getSpriteAnimation?.frames ?? [];
-
-            if (_ngoaiHinhFramePartSS02?.isNotEmpty == true) {
-              _ngoaiHinhFrames?.addAll(List.from(_ngoaiHinhFramePartSS02 ?? []));
-            }
-          }
-        }
-      }
-      if (thuocTinhHinhAnh?.getKichThuocRS025 == true || caiDatUuTienKichThuocRS025 == true) {
-        if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS020?.getTienTrinh?.isTienTrinhHoanTatThucThi() == true) {
-          if (thuocTinhHinhAnh?.getKichThuocRS025 == true) {
-            _ngoaiHinhFramePartSS02 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS020?.getSpriteAnimation?.frames ?? [];
-
-            if (_ngoaiHinhFramePartSS02?.isNotEmpty == true) {
-              _ngoaiHinhFrames?.addAll(List.from(_ngoaiHinhFramePartSS02 ?? []));
-            }
-          }
-        }
-      }
-    }
-
-    /// -----
-    /// TODO:
-    /// -----
-    if (tongSoPart >= 3 && _ngoaiHinhFramePartSS03?.isEmpty == true) {
-      if (thuocTinhHinhAnh?.getKichThuocRS100 == true || caiDatUuTienKichThuocRS100 == true) {
-        if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS030?.getTienTrinh?.isTienTrinhHoanTatThucThi() == true) {
-          if (thuocTinhHinhAnh?.getKichThuocRS100 == true) {
-            _ngoaiHinhFramePartSS03 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS030?.getSpriteAnimation?.frames ?? [];
-
-            if (_ngoaiHinhFramePartSS03?.isNotEmpty == true) {
-              _ngoaiHinhFrames?.addAll(List.from(_ngoaiHinhFramePartSS03 ?? []));
-            }
-          }
-        }
-      }
-      if (thuocTinhHinhAnh?.getKichThuocRS050 == true || caiDatUuTienKichThuocRS050 == true) {
-        if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS030?.getTienTrinh?.isTienTrinhHoanTatThucThi() == true) {
-          if (thuocTinhHinhAnh?.getKichThuocRS050 == true) {
-            _ngoaiHinhFramePartSS03 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS030?.getSpriteAnimation?.frames ?? [];
-
-            if (_ngoaiHinhFramePartSS03?.isNotEmpty == true) {
-              _ngoaiHinhFrames?.addAll(List.from(_ngoaiHinhFramePartSS03 ?? []));
-            }
-          }
-        }
-      }
-      if (thuocTinhHinhAnh?.getKichThuocRS025 == true || caiDatUuTienKichThuocRS025 == true) {
-        if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS030?.getTienTrinh?.isTienTrinhHoanTatThucThi() == true) {
-          if (thuocTinhHinhAnh?.getKichThuocRS025 == true) {
-            _ngoaiHinhFramePartSS03 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS030?.getSpriteAnimation?.frames ?? [];
-
-            if (_ngoaiHinhFramePartSS03?.isNotEmpty == true) {
-              _ngoaiHinhFrames?.addAll(List.from(_ngoaiHinhFramePartSS03 ?? []));
-            }
-          }
-        }
-      }
-    }
-
-    /// -----
-    /// TODO:
-    /// -----
-    if (tongSoPart >= 4 && _ngoaiHinhFramePartSS04?.isEmpty == true) {
-      if (thuocTinhHinhAnh?.getKichThuocRS100 == true || caiDatUuTienKichThuocRS100 == true) {
-        if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS040?.getTienTrinh?.isTienTrinhHoanTatThucThi() == true) {
-          if (thuocTinhHinhAnh?.getKichThuocRS100 == true) {
-            _ngoaiHinhFramePartSS04 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS040?.getSpriteAnimation?.frames ?? [];
-
-            if (_ngoaiHinhFramePartSS04?.isNotEmpty == true) {
-              _ngoaiHinhFrames?.addAll(List.from(_ngoaiHinhFramePartSS04 ?? []));
-            }
-          }
-        }
-      }
-      if (thuocTinhHinhAnh?.getKichThuocRS050 == true || caiDatUuTienKichThuocRS050 == true) {
-        if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS040?.getTienTrinh?.isTienTrinhHoanTatThucThi() == true) {
-          if (thuocTinhHinhAnh?.getKichThuocRS050 == true) {
-            _ngoaiHinhFramePartSS04 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS040?.getSpriteAnimation?.frames ?? [];
-
-            if (_ngoaiHinhFramePartSS04?.isNotEmpty == true) {
-              _ngoaiHinhFrames?.addAll(List.from(_ngoaiHinhFramePartSS04 ?? []));
-            }
-          }
-        }
-      }
-      if (thuocTinhHinhAnh?.getKichThuocRS025 == true || caiDatUuTienKichThuocRS025 == true) {
-        if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS040?.getTienTrinh?.isTienTrinhHoanTatThucThi() == true) {
-          if (thuocTinhHinhAnh?.getKichThuocRS025 == true) {
-            _ngoaiHinhFramePartSS04 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS040?.getSpriteAnimation?.frames ?? [];
-
-            if (_ngoaiHinhFramePartSS04?.isNotEmpty == true) {
-              _ngoaiHinhFrames?.addAll(List.from(_ngoaiHinhFramePartSS04 ?? []));
-            }
-          }
-        }
-      }
-    }
-
-    /// -----
-    /// TODO:
-    /// -----
-    if (tongSoPart >= 5 && _ngoaiHinhFramePartSS05?.isEmpty == true) {
-      if (thuocTinhHinhAnh?.getKichThuocRS100 == true || caiDatUuTienKichThuocRS100 == true) {
-        if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS050?.getTienTrinh?.isTienTrinhHoanTatThucThi() == true) {
-          if (thuocTinhHinhAnh?.getKichThuocRS100 == true) {
-            _ngoaiHinhFramePartSS05 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS050?.getSpriteAnimation?.frames ?? [];
-
-            if (_ngoaiHinhFramePartSS05?.isNotEmpty == true) {
-              _ngoaiHinhFrames?.addAll(List.from(_ngoaiHinhFramePartSS05 ?? []));
-            }
-          }
-        }
-      }
-      if (thuocTinhHinhAnh?.getKichThuocRS050 == true || caiDatUuTienKichThuocRS050 == true) {
-        if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS050?.getTienTrinh?.isTienTrinhHoanTatThucThi() == true) {
-          if (thuocTinhHinhAnh?.getKichThuocRS050 == true) {
-            _ngoaiHinhFramePartSS05 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS050?.getSpriteAnimation?.frames ?? [];
-
-            if (_ngoaiHinhFramePartSS05?.isNotEmpty == true) {
-              _ngoaiHinhFrames?.addAll(List.from(_ngoaiHinhFramePartSS05 ?? []));
-            }
-          }
-        }
-      }
-      if (thuocTinhHinhAnh?.getKichThuocRS025 == true || caiDatUuTienKichThuocRS025 == true) {
-        if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS050?.getTienTrinh?.isTienTrinhHoanTatThucThi() == true) {
-          if (thuocTinhHinhAnh?.getKichThuocRS025 == true) {
-            _ngoaiHinhFramePartSS05 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS050?.getSpriteAnimation?.frames ?? [];
-
-            if (_ngoaiHinhFramePartSS05?.isNotEmpty == true) {
-              _ngoaiHinhFrames?.addAll(List.from(_ngoaiHinhFramePartSS05 ?? []));
-            }
-          }
-        }
-      }
-    }
-
-    /// -----
-    /// TODO:
-    /// -----
-    if (tongSoPart >= 6 && _ngoaiHinhFramePartSS06?.isEmpty == true) {
-      if (thuocTinhHinhAnh?.getKichThuocRS100 == true || caiDatUuTienKichThuocRS100 == true) {
-        if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS060?.getTienTrinh?.isTienTrinhHoanTatThucThi() == true) {
-          if (thuocTinhHinhAnh?.getKichThuocRS100 == true) {
-            _ngoaiHinhFramePartSS06 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS060?.getSpriteAnimation?.frames ?? [];
-
-            if (_ngoaiHinhFramePartSS06?.isNotEmpty == true) {
-              _ngoaiHinhFrames?.addAll(List.from(_ngoaiHinhFramePartSS06 ?? []));
-            }
-          }
-        }
-      }
-      if (thuocTinhHinhAnh?.getKichThuocRS050 == true || caiDatUuTienKichThuocRS050 == true) {
-        if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS060?.getTienTrinh?.isTienTrinhHoanTatThucThi() == true) {
-          if (thuocTinhHinhAnh?.getKichThuocRS050 == true) {
-            _ngoaiHinhFramePartSS06 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS060?.getSpriteAnimation?.frames ?? [];
-
-            if (_ngoaiHinhFramePartSS06?.isNotEmpty == true) {
-              _ngoaiHinhFrames?.addAll(List.from(_ngoaiHinhFramePartSS06 ?? []));
-            }
-          }
-        }
-      }
-      if (thuocTinhHinhAnh?.getKichThuocRS025 == true || caiDatUuTienKichThuocRS025 == true) {
-        if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS060?.getTienTrinh?.isTienTrinhHoanTatThucThi() == true) {
-          if (thuocTinhHinhAnh?.getKichThuocRS025 == true) {
-            _ngoaiHinhFramePartSS06 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS060?.getSpriteAnimation?.frames ?? [];
-
-            if (_ngoaiHinhFramePartSS06?.isNotEmpty == true) {
-              _ngoaiHinhFrames?.addAll(List.from(_ngoaiHinhFramePartSS06 ?? []));
-            }
-          }
-        }
-      }
-    }
-
-    /// -----
-    /// TODO:
-    /// -----
-    if (tongSoPart >= 7 && _ngoaiHinhFramePartSS07?.isEmpty == true) {
-      if (thuocTinhHinhAnh?.getKichThuocRS100 == true || caiDatUuTienKichThuocRS100 == true) {
-        if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS070?.getTienTrinh?.isTienTrinhHoanTatThucThi() == true) {
-          if (thuocTinhHinhAnh?.getKichThuocRS100 == true) {
-            _ngoaiHinhFramePartSS07 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS070?.getSpriteAnimation?.frames ?? [];
-
-            if (_ngoaiHinhFramePartSS07?.isNotEmpty == true) {
-              _ngoaiHinhFrames?.addAll(List.from(_ngoaiHinhFramePartSS07 ?? []));
-            }
-          }
-        }
-      }
-      if (thuocTinhHinhAnh?.getKichThuocRS050 == true || caiDatUuTienKichThuocRS050 == true) {
-        if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS070?.getTienTrinh?.isTienTrinhHoanTatThucThi() == true) {
-          if (thuocTinhHinhAnh?.getKichThuocRS050 == true) {
-            _ngoaiHinhFramePartSS07 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS070?.getSpriteAnimation?.frames ?? [];
-
-            if (_ngoaiHinhFramePartSS07?.isNotEmpty == true) {
-              _ngoaiHinhFrames?.addAll(List.from(_ngoaiHinhFramePartSS07 ?? []));
-            }
-          }
-        }
-      }
-      if (thuocTinhHinhAnh?.getKichThuocRS025 == true || caiDatUuTienKichThuocRS025 == true) {
-        if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS070?.getTienTrinh?.isTienTrinhHoanTatThucThi() == true) {
-          if (thuocTinhHinhAnh?.getKichThuocRS025 == true) {
-            _ngoaiHinhFramePartSS07 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS070?.getSpriteAnimation?.frames ?? [];
-
-            if (_ngoaiHinhFramePartSS07?.isNotEmpty == true) {
-              _ngoaiHinhFrames?.addAll(List.from(_ngoaiHinhFramePartSS07 ?? []));
-            }
-          }
-        }
-      }
-    }
-
-    /// -----
-    /// TODO:
-    /// -----
-    if (tongSoPart >= 8 && _ngoaiHinhFramePartSS08?.isEmpty == true) {
-      if (thuocTinhHinhAnh?.getKichThuocRS100 == true || caiDatUuTienKichThuocRS100 == true) {
-        if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS080?.getTienTrinh?.isTienTrinhHoanTatThucThi() == true) {
-          if (thuocTinhHinhAnh?.getKichThuocRS100 == true) {
-            _ngoaiHinhFramePartSS08 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS080?.getSpriteAnimation?.frames ?? [];
-
-            if (_ngoaiHinhFramePartSS08?.isNotEmpty == true) {
-              _ngoaiHinhFrames?.addAll(List.from(_ngoaiHinhFramePartSS08 ?? []));
-            }
-          }
-        }
-      }
-      if (thuocTinhHinhAnh?.getKichThuocRS050 == true || caiDatUuTienKichThuocRS050 == true) {
-        if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS080?.getTienTrinh?.isTienTrinhHoanTatThucThi() == true) {
-          if (thuocTinhHinhAnh?.getKichThuocRS050 == true) {
-            _ngoaiHinhFramePartSS08 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS080?.getSpriteAnimation?.frames ?? [];
-
-            if (_ngoaiHinhFramePartSS08?.isNotEmpty == true) {
-              _ngoaiHinhFrames?.addAll(List.from(_ngoaiHinhFramePartSS08 ?? []));
-            }
-          }
-        }
-      }
-      if (thuocTinhHinhAnh?.getKichThuocRS025 == true || caiDatUuTienKichThuocRS025 == true) {
-        if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS080?.getTienTrinh?.isTienTrinhHoanTatThucThi() == true) {
-          if (thuocTinhHinhAnh?.getKichThuocRS025 == true) {
-            _ngoaiHinhFramePartSS08 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS080?.getSpriteAnimation?.frames ?? [];
-
-            if (_ngoaiHinhFramePartSS08?.isNotEmpty == true) {
-              _ngoaiHinhFrames?.addAll(List.from(_ngoaiHinhFramePartSS08 ?? []));
-            }
-          }
-        }
-      }
-    }
-
-    /// -----
-    /// TODO:
-    /// -----
-    if (tongSoPart >= 9 && _ngoaiHinhFramePartSS09?.isEmpty == true) {
-      if (thuocTinhHinhAnh?.getKichThuocRS100 == true || caiDatUuTienKichThuocRS100 == true) {
-        if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS090?.getTienTrinh?.isTienTrinhHoanTatThucThi() == true) {
-          if (thuocTinhHinhAnh?.getKichThuocRS100 == true) {
-            _ngoaiHinhFramePartSS09 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS090?.getSpriteAnimation?.frames ?? [];
-
-            if (_ngoaiHinhFramePartSS09?.isNotEmpty == true) {
-              _ngoaiHinhFrames?.addAll(List.from(_ngoaiHinhFramePartSS09 ?? []));
-            }
-          }
-        }
-      }
-      if (thuocTinhHinhAnh?.getKichThuocRS050 == true || caiDatUuTienKichThuocRS050 == true) {
-        if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS090?.getTienTrinh?.isTienTrinhHoanTatThucThi() == true) {
-          if (thuocTinhHinhAnh?.getKichThuocRS050 == true) {
-            _ngoaiHinhFramePartSS09 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS090?.getSpriteAnimation?.frames ?? [];
-
-            if (_ngoaiHinhFramePartSS09?.isNotEmpty == true) {
-              _ngoaiHinhFrames?.addAll(List.from(_ngoaiHinhFramePartSS09 ?? []));
-            }
-          }
-        }
-      }
-      if (thuocTinhHinhAnh?.getKichThuocRS025 == true || caiDatUuTienKichThuocRS025 == true) {
-        if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS090?.getTienTrinh?.isTienTrinhHoanTatThucThi() == true) {
-          if (thuocTinhHinhAnh?.getKichThuocRS025 == true) {
-            _ngoaiHinhFramePartSS09 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS090?.getSpriteAnimation?.frames ?? [];
-
-            if (_ngoaiHinhFramePartSS09?.isNotEmpty == true) {
-              _ngoaiHinhFrames?.addAll(List.from(_ngoaiHinhFramePartSS09 ?? []));
-            }
-          }
-        }
-      }
-    }
-
-    /// -----
-    /// TODO:
-    /// -----
-    if (tongSoPart >= 10 && _ngoaiHinhFramePartSS10?.isEmpty == true) {
-      if (thuocTinhHinhAnh?.getKichThuocRS100 == true || caiDatUuTienKichThuocRS100 == true) {
-        if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS100?.getTienTrinh?.isTienTrinhHoanTatThucThi() == true) {
-          if (thuocTinhHinhAnh?.getKichThuocRS100 == true) {
-            _ngoaiHinhFramePartSS10 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS100?.getSpriteAnimation?.frames ?? [];
-
-            if (_ngoaiHinhFramePartSS10?.isNotEmpty == true) {
-              _ngoaiHinhFrames?.addAll(List.from(_ngoaiHinhFramePartSS10 ?? []));
-            }
-          }
-        }
-      }
-      if (thuocTinhHinhAnh?.getKichThuocRS050 == true || caiDatUuTienKichThuocRS050 == true) {
-        if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS100?.getTienTrinh?.isTienTrinhHoanTatThucThi() == true) {
-          if (thuocTinhHinhAnh?.getKichThuocRS050 == true) {
-            _ngoaiHinhFramePartSS10 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS100?.getSpriteAnimation?.frames ?? [];
-
-            if (_ngoaiHinhFramePartSS10?.isNotEmpty == true) {
-              _ngoaiHinhFrames?.addAll(List.from(_ngoaiHinhFramePartSS10 ?? []));
-            }
-          }
-        }
-      }
-      if (thuocTinhHinhAnh?.getKichThuocRS025 == true || caiDatUuTienKichThuocRS025 == true) {
-        if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS100?.getTienTrinh?.isTienTrinhHoanTatThucThi() == true) {
-          if (thuocTinhHinhAnh?.getKichThuocRS025 == true) {
-            _ngoaiHinhFramePartSS10 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS100?.getSpriteAnimation?.frames ?? [];
-
-            if (_ngoaiHinhFramePartSS10?.isNotEmpty == true) {
-              _ngoaiHinhFrames?.addAll(List.from(_ngoaiHinhFramePartSS10 ?? []));
-            }
-          }
-        }
-      }
-    }
-
-    /// -----
-    /// TODO:
-    /// -----
-    if (tongSoPart >= 11 && _ngoaiHinhFramePartSS11?.isEmpty == true) {
-      if (thuocTinhHinhAnh?.getKichThuocRS100 == true || caiDatUuTienKichThuocRS100 == true) {
-        if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS110?.getTienTrinh?.isTienTrinhHoanTatThucThi() == true) {
-          if (thuocTinhHinhAnh?.getKichThuocRS100 == true) {
-            _ngoaiHinhFramePartSS11 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS110?.getSpriteAnimation?.frames ?? [];
-
-            if (_ngoaiHinhFramePartSS11?.isNotEmpty == true) {
-              _ngoaiHinhFrames?.addAll(List.from(_ngoaiHinhFramePartSS11 ?? []));
-            }
-          }
-        }
-      }
-      if (thuocTinhHinhAnh?.getKichThuocRS050 == true || caiDatUuTienKichThuocRS050 == true) {
-        if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS110?.getTienTrinh?.isTienTrinhHoanTatThucThi() == true) {
-          if (thuocTinhHinhAnh?.getKichThuocRS050 == true) {
-            _ngoaiHinhFramePartSS11 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS110?.getSpriteAnimation?.frames ?? [];
-
-            if (_ngoaiHinhFramePartSS11?.isNotEmpty == true) {
-              _ngoaiHinhFrames?.addAll(List.from(_ngoaiHinhFramePartSS11 ?? []));
-            }
-          }
-        }
-      }
-      if (thuocTinhHinhAnh?.getKichThuocRS025 == true || caiDatUuTienKichThuocRS025 == true) {
-        if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS110?.getTienTrinh?.isTienTrinhHoanTatThucThi() == true) {
-          if (thuocTinhHinhAnh?.getKichThuocRS025 == true) {
-            _ngoaiHinhFramePartSS11 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS110?.getSpriteAnimation?.frames ?? [];
-
-            if (_ngoaiHinhFramePartSS11?.isNotEmpty == true) {
-              _ngoaiHinhFrames?.addAll(List.from(_ngoaiHinhFramePartSS11 ?? []));
-            }
-          }
-        }
-      }
-    }
-
-    /// -----
-    /// TODO:
-    /// -----
-    if (tongSoPart >= 12 && _ngoaiHinhFramePartSS12?.isEmpty == true) {
-      if (thuocTinhHinhAnh?.getKichThuocRS100 == true || caiDatUuTienKichThuocRS100 == true) {
-        if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS120?.getTienTrinh?.isTienTrinhHoanTatThucThi() == true) {
-          if (thuocTinhHinhAnh?.getKichThuocRS100 == true) {
-            _ngoaiHinhFramePartSS12 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS120?.getSpriteAnimation?.frames ?? [];
-
-            if (_ngoaiHinhFramePartSS12?.isNotEmpty == true) {
-              _ngoaiHinhFrames?.addAll(List.from(_ngoaiHinhFramePartSS12 ?? []));
-            }
-          }
-        }
-      }
-      if (thuocTinhHinhAnh?.getKichThuocRS050 == true || caiDatUuTienKichThuocRS050 == true) {
-        if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS120?.getTienTrinh?.isTienTrinhHoanTatThucThi() == true) {
-          if (thuocTinhHinhAnh?.getKichThuocRS050 == true) {
-            _ngoaiHinhFramePartSS12 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS120?.getSpriteAnimation?.frames ?? [];
-
-            if (_ngoaiHinhFramePartSS12?.isNotEmpty == true) {
-              _ngoaiHinhFrames?.addAll(List.from(_ngoaiHinhFramePartSS12 ?? []));
-            }
-          }
-        }
-      }
-      if (thuocTinhHinhAnh?.getKichThuocRS025 == true || caiDatUuTienKichThuocRS025 == true) {
-        if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS120?.getTienTrinh?.isTienTrinhHoanTatThucThi() == true) {
-          if (thuocTinhHinhAnh?.getKichThuocRS025 == true) {
-            _ngoaiHinhFramePartSS12 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS120?.getSpriteAnimation?.frames ?? [];
-
-            if (_ngoaiHinhFramePartSS12?.isNotEmpty == true) {
-              _ngoaiHinhFrames?.addAll(List.from(_ngoaiHinhFramePartSS12 ?? []));
-            }
-          }
-        }
-      }
-    }
-
-    /// -----
-    /// TODO:
-    /// -----
-    if (tongSoPart >= 13 && _ngoaiHinhFramePartSS13?.isEmpty == true) {
-      if (thuocTinhHinhAnh?.getKichThuocRS100 == true || caiDatUuTienKichThuocRS100 == true) {
-        if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS130?.getTienTrinh?.isTienTrinhHoanTatThucThi() == true) {
-          if (thuocTinhHinhAnh?.getKichThuocRS100 == true) {
-            _ngoaiHinhFramePartSS13 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS130?.getSpriteAnimation?.frames ?? [];
-
-            if (_ngoaiHinhFramePartSS13?.isNotEmpty == true) {
-              _ngoaiHinhFrames?.addAll(List.from(_ngoaiHinhFramePartSS13 ?? []));
-            }
-          }
-        }
-      }
-      if (thuocTinhHinhAnh?.getKichThuocRS050 == true || caiDatUuTienKichThuocRS050 == true) {
-        if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS130?.getTienTrinh?.isTienTrinhHoanTatThucThi() == true) {
-          if (thuocTinhHinhAnh?.getKichThuocRS050 == true) {
-            _ngoaiHinhFramePartSS13 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS130?.getSpriteAnimation?.frames ?? [];
-
-            if (_ngoaiHinhFramePartSS13?.isNotEmpty == true) {
-              _ngoaiHinhFrames?.addAll(List.from(_ngoaiHinhFramePartSS13 ?? []));
-            }
-          }
-        }
-      }
-      if (thuocTinhHinhAnh?.getKichThuocRS025 == true || caiDatUuTienKichThuocRS025 == true) {
-        if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS130?.getTienTrinh?.isTienTrinhHoanTatThucThi() == true) {
-          if (thuocTinhHinhAnh?.getKichThuocRS025 == true) {
-            _ngoaiHinhFramePartSS13 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS130?.getSpriteAnimation?.frames ?? [];
-
-            if (_ngoaiHinhFramePartSS13?.isNotEmpty == true) {
-              _ngoaiHinhFrames?.addAll(List.from(_ngoaiHinhFramePartSS13 ?? []));
-            }
-          }
-        }
-      }
-    }
-
-    /// -----
-    /// TODO:
-    /// -----
-    if (tongSoPart >= 14 && _ngoaiHinhFramePartSS14?.isEmpty == true) {
-      if (thuocTinhHinhAnh?.getKichThuocRS100 == true || caiDatUuTienKichThuocRS100 == true) {
-        if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS140?.getTienTrinh?.isTienTrinhHoanTatThucThi() == true) {
-          if (thuocTinhHinhAnh?.getKichThuocRS100 == true) {
-            _ngoaiHinhFramePartSS14 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS140?.getSpriteAnimation?.frames ?? [];
-
-            if (_ngoaiHinhFramePartSS14?.isNotEmpty == true) {
-              _ngoaiHinhFrames?.addAll(List.from(_ngoaiHinhFramePartSS14 ?? []));
-            }
-          }
-        }
-      }
-      if (thuocTinhHinhAnh?.getKichThuocRS050 == true || caiDatUuTienKichThuocRS050 == true) {
-        if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS140?.getTienTrinh?.isTienTrinhHoanTatThucThi() == true) {
-          if (thuocTinhHinhAnh?.getKichThuocRS050 == true) {
-            _ngoaiHinhFramePartSS14 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS140?.getSpriteAnimation?.frames ?? [];
-
-            if (_ngoaiHinhFramePartSS14?.isNotEmpty == true) {
-              _ngoaiHinhFrames?.addAll(List.from(_ngoaiHinhFramePartSS14 ?? []));
-            }
-          }
-        }
-      }
-      if (thuocTinhHinhAnh?.getKichThuocRS025 == true || caiDatUuTienKichThuocRS025 == true) {
-        if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS140?.getTienTrinh?.isTienTrinhHoanTatThucThi() == true) {
-          if (thuocTinhHinhAnh?.getKichThuocRS025 == true) {
-            _ngoaiHinhFramePartSS14 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS140?.getSpriteAnimation?.frames ?? [];
-
-            if (_ngoaiHinhFramePartSS14?.isNotEmpty == true) {
-              _ngoaiHinhFrames?.addAll(List.from(_ngoaiHinhFramePartSS14 ?? []));
-            }
-          }
-        }
-      }
-    }
-
-    /// -----
-    /// TODO:
-    /// -----
-    if (tongSoPart >= 15 && _ngoaiHinhFramePartSS15?.isEmpty == true) {
-      if (thuocTinhHinhAnh?.getKichThuocRS100 == true || caiDatUuTienKichThuocRS100 == true) {
-        if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS150?.getTienTrinh?.isTienTrinhHoanTatThucThi() == true) {
-          if (thuocTinhHinhAnh?.getKichThuocRS100 == true) {
-            _ngoaiHinhFramePartSS15 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS150?.getSpriteAnimation?.frames ?? [];
-
-            if (_ngoaiHinhFramePartSS15?.isNotEmpty == true) {
-              _ngoaiHinhFrames?.addAll(List.from(_ngoaiHinhFramePartSS15 ?? []));
-            }
-          }
-        }
-      }
-      if (thuocTinhHinhAnh?.getKichThuocRS050 == true || caiDatUuTienKichThuocRS050 == true) {
-        if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS150?.getTienTrinh?.isTienTrinhHoanTatThucThi() == true) {
-          if (thuocTinhHinhAnh?.getKichThuocRS050 == true) {
-            _ngoaiHinhFramePartSS15 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS150?.getSpriteAnimation?.frames ?? [];
-
-            if (_ngoaiHinhFramePartSS15?.isNotEmpty == true) {
-              _ngoaiHinhFrames?.addAll(List.from(_ngoaiHinhFramePartSS15 ?? []));
-            }
-          }
-        }
-      }
-      if (thuocTinhHinhAnh?.getKichThuocRS025 == true || caiDatUuTienKichThuocRS025 == true) {
-        if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS150?.getTienTrinh?.isTienTrinhHoanTatThucThi() == true) {
-          if (thuocTinhHinhAnh?.getKichThuocRS025 == true) {
-            _ngoaiHinhFramePartSS15 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS150?.getSpriteAnimation?.frames ?? [];
-
-            if (_ngoaiHinhFramePartSS15?.isNotEmpty == true) {
-              _ngoaiHinhFrames?.addAll(List.from(_ngoaiHinhFramePartSS15 ?? []));
-            }
-          }
-        }
-      }
-    }
-
-    /// -----
-    /// TODO:
-    /// -----
-    if (tongSoPart >= 16 && _ngoaiHinhFramePartSS16?.isEmpty == true) {
-      if (thuocTinhHinhAnh?.getKichThuocRS100 == true || caiDatUuTienKichThuocRS100 == true) {
-        if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS160?.getTienTrinh?.isTienTrinhHoanTatThucThi() == true) {
-          if (thuocTinhHinhAnh?.getKichThuocRS100 == true) {
-            _ngoaiHinhFramePartSS16 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS160?.getSpriteAnimation?.frames ?? [];
-
-            if (_ngoaiHinhFramePartSS16?.isNotEmpty == true) {
-              _ngoaiHinhFrames?.addAll(List.from(_ngoaiHinhFramePartSS16 ?? []));
-            }
-          }
-        }
-      }
-      if (thuocTinhHinhAnh?.getKichThuocRS050 == true || caiDatUuTienKichThuocRS050 == true) {
-        if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS160?.getTienTrinh?.isTienTrinhHoanTatThucThi() == true) {
-          if (thuocTinhHinhAnh?.getKichThuocRS050 == true) {
-            _ngoaiHinhFramePartSS16 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS160?.getSpriteAnimation?.frames ?? [];
-
-            if (_ngoaiHinhFramePartSS16?.isNotEmpty == true) {
-              _ngoaiHinhFrames?.addAll(List.from(_ngoaiHinhFramePartSS16 ?? []));
-            }
-          }
-        }
-      }
-      if (thuocTinhHinhAnh?.getKichThuocRS025 == true || caiDatUuTienKichThuocRS025 == true) {
-        if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS160?.getTienTrinh?.isTienTrinhHoanTatThucThi() == true) {
-          if (thuocTinhHinhAnh?.getKichThuocRS025 == true) {
-            _ngoaiHinhFramePartSS16 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS160?.getSpriteAnimation?.frames ?? [];
-
-            if (_ngoaiHinhFramePartSS16?.isNotEmpty == true) {
-              _ngoaiHinhFrames?.addAll(List.from(_ngoaiHinhFramePartSS16 ?? []));
-            }
-          }
-        }
-      }
-    }
-
-    /// -----
-    /// TODO:
-    /// -----
-    if (tongSoPart >= 17 && _ngoaiHinhFramePartSS17?.isEmpty == true) {
-      if (thuocTinhHinhAnh?.getKichThuocRS100 == true || caiDatUuTienKichThuocRS100 == true) {
-        if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS170?.getTienTrinh?.isTienTrinhHoanTatThucThi() == true) {
-          if (thuocTinhHinhAnh?.getKichThuocRS100 == true) {
-            _ngoaiHinhFramePartSS17 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS170?.getSpriteAnimation?.frames ?? [];
-
-            if (_ngoaiHinhFramePartSS17?.isNotEmpty == true) {
-              _ngoaiHinhFrames?.addAll(List.from(_ngoaiHinhFramePartSS17 ?? []));
-            }
-          }
-        }
-      }
-      if (thuocTinhHinhAnh?.getKichThuocRS050 == true || caiDatUuTienKichThuocRS050 == true) {
-        if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS170?.getTienTrinh?.isTienTrinhHoanTatThucThi() == true) {
-          if (thuocTinhHinhAnh?.getKichThuocRS050 == true) {
-            _ngoaiHinhFramePartSS17 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS170?.getSpriteAnimation?.frames ?? [];
-
-            if (_ngoaiHinhFramePartSS17?.isNotEmpty == true) {
-              _ngoaiHinhFrames?.addAll(List.from(_ngoaiHinhFramePartSS17 ?? []));
-            }
-          }
-        }
-      }
-      if (thuocTinhHinhAnh?.getKichThuocRS025 == true || caiDatUuTienKichThuocRS025 == true) {
-        if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS170?.getTienTrinh?.isTienTrinhHoanTatThucThi() == true) {
-          if (thuocTinhHinhAnh?.getKichThuocRS025 == true) {
-            _ngoaiHinhFramePartSS17 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS170?.getSpriteAnimation?.frames ?? [];
-
-            if (_ngoaiHinhFramePartSS17?.isNotEmpty == true) {
-              _ngoaiHinhFrames?.addAll(List.from(_ngoaiHinhFramePartSS17 ?? []));
-            }
-          }
-        }
-      }
-    }
-
-    /// -----
-    /// TODO:
-    /// -----
-    if (tongSoPart >= 18 && _ngoaiHinhFramePartSS18?.isEmpty == true) {
-      if (thuocTinhHinhAnh?.getKichThuocRS100 == true || caiDatUuTienKichThuocRS100 == true) {
-        if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS180?.getTienTrinh?.isTienTrinhHoanTatThucThi() == true) {
-          if (thuocTinhHinhAnh?.getKichThuocRS100 == true) {
-            _ngoaiHinhFramePartSS18 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS180?.getSpriteAnimation?.frames ?? [];
-
-            if (_ngoaiHinhFramePartSS18?.isNotEmpty == true) {
-              _ngoaiHinhFrames?.addAll(List.from(_ngoaiHinhFramePartSS18 ?? []));
-            }
-          }
-        }
-      }
-      if (thuocTinhHinhAnh?.getKichThuocRS050 == true || caiDatUuTienKichThuocRS050 == true) {
-        if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS180?.getTienTrinh?.isTienTrinhHoanTatThucThi() == true) {
-          if (thuocTinhHinhAnh?.getKichThuocRS050 == true) {
-            _ngoaiHinhFramePartSS18 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS180?.getSpriteAnimation?.frames ?? [];
-
-            if (_ngoaiHinhFramePartSS18?.isNotEmpty == true) {
-              _ngoaiHinhFrames?.addAll(List.from(_ngoaiHinhFramePartSS18 ?? []));
-            }
-          }
-        }
-      }
-      if (thuocTinhHinhAnh?.getKichThuocRS025 == true || caiDatUuTienKichThuocRS025 == true) {
-        if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS180?.getTienTrinh?.isTienTrinhHoanTatThucThi() == true) {
-          if (thuocTinhHinhAnh?.getKichThuocRS025 == true) {
-            _ngoaiHinhFramePartSS18 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS180?.getSpriteAnimation?.frames ?? [];
-
-            if (_ngoaiHinhFramePartSS18?.isNotEmpty == true) {
-              _ngoaiHinhFrames?.addAll(List.from(_ngoaiHinhFramePartSS18 ?? []));
-            }
-          }
-        }
-      }
-    }
-
-    /// -----
-    /// TODO:
-    /// -----
-    if (tongSoPart >= 19 && _ngoaiHinhFramePartSS19?.isEmpty == true) {
-      if (thuocTinhHinhAnh?.getKichThuocRS100 == true || caiDatUuTienKichThuocRS100 == true) {
-        if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS190?.getTienTrinh?.isTienTrinhHoanTatThucThi() == true) {
-          if (thuocTinhHinhAnh?.getKichThuocRS100 == true) {
-            _ngoaiHinhFramePartSS19 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS190?.getSpriteAnimation?.frames ?? [];
-
-            if (_ngoaiHinhFramePartSS19?.isNotEmpty == true) {
-              _ngoaiHinhFrames?.addAll(List.from(_ngoaiHinhFramePartSS19 ?? []));
-            }
-          }
-        }
-      }
-      if (thuocTinhHinhAnh?.getKichThuocRS050 == true || caiDatUuTienKichThuocRS050 == true) {
-        if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS190?.getTienTrinh?.isTienTrinhHoanTatThucThi() == true) {
-          if (thuocTinhHinhAnh?.getKichThuocRS050 == true) {
-            _ngoaiHinhFramePartSS19 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS190?.getSpriteAnimation?.frames ?? [];
-
-            if (_ngoaiHinhFramePartSS19?.isNotEmpty == true) {
-              _ngoaiHinhFrames?.addAll(List.from(_ngoaiHinhFramePartSS19 ?? []));
-            }
-          }
-        }
-      }
-      if (thuocTinhHinhAnh?.getKichThuocRS025 == true || caiDatUuTienKichThuocRS025 == true) {
-        if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS190?.getTienTrinh?.isTienTrinhHoanTatThucThi() == true) {
-          if (thuocTinhHinhAnh?.getKichThuocRS025 == true) {
-            _ngoaiHinhFramePartSS19 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS190?.getSpriteAnimation?.frames ?? [];
-
-            if (_ngoaiHinhFramePartSS19?.isNotEmpty == true) {
-              _ngoaiHinhFrames?.addAll(List.from(_ngoaiHinhFramePartSS19 ?? []));
-            }
-          }
-        }
-      }
-    }
-
-    /// -----
-    /// TODO:
-    /// -----
-    if (tongSoPart >= 20 && _ngoaiHinhFramePartSS20?.isEmpty == true) {
-      if (thuocTinhHinhAnh?.getKichThuocRS100 == true || caiDatUuTienKichThuocRS100 == true) {
-        if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS200?.getTienTrinh?.isTienTrinhHoanTatThucThi() == true) {
-          if (thuocTinhHinhAnh?.getKichThuocRS100 == true) {
-            _ngoaiHinhFramePartSS20 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS200?.getSpriteAnimation?.frames ?? [];
-
-            if (_ngoaiHinhFramePartSS20?.isNotEmpty == true) {
-              _ngoaiHinhFrames?.addAll(List.from(_ngoaiHinhFramePartSS20 ?? []));
-            }
-          }
-        }
-      }
-      if (thuocTinhHinhAnh?.getKichThuocRS050 == true || caiDatUuTienKichThuocRS050 == true) {
-        if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS200?.getTienTrinh?.isTienTrinhHoanTatThucThi() == true) {
-          if (thuocTinhHinhAnh?.getKichThuocRS050 == true) {
-            _ngoaiHinhFramePartSS20 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS200?.getSpriteAnimation?.frames ?? [];
-
-            if (_ngoaiHinhFramePartSS20?.isNotEmpty == true) {
-              _ngoaiHinhFrames?.addAll(List.from(_ngoaiHinhFramePartSS20 ?? []));
-            }
-          }
-        }
-      }
-      if (thuocTinhHinhAnh?.getKichThuocRS025 == true || caiDatUuTienKichThuocRS025 == true) {
-        if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS200?.getTienTrinh?.isTienTrinhHoanTatThucThi() == true) {
-          if (thuocTinhHinhAnh?.getKichThuocRS025 == true) {
-            _ngoaiHinhFramePartSS20 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS200?.getSpriteAnimation?.frames ?? [];
-
-            if (_ngoaiHinhFramePartSS20?.isNotEmpty == true) {
-              _ngoaiHinhFrames?.addAll(List.from(_ngoaiHinhFramePartSS20 ?? []));
-            }
-          }
-        }
-      }
-    }
-
-    /// -----
-    /// TODO:
-    /// -----
-    if (tongSoPart >= 21 && _ngoaiHinhFramePartSS21?.isEmpty == true) {
-      if (thuocTinhHinhAnh?.getKichThuocRS100 == true || caiDatUuTienKichThuocRS100 == true) {
-        if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS210?.getTienTrinh?.isTienTrinhHoanTatThucThi() == true) {
-          if (thuocTinhHinhAnh?.getKichThuocRS100 == true) {
-            _ngoaiHinhFramePartSS21 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS210?.getSpriteAnimation?.frames ?? [];
-
-            if (_ngoaiHinhFramePartSS21?.isNotEmpty == true) {
-              _ngoaiHinhFrames?.addAll(List.from(_ngoaiHinhFramePartSS21 ?? []));
-            }
-          }
-        }
-      }
-      if (thuocTinhHinhAnh?.getKichThuocRS050 == true || caiDatUuTienKichThuocRS050 == true) {
-        if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS210?.getTienTrinh?.isTienTrinhHoanTatThucThi() == true) {
-          if (thuocTinhHinhAnh?.getKichThuocRS050 == true) {
-            _ngoaiHinhFramePartSS21 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS210?.getSpriteAnimation?.frames ?? [];
-
-            if (_ngoaiHinhFramePartSS21?.isNotEmpty == true) {
-              _ngoaiHinhFrames?.addAll(List.from(_ngoaiHinhFramePartSS21 ?? []));
-            }
-          }
-        }
-      }
-      if (thuocTinhHinhAnh?.getKichThuocRS025 == true || caiDatUuTienKichThuocRS025 == true) {
-        if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS210?.getTienTrinh?.isTienTrinhHoanTatThucThi() == true) {
-          if (thuocTinhHinhAnh?.getKichThuocRS025 == true) {
-            _ngoaiHinhFramePartSS21 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS210?.getSpriteAnimation?.frames ?? [];
-
-            if (_ngoaiHinhFramePartSS21?.isNotEmpty == true) {
-              _ngoaiHinhFrames?.addAll(List.from(_ngoaiHinhFramePartSS21 ?? []));
-            }
-          }
-        }
-      }
-    }
-
-    /// -----
-    /// TODO:
-    /// -----
-    if (tongSoPart >= 22 && _ngoaiHinhFramePartSS22?.isEmpty == true) {
-      if (thuocTinhHinhAnh?.getKichThuocRS100 == true || caiDatUuTienKichThuocRS100 == true) {
-        if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS220?.getTienTrinh?.isTienTrinhHoanTatThucThi() == true) {
-          if (thuocTinhHinhAnh?.getKichThuocRS100 == true) {
-            _ngoaiHinhFramePartSS22 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS220?.getSpriteAnimation?.frames ?? [];
-
-            if (_ngoaiHinhFramePartSS22?.isNotEmpty == true) {
-              _ngoaiHinhFrames?.addAll(List.from(_ngoaiHinhFramePartSS22 ?? []));
-            }
-          }
-        }
-      }
-      if (thuocTinhHinhAnh?.getKichThuocRS050 == true || caiDatUuTienKichThuocRS050 == true) {
-        if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS220?.getTienTrinh?.isTienTrinhHoanTatThucThi() == true) {
-          if (thuocTinhHinhAnh?.getKichThuocRS050 == true) {
-            _ngoaiHinhFramePartSS22 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS220?.getSpriteAnimation?.frames ?? [];
-
-            if (_ngoaiHinhFramePartSS22?.isNotEmpty == true) {
-              _ngoaiHinhFrames?.addAll(List.from(_ngoaiHinhFramePartSS22 ?? []));
-            }
-          }
-        }
-      }
-      if (thuocTinhHinhAnh?.getKichThuocRS025 == true || caiDatUuTienKichThuocRS025 == true) {
-        if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS220?.getTienTrinh?.isTienTrinhHoanTatThucThi() == true) {
-          if (thuocTinhHinhAnh?.getKichThuocRS025 == true) {
-            _ngoaiHinhFramePartSS22 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS220?.getSpriteAnimation?.frames ?? [];
-
-            if (_ngoaiHinhFramePartSS22?.isNotEmpty == true) {
-              _ngoaiHinhFrames?.addAll(List.from(_ngoaiHinhFramePartSS22 ?? []));
-            }
-          }
-        }
-      }
-    }
-
-    /// -----
-    /// TODO:
-    /// -----
-    if (tongSoPart >= 23 && _ngoaiHinhFramePartSS23?.isEmpty == true) {
-      if (thuocTinhHinhAnh?.getKichThuocRS100 == true || caiDatUuTienKichThuocRS100 == true) {
-        if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS230?.getTienTrinh?.isTienTrinhHoanTatThucThi() == true) {
-          if (thuocTinhHinhAnh?.getKichThuocRS100 == true) {
-            _ngoaiHinhFramePartSS23 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS230?.getSpriteAnimation?.frames ?? [];
-
-            if (_ngoaiHinhFramePartSS23?.isNotEmpty == true) {
-              _ngoaiHinhFrames?.addAll(List.from(_ngoaiHinhFramePartSS23 ?? []));
-            }
-          }
-        }
-      }
-      if (thuocTinhHinhAnh?.getKichThuocRS050 == true || caiDatUuTienKichThuocRS050 == true) {
-        if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS230?.getTienTrinh?.isTienTrinhHoanTatThucThi() == true) {
-          if (thuocTinhHinhAnh?.getKichThuocRS050 == true) {
-            _ngoaiHinhFramePartSS23 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS230?.getSpriteAnimation?.frames ?? [];
-
-            if (_ngoaiHinhFramePartSS23?.isNotEmpty == true) {
-              _ngoaiHinhFrames?.addAll(List.from(_ngoaiHinhFramePartSS23 ?? []));
-            }
-          }
-        }
-      }
-      if (thuocTinhHinhAnh?.getKichThuocRS025 == true || caiDatUuTienKichThuocRS025 == true) {
-        if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS230?.getTienTrinh?.isTienTrinhHoanTatThucThi() == true) {
-          if (thuocTinhHinhAnh?.getKichThuocRS025 == true) {
-            _ngoaiHinhFramePartSS23 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS230?.getSpriteAnimation?.frames ?? [];
-
-            if (_ngoaiHinhFramePartSS23?.isNotEmpty == true) {
-              _ngoaiHinhFrames?.addAll(List.from(_ngoaiHinhFramePartSS23 ?? []));
-            }
-          }
-        }
-      }
-    }
-
-    /// -----
-    /// TODO:
-    /// -----
-    if (tongSoPart >= 24 && _ngoaiHinhFramePartSS24?.isEmpty == true) {
-      if (thuocTinhHinhAnh?.getKichThuocRS100 == true || caiDatUuTienKichThuocRS100 == true) {
-        if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS240?.getTienTrinh?.isTienTrinhHoanTatThucThi() == true) {
-          if (thuocTinhHinhAnh?.getKichThuocRS100 == true) {
-            _ngoaiHinhFramePartSS24 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS240?.getSpriteAnimation?.frames ?? [];
-
-            if (_ngoaiHinhFramePartSS24?.isNotEmpty == true) {
-              _ngoaiHinhFrames?.addAll(List.from(_ngoaiHinhFramePartSS24 ?? []));
-            }
-          }
-        }
-      }
-      if (thuocTinhHinhAnh?.getKichThuocRS050 == true || caiDatUuTienKichThuocRS050 == true) {
-        if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS240?.getTienTrinh?.isTienTrinhHoanTatThucThi() == true) {
-          if (thuocTinhHinhAnh?.getKichThuocRS050 == true) {
-            _ngoaiHinhFramePartSS24 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS240?.getSpriteAnimation?.frames ?? [];
-
-            if (_ngoaiHinhFramePartSS24?.isNotEmpty == true) {
-              _ngoaiHinhFrames?.addAll(List.from(_ngoaiHinhFramePartSS24 ?? []));
-            }
-          }
-        }
-      }
-      if (thuocTinhHinhAnh?.getKichThuocRS025 == true || caiDatUuTienKichThuocRS025 == true) {
-        if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS240?.getTienTrinh?.isTienTrinhHoanTatThucThi() == true) {
-          if (thuocTinhHinhAnh?.getKichThuocRS025 == true) {
-            _ngoaiHinhFramePartSS24 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS240?.getSpriteAnimation?.frames ?? [];
-
-            if (_ngoaiHinhFramePartSS24?.isNotEmpty == true) {
-              _ngoaiHinhFrames?.addAll(List.from(_ngoaiHinhFramePartSS24 ?? []));
-            }
-          }
-        }
-      }
-    }
-
-    /// -----
-    /// TODO:
-    /// -----
-    if (tongSoPart >= 25 && _ngoaiHinhFramePartSS25?.isEmpty == true) {
-      if (thuocTinhHinhAnh?.getKichThuocRS100 == true || caiDatUuTienKichThuocRS100 == true) {
-        if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS250?.getTienTrinh?.isTienTrinhHoanTatThucThi() == true) {
-          if (thuocTinhHinhAnh?.getKichThuocRS100 == true) {
-            _ngoaiHinhFramePartSS25 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS250?.getSpriteAnimation?.frames ?? [];
-
-            if (_ngoaiHinhFramePartSS25?.isNotEmpty == true) {
-              _ngoaiHinhFrames?.addAll(List.from(_ngoaiHinhFramePartSS25 ?? []));
-            }
-          }
-        }
-      }
-      if (thuocTinhHinhAnh?.getKichThuocRS050 == true || caiDatUuTienKichThuocRS050 == true) {
-        if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS250?.getTienTrinh?.isTienTrinhHoanTatThucThi() == true) {
-          if (thuocTinhHinhAnh?.getKichThuocRS050 == true) {
-            _ngoaiHinhFramePartSS25 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS250?.getSpriteAnimation?.frames ?? [];
-
-            if (_ngoaiHinhFramePartSS25?.isNotEmpty == true) {
-              _ngoaiHinhFrames?.addAll(List.from(_ngoaiHinhFramePartSS25 ?? []));
-            }
-          }
-        }
-      }
-      if (thuocTinhHinhAnh?.getKichThuocRS025 == true || caiDatUuTienKichThuocRS025 == true) {
-        if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS250?.getTienTrinh?.isTienTrinhHoanTatThucThi() == true) {
-          if (thuocTinhHinhAnh?.getKichThuocRS025 == true) {
-            _ngoaiHinhFramePartSS25 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS250?.getSpriteAnimation?.frames ?? [];
-
-            if (_ngoaiHinhFramePartSS25?.isNotEmpty == true) {
-              _ngoaiHinhFrames?.addAll(List.from(_ngoaiHinhFramePartSS25 ?? []));
-            }
-          }
-        }
-      }
-    }
-
-    /// -----
-    /// TODO:
-    /// -----
-    if (tongSoPart == 6) {
-      if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS060?.getTienTrinh?.isTienTrinhHoanTatThucThi() == true) {
-        SpriteAnimation spriteAnimation = SpriteAnimation(_ngoaiHinhFrames ?? []);
-
-        if (thuocTinhHinhAnh?.getKichThuocRS100 == true) {
-          thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100?.onVoidCaiDatSpriteAnimation(value: spriteAnimation, caiDatUuTien: true);
-          thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
-          thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
-        }
-        if (thuocTinhHinhAnh?.getKichThuocRS050 == true) {
-          thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
-          thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050?.onVoidCaiDatSpriteAnimation(value: spriteAnimation, caiDatUuTien: true);
-          thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
-        }
-        if (thuocTinhHinhAnh?.getKichThuocRS025 == true) {
-          thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
-          thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
-          thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025?.onVoidCaiDatSpriteAnimation(value: spriteAnimation, caiDatUuTien: true);
-        }
+    /// TODO: Tải Tài Nguyên Hình Ảnh
+    /// -----
+    if (nguonSpriteSheet != null && nguonSpriteSheet.isNotEmpty == true) {
+      Image? spriteSheetImage;
+
+      try {
+        spriteSheetImage = getTaiHinhAnh?.fromCache(nguonSpriteSheet);
+      } catch (e) {
+        spriteSheetImage = null;
+      }
+
+      if (spriteSheetImage != null) {
+        SpriteAnimation spriteAnimation = SpriteAnimation.fromFrameData(
+          spriteSheetImage,
+          SpriteAnimationData.sequenced(
+            amount: tongSoFrame, // Số frame trong spriteSheet
+            textureSize: Vector2(chieuRongFrame, chieuCaoFrame), // Kích thước mỗi frame
+            amountPerRow: soFrameTrenHang,
+            stepTime: 0.035, // Tốc độ animation
+          ),
+        );
 
         /// -----
         /// TODO:
         /// -----
-        if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100?.getSpriteAnimation?.frames.isNotEmpty == true) {
-          thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinh?.onVoidCaiDatSpriteAnimation(value: thuocTinhHinhAnh.getDonViHinhAnhSpriteNgoaiHinhRS100?.getSpriteAnimation, caiDatUuTien: true);
-        } else if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050?.getSpriteAnimation?.frames.isNotEmpty == true) {
-          thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinh?.onVoidCaiDatSpriteAnimation(value: thuocTinhHinhAnh.getDonViHinhAnhSpriteNgoaiHinhRS050?.getSpriteAnimation, caiDatUuTien: true);
-        } else if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025?.getSpriteAnimation?.frames.isNotEmpty == true) {
-          thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinh?.onVoidCaiDatSpriteAnimation(value: thuocTinhHinhAnh.getDonViHinhAnhSpriteNgoaiHinhRS025?.getSpriteAnimation, caiDatUuTien: true);
+        if (thuocTinhHinhAnh?.getKichThuocRS025 == true || caiDatUuTienKichThuocRS025 == true) {
+          thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS010?.onVoidCaiDatSpriteAnimation(value: spriteAnimation.clone(), caiDatUuTien: true);
+        } else if (thuocTinhHinhAnh?.getKichThuocRS050 == true || caiDatUuTienKichThuocRS050 == true) {
+          thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS010?.onVoidCaiDatSpriteAnimation(value: spriteAnimation.clone(), caiDatUuTien: true);
+        } else if (thuocTinhHinhAnh?.getKichThuocRS100 == true || caiDatUuTienKichThuocRS100 == true) {
+          thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS010?.onVoidCaiDatSpriteAnimation(value: spriteAnimation.clone(), caiDatUuTien: true);
         }
 
-        /// -----
-        /// TODO:
-        /// -----
-        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS010?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
-        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS020?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
-        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS030?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
-        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS040?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
-        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS050?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
-        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS060?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
-        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS070?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
-        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS080?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
-        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS090?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
-        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS100?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
-        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS110?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
-        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS120?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
-        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS130?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
-        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS140?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
-        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS150?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
-        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS160?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
-        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS170?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
-        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS180?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
-        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS190?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
-        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS200?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
-        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS210?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
-        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS220?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
-        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS230?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
-        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS240?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
-        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS250?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
-
-        /// -----
-        /// TODO:
-        /// -----
-        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS010?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
-        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS020?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
-        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS030?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
-        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS040?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
-        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS050?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
-        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS060?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
-        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS070?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
-        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS080?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
-        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS090?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
-        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS100?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
-        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS110?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
-        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS120?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
-        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS130?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
-        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS140?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
-        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS150?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
-        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS160?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
-        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS170?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
-        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS180?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
-        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS190?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
-        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS200?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
-        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS210?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
-        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS220?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
-        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS230?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
-        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS240?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
-        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS250?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
-
-        /// -----
-        /// TODO:
-        /// -----
-        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS010?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
-        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS020?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
-        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS030?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
-        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS040?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
-        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS050?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
-        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS060?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
-        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS070?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
-        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS080?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
-        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS090?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
-        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS100?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
-        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS110?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
-        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS120?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
-        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS130?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
-        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS140?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
-        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS150?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
-        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS160?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
-        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS170?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
-        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS180?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
-        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS190?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
-        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS200?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
-        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS210?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
-        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS220?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
-        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS230?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
-        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS240?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
-        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS250?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
-
-        /// -----
-        /// TODO:
-        /// -----
-        getMapTaiNguyenHinhAnhNgoaiHinh?[maDinhDanh ?? '[MA_DINH_DANH_TAI_NGUYEN]'] ??= thuocTinhHinhAnh;
-        if (getMapTaiNguyenHinhAnhNgoaiHinh?[maDinhDanh ?? '[MA_DINH_DANH_TAI_NGUYEN]'] == null) {
-          getMapTaiNguyenHinhAnhNgoaiHinh?[maDinhDanh ?? '[MA_DINH_DANH_TAI_NGUYEN]'] = thuocTinhHinhAnh;
-        } else {
-          getMapTaiNguyenHinhAnhNgoaiHinh?[maDinhDanh ?? '[MA_DINH_DANH_TAI_NGUYEN]']?.onCaiDatDonViHinhAnhSpriteNgoaiHinh(
-            value: thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinh, //
-            caiDatUuTien: true,
-          ); //
-        }
-
-        await thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS060?.getTienTrinh?.onVoidCaiDatTienTrinhNguyenBan();
-
+        ///
         onThucThiHoanTat?.call();
-      }
-    }
+      } else {
+        await getTaiHinhAnh
+            ?.load(nguonSpriteSheet)
+            .then((spriteSheet) async {
+              /// -----
+              /// TODO: Init spriteAnimation
+              /// -----
+              SpriteAnimation spriteAnimation = SpriteAnimation.fromFrameData(
+                spriteSheet,
+                SpriteAnimationData.sequenced(
+                  amount: tongSoFrame, // Số frame trong spriteSheet
+                  textureSize: Vector2(chieuRongFrame, chieuCaoFrame), // Kích thước mỗi frame
+                  amountPerRow: soFrameTrenHang,
+                  stepTime: 0.035, // Tốc độ animation
+                ),
+              );
 
-    /// -----
-    /// TODO:
-    /// -----
-    if (tongSoPart == 15) {
-      if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS150?.getTienTrinh?.isTienTrinhHoanTatThucThi() == true) {
-        SpriteAnimation spriteAnimation = SpriteAnimation(_ngoaiHinhFrames ?? []);
+              /// -----
+              /// TODO:
+              /// -----
+              if (thuocTinhHinhAnh?.getKichThuocRS025 == true || caiDatUuTienKichThuocRS025 == true) {
+                thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS010?.onVoidCaiDatSpriteAnimation(value: spriteAnimation.clone(), caiDatUuTien: true);
+              } else if (thuocTinhHinhAnh?.getKichThuocRS050 == true || caiDatUuTienKichThuocRS050 == true) {
+                thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS010?.onVoidCaiDatSpriteAnimation(value: spriteAnimation.clone(), caiDatUuTien: true);
+              } else if (thuocTinhHinhAnh?.getKichThuocRS100 == true || caiDatUuTienKichThuocRS100 == true) {
+                thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS010?.onVoidCaiDatSpriteAnimation(value: spriteAnimation.clone(), caiDatUuTien: true);
+              }
 
-        if (thuocTinhHinhAnh?.getKichThuocRS100 == true) {
-          thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100?.onVoidCaiDatSpriteAnimation(value: spriteAnimation, caiDatUuTien: true);
-          thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
-          thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
-        }
-        if (thuocTinhHinhAnh?.getKichThuocRS050 == true) {
-          thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
-          thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050?.onVoidCaiDatSpriteAnimation(value: spriteAnimation, caiDatUuTien: true);
-          thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
-        }
-        if (thuocTinhHinhAnh?.getKichThuocRS025 == true) {
-          thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
-          thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
-          thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025?.onVoidCaiDatSpriteAnimation(value: spriteAnimation, caiDatUuTien: true);
-        }
-
-        /// -----
-        /// TODO:
-        /// -----
-        if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100?.getSpriteAnimation?.frames.isNotEmpty == true) {
-          thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinh?.onVoidCaiDatSpriteAnimation(value: thuocTinhHinhAnh.getDonViHinhAnhSpriteNgoaiHinhRS100?.getSpriteAnimation, caiDatUuTien: true);
-        } else if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050?.getSpriteAnimation?.frames.isNotEmpty == true) {
-          thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinh?.onVoidCaiDatSpriteAnimation(value: thuocTinhHinhAnh.getDonViHinhAnhSpriteNgoaiHinhRS050?.getSpriteAnimation, caiDatUuTien: true);
-        } else if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025?.getSpriteAnimation?.frames.isNotEmpty == true) {
-          thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinh?.onVoidCaiDatSpriteAnimation(value: thuocTinhHinhAnh.getDonViHinhAnhSpriteNgoaiHinhRS025?.getSpriteAnimation, caiDatUuTien: true);
-        }
-
-        /// -----
-        /// TODO:
-        /// -----
-        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS010?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
-        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS020?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
-        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS030?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
-        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS040?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
-        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS050?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
-        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS060?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
-        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS070?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
-        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS080?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
-        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS090?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
-        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS100?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
-        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS110?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
-        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS120?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
-        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS130?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
-        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS140?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
-        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS150?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
-        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS160?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
-        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS170?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
-        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS180?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
-        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS190?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
-        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS200?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
-        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS210?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
-        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS220?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
-        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS230?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
-        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS240?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
-        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS250?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
-
-        /// -----
-        /// TODO:
-        /// -----
-        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS010?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
-        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS020?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
-        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS030?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
-        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS040?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
-        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS050?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
-        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS060?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
-        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS070?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
-        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS080?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
-        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS090?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
-        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS100?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
-        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS110?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
-        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS120?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
-        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS130?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
-        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS140?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
-        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS150?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
-        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS160?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
-        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS170?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
-        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS180?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
-        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS190?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
-        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS200?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
-        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS210?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
-        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS220?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
-        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS230?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
-        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS240?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
-        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS250?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
-
-        /// -----
-        /// TODO:
-        /// -----
-        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS010?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
-        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS020?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
-        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS030?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
-        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS040?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
-        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS050?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
-        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS060?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
-        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS070?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
-        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS080?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
-        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS090?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
-        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS100?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
-        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS110?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
-        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS120?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
-        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS130?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
-        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS140?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
-        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS150?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
-        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS160?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
-        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS170?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
-        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS180?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
-        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS190?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
-        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS200?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
-        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS210?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
-        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS220?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
-        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS230?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
-        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS240?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
-        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS250?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
-
-        /// -----
-        /// TODO:
-        /// -----
-        getMapTaiNguyenHinhAnhNgoaiHinh?[maDinhDanh ?? '[MA_DINH_DANH_TAI_NGUYEN]'] ??= thuocTinhHinhAnh;
-        if (getMapTaiNguyenHinhAnhNgoaiHinh?[maDinhDanh ?? '[MA_DINH_DANH_TAI_NGUYEN]'] == null) {
-          getMapTaiNguyenHinhAnhNgoaiHinh?[maDinhDanh ?? '[MA_DINH_DANH_TAI_NGUYEN]'] = thuocTinhHinhAnh;
-        } else {
-          getMapTaiNguyenHinhAnhNgoaiHinh?[maDinhDanh ?? '[MA_DINH_DANH_TAI_NGUYEN]']?.onCaiDatDonViHinhAnhSpriteNgoaiHinh(
-            value: thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinh, //
-            caiDatUuTien: true,
-          ); //
-        }
-
-        await thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS150?.getTienTrinh?.onVoidCaiDatTienTrinhNguyenBan();
-
-        onThucThiHoanTat?.call();
-      }
-    }
-
-    /// -----
-    /// TODO:
-    /// -----
-    if (tongSoPart == 24) {
-      if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS240?.getTienTrinh?.isTienTrinhHoanTatThucThi() == true) {
-        SpriteAnimation spriteAnimation = SpriteAnimation(_ngoaiHinhFrames ?? []);
-
-        if (thuocTinhHinhAnh?.getKichThuocRS100 == true) {
-          thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100?.onVoidCaiDatSpriteAnimation(value: spriteAnimation, caiDatUuTien: true);
-          thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
-          thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
-        }
-        if (thuocTinhHinhAnh?.getKichThuocRS050 == true) {
-          thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
-          thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050?.onVoidCaiDatSpriteAnimation(value: spriteAnimation, caiDatUuTien: true);
-          thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
-        }
-        if (thuocTinhHinhAnh?.getKichThuocRS025 == true) {
-          thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
-          thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
-          thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025?.onVoidCaiDatSpriteAnimation(value: spriteAnimation, caiDatUuTien: true);
-        }
-
-        /// -----
-        /// TODO:
-        /// -----
-        if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100?.getSpriteAnimation?.frames.isNotEmpty == true) {
-          thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinh?.onVoidCaiDatSpriteAnimation(value: thuocTinhHinhAnh.getDonViHinhAnhSpriteNgoaiHinhRS100?.getSpriteAnimation, caiDatUuTien: true);
-        } else if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050?.getSpriteAnimation?.frames.isNotEmpty == true) {
-          thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinh?.onVoidCaiDatSpriteAnimation(value: thuocTinhHinhAnh.getDonViHinhAnhSpriteNgoaiHinhRS050?.getSpriteAnimation, caiDatUuTien: true);
-        } else if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025?.getSpriteAnimation?.frames.isNotEmpty == true) {
-          thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinh?.onVoidCaiDatSpriteAnimation(value: thuocTinhHinhAnh.getDonViHinhAnhSpriteNgoaiHinhRS025?.getSpriteAnimation, caiDatUuTien: true);
-        }
-
-        /// -----
-        /// TODO:
-        /// -----
-        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS010?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
-        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS020?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
-        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS030?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
-        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS040?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
-        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS050?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
-        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS060?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
-        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS070?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
-        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS080?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
-        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS090?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
-        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS100?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
-        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS110?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
-        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS120?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
-        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS130?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
-        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS140?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
-        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS150?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
-        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS160?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
-        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS170?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
-        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS180?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
-        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS190?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
-        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS200?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
-        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS210?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
-        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS220?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
-        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS230?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
-        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS240?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
-        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS250?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
-
-        /// -----
-        /// TODO:
-        /// -----
-        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS010?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
-        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS020?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
-        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS030?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
-        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS040?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
-        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS050?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
-        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS060?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
-        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS070?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
-        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS080?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
-        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS090?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
-        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS100?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
-        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS110?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
-        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS120?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
-        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS130?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
-        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS140?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
-        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS150?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
-        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS160?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
-        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS170?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
-        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS180?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
-        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS190?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
-        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS200?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
-        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS210?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
-        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS220?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
-        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS230?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
-        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS240?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
-        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS250?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
-
-        /// -----
-        /// TODO:
-        /// -----
-        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS010?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
-        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS020?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
-        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS030?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
-        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS040?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
-        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS050?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
-        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS060?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
-        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS070?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
-        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS080?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
-        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS090?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
-        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS100?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
-        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS110?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
-        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS120?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
-        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS130?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
-        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS140?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
-        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS150?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
-        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS160?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
-        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS170?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
-        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS180?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
-        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS190?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
-        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS200?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
-        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS210?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
-        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS220?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
-        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS230?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
-        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS240?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
-        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS250?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
-
-        /// -----
-        /// TODO:
-        /// -----
-        getMapTaiNguyenHinhAnhNgoaiHinh?[maDinhDanh ?? '[MA_DINH_DANH_TAI_NGUYEN]'] ??= thuocTinhHinhAnh;
-        if (getMapTaiNguyenHinhAnhNgoaiHinh?[maDinhDanh ?? '[MA_DINH_DANH_TAI_NGUYEN]'] == null) {
-          getMapTaiNguyenHinhAnhNgoaiHinh?[maDinhDanh ?? '[MA_DINH_DANH_TAI_NGUYEN]'] = thuocTinhHinhAnh;
-        } else {
-          getMapTaiNguyenHinhAnhNgoaiHinh?[maDinhDanh ?? '[MA_DINH_DANH_TAI_NGUYEN]']?.onCaiDatDonViHinhAnhSpriteNgoaiHinh(
-            value: thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinh, //
-            caiDatUuTien: true,
-          ); //
-        }
-
-        await thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS240?.getTienTrinh?.onVoidCaiDatTienTrinhNguyenBan();
-
-        onThucThiHoanTat?.call();
+              ///
+              onThucThiHoanTat?.call();
+            })
+            .catchError((error) {
+              if (kDebugMode) {
+                String message = 'Truy Xuất Tài Nguyên Hình Ảnh [SpriteSheet - PartSS01] Không Thành Công: $nguonSpriteSheet';
+                throw (Exception(message));
+              }
+            });
       }
     }
 
@@ -8957,6 +5387,3878 @@ class THUOCTINHTAINGUYENCOBAN with CAUTRUCTHUCTHICOBAN {
     }
 
     ///
+    return;
+  }
+
+  /// -----
+  /// -----
+  /// TODO: Truy Xuất Tài Nguyên Hình Ảnh Ngoại Hình
+  /// -----
+  /// -----
+  Future<void> onTruyXuatTaiNguyenHinhAnhNgoaiHinhTheoTuanTu({
+    required String? maDinhDanh, //
+    required THUOCTINHHINHANHCOBAN? thuocTinhHinhAnh, //
+    required VoidCallback? onThucThiHoanTat, //
+    bool? caiDatUuTienKichThuocRS100,
+    bool? caiDatUuTienKichThuocRS050,
+    bool? caiDatUuTienKichThuocRS025,
+  }) async {
+    /// -----
+    /// TODO:
+    /// -----
+
+    if (thuocTinhHinhAnh?.getKichThuocRS100 == true || caiDatUuTienKichThuocRS100 == true) {
+      if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100?.getSpriteAnimation?.frames.isNotEmpty == true) {
+        return;
+      }
+    }
+
+    /// -----
+    /// TODO:
+    /// -----
+    if (thuocTinhHinhAnh?.getKichThuocRS050 == true || caiDatUuTienKichThuocRS050 == true) {
+      if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050?.getSpriteAnimation?.frames.isNotEmpty == true) {
+        return;
+      }
+    }
+
+    /// -----
+    /// TODO:
+    /// -----
+    if (thuocTinhHinhAnh?.getKichThuocRS025 == true || caiDatUuTienKichThuocRS025 == true) {
+      if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025?.getSpriteAnimation?.frames.isNotEmpty == true) {
+        return;
+      }
+    }
+
+    int tongSoPart = 0;
+    tongSoPart = thuocTinhHinhAnh?.getTongSoPart ?? thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinh?.getTongSoPart ?? 0;
+
+    List<SpriteAnimationFrame>? _ngoaiHinhFrames = [];
+
+    List<SpriteAnimationFrame>? _ngoaiHinhFramePartSS01 = [];
+    List<SpriteAnimationFrame>? _ngoaiHinhFramePartSS02 = [];
+    List<SpriteAnimationFrame>? _ngoaiHinhFramePartSS03 = [];
+    List<SpriteAnimationFrame>? _ngoaiHinhFramePartSS04 = [];
+    List<SpriteAnimationFrame>? _ngoaiHinhFramePartSS05 = [];
+    List<SpriteAnimationFrame>? _ngoaiHinhFramePartSS06 = [];
+    List<SpriteAnimationFrame>? _ngoaiHinhFramePartSS07 = [];
+    List<SpriteAnimationFrame>? _ngoaiHinhFramePartSS08 = [];
+    List<SpriteAnimationFrame>? _ngoaiHinhFramePartSS09 = [];
+    List<SpriteAnimationFrame>? _ngoaiHinhFramePartSS10 = [];
+    List<SpriteAnimationFrame>? _ngoaiHinhFramePartSS11 = [];
+    List<SpriteAnimationFrame>? _ngoaiHinhFramePartSS12 = [];
+    List<SpriteAnimationFrame>? _ngoaiHinhFramePartSS13 = [];
+    List<SpriteAnimationFrame>? _ngoaiHinhFramePartSS14 = [];
+    List<SpriteAnimationFrame>? _ngoaiHinhFramePartSS15 = [];
+    List<SpriteAnimationFrame>? _ngoaiHinhFramePartSS16 = [];
+    List<SpriteAnimationFrame>? _ngoaiHinhFramePartSS17 = [];
+    List<SpriteAnimationFrame>? _ngoaiHinhFramePartSS18 = [];
+    List<SpriteAnimationFrame>? _ngoaiHinhFramePartSS19 = [];
+    List<SpriteAnimationFrame>? _ngoaiHinhFramePartSS20 = [];
+    List<SpriteAnimationFrame>? _ngoaiHinhFramePartSS21 = [];
+    List<SpriteAnimationFrame>? _ngoaiHinhFramePartSS22 = [];
+    List<SpriteAnimationFrame>? _ngoaiHinhFramePartSS23 = [];
+    List<SpriteAnimationFrame>? _ngoaiHinhFramePartSS24 = [];
+    List<SpriteAnimationFrame>? _ngoaiHinhFramePartSS25 = [];
+
+    if (thuocTinhHinhAnh?.getTienTrinh?.isTienTrinhNguyenBan() == true) {
+      /// -----
+      /// TODO:
+      /// -----
+
+      List<String> danhSachNguonHinhAnh = [];
+
+      // String nguonSpriteSheetRS100PartSS010 = '';
+      // String nguonSpriteSheetRS100PartSS020 = '';
+      // String nguonSpriteSheetRS100PartSS030 = '';
+      // String nguonSpriteSheetRS100PartSS040 = '';
+      // String nguonSpriteSheetRS100PartSS050 = '';
+      // String nguonSpriteSheetRS100PartSS060 = '';
+      // String nguonSpriteSheetRS100PartSS070 = '';
+      // String nguonSpriteSheetRS100PartSS080 = '';
+      // String nguonSpriteSheetRS100PartSS090 = '';
+      // String nguonSpriteSheetRS100PartSS100 = '';
+      //
+      // String nguonSpriteSheetRS100PartSS110 = '';
+      // String nguonSpriteSheetRS100PartSS120 = '';
+      // String nguonSpriteSheetRS100PartSS130 = '';
+      // String nguonSpriteSheetRS100PartSS140 = '';
+      // String nguonSpriteSheetRS100PartSS150 = '';
+      // String nguonSpriteSheetRS100PartSS160 = '';
+      // String nguonSpriteSheetRS100PartSS170 = '';
+      // String nguonSpriteSheetRS100PartSS180 = '';
+      // String nguonSpriteSheetRS100PartSS190 = '';
+      // String nguonSpriteSheetRS100PartSS200 = '';
+      //
+      // String nguonSpriteSheetRS100PartSS210 = '';
+      // String nguonSpriteSheetRS100PartSS220 = '';
+      // String nguonSpriteSheetRS100PartSS230 = '';
+      // String nguonSpriteSheetRS100PartSS240 = '';
+      // String nguonSpriteSheetRS100PartSS250 = '';
+      //
+      // _ngoaiHinhFrames?.clear();
+      //
+      // _ngoaiHinhFramePartSS01?.clear();
+      // _ngoaiHinhFramePartSS02?.clear();
+      // _ngoaiHinhFramePartSS03?.clear();
+      // _ngoaiHinhFramePartSS04?.clear();
+      // _ngoaiHinhFramePartSS05?.clear();
+      // _ngoaiHinhFramePartSS06?.clear();
+      // _ngoaiHinhFramePartSS07?.clear();
+      // _ngoaiHinhFramePartSS08?.clear();
+      // _ngoaiHinhFramePartSS09?.clear();
+      // _ngoaiHinhFramePartSS10?.clear();
+      // _ngoaiHinhFramePartSS11?.clear();
+      // _ngoaiHinhFramePartSS12?.clear();
+      // _ngoaiHinhFramePartSS13?.clear();
+      // _ngoaiHinhFramePartSS14?.clear();
+      // _ngoaiHinhFramePartSS15?.clear();
+      // _ngoaiHinhFramePartSS16?.clear();
+      // _ngoaiHinhFramePartSS17?.clear();
+      // _ngoaiHinhFramePartSS18?.clear();
+      // _ngoaiHinhFramePartSS19?.clear();
+      // _ngoaiHinhFramePartSS20?.clear();
+      // _ngoaiHinhFramePartSS21?.clear();
+      // _ngoaiHinhFramePartSS22?.clear();
+      // _ngoaiHinhFramePartSS23?.clear();
+      // _ngoaiHinhFramePartSS24?.clear();
+      // _ngoaiHinhFramePartSS25?.clear();
+
+      /// -----
+      /// TODO:
+      /// -----
+      if (tongSoPart >= 1) {
+        if (thuocTinhHinhAnh?.getKichThuocRS100 == true || caiDatUuTienKichThuocRS100 == true) {
+          String nguonSpriteSheetRS100PartSS010 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS010?.getNguonHinhAnh ?? '';
+          if (nguonSpriteSheetRS100PartSS010.isNotEmpty == true) {
+            danhSachNguonHinhAnh.add(nguonSpriteSheetRS100PartSS010);
+          }
+        }
+        if (thuocTinhHinhAnh?.getKichThuocRS050 == true || caiDatUuTienKichThuocRS050 == true) {
+          String nguonSpriteSheetRS050PartSS010 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050Max?.getNguonHinhAnh ?? '';
+          if (nguonSpriteSheetRS050PartSS010.isNotEmpty == true) {
+            danhSachNguonHinhAnh.add(nguonSpriteSheetRS050PartSS010);
+          }
+        }
+        if (thuocTinhHinhAnh?.getKichThuocRS025 == true || caiDatUuTienKichThuocRS025 == true) {
+          String nguonSpriteSheetRS025PartSS010 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS010?.getNguonHinhAnh ?? '';
+          if (nguonSpriteSheetRS025PartSS010.isNotEmpty == true) {
+            danhSachNguonHinhAnh.add(nguonSpriteSheetRS025PartSS010);
+          }
+        }
+      }
+
+      /// -----
+      /// TODO:
+      /// -----
+      if (tongSoPart >= 2) {
+        if (thuocTinhHinhAnh?.getKichThuocRS100 == true || caiDatUuTienKichThuocRS100 == true) {
+          String nguonSpriteSheetRS100PartSS020 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS020?.getNguonHinhAnh ?? '';
+          if (nguonSpriteSheetRS100PartSS020.isNotEmpty == true) {
+            danhSachNguonHinhAnh.add(nguonSpriteSheetRS100PartSS020);
+          }
+        }
+        if (thuocTinhHinhAnh?.getKichThuocRS050 == true || caiDatUuTienKichThuocRS050 == true) {
+          String nguonSpriteSheetRS050PartSS020 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS020?.getNguonHinhAnh ?? '';
+          if (nguonSpriteSheetRS050PartSS020.isNotEmpty == true) {
+            danhSachNguonHinhAnh.add(nguonSpriteSheetRS050PartSS020);
+          }
+        }
+        if (thuocTinhHinhAnh?.getKichThuocRS025 == true || caiDatUuTienKichThuocRS025 == true) {
+          String nguonSpriteSheetRS025PartSS020 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS020?.getNguonHinhAnh ?? '';
+          if (nguonSpriteSheetRS025PartSS020.isNotEmpty == true) {
+            danhSachNguonHinhAnh.add(nguonSpriteSheetRS025PartSS020);
+          }
+        }
+      }
+
+      /// -----
+      /// TODO:
+      /// -----
+      if (tongSoPart >= 3) {
+        if (thuocTinhHinhAnh?.getKichThuocRS100 == true || caiDatUuTienKichThuocRS100 == true) {
+          String nguonSpriteSheetRS100PartSS030 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS030?.getNguonHinhAnh ?? '';
+          if (nguonSpriteSheetRS100PartSS030.isNotEmpty == true) {
+            danhSachNguonHinhAnh.add(nguonSpriteSheetRS100PartSS030);
+          }
+        }
+        if (thuocTinhHinhAnh?.getKichThuocRS050 == true || caiDatUuTienKichThuocRS050 == true) {
+          String nguonSpriteSheetRS050PartSS030 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS030?.getNguonHinhAnh ?? '';
+          if (nguonSpriteSheetRS050PartSS030.isNotEmpty == true) {
+            danhSachNguonHinhAnh.add(nguonSpriteSheetRS050PartSS030);
+          }
+        }
+        if (thuocTinhHinhAnh?.getKichThuocRS025 == true || caiDatUuTienKichThuocRS025 == true) {
+          String nguonSpriteSheetRS025PartSS030 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS030?.getNguonHinhAnh ?? '';
+          if (nguonSpriteSheetRS025PartSS030.isNotEmpty == true) {
+            danhSachNguonHinhAnh.add(nguonSpriteSheetRS025PartSS030);
+          }
+        }
+      }
+
+      /// -----
+      /// TODO:
+      /// -----
+      if (tongSoPart >= 4) {
+        if (thuocTinhHinhAnh?.getKichThuocRS100 == true || caiDatUuTienKichThuocRS100 == true) {
+          String nguonSpriteSheetRS100PartSS040 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS040?.getNguonHinhAnh ?? '';
+          if (nguonSpriteSheetRS100PartSS040.isNotEmpty == true) {
+            danhSachNguonHinhAnh.add(nguonSpriteSheetRS100PartSS040);
+          }
+        }
+        if (thuocTinhHinhAnh?.getKichThuocRS050 == true || caiDatUuTienKichThuocRS050 == true) {
+          String nguonSpriteSheetRS050PartSS040 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS040?.getNguonHinhAnh ?? '';
+          if (nguonSpriteSheetRS050PartSS040.isNotEmpty == true) {
+            danhSachNguonHinhAnh.add(nguonSpriteSheetRS050PartSS040);
+          }
+        }
+        if (thuocTinhHinhAnh?.getKichThuocRS025 == true || caiDatUuTienKichThuocRS025 == true) {
+          String nguonSpriteSheetRS025PartSS040 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS040?.getNguonHinhAnh ?? '';
+          if (nguonSpriteSheetRS025PartSS040.isNotEmpty == true) {
+            danhSachNguonHinhAnh.add(nguonSpriteSheetRS025PartSS040);
+          }
+        }
+      }
+
+      /// -----
+      /// TODO:
+      /// -----
+      if (tongSoPart >= 5) {
+        if (thuocTinhHinhAnh?.getKichThuocRS100 == true || caiDatUuTienKichThuocRS100 == true) {
+          String nguonSpriteSheetRS100PartSS050 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS050?.getNguonHinhAnh ?? '';
+          if (nguonSpriteSheetRS100PartSS050.isNotEmpty == true) {
+            danhSachNguonHinhAnh.add(nguonSpriteSheetRS100PartSS050);
+          }
+        }
+        if (thuocTinhHinhAnh?.getKichThuocRS050 == true || caiDatUuTienKichThuocRS050 == true) {
+          String nguonSpriteSheetRS050PartSS050 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS050?.getNguonHinhAnh ?? '';
+          if (nguonSpriteSheetRS050PartSS050.isNotEmpty == true) {
+            danhSachNguonHinhAnh.add(nguonSpriteSheetRS050PartSS050);
+          }
+        }
+        if (thuocTinhHinhAnh?.getKichThuocRS025 == true || caiDatUuTienKichThuocRS025 == true) {
+          String nguonSpriteSheetRS025PartSS050 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS050?.getNguonHinhAnh ?? '';
+          if (nguonSpriteSheetRS025PartSS050.isNotEmpty == true) {
+            danhSachNguonHinhAnh.add(nguonSpriteSheetRS025PartSS050);
+          }
+        }
+      }
+
+      /// -----
+      /// TODO:
+      /// -----
+      if (tongSoPart >= 6) {
+        if (thuocTinhHinhAnh?.getKichThuocRS100 == true || caiDatUuTienKichThuocRS100 == true) {
+          String nguonSpriteSheetRS100PartSS060 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS060?.getNguonHinhAnh ?? '';
+          if (nguonSpriteSheetRS100PartSS060.isNotEmpty == true) {
+            danhSachNguonHinhAnh.add(nguonSpriteSheetRS100PartSS060);
+          }
+        }
+        if (thuocTinhHinhAnh?.getKichThuocRS050 == true || caiDatUuTienKichThuocRS050 == true) {
+          String nguonSpriteSheetRS050PartSS060 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS060?.getNguonHinhAnh ?? '';
+          if (nguonSpriteSheetRS050PartSS060.isNotEmpty == true) {
+            danhSachNguonHinhAnh.add(nguonSpriteSheetRS050PartSS060);
+          }
+        }
+        if (thuocTinhHinhAnh?.getKichThuocRS025 == true || caiDatUuTienKichThuocRS025 == true) {
+          String nguonSpriteSheetRS025PartSS060 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS060?.getNguonHinhAnh ?? '';
+          if (nguonSpriteSheetRS025PartSS060.isNotEmpty == true) {
+            danhSachNguonHinhAnh.add(nguonSpriteSheetRS025PartSS060);
+          }
+        }
+      }
+
+      /// -----
+      /// TODO:
+      /// -----
+      if (tongSoPart >= 7) {
+        if (thuocTinhHinhAnh?.getKichThuocRS100 == true || caiDatUuTienKichThuocRS100 == true) {
+          String nguonSpriteSheetRS100PartSS070 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS070?.getNguonHinhAnh ?? '';
+          if (nguonSpriteSheetRS100PartSS070.isNotEmpty == true) {
+            danhSachNguonHinhAnh.add(nguonSpriteSheetRS100PartSS070);
+          }
+        }
+        if (thuocTinhHinhAnh?.getKichThuocRS050 == true || caiDatUuTienKichThuocRS050 == true) {
+          String nguonSpriteSheetRS050PartSS070 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS070?.getNguonHinhAnh ?? '';
+          if (nguonSpriteSheetRS050PartSS070.isNotEmpty == true) {
+            danhSachNguonHinhAnh.add(nguonSpriteSheetRS050PartSS070);
+          }
+        }
+        if (thuocTinhHinhAnh?.getKichThuocRS025 == true || caiDatUuTienKichThuocRS025 == true) {
+          String nguonSpriteSheetRS025PartSS070 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS070?.getNguonHinhAnh ?? '';
+          if (nguonSpriteSheetRS025PartSS070.isNotEmpty == true) {
+            danhSachNguonHinhAnh.add(nguonSpriteSheetRS025PartSS070);
+          }
+        }
+      }
+
+      /// -----
+      /// TODO:
+      /// -----
+      if (tongSoPart >= 8) {
+        if (thuocTinhHinhAnh?.getKichThuocRS100 == true || caiDatUuTienKichThuocRS100 == true) {
+          String nguonSpriteSheetRS100PartSS080 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS080?.getNguonHinhAnh ?? '';
+          if (nguonSpriteSheetRS100PartSS080.isNotEmpty == true) {
+            danhSachNguonHinhAnh.add(nguonSpriteSheetRS100PartSS080);
+          }
+        }
+        if (thuocTinhHinhAnh?.getKichThuocRS050 == true || caiDatUuTienKichThuocRS050 == true) {
+          String nguonSpriteSheetRS050PartSS080 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS080?.getNguonHinhAnh ?? '';
+          if (nguonSpriteSheetRS050PartSS080.isNotEmpty == true) {
+            danhSachNguonHinhAnh.add(nguonSpriteSheetRS050PartSS080);
+          }
+        }
+        if (thuocTinhHinhAnh?.getKichThuocRS025 == true || caiDatUuTienKichThuocRS025 == true) {
+          String nguonSpriteSheetRS025PartSS080 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS080?.getNguonHinhAnh ?? '';
+          if (nguonSpriteSheetRS025PartSS080.isNotEmpty == true) {
+            danhSachNguonHinhAnh.add(nguonSpriteSheetRS025PartSS080);
+          }
+        }
+      }
+
+      /// -----
+      /// TODO:
+      /// -----
+      if (tongSoPart >= 9) {
+        if (thuocTinhHinhAnh?.getKichThuocRS100 == true || caiDatUuTienKichThuocRS100 == true) {
+          String nguonSpriteSheetRS100PartSS090 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS090?.getNguonHinhAnh ?? '';
+          if (nguonSpriteSheetRS100PartSS090.isNotEmpty == true) {
+            danhSachNguonHinhAnh.add(nguonSpriteSheetRS100PartSS090);
+          }
+        }
+        if (thuocTinhHinhAnh?.getKichThuocRS050 == true || caiDatUuTienKichThuocRS050 == true) {
+          String nguonSpriteSheetRS050PartSS090 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS090?.getNguonHinhAnh ?? '';
+          if (nguonSpriteSheetRS050PartSS090.isNotEmpty == true) {
+            danhSachNguonHinhAnh.add(nguonSpriteSheetRS050PartSS090);
+          }
+        }
+        if (thuocTinhHinhAnh?.getKichThuocRS025 == true || caiDatUuTienKichThuocRS025 == true) {
+          String nguonSpriteSheetRS025PartSS090 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS090?.getNguonHinhAnh ?? '';
+          if (nguonSpriteSheetRS025PartSS090.isNotEmpty == true) {
+            danhSachNguonHinhAnh.add(nguonSpriteSheetRS025PartSS090);
+          }
+        }
+      }
+
+      /// -----
+      /// TODO:
+      /// -----
+      if (tongSoPart >= 10) {
+        if (thuocTinhHinhAnh?.getKichThuocRS100 == true || caiDatUuTienKichThuocRS100 == true) {
+          String nguonSpriteSheetRS100PartSS100 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS100?.getNguonHinhAnh ?? '';
+          if (nguonSpriteSheetRS100PartSS100.isNotEmpty == true) {
+            danhSachNguonHinhAnh.add(nguonSpriteSheetRS100PartSS100);
+          }
+        }
+        if (thuocTinhHinhAnh?.getKichThuocRS050 == true || caiDatUuTienKichThuocRS050 == true) {
+          String nguonSpriteSheetRS050PartSS100 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS100?.getNguonHinhAnh ?? '';
+          if (nguonSpriteSheetRS050PartSS100.isNotEmpty == true) {
+            danhSachNguonHinhAnh.add(nguonSpriteSheetRS050PartSS100);
+          }
+        }
+        if (thuocTinhHinhAnh?.getKichThuocRS025 == true || caiDatUuTienKichThuocRS025 == true) {
+          String nguonSpriteSheetRS025PartSS100 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS100?.getNguonHinhAnh ?? '';
+          if (nguonSpriteSheetRS025PartSS100.isNotEmpty == true) {
+            danhSachNguonHinhAnh.add(nguonSpriteSheetRS025PartSS100);
+          }
+        }
+      }
+
+      /// -----
+      /// TODO:
+      /// -----
+      if (tongSoPart >= 11) {
+        if (thuocTinhHinhAnh?.getKichThuocRS100 == true || caiDatUuTienKichThuocRS100 == true) {
+          String nguonSpriteSheetRS100PartSS110 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS110?.getNguonHinhAnh ?? '';
+          if (nguonSpriteSheetRS100PartSS110.isNotEmpty == true) {
+            danhSachNguonHinhAnh.add(nguonSpriteSheetRS100PartSS110);
+          }
+        }
+        if (thuocTinhHinhAnh?.getKichThuocRS050 == true || caiDatUuTienKichThuocRS050 == true) {
+          String nguonSpriteSheetRS050PartSS110 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS110?.getNguonHinhAnh ?? '';
+          if (nguonSpriteSheetRS050PartSS110.isNotEmpty == true) {
+            danhSachNguonHinhAnh.add(nguonSpriteSheetRS050PartSS110);
+          }
+        }
+        if (thuocTinhHinhAnh?.getKichThuocRS025 == true || caiDatUuTienKichThuocRS025 == true) {
+          String nguonSpriteSheetRS025PartSS110 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS110?.getNguonHinhAnh ?? '';
+          if (nguonSpriteSheetRS025PartSS110.isNotEmpty == true) {
+            danhSachNguonHinhAnh.add(nguonSpriteSheetRS025PartSS110);
+          }
+        }
+      }
+
+      /// -----
+      /// TODO:
+      /// -----
+      if (tongSoPart >= 12) {
+        if (thuocTinhHinhAnh?.getKichThuocRS100 == true || caiDatUuTienKichThuocRS100 == true) {
+          String nguonSpriteSheetRS100PartSS120 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS120?.getNguonHinhAnh ?? '';
+          if (nguonSpriteSheetRS100PartSS120.isNotEmpty == true) {
+            danhSachNguonHinhAnh.add(nguonSpriteSheetRS100PartSS120);
+          }
+        }
+        if (thuocTinhHinhAnh?.getKichThuocRS050 == true || caiDatUuTienKichThuocRS050 == true) {
+          String nguonSpriteSheetRS050PartSS120 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS120?.getNguonHinhAnh ?? '';
+          if (nguonSpriteSheetRS050PartSS120.isNotEmpty == true) {
+            danhSachNguonHinhAnh.add(nguonSpriteSheetRS050PartSS120);
+          }
+        }
+        if (thuocTinhHinhAnh?.getKichThuocRS025 == true || caiDatUuTienKichThuocRS025 == true) {
+          String nguonSpriteSheetRS025PartSS120 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS120?.getNguonHinhAnh ?? '';
+          if (nguonSpriteSheetRS025PartSS120.isNotEmpty == true) {
+            danhSachNguonHinhAnh.add(nguonSpriteSheetRS025PartSS120);
+          }
+        }
+      }
+
+      /// -----
+      /// TODO:
+      /// -----
+      if (tongSoPart >= 13) {
+        if (thuocTinhHinhAnh?.getKichThuocRS100 == true || caiDatUuTienKichThuocRS100 == true) {
+          String nguonSpriteSheetRS100PartSS130 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS130?.getNguonHinhAnh ?? '';
+          if (nguonSpriteSheetRS100PartSS130.isNotEmpty == true) {
+            danhSachNguonHinhAnh.add(nguonSpriteSheetRS100PartSS130);
+          }
+        }
+        if (thuocTinhHinhAnh?.getKichThuocRS050 == true || caiDatUuTienKichThuocRS050 == true) {
+          String nguonSpriteSheetRS050PartSS130 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS130?.getNguonHinhAnh ?? '';
+          if (nguonSpriteSheetRS050PartSS130.isNotEmpty == true) {
+            danhSachNguonHinhAnh.add(nguonSpriteSheetRS050PartSS130);
+          }
+        }
+        if (thuocTinhHinhAnh?.getKichThuocRS025 == true || caiDatUuTienKichThuocRS025 == true) {
+          String nguonSpriteSheetRS025PartSS130 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS130?.getNguonHinhAnh ?? '';
+          if (nguonSpriteSheetRS025PartSS130.isNotEmpty == true) {
+            danhSachNguonHinhAnh.add(nguonSpriteSheetRS025PartSS130);
+          }
+        }
+      }
+
+      /// -----
+      /// TODO:
+      /// -----
+      if (tongSoPart >= 14) {
+        if (thuocTinhHinhAnh?.getKichThuocRS100 == true || caiDatUuTienKichThuocRS100 == true) {
+          String nguonSpriteSheetRS100PartSS140 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS140?.getNguonHinhAnh ?? '';
+          if (nguonSpriteSheetRS100PartSS140.isNotEmpty == true) {
+            danhSachNguonHinhAnh.add(nguonSpriteSheetRS100PartSS140);
+          }
+        }
+        if (thuocTinhHinhAnh?.getKichThuocRS050 == true || caiDatUuTienKichThuocRS050 == true) {
+          String nguonSpriteSheetRS050PartSS140 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS140?.getNguonHinhAnh ?? '';
+          if (nguonSpriteSheetRS050PartSS140.isNotEmpty == true) {
+            danhSachNguonHinhAnh.add(nguonSpriteSheetRS050PartSS140);
+          }
+        }
+        if (thuocTinhHinhAnh?.getKichThuocRS025 == true || caiDatUuTienKichThuocRS025 == true) {
+          String nguonSpriteSheetRS025PartSS140 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS140?.getNguonHinhAnh ?? '';
+          if (nguonSpriteSheetRS025PartSS140.isNotEmpty == true) {
+            danhSachNguonHinhAnh.add(nguonSpriteSheetRS025PartSS140);
+          }
+        }
+      }
+
+      /// -----
+      /// TODO:
+      /// -----
+      if (tongSoPart >= 15) {
+        if (thuocTinhHinhAnh?.getKichThuocRS100 == true || caiDatUuTienKichThuocRS100 == true) {
+          String nguonSpriteSheetRS100PartSS150 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS150?.getNguonHinhAnh ?? '';
+          if (nguonSpriteSheetRS100PartSS150.isNotEmpty == true) {
+            danhSachNguonHinhAnh.add(nguonSpriteSheetRS100PartSS150);
+          }
+        }
+        if (thuocTinhHinhAnh?.getKichThuocRS050 == true || caiDatUuTienKichThuocRS050 == true) {
+          String nguonSpriteSheetRS050PartSS150 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS150?.getNguonHinhAnh ?? '';
+          if (nguonSpriteSheetRS050PartSS150.isNotEmpty == true) {
+            danhSachNguonHinhAnh.add(nguonSpriteSheetRS050PartSS150);
+          }
+        }
+        if (thuocTinhHinhAnh?.getKichThuocRS025 == true || caiDatUuTienKichThuocRS025 == true) {
+          String nguonSpriteSheetRS025PartSS150 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS150?.getNguonHinhAnh ?? '';
+          if (nguonSpriteSheetRS025PartSS150.isNotEmpty == true) {
+            danhSachNguonHinhAnh.add(nguonSpriteSheetRS025PartSS150);
+          }
+        }
+      }
+
+      /// -----
+      /// TODO:
+      /// -----
+      if (tongSoPart >= 16) {
+        if (thuocTinhHinhAnh?.getKichThuocRS100 == true || caiDatUuTienKichThuocRS100 == true) {
+          String nguonSpriteSheetRS100PartSS160 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS160?.getNguonHinhAnh ?? '';
+          if (nguonSpriteSheetRS100PartSS160.isNotEmpty == true) {
+            danhSachNguonHinhAnh.add(nguonSpriteSheetRS100PartSS160);
+          }
+        }
+        if (thuocTinhHinhAnh?.getKichThuocRS050 == true || caiDatUuTienKichThuocRS050 == true) {
+          String nguonSpriteSheetRS050PartSS160 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS160?.getNguonHinhAnh ?? '';
+          if (nguonSpriteSheetRS050PartSS160.isNotEmpty == true) {
+            danhSachNguonHinhAnh.add(nguonSpriteSheetRS050PartSS160);
+          }
+        }
+        if (thuocTinhHinhAnh?.getKichThuocRS025 == true || caiDatUuTienKichThuocRS025 == true) {
+          String nguonSpriteSheetRS025PartSS160 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS160?.getNguonHinhAnh ?? '';
+          if (nguonSpriteSheetRS025PartSS160.isNotEmpty == true) {
+            danhSachNguonHinhAnh.add(nguonSpriteSheetRS025PartSS160);
+          }
+        }
+      }
+
+      /// -----
+      /// TODO:
+      /// -----
+      if (tongSoPart >= 17) {
+        if (thuocTinhHinhAnh?.getKichThuocRS100 == true || caiDatUuTienKichThuocRS100 == true) {
+          String nguonSpriteSheetRS100PartSS170 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS170?.getNguonHinhAnh ?? '';
+          if (nguonSpriteSheetRS100PartSS170.isNotEmpty == true) {
+            danhSachNguonHinhAnh.add(nguonSpriteSheetRS100PartSS170);
+          }
+        }
+        if (thuocTinhHinhAnh?.getKichThuocRS050 == true || caiDatUuTienKichThuocRS050 == true) {
+          String nguonSpriteSheetRS050PartSS170 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS170?.getNguonHinhAnh ?? '';
+          if (nguonSpriteSheetRS050PartSS170.isNotEmpty == true) {
+            danhSachNguonHinhAnh.add(nguonSpriteSheetRS050PartSS170);
+          }
+        }
+        if (thuocTinhHinhAnh?.getKichThuocRS025 == true || caiDatUuTienKichThuocRS025 == true) {
+          String nguonSpriteSheetRS025PartSS170 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS170?.getNguonHinhAnh ?? '';
+          if (nguonSpriteSheetRS025PartSS170.isNotEmpty == true) {
+            danhSachNguonHinhAnh.add(nguonSpriteSheetRS025PartSS170);
+          }
+        }
+      }
+
+      /// -----
+      /// TODO:
+      /// -----
+      if (tongSoPart >= 18) {
+        if (thuocTinhHinhAnh?.getKichThuocRS100 == true || caiDatUuTienKichThuocRS100 == true) {
+          String nguonSpriteSheetRS100PartSS180 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS180?.getNguonHinhAnh ?? '';
+          if (nguonSpriteSheetRS100PartSS180.isNotEmpty == true) {
+            danhSachNguonHinhAnh.add(nguonSpriteSheetRS100PartSS180);
+          }
+        }
+        if (thuocTinhHinhAnh?.getKichThuocRS050 == true || caiDatUuTienKichThuocRS050 == true) {
+          String nguonSpriteSheetRS050PartSS180 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS180?.getNguonHinhAnh ?? '';
+          if (nguonSpriteSheetRS050PartSS180.isNotEmpty == true) {
+            danhSachNguonHinhAnh.add(nguonSpriteSheetRS050PartSS180);
+          }
+        }
+        if (thuocTinhHinhAnh?.getKichThuocRS025 == true || caiDatUuTienKichThuocRS025 == true) {
+          String nguonSpriteSheetRS025PartSS180 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS180?.getNguonHinhAnh ?? '';
+          if (nguonSpriteSheetRS025PartSS180.isNotEmpty == true) {
+            danhSachNguonHinhAnh.add(nguonSpriteSheetRS025PartSS180);
+          }
+        }
+      }
+
+      /// -----
+      /// TODO:
+      /// -----
+      if (tongSoPart >= 19) {
+        if (thuocTinhHinhAnh?.getKichThuocRS100 == true || caiDatUuTienKichThuocRS100 == true) {
+          String nguonSpriteSheetRS100PartSS190 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS190?.getNguonHinhAnh ?? '';
+          if (nguonSpriteSheetRS100PartSS190.isNotEmpty == true) {
+            danhSachNguonHinhAnh.add(nguonSpriteSheetRS100PartSS190);
+          }
+        }
+        if (thuocTinhHinhAnh?.getKichThuocRS050 == true || caiDatUuTienKichThuocRS050 == true) {
+          String nguonSpriteSheetRS050PartSS190 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS190?.getNguonHinhAnh ?? '';
+          if (nguonSpriteSheetRS050PartSS190.isNotEmpty == true) {
+            danhSachNguonHinhAnh.add(nguonSpriteSheetRS050PartSS190);
+          }
+        }
+        if (thuocTinhHinhAnh?.getKichThuocRS025 == true || caiDatUuTienKichThuocRS025 == true) {
+          String nguonSpriteSheetRS025PartSS190 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS190?.getNguonHinhAnh ?? '';
+          if (nguonSpriteSheetRS025PartSS190.isNotEmpty == true) {
+            danhSachNguonHinhAnh.add(nguonSpriteSheetRS025PartSS190);
+          }
+        }
+      }
+
+      /// -----
+      /// TODO:
+      /// -----
+      if (tongSoPart >= 20) {
+        if (thuocTinhHinhAnh?.getKichThuocRS100 == true || caiDatUuTienKichThuocRS100 == true) {
+          String nguonSpriteSheetRS100PartSS200 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS200?.getNguonHinhAnh ?? '';
+          if (nguonSpriteSheetRS100PartSS200.isNotEmpty == true) {
+            danhSachNguonHinhAnh.add(nguonSpriteSheetRS100PartSS200);
+          }
+        }
+        if (thuocTinhHinhAnh?.getKichThuocRS050 == true || caiDatUuTienKichThuocRS050 == true) {
+          String nguonSpriteSheetRS050PartSS200 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS200?.getNguonHinhAnh ?? '';
+          if (nguonSpriteSheetRS050PartSS200.isNotEmpty == true) {
+            danhSachNguonHinhAnh.add(nguonSpriteSheetRS050PartSS200);
+          }
+        }
+        if (thuocTinhHinhAnh?.getKichThuocRS025 == true || caiDatUuTienKichThuocRS025 == true) {
+          String nguonSpriteSheetRS025PartSS200 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS200?.getNguonHinhAnh ?? '';
+          if (nguonSpriteSheetRS025PartSS200.isNotEmpty == true) {
+            danhSachNguonHinhAnh.add(nguonSpriteSheetRS025PartSS200);
+          }
+        }
+      }
+
+      /// -----
+      /// TODO:
+      /// -----
+      if (tongSoPart >= 21) {
+        if (thuocTinhHinhAnh?.getKichThuocRS100 == true || caiDatUuTienKichThuocRS100 == true) {
+          String nguonSpriteSheetRS100PartSS210 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS210?.getNguonHinhAnh ?? '';
+          if (nguonSpriteSheetRS100PartSS210.isNotEmpty == true) {
+            danhSachNguonHinhAnh.add(nguonSpriteSheetRS100PartSS210);
+          }
+        }
+        if (thuocTinhHinhAnh?.getKichThuocRS050 == true || caiDatUuTienKichThuocRS050 == true) {
+          String nguonSpriteSheetRS050PartSS210 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS210?.getNguonHinhAnh ?? '';
+          if (nguonSpriteSheetRS050PartSS210.isNotEmpty == true) {
+            danhSachNguonHinhAnh.add(nguonSpriteSheetRS050PartSS210);
+          }
+        }
+        if (thuocTinhHinhAnh?.getKichThuocRS025 == true || caiDatUuTienKichThuocRS025 == true) {
+          String nguonSpriteSheetRS025PartSS210 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS210?.getNguonHinhAnh ?? '';
+          if (nguonSpriteSheetRS025PartSS210.isNotEmpty == true) {
+            danhSachNguonHinhAnh.add(nguonSpriteSheetRS025PartSS210);
+          }
+        }
+      }
+
+      /// -----
+      /// TODO:
+      /// -----
+      if (tongSoPart >= 22) {
+        if (thuocTinhHinhAnh?.getKichThuocRS100 == true || caiDatUuTienKichThuocRS100 == true) {
+          String nguonSpriteSheetRS100PartSS220 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS220?.getNguonHinhAnh ?? '';
+          if (nguonSpriteSheetRS100PartSS220.isNotEmpty == true) {
+            danhSachNguonHinhAnh.add(nguonSpriteSheetRS100PartSS220);
+          }
+        }
+        if (thuocTinhHinhAnh?.getKichThuocRS050 == true || caiDatUuTienKichThuocRS050 == true) {
+          String nguonSpriteSheetRS050PartSS220 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS220?.getNguonHinhAnh ?? '';
+          if (nguonSpriteSheetRS050PartSS220.isNotEmpty == true) {
+            danhSachNguonHinhAnh.add(nguonSpriteSheetRS050PartSS220);
+          }
+        }
+        if (thuocTinhHinhAnh?.getKichThuocRS025 == true || caiDatUuTienKichThuocRS025 == true) {
+          String nguonSpriteSheetRS025PartSS220 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS220?.getNguonHinhAnh ?? '';
+          if (nguonSpriteSheetRS025PartSS220.isNotEmpty == true) {
+            danhSachNguonHinhAnh.add(nguonSpriteSheetRS025PartSS220);
+          }
+        }
+      }
+
+      /// -----
+      /// TODO:
+      /// -----
+      if (tongSoPart >= 23) {
+        if (thuocTinhHinhAnh?.getKichThuocRS100 == true || caiDatUuTienKichThuocRS100 == true) {
+          String nguonSpriteSheetRS100PartSS230 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS230?.getNguonHinhAnh ?? '';
+          if (nguonSpriteSheetRS100PartSS230.isNotEmpty == true) {
+            danhSachNguonHinhAnh.add(nguonSpriteSheetRS100PartSS230);
+          }
+        }
+        if (thuocTinhHinhAnh?.getKichThuocRS050 == true || caiDatUuTienKichThuocRS050 == true) {
+          String nguonSpriteSheetRS050PartSS230 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS230?.getNguonHinhAnh ?? '';
+          if (nguonSpriteSheetRS050PartSS230.isNotEmpty == true) {
+            danhSachNguonHinhAnh.add(nguonSpriteSheetRS050PartSS230);
+          }
+        }
+        if (thuocTinhHinhAnh?.getKichThuocRS025 == true || caiDatUuTienKichThuocRS025 == true) {
+          String nguonSpriteSheetRS025PartSS230 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS230?.getNguonHinhAnh ?? '';
+          if (nguonSpriteSheetRS025PartSS230.isNotEmpty == true) {
+            danhSachNguonHinhAnh.add(nguonSpriteSheetRS025PartSS230);
+          }
+        }
+      }
+
+      /// -----
+      /// TODO:
+      /// -----
+      if (tongSoPart >= 24) {
+        if (thuocTinhHinhAnh?.getKichThuocRS100 == true || caiDatUuTienKichThuocRS100 == true) {
+          String nguonSpriteSheetRS100PartSS240 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS240?.getNguonHinhAnh ?? '';
+          if (nguonSpriteSheetRS100PartSS240.isNotEmpty == true) {
+            danhSachNguonHinhAnh.add(nguonSpriteSheetRS100PartSS240);
+          }
+        }
+        if (thuocTinhHinhAnh?.getKichThuocRS050 == true || caiDatUuTienKichThuocRS050 == true) {
+          String nguonSpriteSheetRS050PartSS240 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS240?.getNguonHinhAnh ?? '';
+          if (nguonSpriteSheetRS050PartSS240.isNotEmpty == true) {
+            danhSachNguonHinhAnh.add(nguonSpriteSheetRS050PartSS240);
+          }
+        }
+        if (thuocTinhHinhAnh?.getKichThuocRS025 == true || caiDatUuTienKichThuocRS025 == true) {
+          String nguonSpriteSheetRS025PartSS240 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS240?.getNguonHinhAnh ?? '';
+          if (nguonSpriteSheetRS025PartSS240.isNotEmpty == true) {
+            danhSachNguonHinhAnh.add(nguonSpriteSheetRS025PartSS240);
+          }
+        }
+      }
+
+      /// -----
+      /// TODO:
+      /// -----
+      if (tongSoPart >= 25) {
+        if (thuocTinhHinhAnh?.getKichThuocRS100 == true || caiDatUuTienKichThuocRS100 == true) {
+          String nguonSpriteSheetRS100PartSS250 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS250?.getNguonHinhAnh ?? '';
+
+          if (nguonSpriteSheetRS100PartSS250.isNotEmpty == true) {
+            danhSachNguonHinhAnh.add(nguonSpriteSheetRS100PartSS250);
+          }
+        }
+        if (thuocTinhHinhAnh?.getKichThuocRS050 == true || caiDatUuTienKichThuocRS050 == true) {
+          String nguonSpriteSheetRS050PartSS250 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS250?.getNguonHinhAnh ?? '';
+          if (nguonSpriteSheetRS050PartSS250.isNotEmpty == true) {
+            danhSachNguonHinhAnh.add(nguonSpriteSheetRS050PartSS250);
+          }
+        }
+        if (thuocTinhHinhAnh?.getKichThuocRS025 == true || caiDatUuTienKichThuocRS025 == true) {
+          String nguonSpriteSheetRS025PartSS250 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS250?.getNguonHinhAnh ?? '';
+          if (nguonSpriteSheetRS025PartSS250.isNotEmpty == true) {
+            danhSachNguonHinhAnh.add(nguonSpriteSheetRS025PartSS250);
+          }
+        }
+      }
+
+      await thuocTinhHinhAnh?.getTienTrinh?.onVoidCaiDatTienTrinhSanSangThucThi();
+
+      await getTaiHinhAnh?.loadAll(danhSachNguonHinhAnh).then((_) async {
+        await thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS010?.getTienTrinh?.onVoidCaiDatTienTrinhSanSangThucThi();
+        await thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS020?.getTienTrinh?.onVoidCaiDatTienTrinhSanSangThucThi();
+        await thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS030?.getTienTrinh?.onVoidCaiDatTienTrinhSanSangThucThi();
+        await thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS040?.getTienTrinh?.onVoidCaiDatTienTrinhSanSangThucThi();
+        await thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS050?.getTienTrinh?.onVoidCaiDatTienTrinhSanSangThucThi();
+        await thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS060?.getTienTrinh?.onVoidCaiDatTienTrinhSanSangThucThi();
+        await thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS070?.getTienTrinh?.onVoidCaiDatTienTrinhSanSangThucThi();
+        await thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS080?.getTienTrinh?.onVoidCaiDatTienTrinhSanSangThucThi();
+        await thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS090?.getTienTrinh?.onVoidCaiDatTienTrinhSanSangThucThi();
+        await thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS100?.getTienTrinh?.onVoidCaiDatTienTrinhSanSangThucThi();
+        await thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS110?.getTienTrinh?.onVoidCaiDatTienTrinhSanSangThucThi();
+        await thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS120?.getTienTrinh?.onVoidCaiDatTienTrinhSanSangThucThi();
+        await thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS130?.getTienTrinh?.onVoidCaiDatTienTrinhSanSangThucThi();
+        await thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS140?.getTienTrinh?.onVoidCaiDatTienTrinhSanSangThucThi();
+        await thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS150?.getTienTrinh?.onVoidCaiDatTienTrinhSanSangThucThi();
+        await thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS160?.getTienTrinh?.onVoidCaiDatTienTrinhSanSangThucThi();
+        await thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS170?.getTienTrinh?.onVoidCaiDatTienTrinhSanSangThucThi();
+        await thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS180?.getTienTrinh?.onVoidCaiDatTienTrinhSanSangThucThi();
+        await thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS190?.getTienTrinh?.onVoidCaiDatTienTrinhSanSangThucThi();
+        await thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS200?.getTienTrinh?.onVoidCaiDatTienTrinhSanSangThucThi();
+        await thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS210?.getTienTrinh?.onVoidCaiDatTienTrinhSanSangThucThi();
+        await thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS220?.getTienTrinh?.onVoidCaiDatTienTrinhSanSangThucThi();
+        await thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS230?.getTienTrinh?.onVoidCaiDatTienTrinhSanSangThucThi();
+        await thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS240?.getTienTrinh?.onVoidCaiDatTienTrinhSanSangThucThi();
+        await thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS250?.getTienTrinh?.onVoidCaiDatTienTrinhSanSangThucThi();
+
+        await thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS010?.getTienTrinh?.onVoidCaiDatTienTrinhSanSangThucThi();
+        await thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS020?.getTienTrinh?.onVoidCaiDatTienTrinhSanSangThucThi();
+        await thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS030?.getTienTrinh?.onVoidCaiDatTienTrinhSanSangThucThi();
+        await thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS040?.getTienTrinh?.onVoidCaiDatTienTrinhSanSangThucThi();
+        await thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS050?.getTienTrinh?.onVoidCaiDatTienTrinhSanSangThucThi();
+        await thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS060?.getTienTrinh?.onVoidCaiDatTienTrinhSanSangThucThi();
+        await thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS070?.getTienTrinh?.onVoidCaiDatTienTrinhSanSangThucThi();
+        await thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS080?.getTienTrinh?.onVoidCaiDatTienTrinhSanSangThucThi();
+        await thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS090?.getTienTrinh?.onVoidCaiDatTienTrinhSanSangThucThi();
+        await thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS100?.getTienTrinh?.onVoidCaiDatTienTrinhSanSangThucThi();
+        await thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS110?.getTienTrinh?.onVoidCaiDatTienTrinhSanSangThucThi();
+        await thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS120?.getTienTrinh?.onVoidCaiDatTienTrinhSanSangThucThi();
+        await thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS130?.getTienTrinh?.onVoidCaiDatTienTrinhSanSangThucThi();
+        await thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS140?.getTienTrinh?.onVoidCaiDatTienTrinhSanSangThucThi();
+        await thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS150?.getTienTrinh?.onVoidCaiDatTienTrinhSanSangThucThi();
+        await thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS160?.getTienTrinh?.onVoidCaiDatTienTrinhSanSangThucThi();
+        await thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS170?.getTienTrinh?.onVoidCaiDatTienTrinhSanSangThucThi();
+        await thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS180?.getTienTrinh?.onVoidCaiDatTienTrinhSanSangThucThi();
+        await thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS190?.getTienTrinh?.onVoidCaiDatTienTrinhSanSangThucThi();
+        await thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS200?.getTienTrinh?.onVoidCaiDatTienTrinhSanSangThucThi();
+        await thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS210?.getTienTrinh?.onVoidCaiDatTienTrinhSanSangThucThi();
+        await thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS220?.getTienTrinh?.onVoidCaiDatTienTrinhSanSangThucThi();
+        await thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS230?.getTienTrinh?.onVoidCaiDatTienTrinhSanSangThucThi();
+        await thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS240?.getTienTrinh?.onVoidCaiDatTienTrinhSanSangThucThi();
+        await thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS250?.getTienTrinh?.onVoidCaiDatTienTrinhSanSangThucThi();
+
+        await thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS010?.getTienTrinh?.onVoidCaiDatTienTrinhSanSangThucThi();
+        await thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS020?.getTienTrinh?.onVoidCaiDatTienTrinhSanSangThucThi();
+        await thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS030?.getTienTrinh?.onVoidCaiDatTienTrinhSanSangThucThi();
+        await thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS040?.getTienTrinh?.onVoidCaiDatTienTrinhSanSangThucThi();
+        await thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS050?.getTienTrinh?.onVoidCaiDatTienTrinhSanSangThucThi();
+        await thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS060?.getTienTrinh?.onVoidCaiDatTienTrinhSanSangThucThi();
+        await thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS070?.getTienTrinh?.onVoidCaiDatTienTrinhSanSangThucThi();
+        await thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS080?.getTienTrinh?.onVoidCaiDatTienTrinhSanSangThucThi();
+        await thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS090?.getTienTrinh?.onVoidCaiDatTienTrinhSanSangThucThi();
+        await thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS100?.getTienTrinh?.onVoidCaiDatTienTrinhSanSangThucThi();
+        await thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS110?.getTienTrinh?.onVoidCaiDatTienTrinhSanSangThucThi();
+        await thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS120?.getTienTrinh?.onVoidCaiDatTienTrinhSanSangThucThi();
+        await thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS130?.getTienTrinh?.onVoidCaiDatTienTrinhSanSangThucThi();
+        await thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS140?.getTienTrinh?.onVoidCaiDatTienTrinhSanSangThucThi();
+        await thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS150?.getTienTrinh?.onVoidCaiDatTienTrinhSanSangThucThi();
+        await thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS160?.getTienTrinh?.onVoidCaiDatTienTrinhSanSangThucThi();
+        await thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS170?.getTienTrinh?.onVoidCaiDatTienTrinhSanSangThucThi();
+        await thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS180?.getTienTrinh?.onVoidCaiDatTienTrinhSanSangThucThi();
+        await thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS190?.getTienTrinh?.onVoidCaiDatTienTrinhSanSangThucThi();
+        await thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS200?.getTienTrinh?.onVoidCaiDatTienTrinhSanSangThucThi();
+        await thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS210?.getTienTrinh?.onVoidCaiDatTienTrinhSanSangThucThi();
+        await thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS220?.getTienTrinh?.onVoidCaiDatTienTrinhSanSangThucThi();
+        await thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS230?.getTienTrinh?.onVoidCaiDatTienTrinhSanSangThucThi();
+        await thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS240?.getTienTrinh?.onVoidCaiDatTienTrinhSanSangThucThi();
+        await thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS250?.getTienTrinh?.onVoidCaiDatTienTrinhSanSangThucThi();
+      });
+
+      ///
+      // return;
+    }
+
+    /// -----
+    /// TODO:
+    /// -----
+    if (tongSoPart >= 1) {
+      if (thuocTinhHinhAnh?.getKichThuocRS100 == true || caiDatUuTienKichThuocRS100 == true) {
+        if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS010?.getTienTrinh?.isTienTrinhSanSangThucThi() == true) {
+          await thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS010?.getTienTrinh?.onVoidCaiDatTienTrinhDangThucThi();
+          await Future.delayed(Duration.zero);
+          // await onTaiTaiNguyenHinhAnhNgoaiHinhPartSS01(
+          await onTaiTaiNguyenHinhAnhNgoaiHinhMax(
+            thuocTinhHinhAnh: thuocTinhHinhAnh,
+            caiDatUuTienKichThuocRS100: true,
+            caiDatUuTienKichThuocRS050: false,
+            caiDatUuTienKichThuocRS025: false,
+            onThucThiHoanTat: () {
+              thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS010?.getTienTrinh?.onVoidCaiDatTienTrinhHoanTatThucThi();
+            },
+          );
+
+          // return;
+        }
+      }
+
+      if (thuocTinhHinhAnh?.getKichThuocRS050 == true || caiDatUuTienKichThuocRS050 == true) {
+        if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS010?.getTienTrinh?.isTienTrinhSanSangThucThi() == true) {
+          await thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS010?.getTienTrinh?.onVoidCaiDatTienTrinhDangThucThi();
+          await Future.delayed(Duration.zero);
+          await onTaiTaiNguyenHinhAnhNgoaiHinhMax(
+            thuocTinhHinhAnh: thuocTinhHinhAnh,
+            caiDatUuTienKichThuocRS100: false,
+            caiDatUuTienKichThuocRS050: true,
+            caiDatUuTienKichThuocRS025: false,
+            onThucThiHoanTat: () {
+              thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS010?.getTienTrinh?.onVoidCaiDatTienTrinhHoanTatThucThi();
+            },
+          );
+
+          // return;
+        }
+      }
+      if (thuocTinhHinhAnh?.getKichThuocRS025 == true || caiDatUuTienKichThuocRS025 == true) {
+        if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS010?.getTienTrinh?.isTienTrinhSanSangThucThi() == true) {
+          await thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS010?.getTienTrinh?.onVoidCaiDatTienTrinhDangThucThi();
+          await Future.delayed(Duration.zero);
+          await onTaiTaiNguyenHinhAnhNgoaiHinhMax(
+            thuocTinhHinhAnh: thuocTinhHinhAnh,
+            caiDatUuTienKichThuocRS100: false,
+            caiDatUuTienKichThuocRS050: false,
+            caiDatUuTienKichThuocRS025: true,
+            onThucThiHoanTat: () {
+              thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS010?.getTienTrinh?.onVoidCaiDatTienTrinhHoanTatThucThi();
+            },
+          );
+
+          // return;
+        }
+      }
+    }
+
+    /// -----
+    /// TODO:
+    /// -----
+    if (tongSoPart >= 2) {
+      if (thuocTinhHinhAnh?.getKichThuocRS100 == true || caiDatUuTienKichThuocRS100 == true) {
+        if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS020?.getTienTrinh?.isTienTrinhSanSangThucThi() == true &&
+            thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS010?.getTienTrinh?.isTienTrinhHoanTatThucThi() == true) {
+          await thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS020?.getTienTrinh?.onVoidCaiDatTienTrinhDangThucThi();
+          await Future.delayed(Duration.zero);
+          await onTaiTaiNguyenHinhAnhNgoaiHinhPartSS02(
+            thuocTinhHinhAnh: thuocTinhHinhAnh,
+            caiDatUuTienKichThuocRS100: true,
+            caiDatUuTienKichThuocRS050: false,
+            caiDatUuTienKichThuocRS025: false,
+            onThucThiHoanTat: () {
+              thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS020?.getTienTrinh?.onVoidCaiDatTienTrinhHoanTatThucThi();
+            },
+          );
+
+          // return;
+        }
+      }
+      if (thuocTinhHinhAnh?.getKichThuocRS050 == true || caiDatUuTienKichThuocRS050 == true) {
+        if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS020?.getTienTrinh?.isTienTrinhSanSangThucThi() == true) {
+          await thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS020?.getTienTrinh?.onVoidCaiDatTienTrinhDangThucThi();
+          await Future.delayed(Duration.zero);
+          await onTaiTaiNguyenHinhAnhNgoaiHinhPartSS02(
+            thuocTinhHinhAnh: thuocTinhHinhAnh,
+            caiDatUuTienKichThuocRS100: false,
+            caiDatUuTienKichThuocRS050: true,
+            caiDatUuTienKichThuocRS025: false,
+            onThucThiHoanTat: () {
+              thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS020?.getTienTrinh?.onVoidCaiDatTienTrinhHoanTatThucThi();
+            },
+          );
+
+          // return;
+        }
+      }
+      if (thuocTinhHinhAnh?.getKichThuocRS025 == true || caiDatUuTienKichThuocRS025 == true) {
+        if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS020?.getTienTrinh?.isTienTrinhSanSangThucThi() == true) {
+          await thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS020?.getTienTrinh?.onVoidCaiDatTienTrinhDangThucThi();
+          await Future.delayed(Duration.zero);
+          await onTaiTaiNguyenHinhAnhNgoaiHinhPartSS02(
+            thuocTinhHinhAnh: thuocTinhHinhAnh,
+            caiDatUuTienKichThuocRS100: false,
+            caiDatUuTienKichThuocRS050: false,
+            caiDatUuTienKichThuocRS025: true,
+            onThucThiHoanTat: () {
+              thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS020?.getTienTrinh?.onVoidCaiDatTienTrinhHoanTatThucThi();
+            },
+          );
+
+          // return;
+        }
+      }
+    }
+
+    /// -----
+    /// TODO:
+    /// -----
+    if (tongSoPart >= 3) {
+      if (thuocTinhHinhAnh?.getKichThuocRS100 == true || caiDatUuTienKichThuocRS100 == true) {
+        if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS030?.getTienTrinh?.isTienTrinhSanSangThucThi() == true &&
+            thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS020?.getTienTrinh?.isTienTrinhHoanTatThucThi() == true) {
+          await thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS030?.getTienTrinh?.onVoidCaiDatTienTrinhDangThucThi();
+          await Future.delayed(Duration.zero);
+          await onTaiTaiNguyenHinhAnhNgoaiHinhPartSS03(
+            thuocTinhHinhAnh: thuocTinhHinhAnh,
+            caiDatUuTienKichThuocRS100: true,
+            caiDatUuTienKichThuocRS050: false,
+            caiDatUuTienKichThuocRS025: false,
+            onThucThiHoanTat: () {
+              thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS030?.getTienTrinh?.onVoidCaiDatTienTrinhHoanTatThucThi();
+            },
+          );
+
+          // return;
+        }
+      }
+      if (thuocTinhHinhAnh?.getKichThuocRS050 == true || caiDatUuTienKichThuocRS050 == true) {
+        if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS030?.getTienTrinh?.isTienTrinhSanSangThucThi() == true) {
+          await thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS030?.getTienTrinh?.onVoidCaiDatTienTrinhDangThucThi();
+          await Future.delayed(Duration.zero);
+          await onTaiTaiNguyenHinhAnhNgoaiHinhPartSS03(
+            thuocTinhHinhAnh: thuocTinhHinhAnh,
+            caiDatUuTienKichThuocRS100: false,
+            caiDatUuTienKichThuocRS050: true,
+            caiDatUuTienKichThuocRS025: false,
+            onThucThiHoanTat: () {
+              thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS030?.getTienTrinh?.onVoidCaiDatTienTrinhHoanTatThucThi();
+            },
+          );
+
+          // return;
+        }
+      }
+      if (thuocTinhHinhAnh?.getKichThuocRS025 == true || caiDatUuTienKichThuocRS025 == true) {
+        if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS030?.getTienTrinh?.isTienTrinhSanSangThucThi() == true) {
+          await thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS030?.getTienTrinh?.onVoidCaiDatTienTrinhDangThucThi();
+          await Future.delayed(Duration.zero);
+          await onTaiTaiNguyenHinhAnhNgoaiHinhPartSS03(
+            thuocTinhHinhAnh: thuocTinhHinhAnh,
+            caiDatUuTienKichThuocRS100: false,
+            caiDatUuTienKichThuocRS050: false,
+            caiDatUuTienKichThuocRS025: true,
+            onThucThiHoanTat: () {
+              thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS030?.getTienTrinh?.onVoidCaiDatTienTrinhHoanTatThucThi();
+            },
+          );
+
+          // return;
+        }
+      }
+    }
+
+    /// -----
+    /// TODO:
+    /// -----
+    if (tongSoPart >= 4) {
+      if (thuocTinhHinhAnh?.getKichThuocRS100 == true || caiDatUuTienKichThuocRS100 == true) {
+        if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS040?.getTienTrinh?.isTienTrinhSanSangThucThi() == true &&
+            thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS030?.getTienTrinh?.isTienTrinhHoanTatThucThi() == true) {
+          await thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS040?.getTienTrinh?.onVoidCaiDatTienTrinhDangThucThi();
+          await Future.delayed(Duration.zero);
+          await onTaiTaiNguyenHinhAnhNgoaiHinhPartSS04(
+            thuocTinhHinhAnh: thuocTinhHinhAnh,
+            caiDatUuTienKichThuocRS100: true,
+            caiDatUuTienKichThuocRS050: false,
+            caiDatUuTienKichThuocRS025: false,
+            onThucThiHoanTat: () {
+              thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS040?.getTienTrinh?.onVoidCaiDatTienTrinhHoanTatThucThi();
+            },
+          );
+
+          // return;
+        }
+      }
+      if (thuocTinhHinhAnh?.getKichThuocRS050 == true || caiDatUuTienKichThuocRS050 == true) {
+        if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS040?.getTienTrinh?.isTienTrinhSanSangThucThi() == true) {
+          await thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS040?.getTienTrinh?.onVoidCaiDatTienTrinhDangThucThi();
+          await Future.delayed(Duration.zero);
+          await onTaiTaiNguyenHinhAnhNgoaiHinhPartSS04(
+            thuocTinhHinhAnh: thuocTinhHinhAnh,
+            caiDatUuTienKichThuocRS100: false,
+            caiDatUuTienKichThuocRS050: true,
+            caiDatUuTienKichThuocRS025: false,
+            onThucThiHoanTat: () {
+              thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS040?.getTienTrinh?.onVoidCaiDatTienTrinhHoanTatThucThi();
+            },
+          );
+
+          // return;
+        }
+      }
+      if (thuocTinhHinhAnh?.getKichThuocRS025 == true || caiDatUuTienKichThuocRS025 == true) {
+        if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS040?.getTienTrinh?.isTienTrinhSanSangThucThi() == true) {
+          await thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS040?.getTienTrinh?.onVoidCaiDatTienTrinhDangThucThi();
+          await Future.delayed(Duration.zero);
+          await onTaiTaiNguyenHinhAnhNgoaiHinhPartSS04(
+            thuocTinhHinhAnh: thuocTinhHinhAnh,
+            caiDatUuTienKichThuocRS100: false,
+            caiDatUuTienKichThuocRS050: false,
+            caiDatUuTienKichThuocRS025: true,
+            onThucThiHoanTat: () {
+              thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS040?.getTienTrinh?.onVoidCaiDatTienTrinhHoanTatThucThi();
+            },
+          );
+
+          // return;
+        }
+      }
+    }
+
+    /// -----
+    /// TODO:
+    /// -----
+    if (tongSoPart >= 5) {
+      if (thuocTinhHinhAnh?.getKichThuocRS100 == true || caiDatUuTienKichThuocRS100 == true) {
+        if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS050?.getTienTrinh?.isTienTrinhSanSangThucThi() == true &&
+            thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS040?.getTienTrinh?.isTienTrinhHoanTatThucThi() == true) {
+          await thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS050?.getTienTrinh?.onVoidCaiDatTienTrinhDangThucThi();
+          await Future.delayed(Duration.zero);
+          await onTaiTaiNguyenHinhAnhNgoaiHinhPartSS05(
+            thuocTinhHinhAnh: thuocTinhHinhAnh,
+            caiDatUuTienKichThuocRS100: true,
+            caiDatUuTienKichThuocRS050: false,
+            caiDatUuTienKichThuocRS025: false,
+            onThucThiHoanTat: () {
+              thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS050?.getTienTrinh?.onVoidCaiDatTienTrinhHoanTatThucThi();
+            },
+          );
+
+          // return;
+        }
+      }
+      if (thuocTinhHinhAnh?.getKichThuocRS050 == true || caiDatUuTienKichThuocRS050 == true) {
+        if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS050?.getTienTrinh?.isTienTrinhSanSangThucThi() == true) {
+          await thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS050?.getTienTrinh?.onVoidCaiDatTienTrinhDangThucThi();
+          await Future.delayed(Duration.zero);
+          await onTaiTaiNguyenHinhAnhNgoaiHinhPartSS05(
+            thuocTinhHinhAnh: thuocTinhHinhAnh,
+            caiDatUuTienKichThuocRS100: false,
+            caiDatUuTienKichThuocRS050: true,
+            caiDatUuTienKichThuocRS025: false,
+            onThucThiHoanTat: () {
+              thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS050?.getTienTrinh?.onVoidCaiDatTienTrinhHoanTatThucThi();
+            },
+          );
+
+          // return;
+        }
+      }
+      if (thuocTinhHinhAnh?.getKichThuocRS025 == true || caiDatUuTienKichThuocRS025 == true) {
+        if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS050?.getTienTrinh?.isTienTrinhSanSangThucThi() == true) {
+          await thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS050?.getTienTrinh?.onVoidCaiDatTienTrinhDangThucThi();
+          await Future.delayed(Duration.zero);
+          await onTaiTaiNguyenHinhAnhNgoaiHinhPartSS05(
+            thuocTinhHinhAnh: thuocTinhHinhAnh,
+            caiDatUuTienKichThuocRS100: false,
+            caiDatUuTienKichThuocRS050: false,
+            caiDatUuTienKichThuocRS025: true,
+            onThucThiHoanTat: () {
+              thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS050?.getTienTrinh?.onVoidCaiDatTienTrinhHoanTatThucThi();
+            },
+          );
+
+          // return;
+        }
+      }
+    }
+
+    /// -----
+    /// TODO:
+    /// -----
+    if (tongSoPart >= 6) {
+      if (thuocTinhHinhAnh?.getKichThuocRS100 == true || caiDatUuTienKichThuocRS100 == true) {
+        if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS060?.getTienTrinh?.isTienTrinhSanSangThucThi() == true &&
+            thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS050?.getTienTrinh?.isTienTrinhHoanTatThucThi() == true) {
+          await thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS060?.getTienTrinh?.onVoidCaiDatTienTrinhDangThucThi();
+          await Future.delayed(Duration.zero);
+          await onTaiTaiNguyenHinhAnhNgoaiHinhPartSS06(
+            thuocTinhHinhAnh: thuocTinhHinhAnh,
+            caiDatUuTienKichThuocRS100: true,
+            caiDatUuTienKichThuocRS050: false,
+            caiDatUuTienKichThuocRS025: false,
+            onThucThiHoanTat: () {
+              thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS060?.getTienTrinh?.onVoidCaiDatTienTrinhHoanTatThucThi();
+            },
+          );
+
+          // return;
+        }
+      }
+      if (thuocTinhHinhAnh?.getKichThuocRS050 == true || caiDatUuTienKichThuocRS050 == true) {
+        if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS060?.getTienTrinh?.isTienTrinhSanSangThucThi() == true) {
+          await thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS060?.getTienTrinh?.onVoidCaiDatTienTrinhDangThucThi();
+          await Future.delayed(Duration.zero);
+          await onTaiTaiNguyenHinhAnhNgoaiHinhPartSS06(
+            thuocTinhHinhAnh: thuocTinhHinhAnh,
+            caiDatUuTienKichThuocRS100: false,
+            caiDatUuTienKichThuocRS050: true,
+            caiDatUuTienKichThuocRS025: false,
+            onThucThiHoanTat: () {
+              thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS060?.getTienTrinh?.onVoidCaiDatTienTrinhHoanTatThucThi();
+            },
+          );
+
+          // return;
+        }
+      }
+      if (thuocTinhHinhAnh?.getKichThuocRS025 == true || caiDatUuTienKichThuocRS025 == true) {
+        if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS060?.getTienTrinh?.isTienTrinhSanSangThucThi() == true) {
+          await thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS060?.getTienTrinh?.onVoidCaiDatTienTrinhDangThucThi();
+          await Future.delayed(Duration.zero);
+          await onTaiTaiNguyenHinhAnhNgoaiHinhPartSS06(
+            thuocTinhHinhAnh: thuocTinhHinhAnh,
+            caiDatUuTienKichThuocRS100: false,
+            caiDatUuTienKichThuocRS050: false,
+            caiDatUuTienKichThuocRS025: true,
+            onThucThiHoanTat: () {
+              thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS060?.getTienTrinh?.onVoidCaiDatTienTrinhHoanTatThucThi();
+            },
+          );
+
+          // return;
+        }
+      }
+    }
+
+    /// -----
+    /// TODO:
+    /// -----
+    if (tongSoPart >= 7) {
+      if (thuocTinhHinhAnh?.getKichThuocRS100 == true || caiDatUuTienKichThuocRS100 == true) {
+        if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS070?.getTienTrinh?.isTienTrinhSanSangThucThi() == true &&
+            thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS060?.getTienTrinh?.isTienTrinhHoanTatThucThi() == true) {
+          await thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS070?.getTienTrinh?.onVoidCaiDatTienTrinhDangThucThi();
+          await Future.delayed(Duration.zero);
+          await onTaiTaiNguyenHinhAnhNgoaiHinhPartSS07(
+            thuocTinhHinhAnh: thuocTinhHinhAnh,
+            caiDatUuTienKichThuocRS100: true,
+            caiDatUuTienKichThuocRS050: false,
+            caiDatUuTienKichThuocRS025: false,
+            onThucThiHoanTat: () {
+              thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS070?.getTienTrinh?.onVoidCaiDatTienTrinhHoanTatThucThi();
+            },
+          );
+
+          // return;
+        }
+      }
+
+      if (thuocTinhHinhAnh?.getKichThuocRS050 == true || caiDatUuTienKichThuocRS050 == true) {
+        if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS070?.getTienTrinh?.isTienTrinhSanSangThucThi() == true) {
+          await thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS070?.getTienTrinh?.onVoidCaiDatTienTrinhDangThucThi();
+          await Future.delayed(Duration.zero);
+          await onTaiTaiNguyenHinhAnhNgoaiHinhPartSS07(
+            thuocTinhHinhAnh: thuocTinhHinhAnh,
+            caiDatUuTienKichThuocRS100: false,
+            caiDatUuTienKichThuocRS050: true,
+            caiDatUuTienKichThuocRS025: false,
+            onThucThiHoanTat: () {
+              thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS070?.getTienTrinh?.onVoidCaiDatTienTrinhHoanTatThucThi();
+            },
+          );
+
+          // return;
+        }
+      }
+      if (thuocTinhHinhAnh?.getKichThuocRS025 == true || caiDatUuTienKichThuocRS025 == true) {
+        if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS070?.getTienTrinh?.isTienTrinhSanSangThucThi() == true) {
+          await thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS070?.getTienTrinh?.onVoidCaiDatTienTrinhDangThucThi();
+          await Future.delayed(Duration.zero);
+          await onTaiTaiNguyenHinhAnhNgoaiHinhPartSS07(
+            thuocTinhHinhAnh: thuocTinhHinhAnh,
+            caiDatUuTienKichThuocRS100: false,
+            caiDatUuTienKichThuocRS050: false,
+            caiDatUuTienKichThuocRS025: true,
+            onThucThiHoanTat: () {
+              thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS070?.getTienTrinh?.onVoidCaiDatTienTrinhHoanTatThucThi();
+            },
+          );
+
+          // return;
+        }
+      }
+    }
+
+    /// -----
+    /// TODO:
+    /// -----
+    if (tongSoPart >= 8) {
+      if (thuocTinhHinhAnh?.getKichThuocRS100 == true || caiDatUuTienKichThuocRS100 == true) {
+        if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS080?.getTienTrinh?.isTienTrinhSanSangThucThi() == true &&
+            thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS070?.getTienTrinh?.isTienTrinhHoanTatThucThi() == true) {
+          await thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS080?.getTienTrinh?.onVoidCaiDatTienTrinhDangThucThi();
+          await Future.delayed(Duration.zero);
+          await onTaiTaiNguyenHinhAnhNgoaiHinhPartSS08(
+            thuocTinhHinhAnh: thuocTinhHinhAnh,
+            caiDatUuTienKichThuocRS100: true,
+            caiDatUuTienKichThuocRS050: false,
+            caiDatUuTienKichThuocRS025: false,
+            onThucThiHoanTat: () {
+              thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS080?.getTienTrinh?.onVoidCaiDatTienTrinhHoanTatThucThi();
+            },
+          );
+
+          // return;
+        }
+      }
+      if (thuocTinhHinhAnh?.getKichThuocRS050 == true || caiDatUuTienKichThuocRS050 == true) {
+        if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS080?.getTienTrinh?.isTienTrinhSanSangThucThi() == true) {
+          await thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS080?.getTienTrinh?.onVoidCaiDatTienTrinhDangThucThi();
+          await Future.delayed(Duration.zero);
+          await onTaiTaiNguyenHinhAnhNgoaiHinhPartSS08(
+            thuocTinhHinhAnh: thuocTinhHinhAnh,
+            caiDatUuTienKichThuocRS100: false,
+            caiDatUuTienKichThuocRS050: true,
+            caiDatUuTienKichThuocRS025: false,
+            onThucThiHoanTat: () {
+              thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS080?.getTienTrinh?.onVoidCaiDatTienTrinhHoanTatThucThi();
+            },
+          );
+
+          // return;
+        }
+      }
+      if (thuocTinhHinhAnh?.getKichThuocRS025 == true || caiDatUuTienKichThuocRS025 == true) {
+        if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS080?.getTienTrinh?.isTienTrinhSanSangThucThi() == true) {
+          await thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS080?.getTienTrinh?.onVoidCaiDatTienTrinhDangThucThi();
+          await Future.delayed(Duration.zero);
+          await onTaiTaiNguyenHinhAnhNgoaiHinhPartSS08(
+            thuocTinhHinhAnh: thuocTinhHinhAnh,
+            caiDatUuTienKichThuocRS100: false,
+            caiDatUuTienKichThuocRS050: false,
+            caiDatUuTienKichThuocRS025: true,
+            onThucThiHoanTat: () {
+              thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS080?.getTienTrinh?.onVoidCaiDatTienTrinhHoanTatThucThi();
+            },
+          );
+
+          // return;
+        }
+      }
+    }
+
+    /// -----
+    /// TODO:
+    /// -----
+    if (tongSoPart >= 9) {
+      if (thuocTinhHinhAnh?.getKichThuocRS100 == true || caiDatUuTienKichThuocRS100 == true) {
+        if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS090?.getTienTrinh?.isTienTrinhSanSangThucThi() == true &&
+            thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS080?.getTienTrinh?.isTienTrinhHoanTatThucThi() == true) {
+          await thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS090?.getTienTrinh?.onVoidCaiDatTienTrinhDangThucThi();
+          await Future.delayed(Duration.zero);
+          await onTaiTaiNguyenHinhAnhNgoaiHinhPartSS09(
+            thuocTinhHinhAnh: thuocTinhHinhAnh,
+            caiDatUuTienKichThuocRS100: true,
+            caiDatUuTienKichThuocRS050: false,
+            caiDatUuTienKichThuocRS025: false,
+            onThucThiHoanTat: () {
+              thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS090?.getTienTrinh?.onVoidCaiDatTienTrinhHoanTatThucThi();
+            },
+          );
+
+          // return;
+        }
+      }
+      if (thuocTinhHinhAnh?.getKichThuocRS050 == true || caiDatUuTienKichThuocRS050 == true) {
+        if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS090?.getTienTrinh?.isTienTrinhSanSangThucThi() == true) {
+          await thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS090?.getTienTrinh?.onVoidCaiDatTienTrinhDangThucThi();
+          await Future.delayed(Duration.zero);
+          await onTaiTaiNguyenHinhAnhNgoaiHinhPartSS09(
+            thuocTinhHinhAnh: thuocTinhHinhAnh,
+            caiDatUuTienKichThuocRS100: false,
+            caiDatUuTienKichThuocRS050: true,
+            caiDatUuTienKichThuocRS025: false,
+            onThucThiHoanTat: () {
+              thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS090?.getTienTrinh?.onVoidCaiDatTienTrinhHoanTatThucThi();
+            },
+          );
+
+          // return;
+        }
+      }
+      if (thuocTinhHinhAnh?.getKichThuocRS025 == true || caiDatUuTienKichThuocRS025 == true) {
+        if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS090?.getTienTrinh?.isTienTrinhSanSangThucThi() == true) {
+          await thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS090?.getTienTrinh?.onVoidCaiDatTienTrinhDangThucThi();
+          await Future.delayed(Duration.zero);
+          await onTaiTaiNguyenHinhAnhNgoaiHinhPartSS09(
+            thuocTinhHinhAnh: thuocTinhHinhAnh,
+            caiDatUuTienKichThuocRS100: false,
+            caiDatUuTienKichThuocRS050: false,
+            caiDatUuTienKichThuocRS025: true,
+            onThucThiHoanTat: () {
+              thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS090?.getTienTrinh?.onVoidCaiDatTienTrinhHoanTatThucThi();
+            },
+          );
+
+          // return;
+        }
+      }
+    }
+
+    /// -----
+    /// TODO:
+    /// -----
+    if (tongSoPart >= 10) {
+      if (thuocTinhHinhAnh?.getKichThuocRS100 == true || caiDatUuTienKichThuocRS100 == true) {
+        if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS100?.getTienTrinh?.isTienTrinhSanSangThucThi() == true &&
+            thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS090?.getTienTrinh?.isTienTrinhHoanTatThucThi() == true) {
+          await thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS100?.getTienTrinh?.onVoidCaiDatTienTrinhDangThucThi();
+          await Future.delayed(Duration.zero);
+          await onTaiTaiNguyenHinhAnhNgoaiHinhPartSS10(
+            thuocTinhHinhAnh: thuocTinhHinhAnh,
+            caiDatUuTienKichThuocRS100: true,
+            caiDatUuTienKichThuocRS050: false,
+            caiDatUuTienKichThuocRS025: false,
+            onThucThiHoanTat: () {
+              thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS100?.getTienTrinh?.onVoidCaiDatTienTrinhHoanTatThucThi();
+            },
+          );
+
+          // return;
+        }
+      }
+      if (thuocTinhHinhAnh?.getKichThuocRS050 == true || caiDatUuTienKichThuocRS050 == true) {
+        if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS100?.getTienTrinh?.isTienTrinhSanSangThucThi() == true) {
+          await thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS100?.getTienTrinh?.onVoidCaiDatTienTrinhDangThucThi();
+          await Future.delayed(Duration.zero);
+          await onTaiTaiNguyenHinhAnhNgoaiHinhPartSS10(
+            thuocTinhHinhAnh: thuocTinhHinhAnh,
+            caiDatUuTienKichThuocRS100: false,
+            caiDatUuTienKichThuocRS050: true,
+            caiDatUuTienKichThuocRS025: false,
+            onThucThiHoanTat: () {
+              thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS100?.getTienTrinh?.onVoidCaiDatTienTrinhHoanTatThucThi();
+            },
+          );
+
+          // return;
+        }
+      }
+      if (thuocTinhHinhAnh?.getKichThuocRS025 == true || caiDatUuTienKichThuocRS025 == true) {
+        if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS100?.getTienTrinh?.isTienTrinhSanSangThucThi() == true) {
+          await thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS100?.getTienTrinh?.onVoidCaiDatTienTrinhDangThucThi();
+          await Future.delayed(Duration.zero);
+          await onTaiTaiNguyenHinhAnhNgoaiHinhPartSS10(
+            thuocTinhHinhAnh: thuocTinhHinhAnh,
+            caiDatUuTienKichThuocRS100: false,
+            caiDatUuTienKichThuocRS050: false,
+            caiDatUuTienKichThuocRS025: true,
+            onThucThiHoanTat: () {
+              thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS100?.getTienTrinh?.onVoidCaiDatTienTrinhHoanTatThucThi();
+            },
+          );
+
+          // return;
+        }
+      }
+    }
+
+    /// -----
+    /// TODO:
+    /// -----
+    if (tongSoPart >= 11) {
+      if (thuocTinhHinhAnh?.getKichThuocRS100 == true || caiDatUuTienKichThuocRS100 == true) {
+        if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS110?.getTienTrinh?.isTienTrinhSanSangThucThi() == true &&
+            thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS100?.getTienTrinh?.isTienTrinhHoanTatThucThi() == true) {
+          await thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS110?.getTienTrinh?.onVoidCaiDatTienTrinhDangThucThi();
+          await Future.delayed(Duration.zero);
+          await onTaiTaiNguyenHinhAnhNgoaiHinhPartSS11(
+            thuocTinhHinhAnh: thuocTinhHinhAnh,
+            caiDatUuTienKichThuocRS100: true,
+            caiDatUuTienKichThuocRS050: false,
+            caiDatUuTienKichThuocRS025: false,
+            onThucThiHoanTat: () {
+              thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS110?.getTienTrinh?.onVoidCaiDatTienTrinhHoanTatThucThi();
+            },
+          );
+
+          // return;
+        }
+      }
+      if (thuocTinhHinhAnh?.getKichThuocRS050 == true || caiDatUuTienKichThuocRS050 == true) {
+        if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS110?.getTienTrinh?.isTienTrinhSanSangThucThi() == true) {
+          await thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS110?.getTienTrinh?.onVoidCaiDatTienTrinhDangThucThi();
+          await Future.delayed(Duration.zero);
+          await onTaiTaiNguyenHinhAnhNgoaiHinhPartSS11(
+            thuocTinhHinhAnh: thuocTinhHinhAnh,
+            caiDatUuTienKichThuocRS100: false,
+            caiDatUuTienKichThuocRS050: true,
+            caiDatUuTienKichThuocRS025: false,
+            onThucThiHoanTat: () {
+              thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS110?.getTienTrinh?.onVoidCaiDatTienTrinhHoanTatThucThi();
+            },
+          );
+
+          // return;
+        }
+      }
+      if (thuocTinhHinhAnh?.getKichThuocRS025 == true || caiDatUuTienKichThuocRS025 == true) {
+        if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS110?.getTienTrinh?.isTienTrinhSanSangThucThi() == true) {
+          await thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS110?.getTienTrinh?.onVoidCaiDatTienTrinhDangThucThi();
+          await Future.delayed(Duration.zero);
+          await onTaiTaiNguyenHinhAnhNgoaiHinhPartSS11(
+            thuocTinhHinhAnh: thuocTinhHinhAnh,
+            caiDatUuTienKichThuocRS100: false,
+            caiDatUuTienKichThuocRS050: false,
+            caiDatUuTienKichThuocRS025: true,
+            onThucThiHoanTat: () {
+              thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS110?.getTienTrinh?.onVoidCaiDatTienTrinhHoanTatThucThi();
+            },
+          );
+
+          // return;
+        }
+      }
+    }
+
+    /// -----
+    /// TODO:
+    /// -----
+    if (tongSoPart >= 12) {
+      if (thuocTinhHinhAnh?.getKichThuocRS100 == true || caiDatUuTienKichThuocRS100 == true) {
+        if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS120?.getTienTrinh?.isTienTrinhSanSangThucThi() == true &&
+            thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS110?.getTienTrinh?.isTienTrinhHoanTatThucThi() == true) {
+          await thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS120?.getTienTrinh?.onVoidCaiDatTienTrinhDangThucThi();
+          await Future.delayed(Duration.zero);
+          await onTaiTaiNguyenHinhAnhNgoaiHinhPartSS12(
+            thuocTinhHinhAnh: thuocTinhHinhAnh,
+            caiDatUuTienKichThuocRS100: true,
+            caiDatUuTienKichThuocRS050: false,
+            caiDatUuTienKichThuocRS025: false,
+            onThucThiHoanTat: () {
+              thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS120?.getTienTrinh?.onVoidCaiDatTienTrinhHoanTatThucThi();
+            },
+          );
+
+          // return;
+        }
+      }
+      if (thuocTinhHinhAnh?.getKichThuocRS050 == true || caiDatUuTienKichThuocRS050 == true) {
+        if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS120?.getTienTrinh?.isTienTrinhSanSangThucThi() == true) {
+          await thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS120?.getTienTrinh?.onVoidCaiDatTienTrinhDangThucThi();
+          await Future.delayed(Duration.zero);
+          await onTaiTaiNguyenHinhAnhNgoaiHinhPartSS12(
+            thuocTinhHinhAnh: thuocTinhHinhAnh,
+            caiDatUuTienKichThuocRS100: false,
+            caiDatUuTienKichThuocRS050: true,
+            caiDatUuTienKichThuocRS025: false,
+            onThucThiHoanTat: () {
+              thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS120?.getTienTrinh?.onVoidCaiDatTienTrinhHoanTatThucThi();
+            },
+          );
+
+          // return;
+        }
+      }
+      if (thuocTinhHinhAnh?.getKichThuocRS025 == true || caiDatUuTienKichThuocRS025 == true) {
+        if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS120?.getTienTrinh?.isTienTrinhSanSangThucThi() == true) {
+          await thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS120?.getTienTrinh?.onVoidCaiDatTienTrinhDangThucThi();
+          await Future.delayed(Duration.zero);
+          await onTaiTaiNguyenHinhAnhNgoaiHinhPartSS12(
+            thuocTinhHinhAnh: thuocTinhHinhAnh,
+            caiDatUuTienKichThuocRS100: false,
+            caiDatUuTienKichThuocRS050: false,
+            caiDatUuTienKichThuocRS025: true,
+            onThucThiHoanTat: () {
+              thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS120?.getTienTrinh?.onVoidCaiDatTienTrinhHoanTatThucThi();
+            },
+          );
+
+          // return;
+        }
+      }
+    }
+
+    /// -----
+    /// TODO:
+    /// -----
+    if (tongSoPart >= 13) {
+      if (thuocTinhHinhAnh?.getKichThuocRS100 == true || caiDatUuTienKichThuocRS100 == true) {
+        if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS130?.getTienTrinh?.isTienTrinhSanSangThucThi() == true &&
+            thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS120?.getTienTrinh?.isTienTrinhHoanTatThucThi() == true) {
+          await thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS130?.getTienTrinh?.onVoidCaiDatTienTrinhDangThucThi();
+          await Future.delayed(Duration.zero);
+          await onTaiTaiNguyenHinhAnhNgoaiHinhPartSS13(
+            thuocTinhHinhAnh: thuocTinhHinhAnh,
+            caiDatUuTienKichThuocRS100: true,
+            caiDatUuTienKichThuocRS050: false,
+            caiDatUuTienKichThuocRS025: false,
+            onThucThiHoanTat: () {
+              thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS130?.getTienTrinh?.onVoidCaiDatTienTrinhHoanTatThucThi();
+            },
+          );
+
+          // return;
+        }
+      }
+      if (thuocTinhHinhAnh?.getKichThuocRS050 == true || caiDatUuTienKichThuocRS050 == true) {
+        if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS130?.getTienTrinh?.isTienTrinhSanSangThucThi() == true) {
+          await thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS130?.getTienTrinh?.onVoidCaiDatTienTrinhDangThucThi();
+          await Future.delayed(Duration.zero);
+          await onTaiTaiNguyenHinhAnhNgoaiHinhPartSS13(
+            thuocTinhHinhAnh: thuocTinhHinhAnh,
+            caiDatUuTienKichThuocRS100: false,
+            caiDatUuTienKichThuocRS050: true,
+            caiDatUuTienKichThuocRS025: false,
+            onThucThiHoanTat: () {
+              thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS130?.getTienTrinh?.onVoidCaiDatTienTrinhHoanTatThucThi();
+            },
+          );
+
+          // return;
+        }
+      }
+      if (thuocTinhHinhAnh?.getKichThuocRS025 == true || caiDatUuTienKichThuocRS025 == true) {
+        if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS130?.getTienTrinh?.isTienTrinhSanSangThucThi() == true) {
+          await thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS130?.getTienTrinh?.onVoidCaiDatTienTrinhDangThucThi();
+          await Future.delayed(Duration.zero);
+          await onTaiTaiNguyenHinhAnhNgoaiHinhPartSS13(
+            thuocTinhHinhAnh: thuocTinhHinhAnh,
+            caiDatUuTienKichThuocRS100: false,
+            caiDatUuTienKichThuocRS050: false,
+            caiDatUuTienKichThuocRS025: true,
+            onThucThiHoanTat: () {
+              thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS130?.getTienTrinh?.onVoidCaiDatTienTrinhHoanTatThucThi();
+            },
+          );
+
+          // return;
+        }
+      }
+    }
+
+    /// -----
+    /// TODO:
+    /// -----
+    if (tongSoPart >= 14) {
+      if (thuocTinhHinhAnh?.getKichThuocRS100 == true || caiDatUuTienKichThuocRS100 == true) {
+        if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS140?.getTienTrinh?.isTienTrinhSanSangThucThi() == true &&
+            thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS130?.getTienTrinh?.isTienTrinhHoanTatThucThi() == true) {
+          await thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS140?.getTienTrinh?.onVoidCaiDatTienTrinhDangThucThi();
+          await Future.delayed(Duration.zero);
+          await onTaiTaiNguyenHinhAnhNgoaiHinhPartSS14(
+            thuocTinhHinhAnh: thuocTinhHinhAnh,
+            caiDatUuTienKichThuocRS100: true,
+            caiDatUuTienKichThuocRS050: false,
+            caiDatUuTienKichThuocRS025: false,
+            onThucThiHoanTat: () {
+              thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS140?.getTienTrinh?.onVoidCaiDatTienTrinhHoanTatThucThi();
+            },
+          );
+
+          // return;
+        }
+      }
+      if (thuocTinhHinhAnh?.getKichThuocRS050 == true || caiDatUuTienKichThuocRS050 == true) {
+        if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS140?.getTienTrinh?.isTienTrinhSanSangThucThi() == true) {
+          await thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS140?.getTienTrinh?.onVoidCaiDatTienTrinhDangThucThi();
+          await Future.delayed(Duration.zero);
+          await onTaiTaiNguyenHinhAnhNgoaiHinhPartSS14(
+            thuocTinhHinhAnh: thuocTinhHinhAnh,
+            caiDatUuTienKichThuocRS100: false,
+            caiDatUuTienKichThuocRS050: true,
+            caiDatUuTienKichThuocRS025: false,
+            onThucThiHoanTat: () {
+              thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS140?.getTienTrinh?.onVoidCaiDatTienTrinhHoanTatThucThi();
+            },
+          );
+
+          // return;
+        }
+      }
+      if (thuocTinhHinhAnh?.getKichThuocRS025 == true || caiDatUuTienKichThuocRS025 == true) {
+        if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS140?.getTienTrinh?.isTienTrinhSanSangThucThi() == true) {
+          await thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS140?.getTienTrinh?.onVoidCaiDatTienTrinhDangThucThi();
+          await Future.delayed(Duration.zero);
+          await onTaiTaiNguyenHinhAnhNgoaiHinhPartSS14(
+            thuocTinhHinhAnh: thuocTinhHinhAnh,
+            caiDatUuTienKichThuocRS100: false,
+            caiDatUuTienKichThuocRS050: false,
+            caiDatUuTienKichThuocRS025: true,
+            onThucThiHoanTat: () {
+              thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS140?.getTienTrinh?.onVoidCaiDatTienTrinhHoanTatThucThi();
+            },
+          );
+
+          // return;
+        }
+      }
+    }
+
+    /// -----
+    /// TODO:
+    /// -----
+    if (tongSoPart >= 15) {
+      if (thuocTinhHinhAnh?.getKichThuocRS100 == true || caiDatUuTienKichThuocRS100 == true) {
+        if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS150?.getTienTrinh?.isTienTrinhSanSangThucThi() == true &&
+            thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS140?.getTienTrinh?.isTienTrinhHoanTatThucThi() == true) {
+          await thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS150?.getTienTrinh?.onVoidCaiDatTienTrinhDangThucThi();
+          await Future.delayed(Duration.zero);
+          await onTaiTaiNguyenHinhAnhNgoaiHinhPartSS15(
+            thuocTinhHinhAnh: thuocTinhHinhAnh,
+            caiDatUuTienKichThuocRS100: true,
+            caiDatUuTienKichThuocRS050: false,
+            caiDatUuTienKichThuocRS025: false,
+            onThucThiHoanTat: () {
+              thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS150?.getTienTrinh?.onVoidCaiDatTienTrinhHoanTatThucThi();
+            },
+          );
+
+          // return;
+        }
+      }
+      if (thuocTinhHinhAnh?.getKichThuocRS050 == true || caiDatUuTienKichThuocRS050 == true) {
+        if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS150?.getTienTrinh?.isTienTrinhSanSangThucThi() == true) {
+          await thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS150?.getTienTrinh?.onVoidCaiDatTienTrinhDangThucThi();
+          await Future.delayed(Duration.zero);
+          await onTaiTaiNguyenHinhAnhNgoaiHinhPartSS15(
+            thuocTinhHinhAnh: thuocTinhHinhAnh,
+            caiDatUuTienKichThuocRS100: false,
+            caiDatUuTienKichThuocRS050: true,
+            caiDatUuTienKichThuocRS025: false,
+            onThucThiHoanTat: () {
+              thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS150?.getTienTrinh?.onVoidCaiDatTienTrinhHoanTatThucThi();
+            },
+          );
+
+          // return;
+        }
+      }
+      if (thuocTinhHinhAnh?.getKichThuocRS025 == true || caiDatUuTienKichThuocRS025 == true) {
+        if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS150?.getTienTrinh?.isTienTrinhSanSangThucThi() == true) {
+          await thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS150?.getTienTrinh?.onVoidCaiDatTienTrinhDangThucThi();
+          await Future.delayed(Duration.zero);
+          await onTaiTaiNguyenHinhAnhNgoaiHinhPartSS15(
+            thuocTinhHinhAnh: thuocTinhHinhAnh,
+            caiDatUuTienKichThuocRS100: false,
+            caiDatUuTienKichThuocRS050: false,
+            caiDatUuTienKichThuocRS025: true,
+            onThucThiHoanTat: () {
+              thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS150?.getTienTrinh?.onVoidCaiDatTienTrinhHoanTatThucThi();
+            },
+          );
+
+          // return;
+        }
+      }
+    }
+
+    /// -----
+    /// TODO:
+    /// -----
+    if (tongSoPart >= 16) {
+      if (thuocTinhHinhAnh?.getKichThuocRS100 == true || caiDatUuTienKichThuocRS100 == true) {
+        if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS160?.getTienTrinh?.isTienTrinhSanSangThucThi() == true &&
+            thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS150?.getTienTrinh?.isTienTrinhHoanTatThucThi() == true) {
+          await thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS160?.getTienTrinh?.onVoidCaiDatTienTrinhDangThucThi();
+          await Future.delayed(Duration.zero);
+          await onTaiTaiNguyenHinhAnhNgoaiHinhPartSS16(
+            thuocTinhHinhAnh: thuocTinhHinhAnh,
+            caiDatUuTienKichThuocRS100: true,
+            caiDatUuTienKichThuocRS050: false,
+            caiDatUuTienKichThuocRS025: false,
+            onThucThiHoanTat: () {
+              thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS160?.getTienTrinh?.onVoidCaiDatTienTrinhHoanTatThucThi();
+            },
+          );
+
+          // return;
+        }
+      }
+      if (thuocTinhHinhAnh?.getKichThuocRS050 == true || caiDatUuTienKichThuocRS050 == true) {
+        if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS160?.getTienTrinh?.isTienTrinhSanSangThucThi() == true) {
+          await thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS160?.getTienTrinh?.onVoidCaiDatTienTrinhDangThucThi();
+          await Future.delayed(Duration.zero);
+          await onTaiTaiNguyenHinhAnhNgoaiHinhPartSS16(
+            thuocTinhHinhAnh: thuocTinhHinhAnh,
+            caiDatUuTienKichThuocRS100: false,
+            caiDatUuTienKichThuocRS050: true,
+            caiDatUuTienKichThuocRS025: false,
+            onThucThiHoanTat: () {
+              thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS160?.getTienTrinh?.onVoidCaiDatTienTrinhHoanTatThucThi();
+            },
+          );
+
+          // return;
+        }
+      }
+      if (thuocTinhHinhAnh?.getKichThuocRS025 == true || caiDatUuTienKichThuocRS025 == true) {
+        if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS160?.getTienTrinh?.isTienTrinhSanSangThucThi() == true) {
+          await thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS160?.getTienTrinh?.onVoidCaiDatTienTrinhDangThucThi();
+          await Future.delayed(Duration.zero);
+          await onTaiTaiNguyenHinhAnhNgoaiHinhPartSS16(
+            thuocTinhHinhAnh: thuocTinhHinhAnh,
+            caiDatUuTienKichThuocRS100: false,
+            caiDatUuTienKichThuocRS050: false,
+            caiDatUuTienKichThuocRS025: true,
+            onThucThiHoanTat: () {
+              thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS160?.getTienTrinh?.onVoidCaiDatTienTrinhHoanTatThucThi();
+            },
+          );
+
+          // return;
+        }
+      }
+    }
+
+    /// -----
+    /// TODO:
+    /// -----
+    if (tongSoPart >= 17) {
+      if (thuocTinhHinhAnh?.getKichThuocRS100 == true || caiDatUuTienKichThuocRS100 == true) {
+        if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS170?.getTienTrinh?.isTienTrinhSanSangThucThi() == true &&
+            thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS160?.getTienTrinh?.isTienTrinhHoanTatThucThi() == true) {
+          await thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS170?.getTienTrinh?.onVoidCaiDatTienTrinhDangThucThi();
+          await Future.delayed(Duration.zero);
+          await onTaiTaiNguyenHinhAnhNgoaiHinhPartSS17(
+            thuocTinhHinhAnh: thuocTinhHinhAnh,
+            caiDatUuTienKichThuocRS100: true,
+            caiDatUuTienKichThuocRS050: false,
+            caiDatUuTienKichThuocRS025: false,
+            onThucThiHoanTat: () {
+              thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS170?.getTienTrinh?.onVoidCaiDatTienTrinhHoanTatThucThi();
+            },
+          );
+
+          // return;
+        }
+      }
+      if (thuocTinhHinhAnh?.getKichThuocRS050 == true || caiDatUuTienKichThuocRS050 == true) {
+        if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS170?.getTienTrinh?.isTienTrinhSanSangThucThi() == true) {
+          await thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS170?.getTienTrinh?.onVoidCaiDatTienTrinhDangThucThi();
+          await Future.delayed(Duration.zero);
+          await onTaiTaiNguyenHinhAnhNgoaiHinhPartSS17(
+            thuocTinhHinhAnh: thuocTinhHinhAnh,
+            caiDatUuTienKichThuocRS100: false,
+            caiDatUuTienKichThuocRS050: true,
+            caiDatUuTienKichThuocRS025: false,
+            onThucThiHoanTat: () {
+              thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS170?.getTienTrinh?.onVoidCaiDatTienTrinhHoanTatThucThi();
+            },
+          );
+
+          // return;
+        }
+      }
+      if (thuocTinhHinhAnh?.getKichThuocRS025 == true || caiDatUuTienKichThuocRS025 == true) {
+        if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS170?.getTienTrinh?.isTienTrinhSanSangThucThi() == true) {
+          await thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS170?.getTienTrinh?.onVoidCaiDatTienTrinhDangThucThi();
+          await Future.delayed(Duration.zero);
+          await onTaiTaiNguyenHinhAnhNgoaiHinhPartSS17(
+            thuocTinhHinhAnh: thuocTinhHinhAnh,
+            caiDatUuTienKichThuocRS100: false,
+            caiDatUuTienKichThuocRS050: false,
+            caiDatUuTienKichThuocRS025: true,
+            onThucThiHoanTat: () {
+              thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS170?.getTienTrinh?.onVoidCaiDatTienTrinhHoanTatThucThi();
+            },
+          );
+
+          // return;
+        }
+      }
+    }
+
+    /// -----
+    /// TODO:
+    /// -----
+    if (tongSoPart >= 18) {
+      if (thuocTinhHinhAnh?.getKichThuocRS100 == true || caiDatUuTienKichThuocRS100 == true) {
+        if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS180?.getTienTrinh?.isTienTrinhSanSangThucThi() == true &&
+            thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS170?.getTienTrinh?.isTienTrinhHoanTatThucThi() == true) {
+          await thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS180?.getTienTrinh?.onVoidCaiDatTienTrinhDangThucThi();
+          await Future.delayed(Duration.zero);
+          await onTaiTaiNguyenHinhAnhNgoaiHinhPartSS18(
+            thuocTinhHinhAnh: thuocTinhHinhAnh,
+            caiDatUuTienKichThuocRS100: true,
+            caiDatUuTienKichThuocRS050: false,
+            caiDatUuTienKichThuocRS025: false,
+            onThucThiHoanTat: () {
+              thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS180?.getTienTrinh?.onVoidCaiDatTienTrinhHoanTatThucThi();
+            },
+          );
+
+          // return;
+        }
+      }
+      if (thuocTinhHinhAnh?.getKichThuocRS050 == true || caiDatUuTienKichThuocRS050 == true) {
+        if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS180?.getTienTrinh?.isTienTrinhSanSangThucThi() == true) {
+          await thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS180?.getTienTrinh?.onVoidCaiDatTienTrinhDangThucThi();
+          await Future.delayed(Duration.zero);
+          await onTaiTaiNguyenHinhAnhNgoaiHinhPartSS18(
+            thuocTinhHinhAnh: thuocTinhHinhAnh,
+            caiDatUuTienKichThuocRS100: false,
+            caiDatUuTienKichThuocRS050: true,
+            caiDatUuTienKichThuocRS025: false,
+            onThucThiHoanTat: () {
+              thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS180?.getTienTrinh?.onVoidCaiDatTienTrinhHoanTatThucThi();
+            },
+          );
+
+          // return;
+        }
+      }
+      if (thuocTinhHinhAnh?.getKichThuocRS025 == true || caiDatUuTienKichThuocRS025 == true) {
+        if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS180?.getTienTrinh?.isTienTrinhSanSangThucThi() == true) {
+          await thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS180?.getTienTrinh?.onVoidCaiDatTienTrinhDangThucThi();
+          await Future.delayed(Duration.zero);
+          await onTaiTaiNguyenHinhAnhNgoaiHinhPartSS18(
+            thuocTinhHinhAnh: thuocTinhHinhAnh,
+            caiDatUuTienKichThuocRS100: false,
+            caiDatUuTienKichThuocRS050: false,
+            caiDatUuTienKichThuocRS025: true,
+            onThucThiHoanTat: () {
+              thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS180?.getTienTrinh?.onVoidCaiDatTienTrinhHoanTatThucThi();
+            },
+          );
+
+          // return;
+        }
+      }
+    }
+
+    /// -----
+    /// TODO:
+    /// -----
+    if (tongSoPart >= 19) {
+      if (thuocTinhHinhAnh?.getKichThuocRS100 == true || caiDatUuTienKichThuocRS100 == true) {
+        if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS190?.getTienTrinh?.isTienTrinhSanSangThucThi() == true &&
+            thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS180?.getTienTrinh?.isTienTrinhHoanTatThucThi() == true) {
+          await thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS190?.getTienTrinh?.onVoidCaiDatTienTrinhDangThucThi();
+          await Future.delayed(Duration.zero);
+          await onTaiTaiNguyenHinhAnhNgoaiHinhPartSS19(
+            thuocTinhHinhAnh: thuocTinhHinhAnh,
+            caiDatUuTienKichThuocRS100: true,
+            caiDatUuTienKichThuocRS050: false,
+            caiDatUuTienKichThuocRS025: false,
+            onThucThiHoanTat: () {
+              thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS190?.getTienTrinh?.onVoidCaiDatTienTrinhHoanTatThucThi();
+            },
+          );
+
+          // return;
+        }
+      }
+      if (thuocTinhHinhAnh?.getKichThuocRS050 == true || caiDatUuTienKichThuocRS050 == true) {
+        if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS190?.getTienTrinh?.isTienTrinhSanSangThucThi() == true) {
+          await thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS190?.getTienTrinh?.onVoidCaiDatTienTrinhDangThucThi();
+          await Future.delayed(Duration.zero);
+          await onTaiTaiNguyenHinhAnhNgoaiHinhPartSS19(
+            thuocTinhHinhAnh: thuocTinhHinhAnh,
+            caiDatUuTienKichThuocRS100: false,
+            caiDatUuTienKichThuocRS050: true,
+            caiDatUuTienKichThuocRS025: false,
+            onThucThiHoanTat: () {
+              thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS190?.getTienTrinh?.onVoidCaiDatTienTrinhHoanTatThucThi();
+            },
+          );
+
+          // return;
+        }
+      }
+      if (thuocTinhHinhAnh?.getKichThuocRS025 == true || caiDatUuTienKichThuocRS025 == true) {
+        if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS190?.getTienTrinh?.isTienTrinhSanSangThucThi() == true) {
+          await thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS190?.getTienTrinh?.onVoidCaiDatTienTrinhDangThucThi();
+          await Future.delayed(Duration.zero);
+          await onTaiTaiNguyenHinhAnhNgoaiHinhPartSS19(
+            thuocTinhHinhAnh: thuocTinhHinhAnh,
+            caiDatUuTienKichThuocRS100: false,
+            caiDatUuTienKichThuocRS050: false,
+            caiDatUuTienKichThuocRS025: true,
+            onThucThiHoanTat: () {
+              thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS190?.getTienTrinh?.onVoidCaiDatTienTrinhHoanTatThucThi();
+            },
+          );
+
+          // return;
+        }
+      }
+    }
+
+    /// -----
+    /// TODO:
+    /// -----
+    if (tongSoPart >= 20) {
+      if (thuocTinhHinhAnh?.getKichThuocRS100 == true || caiDatUuTienKichThuocRS100 == true) {
+        if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS200?.getTienTrinh?.isTienTrinhSanSangThucThi() == true &&
+            thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS190?.getTienTrinh?.isTienTrinhHoanTatThucThi() == true) {
+          await thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS200?.getTienTrinh?.onVoidCaiDatTienTrinhDangThucThi();
+          await Future.delayed(Duration.zero);
+          await onTaiTaiNguyenHinhAnhNgoaiHinhPartSS20(
+            thuocTinhHinhAnh: thuocTinhHinhAnh,
+            caiDatUuTienKichThuocRS100: true,
+            caiDatUuTienKichThuocRS050: false,
+            caiDatUuTienKichThuocRS025: false,
+            onThucThiHoanTat: () {
+              thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS200?.getTienTrinh?.onVoidCaiDatTienTrinhHoanTatThucThi();
+            },
+          );
+
+          // return;
+        }
+      }
+      if (thuocTinhHinhAnh?.getKichThuocRS050 == true || caiDatUuTienKichThuocRS050 == true) {
+        if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS200?.getTienTrinh?.isTienTrinhSanSangThucThi() == true) {
+          await thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS200?.getTienTrinh?.onVoidCaiDatTienTrinhDangThucThi();
+          await Future.delayed(Duration.zero);
+          await onTaiTaiNguyenHinhAnhNgoaiHinhPartSS20(
+            thuocTinhHinhAnh: thuocTinhHinhAnh,
+            caiDatUuTienKichThuocRS100: false,
+            caiDatUuTienKichThuocRS050: true,
+            caiDatUuTienKichThuocRS025: false,
+            onThucThiHoanTat: () {
+              thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS200?.getTienTrinh?.onVoidCaiDatTienTrinhHoanTatThucThi();
+            },
+          );
+
+          // return;
+        }
+      }
+      if (thuocTinhHinhAnh?.getKichThuocRS025 == true || caiDatUuTienKichThuocRS025 == true) {
+        if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS200?.getTienTrinh?.isTienTrinhSanSangThucThi() == true) {
+          await thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS200?.getTienTrinh?.onVoidCaiDatTienTrinhDangThucThi();
+          await Future.delayed(Duration.zero);
+          await onTaiTaiNguyenHinhAnhNgoaiHinhPartSS20(
+            thuocTinhHinhAnh: thuocTinhHinhAnh,
+            caiDatUuTienKichThuocRS100: false,
+            caiDatUuTienKichThuocRS050: false,
+            caiDatUuTienKichThuocRS025: true,
+            onThucThiHoanTat: () {
+              thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS200?.getTienTrinh?.onVoidCaiDatTienTrinhHoanTatThucThi();
+            },
+          );
+
+          // return;
+        }
+      }
+    }
+
+    /// -----
+    /// TODO:
+    /// -----
+    if (tongSoPart >= 21) {
+      if (thuocTinhHinhAnh?.getKichThuocRS100 == true || caiDatUuTienKichThuocRS100 == true) {
+        if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS210?.getTienTrinh?.isTienTrinhSanSangThucThi() == true &&
+            thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS200?.getTienTrinh?.isTienTrinhHoanTatThucThi() == true) {
+          await thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS210?.getTienTrinh?.onVoidCaiDatTienTrinhDangThucThi();
+          await Future.delayed(Duration.zero);
+          await onTaiTaiNguyenHinhAnhNgoaiHinhPartSS21(
+            thuocTinhHinhAnh: thuocTinhHinhAnh,
+            caiDatUuTienKichThuocRS100: true,
+            caiDatUuTienKichThuocRS050: false,
+            caiDatUuTienKichThuocRS025: false,
+            onThucThiHoanTat: () {
+              thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS210?.getTienTrinh?.onVoidCaiDatTienTrinhHoanTatThucThi();
+            },
+          );
+
+          // return;
+        }
+      }
+      if (thuocTinhHinhAnh?.getKichThuocRS050 == true || caiDatUuTienKichThuocRS050 == true) {
+        if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS210?.getTienTrinh?.isTienTrinhSanSangThucThi() == true) {
+          await thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS210?.getTienTrinh?.onVoidCaiDatTienTrinhDangThucThi();
+          await Future.delayed(Duration.zero);
+          await onTaiTaiNguyenHinhAnhNgoaiHinhPartSS21(
+            thuocTinhHinhAnh: thuocTinhHinhAnh,
+            caiDatUuTienKichThuocRS100: false,
+            caiDatUuTienKichThuocRS050: true,
+            caiDatUuTienKichThuocRS025: false,
+            onThucThiHoanTat: () {
+              thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS210?.getTienTrinh?.onVoidCaiDatTienTrinhHoanTatThucThi();
+            },
+          );
+
+          // return;
+        }
+      }
+      if (thuocTinhHinhAnh?.getKichThuocRS025 == true || caiDatUuTienKichThuocRS025 == true) {
+        if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS210?.getTienTrinh?.isTienTrinhSanSangThucThi() == true) {
+          await thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS210?.getTienTrinh?.onVoidCaiDatTienTrinhDangThucThi();
+          await Future.delayed(Duration.zero);
+          await onTaiTaiNguyenHinhAnhNgoaiHinhPartSS21(
+            thuocTinhHinhAnh: thuocTinhHinhAnh,
+            caiDatUuTienKichThuocRS100: false,
+            caiDatUuTienKichThuocRS050: false,
+            caiDatUuTienKichThuocRS025: true,
+            onThucThiHoanTat: () {
+              thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS210?.getTienTrinh?.onVoidCaiDatTienTrinhHoanTatThucThi();
+            },
+          );
+
+          // return;
+        }
+      }
+    }
+
+    /// -----
+    /// TODO:
+    /// -----
+    if (tongSoPart >= 22) {
+      if (thuocTinhHinhAnh?.getKichThuocRS100 == true || caiDatUuTienKichThuocRS100 == true) {
+        if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS220?.getTienTrinh?.isTienTrinhSanSangThucThi() == true &&
+            thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS210?.getTienTrinh?.isTienTrinhHoanTatThucThi() == true) {
+          await thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS220?.getTienTrinh?.onVoidCaiDatTienTrinhDangThucThi();
+          await Future.delayed(Duration.zero);
+          await onTaiTaiNguyenHinhAnhNgoaiHinhPartSS22(
+            thuocTinhHinhAnh: thuocTinhHinhAnh,
+            caiDatUuTienKichThuocRS100: true,
+            caiDatUuTienKichThuocRS050: false,
+            caiDatUuTienKichThuocRS025: false,
+            onThucThiHoanTat: () {
+              thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS220?.getTienTrinh?.onVoidCaiDatTienTrinhHoanTatThucThi();
+            },
+          );
+
+          // return;
+        }
+      }
+
+      if (thuocTinhHinhAnh?.getKichThuocRS050 == true || caiDatUuTienKichThuocRS050 == true) {
+        if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS220?.getTienTrinh?.isTienTrinhSanSangThucThi() == true) {
+          await thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS220?.getTienTrinh?.onVoidCaiDatTienTrinhDangThucThi();
+          await Future.delayed(Duration.zero);
+          await onTaiTaiNguyenHinhAnhNgoaiHinhPartSS22(
+            thuocTinhHinhAnh: thuocTinhHinhAnh,
+            caiDatUuTienKichThuocRS100: false,
+            caiDatUuTienKichThuocRS050: true,
+            caiDatUuTienKichThuocRS025: false,
+            onThucThiHoanTat: () {
+              thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS220?.getTienTrinh?.onVoidCaiDatTienTrinhHoanTatThucThi();
+            },
+          );
+
+          // return;
+        }
+      }
+
+      if (thuocTinhHinhAnh?.getKichThuocRS025 == true || caiDatUuTienKichThuocRS025 == true) {
+        if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS220?.getTienTrinh?.isTienTrinhSanSangThucThi() == true) {
+          await thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS220?.getTienTrinh?.onVoidCaiDatTienTrinhDangThucThi();
+          await Future.delayed(Duration.zero);
+          await onTaiTaiNguyenHinhAnhNgoaiHinhPartSS22(
+            thuocTinhHinhAnh: thuocTinhHinhAnh,
+            caiDatUuTienKichThuocRS100: false,
+            caiDatUuTienKichThuocRS050: false,
+            caiDatUuTienKichThuocRS025: true,
+            onThucThiHoanTat: () {
+              thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS220?.getTienTrinh?.onVoidCaiDatTienTrinhHoanTatThucThi();
+            },
+          );
+
+          // return;
+        }
+      }
+    }
+
+    /// -----
+    /// TODO:
+    /// -----
+    if (tongSoPart >= 23) {
+      if (thuocTinhHinhAnh?.getKichThuocRS100 == true || caiDatUuTienKichThuocRS100 == true) {
+        if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS230?.getTienTrinh?.isTienTrinhSanSangThucThi() == true &&
+            thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS220?.getTienTrinh?.isTienTrinhHoanTatThucThi() == true) {
+          await thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS230?.getTienTrinh?.onVoidCaiDatTienTrinhDangThucThi();
+          await Future.delayed(Duration.zero);
+          await onTaiTaiNguyenHinhAnhNgoaiHinhPartSS23(
+            thuocTinhHinhAnh: thuocTinhHinhAnh,
+            caiDatUuTienKichThuocRS100: true,
+            caiDatUuTienKichThuocRS050: false,
+            caiDatUuTienKichThuocRS025: false,
+            onThucThiHoanTat: () {
+              thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS230?.getTienTrinh?.onVoidCaiDatTienTrinhHoanTatThucThi();
+            },
+          );
+
+          // return;
+        }
+      }
+
+      /// -----
+      /// TODO:
+      /// -----
+      if (thuocTinhHinhAnh?.getKichThuocRS050 == true || caiDatUuTienKichThuocRS050 == true) {
+        if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS230?.getTienTrinh?.isTienTrinhSanSangThucThi() == true) {
+          await thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS230?.getTienTrinh?.onVoidCaiDatTienTrinhDangThucThi();
+          await Future.delayed(Duration.zero);
+          await onTaiTaiNguyenHinhAnhNgoaiHinhPartSS23(
+            thuocTinhHinhAnh: thuocTinhHinhAnh,
+            caiDatUuTienKichThuocRS100: false,
+            caiDatUuTienKichThuocRS050: true,
+            caiDatUuTienKichThuocRS025: false,
+            onThucThiHoanTat: () {
+              thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS230?.getTienTrinh?.onVoidCaiDatTienTrinhHoanTatThucThi();
+            },
+          );
+
+          // return;
+        }
+      }
+
+      /// -----
+      /// TODO:
+      /// -----
+      if (thuocTinhHinhAnh?.getKichThuocRS025 == true || caiDatUuTienKichThuocRS025 == true) {
+        if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS230?.getTienTrinh?.isTienTrinhSanSangThucThi() == true) {
+          await thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS230?.getTienTrinh?.onVoidCaiDatTienTrinhDangThucThi();
+          await Future.delayed(Duration.zero);
+          await onTaiTaiNguyenHinhAnhNgoaiHinhPartSS23(
+            thuocTinhHinhAnh: thuocTinhHinhAnh,
+            caiDatUuTienKichThuocRS100: false,
+            caiDatUuTienKichThuocRS050: false,
+            caiDatUuTienKichThuocRS025: true,
+            onThucThiHoanTat: () {
+              thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS230?.getTienTrinh?.onVoidCaiDatTienTrinhHoanTatThucThi();
+            },
+          );
+
+          // return;
+        }
+      }
+    }
+
+    /// -----
+    /// TODO:
+    /// -----
+    if (tongSoPart >= 24) {
+      if (thuocTinhHinhAnh?.getKichThuocRS100 == true || caiDatUuTienKichThuocRS100 == true) {
+        if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS240?.getTienTrinh?.isTienTrinhSanSangThucThi() == true &&
+            thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS230?.getTienTrinh?.isTienTrinhHoanTatThucThi() == true) {
+          await thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS240?.getTienTrinh?.onVoidCaiDatTienTrinhDangThucThi();
+          await Future.delayed(Duration.zero);
+          await onTaiTaiNguyenHinhAnhNgoaiHinhPartSS24(
+            thuocTinhHinhAnh: thuocTinhHinhAnh,
+            caiDatUuTienKichThuocRS100: true,
+            caiDatUuTienKichThuocRS050: false,
+            caiDatUuTienKichThuocRS025: false,
+            onThucThiHoanTat: () {
+              thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS240?.getTienTrinh?.onVoidCaiDatTienTrinhHoanTatThucThi();
+            },
+          );
+
+          // return;
+        }
+      }
+
+      if (thuocTinhHinhAnh?.getKichThuocRS050 == true || caiDatUuTienKichThuocRS050 == true) {
+        if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS240?.getTienTrinh?.isTienTrinhSanSangThucThi() == true) {
+          await thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS240?.getTienTrinh?.onVoidCaiDatTienTrinhDangThucThi();
+          await Future.delayed(Duration.zero);
+          await onTaiTaiNguyenHinhAnhNgoaiHinhPartSS24(
+            thuocTinhHinhAnh: thuocTinhHinhAnh,
+            caiDatUuTienKichThuocRS100: false,
+            caiDatUuTienKichThuocRS050: true,
+            caiDatUuTienKichThuocRS025: false,
+            onThucThiHoanTat: () {
+              thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS240?.getTienTrinh?.onVoidCaiDatTienTrinhHoanTatThucThi();
+            },
+          );
+
+          // return;
+        }
+      }
+
+      if (thuocTinhHinhAnh?.getKichThuocRS025 == true || caiDatUuTienKichThuocRS025 == true) {
+        if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS240?.getTienTrinh?.isTienTrinhSanSangThucThi() == true) {
+          await thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS240?.getTienTrinh?.onVoidCaiDatTienTrinhDangThucThi();
+          await Future.delayed(Duration.zero);
+          await onTaiTaiNguyenHinhAnhNgoaiHinhPartSS24(
+            thuocTinhHinhAnh: thuocTinhHinhAnh,
+            caiDatUuTienKichThuocRS100: false,
+            caiDatUuTienKichThuocRS050: false,
+            caiDatUuTienKichThuocRS025: true,
+            onThucThiHoanTat: () {
+              thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS240?.getTienTrinh?.onVoidCaiDatTienTrinhHoanTatThucThi();
+            },
+          );
+
+          // return;
+        }
+      }
+    }
+
+    /// -----
+    /// TODO:
+    /// -----
+    if (tongSoPart >= 25) {
+      if (thuocTinhHinhAnh?.getKichThuocRS100 == true || caiDatUuTienKichThuocRS100 == true) {
+        if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS250?.getTienTrinh?.isTienTrinhSanSangThucThi() == true &&
+            thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS240?.getTienTrinh?.isTienTrinhHoanTatThucThi() == true) {
+          await thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS250?.getTienTrinh?.onVoidCaiDatTienTrinhDangThucThi();
+          await Future.delayed(Duration.zero);
+          await onTaiTaiNguyenHinhAnhNgoaiHinhPartSS25(
+            thuocTinhHinhAnh: thuocTinhHinhAnh,
+            caiDatUuTienKichThuocRS100: true,
+            caiDatUuTienKichThuocRS050: false,
+            caiDatUuTienKichThuocRS025: false,
+            onThucThiHoanTat: () {
+              thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS250?.getTienTrinh?.onVoidCaiDatTienTrinhHoanTatThucThi();
+            },
+          );
+
+          // return;
+        }
+      }
+
+      if (thuocTinhHinhAnh?.getKichThuocRS050 == true || caiDatUuTienKichThuocRS050 == true) {
+        if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS250?.getTienTrinh?.isTienTrinhSanSangThucThi() == true) {
+          await thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS250?.getTienTrinh?.onVoidCaiDatTienTrinhDangThucThi();
+          await Future.delayed(Duration.zero);
+          await onTaiTaiNguyenHinhAnhNgoaiHinhPartSS25(
+            thuocTinhHinhAnh: thuocTinhHinhAnh,
+            caiDatUuTienKichThuocRS100: false,
+            caiDatUuTienKichThuocRS050: true,
+            caiDatUuTienKichThuocRS025: false,
+            onThucThiHoanTat: () {
+              thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS250?.getTienTrinh?.onVoidCaiDatTienTrinhHoanTatThucThi();
+            },
+          );
+
+          // return;
+        }
+      }
+
+      if (thuocTinhHinhAnh?.getKichThuocRS025 == true || caiDatUuTienKichThuocRS025 == true) {
+        if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS250?.getTienTrinh?.isTienTrinhSanSangThucThi() == true) {
+          await thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS250?.getTienTrinh?.onVoidCaiDatTienTrinhDangThucThi();
+          await Future.delayed(Duration.zero);
+          await onTaiTaiNguyenHinhAnhNgoaiHinhPartSS25(
+            thuocTinhHinhAnh: thuocTinhHinhAnh,
+            caiDatUuTienKichThuocRS100: false,
+            caiDatUuTienKichThuocRS050: false,
+            caiDatUuTienKichThuocRS025: true,
+            onThucThiHoanTat: () {
+              thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS250?.getTienTrinh?.onVoidCaiDatTienTrinhHoanTatThucThi();
+            },
+          );
+
+          // return;
+        }
+      }
+    }
+
+    /// -----
+    /// TODO:
+    /// -----
+
+    /// -----
+    /// TODO:
+    /// -----
+    if (tongSoPart >= 1 && _ngoaiHinhFramePartSS01?.isEmpty == true) {
+      if (thuocTinhHinhAnh?.getKichThuocRS100 == true || caiDatUuTienKichThuocRS100 == true) {
+        if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS010?.getTienTrinh?.isTienTrinhHoanTatThucThi() == true) {
+          if (thuocTinhHinhAnh?.getKichThuocRS100 == true) {
+            _ngoaiHinhFramePartSS01 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS010?.getSpriteAnimation?.frames ?? [];
+
+            if (_ngoaiHinhFramePartSS01?.isNotEmpty == true) {
+              _ngoaiHinhFrames?.addAll(List.from(_ngoaiHinhFramePartSS01 ?? []));
+            }
+          }
+        }
+      }
+      if (thuocTinhHinhAnh?.getKichThuocRS050 == true || caiDatUuTienKichThuocRS050 == true) {
+        if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS010?.getTienTrinh?.isTienTrinhHoanTatThucThi() == true) {
+          if (thuocTinhHinhAnh?.getKichThuocRS050 == true) {
+            _ngoaiHinhFramePartSS01 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS010?.getSpriteAnimation?.frames ?? [];
+
+            if (_ngoaiHinhFramePartSS01?.isNotEmpty == true) {
+              _ngoaiHinhFrames?.addAll(List.from(_ngoaiHinhFramePartSS01 ?? []));
+            }
+          }
+        }
+      }
+      if (thuocTinhHinhAnh?.getKichThuocRS025 == true || caiDatUuTienKichThuocRS025 == true) {
+        if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS010?.getTienTrinh?.isTienTrinhHoanTatThucThi() == true) {
+          if (thuocTinhHinhAnh?.getKichThuocRS025 == true) {
+            _ngoaiHinhFramePartSS01 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS010?.getSpriteAnimation?.frames ?? [];
+
+            if (_ngoaiHinhFramePartSS01?.isNotEmpty == true) {
+              _ngoaiHinhFrames?.addAll(List.from(_ngoaiHinhFramePartSS01 ?? []));
+            }
+          }
+        }
+      }
+    }
+
+    /// -----
+    /// TODO:
+    /// -----
+    if (tongSoPart >= 2 && _ngoaiHinhFramePartSS02?.isEmpty == true) {
+      if (thuocTinhHinhAnh?.getKichThuocRS100 == true || caiDatUuTienKichThuocRS100 == true) {
+        if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS020?.getTienTrinh?.isTienTrinhHoanTatThucThi() == true) {
+          if (thuocTinhHinhAnh?.getKichThuocRS100 == true) {
+            _ngoaiHinhFramePartSS02 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS020?.getSpriteAnimation?.frames ?? [];
+
+            if (_ngoaiHinhFramePartSS02?.isNotEmpty == true) {
+              _ngoaiHinhFrames?.addAll(List.from(_ngoaiHinhFramePartSS02 ?? []));
+            }
+          }
+        }
+      }
+      if (thuocTinhHinhAnh?.getKichThuocRS050 == true || caiDatUuTienKichThuocRS050 == true) {
+        if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS020?.getTienTrinh?.isTienTrinhHoanTatThucThi() == true) {
+          if (thuocTinhHinhAnh?.getKichThuocRS050 == true) {
+            _ngoaiHinhFramePartSS02 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS020?.getSpriteAnimation?.frames ?? [];
+
+            if (_ngoaiHinhFramePartSS02?.isNotEmpty == true) {
+              _ngoaiHinhFrames?.addAll(List.from(_ngoaiHinhFramePartSS02 ?? []));
+            }
+          }
+        }
+      }
+      if (thuocTinhHinhAnh?.getKichThuocRS025 == true || caiDatUuTienKichThuocRS025 == true) {
+        if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS020?.getTienTrinh?.isTienTrinhHoanTatThucThi() == true) {
+          if (thuocTinhHinhAnh?.getKichThuocRS025 == true) {
+            _ngoaiHinhFramePartSS02 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS020?.getSpriteAnimation?.frames ?? [];
+
+            if (_ngoaiHinhFramePartSS02?.isNotEmpty == true) {
+              _ngoaiHinhFrames?.addAll(List.from(_ngoaiHinhFramePartSS02 ?? []));
+            }
+          }
+        }
+      }
+    }
+
+    /// -----
+    /// TODO:
+    /// -----
+    if (tongSoPart >= 3 && _ngoaiHinhFramePartSS03?.isEmpty == true) {
+      if (thuocTinhHinhAnh?.getKichThuocRS100 == true || caiDatUuTienKichThuocRS100 == true) {
+        if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS030?.getTienTrinh?.isTienTrinhHoanTatThucThi() == true) {
+          if (thuocTinhHinhAnh?.getKichThuocRS100 == true) {
+            _ngoaiHinhFramePartSS03 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS030?.getSpriteAnimation?.frames ?? [];
+
+            if (_ngoaiHinhFramePartSS03?.isNotEmpty == true) {
+              _ngoaiHinhFrames?.addAll(List.from(_ngoaiHinhFramePartSS03 ?? []));
+            }
+          }
+        }
+      }
+      if (thuocTinhHinhAnh?.getKichThuocRS050 == true || caiDatUuTienKichThuocRS050 == true) {
+        if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS030?.getTienTrinh?.isTienTrinhHoanTatThucThi() == true) {
+          if (thuocTinhHinhAnh?.getKichThuocRS050 == true) {
+            _ngoaiHinhFramePartSS03 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS030?.getSpriteAnimation?.frames ?? [];
+
+            if (_ngoaiHinhFramePartSS03?.isNotEmpty == true) {
+              _ngoaiHinhFrames?.addAll(List.from(_ngoaiHinhFramePartSS03 ?? []));
+            }
+          }
+        }
+      }
+      if (thuocTinhHinhAnh?.getKichThuocRS025 == true || caiDatUuTienKichThuocRS025 == true) {
+        if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS030?.getTienTrinh?.isTienTrinhHoanTatThucThi() == true) {
+          if (thuocTinhHinhAnh?.getKichThuocRS025 == true) {
+            _ngoaiHinhFramePartSS03 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS030?.getSpriteAnimation?.frames ?? [];
+
+            if (_ngoaiHinhFramePartSS03?.isNotEmpty == true) {
+              _ngoaiHinhFrames?.addAll(List.from(_ngoaiHinhFramePartSS03 ?? []));
+            }
+          }
+        }
+      }
+    }
+
+    /// -----
+    /// TODO:
+    /// -----
+    if (tongSoPart >= 4 && _ngoaiHinhFramePartSS04?.isEmpty == true) {
+      if (thuocTinhHinhAnh?.getKichThuocRS100 == true || caiDatUuTienKichThuocRS100 == true) {
+        if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS040?.getTienTrinh?.isTienTrinhHoanTatThucThi() == true) {
+          if (thuocTinhHinhAnh?.getKichThuocRS100 == true) {
+            _ngoaiHinhFramePartSS04 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS040?.getSpriteAnimation?.frames ?? [];
+
+            if (_ngoaiHinhFramePartSS04?.isNotEmpty == true) {
+              _ngoaiHinhFrames?.addAll(List.from(_ngoaiHinhFramePartSS04 ?? []));
+            }
+          }
+        }
+      }
+      if (thuocTinhHinhAnh?.getKichThuocRS050 == true || caiDatUuTienKichThuocRS050 == true) {
+        if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS040?.getTienTrinh?.isTienTrinhHoanTatThucThi() == true) {
+          if (thuocTinhHinhAnh?.getKichThuocRS050 == true) {
+            _ngoaiHinhFramePartSS04 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS040?.getSpriteAnimation?.frames ?? [];
+
+            if (_ngoaiHinhFramePartSS04?.isNotEmpty == true) {
+              _ngoaiHinhFrames?.addAll(List.from(_ngoaiHinhFramePartSS04 ?? []));
+            }
+          }
+        }
+      }
+      if (thuocTinhHinhAnh?.getKichThuocRS025 == true || caiDatUuTienKichThuocRS025 == true) {
+        if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS040?.getTienTrinh?.isTienTrinhHoanTatThucThi() == true) {
+          if (thuocTinhHinhAnh?.getKichThuocRS025 == true) {
+            _ngoaiHinhFramePartSS04 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS040?.getSpriteAnimation?.frames ?? [];
+
+            if (_ngoaiHinhFramePartSS04?.isNotEmpty == true) {
+              _ngoaiHinhFrames?.addAll(List.from(_ngoaiHinhFramePartSS04 ?? []));
+            }
+          }
+        }
+      }
+    }
+
+    /// -----
+    /// TODO:
+    /// -----
+    if (tongSoPart >= 5 && _ngoaiHinhFramePartSS05?.isEmpty == true) {
+      if (thuocTinhHinhAnh?.getKichThuocRS100 == true || caiDatUuTienKichThuocRS100 == true) {
+        if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS050?.getTienTrinh?.isTienTrinhHoanTatThucThi() == true) {
+          if (thuocTinhHinhAnh?.getKichThuocRS100 == true) {
+            _ngoaiHinhFramePartSS05 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS050?.getSpriteAnimation?.frames ?? [];
+
+            if (_ngoaiHinhFramePartSS05?.isNotEmpty == true) {
+              _ngoaiHinhFrames?.addAll(List.from(_ngoaiHinhFramePartSS05 ?? []));
+            }
+          }
+        }
+      }
+      if (thuocTinhHinhAnh?.getKichThuocRS050 == true || caiDatUuTienKichThuocRS050 == true) {
+        if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS050?.getTienTrinh?.isTienTrinhHoanTatThucThi() == true) {
+          if (thuocTinhHinhAnh?.getKichThuocRS050 == true) {
+            _ngoaiHinhFramePartSS05 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS050?.getSpriteAnimation?.frames ?? [];
+
+            if (_ngoaiHinhFramePartSS05?.isNotEmpty == true) {
+              _ngoaiHinhFrames?.addAll(List.from(_ngoaiHinhFramePartSS05 ?? []));
+            }
+          }
+        }
+      }
+      if (thuocTinhHinhAnh?.getKichThuocRS025 == true || caiDatUuTienKichThuocRS025 == true) {
+        if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS050?.getTienTrinh?.isTienTrinhHoanTatThucThi() == true) {
+          if (thuocTinhHinhAnh?.getKichThuocRS025 == true) {
+            _ngoaiHinhFramePartSS05 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS050?.getSpriteAnimation?.frames ?? [];
+
+            if (_ngoaiHinhFramePartSS05?.isNotEmpty == true) {
+              _ngoaiHinhFrames?.addAll(List.from(_ngoaiHinhFramePartSS05 ?? []));
+            }
+          }
+        }
+      }
+    }
+
+    /// -----
+    /// TODO:
+    /// -----
+    if (tongSoPart >= 6 && _ngoaiHinhFramePartSS06?.isEmpty == true) {
+      if (thuocTinhHinhAnh?.getKichThuocRS100 == true || caiDatUuTienKichThuocRS100 == true) {
+        if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS060?.getTienTrinh?.isTienTrinhHoanTatThucThi() == true) {
+          if (thuocTinhHinhAnh?.getKichThuocRS100 == true) {
+            _ngoaiHinhFramePartSS06 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS060?.getSpriteAnimation?.frames ?? [];
+
+            if (_ngoaiHinhFramePartSS06?.isNotEmpty == true) {
+              _ngoaiHinhFrames?.addAll(List.from(_ngoaiHinhFramePartSS06 ?? []));
+            }
+          }
+        }
+      }
+      if (thuocTinhHinhAnh?.getKichThuocRS050 == true || caiDatUuTienKichThuocRS050 == true) {
+        if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS060?.getTienTrinh?.isTienTrinhHoanTatThucThi() == true) {
+          if (thuocTinhHinhAnh?.getKichThuocRS050 == true) {
+            _ngoaiHinhFramePartSS06 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS060?.getSpriteAnimation?.frames ?? [];
+
+            if (_ngoaiHinhFramePartSS06?.isNotEmpty == true) {
+              _ngoaiHinhFrames?.addAll(List.from(_ngoaiHinhFramePartSS06 ?? []));
+            }
+          }
+        }
+      }
+      if (thuocTinhHinhAnh?.getKichThuocRS025 == true || caiDatUuTienKichThuocRS025 == true) {
+        if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS060?.getTienTrinh?.isTienTrinhHoanTatThucThi() == true) {
+          if (thuocTinhHinhAnh?.getKichThuocRS025 == true) {
+            _ngoaiHinhFramePartSS06 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS060?.getSpriteAnimation?.frames ?? [];
+
+            if (_ngoaiHinhFramePartSS06?.isNotEmpty == true) {
+              _ngoaiHinhFrames?.addAll(List.from(_ngoaiHinhFramePartSS06 ?? []));
+            }
+          }
+        }
+      }
+    }
+
+    /// -----
+    /// TODO:
+    /// -----
+    if (tongSoPart >= 7 && _ngoaiHinhFramePartSS07?.isEmpty == true) {
+      if (thuocTinhHinhAnh?.getKichThuocRS100 == true || caiDatUuTienKichThuocRS100 == true) {
+        if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS070?.getTienTrinh?.isTienTrinhHoanTatThucThi() == true) {
+          if (thuocTinhHinhAnh?.getKichThuocRS100 == true) {
+            _ngoaiHinhFramePartSS07 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS070?.getSpriteAnimation?.frames ?? [];
+
+            if (_ngoaiHinhFramePartSS07?.isNotEmpty == true) {
+              _ngoaiHinhFrames?.addAll(List.from(_ngoaiHinhFramePartSS07 ?? []));
+            }
+          }
+        }
+      }
+      if (thuocTinhHinhAnh?.getKichThuocRS050 == true || caiDatUuTienKichThuocRS050 == true) {
+        if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS070?.getTienTrinh?.isTienTrinhHoanTatThucThi() == true) {
+          if (thuocTinhHinhAnh?.getKichThuocRS050 == true) {
+            _ngoaiHinhFramePartSS07 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS070?.getSpriteAnimation?.frames ?? [];
+
+            if (_ngoaiHinhFramePartSS07?.isNotEmpty == true) {
+              _ngoaiHinhFrames?.addAll(List.from(_ngoaiHinhFramePartSS07 ?? []));
+            }
+          }
+        }
+      }
+      if (thuocTinhHinhAnh?.getKichThuocRS025 == true || caiDatUuTienKichThuocRS025 == true) {
+        if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS070?.getTienTrinh?.isTienTrinhHoanTatThucThi() == true) {
+          if (thuocTinhHinhAnh?.getKichThuocRS025 == true) {
+            _ngoaiHinhFramePartSS07 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS070?.getSpriteAnimation?.frames ?? [];
+
+            if (_ngoaiHinhFramePartSS07?.isNotEmpty == true) {
+              _ngoaiHinhFrames?.addAll(List.from(_ngoaiHinhFramePartSS07 ?? []));
+            }
+          }
+        }
+      }
+    }
+
+    /// -----
+    /// TODO:
+    /// -----
+    if (tongSoPart >= 8 && _ngoaiHinhFramePartSS08?.isEmpty == true) {
+      if (thuocTinhHinhAnh?.getKichThuocRS100 == true || caiDatUuTienKichThuocRS100 == true) {
+        if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS080?.getTienTrinh?.isTienTrinhHoanTatThucThi() == true) {
+          if (thuocTinhHinhAnh?.getKichThuocRS100 == true) {
+            _ngoaiHinhFramePartSS08 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS080?.getSpriteAnimation?.frames ?? [];
+
+            if (_ngoaiHinhFramePartSS08?.isNotEmpty == true) {
+              _ngoaiHinhFrames?.addAll(List.from(_ngoaiHinhFramePartSS08 ?? []));
+            }
+          }
+        }
+      }
+      if (thuocTinhHinhAnh?.getKichThuocRS050 == true || caiDatUuTienKichThuocRS050 == true) {
+        if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS080?.getTienTrinh?.isTienTrinhHoanTatThucThi() == true) {
+          if (thuocTinhHinhAnh?.getKichThuocRS050 == true) {
+            _ngoaiHinhFramePartSS08 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS080?.getSpriteAnimation?.frames ?? [];
+
+            if (_ngoaiHinhFramePartSS08?.isNotEmpty == true) {
+              _ngoaiHinhFrames?.addAll(List.from(_ngoaiHinhFramePartSS08 ?? []));
+            }
+          }
+        }
+      }
+      if (thuocTinhHinhAnh?.getKichThuocRS025 == true || caiDatUuTienKichThuocRS025 == true) {
+        if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS080?.getTienTrinh?.isTienTrinhHoanTatThucThi() == true) {
+          if (thuocTinhHinhAnh?.getKichThuocRS025 == true) {
+            _ngoaiHinhFramePartSS08 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS080?.getSpriteAnimation?.frames ?? [];
+
+            if (_ngoaiHinhFramePartSS08?.isNotEmpty == true) {
+              _ngoaiHinhFrames?.addAll(List.from(_ngoaiHinhFramePartSS08 ?? []));
+            }
+          }
+        }
+      }
+    }
+
+    /// -----
+    /// TODO:
+    /// -----
+    if (tongSoPart >= 9 && _ngoaiHinhFramePartSS09?.isEmpty == true) {
+      if (thuocTinhHinhAnh?.getKichThuocRS100 == true || caiDatUuTienKichThuocRS100 == true) {
+        if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS090?.getTienTrinh?.isTienTrinhHoanTatThucThi() == true) {
+          if (thuocTinhHinhAnh?.getKichThuocRS100 == true) {
+            _ngoaiHinhFramePartSS09 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS090?.getSpriteAnimation?.frames ?? [];
+
+            if (_ngoaiHinhFramePartSS09?.isNotEmpty == true) {
+              _ngoaiHinhFrames?.addAll(List.from(_ngoaiHinhFramePartSS09 ?? []));
+            }
+          }
+        }
+      }
+      if (thuocTinhHinhAnh?.getKichThuocRS050 == true || caiDatUuTienKichThuocRS050 == true) {
+        if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS090?.getTienTrinh?.isTienTrinhHoanTatThucThi() == true) {
+          if (thuocTinhHinhAnh?.getKichThuocRS050 == true) {
+            _ngoaiHinhFramePartSS09 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS090?.getSpriteAnimation?.frames ?? [];
+
+            if (_ngoaiHinhFramePartSS09?.isNotEmpty == true) {
+              _ngoaiHinhFrames?.addAll(List.from(_ngoaiHinhFramePartSS09 ?? []));
+            }
+          }
+        }
+      }
+      if (thuocTinhHinhAnh?.getKichThuocRS025 == true || caiDatUuTienKichThuocRS025 == true) {
+        if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS090?.getTienTrinh?.isTienTrinhHoanTatThucThi() == true) {
+          if (thuocTinhHinhAnh?.getKichThuocRS025 == true) {
+            _ngoaiHinhFramePartSS09 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS090?.getSpriteAnimation?.frames ?? [];
+
+            if (_ngoaiHinhFramePartSS09?.isNotEmpty == true) {
+              _ngoaiHinhFrames?.addAll(List.from(_ngoaiHinhFramePartSS09 ?? []));
+            }
+          }
+        }
+      }
+    }
+
+    /// -----
+    /// TODO:
+    /// -----
+    if (tongSoPart >= 10 && _ngoaiHinhFramePartSS10?.isEmpty == true) {
+      if (thuocTinhHinhAnh?.getKichThuocRS100 == true || caiDatUuTienKichThuocRS100 == true) {
+        if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS100?.getTienTrinh?.isTienTrinhHoanTatThucThi() == true) {
+          if (thuocTinhHinhAnh?.getKichThuocRS100 == true) {
+            _ngoaiHinhFramePartSS10 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS100?.getSpriteAnimation?.frames ?? [];
+
+            if (_ngoaiHinhFramePartSS10?.isNotEmpty == true) {
+              _ngoaiHinhFrames?.addAll(List.from(_ngoaiHinhFramePartSS10 ?? []));
+            }
+          }
+        }
+      }
+      if (thuocTinhHinhAnh?.getKichThuocRS050 == true || caiDatUuTienKichThuocRS050 == true) {
+        if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS100?.getTienTrinh?.isTienTrinhHoanTatThucThi() == true) {
+          if (thuocTinhHinhAnh?.getKichThuocRS050 == true) {
+            _ngoaiHinhFramePartSS10 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS100?.getSpriteAnimation?.frames ?? [];
+
+            if (_ngoaiHinhFramePartSS10?.isNotEmpty == true) {
+              _ngoaiHinhFrames?.addAll(List.from(_ngoaiHinhFramePartSS10 ?? []));
+            }
+          }
+        }
+      }
+      if (thuocTinhHinhAnh?.getKichThuocRS025 == true || caiDatUuTienKichThuocRS025 == true) {
+        if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS100?.getTienTrinh?.isTienTrinhHoanTatThucThi() == true) {
+          if (thuocTinhHinhAnh?.getKichThuocRS025 == true) {
+            _ngoaiHinhFramePartSS10 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS100?.getSpriteAnimation?.frames ?? [];
+
+            if (_ngoaiHinhFramePartSS10?.isNotEmpty == true) {
+              _ngoaiHinhFrames?.addAll(List.from(_ngoaiHinhFramePartSS10 ?? []));
+            }
+          }
+        }
+      }
+    }
+
+    /// -----
+    /// TODO:
+    /// -----
+    if (tongSoPart >= 11 && _ngoaiHinhFramePartSS11?.isEmpty == true) {
+      if (thuocTinhHinhAnh?.getKichThuocRS100 == true || caiDatUuTienKichThuocRS100 == true) {
+        if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS110?.getTienTrinh?.isTienTrinhHoanTatThucThi() == true) {
+          if (thuocTinhHinhAnh?.getKichThuocRS100 == true) {
+            _ngoaiHinhFramePartSS11 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS110?.getSpriteAnimation?.frames ?? [];
+
+            if (_ngoaiHinhFramePartSS11?.isNotEmpty == true) {
+              _ngoaiHinhFrames?.addAll(List.from(_ngoaiHinhFramePartSS11 ?? []));
+            }
+          }
+        }
+      }
+      if (thuocTinhHinhAnh?.getKichThuocRS050 == true || caiDatUuTienKichThuocRS050 == true) {
+        if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS110?.getTienTrinh?.isTienTrinhHoanTatThucThi() == true) {
+          if (thuocTinhHinhAnh?.getKichThuocRS050 == true) {
+            _ngoaiHinhFramePartSS11 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS110?.getSpriteAnimation?.frames ?? [];
+
+            if (_ngoaiHinhFramePartSS11?.isNotEmpty == true) {
+              _ngoaiHinhFrames?.addAll(List.from(_ngoaiHinhFramePartSS11 ?? []));
+            }
+          }
+        }
+      }
+      if (thuocTinhHinhAnh?.getKichThuocRS025 == true || caiDatUuTienKichThuocRS025 == true) {
+        if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS110?.getTienTrinh?.isTienTrinhHoanTatThucThi() == true) {
+          if (thuocTinhHinhAnh?.getKichThuocRS025 == true) {
+            _ngoaiHinhFramePartSS11 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS110?.getSpriteAnimation?.frames ?? [];
+
+            if (_ngoaiHinhFramePartSS11?.isNotEmpty == true) {
+              _ngoaiHinhFrames?.addAll(List.from(_ngoaiHinhFramePartSS11 ?? []));
+            }
+          }
+        }
+      }
+    }
+
+    /// -----
+    /// TODO:
+    /// -----
+    if (tongSoPart >= 12 && _ngoaiHinhFramePartSS12?.isEmpty == true) {
+      if (thuocTinhHinhAnh?.getKichThuocRS100 == true || caiDatUuTienKichThuocRS100 == true) {
+        if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS120?.getTienTrinh?.isTienTrinhHoanTatThucThi() == true) {
+          if (thuocTinhHinhAnh?.getKichThuocRS100 == true) {
+            _ngoaiHinhFramePartSS12 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS120?.getSpriteAnimation?.frames ?? [];
+
+            if (_ngoaiHinhFramePartSS12?.isNotEmpty == true) {
+              _ngoaiHinhFrames?.addAll(List.from(_ngoaiHinhFramePartSS12 ?? []));
+            }
+          }
+        }
+      }
+      if (thuocTinhHinhAnh?.getKichThuocRS050 == true || caiDatUuTienKichThuocRS050 == true) {
+        if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS120?.getTienTrinh?.isTienTrinhHoanTatThucThi() == true) {
+          if (thuocTinhHinhAnh?.getKichThuocRS050 == true) {
+            _ngoaiHinhFramePartSS12 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS120?.getSpriteAnimation?.frames ?? [];
+
+            if (_ngoaiHinhFramePartSS12?.isNotEmpty == true) {
+              _ngoaiHinhFrames?.addAll(List.from(_ngoaiHinhFramePartSS12 ?? []));
+            }
+          }
+        }
+      }
+      if (thuocTinhHinhAnh?.getKichThuocRS025 == true || caiDatUuTienKichThuocRS025 == true) {
+        if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS120?.getTienTrinh?.isTienTrinhHoanTatThucThi() == true) {
+          if (thuocTinhHinhAnh?.getKichThuocRS025 == true) {
+            _ngoaiHinhFramePartSS12 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS120?.getSpriteAnimation?.frames ?? [];
+
+            if (_ngoaiHinhFramePartSS12?.isNotEmpty == true) {
+              _ngoaiHinhFrames?.addAll(List.from(_ngoaiHinhFramePartSS12 ?? []));
+            }
+          }
+        }
+      }
+    }
+
+    /// -----
+    /// TODO:
+    /// -----
+    if (tongSoPart >= 13 && _ngoaiHinhFramePartSS13?.isEmpty == true) {
+      if (thuocTinhHinhAnh?.getKichThuocRS100 == true || caiDatUuTienKichThuocRS100 == true) {
+        if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS130?.getTienTrinh?.isTienTrinhHoanTatThucThi() == true) {
+          if (thuocTinhHinhAnh?.getKichThuocRS100 == true) {
+            _ngoaiHinhFramePartSS13 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS130?.getSpriteAnimation?.frames ?? [];
+
+            if (_ngoaiHinhFramePartSS13?.isNotEmpty == true) {
+              _ngoaiHinhFrames?.addAll(List.from(_ngoaiHinhFramePartSS13 ?? []));
+            }
+          }
+        }
+      }
+      if (thuocTinhHinhAnh?.getKichThuocRS050 == true || caiDatUuTienKichThuocRS050 == true) {
+        if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS130?.getTienTrinh?.isTienTrinhHoanTatThucThi() == true) {
+          if (thuocTinhHinhAnh?.getKichThuocRS050 == true) {
+            _ngoaiHinhFramePartSS13 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS130?.getSpriteAnimation?.frames ?? [];
+
+            if (_ngoaiHinhFramePartSS13?.isNotEmpty == true) {
+              _ngoaiHinhFrames?.addAll(List.from(_ngoaiHinhFramePartSS13 ?? []));
+            }
+          }
+        }
+      }
+      if (thuocTinhHinhAnh?.getKichThuocRS025 == true || caiDatUuTienKichThuocRS025 == true) {
+        if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS130?.getTienTrinh?.isTienTrinhHoanTatThucThi() == true) {
+          if (thuocTinhHinhAnh?.getKichThuocRS025 == true) {
+            _ngoaiHinhFramePartSS13 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS130?.getSpriteAnimation?.frames ?? [];
+
+            if (_ngoaiHinhFramePartSS13?.isNotEmpty == true) {
+              _ngoaiHinhFrames?.addAll(List.from(_ngoaiHinhFramePartSS13 ?? []));
+            }
+          }
+        }
+      }
+    }
+
+    /// -----
+    /// TODO:
+    /// -----
+    if (tongSoPart >= 14 && _ngoaiHinhFramePartSS14?.isEmpty == true) {
+      if (thuocTinhHinhAnh?.getKichThuocRS100 == true || caiDatUuTienKichThuocRS100 == true) {
+        if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS140?.getTienTrinh?.isTienTrinhHoanTatThucThi() == true) {
+          if (thuocTinhHinhAnh?.getKichThuocRS100 == true) {
+            _ngoaiHinhFramePartSS14 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS140?.getSpriteAnimation?.frames ?? [];
+
+            if (_ngoaiHinhFramePartSS14?.isNotEmpty == true) {
+              _ngoaiHinhFrames?.addAll(List.from(_ngoaiHinhFramePartSS14 ?? []));
+            }
+          }
+        }
+      }
+      if (thuocTinhHinhAnh?.getKichThuocRS050 == true || caiDatUuTienKichThuocRS050 == true) {
+        if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS140?.getTienTrinh?.isTienTrinhHoanTatThucThi() == true) {
+          if (thuocTinhHinhAnh?.getKichThuocRS050 == true) {
+            _ngoaiHinhFramePartSS14 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS140?.getSpriteAnimation?.frames ?? [];
+
+            if (_ngoaiHinhFramePartSS14?.isNotEmpty == true) {
+              _ngoaiHinhFrames?.addAll(List.from(_ngoaiHinhFramePartSS14 ?? []));
+            }
+          }
+        }
+      }
+      if (thuocTinhHinhAnh?.getKichThuocRS025 == true || caiDatUuTienKichThuocRS025 == true) {
+        if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS140?.getTienTrinh?.isTienTrinhHoanTatThucThi() == true) {
+          if (thuocTinhHinhAnh?.getKichThuocRS025 == true) {
+            _ngoaiHinhFramePartSS14 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS140?.getSpriteAnimation?.frames ?? [];
+
+            if (_ngoaiHinhFramePartSS14?.isNotEmpty == true) {
+              _ngoaiHinhFrames?.addAll(List.from(_ngoaiHinhFramePartSS14 ?? []));
+            }
+          }
+        }
+      }
+    }
+
+    /// -----
+    /// TODO:
+    /// -----
+    if (tongSoPart >= 15 && _ngoaiHinhFramePartSS15?.isEmpty == true) {
+      if (thuocTinhHinhAnh?.getKichThuocRS100 == true || caiDatUuTienKichThuocRS100 == true) {
+        if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS150?.getTienTrinh?.isTienTrinhHoanTatThucThi() == true) {
+          if (thuocTinhHinhAnh?.getKichThuocRS100 == true) {
+            _ngoaiHinhFramePartSS15 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS150?.getSpriteAnimation?.frames ?? [];
+
+            if (_ngoaiHinhFramePartSS15?.isNotEmpty == true) {
+              _ngoaiHinhFrames?.addAll(List.from(_ngoaiHinhFramePartSS15 ?? []));
+            }
+          }
+        }
+      }
+      if (thuocTinhHinhAnh?.getKichThuocRS050 == true || caiDatUuTienKichThuocRS050 == true) {
+        if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS150?.getTienTrinh?.isTienTrinhHoanTatThucThi() == true) {
+          if (thuocTinhHinhAnh?.getKichThuocRS050 == true) {
+            _ngoaiHinhFramePartSS15 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS150?.getSpriteAnimation?.frames ?? [];
+
+            if (_ngoaiHinhFramePartSS15?.isNotEmpty == true) {
+              _ngoaiHinhFrames?.addAll(List.from(_ngoaiHinhFramePartSS15 ?? []));
+            }
+          }
+        }
+      }
+      if (thuocTinhHinhAnh?.getKichThuocRS025 == true || caiDatUuTienKichThuocRS025 == true) {
+        if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS150?.getTienTrinh?.isTienTrinhHoanTatThucThi() == true) {
+          if (thuocTinhHinhAnh?.getKichThuocRS025 == true) {
+            _ngoaiHinhFramePartSS15 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS150?.getSpriteAnimation?.frames ?? [];
+
+            if (_ngoaiHinhFramePartSS15?.isNotEmpty == true) {
+              _ngoaiHinhFrames?.addAll(List.from(_ngoaiHinhFramePartSS15 ?? []));
+            }
+          }
+        }
+      }
+    }
+
+    /// -----
+    /// TODO:
+    /// -----
+    if (tongSoPart >= 16 && _ngoaiHinhFramePartSS16?.isEmpty == true) {
+      if (thuocTinhHinhAnh?.getKichThuocRS100 == true || caiDatUuTienKichThuocRS100 == true) {
+        if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS160?.getTienTrinh?.isTienTrinhHoanTatThucThi() == true) {
+          if (thuocTinhHinhAnh?.getKichThuocRS100 == true) {
+            _ngoaiHinhFramePartSS16 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS160?.getSpriteAnimation?.frames ?? [];
+
+            if (_ngoaiHinhFramePartSS16?.isNotEmpty == true) {
+              _ngoaiHinhFrames?.addAll(List.from(_ngoaiHinhFramePartSS16 ?? []));
+            }
+          }
+        }
+      }
+      if (thuocTinhHinhAnh?.getKichThuocRS050 == true || caiDatUuTienKichThuocRS050 == true) {
+        if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS160?.getTienTrinh?.isTienTrinhHoanTatThucThi() == true) {
+          if (thuocTinhHinhAnh?.getKichThuocRS050 == true) {
+            _ngoaiHinhFramePartSS16 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS160?.getSpriteAnimation?.frames ?? [];
+
+            if (_ngoaiHinhFramePartSS16?.isNotEmpty == true) {
+              _ngoaiHinhFrames?.addAll(List.from(_ngoaiHinhFramePartSS16 ?? []));
+            }
+          }
+        }
+      }
+      if (thuocTinhHinhAnh?.getKichThuocRS025 == true || caiDatUuTienKichThuocRS025 == true) {
+        if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS160?.getTienTrinh?.isTienTrinhHoanTatThucThi() == true) {
+          if (thuocTinhHinhAnh?.getKichThuocRS025 == true) {
+            _ngoaiHinhFramePartSS16 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS160?.getSpriteAnimation?.frames ?? [];
+
+            if (_ngoaiHinhFramePartSS16?.isNotEmpty == true) {
+              _ngoaiHinhFrames?.addAll(List.from(_ngoaiHinhFramePartSS16 ?? []));
+            }
+          }
+        }
+      }
+    }
+
+    /// -----
+    /// TODO:
+    /// -----
+    if (tongSoPart >= 17 && _ngoaiHinhFramePartSS17?.isEmpty == true) {
+      if (thuocTinhHinhAnh?.getKichThuocRS100 == true || caiDatUuTienKichThuocRS100 == true) {
+        if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS170?.getTienTrinh?.isTienTrinhHoanTatThucThi() == true) {
+          if (thuocTinhHinhAnh?.getKichThuocRS100 == true) {
+            _ngoaiHinhFramePartSS17 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS170?.getSpriteAnimation?.frames ?? [];
+
+            if (_ngoaiHinhFramePartSS17?.isNotEmpty == true) {
+              _ngoaiHinhFrames?.addAll(List.from(_ngoaiHinhFramePartSS17 ?? []));
+            }
+          }
+        }
+      }
+      if (thuocTinhHinhAnh?.getKichThuocRS050 == true || caiDatUuTienKichThuocRS050 == true) {
+        if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS170?.getTienTrinh?.isTienTrinhHoanTatThucThi() == true) {
+          if (thuocTinhHinhAnh?.getKichThuocRS050 == true) {
+            _ngoaiHinhFramePartSS17 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS170?.getSpriteAnimation?.frames ?? [];
+
+            if (_ngoaiHinhFramePartSS17?.isNotEmpty == true) {
+              _ngoaiHinhFrames?.addAll(List.from(_ngoaiHinhFramePartSS17 ?? []));
+            }
+          }
+        }
+      }
+      if (thuocTinhHinhAnh?.getKichThuocRS025 == true || caiDatUuTienKichThuocRS025 == true) {
+        if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS170?.getTienTrinh?.isTienTrinhHoanTatThucThi() == true) {
+          if (thuocTinhHinhAnh?.getKichThuocRS025 == true) {
+            _ngoaiHinhFramePartSS17 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS170?.getSpriteAnimation?.frames ?? [];
+
+            if (_ngoaiHinhFramePartSS17?.isNotEmpty == true) {
+              _ngoaiHinhFrames?.addAll(List.from(_ngoaiHinhFramePartSS17 ?? []));
+            }
+          }
+        }
+      }
+    }
+
+    /// -----
+    /// TODO:
+    /// -----
+    if (tongSoPart >= 18 && _ngoaiHinhFramePartSS18?.isEmpty == true) {
+      if (thuocTinhHinhAnh?.getKichThuocRS100 == true || caiDatUuTienKichThuocRS100 == true) {
+        if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS180?.getTienTrinh?.isTienTrinhHoanTatThucThi() == true) {
+          if (thuocTinhHinhAnh?.getKichThuocRS100 == true) {
+            _ngoaiHinhFramePartSS18 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS180?.getSpriteAnimation?.frames ?? [];
+
+            if (_ngoaiHinhFramePartSS18?.isNotEmpty == true) {
+              _ngoaiHinhFrames?.addAll(List.from(_ngoaiHinhFramePartSS18 ?? []));
+            }
+          }
+        }
+      }
+      if (thuocTinhHinhAnh?.getKichThuocRS050 == true || caiDatUuTienKichThuocRS050 == true) {
+        if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS180?.getTienTrinh?.isTienTrinhHoanTatThucThi() == true) {
+          if (thuocTinhHinhAnh?.getKichThuocRS050 == true) {
+            _ngoaiHinhFramePartSS18 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS180?.getSpriteAnimation?.frames ?? [];
+
+            if (_ngoaiHinhFramePartSS18?.isNotEmpty == true) {
+              _ngoaiHinhFrames?.addAll(List.from(_ngoaiHinhFramePartSS18 ?? []));
+            }
+          }
+        }
+      }
+      if (thuocTinhHinhAnh?.getKichThuocRS025 == true || caiDatUuTienKichThuocRS025 == true) {
+        if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS180?.getTienTrinh?.isTienTrinhHoanTatThucThi() == true) {
+          if (thuocTinhHinhAnh?.getKichThuocRS025 == true) {
+            _ngoaiHinhFramePartSS18 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS180?.getSpriteAnimation?.frames ?? [];
+
+            if (_ngoaiHinhFramePartSS18?.isNotEmpty == true) {
+              _ngoaiHinhFrames?.addAll(List.from(_ngoaiHinhFramePartSS18 ?? []));
+            }
+          }
+        }
+      }
+    }
+
+    /// -----
+    /// TODO:
+    /// -----
+    if (tongSoPart >= 19 && _ngoaiHinhFramePartSS19?.isEmpty == true) {
+      if (thuocTinhHinhAnh?.getKichThuocRS100 == true || caiDatUuTienKichThuocRS100 == true) {
+        if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS190?.getTienTrinh?.isTienTrinhHoanTatThucThi() == true) {
+          if (thuocTinhHinhAnh?.getKichThuocRS100 == true) {
+            _ngoaiHinhFramePartSS19 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS190?.getSpriteAnimation?.frames ?? [];
+
+            if (_ngoaiHinhFramePartSS19?.isNotEmpty == true) {
+              _ngoaiHinhFrames?.addAll(List.from(_ngoaiHinhFramePartSS19 ?? []));
+            }
+          }
+        }
+      }
+      if (thuocTinhHinhAnh?.getKichThuocRS050 == true || caiDatUuTienKichThuocRS050 == true) {
+        if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS190?.getTienTrinh?.isTienTrinhHoanTatThucThi() == true) {
+          if (thuocTinhHinhAnh?.getKichThuocRS050 == true) {
+            _ngoaiHinhFramePartSS19 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS190?.getSpriteAnimation?.frames ?? [];
+
+            if (_ngoaiHinhFramePartSS19?.isNotEmpty == true) {
+              _ngoaiHinhFrames?.addAll(List.from(_ngoaiHinhFramePartSS19 ?? []));
+            }
+          }
+        }
+      }
+      if (thuocTinhHinhAnh?.getKichThuocRS025 == true || caiDatUuTienKichThuocRS025 == true) {
+        if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS190?.getTienTrinh?.isTienTrinhHoanTatThucThi() == true) {
+          if (thuocTinhHinhAnh?.getKichThuocRS025 == true) {
+            _ngoaiHinhFramePartSS19 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS190?.getSpriteAnimation?.frames ?? [];
+
+            if (_ngoaiHinhFramePartSS19?.isNotEmpty == true) {
+              _ngoaiHinhFrames?.addAll(List.from(_ngoaiHinhFramePartSS19 ?? []));
+            }
+          }
+        }
+      }
+    }
+
+    /// -----
+    /// TODO:
+    /// -----
+    if (tongSoPart >= 20 && _ngoaiHinhFramePartSS20?.isEmpty == true) {
+      if (thuocTinhHinhAnh?.getKichThuocRS100 == true || caiDatUuTienKichThuocRS100 == true) {
+        if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS200?.getTienTrinh?.isTienTrinhHoanTatThucThi() == true) {
+          if (thuocTinhHinhAnh?.getKichThuocRS100 == true) {
+            _ngoaiHinhFramePartSS20 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS200?.getSpriteAnimation?.frames ?? [];
+
+            if (_ngoaiHinhFramePartSS20?.isNotEmpty == true) {
+              _ngoaiHinhFrames?.addAll(List.from(_ngoaiHinhFramePartSS20 ?? []));
+            }
+          }
+        }
+      }
+      if (thuocTinhHinhAnh?.getKichThuocRS050 == true || caiDatUuTienKichThuocRS050 == true) {
+        if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS200?.getTienTrinh?.isTienTrinhHoanTatThucThi() == true) {
+          if (thuocTinhHinhAnh?.getKichThuocRS050 == true) {
+            _ngoaiHinhFramePartSS20 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS200?.getSpriteAnimation?.frames ?? [];
+
+            if (_ngoaiHinhFramePartSS20?.isNotEmpty == true) {
+              _ngoaiHinhFrames?.addAll(List.from(_ngoaiHinhFramePartSS20 ?? []));
+            }
+          }
+        }
+      }
+      if (thuocTinhHinhAnh?.getKichThuocRS025 == true || caiDatUuTienKichThuocRS025 == true) {
+        if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS200?.getTienTrinh?.isTienTrinhHoanTatThucThi() == true) {
+          if (thuocTinhHinhAnh?.getKichThuocRS025 == true) {
+            _ngoaiHinhFramePartSS20 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS200?.getSpriteAnimation?.frames ?? [];
+
+            if (_ngoaiHinhFramePartSS20?.isNotEmpty == true) {
+              _ngoaiHinhFrames?.addAll(List.from(_ngoaiHinhFramePartSS20 ?? []));
+            }
+          }
+        }
+      }
+    }
+
+    /// -----
+    /// TODO:
+    /// -----
+    if (tongSoPart >= 21 && _ngoaiHinhFramePartSS21?.isEmpty == true) {
+      if (thuocTinhHinhAnh?.getKichThuocRS100 == true || caiDatUuTienKichThuocRS100 == true) {
+        if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS210?.getTienTrinh?.isTienTrinhHoanTatThucThi() == true) {
+          if (thuocTinhHinhAnh?.getKichThuocRS100 == true) {
+            _ngoaiHinhFramePartSS21 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS210?.getSpriteAnimation?.frames ?? [];
+
+            if (_ngoaiHinhFramePartSS21?.isNotEmpty == true) {
+              _ngoaiHinhFrames?.addAll(List.from(_ngoaiHinhFramePartSS21 ?? []));
+            }
+          }
+        }
+      }
+      if (thuocTinhHinhAnh?.getKichThuocRS050 == true || caiDatUuTienKichThuocRS050 == true) {
+        if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS210?.getTienTrinh?.isTienTrinhHoanTatThucThi() == true) {
+          if (thuocTinhHinhAnh?.getKichThuocRS050 == true) {
+            _ngoaiHinhFramePartSS21 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS210?.getSpriteAnimation?.frames ?? [];
+
+            if (_ngoaiHinhFramePartSS21?.isNotEmpty == true) {
+              _ngoaiHinhFrames?.addAll(List.from(_ngoaiHinhFramePartSS21 ?? []));
+            }
+          }
+        }
+      }
+      if (thuocTinhHinhAnh?.getKichThuocRS025 == true || caiDatUuTienKichThuocRS025 == true) {
+        if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS210?.getTienTrinh?.isTienTrinhHoanTatThucThi() == true) {
+          if (thuocTinhHinhAnh?.getKichThuocRS025 == true) {
+            _ngoaiHinhFramePartSS21 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS210?.getSpriteAnimation?.frames ?? [];
+
+            if (_ngoaiHinhFramePartSS21?.isNotEmpty == true) {
+              _ngoaiHinhFrames?.addAll(List.from(_ngoaiHinhFramePartSS21 ?? []));
+            }
+          }
+        }
+      }
+    }
+
+    /// -----
+    /// TODO:
+    /// -----
+    if (tongSoPart >= 22 && _ngoaiHinhFramePartSS22?.isEmpty == true) {
+      if (thuocTinhHinhAnh?.getKichThuocRS100 == true || caiDatUuTienKichThuocRS100 == true) {
+        if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS220?.getTienTrinh?.isTienTrinhHoanTatThucThi() == true) {
+          if (thuocTinhHinhAnh?.getKichThuocRS100 == true) {
+            _ngoaiHinhFramePartSS22 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS220?.getSpriteAnimation?.frames ?? [];
+
+            if (_ngoaiHinhFramePartSS22?.isNotEmpty == true) {
+              _ngoaiHinhFrames?.addAll(List.from(_ngoaiHinhFramePartSS22 ?? []));
+            }
+          }
+        }
+      }
+      if (thuocTinhHinhAnh?.getKichThuocRS050 == true || caiDatUuTienKichThuocRS050 == true) {
+        if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS220?.getTienTrinh?.isTienTrinhHoanTatThucThi() == true) {
+          if (thuocTinhHinhAnh?.getKichThuocRS050 == true) {
+            _ngoaiHinhFramePartSS22 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS220?.getSpriteAnimation?.frames ?? [];
+
+            if (_ngoaiHinhFramePartSS22?.isNotEmpty == true) {
+              _ngoaiHinhFrames?.addAll(List.from(_ngoaiHinhFramePartSS22 ?? []));
+            }
+          }
+        }
+      }
+      if (thuocTinhHinhAnh?.getKichThuocRS025 == true || caiDatUuTienKichThuocRS025 == true) {
+        if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS220?.getTienTrinh?.isTienTrinhHoanTatThucThi() == true) {
+          if (thuocTinhHinhAnh?.getKichThuocRS025 == true) {
+            _ngoaiHinhFramePartSS22 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS220?.getSpriteAnimation?.frames ?? [];
+
+            if (_ngoaiHinhFramePartSS22?.isNotEmpty == true) {
+              _ngoaiHinhFrames?.addAll(List.from(_ngoaiHinhFramePartSS22 ?? []));
+            }
+          }
+        }
+      }
+    }
+
+    /// -----
+    /// TODO:
+    /// -----
+    if (tongSoPart >= 23 && _ngoaiHinhFramePartSS23?.isEmpty == true) {
+      if (thuocTinhHinhAnh?.getKichThuocRS100 == true || caiDatUuTienKichThuocRS100 == true) {
+        if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS230?.getTienTrinh?.isTienTrinhHoanTatThucThi() == true) {
+          if (thuocTinhHinhAnh?.getKichThuocRS100 == true) {
+            _ngoaiHinhFramePartSS23 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS230?.getSpriteAnimation?.frames ?? [];
+
+            if (_ngoaiHinhFramePartSS23?.isNotEmpty == true) {
+              _ngoaiHinhFrames?.addAll(List.from(_ngoaiHinhFramePartSS23 ?? []));
+            }
+          }
+        }
+      }
+      if (thuocTinhHinhAnh?.getKichThuocRS050 == true || caiDatUuTienKichThuocRS050 == true) {
+        if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS230?.getTienTrinh?.isTienTrinhHoanTatThucThi() == true) {
+          if (thuocTinhHinhAnh?.getKichThuocRS050 == true) {
+            _ngoaiHinhFramePartSS23 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS230?.getSpriteAnimation?.frames ?? [];
+
+            if (_ngoaiHinhFramePartSS23?.isNotEmpty == true) {
+              _ngoaiHinhFrames?.addAll(List.from(_ngoaiHinhFramePartSS23 ?? []));
+            }
+          }
+        }
+      }
+      if (thuocTinhHinhAnh?.getKichThuocRS025 == true || caiDatUuTienKichThuocRS025 == true) {
+        if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS230?.getTienTrinh?.isTienTrinhHoanTatThucThi() == true) {
+          if (thuocTinhHinhAnh?.getKichThuocRS025 == true) {
+            _ngoaiHinhFramePartSS23 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS230?.getSpriteAnimation?.frames ?? [];
+
+            if (_ngoaiHinhFramePartSS23?.isNotEmpty == true) {
+              _ngoaiHinhFrames?.addAll(List.from(_ngoaiHinhFramePartSS23 ?? []));
+            }
+          }
+        }
+      }
+    }
+
+    /// -----
+    /// TODO:
+    /// -----
+    if (tongSoPart >= 24 && _ngoaiHinhFramePartSS24?.isEmpty == true) {
+      if (thuocTinhHinhAnh?.getKichThuocRS100 == true || caiDatUuTienKichThuocRS100 == true) {
+        if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS240?.getTienTrinh?.isTienTrinhHoanTatThucThi() == true) {
+          if (thuocTinhHinhAnh?.getKichThuocRS100 == true) {
+            _ngoaiHinhFramePartSS24 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS240?.getSpriteAnimation?.frames ?? [];
+
+            if (_ngoaiHinhFramePartSS24?.isNotEmpty == true) {
+              _ngoaiHinhFrames?.addAll(List.from(_ngoaiHinhFramePartSS24 ?? []));
+            }
+          }
+        }
+      }
+      if (thuocTinhHinhAnh?.getKichThuocRS050 == true || caiDatUuTienKichThuocRS050 == true) {
+        if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS240?.getTienTrinh?.isTienTrinhHoanTatThucThi() == true) {
+          if (thuocTinhHinhAnh?.getKichThuocRS050 == true) {
+            _ngoaiHinhFramePartSS24 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS240?.getSpriteAnimation?.frames ?? [];
+
+            if (_ngoaiHinhFramePartSS24?.isNotEmpty == true) {
+              _ngoaiHinhFrames?.addAll(List.from(_ngoaiHinhFramePartSS24 ?? []));
+            }
+          }
+        }
+      }
+      if (thuocTinhHinhAnh?.getKichThuocRS025 == true || caiDatUuTienKichThuocRS025 == true) {
+        if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS240?.getTienTrinh?.isTienTrinhHoanTatThucThi() == true) {
+          if (thuocTinhHinhAnh?.getKichThuocRS025 == true) {
+            _ngoaiHinhFramePartSS24 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS240?.getSpriteAnimation?.frames ?? [];
+
+            if (_ngoaiHinhFramePartSS24?.isNotEmpty == true) {
+              _ngoaiHinhFrames?.addAll(List.from(_ngoaiHinhFramePartSS24 ?? []));
+            }
+          }
+        }
+      }
+    }
+
+    /// -----
+    /// TODO:
+    /// -----
+    if (tongSoPart >= 25 && _ngoaiHinhFramePartSS25?.isEmpty == true) {
+      if (thuocTinhHinhAnh?.getKichThuocRS100 == true || caiDatUuTienKichThuocRS100 == true) {
+        if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS250?.getTienTrinh?.isTienTrinhHoanTatThucThi() == true) {
+          if (thuocTinhHinhAnh?.getKichThuocRS100 == true) {
+            _ngoaiHinhFramePartSS25 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS250?.getSpriteAnimation?.frames ?? [];
+
+            if (_ngoaiHinhFramePartSS25?.isNotEmpty == true) {
+              _ngoaiHinhFrames?.addAll(List.from(_ngoaiHinhFramePartSS25 ?? []));
+            }
+          }
+        }
+      }
+      if (thuocTinhHinhAnh?.getKichThuocRS050 == true || caiDatUuTienKichThuocRS050 == true) {
+        if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS250?.getTienTrinh?.isTienTrinhHoanTatThucThi() == true) {
+          if (thuocTinhHinhAnh?.getKichThuocRS050 == true) {
+            _ngoaiHinhFramePartSS25 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS250?.getSpriteAnimation?.frames ?? [];
+
+            if (_ngoaiHinhFramePartSS25?.isNotEmpty == true) {
+              _ngoaiHinhFrames?.addAll(List.from(_ngoaiHinhFramePartSS25 ?? []));
+            }
+          }
+        }
+      }
+      if (thuocTinhHinhAnh?.getKichThuocRS025 == true || caiDatUuTienKichThuocRS025 == true) {
+        if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS250?.getTienTrinh?.isTienTrinhHoanTatThucThi() == true) {
+          if (thuocTinhHinhAnh?.getKichThuocRS025 == true) {
+            _ngoaiHinhFramePartSS25 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS250?.getSpriteAnimation?.frames ?? [];
+
+            if (_ngoaiHinhFramePartSS25?.isNotEmpty == true) {
+              _ngoaiHinhFrames?.addAll(List.from(_ngoaiHinhFramePartSS25 ?? []));
+            }
+          }
+        }
+      }
+    }
+
+    /// -----
+    /// TODO:
+    /// -----
+    if (tongSoPart == 6) {
+      if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS060?.getTienTrinh?.isTienTrinhHoanTatThucThi() == true) {
+        SpriteAnimation spriteAnimation = SpriteAnimation(_ngoaiHinhFrames ?? []);
+
+        if (thuocTinhHinhAnh?.getKichThuocRS100 == true) {
+          thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100?.onVoidCaiDatSpriteAnimation(value: spriteAnimation, caiDatUuTien: true);
+          thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+          thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+        }
+        if (thuocTinhHinhAnh?.getKichThuocRS050 == true) {
+          thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+          thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050?.onVoidCaiDatSpriteAnimation(value: spriteAnimation, caiDatUuTien: true);
+          thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+        }
+        if (thuocTinhHinhAnh?.getKichThuocRS025 == true) {
+          thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+          thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+          thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025?.onVoidCaiDatSpriteAnimation(value: spriteAnimation, caiDatUuTien: true);
+        }
+
+        /// -----
+        /// TODO:
+        /// -----
+        if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100?.getSpriteAnimation?.frames.isNotEmpty == true) {
+          thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinh?.onVoidCaiDatSpriteAnimation(value: thuocTinhHinhAnh.getDonViHinhAnhSpriteNgoaiHinhRS100?.getSpriteAnimation, caiDatUuTien: true);
+        } else if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050?.getSpriteAnimation?.frames.isNotEmpty == true) {
+          thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinh?.onVoidCaiDatSpriteAnimation(value: thuocTinhHinhAnh.getDonViHinhAnhSpriteNgoaiHinhRS050?.getSpriteAnimation, caiDatUuTien: true);
+        } else if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025?.getSpriteAnimation?.frames.isNotEmpty == true) {
+          thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinh?.onVoidCaiDatSpriteAnimation(value: thuocTinhHinhAnh.getDonViHinhAnhSpriteNgoaiHinhRS025?.getSpriteAnimation, caiDatUuTien: true);
+        }
+
+        /// -----
+        /// TODO:
+        /// -----
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS010?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS020?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS030?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS040?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS050?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS060?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS070?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS080?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS090?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS100?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS110?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS120?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS130?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS140?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS150?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS160?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS170?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS180?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS190?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS200?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS210?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS220?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS230?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS240?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS250?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+
+        /// -----
+        /// TODO:
+        /// -----
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS010?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS020?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS030?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS040?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS050?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS060?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS070?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS080?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS090?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS100?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS110?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS120?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS130?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS140?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS150?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS160?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS170?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS180?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS190?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS200?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS210?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS220?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS230?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS240?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS250?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+
+        /// -----
+        /// TODO:
+        /// -----
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS010?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS020?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS030?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS040?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS050?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS060?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS070?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS080?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS090?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS100?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS110?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS120?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS130?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS140?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS150?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS160?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS170?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS180?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS190?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS200?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS210?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS220?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS230?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS240?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS250?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+
+        /// -----
+        /// TODO:
+        /// -----
+        getMapTaiNguyenHinhAnhNgoaiHinh?[maDinhDanh ?? '[MA_DINH_DANH_TAI_NGUYEN]'] ??= thuocTinhHinhAnh;
+        if (getMapTaiNguyenHinhAnhNgoaiHinh?[maDinhDanh ?? '[MA_DINH_DANH_TAI_NGUYEN]'] == null) {
+          getMapTaiNguyenHinhAnhNgoaiHinh?[maDinhDanh ?? '[MA_DINH_DANH_TAI_NGUYEN]'] = thuocTinhHinhAnh;
+        } else {
+          getMapTaiNguyenHinhAnhNgoaiHinh?[maDinhDanh ?? '[MA_DINH_DANH_TAI_NGUYEN]']?.onCaiDatDonViHinhAnhSpriteNgoaiHinh(
+            value: thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinh, //
+            caiDatUuTien: true,
+          ); //
+        }
+
+        await thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS060?.getTienTrinh?.onVoidCaiDatTienTrinhNguyenBan();
+
+        onThucThiHoanTat?.call();
+      }
+    }
+
+    /// -----
+    /// TODO:
+    /// -----
+    if (tongSoPart == 15) {
+      if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS150?.getTienTrinh?.isTienTrinhHoanTatThucThi() == true) {
+        SpriteAnimation spriteAnimation = SpriteAnimation(_ngoaiHinhFrames ?? []);
+
+        if (thuocTinhHinhAnh?.getKichThuocRS100 == true) {
+          thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100?.onVoidCaiDatSpriteAnimation(value: spriteAnimation, caiDatUuTien: true);
+          thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+          thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+        }
+        if (thuocTinhHinhAnh?.getKichThuocRS050 == true) {
+          thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+          thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050?.onVoidCaiDatSpriteAnimation(value: spriteAnimation, caiDatUuTien: true);
+          thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+        }
+        if (thuocTinhHinhAnh?.getKichThuocRS025 == true) {
+          thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+          thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+          thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025?.onVoidCaiDatSpriteAnimation(value: spriteAnimation, caiDatUuTien: true);
+        }
+
+        /// -----
+        /// TODO:
+        /// -----
+        if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100?.getSpriteAnimation?.frames.isNotEmpty == true) {
+          thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinh?.onVoidCaiDatSpriteAnimation(value: thuocTinhHinhAnh.getDonViHinhAnhSpriteNgoaiHinhRS100?.getSpriteAnimation, caiDatUuTien: true);
+        } else if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050?.getSpriteAnimation?.frames.isNotEmpty == true) {
+          thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinh?.onVoidCaiDatSpriteAnimation(value: thuocTinhHinhAnh.getDonViHinhAnhSpriteNgoaiHinhRS050?.getSpriteAnimation, caiDatUuTien: true);
+        } else if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025?.getSpriteAnimation?.frames.isNotEmpty == true) {
+          thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinh?.onVoidCaiDatSpriteAnimation(value: thuocTinhHinhAnh.getDonViHinhAnhSpriteNgoaiHinhRS025?.getSpriteAnimation, caiDatUuTien: true);
+        }
+
+        /// -----
+        /// TODO:
+        /// -----
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS010?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS020?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS030?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS040?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS050?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS060?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS070?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS080?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS090?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS100?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS110?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS120?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS130?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS140?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS150?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS160?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS170?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS180?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS190?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS200?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS210?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS220?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS230?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS240?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS250?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+
+        /// -----
+        /// TODO:
+        /// -----
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS010?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS020?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS030?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS040?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS050?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS060?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS070?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS080?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS090?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS100?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS110?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS120?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS130?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS140?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS150?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS160?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS170?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS180?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS190?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS200?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS210?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS220?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS230?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS240?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS250?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+
+        /// -----
+        /// TODO:
+        /// -----
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS010?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS020?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS030?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS040?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS050?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS060?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS070?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS080?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS090?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS100?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS110?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS120?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS130?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS140?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS150?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS160?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS170?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS180?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS190?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS200?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS210?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS220?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS230?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS240?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS250?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+
+        /// -----
+        /// TODO:
+        /// -----
+        getMapTaiNguyenHinhAnhNgoaiHinh?[maDinhDanh ?? '[MA_DINH_DANH_TAI_NGUYEN]'] ??= thuocTinhHinhAnh;
+        if (getMapTaiNguyenHinhAnhNgoaiHinh?[maDinhDanh ?? '[MA_DINH_DANH_TAI_NGUYEN]'] == null) {
+          getMapTaiNguyenHinhAnhNgoaiHinh?[maDinhDanh ?? '[MA_DINH_DANH_TAI_NGUYEN]'] = thuocTinhHinhAnh;
+        } else {
+          getMapTaiNguyenHinhAnhNgoaiHinh?[maDinhDanh ?? '[MA_DINH_DANH_TAI_NGUYEN]']?.onCaiDatDonViHinhAnhSpriteNgoaiHinh(
+            value: thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinh, //
+            caiDatUuTien: true,
+          ); //
+        }
+
+        await thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS150?.getTienTrinh?.onVoidCaiDatTienTrinhNguyenBan();
+
+        onThucThiHoanTat?.call();
+      }
+    }
+
+    /// -----
+    /// TODO:
+    /// -----
+    if (tongSoPart == 24) {
+      bool isHoanTatThucThi = false;
+
+      SpriteAnimation? spriteAnimation;
+
+      if (thuocTinhHinhAnh?.getKichThuocRS100 == true || caiDatUuTienKichThuocRS100 == true) {
+        if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS240?.getTienTrinh?.isTienTrinhHoanTatThucThi() == true) {
+          spriteAnimation = SpriteAnimation(_ngoaiHinhFrames ?? []);
+          isHoanTatThucThi = true;
+        }
+      }
+      if (thuocTinhHinhAnh?.getKichThuocRS050 == true || caiDatUuTienKichThuocRS050 == true) {
+        if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS240?.getTienTrinh?.isTienTrinhHoanTatThucThi() == true) {
+          spriteAnimation = SpriteAnimation(_ngoaiHinhFrames ?? []);
+          isHoanTatThucThi = true;
+        }
+      }
+      if (thuocTinhHinhAnh?.getKichThuocRS025 == true || caiDatUuTienKichThuocRS025 == true) {
+        if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS240?.getTienTrinh?.isTienTrinhHoanTatThucThi() == true) {
+          spriteAnimation = SpriteAnimation(_ngoaiHinhFrames ?? []);
+          isHoanTatThucThi = true;
+        }
+      }
+
+      if (isHoanTatThucThi == true) {
+        if (thuocTinhHinhAnh?.getKichThuocRS100 == true) {
+          thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100?.onVoidCaiDatSpriteAnimation(value: spriteAnimation, caiDatUuTien: true);
+          thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+          thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+        }
+        if (thuocTinhHinhAnh?.getKichThuocRS050 == true) {
+          thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+          thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050?.onVoidCaiDatSpriteAnimation(value: spriteAnimation, caiDatUuTien: true);
+          thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+        }
+        if (thuocTinhHinhAnh?.getKichThuocRS025 == true) {
+          thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+          thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+          thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025?.onVoidCaiDatSpriteAnimation(value: spriteAnimation, caiDatUuTien: true);
+        }
+
+        /// -----
+        /// TODO:
+        /// -----
+        if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100?.getSpriteAnimation?.frames.isNotEmpty == true) {
+          thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinh?.onVoidCaiDatSpriteAnimation(value: thuocTinhHinhAnh.getDonViHinhAnhSpriteNgoaiHinhRS100?.getSpriteAnimation, caiDatUuTien: true);
+        } else if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050?.getSpriteAnimation?.frames.isNotEmpty == true) {
+          thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinh?.onVoidCaiDatSpriteAnimation(value: thuocTinhHinhAnh.getDonViHinhAnhSpriteNgoaiHinhRS050?.getSpriteAnimation, caiDatUuTien: true);
+        } else if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025?.getSpriteAnimation?.frames.isNotEmpty == true) {
+          thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinh?.onVoidCaiDatSpriteAnimation(value: thuocTinhHinhAnh.getDonViHinhAnhSpriteNgoaiHinhRS025?.getSpriteAnimation, caiDatUuTien: true);
+        }
+
+        /// -----
+        /// TODO:
+        /// -----
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS010?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS020?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS030?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS040?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS050?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS060?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS070?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS080?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS090?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS100?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS110?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS120?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS130?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS140?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS150?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS160?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS170?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS180?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS190?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS200?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS210?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS220?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS230?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS240?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS250?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+
+        /// -----
+        /// TODO:
+        /// -----
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS010?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS020?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS030?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS040?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS050?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS060?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS070?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS080?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS090?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS100?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS110?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS120?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS130?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS140?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS150?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS160?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS170?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS180?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS190?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS200?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS210?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS220?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS230?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS240?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS250?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+
+        /// -----
+        /// TODO:
+        /// -----
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS010?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS020?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS030?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS040?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS050?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS060?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS070?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS080?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS090?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS100?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS110?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS120?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS130?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS140?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS150?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS160?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS170?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS180?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS190?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS200?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS210?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS220?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS230?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS240?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS250?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+
+        /// -----
+        /// TODO:
+        /// -----
+        getMapTaiNguyenHinhAnhNgoaiHinh?[maDinhDanh ?? '[MA_DINH_DANH_TAI_NGUYEN]'] ??= thuocTinhHinhAnh;
+        if (getMapTaiNguyenHinhAnhNgoaiHinh?[maDinhDanh ?? '[MA_DINH_DANH_TAI_NGUYEN]'] == null) {
+          getMapTaiNguyenHinhAnhNgoaiHinh?[maDinhDanh ?? '[MA_DINH_DANH_TAI_NGUYEN]'] = thuocTinhHinhAnh;
+        } else {
+          getMapTaiNguyenHinhAnhNgoaiHinh?[maDinhDanh ?? '[MA_DINH_DANH_TAI_NGUYEN]']?.onCaiDatDonViHinhAnhSpriteNgoaiHinh(
+            value: thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinh, //
+            caiDatUuTien: true,
+          ); //
+        }
+
+        await thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS240?.getTienTrinh?.onVoidCaiDatTienTrinhNguyenBan();
+
+        onThucThiHoanTat?.call();
+      }
+    }
+
+    /// -----
+    /// TODO:
+    /// -----
+    if (tongSoPart == 1) {
+      bool isHoanTatThucThi = false;
+
+      SpriteAnimation? spriteAnimation;
+
+      if (thuocTinhHinhAnh?.getKichThuocRS100 == true || caiDatUuTienKichThuocRS100 == true) {
+        if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS010?.getTienTrinh?.isTienTrinhHoanTatThucThi() == true) {
+          spriteAnimation = SpriteAnimation(_ngoaiHinhFrames ?? []);
+          isHoanTatThucThi = true;
+        }
+      }
+      if (thuocTinhHinhAnh?.getKichThuocRS050 == true || caiDatUuTienKichThuocRS050 == true) {
+        if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS010?.getTienTrinh?.isTienTrinhHoanTatThucThi() == true) {
+          spriteAnimation = SpriteAnimation(_ngoaiHinhFrames ?? []);
+          isHoanTatThucThi = true;
+        }
+      }
+      if (thuocTinhHinhAnh?.getKichThuocRS025 == true || caiDatUuTienKichThuocRS025 == true) {
+        if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS010?.getTienTrinh?.isTienTrinhHoanTatThucThi() == true) {
+          spriteAnimation = SpriteAnimation(_ngoaiHinhFrames ?? []);
+          isHoanTatThucThi = true;
+        }
+      }
+
+      if (isHoanTatThucThi == true) {
+        if (thuocTinhHinhAnh?.getKichThuocRS100 == true) {
+          thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100?.onVoidCaiDatSpriteAnimation(value: spriteAnimation, caiDatUuTien: true);
+          thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+          thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+        }
+        if (thuocTinhHinhAnh?.getKichThuocRS050 == true) {
+          thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+          thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050?.onVoidCaiDatSpriteAnimation(value: spriteAnimation, caiDatUuTien: true);
+          thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+        }
+        if (thuocTinhHinhAnh?.getKichThuocRS025 == true) {
+          thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+          thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+          thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025?.onVoidCaiDatSpriteAnimation(value: spriteAnimation, caiDatUuTien: true);
+        }
+
+        /// -----
+        /// TODO:
+        /// -----
+        if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100?.getSpriteAnimation?.frames.isNotEmpty == true) {
+          thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinh?.onVoidCaiDatSpriteAnimation(value: thuocTinhHinhAnh.getDonViHinhAnhSpriteNgoaiHinhRS100?.getSpriteAnimation, caiDatUuTien: true);
+        } else if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050?.getSpriteAnimation?.frames.isNotEmpty == true) {
+          thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinh?.onVoidCaiDatSpriteAnimation(value: thuocTinhHinhAnh.getDonViHinhAnhSpriteNgoaiHinhRS050?.getSpriteAnimation, caiDatUuTien: true);
+        } else if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025?.getSpriteAnimation?.frames.isNotEmpty == true) {
+          thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinh?.onVoidCaiDatSpriteAnimation(value: thuocTinhHinhAnh.getDonViHinhAnhSpriteNgoaiHinhRS025?.getSpriteAnimation, caiDatUuTien: true);
+        }
+
+        /// -----
+        /// TODO:
+        /// -----
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS010?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS020?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS030?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS040?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS050?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS060?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS070?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS080?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS090?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS100?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS110?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS120?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS130?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS140?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS150?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS160?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS170?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS180?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS190?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS200?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS210?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS220?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS230?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS240?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS250?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+
+        /// -----
+        /// TODO:
+        /// -----
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS010?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS020?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS030?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS040?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS050?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS060?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS070?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS080?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS090?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS100?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS110?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS120?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS130?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS140?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS150?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS160?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS170?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS180?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS190?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS200?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS210?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS220?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS230?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS240?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS250?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+
+        /// -----
+        /// TODO:
+        /// -----
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS010?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS020?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS030?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS040?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS050?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS060?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS070?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS080?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS090?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS100?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS110?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS120?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS130?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS140?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS150?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS160?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS170?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS180?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS190?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS200?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS210?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS220?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS230?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS240?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+        thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS250?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);
+
+        /// -----
+        /// TODO:
+        /// -----
+        getMapTaiNguyenHinhAnhNgoaiHinh?[maDinhDanh ?? '[MA_DINH_DANH_TAI_NGUYEN]'] ??= thuocTinhHinhAnh;
+        if (getMapTaiNguyenHinhAnhNgoaiHinh?[maDinhDanh ?? '[MA_DINH_DANH_TAI_NGUYEN]'] == null) {
+          getMapTaiNguyenHinhAnhNgoaiHinh?[maDinhDanh ?? '[MA_DINH_DANH_TAI_NGUYEN]'] = thuocTinhHinhAnh;
+        } else {
+          getMapTaiNguyenHinhAnhNgoaiHinh?[maDinhDanh ?? '[MA_DINH_DANH_TAI_NGUYEN]']?.onCaiDatDonViHinhAnhSpriteNgoaiHinh(
+            value: thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinh, //
+            caiDatUuTien: true,
+          ); //
+        }
+
+        await thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS240?.getTienTrinh?.onVoidCaiDatTienTrinhNguyenBan();
+
+        onThucThiHoanTat?.call();
+      }
+    }
+
     return;
   }
 }
