@@ -1800,18 +1800,18 @@ class QUANLYTRANGTHAIHANGARPHUONGTIEN with CAUTRUCTHUCTHICOBAN {
   }
 
   Future<void> onTaiTaiNguyenPhuongTienTheoMaDinhDanh({required String? maDinhDanhPhuongTien}) async {
-    await getThuocTinhTaiNguyenPhuongTien
-        ?.onTruyXuatTaiNguyenHinhAnhNgoaiHinh(
-      maDinhDanh: maDinhDanhPhuongTien,
-      thuocTinhHinhAnh: getThuocTinhTaiNguyenPhuongTien?.getMapTaiNguyenHinhAnhNgoaiHinh?[maDinhDanhPhuongTien],
-    );
-
-    // await getThuocTinhTaiNguyenPhuongTien?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhTheoTuanTu(
+    // await getThuocTinhTaiNguyenPhuongTien
+    //     ?.onTruyXuatTaiNguyenHinhAnhNgoaiHinh(
     //   maDinhDanh: maDinhDanhPhuongTien,
     //   thuocTinhHinhAnh: getThuocTinhTaiNguyenPhuongTien?.getMapTaiNguyenHinhAnhNgoaiHinh?[maDinhDanhPhuongTien],
-    //   caiDatUuTienKichThuocRS025: true,
-    //   onThucThiHoanTat: () {},
     // );
+
+    await getThuocTinhTaiNguyenPhuongTien?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhTheoTuanTu(
+      maDinhDanh: maDinhDanhPhuongTien,
+      thuocTinhHinhAnh: getThuocTinhTaiNguyenPhuongTien?.getMapTaiNguyenHinhAnhNgoaiHinh?[maDinhDanhPhuongTien],
+      caiDatUuTienKichThuocRS025: true,
+      onThucThiHoanTat: () {},
+    );
 
     ///
     return;
@@ -1831,7 +1831,7 @@ class QUANLYTRANGTHAIHANGARPHUONGTIEN with CAUTRUCTHUCTHICOBAN {
   Future<void> onCaiDatChatLuongDoHoaCao() async {
     if (getThuocTinhTaiNguyenPhuongTien?.getMapTaiNguyenHinhAnhNgoaiHinh?.isNotEmpty == true) {
       for (var entry in (getThuocTinhTaiNguyenPhuongTien?.getMapTaiNguyenHinhAnhNgoaiHinh?.entries ?? [])) {
-        entry.value?.onVoidCaiDatKichThuocRS100(value: true, caiDatUuTien: true, caiDatTuongQuan: true);
+        entry.value?.onVoidCaiDatKichThuocRS050(value: true, caiDatUuTien: true, caiDatTuongQuan: true);
       }
     }
 

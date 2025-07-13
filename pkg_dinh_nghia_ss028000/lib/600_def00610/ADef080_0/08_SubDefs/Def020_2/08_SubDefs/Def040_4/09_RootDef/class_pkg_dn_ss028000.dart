@@ -83,8 +83,8 @@ class VUKHISUNGCHINHSS030CDCDCS00S08SS010 extends VUKHISUNGCHINHCOBAN {
     /// TODO: Kích Thước Resize
     /// -----
     final bool kichThuocRS025 = false; // Kích Thước Resize 25
-    final bool kichThuocRS050 = false; // Kích Thước Resize 50
-    final bool kichThuocRS100 = true; // Kích Thước Resize 100
+    final bool kichThuocRS050 = true; // Kích Thước Resize 50
+    final bool kichThuocRS100 = false; // Kích Thước Resize 100
 
     /// -----
     /// TODO: Nguồn Hình Ảnh Cơ Bản

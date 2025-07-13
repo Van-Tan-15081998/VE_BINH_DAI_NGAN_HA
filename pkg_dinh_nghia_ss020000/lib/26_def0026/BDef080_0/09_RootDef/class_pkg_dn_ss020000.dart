@@ -5536,7 +5536,7 @@ class THUOCTINHTAINGUYENCOBAN with CAUTRUCTHUCTHICOBAN {
           }
         }
         if (thuocTinhHinhAnh?.getKichThuocRS050 == true || caiDatUuTienKichThuocRS050 == true) {
-          String nguonSpriteSheetRS050PartSS010 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050Max?.getNguonHinhAnh ?? '';
+          String nguonSpriteSheetRS050PartSS010 = thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS010?.getNguonHinhAnh ?? '';
           if (nguonSpriteSheetRS050PartSS010.isNotEmpty == true) {
             danhSachNguonHinhAnh.add(nguonSpriteSheetRS050PartSS010);
           }
@@ -6220,8 +6220,7 @@ class THUOCTINHTAINGUYENCOBAN with CAUTRUCTHUCTHICOBAN {
         if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS010?.getTienTrinh?.isTienTrinhSanSangThucThi() == true) {
           await thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS010?.getTienTrinh?.onVoidCaiDatTienTrinhDangThucThi();
           await Future.delayed(Duration.zero);
-          // await onTaiTaiNguyenHinhAnhNgoaiHinhPartSS01(
-          await onTaiTaiNguyenHinhAnhNgoaiHinhMax(
+          await onTaiTaiNguyenHinhAnhNgoaiHinhPartSS01(
             thuocTinhHinhAnh: thuocTinhHinhAnh,
             caiDatUuTienKichThuocRS100: true,
             caiDatUuTienKichThuocRS050: false,
@@ -6239,7 +6238,7 @@ class THUOCTINHTAINGUYENCOBAN with CAUTRUCTHUCTHICOBAN {
         if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS010?.getTienTrinh?.isTienTrinhSanSangThucThi() == true) {
           await thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS010?.getTienTrinh?.onVoidCaiDatTienTrinhDangThucThi();
           await Future.delayed(Duration.zero);
-          await onTaiTaiNguyenHinhAnhNgoaiHinhMax(
+          await onTaiTaiNguyenHinhAnhNgoaiHinhPartSS01(
             thuocTinhHinhAnh: thuocTinhHinhAnh,
             caiDatUuTienKichThuocRS100: false,
             caiDatUuTienKichThuocRS050: true,
@@ -6256,7 +6255,7 @@ class THUOCTINHTAINGUYENCOBAN with CAUTRUCTHUCTHICOBAN {
         if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS010?.getTienTrinh?.isTienTrinhSanSangThucThi() == true) {
           await thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS010?.getTienTrinh?.onVoidCaiDatTienTrinhDangThucThi();
           await Future.delayed(Duration.zero);
-          await onTaiTaiNguyenHinhAnhNgoaiHinhMax(
+          await onTaiTaiNguyenHinhAnhNgoaiHinhPartSS01(
             thuocTinhHinhAnh: thuocTinhHinhAnh,
             caiDatUuTienKichThuocRS100: false,
             caiDatUuTienKichThuocRS050: false,
@@ -8801,9 +8800,30 @@ class THUOCTINHTAINGUYENCOBAN with CAUTRUCTHUCTHICOBAN {
     /// TODO:
     /// -----
     if (tongSoPart == 15) {
-      if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS150?.getTienTrinh?.isTienTrinhHoanTatThucThi() == true) {
-        SpriteAnimation spriteAnimation = SpriteAnimation(_ngoaiHinhFrames ?? []);
+      bool isHoanTatThucThi = false;
 
+      SpriteAnimation? spriteAnimation;
+
+      if (thuocTinhHinhAnh?.getKichThuocRS100 == true || caiDatUuTienKichThuocRS100 == true) {
+        if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100PartSS150?.getTienTrinh?.isTienTrinhHoanTatThucThi() == true) {
+          spriteAnimation = SpriteAnimation(_ngoaiHinhFrames ?? []);
+          isHoanTatThucThi = true;
+        }
+      }
+      if (thuocTinhHinhAnh?.getKichThuocRS050 == true || caiDatUuTienKichThuocRS050 == true) {
+        if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050PartSS150?.getTienTrinh?.isTienTrinhHoanTatThucThi() == true) {
+          spriteAnimation = SpriteAnimation(_ngoaiHinhFrames ?? []);
+          isHoanTatThucThi = true;
+        }
+      }
+      if (thuocTinhHinhAnh?.getKichThuocRS025 == true || caiDatUuTienKichThuocRS025 == true) {
+        if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025PartSS150?.getTienTrinh?.isTienTrinhHoanTatThucThi() == true) {
+          spriteAnimation = SpriteAnimation(_ngoaiHinhFrames ?? []);
+          isHoanTatThucThi = true;
+        }
+      }
+
+      if (isHoanTatThucThi == true) {
         if (thuocTinhHinhAnh?.getKichThuocRS100 == true) {
           thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100?.onVoidCaiDatSpriteAnimation(value: spriteAnimation, caiDatUuTien: true);
           thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050?.onVoidCaiDatSpriteAnimation(value: null, caiDatUuTien: true);

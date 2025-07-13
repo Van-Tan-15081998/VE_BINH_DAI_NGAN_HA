@@ -2535,14 +2535,14 @@ class QUANLYTRANGTHAIHANGARCHIENDAUCO with CAUTRUCTHUCTHICOBAN {
 
   Future<void> onTaiTaiNguyenChienDauCo00E03SS010FullSize({bool? isLoadForMissionExecution}) async {
 
-    return;
+    // return;
 
     /// -----
     /// TODO:
     /// -----
     await Future.delayed(Duration.zero);
 
-    getChienDauCo00E03SS010?.getThuocTinhChienDauCo?.getThuocTinhHinhAnh?.onVoidCaiDatKichThuocRS100(value: true, caiDatUuTien: true, caiDatTuongQuan: true);
+    getChienDauCo00E03SS010?.getThuocTinhChienDauCo?.getThuocTinhHinhAnh?.onVoidCaiDatKichThuocRS050(value: true, caiDatUuTien: true, caiDatTuongQuan: true);
 
     /// -----
     /// TODO:
@@ -2550,7 +2550,7 @@ class QUANLYTRANGTHAIHANGARCHIENDAUCO with CAUTRUCTHUCTHICOBAN {
     await getThuocTinhTaiNguyenChienDauCo?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhTheoTuanTu(
       maDinhDanh: getChienDauCo00E03SS010?.getMaDinhDanhChienDauCo,
       thuocTinhHinhAnh: getChienDauCo00E03SS010?.getThuocTinhChienDauCo?.getThuocTinhHinhAnh,
-      caiDatUuTienKichThuocRS100: true,
+      caiDatUuTienKichThuocRS050: true,
       onThucThiHoanTat: () {},
     );
 
@@ -2559,7 +2559,7 @@ class QUANLYTRANGTHAIHANGARCHIENDAUCO with CAUTRUCTHUCTHICOBAN {
       await getThuocTinhTaiNguyenChienDauCo?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhTheoTuanTu(
         maDinhDanh: getVuKhiSungChinhSS010CDCDCS00E03SS010?.getMaDinhDanhVuKhiTanCong,
         thuocTinhHinhAnh: getVuKhiSungChinhSS010CDCDCS00E03SS010?.getSieuCapThuocTinh?.getTrangThaiHinhAnh?.getMoHinh,
-        caiDatUuTienKichThuocRS100: true,
+        caiDatUuTienKichThuocRS050: true,
         onThucThiHoanTat: () {},
       );
 
@@ -2567,7 +2567,7 @@ class QUANLYTRANGTHAIHANGARCHIENDAUCO with CAUTRUCTHUCTHICOBAN {
       await getThuocTinhTaiNguyenChienDauCo?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhTheoTuanTu(
         maDinhDanh: getVuKhiSungChinhSS020CDCDCS00E03SS010?.getMaDinhDanhVuKhiTanCong,
         thuocTinhHinhAnh: getVuKhiSungChinhSS020CDCDCS00E03SS010?.getSieuCapThuocTinh?.getTrangThaiHinhAnh?.getMoHinh,
-        caiDatUuTienKichThuocRS100: true,
+        caiDatUuTienKichThuocRS050: true,
         onThucThiHoanTat: () {},
       );
 
@@ -2575,7 +2575,7 @@ class QUANLYTRANGTHAIHANGARCHIENDAUCO with CAUTRUCTHUCTHICOBAN {
       await getThuocTinhTaiNguyenChienDauCo?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhTheoTuanTu(
         maDinhDanh: getVuKhiSungChinhSS030CDCDCS00E03SS010?.getMaDinhDanhVuKhiTanCong,
         thuocTinhHinhAnh: getVuKhiSungChinhSS030CDCDCS00E03SS010?.getSieuCapThuocTinh?.getTrangThaiHinhAnh?.getMoHinh,
-        caiDatUuTienKichThuocRS100: true,
+        caiDatUuTienKichThuocRS050: true,
         onThucThiHoanTat: () {},
       );
 
@@ -2583,7 +2583,7 @@ class QUANLYTRANGTHAIHANGARCHIENDAUCO with CAUTRUCTHUCTHICOBAN {
       await getThuocTinhTaiNguyenChienDauCo?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhTheoTuanTu(
         maDinhDanh: getTenLuaTanCongSS010CDCDCS00E03SS010?.getMaDinhDanhVuKhiTanCong,
         thuocTinhHinhAnh: getTenLuaTanCongSS010CDCDCS00E03SS010?.getSieuCapThuocTinh?.getTrangThaiHinhAnh?.getMoHinh,
-        caiDatUuTienKichThuocRS100: true,
+        caiDatUuTienKichThuocRS050: true,
         onThucThiHoanTat: () {},
       );
 
@@ -2591,7 +2591,7 @@ class QUANLYTRANGTHAIHANGARCHIENDAUCO with CAUTRUCTHUCTHICOBAN {
       await getThuocTinhTaiNguyenChienDauCo?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhTheoTuanTu(
         maDinhDanh: getTenLuaTanCongSS020CDCDCS00E03SS010?.getMaDinhDanhVuKhiTanCong,
         thuocTinhHinhAnh: getTenLuaTanCongSS020CDCDCS00E03SS010?.getSieuCapThuocTinh?.getTrangThaiHinhAnh?.getMoHinh,
-        caiDatUuTienKichThuocRS100: true,
+        caiDatUuTienKichThuocRS050: true,
         onThucThiHoanTat: () {},
       );
 
@@ -2599,7 +2599,7 @@ class QUANLYTRANGTHAIHANGARCHIENDAUCO with CAUTRUCTHUCTHICOBAN {
       await getThuocTinhTaiNguyenChienDauCo?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhTheoTuanTu(
         maDinhDanh: getTenLuaTanCongSS030CDCDCS00E03SS010?.getMaDinhDanhVuKhiTanCong,
         thuocTinhHinhAnh: getTenLuaTanCongSS030CDCDCS00E03SS010?.getSieuCapThuocTinh?.getTrangThaiHinhAnh?.getMoHinh,
-        caiDatUuTienKichThuocRS100: true,
+        caiDatUuTienKichThuocRS050: true,
         onThucThiHoanTat: () {},
       );
 
@@ -2653,7 +2653,7 @@ class QUANLYTRANGTHAIHANGARCHIENDAUCO with CAUTRUCTHUCTHICOBAN {
     /// -----
     await Future.delayed(Duration.zero);
 
-    getChienDauCo00E03SS020?.getThuocTinhChienDauCo?.getThuocTinhHinhAnh?.onVoidCaiDatKichThuocRS100(value: true, caiDatUuTien: true, caiDatTuongQuan: true);
+    getChienDauCo00E03SS020?.getThuocTinhChienDauCo?.getThuocTinhHinhAnh?.onVoidCaiDatKichThuocRS050(value: true, caiDatUuTien: true, caiDatTuongQuan: true);
 
     /// -----
     /// TODO:
@@ -2669,7 +2669,7 @@ class QUANLYTRANGTHAIHANGARCHIENDAUCO with CAUTRUCTHUCTHICOBAN {
       await getThuocTinhTaiNguyenChienDauCo?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhTheoTuanTu(
         maDinhDanh: getVuKhiSungChinhSS010CDCDCS00E03SS020?.getMaDinhDanhVuKhiTanCong,
         thuocTinhHinhAnh: getVuKhiSungChinhSS010CDCDCS00E03SS020?.getSieuCapThuocTinh?.getTrangThaiHinhAnh?.getMoHinh,
-        caiDatUuTienKichThuocRS100: true,
+        caiDatUuTienKichThuocRS050: true,
         onThucThiHoanTat: () {},
       );
 
@@ -2677,7 +2677,7 @@ class QUANLYTRANGTHAIHANGARCHIENDAUCO with CAUTRUCTHUCTHICOBAN {
       await getThuocTinhTaiNguyenChienDauCo?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhTheoTuanTu(
         maDinhDanh: getVuKhiSungChinhSS020CDCDCS00E03SS020?.getMaDinhDanhVuKhiTanCong,
         thuocTinhHinhAnh: getVuKhiSungChinhSS020CDCDCS00E03SS020?.getSieuCapThuocTinh?.getTrangThaiHinhAnh?.getMoHinh,
-        caiDatUuTienKichThuocRS100: true,
+        caiDatUuTienKichThuocRS050: true,
         onThucThiHoanTat: () {},
       );
 
@@ -2685,7 +2685,7 @@ class QUANLYTRANGTHAIHANGARCHIENDAUCO with CAUTRUCTHUCTHICOBAN {
       await getThuocTinhTaiNguyenChienDauCo?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhTheoTuanTu(
         maDinhDanh: getVuKhiSungChinhSS030CDCDCS00E03SS020?.getMaDinhDanhVuKhiTanCong,
         thuocTinhHinhAnh: getVuKhiSungChinhSS030CDCDCS00E03SS020?.getSieuCapThuocTinh?.getTrangThaiHinhAnh?.getMoHinh,
-        caiDatUuTienKichThuocRS100: true,
+        caiDatUuTienKichThuocRS050: true,
         onThucThiHoanTat: () {},
       );
 
@@ -2693,7 +2693,7 @@ class QUANLYTRANGTHAIHANGARCHIENDAUCO with CAUTRUCTHUCTHICOBAN {
       await getThuocTinhTaiNguyenChienDauCo?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhTheoTuanTu(
         maDinhDanh: getTenLuaTanCongSS010CDCDCS00E03SS020?.getMaDinhDanhVuKhiTanCong,
         thuocTinhHinhAnh: getTenLuaTanCongSS010CDCDCS00E03SS020?.getSieuCapThuocTinh?.getTrangThaiHinhAnh?.getMoHinh,
-        caiDatUuTienKichThuocRS100: true,
+        caiDatUuTienKichThuocRS050: true,
         onThucThiHoanTat: () {},
       );
 
@@ -2701,7 +2701,7 @@ class QUANLYTRANGTHAIHANGARCHIENDAUCO with CAUTRUCTHUCTHICOBAN {
       await getThuocTinhTaiNguyenChienDauCo?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhTheoTuanTu(
         maDinhDanh: getTenLuaTanCongSS020CDCDCS00E03SS020?.getMaDinhDanhVuKhiTanCong,
         thuocTinhHinhAnh: getTenLuaTanCongSS020CDCDCS00E03SS020?.getSieuCapThuocTinh?.getTrangThaiHinhAnh?.getMoHinh,
-        caiDatUuTienKichThuocRS100: true,
+        caiDatUuTienKichThuocRS050: true,
         onThucThiHoanTat: () {},
       );
 
@@ -2709,7 +2709,7 @@ class QUANLYTRANGTHAIHANGARCHIENDAUCO with CAUTRUCTHUCTHICOBAN {
       await getThuocTinhTaiNguyenChienDauCo?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhTheoTuanTu(
         maDinhDanh: getTenLuaTanCongSS030CDCDCS00E03SS020?.getMaDinhDanhVuKhiTanCong,
         thuocTinhHinhAnh: getTenLuaTanCongSS030CDCDCS00E03SS020?.getSieuCapThuocTinh?.getTrangThaiHinhAnh?.getMoHinh,
-        caiDatUuTienKichThuocRS100: true,
+        caiDatUuTienKichThuocRS050: true,
         onThucThiHoanTat: () {},
       );
 
@@ -2763,7 +2763,7 @@ class QUANLYTRANGTHAIHANGARCHIENDAUCO with CAUTRUCTHUCTHICOBAN {
     /// -----
     await Future.delayed(Duration.zero);
 
-    getChienDauCo00E03SS030?.getThuocTinhChienDauCo?.getThuocTinhHinhAnh?.onVoidCaiDatKichThuocRS100(value: true, caiDatUuTien: true, caiDatTuongQuan: true);
+    getChienDauCo00E03SS030?.getThuocTinhChienDauCo?.getThuocTinhHinhAnh?.onVoidCaiDatKichThuocRS050(value: true, caiDatUuTien: true, caiDatTuongQuan: true);
 
     /// -----
     /// TODO:
@@ -2779,7 +2779,7 @@ class QUANLYTRANGTHAIHANGARCHIENDAUCO with CAUTRUCTHUCTHICOBAN {
       await getThuocTinhTaiNguyenChienDauCo?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhTheoTuanTu(
         maDinhDanh: getVuKhiSungChinhSS010CDCDCS00E03SS030?.getMaDinhDanhVuKhiTanCong,
         thuocTinhHinhAnh: getVuKhiSungChinhSS010CDCDCS00E03SS030?.getSieuCapThuocTinh?.getTrangThaiHinhAnh?.getMoHinh,
-        caiDatUuTienKichThuocRS100: true,
+        caiDatUuTienKichThuocRS050: true,
         onThucThiHoanTat: () {},
       );
 
@@ -2787,7 +2787,7 @@ class QUANLYTRANGTHAIHANGARCHIENDAUCO with CAUTRUCTHUCTHICOBAN {
       await getThuocTinhTaiNguyenChienDauCo?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhTheoTuanTu(
         maDinhDanh: getVuKhiSungChinhSS020CDCDCS00E03SS030?.getMaDinhDanhVuKhiTanCong,
         thuocTinhHinhAnh: getVuKhiSungChinhSS020CDCDCS00E03SS030?.getSieuCapThuocTinh?.getTrangThaiHinhAnh?.getMoHinh,
-        caiDatUuTienKichThuocRS100: true,
+        caiDatUuTienKichThuocRS050: true,
         onThucThiHoanTat: () {},
       );
 
@@ -2795,7 +2795,7 @@ class QUANLYTRANGTHAIHANGARCHIENDAUCO with CAUTRUCTHUCTHICOBAN {
       await getThuocTinhTaiNguyenChienDauCo?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhTheoTuanTu(
         maDinhDanh: getVuKhiSungChinhSS030CDCDCS00E03SS030?.getMaDinhDanhVuKhiTanCong,
         thuocTinhHinhAnh: getVuKhiSungChinhSS030CDCDCS00E03SS030?.getSieuCapThuocTinh?.getTrangThaiHinhAnh?.getMoHinh,
-        caiDatUuTienKichThuocRS100: true,
+        caiDatUuTienKichThuocRS050: true,
         onThucThiHoanTat: () {},
       );
 
@@ -2803,7 +2803,7 @@ class QUANLYTRANGTHAIHANGARCHIENDAUCO with CAUTRUCTHUCTHICOBAN {
       await getThuocTinhTaiNguyenChienDauCo?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhTheoTuanTu(
         maDinhDanh: getTenLuaTanCongSS010CDCDCS00E03SS030?.getMaDinhDanhVuKhiTanCong,
         thuocTinhHinhAnh: getTenLuaTanCongSS010CDCDCS00E03SS030?.getSieuCapThuocTinh?.getTrangThaiHinhAnh?.getMoHinh,
-        caiDatUuTienKichThuocRS100: true,
+        caiDatUuTienKichThuocRS050: true,
         onThucThiHoanTat: () {},
       );
 
@@ -2811,7 +2811,7 @@ class QUANLYTRANGTHAIHANGARCHIENDAUCO with CAUTRUCTHUCTHICOBAN {
       await getThuocTinhTaiNguyenChienDauCo?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhTheoTuanTu(
         maDinhDanh: getTenLuaTanCongSS020CDCDCS00E03SS030?.getMaDinhDanhVuKhiTanCong,
         thuocTinhHinhAnh: getTenLuaTanCongSS020CDCDCS00E03SS030?.getSieuCapThuocTinh?.getTrangThaiHinhAnh?.getMoHinh,
-        caiDatUuTienKichThuocRS100: true,
+        caiDatUuTienKichThuocRS050: true,
         onThucThiHoanTat: () {},
       );
 
@@ -2819,7 +2819,7 @@ class QUANLYTRANGTHAIHANGARCHIENDAUCO with CAUTRUCTHUCTHICOBAN {
       await getThuocTinhTaiNguyenChienDauCo?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhTheoTuanTu(
         maDinhDanh: getTenLuaTanCongSS030CDCDCS00E03SS030?.getMaDinhDanhVuKhiTanCong,
         thuocTinhHinhAnh: getTenLuaTanCongSS030CDCDCS00E03SS030?.getSieuCapThuocTinh?.getTrangThaiHinhAnh?.getMoHinh,
-        caiDatUuTienKichThuocRS100: true,
+        caiDatUuTienKichThuocRS050: true,
         onThucThiHoanTat: () {},
       );
 
@@ -2873,7 +2873,7 @@ class QUANLYTRANGTHAIHANGARCHIENDAUCO with CAUTRUCTHUCTHICOBAN {
     /// -----
     await Future.delayed(Duration.zero);
 
-    getChienDauCo00D04SS010?.getThuocTinhChienDauCo?.getThuocTinhHinhAnh?.onVoidCaiDatKichThuocRS100(value: true, caiDatUuTien: true, caiDatTuongQuan: true);
+    getChienDauCo00D04SS010?.getThuocTinhChienDauCo?.getThuocTinhHinhAnh?.onVoidCaiDatKichThuocRS050(value: true, caiDatUuTien: true, caiDatTuongQuan: true);
 
     /// -----
     /// TODO:
@@ -2889,7 +2889,7 @@ class QUANLYTRANGTHAIHANGARCHIENDAUCO with CAUTRUCTHUCTHICOBAN {
       await getThuocTinhTaiNguyenChienDauCo?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhTheoTuanTu(
         maDinhDanh: getVuKhiSungChinhSS010CDCDCS00D04SS010?.getMaDinhDanhVuKhiTanCong,
         thuocTinhHinhAnh: getVuKhiSungChinhSS010CDCDCS00D04SS010?.getSieuCapThuocTinh?.getTrangThaiHinhAnh?.getMoHinh,
-        caiDatUuTienKichThuocRS100: true,
+        caiDatUuTienKichThuocRS050: true,
         onThucThiHoanTat: () {},
       );
 
@@ -2897,7 +2897,7 @@ class QUANLYTRANGTHAIHANGARCHIENDAUCO with CAUTRUCTHUCTHICOBAN {
       await getThuocTinhTaiNguyenChienDauCo?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhTheoTuanTu(
         maDinhDanh: getVuKhiSungChinhSS020CDCDCS00D04SS010?.getMaDinhDanhVuKhiTanCong,
         thuocTinhHinhAnh: getVuKhiSungChinhSS020CDCDCS00D04SS010?.getSieuCapThuocTinh?.getTrangThaiHinhAnh?.getMoHinh,
-        caiDatUuTienKichThuocRS100: true,
+        caiDatUuTienKichThuocRS050: true,
         onThucThiHoanTat: () {},
       );
 
@@ -2905,7 +2905,7 @@ class QUANLYTRANGTHAIHANGARCHIENDAUCO with CAUTRUCTHUCTHICOBAN {
       await getThuocTinhTaiNguyenChienDauCo?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhTheoTuanTu(
         maDinhDanh: getVuKhiSungChinhSS030CDCDCS00D04SS010?.getMaDinhDanhVuKhiTanCong,
         thuocTinhHinhAnh: getVuKhiSungChinhSS030CDCDCS00D04SS010?.getSieuCapThuocTinh?.getTrangThaiHinhAnh?.getMoHinh,
-        caiDatUuTienKichThuocRS100: true,
+        caiDatUuTienKichThuocRS050: true,
         onThucThiHoanTat: () {},
       );
 
@@ -2913,7 +2913,7 @@ class QUANLYTRANGTHAIHANGARCHIENDAUCO with CAUTRUCTHUCTHICOBAN {
       await getThuocTinhTaiNguyenChienDauCo?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhTheoTuanTu(
         maDinhDanh: getTenLuaTanCongSS010CDCDCS00D04SS010?.getMaDinhDanhVuKhiTanCong,
         thuocTinhHinhAnh: getTenLuaTanCongSS010CDCDCS00D04SS010?.getSieuCapThuocTinh?.getTrangThaiHinhAnh?.getMoHinh,
-        caiDatUuTienKichThuocRS100: true,
+        caiDatUuTienKichThuocRS050: true,
         onThucThiHoanTat: () {},
       );
 
@@ -2921,7 +2921,7 @@ class QUANLYTRANGTHAIHANGARCHIENDAUCO with CAUTRUCTHUCTHICOBAN {
       await getThuocTinhTaiNguyenChienDauCo?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhTheoTuanTu(
         maDinhDanh: getTenLuaTanCongSS020CDCDCS00D04SS010?.getMaDinhDanhVuKhiTanCong,
         thuocTinhHinhAnh: getTenLuaTanCongSS020CDCDCS00D04SS010?.getSieuCapThuocTinh?.getTrangThaiHinhAnh?.getMoHinh,
-        caiDatUuTienKichThuocRS100: true,
+        caiDatUuTienKichThuocRS050: true,
         onThucThiHoanTat: () {},
       );
 
@@ -2929,7 +2929,7 @@ class QUANLYTRANGTHAIHANGARCHIENDAUCO with CAUTRUCTHUCTHICOBAN {
       await getThuocTinhTaiNguyenChienDauCo?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhTheoTuanTu(
         maDinhDanh: getTenLuaTanCongSS030CDCDCS00D04SS010?.getMaDinhDanhVuKhiTanCong,
         thuocTinhHinhAnh: getTenLuaTanCongSS030CDCDCS00D04SS010?.getSieuCapThuocTinh?.getTrangThaiHinhAnh?.getMoHinh,
-        caiDatUuTienKichThuocRS100: true,
+        caiDatUuTienKichThuocRS050: true,
         onThucThiHoanTat: () {},
       );
 
@@ -2983,7 +2983,7 @@ class QUANLYTRANGTHAIHANGARCHIENDAUCO with CAUTRUCTHUCTHICOBAN {
     /// -----
     await Future.delayed(Duration.zero);
 
-    getChienDauCo00C05SS010?.getThuocTinhChienDauCo?.getThuocTinhHinhAnh?.onVoidCaiDatKichThuocRS100(value: true, caiDatUuTien: true, caiDatTuongQuan: true);
+    getChienDauCo00C05SS010?.getThuocTinhChienDauCo?.getThuocTinhHinhAnh?.onVoidCaiDatKichThuocRS050(value: true, caiDatUuTien: true, caiDatTuongQuan: true);
 
     /// -----
     /// TODO:
@@ -2999,7 +2999,7 @@ class QUANLYTRANGTHAIHANGARCHIENDAUCO with CAUTRUCTHUCTHICOBAN {
       await getThuocTinhTaiNguyenChienDauCo?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhTheoTuanTu(
         maDinhDanh: getVuKhiSungChinhSS010CDCDCS00C05SS010?.getMaDinhDanhVuKhiTanCong,
         thuocTinhHinhAnh: getVuKhiSungChinhSS010CDCDCS00C05SS010?.getSieuCapThuocTinh?.getTrangThaiHinhAnh?.getMoHinh,
-        caiDatUuTienKichThuocRS100: true,
+        caiDatUuTienKichThuocRS050: true,
         onThucThiHoanTat: () {},
       );
 
@@ -3007,7 +3007,7 @@ class QUANLYTRANGTHAIHANGARCHIENDAUCO with CAUTRUCTHUCTHICOBAN {
       await getThuocTinhTaiNguyenChienDauCo?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhTheoTuanTu(
         maDinhDanh: getVuKhiSungChinhSS020CDCDCS00C05SS010?.getMaDinhDanhVuKhiTanCong,
         thuocTinhHinhAnh: getVuKhiSungChinhSS020CDCDCS00C05SS010?.getSieuCapThuocTinh?.getTrangThaiHinhAnh?.getMoHinh,
-        caiDatUuTienKichThuocRS100: true,
+        caiDatUuTienKichThuocRS050: true,
         onThucThiHoanTat: () {},
       );
 
@@ -3015,7 +3015,7 @@ class QUANLYTRANGTHAIHANGARCHIENDAUCO with CAUTRUCTHUCTHICOBAN {
       await getThuocTinhTaiNguyenChienDauCo?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhTheoTuanTu(
         maDinhDanh: getVuKhiSungChinhSS030CDCDCS00C05SS010?.getMaDinhDanhVuKhiTanCong,
         thuocTinhHinhAnh: getVuKhiSungChinhSS030CDCDCS00C05SS010?.getSieuCapThuocTinh?.getTrangThaiHinhAnh?.getMoHinh,
-        caiDatUuTienKichThuocRS100: true,
+        caiDatUuTienKichThuocRS050: true,
         onThucThiHoanTat: () {},
       );
 
@@ -3023,7 +3023,7 @@ class QUANLYTRANGTHAIHANGARCHIENDAUCO with CAUTRUCTHUCTHICOBAN {
       await getThuocTinhTaiNguyenChienDauCo?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhTheoTuanTu(
         maDinhDanh: getTenLuaTanCongSS010CDCDCS00C05SS010?.getMaDinhDanhVuKhiTanCong,
         thuocTinhHinhAnh: getTenLuaTanCongSS010CDCDCS00C05SS010?.getSieuCapThuocTinh?.getTrangThaiHinhAnh?.getMoHinh,
-        caiDatUuTienKichThuocRS100: true,
+        caiDatUuTienKichThuocRS050: true,
         onThucThiHoanTat: () {},
       );
 
@@ -3031,7 +3031,7 @@ class QUANLYTRANGTHAIHANGARCHIENDAUCO with CAUTRUCTHUCTHICOBAN {
       await getThuocTinhTaiNguyenChienDauCo?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhTheoTuanTu(
         maDinhDanh: getTenLuaTanCongSS020CDCDCS00C05SS010?.getMaDinhDanhVuKhiTanCong,
         thuocTinhHinhAnh: getTenLuaTanCongSS020CDCDCS00C05SS010?.getSieuCapThuocTinh?.getTrangThaiHinhAnh?.getMoHinh,
-        caiDatUuTienKichThuocRS100: true,
+        caiDatUuTienKichThuocRS050: true,
         onThucThiHoanTat: () {},
       );
 
@@ -3039,7 +3039,7 @@ class QUANLYTRANGTHAIHANGARCHIENDAUCO with CAUTRUCTHUCTHICOBAN {
       await getThuocTinhTaiNguyenChienDauCo?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhTheoTuanTu(
         maDinhDanh: getTenLuaTanCongSS030CDCDCS00C05SS010?.getMaDinhDanhVuKhiTanCong,
         thuocTinhHinhAnh: getTenLuaTanCongSS030CDCDCS00C05SS010?.getSieuCapThuocTinh?.getTrangThaiHinhAnh?.getMoHinh,
-        caiDatUuTienKichThuocRS100: true,
+        caiDatUuTienKichThuocRS050: true,
         onThucThiHoanTat: () {},
       );
 
@@ -3093,7 +3093,7 @@ class QUANLYTRANGTHAIHANGARCHIENDAUCO with CAUTRUCTHUCTHICOBAN {
     /// -----
     await Future.delayed(Duration.zero);
 
-    getChienDauCo00B06SS010?.getThuocTinhChienDauCo?.getThuocTinhHinhAnh?.onVoidCaiDatKichThuocRS100(value: true, caiDatUuTien: true, caiDatTuongQuan: true);
+    getChienDauCo00B06SS010?.getThuocTinhChienDauCo?.getThuocTinhHinhAnh?.onVoidCaiDatKichThuocRS050(value: true, caiDatUuTien: true, caiDatTuongQuan: true);
 
     /// -----
     /// TODO:
@@ -3101,7 +3101,7 @@ class QUANLYTRANGTHAIHANGARCHIENDAUCO with CAUTRUCTHUCTHICOBAN {
     await getThuocTinhTaiNguyenChienDauCo?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhTheoTuanTu(
       maDinhDanh: getChienDauCo00B06SS010?.getMaDinhDanhChienDauCo,
       thuocTinhHinhAnh: getChienDauCo00B06SS010?.getThuocTinhChienDauCo?.getThuocTinhHinhAnh,
-      caiDatUuTienKichThuocRS100: true,
+      caiDatUuTienKichThuocRS050: true,
       onThucThiHoanTat: () {},
     );
 
@@ -3110,7 +3110,7 @@ class QUANLYTRANGTHAIHANGARCHIENDAUCO with CAUTRUCTHUCTHICOBAN {
       await getThuocTinhTaiNguyenChienDauCo?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhTheoTuanTu(
         maDinhDanh: getVuKhiSungChinhSS010CDCDCS00B06SS010?.getMaDinhDanhVuKhiTanCong,
         thuocTinhHinhAnh: getVuKhiSungChinhSS010CDCDCS00B06SS010?.getSieuCapThuocTinh?.getTrangThaiHinhAnh?.getMoHinh,
-        caiDatUuTienKichThuocRS100: true,
+        caiDatUuTienKichThuocRS050: true,
         onThucThiHoanTat: () {},
       );
 
@@ -3118,7 +3118,7 @@ class QUANLYTRANGTHAIHANGARCHIENDAUCO with CAUTRUCTHUCTHICOBAN {
       await getThuocTinhTaiNguyenChienDauCo?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhTheoTuanTu(
         maDinhDanh: getVuKhiSungChinhSS020CDCDCS00B06SS010?.getMaDinhDanhVuKhiTanCong,
         thuocTinhHinhAnh: getVuKhiSungChinhSS020CDCDCS00B06SS010?.getSieuCapThuocTinh?.getTrangThaiHinhAnh?.getMoHinh,
-        caiDatUuTienKichThuocRS100: true,
+        caiDatUuTienKichThuocRS050: true,
         onThucThiHoanTat: () {},
       );
 
@@ -3126,7 +3126,7 @@ class QUANLYTRANGTHAIHANGARCHIENDAUCO with CAUTRUCTHUCTHICOBAN {
       await getThuocTinhTaiNguyenChienDauCo?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhTheoTuanTu(
         maDinhDanh: getVuKhiSungChinhSS030CDCDCS00B06SS010?.getMaDinhDanhVuKhiTanCong,
         thuocTinhHinhAnh: getVuKhiSungChinhSS030CDCDCS00B06SS010?.getSieuCapThuocTinh?.getTrangThaiHinhAnh?.getMoHinh,
-        caiDatUuTienKichThuocRS100: true,
+        caiDatUuTienKichThuocRS050: true,
         onThucThiHoanTat: () {},
       );
 
@@ -3134,7 +3134,7 @@ class QUANLYTRANGTHAIHANGARCHIENDAUCO with CAUTRUCTHUCTHICOBAN {
       await getThuocTinhTaiNguyenChienDauCo?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhTheoTuanTu(
         maDinhDanh: getTenLuaTanCongSS010CDCDCS00B06SS010?.getMaDinhDanhVuKhiTanCong,
         thuocTinhHinhAnh: getTenLuaTanCongSS010CDCDCS00B06SS010?.getSieuCapThuocTinh?.getTrangThaiHinhAnh?.getMoHinh,
-        caiDatUuTienKichThuocRS100: true,
+        caiDatUuTienKichThuocRS050: true,
         onThucThiHoanTat: () {},
       );
 
@@ -3142,7 +3142,7 @@ class QUANLYTRANGTHAIHANGARCHIENDAUCO with CAUTRUCTHUCTHICOBAN {
       await getThuocTinhTaiNguyenChienDauCo?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhTheoTuanTu(
         maDinhDanh: getTenLuaTanCongSS020CDCDCS00B06SS010?.getMaDinhDanhVuKhiTanCong,
         thuocTinhHinhAnh: getTenLuaTanCongSS020CDCDCS00B06SS010?.getSieuCapThuocTinh?.getTrangThaiHinhAnh?.getMoHinh,
-        caiDatUuTienKichThuocRS100: true,
+        caiDatUuTienKichThuocRS050: true,
         onThucThiHoanTat: () {},
       );
 
@@ -3150,7 +3150,7 @@ class QUANLYTRANGTHAIHANGARCHIENDAUCO with CAUTRUCTHUCTHICOBAN {
       await getThuocTinhTaiNguyenChienDauCo?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhTheoTuanTu(
         maDinhDanh: getTenLuaTanCongSS030CDCDCS00B06SS010?.getMaDinhDanhVuKhiTanCong,
         thuocTinhHinhAnh: getTenLuaTanCongSS030CDCDCS00B06SS010?.getSieuCapThuocTinh?.getTrangThaiHinhAnh?.getMoHinh,
-        caiDatUuTienKichThuocRS100: true,
+        caiDatUuTienKichThuocRS050: true,
         onThucThiHoanTat: () {},
       );
 
@@ -3204,7 +3204,7 @@ class QUANLYTRANGTHAIHANGARCHIENDAUCO with CAUTRUCTHUCTHICOBAN {
     /// -----
     await Future.delayed(Duration.zero);
 
-    getChienDauCo00A07SS010?.getThuocTinhChienDauCo?.getThuocTinhHinhAnh?.onVoidCaiDatKichThuocRS100(value: true, caiDatUuTien: true, caiDatTuongQuan: true);
+    getChienDauCo00A07SS010?.getThuocTinhChienDauCo?.getThuocTinhHinhAnh?.onVoidCaiDatKichThuocRS050(value: true, caiDatUuTien: true, caiDatTuongQuan: true);
 
     /// -----
     /// TODO:
@@ -3212,7 +3212,7 @@ class QUANLYTRANGTHAIHANGARCHIENDAUCO with CAUTRUCTHUCTHICOBAN {
     await getThuocTinhTaiNguyenChienDauCo?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhTheoTuanTu(
       maDinhDanh: getChienDauCo00A07SS010?.getMaDinhDanhChienDauCo,
       thuocTinhHinhAnh: getChienDauCo00A07SS010?.getThuocTinhChienDauCo?.getThuocTinhHinhAnh,
-      caiDatUuTienKichThuocRS100: true,
+      caiDatUuTienKichThuocRS050: true,
       onThucThiHoanTat: () {},
     );
 
@@ -3221,7 +3221,7 @@ class QUANLYTRANGTHAIHANGARCHIENDAUCO with CAUTRUCTHUCTHICOBAN {
       await getThuocTinhTaiNguyenChienDauCo?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhTheoTuanTu(
         maDinhDanh: getVuKhiSungChinhSS010CDCDCS00A07SS010?.getMaDinhDanhVuKhiTanCong,
         thuocTinhHinhAnh: getVuKhiSungChinhSS010CDCDCS00A07SS010?.getSieuCapThuocTinh?.getTrangThaiHinhAnh?.getMoHinh,
-        caiDatUuTienKichThuocRS100: true,
+        caiDatUuTienKichThuocRS050: true,
         onThucThiHoanTat: () {},
       );
 
@@ -3229,7 +3229,7 @@ class QUANLYTRANGTHAIHANGARCHIENDAUCO with CAUTRUCTHUCTHICOBAN {
       await getThuocTinhTaiNguyenChienDauCo?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhTheoTuanTu(
         maDinhDanh: getVuKhiSungChinhSS020CDCDCS00A07SS010?.getMaDinhDanhVuKhiTanCong,
         thuocTinhHinhAnh: getVuKhiSungChinhSS020CDCDCS00A07SS010?.getSieuCapThuocTinh?.getTrangThaiHinhAnh?.getMoHinh,
-        caiDatUuTienKichThuocRS100: true,
+        caiDatUuTienKichThuocRS050: true,
         onThucThiHoanTat: () {},
       );
 
@@ -3237,7 +3237,7 @@ class QUANLYTRANGTHAIHANGARCHIENDAUCO with CAUTRUCTHUCTHICOBAN {
       await getThuocTinhTaiNguyenChienDauCo?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhTheoTuanTu(
         maDinhDanh: getVuKhiSungChinhSS030CDCDCS00A07SS010?.getMaDinhDanhVuKhiTanCong,
         thuocTinhHinhAnh: getVuKhiSungChinhSS030CDCDCS00A07SS010?.getSieuCapThuocTinh?.getTrangThaiHinhAnh?.getMoHinh,
-        caiDatUuTienKichThuocRS100: true,
+        caiDatUuTienKichThuocRS050: true,
         onThucThiHoanTat: () {},
       );
 
@@ -3245,7 +3245,7 @@ class QUANLYTRANGTHAIHANGARCHIENDAUCO with CAUTRUCTHUCTHICOBAN {
       await getThuocTinhTaiNguyenChienDauCo?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhTheoTuanTu(
         maDinhDanh: getTenLuaTanCongSS010CDCDCS00A07SS010?.getMaDinhDanhVuKhiTanCong,
         thuocTinhHinhAnh: getTenLuaTanCongSS010CDCDCS00A07SS010?.getSieuCapThuocTinh?.getTrangThaiHinhAnh?.getMoHinh,
-        caiDatUuTienKichThuocRS100: true,
+        caiDatUuTienKichThuocRS050: true,
         onThucThiHoanTat: () {},
       );
 
@@ -3253,7 +3253,7 @@ class QUANLYTRANGTHAIHANGARCHIENDAUCO with CAUTRUCTHUCTHICOBAN {
       await getThuocTinhTaiNguyenChienDauCo?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhTheoTuanTu(
         maDinhDanh: getTenLuaTanCongSS020CDCDCS00A07SS010?.getMaDinhDanhVuKhiTanCong,
         thuocTinhHinhAnh: getTenLuaTanCongSS020CDCDCS00A07SS010?.getSieuCapThuocTinh?.getTrangThaiHinhAnh?.getMoHinh,
-        caiDatUuTienKichThuocRS100: true,
+        caiDatUuTienKichThuocRS050: true,
         onThucThiHoanTat: () {},
       );
 
@@ -3261,7 +3261,7 @@ class QUANLYTRANGTHAIHANGARCHIENDAUCO with CAUTRUCTHUCTHICOBAN {
       await getThuocTinhTaiNguyenChienDauCo?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhTheoTuanTu(
         maDinhDanh: getTenLuaTanCongSS030CDCDCS00A07SS010?.getMaDinhDanhVuKhiTanCong,
         thuocTinhHinhAnh: getTenLuaTanCongSS030CDCDCS00A07SS010?.getSieuCapThuocTinh?.getTrangThaiHinhAnh?.getMoHinh,
-        caiDatUuTienKichThuocRS100: true,
+        caiDatUuTienKichThuocRS050: true,
         onThucThiHoanTat: () {},
       );
 
@@ -3315,7 +3315,7 @@ class QUANLYTRANGTHAIHANGARCHIENDAUCO with CAUTRUCTHUCTHICOBAN {
     /// -----
     await Future.delayed(Duration.zero);
 
-    getChienDauCo00S08SS010?.getThuocTinhChienDauCo?.getThuocTinhHinhAnh?.onVoidCaiDatKichThuocRS100(value: true, caiDatUuTien: true, caiDatTuongQuan: true);
+    getChienDauCo00S08SS010?.getThuocTinhChienDauCo?.getThuocTinhHinhAnh?.onVoidCaiDatKichThuocRS050(value: true, caiDatUuTien: true, caiDatTuongQuan: true);
 
     /// -----
     /// TODO:
@@ -3323,7 +3323,7 @@ class QUANLYTRANGTHAIHANGARCHIENDAUCO with CAUTRUCTHUCTHICOBAN {
     await getThuocTinhTaiNguyenChienDauCo?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhTheoTuanTu(
       maDinhDanh: getChienDauCo00S08SS010?.getMaDinhDanhChienDauCo,
       thuocTinhHinhAnh: getChienDauCo00S08SS010?.getThuocTinhChienDauCo?.getThuocTinhHinhAnh,
-      caiDatUuTienKichThuocRS100: true,
+      caiDatUuTienKichThuocRS050: true,
       onThucThiHoanTat: () {},
     );
 
@@ -3332,7 +3332,7 @@ class QUANLYTRANGTHAIHANGARCHIENDAUCO with CAUTRUCTHUCTHICOBAN {
       await getThuocTinhTaiNguyenChienDauCo?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhTheoTuanTu(
         maDinhDanh: getVuKhiSungChinhSS010CDCDCS00S08SS010?.getMaDinhDanhVuKhiTanCong,
         thuocTinhHinhAnh: getVuKhiSungChinhSS010CDCDCS00S08SS010?.getSieuCapThuocTinh?.getTrangThaiHinhAnh?.getMoHinh,
-        caiDatUuTienKichThuocRS100: true,
+        caiDatUuTienKichThuocRS050: true,
         onThucThiHoanTat: () {},
       );
 
@@ -3340,7 +3340,7 @@ class QUANLYTRANGTHAIHANGARCHIENDAUCO with CAUTRUCTHUCTHICOBAN {
       await getThuocTinhTaiNguyenChienDauCo?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhTheoTuanTu(
         maDinhDanh: getVuKhiSungChinhSS020CDCDCS00S08SS010?.getMaDinhDanhVuKhiTanCong,
         thuocTinhHinhAnh: getVuKhiSungChinhSS020CDCDCS00S08SS010?.getSieuCapThuocTinh?.getTrangThaiHinhAnh?.getMoHinh,
-        caiDatUuTienKichThuocRS100: true,
+        caiDatUuTienKichThuocRS050: true,
         onThucThiHoanTat: () {},
       );
 
@@ -3348,7 +3348,7 @@ class QUANLYTRANGTHAIHANGARCHIENDAUCO with CAUTRUCTHUCTHICOBAN {
       await getThuocTinhTaiNguyenChienDauCo?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhTheoTuanTu(
         maDinhDanh: getVuKhiSungChinhSS030CDCDCS00S08SS010?.getMaDinhDanhVuKhiTanCong,
         thuocTinhHinhAnh: getVuKhiSungChinhSS030CDCDCS00S08SS010?.getSieuCapThuocTinh?.getTrangThaiHinhAnh?.getMoHinh,
-        caiDatUuTienKichThuocRS100: true,
+        caiDatUuTienKichThuocRS050: true,
         onThucThiHoanTat: () {},
       );
 
@@ -3356,7 +3356,7 @@ class QUANLYTRANGTHAIHANGARCHIENDAUCO with CAUTRUCTHUCTHICOBAN {
       await getThuocTinhTaiNguyenChienDauCo?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhTheoTuanTu(
         maDinhDanh: getTenLuaTanCongSS010CDCDCS00S08SS010?.getMaDinhDanhVuKhiTanCong,
         thuocTinhHinhAnh: getTenLuaTanCongSS010CDCDCS00S08SS010?.getSieuCapThuocTinh?.getTrangThaiHinhAnh?.getMoHinh,
-        caiDatUuTienKichThuocRS100: true,
+        caiDatUuTienKichThuocRS050: true,
         onThucThiHoanTat: () {},
       );
 
@@ -3364,7 +3364,7 @@ class QUANLYTRANGTHAIHANGARCHIENDAUCO with CAUTRUCTHUCTHICOBAN {
       await getThuocTinhTaiNguyenChienDauCo?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhTheoTuanTu(
         maDinhDanh: getTenLuaTanCongSS020CDCDCS00S08SS010?.getMaDinhDanhVuKhiTanCong,
         thuocTinhHinhAnh: getTenLuaTanCongSS020CDCDCS00S08SS010?.getSieuCapThuocTinh?.getTrangThaiHinhAnh?.getMoHinh,
-        caiDatUuTienKichThuocRS100: true,
+        caiDatUuTienKichThuocRS050: true,
         onThucThiHoanTat: () {},
       );
 
@@ -3372,7 +3372,7 @@ class QUANLYTRANGTHAIHANGARCHIENDAUCO with CAUTRUCTHUCTHICOBAN {
       await getThuocTinhTaiNguyenChienDauCo?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhTheoTuanTu(
         maDinhDanh: getTenLuaTanCongSS030CDCDCS00S08SS010?.getMaDinhDanhVuKhiTanCong,
         thuocTinhHinhAnh: getTenLuaTanCongSS030CDCDCS00S08SS010?.getSieuCapThuocTinh?.getTrangThaiHinhAnh?.getMoHinh,
-        caiDatUuTienKichThuocRS100: true,
+        caiDatUuTienKichThuocRS050: true,
         onThucThiHoanTat: () {},
       );
 
@@ -3426,7 +3426,7 @@ class QUANLYTRANGTHAIHANGARCHIENDAUCO with CAUTRUCTHUCTHICOBAN {
     /// -----
     await Future.delayed(Duration.zero);
 
-    getChienDauCo0SS09SS010?.getThuocTinhChienDauCo?.getThuocTinhHinhAnh?.onVoidCaiDatKichThuocRS100(value: true, caiDatUuTien: true, caiDatTuongQuan: true);
+    getChienDauCo0SS09SS010?.getThuocTinhChienDauCo?.getThuocTinhHinhAnh?.onVoidCaiDatKichThuocRS050(value: true, caiDatUuTien: true, caiDatTuongQuan: true);
 
     /// -----
     /// TODO:
@@ -3434,7 +3434,7 @@ class QUANLYTRANGTHAIHANGARCHIENDAUCO with CAUTRUCTHUCTHICOBAN {
     await getThuocTinhTaiNguyenChienDauCo?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhTheoTuanTu(
       maDinhDanh: getChienDauCo0SS09SS010?.getMaDinhDanhChienDauCo,
       thuocTinhHinhAnh: getChienDauCo0SS09SS010?.getThuocTinhChienDauCo?.getThuocTinhHinhAnh,
-      caiDatUuTienKichThuocRS100: true,
+      caiDatUuTienKichThuocRS050: true,
       onThucThiHoanTat: () {},
     );
 
@@ -3443,7 +3443,7 @@ class QUANLYTRANGTHAIHANGARCHIENDAUCO with CAUTRUCTHUCTHICOBAN {
       await getThuocTinhTaiNguyenChienDauCo?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhTheoTuanTu(
         maDinhDanh: getVuKhiSungChinhSS010CDCDCS0SS09SS010?.getMaDinhDanhVuKhiTanCong,
         thuocTinhHinhAnh: getVuKhiSungChinhSS010CDCDCS0SS09SS010?.getSieuCapThuocTinh?.getTrangThaiHinhAnh?.getMoHinh,
-        caiDatUuTienKichThuocRS100: true,
+        caiDatUuTienKichThuocRS050: true,
         onThucThiHoanTat: () {},
       );
 
@@ -3451,7 +3451,7 @@ class QUANLYTRANGTHAIHANGARCHIENDAUCO with CAUTRUCTHUCTHICOBAN {
       await getThuocTinhTaiNguyenChienDauCo?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhTheoTuanTu(
         maDinhDanh: getVuKhiSungChinhSS020CDCDCS0SS09SS010?.getMaDinhDanhVuKhiTanCong,
         thuocTinhHinhAnh: getVuKhiSungChinhSS020CDCDCS0SS09SS010?.getSieuCapThuocTinh?.getTrangThaiHinhAnh?.getMoHinh,
-        caiDatUuTienKichThuocRS100: true,
+        caiDatUuTienKichThuocRS050: true,
         onThucThiHoanTat: () {},
       );
 
@@ -3459,7 +3459,7 @@ class QUANLYTRANGTHAIHANGARCHIENDAUCO with CAUTRUCTHUCTHICOBAN {
       await getThuocTinhTaiNguyenChienDauCo?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhTheoTuanTu(
         maDinhDanh: getVuKhiSungChinhSS030CDCDCS0SS09SS010?.getMaDinhDanhVuKhiTanCong,
         thuocTinhHinhAnh: getVuKhiSungChinhSS030CDCDCS0SS09SS010?.getSieuCapThuocTinh?.getTrangThaiHinhAnh?.getMoHinh,
-        caiDatUuTienKichThuocRS100: true,
+        caiDatUuTienKichThuocRS050: true,
         onThucThiHoanTat: () {},
       );
 
@@ -3467,7 +3467,7 @@ class QUANLYTRANGTHAIHANGARCHIENDAUCO with CAUTRUCTHUCTHICOBAN {
       await getThuocTinhTaiNguyenChienDauCo?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhTheoTuanTu(
         maDinhDanh: getTenLuaTanCongSS010CDCDCS0SS09SS010?.getMaDinhDanhVuKhiTanCong,
         thuocTinhHinhAnh: getTenLuaTanCongSS010CDCDCS0SS09SS010?.getSieuCapThuocTinh?.getTrangThaiHinhAnh?.getMoHinh,
-        caiDatUuTienKichThuocRS100: true,
+        caiDatUuTienKichThuocRS050: true,
         onThucThiHoanTat: () {},
       );
 
@@ -3475,7 +3475,7 @@ class QUANLYTRANGTHAIHANGARCHIENDAUCO with CAUTRUCTHUCTHICOBAN {
       await getThuocTinhTaiNguyenChienDauCo?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhTheoTuanTu(
         maDinhDanh: getTenLuaTanCongSS020CDCDCS0SS09SS010?.getMaDinhDanhVuKhiTanCong,
         thuocTinhHinhAnh: getTenLuaTanCongSS020CDCDCS0SS09SS010?.getSieuCapThuocTinh?.getTrangThaiHinhAnh?.getMoHinh,
-        caiDatUuTienKichThuocRS100: true,
+        caiDatUuTienKichThuocRS050: true,
         onThucThiHoanTat: () {},
       );
 
@@ -3483,7 +3483,7 @@ class QUANLYTRANGTHAIHANGARCHIENDAUCO with CAUTRUCTHUCTHICOBAN {
       await getThuocTinhTaiNguyenChienDauCo?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhTheoTuanTu(
         maDinhDanh: getTenLuaTanCongSS030CDCDCS0SS09SS010?.getMaDinhDanhVuKhiTanCong,
         thuocTinhHinhAnh: getTenLuaTanCongSS030CDCDCS0SS09SS010?.getSieuCapThuocTinh?.getTrangThaiHinhAnh?.getMoHinh,
-        caiDatUuTienKichThuocRS100: true,
+        caiDatUuTienKichThuocRS050: true,
         onThucThiHoanTat: () {},
       );
 
@@ -3537,7 +3537,7 @@ class QUANLYTRANGTHAIHANGARCHIENDAUCO with CAUTRUCTHUCTHICOBAN {
     /// -----
     await Future.delayed(Duration.zero);
 
-    getChienDauCo0SS09SS020?.getThuocTinhChienDauCo?.getThuocTinhHinhAnh?.onVoidCaiDatKichThuocRS100(value: true, caiDatUuTien: true, caiDatTuongQuan: true);
+    getChienDauCo0SS09SS020?.getThuocTinhChienDauCo?.getThuocTinhHinhAnh?.onVoidCaiDatKichThuocRS050(value: true, caiDatUuTien: true, caiDatTuongQuan: true);
 
     /// -----
     /// TODO:
@@ -3553,7 +3553,7 @@ class QUANLYTRANGTHAIHANGARCHIENDAUCO with CAUTRUCTHUCTHICOBAN {
       await getThuocTinhTaiNguyenChienDauCo?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhTheoTuanTu(
         maDinhDanh: getVuKhiSungChinhSS010CDCDCS0SS09SS020?.getMaDinhDanhVuKhiTanCong,
         thuocTinhHinhAnh: getVuKhiSungChinhSS010CDCDCS0SS09SS020?.getSieuCapThuocTinh?.getTrangThaiHinhAnh?.getMoHinh,
-        caiDatUuTienKichThuocRS100: true,
+        caiDatUuTienKichThuocRS050: true,
         onThucThiHoanTat: () {},
       );
 
@@ -3561,7 +3561,7 @@ class QUANLYTRANGTHAIHANGARCHIENDAUCO with CAUTRUCTHUCTHICOBAN {
       await getThuocTinhTaiNguyenChienDauCo?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhTheoTuanTu(
         maDinhDanh: getVuKhiSungChinhSS020CDCDCS0SS09SS020?.getMaDinhDanhVuKhiTanCong,
         thuocTinhHinhAnh: getVuKhiSungChinhSS020CDCDCS0SS09SS020?.getSieuCapThuocTinh?.getTrangThaiHinhAnh?.getMoHinh,
-        caiDatUuTienKichThuocRS100: true,
+        caiDatUuTienKichThuocRS050: true,
         onThucThiHoanTat: () {},
       );
 
@@ -3569,7 +3569,7 @@ class QUANLYTRANGTHAIHANGARCHIENDAUCO with CAUTRUCTHUCTHICOBAN {
       await getThuocTinhTaiNguyenChienDauCo?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhTheoTuanTu(
         maDinhDanh: getVuKhiSungChinhSS030CDCDCS0SS09SS020?.getMaDinhDanhVuKhiTanCong,
         thuocTinhHinhAnh: getVuKhiSungChinhSS030CDCDCS0SS09SS020?.getSieuCapThuocTinh?.getTrangThaiHinhAnh?.getMoHinh,
-        caiDatUuTienKichThuocRS100: true,
+        caiDatUuTienKichThuocRS050: true,
         onThucThiHoanTat: () {},
       );
 
@@ -3577,7 +3577,7 @@ class QUANLYTRANGTHAIHANGARCHIENDAUCO with CAUTRUCTHUCTHICOBAN {
       await getThuocTinhTaiNguyenChienDauCo?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhTheoTuanTu(
         maDinhDanh: getTenLuaTanCongSS010CDCDCS0SS09SS020?.getMaDinhDanhVuKhiTanCong,
         thuocTinhHinhAnh: getTenLuaTanCongSS010CDCDCS0SS09SS020?.getSieuCapThuocTinh?.getTrangThaiHinhAnh?.getMoHinh,
-        caiDatUuTienKichThuocRS100: true,
+        caiDatUuTienKichThuocRS050: true,
         onThucThiHoanTat: () {},
       );
 
@@ -3585,7 +3585,7 @@ class QUANLYTRANGTHAIHANGARCHIENDAUCO with CAUTRUCTHUCTHICOBAN {
       await getThuocTinhTaiNguyenChienDauCo?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhTheoTuanTu(
         maDinhDanh: getTenLuaTanCongSS020CDCDCS0SS09SS020?.getMaDinhDanhVuKhiTanCong,
         thuocTinhHinhAnh: getTenLuaTanCongSS020CDCDCS0SS09SS020?.getSieuCapThuocTinh?.getTrangThaiHinhAnh?.getMoHinh,
-        caiDatUuTienKichThuocRS100: true,
+        caiDatUuTienKichThuocRS050: true,
         onThucThiHoanTat: () {},
       );
 
@@ -3593,7 +3593,7 @@ class QUANLYTRANGTHAIHANGARCHIENDAUCO with CAUTRUCTHUCTHICOBAN {
       await getThuocTinhTaiNguyenChienDauCo?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhTheoTuanTu(
         maDinhDanh: getTenLuaTanCongSS030CDCDCS0SS09SS020?.getMaDinhDanhVuKhiTanCong,
         thuocTinhHinhAnh: getTenLuaTanCongSS030CDCDCS0SS09SS020?.getSieuCapThuocTinh?.getTrangThaiHinhAnh?.getMoHinh,
-        caiDatUuTienKichThuocRS100: true,
+        caiDatUuTienKichThuocRS050: true,
         onThucThiHoanTat: () {},
       );
 
@@ -3647,7 +3647,7 @@ class QUANLYTRANGTHAIHANGARCHIENDAUCO with CAUTRUCTHUCTHICOBAN {
     /// -----
     await Future.delayed(Duration.zero);
 
-    getChienDauCo0SS09SS030?.getThuocTinhChienDauCo?.getThuocTinhHinhAnh?.onVoidCaiDatKichThuocRS100(value: true, caiDatUuTien: true, caiDatTuongQuan: true);
+    getChienDauCo0SS09SS030?.getThuocTinhChienDauCo?.getThuocTinhHinhAnh?.onVoidCaiDatKichThuocRS050(value: true, caiDatUuTien: true, caiDatTuongQuan: true);
 
     /// -----
     /// TODO:
@@ -3655,7 +3655,7 @@ class QUANLYTRANGTHAIHANGARCHIENDAUCO with CAUTRUCTHUCTHICOBAN {
     await getThuocTinhTaiNguyenChienDauCo?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhTheoTuanTu(
       maDinhDanh: getChienDauCo0SS09SS030?.getMaDinhDanhChienDauCo,
       thuocTinhHinhAnh: getChienDauCo0SS09SS030?.getThuocTinhChienDauCo?.getThuocTinhHinhAnh,
-      caiDatUuTienKichThuocRS100: true,
+      caiDatUuTienKichThuocRS050: true,
       onThucThiHoanTat: () {},
     );
 
@@ -3664,7 +3664,7 @@ class QUANLYTRANGTHAIHANGARCHIENDAUCO with CAUTRUCTHUCTHICOBAN {
       await getThuocTinhTaiNguyenChienDauCo?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhTheoTuanTu(
         maDinhDanh: getVuKhiSungChinhSS010CDCDCS0SS09SS030?.getMaDinhDanhVuKhiTanCong,
         thuocTinhHinhAnh: getVuKhiSungChinhSS010CDCDCS0SS09SS030?.getSieuCapThuocTinh?.getTrangThaiHinhAnh?.getMoHinh,
-        caiDatUuTienKichThuocRS100: true,
+        caiDatUuTienKichThuocRS050: true,
         onThucThiHoanTat: () {},
       );
 
@@ -3672,7 +3672,7 @@ class QUANLYTRANGTHAIHANGARCHIENDAUCO with CAUTRUCTHUCTHICOBAN {
       await getThuocTinhTaiNguyenChienDauCo?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhTheoTuanTu(
         maDinhDanh: getVuKhiSungChinhSS020CDCDCS0SS09SS030?.getMaDinhDanhVuKhiTanCong,
         thuocTinhHinhAnh: getVuKhiSungChinhSS020CDCDCS0SS09SS030?.getSieuCapThuocTinh?.getTrangThaiHinhAnh?.getMoHinh,
-        caiDatUuTienKichThuocRS100: true,
+        caiDatUuTienKichThuocRS050: true,
         onThucThiHoanTat: () {},
       );
 
@@ -3680,7 +3680,7 @@ class QUANLYTRANGTHAIHANGARCHIENDAUCO with CAUTRUCTHUCTHICOBAN {
       await getThuocTinhTaiNguyenChienDauCo?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhTheoTuanTu(
         maDinhDanh: getVuKhiSungChinhSS030CDCDCS0SS09SS030?.getMaDinhDanhVuKhiTanCong,
         thuocTinhHinhAnh: getVuKhiSungChinhSS030CDCDCS0SS09SS030?.getSieuCapThuocTinh?.getTrangThaiHinhAnh?.getMoHinh,
-        caiDatUuTienKichThuocRS100: true,
+        caiDatUuTienKichThuocRS050: true,
         onThucThiHoanTat: () {},
       );
 
@@ -3688,7 +3688,7 @@ class QUANLYTRANGTHAIHANGARCHIENDAUCO with CAUTRUCTHUCTHICOBAN {
       await getThuocTinhTaiNguyenChienDauCo?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhTheoTuanTu(
         maDinhDanh: getTenLuaTanCongSS010CDCDCS0SS09SS030?.getMaDinhDanhVuKhiTanCong,
         thuocTinhHinhAnh: getTenLuaTanCongSS010CDCDCS0SS09SS030?.getSieuCapThuocTinh?.getTrangThaiHinhAnh?.getMoHinh,
-        caiDatUuTienKichThuocRS100: true,
+        caiDatUuTienKichThuocRS050: true,
         onThucThiHoanTat: () {},
       );
 
@@ -3696,7 +3696,7 @@ class QUANLYTRANGTHAIHANGARCHIENDAUCO with CAUTRUCTHUCTHICOBAN {
       await getThuocTinhTaiNguyenChienDauCo?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhTheoTuanTu(
         maDinhDanh: getTenLuaTanCongSS020CDCDCS0SS09SS030?.getMaDinhDanhVuKhiTanCong,
         thuocTinhHinhAnh: getTenLuaTanCongSS020CDCDCS0SS09SS030?.getSieuCapThuocTinh?.getTrangThaiHinhAnh?.getMoHinh,
-        caiDatUuTienKichThuocRS100: true,
+        caiDatUuTienKichThuocRS050: true,
         onThucThiHoanTat: () {},
       );
 
@@ -3704,7 +3704,7 @@ class QUANLYTRANGTHAIHANGARCHIENDAUCO with CAUTRUCTHUCTHICOBAN {
       await getThuocTinhTaiNguyenChienDauCo?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhTheoTuanTu(
         maDinhDanh: getTenLuaTanCongSS030CDCDCS0SS09SS030?.getMaDinhDanhVuKhiTanCong,
         thuocTinhHinhAnh: getTenLuaTanCongSS030CDCDCS0SS09SS030?.getSieuCapThuocTinh?.getTrangThaiHinhAnh?.getMoHinh,
-        caiDatUuTienKichThuocRS100: true,
+        caiDatUuTienKichThuocRS050: true,
         onThucThiHoanTat: () {},
       );
 
@@ -3758,7 +3758,7 @@ class QUANLYTRANGTHAIHANGARCHIENDAUCO with CAUTRUCTHUCTHICOBAN {
     /// -----
     await Future.delayed(Duration.zero);
 
-    getChienDauCoSSS10SS010?.getThuocTinhChienDauCo?.getThuocTinhHinhAnh?.onVoidCaiDatKichThuocRS100(value: true, caiDatUuTien: true, caiDatTuongQuan: true);
+    getChienDauCoSSS10SS010?.getThuocTinhChienDauCo?.getThuocTinhHinhAnh?.onVoidCaiDatKichThuocRS050(value: true, caiDatUuTien: true, caiDatTuongQuan: true);
 
     /// -----
     /// TODO:
@@ -3766,7 +3766,7 @@ class QUANLYTRANGTHAIHANGARCHIENDAUCO with CAUTRUCTHUCTHICOBAN {
     await getThuocTinhTaiNguyenChienDauCo?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhTheoTuanTu(
       maDinhDanh: getChienDauCoSSS10SS010?.getMaDinhDanhChienDauCo,
       thuocTinhHinhAnh: getChienDauCoSSS10SS010?.getThuocTinhChienDauCo?.getThuocTinhHinhAnh,
-      caiDatUuTienKichThuocRS100: true,
+      caiDatUuTienKichThuocRS050: true,
       onThucThiHoanTat: () {},
     );
 
@@ -3775,7 +3775,7 @@ class QUANLYTRANGTHAIHANGARCHIENDAUCO with CAUTRUCTHUCTHICOBAN {
       await getThuocTinhTaiNguyenChienDauCo?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhTheoTuanTu(
         maDinhDanh: getVuKhiSungChinhSS010CDCDCSSSS10SS010?.getMaDinhDanhVuKhiTanCong,
         thuocTinhHinhAnh: getVuKhiSungChinhSS010CDCDCSSSS10SS010?.getSieuCapThuocTinh?.getTrangThaiHinhAnh?.getMoHinh,
-        caiDatUuTienKichThuocRS100: true,
+        caiDatUuTienKichThuocRS050: true,
         onThucThiHoanTat: () {},
       );
 
@@ -3783,7 +3783,7 @@ class QUANLYTRANGTHAIHANGARCHIENDAUCO with CAUTRUCTHUCTHICOBAN {
       await getThuocTinhTaiNguyenChienDauCo?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhTheoTuanTu(
         maDinhDanh: getVuKhiSungChinhSS020CDCDCSSSS10SS010?.getMaDinhDanhVuKhiTanCong,
         thuocTinhHinhAnh: getVuKhiSungChinhSS020CDCDCSSSS10SS010?.getSieuCapThuocTinh?.getTrangThaiHinhAnh?.getMoHinh,
-        caiDatUuTienKichThuocRS100: true,
+        caiDatUuTienKichThuocRS050: true,
         onThucThiHoanTat: () {},
       );
 
@@ -3791,7 +3791,7 @@ class QUANLYTRANGTHAIHANGARCHIENDAUCO with CAUTRUCTHUCTHICOBAN {
       await getThuocTinhTaiNguyenChienDauCo?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhTheoTuanTu(
         maDinhDanh: getVuKhiSungChinhSS030CDCDCSSSS10SS010?.getMaDinhDanhVuKhiTanCong,
         thuocTinhHinhAnh: getVuKhiSungChinhSS030CDCDCSSSS10SS010?.getSieuCapThuocTinh?.getTrangThaiHinhAnh?.getMoHinh,
-        caiDatUuTienKichThuocRS100: true,
+        caiDatUuTienKichThuocRS050: true,
         onThucThiHoanTat: () {},
       );
 
@@ -3799,7 +3799,7 @@ class QUANLYTRANGTHAIHANGARCHIENDAUCO with CAUTRUCTHUCTHICOBAN {
       await getThuocTinhTaiNguyenChienDauCo?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhTheoTuanTu(
         maDinhDanh: getTenLuaTanCongSS010CDCDCSSSS10SS010?.getMaDinhDanhVuKhiTanCong,
         thuocTinhHinhAnh: getTenLuaTanCongSS010CDCDCSSSS10SS010?.getSieuCapThuocTinh?.getTrangThaiHinhAnh?.getMoHinh,
-        caiDatUuTienKichThuocRS100: true,
+        caiDatUuTienKichThuocRS050: true,
         onThucThiHoanTat: () {},
       );
 
@@ -3807,7 +3807,7 @@ class QUANLYTRANGTHAIHANGARCHIENDAUCO with CAUTRUCTHUCTHICOBAN {
       await getThuocTinhTaiNguyenChienDauCo?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhTheoTuanTu(
         maDinhDanh: getTenLuaTanCongSS020CDCDCSSSS10SS010?.getMaDinhDanhVuKhiTanCong,
         thuocTinhHinhAnh: getTenLuaTanCongSS020CDCDCSSSS10SS010?.getSieuCapThuocTinh?.getTrangThaiHinhAnh?.getMoHinh,
-        caiDatUuTienKichThuocRS100: true,
+        caiDatUuTienKichThuocRS050: true,
         onThucThiHoanTat: () {},
       );
 
@@ -3815,7 +3815,7 @@ class QUANLYTRANGTHAIHANGARCHIENDAUCO with CAUTRUCTHUCTHICOBAN {
       await getThuocTinhTaiNguyenChienDauCo?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhTheoTuanTu(
         maDinhDanh: getTenLuaTanCongSS030CDCDCSSSS10SS010?.getMaDinhDanhVuKhiTanCong,
         thuocTinhHinhAnh: getTenLuaTanCongSS030CDCDCSSSS10SS010?.getSieuCapThuocTinh?.getTrangThaiHinhAnh?.getMoHinh,
-        caiDatUuTienKichThuocRS100: true,
+        caiDatUuTienKichThuocRS050: true,
         onThucThiHoanTat: () {},
       );
 
@@ -3869,7 +3869,7 @@ class QUANLYTRANGTHAIHANGARCHIENDAUCO with CAUTRUCTHUCTHICOBAN {
     /// -----
     await Future.delayed(Duration.zero);
 
-    getChienDauCoSSS10SS020?.getThuocTinhChienDauCo?.getThuocTinhHinhAnh?.onVoidCaiDatKichThuocRS100(value: true, caiDatUuTien: true, caiDatTuongQuan: true);
+    getChienDauCoSSS10SS020?.getThuocTinhChienDauCo?.getThuocTinhHinhAnh?.onVoidCaiDatKichThuocRS050(value: true, caiDatUuTien: true, caiDatTuongQuan: true);
 
     /// -----
     /// TODO:
@@ -3877,7 +3877,7 @@ class QUANLYTRANGTHAIHANGARCHIENDAUCO with CAUTRUCTHUCTHICOBAN {
     await getThuocTinhTaiNguyenChienDauCo?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhTheoTuanTu(
       maDinhDanh: getChienDauCoSSS10SS020?.getMaDinhDanhChienDauCo,
       thuocTinhHinhAnh: getChienDauCoSSS10SS020?.getThuocTinhChienDauCo?.getThuocTinhHinhAnh,
-      caiDatUuTienKichThuocRS100: true,
+      caiDatUuTienKichThuocRS050: true,
       onThucThiHoanTat: () {},
     );
 
@@ -3886,7 +3886,7 @@ class QUANLYTRANGTHAIHANGARCHIENDAUCO with CAUTRUCTHUCTHICOBAN {
       await getThuocTinhTaiNguyenChienDauCo?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhTheoTuanTu(
         maDinhDanh: getVuKhiSungChinhSS010CDCDCSSSS10SS020?.getMaDinhDanhVuKhiTanCong,
         thuocTinhHinhAnh: getVuKhiSungChinhSS010CDCDCSSSS10SS020?.getSieuCapThuocTinh?.getTrangThaiHinhAnh?.getMoHinh,
-        caiDatUuTienKichThuocRS100: true,
+        caiDatUuTienKichThuocRS050: true,
         onThucThiHoanTat: () {},
       );
 
@@ -3894,7 +3894,7 @@ class QUANLYTRANGTHAIHANGARCHIENDAUCO with CAUTRUCTHUCTHICOBAN {
       await getThuocTinhTaiNguyenChienDauCo?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhTheoTuanTu(
         maDinhDanh: getVuKhiSungChinhSS020CDCDCSSSS10SS020?.getMaDinhDanhVuKhiTanCong,
         thuocTinhHinhAnh: getVuKhiSungChinhSS020CDCDCSSSS10SS020?.getSieuCapThuocTinh?.getTrangThaiHinhAnh?.getMoHinh,
-        caiDatUuTienKichThuocRS100: true,
+        caiDatUuTienKichThuocRS050: true,
         onThucThiHoanTat: () {},
       );
 
@@ -3902,7 +3902,7 @@ class QUANLYTRANGTHAIHANGARCHIENDAUCO with CAUTRUCTHUCTHICOBAN {
       await getThuocTinhTaiNguyenChienDauCo?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhTheoTuanTu(
         maDinhDanh: getVuKhiSungChinhSS030CDCDCSSSS10SS020?.getMaDinhDanhVuKhiTanCong,
         thuocTinhHinhAnh: getVuKhiSungChinhSS030CDCDCSSSS10SS020?.getSieuCapThuocTinh?.getTrangThaiHinhAnh?.getMoHinh,
-        caiDatUuTienKichThuocRS100: true,
+        caiDatUuTienKichThuocRS050: true,
         onThucThiHoanTat: () {},
       );
 
@@ -3910,7 +3910,7 @@ class QUANLYTRANGTHAIHANGARCHIENDAUCO with CAUTRUCTHUCTHICOBAN {
       await getThuocTinhTaiNguyenChienDauCo?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhTheoTuanTu(
         maDinhDanh: getTenLuaTanCongSS010CDCDCSSSS10SS020?.getMaDinhDanhVuKhiTanCong,
         thuocTinhHinhAnh: getTenLuaTanCongSS010CDCDCSSSS10SS020?.getSieuCapThuocTinh?.getTrangThaiHinhAnh?.getMoHinh,
-        caiDatUuTienKichThuocRS100: true,
+        caiDatUuTienKichThuocRS050: true,
         onThucThiHoanTat: () {},
       );
 
@@ -3918,7 +3918,7 @@ class QUANLYTRANGTHAIHANGARCHIENDAUCO with CAUTRUCTHUCTHICOBAN {
       await getThuocTinhTaiNguyenChienDauCo?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhTheoTuanTu(
         maDinhDanh: getTenLuaTanCongSS020CDCDCSSSS10SS020?.getMaDinhDanhVuKhiTanCong,
         thuocTinhHinhAnh: getTenLuaTanCongSS020CDCDCSSSS10SS020?.getSieuCapThuocTinh?.getTrangThaiHinhAnh?.getMoHinh,
-        caiDatUuTienKichThuocRS100: true,
+        caiDatUuTienKichThuocRS050: true,
         onThucThiHoanTat: () {},
       );
 
@@ -3926,7 +3926,7 @@ class QUANLYTRANGTHAIHANGARCHIENDAUCO with CAUTRUCTHUCTHICOBAN {
       await getThuocTinhTaiNguyenChienDauCo?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhTheoTuanTu(
         maDinhDanh: getTenLuaTanCongSS030CDCDCSSSS10SS020?.getMaDinhDanhVuKhiTanCong,
         thuocTinhHinhAnh: getTenLuaTanCongSS030CDCDCSSSS10SS020?.getSieuCapThuocTinh?.getTrangThaiHinhAnh?.getMoHinh,
-        caiDatUuTienKichThuocRS100: true,
+        caiDatUuTienKichThuocRS050: true,
         onThucThiHoanTat: () {},
       );
 
@@ -3980,7 +3980,7 @@ class QUANLYTRANGTHAIHANGARCHIENDAUCO with CAUTRUCTHUCTHICOBAN {
     /// -----
     await Future.delayed(Duration.zero);
 
-    getChienDauCoSSS10SS030?.getThuocTinhChienDauCo?.getThuocTinhHinhAnh?.onVoidCaiDatKichThuocRS100(value: true, caiDatUuTien: true, caiDatTuongQuan: true);
+    getChienDauCoSSS10SS030?.getThuocTinhChienDauCo?.getThuocTinhHinhAnh?.onVoidCaiDatKichThuocRS050(value: true, caiDatUuTien: true, caiDatTuongQuan: true);
 
     /// -----
     /// TODO:
@@ -3988,7 +3988,7 @@ class QUANLYTRANGTHAIHANGARCHIENDAUCO with CAUTRUCTHUCTHICOBAN {
     await getThuocTinhTaiNguyenChienDauCo?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhTheoTuanTu(
       maDinhDanh: getChienDauCoSSS10SS030?.getMaDinhDanhChienDauCo,
       thuocTinhHinhAnh: getChienDauCoSSS10SS030?.getThuocTinhChienDauCo?.getThuocTinhHinhAnh,
-      caiDatUuTienKichThuocRS100: true,
+      caiDatUuTienKichThuocRS050: true,
       onThucThiHoanTat: () {},
     );
 
@@ -3997,7 +3997,7 @@ class QUANLYTRANGTHAIHANGARCHIENDAUCO with CAUTRUCTHUCTHICOBAN {
       await getThuocTinhTaiNguyenChienDauCo?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhTheoTuanTu(
         maDinhDanh: getVuKhiSungChinhSS010CDCDCSSSS10SS030?.getMaDinhDanhVuKhiTanCong,
         thuocTinhHinhAnh: getVuKhiSungChinhSS010CDCDCSSSS10SS030?.getSieuCapThuocTinh?.getTrangThaiHinhAnh?.getMoHinh,
-        caiDatUuTienKichThuocRS100: true,
+        caiDatUuTienKichThuocRS050: true,
         onThucThiHoanTat: () {},
       );
 
@@ -4005,7 +4005,7 @@ class QUANLYTRANGTHAIHANGARCHIENDAUCO with CAUTRUCTHUCTHICOBAN {
       await getThuocTinhTaiNguyenChienDauCo?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhTheoTuanTu(
         maDinhDanh: getVuKhiSungChinhSS020CDCDCSSSS10SS030?.getMaDinhDanhVuKhiTanCong,
         thuocTinhHinhAnh: getVuKhiSungChinhSS020CDCDCSSSS10SS030?.getSieuCapThuocTinh?.getTrangThaiHinhAnh?.getMoHinh,
-        caiDatUuTienKichThuocRS100: true,
+        caiDatUuTienKichThuocRS050: true,
         onThucThiHoanTat: () {},
       );
 
@@ -4013,7 +4013,7 @@ class QUANLYTRANGTHAIHANGARCHIENDAUCO with CAUTRUCTHUCTHICOBAN {
       await getThuocTinhTaiNguyenChienDauCo?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhTheoTuanTu(
         maDinhDanh: getVuKhiSungChinhSS030CDCDCSSSS10SS030?.getMaDinhDanhVuKhiTanCong,
         thuocTinhHinhAnh: getVuKhiSungChinhSS030CDCDCSSSS10SS030?.getSieuCapThuocTinh?.getTrangThaiHinhAnh?.getMoHinh,
-        caiDatUuTienKichThuocRS100: true,
+        caiDatUuTienKichThuocRS050: true,
         onThucThiHoanTat: () {},
       );
 
@@ -4021,7 +4021,7 @@ class QUANLYTRANGTHAIHANGARCHIENDAUCO with CAUTRUCTHUCTHICOBAN {
       await getThuocTinhTaiNguyenChienDauCo?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhTheoTuanTu(
         maDinhDanh: getTenLuaTanCongSS010CDCDCSSSS10SS030?.getMaDinhDanhVuKhiTanCong,
         thuocTinhHinhAnh: getTenLuaTanCongSS010CDCDCSSSS10SS030?.getSieuCapThuocTinh?.getTrangThaiHinhAnh?.getMoHinh,
-        caiDatUuTienKichThuocRS100: true,
+        caiDatUuTienKichThuocRS050: true,
         onThucThiHoanTat: () {},
       );
 
@@ -4029,7 +4029,7 @@ class QUANLYTRANGTHAIHANGARCHIENDAUCO with CAUTRUCTHUCTHICOBAN {
       await getThuocTinhTaiNguyenChienDauCo?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhTheoTuanTu(
         maDinhDanh: getTenLuaTanCongSS020CDCDCSSSS10SS030?.getMaDinhDanhVuKhiTanCong,
         thuocTinhHinhAnh: getTenLuaTanCongSS020CDCDCSSSS10SS030?.getSieuCapThuocTinh?.getTrangThaiHinhAnh?.getMoHinh,
-        caiDatUuTienKichThuocRS100: true,
+        caiDatUuTienKichThuocRS050: true,
         onThucThiHoanTat: () {},
       );
 
@@ -4037,7 +4037,7 @@ class QUANLYTRANGTHAIHANGARCHIENDAUCO with CAUTRUCTHUCTHICOBAN {
       await getThuocTinhTaiNguyenChienDauCo?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhTheoTuanTu(
         maDinhDanh: getTenLuaTanCongSS030CDCDCSSSS10SS030?.getMaDinhDanhVuKhiTanCong,
         thuocTinhHinhAnh: getTenLuaTanCongSS030CDCDCSSSS10SS030?.getSieuCapThuocTinh?.getTrangThaiHinhAnh?.getMoHinh,
-        caiDatUuTienKichThuocRS100: true,
+        caiDatUuTienKichThuocRS050: true,
         onThucThiHoanTat: () {},
       );
 
@@ -4091,7 +4091,7 @@ class QUANLYTRANGTHAIHANGARCHIENDAUCO with CAUTRUCTHUCTHICOBAN {
     /// -----
     await Future.delayed(Duration.zero);
 
-    getChienDauCoSSS10SS040?.getThuocTinhChienDauCo?.getThuocTinhHinhAnh?.onVoidCaiDatKichThuocRS100(value: true, caiDatUuTien: true, caiDatTuongQuan: true);
+    getChienDauCoSSS10SS040?.getThuocTinhChienDauCo?.getThuocTinhHinhAnh?.onVoidCaiDatKichThuocRS050(value: true, caiDatUuTien: true, caiDatTuongQuan: true);
 
     /// -----
     /// TODO:
@@ -4099,7 +4099,7 @@ class QUANLYTRANGTHAIHANGARCHIENDAUCO with CAUTRUCTHUCTHICOBAN {
     await getThuocTinhTaiNguyenChienDauCo?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhTheoTuanTu(
       maDinhDanh: getChienDauCoSSS10SS040?.getMaDinhDanhChienDauCo,
       thuocTinhHinhAnh: getChienDauCoSSS10SS040?.getThuocTinhChienDauCo?.getThuocTinhHinhAnh,
-      caiDatUuTienKichThuocRS100: true,
+      caiDatUuTienKichThuocRS050: true,
       onThucThiHoanTat: () {},
     );
 
@@ -4108,7 +4108,7 @@ class QUANLYTRANGTHAIHANGARCHIENDAUCO with CAUTRUCTHUCTHICOBAN {
       await getThuocTinhTaiNguyenChienDauCo?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhTheoTuanTu(
         maDinhDanh: getVuKhiSungChinhSS010CDCDCSSSS10SS040?.getMaDinhDanhVuKhiTanCong,
         thuocTinhHinhAnh: getVuKhiSungChinhSS010CDCDCSSSS10SS040?.getSieuCapThuocTinh?.getTrangThaiHinhAnh?.getMoHinh,
-        caiDatUuTienKichThuocRS100: true,
+        caiDatUuTienKichThuocRS050: true,
         onThucThiHoanTat: () {},
       );
 
@@ -4116,7 +4116,7 @@ class QUANLYTRANGTHAIHANGARCHIENDAUCO with CAUTRUCTHUCTHICOBAN {
       await getThuocTinhTaiNguyenChienDauCo?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhTheoTuanTu(
         maDinhDanh: getVuKhiSungChinhSS020CDCDCSSSS10SS040?.getMaDinhDanhVuKhiTanCong,
         thuocTinhHinhAnh: getVuKhiSungChinhSS020CDCDCSSSS10SS040?.getSieuCapThuocTinh?.getTrangThaiHinhAnh?.getMoHinh,
-        caiDatUuTienKichThuocRS100: true,
+        caiDatUuTienKichThuocRS050: true,
         onThucThiHoanTat: () {},
       );
 
@@ -4124,7 +4124,7 @@ class QUANLYTRANGTHAIHANGARCHIENDAUCO with CAUTRUCTHUCTHICOBAN {
       await getThuocTinhTaiNguyenChienDauCo?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhTheoTuanTu(
         maDinhDanh: getVuKhiSungChinhSS030CDCDCSSSS10SS040?.getMaDinhDanhVuKhiTanCong,
         thuocTinhHinhAnh: getVuKhiSungChinhSS030CDCDCSSSS10SS040?.getSieuCapThuocTinh?.getTrangThaiHinhAnh?.getMoHinh,
-        caiDatUuTienKichThuocRS100: true,
+        caiDatUuTienKichThuocRS050: true,
         onThucThiHoanTat: () {},
       );
 
@@ -4132,7 +4132,7 @@ class QUANLYTRANGTHAIHANGARCHIENDAUCO with CAUTRUCTHUCTHICOBAN {
       await getThuocTinhTaiNguyenChienDauCo?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhTheoTuanTu(
         maDinhDanh: getTenLuaTanCongSS010CDCDCSSSS10SS040?.getMaDinhDanhVuKhiTanCong,
         thuocTinhHinhAnh: getTenLuaTanCongSS010CDCDCSSSS10SS040?.getSieuCapThuocTinh?.getTrangThaiHinhAnh?.getMoHinh,
-        caiDatUuTienKichThuocRS100: true,
+        caiDatUuTienKichThuocRS050: true,
         onThucThiHoanTat: () {},
       );
 
@@ -4140,7 +4140,7 @@ class QUANLYTRANGTHAIHANGARCHIENDAUCO with CAUTRUCTHUCTHICOBAN {
       await getThuocTinhTaiNguyenChienDauCo?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhTheoTuanTu(
         maDinhDanh: getTenLuaTanCongSS020CDCDCSSSS10SS040?.getMaDinhDanhVuKhiTanCong,
         thuocTinhHinhAnh: getTenLuaTanCongSS020CDCDCSSSS10SS040?.getSieuCapThuocTinh?.getTrangThaiHinhAnh?.getMoHinh,
-        caiDatUuTienKichThuocRS100: true,
+        caiDatUuTienKichThuocRS050: true,
         onThucThiHoanTat: () {},
       );
 
@@ -4148,7 +4148,7 @@ class QUANLYTRANGTHAIHANGARCHIENDAUCO with CAUTRUCTHUCTHICOBAN {
       await getThuocTinhTaiNguyenChienDauCo?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhTheoTuanTu(
         maDinhDanh: getTenLuaTanCongSS030CDCDCSSSS10SS040?.getMaDinhDanhVuKhiTanCong,
         thuocTinhHinhAnh: getTenLuaTanCongSS030CDCDCSSSS10SS040?.getSieuCapThuocTinh?.getTrangThaiHinhAnh?.getMoHinh,
-        caiDatUuTienKichThuocRS100: true,
+        caiDatUuTienKichThuocRS050: true,
         onThucThiHoanTat: () {},
       );
 
@@ -4208,7 +4208,7 @@ class QUANLYTRANGTHAIHANGARCHIENDAUCO with CAUTRUCTHUCTHICOBAN {
     /// -----
     await Future.delayed(Duration.zero);
 
-    getChienDauCoSSS10SS050?.getThuocTinhChienDauCo?.getThuocTinhHinhAnh?.onVoidCaiDatKichThuocRS100(value: true, caiDatUuTien: true, caiDatTuongQuan: true);
+    getChienDauCoSSS10SS050?.getThuocTinhChienDauCo?.getThuocTinhHinhAnh?.onVoidCaiDatKichThuocRS050(value: true, caiDatUuTien: true, caiDatTuongQuan: true);
 
     /// -----
     /// TODO:
@@ -4216,7 +4216,7 @@ class QUANLYTRANGTHAIHANGARCHIENDAUCO with CAUTRUCTHUCTHICOBAN {
     await getThuocTinhTaiNguyenChienDauCo?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhTheoTuanTu(
       maDinhDanh: getChienDauCoSSS10SS050?.getMaDinhDanhChienDauCo,
       thuocTinhHinhAnh: getChienDauCoSSS10SS050?.getThuocTinhChienDauCo?.getThuocTinhHinhAnh,
-      caiDatUuTienKichThuocRS100: true,
+      caiDatUuTienKichThuocRS050: true,
       onThucThiHoanTat: () {},
     );
 
@@ -4225,7 +4225,7 @@ class QUANLYTRANGTHAIHANGARCHIENDAUCO with CAUTRUCTHUCTHICOBAN {
       await getThuocTinhTaiNguyenChienDauCo?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhTheoTuanTu(
         maDinhDanh: getVuKhiSungChinhSS010CDCDCSSSS10SS050?.getMaDinhDanhVuKhiTanCong,
         thuocTinhHinhAnh: getVuKhiSungChinhSS010CDCDCSSSS10SS050?.getSieuCapThuocTinh?.getTrangThaiHinhAnh?.getMoHinh,
-        caiDatUuTienKichThuocRS100: true,
+        caiDatUuTienKichThuocRS050: true,
         onThucThiHoanTat: () {},
       );
 
@@ -4233,7 +4233,7 @@ class QUANLYTRANGTHAIHANGARCHIENDAUCO with CAUTRUCTHUCTHICOBAN {
       await getThuocTinhTaiNguyenChienDauCo?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhTheoTuanTu(
         maDinhDanh: getVuKhiSungChinhSS020CDCDCSSSS10SS050?.getMaDinhDanhVuKhiTanCong,
         thuocTinhHinhAnh: getVuKhiSungChinhSS020CDCDCSSSS10SS050?.getSieuCapThuocTinh?.getTrangThaiHinhAnh?.getMoHinh,
-        caiDatUuTienKichThuocRS100: true,
+        caiDatUuTienKichThuocRS050: true,
         onThucThiHoanTat: () {},
       );
 
@@ -4241,7 +4241,7 @@ class QUANLYTRANGTHAIHANGARCHIENDAUCO with CAUTRUCTHUCTHICOBAN {
       await getThuocTinhTaiNguyenChienDauCo?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhTheoTuanTu(
         maDinhDanh: getVuKhiSungChinhSS030CDCDCSSSS10SS050?.getMaDinhDanhVuKhiTanCong,
         thuocTinhHinhAnh: getVuKhiSungChinhSS030CDCDCSSSS10SS050?.getSieuCapThuocTinh?.getTrangThaiHinhAnh?.getMoHinh,
-        caiDatUuTienKichThuocRS100: true,
+        caiDatUuTienKichThuocRS050: true,
         onThucThiHoanTat: () {},
       );
 
@@ -4249,7 +4249,7 @@ class QUANLYTRANGTHAIHANGARCHIENDAUCO with CAUTRUCTHUCTHICOBAN {
       await getThuocTinhTaiNguyenChienDauCo?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhTheoTuanTu(
         maDinhDanh: getTenLuaTanCongSS010CDCDCSSSS10SS050?.getMaDinhDanhVuKhiTanCong,
         thuocTinhHinhAnh: getTenLuaTanCongSS010CDCDCSSSS10SS050?.getSieuCapThuocTinh?.getTrangThaiHinhAnh?.getMoHinh,
-        caiDatUuTienKichThuocRS100: true,
+        caiDatUuTienKichThuocRS050: true,
         onThucThiHoanTat: () {},
       );
 
@@ -4257,7 +4257,7 @@ class QUANLYTRANGTHAIHANGARCHIENDAUCO with CAUTRUCTHUCTHICOBAN {
       await getThuocTinhTaiNguyenChienDauCo?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhTheoTuanTu(
         maDinhDanh: getTenLuaTanCongSS020CDCDCSSSS10SS050?.getMaDinhDanhVuKhiTanCong,
         thuocTinhHinhAnh: getTenLuaTanCongSS020CDCDCSSSS10SS050?.getSieuCapThuocTinh?.getTrangThaiHinhAnh?.getMoHinh,
-        caiDatUuTienKichThuocRS100: true,
+        caiDatUuTienKichThuocRS050: true,
         onThucThiHoanTat: () {},
       );
 
@@ -4265,7 +4265,7 @@ class QUANLYTRANGTHAIHANGARCHIENDAUCO with CAUTRUCTHUCTHICOBAN {
       await getThuocTinhTaiNguyenChienDauCo?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhTheoTuanTu(
         maDinhDanh: getTenLuaTanCongSS030CDCDCSSSS10SS050?.getMaDinhDanhVuKhiTanCong,
         thuocTinhHinhAnh: getTenLuaTanCongSS030CDCDCSSSS10SS050?.getSieuCapThuocTinh?.getTrangThaiHinhAnh?.getMoHinh,
-        caiDatUuTienKichThuocRS100: true,
+        caiDatUuTienKichThuocRS050: true,
         onThucThiHoanTat: () {},
       );
 
@@ -4345,7 +4345,7 @@ class QUANLYTRANGTHAIHANGARCHIENDAUCO with CAUTRUCTHUCTHICOBAN {
   Future<void> onCaiDatChatLuongDoHoaCao() async {
     if (getThuocTinhTaiNguyenChienDauCo?.getMapTaiNguyenHinhAnhNgoaiHinh?.isNotEmpty == true) {
       for (var entry in (getThuocTinhTaiNguyenChienDauCo?.getMapTaiNguyenHinhAnhNgoaiHinh?.entries ?? [])) {
-        entry.value?.onVoidCaiDatKichThuocRS100(value: true, caiDatUuTien: true, caiDatTuongQuan: true);
+        entry.value?.onVoidCaiDatKichThuocRS050(value: true, caiDatUuTien: true, caiDatTuongQuan: true);
       }
     }
 

@@ -73,7 +73,7 @@ class TENLUATANCONGSS010CDCDCSSSS10SS050 extends TENLUATANCONGCOBAN {
     /// -----
     /// TODO: Thông Số Frame
     /// -----
-    final int tongSoPart = 1;
+    final int tongSoPart = 24;
     final int tongSoFrame = 4;
     final int tongSoFrameTrenHang = 2;
     final double chieuRongFrame = 300.0;
@@ -83,8 +83,8 @@ class TENLUATANCONGSS010CDCDCSSSS10SS050 extends TENLUATANCONGCOBAN {
     /// TODO: Kích Thước Resize
     /// -----
     final bool kichThuocRS025 = false; // Kích Thước Resize 25
-    final bool kichThuocRS050 = false; // Kích Thước Resize 50
-    final bool kichThuocRS100 = true; // Kích Thước Resize 100
+    final bool kichThuocRS050 = true; // Kích Thước Resize 50
+    final bool kichThuocRS100 = false; // Kích Thước Resize 100
 
     /// -----
     /// TODO: Nguồn Hình Ảnh Cơ Bản
