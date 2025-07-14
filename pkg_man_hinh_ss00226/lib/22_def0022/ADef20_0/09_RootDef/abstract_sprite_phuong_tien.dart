@@ -294,7 +294,7 @@ abstract class SpritePhuongTienCoBan extends SpriteAnimationComponent with HasVi
   }
 
   @override
-  FutureOr<void> update(double dt) async {
+  void update(double dt) {
     super.update(dt);
 
     onVoidThucThiTanCong();

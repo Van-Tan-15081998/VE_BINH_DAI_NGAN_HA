@@ -1809,7 +1809,7 @@ class QUANLYTRANGTHAIHANGARPHUONGTIEN with CAUTRUCTHUCTHICOBAN {
     await getThuocTinhTaiNguyenPhuongTien?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhTheoTuanTu(
       maDinhDanh: maDinhDanhPhuongTien,
       thuocTinhHinhAnh: getThuocTinhTaiNguyenPhuongTien?.getMapTaiNguyenHinhAnhNgoaiHinh?[maDinhDanhPhuongTien],
-      caiDatUuTienKichThuocRS025: true,
+      caiDatUuTienKichThuocRS050: true,
       onThucThiHoanTat: () {},
     );
 

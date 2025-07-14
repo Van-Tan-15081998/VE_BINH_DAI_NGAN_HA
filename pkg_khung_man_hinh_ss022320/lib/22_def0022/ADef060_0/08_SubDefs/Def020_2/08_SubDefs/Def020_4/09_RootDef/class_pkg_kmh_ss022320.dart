@@ -6,7 +6,7 @@ import 'package:pkg_khung_man_hinh_ss020000/pkg_khung_man_hinh_ss020000_exp.dart
 /// -----
 /// TODO:
 /// -----
-class CARDNHIEMVUSS00A001MAPSS00A extends THANHPHANNUTBAMTHUOCCAPTHUANKICHHOAT {
+class CARDNHIEMVUSS00A001MAPSS00A extends THANHPHANNUTBAMTICHHOPTHUOCCAP {
   /// -----
   /// TODO:
   /// -----
@@ -204,5 +204,11 @@ class CARDNHIEMVUSS00A001MAPSS00A extends THANHPHANNUTBAMTHUOCCAPTHUANKICHHOAT {
     }
 
     return;
+  }
+
+  @override
+  void update(double dt) {
+    // TODO: implement update
+    super.update(dt);
   }
 }

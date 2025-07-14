@@ -43,8 +43,8 @@ class QUANLYTHANHPHANTICHHOPTHUOCCAP
     required super.sizeDy,
   });
 
-  List<THANHPHANNUTBAMTHUOCCAPTHUANKICHHOAT?> danhSachCardNhiemVuChienDau = [];
-  List<THANHPHANNUTBAMTHUOCCAPTHUANKICHHOAT?>
+  List<THANHPHANNUTBAMTICHHOPTHUOCCAP?> danhSachCardNhiemVuChienDau = [];
+  List<THANHPHANNUTBAMTICHHOPTHUOCCAP?>
   get getDanhSachCardNhiemVuChienDau => danhSachCardNhiemVuChienDau;
 
   /// -----
@@ -1488,7 +1488,7 @@ class QUANLYTHANHPHANTICHHOPTHUOCCAP
 
   Future<void> onHuyChonChiDinhNhiemVuChienDau() async {
     if (getDanhSachCardNhiemVuChienDau.isNotEmpty == true) {
-      for (THANHPHANNUTBAMTHUOCCAPTHUANKICHHOAT? thanhPhan
+      for (THANHPHANNUTBAMTICHHOPTHUOCCAP? thanhPhan
           in getDanhSachCardNhiemVuChienDau) {
         thanhPhan?.onVoidHuyKichHoat();
       }

@@ -5,7 +5,7 @@ import 'package:pkg_khung_man_hinh_ss020000/pkg_khung_man_hinh_ss020000_exp.dart
 /// TODO: Card Chiến Đấu Cơ Đẳng Cấp Sao [00A07_SS02]
 /// -----
 class CARDCHIENDAUCODANGCAPSAO00A07SS02
-    extends THANHPHANNUTBAMTHUOCCAPTHUANKICHHOAT {
+    extends THANHPHANNUTBAMTICHHOPTHUOCCAP {
   /// -----
   /// TODO:
   /// -----

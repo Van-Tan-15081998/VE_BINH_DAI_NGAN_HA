@@ -66,6 +66,16 @@ export '26_def0026/BDef080_0/08_SubDefs/Def030_2/09_RootDef/class_pkg_dn_ss02000
 /// TODO: _____[TRANG_THAI_CO_BAN]_____
 export '26_def0026/BDef080_0/08_SubDefs/Def020_2/09_RootDef/class_pkg_dn_ss020000.dart';
 
+/// TODO: _____[CAU_TRUC_THUC_THI_TUAN_TU]_____
+/// TODO: _____[DON_VI_THUC_THI_CO_BAN]_____
+export '26_def0026/CDef020_0/08_SubDefs/Def020_2/09_RootDef/class_pkg_dn_ss020000.dart';
+
+/// TODO: _____[TIEN_TRINH_THUC_THI_TUAN_TU_CO_BAN]_____
+export '26_def0026/CDef020_0/08_SubDefs/Def030_2/09_RootDef/class_pkg_dn_ss020000.dart';
+
+/// TODO: _____[CAU_TRUC_THUC_THI_TUAN_TU]_____
+export '26_def0026/CDef020_0/09_RootDef/class_pkg_dn_ss020000.dart';
+
 /// TODO: _____[SIEU_CAP_THUOC_TINH_CO_BAN]_____
 export '26_def0026/SDef020_0/09_RootDef/class_pkg_dn_ss020000.dart';
 

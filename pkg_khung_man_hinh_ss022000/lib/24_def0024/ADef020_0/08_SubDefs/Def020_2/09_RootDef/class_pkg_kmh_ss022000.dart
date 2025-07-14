@@ -935,14 +935,26 @@ class QUANLYTHANHPHANMANHINHKHUNGMANHINHCHINH
       /// TODO: Hiển Thị Màn Hình Loading Nhiệm Vụ
       await getKhungManHinhSS03000?.onKichHoatKhungManHinhThuocCapSS300100();
 
-      await getGameController?.onKhoiDongNhiemVuChienDau();
+      // await getGameController?.onKhoiDongNhiemVuChienDau();
+      //
+      // await getKhungManHinhSS03000?.onAddRoot(
+      //   flameGame: null,
+      //   component: getKhungManHinhSS03000,
+      // );
+      //
+      // await getKhungManHinhSS03000?.onHuyKichHoatKhungManHinhThuocCapSS300100();
 
-      await getKhungManHinhSS03000?.onAddRoot(
-        flameGame: null,
-        component: getKhungManHinhSS03000,
+      await getGameController?.onKhoiDongNhiemVuChienDau(
+          onThucThiHoanTat: () async {
+            await getKhungManHinhSS03000?.onAddRoot(
+              flameGame: null,
+              component: getKhungManHinhSS03000,
+            );
+
+            await getKhungManHinhSS03000?.onHuyKichHoatKhungManHinhThuocCapSS300100();
+          }
       );
 
-      await getKhungManHinhSS03000?.onHuyKichHoatKhungManHinhThuocCapSS300100();
     } catch (e) {
       await onReportRootIssue(
         nameFunction: 'onKichHoatKhungManHinhThuocCapSS300100',

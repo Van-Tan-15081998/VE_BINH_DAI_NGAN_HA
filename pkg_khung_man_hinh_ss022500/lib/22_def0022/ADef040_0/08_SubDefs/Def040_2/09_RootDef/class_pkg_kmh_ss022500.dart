@@ -25,4 +25,10 @@ class VANBANCAIDATCHATLUONGDOHOA
 
     return;
   }
+
+  @override
+  Future<void> update(double dt) async {
+    // TODO: implement update
+    super.update(dt);
+  }
 }

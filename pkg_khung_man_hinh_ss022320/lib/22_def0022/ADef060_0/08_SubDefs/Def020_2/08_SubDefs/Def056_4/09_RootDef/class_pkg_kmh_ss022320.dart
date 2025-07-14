@@ -6,7 +6,7 @@ import 'package:pkg_khung_man_hinh_ss020000/pkg_khung_man_hinh_ss020000_exp.dart
 /// -----
 /// TODO:
 /// -----
-class CARDNHIEMVUSS00A019MAPSS00A extends THANHPHANNUTBAMTHUOCCAPTHUANKICHHOAT {
+class CARDNHIEMVUSS00A019MAPSS00A extends THANHPHANNUTBAMTICHHOPTHUOCCAP {
   /// -----
   /// TODO:
   /// -----

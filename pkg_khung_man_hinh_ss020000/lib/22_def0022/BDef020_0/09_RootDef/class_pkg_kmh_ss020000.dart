@@ -194,7 +194,7 @@ mixin KICHBANDIEUKHIENTHUOCCAPCOBAN {
     return;
   }
 
-  Future<void> onKhoiDongNhiemVuChienDau() async {
+  Future<void> onKhoiDongNhiemVuChienDau({required Future<void> Function()? onThucThiHoanTat}) async {
     /// -----
     /// TODO:
     /// -----

@@ -7,7 +7,7 @@ import 'package:pkg_khung_man_hinh_ss020000/pkg_khung_man_hinh_ss020000_exp.dart
 /// TODO: Card Chiến Đấu Cơ Đẳng Cấp Sao [00E03_SS01]
 /// -----
 class CARDCHIENDAUCODANGCAPSAO00E03SS01
-    extends THANHPHANNUTBAMTHUOCCAPTHUANKICHHOAT {
+    extends THANHPHANNUTBAMTICHHOPTHUOCCAP {
   /// -----
   /// TODO:
   /// -----
@@ -140,6 +140,8 @@ class CARDCHIENDAUCODANGCAPSAO00E03SS01
     return;
   }
 
+
+
   @override
   Future<void> onCapNhatChiTietSpriteAnimationComponentOnLayerSS010() async {
     double sizeDxCapNhat =
@@ -165,6 +167,8 @@ class CARDCHIENDAUCODANGCAPSAO00E03SS01
       value: sizeDyCapNhat,
       caiDatUuTien: true,
     );
+
+    await onRemoveThanhPhanKhongHoatDong();
 
     ///
     return;

@@ -1663,9 +1663,9 @@ class QUANLYTHANHPHANTICHHOPTHUOCCAP
     return;
   }
 
-  final List<THANHPHANNUTBAMTHUOCCAPTHUANKICHHOAT?> _danhSachCardChienDauCo =
+  final List<THANHPHANNUTBAMTICHHOPTHUOCCAP?> _danhSachCardChienDauCo =
       [];
-  List<THANHPHANNUTBAMTHUOCCAPTHUANKICHHOAT?> get getDanhSachCardChienDauCo =>
+  List<THANHPHANNUTBAMTICHHOPTHUOCCAP?> get getDanhSachCardChienDauCo =>
       _danhSachCardChienDauCo;
 
   final List<THANHPHANTICHHOPSPRITEANIMATIONVANBANTHUOCCAP?>
@@ -2814,7 +2814,7 @@ class QUANLYTHANHPHANTICHHOPTHUOCCAP
     /// TODO:
     /// -----
     if (getDanhSachCardChienDauCo.isNotEmpty == true) {
-      for (THANHPHANNUTBAMTHUOCCAPTHUANKICHHOAT? thanhPhan
+      for (THANHPHANNUTBAMTICHHOPTHUOCCAP? thanhPhan
           in getDanhSachCardChienDauCo) {
         thanhPhan?.onVoidHuyKichHoat();
       }

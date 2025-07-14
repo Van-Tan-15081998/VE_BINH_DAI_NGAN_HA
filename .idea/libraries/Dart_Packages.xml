@@ -6,6 +6,15 @@
           <value>
             <list>
               <option value="$USER_HOME$/AppData/Local/Pub/Cache/hosted/pub.dev/animate_do-3.0.2/lib" />
+              <option value="$PROJECT_DIR$/../../../Users/PC/AppData/Local/Pub/Cache/hosted/pub.dev/animate_do-3.0.2/lib" />
+            </list>
+          </value>
+        </entry>
+        <entry key="archive">
+          <value>
+            <list>
+              <option value="$USER_HOME$/AppData/Local/Pub/Cache/hosted/pub.dev/archive-4.0.7/lib" />
+              <option value="$PROJECT_DIR$/../../../Users/PC/AppData/Local/Pub/Cache/hosted/pub.dev/archive-4.0.7/lib" />
             </list>
           </value>
         </entry>
@@ -13,6 +22,79 @@
           <value>
             <list>
               <option value="$USER_HOME$/AppData/Local/Pub/Cache/hosted/pub.dev/async-2.12.0/lib" />
+              <option value="$USER_HOME$/AppData/Local/Pub/Cache/hosted/pub.dev/async-2.13.0/lib" />
+              <option value="$PROJECT_DIR$/../../../Users/PC/AppData/Local/Pub/Cache/hosted/pub.dev/async-2.13.0/lib" />
+            </list>
+          </value>
+        </entry>
+        <entry key="audio_session">
+          <value>
+            <list>
+              <option value="$USER_HOME$/AppData/Local/Pub/Cache/hosted/pub.dev/audio_session-0.2.1/lib" />
+              <option value="$USER_HOME$/AppData/Local/Pub/Cache/hosted/pub.dev/audio_session-0.2.2/lib" />
+              <option value="$PROJECT_DIR$/../../../Users/PC/AppData/Local/Pub/Cache/hosted/pub.dev/audio_session-0.2.2/lib" />
+            </list>
+          </value>
+        </entry>
+        <entry key="audioplayers">
+          <value>
+            <list>
+              <option value="$USER_HOME$/AppData/Local/Pub/Cache/hosted/pub.dev/audioplayers-6.4.0/lib" />
+              <option value="$PROJECT_DIR$/../../../Users/PC/AppData/Local/Pub/Cache/hosted/pub.dev/audioplayers-6.4.0/lib" />
+            </list>
+          </value>
+        </entry>
+        <entry key="audioplayers_android">
+          <value>
+            <list>
+              <option value="$USER_HOME$/AppData/Local/Pub/Cache/hosted/pub.dev/audioplayers_android-5.2.0/lib" />
+              <option value="$USER_HOME$/AppData/Local/Pub/Cache/hosted/pub.dev/audioplayers_android-5.2.1/lib" />
+              <option value="$PROJECT_DIR$/../../../Users/PC/AppData/Local/Pub/Cache/hosted/pub.dev/audioplayers_android-5.2.1/lib" />
+            </list>
+          </value>
+        </entry>
+        <entry key="audioplayers_darwin">
+          <value>
+            <list>
+              <option value="$USER_HOME$/AppData/Local/Pub/Cache/hosted/pub.dev/audioplayers_darwin-6.2.0/lib" />
+              <option value="$USER_HOME$/AppData/Local/Pub/Cache/hosted/pub.dev/audioplayers_darwin-6.3.0/lib" />
+              <option value="$PROJECT_DIR$/../../../Users/PC/AppData/Local/Pub/Cache/hosted/pub.dev/audioplayers_darwin-6.3.0/lib" />
+            </list>
+          </value>
+        </entry>
+        <entry key="audioplayers_linux">
+          <value>
+            <list>
+              <option value="$USER_HOME$/AppData/Local/Pub/Cache/hosted/pub.dev/audioplayers_linux-4.2.0/lib" />
+              <option value="$USER_HOME$/AppData/Local/Pub/Cache/hosted/pub.dev/audioplayers_linux-4.2.1/lib" />
+              <option value="$PROJECT_DIR$/../../../Users/PC/AppData/Local/Pub/Cache/hosted/pub.dev/audioplayers_linux-4.2.1/lib" />
+            </list>
+          </value>
+        </entry>
+        <entry key="audioplayers_platform_interface">
+          <value>
+            <list>
+              <option value="$USER_HOME$/AppData/Local/Pub/Cache/hosted/pub.dev/audioplayers_platform_interface-7.1.0/lib" />
+              <option value="$USER_HOME$/AppData/Local/Pub/Cache/hosted/pub.dev/audioplayers_platform_interface-7.1.1/lib" />
+              <option value="$PROJECT_DIR$/../../../Users/PC/AppData/Local/Pub/Cache/hosted/pub.dev/audioplayers_platform_interface-7.1.1/lib" />
+            </list>
+          </value>
+        </entry>
+        <entry key="audioplayers_web">
+          <value>
+            <list>
+              <option value="$USER_HOME$/AppData/Local/Pub/Cache/hosted/pub.dev/audioplayers_web-5.1.0/lib" />
+              <option value="$USER_HOME$/AppData/Local/Pub/Cache/hosted/pub.dev/audioplayers_web-5.1.1/lib" />
+              <option value="$PROJECT_DIR$/../../../Users/PC/AppData/Local/Pub/Cache/hosted/pub.dev/audioplayers_web-5.1.1/lib" />
+            </list>
+          </value>
+        </entry>
+        <entry key="audioplayers_windows">
+          <value>
+            <list>
+              <option value="$USER_HOME$/AppData/Local/Pub/Cache/hosted/pub.dev/audioplayers_windows-4.2.0/lib" />
+              <option value="$USER_HOME$/AppData/Local/Pub/Cache/hosted/pub.dev/audioplayers_windows-4.2.1/lib" />
+              <option value="$PROJECT_DIR$/../../../Users/PC/AppData/Local/Pub/Cache/hosted/pub.dev/audioplayers_windows-4.2.1/lib" />
             </list>
           </value>
         </entry>
@@ -27,6 +109,7 @@
           <value>
             <list>
               <option value="$USER_HOME$/AppData/Local/Pub/Cache/hosted/pub.dev/carousel_slider-4.2.1/lib" />
+              <option value="$PROJECT_DIR$/../../../Users/PC/AppData/Local/Pub/Cache/hosted/pub.dev/carousel_slider-4.2.1/lib" />
             </list>
           </value>
         </entry>
@@ -34,6 +117,7 @@
           <value>
             <list>
               <option value="$USER_HOME$/AppData/Local/Pub/Cache/hosted/pub.dev/characters-1.4.0/lib" />
+              <option value="$PROJECT_DIR$/../../../Users/PC/AppData/Local/Pub/Cache/hosted/pub.dev/characters-1.4.0/lib" />
             </list>
           </value>
         </entry>
@@ -48,6 +132,7 @@
           <value>
             <list>
               <option value="$USER_HOME$/AppData/Local/Pub/Cache/hosted/pub.dev/collection-1.19.1/lib" />
+              <option value="$PROJECT_DIR$/../../../Users/PC/AppData/Local/Pub/Cache/hosted/pub.dev/collection-1.19.1/lib" />
             </list>
           </value>
         </entry>
@@ -55,6 +140,7 @@
           <value>
             <list>
               <option value="$USER_HOME$/AppData/Local/Pub/Cache/hosted/pub.dev/crypto-3.0.6/lib" />
+              <option value="$PROJECT_DIR$/../../../Users/PC/AppData/Local/Pub/Cache/hosted/pub.dev/crypto-3.0.6/lib" />
             </list>
           </value>
         </entry>
@@ -62,6 +148,7 @@
           <value>
             <list>
               <option value="$USER_HOME$/AppData/Local/Pub/Cache/hosted/pub.dev/csslib-1.0.2/lib" />
+              <option value="$PROJECT_DIR$/../../../Users/PC/AppData/Local/Pub/Cache/hosted/pub.dev/csslib-1.0.2/lib" />
             </list>
           </value>
         </entry>
@@ -69,6 +156,7 @@
           <value>
             <list>
               <option value="$USER_HOME$/AppData/Local/Pub/Cache/hosted/pub.dev/cupertino_icons-1.0.8/lib" />
+              <option value="$PROJECT_DIR$/../../../Users/PC/AppData/Local/Pub/Cache/hosted/pub.dev/cupertino_icons-1.0.8/lib" />
             </list>
           </value>
         </entry>
@@ -83,6 +171,7 @@
           <value>
             <list>
               <option value="$USER_HOME$/AppData/Local/Pub/Cache/hosted/pub.dev/ffi-2.1.4/lib" />
+              <option value="$PROJECT_DIR$/../../../Users/PC/AppData/Local/Pub/Cache/hosted/pub.dev/ffi-2.1.4/lib" />
             </list>
           </value>
         </entry>
@@ -90,6 +179,15 @@
           <value>
             <list>
               <option value="$USER_HOME$/AppData/Local/Pub/Cache/hosted/pub.dev/file-7.0.1/lib" />
+              <option value="$PROJECT_DIR$/../../../Users/PC/AppData/Local/Pub/Cache/hosted/pub.dev/file-7.0.1/lib" />
+            </list>
+          </value>
+        </entry>
+        <entry key="fixnum">
+          <value>
+            <list>
+              <option value="$USER_HOME$/AppData/Local/Pub/Cache/hosted/pub.dev/fixnum-1.1.1/lib" />
+              <option value="$PROJECT_DIR$/../../../Users/PC/AppData/Local/Pub/Cache/hosted/pub.dev/fixnum-1.1.1/lib" />
             </list>
           </value>
         </entry>
@@ -97,6 +195,16 @@
           <value>
             <list>
               <option value="$USER_HOME$/AppData/Local/Pub/Cache/hosted/pub.dev/flame-1.22.0/lib" />
+              <option value="$USER_HOME$/AppData/Local/Pub/Cache/hosted/pub.dev/flame-1.25.0/lib" />
+              <option value="$PROJECT_DIR$/../../../Users/PC/AppData/Local/Pub/Cache/hosted/pub.dev/flame-1.25.0/lib" />
+            </list>
+          </value>
+        </entry>
+        <entry key="flame_audio">
+          <value>
+            <list>
+              <option value="$USER_HOME$/AppData/Local/Pub/Cache/hosted/pub.dev/flame_audio-2.11.0/lib" />
+              <option value="$PROJECT_DIR$/../../../Users/PC/AppData/Local/Pub/Cache/hosted/pub.dev/flame_audio-2.11.0/lib" />
             </list>
           </value>
         </entry>
@@ -104,6 +212,8 @@
           <value>
             <list>
               <option value="$PROJECT_DIR$/../../../FLUTTER_SDK_3292/flutter/packages/flutter/lib" />
+              <option value="$PROJECT_DIR$/../../../FLUTTER_SDK_3320/flutter/packages/flutter/lib" />
+              <option value="D:/VAN_TAN_WS/00_ProjectSetup/FLUTTER_3320/flutter/packages/flutter/lib" />
             </list>
           </value>
         </entry>
@@ -111,6 +221,39 @@
           <value>
             <list>
               <option value="$USER_HOME$/AppData/Local/Pub/Cache/hosted/pub.dev/flutter_lints-5.0.0/lib" />
+              <option value="$PROJECT_DIR$/../../../Users/PC/AppData/Local/Pub/Cache/hosted/pub.dev/flutter_lints-5.0.0/lib" />
+            </list>
+          </value>
+        </entry>
+        <entry key="flutter_soloud">
+          <value>
+            <list>
+              <option value="$USER_HOME$/AppData/Local/Pub/Cache/hosted/pub.dev/flutter_soloud-3.1.8/lib" />
+              <option value="$PROJECT_DIR$/../../../Users/PC/AppData/Local/Pub/Cache/hosted/pub.dev/flutter_soloud-3.1.8/lib" />
+            </list>
+          </value>
+        </entry>
+        <entry key="flutter_sound">
+          <value>
+            <list>
+              <option value="$USER_HOME$/AppData/Local/Pub/Cache/hosted/pub.dev/flutter_sound-9.28.0/lib" />
+              <option value="$PROJECT_DIR$/../../../Users/PC/AppData/Local/Pub/Cache/hosted/pub.dev/flutter_sound-9.28.0/lib" />
+            </list>
+          </value>
+        </entry>
+        <entry key="flutter_sound_platform_interface">
+          <value>
+            <list>
+              <option value="$USER_HOME$/AppData/Local/Pub/Cache/hosted/pub.dev/flutter_sound_platform_interface-9.28.0/lib" />
+              <option value="$PROJECT_DIR$/../../../Users/PC/AppData/Local/Pub/Cache/hosted/pub.dev/flutter_sound_platform_interface-9.28.0/lib" />
+            </list>
+          </value>
+        </entry>
+        <entry key="flutter_sound_web">
+          <value>
+            <list>
+              <option value="$USER_HOME$/AppData/Local/Pub/Cache/hosted/pub.dev/flutter_sound_web-9.28.0/lib" />
+              <option value="$PROJECT_DIR$/../../../Users/PC/AppData/Local/Pub/Cache/hosted/pub.dev/flutter_sound_web-9.28.0/lib" />
             </list>
           </value>
         </entry>
@@ -125,6 +268,8 @@
           <value>
             <list>
               <option value="$PROJECT_DIR$/../../../FLUTTER_SDK_3292/flutter/packages/flutter_web_plugins/lib" />
+              <option value="$PROJECT_DIR$/../../../FLUTTER_SDK_3320/flutter/packages/flutter_web_plugins/lib" />
+              <option value="D:/VAN_TAN_WS/00_ProjectSetup/FLUTTER_3320/flutter/packages/flutter_web_plugins/lib" />
             </list>
           </value>
         </entry>
@@ -132,6 +277,7 @@
           <value>
             <list>
               <option value="$USER_HOME$/AppData/Local/Pub/Cache/hosted/pub.dev/go_router-14.0.0/lib" />
+              <option value="$PROJECT_DIR$/../../../Users/PC/AppData/Local/Pub/Cache/hosted/pub.dev/go_router-14.0.0/lib" />
             </list>
           </value>
         </entry>
@@ -139,6 +285,7 @@
           <value>
             <list>
               <option value="$USER_HOME$/AppData/Local/Pub/Cache/hosted/pub.dev/google_fonts-5.0.0/lib" />
+              <option value="$PROJECT_DIR$/../../../Users/PC/AppData/Local/Pub/Cache/hosted/pub.dev/google_fonts-5.0.0/lib" />
             </list>
           </value>
         </entry>
@@ -146,6 +293,9 @@
           <value>
             <list>
               <option value="$USER_HOME$/AppData/Local/Pub/Cache/hosted/pub.dev/html-0.15.5/lib" />
+              <option value="$USER_HOME$/AppData/Local/Pub/Cache/hosted/pub.dev/html-0.15.6/lib" />
+              <option value="$USER_HOME$/AppData/Local/Pub/Cache/hosted/pub.dev/html-0.15.5+1/lib" />
+              <option value="$PROJECT_DIR$/../../../Users/PC/AppData/Local/Pub/Cache/hosted/pub.dev/html-0.15.6/lib" />
             </list>
           </value>
         </entry>
@@ -153,6 +303,8 @@
           <value>
             <list>
               <option value="$USER_HOME$/AppData/Local/Pub/Cache/hosted/pub.dev/http-1.3.0/lib" />
+              <option value="$USER_HOME$/AppData/Local/Pub/Cache/hosted/pub.dev/http-1.4.0/lib" />
+              <option value="$PROJECT_DIR$/../../../Users/PC/AppData/Local/Pub/Cache/hosted/pub.dev/http-1.4.0/lib" />
             </list>
           </value>
         </entry>
@@ -160,6 +312,40 @@
           <value>
             <list>
               <option value="$USER_HOME$/AppData/Local/Pub/Cache/hosted/pub.dev/http_parser-4.1.2/lib" />
+              <option value="$PROJECT_DIR$/../../../Users/PC/AppData/Local/Pub/Cache/hosted/pub.dev/http_parser-4.1.2/lib" />
+            </list>
+          </value>
+        </entry>
+        <entry key="image">
+          <value>
+            <list>
+              <option value="$USER_HOME$/AppData/Local/Pub/Cache/hosted/pub.dev/image-4.5.4/lib" />
+              <option value="$PROJECT_DIR$/../../../Users/PC/AppData/Local/Pub/Cache/hosted/pub.dev/image-4.5.4/lib" />
+            </list>
+          </value>
+        </entry>
+        <entry key="just_audio">
+          <value>
+            <list>
+              <option value="$USER_HOME$/AppData/Local/Pub/Cache/hosted/pub.dev/just_audio-0.10.1/lib" />
+              <option value="$PROJECT_DIR$/../../../Users/PC/AppData/Local/Pub/Cache/hosted/pub.dev/just_audio-0.10.1/lib" />
+            </list>
+          </value>
+        </entry>
+        <entry key="just_audio_platform_interface">
+          <value>
+            <list>
+              <option value="$USER_HOME$/AppData/Local/Pub/Cache/hosted/pub.dev/just_audio_platform_interface-4.5.0/lib" />
+              <option value="$PROJECT_DIR$/../../../Users/PC/AppData/Local/Pub/Cache/hosted/pub.dev/just_audio_platform_interface-4.5.0/lib" />
+            </list>
+          </value>
+        </entry>
+        <entry key="just_audio_web">
+          <value>
+            <list>
+              <option value="$USER_HOME$/AppData/Local/Pub/Cache/hosted/pub.dev/just_audio_web-0.4.15/lib" />
+              <option value="$USER_HOME$/AppData/Local/Pub/Cache/hosted/pub.dev/just_audio_web-0.4.16/lib" />
+              <option value="$PROJECT_DIR$/../../../Users/PC/AppData/Local/Pub/Cache/hosted/pub.dev/just_audio_web-0.4.16/lib" />
             </list>
           </value>
         </entry>
@@ -188,6 +374,16 @@
           <value>
             <list>
               <option value="$USER_HOME$/AppData/Local/Pub/Cache/hosted/pub.dev/lints-5.1.1/lib" />
+              <option value="$PROJECT_DIR$/../../../Users/PC/AppData/Local/Pub/Cache/hosted/pub.dev/lints-5.1.1/lib" />
+            </list>
+          </value>
+        </entry>
+        <entry key="logger">
+          <value>
+            <list>
+              <option value="$USER_HOME$/AppData/Local/Pub/Cache/hosted/pub.dev/logger-2.5.0/lib" />
+              <option value="$USER_HOME$/AppData/Local/Pub/Cache/hosted/pub.dev/logger-2.6.0/lib" />
+              <option value="$PROJECT_DIR$/../../../Users/PC/AppData/Local/Pub/Cache/hosted/pub.dev/logger-2.5.0/lib" />
             </list>
           </value>
         </entry>
@@ -195,6 +391,7 @@
           <value>
             <list>
               <option value="$USER_HOME$/AppData/Local/Pub/Cache/hosted/pub.dev/logging-1.3.0/lib" />
+              <option value="$PROJECT_DIR$/../../../Users/PC/AppData/Local/Pub/Cache/hosted/pub.dev/logging-1.3.0/lib" />
             </list>
           </value>
         </entry>
@@ -209,6 +406,7 @@
           <value>
             <list>
               <option value="$USER_HOME$/AppData/Local/Pub/Cache/hosted/pub.dev/material_color_utilities-0.11.1/lib" />
+              <option value="$PROJECT_DIR$/../../../Users/PC/AppData/Local/Pub/Cache/hosted/pub.dev/material_color_utilities-0.11.1/lib" />
             </list>
           </value>
         </entry>
@@ -216,6 +414,7 @@
           <value>
             <list>
               <option value="$USER_HOME$/AppData/Local/Pub/Cache/hosted/pub.dev/meta-1.16.0/lib" />
+              <option value="$PROJECT_DIR$/../../../Users/PC/AppData/Local/Pub/Cache/hosted/pub.dev/meta-1.16.0/lib" />
             </list>
           </value>
         </entry>
@@ -223,6 +422,7 @@
           <value>
             <list>
               <option value="$USER_HOME$/AppData/Local/Pub/Cache/hosted/pub.dev/nested-1.0.0/lib" />
+              <option value="$PROJECT_DIR$/../../../Users/PC/AppData/Local/Pub/Cache/hosted/pub.dev/nested-1.0.0/lib" />
             </list>
           </value>
         </entry>
@@ -230,6 +430,7 @@
           <value>
             <list>
               <option value="$USER_HOME$/AppData/Local/Pub/Cache/hosted/pub.dev/ordered_set-6.1.1/lib" />
+              <option value="$PROJECT_DIR$/../../../Users/PC/AppData/Local/Pub/Cache/hosted/pub.dev/ordered_set-6.1.1/lib" />
             </list>
           </value>
         </entry>
@@ -238,6 +439,7 @@
             <list>
               <option value="$USER_HOME$/AppData/Local/Pub/Cache/hosted/pub.dev/path-1.9.0/lib" />
               <option value="$USER_HOME$/AppData/Local/Pub/Cache/hosted/pub.dev/path-1.9.1/lib" />
+              <option value="$PROJECT_DIR$/../../../Users/PC/AppData/Local/Pub/Cache/hosted/pub.dev/path-1.9.0/lib" />
             </list>
           </value>
         </entry>
@@ -245,6 +447,7 @@
           <value>
             <list>
               <option value="$USER_HOME$/AppData/Local/Pub/Cache/hosted/pub.dev/path_provider-2.1.5/lib" />
+              <option value="$PROJECT_DIR$/../../../Users/PC/AppData/Local/Pub/Cache/hosted/pub.dev/path_provider-2.1.5/lib" />
             </list>
           </value>
         </entry>
@@ -252,6 +455,8 @@
           <value>
             <list>
               <option value="$USER_HOME$/AppData/Local/Pub/Cache/hosted/pub.dev/path_provider_android-2.2.16/lib" />
+              <option value="$USER_HOME$/AppData/Local/Pub/Cache/hosted/pub.dev/path_provider_android-2.2.17/lib" />
+              <option value="$PROJECT_DIR$/../../../Users/PC/AppData/Local/Pub/Cache/hosted/pub.dev/path_provider_android-2.2.17/lib" />
             </list>
           </value>
         </entry>
@@ -259,6 +464,7 @@
           <value>
             <list>
               <option value="$USER_HOME$/AppData/Local/Pub/Cache/hosted/pub.dev/path_provider_foundation-2.4.1/lib" />
+              <option value="$PROJECT_DIR$/../../../Users/PC/AppData/Local/Pub/Cache/hosted/pub.dev/path_provider_foundation-2.4.1/lib" />
             </list>
           </value>
         </entry>
@@ -266,6 +472,7 @@
           <value>
             <list>
               <option value="$USER_HOME$/AppData/Local/Pub/Cache/hosted/pub.dev/path_provider_linux-2.2.1/lib" />
+              <option value="$PROJECT_DIR$/../../../Users/PC/AppData/Local/Pub/Cache/hosted/pub.dev/path_provider_linux-2.2.1/lib" />
             </list>
           </value>
         </entry>
@@ -273,6 +480,7 @@
           <value>
             <list>
               <option value="$USER_HOME$/AppData/Local/Pub/Cache/hosted/pub.dev/path_provider_platform_interface-2.1.2/lib" />
+              <option value="$PROJECT_DIR$/../../../Users/PC/AppData/Local/Pub/Cache/hosted/pub.dev/path_provider_platform_interface-2.1.2/lib" />
             </list>
           </value>
         </entry>
@@ -280,6 +488,15 @@
           <value>
             <list>
               <option value="$USER_HOME$/AppData/Local/Pub/Cache/hosted/pub.dev/path_provider_windows-2.3.0/lib" />
+              <option value="$PROJECT_DIR$/../../../Users/PC/AppData/Local/Pub/Cache/hosted/pub.dev/path_provider_windows-2.3.0/lib" />
+            </list>
+          </value>
+        </entry>
+        <entry key="petitparser">
+          <value>
+            <list>
+              <option value="$USER_HOME$/AppData/Local/Pub/Cache/hosted/pub.dev/petitparser-6.1.0/lib" />
+              <option value="$PROJECT_DIR$/../../../Users/PC/AppData/Local/Pub/Cache/hosted/pub.dev/petitparser-6.1.0/lib" />
             </list>
           </value>
         </entry>
@@ -287,6 +504,7 @@
           <value>
             <list>
               <option value="$USER_HOME$/AppData/Local/Pub/Cache/hosted/pub.dev/platform-3.1.6/lib" />
+              <option value="$PROJECT_DIR$/../../../Users/PC/AppData/Local/Pub/Cache/hosted/pub.dev/platform-3.1.6/lib" />
             </list>
           </value>
         </entry>
@@ -294,6 +512,16 @@
           <value>
             <list>
               <option value="$USER_HOME$/AppData/Local/Pub/Cache/hosted/pub.dev/plugin_platform_interface-2.1.8/lib" />
+              <option value="$PROJECT_DIR$/../../../Users/PC/AppData/Local/Pub/Cache/hosted/pub.dev/plugin_platform_interface-2.1.8/lib" />
+            </list>
+          </value>
+        </entry>
+        <entry key="posix">
+          <value>
+            <list>
+              <option value="$USER_HOME$/AppData/Local/Pub/Cache/hosted/pub.dev/posix-6.0.2/lib" />
+              <option value="$USER_HOME$/AppData/Local/Pub/Cache/hosted/pub.dev/posix-6.0.3/lib" />
+              <option value="$PROJECT_DIR$/../../../Users/PC/AppData/Local/Pub/Cache/hosted/pub.dev/posix-6.0.2/lib" />
             </list>
           </value>
         </entry>
@@ -301,6 +529,15 @@
           <value>
             <list>
               <option value="$USER_HOME$/AppData/Local/Pub/Cache/hosted/pub.dev/provider-6.0.2/lib" />
+              <option value="$PROJECT_DIR$/../../../Users/PC/AppData/Local/Pub/Cache/hosted/pub.dev/provider-6.0.2/lib" />
+            </list>
+          </value>
+        </entry>
+        <entry key="rxdart">
+          <value>
+            <list>
+              <option value="$USER_HOME$/AppData/Local/Pub/Cache/hosted/pub.dev/rxdart-0.28.0/lib" />
+              <option value="$PROJECT_DIR$/../../../Users/PC/AppData/Local/Pub/Cache/hosted/pub.dev/rxdart-0.28.0/lib" />
             </list>
           </value>
         </entry>
@@ -308,6 +545,7 @@
           <value>
             <list>
               <option value="$USER_HOME$/AppData/Local/Pub/Cache/hosted/pub.dev/shared_preferences-2.0.13/lib" />
+              <option value="$PROJECT_DIR$/../../../Users/PC/AppData/Local/Pub/Cache/hosted/pub.dev/shared_preferences-2.0.13/lib" />
             </list>
           </value>
         </entry>
@@ -315,6 +553,9 @@
           <value>
             <list>
               <option value="$USER_HOME$/AppData/Local/Pub/Cache/hosted/pub.dev/shared_preferences_android-2.4.8/lib" />
+              <option value="$USER_HOME$/AppData/Local/Pub/Cache/hosted/pub.dev/shared_preferences_android-2.4.10/lib" />
+              <option value="$USER_HOME$/AppData/Local/Pub/Cache/hosted/pub.dev/shared_preferences_android-2.4.9/lib" />
+              <option value="$PROJECT_DIR$/../../../Users/PC/AppData/Local/Pub/Cache/hosted/pub.dev/shared_preferences_android-2.4.10/lib" />
             </list>
           </value>
         </entry>
@@ -322,6 +563,7 @@
           <value>
             <list>
               <option value="$USER_HOME$/AppData/Local/Pub/Cache/hosted/pub.dev/shared_preferences_ios-2.1.1/lib" />
+              <option value="$PROJECT_DIR$/../../../Users/PC/AppData/Local/Pub/Cache/hosted/pub.dev/shared_preferences_ios-2.1.1/lib" />
             </list>
           </value>
         </entry>
@@ -329,6 +571,7 @@
           <value>
             <list>
               <option value="$USER_HOME$/AppData/Local/Pub/Cache/hosted/pub.dev/shared_preferences_linux-2.4.1/lib" />
+              <option value="$PROJECT_DIR$/../../../Users/PC/AppData/Local/Pub/Cache/hosted/pub.dev/shared_preferences_linux-2.4.1/lib" />
             </list>
           </value>
         </entry>
@@ -336,6 +579,7 @@
           <value>
             <list>
               <option value="$USER_HOME$/AppData/Local/Pub/Cache/hosted/pub.dev/shared_preferences_macos-2.0.5/lib" />
+              <option value="$PROJECT_DIR$/../../../Users/PC/AppData/Local/Pub/Cache/hosted/pub.dev/shared_preferences_macos-2.0.5/lib" />
             </list>
           </value>
         </entry>
@@ -343,6 +587,7 @@
           <value>
             <list>
               <option value="$USER_HOME$/AppData/Local/Pub/Cache/hosted/pub.dev/shared_preferences_platform_interface-2.4.1/lib" />
+              <option value="$PROJECT_DIR$/../../../Users/PC/AppData/Local/Pub/Cache/hosted/pub.dev/shared_preferences_platform_interface-2.4.1/lib" />
             </list>
           </value>
         </entry>
@@ -350,6 +595,7 @@
           <value>
             <list>
               <option value="$USER_HOME$/AppData/Local/Pub/Cache/hosted/pub.dev/shared_preferences_web-2.4.3/lib" />
+              <option value="$PROJECT_DIR$/../../../Users/PC/AppData/Local/Pub/Cache/hosted/pub.dev/shared_preferences_web-2.4.3/lib" />
             </list>
           </value>
         </entry>
@@ -357,6 +603,7 @@
           <value>
             <list>
               <option value="$USER_HOME$/AppData/Local/Pub/Cache/hosted/pub.dev/shared_preferences_windows-2.4.1/lib" />
+              <option value="$PROJECT_DIR$/../../../Users/PC/AppData/Local/Pub/Cache/hosted/pub.dev/shared_preferences_windows-2.4.1/lib" />
             </list>
           </value>
         </entry>
@@ -364,6 +611,8 @@
           <value>
             <list>
               <option value="$PROJECT_DIR$/../../../FLUTTER_SDK_3292/flutter/bin/cache/pkg/sky_engine/lib" />
+              <option value="$PROJECT_DIR$/../../../FLUTTER_SDK_3320/flutter/bin/cache/pkg/sky_engine/lib" />
+              <option value="D:/VAN_TAN_WS/00_ProjectSetup/FLUTTER_3320/flutter/bin/cache/pkg/sky_engine/lib" />
             </list>
           </value>
         </entry>
@@ -371,6 +620,55 @@
           <value>
             <list>
               <option value="$USER_HOME$/AppData/Local/Pub/Cache/hosted/pub.dev/source_span-1.10.1/lib" />
+              <option value="$PROJECT_DIR$/../../../Users/PC/AppData/Local/Pub/Cache/hosted/pub.dev/source_span-1.10.1/lib" />
+            </list>
+          </value>
+        </entry>
+        <entry key="sprintf">
+          <value>
+            <list>
+              <option value="$USER_HOME$/AppData/Local/Pub/Cache/hosted/pub.dev/sprintf-7.0.0/lib" />
+              <option value="$PROJECT_DIR$/../../../Users/PC/AppData/Local/Pub/Cache/hosted/pub.dev/sprintf-7.0.0/lib" />
+            </list>
+          </value>
+        </entry>
+        <entry key="sqflite">
+          <value>
+            <list>
+              <option value="$USER_HOME$/AppData/Local/Pub/Cache/hosted/pub.dev/sqflite-2.4.0/lib" />
+              <option value="$PROJECT_DIR$/../../../Users/PC/AppData/Local/Pub/Cache/hosted/pub.dev/sqflite-2.4.0/lib" />
+            </list>
+          </value>
+        </entry>
+        <entry key="sqflite_android">
+          <value>
+            <list>
+              <option value="$USER_HOME$/AppData/Local/Pub/Cache/hosted/pub.dev/sqflite_android-2.4.1/lib" />
+              <option value="$PROJECT_DIR$/../../../Users/PC/AppData/Local/Pub/Cache/hosted/pub.dev/sqflite_android-2.4.1/lib" />
+            </list>
+          </value>
+        </entry>
+        <entry key="sqflite_common">
+          <value>
+            <list>
+              <option value="$USER_HOME$/AppData/Local/Pub/Cache/hosted/pub.dev/sqflite_common-2.5.5/lib" />
+              <option value="$PROJECT_DIR$/../../../Users/PC/AppData/Local/Pub/Cache/hosted/pub.dev/sqflite_common-2.5.5/lib" />
+            </list>
+          </value>
+        </entry>
+        <entry key="sqflite_darwin">
+          <value>
+            <list>
+              <option value="$USER_HOME$/AppData/Local/Pub/Cache/hosted/pub.dev/sqflite_darwin-2.4.2/lib" />
+              <option value="$PROJECT_DIR$/../../../Users/PC/AppData/Local/Pub/Cache/hosted/pub.dev/sqflite_darwin-2.4.2/lib" />
+            </list>
+          </value>
+        </entry>
+        <entry key="sqflite_platform_interface">
+          <value>
+            <list>
+              <option value="$USER_HOME$/AppData/Local/Pub/Cache/hosted/pub.dev/sqflite_platform_interface-2.4.0/lib" />
+              <option value="$PROJECT_DIR$/../../../Users/PC/AppData/Local/Pub/Cache/hosted/pub.dev/sqflite_platform_interface-2.4.0/lib" />
             </list>
           </value>
         </entry>
@@ -392,6 +690,16 @@
           <value>
             <list>
               <option value="$USER_HOME$/AppData/Local/Pub/Cache/hosted/pub.dev/string_scanner-1.4.1/lib" />
+              <option value="$PROJECT_DIR$/../../../Users/PC/AppData/Local/Pub/Cache/hosted/pub.dev/string_scanner-1.4.1/lib" />
+            </list>
+          </value>
+        </entry>
+        <entry key="synchronized">
+          <value>
+            <list>
+              <option value="$USER_HOME$/AppData/Local/Pub/Cache/hosted/pub.dev/synchronized-3.3.1/lib" />
+              <option value="$USER_HOME$/AppData/Local/Pub/Cache/hosted/pub.dev/synchronized-3.4.0/lib" />
+              <option value="$PROJECT_DIR$/../../../Users/PC/AppData/Local/Pub/Cache/hosted/pub.dev/synchronized-3.3.1/lib" />
             </list>
           </value>
         </entry>
@@ -399,6 +707,7 @@
           <value>
             <list>
               <option value="$USER_HOME$/AppData/Local/Pub/Cache/hosted/pub.dev/term_glyph-1.2.2/lib" />
+              <option value="$PROJECT_DIR$/../../../Users/PC/AppData/Local/Pub/Cache/hosted/pub.dev/term_glyph-1.2.2/lib" />
             </list>
           </value>
         </entry>
@@ -413,6 +722,22 @@
           <value>
             <list>
               <option value="$USER_HOME$/AppData/Local/Pub/Cache/hosted/pub.dev/typed_data-1.4.0/lib" />
+              <option value="$PROJECT_DIR$/../../../Users/PC/AppData/Local/Pub/Cache/hosted/pub.dev/typed_data-1.4.0/lib" />
+            </list>
+          </value>
+        </entry>
+        <entry key="uuid">
+          <value>
+            <list>
+              <option value="$USER_HOME$/AppData/Local/Pub/Cache/hosted/pub.dev/uuid-4.5.1/lib" />
+              <option value="$PROJECT_DIR$/../../../Users/PC/AppData/Local/Pub/Cache/hosted/pub.dev/uuid-4.5.1/lib" />
+            </list>
+          </value>
+        </entry>
+        <entry key="ve_binh_dai_ngan_ha_gmt7vn">
+          <value>
+            <list>
+              <option value="$PROJECT_DIR$/../lib" />
             </list>
           </value>
         </entry>
@@ -420,6 +745,7 @@
           <value>
             <list>
               <option value="$USER_HOME$/AppData/Local/Pub/Cache/hosted/pub.dev/vector_math-2.1.4/lib" />
+              <option value="$PROJECT_DIR$/../../../Users/PC/AppData/Local/Pub/Cache/hosted/pub.dev/vector_math-2.1.4/lib" />
             </list>
           </value>
         </entry>
@@ -427,6 +753,7 @@
           <value>
             <list>
               <option value="$USER_HOME$/AppData/Local/Pub/Cache/hosted/pub.dev/video_player-2.9.3/lib" />
+              <option value="$PROJECT_DIR$/../../../Users/PC/AppData/Local/Pub/Cache/hosted/pub.dev/video_player-2.9.3/lib" />
             </list>
           </value>
         </entry>
@@ -434,6 +761,9 @@
           <value>
             <list>
               <option value="$USER_HOME$/AppData/Local/Pub/Cache/hosted/pub.dev/video_player_android-2.8.2/lib" />
+              <option value="$USER_HOME$/AppData/Local/Pub/Cache/hosted/pub.dev/video_player_android-2.8.7/lib" />
+              <option value="$PROJECT_DIR$/../../../Users/PC/AppData/Local/Pub/Cache/hosted/pub.dev/video_player_android-2.8.7/lib" />
+              <option value="$USER_HOME$/AppData/Local/Pub/Cache/hosted/pub.dev/video_player_android-2.8.3/lib" />
             </list>
           </value>
         </entry>
@@ -441,6 +771,9 @@
           <value>
             <list>
               <option value="$USER_HOME$/AppData/Local/Pub/Cache/hosted/pub.dev/video_player_avfoundation-2.7.0/lib" />
+              <option value="$USER_HOME$/AppData/Local/Pub/Cache/hosted/pub.dev/video_player_avfoundation-2.7.1/lib" />
+              <option value="$USER_HOME$/AppData/Local/Pub/Cache/hosted/pub.dev/video_player_avfoundation-2.7.2/lib" />
+              <option value="$PROJECT_DIR$/../../../Users/PC/AppData/Local/Pub/Cache/hosted/pub.dev/video_player_avfoundation-2.7.1/lib" />
             </list>
           </value>
         </entry>
@@ -448,6 +781,8 @@
           <value>
             <list>
               <option value="$USER_HOME$/AppData/Local/Pub/Cache/hosted/pub.dev/video_player_platform_interface-6.3.0/lib" />
+              <option value="$USER_HOME$/AppData/Local/Pub/Cache/hosted/pub.dev/video_player_platform_interface-6.4.0/lib" />
+              <option value="$PROJECT_DIR$/../../../Users/PC/AppData/Local/Pub/Cache/hosted/pub.dev/video_player_platform_interface-6.3.0/lib" />
             </list>
           </value>
         </entry>
@@ -455,6 +790,8 @@
           <value>
             <list>
               <option value="$USER_HOME$/AppData/Local/Pub/Cache/hosted/pub.dev/video_player_web-2.3.4/lib" />
+              <option value="$USER_HOME$/AppData/Local/Pub/Cache/hosted/pub.dev/video_player_web-2.3.5/lib" />
+              <option value="$PROJECT_DIR$/../../../Users/PC/AppData/Local/Pub/Cache/hosted/pub.dev/video_player_web-2.3.5/lib" />
             </list>
           </value>
         </entry>
@@ -462,6 +799,7 @@
           <value>
             <list>
               <option value="$USER_HOME$/AppData/Local/Pub/Cache/hosted/pub.dev/vm_service-14.3.1/lib" />
+              <option value="$USER_HOME$/AppData/Local/Pub/Cache/hosted/pub.dev/vm_service-14.2.1/lib" />
             </list>
           </value>
         </entry>
@@ -469,6 +807,7 @@
           <value>
             <list>
               <option value="$USER_HOME$/AppData/Local/Pub/Cache/hosted/pub.dev/web-1.1.1/lib" />
+              <option value="$PROJECT_DIR$/../../../Users/PC/AppData/Local/Pub/Cache/hosted/pub.dev/web-1.1.1/lib" />
             </list>
           </value>
         </entry>
@@ -476,6 +815,15 @@
           <value>
             <list>
               <option value="$USER_HOME$/AppData/Local/Pub/Cache/hosted/pub.dev/xdg_directories-1.1.0/lib" />
+              <option value="$PROJECT_DIR$/../../../Users/PC/AppData/Local/Pub/Cache/hosted/pub.dev/xdg_directories-1.1.0/lib" />
+            </list>
+          </value>
+        </entry>
+        <entry key="xml">
+          <value>
+            <list>
+              <option value="$USER_HOME$/AppData/Local/Pub/Cache/hosted/pub.dev/xml-6.5.0/lib" />
+              <option value="$PROJECT_DIR$/../../../Users/PC/AppData/Local/Pub/Cache/hosted/pub.dev/xml-6.5.0/lib" />
             </list>
           </value>
         </entry>
@@ -486,8 +834,113 @@
       <root url="file://$PROJECT_DIR$/../../../FLUTTER_SDK_3292/flutter/packages/flutter/lib" />
       <root url="file://$PROJECT_DIR$/../../../FLUTTER_SDK_3292/flutter/packages/flutter_test/lib" />
       <root url="file://$PROJECT_DIR$/../../../FLUTTER_SDK_3292/flutter/packages/flutter_web_plugins/lib" />
+      <root url="file://$PROJECT_DIR$/../../../FLUTTER_SDK_3320/flutter/bin/cache/pkg/sky_engine/lib" />
+      <root url="file://$PROJECT_DIR$/../../../FLUTTER_SDK_3320/flutter/packages/flutter/lib" />
+      <root url="file://$PROJECT_DIR$/../../../FLUTTER_SDK_3320/flutter/packages/flutter_web_plugins/lib" />
+      <root url="file://$PROJECT_DIR$/../../../Users/PC/AppData/Local/Pub/Cache/hosted/pub.dev/animate_do-3.0.2/lib" />
+      <root url="file://$PROJECT_DIR$/../../../Users/PC/AppData/Local/Pub/Cache/hosted/pub.dev/archive-4.0.7/lib" />
+      <root url="file://$PROJECT_DIR$/../../../Users/PC/AppData/Local/Pub/Cache/hosted/pub.dev/async-2.13.0/lib" />
+      <root url="file://$PROJECT_DIR$/../../../Users/PC/AppData/Local/Pub/Cache/hosted/pub.dev/audio_session-0.2.2/lib" />
+      <root url="file://$PROJECT_DIR$/../../../Users/PC/AppData/Local/Pub/Cache/hosted/pub.dev/audioplayers-6.4.0/lib" />
+      <root url="file://$PROJECT_DIR$/../../../Users/PC/AppData/Local/Pub/Cache/hosted/pub.dev/audioplayers_android-5.2.1/lib" />
+      <root url="file://$PROJECT_DIR$/../../../Users/PC/AppData/Local/Pub/Cache/hosted/pub.dev/audioplayers_darwin-6.3.0/lib" />
+      <root url="file://$PROJECT_DIR$/../../../Users/PC/AppData/Local/Pub/Cache/hosted/pub.dev/audioplayers_linux-4.2.1/lib" />
+      <root url="file://$PROJECT_DIR$/../../../Users/PC/AppData/Local/Pub/Cache/hosted/pub.dev/audioplayers_platform_interface-7.1.1/lib" />
+      <root url="file://$PROJECT_DIR$/../../../Users/PC/AppData/Local/Pub/Cache/hosted/pub.dev/audioplayers_web-5.1.1/lib" />
+      <root url="file://$PROJECT_DIR$/../../../Users/PC/AppData/Local/Pub/Cache/hosted/pub.dev/audioplayers_windows-4.2.1/lib" />
+      <root url="file://$PROJECT_DIR$/../../../Users/PC/AppData/Local/Pub/Cache/hosted/pub.dev/carousel_slider-4.2.1/lib" />
+      <root url="file://$PROJECT_DIR$/../../../Users/PC/AppData/Local/Pub/Cache/hosted/pub.dev/characters-1.4.0/lib" />
+      <root url="file://$PROJECT_DIR$/../../../Users/PC/AppData/Local/Pub/Cache/hosted/pub.dev/collection-1.19.1/lib" />
+      <root url="file://$PROJECT_DIR$/../../../Users/PC/AppData/Local/Pub/Cache/hosted/pub.dev/crypto-3.0.6/lib" />
+      <root url="file://$PROJECT_DIR$/../../../Users/PC/AppData/Local/Pub/Cache/hosted/pub.dev/csslib-1.0.2/lib" />
+      <root url="file://$PROJECT_DIR$/../../../Users/PC/AppData/Local/Pub/Cache/hosted/pub.dev/cupertino_icons-1.0.8/lib" />
+      <root url="file://$PROJECT_DIR$/../../../Users/PC/AppData/Local/Pub/Cache/hosted/pub.dev/ffi-2.1.4/lib" />
+      <root url="file://$PROJECT_DIR$/../../../Users/PC/AppData/Local/Pub/Cache/hosted/pub.dev/file-7.0.1/lib" />
+      <root url="file://$PROJECT_DIR$/../../../Users/PC/AppData/Local/Pub/Cache/hosted/pub.dev/fixnum-1.1.1/lib" />
+      <root url="file://$PROJECT_DIR$/../../../Users/PC/AppData/Local/Pub/Cache/hosted/pub.dev/flame-1.25.0/lib" />
+      <root url="file://$PROJECT_DIR$/../../../Users/PC/AppData/Local/Pub/Cache/hosted/pub.dev/flame_audio-2.11.0/lib" />
+      <root url="file://$PROJECT_DIR$/../../../Users/PC/AppData/Local/Pub/Cache/hosted/pub.dev/flutter_lints-5.0.0/lib" />
+      <root url="file://$PROJECT_DIR$/../../../Users/PC/AppData/Local/Pub/Cache/hosted/pub.dev/flutter_soloud-3.1.8/lib" />
+      <root url="file://$PROJECT_DIR$/../../../Users/PC/AppData/Local/Pub/Cache/hosted/pub.dev/flutter_sound-9.28.0/lib" />
+      <root url="file://$PROJECT_DIR$/../../../Users/PC/AppData/Local/Pub/Cache/hosted/pub.dev/flutter_sound_platform_interface-9.28.0/lib" />
+      <root url="file://$PROJECT_DIR$/../../../Users/PC/AppData/Local/Pub/Cache/hosted/pub.dev/flutter_sound_web-9.28.0/lib" />
+      <root url="file://$PROJECT_DIR$/../../../Users/PC/AppData/Local/Pub/Cache/hosted/pub.dev/go_router-14.0.0/lib" />
+      <root url="file://$PROJECT_DIR$/../../../Users/PC/AppData/Local/Pub/Cache/hosted/pub.dev/google_fonts-5.0.0/lib" />
+      <root url="file://$PROJECT_DIR$/../../../Users/PC/AppData/Local/Pub/Cache/hosted/pub.dev/html-0.15.6/lib" />
+      <root url="file://$PROJECT_DIR$/../../../Users/PC/AppData/Local/Pub/Cache/hosted/pub.dev/http-1.4.0/lib" />
+      <root url="file://$PROJECT_DIR$/../../../Users/PC/AppData/Local/Pub/Cache/hosted/pub.dev/http_parser-4.1.2/lib" />
+      <root url="file://$PROJECT_DIR$/../../../Users/PC/AppData/Local/Pub/Cache/hosted/pub.dev/image-4.5.4/lib" />
+      <root url="file://$PROJECT_DIR$/../../../Users/PC/AppData/Local/Pub/Cache/hosted/pub.dev/just_audio-0.10.1/lib" />
+      <root url="file://$PROJECT_DIR$/../../../Users/PC/AppData/Local/Pub/Cache/hosted/pub.dev/just_audio_platform_interface-4.5.0/lib" />
+      <root url="file://$PROJECT_DIR$/../../../Users/PC/AppData/Local/Pub/Cache/hosted/pub.dev/just_audio_web-0.4.16/lib" />
+      <root url="file://$PROJECT_DIR$/../../../Users/PC/AppData/Local/Pub/Cache/hosted/pub.dev/lints-5.1.1/lib" />
+      <root url="file://$PROJECT_DIR$/../../../Users/PC/AppData/Local/Pub/Cache/hosted/pub.dev/logger-2.5.0/lib" />
+      <root url="file://$PROJECT_DIR$/../../../Users/PC/AppData/Local/Pub/Cache/hosted/pub.dev/logging-1.3.0/lib" />
+      <root url="file://$PROJECT_DIR$/../../../Users/PC/AppData/Local/Pub/Cache/hosted/pub.dev/material_color_utilities-0.11.1/lib" />
+      <root url="file://$PROJECT_DIR$/../../../Users/PC/AppData/Local/Pub/Cache/hosted/pub.dev/meta-1.16.0/lib" />
+      <root url="file://$PROJECT_DIR$/../../../Users/PC/AppData/Local/Pub/Cache/hosted/pub.dev/nested-1.0.0/lib" />
+      <root url="file://$PROJECT_DIR$/../../../Users/PC/AppData/Local/Pub/Cache/hosted/pub.dev/ordered_set-6.1.1/lib" />
+      <root url="file://$PROJECT_DIR$/../../../Users/PC/AppData/Local/Pub/Cache/hosted/pub.dev/path-1.9.0/lib" />
+      <root url="file://$PROJECT_DIR$/../../../Users/PC/AppData/Local/Pub/Cache/hosted/pub.dev/path_provider-2.1.5/lib" />
+      <root url="file://$PROJECT_DIR$/../../../Users/PC/AppData/Local/Pub/Cache/hosted/pub.dev/path_provider_android-2.2.17/lib" />
+      <root url="file://$PROJECT_DIR$/../../../Users/PC/AppData/Local/Pub/Cache/hosted/pub.dev/path_provider_foundation-2.4.1/lib" />
+      <root url="file://$PROJECT_DIR$/../../../Users/PC/AppData/Local/Pub/Cache/hosted/pub.dev/path_provider_linux-2.2.1/lib" />
+      <root url="file://$PROJECT_DIR$/../../../Users/PC/AppData/Local/Pub/Cache/hosted/pub.dev/path_provider_platform_interface-2.1.2/lib" />
+      <root url="file://$PROJECT_DIR$/../../../Users/PC/AppData/Local/Pub/Cache/hosted/pub.dev/path_provider_windows-2.3.0/lib" />
+      <root url="file://$PROJECT_DIR$/../../../Users/PC/AppData/Local/Pub/Cache/hosted/pub.dev/petitparser-6.1.0/lib" />
+      <root url="file://$PROJECT_DIR$/../../../Users/PC/AppData/Local/Pub/Cache/hosted/pub.dev/platform-3.1.6/lib" />
+      <root url="file://$PROJECT_DIR$/../../../Users/PC/AppData/Local/Pub/Cache/hosted/pub.dev/plugin_platform_interface-2.1.8/lib" />
+      <root url="file://$PROJECT_DIR$/../../../Users/PC/AppData/Local/Pub/Cache/hosted/pub.dev/posix-6.0.2/lib" />
+      <root url="file://$PROJECT_DIR$/../../../Users/PC/AppData/Local/Pub/Cache/hosted/pub.dev/provider-6.0.2/lib" />
+      <root url="file://$PROJECT_DIR$/../../../Users/PC/AppData/Local/Pub/Cache/hosted/pub.dev/rxdart-0.28.0/lib" />
+      <root url="file://$PROJECT_DIR$/../../../Users/PC/AppData/Local/Pub/Cache/hosted/pub.dev/shared_preferences-2.0.13/lib" />
+      <root url="file://$PROJECT_DIR$/../../../Users/PC/AppData/Local/Pub/Cache/hosted/pub.dev/shared_preferences_android-2.4.10/lib" />
+      <root url="file://$PROJECT_DIR$/../../../Users/PC/AppData/Local/Pub/Cache/hosted/pub.dev/shared_preferences_ios-2.1.1/lib" />
+      <root url="file://$PROJECT_DIR$/../../../Users/PC/AppData/Local/Pub/Cache/hosted/pub.dev/shared_preferences_linux-2.4.1/lib" />
+      <root url="file://$PROJECT_DIR$/../../../Users/PC/AppData/Local/Pub/Cache/hosted/pub.dev/shared_preferences_macos-2.0.5/lib" />
+      <root url="file://$PROJECT_DIR$/../../../Users/PC/AppData/Local/Pub/Cache/hosted/pub.dev/shared_preferences_platform_interface-2.4.1/lib" />
+      <root url="file://$PROJECT_DIR$/../../../Users/PC/AppData/Local/Pub/Cache/hosted/pub.dev/shared_preferences_web-2.4.3/lib" />
+      <root url="file://$PROJECT_DIR$/../../../Users/PC/AppData/Local/Pub/Cache/hosted/pub.dev/shared_preferences_windows-2.4.1/lib" />
+      <root url="file://$PROJECT_DIR$/../../../Users/PC/AppData/Local/Pub/Cache/hosted/pub.dev/source_span-1.10.1/lib" />
+      <root url="file://$PROJECT_DIR$/../../../Users/PC/AppData/Local/Pub/Cache/hosted/pub.dev/sprintf-7.0.0/lib" />
+      <root url="file://$PROJECT_DIR$/../../../Users/PC/AppData/Local/Pub/Cache/hosted/pub.dev/sqflite-2.4.0/lib" />
+      <root url="file://$PROJECT_DIR$/../../../Users/PC/AppData/Local/Pub/Cache/hosted/pub.dev/sqflite_android-2.4.1/lib" />
+      <root url="file://$PROJECT_DIR$/../../../Users/PC/AppData/Local/Pub/Cache/hosted/pub.dev/sqflite_common-2.5.5/lib" />
+      <root url="file://$PROJECT_DIR$/../../../Users/PC/AppData/Local/Pub/Cache/hosted/pub.dev/sqflite_darwin-2.4.2/lib" />
+      <root url="file://$PROJECT_DIR$/../../../Users/PC/AppData/Local/Pub/Cache/hosted/pub.dev/sqflite_platform_interface-2.4.0/lib" />
+      <root url="file://$PROJECT_DIR$/../../../Users/PC/AppData/Local/Pub/Cache/hosted/pub.dev/string_scanner-1.4.1/lib" />
+      <root url="file://$PROJECT_DIR$/../../../Users/PC/AppData/Local/Pub/Cache/hosted/pub.dev/synchronized-3.3.1/lib" />
+      <root url="file://$PROJECT_DIR$/../../../Users/PC/AppData/Local/Pub/Cache/hosted/pub.dev/term_glyph-1.2.2/lib" />
+      <root url="file://$PROJECT_DIR$/../../../Users/PC/AppData/Local/Pub/Cache/hosted/pub.dev/typed_data-1.4.0/lib" />
+      <root url="file://$PROJECT_DIR$/../../../Users/PC/AppData/Local/Pub/Cache/hosted/pub.dev/uuid-4.5.1/lib" />
+      <root url="file://$PROJECT_DIR$/../../../Users/PC/AppData/Local/Pub/Cache/hosted/pub.dev/vector_math-2.1.4/lib" />
+      <root url="file://$PROJECT_DIR$/../../../Users/PC/AppData/Local/Pub/Cache/hosted/pub.dev/video_player-2.9.3/lib" />
+      <root url="file://$PROJECT_DIR$/../../../Users/PC/AppData/Local/Pub/Cache/hosted/pub.dev/video_player_android-2.8.7/lib" />
+      <root url="file://$PROJECT_DIR$/../../../Users/PC/AppData/Local/Pub/Cache/hosted/pub.dev/video_player_avfoundation-2.7.1/lib" />
+      <root url="file://$PROJECT_DIR$/../../../Users/PC/AppData/Local/Pub/Cache/hosted/pub.dev/video_player_platform_interface-6.3.0/lib" />
+      <root url="file://$PROJECT_DIR$/../../../Users/PC/AppData/Local/Pub/Cache/hosted/pub.dev/video_player_web-2.3.5/lib" />
+      <root url="file://$PROJECT_DIR$/../../../Users/PC/AppData/Local/Pub/Cache/hosted/pub.dev/web-1.1.1/lib" />
+      <root url="file://$PROJECT_DIR$/../../../Users/PC/AppData/Local/Pub/Cache/hosted/pub.dev/xdg_directories-1.1.0/lib" />
+      <root url="file://$PROJECT_DIR$/../../../Users/PC/AppData/Local/Pub/Cache/hosted/pub.dev/xml-6.5.0/lib" />
       <root url="file://$USER_HOME$/AppData/Local/Pub/Cache/hosted/pub.dev/animate_do-3.0.2/lib" />
+      <root url="file://$USER_HOME$/AppData/Local/Pub/Cache/hosted/pub.dev/archive-4.0.7/lib" />
       <root url="file://$USER_HOME$/AppData/Local/Pub/Cache/hosted/pub.dev/async-2.12.0/lib" />
+      <root url="file://$USER_HOME$/AppData/Local/Pub/Cache/hosted/pub.dev/async-2.13.0/lib" />
+      <root url="file://$USER_HOME$/AppData/Local/Pub/Cache/hosted/pub.dev/audio_session-0.2.1/lib" />
+      <root url="file://$USER_HOME$/AppData/Local/Pub/Cache/hosted/pub.dev/audio_session-0.2.2/lib" />
+      <root url="file://$USER_HOME$/AppData/Local/Pub/Cache/hosted/pub.dev/audioplayers-6.4.0/lib" />
+      <root url="file://$USER_HOME$/AppData/Local/Pub/Cache/hosted/pub.dev/audioplayers_android-5.2.0/lib" />
+      <root url="file://$USER_HOME$/AppData/Local/Pub/Cache/hosted/pub.dev/audioplayers_android-5.2.1/lib" />
+      <root url="file://$USER_HOME$/AppData/Local/Pub/Cache/hosted/pub.dev/audioplayers_darwin-6.2.0/lib" />
+      <root url="file://$USER_HOME$/AppData/Local/Pub/Cache/hosted/pub.dev/audioplayers_darwin-6.3.0/lib" />
+      <root url="file://$USER_HOME$/AppData/Local/Pub/Cache/hosted/pub.dev/audioplayers_linux-4.2.0/lib" />
+      <root url="file://$USER_HOME$/AppData/Local/Pub/Cache/hosted/pub.dev/audioplayers_linux-4.2.1/lib" />
+      <root url="file://$USER_HOME$/AppData/Local/Pub/Cache/hosted/pub.dev/audioplayers_platform_interface-7.1.0/lib" />
+      <root url="file://$USER_HOME$/AppData/Local/Pub/Cache/hosted/pub.dev/audioplayers_platform_interface-7.1.1/lib" />
+      <root url="file://$USER_HOME$/AppData/Local/Pub/Cache/hosted/pub.dev/audioplayers_web-5.1.0/lib" />
+      <root url="file://$USER_HOME$/AppData/Local/Pub/Cache/hosted/pub.dev/audioplayers_web-5.1.1/lib" />
+      <root url="file://$USER_HOME$/AppData/Local/Pub/Cache/hosted/pub.dev/audioplayers_windows-4.2.0/lib" />
+      <root url="file://$USER_HOME$/AppData/Local/Pub/Cache/hosted/pub.dev/audioplayers_windows-4.2.1/lib" />
       <root url="file://$USER_HOME$/AppData/Local/Pub/Cache/hosted/pub.dev/boolean_selector-2.1.2/lib" />
       <root url="file://$USER_HOME$/AppData/Local/Pub/Cache/hosted/pub.dev/carousel_slider-4.2.1/lib" />
       <root url="file://$USER_HOME$/AppData/Local/Pub/Cache/hosted/pub.dev/characters-1.4.0/lib" />
@@ -499,17 +952,34 @@
       <root url="file://$USER_HOME$/AppData/Local/Pub/Cache/hosted/pub.dev/fake_async-1.3.2/lib" />
       <root url="file://$USER_HOME$/AppData/Local/Pub/Cache/hosted/pub.dev/ffi-2.1.4/lib" />
       <root url="file://$USER_HOME$/AppData/Local/Pub/Cache/hosted/pub.dev/file-7.0.1/lib" />
+      <root url="file://$USER_HOME$/AppData/Local/Pub/Cache/hosted/pub.dev/fixnum-1.1.1/lib" />
       <root url="file://$USER_HOME$/AppData/Local/Pub/Cache/hosted/pub.dev/flame-1.22.0/lib" />
+      <root url="file://$USER_HOME$/AppData/Local/Pub/Cache/hosted/pub.dev/flame-1.25.0/lib" />
+      <root url="file://$USER_HOME$/AppData/Local/Pub/Cache/hosted/pub.dev/flame_audio-2.11.0/lib" />
       <root url="file://$USER_HOME$/AppData/Local/Pub/Cache/hosted/pub.dev/flutter_lints-5.0.0/lib" />
+      <root url="file://$USER_HOME$/AppData/Local/Pub/Cache/hosted/pub.dev/flutter_soloud-3.1.8/lib" />
+      <root url="file://$USER_HOME$/AppData/Local/Pub/Cache/hosted/pub.dev/flutter_sound-9.28.0/lib" />
+      <root url="file://$USER_HOME$/AppData/Local/Pub/Cache/hosted/pub.dev/flutter_sound_platform_interface-9.28.0/lib" />
+      <root url="file://$USER_HOME$/AppData/Local/Pub/Cache/hosted/pub.dev/flutter_sound_web-9.28.0/lib" />
       <root url="file://$USER_HOME$/AppData/Local/Pub/Cache/hosted/pub.dev/go_router-14.0.0/lib" />
       <root url="file://$USER_HOME$/AppData/Local/Pub/Cache/hosted/pub.dev/google_fonts-5.0.0/lib" />
+      <root url="file://$USER_HOME$/AppData/Local/Pub/Cache/hosted/pub.dev/html-0.15.5+1/lib" />
       <root url="file://$USER_HOME$/AppData/Local/Pub/Cache/hosted/pub.dev/html-0.15.5/lib" />
+      <root url="file://$USER_HOME$/AppData/Local/Pub/Cache/hosted/pub.dev/html-0.15.6/lib" />
       <root url="file://$USER_HOME$/AppData/Local/Pub/Cache/hosted/pub.dev/http-1.3.0/lib" />
+      <root url="file://$USER_HOME$/AppData/Local/Pub/Cache/hosted/pub.dev/http-1.4.0/lib" />
       <root url="file://$USER_HOME$/AppData/Local/Pub/Cache/hosted/pub.dev/http_parser-4.1.2/lib" />
+      <root url="file://$USER_HOME$/AppData/Local/Pub/Cache/hosted/pub.dev/image-4.5.4/lib" />
+      <root url="file://$USER_HOME$/AppData/Local/Pub/Cache/hosted/pub.dev/just_audio-0.10.1/lib" />
+      <root url="file://$USER_HOME$/AppData/Local/Pub/Cache/hosted/pub.dev/just_audio_platform_interface-4.5.0/lib" />
+      <root url="file://$USER_HOME$/AppData/Local/Pub/Cache/hosted/pub.dev/just_audio_web-0.4.15/lib" />
+      <root url="file://$USER_HOME$/AppData/Local/Pub/Cache/hosted/pub.dev/just_audio_web-0.4.16/lib" />
       <root url="file://$USER_HOME$/AppData/Local/Pub/Cache/hosted/pub.dev/leak_tracker-10.0.8/lib" />
       <root url="file://$USER_HOME$/AppData/Local/Pub/Cache/hosted/pub.dev/leak_tracker_flutter_testing-3.0.9/lib" />
       <root url="file://$USER_HOME$/AppData/Local/Pub/Cache/hosted/pub.dev/leak_tracker_testing-3.0.1/lib" />
       <root url="file://$USER_HOME$/AppData/Local/Pub/Cache/hosted/pub.dev/lints-5.1.1/lib" />
+      <root url="file://$USER_HOME$/AppData/Local/Pub/Cache/hosted/pub.dev/logger-2.5.0/lib" />
+      <root url="file://$USER_HOME$/AppData/Local/Pub/Cache/hosted/pub.dev/logger-2.6.0/lib" />
       <root url="file://$USER_HOME$/AppData/Local/Pub/Cache/hosted/pub.dev/logging-1.3.0/lib" />
       <root url="file://$USER_HOME$/AppData/Local/Pub/Cache/hosted/pub.dev/matcher-0.12.17/lib" />
       <root url="file://$USER_HOME$/AppData/Local/Pub/Cache/hosted/pub.dev/material_color_utilities-0.11.1/lib" />
@@ -520,15 +990,22 @@
       <root url="file://$USER_HOME$/AppData/Local/Pub/Cache/hosted/pub.dev/path-1.9.1/lib" />
       <root url="file://$USER_HOME$/AppData/Local/Pub/Cache/hosted/pub.dev/path_provider-2.1.5/lib" />
       <root url="file://$USER_HOME$/AppData/Local/Pub/Cache/hosted/pub.dev/path_provider_android-2.2.16/lib" />
+      <root url="file://$USER_HOME$/AppData/Local/Pub/Cache/hosted/pub.dev/path_provider_android-2.2.17/lib" />
       <root url="file://$USER_HOME$/AppData/Local/Pub/Cache/hosted/pub.dev/path_provider_foundation-2.4.1/lib" />
       <root url="file://$USER_HOME$/AppData/Local/Pub/Cache/hosted/pub.dev/path_provider_linux-2.2.1/lib" />
       <root url="file://$USER_HOME$/AppData/Local/Pub/Cache/hosted/pub.dev/path_provider_platform_interface-2.1.2/lib" />
       <root url="file://$USER_HOME$/AppData/Local/Pub/Cache/hosted/pub.dev/path_provider_windows-2.3.0/lib" />
+      <root url="file://$USER_HOME$/AppData/Local/Pub/Cache/hosted/pub.dev/petitparser-6.1.0/lib" />
       <root url="file://$USER_HOME$/AppData/Local/Pub/Cache/hosted/pub.dev/platform-3.1.6/lib" />
       <root url="file://$USER_HOME$/AppData/Local/Pub/Cache/hosted/pub.dev/plugin_platform_interface-2.1.8/lib" />
+      <root url="file://$USER_HOME$/AppData/Local/Pub/Cache/hosted/pub.dev/posix-6.0.2/lib" />
+      <root url="file://$USER_HOME$/AppData/Local/Pub/Cache/hosted/pub.dev/posix-6.0.3/lib" />
       <root url="file://$USER_HOME$/AppData/Local/Pub/Cache/hosted/pub.dev/provider-6.0.2/lib" />
+      <root url="file://$USER_HOME$/AppData/Local/Pub/Cache/hosted/pub.dev/rxdart-0.28.0/lib" />
       <root url="file://$USER_HOME$/AppData/Local/Pub/Cache/hosted/pub.dev/shared_preferences-2.0.13/lib" />
+      <root url="file://$USER_HOME$/AppData/Local/Pub/Cache/hosted/pub.dev/shared_preferences_android-2.4.10/lib" />
       <root url="file://$USER_HOME$/AppData/Local/Pub/Cache/hosted/pub.dev/shared_preferences_android-2.4.8/lib" />
+      <root url="file://$USER_HOME$/AppData/Local/Pub/Cache/hosted/pub.dev/shared_preferences_android-2.4.9/lib" />
       <root url="file://$USER_HOME$/AppData/Local/Pub/Cache/hosted/pub.dev/shared_preferences_ios-2.1.1/lib" />
       <root url="file://$USER_HOME$/AppData/Local/Pub/Cache/hosted/pub.dev/shared_preferences_linux-2.4.1/lib" />
       <root url="file://$USER_HOME$/AppData/Local/Pub/Cache/hosted/pub.dev/shared_preferences_macos-2.0.5/lib" />
@@ -536,21 +1013,42 @@
       <root url="file://$USER_HOME$/AppData/Local/Pub/Cache/hosted/pub.dev/shared_preferences_web-2.4.3/lib" />
       <root url="file://$USER_HOME$/AppData/Local/Pub/Cache/hosted/pub.dev/shared_preferences_windows-2.4.1/lib" />
       <root url="file://$USER_HOME$/AppData/Local/Pub/Cache/hosted/pub.dev/source_span-1.10.1/lib" />
+      <root url="file://$USER_HOME$/AppData/Local/Pub/Cache/hosted/pub.dev/sprintf-7.0.0/lib" />
+      <root url="file://$USER_HOME$/AppData/Local/Pub/Cache/hosted/pub.dev/sqflite-2.4.0/lib" />
+      <root url="file://$USER_HOME$/AppData/Local/Pub/Cache/hosted/pub.dev/sqflite_android-2.4.1/lib" />
+      <root url="file://$USER_HOME$/AppData/Local/Pub/Cache/hosted/pub.dev/sqflite_common-2.5.5/lib" />
+      <root url="file://$USER_HOME$/AppData/Local/Pub/Cache/hosted/pub.dev/sqflite_darwin-2.4.2/lib" />
+      <root url="file://$USER_HOME$/AppData/Local/Pub/Cache/hosted/pub.dev/sqflite_platform_interface-2.4.0/lib" />
       <root url="file://$USER_HOME$/AppData/Local/Pub/Cache/hosted/pub.dev/stack_trace-1.12.1/lib" />
       <root url="file://$USER_HOME$/AppData/Local/Pub/Cache/hosted/pub.dev/stream_channel-2.1.4/lib" />
       <root url="file://$USER_HOME$/AppData/Local/Pub/Cache/hosted/pub.dev/string_scanner-1.4.1/lib" />
+      <root url="file://$USER_HOME$/AppData/Local/Pub/Cache/hosted/pub.dev/synchronized-3.3.1/lib" />
+      <root url="file://$USER_HOME$/AppData/Local/Pub/Cache/hosted/pub.dev/synchronized-3.4.0/lib" />
       <root url="file://$USER_HOME$/AppData/Local/Pub/Cache/hosted/pub.dev/term_glyph-1.2.2/lib" />
       <root url="file://$USER_HOME$/AppData/Local/Pub/Cache/hosted/pub.dev/test_api-0.7.4/lib" />
       <root url="file://$USER_HOME$/AppData/Local/Pub/Cache/hosted/pub.dev/typed_data-1.4.0/lib" />
+      <root url="file://$USER_HOME$/AppData/Local/Pub/Cache/hosted/pub.dev/uuid-4.5.1/lib" />
       <root url="file://$USER_HOME$/AppData/Local/Pub/Cache/hosted/pub.dev/vector_math-2.1.4/lib" />
       <root url="file://$USER_HOME$/AppData/Local/Pub/Cache/hosted/pub.dev/video_player-2.9.3/lib" />
       <root url="file://$USER_HOME$/AppData/Local/Pub/Cache/hosted/pub.dev/video_player_android-2.8.2/lib" />
+      <root url="file://$USER_HOME$/AppData/Local/Pub/Cache/hosted/pub.dev/video_player_android-2.8.3/lib" />
+      <root url="file://$USER_HOME$/AppData/Local/Pub/Cache/hosted/pub.dev/video_player_android-2.8.7/lib" />
       <root url="file://$USER_HOME$/AppData/Local/Pub/Cache/hosted/pub.dev/video_player_avfoundation-2.7.0/lib" />
+      <root url="file://$USER_HOME$/AppData/Local/Pub/Cache/hosted/pub.dev/video_player_avfoundation-2.7.1/lib" />
+      <root url="file://$USER_HOME$/AppData/Local/Pub/Cache/hosted/pub.dev/video_player_avfoundation-2.7.2/lib" />
       <root url="file://$USER_HOME$/AppData/Local/Pub/Cache/hosted/pub.dev/video_player_platform_interface-6.3.0/lib" />
+      <root url="file://$USER_HOME$/AppData/Local/Pub/Cache/hosted/pub.dev/video_player_platform_interface-6.4.0/lib" />
       <root url="file://$USER_HOME$/AppData/Local/Pub/Cache/hosted/pub.dev/video_player_web-2.3.4/lib" />
+      <root url="file://$USER_HOME$/AppData/Local/Pub/Cache/hosted/pub.dev/video_player_web-2.3.5/lib" />
+      <root url="file://$USER_HOME$/AppData/Local/Pub/Cache/hosted/pub.dev/vm_service-14.2.1/lib" />
       <root url="file://$USER_HOME$/AppData/Local/Pub/Cache/hosted/pub.dev/vm_service-14.3.1/lib" />
       <root url="file://$USER_HOME$/AppData/Local/Pub/Cache/hosted/pub.dev/web-1.1.1/lib" />
       <root url="file://$USER_HOME$/AppData/Local/Pub/Cache/hosted/pub.dev/xdg_directories-1.1.0/lib" />
+      <root url="file://$USER_HOME$/AppData/Local/Pub/Cache/hosted/pub.dev/xml-6.5.0/lib" />
+      <root url="file://$PROJECT_DIR$/../lib" />
+      <root url="file://D:/VAN_TAN_WS/00_ProjectSetup/FLUTTER_3320/flutter/bin/cache/pkg/sky_engine/lib" />
+      <root url="file://D:/VAN_TAN_WS/00_ProjectSetup/FLUTTER_3320/flutter/packages/flutter/lib" />
+      <root url="file://D:/VAN_TAN_WS/00_ProjectSetup/FLUTTER_3320/flutter/packages/flutter_web_plugins/lib" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />

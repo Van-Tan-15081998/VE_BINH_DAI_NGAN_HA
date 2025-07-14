@@ -7,7 +7,7 @@ import 'package:pkg_man_hinh_ss00222/22_def0022/ADef20_0/08_SubDefs/Def20_2/09_R
 /// -----
 /// TODO: Card Chiến Đấu Cơ Chọn Chỉ Định
 /// -----
-class CARDCHIENDAUCOCHONCHIDINH extends THANHPHANNUTBAMTHUOCCAPTHUANKICHHOAT {
+class CARDCHIENDAUCOCHONCHIDINH extends THANHPHANNUTBAMTICHHOPTHUOCCAP {
   /// -----
   /// TODO:
   /// -----

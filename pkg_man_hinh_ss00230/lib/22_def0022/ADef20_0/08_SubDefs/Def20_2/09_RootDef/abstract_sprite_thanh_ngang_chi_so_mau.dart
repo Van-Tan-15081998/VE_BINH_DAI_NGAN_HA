@@ -508,7 +508,7 @@ abstract class SPRITETHANHNGANGCHISOMAUCOBAN extends SpriteAnimationComponent wi
   }
 
   @override
-  FutureOr<void> update(double dt) async {
+  void update(double dt) {
     super.update(dt);
 
     onVoidCaiDatTuDongBienTangTienGiamTanXuatCapNhat();

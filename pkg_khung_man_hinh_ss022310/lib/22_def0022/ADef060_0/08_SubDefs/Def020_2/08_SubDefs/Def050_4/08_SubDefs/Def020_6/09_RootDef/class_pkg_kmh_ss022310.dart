@@ -7,7 +7,7 @@ import 'package:pkg_khung_man_hinh_ss020000/pkg_khung_man_hinh_ss020000_exp.dart
 /// TODO: Card Chiến Đấu Cơ Đẳng Cấp Sao [00C05_SS01]
 /// -----
 class CARDCHIENDAUCODANGCAPSAO00C05SS01
-    extends THANHPHANNUTBAMTHUOCCAPTHUANKICHHOAT {
+    extends THANHPHANNUTBAMTICHHOPTHUOCCAP {
   /// -----
   /// TODO:
   /// -----
@@ -165,6 +165,8 @@ class CARDCHIENDAUCODANGCAPSAO00C05SS01
       value: sizeDyCapNhat,
       caiDatUuTien: true,
     );
+
+    await onRemoveThanhPhanKhongHoatDong();
 
     ///
     return;

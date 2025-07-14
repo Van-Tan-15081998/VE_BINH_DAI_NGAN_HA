@@ -2298,10 +2298,10 @@ class QUANLYTRANGTHAIHANGARCHIENDAUCO with CAUTRUCTHUCTHICOBAN {
             await _trangThaiTaiTaiNguyenChienDauCo00E03SS010?.onVoidCaiDatTrangThaiHoanTatTai();
 
             /// temp
-            // await _trangThaiTaiTaiNguyenChienDauCo?.onVoidCaiDatTrangThaiHoanTatTai();
-            //
-            // /// temp
-            // onThucThiHoanTat?.call();
+            await _trangThaiTaiTaiNguyenChienDauCo?.onVoidCaiDatTrangThaiHoanTatTai();
+
+            /// temp
+            onThucThiHoanTat?.call();
           },
         );
 

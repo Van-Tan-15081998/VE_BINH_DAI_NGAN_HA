@@ -46,7 +46,7 @@ class SpriteVienDanThongMinhSS03SS22 extends SpriteVienDanThongMinh {
   /// TODO:
   /// -----
   @override
-    FutureOr<void> update(double dt) async {
+    void update(double dt) {
     super.update(dt);
 
     if (getBienTangTienGiamTanXuatCapNhat % 2 == 0) {
