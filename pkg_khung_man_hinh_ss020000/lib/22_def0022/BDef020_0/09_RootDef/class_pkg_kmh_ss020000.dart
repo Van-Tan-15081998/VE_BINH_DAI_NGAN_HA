@@ -204,6 +204,26 @@ mixin KICHBANDIEUKHIENTHUOCCAPCOBAN {
     return;
   }
 
+  Future<void> onTaiTaiNguyenNhiemVuChienDau({required Future<void> Function()? onThucThiHoanTat}) async {
+    /// -----
+    /// TODO:
+    /// -----
+
+
+    ///
+    return;
+  }
+
+  Future<void> onKichHoatThucThiNhiemVuChienDau({required Future<void> Function()? onThucThiHoanTat}) async {
+    /// -----
+    /// TODO:
+    /// -----
+
+
+    ///
+    return;
+  }
+
   Future<void> onTroVeTrangChu() async {
     /// -----
     /// TODO:

@@ -460,4 +460,289 @@ class QuanLyTrangThaiThietLapTongQuat
 
     return false;
   }
+
+  /// -----
+  /// TODO:
+  /// -----
+  bool onKiemTraChoPhepCapNhatTheoTocDoKhungHinh2({
+    required String maDinhDanh,
+    required int chiSoTangTienGiamTanXuatCapNhat,
+  }) {
+    switch (maDinhDanh) {
+      case '[SPRITE_ANIMATION_CO_BAN]':
+        {
+          switch (getTocDoKhungHinh) {
+            case 60:
+              {
+                if (chiSoTangTienGiamTanXuatCapNhat % 10 == 0) {
+                  return true;
+                }
+              }
+              break;
+            case 90:
+              {
+                if (chiSoTangTienGiamTanXuatCapNhat % 10 == 0) {
+                  return true;
+                }
+              }
+              break;
+            case 120:
+              {
+                if (chiSoTangTienGiamTanXuatCapNhat % 10 == 0) {
+                  return true;
+                }
+              }
+              break;
+          }
+        }
+        break;
+      case '[SPRITE_ANIMATION_CHIEN_DAU_CO]':
+        {
+          switch (getTocDoKhungHinh) {
+            case 60:
+              {
+                if (chiSoTangTienGiamTanXuatCapNhat % 10 == 0) {
+                  return true;
+                }
+              }
+              break;
+            case 90:
+              {
+                if (chiSoTangTienGiamTanXuatCapNhat % 10 == 0) {
+                  return true;
+                }
+              }
+              break;
+            case 120:
+              {
+                if (chiSoTangTienGiamTanXuatCapNhat % 10 == 0) {
+                  return true;
+                }
+              }
+              break;
+          }
+        }
+        break;
+      case '[SPRITE_ANIMATION_VU_KHI_DIEU_KHIEN]':
+        {
+          switch (getTocDoKhungHinh) {
+            case 60:
+              {
+                if (chiSoTangTienGiamTanXuatCapNhat % 10 == 0) {
+                  return true;
+                }
+              }
+              break;
+            case 90:
+              {
+                if (chiSoTangTienGiamTanXuatCapNhat % 10 == 0) {
+                  return true;
+                }
+              }
+              break;
+            case 120:
+              {
+                if (chiSoTangTienGiamTanXuatCapNhat % 10 == 0) {
+                  return true;
+                }
+              }
+              break;
+          }
+        }
+        break;
+      case '[SPRITE_ANIMATION_CHIEN_DAU_CO_CHIEN_DAU]':
+        {
+          switch (getTocDoKhungHinh) {
+            case 60:
+              {
+                if (chiSoTangTienGiamTanXuatCapNhat % 10 == 0) {
+                  return true;
+                }
+              }
+              break;
+            case 90:
+              {
+                if (chiSoTangTienGiamTanXuatCapNhat % 10 == 0) {
+                  return true;
+                }
+              }
+              break;
+            case 120:
+              {
+                if (chiSoTangTienGiamTanXuatCapNhat % 10 == 0) {
+                  return true;
+                }
+              }
+              break;
+          }
+        }
+        break;
+      case '[KHUNG_HINH_NEN_CHIEN_DAU]':
+        {
+          switch (getTocDoKhungHinh) {
+            case 60:
+              {
+                if (chiSoTangTienGiamTanXuatCapNhat % 10 == 0) {
+                  return true;
+                }
+              }
+              break;
+            case 90:
+              {
+                if (chiSoTangTienGiamTanXuatCapNhat % 10 == 0) {
+                  return true;
+                }
+              }
+              break;
+            case 120:
+              {
+                if (chiSoTangTienGiamTanXuatCapNhat % 10 == 0) {
+                  return true;
+                }
+              }
+              break;
+          }
+        }
+        break;
+      case '[VONG_LAP_CO_BAN]':
+        {
+          switch (getTocDoKhungHinh) {
+            case 60:
+              {
+                if (chiSoTangTienGiamTanXuatCapNhat % 10 == 0) {
+                  return true;
+                }
+              }
+              break;
+            case 90:
+              {
+                if (chiSoTangTienGiamTanXuatCapNhat % 10 == 0) {
+                  return true;
+                }
+              }
+              break;
+            case 120:
+              {
+                if (chiSoTangTienGiamTanXuatCapNhat % 10 == 0) {
+                  return true;
+                }
+              }
+              break;
+          }
+        }
+        break;
+      case '[VONG_LAP_CHIEN_DAU_CO_TAN_CONG_CO_BAN]':
+        {
+          switch (getTocDoKhungHinh) {
+            case 60:
+              {
+                if (chiSoTangTienGiamTanXuatCapNhat % 10 == 0) {
+                  return true;
+                }
+              }
+              break;
+            case 90:
+              {
+                if (chiSoTangTienGiamTanXuatCapNhat % 10 == 0) {
+                  return true;
+                }
+              }
+              break;
+            case 120:
+              {
+                if (chiSoTangTienGiamTanXuatCapNhat % 10 == 0) {
+                  return true;
+                }
+              }
+              break;
+          }
+        }
+        break;
+      case '[VONG_LAP_CHIEN_DAUCO_TAN_CONG_THONG_MINH]':
+        {
+          switch (getTocDoKhungHinh) {
+            case 60:
+              {
+                if (chiSoTangTienGiamTanXuatCapNhat % 10 == 0) {
+                  return true;
+                }
+              }
+              break;
+            case 90:
+              {
+                if (chiSoTangTienGiamTanXuatCapNhat % 10 == 0) {
+                  return true;
+                }
+              }
+              break;
+            case 120:
+              {
+                if (chiSoTangTienGiamTanXuatCapNhat % 10 == 0) {
+                  return true;
+                }
+              }
+              break;
+          }
+        }
+        break;
+
+      case '[VONG_LAP_NHAN_DINH_SU_KIEN_VA_CHAM]':
+        {
+          switch (getTocDoKhungHinh) {
+            case 60:
+              {
+                if (chiSoTangTienGiamTanXuatCapNhat % 20 == 0) {
+                  return true;
+                }
+              }
+              break;
+            case 90:
+              {
+                if (chiSoTangTienGiamTanXuatCapNhat % 20 == 0) {
+                  return true;
+                }
+              }
+              break;
+            case 120:
+              {
+                if (chiSoTangTienGiamTanXuatCapNhat % 20 == 0) {
+                  return true;
+                }
+              }
+              break;
+          }
+        }
+        break;
+
+      case '[VONG_LAP_VAN_HANH_KICH_BAN_CHIEN_DAU]':
+        {
+          switch (getTocDoKhungHinh) {
+            case 60:
+              {
+                if (chiSoTangTienGiamTanXuatCapNhat % 200 == 0) {
+                  return true;
+                }
+              }
+              break;
+            case 90:
+              {
+                if (chiSoTangTienGiamTanXuatCapNhat % 200 == 0) {
+                  return true;
+                }
+              }
+              break;
+            case 120:
+              {
+                if (chiSoTangTienGiamTanXuatCapNhat % 200 == 0) {
+                  return true;
+                }
+              }
+              break;
+          }
+        }
+        break;
+    }
+
+    return false;
+  }
 }

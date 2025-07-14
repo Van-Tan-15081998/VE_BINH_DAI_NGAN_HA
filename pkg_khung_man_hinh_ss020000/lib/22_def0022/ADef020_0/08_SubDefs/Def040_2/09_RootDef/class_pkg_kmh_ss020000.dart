@@ -310,7 +310,9 @@ abstract class THANHPHANMANHINHDRAGTHUOCCAPCOBAN extends PositionComponent with 
       /// -----
       /// TODO:
       /// -----
-      await flameGame?.add(this);
+      // await flameGame?.add(this);
+
+      parent?.add(this);
 
       /// -----
       /// TODO:
@@ -349,6 +351,8 @@ abstract class THANHPHANMANHINHDRAGTHUOCCAPCOBAN extends PositionComponent with 
   /// TODO: Remove Comp Root
   /// -----
   Future<void> onRemoveRoot({required FlameGame? flameGame, required Component? component}) async {
+
+    removeFromParent();
 
     /// -----
     /// TODO: Remove Comp Root For SubCom

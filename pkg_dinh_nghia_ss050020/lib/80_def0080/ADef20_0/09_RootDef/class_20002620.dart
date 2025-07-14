@@ -7,6 +7,8 @@ import 'package:pkg_dinh_nghia_ss050020/80_def0080/ADef10_0/08_SubDefs/Def20_2/0
 import 'package:pkg_dinh_nghia_ss050020/80_def0080/ADef10_0/08_SubDefs/Def20_2/08_SubDefs/Def40_4/09_RootDef/class_20002608.dart';
 import 'package:pkg_dinh_nghia_ss050020/pkg_dinh_nghia_ss050020_exp.dart';
 
+import 'package:pkg_dinh_nghia_ss020000/pkg_dinh_nghia_ss020000_exp.dart';
+
 /// -----
 /// TODO: Quản Lý Điều Khiển Chuyển Kịch Bản Chiến Đấu
 /// -----
@@ -209,7 +211,6 @@ class QUANLYDIEUKHIENCHUYENKICHBANCHIENDAU with CauTrucThucThiCoBan, DanhSachQua
             await getTienTrinhTongQuat?.getTienTrinhThucThiChienDau?.getTrangThai?.getMoHinh?.caiDatThucThiHoanTat();
 
             await getMainGameController?.onKichHoatKhungManHinhThuocCapSS300400ChienThang();
-
           }
         }
       }
@@ -246,7 +247,7 @@ class QUANLYDIEUKHIENCHUYENKICHBANCHIENDAU with CauTrucThucThiCoBan, DanhSachQua
     return;
   }
 
-  Future<void> onTaiTaiNguyenPhuongTienTuanTu() async {
+  Future<void> onTaiTaiNguyenPhuongTienTuanTu({required Future<void> Function()? onThucThiHoanTat}) async {
     // if (getDanhSachMaDinhDanhPhuongTien?.isNotEmpty == true) {
     //   await getHangarPhuongTienTongQuat?.onTaiTaiNguyenPhuongTienTheoMaDinhDanh(
     //       maDinhDanhPhuongTien: getDanhSachMaDinhDanhPhuongTien?[0]
@@ -254,14 +255,30 @@ class QUANLYDIEUKHIENCHUYENKICHBANCHIENDAU with CauTrucThucThiCoBan, DanhSachQua
     //   getDanhSachMaDinhDanhPhuongTien?.removeAt(0);
     // }getTrangThaiTongQuat?.onGetEntityResourceManagement?.getQuanLyTrangThaiHangarPhuongTien?.
 
+    // if (getDanhSachMaDinhDanhPhuongTien?.isNotEmpty == true) {
+    //   for (int index = 0; index < (getDanhSachMaDinhDanhPhuongTien?.length ?? 0); index++) {
+    //     await Future.delayed(Duration.zero);
+    //     // await getHangarPhuongTienTongQuat?.onTaiTaiNguyenPhuongTienTheoMaDinhDanh(
+    //     await onGetEntityResourceManagement?.getQuanLyTrangThaiHangarPhuongTien?.onTaiTaiNguyenPhuongTienTheoMaDinhDanh(maDinhDanhPhuongTien: getDanhSachMaDinhDanhPhuongTien?[index]);
+    //     // getDanhSachMaDinhDanhPhuongTien?.removeAt(index);
+    //   }
+    // }
+
+    CAUTRUCTHUCTHITUANTUCOBAN? cauTrucThucThiTuanTu = CAUTRUCTHUCTHITUANTUCOBAN.onMacDinh();
+
     if (getDanhSachMaDinhDanhPhuongTien?.isNotEmpty == true) {
       for (int index = 0; index < (getDanhSachMaDinhDanhPhuongTien?.length ?? 0); index++) {
-        await Future.delayed(Duration.zero);
-        // await getHangarPhuongTienTongQuat?.onTaiTaiNguyenPhuongTienTheoMaDinhDanh(
-        await onGetEntityResourceManagement?.getQuanLyTrangThaiHangarPhuongTien?.onTaiTaiNguyenPhuongTienTheoMaDinhDanh(maDinhDanhPhuongTien: getDanhSachMaDinhDanhPhuongTien?[index]);
-        // getDanhSachMaDinhDanhPhuongTien?.removeAt(index);
+        cauTrucThucThiTuanTu.onAddDonViThucThiTuanTu(
+          onThucThiTuanTu: () async {
+            await onGetEntityResourceManagement?.getQuanLyTrangThaiHangarPhuongTien?.onTaiTaiNguyenPhuongTienTheoMaDinhDanh(maDinhDanhPhuongTien: getDanhSachMaDinhDanhPhuongTien?[index]);
+          },
+        );
       }
     }
+
+    cauTrucThucThiTuanTu.onThucThiHoanTat = onThucThiHoanTat;
+
+    await cauTrucThucThiTuanTu.onThucThiTuanTu();
 
     ///
     return;

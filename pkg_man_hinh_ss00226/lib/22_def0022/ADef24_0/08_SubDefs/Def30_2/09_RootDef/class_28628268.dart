@@ -60,6 +60,9 @@ class KhungVongLapBangDieuKhienDoiHinhDauSyTienPhong extends Component with Vong
     if (onBoolKiemTraTanXuatCapNhat() == false) {
       return;
     }
-    await getTrangThaiTongQuat?.getBangDieuKhienKichBanChienDauTheoGiaiDoan?.onVanHanhKichBan();
+
+    if (getTrangThaiTongQuat?.getTienTrinhTongQuat?.getTienTrinhThucThiChienDau?.getTrangThai?.getMoHinh?.onCheckBoolDangThucThi() == true) {
+      await getTrangThaiTongQuat?.getBangDieuKhienKichBanChienDauTheoGiaiDoan?.onVanHanhKichBan();
+    }
   }
 }

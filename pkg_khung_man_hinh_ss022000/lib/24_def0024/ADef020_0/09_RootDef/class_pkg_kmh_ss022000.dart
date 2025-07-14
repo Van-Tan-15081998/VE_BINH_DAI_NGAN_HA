@@ -77,7 +77,8 @@ class KHUNGMANHINHCHINH extends KHUNGMANHINHGAMECOSO {
 
   @override
   Future<void> onKhoiDongNhiemVuChienDau({required Future<void> Function()? onThucThiHoanTat}) async {
-    CAUTRUCTHUCTHITUANTUCOBAN? cauTrucThiThiTuanTu = CAUTRUCTHUCTHITUANTUCOBAN(
+    CAUTRUCTHUCTHITUANTUCOBAN? cauTrucThiThiTuanTu;
+    cauTrucThiThiTuanTu = CAUTRUCTHUCTHITUANTUCOBAN(
       onThucThiTuanTuSS010: () async {
         await getGlobalState?.getDieuKhienTinhToanTongQuat?.getTrungTamVanHanhThuocTinhChienDauTheoQuyChuan?.onCaiDatThuocTinhChienDauTheoQuyChuan(
           value: getGlobalState?.getChienDauCoTongQuat?.getChienDauCoTrucTiepThucThiChienDau?.getTrangThai?.getMoHinh?.getThuocTinhChienDauTheoQuyChuan,
@@ -96,12 +97,8 @@ class KHUNGMANHINHCHINH extends KHUNGMANHINHGAMECOSO {
       onThucThiTuanTuSS050: () async {
         await getGlobalState?.getBangDieuKhienKichBanChienDauTheoGiaiDoan?.getQuanLyDieuKhienChuyenKichBanChienDau?.onTaiTaiNguyenPhuongTien();
       },
-      onThucThiTuanTuSS060: () async {
-        await getGlobalState?.getBangDieuKhienKichBanChienDauTheoGiaiDoan?.getQuanLyDieuKhienChuyenKichBanChienDau?.onTaiTaiNguyenPhuongTienTuanTu();
-      },
-      onThucThiTuanTuSS070: () async {
-        await getGlobalState?.getDieuKhienTienTrinhTongQuat?.tienHanhThucThiNhiemVu();
-      },
+      onThucThiTuanTuSS060: null,
+      onThucThiTuanTuSS070: null,
       onThucThiTuanTuSS080: null,
       onThucThiTuanTuSS090: null,
       onThucThiTuanTuSS100: null,
@@ -183,6 +180,41 @@ class KHUNGMANHINHCHINH extends KHUNGMANHINHGAMECOSO {
     return;
   }
 
+  @override
+  Future<void> onTaiTaiNguyenNhiemVuChienDau({required Future<void> Function()? onThucThiHoanTat}) async {
+    CAUTRUCTHUCTHITUANTUCOBAN? cauTrucThiThiTuanTu;
+    cauTrucThiThiTuanTu = CAUTRUCTHUCTHITUANTUCOBAN(
+      onThucThiTuanTuSS010: () async {
+        await getGlobalState?.getBangDieuKhienKichBanChienDauTheoGiaiDoan?.getQuanLyDieuKhienChuyenKichBanChienDau
+            ?.onTaiTaiNguyenPhuongTienTuanTu(onThucThiHoanTat: onThucThiHoanTat);
+      },
+
+      onThucThiHoanTat: null,
+    );
+
+    await cauTrucThiThiTuanTu?.onThucThiTuanTu();
+
+    ///
+    return;
+  }
+
+  @override
+  Future<void> onKichHoatThucThiNhiemVuChienDau({required Future<void> Function()? onThucThiHoanTat}) async {
+    CAUTRUCTHUCTHITUANTUCOBAN? cauTrucThiThiTuanTu;
+    cauTrucThiThiTuanTu = CAUTRUCTHUCTHITUANTUCOBAN(
+      onThucThiTuanTuSS010: () async {
+        await getGlobalState?.getDieuKhienTienTrinhTongQuat?.tienHanhThucThiNhiemVu();
+      },
+
+      onThucThiHoanTat: onThucThiHoanTat,
+    );
+
+    await cauTrucThiThiTuanTu?.onThucThiTuanTu();
+
+    ///
+    return;
+  }
+
   /// -----
   /// TODO: Setup Root
   /// -----
@@ -193,13 +225,7 @@ class KHUNGMANHINHCHINH extends KHUNGMANHINHGAMECOSO {
     /// -----
     await Future.wait([
       onCaiDatQuanLyThanhPhanManHinhThuocCap(
-        value: QUANLYTHANHPHANMANHINHKHUNGMANHINHCHINH(
-          globalState: getGlobalState,
-          gameController: this,
-          thanhPhanQuanLyThuocCapTrucTiep: null,
-          sizeDx: getSizeDx,
-          sizeDy: getSizeDy,
-        ),
+        value: QUANLYTHANHPHANMANHINHKHUNGMANHINHCHINH(globalState: getGlobalState, gameController: this, thanhPhanQuanLyThuocCapTrucTiep: null, sizeDx: getSizeDx, sizeDy: getSizeDy),
       ).catchError((e) => null),
       onCaiDatQuanLyThanhPhanNutBamThuocCap(
         value: QUANLYTHANHPHANNUTBAMKHUNGMANHINHCHINH(
@@ -343,31 +369,13 @@ class KHUNGMANHINHCHINH extends KHUNGMANHINHGAMECOSO {
         ),
       ).catchError((e) => null),
       onCaiDatQuanLyThanhPhanVanBanThuocCap(
-        value: QUANLYTHANHPHANVANBANKHUNGMANHINHCHINH(
-          globalState: getGlobalState,
-          gameController: this,
-          thanhPhanQuanLyThuocCapTrucTiep: null,
-          sizeDx: getSizeDx,
-          sizeDy: getSizeDy,
-        ),
+        value: QUANLYTHANHPHANVANBANKHUNGMANHINHCHINH(globalState: getGlobalState, gameController: this, thanhPhanQuanLyThuocCapTrucTiep: null, sizeDx: getSizeDx, sizeDy: getSizeDy),
       ).catchError((e) => null),
       onCaiDatQuanLyThanhPhanHinhAnhThuocCap(
-        value: QUANLYTHANHPHANHINHANHKHUNGMANHINHCHINH(
-          globalState: getGlobalState,
-          gameController: this,
-          thanhPhanQuanLyThuocCapTrucTiep: null,
-          sizeDx: getSizeDx,
-          sizeDy: getSizeDy,
-        ),
+        value: QUANLYTHANHPHANHINHANHKHUNGMANHINHCHINH(globalState: getGlobalState, gameController: this, thanhPhanQuanLyThuocCapTrucTiep: null, sizeDx: getSizeDx, sizeDy: getSizeDy),
       ).catchError((e) => null),
       onCaiDatQuanLyThanhPhanTichHopThuocCap(
-        value: QUANLYTHANHPHANTICHHOPKHUNGMANHINHCHINH(
-          globalState: getGlobalState,
-          gameController: this,
-          thanhPhanQuanLyThuocCapTrucTiep: null,
-          sizeDx: getSizeDx,
-          sizeDy: getSizeDy,
-        ),
+        value: QUANLYTHANHPHANTICHHOPKHUNGMANHINHCHINH(globalState: getGlobalState, gameController: this, thanhPhanQuanLyThuocCapTrucTiep: null, sizeDx: getSizeDx, sizeDy: getSizeDy),
       ).catchError((e) => null),
     ]);
 

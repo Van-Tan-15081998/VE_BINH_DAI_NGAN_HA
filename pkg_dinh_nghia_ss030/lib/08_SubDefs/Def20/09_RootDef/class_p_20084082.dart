@@ -12,7 +12,6 @@ import 'package:pkg_dinh_nghia_ss054/pkg_dinh_nghia_ss054_exp.dart';
 import 'package:pkg_man_hinh_ss00230/pkg_man_hinh_ss00230_exp.dart';
 import 'package:pkg_man_hinh_ss00226/22_def0022/ADef20_0/09_RootDef/abstract_sprite_phuong_tien.dart';
 
-
 /// -----
 /// TODO:
 /// -----
@@ -32,9 +31,7 @@ class MoHinhPhuongTienTongQuat with CauTrucThucThiCoBan {
       // await caiDatQuanLyTrangThaiDanhSachMoHinh(value: attachValue.getDanhSachMoHinhTongQuat);
       // await caiDatDieuKhienTinhToanTongQuat(value: attachValue.getDieuKhienTinhToanTongQuat);
 
-      await onCaiDatViTriChienDauCo(
-        value: attachValue.getChienDauCoTongQuat?.getChienDauCoTrucTiepThucThiChienDau?.getTrangThai?.getMoHinh?.getPhuongThuc?.getPhuongThucBay?.getViTri,
-      );
+      await onCaiDatViTriChienDauCo(value: attachValue.getChienDauCoTongQuat?.getChienDauCoTrucTiepThucThiChienDau?.getTrangThai?.getMoHinh?.getPhuongThuc?.getPhuongThucBay?.getViTri);
     }
 
     /// -----
@@ -289,10 +286,7 @@ class MoHinhPhuongTienTongQuat with CauTrucThucThiCoBan {
   /// TODO:
   /// -----
 
-
   void onXuLyDuLieuJsonSuKienVaCham() {
-
-
     /// -----
     /// TODO:
     /// -----
@@ -340,8 +334,6 @@ class MoHinhPhuongTienTongQuat with CauTrucThucThiCoBan {
   /// -----
 
   void onXuLyDuLieuJsonLamPhang() {
-
-
     /// -----
     /// TODO:
     /// -----
@@ -478,7 +470,7 @@ class MoHinhPhuongTienTongQuat with CauTrucThucThiCoBan {
     getDuLieuJsonLamPhang['[KICH_HOAT_HOAT_DONG]'] = true;
 
     await getSpritePhuongTien?.onAddToParent();
-    await getSpriteChiSoPhuongTien?.onAddToParent();
+    // await getSpriteChiSoPhuongTien?.onAddToParent(); // Mở Comment
 
     ///
     return;
@@ -620,8 +612,6 @@ class MoHinhPhuongTienTongQuat with CauTrucThucThiCoBan {
   /// TODO:
   /// -----
   void onVoidDieuKhienDiChuyenTheoDoiHinh({required int chiSoTangTienTheoThoiGianThuc}) async {
-
-
     /// -----
     /// TODO: Thực Hiện Điều Khiển Di Chuyển Phương Tiện Khi:
     /// - Trạng Thái Tồn Tại => Khởi Tạo Hoàn Tất
@@ -640,8 +630,6 @@ class MoHinhPhuongTienTongQuat with CauTrucThucThiCoBan {
       onVoidCapNhatTrangThaiPhuongTienVuKhiDieuKhien();
       onVoidCapNhatTrangThaiPhuongTienVatPhamPhanThuong();
     }
-
-
 
     ///
     return;
@@ -772,14 +760,13 @@ class MoHinhPhuongTienTongQuat with CauTrucThucThiCoBan {
     final chieuRong = viTri?.getChieuRongThanNotNull ?? 0;
     final chieuCao = viTri?.getChieuCaoThanNotNull ?? 0;
 
-    final bool daVaCham =
-        dxVienDan > dxPhuongTien - chieuRong / 2 && dxVienDan < dxPhuongTien + chieuRong / 2 && dyVienDan > dyPhuongTien - chieuCao / 2 && dyVienDan < dyPhuongTien + chieuCao / 2;
+    final bool daVaCham = dxVienDan > dxPhuongTien - chieuRong / 2 && dxVienDan < dxPhuongTien + chieuRong / 2 && dyVienDan > dyPhuongTien - chieuCao / 2 && dyVienDan < dyPhuongTien + chieuCao / 2;
 
     if (daVaCham) {
       // if (kDebugMode) print('[📋]_[LOG]_[XAC_NHAN_SU_KIEN_VA_CHAM_CHINH_XAC 🎯]');
     } else {
       // if (kDebugMode) print('[📋]_[LOG]_[XAC_NHAN_SU_KIEN_VA_CHAM_KHONG_CHINH_XAC 🎯]');
-       getTrangThaiTrongChienDau?.onVoidCaiDatMaDinhDanhVienDanVaCham(value: null, caiDatUuTien: true);
+      getTrangThaiTrongChienDau?.onVoidCaiDatMaDinhDanhVienDanVaCham(value: null, caiDatUuTien: true);
     }
 
     return vienDanVaCham;
@@ -789,8 +776,7 @@ class MoHinhPhuongTienTongQuat with CauTrucThucThiCoBan {
   /// TODO: Điều Khiển Bay Theo Đội Hình - Chi Tiết
   /// -----
   void onVoidDieuKhienDiChuyenTheoDoiHinhChiTiet({required int chiSoTangTienTheoThoiGianThuc}) {
-    if (true) {
-
+    if (false) {
       /// -----
       /// TODO: Kiểm Tra Va Chạm Giữa Phương Tiện Với Danh Sách Viên Đạn Chiến Đấu Cơ Hoạt Động
       /// TODO: Thực Hiện Khi Phương Tiện Đã Vào Trong Màn Hình
@@ -895,12 +881,13 @@ class MoHinhPhuongTienTongQuat with CauTrucThucThiCoBan {
 
     final double dxTrongTamPhuongTien = getDuLieuJsonLamPhang['[DX_TRONG_TAM]'] ?? 0;
     final double dyTrongTamPhuongTien = getDuLieuJsonLamPhang['[DY_TRONG_TAM]'] ?? 0;
-
-    if ((dxTrongTamPhuongTien < (dxTrongTamChienDauCo + (chieuRongThanChienDauCo / 2))) &&
-        (dxTrongTamPhuongTien > (dxTrongTamChienDauCo - (chieuRongThanChienDauCo / 2))) &&
-        (dyTrongTamPhuongTien < (dyTrongTamChienDauCo + (chieuCaoThanChienDauCo / 2))) &&
-        (dyTrongTamPhuongTien > (dyTrongTamChienDauCo - (chieuCaoThanChienDauCo / 2)))) {
-      kiemTraChamChienDauCo = true;
+    if (false) {
+      if ((dxTrongTamPhuongTien < (dxTrongTamChienDauCo + (chieuRongThanChienDauCo / 2))) &&
+          (dxTrongTamPhuongTien > (dxTrongTamChienDauCo - (chieuRongThanChienDauCo / 2))) &&
+          (dyTrongTamPhuongTien < (dyTrongTamChienDauCo + (chieuCaoThanChienDauCo / 2))) &&
+          (dyTrongTamPhuongTien > (dyTrongTamChienDauCo - (chieuCaoThanChienDauCo / 2)))) {
+        kiemTraChamChienDauCo = true;
+      }
     }
 
     if (kiemTraChamChienDauCo == true) {
@@ -928,8 +915,7 @@ class MoHinhPhuongTienTongQuat with CauTrucThucThiCoBan {
         // MoHinhDoanDuongBayThuocKichBanChienDau? doanDuongBayThuocKichBanHienHanh;
         DOANDUONGBAYTHUOCGIAIDOANKICHBAN? doanDuongBayThuocKichBanHienHanh;
 
-        doanDuongBayThuocKichBanHienHanh =
-            getTrangThaiHoatDongChienDauXamChiem?.getHoatDongChienDauXamChiemThuocGiaiDoanHienHanh?.getDanhSachDoanDuongBayThuocKichBan?.getDanhSachDoanDuongBay[0];
+        doanDuongBayThuocKichBanHienHanh = getTrangThaiHoatDongChienDauXamChiem?.getHoatDongChienDauXamChiemThuocGiaiDoanHienHanh?.getDanhSachDoanDuongBayThuocKichBan?.getDanhSachDoanDuongBay[0];
 
         final double dxTrongTamPhuongTien = getDuLieuJsonLamPhang['[DX_TRONG_TAM]'] ?? 0;
         final double dyTrongTamPhuongTien = getDuLieuJsonLamPhang['[DY_TRONG_TAM]'] ?? 0;
@@ -1196,8 +1182,7 @@ class MoHinhPhuongTienTongQuat with CauTrucThucThiCoBan {
     if (getTrangThaiHoatDongChienDauXamChiem?.getHoatDongChienDauXamChiemThuocGiaiDoanSS020?.getDanhSachDoanDuongBayThuocKichBan?.getDanhSachDoanDuongBay.isNotEmpty == true) {
       DOANDUONGBAYTHUOCGIAIDOANKICHBAN? doanDuongBayThuocKichBanHienHanh;
 
-      doanDuongBayThuocKichBanHienHanh =
-          getTrangThaiHoatDongChienDauXamChiem?.getHoatDongChienDauXamChiemThuocGiaiDoanSS020?.getDanhSachDoanDuongBayThuocKichBan?.getDanhSachDoanDuongBay[0];
+      doanDuongBayThuocKichBanHienHanh = getTrangThaiHoatDongChienDauXamChiem?.getHoatDongChienDauXamChiemThuocGiaiDoanSS020?.getDanhSachDoanDuongBayThuocKichBan?.getDanhSachDoanDuongBay[0];
 
       final double dxTrongTamChienDauCo = getViTriChienDauCo?.getDxTrongTamNotNull ?? 0;
       final double dyTrongTamChienDauCo = getViTriChienDauCo?.getDyTrongTamNotNull ?? 0;
@@ -1252,8 +1237,7 @@ class MoHinhPhuongTienTongQuat with CauTrucThucThiCoBan {
     if (getTrangThaiHoatDongChienDauXamChiem?.getHoatDongChienDauXamChiemThuocGiaiDoanSS020?.getDanhSachDoanDuongBayThuocKichBan?.getDanhSachDoanDuongBay.isNotEmpty == true) {
       DOANDUONGBAYTHUOCGIAIDOANKICHBAN? doanDuongBayThuocKichBanHienHanh;
 
-      doanDuongBayThuocKichBanHienHanh =
-          getTrangThaiHoatDongChienDauXamChiem?.getHoatDongChienDauXamChiemThuocGiaiDoanSS020?.getDanhSachDoanDuongBayThuocKichBan?.getDanhSachDoanDuongBay[0];
+      doanDuongBayThuocKichBanHienHanh = getTrangThaiHoatDongChienDauXamChiem?.getHoatDongChienDauXamChiemThuocGiaiDoanSS020?.getDanhSachDoanDuongBayThuocKichBan?.getDanhSachDoanDuongBay[0];
 
       final double dxTrongTamChienDauCo = getViTriChienDauCo?.getDxTrongTamNotNull ?? 0;
       final double dyTrongTamChienDauCo = getViTriChienDauCo?.getDyTrongTamNotNull ?? 0;
@@ -1308,8 +1292,7 @@ class MoHinhPhuongTienTongQuat with CauTrucThucThiCoBan {
     if (getTrangThaiHoatDongChienDauXamChiem?.getHoatDongChienDauXamChiemThuocGiaiDoanSS020?.getDanhSachDoanDuongBayThuocKichBan?.getDanhSachDoanDuongBay.isNotEmpty == true) {
       DOANDUONGBAYTHUOCGIAIDOANKICHBAN? doanDuongBayThuocKichBanHienHanh;
 
-      doanDuongBayThuocKichBanHienHanh =
-          getTrangThaiHoatDongChienDauXamChiem?.getHoatDongChienDauXamChiemThuocGiaiDoanSS020?.getDanhSachDoanDuongBayThuocKichBan?.getDanhSachDoanDuongBay[0];
+      doanDuongBayThuocKichBanHienHanh = getTrangThaiHoatDongChienDauXamChiem?.getHoatDongChienDauXamChiemThuocGiaiDoanSS020?.getDanhSachDoanDuongBayThuocKichBan?.getDanhSachDoanDuongBay[0];
 
       final double dxTrongTamChienDauCo = getViTriChienDauCo?.getDxTrongTamNotNull ?? 0;
       final double dyTrongTamChienDauCo = getViTriChienDauCo?.getDyTrongTamNotNull ?? 0;
@@ -1371,8 +1354,7 @@ class MoHinhPhuongTienTongQuat with CauTrucThucThiCoBan {
       if (getTrangThaiHoatDongChienDauXamChiem?.getHoatDongChienDauXamChiemThuocGiaiDoanSS020?.getDanhSachDoanDuongBayThuocKichBan?.getDanhSachDoanDuongBay.isNotEmpty == true) {
         DOANDUONGBAYTHUOCGIAIDOANKICHBAN? doanDuongBayThuocKichBanHienHanh;
 
-        doanDuongBayThuocKichBanHienHanh =
-            getTrangThaiHoatDongChienDauXamChiem?.getHoatDongChienDauXamChiemThuocGiaiDoanSS020?.getDanhSachDoanDuongBayThuocKichBan?.getDanhSachDoanDuongBay[0];
+        doanDuongBayThuocKichBanHienHanh = getTrangThaiHoatDongChienDauXamChiem?.getHoatDongChienDauXamChiemThuocGiaiDoanSS020?.getDanhSachDoanDuongBayThuocKichBan?.getDanhSachDoanDuongBay[0];
 
         /// -----
         /// TODO: Cập Nhật Vị Trí Phương Tiện Trên Đường Nối Với Điểm Tọa Độ Thuộc Kịch Bản
@@ -1411,8 +1393,7 @@ class MoHinhPhuongTienTongQuat with CauTrucThucThiCoBan {
       if (getTrangThaiHoatDongChienDauXamChiem?.getHoatDongChienDauXamChiemThuocGiaiDoanSS010?.getDanhSachDoanDuongBayThuocKichBan?.getDanhSachDoanDuongBay.isNotEmpty == true) {
         DOANDUONGBAYTHUOCGIAIDOANKICHBAN? doanDuongBayThuocKichBanHienHanh;
 
-        doanDuongBayThuocKichBanHienHanh =
-            getTrangThaiHoatDongChienDauXamChiem?.getHoatDongChienDauXamChiemThuocGiaiDoanSS010?.getDanhSachDoanDuongBayThuocKichBan?.getDanhSachDoanDuongBay[0];
+        doanDuongBayThuocKichBanHienHanh = getTrangThaiHoatDongChienDauXamChiem?.getHoatDongChienDauXamChiemThuocGiaiDoanSS010?.getDanhSachDoanDuongBayThuocKichBan?.getDanhSachDoanDuongBay[0];
 
         double dxTrongTamDiemXuatPhanNguyenBan = doanDuongBayThuocKichBanHienHanh?.getDiemToaDo?.getOffsetDx ?? 0;
         double dyTrongTamDiemXuatPhanNguyenBan = doanDuongBayThuocKichBanHienHanh?.getDiemToaDo?.getOffsetDy ?? 0;
@@ -1539,8 +1520,7 @@ class MoHinhPhuongTienTongQuat with CauTrucThucThiCoBan {
     if (getTrangThaiHoatDongChienDauXamChiem?.getHoatDongChienDauXamChiemThuocGiaiDoanSS020?.getDanhSachDoanDuongBayThuocKichBan?.getDanhSachDoanDuongBay.isNotEmpty == true) {
       DOANDUONGBAYTHUOCGIAIDOANKICHBAN? doanDuongBayThuocKichBanHienHanh;
 
-      doanDuongBayThuocKichBanHienHanh =
-          getTrangThaiHoatDongChienDauXamChiem?.getHoatDongChienDauXamChiemThuocGiaiDoanSS020?.getDanhSachDoanDuongBayThuocKichBan?.getDanhSachDoanDuongBay[0];
+      doanDuongBayThuocKichBanHienHanh = getTrangThaiHoatDongChienDauXamChiem?.getHoatDongChienDauXamChiemThuocGiaiDoanSS020?.getDanhSachDoanDuongBayThuocKichBan?.getDanhSachDoanDuongBay[0];
 
       // final double dxTrongTamChienDauCo = getViTriChienDauCo?.getDxTrongTamNotNull ?? 0;
       // final double dyTrongTamChienDauCo = getViTriChienDauCo?.getDyTrongTamNotNull ?? 0;
@@ -1586,8 +1566,7 @@ class MoHinhPhuongTienTongQuat with CauTrucThucThiCoBan {
       if (getTrangThaiHoatDongChienDauXamChiem?.getHoatDongChienDauXamChiemThuocGiaiDoanSS010?.getDanhSachDoanDuongBayThuocKichBan?.getDanhSachDoanDuongBay.isNotEmpty == true) {
         DOANDUONGBAYTHUOCGIAIDOANKICHBAN? doanDuongBayThuocKichBanHienHanh;
 
-        doanDuongBayThuocKichBanHienHanh =
-            getTrangThaiHoatDongChienDauXamChiem?.getHoatDongChienDauXamChiemThuocGiaiDoanSS010?.getDanhSachDoanDuongBayThuocKichBan?.getDanhSachDoanDuongBay[0];
+        doanDuongBayThuocKichBanHienHanh = getTrangThaiHoatDongChienDauXamChiem?.getHoatDongChienDauXamChiemThuocGiaiDoanSS010?.getDanhSachDoanDuongBayThuocKichBan?.getDanhSachDoanDuongBay[0];
 
         double dxTrongTamDiemXuatPhanNguyenBan = doanDuongBayThuocKichBanHienHanh?.getDiemToaDo?.getOffsetDx ?? -1000.0;
         double dyTrongTamDiemXuatPhanNguyenBan = doanDuongBayThuocKichBanHienHanh?.getDiemToaDo?.getOffsetDy ?? -1000.0;
@@ -1648,8 +1627,7 @@ class MoHinhPhuongTienTongQuat with CauTrucThucThiCoBan {
       if (getTrangThaiHoatDongChienDauXamChiem?.getHoatDongChienDauXamChiemThuocGiaiDoanSS010?.getDanhSachDoanDuongBayThuocKichBan?.getDanhSachDoanDuongBay.isNotEmpty == true) {
         DOANDUONGBAYTHUOCGIAIDOANKICHBAN? doanDuongBayThuocKichBanHienHanh;
 
-        doanDuongBayThuocKichBanHienHanh =
-            getTrangThaiHoatDongChienDauXamChiem?.getHoatDongChienDauXamChiemThuocGiaiDoanSS010?.getDanhSachDoanDuongBayThuocKichBan?.getDanhSachDoanDuongBay[0];
+        doanDuongBayThuocKichBanHienHanh = getTrangThaiHoatDongChienDauXamChiem?.getHoatDongChienDauXamChiemThuocGiaiDoanSS010?.getDanhSachDoanDuongBayThuocKichBan?.getDanhSachDoanDuongBay[0];
 
         double dxTrongTamDiemXuatPhanNguyenBan = doanDuongBayThuocKichBanHienHanh?.getDiemToaDo?.getOffsetDx ?? 0;
         double dyTrongTamDiemXuatPhanNguyenBan = doanDuongBayThuocKichBanHienHanh?.getDiemToaDo?.getOffsetDy ?? 0;

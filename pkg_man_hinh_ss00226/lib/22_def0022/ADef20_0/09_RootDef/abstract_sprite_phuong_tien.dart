@@ -1,3 +1,4 @@
+import 'dart:ui';
 import 'dart:async';
 import 'package:flutter/foundation.dart';
 import 'package:flame/components.dart';
@@ -280,6 +281,24 @@ abstract class SpritePhuongTienCoBan extends SpriteAnimationComponent with HasVi
   /// -----
   void onVoidThucThiTanCong() {
     ///
+  }
+
+  // @override
+  // void updateTree(double dt) {
+  //   if (getKiemTraHienThi == true) {
+  //     super.updateTree(dt);
+  //   }
+  //
+  //   return;
+  // }
+
+  @override
+  void renderTree(Canvas canvas) { // import 'dart:ui';
+    if (getKiemTraHienThi == true) {
+      super.renderTree(canvas);
+    }
+
+    return;
   }
 
   @override

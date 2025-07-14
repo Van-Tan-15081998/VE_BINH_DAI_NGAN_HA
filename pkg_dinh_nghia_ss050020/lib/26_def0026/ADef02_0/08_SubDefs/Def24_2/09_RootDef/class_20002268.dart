@@ -297,7 +297,6 @@ class BANGDIEUKHIENGIAIDOANTHUOCKICHBANCOBAN with CauTrucThucThiCoBan {
     getBangDieuKhienGiaiDoanThuocDoiHinhVKTD?.onLoopNhanDinhTrangThai();
     getBangDieuKhienGiaiDoanThuocDoiHinhVKDK?.onLoopNhanDinhTrangThai();
     getBangDieuKhienGiaiDoanThuocDoiHinhVKNN?.onLoopNhanDinhTrangThai();
-
     getBangDieuKhienGiaiDoanThuocDoiHinhVPTC?.onLoopNhanDinhTrangThai();
     getBangDieuKhienGiaiDoanThuocDoiHinhVPPT?.onLoopNhanDinhTrangThai();
 

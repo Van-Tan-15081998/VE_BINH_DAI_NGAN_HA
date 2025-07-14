@@ -1,3 +1,4 @@
+import 'dart:ui';
 import 'package:pkg_khung_man_hinh_ss020000/pkg_khung_man_hinh_ss020000_exp.dart';
 import 'package:pkg_khung_man_hinh_ss022320/24_def0024/ADef020_0/08_SubDefs/Def020_2/09_RootDef/class_pkg_kmh_ss022320.dart';
 import 'package:pkg_khung_man_hinh_ss022320/24_def0024/ADef020_0/08_SubDefs/Def030_2/09_RootDef/class_pkg_kmh_ss022320.dart';
@@ -21,6 +22,24 @@ class KHUNGMANHINHSS022320 extends THANHPHANMANHINHTHUOCCAPCOBAN {
     required super.positionDx,
     required super.positionDy,
   });
+
+  // @override
+  // void updateTree(double dt) {
+  //   if (false) {
+  //     super.updateTree(dt);
+  //   }
+  //
+  //   return;
+  // }
+  //
+  // @override
+  // void renderTree(Canvas canvas) { // import 'dart:ui';
+  //   if (false) {
+  //     super.renderTree(canvas);
+  //   }
+  //
+  //   return;
+  // }
 
   /// -----
   /// TODO: Setup Root
