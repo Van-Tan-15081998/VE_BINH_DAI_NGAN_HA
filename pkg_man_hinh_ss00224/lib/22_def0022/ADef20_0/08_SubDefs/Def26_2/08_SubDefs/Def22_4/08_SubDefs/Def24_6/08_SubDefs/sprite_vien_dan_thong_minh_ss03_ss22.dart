@@ -49,31 +49,33 @@ class SpriteVienDanThongMinhSS03SS22 extends SpriteVienDanThongMinh {
     void update(double dt) {
     super.update(dt);
 
-    if (getBienTangTienGiamTanXuatCapNhat % 2 == 0) {
-      getMoHinh?.getMoHinh?.onXuLyDuLieuJsonLamPhang();
+    if (getTrangThaiTongQuat?.getTienTrinhTongQuat?.getTienTrinhThucThiChienDau?.getTrangThai?.getMoHinh?.onCheckBoolDangThucThi() == true) {
+      if (getBienTangTienGiamTanXuatCapNhat % 2 == 0) {
+        getMoHinh?.getMoHinh?.onXuLyDuLieuJsonLamPhang();
+      }
+
+      /// -----
+      /// TODO:
+      /// -----
+      onVoidCaiDatTuDongBienTangTienGiamTanXuatCapNhat();
+      if (onVoidKiemTraTanXuatCapNhat() == false) {
+        return;
+      }
+
+      /// -----
+      /// TODO:
+      /// -----
+      onVoidCapNhatTrangThaiMoHinh();
+
+      /// -----
+      /// TODO:
+      /// -----
+      onVoidCapNhatKiemTraHienThi();
+
+      /// -----
+      /// TODO:
+      /// -----
+      onVoidCapNhatPositionSizeValues();
     }
-
-    /// -----
-    /// TODO:
-    /// -----
-    onVoidCaiDatTuDongBienTangTienGiamTanXuatCapNhat();
-    if (onVoidKiemTraTanXuatCapNhat() == false) {
-      return;
-    }
-
-    /// -----
-    /// TODO:
-    /// -----
-    onVoidCapNhatTrangThaiMoHinh();
-
-    /// -----
-    /// TODO:
-    /// -----
-    onVoidCapNhatKiemTraHienThi();
-
-    /// -----
-    /// TODO:
-    /// -----
-    onVoidCapNhatPositionSizeValues();
   }
 }

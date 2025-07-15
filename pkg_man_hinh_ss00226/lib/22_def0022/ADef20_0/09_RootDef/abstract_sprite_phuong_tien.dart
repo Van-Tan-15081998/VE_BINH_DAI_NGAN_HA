@@ -156,6 +156,8 @@ abstract class SpritePhuongTienCoBan extends SpriteAnimationComponent with HasVi
   /// TODO:
   /// -----
   void onVoidCapNhatKiemTraHienThi()  {
+    // return;
+
     if (getMoHinh?.getMoHinh?.getDuLieuJsonLamPhang['[DI_CHUYEN_HIEN_THI]'] == true) {
       /// -----
       /// TODO: Cài Đặt SpriteAnimation cho Phương Tiện Mới
@@ -262,7 +264,7 @@ abstract class SpritePhuongTienCoBan extends SpriteAnimationComponent with HasVi
 
   Stopwatch? stopwatch;
   void onVoidCapNhatTrangThaiMoHinh() async {
-    // await Future.delayed(Duration.zero);
+    await Future.delayed(Duration.zero);
     // if (kDebugMode) {
     //   stopwatch = Stopwatch();
     //   stopwatch?.start();
@@ -316,21 +318,23 @@ abstract class SpritePhuongTienCoBan extends SpriteAnimationComponent with HasVi
   void update(double dt) {
     super.update(dt);
 
-    onVoidThucThiTanCong();
+    if (getTrangThaiTongQuat?.getTienTrinhTongQuat?.getTienTrinhThucThiChienDau?.getTrangThai?.getMoHinh?.onCheckBoolDangThucThi() == true) {
+      onVoidThucThiTanCong();
 
-    if (getBienTangTienGiamTanXuatCapNhat % 2 == 0) {
-      getMoHinh?.getMoHinh?.onXuLyDuLieuJsonLamPhang();
+      if (getBienTangTienGiamTanXuatCapNhat % 2 == 0) {
+        getMoHinh?.getMoHinh?.onXuLyDuLieuJsonLamPhang();
+      }
+
+      onVoidCaiDatTuDongBienTangTienGiamTanXuatCapNhat();
+      if (onVoidKiemTraTanXuatCapNhat() == false) {
+        return;
+      }
+
+      onVoidCapNhatKiemTraHienThi();
+
+      onVoidCapNhatTrangThaiMoHinh();
+
+      onVoidCapNhatPositionSizeValues();
     }
-
-    onVoidCaiDatTuDongBienTangTienGiamTanXuatCapNhat();
-    if (onVoidKiemTraTanXuatCapNhat() == false) {
-      return;
-    }
-
-    onVoidCapNhatKiemTraHienThi();
-
-    onVoidCapNhatTrangThaiMoHinh();
-
-    onVoidCapNhatPositionSizeValues();
   }
 }

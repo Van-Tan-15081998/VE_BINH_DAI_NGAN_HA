@@ -178,7 +178,7 @@ class QUANLYDIEUKHIENCHUYENKICHBANCHIENDAU with CauTrucThucThiCoBan, DanhSachQua
       stopwatch.start();
     }
 
-    await getNhiemVuChienDauChonChiDinh?.getMoHinh?.getKichBanChienDau?.getBangDieuKhienGiaiDoanThuocKichBan?.onLoop();
+    getNhiemVuChienDauChonChiDinh?.getMoHinh?.getKichBanChienDau?.getBangDieuKhienGiaiDoanThuocKichBan?.onLoop();
 
     if (getTienTrinhTongQuat?.getTienTrinhThucThiChienDau?.getTrangThai?.getMoHinh?.onCheckBoolDangThucThi() == true) {
       if (getChienDauCoTongQuat
@@ -267,7 +267,8 @@ class QUANLYDIEUKHIENCHUYENKICHBANCHIENDAU with CauTrucThucThiCoBan, DanhSachQua
     CAUTRUCTHUCTHITUANTUCOBAN? cauTrucThucThiTuanTu = CAUTRUCTHUCTHITUANTUCOBAN.onMacDinh();
 
     if (getDanhSachMaDinhDanhPhuongTien?.isNotEmpty == true) {
-      for (int index = 0; index < (getDanhSachMaDinhDanhPhuongTien?.length ?? 0); index++) {
+      // for (int index = 0; index < (getDanhSachMaDinhDanhPhuongTien?.length ?? 0); index++) {
+      for (int index = 0; index < 20; index++) {
         cauTrucThucThiTuanTu.onAddDonViThucThiTuanTu(
           onThucThiTuanTu: () async {
             await onGetEntityResourceManagement?.getQuanLyTrangThaiHangarPhuongTien?.onTaiTaiNguyenPhuongTienTheoMaDinhDanh(maDinhDanhPhuongTien: getDanhSachMaDinhDanhPhuongTien?[index]);
@@ -278,7 +279,8 @@ class QUANLYDIEUKHIENCHUYENKICHBANCHIENDAU with CauTrucThucThiCoBan, DanhSachQua
 
     cauTrucThucThiTuanTu.onThucThiHoanTat = onThucThiHoanTat;
 
-    await cauTrucThucThiTuanTu.onThucThiTuanTu();
+    // await cauTrucThucThiTuanTu.onThucThiTuanTu(interval: const Duration(milliseconds: 200));
+    cauTrucThucThiTuanTu.onThucThiTuanTu(interval: const Duration(milliseconds: 200));
 
     ///
     return;

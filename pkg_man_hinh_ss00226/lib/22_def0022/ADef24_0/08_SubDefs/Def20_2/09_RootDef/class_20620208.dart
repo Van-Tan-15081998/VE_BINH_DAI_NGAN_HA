@@ -52,27 +52,32 @@ class KhungVongLapSS01PkgManHinhSS00226 extends Component with VongLapThoiGianCo
 
   @override
   FutureOr<void> update(double dt) async {
+
+    return;
+
     ///
     ///
     /// TODO: Chạy Vòng Loop
     ///
     ///
 
-    onVoidCapNhatChiSoTangTienTheoThoiGianThuc();
-    // if (onBoolKiemTraTanXuatCapNhat() == false) {
-    //   return;
-    // }
+    if (getTrangThaiTongQuat?.getTienTrinhTongQuat?.getTienTrinhThucThiChienDau?.getTrangThai?.getMoHinh?.onCheckBoolDangThucThi() == true) {
+      onVoidCapNhatChiSoTangTienTheoThoiGianThuc();
+      // if (onBoolKiemTraTanXuatCapNhat() == false) {
+      //   return;
+      // }
 
-    try {
-      if (getChiSoTangTienTheoThoiGianThuc % 10 == 0) {
-        // if (getChiSoTangTienTheoThoiGianThuc % 6 == 4) {
-        getTrangThaiTongQuat?.getSuKienVaChamThuocPhuongTien?.onVoidLoopOnTimelineSS010();
-      } else if (getChiSoTangTienTheoThoiGianThuc % 10 == 5) {
-        // else if (getChiSoTangTienTheoThoiGianThuc % 6 == 1) {
-        getTrangThaiTongQuat?.getSuKienVaChamThuocPhuongTien?.onVoidLoopOnTimelineSS020();
+      try {
+        if (getChiSoTangTienTheoThoiGianThuc % 10 == 0) {
+          // if (getChiSoTangTienTheoThoiGianThuc % 6 == 4) {
+          getTrangThaiTongQuat?.getSuKienVaChamThuocPhuongTien?.onVoidLoopOnTimelineSS010();
+        } else if (getChiSoTangTienTheoThoiGianThuc % 10 == 5) {
+          // else if (getChiSoTangTienTheoThoiGianThuc % 6 == 1) {
+          getTrangThaiTongQuat?.getSuKienVaChamThuocPhuongTien?.onVoidLoopOnTimelineSS020();
+        }
+      } catch (e) {
+        print('❌ Lỗi: $e');
       }
-    } catch (e) {
-      print('❌ Lỗi: $e');
     }
     // try {
     //   stopwatch = Stopwatch();

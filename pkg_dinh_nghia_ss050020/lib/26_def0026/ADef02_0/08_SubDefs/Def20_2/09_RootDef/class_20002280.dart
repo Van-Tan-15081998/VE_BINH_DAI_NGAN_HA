@@ -337,7 +337,7 @@ class DONVIGIAIDOANCOBAN with CauTrucThucThiCoBan {
   /// -----
   String? _trangThaiKichHoat;
   String? get getTrangThaiKichHoat => _trangThaiKichHoat;
-  Future<void> caiDatTrangThaiKichHoat({required String? value, bool? caiDatUuTien}) async {
+  void onVoidCaiDatTrangThaiKichHoat({required String? value, bool? caiDatUuTien}) {
     if (caiDatUuTien == true) {
       _trangThaiKichHoat = value;
     } else {
@@ -351,7 +351,17 @@ class DONVIGIAIDOANCOBAN with CauTrucThucThiCoBan {
   /// TODO: Trạng Thái Sẵn Sàng Kích Hoạt
   /// -----
   Future<void> caiDatTrangThaiSanSangKichHoat() async {
-    await caiDatTrangThaiKichHoat(value: '[TRANG_THAI_SAN_SANG_KICH_HOAT]', caiDatUuTien: true);
+    onVoidCaiDatTrangThaiKichHoat(value: '[TRANG_THAI_SAN_SANG_KICH_HOAT]', caiDatUuTien: true);
+
+    if (kDebugMode) {
+      print('[LOG📒]___[CÀI ĐẶT ⚙️]___TRẠNG THÁI SẴN SÀNG KÍCH HOẠT 🟨: $getMaDinhDanh');
+    }
+
+    return;
+  }
+
+  void onVoidCaiDatTrangThaiSanSangKichHoat() {
+    onVoidCaiDatTrangThaiKichHoat(value: '[TRANG_THAI_SAN_SANG_KICH_HOAT]', caiDatUuTien: true);
 
     if (kDebugMode) {
       print('[LOG📒]___[CÀI ĐẶT ⚙️]___TRẠNG THÁI SẴN SÀNG KÍCH HOẠT 🟨: $getMaDinhDanh');
@@ -371,7 +381,17 @@ class DONVIGIAIDOANCOBAN with CauTrucThucThiCoBan {
   /// TODO: Trạng Thái Đang Kích Hoạt
   /// -----
   Future<void> caiDatTrangThaiDangKichHoat() async {
-    await caiDatTrangThaiKichHoat(value: '[TRANG_THAI_DANG_KICH_HOAT]', caiDatUuTien: true);
+    onVoidCaiDatTrangThaiKichHoat(value: '[TRANG_THAI_DANG_KICH_HOAT]', caiDatUuTien: true);
+
+    if (kDebugMode) {
+      print('[LOG📒]___[CÀI ĐẶT ⚙️]___TRẠNG THÁI ĐANG KÍCH HOẠT 🟩: $getMaDinhDanh');
+    }
+
+    return;
+  }
+
+  void onVoidCaiDatTrangThaiDangKichHoat() {
+    onVoidCaiDatTrangThaiKichHoat(value: '[TRANG_THAI_DANG_KICH_HOAT]', caiDatUuTien: true);
 
     if (kDebugMode) {
       print('[LOG📒]___[CÀI ĐẶT ⚙️]___TRẠNG THÁI ĐANG KÍCH HOẠT 🟩: $getMaDinhDanh');
@@ -391,7 +411,17 @@ class DONVIGIAIDOANCOBAN with CauTrucThucThiCoBan {
   /// TODO: Trạng Thái Sẵn Sàng Hủy Kích Hoạt
   /// -----
   Future<void> caiDatTrangThaiSanSangHuyKichHoat() async {
-    await caiDatTrangThaiKichHoat(value: '[TRANG_THAI_SAN_SANG_HUY_KICH_HOAT]', caiDatUuTien: true);
+    onVoidCaiDatTrangThaiKichHoat(value: '[TRANG_THAI_SAN_SANG_HUY_KICH_HOAT]', caiDatUuTien: true);
+
+    if (kDebugMode) {
+      print('[LOG📒]___[CÀI ĐẶT ⚙️]___TRẠNG THÁI SẴN SÀNG HỦY KÍCH HOẠT 🟩: $getMaDinhDanh');
+    }
+
+    return;
+  }
+
+  void onVoidCaiDatTrangThaiSanSangHuyKichHoat() {
+    onVoidCaiDatTrangThaiKichHoat(value: '[TRANG_THAI_SAN_SANG_HUY_KICH_HOAT]', caiDatUuTien: true);
 
     if (kDebugMode) {
       print('[LOG📒]___[CÀI ĐẶT ⚙️]___TRẠNG THÁI SẴN SÀNG HỦY KÍCH HOẠT 🟩: $getMaDinhDanh');
@@ -411,7 +441,20 @@ class DONVIGIAIDOANCOBAN with CauTrucThucThiCoBan {
   /// TODO: Trạng Thái Hủy Kích Hoạt
   /// -----
   Future<void> caiDatTrangThaiHuyKichHoat() async {
-    await caiDatTrangThaiKichHoat(value: '[TRANG_THAI_HUY_KICH_HOAT]', caiDatUuTien: true);
+    onVoidCaiDatTrangThaiKichHoat(value: '[TRANG_THAI_HUY_KICH_HOAT]', caiDatUuTien: true);
+
+    if (kDebugMode) {
+      print('[LOG📒]___[CÀI ĐẶT ⚙️]___TRẠNG THÁI HỦY KÍCH HOẠT 🟥: $getMaDinhDanh');
+    }
+
+    return;
+  }
+
+  /// -----
+  /// TODO: Trạng Thái Hủy Kích Hoạt
+  /// -----
+  void onVoidCaiDatTrangThaiHuyKichHoat() {
+    onVoidCaiDatTrangThaiKichHoat(value: '[TRANG_THAI_HUY_KICH_HOAT]', caiDatUuTien: true);
 
     if (kDebugMode) {
       print('[LOG📒]___[CÀI ĐẶT ⚙️]___TRẠNG THÁI HỦY KÍCH HOẠT 🟥: $getMaDinhDanh');

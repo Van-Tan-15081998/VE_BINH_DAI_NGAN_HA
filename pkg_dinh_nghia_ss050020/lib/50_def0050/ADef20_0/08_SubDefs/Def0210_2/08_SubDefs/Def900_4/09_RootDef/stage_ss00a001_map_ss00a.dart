@@ -35,16 +35,16 @@ class BANGDIEUKHIENGIAIDOANTHUOCKICHBANSTAGESS00A001MAPSS00A extends BANGDIEUKHI
   /// -----
   /// TODO:
   /// -----
-  @override
-  Future<void> onLoop() async {
-    /// -----
-    /// TODO:
-    /// -----
-    await super.onLoop();
-    await onVanHanhKichBan();
-
-    return;
-  }
+  // @override
+  // Future<void> onLoop() async {
+  //   /// -----
+  //   /// TODO:
+  //   /// -----
+  //   await super.onLoop();
+  //   await onVanHanhKichBan();
+  //
+  //   return;
+  // }
 
   /// -----|-----|-----|-----|-----|
   /// -----|-----|-----|-----|-----|

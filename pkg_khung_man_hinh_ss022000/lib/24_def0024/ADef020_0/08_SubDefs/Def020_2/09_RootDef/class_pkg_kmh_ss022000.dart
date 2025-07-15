@@ -675,6 +675,7 @@ class QUANLYTHANHPHANMANHINHKHUNGMANHINHCHINH extends QUANLYTHANHPHANMANHINHTHUO
         onThucThiHoanTat: () async {
           await getGameController?.onTaiTaiNguyenNhiemVuChienDau(
             onThucThiHoanTat: () async {
+              await Future.delayed(Duration(milliseconds: 1000));
               await getGameController?.onKichHoatThucThiNhiemVuChienDau(
                 onThucThiHoanTat: () async {
                   await getKhungManHinhSS03000?.onHuyKichHoatKhungManHinhThuocCapSS300100();
