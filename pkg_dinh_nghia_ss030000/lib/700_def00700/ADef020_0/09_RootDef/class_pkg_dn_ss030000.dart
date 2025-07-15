@@ -325,6 +325,12 @@ class QUANLYTRANGTHAIHANGARPHUONGTIEN with CAUTRUCTHUCTHICOBAN {
         onVoidCaiDatHIEUUNGVACHAMPHANTHUONGCLASSSS00ASS010SS010(value: HIEUUNGVACHAMPHANTHUONGCLASSSS00ASS010SS010(), caiDatUuTien: true).catchError((e) => null),
         onVoidCaiDatHIEUUNGVACHAMPHANTHUONGCLASSSS00ASS010SS020(value: HIEUUNGVACHAMPHANTHUONGCLASSSS00ASS010SS020(), caiDatUuTien: true).catchError((e) => null),
         onVoidCaiDatHIEUUNGVACHAMPHANTHUONGCLASSSS00ASS010SS030(value: HIEUUNGVACHAMPHANTHUONGCLASSSS00ASS010SS030(), caiDatUuTien: true).catchError((e) => null),
+
+        onVoidCaiDatHIEUUNGVACHAMCONGKICHCLASSSS00BSS010SS010(value: HIEUUNGVACHAMCONGKICHCLASSSS00BSS010SS010(), caiDatUuTien: true).catchError((e) => null),
+        onVoidCaiDatHIEUUNGVACHAMCONGKICHCLASSSS00BSS010SS020(value: HIEUUNGVACHAMCONGKICHCLASSSS00BSS010SS020(), caiDatUuTien: true).catchError((e) => null),
+        onVoidCaiDatHIEUUNGVACHAMCONGKICHCLASSSS00BSS010SS030(value: HIEUUNGVACHAMCONGKICHCLASSSS00BSS010SS030(), caiDatUuTien: true).catchError((e) => null),
+        onVoidCaiDatHIEUUNGVACHAMCONGKICHCLASSSS00BSS010SS040(value: HIEUUNGVACHAMCONGKICHCLASSSS00BSS010SS040(), caiDatUuTien: true).catchError((e) => null),
+        onVoidCaiDatHIEUUNGVACHAMCONGKICHCLASSSS00BSS010SS050(value: HIEUUNGVACHAMCONGKICHCLASSSS00BSS010SS050(), caiDatUuTien: true).catchError((e) => null),
       ]);
 
       /// -----
@@ -654,6 +660,13 @@ class QUANLYTRANGTHAIHANGARPHUONGTIEN with CAUTRUCTHUCTHICOBAN {
         getHIEUUNGVACHAMPHANTHUONGCLASSSS00ASS010SS010?.onSetupRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onSetupRootForSubCom'),
         getHIEUUNGVACHAMPHANTHUONGCLASSSS00ASS010SS020?.onSetupRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onSetupRootForSubCom'),
         getHIEUUNGVACHAMPHANTHUONGCLASSSS00ASS010SS030?.onSetupRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onSetupRootForSubCom'),
+
+        ///
+        getHIEUUNGVACHAMCONGKICHCLASSSS00BSS010SS010?.onSetupRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onSetupRootForSubCom'),
+        getHIEUUNGVACHAMCONGKICHCLASSSS00BSS010SS020?.onSetupRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onSetupRootForSubCom'),
+        getHIEUUNGVACHAMCONGKICHCLASSSS00BSS010SS030?.onSetupRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onSetupRootForSubCom'),
+        getHIEUUNGVACHAMCONGKICHCLASSSS00BSS010SS040?.onSetupRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onSetupRootForSubCom'),
+        getHIEUUNGVACHAMCONGKICHCLASSSS00BSS010SS050?.onSetupRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onSetupRootForSubCom'),
       ]);
 
       getThuocTinhTaiNguyenPhuongTien?.getMapTaiNguyenHinhAnhNgoaiHinh?.addAll({
@@ -974,6 +987,13 @@ class QUANLYTRANGTHAIHANGARPHUONGTIEN with CAUTRUCTHUCTHICOBAN {
         HIEUUNGVACHAMPHANTHUONGCLASSSS00ASS010SS010.maDinhDanhPhuongTien: getHIEUUNGVACHAMPHANTHUONGCLASSSS00ASS010SS010?.getThuocTinhPhuongTien?.getThuocTinhHinhAnh,
         HIEUUNGVACHAMPHANTHUONGCLASSSS00ASS010SS020.maDinhDanhPhuongTien: getHIEUUNGVACHAMPHANTHUONGCLASSSS00ASS010SS020?.getThuocTinhPhuongTien?.getThuocTinhHinhAnh,
         HIEUUNGVACHAMPHANTHUONGCLASSSS00ASS010SS030.maDinhDanhPhuongTien: getHIEUUNGVACHAMPHANTHUONGCLASSSS00ASS010SS030?.getThuocTinhPhuongTien?.getThuocTinhHinhAnh,
+
+        ///
+        HIEUUNGVACHAMCONGKICHCLASSSS00BSS010SS010.maDinhDanhPhuongTien: getHIEUUNGVACHAMCONGKICHCLASSSS00BSS010SS010?.getThuocTinhPhuongTien?.getThuocTinhHinhAnh,
+        HIEUUNGVACHAMCONGKICHCLASSSS00BSS010SS020.maDinhDanhPhuongTien: getHIEUUNGVACHAMCONGKICHCLASSSS00BSS010SS020?.getThuocTinhPhuongTien?.getThuocTinhHinhAnh,
+        HIEUUNGVACHAMCONGKICHCLASSSS00BSS010SS030.maDinhDanhPhuongTien: getHIEUUNGVACHAMCONGKICHCLASSSS00BSS010SS030?.getThuocTinhPhuongTien?.getThuocTinhHinhAnh,
+        HIEUUNGVACHAMCONGKICHCLASSSS00BSS010SS040.maDinhDanhPhuongTien: getHIEUUNGVACHAMCONGKICHCLASSSS00BSS010SS040?.getThuocTinhPhuongTien?.getThuocTinhHinhAnh,
+        HIEUUNGVACHAMCONGKICHCLASSSS00BSS010SS050.maDinhDanhPhuongTien: getHIEUUNGVACHAMCONGKICHCLASSSS00BSS010SS050?.getThuocTinhPhuongTien?.getThuocTinhHinhAnh,
       });
     } catch (e) {
       await onReportRootIssue(nameFunction: 'onSetupRootForSubCom');
@@ -1247,6 +1267,13 @@ class QUANLYTRANGTHAIHANGARPHUONGTIEN with CAUTRUCTHUCTHICOBAN {
         getHIEUUNGVACHAMPHANTHUONGCLASSSS00ASS010SS010?.onInitRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onInitRootForSubCom'),
         getHIEUUNGVACHAMPHANTHUONGCLASSSS00ASS010SS020?.onInitRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onInitRootForSubCom'),
         getHIEUUNGVACHAMPHANTHUONGCLASSSS00ASS010SS030?.onInitRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onInitRootForSubCom'),
+
+        ///
+        getHIEUUNGVACHAMCONGKICHCLASSSS00BSS010SS010?.onInitRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onInitRootForSubCom'),
+        getHIEUUNGVACHAMCONGKICHCLASSSS00BSS010SS020?.onInitRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onInitRootForSubCom'),
+        getHIEUUNGVACHAMCONGKICHCLASSSS00BSS010SS030?.onInitRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onInitRootForSubCom'),
+        getHIEUUNGVACHAMCONGKICHCLASSSS00BSS010SS040?.onInitRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onInitRootForSubCom'),
+        getHIEUUNGVACHAMCONGKICHCLASSSS00BSS010SS050?.onInitRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onInitRootForSubCom'),
 
         ///
       ]);
@@ -1747,6 +1774,43 @@ class QUANLYTRANGTHAIHANGARPHUONGTIEN with CAUTRUCTHUCTHICOBAN {
                   thuocTinhHinhAnh: getHIEUUNGVACHAMPHANTHUONGCLASSSS00ASS010SS030?.getThuocTinhPhuongTien?.getThuocTinhHinhAnh,
                 )
                 .catchError((e) => null) ??
+            onReportRootIssue(nameFunction: 'onInitRootForSubCom'),
+
+        ///
+        getThuocTinhTaiNguyenPhuongTien
+            ?.onTruyXuatTaiNguyenHinhAnhNgoaiHinh(
+          maDinhDanh: getHIEUUNGVACHAMCONGKICHCLASSSS00BSS010SS010?.getMaDinhDanhPhuongTien,
+          thuocTinhHinhAnh: getHIEUUNGVACHAMCONGKICHCLASSSS00BSS010SS010?.getThuocTinhPhuongTien?.getThuocTinhHinhAnh,
+        )
+            .catchError((e) => null) ??
+            onReportRootIssue(nameFunction: 'onInitRootForSubCom'),
+        getThuocTinhTaiNguyenPhuongTien
+            ?.onTruyXuatTaiNguyenHinhAnhNgoaiHinh(
+          maDinhDanh: getHIEUUNGVACHAMCONGKICHCLASSSS00BSS010SS020?.getMaDinhDanhPhuongTien,
+          thuocTinhHinhAnh: getHIEUUNGVACHAMCONGKICHCLASSSS00BSS010SS020?.getThuocTinhPhuongTien?.getThuocTinhHinhAnh,
+        )
+            .catchError((e) => null) ??
+            onReportRootIssue(nameFunction: 'onInitRootForSubCom'),
+        getThuocTinhTaiNguyenPhuongTien
+            ?.onTruyXuatTaiNguyenHinhAnhNgoaiHinh(
+          maDinhDanh: getHIEUUNGVACHAMCONGKICHCLASSSS00BSS010SS030?.getMaDinhDanhPhuongTien,
+          thuocTinhHinhAnh: getHIEUUNGVACHAMCONGKICHCLASSSS00BSS010SS030?.getThuocTinhPhuongTien?.getThuocTinhHinhAnh,
+        )
+            .catchError((e) => null) ??
+            onReportRootIssue(nameFunction: 'onInitRootForSubCom'),
+        getThuocTinhTaiNguyenPhuongTien
+            ?.onTruyXuatTaiNguyenHinhAnhNgoaiHinh(
+          maDinhDanh: getHIEUUNGVACHAMCONGKICHCLASSSS00BSS010SS040?.getMaDinhDanhPhuongTien,
+          thuocTinhHinhAnh: getHIEUUNGVACHAMCONGKICHCLASSSS00BSS010SS040?.getThuocTinhPhuongTien?.getThuocTinhHinhAnh,
+        )
+            .catchError((e) => null) ??
+            onReportRootIssue(nameFunction: 'onInitRootForSubCom'),
+        getThuocTinhTaiNguyenPhuongTien
+            ?.onTruyXuatTaiNguyenHinhAnhNgoaiHinh(
+          maDinhDanh: getHIEUUNGVACHAMCONGKICHCLASSSS00BSS010SS050?.getMaDinhDanhPhuongTien,
+          thuocTinhHinhAnh: getHIEUUNGVACHAMCONGKICHCLASSSS00BSS010SS050?.getThuocTinhPhuongTien?.getThuocTinhHinhAnh,
+        )
+            .catchError((e) => null) ??
             onReportRootIssue(nameFunction: 'onInitRootForSubCom'),
       ]);
     } catch (e) {
@@ -4593,6 +4657,64 @@ class QUANLYTRANGTHAIHANGARPHUONGTIEN with CAUTRUCTHUCTHICOBAN {
       _theHIEUUNGVACHAMPHANTHUONGCLASSSS00ASS010SS030 = value;
     } else {
       _theHIEUUNGVACHAMPHANTHUONGCLASSSS00ASS010SS030 ??= value;
+    }
+    return;
+  }
+
+  ///
+/// TODO:
+///
+  HIEUUNGVACHAMCONGKICHCLASSSS00BSS010SS010? _theHIEUUNGVACHAMCONGKICHCLASSSS00BSS010SS010;
+  HIEUUNGVACHAMCONGKICHCLASSSS00BSS010SS010? get getHIEUUNGVACHAMCONGKICHCLASSSS00BSS010SS010 => _theHIEUUNGVACHAMCONGKICHCLASSSS00BSS010SS010;
+  Future<void> onVoidCaiDatHIEUUNGVACHAMCONGKICHCLASSSS00BSS010SS010({required HIEUUNGVACHAMCONGKICHCLASSSS00BSS010SS010? value, bool? caiDatUuTien}) async {
+    if (caiDatUuTien == true) {
+      _theHIEUUNGVACHAMCONGKICHCLASSSS00BSS010SS010 = value;
+    } else {
+      _theHIEUUNGVACHAMCONGKICHCLASSSS00BSS010SS010 ??= value;
+    }
+    return;
+  }
+
+  HIEUUNGVACHAMCONGKICHCLASSSS00BSS010SS020? _theHIEUUNGVACHAMCONGKICHCLASSSS00BSS010SS020;
+  HIEUUNGVACHAMCONGKICHCLASSSS00BSS010SS020? get getHIEUUNGVACHAMCONGKICHCLASSSS00BSS010SS020 => _theHIEUUNGVACHAMCONGKICHCLASSSS00BSS010SS020;
+  Future<void> onVoidCaiDatHIEUUNGVACHAMCONGKICHCLASSSS00BSS010SS020({required HIEUUNGVACHAMCONGKICHCLASSSS00BSS010SS020? value, bool? caiDatUuTien}) async {
+    if (caiDatUuTien == true) {
+      _theHIEUUNGVACHAMCONGKICHCLASSSS00BSS010SS020 = value;
+    } else {
+      _theHIEUUNGVACHAMCONGKICHCLASSSS00BSS010SS020 ??= value;
+    }
+    return;
+  }
+
+  HIEUUNGVACHAMCONGKICHCLASSSS00BSS010SS030? _theHIEUUNGVACHAMCONGKICHCLASSSS00BSS010SS030;
+  HIEUUNGVACHAMCONGKICHCLASSSS00BSS010SS030? get getHIEUUNGVACHAMCONGKICHCLASSSS00BSS010SS030 => _theHIEUUNGVACHAMCONGKICHCLASSSS00BSS010SS030;
+  Future<void> onVoidCaiDatHIEUUNGVACHAMCONGKICHCLASSSS00BSS010SS030({required HIEUUNGVACHAMCONGKICHCLASSSS00BSS010SS030? value, bool? caiDatUuTien}) async {
+    if (caiDatUuTien == true) {
+      _theHIEUUNGVACHAMCONGKICHCLASSSS00BSS010SS030 = value;
+    } else {
+      _theHIEUUNGVACHAMCONGKICHCLASSSS00BSS010SS030 ??= value;
+    }
+    return;
+  }
+
+  HIEUUNGVACHAMCONGKICHCLASSSS00BSS010SS040? _theHIEUUNGVACHAMCONGKICHCLASSSS00BSS010SS040;
+  HIEUUNGVACHAMCONGKICHCLASSSS00BSS010SS040? get getHIEUUNGVACHAMCONGKICHCLASSSS00BSS010SS040 => _theHIEUUNGVACHAMCONGKICHCLASSSS00BSS010SS040;
+  Future<void> onVoidCaiDatHIEUUNGVACHAMCONGKICHCLASSSS00BSS010SS040({required HIEUUNGVACHAMCONGKICHCLASSSS00BSS010SS040? value, bool? caiDatUuTien}) async {
+    if (caiDatUuTien == true) {
+      _theHIEUUNGVACHAMCONGKICHCLASSSS00BSS010SS040 = value;
+    } else {
+      _theHIEUUNGVACHAMCONGKICHCLASSSS00BSS010SS040 ??= value;
+    }
+    return;
+  }
+
+  HIEUUNGVACHAMCONGKICHCLASSSS00BSS010SS050? _theHIEUUNGVACHAMCONGKICHCLASSSS00BSS010SS050;
+  HIEUUNGVACHAMCONGKICHCLASSSS00BSS010SS050? get getHIEUUNGVACHAMCONGKICHCLASSSS00BSS010SS050 => _theHIEUUNGVACHAMCONGKICHCLASSSS00BSS010SS050;
+  Future<void> onVoidCaiDatHIEUUNGVACHAMCONGKICHCLASSSS00BSS010SS050({required HIEUUNGVACHAMCONGKICHCLASSSS00BSS010SS050? value, bool? caiDatUuTien}) async {
+    if (caiDatUuTien == true) {
+      _theHIEUUNGVACHAMCONGKICHCLASSSS00BSS010SS050 = value;
+    } else {
+      _theHIEUUNGVACHAMCONGKICHCLASSSS00BSS010SS050 ??= value;
     }
     return;
   }

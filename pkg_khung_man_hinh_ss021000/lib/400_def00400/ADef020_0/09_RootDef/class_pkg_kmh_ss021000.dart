@@ -168,6 +168,8 @@ class KHUNGMANHINHMASTERLOADING extends THANHPHANMANHINHTHUOCCAPCOBAN {
   }
 
   flutter_async.Timer? _timer;
+
+  CAUTRUCTHUCTHITUANTUCOBAN? cauTrucThucThiTuanTu;
   /// -----
   /// TODO: OnLoad
   /// -----
@@ -177,19 +179,126 @@ class KHUNGMANHINHMASTERLOADING extends THANHPHANMANHINHTHUOCCAPCOBAN {
 
     // await getGameController?.onKhoiDongGameCoSoSS999();
 
-    _timer = flutter_async.Timer.periodic(Duration(milliseconds: 1000), (_) async {
+    // cauTrucThucThiTuanTu = CAUTRUCTHUCTHITUANTUCOBAN.onMacDinh();
+    //
+    // cauTrucThucThiTuanTu?.onAddDonViThucThiTuanTu(
+    //   onThucThiTuanTu: () async {
+    //     await getGlobalState?.onGetEntityResourceManagement?.getQuanLyTrangThaiHangarChienDauCo?.onTaiTaiNguyenChienDauCo00E03SS010(
+    //         onThucThiHoanTat: null);
+    //   },
+    // );
+    // cauTrucThucThiTuanTu?.onAddDonViThucThiTuanTu(
+    //   onThucThiTuanTu: () async {
+    //     await getGlobalState?.onGetEntityResourceManagement?.getQuanLyTrangThaiHangarChienDauCo?.onTaiTaiNguyenChienDauCo00E03SS020(
+    //         onThucThiHoanTat: null);
+    //   },
+    // );
+    // cauTrucThucThiTuanTu?.onAddDonViThucThiTuanTu(
+    //   onThucThiTuanTu: () async {
+    //     await getGlobalState?.onGetEntityResourceManagement?.getQuanLyTrangThaiHangarChienDauCo?.onTaiTaiNguyenChienDauCo00E03SS030(
+    //         onThucThiHoanTat: null);
+    //   },
+    // );
+    // cauTrucThucThiTuanTu?.onAddDonViThucThiTuanTu(
+    //   onThucThiTuanTu: () async {
+    //     await getGlobalState?.onGetEntityResourceManagement?.getQuanLyTrangThaiHangarChienDauCo?.onTaiTaiNguyenChienDauCo00D04SS010(
+    //         onThucThiHoanTat: null);
+    //   },
+    // );
+    // cauTrucThucThiTuanTu?.onAddDonViThucThiTuanTu(
+    //   onThucThiTuanTu: () async {
+    //     await getGlobalState?.onGetEntityResourceManagement?.getQuanLyTrangThaiHangarChienDauCo?.onTaiTaiNguyenChienDauCo00C05SS010(
+    //         onThucThiHoanTat: null);
+    //   },
+    // );
+    // cauTrucThucThiTuanTu?.onAddDonViThucThiTuanTu(
+    //   onThucThiTuanTu: () async {
+    //     await getGlobalState?.onGetEntityResourceManagement?.getQuanLyTrangThaiHangarChienDauCo?.onTaiTaiNguyenChienDauCo00B06SS010(
+    //         onThucThiHoanTat: null);
+    //   },
+    // );
+    // cauTrucThucThiTuanTu?.onAddDonViThucThiTuanTu(
+    //   onThucThiTuanTu: () async {
+    //     await getGlobalState?.onGetEntityResourceManagement?.getQuanLyTrangThaiHangarChienDauCo?.onTaiTaiNguyenChienDauCo00A07SS010(
+    //         onThucThiHoanTat: null);
+    //   },
+    // );
+    // cauTrucThucThiTuanTu?.onAddDonViThucThiTuanTu(
+    //   onThucThiTuanTu: () async {
+    //     await getGlobalState?.onGetEntityResourceManagement?.getQuanLyTrangThaiHangarChienDauCo?.onTaiTaiNguyenChienDauCo00S08SS010(
+    //         onThucThiHoanTat: null);
+    //   },
+    // );
+    // cauTrucThucThiTuanTu?.onAddDonViThucThiTuanTu(
+    //   onThucThiTuanTu: () async {
+    //     await getGlobalState?.onGetEntityResourceManagement?.getQuanLyTrangThaiHangarChienDauCo?.onTaiTaiNguyenChienDauCo0SS09SS010(
+    //         onThucThiHoanTat: null);
+    //   },
+    // );
+    // cauTrucThucThiTuanTu?.onAddDonViThucThiTuanTu(
+    //   onThucThiTuanTu: () async {
+    //     await getGlobalState?.onGetEntityResourceManagement?.getQuanLyTrangThaiHangarChienDauCo?.onTaiTaiNguyenChienDauCo0SS09SS020(
+    //         onThucThiHoanTat: null);
+    //   },
+    // );
+    // cauTrucThucThiTuanTu?.onAddDonViThucThiTuanTu(
+    //   onThucThiTuanTu: () async {
+    //     await getGlobalState?.onGetEntityResourceManagement?.getQuanLyTrangThaiHangarChienDauCo?.onTaiTaiNguyenChienDauCo0SS09SS030(
+    //         onThucThiHoanTat: null);
+    //   },
+    // );
+    // cauTrucThucThiTuanTu?.onAddDonViThucThiTuanTu(
+    //   onThucThiTuanTu: () async {
+    //     await getGlobalState?.onGetEntityResourceManagement?.getQuanLyTrangThaiHangarChienDauCo?.onTaiTaiNguyenChienDauCoSSS10SS010(
+    //         onThucThiHoanTat: null);
+    //   },
+    // );
+    // cauTrucThucThiTuanTu?.onAddDonViThucThiTuanTu(
+    //   onThucThiTuanTu: () async {
+    //     await getGlobalState?.onGetEntityResourceManagement?.getQuanLyTrangThaiHangarChienDauCo?.onTaiTaiNguyenChienDauCoSSS10SS020(
+    //         onThucThiHoanTat: null);
+    //   },
+    // );
+    // cauTrucThucThiTuanTu?.onAddDonViThucThiTuanTu(
+    //   onThucThiTuanTu: () async {
+    //     await getGlobalState?.onGetEntityResourceManagement?.getQuanLyTrangThaiHangarChienDauCo?.onTaiTaiNguyenChienDauCoSSS10SS030(
+    //         onThucThiHoanTat: null);
+    //   },
+    // );
+    // cauTrucThucThiTuanTu?.onAddDonViThucThiTuanTu(
+    //   onThucThiTuanTu: () async {
+    //     await getGlobalState?.onGetEntityResourceManagement?.getQuanLyTrangThaiHangarChienDauCo?.onTaiTaiNguyenChienDauCoSSS10SS040(
+    //         onThucThiHoanTat: null);
+    //   },
+    // );
+    // cauTrucThucThiTuanTu?.onAddDonViThucThiTuanTu(
+    //   onThucThiTuanTu: () async {
+    //     await getGlobalState?.onGetEntityResourceManagement?.getQuanLyTrangThaiHangarChienDauCo?.onTaiTaiNguyenChienDauCoSSS10SS050(
+    //         onThucThiHoanTat: null);
+    //   },
+    // );
+    //
+    // cauTrucThucThiTuanTu?.onThucThiHoanTat = () async {
+    //   await getGameController?.onKhoiDongGameCoSoSS999();
+    // };
+    //
+    // cauTrucThucThiTuanTu?.onThucThiTuanTu(interval: const Duration(milliseconds: 200));
 
-      await getGlobalState?.onGetEntityResourceManagement?.getQuanLyTrangThaiHangarChienDauCo?.onTaiTaiNguyenChienDauCo(
-          onThucThiHoanTat: () async {
-            _timer?.cancel();
-            await getGameController?.onKhoiDongGameCoSoSS999();
-          }
-      );
-
-      // if (kDebugMode) {
-        print('Tải Tài Nguyên Chiến Đấu Cơ');
-      // }
-    });
+    // _timer = flutter_async.Timer.periodic(Duration(milliseconds: 1000), (_) async {
+    //
+    //   await getGlobalState?.onGetEntityResourceManagement?.getQuanLyTrangThaiHangarChienDauCo?.onTaiTaiNguyenChienDauCo(
+    //       onThucThiHoanTat: () async {
+    //         _timer?.cancel();
+    //         await getGameController?.onKhoiDongGameCoSoSS999();
+    //       }
+    //   );
+    //
+    //
+    //
+    //   // if (kDebugMode) {
+    //     print('Tải Tài Nguyên Chiến Đấu Cơ');
+    //   // }
+    // });
   }
 
   @override

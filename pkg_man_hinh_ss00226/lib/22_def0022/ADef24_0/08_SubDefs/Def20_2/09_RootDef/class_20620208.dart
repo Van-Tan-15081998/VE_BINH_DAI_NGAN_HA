@@ -53,7 +53,7 @@ class KhungVongLapSS01PkgManHinhSS00226 extends Component with VongLapThoiGianCo
   @override
   FutureOr<void> update(double dt) async {
 
-    return;
+    // return;
 
     ///
     ///

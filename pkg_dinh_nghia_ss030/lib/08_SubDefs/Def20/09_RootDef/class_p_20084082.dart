@@ -470,7 +470,7 @@ class MoHinhPhuongTienTongQuat with CauTrucThucThiCoBan {
     getDuLieuJsonLamPhang['[KICH_HOAT_HOAT_DONG]'] = true;
 
     await getSpritePhuongTien?.onAddToParent();
-    // await getSpriteChiSoPhuongTien?.onAddToParent(); // Mở Comment
+    await getSpriteChiSoPhuongTien?.onAddToParent(); // Mở Comment
 
     ///
     return;
@@ -776,7 +776,7 @@ class MoHinhPhuongTienTongQuat with CauTrucThucThiCoBan {
   /// TODO: Điều Khiển Bay Theo Đội Hình - Chi Tiết
   /// -----
   void onVoidDieuKhienDiChuyenTheoDoiHinhChiTiet({required int chiSoTangTienTheoThoiGianThuc}) {
-    if (false) {
+    if (true) {
       /// -----
       /// TODO: Kiểm Tra Va Chạm Giữa Phương Tiện Với Danh Sách Viên Đạn Chiến Đấu Cơ Hoạt Động
       /// TODO: Thực Hiện Khi Phương Tiện Đã Vào Trong Màn Hình
@@ -881,7 +881,7 @@ class MoHinhPhuongTienTongQuat with CauTrucThucThiCoBan {
 
     final double dxTrongTamPhuongTien = getDuLieuJsonLamPhang['[DX_TRONG_TAM]'] ?? 0;
     final double dyTrongTamPhuongTien = getDuLieuJsonLamPhang['[DY_TRONG_TAM]'] ?? 0;
-    if (false) {
+    if (true) {
       if ((dxTrongTamPhuongTien < (dxTrongTamChienDauCo + (chieuRongThanChienDauCo / 2))) &&
           (dxTrongTamPhuongTien > (dxTrongTamChienDauCo - (chieuRongThanChienDauCo / 2))) &&
           (dyTrongTamPhuongTien < (dyTrongTamChienDauCo + (chieuCaoThanChienDauCo / 2))) &&
