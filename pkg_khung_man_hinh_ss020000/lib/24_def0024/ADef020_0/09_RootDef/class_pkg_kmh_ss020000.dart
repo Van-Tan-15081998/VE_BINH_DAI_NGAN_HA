@@ -731,9 +731,9 @@ abstract class KHUNGMANHINHGAMECOSO extends FlameGame
     /// -----|-----|-----
     /// TODO: Add Root
     /// -----|-----|-----
-    await onAddRoot();
+    // await onAddRoot();
 
-    await Future.delayed(Duration.zero); // nhường event loop, nhưng không delay lâu
+    await Future.delayed(Duration.zero); // nhường event loop, nhưng không delay lâu .
     /// -----
     /// TODO:
     /// -----

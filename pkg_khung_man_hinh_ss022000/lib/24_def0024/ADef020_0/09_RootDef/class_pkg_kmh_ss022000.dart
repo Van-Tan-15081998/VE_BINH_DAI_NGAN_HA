@@ -448,7 +448,14 @@ class KHUNGMANHINHCHINH extends KHUNGMANHINHGAMECOSO {
 
     count++;
 
-    int childrenComponent = getTotalComponentCount(this);
+    if (count % 1000 == 0) {
+      int childrenComponent = getTotalComponentCount(this);
+      print('<<<childrenComponent_childrenComponent>>>: $childrenComponent');
+
+      List<Component> danhSach = descendants().toList();
+
+      return;
+    }
 
     // if (count % 80 == 0) {
     //   getGlobalState
@@ -456,10 +463,6 @@ class KHUNGMANHINHCHINH extends KHUNGMANHINHGAMECOSO {
     //       ?.getQuanLyDieuKhienChuyenKichBanChienDau
     //       ?.onTaiTaiNguyenPhuongTienTuanTu();
     // }
-
-    print('<<<childrenComponent_childrenComponent>>>: $childrenComponent');
-
-    List<Component> danhSach = descendants().toList();
 
     return;
   }
