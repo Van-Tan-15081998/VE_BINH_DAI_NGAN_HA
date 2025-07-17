@@ -453,10 +453,10 @@ class _ManHinhHangarDanhSachChonChienDauCoState
   ///
   /// TODO:
   ///
-  QuanLyTrangThaiTongQuat? _trangThaiTongQuat;
-  QuanLyTrangThaiTongQuat? get getTrangThaiTongQuat => _trangThaiTongQuat;
+  GlobalStateManagementSystem? _trangThaiTongQuat;
+  GlobalStateManagementSystem? get getTrangThaiTongQuat => _trangThaiTongQuat;
   Future<void> caiDatTrangThaiTongQuat({
-    required QuanLyTrangThaiTongQuat? value,
+    required GlobalStateManagementSystem? value,
   }) async {
     _trangThaiTongQuat ??= value;
     return;
@@ -505,8 +505,8 @@ class _ManHinhHangarDanhSachChonChienDauCoState
 
   @override
   Widget build(BuildContext context) {
-    final QuanLyTrangThaiTongQuat trangThaiTongQuat =
-        Provider.of<QuanLyTrangThaiTongQuat>(context, listen: false);
+    final GlobalStateManagementSystem trangThaiTongQuat =
+        Provider.of<GlobalStateManagementSystem>(context, listen: false);
     _trangThaiTongQuat ??= trangThaiTongQuat;
 
     return Container(

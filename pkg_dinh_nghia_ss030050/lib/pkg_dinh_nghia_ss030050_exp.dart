@@ -18,8 +18,4 @@ export '30_def0030/ADef20_0/09_RootDef/class_20860222.dart';
 /// TODO: _____[QUAN_LY_TRANG_THAI_SU_KIEN_VA_CHAM_THUOC_PHUONG_TIEN]_____
 export '30_def0030/ZDef00_0/class_20002226.dart';
 
-/// A Calculator.
-class Calculator {
-  /// Returns [value] plus 1.
-  int addOne(int value) => value + 1;
-}
+

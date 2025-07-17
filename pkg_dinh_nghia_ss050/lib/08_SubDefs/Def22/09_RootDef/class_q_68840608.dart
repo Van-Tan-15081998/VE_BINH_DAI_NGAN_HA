@@ -10,7 +10,7 @@ class QuanLyTrangThaiTienTrinhTongQuat with KhungThucThiCoBan {
   /// -----
   @override
   Future<void> onAttachRoot({required dynamic attachValue}) async {
-    if (attachValue is QuanLyTrangThaiTongQuat) {
+    if (attachValue is GlobalStateManagementSystem) {
       ///
     }
 

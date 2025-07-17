@@ -10,7 +10,7 @@ class CARDCHIENDAUCODANGCAPSAO00C05SS02
   /// TODO:
   /// -----
   CARDCHIENDAUCODANGCAPSAO00C05SS02({
-    required super.globalState,
+    required super.globalStateManagementSystem,
     required super.gameController,
     required super.thanhPhanQuanLyThuocCapTrucTiep,
     required super.sizeDx,

@@ -3,7 +3,7 @@ import 'package:pkg_dinh_nghia_ss022/pkg_dinh_nghia_ss022_exp.dart';
 ///
 /// TODO: [GAMEUI] Thanh Ngang Chỉ Số Máu Chiến Đấu Cơ
 ///
-class GAMEUITHANHNGANGCHISOMAUCHIENDAUCO extends THANHPHANGAMEUICOBAN {
+class GAMEUITHANHNGANGCHISOMAUCHIENDAUCO extends CoreGameUIComponent {
   static const String maDinhDanhGameUI = '[GAMEUI]_[GAMEUITHANHNGANGCHISOMAUCHIENDAUCO]';
   /// -----
   /// TODO: Setup Root

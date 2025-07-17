@@ -18,7 +18,7 @@ class QUANLYTHANHPHANTICHHOPTHUOCCAP
   /// TODO:
   /// -----
   QUANLYTHANHPHANTICHHOPTHUOCCAP({
-    required super.globalState,
+    required super.globalStateManagementSystem,
     required super.gameController,
     required super.thanhPhanQuanLyThuocCapTrucTiep,
     required super.sizeDx,
@@ -194,23 +194,23 @@ class QUANLYTHANHPHANTICHHOPTHUOCCAP
       await Future.wait([
         ///
         onCaiDatKhungManHinhSS00226(
-          value: KHUNGMANHINHSS00226(trangThaiTongQuat: getGlobalState),
+          value: KHUNGMANHINHSS00226(trangThaiTongQuat: getGlobalStateManagementSystem),
           caiDatUuTien: true,
         ).catchError((e) => null),
         onCaiDatKhungManHinhSS00222(
-          value: KHUNGMANHINHSS00222(trangThaiTongQuat: getGlobalState),
+          value: KHUNGMANHINHSS00222(trangThaiTongQuat: getGlobalStateManagementSystem),
           caiDatUuTien: true,
         ).catchError((e) => null),
         onCaiDatKhungManHinhSS00224(
-          value: KHUNGMANHINHSS00224(trangThaiTongQuat: getGlobalState),
+          value: KHUNGMANHINHSS00224(trangThaiTongQuat: getGlobalStateManagementSystem),
           caiDatUuTien: true,
         ).catchError((e) => null),
         onCaiDatKhungManHinhSS00230(
-          value: KHUNGMANHINHSS00230(trangThaiTongQuat: getGlobalState),
+          value: KHUNGMANHINHSS00230(trangThaiTongQuat: getGlobalStateManagementSystem),
           caiDatUuTien: true,
         ).catchError((e) => null),
         onCaiDatKhungManHinhSS00240(
-          value: KHUNGMANHINHSS00240(trangThaiTongQuat: getGlobalState),
+          value: KHUNGMANHINHSS00240(trangThaiTongQuat: getGlobalStateManagementSystem),
           caiDatUuTien: true,
         ).catchError((e) => null),
       ]);

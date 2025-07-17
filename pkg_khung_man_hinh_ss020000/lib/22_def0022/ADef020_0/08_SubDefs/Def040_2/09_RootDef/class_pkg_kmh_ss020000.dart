@@ -17,13 +17,13 @@ abstract class THANHPHANMANHINHDRAGTHUOCCAPCOBAN extends PositionComponent with 
   /// -----
   /// TODO:
   /// -----
-  QuanLyTrangThaiTongQuat? _globalState;
-  QuanLyTrangThaiTongQuat? get getGlobalState => _globalState;
-  void onVoidCaiDatGlobalState({required QuanLyTrangThaiTongQuat? value, bool? caiDatUuTien}) {
+  GlobalStateManagementSystem? _globalStateManagementSystem;
+  GlobalStateManagementSystem? get getGlobalStateManagementSystem => _globalStateManagementSystem;
+  void onSetGlobalStateManagementSystem({required GlobalStateManagementSystem? value, bool? caiDatUuTien}) {
     if (caiDatUuTien == true) {
-      _globalState = value;
+      _globalStateManagementSystem = value;
     } else {
-      _globalState ??= value;
+      _globalStateManagementSystem ??= value;
     }
 
     return;
@@ -136,6 +136,68 @@ abstract class THANHPHANMANHINHDRAGTHUOCCAPCOBAN extends PositionComponent with 
   }
 
   /// -----
+  /// TODO: FlameGame Parent Component
+  /// -----
+  Component? _flameGameParentComponent;
+  Component? get getFlameGameParentComponent => _flameGameParentComponent;
+  void onCaiDatFlameGameParentComponent({required Component? value, bool? isPriorityOverride}) {
+    if (isPriorityOverride == true) {
+      _flameGameParentComponent = value;
+    } else {
+      _flameGameParentComponent ??= value;
+    }
+
+    ///
+    return;
+  }
+
+  /// -----
+  /// TODO: Parent Component
+  /// -----
+  Component? _parentComponent;
+  Component? get getParentComponent => _parentComponent;
+  void onCaiDatParentComponent({required Component? value, bool? isPriorityOverride}) {
+    if (isPriorityOverride == true) {
+      _parentComponent = value;
+    } else {
+      _parentComponent ??= value;
+    }
+
+    ///
+    return;
+  }
+
+  Future<void> onAddToParent() async {
+
+    if (getFlameGameParentComponent != null && isMounted == false) {
+      await getFlameGameParentComponent?.add(this);
+    } else if (getParentComponent != null && isMounted == false) {
+      await getParentComponent?.add(this);
+    }
+
+    return;
+  }
+
+  /// -----
+  /// TODO:
+  /// -----
+  Future<void> onRemoveFromParent() async {
+    if (isMounted == true) {
+      removeFromParent();
+    }
+
+    return;
+  }
+
+  Future<void> onActiveShow() async {
+    await onAddToParent();
+  }
+
+  Future<void> onInActiveShow() async {
+    await onRemoveFromParent();
+  }
+
+  /// -----
   /// TODO:
   /// -----
   TRANGTHAIKICHHOATTHANHPHAN? _trangThaiKichHoatThanhPhan;
@@ -157,8 +219,8 @@ abstract class THANHPHANMANHINHDRAGTHUOCCAPCOBAN extends PositionComponent with 
   /// TODO:
   /// -----
   Future<void> onCapNhatTrangThaiKichHoatThanhPhan() async {
-    double sizeDxManHinhVatLy = getGlobalState?.getThietLapTongQuat?.getChieuRongManHinhVatLy ?? 100.0;
-    double sizeDyManHinhVatLy = getGlobalState?.getThietLapTongQuat?.getChieuCaoManHinhVatLy ?? 100.0;
+    double sizeDxManHinhVatLy = getGlobalStateManagementSystem?.getThietLapTongQuat?.getChieuRongManHinhVatLy ?? 100.0;
+    double sizeDyManHinhVatLy = getGlobalStateManagementSystem?.getThietLapTongQuat?.getChieuCaoManHinhVatLy ?? 100.0;
 
     getTrangThaiKichHoatThanhPhan?.getDiemToaDoThanhPhanHuyKichHoat?.onVoidCaiDatPositionDx(value: -10000.0, caiDatUuTien: true);
     getTrangThaiKichHoatThanhPhan?.getDiemToaDoThanhPhanHuyKichHoat?.onVoidCaiDatPositionDy(value: -10000.0, caiDatUuTien: true);
@@ -179,11 +241,15 @@ abstract class THANHPHANMANHINHDRAGTHUOCCAPCOBAN extends PositionComponent with 
 
       onVoidCaiDatPositionDx(value: getTrangThaiKichHoatThanhPhan?.getDiemToaDoThanhPhanKichHoat?.getPositionDx, caiDatUuTien: true);
       onVoidCaiDatPositionDy(value: getTrangThaiKichHoatThanhPhan?.getDiemToaDoThanhPhanKichHoat?.getPositionDy, caiDatUuTien: true);
+
+      await onActiveShow();
     } else if (getTrangThaiKichHoatThanhPhan?.getKiemTraKichHoat == false) {
       getTrangThaiKichHoatThanhPhan?.onVoidCaiDatKiemTraKichHoat(value: true, caiDatUuTien: true);
 
       onVoidCaiDatPositionDx(value: getTrangThaiKichHoatThanhPhan?.getDiemToaDoThanhPhanKichHoat?.getPositionDx, caiDatUuTien: true);
       onVoidCaiDatPositionDy(value: getTrangThaiKichHoatThanhPhan?.getDiemToaDoThanhPhanKichHoat?.getPositionDy, caiDatUuTien: true);
+
+      await onActiveShow();
     } else if (getTrangThaiKichHoatThanhPhan?.getKiemTraKichHoat == true) {
       await onHuyKichHoatThanhPhanManHinhThuocCap();
       onHuyKichHoat?.call();
@@ -202,6 +268,8 @@ abstract class THANHPHANMANHINHDRAGTHUOCCAPCOBAN extends PositionComponent with 
     onVoidCaiDatPositionDx(value: getTrangThaiKichHoatThanhPhan?.getDiemToaDoThanhPhanHuyKichHoat?.getPositionDx, caiDatUuTien: true);
     onVoidCaiDatPositionDy(value: getTrangThaiKichHoatThanhPhan?.getDiemToaDoThanhPhanHuyKichHoat?.getPositionDy, caiDatUuTien: true);
 
+    await onInActiveShow();
+
     ///
     return;
   }
@@ -210,7 +278,7 @@ abstract class THANHPHANMANHINHDRAGTHUOCCAPCOBAN extends PositionComponent with 
   /// TODO:
   /// -----
   THANHPHANMANHINHDRAGTHUOCCAPCOBAN({
-    required QuanLyTrangThaiTongQuat? globalState,
+    required GlobalStateManagementSystem? globalStateManagementSystem,
     required KHUNGMANHINHGAMECOSO? gameController,
     required THANHPHANMANHINHTHUOCCAPCOBAN? thanhPhanQuanLyThuocCapTrucTiep,
     required double? sizeDx,
@@ -218,7 +286,7 @@ abstract class THANHPHANMANHINHDRAGTHUOCCAPCOBAN extends PositionComponent with 
     required double? positionDx,
     required double? positionDy,
   }) {
-    onVoidCaiDatGlobalState(value: globalState, caiDatUuTien: true);
+    onSetGlobalStateManagementSystem(value: globalStateManagementSystem, caiDatUuTien: true);
     onVoidCaiDatGameController(value: gameController, caiDatUuTien: true);
     onVoidCaiDatThanhPhanQuanLyThuocCapTrucTiep(value: thanhPhanQuanLyThuocCapTrucTiep, caiDatUuTien: true);
     onVoidCaiDatSizeDx(value: sizeDx, caiDatUuTien: true);
@@ -312,7 +380,7 @@ abstract class THANHPHANMANHINHDRAGTHUOCCAPCOBAN extends PositionComponent with 
       /// -----
       // await flameGame?.add(this);
 
-      parent?.add(this);
+      // parent?.add(this);
 
       /// -----
       /// TODO:

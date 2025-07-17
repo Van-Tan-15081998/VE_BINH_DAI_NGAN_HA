@@ -3,7 +3,7 @@ import 'package:pkg_dinh_nghia_ss022/pkg_dinh_nghia_ss022_exp.dart';
 ///
 /// TODO: [GAMEUI] Nút Bấm Chọn Tab Chiến Đấu Kích Hoạt
 ///
-class GAMEUINUTBAMCHONTABCHIENDAUKICHHOAT extends THANHPHANGAMEUICOBAN {
+class GAMEUINUTBAMCHONTABCHIENDAUKICHHOAT extends CoreGameUIComponent {
   static const String maDinhDanhGameUI = '[GAMEUI]_[GAMEUINUTBAMCHONTABCHIENDAUKICHHOAT]';
 
   /// -----

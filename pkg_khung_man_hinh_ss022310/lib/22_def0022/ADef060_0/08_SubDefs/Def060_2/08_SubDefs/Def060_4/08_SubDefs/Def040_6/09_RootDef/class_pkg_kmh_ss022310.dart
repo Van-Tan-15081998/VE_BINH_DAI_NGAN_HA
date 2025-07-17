@@ -10,7 +10,7 @@ class KHUNGDCSCHIENDAUCODANGCAPSAO00B06SS03
   /// TODO:
   /// -----
   KHUNGDCSCHIENDAUCODANGCAPSAO00B06SS03({
-    required super.globalState,
+    required super.globalStateManagementSystem,
     required super.gameController,
     required super.thanhPhanQuanLyThuocCapTrucTiep,
     required super.sizeDx,

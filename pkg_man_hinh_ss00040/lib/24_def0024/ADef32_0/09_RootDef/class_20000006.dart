@@ -8,7 +8,7 @@ import 'package:pkg_man_hinh_ss00040/24_def0024/ADef20_0/08_SubDefs/Def22_2/08_S
 class MANHINHTAINGUYENSS02 extends StatefulWidget {
   const MANHINHTAINGUYENSS02({super.key, required this.trangThaiTongQuat});
 
-  final QuanLyTrangThaiTongQuat? trangThaiTongQuat;
+  final GlobalStateManagementSystem? trangThaiTongQuat;
 
   @override
   State<MANHINHTAINGUYENSS02> createState() => _MANHINHTAINGUYENSS02State();

@@ -11,7 +11,7 @@ class CARDNHIEMVUSS00A002MAPSS00A extends THANHPHANNUTBAMTICHHOPTHUOCCAP {
   /// TODO:
   /// -----
   CARDNHIEMVUSS00A002MAPSS00A({
-    required super.globalState,
+    required super.globalStateManagementSystem,
     required super.gameController,
     required super.thanhPhanQuanLyThuocCapTrucTiep,
     required super.sizeDx,
@@ -26,7 +26,7 @@ class CARDNHIEMVUSS00A002MAPSS00A extends THANHPHANNUTBAMTICHHOPTHUOCCAP {
     /// TODO:
     /// -----
     getBanDoChienDau?.onCaiDatMoHinh(
-      value: getGlobalState?.getBanDoChienDau?.getBanDoChienDauMAPSS00A,
+      value: getGlobalStateManagementSystem?.getBanDoChienDau?.getBanDoChienDauMAPSS00A,
       caiDatUuTien: true,
     );
 
@@ -41,7 +41,7 @@ class CARDNHIEMVUSS00A002MAPSS00A extends THANHPHANNUTBAMTICHHOPTHUOCCAP {
 
   @override
   void onThucThi() async {
-    await getGlobalState?.getBanDoChienDau?.getNhiemVuChienDauChonChiDinh
+    await getGlobalStateManagementSystem?.getBanDoChienDau?.getNhiemVuChienDauChonChiDinh
         ?.onCaiDatMoHinh(
           value: getNhiemVuChienDau?.getMoHinh,
           caiDatUuTien: true,

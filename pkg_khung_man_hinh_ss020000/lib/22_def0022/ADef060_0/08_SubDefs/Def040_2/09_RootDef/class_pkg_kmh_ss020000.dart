@@ -13,16 +13,16 @@ abstract class THANHPHANTICHHOPSPRITEANIMATIONTHUOCCAP extends PositionComponent
   /// -----
   /// TODO:
   /// -----
-  QuanLyTrangThaiTongQuat? _globalState;
-  QuanLyTrangThaiTongQuat? get getGlobalState => _globalState;
-  void onVoidCaiDatGlobalState({
-    required QuanLyTrangThaiTongQuat? value,
+  GlobalStateManagementSystem? _globalStateManagementSystem;
+  GlobalStateManagementSystem? get getGlobalStateManagementSystem => _globalStateManagementSystem;
+  void onSetGlobalStateManagementSystem({
+    required GlobalStateManagementSystem? value,
     bool? caiDatUuTien,
   }) {
     if (caiDatUuTien == true) {
-      _globalState = value;
+      _globalStateManagementSystem = value;
     } else {
-      _globalState ??= value;
+      _globalStateManagementSystem ??= value;
     }
 
     return;
@@ -99,6 +99,49 @@ abstract class THANHPHANTICHHOPSPRITEANIMATIONTHUOCCAP extends PositionComponent
 
     if (getPositionDy?.isNaN == false && position.y != getPositionDy) {
       position.y = getPositionDy ?? 10.0;
+    }
+
+    return;
+  }
+
+  /// -----
+  /// TODO: FlameGame Parent Component
+  /// -----
+  Component? _flameGameParentComponent;
+  Component? get getFlameGameParentComponent => _flameGameParentComponent;
+  void onCaiDatFlameGameParentComponent({required Component? value, bool? isPriorityOverride}) {
+    if (isPriorityOverride == true) {
+      _flameGameParentComponent = value;
+    } else {
+      _flameGameParentComponent ??= value;
+    }
+
+    ///
+    return;
+  }
+
+  /// -----
+  /// TODO: Parent Component
+  /// -----
+  Component? _parentComponent;
+  Component? get getParentComponent => _parentComponent;
+  void onCaiDatParentComponent({required Component? value, bool? isPriorityOverride}) {
+    if (isPriorityOverride == true) {
+      _parentComponent = value;
+    } else {
+      _parentComponent ??= value;
+    }
+
+    ///
+    return;
+  }
+
+  Future<void> onAddToParent() async {
+
+    if (getFlameGameParentComponent != null && isMounted == false) {
+      await getFlameGameParentComponent?.add(this);
+    } else if (getParentComponent != null && isMounted == false) {
+      await getParentComponent?.add(this);
     }
 
     return;
@@ -235,13 +278,13 @@ abstract class THANHPHANTICHHOPSPRITEANIMATIONTHUOCCAP extends PositionComponent
   /// TODO:
   /// -----
   THANHPHANTICHHOPSPRITEANIMATIONTHUOCCAP({
-    required QuanLyTrangThaiTongQuat? globalState,
+    required GlobalStateManagementSystem? globalStateManagementSystem,
     required double? sizeDx,
     required double? sizeDy,
     required double? positionDx,
     required double? positionDy,
   }) {
-    onVoidCaiDatGlobalState(value: globalState, caiDatUuTien: true);
+    onSetGlobalStateManagementSystem(value: globalStateManagementSystem, caiDatUuTien: true);
     onVoidCaiDatSizeDx(value: sizeDx, caiDatUuTien: true);
     onVoidCaiDatSizeDy(value: sizeDy, caiDatUuTien: true);
     onVoidCaiDatPositionDx(value: positionDx, caiDatUuTien: true);
@@ -251,11 +294,11 @@ abstract class THANHPHANTICHHOPSPRITEANIMATIONTHUOCCAP extends PositionComponent
   /// -----
   /// TODO:
   /// -----
-  SPRITEANIMATIONHASVISIBILITY? _spriteAnimationComponent;
-  SPRITEANIMATIONHASVISIBILITY? get getSpriteAnimationComponent =>
+  SpriteAnimationHasVisibility? _spriteAnimationComponent;
+  SpriteAnimationHasVisibility? get getSpriteAnimationComponent =>
       _spriteAnimationComponent;
   Future<void> onCaiDatSpriteAnimationComponent({
-    required SPRITEANIMATIONHASVISIBILITY? value,
+    required SpriteAnimationHasVisibility? value,
     bool? caiDatUuTien,
   }) async {
     if (caiDatUuTien == true) {
@@ -267,10 +310,10 @@ abstract class THANHPHANTICHHOPSPRITEANIMATIONTHUOCCAP extends PositionComponent
     return;
   }
 
-  THANHPHANGAMEUICOBAN? _thanhPhanGameUI;
-  THANHPHANGAMEUICOBAN? get getThanhPhanGameUI => _thanhPhanGameUI;
+  CoreGameUIComponent? _thanhPhanGameUI;
+  CoreGameUIComponent? get getThanhPhanGameUI => _thanhPhanGameUI;
   Future<void> onCaiDatThanhPhanGameUI({
-    required THANHPHANGAMEUICOBAN? value,
+    required CoreGameUIComponent? value,
     bool? caiDatUuTien,
   }) async {
     if (caiDatUuTien == true) {
@@ -331,11 +374,13 @@ abstract class THANHPHANTICHHOPSPRITEANIMATIONTHUOCCAP extends PositionComponent
     try {
       if (flameGame != null) {
         if (childComponent != null && childComponent.isMounted == false) {
-          await flameGame.add(childComponent);
+          // await flameGame.add(childComponent); // Update v2
+          childComponent.parent = flameGame;
         }
       } else if (parentComponent != null) {
         if (childComponent != null && childComponent.isMounted == false) {
-          await parentComponent.add(childComponent);
+          // await parentComponent.add(childComponent); // Update v2
+          childComponent.parent = parentComponent;
         }
       }
     } catch (e) {
@@ -462,12 +507,12 @@ abstract class THANHPHANTICHHOPSPRITEANIMATIONTHUOCCAP extends PositionComponent
       ).catchError((e) => null),
 
       onCaiDatSpriteAnimationComponent(
-        value: SPRITEANIMATIONHASVISIBILITY(
+        value: SpriteAnimationHasVisibility(
           sizeDx: sizeDx,
           sizeDy: sizeDy,
           positionDx: (getSizeDx ?? 10.0) / 2,
           positionDy: (getSizeDy ?? 10.0) / 2,
-          globalState: getGlobalState,
+          globalStateManagementSystem: getGlobalStateManagementSystem,
         ),
       ).catchError((e) => null),
     ]);

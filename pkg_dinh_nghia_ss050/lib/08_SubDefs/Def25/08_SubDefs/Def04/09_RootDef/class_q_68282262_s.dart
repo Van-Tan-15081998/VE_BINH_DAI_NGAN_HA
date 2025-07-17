@@ -12,7 +12,7 @@
 //   /// -----
 //   @override
 //   Future<void> onAttachRoot({required dynamic attachValue}) async {
-//     if (attachValue is QuanLyTrangThaiTongQuat) {
+//     if (attachValue is GlobalStateManagementSystem) {
 //       ///
 //       await caiDatThietLapTongQuat(value: attachValue.getThietLapTongQuat);
 //       await caiDatTienTrinhTongQuat(value: attachValue.getTienTrinhTongQuat);
@@ -101,7 +101,7 @@
 //   /// -----
 //   @override
 //   Future<void> onAttachRootForSubCom({required dynamic attachValue}) async {
-//     if (attachValue is QuanLyTrangThaiTongQuat) {
+//     if (attachValue is GlobalStateManagementSystem) {
 //       ///
 //     }
 //

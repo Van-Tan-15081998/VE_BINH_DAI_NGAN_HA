@@ -10,7 +10,7 @@ import 'package:pkg_dinh_nghia_ss050/pkg_dinh_nghia_ss050_exp.dart';
 /// TODO: [Khung Thành Phần]
 /// -----
 class KHUNGTHANHPHANNUTBAMCHONTABCUAHANG extends StatefulWidget {
-  final QuanLyTrangThaiTongQuat? trangThaiTongQuat;
+  final GlobalStateManagementSystem? trangThaiTongQuat;
   final double chieuRongKhungThanhPhan;
   final double chieuCaoKhungThanhPhan;
   final VoidCallback? onThucThi;
@@ -162,16 +162,16 @@ class FLAMEGAMEKHUNGTHANHPHANNUTBAMCHONTABCUAHANG extends FlameGame {
   final double chieuRongFlameGameUI;
   final double chieuCaoFlameGameUI;
 
-  FLAMEGAMEKHUNGTHANHPHANNUTBAMCHONTABCUAHANG({QuanLyTrangThaiTongQuat? trangThaiTongQuat, required this.chieuRongFlameGameUI, required this.chieuCaoFlameGameUI}) {
+  FLAMEGAMEKHUNGTHANHPHANNUTBAMCHONTABCUAHANG({GlobalStateManagementSystem? trangThaiTongQuat, required this.chieuRongFlameGameUI, required this.chieuCaoFlameGameUI}) {
     onVoidCaiDatTrangThaiTongQuat(value: trangThaiTongQuat);
   }
 
   /// -----
   /// TODO: Quản Lý Trạng Thái Tổng Quát
   /// -----
-  QuanLyTrangThaiTongQuat? _trangThaiTongQuat;
-  QuanLyTrangThaiTongQuat? get getTrangThaiTongQuat => _trangThaiTongQuat;
-  void onVoidCaiDatTrangThaiTongQuat({required QuanLyTrangThaiTongQuat? value}) {
+  GlobalStateManagementSystem? _trangThaiTongQuat;
+  GlobalStateManagementSystem? get getTrangThaiTongQuat => _trangThaiTongQuat;
+  void onVoidCaiDatTrangThaiTongQuat({required GlobalStateManagementSystem? value}) {
     _trangThaiTongQuat ??= value;
     return;
   }
@@ -221,7 +221,7 @@ class SPRITEGAMEUINUTBAMCHONTABCUAHANGKHONGKICHHOAT extends SpriteAnimationCompo
   final double chieuRongSpriteGameUI;
   final double chieuCaoSpriteGameUI;
 
-  SPRITEGAMEUINUTBAMCHONTABCUAHANGKHONGKICHHOAT({QuanLyTrangThaiTongQuat? trangThaiTongQuat, required this.chieuRongSpriteGameUI, required this.chieuCaoSpriteGameUI}) {
+  SPRITEGAMEUINUTBAMCHONTABCUAHANGKHONGKICHHOAT({GlobalStateManagementSystem? trangThaiTongQuat, required this.chieuRongSpriteGameUI, required this.chieuCaoSpriteGameUI}) {
     onVoidCaiDatTrangThaiTongQuat(value: trangThaiTongQuat);
   }
 
@@ -231,9 +231,9 @@ class SPRITEGAMEUINUTBAMCHONTABCUAHANGKHONGKICHHOAT extends SpriteAnimationCompo
   /// -----
   /// TODO: Quản Lý Trạng Thái Tổng Quát
   /// -----
-  QuanLyTrangThaiTongQuat? _trangThaiTongQuat;
-  QuanLyTrangThaiTongQuat? get getTrangThaiTongQuat => _trangThaiTongQuat;
-  void onVoidCaiDatTrangThaiTongQuat({required QuanLyTrangThaiTongQuat? value}) {
+  GlobalStateManagementSystem? _trangThaiTongQuat;
+  GlobalStateManagementSystem? get getTrangThaiTongQuat => _trangThaiTongQuat;
+  void onVoidCaiDatTrangThaiTongQuat({required GlobalStateManagementSystem? value}) {
     _trangThaiTongQuat ??= value;
     return;
   }
@@ -315,7 +315,7 @@ class SPRITEGAMEUINUTBAMCHONTABCUAHANGKICHHOAT extends SpriteAnimationComponent 
   final double chieuRongSpriteGameUI;
   final double chieuCaoSpriteGameUI;
 
-  SPRITEGAMEUINUTBAMCHONTABCUAHANGKICHHOAT({QuanLyTrangThaiTongQuat? trangThaiTongQuat, required this.chieuRongSpriteGameUI, required this.chieuCaoSpriteGameUI}) {
+  SPRITEGAMEUINUTBAMCHONTABCUAHANGKICHHOAT({GlobalStateManagementSystem? trangThaiTongQuat, required this.chieuRongSpriteGameUI, required this.chieuCaoSpriteGameUI}) {
     onVoidCaiDatTrangThaiTongQuat(value: trangThaiTongQuat);
   }
 
@@ -325,9 +325,9 @@ class SPRITEGAMEUINUTBAMCHONTABCUAHANGKICHHOAT extends SpriteAnimationComponent 
   /// -----
   /// TODO: Quản Lý Trạng Thái Tổng Quát
   /// -----
-  QuanLyTrangThaiTongQuat? _trangThaiTongQuat;
-  QuanLyTrangThaiTongQuat? get getTrangThaiTongQuat => _trangThaiTongQuat;
-  void onVoidCaiDatTrangThaiTongQuat({required QuanLyTrangThaiTongQuat? value}) {
+  GlobalStateManagementSystem? _trangThaiTongQuat;
+  GlobalStateManagementSystem? get getTrangThaiTongQuat => _trangThaiTongQuat;
+  void onVoidCaiDatTrangThaiTongQuat({required GlobalStateManagementSystem? value}) {
     _trangThaiTongQuat ??= value;
     return;
   }

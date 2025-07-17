@@ -10,9 +10,9 @@ class KhungVongLapBangDieuKhienChienDauSS01 extends Component with VongLapThoiGi
   /// -----
   /// TODO:
   /// -----
-  QuanLyTrangThaiTongQuat? _trangThaiTongQuat;
-  QuanLyTrangThaiTongQuat? get getTrangThaiTongQuat => _trangThaiTongQuat;
-  Future<void> caiDatTrangThaiTongQuat({required QuanLyTrangThaiTongQuat? value}) async {
+  GlobalStateManagementSystem? _trangThaiTongQuat;
+  GlobalStateManagementSystem? get getTrangThaiTongQuat => _trangThaiTongQuat;
+  Future<void> caiDatTrangThaiTongQuat({required GlobalStateManagementSystem? value}) async {
     _trangThaiTongQuat ??= value;
     return;
   }
@@ -20,7 +20,7 @@ class KhungVongLapBangDieuKhienChienDauSS01 extends Component with VongLapThoiGi
   /// -----
   /// TODO:
   /// -----
-  KhungVongLapBangDieuKhienChienDauSS01({required QuanLyTrangThaiTongQuat? trangThaiTongQuat}) {
+  KhungVongLapBangDieuKhienChienDauSS01({required GlobalStateManagementSystem? trangThaiTongQuat}) {
     caiDatTrangThaiTongQuat(value: trangThaiTongQuat);
   }
 

@@ -1859,6 +1859,8 @@ class QUANLYTRANGTHAIHANGARPHUONGTIEN with CAUTRUCTHUCTHICOBAN {
     if (getThuocTinhTaiNguyenPhuongTien?.getMapTaiNguyenHinhAnhNgoaiHinh?.isNotEmpty == true && maDinhDanhPhuongTien != null) {
       if (getThuocTinhTaiNguyenPhuongTien?.getMapTaiNguyenHinhAnhNgoaiHinh?[maDinhDanhPhuongTien]?.getDonViHinhAnhSpriteNgoaiHinh?.getSpriteAnimation?.frames.isNotEmpty == true) {
         await donViSprite?.caiDatSpriteAnimation(value: getThuocTinhTaiNguyenPhuongTien?.getMapTaiNguyenHinhAnhNgoaiHinh?[maDinhDanhPhuongTien]?.getDonViHinhAnhSpriteNgoaiHinh?.getSpriteAnimation);
+      } else {
+        await donViSprite?.caiDatSpriteAnimation(value: getThuocTinhTaiNguyenPhuongTien?.getMapTaiNguyenHinhAnhNgoaiHinh?['[MONSTERDSTPCLASSSS00ASS010SS010]']?.getDonViHinhAnhSpriteNgoaiHinh?.getSpriteAnimation);
       }
     }
   }
@@ -1870,10 +1872,16 @@ class QUANLYTRANGTHAIHANGARPHUONGTIEN with CAUTRUCTHUCTHICOBAN {
     //   thuocTinhHinhAnh: getThuocTinhTaiNguyenPhuongTien?.getMapTaiNguyenHinhAnhNgoaiHinh?[maDinhDanhPhuongTien],
     // );
 
-    await getThuocTinhTaiNguyenPhuongTien?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhTheoTuanTu(
+    // await getThuocTinhTaiNguyenPhuongTien?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhTheoTuanTu(
+    //   maDinhDanh: maDinhDanhPhuongTien,
+    //   thuocTinhHinhAnh: getThuocTinhTaiNguyenPhuongTien?.getMapTaiNguyenHinhAnhNgoaiHinh?[maDinhDanhPhuongTien],
+    //   caiDatUuTienKichThuocRS050: true,
+    //   onThucThiHoanTat: () {},
+    // );
+
+    await getThuocTinhTaiNguyenPhuongTien?.onTruyXuatTaiNguyenHinhAnhPhuongTienRS050TheoTuanTu(
       maDinhDanh: maDinhDanhPhuongTien,
       thuocTinhHinhAnh: getThuocTinhTaiNguyenPhuongTien?.getMapTaiNguyenHinhAnhNgoaiHinh?[maDinhDanhPhuongTien],
-      caiDatUuTienKichThuocRS050: true,
       onThucThiHoanTat: () {},
     );
 

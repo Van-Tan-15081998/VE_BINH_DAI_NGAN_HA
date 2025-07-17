@@ -15,7 +15,7 @@ class QuanLyTrangThaiTienTrinhThucThiChienDauGanKetChienDauCo with KhungThucThiC
   /// -----
   @override
   Future<void> onAttachRoot({required dynamic attachValue}) async {
-    if (attachValue is QuanLyTrangThaiTongQuat) {
+    if (attachValue is GlobalStateManagementSystem) {
       ///
     }
 
@@ -73,7 +73,7 @@ class QuanLyTrangThaiTienTrinhThucThiChienDauGanKetChienDauCo with KhungThucThiC
   /// -----
   @override
   Future<void> onAttachRootForSubCom({required dynamic attachValue}) async {
-    if (attachValue is QuanLyTrangThaiTongQuat) {
+    if (attachValue is GlobalStateManagementSystem) {
       ///
     }
     return;

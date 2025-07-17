@@ -9,7 +9,7 @@ class MANHINHBANGDIEUKHIENCHIENDAUFlameEngine extends FlameGame {
   /// TODO:
   /// -----
   MANHINHBANGDIEUKHIENCHIENDAUFlameEngine({
-    required QuanLyTrangThaiTongQuat? trangThaiTongQuat,
+    required GlobalStateManagementSystem? trangThaiTongQuat,
   }) {
     caiDatTrangThaiTongQuat(value: trangThaiTongQuat);
   }
@@ -17,10 +17,10 @@ class MANHINHBANGDIEUKHIENCHIENDAUFlameEngine extends FlameGame {
   /// -----
   /// TODO:
   /// -----
-  QuanLyTrangThaiTongQuat? _trangThaiTongQuat;
-  QuanLyTrangThaiTongQuat? get getTrangThaiTongQuat => _trangThaiTongQuat;
+  GlobalStateManagementSystem? _trangThaiTongQuat;
+  GlobalStateManagementSystem? get getTrangThaiTongQuat => _trangThaiTongQuat;
   Future<void> caiDatTrangThaiTongQuat({
-    required QuanLyTrangThaiTongQuat? value,
+    required GlobalStateManagementSystem? value,
   }) async {
     _trangThaiTongQuat ??= value;
     return;

@@ -4,21 +4,17 @@ import 'package:pkg_khung_man_hinh_ss020000/pkg_khung_man_hinh_ss020000_exp.dart
 /// -----
 /// TODO: Quản Lý Thành Phần Màn Hình Thuộc Cấp Cơ Bản
 /// -----
-abstract class QUANLYTHANHPHANMANHINHTHUOCCAPCOBAN
-    with CAUTRUCTHUCTHICOBAN, KICHBANDIEUKHIENTHUOCCAPCOBAN {
+abstract class QUANLYTHANHPHANMANHINHTHUOCCAPCOBAN with CAUTRUCTHUCTHICOBAN, KICHBANDIEUKHIENTHUOCCAPCOBAN {
   /// -----
   /// TODO:
   /// -----
-  QuanLyTrangThaiTongQuat? _globalState;
-  QuanLyTrangThaiTongQuat? get getGlobalState => _globalState;
-  void onVoidCaiDatGlobalState({
-    required QuanLyTrangThaiTongQuat? value,
-    bool? caiDatUuTien,
-  }) {
+  GlobalStateManagementSystem? _globalStateManagementSystem;
+  GlobalStateManagementSystem? get getGlobalStateManagementSystem => _globalStateManagementSystem;
+  void onSetGlobalStateManagementSystem({required GlobalStateManagementSystem? value, bool? caiDatUuTien}) {
     if (caiDatUuTien == true) {
-      _globalState = value;
+      _globalStateManagementSystem = value;
     } else {
-      _globalState ??= value;
+      _globalStateManagementSystem ??= value;
     }
 
     return;
@@ -29,10 +25,7 @@ abstract class QUANLYTHANHPHANMANHINHTHUOCCAPCOBAN
   /// -----
   KHUNGMANHINHGAMECOSO? _gameController;
   KHUNGMANHINHGAMECOSO? get getGameController => _gameController;
-  void onVoidCaiDatGameController({
-    required KHUNGMANHINHGAMECOSO? value,
-    bool? caiDatUuTien,
-  }) {
+  void onVoidCaiDatGameController({required KHUNGMANHINHGAMECOSO? value, bool? caiDatUuTien}) {
     if (caiDatUuTien == true) {
       _gameController = value;
     } else {
@@ -46,12 +39,8 @@ abstract class QUANLYTHANHPHANMANHINHTHUOCCAPCOBAN
   /// TODO:
   /// -----
   THANHPHANMANHINHTHUOCCAPCOBAN? _thanhPhanQuanLyThuocCapTrucTiep;
-  THANHPHANMANHINHTHUOCCAPCOBAN? get getThanhPhanQuanLyThuocCapTrucTiep =>
-      _thanhPhanQuanLyThuocCapTrucTiep;
-  void onVoidCaiDatThanhPhanQuanLyThuocCapTrucTiep({
-    required THANHPHANMANHINHTHUOCCAPCOBAN? value,
-    bool? caiDatUuTien,
-  }) {
+  THANHPHANMANHINHTHUOCCAPCOBAN? get getThanhPhanQuanLyThuocCapTrucTiep => _thanhPhanQuanLyThuocCapTrucTiep;
+  void onVoidCaiDatThanhPhanQuanLyThuocCapTrucTiep({required THANHPHANMANHINHTHUOCCAPCOBAN? value, bool? caiDatUuTien}) {
     if (caiDatUuTien == true) {
       _thanhPhanQuanLyThuocCapTrucTiep = value;
     } else {
@@ -125,12 +114,8 @@ abstract class QUANLYTHANHPHANMANHINHTHUOCCAPCOBAN
   /// TODO:
   /// -----
   List<THANHPHANMANHINHTHUOCCAPCOBAN?> _danhSachThanhPhanManHinhThuocCap = [];
-  List<THANHPHANMANHINHTHUOCCAPCOBAN?>
-  get getDanhSachThanhPhanManHinhThuocCap => _danhSachThanhPhanManHinhThuocCap;
-  void onVoidCaiDatDanhSachThanhPhanManHinhThuocCap({
-    required List<THANHPHANMANHINHTHUOCCAPCOBAN?> value,
-    bool? caiDatUuTien,
-  }) {
+  List<THANHPHANMANHINHTHUOCCAPCOBAN?> get getDanhSachThanhPhanManHinhThuocCap => _danhSachThanhPhanManHinhThuocCap;
+  void onVoidCaiDatDanhSachThanhPhanManHinhThuocCap({required List<THANHPHANMANHINHTHUOCCAPCOBAN?> value, bool? caiDatUuTien}) {
     if (caiDatUuTien == true) {
       _danhSachThanhPhanManHinhThuocCap = value;
     } else {
@@ -143,15 +128,9 @@ abstract class QUANLYTHANHPHANMANHINHTHUOCCAPCOBAN
   /// -----
   /// TODO:
   /// -----
-  List<THANHPHANMANHINHDRAGTHUOCCAPCOBAN?>
-  _danhSachThanhPhanManHinhDragThuocCap = [];
-  List<THANHPHANMANHINHDRAGTHUOCCAPCOBAN?>
-  get getDanhSachThanhPhanManHinhDragThuocCap =>
-      _danhSachThanhPhanManHinhDragThuocCap;
-  void onVoidCaiDatDanhSachThanhPhanManHinhDragThuocCap({
-    required List<THANHPHANMANHINHDRAGTHUOCCAPCOBAN?> value,
-    bool? caiDatUuTien,
-  }) {
+  List<THANHPHANMANHINHDRAGTHUOCCAPCOBAN?> _danhSachThanhPhanManHinhDragThuocCap = [];
+  List<THANHPHANMANHINHDRAGTHUOCCAPCOBAN?> get getDanhSachThanhPhanManHinhDragThuocCap => _danhSachThanhPhanManHinhDragThuocCap;
+  void onVoidCaiDatDanhSachThanhPhanManHinhDragThuocCap({required List<THANHPHANMANHINHDRAGTHUOCCAPCOBAN?> value, bool? caiDatUuTien}) {
     if (caiDatUuTien == true) {
       _danhSachThanhPhanManHinhDragThuocCap = value;
     } else {
@@ -165,18 +144,15 @@ abstract class QUANLYTHANHPHANMANHINHTHUOCCAPCOBAN
   /// TODO:
   /// -----
   QUANLYTHANHPHANMANHINHTHUOCCAPCOBAN({
-    required QuanLyTrangThaiTongQuat? globalState,
+    required GlobalStateManagementSystem? globalStateManagementSystem,
     required KHUNGMANHINHGAMECOSO? gameController,
     required THANHPHANMANHINHTHUOCCAPCOBAN? thanhPhanQuanLyThuocCapTrucTiep,
     required double? sizeDx,
     required double? sizeDy,
   }) {
-    onVoidCaiDatGlobalState(value: globalState, caiDatUuTien: true);
+    onSetGlobalStateManagementSystem(value: globalStateManagementSystem, caiDatUuTien: true);
     onVoidCaiDatGameController(value: gameController, caiDatUuTien: true);
-    onVoidCaiDatThanhPhanQuanLyThuocCapTrucTiep(
-      value: thanhPhanQuanLyThuocCapTrucTiep,
-      caiDatUuTien: true,
-    );
+    onVoidCaiDatThanhPhanQuanLyThuocCapTrucTiep(value: thanhPhanQuanLyThuocCapTrucTiep, caiDatUuTien: true);
     onVoidCaiDatSizeDx(value: sizeDx, caiDatUuTien: true);
     onVoidCaiDatSizeDy(value: sizeDy, caiDatUuTien: true);
   }
@@ -184,10 +160,7 @@ abstract class QUANLYTHANHPHANMANHINHTHUOCCAPCOBAN
   /// -----
   /// TODO: Add Comp Root
   /// -----
-  Future<void> onAddRoot({
-    required FlameGame? flameGame,
-    required Component? component,
-  }) async {
+  Future<void> onAddRoot({required FlameGame? flameGame, required Component? component}) async {
     /// -----
     /// TODO: Add Comp Root For SubCom
     /// -----
@@ -200,10 +173,7 @@ abstract class QUANLYTHANHPHANMANHINHTHUOCCAPCOBAN
   /// -----
   /// TODO: Add Comp Root For SubCom
   /// -----
-  Future<void> onAddRootForSubCom({
-    required FlameGame? flameGame,
-    required Component? component,
-  }) async {
+  Future<void> onAddRootForSubCom({required FlameGame? flameGame, required Component? component}) async {
     ///
     return;
   }
@@ -211,19 +181,74 @@ abstract class QUANLYTHANHPHANMANHINHTHUOCCAPCOBAN
   /// -----
   /// TODO:
   /// -----
-  Future<void> onAddComponent({
-    required FlameGame? flameGame,
-    required Component? parentComponent,
-    Component? childComponent,
-  }) async {
+  Future<void> onAddComponent({required FlameGame? flameGame, required Component? parentComponent, Component? childComponent}) async {
     try {
       if (flameGame != null) {
         if (childComponent != null && childComponent.isMounted == false) {
-          await flameGame.add(childComponent);
+
+          if (childComponent is THANHPHANMANHINHTHUOCCAPCOBAN) {
+            childComponent.onCaiDatFlameGameParentComponent(value: flameGame);
+          }
+          if (childComponent is THANHPHANMANHINHDRAGTHUOCCAPCOBAN) {
+            childComponent.onCaiDatFlameGameParentComponent(value: flameGame);
+          }
+          if (childComponent is THANHPHANNUTBAMTHUOCCAPTHUANKICHHOAT) {
+            childComponent.onCaiDatFlameGameParentComponent(value: flameGame);
+          }
+          if (childComponent is THANHPHANNUTBAMTICHHOPTHUOCCAP) {
+            childComponent.onCaiDatFlameGameParentComponent(value: flameGame);
+          }
+          if (childComponent is THANHPHANVANBANTHUANTHUOCCAP) {
+            childComponent.onCaiDatFlameGameParentComponent(value: flameGame);
+          }
+          if (childComponent is THANHPHANVANBANSOHOCTHUOCCAP) {
+            childComponent.onCaiDatFlameGameParentComponent(value: flameGame);
+          }
+          if (childComponent is THANHPHANHINHANHBACKGROUNDTHUOCCAP) {
+            childComponent.onCaiDatFlameGameParentComponent(value: flameGame);
+          }
+          if (childComponent is THANHPHANTICHHOPNUTBAMVANBANTHUOCCAP) {
+            childComponent.onCaiDatFlameGameParentComponent(value: flameGame);
+          }
+          if (childComponent is THANHPHANTICHHOPSPRITEANIMATIONVANBANTHUOCCAP) {
+            childComponent.onCaiDatFlameGameParentComponent(value: flameGame);
+          }
+          if (childComponent is THANHPHANTICHHOPSPRITEANIMATIONTHUOCCAP) {
+            childComponent.onCaiDatFlameGameParentComponent(value: flameGame);
+          }
         }
       } else if (parentComponent != null) {
         if (childComponent != null && childComponent.isMounted == false) {
-          await parentComponent.add(childComponent);
+          if (childComponent is THANHPHANMANHINHTHUOCCAPCOBAN) {
+            childComponent.onCaiDatFlameGameParentComponent(value: parentComponent);
+          }
+          if (childComponent is THANHPHANMANHINHDRAGTHUOCCAPCOBAN) {
+            childComponent.onCaiDatFlameGameParentComponent(value: parentComponent);
+          }
+          if (childComponent is THANHPHANNUTBAMTHUOCCAPTHUANKICHHOAT) {
+            childComponent.onCaiDatFlameGameParentComponent(value: parentComponent);
+          }
+          if (childComponent is THANHPHANNUTBAMTICHHOPTHUOCCAP) {
+            childComponent.onCaiDatFlameGameParentComponent(value: parentComponent);
+          }
+          if (childComponent is THANHPHANVANBANTHUANTHUOCCAP) {
+            childComponent.onCaiDatFlameGameParentComponent(value: parentComponent);
+          }
+          if (childComponent is THANHPHANVANBANSOHOCTHUOCCAP) {
+            childComponent.onCaiDatFlameGameParentComponent(value: parentComponent);
+          }
+          if (childComponent is THANHPHANHINHANHBACKGROUNDTHUOCCAP) {
+            childComponent.onCaiDatFlameGameParentComponent(value: parentComponent);
+          }
+          if (childComponent is THANHPHANTICHHOPNUTBAMVANBANTHUOCCAP) {
+            childComponent.onCaiDatFlameGameParentComponent(value: parentComponent);
+          }
+          if (childComponent is THANHPHANTICHHOPSPRITEANIMATIONVANBANTHUOCCAP) {
+            childComponent.onCaiDatFlameGameParentComponent(value: parentComponent);
+          }
+          if (childComponent is THANHPHANTICHHOPSPRITEANIMATIONTHUOCCAP) {
+            childComponent.onCaiDatFlameGameParentComponent(value: parentComponent);
+          }
         }
       }
     } catch (e) {
@@ -231,6 +256,27 @@ abstract class QUANLYTHANHPHANMANHINHTHUOCCAPCOBAN
     }
   }
 
+  // /// -----
+  // /// TODO:
+  // /// -----
+  // Future<void> onAddComponent({required FlameGame? flameGame, required Component? parentComponent, Component? childComponent}) async {
+  //   try { //
+  //     if (flameGame != null) {
+  //       if (childComponent != null && childComponent.isMounted == false) {
+  //         // await flameGame.add(childComponent); // Update v2
+  //         childComponent.parent = flameGame;
+  //       }
+  //     } else if (parentComponent != null) {
+  //       if (childComponent != null && childComponent.isMounted == false) {
+  //         // await parentComponent.add(childComponent); // Update v2
+  //         childComponent.parent = parentComponent;
+  //       }
+  //     }
+  //   } catch (e) {
+  //     /// Ghi log
+  //   }
+  // }
+  
   /// -----
   /// TODO:
   /// -----
@@ -245,12 +291,53 @@ abstract class QUANLYTHANHPHANMANHINHTHUOCCAPCOBAN
   }
 
   /// -----
+  /// TODO:
+  /// -----
+  Future<void> onActiveShowComponent({required Component? childComponent}) async {
+    try {
+        if (childComponent != null && childComponent.isMounted == true) {
+
+          if (childComponent is THANHPHANMANHINHTHUOCCAPCOBAN) {
+            await childComponent.onAddToParent();
+          }
+          if (childComponent is THANHPHANMANHINHDRAGTHUOCCAPCOBAN) {
+            await childComponent.onAddToParent();
+          }
+          if (childComponent is THANHPHANNUTBAMTHUOCCAPTHUANKICHHOAT) {
+            await childComponent.onAddToParent();
+          }
+          if (childComponent is THANHPHANNUTBAMTICHHOPTHUOCCAP) {
+            await childComponent.onAddToParent();
+          }
+          if (childComponent is THANHPHANVANBANTHUANTHUOCCAP) {
+            await childComponent.onAddToParent();
+          }
+          if (childComponent is THANHPHANVANBANSOHOCTHUOCCAP) {
+            await childComponent.onAddToParent();
+          }
+          if (childComponent is THANHPHANHINHANHBACKGROUNDTHUOCCAP) {
+            await childComponent.onAddToParent();
+          }
+          if (childComponent is THANHPHANTICHHOPNUTBAMVANBANTHUOCCAP) {
+            await childComponent.onAddToParent();
+          }
+          if (childComponent is THANHPHANTICHHOPSPRITEANIMATIONVANBANTHUOCCAP) {
+            await childComponent.onAddToParent();
+          }
+          if (childComponent is THANHPHANTICHHOPSPRITEANIMATIONTHUOCCAP) {
+            await childComponent.onAddToParent();
+          }
+
+      }
+    } catch (e) {
+      /// Ghi log
+    }
+  }
+
+  /// -----
   /// TODO: Remove Comp Root
   /// -----
-  Future<void> onRemoveRoot({
-    required FlameGame? flameGame,
-    required Component? component,
-  }) async {
+  Future<void> onRemoveRoot({required FlameGame? flameGame, required Component? component}) async {
     /// -----
     /// TODO: Remove Comp Root For SubCom
     /// -----
@@ -263,10 +350,7 @@ abstract class QUANLYTHANHPHANMANHINHTHUOCCAPCOBAN
   /// -----
   /// TODO: Remove Comp Root For SubCom
   /// -----
-  Future<void> onRemoveRootForSubCom({
-    required FlameGame? flameGame,
-    required Component? component,
-  }) async {
+  Future<void> onRemoveRootForSubCom({required FlameGame? flameGame, required Component? component}) async {
     ///
     return;
   }
@@ -275,10 +359,7 @@ abstract class QUANLYTHANHPHANMANHINHTHUOCCAPCOBAN
   /// TODO: Attach Root
   /// -----
   @override
-  Future<void> onAttachRoot({
-    required dynamic attachValue,
-    bool? isIgnoreAttachRootForSubCom,
-  }) async {
+  Future<void> onAttachRoot({required dynamic attachValue, bool? isIgnoreAttachRootForSubCom}) async {
     try {
       /// -----
       /// TODO:
@@ -287,8 +368,7 @@ abstract class QUANLYTHANHPHANMANHINHTHUOCCAPCOBAN
       /// -----
       /// TODO: Attach Root For SubCom
       /// -----
-      if (isIgnoreAttachRootForSubCom == null ||
-          isIgnoreAttachRootForSubCom == false) {
+      if (isIgnoreAttachRootForSubCom == null || isIgnoreAttachRootForSubCom == false) {
         await onAttachRootForSubCom(attachValue: attachValue);
       }
     } catch (e) {
@@ -311,8 +391,7 @@ abstract class QUANLYTHANHPHANMANHINHTHUOCCAPCOBAN
       /// -----
       /// TODO: Init Root For SubCom
       /// -----
-      if (isIgnoreInitRootForSubCom == null ||
-          isIgnoreInitRootForSubCom == false) {
+      if (isIgnoreInitRootForSubCom == null || isIgnoreInitRootForSubCom == false) {
         await onInitRootForSubCom();
       }
 
@@ -338,8 +417,7 @@ abstract class QUANLYTHANHPHANMANHINHTHUOCCAPCOBAN
       /// -----
       /// TODO: Setup Root For SubCom
       /// -----
-      if (isIgnoreSetupRootForSubCom == null ||
-          isIgnoreSetupRootForSubCom == false) {
+      if (isIgnoreSetupRootForSubCom == null || isIgnoreSetupRootForSubCom == false) {
         await onSetupRootForSubCom();
       }
     } catch (e) {
@@ -363,8 +441,7 @@ abstract class QUANLYTHANHPHANMANHINHTHUOCCAPCOBAN
       /// -----
       /// TODO: Reset Root For SubCom
       /// -----
-      if (isIgnoreResetRootForSubCom == null ||
-          isIgnoreResetRootForSubCom == false) {
+      if (isIgnoreResetRootForSubCom == null || isIgnoreResetRootForSubCom == false) {
         await onResetRootForSubCom();
       }
     } catch (e) {
@@ -456,17 +533,14 @@ abstract class QUANLYTHANHPHANMANHINHTHUOCCAPCOBAN
       /// TODO:
       /// -----
       if (getDanhSachThanhPhanManHinhThuocCap.isNotEmpty == true) {
-        for (THANHPHANMANHINHTHUOCCAPCOBAN? thanhPhan
-            in getDanhSachThanhPhanManHinhThuocCap) {
+        for (THANHPHANMANHINHTHUOCCAPCOBAN? thanhPhan in getDanhSachThanhPhanManHinhThuocCap) {
           await thanhPhan?.onTroVeTrangChu();
         }
       }
 
       ///
     } catch (e) {
-      await onReportRootIssue(
-        nameFunction: 'onTroVeTrangChu',
-      );
+      await onReportRootIssue(nameFunction: 'onTroVeTrangChu');
     }
 
     ///
@@ -482,17 +556,14 @@ abstract class QUANLYTHANHPHANMANHINHTHUOCCAPCOBAN
       /// TODO:
       /// -----
       if (getDanhSachThanhPhanManHinhThuocCap.isNotEmpty == true) {
-        for (THANHPHANMANHINHTHUOCCAPCOBAN? thanhPhan
-            in getDanhSachThanhPhanManHinhThuocCap) {
+        for (THANHPHANMANHINHTHUOCCAPCOBAN? thanhPhan in getDanhSachThanhPhanManHinhThuocCap) {
           await thanhPhan?.onKichHoatKhungManHinhThuocCapTabSS010();
         }
       }
 
       ///
     } catch (e) {
-      await onReportRootIssue(
-        nameFunction: 'onKichHoatKhungManHinhThuocCapTabSS010',
-      );
+      await onReportRootIssue(nameFunction: 'onKichHoatKhungManHinhThuocCapTabSS010');
     }
 
     ///
@@ -508,17 +579,14 @@ abstract class QUANLYTHANHPHANMANHINHTHUOCCAPCOBAN
       /// TODO:
       /// -----
       if (getDanhSachThanhPhanManHinhThuocCap.isNotEmpty == true) {
-        for (THANHPHANMANHINHTHUOCCAPCOBAN? thanhPhan
-            in getDanhSachThanhPhanManHinhThuocCap) {
+        for (THANHPHANMANHINHTHUOCCAPCOBAN? thanhPhan in getDanhSachThanhPhanManHinhThuocCap) {
           await thanhPhan?.onKichHoatKhungManHinhThuocCapTabSS020();
         }
       }
 
       ///
     } catch (e) {
-      await onReportRootIssue(
-        nameFunction: 'onKichHoatKhungManHinhThuocCapTabSS020',
-      );
+      await onReportRootIssue(nameFunction: 'onKichHoatKhungManHinhThuocCapTabSS020');
     }
 
     ///
@@ -534,17 +602,14 @@ abstract class QUANLYTHANHPHANMANHINHTHUOCCAPCOBAN
       /// TODO:
       /// -----
       if (getDanhSachThanhPhanManHinhThuocCap.isNotEmpty == true) {
-        for (THANHPHANMANHINHTHUOCCAPCOBAN? thanhPhan
-            in getDanhSachThanhPhanManHinhThuocCap) {
+        for (THANHPHANMANHINHTHUOCCAPCOBAN? thanhPhan in getDanhSachThanhPhanManHinhThuocCap) {
           await thanhPhan?.onKichHoatKhungManHinhThuocCapTabSS030();
         }
       }
 
       ///
     } catch (e) {
-      await onReportRootIssue(
-        nameFunction: 'onKichHoatKhungManHinhThuocCapTabSS030',
-      );
+      await onReportRootIssue(nameFunction: 'onKichHoatKhungManHinhThuocCapTabSS030');
     }
 
     ///
@@ -560,17 +625,14 @@ abstract class QUANLYTHANHPHANMANHINHTHUOCCAPCOBAN
       /// TODO:
       /// -----
       if (getDanhSachThanhPhanManHinhThuocCap.isNotEmpty == true) {
-        for (THANHPHANMANHINHTHUOCCAPCOBAN? thanhPhan
-            in getDanhSachThanhPhanManHinhThuocCap) {
+        for (THANHPHANMANHINHTHUOCCAPCOBAN? thanhPhan in getDanhSachThanhPhanManHinhThuocCap) {
           await thanhPhan?.onKichHoatKhungManHinhThuocCapTabSS040();
         }
       }
 
       ///
     } catch (e) {
-      await onReportRootIssue(
-        nameFunction: 'onKichHoatKhungManHinhThuocCapTabSS040',
-      );
+      await onReportRootIssue(nameFunction: 'onKichHoatKhungManHinhThuocCapTabSS040');
     }
 
     ///
@@ -586,17 +648,14 @@ abstract class QUANLYTHANHPHANMANHINHTHUOCCAPCOBAN
       /// TODO:
       /// -----
       if (getDanhSachThanhPhanManHinhThuocCap.isNotEmpty == true) {
-        for (THANHPHANMANHINHTHUOCCAPCOBAN? thanhPhan
-            in getDanhSachThanhPhanManHinhThuocCap) {
+        for (THANHPHANMANHINHTHUOCCAPCOBAN? thanhPhan in getDanhSachThanhPhanManHinhThuocCap) {
           await thanhPhan?.onKichHoatKhungManHinhThuocCapTabSS050();
         }
       }
 
       ///
     } catch (e) {
-      await onReportRootIssue(
-        nameFunction: 'onKichHoatKhungManHinhThuocCapTabSS050',
-      );
+      await onReportRootIssue(nameFunction: 'onKichHoatKhungManHinhThuocCapTabSS050');
     }
 
     ///
@@ -612,17 +671,14 @@ abstract class QUANLYTHANHPHANMANHINHTHUOCCAPCOBAN
       /// TODO:
       /// -----
       if (getDanhSachThanhPhanManHinhThuocCap.isNotEmpty == true) {
-        for (THANHPHANMANHINHTHUOCCAPCOBAN? thanhPhan
-            in getDanhSachThanhPhanManHinhThuocCap) {
+        for (THANHPHANMANHINHTHUOCCAPCOBAN? thanhPhan in getDanhSachThanhPhanManHinhThuocCap) {
           await thanhPhan?.onKichHoatKhungManHinhThuocCapLoadingSS010();
         }
       }
 
       ///
     } catch (e) {
-      await onReportRootIssue(
-        nameFunction: 'onKichHoatKhungManHinhThuocCapLoadingSS010',
-      );
+      await onReportRootIssue(nameFunction: 'onKichHoatKhungManHinhThuocCapLoadingSS010');
     }
 
     ///
@@ -638,17 +694,14 @@ abstract class QUANLYTHANHPHANMANHINHTHUOCCAPCOBAN
       /// TODO:
       /// -----
       if (getDanhSachThanhPhanManHinhThuocCap.isNotEmpty == true) {
-        for (THANHPHANMANHINHTHUOCCAPCOBAN? thanhPhan
-            in getDanhSachThanhPhanManHinhThuocCap) {
+        for (THANHPHANMANHINHTHUOCCAPCOBAN? thanhPhan in getDanhSachThanhPhanManHinhThuocCap) {
           await thanhPhan?.onHuyKichHoatKhungManHinhThuocCapLoadingSS010();
         }
       }
 
       ///
     } catch (e) {
-      await onReportRootIssue(
-        nameFunction: 'onHuyKichHoatKhungManHinhThuocCapLoadingSS010',
-      );
+      await onReportRootIssue(nameFunction: 'onHuyKichHoatKhungManHinhThuocCapLoadingSS010');
     }
 
     ///
@@ -664,17 +717,14 @@ abstract class QUANLYTHANHPHANMANHINHTHUOCCAPCOBAN
       /// TODO:
       /// -----
       if (getDanhSachThanhPhanManHinhThuocCap.isNotEmpty == true) {
-        for (THANHPHANMANHINHTHUOCCAPCOBAN? thanhPhan
-            in getDanhSachThanhPhanManHinhThuocCap) {
+        for (THANHPHANMANHINHTHUOCCAPCOBAN? thanhPhan in getDanhSachThanhPhanManHinhThuocCap) {
           await thanhPhan?.onKichHoatKhungManHinhThuocCapLoadingSS020();
         }
       }
 
       ///
     } catch (e) {
-      await onReportRootIssue(
-        nameFunction: 'onKichHoatKhungManHinhThuocCapLoadingSS020',
-      );
+      await onReportRootIssue(nameFunction: 'onKichHoatKhungManHinhThuocCapLoadingSS020');
     }
 
     ///
@@ -690,17 +740,14 @@ abstract class QUANLYTHANHPHANMANHINHTHUOCCAPCOBAN
       /// TODO:
       /// -----
       if (getDanhSachThanhPhanManHinhThuocCap.isNotEmpty == true) {
-        for (THANHPHANMANHINHTHUOCCAPCOBAN? thanhPhan
-            in getDanhSachThanhPhanManHinhThuocCap) {
+        for (THANHPHANMANHINHTHUOCCAPCOBAN? thanhPhan in getDanhSachThanhPhanManHinhThuocCap) {
           await thanhPhan?.onHuyKichHoatKhungManHinhThuocCapLoadingSS020();
         }
       }
 
       ///
     } catch (e) {
-      await onReportRootIssue(
-        nameFunction: 'onHuyKichHoatKhungManHinhThuocCapLoadingSS020',
-      );
+      await onReportRootIssue(nameFunction: 'onHuyKichHoatKhungManHinhThuocCapLoadingSS020');
     }
 
     ///
@@ -716,17 +763,14 @@ abstract class QUANLYTHANHPHANMANHINHTHUOCCAPCOBAN
       /// TODO:
       /// -----
       if (getDanhSachThanhPhanManHinhThuocCap.isNotEmpty == true) {
-        for (THANHPHANMANHINHTHUOCCAPCOBAN? thanhPhan
-            in getDanhSachThanhPhanManHinhThuocCap) {
+        for (THANHPHANMANHINHTHUOCCAPCOBAN? thanhPhan in getDanhSachThanhPhanManHinhThuocCap) {
           await thanhPhan?.onKichHoatKhungManHinhThuocCapSS300100();
         }
       }
 
       ///
     } catch (e) {
-      await onReportRootIssue(
-        nameFunction: 'onKichHoatKhungManHinhThuocCapSS300100',
-      );
+      await onReportRootIssue(nameFunction: 'onKichHoatKhungManHinhThuocCapSS300100');
     }
 
     ///
@@ -742,17 +786,14 @@ abstract class QUANLYTHANHPHANMANHINHTHUOCCAPCOBAN
       /// TODO:
       /// -----
       if (getDanhSachThanhPhanManHinhThuocCap.isNotEmpty == true) {
-        for (THANHPHANMANHINHTHUOCCAPCOBAN? thanhPhan
-            in getDanhSachThanhPhanManHinhThuocCap) {
+        for (THANHPHANMANHINHTHUOCCAPCOBAN? thanhPhan in getDanhSachThanhPhanManHinhThuocCap) {
           await thanhPhan?.onHuyKichHoatKhungManHinhThuocCapSS300100();
         }
       }
 
       ///
     } catch (e) {
-      await onReportRootIssue(
-        nameFunction: 'onHuyKichHoatKhungManHinhThuocCapSS300100',
-      );
+      await onReportRootIssue(nameFunction: 'onHuyKichHoatKhungManHinhThuocCapSS300100');
     }
 
     ///
@@ -768,17 +809,14 @@ abstract class QUANLYTHANHPHANMANHINHTHUOCCAPCOBAN
       /// TODO:
       /// -----
       if (getDanhSachThanhPhanManHinhThuocCap.isNotEmpty == true) {
-        for (THANHPHANMANHINHTHUOCCAPCOBAN? thanhPhan
-            in getDanhSachThanhPhanManHinhThuocCap) {
+        for (THANHPHANMANHINHTHUOCCAPCOBAN? thanhPhan in getDanhSachThanhPhanManHinhThuocCap) {
           await thanhPhan?.onKichHoatKhungManHinhThuocCapSS300200();
         }
       }
 
       ///
     } catch (e) {
-      await onReportRootIssue(
-        nameFunction: 'onKichHoatKhungManHinhThuocCapSS300200',
-      );
+      await onReportRootIssue(nameFunction: 'onKichHoatKhungManHinhThuocCapSS300200');
     }
 
     ///
@@ -794,17 +832,14 @@ abstract class QUANLYTHANHPHANMANHINHTHUOCCAPCOBAN
       /// TODO:
       /// -----
       if (getDanhSachThanhPhanManHinhThuocCap.isNotEmpty == true) {
-        for (THANHPHANMANHINHTHUOCCAPCOBAN? thanhPhan
-            in getDanhSachThanhPhanManHinhThuocCap) {
+        for (THANHPHANMANHINHTHUOCCAPCOBAN? thanhPhan in getDanhSachThanhPhanManHinhThuocCap) {
           await thanhPhan?.onHuyKichHoatKhungManHinhThuocCapSS300200();
         }
       }
 
       ///
     } catch (e) {
-      await onReportRootIssue(
-        nameFunction: 'onHuyKichHoatKhungManHinhThuocCapSS300200',
-      );
+      await onReportRootIssue(nameFunction: 'onHuyKichHoatKhungManHinhThuocCapSS300200');
     }
 
     ///
@@ -820,17 +855,14 @@ abstract class QUANLYTHANHPHANMANHINHTHUOCCAPCOBAN
       /// TODO:
       /// -----
       if (getDanhSachThanhPhanManHinhThuocCap.isNotEmpty == true) {
-        for (THANHPHANMANHINHTHUOCCAPCOBAN? thanhPhan
-            in getDanhSachThanhPhanManHinhThuocCap) {
+        for (THANHPHANMANHINHTHUOCCAPCOBAN? thanhPhan in getDanhSachThanhPhanManHinhThuocCap) {
           await thanhPhan?.onKichHoatKhungManHinhThuocCapSS300300();
         }
       }
 
       ///
     } catch (e) {
-      await onReportRootIssue(
-        nameFunction: 'onKichHoatKhungManHinhThuocCapSS300300',
-      );
+      await onReportRootIssue(nameFunction: 'onKichHoatKhungManHinhThuocCapSS300300');
     }
 
     ///
@@ -846,17 +878,14 @@ abstract class QUANLYTHANHPHANMANHINHTHUOCCAPCOBAN
       /// TODO:
       /// -----
       if (getDanhSachThanhPhanManHinhThuocCap.isNotEmpty == true) {
-        for (THANHPHANMANHINHTHUOCCAPCOBAN? thanhPhan
-            in getDanhSachThanhPhanManHinhThuocCap) {
+        for (THANHPHANMANHINHTHUOCCAPCOBAN? thanhPhan in getDanhSachThanhPhanManHinhThuocCap) {
           await thanhPhan?.onHuyKichHoatKhungManHinhThuocCapSS300300();
         }
       }
 
       ///
     } catch (e) {
-      await onReportRootIssue(
-        nameFunction: 'onHuyKichHoatKhungManHinhThuocCapSS300300',
-      );
+      await onReportRootIssue(nameFunction: 'onHuyKichHoatKhungManHinhThuocCapSS300300');
     }
 
     ///
@@ -872,17 +901,14 @@ abstract class QUANLYTHANHPHANMANHINHTHUOCCAPCOBAN
       /// TODO:
       /// -----
       if (getDanhSachThanhPhanManHinhThuocCap.isNotEmpty == true) {
-        for (THANHPHANMANHINHTHUOCCAPCOBAN? thanhPhan
-            in getDanhSachThanhPhanManHinhThuocCap) {
+        for (THANHPHANMANHINHTHUOCCAPCOBAN? thanhPhan in getDanhSachThanhPhanManHinhThuocCap) {
           await thanhPhan?.onKichHoatKhungManHinhThuocCapSS300400ChienThang();
         }
       }
 
       ///
     } catch (e) {
-      await onReportRootIssue(
-        nameFunction: 'onKichHoatKhungManHinhThuocCapSS300400ChienThang',
-      );
+      await onReportRootIssue(nameFunction: 'onKichHoatKhungManHinhThuocCapSS300400ChienThang');
     }
 
     ///
@@ -898,17 +924,14 @@ abstract class QUANLYTHANHPHANMANHINHTHUOCCAPCOBAN
       /// TODO:
       /// -----
       if (getDanhSachThanhPhanManHinhThuocCap.isNotEmpty == true) {
-        for (THANHPHANMANHINHTHUOCCAPCOBAN? thanhPhan
-            in getDanhSachThanhPhanManHinhThuocCap) {
+        for (THANHPHANMANHINHTHUOCCAPCOBAN? thanhPhan in getDanhSachThanhPhanManHinhThuocCap) {
           await thanhPhan?.onHuyKichHoatKhungManHinhThuocCapSS300400ChienThang();
         }
       }
 
       ///
     } catch (e) {
-      await onReportRootIssue(
-        nameFunction: 'onHuyKichHoatKhungManHinhThuocCapSS300400ChienThang',
-      );
+      await onReportRootIssue(nameFunction: 'onHuyKichHoatKhungManHinhThuocCapSS300400ChienThang');
     }
 
     ///
@@ -924,17 +947,14 @@ abstract class QUANLYTHANHPHANMANHINHTHUOCCAPCOBAN
       /// TODO:
       /// -----
       if (getDanhSachThanhPhanManHinhThuocCap.isNotEmpty == true) {
-        for (THANHPHANMANHINHTHUOCCAPCOBAN? thanhPhan
-            in getDanhSachThanhPhanManHinhThuocCap) {
+        for (THANHPHANMANHINHTHUOCCAPCOBAN? thanhPhan in getDanhSachThanhPhanManHinhThuocCap) {
           await thanhPhan?.onKichHoatKhungManHinhThuocCapSS300500();
         }
       }
 
       ///
     } catch (e) {
-      await onReportRootIssue(
-        nameFunction: 'onKichHoatKhungManHinhThuocCapSS300500',
-      );
+      await onReportRootIssue(nameFunction: 'onKichHoatKhungManHinhThuocCapSS300500');
     }
 
     ///
@@ -950,17 +970,14 @@ abstract class QUANLYTHANHPHANMANHINHTHUOCCAPCOBAN
       /// TODO:
       /// -----
       if (getDanhSachThanhPhanManHinhThuocCap.isNotEmpty == true) {
-        for (THANHPHANMANHINHTHUOCCAPCOBAN? thanhPhan
-            in getDanhSachThanhPhanManHinhThuocCap) {
+        for (THANHPHANMANHINHTHUOCCAPCOBAN? thanhPhan in getDanhSachThanhPhanManHinhThuocCap) {
           await thanhPhan?.onHuyKichHoatKhungManHinhThuocCapSS300500();
         }
       }
 
       ///
     } catch (e) {
-      await onReportRootIssue(
-        nameFunction: 'onHuyKichHoatKhungManHinhThuocCapSS300500',
-      );
+      await onReportRootIssue(nameFunction: 'onHuyKichHoatKhungManHinhThuocCapSS300500');
     }
 
     ///
@@ -976,17 +993,14 @@ abstract class QUANLYTHANHPHANMANHINHTHUOCCAPCOBAN
       /// TODO:
       /// -----
       if (getDanhSachThanhPhanManHinhThuocCap.isNotEmpty == true) {
-        for (THANHPHANMANHINHTHUOCCAPCOBAN? thanhPhan
-            in getDanhSachThanhPhanManHinhThuocCap) {
+        for (THANHPHANMANHINHTHUOCCAPCOBAN? thanhPhan in getDanhSachThanhPhanManHinhThuocCap) {
           await thanhPhan?.onKichHoatKhungManHinhThuocCapSS223100();
         }
       }
 
       ///
     } catch (e) {
-      await onReportRootIssue(
-        nameFunction: 'onKichHoatKhungManHinhThuocCapSS223100',
-      );
+      await onReportRootIssue(nameFunction: 'onKichHoatKhungManHinhThuocCapSS223100');
     }
 
     ///
@@ -1002,17 +1016,14 @@ abstract class QUANLYTHANHPHANMANHINHTHUOCCAPCOBAN
       /// TODO:
       /// -----
       if (getDanhSachThanhPhanManHinhThuocCap.isNotEmpty == true) {
-        for (THANHPHANMANHINHTHUOCCAPCOBAN? thanhPhan
-            in getDanhSachThanhPhanManHinhThuocCap) {
+        for (THANHPHANMANHINHTHUOCCAPCOBAN? thanhPhan in getDanhSachThanhPhanManHinhThuocCap) {
           await thanhPhan?.onHuyKichHoatKhungManHinhThuocCapSS223100();
         }
       }
 
       ///
     } catch (e) {
-      await onReportRootIssue(
-        nameFunction: 'onHuyKichHoatKhungManHinhThuocCapSS223100',
-      );
+      await onReportRootIssue(nameFunction: 'onHuyKichHoatKhungManHinhThuocCapSS223100');
     }
 
     ///
@@ -1028,17 +1039,14 @@ abstract class QUANLYTHANHPHANMANHINHTHUOCCAPCOBAN
       /// TODO:
       /// -----
       if (getDanhSachThanhPhanManHinhThuocCap.isNotEmpty == true) {
-        for (THANHPHANMANHINHTHUOCCAPCOBAN? thanhPhan
-            in getDanhSachThanhPhanManHinhThuocCap) {
+        for (THANHPHANMANHINHTHUOCCAPCOBAN? thanhPhan in getDanhSachThanhPhanManHinhThuocCap) {
           await thanhPhan?.onKichHoatKhungManHinhThuocCapSS223200();
         }
       }
 
       ///
     } catch (e) {
-      await onReportRootIssue(
-        nameFunction: 'onKichHoatKhungManHinhThuocCapSS223200',
-      );
+      await onReportRootIssue(nameFunction: 'onKichHoatKhungManHinhThuocCapSS223200');
     }
 
     ///
@@ -1054,17 +1062,14 @@ abstract class QUANLYTHANHPHANMANHINHTHUOCCAPCOBAN
       /// TODO:
       /// -----
       if (getDanhSachThanhPhanManHinhThuocCap.isNotEmpty == true) {
-        for (THANHPHANMANHINHTHUOCCAPCOBAN? thanhPhan
-            in getDanhSachThanhPhanManHinhThuocCap) {
+        for (THANHPHANMANHINHTHUOCCAPCOBAN? thanhPhan in getDanhSachThanhPhanManHinhThuocCap) {
           await thanhPhan?.onHuyKichHoatKhungManHinhThuocCapSS223200();
         }
       }
 
       ///
     } catch (e) {
-      await onReportRootIssue(
-        nameFunction: 'onHuyKichHoatKhungManHinhThuocCapSS223200',
-      );
+      await onReportRootIssue(nameFunction: 'onHuyKichHoatKhungManHinhThuocCapSS223200');
     }
 
     ///
@@ -1088,8 +1093,7 @@ abstract class QUANLYTHANHPHANMANHINHTHUOCCAPCOBAN
       /// TODO:
       /// -----
       if (getDanhSachThanhPhanManHinhThuocCap.isNotEmpty == true) {
-        for (THANHPHANMANHINHTHUOCCAPCOBAN? thanhPhan
-            in getDanhSachThanhPhanManHinhThuocCap) {
+        for (THANHPHANMANHINHTHUOCCAPCOBAN? thanhPhan in getDanhSachThanhPhanManHinhThuocCap) {
           await thanhPhan?.onChonChiDinhChienDauCo00E03SS01();
         }
       }
@@ -1112,8 +1116,7 @@ abstract class QUANLYTHANHPHANMANHINHTHUOCCAPCOBAN
       /// TODO:
       /// -----
       if (getDanhSachThanhPhanManHinhThuocCap.isNotEmpty == true) {
-        for (THANHPHANMANHINHTHUOCCAPCOBAN? thanhPhan
-            in getDanhSachThanhPhanManHinhThuocCap) {
+        for (THANHPHANMANHINHTHUOCCAPCOBAN? thanhPhan in getDanhSachThanhPhanManHinhThuocCap) {
           await thanhPhan?.onChonChiDinhChienDauCo00E03SS02();
         }
       }
@@ -1136,8 +1139,7 @@ abstract class QUANLYTHANHPHANMANHINHTHUOCCAPCOBAN
       /// TODO:
       /// -----
       if (getDanhSachThanhPhanManHinhThuocCap.isNotEmpty == true) {
-        for (THANHPHANMANHINHTHUOCCAPCOBAN? thanhPhan
-            in getDanhSachThanhPhanManHinhThuocCap) {
+        for (THANHPHANMANHINHTHUOCCAPCOBAN? thanhPhan in getDanhSachThanhPhanManHinhThuocCap) {
           await thanhPhan?.onChonChiDinhChienDauCo00E03SS03();
         }
       }
@@ -1160,8 +1162,7 @@ abstract class QUANLYTHANHPHANMANHINHTHUOCCAPCOBAN
       /// TODO:
       /// -----
       if (getDanhSachThanhPhanManHinhThuocCap.isNotEmpty == true) {
-        for (THANHPHANMANHINHTHUOCCAPCOBAN? thanhPhan
-            in getDanhSachThanhPhanManHinhThuocCap) {
+        for (THANHPHANMANHINHTHUOCCAPCOBAN? thanhPhan in getDanhSachThanhPhanManHinhThuocCap) {
           await thanhPhan?.onChonChiDinhChienDauCo00D04SS01();
         }
       }
@@ -1184,8 +1185,7 @@ abstract class QUANLYTHANHPHANMANHINHTHUOCCAPCOBAN
       /// TODO:
       /// -----
       if (getDanhSachThanhPhanManHinhThuocCap.isNotEmpty == true) {
-        for (THANHPHANMANHINHTHUOCCAPCOBAN? thanhPhan
-            in getDanhSachThanhPhanManHinhThuocCap) {
+        for (THANHPHANMANHINHTHUOCCAPCOBAN? thanhPhan in getDanhSachThanhPhanManHinhThuocCap) {
           await thanhPhan?.onChonChiDinhChienDauCo00C05SS01();
         }
       }
@@ -1208,8 +1208,7 @@ abstract class QUANLYTHANHPHANMANHINHTHUOCCAPCOBAN
       /// TODO:
       /// -----
       if (getDanhSachThanhPhanManHinhThuocCap.isNotEmpty == true) {
-        for (THANHPHANMANHINHTHUOCCAPCOBAN? thanhPhan
-            in getDanhSachThanhPhanManHinhThuocCap) {
+        for (THANHPHANMANHINHTHUOCCAPCOBAN? thanhPhan in getDanhSachThanhPhanManHinhThuocCap) {
           await thanhPhan?.onChonChiDinhChienDauCo00B06SS01();
         }
       }
@@ -1232,8 +1231,7 @@ abstract class QUANLYTHANHPHANMANHINHTHUOCCAPCOBAN
       /// TODO:
       /// -----
       if (getDanhSachThanhPhanManHinhThuocCap.isNotEmpty == true) {
-        for (THANHPHANMANHINHTHUOCCAPCOBAN? thanhPhan
-            in getDanhSachThanhPhanManHinhThuocCap) {
+        for (THANHPHANMANHINHTHUOCCAPCOBAN? thanhPhan in getDanhSachThanhPhanManHinhThuocCap) {
           await thanhPhan?.onChonChiDinhChienDauCo00A07SS01();
         }
       }
@@ -1256,8 +1254,7 @@ abstract class QUANLYTHANHPHANMANHINHTHUOCCAPCOBAN
       /// TODO:
       /// -----
       if (getDanhSachThanhPhanManHinhThuocCap.isNotEmpty == true) {
-        for (THANHPHANMANHINHTHUOCCAPCOBAN? thanhPhan
-            in getDanhSachThanhPhanManHinhThuocCap) {
+        for (THANHPHANMANHINHTHUOCCAPCOBAN? thanhPhan in getDanhSachThanhPhanManHinhThuocCap) {
           await thanhPhan?.onChonChiDinhChienDauCo00S08SS01();
         }
       }
@@ -1280,8 +1277,7 @@ abstract class QUANLYTHANHPHANMANHINHTHUOCCAPCOBAN
       /// TODO:
       /// -----
       if (getDanhSachThanhPhanManHinhThuocCap.isNotEmpty == true) {
-        for (THANHPHANMANHINHTHUOCCAPCOBAN? thanhPhan
-            in getDanhSachThanhPhanManHinhThuocCap) {
+        for (THANHPHANMANHINHTHUOCCAPCOBAN? thanhPhan in getDanhSachThanhPhanManHinhThuocCap) {
           await thanhPhan?.onChonChiDinhChienDauCo0SS09SS01();
         }
       }
@@ -1304,8 +1300,7 @@ abstract class QUANLYTHANHPHANMANHINHTHUOCCAPCOBAN
       /// TODO:
       /// -----
       if (getDanhSachThanhPhanManHinhThuocCap.isNotEmpty == true) {
-        for (THANHPHANMANHINHTHUOCCAPCOBAN? thanhPhan
-            in getDanhSachThanhPhanManHinhThuocCap) {
+        for (THANHPHANMANHINHTHUOCCAPCOBAN? thanhPhan in getDanhSachThanhPhanManHinhThuocCap) {
           await thanhPhan?.onChonChiDinhChienDauCo0SS09SS02();
         }
       }
@@ -1328,8 +1323,7 @@ abstract class QUANLYTHANHPHANMANHINHTHUOCCAPCOBAN
       /// TODO:
       /// -----
       if (getDanhSachThanhPhanManHinhThuocCap.isNotEmpty == true) {
-        for (THANHPHANMANHINHTHUOCCAPCOBAN? thanhPhan
-            in getDanhSachThanhPhanManHinhThuocCap) {
+        for (THANHPHANMANHINHTHUOCCAPCOBAN? thanhPhan in getDanhSachThanhPhanManHinhThuocCap) {
           await thanhPhan?.onChonChiDinhChienDauCo0SS09SS03();
         }
       }
@@ -1352,8 +1346,7 @@ abstract class QUANLYTHANHPHANMANHINHTHUOCCAPCOBAN
       /// TODO:
       /// -----
       if (getDanhSachThanhPhanManHinhThuocCap.isNotEmpty == true) {
-        for (THANHPHANMANHINHTHUOCCAPCOBAN? thanhPhan
-            in getDanhSachThanhPhanManHinhThuocCap) {
+        for (THANHPHANMANHINHTHUOCCAPCOBAN? thanhPhan in getDanhSachThanhPhanManHinhThuocCap) {
           await thanhPhan?.onChonChiDinhChienDauCoSSS10SS01();
         }
       }
@@ -1376,8 +1369,7 @@ abstract class QUANLYTHANHPHANMANHINHTHUOCCAPCOBAN
       /// TODO:
       /// -----
       if (getDanhSachThanhPhanManHinhThuocCap.isNotEmpty == true) {
-        for (THANHPHANMANHINHTHUOCCAPCOBAN? thanhPhan
-            in getDanhSachThanhPhanManHinhThuocCap) {
+        for (THANHPHANMANHINHTHUOCCAPCOBAN? thanhPhan in getDanhSachThanhPhanManHinhThuocCap) {
           await thanhPhan?.onChonChiDinhChienDauCoSSS10SS02();
         }
       }
@@ -1400,8 +1392,7 @@ abstract class QUANLYTHANHPHANMANHINHTHUOCCAPCOBAN
       /// TODO:
       /// -----
       if (getDanhSachThanhPhanManHinhThuocCap.isNotEmpty == true) {
-        for (THANHPHANMANHINHTHUOCCAPCOBAN? thanhPhan
-            in getDanhSachThanhPhanManHinhThuocCap) {
+        for (THANHPHANMANHINHTHUOCCAPCOBAN? thanhPhan in getDanhSachThanhPhanManHinhThuocCap) {
           await thanhPhan?.onChonChiDinhChienDauCoSSS10SS03();
         }
       }
@@ -1424,8 +1415,7 @@ abstract class QUANLYTHANHPHANMANHINHTHUOCCAPCOBAN
       /// TODO:
       /// -----
       if (getDanhSachThanhPhanManHinhThuocCap.isNotEmpty == true) {
-        for (THANHPHANMANHINHTHUOCCAPCOBAN? thanhPhan
-            in getDanhSachThanhPhanManHinhThuocCap) {
+        for (THANHPHANMANHINHTHUOCCAPCOBAN? thanhPhan in getDanhSachThanhPhanManHinhThuocCap) {
           await thanhPhan?.onChonChiDinhChienDauCoSSS10SS04();
         }
       }
@@ -1448,8 +1438,7 @@ abstract class QUANLYTHANHPHANMANHINHTHUOCCAPCOBAN
       /// TODO:
       /// -----
       if (getDanhSachThanhPhanManHinhThuocCap.isNotEmpty == true) {
-        for (THANHPHANMANHINHTHUOCCAPCOBAN? thanhPhan
-            in getDanhSachThanhPhanManHinhThuocCap) {
+        for (THANHPHANMANHINHTHUOCCAPCOBAN? thanhPhan in getDanhSachThanhPhanManHinhThuocCap) {
           await thanhPhan?.onChonChiDinhChienDauCoSSS10SS05();
         }
       }
@@ -1481,17 +1470,14 @@ abstract class QUANLYTHANHPHANMANHINHTHUOCCAPCOBAN
       /// TODO:
       /// -----
       if (getDanhSachThanhPhanManHinhThuocCap.isNotEmpty == true) {
-        for (THANHPHANMANHINHTHUOCCAPCOBAN? thanhPhan
-            in getDanhSachThanhPhanManHinhThuocCap) {
+        for (THANHPHANMANHINHTHUOCCAPCOBAN? thanhPhan in getDanhSachThanhPhanManHinhThuocCap) {
           await thanhPhan?.onChonChiDinhNhiemVuChienDauSS00A001MAPSS00A();
         }
       }
 
       ///
     } catch (e) {
-      await onReportRootIssue(
-        nameFunction: 'onChonChiDinhNhiemVuChienDauSS00A001MAPSS00A',
-      );
+      await onReportRootIssue(nameFunction: 'onChonChiDinhNhiemVuChienDauSS00A001MAPSS00A');
     }
 
     ///
@@ -1508,17 +1494,14 @@ abstract class QUANLYTHANHPHANMANHINHTHUOCCAPCOBAN
       /// TODO:
       /// -----
       if (getDanhSachThanhPhanManHinhThuocCap.isNotEmpty == true) {
-        for (THANHPHANMANHINHTHUOCCAPCOBAN? thanhPhan
-            in getDanhSachThanhPhanManHinhThuocCap) {
+        for (THANHPHANMANHINHTHUOCCAPCOBAN? thanhPhan in getDanhSachThanhPhanManHinhThuocCap) {
           await thanhPhan?.onChonChiDinhNhiemVuChienDauSS00A002MAPSS00A();
         }
       }
 
       ///
     } catch (e) {
-      await onReportRootIssue(
-        nameFunction: 'onChonChiDinhNhiemVuChienDauSS00A002MAPSS00A',
-      );
+      await onReportRootIssue(nameFunction: 'onChonChiDinhNhiemVuChienDauSS00A002MAPSS00A');
     }
 
     ///
@@ -1535,17 +1518,14 @@ abstract class QUANLYTHANHPHANMANHINHTHUOCCAPCOBAN
       /// TODO:
       /// -----
       if (getDanhSachThanhPhanManHinhThuocCap.isNotEmpty == true) {
-        for (THANHPHANMANHINHTHUOCCAPCOBAN? thanhPhan
-            in getDanhSachThanhPhanManHinhThuocCap) {
+        for (THANHPHANMANHINHTHUOCCAPCOBAN? thanhPhan in getDanhSachThanhPhanManHinhThuocCap) {
           await thanhPhan?.onChonChiDinhNhiemVuChienDauSS00A003MAPSS00A();
         }
       }
 
       ///
     } catch (e) {
-      await onReportRootIssue(
-        nameFunction: 'onChonChiDinhNhiemVuChienDauSS00A003MAPSS00A',
-      );
+      await onReportRootIssue(nameFunction: 'onChonChiDinhNhiemVuChienDauSS00A003MAPSS00A');
     }
 
     ///
@@ -1562,17 +1542,14 @@ abstract class QUANLYTHANHPHANMANHINHTHUOCCAPCOBAN
       /// TODO:
       /// -----
       if (getDanhSachThanhPhanManHinhThuocCap.isNotEmpty == true) {
-        for (THANHPHANMANHINHTHUOCCAPCOBAN? thanhPhan
-            in getDanhSachThanhPhanManHinhThuocCap) {
+        for (THANHPHANMANHINHTHUOCCAPCOBAN? thanhPhan in getDanhSachThanhPhanManHinhThuocCap) {
           await thanhPhan?.onChonChiDinhNhiemVuChienDauSS00A004MAPSS00A();
         }
       }
 
       ///
     } catch (e) {
-      await onReportRootIssue(
-        nameFunction: 'onChonChiDinhNhiemVuChienDauSS00A004MAPSS00A',
-      );
+      await onReportRootIssue(nameFunction: 'onChonChiDinhNhiemVuChienDauSS00A004MAPSS00A');
     }
 
     ///
@@ -1589,17 +1566,14 @@ abstract class QUANLYTHANHPHANMANHINHTHUOCCAPCOBAN
       /// TODO:
       /// -----
       if (getDanhSachThanhPhanManHinhThuocCap.isNotEmpty == true) {
-        for (THANHPHANMANHINHTHUOCCAPCOBAN? thanhPhan
-            in getDanhSachThanhPhanManHinhThuocCap) {
+        for (THANHPHANMANHINHTHUOCCAPCOBAN? thanhPhan in getDanhSachThanhPhanManHinhThuocCap) {
           await thanhPhan?.onChonChiDinhNhiemVuChienDauSS00A005MAPSS00A();
         }
       }
 
       ///
     } catch (e) {
-      await onReportRootIssue(
-        nameFunction: 'onChonChiDinhNhiemVuChienDauSS00A005MAPSS00A',
-      );
+      await onReportRootIssue(nameFunction: 'onChonChiDinhNhiemVuChienDauSS00A005MAPSS00A');
     }
 
     ///
@@ -1616,17 +1590,14 @@ abstract class QUANLYTHANHPHANMANHINHTHUOCCAPCOBAN
       /// TODO:
       /// -----
       if (getDanhSachThanhPhanManHinhThuocCap.isNotEmpty == true) {
-        for (THANHPHANMANHINHTHUOCCAPCOBAN? thanhPhan
-            in getDanhSachThanhPhanManHinhThuocCap) {
+        for (THANHPHANMANHINHTHUOCCAPCOBAN? thanhPhan in getDanhSachThanhPhanManHinhThuocCap) {
           await thanhPhan?.onChonChiDinhNhiemVuChienDauSS00A006MAPSS00A();
         }
       }
 
       ///
     } catch (e) {
-      await onReportRootIssue(
-        nameFunction: 'onChonChiDinhNhiemVuChienDauSS00A006MAPSS00A',
-      );
+      await onReportRootIssue(nameFunction: 'onChonChiDinhNhiemVuChienDauSS00A006MAPSS00A');
     }
 
     ///
@@ -1643,17 +1614,14 @@ abstract class QUANLYTHANHPHANMANHINHTHUOCCAPCOBAN
       /// TODO:
       /// -----
       if (getDanhSachThanhPhanManHinhThuocCap.isNotEmpty == true) {
-        for (THANHPHANMANHINHTHUOCCAPCOBAN? thanhPhan
-            in getDanhSachThanhPhanManHinhThuocCap) {
+        for (THANHPHANMANHINHTHUOCCAPCOBAN? thanhPhan in getDanhSachThanhPhanManHinhThuocCap) {
           await thanhPhan?.onChonChiDinhNhiemVuChienDauSS00A007MAPSS00A();
         }
       }
 
       ///
     } catch (e) {
-      await onReportRootIssue(
-        nameFunction: 'onChonChiDinhNhiemVuChienDauSS00A007MAPSS00A',
-      );
+      await onReportRootIssue(nameFunction: 'onChonChiDinhNhiemVuChienDauSS00A007MAPSS00A');
     }
 
     ///
@@ -1670,17 +1638,14 @@ abstract class QUANLYTHANHPHANMANHINHTHUOCCAPCOBAN
       /// TODO:
       /// -----
       if (getDanhSachThanhPhanManHinhThuocCap.isNotEmpty == true) {
-        for (THANHPHANMANHINHTHUOCCAPCOBAN? thanhPhan
-            in getDanhSachThanhPhanManHinhThuocCap) {
+        for (THANHPHANMANHINHTHUOCCAPCOBAN? thanhPhan in getDanhSachThanhPhanManHinhThuocCap) {
           await thanhPhan?.onChonChiDinhNhiemVuChienDauSS00A008MAPSS00A();
         }
       }
 
       ///
     } catch (e) {
-      await onReportRootIssue(
-        nameFunction: 'onChonChiDinhNhiemVuChienDauSS00A008MAPSS00A',
-      );
+      await onReportRootIssue(nameFunction: 'onChonChiDinhNhiemVuChienDauSS00A008MAPSS00A');
     }
 
     ///
@@ -1697,17 +1662,14 @@ abstract class QUANLYTHANHPHANMANHINHTHUOCCAPCOBAN
       /// TODO:
       /// -----
       if (getDanhSachThanhPhanManHinhThuocCap.isNotEmpty == true) {
-        for (THANHPHANMANHINHTHUOCCAPCOBAN? thanhPhan
-            in getDanhSachThanhPhanManHinhThuocCap) {
+        for (THANHPHANMANHINHTHUOCCAPCOBAN? thanhPhan in getDanhSachThanhPhanManHinhThuocCap) {
           await thanhPhan?.onChonChiDinhNhiemVuChienDauSS00A009MAPSS00A();
         }
       }
 
       ///
     } catch (e) {
-      await onReportRootIssue(
-        nameFunction: 'onChonChiDinhNhiemVuChienDauSS00A009MAPSS00A',
-      );
+      await onReportRootIssue(nameFunction: 'onChonChiDinhNhiemVuChienDauSS00A009MAPSS00A');
     }
 
     ///
@@ -1724,17 +1686,14 @@ abstract class QUANLYTHANHPHANMANHINHTHUOCCAPCOBAN
       /// TODO:
       /// -----
       if (getDanhSachThanhPhanManHinhThuocCap.isNotEmpty == true) {
-        for (THANHPHANMANHINHTHUOCCAPCOBAN? thanhPhan
-            in getDanhSachThanhPhanManHinhThuocCap) {
+        for (THANHPHANMANHINHTHUOCCAPCOBAN? thanhPhan in getDanhSachThanhPhanManHinhThuocCap) {
           await thanhPhan?.onChonChiDinhNhiemVuChienDauSS00A010MAPSS00A();
         }
       }
 
       ///
     } catch (e) {
-      await onReportRootIssue(
-        nameFunction: 'onChonChiDinhNhiemVuChienDauSS00A010MAPSS00A',
-      );
+      await onReportRootIssue(nameFunction: 'onChonChiDinhNhiemVuChienDauSS00A010MAPSS00A');
     }
 
     ///
@@ -1751,17 +1710,14 @@ abstract class QUANLYTHANHPHANMANHINHTHUOCCAPCOBAN
       /// TODO:
       /// -----
       if (getDanhSachThanhPhanManHinhThuocCap.isNotEmpty == true) {
-        for (THANHPHANMANHINHTHUOCCAPCOBAN? thanhPhan
-            in getDanhSachThanhPhanManHinhThuocCap) {
+        for (THANHPHANMANHINHTHUOCCAPCOBAN? thanhPhan in getDanhSachThanhPhanManHinhThuocCap) {
           await thanhPhan?.onChonChiDinhNhiemVuChienDauSS00A011MAPSS00A();
         }
       }
 
       ///
     } catch (e) {
-      await onReportRootIssue(
-        nameFunction: 'onChonChiDinhNhiemVuChienDauSS00A011MAPSS00A',
-      );
+      await onReportRootIssue(nameFunction: 'onChonChiDinhNhiemVuChienDauSS00A011MAPSS00A');
     }
 
     ///
@@ -1778,17 +1734,14 @@ abstract class QUANLYTHANHPHANMANHINHTHUOCCAPCOBAN
       /// TODO:
       /// -----
       if (getDanhSachThanhPhanManHinhThuocCap.isNotEmpty == true) {
-        for (THANHPHANMANHINHTHUOCCAPCOBAN? thanhPhan
-            in getDanhSachThanhPhanManHinhThuocCap) {
+        for (THANHPHANMANHINHTHUOCCAPCOBAN? thanhPhan in getDanhSachThanhPhanManHinhThuocCap) {
           await thanhPhan?.onChonChiDinhNhiemVuChienDauSS00A012MAPSS00A();
         }
       }
 
       ///
     } catch (e) {
-      await onReportRootIssue(
-        nameFunction: 'onChonChiDinhNhiemVuChienDauSS00A012MAPSS00A',
-      );
+      await onReportRootIssue(nameFunction: 'onChonChiDinhNhiemVuChienDauSS00A012MAPSS00A');
     }
 
     ///
@@ -1805,17 +1758,14 @@ abstract class QUANLYTHANHPHANMANHINHTHUOCCAPCOBAN
       /// TODO:
       /// -----
       if (getDanhSachThanhPhanManHinhThuocCap.isNotEmpty == true) {
-        for (THANHPHANMANHINHTHUOCCAPCOBAN? thanhPhan
-            in getDanhSachThanhPhanManHinhThuocCap) {
+        for (THANHPHANMANHINHTHUOCCAPCOBAN? thanhPhan in getDanhSachThanhPhanManHinhThuocCap) {
           await thanhPhan?.onChonChiDinhNhiemVuChienDauSS00A013MAPSS00A();
         }
       }
 
       ///
     } catch (e) {
-      await onReportRootIssue(
-        nameFunction: 'onChonChiDinhNhiemVuChienDauSS00A013MAPSS00A',
-      );
+      await onReportRootIssue(nameFunction: 'onChonChiDinhNhiemVuChienDauSS00A013MAPSS00A');
     }
 
     ///
@@ -1832,17 +1782,14 @@ abstract class QUANLYTHANHPHANMANHINHTHUOCCAPCOBAN
       /// TODO:
       /// -----
       if (getDanhSachThanhPhanManHinhThuocCap.isNotEmpty == true) {
-        for (THANHPHANMANHINHTHUOCCAPCOBAN? thanhPhan
-            in getDanhSachThanhPhanManHinhThuocCap) {
+        for (THANHPHANMANHINHTHUOCCAPCOBAN? thanhPhan in getDanhSachThanhPhanManHinhThuocCap) {
           await thanhPhan?.onChonChiDinhNhiemVuChienDauSS00A014MAPSS00A();
         }
       }
 
       ///
     } catch (e) {
-      await onReportRootIssue(
-        nameFunction: 'onChonChiDinhNhiemVuChienDauSS00A014MAPSS00A',
-      );
+      await onReportRootIssue(nameFunction: 'onChonChiDinhNhiemVuChienDauSS00A014MAPSS00A');
     }
 
     ///
@@ -1859,17 +1806,14 @@ abstract class QUANLYTHANHPHANMANHINHTHUOCCAPCOBAN
       /// TODO:
       /// -----
       if (getDanhSachThanhPhanManHinhThuocCap.isNotEmpty == true) {
-        for (THANHPHANMANHINHTHUOCCAPCOBAN? thanhPhan
-            in getDanhSachThanhPhanManHinhThuocCap) {
+        for (THANHPHANMANHINHTHUOCCAPCOBAN? thanhPhan in getDanhSachThanhPhanManHinhThuocCap) {
           await thanhPhan?.onChonChiDinhNhiemVuChienDauSS00A015MAPSS00A();
         }
       }
 
       ///
     } catch (e) {
-      await onReportRootIssue(
-        nameFunction: 'onChonChiDinhNhiemVuChienDauSS00A015MAPSS00A',
-      );
+      await onReportRootIssue(nameFunction: 'onChonChiDinhNhiemVuChienDauSS00A015MAPSS00A');
     }
 
     ///
@@ -1886,17 +1830,14 @@ abstract class QUANLYTHANHPHANMANHINHTHUOCCAPCOBAN
       /// TODO:
       /// -----
       if (getDanhSachThanhPhanManHinhThuocCap.isNotEmpty == true) {
-        for (THANHPHANMANHINHTHUOCCAPCOBAN? thanhPhan
-            in getDanhSachThanhPhanManHinhThuocCap) {
+        for (THANHPHANMANHINHTHUOCCAPCOBAN? thanhPhan in getDanhSachThanhPhanManHinhThuocCap) {
           await thanhPhan?.onChonChiDinhNhiemVuChienDauSS00A016MAPSS00A();
         }
       }
 
       ///
     } catch (e) {
-      await onReportRootIssue(
-        nameFunction: 'onChonChiDinhNhiemVuChienDauSS00A016MAPSS00A',
-      );
+      await onReportRootIssue(nameFunction: 'onChonChiDinhNhiemVuChienDauSS00A016MAPSS00A');
     }
 
     ///
@@ -1913,17 +1854,14 @@ abstract class QUANLYTHANHPHANMANHINHTHUOCCAPCOBAN
       /// TODO:
       /// -----
       if (getDanhSachThanhPhanManHinhThuocCap.isNotEmpty == true) {
-        for (THANHPHANMANHINHTHUOCCAPCOBAN? thanhPhan
-            in getDanhSachThanhPhanManHinhThuocCap) {
+        for (THANHPHANMANHINHTHUOCCAPCOBAN? thanhPhan in getDanhSachThanhPhanManHinhThuocCap) {
           await thanhPhan?.onChonChiDinhNhiemVuChienDauSS00A017MAPSS00A();
         }
       }
 
       ///
     } catch (e) {
-      await onReportRootIssue(
-        nameFunction: 'onChonChiDinhNhiemVuChienDauSS00A017MAPSS00A',
-      );
+      await onReportRootIssue(nameFunction: 'onChonChiDinhNhiemVuChienDauSS00A017MAPSS00A');
     }
 
     ///
@@ -1940,17 +1878,14 @@ abstract class QUANLYTHANHPHANMANHINHTHUOCCAPCOBAN
       /// TODO:
       /// -----
       if (getDanhSachThanhPhanManHinhThuocCap.isNotEmpty == true) {
-        for (THANHPHANMANHINHTHUOCCAPCOBAN? thanhPhan
-            in getDanhSachThanhPhanManHinhThuocCap) {
+        for (THANHPHANMANHINHTHUOCCAPCOBAN? thanhPhan in getDanhSachThanhPhanManHinhThuocCap) {
           await thanhPhan?.onChonChiDinhNhiemVuChienDauSS00A018MAPSS00A();
         }
       }
 
       ///
     } catch (e) {
-      await onReportRootIssue(
-        nameFunction: 'onChonChiDinhNhiemVuChienDauSS00A018MAPSS00A',
-      );
+      await onReportRootIssue(nameFunction: 'onChonChiDinhNhiemVuChienDauSS00A018MAPSS00A');
     }
 
     ///
@@ -1967,17 +1902,14 @@ abstract class QUANLYTHANHPHANMANHINHTHUOCCAPCOBAN
       /// TODO:
       /// -----
       if (getDanhSachThanhPhanManHinhThuocCap.isNotEmpty == true) {
-        for (THANHPHANMANHINHTHUOCCAPCOBAN? thanhPhan
-            in getDanhSachThanhPhanManHinhThuocCap) {
+        for (THANHPHANMANHINHTHUOCCAPCOBAN? thanhPhan in getDanhSachThanhPhanManHinhThuocCap) {
           await thanhPhan?.onChonChiDinhNhiemVuChienDauSS00A019MAPSS00A();
         }
       }
 
       ///
     } catch (e) {
-      await onReportRootIssue(
-        nameFunction: 'onChonChiDinhNhiemVuChienDauSS00A019MAPSS00A',
-      );
+      await onReportRootIssue(nameFunction: 'onChonChiDinhNhiemVuChienDauSS00A019MAPSS00A');
     }
 
     ///
@@ -1994,17 +1926,14 @@ abstract class QUANLYTHANHPHANMANHINHTHUOCCAPCOBAN
       /// TODO:
       /// -----
       if (getDanhSachThanhPhanManHinhThuocCap.isNotEmpty == true) {
-        for (THANHPHANMANHINHTHUOCCAPCOBAN? thanhPhan
-            in getDanhSachThanhPhanManHinhThuocCap) {
+        for (THANHPHANMANHINHTHUOCCAPCOBAN? thanhPhan in getDanhSachThanhPhanManHinhThuocCap) {
           await thanhPhan?.onChonChiDinhNhiemVuChienDauSS00A020MAPSS00A();
         }
       }
 
       ///
     } catch (e) {
-      await onReportRootIssue(
-        nameFunction: 'onChonChiDinhNhiemVuChienDauSS00A020MAPSS00A',
-      );
+      await onReportRootIssue(nameFunction: 'onChonChiDinhNhiemVuChienDauSS00A020MAPSS00A');
     }
 
     ///
@@ -2021,17 +1950,14 @@ abstract class QUANLYTHANHPHANMANHINHTHUOCCAPCOBAN
       /// TODO:
       /// -----
       if (getDanhSachThanhPhanManHinhThuocCap.isNotEmpty == true) {
-        for (THANHPHANMANHINHTHUOCCAPCOBAN? thanhPhan
-            in getDanhSachThanhPhanManHinhThuocCap) {
+        for (THANHPHANMANHINHTHUOCCAPCOBAN? thanhPhan in getDanhSachThanhPhanManHinhThuocCap) {
           await thanhPhan?.onChonChiDinhNhiemVuChienDauSS00A021MAPSS00A();
         }
       }
 
       ///
     } catch (e) {
-      await onReportRootIssue(
-        nameFunction: 'onChonChiDinhNhiemVuChienDauSS00A021MAPSS00A',
-      );
+      await onReportRootIssue(nameFunction: 'onChonChiDinhNhiemVuChienDauSS00A021MAPSS00A');
     }
 
     ///
@@ -2048,17 +1974,14 @@ abstract class QUANLYTHANHPHANMANHINHTHUOCCAPCOBAN
       /// TODO:
       /// -----
       if (getDanhSachThanhPhanManHinhThuocCap.isNotEmpty == true) {
-        for (THANHPHANMANHINHTHUOCCAPCOBAN? thanhPhan
-            in getDanhSachThanhPhanManHinhThuocCap) {
+        for (THANHPHANMANHINHTHUOCCAPCOBAN? thanhPhan in getDanhSachThanhPhanManHinhThuocCap) {
           await thanhPhan?.onChonChiDinhNhiemVuChienDauSS00A022MAPSS00A();
         }
       }
 
       ///
     } catch (e) {
-      await onReportRootIssue(
-        nameFunction: 'onChonChiDinhNhiemVuChienDauSS00A022MAPSS00A',
-      );
+      await onReportRootIssue(nameFunction: 'onChonChiDinhNhiemVuChienDauSS00A022MAPSS00A');
     }
 
     ///
@@ -2075,17 +1998,14 @@ abstract class QUANLYTHANHPHANMANHINHTHUOCCAPCOBAN
       /// TODO:
       /// -----
       if (getDanhSachThanhPhanManHinhThuocCap.isNotEmpty == true) {
-        for (THANHPHANMANHINHTHUOCCAPCOBAN? thanhPhan
-            in getDanhSachThanhPhanManHinhThuocCap) {
+        for (THANHPHANMANHINHTHUOCCAPCOBAN? thanhPhan in getDanhSachThanhPhanManHinhThuocCap) {
           await thanhPhan?.onChonChiDinhNhiemVuChienDauSS00A023MAPSS00A();
         }
       }
 
       ///
     } catch (e) {
-      await onReportRootIssue(
-        nameFunction: 'onChonChiDinhNhiemVuChienDauSS00A023MAPSS00A',
-      );
+      await onReportRootIssue(nameFunction: 'onChonChiDinhNhiemVuChienDauSS00A023MAPSS00A');
     }
 
     ///
@@ -2102,17 +2022,14 @@ abstract class QUANLYTHANHPHANMANHINHTHUOCCAPCOBAN
       /// TODO:
       /// -----
       if (getDanhSachThanhPhanManHinhThuocCap.isNotEmpty == true) {
-        for (THANHPHANMANHINHTHUOCCAPCOBAN? thanhPhan
-            in getDanhSachThanhPhanManHinhThuocCap) {
+        for (THANHPHANMANHINHTHUOCCAPCOBAN? thanhPhan in getDanhSachThanhPhanManHinhThuocCap) {
           await thanhPhan?.onChonChiDinhNhiemVuChienDauSS00A024MAPSS00A();
         }
       }
 
       ///
     } catch (e) {
-      await onReportRootIssue(
-        nameFunction: 'onChonChiDinhNhiemVuChienDauSS00A024MAPSS00A',
-      );
+      await onReportRootIssue(nameFunction: 'onChonChiDinhNhiemVuChienDauSS00A024MAPSS00A');
     }
 
     ///
@@ -2129,17 +2046,14 @@ abstract class QUANLYTHANHPHANMANHINHTHUOCCAPCOBAN
       /// TODO:
       /// -----
       if (getDanhSachThanhPhanManHinhThuocCap.isNotEmpty == true) {
-        for (THANHPHANMANHINHTHUOCCAPCOBAN? thanhPhan
-            in getDanhSachThanhPhanManHinhThuocCap) {
+        for (THANHPHANMANHINHTHUOCCAPCOBAN? thanhPhan in getDanhSachThanhPhanManHinhThuocCap) {
           await thanhPhan?.onChonChiDinhNhiemVuChienDauSS00A025MAPSS00A();
         }
       }
 
       ///
     } catch (e) {
-      await onReportRootIssue(
-        nameFunction: 'onChonChiDinhNhiemVuChienDauSS00A025MAPSS00A',
-      );
+      await onReportRootIssue(nameFunction: 'onChonChiDinhNhiemVuChienDauSS00A025MAPSS00A');
     }
 
     ///
@@ -2156,16 +2070,12 @@ abstract class QUANLYTHANHPHANMANHINHTHUOCCAPCOBAN
       /// TODO:
       /// -----
       if (getDanhSachThanhPhanManHinhThuocCap.isNotEmpty == true) {
-        for (THANHPHANMANHINHTHUOCCAPCOBAN? thanhPhan
-        in getDanhSachThanhPhanManHinhThuocCap) {
+        for (THANHPHANMANHINHTHUOCCAPCOBAN? thanhPhan in getDanhSachThanhPhanManHinhThuocCap) {
           await thanhPhan?.onChonChiDinhCaiDatChatLuongDoHoaThap();
         }
       }
-
     } catch (e) {
-      await onReportRootIssue(
-        nameFunction: 'onChonChiDinhCaiDatChatLuongDoHoaThap',
-      );
+      await onReportRootIssue(nameFunction: 'onChonChiDinhCaiDatChatLuongDoHoaThap');
     }
 
     ///
@@ -2182,16 +2092,12 @@ abstract class QUANLYTHANHPHANMANHINHTHUOCCAPCOBAN
       /// TODO:
       /// -----
       if (getDanhSachThanhPhanManHinhThuocCap.isNotEmpty == true) {
-        for (THANHPHANMANHINHTHUOCCAPCOBAN? thanhPhan
-        in getDanhSachThanhPhanManHinhThuocCap) {
+        for (THANHPHANMANHINHTHUOCCAPCOBAN? thanhPhan in getDanhSachThanhPhanManHinhThuocCap) {
           await thanhPhan?.onChonChiDinhCaiDatChatLuongDoHoaCao();
         }
       }
-
     } catch (e) {
-      await onReportRootIssue(
-        nameFunction: 'onChonChiDinhCaiDatChatLuongDoHoaCao',
-      );
+      await onReportRootIssue(nameFunction: 'onChonChiDinhCaiDatChatLuongDoHoaCao');
     }
 
     ///

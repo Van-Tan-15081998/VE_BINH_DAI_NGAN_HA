@@ -3,7 +3,7 @@ import 'package:pkg_dinh_nghia_ss022/pkg_dinh_nghia_ss022_exp.dart';
 ///
 /// TODO: [GAMEUI] Nút Bấm Quay Về
 ///
-class GAMEUINUTBAMQUAYVE extends THANHPHANGAMEUICOBAN {
+class GAMEUINUTBAMQUAYVE extends CoreGameUIComponent {
   static const String maDinhDanhGameUI = '[GAMEUI]_[GAMEUINUTBAMQUAYVE]';
 
   /// -----

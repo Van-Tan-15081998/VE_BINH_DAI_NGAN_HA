@@ -27,7 +27,7 @@ class MoHinhPhuongTienTongQuat with CauTrucThucThiCoBan {
   /// -----
   @override
   Future<void> onAttachRoot({required dynamic attachValue}) async {
-    if (attachValue is QuanLyTrangThaiTongQuat) {
+    if (attachValue is GlobalStateManagementSystem) {
       // await caiDatQuanLyTrangThaiDanhSachMoHinh(value: attachValue.getDanhSachMoHinhTongQuat);
       // await caiDatDieuKhienTinhToanTongQuat(value: attachValue.getDieuKhienTinhToanTongQuat);
 
@@ -470,7 +470,7 @@ class MoHinhPhuongTienTongQuat with CauTrucThucThiCoBan {
     getDuLieuJsonLamPhang['[KICH_HOAT_HOAT_DONG]'] = true;
 
     await getSpritePhuongTien?.onAddToParent();
-    await getSpriteChiSoPhuongTien?.onAddToParent(); // Mở Comment
+    // await getSpriteChiSoPhuongTien?.onAddToParent(); // Mở Comment
 
     ///
     return;

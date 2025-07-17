@@ -3,7 +3,7 @@ import 'package:pkg_dinh_nghia_ss022/pkg_dinh_nghia_ss022_exp.dart';
 ///
 /// TODO: [GAMEUI]
 ///
-class GAMEUICARDCHIENDAUCOKICHHOAT extends THANHPHANGAMEUICOBAN {
+class GAMEUICARDCHIENDAUCOKICHHOAT extends CoreGameUIComponent {
   static const String maDinhDanhGameUI = '[GAMEUI]_[GAMEUICARDCHIENDAUCOKICHHOAT]';
 
   /// -----

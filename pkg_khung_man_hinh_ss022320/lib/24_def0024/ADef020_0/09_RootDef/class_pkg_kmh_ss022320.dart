@@ -14,7 +14,7 @@ class KHUNGMANHINHSS022320 extends THANHPHANMANHINHTHUOCCAPCOBAN {
   /// TODO:
   /// -----
   KHUNGMANHINHSS022320({
-    required super.globalState,
+    required super.globalStateManagementSystem,
     required super.gameController,
     required super.thanhPhanQuanLyThuocCapTrucTiep,
     required super.sizeDx,
@@ -57,7 +57,7 @@ class KHUNGMANHINHSS022320 extends THANHPHANMANHINHTHUOCCAPCOBAN {
     await Future.wait([
       onCaiDatQuanLyThanhPhanManHinhThuocCap(
         value: QUANLYTHANHPHANMANHINHTHUOCCAP(
-          globalState: getGlobalState,
+          globalStateManagementSystem: getGlobalStateManagementSystem,
           gameController: getGameController,
           thanhPhanQuanLyThuocCapTrucTiep: getThanhPhanQuanLyThuocCapTrucTiep,
           sizeDx: getSizeDx,
@@ -66,7 +66,7 @@ class KHUNGMANHINHSS022320 extends THANHPHANMANHINHTHUOCCAPCOBAN {
       ).catchError((e) => null),
       onCaiDatQuanLyThanhPhanNutBamThuocCap(
         value: QUANLYTHANHPHANNUTBAMTHUOCCAP(
-          globalState: getGlobalState,
+          globalStateManagementSystem: getGlobalStateManagementSystem,
           gameController: getGameController,
           thanhPhanQuanLyThuocCapTrucTiep: getThanhPhanQuanLyThuocCapTrucTiep,
           sizeDx: getSizeDx,
@@ -75,7 +75,7 @@ class KHUNGMANHINHSS022320 extends THANHPHANMANHINHTHUOCCAPCOBAN {
       ).catchError((e) => null),
       onCaiDatQuanLyThanhPhanVanBanThuocCap(
         value: QUANLYTHANHPHANVANBANTHUOCCAP(
-          globalState: getGlobalState,
+          globalStateManagementSystem: getGlobalStateManagementSystem,
           gameController: getGameController,
           thanhPhanQuanLyThuocCapTrucTiep: getThanhPhanQuanLyThuocCapTrucTiep,
           sizeDx: getSizeDx,
@@ -84,7 +84,7 @@ class KHUNGMANHINHSS022320 extends THANHPHANMANHINHTHUOCCAPCOBAN {
       ).catchError((e) => null),
       onCaiDatQuanLyThanhPhanHinhAnhThuocCap(
         value: QUANLYTHANHPHANHINHANHTHUOCCAP(
-          globalState: getGlobalState,
+          globalStateManagementSystem: getGlobalStateManagementSystem,
           gameController: getGameController,
           thanhPhanQuanLyThuocCapTrucTiep: getThanhPhanQuanLyThuocCapTrucTiep,
           sizeDx: getSizeDx,
@@ -93,7 +93,7 @@ class KHUNGMANHINHSS022320 extends THANHPHANMANHINHTHUOCCAPCOBAN {
       ).catchError((e) => null),
       onCaiDatQuanLyThanhPhanTichHopThuocCap(
         value: QUANLYTHANHPHANTICHHOPTHUOCCAP(
-          globalState: getGlobalState,
+          globalStateManagementSystem: getGlobalStateManagementSystem,
           gameController: getGameController,
           thanhPhanQuanLyThuocCapTrucTiep: getThanhPhanQuanLyThuocCapTrucTiep,
           sizeDx: getSizeDx,
@@ -121,11 +121,11 @@ class KHUNGMANHINHSS022320 extends THANHPHANMANHINHTHUOCCAPCOBAN {
     /// -----
     double sizeDxManHinhVatLy =
         getSizeDx ??
-        getGlobalState?.getThietLapTongQuat?.getChieuRongManHinhVatLy ??
+        getGlobalStateManagementSystem?.getThietLapTongQuat?.getChieuRongManHinhVatLy ??
         100.0;
     double sizeDyManHinhVatLy =
         getSizeDy ??
-        getGlobalState?.getThietLapTongQuat?.getChieuCaoManHinhVatLy ??
+        getGlobalStateManagementSystem?.getThietLapTongQuat?.getChieuCaoManHinhVatLy ??
         100.0;
 
     getTrangThaiKichHoatThanhPhan?.getDiemToaDoThanhPhanHuyKichHoat

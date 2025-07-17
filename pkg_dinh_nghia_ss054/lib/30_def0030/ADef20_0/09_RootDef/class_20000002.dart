@@ -14,7 +14,7 @@ class TinhToanSatThuongHuongDenPhuongTien with CauTrucThucThiCoBan, DanhSachQuan
   /// -----
   @override
   Future<void> onAttachRoot({required dynamic attachValue}) async {
-    if (attachValue is QuanLyTrangThaiTongQuat) {
+    if (attachValue is GlobalStateManagementSystem) {
       await caiDatDichVuMayPhatAmThanh(value: attachValue.getDichVuMayPhatAmThanh);
 
       await caiDatSuKienVaChamTrongChienDau(value: attachValue.getSuKienVaChamTrongChienDau);
@@ -74,7 +74,7 @@ class TinhToanSatThuongHuongDenPhuongTien with CauTrucThucThiCoBan, DanhSachQuan
   /// -----
   @override
   Future<void> onAttachRootForSubCom({required dynamic attachValue}) async {
-    if (attachValue is QuanLyTrangThaiTongQuat) {
+    if (attachValue is GlobalStateManagementSystem) {
       ///
     }
 
@@ -165,7 +165,7 @@ class TinhToanSatThuongHuongDenPhuongTien with CauTrucThucThiCoBan, DanhSachQuan
             ?.getChiSoTheoCapDo
             ?.onTangCuong05PhanTramChiSoMauToiDaVanHanh();
 
-        // await getGlobalState?.getChienDauCoTongQuat
+        // await getGlobalStateManagementSystem?.getChienDauCoTongQuat
         //     ?.getChienDauCoTrucTiepThucThiChienDau
         //     ?.getTrangThai
         //     ?.getMoHinh
@@ -190,7 +190,7 @@ class TinhToanSatThuongHuongDenPhuongTien with CauTrucThucThiCoBan, DanhSachQuan
              ?.getChiSoTheoCapDo
              ?.onTangCuong05PhanTramChiSoSatThuongVanHanh();
 
-         // await getGlobalState?.getChienDauCoTongQuat
+         // await getGlobalStateManagementSystem?.getChienDauCoTongQuat
          //     ?.getChienDauCoTrucTiepThucThiChienDau
          //     ?.getTrangThai
          //     ?.getMoHinh

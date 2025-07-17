@@ -12,7 +12,7 @@ abstract class SPRITEVIENDANTANCONGXAMCHIEMCOBAN extends SpriteAnimationComponen
   /// -----
   /// TODO:
   /// -----
-  SPRITEVIENDANTANCONGXAMCHIEMCOBAN({required QuanLyTrangThaiTongQuat? trangThaiTongQuat}) {
+  SPRITEVIENDANTANCONGXAMCHIEMCOBAN({required GlobalStateManagementSystem? trangThaiTongQuat}) {
     caiDatTrangThaiTongQuat(value: trangThaiTongQuat);
   }
 
@@ -39,9 +39,9 @@ abstract class SPRITEVIENDANTANCONGXAMCHIEMCOBAN extends SpriteAnimationComponen
   /// -----
   /// TODO: Quản Lý Trạng Thái Tổng Quát
   /// -----
-  QuanLyTrangThaiTongQuat? _trangThaiTongQuat;
-  QuanLyTrangThaiTongQuat? get getTrangThaiTongQuat => _trangThaiTongQuat;
-  Future<void> caiDatTrangThaiTongQuat({required QuanLyTrangThaiTongQuat? value}) async {
+  GlobalStateManagementSystem? _trangThaiTongQuat;
+  GlobalStateManagementSystem? get getTrangThaiTongQuat => _trangThaiTongQuat;
+  Future<void> caiDatTrangThaiTongQuat({required GlobalStateManagementSystem? value}) async {
     _trangThaiTongQuat ??= value;
     return;
   }

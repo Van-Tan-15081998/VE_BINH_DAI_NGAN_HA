@@ -138,8 +138,4 @@ export 'Hangar/Def27/08_SubDefs/Def04/09_RootDef/class_c_26226006.dart';
 export 'Hangar/Def27/08_SubDefs/Def05/09_RootDef/class_c_40648064.dart';
 
 
-/// A Calculator.
-class Calculator {
-  /// Returns [value] plus 1.
-  int addOne(int value) => value + 1;
-}
+

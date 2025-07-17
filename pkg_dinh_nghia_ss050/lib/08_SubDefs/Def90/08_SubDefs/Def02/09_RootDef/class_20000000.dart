@@ -10,7 +10,7 @@ class DANHSACHVIENDANCHIENDAUCOHOATDONG with CauTrucThucThiCoBan, DanhSachQuanLy
   /// -----
   @override
   Future<void> onAttachRoot({required dynamic attachValue}) async {
-    if (attachValue is QuanLyTrangThaiTongQuat) {
+    if (attachValue is GlobalStateManagementSystem) {
       await caiDatChienDauCoChienDauTongQuat(value: attachValue.getChienDauCoChienDauTongQuat);
 
       ///
@@ -186,7 +186,7 @@ class DANHSACHVIENDANCHIENDAUCOHOATDONG with CauTrucThucThiCoBan, DanhSachQuanLy
   /// -----
   @override
   Future<void> onAttachRootForSubCom({required dynamic attachValue}) async {
-    if (attachValue is QuanLyTrangThaiTongQuat) {
+    if (attachValue is GlobalStateManagementSystem) {
       ///
     }
 

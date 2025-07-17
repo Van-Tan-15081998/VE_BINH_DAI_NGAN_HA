@@ -12,7 +12,7 @@ class QUANLYTHANHPHANHINHANHKHUNGMANHINHCHINH
   /// TODO:
   /// -----
   QUANLYTHANHPHANHINHANHKHUNGMANHINHCHINH({
-    required super.globalState,
+    required super.globalStateManagementSystem,
     required super.gameController,
     required super.thanhPhanQuanLyThuocCapTrucTiep,
     required super.sizeDx,
@@ -108,15 +108,15 @@ class QUANLYTHANHPHANHINHANHKHUNGMANHINHCHINH
       /// TODO:
       /// -----
       double sizeDxManHinhVatLy =
-          getGlobalState?.getThietLapTongQuat?.getChieuRongManHinhVatLy ??
+          getGlobalStateManagementSystem?.getThietLapTongQuat?.getChieuRongManHinhVatLy ??
           100.0;
       double sizeDyManHinhVatLy =
-          getGlobalState?.getThietLapTongQuat?.getChieuCaoManHinhVatLy ?? 100.0;
+          getGlobalStateManagementSystem?.getThietLapTongQuat?.getChieuCaoManHinhVatLy ?? 100.0;
 
       await Future.wait([
         onCaiDatHinhAnhBackGround(
           value: HINHANHBACKGROUNDKHUNGMANHINHCHINH(
-            globalState: getGlobalState,
+            globalStateManagementSystem: getGlobalStateManagementSystem,
             gameController: getGameController,
             thanhPhanQuanLyThuocCapTrucTiep: getThanhPhanQuanLyThuocCapTrucTiep,
             sizeDx: sizeDxManHinhVatLy + 30.0,

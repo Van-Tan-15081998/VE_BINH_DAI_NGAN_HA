@@ -19,7 +19,7 @@ class DIEMTOADOTHUOCDOANDUONGBAY with CauTrucThucThiCoBan {
     /// -----
     /// TODO:
     /// -----
-    if (attachValue is QuanLyTrangThaiTongQuat) {
+    if (attachValue is GlobalStateManagementSystem) {
       await caiDatChieuRongManHinhPhiVatLy(value: attachValue.getThietLapTongQuat?.getChieuRongManHinhPhiVatLy ?? 0);
       await caiDatChieuCaoManHinhPhiVatLy(value: attachValue.getThietLapTongQuat?.getChieuCaoManHinhPhiVatLy ?? 0);
     }

@@ -29,7 +29,7 @@ import 'package:provider/provider.dart';
 class MANHINHTHANHPHANAAAA extends StatefulWidget {
   const MANHINHTHANHPHANAAAA({super.key, required this.trangThaiTongQuat});
 
-  final QuanLyTrangThaiTongQuat? trangThaiTongQuat;
+  final GlobalStateManagementSystem? trangThaiTongQuat;
 
   @override
   State<MANHINHTHANHPHANAAAA> createState() => _MANHINHTHANHPHANAAAAState();
@@ -460,9 +460,9 @@ class _MANHINHTHANHPHANAAAAState extends State<MANHINHTHANHPHANAAAA> with Automa
   /// -----
   /// TODO:
   /// -----
-  QuanLyTrangThaiTongQuat? _trangThaiTongQuat;
-  QuanLyTrangThaiTongQuat? get getTrangThaiTongQuat => _trangThaiTongQuat;
-  Future<void> caiDatTrangThaiTongQuat({required QuanLyTrangThaiTongQuat? value}) async {
+  GlobalStateManagementSystem? _trangThaiTongQuat;
+  GlobalStateManagementSystem? get getTrangThaiTongQuat => _trangThaiTongQuat;
+  Future<void> caiDatTrangThaiTongQuat({required GlobalStateManagementSystem? value}) async {
     _trangThaiTongQuat ??= value;
     return;
   }
@@ -554,7 +554,7 @@ class _MANHINHTHANHPHANAAAAState extends State<MANHINHTHANHPHANAAAA> with Automa
   Widget build(BuildContext context) {
     super.build(context);
 
-    final QuanLyTrangThaiTongQuat trangThaiTongQuat = Provider.of<QuanLyTrangThaiTongQuat>(context, listen: false);
+    final GlobalStateManagementSystem trangThaiTongQuat = Provider.of<GlobalStateManagementSystem>(context, listen: false);
     _trangThaiTongQuat ??= trangThaiTongQuat;
 
     return Container(

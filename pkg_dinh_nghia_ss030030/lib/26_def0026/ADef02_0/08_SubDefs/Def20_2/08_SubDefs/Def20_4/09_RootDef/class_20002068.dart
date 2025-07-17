@@ -14,7 +14,7 @@ class DANHSACHDOANDUONGBAYTHUOCGIAIDOANKICHBAN with CauTrucThucThiCoBan {
     /// -----
     /// TODO:
     /// -----
-    if (attachValue is QuanLyTrangThaiTongQuat) {
+    if (attachValue is GlobalStateManagementSystem) {
       await caiDatThietLapTongQuat(value: attachValue.getThietLapTongQuat);
     }
 

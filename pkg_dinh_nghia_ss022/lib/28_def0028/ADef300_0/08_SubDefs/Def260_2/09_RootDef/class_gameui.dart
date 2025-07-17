@@ -3,7 +3,7 @@ import 'package:pkg_dinh_nghia_ss022/pkg_dinh_nghia_ss022_exp.dart';
 ///
 /// TODO: [GAMEUI] Nút Bấm Tạm Dừng Hủy Kích Hoạt
 ///
-class GAMEUICARDDANGCAPSAO00S080 extends THANHPHANGAMEUICOBAN {
+class GAMEUICARDDANGCAPSAO00S080 extends CoreGameUIComponent {
   static const String maDinhDanhGameUI = '[GAMEUI]_[GAMEUICARDDANGCAPSAO00S080]';
 
   /// -----

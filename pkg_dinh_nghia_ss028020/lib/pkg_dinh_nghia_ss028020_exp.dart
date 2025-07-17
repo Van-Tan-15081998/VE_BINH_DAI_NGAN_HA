@@ -241,8 +241,4 @@ export '28_Def0028/ADef34_0/08_SubDefs/Def28_2/09_RootDef/thuoc_tinh_chien_dau_t
 /// TODO: _____[CHIEN_DAU_CO_DANG_CAP_SAO_00E03_SS01]_____
 export '28_def0028/ADef20_0/08_SubDefs/Def20_2/09_RootDef/thuoc_tinh_chien_dau_theo_quy_chuan.dart';
 
-/// A Calculator.
-class Calculator {
-  /// Returns [value] plus 1.
-  int addOne(int value) => value + 1;
-}
+

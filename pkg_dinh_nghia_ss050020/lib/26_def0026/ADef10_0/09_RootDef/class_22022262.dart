@@ -14,7 +14,7 @@ abstract class BANGDIEUKHIENDOIHINHCOBAN with CauTrucThucThiCoBan, DanhSachQuanL
   /// -----
   @override
   Future<void> onAttachRoot({required dynamic attachValue}) async {
-    if (attachValue is QuanLyTrangThaiTongQuat) {
+    if (attachValue is GlobalStateManagementSystem) {
       await caiDatThietLapTongQuat(value: attachValue.getThietLapTongQuat);
 
       await caiDatDanhSachMoHinhTongQuat(value: attachValue.getDanhSachMoHinhTongQuat);

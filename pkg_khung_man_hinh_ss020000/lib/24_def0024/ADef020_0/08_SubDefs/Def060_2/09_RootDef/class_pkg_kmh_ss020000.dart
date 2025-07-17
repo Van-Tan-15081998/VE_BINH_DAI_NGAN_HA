@@ -4,21 +4,17 @@ import 'package:pkg_khung_man_hinh_ss020000/pkg_khung_man_hinh_ss020000_exp.dart
 /// -----
 /// TODO: Quản Lý Thành Phần Tích Hợp Thuộc Cấp
 /// -----
-abstract class QUANLYTHANHPHANTICHHOPTHUOCCAPCOBAN
-    with CAUTRUCTHUCTHICOBAN, KICHBANDIEUKHIENTHUOCCAPCOBAN {
+abstract class QUANLYTHANHPHANTICHHOPTHUOCCAPCOBAN with CAUTRUCTHUCTHICOBAN, KICHBANDIEUKHIENTHUOCCAPCOBAN {
   /// -----
   /// TODO:
   /// -----
-  QuanLyTrangThaiTongQuat? _globalState;
-  QuanLyTrangThaiTongQuat? get getGlobalState => _globalState;
-  void onVoidCaiDatGlobalState({
-    required QuanLyTrangThaiTongQuat? value,
-    bool? caiDatUuTien,
-  }) {
+  GlobalStateManagementSystem? _globalStateManagementSystem;
+  GlobalStateManagementSystem? get getGlobalStateManagementSystem => _globalStateManagementSystem;
+  void onSetGlobalStateManagementSystem({required GlobalStateManagementSystem? value, bool? caiDatUuTien}) {
     if (caiDatUuTien == true) {
-      _globalState = value;
+      _globalStateManagementSystem = value;
     } else {
-      _globalState ??= value;
+      _globalStateManagementSystem ??= value;
     }
 
     return;
@@ -29,10 +25,7 @@ abstract class QUANLYTHANHPHANTICHHOPTHUOCCAPCOBAN
   /// -----
   KHUNGMANHINHGAMECOSO? _gameController;
   KHUNGMANHINHGAMECOSO? get getGameController => _gameController;
-  void onVoidCaiDatGameController({
-    required KHUNGMANHINHGAMECOSO? value,
-    bool? caiDatUuTien,
-  }) {
+  void onVoidCaiDatGameController({required KHUNGMANHINHGAMECOSO? value, bool? caiDatUuTien}) {
     if (caiDatUuTien == true) {
       _gameController = value;
     } else {
@@ -46,12 +39,8 @@ abstract class QUANLYTHANHPHANTICHHOPTHUOCCAPCOBAN
   /// TODO:
   /// -----
   THANHPHANMANHINHTHUOCCAPCOBAN? _thanhPhanQuanLyThuocCapTrucTiep;
-  THANHPHANMANHINHTHUOCCAPCOBAN? get getThanhPhanQuanLyThuocCapTrucTiep =>
-      _thanhPhanQuanLyThuocCapTrucTiep;
-  void onVoidCaiDatThanhPhanQuanLyThuocCapTrucTiep({
-    required THANHPHANMANHINHTHUOCCAPCOBAN? value,
-    bool? caiDatUuTien,
-  }) {
+  THANHPHANMANHINHTHUOCCAPCOBAN? get getThanhPhanQuanLyThuocCapTrucTiep => _thanhPhanQuanLyThuocCapTrucTiep;
+  void onVoidCaiDatThanhPhanQuanLyThuocCapTrucTiep({required THANHPHANMANHINHTHUOCCAPCOBAN? value, bool? caiDatUuTien}) {
     if (caiDatUuTien == true) {
       _thanhPhanQuanLyThuocCapTrucTiep = value;
     } else {
@@ -125,18 +114,15 @@ abstract class QUANLYTHANHPHANTICHHOPTHUOCCAPCOBAN
   /// TODO:
   /// -----
   QUANLYTHANHPHANTICHHOPTHUOCCAPCOBAN({
-    required QuanLyTrangThaiTongQuat? globalState,
+    required GlobalStateManagementSystem? globalStateManagementSystem,
     required KHUNGMANHINHGAMECOSO? gameController,
     required THANHPHANMANHINHTHUOCCAPCOBAN? thanhPhanQuanLyThuocCapTrucTiep,
     required double? sizeDx,
     required double? sizeDy,
   }) {
-    onVoidCaiDatGlobalState(value: globalState, caiDatUuTien: true);
+    onSetGlobalStateManagementSystem(value: globalStateManagementSystem, caiDatUuTien: true);
     onVoidCaiDatGameController(value: gameController, caiDatUuTien: true);
-    onVoidCaiDatThanhPhanQuanLyThuocCapTrucTiep(
-      value: thanhPhanQuanLyThuocCapTrucTiep,
-      caiDatUuTien: true,
-    );
+    onVoidCaiDatThanhPhanQuanLyThuocCapTrucTiep(value: thanhPhanQuanLyThuocCapTrucTiep, caiDatUuTien: true);
     onVoidCaiDatSizeDx(value: sizeDx, caiDatUuTien: true);
     onVoidCaiDatSizeDy(value: sizeDy, caiDatUuTien: true);
   }
@@ -144,10 +130,7 @@ abstract class QUANLYTHANHPHANTICHHOPTHUOCCAPCOBAN
   /// -----
   /// TODO: Add Comp Root
   /// -----
-  Future<void> onAddRoot({
-    required FlameGame? flameGame,
-    required Component? component,
-  }) async {
+  Future<void> onAddRoot({required FlameGame? flameGame, required Component? component}) async {
     /// -----
     /// TODO: Add Comp Root For SubCom
     /// -----
@@ -160,10 +143,7 @@ abstract class QUANLYTHANHPHANTICHHOPTHUOCCAPCOBAN
   /// -----
   /// TODO: Add Comp Root For SubCom
   /// -----
-  Future<void> onAddRootForSubCom({
-    required FlameGame? flameGame,
-    required Component? component,
-  }) async {
+  Future<void> onAddRootForSubCom({required FlameGame? flameGame, required Component? component}) async {
     ///
     return;
   }
@@ -171,19 +151,17 @@ abstract class QUANLYTHANHPHANTICHHOPTHUOCCAPCOBAN
   /// -----
   /// TODO:
   /// -----
-  Future<void> onAddComponent({
-    required FlameGame? flameGame,
-    required Component? parentComponent,
-    Component? childComponent,
-  }) async {
+  Future<void> onAddComponent({required FlameGame? flameGame, required Component? parentComponent, Component? childComponent}) async {
     try {
       if (flameGame != null) {
         if (childComponent != null && childComponent.isMounted == false) {
-          await flameGame.add(childComponent);
+          // await flameGame.add(childComponent); // Update v2
+          childComponent.parent = flameGame;
         }
       } else if (parentComponent != null) {
         if (childComponent != null && childComponent.isMounted == false) {
-          await parentComponent.add(childComponent);
+          // await parentComponent.add(childComponent); // Update v2
+          childComponent.parent = parentComponent;
         }
       }
     } catch (e) {
@@ -207,10 +185,7 @@ abstract class QUANLYTHANHPHANTICHHOPTHUOCCAPCOBAN
   /// -----
   /// TODO: Remove Comp Root
   /// -----
-  Future<void> onRemoveRoot({
-    required FlameGame? flameGame,
-    required Component? component,
-  }) async {
+  Future<void> onRemoveRoot({required FlameGame? flameGame, required Component? component}) async {
     /// -----
     /// TODO: Remove Comp Root For SubCom
     /// -----
@@ -223,10 +198,7 @@ abstract class QUANLYTHANHPHANTICHHOPTHUOCCAPCOBAN
   /// -----
   /// TODO: Remove Comp Root For SubCom
   /// -----
-  Future<void> onRemoveRootForSubCom({
-    required FlameGame? flameGame,
-    required Component? component,
-  }) async {
+  Future<void> onRemoveRootForSubCom({required FlameGame? flameGame, required Component? component}) async {
     ///
     return;
   }
@@ -235,10 +207,7 @@ abstract class QUANLYTHANHPHANTICHHOPTHUOCCAPCOBAN
   /// TODO: Attach Root
   /// -----
   @override
-  Future<void> onAttachRoot({
-    required dynamic attachValue,
-    bool? isIgnoreAttachRootForSubCom,
-  }) async {
+  Future<void> onAttachRoot({required dynamic attachValue, bool? isIgnoreAttachRootForSubCom}) async {
     try {
       /// -----
       /// TODO:
@@ -247,8 +216,7 @@ abstract class QUANLYTHANHPHANTICHHOPTHUOCCAPCOBAN
       /// -----
       /// TODO: Attach Root For SubCom
       /// -----
-      if (isIgnoreAttachRootForSubCom == null ||
-          isIgnoreAttachRootForSubCom == false) {
+      if (isIgnoreAttachRootForSubCom == null || isIgnoreAttachRootForSubCom == false) {
         await onAttachRootForSubCom(attachValue: attachValue);
       }
     } catch (e) {
@@ -271,8 +239,7 @@ abstract class QUANLYTHANHPHANTICHHOPTHUOCCAPCOBAN
       /// -----
       /// TODO: Init Root For SubCom
       /// -----
-      if (isIgnoreInitRootForSubCom == null ||
-          isIgnoreInitRootForSubCom == false) {
+      if (isIgnoreInitRootForSubCom == null || isIgnoreInitRootForSubCom == false) {
         await onInitRootForSubCom();
       }
 
@@ -298,8 +265,7 @@ abstract class QUANLYTHANHPHANTICHHOPTHUOCCAPCOBAN
       /// -----
       /// TODO: Setup Root For SubCom
       /// -----
-      if (isIgnoreSetupRootForSubCom == null ||
-          isIgnoreSetupRootForSubCom == false) {
+      if (isIgnoreSetupRootForSubCom == null || isIgnoreSetupRootForSubCom == false) {
         await onSetupRootForSubCom();
       }
     } catch (e) {
@@ -323,8 +289,7 @@ abstract class QUANLYTHANHPHANTICHHOPTHUOCCAPCOBAN
       /// -----
       /// TODO: Reset Root For SubCom
       /// -----
-      if (isIgnoreResetRootForSubCom == null ||
-          isIgnoreResetRootForSubCom == false) {
+      if (isIgnoreResetRootForSubCom == null || isIgnoreResetRootForSubCom == false) {
         await onResetRootForSubCom();
       }
     } catch (e) {

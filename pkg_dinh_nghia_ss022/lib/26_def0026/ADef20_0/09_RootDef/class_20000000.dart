@@ -1,7 +1,7 @@
 import 'package:pkg_dinh_nghia_ss020/pkg_dinh_nghia_ss020_exp.dart';
 import 'package:pkg_dinh_nghia_ss022/pkg_dinh_nghia_ss022_exp.dart';
 
-class THANHPHANGAMEUICOBAN with CauTrucThucThiCoBan {
+class CoreGameUIComponent with CauTrucThucThiCoBan {
   /// -----
   /// TODO: Attach Root
   /// -----

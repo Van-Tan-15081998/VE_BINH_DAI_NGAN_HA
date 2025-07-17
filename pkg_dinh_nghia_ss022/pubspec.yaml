@@ -16,6 +16,9 @@ dependencies:
   pkg_dinh_nghia_ss050:
     path: ../pkg_dinh_nghia_ss050
 
+  pkg_dinh_nghia_ss020000:
+    path: ../pkg_dinh_nghia_ss020000
+
   animate_do: 3.0.2
   cupertino_icons: ^1.0.6
   #  audioplayers: 6.0.0

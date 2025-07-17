@@ -14,7 +14,7 @@ class QUANLYTHANHPHANTICHHOPKHUNGMANHINHCHINHTABSS050CD
   /// TODO:
   /// -----
   QUANLYTHANHPHANTICHHOPKHUNGMANHINHCHINHTABSS050CD({
-    required super.globalState,
+    required super.globalStateManagementSystem,
     required super.gameController,
     required super.thanhPhanQuanLyThuocCapTrucTiep,
     required super.sizeDx,
@@ -152,7 +152,7 @@ class QUANLYTHANHPHANTICHHOPKHUNGMANHINHCHINHTABSS050CD
     await super.onSetupRootForSubCom();
 
     double donViChieuRong =
-        (getGlobalState?.getThietLapTongQuat?.getChieuRongManHinhVatLy ??
+        (getGlobalStateManagementSystem?.getThietLapTongQuat?.getChieuRongManHinhVatLy ??
             100.0) /
         36;
 
@@ -167,7 +167,7 @@ class QUANLYTHANHPHANTICHHOPKHUNGMANHINHCHINHTABSS050CD
     await Future.wait([
       // onCaiDatKhungTichHopTaiNguyenVangTraoDoi(
       //   value: KHUNGTICHHOPTAINGUYENVANGTRAODOI(
-      //     globalState: getGlobalState,
+      //     globalStateManagementSystem: getGlobalStateManagementSystem,
       //     sizeDx: sizeDxKhungTichHopTaiNguyen,
       //     sizeDy: sizeDyKhungTichHopTaiNguyenVangTraoDoi,
       //     positionDx: donViChieuRong * 7.0,
@@ -182,7 +182,7 @@ class QUANLYTHANHPHANTICHHOPKHUNGMANHINHCHINHTABSS050CD
       // ).catchError((e) => null),
       // onCaiDatKhungTichHopTaiNguyenNgocTraoDoi(
       //   value: KHUNGTICHHOPTAINGUYENNGOCTRAODOI(
-      //     globalState: getGlobalState,
+      //     globalStateManagementSystem: getGlobalStateManagementSystem,
       //     sizeDx: sizeDxKhungTichHopTaiNguyen,
       //     sizeDy: sizeDyKhungTichHopTaiNguyenNgocTraoDoi,
       //     positionDx: donViChieuRong * 18.0,
@@ -197,7 +197,7 @@ class QUANLYTHANHPHANTICHHOPKHUNGMANHINHCHINHTABSS050CD
       // ).catchError((e) => null),
       // onCaiDatKhungTichHopTaiNguyenDollarTraoDoi(
       //   value: KHUNGTICHHOPTAINGUYENDOLLARTRAODOI(
-      //     globalState: getGlobalState,
+      //     globalStateManagementSystem: getGlobalStateManagementSystem,
       //     sizeDx: sizeDxKhungTichHopTaiNguyen,
       //     sizeDy: sizeDyKhungTichHopTaiNguyenDollarTraoDoi,
       //     positionDx: donViChieuRong * 29.0,

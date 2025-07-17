@@ -14,7 +14,7 @@ class KHUNGHINHTHETHANHTICHCHIENDAUTHNSS038 extends StatefulWidget {
 
   final double chieuRongLayout;
   final MOHINHTHANHTICHCHIENDAUTHNSS038? thanhTichChienDau;
-  final QuanLyTrangThaiTongQuat? trangThaiTongQuat;
+  final GlobalStateManagementSystem? trangThaiTongQuat;
 
   @override
   State<KHUNGHINHTHETHANHTICHCHIENDAUTHNSS038> createState() => _KHUNGHINHTHETHANHTICHCHIENDAUTHNSS038STATE();

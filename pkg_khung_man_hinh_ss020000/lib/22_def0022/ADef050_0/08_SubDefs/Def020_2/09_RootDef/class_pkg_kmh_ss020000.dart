@@ -12,21 +12,17 @@ import 'package:pkg_khung_man_hinh_ss020000/pkg_khung_man_hinh_ss020000_exp.dart
 /// -----
 /// TODO: Thành Phần Màn Hình Background Thuộc Cấp
 /// -----
-abstract class THANHPHANHINHANHBACKGROUNDTHUOCCAP extends SpriteComponent
-    with HasVisibility, CauTrucThucThiCoBan {
+abstract class THANHPHANHINHANHBACKGROUNDTHUOCCAP extends SpriteComponent with HasVisibility, CauTrucThucThiCoBan {
   /// -----
   /// TODO:
   /// -----
-  QuanLyTrangThaiTongQuat? _globalState;
-  QuanLyTrangThaiTongQuat? get getGlobalState => _globalState;
-  void onVoidCaiDatGlobalState({
-    required QuanLyTrangThaiTongQuat? value,
-    bool? caiDatUuTien,
-  }) {
+  GlobalStateManagementSystem? _globalStateManagementSystem;
+  GlobalStateManagementSystem? get getGlobalStateManagementSystem => _globalStateManagementSystem;
+  void onSetGlobalStateManagementSystem({required GlobalStateManagementSystem? value, bool? caiDatUuTien}) {
     if (caiDatUuTien == true) {
-      _globalState = value;
+      _globalStateManagementSystem = value;
     } else {
-      _globalState ??= value;
+      _globalStateManagementSystem ??= value;
     }
 
     return;
@@ -37,10 +33,7 @@ abstract class THANHPHANHINHANHBACKGROUNDTHUOCCAP extends SpriteComponent
   /// -----
   KHUNGMANHINHGAMECOSO? _gameController;
   KHUNGMANHINHGAMECOSO? get getGameController => _gameController;
-  void onVoidCaiDatGameController({
-    required KHUNGMANHINHGAMECOSO? value,
-    bool? caiDatUuTien,
-  }) {
+  void onVoidCaiDatGameController({required KHUNGMANHINHGAMECOSO? value, bool? caiDatUuTien}) {
     if (caiDatUuTien == true) {
       _gameController = value;
     } else {
@@ -54,12 +47,8 @@ abstract class THANHPHANHINHANHBACKGROUNDTHUOCCAP extends SpriteComponent
   /// TODO:
   /// -----
   THANHPHANMANHINHTHUOCCAPCOBAN? _thanhPhanQuanLyThuocCapTrucTiep;
-  THANHPHANMANHINHTHUOCCAPCOBAN? get getThanhPhanQuanLyThuocCapTrucTiep =>
-      _thanhPhanQuanLyThuocCapTrucTiep;
-  void onVoidCaiDatThanhPhanQuanLyThuocCapTrucTiep({
-    required THANHPHANMANHINHTHUOCCAPCOBAN? value,
-    bool? caiDatUuTien,
-  }) {
+  THANHPHANMANHINHTHUOCCAPCOBAN? get getThanhPhanQuanLyThuocCapTrucTiep => _thanhPhanQuanLyThuocCapTrucTiep;
+  void onVoidCaiDatThanhPhanQuanLyThuocCapTrucTiep({required THANHPHANMANHINHTHUOCCAPCOBAN? value, bool? caiDatUuTien}) {
     if (caiDatUuTien == true) {
       _thanhPhanQuanLyThuocCapTrucTiep = value;
     } else {
@@ -145,12 +134,52 @@ abstract class THANHPHANHINHANHBACKGROUNDTHUOCCAP extends SpriteComponent
     return;
   }
 
-  THANHPHANGAMEUICOBAN? _thanhPhanGameUI;
-  THANHPHANGAMEUICOBAN? get getThanhPhanGameUI => _thanhPhanGameUI;
-  Future<void> onCaiDatThanhPhanGameUI({
-    required THANHPHANGAMEUICOBAN? value,
-    bool? caiDatUuTien,
-  }) async {
+  /// -----
+  /// TODO: FlameGame Parent Component
+  /// -----
+  Component? _flameGameParentComponent;
+  Component? get getFlameGameParentComponent => _flameGameParentComponent;
+  void onCaiDatFlameGameParentComponent({required Component? value, bool? isPriorityOverride}) {
+    if (isPriorityOverride == true) {
+      _flameGameParentComponent = value;
+    } else {
+      _flameGameParentComponent ??= value;
+    }
+
+    ///
+    return;
+  }
+
+  /// -----
+  /// TODO: Parent Component
+  /// -----
+  Component? _parentComponent;
+  Component? get getParentComponent => _parentComponent;
+  void onCaiDatParentComponent({required Component? value, bool? isPriorityOverride}) {
+    if (isPriorityOverride == true) {
+      _parentComponent = value;
+    } else {
+      _parentComponent ??= value;
+    }
+
+    ///
+    return;
+  }
+
+  Future<void> onAddToParent() async {
+
+    if (getFlameGameParentComponent != null && isMounted == false) {
+      await getFlameGameParentComponent?.add(this);
+    } else if (getParentComponent != null && isMounted == false) {
+      await getParentComponent?.add(this);
+    }
+
+    return;
+  }
+
+  CoreGameUIComponent? _thanhPhanGameUI;
+  CoreGameUIComponent? get getThanhPhanGameUI => _thanhPhanGameUI;
+  Future<void> onCaiDatThanhPhanGameUI({required CoreGameUIComponent? value, bool? caiDatUuTien}) async {
     if (caiDatUuTien == true) {
       _thanhPhanGameUI = value;
     } else {
@@ -171,7 +200,7 @@ abstract class THANHPHANHINHANHBACKGROUNDTHUOCCAP extends SpriteComponent
   /// TODO:
   /// -----
   THANHPHANHINHANHBACKGROUNDTHUOCCAP({
-    required QuanLyTrangThaiTongQuat? globalState,
+    required GlobalStateManagementSystem? globalStateManagementSystem,
     required KHUNGMANHINHGAMECOSO? gameController,
     required THANHPHANMANHINHTHUOCCAPCOBAN? thanhPhanQuanLyThuocCapTrucTiep,
     required double? sizeDx,
@@ -179,12 +208,9 @@ abstract class THANHPHANHINHANHBACKGROUNDTHUOCCAP extends SpriteComponent
     required double? positionDx,
     required double? positionDy,
   }) {
-    onVoidCaiDatGlobalState(value: globalState, caiDatUuTien: true);
+    onSetGlobalStateManagementSystem(value: globalStateManagementSystem, caiDatUuTien: true);
     onVoidCaiDatGameController(value: gameController, caiDatUuTien: true);
-    onVoidCaiDatThanhPhanQuanLyThuocCapTrucTiep(
-      value: thanhPhanQuanLyThuocCapTrucTiep,
-      caiDatUuTien: true,
-    );
+    onVoidCaiDatThanhPhanQuanLyThuocCapTrucTiep(value: thanhPhanQuanLyThuocCapTrucTiep, caiDatUuTien: true);
     onVoidCaiDatSizeDx(value: sizeDx, caiDatUuTien: true);
     onVoidCaiDatSizeDy(value: sizeDy, caiDatUuTien: true);
     onVoidCaiDatPositionDx(value: positionDx, caiDatUuTien: true);
@@ -202,22 +228,13 @@ abstract class THANHPHANHINHANHBACKGROUNDTHUOCCAP extends SpriteComponent
 
     cache.Images images = cache.Images();
     images.prefix = '';
-    ui.Image? imageMacDinh = await images.load(
-      'default_assets/images/empty_image.png',
-    );
+    ui.Image? imageMacDinh = await images.load('default_assets/images/empty_image.png');
     sprite = Sprite(imageMacDinh);
 
     if (getKiemTraHienThi == null) {
       onVoidCaiDatKiemTraHienThi(value: false);
     }
-    onVoidCaiDatDonViSprite(
-      value: DonViSpriteCoBan(
-        maDinhDanh: null,
-        nguonHinhAnh: null,
-        sprite: null,
-        spriteAnimation: null,
-      ),
-    );
+    onVoidCaiDatDonViSprite(value: DonViSpriteCoBan(maDinhDanh: null, nguonHinhAnh: null, sprite: null, spriteAnimation: null));
 
     position.setValues((getPositionDx ?? 1.0), (getPositionDy ?? 1.0));
 
@@ -247,8 +264,7 @@ abstract class THANHPHANHINHANHBACKGROUNDTHUOCCAP extends SpriteComponent
     if (getKiemTraHienThi != value) {
       _kiemTraHienThi = value;
 
-      if ((_kiemTraHienThi == false || _kiemTraHienThi == null) &&
-          isVisible == true) {
+      if ((_kiemTraHienThi == false || _kiemTraHienThi == null) && isVisible == true) {
         isVisible = false;
       } else if (_kiemTraHienThi == true && isVisible == false) {
         isVisible = true;
@@ -269,11 +285,10 @@ abstract class THANHPHANHINHANHBACKGROUNDTHUOCCAP extends SpriteComponent
     }
 
     if (getDonViSprite?.getSprite == null) {
-      getGlobalState?.getQuanLyTrangThaiTPGAMEUI
-          ?.onVoidTruyXuatSpriteNgoaiHinhThanhPhanGameUI(
-            donViSprite: getDonViSprite,
-            maDinhDanhThanhPhanGameUI: getThanhPhanGameUI?.getMaDinhDanhGameUI,
-          );
+      getGlobalStateManagementSystem?.getQuanLyTrangThaiTPGAMEUI?.onVoidTruyXuatSpriteNgoaiHinhThanhPhanGameUI(
+        donViSprite: getDonViSprite,
+        maDinhDanhThanhPhanGameUI: getThanhPhanGameUI?.getMaDinhDanhGameUI,
+      );
       sprite = getDonViSprite?.getSprite;
     }
   }
@@ -281,10 +296,7 @@ abstract class THANHPHANHINHANHBACKGROUNDTHUOCCAP extends SpriteComponent
   /// -----
   /// TODO: Add Comp Root
   /// -----
-  Future<void> onAddRoot({
-    required FlameGame? flameGame,
-    required Component? component,
-  }) async {
+  Future<void> onAddRoot({required FlameGame? flameGame, required Component? component}) async {
     /// -----
     /// TODO: Add Comp Root For SubCom
     /// -----
@@ -297,10 +309,7 @@ abstract class THANHPHANHINHANHBACKGROUNDTHUOCCAP extends SpriteComponent
   /// -----
   /// TODO: Add Comp Root For SubCom
   /// -----
-  Future<void> onAddRootForSubCom({
-    required FlameGame? flameGame,
-    required Component? component,
-  }) async {
+  Future<void> onAddRootForSubCom({required FlameGame? flameGame, required Component? component}) async {
     ///
     return;
   }

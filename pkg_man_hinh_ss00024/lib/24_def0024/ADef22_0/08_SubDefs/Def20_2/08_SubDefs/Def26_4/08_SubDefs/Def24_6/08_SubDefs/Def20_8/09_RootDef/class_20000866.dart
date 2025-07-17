@@ -10,7 +10,7 @@ class KhungHinhTheCuaHangChienDauCo00C05SS01 extends StatefulWidget {
 
   final double chieuRongLayout;
   final ChienDauCoDangCapSao00C05SS01? chienDauCo;
-  final QuanLyTrangThaiTongQuat? trangThaiTongQuat;
+  final GlobalStateManagementSystem? trangThaiTongQuat;
 
   @override
   State<KhungHinhTheCuaHangChienDauCo00C05SS01> createState() => _KhungHinhTheCuaHangChienDauCo00C05SS01State();

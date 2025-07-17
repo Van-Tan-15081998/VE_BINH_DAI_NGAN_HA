@@ -14,7 +14,7 @@ class QUANLYTHANHPHANTICHHOPKHUNGMANHINHCHINH
   /// TODO:
   /// -----
   QUANLYTHANHPHANTICHHOPKHUNGMANHINHCHINH({
-    required super.globalState,
+    required super.globalStateManagementSystem,
     required super.gameController,
     required super.thanhPhanQuanLyThuocCapTrucTiep,
     required super.sizeDx,
@@ -170,7 +170,7 @@ class QUANLYTHANHPHANTICHHOPKHUNGMANHINHCHINH
       /// TODO:
       /// -----
       double donViChieuRong =
-          (getGlobalState?.getThietLapTongQuat?.getChieuRongManHinhVatLy ??
+          (getGlobalStateManagementSystem?.getThietLapTongQuat?.getChieuRongManHinhVatLy ??
               100.0) /
           36;
 
@@ -185,7 +185,7 @@ class QUANLYTHANHPHANTICHHOPKHUNGMANHINHCHINH
       await Future.wait([
         onCaiDatKhungTichHopTaiNguyenVangTraoDoi(
           value: KHUNGTICHHOPTAINGUYENVANGTRAODOI(
-            globalState: getGlobalState,
+            globalStateManagementSystem: getGlobalStateManagementSystem,
             gameController: getGameController,
             thanhPhanQuanLyThuocCapTrucTiep: getThanhPhanQuanLyThuocCapTrucTiep,
             sizeDx: sizeDxKhungTichHopTaiNguyen,
@@ -202,7 +202,7 @@ class QUANLYTHANHPHANTICHHOPKHUNGMANHINHCHINH
         ).catchError((e) => null),
         onCaiDatKhungTichHopTaiNguyenNgocTraoDoi(
           value: KHUNGTICHHOPTAINGUYENNGOCTRAODOI(
-            globalState: getGlobalState,
+            globalStateManagementSystem: getGlobalStateManagementSystem,
             gameController: getGameController,
             thanhPhanQuanLyThuocCapTrucTiep: getThanhPhanQuanLyThuocCapTrucTiep,
             sizeDx: sizeDxKhungTichHopTaiNguyen,
@@ -219,7 +219,7 @@ class QUANLYTHANHPHANTICHHOPKHUNGMANHINHCHINH
         ).catchError((e) => null),
         onCaiDatKhungTichHopTaiNguyenDollarTraoDoi(
           value: KHUNGTICHHOPTAINGUYENDOLLARTRAODOI(
-            globalState: getGlobalState,
+            globalStateManagementSystem: getGlobalStateManagementSystem,
             gameController: getGameController,
             thanhPhanQuanLyThuocCapTrucTiep: getThanhPhanQuanLyThuocCapTrucTiep,
             sizeDx: sizeDxKhungTichHopTaiNguyen,

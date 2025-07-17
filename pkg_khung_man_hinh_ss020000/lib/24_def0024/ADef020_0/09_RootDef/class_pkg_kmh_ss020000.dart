@@ -5,24 +5,20 @@ import 'package:pkg_khung_man_hinh_ss020000/pkg_khung_man_hinh_ss020000_exp.dart
 /// -----
 /// TODO:
 /// -----
-abstract class KHUNGMANHINHGAMECOSO extends FlameGame
-    with
-        // HasCollisionDetection,
-        CAUTRUCTHUCTHICOBAN,
-        KICHBANDIEUKHIENTHUOCCAPCOBAN {
+abstract class KHUNGMANHINHGAMECOSO extends FlameGame with CAUTRUCTHUCTHICOBAN, KICHBANDIEUKHIENTHUOCCAPCOBAN {
   @override
   Color backgroundColor() => Colors.transparent;
 
   /// -----
   /// TODO:
   /// -----
-  QuanLyTrangThaiTongQuat? _globalState;
-  QuanLyTrangThaiTongQuat? get getGlobalState => _globalState;
-  void onVoidCaiDatGlobalState({required QuanLyTrangThaiTongQuat? value, bool? caiDatUuTien}) {
+  GlobalStateManagementSystem? _globalStateManagementSystem;
+  GlobalStateManagementSystem? get getGlobalStateManagementSystem => _globalStateManagementSystem;
+  void onSetGlobalStateManagementSystem({required GlobalStateManagementSystem? value, bool? caiDatUuTien}) {
     if (caiDatUuTien == true) {
-      _globalState = value;
+      _globalStateManagementSystem = value;
     } else {
-      _globalState ??= value;
+      _globalStateManagementSystem ??= value;
     }
 
     return;
@@ -91,8 +87,8 @@ abstract class KHUNGMANHINHGAMECOSO extends FlameGame
   /// -----
   /// TODO:
   /// -----
-  KHUNGMANHINHGAMECOSO({required QuanLyTrangThaiTongQuat? globalState, required double? sizeDx, required double? sizeDy}) {
-    onVoidCaiDatGlobalState(value: globalState, caiDatUuTien: true);
+  KHUNGMANHINHGAMECOSO({required GlobalStateManagementSystem? globalStateManagementSystem, required double? sizeDx, required double? sizeDy}) {
+    onSetGlobalStateManagementSystem(value: globalStateManagementSystem, caiDatUuTien: true);
     onVoidCaiDatSizeDx(value: sizeDx, caiDatUuTien: true);
     onVoidCaiDatSizeDy(value: sizeDy, caiDatUuTien: true);
   }
@@ -542,7 +538,7 @@ abstract class KHUNGMANHINHGAMECOSO extends FlameGame
     /// -----
     await onKichHoatKhungManHinhThuocCapLoadingSS010();
 
-    await Future.wait([getGlobalState?.onInitRootForFistOnly().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onInitRootForSubCom')]);
+    await Future.wait([getGlobalStateManagementSystem?.onInitRootForFistOnly().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onInitRootForSubCom')]);
 
     /// -----
     /// TODO:
@@ -562,19 +558,19 @@ abstract class KHUNGMANHINHGAMECOSO extends FlameGame
     /// -----|-----|-----
     /// TODO: Setup Root
     /// -----|-----|-----
-    await getGlobalState?.onSetupRoot();
+    await getGlobalStateManagementSystem?.onSetupRoot();
 
     await Future.delayed(Duration.zero); // nhường event loop, nhưng không delay lâu
     /// -----|-----|-----
     /// TODO: Attach Root
     /// -----|-----|-----
-    await getGlobalState?.onAttachRoot();
+    await getGlobalStateManagementSystem?.onAttachRoot(attachValue: null);
 
     await Future.delayed(Duration.zero); // nhường event loop, nhưng không delay lâu
     /// -----|-----|-----
     /// TODO: Init Root
     /// -----|-----|-----
-    await getGlobalState?.onInitRoot();
+    await getGlobalStateManagementSystem?.onInitRoot();
 
     await Future.delayed(Duration.zero); // nhường event loop, nhưng không delay lâu
     /// -----
@@ -593,105 +589,89 @@ abstract class KHUNGMANHINHGAMECOSO extends FlameGame
   Future<void> onKhoiDongGameCoSoSS020ChiTiet() async {
     await Future.delayed(Duration.zero);
 
-    // await getGlobalState?.onGetEntityResourceManagement?.getQuanLyTrangThaiHangarChienDauCo?.onSanSangTaiTaiNguyenChienDauCo();
-    // await getGlobalState?.onGetEntityResourceManagement?.getQuanLyTrangThaiHangarChienDauCo?.onTaiTaiNguyenChienDauCo();
+    // await getGlobalStateManagementSystem?.onGetEntityResourceManagement?.getQuanLyTrangThaiHangarChienDauCo?.onSanSangTaiTaiNguyenChienDauCo();
+    // await getGlobalStateManagementSystem?.onGetEntityResourceManagement?.getQuanLyTrangThaiHangarChienDauCo?.onTaiTaiNguyenChienDauCo();
     CAUTRUCTHUCTHITUANTUCOBAN? cauTrucThucThiTuanTu;
     cauTrucThucThiTuanTu = CAUTRUCTHUCTHITUANTUCOBAN.onMacDinh();
 
     cauTrucThucThiTuanTu.onAddDonViThucThiTuanTu(
       onThucThiTuanTu: () async {
-        await getGlobalState?.onGetEntityResourceManagement?.getQuanLyTrangThaiHangarChienDauCo?.onTaiTaiNguyenChienDauCo00E03SS010(
-            onThucThiHoanTat: null);
+        await getGlobalStateManagementSystem?.onGetEntityResourceManagement?.getQuanLyTrangThaiHangarChienDauCo?.onTaiTaiNguyenChienDauCo00E03SS010(onThucThiHoanTat: null);
       },
     );
     cauTrucThucThiTuanTu.onAddDonViThucThiTuanTu(
       onThucThiTuanTu: () async {
-        await getGlobalState?.onGetEntityResourceManagement?.getQuanLyTrangThaiHangarChienDauCo?.onTaiTaiNguyenChienDauCo00E03SS020(
-            onThucThiHoanTat: null);
+        await getGlobalStateManagementSystem?.onGetEntityResourceManagement?.getQuanLyTrangThaiHangarChienDauCo?.onTaiTaiNguyenChienDauCo00E03SS020(onThucThiHoanTat: null);
       },
     );
     cauTrucThucThiTuanTu.onAddDonViThucThiTuanTu(
       onThucThiTuanTu: () async {
-        await getGlobalState?.onGetEntityResourceManagement?.getQuanLyTrangThaiHangarChienDauCo?.onTaiTaiNguyenChienDauCo00E03SS030(
-            onThucThiHoanTat: null);
+        await getGlobalStateManagementSystem?.onGetEntityResourceManagement?.getQuanLyTrangThaiHangarChienDauCo?.onTaiTaiNguyenChienDauCo00E03SS030(onThucThiHoanTat: null);
       },
     );
     cauTrucThucThiTuanTu.onAddDonViThucThiTuanTu(
       onThucThiTuanTu: () async {
-        await getGlobalState?.onGetEntityResourceManagement?.getQuanLyTrangThaiHangarChienDauCo?.onTaiTaiNguyenChienDauCo00D04SS010(
-            onThucThiHoanTat: null);
+        await getGlobalStateManagementSystem?.onGetEntityResourceManagement?.getQuanLyTrangThaiHangarChienDauCo?.onTaiTaiNguyenChienDauCo00D04SS010(onThucThiHoanTat: null);
       },
     );
     cauTrucThucThiTuanTu.onAddDonViThucThiTuanTu(
       onThucThiTuanTu: () async {
-        await getGlobalState?.onGetEntityResourceManagement?.getQuanLyTrangThaiHangarChienDauCo?.onTaiTaiNguyenChienDauCo00C05SS010(
-            onThucThiHoanTat: null);
+        await getGlobalStateManagementSystem?.onGetEntityResourceManagement?.getQuanLyTrangThaiHangarChienDauCo?.onTaiTaiNguyenChienDauCo00C05SS010(onThucThiHoanTat: null);
       },
     );
     cauTrucThucThiTuanTu.onAddDonViThucThiTuanTu(
       onThucThiTuanTu: () async {
-        await getGlobalState?.onGetEntityResourceManagement?.getQuanLyTrangThaiHangarChienDauCo?.onTaiTaiNguyenChienDauCo00B06SS010(
-            onThucThiHoanTat: null);
+        await getGlobalStateManagementSystem?.onGetEntityResourceManagement?.getQuanLyTrangThaiHangarChienDauCo?.onTaiTaiNguyenChienDauCo00B06SS010(onThucThiHoanTat: null);
       },
     );
     cauTrucThucThiTuanTu.onAddDonViThucThiTuanTu(
       onThucThiTuanTu: () async {
-        await getGlobalState?.onGetEntityResourceManagement?.getQuanLyTrangThaiHangarChienDauCo?.onTaiTaiNguyenChienDauCo00A07SS010(
-            onThucThiHoanTat: null);
+        await getGlobalStateManagementSystem?.onGetEntityResourceManagement?.getQuanLyTrangThaiHangarChienDauCo?.onTaiTaiNguyenChienDauCo00A07SS010(onThucThiHoanTat: null);
       },
     );
     cauTrucThucThiTuanTu.onAddDonViThucThiTuanTu(
       onThucThiTuanTu: () async {
-        await getGlobalState?.onGetEntityResourceManagement?.getQuanLyTrangThaiHangarChienDauCo?.onTaiTaiNguyenChienDauCo00S08SS010(
-            onThucThiHoanTat: null);
+        await getGlobalStateManagementSystem?.onGetEntityResourceManagement?.getQuanLyTrangThaiHangarChienDauCo?.onTaiTaiNguyenChienDauCo00S08SS010(onThucThiHoanTat: null);
       },
     );
     cauTrucThucThiTuanTu.onAddDonViThucThiTuanTu(
       onThucThiTuanTu: () async {
-        await getGlobalState?.onGetEntityResourceManagement?.getQuanLyTrangThaiHangarChienDauCo?.onTaiTaiNguyenChienDauCo0SS09SS010(
-            onThucThiHoanTat: null);
+        await getGlobalStateManagementSystem?.onGetEntityResourceManagement?.getQuanLyTrangThaiHangarChienDauCo?.onTaiTaiNguyenChienDauCo0SS09SS010(onThucThiHoanTat: null);
       },
     );
     cauTrucThucThiTuanTu.onAddDonViThucThiTuanTu(
       onThucThiTuanTu: () async {
-        await getGlobalState?.onGetEntityResourceManagement?.getQuanLyTrangThaiHangarChienDauCo?.onTaiTaiNguyenChienDauCo0SS09SS020(
-            onThucThiHoanTat: null);
+        await getGlobalStateManagementSystem?.onGetEntityResourceManagement?.getQuanLyTrangThaiHangarChienDauCo?.onTaiTaiNguyenChienDauCo0SS09SS020(onThucThiHoanTat: null);
       },
     );
     cauTrucThucThiTuanTu.onAddDonViThucThiTuanTu(
       onThucThiTuanTu: () async {
-        await getGlobalState?.onGetEntityResourceManagement?.getQuanLyTrangThaiHangarChienDauCo?.onTaiTaiNguyenChienDauCo0SS09SS030(
-            onThucThiHoanTat: null);
+        await getGlobalStateManagementSystem?.onGetEntityResourceManagement?.getQuanLyTrangThaiHangarChienDauCo?.onTaiTaiNguyenChienDauCo0SS09SS030(onThucThiHoanTat: null);
       },
     );
     cauTrucThucThiTuanTu.onAddDonViThucThiTuanTu(
       onThucThiTuanTu: () async {
-        await getGlobalState?.onGetEntityResourceManagement?.getQuanLyTrangThaiHangarChienDauCo?.onTaiTaiNguyenChienDauCoSSS10SS010(
-            onThucThiHoanTat: null);
+        await getGlobalStateManagementSystem?.onGetEntityResourceManagement?.getQuanLyTrangThaiHangarChienDauCo?.onTaiTaiNguyenChienDauCoSSS10SS010(onThucThiHoanTat: null);
       },
     );
     cauTrucThucThiTuanTu.onAddDonViThucThiTuanTu(
       onThucThiTuanTu: () async {
-        await getGlobalState?.onGetEntityResourceManagement?.getQuanLyTrangThaiHangarChienDauCo?.onTaiTaiNguyenChienDauCoSSS10SS020(
-            onThucThiHoanTat: null);
+        await getGlobalStateManagementSystem?.onGetEntityResourceManagement?.getQuanLyTrangThaiHangarChienDauCo?.onTaiTaiNguyenChienDauCoSSS10SS020(onThucThiHoanTat: null);
       },
     );
     cauTrucThucThiTuanTu.onAddDonViThucThiTuanTu(
       onThucThiTuanTu: () async {
-        await getGlobalState?.onGetEntityResourceManagement?.getQuanLyTrangThaiHangarChienDauCo?.onTaiTaiNguyenChienDauCoSSS10SS030(
-            onThucThiHoanTat: null);
+        await getGlobalStateManagementSystem?.onGetEntityResourceManagement?.getQuanLyTrangThaiHangarChienDauCo?.onTaiTaiNguyenChienDauCoSSS10SS030(onThucThiHoanTat: null);
       },
     );
     cauTrucThucThiTuanTu.onAddDonViThucThiTuanTu(
       onThucThiTuanTu: () async {
-        await getGlobalState?.onGetEntityResourceManagement?.getQuanLyTrangThaiHangarChienDauCo?.onTaiTaiNguyenChienDauCoSSS10SS040(
-            onThucThiHoanTat: null);
+        await getGlobalStateManagementSystem?.onGetEntityResourceManagement?.getQuanLyTrangThaiHangarChienDauCo?.onTaiTaiNguyenChienDauCoSSS10SS040(onThucThiHoanTat: null);
       },
     );
     cauTrucThucThiTuanTu.onAddDonViThucThiTuanTu(
       onThucThiTuanTu: () async {
-        await getGlobalState?.onGetEntityResourceManagement?.getQuanLyTrangThaiHangarChienDauCo?.onTaiTaiNguyenChienDauCoSSS10SS050(
-            onThucThiHoanTat: null);
+        await getGlobalStateManagementSystem?.onGetEntityResourceManagement?.getQuanLyTrangThaiHangarChienDauCo?.onTaiTaiNguyenChienDauCoSSS10SS050(onThucThiHoanTat: null);
       },
     );
 
@@ -731,7 +711,7 @@ abstract class KHUNGMANHINHGAMECOSO extends FlameGame
     /// -----|-----|-----
     /// TODO: Add Root
     /// -----|-----|-----
-    // await onAddRoot();
+    await onAddRoot();
 
     await Future.delayed(Duration.zero); // nhường event loop, nhưng không delay lâu .
     /// -----

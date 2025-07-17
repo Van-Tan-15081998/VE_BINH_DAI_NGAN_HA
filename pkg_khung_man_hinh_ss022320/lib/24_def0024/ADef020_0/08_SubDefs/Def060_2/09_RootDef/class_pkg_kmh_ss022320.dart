@@ -36,7 +36,7 @@ class QUANLYTHANHPHANTICHHOPTHUOCCAP
   /// TODO:
   /// -----
   QUANLYTHANHPHANTICHHOPTHUOCCAP({
-    required super.globalState,
+    required super.globalStateManagementSystem,
     required super.gameController,
     required super.thanhPhanQuanLyThuocCapTrucTiep,
     required super.sizeDx,
@@ -840,7 +840,7 @@ class QUANLYTHANHPHANTICHHOPTHUOCCAP
       await Future.wait([
         onCaiDatCardNhiemVuSS00A001MAPSS00A(
           value: CARDNHIEMVUSS00A001MAPSS00A(
-            globalState: getGlobalState,
+            globalStateManagementSystem: getGlobalStateManagementSystem,
             gameController: getGameController,
             thanhPhanQuanLyThuocCapTrucTiep: getThanhPhanQuanLyThuocCapTrucTiep,
             sizeDx: sizeDxCard,
@@ -858,7 +858,7 @@ class QUANLYTHANHPHANTICHHOPTHUOCCAP
 
         onCaiDatCardNhiemVuSS00A002MAPSS00A(
           value: CARDNHIEMVUSS00A002MAPSS00A(
-            globalState: getGlobalState,
+            globalStateManagementSystem: getGlobalStateManagementSystem,
             gameController: getGameController,
             thanhPhanQuanLyThuocCapTrucTiep: getThanhPhanQuanLyThuocCapTrucTiep,
             sizeDx: sizeDxCard,
@@ -876,7 +876,7 @@ class QUANLYTHANHPHANTICHHOPTHUOCCAP
 
         onCaiDatCardNhiemVuSS00A003MAPSS00A(
           value: CARDNHIEMVUSS00A003MAPSS00A(
-            globalState: getGlobalState,
+            globalStateManagementSystem: getGlobalStateManagementSystem,
             gameController: getGameController,
             thanhPhanQuanLyThuocCapTrucTiep: getThanhPhanQuanLyThuocCapTrucTiep,
             sizeDx: sizeDxCard,
@@ -894,7 +894,7 @@ class QUANLYTHANHPHANTICHHOPTHUOCCAP
 
         onCaiDatCardNhiemVuSS00A004MAPSS00A(
           value: CARDNHIEMVUSS00A004MAPSS00A(
-            globalState: getGlobalState,
+            globalStateManagementSystem: getGlobalStateManagementSystem,
             gameController: getGameController,
             thanhPhanQuanLyThuocCapTrucTiep: getThanhPhanQuanLyThuocCapTrucTiep,
             sizeDx: sizeDxCard,
@@ -912,7 +912,7 @@ class QUANLYTHANHPHANTICHHOPTHUOCCAP
 
         onCaiDatCardNhiemVuSS00A005MAPSS00A(
           value: CARDNHIEMVUSS00A005MAPSS00A(
-            globalState: getGlobalState,
+            globalStateManagementSystem: getGlobalStateManagementSystem,
             gameController: getGameController,
             thanhPhanQuanLyThuocCapTrucTiep: getThanhPhanQuanLyThuocCapTrucTiep,
             sizeDx: sizeDxCard,
@@ -930,7 +930,7 @@ class QUANLYTHANHPHANTICHHOPTHUOCCAP
 
         onCaiDatCardNhiemVuSS00A006MAPSS00A(
           value: CARDNHIEMVUSS00A006MAPSS00A(
-            globalState: getGlobalState,
+            globalStateManagementSystem: getGlobalStateManagementSystem,
             gameController: getGameController,
             thanhPhanQuanLyThuocCapTrucTiep: getThanhPhanQuanLyThuocCapTrucTiep,
             sizeDx: sizeDxCard,
@@ -948,7 +948,7 @@ class QUANLYTHANHPHANTICHHOPTHUOCCAP
 
         onCaiDatCardNhiemVuSS00A007MAPSS00A(
           value: CARDNHIEMVUSS00A007MAPSS00A(
-            globalState: getGlobalState,
+            globalStateManagementSystem: getGlobalStateManagementSystem,
             gameController: getGameController,
             thanhPhanQuanLyThuocCapTrucTiep: getThanhPhanQuanLyThuocCapTrucTiep,
             sizeDx: sizeDxCard,
@@ -966,7 +966,7 @@ class QUANLYTHANHPHANTICHHOPTHUOCCAP
 
         onCaiDatCardNhiemVuSS00A008MAPSS00A(
           value: CARDNHIEMVUSS00A008MAPSS00A(
-            globalState: getGlobalState,
+            globalStateManagementSystem: getGlobalStateManagementSystem,
             gameController: getGameController,
             thanhPhanQuanLyThuocCapTrucTiep: getThanhPhanQuanLyThuocCapTrucTiep,
             sizeDx: sizeDxCard,
@@ -984,7 +984,7 @@ class QUANLYTHANHPHANTICHHOPTHUOCCAP
 
         onCaiDatCardNhiemVuSS00A009MAPSS00A(
           value: CARDNHIEMVUSS00A009MAPSS00A(
-            globalState: getGlobalState,
+            globalStateManagementSystem: getGlobalStateManagementSystem,
             gameController: getGameController,
             thanhPhanQuanLyThuocCapTrucTiep: getThanhPhanQuanLyThuocCapTrucTiep,
             sizeDx: sizeDxCard,
@@ -1002,7 +1002,7 @@ class QUANLYTHANHPHANTICHHOPTHUOCCAP
 
         onCaiDatCardNhiemVuSS00A010MAPSS00A(
           value: CARDNHIEMVUSS00A010MAPSS00A(
-            globalState: getGlobalState,
+            globalStateManagementSystem: getGlobalStateManagementSystem,
             gameController: getGameController,
             thanhPhanQuanLyThuocCapTrucTiep: getThanhPhanQuanLyThuocCapTrucTiep,
             sizeDx: sizeDxCard,
@@ -1020,7 +1020,7 @@ class QUANLYTHANHPHANTICHHOPTHUOCCAP
 
         onCaiDatCardNhiemVuSS00A011MAPSS00A(
           value: CARDNHIEMVUSS00A011MAPSS00A(
-            globalState: getGlobalState,
+            globalStateManagementSystem: getGlobalStateManagementSystem,
             gameController: getGameController,
             thanhPhanQuanLyThuocCapTrucTiep: getThanhPhanQuanLyThuocCapTrucTiep,
             sizeDx: sizeDxCard,
@@ -1038,7 +1038,7 @@ class QUANLYTHANHPHANTICHHOPTHUOCCAP
 
         onCaiDatCardNhiemVuSS00A012MAPSS00A(
           value: CARDNHIEMVUSS00A012MAPSS00A(
-            globalState: getGlobalState,
+            globalStateManagementSystem: getGlobalStateManagementSystem,
             gameController: getGameController,
             thanhPhanQuanLyThuocCapTrucTiep: getThanhPhanQuanLyThuocCapTrucTiep,
             sizeDx: sizeDxCard,
@@ -1056,7 +1056,7 @@ class QUANLYTHANHPHANTICHHOPTHUOCCAP
 
         onCaiDatCardNhiemVuSS00A013MAPSS00A(
           value: CARDNHIEMVUSS00A013MAPSS00A(
-            globalState: getGlobalState,
+            globalStateManagementSystem: getGlobalStateManagementSystem,
             gameController: getGameController,
             thanhPhanQuanLyThuocCapTrucTiep: getThanhPhanQuanLyThuocCapTrucTiep,
             sizeDx: sizeDxCard,
@@ -1074,7 +1074,7 @@ class QUANLYTHANHPHANTICHHOPTHUOCCAP
 
         onCaiDatCardNhiemVuSS00A014MAPSS00A(
           value: CARDNHIEMVUSS00A014MAPSS00A(
-            globalState: getGlobalState,
+            globalStateManagementSystem: getGlobalStateManagementSystem,
             gameController: getGameController,
             thanhPhanQuanLyThuocCapTrucTiep: getThanhPhanQuanLyThuocCapTrucTiep,
             sizeDx: sizeDxCard,
@@ -1092,7 +1092,7 @@ class QUANLYTHANHPHANTICHHOPTHUOCCAP
 
         onCaiDatCardNhiemVuSS00A015MAPSS00A(
           value: CARDNHIEMVUSS00A015MAPSS00A(
-            globalState: getGlobalState,
+            globalStateManagementSystem: getGlobalStateManagementSystem,
             gameController: getGameController,
             thanhPhanQuanLyThuocCapTrucTiep: getThanhPhanQuanLyThuocCapTrucTiep,
             sizeDx: sizeDxCard,
@@ -1110,7 +1110,7 @@ class QUANLYTHANHPHANTICHHOPTHUOCCAP
 
         onCaiDatCardNhiemVuSS00A016MAPSS00A(
           value: CARDNHIEMVUSS00A016MAPSS00A(
-            globalState: getGlobalState,
+            globalStateManagementSystem: getGlobalStateManagementSystem,
             gameController: getGameController,
             thanhPhanQuanLyThuocCapTrucTiep: getThanhPhanQuanLyThuocCapTrucTiep,
             sizeDx: sizeDxCard,
@@ -1128,7 +1128,7 @@ class QUANLYTHANHPHANTICHHOPTHUOCCAP
 
         onCaiDatCardNhiemVuSS00A017MAPSS00A(
           value: CARDNHIEMVUSS00A017MAPSS00A(
-            globalState: getGlobalState,
+            globalStateManagementSystem: getGlobalStateManagementSystem,
             gameController: getGameController,
             thanhPhanQuanLyThuocCapTrucTiep: getThanhPhanQuanLyThuocCapTrucTiep,
             sizeDx: sizeDxCard,
@@ -1146,7 +1146,7 @@ class QUANLYTHANHPHANTICHHOPTHUOCCAP
 
         onCaiDatCardNhiemVuSS00A018MAPSS00A(
           value: CARDNHIEMVUSS00A018MAPSS00A(
-            globalState: getGlobalState,
+            globalStateManagementSystem: getGlobalStateManagementSystem,
             gameController: getGameController,
             thanhPhanQuanLyThuocCapTrucTiep: getThanhPhanQuanLyThuocCapTrucTiep,
             sizeDx: sizeDxCard,
@@ -1164,7 +1164,7 @@ class QUANLYTHANHPHANTICHHOPTHUOCCAP
 
         onCaiDatCardNhiemVuSS00A019MAPSS00A(
           value: CARDNHIEMVUSS00A019MAPSS00A(
-            globalState: getGlobalState,
+            globalStateManagementSystem: getGlobalStateManagementSystem,
             gameController: getGameController,
             thanhPhanQuanLyThuocCapTrucTiep: getThanhPhanQuanLyThuocCapTrucTiep,
             sizeDx: sizeDxCard,
@@ -1182,7 +1182,7 @@ class QUANLYTHANHPHANTICHHOPTHUOCCAP
 
         onCaiDatCardNhiemVuSS00A020MAPSS00A(
           value: CARDNHIEMVUSS00A020MAPSS00A(
-            globalState: getGlobalState,
+            globalStateManagementSystem: getGlobalStateManagementSystem,
             gameController: getGameController,
             thanhPhanQuanLyThuocCapTrucTiep: getThanhPhanQuanLyThuocCapTrucTiep,
             sizeDx: sizeDxCard,
@@ -1200,7 +1200,7 @@ class QUANLYTHANHPHANTICHHOPTHUOCCAP
 
         onCaiDatCardNhiemVuSS00A021MAPSS00A(
           value: CARDNHIEMVUSS00A021MAPSS00A(
-            globalState: getGlobalState,
+            globalStateManagementSystem: getGlobalStateManagementSystem,
             gameController: getGameController,
             thanhPhanQuanLyThuocCapTrucTiep: getThanhPhanQuanLyThuocCapTrucTiep,
             sizeDx: sizeDxCard,
@@ -1218,7 +1218,7 @@ class QUANLYTHANHPHANTICHHOPTHUOCCAP
 
         onCaiDatCardNhiemVuSS00A022MAPSS00A(
           value: CARDNHIEMVUSS00A022MAPSS00A(
-            globalState: getGlobalState,
+            globalStateManagementSystem: getGlobalStateManagementSystem,
             gameController: getGameController,
             thanhPhanQuanLyThuocCapTrucTiep: getThanhPhanQuanLyThuocCapTrucTiep,
             sizeDx: sizeDxCard,
@@ -1236,7 +1236,7 @@ class QUANLYTHANHPHANTICHHOPTHUOCCAP
 
         onCaiDatCardNhiemVuSS00A023MAPSS00A(
           value: CARDNHIEMVUSS00A023MAPSS00A(
-            globalState: getGlobalState,
+            globalStateManagementSystem: getGlobalStateManagementSystem,
             gameController: getGameController,
             thanhPhanQuanLyThuocCapTrucTiep: getThanhPhanQuanLyThuocCapTrucTiep,
             sizeDx: sizeDxCard,
@@ -1254,7 +1254,7 @@ class QUANLYTHANHPHANTICHHOPTHUOCCAP
 
         onCaiDatCardNhiemVuSS00A024MAPSS00A(
           value: CARDNHIEMVUSS00A024MAPSS00A(
-            globalState: getGlobalState,
+            globalStateManagementSystem: getGlobalStateManagementSystem,
             gameController: getGameController,
             thanhPhanQuanLyThuocCapTrucTiep: getThanhPhanQuanLyThuocCapTrucTiep,
             sizeDx: sizeDxCard,
@@ -1272,7 +1272,7 @@ class QUANLYTHANHPHANTICHHOPTHUOCCAP
 
         onCaiDatCardNhiemVuSS00A025MAPSS00A(
           value: CARDNHIEMVUSS00A025MAPSS00A(
-            globalState: getGlobalState,
+            globalStateManagementSystem: getGlobalStateManagementSystem,
             gameController: getGameController,
             thanhPhanQuanLyThuocCapTrucTiep: getThanhPhanQuanLyThuocCapTrucTiep,
             sizeDx: sizeDxCard,

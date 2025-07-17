@@ -12,7 +12,7 @@ class QUANLYTHANHPHANMANHINHTHUOCCAP
   /// TODO:
   /// -----
   QUANLYTHANHPHANMANHINHTHUOCCAP({
-    required super.globalState,
+    required super.globalStateManagementSystem,
     required super.gameController,
     required super.thanhPhanQuanLyThuocCapTrucTiep,
     required super.sizeDx,
@@ -119,7 +119,7 @@ class QUANLYTHANHPHANMANHINHTHUOCCAP
       await Future.wait([
         onCaiDatKhungManHinhSS223200(
           value: KHUNGMANHINHSS223200(
-            globalState: getGlobalState,
+            globalStateManagementSystem: getGlobalStateManagementSystem,
             gameController: getGameController,
             thanhPhanQuanLyThuocCapTrucTiep: getThanhPhanQuanLyThuocCapTrucTiep,
             sizeDx: sizeDxKhungManHinhPopup,

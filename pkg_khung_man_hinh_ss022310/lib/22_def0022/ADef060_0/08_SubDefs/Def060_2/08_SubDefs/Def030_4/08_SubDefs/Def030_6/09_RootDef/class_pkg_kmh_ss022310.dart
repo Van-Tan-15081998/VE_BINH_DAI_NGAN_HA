@@ -10,7 +10,7 @@ class KHUNGDCSCHIENDAUCODANGCAPSAO00E03SS02
   /// TODO:
   /// -----
   KHUNGDCSCHIENDAUCODANGCAPSAO00E03SS02({
-    required super.globalState,
+    required super.globalStateManagementSystem,
     required super.sizeDx,
     required super.sizeDy, //
     required super.positionDx, //

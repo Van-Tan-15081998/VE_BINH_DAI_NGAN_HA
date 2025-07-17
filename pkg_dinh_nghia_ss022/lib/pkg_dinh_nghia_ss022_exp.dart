@@ -189,8 +189,4 @@ export '28_def0028/ADef400_0/08_SubDefs/Def500_2/09_RootDef/class_gameui.dart';
 export '28_def0028/ADef400_0/08_SubDefs/Def510_2/09_RootDef/class_gameui.dart';
 
 
-/// A Calculator.
-class Calculator {
-  /// Returns [value] plus 1.
-  int addOne(int value) => value + 1;
-}
+

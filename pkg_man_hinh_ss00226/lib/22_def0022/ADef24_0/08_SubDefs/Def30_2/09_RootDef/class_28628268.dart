@@ -10,9 +10,9 @@ class KhungVongLapBangDieuKhienDoiHinhDauSyTienPhong extends Component with Vong
   /// -----
   /// TODO:
   /// -----
-  QuanLyTrangThaiTongQuat? _trangThaiTongQuat;
-  QuanLyTrangThaiTongQuat? get getTrangThaiTongQuat => _trangThaiTongQuat;
-  Future<void> caiDatTrangThaiTongQuat({required QuanLyTrangThaiTongQuat? value}) async {
+  GlobalStateManagementSystem? _trangThaiTongQuat;
+  GlobalStateManagementSystem? get getTrangThaiTongQuat => _trangThaiTongQuat;
+  Future<void> caiDatTrangThaiTongQuat({required GlobalStateManagementSystem? value}) async {
     _trangThaiTongQuat ??= value;
     return;
   }
@@ -20,7 +20,7 @@ class KhungVongLapBangDieuKhienDoiHinhDauSyTienPhong extends Component with Vong
   /// -----
   /// TODO:
   /// -----
-  KhungVongLapBangDieuKhienDoiHinhDauSyTienPhong({required QuanLyTrangThaiTongQuat? trangThaiTongQuat}) {
+  KhungVongLapBangDieuKhienDoiHinhDauSyTienPhong({required GlobalStateManagementSystem? trangThaiTongQuat}) {
     caiDatTrangThaiTongQuat(value: trangThaiTongQuat);
   }
 

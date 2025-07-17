@@ -3,7 +3,7 @@ import 'package:pkg_dinh_nghia_ss022/pkg_dinh_nghia_ss022_exp.dart';
 ///
 /// TODO: [GAMEUI] Nút Bấm Chuyển Tiếp
 ///
-class GAMEUINUTBAMCHUYENTIEP extends THANHPHANGAMEUICOBAN {
+class GAMEUINUTBAMCHUYENTIEP extends CoreGameUIComponent {
   static const String maDinhDanhGameUI = '[GAMEUI]_[GAMEUINUTBAMCHUYENTIEP]';
 
   /// -----

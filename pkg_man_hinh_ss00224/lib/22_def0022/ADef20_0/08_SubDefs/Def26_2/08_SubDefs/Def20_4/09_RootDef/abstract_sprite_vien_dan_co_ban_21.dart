@@ -17,7 +17,7 @@ abstract class SpriteVienDanCoBan2 extends SpriteAnimationComponent with HasVisi
   /// -----
   /// TODO:
   /// -----
-  SpriteVienDanCoBan2({required QuanLyTrangThaiTongQuat? trangThaiTongQuat}) {
+  SpriteVienDanCoBan2({required GlobalStateManagementSystem? trangThaiTongQuat}) {
     caiDatTrangThaiTongQuat(value: trangThaiTongQuat);
   }
 
@@ -44,9 +44,9 @@ abstract class SpriteVienDanCoBan2 extends SpriteAnimationComponent with HasVisi
   /// -----
   /// TODO: Quản Lý Trạng Thái Tổng Quát
   /// -----
-  QuanLyTrangThaiTongQuat? _trangThaiTongQuat;
-  QuanLyTrangThaiTongQuat? get getTrangThaiTongQuat => _trangThaiTongQuat;
-  Future<void> caiDatTrangThaiTongQuat({required QuanLyTrangThaiTongQuat? value}) async {
+  GlobalStateManagementSystem? _trangThaiTongQuat;
+  GlobalStateManagementSystem? get getTrangThaiTongQuat => _trangThaiTongQuat;
+  Future<void> caiDatTrangThaiTongQuat({required GlobalStateManagementSystem? value}) async {
     _trangThaiTongQuat ??= value;
     return;
   }

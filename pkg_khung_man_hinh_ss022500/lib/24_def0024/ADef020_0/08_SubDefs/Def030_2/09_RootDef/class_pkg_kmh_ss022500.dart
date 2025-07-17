@@ -21,7 +21,7 @@ class QUANLYTHANHPHANNUTBAMKHUNGMANHINHCHINHTABSS050CD
   /// TODO:
   /// -----
   QUANLYTHANHPHANNUTBAMKHUNGMANHINHCHINHTABSS050CD({
-    required super.globalState,
+    required super.globalStateManagementSystem,
     required super.gameController,
     required super.thanhPhanQuanLyThuocCapTrucTiep,
     required super.sizeDx,
@@ -174,7 +174,7 @@ class QUANLYTHANHPHANNUTBAMKHUNGMANHINHCHINHTABSS050CD
     await Future.wait([
       onCaiDatNutBamChonChatLuongDoHoaThap(
         value: NUTBAMCHONCHATLUONGDOHOATHAP(
-          globalState: getGlobalState,
+          globalStateManagementSystem: getGlobalStateManagementSystem,
           gameController: getGameController,
           thanhPhanQuanLyThuocCapTrucTiep: getThanhPhanQuanLyThuocCapTrucTiep,
           sizeDx: sizeDxNutBam,
@@ -191,7 +191,7 @@ class QUANLYTHANHPHANNUTBAMKHUNGMANHINHCHINHTABSS050CD
       ).catchError((e) => null),
       onCaiDatNutBamChonChatLuongDoHoaCao(
         value: NUTBAMCHONCHATLUONGDOHOACAO(
-          globalState: getGlobalState,
+          globalStateManagementSystem: getGlobalStateManagementSystem,
           gameController: getGameController,
           thanhPhanQuanLyThuocCapTrucTiep: getThanhPhanQuanLyThuocCapTrucTiep,
           sizeDx: sizeDxNutBam,

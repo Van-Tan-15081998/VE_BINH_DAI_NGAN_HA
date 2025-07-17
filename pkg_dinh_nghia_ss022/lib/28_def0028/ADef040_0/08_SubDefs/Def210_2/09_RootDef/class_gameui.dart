@@ -3,7 +3,7 @@ import 'package:pkg_dinh_nghia_ss022/pkg_dinh_nghia_ss022_exp.dart';
 ///
 /// TODO: [GAMEUI] Khung Thông Tin Tài Nguyên Vàng Trao Đổi
 ///
-class GAMEUIKHUNGTHONGTINTAINGUYENVANGTRAODOI extends THANHPHANGAMEUICOBAN {
+class GAMEUIKHUNGTHONGTINTAINGUYENVANGTRAODOI extends CoreGameUIComponent {
   static const String maDinhDanhGameUI = '[GAMEUI]_[GAMEUIKHUNGTHONGTINTAINGUYENVANGTRAODOI]';
 
   /// -----

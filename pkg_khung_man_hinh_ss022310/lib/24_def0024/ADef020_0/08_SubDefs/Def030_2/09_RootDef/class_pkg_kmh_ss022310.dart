@@ -20,7 +20,7 @@ class QUANLYTHANHPHANNUTBAMTHUOCCAP extends QUANLYTHANHPHANNUTBAMTHUOCCAPCOBAN {
   /// TODO:
   /// -----
   QUANLYTHANHPHANNUTBAMTHUOCCAP({
-    required super.globalState,
+    required super.globalStateManagementSystem,
     required super.gameController,
     required super.thanhPhanQuanLyThuocCapTrucTiep,
     required super.sizeDx,
@@ -200,7 +200,7 @@ class QUANLYTHANHPHANNUTBAMTHUOCCAP extends QUANLYTHANHPHANNUTBAMTHUOCCAPCOBAN {
       await Future.wait([
         // onCaiDatNutBamChuyenChonChiDinhTrai(
         //   value: NUTBAMCHUYENCHONCHIDINHTRAI(
-        //     globalState: getGlobalState,
+        //     globalStateManagementSystem: getGlobalStateManagementSystem,
         //     gameController: getGameController, thanhPhanQuanLyThuocCapTrucTiep: getThanhPhanQuanLyThuocCapTrucTiep,
         //     sizeDx: sizeDxNutBam,
         //     sizeDy: sizeDyNutBam,
@@ -216,7 +216,7 @@ class QUANLYTHANHPHANNUTBAMTHUOCCAP extends QUANLYTHANHPHANNUTBAMTHUOCCAPCOBAN {
         // ).catchError((e) => null),
         // onCaiDatNutBamChuyenChonChiDinhPhai(
         //   value: NUTBAMCHUYENCHONCHIDINHPHAI(
-        //     globalState: getGlobalState,
+        //     globalStateManagementSystem: getGlobalStateManagementSystem,
         //     gameController: getGameController, thanhPhanQuanLyThuocCapTrucTiep: getThanhPhanQuanLyThuocCapTrucTiep,
         //     sizeDx: sizeDxNutBam,
         //     sizeDy: sizeDyNutBam,

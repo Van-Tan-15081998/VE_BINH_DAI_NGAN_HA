@@ -24,7 +24,7 @@ class QUANLYTHANHPHANNUTBAMKHUNGMANHINHCHINH
   /// TODO:
   /// -----
   QUANLYTHANHPHANNUTBAMKHUNGMANHINHCHINH({
-    required super.globalState,
+    required super.globalStateManagementSystem,
     required super.gameController,
     required super.thanhPhanQuanLyThuocCapTrucTiep,
     required super.sizeDx,
@@ -336,11 +336,11 @@ class QUANLYTHANHPHANNUTBAMKHUNGMANHINHCHINH
       /// TODO:
       /// -----
       double sizeDyManHinhPhiVatLy =
-          getGlobalState?.getThietLapTongQuat?.getChieuCaoManHinhPhiVatLy ??
+          getGlobalStateManagementSystem?.getThietLapTongQuat?.getChieuCaoManHinhPhiVatLy ??
           100.0;
 
       double donViChieuRong =
-          (getGlobalState?.getThietLapTongQuat?.getChieuRongManHinhVatLy ??
+          (getGlobalStateManagementSystem?.getThietLapTongQuat?.getChieuRongManHinhVatLy ??
               100.0) /
           36;
 
@@ -350,7 +350,7 @@ class QUANLYTHANHPHANNUTBAMKHUNGMANHINHCHINH
       await Future.wait([
         onCaiDatNutBamChuyenTabSS010(
           value: NUTBAMCHUYENTABSS010(
-            globalState: getGlobalState,
+            globalStateManagementSystem: getGlobalStateManagementSystem,
             gameController: getGameController,
             thanhPhanQuanLyThuocCapTrucTiep: getThanhPhanQuanLyThuocCapTrucTiep,
             sizeDx: sizeDxNutBamChonTab,
@@ -367,7 +367,7 @@ class QUANLYTHANHPHANNUTBAMKHUNGMANHINHCHINH
         ).catchError((e) => null),
         onCaiDatNutBamChuyenTabSS020(
           value: NUTBAMCHUYENTABSS020(
-            globalState: getGlobalState,
+            globalStateManagementSystem: getGlobalStateManagementSystem,
             gameController: getGameController,
             thanhPhanQuanLyThuocCapTrucTiep: getThanhPhanQuanLyThuocCapTrucTiep,
             sizeDx: sizeDxNutBamChonTab,
@@ -384,7 +384,7 @@ class QUANLYTHANHPHANNUTBAMKHUNGMANHINHCHINH
         ).catchError((e) => null),
         onCaiDatNutBamChuyenTabSS030(
           value: NUTBAMCHUYENTABSS030(
-            globalState: getGlobalState,
+            globalStateManagementSystem: getGlobalStateManagementSystem,
             gameController: getGameController,
             thanhPhanQuanLyThuocCapTrucTiep: getThanhPhanQuanLyThuocCapTrucTiep,
             sizeDx: sizeDxNutBamChonTab,
@@ -401,7 +401,7 @@ class QUANLYTHANHPHANNUTBAMKHUNGMANHINHCHINH
         ).catchError((e) => null),
         onCaiDatNutBamChuyenTabSS040(
           value: NUTBAMCHUYENTABSS040(
-            globalState: getGlobalState,
+            globalStateManagementSystem: getGlobalStateManagementSystem,
             gameController: getGameController,
             thanhPhanQuanLyThuocCapTrucTiep: getThanhPhanQuanLyThuocCapTrucTiep,
             sizeDx: sizeDxNutBamChonTab,
@@ -418,7 +418,7 @@ class QUANLYTHANHPHANNUTBAMKHUNGMANHINHCHINH
         ).catchError((e) => null),
         onCaiDatNutBamChuyenTabSS050(
           value: NUTBAMCHUYENTABSS050(
-            globalState: getGlobalState,
+            globalStateManagementSystem: getGlobalStateManagementSystem,
             gameController: getGameController,
             thanhPhanQuanLyThuocCapTrucTiep: getThanhPhanQuanLyThuocCapTrucTiep,
             sizeDx: sizeDxNutBamChonTab,

@@ -10,16 +10,16 @@ class THANHPHANCUONDYTHUOCCAP extends PositionComponent
   /// -----
   /// TODO:
   /// -----
-  QuanLyTrangThaiTongQuat? _globalState;
-  QuanLyTrangThaiTongQuat? get getGlobalState => _globalState;
-  void onVoidCaiDatGlobalState({
-    required QuanLyTrangThaiTongQuat? value,
+  GlobalStateManagementSystem? _globalStateManagementSystem;
+  GlobalStateManagementSystem? get getGlobalStateManagementSystem => _globalStateManagementSystem;
+  void onSetGlobalStateManagementSystem({
+    required GlobalStateManagementSystem? value,
     bool? caiDatUuTien,
   }) {
     if (caiDatUuTien == true) {
-      _globalState = value;
+      _globalStateManagementSystem = value;
     } else {
-      _globalState ??= value;
+      _globalStateManagementSystem ??= value;
     }
 
     return;
@@ -132,14 +132,14 @@ class THANHPHANCUONDYTHUOCCAP extends PositionComponent
 
   // THANHPHANCUONDYTHUOCCAP({required this.contentSize, required super.size, super.position});
   THANHPHANCUONDYTHUOCCAP({
-    required QuanLyTrangThaiTongQuat? globalState,
+    required GlobalStateManagementSystem? globalStateManagementSystem,
     required double? sizeDx,
     required double? sizeDy,
     required double? positionDx,
     required double? positionDy,
     required PositionComponent? noiDung,
   }) {
-    onVoidCaiDatGlobalState(value: globalState, caiDatUuTien: true);
+    onSetGlobalStateManagementSystem(value: globalStateManagementSystem, caiDatUuTien: true);
     onVoidCaiDatSizeDx(value: sizeDx, caiDatUuTien: true);
     onVoidCaiDatSizeDy(value: sizeDy, caiDatUuTien: true);
     onVoidCaiDatPositionDx(value: positionDx, caiDatUuTien: true);

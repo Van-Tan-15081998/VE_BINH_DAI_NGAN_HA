@@ -14,7 +14,7 @@ class QUANLYTHANHPHANMANHINHTHUOCCAP
   /// TODO:
   /// -----
   QUANLYTHANHPHANMANHINHTHUOCCAP({
-    required super.globalState,
+    required super.globalStateManagementSystem,
     required super.gameController,
     required super.thanhPhanQuanLyThuocCapTrucTiep,
     required super.sizeDx,
@@ -216,7 +216,7 @@ class QUANLYTHANHPHANMANHINHTHUOCCAP
     await Future.wait([
       onCaiDatKhungManHinhTabSS010(
         value: KHUNGMANHINHSS022310(
-          globalState: getGlobalState,
+          globalStateManagementSystem: getGlobalStateManagementSystem,
           gameController: getGameController,
           thanhPhanQuanLyThuocCapTrucTiep: getThanhPhanQuanLyThuocCapTrucTiep,
           sizeDx: sizeDxKhungManHinhTab,
@@ -228,7 +228,7 @@ class QUANLYTHANHPHANMANHINHTHUOCCAP
       ).catchError((e) => null),
       onCaiDatKhungManHinhTabSS020(
         value: KHUNGMANHINHSS022320(
-          globalState: getGlobalState,
+          globalStateManagementSystem: getGlobalStateManagementSystem,
           gameController: getGameController,
           thanhPhanQuanLyThuocCapTrucTiep: getThanhPhanQuanLyThuocCapTrucTiep,
           sizeDx: sizeDxKhungManHinhTab,
@@ -240,7 +240,7 @@ class QUANLYTHANHPHANMANHINHTHUOCCAP
       ).catchError((e) => null),
       onCaiDatKhungManHinhTabSS030(
         value: KHUNGMANHINHTABSS030THUOCCAPTABSS030CD(
-          globalState: getGlobalState,
+          globalStateManagementSystem: getGlobalStateManagementSystem,
           gameController: getGameController,
           thanhPhanQuanLyThuocCapTrucTiep: getThanhPhanQuanLyThuocCapTrucTiep,
           sizeDx: sizeDxKhungManHinhTab,

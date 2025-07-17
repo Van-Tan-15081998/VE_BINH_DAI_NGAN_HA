@@ -8,7 +8,7 @@ class VANBANDINHDANHKHUNGMANHINH extends VANBANDINHDANHKHUNGMANHINHTHUOCCAP {
   /// TODO:
   /// -----
   VANBANDINHDANHKHUNGMANHINH({
-    required super.globalState,
+    required super.globalStateManagementSystem,
     required super.gameController,
     required super.thanhPhanQuanLyThuocCapTrucTiep,
     required super.sizeDx,

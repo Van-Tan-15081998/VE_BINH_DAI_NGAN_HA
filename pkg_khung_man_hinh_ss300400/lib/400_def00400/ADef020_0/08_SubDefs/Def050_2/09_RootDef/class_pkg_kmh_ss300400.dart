@@ -9,7 +9,7 @@ class QUANLYTHANHPHANHINHANHTHUOCCAP extends QUANLYTHANHPHANHINHANHTHUOCCAPCOBAN
   /// -----
   /// TODO:
   /// -----
-  QUANLYTHANHPHANHINHANHTHUOCCAP({required super.globalState, required super.gameController, required super.thanhPhanQuanLyThuocCapTrucTiep, required super.sizeDx, required super.sizeDy});
+  QUANLYTHANHPHANHINHANHTHUOCCAP({required super.globalStateManagementSystem, required super.gameController, required super.thanhPhanQuanLyThuocCapTrucTiep, required super.sizeDx, required super.sizeDy});
 
   /// -----
   /// TODO:
@@ -67,7 +67,7 @@ class QUANLYTHANHPHANHINHANHTHUOCCAP extends QUANLYTHANHPHANHINHANHTHUOCCAPCOBAN
     await Future.wait([
       onCaiDatHinhAnhBackGround(
         value: HINHANHBACKGROUNDKHUNGMANHINH(
-          globalState: getGlobalState,
+          globalStateManagementSystem: getGlobalStateManagementSystem,
           gameController: getGameController,
           thanhPhanQuanLyThuocCapTrucTiep: getThanhPhanQuanLyThuocCapTrucTiep,
           sizeDx: sizeDxManHinhVatLy,

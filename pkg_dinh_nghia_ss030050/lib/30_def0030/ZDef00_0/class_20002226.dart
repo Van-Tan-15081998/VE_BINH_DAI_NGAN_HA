@@ -41,9 +41,9 @@ class QUANLYTRANGTHAISUKIENVACHAMTHUOCPHUONGTIEN extends SUKIENVACHAMTHUOCPHUONG
   /// -----
   @override
   Future<void> onSetupRoot() async {
-    final receivePort = ReceivePort();
-    await Isolate.spawn(onNhanDinhSuKienVaChamIsolateV2, receivePort.sendPort);
-    _sendPort = await receivePort.first;
+    // final receivePort = ReceivePort();
+    // await Isolate.spawn(onNhanDinhSuKienVaChamIsolateV2, receivePort.sendPort);
+    // _sendPort = await receivePort.first;
 
     _mapPhuongTienVaChamVienDan = {
       MOHINHPHUONGTIENVACHAM.maDinhDanhPhuongTienVaChamSS020: {},
@@ -426,15 +426,15 @@ class QUANLYTRANGTHAISUKIENVACHAMTHUOCPHUONGTIEN extends SUKIENVACHAMTHUOCPHUONG
     /// -----
     /// TODO:
     /// -----
-    Map<String, Map<String, dynamic>> danhSachPhuongTienVaChamVienDan = {};
-    danhSachPhuongTienVaChamVienDan = await onNhanDinhSuKienVaCham();
-
-    // await onVoidTichHopNhanDinhSuKienVaChamThuocPhuongTien(danhSachPhuongTienVaChamVienDan: danhSachPhuongTienVaChamVienDan);
-     onVoidTichHopNhanDinhSuKienVaChamThuocPhuongTienV2(danhSachPhuongTienVaChamVienDan: danhSachPhuongTienVaChamVienDan);
-    // await onVoidTichHopNhanDinhSuKienVaChamThuocPhuongTienV3(danhSachPhuongTienVaChamVienDan: danhSachPhuongTienVaChamVienDan);
-
-    ///
-    return;
+    // Map<String, Map<String, dynamic>> danhSachPhuongTienVaChamVienDan = {};
+    // danhSachPhuongTienVaChamVienDan = await onNhanDinhSuKienVaCham();
+    //
+    // // await onVoidTichHopNhanDinhSuKienVaChamThuocPhuongTien(danhSachPhuongTienVaChamVienDan: danhSachPhuongTienVaChamVienDan);
+    //  onVoidTichHopNhanDinhSuKienVaChamThuocPhuongTienV2(danhSachPhuongTienVaChamVienDan: danhSachPhuongTienVaChamVienDan);
+    // // await onVoidTichHopNhanDinhSuKienVaChamThuocPhuongTienV3(danhSachPhuongTienVaChamVienDan: danhSachPhuongTienVaChamVienDan);
+    //
+    // ///
+    // return;
   }
 
   /// -----

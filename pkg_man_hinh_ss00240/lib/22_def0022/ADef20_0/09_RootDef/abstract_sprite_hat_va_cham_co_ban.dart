@@ -12,7 +12,7 @@ abstract class SpriteHatVaChamCoBan extends SpriteAnimationComponent with HasVis
   /// -----
   /// TODO:
   /// -----
-  SpriteHatVaChamCoBan({required QuanLyTrangThaiTongQuat? trangThaiTongQuat, required Component? parentComponent}) {
+  SpriteHatVaChamCoBan({required GlobalStateManagementSystem? trangThaiTongQuat, required Component? parentComponent}) {
     caiDatTrangThaiTongQuat(value: trangThaiTongQuat);
     caiDatParentComponent(value: parentComponent);
   }
@@ -40,9 +40,9 @@ abstract class SpriteHatVaChamCoBan extends SpriteAnimationComponent with HasVis
   /// -----
   /// TODO: Quản Lý Trạng Thái Tổng Quát
   /// -----
-  QuanLyTrangThaiTongQuat? _trangThaiTongQuat;
-  QuanLyTrangThaiTongQuat? get getTrangThaiTongQuat => _trangThaiTongQuat;
-  Future<void> caiDatTrangThaiTongQuat({required QuanLyTrangThaiTongQuat? value}) async {
+  GlobalStateManagementSystem? _trangThaiTongQuat;
+  GlobalStateManagementSystem? get getTrangThaiTongQuat => _trangThaiTongQuat;
+  Future<void> caiDatTrangThaiTongQuat({required GlobalStateManagementSystem? value}) async {
     _trangThaiTongQuat ??= value;
     return;
   }

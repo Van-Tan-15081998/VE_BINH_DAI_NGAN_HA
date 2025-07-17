@@ -21,7 +21,7 @@ class QUANLYDIEUKHIENCHUYENKICHBANCHIENDAU with CauTrucThucThiCoBan, DanhSachQua
     /// -----
     /// TODO:
     /// -----
-    if (attachValue is QuanLyTrangThaiTongQuat) {
+    if (attachValue is GlobalStateManagementSystem) {
       await caiDatTienTrinhTongQuat(value: attachValue.getTienTrinhTongQuat);
 
       await caiDatChienDauCoTongQuat(value: attachValue.getChienDauCoTongQuat);
@@ -154,13 +154,43 @@ class QUANLYDIEUKHIENCHUYENKICHBANCHIENDAU with CauTrucThucThiCoBan, DanhSachQua
   /// -----
   /// TODO: Khởi Động Kịch Bản
   /// -----
-  Future<void> onKhoiDongKichBan({required QuanLyTrangThaiTongQuat? trangThaiTongQuat}) async {
-    await getNhiemVuChienDauChonChiDinh?.getMoHinh?.getKichBanChienDau?.onSetupRoot();
-    await getNhiemVuChienDauChonChiDinh?.getMoHinh?.getKichBanChienDau?.onAttachRoot(attachValue: trangThaiTongQuat);
-    await getNhiemVuChienDauChonChiDinh?.getMoHinh?.getKichBanChienDau?.onInitRoot();
+  Future<void> onKhoiDongKichBan({required GlobalStateManagementSystem? trangThaiTongQuat}) async {
+    CAUTRUCTHUCTHITUANTUCOBAN? cauTrucThucThiTuanTu = CAUTRUCTHUCTHITUANTUCOBAN.onMacDinh();
 
-    await getNhiemVuChienDauChonChiDinh?.getMoHinh?.getKichBanChienDau?.onTichHopThanhPhan();
-    await onTichHopTrangThaiPhuongTien();
+    cauTrucThucThiTuanTu.onAddDonViThucThiTuanTu(
+      onThucThiTuanTu: () async {
+        await getNhiemVuChienDauChonChiDinh?.getMoHinh?.getKichBanChienDau?.onSetupRoot();
+      },
+    );
+    cauTrucThucThiTuanTu.onAddDonViThucThiTuanTu(
+      onThucThiTuanTu: () async {
+        await getNhiemVuChienDauChonChiDinh?.getMoHinh?.getKichBanChienDau?.onAttachRoot(attachValue: trangThaiTongQuat);
+      },
+    );
+    cauTrucThucThiTuanTu.onAddDonViThucThiTuanTu(
+      onThucThiTuanTu: () async {
+        await getNhiemVuChienDauChonChiDinh?.getMoHinh?.getKichBanChienDau?.onInitRoot();
+      },
+    );
+    cauTrucThucThiTuanTu.onAddDonViThucThiTuanTu(
+      onThucThiTuanTu: () async {
+        await getNhiemVuChienDauChonChiDinh?.getMoHinh?.getKichBanChienDau?.onTichHopThanhPhan();
+      },
+    );
+    cauTrucThucThiTuanTu.onAddDonViThucThiTuanTu(
+      onThucThiTuanTu: () async {
+        await onTichHopTrangThaiPhuongTien();
+      },
+    );
+
+    cauTrucThucThiTuanTu.onThucThiTuanTu(interval: const Duration(milliseconds: 200));
+
+    // await getNhiemVuChienDauChonChiDinh?.getMoHinh?.getKichBanChienDau?.onSetupRoot();
+    // await getNhiemVuChienDauChonChiDinh?.getMoHinh?.getKichBanChienDau?.onAttachRoot(attachValue: trangThaiTongQuat);
+    // await getNhiemVuChienDauChonChiDinh?.getMoHinh?.getKichBanChienDau?.onInitRoot();
+    //
+    // await getNhiemVuChienDauChonChiDinh?.getMoHinh?.getKichBanChienDau?.onTichHopThanhPhan();
+    // await onTichHopTrangThaiPhuongTien();
 
     // await onTaiTaiNguyenPhuongTien();
 
@@ -267,8 +297,8 @@ class QUANLYDIEUKHIENCHUYENKICHBANCHIENDAU with CauTrucThucThiCoBan, DanhSachQua
     CAUTRUCTHUCTHITUANTUCOBAN? cauTrucThucThiTuanTu = CAUTRUCTHUCTHITUANTUCOBAN.onMacDinh();
 
     if (getDanhSachMaDinhDanhPhuongTien?.isNotEmpty == true) {
-      // for (int index = 0; index < (getDanhSachMaDinhDanhPhuongTien?.length ?? 0); index++) {
-      for (int index = 0; index < 20; index++) {
+      for (int index = 0; index < (getDanhSachMaDinhDanhPhuongTien?.length ?? 0); index++) {
+      // for (int index = 0; index < 2; index++) {
         cauTrucThucThiTuanTu.onAddDonViThucThiTuanTu(
           onThucThiTuanTu: () async {
             await onGetEntityResourceManagement?.getQuanLyTrangThaiHangarPhuongTien?.onTaiTaiNguyenPhuongTienTheoMaDinhDanh(maDinhDanhPhuongTien: getDanhSachMaDinhDanhPhuongTien?[index]);
@@ -280,7 +310,7 @@ class QUANLYDIEUKHIENCHUYENKICHBANCHIENDAU with CauTrucThucThiCoBan, DanhSachQua
     cauTrucThucThiTuanTu.onThucThiHoanTat = onThucThiHoanTat;
 
     // await cauTrucThucThiTuanTu.onThucThiTuanTu(interval: const Duration(milliseconds: 200));
-    cauTrucThucThiTuanTu.onThucThiTuanTu(interval: const Duration(milliseconds: 200));
+    cauTrucThucThiTuanTu.onThucThiTuanTu(interval: const Duration(milliseconds: 500));
 
     ///
     return;

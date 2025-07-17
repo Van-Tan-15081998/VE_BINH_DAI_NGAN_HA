@@ -25,6 +25,12 @@ dependencies:
   pkg_khung_man_hinh_ss022100:
     path: ../pkg_khung_man_hinh_ss022100
 
+  van_tan_export:
+    path: ../../van_tan/van_tan_exports/van_tan_export
+
+  package_export:
+    path: ../../packages/package_exports/package_export
+
 dev_dependencies:
   #  flutter_test:
   #    sdk: flutter

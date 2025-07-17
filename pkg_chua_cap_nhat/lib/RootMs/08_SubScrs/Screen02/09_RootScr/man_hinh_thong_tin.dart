@@ -16,9 +16,9 @@ class _ManHinhThongTinState extends State<ManHinhThongTin> with SingleTickerProv
   ///
   /// TODO:
   ///
-  QuanLyTrangThaiTongQuat? _trangThaiTongQuat;
-  QuanLyTrangThaiTongQuat? get getTrangThaiTongQuat => _trangThaiTongQuat;
-  Future<void> caiDatTrangThaiTongQuat({required QuanLyTrangThaiTongQuat? value}) async {
+  GlobalStateManagementSystem? _trangThaiTongQuat;
+  GlobalStateManagementSystem? get getTrangThaiTongQuat => _trangThaiTongQuat;
+  Future<void> caiDatTrangThaiTongQuat({required GlobalStateManagementSystem? value}) async {
     _trangThaiTongQuat ??= value;
     return;
   }
@@ -49,7 +49,7 @@ class _ManHinhThongTinState extends State<ManHinhThongTin> with SingleTickerProv
 
   @override
   Widget build(BuildContext context) {
-    final QuanLyTrangThaiTongQuat trangThaiTongQuat = Provider.of<QuanLyTrangThaiTongQuat>(context, listen: false);
+    final GlobalStateManagementSystem trangThaiTongQuat = Provider.of<GlobalStateManagementSystem>(context, listen: false);
     _trangThaiTongQuat ??= trangThaiTongQuat;
 
     return Center(

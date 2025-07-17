@@ -10,7 +10,7 @@ mixin CAUTRUCTANCONGXAMCHIEMCOBAN {
   /// -----
 
   Future<void> onAttachRoot({required dynamic attachValue}) async {
-    if (attachValue is QuanLyTrangThaiTongQuat) {
+    if (attachValue is GlobalStateManagementSystem) {
       ///
     }
 
@@ -62,7 +62,7 @@ mixin CAUTRUCTANCONGXAMCHIEMCOBAN {
   /// TODO: Attach Root For SubCom
   /// -----
   Future<void> onAttachRootForSubCom({required dynamic attachValue}) async {
-    if (attachValue is QuanLyTrangThaiTongQuat) {
+    if (attachValue is GlobalStateManagementSystem) {
       ///
     }
 

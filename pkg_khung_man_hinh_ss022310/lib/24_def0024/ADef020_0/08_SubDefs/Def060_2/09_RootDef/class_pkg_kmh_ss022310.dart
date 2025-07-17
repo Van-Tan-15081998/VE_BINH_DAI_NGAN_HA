@@ -63,7 +63,7 @@ class QUANLYTHANHPHANTICHHOPTHUOCCAP
   /// TODO:
   /// -----
   QUANLYTHANHPHANTICHHOPTHUOCCAP({
-    required super.globalState,
+    required super.globalStateManagementSystem,
     required super.gameController,
     required super.thanhPhanQuanLyThuocCapTrucTiep,
     required super.sizeDx,
@@ -1711,7 +1711,7 @@ class QUANLYTHANHPHANTICHHOPTHUOCCAP
       await Future.wait([
         onCaiDatNutBamChuyenChonChiDinhTrai(
           value: NUTBAMCHUYENCHONCHIDINHTRAI(
-            globalState: getGlobalState,
+            globalStateManagementSystem: getGlobalStateManagementSystem,
             gameController: getGameController,
             thanhPhanQuanLyThuocCapTrucTiep: getThanhPhanQuanLyThuocCapTrucTiep,
             sizeDx: sizeDxNutBamChuyenChonChiDinh,
@@ -1728,7 +1728,7 @@ class QUANLYTHANHPHANTICHHOPTHUOCCAP
         ).catchError((e) => null),
         onCaiDatNutBamChuyenChonChiDinhPhai(
           value: NUTBAMCHUYENCHONCHIDINHPHAI(
-            globalState: getGlobalState,
+            globalStateManagementSystem: getGlobalStateManagementSystem,
             gameController: getGameController,
             thanhPhanQuanLyThuocCapTrucTiep: getThanhPhanQuanLyThuocCapTrucTiep,
             sizeDx: sizeDxNutBamChuyenChonChiDinh,
@@ -1747,7 +1747,7 @@ class QUANLYTHANHPHANTICHHOPTHUOCCAP
         ///
         onCaiDatCardChienDauCo00E03SS01(
           value: CARDCHIENDAUCODANGCAPSAO00E03SS01(
-            globalState: getGlobalState,
+            globalStateManagementSystem: getGlobalStateManagementSystem,
             gameController: getGameController,
             thanhPhanQuanLyThuocCapTrucTiep: getThanhPhanQuanLyThuocCapTrucTiep,
             sizeDx: sizeDxCard,
@@ -1764,7 +1764,7 @@ class QUANLYTHANHPHANTICHHOPTHUOCCAP
         ).catchError((e) => null),
         onCaiDatCardChienDauCo00E03SS02(
           value: CARDCHIENDAUCODANGCAPSAO00E03SS02(
-            globalState: getGlobalState,
+            globalStateManagementSystem: getGlobalStateManagementSystem,
             gameController: getGameController,
             thanhPhanQuanLyThuocCapTrucTiep: getThanhPhanQuanLyThuocCapTrucTiep,
             sizeDx: sizeDxCard,
@@ -1781,7 +1781,7 @@ class QUANLYTHANHPHANTICHHOPTHUOCCAP
         ).catchError((e) => null),
         onCaiDatCardChienDauCo00E03SS03(
           value: CARDCHIENDAUCODANGCAPSAO00E03SS03(
-            globalState: getGlobalState,
+            globalStateManagementSystem: getGlobalStateManagementSystem,
             gameController: getGameController,
             thanhPhanQuanLyThuocCapTrucTiep: getThanhPhanQuanLyThuocCapTrucTiep,
             sizeDx: sizeDxCard,
@@ -1799,7 +1799,7 @@ class QUANLYTHANHPHANTICHHOPTHUOCCAP
 
         onCaiDatCardChienDauCo00D04SS01(
           value: CARDCHIENDAUCODANGCAPSAO00D04SS01(
-            globalState: getGlobalState,
+            globalStateManagementSystem: getGlobalStateManagementSystem,
             gameController: getGameController,
             thanhPhanQuanLyThuocCapTrucTiep: getThanhPhanQuanLyThuocCapTrucTiep,
             sizeDx: sizeDxCard,
@@ -1817,7 +1817,7 @@ class QUANLYTHANHPHANTICHHOPTHUOCCAP
 
         onCaiDatCardChienDauCo00C05SS01(
           value: CARDCHIENDAUCODANGCAPSAO00C05SS01(
-            globalState: getGlobalState,
+            globalStateManagementSystem: getGlobalStateManagementSystem,
             gameController: getGameController,
             thanhPhanQuanLyThuocCapTrucTiep: getThanhPhanQuanLyThuocCapTrucTiep,
             sizeDx: sizeDxCard,
@@ -1835,7 +1835,7 @@ class QUANLYTHANHPHANTICHHOPTHUOCCAP
 
         onCaiDatCardChienDauCo00B06SS01(
           value: CARDCHIENDAUCODANGCAPSAO00B06SS01(
-            globalState: getGlobalState,
+            globalStateManagementSystem: getGlobalStateManagementSystem,
             gameController: getGameController,
             thanhPhanQuanLyThuocCapTrucTiep: getThanhPhanQuanLyThuocCapTrucTiep,
             sizeDx: sizeDxCard,
@@ -1853,7 +1853,7 @@ class QUANLYTHANHPHANTICHHOPTHUOCCAP
 
         onCaiDatCardChienDauCo00A07SS01(
           value: CARDCHIENDAUCODANGCAPSAO00A07SS01(
-            globalState: getGlobalState,
+            globalStateManagementSystem: getGlobalStateManagementSystem,
             gameController: getGameController,
             thanhPhanQuanLyThuocCapTrucTiep: getThanhPhanQuanLyThuocCapTrucTiep,
             sizeDx: sizeDxCard,
@@ -1871,7 +1871,7 @@ class QUANLYTHANHPHANTICHHOPTHUOCCAP
 
         onCaiDatCardChienDauCo00S08SS01(
           value: CARDCHIENDAUCODANGCAPSAO00S08SS01(
-            globalState: getGlobalState,
+            globalStateManagementSystem: getGlobalStateManagementSystem,
             gameController: getGameController,
             thanhPhanQuanLyThuocCapTrucTiep: getThanhPhanQuanLyThuocCapTrucTiep,
             sizeDx: sizeDxCard,
@@ -1889,7 +1889,7 @@ class QUANLYTHANHPHANTICHHOPTHUOCCAP
 
         onCaiDatCardChienDauCo0SS09SS01(
           value: CARDCHIENDAUCODANGCAPSAO0SS09SS01(
-            globalState: getGlobalState,
+            globalStateManagementSystem: getGlobalStateManagementSystem,
             gameController: getGameController,
             thanhPhanQuanLyThuocCapTrucTiep: getThanhPhanQuanLyThuocCapTrucTiep,
             sizeDx: sizeDxCard,
@@ -1907,7 +1907,7 @@ class QUANLYTHANHPHANTICHHOPTHUOCCAP
 
         onCaiDatCardChienDauCo0SS09SS02(
           value: CARDCHIENDAUCODANGCAPSAO0SS09SS02(
-            globalState: getGlobalState,
+            globalStateManagementSystem: getGlobalStateManagementSystem,
             gameController: getGameController,
             thanhPhanQuanLyThuocCapTrucTiep: getThanhPhanQuanLyThuocCapTrucTiep,
             sizeDx: sizeDxCard,
@@ -1925,7 +1925,7 @@ class QUANLYTHANHPHANTICHHOPTHUOCCAP
 
         onCaiDatCardChienDauCo0SS09SS03(
           value: CARDCHIENDAUCODANGCAPSAO0SS09SS03(
-            globalState: getGlobalState,
+            globalStateManagementSystem: getGlobalStateManagementSystem,
             gameController: getGameController,
             thanhPhanQuanLyThuocCapTrucTiep: getThanhPhanQuanLyThuocCapTrucTiep,
             sizeDx: sizeDxCard,
@@ -1943,7 +1943,7 @@ class QUANLYTHANHPHANTICHHOPTHUOCCAP
 
         onCaiDatCardChienDauCoSSS10SS01(
           value: CARDCHIENDAUCODANGCAPSAOSSS10SS01(
-            globalState: getGlobalState,
+            globalStateManagementSystem: getGlobalStateManagementSystem,
             gameController: getGameController,
             thanhPhanQuanLyThuocCapTrucTiep: getThanhPhanQuanLyThuocCapTrucTiep,
             sizeDx: sizeDxCard,
@@ -1961,7 +1961,7 @@ class QUANLYTHANHPHANTICHHOPTHUOCCAP
 
         onCaiDatCardChienDauCoSSS10SS02(
           value: CARDCHIENDAUCODANGCAPSAOSSS10SS02(
-            globalState: getGlobalState,
+            globalStateManagementSystem: getGlobalStateManagementSystem,
             gameController: getGameController,
             thanhPhanQuanLyThuocCapTrucTiep: getThanhPhanQuanLyThuocCapTrucTiep,
             sizeDx: sizeDxCard,
@@ -1979,7 +1979,7 @@ class QUANLYTHANHPHANTICHHOPTHUOCCAP
 
         onCaiDatCardChienDauCoSSS10SS03(
           value: CARDCHIENDAUCODANGCAPSAOSSS10SS03(
-            globalState: getGlobalState,
+            globalStateManagementSystem: getGlobalStateManagementSystem,
             gameController: getGameController,
             thanhPhanQuanLyThuocCapTrucTiep: getThanhPhanQuanLyThuocCapTrucTiep,
             sizeDx: sizeDxCard,
@@ -1997,7 +1997,7 @@ class QUANLYTHANHPHANTICHHOPTHUOCCAP
 
         onCaiDatCardChienDauCoSSS10SS04(
           value: CARDCHIENDAUCODANGCAPSAOSSS10SS04(
-            globalState: getGlobalState,
+            globalStateManagementSystem: getGlobalStateManagementSystem,
             gameController: getGameController,
             thanhPhanQuanLyThuocCapTrucTiep: getThanhPhanQuanLyThuocCapTrucTiep,
             sizeDx: sizeDxCard,
@@ -2015,7 +2015,7 @@ class QUANLYTHANHPHANTICHHOPTHUOCCAP
 
         onCaiDatCardChienDauCoSSS10SS05(
           value: CARDCHIENDAUCODANGCAPSAOSSS10SS05(
-            globalState: getGlobalState,
+            globalStateManagementSystem: getGlobalStateManagementSystem,
             gameController: getGameController,
             thanhPhanQuanLyThuocCapTrucTiep: getThanhPhanQuanLyThuocCapTrucTiep,
             sizeDx: sizeDxCard,
@@ -2036,7 +2036,7 @@ class QUANLYTHANHPHANTICHHOPTHUOCCAP
         ///
         onCaiDatCardChienDauCoChonChiDinh(
           value: CARDCHIENDAUCOCHONCHIDINH(
-            globalState: getGlobalState,
+            globalStateManagementSystem: getGlobalStateManagementSystem,
             gameController: getGameController,
             thanhPhanQuanLyThuocCapTrucTiep: getThanhPhanQuanLyThuocCapTrucTiep,
             sizeDx: donViChieuRong * 2.0,
@@ -2057,7 +2057,7 @@ class QUANLYTHANHPHANTICHHOPTHUOCCAP
         ///
         // onCaiDatKhungNutBamMuaChienDauCoChonChiDinh(
         //   value: KHUNGNUTBAMMUACHIENDAUCOCHONCHIDINH(
-        //     globalState: getGlobalState,
+        //     globalStateManagementSystem: getGlobalStateManagementSystem,
         //     gameController: getGameController, thanhPhanQuanLyThuocCapTrucTiep: getThanhPhanQuanLyThuocCapTrucTiep,
         //     sizeDx: donViChieuRong * 3.0,
         //     sizeDy: donViChieuRong * 2.2,
@@ -2077,7 +2077,7 @@ class QUANLYTHANHPHANTICHHOPTHUOCCAP
         /// -----
         onCaiDatCostChienDauCo00E03SS01(
           value: KHUNGTAINGUYENTRAODOIMUACHIENDAUCODANGCAPSAO00E03SS01(
-            globalState: getGlobalState,
+            globalStateManagementSystem: getGlobalStateManagementSystem,
             gameController: getGameController,
             thanhPhanQuanLyThuocCapTrucTiep: getThanhPhanQuanLyThuocCapTrucTiep,
             sizeDx: sizeDxCost,
@@ -2089,7 +2089,7 @@ class QUANLYTHANHPHANTICHHOPTHUOCCAP
         ).catchError((e) => null),
         onCaiDatCostChienDauCo00E03SS02(
           value: KHUNGTAINGUYENTRAODOIMUACHIENDAUCODANGCAPSAO00E03SS02(
-            globalState: getGlobalState,
+            globalStateManagementSystem: getGlobalStateManagementSystem,
             gameController: getGameController,
             thanhPhanQuanLyThuocCapTrucTiep: getThanhPhanQuanLyThuocCapTrucTiep,
             sizeDx: sizeDxCost,
@@ -2101,7 +2101,7 @@ class QUANLYTHANHPHANTICHHOPTHUOCCAP
         ).catchError((e) => null),
         onCaiDatCostChienDauCo00E03SS03(
           value: KHUNGTAINGUYENTRAODOIMUACHIENDAUCODANGCAPSAO00E03SS03(
-            globalState: getGlobalState,
+            globalStateManagementSystem: getGlobalStateManagementSystem,
             gameController: getGameController,
             thanhPhanQuanLyThuocCapTrucTiep: getThanhPhanQuanLyThuocCapTrucTiep,
             sizeDx: sizeDxCost,
@@ -2114,7 +2114,7 @@ class QUANLYTHANHPHANTICHHOPTHUOCCAP
 
         onCaiDatCostChienDauCo00D04SS01(
           value: KHUNGTAINGUYENTRAODOIMUACHIENDAUCODANGCAPSAO00D04SS01(
-            globalState: getGlobalState,
+            globalStateManagementSystem: getGlobalStateManagementSystem,
             gameController: getGameController,
             thanhPhanQuanLyThuocCapTrucTiep: getThanhPhanQuanLyThuocCapTrucTiep,
             sizeDx: sizeDxCost,
@@ -2127,7 +2127,7 @@ class QUANLYTHANHPHANTICHHOPTHUOCCAP
 
         onCaiDatCostChienDauCo00C05SS01(
           value: KHUNGTAINGUYENTRAODOIMUACHIENDAUCODANGCAPSAO00C05SS01(
-            globalState: getGlobalState,
+            globalStateManagementSystem: getGlobalStateManagementSystem,
             gameController: getGameController,
             thanhPhanQuanLyThuocCapTrucTiep: getThanhPhanQuanLyThuocCapTrucTiep,
             sizeDx: sizeDxCost,
@@ -2140,7 +2140,7 @@ class QUANLYTHANHPHANTICHHOPTHUOCCAP
 
         onCaiDatCostChienDauCo00B06SS01(
           value: KHUNGTAINGUYENTRAODOIMUACHIENDAUCODANGCAPSAO00B06SS01(
-            globalState: getGlobalState,
+            globalStateManagementSystem: getGlobalStateManagementSystem,
             gameController: getGameController,
             thanhPhanQuanLyThuocCapTrucTiep: getThanhPhanQuanLyThuocCapTrucTiep,
             sizeDx: sizeDxCost,
@@ -2153,7 +2153,7 @@ class QUANLYTHANHPHANTICHHOPTHUOCCAP
 
         onCaiDatCostChienDauCo00A07SS01(
           value: KHUNGTAINGUYENTRAODOIMUACHIENDAUCODANGCAPSAO00A07SS01(
-            globalState: getGlobalState,
+            globalStateManagementSystem: getGlobalStateManagementSystem,
             gameController: getGameController,
             thanhPhanQuanLyThuocCapTrucTiep: getThanhPhanQuanLyThuocCapTrucTiep,
             sizeDx: sizeDxCost,
@@ -2166,7 +2166,7 @@ class QUANLYTHANHPHANTICHHOPTHUOCCAP
 
         onCaiDatCostChienDauCo00S08SS01(
           value: KHUNGTAINGUYENTRAODOIMUACHIENDAUCODANGCAPSAO00S08SS01(
-            globalState: getGlobalState,
+            globalStateManagementSystem: getGlobalStateManagementSystem,
             gameController: getGameController,
             thanhPhanQuanLyThuocCapTrucTiep: getThanhPhanQuanLyThuocCapTrucTiep,
             sizeDx: sizeDxCost,
@@ -2179,7 +2179,7 @@ class QUANLYTHANHPHANTICHHOPTHUOCCAP
 
         onCaiDatCostChienDauCo0SS09SS01(
           value: KHUNGTAINGUYENTRAODOIMUACHIENDAUCODANGCAPSAO0SS09SS01(
-            globalState: getGlobalState,
+            globalStateManagementSystem: getGlobalStateManagementSystem,
             gameController: getGameController,
             thanhPhanQuanLyThuocCapTrucTiep: getThanhPhanQuanLyThuocCapTrucTiep,
             sizeDx: sizeDxCost,
@@ -2192,7 +2192,7 @@ class QUANLYTHANHPHANTICHHOPTHUOCCAP
 
         onCaiDatCostChienDauCo0SS09SS02(
           value: KHUNGTAINGUYENTRAODOIMUACHIENDAUCODANGCAPSAO0SS09SS02(
-            globalState: getGlobalState,
+            globalStateManagementSystem: getGlobalStateManagementSystem,
             gameController: getGameController,
             thanhPhanQuanLyThuocCapTrucTiep: getThanhPhanQuanLyThuocCapTrucTiep,
             sizeDx: sizeDxCost,
@@ -2205,7 +2205,7 @@ class QUANLYTHANHPHANTICHHOPTHUOCCAP
 
         onCaiDatCostChienDauCo0SS09SS03(
           value: KHUNGTAINGUYENTRAODOIMUACHIENDAUCODANGCAPSAO0SS09SS03(
-            globalState: getGlobalState,
+            globalStateManagementSystem: getGlobalStateManagementSystem,
             gameController: getGameController,
             thanhPhanQuanLyThuocCapTrucTiep: getThanhPhanQuanLyThuocCapTrucTiep,
             sizeDx: sizeDxCost,
@@ -2218,7 +2218,7 @@ class QUANLYTHANHPHANTICHHOPTHUOCCAP
 
         onCaiDatCostChienDauCoSSS10SS01(
           value: KHUNGTAINGUYENTRAODOIMUACHIENDAUCODANGCAPSAOSSS10SS01(
-            globalState: getGlobalState,
+            globalStateManagementSystem: getGlobalStateManagementSystem,
             gameController: getGameController,
             thanhPhanQuanLyThuocCapTrucTiep: getThanhPhanQuanLyThuocCapTrucTiep,
             sizeDx: sizeDxCost,
@@ -2231,7 +2231,7 @@ class QUANLYTHANHPHANTICHHOPTHUOCCAP
 
         onCaiDatCostChienDauCoSSS10SS02(
           value: KHUNGTAINGUYENTRAODOIMUACHIENDAUCODANGCAPSAOSSS10SS02(
-            globalState: getGlobalState,
+            globalStateManagementSystem: getGlobalStateManagementSystem,
             gameController: getGameController,
             thanhPhanQuanLyThuocCapTrucTiep: getThanhPhanQuanLyThuocCapTrucTiep,
             sizeDx: sizeDxCost,
@@ -2244,7 +2244,7 @@ class QUANLYTHANHPHANTICHHOPTHUOCCAP
 
         onCaiDatCostChienDauCoSSS10SS03(
           value: KHUNGTAINGUYENTRAODOIMUACHIENDAUCODANGCAPSAOSSS10SS03(
-            globalState: getGlobalState,
+            globalStateManagementSystem: getGlobalStateManagementSystem,
             gameController: getGameController,
             thanhPhanQuanLyThuocCapTrucTiep: getThanhPhanQuanLyThuocCapTrucTiep,
             sizeDx: sizeDxCost,
@@ -2257,7 +2257,7 @@ class QUANLYTHANHPHANTICHHOPTHUOCCAP
 
         onCaiDatCostChienDauCoSSS10SS04(
           value: KHUNGTAINGUYENTRAODOIMUACHIENDAUCODANGCAPSAOSSS10SS04(
-            globalState: getGlobalState,
+            globalStateManagementSystem: getGlobalStateManagementSystem,
             gameController: getGameController,
             thanhPhanQuanLyThuocCapTrucTiep: getThanhPhanQuanLyThuocCapTrucTiep,
             sizeDx: sizeDxCost,
@@ -2270,7 +2270,7 @@ class QUANLYTHANHPHANTICHHOPTHUOCCAP
 
         onCaiDatCostChienDauCoSSS10SS05(
           value: KHUNGTAINGUYENTRAODOIMUACHIENDAUCODANGCAPSAOSSS10SS05(
-            globalState: getGlobalState,
+            globalStateManagementSystem: getGlobalStateManagementSystem,
             gameController: getGameController,
             thanhPhanQuanLyThuocCapTrucTiep: getThanhPhanQuanLyThuocCapTrucTiep,
             sizeDx: sizeDxCost,
@@ -2286,7 +2286,7 @@ class QUANLYTHANHPHANTICHHOPTHUOCCAP
         ///
         onCaiDatKhungDcsChienDauCo00E03SS01(
           value: KHUNGDCSCHIENDAUCODANGCAPSAO00E03SS01(
-            globalState: getGlobalState,
+            globalStateManagementSystem: getGlobalStateManagementSystem,
             sizeDx: sizeDxDcs,
             sizeDy: sizeDyDcs,
             positionDx: sizeDxKhungManHinh - (sizeDxDcs / 2.0 + 15.0),
@@ -2296,7 +2296,7 @@ class QUANLYTHANHPHANTICHHOPTHUOCCAP
         ).catchError((e) => null),
         onCaiDatKhungDcsChienDauCo00E03SS02(
           value: KHUNGDCSCHIENDAUCODANGCAPSAO00E03SS02(
-            globalState: getGlobalState,
+            globalStateManagementSystem: getGlobalStateManagementSystem,
             sizeDx: sizeDxDcs,
             sizeDy: sizeDyDcs,
             positionDx: sizeDxKhungManHinh - (sizeDxDcs / 2.0 + 15.0),
@@ -2306,7 +2306,7 @@ class QUANLYTHANHPHANTICHHOPTHUOCCAP
         ).catchError((e) => null),
         onCaiDatKhungDcsChienDauCo00E03SS03(
           value: KHUNGDCSCHIENDAUCODANGCAPSAO00E03SS03(
-            globalState: getGlobalState,
+            globalStateManagementSystem: getGlobalStateManagementSystem,
             sizeDx: sizeDxDcs,
             sizeDy: sizeDyDcs,
             positionDx: sizeDxKhungManHinh - (sizeDxDcs / 2.0 + 15.0),
@@ -2317,7 +2317,7 @@ class QUANLYTHANHPHANTICHHOPTHUOCCAP
 
         onCaiDatKhungDcsChienDauCo00D04SS01(
           value: KHUNGDCSCHIENDAUCODANGCAPSAO00D04SS01(
-            globalState: getGlobalState,
+            globalStateManagementSystem: getGlobalStateManagementSystem,
             sizeDx: sizeDxDcs,
             sizeDy: sizeDyDcs,
             positionDx: sizeDxKhungManHinh - (sizeDxDcs / 2.0 + 15.0),
@@ -2328,7 +2328,7 @@ class QUANLYTHANHPHANTICHHOPTHUOCCAP
 
         onCaiDatKhungDcsChienDauCo00C05SS01(
           value: KHUNGDCSCHIENDAUCODANGCAPSAO00C05SS01(
-            globalState: getGlobalState,
+            globalStateManagementSystem: getGlobalStateManagementSystem,
             sizeDx: sizeDxDcs,
             sizeDy: sizeDyDcs,
             positionDx: sizeDxKhungManHinh - (sizeDxDcs / 2.0 + 15.0),
@@ -2339,7 +2339,7 @@ class QUANLYTHANHPHANTICHHOPTHUOCCAP
 
         onCaiDatKhungDcsChienDauCo00B06SS01(
           value: KHUNGDCSCHIENDAUCODANGCAPSAO00B06SS01(
-            globalState: getGlobalState,
+            globalStateManagementSystem: getGlobalStateManagementSystem,
             sizeDx: sizeDxDcs,
             sizeDy: sizeDyDcs,
             positionDx: sizeDxKhungManHinh - (sizeDxDcs / 2.0 + 15.0),
@@ -2350,7 +2350,7 @@ class QUANLYTHANHPHANTICHHOPTHUOCCAP
 
         onCaiDatKhungDcsChienDauCo00A07SS01(
           value: KHUNGDCSCHIENDAUCODANGCAPSAO00A07SS01(
-            globalState: getGlobalState,
+            globalStateManagementSystem: getGlobalStateManagementSystem,
             sizeDx: sizeDxDcs,
             sizeDy: sizeDyDcs,
             positionDx: sizeDxKhungManHinh - (sizeDxDcs / 2.0 + 15.0),
@@ -2361,7 +2361,7 @@ class QUANLYTHANHPHANTICHHOPTHUOCCAP
 
         onCaiDatKhungDcsChienDauCo00S08SS01(
           value: KHUNGDCSCHIENDAUCODANGCAPSAO00S08SS01(
-            globalState: getGlobalState,
+            globalStateManagementSystem: getGlobalStateManagementSystem,
             sizeDx: sizeDxDcs,
             sizeDy: sizeDyDcs,
             positionDx: sizeDxKhungManHinh - (sizeDxDcs / 2.0 + 15.0),
@@ -2372,7 +2372,7 @@ class QUANLYTHANHPHANTICHHOPTHUOCCAP
 
         onCaiDatKhungDcsChienDauCo0SS09SS01(
           value: KHUNGDCSCHIENDAUCODANGCAPSAO0SS09SS01(
-            globalState: getGlobalState,
+            globalStateManagementSystem: getGlobalStateManagementSystem,
             sizeDx: sizeDxDcs * 1.35,
             sizeDy: sizeDyDcs,
             positionDx: sizeDxKhungManHinh - ((sizeDxDcs * 1.35) / 2.0 + 15.0),
@@ -2383,7 +2383,7 @@ class QUANLYTHANHPHANTICHHOPTHUOCCAP
 
         onCaiDatKhungDcsChienDauCo0SS09SS02(
           value: KHUNGDCSCHIENDAUCODANGCAPSAO0SS09SS02(
-            globalState: getGlobalState,
+            globalStateManagementSystem: getGlobalStateManagementSystem,
             sizeDx: sizeDxDcs * 1.35,
             sizeDy: sizeDyDcs,
             positionDx: sizeDxKhungManHinh - ((sizeDxDcs * 1.35) / 2.0 + 15.0),
@@ -2394,7 +2394,7 @@ class QUANLYTHANHPHANTICHHOPTHUOCCAP
 
         onCaiDatKhungDcsChienDauCo0SS09SS03(
           value: KHUNGDCSCHIENDAUCODANGCAPSAO0SS09SS03(
-            globalState: getGlobalState,
+            globalStateManagementSystem: getGlobalStateManagementSystem,
             sizeDx: sizeDxDcs * 1.35,
             sizeDy: sizeDyDcs,
             positionDx: sizeDxKhungManHinh - ((sizeDxDcs * 1.35) / 2.0 + 15.0),
@@ -2405,7 +2405,7 @@ class QUANLYTHANHPHANTICHHOPTHUOCCAP
 
         onCaiDatKhungDcsChienDauCoSSS10SS01(
           value: KHUNGDCSCHIENDAUCODANGCAPSAOSSS10SS01(
-            globalState: getGlobalState,
+            globalStateManagementSystem: getGlobalStateManagementSystem,
             sizeDx: sizeDxDcs * 1.85,
             sizeDy: sizeDyDcs,
             positionDx: sizeDxKhungManHinh - ((sizeDxDcs * 1.85) / 2.0 + 15.0),
@@ -2416,7 +2416,7 @@ class QUANLYTHANHPHANTICHHOPTHUOCCAP
 
         onCaiDatKhungDcsChienDauCoSSS10SS02(
           value: KHUNGDCSCHIENDAUCODANGCAPSAOSSS10SS02(
-            globalState: getGlobalState,
+            globalStateManagementSystem: getGlobalStateManagementSystem,
             sizeDx: sizeDxDcs * 1.85,
             sizeDy: sizeDyDcs,
             positionDx: sizeDxKhungManHinh - ((sizeDxDcs * 1.85) / 2.0 + 15.0),
@@ -2427,7 +2427,7 @@ class QUANLYTHANHPHANTICHHOPTHUOCCAP
 
         onCaiDatKhungDcsChienDauCoSSS10SS03(
           value: KHUNGDCSCHIENDAUCODANGCAPSAOSSS10SS03(
-            globalState: getGlobalState,
+            globalStateManagementSystem: getGlobalStateManagementSystem,
             sizeDx: sizeDxDcs * 1.85,
             sizeDy: sizeDyDcs,
             positionDx: sizeDxKhungManHinh - ((sizeDxDcs * 1.85) / 2.0 + 15.0),
@@ -2438,7 +2438,7 @@ class QUANLYTHANHPHANTICHHOPTHUOCCAP
 
         onCaiDatKhungDcsChienDauCoSSS10SS04(
           value: KHUNGDCSCHIENDAUCODANGCAPSAOSSS10SS04(
-            globalState: getGlobalState,
+            globalStateManagementSystem: getGlobalStateManagementSystem,
             sizeDx: sizeDxDcs * 1.85,
             sizeDy: sizeDyDcs,
             positionDx: sizeDxKhungManHinh - ((sizeDxDcs * 1.85) / 2.0 + 15.0),
@@ -2449,7 +2449,7 @@ class QUANLYTHANHPHANTICHHOPTHUOCCAP
 
         onCaiDatKhungDcsChienDauCoSSS10SS05(
           value: KHUNGDCSCHIENDAUCODANGCAPSAOSSS10SS05(
-            globalState: getGlobalState,
+            globalStateManagementSystem: getGlobalStateManagementSystem,
             sizeDx: sizeDxDcs * 1.85,
             sizeDy: sizeDyDcs,
             positionDx: sizeDxKhungManHinh - ((sizeDxDcs * 1.85) / 2.0 + 15.0),

@@ -202,9 +202,3 @@ export '26_def0026/ADef40_0/08_SubDefs/Def20_2/09_RootDef/class_20000028.dart';
 /// TODO: _____[PHAN_TICH_TAI_NGUYEN_HINH_ANH_CO_BAN]_____
 export '26_def0026/ADef26_0/class_20000060.dart';
 
-
-/// A Calculator.
-class Calculator {
-  /// Returns [value] plus 1.
-  int addOne(int value) => value + 1;
-}

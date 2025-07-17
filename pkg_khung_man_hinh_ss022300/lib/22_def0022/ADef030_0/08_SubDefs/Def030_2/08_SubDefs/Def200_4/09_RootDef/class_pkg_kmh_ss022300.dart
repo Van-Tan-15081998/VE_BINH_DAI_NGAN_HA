@@ -9,7 +9,7 @@ class NUTBAMCHUYENTUDONG extends THANHPHANNUTBAMTHUOCCAPTHUANKICHHOAT {
   /// TODO:
   /// -----
   NUTBAMCHUYENTUDONG({
-    required super.globalState,
+    required super.globalStateManagementSystem,
     required super.gameController,
     required super.thanhPhanQuanLyThuocCapTrucTiep,
     required super.sizeDx,

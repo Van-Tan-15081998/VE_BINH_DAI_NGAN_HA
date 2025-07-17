@@ -33,8 +33,4 @@ export '26_def0026/ADef20_0/08_SubDefs/Def20_2/07_DiStates/Def20_2/09_RootDef/cl
 /// TODO: _____[QUAN_LY_TRANG_THAI_TONG_QUAT_BAN_DO_CHIEN_DAU]_____
 export '30_def0030/ZDef00_0/class_20000022.dart';
 
-/// A Calculator.
-class Calculator {
-  /// Returns [value] plus 1.
-  int addOne(int value) => value + 1;
-}
+

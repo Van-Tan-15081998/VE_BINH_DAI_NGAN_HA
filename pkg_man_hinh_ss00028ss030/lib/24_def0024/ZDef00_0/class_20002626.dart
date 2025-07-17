@@ -19,7 +19,7 @@ class MANHINHCHIDINHCHONNHIEMVUCHIENDAU extends StatefulWidget {
   /// -----
   /// TODO:
   /// -----
-  final QuanLyTrangThaiTongQuat? trangThaiTongQuat;
+  final GlobalStateManagementSystem? trangThaiTongQuat;
 
   /// -----
   /// TODO:

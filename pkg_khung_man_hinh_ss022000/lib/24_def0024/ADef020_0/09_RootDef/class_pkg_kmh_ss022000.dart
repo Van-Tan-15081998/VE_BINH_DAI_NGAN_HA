@@ -23,7 +23,7 @@ class KHUNGMANHINHCHINH extends KHUNGMANHINHGAMECOSO {
   /// -----
   /// TODO:
   /// -----
-  KHUNGMANHINHCHINH({required super.globalState, required super.sizeDx, required super.sizeDy});
+  KHUNGMANHINHCHINH({required super.globalStateManagementSystem, required super.sizeDx, required super.sizeDy});
 
   /// -----
   /// TODO: Khởi Động Game Cơ Sở SS000 [Giai Đoạn Khởi Động SS000]
@@ -32,12 +32,12 @@ class KHUNGMANHINHCHINH extends KHUNGMANHINHGAMECOSO {
   Future<void> onKhoiDongGameCoSoSS000() async {
     if (getGiaiDoanKhoiDongGame?.isGiaiDoanSS000() == true) {
       try {
-        double sizeDxManHinhVatLy = getGlobalState?.getChieuRongManHinhVatLy ?? 100.0;
-        double sizeDyManHinhVatLy = getGlobalState?.getChieuCaoManHinhVatLy ?? 100.0;
+        double sizeDxManHinhVatLy = getGlobalStateManagementSystem?.getChieuRongManHinhVatLy ?? 100.0;
+        double sizeDyManHinhVatLy = getGlobalStateManagementSystem?.getChieuCaoManHinhVatLy ?? 100.0;
 
         await onCaiDatKhungManHinhMasterLoading(
           value: KHUNGMANHINHMASTERLOADING(
-            globalState: getGlobalState,
+            globalStateManagementSystem: getGlobalStateManagementSystem,
             gameController: this,
             thanhPhanQuanLyThuocCapTrucTiep: null,
             sizeDx: sizeDxManHinhVatLy,
@@ -80,22 +80,22 @@ class KHUNGMANHINHCHINH extends KHUNGMANHINHGAMECOSO {
     CAUTRUCTHUCTHITUANTUCOBAN? cauTrucThiThiTuanTu;
     cauTrucThiThiTuanTu = CAUTRUCTHUCTHITUANTUCOBAN(
       onThucThiTuanTuSS010: () async {
-        await getGlobalState?.getDieuKhienTinhToanTongQuat?.getTrungTamVanHanhThuocTinhChienDauTheoQuyChuan?.onCaiDatThuocTinhChienDauTheoQuyChuan(
-          value: getGlobalState?.getChienDauCoTongQuat?.getChienDauCoTrucTiepThucThiChienDau?.getTrangThai?.getMoHinh?.getThuocTinhChienDauTheoQuyChuan,
+        await getGlobalStateManagementSystem?.getDieuKhienTinhToanTongQuat?.getTrungTamVanHanhThuocTinhChienDauTheoQuyChuan?.onCaiDatThuocTinhChienDauTheoQuyChuan(
+          value: getGlobalStateManagementSystem?.getChienDauCoTongQuat?.getChienDauCoTrucTiepThucThiChienDau?.getTrangThai?.getMoHinh?.getThuocTinhChienDauTheoQuyChuan,
           caiDatUuTien: true,
         );
       },
       onThucThiTuanTuSS020: () async {
-        await getGlobalState?.getBangDieuKhienKichBanChienDauTheoGiaiDoan?.getQuanLyDieuKhienChuyenKichBanChienDau?.onKhoiDongKichBan(trangThaiTongQuat: getGlobalState);
+        await getGlobalStateManagementSystem?.getBangDieuKhienKichBanChienDauTheoGiaiDoan?.getQuanLyDieuKhienChuyenKichBanChienDau?.onKhoiDongKichBan(trangThaiTongQuat: getGlobalStateManagementSystem);
       },
       onThucThiTuanTuSS030: () async {
-        await getGlobalState?.getChienDauCoTongQuat?.getChienDauCoTrucTiepThucThiChienDau?.onTaiTaiNguyenChienDauCo();
+        await getGlobalStateManagementSystem?.getChienDauCoTongQuat?.getChienDauCoTrucTiepThucThiChienDau?.onTaiTaiNguyenChienDauCo();
       },
       onThucThiTuanTuSS040: () async {
-        await getGlobalState?.getChienDauCoTongQuat?.getDieuKhienDiChuyenChienDauCo?.onResetViTriChienDauCo();
+        await getGlobalStateManagementSystem?.getChienDauCoTongQuat?.getDieuKhienDiChuyenChienDauCo?.onResetViTriChienDauCo();
       },
       onThucThiTuanTuSS050: () async {
-        await getGlobalState?.getBangDieuKhienKichBanChienDauTheoGiaiDoan?.getQuanLyDieuKhienChuyenKichBanChienDau?.onTaiTaiNguyenPhuongTien();
+        await getGlobalStateManagementSystem?.getBangDieuKhienKichBanChienDauTheoGiaiDoan?.getQuanLyDieuKhienChuyenKichBanChienDau?.onTaiTaiNguyenPhuongTien();
       },
       onThucThiTuanTuSS060: null,
       onThucThiTuanTuSS070: null,
@@ -110,7 +110,7 @@ class KHUNGMANHINHCHINH extends KHUNGMANHINHGAMECOSO {
       stopwatch?.start();
     }
 
-    await cauTrucThiThiTuanTu?.onThucThiTuanTu();
+    await cauTrucThiThiTuanTu?.onThucThiTuanTu(interval: const Duration(milliseconds: 500));
 
     // await Future.delayed(Duration.zero);
     //
@@ -139,7 +139,7 @@ class KHUNGMANHINHCHINH extends KHUNGMANHINHGAMECOSO {
     // await getGlobalState
     //     ?.getBangDieuKhienKichBanChienDauTheoGiaiDoan
     //     ?.getQuanLyDieuKhienChuyenKichBanChienDau
-    //     ?.onKhoiDongKichBan(trangThaiTongQuat: getGlobalState);
+    //     ?.onKhoiDongKichBan(trangThaiTongQuat: getGlobalStateManagementSystem);
 
     // await Future.delayed(Duration.zero);
     // await getGlobalState
@@ -163,12 +163,12 @@ class KHUNGMANHINHCHINH extends KHUNGMANHINHGAMECOSO {
     //     ?.getQuanLyDieuKhienChuyenKichBanChienDau
     //     ?.onTaiTaiNguyenPhuongTienTuanTu();
 
-    // await getGlobalState?.getSuKienVaChamTrongChienDau?.onTaiTaiNguyen();
+    // await getGlobalStateManagementSystem?.getSuKienVaChamTrongChienDau?.onTaiTaiNguyen();
 
     // /// -----
     // /// TODO:
     // /// -----
-    // await getGlobalState?.getDieuKhienTienTrinhTongQuat
+    // await getGlobalStateManagementSystem?.getDieuKhienTienTrinhTongQuat
     //     ?.tienHanhThucThiNhiemVu();
 
     if (kDebugMode) {
@@ -185,7 +185,7 @@ class KHUNGMANHINHCHINH extends KHUNGMANHINHGAMECOSO {
     CAUTRUCTHUCTHITUANTUCOBAN? cauTrucThiThiTuanTu;
     cauTrucThiThiTuanTu = CAUTRUCTHUCTHITUANTUCOBAN(
       onThucThiTuanTuSS010: () async {
-        await getGlobalState?.getBangDieuKhienKichBanChienDauTheoGiaiDoan?.getQuanLyDieuKhienChuyenKichBanChienDau
+        await getGlobalStateManagementSystem?.getBangDieuKhienKichBanChienDauTheoGiaiDoan?.getQuanLyDieuKhienChuyenKichBanChienDau
             ?.onTaiTaiNguyenPhuongTienTuanTu(onThucThiHoanTat: onThucThiHoanTat);
       },
 
@@ -203,7 +203,7 @@ class KHUNGMANHINHCHINH extends KHUNGMANHINHGAMECOSO {
     CAUTRUCTHUCTHITUANTUCOBAN? cauTrucThiThiTuanTu;
     cauTrucThiThiTuanTu = CAUTRUCTHUCTHITUANTUCOBAN(
       onThucThiTuanTuSS010: () async {
-        await getGlobalState?.getDieuKhienTienTrinhTongQuat?.tienHanhThucThiNhiemVu();
+        await getGlobalStateManagementSystem?.getDieuKhienTienTrinhTongQuat?.tienHanhThucThiNhiemVu();
       },
 
       onThucThiHoanTat: onThucThiHoanTat,
@@ -225,11 +225,11 @@ class KHUNGMANHINHCHINH extends KHUNGMANHINHGAMECOSO {
     /// -----
     await Future.wait([
       onCaiDatQuanLyThanhPhanManHinhThuocCap(
-        value: QUANLYTHANHPHANMANHINHKHUNGMANHINHCHINH(globalState: getGlobalState, gameController: this, thanhPhanQuanLyThuocCapTrucTiep: null, sizeDx: getSizeDx, sizeDy: getSizeDy),
+        value: QUANLYTHANHPHANMANHINHKHUNGMANHINHCHINH(globalStateManagementSystem: getGlobalStateManagementSystem, gameController: this, thanhPhanQuanLyThuocCapTrucTiep: null, sizeDx: getSizeDx, sizeDy: getSizeDy),
       ).catchError((e) => null),
       onCaiDatQuanLyThanhPhanNutBamThuocCap(
         value: QUANLYTHANHPHANNUTBAMKHUNGMANHINHCHINH(
-          globalState: getGlobalState,
+          globalStateManagementSystem: getGlobalStateManagementSystem,
           gameController: this,
           thanhPhanQuanLyThuocCapTrucTiep: null,
           sizeDx: getSizeDx,
@@ -252,11 +252,11 @@ class KHUNGMANHINHCHINH extends KHUNGMANHINHGAMECOSO {
           },
           onThucThiChuyenTabSS020: () async {
             // addAll([
-            //   KHUNGMANHINHSS00226(trangThaiTongQuat: getGlobalState),
-            //   KHUNGMANHINHSS00222(trangThaiTongQuat: getGlobalState),
-            //   KHUNGMANHINHSS00224(trangThaiTongQuat: getGlobalState),
-            //   KHUNGMANHINHSS00230(trangThaiTongQuat: getGlobalState),
-            //   KHUNGMANHINHSS00240(trangThaiTongQuat: getGlobalState),
+            //   KHUNGMANHINHSS00226(trangThaiTongQuat: getGlobalStateManagementSystem),
+            //   KHUNGMANHINHSS00222(trangThaiTongQuat: getGlobalStateManagementSystem),
+            //   KHUNGMANHINHSS00224(trangThaiTongQuat: getGlobalStateManagementSystem),
+            //   KHUNGMANHINHSS00230(trangThaiTongQuat: getGlobalStateManagementSystem),
+            //   KHUNGMANHINHSS00240(trangThaiTongQuat: getGlobalStateManagementSystem),
             // ]);
             // add(KHUNGMANHINHSS00226(trangThaiTongQuat: getGlobalState));
             // await Future.delayed(const Duration(milliseconds: 10));
@@ -304,17 +304,17 @@ class KHUNGMANHINHCHINH extends KHUNGMANHINHGAMECOSO {
             /// -----
             /// TODO: Cài Đặt Thuộc Tính Chiến Đấu
             /// -----
-            await getGlobalState?.getDieuKhienTinhToanTongQuat?.getTrungTamVanHanhThuocTinhChienDauTheoQuyChuan?.onCaiDatThuocTinhChienDauTheoQuyChuan(
-              value: getGlobalState?.getChienDauCoTongQuat?.getChienDauCoTrucTiepThucThiChienDau?.getTrangThai?.getMoHinh?.getThuocTinhChienDauTheoQuyChuan,
+            await getGlobalStateManagementSystem?.getDieuKhienTinhToanTongQuat?.getTrungTamVanHanhThuocTinhChienDauTheoQuyChuan?.onCaiDatThuocTinhChienDauTheoQuyChuan(
+              value: getGlobalStateManagementSystem?.getChienDauCoTongQuat?.getChienDauCoTrucTiepThucThiChienDau?.getTrangThai?.getMoHinh?.getThuocTinhChienDauTheoQuyChuan,
               caiDatUuTien: true,
             );
 
             /// -----
             /// TODO:
             /// -----
-            await getGlobalState?.getBangDieuKhienKichBanChienDauTheoGiaiDoan?.getQuanLyDieuKhienChuyenKichBanChienDau?.onKhoiDongKichBan(trangThaiTongQuat: getGlobalState);
+            // await getGlobalStateManagementSystem?.getBangDieuKhienKichBanChienDauTheoGiaiDoan?.getQuanLyDieuKhienChuyenKichBanChienDau?.onKhoiDongKichBan(trangThaiTongQuat: getGlobalStateManagementSystem);
 
-            await getGlobalState?.getBangDieuKhienKichBanChienDauTheoGiaiDoan?.getQuanLyDieuKhienChuyenKichBanChienDau?.onTaiTaiNguyenPhuongTien();
+            await getGlobalStateManagementSystem?.getBangDieuKhienKichBanChienDauTheoGiaiDoan?.getQuanLyDieuKhienChuyenKichBanChienDau?.onTaiTaiNguyenPhuongTien();
 
             // ///
             // if (getQuanLyThanhPhanManHinhThuocCap is QUANLYTHANHPHANMANHINHKHUNGMANHINHCHINH) {
@@ -349,7 +349,7 @@ class KHUNGMANHINHCHINH extends KHUNGMANHINHGAMECOSO {
             /// -----
             /// TODO:
             /// -----
-            await getGlobalState?.getDieuKhienTienTrinhTongQuat?.tienHanhThucThiNhiemVu();
+            await getGlobalStateManagementSystem?.getDieuKhienTienTrinhTongQuat?.tienHanhThucThiNhiemVu();
 
             ///
             // if (getQuanLyThanhPhanManHinhThuocCap is QUANLYTHANHPHANMANHINHKHUNGMANHINHCHINH) {
@@ -369,13 +369,13 @@ class KHUNGMANHINHCHINH extends KHUNGMANHINHGAMECOSO {
         ),
       ).catchError((e) => null),
       onCaiDatQuanLyThanhPhanVanBanThuocCap(
-        value: QUANLYTHANHPHANVANBANKHUNGMANHINHCHINH(globalState: getGlobalState, gameController: this, thanhPhanQuanLyThuocCapTrucTiep: null, sizeDx: getSizeDx, sizeDy: getSizeDy),
+        value: QUANLYTHANHPHANVANBANKHUNGMANHINHCHINH(globalStateManagementSystem: getGlobalStateManagementSystem, gameController: this, thanhPhanQuanLyThuocCapTrucTiep: null, sizeDx: getSizeDx, sizeDy: getSizeDy),
       ).catchError((e) => null),
       onCaiDatQuanLyThanhPhanHinhAnhThuocCap(
-        value: QUANLYTHANHPHANHINHANHKHUNGMANHINHCHINH(globalState: getGlobalState, gameController: this, thanhPhanQuanLyThuocCapTrucTiep: null, sizeDx: getSizeDx, sizeDy: getSizeDy),
+        value: QUANLYTHANHPHANHINHANHKHUNGMANHINHCHINH(globalStateManagementSystem: getGlobalStateManagementSystem, gameController: this, thanhPhanQuanLyThuocCapTrucTiep: null, sizeDx: getSizeDx, sizeDy: getSizeDy),
       ).catchError((e) => null),
       onCaiDatQuanLyThanhPhanTichHopThuocCap(
-        value: QUANLYTHANHPHANTICHHOPKHUNGMANHINHCHINH(globalState: getGlobalState, gameController: this, thanhPhanQuanLyThuocCapTrucTiep: null, sizeDx: getSizeDx, sizeDy: getSizeDy),
+        value: QUANLYTHANHPHANTICHHOPKHUNGMANHINHCHINH(globalStateManagementSystem: getGlobalStateManagementSystem, gameController: this, thanhPhanQuanLyThuocCapTrucTiep: null, sizeDx: getSizeDx, sizeDy: getSizeDy),
       ).catchError((e) => null),
     ]);
 
@@ -404,11 +404,11 @@ class KHUNGMANHINHCHINH extends KHUNGMANHINHGAMECOSO {
   @override
   Future<void> onMasterLoading() async {
     // addAll([
-    //   KHUNGMANHINHSS00226(trangThaiTongQuat: getGlobalState),
-    //   KHUNGMANHINHSS00222(trangThaiTongQuat: getGlobalState),
-    //   KHUNGMANHINHSS00224(trangThaiTongQuat: getGlobalState),
-    //   KHUNGMANHINHSS00230(trangThaiTongQuat: getGlobalState),
-    //   KHUNGMANHINHSS00240(trangThaiTongQuat: getGlobalState),
+    //   KHUNGMANHINHSS00226(trangThaiTongQuat: getGlobalStateManagementSystem),
+    //   KHUNGMANHINHSS00222(trangThaiTongQuat: getGlobalStateManagementSystem),
+    //   KHUNGMANHINHSS00224(trangThaiTongQuat: getGlobalStateManagementSystem),
+    //   KHUNGMANHINHSS00230(trangThaiTongQuat: getGlobalStateManagementSystem),
+    //   KHUNGMANHINHSS00240(trangThaiTongQuat: getGlobalStateManagementSystem),
     // ]);
 
     // add(KHUNGMANHINHSS00226(trangThaiTongQuat: getGlobalState));
@@ -417,7 +417,7 @@ class KHUNGMANHINHCHINH extends KHUNGMANHINHGAMECOSO {
     // add(KHUNGMANHINHSS00230(trangThaiTongQuat: getGlobalState));
     // add(KHUNGMANHINHSS00240(trangThaiTongQuat: getGlobalState));
 
-    getGlobalState?.getSuKienVaChamTrongChienDau?.onTaiTaiNguyen();
+    getGlobalStateManagementSystem?.getSuKienVaChamTrongChienDau?.onTaiTaiNguyen();
 
     ///
     if (getQuanLyThanhPhanManHinhThuocCap is QUANLYTHANHPHANMANHINHKHUNGMANHINHCHINH) {
@@ -449,10 +449,10 @@ class KHUNGMANHINHCHINH extends KHUNGMANHINHGAMECOSO {
     count++;
 
     if (count % 1000 == 0) {
-      int childrenComponent = getTotalComponentCount(this);
-      print('<<<childrenComponent_childrenComponent>>>: $childrenComponent');
+      // int childrenComponent = getTotalComponentCount(this);
+      // print('<<<childrenComponent_childrenComponent>>>: $childrenComponent');
 
-      List<Component> danhSach = descendants().toList();
+      // List<Component> danhSach = descendants().toList();
 
       return;
     }

@@ -100,6 +100,13 @@ dependencies:
   pkg_khung_man_hinh_ss022000:
     path: ../pkg_khung_man_hinh_ss022000
 
+
+  van_tan_export:
+    path: ../../van_tan/van_tan_exports/van_tan_export
+
+  package_export:
+    path: ../../packages/package_exports/package_export
+
   animate_do: 3.0.2
   cupertino_icons: ^1.0.6
   #  audioplayers: 6.0.0

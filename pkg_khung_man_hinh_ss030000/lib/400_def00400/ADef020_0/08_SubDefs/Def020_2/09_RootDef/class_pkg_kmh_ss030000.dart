@@ -14,7 +14,7 @@ class QUANLYTHANHPHANMANHINHTHUOCCAP extends QUANLYTHANHPHANMANHINHTHUOCCAPCOBAN
   /// -----
   /// TODO:
   /// -----
-  QUANLYTHANHPHANMANHINHTHUOCCAP({required super.globalState, required super.gameController, required super.thanhPhanQuanLyThuocCapTrucTiep, required super.sizeDx, required super.sizeDy});
+  QUANLYTHANHPHANMANHINHTHUOCCAP({required super.globalStateManagementSystem, required super.gameController, required super.thanhPhanQuanLyThuocCapTrucTiep, required super.sizeDx, required super.sizeDy});
 
   /// -----
   /// TODO: Khung Màn Hình Loading Chiến Đấu
@@ -172,7 +172,7 @@ class QUANLYTHANHPHANMANHINHTHUOCCAP extends QUANLYTHANHPHANMANHINHTHUOCCAPCOBAN
       await Future.wait([
         onCaiDatKhungManHinhSS300100(
           value: KHUNGMANHINHSS300100(
-            globalState: getGlobalState,
+            globalStateManagementSystem: getGlobalStateManagementSystem,
             gameController: getGameController,
             thanhPhanQuanLyThuocCapTrucTiep: getThanhPhanQuanLyThuocCapTrucTiep,
             sizeDx: sizeDxKhungManHinhTab,
@@ -184,7 +184,7 @@ class QUANLYTHANHPHANMANHINHTHUOCCAP extends QUANLYTHANHPHANMANHINHTHUOCCAPCOBAN
         ).catchError((e) => null),
         onCaiDatKhungManHinhSS300200(
           value: KHUNGMANHINHSS300200(
-            globalState: getGlobalState,
+            globalStateManagementSystem: getGlobalStateManagementSystem,
             gameController: getGameController,
             thanhPhanQuanLyThuocCapTrucTiep: getThanhPhanQuanLyThuocCapTrucTiep,
             sizeDx: sizeDxKhungManHinhTab,
@@ -196,7 +196,7 @@ class QUANLYTHANHPHANMANHINHTHUOCCAP extends QUANLYTHANHPHANMANHINHTHUOCCAPCOBAN
         ).catchError((e) => null),
         onCaiDatKhungManHinhSS300300(
           value: KHUNGMANHINHSS300300(
-            globalState: getGlobalState,
+            globalStateManagementSystem: getGlobalStateManagementSystem,
             gameController: getGameController,
             thanhPhanQuanLyThuocCapTrucTiep: getThanhPhanQuanLyThuocCapTrucTiep,
             sizeDx: sizeDxKhungManHinhTab,
@@ -208,7 +208,7 @@ class QUANLYTHANHPHANMANHINHTHUOCCAP extends QUANLYTHANHPHANMANHINHTHUOCCAPCOBAN
         ).catchError((e) => null),
         onCaiDatKhungManHinhSS300400(
           value: KHUNGMANHINHSS300400(
-            globalState: getGlobalState,
+            globalStateManagementSystem: getGlobalStateManagementSystem,
             gameController: getGameController,
             thanhPhanQuanLyThuocCapTrucTiep: getThanhPhanQuanLyThuocCapTrucTiep,
             sizeDx: sizeDxKhungManHinhTab,
@@ -220,7 +220,7 @@ class QUANLYTHANHPHANMANHINHTHUOCCAP extends QUANLYTHANHPHANMANHINHTHUOCCAPCOBAN
         ).catchError((e) => null),
         onCaiDatKhungManHinhSS300500(
           value: KHUNGMANHINHSS300500(
-            globalState: getGlobalState,
+            globalStateManagementSystem: getGlobalStateManagementSystem,
             gameController: getGameController,
             thanhPhanQuanLyThuocCapTrucTiep: getThanhPhanQuanLyThuocCapTrucTiep,
             sizeDx: sizeDxKhungManHinhTab,
@@ -464,7 +464,7 @@ class QUANLYTHANHPHANMANHINHTHUOCCAP extends QUANLYTHANHPHANMANHINHTHUOCCAPCOBAN
 
       await getKhungManHinhSS300400?.onKichHoatThanhPhanManHinhThuocCap(kichHoatUuTien: true);
 
-      getGlobalState?.getDichVuMayPhatAmThanh?.getAmThanhHeThong?.getAmThanhHieuUngChienDauChienThang?.onPlay();
+      getGlobalStateManagementSystem?.getDichVuMayPhatAmThanh?.getAmThanhHeThong?.getAmThanhHieuUngChienDauChienThang?.onPlay();
     } catch (e) {
       await onReportRootIssue(nameFunction: 'onKichHoatKhungManHinhThuocCapSS300400ChienThang');
     }

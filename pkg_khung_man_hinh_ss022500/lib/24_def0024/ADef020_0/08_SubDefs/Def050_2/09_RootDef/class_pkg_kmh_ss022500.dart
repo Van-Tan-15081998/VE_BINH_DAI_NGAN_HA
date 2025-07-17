@@ -12,7 +12,7 @@ class QUANLYTHANHPHANHINHANHKHUNGMANHINHCHINHTABSS050CD
   /// TODO:
   /// -----
   QUANLYTHANHPHANHINHANHKHUNGMANHINHCHINHTABSS050CD({
-    required super.globalState,
+    required super.globalStateManagementSystem,
     required super.gameController,
     required super.thanhPhanQuanLyThuocCapTrucTiep,
     required super.sizeDx,
@@ -96,7 +96,7 @@ class QUANLYTHANHPHANHINHANHKHUNGMANHINHCHINHTABSS050CD
     await Future.wait([
       onCaiDatHinhAnhBackGround(
         value: HINHANHBACKGROUNDKHUNGMANHINHCHINHTABSS050CD(
-          globalState: getGlobalState,
+          globalStateManagementSystem: getGlobalStateManagementSystem,
           gameController: getGameController,
           thanhPhanQuanLyThuocCapTrucTiep: getThanhPhanQuanLyThuocCapTrucTiep,
           sizeDx: sizeDxManHinhVatLy,

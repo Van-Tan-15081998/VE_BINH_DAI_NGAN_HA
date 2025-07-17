@@ -373,8 +373,4 @@ export '80_def0080/ADef10_0/08_SubDefs/Def20_2/09_RootDef/class_20002600.dart';
 /// TODO: _____[QUAN_LY_DIEU_KHIEN_CHUYEN_KICH_BAN_CHIEN_DAU]_____
 export '80_def0080/ADef20_0/09_RootDef/class_20002620.dart';
 
-/// A Calculator.
-class Calculator {
-  /// Returns [value] plus 1.
-  int addOne(int value) => value + 1;
-}
+

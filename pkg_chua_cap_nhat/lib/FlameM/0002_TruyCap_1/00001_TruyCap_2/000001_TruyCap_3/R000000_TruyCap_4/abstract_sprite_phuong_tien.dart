@@ -11,7 +11,7 @@ abstract class SpritePhuongTienCoBan extends SpriteAnimationComponent
   /// -----
   /// TODO:
   /// -----
-  SpritePhuongTienCoBan({required QuanLyTrangThaiTongQuat? trangThaiTongQuat}) {
+  SpritePhuongTienCoBan({required GlobalStateManagementSystem? trangThaiTongQuat}) {
     caiDatTrangThaiTongQuat(value: trangThaiTongQuat);
   }
 
@@ -45,10 +45,10 @@ abstract class SpritePhuongTienCoBan extends SpriteAnimationComponent
   /// -----
   /// TODO: Quản Lý Trạng Thái Tổng Quát
   /// -----
-  QuanLyTrangThaiTongQuat? _trangThaiTongQuat;
-  QuanLyTrangThaiTongQuat? get getTrangThaiTongQuat => _trangThaiTongQuat;
+  GlobalStateManagementSystem? _trangThaiTongQuat;
+  GlobalStateManagementSystem? get getTrangThaiTongQuat => _trangThaiTongQuat;
   Future<void> caiDatTrangThaiTongQuat({
-    required QuanLyTrangThaiTongQuat? value,
+    required GlobalStateManagementSystem? value,
   }) async {
     _trangThaiTongQuat ??= value;
     return;

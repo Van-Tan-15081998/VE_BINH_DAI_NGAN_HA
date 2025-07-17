@@ -11,7 +11,7 @@ class SUKIENVACHAMTHUOCPHUONGTIEN with CauTrucThucThiCoBan, DanhSachQuanLyTrangT
   /// -----
   @override
   Future<void> onAttachRoot({required dynamic attachValue}) async {
-    if (attachValue is QuanLyTrangThaiTongQuat) {
+    if (attachValue is GlobalStateManagementSystem) {
       await caiDatDanhSachMoHinhTongQuat(value: attachValue.getDanhSachMoHinhTongQuat);
     }
 

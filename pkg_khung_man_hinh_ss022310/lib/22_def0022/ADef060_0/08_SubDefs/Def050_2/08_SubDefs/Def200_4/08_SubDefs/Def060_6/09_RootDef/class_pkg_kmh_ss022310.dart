@@ -10,7 +10,7 @@ class KHUNGTAINGUYENTRAODOIMUACHIENDAUCODANGCAPSAOSSS10SS05
   /// TODO:
   /// -----
   KHUNGTAINGUYENTRAODOIMUACHIENDAUCODANGCAPSAOSSS10SS05({
-    required super.globalState,
+    required super.globalStateManagementSystem,
     required super.gameController,
     required super.thanhPhanQuanLyThuocCapTrucTiep,
     required super.sizeDx,

@@ -16,16 +16,16 @@ class THANHPHANVANBANTHUANTHUOCCAP extends TextComponent
   /// -----
   /// TODO:
   /// -----
-  QuanLyTrangThaiTongQuat? _globalState;
-  QuanLyTrangThaiTongQuat? get getGlobalState => _globalState;
-  void onVoidCaiDatGlobalState({
-    required QuanLyTrangThaiTongQuat? value,
+  GlobalStateManagementSystem? _globalStateManagementSystem;
+  GlobalStateManagementSystem? get getGlobalStateManagementSystem => _globalStateManagementSystem;
+  void onSetGlobalStateManagementSystem({
+    required GlobalStateManagementSystem? value,
     bool? caiDatUuTien,
   }) {
     if (caiDatUuTien == true) {
-      _globalState = value;
+      _globalStateManagementSystem = value;
     } else {
-      _globalState ??= value;
+      _globalStateManagementSystem ??= value;
     }
 
     return;
@@ -145,6 +145,49 @@ class THANHPHANVANBANTHUANTHUOCCAP extends TextComponent
     return;
   }
 
+  /// -----
+  /// TODO: FlameGame Parent Component
+  /// -----
+  Component? _flameGameParentComponent;
+  Component? get getFlameGameParentComponent => _flameGameParentComponent;
+  void onCaiDatFlameGameParentComponent({required Component? value, bool? isPriorityOverride}) {
+    if (isPriorityOverride == true) {
+      _flameGameParentComponent = value;
+    } else {
+      _flameGameParentComponent ??= value;
+    }
+
+    ///
+    return;
+  }
+
+  /// -----
+  /// TODO: Parent Component
+  /// -----
+  Component? _parentComponent;
+  Component? get getParentComponent => _parentComponent;
+  void onCaiDatParentComponent({required Component? value, bool? isPriorityOverride}) {
+    if (isPriorityOverride == true) {
+      _parentComponent = value;
+    } else {
+      _parentComponent ??= value;
+    }
+
+    ///
+    return;
+  }
+
+  Future<void> onAddToParent() async {
+
+    if (getFlameGameParentComponent != null && isMounted == false) {
+      await getFlameGameParentComponent?.add(this);
+    } else if (getParentComponent != null && isMounted == false) {
+      await getParentComponent?.add(this);
+    }
+
+    return;
+  }
+
   Future<void> onCaiDatChiTietThanhPhanVanBan() async {
     ///
     return;
@@ -154,7 +197,7 @@ class THANHPHANVANBANTHUANTHUOCCAP extends TextComponent
   /// TODO:
   /// -----
   THANHPHANVANBANTHUANTHUOCCAP({
-    required QuanLyTrangThaiTongQuat? globalState,
+    required GlobalStateManagementSystem? globalStateManagementSystem,
     required KHUNGMANHINHGAMECOSO? gameController,
     required THANHPHANMANHINHTHUOCCAPCOBAN? thanhPhanQuanLyThuocCapTrucTiep,
     required double? sizeDx,
@@ -162,7 +205,7 @@ class THANHPHANVANBANTHUANTHUOCCAP extends TextComponent
     required double? positionDx,
     required double? positionDy,
   }) {
-    onVoidCaiDatGlobalState(value: globalState, caiDatUuTien: true);
+    onSetGlobalStateManagementSystem(value: globalStateManagementSystem, caiDatUuTien: true);
     onVoidCaiDatGameController(value: gameController, caiDatUuTien: true);
     onVoidCaiDatThanhPhanQuanLyThuocCapTrucTiep(
       value: thanhPhanQuanLyThuocCapTrucTiep,
@@ -387,7 +430,7 @@ class THANHPHANVANBANTHUANTHUOCCAP extends TextComponent
 
 class VANBANDINHDANHKHUNGMANHINHTHUOCCAP extends THANHPHANVANBANTHUANTHUOCCAP {
   VANBANDINHDANHKHUNGMANHINHTHUOCCAP({
-    required super.globalState,
+    required super.globalStateManagementSystem,
     required super.gameController,
     required super.thanhPhanQuanLyThuocCapTrucTiep,
     required super.sizeDx,

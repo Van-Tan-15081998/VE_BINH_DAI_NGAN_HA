@@ -9,7 +9,7 @@ class HINHANHBACKGROUNDKHUNGMANHINH extends THANHPHANHINHANHBACKGROUNDTHUOCCAP {
   /// TODO:
   /// -----
   HINHANHBACKGROUNDKHUNGMANHINH({
-    required super.globalState,
+    required super.globalStateManagementSystem,
     required super.gameController,
     required super.thanhPhanQuanLyThuocCapTrucTiep,
     required super.sizeDx,

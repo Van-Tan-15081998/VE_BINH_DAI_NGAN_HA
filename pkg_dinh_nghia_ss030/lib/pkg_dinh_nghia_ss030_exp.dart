@@ -627,8 +627,4 @@ export '28_def0028/ADef910_0/08_SubDefs/DefA20/08_SubDefs/DefVp010/09_RootDef/cl
 /// TODO: _____[PHUONG_TIEN_VAT_PHAM_TANG_CUONG_CLASS_SS00ASS030_SS010]_____
 export '28_def0028/ADef910_0/08_SubDefs/DefA30/08_SubDefs/DefVp010/09_RootDef/class_phuong_tien_vat_pham_tang_cuong.dart';
 
-/// A Calculator.
-class Calculator {
-  /// Returns [value] plus 1.
-  int addOne(int value) => value + 1;
-}
+

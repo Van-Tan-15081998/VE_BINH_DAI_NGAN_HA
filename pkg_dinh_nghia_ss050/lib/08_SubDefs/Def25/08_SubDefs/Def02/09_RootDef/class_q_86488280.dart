@@ -12,7 +12,7 @@ class QuanLyTrangThaiChienDauCoTrucTiepThucThiChienDau with KhungThucThiCoBan, D
   @override
   Future<void> onAttachRoot({required dynamic attachValue}) async {
 
-    if (attachValue is QuanLyTrangThaiTongQuat) {
+    if (attachValue is GlobalStateManagementSystem) {
       await onSetEntityResourceManagement(value: attachValue.onGetEntityResourceManagement);
     }
 
@@ -70,7 +70,7 @@ class QuanLyTrangThaiChienDauCoTrucTiepThucThiChienDau with KhungThucThiCoBan, D
   /// -----
   @override
   Future<void> onAttachRootForSubCom({required dynamic attachValue}) async {
-    if (attachValue is QuanLyTrangThaiTongQuat) {
+    if (attachValue is GlobalStateManagementSystem) {
       ///
     }
 

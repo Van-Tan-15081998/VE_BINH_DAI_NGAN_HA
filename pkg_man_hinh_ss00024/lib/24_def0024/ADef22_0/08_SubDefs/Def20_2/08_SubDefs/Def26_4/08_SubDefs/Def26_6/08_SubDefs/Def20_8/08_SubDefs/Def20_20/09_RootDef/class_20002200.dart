@@ -10,7 +10,7 @@ class KhungHinhPopupCuaHangChienDauCo00B06SS01 extends StatefulWidget {
   const KhungHinhPopupCuaHangChienDauCo00B06SS01({super.key, required this.chienDauCo, required this.trangThaiTongQuat});
 
   final ChienDauCoDangCapSao00B06SS01? chienDauCo;
-  final QuanLyTrangThaiTongQuat? trangThaiTongQuat;
+  final GlobalStateManagementSystem? trangThaiTongQuat;
 
   @override
   State<KhungHinhPopupCuaHangChienDauCo00B06SS01> createState() => _KhungHinhPopupCuaHangChienDauCo00B06SS01State();

@@ -21,8 +21,4 @@ export '26_def0026/ADef02_0/08_SubDefs/Def20_2/09_RootDef/class_20002066.dart';
 /// TODO: _____[TRANG_THAI_HOAT_DONG_CHIEN_DAU_XAM_CHIEM]_____
 export '30_def0030/ADef20_0/09_RootDef/class_20002220.dart';
 
-/// A Calculator.
-class Calculator {
-  /// Returns [value] plus 1.
-  int addOne(int value) => value + 1;
-}
+

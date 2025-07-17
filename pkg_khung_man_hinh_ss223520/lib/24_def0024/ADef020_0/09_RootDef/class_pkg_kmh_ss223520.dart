@@ -12,7 +12,7 @@
 //   /// -----
 //   /// TODO:
 //   /// -----
-//   KHUNGMANHINHSS223520({required super.globalState, required super.gameController, required super.thanhPhanQuanLyThuocCapTrucTiep, required super.sizeDx, required super.sizeDy, required super.positionDx, required super.positionDy});
+//   KHUNGMANHINHSS223520({required super.globalStateManagementSystem, required super.gameController, required super.thanhPhanQuanLyThuocCapTrucTiep, required super.sizeDx, required super.sizeDy, required super.positionDx, required super.positionDy});
 //
 //   /// -----
 //   /// TODO: Setup Root
@@ -28,10 +28,10 @@
 //     /// TODO:
 //     /// -----
 //     await Future.wait([
-//       onCaiDatQuanLyThanhPhanManHinhThuocCap(value: QUANLYTHANHPHANMANHINHTHUOCCAP(globalState: getGlobalState, gameController: getGameController, thanhPhanQuanLyThuocCapTrucTiep: getThanhPhanQuanLyThuocCapTrucTiep, sizeDx: getSizeDx, sizeDy: getSizeDy)).catchError((e) => null),
+//       onCaiDatQuanLyThanhPhanManHinhThuocCap(value: QUANLYTHANHPHANMANHINHTHUOCCAP(globalStateManagementSystem: getGlobalStateManagementSystem, gameController: getGameController, thanhPhanQuanLyThuocCapTrucTiep: getThanhPhanQuanLyThuocCapTrucTiep, sizeDx: getSizeDx, sizeDy: getSizeDy)).catchError((e) => null),
 //       onCaiDatQuanLyThanhPhanNutBamThuocCap(
 //         value: QUANLYTHANHPHANNUTBAMTHUOCCAP(
-//           globalState: getGlobalState,
+//           globalStateManagementSystem: getGlobalStateManagementSystem,
 // gameController: getGameController, thanhPhanQuanLyThuocCapTrucTiep: getThanhPhanQuanLyThuocCapTrucTiep,
 // sizeDx: getSizeDx,
 //           sizeDy: getSizeDy,
@@ -52,9 +52,9 @@
 //           },
 //         ),
 //       ).catchError((e) => null),
-//       onCaiDatQuanLyThanhPhanVanBanThuocCap(value: QUANLYTHANHPHANVANBANTHUOCCAP(globalState: getGlobalState, gameController: getGameController, thanhPhanQuanLyThuocCapTrucTiep: getThanhPhanQuanLyThuocCapTrucTiep, sizeDx: getSizeDx, sizeDy: getSizeDy)).catchError((e) => null),
-//       onCaiDatQuanLyThanhPhanHinhAnhThuocCap(value: QUANLYTHANHPHANHINHANHTHUOCCAP(globalState: getGlobalState, gameController: getGameController, thanhPhanQuanLyThuocCapTrucTiep: getThanhPhanQuanLyThuocCapTrucTiep, sizeDx: getSizeDx, sizeDy: getSizeDy)).catchError((e) => null),
-//       onCaiDatQuanLyThanhPhanTichHopThuocCap(value: QUANLYTHANHPHANTICHHOPTHUOCCAP(globalState: getGlobalState, gameController: getGameController, thanhPhanQuanLyThuocCapTrucTiep: getThanhPhanQuanLyThuocCapTrucTiep, sizeDx: getSizeDx, sizeDy: getSizeDy)).catchError((e) => null),
+//       onCaiDatQuanLyThanhPhanVanBanThuocCap(value: QUANLYTHANHPHANVANBANTHUOCCAP(globalStateManagementSystem: getGlobalStateManagementSystem, gameController: getGameController, thanhPhanQuanLyThuocCapTrucTiep: getThanhPhanQuanLyThuocCapTrucTiep, sizeDx: getSizeDx, sizeDy: getSizeDy)).catchError((e) => null),
+//       onCaiDatQuanLyThanhPhanHinhAnhThuocCap(value: QUANLYTHANHPHANHINHANHTHUOCCAP(globalStateManagementSystem: getGlobalStateManagementSystem, gameController: getGameController, thanhPhanQuanLyThuocCapTrucTiep: getThanhPhanQuanLyThuocCapTrucTiep, sizeDx: getSizeDx, sizeDy: getSizeDy)).catchError((e) => null),
+//       onCaiDatQuanLyThanhPhanTichHopThuocCap(value: QUANLYTHANHPHANTICHHOPTHUOCCAP(globalStateManagementSystem: getGlobalStateManagementSystem, gameController: getGameController, thanhPhanQuanLyThuocCapTrucTiep: getThanhPhanQuanLyThuocCapTrucTiep, sizeDx: getSizeDx, sizeDy: getSizeDy)).catchError((e) => null),
 //     ]);
 //
 //     /// -----
@@ -71,8 +71,8 @@
 //   /// -----
 //   @override
 //   Future<void> onCapNhatTrangThaiKichHoatThanhPhan() async {
-//     double sizeDxManHinhVatLy = getGlobalState?.getThietLapTongQuat?.getChieuRongManHinhVatLy ?? 100.0;
-//     double sizeDyManHinhVatLy = getGlobalState?.getThietLapTongQuat?.getChieuCaoManHinhVatLy ?? 100.0;
+//     double sizeDxManHinhVatLy = getGlobalStateManagementSystem?.getThietLapTongQuat?.getChieuRongManHinhVatLy ?? 100.0;
+//     double sizeDyManHinhVatLy = getGlobalStateManagementSystem?.getThietLapTongQuat?.getChieuCaoManHinhVatLy ?? 100.0;
 //
 //     getTrangThaiKichHoatThanhPhan?.getDiemToaDoThanhPhanHuyKichHoat?.onVoidCaiDatPositionDx(value: sizeDxManHinhVatLy * (-1), caiDatUuTien: true);
 //     getTrangThaiKichHoatThanhPhan?.getDiemToaDoThanhPhanHuyKichHoat?.onVoidCaiDatPositionDy(value: sizeDyManHinhVatLy / 2, caiDatUuTien: true);

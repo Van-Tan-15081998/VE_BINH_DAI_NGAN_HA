@@ -15,19 +15,34 @@ import 'package:pkg_dinh_nghia_ss050000/pkg_dinh_nghia_ss050000_exp.dart';
 import 'package:pkg_dinh_nghia_ss054/pkg_dinh_nghia_ss054_exp.dart';
 import 'package:pkg_khung_man_hinh_ss020000/pkg_khung_man_hinh_ss020000_exp.dart';
 
+import 'package:van_tan_export/van_tan_export.dart';
+import 'package:package_export/package_export.dart';
+
 /// -----
 /// TODO:
 /// -----
-class QuanLyTrangThaiTongQuat {
+class GlobalStateManagementSystem extends CoreStateManagement {
   /// -----
   /// TODO: Attach Root
   /// -----
-  Future<void> onAttachRoot() async {
-    /// -----
-    /// TODO: Attach Root For SubCom
-    /// -----
-    await onAttachRootForSubCom();
+  @override
+  Future<void> onAttachRoot({required dynamic attachValue, bool? shouldIgnoreAttachRootForSubCom}) async {
+    try {
+      /// -----
+      /// TODO:
+      /// -----
 
+      /// -----
+      /// TODO: Attach Root For SubCom
+      /// -----
+      if (shouldIgnoreAttachRootForSubCom == null || shouldIgnoreAttachRootForSubCom == false) {
+        await onAttachRootForSubCom(attachValue: attachValue);
+      }
+    } catch (e) {
+      await onReportRootIssue(nameFunction: '[onAttachRoot]');
+    }
+
+    ///
     return;
   }
 
@@ -58,7 +73,7 @@ class QuanLyTrangThaiTongQuat {
   double get getChieuRongManHinhVatLy => _chieuRongManHinhVatLy;
   void onVoidCaiDatChieuRongManHinhVatLy({required double value}) {
     _chieuRongManHinhVatLy = value;
-    
+
     ///
     return;
   }
@@ -70,11 +85,11 @@ class QuanLyTrangThaiTongQuat {
   double get getChieuCaoManHinhVatLy => _chieuCaoManHinhVatLy;
   void onVoidCaiDatChieuCaoManHinhVatLy({required double value}) {
     _chieuCaoManHinhVatLy = value;
-    
+
     ///
     return;
   }
-  
+
   /// -----
   /// TODO:
   /// -----
@@ -92,222 +107,381 @@ class QuanLyTrangThaiTongQuat {
   /// -----
   /// TODO: Init Root
   /// -----
-  Future<void> onInitRoot() async {
-    ///
-    /// TODO: Init Thuộc Tính Cục Bộ Đơn Giản
-    ///
+  Stopwatch? stopwatchInitRoot;
+  @override
+  Future<void> onInitRoot({bool? shouldIgnoreInitRootForSubCom}) async {
 
-    /// -----
-    /// TODO: Init Root For SubCom
-    /// -----
-    await onInitRootForSubCom();
+    if (kDebugMode) {
+      stopwatchInitRoot = Stopwatch();
+      stopwatchInitRoot?.start();
+    }
 
+    try {
+      /// -----
+      /// TODO:
+      /// -----
+
+      /// -----
+      /// TODO: Init Root For SubCom
+      /// -----
+      if (shouldIgnoreInitRootForSubCom == null || shouldIgnoreInitRootForSubCom == false) {
+        await onInitRootForSubCom();
+      }
+    } catch (e) {
+      await onReportRootIssue(nameFunction: '[onInitRoot]');
+    }
+
+    if (kDebugMode) {
+      stopwatchInitRoot?.stop();
+      print('=====Thời Gian stopwatchInitRoot=====: ${stopwatchInitRoot?.elapsedMilliseconds}ms');
+    }
+
+    ///
     return;
   }
 
   /// -----
   /// TODO: Setup Root
   /// -----
-  Future<void> onSetupRoot() async {
-    await caiDatDichVuHeThong(value: QuanLyTrangThaiDichVuHeThong());
 
-    await caiDatDichVuMayPhatAmThanh(value: QUANLYTRANGTHAIDICHVUMAYPHATAMTHANH());
-    await caiDatDichVuCoSoDuLieu(value: QUANLYTRANGTHAIDICHVUCOSODULIEU());
+  Stopwatch? stopwatchSetupRoot;
+  @override
+  Future<void> onSetupRoot({bool? shouldIgnoreSetupRootForSubCom}) async {
 
-    await caiDatThietLapTongQuat(value: QuanLyTrangThaiThietLapTongQuat());
-    await caiDatThongBaoTongQuat(value: QuanLyTrangThaiThongBaoTongQuat());
-    await caiDatTienTrinhTongQuat(value: QuanLyTrangThaiTienTrinhTongQuat());
-    await caiDatTaiNguyenTongQuat(value: QuanLyTrangThaiTaiNguyenTongQuat());
-    await caiDatChienDauCoTongQuat(value: QuanLyTrangThaiChienDauCoTongQuat());
-    await caiDatChienDauCoChienDauTongQuat(value: QuanLyTrangThaiChienDauCoChienDauTongQuat());
-    await caiDatBangDieuKhienTongQuat(value: QuanLyTrangThaiBangDieuKhienTongQuat(maDinhDanhBangDieuKhien: null));
-    await caiDatDieuKhienDiChuyenTongQuat(value: QuanLyTrangThaiDieuKhienDiChuyenTongQuat());
-    await caiDatDieuKhienTienTrinhTongQuat(value: QuanLyTrangThaiDieuKhienTienTrinhTongQuat());
-    await caiDatDieuKhienTinhToanTongQuat(value: QuanLyTrangThaiDieuKhienTinhToanTongQuat());
-    await caiDatHieuUngHoatAnhTongQuat(value: QuanLyTrangThaiHieuUngHoatAnhTongQuat());
-    await caiDatVatTheMoiTruongTongQuat(value: QuanLyTrangThaiVatTheMoiTruongTongQuat());
-    await caiDatPhuongTienTongQuat(value: QuanLyTrangThaiPhuongTienTongQuat());
+    if (kDebugMode) {
+      stopwatchSetupRoot = Stopwatch();
+      stopwatchSetupRoot?.start();
+    }
 
-    await caiDatBangDieuKhienChienDauSS01(value: QuanLyTrangThaiBangDieuKhienTongQuat(maDinhDanhBangDieuKhien: '[BANG_DIEU_KHIEN_CHIEN_DAU_SS01]'));
-    await caiDatBangDieuKhienChienDauSS02(value: QuanLyTrangThaiBangDieuKhienTongQuat(maDinhDanhBangDieuKhien: '[BANG_DIEU_KHIEN_CHIEN_DAU_SS02]'));
-    await caiDatBangDieuKhienChienDauSS03(value: QuanLyTrangThaiBangDieuKhienTongQuat(maDinhDanhBangDieuKhien: '[BANG_DIEU_KHIEN_CHIEN_DAU_SS03]'));
+    try {
+      /// -----
+      /// TODO:
+      /// -----
+      await Future.wait([
+        ///
+      ]);
 
-    await caiDatHangarChienDauCoTongQuat(value: QuanLyTrangThaiHangarChienDauCoTongQuat());
-    await caiDatHangarPhuongTienTongQuat(value: QuanLyTrangThaiHangarPhuongTienTongQuat());
+      await caiDatDichVuHeThong(value: QuanLyTrangThaiDichVuHeThong());
 
-    await caiDatSuKienVaChamTrongChienDau(value: QuanLyTrangThaiSuKienVaChamTrongChienDau());
+      await caiDatDichVuMayPhatAmThanh(value: QUANLYTRANGTHAIDICHVUMAYPHATAMTHANH());
+      // await caiDatDichVuCoSoDuLieu(value: QUANLYTRANGTHAIDICHVUCOSODULIEU());
 
-    await caiDatDanhSachMoHinhTongQuat(value: QuanLyTrangThaiDanhSachMoHinhTongQuat());
+      await caiDatThietLapTongQuat(value: QuanLyTrangThaiThietLapTongQuat());
+      // await caiDatThongBaoTongQuat(value: QuanLyTrangThaiThongBaoTongQuat());
+      await caiDatTienTrinhTongQuat(value: QuanLyTrangThaiTienTrinhTongQuat());
+      await caiDatTaiNguyenTongQuat(value: QuanLyTrangThaiTaiNguyenTongQuat());
+      await caiDatChienDauCoTongQuat(value: QuanLyTrangThaiChienDauCoTongQuat());
+      await caiDatChienDauCoChienDauTongQuat(value: QuanLyTrangThaiChienDauCoChienDauTongQuat());
+      await caiDatBangDieuKhienTongQuat(value: QuanLyTrangThaiBangDieuKhienTongQuat(maDinhDanhBangDieuKhien: null));
+      await caiDatDieuKhienDiChuyenTongQuat(value: QuanLyTrangThaiDieuKhienDiChuyenTongQuat());
+      await caiDatDieuKhienTienTrinhTongQuat(value: QuanLyTrangThaiDieuKhienTienTrinhTongQuat());
+      await caiDatDieuKhienTinhToanTongQuat(value: QuanLyTrangThaiDieuKhienTinhToanTongQuat());
+      await caiDatHieuUngHoatAnhTongQuat(value: QuanLyTrangThaiHieuUngHoatAnhTongQuat());
+      await caiDatVatTheMoiTruongTongQuat(value: QuanLyTrangThaiVatTheMoiTruongTongQuat());
+      await caiDatPhuongTienTongQuat(value: QuanLyTrangThaiPhuongTienTongQuat());
 
-    await caiDatTaiNguyenTraoDoiTongQuat(value: QUANLYTRANGTHAITAINGUYENTRAODOIGIATRI());
+      await caiDatBangDieuKhienChienDauSS01(value: QuanLyTrangThaiBangDieuKhienTongQuat(maDinhDanhBangDieuKhien: '[BANG_DIEU_KHIEN_CHIEN_DAU_SS01]'));
+      await caiDatBangDieuKhienChienDauSS02(value: QuanLyTrangThaiBangDieuKhienTongQuat(maDinhDanhBangDieuKhien: '[BANG_DIEU_KHIEN_CHIEN_DAU_SS02]'));
+      await caiDatBangDieuKhienChienDauSS03(value: QuanLyTrangThaiBangDieuKhienTongQuat(maDinhDanhBangDieuKhien: '[BANG_DIEU_KHIEN_CHIEN_DAU_SS03]'));
 
-    await caiDatDichVuThanhTichChienDau(value: QUANLYTRANGTHAIDICHVUTHANHTICHCHIENDAU());
+      await caiDatHangarChienDauCoTongQuat(value: QuanLyTrangThaiHangarChienDauCoTongQuat());
+      await caiDatHangarPhuongTienTongQuat(value: QuanLyTrangThaiHangarPhuongTienTongQuat());
 
-    await caiDatPhuongTienChienDauXamChiem(value: QUANLYTRANGTHAIPHUONGTIENCHIENDAUXAMCHIEM());
+      await caiDatSuKienVaChamTrongChienDau(value: QuanLyTrangThaiSuKienVaChamTrongChienDau());
 
-    // await caiDatBangDieuKhienDoiHinhDauSyTienPhong(value: BANGDIEUKHIENDOIHINHDAUSYTIENPHONG());
-    // await caiDatBangDieuKhienDoiHinhTuanTraTrinhSat(value: BANGDIEUKHIENDOIHINHTUANTRATRINHSAT());
-    // await caiDatBangDieuKhienDoiHinhSatThuTanCong(value: BANGDIEUKHIENDOIHINHSATTHUTANCONG());
-    // await caiDatBangDieuKhienDoiHinhQuanDoanCanVe(value: BANGDIEUKHIENDOIHINHQUANDOANCANVE());
-    // await caiDatBangDieuKhienDoiHinhSieuCapChiHuy(value: BANGDIEUKHIENDOIHINHSIEUCAPCHIHUY());
+      await caiDatDanhSachMoHinhTongQuat(value: QuanLyTrangThaiDanhSachMoHinhTongQuat());
 
-    await caiDatBangDieuKhienChienDau(value: QUANLYTRANGTHAIBANGDIEUKHIENCHIENDAU());
+      await caiDatTaiNguyenTraoDoiTongQuat(value: QUANLYTRANGTHAITAINGUYENTRAODOIGIATRI());
 
-    await caiDatBangDieuKhienKichBanChienDauTheoGiaiDoan(value: QUANLYTRANGTHAIBANGDIEUKHIENKICHBANCHIENDAUTHEOGIAIDOAN());
+      await caiDatDichVuThanhTichChienDau(value: QUANLYTRANGTHAIDICHVUTHANHTICHCHIENDAU());
 
-    await caiDatBanDoChienDau(value: QUANLYTRANGTHAITONGQUATBANDOCHIENDAU());
+      await caiDatPhuongTienChienDauXamChiem(value: QUANLYTRANGTHAIPHUONGTIENCHIENDAUXAMCHIEM());
 
-    await caiDatSuKienVaChamThuocPhuongTien(value: QUANLYTRANGTHAISUKIENVACHAMTHUOCPHUONGTIEN());
+      // await caiDatBangDieuKhienDoiHinhDauSyTienPhong(value: BANGDIEUKHIENDOIHINHDAUSYTIENPHONG());
+      // await caiDatBangDieuKhienDoiHinhTuanTraTrinhSat(value: BANGDIEUKHIENDOIHINHTUANTRATRINHSAT());
+      // await caiDatBangDieuKhienDoiHinhSatThuTanCong(value: BANGDIEUKHIENDOIHINHSATTHUTANCONG());
+      // await caiDatBangDieuKhienDoiHinhQuanDoanCanVe(value: BANGDIEUKHIENDOIHINHQUANDOANCANVE());
+      // await caiDatBangDieuKhienDoiHinhSieuCapChiHuy(value: BANGDIEUKHIENDOIHINHSIEUCAPCHIHUY());
 
-    await onCaiDatQuanLyTrangThaiVPPTTQ(value: QUANLYTRANGTHAIVATPHAMPHANTHUONGTONGQUAT());
+      await caiDatBangDieuKhienChienDau(value: QUANLYTRANGTHAIBANGDIEUKHIENCHIENDAU());
 
-    await onCaiDatQuanLyTrangThaiTPGAMEUI(value: QUANLYTRANGTHAITHANHPHANGAMEUITONGQUAT());
+      await caiDatBangDieuKhienKichBanChienDauTheoGiaiDoan(value: QUANLYTRANGTHAIBANGDIEUKHIENKICHBANCHIENDAUTHEOGIAIDOAN());
 
-    await onSetEntityResourceManagement(value: EntityResourceManagement());
+      await caiDatBanDoChienDau(value: QUANLYTRANGTHAITONGQUATBANDOCHIENDAU());
 
-    /// -----
-    /// TODO: Setup Root For SubCom
-    /// -----
-    await onSetupRootForSubCom();
+      await caiDatSuKienVaChamThuocPhuongTien(value: QUANLYTRANGTHAISUKIENVACHAMTHUOCPHUONGTIEN());
 
+      await onCaiDatQuanLyTrangThaiVPPTTQ(value: QUANLYTRANGTHAIVATPHAMPHANTHUONGTONGQUAT());
+
+      await onCaiDatQuanLyTrangThaiTPGAMEUI(value: QUANLYTRANGTHAITHANHPHANGAMEUITONGQUAT());
+
+      await onSetEntityResourceManagement(value: EntityResourceManagement());
+
+
+      /// -----
+      /// TODO: Setup Root For SubCom
+      /// -----
+      if (shouldIgnoreSetupRootForSubCom == null || shouldIgnoreSetupRootForSubCom == false) {
+        await onSetupRootForSubCom();
+      }
+    } catch (e) {
+      await onReportRootIssue(nameFunction: '[onSetupRoot]');
+    }
+
+    if (kDebugMode) {
+      stopwatchSetupRoot?.stop();
+      print('=====Thời Gian stopwatchSetupRoot=====: ${stopwatchSetupRoot?.elapsedMilliseconds}ms');
+    }
+
+    ///
     return;
   }
+
+  // /// -----
+  // /// TODO: Setup Root
+  // /// -----
+  // Future<void> onSetupRoot() async {
+  //   await caiDatDichVuHeThong(value: QuanLyTrangThaiDichVuHeThong());
+  //
+  //   await caiDatDichVuMayPhatAmThanh(value: QUANLYTRANGTHAIDICHVUMAYPHATAMTHANH());
+  //   await caiDatDichVuCoSoDuLieu(value: QUANLYTRANGTHAIDICHVUCOSODULIEU());
+  //
+  //   await caiDatThietLapTongQuat(value: QuanLyTrangThaiThietLapTongQuat());
+  //   await caiDatThongBaoTongQuat(value: QuanLyTrangThaiThongBaoTongQuat());
+  //   await caiDatTienTrinhTongQuat(value: QuanLyTrangThaiTienTrinhTongQuat());
+  //   await caiDatTaiNguyenTongQuat(value: QuanLyTrangThaiTaiNguyenTongQuat());
+  //   await caiDatChienDauCoTongQuat(value: QuanLyTrangThaiChienDauCoTongQuat());
+  //   await caiDatChienDauCoChienDauTongQuat(value: QuanLyTrangThaiChienDauCoChienDauTongQuat());
+  //   await caiDatBangDieuKhienTongQuat(value: QuanLyTrangThaiBangDieuKhienTongQuat(maDinhDanhBangDieuKhien: null));
+  //   await caiDatDieuKhienDiChuyenTongQuat(value: QuanLyTrangThaiDieuKhienDiChuyenTongQuat());
+  //   await caiDatDieuKhienTienTrinhTongQuat(value: QuanLyTrangThaiDieuKhienTienTrinhTongQuat());
+  //   await caiDatDieuKhienTinhToanTongQuat(value: QuanLyTrangThaiDieuKhienTinhToanTongQuat());
+  //   await caiDatHieuUngHoatAnhTongQuat(value: QuanLyTrangThaiHieuUngHoatAnhTongQuat());
+  //   await caiDatVatTheMoiTruongTongQuat(value: QuanLyTrangThaiVatTheMoiTruongTongQuat());
+  //   await caiDatPhuongTienTongQuat(value: QuanLyTrangThaiPhuongTienTongQuat());
+  //
+  //   await caiDatBangDieuKhienChienDauSS01(value: QuanLyTrangThaiBangDieuKhienTongQuat(maDinhDanhBangDieuKhien: '[BANG_DIEU_KHIEN_CHIEN_DAU_SS01]'));
+  //   await caiDatBangDieuKhienChienDauSS02(value: QuanLyTrangThaiBangDieuKhienTongQuat(maDinhDanhBangDieuKhien: '[BANG_DIEU_KHIEN_CHIEN_DAU_SS02]'));
+  //   await caiDatBangDieuKhienChienDauSS03(value: QuanLyTrangThaiBangDieuKhienTongQuat(maDinhDanhBangDieuKhien: '[BANG_DIEU_KHIEN_CHIEN_DAU_SS03]'));
+  //
+  //   await caiDatHangarChienDauCoTongQuat(value: QuanLyTrangThaiHangarChienDauCoTongQuat());
+  //   await caiDatHangarPhuongTienTongQuat(value: QuanLyTrangThaiHangarPhuongTienTongQuat());
+  //
+  //   await caiDatSuKienVaChamTrongChienDau(value: QuanLyTrangThaiSuKienVaChamTrongChienDau());
+  //
+  //   await caiDatDanhSachMoHinhTongQuat(value: QuanLyTrangThaiDanhSachMoHinhTongQuat());
+  //
+  //   await caiDatTaiNguyenTraoDoiTongQuat(value: QUANLYTRANGTHAITAINGUYENTRAODOIGIATRI());
+  //
+  //   await caiDatDichVuThanhTichChienDau(value: QUANLYTRANGTHAIDICHVUTHANHTICHCHIENDAU());
+  //
+  //   await caiDatPhuongTienChienDauXamChiem(value: QUANLYTRANGTHAIPHUONGTIENCHIENDAUXAMCHIEM());
+  //
+  //   // await caiDatBangDieuKhienDoiHinhDauSyTienPhong(value: BANGDIEUKHIENDOIHINHDAUSYTIENPHONG());
+  //   // await caiDatBangDieuKhienDoiHinhTuanTraTrinhSat(value: BANGDIEUKHIENDOIHINHTUANTRATRINHSAT());
+  //   // await caiDatBangDieuKhienDoiHinhSatThuTanCong(value: BANGDIEUKHIENDOIHINHSATTHUTANCONG());
+  //   // await caiDatBangDieuKhienDoiHinhQuanDoanCanVe(value: BANGDIEUKHIENDOIHINHQUANDOANCANVE());
+  //   // await caiDatBangDieuKhienDoiHinhSieuCapChiHuy(value: BANGDIEUKHIENDOIHINHSIEUCAPCHIHUY());
+  //
+  //   await caiDatBangDieuKhienChienDau(value: QUANLYTRANGTHAIBANGDIEUKHIENCHIENDAU());
+  //
+  //   await caiDatBangDieuKhienKichBanChienDauTheoGiaiDoan(value: QUANLYTRANGTHAIBANGDIEUKHIENKICHBANCHIENDAUTHEOGIAIDOAN());
+  //
+  //   await caiDatBanDoChienDau(value: QUANLYTRANGTHAITONGQUATBANDOCHIENDAU());
+  //
+  //   await caiDatSuKienVaChamThuocPhuongTien(value: QUANLYTRANGTHAISUKIENVACHAMTHUOCPHUONGTIEN());
+  //
+  //   await onCaiDatQuanLyTrangThaiVPPTTQ(value: QUANLYTRANGTHAIVATPHAMPHANTHUONGTONGQUAT());
+  //
+  //   await onCaiDatQuanLyTrangThaiTPGAMEUI(value: QUANLYTRANGTHAITHANHPHANGAMEUITONGQUAT());
+  //
+  //   await onSetEntityResourceManagement(value: EntityResourceManagement());
+  //
+  //   /// -----
+  //   /// TODO: Setup Root For SubCom
+  //   /// -----
+  //   await onSetupRootForSubCom();
+  //
+  //   return;
+  // }
 
   /// -----
   /// TODO: Reset Root
   /// -----
-  Future<void> onResetRoot() async {
-    ///
-    /// TODO: Reset Thuộc Tính Cục Bộ Đơn Giản
-    ///
+  @override
+  Future<void> onResetRoot({bool? shouldIgnoreResetRootForSubCom}) async {
+    try {
+      /// -----
+      /// TODO:
+      /// -----
 
-    /// -----
-    /// TODO: Init Root For SubCom
-    /// -----
-    await onResetRootForSubCom();
+      /// -----
+      /// TODO: Init Root For SubCom
+      /// -----
+      if (shouldIgnoreResetRootForSubCom == null || shouldIgnoreResetRootForSubCom == false) {
+        await onResetRootForSubCom();
+      }
+    } catch (e) {
+      await onReportRootIssue(nameFunction: '[onResetRoot]');
+    }
+
+    ///
     return;
   }
 
   /// -----
   /// TODO: Attach Root For SubCom
   /// -----
-  Future<void> onAttachRootForSubCom() async {
-    await getDichVuHeThong?.onAttachRoot(attachValue: this);
+  @override
+  Future<void> onAttachRootForSubCom({required dynamic attachValue}) async {
+    ///
+    try {
+      /// -----
+      /// TODO:
+      /// -----
+      await Future.wait([
+        ///
+      ]);
 
-    await getDichVuMayPhatAmThanh?.onAttachRoot(attachValue: this);
-    await getDichVuCoSoDuLieu?.onAttachRoot(attachValue: this);
+      await getDichVuHeThong?.onAttachRoot(attachValue: this);
 
-    await getThietLapTongQuat?.onAttachRoot(attachValue: this);
-    await getThongBaoTongQuat?.onAttachRoot(attachValue: this);
-    await getTienTrinhTongQuat?.onAttachRoot(attachValue: this);
-    await getTaiNguyenTongQuat?.onAttachRoot(attachValue: this);
-    await getChienDauCoTongQuat?.onAttachRoot(attachValue: this);
-    await getChienDauCoChienDauTongQuat?.onAttachRoot(attachValue: this);
-    await getBangDieuKhienTongQuat?.onAttachRoot(attachValue: this);
-    await getDieuKhienDiChuyenTongQuat?.onAttachRoot(attachValue: this);
-    await getDieuKhienTienTrinhTongQuat?.onAttachRoot(attachValue: this);
-    await getDieuKhienTinhToanTongQuat?.onAttachRoot(attachValue: this);
-    await getHieuUngHoatAnhTongQuat?.onAttachRoot(attachValue: this);
-    await getVatTheMoiTruongTongQuat?.onAttachRoot(attachValue: this);
-    await getPhuongTienTongQuat?.onAttachRoot(attachValue: this);
+      await getDichVuMayPhatAmThanh?.onAttachRoot(attachValue: this);
+      await getDichVuCoSoDuLieu?.onAttachRoot(attachValue: this);
 
-    await getBangDieuKhienChienDauSS01?.onAttachRoot(attachValue: this);
-    await getBangDieuKhienChienDauSS02?.onAttachRoot(attachValue: this);
-    await getBangDieuKhienChienDauSS03?.onAttachRoot(attachValue: this);
+      await getThietLapTongQuat?.onAttachRoot(attachValue: this);
+      await getThongBaoTongQuat?.onAttachRoot(attachValue: this);
+      await getTienTrinhTongQuat?.onAttachRoot(attachValue: this);
+      await getTaiNguyenTongQuat?.onAttachRoot(attachValue: this);
+      await getChienDauCoTongQuat?.onAttachRoot(attachValue: this);
+      await getChienDauCoChienDauTongQuat?.onAttachRoot(attachValue: this);
+      await getBangDieuKhienTongQuat?.onAttachRoot(attachValue: this);
+      await getDieuKhienDiChuyenTongQuat?.onAttachRoot(attachValue: this);
+      await getDieuKhienTienTrinhTongQuat?.onAttachRoot(attachValue: this);
+      await getDieuKhienTinhToanTongQuat?.onAttachRoot(attachValue: this);
+      await getHieuUngHoatAnhTongQuat?.onAttachRoot(attachValue: this);
+      await getVatTheMoiTruongTongQuat?.onAttachRoot(attachValue: this);
+      await getPhuongTienTongQuat?.onAttachRoot(attachValue: this);
 
-    await getHangarChienDauCoTongQuat?.onAttachRoot(attachValue: this);
-    await getHangarPhuongTienTongQuat?.onAttachRoot(attachValue: this);
+      await getBangDieuKhienChienDauSS01?.onAttachRoot(attachValue: this);
+      await getBangDieuKhienChienDauSS02?.onAttachRoot(attachValue: this);
+      await getBangDieuKhienChienDauSS03?.onAttachRoot(attachValue: this);
 
-    await getSuKienVaChamTrongChienDau?.onAttachRoot(attachValue: this);
+      await getHangarChienDauCoTongQuat?.onAttachRoot(attachValue: this);
+      await getHangarPhuongTienTongQuat?.onAttachRoot(attachValue: this);
 
-    await getDanhSachMoHinhTongQuat?.onAttachRoot(attachValue: this);
+      await getSuKienVaChamTrongChienDau?.onAttachRoot(attachValue: this);
 
-    await getTaiNguyenTraoDoiTongQuat?.onAttachRoot(attachValue: this);
+      await getDanhSachMoHinhTongQuat?.onAttachRoot(attachValue: this);
 
-    await getDichVuThanhTichChienDau?.onAttachRoot(attachValue: this);
+      await getTaiNguyenTraoDoiTongQuat?.onAttachRoot(attachValue: this);
 
-    await getPhuongTienChienDauXamChiem?.onAttachRoot(attachValue: this);
+      await getDichVuThanhTichChienDau?.onAttachRoot(attachValue: this);
 
-    // await getBangDieuKhienDoiHinhDauSyTienPhong?.onAttachRoot(attachValue: this);
-    // await getBangDieuKhienDoiHinhTuanTraTrinhSat?.onAttachRoot(attachValue: this);
-    // await getBangDieuKhienDoiHinhSatThuTanCong?.onAttachRoot(attachValue: this);
-    // await getBangDieuKhienDoiHinhQuanDoanCanVe?.onAttachRoot(attachValue: this);
-    // await getBangDieuKhienDoiHinhSieuCapChiHuy?.onAttachRoot(attachValue: this);
+      await getPhuongTienChienDauXamChiem?.onAttachRoot(attachValue: this);
 
-    await getBangDieuKhienChienDau?.onAttachRoot(attachValue: this);
+      // await getBangDieuKhienDoiHinhDauSyTienPhong?.onAttachRoot(attachValue: this);
+      // await getBangDieuKhienDoiHinhTuanTraTrinhSat?.onAttachRoot(attachValue: this);
+      // await getBangDieuKhienDoiHinhSatThuTanCong?.onAttachRoot(attachValue: this);
+      // await getBangDieuKhienDoiHinhQuanDoanCanVe?.onAttachRoot(attachValue: this);
+      // await getBangDieuKhienDoiHinhSieuCapChiHuy?.onAttachRoot(attachValue: this);
 
-    await getBangDieuKhienKichBanChienDauTheoGiaiDoan?.onAttachRoot(attachValue: this);
+      await getBangDieuKhienChienDau?.onAttachRoot(attachValue: this);
 
-    await getBanDoChienDau?.onAttachRoot(attachValue: this);
+      await getBangDieuKhienKichBanChienDauTheoGiaiDoan?.onAttachRoot(attachValue: this);
 
-    await getSuKienVaChamThuocPhuongTien?.onAttachRoot(attachValue: this);
+      await getBanDoChienDau?.onAttachRoot(attachValue: this);
 
-    await getQuanLyTrangThaiVPPTTQ?.onAttachRoot(attachValue: this);
+      await getSuKienVaChamThuocPhuongTien?.onAttachRoot(attachValue: this);
 
-    await onGetEntityResourceManagement?.onAttachRoot(attachValue: this);
+      await getQuanLyTrangThaiVPPTTQ?.onAttachRoot(attachValue: this);
 
+      await onGetEntityResourceManagement?.onAttachRoot(attachValue: this);
+
+      ///
+    } catch (e) {
+      await onReportRootIssue(nameFunction: '[onAttachRootForSubCom]');
+    }
+
+    ///
     return;
+
   }
 
   /// -----
   /// TODO: Setup Root For SubCom
   /// -----
+  @override
   Future<void> onSetupRootForSubCom() async {
-    await getDichVuHeThong?.onSetupRoot();
 
-    await getDichVuMayPhatAmThanh?.onSetupRoot();
-    await getDichVuCoSoDuLieu?.onSetupRoot();
+    ///
+    try {
+      /// -----
+      /// TODO:
+      /// -----
+      await Future.wait([
+        ///
+      ]);
 
-    await getThietLapTongQuat?.onSetupRoot();
-    await getThongBaoTongQuat?.onSetupRoot();
-    await getTienTrinhTongQuat?.onSetupRoot();
-    await getTaiNguyenTongQuat?.onSetupRoot();
-    await getChienDauCoTongQuat?.onSetupRoot();
-    await getChienDauCoChienDauTongQuat?.onSetupRoot();
-    await getBangDieuKhienTongQuat?.onSetupRoot();
-    await getDieuKhienDiChuyenTongQuat?.onSetupRoot();
-    await getDieuKhienTienTrinhTongQuat?.onSetupRoot();
-    await getDieuKhienTinhToanTongQuat?.onSetupRoot();
-    await getHieuUngHoatAnhTongQuat?.onSetupRoot();
-    await getVatTheMoiTruongTongQuat?.onSetupRoot();
-    await getPhuongTienTongQuat?.onSetupRoot();
+      await getDichVuHeThong?.onSetupRoot();
 
-    await getBangDieuKhienChienDauSS01?.onSetupRoot();
-    await getBangDieuKhienChienDauSS02?.onSetupRoot();
-    await getBangDieuKhienChienDauSS03?.onSetupRoot();
+      await getDichVuMayPhatAmThanh?.onSetupRoot();
+      await getDichVuCoSoDuLieu?.onSetupRoot();
 
-    await getHangarChienDauCoTongQuat?.onSetupRoot();
-    await getHangarPhuongTienTongQuat?.onSetupRoot();
+      await getThietLapTongQuat?.onSetupRoot();
+      await getThongBaoTongQuat?.onSetupRoot();
+      await getTienTrinhTongQuat?.onSetupRoot();
+      await getTaiNguyenTongQuat?.onSetupRoot();
+      await getChienDauCoTongQuat?.onSetupRoot();
+      await getChienDauCoChienDauTongQuat?.onSetupRoot();
+      await getBangDieuKhienTongQuat?.onSetupRoot();
+      await getDieuKhienDiChuyenTongQuat?.onSetupRoot();
+      await getDieuKhienTienTrinhTongQuat?.onSetupRoot();
+      await getDieuKhienTinhToanTongQuat?.onSetupRoot();
+      await getHieuUngHoatAnhTongQuat?.onSetupRoot();
+      await getVatTheMoiTruongTongQuat?.onSetupRoot();
+      await getPhuongTienTongQuat?.onSetupRoot();
 
-    await getSuKienVaChamTrongChienDau?.onSetupRoot();
+      await getBangDieuKhienChienDauSS01?.onSetupRoot();
+      await getBangDieuKhienChienDauSS02?.onSetupRoot();
+      await getBangDieuKhienChienDauSS03?.onSetupRoot();
 
-    await getDanhSachMoHinhTongQuat?.onSetupRoot();
+      await getHangarChienDauCoTongQuat?.onSetupRoot();
+      await getHangarPhuongTienTongQuat?.onSetupRoot();
 
-    await getTaiNguyenTraoDoiTongQuat?.onSetupRoot();
+      await getSuKienVaChamTrongChienDau?.onSetupRoot();
 
-    await getDichVuThanhTichChienDau?.onSetupRoot();
+      await getDanhSachMoHinhTongQuat?.onSetupRoot();
 
-    await getPhuongTienChienDauXamChiem?.onSetupRoot();
+      await getTaiNguyenTraoDoiTongQuat?.onSetupRoot();
 
-    // await getBangDieuKhienDoiHinhDauSyTienPhong?.onSetupRoot();
-    // await getBangDieuKhienDoiHinhTuanTraTrinhSat?.onSetupRoot();
-    // await getBangDieuKhienDoiHinhSatThuTanCong?.onSetupRoot();
-    // await getBangDieuKhienDoiHinhQuanDoanCanVe?.onSetupRoot();
-    // await getBangDieuKhienDoiHinhSieuCapChiHuy?.onSetupRoot();
+      await getDichVuThanhTichChienDau?.onSetupRoot();
 
-    await getBangDieuKhienChienDau?.onSetupRoot();
+      await getPhuongTienChienDauXamChiem?.onSetupRoot();
 
-    await getBangDieuKhienKichBanChienDauTheoGiaiDoan?.onSetupRoot();
+      // await getBangDieuKhienDoiHinhDauSyTienPhong?.onSetupRoot();
+      // await getBangDieuKhienDoiHinhTuanTraTrinhSat?.onSetupRoot();
+      // await getBangDieuKhienDoiHinhSatThuTanCong?.onSetupRoot();
+      // await getBangDieuKhienDoiHinhQuanDoanCanVe?.onSetupRoot();
+      // await getBangDieuKhienDoiHinhSieuCapChiHuy?.onSetupRoot();
 
-    await getBanDoChienDau?.onSetupRoot();
+      await getBangDieuKhienChienDau?.onSetupRoot();
 
-    await getSuKienVaChamThuocPhuongTien?.onSetupRoot();
+      await getBangDieuKhienKichBanChienDauTheoGiaiDoan?.onSetupRoot();
 
-    await getQuanLyTrangThaiVPPTTQ?.onSetupRoot();
+      await getBanDoChienDau?.onSetupRoot();
 
-    await getQuanLyTrangThaiTPGAMEUI?.onSetupRoot();
+      await getSuKienVaChamThuocPhuongTien?.onSetupRoot();
 
-    await onGetEntityResourceManagement?.onSetupRoot();
+      await getQuanLyTrangThaiVPPTTQ?.onSetupRoot();
+
+      await getQuanLyTrangThaiTPGAMEUI?.onSetupRoot();
+
+      await onGetEntityResourceManagement?.onSetupRoot();
+
+      ///
+    } catch (e) {
+      await onReportRootIssue(nameFunction: '[onSetupRootForSubCom]');
+    }
 
     return;
   }
@@ -315,63 +489,79 @@ class QuanLyTrangThaiTongQuat {
   /// -----
   /// TODO: Init Root For SubCom
   /// -----
+  @override
   Future<void> onInitRootForSubCom() async {
-    await getDichVuHeThong?.onInitRoot();
 
-    await getDichVuMayPhatAmThanh?.onInitRoot();
-    await getDichVuCoSoDuLieu?.onInitRoot();
+    ///
+    try {
+      /// -----
+      /// TODO:
+      /// -----
+      await Future.wait([
+        ///
+      ]);
 
-    await getThietLapTongQuat?.onInitRoot();
-    await getThongBaoTongQuat?.onInitRoot();
-    await getTienTrinhTongQuat?.onInitRoot();
-    await getTaiNguyenTongQuat?.onInitRoot();
-    await getChienDauCoTongQuat?.onInitRoot();
-    await getChienDauCoChienDauTongQuat?.onInitRoot();
-    await getBangDieuKhienTongQuat?.onInitRoot();
-    await getDieuKhienDiChuyenTongQuat?.onInitRoot();
-    await getDieuKhienTienTrinhTongQuat?.onInitRoot();
-    await getDieuKhienTinhToanTongQuat?.onInitRoot();
-    await getHieuUngHoatAnhTongQuat?.onInitRoot();
-    await getVatTheMoiTruongTongQuat?.onInitRoot();
-    await getPhuongTienTongQuat?.onInitRoot();
+      await getDichVuHeThong?.onInitRoot();
 
-    await getBangDieuKhienChienDauSS01?.onInitRoot();
-    await getBangDieuKhienChienDauSS02?.onInitRoot();
-    await getBangDieuKhienChienDauSS03?.onInitRoot();
+      await getDichVuMayPhatAmThanh?.onInitRoot();
+      await getDichVuCoSoDuLieu?.onInitRoot();
 
-    /// OPTIMIZE LOAD IMAGE
-    await getHangarChienDauCoTongQuat?.onInitRoot();
-    await getHangarPhuongTienTongQuat?.onInitRoot();
+      await getThietLapTongQuat?.onInitRoot();
+      await getThongBaoTongQuat?.onInitRoot();
+      await getTienTrinhTongQuat?.onInitRoot();
+      await getTaiNguyenTongQuat?.onInitRoot();
+      await getChienDauCoTongQuat?.onInitRoot();
+      await getChienDauCoChienDauTongQuat?.onInitRoot();
+      await getBangDieuKhienTongQuat?.onInitRoot();
+      await getDieuKhienDiChuyenTongQuat?.onInitRoot();
+      await getDieuKhienTienTrinhTongQuat?.onInitRoot();
+      await getDieuKhienTinhToanTongQuat?.onInitRoot();
+      await getHieuUngHoatAnhTongQuat?.onInitRoot();
+      await getVatTheMoiTruongTongQuat?.onInitRoot();
+      await getPhuongTienTongQuat?.onInitRoot();
 
-    await getSuKienVaChamTrongChienDau?.onInitRoot();
+      await getBangDieuKhienChienDauSS01?.onInitRoot();
+      await getBangDieuKhienChienDauSS02?.onInitRoot();
+      await getBangDieuKhienChienDauSS03?.onInitRoot();
 
-    await getDanhSachMoHinhTongQuat?.onInitRoot();
+      /// OPTIMIZE LOAD IMAGE
+      await getHangarChienDauCoTongQuat?.onInitRoot();
+      await getHangarPhuongTienTongQuat?.onInitRoot();
 
-    await getTaiNguyenTraoDoiTongQuat?.onInitRoot();
+      await getSuKienVaChamTrongChienDau?.onInitRoot();
 
-    await getDichVuThanhTichChienDau?.onInitRoot();
+      await getDanhSachMoHinhTongQuat?.onInitRoot();
 
-    await getPhuongTienChienDauXamChiem?.onInitRoot();
+      await getTaiNguyenTraoDoiTongQuat?.onInitRoot();
 
-    // await getBangDieuKhienDoiHinhDauSyTienPhong?.onInitRoot();
-    // await getBangDieuKhienDoiHinhTuanTraTrinhSat?.onInitRoot();
-    // await getBangDieuKhienDoiHinhSatThuTanCong?.onInitRoot();
-    // await getBangDieuKhienDoiHinhQuanDoanCanVe?.onInitRoot();
-    // await getBangDieuKhienDoiHinhSieuCapChiHuy?.onInitRoot();
+      await getDichVuThanhTichChienDau?.onInitRoot();
 
-    await getBangDieuKhienChienDau?.onInitRoot();
+      await getPhuongTienChienDauXamChiem?.onInitRoot();
 
-    await getBangDieuKhienKichBanChienDauTheoGiaiDoan?.onInitRoot();
+      // await getBangDieuKhienDoiHinhDauSyTienPhong?.onInitRoot();
+      // await getBangDieuKhienDoiHinhTuanTraTrinhSat?.onInitRoot();
+      // await getBangDieuKhienDoiHinhSatThuTanCong?.onInitRoot();
+      // await getBangDieuKhienDoiHinhQuanDoanCanVe?.onInitRoot();
+      // await getBangDieuKhienDoiHinhSieuCapChiHuy?.onInitRoot();
 
-    await getBanDoChienDau?.onInitRoot();
+      await getBangDieuKhienChienDau?.onInitRoot();
 
-    await getSuKienVaChamThuocPhuongTien?.onInitRoot();
+      await getBangDieuKhienKichBanChienDauTheoGiaiDoan?.onInitRoot();
 
-    await getQuanLyTrangThaiVPPTTQ?.onInitRoot();
+      await getBanDoChienDau?.onInitRoot();
 
-    await getQuanLyTrangThaiTPGAMEUI?.onInitRoot();
+      await getSuKienVaChamThuocPhuongTien?.onInitRoot();
 
-    await onGetEntityResourceManagement?.onInitRoot();
+      await getQuanLyTrangThaiVPPTTQ?.onInitRoot();
+
+      await getQuanLyTrangThaiTPGAMEUI?.onInitRoot();
+
+      await onGetEntityResourceManagement?.onInitRoot();
+
+      ///
+    } catch (e) {
+      await onReportRootIssue(nameFunction: '[onInitRootForSubCom]');
+    }
 
     return;
   }
@@ -379,38 +569,55 @@ class QuanLyTrangThaiTongQuat {
   /// -----
   /// TODO: Reset Root For SubCom
   /// -----
+  @override
   Future<void> onResetRootForSubCom() async {
-    await getDichVuHeThong?.onResetRoot();
-    await getThietLapTongQuat?.onResetRoot();
-    await getThongBaoTongQuat?.onResetRoot();
-    await getTienTrinhTongQuat?.onResetRoot();
-    await getTaiNguyenTongQuat?.onResetRoot();
-    await getChienDauCoTongQuat?.onResetRoot();
-    await getChienDauCoChienDauTongQuat?.onResetRoot();
-    await getBangDieuKhienTongQuat?.onResetRoot();
-    await getDieuKhienDiChuyenTongQuat?.onResetRoot();
-    await getDieuKhienTienTrinhTongQuat?.onResetRoot();
-    await getDieuKhienTinhToanTongQuat?.onResetRoot();
-    await getHieuUngHoatAnhTongQuat?.onResetRoot();
-    await getVatTheMoiTruongTongQuat?.onResetRoot();
-    await getPhuongTienTongQuat?.onResetRoot();
 
-    await getBangDieuKhienChienDauSS01?.onResetRoot();
-    await getBangDieuKhienChienDauSS02?.onResetRoot();
-    await getBangDieuKhienChienDauSS03?.onResetRoot();
+    try {
+      /// -----
+      /// TODO:
+      /// -----
 
-    await getHangarChienDauCoTongQuat?.onResetRoot();
-    await getHangarPhuongTienTongQuat?.onResetRoot();
+      await getDichVuHeThong?.onResetRoot();
+      await getThietLapTongQuat?.onResetRoot();
+      await getThongBaoTongQuat?.onResetRoot();
+      await getTienTrinhTongQuat?.onResetRoot();
+      await getTaiNguyenTongQuat?.onResetRoot();
+      await getChienDauCoTongQuat?.onResetRoot();
+      await getChienDauCoChienDauTongQuat?.onResetRoot();
+      await getBangDieuKhienTongQuat?.onResetRoot();
+      await getDieuKhienDiChuyenTongQuat?.onResetRoot();
+      await getDieuKhienTienTrinhTongQuat?.onResetRoot();
+      await getDieuKhienTinhToanTongQuat?.onResetRoot();
+      await getHieuUngHoatAnhTongQuat?.onResetRoot();
+      await getVatTheMoiTruongTongQuat?.onResetRoot();
+      await getPhuongTienTongQuat?.onResetRoot();
 
-    await getSuKienVaChamTrongChienDau?.onResetRoot();
+      await getBangDieuKhienChienDauSS01?.onResetRoot();
+      await getBangDieuKhienChienDauSS02?.onResetRoot();
+      await getBangDieuKhienChienDauSS03?.onResetRoot();
 
-    await getDanhSachMoHinhTongQuat?.onResetRoot();
+      await getHangarChienDauCoTongQuat?.onResetRoot();
+      await getHangarPhuongTienTongQuat?.onResetRoot();
 
-    await getTaiNguyenTraoDoiTongQuat?.onResetRoot();
+      await getSuKienVaChamTrongChienDau?.onResetRoot();
 
-    await getDichVuThanhTichChienDau?.onResetRoot();
+      await getDanhSachMoHinhTongQuat?.onResetRoot();
 
-    await getBangDieuKhienKichBanChienDauTheoGiaiDoan?.onResetRoot();
+      await getTaiNguyenTraoDoiTongQuat?.onResetRoot();
+
+      await getDichVuThanhTichChienDau?.onResetRoot();
+
+      await getBangDieuKhienKichBanChienDauTheoGiaiDoan?.onResetRoot();
+
+
+    } catch (e) {
+      await onReportRootIssue(nameFunction: '[onResetRootForSubCom]');
+    }
+
+    ///
+    return;
+
+
 
     return;
   }

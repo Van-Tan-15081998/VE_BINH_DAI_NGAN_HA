@@ -11,7 +11,7 @@ class QUANLYTHANHPHANMANHINHTHUOCCAP
   /// TODO:
   /// -----
   QUANLYTHANHPHANMANHINHTHUOCCAP({
-    required super.globalState,
+    required super.globalStateManagementSystem,
     required super.gameController,
     required super.thanhPhanQuanLyThuocCapTrucTiep,
     required super.sizeDx,
@@ -63,9 +63,9 @@ class QUANLYTHANHPHANMANHINHTHUOCCAP
     await super.onSetupRootForSubCom();
 
     double sizeDxManHinhVatLy =
-        getGlobalState?.getThietLapTongQuat?.getChieuRongManHinhVatLy ?? 100.0;
+        getGlobalStateManagementSystem?.getThietLapTongQuat?.getChieuRongManHinhVatLy ?? 100.0;
     double sizeDyManHinhVatLy =
-        getGlobalState?.getThietLapTongQuat?.getChieuCaoManHinhVatLy ?? 100.0;
+        getGlobalStateManagementSystem?.getThietLapTongQuat?.getChieuCaoManHinhVatLy ?? 100.0;
 
     double sizeDxNutBamChonTab = sizeDxManHinhVatLy * 0.9;
     double sizeDyNutBamChonTab = sizeDyManHinhVatLy * 0.8;

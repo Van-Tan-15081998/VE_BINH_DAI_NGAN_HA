@@ -12,7 +12,7 @@ class CARDCHIENDAUCOCHONCHIDINH extends THANHPHANNUTBAMTICHHOPTHUOCCAP {
   /// TODO:
   /// -----
   CARDCHIENDAUCOCHONCHIDINH({
-    required super.globalState,
+    required super.globalStateManagementSystem,
     required super.gameController,
     required super.thanhPhanQuanLyThuocCapTrucTiep,
     required super.sizeDx,
@@ -46,7 +46,7 @@ class CARDCHIENDAUCOCHONCHIDINH extends THANHPHANNUTBAMTICHHOPTHUOCCAP {
   @override
   Future<void> onCaiDatChiTietThanhPhanGameUI() async {
     _spriteChienDauCoChonChiDinh = CHIENDAUCOCHONCHIDINH(
-      trangThaiTongQuat: getGlobalState,
+      trangThaiTongQuat: getGlobalStateManagementSystem,
       capNhatViTri: false,
     );
 

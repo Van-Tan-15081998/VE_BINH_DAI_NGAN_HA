@@ -12,7 +12,7 @@ class CARDCHIENDAUCODANGCAPSAOSSS10SS01
   /// TODO:
   /// -----
   CARDCHIENDAUCODANGCAPSAOSSS10SS01({
-    required super.globalState,
+    required super.globalStateManagementSystem,
     required super.gameController,
     required super.thanhPhanQuanLyThuocCapTrucTiep,
     required super.sizeDx,
@@ -25,7 +25,7 @@ class CARDCHIENDAUCODANGCAPSAOSSS10SS01
   }) {
     onCaiDatChienDauCoDangCapSaoSSS10SS01(
       value:
-          getGlobalState
+          getGlobalStateManagementSystem
               ?.getHangarChienDauCoTongQuat
               ?.getChienDauCoDangCapSaoSSS10SS01,
     );
@@ -49,17 +49,17 @@ class CARDCHIENDAUCODANGCAPSAOSSS10SS01
     /// -----
     /// TODO: Cài Đặt Chiến Đấu Cơ Chỉ Định Thực Thi Và Chiến Đấu Cơ Trực Tiếp Thực Thi Chiến Đấu Và Thực Thi Thông Tin
     /// -----
-    await getGlobalState
+    await getGlobalStateManagementSystem
         ?.getChienDauCoTongQuat
         ?.getChiDinhChienDauCoThucThiChienDau
         ?.getTrangThai
         ?.caiDatMoHinh(value: getChienDauCoDangCapSaoSSS10SS01);
-    await getGlobalState
+    await getGlobalStateManagementSystem
         ?.getChienDauCoTongQuat
         ?.getChienDauCoTrucTiepThucThiChienDau
         ?.getTrangThai
         ?.caiDatMoHinh(value: getChienDauCoDangCapSaoSSS10SS01);
-    await getGlobalState
+    await getGlobalStateManagementSystem
         ?.getChienDauCoTongQuat
         ?.getChienDauCoChiDinhThucThiThongTin
         ?.getTrangThai
@@ -68,7 +68,7 @@ class CARDCHIENDAUCODANGCAPSAOSSS10SS01
     /// -----
     /// TODO: Cài Đặt Vị Trí Cho Chiến Đấu Cơ Trực Tiếp Thực Thi Chiến Đấu
     /// -----
-    await getGlobalState
+    await getGlobalStateManagementSystem
         ?.getChienDauCoTongQuat
         ?.getChienDauCoTrucTiepThucThiChienDau
         ?.getTrangThai
@@ -77,15 +77,15 @@ class CARDCHIENDAUCODANGCAPSAOSSS10SS01
         ?.getPhuongThucBay
         ?.caiDatViTri(
           value:
-              getGlobalState
+              getGlobalStateManagementSystem
                   ?.getChienDauCoTongQuat
                   ?.getDieuKhienDiChuyenChienDauCo
                   ?.getViTriChienDauCo,
         );
-    await getGlobalState?.getChienDauCoTongQuat?.getDieuKhienDiChuyenChienDauCo
+    await getGlobalStateManagementSystem?.getChienDauCoTongQuat?.getDieuKhienDiChuyenChienDauCo
         ?.onCapNhatKichThuocChienDauCo(
           chienDauCo:
-              getGlobalState
+              getGlobalStateManagementSystem
                   ?.getChienDauCoTongQuat
                   ?.getChienDauCoTrucTiepThucThiChienDau
                   ?.getTrangThai
@@ -95,7 +95,7 @@ class CARDCHIENDAUCODANGCAPSAOSSS10SS01
     /// -----
     /// TODO:
     /// -----
-    // await getGlobalState?.onGetEntityResourceManagement?.getQuanLyTrangThaiHangarChienDauCo
+    // await getGlobalStateManagementSystem?.onGetEntityResourceManagement?.getQuanLyTrangThaiHangarChienDauCo
     //     ?.onTaiTaiNguyenChienDauCoSSS10SS010FullSize();
 
     ///

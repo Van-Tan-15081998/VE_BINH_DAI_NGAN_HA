@@ -8,21 +8,21 @@ import 'package:pkg_dinh_nghia_ss050/pkg_dinh_nghia_ss050_exp.dart';
 /// -----
 /// TODO:
 /// -----
-class SPRITEANIMATIONHASVISIBILITY extends SpriteAnimationComponent
+class SpriteAnimationHasVisibility extends SpriteAnimationComponent
     with HasVisibility, CauTrucThucThiCoBan {
   /// -----
   /// TODO:
   /// -----
-  QuanLyTrangThaiTongQuat? _globalState;
-  QuanLyTrangThaiTongQuat? get getGlobalState => _globalState;
-  void onVoidCaiDatGlobalState({
-    required QuanLyTrangThaiTongQuat? value,
+  GlobalStateManagementSystem? _globalStateManagementSystem;
+  GlobalStateManagementSystem? get getGlobalStateManagementSystem => _globalStateManagementSystem;
+  void onSetGlobalStateManagementSystem({
+    required GlobalStateManagementSystem? value,
     bool? caiDatUuTien,
   }) {
     if (caiDatUuTien == true) {
-      _globalState = value;
+      _globalStateManagementSystem = value;
     } else {
-      _globalState ??= value;
+      _globalStateManagementSystem ??= value;
     }
 
     return;
@@ -88,10 +88,10 @@ class SPRITEANIMATIONHASVISIBILITY extends SpriteAnimationComponent
     return;
   }
 
-  THANHPHANGAMEUICOBAN? _thanhPhanGameUI;
-  THANHPHANGAMEUICOBAN? get getThanhPhanGameUI => _thanhPhanGameUI;
+  CoreGameUIComponent? _thanhPhanGameUI;
+  CoreGameUIComponent? get getThanhPhanGameUI => _thanhPhanGameUI;
   Future<void> onCaiDatThanhPhanGameUI({
-    required THANHPHANGAMEUICOBAN? value,
+    required CoreGameUIComponent? value,
     bool? caiDatUuTien,
   }) async {
     if (caiDatUuTien == true) {
@@ -113,14 +113,14 @@ class SPRITEANIMATIONHASVISIBILITY extends SpriteAnimationComponent
   /// -----
   /// TODO:
   /// -----
-  SPRITEANIMATIONHASVISIBILITY({
-    required QuanLyTrangThaiTongQuat? globalState,
+  SpriteAnimationHasVisibility({
+    required GlobalStateManagementSystem? globalStateManagementSystem,
     required double? sizeDx,
     required double? sizeDy,
     required double? positionDx,
     required double? positionDy,
   }) {
-    onVoidCaiDatGlobalState(value: globalState, caiDatUuTien: true);
+    onSetGlobalStateManagementSystem(value: globalStateManagementSystem, caiDatUuTien: true);
     onVoidCaiDatSizeDx(value: sizeDx, caiDatUuTien: true);
     onVoidCaiDatSizeDy(value: sizeDy, caiDatUuTien: true);
     onVoidCaiDatPositionDx(value: positionDx, caiDatUuTien: true);
@@ -130,8 +130,8 @@ class SPRITEANIMATIONHASVISIBILITY extends SpriteAnimationComponent
   /// -----
   /// TODO:
   /// -----
-  SPRITEANIMATIONHASVISIBILITY.onKichHoat({
-    required QuanLyTrangThaiTongQuat? globalState,
+  SpriteAnimationHasVisibility.onActive({
+    required GlobalStateManagementSystem? globalStateManagementSystem,
     required double? sizeDx,
     required double? sizeDy,
     required double? positionDx,
@@ -139,7 +139,7 @@ class SPRITEANIMATIONHASVISIBILITY extends SpriteAnimationComponent
   }) {
     onVoidCaiDatKiemTraHienThi(value: true);
 
-    onVoidCaiDatGlobalState(value: globalState, caiDatUuTien: true);
+    onSetGlobalStateManagementSystem(value: globalStateManagementSystem, caiDatUuTien: true);
     onVoidCaiDatSizeDx(value: sizeDx, caiDatUuTien: true);
     onVoidCaiDatSizeDy(value: sizeDy, caiDatUuTien: true);
     onVoidCaiDatPositionDx(value: positionDx, caiDatUuTien: true);
@@ -149,8 +149,8 @@ class SPRITEANIMATIONHASVISIBILITY extends SpriteAnimationComponent
   /// -----
   /// TODO:
   /// -----
-  SPRITEANIMATIONHASVISIBILITY.onHuyKichHoat({
-    required QuanLyTrangThaiTongQuat? globalState,
+  SpriteAnimationHasVisibility.onInActive({
+    required GlobalStateManagementSystem? globalStateManagementSystem,
     required double? sizeDx,
     required double? sizeDy,
     required double? positionDx,
@@ -158,7 +158,7 @@ class SPRITEANIMATIONHASVISIBILITY extends SpriteAnimationComponent
   }) {
     onVoidCaiDatKiemTraHienThi(value: false);
 
-    onVoidCaiDatGlobalState(value: globalState, caiDatUuTien: true);
+    onSetGlobalStateManagementSystem(value: globalStateManagementSystem, caiDatUuTien: true);
     onVoidCaiDatSizeDx(value: sizeDx, caiDatUuTien: true);
     onVoidCaiDatSizeDy(value: sizeDy, caiDatUuTien: true);
     onVoidCaiDatPositionDx(value: positionDx, caiDatUuTien: true);
@@ -237,7 +237,7 @@ class SPRITEANIMATIONHASVISIBILITY extends SpriteAnimationComponent
 
     if (getDonViSprite?.getSpriteAnimation == null &&
         getThanhPhanGameUI != null) {
-      getGlobalState?.getQuanLyTrangThaiTPGAMEUI
+      getGlobalStateManagementSystem?.getQuanLyTrangThaiTPGAMEUI
           ?.onVoidTruyXuatSpriteNgoaiHinhThanhPhanGameUI(
             donViSprite: getDonViSprite,
             maDinhDanhThanhPhanGameUI: getThanhPhanGameUI?.getMaDinhDanhGameUI,

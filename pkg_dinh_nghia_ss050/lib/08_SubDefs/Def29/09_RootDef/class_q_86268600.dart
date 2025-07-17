@@ -10,7 +10,7 @@ class QuanLyTrangThaiDieuKhienTienTrinhTongQuat with KhungThucThiCoBan, DanhSach
   /// -----
   @override
   Future<void> onAttachRoot({required dynamic attachValue}) async {
-    if (attachValue is QuanLyTrangThaiTongQuat) {
+    if (attachValue is GlobalStateManagementSystem) {
       ///
 
       await caiDatTienTrinhTongQuat(value: attachValue.getTienTrinhTongQuat);
@@ -73,7 +73,7 @@ class QuanLyTrangThaiDieuKhienTienTrinhTongQuat with KhungThucThiCoBan, DanhSach
   /// -----
   @override
   Future<void> onAttachRootForSubCom({required dynamic attachValue}) async {
-    if (attachValue is QuanLyTrangThaiTongQuat) {
+    if (attachValue is GlobalStateManagementSystem) {
       ///
     }
 
@@ -107,7 +107,7 @@ class QuanLyTrangThaiDieuKhienTienTrinhTongQuat with KhungThucThiCoBan, DanhSach
   /// -----
   /// TODO:
   /// -----
-  Future<bool> khoiTaoGame({required QuanLyTrangThaiTongQuat? trangThaiTongQuat}) async {
+  Future<bool> khoiTaoGame({required GlobalStateManagementSystem? trangThaiTongQuat}) async {
     bool result = false;
 
     /// -----

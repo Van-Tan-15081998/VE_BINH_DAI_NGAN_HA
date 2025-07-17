@@ -12,7 +12,7 @@ abstract class SpriteVienDanThongMinh extends SpriteAnimationComponent with HasV
   /// -----
   /// TODO:
   /// -----
-  SpriteVienDanThongMinh({required QuanLyTrangThaiTongQuat? trangThaiTongQuat}) {
+  SpriteVienDanThongMinh({required GlobalStateManagementSystem? trangThaiTongQuat}) {
     caiDatTrangThaiTongQuat(value: trangThaiTongQuat);
   }
 
@@ -39,9 +39,9 @@ abstract class SpriteVienDanThongMinh extends SpriteAnimationComponent with HasV
   /// -----
   /// TODO: Quản Lý Trạng Thái Tổng Quát
   /// -----
-  QuanLyTrangThaiTongQuat? _trangThaiTongQuat;
-  QuanLyTrangThaiTongQuat? get getTrangThaiTongQuat => _trangThaiTongQuat;
-  Future<void> caiDatTrangThaiTongQuat({required QuanLyTrangThaiTongQuat? value}) async {
+  GlobalStateManagementSystem? _trangThaiTongQuat;
+  GlobalStateManagementSystem? get getTrangThaiTongQuat => _trangThaiTongQuat;
+  Future<void> caiDatTrangThaiTongQuat({required GlobalStateManagementSystem? value}) async {
     _trangThaiTongQuat ??= value;
     return;
   }
@@ -205,32 +205,45 @@ abstract class SpriteVienDanThongMinh extends SpriteAnimationComponent with HasV
   /// -----
   /// TODO: Cập Nhật Position Và Size
   /// -----
-  void onVoidCapNhatPositionSizeValues() {
+  Map<String, dynamic>? duLieuJsonLamPhangCapNhat = {};
+
+  double dxCapNhat = 0;
+  double dyCapNhat = 0;
+  double chieuCaoThanCapNhat = 0;
+  double chieuRongThanCapNhat = 0;
+  double gocXoay = 0;
+
+  @override
+  void onVoidCapNhatPositionSizeValues()  {
     if (getKiemTraHienThi == true) {
       ///
       /// TODO:
       ///
-      double gocXoay = getMoHinh?.getMoHinh?.getGocXoay ?? 1.0;
+      duLieuJsonLamPhangCapNhat = getMoHinh?.getMoHinh?.getDuLieuJsonLamPhang;
 
-      Map<String, dynamic>? duLieuJsonLamPhang = getMoHinh?.getMoHinh?.getDuLieuJsonLamPhang;
+      dxCapNhat = duLieuJsonLamPhangCapNhat?['[DX_TRONG_TAM]'] ?? 1.0;
+      dyCapNhat = duLieuJsonLamPhangCapNhat?['[DY_TRONG_TAM]'] ?? 1.0;
+      chieuCaoThanCapNhat = duLieuJsonLamPhangCapNhat?['[CHIEU_CAO_THAN]'] ?? 1.0;
+      chieuRongThanCapNhat = duLieuJsonLamPhangCapNhat?['[CHIEU_RONG_THAN]'] ?? 1.0;
 
-      double dx = duLieuJsonLamPhang?['[DX_TRONG_TAM]'] ?? 1.0;
-      double dy = duLieuJsonLamPhang?['[DY_TRONG_TAM]'] ?? 1.0;
-      double chieuCaoThan = duLieuJsonLamPhang?['[CHIEU_CAO_THAN]'] ?? 1.0;
-      double chieuRongThan = duLieuJsonLamPhang?['[CHIEU_RONG_THAN]'] ?? 1.0;
+      gocXoay = getMoHinh?.getMoHinh?.getGocXoay ?? 1.0;
 
-      ///
-      /// TODO:
-      ///
-      if (position.x != dx || position.y != dy) {
-        position.setValues(dx, dy);
-      }
-      if (size.x != chieuRongThan || size.y != chieuCaoThan) {
-        size.setValues(chieuRongThan, chieuCaoThan);
-      }
-
-      if (angle != gocXoay && getBienTangTienGiamTanXuatCapNhat % 2 == 0) {
-        angle = gocXoay;
+      if (dxCapNhat.isNaN == false && dyCapNhat.isNaN == false && chieuCaoThanCapNhat.isNaN == false && chieuRongThanCapNhat.isNaN == false) {
+        ///
+        /// TODO:
+        ///
+        if (position.x != dxCapNhat || position.y != dyCapNhat) {
+          position.setValues(dxCapNhat, dyCapNhat);
+        }
+        if (size.x != chieuRongThanCapNhat || size.y != chieuCaoThanCapNhat) {
+          size.setValues(chieuRongThanCapNhat, chieuCaoThanCapNhat);
+        }
+        /// -----
+        /// TODO:
+        /// -----
+        if (angle != gocXoay) {
+          angle = gocXoay;
+        }
       }
     }
   }

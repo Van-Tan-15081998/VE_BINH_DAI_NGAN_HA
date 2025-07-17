@@ -10,7 +10,7 @@ class NUTBAMCHONCHATLUONGDOHOATHAP extends THANHPHANNUTBAMTHUOCCAPTHUANKICHHOAT 
   /// TODO:
   /// -----
   NUTBAMCHONCHATLUONGDOHOATHAP({
-    required super.globalState,
+    required super.globalStateManagementSystem,
     required super.gameController,
     required super.thanhPhanQuanLyThuocCapTrucTiep,
     required super.sizeDx,
@@ -33,9 +33,9 @@ class NUTBAMCHONCHATLUONGDOHOATHAP extends THANHPHANNUTBAMTHUOCCAPTHUANKICHHOAT 
     /// -----
     /// TODO:
     /// -----
-    await getGlobalState?.onGetEntityResourceManagement?.getQuanLyTrangThaiHangarChienDauCo
+    await getGlobalStateManagementSystem?.onGetEntityResourceManagement?.getQuanLyTrangThaiHangarChienDauCo
         ?.onCaiDatChatLuongDoHoaThap();
-    await getGlobalState?.onGetEntityResourceManagement?.getQuanLyTrangThaiHangarPhuongTien
+    await getGlobalStateManagementSystem?.onGetEntityResourceManagement?.getQuanLyTrangThaiHangarPhuongTien
         ?.onCaiDatChatLuongDoHoaThap();
 
     ///

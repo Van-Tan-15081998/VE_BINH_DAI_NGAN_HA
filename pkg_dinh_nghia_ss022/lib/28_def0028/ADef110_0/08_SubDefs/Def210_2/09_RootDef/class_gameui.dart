@@ -3,7 +3,7 @@ import 'package:pkg_dinh_nghia_ss022/pkg_dinh_nghia_ss022_exp.dart';
 ///
 /// TODO: [GAMEUI] Khung Màn Hình Thuộc Cấp Cơ Bản
 ///
-class GAMEUIKHUNGMANHINHTHUOCCAPCOBAN extends THANHPHANGAMEUICOBAN {
+class GAMEUIKHUNGMANHINHTHUOCCAPCOBAN extends CoreGameUIComponent {
   static const String maDinhDanhGameUI = '[GAMEUI]_[GAMEUIKHUNGMANHINHTHUOCCAPCOBAN]';
 
   /// -----

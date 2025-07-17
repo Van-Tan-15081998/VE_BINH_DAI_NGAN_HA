@@ -13,7 +13,7 @@ abstract class SpritePhuongTienCoBan extends SpriteAnimationComponent with HasVi
   /// -----
   /// TODO:
   /// -----
-  SpritePhuongTienCoBan({required QuanLyTrangThaiTongQuat? trangThaiTongQuat, required Component? parentComponent}) {
+  SpritePhuongTienCoBan({required GlobalStateManagementSystem? trangThaiTongQuat, required Component? parentComponent}) {
     caiDatTrangThaiTongQuat(value: trangThaiTongQuat);
     caiDatParentComponent(value: parentComponent);
   }
@@ -41,9 +41,9 @@ abstract class SpritePhuongTienCoBan extends SpriteAnimationComponent with HasVi
   /// -----
   /// TODO: Quản Lý Trạng Thái Tổng Quát
   /// -----
-  QuanLyTrangThaiTongQuat? _trangThaiTongQuat;
-  QuanLyTrangThaiTongQuat? get getTrangThaiTongQuat => _trangThaiTongQuat;
-  Future<void> caiDatTrangThaiTongQuat({required QuanLyTrangThaiTongQuat? value}) async {
+  GlobalStateManagementSystem? _trangThaiTongQuat;
+  GlobalStateManagementSystem? get getTrangThaiTongQuat => _trangThaiTongQuat;
+  Future<void> caiDatTrangThaiTongQuat({required GlobalStateManagementSystem? value}) async {
     _trangThaiTongQuat ??= value;
     return;
   }
@@ -155,7 +155,7 @@ abstract class SpritePhuongTienCoBan extends SpriteAnimationComponent with HasVi
   /// -----
   /// TODO:
   /// -----
-  void onVoidCapNhatKiemTraHienThi()  {
+  void onVoidCapNhatKiemTraHienThi() {
     // return;
 
     if (getMoHinh?.getMoHinh?.getDuLieuJsonLamPhang['[DI_CHUYEN_HIEN_THI]'] == true) {
@@ -214,28 +214,35 @@ abstract class SpritePhuongTienCoBan extends SpriteAnimationComponent with HasVi
   /// -----
   /// TODO: Cập Nhật Position Và Size
   /// -----
-  void onVoidCapNhatPositionSizeValues()  {
+  Map<String, dynamic>? duLieuJsonLamPhangCapNhat = {};
+
+  double dxCapNhat = 0;
+  double dyCapNhat = 0;
+  double chieuCaoThanCapNhat = 0;
+  double chieuRongThanCapNhat = 0;
+
+  void onVoidCapNhatPositionSizeValues() {
     if (getKiemTraHienThi == true) {
       ///
       /// TODO:
       ///
       ///
-      Map<String, dynamic>? duLieuJsonLamPhang = getMoHinh?.getMoHinh?.getDuLieuJsonLamPhang;
+      duLieuJsonLamPhangCapNhat = getMoHinh?.getMoHinh?.getDuLieuJsonLamPhang;
 
-      double dx = duLieuJsonLamPhang?['[DX_TRONG_TAM]'] ?? 1.0;
-      double dy = duLieuJsonLamPhang?['[DY_TRONG_TAM]'] ?? 1.0;
-      double chieuCaoThan = duLieuJsonLamPhang?['[CHIEU_CAO_THAN]'] ?? 1.0;
-      double chieuRongThan = duLieuJsonLamPhang?['[CHIEU_RONG_THAN]'] ?? 1.0;
+      dxCapNhat = duLieuJsonLamPhangCapNhat?['[DX_TRONG_TAM]'] ?? 1.0;
+      dyCapNhat = duLieuJsonLamPhangCapNhat?['[DY_TRONG_TAM]'] ?? 1.0;
+      chieuCaoThanCapNhat = duLieuJsonLamPhangCapNhat?['[CHIEU_CAO_THAN]'] ?? 1.0;
+      chieuRongThanCapNhat = duLieuJsonLamPhangCapNhat?['[CHIEU_RONG_THAN]'] ?? 1.0;
 
-      if (dx.isNaN == false && dy.isNaN == false && chieuCaoThan.isNaN == false && chieuRongThan.isNaN == false) {
+      if (dxCapNhat.isNaN == false && dyCapNhat.isNaN == false && chieuCaoThanCapNhat.isNaN == false && chieuRongThanCapNhat.isNaN == false) {
         ///
         /// TODO:
         ///
-        if (position.x != dx || position.y != dy) {
-          position.setValues(dx, dy);
+        if (position.x != dxCapNhat || position.y != dyCapNhat) {
+          position.setValues(dxCapNhat, dyCapNhat);
         }
-        if (size.x != chieuRongThan || size.y != chieuCaoThan) {
-          size.setValues(chieuRongThan, chieuCaoThan);
+        if (size.x != chieuRongThanCapNhat || size.y != chieuCaoThanCapNhat) {
+          size.setValues(chieuRongThanCapNhat, chieuCaoThanCapNhat);
         }
       }
     }
@@ -264,7 +271,7 @@ abstract class SpritePhuongTienCoBan extends SpriteAnimationComponent with HasVi
 
   Stopwatch? stopwatch;
   void onVoidCapNhatTrangThaiMoHinh() async {
-    await Future.delayed(Duration.zero);
+    // await Future.delayed(Duration.zero);
     // if (kDebugMode) {
     //   stopwatch = Stopwatch();
     //   stopwatch?.start();
@@ -295,7 +302,8 @@ abstract class SpritePhuongTienCoBan extends SpriteAnimationComponent with HasVi
   // }
 
   @override
-  void renderTree(Canvas canvas) { // import 'dart:ui';
+  void renderTree(Canvas canvas) {
+    // import 'dart:ui';
     if (getKiemTraHienThi == true) {
       super.renderTree(canvas);
     }
@@ -319,7 +327,7 @@ abstract class SpritePhuongTienCoBan extends SpriteAnimationComponent with HasVi
     super.update(dt);
 
     if (getTrangThaiTongQuat?.getTienTrinhTongQuat?.getTienTrinhThucThiChienDau?.getTrangThai?.getMoHinh?.onCheckBoolDangThucThi() == true) {
-      onVoidThucThiTanCong();
+      // onVoidThucThiTanCong();
 
       if (getBienTangTienGiamTanXuatCapNhat % 2 == 0) {
         getMoHinh?.getMoHinh?.onXuLyDuLieuJsonLamPhang();
