@@ -96,21 +96,23 @@ class BANGDIEUKHIENGIAIDOANTHUOCKICHBANCOBAN with CauTrucThucThiCoBan {
   /// -----
   @override
   Future<void> onAttachRootForSubCom({required dynamic attachValue}) async {
-    /// -----
-    /// TODO:
-    /// -----
-    await getBangDieuKhienGiaiDoanThuocDoiHinhDSTP?.onAttachDanhSachDonViGiaiDoan(attachValue: getDanhSachDonViGiaiDoanThuocDoiHinhDSTP);
-    await getBangDieuKhienGiaiDoanThuocDoiHinhTTTS?.onAttachDanhSachDonViGiaiDoan(attachValue: getDanhSachDonViGiaiDoanThuocDoiHinhTTTS);
-    await getBangDieuKhienGiaiDoanThuocDoiHinhSTTC?.onAttachDanhSachDonViGiaiDoan(attachValue: getDanhSachDonViGiaiDoanThuocDoiHinhSTTC);
-    await getBangDieuKhienGiaiDoanThuocDoiHinhQDCV?.onAttachDanhSachDonViGiaiDoan(attachValue: getDanhSachDonViGiaiDoanThuocDoiHinhQDCV);
-    await getBangDieuKhienGiaiDoanThuocDoiHinhSCCH?.onAttachDanhSachDonViGiaiDoan(attachValue: getDanhSachDonViGiaiDoanThuocDoiHinhSCCH);
-    await getBangDieuKhienGiaiDoanThuocDoiHinhTSTC?.onAttachDanhSachDonViGiaiDoan(attachValue: getDanhSachDonViGiaiDoanThuocDoiHinhTSTC);
-    await getBangDieuKhienGiaiDoanThuocDoiHinhVKTD?.onAttachDanhSachDonViGiaiDoan(attachValue: getDanhSachDonViGiaiDoanThuocDoiHinhVKTD);
-    await getBangDieuKhienGiaiDoanThuocDoiHinhVKDK?.onAttachDanhSachDonViGiaiDoan(attachValue: getDanhSachDonViGiaiDoanThuocDoiHinhVKDK);
-    await getBangDieuKhienGiaiDoanThuocDoiHinhVKNN?.onAttachDanhSachDonViGiaiDoan(attachValue: getDanhSachDonViGiaiDoanThuocDoiHinhVKNN);
+    await Future.wait([
+      /// -----
+      /// TODO:
+      /// -----
+      getBangDieuKhienGiaiDoanThuocDoiHinhDSTP?.onAttachDanhSachDonViGiaiDoan(attachValue: getDanhSachDonViGiaiDoanThuocDoiHinhDSTP).catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienGiaiDoanThuocDoiHinhTTTS?.onAttachDanhSachDonViGiaiDoan(attachValue: getDanhSachDonViGiaiDoanThuocDoiHinhTTTS).catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienGiaiDoanThuocDoiHinhSTTC?.onAttachDanhSachDonViGiaiDoan(attachValue: getDanhSachDonViGiaiDoanThuocDoiHinhSTTC).catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienGiaiDoanThuocDoiHinhQDCV?.onAttachDanhSachDonViGiaiDoan(attachValue: getDanhSachDonViGiaiDoanThuocDoiHinhQDCV).catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienGiaiDoanThuocDoiHinhSCCH?.onAttachDanhSachDonViGiaiDoan(attachValue: getDanhSachDonViGiaiDoanThuocDoiHinhSCCH).catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienGiaiDoanThuocDoiHinhTSTC?.onAttachDanhSachDonViGiaiDoan(attachValue: getDanhSachDonViGiaiDoanThuocDoiHinhTSTC).catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienGiaiDoanThuocDoiHinhVKTD?.onAttachDanhSachDonViGiaiDoan(attachValue: getDanhSachDonViGiaiDoanThuocDoiHinhVKTD).catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienGiaiDoanThuocDoiHinhVKDK?.onAttachDanhSachDonViGiaiDoan(attachValue: getDanhSachDonViGiaiDoanThuocDoiHinhVKDK).catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienGiaiDoanThuocDoiHinhVKNN?.onAttachDanhSachDonViGiaiDoan(attachValue: getDanhSachDonViGiaiDoanThuocDoiHinhVKNN).catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
 
-    await getBangDieuKhienGiaiDoanThuocDoiHinhVPTC?.onAttachDanhSachDonViGiaiDoan(attachValue: getDanhSachDonViGiaiDoanThuocDoiHinhVPTC);
-    await getBangDieuKhienGiaiDoanThuocDoiHinhVPPT?.onAttachDanhSachDonViGiaiDoan(attachValue: getDanhSachDonViGiaiDoanThuocDoiHinhVPPT);
+      getBangDieuKhienGiaiDoanThuocDoiHinhVPTC?.onAttachDanhSachDonViGiaiDoan(attachValue: getDanhSachDonViGiaiDoanThuocDoiHinhVPTC).catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienGiaiDoanThuocDoiHinhVPPT?.onAttachDanhSachDonViGiaiDoan(attachValue: getDanhSachDonViGiaiDoanThuocDoiHinhVPPT).catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+    ]);
 
     ///
     return;
@@ -121,37 +123,41 @@ class BANGDIEUKHIENGIAIDOANTHUOCKICHBANCOBAN with CauTrucThucThiCoBan {
   /// -----
   @override
   Future<void> onSetupRootForSubCom() async {
-    /// -----
-    /// TODO:
-    /// -----
-    await getBangDieuKhienGiaiDoanThuocDoiHinhDSTP?.onSetupRoot();
-    await getBangDieuKhienGiaiDoanThuocDoiHinhTTTS?.onSetupRoot();
-    await getBangDieuKhienGiaiDoanThuocDoiHinhSTTC?.onSetupRoot();
-    await getBangDieuKhienGiaiDoanThuocDoiHinhQDCV?.onSetupRoot();
-    await getBangDieuKhienGiaiDoanThuocDoiHinhSCCH?.onSetupRoot();
-    await getBangDieuKhienGiaiDoanThuocDoiHinhTSTC?.onSetupRoot();
-    await getBangDieuKhienGiaiDoanThuocDoiHinhVKTD?.onSetupRoot();
-    await getBangDieuKhienGiaiDoanThuocDoiHinhVKDK?.onSetupRoot();
-    await getBangDieuKhienGiaiDoanThuocDoiHinhVKNN?.onSetupRoot();
+    await Future.wait([
+      /// -----
+      /// TODO:
+      /// -----
+      getBangDieuKhienGiaiDoanThuocDoiHinhDSTP?.onSetupRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienGiaiDoanThuocDoiHinhTTTS?.onSetupRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienGiaiDoanThuocDoiHinhSTTC?.onSetupRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienGiaiDoanThuocDoiHinhQDCV?.onSetupRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienGiaiDoanThuocDoiHinhSCCH?.onSetupRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienGiaiDoanThuocDoiHinhTSTC?.onSetupRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienGiaiDoanThuocDoiHinhVKTD?.onSetupRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienGiaiDoanThuocDoiHinhVKDK?.onSetupRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienGiaiDoanThuocDoiHinhVKNN?.onSetupRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
 
-    await getBangDieuKhienGiaiDoanThuocDoiHinhVPTC?.onSetupRoot();
-    await getBangDieuKhienGiaiDoanThuocDoiHinhVPPT?.onSetupRoot();
+      getBangDieuKhienGiaiDoanThuocDoiHinhVPTC?.onSetupRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienGiaiDoanThuocDoiHinhVPPT?.onSetupRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+    ]);
 
-    /// -----
-    /// TODO:
-    /// -----
-    await getDanhSachDonViGiaiDoanThuocDoiHinhDSTP?.onSetupRoot();
-    await getDanhSachDonViGiaiDoanThuocDoiHinhTTTS?.onSetupRoot();
-    await getDanhSachDonViGiaiDoanThuocDoiHinhSTTC?.onSetupRoot();
-    await getDanhSachDonViGiaiDoanThuocDoiHinhQDCV?.onSetupRoot();
-    await getDanhSachDonViGiaiDoanThuocDoiHinhSCCH?.onSetupRoot();
-    await getDanhSachDonViGiaiDoanThuocDoiHinhTSTC?.onSetupRoot();
-    await getDanhSachDonViGiaiDoanThuocDoiHinhVKTD?.onSetupRoot();
-    await getDanhSachDonViGiaiDoanThuocDoiHinhVKDK?.onSetupRoot();
-    await getDanhSachDonViGiaiDoanThuocDoiHinhVKNN?.onSetupRoot();
+    await Future.wait([
+      /// -----
+      /// TODO:
+      /// -----
+      getDanhSachDonViGiaiDoanThuocDoiHinhDSTP?.onSetupRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getDanhSachDonViGiaiDoanThuocDoiHinhTTTS?.onSetupRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getDanhSachDonViGiaiDoanThuocDoiHinhSTTC?.onSetupRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getDanhSachDonViGiaiDoanThuocDoiHinhQDCV?.onSetupRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getDanhSachDonViGiaiDoanThuocDoiHinhSCCH?.onSetupRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getDanhSachDonViGiaiDoanThuocDoiHinhTSTC?.onSetupRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getDanhSachDonViGiaiDoanThuocDoiHinhVKTD?.onSetupRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getDanhSachDonViGiaiDoanThuocDoiHinhVKDK?.onSetupRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getDanhSachDonViGiaiDoanThuocDoiHinhVKNN?.onSetupRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
 
-    await getDanhSachDonViGiaiDoanThuocDoiHinhVPTC?.onSetupRoot();
-    await getDanhSachDonViGiaiDoanThuocDoiHinhVPPT?.onSetupRoot();
+      getDanhSachDonViGiaiDoanThuocDoiHinhVPTC?.onSetupRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getDanhSachDonViGiaiDoanThuocDoiHinhVPPT?.onSetupRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+    ]);
 
     ///
     return;
@@ -162,37 +168,41 @@ class BANGDIEUKHIENGIAIDOANTHUOCKICHBANCOBAN with CauTrucThucThiCoBan {
   /// -----
   @override
   Future<void> onInitRootForSubCom() async {
-    /// -----
-    /// TODO:
-    /// -----
-    await getBangDieuKhienGiaiDoanThuocDoiHinhDSTP?.onInitRoot();
-    await getBangDieuKhienGiaiDoanThuocDoiHinhTTTS?.onInitRoot();
-    await getBangDieuKhienGiaiDoanThuocDoiHinhSTTC?.onInitRoot();
-    await getBangDieuKhienGiaiDoanThuocDoiHinhQDCV?.onInitRoot();
-    await getBangDieuKhienGiaiDoanThuocDoiHinhSCCH?.onInitRoot();
-    await getBangDieuKhienGiaiDoanThuocDoiHinhTSTC?.onInitRoot();
-    await getBangDieuKhienGiaiDoanThuocDoiHinhVKTD?.onInitRoot();
-    await getBangDieuKhienGiaiDoanThuocDoiHinhVKDK?.onInitRoot();
-    await getBangDieuKhienGiaiDoanThuocDoiHinhVKNN?.onInitRoot();
+    await Future.wait([
+      /// -----
+      /// TODO:
+      /// -----
+      getBangDieuKhienGiaiDoanThuocDoiHinhDSTP?.onInitRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienGiaiDoanThuocDoiHinhTTTS?.onInitRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienGiaiDoanThuocDoiHinhSTTC?.onInitRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienGiaiDoanThuocDoiHinhQDCV?.onInitRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienGiaiDoanThuocDoiHinhSCCH?.onInitRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienGiaiDoanThuocDoiHinhTSTC?.onInitRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienGiaiDoanThuocDoiHinhVKTD?.onInitRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienGiaiDoanThuocDoiHinhVKDK?.onInitRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienGiaiDoanThuocDoiHinhVKNN?.onInitRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
 
-    await getBangDieuKhienGiaiDoanThuocDoiHinhVPTC?.onInitRoot();
-    await getBangDieuKhienGiaiDoanThuocDoiHinhVPPT?.onInitRoot();
+      getBangDieuKhienGiaiDoanThuocDoiHinhVPTC?.onInitRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienGiaiDoanThuocDoiHinhVPPT?.onInitRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+    ]);
 
-    /// -----
-    /// TODO:
-    /// -----
-    await getDanhSachDonViGiaiDoanThuocDoiHinhDSTP?.onInitRoot();
-    await getDanhSachDonViGiaiDoanThuocDoiHinhTTTS?.onInitRoot();
-    await getDanhSachDonViGiaiDoanThuocDoiHinhSTTC?.onInitRoot();
-    await getDanhSachDonViGiaiDoanThuocDoiHinhQDCV?.onInitRoot();
-    await getDanhSachDonViGiaiDoanThuocDoiHinhSCCH?.onInitRoot();
-    await getDanhSachDonViGiaiDoanThuocDoiHinhTSTC?.onInitRoot();
-    await getDanhSachDonViGiaiDoanThuocDoiHinhVKTD?.onInitRoot();
-    await getDanhSachDonViGiaiDoanThuocDoiHinhVKDK?.onInitRoot();
-    await getDanhSachDonViGiaiDoanThuocDoiHinhVKNN?.onInitRoot();
+    await Future.wait([
+      /// -----
+      /// TODO:
+      /// -----
+      getDanhSachDonViGiaiDoanThuocDoiHinhDSTP?.onInitRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getDanhSachDonViGiaiDoanThuocDoiHinhTTTS?.onInitRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getDanhSachDonViGiaiDoanThuocDoiHinhSTTC?.onInitRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getDanhSachDonViGiaiDoanThuocDoiHinhQDCV?.onInitRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getDanhSachDonViGiaiDoanThuocDoiHinhSCCH?.onInitRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getDanhSachDonViGiaiDoanThuocDoiHinhTSTC?.onInitRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getDanhSachDonViGiaiDoanThuocDoiHinhVKTD?.onInitRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getDanhSachDonViGiaiDoanThuocDoiHinhVKDK?.onInitRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getDanhSachDonViGiaiDoanThuocDoiHinhVKNN?.onInitRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
 
-    await getDanhSachDonViGiaiDoanThuocDoiHinhVPTC?.onInitRoot();
-    await getDanhSachDonViGiaiDoanThuocDoiHinhVPPT?.onInitRoot();
+      getDanhSachDonViGiaiDoanThuocDoiHinhVPTC?.onInitRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getDanhSachDonViGiaiDoanThuocDoiHinhVPPT?.onInitRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+    ]);
 
     ///
     return;

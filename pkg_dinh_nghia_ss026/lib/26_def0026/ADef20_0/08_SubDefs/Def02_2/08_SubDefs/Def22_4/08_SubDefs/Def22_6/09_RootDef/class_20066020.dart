@@ -41,27 +41,29 @@ class DANHSACHPHUONGTIENNHOMSS00BTHUOCGIAIDOANCOBAN with CauTrucThucThiCoBan {
   /// -----
   @override
   Future<void> onSetupRoot() async {
-    /// -----
-    /// TODO:
-    /// -----
+    await Future.wait([
+      /// -----
+      /// TODO:
+      /// -----
 
-    /// -----
-    /// TODO: [1] => [5]
-    /// -----
-    await caiDatPhuongTienSS020(value: TrangThaiPhuongTien(value: null), caiDatUuTien: true);
-    await caiDatPhuongTienSS022(value: TrangThaiPhuongTien(value: null), caiDatUuTien: true);
-    await caiDatPhuongTienSS024(value: TrangThaiPhuongTien(value: null), caiDatUuTien: true);
-    await caiDatPhuongTienSS026(value: TrangThaiPhuongTien(value: null), caiDatUuTien: true);
-    await caiDatPhuongTienSS028(value: TrangThaiPhuongTien(value: null), caiDatUuTien: true);
+      /// -----
+      /// TODO: [1] => [5]
+      /// -----
+      caiDatPhuongTienSS020(value: TrangThaiPhuongTien(value: null), caiDatUuTien: true).catchError((e) => null),
+      caiDatPhuongTienSS022(value: TrangThaiPhuongTien(value: null), caiDatUuTien: true).catchError((e) => null),
+      caiDatPhuongTienSS024(value: TrangThaiPhuongTien(value: null), caiDatUuTien: true).catchError((e) => null),
+      caiDatPhuongTienSS026(value: TrangThaiPhuongTien(value: null), caiDatUuTien: true).catchError((e) => null),
+      caiDatPhuongTienSS028(value: TrangThaiPhuongTien(value: null), caiDatUuTien: true).catchError((e) => null),
 
-    /// -----
-    /// TODO: [6] => [10]
-    /// -----
-    await caiDatPhuongTienSS030(value: TrangThaiPhuongTien(value: null), caiDatUuTien: true);
-    await caiDatPhuongTienSS032(value: TrangThaiPhuongTien(value: null), caiDatUuTien: true);
-    await caiDatPhuongTienSS034(value: TrangThaiPhuongTien(value: null), caiDatUuTien: true);
-    await caiDatPhuongTienSS036(value: TrangThaiPhuongTien(value: null), caiDatUuTien: true);
-    await caiDatPhuongTienSS038(value: TrangThaiPhuongTien(value: null), caiDatUuTien: true);
+      /// -----
+      /// TODO: [6] => [10]
+      /// -----
+      caiDatPhuongTienSS030(value: TrangThaiPhuongTien(value: null), caiDatUuTien: true).catchError((e) => null),
+      caiDatPhuongTienSS032(value: TrangThaiPhuongTien(value: null), caiDatUuTien: true).catchError((e) => null),
+      caiDatPhuongTienSS034(value: TrangThaiPhuongTien(value: null), caiDatUuTien: true).catchError((e) => null),
+      caiDatPhuongTienSS036(value: TrangThaiPhuongTien(value: null), caiDatUuTien: true).catchError((e) => null),
+      caiDatPhuongTienSS038(value: TrangThaiPhuongTien(value: null), caiDatUuTien: true).catchError((e) => null),
+    ]);
 
     /// -----
     /// TODO: Setup Root For SubCom

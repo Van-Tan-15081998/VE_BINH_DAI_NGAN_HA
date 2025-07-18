@@ -459,36 +459,36 @@ class QUANLYTRANGTHAITHANHPHANGAMEUITONGQUAT with CauTrucThucThiCoBan {
     }
 
     // await onTaiTaiNguyenThanhPhanGameUITheoMaDinhDanh(
-      // maDinhDanhThanhPhanGameUISS010: getGameUIThanhNgangChiSoMauChienDauCo?.getMaDinhDanhGameUI,
-      // maDinhDanhThanhPhanGameUISS020: getGameUIThanhNgangChiSoMauPhuongTienChiHuy?.getMaDinhDanhGameUI,
-      //
-      // ///
-      // maDinhDanhThanhPhanGameUISS030: getGameUINutBanChonTabCuaHangKhongKichHoat?.getMaDinhDanhGameUI,
-      // maDinhDanhThanhPhanGameUISS040: getGameUINutBanChonTabCuaHangKichHoat?.getMaDinhDanhGameUI,
-      // maDinhDanhThanhPhanGameUISS050: getGameUINutBanChonTabThanhTichKhongKichHoat?.getMaDinhDanhGameUI,
-      // maDinhDanhThanhPhanGameUISS060: getGameUINutBanChonTabThanhTichKichHoat?.getMaDinhDanhGameUI,
-      // maDinhDanhThanhPhanGameUISS070: getGameUINutBanChonTabChienDauKhongKichHoat?.getMaDinhDanhGameUI,
-      // maDinhDanhThanhPhanGameUISS080: getGameUINutBanChonTabChienDauKichHoat?.getMaDinhDanhGameUI,
-      // maDinhDanhThanhPhanGameUISS090: getGameUINutBanChonTabThuVienKhongKichHoat?.getMaDinhDanhGameUI,
-      // maDinhDanhThanhPhanGameUISS100: getGameUINutBanChonTabThuVienKichHoat?.getMaDinhDanhGameUI,
-      // maDinhDanhThanhPhanGameUISS110: getGameUINutBanChonTabCaiDatKhongKichHoat?.getMaDinhDanhGameUI,
-      // maDinhDanhThanhPhanGameUISS120: getGameUINutBanChonTabCaiDatKichHoat?.getMaDinhDanhGameUI,
-      // maDinhDanhThanhPhanGameUISS130: getGameUIKhungThongTinTaiNguyenVangTraoDoi?.getMaDinhDanhGameUI,
-      // maDinhDanhThanhPhanGameUISS140: getGameUIKhungThongTinTaiNguyenNgocTraoDoi?.getMaDinhDanhGameUI,
-      // maDinhDanhThanhPhanGameUISS150: getGameUIKhungThongTinTaiNguyenDollarTraoDoi?.getMaDinhDanhGameUI,
+    // maDinhDanhThanhPhanGameUISS010: getGameUIThanhNgangChiSoMauChienDauCo?.getMaDinhDanhGameUI,
+    // maDinhDanhThanhPhanGameUISS020: getGameUIThanhNgangChiSoMauPhuongTienChiHuy?.getMaDinhDanhGameUI,
+    //
+    // ///
+    // maDinhDanhThanhPhanGameUISS030: getGameUINutBanChonTabCuaHangKhongKichHoat?.getMaDinhDanhGameUI,
+    // maDinhDanhThanhPhanGameUISS040: getGameUINutBanChonTabCuaHangKichHoat?.getMaDinhDanhGameUI,
+    // maDinhDanhThanhPhanGameUISS050: getGameUINutBanChonTabThanhTichKhongKichHoat?.getMaDinhDanhGameUI,
+    // maDinhDanhThanhPhanGameUISS060: getGameUINutBanChonTabThanhTichKichHoat?.getMaDinhDanhGameUI,
+    // maDinhDanhThanhPhanGameUISS070: getGameUINutBanChonTabChienDauKhongKichHoat?.getMaDinhDanhGameUI,
+    // maDinhDanhThanhPhanGameUISS080: getGameUINutBanChonTabChienDauKichHoat?.getMaDinhDanhGameUI,
+    // maDinhDanhThanhPhanGameUISS090: getGameUINutBanChonTabThuVienKhongKichHoat?.getMaDinhDanhGameUI,
+    // maDinhDanhThanhPhanGameUISS100: getGameUINutBanChonTabThuVienKichHoat?.getMaDinhDanhGameUI,
+    // maDinhDanhThanhPhanGameUISS110: getGameUINutBanChonTabCaiDatKhongKichHoat?.getMaDinhDanhGameUI,
+    // maDinhDanhThanhPhanGameUISS120: getGameUINutBanChonTabCaiDatKichHoat?.getMaDinhDanhGameUI,
+    // maDinhDanhThanhPhanGameUISS130: getGameUIKhungThongTinTaiNguyenVangTraoDoi?.getMaDinhDanhGameUI,
+    // maDinhDanhThanhPhanGameUISS140: getGameUIKhungThongTinTaiNguyenNgocTraoDoi?.getMaDinhDanhGameUI,
+    // maDinhDanhThanhPhanGameUISS150: getGameUIKhungThongTinTaiNguyenDollarTraoDoi?.getMaDinhDanhGameUI,
 
-      ///
-      // maDinhDanhThanhPhanGameUISS160: getGameUIKhungManHinhThuCapCoBan?.getMaDinhDanhGameUI,
+    ///
+    // maDinhDanhThanhPhanGameUISS160: getGameUIKhungManHinhThuCapCoBan?.getMaDinhDanhGameUI,
 
-      // maDinhDanhThanhPhanGameUISS170: getGameUINutBamChonTabChienDauCoKhongKichHoat?.getMaDinhDanhGameUI,
-      // maDinhDanhThanhPhanGameUISS180: getGameUINutBamChonTabChienDauCoKichHoat?.getMaDinhDanhGameUI,
-      // maDinhDanhThanhPhanGameUISS190: getGameUINutBamChonTabBanDoKhongKichHoat?.getMaDinhDanhGameUI,
-      // maDinhDanhThanhPhanGameUISS200: getGameUINutBamChonTabBanDoKichHoat?.getMaDinhDanhGameUI,
-      //
-      // maDinhDanhThanhPhanGameUISS210: getGameUINutBanChuyenChonChiDinhTrai?.getMaDinhDanhGameUI,
-      // maDinhDanhThanhPhanGameUISS220: getGameUINutBanChuyenChonChiDinhPhai?.getMaDinhDanhGameUI,
-      // maDinhDanhThanhPhanGameUISS230: getGameUINutBanChonTabThongTinChienDauCo?.getMaDinhDanhGameUI,
-      // maDinhDanhThanhPhanGameUISS240: getGameUINutBanChonTabNangCapChienDauCo?.getMaDinhDanhGameUI,
+    // maDinhDanhThanhPhanGameUISS170: getGameUINutBamChonTabChienDauCoKhongKichHoat?.getMaDinhDanhGameUI,
+    // maDinhDanhThanhPhanGameUISS180: getGameUINutBamChonTabChienDauCoKichHoat?.getMaDinhDanhGameUI,
+    // maDinhDanhThanhPhanGameUISS190: getGameUINutBamChonTabBanDoKhongKichHoat?.getMaDinhDanhGameUI,
+    // maDinhDanhThanhPhanGameUISS200: getGameUINutBamChonTabBanDoKichHoat?.getMaDinhDanhGameUI,
+    //
+    // maDinhDanhThanhPhanGameUISS210: getGameUINutBanChuyenChonChiDinhTrai?.getMaDinhDanhGameUI,
+    // maDinhDanhThanhPhanGameUISS220: getGameUINutBanChuyenChonChiDinhPhai?.getMaDinhDanhGameUI,
+    // maDinhDanhThanhPhanGameUISS230: getGameUINutBanChonTabThongTinChienDauCo?.getMaDinhDanhGameUI,
+    // maDinhDanhThanhPhanGameUISS240: getGameUINutBanChonTabNangCapChienDauCo?.getMaDinhDanhGameUI,
     // );
 
     // await onTaiTaiNguyenThanhPhanGameUITheoMaDinhDanh(
@@ -531,95 +531,365 @@ class QUANLYTRANGTHAITHANHPHANGAMEUITONGQUAT with CauTrucThucThiCoBan {
     //   maDinhDanhThanhPhanGameUISS220: getGameUINutBamChuyenTiep?.getMaDinhDanhGameUI,
     // );
 
-    CAUTRUCTHUCTHITUANTUCOBAN? cauTrucThucThiTuanTu;
-    cauTrucThucThiTuanTu = CAUTRUCTHUCTHITUANTUCOBAN.onMacDinh();
+    CAUTRUCTHUCTHITUANTUCOBAN? cauTrucThucThiTuanTuSS010;
+    cauTrucThucThiTuanTuSS010 = CAUTRUCTHUCTHITUANTUCOBAN.onMacDinh();
 
-    cauTrucThucThiTuanTu.onAddDonViThucThiTuanTu(
+    CAUTRUCTHUCTHITUANTUCOBAN? cauTrucThucThiTuanTuSS020;
+    cauTrucThucThiTuanTuSS020 = CAUTRUCTHUCTHITUANTUCOBAN.onMacDinh();
+
+    CAUTRUCTHUCTHITUANTUCOBAN? cauTrucThucThiTuanTuSS030;
+    cauTrucThucThiTuanTuSS030 = CAUTRUCTHUCTHITUANTUCOBAN.onMacDinh();
+
+    ///
+    /// cauTrucThucThiTuanTuSS010
+    ///
+    cauTrucThucThiTuanTuSS010.onAddDonViThucThiTuanTu(
       onThucThiTuanTu: () async {
-        getQuanLyTaiNguyenThanhPhanGameUI?.onTaiTaiNguyenTichHopTheoTuanTu(thanhPhanGameUI: getMapThanhPhanGameUI[getGameUIKhungManHinhThuCapCoBan?.getMaDinhDanhGameUI ?? '[MA_DINH_DANH_THANH_PHAN_GAMEUI]']);
+        getQuanLyTaiNguyenThanhPhanGameUI?.onTaiTaiNguyenTichHopTheoTuanTu(
+          thanhPhanGameUI: getMapThanhPhanGameUI[getGameUIKhungManHinhThuCapCoBan?.getMaDinhDanhGameUI ?? '[MA_DINH_DANH_THANH_PHAN_GAMEUI]'],
+        );
       },
     );
 
-    cauTrucThucThiTuanTu.onAddDonViThucThiTuanTu(
+    cauTrucThucThiTuanTuSS010.onAddDonViThucThiTuanTu(
       onThucThiTuanTu: () async {
-        getQuanLyTaiNguyenThanhPhanGameUI?.onTaiTaiNguyenTichHopTheoTuanTu(thanhPhanGameUI: getMapThanhPhanGameUI[getGameUIThanhNgangChiSoMauChienDauCo?.getMaDinhDanhGameUI ?? '[MA_DINH_DANH_THANH_PHAN_GAMEUI]']);
+        getQuanLyTaiNguyenThanhPhanGameUI?.onTaiTaiNguyenTichHopTheoTuanTu(
+          thanhPhanGameUI: getMapThanhPhanGameUI[getGameUIThanhNgangChiSoMauChienDauCo?.getMaDinhDanhGameUI ?? '[MA_DINH_DANH_THANH_PHAN_GAMEUI]'],
+        );
       },
     );
 
-    cauTrucThucThiTuanTu.onAddDonViThucThiTuanTu(
+    cauTrucThucThiTuanTuSS010.onAddDonViThucThiTuanTu(
       onThucThiTuanTu: () async {
-        getQuanLyTaiNguyenThanhPhanGameUI?.onTaiTaiNguyenTichHopTheoTuanTu(thanhPhanGameUI: getMapThanhPhanGameUI[getGameUIThanhNgangChiSoMauPhuongTienChiHuy?.getMaDinhDanhGameUI ?? '[MA_DINH_DANH_THANH_PHAN_GAMEUI]']);
+        getQuanLyTaiNguyenThanhPhanGameUI?.onTaiTaiNguyenTichHopTheoTuanTu(
+          thanhPhanGameUI: getMapThanhPhanGameUI[getGameUIThanhNgangChiSoMauPhuongTienChiHuy?.getMaDinhDanhGameUI ?? '[MA_DINH_DANH_THANH_PHAN_GAMEUI]'],
+        );
       },
     );
 
     ///
-    cauTrucThucThiTuanTu.onAddDonViThucThiTuanTu(
+    cauTrucThucThiTuanTuSS010.onAddDonViThucThiTuanTu(
       onThucThiTuanTu: () async {
-        getQuanLyTaiNguyenThanhPhanGameUI?.onTaiTaiNguyenTichHopTheoTuanTu(thanhPhanGameUI: getMapThanhPhanGameUI[getGameUINutBanChonTabCuaHangKhongKichHoat?.getMaDinhDanhGameUI ?? '[MA_DINH_DANH_THANH_PHAN_GAMEUI]']);
+        getQuanLyTaiNguyenThanhPhanGameUI?.onTaiTaiNguyenTichHopTheoTuanTu(
+          thanhPhanGameUI: getMapThanhPhanGameUI[getGameUINutBanChonTabCuaHangKhongKichHoat?.getMaDinhDanhGameUI ?? '[MA_DINH_DANH_THANH_PHAN_GAMEUI]'],
+        );
       },
     );
-    cauTrucThucThiTuanTu.onAddDonViThucThiTuanTu(
+    cauTrucThucThiTuanTuSS010.onAddDonViThucThiTuanTu(
       onThucThiTuanTu: () async {
-        getQuanLyTaiNguyenThanhPhanGameUI?.onTaiTaiNguyenTichHopTheoTuanTu(thanhPhanGameUI: getMapThanhPhanGameUI[getGameUINutBanChonTabCuaHangKichHoat?.getMaDinhDanhGameUI ?? '[MA_DINH_DANH_THANH_PHAN_GAMEUI]']);
+        getQuanLyTaiNguyenThanhPhanGameUI?.onTaiTaiNguyenTichHopTheoTuanTu(
+          thanhPhanGameUI: getMapThanhPhanGameUI[getGameUINutBanChonTabCuaHangKichHoat?.getMaDinhDanhGameUI ?? '[MA_DINH_DANH_THANH_PHAN_GAMEUI]'],
+        );
       },
     );
-    cauTrucThucThiTuanTu.onAddDonViThucThiTuanTu(
+    cauTrucThucThiTuanTuSS010.onAddDonViThucThiTuanTu(
       onThucThiTuanTu: () async {
-        getQuanLyTaiNguyenThanhPhanGameUI?.onTaiTaiNguyenTichHopTheoTuanTu(thanhPhanGameUI: getMapThanhPhanGameUI[getGameUINutBanChonTabThanhTichKhongKichHoat?.getMaDinhDanhGameUI ?? '[MA_DINH_DANH_THANH_PHAN_GAMEUI]']);
+        getQuanLyTaiNguyenThanhPhanGameUI?.onTaiTaiNguyenTichHopTheoTuanTu(
+          thanhPhanGameUI: getMapThanhPhanGameUI[getGameUINutBanChonTabThanhTichKhongKichHoat?.getMaDinhDanhGameUI ?? '[MA_DINH_DANH_THANH_PHAN_GAMEUI]'],
+        );
       },
     );
-    cauTrucThucThiTuanTu.onAddDonViThucThiTuanTu(
+    cauTrucThucThiTuanTuSS010.onAddDonViThucThiTuanTu(
       onThucThiTuanTu: () async {
-        getQuanLyTaiNguyenThanhPhanGameUI?.onTaiTaiNguyenTichHopTheoTuanTu(thanhPhanGameUI: getMapThanhPhanGameUI[getGameUINutBanChonTabThanhTichKichHoat?.getMaDinhDanhGameUI ?? '[MA_DINH_DANH_THANH_PHAN_GAMEUI]']);
+        getQuanLyTaiNguyenThanhPhanGameUI?.onTaiTaiNguyenTichHopTheoTuanTu(
+          thanhPhanGameUI: getMapThanhPhanGameUI[getGameUINutBanChonTabThanhTichKichHoat?.getMaDinhDanhGameUI ?? '[MA_DINH_DANH_THANH_PHAN_GAMEUI]'],
+        );
       },
     );
-    cauTrucThucThiTuanTu.onAddDonViThucThiTuanTu(
+    cauTrucThucThiTuanTuSS010.onAddDonViThucThiTuanTu(
       onThucThiTuanTu: () async {
-        getQuanLyTaiNguyenThanhPhanGameUI?.onTaiTaiNguyenTichHopTheoTuanTu(thanhPhanGameUI: getMapThanhPhanGameUI[getGameUINutBanChonTabChienDauKhongKichHoat?.getMaDinhDanhGameUI ?? '[MA_DINH_DANH_THANH_PHAN_GAMEUI]']);
+        getQuanLyTaiNguyenThanhPhanGameUI?.onTaiTaiNguyenTichHopTheoTuanTu(
+          thanhPhanGameUI: getMapThanhPhanGameUI[getGameUINutBanChonTabChienDauKhongKichHoat?.getMaDinhDanhGameUI ?? '[MA_DINH_DANH_THANH_PHAN_GAMEUI]'],
+        );
       },
     );
-    cauTrucThucThiTuanTu.onAddDonViThucThiTuanTu(
+    cauTrucThucThiTuanTuSS010.onAddDonViThucThiTuanTu(
       onThucThiTuanTu: () async {
-        getQuanLyTaiNguyenThanhPhanGameUI?.onTaiTaiNguyenTichHopTheoTuanTu(thanhPhanGameUI: getMapThanhPhanGameUI[getGameUINutBanChonTabChienDauKichHoat?.getMaDinhDanhGameUI ?? '[MA_DINH_DANH_THANH_PHAN_GAMEUI]']);
+        getQuanLyTaiNguyenThanhPhanGameUI?.onTaiTaiNguyenTichHopTheoTuanTu(
+          thanhPhanGameUI: getMapThanhPhanGameUI[getGameUINutBanChonTabChienDauKichHoat?.getMaDinhDanhGameUI ?? '[MA_DINH_DANH_THANH_PHAN_GAMEUI]'],
+        );
       },
     );
-    cauTrucThucThiTuanTu.onAddDonViThucThiTuanTu(
+    cauTrucThucThiTuanTuSS010.onAddDonViThucThiTuanTu(
       onThucThiTuanTu: () async {
-        getQuanLyTaiNguyenThanhPhanGameUI?.onTaiTaiNguyenTichHopTheoTuanTu(thanhPhanGameUI: getMapThanhPhanGameUI[getGameUINutBanChonTabThuVienKhongKichHoat?.getMaDinhDanhGameUI ?? '[MA_DINH_DANH_THANH_PHAN_GAMEUI]']);
+        getQuanLyTaiNguyenThanhPhanGameUI?.onTaiTaiNguyenTichHopTheoTuanTu(
+          thanhPhanGameUI: getMapThanhPhanGameUI[getGameUINutBanChonTabThuVienKhongKichHoat?.getMaDinhDanhGameUI ?? '[MA_DINH_DANH_THANH_PHAN_GAMEUI]'],
+        );
       },
     );
-    cauTrucThucThiTuanTu.onAddDonViThucThiTuanTu(
+    cauTrucThucThiTuanTuSS010.onAddDonViThucThiTuanTu(
       onThucThiTuanTu: () async {
-        getQuanLyTaiNguyenThanhPhanGameUI?.onTaiTaiNguyenTichHopTheoTuanTu(thanhPhanGameUI: getMapThanhPhanGameUI[getGameUINutBanChonTabThuVienKichHoat?.getMaDinhDanhGameUI ?? '[MA_DINH_DANH_THANH_PHAN_GAMEUI]']);
+        getQuanLyTaiNguyenThanhPhanGameUI?.onTaiTaiNguyenTichHopTheoTuanTu(
+          thanhPhanGameUI: getMapThanhPhanGameUI[getGameUINutBanChonTabThuVienKichHoat?.getMaDinhDanhGameUI ?? '[MA_DINH_DANH_THANH_PHAN_GAMEUI]'],
+        );
       },
     );
-    cauTrucThucThiTuanTu.onAddDonViThucThiTuanTu(
+    cauTrucThucThiTuanTuSS010.onAddDonViThucThiTuanTu(
       onThucThiTuanTu: () async {
-        getQuanLyTaiNguyenThanhPhanGameUI?.onTaiTaiNguyenTichHopTheoTuanTu(thanhPhanGameUI: getMapThanhPhanGameUI[getGameUINutBanChonTabCaiDatKhongKichHoat?.getMaDinhDanhGameUI ?? '[MA_DINH_DANH_THANH_PHAN_GAMEUI]']);
+        getQuanLyTaiNguyenThanhPhanGameUI?.onTaiTaiNguyenTichHopTheoTuanTu(
+          thanhPhanGameUI: getMapThanhPhanGameUI[getGameUINutBanChonTabCaiDatKhongKichHoat?.getMaDinhDanhGameUI ?? '[MA_DINH_DANH_THANH_PHAN_GAMEUI]'],
+        );
       },
     );
-    cauTrucThucThiTuanTu.onAddDonViThucThiTuanTu(
+    cauTrucThucThiTuanTuSS010.onAddDonViThucThiTuanTu(
       onThucThiTuanTu: () async {
-        getQuanLyTaiNguyenThanhPhanGameUI?.onTaiTaiNguyenTichHopTheoTuanTu(thanhPhanGameUI: getMapThanhPhanGameUI[getGameUINutBanChonTabCaiDatKichHoat?.getMaDinhDanhGameUI ?? '[MA_DINH_DANH_THANH_PHAN_GAMEUI]']);
+        getQuanLyTaiNguyenThanhPhanGameUI?.onTaiTaiNguyenTichHopTheoTuanTu(
+          thanhPhanGameUI: getMapThanhPhanGameUI[getGameUINutBanChonTabCaiDatKichHoat?.getMaDinhDanhGameUI ?? '[MA_DINH_DANH_THANH_PHAN_GAMEUI]'],
+        );
       },
     );
-    cauTrucThucThiTuanTu.onAddDonViThucThiTuanTu(
+    cauTrucThucThiTuanTuSS010.onAddDonViThucThiTuanTu(
       onThucThiTuanTu: () async {
-        getQuanLyTaiNguyenThanhPhanGameUI?.onTaiTaiNguyenTichHopTheoTuanTu(thanhPhanGameUI: getMapThanhPhanGameUI[getGameUIKhungThongTinTaiNguyenVangTraoDoi?.getMaDinhDanhGameUI ?? '[MA_DINH_DANH_THANH_PHAN_GAMEUI]']);
+        getQuanLyTaiNguyenThanhPhanGameUI?.onTaiTaiNguyenTichHopTheoTuanTu(
+          thanhPhanGameUI: getMapThanhPhanGameUI[getGameUIKhungThongTinTaiNguyenVangTraoDoi?.getMaDinhDanhGameUI ?? '[MA_DINH_DANH_THANH_PHAN_GAMEUI]'],
+        );
       },
     );
-    cauTrucThucThiTuanTu.onAddDonViThucThiTuanTu(
+    cauTrucThucThiTuanTuSS010.onAddDonViThucThiTuanTu(
       onThucThiTuanTu: () async {
-        getQuanLyTaiNguyenThanhPhanGameUI?.onTaiTaiNguyenTichHopTheoTuanTu(thanhPhanGameUI: getMapThanhPhanGameUI[getGameUIKhungThongTinTaiNguyenNgocTraoDoi?.getMaDinhDanhGameUI ?? '[MA_DINH_DANH_THANH_PHAN_GAMEUI]']);
+        getQuanLyTaiNguyenThanhPhanGameUI?.onTaiTaiNguyenTichHopTheoTuanTu(
+          thanhPhanGameUI: getMapThanhPhanGameUI[getGameUIKhungThongTinTaiNguyenNgocTraoDoi?.getMaDinhDanhGameUI ?? '[MA_DINH_DANH_THANH_PHAN_GAMEUI]'],
+        );
       },
     );
-    cauTrucThucThiTuanTu.onAddDonViThucThiTuanTu(
+    cauTrucThucThiTuanTuSS010.onAddDonViThucThiTuanTu(
       onThucThiTuanTu: () async {
-        getQuanLyTaiNguyenThanhPhanGameUI?.onTaiTaiNguyenTichHopTheoTuanTu(thanhPhanGameUI: getMapThanhPhanGameUI[getGameUIKhungThongTinTaiNguyenDollarTraoDoi?.getMaDinhDanhGameUI ?? '[MA_DINH_DANH_THANH_PHAN_GAMEUI]']);
+        getQuanLyTaiNguyenThanhPhanGameUI?.onTaiTaiNguyenTichHopTheoTuanTu(
+          thanhPhanGameUI: getMapThanhPhanGameUI[getGameUIKhungThongTinTaiNguyenDollarTraoDoi?.getMaDinhDanhGameUI ?? '[MA_DINH_DANH_THANH_PHAN_GAMEUI]'],
+        );
       },
     );
 
-    cauTrucThucThiTuanTu.onThucThiTuanTu(interval: const Duration(milliseconds: 200));
+    ///
+    /// cauTrucThucThiTuanTuSS020
+    ///
+    cauTrucThucThiTuanTuSS020.onAddDonViThucThiTuanTu(
+      onThucThiTuanTu: () async {
+        getQuanLyTaiNguyenThanhPhanGameUI?.onTaiTaiNguyenTichHopTheoTuanTu(
+          thanhPhanGameUI: getMapThanhPhanGameUI[getGameUIKhungManHinhThuCapCoBan?.getMaDinhDanhGameUI ?? '[MA_DINH_DANH_THANH_PHAN_GAMEUI]'],
+        );
+      },
+    );
+    cauTrucThucThiTuanTuSS020.onAddDonViThucThiTuanTu(
+      onThucThiTuanTu: () async {
+        getQuanLyTaiNguyenThanhPhanGameUI?.onTaiTaiNguyenTichHopTheoTuanTu(
+          thanhPhanGameUI: getMapThanhPhanGameUI[getGameUINutBamChonTabChienDauCoKhongKichHoat?.getMaDinhDanhGameUI ?? '[MA_DINH_DANH_THANH_PHAN_GAMEUI]'],
+        );
+      },
+    );
+    cauTrucThucThiTuanTuSS020.onAddDonViThucThiTuanTu(
+      onThucThiTuanTu: () async {
+        getQuanLyTaiNguyenThanhPhanGameUI?.onTaiTaiNguyenTichHopTheoTuanTu(
+          thanhPhanGameUI: getMapThanhPhanGameUI[getGameUINutBamChonTabChienDauCoKichHoat?.getMaDinhDanhGameUI ?? '[MA_DINH_DANH_THANH_PHAN_GAMEUI]'],
+        );
+      },
+    );
+    cauTrucThucThiTuanTuSS020.onAddDonViThucThiTuanTu(
+      onThucThiTuanTu: () async {
+        getQuanLyTaiNguyenThanhPhanGameUI?.onTaiTaiNguyenTichHopTheoTuanTu(
+          thanhPhanGameUI: getMapThanhPhanGameUI[getGameUINutBamChonTabBanDoKhongKichHoat?.getMaDinhDanhGameUI ?? '[MA_DINH_DANH_THANH_PHAN_GAMEUI]'],
+        );
+      },
+    );
+    cauTrucThucThiTuanTuSS020.onAddDonViThucThiTuanTu(
+      onThucThiTuanTu: () async {
+        getQuanLyTaiNguyenThanhPhanGameUI?.onTaiTaiNguyenTichHopTheoTuanTu(
+          thanhPhanGameUI: getMapThanhPhanGameUI[getGameUINutBamChonTabBanDoKichHoat?.getMaDinhDanhGameUI ?? '[MA_DINH_DANH_THANH_PHAN_GAMEUI]'],
+        );
+      },
+    );
+    cauTrucThucThiTuanTuSS020.onAddDonViThucThiTuanTu(
+      onThucThiTuanTu: () async {
+        getQuanLyTaiNguyenThanhPhanGameUI?.onTaiTaiNguyenTichHopTheoTuanTu(
+          thanhPhanGameUI: getMapThanhPhanGameUI[getGameUINutBanChuyenChonChiDinhTrai?.getMaDinhDanhGameUI ?? '[MA_DINH_DANH_THANH_PHAN_GAMEUI]'],
+        );
+      },
+    );
+    cauTrucThucThiTuanTuSS020.onAddDonViThucThiTuanTu(
+      onThucThiTuanTu: () async {
+        getQuanLyTaiNguyenThanhPhanGameUI?.onTaiTaiNguyenTichHopTheoTuanTu(
+          thanhPhanGameUI: getMapThanhPhanGameUI[getGameUINutBanChuyenChonChiDinhPhai?.getMaDinhDanhGameUI ?? '[MA_DINH_DANH_THANH_PHAN_GAMEUI]'],
+        );
+      },
+    );
+    // cauTrucThucThiTuanTuSS020.onAddDonViThucThiTuanTu(
+    //   onThucThiTuanTu: () async {
+    //     getQuanLyTaiNguyenThanhPhanGameUI?.onTaiTaiNguyenTichHopTheoTuanTu(
+    //       thanhPhanGameUI: getMapThanhPhanGameUI[getGameUINutBanChonTabThongTinChienDauCo?.getMaDinhDanhGameUI ?? '[MA_DINH_DANH_THANH_PHAN_GAMEUI]'],
+    //     );
+    //   },
+    // );
+    // cauTrucThucThiTuanTuSS020.onAddDonViThucThiTuanTu(
+    //   onThucThiTuanTu: () async {
+    //     getQuanLyTaiNguyenThanhPhanGameUI?.onTaiTaiNguyenTichHopTheoTuanTu(
+    //       thanhPhanGameUI: getMapThanhPhanGameUI[getGameUINutBanChonTabNangCapChienDauCo?.getMaDinhDanhGameUI ?? '[MA_DINH_DANH_THANH_PHAN_GAMEUI]'],
+    //     );
+    //   },
+    // );
+
+    ///
+    /// cauTrucThucThiTuanTuSS030
+    ///
+    cauTrucThucThiTuanTuSS030.onAddDonViThucThiTuanTu(
+      onThucThiTuanTu: () async {
+        getQuanLyTaiNguyenThanhPhanGameUI?.onTaiTaiNguyenTichHopTheoTuanTu(thanhPhanGameUI: getMapThanhPhanGameUI[getGameUINutBamQuayVe?.getMaDinhDanhGameUI ?? '[MA_DINH_DANH_THANH_PHAN_GAMEUI]']);
+      },
+    );
+    cauTrucThucThiTuanTuSS030.onAddDonViThucThiTuanTu(
+      onThucThiTuanTu: () async {
+        getQuanLyTaiNguyenThanhPhanGameUI?.onTaiTaiNguyenTichHopTheoTuanTu(
+          thanhPhanGameUI: getMapThanhPhanGameUI[getGameUINutBamTamDungKichHoat?.getMaDinhDanhGameUI ?? '[MA_DINH_DANH_THANH_PHAN_GAMEUI]'],
+        );
+      },
+    );
+    cauTrucThucThiTuanTuSS030.onAddDonViThucThiTuanTu(
+      onThucThiTuanTu: () async {
+        getQuanLyTaiNguyenThanhPhanGameUI?.onTaiTaiNguyenTichHopTheoTuanTu(
+          thanhPhanGameUI: getMapThanhPhanGameUI[getGameUINutBamTamDungHuyKichHoat?.getMaDinhDanhGameUI ?? '[MA_DINH_DANH_THANH_PHAN_GAMEUI]'],
+        );
+      },
+    );
+    cauTrucThucThiTuanTuSS030.onAddDonViThucThiTuanTu(
+      onThucThiTuanTu: () async {
+        getQuanLyTaiNguyenThanhPhanGameUI?.onTaiTaiNguyenTichHopTheoTuanTu(
+          thanhPhanGameUI: getMapThanhPhanGameUI[getGameUICardDangCapSao00E030?.getMaDinhDanhGameUI ?? '[MA_DINH_DANH_THANH_PHAN_GAMEUI]'],
+        );
+      },
+    );
+    cauTrucThucThiTuanTuSS030.onAddDonViThucThiTuanTu(
+      onThucThiTuanTu: () async {
+        getQuanLyTaiNguyenThanhPhanGameUI?.onTaiTaiNguyenTichHopTheoTuanTu(
+          thanhPhanGameUI: getMapThanhPhanGameUI[getGameUICardDangCapSao00D040?.getMaDinhDanhGameUI ?? '[MA_DINH_DANH_THANH_PHAN_GAMEUI]'],
+        );
+      },
+    );
+    cauTrucThucThiTuanTuSS030.onAddDonViThucThiTuanTu(
+      onThucThiTuanTu: () async {
+        getQuanLyTaiNguyenThanhPhanGameUI?.onTaiTaiNguyenTichHopTheoTuanTu(
+          thanhPhanGameUI: getMapThanhPhanGameUI[getGameUICardDangCapSao00C050?.getMaDinhDanhGameUI ?? '[MA_DINH_DANH_THANH_PHAN_GAMEUI]'],
+        );
+      },
+    );
+    cauTrucThucThiTuanTuSS030.onAddDonViThucThiTuanTu(
+      onThucThiTuanTu: () async {
+        getQuanLyTaiNguyenThanhPhanGameUI?.onTaiTaiNguyenTichHopTheoTuanTu(
+          thanhPhanGameUI: getMapThanhPhanGameUI[getGameUICardDangCapSao00B060?.getMaDinhDanhGameUI ?? '[MA_DINH_DANH_THANH_PHAN_GAMEUI]'],
+        );
+      },
+    );
+    cauTrucThucThiTuanTuSS030.onAddDonViThucThiTuanTu(
+      onThucThiTuanTu: () async {
+        getQuanLyTaiNguyenThanhPhanGameUI?.onTaiTaiNguyenTichHopTheoTuanTu(
+          thanhPhanGameUI: getMapThanhPhanGameUI[getGameUICardDangCapSao00A070?.getMaDinhDanhGameUI ?? '[MA_DINH_DANH_THANH_PHAN_GAMEUI]'],
+        );
+      },
+    );
+    cauTrucThucThiTuanTuSS030.onAddDonViThucThiTuanTu(
+      onThucThiTuanTu: () async {
+        getQuanLyTaiNguyenThanhPhanGameUI?.onTaiTaiNguyenTichHopTheoTuanTu(
+          thanhPhanGameUI: getMapThanhPhanGameUI[getGameUICardDangCapSao00S080?.getMaDinhDanhGameUI ?? '[MA_DINH_DANH_THANH_PHAN_GAMEUI]'],
+        );
+      },
+    );
+    cauTrucThucThiTuanTuSS030.onAddDonViThucThiTuanTu(
+      onThucThiTuanTu: () async {
+        getQuanLyTaiNguyenThanhPhanGameUI?.onTaiTaiNguyenTichHopTheoTuanTu(
+          thanhPhanGameUI: getMapThanhPhanGameUI[getGameUICardDangCapSao0SS090?.getMaDinhDanhGameUI ?? '[MA_DINH_DANH_THANH_PHAN_GAMEUI]'],
+        );
+      },
+    );
+    cauTrucThucThiTuanTuSS030.onAddDonViThucThiTuanTu(
+      onThucThiTuanTu: () async {
+        getQuanLyTaiNguyenThanhPhanGameUI?.onTaiTaiNguyenTichHopTheoTuanTu(
+          thanhPhanGameUI: getMapThanhPhanGameUI[getGameUICardDangCapSaoSSS100?.getMaDinhDanhGameUI ?? '[MA_DINH_DANH_THANH_PHAN_GAMEUI]'],
+        );
+      },
+    );
+    cauTrucThucThiTuanTuSS030.onAddDonViThucThiTuanTu(
+      onThucThiTuanTu: () async {
+        getQuanLyTaiNguyenThanhPhanGameUI?.onTaiTaiNguyenTichHopTheoTuanTu(
+          thanhPhanGameUI: getMapThanhPhanGameUI[getGameUICardChienDauCoKichHoat?.getMaDinhDanhGameUI ?? '[MA_DINH_DANH_THANH_PHAN_GAMEUI]'],
+        );
+      },
+    );
+    cauTrucThucThiTuanTuSS030.onAddDonViThucThiTuanTu(
+      onThucThiTuanTu: () async {
+        getQuanLyTaiNguyenThanhPhanGameUI?.onTaiTaiNguyenTichHopTheoTuanTu(
+          thanhPhanGameUI: getMapThanhPhanGameUI[getGameUICardNhiemVuChienDauKichHoat?.getMaDinhDanhGameUI ?? '[MA_DINH_DANH_THANH_PHAN_GAMEUI]'],
+        );
+      },
+    );
+    cauTrucThucThiTuanTuSS030.onAddDonViThucThiTuanTu(
+      onThucThiTuanTu: () async {
+        getQuanLyTaiNguyenThanhPhanGameUI?.onTaiTaiNguyenTichHopTheoTuanTu(
+          thanhPhanGameUI: getMapThanhPhanGameUI[getGameUICardNhiemVuChienDauHuyKichHoat?.getMaDinhDanhGameUI ?? '[MA_DINH_DANH_THANH_PHAN_GAMEUI]'],
+        );
+      },
+    );
+    cauTrucThucThiTuanTuSS030.onAddDonViThucThiTuanTu(
+      onThucThiTuanTu: () async {
+        getQuanLyTaiNguyenThanhPhanGameUI?.onTaiTaiNguyenTichHopTheoTuanTu(
+          thanhPhanGameUI: getMapThanhPhanGameUI[getGameUIThanhTichChienDauSS010KichHoat?.getMaDinhDanhGameUI ?? '[MA_DINH_DANH_THANH_PHAN_GAMEUI]'],
+        );
+      },
+    );
+    cauTrucThucThiTuanTuSS030.onAddDonViThucThiTuanTu(
+      onThucThiTuanTu: () async {
+        getQuanLyTaiNguyenThanhPhanGameUI?.onTaiTaiNguyenTichHopTheoTuanTu(
+          thanhPhanGameUI: getMapThanhPhanGameUI[getGameUIThanhTichChienDauSS010HuyKichHoat?.getMaDinhDanhGameUI ?? '[MA_DINH_DANH_THANH_PHAN_GAMEUI]'],
+        );
+      },
+    );
+    cauTrucThucThiTuanTuSS030.onAddDonViThucThiTuanTu(
+      onThucThiTuanTu: () async {
+        getQuanLyTaiNguyenThanhPhanGameUI?.onTaiTaiNguyenTichHopTheoTuanTu(
+          thanhPhanGameUI: getMapThanhPhanGameUI[getGameUIThanhTichChienDauSS020KichHoat?.getMaDinhDanhGameUI ?? '[MA_DINH_DANH_THANH_PHAN_GAMEUI]'],
+        );
+      },
+    );
+    cauTrucThucThiTuanTuSS030.onAddDonViThucThiTuanTu(
+      onThucThiTuanTu: () async {
+        getQuanLyTaiNguyenThanhPhanGameUI?.onTaiTaiNguyenTichHopTheoTuanTu(
+          thanhPhanGameUI: getMapThanhPhanGameUI[getGameUIThanhTichChienDauSS020HuyKichHoat?.getMaDinhDanhGameUI ?? '[MA_DINH_DANH_THANH_PHAN_GAMEUI]'],
+        );
+      },
+    );
+    cauTrucThucThiTuanTuSS030.onAddDonViThucThiTuanTu(
+      onThucThiTuanTu: () async {
+        getQuanLyTaiNguyenThanhPhanGameUI?.onTaiTaiNguyenTichHopTheoTuanTu(
+          thanhPhanGameUI: getMapThanhPhanGameUI[getGameUIThanhTichChienDauSS030KichHoat?.getMaDinhDanhGameUI ?? '[MA_DINH_DANH_THANH_PHAN_GAMEUI]'],
+        );
+      },
+    );
+    cauTrucThucThiTuanTuSS030.onAddDonViThucThiTuanTu(
+      onThucThiTuanTu: () async {
+        getQuanLyTaiNguyenThanhPhanGameUI?.onTaiTaiNguyenTichHopTheoTuanTu(
+          thanhPhanGameUI: getMapThanhPhanGameUI[getGameUIThanhTichChienDauSS030HuyKichHoat?.getMaDinhDanhGameUI ?? '[MA_DINH_DANH_THANH_PHAN_GAMEUI]'],
+        );
+      },
+    );
+    cauTrucThucThiTuanTuSS030.onAddDonViThucThiTuanTu(
+      onThucThiTuanTu: () async {
+        getQuanLyTaiNguyenThanhPhanGameUI?.onTaiTaiNguyenTichHopTheoTuanTu(thanhPhanGameUI: getMapThanhPhanGameUI[getGameUINutBamCoBanVA?.getMaDinhDanhGameUI ?? '[MA_DINH_DANH_THANH_PHAN_GAMEUI]']);
+      },
+    );
+    cauTrucThucThiTuanTuSS030.onAddDonViThucThiTuanTu(
+      onThucThiTuanTu: () async {
+        getQuanLyTaiNguyenThanhPhanGameUI?.onTaiTaiNguyenTichHopTheoTuanTu(
+          thanhPhanGameUI: getMapThanhPhanGameUI[getGameUINutBamChuyenTiep?.getMaDinhDanhGameUI ?? '[MA_DINH_DANH_THANH_PHAN_GAMEUI]'],
+        );
+      },
+    );
+
+    cauTrucThucThiTuanTuSS010.onThucThiHoanTat = () async {
+      await cauTrucThucThiTuanTuSS020?.onThucThiTuanTu(interval: const Duration(milliseconds: 250));
+    };
+
+    cauTrucThucThiTuanTuSS020.onThucThiHoanTat = () async {
+      await cauTrucThucThiTuanTuSS030?.onThucThiTuanTu(interval: const Duration(milliseconds: 300));
+    };
+
+    cauTrucThucThiTuanTuSS010.onThucThiTuanTu(interval: const Duration(milliseconds: 200));
 
     if (kDebugMode) {
       stopwatch?.stop();

@@ -41,63 +41,65 @@ class DANHSACHPHUONGTIENTHUOCGIAIDOANCOBAN with CauTrucThucThiCoBan {
   /// -----
   @override
   Future<void> onSetupRoot() async {
-    /// -----
-    /// TODO:
-    /// -----
+    await Future.wait([
+      /// -----
+      /// TODO:
+      /// -----
 
-    /// -----
-    /// TODO: [1] => [5]
-    /// -----
-    await caiDatPhuongTienSS020(value: TrangThaiPhuongTien(value: null), caiDatUuTien: true);
-    await caiDatPhuongTienSS022(value: TrangThaiPhuongTien(value: null), caiDatUuTien: true);
-    await caiDatPhuongTienSS024(value: TrangThaiPhuongTien(value: null), caiDatUuTien: true);
-    await caiDatPhuongTienSS026(value: TrangThaiPhuongTien(value: null), caiDatUuTien: true);
-    await caiDatPhuongTienSS028(value: TrangThaiPhuongTien(value: null), caiDatUuTien: true);
+      /// -----
+      /// TODO: [1] => [5]
+      /// -----
+      caiDatPhuongTienSS020(value: TrangThaiPhuongTien(value: null), caiDatUuTien: true).catchError((e) => null),
+      caiDatPhuongTienSS022(value: TrangThaiPhuongTien(value: null), caiDatUuTien: true).catchError((e) => null),
+      caiDatPhuongTienSS024(value: TrangThaiPhuongTien(value: null), caiDatUuTien: true).catchError((e) => null),
+      caiDatPhuongTienSS026(value: TrangThaiPhuongTien(value: null), caiDatUuTien: true).catchError((e) => null),
+      caiDatPhuongTienSS028(value: TrangThaiPhuongTien(value: null), caiDatUuTien: true).catchError((e) => null),
 
-    /// -----
-    /// TODO: [6] => [10]
-    /// -----
-    await caiDatPhuongTienSS030(value: TrangThaiPhuongTien(value: null), caiDatUuTien: true);
-    await caiDatPhuongTienSS032(value: TrangThaiPhuongTien(value: null), caiDatUuTien: true);
-    await caiDatPhuongTienSS034(value: TrangThaiPhuongTien(value: null), caiDatUuTien: true);
-    await caiDatPhuongTienSS036(value: TrangThaiPhuongTien(value: null), caiDatUuTien: true);
-    await caiDatPhuongTienSS038(value: TrangThaiPhuongTien(value: null), caiDatUuTien: true);
+      /// -----
+      /// TODO: [6] => [10]
+      /// -----
+      caiDatPhuongTienSS030(value: TrangThaiPhuongTien(value: null), caiDatUuTien: true).catchError((e) => null),
+      caiDatPhuongTienSS032(value: TrangThaiPhuongTien(value: null), caiDatUuTien: true).catchError((e) => null),
+      caiDatPhuongTienSS034(value: TrangThaiPhuongTien(value: null), caiDatUuTien: true).catchError((e) => null),
+      caiDatPhuongTienSS036(value: TrangThaiPhuongTien(value: null), caiDatUuTien: true).catchError((e) => null),
+      caiDatPhuongTienSS038(value: TrangThaiPhuongTien(value: null), caiDatUuTien: true).catchError((e) => null),
 
-    /// -----
-    /// TODO: [11] => [15]
-    /// -----
-    await caiDatPhuongTienSS040(value: TrangThaiPhuongTien(value: null), caiDatUuTien: true);
-    await caiDatPhuongTienSS042(value: TrangThaiPhuongTien(value: null), caiDatUuTien: true);
-    await caiDatPhuongTienSS044(value: TrangThaiPhuongTien(value: null), caiDatUuTien: true);
-    await caiDatPhuongTienSS046(value: TrangThaiPhuongTien(value: null), caiDatUuTien: true);
-    await caiDatPhuongTienSS048(value: TrangThaiPhuongTien(value: null), caiDatUuTien: true);
+      /// -----
+      /// TODO: [11] => [15]
+      /// -----
+      caiDatPhuongTienSS040(value: TrangThaiPhuongTien(value: null), caiDatUuTien: true).catchError((e) => null),
+      caiDatPhuongTienSS042(value: TrangThaiPhuongTien(value: null), caiDatUuTien: true).catchError((e) => null),
+      caiDatPhuongTienSS044(value: TrangThaiPhuongTien(value: null), caiDatUuTien: true).catchError((e) => null),
+      caiDatPhuongTienSS046(value: TrangThaiPhuongTien(value: null), caiDatUuTien: true).catchError((e) => null),
+      caiDatPhuongTienSS048(value: TrangThaiPhuongTien(value: null), caiDatUuTien: true).catchError((e) => null),
 
-    /// -----
-    /// TODO: [16] => [20]
-    /// -----
-    await caiDatPhuongTienSS050(value: TrangThaiPhuongTien(value: null), caiDatUuTien: true);
-    await caiDatPhuongTienSS052(value: TrangThaiPhuongTien(value: null), caiDatUuTien: true);
-    await caiDatPhuongTienSS054(value: TrangThaiPhuongTien(value: null), caiDatUuTien: true);
-    await caiDatPhuongTienSS056(value: TrangThaiPhuongTien(value: null), caiDatUuTien: true);
-    await caiDatPhuongTienSS058(value: TrangThaiPhuongTien(value: null), caiDatUuTien: true);
+      /// -----
+      /// TODO: [16] => [20]
+      /// -----
+      caiDatPhuongTienSS050(value: TrangThaiPhuongTien(value: null), caiDatUuTien: true).catchError((e) => null),
+      caiDatPhuongTienSS052(value: TrangThaiPhuongTien(value: null), caiDatUuTien: true).catchError((e) => null),
+      caiDatPhuongTienSS054(value: TrangThaiPhuongTien(value: null), caiDatUuTien: true).catchError((e) => null),
+      caiDatPhuongTienSS056(value: TrangThaiPhuongTien(value: null), caiDatUuTien: true).catchError((e) => null),
+      caiDatPhuongTienSS058(value: TrangThaiPhuongTien(value: null), caiDatUuTien: true).catchError((e) => null),
 
-    /// -----
-    /// TODO: [21] => [25]
-    /// -----
-    await caiDatPhuongTienSS060(value: TrangThaiPhuongTien(value: null), caiDatUuTien: true);
-    await caiDatPhuongTienSS062(value: TrangThaiPhuongTien(value: null), caiDatUuTien: true);
-    await caiDatPhuongTienSS064(value: TrangThaiPhuongTien(value: null), caiDatUuTien: true);
-    await caiDatPhuongTienSS066(value: TrangThaiPhuongTien(value: null), caiDatUuTien: true);
-    await caiDatPhuongTienSS068(value: TrangThaiPhuongTien(value: null), caiDatUuTien: true);
+      /// -----
+      /// TODO: [21] => [25]
+      /// -----
+      caiDatPhuongTienSS060(value: TrangThaiPhuongTien(value: null), caiDatUuTien: true).catchError((e) => null),
+      caiDatPhuongTienSS062(value: TrangThaiPhuongTien(value: null), caiDatUuTien: true).catchError((e) => null),
+      caiDatPhuongTienSS064(value: TrangThaiPhuongTien(value: null), caiDatUuTien: true).catchError((e) => null),
+      caiDatPhuongTienSS066(value: TrangThaiPhuongTien(value: null), caiDatUuTien: true).catchError((e) => null),
+      caiDatPhuongTienSS068(value: TrangThaiPhuongTien(value: null), caiDatUuTien: true).catchError((e) => null),
 
-    /// -----
-    /// TODO: [26] => [30]
-    /// -----
-    await caiDatPhuongTienSS070(value: TrangThaiPhuongTien(value: null), caiDatUuTien: true);
-    await caiDatPhuongTienSS072(value: TrangThaiPhuongTien(value: null), caiDatUuTien: true);
-    await caiDatPhuongTienSS074(value: TrangThaiPhuongTien(value: null), caiDatUuTien: true);
-    await caiDatPhuongTienSS076(value: TrangThaiPhuongTien(value: null), caiDatUuTien: true);
-    await caiDatPhuongTienSS078(value: TrangThaiPhuongTien(value: null), caiDatUuTien: true);
+      /// -----
+      /// TODO: [26] => [30]
+      /// -----
+      caiDatPhuongTienSS070(value: TrangThaiPhuongTien(value: null), caiDatUuTien: true).catchError((e) => null),
+      caiDatPhuongTienSS072(value: TrangThaiPhuongTien(value: null), caiDatUuTien: true).catchError((e) => null),
+      caiDatPhuongTienSS074(value: TrangThaiPhuongTien(value: null), caiDatUuTien: true).catchError((e) => null),
+      caiDatPhuongTienSS076(value: TrangThaiPhuongTien(value: null), caiDatUuTien: true).catchError((e) => null),
+      caiDatPhuongTienSS078(value: TrangThaiPhuongTien(value: null), caiDatUuTien: true).catchError((e) => null),
+    ]);
 
     /// -----
     /// TODO: Setup Root For SubCom

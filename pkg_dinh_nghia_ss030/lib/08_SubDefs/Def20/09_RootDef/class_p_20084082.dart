@@ -47,10 +47,12 @@ class MoHinhPhuongTienTongQuat with CauTrucThucThiCoBan {
   /// -----
   @override
   Future<void> onSetupRoot() async {
-    await caiDatThuocTinh(value: MoHinhThuocTinhPhuongTienTongQuat());
-    await caiDatPhuongThuc(value: MoHinhPhuongThucPhuongTienTongQuat());
-    await caiDatTrangThaiTrongChienDau(value: MoHinhTrangThaiTrongChienDauPhuongTien());
-    await caiDatTrangThaiHoatDongChienDauXamChiem(value: TRANGTHAIHOATDONGCHIENDAUXAMCHIEM());
+    await Future.wait([
+      caiDatThuocTinh(value: MoHinhThuocTinhPhuongTienTongQuat()).catchError((e) => null),
+      caiDatPhuongThuc(value: MoHinhPhuongThucPhuongTienTongQuat()).catchError((e) => null),
+      caiDatTrangThaiTrongChienDau(value: MoHinhTrangThaiTrongChienDauPhuongTien()).catchError((e) => null),
+      caiDatTrangThaiHoatDongChienDauXamChiem(value: TRANGTHAIHOATDONGCHIENDAUXAMCHIEM()).catchError((e) => null),
+    ]);
 
     /// -----
     /// TODO: Setup Root For SubCom
@@ -104,10 +106,12 @@ class MoHinhPhuongTienTongQuat with CauTrucThucThiCoBan {
   /// -----
   @override
   Future<void> onSetupRootForSubCom() async {
-    await getThuocTinh?.onSetupRoot();
-    await getPhuongThuc?.onSetupRoot();
-    await getTrangThaiTrongChienDau?.onSetupRoot();
-    // await getTrangThaiHoatDongChienDauXamChiem?.onSetupRoot();
+    await Future.wait([
+      getThuocTinh?.onSetupRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getPhuongThuc?.onSetupRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getTrangThaiTrongChienDau?.onSetupRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      // await getTrangThaiHoatDongChienDauXamChiem?.onSetupRoot();
+    ]);
 
     return;
   }
@@ -117,9 +121,11 @@ class MoHinhPhuongTienTongQuat with CauTrucThucThiCoBan {
   /// -----
   @override
   Future<void> onInitRootForSubCom() async {
-    await getThuocTinh?.onInitRoot();
-    await getPhuongThuc?.onInitRoot();
-    await getTrangThaiTrongChienDau?.onInitRoot();
+    await Future.wait([
+      getThuocTinh?.onInitRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getPhuongThuc?.onInitRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getTrangThaiTrongChienDau?.onInitRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+    ]);
 
     switch (getMaDinhDanhCapDo) {
       case 1:
@@ -470,7 +476,7 @@ class MoHinhPhuongTienTongQuat with CauTrucThucThiCoBan {
     getDuLieuJsonLamPhang['[KICH_HOAT_HOAT_DONG]'] = true;
 
     await getSpritePhuongTien?.onAddToParent();
-    // await getSpriteChiSoPhuongTien?.onAddToParent(); // Mở Comment
+    await getSpriteChiSoPhuongTien?.onAddToParent(); // Mở Comment
 
     ///
     return;

@@ -290,4 +290,84 @@ class SPRITETHANHPHANGAMEUICOBAN with CauTrucThucThiCoBan {
     ///
     return;
   }
+
+  /// -----
+  /// TODO:
+  /// -----
+  Future<void> onToiUuHoaKichThuocRS050() async {
+    /// -----
+    /// TODO:
+    /// -----
+    await getDonViSpriteNgoaiHinhGameUIPartSS01?.caiDatNguonHinhAnh(
+      value: getDonViSpriteNgoaiHinhGameUIPartSS01?.getNguonHinhAnhToiUuKichThuocRS050,
+    );
+    await getDonViSpriteNgoaiHinhGameUIPartSS02?.caiDatNguonHinhAnh(
+      value: getDonViSpriteNgoaiHinhGameUIPartSS02?.getNguonHinhAnhToiUuKichThuocRS050,
+    );
+    await getDonViSpriteNgoaiHinhGameUIPartSS03?.caiDatNguonHinhAnh(
+      value: getDonViSpriteNgoaiHinhGameUIPartSS03?.getNguonHinhAnhToiUuKichThuocRS050,
+    );
+    await getDonViSpriteNgoaiHinhGameUIPartSS04?.caiDatNguonHinhAnh(
+      value: getDonViSpriteNgoaiHinhGameUIPartSS04?.getNguonHinhAnhToiUuKichThuocRS050,
+    );
+    await getDonViSpriteNgoaiHinhGameUIPartSS05?.caiDatNguonHinhAnh(
+      value: getDonViSpriteNgoaiHinhGameUIPartSS05?.getNguonHinhAnhToiUuKichThuocRS050,
+    );
+    await getDonViSpriteNgoaiHinhGameUIPartSS06?.caiDatNguonHinhAnh(
+      value: getDonViSpriteNgoaiHinhGameUIPartSS06?.getNguonHinhAnhToiUuKichThuocRS050,
+    );
+
+    /// -----
+    /// TODO:
+    /// -----
+    await getDonViSpriteNgoaiHinhGameUI?.caiDatChieuRongFrame(
+      value: (getDonViSpriteNgoaiHinhGameUIPartSS01?.getChieuRongFrameRS100 ?? 100.0) * 0.5,
+    );
+    await getDonViSpriteNgoaiHinhGameUIPartSS01?.caiDatChieuRongFrame(
+      value: (getDonViSpriteNgoaiHinhGameUIPartSS01?.getChieuRongFrameRS100 ?? 100.0) * 0.5,
+    );
+    await getDonViSpriteNgoaiHinhGameUIPartSS02?.caiDatChieuRongFrame(
+      value: (getDonViSpriteNgoaiHinhGameUIPartSS02?.getChieuRongFrameRS100 ?? 100.0) * 0.5,
+    );
+    await getDonViSpriteNgoaiHinhGameUIPartSS03?.caiDatChieuRongFrame(
+      value: (getDonViSpriteNgoaiHinhGameUIPartSS03?.getChieuRongFrameRS100 ?? 100.0) * 0.5,
+    );
+    await getDonViSpriteNgoaiHinhGameUIPartSS04?.caiDatChieuRongFrame(
+      value: (getDonViSpriteNgoaiHinhGameUIPartSS04?.getChieuRongFrameRS100 ?? 100.0) * 0.5,
+    );
+    await getDonViSpriteNgoaiHinhGameUIPartSS05?.caiDatChieuRongFrame(
+      value: (getDonViSpriteNgoaiHinhGameUIPartSS05?.getChieuRongFrameRS100 ?? 100.0) * 0.5,
+    );
+    await getDonViSpriteNgoaiHinhGameUIPartSS06?.caiDatChieuRongFrame(
+      value: (getDonViSpriteNgoaiHinhGameUIPartSS06?.getChieuRongFrameRS100 ?? 100.0) * 0.5,
+    );
+
+    /// -----
+    /// TODO:
+    /// -----
+    await getDonViSpriteNgoaiHinhGameUI?.caiDatChieuCaoFrame(
+      value: (getDonViSpriteNgoaiHinhGameUIPartSS01?.getChieuCaoFrameRS100 ?? 100.0) * 0.5,
+    );
+    await getDonViSpriteNgoaiHinhGameUIPartSS01?.caiDatChieuCaoFrame(
+      value: (getDonViSpriteNgoaiHinhGameUIPartSS01?.getChieuCaoFrameRS100 ?? 100.0) * 0.5,
+    );
+    await getDonViSpriteNgoaiHinhGameUIPartSS02?.caiDatChieuCaoFrame(
+      value: (getDonViSpriteNgoaiHinhGameUIPartSS02?.getChieuCaoFrameRS100 ?? 100.0) * 0.5,
+    );
+    await getDonViSpriteNgoaiHinhGameUIPartSS03?.caiDatChieuCaoFrame(
+      value: (getDonViSpriteNgoaiHinhGameUIPartSS03?.getChieuCaoFrameRS100 ?? 100.0) * 0.5,
+    );
+    await getDonViSpriteNgoaiHinhGameUIPartSS04?.caiDatChieuCaoFrame(
+      value: (getDonViSpriteNgoaiHinhGameUIPartSS04?.getChieuCaoFrameRS100 ?? 100.0) * 0.5,
+    );
+    await getDonViSpriteNgoaiHinhGameUIPartSS05?.caiDatChieuCaoFrame(
+      value: (getDonViSpriteNgoaiHinhGameUIPartSS05?.getChieuCaoFrameRS100 ?? 100.0) * 0.5,
+    );
+    await getDonViSpriteNgoaiHinhGameUIPartSS06?.caiDatChieuCaoFrame(
+      value: (getDonViSpriteNgoaiHinhGameUIPartSS06?.getChieuCaoFrameRS100 ?? 100.0) * 0.5,
+    );
+
+    ///
+    return;
+  }
 }

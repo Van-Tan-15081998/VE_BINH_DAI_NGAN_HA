@@ -155,44 +155,86 @@ class QUANLYDIEUKHIENCHUYENKICHBANCHIENDAU with CauTrucThucThiCoBan, DanhSachQua
   /// TODO: Khởi Động Kịch Bản
   /// -----
   Future<void> onKhoiDongKichBan({required GlobalStateManagementSystem? trangThaiTongQuat}) async {
-    CAUTRUCTHUCTHITUANTUCOBAN? cauTrucThucThiTuanTu = CAUTRUCTHUCTHITUANTUCOBAN.onMacDinh();
+    // CAUTRUCTHUCTHITUANTUCOBAN? cauTrucThucThiTuanTu = CAUTRUCTHUCTHITUANTUCOBAN.onMacDinh();
+    //
+    // cauTrucThucThiTuanTu.onAddDonViThucThiTuanTu(
+    //   onThucThiTuanTu: () async {
+    //     await getNhiemVuChienDauChonChiDinh?.getMoHinh?.getKichBanChienDau?.onSetupRoot();
+    //   },
+    // );
+    // cauTrucThucThiTuanTu.onAddDonViThucThiTuanTu(
+    //   onThucThiTuanTu: () async {
+    //     await getNhiemVuChienDauChonChiDinh?.getMoHinh?.getKichBanChienDau?.onAttachRoot(attachValue: trangThaiTongQuat);
+    //   },
+    // );
+    // cauTrucThucThiTuanTu.onAddDonViThucThiTuanTu(
+    //   onThucThiTuanTu: () async {
+    //     await getNhiemVuChienDauChonChiDinh?.getMoHinh?.getKichBanChienDau?.onInitRoot();
+    //   },
+    // );
+    // cauTrucThucThiTuanTu.onAddDonViThucThiTuanTu(
+    //   onThucThiTuanTu: () async {
+    //     await getNhiemVuChienDauChonChiDinh?.getMoHinh?.getKichBanChienDau?.onTichHopThanhPhan();
+    //   },
+    // );
+    // cauTrucThucThiTuanTu.onAddDonViThucThiTuanTu(
+    //   onThucThiTuanTu: () async {
+    //     await onTichHopTrangThaiPhuongTien();
+    //   },
+    // );
+    //
+    // cauTrucThucThiTuanTu.onThucThiTuanTu(interval: const Duration(milliseconds: 200));
 
-    cauTrucThucThiTuanTu.onAddDonViThucThiTuanTu(
+    CAUTRUCTHUCTHITUANTUCOBAN? cauTrucThucThiTuanTuSS010 = CAUTRUCTHUCTHITUANTUCOBAN.onMacDinh();
+    CAUTRUCTHUCTHITUANTUCOBAN? cauTrucThucThiTuanTuSS020 = CAUTRUCTHUCTHITUANTUCOBAN.onMacDinh();
+    CAUTRUCTHUCTHITUANTUCOBAN? cauTrucThucThiTuanTuSS030 = CAUTRUCTHUCTHITUANTUCOBAN.onMacDinh();
+    CAUTRUCTHUCTHITUANTUCOBAN? cauTrucThucThiTuanTuSS040 = CAUTRUCTHUCTHITUANTUCOBAN.onMacDinh();
+    CAUTRUCTHUCTHITUANTUCOBAN? cauTrucThucThiTuanTuSS050 = CAUTRUCTHUCTHITUANTUCOBAN.onMacDinh();
+
+    cauTrucThucThiTuanTuSS010.onAddDonViThucThiTuanTu(
       onThucThiTuanTu: () async {
         await getNhiemVuChienDauChonChiDinh?.getMoHinh?.getKichBanChienDau?.onSetupRoot();
       },
     );
-    cauTrucThucThiTuanTu.onAddDonViThucThiTuanTu(
+
+    cauTrucThucThiTuanTuSS020.onAddDonViThucThiTuanTu(
       onThucThiTuanTu: () async {
         await getNhiemVuChienDauChonChiDinh?.getMoHinh?.getKichBanChienDau?.onAttachRoot(attachValue: trangThaiTongQuat);
       },
     );
-    cauTrucThucThiTuanTu.onAddDonViThucThiTuanTu(
+
+    cauTrucThucThiTuanTuSS030.onAddDonViThucThiTuanTu(
       onThucThiTuanTu: () async {
         await getNhiemVuChienDauChonChiDinh?.getMoHinh?.getKichBanChienDau?.onInitRoot();
       },
     );
-    cauTrucThucThiTuanTu.onAddDonViThucThiTuanTu(
+
+    cauTrucThucThiTuanTuSS040.onAddDonViThucThiTuanTu(
       onThucThiTuanTu: () async {
         await getNhiemVuChienDauChonChiDinh?.getMoHinh?.getKichBanChienDau?.onTichHopThanhPhan();
       },
     );
-    cauTrucThucThiTuanTu.onAddDonViThucThiTuanTu(
+
+    cauTrucThucThiTuanTuSS050.onAddDonViThucThiTuanTu(
       onThucThiTuanTu: () async {
         await onTichHopTrangThaiPhuongTien();
       },
     );
 
-    cauTrucThucThiTuanTu.onThucThiTuanTu(interval: const Duration(milliseconds: 200));
+    cauTrucThucThiTuanTuSS010.onThucThiHoanTat = () async {
+      await cauTrucThucThiTuanTuSS020.onThucThiTuanTu();
+    };
+    cauTrucThucThiTuanTuSS020.onThucThiHoanTat = () async {
+      await cauTrucThucThiTuanTuSS030.onThucThiTuanTu();
+    };
+    cauTrucThucThiTuanTuSS030.onThucThiHoanTat = () async {
+      await cauTrucThucThiTuanTuSS040.onThucThiTuanTu();
+    };
+    cauTrucThucThiTuanTuSS040.onThucThiHoanTat = () async {
+      await cauTrucThucThiTuanTuSS050.onThucThiTuanTu();
+    };
 
-    // await getNhiemVuChienDauChonChiDinh?.getMoHinh?.getKichBanChienDau?.onSetupRoot();
-    // await getNhiemVuChienDauChonChiDinh?.getMoHinh?.getKichBanChienDau?.onAttachRoot(attachValue: trangThaiTongQuat);
-    // await getNhiemVuChienDauChonChiDinh?.getMoHinh?.getKichBanChienDau?.onInitRoot();
-    //
-    // await getNhiemVuChienDauChonChiDinh?.getMoHinh?.getKichBanChienDau?.onTichHopThanhPhan();
-    // await onTichHopTrangThaiPhuongTien();
-
-    // await onTaiTaiNguyenPhuongTien();
+    cauTrucThucThiTuanTuSS010.onThucThiTuanTu(interval: const Duration(milliseconds: 200));
 
     ///
     return;

@@ -24,8 +24,7 @@ abstract class MoHinhKichBanBayTheoDoiHinhKhoiTongQuat {
   ///
   double? _bienDoPhuongTienSs1CachViTriXuatPhat;
   double? get getPhuongTienSs1CachViTriXuatPhat => _bienDoPhuongTienSs1CachViTriXuatPhat;
-  double get getPhuongTienSs1CachViTriXuatPhatNotNull =>
-      (_bienDoPhuongTienSs1CachViTriXuatPhat ?? 0) + (bienDoCoBan + getBienDoDoiHinhCachViTriXuatPhatNotNull);
+  double get getPhuongTienSs1CachViTriXuatPhatNotNull => (_bienDoPhuongTienSs1CachViTriXuatPhat ?? 0) + (bienDoCoBan + getBienDoDoiHinhCachViTriXuatPhatNotNull);
   Future<void> caiDatBienDoPhuongTienSs1CachViTriXuatPhat({required double? value}) async {
     _bienDoPhuongTienSs1CachViTriXuatPhat = value;
     return;
@@ -33,8 +32,7 @@ abstract class MoHinhKichBanBayTheoDoiHinhKhoiTongQuat {
 
   double? _bienDoPhuongTienSs2CachViTriXuatPhat;
   double? get getPhuongTienSs2CachViTriXuatPhat => _bienDoPhuongTienSs2CachViTriXuatPhat;
-  double get getPhuongTienSs2CachViTriXuatPhatNotNull =>
-      (_bienDoPhuongTienSs2CachViTriXuatPhat ?? 0) + (bienDoCoBan + getBienDoDoiHinhCachViTriXuatPhatNotNull);
+  double get getPhuongTienSs2CachViTriXuatPhatNotNull => (_bienDoPhuongTienSs2CachViTriXuatPhat ?? 0) + (bienDoCoBan + getBienDoDoiHinhCachViTriXuatPhatNotNull);
   Future<void> caiDatBienDoPhuongTienSs2CachViTriXuatPhat({required double? value}) async {
     _bienDoPhuongTienSs2CachViTriXuatPhat = value;
     return;
@@ -42,8 +40,7 @@ abstract class MoHinhKichBanBayTheoDoiHinhKhoiTongQuat {
 
   double? _bienDoPhuongTienSs3CachViTriXuatPhat;
   double? get getPhuongTienSs3CachViTriXuatPhat => _bienDoPhuongTienSs3CachViTriXuatPhat;
-  double get getPhuongTienSs3CachViTriXuatPhatNotNull =>
-      (_bienDoPhuongTienSs3CachViTriXuatPhat ?? 0) + (bienDoCoBan + getBienDoDoiHinhCachViTriXuatPhatNotNull);
+  double get getPhuongTienSs3CachViTriXuatPhatNotNull => (_bienDoPhuongTienSs3CachViTriXuatPhat ?? 0) + (bienDoCoBan + getBienDoDoiHinhCachViTriXuatPhatNotNull);
   Future<void> caiDatBienDoPhuongTienSs3CachViTriXuatPhat({required double? value}) async {
     _bienDoPhuongTienSs3CachViTriXuatPhat = value;
     return;
@@ -51,8 +48,7 @@ abstract class MoHinhKichBanBayTheoDoiHinhKhoiTongQuat {
 
   double? _bienDoPhuongTienSs4CachViTriXuatPhat;
   double? get getPhuongTienSs4CachViTriXuatPhat => _bienDoPhuongTienSs4CachViTriXuatPhat;
-  double get getPhuongTienSs4CachViTriXuatPhatNotNull =>
-      (_bienDoPhuongTienSs4CachViTriXuatPhat ?? 0) + (bienDoCoBan + getBienDoDoiHinhCachViTriXuatPhatNotNull);
+  double get getPhuongTienSs4CachViTriXuatPhatNotNull => (_bienDoPhuongTienSs4CachViTriXuatPhat ?? 0) + (bienDoCoBan + getBienDoDoiHinhCachViTriXuatPhatNotNull);
   Future<void> caiDatBienDoPhuongTienSs4CachViTriXuatPhat({required double? value}) async {
     _bienDoPhuongTienSs4CachViTriXuatPhat = value;
     return;
@@ -60,8 +56,7 @@ abstract class MoHinhKichBanBayTheoDoiHinhKhoiTongQuat {
 
   double? _bienDoPhuongTienSs5CachViTriXuatPhat;
   double? get getPhuongTienSs5CachViTriXuatPhat => _bienDoPhuongTienSs5CachViTriXuatPhat;
-  double get getPhuongTienSs5CachViTriXuatPhatNotNull =>
-      (_bienDoPhuongTienSs5CachViTriXuatPhat ?? 0) + (bienDoCoBan + getBienDoDoiHinhCachViTriXuatPhatNotNull);
+  double get getPhuongTienSs5CachViTriXuatPhatNotNull => (_bienDoPhuongTienSs5CachViTriXuatPhat ?? 0) + (bienDoCoBan + getBienDoDoiHinhCachViTriXuatPhatNotNull);
   Future<void> caiDatBienDoPhuongTienSs5CachViTriXuatPhat({required double? value}) async {
     _bienDoPhuongTienSs5CachViTriXuatPhat = value;
     return;
@@ -69,8 +64,7 @@ abstract class MoHinhKichBanBayTheoDoiHinhKhoiTongQuat {
 
   double? _bienDoPhuongTienSs6CachViTriXuatPhat;
   double? get getPhuongTienSs6CachViTriXuatPhat => _bienDoPhuongTienSs6CachViTriXuatPhat;
-  double get getPhuongTienSs6CachViTriXuatPhatNotNull =>
-      (_bienDoPhuongTienSs6CachViTriXuatPhat ?? 0) + (bienDoCoBan + getBienDoDoiHinhCachViTriXuatPhatNotNull);
+  double get getPhuongTienSs6CachViTriXuatPhatNotNull => (_bienDoPhuongTienSs6CachViTriXuatPhat ?? 0) + (bienDoCoBan + getBienDoDoiHinhCachViTriXuatPhatNotNull);
   Future<void> caiDatBienDoPhuongTienSs6CachViTriXuatPhat({required double? value}) async {
     _bienDoPhuongTienSs6CachViTriXuatPhat = value;
     return;
@@ -78,8 +72,7 @@ abstract class MoHinhKichBanBayTheoDoiHinhKhoiTongQuat {
 
   double? _bienDoPhuongTienSs7CachViTriXuatPhat;
   double? get getPhuongTienSs7CachViTriXuatPhat => _bienDoPhuongTienSs7CachViTriXuatPhat;
-  double get getPhuongTienSs7CachViTriXuatPhatNotNull =>
-      (_bienDoPhuongTienSs7CachViTriXuatPhat ?? 0) + (bienDoCoBan + getBienDoDoiHinhCachViTriXuatPhatNotNull);
+  double get getPhuongTienSs7CachViTriXuatPhatNotNull => (_bienDoPhuongTienSs7CachViTriXuatPhat ?? 0) + (bienDoCoBan + getBienDoDoiHinhCachViTriXuatPhatNotNull);
   Future<void> caiDatBienDoPhuongTienSs7CachViTriXuatPhat({required double? value}) async {
     _bienDoPhuongTienSs7CachViTriXuatPhat = value;
     return;
@@ -87,8 +80,7 @@ abstract class MoHinhKichBanBayTheoDoiHinhKhoiTongQuat {
 
   double? _bienDoPhuongTienSs8CachViTriXuatPhat;
   double? get getPhuongTienSs8CachViTriXuatPhat => _bienDoPhuongTienSs8CachViTriXuatPhat;
-  double get getPhuongTienSs8CachViTriXuatPhatNotNull =>
-      (_bienDoPhuongTienSs8CachViTriXuatPhat ?? 0) + (bienDoCoBan + getBienDoDoiHinhCachViTriXuatPhatNotNull);
+  double get getPhuongTienSs8CachViTriXuatPhatNotNull => (_bienDoPhuongTienSs8CachViTriXuatPhat ?? 0) + (bienDoCoBan + getBienDoDoiHinhCachViTriXuatPhatNotNull);
   Future<void> caiDatBienDoPhuongTienSs8CachViTriXuatPhat({required double? value}) async {
     _bienDoPhuongTienSs8CachViTriXuatPhat = value;
     return;
@@ -96,8 +88,7 @@ abstract class MoHinhKichBanBayTheoDoiHinhKhoiTongQuat {
 
   double? _bienDoPhuongTienSs9CachViTriXuatPhat;
   double? get getPhuongTienSs9CachViTriXuatPhat => _bienDoPhuongTienSs9CachViTriXuatPhat;
-  double get getPhuongTienSs9CachViTriXuatPhatNotNull =>
-      (_bienDoPhuongTienSs9CachViTriXuatPhat ?? 0) + (bienDoCoBan + getBienDoDoiHinhCachViTriXuatPhatNotNull);
+  double get getPhuongTienSs9CachViTriXuatPhatNotNull => (_bienDoPhuongTienSs9CachViTriXuatPhat ?? 0) + (bienDoCoBan + getBienDoDoiHinhCachViTriXuatPhatNotNull);
   Future<void> caiDatBienDoPhuongTienSs9CachViTriXuatPhat({required double? value}) async {
     _bienDoPhuongTienSs9CachViTriXuatPhat = value;
     return;
@@ -268,90 +259,63 @@ abstract class MoHinhKichBanBayTheoDoiHinhKhoiTongQuat {
     /// TODO: Phương tiện Ss1
     ///
     if (getPhuongTienSs1 != null) {
-      await onProcess(
-        phuongTien: getPhuongTienSs1,
-        phuongTienCachViTriXuatPhat: (getBienDoDoiHinhCachViTriXuatPhat ?? 0) + (getPhuongTienSs1CachViTriXuatPhat ?? 0),
-      );
+      await onProcess(phuongTien: getPhuongTienSs1, phuongTienCachViTriXuatPhat: (getBienDoDoiHinhCachViTriXuatPhat ?? 0) + (getPhuongTienSs1CachViTriXuatPhat ?? 0));
     }
 
     ///
     /// TODO: Phương tiện Ss2
     ///
     if (getPhuongTienSs2 != null) {
-      await onProcess(
-        phuongTien: getPhuongTienSs2,
-        phuongTienCachViTriXuatPhat: (getBienDoDoiHinhCachViTriXuatPhat ?? 0) + (getPhuongTienSs2CachViTriXuatPhat ?? 0),
-      );
+      await onProcess(phuongTien: getPhuongTienSs2, phuongTienCachViTriXuatPhat: (getBienDoDoiHinhCachViTriXuatPhat ?? 0) + (getPhuongTienSs2CachViTriXuatPhat ?? 0));
     }
 
     ///
     /// TODO: Phương tiện Ss3
     ///
     if (getPhuongTienSs3 != null) {
-      await onProcess(
-        phuongTien: getPhuongTienSs3,
-        phuongTienCachViTriXuatPhat: (getBienDoDoiHinhCachViTriXuatPhat ?? 0) + (getPhuongTienSs3CachViTriXuatPhat ?? 0),
-      );
+      await onProcess(phuongTien: getPhuongTienSs3, phuongTienCachViTriXuatPhat: (getBienDoDoiHinhCachViTriXuatPhat ?? 0) + (getPhuongTienSs3CachViTriXuatPhat ?? 0));
     }
 
     ///
     /// TODO: Phương tiện Ss4
     ///
     if (getPhuongTienSs4 != null) {
-      await onProcess(
-        phuongTien: getPhuongTienSs4,
-        phuongTienCachViTriXuatPhat: (getBienDoDoiHinhCachViTriXuatPhat ?? 0) + (getPhuongTienSs4CachViTriXuatPhat ?? 0),
-      );
+      await onProcess(phuongTien: getPhuongTienSs4, phuongTienCachViTriXuatPhat: (getBienDoDoiHinhCachViTriXuatPhat ?? 0) + (getPhuongTienSs4CachViTriXuatPhat ?? 0));
     }
 
     ///
     /// TODO: Phương tiện Ss5
     ///
     if (getPhuongTienSs5 != null) {
-      await onProcess(
-        phuongTien: getPhuongTienSs5,
-        phuongTienCachViTriXuatPhat: (getBienDoDoiHinhCachViTriXuatPhat ?? 0) + (getPhuongTienSs5CachViTriXuatPhat ?? 0),
-      );
+      await onProcess(phuongTien: getPhuongTienSs5, phuongTienCachViTriXuatPhat: (getBienDoDoiHinhCachViTriXuatPhat ?? 0) + (getPhuongTienSs5CachViTriXuatPhat ?? 0));
     }
 
     ///
     /// TODO: Phương tiện Ss6
     ///
     if (getPhuongTienSs6 != null) {
-      await onProcess(
-        phuongTien: getPhuongTienSs6,
-        phuongTienCachViTriXuatPhat: (getBienDoDoiHinhCachViTriXuatPhat ?? 0) + (getPhuongTienSs6CachViTriXuatPhat ?? 0),
-      );
+      await onProcess(phuongTien: getPhuongTienSs6, phuongTienCachViTriXuatPhat: (getBienDoDoiHinhCachViTriXuatPhat ?? 0) + (getPhuongTienSs6CachViTriXuatPhat ?? 0));
     }
 
     ///
     /// TODO: Phương tiện Ss7
     ///
     if (getPhuongTienSs7 != null) {
-      await onProcess(
-        phuongTien: getPhuongTienSs7,
-        phuongTienCachViTriXuatPhat: (getBienDoDoiHinhCachViTriXuatPhat ?? 0) + (getPhuongTienSs7CachViTriXuatPhat ?? 0),
-      );
+      await onProcess(phuongTien: getPhuongTienSs7, phuongTienCachViTriXuatPhat: (getBienDoDoiHinhCachViTriXuatPhat ?? 0) + (getPhuongTienSs7CachViTriXuatPhat ?? 0));
     }
 
     ///
     /// TODO: Phương tiện Ss8
     ///
     if (getPhuongTienSs8 != null) {
-      await onProcess(
-        phuongTien: getPhuongTienSs8,
-        phuongTienCachViTriXuatPhat: (getBienDoDoiHinhCachViTriXuatPhat ?? 0) + (getPhuongTienSs8CachViTriXuatPhat ?? 0),
-      );
+      await onProcess(phuongTien: getPhuongTienSs8, phuongTienCachViTriXuatPhat: (getBienDoDoiHinhCachViTriXuatPhat ?? 0) + (getPhuongTienSs8CachViTriXuatPhat ?? 0));
     }
 
     ///
     /// TODO: Phương tiện Ss9
     ///
     if (getPhuongTienSs9 != null) {
-      await onProcess(
-        phuongTien: getPhuongTienSs9,
-        phuongTienCachViTriXuatPhat: (getBienDoDoiHinhCachViTriXuatPhat ?? 0) + (getPhuongTienSs9CachViTriXuatPhat ?? 0),
-      );
+      await onProcess(phuongTien: getPhuongTienSs9, phuongTienCachViTriXuatPhat: (getBienDoDoiHinhCachViTriXuatPhat ?? 0) + (getPhuongTienSs9CachViTriXuatPhat ?? 0));
     }
 
     await truyXuatDanhSachPhuongTienThuocKichBan();

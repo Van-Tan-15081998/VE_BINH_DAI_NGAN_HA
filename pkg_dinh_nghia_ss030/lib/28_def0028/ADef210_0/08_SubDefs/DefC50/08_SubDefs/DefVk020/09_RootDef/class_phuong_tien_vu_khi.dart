@@ -47,7 +47,7 @@ class PHUONGTIENVUKHICLASS50CSS010VKSS020 extends MOHINHPHUONGTIENVUKHITHIENTHAC
     /// -----
     /// TODO: Cài Đặt Thuộc Tính Sprite
     /// -----
-    await onInitThuocTinhSprite();
+    // await onInitThuocTinhSprite();
 
     /// -----
     /// TODO: Cài Đặt Phương Thức Bay

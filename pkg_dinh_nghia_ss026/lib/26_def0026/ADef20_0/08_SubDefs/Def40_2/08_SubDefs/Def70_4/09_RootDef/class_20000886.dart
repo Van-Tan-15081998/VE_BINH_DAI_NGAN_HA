@@ -40,13 +40,15 @@ class GIAIDOANSATTHUTANCONGSS070 extends GIAIDOANCHIENDAUCOBAN {
   /// -----
   @override
   Future<void> onSetupRoot() async {
-    /// -----
-    /// TODO:
-    /// -----
-    await caiDatDanhSachHoatDongChienDauXamChiemNhomSS00A(value: DANHSACHHOATDONGCHIENDAUXAMCHIEMNHOMSS00ATHUOCGIAIDOANCOBAN(), caiDatUuTien: true);
-    await caiDatDanhSachHoatDongChienDauXamChiemNhomSS00B(value: DANHSACHHOATDONGCHIENDAUXAMCHIEMNHOMSS00BTHUOCGIAIDOANCOBAN(), caiDatUuTien: true);
-    await caiDatDanhSachHoatDongChienDauXamChiemNhomSS00C(value: DANHSACHHOATDONGCHIENDAUXAMCHIEMNHOMSS00CTHUOCGIAIDOANCOBAN(), caiDatUuTien: true);
-    await caiDatDanhSachHoatDongChienDauXamChiemNhomSS00D(value: DANHSACHHOATDONGCHIENDAUXAMCHIEMNHOMSS00DTHUOCGIAIDOANCOBAN(), caiDatUuTien: true);
+    await Future.wait([
+      /// -----
+      /// TODO:
+      /// -----
+      caiDatDanhSachHoatDongChienDauXamChiemNhomSS00A(value: DANHSACHHOATDONGCHIENDAUXAMCHIEMNHOMSS00ATHUOCGIAIDOANCOBAN(), caiDatUuTien: true).catchError((e) => null),
+      caiDatDanhSachHoatDongChienDauXamChiemNhomSS00B(value: DANHSACHHOATDONGCHIENDAUXAMCHIEMNHOMSS00BTHUOCGIAIDOANCOBAN(), caiDatUuTien: true).catchError((e) => null),
+      caiDatDanhSachHoatDongChienDauXamChiemNhomSS00C(value: DANHSACHHOATDONGCHIENDAUXAMCHIEMNHOMSS00CTHUOCGIAIDOANCOBAN(), caiDatUuTien: true).catchError((e) => null),
+      caiDatDanhSachHoatDongChienDauXamChiemNhomSS00D(value: DANHSACHHOATDONGCHIENDAUXAMCHIEMNHOMSS00DTHUOCGIAIDOANCOBAN(), caiDatUuTien: true).catchError((e) => null),
+    ]);
 
     /// -----
     /// TODO: Setup Root For SubCom
@@ -76,13 +78,15 @@ class GIAIDOANSATTHUTANCONGSS070 extends GIAIDOANCHIENDAUCOBAN {
   /// -----
   @override
   Future<void> onAttachRootForSubCom({required dynamic attachValue}) async {
-    /// -----
-    /// TODO:
-    /// -----
-    await getDanhSachHoatDongChienDauXamChiemNhomSS00A?.onAttachRoot(attachValue: attachValue);
-    await getDanhSachHoatDongChienDauXamChiemNhomSS00B?.onAttachRoot(attachValue: attachValue);
-    await getDanhSachHoatDongChienDauXamChiemNhomSS00C?.onAttachRoot(attachValue: attachValue);
-    await getDanhSachHoatDongChienDauXamChiemNhomSS00D?.onAttachRoot(attachValue: attachValue);
+    await Future.wait([
+      /// -----
+      /// TODO:
+      /// -----
+      getDanhSachHoatDongChienDauXamChiemNhomSS00A?.onAttachRoot(attachValue: attachValue).catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getDanhSachHoatDongChienDauXamChiemNhomSS00B?.onAttachRoot(attachValue: attachValue).catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getDanhSachHoatDongChienDauXamChiemNhomSS00C?.onAttachRoot(attachValue: attachValue).catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getDanhSachHoatDongChienDauXamChiemNhomSS00D?.onAttachRoot(attachValue: attachValue).catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+    ]);
 
     ///
     return;
@@ -93,13 +97,15 @@ class GIAIDOANSATTHUTANCONGSS070 extends GIAIDOANCHIENDAUCOBAN {
   /// -----
   @override
   Future<void> onSetupRootForSubCom() async {
-    /// -----
-    /// TODO:
-    /// -----
-    await getDanhSachHoatDongChienDauXamChiemNhomSS00A?.onSetupRoot();
-    await getDanhSachHoatDongChienDauXamChiemNhomSS00B?.onSetupRoot();
-    await getDanhSachHoatDongChienDauXamChiemNhomSS00C?.onSetupRoot();
-    await getDanhSachHoatDongChienDauXamChiemNhomSS00D?.onSetupRoot();
+    await Future.wait([
+      /// -----
+      /// TODO:
+      /// -----
+      getDanhSachHoatDongChienDauXamChiemNhomSS00A?.onSetupRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getDanhSachHoatDongChienDauXamChiemNhomSS00B?.onSetupRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getDanhSachHoatDongChienDauXamChiemNhomSS00C?.onSetupRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getDanhSachHoatDongChienDauXamChiemNhomSS00D?.onSetupRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+    ]);
 
     ///
     return;
@@ -110,13 +116,15 @@ class GIAIDOANSATTHUTANCONGSS070 extends GIAIDOANCHIENDAUCOBAN {
   /// -----
   @override
   Future<void> onInitRootForSubCom() async {
-    /// -----
-    /// TODO:
-    /// -----
-    await getDanhSachHoatDongChienDauXamChiemNhomSS00A?.onInitRoot();
-    await getDanhSachHoatDongChienDauXamChiemNhomSS00B?.onInitRoot();
-    await getDanhSachHoatDongChienDauXamChiemNhomSS00C?.onInitRoot();
-    await getDanhSachHoatDongChienDauXamChiemNhomSS00D?.onInitRoot();
+    await Future.wait([
+      /// -----
+      /// TODO:
+      /// -----
+      getDanhSachHoatDongChienDauXamChiemNhomSS00A?.onInitRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getDanhSachHoatDongChienDauXamChiemNhomSS00B?.onInitRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getDanhSachHoatDongChienDauXamChiemNhomSS00C?.onInitRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getDanhSachHoatDongChienDauXamChiemNhomSS00D?.onInitRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+    ]);
 
     ///
     return;

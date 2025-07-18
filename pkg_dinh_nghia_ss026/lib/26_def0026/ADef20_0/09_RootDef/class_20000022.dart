@@ -52,21 +52,23 @@ class KICHBANCHIENDAUTHEODOIHINHTHUOCGIAIDOANCOBAN with CauTrucThucThiCoBan, Dan
   /// -----
   @override
   Future<void> onSetupRoot() async {
-    /// -----
-    /// TODO:
-    /// -----
-    await caiDatDoiHinhDSTP(value: DOIHINHDAUSYTIENPHONGCOBAN(), caiDatUuTien: false);
-    await caiDatDoiHinhTTTS(value: DOIHINHTUANTRATRINHSATCOBAN(), caiDatUuTien: false);
-    await caiDatDoiHinhSTTC(value: DOIHINHSATTHUTANCONGCOBAN(), caiDatUuTien: false);
-    await caiDatDoiHinhQDCV(value: DOIHINHQUANDOANCANVECOBAN(), caiDatUuTien: false);
-    await caiDatDoiHinhSCCH(value: DOIHINHSIEUCAPCHIHUYCOBAN(), caiDatUuTien: false);
-    await caiDatDoiHinhTSTC(value: DOIHINHTHONGSOAITOICAOCOBAN(), caiDatUuTien: false);
-    await caiDatDoiHinhVKTD(value: DOIHINHVUKHITUDONGCOBAN(), caiDatUuTien: false);
-    await caiDatDoiHinhVKDK(value: DOIHINHVUKHIDIEUKHIENCOBAN(), caiDatUuTien: false);
-    await caiDatDoiHinhVKNN(value: DOIHINHVUKHINGAUNHIENCOBAN(), caiDatUuTien: false);
+    await Future.wait([
+      /// -----
+      /// TODO:
+      /// -----
+      caiDatDoiHinhDSTP(value: DOIHINHDAUSYTIENPHONGCOBAN(), caiDatUuTien: false).catchError((e) => null),
+      caiDatDoiHinhTTTS(value: DOIHINHTUANTRATRINHSATCOBAN(), caiDatUuTien: false).catchError((e) => null),
+      caiDatDoiHinhSTTC(value: DOIHINHSATTHUTANCONGCOBAN(), caiDatUuTien: false).catchError((e) => null),
+      caiDatDoiHinhQDCV(value: DOIHINHQUANDOANCANVECOBAN(), caiDatUuTien: false).catchError((e) => null),
+      caiDatDoiHinhSCCH(value: DOIHINHSIEUCAPCHIHUYCOBAN(), caiDatUuTien: false).catchError((e) => null),
+      caiDatDoiHinhTSTC(value: DOIHINHTHONGSOAITOICAOCOBAN(), caiDatUuTien: false).catchError((e) => null),
+      caiDatDoiHinhVKTD(value: DOIHINHVUKHITUDONGCOBAN(), caiDatUuTien: false).catchError((e) => null),
+      caiDatDoiHinhVKDK(value: DOIHINHVUKHIDIEUKHIENCOBAN(), caiDatUuTien: false).catchError((e) => null),
+      caiDatDoiHinhVKNN(value: DOIHINHVUKHINGAUNHIENCOBAN(), caiDatUuTien: false).catchError((e) => null),
 
-    await caiDatDoiHinhVPTC(value: DOIHINHVATPHAMTANGCUONGCOBAN(), caiDatUuTien: false);
-    await caiDatDoiHinhVPPT(value: DOIHINHVATPHAMPHANTHUONGCOBAN(), caiDatUuTien: false);
+      caiDatDoiHinhVPTC(value: DOIHINHVATPHAMTANGCUONGCOBAN(), caiDatUuTien: false).catchError((e) => null),
+      caiDatDoiHinhVPPT(value: DOIHINHVATPHAMPHANTHUONGCOBAN(), caiDatUuTien: false).catchError((e) => null),
+    ]);
 
     /// -----
     /// TODO: Setup Root For SubCom
@@ -96,21 +98,23 @@ class KICHBANCHIENDAUTHEODOIHINHTHUOCGIAIDOANCOBAN with CauTrucThucThiCoBan, Dan
   /// -----
   @override
   Future<void> onAttachRootForSubCom({required dynamic attachValue}) async {
-    /// -----
-    /// TODO:
-    /// -----
-    await getDoiHinhDSTP?.onAttachRoot(attachValue: attachValue);
-    await getDoiHinhTTTS?.onAttachRoot(attachValue: attachValue);
-    await getDoiHinhSTTC?.onAttachRoot(attachValue: attachValue);
-    await getDoiHinhQDCV?.onAttachRoot(attachValue: attachValue);
-    await getDoiHinhSCCH?.onAttachRoot(attachValue: attachValue);
-    await getDoiHinhTSTC?.onAttachRoot(attachValue: attachValue);
-    await getDoiHinhVKTD?.onAttachRoot(attachValue: attachValue);
-    await getDoiHinhVKDK?.onAttachRoot(attachValue: attachValue);
-    await getDoiHinhVKNN?.onAttachRoot(attachValue: attachValue);
+    await Future.wait([
+      /// -----
+      /// TODO:
+      /// -----
+      getDoiHinhDSTP?.onAttachRoot(attachValue: attachValue).catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getDoiHinhTTTS?.onAttachRoot(attachValue: attachValue).catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getDoiHinhSTTC?.onAttachRoot(attachValue: attachValue).catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getDoiHinhQDCV?.onAttachRoot(attachValue: attachValue).catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getDoiHinhSCCH?.onAttachRoot(attachValue: attachValue).catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getDoiHinhTSTC?.onAttachRoot(attachValue: attachValue).catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getDoiHinhVKTD?.onAttachRoot(attachValue: attachValue).catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getDoiHinhVKDK?.onAttachRoot(attachValue: attachValue).catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getDoiHinhVKNN?.onAttachRoot(attachValue: attachValue).catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
 
-    await getDoiHinhVPTC?.onAttachRoot(attachValue: attachValue);
-    await getDoiHinhVPPT?.onAttachRoot(attachValue: attachValue);
+      getDoiHinhVPTC?.onAttachRoot(attachValue: attachValue).catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getDoiHinhVPPT?.onAttachRoot(attachValue: attachValue).catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+    ]);
 
     ///
     return;
@@ -121,21 +125,23 @@ class KICHBANCHIENDAUTHEODOIHINHTHUOCGIAIDOANCOBAN with CauTrucThucThiCoBan, Dan
   /// -----
   @override
   Future<void> onSetupRootForSubCom() async {
-    /// -----
-    /// TODO:
-    /// -----
-    await getDoiHinhDSTP?.onSetupRoot();
-    await getDoiHinhTTTS?.onSetupRoot();
-    await getDoiHinhSTTC?.onSetupRoot();
-    await getDoiHinhQDCV?.onSetupRoot();
-    await getDoiHinhSCCH?.onSetupRoot();
-    await getDoiHinhTSTC?.onSetupRoot();
-    await getDoiHinhVKTD?.onSetupRoot();
-    await getDoiHinhVKDK?.onSetupRoot();
-    await getDoiHinhVKNN?.onSetupRoot();
+    await Future.wait([
+      /// -----
+      /// TODO:
+      /// -----
+      getDoiHinhDSTP?.onSetupRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getDoiHinhTTTS?.onSetupRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getDoiHinhSTTC?.onSetupRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getDoiHinhQDCV?.onSetupRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getDoiHinhSCCH?.onSetupRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getDoiHinhTSTC?.onSetupRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getDoiHinhVKTD?.onSetupRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getDoiHinhVKDK?.onSetupRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getDoiHinhVKNN?.onSetupRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
 
-    await getDoiHinhVPTC?.onSetupRoot();
-    await getDoiHinhVPPT?.onSetupRoot();
+      getDoiHinhVPTC?.onSetupRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getDoiHinhVPPT?.onSetupRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+    ]);
 
     ///
     return;
@@ -146,21 +152,23 @@ class KICHBANCHIENDAUTHEODOIHINHTHUOCGIAIDOANCOBAN with CauTrucThucThiCoBan, Dan
   /// -----
   @override
   Future<void> onInitRootForSubCom() async {
-    /// -----
-    /// TODO:
-    /// -----
-    await getDoiHinhDSTP?.onInitRoot();
-    await getDoiHinhTTTS?.onInitRoot();
-    await getDoiHinhSTTC?.onInitRoot();
-    await getDoiHinhQDCV?.onInitRoot();
-    await getDoiHinhSCCH?.onInitRoot();
-    await getDoiHinhTSTC?.onInitRoot();
-    await getDoiHinhVKTD?.onInitRoot();
-    await getDoiHinhVKDK?.onInitRoot();
-    await getDoiHinhVKNN?.onInitRoot();
+    await Future.wait([
+      /// -----
+      /// TODO:
+      /// -----
+      getDoiHinhDSTP?.onInitRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getDoiHinhTTTS?.onInitRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getDoiHinhSTTC?.onInitRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getDoiHinhQDCV?.onInitRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getDoiHinhSCCH?.onInitRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getDoiHinhTSTC?.onInitRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getDoiHinhVKTD?.onInitRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getDoiHinhVKDK?.onInitRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getDoiHinhVKNN?.onInitRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
 
-    await getDoiHinhVPTC?.onInitRoot();
-    await getDoiHinhVPPT?.onInitRoot();
+      getDoiHinhVPTC?.onInitRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getDoiHinhVPPT?.onInitRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+    ]);
 
     ///
     return;

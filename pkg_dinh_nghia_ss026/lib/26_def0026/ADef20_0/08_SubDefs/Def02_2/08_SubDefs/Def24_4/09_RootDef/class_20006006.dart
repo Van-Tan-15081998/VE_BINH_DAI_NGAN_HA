@@ -1,12 +1,15 @@
+import 'package:pkg_dinh_nghia_ss020/pkg_dinh_nghia_ss020_exp.dart';
+import 'package:pkg_dinh_nghia_ss050/pkg_dinh_nghia_ss050_exp.dart';
 import 'package:pkg_dinh_nghia_ss030030/pkg_dinh_nghia_ss030030_exp.dart';
 
 /// -----
 /// TODO: Danh Sách Hoạt Động Chiến Đấu Xâm Chiếm Thuộc Giai Đoạn Cơ Bản
 /// -----
-class DANHSACHHOATDONGCHIENDAUXAMCHIEMTHUOCGIAIDOANCOBAN {
+class DANHSACHHOATDONGCHIENDAUXAMCHIEMTHUOCGIAIDOANCOBAN with CauTrucThucThiCoBan {
   /// -----
   /// TODO: Attach Root
   /// -----
+  @override
   Future<void> onAttachRoot({required dynamic attachValue}) async {
     /// -----
     /// TODO: Attach Root For SubCom
@@ -19,6 +22,7 @@ class DANHSACHHOATDONGCHIENDAUXAMCHIEMTHUOCGIAIDOANCOBAN {
   /// -----
   /// TODO: Init Root
   /// -----
+  @override
   Future<void> onInitRoot() async {
     ///
     /// TODO: Init Thuộc Tính Cục Bộ Đơn Giản
@@ -36,20 +40,23 @@ class DANHSACHHOATDONGCHIENDAUXAMCHIEMTHUOCGIAIDOANCOBAN {
   /// -----
   /// TODO: Setup Root
   /// -----
+  @override
   Future<void> onSetupRoot() async {
-    /// -----
-    /// TODO:
-    /// -----
-    await caiDatHoatDongChienDauXamChiemSS020(value: HOATDONGCHIENDAUXAMCHIEMTHUOCGIAIDOANKICHBANCOBAN(), caiDatUuTien: true);
-    await caiDatHoatDongChienDauXamChiemSS022(value: HOATDONGCHIENDAUXAMCHIEMTHUOCGIAIDOANKICHBANCOBAN(), caiDatUuTien: true);
-    await caiDatHoatDongChienDauXamChiemSS024(value: HOATDONGCHIENDAUXAMCHIEMTHUOCGIAIDOANKICHBANCOBAN(), caiDatUuTien: true);
-    await caiDatHoatDongChienDauXamChiemSS026(value: HOATDONGCHIENDAUXAMCHIEMTHUOCGIAIDOANKICHBANCOBAN(), caiDatUuTien: true);
-    await caiDatHoatDongChienDauXamChiemSS028(value: HOATDONGCHIENDAUXAMCHIEMTHUOCGIAIDOANKICHBANCOBAN(), caiDatUuTien: true);
-    await caiDatHoatDongChienDauXamChiemSS030(value: HOATDONGCHIENDAUXAMCHIEMTHUOCGIAIDOANKICHBANCOBAN(), caiDatUuTien: true);
-    await caiDatHoatDongChienDauXamChiemSS032(value: HOATDONGCHIENDAUXAMCHIEMTHUOCGIAIDOANKICHBANCOBAN(), caiDatUuTien: true);
-    await caiDatHoatDongChienDauXamChiemSS034(value: HOATDONGCHIENDAUXAMCHIEMTHUOCGIAIDOANKICHBANCOBAN(), caiDatUuTien: true);
-    await caiDatHoatDongChienDauXamChiemSS036(value: HOATDONGCHIENDAUXAMCHIEMTHUOCGIAIDOANKICHBANCOBAN(), caiDatUuTien: true);
-    await caiDatHoatDongChienDauXamChiemSS038(value: HOATDONGCHIENDAUXAMCHIEMTHUOCGIAIDOANKICHBANCOBAN(), caiDatUuTien: true);
+    await Future.wait([
+      /// -----
+      /// TODO:
+      /// -----
+      caiDatHoatDongChienDauXamChiemSS020(value: HOATDONGCHIENDAUXAMCHIEMTHUOCGIAIDOANKICHBANCOBAN(), caiDatUuTien: true).catchError((e) => null),
+      caiDatHoatDongChienDauXamChiemSS022(value: HOATDONGCHIENDAUXAMCHIEMTHUOCGIAIDOANKICHBANCOBAN(), caiDatUuTien: true).catchError((e) => null),
+      caiDatHoatDongChienDauXamChiemSS024(value: HOATDONGCHIENDAUXAMCHIEMTHUOCGIAIDOANKICHBANCOBAN(), caiDatUuTien: true).catchError((e) => null),
+      caiDatHoatDongChienDauXamChiemSS026(value: HOATDONGCHIENDAUXAMCHIEMTHUOCGIAIDOANKICHBANCOBAN(), caiDatUuTien: true).catchError((e) => null),
+      caiDatHoatDongChienDauXamChiemSS028(value: HOATDONGCHIENDAUXAMCHIEMTHUOCGIAIDOANKICHBANCOBAN(), caiDatUuTien: true).catchError((e) => null),
+      caiDatHoatDongChienDauXamChiemSS030(value: HOATDONGCHIENDAUXAMCHIEMTHUOCGIAIDOANKICHBANCOBAN(), caiDatUuTien: true).catchError((e) => null),
+      caiDatHoatDongChienDauXamChiemSS032(value: HOATDONGCHIENDAUXAMCHIEMTHUOCGIAIDOANKICHBANCOBAN(), caiDatUuTien: true).catchError((e) => null),
+      caiDatHoatDongChienDauXamChiemSS034(value: HOATDONGCHIENDAUXAMCHIEMTHUOCGIAIDOANKICHBANCOBAN(), caiDatUuTien: true).catchError((e) => null),
+      caiDatHoatDongChienDauXamChiemSS036(value: HOATDONGCHIENDAUXAMCHIEMTHUOCGIAIDOANKICHBANCOBAN(), caiDatUuTien: true).catchError((e) => null),
+      caiDatHoatDongChienDauXamChiemSS038(value: HOATDONGCHIENDAUXAMCHIEMTHUOCGIAIDOANKICHBANCOBAN(), caiDatUuTien: true).catchError((e) => null),
+    ]);
 
     /// -----
     /// TODO: Setup Root For SubCom
@@ -63,6 +70,7 @@ class DANHSACHHOATDONGCHIENDAUXAMCHIEMTHUOCGIAIDOANCOBAN {
   /// -----
   /// TODO: Reset Root
   /// -----
+  @override
   Future<void> onResetRoot() async {
     /// -----
     /// TODO: Init Root For SubCom
@@ -76,6 +84,7 @@ class DANHSACHHOATDONGCHIENDAUXAMCHIEMTHUOCGIAIDOANCOBAN {
   /// -----
   /// TODO: Attach Root For SubCom
   /// -----
+  @override
   Future<void> onAttachRootForSubCom({required dynamic attachValue}) async {
     ///
     return;
@@ -84,20 +93,23 @@ class DANHSACHHOATDONGCHIENDAUXAMCHIEMTHUOCGIAIDOANCOBAN {
   /// -----
   /// TODO: Setup Root For SubCom
   /// -----
+  @override
   Future<void> onSetupRootForSubCom() async {
-    /// -----
-    /// TODO:
-    /// -----
-    await getHoatDongChienDauXamChiemSS020?.onSetupRoot();
-    await getHoatDongChienDauXamChiemSS022?.onSetupRoot();
-    await getHoatDongChienDauXamChiemSS024?.onSetupRoot();
-    await getHoatDongChienDauXamChiemSS026?.onSetupRoot();
-    await getHoatDongChienDauXamChiemSS028?.onSetupRoot();
-    await getHoatDongChienDauXamChiemSS030?.onSetupRoot();
-    await getHoatDongChienDauXamChiemSS032?.onSetupRoot();
-    await getHoatDongChienDauXamChiemSS034?.onSetupRoot();
-    await getHoatDongChienDauXamChiemSS036?.onSetupRoot();
-    await getHoatDongChienDauXamChiemSS038?.onSetupRoot();
+    await Future.wait([
+      /// -----
+      /// TODO:
+      /// -----
+      getHoatDongChienDauXamChiemSS020?.onSetupRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getHoatDongChienDauXamChiemSS022?.onSetupRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getHoatDongChienDauXamChiemSS024?.onSetupRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getHoatDongChienDauXamChiemSS026?.onSetupRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getHoatDongChienDauXamChiemSS028?.onSetupRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getHoatDongChienDauXamChiemSS030?.onSetupRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getHoatDongChienDauXamChiemSS032?.onSetupRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getHoatDongChienDauXamChiemSS034?.onSetupRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getHoatDongChienDauXamChiemSS036?.onSetupRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getHoatDongChienDauXamChiemSS038?.onSetupRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+    ]);
 
     ///
     return;
@@ -106,20 +118,23 @@ class DANHSACHHOATDONGCHIENDAUXAMCHIEMTHUOCGIAIDOANCOBAN {
   /// -----
   /// TODO: Init Root For SubCom
   /// -----
+  @override
   Future<void> onInitRootForSubCom() async {
-    /// -----
-    /// TODO:
-    /// -----
-    await getHoatDongChienDauXamChiemSS020?.onInitRoot();
-    await getHoatDongChienDauXamChiemSS022?.onInitRoot();
-    await getHoatDongChienDauXamChiemSS024?.onInitRoot();
-    await getHoatDongChienDauXamChiemSS026?.onInitRoot();
-    await getHoatDongChienDauXamChiemSS028?.onInitRoot();
-    await getHoatDongChienDauXamChiemSS030?.onInitRoot();
-    await getHoatDongChienDauXamChiemSS032?.onInitRoot();
-    await getHoatDongChienDauXamChiemSS034?.onInitRoot();
-    await getHoatDongChienDauXamChiemSS036?.onInitRoot();
-    await getHoatDongChienDauXamChiemSS038?.onInitRoot();
+    await Future.wait([
+      /// -----
+      /// TODO:
+      /// -----
+      getHoatDongChienDauXamChiemSS020?.onInitRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getHoatDongChienDauXamChiemSS022?.onInitRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getHoatDongChienDauXamChiemSS024?.onInitRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getHoatDongChienDauXamChiemSS026?.onInitRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getHoatDongChienDauXamChiemSS028?.onInitRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getHoatDongChienDauXamChiemSS030?.onInitRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getHoatDongChienDauXamChiemSS032?.onInitRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getHoatDongChienDauXamChiemSS034?.onInitRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getHoatDongChienDauXamChiemSS036?.onInitRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getHoatDongChienDauXamChiemSS038?.onInitRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+    ]);
 
     ///
     return;
@@ -128,6 +143,7 @@ class DANHSACHHOATDONGCHIENDAUXAMCHIEMTHUOCGIAIDOANCOBAN {
   /// -----
   /// TODO: Reset Root For SubCom
   /// -----
+  @override
   Future<void> onResetRootForSubCom() async {
     ///
     return;

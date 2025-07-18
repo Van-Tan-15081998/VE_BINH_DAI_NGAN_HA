@@ -59,29 +59,22 @@ class GAMEUIKHUNGTHONGTINTAINGUYENNGOCTRAODOI extends CoreGameUIComponent {
     final String nguonSpriteDongKhoi = 'packages/pkg_dinh_nghia_ss022/lib/28_def0028/ADef040_0/08_SubDefs/Def310_2';
 
     /// TODO: Resized 25
-    final String nguonSpriteRS025PartSS001 = '07_Resized/Def25/sps_rs025_part_ss001.png';
-    final String nguonSpriteRS025PartSS002 = '07_Resized/Def25/sps_rs025_part_ss002.png';
-    final String nguonSpriteRS025PartSS003 = '07_Resized/Def25/sps_rs025_part_ss003.png';
-    final String nguonSpriteRS025PartSS004 = '07_Resized/Def25/sps_rs025_part_ss004.png';
-    final String nguonSpriteRS025PartSS005 = '07_Resized/Def25/sps_rs025_part_ss005.png';
-    final String nguonSpriteRS025PartSS006 = '07_Resized/Def25/sps_rs025_part_ss006.png';
+    final String nguonSpriteRS025PartSS001 = '07_Resized/Def25/sps_rs025_part_ss001.webp';
+    final String nguonSpriteRS025PartSS002 = '07_Resized/Def25/sps_rs025_part_ss002.webp';
+    final String nguonSpriteRS025PartSS003 = '07_Resized/Def25/sps_rs025_part_ss003.webp';
+    final String nguonSpriteRS025PartSS004 = '07_Resized/Def25/sps_rs025_part_ss004.webp';
+    final String nguonSpriteRS025PartSS005 = '07_Resized/Def25/sps_rs025_part_ss005.webp';
+    final String nguonSpriteRS025PartSS006 = '07_Resized/Def25/sps_rs025_part_ss006.webp';
 
     /// TODO: Resized 50
-    final String nguonSpriteRS050PartSS001 = '07_Resized/Def50/sps_rs050_part_ss001.png';
-    final String nguonSpriteRS050PartSS002 = '07_Resized/Def50/sps_rs050_part_ss002.png';
-    final String nguonSpriteRS050PartSS003 = '07_Resized/Def50/sps_rs050_part_ss003.png';
-    final String nguonSpriteRS050PartSS004 = '07_Resized/Def50/sps_rs050_part_ss004.png';
-    final String nguonSpriteRS050PartSS005 = '07_Resized/Def50/sps_rs050_part_ss005.png';
-    final String nguonSpriteRS050PartSS006 = '07_Resized/Def50/sps_rs050_part_ss006.png';
+    final String nguonSpriteRS050PartSS001 = '07_Resized/Def50/sps_rs050_part_ss001.webp';
+    final String nguonSpriteRS050PartSS002 = '07_Resized/Def50/sps_rs050_part_ss002.webp';
+    final String nguonSpriteRS050PartSS003 = '07_Resized/Def50/sps_rs050_part_ss003.webp';
+    final String nguonSpriteRS050PartSS004 = '07_Resized/Def50/sps_rs050_part_ss004.webp';
+    final String nguonSpriteRS050PartSS005 = '07_Resized/Def50/sps_rs050_part_ss005.webp';
+    final String nguonSpriteRS050PartSS006 = '07_Resized/Def50/sps_rs050_part_ss006.webp';
 
     /// TODO: Resized 100
-    // final String nguonSpriteRS100PartSS001 = '07_Resized/Def90/sps_rs100_part_ss001.png';
-    // final String nguonSpriteRS100PartSS002 = '07_Resized/Def90/sps_rs100_part_ss002.png';
-    // final String nguonSpriteRS100PartSS003 = '07_Resized/Def90/sps_rs100_part_ss003.png';
-    // final String nguonSpriteRS100PartSS004 = '07_Resized/Def90/sps_rs100_part_ss004.png';
-    // final String nguonSpriteRS100PartSS005 = '07_Resized/Def90/sps_rs100_part_ss005.png';
-    // final String nguonSpriteRS100PartSS006 = '07_Resized/Def90/sps_rs100_part_ss006.png';
-
     final String nguonSpriteRS100PartSS001 = '07_Resized/Def90/sps_rs100_part_ss001.webp';
     final String nguonSpriteRS100PartSS002 = '07_Resized/Def90/sps_rs100_part_ss002.webp';
     final String nguonSpriteRS100PartSS003 = '07_Resized/Def90/sps_rs100_part_ss003.webp';
@@ -245,7 +238,8 @@ class GAMEUIKHUNGTHONGTINTAINGUYENNGOCTRAODOI extends CoreGameUIComponent {
     /// TODO: -----|-----|-----|-----|-----|-----|-----|-----|-----|-----
     /// TODO: -----|-----|-----|-----|-----|-----|-----|-----|-----|-----
 
-    await getSpriteThanhPhanGameUI?.onToiUuHoaKichThuocRS100();
+        // await getSpriteThanhPhanGameUI?.onToiUuHoaKichThuocRS100();
+    await getSpriteThanhPhanGameUI?.onToiUuHoaKichThuocRS050();
 
     /// TODO: -----|-----|-----|-----|-----|-----|-----|-----|-----|-----
     /// TODO: -----|-----|-----|-----|-----|-----|-----|-----|-----|-----

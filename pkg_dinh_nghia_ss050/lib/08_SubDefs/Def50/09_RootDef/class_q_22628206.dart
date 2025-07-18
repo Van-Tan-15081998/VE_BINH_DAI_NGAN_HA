@@ -282,6 +282,8 @@ class QuanLyTrangThaiHangarChienDauCoTongQuat with KhungThucThiCoBan {
   /// TODO:
   /// -----
   Future<void> onTaiTaiNguyen({required String maDinhDanhTaiNguyen}) async {
+    return;
+
     await getTaiNguyenHangarChienDauCo?.onTaiTaiNguyen(
       chienDauCo: getChienDauCoDangCapSao00E03SS01,
       maDinhDanhTaiNguyen: '[TAI_NGUYEN_NGOAI_HINH_THAN]',
@@ -361,6 +363,8 @@ class QuanLyTrangThaiHangarChienDauCoTongQuat with KhungThucThiCoBan {
   /// TODO:
   /// -----
   Future<void> onTaiTaiNguyenTichHop() async {
+    return;
+
     await getTaiNguyenTichHopHangarChienDauCo?.onTaiTaiNguyenNgoaiHinhThan(chienDauCo: getChienDauCoDangCapSao00E03SS01);
     await getTaiNguyenTichHopHangarChienDauCo?.onTaiTaiNguyenNgoaiHinhThan(chienDauCo: getChienDauCoDangCapSao00E03SS02);
     await getTaiNguyenTichHopHangarChienDauCo?.onTaiTaiNguyenNgoaiHinhThan(chienDauCo: getChienDauCoDangCapSao00E03SS03);

@@ -49,7 +49,7 @@ class PHUONGTIENVUKHICHIHUYCLASS40BSS010VKSS040 extends MOHINHPHUONGTIENVUKHIDIE
     /// -----
     /// TODO: Cài Đặt Thuộc Tính Sprite
     /// -----
-    await onInitThuocTinhSprite();
+    // await onInitThuocTinhSprite();
 
     /// -----
     /// TODO: Cài Đặt Phương Thức Bay

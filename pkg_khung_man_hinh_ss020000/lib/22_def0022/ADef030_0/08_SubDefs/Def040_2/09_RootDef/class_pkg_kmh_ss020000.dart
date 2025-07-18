@@ -595,26 +595,26 @@ abstract class THANHPHANNUTBAMTICHHOPTHUOCCAP extends PositionComponent with Tap
     /// TODO:
     /// -----
     await Future.wait([
-      // onAddComponent(flameGame: null, parentComponent: this, childComponent: getSpriteAnimationComponentKichHoat).catchError((e) => null),
-      // onAddComponent(flameGame: null, parentComponent: this, childComponent: getSpriteAnimationComponentKichHoat2).catchError((e) => null),
-      // onAddComponent(flameGame: null, parentComponent: this, childComponent: getSpriteAnimationComponentHuyKichHoat).catchError((e) => null),
-      //
-      // onAddComponent(flameGame: null, parentComponent: this, childComponent: getSpriteAnimationComponentOnLayerSS01).catchError((e) => null),
-      // onAddComponent(flameGame: null, parentComponent: this, childComponent: getSpriteAnimationComponentOnLayerSS02).catchError((e) => null),
-      // onAddComponent(flameGame: null, parentComponent: this, childComponent: getSpriteAnimationComponentOnLayerSS03).catchError((e) => null),
-      // onAddComponent(flameGame: null, parentComponent: this, childComponent: getSpriteAnimationComponentOnLayerSS04).catchError((e) => null),
-      // onAddComponent(flameGame: null, parentComponent: this, childComponent: getSpriteAnimationComponentOnLayerSS05).catchError((e) => null),
-      //
-      // ///
-      // onAddComponent(flameGame: null, parentComponent: this, childComponent: getSpriteAnimationComponentThanhTichSS010KichHoat).catchError((e) => null),
-      // onAddComponent(flameGame: null, parentComponent: this, childComponent: getSpriteAnimationComponentThanhTichSS020KichHoat).catchError((e) => null),
-      // onAddComponent(flameGame: null, parentComponent: this, childComponent: getSpriteAnimationComponentThanhTichSS030KichHoat).catchError((e) => null),
-      // onAddComponent(flameGame: null, parentComponent: this, childComponent: getSpriteAnimationComponentThanhTichSS010HuyKichHoat).catchError((e) => null),
-      // onAddComponent(flameGame: null, parentComponent: this, childComponent: getSpriteAnimationComponentThanhTichSS020HuyKichHoat).catchError((e) => null),
-      // onAddComponent(flameGame: null, parentComponent: this, childComponent: getSpriteAnimationComponentThanhTichSS030HuyKichHoat).catchError((e) => null),
+      onAddComponent(flameGame: null, parentComponent: this, childComponent: getSpriteAnimationComponentKichHoat).catchError((e) => null),
+      onAddComponent(flameGame: null, parentComponent: this, childComponent: getSpriteAnimationComponentKichHoat2).catchError((e) => null),
+      onAddComponent(flameGame: null, parentComponent: this, childComponent: getSpriteAnimationComponentHuyKichHoat).catchError((e) => null),
+
+      onAddComponent(flameGame: null, parentComponent: this, childComponent: getSpriteAnimationComponentOnLayerSS01).catchError((e) => null),
+      onAddComponent(flameGame: null, parentComponent: this, childComponent: getSpriteAnimationComponentOnLayerSS02).catchError((e) => null),
+      onAddComponent(flameGame: null, parentComponent: this, childComponent: getSpriteAnimationComponentOnLayerSS03).catchError((e) => null),
+      onAddComponent(flameGame: null, parentComponent: this, childComponent: getSpriteAnimationComponentOnLayerSS04).catchError((e) => null),
+      onAddComponent(flameGame: null, parentComponent: this, childComponent: getSpriteAnimationComponentOnLayerSS05).catchError((e) => null),
 
       ///
-      // onAddComponent(flameGame: null, parentComponent: this, childComponent: getThanhPhanVanBan).catchError((e) => null),
+      onAddComponent(flameGame: null, parentComponent: this, childComponent: getSpriteAnimationComponentThanhTichSS010KichHoat).catchError((e) => null),
+      onAddComponent(flameGame: null, parentComponent: this, childComponent: getSpriteAnimationComponentThanhTichSS020KichHoat).catchError((e) => null),
+      onAddComponent(flameGame: null, parentComponent: this, childComponent: getSpriteAnimationComponentThanhTichSS030KichHoat).catchError((e) => null),
+      onAddComponent(flameGame: null, parentComponent: this, childComponent: getSpriteAnimationComponentThanhTichSS010HuyKichHoat).catchError((e) => null),
+      onAddComponent(flameGame: null, parentComponent: this, childComponent: getSpriteAnimationComponentThanhTichSS020HuyKichHoat).catchError((e) => null),
+      onAddComponent(flameGame: null, parentComponent: this, childComponent: getSpriteAnimationComponentThanhTichSS030HuyKichHoat).catchError((e) => null),
+
+
+      onAddComponent(flameGame: null, parentComponent: this, childComponent: getThanhPhanVanBan).catchError((e) => null),
     ]);
 
     /// -----

@@ -49,7 +49,7 @@ class PHUONGTIENVUKHICHIHUYCLASS30CSS010VKSS010 extends MOHINHPHUONGTIENVUKHI {
     /// -----
     /// TODO: Cài Đặt Thuộc Tính Sprite
     /// -----
-    await onInitThuocTinhSprite();
+    // await onInitThuocTinhSprite();
 
     /// -----
     /// TODO: Cài Đặt Phương Thức Bay

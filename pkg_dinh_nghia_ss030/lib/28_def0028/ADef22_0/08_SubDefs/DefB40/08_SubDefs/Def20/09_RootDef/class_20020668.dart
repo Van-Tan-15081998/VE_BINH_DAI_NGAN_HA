@@ -48,7 +48,7 @@ class PHUONGTIENTANCONGCLASS40BSS01 extends MOHINHPHUONGTIENTANCONG {
     /// -----
     /// TODO: Cài Đặt Thuộc Tính Sprite
     /// -----
-    await onInitThuocTinhSprite();
+    // await onInitThuocTinhSprite();
 
     /// -----
     /// TODO: Cài Đặt Phương Thức Bay

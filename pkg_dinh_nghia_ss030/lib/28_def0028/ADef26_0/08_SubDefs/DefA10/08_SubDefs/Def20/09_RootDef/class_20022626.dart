@@ -48,7 +48,7 @@ class PHUONGTIENCHIHUYCLASS10ASS01 extends MOHINHPHUONGTIENCHIHUY {
     /// -----
     /// TODO: Cài Đặt Thuộc Tính Sprite
     /// -----
-    await onInitThuocTinhSprite();
+    // await onInitThuocTinhSprite();
 
     /// -----
     /// TODO: Cài Đặt Phương Thức Bay

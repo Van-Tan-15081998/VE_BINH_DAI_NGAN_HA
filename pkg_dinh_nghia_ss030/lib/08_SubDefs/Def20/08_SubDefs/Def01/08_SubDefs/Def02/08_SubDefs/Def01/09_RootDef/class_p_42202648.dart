@@ -97,23 +97,25 @@ class CAPDOGIAPPHUONGTIENPhuongTien with CauTrucThucThiCoBan {
   /// -----
   @override
   Future<void> onInitRootForSubCom() async {
-    await getChiSoGiapTheoCapDoSS01?.onInitRoot();
-    await getChiSoGiapTheoCapDoSS02?.onInitRoot();
-    await getChiSoGiapTheoCapDoSS03?.onInitRoot();
-    await getChiSoGiapTheoCapDoSS04?.onInitRoot();
-    await getChiSoGiapTheoCapDoSS05?.onInitRoot();
-    await getChiSoGiapTheoCapDoSS06?.onInitRoot();
-    await getChiSoGiapTheoCapDoSS07?.onInitRoot();
-    await getChiSoGiapTheoCapDoSS08?.onInitRoot();
-    await getChiSoGiapTheoCapDoSS09?.onInitRoot();
-    await getChiSoGiapTheoCapDoSS10?.onInitRoot();
+    await Future.wait([
+     getChiSoGiapTheoCapDoSS01?.onInitRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+     getChiSoGiapTheoCapDoSS02?.onInitRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+     getChiSoGiapTheoCapDoSS03?.onInitRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+     getChiSoGiapTheoCapDoSS04?.onInitRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+     getChiSoGiapTheoCapDoSS05?.onInitRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+     getChiSoGiapTheoCapDoSS06?.onInitRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+     getChiSoGiapTheoCapDoSS07?.onInitRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+     getChiSoGiapTheoCapDoSS08?.onInitRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+     getChiSoGiapTheoCapDoSS09?.onInitRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+     getChiSoGiapTheoCapDoSS10?.onInitRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
 
     ///
-    await getChiSoGiapTheoCapDoSS11?.onInitRoot();
-    await getChiSoGiapTheoCapDoSS12?.onInitRoot();
-    await getChiSoGiapTheoCapDoSS13?.onInitRoot();
-    await getChiSoGiapTheoCapDoSS14?.onInitRoot();
-    await getChiSoGiapTheoCapDoSS15?.onInitRoot();
+     getChiSoGiapTheoCapDoSS11?.onInitRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+     getChiSoGiapTheoCapDoSS12?.onInitRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+     getChiSoGiapTheoCapDoSS13?.onInitRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+     getChiSoGiapTheoCapDoSS14?.onInitRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+     getChiSoGiapTheoCapDoSS15?.onInitRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+    ]);
 
     return;
   }

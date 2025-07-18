@@ -48,7 +48,7 @@ class PHUONGTIENTANCONGCLASS20ASS02 extends MOHINHPHUONGTIENTANCONG {
     /// -----
     /// TODO: Cài Đặt Thuộc Tính Sprite
     /// -----
-    await onInitThuocTinhSprite();
+    // await onInitThuocTinhSprite();
 
     /// -----
     /// TODO: Cài Đặt Phương Thức Bay
