@@ -92,11 +92,20 @@ class MoHinhThuocTinhKichThuocHatVaCham with KhungThucThiCoBan {
   }
 
   /// -----
+  /// TODO: Kích Thước Cấp Độ SS50
+  /// -----
+  void onVoidCaiDatKichThuocCapDoSS50() {
+    onVoidCaiDatChieuRongThan(value: (getChieuRongThan ?? 10.0) * 0.50);
+    onVoidCaiDatChieuCaoThan(value: (getChieuCaoThan ?? 10.0) * 0.50);
+    return;
+  }
+
+  /// -----
   /// TODO: Kích Thước Cấp Độ SS01
   /// -----
   void onVoidCaiDatKichThuocCapDoSS01() {
-     onVoidCaiDatChieuRongThan(value: (getChieuRongThan ?? 10.0) * 0.25);
-     onVoidCaiDatChieuCaoThan(value: (getChieuCaoThan ?? 10.0) * 0.25);
+     onVoidCaiDatChieuRongThan(value: (getChieuRongThan ?? 10.0) * 1.05);
+     onVoidCaiDatChieuCaoThan(value: (getChieuCaoThan ?? 10.0) * 1.05);
     return;
   }
 
@@ -104,8 +113,8 @@ class MoHinhThuocTinhKichThuocHatVaCham with KhungThucThiCoBan {
   /// TODO: Kích Thước Cấp Độ SS02
   /// -----
   void onVoidCaiDatKichThuocCapDoSS02() {
-    onVoidCaiDatChieuRongThan(value: (getChieuRongThan ?? 10.0) * 0.50);
-    onVoidCaiDatChieuCaoThan(value: (getChieuCaoThan ?? 10.0) * 0.50);
+    onVoidCaiDatChieuRongThan(value: (getChieuRongThan ?? 10.0) * 1.10);
+    onVoidCaiDatChieuCaoThan(value: (getChieuCaoThan ?? 10.0) * 1.10);
     return;
   }
 
@@ -113,8 +122,8 @@ class MoHinhThuocTinhKichThuocHatVaCham with KhungThucThiCoBan {
   /// TODO: Kích Thước Cấp Độ SS03
   /// -----
   void onVoidCaiDatKichThuocCapDoSS03() {
-     onVoidCaiDatChieuRongThan(value: (getChieuRongThan ?? 10.0) * 0.75);
-     onVoidCaiDatChieuCaoThan(value: (getChieuCaoThan ?? 10.0) * 0.75);
+     onVoidCaiDatChieuRongThan(value: (getChieuRongThan ?? 10.0) * 1.15);
+     onVoidCaiDatChieuCaoThan(value: (getChieuCaoThan ?? 10.0) * 1.15);
     return;
   }
 
@@ -122,8 +131,8 @@ class MoHinhThuocTinhKichThuocHatVaCham with KhungThucThiCoBan {
   /// TODO: Kích Thước Cấp Độ SS04
   /// -----
   void onVoidCaiDatKichThuocCapDoSS04() {
-     onVoidCaiDatChieuRongThan(value: (getChieuRongThan ?? 10.0) * 1.00);
-     onVoidCaiDatChieuCaoThan(value: (getChieuCaoThan ?? 10.0) * 1.00);
+     onVoidCaiDatChieuRongThan(value: (getChieuRongThan ?? 10.0) * 1.20);
+     onVoidCaiDatChieuCaoThan(value: (getChieuCaoThan ?? 10.0) * 1.20);
     return;
   }
 
@@ -140,8 +149,8 @@ class MoHinhThuocTinhKichThuocHatVaCham with KhungThucThiCoBan {
   /// TODO: Kích Thước Cấp Độ SS06
   /// -----
   void onVoidCaiDatKichThuocCapDoSS06() {
-     onVoidCaiDatChieuRongThan(value: (getChieuRongThan ?? 10.0) * 1.50);
-     onVoidCaiDatChieuCaoThan(value: (getChieuCaoThan ?? 10.0) * 1.50);
+     onVoidCaiDatChieuRongThan(value: (getChieuRongThan ?? 10.0) * 1.05);
+     onVoidCaiDatChieuCaoThan(value: (getChieuCaoThan ?? 10.0) * 1.05);
     return;
   }
 
@@ -149,8 +158,8 @@ class MoHinhThuocTinhKichThuocHatVaCham with KhungThucThiCoBan {
   /// TODO: Kích Thước Cấp Độ SS07
   /// -----
   void onVoidCaiDatKichThuocCapDoSS07() {
-     onVoidCaiDatChieuRongThan(value: (getChieuRongThan ?? 10.0) * 1.75);
-     onVoidCaiDatChieuCaoThan(value: (getChieuCaoThan ?? 10.0) * 1.75);
+     onVoidCaiDatChieuRongThan(value: (getChieuRongThan ?? 10.0) * 1.10);
+     onVoidCaiDatChieuCaoThan(value: (getChieuCaoThan ?? 10.0) * 1.10);
     return;
   }
 
@@ -158,8 +167,8 @@ class MoHinhThuocTinhKichThuocHatVaCham with KhungThucThiCoBan {
   /// TODO: Kích Thước Cấp Độ SS08
   /// -----
   void onVoidCaiDatKichThuocCapDoSS08() {
-     onVoidCaiDatChieuRongThan(value: (getChieuRongThan ?? 10.0) * 2.00);
-     onVoidCaiDatChieuCaoThan(value: (getChieuCaoThan ?? 10.0) * 2.00);
+     onVoidCaiDatChieuRongThan(value: (getChieuRongThan ?? 10.0) * 1.15);
+     onVoidCaiDatChieuCaoThan(value: (getChieuCaoThan ?? 10.0) * 1.15);
     return;
   }
 
@@ -167,8 +176,8 @@ class MoHinhThuocTinhKichThuocHatVaCham with KhungThucThiCoBan {
   /// TODO: Kích Thước Cấp Độ SS09
   /// -----
   void onVoidCaiDatKichThuocCapDoSS09() {
-     onVoidCaiDatChieuRongThan(value: (getChieuRongThan ?? 10.0) * 2.25);
-     onVoidCaiDatChieuCaoThan(value: (getChieuCaoThan ?? 10.0) * 2.25);
+     onVoidCaiDatChieuRongThan(value: (getChieuRongThan ?? 10.0) * 1.20);
+     onVoidCaiDatChieuCaoThan(value: (getChieuCaoThan ?? 10.0) * 1.20);
     return;
   }
 
@@ -176,8 +185,8 @@ class MoHinhThuocTinhKichThuocHatVaCham with KhungThucThiCoBan {
   /// TODO: Kích Thước Cấp Độ SS10
   /// -----
   void onVoidCaiDatKichThuocCapDoSS10() {
-     onVoidCaiDatChieuRongThan(value: (getChieuRongThan ?? 10.0) * 2.50);
-     onVoidCaiDatChieuCaoThan(value: (getChieuCaoThan ?? 10.0) * 2.50);
+     onVoidCaiDatChieuRongThan(value: (getChieuRongThan ?? 10.0) * 1.25);
+     onVoidCaiDatChieuCaoThan(value: (getChieuCaoThan ?? 10.0) * 1.25);
     return;
   }
 

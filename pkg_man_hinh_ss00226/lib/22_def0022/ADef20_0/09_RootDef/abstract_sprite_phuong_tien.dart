@@ -327,8 +327,8 @@ abstract class SpritePhuongTienCoBan extends SpriteAnimationComponent with HasVi
     super.update(dt);
 
     if (getTrangThaiTongQuat?.getTienTrinhTongQuat?.getTienTrinhThucThiChienDau?.getTrangThai?.getMoHinh?.onCheckBoolDangThucThi() == true) {
-      // onVoidThucThiTanCong();
-
+      onVoidThucThiTanCong();
+      //
       if (getBienTangTienGiamTanXuatCapNhat % 2 == 0) {
         getMoHinh?.getMoHinh?.onXuLyDuLieuJsonLamPhang();
       }

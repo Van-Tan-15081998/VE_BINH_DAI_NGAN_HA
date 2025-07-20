@@ -77,40 +77,102 @@ class KHUNGMANHINHCHINH extends KHUNGMANHINHGAMECOSO {
 
   @override
   Future<void> onKhoiDongNhiemVuChienDau({required Future<void> Function()? onThucThiHoanTat}) async {
-    CAUTRUCTHUCTHITUANTUCOBAN? cauTrucThiThiTuanTu;
-    cauTrucThiThiTuanTu = CAUTRUCTHUCTHITUANTUCOBAN(
-      onThucThiTuanTuSS010: () async {
+    // CAUTRUCTHUCTHITUANTUCOBAN? cauTrucThiThiTuanTu;
+    // cauTrucThiThiTuanTu = CAUTRUCTHUCTHITUANTUCOBAN(
+    //   onThucThiTuanTuSS010: () async {
+    //     await getGlobalStateManagementSystem?.getDieuKhienTinhToanTongQuat?.getTrungTamVanHanhThuocTinhChienDauTheoQuyChuan?.onCaiDatThuocTinhChienDauTheoQuyChuan(
+    //       value: getGlobalStateManagementSystem?.getChienDauCoTongQuat?.getChienDauCoTrucTiepThucThiChienDau?.getTrangThai?.getMoHinh?.getThuocTinhChienDauTheoQuyChuan,
+    //       caiDatUuTien: true,
+    //     );
+    //   },
+    //   onThucThiTuanTuSS020: () async {
+    //     await getGlobalStateManagementSystem?.getBangDieuKhienKichBanChienDauTheoGiaiDoan?.getQuanLyDieuKhienChuyenKichBanChienDau?.onKhoiDongKichBan(trangThaiTongQuat: getGlobalStateManagementSystem);
+    //   },
+    //   onThucThiTuanTuSS030: () async {
+    //     await getGlobalStateManagementSystem?.getChienDauCoTongQuat?.getChienDauCoTrucTiepThucThiChienDau?.onTaiTaiNguyenChienDauCo();
+    //   },
+    //   onThucThiTuanTuSS040: () async {
+    //     await getGlobalStateManagementSystem?.getChienDauCoTongQuat?.getDieuKhienDiChuyenChienDauCo?.onResetViTriChienDauCo();
+    //   },
+    //   onThucThiTuanTuSS050: () async {
+    //     await getGlobalStateManagementSystem?.getBangDieuKhienKichBanChienDauTheoGiaiDoan?.getQuanLyDieuKhienChuyenKichBanChienDau?.onTaiTaiNguyenPhuongTien();
+    //   },
+    //   onThucThiTuanTuSS060: null,
+    //   onThucThiTuanTuSS070: null,
+    //   onThucThiTuanTuSS080: null,
+    //   onThucThiTuanTuSS090: null,
+    //   onThucThiTuanTuSS100: null,
+    //   onThucThiHoanTat: onThucThiHoanTat,
+    // );
+    //
+    // if (kDebugMode) {
+    //   stopwatch = Stopwatch();
+    //   stopwatch?.start();
+    // }
+    //
+    // await cauTrucThiThiTuanTu?.onThucThiTuanTu(interval: const Duration(milliseconds: 500));
+
+    CAUTRUCTHUCTHITUANTUCOBAN? cauTrucThucThiTuanTuSS010 = CAUTRUCTHUCTHITUANTUCOBAN.onMacDinh();
+    CAUTRUCTHUCTHITUANTUCOBAN? cauTrucThucThiTuanTuSS020 = CAUTRUCTHUCTHITUANTUCOBAN.onMacDinh();
+    CAUTRUCTHUCTHITUANTUCOBAN? cauTrucThucThiTuanTuSS030 = CAUTRUCTHUCTHITUANTUCOBAN.onMacDinh();
+    CAUTRUCTHUCTHITUANTUCOBAN? cauTrucThucThiTuanTuSS040 = CAUTRUCTHUCTHITUANTUCOBAN.onMacDinh();
+    CAUTRUCTHUCTHITUANTUCOBAN? cauTrucThucThiTuanTuSS050 = CAUTRUCTHUCTHITUANTUCOBAN.onMacDinh();
+
+    cauTrucThucThiTuanTuSS010.onAddDonViThucThiTuanTu(
+      onThucThiTuanTu: () async {
         await getGlobalStateManagementSystem?.getDieuKhienTinhToanTongQuat?.getTrungTamVanHanhThuocTinhChienDauTheoQuyChuan?.onCaiDatThuocTinhChienDauTheoQuyChuan(
           value: getGlobalStateManagementSystem?.getChienDauCoTongQuat?.getChienDauCoTrucTiepThucThiChienDau?.getTrangThai?.getMoHinh?.getThuocTinhChienDauTheoQuyChuan,
           caiDatUuTien: true,
         );
       },
-      onThucThiTuanTuSS020: () async {
-        await getGlobalStateManagementSystem?.getBangDieuKhienKichBanChienDauTheoGiaiDoan?.getQuanLyDieuKhienChuyenKichBanChienDau?.onKhoiDongKichBan(trangThaiTongQuat: getGlobalStateManagementSystem);
-      },
-      onThucThiTuanTuSS030: () async {
-        await getGlobalStateManagementSystem?.getChienDauCoTongQuat?.getChienDauCoTrucTiepThucThiChienDau?.onTaiTaiNguyenChienDauCo();
-      },
-      onThucThiTuanTuSS040: () async {
-        await getGlobalStateManagementSystem?.getChienDauCoTongQuat?.getDieuKhienDiChuyenChienDauCo?.onResetViTriChienDauCo();
-      },
-      onThucThiTuanTuSS050: () async {
-        await getGlobalStateManagementSystem?.getBangDieuKhienKichBanChienDauTheoGiaiDoan?.getQuanLyDieuKhienChuyenKichBanChienDau?.onTaiTaiNguyenPhuongTien();
-      },
-      onThucThiTuanTuSS060: null,
-      onThucThiTuanTuSS070: null,
-      onThucThiTuanTuSS080: null,
-      onThucThiTuanTuSS090: null,
-      onThucThiTuanTuSS100: null,
-      onThucThiHoanTat: onThucThiHoanTat,
     );
 
-    if (kDebugMode) {
-      stopwatch = Stopwatch();
-      stopwatch?.start();
-    }
+    cauTrucThucThiTuanTuSS020.onAddDonViThucThiTuanTu(
+      onThucThiTuanTu: () async {
+        await getGlobalStateManagementSystem?.getBangDieuKhienKichBanChienDauTheoGiaiDoan
+            ?.getQuanLyDieuKhienChuyenKichBanChienDau?.onKhoiDongKichBan(
+            trangThaiTongQuat: getGlobalStateManagementSystem,
+            onThucThiHoanTat: () async {
+              await cauTrucThucThiTuanTuSS030.onThucThiTuanTu();
+            }
+        );
+      },
+    );
 
-    await cauTrucThiThiTuanTu?.onThucThiTuanTu(interval: const Duration(milliseconds: 500));
+    cauTrucThucThiTuanTuSS030.onAddDonViThucThiTuanTu(
+      onThucThiTuanTu: () async {
+        await getGlobalStateManagementSystem?.getChienDauCoTongQuat?.getChienDauCoTrucTiepThucThiChienDau?.onTaiTaiNguyenChienDauCo();
+      },
+    );
+
+    cauTrucThucThiTuanTuSS040.onAddDonViThucThiTuanTu(
+      onThucThiTuanTu: () async {
+        await getGlobalStateManagementSystem?.getChienDauCoTongQuat?.getDieuKhienDiChuyenChienDauCo?.onResetViTriChienDauCo();
+      },
+    );
+
+    cauTrucThucThiTuanTuSS050.onAddDonViThucThiTuanTu(
+      onThucThiTuanTu: () async {
+        await getGlobalStateManagementSystem?.getBangDieuKhienKichBanChienDauTheoGiaiDoan?.getQuanLyDieuKhienChuyenKichBanChienDau?.onTaiTaiNguyenPhuongTien();
+      },
+    );
+
+    cauTrucThucThiTuanTuSS010.onThucThiHoanTat = () async {
+      await cauTrucThucThiTuanTuSS020.onThucThiTuanTu();
+    };
+    cauTrucThucThiTuanTuSS020.onThucThiHoanTat = () async {
+      // await cauTrucThucThiTuanTuSS030.onThucThiTuanTu();
+    };
+    cauTrucThucThiTuanTuSS030.onThucThiHoanTat = () async {
+      await cauTrucThucThiTuanTuSS040.onThucThiTuanTu();
+    };
+    cauTrucThucThiTuanTuSS040.onThucThiHoanTat = () async {
+      await cauTrucThucThiTuanTuSS050.onThucThiTuanTu();
+    };
+
+    cauTrucThucThiTuanTuSS050.onThucThiHoanTat = onThucThiHoanTat;
+
+    await cauTrucThucThiTuanTuSS010.onThucThiTuanTu(interval: const Duration(milliseconds: 200));
 
     // await Future.delayed(Duration.zero);
     //

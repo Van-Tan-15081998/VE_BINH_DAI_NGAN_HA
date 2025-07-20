@@ -48,7 +48,7 @@ class PHUONGTIENHOVECLASS20ASS03 extends MOHINHPHUONGTIENHOVE {
     /// -----
     /// TODO: Cài Đặt Thuộc Tính Sprite
     /// -----
-    // await onInitThuocTinhSprite();
+    await onInitThuocTinhSprite();
 
     /// -----
     /// TODO: Cài Đặt Phương Thức Bay

@@ -61,7 +61,7 @@ class _MANHINHTHANHPHANAAAAState extends State<MANHINHTHANHPHANAAAA> {
           /// -----|-----|-----
           /// TODO: Attach Root
           /// -----|-----|-----
-          await widget.trangThaiTongQuat?.onAttachRoot();
+          await widget.trangThaiTongQuat?.onAttachRoot(attachValue: null);
 
           /// -----|-----|-----
           /// TODO: Init Root

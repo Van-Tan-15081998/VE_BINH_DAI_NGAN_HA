@@ -207,7 +207,7 @@ class GlobalStateManagementSystem extends CoreStateManagement {
 
       await caiDatBangDieuKhienKichBanChienDauTheoGiaiDoan(value: QUANLYTRANGTHAIBANGDIEUKHIENKICHBANCHIENDAUTHEOGIAIDOAN());
 
-      await caiDatBanDoChienDau(value: QUANLYTRANGTHAITONGQUATBANDOCHIENDAU());
+      await caiDatBanDoChienDau(value: GlobalStateManagementSystemBANDOCHIENDAU());
 
       await caiDatSuKienVaChamThuocPhuongTien(value: QUANLYTRANGTHAISUKIENVACHAMTHUOCPHUONGTIEN());
 
@@ -287,7 +287,7 @@ class GlobalStateManagementSystem extends CoreStateManagement {
   //
   //   await caiDatBangDieuKhienKichBanChienDauTheoGiaiDoan(value: QUANLYTRANGTHAIBANGDIEUKHIENKICHBANCHIENDAUTHEOGIAIDOAN());
   //
-  //   await caiDatBanDoChienDau(value: QUANLYTRANGTHAITONGQUATBANDOCHIENDAU());
+  //   await caiDatBanDoChienDau(value: GlobalStateManagementSystemBANDOCHIENDAU());
   //
   //   await caiDatSuKienVaChamThuocPhuongTien(value: QUANLYTRANGTHAISUKIENVACHAMTHUOCPHUONGTIEN());
   //
@@ -938,9 +938,9 @@ class GlobalStateManagementSystem extends CoreStateManagement {
   }
 
   ///
-  QUANLYTRANGTHAITONGQUATBANDOCHIENDAU? _banDoChienDau;
-  QUANLYTRANGTHAITONGQUATBANDOCHIENDAU? get getBanDoChienDau => _banDoChienDau;
-  Future<void> caiDatBanDoChienDau({required QUANLYTRANGTHAITONGQUATBANDOCHIENDAU? value}) async {
+  GlobalStateManagementSystemBANDOCHIENDAU? _banDoChienDau;
+  GlobalStateManagementSystemBANDOCHIENDAU? get getBanDoChienDau => _banDoChienDau;
+  Future<void> caiDatBanDoChienDau({required GlobalStateManagementSystemBANDOCHIENDAU? value}) async {
     _banDoChienDau ??= value;
     return;
   }

@@ -154,7 +154,7 @@ class QUANLYDIEUKHIENCHUYENKICHBANCHIENDAU with CauTrucThucThiCoBan, DanhSachQua
   /// -----
   /// TODO: Khởi Động Kịch Bản
   /// -----
-  Future<void> onKhoiDongKichBan({required GlobalStateManagementSystem? trangThaiTongQuat}) async {
+  Future<void> onKhoiDongKichBan({required GlobalStateManagementSystem? trangThaiTongQuat, required Future<void> Function()? onThucThiHoanTat}) async {
     // CAUTRUCTHUCTHITUANTUCOBAN? cauTrucThucThiTuanTu = CAUTRUCTHUCTHITUANTUCOBAN.onMacDinh();
     //
     // cauTrucThucThiTuanTu.onAddDonViThucThiTuanTu(
@@ -233,8 +233,11 @@ class QUANLYDIEUKHIENCHUYENKICHBANCHIENDAU with CauTrucThucThiCoBan, DanhSachQua
     cauTrucThucThiTuanTuSS040.onThucThiHoanTat = () async {
       await cauTrucThucThiTuanTuSS050.onThucThiTuanTu();
     };
+    cauTrucThucThiTuanTuSS050.onThucThiHoanTat = () async {
+      await onThucThiHoanTat?.call();
+    };
 
-    cauTrucThucThiTuanTuSS010.onThucThiTuanTu(interval: const Duration(milliseconds: 200));
+    await cauTrucThucThiTuanTuSS010.onThucThiTuanTu(interval: const Duration(milliseconds: 200));
 
     ///
     return;
@@ -338,12 +341,15 @@ class QUANLYDIEUKHIENCHUYENKICHBANCHIENDAU with CauTrucThucThiCoBan, DanhSachQua
 
     CAUTRUCTHUCTHITUANTUCOBAN? cauTrucThucThiTuanTu = CAUTRUCTHUCTHITUANTUCOBAN.onMacDinh();
 
+    print ('Danh Sách getDanhSachMaDinhDanhPhuongTien ss1: ${getDanhSachMaDinhDanhPhuongTien?.length ?? 0}');
+
     if (getDanhSachMaDinhDanhPhuongTien?.isNotEmpty == true) {
       for (int index = 0; index < (getDanhSachMaDinhDanhPhuongTien?.length ?? 0); index++) {
       // for (int index = 0; index < 2; index++) {
         cauTrucThucThiTuanTu.onAddDonViThucThiTuanTu(
           onThucThiTuanTu: () async {
-            await onGetEntityResourceManagement?.getQuanLyTrangThaiHangarPhuongTien?.onTaiTaiNguyenPhuongTienTheoMaDinhDanh(maDinhDanhPhuongTien: getDanhSachMaDinhDanhPhuongTien?[index]);
+            await onGetEntityResourceManagement?.getQuanLyTrangThaiHangarPhuongTien
+                ?.onTaiTaiNguyenPhuongTienTheoMaDinhDanh(maDinhDanhPhuongTien: getDanhSachMaDinhDanhPhuongTien?[index]);
           },
         );
       }
@@ -352,7 +358,82 @@ class QUANLYDIEUKHIENCHUYENKICHBANCHIENDAU with CauTrucThucThiCoBan, DanhSachQua
     cauTrucThucThiTuanTu.onThucThiHoanTat = onThucThiHoanTat;
 
     // await cauTrucThucThiTuanTu.onThucThiTuanTu(interval: const Duration(milliseconds: 200));
-    cauTrucThucThiTuanTu.onThucThiTuanTu(interval: const Duration(milliseconds: 500));
+    await cauTrucThucThiTuanTu.onThucThiTuanTu(interval: const Duration(milliseconds: 500));
+
+    ///
+    return;
+  }
+
+  Future<void> onTaiTaiNguyenPhuongTienTheoTuanTu({required Future<void> Function()? onThucThiHoanTat}) async {
+
+    CAUTRUCTHUCTHITUANTUCOBAN? cauTrucThucThiTuanTuSS010 = CAUTRUCTHUCTHITUANTUCOBAN.onMacDinh();
+    CAUTRUCTHUCTHITUANTUCOBAN? cauTrucThucThiTuanTuSS020 = CAUTRUCTHUCTHITUANTUCOBAN.onMacDinh();
+    CAUTRUCTHUCTHITUANTUCOBAN? cauTrucThucThiTuanTuSS030 = CAUTRUCTHUCTHITUANTUCOBAN.onMacDinh();
+    CAUTRUCTHUCTHITUANTUCOBAN? cauTrucThucThiTuanTuSS040 = CAUTRUCTHUCTHITUANTUCOBAN.onMacDinh();
+    CAUTRUCTHUCTHITUANTUCOBAN? cauTrucThucThiTuanTuSS050 = CAUTRUCTHUCTHITUANTUCOBAN.onMacDinh();
+    CAUTRUCTHUCTHITUANTUCOBAN? cauTrucThucThiTuanTuSS060 = CAUTRUCTHUCTHITUANTUCOBAN.onMacDinh();
+    CAUTRUCTHUCTHITUANTUCOBAN? cauTrucThucThiTuanTuSS070 = CAUTRUCTHUCTHITUANTUCOBAN.onMacDinh();
+    CAUTRUCTHUCTHITUANTUCOBAN? cauTrucThucThiTuanTuSS080 = CAUTRUCTHUCTHITUANTUCOBAN.onMacDinh();
+    CAUTRUCTHUCTHITUANTUCOBAN? cauTrucThucThiTuanTuSS090 = CAUTRUCTHUCTHITUANTUCOBAN.onMacDinh();
+    CAUTRUCTHUCTHITUANTUCOBAN? cauTrucThucThiTuanTuSS100 = CAUTRUCTHUCTHITUANTUCOBAN.onMacDinh();
+
+    CAUTRUCTHUCTHITUANTUCOBAN? cauTrucThucThiTuanTuSS110 = CAUTRUCTHUCTHITUANTUCOBAN.onMacDinh();
+    CAUTRUCTHUCTHITUANTUCOBAN? cauTrucThucThiTuanTuSS120 = CAUTRUCTHUCTHITUANTUCOBAN.onMacDinh();
+    CAUTRUCTHUCTHITUANTUCOBAN? cauTrucThucThiTuanTuSS130 = CAUTRUCTHUCTHITUANTUCOBAN.onMacDinh();
+    CAUTRUCTHUCTHITUANTUCOBAN? cauTrucThucThiTuanTuSS140 = CAUTRUCTHUCTHITUANTUCOBAN.onMacDinh();
+    CAUTRUCTHUCTHITUANTUCOBAN? cauTrucThucThiTuanTuSS150 = CAUTRUCTHUCTHITUANTUCOBAN.onMacDinh();
+    CAUTRUCTHUCTHITUANTUCOBAN? cauTrucThucThiTuanTuSS160 = CAUTRUCTHUCTHITUANTUCOBAN.onMacDinh();
+    CAUTRUCTHUCTHITUANTUCOBAN? cauTrucThucThiTuanTuSS170 = CAUTRUCTHUCTHITUANTUCOBAN.onMacDinh();
+    CAUTRUCTHUCTHITUANTUCOBAN? cauTrucThucThiTuanTuSS180 = CAUTRUCTHUCTHITUANTUCOBAN.onMacDinh();
+    CAUTRUCTHUCTHITUANTUCOBAN? cauTrucThucThiTuanTuSS190 = CAUTRUCTHUCTHITUANTUCOBAN.onMacDinh();
+    CAUTRUCTHUCTHITUANTUCOBAN? cauTrucThucThiTuanTuSS200 = CAUTRUCTHUCTHITUANTUCOBAN.onMacDinh();
+
+    CAUTRUCTHUCTHITUANTUCOBAN? cauTrucThucThiTuanTuSS210 = CAUTRUCTHUCTHITUANTUCOBAN.onMacDinh();
+    CAUTRUCTHUCTHITUANTUCOBAN? cauTrucThucThiTuanTuSS220 = CAUTRUCTHUCTHITUANTUCOBAN.onMacDinh();
+    CAUTRUCTHUCTHITUANTUCOBAN? cauTrucThucThiTuanTuSS230 = CAUTRUCTHUCTHITUANTUCOBAN.onMacDinh();
+    CAUTRUCTHUCTHITUANTUCOBAN? cauTrucThucThiTuanTuSS240 = CAUTRUCTHUCTHITUANTUCOBAN.onMacDinh();
+    CAUTRUCTHUCTHITUANTUCOBAN? cauTrucThucThiTuanTuSS250 = CAUTRUCTHUCTHITUANTUCOBAN.onMacDinh();
+    CAUTRUCTHUCTHITUANTUCOBAN? cauTrucThucThiTuanTuSS260 = CAUTRUCTHUCTHITUANTUCOBAN.onMacDinh();
+    CAUTRUCTHUCTHITUANTUCOBAN? cauTrucThucThiTuanTuSS270 = CAUTRUCTHUCTHITUANTUCOBAN.onMacDinh();
+    CAUTRUCTHUCTHITUANTUCOBAN? cauTrucThucThiTuanTuSS280 = CAUTRUCTHUCTHITUANTUCOBAN.onMacDinh();
+    CAUTRUCTHUCTHITUANTUCOBAN? cauTrucThucThiTuanTuSS290 = CAUTRUCTHUCTHITUANTUCOBAN.onMacDinh();
+    CAUTRUCTHUCTHITUANTUCOBAN? cauTrucThucThiTuanTuSS300 = CAUTRUCTHUCTHITUANTUCOBAN.onMacDinh();
+
+    CAUTRUCTHUCTHITUANTUCOBAN? cauTrucThucThiTuanTuSS310 = CAUTRUCTHUCTHITUANTUCOBAN.onMacDinh();
+    CAUTRUCTHUCTHITUANTUCOBAN? cauTrucThucThiTuanTuSS320 = CAUTRUCTHUCTHITUANTUCOBAN.onMacDinh();
+    CAUTRUCTHUCTHITUANTUCOBAN? cauTrucThucThiTuanTuSS330 = CAUTRUCTHUCTHITUANTUCOBAN.onMacDinh();
+    CAUTRUCTHUCTHITUANTUCOBAN? cauTrucThucThiTuanTuSS340 = CAUTRUCTHUCTHITUANTUCOBAN.onMacDinh();
+    CAUTRUCTHUCTHITUANTUCOBAN? cauTrucThucThiTuanTuSS350 = CAUTRUCTHUCTHITUANTUCOBAN.onMacDinh();
+    CAUTRUCTHUCTHITUANTUCOBAN? cauTrucThucThiTuanTuSS360 = CAUTRUCTHUCTHITUANTUCOBAN.onMacDinh();
+    CAUTRUCTHUCTHITUANTUCOBAN? cauTrucThucThiTuanTuSS370 = CAUTRUCTHUCTHITUANTUCOBAN.onMacDinh();
+    CAUTRUCTHUCTHITUANTUCOBAN? cauTrucThucThiTuanTuSS380 = CAUTRUCTHUCTHITUANTUCOBAN.onMacDinh();
+    CAUTRUCTHUCTHITUANTUCOBAN? cauTrucThucThiTuanTuSS390 = CAUTRUCTHUCTHITUANTUCOBAN.onMacDinh();
+    CAUTRUCTHUCTHITUANTUCOBAN? cauTrucThucThiTuanTuSS400 = CAUTRUCTHUCTHITUANTUCOBAN.onMacDinh();
+
+    CAUTRUCTHUCTHITUANTUCOBAN? cauTrucThucThiTuanTuSS410 = CAUTRUCTHUCTHITUANTUCOBAN.onMacDinh();
+    CAUTRUCTHUCTHITUANTUCOBAN? cauTrucThucThiTuanTuSS420 = CAUTRUCTHUCTHITUANTUCOBAN.onMacDinh();
+    CAUTRUCTHUCTHITUANTUCOBAN? cauTrucThucThiTuanTuSS430 = CAUTRUCTHUCTHITUANTUCOBAN.onMacDinh();
+    CAUTRUCTHUCTHITUANTUCOBAN? cauTrucThucThiTuanTuSS440 = CAUTRUCTHUCTHITUANTUCOBAN.onMacDinh();
+    CAUTRUCTHUCTHITUANTUCOBAN? cauTrucThucThiTuanTuSS450 = CAUTRUCTHUCTHITUANTUCOBAN.onMacDinh();
+
+    print ('Danh Sách getDanhSachMaDinhDanhPhuongTien ss1: ${getDanhSachMaDinhDanhPhuongTien?.length ?? 0}');
+
+    if (getDanhSachMaDinhDanhPhuongTien?.isNotEmpty == true) {
+      for (int index = 0; index < (getDanhSachMaDinhDanhPhuongTien?.length ?? 0); index++) {
+        // for (int index = 0; index < 2; index++) {
+        cauTrucThucThiTuanTuSS010.onAddDonViThucThiTuanTu(
+          onThucThiTuanTu: () async {
+            await onGetEntityResourceManagement?.getQuanLyTrangThaiHangarPhuongTien
+                ?.onTaiTaiNguyenPhuongTienTheoMaDinhDanh(maDinhDanhPhuongTien: getDanhSachMaDinhDanhPhuongTien?[index]);
+          },
+        );
+      }
+    }
+
+    cauTrucThucThiTuanTuSS010.onThucThiHoanTat = onThucThiHoanTat;
+
+    // await cauTrucThucThiTuanTu.onThucThiTuanTu(interval: const Duration(milliseconds: 200));
+    await cauTrucThucThiTuanTuSS010.onThucThiTuanTu(interval: const Duration(milliseconds: 500));
 
     ///
     return;
@@ -362,6 +443,8 @@ class QUANLYDIEUKHIENCHUYENKICHBANCHIENDAU with CauTrucThucThiCoBan, DanhSachQua
     List<String> danhSachMaDinhDanhPhuongTien = getNhiemVuChienDauChonChiDinh?.getMoHinh?.getKichBanChienDau?.getDanhSachMaDinhDanhPhuongTien ?? [];
 
     onVoidCaiDatDanhSachMaDinhDanhPhuongTien(value: danhSachMaDinhDanhPhuongTien, caiDatUuTien: true);
+
+    print ('Danh Sách getDanhSachMaDinhDanhPhuongTien ss2: ${getDanhSachMaDinhDanhPhuongTien?.length ?? 0}');
 
     // await getHangarPhuongTienTongQuat?.onTaiTaiNguyenPhuongTienTheoMaDinhDanh(
     //   maDinhDanhPhuongTienSS010: danhSachMaDinhDanhPhuongTien.isNotEmpty ? danhSachMaDinhDanhPhuongTien[0] : null,

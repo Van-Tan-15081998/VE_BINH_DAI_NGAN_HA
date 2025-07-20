@@ -9,8 +9,8 @@ class KICHTHUOCPHUONGTIENTRINHSATCLASS50CSS01 extends MoHinhThuocTinhKichThuocPh
   /// -----
   @override
   Future<void> onInitRoot() async {
-    await caiDatChieuRongThan(value: 150.0);
-    await caiDatChieuCaoThan(value: 150.0);
+    await caiDatChieuRongThan(value: 135.0);
+    await caiDatChieuCaoThan(value: 135.0);
 
     return;
   }

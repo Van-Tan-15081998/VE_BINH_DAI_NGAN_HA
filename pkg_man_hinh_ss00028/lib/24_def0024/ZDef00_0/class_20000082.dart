@@ -223,9 +223,9 @@ class _MANHINHCHIENDAUState extends State<MANHINHCHIENDAU> with SingleTickerProv
                         /// -----
                         /// TODO:
                         /// -----
-                        await widget.trangThaiTongQuat?.getBangDieuKhienKichBanChienDauTheoGiaiDoan
-                        ?.getQuanLyDieuKhienChuyenKichBanChienDau
-                        ?.onKhoiDongKichBan(trangThaiTongQuat: widget.trangThaiTongQuat);
+                        // await widget.trangThaiTongQuat?.getBangDieuKhienKichBanChienDauTheoGiaiDoan
+                        // ?.getQuanLyDieuKhienChuyenKichBanChienDau
+                        // ?.onKhoiDongKichBan(trangThaiTongQuat: widget.trangThaiTongQuat);
 
                         /// -----
                         /// TODO:

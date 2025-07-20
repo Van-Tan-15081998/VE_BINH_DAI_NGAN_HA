@@ -163,8 +163,8 @@ class QuanLyTrangThaiDieuKhienDiChuyenChienDauCo with KhungThucThiCoBan, DanhSac
   MoHinhViTriChienDauCo? _viTriChienDauCo;
   MoHinhViTriChienDauCo? get getViTriChienDauCo => _viTriChienDauCo;
 
-  final double _chieuRongThanChienDauCo = 150.0;
-  final double _chieuCaoThanChienDauCo = 150.0;
+  final double _chieuRongThanChienDauCo = 135.0;
+  final double _chieuCaoThanChienDauCo = 135.0;
 
   Offset? _viTriXuatPhatNguyenBanChienDauCo;
   Offset? get getViTriXuatPhatNguyenBanChienDauCo => _viTriXuatPhatNguyenBanChienDauCo;

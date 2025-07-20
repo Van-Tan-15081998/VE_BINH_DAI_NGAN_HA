@@ -49,7 +49,7 @@ class PHUONGTIENCHIHUYCLASS20CSS01 extends MOHINHPHUONGTIENCHIHUY {
     /// -----
     /// TODO: Cài Đặt Thuộc Tính Sprite
     /// -----
-    // await onInitThuocTinhSprite();
+    await onInitThuocTinhSprite();
 
     /// -----
     /// TODO: Cài Đặt Phương Thức Bay
@@ -81,16 +81,19 @@ class PHUONGTIENCHIHUYCLASS20CSS01 extends MOHINHPHUONGTIENCHIHUY {
     await getThuocTinh?.getThuocTinhSprite?.getDonViSpriteNgoaiHinhThanPhuongTien?.caiDatChieuRongFrameRS100(value: chieuRongFrame);
     await getThuocTinh?.getThuocTinhSprite?.getDonViSpriteNgoaiHinhThanPhuongTien?.caiDatChieuCaoFrameRS100(value: chieuCaoFrame);
 
+
     /// TODO: -----|-----|-----|-----|-----|-----|-----|-----|-----|-----
     /// TODO: -----|-----|-----|-----|-----|-----|-----|-----|-----|-----
     /// TODO: -----|-----|-----|-----|-----|-----|-----|-----|-----|-----
     /// TODO: -----|-----|-----|-----|-----|-----|-----|-----|-----|-----
     /// TODO: -----|-----|-----|-----|-----|-----|-----|-----|-----|-----
 
-    /// -----
+
+/// -----
     /// TODO: Nguồn Sprite Đồng Khởi
     /// -----
-    final String nguonSpriteDongKhoi =
+
+final String nguonSpriteDongKhoi =
         'packages/pkg_dinh_nghia_ss030/lib/28_def0028/ADef26_0/08_SubDefs/DefC20/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs';
 
     /// TODO: Resized 25

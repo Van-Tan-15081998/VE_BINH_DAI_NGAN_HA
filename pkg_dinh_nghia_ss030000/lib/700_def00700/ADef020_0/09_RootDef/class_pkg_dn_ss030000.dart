@@ -1906,7 +1906,11 @@ class QUANLYTRANGTHAIHANGARPHUONGTIEN with CAUTRUCTHUCTHICOBAN {
       if (getThuocTinhTaiNguyenPhuongTien?.getMapTaiNguyenHinhAnhNgoaiHinh?[maDinhDanhPhuongTien]?.getDonViHinhAnhSpriteNgoaiHinh?.getSpriteAnimation?.frames.isNotEmpty == true) {
         await donViSprite?.caiDatSpriteAnimation(value: getThuocTinhTaiNguyenPhuongTien?.getMapTaiNguyenHinhAnhNgoaiHinh?[maDinhDanhPhuongTien]?.getDonViHinhAnhSpriteNgoaiHinh?.getSpriteAnimation);
       } else {
-        await donViSprite?.caiDatSpriteAnimation(value: getThuocTinhTaiNguyenPhuongTien?.getMapTaiNguyenHinhAnhNgoaiHinh?['[MONSTERDSTPCLASSSS00ASS010SS010]']?.getDonViHinhAnhSpriteNgoaiHinh?.getSpriteAnimation);
+        if (getThuocTinhTaiNguyenPhuongTien?.getMapTaiNguyenHinhAnhNgoaiHinh?['[MONSTERDSTPCLASSSS00ASS010SS010]']?.getDonViHinhAnhSpriteNgoaiHinh?.getSpriteAnimation?.frames
+            .isNotEmpty == true) {
+          await donViSprite?.caiDatSpriteAnimation(
+              value: getThuocTinhTaiNguyenPhuongTien?.getMapTaiNguyenHinhAnhNgoaiHinh?['[MONSTERDSTPCLASSSS00ASS010SS010]']?.getDonViHinhAnhSpriteNgoaiHinh?.getSpriteAnimation);
+        }
       }
     }
   }

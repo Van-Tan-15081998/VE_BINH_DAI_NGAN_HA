@@ -1033,8 +1033,8 @@ abstract class QuanLyTrangThaiSuKienVaChamCoBan with CauTrucThucThiCoBan, VongLa
       }
     }
 
-    hatVaCham?.getThuocTinhKichThuoc?.onVoidCaiDatChieuRongThan(value: 300.0);
-    hatVaCham?.getThuocTinhKichThuoc?.onVoidCaiDatChieuCaoThan(value: 300.0);
+    hatVaCham?.getThuocTinhKichThuoc?.onVoidCaiDatChieuRongThan(value: 200.0);
+    hatVaCham?.getThuocTinhKichThuoc?.onVoidCaiDatChieuCaoThan(value: 200.0);
     onVoidCaiDatKichThuocNgauNhien(hatVaCham: hatVaCham);
     hatVaCham?.onVoidXuLyKichThuocKhopVoiSprite();
 
@@ -1165,7 +1165,7 @@ abstract class QuanLyTrangThaiSuKienVaChamCoBan with CauTrucThucThiCoBan, VongLa
     int soNgauNhien = random.nextInt(10) + 1; // Tạo số từ 1 đến 8
 
     if (hatVaCham is HatVaChamCongKich) {
-      hatVaCham.getThuocTinhKichThuoc?.onVoidCaiDatKichThuocCapDoSS02();
+      hatVaCham.getThuocTinhKichThuoc?.onVoidCaiDatKichThuocCapDoSS50();
     }
 
     if (hatVaCham is HatVaChamPhaHuy) {

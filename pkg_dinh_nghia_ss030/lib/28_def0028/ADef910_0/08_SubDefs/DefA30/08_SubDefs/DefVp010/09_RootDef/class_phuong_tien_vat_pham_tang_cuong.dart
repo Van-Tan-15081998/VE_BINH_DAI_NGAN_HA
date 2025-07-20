@@ -47,7 +47,7 @@ class PHUONGTIENVATPHAMTANGCUONGCLASSSS00ASS030SS010 extends MOHINHPHUONGTIENVAT
     /// -----
     /// TODO: Cài Đặt Thuộc Tính Sprite
     /// -----
-    // await onInitThuocTinhSprite();
+    await onInitThuocTinhSprite();
 
     /// -----
     /// TODO: Cài Đặt Phương Thức Bay
@@ -75,16 +75,19 @@ class PHUONGTIENVATPHAMTANGCUONGCLASSSS00ASS030SS010 extends MOHINHPHUONGTIENVAT
     await getThuocTinh?.getThuocTinhSprite?.getDonViSpriteNgoaiHinhThanPhuongTien?.caiDatChieuRongFrameRS100(value: chieuRongFrame);
     await getThuocTinh?.getThuocTinhSprite?.getDonViSpriteNgoaiHinhThanPhuongTien?.caiDatChieuCaoFrameRS100(value: chieuCaoFrame);
 
+
     /// TODO: -----|-----|-----|-----|-----|-----|-----|-----|-----|-----
     /// TODO: -----|-----|-----|-----|-----|-----|-----|-----|-----|-----
     /// TODO: -----|-----|-----|-----|-----|-----|-----|-----|-----|-----
     /// TODO: -----|-----|-----|-----|-----|-----|-----|-----|-----|-----
     /// TODO: -----|-----|-----|-----|-----|-----|-----|-----|-----|-----
 
-    /// -----
+
+/// -----
     /// TODO: Nguồn Sprite Đồng Khởi
     /// -----
-    final String nguonSpriteDongKhoi = 'packages/pkg_dinh_nghia_ss030/lib/28_def0028/ADef810_0/08_SubDefs/DefA10/08_SubDefs/DefVp010/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs';
+    
+final String nguonSpriteDongKhoi = 'packages/pkg_dinh_nghia_ss030/lib/28_def0028/ADef810_0/08_SubDefs/DefA10/08_SubDefs/DefVp010/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs';
 
     /// TODO: Resized 25
     final String nguonSpriteRS025PartSS001 = 'Def20/07_Resized/Def25/sps_rs025_part_ss001.png';
