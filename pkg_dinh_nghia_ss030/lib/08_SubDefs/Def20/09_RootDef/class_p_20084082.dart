@@ -802,10 +802,28 @@ class MoHinhPhuongTienTongQuat with CauTrucThucThiCoBan {
           final double dxTrongTamVienDan = vienDanVaCham?.getMoHinh?.getDxTrongTamNotNull ?? 0;
           final double dyTrongTamVienDan = vienDanVaCham?.getMoHinh?.getDyTrongTamNotNull ?? 0;
 
-          if ((dxTrongTamVienDan < (dxTrongTamPhuongTien + (chieuRongThanPhuongTien / 2))) &&
-              (dxTrongTamVienDan > (dxTrongTamPhuongTien - (chieuRongThanPhuongTien / 2))) &&
-              (dyTrongTamVienDan < (dyTrongTamPhuongTien + (chieuCaoThanPhuongTien / 2))) &&
-              (dyTrongTamVienDan > (dyTrongTamPhuongTien - (chieuCaoThanPhuongTien / 2)))) {
+          /// -----
+          /// TODO: Đối Chiếu Dx Trọng Tâm, Dy Trọng Tâm
+          /// -----
+          double bienTrai = dxTrongTamPhuongTien - (chieuRongThanPhuongTien / 2);
+          double bienPhai = dxTrongTamPhuongTien + (chieuRongThanPhuongTien / 2);
+          double bienTren = dyTrongTamPhuongTien - (chieuCaoThanPhuongTien / 2);
+          double bienDuoi = dyTrongTamPhuongTien + (chieuCaoThanPhuongTien / 2);
+
+          /// TODO: Bổ Sung Vùng Đệm Phát Hiện Va Chạm
+          bienTrai -= 10.0;
+          bienPhai += 10.0;
+          bienDuoi += 20.0;
+
+          if (dxTrongTamVienDan > bienTrai &&
+              dxTrongTamVienDan < bienPhai &&
+              dyTrongTamVienDan > bienTren &&
+              dyTrongTamVienDan < bienDuoi) {
+
+          // if ((dxTrongTamVienDan < (dxTrongTamPhuongTien + (chieuRongThanPhuongTien / 2))) &&
+          //     (dxTrongTamVienDan > (dxTrongTamPhuongTien - (chieuRongThanPhuongTien / 2))) &&
+          //     (dyTrongTamVienDan < (dyTrongTamPhuongTien + (chieuCaoThanPhuongTien / 2))) &&
+          //     (dyTrongTamVienDan > (dyTrongTamPhuongTien - (chieuCaoThanPhuongTien / 2)))) {
             if (kDebugMode) {
               // print('[📋]_[LOG]_[XAC_NHAN_SU_KIEN_VA_CHAM_CHINH_XAC 🎯]');
             }

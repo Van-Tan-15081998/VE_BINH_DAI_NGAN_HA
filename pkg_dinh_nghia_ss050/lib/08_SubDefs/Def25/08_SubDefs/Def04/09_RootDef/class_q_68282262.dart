@@ -163,8 +163,8 @@ class QuanLyTrangThaiDieuKhienDiChuyenChienDauCo with KhungThucThiCoBan, DanhSac
   MoHinhViTriChienDauCo? _viTriChienDauCo;
   MoHinhViTriChienDauCo? get getViTriChienDauCo => _viTriChienDauCo;
 
-  final double _chieuRongThanChienDauCo = 135.0;
-  final double _chieuCaoThanChienDauCo = 135.0;
+  final double _chieuRongThanChienDauCo = 200.0;
+  final double _chieuCaoThanChienDauCo = 200.0;
 
   Offset? _viTriXuatPhatNguyenBanChienDauCo;
   Offset? get getViTriXuatPhatNguyenBanChienDauCo => _viTriXuatPhatNguyenBanChienDauCo;
@@ -211,8 +211,8 @@ class QuanLyTrangThaiDieuKhienDiChuyenChienDauCo with KhungThucThiCoBan, DanhSac
 
     double tongKichThuoc = chieuRongThan + chieuCaoThan;
 
-    double chieuRongThanCapNhat = 250.0 * (chieuRongThan / tongKichThuoc);
-    double chieuCaoThanCapNhat = 250.0 * (chieuCaoThan / tongKichThuoc);
+    double chieuRongThanCapNhat = 200.0 * (chieuRongThan / tongKichThuoc);
+    double chieuCaoThanCapNhat = 200.0 * (chieuCaoThan / tongKichThuoc);
 
     await _viTriChienDauCo?.caiDatChieuRongThan(value: chieuRongThanCapNhat);
     await _viTriChienDauCo?.caiDatChieuCaoThan(value: chieuCaoThanCapNhat);

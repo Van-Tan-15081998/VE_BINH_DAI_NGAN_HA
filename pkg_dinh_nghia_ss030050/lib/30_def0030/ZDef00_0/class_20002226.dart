@@ -627,10 +627,15 @@ class QUANLYTRANGTHAISUKIENVACHAMTHUOCPHUONGTIEN extends SUKIENVACHAMTHUOCPHUONG
                 /// -----
                 /// TODO: Đối Chiếu Dx Trọng Tâm, Dy Trọng Tâm
                 /// -----
-                final bienTrai = dxTrongTamPhuongTien - (chieuRongThanPhuongTien / 2);
-                final bienPhai = dxTrongTamPhuongTien + (chieuRongThanPhuongTien / 2);
-                final bienTren = dyTrongTamPhuongTien - (chieuCaoThanPhuongTien / 2);
-                final bienDuoi = dyTrongTamPhuongTien + (chieuCaoThanPhuongTien / 2);
+                double bienTrai = dxTrongTamPhuongTien - (chieuRongThanPhuongTien / 2);
+                double bienPhai = dxTrongTamPhuongTien + (chieuRongThanPhuongTien / 2);
+                double bienTren = dyTrongTamPhuongTien - (chieuCaoThanPhuongTien / 2);
+                double bienDuoi = dyTrongTamPhuongTien + (chieuCaoThanPhuongTien / 2);
+
+                /// TODO: Bổ Sung Vùng Đệm Phát Hiện Va Chạm
+                bienTrai -= 10.0;
+                bienPhai += 10.0;
+                bienDuoi += 20.0;
 
                 if (dxTrongTamVienDan > bienTrai &&
                     dxTrongTamVienDan < bienPhai &&
