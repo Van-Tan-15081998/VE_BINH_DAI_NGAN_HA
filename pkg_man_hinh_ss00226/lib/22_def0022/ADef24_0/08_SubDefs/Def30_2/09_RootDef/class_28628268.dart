@@ -49,7 +49,7 @@ class KhungVongLapBangDieuKhienDoiHinhDauSyTienPhong extends Component with Vong
   }
 
   @override
-  FutureOr<void> update(double dt) async {
+  void update(double dt) {
     ///
     ///
     /// TODO: Chạy Vòng Loop
@@ -62,7 +62,7 @@ class KhungVongLapBangDieuKhienDoiHinhDauSyTienPhong extends Component with Vong
     }
 
     if (getTrangThaiTongQuat?.getTienTrinhTongQuat?.getTienTrinhThucThiChienDau?.getTrangThai?.getMoHinh?.onCheckBoolDangThucThi() == true) {
-      await getTrangThaiTongQuat?.getBangDieuKhienKichBanChienDauTheoGiaiDoan?.onVanHanhKichBan();
+      getTrangThaiTongQuat?.getBangDieuKhienKichBanChienDauTheoGiaiDoan?.onVanHanhKichBan();
     }
   }
 }

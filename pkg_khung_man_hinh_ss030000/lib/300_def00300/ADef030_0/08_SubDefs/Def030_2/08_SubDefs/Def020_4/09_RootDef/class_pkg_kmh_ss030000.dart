@@ -1,4 +1,5 @@
 import 'package:flame/events.dart';
+import 'package:flame/flame.dart';
 import 'package:pkg_dinh_nghia_ss022/pkg_dinh_nghia_ss022_exp.dart';
 import 'package:pkg_khung_man_hinh_ss020000/pkg_khung_man_hinh_ss020000_exp.dart';
 
@@ -33,10 +34,16 @@ class NUTBAMSS030000SS010 extends THANHPHANNUTBAMTHUOCCAPTHUANKICHHOAT {
 
     onVoidKichHoat();
 
+    /// Kiểm Tra RAM
+
+    Flame.images.clearCache();
+
     /// -----
     /// TODO:
     /// -----
     // await getGameController?.onKichHoatKhungManHinhThuocCapSS300200();
+
+    return;
   }
 
 

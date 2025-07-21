@@ -451,11 +451,12 @@ class QUANLYTRANGTHAISUKIENVACHAMTHUOCPHUONGTIEN extends SUKIENVACHAMTHUOCPHUONG
   }
 
   bool isCompletedLoopOnTimelineSS020 = false;
+  Map<String, Map<String, dynamic>> danhSachPhuongTienVaChamVienDan = {};
   void onVoidLoopOnTimelineSS020() {
     if (isCompletedLoopOnTimelineSS020 == true) {
       isCompletedLoopOnTimelineSS020 = false;
 
-      Map<String, Map<String, dynamic>> danhSachPhuongTienVaChamVienDan = Map.from(_danhSachPhuongTienVaChamVienDan);
+      danhSachPhuongTienVaChamVienDan = Map.from(_danhSachPhuongTienVaChamVienDan);
       _danhSachPhuongTienVaChamVienDan = {};
       onVoidTichHopNhanDinhSuKienVaChamThuocPhuongTienV2(danhSachPhuongTienVaChamVienDan: danhSachPhuongTienVaChamVienDan);
     }
@@ -594,6 +595,8 @@ class QUANLYTRANGTHAISUKIENVACHAMTHUOCPHUONGTIEN extends SUKIENVACHAMTHUOCPHUONG
   double bienTrenPhuongTienVaCham = 0;
   double bienDuoiPhuongTienVaCham = 0;
 
+  Map<String, dynamic> phuongTienVaChamVienDan = {};
+
   void onVoidNhanDinhSuKienVaChamVSS020() {
     _danhSachPhuongTienVaCham = getDanhSachPhuongTienVaCham.map((phuongTien) => phuongTien?.getMoHinh?.toDuLieuJsonSuKienVaCham()).toList();
     _danhSachVienDanVaCham = getDanhSachVienDanVaCham.map((vienDan) => vienDan?.getMoHinh?.toDuLieuJsonSuKienVaCham()).toList();
@@ -601,7 +604,9 @@ class QUANLYTRANGTHAISUKIENVACHAMTHUOCPHUONGTIEN extends SUKIENVACHAMTHUOCPHUONG
     _danhSachVienDanVaCham.removeWhere((vienDan) => vienDan?['[DI_CHUYEN_HIEN_THI]'] == false);
 
     // Map<String, Map<String, dynamic>> mapPhuongTienVaChamVienDan = Map.from(_mapPhuongTienVaChamVienDan);
-    Map<String, Map<String, dynamic>> mapPhuongTienVaChamVienDan = Map.from(_mapPhuongTienVaChamVienDan);
+    mapPhuongTienVaChamVienDan = Map.from(_mapPhuongTienVaChamVienDan);
+
+    phuongTienVaChamVienDan = {};
 
     /// Cập Nhật Danh Sách Phương Tiện Hoạt Động
     // Map<String, dynamic> phuongTienHoatDong = {};
@@ -648,7 +653,7 @@ class QUANLYTRANGTHAISUKIENVACHAMTHUOCPHUONGTIEN extends SUKIENVACHAMTHUOCPHUONG
                 // final dyTrongTamPhuongTien = duLieuPhuongTien['[DY_TRONG_TAM]'];
                 dyTrongTamPhuongTienVaCham = duLieuPhuongTienVaCham['[DY_TRONG_TAM]'];
 
-                Map<String, dynamic> phuongTienVaChamVienDan = {'[MA_DINH_DANH_PHUONG_TIEN_VA_CHAM]': maDinhDanhPhuongTienVaCham, '[MA_DINH_DANH_VIEN_DAN_VA_CHAM]': '[]'};
+                phuongTienVaChamVienDan = {'[MA_DINH_DANH_PHUONG_TIEN_VA_CHAM]': maDinhDanhPhuongTienVaCham, '[MA_DINH_DANH_VIEN_DAN_VA_CHAM]': '[]'};
 
                 phuongTienHoatDong?[maDinhDanhPhuongTienVaCham] = maDinhDanhPhuongTienVaCham;
 

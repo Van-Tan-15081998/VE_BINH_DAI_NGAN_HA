@@ -202,7 +202,7 @@ class GAMEUITHANHNGANGCHISOMAUCHIENDAUCO extends CoreGameUIComponent {
     /// TODO: -----|-----|-----|-----|-----|-----|-----|-----|-----|-----
     /// TODO: -----|-----|-----|-----|-----|-----|-----|-----|-----|-----
 
-    await getSpriteThanhPhanGameUI?.onToiUuHoaKichThuocRS100();
+    await getSpriteThanhPhanGameUI?.onToiUuHoaKichThuocRS050();
 
     /// TODO: -----|-----|-----|-----|-----|-----|-----|-----|-----|-----
     /// TODO: -----|-----|-----|-----|-----|-----|-----|-----|-----|-----

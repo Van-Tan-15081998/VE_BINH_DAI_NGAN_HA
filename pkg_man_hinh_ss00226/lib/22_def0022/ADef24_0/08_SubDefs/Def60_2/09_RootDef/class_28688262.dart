@@ -40,18 +40,18 @@ class KhungVongLapBangDieuKhienDoiHinhQuanDoanCanVe extends Component with VongL
   }
 
   @override
-  FutureOr<void> update(double dt) async {
+  void update(double dt) {
 
-      ///
-      ///
-      /// TODO: Chạy Vòng Loop
-      ///
-      ///
-
-      onVoidCapNhatChiSoTangTienTheoThoiGianThuc();
-      if (onBoolKiemTraTanXuatCapNhat() == false) {
-        return;
-      }
+      // ///
+      // ///
+      // /// TODO: Chạy Vòng Loop
+      // ///
+      // ///
+      //
+      // onVoidCapNhatChiSoTangTienTheoThoiGianThuc();
+      // if (onBoolKiemTraTanXuatCapNhat() == false) {
+      //   return;
+      // }
 
   }
 }

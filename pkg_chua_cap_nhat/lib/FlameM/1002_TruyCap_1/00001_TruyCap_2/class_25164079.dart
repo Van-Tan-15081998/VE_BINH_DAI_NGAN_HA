@@ -37,7 +37,7 @@ class KhungVongLapLayerSS01 extends Component with VongLapThoiGianCoBan {
   }
 
   @override
-  FutureOr<void> update(double dt) async {
+  void update(double dt) {
       ///
       ///
       /// TODO: Chạy Vòng Loop
@@ -49,7 +49,6 @@ class KhungVongLapLayerSS01 extends Component with VongLapThoiGianCoBan {
         return;
       }
 
-      await getTrangThaiTongQuat?.getChienDauCoTongQuat?.getDieuKhienDiChuyenChienDauCo?.onLoop();
-
+      getTrangThaiTongQuat?.getChienDauCoTongQuat?.getDieuKhienDiChuyenChienDauCo?.onLoop();
   }
 }

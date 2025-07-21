@@ -41,9 +41,9 @@ class KhungVongLapSS01PkgManHinhSS00222 extends Component with VongLapThoiGianCo
 
   bool onVoidKiemTraTanXuatCapNhat() {
     if (getTrangThaiTongQuat?.getThietLapTongQuat?.onKiemTraChoPhepCapNhatTheoTocDoKhungHinh(
-      maDinhDanh: '[KHUNG_HINH_NEN_CHIEN_DAU]',
-      chiSoTangTienGiamTanXuatCapNhat: getChiSoTangTienTheoThoiGianThuc,
-    ) ==
+          maDinhDanh: '[KHUNG_HINH_NEN_CHIEN_DAU]',
+          chiSoTangTienGiamTanXuatCapNhat: getChiSoTangTienTheoThoiGianThuc,
+        ) ==
         true) {
       return true;
     }
@@ -52,20 +52,18 @@ class KhungVongLapSS01PkgManHinhSS00222 extends Component with VongLapThoiGianCo
   }
 
   @override
-  FutureOr<void> update(double dt) async {
+  void update(double dt) {
+    ///
+    ///
+    /// TODO: Chạy Vòng Loop
+    ///
+    ///
 
-      ///
-      ///
-      /// TODO: Chạy Vòng Loop
-      ///
-      ///
+    onVoidCaiDatTuDongBienTangTienGiamTanXuatCapNhat();
+    if (onVoidKiemTraTanXuatCapNhat() == false) {
+      return;
+    }
 
-      onVoidCaiDatTuDongBienTangTienGiamTanXuatCapNhat();
-      if (onVoidKiemTraTanXuatCapNhat() == false) {
-        return;
-      }
-
-      getTrangThaiTongQuat?.getChienDauCoTongQuat?.getDieuKhienDiChuyenChienDauCo?.onLoop();
-
+    getTrangThaiTongQuat?.getChienDauCoTongQuat?.getDieuKhienDiChuyenChienDauCo?.onLoop();
   }
 }

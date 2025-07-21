@@ -40,20 +40,20 @@ class KhungVongLapBangDieuKhienChienDauSS02 extends Component with VongLapThoiGi
   }
 
   @override
-  FutureOr<void> update(double dt) async {
+  void update(double dt) {
 
-      ///
-      ///
-      /// TODO: Chạy Vòng Loop
-      ///
-      ///
-
-      onVoidCapNhatChiSoTangTienTheoThoiGianThuc();
-      if (onBoolKiemTraTanXuatCapNhat() == false) {
-        return;
-      }
-
-      await getTrangThaiTongQuat?.getBangDieuKhienChienDauSS02?.onLoop();
+      // ///
+      // ///
+      // /// TODO: Chạy Vòng Loop
+      // ///
+      // ///
+      //
+      // onVoidCapNhatChiSoTangTienTheoThoiGianThuc();
+      // if (onBoolKiemTraTanXuatCapNhat() == false) {
+      //   return;
+      // }
+      //
+      // await getTrangThaiTongQuat?.getBangDieuKhienChienDauSS02?.onLoop();
 
   }
 }

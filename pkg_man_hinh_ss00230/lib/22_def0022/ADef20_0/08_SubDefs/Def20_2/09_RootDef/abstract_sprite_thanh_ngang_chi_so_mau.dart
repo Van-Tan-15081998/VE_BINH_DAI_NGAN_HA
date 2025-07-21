@@ -86,15 +86,15 @@ abstract class SPRITETHANHNGANGCHISOMAUCOBAN extends SpriteAnimationComponent wi
   /// -----
   void onVoidCaiDatNguonHinhAnh() {
     onVoidCaiDatNguonHinhAnhThanhNgangChiSoMauHienHanh(
-      value: '../../packages/pkg_man_hinh_ss00230/lib/22_def0022/ADef20_0/07_ImgSrcs/Def00_2/09_RootDef/thanh_ngang_chi_so_mau_hien_hanh.png',
+      value: '../../packages/pkg_man_hinh_ss00230/lib/22_def0022/ADef20_0/07_ImgSrcs/Def00_2/09_RootDef/thanh_ngang_chi_so_mau_hien_hanh.webp',
       caiDatUuTien: true,
     );
     onVoidCaiDatNguonHinhAnhThanhNgangChiSoMauHieuUng(
-      value: '../../packages/pkg_man_hinh_ss00230/lib/22_def0022/ADef20_0/07_ImgSrcs/Def00_2/09_RootDef/thanh_ngang_chi_so_mau_hieu_ung.png',
+      value: '../../packages/pkg_man_hinh_ss00230/lib/22_def0022/ADef20_0/07_ImgSrcs/Def00_2/09_RootDef/thanh_ngang_chi_so_mau_hieu_ung.webp',
       caiDatUuTien: true,
     );
     onVoidCaiDatNguonHinhAnhKhungVienChiSoMau(
-      value: '../../packages/pkg_man_hinh_ss00230/lib/22_def0022/ADef20_0/07_ImgSrcs/Def00_2/09_RootDef/khung_vien_chi_so_mau.png',
+      value: '../../packages/pkg_man_hinh_ss00230/lib/22_def0022/ADef20_0/07_ImgSrcs/Def00_2/09_RootDef/khung_vien_chi_so_mau.webp',
       caiDatUuTien: true,
     );
   }
@@ -235,16 +235,18 @@ abstract class SPRITETHANHNGANGCHISOMAUCOBAN extends SpriteAnimationComponent wi
   bool? _kiemTraHienThi;
   bool? get getKiemTraHienThi => _kiemTraHienThi;
   void onVoidCaiDatKiemTraHienThi({required bool? value}) {
-    _kiemTraHienThi = value;
+    if (_kiemTraHienThi != value) {
+      _kiemTraHienThi = value;
 
-    if (_kiemTraHienThi == false) {
-      onVoidCaiDatChiSoMauHieuUng(value: null);
-    }
+      if (_kiemTraHienThi == false) {
+        onVoidCaiDatChiSoMauHieuUng(value: null);
+      }
 
-    if (_kiemTraHienThi == false || _kiemTraHienThi == null) {
-      isVisible = false;
-    } else if (_kiemTraHienThi == true) {
-      isVisible = true;
+      if (_kiemTraHienThi == false || _kiemTraHienThi == null) {
+        isVisible = false;
+      } else if (_kiemTraHienThi == true) {
+        isVisible = true;
+      }
     }
 
     return;

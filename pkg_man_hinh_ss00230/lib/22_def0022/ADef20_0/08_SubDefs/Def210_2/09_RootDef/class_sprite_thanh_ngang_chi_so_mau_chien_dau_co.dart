@@ -57,15 +57,15 @@ class SPRITETHANHNGANGCHISOMAUCHIENDAUCO extends SpriteAnimationComponent with H
   /// -----
   void onVoidCaiDatNguonHinhAnh() {
     onVoidCaiDatNguonHinhAnhThanhNgangChiSoMauHienHanh(
-      value: '../../packages/pkg_man_hinh_ss00230/lib/22_def0022/ADef20_0/07_ImgSrcs/Def080_2/09_RootDef/thanh_ngang_chi_so_mau_hien_hanh.png',
+      value: '../../packages/pkg_man_hinh_ss00230/lib/22_def0022/ADef20_0/07_ImgSrcs/Def080_2/09_RootDef/thanh_ngang_chi_so_mau_hien_hanh.webp',
       caiDatUuTien: true,
     );
     onVoidCaiDatNguonHinhAnhThanhNgangChiSoMauHieuUng(
-      value: '../../packages/pkg_man_hinh_ss00230/lib/22_def0022/ADef20_0/07_ImgSrcs/Def080_2/09_RootDef/thanh_ngang_chi_so_mau_hieu_ung.png',
+      value: '../../packages/pkg_man_hinh_ss00230/lib/22_def0022/ADef20_0/07_ImgSrcs/Def080_2/09_RootDef/thanh_ngang_chi_so_mau_hieu_ung.webp',
       caiDatUuTien: true,
     );
     onVoidCaiDatNguonHinhAnhKhungVienChiSoMau(
-      value: '../../packages/pkg_man_hinh_ss00230/lib/22_def0022/ADef20_0/07_ImgSrcs/Def080_2/09_RootDef/khung_vien_chi_so_mau.png',
+      value: '../../packages/pkg_man_hinh_ss00230/lib/22_def0022/ADef20_0/07_ImgSrcs/Def080_2/09_RootDef/khung_vien_chi_so_mau.webp',
       caiDatUuTien: true,
     );
   }
@@ -447,12 +447,13 @@ class SPRITETHANHNGANGCHISOMAUCHIENDAUCO extends SpriteAnimationComponent with H
   /// -----
   /// TODO: Cập Nhật Position Và Size
   /// -----
+  MoHinhChienDauCoTongQuat? chienDauCo;
   void onVoidCapNhatPositionSizeValues(double dt) {
     if (getKiemTraHienThi == true) {
       ///
       /// TODO:
       ///
-      MoHinhChienDauCoTongQuat? chienDauCo = getMoHinh?.getMoHinh;
+      chienDauCo = getMoHinh?.getMoHinh;
 
       double dx = getTrangThaiTongQuat?.getThietLapTongQuat?.getChieuRongManHinhPhiVatLy ?? 0;
       double dy = getTrangThaiTongQuat?.getThietLapTongQuat?.getChieuCaoManHinhPhiVatLy ?? 0;

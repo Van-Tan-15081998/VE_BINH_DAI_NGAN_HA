@@ -282,8 +282,7 @@ class QUANLYDIEUKHIENCHUYENKICHBANCHIENDAU with CauTrucThucThiCoBan, DanhSachQua
     if (getTienTrinhTongQuat?.getTienTrinhThucThiChienDau?.getTrangThai?.getMoHinh?.onCheckBoolDangThucThi() == true) {
       if (getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhTSTC?.getTrangThaiPhuongTienSS070?.getMoHinh?.getTrangThaiTrongChienDau?.getTrangThaiTonTai?.isHuyHoanTat() == true) {
         if (getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhTSTC?.getTrangThaiPhuongTienSS072?.getMoHinh?.getTrangThaiTrongChienDau?.getTrangThaiTonTai?.isHuyHoanTat() == true) {
-          if (getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhTSTC?.getTrangThaiPhuongTienSS074?.getMoHinh?.getTrangThaiTrongChienDau?.getTrangThaiTonTai?.isHuyHoanTat() ==
-              true) {
+          if (getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhTSTC?.getTrangThaiPhuongTienSS074?.getMoHinh?.getTrangThaiTrongChienDau?.getTrangThaiTonTai?.isHuyHoanTat() == true) {
             await getTienTrinhTongQuat?.getTienTrinhThucThiChienDau?.getTrangThai?.getMoHinh?.caiDatThucThiHoanTat();
 
             await getMainGameController?.onKichHoatKhungManHinhThuocCapSS300400ChienThang();
@@ -349,9 +348,7 @@ class QUANLYDIEUKHIENCHUYENKICHBANCHIENDAU with CauTrucThucThiCoBan, DanhSachQua
         // for (int index = 0; index < 2; index++) {
         cauTrucThucThiTuanTu.onAddDonViThucThiTuanTu(
           onThucThiTuanTu: () async {
-            await onGetEntityResourceManagement?.getQuanLyTrangThaiHangarPhuongTien?.onTaiTaiNguyenPhuongTienTheoMaDinhDanh(
-              maDinhDanhPhuongTien: getDanhSachMaDinhDanhPhuongTien?[index],
-            );
+            await onGetEntityResourceManagement?.getQuanLyTrangThaiHangarPhuongTien?.onTaiTaiNguyenPhuongTienTheoMaDinhDanh(maDinhDanhPhuongTien: getDanhSachMaDinhDanhPhuongTien?[index]);
           },
         );
       }
@@ -424,9 +421,7 @@ class QUANLYDIEUKHIENCHUYENKICHBANCHIENDAU with CauTrucThucThiCoBan, DanhSachQua
         // for (int index = 0; index < 2; index++) {
         cauTrucThucThiTuanTuSS010.onAddDonViThucThiTuanTu(
           onThucThiTuanTu: () async {
-            await onGetEntityResourceManagement?.getQuanLyTrangThaiHangarPhuongTien?.onTaiTaiNguyenPhuongTienTheoMaDinhDanh(
-              maDinhDanhPhuongTien: getDanhSachMaDinhDanhPhuongTien?[index],
-            );
+            await onGetEntityResourceManagement?.getQuanLyTrangThaiHangarPhuongTien?.onTaiTaiNguyenPhuongTienTheoMaDinhDanh(maDinhDanhPhuongTien: getDanhSachMaDinhDanhPhuongTien?[index]);
           },
         );
       }
@@ -493,34 +488,31 @@ class QUANLYDIEUKHIENCHUYENKICHBANCHIENDAU with CauTrucThucThiCoBan, DanhSachQua
     // );
   }
 
-  Future<void> onTSTCThucThiTanCongLienKichHinhThucSS010({
-    required MoHinhPhuongTienTongQuat? phuongTien,
-    bool? phuongTienSS070,
-    bool? phuongTienSS072,
-    bool? phuongTienSS074,
-  }) async {
-    await getNhiemVuChienDauChonChiDinh?.getMoHinh?.getKichBanChienDau?.getBangDieuKhienGiaiDoanThuocKichBan?.getBangDieuKhienGiaiDoanThuocDoiHinhVKDK
-        ?.onTSTCThucThiTanCongLienKichHinhThucSS010(phuongTien: phuongTien, phuongTienSS070: phuongTienSS070, phuongTienSS072: phuongTienSS072, phuongTienSS074: phuongTienSS074);
+  Future<void> onTSTCThucThiTanCongLienKichHinhThucSS010({required MoHinhPhuongTienTongQuat? phuongTien, bool? phuongTienSS070, bool? phuongTienSS072, bool? phuongTienSS074}) async {
+    await getNhiemVuChienDauChonChiDinh?.getMoHinh?.getKichBanChienDau?.getBangDieuKhienGiaiDoanThuocKichBan?.getBangDieuKhienGiaiDoanThuocDoiHinhVKDK?.onTSTCThucThiTanCongLienKichHinhThucSS010(
+      phuongTien: phuongTien,
+      phuongTienSS070: phuongTienSS070,
+      phuongTienSS072: phuongTienSS072,
+      phuongTienSS074: phuongTienSS074,
+    );
   }
 
-  Future<void> onTSTCThucThiTanCongLienKichHinhThucSS020({
-    required MoHinhPhuongTienTongQuat? phuongTien,
-    bool? phuongTienSS070,
-    bool? phuongTienSS072,
-    bool? phuongTienSS074,
-  }) async {
-    await getNhiemVuChienDauChonChiDinh?.getMoHinh?.getKichBanChienDau?.getBangDieuKhienGiaiDoanThuocKichBan?.getBangDieuKhienGiaiDoanThuocDoiHinhVKDK
-        ?.onTSTCThucThiTanCongLienKichHinhThucSS020(phuongTien: phuongTien, phuongTienSS070: phuongTienSS070, phuongTienSS072: phuongTienSS072, phuongTienSS074: phuongTienSS074);
+  Future<void> onTSTCThucThiTanCongLienKichHinhThucSS020({required MoHinhPhuongTienTongQuat? phuongTien, bool? phuongTienSS070, bool? phuongTienSS072, bool? phuongTienSS074}) async {
+    await getNhiemVuChienDauChonChiDinh?.getMoHinh?.getKichBanChienDau?.getBangDieuKhienGiaiDoanThuocKichBan?.getBangDieuKhienGiaiDoanThuocDoiHinhVKDK?.onTSTCThucThiTanCongLienKichHinhThucSS020(
+      phuongTien: phuongTien,
+      phuongTienSS070: phuongTienSS070,
+      phuongTienSS072: phuongTienSS072,
+      phuongTienSS074: phuongTienSS074,
+    );
   }
 
-  Future<void> onTSTCThucThiTanCongLienKichHinhThucSS030({
-    required MoHinhPhuongTienTongQuat? phuongTien,
-    bool? phuongTienSS070,
-    bool? phuongTienSS072,
-    bool? phuongTienSS074,
-  }) async {
-    await getNhiemVuChienDauChonChiDinh?.getMoHinh?.getKichBanChienDau?.getBangDieuKhienGiaiDoanThuocKichBan?.getBangDieuKhienGiaiDoanThuocDoiHinhVKDK
-        ?.onTSTCThucThiTanCongLienKichHinhThucSS030(phuongTien: phuongTien, phuongTienSS070: phuongTienSS070, phuongTienSS072: phuongTienSS072, phuongTienSS074: phuongTienSS074);
+  Future<void> onTSTCThucThiTanCongLienKichHinhThucSS030({required MoHinhPhuongTienTongQuat? phuongTien, bool? phuongTienSS070, bool? phuongTienSS072, bool? phuongTienSS074}) async {
+    await getNhiemVuChienDauChonChiDinh?.getMoHinh?.getKichBanChienDau?.getBangDieuKhienGiaiDoanThuocKichBan?.getBangDieuKhienGiaiDoanThuocDoiHinhVKDK?.onTSTCThucThiTanCongLienKichHinhThucSS030(
+      phuongTien: phuongTien,
+      phuongTienSS070: phuongTienSS070,
+      phuongTienSS072: phuongTienSS072,
+      phuongTienSS074: phuongTienSS074,
+    );
   }
 
   /// -----
@@ -636,709 +628,376 @@ class QUANLYDIEUKHIENCHUYENKICHBANCHIENDAU with CauTrucThucThiCoBan, DanhSachQua
   /// -----
   Future<void> onNgatKetNoiSpritePhuongTien() async {
     await Future.wait([
-      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhDSTP?.getTrangThaiPhuongTienSS020?.getMoHinh?.getSpritePhuongTien?.onRemoveFromParent().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
-
-      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhDSTP?.getTrangThaiPhuongTienSS020?.getMoHinh?.getSpritePhuongTien?.onRemoveFromParent().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
-      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhDSTP?.getTrangThaiPhuongTienSS022?.getMoHinh?.getSpritePhuongTien?.onRemoveFromParent().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
-      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhDSTP?.getTrangThaiPhuongTienSS024?.getMoHinh?.getSpritePhuongTien?.onRemoveFromParent().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
-      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhDSTP?.getTrangThaiPhuongTienSS026?.getMoHinh?.getSpritePhuongTien?.onRemoveFromParent().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
-      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhDSTP?.getTrangThaiPhuongTienSS028?.getMoHinh?.getSpritePhuongTien?.onRemoveFromParent().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
-      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhDSTP?.getTrangThaiPhuongTienSS030?.getMoHinh?.getSpritePhuongTien?.onRemoveFromParent().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
-      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhDSTP?.getTrangThaiPhuongTienSS032?.getMoHinh?.getSpritePhuongTien?.onRemoveFromParent().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
-      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhDSTP?.getTrangThaiPhuongTienSS034?.getMoHinh?.getSpritePhuongTien?.onRemoveFromParent().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
-      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhDSTP?.getTrangThaiPhuongTienSS036?.getMoHinh?.getSpritePhuongTien?.onRemoveFromParent().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
-      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhDSTP?.getTrangThaiPhuongTienSS038?.getMoHinh?.getSpritePhuongTien?.onRemoveFromParent().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
-      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhDSTP?.getTrangThaiPhuongTienSS040?.getMoHinh?.getSpritePhuongTien?.onRemoveFromParent().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
-      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhDSTP?.getTrangThaiPhuongTienSS042?.getMoHinh?.getSpritePhuongTien?.onRemoveFromParent().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
-      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhDSTP?.getTrangThaiPhuongTienSS044?.getMoHinh?.getSpritePhuongTien?.onRemoveFromParent().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
-      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhDSTP?.getTrangThaiPhuongTienSS046?.getMoHinh?.getSpritePhuongTien?.onRemoveFromParent().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
-      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhDSTP?.getTrangThaiPhuongTienSS048?.getMoHinh?.getSpritePhuongTien?.onRemoveFromParent().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
-      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhDSTP?.getTrangThaiPhuongTienSS050?.getMoHinh?.getSpritePhuongTien?.onRemoveFromParent().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
-      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhDSTP?.getTrangThaiPhuongTienSS052?.getMoHinh?.getSpritePhuongTien?.onRemoveFromParent().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
-      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhDSTP?.getTrangThaiPhuongTienSS054?.getMoHinh?.getSpritePhuongTien?.onRemoveFromParent().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
-      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhDSTP?.getTrangThaiPhuongTienSS056?.getMoHinh?.getSpritePhuongTien?.onRemoveFromParent().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
-      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhDSTP?.getTrangThaiPhuongTienSS058?.getMoHinh?.getSpritePhuongTien?.onRemoveFromParent().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
-      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhDSTP?.getTrangThaiPhuongTienSS060?.getMoHinh?.getSpritePhuongTien?.onRemoveFromParent().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
-      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhDSTP?.getTrangThaiPhuongTienSS062?.getMoHinh?.getSpritePhuongTien?.onRemoveFromParent().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
-      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhDSTP?.getTrangThaiPhuongTienSS064?.getMoHinh?.getSpritePhuongTien?.onRemoveFromParent().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
-      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhDSTP?.getTrangThaiPhuongTienSS066?.getMoHinh?.getSpritePhuongTien?.onRemoveFromParent().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
-      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhDSTP?.getTrangThaiPhuongTienSS068?.getMoHinh?.getSpritePhuongTien?.onRemoveFromParent().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
-      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhDSTP?.getTrangThaiPhuongTienSS070?.getMoHinh?.getSpritePhuongTien?.onRemoveFromParent().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
-      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhDSTP?.getTrangThaiPhuongTienSS072?.getMoHinh?.getSpritePhuongTien?.onRemoveFromParent().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
-      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhDSTP?.getTrangThaiPhuongTienSS074?.getMoHinh?.getSpritePhuongTien?.onRemoveFromParent().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
-      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhDSTP?.getTrangThaiPhuongTienSS076?.getMoHinh?.getSpritePhuongTien?.onRemoveFromParent().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
-      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhDSTP?.getTrangThaiPhuongTienSS078?.getMoHinh?.getSpritePhuongTien?.onRemoveFromParent().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhDSTP?.getTrangThaiPhuongTienSS020?.onNgatKetNoiSprite().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhDSTP?.getTrangThaiPhuongTienSS022?.onNgatKetNoiSprite().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhDSTP?.getTrangThaiPhuongTienSS024?.onNgatKetNoiSprite().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhDSTP?.getTrangThaiPhuongTienSS026?.onNgatKetNoiSprite().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhDSTP?.getTrangThaiPhuongTienSS028?.onNgatKetNoiSprite().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhDSTP?.getTrangThaiPhuongTienSS030?.onNgatKetNoiSprite().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhDSTP?.getTrangThaiPhuongTienSS032?.onNgatKetNoiSprite().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhDSTP?.getTrangThaiPhuongTienSS034?.onNgatKetNoiSprite().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhDSTP?.getTrangThaiPhuongTienSS036?.onNgatKetNoiSprite().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhDSTP?.getTrangThaiPhuongTienSS038?.onNgatKetNoiSprite().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhDSTP?.getTrangThaiPhuongTienSS040?.onNgatKetNoiSprite().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhDSTP?.getTrangThaiPhuongTienSS042?.onNgatKetNoiSprite().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhDSTP?.getTrangThaiPhuongTienSS044?.onNgatKetNoiSprite().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhDSTP?.getTrangThaiPhuongTienSS046?.onNgatKetNoiSprite().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhDSTP?.getTrangThaiPhuongTienSS048?.onNgatKetNoiSprite().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhDSTP?.getTrangThaiPhuongTienSS050?.onNgatKetNoiSprite().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhDSTP?.getTrangThaiPhuongTienSS052?.onNgatKetNoiSprite().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhDSTP?.getTrangThaiPhuongTienSS054?.onNgatKetNoiSprite().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhDSTP?.getTrangThaiPhuongTienSS056?.onNgatKetNoiSprite().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhDSTP?.getTrangThaiPhuongTienSS058?.onNgatKetNoiSprite().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhDSTP?.getTrangThaiPhuongTienSS060?.onNgatKetNoiSprite().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhDSTP?.getTrangThaiPhuongTienSS062?.onNgatKetNoiSprite().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhDSTP?.getTrangThaiPhuongTienSS064?.onNgatKetNoiSprite().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhDSTP?.getTrangThaiPhuongTienSS066?.onNgatKetNoiSprite().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhDSTP?.getTrangThaiPhuongTienSS068?.onNgatKetNoiSprite().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhDSTP?.getTrangThaiPhuongTienSS070?.onNgatKetNoiSprite().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhDSTP?.getTrangThaiPhuongTienSS072?.onNgatKetNoiSprite().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhDSTP?.getTrangThaiPhuongTienSS074?.onNgatKetNoiSprite().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhDSTP?.getTrangThaiPhuongTienSS076?.onNgatKetNoiSprite().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhDSTP?.getTrangThaiPhuongTienSS078?.onNgatKetNoiSprite().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
 
       /// -----
       /// TODO: Đội Hình TTTS
       /// -----
-      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhTTTS?.getTrangThaiPhuongTienSS020?.getMoHinh?.getSpritePhuongTien?.onRemoveFromParent().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
-      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhTTTS?.getTrangThaiPhuongTienSS022?.getMoHinh?.getSpritePhuongTien?.onRemoveFromParent().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
-      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhTTTS?.getTrangThaiPhuongTienSS024?.getMoHinh?.getSpritePhuongTien?.onRemoveFromParent().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
-      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhTTTS?.getTrangThaiPhuongTienSS026?.getMoHinh?.getSpritePhuongTien?.onRemoveFromParent().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
-      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhTTTS?.getTrangThaiPhuongTienSS028?.getMoHinh?.getSpritePhuongTien?.onRemoveFromParent().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
-      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhTTTS?.getTrangThaiPhuongTienSS030?.getMoHinh?.getSpritePhuongTien?.onRemoveFromParent().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
-      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhTTTS?.getTrangThaiPhuongTienSS032?.getMoHinh?.getSpritePhuongTien?.onRemoveFromParent().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
-      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhTTTS?.getTrangThaiPhuongTienSS034?.getMoHinh?.getSpritePhuongTien?.onRemoveFromParent().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
-      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhTTTS?.getTrangThaiPhuongTienSS036?.getMoHinh?.getSpritePhuongTien?.onRemoveFromParent().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
-      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhTTTS?.getTrangThaiPhuongTienSS038?.getMoHinh?.getSpritePhuongTien?.onRemoveFromParent().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
-      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhTTTS?.getTrangThaiPhuongTienSS040?.getMoHinh?.getSpritePhuongTien?.onRemoveFromParent().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
-      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhTTTS?.getTrangThaiPhuongTienSS042?.getMoHinh?.getSpritePhuongTien?.onRemoveFromParent().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
-      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhTTTS?.getTrangThaiPhuongTienSS044?.getMoHinh?.getSpritePhuongTien?.onRemoveFromParent().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
-      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhTTTS?.getTrangThaiPhuongTienSS046?.getMoHinh?.getSpritePhuongTien?.onRemoveFromParent().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
-      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhTTTS?.getTrangThaiPhuongTienSS048?.getMoHinh?.getSpritePhuongTien?.onRemoveFromParent().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
-      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhTTTS?.getTrangThaiPhuongTienSS050?.getMoHinh?.getSpritePhuongTien?.onRemoveFromParent().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
-      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhTTTS?.getTrangThaiPhuongTienSS052?.getMoHinh?.getSpritePhuongTien?.onRemoveFromParent().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
-      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhTTTS?.getTrangThaiPhuongTienSS054?.getMoHinh?.getSpritePhuongTien?.onRemoveFromParent().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
-      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhTTTS?.getTrangThaiPhuongTienSS056?.getMoHinh?.getSpritePhuongTien?.onRemoveFromParent().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
-      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhTTTS?.getTrangThaiPhuongTienSS058?.getMoHinh?.getSpritePhuongTien?.onRemoveFromParent().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
-      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhTTTS?.getTrangThaiPhuongTienSS060?.getMoHinh?.getSpritePhuongTien?.onRemoveFromParent().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
-      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhTTTS?.getTrangThaiPhuongTienSS062?.getMoHinh?.getSpritePhuongTien?.onRemoveFromParent().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
-      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhTTTS?.getTrangThaiPhuongTienSS064?.getMoHinh?.getSpritePhuongTien?.onRemoveFromParent().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
-      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhTTTS?.getTrangThaiPhuongTienSS066?.getMoHinh?.getSpritePhuongTien?.onRemoveFromParent().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
-      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhTTTS?.getTrangThaiPhuongTienSS068?.getMoHinh?.getSpritePhuongTien?.onRemoveFromParent().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
-      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhTTTS?.getTrangThaiPhuongTienSS070?.getMoHinh?.getSpritePhuongTien?.onRemoveFromParent().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
-      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhTTTS?.getTrangThaiPhuongTienSS072?.getMoHinh?.getSpritePhuongTien?.onRemoveFromParent().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
-      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhTTTS?.getTrangThaiPhuongTienSS074?.getMoHinh?.getSpritePhuongTien?.onRemoveFromParent().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
-      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhTTTS?.getTrangThaiPhuongTienSS076?.getMoHinh?.getSpritePhuongTien?.onRemoveFromParent().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
-      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhTTTS?.getTrangThaiPhuongTienSS078?.getMoHinh?.getSpritePhuongTien?.onRemoveFromParent().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhTTTS?.getTrangThaiPhuongTienSS020?.onNgatKetNoiSprite().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhTTTS?.getTrangThaiPhuongTienSS022?.onNgatKetNoiSprite().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhTTTS?.getTrangThaiPhuongTienSS024?.onNgatKetNoiSprite().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhTTTS?.getTrangThaiPhuongTienSS026?.onNgatKetNoiSprite().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhTTTS?.getTrangThaiPhuongTienSS028?.onNgatKetNoiSprite().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhTTTS?.getTrangThaiPhuongTienSS030?.onNgatKetNoiSprite().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhTTTS?.getTrangThaiPhuongTienSS032?.onNgatKetNoiSprite().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhTTTS?.getTrangThaiPhuongTienSS034?.onNgatKetNoiSprite().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhTTTS?.getTrangThaiPhuongTienSS036?.onNgatKetNoiSprite().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhTTTS?.getTrangThaiPhuongTienSS038?.onNgatKetNoiSprite().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhTTTS?.getTrangThaiPhuongTienSS040?.onNgatKetNoiSprite().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhTTTS?.getTrangThaiPhuongTienSS042?.onNgatKetNoiSprite().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhTTTS?.getTrangThaiPhuongTienSS044?.onNgatKetNoiSprite().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhTTTS?.getTrangThaiPhuongTienSS046?.onNgatKetNoiSprite().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhTTTS?.getTrangThaiPhuongTienSS048?.onNgatKetNoiSprite().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhTTTS?.getTrangThaiPhuongTienSS050?.onNgatKetNoiSprite().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhTTTS?.getTrangThaiPhuongTienSS052?.onNgatKetNoiSprite().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhTTTS?.getTrangThaiPhuongTienSS054?.onNgatKetNoiSprite().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhTTTS?.getTrangThaiPhuongTienSS056?.onNgatKetNoiSprite().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhTTTS?.getTrangThaiPhuongTienSS058?.onNgatKetNoiSprite().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhTTTS?.getTrangThaiPhuongTienSS060?.onNgatKetNoiSprite().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhTTTS?.getTrangThaiPhuongTienSS062?.onNgatKetNoiSprite().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhTTTS?.getTrangThaiPhuongTienSS064?.onNgatKetNoiSprite().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhTTTS?.getTrangThaiPhuongTienSS066?.onNgatKetNoiSprite().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhTTTS?.getTrangThaiPhuongTienSS068?.onNgatKetNoiSprite().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhTTTS?.getTrangThaiPhuongTienSS070?.onNgatKetNoiSprite().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhTTTS?.getTrangThaiPhuongTienSS072?.onNgatKetNoiSprite().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhTTTS?.getTrangThaiPhuongTienSS074?.onNgatKetNoiSprite().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhTTTS?.getTrangThaiPhuongTienSS076?.onNgatKetNoiSprite().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhTTTS?.getTrangThaiPhuongTienSS078?.onNgatKetNoiSprite().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
 
       /// -----
       /// TODO: Đội Hình STTC
       /// -----
-      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhSTTC?.getTrangThaiPhuongTienSS020?.getMoHinh?.getSpritePhuongTien?.onRemoveFromParent().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
-      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhSTTC?.getTrangThaiPhuongTienSS022?.getMoHinh?.getSpritePhuongTien?.onRemoveFromParent().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
-      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhSTTC?.getTrangThaiPhuongTienSS024?.getMoHinh?.getSpritePhuongTien?.onRemoveFromParent().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
-      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhSTTC?.getTrangThaiPhuongTienSS026?.getMoHinh?.getSpritePhuongTien?.onRemoveFromParent().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
-      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhSTTC?.getTrangThaiPhuongTienSS028?.getMoHinh?.getSpritePhuongTien?.onRemoveFromParent().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
-      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhSTTC?.getTrangThaiPhuongTienSS030?.getMoHinh?.getSpritePhuongTien?.onRemoveFromParent().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
-      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhSTTC?.getTrangThaiPhuongTienSS032?.getMoHinh?.getSpritePhuongTien?.onRemoveFromParent().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
-      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhSTTC?.getTrangThaiPhuongTienSS034?.getMoHinh?.getSpritePhuongTien?.onRemoveFromParent().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
-      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhSTTC?.getTrangThaiPhuongTienSS036?.getMoHinh?.getSpritePhuongTien?.onRemoveFromParent().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
-      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhSTTC?.getTrangThaiPhuongTienSS038?.getMoHinh?.getSpritePhuongTien?.onRemoveFromParent().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
-      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhSTTC?.getTrangThaiPhuongTienSS040?.getMoHinh?.getSpritePhuongTien?.onRemoveFromParent().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
-      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhSTTC?.getTrangThaiPhuongTienSS042?.getMoHinh?.getSpritePhuongTien?.onRemoveFromParent().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
-      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhSTTC?.getTrangThaiPhuongTienSS044?.getMoHinh?.getSpritePhuongTien?.onRemoveFromParent().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
-      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhSTTC?.getTrangThaiPhuongTienSS046?.getMoHinh?.getSpritePhuongTien?.onRemoveFromParent().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
-      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhSTTC?.getTrangThaiPhuongTienSS048?.getMoHinh?.getSpritePhuongTien?.onRemoveFromParent().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
-      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhSTTC?.getTrangThaiPhuongTienSS050?.getMoHinh?.getSpritePhuongTien?.onRemoveFromParent().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
-      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhSTTC?.getTrangThaiPhuongTienSS052?.getMoHinh?.getSpritePhuongTien?.onRemoveFromParent().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
-      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhSTTC?.getTrangThaiPhuongTienSS054?.getMoHinh?.getSpritePhuongTien?.onRemoveFromParent().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
-      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhSTTC?.getTrangThaiPhuongTienSS056?.getMoHinh?.getSpritePhuongTien?.onRemoveFromParent().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
-      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhSTTC?.getTrangThaiPhuongTienSS058?.getMoHinh?.getSpritePhuongTien?.onRemoveFromParent().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
-      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhSTTC?.getTrangThaiPhuongTienSS060?.getMoHinh?.getSpritePhuongTien?.onRemoveFromParent().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
-      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhSTTC?.getTrangThaiPhuongTienSS062?.getMoHinh?.getSpritePhuongTien?.onRemoveFromParent().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
-      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhSTTC?.getTrangThaiPhuongTienSS064?.getMoHinh?.getSpritePhuongTien?.onRemoveFromParent().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
-      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhSTTC?.getTrangThaiPhuongTienSS066?.getMoHinh?.getSpritePhuongTien?.onRemoveFromParent().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
-      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhSTTC?.getTrangThaiPhuongTienSS068?.getMoHinh?.getSpritePhuongTien?.onRemoveFromParent().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
-      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhSTTC?.getTrangThaiPhuongTienSS070?.getMoHinh?.getSpritePhuongTien?.onRemoveFromParent().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
-      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhSTTC?.getTrangThaiPhuongTienSS072?.getMoHinh?.getSpritePhuongTien?.onRemoveFromParent().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
-      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhSTTC?.getTrangThaiPhuongTienSS074?.getMoHinh?.getSpritePhuongTien?.onRemoveFromParent().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
-      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhSTTC?.getTrangThaiPhuongTienSS076?.getMoHinh?.getSpritePhuongTien?.onRemoveFromParent().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
-      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhSTTC?.getTrangThaiPhuongTienSS078?.getMoHinh?.getSpritePhuongTien?.onRemoveFromParent().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhSTTC?.getTrangThaiPhuongTienSS020?.onNgatKetNoiSprite().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhSTTC?.getTrangThaiPhuongTienSS022?.onNgatKetNoiSprite().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhSTTC?.getTrangThaiPhuongTienSS024?.onNgatKetNoiSprite().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhSTTC?.getTrangThaiPhuongTienSS026?.onNgatKetNoiSprite().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhSTTC?.getTrangThaiPhuongTienSS028?.onNgatKetNoiSprite().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhSTTC?.getTrangThaiPhuongTienSS030?.onNgatKetNoiSprite().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhSTTC?.getTrangThaiPhuongTienSS032?.onNgatKetNoiSprite().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhSTTC?.getTrangThaiPhuongTienSS034?.onNgatKetNoiSprite().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhSTTC?.getTrangThaiPhuongTienSS036?.onNgatKetNoiSprite().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhSTTC?.getTrangThaiPhuongTienSS038?.onNgatKetNoiSprite().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhSTTC?.getTrangThaiPhuongTienSS040?.onNgatKetNoiSprite().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhSTTC?.getTrangThaiPhuongTienSS042?.onNgatKetNoiSprite().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhSTTC?.getTrangThaiPhuongTienSS044?.onNgatKetNoiSprite().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhSTTC?.getTrangThaiPhuongTienSS046?.onNgatKetNoiSprite().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhSTTC?.getTrangThaiPhuongTienSS048?.onNgatKetNoiSprite().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhSTTC?.getTrangThaiPhuongTienSS050?.onNgatKetNoiSprite().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhSTTC?.getTrangThaiPhuongTienSS052?.onNgatKetNoiSprite().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhSTTC?.getTrangThaiPhuongTienSS054?.onNgatKetNoiSprite().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhSTTC?.getTrangThaiPhuongTienSS056?.onNgatKetNoiSprite().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhSTTC?.getTrangThaiPhuongTienSS058?.onNgatKetNoiSprite().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhSTTC?.getTrangThaiPhuongTienSS060?.onNgatKetNoiSprite().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhSTTC?.getTrangThaiPhuongTienSS062?.onNgatKetNoiSprite().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhSTTC?.getTrangThaiPhuongTienSS064?.onNgatKetNoiSprite().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhSTTC?.getTrangThaiPhuongTienSS066?.onNgatKetNoiSprite().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhSTTC?.getTrangThaiPhuongTienSS068?.onNgatKetNoiSprite().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhSTTC?.getTrangThaiPhuongTienSS070?.onNgatKetNoiSprite().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhSTTC?.getTrangThaiPhuongTienSS072?.onNgatKetNoiSprite().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhSTTC?.getTrangThaiPhuongTienSS074?.onNgatKetNoiSprite().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhSTTC?.getTrangThaiPhuongTienSS076?.onNgatKetNoiSprite().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhSTTC?.getTrangThaiPhuongTienSS078?.onNgatKetNoiSprite().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
 
       /// -----
       /// TODO: Đội Hình QDCV
       /// -----
-      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhQDCV?.getTrangThaiPhuongTienSS020?.getMoHinh?.getSpritePhuongTien?.onRemoveFromParent().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
-      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhQDCV?.getTrangThaiPhuongTienSS022?.getMoHinh?.getSpritePhuongTien?.onRemoveFromParent().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
-      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhQDCV?.getTrangThaiPhuongTienSS024?.getMoHinh?.getSpritePhuongTien?.onRemoveFromParent().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
-      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhQDCV?.getTrangThaiPhuongTienSS026?.getMoHinh?.getSpritePhuongTien?.onRemoveFromParent().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
-      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhQDCV?.getTrangThaiPhuongTienSS028?.getMoHinh?.getSpritePhuongTien?.onRemoveFromParent().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
-      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhQDCV?.getTrangThaiPhuongTienSS030?.getMoHinh?.getSpritePhuongTien?.onRemoveFromParent().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
-      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhQDCV?.getTrangThaiPhuongTienSS032?.getMoHinh?.getSpritePhuongTien?.onRemoveFromParent().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
-      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhQDCV?.getTrangThaiPhuongTienSS034?.getMoHinh?.getSpritePhuongTien?.onRemoveFromParent().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
-      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhQDCV?.getTrangThaiPhuongTienSS036?.getMoHinh?.getSpritePhuongTien?.onRemoveFromParent().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
-      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhQDCV?.getTrangThaiPhuongTienSS038?.getMoHinh?.getSpritePhuongTien?.onRemoveFromParent().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
-      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhQDCV?.getTrangThaiPhuongTienSS040?.getMoHinh?.getSpritePhuongTien?.onRemoveFromParent().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
-      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhQDCV?.getTrangThaiPhuongTienSS042?.getMoHinh?.getSpritePhuongTien?.onRemoveFromParent().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
-      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhQDCV?.getTrangThaiPhuongTienSS044?.getMoHinh?.getSpritePhuongTien?.onRemoveFromParent().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
-      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhQDCV?.getTrangThaiPhuongTienSS046?.getMoHinh?.getSpritePhuongTien?.onRemoveFromParent().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
-      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhQDCV?.getTrangThaiPhuongTienSS048?.getMoHinh?.getSpritePhuongTien?.onRemoveFromParent().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
-      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhQDCV?.getTrangThaiPhuongTienSS050?.getMoHinh?.getSpritePhuongTien?.onRemoveFromParent().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
-      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhQDCV?.getTrangThaiPhuongTienSS052?.getMoHinh?.getSpritePhuongTien?.onRemoveFromParent().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
-      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhQDCV?.getTrangThaiPhuongTienSS054?.getMoHinh?.getSpritePhuongTien?.onRemoveFromParent().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
-      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhQDCV?.getTrangThaiPhuongTienSS056?.getMoHinh?.getSpritePhuongTien?.onRemoveFromParent().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
-      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhQDCV?.getTrangThaiPhuongTienSS058?.getMoHinh?.getSpritePhuongTien?.onRemoveFromParent().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
-      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhQDCV?.getTrangThaiPhuongTienSS060?.getMoHinh?.getSpritePhuongTien?.onRemoveFromParent().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
-      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhQDCV?.getTrangThaiPhuongTienSS062?.getMoHinh?.getSpritePhuongTien?.onRemoveFromParent().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
-      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhQDCV?.getTrangThaiPhuongTienSS064?.getMoHinh?.getSpritePhuongTien?.onRemoveFromParent().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
-      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhQDCV?.getTrangThaiPhuongTienSS066?.getMoHinh?.getSpritePhuongTien?.onRemoveFromParent().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
-      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhQDCV?.getTrangThaiPhuongTienSS068?.getMoHinh?.getSpritePhuongTien?.onRemoveFromParent().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
-      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhQDCV?.getTrangThaiPhuongTienSS070?.getMoHinh?.getSpritePhuongTien?.onRemoveFromParent().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
-      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhQDCV?.getTrangThaiPhuongTienSS072?.getMoHinh?.getSpritePhuongTien?.onRemoveFromParent().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
-      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhQDCV?.getTrangThaiPhuongTienSS074?.getMoHinh?.getSpritePhuongTien?.onRemoveFromParent().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
-      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhQDCV?.getTrangThaiPhuongTienSS076?.getMoHinh?.getSpritePhuongTien?.onRemoveFromParent().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
-      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhQDCV?.getTrangThaiPhuongTienSS078?.getMoHinh?.getSpritePhuongTien?.onRemoveFromParent().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhQDCV?.getTrangThaiPhuongTienSS020?.onNgatKetNoiSprite().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhQDCV?.getTrangThaiPhuongTienSS022?.onNgatKetNoiSprite().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhQDCV?.getTrangThaiPhuongTienSS024?.onNgatKetNoiSprite().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhQDCV?.getTrangThaiPhuongTienSS026?.onNgatKetNoiSprite().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhQDCV?.getTrangThaiPhuongTienSS028?.onNgatKetNoiSprite().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhQDCV?.getTrangThaiPhuongTienSS030?.onNgatKetNoiSprite().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhQDCV?.getTrangThaiPhuongTienSS032?.onNgatKetNoiSprite().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhQDCV?.getTrangThaiPhuongTienSS034?.onNgatKetNoiSprite().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhQDCV?.getTrangThaiPhuongTienSS036?.onNgatKetNoiSprite().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhQDCV?.getTrangThaiPhuongTienSS038?.onNgatKetNoiSprite().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhQDCV?.getTrangThaiPhuongTienSS040?.onNgatKetNoiSprite().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhQDCV?.getTrangThaiPhuongTienSS042?.onNgatKetNoiSprite().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhQDCV?.getTrangThaiPhuongTienSS044?.onNgatKetNoiSprite().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhQDCV?.getTrangThaiPhuongTienSS046?.onNgatKetNoiSprite().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhQDCV?.getTrangThaiPhuongTienSS048?.onNgatKetNoiSprite().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhQDCV?.getTrangThaiPhuongTienSS050?.onNgatKetNoiSprite().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhQDCV?.getTrangThaiPhuongTienSS052?.onNgatKetNoiSprite().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhQDCV?.getTrangThaiPhuongTienSS054?.onNgatKetNoiSprite().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhQDCV?.getTrangThaiPhuongTienSS056?.onNgatKetNoiSprite().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhQDCV?.getTrangThaiPhuongTienSS058?.onNgatKetNoiSprite().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhQDCV?.getTrangThaiPhuongTienSS060?.onNgatKetNoiSprite().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhQDCV?.getTrangThaiPhuongTienSS062?.onNgatKetNoiSprite().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhQDCV?.getTrangThaiPhuongTienSS064?.onNgatKetNoiSprite().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhQDCV?.getTrangThaiPhuongTienSS066?.onNgatKetNoiSprite().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhQDCV?.getTrangThaiPhuongTienSS068?.onNgatKetNoiSprite().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhQDCV?.getTrangThaiPhuongTienSS070?.onNgatKetNoiSprite().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhQDCV?.getTrangThaiPhuongTienSS072?.onNgatKetNoiSprite().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhQDCV?.getTrangThaiPhuongTienSS074?.onNgatKetNoiSprite().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhQDCV?.getTrangThaiPhuongTienSS076?.onNgatKetNoiSprite().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhQDCV?.getTrangThaiPhuongTienSS078?.onNgatKetNoiSprite().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
 
       /// -----
       /// TODO: Đội Hình SCCH
       /// -----
-      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhSCCH?.getTrangThaiPhuongTienSS020?.getMoHinh?.getSpritePhuongTien?.onRemoveFromParent().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
-      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhSCCH?.getTrangThaiPhuongTienSS022?.getMoHinh?.getSpritePhuongTien?.onRemoveFromParent().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
-      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhSCCH?.getTrangThaiPhuongTienSS024?.getMoHinh?.getSpritePhuongTien?.onRemoveFromParent().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
-      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhSCCH?.getTrangThaiPhuongTienSS026?.getMoHinh?.getSpritePhuongTien?.onRemoveFromParent().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
-      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhSCCH?.getTrangThaiPhuongTienSS028?.getMoHinh?.getSpritePhuongTien?.onRemoveFromParent().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
-      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhSCCH?.getTrangThaiPhuongTienSS030?.getMoHinh?.getSpritePhuongTien?.onRemoveFromParent().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
-      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhSCCH?.getTrangThaiPhuongTienSS032?.getMoHinh?.getSpritePhuongTien?.onRemoveFromParent().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
-      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhSCCH?.getTrangThaiPhuongTienSS034?.getMoHinh?.getSpritePhuongTien?.onRemoveFromParent().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
-      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhSCCH?.getTrangThaiPhuongTienSS036?.getMoHinh?.getSpritePhuongTien?.onRemoveFromParent().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
-      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhSCCH?.getTrangThaiPhuongTienSS038?.getMoHinh?.getSpritePhuongTien?.onRemoveFromParent().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
-      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhSCCH?.getTrangThaiPhuongTienSS040?.getMoHinh?.getSpritePhuongTien?.onRemoveFromParent().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
-      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhSCCH?.getTrangThaiPhuongTienSS042?.getMoHinh?.getSpritePhuongTien?.onRemoveFromParent().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
-      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhSCCH?.getTrangThaiPhuongTienSS044?.getMoHinh?.getSpritePhuongTien?.onRemoveFromParent().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
-      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhSCCH?.getTrangThaiPhuongTienSS046?.getMoHinh?.getSpritePhuongTien?.onRemoveFromParent().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
-      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhSCCH?.getTrangThaiPhuongTienSS048?.getMoHinh?.getSpritePhuongTien?.onRemoveFromParent().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
-      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhSCCH?.getTrangThaiPhuongTienSS050?.getMoHinh?.getSpritePhuongTien?.onRemoveFromParent().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
-      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhSCCH?.getTrangThaiPhuongTienSS052?.getMoHinh?.getSpritePhuongTien?.onRemoveFromParent().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
-      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhSCCH?.getTrangThaiPhuongTienSS054?.getMoHinh?.getSpritePhuongTien?.onRemoveFromParent().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
-      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhSCCH?.getTrangThaiPhuongTienSS056?.getMoHinh?.getSpritePhuongTien?.onRemoveFromParent().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
-      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhSCCH?.getTrangThaiPhuongTienSS058?.getMoHinh?.getSpritePhuongTien?.onRemoveFromParent().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
-      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhSCCH?.getTrangThaiPhuongTienSS060?.getMoHinh?.getSpritePhuongTien?.onRemoveFromParent().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
-      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhSCCH?.getTrangThaiPhuongTienSS062?.getMoHinh?.getSpritePhuongTien?.onRemoveFromParent().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
-      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhSCCH?.getTrangThaiPhuongTienSS064?.getMoHinh?.getSpritePhuongTien?.onRemoveFromParent().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
-      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhSCCH?.getTrangThaiPhuongTienSS066?.getMoHinh?.getSpritePhuongTien?.onRemoveFromParent().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
-      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhSCCH?.getTrangThaiPhuongTienSS068?.getMoHinh?.getSpritePhuongTien?.onRemoveFromParent().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
-      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhSCCH?.getTrangThaiPhuongTienSS070?.getMoHinh?.getSpritePhuongTien?.onRemoveFromParent().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
-      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhSCCH?.getTrangThaiPhuongTienSS072?.getMoHinh?.getSpritePhuongTien?.onRemoveFromParent().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
-      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhSCCH?.getTrangThaiPhuongTienSS074?.getMoHinh?.getSpritePhuongTien?.onRemoveFromParent().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
-      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhSCCH?.getTrangThaiPhuongTienSS076?.getMoHinh?.getSpritePhuongTien?.onRemoveFromParent().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
-      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhSCCH?.getTrangThaiPhuongTienSS078?.getMoHinh?.getSpritePhuongTien?.onRemoveFromParent().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhSCCH?.getTrangThaiPhuongTienSS020?.onNgatKetNoiSprite().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhSCCH?.getTrangThaiPhuongTienSS022?.onNgatKetNoiSprite().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhSCCH?.getTrangThaiPhuongTienSS024?.onNgatKetNoiSprite().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhSCCH?.getTrangThaiPhuongTienSS026?.onNgatKetNoiSprite().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhSCCH?.getTrangThaiPhuongTienSS028?.onNgatKetNoiSprite().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhSCCH?.getTrangThaiPhuongTienSS030?.onNgatKetNoiSprite().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhSCCH?.getTrangThaiPhuongTienSS032?.onNgatKetNoiSprite().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhSCCH?.getTrangThaiPhuongTienSS034?.onNgatKetNoiSprite().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhSCCH?.getTrangThaiPhuongTienSS036?.onNgatKetNoiSprite().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhSCCH?.getTrangThaiPhuongTienSS038?.onNgatKetNoiSprite().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhSCCH?.getTrangThaiPhuongTienSS040?.onNgatKetNoiSprite().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhSCCH?.getTrangThaiPhuongTienSS042?.onNgatKetNoiSprite().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhSCCH?.getTrangThaiPhuongTienSS044?.onNgatKetNoiSprite().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhSCCH?.getTrangThaiPhuongTienSS046?.onNgatKetNoiSprite().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhSCCH?.getTrangThaiPhuongTienSS048?.onNgatKetNoiSprite().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhSCCH?.getTrangThaiPhuongTienSS050?.onNgatKetNoiSprite().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhSCCH?.getTrangThaiPhuongTienSS052?.onNgatKetNoiSprite().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhSCCH?.getTrangThaiPhuongTienSS054?.onNgatKetNoiSprite().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhSCCH?.getTrangThaiPhuongTienSS056?.onNgatKetNoiSprite().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhSCCH?.getTrangThaiPhuongTienSS058?.onNgatKetNoiSprite().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhSCCH?.getTrangThaiPhuongTienSS060?.onNgatKetNoiSprite().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhSCCH?.getTrangThaiPhuongTienSS062?.onNgatKetNoiSprite().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhSCCH?.getTrangThaiPhuongTienSS064?.onNgatKetNoiSprite().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhSCCH?.getTrangThaiPhuongTienSS066?.onNgatKetNoiSprite().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhSCCH?.getTrangThaiPhuongTienSS068?.onNgatKetNoiSprite().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhSCCH?.getTrangThaiPhuongTienSS070?.onNgatKetNoiSprite().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhSCCH?.getTrangThaiPhuongTienSS072?.onNgatKetNoiSprite().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhSCCH?.getTrangThaiPhuongTienSS074?.onNgatKetNoiSprite().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhSCCH?.getTrangThaiPhuongTienSS076?.onNgatKetNoiSprite().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhSCCH?.getTrangThaiPhuongTienSS078?.onNgatKetNoiSprite().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
 
       /// -----
       /// TODO: Đội Hình TSTC
       /// -----
-      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhTSTC?.getTrangThaiPhuongTienSS020?.getMoHinh?.getSpritePhuongTien?.onRemoveFromParent().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
-      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhTSTC?.getTrangThaiPhuongTienSS022?.getMoHinh?.getSpritePhuongTien?.onRemoveFromParent().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
-      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhTSTC?.getTrangThaiPhuongTienSS024?.getMoHinh?.getSpritePhuongTien?.onRemoveFromParent().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
-      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhTSTC?.getTrangThaiPhuongTienSS026?.getMoHinh?.getSpritePhuongTien?.onRemoveFromParent().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
-      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhTSTC?.getTrangThaiPhuongTienSS028?.getMoHinh?.getSpritePhuongTien?.onRemoveFromParent().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
-      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhTSTC?.getTrangThaiPhuongTienSS030?.getMoHinh?.getSpritePhuongTien?.onRemoveFromParent().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
-      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhTSTC?.getTrangThaiPhuongTienSS032?.getMoHinh?.getSpritePhuongTien?.onRemoveFromParent().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
-      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhTSTC?.getTrangThaiPhuongTienSS034?.getMoHinh?.getSpritePhuongTien?.onRemoveFromParent().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
-      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhTSTC?.getTrangThaiPhuongTienSS036?.getMoHinh?.getSpritePhuongTien?.onRemoveFromParent().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
-      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhTSTC?.getTrangThaiPhuongTienSS038?.getMoHinh?.getSpritePhuongTien?.onRemoveFromParent().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
-      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhTSTC?.getTrangThaiPhuongTienSS040?.getMoHinh?.getSpritePhuongTien?.onRemoveFromParent().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
-      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhTSTC?.getTrangThaiPhuongTienSS042?.getMoHinh?.getSpritePhuongTien?.onRemoveFromParent().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
-      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhTSTC?.getTrangThaiPhuongTienSS044?.getMoHinh?.getSpritePhuongTien?.onRemoveFromParent().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
-      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhTSTC?.getTrangThaiPhuongTienSS046?.getMoHinh?.getSpritePhuongTien?.onRemoveFromParent().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
-      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhTSTC?.getTrangThaiPhuongTienSS048?.getMoHinh?.getSpritePhuongTien?.onRemoveFromParent().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
-      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhTSTC?.getTrangThaiPhuongTienSS050?.getMoHinh?.getSpritePhuongTien?.onRemoveFromParent().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
-      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhTSTC?.getTrangThaiPhuongTienSS052?.getMoHinh?.getSpritePhuongTien?.onRemoveFromParent().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
-      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhTSTC?.getTrangThaiPhuongTienSS054?.getMoHinh?.getSpritePhuongTien?.onRemoveFromParent().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
-      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhTSTC?.getTrangThaiPhuongTienSS056?.getMoHinh?.getSpritePhuongTien?.onRemoveFromParent().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
-      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhTSTC?.getTrangThaiPhuongTienSS058?.getMoHinh?.getSpritePhuongTien?.onRemoveFromParent().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
-      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhTSTC?.getTrangThaiPhuongTienSS060?.getMoHinh?.getSpritePhuongTien?.onRemoveFromParent().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
-      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhTSTC?.getTrangThaiPhuongTienSS062?.getMoHinh?.getSpritePhuongTien?.onRemoveFromParent().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
-      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhTSTC?.getTrangThaiPhuongTienSS064?.getMoHinh?.getSpritePhuongTien?.onRemoveFromParent().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
-      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhTSTC?.getTrangThaiPhuongTienSS066?.getMoHinh?.getSpritePhuongTien?.onRemoveFromParent().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
-      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhTSTC?.getTrangThaiPhuongTienSS068?.getMoHinh?.getSpritePhuongTien?.onRemoveFromParent().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
-      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhTSTC?.getTrangThaiPhuongTienSS070?.getMoHinh?.getSpritePhuongTien?.onRemoveFromParent().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
-      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhTSTC?.getTrangThaiPhuongTienSS072?.getMoHinh?.getSpritePhuongTien?.onRemoveFromParent().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
-      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhTSTC?.getTrangThaiPhuongTienSS074?.getMoHinh?.getSpritePhuongTien?.onRemoveFromParent().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
-      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhTSTC?.getTrangThaiPhuongTienSS076?.getMoHinh?.getSpritePhuongTien?.onRemoveFromParent().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
-      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhTSTC?.getTrangThaiPhuongTienSS078?.getMoHinh?.getSpritePhuongTien?.onRemoveFromParent().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhTSTC?.getTrangThaiPhuongTienSS020?.onNgatKetNoiSprite().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhTSTC?.getTrangThaiPhuongTienSS022?.onNgatKetNoiSprite().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhTSTC?.getTrangThaiPhuongTienSS024?.onNgatKetNoiSprite().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhTSTC?.getTrangThaiPhuongTienSS026?.onNgatKetNoiSprite().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhTSTC?.getTrangThaiPhuongTienSS028?.onNgatKetNoiSprite().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhTSTC?.getTrangThaiPhuongTienSS030?.onNgatKetNoiSprite().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhTSTC?.getTrangThaiPhuongTienSS032?.onNgatKetNoiSprite().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhTSTC?.getTrangThaiPhuongTienSS034?.onNgatKetNoiSprite().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhTSTC?.getTrangThaiPhuongTienSS036?.onNgatKetNoiSprite().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhTSTC?.getTrangThaiPhuongTienSS038?.onNgatKetNoiSprite().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhTSTC?.getTrangThaiPhuongTienSS040?.onNgatKetNoiSprite().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhTSTC?.getTrangThaiPhuongTienSS042?.onNgatKetNoiSprite().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhTSTC?.getTrangThaiPhuongTienSS044?.onNgatKetNoiSprite().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhTSTC?.getTrangThaiPhuongTienSS046?.onNgatKetNoiSprite().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhTSTC?.getTrangThaiPhuongTienSS048?.onNgatKetNoiSprite().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhTSTC?.getTrangThaiPhuongTienSS050?.onNgatKetNoiSprite().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhTSTC?.getTrangThaiPhuongTienSS052?.onNgatKetNoiSprite().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhTSTC?.getTrangThaiPhuongTienSS054?.onNgatKetNoiSprite().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhTSTC?.getTrangThaiPhuongTienSS056?.onNgatKetNoiSprite().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhTSTC?.getTrangThaiPhuongTienSS058?.onNgatKetNoiSprite().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhTSTC?.getTrangThaiPhuongTienSS060?.onNgatKetNoiSprite().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhTSTC?.getTrangThaiPhuongTienSS062?.onNgatKetNoiSprite().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhTSTC?.getTrangThaiPhuongTienSS064?.onNgatKetNoiSprite().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhTSTC?.getTrangThaiPhuongTienSS066?.onNgatKetNoiSprite().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhTSTC?.getTrangThaiPhuongTienSS068?.onNgatKetNoiSprite().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhTSTC?.getTrangThaiPhuongTienSS070?.onNgatKetNoiSprite().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhTSTC?.getTrangThaiPhuongTienSS072?.onNgatKetNoiSprite().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhTSTC?.getTrangThaiPhuongTienSS074?.onNgatKetNoiSprite().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhTSTC?.getTrangThaiPhuongTienSS076?.onNgatKetNoiSprite().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhTSTC?.getTrangThaiPhuongTienSS078?.onNgatKetNoiSprite().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
 
       /// -----
       /// TODO: Đội Hình VKTD
       /// -----
-      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVKTD?.getTrangThaiPhuongTienSS020?.getMoHinh?.getSpritePhuongTien?.onRemoveFromParent().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
-      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVKTD?.getTrangThaiPhuongTienSS022?.getMoHinh?.getSpritePhuongTien?.onRemoveFromParent().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
-      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVKTD?.getTrangThaiPhuongTienSS024?.getMoHinh?.getSpritePhuongTien?.onRemoveFromParent().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
-      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVKTD?.getTrangThaiPhuongTienSS026?.getMoHinh?.getSpritePhuongTien?.onRemoveFromParent().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
-      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVKTD?.getTrangThaiPhuongTienSS028?.getMoHinh?.getSpritePhuongTien?.onRemoveFromParent().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
-      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVKTD?.getTrangThaiPhuongTienSS030?.getMoHinh?.getSpritePhuongTien?.onRemoveFromParent().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
-      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVKTD?.getTrangThaiPhuongTienSS032?.getMoHinh?.getSpritePhuongTien?.onRemoveFromParent().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
-      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVKTD?.getTrangThaiPhuongTienSS034?.getMoHinh?.getSpritePhuongTien?.onRemoveFromParent().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
-      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVKTD?.getTrangThaiPhuongTienSS036?.getMoHinh?.getSpritePhuongTien?.onRemoveFromParent().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
-      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVKTD?.getTrangThaiPhuongTienSS038?.getMoHinh?.getSpritePhuongTien?.onRemoveFromParent().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
-      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVKTD?.getTrangThaiPhuongTienSS040?.getMoHinh?.getSpritePhuongTien?.onRemoveFromParent().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
-      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVKTD?.getTrangThaiPhuongTienSS042?.getMoHinh?.getSpritePhuongTien?.onRemoveFromParent().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
-      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVKTD?.getTrangThaiPhuongTienSS044?.getMoHinh?.getSpritePhuongTien?.onRemoveFromParent().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
-      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVKTD?.getTrangThaiPhuongTienSS046?.getMoHinh?.getSpritePhuongTien?.onRemoveFromParent().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
-      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVKTD?.getTrangThaiPhuongTienSS048?.getMoHinh?.getSpritePhuongTien?.onRemoveFromParent().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
-      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVKTD?.getTrangThaiPhuongTienSS050?.getMoHinh?.getSpritePhuongTien?.onRemoveFromParent().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
-      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVKTD?.getTrangThaiPhuongTienSS052?.getMoHinh?.getSpritePhuongTien?.onRemoveFromParent().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
-      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVKTD?.getTrangThaiPhuongTienSS054?.getMoHinh?.getSpritePhuongTien?.onRemoveFromParent().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
-      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVKTD?.getTrangThaiPhuongTienSS056?.getMoHinh?.getSpritePhuongTien?.onRemoveFromParent().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
-      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVKTD?.getTrangThaiPhuongTienSS058?.getMoHinh?.getSpritePhuongTien?.onRemoveFromParent().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
-      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVKTD?.getTrangThaiPhuongTienSS060?.getMoHinh?.getSpritePhuongTien?.onRemoveFromParent().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
-      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVKTD?.getTrangThaiPhuongTienSS062?.getMoHinh?.getSpritePhuongTien?.onRemoveFromParent().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
-      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVKTD?.getTrangThaiPhuongTienSS064?.getMoHinh?.getSpritePhuongTien?.onRemoveFromParent().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
-      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVKTD?.getTrangThaiPhuongTienSS066?.getMoHinh?.getSpritePhuongTien?.onRemoveFromParent().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
-      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVKTD?.getTrangThaiPhuongTienSS068?.getMoHinh?.getSpritePhuongTien?.onRemoveFromParent().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
-      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVKTD?.getTrangThaiPhuongTienSS070?.getMoHinh?.getSpritePhuongTien?.onRemoveFromParent().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
-      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVKTD?.getTrangThaiPhuongTienSS072?.getMoHinh?.getSpritePhuongTien?.onRemoveFromParent().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
-      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVKTD?.getTrangThaiPhuongTienSS074?.getMoHinh?.getSpritePhuongTien?.onRemoveFromParent().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
-      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVKTD?.getTrangThaiPhuongTienSS076?.getMoHinh?.getSpritePhuongTien?.onRemoveFromParent().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
-      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVKTD?.getTrangThaiPhuongTienSS078?.getMoHinh?.getSpritePhuongTien?.onRemoveFromParent().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVKTD?.getTrangThaiPhuongTienSS020?.onNgatKetNoiSprite().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVKTD?.getTrangThaiPhuongTienSS022?.onNgatKetNoiSprite().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVKTD?.getTrangThaiPhuongTienSS024?.onNgatKetNoiSprite().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVKTD?.getTrangThaiPhuongTienSS026?.onNgatKetNoiSprite().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVKTD?.getTrangThaiPhuongTienSS028?.onNgatKetNoiSprite().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVKTD?.getTrangThaiPhuongTienSS030?.onNgatKetNoiSprite().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVKTD?.getTrangThaiPhuongTienSS032?.onNgatKetNoiSprite().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVKTD?.getTrangThaiPhuongTienSS034?.onNgatKetNoiSprite().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVKTD?.getTrangThaiPhuongTienSS036?.onNgatKetNoiSprite().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVKTD?.getTrangThaiPhuongTienSS038?.onNgatKetNoiSprite().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVKTD?.getTrangThaiPhuongTienSS040?.onNgatKetNoiSprite().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVKTD?.getTrangThaiPhuongTienSS042?.onNgatKetNoiSprite().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVKTD?.getTrangThaiPhuongTienSS044?.onNgatKetNoiSprite().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVKTD?.getTrangThaiPhuongTienSS046?.onNgatKetNoiSprite().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVKTD?.getTrangThaiPhuongTienSS048?.onNgatKetNoiSprite().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVKTD?.getTrangThaiPhuongTienSS050?.onNgatKetNoiSprite().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVKTD?.getTrangThaiPhuongTienSS052?.onNgatKetNoiSprite().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVKTD?.getTrangThaiPhuongTienSS054?.onNgatKetNoiSprite().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVKTD?.getTrangThaiPhuongTienSS056?.onNgatKetNoiSprite().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVKTD?.getTrangThaiPhuongTienSS058?.onNgatKetNoiSprite().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVKTD?.getTrangThaiPhuongTienSS060?.onNgatKetNoiSprite().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVKTD?.getTrangThaiPhuongTienSS062?.onNgatKetNoiSprite().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVKTD?.getTrangThaiPhuongTienSS064?.onNgatKetNoiSprite().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVKTD?.getTrangThaiPhuongTienSS066?.onNgatKetNoiSprite().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVKTD?.getTrangThaiPhuongTienSS068?.onNgatKetNoiSprite().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVKTD?.getTrangThaiPhuongTienSS070?.onNgatKetNoiSprite().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVKTD?.getTrangThaiPhuongTienSS072?.onNgatKetNoiSprite().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVKTD?.getTrangThaiPhuongTienSS074?.onNgatKetNoiSprite().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVKTD?.getTrangThaiPhuongTienSS076?.onNgatKetNoiSprite().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVKTD?.getTrangThaiPhuongTienSS078?.onNgatKetNoiSprite().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
 
       /// -----
       /// TODO: Đội Hình VKDK
       /// -----
-      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVKDK?.getTrangThaiPhuongTienSS020?.getMoHinh?.getSpritePhuongTien?.onRemoveFromParent().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
-      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVKDK?.getTrangThaiPhuongTienSS022?.getMoHinh?.getSpritePhuongTien?.onRemoveFromParent().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
-      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVKDK?.getTrangThaiPhuongTienSS024?.getMoHinh?.getSpritePhuongTien?.onRemoveFromParent().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
-      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVKDK?.getTrangThaiPhuongTienSS026?.getMoHinh?.getSpritePhuongTien?.onRemoveFromParent().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
-      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVKDK?.getTrangThaiPhuongTienSS028?.getMoHinh?.getSpritePhuongTien?.onRemoveFromParent().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
-      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVKDK?.getTrangThaiPhuongTienSS030?.getMoHinh?.getSpritePhuongTien?.onRemoveFromParent().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
-      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVKDK?.getTrangThaiPhuongTienSS032?.getMoHinh?.getSpritePhuongTien?.onRemoveFromParent().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
-      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVKDK?.getTrangThaiPhuongTienSS034?.getMoHinh?.getSpritePhuongTien?.onRemoveFromParent().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
-      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVKDK?.getTrangThaiPhuongTienSS036?.getMoHinh?.getSpritePhuongTien?.onRemoveFromParent().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
-      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVKDK?.getTrangThaiPhuongTienSS038?.getMoHinh?.getSpritePhuongTien?.onRemoveFromParent().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
-      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVKDK?.getTrangThaiPhuongTienSS040?.getMoHinh?.getSpritePhuongTien?.onRemoveFromParent().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
-      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVKDK?.getTrangThaiPhuongTienSS042?.getMoHinh?.getSpritePhuongTien?.onRemoveFromParent().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
-      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVKDK?.getTrangThaiPhuongTienSS044?.getMoHinh?.getSpritePhuongTien?.onRemoveFromParent().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
-      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVKDK?.getTrangThaiPhuongTienSS046?.getMoHinh?.getSpritePhuongTien?.onRemoveFromParent().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
-      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVKDK?.getTrangThaiPhuongTienSS048?.getMoHinh?.getSpritePhuongTien?.onRemoveFromParent().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
-      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVKDK?.getTrangThaiPhuongTienSS050?.getMoHinh?.getSpritePhuongTien?.onRemoveFromParent().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
-      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVKDK?.getTrangThaiPhuongTienSS052?.getMoHinh?.getSpritePhuongTien?.onRemoveFromParent().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
-      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVKDK?.getTrangThaiPhuongTienSS054?.getMoHinh?.getSpritePhuongTien?.onRemoveFromParent().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
-      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVKDK?.getTrangThaiPhuongTienSS056?.getMoHinh?.getSpritePhuongTien?.onRemoveFromParent().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
-      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVKDK?.getTrangThaiPhuongTienSS058?.getMoHinh?.getSpritePhuongTien?.onRemoveFromParent().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
-      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVKDK?.getTrangThaiPhuongTienSS060?.getMoHinh?.getSpritePhuongTien?.onRemoveFromParent().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
-      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVKDK?.getTrangThaiPhuongTienSS062?.getMoHinh?.getSpritePhuongTien?.onRemoveFromParent().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
-      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVKDK?.getTrangThaiPhuongTienSS064?.getMoHinh?.getSpritePhuongTien?.onRemoveFromParent().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
-      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVKDK?.getTrangThaiPhuongTienSS066?.getMoHinh?.getSpritePhuongTien?.onRemoveFromParent().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
-      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVKDK?.getTrangThaiPhuongTienSS068?.getMoHinh?.getSpritePhuongTien?.onRemoveFromParent().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
-      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVKDK?.getTrangThaiPhuongTienSS070?.getMoHinh?.getSpritePhuongTien?.onRemoveFromParent().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
-      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVKDK?.getTrangThaiPhuongTienSS072?.getMoHinh?.getSpritePhuongTien?.onRemoveFromParent().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
-      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVKDK?.getTrangThaiPhuongTienSS074?.getMoHinh?.getSpritePhuongTien?.onRemoveFromParent().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
-      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVKDK?.getTrangThaiPhuongTienSS076?.getMoHinh?.getSpritePhuongTien?.onRemoveFromParent().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
-      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVKDK?.getTrangThaiPhuongTienSS078?.getMoHinh?.getSpritePhuongTien?.onRemoveFromParent().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVKDK?.getTrangThaiPhuongTienSS020?.onNgatKetNoiSprite().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVKDK?.getTrangThaiPhuongTienSS022?.onNgatKetNoiSprite().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVKDK?.getTrangThaiPhuongTienSS024?.onNgatKetNoiSprite().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVKDK?.getTrangThaiPhuongTienSS026?.onNgatKetNoiSprite().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVKDK?.getTrangThaiPhuongTienSS028?.onNgatKetNoiSprite().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVKDK?.getTrangThaiPhuongTienSS030?.onNgatKetNoiSprite().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVKDK?.getTrangThaiPhuongTienSS032?.onNgatKetNoiSprite().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVKDK?.getTrangThaiPhuongTienSS034?.onNgatKetNoiSprite().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVKDK?.getTrangThaiPhuongTienSS036?.onNgatKetNoiSprite().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVKDK?.getTrangThaiPhuongTienSS038?.onNgatKetNoiSprite().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVKDK?.getTrangThaiPhuongTienSS040?.onNgatKetNoiSprite().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVKDK?.getTrangThaiPhuongTienSS042?.onNgatKetNoiSprite().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVKDK?.getTrangThaiPhuongTienSS044?.onNgatKetNoiSprite().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVKDK?.getTrangThaiPhuongTienSS046?.onNgatKetNoiSprite().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVKDK?.getTrangThaiPhuongTienSS048?.onNgatKetNoiSprite().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVKDK?.getTrangThaiPhuongTienSS050?.onNgatKetNoiSprite().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVKDK?.getTrangThaiPhuongTienSS052?.onNgatKetNoiSprite().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVKDK?.getTrangThaiPhuongTienSS054?.onNgatKetNoiSprite().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVKDK?.getTrangThaiPhuongTienSS056?.onNgatKetNoiSprite().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVKDK?.getTrangThaiPhuongTienSS058?.onNgatKetNoiSprite().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVKDK?.getTrangThaiPhuongTienSS060?.onNgatKetNoiSprite().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVKDK?.getTrangThaiPhuongTienSS062?.onNgatKetNoiSprite().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVKDK?.getTrangThaiPhuongTienSS064?.onNgatKetNoiSprite().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVKDK?.getTrangThaiPhuongTienSS066?.onNgatKetNoiSprite().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVKDK?.getTrangThaiPhuongTienSS068?.onNgatKetNoiSprite().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVKDK?.getTrangThaiPhuongTienSS070?.onNgatKetNoiSprite().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVKDK?.getTrangThaiPhuongTienSS072?.onNgatKetNoiSprite().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVKDK?.getTrangThaiPhuongTienSS074?.onNgatKetNoiSprite().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVKDK?.getTrangThaiPhuongTienSS076?.onNgatKetNoiSprite().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVKDK?.getTrangThaiPhuongTienSS078?.onNgatKetNoiSprite().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
 
       /// -----
       /// TODO: Đội Hình VKNN
       /// -----
-      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVKNN?.getTrangThaiPhuongTienSS020?.getMoHinh?.getSpritePhuongTien?.onRemoveFromParent().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
-      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVKNN?.getTrangThaiPhuongTienSS022?.getMoHinh?.getSpritePhuongTien?.onRemoveFromParent().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
-      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVKNN?.getTrangThaiPhuongTienSS024?.getMoHinh?.getSpritePhuongTien?.onRemoveFromParent().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
-      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVKNN?.getTrangThaiPhuongTienSS026?.getMoHinh?.getSpritePhuongTien?.onRemoveFromParent().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
-      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVKNN?.getTrangThaiPhuongTienSS028?.getMoHinh?.getSpritePhuongTien?.onRemoveFromParent().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
-      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVKNN?.getTrangThaiPhuongTienSS030?.getMoHinh?.getSpritePhuongTien?.onRemoveFromParent().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
-      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVKNN?.getTrangThaiPhuongTienSS032?.getMoHinh?.getSpritePhuongTien?.onRemoveFromParent().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
-      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVKNN?.getTrangThaiPhuongTienSS034?.getMoHinh?.getSpritePhuongTien?.onRemoveFromParent().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
-      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVKNN?.getTrangThaiPhuongTienSS036?.getMoHinh?.getSpritePhuongTien?.onRemoveFromParent().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
-      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVKNN?.getTrangThaiPhuongTienSS038?.getMoHinh?.getSpritePhuongTien?.onRemoveFromParent().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
-      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVKNN?.getTrangThaiPhuongTienSS040?.getMoHinh?.getSpritePhuongTien?.onRemoveFromParent().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
-      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVKNN?.getTrangThaiPhuongTienSS042?.getMoHinh?.getSpritePhuongTien?.onRemoveFromParent().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
-      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVKNN?.getTrangThaiPhuongTienSS044?.getMoHinh?.getSpritePhuongTien?.onRemoveFromParent().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
-      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVKNN?.getTrangThaiPhuongTienSS046?.getMoHinh?.getSpritePhuongTien?.onRemoveFromParent().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
-      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVKNN?.getTrangThaiPhuongTienSS048?.getMoHinh?.getSpritePhuongTien?.onRemoveFromParent().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
-      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVKNN?.getTrangThaiPhuongTienSS050?.getMoHinh?.getSpritePhuongTien?.onRemoveFromParent().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
-      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVKNN?.getTrangThaiPhuongTienSS052?.getMoHinh?.getSpritePhuongTien?.onRemoveFromParent().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
-      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVKNN?.getTrangThaiPhuongTienSS054?.getMoHinh?.getSpritePhuongTien?.onRemoveFromParent().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
-      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVKNN?.getTrangThaiPhuongTienSS056?.getMoHinh?.getSpritePhuongTien?.onRemoveFromParent().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
-      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVKNN?.getTrangThaiPhuongTienSS058?.getMoHinh?.getSpritePhuongTien?.onRemoveFromParent().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
-      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVKNN?.getTrangThaiPhuongTienSS060?.getMoHinh?.getSpritePhuongTien?.onRemoveFromParent().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
-      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVKNN?.getTrangThaiPhuongTienSS062?.getMoHinh?.getSpritePhuongTien?.onRemoveFromParent().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
-      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVKNN?.getTrangThaiPhuongTienSS064?.getMoHinh?.getSpritePhuongTien?.onRemoveFromParent().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
-      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVKNN?.getTrangThaiPhuongTienSS066?.getMoHinh?.getSpritePhuongTien?.onRemoveFromParent().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
-      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVKNN?.getTrangThaiPhuongTienSS068?.getMoHinh?.getSpritePhuongTien?.onRemoveFromParent().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
-      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVKNN?.getTrangThaiPhuongTienSS070?.getMoHinh?.getSpritePhuongTien?.onRemoveFromParent().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
-      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVKNN?.getTrangThaiPhuongTienSS072?.getMoHinh?.getSpritePhuongTien?.onRemoveFromParent().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
-      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVKNN?.getTrangThaiPhuongTienSS074?.getMoHinh?.getSpritePhuongTien?.onRemoveFromParent().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
-      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVKNN?.getTrangThaiPhuongTienSS076?.getMoHinh?.getSpritePhuongTien?.onRemoveFromParent().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
-      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVKNN?.getTrangThaiPhuongTienSS078?.getMoHinh?.getSpritePhuongTien?.onRemoveFromParent().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVKNN?.getTrangThaiPhuongTienSS020?.onNgatKetNoiSprite().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVKNN?.getTrangThaiPhuongTienSS022?.onNgatKetNoiSprite().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVKNN?.getTrangThaiPhuongTienSS024?.onNgatKetNoiSprite().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVKNN?.getTrangThaiPhuongTienSS026?.onNgatKetNoiSprite().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVKNN?.getTrangThaiPhuongTienSS028?.onNgatKetNoiSprite().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVKNN?.getTrangThaiPhuongTienSS030?.onNgatKetNoiSprite().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVKNN?.getTrangThaiPhuongTienSS032?.onNgatKetNoiSprite().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVKNN?.getTrangThaiPhuongTienSS034?.onNgatKetNoiSprite().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVKNN?.getTrangThaiPhuongTienSS036?.onNgatKetNoiSprite().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVKNN?.getTrangThaiPhuongTienSS038?.onNgatKetNoiSprite().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVKNN?.getTrangThaiPhuongTienSS040?.onNgatKetNoiSprite().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVKNN?.getTrangThaiPhuongTienSS042?.onNgatKetNoiSprite().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVKNN?.getTrangThaiPhuongTienSS044?.onNgatKetNoiSprite().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVKNN?.getTrangThaiPhuongTienSS046?.onNgatKetNoiSprite().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVKNN?.getTrangThaiPhuongTienSS048?.onNgatKetNoiSprite().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVKNN?.getTrangThaiPhuongTienSS050?.onNgatKetNoiSprite().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVKNN?.getTrangThaiPhuongTienSS052?.onNgatKetNoiSprite().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVKNN?.getTrangThaiPhuongTienSS054?.onNgatKetNoiSprite().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVKNN?.getTrangThaiPhuongTienSS056?.onNgatKetNoiSprite().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVKNN?.getTrangThaiPhuongTienSS058?.onNgatKetNoiSprite().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVKNN?.getTrangThaiPhuongTienSS060?.onNgatKetNoiSprite().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVKNN?.getTrangThaiPhuongTienSS062?.onNgatKetNoiSprite().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVKNN?.getTrangThaiPhuongTienSS064?.onNgatKetNoiSprite().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVKNN?.getTrangThaiPhuongTienSS066?.onNgatKetNoiSprite().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVKNN?.getTrangThaiPhuongTienSS068?.onNgatKetNoiSprite().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVKNN?.getTrangThaiPhuongTienSS070?.onNgatKetNoiSprite().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVKNN?.getTrangThaiPhuongTienSS072?.onNgatKetNoiSprite().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVKNN?.getTrangThaiPhuongTienSS074?.onNgatKetNoiSprite().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVKNN?.getTrangThaiPhuongTienSS076?.onNgatKetNoiSprite().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVKNN?.getTrangThaiPhuongTienSS078?.onNgatKetNoiSprite().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
 
       /// -----
       /// TODO: Đội Hình VPTC
       /// -----
-      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVPTC?.getTrangThaiPhuongTienSS020?.getMoHinh?.getSpritePhuongTien?.onRemoveFromParent().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
-      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVPTC?.getTrangThaiPhuongTienSS022?.getMoHinh?.getSpritePhuongTien?.onRemoveFromParent().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
-      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVPTC?.getTrangThaiPhuongTienSS024?.getMoHinh?.getSpritePhuongTien?.onRemoveFromParent().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
-      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVPTC?.getTrangThaiPhuongTienSS026?.getMoHinh?.getSpritePhuongTien?.onRemoveFromParent().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
-      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVPTC?.getTrangThaiPhuongTienSS028?.getMoHinh?.getSpritePhuongTien?.onRemoveFromParent().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
-      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVPTC?.getTrangThaiPhuongTienSS030?.getMoHinh?.getSpritePhuongTien?.onRemoveFromParent().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
-      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVPTC?.getTrangThaiPhuongTienSS032?.getMoHinh?.getSpritePhuongTien?.onRemoveFromParent().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
-      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVPTC?.getTrangThaiPhuongTienSS034?.getMoHinh?.getSpritePhuongTien?.onRemoveFromParent().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
-      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVPTC?.getTrangThaiPhuongTienSS036?.getMoHinh?.getSpritePhuongTien?.onRemoveFromParent().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
-      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVPTC?.getTrangThaiPhuongTienSS038?.getMoHinh?.getSpritePhuongTien?.onRemoveFromParent().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
-      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVPTC?.getTrangThaiPhuongTienSS040?.getMoHinh?.getSpritePhuongTien?.onRemoveFromParent().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
-      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVPTC?.getTrangThaiPhuongTienSS042?.getMoHinh?.getSpritePhuongTien?.onRemoveFromParent().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
-      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVPTC?.getTrangThaiPhuongTienSS044?.getMoHinh?.getSpritePhuongTien?.onRemoveFromParent().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
-      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVPTC?.getTrangThaiPhuongTienSS046?.getMoHinh?.getSpritePhuongTien?.onRemoveFromParent().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
-      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVPTC?.getTrangThaiPhuongTienSS048?.getMoHinh?.getSpritePhuongTien?.onRemoveFromParent().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
-      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVPTC?.getTrangThaiPhuongTienSS050?.getMoHinh?.getSpritePhuongTien?.onRemoveFromParent().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
-      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVPTC?.getTrangThaiPhuongTienSS052?.getMoHinh?.getSpritePhuongTien?.onRemoveFromParent().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
-      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVPTC?.getTrangThaiPhuongTienSS054?.getMoHinh?.getSpritePhuongTien?.onRemoveFromParent().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
-      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVPTC?.getTrangThaiPhuongTienSS056?.getMoHinh?.getSpritePhuongTien?.onRemoveFromParent().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
-      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVPTC?.getTrangThaiPhuongTienSS058?.getMoHinh?.getSpritePhuongTien?.onRemoveFromParent().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
-      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVPTC?.getTrangThaiPhuongTienSS060?.getMoHinh?.getSpritePhuongTien?.onRemoveFromParent().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
-      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVPTC?.getTrangThaiPhuongTienSS062?.getMoHinh?.getSpritePhuongTien?.onRemoveFromParent().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
-      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVPTC?.getTrangThaiPhuongTienSS064?.getMoHinh?.getSpritePhuongTien?.onRemoveFromParent().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
-      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVPTC?.getTrangThaiPhuongTienSS066?.getMoHinh?.getSpritePhuongTien?.onRemoveFromParent().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
-      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVPTC?.getTrangThaiPhuongTienSS068?.getMoHinh?.getSpritePhuongTien?.onRemoveFromParent().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
-      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVPTC?.getTrangThaiPhuongTienSS070?.getMoHinh?.getSpritePhuongTien?.onRemoveFromParent().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
-      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVPTC?.getTrangThaiPhuongTienSS072?.getMoHinh?.getSpritePhuongTien?.onRemoveFromParent().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
-      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVPTC?.getTrangThaiPhuongTienSS074?.getMoHinh?.getSpritePhuongTien?.onRemoveFromParent().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
-      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVPTC?.getTrangThaiPhuongTienSS076?.getMoHinh?.getSpritePhuongTien?.onRemoveFromParent().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
-      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVPTC?.getTrangThaiPhuongTienSS078?.getMoHinh?.getSpritePhuongTien?.onRemoveFromParent().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVPTC?.getTrangThaiPhuongTienSS020?.onNgatKetNoiSprite().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVPTC?.getTrangThaiPhuongTienSS022?.onNgatKetNoiSprite().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVPTC?.getTrangThaiPhuongTienSS024?.onNgatKetNoiSprite().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVPTC?.getTrangThaiPhuongTienSS026?.onNgatKetNoiSprite().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVPTC?.getTrangThaiPhuongTienSS028?.onNgatKetNoiSprite().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVPTC?.getTrangThaiPhuongTienSS030?.onNgatKetNoiSprite().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVPTC?.getTrangThaiPhuongTienSS032?.onNgatKetNoiSprite().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVPTC?.getTrangThaiPhuongTienSS034?.onNgatKetNoiSprite().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVPTC?.getTrangThaiPhuongTienSS036?.onNgatKetNoiSprite().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVPTC?.getTrangThaiPhuongTienSS038?.onNgatKetNoiSprite().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVPTC?.getTrangThaiPhuongTienSS040?.onNgatKetNoiSprite().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVPTC?.getTrangThaiPhuongTienSS042?.onNgatKetNoiSprite().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVPTC?.getTrangThaiPhuongTienSS044?.onNgatKetNoiSprite().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVPTC?.getTrangThaiPhuongTienSS046?.onNgatKetNoiSprite().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVPTC?.getTrangThaiPhuongTienSS048?.onNgatKetNoiSprite().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVPTC?.getTrangThaiPhuongTienSS050?.onNgatKetNoiSprite().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVPTC?.getTrangThaiPhuongTienSS052?.onNgatKetNoiSprite().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVPTC?.getTrangThaiPhuongTienSS054?.onNgatKetNoiSprite().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVPTC?.getTrangThaiPhuongTienSS056?.onNgatKetNoiSprite().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVPTC?.getTrangThaiPhuongTienSS058?.onNgatKetNoiSprite().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVPTC?.getTrangThaiPhuongTienSS060?.onNgatKetNoiSprite().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVPTC?.getTrangThaiPhuongTienSS062?.onNgatKetNoiSprite().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVPTC?.getTrangThaiPhuongTienSS064?.onNgatKetNoiSprite().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVPTC?.getTrangThaiPhuongTienSS066?.onNgatKetNoiSprite().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVPTC?.getTrangThaiPhuongTienSS068?.onNgatKetNoiSprite().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVPTC?.getTrangThaiPhuongTienSS070?.onNgatKetNoiSprite().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVPTC?.getTrangThaiPhuongTienSS072?.onNgatKetNoiSprite().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVPTC?.getTrangThaiPhuongTienSS074?.onNgatKetNoiSprite().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVPTC?.getTrangThaiPhuongTienSS076?.onNgatKetNoiSprite().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVPTC?.getTrangThaiPhuongTienSS078?.onNgatKetNoiSprite().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
 
       /// -----
       /// TODO: Đội Hình VPPT
       /// -----
-      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVPPT?.getTrangThaiPhuongTienSS020?.getMoHinh?.getSpritePhuongTien?.onRemoveFromParent().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
-      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVPPT?.getTrangThaiPhuongTienSS022?.getMoHinh?.getSpritePhuongTien?.onRemoveFromParent().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
-      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVPPT?.getTrangThaiPhuongTienSS024?.getMoHinh?.getSpritePhuongTien?.onRemoveFromParent().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
-      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVPPT?.getTrangThaiPhuongTienSS026?.getMoHinh?.getSpritePhuongTien?.onRemoveFromParent().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
-      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVPPT?.getTrangThaiPhuongTienSS028?.getMoHinh?.getSpritePhuongTien?.onRemoveFromParent().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
-      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVPPT?.getTrangThaiPhuongTienSS030?.getMoHinh?.getSpritePhuongTien?.onRemoveFromParent().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
-      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVPPT?.getTrangThaiPhuongTienSS032?.getMoHinh?.getSpritePhuongTien?.onRemoveFromParent().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
-      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVPPT?.getTrangThaiPhuongTienSS034?.getMoHinh?.getSpritePhuongTien?.onRemoveFromParent().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
-      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVPPT?.getTrangThaiPhuongTienSS036?.getMoHinh?.getSpritePhuongTien?.onRemoveFromParent().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
-      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVPPT?.getTrangThaiPhuongTienSS038?.getMoHinh?.getSpritePhuongTien?.onRemoveFromParent().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
-      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVPPT?.getTrangThaiPhuongTienSS040?.getMoHinh?.getSpritePhuongTien?.onRemoveFromParent().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
-      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVPPT?.getTrangThaiPhuongTienSS042?.getMoHinh?.getSpritePhuongTien?.onRemoveFromParent().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
-      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVPPT?.getTrangThaiPhuongTienSS044?.getMoHinh?.getSpritePhuongTien?.onRemoveFromParent().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
-      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVPPT?.getTrangThaiPhuongTienSS046?.getMoHinh?.getSpritePhuongTien?.onRemoveFromParent().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
-      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVPPT?.getTrangThaiPhuongTienSS048?.getMoHinh?.getSpritePhuongTien?.onRemoveFromParent().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
-      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVPPT?.getTrangThaiPhuongTienSS050?.getMoHinh?.getSpritePhuongTien?.onRemoveFromParent().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
-      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVPPT?.getTrangThaiPhuongTienSS052?.getMoHinh?.getSpritePhuongTien?.onRemoveFromParent().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
-      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVPPT?.getTrangThaiPhuongTienSS054?.getMoHinh?.getSpritePhuongTien?.onRemoveFromParent().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
-      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVPPT?.getTrangThaiPhuongTienSS056?.getMoHinh?.getSpritePhuongTien?.onRemoveFromParent().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
-      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVPPT?.getTrangThaiPhuongTienSS058?.getMoHinh?.getSpritePhuongTien?.onRemoveFromParent().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
-      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVPPT?.getTrangThaiPhuongTienSS060?.getMoHinh?.getSpritePhuongTien?.onRemoveFromParent().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
-      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVPPT?.getTrangThaiPhuongTienSS062?.getMoHinh?.getSpritePhuongTien?.onRemoveFromParent().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
-      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVPPT?.getTrangThaiPhuongTienSS064?.getMoHinh?.getSpritePhuongTien?.onRemoveFromParent().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
-      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVPPT?.getTrangThaiPhuongTienSS066?.getMoHinh?.getSpritePhuongTien?.onRemoveFromParent().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
-      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVPPT?.getTrangThaiPhuongTienSS068?.getMoHinh?.getSpritePhuongTien?.onRemoveFromParent().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
-      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVPPT?.getTrangThaiPhuongTienSS070?.getMoHinh?.getSpritePhuongTien?.onRemoveFromParent().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
-      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVPPT?.getTrangThaiPhuongTienSS072?.getMoHinh?.getSpritePhuongTien?.onRemoveFromParent().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
-      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVPPT?.getTrangThaiPhuongTienSS074?.getMoHinh?.getSpritePhuongTien?.onRemoveFromParent().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
-      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVPPT?.getTrangThaiPhuongTienSS076?.getMoHinh?.getSpritePhuongTien?.onRemoveFromParent().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
-      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVPPT?.getTrangThaiPhuongTienSS078?.getMoHinh?.getSpritePhuongTien?.onRemoveFromParent().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVPPT?.getTrangThaiPhuongTienSS020?.onNgatKetNoiSprite().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVPPT?.getTrangThaiPhuongTienSS022?.onNgatKetNoiSprite().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVPPT?.getTrangThaiPhuongTienSS024?.onNgatKetNoiSprite().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVPPT?.getTrangThaiPhuongTienSS026?.onNgatKetNoiSprite().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVPPT?.getTrangThaiPhuongTienSS028?.onNgatKetNoiSprite().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVPPT?.getTrangThaiPhuongTienSS030?.onNgatKetNoiSprite().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVPPT?.getTrangThaiPhuongTienSS032?.onNgatKetNoiSprite().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVPPT?.getTrangThaiPhuongTienSS034?.onNgatKetNoiSprite().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVPPT?.getTrangThaiPhuongTienSS036?.onNgatKetNoiSprite().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVPPT?.getTrangThaiPhuongTienSS038?.onNgatKetNoiSprite().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVPPT?.getTrangThaiPhuongTienSS040?.onNgatKetNoiSprite().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVPPT?.getTrangThaiPhuongTienSS042?.onNgatKetNoiSprite().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVPPT?.getTrangThaiPhuongTienSS044?.onNgatKetNoiSprite().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVPPT?.getTrangThaiPhuongTienSS046?.onNgatKetNoiSprite().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVPPT?.getTrangThaiPhuongTienSS048?.onNgatKetNoiSprite().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVPPT?.getTrangThaiPhuongTienSS050?.onNgatKetNoiSprite().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVPPT?.getTrangThaiPhuongTienSS052?.onNgatKetNoiSprite().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVPPT?.getTrangThaiPhuongTienSS054?.onNgatKetNoiSprite().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVPPT?.getTrangThaiPhuongTienSS056?.onNgatKetNoiSprite().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVPPT?.getTrangThaiPhuongTienSS058?.onNgatKetNoiSprite().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVPPT?.getTrangThaiPhuongTienSS060?.onNgatKetNoiSprite().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVPPT?.getTrangThaiPhuongTienSS062?.onNgatKetNoiSprite().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVPPT?.getTrangThaiPhuongTienSS064?.onNgatKetNoiSprite().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVPPT?.getTrangThaiPhuongTienSS066?.onNgatKetNoiSprite().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVPPT?.getTrangThaiPhuongTienSS068?.onNgatKetNoiSprite().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVPPT?.getTrangThaiPhuongTienSS070?.onNgatKetNoiSprite().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVPPT?.getTrangThaiPhuongTienSS072?.onNgatKetNoiSprite().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVPPT?.getTrangThaiPhuongTienSS074?.onNgatKetNoiSprite().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVPPT?.getTrangThaiPhuongTienSS076?.onNgatKetNoiSprite().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVPPT?.getTrangThaiPhuongTienSS078?.onNgatKetNoiSprite().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
     ]);
 
     ///

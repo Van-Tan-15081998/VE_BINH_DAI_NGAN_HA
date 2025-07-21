@@ -45,6 +45,17 @@ class TrangThaiPhuongTien {
     return;
   }
 
+  /// -----
+  /// TODO:
+  /// -----
+  Future<void> onNgatKetNoiSprite() async {
+
+    getSpritePhuongTien?.onRemoveFromParent();
+    getSpriteChiSoPhuongTien?.onRemoveFromParent();
+
+    return;
+  }
+
   TrangThaiPhuongTien({required MoHinhPhuongTienTongQuat? value}) {
     caiDatMoHinh(value: value);
   }

@@ -40,7 +40,7 @@ class KhungVongLapBangDieuKhienChienDauSS01 extends Component with VongLapThoiGi
   }
 
   @override
-  FutureOr<void> update(double dt) async {
+  void update(double dt) {
 
       ///
       ///
@@ -48,12 +48,12 @@ class KhungVongLapBangDieuKhienChienDauSS01 extends Component with VongLapThoiGi
       ///
       ///
 
-      onVoidCapNhatChiSoTangTienTheoThoiGianThuc();
-      if (onBoolKiemTraTanXuatCapNhat() == false) {
-        return;
-      }
+      // onVoidCapNhatChiSoTangTienTheoThoiGianThuc();
+      // if (onBoolKiemTraTanXuatCapNhat() == false) {
+      //   return;
+      // }
 
-      await getTrangThaiTongQuat?.getBangDieuKhienChienDauSS01?.onLoop();
+      // getTrangThaiTongQuat?.getBangDieuKhienChienDauSS01?.onLoop();
 
   }
 }

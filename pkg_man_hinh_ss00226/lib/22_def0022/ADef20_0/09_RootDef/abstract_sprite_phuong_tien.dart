@@ -271,7 +271,7 @@ abstract class SpritePhuongTienCoBan extends SpriteAnimationComponent with HasVi
   }
 
   Stopwatch? stopwatch;
-  void onVoidCapNhatTrangThaiMoHinh() async {
+  void onVoidCapNhatTrangThaiMoHinh() {
     // await Future.delayed(Duration.zero);
     // if (kDebugMode) {
     //   stopwatch = Stopwatch();

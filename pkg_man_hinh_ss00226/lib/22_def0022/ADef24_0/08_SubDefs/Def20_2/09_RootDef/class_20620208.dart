@@ -51,7 +51,7 @@ class KhungVongLapSS01PkgManHinhSS00226 extends Component with VongLapThoiGianCo
   Stopwatch? stopwatch;
 
   @override
-  FutureOr<void> update(double dt) async {
+  void update(double dt) {
 
     // return;
 

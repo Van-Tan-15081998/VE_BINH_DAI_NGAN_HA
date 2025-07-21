@@ -85,6 +85,13 @@ class MoHinhViTriChienDauCo extends MoHinhCoBan {
     return false;
   }
 
+  bool onCheckBoolDieuKhienKhongSanSang() {
+    if (isKichHoatDieuKhien == false) {
+      return true;
+    }
+    return false;
+  }
+
   ///
   /// TODO: Tiến Trình Thực Thi Gắn Kết Vị Trí Chiến Đấu Cơ
   ///
