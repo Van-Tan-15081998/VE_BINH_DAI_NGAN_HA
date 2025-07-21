@@ -748,7 +748,8 @@ abstract class VIENDANTANCONGCOBAN with CauTrucThucThiCoBan {
     /// -----
     _duLieuJsonSuKienVaCham['[CHIEU_RONG_MAN_HINH_PHI_VAT_LY]'] = getChieuRongManHinhPhiVatLy ?? 0;
     _duLieuJsonSuKienVaCham['[CHIEU_CAO_MAN_HINH_PHI_VAT_LY]'] = getChieuCaoManHinhPhiVatLy ?? 0;
-    _duLieuJsonSuKienVaCham['[TRANG_THAI_TON_TAI]'] = getTrangThaiTonTai?.onCheckBoolKhoiTaoHoanTat() ?? false;
+    // _duLieuJsonSuKienVaCham['[TRANG_THAI_TON_TAI]'] = getTrangThaiTonTai?.onCheckBoolKhoiTaoHoanTat() ?? false;
+    _duLieuJsonSuKienVaCham['[TRANG_THAI_TON_TAI]'] = getTrangThaiTonTai?.onCheckBoolDangKichHoat() ?? false;
     _duLieuJsonSuKienVaCham['[CHIEU_RONG_THAN]'] = getChieuRongThan ?? 0;
     _duLieuJsonSuKienVaCham['[CHIEU_CAO_THAN]'] = getChieuCaoThan ?? 0;
     _duLieuJsonSuKienVaCham['[DX_TRONG_TAM]'] = getDxTrongTam ?? 0;
@@ -776,13 +777,21 @@ abstract class VIENDANTANCONGCOBAN with CauTrucThucThiCoBan {
   /// -----
   /// TODO:
   /// -----
+  double duLieuJsonBienPhai = 0;
+  double duLieuJsonBienTrai = 0;
+  double duLieuJsonBienTren = 0;
+  double duLieuJsonBienDuoi = 0;
+  double duLieuJsonChieuRongManHinhPhiVatLy = 0;
+  double duLieuJsonChieuCaoManHinhPhiVatLy = 0;
+
   void onXuLyDuLieuJsonLamPhang() {
     /// -----
     /// TODO:
     /// -----
     getDuLieuJsonLamPhang['[CHIEU_RONG_MAN_HINH_PHI_VAT_LY]'] = getChieuRongManHinhPhiVatLy ?? 0;
     getDuLieuJsonLamPhang['[CHIEU_CAO_MAN_HINH_PHI_VAT_LY]'] = getChieuCaoManHinhPhiVatLy ?? 0;
-    getDuLieuJsonLamPhang['[TRANG_THAI_TON_TAI]'] = getTrangThaiTonTai?.onCheckBoolKhoiTaoHoanTat() ?? false;
+    // getDuLieuJsonLamPhang['[TRANG_THAI_TON_TAI]'] = getTrangThaiTonTai?.onCheckBoolKhoiTaoHoanTat() ?? false;
+    getDuLieuJsonLamPhang['[TRANG_THAI_TON_TAI]'] = getTrangThaiTonTai?.onCheckBoolDangKichHoat() ?? false;
     getDuLieuJsonLamPhang['[CHIEU_RONG_THAN]'] = getChieuRongThan ?? 0;
     getDuLieuJsonLamPhang['[CHIEU_CAO_THAN]'] = getChieuCaoThan ?? 0;
     getDuLieuJsonLamPhang['[DX_TRONG_TAM]'] = getDxTrongTam ?? 0;
@@ -791,31 +800,31 @@ abstract class VIENDANTANCONGCOBAN with CauTrucThucThiCoBan {
     /// -----
     /// TODO:
     /// -----
-    double bienPhai = (getDuLieuJsonLamPhang['[DX_TRONG_TAM]'] ?? 0) + (getDuLieuJsonLamPhang['[CHIEU_RONG_THAN]'] ?? 0);
-    double bienTrai = (getDuLieuJsonLamPhang['[DX_TRONG_TAM]'] ?? 0) - (getDuLieuJsonLamPhang['[CHIEU_RONG_THAN]'] ?? 0);
-    double bienTren = (getDuLieuJsonLamPhang['[DY_TRONG_TAM]'] ?? 0) - (getDuLieuJsonLamPhang['[CHIEU_CAO_THAN]'] ?? 0);
-    double bienDuoi = (getDuLieuJsonLamPhang['[DY_TRONG_TAM]'] ?? 0) + (getDuLieuJsonLamPhang['[CHIEU_CAO_THAN]'] ?? 0);
-    double chieuRongManHinhPhiVatLy = getDuLieuJsonLamPhang['[CHIEU_RONG_MAN_HINH_PHI_VAT_LY]'] ?? 0;
-    double chieuCaoManHinhPhiVatLy = getDuLieuJsonLamPhang['[CHIEU_CAO_MAN_HINH_PHI_VAT_LY]'] ?? 0;
+    duLieuJsonBienPhai = (getDuLieuJsonLamPhang['[DX_TRONG_TAM]'] ?? 0) + (getDuLieuJsonLamPhang['[CHIEU_RONG_THAN]'] ?? 0);
+    duLieuJsonBienTrai = (getDuLieuJsonLamPhang['[DX_TRONG_TAM]'] ?? 0) - (getDuLieuJsonLamPhang['[CHIEU_RONG_THAN]'] ?? 0);
+    duLieuJsonBienTren = (getDuLieuJsonLamPhang['[DY_TRONG_TAM]'] ?? 0) - (getDuLieuJsonLamPhang['[CHIEU_CAO_THAN]'] ?? 0);
+    duLieuJsonBienDuoi = (getDuLieuJsonLamPhang['[DY_TRONG_TAM]'] ?? 0) + (getDuLieuJsonLamPhang['[CHIEU_CAO_THAN]'] ?? 0);
+    duLieuJsonChieuRongManHinhPhiVatLy = getDuLieuJsonLamPhang['[CHIEU_RONG_MAN_HINH_PHI_VAT_LY]'] ?? 0;
+    duLieuJsonChieuCaoManHinhPhiVatLy = getDuLieuJsonLamPhang['[CHIEU_CAO_MAN_HINH_PHI_VAT_LY]'] ?? 0;
 
     if (getDuLieuJsonLamPhang['[TRANG_THAI_TON_TAI]'] == false) {
       getDuLieuJsonLamPhang['[DI_CHUYEN_HIEN_THI]'] = false;
       return;
     }
 
-    if (bienPhai < 0) {
+    if (duLieuJsonBienPhai < 0) {
       getDuLieuJsonLamPhang['[DI_CHUYEN_HIEN_THI]'] = false;
       return;
     }
-    if (bienTrai > chieuRongManHinhPhiVatLy) {
+    if (duLieuJsonBienTrai > duLieuJsonChieuRongManHinhPhiVatLy) {
       getDuLieuJsonLamPhang['[DI_CHUYEN_HIEN_THI]'] = false;
       return;
     }
-    if (bienTren > chieuCaoManHinhPhiVatLy) {
+    if (duLieuJsonBienTren > duLieuJsonChieuCaoManHinhPhiVatLy) {
       getDuLieuJsonLamPhang['[DI_CHUYEN_HIEN_THI]'] = false;
       return;
     }
-    if (bienDuoi < 0) {
+    if (duLieuJsonBienDuoi < 0) {
       getDuLieuJsonLamPhang['[DI_CHUYEN_HIEN_THI]'] = false;
       return;
     }
@@ -906,6 +915,37 @@ abstract class VIENDANTANCONGCOBAN with CauTrucThucThiCoBan {
   DinhHuongBayLanCoBan get getDinhHuongBayLanNotNull => _dinhHuongBayLan ?? DinhHuongBayLanCoBan.onMacDinh();
   Future<void> caiDatDinhHuongBayLan({required DinhHuongBayLanCoBan? value}) async {
     _dinhHuongBayLan = value;
+    return;
+  }
+
+  /// -----
+  /// TODO: Tốc độ bay ban đầu (nguyên bản) của viên đạn
+  /// -----
+  TocDoCoBan? _tocDoBayNguyenBan;
+  TocDoCoBan? get getTocDoBayNguyenBan => _tocDoBayNguyenBan;
+  TocDoCoBan get getTocDoBayNguyenBanNotNull => _tocDoBayNguyenBan ?? TocDoBayCoBan.onMacDinh();
+  void onVoidCaiDatTocDoBayNguyenBan({required TocDoCoBan? value}) {
+    _tocDoBayNguyenBan = value;
+    return;
+  }
+
+  /// -----
+  /// TODO:
+  /// -----
+  QuanLyTrangThaiDanhSachMoHinhTongQuat? _quanLyTrangThaiDanhSachMoHinh;
+  QuanLyTrangThaiDanhSachMoHinhTongQuat? get getQuanLyTrangThaiDanhSachMoHinh => _quanLyTrangThaiDanhSachMoHinh;
+  Future<void> caiDatQuanLyTrangThaiDanhSachMoHinh({required QuanLyTrangThaiDanhSachMoHinhTongQuat? value}) async {
+    _quanLyTrangThaiDanhSachMoHinh = value;
+    return;
+  }
+
+  /// -----
+  /// TODO:
+  /// -----
+  QuanLyTrangThaiDieuKhienTinhToanTongQuat? _dieuKhienTinhToanTongQuat;
+  QuanLyTrangThaiDieuKhienTinhToanTongQuat? get getDieuKhienTinhToanTongQuat => _dieuKhienTinhToanTongQuat;
+  Future<void> caiDatDieuKhienTinhToanTongQuat({required QuanLyTrangThaiDieuKhienTinhToanTongQuat? value}) async {
+    _dieuKhienTinhToanTongQuat ??= value;
     return;
   }
 

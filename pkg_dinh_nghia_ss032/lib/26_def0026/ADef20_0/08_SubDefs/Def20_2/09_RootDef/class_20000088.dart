@@ -5,7 +5,6 @@ import 'package:pkg_dinh_nghia_ss032/26_def0026/ADef20_0/08_SubDefs/Def20_2/08_S
 import 'package:pkg_dinh_nghia_ss032/26_def0026/ADef20_0/08_SubDefs/Def20_2/08_SubDefs/Def24_4/09_RootDef/class_20000206.dart';
 
 class MoHinhHatVaChamCoBan with KhungThucThiCoBan {
-
   ///
   /// TODO: Mã Định Danh Của Mô Hình
   ///
@@ -70,7 +69,7 @@ class MoHinhHatVaChamCoBan with KhungThucThiCoBan {
   /// -----
   @override
   Future<void> onSetupRoot() async {
-     onVoidCaiDatThuocTinhSprite(value: MoHinhThuocTinhSpriteHatVaCham());
+    onVoidCaiDatThuocTinhSprite(value: MoHinhThuocTinhSpriteHatVaCham());
     await caiDatThuocTinhTichHop(value: MoHinhThuocTinhTichHopHatVaCham());
     await caiDatThuocTinhKichThuoc(value: MoHinhThuocTinhKichThuocHatVaCham());
 
@@ -128,7 +127,7 @@ class MoHinhHatVaChamCoBan with KhungThucThiCoBan {
     await getThuocTinhTichHop?.onInitRoot();
     await getThuocTinhKichThuoc?.onInitRoot();
 
-     onVoidXuLyKichThuocKhopVoiSprite();
+    onVoidXuLyKichThuocKhopVoiSprite();
 
     ///
     return;
@@ -158,8 +157,8 @@ class MoHinhHatVaChamCoBan with KhungThucThiCoBan {
     double chieuRongThanCapNhat = chieuRongThanNguyenBan * (chieuRongThanSpriteFrame / tongKichThuoc);
     double chieuCaoThanCapNhat = chieuCaoThanNguyenBan * (chieuCaoThanSpriteFrame / tongKichThuoc);
 
-     getThuocTinhKichThuoc?.onVoidCaiDatChieuRongThan(value: chieuRongThanCapNhat);
-     getThuocTinhKichThuoc?.onVoidCaiDatChieuCaoThan(value: chieuCaoThanCapNhat);
+    getThuocTinhKichThuoc?.onVoidCaiDatChieuRongThan(value: chieuRongThanCapNhat);
+    getThuocTinhKichThuoc?.onVoidCaiDatChieuCaoThan(value: chieuCaoThanCapNhat);
 
     return;
   }

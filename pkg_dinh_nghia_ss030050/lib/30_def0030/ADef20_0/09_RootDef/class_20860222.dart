@@ -2529,10 +2529,14 @@ class SUKIENVACHAMTHUOCPHUONGTIEN with CauTrucThucThiCoBan, DanhSachQuanLyTrangT
     /// -----
     /// TODO:
     /// -----
+    TRANGTHAIPHUONGTIENVACHAM? phuongTienVaCham;
+    Map<String, dynamic> mapDanhSachMaDinhDanhPhuongTienHoatDong = {};
+
     if (danhSachPhuongTienVaChamVienDan.isNotEmpty == true) {
       for (final phuongTienVaChamVienDan in danhSachPhuongTienVaChamVienDan.entries) {
-        TRANGTHAIPHUONGTIENVACHAM? phuongTienVaCham = getMapPhuongTienVaCham[phuongTienVaChamVienDan.key];
-
+        // TRANGTHAIPHUONGTIENVACHAM? phuongTienVaCham = getMapPhuongTienVaCham[phuongTienVaChamVienDan.key];
+        phuongTienVaCham = getMapPhuongTienVaCham[phuongTienVaChamVienDan.key];
+        //
         if (phuongTienVaCham?.getMoHinh?.getPhuongTien?.getMoHinh?.getTrangThaiTrongChienDau?.getTrangThaiTonTai?.onCheckBoolKhoiTaoHoanTat() == true) {
           if (phuongTienVaChamVienDan.value.isNotEmpty == true && phuongTienVaChamVienDan.value['[MA_DINH_DANH_VIEN_DAN_VA_CHAM]'] != '[]') {
             if (phuongTienVaCham?.getMoHinh?.getPhuongTien?.getMoHinh?.getTrangThaiTrongChienDau?.getMaDinhDanhVienDanVaCham == null) {
@@ -2560,7 +2564,8 @@ class SUKIENVACHAMTHUOCPHUONGTIEN with CauTrucThucThiCoBan, DanhSachQuanLyTrangT
 
         if (phuongTienVaChamVienDan.key == '[DANH_SACH_MA_DINH_DANH_PHUONG_TIEN_HOAT_DONG]') {
           getDanhSachMaDinhDanhPhuongTienHoatDong?.clear();
-          Map<String, dynamic> mapDanhSachMaDinhDanhPhuongTienHoatDong = phuongTienVaChamVienDan?.value ?? {};
+          // Map<String, dynamic> mapDanhSachMaDinhDanhPhuongTienHoatDong = phuongTienVaChamVienDan?.value ?? {};
+          mapDanhSachMaDinhDanhPhuongTienHoatDong = phuongTienVaChamVienDan?.value ?? {};
 
           // List<dynamic> danhSachMaDinhDanhPhuongTienHoatDong = mapDanhSachMaDinhDanhPhuongTienHoatDong.values.toList();
 

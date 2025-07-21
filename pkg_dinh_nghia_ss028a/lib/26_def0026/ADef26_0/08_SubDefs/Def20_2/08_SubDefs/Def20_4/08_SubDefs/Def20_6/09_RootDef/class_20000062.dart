@@ -13,13 +13,13 @@ abstract class VienDanCoBan extends VIENDANTANCONGCOBAN {
   /// -----
   /// TODO: Tốc độ bay ban đầu (nguyên bản) của viên đạn
   /// -----
-  TocDoCoBan? _tocDoBayNguyenBan;
-  TocDoCoBan? get getTocDoBayNguyenBan => _tocDoBayNguyenBan;
-  TocDoCoBan get getTocDoBayNguyenBanNotNull => _tocDoBayNguyenBan ?? TocDoBayCoBan.onMacDinh();
-  void onVoidCaiDatTocDoBayNguyenBan({required TocDoCoBan? value}) {
-    _tocDoBayNguyenBan = value;
-    return;
-  }
+  // TocDoCoBan? _tocDoBayNguyenBan;
+  // TocDoCoBan? get getTocDoBayNguyenBan => _tocDoBayNguyenBan;
+  // TocDoCoBan get getTocDoBayNguyenBanNotNull => _tocDoBayNguyenBan ?? TocDoBayCoBan.onMacDinh();
+  // void onVoidCaiDatTocDoBayNguyenBan({required TocDoCoBan? value}) {
+  //   _tocDoBayNguyenBan = value;
+  //   return;
+  // }
 
   /// -----
   /// TODO: Tốc độ bay tăng cường của viên đạn
@@ -160,22 +160,22 @@ abstract class VienDanCoBan extends VIENDANTANCONGCOBAN {
   /// -----
   /// TODO:
   /// -----
-  QuanLyTrangThaiDanhSachMoHinhTongQuat? _quanLyTrangThaiDanhSachMoHinh;
-  QuanLyTrangThaiDanhSachMoHinhTongQuat? get getQuanLyTrangThaiDanhSachMoHinh => _quanLyTrangThaiDanhSachMoHinh;
-  Future<void> caiDatQuanLyTrangThaiDanhSachMoHinh({required QuanLyTrangThaiDanhSachMoHinhTongQuat? value}) async {
-    _quanLyTrangThaiDanhSachMoHinh = value;
-    return;
-  }
-
-  /// -----
-  /// TODO:
-  /// -----
-  QuanLyTrangThaiDieuKhienTinhToanTongQuat? _dieuKhienTinhToanTongQuat;
-  QuanLyTrangThaiDieuKhienTinhToanTongQuat? get getDieuKhienTinhToanTongQuat => _dieuKhienTinhToanTongQuat;
-  Future<void> caiDatDieuKhienTinhToanTongQuat({required QuanLyTrangThaiDieuKhienTinhToanTongQuat? value}) async {
-    _dieuKhienTinhToanTongQuat ??= value;
-    return;
-  }
+  // QuanLyTrangThaiDanhSachMoHinhTongQuat? _quanLyTrangThaiDanhSachMoHinh;
+  // QuanLyTrangThaiDanhSachMoHinhTongQuat? get getQuanLyTrangThaiDanhSachMoHinh => _quanLyTrangThaiDanhSachMoHinh;
+  // Future<void> caiDatQuanLyTrangThaiDanhSachMoHinh({required QuanLyTrangThaiDanhSachMoHinhTongQuat? value}) async {
+  //   _quanLyTrangThaiDanhSachMoHinh = value;
+  //   return;
+  // }
+  //
+  // /// -----
+  // /// TODO:
+  // /// -----
+  // QuanLyTrangThaiDieuKhienTinhToanTongQuat? _dieuKhienTinhToanTongQuat;
+  // QuanLyTrangThaiDieuKhienTinhToanTongQuat? get getDieuKhienTinhToanTongQuat => _dieuKhienTinhToanTongQuat;
+  // Future<void> caiDatDieuKhienTinhToanTongQuat({required QuanLyTrangThaiDieuKhienTinhToanTongQuat? value}) async {
+  //   _dieuKhienTinhToanTongQuat ??= value;
+  //   return;
+  // }
 
   VienDanCoBan() {
     caiDatMaDinhDanh(value: '[]');

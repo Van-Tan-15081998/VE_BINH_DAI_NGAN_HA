@@ -316,6 +316,7 @@ class QUANLYTRANGTHAISUKIENVACHAMTHUOCPHUONGTIEN extends SUKIENVACHAMTHUOCPHUONG
       MOHINHPHUONGTIENVACHAM.maDinhDanhPhuongTienVaChamSS554: {},
       MOHINHPHUONGTIENVACHAM.maDinhDanhPhuongTienVaChamSS556: {},
       MOHINHPHUONGTIENVACHAM.maDinhDanhPhuongTienVaChamSS558: {},
+
       ///
       MOHINHPHUONGTIENVACHAM.maDinhDanhPhuongTienVaChamSS560: {},
       MOHINHPHUONGTIENVACHAM.maDinhDanhPhuongTienVaChamSS562: {},
@@ -348,7 +349,7 @@ class QUANLYTRANGTHAISUKIENVACHAMTHUOCPHUONGTIEN extends SUKIENVACHAMTHUOCPHUONG
       MOHINHPHUONGTIENVACHAM.maDinhDanhPhuongTienVaChamSS616: {},
       MOHINHPHUONGTIENVACHAM.maDinhDanhPhuongTienVaChamSS618: {},
 
-      '[DANH_SACH_MA_DINH_DANH_PHUONG_TIEN_HOAT_DONG]': {}
+      '[DANH_SACH_MA_DINH_DANH_PHUONG_TIEN_HOAT_DONG]': {},
     };
 
     /// -----
@@ -420,7 +421,6 @@ class QUANLYTRANGTHAISUKIENVACHAMTHUOCPHUONGTIEN extends SUKIENVACHAMTHUOCPHUONG
   /// TODO:
   /// -----
   Future<void> onLoop() async {
-
     return;
 
     /// -----
@@ -452,18 +452,17 @@ class QUANLYTRANGTHAISUKIENVACHAMTHUOCPHUONGTIEN extends SUKIENVACHAMTHUOCPHUONG
 
   bool isCompletedLoopOnTimelineSS020 = false;
   void onVoidLoopOnTimelineSS020() {
-
     if (isCompletedLoopOnTimelineSS020 == true) {
       isCompletedLoopOnTimelineSS020 = false;
 
       Map<String, Map<String, dynamic>> danhSachPhuongTienVaChamVienDan = Map.from(_danhSachPhuongTienVaChamVienDan);
       _danhSachPhuongTienVaChamVienDan = {};
-       onVoidTichHopNhanDinhSuKienVaChamThuocPhuongTienV2(danhSachPhuongTienVaChamVienDan: danhSachPhuongTienVaChamVienDan);
+      onVoidTichHopNhanDinhSuKienVaChamThuocPhuongTienV2(danhSachPhuongTienVaChamVienDan: danhSachPhuongTienVaChamVienDan);
     }
+
     ///
     return;
   }
-
 
   /// -----
   /// TODO: Mã Định Danh
@@ -541,11 +540,7 @@ class QUANLYTRANGTHAISUKIENVACHAMTHUOCPHUONGTIEN extends SUKIENVACHAMTHUOCPHUONG
     _danhSachPhuongTienVaCham.removeWhere((phuongTien) => phuongTien?['[DI_CHUYEN_HIEN_THI]'] == false);
     _danhSachVienDanVaCham.removeWhere((vienDan) => vienDan?['[DI_CHUYEN_HIEN_THI]'] == false);
 
-    getSendPort?.send({
-      '[DANH_SACH_PHUONG_TIEN_VA_CHAM]': _danhSachPhuongTienVaCham,
-      '[DANH_SACH_VIEN_DAN_VA_CHAM]': _danhSachVienDanVaCham,
-      'replyTo': responsePort.sendPort,
-    });
+    getSendPort?.send({'[DANH_SACH_PHUONG_TIEN_VA_CHAM]': _danhSachPhuongTienVaCham, '[DANH_SACH_VIEN_DAN_VA_CHAM]': _danhSachVienDanVaCham, 'replyTo': responsePort.sendPort});
 
     // getSendPort?.send({
     //   '[DANH_SACH_PHUONG_TIEN_VA_CHAM]': getDanhSachPhuongTienVaCham.map((phuongTien) => phuongTien?.getMoHinh?.toDuLieuJsonSuKienVaCham()).toList(),
@@ -577,71 +572,104 @@ class QUANLYTRANGTHAISUKIENVACHAMTHUOCPHUONGTIEN extends SUKIENVACHAMTHUOCPHUONG
     return {};
   }
 
-  void onVoidNhanDinhSuKienVaChamVSS020 () {
+  dynamic duLieuVienDanVaCham;
+  dynamic trangThaiTonTaiVienDanVaCham;
+  dynamic maDinhDanhVienDanVaCham;
+  dynamic dxTrongTamVienDanVaCham;
+  dynamic dyTrongTamVienDanVaCham;
 
+  dynamic duLieuPhuongTienVaCham;
+  dynamic trangThaiTonTaiPhuongTienVaCham;
+  dynamic maDinhDanhPhuongTienVaCham;
+  dynamic chieuRongThanPhuongTienVaCham;
+  dynamic chieuCaoThanPhuongTienVaCham;
+  dynamic dxTrongTamPhuongTienVaCham;
+  dynamic dyTrongTamPhuongTienVaCham;
+
+  Map<String, dynamic> phuongTienHoatDong = {};
+  Map<String, Map<String, dynamic>> mapPhuongTienVaChamVienDan = {};
+
+  double bienTraiPhuongTienVaCham = 0;
+  double bienPhaiPhuongTienVaCham = 0;
+  double bienTrenPhuongTienVaCham = 0;
+  double bienDuoiPhuongTienVaCham = 0;
+
+  void onVoidNhanDinhSuKienVaChamVSS020() {
     _danhSachPhuongTienVaCham = getDanhSachPhuongTienVaCham.map((phuongTien) => phuongTien?.getMoHinh?.toDuLieuJsonSuKienVaCham()).toList();
     _danhSachVienDanVaCham = getDanhSachVienDanVaCham.map((vienDan) => vienDan?.getMoHinh?.toDuLieuJsonSuKienVaCham()).toList();
     _danhSachPhuongTienVaCham.removeWhere((phuongTien) => phuongTien?['[DI_CHUYEN_HIEN_THI]'] == false);
     _danhSachVienDanVaCham.removeWhere((vienDan) => vienDan?['[DI_CHUYEN_HIEN_THI]'] == false);
 
+    // Map<String, Map<String, dynamic>> mapPhuongTienVaChamVienDan = Map.from(_mapPhuongTienVaChamVienDan);
     Map<String, Map<String, dynamic>> mapPhuongTienVaChamVienDan = Map.from(_mapPhuongTienVaChamVienDan);
 
     /// Cập Nhật Danh Sách Phương Tiện Hoạt Động
-    Map<String, dynamic> phuongTienHoatDong = {};
+    // Map<String, dynamic> phuongTienHoatDong = {};
+    phuongTienHoatDong = {};
 
     for (final vienDan in _danhSachVienDanVaCham) {
       if (vienDan?['[DU_LIEU_JSON_SU_KIEN_VA_CHAM]'] != null) {
-        final duLieuVienDan = vienDan?['[DU_LIEU_JSON_SU_KIEN_VA_CHAM]'];
+        // final duLieuVienDan = vienDan?['[DU_LIEU_JSON_SU_KIEN_VA_CHAM]'];
+        duLieuVienDanVaCham = vienDan?['[DU_LIEU_JSON_SU_KIEN_VA_CHAM]'];
 
-        final trangThaiTonTaiVienDan = duLieuVienDan['[TRANG_THAI_TON_TAI]'];
+        // final trangThaiTonTaiVienDan = duLieuVienDan['[TRANG_THAI_TON_TAI]'];
+        trangThaiTonTaiVienDanVaCham = duLieuVienDanVaCham['[TRANG_THAI_TON_TAI]'];
 
-        if (trangThaiTonTaiVienDan == true) {
-          final maDinhDanhVienDanVaCham = vienDan?['[MA_DINH_DANH_VIEN_DAN_VA_CHAM]'];
+        // if (trangThaiTonTaiVienDan == true) {
+        if (trangThaiTonTaiVienDanVaCham == true) {
+          // final maDinhDanhVienDanVaCham = vienDan?['[MA_DINH_DANH_VIEN_DAN_VA_CHAM]'];
+          maDinhDanhVienDanVaCham = vienDan?['[MA_DINH_DANH_VIEN_DAN_VA_CHAM]'];
 
-          final dxTrongTamVienDan = duLieuVienDan['[DX_TRONG_TAM]'];
-          final dyTrongTamVienDan = duLieuVienDan['[DY_TRONG_TAM]'];
+          // final dxTrongTamVienDan = duLieuVienDan['[DX_TRONG_TAM]'];
+          dxTrongTamVienDanVaCham = duLieuVienDanVaCham['[DX_TRONG_TAM]'];
+          // final dyTrongTamVienDan = duLieuVienDan['[DY_TRONG_TAM]'];
+          dyTrongTamVienDanVaCham = duLieuVienDanVaCham['[DY_TRONG_TAM]'];
 
           for (final phuongTien in _danhSachPhuongTienVaCham) {
-
             if (phuongTien?['[DU_LIEU_JSON_SU_KIEN_VA_CHAM]'] != null) {
-              final duLieuPhuongTien = phuongTien?['[DU_LIEU_JSON_SU_KIEN_VA_CHAM]'];
+              // final duLieuPhuongTien = phuongTien?['[DU_LIEU_JSON_SU_KIEN_VA_CHAM]'];
+              duLieuPhuongTienVaCham = phuongTien?['[DU_LIEU_JSON_SU_KIEN_VA_CHAM]'];
 
-              final trangThaiTonTaiPhuongTien = duLieuPhuongTien['[TRANG_THAI_TON_TAI]'];
+              // final trangThaiTonTaiPhuongTien = duLieuPhuongTien['[TRANG_THAI_TON_TAI]'];
+              trangThaiTonTaiPhuongTienVaCham = duLieuPhuongTienVaCham['[TRANG_THAI_TON_TAI]'];
 
-              if (trangThaiTonTaiPhuongTien == true) {
-                final maDinhDanhPhuongTienVaCham = phuongTien?['[MA_DINH_DANH_PHUONG_TIEN_VA_CHAM]'];
+              // if (trangThaiTonTaiPhuongTien == true) {
+              if (trangThaiTonTaiPhuongTienVaCham == true) {
+                // final maDinhDanhPhuongTienVaCham = phuongTien?['[MA_DINH_DANH_PHUONG_TIEN_VA_CHAM]'];
+                maDinhDanhPhuongTienVaCham = phuongTien?['[MA_DINH_DANH_PHUONG_TIEN_VA_CHAM]'];
 
-                final chieuRongThanPhuongTien = duLieuPhuongTien['[CHIEU_RONG_THAN]'];
-                final chieuCaoThanPhuongTien = duLieuPhuongTien['[CHIEU_CAO_THAN]'];
+                // final chieuRongThanPhuongTien = duLieuPhuongTien['[CHIEU_RONG_THAN]'];
+                chieuRongThanPhuongTienVaCham = duLieuPhuongTienVaCham['[CHIEU_RONG_THAN]'];
+                // final chieuCaoThanPhuongTien = duLieuPhuongTien['[CHIEU_CAO_THAN]'];
+                chieuCaoThanPhuongTienVaCham = duLieuPhuongTienVaCham['[CHIEU_CAO_THAN]'];
 
-                final dxTrongTamPhuongTien = duLieuPhuongTien['[DX_TRONG_TAM]'];
-                final dyTrongTamPhuongTien = duLieuPhuongTien['[DY_TRONG_TAM]'];
+                // final dxTrongTamPhuongTien = duLieuPhuongTien['[DX_TRONG_TAM]'];
+                dxTrongTamPhuongTienVaCham = duLieuPhuongTienVaCham['[DX_TRONG_TAM]'];
+                // final dyTrongTamPhuongTien = duLieuPhuongTien['[DY_TRONG_TAM]'];
+                dyTrongTamPhuongTienVaCham = duLieuPhuongTienVaCham['[DY_TRONG_TAM]'];
 
-                Map<String, dynamic> phuongTienVaChamVienDan = {
-                  '[MA_DINH_DANH_PHUONG_TIEN_VA_CHAM]': maDinhDanhPhuongTienVaCham,
-                  '[MA_DINH_DANH_VIEN_DAN_VA_CHAM]': '[]',
-                };
+                Map<String, dynamic> phuongTienVaChamVienDan = {'[MA_DINH_DANH_PHUONG_TIEN_VA_CHAM]': maDinhDanhPhuongTienVaCham, '[MA_DINH_DANH_VIEN_DAN_VA_CHAM]': '[]'};
 
                 phuongTienHoatDong?[maDinhDanhPhuongTienVaCham] = maDinhDanhPhuongTienVaCham;
 
                 /// -----
                 /// TODO: Đối Chiếu Dx Trọng Tâm, Dy Trọng Tâm
                 /// -----
-                double bienTrai = dxTrongTamPhuongTien - (chieuRongThanPhuongTien / 2);
-                double bienPhai = dxTrongTamPhuongTien + (chieuRongThanPhuongTien / 2);
-                double bienTren = dyTrongTamPhuongTien - (chieuCaoThanPhuongTien / 2);
-                double bienDuoi = dyTrongTamPhuongTien + (chieuCaoThanPhuongTien / 2);
+                bienTraiPhuongTienVaCham = dxTrongTamPhuongTienVaCham - (chieuRongThanPhuongTienVaCham / 2) - 10.0;
+                bienPhaiPhuongTienVaCham = dxTrongTamPhuongTienVaCham + (chieuRongThanPhuongTienVaCham / 2) + 10.0;
+                bienTrenPhuongTienVaCham = dyTrongTamPhuongTienVaCham - (chieuCaoThanPhuongTienVaCham / 2);
+                bienDuoiPhuongTienVaCham = dyTrongTamPhuongTienVaCham + (chieuCaoThanPhuongTienVaCham / 2) + 20.0;
 
                 /// TODO: Bổ Sung Vùng Đệm Phát Hiện Va Chạm
-                bienTrai -= 10.0;
-                bienPhai += 10.0;
-                bienDuoi += 20.0;
+                // bienTrai -= 10.0;
+                // bienPhai += 10.0;
+                // bienDuoi += 20.0;
 
-                if (dxTrongTamVienDan > bienTrai &&
-                    dxTrongTamVienDan < bienPhai &&
-                    dyTrongTamVienDan > bienTren &&
-                    dyTrongTamVienDan < bienDuoi) {
-
+                if (dxTrongTamVienDanVaCham > bienTraiPhuongTienVaCham //
+                    && dxTrongTamVienDanVaCham < bienPhaiPhuongTienVaCham //
+                    && dyTrongTamVienDanVaCham > bienTrenPhuongTienVaCham //
+                    && dyTrongTamVienDanVaCham < bienDuoiPhuongTienVaCham //
+                ) {
                   phuongTienVaChamVienDan['[MA_DINH_DANH_VIEN_DAN_VA_CHAM]'] = maDinhDanhVienDanVaCham;
 
                   if (kDebugMode) {
@@ -742,7 +770,6 @@ class QUANLYTRANGTHAISUKIENVACHAMTHUOCPHUONGTIEN extends SUKIENVACHAMTHUOCPHUONG
             final dyTrongTamVienDan = duLieuVienDan['[DY_TRONG_TAM]'];
 
             for (final phuongTien in danhSachPhuongTienVaCham) {
-
               if (phuongTien['[DU_LIEU_JSON_SU_KIEN_VA_CHAM]'] != null) {
                 final duLieuPhuongTien = phuongTien['[DU_LIEU_JSON_SU_KIEN_VA_CHAM]'];
 
@@ -757,10 +784,7 @@ class QUANLYTRANGTHAISUKIENVACHAMTHUOCPHUONGTIEN extends SUKIENVACHAMTHUOCPHUONG
                   final dxTrongTamPhuongTien = duLieuPhuongTien['[DX_TRONG_TAM]'];
                   final dyTrongTamPhuongTien = duLieuPhuongTien['[DY_TRONG_TAM]'];
 
-                  Map<String, dynamic> phuongTienVaChamVienDan = {
-                    '[MA_DINH_DANH_PHUONG_TIEN_VA_CHAM]': maDinhDanhPhuongTienVaCham,
-                    '[MA_DINH_DANH_VIEN_DAN_VA_CHAM]': '[]',
-                  };
+                  Map<String, dynamic> phuongTienVaChamVienDan = {'[MA_DINH_DANH_PHUONG_TIEN_VA_CHAM]': maDinhDanhPhuongTienVaCham, '[MA_DINH_DANH_VIEN_DAN_VA_CHAM]': '[]'};
 
                   phuongTienHoatDong[maDinhDanhPhuongTienVaCham] = maDinhDanhPhuongTienVaCham;
 
@@ -772,11 +796,7 @@ class QUANLYTRANGTHAISUKIENVACHAMTHUOCPHUONGTIEN extends SUKIENVACHAMTHUOCPHUONG
                   final bienTren = dyTrongTamPhuongTien - (chieuCaoThanPhuongTien / 2);
                   final bienDuoi = dyTrongTamPhuongTien + (chieuCaoThanPhuongTien / 2);
 
-                  if (dxTrongTamVienDan > bienTrai &&
-                      dxTrongTamVienDan < bienPhai &&
-                      dyTrongTamVienDan > bienTren &&
-                      dyTrongTamVienDan < bienDuoi) {
-
+                  if (dxTrongTamVienDan > bienTrai && dxTrongTamVienDan < bienPhai && dyTrongTamVienDan > bienTren && dyTrongTamVienDan < bienDuoi) {
                     phuongTienVaChamVienDan['[MA_DINH_DANH_VIEN_DAN_VA_CHAM]'] = maDinhDanhVienDanVaCham;
 
                     if (kDebugMode) {
@@ -816,7 +836,6 @@ class QUANLYTRANGTHAISUKIENVACHAMTHUOCPHUONGTIEN extends SUKIENVACHAMTHUOCPHUONG
       /// TODO:
       /// -----
       replyTo.send(mapPhuongTienVaChamVienDan);
-
     });
   }
 }

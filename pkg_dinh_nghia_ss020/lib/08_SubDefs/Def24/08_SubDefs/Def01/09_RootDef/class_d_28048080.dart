@@ -47,6 +47,12 @@ class TrangThaiTonTaiCoBan {
     }
     return false;
   }
+  bool onCheckBoolNguyenBan() {
+    if (getTrangThai == '[NGUYEN_BAN]') {
+      return true;
+    }
+    return false;
+  }
 
   /// -----
   /// TODO: Trạng Thái => Khởi Tạo Hoàn Tất

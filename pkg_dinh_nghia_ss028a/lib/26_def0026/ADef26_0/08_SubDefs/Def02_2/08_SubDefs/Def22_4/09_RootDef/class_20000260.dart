@@ -9,6 +9,9 @@ class TRANGTHAIVIENDANTANCONGCOBAN {
   Future<void> caiDatMoHinh({required VIENDANTANCONGCOBAN? value}) async {
     _moHinh = value;
   }
+  void onVoidCaiDatMoHinh({required VIENDANTANCONGCOBAN? value}) {
+    _moHinh = value;
+  }
 
   /// -----
   /// TODO:

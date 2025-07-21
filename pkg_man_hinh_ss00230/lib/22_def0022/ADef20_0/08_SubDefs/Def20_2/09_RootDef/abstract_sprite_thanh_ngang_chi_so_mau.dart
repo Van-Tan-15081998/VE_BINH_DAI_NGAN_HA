@@ -116,7 +116,7 @@ abstract class SPRITETHANHNGANGCHISOMAUCOBAN extends SpriteAnimationComponent wi
     position.setValues(getDx ?? 0, getDy ?? 0);
     size.setValues(getChieuRong ?? 0, getChieuCao ?? 0);
 
-    onVoidCaiDatDonViSprite(value: DonViSpriteCoBan(maDinhDanh: null, nguonHinhAnh: null,  spriteAnimation: null, sprite: null));
+    onVoidCaiDatDonViSprite(value: DonViSpriteCoBan(maDinhDanh: null, nguonHinhAnh: null, spriteAnimation: null, sprite: null));
 
     onVoidCaiDatMoHinhChiTiet();
 
@@ -158,8 +158,6 @@ abstract class SPRITETHANHNGANGCHISOMAUCOBAN extends SpriteAnimationComponent wi
     if (_khungVienChiSoMau != null && _khungVienChiSoMau?.isMounted == false) {
       add(_khungVienChiSoMau!);
     }
-
-
 
     return;
   }
@@ -456,35 +454,49 @@ abstract class SPRITETHANHNGANGCHISOMAUCOBAN extends SpriteAnimationComponent wi
   /// -----
   /// TODO: Cập Nhật Position Và Size
   /// -----
+
+  MoHinhPhuongTienTongQuat? phuongTienCapNhat;
+
+  double duLieuJsonChieuRongThanPhuongTien = 0;
+  double duLieuJsonChieuCaoThanPhuongTien = 0;
+  double duLieuJsonDxTrongTamPhuongTien = 0;
+  double duLieuJsonDyTrongTamPhuongTien = 0;
+
+  int duLieuJsonChiSoMauToiDaPhuongTien = 0;
+  int duLieuJsonChiSoMauToiDaVanHanhPhuongTien = 0;
+
   void onVoidCapNhatPositionSizeValues(double dt) {
     if (getKiemTraHienThi == true) {
       ///
       /// TODO:
       ///
-      MoHinhPhuongTienTongQuat? phuongTien = getMoHinh?.getMoHinh;
+      phuongTienCapNhat = getMoHinh?.getMoHinh;
 
-      double dx = phuongTien?.getDuLieuJsonLamPhang['[DX_TRONG_TAM]'] ?? 1.0;
-      double dy = phuongTien?.getDuLieuJsonLamPhang['[DY_TRONG_TAM]'] ?? 1.0;
-      double chieuCaoThan = phuongTien?.getDuLieuJsonLamPhang['[CHIEU_CAO_THAN]'] ?? 1.0;
-      double chieuRongThan = phuongTien?.getDuLieuJsonLamPhang['[CHIEU_RONG_THAN]'] ?? 1.0;
+      duLieuJsonDxTrongTamPhuongTien = phuongTienCapNhat?.getDuLieuJsonLamPhang['[DX_TRONG_TAM]'] ?? 1.0;
+      duLieuJsonDyTrongTamPhuongTien = phuongTienCapNhat?.getDuLieuJsonLamPhang['[DY_TRONG_TAM]'] ?? 1.0;
+      duLieuJsonChieuCaoThanPhuongTien = phuongTienCapNhat?.getDuLieuJsonLamPhang['[CHIEU_CAO_THAN]'] ?? 1.0;
+      duLieuJsonChieuRongThanPhuongTien = phuongTienCapNhat?.getDuLieuJsonLamPhang['[CHIEU_RONG_THAN]'] ?? 1.0;
 
       // int tongChiSoMau = phuongTien?.getTrangThaiTrongChienDau?.getTrangThaiPhuongTienNhanSatThuong?.getSoLanNhanSatThuongToiDa ?? 0;
       // int chiSoMauHienHanh = phuongTien?.getTrangThaiTrongChienDau?.getTrangThaiPhuongTienNhanSatThuong?.getSoLanNhanSatThuong ?? 0;
 
-      int tongChiSoMau = (phuongTien?.getDuLieuJsonLamPhang['[CHI_SO_MAU_TOI_DA]'] ?? 0).floor();
-      int chiSoMauHienHanh = (phuongTien?.getDuLieuJsonLamPhang['[CHI_SO_MAU_TOI_DA_VAN_HANH]'] ?? 0).floor();
+      duLieuJsonChiSoMauToiDaPhuongTien = (phuongTienCapNhat?.getDuLieuJsonLamPhang['[CHI_SO_MAU_TOI_DA]'] ?? 0).floor();
+      duLieuJsonChiSoMauToiDaVanHanhPhuongTien = (phuongTienCapNhat?.getDuLieuJsonLamPhang['[CHI_SO_MAU_TOI_DA_VAN_HANH]'] ?? 0).floor();
 
       // chiSoMauHienHanh = tongChiSoMau - chiSoMauHienHanh;
 
-      if (dx.isNaN == false && dy.isNaN == false && chieuCaoThan.isNaN == false && chieuRongThan.isNaN == false) {
+      if (duLieuJsonDxTrongTamPhuongTien.isNaN == false &&
+          duLieuJsonDyTrongTamPhuongTien.isNaN == false && //
+          duLieuJsonChieuCaoThanPhuongTien.isNaN == false &&
+          duLieuJsonChieuRongThanPhuongTien.isNaN == false) {
         onVoidCapNhatChiSoMau(
           dt: dt,
-          dx: dx,
-          dy: dy,
-          tongChiSoMau: tongChiSoMau * 1.0,
-          chiSoMauHienHanh: chiSoMauHienHanh * 1.0,
-          chieuRongPhuongTienDich: chieuRongThan,
-          chieuCaoPhuongTienDich: chieuCaoThan,
+          dx: duLieuJsonDxTrongTamPhuongTien,
+          dy: duLieuJsonDyTrongTamPhuongTien,
+          tongChiSoMau: duLieuJsonChiSoMauToiDaPhuongTien.floorToDouble(),
+          chiSoMauHienHanh: duLieuJsonChiSoMauToiDaVanHanhPhuongTien.floorToDouble(),
+          chieuRongPhuongTienDich: duLieuJsonChieuCaoThanPhuongTien,
+          chieuCaoPhuongTienDich: duLieuJsonChieuRongThanPhuongTien,
         );
       }
     }

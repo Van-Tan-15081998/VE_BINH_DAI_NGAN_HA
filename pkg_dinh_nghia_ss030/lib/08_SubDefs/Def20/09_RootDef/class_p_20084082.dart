@@ -291,12 +291,12 @@ class MoHinhPhuongTienTongQuat with CauTrucThucThiCoBan {
   /// -----
   /// TODO:
   /// -----
-
+  MoHinhViTriPhuongTien? viTriPhuongTien;
   void onXuLyDuLieuJsonSuKienVaCham() {
     /// -----
     /// TODO:
     /// -----
-    MoHinhViTriPhuongTien? viTriPhuongTien = getPhuongThuc?.getPhuongThucBay?.getViTri;
+    viTriPhuongTien ??= getPhuongThuc?.getPhuongThucBay?.getViTri;
 
     getDuLieuJsonSuKienVaCham['[CHIEU_RONG_MAN_HINH_PHI_VAT_LY]'] = viTriPhuongTien?.getChieuRongManHinhPhiVatLy ?? 0;
     getDuLieuJsonSuKienVaCham['[CHIEU_CAO_MAN_HINH_PHI_VAT_LY]'] = viTriPhuongTien?.getChieuCaoManHinhPhiVatLy ?? 0;
@@ -339,12 +339,24 @@ class MoHinhPhuongTienTongQuat with CauTrucThucThiCoBan {
   /// TODO:
   /// -----
 
+  double duLieuJsonChieuRongThanPhuongTien = 0;
+  double duLieuJsonChieuCaoThanPhuongTien = 0;
+  double duLieuJsonDxTrongTamPhuongTien = 0;
+  double duLieuJsonDyTrongTamPhuongTien = 0;
+
+  double duLieuJsonBienTraiPhuongTien = 0;
+  double duLieuJsonBienPhaiPhuongTien = 0;
+  double duLieuJsonBienTrenPhuongTien = 0;
+  double duLieuJsonBienDuoiPhuongTien = 0;
+  double duLieuJsonChieuRongManHinhPhiVatLy = 0;
+  double duLieuJsonChieuCaoManHinhPhiVatLy = 0;
   void onXuLyDuLieuJsonLamPhang() {
     /// -----
     /// TODO:
     /// -----
     // if (getDuLieuJsonLamPhang['[TRANG_THAI_TON_TAI]'] == true) {
-    MoHinhViTriPhuongTien? viTriPhuongTien = getPhuongThuc?.getPhuongThucBay?.getViTri;
+    // MoHinhViTriPhuongTien? viTriPhuongTien = getPhuongThuc?.getPhuongThucBay?.getViTri;
+    viTriPhuongTien ??= getPhuongThuc?.getPhuongThucBay?.getViTri;
 
     // getDuLieuJsonLamPhang['[DI_CHUYEN_HIEN_THI]'] = true;
     getDuLieuJsonLamPhang['[CHIEU_RONG_MAN_HINH_PHI_VAT_LY]'] = viTriPhuongTien?.getChieuRongManHinhPhiVatLy ?? 0;
@@ -362,12 +374,18 @@ class MoHinhPhuongTienTongQuat with CauTrucThucThiCoBan {
     /// -----
     /// TODO:
     /// -----
-    double bienPhai = (getDuLieuJsonLamPhang['[DX_TRONG_TAM]'] ?? 0) + (getDuLieuJsonLamPhang['[CHIEU_RONG_THAN]'] ?? 0);
-    double bienTrai = (getDuLieuJsonLamPhang['[DX_TRONG_TAM]'] ?? 0) - (getDuLieuJsonLamPhang['[CHIEU_RONG_THAN]'] ?? 0);
-    double bienTren = (getDuLieuJsonLamPhang['[DY_TRONG_TAM]'] ?? 0) - (getDuLieuJsonLamPhang['[CHIEU_CAO_THAN]'] ?? 0);
-    double bienDuoi = (getDuLieuJsonLamPhang['[DY_TRONG_TAM]'] ?? 0) + (getDuLieuJsonLamPhang['[CHIEU_CAO_THAN]'] ?? 0);
-    double chieuRongManHinhPhiVatLy = getDuLieuJsonLamPhang['[CHIEU_RONG_MAN_HINH_PHI_VAT_LY]'] ?? 0;
-    double chieuCaoManHinhPhiVatLy = getDuLieuJsonLamPhang['[CHIEU_CAO_MAN_HINH_PHI_VAT_LY]'] ?? 0;
+
+     duLieuJsonChieuRongThanPhuongTien = getDuLieuJsonLamPhang['[CHIEU_RONG_THAN]'] ?? 0;
+     duLieuJsonChieuCaoThanPhuongTien = getDuLieuJsonLamPhang['[CHIEU_CAO_THAN]'] ?? 0;
+     duLieuJsonDxTrongTamPhuongTien = getDuLieuJsonLamPhang['[DX_TRONG_TAM]'] ?? 0;
+     duLieuJsonDyTrongTamPhuongTien = getDuLieuJsonLamPhang['[DY_TRONG_TAM]'] ?? 0;
+
+    duLieuJsonBienPhaiPhuongTien = (getDuLieuJsonLamPhang['[DX_TRONG_TAM]'] ?? 0) + (getDuLieuJsonLamPhang['[CHIEU_RONG_THAN]'] ?? 0);
+     duLieuJsonBienTraiPhuongTien = (getDuLieuJsonLamPhang['[DX_TRONG_TAM]'] ?? 0) - (getDuLieuJsonLamPhang['[CHIEU_RONG_THAN]'] ?? 0);
+     duLieuJsonBienTrenPhuongTien = (getDuLieuJsonLamPhang['[DY_TRONG_TAM]'] ?? 0) - (getDuLieuJsonLamPhang['[CHIEU_CAO_THAN]'] ?? 0);
+     duLieuJsonBienDuoiPhuongTien = (getDuLieuJsonLamPhang['[DY_TRONG_TAM]'] ?? 0) + (getDuLieuJsonLamPhang['[CHIEU_CAO_THAN]'] ?? 0);
+     duLieuJsonChieuRongManHinhPhiVatLy = getDuLieuJsonLamPhang['[CHIEU_RONG_MAN_HINH_PHI_VAT_LY]'] ?? 0;
+     duLieuJsonChieuCaoManHinhPhiVatLy = getDuLieuJsonLamPhang['[CHIEU_CAO_MAN_HINH_PHI_VAT_LY]'] ?? 0;
 
     if (this is MOHINHPHUONGTIENVUKHIDIEUKHIEN) {
       if (getDuLieuJsonLamPhang['[TRANG_THAI_TON_TAI]'] == false || getDuLieuJsonLamPhang['[TAN_CONG_HIEN_THI]'] == false) {
@@ -381,19 +399,19 @@ class MoHinhPhuongTienTongQuat with CauTrucThucThiCoBan {
       }
     }
 
-    if (bienPhai < 0) {
+    if (duLieuJsonBienPhaiPhuongTien < 0) {
       getDuLieuJsonLamPhang['[DI_CHUYEN_HIEN_THI]'] = false;
       return;
     }
-    if (bienTrai > chieuRongManHinhPhiVatLy) {
+    if (duLieuJsonBienTraiPhuongTien > duLieuJsonChieuRongManHinhPhiVatLy) {
       getDuLieuJsonLamPhang['[DI_CHUYEN_HIEN_THI]'] = false;
       return;
     }
-    if (bienTren > chieuCaoManHinhPhiVatLy) {
+    if (duLieuJsonBienTrenPhuongTien > duLieuJsonChieuCaoManHinhPhiVatLy) {
       getDuLieuJsonLamPhang['[DI_CHUYEN_HIEN_THI]'] = false;
       return;
     }
-    if (bienDuoi < 0) {
+    if (duLieuJsonBienDuoiPhuongTien < 0) {
       getDuLieuJsonLamPhang['[DI_CHUYEN_HIEN_THI]'] = false;
       return;
     }
@@ -781,44 +799,72 @@ class MoHinhPhuongTienTongQuat with CauTrucThucThiCoBan {
   /// -----
   /// TODO: Điều Khiển Bay Theo Đội Hình - Chi Tiết
   /// -----
+  double duLieuJsonDxTrongTamVienDanVaCham = 0;
+  double duLieuJsonDyTrongTamVienDanVaCham = 0;
+
+  double duLieuJsonBienTraiPhuongTienVaCham = 0;
+  double duLieuJsonBienPhaiPhuongTienVaCham = 0;
+  double duLieuJsonBienTrenPhuongTienVaCham = 0;
+  double duLieuJsonBienDuoiPhuongTienVaCham = 0;
+
+  TRANGTHAIVIENDANTANCONGCOBAN? vienDanVaCham;
+
+  double dxTrongTamDiemVaCham = 0;
+  double dyTrongTamDiemVaCham = 0;
+
+  DiemToaDoHoanHaoCoBan toaDoVaCham = DiemToaDoHoanHaoCoBan(maDinhDanh: '[TOA_DO_VA_CHAM]', dx: 0, dy: 0);
+
+  bool kiemTraChamChienDauCo = false;
+
+  double dxTrongTamChienDauCo = 0;
+  double dyTrongTamChienDauCo = 0;
+  double chieuRongThanChienDauCo = 0;
+  double chieuCaoThanChienDauCo = 0;
+
   void onVoidDieuKhienDiChuyenTheoDoiHinhChiTiet({required int chiSoTangTienTheoThoiGianThuc}) {
     if (true) {
       /// -----
       /// TODO: Kiểm Tra Va Chạm Giữa Phương Tiện Với Danh Sách Viên Đạn Chiến Đấu Cơ Hoạt Động
       /// TODO: Thực Hiện Khi Phương Tiện Đã Vào Trong Màn Hình
       /// -----
-      TRANGTHAIVIENDANTANCONGCOBAN? vienDanVaCham;
+      vienDanVaCham = null;
 
       if (getTrangThaiTrongChienDau?.getMaDinhDanhVienDanVaCham != null && getTrangThaiTrongChienDau?.getMaDinhDanhVienDanVaCham?.isNotEmpty == true) {
         vienDanVaCham = getSuKienVaChamThuocPhuongTien?.getMapVienDanVaCham[getTrangThaiTrongChienDau?.getMaDinhDanhVienDanVaCham]?.getMoHinh?.getVienDanVaCham;
 
         if (vienDanVaCham?.getMoHinh?.getDuLieuJsonLamPhang['[TRANG_THAI_TON_TAI]'] == true) {
-          final double chieuRongThanPhuongTien = getDuLieuJsonLamPhang['[CHIEU_RONG_THAN]'] ?? 0;
-          final double chieuCaoThanPhuongTien = getDuLieuJsonLamPhang['[CHIEU_CAO_THAN]'] ?? 0;
+          // final double chieuRongThanPhuongTien = getDuLieuJsonLamPhang['[CHIEU_RONG_THAN]'] ?? 0;
+          // final double chieuCaoThanPhuongTien = getDuLieuJsonLamPhang['[CHIEU_CAO_THAN]'] ?? 0;
+          //
+          // final double dxTrongTamPhuongTien = getDuLieuJsonLamPhang['[DX_TRONG_TAM]'] ?? 0;
+          // final double dyTrongTamPhuongTien = getDuLieuJsonLamPhang['[DY_TRONG_TAM]'] ?? 0;
 
-          final double dxTrongTamPhuongTien = getDuLieuJsonLamPhang['[DX_TRONG_TAM]'] ?? 0;
-          final double dyTrongTamPhuongTien = getDuLieuJsonLamPhang['[DY_TRONG_TAM]'] ?? 0;
-
-          final double dxTrongTamVienDan = vienDanVaCham?.getMoHinh?.getDxTrongTamNotNull ?? 0;
-          final double dyTrongTamVienDan = vienDanVaCham?.getMoHinh?.getDyTrongTamNotNull ?? 0;
+          // final double dxTrongTamVienDan = vienDanVaCham?.getMoHinh?.getDxTrongTamNotNull ?? 0;
+          // final double dyTrongTamVienDan = vienDanVaCham?.getMoHinh?.getDyTrongTamNotNull ?? 0;
+          duLieuJsonDxTrongTamVienDanVaCham = vienDanVaCham?.getMoHinh?.getDxTrongTamNotNull ?? 0;
+          duLieuJsonDyTrongTamVienDanVaCham = vienDanVaCham?.getMoHinh?.getDyTrongTamNotNull ?? 0;
 
           /// -----
           /// TODO: Đối Chiếu Dx Trọng Tâm, Dy Trọng Tâm
           /// -----
-          double bienTrai = dxTrongTamPhuongTien - (chieuRongThanPhuongTien / 2);
-          double bienPhai = dxTrongTamPhuongTien + (chieuRongThanPhuongTien / 2);
-          double bienTren = dyTrongTamPhuongTien - (chieuCaoThanPhuongTien / 2);
-          double bienDuoi = dyTrongTamPhuongTien + (chieuCaoThanPhuongTien / 2);
+          // double bienTrai = dxTrongTamPhuongTien - (chieuRongThanPhuongTien / 2);
+          // double bienPhai = dxTrongTamPhuongTien + (chieuRongThanPhuongTien / 2);
+          // double bienTren = dyTrongTamPhuongTien - (chieuCaoThanPhuongTien / 2);
+          // double bienDuoi = dyTrongTamPhuongTien + (chieuCaoThanPhuongTien / 2);
+           duLieuJsonBienTraiPhuongTienVaCham = duLieuJsonBienTraiPhuongTien - 10.0;
+           duLieuJsonBienPhaiPhuongTienVaCham = duLieuJsonBienPhaiPhuongTien + 10.0;
+           duLieuJsonBienTrenPhuongTienVaCham = duLieuJsonBienTrenPhuongTien;
+           duLieuJsonBienDuoiPhuongTienVaCham = duLieuJsonBienDuoiPhuongTien + 20.0;
 
           /// TODO: Bổ Sung Vùng Đệm Phát Hiện Va Chạm
-          bienTrai -= 10.0;
-          bienPhai += 10.0;
-          bienDuoi += 20.0;
+          // bienTrai -= 10.0;
+          // bienPhai += 10.0;
+          // bienDuoi += 20.0;
 
-          if (dxTrongTamVienDan > bienTrai &&
-              dxTrongTamVienDan < bienPhai &&
-              dyTrongTamVienDan > bienTren &&
-              dyTrongTamVienDan < bienDuoi) {
+          if (duLieuJsonDxTrongTamVienDanVaCham > duLieuJsonBienTraiPhuongTienVaCham &&
+              duLieuJsonDxTrongTamVienDanVaCham < duLieuJsonBienPhaiPhuongTienVaCham &&
+              duLieuJsonDyTrongTamVienDanVaCham > duLieuJsonBienTrenPhuongTienVaCham &&
+              duLieuJsonDyTrongTamVienDanVaCham < duLieuJsonBienDuoiPhuongTienVaCham) {
 
           // if ((dxTrongTamVienDan < (dxTrongTamPhuongTien + (chieuRongThanPhuongTien / 2))) &&
           //     (dxTrongTamVienDan > (dxTrongTamPhuongTien - (chieuRongThanPhuongTien / 2))) &&
@@ -847,14 +893,19 @@ class MoHinhPhuongTienTongQuat with CauTrucThucThiCoBan {
       /// -----
       /// TODO: Nếu Xuất Hiện Va Chạm
       /// -----
-      if (vienDanVaCham?.getMoHinh?.getTrangThaiTonTai?.onCheckBoolKhoiTaoHoanTat() == true) {
+      // if (vienDanVaCham?.getMoHinh?.getTrangThaiTonTai?.onCheckBoolKhoiTaoHoanTat() == true) {
+      if (vienDanVaCham?.getMoHinh?.getTrangThaiTonTai?.onCheckBoolDangKichHoat() == true) {
         /// -----
         /// TODO: Tọa Độ Va Chạm
         /// -----
-        double dx = ((vienDanVaCham?.getMoHinh?.getDxTrongTamNotNull ?? 0)) * 1.0;
-        double dy = (vienDanVaCham?.getMoHinh?.getDyTrongTamNotNull ?? 0) * 1.0;
+        // double dx = ((vienDanVaCham?.getMoHinh?.getDxTrongTamNotNull ?? 0)) * 1.0;
+        // double dy = (vienDanVaCham?.getMoHinh?.getDyTrongTamNotNull ?? 0) * 1.0;
+        dxTrongTamDiemVaCham = ((vienDanVaCham?.getMoHinh?.getDxTrongTamNotNull ?? 0)) * 1.0;
+        dyTrongTamDiemVaCham = (vienDanVaCham?.getMoHinh?.getDyTrongTamNotNull ?? 0) * 1.0;
 
-        DiemToaDoHoanHaoCoBan toaDoVaCham = DiemToaDoHoanHaoCoBan(maDinhDanh: '[TOA_DO_VA_CHAM]', dx: dx, dy: dy);
+        // DiemToaDoHoanHaoCoBan toaDoVaCham = DiemToaDoHoanHaoCoBan(maDinhDanh: '[TOA_DO_VA_CHAM]', dx: dx, dy: dy);
+        toaDoVaCham.onVoidCaiDatDx(value: dxTrongTamDiemVaCham);
+        toaDoVaCham.onVoidCaiDatDy(value: dyTrongTamDiemVaCham);
 
         /// -----
         /// TODO: Xử Lý Sự Kiện Va Chạm Gây Sát Thương Lên Phương Tiện
@@ -896,20 +947,20 @@ class MoHinhPhuongTienTongQuat with CauTrucThucThiCoBan {
     /// TODO: Check Va Chạm Giữa Phương Tiện Với Chiến Đấu Cơ
     /// -----
 
-    bool kiemTraChamChienDauCo = false;
+    kiemTraChamChienDauCo = false;
 
-    double dxTrongTamChienDauCo = getViTriChienDauCo?.getDxTrongTam ?? 0;
-    double dyTrongTamChienDauCo = getViTriChienDauCo?.getDyTrongTam ?? 0;
-    double chieuRongThanChienDauCo = getViTriChienDauCo?.getChieuRongThan ?? 0;
-    double chieuCaoThanChienDauCo = getViTriChienDauCo?.getChieuCaoThan ?? 0;
+    dxTrongTamChienDauCo = getViTriChienDauCo?.getDxTrongTam ?? 0;
+    dyTrongTamChienDauCo = getViTriChienDauCo?.getDyTrongTam ?? 0;
+    chieuRongThanChienDauCo = getViTriChienDauCo?.getChieuRongThan ?? 0;
+    chieuCaoThanChienDauCo = getViTriChienDauCo?.getChieuCaoThan ?? 0;
 
-    final double dxTrongTamPhuongTien = getDuLieuJsonLamPhang['[DX_TRONG_TAM]'] ?? 0;
-    final double dyTrongTamPhuongTien = getDuLieuJsonLamPhang['[DY_TRONG_TAM]'] ?? 0;
+    // final double dxTrongTamPhuongTien = getDuLieuJsonLamPhang['[DX_TRONG_TAM]'] ?? 0;
+    // final double dyTrongTamPhuongTien = getDuLieuJsonLamPhang['[DY_TRONG_TAM]'] ?? 0;
     if (true) {
-      if ((dxTrongTamPhuongTien < (dxTrongTamChienDauCo + (chieuRongThanChienDauCo / 2))) &&
-          (dxTrongTamPhuongTien > (dxTrongTamChienDauCo - (chieuRongThanChienDauCo / 2))) &&
-          (dyTrongTamPhuongTien < (dyTrongTamChienDauCo + (chieuCaoThanChienDauCo / 2))) &&
-          (dyTrongTamPhuongTien > (dyTrongTamChienDauCo - (chieuCaoThanChienDauCo / 2)))) {
+      if ((duLieuJsonDxTrongTamPhuongTien < (dxTrongTamChienDauCo + (chieuRongThanChienDauCo / 2))) &&
+          (duLieuJsonDxTrongTamPhuongTien > (dxTrongTamChienDauCo - (chieuRongThanChienDauCo / 2))) &&
+          (duLieuJsonDyTrongTamPhuongTien < (dyTrongTamChienDauCo + (chieuCaoThanChienDauCo / 2))) &&
+          (duLieuJsonDyTrongTamPhuongTien > (dyTrongTamChienDauCo - (chieuCaoThanChienDauCo / 2)))) {
         kiemTraChamChienDauCo = true;
       }
     }
@@ -922,7 +973,8 @@ class MoHinhPhuongTienTongQuat with CauTrucThucThiCoBan {
       /// -----
       /// TODO: Xử Lý Va Chạm
       /// -----
-      DiemToaDoHoanHaoCoBan toaDoVaCham = DiemToaDoHoanHaoCoBan(maDinhDanh: '[TOA_DO_VA_CHAM]', dx: dxTrongTamPhuongTien, dy: dyTrongTamPhuongTien);
+      // DiemToaDoHoanHaoCoBan toaDoVaCham = DiemToaDoHoanHaoCoBan(maDinhDanh: '[TOA_DO_VA_CHAM]', dx: dxTrongTamPhuongTien, dy: dyTrongTamPhuongTien);
+      DiemToaDoHoanHaoCoBan toaDoVaCham = DiemToaDoHoanHaoCoBan(maDinhDanh: '[TOA_DO_VA_CHAM]', dx: duLieuJsonDxTrongTamPhuongTien, dy: duLieuJsonDyTrongTamPhuongTien);
 
       /// -----
       /// TODO:
@@ -941,8 +993,8 @@ class MoHinhPhuongTienTongQuat with CauTrucThucThiCoBan {
 
         doanDuongBayThuocKichBanHienHanh = getTrangThaiHoatDongChienDauXamChiem?.getHoatDongChienDauXamChiemThuocGiaiDoanHienHanh?.getDanhSachDoanDuongBayThuocKichBan?.getDanhSachDoanDuongBay[0];
 
-        final double dxTrongTamPhuongTien = getDuLieuJsonLamPhang['[DX_TRONG_TAM]'] ?? 0;
-        final double dyTrongTamPhuongTien = getDuLieuJsonLamPhang['[DY_TRONG_TAM]'] ?? 0;
+        // final double dxTrongTamPhuongTien = getDuLieuJsonLamPhang['[DX_TRONG_TAM]'] ?? 0;
+        // final double dyTrongTamPhuongTien = getDuLieuJsonLamPhang['[DY_TRONG_TAM]'] ?? 0;
 
         /// -----
         /// TODO: Cập Nhật Vị Trí Phương Tiện Trên Đường Nối Với Điểm Tọa Độ Thuộc Kịch Bản
@@ -952,8 +1004,8 @@ class MoHinhPhuongTienTongQuat with CauTrucThucThiCoBan {
           /// TODO: 1) Kiểm Tra Tọa Độ Phương Tiện Đã Bay Chạm Đến Điểm Tọa Độ Đích Hiện Hành Hay Chưa
           /// -----
           if (doanDuongBayThuocKichBanHienHanh?.getDiemToaDo?.onKiemTraThuocPhamViDiemToaDo(
-                dxTrongTam: dxTrongTamPhuongTien,
-                dyTrongTam: dyTrongTamPhuongTien,
+                dxTrongTam: duLieuJsonDxTrongTamPhuongTien,
+                dyTrongTam: duLieuJsonDyTrongTamPhuongTien,
                 tocDoBay: getPhuongThuc?.getPhuongThucBay?.getThamSoBay?.getTocDoBay,
               ) ==
               true) {
@@ -974,7 +1026,8 @@ class MoHinhPhuongTienTongQuat with CauTrucThucThiCoBan {
             /// -----
             /// TODO: Nếu Phương Tiện Chưa Di Chuyển Đến Điểm Tọa Độ Thuộc Kịch Bản
             /// -----
-            final Offset diemBatDau = Offset(dxTrongTamPhuongTien, dyTrongTamPhuongTien);
+            // final Offset diemBatDau = Offset(dxTrongTamPhuongTien, dyTrongTamPhuongTien);
+            final Offset diemBatDau = Offset(duLieuJsonDxTrongTamPhuongTien, duLieuJsonDyTrongTamPhuongTien);
             final Offset diemKetThuc = Offset(doanDuongBayThuocKichBanHienHanh?.getDiemToaDo?.getOffsetDx ?? 0, doanDuongBayThuocKichBanHienHanh?.getDiemToaDo?.getOffsetDy ?? 0);
 
             /// -----

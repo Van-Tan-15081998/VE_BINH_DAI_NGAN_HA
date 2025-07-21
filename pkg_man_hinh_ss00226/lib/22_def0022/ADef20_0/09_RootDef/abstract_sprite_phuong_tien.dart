@@ -80,6 +80,7 @@ abstract class SpritePhuongTienCoBan extends SpriteAnimationComponent with HasVi
   Future<void> onRemoveFromParent() async {
     if (isMounted == true) {
       await Future.delayed(Duration.zero);
+      onVoidCaiDatKiemTraHienThi(value: false);
       removeFromParent();
     }
 
