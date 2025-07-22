@@ -36,7 +36,7 @@ class NUTBAMSS030000SS010 extends THANHPHANNUTBAMTHUOCCAPTHUANKICHHOAT {
 
     /// Kiểm Tra RAM
 
-    Flame.images.clearCache();
+    // Flame.images.clearCache();
 
     /// -----
     /// TODO:

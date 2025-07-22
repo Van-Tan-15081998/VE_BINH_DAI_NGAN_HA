@@ -109,7 +109,7 @@ class SpriteSS01PkgManHinhSS00222 extends SpriteAnimationCoBan {
             ?.getSpriteAnimation,
       );
 
-      animation = getDonViSprite?.getSpriteAnimation;
+      // animation = getDonViSprite?.getSpriteAnimation;
     }
 
     return;
