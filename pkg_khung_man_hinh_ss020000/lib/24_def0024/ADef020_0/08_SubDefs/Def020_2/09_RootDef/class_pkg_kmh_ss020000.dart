@@ -185,7 +185,6 @@ abstract class QUANLYTHANHPHANMANHINHTHUOCCAPCOBAN with CAUTRUCTHUCTHICOBAN, KIC
     try {
       if (flameGame != null) {
         if (childComponent != null && childComponent.isMounted == false) {
-
           if (childComponent is THANHPHANMANHINHTHUOCCAPCOBAN) {
             childComponent.onCaiDatFlameGameParentComponent(value: flameGame);
           }
@@ -276,7 +275,7 @@ abstract class QUANLYTHANHPHANMANHINHTHUOCCAPCOBAN with CAUTRUCTHUCTHICOBAN, KIC
   //     /// Ghi log
   //   }
   // }
-  
+
   /// -----
   /// TODO:
   /// -----
@@ -295,39 +294,37 @@ abstract class QUANLYTHANHPHANMANHINHTHUOCCAPCOBAN with CAUTRUCTHUCTHICOBAN, KIC
   /// -----
   Future<void> onActiveShowComponent({required Component? childComponent}) async {
     try {
-        if (childComponent != null && childComponent.isMounted == true) {
-
-          if (childComponent is THANHPHANMANHINHTHUOCCAPCOBAN) {
-            await childComponent.onAddToParent();
-          }
-          if (childComponent is THANHPHANMANHINHDRAGTHUOCCAPCOBAN) {
-            await childComponent.onAddToParent();
-          }
-          if (childComponent is THANHPHANNUTBAMTHUOCCAPTHUANKICHHOAT) {
-            await childComponent.onAddToParent();
-          }
-          if (childComponent is THANHPHANNUTBAMTICHHOPTHUOCCAP) {
-            await childComponent.onAddToParent();
-          }
-          if (childComponent is THANHPHANVANBANTHUANTHUOCCAP) {
-            await childComponent.onAddToParent();
-          }
-          if (childComponent is THANHPHANVANBANSOHOCTHUOCCAP) {
-            await childComponent.onAddToParent();
-          }
-          if (childComponent is THANHPHANHINHANHBACKGROUNDTHUOCCAP) {
-            await childComponent.onAddToParent();
-          }
-          if (childComponent is THANHPHANTICHHOPNUTBAMVANBANTHUOCCAP) {
-            await childComponent.onAddToParent();
-          }
-          if (childComponent is THANHPHANTICHHOPSPRITEANIMATIONVANBANTHUOCCAP) {
-            await childComponent.onAddToParent();
-          }
-          if (childComponent is THANHPHANTICHHOPSPRITEANIMATIONTHUOCCAP) {
-            await childComponent.onAddToParent();
-          }
-
+      if (childComponent != null && childComponent.isMounted == true) {
+        if (childComponent is THANHPHANMANHINHTHUOCCAPCOBAN) {
+          await childComponent.onAddToParent();
+        }
+        if (childComponent is THANHPHANMANHINHDRAGTHUOCCAPCOBAN) {
+          await childComponent.onAddToParent();
+        }
+        if (childComponent is THANHPHANNUTBAMTHUOCCAPTHUANKICHHOAT) {
+          await childComponent.onAddToParent();
+        }
+        if (childComponent is THANHPHANNUTBAMTICHHOPTHUOCCAP) {
+          await childComponent.onAddToParent();
+        }
+        if (childComponent is THANHPHANVANBANTHUANTHUOCCAP) {
+          await childComponent.onAddToParent();
+        }
+        if (childComponent is THANHPHANVANBANSOHOCTHUOCCAP) {
+          await childComponent.onAddToParent();
+        }
+        if (childComponent is THANHPHANHINHANHBACKGROUNDTHUOCCAP) {
+          await childComponent.onAddToParent();
+        }
+        if (childComponent is THANHPHANTICHHOPNUTBAMVANBANTHUOCCAP) {
+          await childComponent.onAddToParent();
+        }
+        if (childComponent is THANHPHANTICHHOPSPRITEANIMATIONVANBANTHUOCCAP) {
+          await childComponent.onAddToParent();
+        }
+        if (childComponent is THANHPHANTICHHOPSPRITEANIMATIONTHUOCCAP) {
+          await childComponent.onAddToParent();
+        }
       }
     } catch (e) {
       /// Ghi log
@@ -550,6 +547,7 @@ abstract class QUANLYTHANHPHANMANHINHTHUOCCAPCOBAN with CAUTRUCTHUCTHICOBAN, KIC
   /// -----
   /// TODO: Kích Hoạt Khung Màn Hình Thuộc Cấp Tab SS010 [Tab Chính SS010]
   /// -----
+  @override
   Future<void> onKichHoatKhungManHinhThuocCapTabSS010() async {
     try {
       /// -----
@@ -573,6 +571,7 @@ abstract class QUANLYTHANHPHANMANHINHTHUOCCAPCOBAN with CAUTRUCTHUCTHICOBAN, KIC
   /// -----
   /// TODO: Kích Hoạt Khung Màn Hình Thuộc Cấp Tab SS020 [Tab Chính SS020]
   /// -----
+  @override
   Future<void> onKichHoatKhungManHinhThuocCapTabSS020() async {
     try {
       /// -----
@@ -596,6 +595,7 @@ abstract class QUANLYTHANHPHANMANHINHTHUOCCAPCOBAN with CAUTRUCTHUCTHICOBAN, KIC
   /// -----
   /// TODO: Kích Hoạt Khung Màn Hình Thuộc Cấp Tab SS030 [Tab Chính SS030]
   /// -----
+  @override
   Future<void> onKichHoatKhungManHinhThuocCapTabSS030() async {
     try {
       /// -----
@@ -619,6 +619,7 @@ abstract class QUANLYTHANHPHANMANHINHTHUOCCAPCOBAN with CAUTRUCTHUCTHICOBAN, KIC
   /// -----
   /// TODO: Kích Hoạt Khung Màn Hình Thuộc Cấp Tab SS040 [Tab Chính SS040]
   /// -----
+  @override
   Future<void> onKichHoatKhungManHinhThuocCapTabSS040() async {
     try {
       /// -----
@@ -642,6 +643,7 @@ abstract class QUANLYTHANHPHANMANHINHTHUOCCAPCOBAN with CAUTRUCTHUCTHICOBAN, KIC
   /// -----
   /// TODO: Kích Hoạt Khung Màn Hình Thuộc Cấp Tab SS050 [Tab Chính SS050]
   /// -----
+  @override
   Future<void> onKichHoatKhungManHinhThuocCapTabSS050() async {
     try {
       /// -----
@@ -665,6 +667,7 @@ abstract class QUANLYTHANHPHANMANHINHTHUOCCAPCOBAN with CAUTRUCTHUCTHICOBAN, KIC
   /// -----
   /// TODO: Kích Hoạt Khung Màn Hình Thuộc Cấp Loading SS010 [Master Loading]
   /// -----
+  @override
   Future<void> onKichHoatKhungManHinhThuocCapLoadingSS010() async {
     try {
       /// -----
@@ -688,6 +691,7 @@ abstract class QUANLYTHANHPHANMANHINHTHUOCCAPCOBAN with CAUTRUCTHUCTHICOBAN, KIC
   /// -----
   /// TODO: Hủy Kích Hoạt Khung Màn Hình Thuộc Cấp Loading SS010 [Master Loading]
   /// -----
+  @override
   Future<void> onHuyKichHoatKhungManHinhThuocCapLoadingSS010() async {
     try {
       /// -----
@@ -709,8 +713,53 @@ abstract class QUANLYTHANHPHANMANHINHTHUOCCAPCOBAN with CAUTRUCTHUCTHICOBAN, KIC
   }
 
   /// -----
+  /// TODO: Giải Phóng Tài Nguyên Master
+  /// -----
+  @override
+  Future<void> onGiaiPhongTaiNguyenMaster({required Future<void> Function()? onThucThiHoanTat}) async {
+    try {
+      /// -----
+      /// TODO:
+      /// -----
+      if (getDanhSachThanhPhanManHinhThuocCap.isNotEmpty == true) {
+        for (THANHPHANMANHINHTHUOCCAPCOBAN? thanhPhan in getDanhSachThanhPhanManHinhThuocCap) {
+          await thanhPhan?.onGiaiPhongTaiNguyenMaster(onThucThiHoanTat: onThucThiHoanTat);
+        }
+      }
+    } catch (e) {
+      await onReportRootIssue(nameFunction: 'onGiaiPhongTaiNguyenMaster');
+    }
+
+    ///
+    return;
+  }
+
+  /// -----
+  /// TODO: Tải Tài Nguyên Master
+  /// -----
+  @override
+  Future<void> onTaiTaiNguyenMaster({required Future<void> Function()? onThucThiHoanTat}) async {
+    try {
+      /// -----
+      /// TODO:
+      /// -----
+      if (getDanhSachThanhPhanManHinhThuocCap.isNotEmpty == true) {
+        for (THANHPHANMANHINHTHUOCCAPCOBAN? thanhPhan in getDanhSachThanhPhanManHinhThuocCap) {
+          await thanhPhan?.onTaiTaiNguyenMaster(onThucThiHoanTat: onThucThiHoanTat);
+        }
+      }
+    } catch (e) {
+      await onReportRootIssue(nameFunction: 'onTaiTaiNguyenMaster');
+    }
+
+    ///
+    return;
+  }
+
+  /// -----
   /// TODO: Kích Hoạt Khung Màn Hình Thuộc Cấp Loading SS020 [Mini Loading]
   /// -----
+  @override
   Future<void> onKichHoatKhungManHinhThuocCapLoadingSS020() async {
     try {
       /// -----
@@ -734,6 +783,7 @@ abstract class QUANLYTHANHPHANMANHINHTHUOCCAPCOBAN with CAUTRUCTHUCTHICOBAN, KIC
   /// -----
   /// TODO: Hủy Kích Hoạt Khung Màn Hình Thuộc Cấp Loading SS020 [Mini Loading]
   /// -----
+  @override
   Future<void> onHuyKichHoatKhungManHinhThuocCapLoadingSS020() async {
     try {
       /// -----
@@ -757,6 +807,7 @@ abstract class QUANLYTHANHPHANMANHINHTHUOCCAPCOBAN with CAUTRUCTHUCTHICOBAN, KIC
   /// -----
   /// TODO: Kích Hoạt Khung Màn Hình Thuộc Cấp SS300100 [Tải Tài Nguyên Nhiệm Vụ]
   /// -----
+  @override
   Future<void> onKichHoatKhungManHinhThuocCapSS300100() async {
     try {
       /// -----
@@ -780,6 +831,7 @@ abstract class QUANLYTHANHPHANMANHINHTHUOCCAPCOBAN with CAUTRUCTHUCTHICOBAN, KIC
   /// -----
   /// TODO: Hủy Kích Hoạt Khung Màn Hình Thuộc Cấp SS300100 [Tải Tài Nguyên Nhiệm Vụ]
   /// -----
+  @override
   Future<void> onHuyKichHoatKhungManHinhThuocCapSS300100() async {
     try {
       /// -----
@@ -803,6 +855,7 @@ abstract class QUANLYTHANHPHANMANHINHTHUOCCAPCOBAN with CAUTRUCTHUCTHICOBAN, KIC
   /// -----
   /// TODO: Kích Hoạt Khung Màn Hình Thuộc Cấp SS300200 [Tạm Dừng Thực Thi Nhiệm Vụ]
   /// -----
+  @override
   Future<void> onKichHoatKhungManHinhThuocCapSS300200() async {
     try {
       /// -----
@@ -826,6 +879,7 @@ abstract class QUANLYTHANHPHANMANHINHTHUOCCAPCOBAN with CAUTRUCTHUCTHICOBAN, KIC
   /// -----
   /// TODO: Hủy Kích Hoạt Khung Màn Hình Thuộc Cấp SS300200 [Tạm Dừng Thực Thi Nhiệm Vụ]
   /// -----
+  @override
   Future<void> onHuyKichHoatKhungManHinhThuocCapSS300200() async {
     try {
       /// -----
@@ -849,6 +903,7 @@ abstract class QUANLYTHANHPHANMANHINHTHUOCCAPCOBAN with CAUTRUCTHUCTHICOBAN, KIC
   /// -----
   /// TODO: Kích Hoạt Khung Màn Hình Thuộc Cấp SS300300 [Hồi Sinh Có Điều Kiện]
   /// -----
+  @override
   Future<void> onKichHoatKhungManHinhThuocCapSS300300() async {
     try {
       /// -----
@@ -872,6 +927,7 @@ abstract class QUANLYTHANHPHANMANHINHTHUOCCAPCOBAN with CAUTRUCTHUCTHICOBAN, KIC
   /// -----
   /// TODO: Hủy Kích Hoạt Khung Màn Hình Thuộc Cấp SS300300 [Hồi Sinh Có Điều Kiện]
   /// -----
+  @override
   Future<void> onHuyKichHoatKhungManHinhThuocCapSS300300() async {
     try {
       /// -----
@@ -895,6 +951,7 @@ abstract class QUANLYTHANHPHANMANHINHTHUOCCAPCOBAN with CAUTRUCTHUCTHICOBAN, KIC
   /// -----
   /// TODO: Kích Hoạt Khung Màn Hình Thuộc Cấp SS300400 [Thực Thi Nhiệm Vụ Chiến Thắng]
   /// -----
+  @override
   Future<void> onKichHoatKhungManHinhThuocCapSS300400ChienThang() async {
     try {
       /// -----
@@ -918,6 +975,7 @@ abstract class QUANLYTHANHPHANMANHINHTHUOCCAPCOBAN with CAUTRUCTHUCTHICOBAN, KIC
   /// -----
   /// TODO: Hủy Kích Hoạt Khung Màn Hình Thuộc Cấp SS300400 [Thực Thi Nhiệm Vụ Chiến Thắng]
   /// -----
+  @override
   Future<void> onHuyKichHoatKhungManHinhThuocCapSS300400ChienThang() async {
     try {
       /// -----
@@ -941,6 +999,7 @@ abstract class QUANLYTHANHPHANMANHINHTHUOCCAPCOBAN with CAUTRUCTHUCTHICOBAN, KIC
   /// -----
   /// TODO: Kích Hoạt Khung Màn Hình Thuộc Cấp SS300400 [Thực Thi Nhiệm Vụ Chiến Bại]
   /// -----
+  @override
   Future<void> onKichHoatKhungManHinhThuocCapSS300500() async {
     try {
       /// -----
@@ -964,6 +1023,7 @@ abstract class QUANLYTHANHPHANMANHINHTHUOCCAPCOBAN with CAUTRUCTHUCTHICOBAN, KIC
   /// -----
   /// TODO: Hủy Kích Hoạt Khung Màn Hình Thuộc Cấp SS300400 [Thực Thi Nhiệm Vụ Chiến Bại]
   /// -----
+  @override
   Future<void> onHuyKichHoatKhungManHinhThuocCapSS300500() async {
     try {
       /// -----
@@ -987,6 +1047,7 @@ abstract class QUANLYTHANHPHANMANHINHTHUOCCAPCOBAN with CAUTRUCTHUCTHICOBAN, KIC
   /// -----
   /// TODO: Kích Hoạt Khung Màn Hình Thuộc Cấp SS223100 [Bách Khoa Chiến Đấu Cơ]
   /// -----
+  @override
   Future<void> onKichHoatKhungManHinhThuocCapSS223100() async {
     try {
       /// -----
@@ -1010,6 +1071,7 @@ abstract class QUANLYTHANHPHANMANHINHTHUOCCAPCOBAN with CAUTRUCTHUCTHICOBAN, KIC
   /// -----
   /// TODO: Hủy Kích Hoạt Khung Màn Hình Thuộc Cấp SS223100 [Bách Khoa Chiến Đấu Cơ]
   /// -----
+  @override
   Future<void> onHuyKichHoatKhungManHinhThuocCapSS223100() async {
     try {
       /// -----
@@ -1033,6 +1095,7 @@ abstract class QUANLYTHANHPHANMANHINHTHUOCCAPCOBAN with CAUTRUCTHUCTHICOBAN, KIC
   /// -----
   /// TODO: Kích Hoạt Khung Màn Hình Thuộc Cấp SS223200 [Xác Nhận Nhiệm Vụ Chiến Đấu]
   /// -----
+  @override
   Future<void> onKichHoatKhungManHinhThuocCapSS223200() async {
     try {
       /// -----
@@ -1056,6 +1119,7 @@ abstract class QUANLYTHANHPHANMANHINHTHUOCCAPCOBAN with CAUTRUCTHUCTHICOBAN, KIC
   /// -----
   /// TODO: Hủy Kích Hoạt Khung Màn Hình Thuộc Cấp SS223200 [Xác Nhận Nhiệm Vụ Chiến Đấu]
   /// -----
+  @override
   Future<void> onHuyKichHoatKhungManHinhThuocCapSS223200() async {
     try {
       /// -----
@@ -1087,6 +1151,7 @@ abstract class QUANLYTHANHPHANMANHINHTHUOCCAPCOBAN with CAUTRUCTHUCTHICOBAN, KIC
   /// -----
   /// TODO:
   /// -----
+  @override
   Future<void> onChonChiDinhChienDauCo00E03SS01() async {
     try {
       /// -----
@@ -1110,6 +1175,7 @@ abstract class QUANLYTHANHPHANMANHINHTHUOCCAPCOBAN with CAUTRUCTHUCTHICOBAN, KIC
   /// -----
   /// TODO:
   /// -----
+  @override
   Future<void> onChonChiDinhChienDauCo00E03SS02() async {
     try {
       /// -----
@@ -1133,6 +1199,7 @@ abstract class QUANLYTHANHPHANMANHINHTHUOCCAPCOBAN with CAUTRUCTHUCTHICOBAN, KIC
   /// -----
   /// TODO:
   /// -----
+  @override
   Future<void> onChonChiDinhChienDauCo00E03SS03() async {
     try {
       /// -----
@@ -1156,6 +1223,7 @@ abstract class QUANLYTHANHPHANMANHINHTHUOCCAPCOBAN with CAUTRUCTHUCTHICOBAN, KIC
   /// -----
   /// TODO:
   /// -----
+  @override
   Future<void> onChonChiDinhChienDauCo00D04SS01() async {
     try {
       /// -----
@@ -1179,6 +1247,7 @@ abstract class QUANLYTHANHPHANMANHINHTHUOCCAPCOBAN with CAUTRUCTHUCTHICOBAN, KIC
   /// -----
   /// TODO:
   /// -----
+  @override
   Future<void> onChonChiDinhChienDauCo00C05SS01() async {
     try {
       /// -----
@@ -1202,6 +1271,7 @@ abstract class QUANLYTHANHPHANMANHINHTHUOCCAPCOBAN with CAUTRUCTHUCTHICOBAN, KIC
   /// -----
   /// TODO:
   /// -----
+  @override
   Future<void> onChonChiDinhChienDauCo00B06SS01() async {
     try {
       /// -----
@@ -1225,6 +1295,7 @@ abstract class QUANLYTHANHPHANMANHINHTHUOCCAPCOBAN with CAUTRUCTHUCTHICOBAN, KIC
   /// -----
   /// TODO:
   /// -----
+  @override
   Future<void> onChonChiDinhChienDauCo00A07SS01() async {
     try {
       /// -----
@@ -1248,6 +1319,7 @@ abstract class QUANLYTHANHPHANMANHINHTHUOCCAPCOBAN with CAUTRUCTHUCTHICOBAN, KIC
   /// -----
   /// TODO:
   /// -----
+  @override
   Future<void> onChonChiDinhChienDauCo00S08SS01() async {
     try {
       /// -----
@@ -1271,6 +1343,7 @@ abstract class QUANLYTHANHPHANMANHINHTHUOCCAPCOBAN with CAUTRUCTHUCTHICOBAN, KIC
   /// -----
   /// TODO:
   /// -----
+  @override
   Future<void> onChonChiDinhChienDauCo0SS09SS01() async {
     try {
       /// -----
@@ -1294,6 +1367,7 @@ abstract class QUANLYTHANHPHANMANHINHTHUOCCAPCOBAN with CAUTRUCTHUCTHICOBAN, KIC
   /// -----
   /// TODO:
   /// -----
+  @override
   Future<void> onChonChiDinhChienDauCo0SS09SS02() async {
     try {
       /// -----
@@ -1317,6 +1391,7 @@ abstract class QUANLYTHANHPHANMANHINHTHUOCCAPCOBAN with CAUTRUCTHUCTHICOBAN, KIC
   /// -----
   /// TODO:
   /// -----
+  @override
   Future<void> onChonChiDinhChienDauCo0SS09SS03() async {
     try {
       /// -----
@@ -1340,6 +1415,7 @@ abstract class QUANLYTHANHPHANMANHINHTHUOCCAPCOBAN with CAUTRUCTHUCTHICOBAN, KIC
   /// -----
   /// TODO:
   /// -----
+  @override
   Future<void> onChonChiDinhChienDauCoSSS10SS01() async {
     try {
       /// -----
@@ -1363,6 +1439,7 @@ abstract class QUANLYTHANHPHANMANHINHTHUOCCAPCOBAN with CAUTRUCTHUCTHICOBAN, KIC
   /// -----
   /// TODO:
   /// -----
+  @override
   Future<void> onChonChiDinhChienDauCoSSS10SS02() async {
     try {
       /// -----
@@ -1386,6 +1463,7 @@ abstract class QUANLYTHANHPHANMANHINHTHUOCCAPCOBAN with CAUTRUCTHUCTHICOBAN, KIC
   /// -----
   /// TODO:
   /// -----
+  @override
   Future<void> onChonChiDinhChienDauCoSSS10SS03() async {
     try {
       /// -----
@@ -1409,6 +1487,7 @@ abstract class QUANLYTHANHPHANMANHINHTHUOCCAPCOBAN with CAUTRUCTHUCTHICOBAN, KIC
   /// -----
   /// TODO:
   /// -----
+  @override
   Future<void> onChonChiDinhChienDauCoSSS10SS04() async {
     try {
       /// -----
@@ -1432,6 +1511,7 @@ abstract class QUANLYTHANHPHANMANHINHTHUOCCAPCOBAN with CAUTRUCTHUCTHICOBAN, KIC
   /// -----
   /// TODO:
   /// -----
+  @override
   Future<void> onChonChiDinhChienDauCoSSS10SS05() async {
     try {
       /// -----

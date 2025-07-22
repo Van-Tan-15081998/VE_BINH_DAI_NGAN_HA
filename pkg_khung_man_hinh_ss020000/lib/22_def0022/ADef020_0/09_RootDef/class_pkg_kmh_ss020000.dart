@@ -855,6 +855,58 @@ abstract class THANHPHANMANHINHTHUOCCAPCOBAN extends PositionComponent with CAUT
   }
 
   /// -----
+  /// TODO: Giải Phóng Tài Nguyên Master
+  /// -----
+  @override
+  Future<void> onGiaiPhongTaiNguyenMaster({required Future<void> Function()? onThucThiHoanTat}) async {
+    try {
+      /// -----
+      /// TODO:
+      /// -----
+      await Future.wait([
+        getQuanLyThanhPhanManHinhThuocCap?.onGiaiPhongTaiNguyenMaster(onThucThiHoanTat: onThucThiHoanTat).catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onHuyKichHoatKhungManHinhThuocCapLoadingSS010'),
+        getQuanLyThanhPhanNutBamThuocCap?.onGiaiPhongTaiNguyenMaster(onThucThiHoanTat: onThucThiHoanTat).catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onHuyKichHoatKhungManHinhThuocCapLoadingSS010'),
+        getQuanLyThanhPhanVanBanThuocCap?.onGiaiPhongTaiNguyenMaster(onThucThiHoanTat: onThucThiHoanTat).catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onHuyKichHoatKhungManHinhThuocCapLoadingSS010'),
+        getQuanLyThanhPhanHinhAnhThuocCap?.onGiaiPhongTaiNguyenMaster(onThucThiHoanTat: onThucThiHoanTat).catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onHuyKichHoatKhungManHinhThuocCapLoadingSS010'),
+        getQuanLyThanhPhanTichHopThuocCap?.onGiaiPhongTaiNguyenMaster(onThucThiHoanTat: onThucThiHoanTat).catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onHuyKichHoatKhungManHinhThuocCapLoadingSS010'),
+      ]);
+
+      ///
+    } catch (e) {
+      await onReportRootIssue(nameFunction: 'onGiaiPhongTaiNguyenMaster');
+    }
+
+    ///
+    return;
+  }
+
+  /// -----
+  /// TODO: Tải Tài Nguyên Master
+  /// -----
+  @override
+  Future<void> onTaiTaiNguyenMaster({required Future<void> Function()? onThucThiHoanTat}) async {
+    try {
+      /// -----
+      /// TODO:
+      /// -----
+      await Future.wait([
+        getQuanLyThanhPhanManHinhThuocCap?.onTaiTaiNguyenMaster(onThucThiHoanTat: onThucThiHoanTat).catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onHuyKichHoatKhungManHinhThuocCapLoadingSS010'),
+        getQuanLyThanhPhanNutBamThuocCap?.onTaiTaiNguyenMaster(onThucThiHoanTat: onThucThiHoanTat).catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onHuyKichHoatKhungManHinhThuocCapLoadingSS010'),
+        getQuanLyThanhPhanVanBanThuocCap?.onTaiTaiNguyenMaster(onThucThiHoanTat: onThucThiHoanTat).catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onHuyKichHoatKhungManHinhThuocCapLoadingSS010'),
+        getQuanLyThanhPhanHinhAnhThuocCap?.onTaiTaiNguyenMaster(onThucThiHoanTat: onThucThiHoanTat).catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onHuyKichHoatKhungManHinhThuocCapLoadingSS010'),
+        getQuanLyThanhPhanTichHopThuocCap?.onTaiTaiNguyenMaster(onThucThiHoanTat: onThucThiHoanTat).catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onHuyKichHoatKhungManHinhThuocCapLoadingSS010'),
+      ]);
+
+      ///
+    } catch (e) {
+      await onReportRootIssue(nameFunction: 'onTaiTaiNguyenMaster');
+    }
+
+    ///
+    return;
+  }
+
+  /// -----
   /// TODO: Kích Hoạt Khung Màn Hình Thuộc Cấp Loading SS020 [Mini Loading]
   /// -----
   @override

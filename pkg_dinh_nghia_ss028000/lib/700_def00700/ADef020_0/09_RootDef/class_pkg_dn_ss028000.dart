@@ -1079,8 +1079,7 @@ class QUANLYTRANGTHAIHANGARCHIENDAUCO with CAUTRUCTHUCTHICOBAN {
       /// -----
       /// TODO:
       /// -----
-      getThuocTinhTaiNguyenChienDauCo?.getMapTaiNguyenHinhAnhNgoaiHinh?[MOHINHCHIENDAUCO00E03SS010.maDinhDanhChienDauCo] =
-          getChienDauCo00E03SS010?.getThuocTinhChienDauCo?.getThuocTinhHinhAnh;
+      getThuocTinhTaiNguyenChienDauCo?.getMapTaiNguyenHinhAnhNgoaiHinh?[MOHINHCHIENDAUCO00E03SS010.maDinhDanhChienDauCo] = getChienDauCo00E03SS010?.getThuocTinhChienDauCo?.getThuocTinhHinhAnh;
       getThuocTinhTaiNguyenChienDauCo?.getMapTaiNguyenHinhAnhNgoaiHinh?[VUKHISUNGCHINHSS010CDCDCS00E03SS010.maDinhDanhVuKhiTanCong] =
           getVuKhiSungChinhSS010CDCDCS00E03SS010?.getSieuCapThuocTinh?.getTrangThaiHinhAnh?.getMoHinh;
       getThuocTinhTaiNguyenChienDauCo?.getMapTaiNguyenHinhAnhNgoaiHinh?[VUKHISUNGCHINHSS020CDCDCS00E03SS010.maDinhDanhVuKhiTanCong] =
@@ -1097,8 +1096,7 @@ class QUANLYTRANGTHAIHANGARCHIENDAUCO with CAUTRUCTHUCTHICOBAN {
       /// -----
       /// TODO:
       /// -----
-      getThuocTinhTaiNguyenChienDauCo?.getMapTaiNguyenHinhAnhNgoaiHinh?[MOHINHCHIENDAUCO00E03SS020.maDinhDanhChienDauCo] =
-          getChienDauCo00E03SS020?.getThuocTinhChienDauCo?.getThuocTinhHinhAnh;
+      getThuocTinhTaiNguyenChienDauCo?.getMapTaiNguyenHinhAnhNgoaiHinh?[MOHINHCHIENDAUCO00E03SS020.maDinhDanhChienDauCo] = getChienDauCo00E03SS020?.getThuocTinhChienDauCo?.getThuocTinhHinhAnh;
       getThuocTinhTaiNguyenChienDauCo?.getMapTaiNguyenHinhAnhNgoaiHinh?[VUKHISUNGCHINHSS010CDCDCS00E03SS020.maDinhDanhVuKhiTanCong] =
           getVuKhiSungChinhSS010CDCDCS00E03SS020?.getSieuCapThuocTinh?.getTrangThaiHinhAnh?.getMoHinh;
       getThuocTinhTaiNguyenChienDauCo?.getMapTaiNguyenHinhAnhNgoaiHinh?[VUKHISUNGCHINHSS020CDCDCS00E03SS020.maDinhDanhVuKhiTanCong] =
@@ -1115,8 +1113,7 @@ class QUANLYTRANGTHAIHANGARCHIENDAUCO with CAUTRUCTHUCTHICOBAN {
       /// -----
       /// TODO:
       /// -----
-      getThuocTinhTaiNguyenChienDauCo?.getMapTaiNguyenHinhAnhNgoaiHinh?[MOHINHCHIENDAUCO00E03SS030.maDinhDanhChienDauCo] =
-          getChienDauCo00E03SS030?.getThuocTinhChienDauCo?.getThuocTinhHinhAnh;
+      getThuocTinhTaiNguyenChienDauCo?.getMapTaiNguyenHinhAnhNgoaiHinh?[MOHINHCHIENDAUCO00E03SS030.maDinhDanhChienDauCo] = getChienDauCo00E03SS030?.getThuocTinhChienDauCo?.getThuocTinhHinhAnh;
       getThuocTinhTaiNguyenChienDauCo?.getMapTaiNguyenHinhAnhNgoaiHinh?[VUKHISUNGCHINHSS010CDCDCS00E03SS030.maDinhDanhVuKhiTanCong] =
           getVuKhiSungChinhSS010CDCDCS00E03SS030?.getSieuCapThuocTinh?.getTrangThaiHinhAnh?.getMoHinh;
       getThuocTinhTaiNguyenChienDauCo?.getMapTaiNguyenHinhAnhNgoaiHinh?[VUKHISUNGCHINHSS020CDCDCS00E03SS030.maDinhDanhVuKhiTanCong] =
@@ -1133,8 +1130,7 @@ class QUANLYTRANGTHAIHANGARCHIENDAUCO with CAUTRUCTHUCTHICOBAN {
       /// -----
       /// TODO:
       /// -----
-      getThuocTinhTaiNguyenChienDauCo?.getMapTaiNguyenHinhAnhNgoaiHinh?[MOHINHCHIENDAUCO00D04SS010.maDinhDanhChienDauCo] =
-          getChienDauCo00D04SS010?.getThuocTinhChienDauCo?.getThuocTinhHinhAnh;
+      getThuocTinhTaiNguyenChienDauCo?.getMapTaiNguyenHinhAnhNgoaiHinh?[MOHINHCHIENDAUCO00D04SS010.maDinhDanhChienDauCo] = getChienDauCo00D04SS010?.getThuocTinhChienDauCo?.getThuocTinhHinhAnh;
       getThuocTinhTaiNguyenChienDauCo?.getMapTaiNguyenHinhAnhNgoaiHinh?[VUKHISUNGCHINHSS010CDCDCS00D04SS010.maDinhDanhVuKhiTanCong] =
           getVuKhiSungChinhSS010CDCDCS00D04SS010?.getSieuCapThuocTinh?.getTrangThaiHinhAnh?.getMoHinh;
       getThuocTinhTaiNguyenChienDauCo?.getMapTaiNguyenHinhAnhNgoaiHinh?[VUKHISUNGCHINHSS020CDCDCS00D04SS010.maDinhDanhVuKhiTanCong] =
@@ -1151,8 +1147,7 @@ class QUANLYTRANGTHAIHANGARCHIENDAUCO with CAUTRUCTHUCTHICOBAN {
       /// -----
       /// TODO:
       /// -----
-      getThuocTinhTaiNguyenChienDauCo?.getMapTaiNguyenHinhAnhNgoaiHinh?[MOHINHCHIENDAUCO00C05SS010.maDinhDanhChienDauCo] =
-          getChienDauCo00C05SS010?.getThuocTinhChienDauCo?.getThuocTinhHinhAnh;
+      getThuocTinhTaiNguyenChienDauCo?.getMapTaiNguyenHinhAnhNgoaiHinh?[MOHINHCHIENDAUCO00C05SS010.maDinhDanhChienDauCo] = getChienDauCo00C05SS010?.getThuocTinhChienDauCo?.getThuocTinhHinhAnh;
       getThuocTinhTaiNguyenChienDauCo?.getMapTaiNguyenHinhAnhNgoaiHinh?[VUKHISUNGCHINHSS010CDCDCS00C05SS010.maDinhDanhVuKhiTanCong] =
           getVuKhiSungChinhSS010CDCDCS00C05SS010?.getSieuCapThuocTinh?.getTrangThaiHinhAnh?.getMoHinh;
       getThuocTinhTaiNguyenChienDauCo?.getMapTaiNguyenHinhAnhNgoaiHinh?[VUKHISUNGCHINHSS020CDCDCS00C05SS010.maDinhDanhVuKhiTanCong] =
@@ -1169,8 +1164,7 @@ class QUANLYTRANGTHAIHANGARCHIENDAUCO with CAUTRUCTHUCTHICOBAN {
       /// -----
       /// TODO:
       /// -----
-      getThuocTinhTaiNguyenChienDauCo?.getMapTaiNguyenHinhAnhNgoaiHinh?[MOHINHCHIENDAUCO00B06SS010.maDinhDanhChienDauCo] =
-          getChienDauCo00B06SS010?.getThuocTinhChienDauCo?.getThuocTinhHinhAnh;
+      getThuocTinhTaiNguyenChienDauCo?.getMapTaiNguyenHinhAnhNgoaiHinh?[MOHINHCHIENDAUCO00B06SS010.maDinhDanhChienDauCo] = getChienDauCo00B06SS010?.getThuocTinhChienDauCo?.getThuocTinhHinhAnh;
       getThuocTinhTaiNguyenChienDauCo?.getMapTaiNguyenHinhAnhNgoaiHinh?[VUKHISUNGCHINHSS010CDCDCS00B06SS010.maDinhDanhVuKhiTanCong] =
           getVuKhiSungChinhSS010CDCDCS00B06SS010?.getSieuCapThuocTinh?.getTrangThaiHinhAnh?.getMoHinh;
       getThuocTinhTaiNguyenChienDauCo?.getMapTaiNguyenHinhAnhNgoaiHinh?[VUKHISUNGCHINHSS020CDCDCS00B06SS010.maDinhDanhVuKhiTanCong] =
@@ -1187,8 +1181,7 @@ class QUANLYTRANGTHAIHANGARCHIENDAUCO with CAUTRUCTHUCTHICOBAN {
       /// -----
       /// TODO:
       /// -----
-      getThuocTinhTaiNguyenChienDauCo?.getMapTaiNguyenHinhAnhNgoaiHinh?[MOHINHCHIENDAUCO00A07SS010.maDinhDanhChienDauCo] =
-          getChienDauCo00A07SS010?.getThuocTinhChienDauCo?.getThuocTinhHinhAnh;
+      getThuocTinhTaiNguyenChienDauCo?.getMapTaiNguyenHinhAnhNgoaiHinh?[MOHINHCHIENDAUCO00A07SS010.maDinhDanhChienDauCo] = getChienDauCo00A07SS010?.getThuocTinhChienDauCo?.getThuocTinhHinhAnh;
       getThuocTinhTaiNguyenChienDauCo?.getMapTaiNguyenHinhAnhNgoaiHinh?[VUKHISUNGCHINHSS010CDCDCS00A07SS010.maDinhDanhVuKhiTanCong] =
           getVuKhiSungChinhSS010CDCDCS00A07SS010?.getSieuCapThuocTinh?.getTrangThaiHinhAnh?.getMoHinh;
       getThuocTinhTaiNguyenChienDauCo?.getMapTaiNguyenHinhAnhNgoaiHinh?[VUKHISUNGCHINHSS020CDCDCS00A07SS010.maDinhDanhVuKhiTanCong] =
@@ -1205,8 +1198,7 @@ class QUANLYTRANGTHAIHANGARCHIENDAUCO with CAUTRUCTHUCTHICOBAN {
       /// -----
       /// TODO:
       /// -----
-      getThuocTinhTaiNguyenChienDauCo?.getMapTaiNguyenHinhAnhNgoaiHinh?[MOHINHCHIENDAUCO00S08SS010.maDinhDanhChienDauCo] =
-          getChienDauCo00S08SS010?.getThuocTinhChienDauCo?.getThuocTinhHinhAnh;
+      getThuocTinhTaiNguyenChienDauCo?.getMapTaiNguyenHinhAnhNgoaiHinh?[MOHINHCHIENDAUCO00S08SS010.maDinhDanhChienDauCo] = getChienDauCo00S08SS010?.getThuocTinhChienDauCo?.getThuocTinhHinhAnh;
       getThuocTinhTaiNguyenChienDauCo?.getMapTaiNguyenHinhAnhNgoaiHinh?[VUKHISUNGCHINHSS010CDCDCS00S08SS010.maDinhDanhVuKhiTanCong] =
           getVuKhiSungChinhSS010CDCDCS00S08SS010?.getSieuCapThuocTinh?.getTrangThaiHinhAnh?.getMoHinh;
       getThuocTinhTaiNguyenChienDauCo?.getMapTaiNguyenHinhAnhNgoaiHinh?[VUKHISUNGCHINHSS020CDCDCS00S08SS010.maDinhDanhVuKhiTanCong] =
@@ -1223,8 +1215,7 @@ class QUANLYTRANGTHAIHANGARCHIENDAUCO with CAUTRUCTHUCTHICOBAN {
       /// -----
       /// TODO:
       /// -----
-      getThuocTinhTaiNguyenChienDauCo?.getMapTaiNguyenHinhAnhNgoaiHinh?[MOHINHCHIENDAUCO0SS09SS010.maDinhDanhChienDauCo] =
-          getChienDauCo0SS09SS010?.getThuocTinhChienDauCo?.getThuocTinhHinhAnh;
+      getThuocTinhTaiNguyenChienDauCo?.getMapTaiNguyenHinhAnhNgoaiHinh?[MOHINHCHIENDAUCO0SS09SS010.maDinhDanhChienDauCo] = getChienDauCo0SS09SS010?.getThuocTinhChienDauCo?.getThuocTinhHinhAnh;
       getThuocTinhTaiNguyenChienDauCo?.getMapTaiNguyenHinhAnhNgoaiHinh?[VUKHISUNGCHINHSS010CDCDCS0SS09SS010.maDinhDanhVuKhiTanCong] =
           getVuKhiSungChinhSS010CDCDCS0SS09SS010?.getSieuCapThuocTinh?.getTrangThaiHinhAnh?.getMoHinh;
       getThuocTinhTaiNguyenChienDauCo?.getMapTaiNguyenHinhAnhNgoaiHinh?[VUKHISUNGCHINHSS020CDCDCS0SS09SS010.maDinhDanhVuKhiTanCong] =
@@ -1241,8 +1232,7 @@ class QUANLYTRANGTHAIHANGARCHIENDAUCO with CAUTRUCTHUCTHICOBAN {
       /// -----
       /// TODO:
       /// -----
-      getThuocTinhTaiNguyenChienDauCo?.getMapTaiNguyenHinhAnhNgoaiHinh?[MOHINHCHIENDAUCO0SS09SS020.maDinhDanhChienDauCo] =
-          getChienDauCo0SS09SS020?.getThuocTinhChienDauCo?.getThuocTinhHinhAnh;
+      getThuocTinhTaiNguyenChienDauCo?.getMapTaiNguyenHinhAnhNgoaiHinh?[MOHINHCHIENDAUCO0SS09SS020.maDinhDanhChienDauCo] = getChienDauCo0SS09SS020?.getThuocTinhChienDauCo?.getThuocTinhHinhAnh;
       getThuocTinhTaiNguyenChienDauCo?.getMapTaiNguyenHinhAnhNgoaiHinh?[VUKHISUNGCHINHSS010CDCDCS0SS09SS020.maDinhDanhVuKhiTanCong] =
           getVuKhiSungChinhSS010CDCDCS0SS09SS020?.getSieuCapThuocTinh?.getTrangThaiHinhAnh?.getMoHinh;
       getThuocTinhTaiNguyenChienDauCo?.getMapTaiNguyenHinhAnhNgoaiHinh?[VUKHISUNGCHINHSS020CDCDCS0SS09SS020.maDinhDanhVuKhiTanCong] =
@@ -1259,8 +1249,7 @@ class QUANLYTRANGTHAIHANGARCHIENDAUCO with CAUTRUCTHUCTHICOBAN {
       /// -----
       /// TODO:
       /// -----
-      getThuocTinhTaiNguyenChienDauCo?.getMapTaiNguyenHinhAnhNgoaiHinh?[MOHINHCHIENDAUCO0SS09SS030.maDinhDanhChienDauCo] =
-          getChienDauCo0SS09SS030?.getThuocTinhChienDauCo?.getThuocTinhHinhAnh;
+      getThuocTinhTaiNguyenChienDauCo?.getMapTaiNguyenHinhAnhNgoaiHinh?[MOHINHCHIENDAUCO0SS09SS030.maDinhDanhChienDauCo] = getChienDauCo0SS09SS030?.getThuocTinhChienDauCo?.getThuocTinhHinhAnh;
       getThuocTinhTaiNguyenChienDauCo?.getMapTaiNguyenHinhAnhNgoaiHinh?[VUKHISUNGCHINHSS010CDCDCS0SS09SS030.maDinhDanhVuKhiTanCong] =
           getVuKhiSungChinhSS010CDCDCS0SS09SS030?.getSieuCapThuocTinh?.getTrangThaiHinhAnh?.getMoHinh;
       getThuocTinhTaiNguyenChienDauCo?.getMapTaiNguyenHinhAnhNgoaiHinh?[VUKHISUNGCHINHSS020CDCDCS0SS09SS030.maDinhDanhVuKhiTanCong] =
@@ -1277,8 +1266,7 @@ class QUANLYTRANGTHAIHANGARCHIENDAUCO with CAUTRUCTHUCTHICOBAN {
       /// -----
       /// TODO:
       /// -----
-      getThuocTinhTaiNguyenChienDauCo?.getMapTaiNguyenHinhAnhNgoaiHinh?[MOHINHCHIENDAUCOSSS10SS010.maDinhDanhChienDauCo] =
-          getChienDauCoSSS10SS010?.getThuocTinhChienDauCo?.getThuocTinhHinhAnh;
+      getThuocTinhTaiNguyenChienDauCo?.getMapTaiNguyenHinhAnhNgoaiHinh?[MOHINHCHIENDAUCOSSS10SS010.maDinhDanhChienDauCo] = getChienDauCoSSS10SS010?.getThuocTinhChienDauCo?.getThuocTinhHinhAnh;
       getThuocTinhTaiNguyenChienDauCo?.getMapTaiNguyenHinhAnhNgoaiHinh?[VUKHISUNGCHINHSS010CDCDCSSSS10SS010.maDinhDanhVuKhiTanCong] =
           getVuKhiSungChinhSS010CDCDCSSSS10SS010?.getSieuCapThuocTinh?.getTrangThaiHinhAnh?.getMoHinh;
       getThuocTinhTaiNguyenChienDauCo?.getMapTaiNguyenHinhAnhNgoaiHinh?[VUKHISUNGCHINHSS020CDCDCSSSS10SS010.maDinhDanhVuKhiTanCong] =
@@ -1295,8 +1283,7 @@ class QUANLYTRANGTHAIHANGARCHIENDAUCO with CAUTRUCTHUCTHICOBAN {
       /// -----
       /// TODO:
       /// -----
-      getThuocTinhTaiNguyenChienDauCo?.getMapTaiNguyenHinhAnhNgoaiHinh?[MOHINHCHIENDAUCOSSS10SS020.maDinhDanhChienDauCo] =
-          getChienDauCoSSS10SS020?.getThuocTinhChienDauCo?.getThuocTinhHinhAnh;
+      getThuocTinhTaiNguyenChienDauCo?.getMapTaiNguyenHinhAnhNgoaiHinh?[MOHINHCHIENDAUCOSSS10SS020.maDinhDanhChienDauCo] = getChienDauCoSSS10SS020?.getThuocTinhChienDauCo?.getThuocTinhHinhAnh;
       getThuocTinhTaiNguyenChienDauCo?.getMapTaiNguyenHinhAnhNgoaiHinh?[VUKHISUNGCHINHSS010CDCDCSSSS10SS020.maDinhDanhVuKhiTanCong] =
           getVuKhiSungChinhSS010CDCDCSSSS10SS020?.getSieuCapThuocTinh?.getTrangThaiHinhAnh?.getMoHinh;
       getThuocTinhTaiNguyenChienDauCo?.getMapTaiNguyenHinhAnhNgoaiHinh?[VUKHISUNGCHINHSS020CDCDCSSSS10SS020.maDinhDanhVuKhiTanCong] =
@@ -1313,8 +1300,7 @@ class QUANLYTRANGTHAIHANGARCHIENDAUCO with CAUTRUCTHUCTHICOBAN {
       /// -----
       /// TODO:
       /// -----
-      getThuocTinhTaiNguyenChienDauCo?.getMapTaiNguyenHinhAnhNgoaiHinh?[MOHINHCHIENDAUCOSSS10SS030.maDinhDanhChienDauCo] =
-          getChienDauCoSSS10SS030?.getThuocTinhChienDauCo?.getThuocTinhHinhAnh;
+      getThuocTinhTaiNguyenChienDauCo?.getMapTaiNguyenHinhAnhNgoaiHinh?[MOHINHCHIENDAUCOSSS10SS030.maDinhDanhChienDauCo] = getChienDauCoSSS10SS030?.getThuocTinhChienDauCo?.getThuocTinhHinhAnh;
       getThuocTinhTaiNguyenChienDauCo?.getMapTaiNguyenHinhAnhNgoaiHinh?[VUKHISUNGCHINHSS010CDCDCSSSS10SS030.maDinhDanhVuKhiTanCong] =
           getVuKhiSungChinhSS010CDCDCSSSS10SS030?.getSieuCapThuocTinh?.getTrangThaiHinhAnh?.getMoHinh;
       getThuocTinhTaiNguyenChienDauCo?.getMapTaiNguyenHinhAnhNgoaiHinh?[VUKHISUNGCHINHSS020CDCDCSSSS10SS030.maDinhDanhVuKhiTanCong] =
@@ -1331,8 +1317,7 @@ class QUANLYTRANGTHAIHANGARCHIENDAUCO with CAUTRUCTHUCTHICOBAN {
       /// -----
       /// TODO:
       /// -----
-      getThuocTinhTaiNguyenChienDauCo?.getMapTaiNguyenHinhAnhNgoaiHinh?[MOHINHCHIENDAUCOSSS10SS040.maDinhDanhChienDauCo] =
-          getChienDauCoSSS10SS040?.getThuocTinhChienDauCo?.getThuocTinhHinhAnh;
+      getThuocTinhTaiNguyenChienDauCo?.getMapTaiNguyenHinhAnhNgoaiHinh?[MOHINHCHIENDAUCOSSS10SS040.maDinhDanhChienDauCo] = getChienDauCoSSS10SS040?.getThuocTinhChienDauCo?.getThuocTinhHinhAnh;
       getThuocTinhTaiNguyenChienDauCo?.getMapTaiNguyenHinhAnhNgoaiHinh?[VUKHISUNGCHINHSS010CDCDCSSSS10SS040.maDinhDanhVuKhiTanCong] =
           getVuKhiSungChinhSS010CDCDCSSSS10SS040?.getSieuCapThuocTinh?.getTrangThaiHinhAnh?.getMoHinh;
       getThuocTinhTaiNguyenChienDauCo?.getMapTaiNguyenHinhAnhNgoaiHinh?[VUKHISUNGCHINHSS020CDCDCSSSS10SS040.maDinhDanhVuKhiTanCong] =
@@ -1349,8 +1334,7 @@ class QUANLYTRANGTHAIHANGARCHIENDAUCO with CAUTRUCTHUCTHICOBAN {
       /// -----
       /// TODO:
       /// -----
-      getThuocTinhTaiNguyenChienDauCo?.getMapTaiNguyenHinhAnhNgoaiHinh?[MOHINHCHIENDAUCOSSS10SS050.maDinhDanhChienDauCo] =
-          getChienDauCoSSS10SS050?.getThuocTinhChienDauCo?.getThuocTinhHinhAnh;
+      getThuocTinhTaiNguyenChienDauCo?.getMapTaiNguyenHinhAnhNgoaiHinh?[MOHINHCHIENDAUCOSSS10SS050.maDinhDanhChienDauCo] = getChienDauCoSSS10SS050?.getThuocTinhChienDauCo?.getThuocTinhHinhAnh;
       getThuocTinhTaiNguyenChienDauCo?.getMapTaiNguyenHinhAnhNgoaiHinh?[VUKHISUNGCHINHSS010CDCDCSSSS10SS050.maDinhDanhVuKhiTanCong] =
           getVuKhiSungChinhSS010CDCDCSSSS10SS050?.getSieuCapThuocTinh?.getTrangThaiHinhAnh?.getMoHinh;
       getThuocTinhTaiNguyenChienDauCo?.getMapTaiNguyenHinhAnhNgoaiHinh?[VUKHISUNGCHINHSS020CDCDCSSSS10SS050.maDinhDanhVuKhiTanCong] =
@@ -1762,6 +1746,232 @@ class QUANLYTRANGTHAIHANGARCHIENDAUCO with CAUTRUCTHUCTHICOBAN {
       // ]);
     } catch (e) {
       await onReportRootIssue(nameFunction: 'onInitRootForSubCom');
+    }
+
+    ///
+    return;
+  }
+
+  /// -----
+  /// TODO: Giải Phóng Tài Nguyên Master
+  /// -----
+  Future<void> onGiaiPhongTaiNguyenMaster({required Future<void> Function()? onThucThiHoanTat}) async {
+
+    await onThucThiHoanTat?.call();
+
+    return;
+
+    try {
+      /// -----
+      /// TODO:
+      /// -----
+      CAUTRUCTHUCTHITUANTUCOBAN? cauTrucThucThiTuanTu;
+      cauTrucThucThiTuanTu = CAUTRUCTHUCTHITUANTUCOBAN.onMacDinh();
+
+      cauTrucThucThiTuanTu.onAddDonViThucThiTuanTu(
+        onThucThiTuanTu: () async {
+          await onGiaiPhongTaiNguyenChienDauCo00E03SS010();
+        },
+      );
+
+      cauTrucThucThiTuanTu.onAddDonViThucThiTuanTu(
+        onThucThiTuanTu: () async {
+          await onGiaiPhongTaiNguyenChienDauCo00E03SS020();
+        },
+      );
+
+      cauTrucThucThiTuanTu.onAddDonViThucThiTuanTu(
+        onThucThiTuanTu: () async {
+          await onGiaiPhongTaiNguyenChienDauCo00E03SS030();
+        },
+      );
+
+      cauTrucThucThiTuanTu.onAddDonViThucThiTuanTu(
+        onThucThiTuanTu: () async {
+          await onGiaiPhongTaiNguyenChienDauCo00D04SS010();
+        },
+      );
+
+      cauTrucThucThiTuanTu.onAddDonViThucThiTuanTu(
+        onThucThiTuanTu: () async {
+          await onGiaiPhongTaiNguyenChienDauCo00C05SS010();
+        },
+      );
+
+      cauTrucThucThiTuanTu.onAddDonViThucThiTuanTu(
+        onThucThiTuanTu: () async {
+          await onGiaiPhongTaiNguyenChienDauCo00B06SS010();
+        },
+      );
+
+      cauTrucThucThiTuanTu.onAddDonViThucThiTuanTu(
+        onThucThiTuanTu: () async {
+          await onGiaiPhongTaiNguyenChienDauCo00A07SS010();
+        },
+      );
+
+      cauTrucThucThiTuanTu.onAddDonViThucThiTuanTu(
+        onThucThiTuanTu: () async {
+          await onGiaiPhongTaiNguyenChienDauCo00S08SS010();
+        },
+      );
+
+      cauTrucThucThiTuanTu.onAddDonViThucThiTuanTu(
+        onThucThiTuanTu: () async {
+          await onGiaiPhongTaiNguyenChienDauCo0SS09SS010();
+        },
+      );
+
+      cauTrucThucThiTuanTu.onAddDonViThucThiTuanTu(
+        onThucThiTuanTu: () async {
+          await onGiaiPhongTaiNguyenChienDauCo0SS09SS020();
+        },
+      );
+
+      cauTrucThucThiTuanTu.onAddDonViThucThiTuanTu(
+        onThucThiTuanTu: () async {
+          await onGiaiPhongTaiNguyenChienDauCo0SS09SS030();
+        },
+      );
+
+      cauTrucThucThiTuanTu.onAddDonViThucThiTuanTu(
+        onThucThiTuanTu: () async {
+          await onGiaiPhongTaiNguyenChienDauCoSSS10SS010();
+        },
+      );
+
+      cauTrucThucThiTuanTu.onAddDonViThucThiTuanTu(
+        onThucThiTuanTu: () async {
+          await onGiaiPhongTaiNguyenChienDauCoSSS10SS020();
+        },
+      );
+
+      cauTrucThucThiTuanTu.onAddDonViThucThiTuanTu(
+        onThucThiTuanTu: () async {
+          await onGiaiPhongTaiNguyenChienDauCoSSS10SS030();
+        },
+      );
+
+      cauTrucThucThiTuanTu.onAddDonViThucThiTuanTu(
+        onThucThiTuanTu: () async {
+          await onGiaiPhongTaiNguyenChienDauCoSSS10SS040();
+        },
+      );
+
+      cauTrucThucThiTuanTu.onAddDonViThucThiTuanTu(
+        onThucThiTuanTu: () async {
+          await onGiaiPhongTaiNguyenChienDauCoSSS10SS050();
+        },
+      );
+
+      cauTrucThucThiTuanTu.onThucThiHoanTat = onThucThiHoanTat;
+      cauTrucThucThiTuanTu.onThucThiTuanTu(interval: const Duration(milliseconds: 100));
+    } catch (e) {
+      await onReportRootIssue(nameFunction: 'onGiaiPhongTaiNguyenMaster');
+    }
+
+    ///
+    return;
+  }
+
+  /// -----
+  /// TODO: Tải Tài Nguyên Master
+  /// -----
+  Future<void> onTaiTaiNguyenMaster({required Future<void> Function()? onThucThiHoanTat}) async {
+    try {
+      /// -----
+      /// TODO:
+      /// -----
+
+      CAUTRUCTHUCTHITUANTUCOBAN? cauTrucThucThiTuanTu;
+      cauTrucThucThiTuanTu = CAUTRUCTHUCTHITUANTUCOBAN.onMacDinh();
+
+      cauTrucThucThiTuanTu.onAddDonViThucThiTuanTu(
+        onThucThiTuanTu: () async {
+          await onTaiTaiNguyenChienDauCo00E03SS010(onThucThiHoanTat: null);
+        },
+      );
+      cauTrucThucThiTuanTu.onAddDonViThucThiTuanTu(
+        onThucThiTuanTu: () async {
+          await onTaiTaiNguyenChienDauCo00E03SS020(onThucThiHoanTat: null);
+        },
+      );
+      cauTrucThucThiTuanTu.onAddDonViThucThiTuanTu(
+        onThucThiTuanTu: () async {
+          await onTaiTaiNguyenChienDauCo00E03SS030(onThucThiHoanTat: null);
+        },
+      );
+      cauTrucThucThiTuanTu.onAddDonViThucThiTuanTu(
+        onThucThiTuanTu: () async {
+          await onTaiTaiNguyenChienDauCo00D04SS010(onThucThiHoanTat: null);
+        },
+      );
+      cauTrucThucThiTuanTu.onAddDonViThucThiTuanTu(
+        onThucThiTuanTu: () async {
+          await onTaiTaiNguyenChienDauCo00C05SS010(onThucThiHoanTat: null);
+        },
+      );
+      cauTrucThucThiTuanTu.onAddDonViThucThiTuanTu(
+        onThucThiTuanTu: () async {
+          await onTaiTaiNguyenChienDauCo00B06SS010(onThucThiHoanTat: null);
+        },
+      );
+      cauTrucThucThiTuanTu.onAddDonViThucThiTuanTu(
+        onThucThiTuanTu: () async {
+          await onTaiTaiNguyenChienDauCo00A07SS010(onThucThiHoanTat: null);
+        },
+      );
+      cauTrucThucThiTuanTu.onAddDonViThucThiTuanTu(
+        onThucThiTuanTu: () async {
+          await onTaiTaiNguyenChienDauCo00S08SS010(onThucThiHoanTat: null);
+        },
+      );
+      cauTrucThucThiTuanTu.onAddDonViThucThiTuanTu(
+        onThucThiTuanTu: () async {
+          await onTaiTaiNguyenChienDauCo0SS09SS010(onThucThiHoanTat: null);
+        },
+      );
+      cauTrucThucThiTuanTu.onAddDonViThucThiTuanTu(
+        onThucThiTuanTu: () async {
+          await onTaiTaiNguyenChienDauCo0SS09SS020(onThucThiHoanTat: null);
+        },
+      );
+      cauTrucThucThiTuanTu.onAddDonViThucThiTuanTu(
+        onThucThiTuanTu: () async {
+          await onTaiTaiNguyenChienDauCo0SS09SS030(onThucThiHoanTat: null);
+        },
+      );
+      cauTrucThucThiTuanTu.onAddDonViThucThiTuanTu(
+        onThucThiTuanTu: () async {
+          await onTaiTaiNguyenChienDauCoSSS10SS010(onThucThiHoanTat: null);
+        },
+      );
+      cauTrucThucThiTuanTu.onAddDonViThucThiTuanTu(
+        onThucThiTuanTu: () async {
+          await onTaiTaiNguyenChienDauCoSSS10SS020(onThucThiHoanTat: null);
+        },
+      );
+      cauTrucThucThiTuanTu.onAddDonViThucThiTuanTu(
+        onThucThiTuanTu: () async {
+          await onTaiTaiNguyenChienDauCoSSS10SS030(onThucThiHoanTat: null);
+        },
+      );
+      cauTrucThucThiTuanTu.onAddDonViThucThiTuanTu(
+        onThucThiTuanTu: () async {
+          await onTaiTaiNguyenChienDauCoSSS10SS040(onThucThiHoanTat: null);
+        },
+      );
+      cauTrucThucThiTuanTu.onAddDonViThucThiTuanTu(
+        onThucThiTuanTu: () async {
+          await onTaiTaiNguyenChienDauCoSSS10SS050(onThucThiHoanTat: null);
+        },
+      );
+
+      cauTrucThucThiTuanTu.onThucThiHoanTat = onThucThiHoanTat;
+
+      cauTrucThucThiTuanTu.onThucThiTuanTu(interval: const Duration(milliseconds: 500));
+    } catch (e) {
+      await onReportRootIssue(nameFunction: 'onTaiTaiNguyenMaster');
     }
 
     ///
@@ -2569,25 +2779,25 @@ class QUANLYTRANGTHAIHANGARCHIENDAUCO with CAUTRUCTHUCTHICOBAN {
     /// -----
     /// TODO:
     /// -----
-    await Future.delayed(Duration.zero);
-    await Future.wait([
-      onGiaiPhongTaiNguyenChienDauCo00E03SS010().catchError((e) => null),
-      onGiaiPhongTaiNguyenChienDauCo00E03SS020().catchError((e) => null),
-      onGiaiPhongTaiNguyenChienDauCo00E03SS030().catchError((e) => null),
-      onGiaiPhongTaiNguyenChienDauCo00D04SS010().catchError((e) => null),
-      onGiaiPhongTaiNguyenChienDauCo00C05SS010().catchError((e) => null),
-      onGiaiPhongTaiNguyenChienDauCo00B06SS010().catchError((e) => null),
-      onGiaiPhongTaiNguyenChienDauCo00A07SS010().catchError((e) => null),
-      onGiaiPhongTaiNguyenChienDauCo00S08SS010().catchError((e) => null),
-      onGiaiPhongTaiNguyenChienDauCo0SS09SS010().catchError((e) => null),
-      onGiaiPhongTaiNguyenChienDauCo0SS09SS020().catchError((e) => null),
-      onGiaiPhongTaiNguyenChienDauCo0SS09SS030().catchError((e) => null),
-      onGiaiPhongTaiNguyenChienDauCoSSS10SS010().catchError((e) => null),
-      onGiaiPhongTaiNguyenChienDauCoSSS10SS020().catchError((e) => null),
-      onGiaiPhongTaiNguyenChienDauCoSSS10SS030().catchError((e) => null),
-      onGiaiPhongTaiNguyenChienDauCoSSS10SS040().catchError((e) => null),
-      onGiaiPhongTaiNguyenChienDauCoSSS10SS050().catchError((e) => null),
-    ]);
+    // await Future.delayed(Duration.zero);
+    // await Future.wait([
+    //   // onGiaiPhongTaiNguyenChienDauCo00E03SS010().catchError((e) => null),
+    //   onGiaiPhongTaiNguyenChienDauCo00E03SS020().catchError((e) => null),
+    //   onGiaiPhongTaiNguyenChienDauCo00E03SS030().catchError((e) => null),
+    //   onGiaiPhongTaiNguyenChienDauCo00D04SS010().catchError((e) => null),
+    //   onGiaiPhongTaiNguyenChienDauCo00C05SS010().catchError((e) => null),
+    //   onGiaiPhongTaiNguyenChienDauCo00B06SS010().catchError((e) => null),
+    //   onGiaiPhongTaiNguyenChienDauCo00A07SS010().catchError((e) => null),
+    //   onGiaiPhongTaiNguyenChienDauCo00S08SS010().catchError((e) => null),
+    //   onGiaiPhongTaiNguyenChienDauCo0SS09SS010().catchError((e) => null),
+    //   onGiaiPhongTaiNguyenChienDauCo0SS09SS020().catchError((e) => null),
+    //   onGiaiPhongTaiNguyenChienDauCo0SS09SS030().catchError((e) => null),
+    //   onGiaiPhongTaiNguyenChienDauCoSSS10SS010().catchError((e) => null),
+    //   onGiaiPhongTaiNguyenChienDauCoSSS10SS020().catchError((e) => null),
+    //   onGiaiPhongTaiNguyenChienDauCoSSS10SS030().catchError((e) => null),
+    //   onGiaiPhongTaiNguyenChienDauCoSSS10SS040().catchError((e) => null),
+    //   onGiaiPhongTaiNguyenChienDauCoSSS10SS050().catchError((e) => null),
+    // ]);
 
     /// -----
     /// TODO:
@@ -2614,12 +2824,9 @@ class QUANLYTRANGTHAIHANGARCHIENDAUCO with CAUTRUCTHUCTHICOBAN {
 
         onThucThiHoanTat: () async {
           await Future.delayed(Duration.zero);
-          await getTrangThaiHangarTongQuat?.getChienDauCoDangCapSao00E03SS01?.getThuocTinh?.getThuocTinhHinhAnhSprite?.getDonViSpriteNgoaiHinhVuKhiTanCongCoBanSS01SS01
-              ?.caiDatSpriteAnimation(
-                value: getThuocTinhTaiNguyenChienDauCo?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhTheoMaDinhDanh(
-                  maDinhDanh: getVuKhiSungChinhSS010CDCDCS00E03SS010?.getMaDinhDanhVuKhiTanCong,
-                ),
-              );
+          await getTrangThaiHangarTongQuat?.getChienDauCoDangCapSao00E03SS01?.getThuocTinh?.getThuocTinhHinhAnhSprite?.getDonViSpriteNgoaiHinhVuKhiTanCongCoBanSS01SS01?.caiDatSpriteAnimation(
+            value: getThuocTinhTaiNguyenChienDauCo?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhTheoMaDinhDanh(maDinhDanh: getVuKhiSungChinhSS010CDCDCS00E03SS010?.getMaDinhDanhVuKhiTanCong),
+          );
         },
       );
 
@@ -2630,12 +2837,9 @@ class QUANLYTRANGTHAIHANGARCHIENDAUCO with CAUTRUCTHUCTHICOBAN {
 
         onThucThiHoanTat: () async {
           await Future.delayed(Duration.zero);
-          await getTrangThaiHangarTongQuat?.getChienDauCoDangCapSao00E03SS01?.getThuocTinh?.getThuocTinhHinhAnhSprite?.getDonViSpriteNgoaiHinhVuKhiTanCongCoBanSS01SS02
-              ?.caiDatSpriteAnimation(
-                value: getThuocTinhTaiNguyenChienDauCo?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhTheoMaDinhDanh(
-                  maDinhDanh: getVuKhiSungChinhSS020CDCDCS00E03SS010?.getMaDinhDanhVuKhiTanCong,
-                ),
-              );
+          await getTrangThaiHangarTongQuat?.getChienDauCoDangCapSao00E03SS01?.getThuocTinh?.getThuocTinhHinhAnhSprite?.getDonViSpriteNgoaiHinhVuKhiTanCongCoBanSS01SS02?.caiDatSpriteAnimation(
+            value: getThuocTinhTaiNguyenChienDauCo?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhTheoMaDinhDanh(maDinhDanh: getVuKhiSungChinhSS020CDCDCS00E03SS010?.getMaDinhDanhVuKhiTanCong),
+          );
         },
       );
 
@@ -2646,12 +2850,9 @@ class QUANLYTRANGTHAIHANGARCHIENDAUCO with CAUTRUCTHUCTHICOBAN {
 
         onThucThiHoanTat: () async {
           await Future.delayed(Duration.zero);
-          await getTrangThaiHangarTongQuat?.getChienDauCoDangCapSao00E03SS01?.getThuocTinh?.getThuocTinhHinhAnhSprite?.getDonViSpriteNgoaiHinhVuKhiTanCongCoBanSS01SS03
-              ?.caiDatSpriteAnimation(
-                value: getThuocTinhTaiNguyenChienDauCo?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhTheoMaDinhDanh(
-                  maDinhDanh: getVuKhiSungChinhSS030CDCDCS00E03SS010?.getMaDinhDanhVuKhiTanCong,
-                ),
-              );
+          await getTrangThaiHangarTongQuat?.getChienDauCoDangCapSao00E03SS01?.getThuocTinh?.getThuocTinhHinhAnhSprite?.getDonViSpriteNgoaiHinhVuKhiTanCongCoBanSS01SS03?.caiDatSpriteAnimation(
+            value: getThuocTinhTaiNguyenChienDauCo?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhTheoMaDinhDanh(maDinhDanh: getVuKhiSungChinhSS030CDCDCS00E03SS010?.getMaDinhDanhVuKhiTanCong),
+          );
         },
       );
 
@@ -2662,12 +2863,9 @@ class QUANLYTRANGTHAIHANGARCHIENDAUCO with CAUTRUCTHUCTHICOBAN {
 
         onThucThiHoanTat: () async {
           await Future.delayed(Duration.zero);
-          await getTrangThaiHangarTongQuat?.getChienDauCoDangCapSao00E03SS01?.getThuocTinh?.getThuocTinhHinhAnhSprite?.getDonViSpriteNgoaiHinhVuKhiTanCongThongMinhSS01
-              ?.caiDatSpriteAnimation(
-                value: getThuocTinhTaiNguyenChienDauCo?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhTheoMaDinhDanh(
-                  maDinhDanh: getTenLuaTanCongSS010CDCDCS00E03SS010?.getMaDinhDanhVuKhiTanCong,
-                ),
-              );
+          await getTrangThaiHangarTongQuat?.getChienDauCoDangCapSao00E03SS01?.getThuocTinh?.getThuocTinhHinhAnhSprite?.getDonViSpriteNgoaiHinhVuKhiTanCongThongMinhSS01?.caiDatSpriteAnimation(
+            value: getThuocTinhTaiNguyenChienDauCo?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhTheoMaDinhDanh(maDinhDanh: getTenLuaTanCongSS010CDCDCS00E03SS010?.getMaDinhDanhVuKhiTanCong),
+          );
         },
       );
 
@@ -2678,12 +2876,9 @@ class QUANLYTRANGTHAIHANGARCHIENDAUCO with CAUTRUCTHUCTHICOBAN {
 
         onThucThiHoanTat: () async {
           await Future.delayed(Duration.zero);
-          await getTrangThaiHangarTongQuat?.getChienDauCoDangCapSao00E03SS01?.getThuocTinh?.getThuocTinhHinhAnhSprite?.getDonViSpriteNgoaiHinhVuKhiTanCongThongMinhSS02
-              ?.caiDatSpriteAnimation(
-                value: getThuocTinhTaiNguyenChienDauCo?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhTheoMaDinhDanh(
-                  maDinhDanh: getTenLuaTanCongSS020CDCDCS00E03SS010?.getMaDinhDanhVuKhiTanCong,
-                ),
-              );
+          await getTrangThaiHangarTongQuat?.getChienDauCoDangCapSao00E03SS01?.getThuocTinh?.getThuocTinhHinhAnhSprite?.getDonViSpriteNgoaiHinhVuKhiTanCongThongMinhSS02?.caiDatSpriteAnimation(
+            value: getThuocTinhTaiNguyenChienDauCo?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhTheoMaDinhDanh(maDinhDanh: getTenLuaTanCongSS020CDCDCS00E03SS010?.getMaDinhDanhVuKhiTanCong),
+          );
         },
       );
 
@@ -2694,12 +2889,9 @@ class QUANLYTRANGTHAIHANGARCHIENDAUCO with CAUTRUCTHUCTHICOBAN {
 
         onThucThiHoanTat: () async {
           await Future.delayed(Duration.zero);
-          await getTrangThaiHangarTongQuat?.getChienDauCoDangCapSao00E03SS01?.getThuocTinh?.getThuocTinhHinhAnhSprite?.getDonViSpriteNgoaiHinhVuKhiTanCongThongMinhSS03
-              ?.caiDatSpriteAnimation(
-                value: getThuocTinhTaiNguyenChienDauCo?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhTheoMaDinhDanh(
-                  maDinhDanh: getTenLuaTanCongSS030CDCDCS00E03SS010?.getMaDinhDanhVuKhiTanCong,
-                ),
-              );
+          await getTrangThaiHangarTongQuat?.getChienDauCoDangCapSao00E03SS01?.getThuocTinh?.getThuocTinhHinhAnhSprite?.getDonViSpriteNgoaiHinhVuKhiTanCongThongMinhSS03?.caiDatSpriteAnimation(
+            value: getThuocTinhTaiNguyenChienDauCo?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhTheoMaDinhDanh(maDinhDanh: getTenLuaTanCongSS030CDCDCS00E03SS010?.getMaDinhDanhVuKhiTanCong),
+          );
         },
       );
     }
@@ -2713,7 +2905,6 @@ class QUANLYTRANGTHAIHANGARCHIENDAUCO with CAUTRUCTHUCTHICOBAN {
   }
 
   Future<void> onGiaiPhongTaiNguyenChienDauCo00E03SS010() async {
-
     /// -----
     /// TODO:
     /// -----
@@ -2784,25 +2975,25 @@ class QUANLYTRANGTHAIHANGARCHIENDAUCO with CAUTRUCTHUCTHICOBAN {
     /// -----
     /// TODO:
     /// -----
-    await Future.delayed(Duration.zero);
-    await Future.wait([
-      onGiaiPhongTaiNguyenChienDauCo00E03SS010().catchError((e) => null),
-      onGiaiPhongTaiNguyenChienDauCo00E03SS020().catchError((e) => null),
-      onGiaiPhongTaiNguyenChienDauCo00E03SS030().catchError((e) => null),
-      onGiaiPhongTaiNguyenChienDauCo00D04SS010().catchError((e) => null),
-      onGiaiPhongTaiNguyenChienDauCo00C05SS010().catchError((e) => null),
-      onGiaiPhongTaiNguyenChienDauCo00B06SS010().catchError((e) => null),
-      onGiaiPhongTaiNguyenChienDauCo00A07SS010().catchError((e) => null),
-      onGiaiPhongTaiNguyenChienDauCo00S08SS010().catchError((e) => null),
-      onGiaiPhongTaiNguyenChienDauCo0SS09SS010().catchError((e) => null),
-      onGiaiPhongTaiNguyenChienDauCo0SS09SS020().catchError((e) => null),
-      onGiaiPhongTaiNguyenChienDauCo0SS09SS030().catchError((e) => null),
-      onGiaiPhongTaiNguyenChienDauCoSSS10SS010().catchError((e) => null),
-      onGiaiPhongTaiNguyenChienDauCoSSS10SS020().catchError((e) => null),
-      onGiaiPhongTaiNguyenChienDauCoSSS10SS030().catchError((e) => null),
-      onGiaiPhongTaiNguyenChienDauCoSSS10SS040().catchError((e) => null),
-      onGiaiPhongTaiNguyenChienDauCoSSS10SS050().catchError((e) => null),
-    ]);
+    // await Future.delayed(Duration.zero);
+    // await Future.wait([
+    //   onGiaiPhongTaiNguyenChienDauCo00E03SS010().catchError((e) => null),
+    //   // onGiaiPhongTaiNguyenChienDauCo00E03SS020().catchError((e) => null),
+    //   onGiaiPhongTaiNguyenChienDauCo00E03SS030().catchError((e) => null),
+    //   onGiaiPhongTaiNguyenChienDauCo00D04SS010().catchError((e) => null),
+    //   onGiaiPhongTaiNguyenChienDauCo00C05SS010().catchError((e) => null),
+    //   onGiaiPhongTaiNguyenChienDauCo00B06SS010().catchError((e) => null),
+    //   onGiaiPhongTaiNguyenChienDauCo00A07SS010().catchError((e) => null),
+    //   onGiaiPhongTaiNguyenChienDauCo00S08SS010().catchError((e) => null),
+    //   onGiaiPhongTaiNguyenChienDauCo0SS09SS010().catchError((e) => null),
+    //   onGiaiPhongTaiNguyenChienDauCo0SS09SS020().catchError((e) => null),
+    //   onGiaiPhongTaiNguyenChienDauCo0SS09SS030().catchError((e) => null),
+    //   onGiaiPhongTaiNguyenChienDauCoSSS10SS010().catchError((e) => null),
+    //   onGiaiPhongTaiNguyenChienDauCoSSS10SS020().catchError((e) => null),
+    //   onGiaiPhongTaiNguyenChienDauCoSSS10SS030().catchError((e) => null),
+    //   onGiaiPhongTaiNguyenChienDauCoSSS10SS040().catchError((e) => null),
+    //   onGiaiPhongTaiNguyenChienDauCoSSS10SS050().catchError((e) => null),
+    // ]);
 
     /// -----
     /// TODO:
@@ -2827,12 +3018,9 @@ class QUANLYTRANGTHAIHANGARCHIENDAUCO with CAUTRUCTHUCTHICOBAN {
         thuocTinhHinhAnh: getVuKhiSungChinhSS010CDCDCS00E03SS020?.getSieuCapThuocTinh?.getTrangThaiHinhAnh?.getMoHinh,
 
         onThucThiHoanTat: () async {
-          await getTrangThaiHangarTongQuat?.getChienDauCoDangCapSao00E03SS02?.getThuocTinh?.getThuocTinhHinhAnhSprite?.getDonViSpriteNgoaiHinhVuKhiTanCongCoBanSS01SS01
-              ?.caiDatSpriteAnimation(
-                value: getThuocTinhTaiNguyenChienDauCo?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhTheoMaDinhDanh(
-                  maDinhDanh: getVuKhiSungChinhSS010CDCDCS00E03SS020?.getMaDinhDanhVuKhiTanCong,
-                ),
-              );
+          await getTrangThaiHangarTongQuat?.getChienDauCoDangCapSao00E03SS02?.getThuocTinh?.getThuocTinhHinhAnhSprite?.getDonViSpriteNgoaiHinhVuKhiTanCongCoBanSS01SS01?.caiDatSpriteAnimation(
+            value: getThuocTinhTaiNguyenChienDauCo?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhTheoMaDinhDanh(maDinhDanh: getVuKhiSungChinhSS010CDCDCS00E03SS020?.getMaDinhDanhVuKhiTanCong),
+          );
         },
       );
 
@@ -2842,12 +3030,9 @@ class QUANLYTRANGTHAIHANGARCHIENDAUCO with CAUTRUCTHUCTHICOBAN {
         thuocTinhHinhAnh: getVuKhiSungChinhSS020CDCDCS00E03SS020?.getSieuCapThuocTinh?.getTrangThaiHinhAnh?.getMoHinh,
 
         onThucThiHoanTat: () async {
-          await getTrangThaiHangarTongQuat?.getChienDauCoDangCapSao00E03SS02?.getThuocTinh?.getThuocTinhHinhAnhSprite?.getDonViSpriteNgoaiHinhVuKhiTanCongCoBanSS01SS02
-              ?.caiDatSpriteAnimation(
-                value: getThuocTinhTaiNguyenChienDauCo?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhTheoMaDinhDanh(
-                  maDinhDanh: getVuKhiSungChinhSS020CDCDCS00E03SS020?.getMaDinhDanhVuKhiTanCong,
-                ),
-              );
+          await getTrangThaiHangarTongQuat?.getChienDauCoDangCapSao00E03SS02?.getThuocTinh?.getThuocTinhHinhAnhSprite?.getDonViSpriteNgoaiHinhVuKhiTanCongCoBanSS01SS02?.caiDatSpriteAnimation(
+            value: getThuocTinhTaiNguyenChienDauCo?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhTheoMaDinhDanh(maDinhDanh: getVuKhiSungChinhSS020CDCDCS00E03SS020?.getMaDinhDanhVuKhiTanCong),
+          );
         },
       );
 
@@ -2857,12 +3042,9 @@ class QUANLYTRANGTHAIHANGARCHIENDAUCO with CAUTRUCTHUCTHICOBAN {
         thuocTinhHinhAnh: getVuKhiSungChinhSS030CDCDCS00E03SS020?.getSieuCapThuocTinh?.getTrangThaiHinhAnh?.getMoHinh,
 
         onThucThiHoanTat: () async {
-          await getTrangThaiHangarTongQuat?.getChienDauCoDangCapSao00E03SS02?.getThuocTinh?.getThuocTinhHinhAnhSprite?.getDonViSpriteNgoaiHinhVuKhiTanCongCoBanSS01SS03
-              ?.caiDatSpriteAnimation(
-                value: getThuocTinhTaiNguyenChienDauCo?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhTheoMaDinhDanh(
-                  maDinhDanh: getVuKhiSungChinhSS030CDCDCS00E03SS020?.getMaDinhDanhVuKhiTanCong,
-                ),
-              );
+          await getTrangThaiHangarTongQuat?.getChienDauCoDangCapSao00E03SS02?.getThuocTinh?.getThuocTinhHinhAnhSprite?.getDonViSpriteNgoaiHinhVuKhiTanCongCoBanSS01SS03?.caiDatSpriteAnimation(
+            value: getThuocTinhTaiNguyenChienDauCo?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhTheoMaDinhDanh(maDinhDanh: getVuKhiSungChinhSS030CDCDCS00E03SS020?.getMaDinhDanhVuKhiTanCong),
+          );
         },
       );
 
@@ -2872,12 +3054,9 @@ class QUANLYTRANGTHAIHANGARCHIENDAUCO with CAUTRUCTHUCTHICOBAN {
         thuocTinhHinhAnh: getTenLuaTanCongSS010CDCDCS00E03SS020?.getSieuCapThuocTinh?.getTrangThaiHinhAnh?.getMoHinh,
 
         onThucThiHoanTat: () async {
-          await getTrangThaiHangarTongQuat?.getChienDauCoDangCapSao00E03SS02?.getThuocTinh?.getThuocTinhHinhAnhSprite?.getDonViSpriteNgoaiHinhVuKhiTanCongThongMinhSS01
-              ?.caiDatSpriteAnimation(
-                value: getThuocTinhTaiNguyenChienDauCo?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhTheoMaDinhDanh(
-                  maDinhDanh: getTenLuaTanCongSS010CDCDCS00E03SS020?.getMaDinhDanhVuKhiTanCong,
-                ),
-              );
+          await getTrangThaiHangarTongQuat?.getChienDauCoDangCapSao00E03SS02?.getThuocTinh?.getThuocTinhHinhAnhSprite?.getDonViSpriteNgoaiHinhVuKhiTanCongThongMinhSS01?.caiDatSpriteAnimation(
+            value: getThuocTinhTaiNguyenChienDauCo?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhTheoMaDinhDanh(maDinhDanh: getTenLuaTanCongSS010CDCDCS00E03SS020?.getMaDinhDanhVuKhiTanCong),
+          );
         },
       );
 
@@ -2887,12 +3066,9 @@ class QUANLYTRANGTHAIHANGARCHIENDAUCO with CAUTRUCTHUCTHICOBAN {
         thuocTinhHinhAnh: getTenLuaTanCongSS020CDCDCS00E03SS020?.getSieuCapThuocTinh?.getTrangThaiHinhAnh?.getMoHinh,
 
         onThucThiHoanTat: () async {
-          await getTrangThaiHangarTongQuat?.getChienDauCoDangCapSao00E03SS02?.getThuocTinh?.getThuocTinhHinhAnhSprite?.getDonViSpriteNgoaiHinhVuKhiTanCongThongMinhSS02
-              ?.caiDatSpriteAnimation(
-                value: getThuocTinhTaiNguyenChienDauCo?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhTheoMaDinhDanh(
-                  maDinhDanh: getTenLuaTanCongSS020CDCDCS00E03SS020?.getMaDinhDanhVuKhiTanCong,
-                ),
-              );
+          await getTrangThaiHangarTongQuat?.getChienDauCoDangCapSao00E03SS02?.getThuocTinh?.getThuocTinhHinhAnhSprite?.getDonViSpriteNgoaiHinhVuKhiTanCongThongMinhSS02?.caiDatSpriteAnimation(
+            value: getThuocTinhTaiNguyenChienDauCo?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhTheoMaDinhDanh(maDinhDanh: getTenLuaTanCongSS020CDCDCS00E03SS020?.getMaDinhDanhVuKhiTanCong),
+          );
         },
       );
 
@@ -2902,12 +3078,9 @@ class QUANLYTRANGTHAIHANGARCHIENDAUCO with CAUTRUCTHUCTHICOBAN {
         thuocTinhHinhAnh: getTenLuaTanCongSS030CDCDCS00E03SS020?.getSieuCapThuocTinh?.getTrangThaiHinhAnh?.getMoHinh,
 
         onThucThiHoanTat: () async {
-          await getTrangThaiHangarTongQuat?.getChienDauCoDangCapSao00E03SS02?.getThuocTinh?.getThuocTinhHinhAnhSprite?.getDonViSpriteNgoaiHinhVuKhiTanCongThongMinhSS03
-              ?.caiDatSpriteAnimation(
-                value: getThuocTinhTaiNguyenChienDauCo?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhTheoMaDinhDanh(
-                  maDinhDanh: getTenLuaTanCongSS030CDCDCS00E03SS020?.getMaDinhDanhVuKhiTanCong,
-                ),
-              );
+          await getTrangThaiHangarTongQuat?.getChienDauCoDangCapSao00E03SS02?.getThuocTinh?.getThuocTinhHinhAnhSprite?.getDonViSpriteNgoaiHinhVuKhiTanCongThongMinhSS03?.caiDatSpriteAnimation(
+            value: getThuocTinhTaiNguyenChienDauCo?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhTheoMaDinhDanh(maDinhDanh: getTenLuaTanCongSS030CDCDCS00E03SS020?.getMaDinhDanhVuKhiTanCong),
+          );
         },
       );
     }
@@ -2921,7 +3094,6 @@ class QUANLYTRANGTHAIHANGARCHIENDAUCO with CAUTRUCTHUCTHICOBAN {
   }
 
   Future<void> onGiaiPhongTaiNguyenChienDauCo00E03SS020() async {
-
     /// -----
     /// TODO:
     /// -----
@@ -2992,25 +3164,25 @@ class QUANLYTRANGTHAIHANGARCHIENDAUCO with CAUTRUCTHUCTHICOBAN {
     /// -----
     /// TODO:
     /// -----
-    await Future.delayed(Duration.zero);
-    await Future.wait([
-      onGiaiPhongTaiNguyenChienDauCo00E03SS010().catchError((e) => null),
-      onGiaiPhongTaiNguyenChienDauCo00E03SS020().catchError((e) => null),
-      onGiaiPhongTaiNguyenChienDauCo00E03SS030().catchError((e) => null),
-      onGiaiPhongTaiNguyenChienDauCo00D04SS010().catchError((e) => null),
-      onGiaiPhongTaiNguyenChienDauCo00C05SS010().catchError((e) => null),
-      onGiaiPhongTaiNguyenChienDauCo00B06SS010().catchError((e) => null),
-      onGiaiPhongTaiNguyenChienDauCo00A07SS010().catchError((e) => null),
-      onGiaiPhongTaiNguyenChienDauCo00S08SS010().catchError((e) => null),
-      onGiaiPhongTaiNguyenChienDauCo0SS09SS010().catchError((e) => null),
-      onGiaiPhongTaiNguyenChienDauCo0SS09SS020().catchError((e) => null),
-      onGiaiPhongTaiNguyenChienDauCo0SS09SS030().catchError((e) => null),
-      onGiaiPhongTaiNguyenChienDauCoSSS10SS010().catchError((e) => null),
-      onGiaiPhongTaiNguyenChienDauCoSSS10SS020().catchError((e) => null),
-      onGiaiPhongTaiNguyenChienDauCoSSS10SS030().catchError((e) => null),
-      onGiaiPhongTaiNguyenChienDauCoSSS10SS040().catchError((e) => null),
-      onGiaiPhongTaiNguyenChienDauCoSSS10SS050().catchError((e) => null),
-    ]);
+    // await Future.delayed(Duration.zero);
+    // await Future.wait([
+    //   onGiaiPhongTaiNguyenChienDauCo00E03SS010().catchError((e) => null),
+    //   onGiaiPhongTaiNguyenChienDauCo00E03SS020().catchError((e) => null),
+    //   // onGiaiPhongTaiNguyenChienDauCo00E03SS030().catchError((e) => null),
+    //   onGiaiPhongTaiNguyenChienDauCo00D04SS010().catchError((e) => null),
+    //   onGiaiPhongTaiNguyenChienDauCo00C05SS010().catchError((e) => null),
+    //   onGiaiPhongTaiNguyenChienDauCo00B06SS010().catchError((e) => null),
+    //   onGiaiPhongTaiNguyenChienDauCo00A07SS010().catchError((e) => null),
+    //   onGiaiPhongTaiNguyenChienDauCo00S08SS010().catchError((e) => null),
+    //   onGiaiPhongTaiNguyenChienDauCo0SS09SS010().catchError((e) => null),
+    //   onGiaiPhongTaiNguyenChienDauCo0SS09SS020().catchError((e) => null),
+    //   onGiaiPhongTaiNguyenChienDauCo0SS09SS030().catchError((e) => null),
+    //   onGiaiPhongTaiNguyenChienDauCoSSS10SS010().catchError((e) => null),
+    //   onGiaiPhongTaiNguyenChienDauCoSSS10SS020().catchError((e) => null),
+    //   onGiaiPhongTaiNguyenChienDauCoSSS10SS030().catchError((e) => null),
+    //   onGiaiPhongTaiNguyenChienDauCoSSS10SS040().catchError((e) => null),
+    //   onGiaiPhongTaiNguyenChienDauCoSSS10SS050().catchError((e) => null),
+    // ]);
 
     /// -----
     /// TODO:
@@ -3035,12 +3207,9 @@ class QUANLYTRANGTHAIHANGARCHIENDAUCO with CAUTRUCTHUCTHICOBAN {
         thuocTinhHinhAnh: getVuKhiSungChinhSS010CDCDCS00E03SS030?.getSieuCapThuocTinh?.getTrangThaiHinhAnh?.getMoHinh,
 
         onThucThiHoanTat: () async {
-          await getTrangThaiHangarTongQuat?.getChienDauCoDangCapSao00E03SS03?.getThuocTinh?.getThuocTinhHinhAnhSprite?.getDonViSpriteNgoaiHinhVuKhiTanCongCoBanSS01SS01
-              ?.caiDatSpriteAnimation(
-                value: getThuocTinhTaiNguyenChienDauCo?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhTheoMaDinhDanh(
-                  maDinhDanh: getVuKhiSungChinhSS010CDCDCS00E03SS030?.getMaDinhDanhVuKhiTanCong,
-                ),
-              );
+          await getTrangThaiHangarTongQuat?.getChienDauCoDangCapSao00E03SS03?.getThuocTinh?.getThuocTinhHinhAnhSprite?.getDonViSpriteNgoaiHinhVuKhiTanCongCoBanSS01SS01?.caiDatSpriteAnimation(
+            value: getThuocTinhTaiNguyenChienDauCo?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhTheoMaDinhDanh(maDinhDanh: getVuKhiSungChinhSS010CDCDCS00E03SS030?.getMaDinhDanhVuKhiTanCong),
+          );
         },
       );
 
@@ -3050,12 +3219,9 @@ class QUANLYTRANGTHAIHANGARCHIENDAUCO with CAUTRUCTHUCTHICOBAN {
         thuocTinhHinhAnh: getVuKhiSungChinhSS020CDCDCS00E03SS030?.getSieuCapThuocTinh?.getTrangThaiHinhAnh?.getMoHinh,
 
         onThucThiHoanTat: () async {
-          await getTrangThaiHangarTongQuat?.getChienDauCoDangCapSao00E03SS03?.getThuocTinh?.getThuocTinhHinhAnhSprite?.getDonViSpriteNgoaiHinhVuKhiTanCongCoBanSS01SS02
-              ?.caiDatSpriteAnimation(
-                value: getThuocTinhTaiNguyenChienDauCo?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhTheoMaDinhDanh(
-                  maDinhDanh: getVuKhiSungChinhSS020CDCDCS00E03SS030?.getMaDinhDanhVuKhiTanCong,
-                ),
-              );
+          await getTrangThaiHangarTongQuat?.getChienDauCoDangCapSao00E03SS03?.getThuocTinh?.getThuocTinhHinhAnhSprite?.getDonViSpriteNgoaiHinhVuKhiTanCongCoBanSS01SS02?.caiDatSpriteAnimation(
+            value: getThuocTinhTaiNguyenChienDauCo?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhTheoMaDinhDanh(maDinhDanh: getVuKhiSungChinhSS020CDCDCS00E03SS030?.getMaDinhDanhVuKhiTanCong),
+          );
         },
       );
 
@@ -3065,12 +3231,9 @@ class QUANLYTRANGTHAIHANGARCHIENDAUCO with CAUTRUCTHUCTHICOBAN {
         thuocTinhHinhAnh: getVuKhiSungChinhSS030CDCDCS00E03SS030?.getSieuCapThuocTinh?.getTrangThaiHinhAnh?.getMoHinh,
 
         onThucThiHoanTat: () async {
-          await getTrangThaiHangarTongQuat?.getChienDauCoDangCapSao00E03SS03?.getThuocTinh?.getThuocTinhHinhAnhSprite?.getDonViSpriteNgoaiHinhVuKhiTanCongCoBanSS01SS03
-              ?.caiDatSpriteAnimation(
-                value: getThuocTinhTaiNguyenChienDauCo?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhTheoMaDinhDanh(
-                  maDinhDanh: getVuKhiSungChinhSS030CDCDCS00E03SS030?.getMaDinhDanhVuKhiTanCong,
-                ),
-              );
+          await getTrangThaiHangarTongQuat?.getChienDauCoDangCapSao00E03SS03?.getThuocTinh?.getThuocTinhHinhAnhSprite?.getDonViSpriteNgoaiHinhVuKhiTanCongCoBanSS01SS03?.caiDatSpriteAnimation(
+            value: getThuocTinhTaiNguyenChienDauCo?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhTheoMaDinhDanh(maDinhDanh: getVuKhiSungChinhSS030CDCDCS00E03SS030?.getMaDinhDanhVuKhiTanCong),
+          );
         },
       );
 
@@ -3080,12 +3243,9 @@ class QUANLYTRANGTHAIHANGARCHIENDAUCO with CAUTRUCTHUCTHICOBAN {
         thuocTinhHinhAnh: getTenLuaTanCongSS010CDCDCS00E03SS030?.getSieuCapThuocTinh?.getTrangThaiHinhAnh?.getMoHinh,
 
         onThucThiHoanTat: () async {
-          await getTrangThaiHangarTongQuat?.getChienDauCoDangCapSao00E03SS03?.getThuocTinh?.getThuocTinhHinhAnhSprite?.getDonViSpriteNgoaiHinhVuKhiTanCongThongMinhSS01
-              ?.caiDatSpriteAnimation(
-                value: getThuocTinhTaiNguyenChienDauCo?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhTheoMaDinhDanh(
-                  maDinhDanh: getTenLuaTanCongSS010CDCDCS00E03SS030?.getMaDinhDanhVuKhiTanCong,
-                ),
-              );
+          await getTrangThaiHangarTongQuat?.getChienDauCoDangCapSao00E03SS03?.getThuocTinh?.getThuocTinhHinhAnhSprite?.getDonViSpriteNgoaiHinhVuKhiTanCongThongMinhSS01?.caiDatSpriteAnimation(
+            value: getThuocTinhTaiNguyenChienDauCo?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhTheoMaDinhDanh(maDinhDanh: getTenLuaTanCongSS010CDCDCS00E03SS030?.getMaDinhDanhVuKhiTanCong),
+          );
         },
       );
 
@@ -3095,12 +3255,9 @@ class QUANLYTRANGTHAIHANGARCHIENDAUCO with CAUTRUCTHUCTHICOBAN {
         thuocTinhHinhAnh: getTenLuaTanCongSS020CDCDCS00E03SS030?.getSieuCapThuocTinh?.getTrangThaiHinhAnh?.getMoHinh,
 
         onThucThiHoanTat: () async {
-          await getTrangThaiHangarTongQuat?.getChienDauCoDangCapSao00E03SS03?.getThuocTinh?.getThuocTinhHinhAnhSprite?.getDonViSpriteNgoaiHinhVuKhiTanCongThongMinhSS02
-              ?.caiDatSpriteAnimation(
-                value: getThuocTinhTaiNguyenChienDauCo?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhTheoMaDinhDanh(
-                  maDinhDanh: getTenLuaTanCongSS020CDCDCS00E03SS030?.getMaDinhDanhVuKhiTanCong,
-                ),
-              );
+          await getTrangThaiHangarTongQuat?.getChienDauCoDangCapSao00E03SS03?.getThuocTinh?.getThuocTinhHinhAnhSprite?.getDonViSpriteNgoaiHinhVuKhiTanCongThongMinhSS02?.caiDatSpriteAnimation(
+            value: getThuocTinhTaiNguyenChienDauCo?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhTheoMaDinhDanh(maDinhDanh: getTenLuaTanCongSS020CDCDCS00E03SS030?.getMaDinhDanhVuKhiTanCong),
+          );
         },
       );
 
@@ -3110,12 +3267,9 @@ class QUANLYTRANGTHAIHANGARCHIENDAUCO with CAUTRUCTHUCTHICOBAN {
         thuocTinhHinhAnh: getTenLuaTanCongSS030CDCDCS00E03SS030?.getSieuCapThuocTinh?.getTrangThaiHinhAnh?.getMoHinh,
 
         onThucThiHoanTat: () async {
-          await getTrangThaiHangarTongQuat?.getChienDauCoDangCapSao00E03SS03?.getThuocTinh?.getThuocTinhHinhAnhSprite?.getDonViSpriteNgoaiHinhVuKhiTanCongThongMinhSS03
-              ?.caiDatSpriteAnimation(
-                value: getThuocTinhTaiNguyenChienDauCo?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhTheoMaDinhDanh(
-                  maDinhDanh: getTenLuaTanCongSS030CDCDCS00E03SS030?.getMaDinhDanhVuKhiTanCong,
-                ),
-              );
+          await getTrangThaiHangarTongQuat?.getChienDauCoDangCapSao00E03SS03?.getThuocTinh?.getThuocTinhHinhAnhSprite?.getDonViSpriteNgoaiHinhVuKhiTanCongThongMinhSS03?.caiDatSpriteAnimation(
+            value: getThuocTinhTaiNguyenChienDauCo?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhTheoMaDinhDanh(maDinhDanh: getTenLuaTanCongSS030CDCDCS00E03SS030?.getMaDinhDanhVuKhiTanCong),
+          );
         },
       );
     }
@@ -3129,7 +3283,6 @@ class QUANLYTRANGTHAIHANGARCHIENDAUCO with CAUTRUCTHUCTHICOBAN {
   }
 
   Future<void> onGiaiPhongTaiNguyenChienDauCo00E03SS030() async {
-
     /// -----
     /// TODO:
     /// -----
@@ -3200,25 +3353,25 @@ class QUANLYTRANGTHAIHANGARCHIENDAUCO with CAUTRUCTHUCTHICOBAN {
     /// -----
     /// TODO:
     /// -----
-    await Future.delayed(Duration.zero);
-    await Future.wait([
-      onGiaiPhongTaiNguyenChienDauCo00E03SS010().catchError((e) => null),
-      onGiaiPhongTaiNguyenChienDauCo00E03SS020().catchError((e) => null),
-      onGiaiPhongTaiNguyenChienDauCo00E03SS030().catchError((e) => null),
-      onGiaiPhongTaiNguyenChienDauCo00D04SS010().catchError((e) => null),
-      onGiaiPhongTaiNguyenChienDauCo00C05SS010().catchError((e) => null),
-      onGiaiPhongTaiNguyenChienDauCo00B06SS010().catchError((e) => null),
-      onGiaiPhongTaiNguyenChienDauCo00A07SS010().catchError((e) => null),
-      onGiaiPhongTaiNguyenChienDauCo00S08SS010().catchError((e) => null),
-      onGiaiPhongTaiNguyenChienDauCo0SS09SS010().catchError((e) => null),
-      onGiaiPhongTaiNguyenChienDauCo0SS09SS020().catchError((e) => null),
-      onGiaiPhongTaiNguyenChienDauCo0SS09SS030().catchError((e) => null),
-      onGiaiPhongTaiNguyenChienDauCoSSS10SS010().catchError((e) => null),
-      onGiaiPhongTaiNguyenChienDauCoSSS10SS020().catchError((e) => null),
-      onGiaiPhongTaiNguyenChienDauCoSSS10SS030().catchError((e) => null),
-      onGiaiPhongTaiNguyenChienDauCoSSS10SS040().catchError((e) => null),
-      onGiaiPhongTaiNguyenChienDauCoSSS10SS050().catchError((e) => null),
-    ]);
+    // await Future.delayed(Duration.zero);
+    // await Future.wait([
+    //   onGiaiPhongTaiNguyenChienDauCo00E03SS010().catchError((e) => null),
+    //   onGiaiPhongTaiNguyenChienDauCo00E03SS020().catchError((e) => null),
+    //   onGiaiPhongTaiNguyenChienDauCo00E03SS030().catchError((e) => null),
+    //   // onGiaiPhongTaiNguyenChienDauCo00D04SS010().catchError((e) => null),
+    //   onGiaiPhongTaiNguyenChienDauCo00C05SS010().catchError((e) => null),
+    //   onGiaiPhongTaiNguyenChienDauCo00B06SS010().catchError((e) => null),
+    //   onGiaiPhongTaiNguyenChienDauCo00A07SS010().catchError((e) => null),
+    //   onGiaiPhongTaiNguyenChienDauCo00S08SS010().catchError((e) => null),
+    //   onGiaiPhongTaiNguyenChienDauCo0SS09SS010().catchError((e) => null),
+    //   onGiaiPhongTaiNguyenChienDauCo0SS09SS020().catchError((e) => null),
+    //   onGiaiPhongTaiNguyenChienDauCo0SS09SS030().catchError((e) => null),
+    //   onGiaiPhongTaiNguyenChienDauCoSSS10SS010().catchError((e) => null),
+    //   onGiaiPhongTaiNguyenChienDauCoSSS10SS020().catchError((e) => null),
+    //   onGiaiPhongTaiNguyenChienDauCoSSS10SS030().catchError((e) => null),
+    //   onGiaiPhongTaiNguyenChienDauCoSSS10SS040().catchError((e) => null),
+    //   onGiaiPhongTaiNguyenChienDauCoSSS10SS050().catchError((e) => null),
+    // ]);
 
     /// -----
     /// TODO:
@@ -3243,12 +3396,9 @@ class QUANLYTRANGTHAIHANGARCHIENDAUCO with CAUTRUCTHUCTHICOBAN {
         thuocTinhHinhAnh: getVuKhiSungChinhSS010CDCDCS00D04SS010?.getSieuCapThuocTinh?.getTrangThaiHinhAnh?.getMoHinh,
 
         onThucThiHoanTat: () async {
-          await getTrangThaiHangarTongQuat?.getChienDauCoDangCapSao00D04SS01?.getThuocTinh?.getThuocTinhHinhAnhSprite?.getDonViSpriteNgoaiHinhVuKhiTanCongCoBanSS01SS01
-              ?.caiDatSpriteAnimation(
-                value: getThuocTinhTaiNguyenChienDauCo?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhTheoMaDinhDanh(
-                  maDinhDanh: getVuKhiSungChinhSS010CDCDCS00D04SS010?.getMaDinhDanhVuKhiTanCong,
-                ),
-              );
+          await getTrangThaiHangarTongQuat?.getChienDauCoDangCapSao00D04SS01?.getThuocTinh?.getThuocTinhHinhAnhSprite?.getDonViSpriteNgoaiHinhVuKhiTanCongCoBanSS01SS01?.caiDatSpriteAnimation(
+            value: getThuocTinhTaiNguyenChienDauCo?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhTheoMaDinhDanh(maDinhDanh: getVuKhiSungChinhSS010CDCDCS00D04SS010?.getMaDinhDanhVuKhiTanCong),
+          );
         },
       );
 
@@ -3258,12 +3408,9 @@ class QUANLYTRANGTHAIHANGARCHIENDAUCO with CAUTRUCTHUCTHICOBAN {
         thuocTinhHinhAnh: getVuKhiSungChinhSS020CDCDCS00D04SS010?.getSieuCapThuocTinh?.getTrangThaiHinhAnh?.getMoHinh,
 
         onThucThiHoanTat: () async {
-          await getTrangThaiHangarTongQuat?.getChienDauCoDangCapSao00D04SS01?.getThuocTinh?.getThuocTinhHinhAnhSprite?.getDonViSpriteNgoaiHinhVuKhiTanCongCoBanSS01SS02
-              ?.caiDatSpriteAnimation(
-                value: getThuocTinhTaiNguyenChienDauCo?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhTheoMaDinhDanh(
-                  maDinhDanh: getVuKhiSungChinhSS020CDCDCS00D04SS010?.getMaDinhDanhVuKhiTanCong,
-                ),
-              );
+          await getTrangThaiHangarTongQuat?.getChienDauCoDangCapSao00D04SS01?.getThuocTinh?.getThuocTinhHinhAnhSprite?.getDonViSpriteNgoaiHinhVuKhiTanCongCoBanSS01SS02?.caiDatSpriteAnimation(
+            value: getThuocTinhTaiNguyenChienDauCo?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhTheoMaDinhDanh(maDinhDanh: getVuKhiSungChinhSS020CDCDCS00D04SS010?.getMaDinhDanhVuKhiTanCong),
+          );
         },
       );
 
@@ -3273,12 +3420,9 @@ class QUANLYTRANGTHAIHANGARCHIENDAUCO with CAUTRUCTHUCTHICOBAN {
         thuocTinhHinhAnh: getVuKhiSungChinhSS030CDCDCS00D04SS010?.getSieuCapThuocTinh?.getTrangThaiHinhAnh?.getMoHinh,
 
         onThucThiHoanTat: () async {
-          await getTrangThaiHangarTongQuat?.getChienDauCoDangCapSao00D04SS01?.getThuocTinh?.getThuocTinhHinhAnhSprite?.getDonViSpriteNgoaiHinhVuKhiTanCongCoBanSS01SS03
-              ?.caiDatSpriteAnimation(
-                value: getThuocTinhTaiNguyenChienDauCo?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhTheoMaDinhDanh(
-                  maDinhDanh: getVuKhiSungChinhSS030CDCDCS00D04SS010?.getMaDinhDanhVuKhiTanCong,
-                ),
-              );
+          await getTrangThaiHangarTongQuat?.getChienDauCoDangCapSao00D04SS01?.getThuocTinh?.getThuocTinhHinhAnhSprite?.getDonViSpriteNgoaiHinhVuKhiTanCongCoBanSS01SS03?.caiDatSpriteAnimation(
+            value: getThuocTinhTaiNguyenChienDauCo?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhTheoMaDinhDanh(maDinhDanh: getVuKhiSungChinhSS030CDCDCS00D04SS010?.getMaDinhDanhVuKhiTanCong),
+          );
         },
       );
 
@@ -3288,12 +3432,9 @@ class QUANLYTRANGTHAIHANGARCHIENDAUCO with CAUTRUCTHUCTHICOBAN {
         thuocTinhHinhAnh: getTenLuaTanCongSS010CDCDCS00D04SS010?.getSieuCapThuocTinh?.getTrangThaiHinhAnh?.getMoHinh,
 
         onThucThiHoanTat: () async {
-          await getTrangThaiHangarTongQuat?.getChienDauCoDangCapSao00D04SS01?.getThuocTinh?.getThuocTinhHinhAnhSprite?.getDonViSpriteNgoaiHinhVuKhiTanCongThongMinhSS01
-              ?.caiDatSpriteAnimation(
-                value: getThuocTinhTaiNguyenChienDauCo?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhTheoMaDinhDanh(
-                  maDinhDanh: getTenLuaTanCongSS010CDCDCS00D04SS010?.getMaDinhDanhVuKhiTanCong,
-                ),
-              );
+          await getTrangThaiHangarTongQuat?.getChienDauCoDangCapSao00D04SS01?.getThuocTinh?.getThuocTinhHinhAnhSprite?.getDonViSpriteNgoaiHinhVuKhiTanCongThongMinhSS01?.caiDatSpriteAnimation(
+            value: getThuocTinhTaiNguyenChienDauCo?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhTheoMaDinhDanh(maDinhDanh: getTenLuaTanCongSS010CDCDCS00D04SS010?.getMaDinhDanhVuKhiTanCong),
+          );
         },
       );
 
@@ -3303,12 +3444,9 @@ class QUANLYTRANGTHAIHANGARCHIENDAUCO with CAUTRUCTHUCTHICOBAN {
         thuocTinhHinhAnh: getTenLuaTanCongSS020CDCDCS00D04SS010?.getSieuCapThuocTinh?.getTrangThaiHinhAnh?.getMoHinh,
 
         onThucThiHoanTat: () async {
-          await getTrangThaiHangarTongQuat?.getChienDauCoDangCapSao00D04SS01?.getThuocTinh?.getThuocTinhHinhAnhSprite?.getDonViSpriteNgoaiHinhVuKhiTanCongThongMinhSS02
-              ?.caiDatSpriteAnimation(
-                value: getThuocTinhTaiNguyenChienDauCo?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhTheoMaDinhDanh(
-                  maDinhDanh: getTenLuaTanCongSS020CDCDCS00D04SS010?.getMaDinhDanhVuKhiTanCong,
-                ),
-              );
+          await getTrangThaiHangarTongQuat?.getChienDauCoDangCapSao00D04SS01?.getThuocTinh?.getThuocTinhHinhAnhSprite?.getDonViSpriteNgoaiHinhVuKhiTanCongThongMinhSS02?.caiDatSpriteAnimation(
+            value: getThuocTinhTaiNguyenChienDauCo?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhTheoMaDinhDanh(maDinhDanh: getTenLuaTanCongSS020CDCDCS00D04SS010?.getMaDinhDanhVuKhiTanCong),
+          );
         },
       );
 
@@ -3318,12 +3456,9 @@ class QUANLYTRANGTHAIHANGARCHIENDAUCO with CAUTRUCTHUCTHICOBAN {
         thuocTinhHinhAnh: getTenLuaTanCongSS030CDCDCS00D04SS010?.getSieuCapThuocTinh?.getTrangThaiHinhAnh?.getMoHinh,
 
         onThucThiHoanTat: () async {
-          await getTrangThaiHangarTongQuat?.getChienDauCoDangCapSao00D04SS01?.getThuocTinh?.getThuocTinhHinhAnhSprite?.getDonViSpriteNgoaiHinhVuKhiTanCongThongMinhSS03
-              ?.caiDatSpriteAnimation(
-                value: getThuocTinhTaiNguyenChienDauCo?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhTheoMaDinhDanh(
-                  maDinhDanh: getTenLuaTanCongSS030CDCDCS00D04SS010?.getMaDinhDanhVuKhiTanCong,
-                ),
-              );
+          await getTrangThaiHangarTongQuat?.getChienDauCoDangCapSao00D04SS01?.getThuocTinh?.getThuocTinhHinhAnhSprite?.getDonViSpriteNgoaiHinhVuKhiTanCongThongMinhSS03?.caiDatSpriteAnimation(
+            value: getThuocTinhTaiNguyenChienDauCo?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhTheoMaDinhDanh(maDinhDanh: getTenLuaTanCongSS030CDCDCS00D04SS010?.getMaDinhDanhVuKhiTanCong),
+          );
         },
       );
     }
@@ -3337,7 +3472,6 @@ class QUANLYTRANGTHAIHANGARCHIENDAUCO with CAUTRUCTHUCTHICOBAN {
   }
 
   Future<void> onGiaiPhongTaiNguyenChienDauCo00D04SS010() async {
-
     /// -----
     /// TODO:
     /// -----
@@ -3408,25 +3542,25 @@ class QUANLYTRANGTHAIHANGARCHIENDAUCO with CAUTRUCTHUCTHICOBAN {
     /// -----
     /// TODO:
     /// -----
-    await Future.delayed(Duration.zero);
-    await Future.wait([
-      onGiaiPhongTaiNguyenChienDauCo00E03SS010().catchError((e) => null),
-      onGiaiPhongTaiNguyenChienDauCo00E03SS020().catchError((e) => null),
-      onGiaiPhongTaiNguyenChienDauCo00E03SS030().catchError((e) => null),
-      onGiaiPhongTaiNguyenChienDauCo00D04SS010().catchError((e) => null),
-      onGiaiPhongTaiNguyenChienDauCo00C05SS010().catchError((e) => null),
-      onGiaiPhongTaiNguyenChienDauCo00B06SS010().catchError((e) => null),
-      onGiaiPhongTaiNguyenChienDauCo00A07SS010().catchError((e) => null),
-      onGiaiPhongTaiNguyenChienDauCo00S08SS010().catchError((e) => null),
-      onGiaiPhongTaiNguyenChienDauCo0SS09SS010().catchError((e) => null),
-      onGiaiPhongTaiNguyenChienDauCo0SS09SS020().catchError((e) => null),
-      onGiaiPhongTaiNguyenChienDauCo0SS09SS030().catchError((e) => null),
-      onGiaiPhongTaiNguyenChienDauCoSSS10SS010().catchError((e) => null),
-      onGiaiPhongTaiNguyenChienDauCoSSS10SS020().catchError((e) => null),
-      onGiaiPhongTaiNguyenChienDauCoSSS10SS030().catchError((e) => null),
-      onGiaiPhongTaiNguyenChienDauCoSSS10SS040().catchError((e) => null),
-      onGiaiPhongTaiNguyenChienDauCoSSS10SS050().catchError((e) => null),
-    ]);
+    // await Future.delayed(Duration.zero);
+    // await Future.wait([
+    //   onGiaiPhongTaiNguyenChienDauCo00E03SS010().catchError((e) => null),
+    //   onGiaiPhongTaiNguyenChienDauCo00E03SS020().catchError((e) => null),
+    //   onGiaiPhongTaiNguyenChienDauCo00E03SS030().catchError((e) => null),
+    //   onGiaiPhongTaiNguyenChienDauCo00D04SS010().catchError((e) => null),
+    //   // onGiaiPhongTaiNguyenChienDauCo00C05SS010().catchError((e) => null),
+    //   onGiaiPhongTaiNguyenChienDauCo00B06SS010().catchError((e) => null),
+    //   onGiaiPhongTaiNguyenChienDauCo00A07SS010().catchError((e) => null),
+    //   onGiaiPhongTaiNguyenChienDauCo00S08SS010().catchError((e) => null),
+    //   onGiaiPhongTaiNguyenChienDauCo0SS09SS010().catchError((e) => null),
+    //   onGiaiPhongTaiNguyenChienDauCo0SS09SS020().catchError((e) => null),
+    //   onGiaiPhongTaiNguyenChienDauCo0SS09SS030().catchError((e) => null),
+    //   onGiaiPhongTaiNguyenChienDauCoSSS10SS010().catchError((e) => null),
+    //   onGiaiPhongTaiNguyenChienDauCoSSS10SS020().catchError((e) => null),
+    //   onGiaiPhongTaiNguyenChienDauCoSSS10SS030().catchError((e) => null),
+    //   onGiaiPhongTaiNguyenChienDauCoSSS10SS040().catchError((e) => null),
+    //   onGiaiPhongTaiNguyenChienDauCoSSS10SS050().catchError((e) => null),
+    // ]);
 
     /// -----
     /// TODO:
@@ -3451,12 +3585,9 @@ class QUANLYTRANGTHAIHANGARCHIENDAUCO with CAUTRUCTHUCTHICOBAN {
         thuocTinhHinhAnh: getVuKhiSungChinhSS010CDCDCS00C05SS010?.getSieuCapThuocTinh?.getTrangThaiHinhAnh?.getMoHinh,
 
         onThucThiHoanTat: () async {
-          await getTrangThaiHangarTongQuat?.getChienDauCoDangCapSao00C05SS01?.getThuocTinh?.getThuocTinhHinhAnhSprite?.getDonViSpriteNgoaiHinhVuKhiTanCongCoBanSS01SS01
-              ?.caiDatSpriteAnimation(
-                value: getThuocTinhTaiNguyenChienDauCo?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhTheoMaDinhDanh(
-                  maDinhDanh: getVuKhiSungChinhSS010CDCDCS00C05SS010?.getMaDinhDanhVuKhiTanCong,
-                ),
-              );
+          await getTrangThaiHangarTongQuat?.getChienDauCoDangCapSao00C05SS01?.getThuocTinh?.getThuocTinhHinhAnhSprite?.getDonViSpriteNgoaiHinhVuKhiTanCongCoBanSS01SS01?.caiDatSpriteAnimation(
+            value: getThuocTinhTaiNguyenChienDauCo?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhTheoMaDinhDanh(maDinhDanh: getVuKhiSungChinhSS010CDCDCS00C05SS010?.getMaDinhDanhVuKhiTanCong),
+          );
         },
       );
 
@@ -3466,12 +3597,9 @@ class QUANLYTRANGTHAIHANGARCHIENDAUCO with CAUTRUCTHUCTHICOBAN {
         thuocTinhHinhAnh: getVuKhiSungChinhSS020CDCDCS00C05SS010?.getSieuCapThuocTinh?.getTrangThaiHinhAnh?.getMoHinh,
 
         onThucThiHoanTat: () async {
-          await getTrangThaiHangarTongQuat?.getChienDauCoDangCapSao00C05SS01?.getThuocTinh?.getThuocTinhHinhAnhSprite?.getDonViSpriteNgoaiHinhVuKhiTanCongCoBanSS01SS02
-              ?.caiDatSpriteAnimation(
-                value: getThuocTinhTaiNguyenChienDauCo?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhTheoMaDinhDanh(
-                  maDinhDanh: getVuKhiSungChinhSS020CDCDCS00C05SS010?.getMaDinhDanhVuKhiTanCong,
-                ),
-              );
+          await getTrangThaiHangarTongQuat?.getChienDauCoDangCapSao00C05SS01?.getThuocTinh?.getThuocTinhHinhAnhSprite?.getDonViSpriteNgoaiHinhVuKhiTanCongCoBanSS01SS02?.caiDatSpriteAnimation(
+            value: getThuocTinhTaiNguyenChienDauCo?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhTheoMaDinhDanh(maDinhDanh: getVuKhiSungChinhSS020CDCDCS00C05SS010?.getMaDinhDanhVuKhiTanCong),
+          );
         },
       );
 
@@ -3481,12 +3609,9 @@ class QUANLYTRANGTHAIHANGARCHIENDAUCO with CAUTRUCTHUCTHICOBAN {
         thuocTinhHinhAnh: getVuKhiSungChinhSS030CDCDCS00C05SS010?.getSieuCapThuocTinh?.getTrangThaiHinhAnh?.getMoHinh,
 
         onThucThiHoanTat: () async {
-          await getTrangThaiHangarTongQuat?.getChienDauCoDangCapSao00C05SS01?.getThuocTinh?.getThuocTinhHinhAnhSprite?.getDonViSpriteNgoaiHinhVuKhiTanCongCoBanSS01SS03
-              ?.caiDatSpriteAnimation(
-                value: getThuocTinhTaiNguyenChienDauCo?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhTheoMaDinhDanh(
-                  maDinhDanh: getVuKhiSungChinhSS030CDCDCS00C05SS010?.getMaDinhDanhVuKhiTanCong,
-                ),
-              );
+          await getTrangThaiHangarTongQuat?.getChienDauCoDangCapSao00C05SS01?.getThuocTinh?.getThuocTinhHinhAnhSprite?.getDonViSpriteNgoaiHinhVuKhiTanCongCoBanSS01SS03?.caiDatSpriteAnimation(
+            value: getThuocTinhTaiNguyenChienDauCo?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhTheoMaDinhDanh(maDinhDanh: getVuKhiSungChinhSS030CDCDCS00C05SS010?.getMaDinhDanhVuKhiTanCong),
+          );
         },
       );
 
@@ -3496,12 +3621,9 @@ class QUANLYTRANGTHAIHANGARCHIENDAUCO with CAUTRUCTHUCTHICOBAN {
         thuocTinhHinhAnh: getTenLuaTanCongSS010CDCDCS00C05SS010?.getSieuCapThuocTinh?.getTrangThaiHinhAnh?.getMoHinh,
 
         onThucThiHoanTat: () async {
-          await getTrangThaiHangarTongQuat?.getChienDauCoDangCapSao00C05SS01?.getThuocTinh?.getThuocTinhHinhAnhSprite?.getDonViSpriteNgoaiHinhVuKhiTanCongThongMinhSS01
-              ?.caiDatSpriteAnimation(
-                value: getThuocTinhTaiNguyenChienDauCo?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhTheoMaDinhDanh(
-                  maDinhDanh: getTenLuaTanCongSS010CDCDCS00C05SS010?.getMaDinhDanhVuKhiTanCong,
-                ),
-              );
+          await getTrangThaiHangarTongQuat?.getChienDauCoDangCapSao00C05SS01?.getThuocTinh?.getThuocTinhHinhAnhSprite?.getDonViSpriteNgoaiHinhVuKhiTanCongThongMinhSS01?.caiDatSpriteAnimation(
+            value: getThuocTinhTaiNguyenChienDauCo?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhTheoMaDinhDanh(maDinhDanh: getTenLuaTanCongSS010CDCDCS00C05SS010?.getMaDinhDanhVuKhiTanCong),
+          );
         },
       );
 
@@ -3511,12 +3633,9 @@ class QUANLYTRANGTHAIHANGARCHIENDAUCO with CAUTRUCTHUCTHICOBAN {
         thuocTinhHinhAnh: getTenLuaTanCongSS020CDCDCS00C05SS010?.getSieuCapThuocTinh?.getTrangThaiHinhAnh?.getMoHinh,
 
         onThucThiHoanTat: () async {
-          await getTrangThaiHangarTongQuat?.getChienDauCoDangCapSao00C05SS01?.getThuocTinh?.getThuocTinhHinhAnhSprite?.getDonViSpriteNgoaiHinhVuKhiTanCongThongMinhSS02
-              ?.caiDatSpriteAnimation(
-                value: getThuocTinhTaiNguyenChienDauCo?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhTheoMaDinhDanh(
-                  maDinhDanh: getTenLuaTanCongSS020CDCDCS00C05SS010?.getMaDinhDanhVuKhiTanCong,
-                ),
-              );
+          await getTrangThaiHangarTongQuat?.getChienDauCoDangCapSao00C05SS01?.getThuocTinh?.getThuocTinhHinhAnhSprite?.getDonViSpriteNgoaiHinhVuKhiTanCongThongMinhSS02?.caiDatSpriteAnimation(
+            value: getThuocTinhTaiNguyenChienDauCo?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhTheoMaDinhDanh(maDinhDanh: getTenLuaTanCongSS020CDCDCS00C05SS010?.getMaDinhDanhVuKhiTanCong),
+          );
         },
       );
 
@@ -3526,12 +3645,9 @@ class QUANLYTRANGTHAIHANGARCHIENDAUCO with CAUTRUCTHUCTHICOBAN {
         thuocTinhHinhAnh: getTenLuaTanCongSS030CDCDCS00C05SS010?.getSieuCapThuocTinh?.getTrangThaiHinhAnh?.getMoHinh,
 
         onThucThiHoanTat: () async {
-          await getTrangThaiHangarTongQuat?.getChienDauCoDangCapSao00C05SS01?.getThuocTinh?.getThuocTinhHinhAnhSprite?.getDonViSpriteNgoaiHinhVuKhiTanCongThongMinhSS03
-              ?.caiDatSpriteAnimation(
-                value: getThuocTinhTaiNguyenChienDauCo?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhTheoMaDinhDanh(
-                  maDinhDanh: getTenLuaTanCongSS030CDCDCS00C05SS010?.getMaDinhDanhVuKhiTanCong,
-                ),
-              );
+          await getTrangThaiHangarTongQuat?.getChienDauCoDangCapSao00C05SS01?.getThuocTinh?.getThuocTinhHinhAnhSprite?.getDonViSpriteNgoaiHinhVuKhiTanCongThongMinhSS03?.caiDatSpriteAnimation(
+            value: getThuocTinhTaiNguyenChienDauCo?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhTheoMaDinhDanh(maDinhDanh: getTenLuaTanCongSS030CDCDCS00C05SS010?.getMaDinhDanhVuKhiTanCong),
+          );
         },
       );
     }
@@ -3545,7 +3661,6 @@ class QUANLYTRANGTHAIHANGARCHIENDAUCO with CAUTRUCTHUCTHICOBAN {
   }
 
   Future<void> onGiaiPhongTaiNguyenChienDauCo00C05SS010() async {
-
     /// -----
     /// TODO:
     /// -----
@@ -3616,25 +3731,25 @@ class QUANLYTRANGTHAIHANGARCHIENDAUCO with CAUTRUCTHUCTHICOBAN {
     /// -----
     /// TODO:
     /// -----
-    await Future.delayed(Duration.zero);
-    await Future.wait([
-      onGiaiPhongTaiNguyenChienDauCo00E03SS010().catchError((e) => null),
-      onGiaiPhongTaiNguyenChienDauCo00E03SS020().catchError((e) => null),
-      onGiaiPhongTaiNguyenChienDauCo00E03SS030().catchError((e) => null),
-      onGiaiPhongTaiNguyenChienDauCo00D04SS010().catchError((e) => null),
-      onGiaiPhongTaiNguyenChienDauCo00C05SS010().catchError((e) => null),
-      onGiaiPhongTaiNguyenChienDauCo00B06SS010().catchError((e) => null),
-      onGiaiPhongTaiNguyenChienDauCo00A07SS010().catchError((e) => null),
-      onGiaiPhongTaiNguyenChienDauCo00S08SS010().catchError((e) => null),
-      onGiaiPhongTaiNguyenChienDauCo0SS09SS010().catchError((e) => null),
-      onGiaiPhongTaiNguyenChienDauCo0SS09SS020().catchError((e) => null),
-      onGiaiPhongTaiNguyenChienDauCo0SS09SS030().catchError((e) => null),
-      onGiaiPhongTaiNguyenChienDauCoSSS10SS010().catchError((e) => null),
-      onGiaiPhongTaiNguyenChienDauCoSSS10SS020().catchError((e) => null),
-      onGiaiPhongTaiNguyenChienDauCoSSS10SS030().catchError((e) => null),
-      onGiaiPhongTaiNguyenChienDauCoSSS10SS040().catchError((e) => null),
-      onGiaiPhongTaiNguyenChienDauCoSSS10SS050().catchError((e) => null),
-    ]);
+    // await Future.delayed(Duration.zero);
+    // await Future.wait([
+    //   onGiaiPhongTaiNguyenChienDauCo00E03SS010().catchError((e) => null),
+    //   onGiaiPhongTaiNguyenChienDauCo00E03SS020().catchError((e) => null),
+    //   onGiaiPhongTaiNguyenChienDauCo00E03SS030().catchError((e) => null),
+    //   onGiaiPhongTaiNguyenChienDauCo00D04SS010().catchError((e) => null),
+    //   onGiaiPhongTaiNguyenChienDauCo00C05SS010().catchError((e) => null),
+    //   // onGiaiPhongTaiNguyenChienDauCo00B06SS010().catchError((e) => null),
+    //   onGiaiPhongTaiNguyenChienDauCo00A07SS010().catchError((e) => null),
+    //   onGiaiPhongTaiNguyenChienDauCo00S08SS010().catchError((e) => null),
+    //   onGiaiPhongTaiNguyenChienDauCo0SS09SS010().catchError((e) => null),
+    //   onGiaiPhongTaiNguyenChienDauCo0SS09SS020().catchError((e) => null),
+    //   onGiaiPhongTaiNguyenChienDauCo0SS09SS030().catchError((e) => null),
+    //   onGiaiPhongTaiNguyenChienDauCoSSS10SS010().catchError((e) => null),
+    //   onGiaiPhongTaiNguyenChienDauCoSSS10SS020().catchError((e) => null),
+    //   onGiaiPhongTaiNguyenChienDauCoSSS10SS030().catchError((e) => null),
+    //   onGiaiPhongTaiNguyenChienDauCoSSS10SS040().catchError((e) => null),
+    //   onGiaiPhongTaiNguyenChienDauCoSSS10SS050().catchError((e) => null),
+    // ]);
 
     /// -----
     /// TODO:
@@ -3660,12 +3775,9 @@ class QUANLYTRANGTHAIHANGARCHIENDAUCO with CAUTRUCTHUCTHICOBAN {
         thuocTinhHinhAnh: getVuKhiSungChinhSS010CDCDCS00B06SS010?.getSieuCapThuocTinh?.getTrangThaiHinhAnh?.getMoHinh,
 
         onThucThiHoanTat: () async {
-          await getTrangThaiHangarTongQuat?.getChienDauCoDangCapSao00B06SS01?.getThuocTinh?.getThuocTinhHinhAnhSprite?.getDonViSpriteNgoaiHinhVuKhiTanCongCoBanSS01SS01
-              ?.caiDatSpriteAnimation(
-                value: getThuocTinhTaiNguyenChienDauCo?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhTheoMaDinhDanh(
-                  maDinhDanh: getVuKhiSungChinhSS010CDCDCS00B06SS010?.getMaDinhDanhVuKhiTanCong,
-                ),
-              );
+          await getTrangThaiHangarTongQuat?.getChienDauCoDangCapSao00B06SS01?.getThuocTinh?.getThuocTinhHinhAnhSprite?.getDonViSpriteNgoaiHinhVuKhiTanCongCoBanSS01SS01?.caiDatSpriteAnimation(
+            value: getThuocTinhTaiNguyenChienDauCo?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhTheoMaDinhDanh(maDinhDanh: getVuKhiSungChinhSS010CDCDCS00B06SS010?.getMaDinhDanhVuKhiTanCong),
+          );
         },
       );
 
@@ -3675,12 +3787,9 @@ class QUANLYTRANGTHAIHANGARCHIENDAUCO with CAUTRUCTHUCTHICOBAN {
         thuocTinhHinhAnh: getVuKhiSungChinhSS020CDCDCS00B06SS010?.getSieuCapThuocTinh?.getTrangThaiHinhAnh?.getMoHinh,
 
         onThucThiHoanTat: () async {
-          await getTrangThaiHangarTongQuat?.getChienDauCoDangCapSao00B06SS01?.getThuocTinh?.getThuocTinhHinhAnhSprite?.getDonViSpriteNgoaiHinhVuKhiTanCongCoBanSS01SS02
-              ?.caiDatSpriteAnimation(
-                value: getThuocTinhTaiNguyenChienDauCo?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhTheoMaDinhDanh(
-                  maDinhDanh: getVuKhiSungChinhSS020CDCDCS00B06SS010?.getMaDinhDanhVuKhiTanCong,
-                ),
-              );
+          await getTrangThaiHangarTongQuat?.getChienDauCoDangCapSao00B06SS01?.getThuocTinh?.getThuocTinhHinhAnhSprite?.getDonViSpriteNgoaiHinhVuKhiTanCongCoBanSS01SS02?.caiDatSpriteAnimation(
+            value: getThuocTinhTaiNguyenChienDauCo?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhTheoMaDinhDanh(maDinhDanh: getVuKhiSungChinhSS020CDCDCS00B06SS010?.getMaDinhDanhVuKhiTanCong),
+          );
         },
       );
 
@@ -3690,12 +3799,9 @@ class QUANLYTRANGTHAIHANGARCHIENDAUCO with CAUTRUCTHUCTHICOBAN {
         thuocTinhHinhAnh: getVuKhiSungChinhSS030CDCDCS00B06SS010?.getSieuCapThuocTinh?.getTrangThaiHinhAnh?.getMoHinh,
 
         onThucThiHoanTat: () async {
-          await getTrangThaiHangarTongQuat?.getChienDauCoDangCapSao00B06SS01?.getThuocTinh?.getThuocTinhHinhAnhSprite?.getDonViSpriteNgoaiHinhVuKhiTanCongCoBanSS01SS03
-              ?.caiDatSpriteAnimation(
-                value: getThuocTinhTaiNguyenChienDauCo?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhTheoMaDinhDanh(
-                  maDinhDanh: getVuKhiSungChinhSS030CDCDCS00B06SS010?.getMaDinhDanhVuKhiTanCong,
-                ),
-              );
+          await getTrangThaiHangarTongQuat?.getChienDauCoDangCapSao00B06SS01?.getThuocTinh?.getThuocTinhHinhAnhSprite?.getDonViSpriteNgoaiHinhVuKhiTanCongCoBanSS01SS03?.caiDatSpriteAnimation(
+            value: getThuocTinhTaiNguyenChienDauCo?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhTheoMaDinhDanh(maDinhDanh: getVuKhiSungChinhSS030CDCDCS00B06SS010?.getMaDinhDanhVuKhiTanCong),
+          );
         },
       );
 
@@ -3705,12 +3811,9 @@ class QUANLYTRANGTHAIHANGARCHIENDAUCO with CAUTRUCTHUCTHICOBAN {
         thuocTinhHinhAnh: getTenLuaTanCongSS010CDCDCS00B06SS010?.getSieuCapThuocTinh?.getTrangThaiHinhAnh?.getMoHinh,
 
         onThucThiHoanTat: () async {
-          await getTrangThaiHangarTongQuat?.getChienDauCoDangCapSao00B06SS01?.getThuocTinh?.getThuocTinhHinhAnhSprite?.getDonViSpriteNgoaiHinhVuKhiTanCongThongMinhSS01
-              ?.caiDatSpriteAnimation(
-                value: getThuocTinhTaiNguyenChienDauCo?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhTheoMaDinhDanh(
-                  maDinhDanh: getTenLuaTanCongSS010CDCDCS00B06SS010?.getMaDinhDanhVuKhiTanCong,
-                ),
-              );
+          await getTrangThaiHangarTongQuat?.getChienDauCoDangCapSao00B06SS01?.getThuocTinh?.getThuocTinhHinhAnhSprite?.getDonViSpriteNgoaiHinhVuKhiTanCongThongMinhSS01?.caiDatSpriteAnimation(
+            value: getThuocTinhTaiNguyenChienDauCo?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhTheoMaDinhDanh(maDinhDanh: getTenLuaTanCongSS010CDCDCS00B06SS010?.getMaDinhDanhVuKhiTanCong),
+          );
         },
       );
 
@@ -3720,12 +3823,9 @@ class QUANLYTRANGTHAIHANGARCHIENDAUCO with CAUTRUCTHUCTHICOBAN {
         thuocTinhHinhAnh: getTenLuaTanCongSS020CDCDCS00B06SS010?.getSieuCapThuocTinh?.getTrangThaiHinhAnh?.getMoHinh,
 
         onThucThiHoanTat: () async {
-          await getTrangThaiHangarTongQuat?.getChienDauCoDangCapSao00B06SS01?.getThuocTinh?.getThuocTinhHinhAnhSprite?.getDonViSpriteNgoaiHinhVuKhiTanCongThongMinhSS02
-              ?.caiDatSpriteAnimation(
-                value: getThuocTinhTaiNguyenChienDauCo?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhTheoMaDinhDanh(
-                  maDinhDanh: getTenLuaTanCongSS020CDCDCS00B06SS010?.getMaDinhDanhVuKhiTanCong,
-                ),
-              );
+          await getTrangThaiHangarTongQuat?.getChienDauCoDangCapSao00B06SS01?.getThuocTinh?.getThuocTinhHinhAnhSprite?.getDonViSpriteNgoaiHinhVuKhiTanCongThongMinhSS02?.caiDatSpriteAnimation(
+            value: getThuocTinhTaiNguyenChienDauCo?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhTheoMaDinhDanh(maDinhDanh: getTenLuaTanCongSS020CDCDCS00B06SS010?.getMaDinhDanhVuKhiTanCong),
+          );
         },
       );
 
@@ -3735,12 +3835,9 @@ class QUANLYTRANGTHAIHANGARCHIENDAUCO with CAUTRUCTHUCTHICOBAN {
         thuocTinhHinhAnh: getTenLuaTanCongSS030CDCDCS00B06SS010?.getSieuCapThuocTinh?.getTrangThaiHinhAnh?.getMoHinh,
 
         onThucThiHoanTat: () async {
-          await getTrangThaiHangarTongQuat?.getChienDauCoDangCapSao00B06SS01?.getThuocTinh?.getThuocTinhHinhAnhSprite?.getDonViSpriteNgoaiHinhVuKhiTanCongThongMinhSS03
-              ?.caiDatSpriteAnimation(
-                value: getThuocTinhTaiNguyenChienDauCo?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhTheoMaDinhDanh(
-                  maDinhDanh: getTenLuaTanCongSS030CDCDCS00B06SS010?.getMaDinhDanhVuKhiTanCong,
-                ),
-              );
+          await getTrangThaiHangarTongQuat?.getChienDauCoDangCapSao00B06SS01?.getThuocTinh?.getThuocTinhHinhAnhSprite?.getDonViSpriteNgoaiHinhVuKhiTanCongThongMinhSS03?.caiDatSpriteAnimation(
+            value: getThuocTinhTaiNguyenChienDauCo?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhTheoMaDinhDanh(maDinhDanh: getTenLuaTanCongSS030CDCDCS00B06SS010?.getMaDinhDanhVuKhiTanCong),
+          );
         },
       );
     }
@@ -3754,7 +3851,6 @@ class QUANLYTRANGTHAIHANGARCHIENDAUCO with CAUTRUCTHUCTHICOBAN {
   }
 
   Future<void> onGiaiPhongTaiNguyenChienDauCo00B06SS010() async {
-
     /// -----
     /// TODO:
     /// -----
@@ -3825,25 +3921,25 @@ class QUANLYTRANGTHAIHANGARCHIENDAUCO with CAUTRUCTHUCTHICOBAN {
     /// -----
     /// TODO:
     /// -----
-    await Future.delayed(Duration.zero);
-    await Future.wait([
-      onGiaiPhongTaiNguyenChienDauCo00E03SS010().catchError((e) => null),
-      onGiaiPhongTaiNguyenChienDauCo00E03SS020().catchError((e) => null),
-      onGiaiPhongTaiNguyenChienDauCo00E03SS030().catchError((e) => null),
-      onGiaiPhongTaiNguyenChienDauCo00D04SS010().catchError((e) => null),
-      onGiaiPhongTaiNguyenChienDauCo00C05SS010().catchError((e) => null),
-      onGiaiPhongTaiNguyenChienDauCo00B06SS010().catchError((e) => null),
-      onGiaiPhongTaiNguyenChienDauCo00A07SS010().catchError((e) => null),
-      onGiaiPhongTaiNguyenChienDauCo00S08SS010().catchError((e) => null),
-      onGiaiPhongTaiNguyenChienDauCo0SS09SS010().catchError((e) => null),
-      onGiaiPhongTaiNguyenChienDauCo0SS09SS020().catchError((e) => null),
-      onGiaiPhongTaiNguyenChienDauCo0SS09SS030().catchError((e) => null),
-      onGiaiPhongTaiNguyenChienDauCoSSS10SS010().catchError((e) => null),
-      onGiaiPhongTaiNguyenChienDauCoSSS10SS020().catchError((e) => null),
-      onGiaiPhongTaiNguyenChienDauCoSSS10SS030().catchError((e) => null),
-      onGiaiPhongTaiNguyenChienDauCoSSS10SS040().catchError((e) => null),
-      onGiaiPhongTaiNguyenChienDauCoSSS10SS050().catchError((e) => null),
-    ]);
+    // await Future.delayed(Duration.zero);
+    // await Future.wait([
+    //   onGiaiPhongTaiNguyenChienDauCo00E03SS010().catchError((e) => null),
+    //   onGiaiPhongTaiNguyenChienDauCo00E03SS020().catchError((e) => null),
+    //   onGiaiPhongTaiNguyenChienDauCo00E03SS030().catchError((e) => null),
+    //   onGiaiPhongTaiNguyenChienDauCo00D04SS010().catchError((e) => null),
+    //   onGiaiPhongTaiNguyenChienDauCo00C05SS010().catchError((e) => null),
+    //   onGiaiPhongTaiNguyenChienDauCo00B06SS010().catchError((e) => null),
+    //   // onGiaiPhongTaiNguyenChienDauCo00A07SS010().catchError((e) => null),
+    //   onGiaiPhongTaiNguyenChienDauCo00S08SS010().catchError((e) => null),
+    //   onGiaiPhongTaiNguyenChienDauCo0SS09SS010().catchError((e) => null),
+    //   onGiaiPhongTaiNguyenChienDauCo0SS09SS020().catchError((e) => null),
+    //   onGiaiPhongTaiNguyenChienDauCo0SS09SS030().catchError((e) => null),
+    //   onGiaiPhongTaiNguyenChienDauCoSSS10SS010().catchError((e) => null),
+    //   onGiaiPhongTaiNguyenChienDauCoSSS10SS020().catchError((e) => null),
+    //   onGiaiPhongTaiNguyenChienDauCoSSS10SS030().catchError((e) => null),
+    //   onGiaiPhongTaiNguyenChienDauCoSSS10SS040().catchError((e) => null),
+    //   onGiaiPhongTaiNguyenChienDauCoSSS10SS050().catchError((e) => null),
+    // ]);
 
     /// -----
     /// TODO:
@@ -3869,12 +3965,9 @@ class QUANLYTRANGTHAIHANGARCHIENDAUCO with CAUTRUCTHUCTHICOBAN {
         thuocTinhHinhAnh: getVuKhiSungChinhSS010CDCDCS00A07SS010?.getSieuCapThuocTinh?.getTrangThaiHinhAnh?.getMoHinh,
 
         onThucThiHoanTat: () async {
-          await getTrangThaiHangarTongQuat?.getChienDauCoDangCapSao00A07SS01?.getThuocTinh?.getThuocTinhHinhAnhSprite?.getDonViSpriteNgoaiHinhVuKhiTanCongCoBanSS01SS01
-              ?.caiDatSpriteAnimation(
-                value: getThuocTinhTaiNguyenChienDauCo?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhTheoMaDinhDanh(
-                  maDinhDanh: getVuKhiSungChinhSS010CDCDCS00A07SS010?.getMaDinhDanhVuKhiTanCong,
-                ),
-              );
+          await getTrangThaiHangarTongQuat?.getChienDauCoDangCapSao00A07SS01?.getThuocTinh?.getThuocTinhHinhAnhSprite?.getDonViSpriteNgoaiHinhVuKhiTanCongCoBanSS01SS01?.caiDatSpriteAnimation(
+            value: getThuocTinhTaiNguyenChienDauCo?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhTheoMaDinhDanh(maDinhDanh: getVuKhiSungChinhSS010CDCDCS00A07SS010?.getMaDinhDanhVuKhiTanCong),
+          );
         },
       );
 
@@ -3884,12 +3977,9 @@ class QUANLYTRANGTHAIHANGARCHIENDAUCO with CAUTRUCTHUCTHICOBAN {
         thuocTinhHinhAnh: getVuKhiSungChinhSS020CDCDCS00A07SS010?.getSieuCapThuocTinh?.getTrangThaiHinhAnh?.getMoHinh,
 
         onThucThiHoanTat: () async {
-          await getTrangThaiHangarTongQuat?.getChienDauCoDangCapSao00A07SS01?.getThuocTinh?.getThuocTinhHinhAnhSprite?.getDonViSpriteNgoaiHinhVuKhiTanCongCoBanSS01SS02
-              ?.caiDatSpriteAnimation(
-                value: getThuocTinhTaiNguyenChienDauCo?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhTheoMaDinhDanh(
-                  maDinhDanh: getVuKhiSungChinhSS020CDCDCS00A07SS010?.getMaDinhDanhVuKhiTanCong,
-                ),
-              );
+          await getTrangThaiHangarTongQuat?.getChienDauCoDangCapSao00A07SS01?.getThuocTinh?.getThuocTinhHinhAnhSprite?.getDonViSpriteNgoaiHinhVuKhiTanCongCoBanSS01SS02?.caiDatSpriteAnimation(
+            value: getThuocTinhTaiNguyenChienDauCo?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhTheoMaDinhDanh(maDinhDanh: getVuKhiSungChinhSS020CDCDCS00A07SS010?.getMaDinhDanhVuKhiTanCong),
+          );
         },
       );
 
@@ -3899,12 +3989,9 @@ class QUANLYTRANGTHAIHANGARCHIENDAUCO with CAUTRUCTHUCTHICOBAN {
         thuocTinhHinhAnh: getVuKhiSungChinhSS030CDCDCS00A07SS010?.getSieuCapThuocTinh?.getTrangThaiHinhAnh?.getMoHinh,
 
         onThucThiHoanTat: () async {
-          await getTrangThaiHangarTongQuat?.getChienDauCoDangCapSao00A07SS01?.getThuocTinh?.getThuocTinhHinhAnhSprite?.getDonViSpriteNgoaiHinhVuKhiTanCongCoBanSS01SS03
-              ?.caiDatSpriteAnimation(
-                value: getThuocTinhTaiNguyenChienDauCo?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhTheoMaDinhDanh(
-                  maDinhDanh: getVuKhiSungChinhSS030CDCDCS00A07SS010?.getMaDinhDanhVuKhiTanCong,
-                ),
-              );
+          await getTrangThaiHangarTongQuat?.getChienDauCoDangCapSao00A07SS01?.getThuocTinh?.getThuocTinhHinhAnhSprite?.getDonViSpriteNgoaiHinhVuKhiTanCongCoBanSS01SS03?.caiDatSpriteAnimation(
+            value: getThuocTinhTaiNguyenChienDauCo?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhTheoMaDinhDanh(maDinhDanh: getVuKhiSungChinhSS030CDCDCS00A07SS010?.getMaDinhDanhVuKhiTanCong),
+          );
         },
       );
 
@@ -3914,12 +4001,9 @@ class QUANLYTRANGTHAIHANGARCHIENDAUCO with CAUTRUCTHUCTHICOBAN {
         thuocTinhHinhAnh: getTenLuaTanCongSS010CDCDCS00A07SS010?.getSieuCapThuocTinh?.getTrangThaiHinhAnh?.getMoHinh,
 
         onThucThiHoanTat: () async {
-          await getTrangThaiHangarTongQuat?.getChienDauCoDangCapSao00A07SS01?.getThuocTinh?.getThuocTinhHinhAnhSprite?.getDonViSpriteNgoaiHinhVuKhiTanCongThongMinhSS01
-              ?.caiDatSpriteAnimation(
-                value: getThuocTinhTaiNguyenChienDauCo?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhTheoMaDinhDanh(
-                  maDinhDanh: getTenLuaTanCongSS010CDCDCS00A07SS010?.getMaDinhDanhVuKhiTanCong,
-                ),
-              );
+          await getTrangThaiHangarTongQuat?.getChienDauCoDangCapSao00A07SS01?.getThuocTinh?.getThuocTinhHinhAnhSprite?.getDonViSpriteNgoaiHinhVuKhiTanCongThongMinhSS01?.caiDatSpriteAnimation(
+            value: getThuocTinhTaiNguyenChienDauCo?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhTheoMaDinhDanh(maDinhDanh: getTenLuaTanCongSS010CDCDCS00A07SS010?.getMaDinhDanhVuKhiTanCong),
+          );
         },
       );
 
@@ -3929,12 +4013,9 @@ class QUANLYTRANGTHAIHANGARCHIENDAUCO with CAUTRUCTHUCTHICOBAN {
         thuocTinhHinhAnh: getTenLuaTanCongSS020CDCDCS00A07SS010?.getSieuCapThuocTinh?.getTrangThaiHinhAnh?.getMoHinh,
 
         onThucThiHoanTat: () async {
-          await getTrangThaiHangarTongQuat?.getChienDauCoDangCapSao00A07SS01?.getThuocTinh?.getThuocTinhHinhAnhSprite?.getDonViSpriteNgoaiHinhVuKhiTanCongThongMinhSS02
-              ?.caiDatSpriteAnimation(
-                value: getThuocTinhTaiNguyenChienDauCo?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhTheoMaDinhDanh(
-                  maDinhDanh: getTenLuaTanCongSS020CDCDCS00A07SS010?.getMaDinhDanhVuKhiTanCong,
-                ),
-              );
+          await getTrangThaiHangarTongQuat?.getChienDauCoDangCapSao00A07SS01?.getThuocTinh?.getThuocTinhHinhAnhSprite?.getDonViSpriteNgoaiHinhVuKhiTanCongThongMinhSS02?.caiDatSpriteAnimation(
+            value: getThuocTinhTaiNguyenChienDauCo?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhTheoMaDinhDanh(maDinhDanh: getTenLuaTanCongSS020CDCDCS00A07SS010?.getMaDinhDanhVuKhiTanCong),
+          );
         },
       );
 
@@ -3944,12 +4025,9 @@ class QUANLYTRANGTHAIHANGARCHIENDAUCO with CAUTRUCTHUCTHICOBAN {
         thuocTinhHinhAnh: getTenLuaTanCongSS030CDCDCS00A07SS010?.getSieuCapThuocTinh?.getTrangThaiHinhAnh?.getMoHinh,
 
         onThucThiHoanTat: () async {
-          await getTrangThaiHangarTongQuat?.getChienDauCoDangCapSao00A07SS01?.getThuocTinh?.getThuocTinhHinhAnhSprite?.getDonViSpriteNgoaiHinhVuKhiTanCongThongMinhSS03
-              ?.caiDatSpriteAnimation(
-                value: getThuocTinhTaiNguyenChienDauCo?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhTheoMaDinhDanh(
-                  maDinhDanh: getTenLuaTanCongSS030CDCDCS00A07SS010?.getMaDinhDanhVuKhiTanCong,
-                ),
-              );
+          await getTrangThaiHangarTongQuat?.getChienDauCoDangCapSao00A07SS01?.getThuocTinh?.getThuocTinhHinhAnhSprite?.getDonViSpriteNgoaiHinhVuKhiTanCongThongMinhSS03?.caiDatSpriteAnimation(
+            value: getThuocTinhTaiNguyenChienDauCo?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhTheoMaDinhDanh(maDinhDanh: getTenLuaTanCongSS030CDCDCS00A07SS010?.getMaDinhDanhVuKhiTanCong),
+          );
         },
       );
     }
@@ -3963,7 +4041,6 @@ class QUANLYTRANGTHAIHANGARCHIENDAUCO with CAUTRUCTHUCTHICOBAN {
   }
 
   Future<void> onGiaiPhongTaiNguyenChienDauCo00A07SS010() async {
-
     /// -----
     /// TODO:
     /// -----
@@ -4034,25 +4111,25 @@ class QUANLYTRANGTHAIHANGARCHIENDAUCO with CAUTRUCTHUCTHICOBAN {
     /// -----
     /// TODO:
     /// -----
-    await Future.delayed(Duration.zero);
-    await Future.wait([
-      onGiaiPhongTaiNguyenChienDauCo00E03SS010().catchError((e) => null),
-      onGiaiPhongTaiNguyenChienDauCo00E03SS020().catchError((e) => null),
-      onGiaiPhongTaiNguyenChienDauCo00E03SS030().catchError((e) => null),
-      onGiaiPhongTaiNguyenChienDauCo00D04SS010().catchError((e) => null),
-      onGiaiPhongTaiNguyenChienDauCo00C05SS010().catchError((e) => null),
-      onGiaiPhongTaiNguyenChienDauCo00B06SS010().catchError((e) => null),
-      onGiaiPhongTaiNguyenChienDauCo00A07SS010().catchError((e) => null),
-      onGiaiPhongTaiNguyenChienDauCo00S08SS010().catchError((e) => null),
-      onGiaiPhongTaiNguyenChienDauCo0SS09SS010().catchError((e) => null),
-      onGiaiPhongTaiNguyenChienDauCo0SS09SS020().catchError((e) => null),
-      onGiaiPhongTaiNguyenChienDauCo0SS09SS030().catchError((e) => null),
-      onGiaiPhongTaiNguyenChienDauCoSSS10SS010().catchError((e) => null),
-      onGiaiPhongTaiNguyenChienDauCoSSS10SS020().catchError((e) => null),
-      onGiaiPhongTaiNguyenChienDauCoSSS10SS030().catchError((e) => null),
-      onGiaiPhongTaiNguyenChienDauCoSSS10SS040().catchError((e) => null),
-      onGiaiPhongTaiNguyenChienDauCoSSS10SS050().catchError((e) => null),
-    ]);
+    // await Future.delayed(Duration.zero);
+    // await Future.wait([
+    //   onGiaiPhongTaiNguyenChienDauCo00E03SS010().catchError((e) => null),
+    //   onGiaiPhongTaiNguyenChienDauCo00E03SS020().catchError((e) => null),
+    //   onGiaiPhongTaiNguyenChienDauCo00E03SS030().catchError((e) => null),
+    //   onGiaiPhongTaiNguyenChienDauCo00D04SS010().catchError((e) => null),
+    //   onGiaiPhongTaiNguyenChienDauCo00C05SS010().catchError((e) => null),
+    //   onGiaiPhongTaiNguyenChienDauCo00B06SS010().catchError((e) => null),
+    //   onGiaiPhongTaiNguyenChienDauCo00A07SS010().catchError((e) => null),
+    //   // onGiaiPhongTaiNguyenChienDauCo00S08SS010().catchError((e) => null),
+    //   onGiaiPhongTaiNguyenChienDauCo0SS09SS010().catchError((e) => null),
+    //   onGiaiPhongTaiNguyenChienDauCo0SS09SS020().catchError((e) => null),
+    //   onGiaiPhongTaiNguyenChienDauCo0SS09SS030().catchError((e) => null),
+    //   onGiaiPhongTaiNguyenChienDauCoSSS10SS010().catchError((e) => null),
+    //   onGiaiPhongTaiNguyenChienDauCoSSS10SS020().catchError((e) => null),
+    //   onGiaiPhongTaiNguyenChienDauCoSSS10SS030().catchError((e) => null),
+    //   onGiaiPhongTaiNguyenChienDauCoSSS10SS040().catchError((e) => null),
+    //   onGiaiPhongTaiNguyenChienDauCoSSS10SS050().catchError((e) => null),
+    // ]);
 
     /// -----
     /// TODO:
@@ -4078,12 +4155,9 @@ class QUANLYTRANGTHAIHANGARCHIENDAUCO with CAUTRUCTHUCTHICOBAN {
         thuocTinhHinhAnh: getVuKhiSungChinhSS010CDCDCS00S08SS010?.getSieuCapThuocTinh?.getTrangThaiHinhAnh?.getMoHinh,
 
         onThucThiHoanTat: () async {
-          await getTrangThaiHangarTongQuat?.getChienDauCoDangCapSao00S08SS01?.getThuocTinh?.getThuocTinhHinhAnhSprite?.getDonViSpriteNgoaiHinhVuKhiTanCongCoBanSS01SS01
-              ?.caiDatSpriteAnimation(
-                value: getThuocTinhTaiNguyenChienDauCo?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhTheoMaDinhDanh(
-                  maDinhDanh: getVuKhiSungChinhSS010CDCDCS00S08SS010?.getMaDinhDanhVuKhiTanCong,
-                ),
-              );
+          await getTrangThaiHangarTongQuat?.getChienDauCoDangCapSao00S08SS01?.getThuocTinh?.getThuocTinhHinhAnhSprite?.getDonViSpriteNgoaiHinhVuKhiTanCongCoBanSS01SS01?.caiDatSpriteAnimation(
+            value: getThuocTinhTaiNguyenChienDauCo?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhTheoMaDinhDanh(maDinhDanh: getVuKhiSungChinhSS010CDCDCS00S08SS010?.getMaDinhDanhVuKhiTanCong),
+          );
         },
       );
 
@@ -4093,12 +4167,9 @@ class QUANLYTRANGTHAIHANGARCHIENDAUCO with CAUTRUCTHUCTHICOBAN {
         thuocTinhHinhAnh: getVuKhiSungChinhSS020CDCDCS00S08SS010?.getSieuCapThuocTinh?.getTrangThaiHinhAnh?.getMoHinh,
 
         onThucThiHoanTat: () async {
-          await getTrangThaiHangarTongQuat?.getChienDauCoDangCapSao00S08SS01?.getThuocTinh?.getThuocTinhHinhAnhSprite?.getDonViSpriteNgoaiHinhVuKhiTanCongCoBanSS01SS02
-              ?.caiDatSpriteAnimation(
-                value: getThuocTinhTaiNguyenChienDauCo?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhTheoMaDinhDanh(
-                  maDinhDanh: getVuKhiSungChinhSS020CDCDCS00S08SS010?.getMaDinhDanhVuKhiTanCong,
-                ),
-              );
+          await getTrangThaiHangarTongQuat?.getChienDauCoDangCapSao00S08SS01?.getThuocTinh?.getThuocTinhHinhAnhSprite?.getDonViSpriteNgoaiHinhVuKhiTanCongCoBanSS01SS02?.caiDatSpriteAnimation(
+            value: getThuocTinhTaiNguyenChienDauCo?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhTheoMaDinhDanh(maDinhDanh: getVuKhiSungChinhSS020CDCDCS00S08SS010?.getMaDinhDanhVuKhiTanCong),
+          );
         },
       );
 
@@ -4108,12 +4179,9 @@ class QUANLYTRANGTHAIHANGARCHIENDAUCO with CAUTRUCTHUCTHICOBAN {
         thuocTinhHinhAnh: getVuKhiSungChinhSS030CDCDCS00S08SS010?.getSieuCapThuocTinh?.getTrangThaiHinhAnh?.getMoHinh,
 
         onThucThiHoanTat: () async {
-          await getTrangThaiHangarTongQuat?.getChienDauCoDangCapSao00S08SS01?.getThuocTinh?.getThuocTinhHinhAnhSprite?.getDonViSpriteNgoaiHinhVuKhiTanCongCoBanSS01SS03
-              ?.caiDatSpriteAnimation(
-                value: getThuocTinhTaiNguyenChienDauCo?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhTheoMaDinhDanh(
-                  maDinhDanh: getVuKhiSungChinhSS030CDCDCS00S08SS010?.getMaDinhDanhVuKhiTanCong,
-                ),
-              );
+          await getTrangThaiHangarTongQuat?.getChienDauCoDangCapSao00S08SS01?.getThuocTinh?.getThuocTinhHinhAnhSprite?.getDonViSpriteNgoaiHinhVuKhiTanCongCoBanSS01SS03?.caiDatSpriteAnimation(
+            value: getThuocTinhTaiNguyenChienDauCo?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhTheoMaDinhDanh(maDinhDanh: getVuKhiSungChinhSS030CDCDCS00S08SS010?.getMaDinhDanhVuKhiTanCong),
+          );
         },
       );
 
@@ -4123,12 +4191,9 @@ class QUANLYTRANGTHAIHANGARCHIENDAUCO with CAUTRUCTHUCTHICOBAN {
         thuocTinhHinhAnh: getTenLuaTanCongSS010CDCDCS00S08SS010?.getSieuCapThuocTinh?.getTrangThaiHinhAnh?.getMoHinh,
 
         onThucThiHoanTat: () async {
-          await getTrangThaiHangarTongQuat?.getChienDauCoDangCapSao00S08SS01?.getThuocTinh?.getThuocTinhHinhAnhSprite?.getDonViSpriteNgoaiHinhVuKhiTanCongThongMinhSS01
-              ?.caiDatSpriteAnimation(
-                value: getThuocTinhTaiNguyenChienDauCo?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhTheoMaDinhDanh(
-                  maDinhDanh: getTenLuaTanCongSS010CDCDCS00S08SS010?.getMaDinhDanhVuKhiTanCong,
-                ),
-              );
+          await getTrangThaiHangarTongQuat?.getChienDauCoDangCapSao00S08SS01?.getThuocTinh?.getThuocTinhHinhAnhSprite?.getDonViSpriteNgoaiHinhVuKhiTanCongThongMinhSS01?.caiDatSpriteAnimation(
+            value: getThuocTinhTaiNguyenChienDauCo?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhTheoMaDinhDanh(maDinhDanh: getTenLuaTanCongSS010CDCDCS00S08SS010?.getMaDinhDanhVuKhiTanCong),
+          );
         },
       );
 
@@ -4138,12 +4203,9 @@ class QUANLYTRANGTHAIHANGARCHIENDAUCO with CAUTRUCTHUCTHICOBAN {
         thuocTinhHinhAnh: getTenLuaTanCongSS020CDCDCS00S08SS010?.getSieuCapThuocTinh?.getTrangThaiHinhAnh?.getMoHinh,
 
         onThucThiHoanTat: () async {
-          await getTrangThaiHangarTongQuat?.getChienDauCoDangCapSao00S08SS01?.getThuocTinh?.getThuocTinhHinhAnhSprite?.getDonViSpriteNgoaiHinhVuKhiTanCongThongMinhSS02
-              ?.caiDatSpriteAnimation(
-                value: getThuocTinhTaiNguyenChienDauCo?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhTheoMaDinhDanh(
-                  maDinhDanh: getTenLuaTanCongSS020CDCDCS00S08SS010?.getMaDinhDanhVuKhiTanCong,
-                ),
-              );
+          await getTrangThaiHangarTongQuat?.getChienDauCoDangCapSao00S08SS01?.getThuocTinh?.getThuocTinhHinhAnhSprite?.getDonViSpriteNgoaiHinhVuKhiTanCongThongMinhSS02?.caiDatSpriteAnimation(
+            value: getThuocTinhTaiNguyenChienDauCo?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhTheoMaDinhDanh(maDinhDanh: getTenLuaTanCongSS020CDCDCS00S08SS010?.getMaDinhDanhVuKhiTanCong),
+          );
         },
       );
 
@@ -4153,12 +4215,9 @@ class QUANLYTRANGTHAIHANGARCHIENDAUCO with CAUTRUCTHUCTHICOBAN {
         thuocTinhHinhAnh: getTenLuaTanCongSS030CDCDCS00S08SS010?.getSieuCapThuocTinh?.getTrangThaiHinhAnh?.getMoHinh,
 
         onThucThiHoanTat: () async {
-          await getTrangThaiHangarTongQuat?.getChienDauCoDangCapSao00S08SS01?.getThuocTinh?.getThuocTinhHinhAnhSprite?.getDonViSpriteNgoaiHinhVuKhiTanCongThongMinhSS03
-              ?.caiDatSpriteAnimation(
-                value: getThuocTinhTaiNguyenChienDauCo?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhTheoMaDinhDanh(
-                  maDinhDanh: getTenLuaTanCongSS030CDCDCS00S08SS010?.getMaDinhDanhVuKhiTanCong,
-                ),
-              );
+          await getTrangThaiHangarTongQuat?.getChienDauCoDangCapSao00S08SS01?.getThuocTinh?.getThuocTinhHinhAnhSprite?.getDonViSpriteNgoaiHinhVuKhiTanCongThongMinhSS03?.caiDatSpriteAnimation(
+            value: getThuocTinhTaiNguyenChienDauCo?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhTheoMaDinhDanh(maDinhDanh: getTenLuaTanCongSS030CDCDCS00S08SS010?.getMaDinhDanhVuKhiTanCong),
+          );
         },
       );
     }
@@ -4172,7 +4231,6 @@ class QUANLYTRANGTHAIHANGARCHIENDAUCO with CAUTRUCTHUCTHICOBAN {
   }
 
   Future<void> onGiaiPhongTaiNguyenChienDauCo00S08SS010() async {
-
     /// -----
     /// TODO:
     /// -----
@@ -4243,25 +4301,25 @@ class QUANLYTRANGTHAIHANGARCHIENDAUCO with CAUTRUCTHUCTHICOBAN {
     /// -----
     /// TODO:
     /// -----
-    await Future.delayed(Duration.zero);
-    await Future.wait([
-      onGiaiPhongTaiNguyenChienDauCo00E03SS010().catchError((e) => null),
-      onGiaiPhongTaiNguyenChienDauCo00E03SS020().catchError((e) => null),
-      onGiaiPhongTaiNguyenChienDauCo00E03SS030().catchError((e) => null),
-      onGiaiPhongTaiNguyenChienDauCo00D04SS010().catchError((e) => null),
-      onGiaiPhongTaiNguyenChienDauCo00C05SS010().catchError((e) => null),
-      onGiaiPhongTaiNguyenChienDauCo00B06SS010().catchError((e) => null),
-      onGiaiPhongTaiNguyenChienDauCo00A07SS010().catchError((e) => null),
-      onGiaiPhongTaiNguyenChienDauCo00S08SS010().catchError((e) => null),
-      onGiaiPhongTaiNguyenChienDauCo0SS09SS010().catchError((e) => null),
-      onGiaiPhongTaiNguyenChienDauCo0SS09SS020().catchError((e) => null),
-      onGiaiPhongTaiNguyenChienDauCo0SS09SS030().catchError((e) => null),
-      onGiaiPhongTaiNguyenChienDauCoSSS10SS010().catchError((e) => null),
-      onGiaiPhongTaiNguyenChienDauCoSSS10SS020().catchError((e) => null),
-      onGiaiPhongTaiNguyenChienDauCoSSS10SS030().catchError((e) => null),
-      onGiaiPhongTaiNguyenChienDauCoSSS10SS040().catchError((e) => null),
-      onGiaiPhongTaiNguyenChienDauCoSSS10SS050().catchError((e) => null),
-    ]);
+    // await Future.delayed(Duration.zero);
+    // await Future.wait([
+    //   onGiaiPhongTaiNguyenChienDauCo00E03SS010().catchError((e) => null),
+    //   onGiaiPhongTaiNguyenChienDauCo00E03SS020().catchError((e) => null),
+    //   onGiaiPhongTaiNguyenChienDauCo00E03SS030().catchError((e) => null),
+    //   onGiaiPhongTaiNguyenChienDauCo00D04SS010().catchError((e) => null),
+    //   onGiaiPhongTaiNguyenChienDauCo00C05SS010().catchError((e) => null),
+    //   onGiaiPhongTaiNguyenChienDauCo00B06SS010().catchError((e) => null),
+    //   onGiaiPhongTaiNguyenChienDauCo00A07SS010().catchError((e) => null),
+    //   onGiaiPhongTaiNguyenChienDauCo00S08SS010().catchError((e) => null),
+    //   // onGiaiPhongTaiNguyenChienDauCo0SS09SS010().catchError((e) => null),
+    //   onGiaiPhongTaiNguyenChienDauCo0SS09SS020().catchError((e) => null),
+    //   onGiaiPhongTaiNguyenChienDauCo0SS09SS030().catchError((e) => null),
+    //   onGiaiPhongTaiNguyenChienDauCoSSS10SS010().catchError((e) => null),
+    //   onGiaiPhongTaiNguyenChienDauCoSSS10SS020().catchError((e) => null),
+    //   onGiaiPhongTaiNguyenChienDauCoSSS10SS030().catchError((e) => null),
+    //   onGiaiPhongTaiNguyenChienDauCoSSS10SS040().catchError((e) => null),
+    //   onGiaiPhongTaiNguyenChienDauCoSSS10SS050().catchError((e) => null),
+    // ]);
 
     /// -----
     /// TODO:
@@ -4287,12 +4345,9 @@ class QUANLYTRANGTHAIHANGARCHIENDAUCO with CAUTRUCTHUCTHICOBAN {
         thuocTinhHinhAnh: getVuKhiSungChinhSS010CDCDCS0SS09SS010?.getSieuCapThuocTinh?.getTrangThaiHinhAnh?.getMoHinh,
 
         onThucThiHoanTat: () async {
-          await getTrangThaiHangarTongQuat?.getChienDauCoDangCapSao0SS09SS01?.getThuocTinh?.getThuocTinhHinhAnhSprite?.getDonViSpriteNgoaiHinhVuKhiTanCongCoBanSS01SS01
-              ?.caiDatSpriteAnimation(
-                value: getThuocTinhTaiNguyenChienDauCo?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhTheoMaDinhDanh(
-                  maDinhDanh: getVuKhiSungChinhSS010CDCDCS0SS09SS010?.getMaDinhDanhVuKhiTanCong,
-                ),
-              );
+          await getTrangThaiHangarTongQuat?.getChienDauCoDangCapSao0SS09SS01?.getThuocTinh?.getThuocTinhHinhAnhSprite?.getDonViSpriteNgoaiHinhVuKhiTanCongCoBanSS01SS01?.caiDatSpriteAnimation(
+            value: getThuocTinhTaiNguyenChienDauCo?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhTheoMaDinhDanh(maDinhDanh: getVuKhiSungChinhSS010CDCDCS0SS09SS010?.getMaDinhDanhVuKhiTanCong),
+          );
         },
       );
 
@@ -4302,12 +4357,9 @@ class QUANLYTRANGTHAIHANGARCHIENDAUCO with CAUTRUCTHUCTHICOBAN {
         thuocTinhHinhAnh: getVuKhiSungChinhSS020CDCDCS0SS09SS010?.getSieuCapThuocTinh?.getTrangThaiHinhAnh?.getMoHinh,
 
         onThucThiHoanTat: () async {
-          await getTrangThaiHangarTongQuat?.getChienDauCoDangCapSao0SS09SS01?.getThuocTinh?.getThuocTinhHinhAnhSprite?.getDonViSpriteNgoaiHinhVuKhiTanCongCoBanSS01SS02
-              ?.caiDatSpriteAnimation(
-                value: getThuocTinhTaiNguyenChienDauCo?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhTheoMaDinhDanh(
-                  maDinhDanh: getVuKhiSungChinhSS020CDCDCS0SS09SS010?.getMaDinhDanhVuKhiTanCong,
-                ),
-              );
+          await getTrangThaiHangarTongQuat?.getChienDauCoDangCapSao0SS09SS01?.getThuocTinh?.getThuocTinhHinhAnhSprite?.getDonViSpriteNgoaiHinhVuKhiTanCongCoBanSS01SS02?.caiDatSpriteAnimation(
+            value: getThuocTinhTaiNguyenChienDauCo?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhTheoMaDinhDanh(maDinhDanh: getVuKhiSungChinhSS020CDCDCS0SS09SS010?.getMaDinhDanhVuKhiTanCong),
+          );
         },
       );
 
@@ -4317,12 +4369,9 @@ class QUANLYTRANGTHAIHANGARCHIENDAUCO with CAUTRUCTHUCTHICOBAN {
         thuocTinhHinhAnh: getVuKhiSungChinhSS030CDCDCS0SS09SS010?.getSieuCapThuocTinh?.getTrangThaiHinhAnh?.getMoHinh,
 
         onThucThiHoanTat: () async {
-          await getTrangThaiHangarTongQuat?.getChienDauCoDangCapSao0SS09SS01?.getThuocTinh?.getThuocTinhHinhAnhSprite?.getDonViSpriteNgoaiHinhVuKhiTanCongCoBanSS01SS03
-              ?.caiDatSpriteAnimation(
-                value: getThuocTinhTaiNguyenChienDauCo?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhTheoMaDinhDanh(
-                  maDinhDanh: getVuKhiSungChinhSS030CDCDCS0SS09SS010?.getMaDinhDanhVuKhiTanCong,
-                ),
-              );
+          await getTrangThaiHangarTongQuat?.getChienDauCoDangCapSao0SS09SS01?.getThuocTinh?.getThuocTinhHinhAnhSprite?.getDonViSpriteNgoaiHinhVuKhiTanCongCoBanSS01SS03?.caiDatSpriteAnimation(
+            value: getThuocTinhTaiNguyenChienDauCo?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhTheoMaDinhDanh(maDinhDanh: getVuKhiSungChinhSS030CDCDCS0SS09SS010?.getMaDinhDanhVuKhiTanCong),
+          );
         },
       );
 
@@ -4332,12 +4381,9 @@ class QUANLYTRANGTHAIHANGARCHIENDAUCO with CAUTRUCTHUCTHICOBAN {
         thuocTinhHinhAnh: getTenLuaTanCongSS010CDCDCS0SS09SS010?.getSieuCapThuocTinh?.getTrangThaiHinhAnh?.getMoHinh,
 
         onThucThiHoanTat: () async {
-          await getTrangThaiHangarTongQuat?.getChienDauCoDangCapSao0SS09SS01?.getThuocTinh?.getThuocTinhHinhAnhSprite?.getDonViSpriteNgoaiHinhVuKhiTanCongThongMinhSS01
-              ?.caiDatSpriteAnimation(
-                value: getThuocTinhTaiNguyenChienDauCo?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhTheoMaDinhDanh(
-                  maDinhDanh: getTenLuaTanCongSS010CDCDCS0SS09SS010?.getMaDinhDanhVuKhiTanCong,
-                ),
-              );
+          await getTrangThaiHangarTongQuat?.getChienDauCoDangCapSao0SS09SS01?.getThuocTinh?.getThuocTinhHinhAnhSprite?.getDonViSpriteNgoaiHinhVuKhiTanCongThongMinhSS01?.caiDatSpriteAnimation(
+            value: getThuocTinhTaiNguyenChienDauCo?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhTheoMaDinhDanh(maDinhDanh: getTenLuaTanCongSS010CDCDCS0SS09SS010?.getMaDinhDanhVuKhiTanCong),
+          );
         },
       );
 
@@ -4347,12 +4393,9 @@ class QUANLYTRANGTHAIHANGARCHIENDAUCO with CAUTRUCTHUCTHICOBAN {
         thuocTinhHinhAnh: getTenLuaTanCongSS020CDCDCS0SS09SS010?.getSieuCapThuocTinh?.getTrangThaiHinhAnh?.getMoHinh,
 
         onThucThiHoanTat: () async {
-          await getTrangThaiHangarTongQuat?.getChienDauCoDangCapSao0SS09SS01?.getThuocTinh?.getThuocTinhHinhAnhSprite?.getDonViSpriteNgoaiHinhVuKhiTanCongThongMinhSS02
-              ?.caiDatSpriteAnimation(
-                value: getThuocTinhTaiNguyenChienDauCo?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhTheoMaDinhDanh(
-                  maDinhDanh: getTenLuaTanCongSS020CDCDCS0SS09SS010?.getMaDinhDanhVuKhiTanCong,
-                ),
-              );
+          await getTrangThaiHangarTongQuat?.getChienDauCoDangCapSao0SS09SS01?.getThuocTinh?.getThuocTinhHinhAnhSprite?.getDonViSpriteNgoaiHinhVuKhiTanCongThongMinhSS02?.caiDatSpriteAnimation(
+            value: getThuocTinhTaiNguyenChienDauCo?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhTheoMaDinhDanh(maDinhDanh: getTenLuaTanCongSS020CDCDCS0SS09SS010?.getMaDinhDanhVuKhiTanCong),
+          );
         },
       );
 
@@ -4362,12 +4405,9 @@ class QUANLYTRANGTHAIHANGARCHIENDAUCO with CAUTRUCTHUCTHICOBAN {
         thuocTinhHinhAnh: getTenLuaTanCongSS030CDCDCS0SS09SS010?.getSieuCapThuocTinh?.getTrangThaiHinhAnh?.getMoHinh,
 
         onThucThiHoanTat: () async {
-          await getTrangThaiHangarTongQuat?.getChienDauCoDangCapSao0SS09SS01?.getThuocTinh?.getThuocTinhHinhAnhSprite?.getDonViSpriteNgoaiHinhVuKhiTanCongThongMinhSS03
-              ?.caiDatSpriteAnimation(
-                value: getThuocTinhTaiNguyenChienDauCo?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhTheoMaDinhDanh(
-                  maDinhDanh: getTenLuaTanCongSS030CDCDCS0SS09SS010?.getMaDinhDanhVuKhiTanCong,
-                ),
-              );
+          await getTrangThaiHangarTongQuat?.getChienDauCoDangCapSao0SS09SS01?.getThuocTinh?.getThuocTinhHinhAnhSprite?.getDonViSpriteNgoaiHinhVuKhiTanCongThongMinhSS03?.caiDatSpriteAnimation(
+            value: getThuocTinhTaiNguyenChienDauCo?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhTheoMaDinhDanh(maDinhDanh: getTenLuaTanCongSS030CDCDCS0SS09SS010?.getMaDinhDanhVuKhiTanCong),
+          );
         },
       );
     }
@@ -4381,7 +4421,6 @@ class QUANLYTRANGTHAIHANGARCHIENDAUCO with CAUTRUCTHUCTHICOBAN {
   }
 
   Future<void> onGiaiPhongTaiNguyenChienDauCo0SS09SS010() async {
-
     /// -----
     /// TODO:
     /// -----
@@ -4452,25 +4491,25 @@ class QUANLYTRANGTHAIHANGARCHIENDAUCO with CAUTRUCTHUCTHICOBAN {
     /// -----
     /// TODO:
     /// -----
-    await Future.delayed(Duration.zero);
-    await Future.wait([
-      onGiaiPhongTaiNguyenChienDauCo00E03SS010().catchError((e) => null),
-      onGiaiPhongTaiNguyenChienDauCo00E03SS020().catchError((e) => null),
-      onGiaiPhongTaiNguyenChienDauCo00E03SS030().catchError((e) => null),
-      onGiaiPhongTaiNguyenChienDauCo00D04SS010().catchError((e) => null),
-      onGiaiPhongTaiNguyenChienDauCo00C05SS010().catchError((e) => null),
-      onGiaiPhongTaiNguyenChienDauCo00B06SS010().catchError((e) => null),
-      onGiaiPhongTaiNguyenChienDauCo00A07SS010().catchError((e) => null),
-      onGiaiPhongTaiNguyenChienDauCo00S08SS010().catchError((e) => null),
-      onGiaiPhongTaiNguyenChienDauCo0SS09SS010().catchError((e) => null),
-      onGiaiPhongTaiNguyenChienDauCo0SS09SS020().catchError((e) => null),
-      onGiaiPhongTaiNguyenChienDauCo0SS09SS030().catchError((e) => null),
-      onGiaiPhongTaiNguyenChienDauCoSSS10SS010().catchError((e) => null),
-      onGiaiPhongTaiNguyenChienDauCoSSS10SS020().catchError((e) => null),
-      onGiaiPhongTaiNguyenChienDauCoSSS10SS030().catchError((e) => null),
-      onGiaiPhongTaiNguyenChienDauCoSSS10SS040().catchError((e) => null),
-      onGiaiPhongTaiNguyenChienDauCoSSS10SS050().catchError((e) => null),
-    ]);
+    // await Future.delayed(Duration.zero);
+    // await Future.wait([
+    //   onGiaiPhongTaiNguyenChienDauCo00E03SS010().catchError((e) => null),
+    //   onGiaiPhongTaiNguyenChienDauCo00E03SS020().catchError((e) => null),
+    //   onGiaiPhongTaiNguyenChienDauCo00E03SS030().catchError((e) => null),
+    //   onGiaiPhongTaiNguyenChienDauCo00D04SS010().catchError((e) => null),
+    //   onGiaiPhongTaiNguyenChienDauCo00C05SS010().catchError((e) => null),
+    //   onGiaiPhongTaiNguyenChienDauCo00B06SS010().catchError((e) => null),
+    //   onGiaiPhongTaiNguyenChienDauCo00A07SS010().catchError((e) => null),
+    //   onGiaiPhongTaiNguyenChienDauCo00S08SS010().catchError((e) => null),
+    //   onGiaiPhongTaiNguyenChienDauCo0SS09SS010().catchError((e) => null),
+    //   // onGiaiPhongTaiNguyenChienDauCo0SS09SS020().catchError((e) => null),
+    //   onGiaiPhongTaiNguyenChienDauCo0SS09SS030().catchError((e) => null),
+    //   onGiaiPhongTaiNguyenChienDauCoSSS10SS010().catchError((e) => null),
+    //   onGiaiPhongTaiNguyenChienDauCoSSS10SS020().catchError((e) => null),
+    //   onGiaiPhongTaiNguyenChienDauCoSSS10SS030().catchError((e) => null),
+    //   onGiaiPhongTaiNguyenChienDauCoSSS10SS040().catchError((e) => null),
+    //   onGiaiPhongTaiNguyenChienDauCoSSS10SS050().catchError((e) => null),
+    // ]);
 
     /// -----
     /// TODO:
@@ -4495,12 +4534,9 @@ class QUANLYTRANGTHAIHANGARCHIENDAUCO with CAUTRUCTHUCTHICOBAN {
         thuocTinhHinhAnh: getVuKhiSungChinhSS010CDCDCS0SS09SS020?.getSieuCapThuocTinh?.getTrangThaiHinhAnh?.getMoHinh,
 
         onThucThiHoanTat: () async {
-          await getTrangThaiHangarTongQuat?.getChienDauCoDangCapSao0SS09SS02?.getThuocTinh?.getThuocTinhHinhAnhSprite?.getDonViSpriteNgoaiHinhVuKhiTanCongCoBanSS01SS01
-              ?.caiDatSpriteAnimation(
-                value: getThuocTinhTaiNguyenChienDauCo?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhTheoMaDinhDanh(
-                  maDinhDanh: getVuKhiSungChinhSS010CDCDCS0SS09SS020?.getMaDinhDanhVuKhiTanCong,
-                ),
-              );
+          await getTrangThaiHangarTongQuat?.getChienDauCoDangCapSao0SS09SS02?.getThuocTinh?.getThuocTinhHinhAnhSprite?.getDonViSpriteNgoaiHinhVuKhiTanCongCoBanSS01SS01?.caiDatSpriteAnimation(
+            value: getThuocTinhTaiNguyenChienDauCo?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhTheoMaDinhDanh(maDinhDanh: getVuKhiSungChinhSS010CDCDCS0SS09SS020?.getMaDinhDanhVuKhiTanCong),
+          );
         },
       );
 
@@ -4510,12 +4546,9 @@ class QUANLYTRANGTHAIHANGARCHIENDAUCO with CAUTRUCTHUCTHICOBAN {
         thuocTinhHinhAnh: getVuKhiSungChinhSS020CDCDCS0SS09SS020?.getSieuCapThuocTinh?.getTrangThaiHinhAnh?.getMoHinh,
 
         onThucThiHoanTat: () async {
-          await getTrangThaiHangarTongQuat?.getChienDauCoDangCapSao0SS09SS02?.getThuocTinh?.getThuocTinhHinhAnhSprite?.getDonViSpriteNgoaiHinhVuKhiTanCongCoBanSS01SS02
-              ?.caiDatSpriteAnimation(
-                value: getThuocTinhTaiNguyenChienDauCo?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhTheoMaDinhDanh(
-                  maDinhDanh: getVuKhiSungChinhSS020CDCDCS0SS09SS020?.getMaDinhDanhVuKhiTanCong,
-                ),
-              );
+          await getTrangThaiHangarTongQuat?.getChienDauCoDangCapSao0SS09SS02?.getThuocTinh?.getThuocTinhHinhAnhSprite?.getDonViSpriteNgoaiHinhVuKhiTanCongCoBanSS01SS02?.caiDatSpriteAnimation(
+            value: getThuocTinhTaiNguyenChienDauCo?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhTheoMaDinhDanh(maDinhDanh: getVuKhiSungChinhSS020CDCDCS0SS09SS020?.getMaDinhDanhVuKhiTanCong),
+          );
         },
       );
 
@@ -4525,12 +4558,9 @@ class QUANLYTRANGTHAIHANGARCHIENDAUCO with CAUTRUCTHUCTHICOBAN {
         thuocTinhHinhAnh: getVuKhiSungChinhSS030CDCDCS0SS09SS020?.getSieuCapThuocTinh?.getTrangThaiHinhAnh?.getMoHinh,
 
         onThucThiHoanTat: () async {
-          await getTrangThaiHangarTongQuat?.getChienDauCoDangCapSao0SS09SS02?.getThuocTinh?.getThuocTinhHinhAnhSprite?.getDonViSpriteNgoaiHinhVuKhiTanCongCoBanSS01SS03
-              ?.caiDatSpriteAnimation(
-                value: getThuocTinhTaiNguyenChienDauCo?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhTheoMaDinhDanh(
-                  maDinhDanh: getVuKhiSungChinhSS030CDCDCS0SS09SS020?.getMaDinhDanhVuKhiTanCong,
-                ),
-              );
+          await getTrangThaiHangarTongQuat?.getChienDauCoDangCapSao0SS09SS02?.getThuocTinh?.getThuocTinhHinhAnhSprite?.getDonViSpriteNgoaiHinhVuKhiTanCongCoBanSS01SS03?.caiDatSpriteAnimation(
+            value: getThuocTinhTaiNguyenChienDauCo?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhTheoMaDinhDanh(maDinhDanh: getVuKhiSungChinhSS030CDCDCS0SS09SS020?.getMaDinhDanhVuKhiTanCong),
+          );
         },
       );
 
@@ -4540,12 +4570,9 @@ class QUANLYTRANGTHAIHANGARCHIENDAUCO with CAUTRUCTHUCTHICOBAN {
         thuocTinhHinhAnh: getTenLuaTanCongSS010CDCDCS0SS09SS020?.getSieuCapThuocTinh?.getTrangThaiHinhAnh?.getMoHinh,
 
         onThucThiHoanTat: () async {
-          await getTrangThaiHangarTongQuat?.getChienDauCoDangCapSao0SS09SS02?.getThuocTinh?.getThuocTinhHinhAnhSprite?.getDonViSpriteNgoaiHinhVuKhiTanCongThongMinhSS01
-              ?.caiDatSpriteAnimation(
-                value: getThuocTinhTaiNguyenChienDauCo?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhTheoMaDinhDanh(
-                  maDinhDanh: getTenLuaTanCongSS010CDCDCS0SS09SS020?.getMaDinhDanhVuKhiTanCong,
-                ),
-              );
+          await getTrangThaiHangarTongQuat?.getChienDauCoDangCapSao0SS09SS02?.getThuocTinh?.getThuocTinhHinhAnhSprite?.getDonViSpriteNgoaiHinhVuKhiTanCongThongMinhSS01?.caiDatSpriteAnimation(
+            value: getThuocTinhTaiNguyenChienDauCo?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhTheoMaDinhDanh(maDinhDanh: getTenLuaTanCongSS010CDCDCS0SS09SS020?.getMaDinhDanhVuKhiTanCong),
+          );
         },
       );
 
@@ -4555,12 +4582,9 @@ class QUANLYTRANGTHAIHANGARCHIENDAUCO with CAUTRUCTHUCTHICOBAN {
         thuocTinhHinhAnh: getTenLuaTanCongSS020CDCDCS0SS09SS020?.getSieuCapThuocTinh?.getTrangThaiHinhAnh?.getMoHinh,
 
         onThucThiHoanTat: () async {
-          await getTrangThaiHangarTongQuat?.getChienDauCoDangCapSao0SS09SS02?.getThuocTinh?.getThuocTinhHinhAnhSprite?.getDonViSpriteNgoaiHinhVuKhiTanCongThongMinhSS02
-              ?.caiDatSpriteAnimation(
-                value: getThuocTinhTaiNguyenChienDauCo?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhTheoMaDinhDanh(
-                  maDinhDanh: getTenLuaTanCongSS020CDCDCS0SS09SS020?.getMaDinhDanhVuKhiTanCong,
-                ),
-              );
+          await getTrangThaiHangarTongQuat?.getChienDauCoDangCapSao0SS09SS02?.getThuocTinh?.getThuocTinhHinhAnhSprite?.getDonViSpriteNgoaiHinhVuKhiTanCongThongMinhSS02?.caiDatSpriteAnimation(
+            value: getThuocTinhTaiNguyenChienDauCo?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhTheoMaDinhDanh(maDinhDanh: getTenLuaTanCongSS020CDCDCS0SS09SS020?.getMaDinhDanhVuKhiTanCong),
+          );
         },
       );
 
@@ -4570,12 +4594,9 @@ class QUANLYTRANGTHAIHANGARCHIENDAUCO with CAUTRUCTHUCTHICOBAN {
         thuocTinhHinhAnh: getTenLuaTanCongSS030CDCDCS0SS09SS020?.getSieuCapThuocTinh?.getTrangThaiHinhAnh?.getMoHinh,
 
         onThucThiHoanTat: () async {
-          await getTrangThaiHangarTongQuat?.getChienDauCoDangCapSao0SS09SS02?.getThuocTinh?.getThuocTinhHinhAnhSprite?.getDonViSpriteNgoaiHinhVuKhiTanCongThongMinhSS03
-              ?.caiDatSpriteAnimation(
-                value: getThuocTinhTaiNguyenChienDauCo?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhTheoMaDinhDanh(
-                  maDinhDanh: getTenLuaTanCongSS030CDCDCS0SS09SS020?.getMaDinhDanhVuKhiTanCong,
-                ),
-              );
+          await getTrangThaiHangarTongQuat?.getChienDauCoDangCapSao0SS09SS02?.getThuocTinh?.getThuocTinhHinhAnhSprite?.getDonViSpriteNgoaiHinhVuKhiTanCongThongMinhSS03?.caiDatSpriteAnimation(
+            value: getThuocTinhTaiNguyenChienDauCo?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhTheoMaDinhDanh(maDinhDanh: getTenLuaTanCongSS030CDCDCS0SS09SS020?.getMaDinhDanhVuKhiTanCong),
+          );
         },
       );
     }
@@ -4589,7 +4610,6 @@ class QUANLYTRANGTHAIHANGARCHIENDAUCO with CAUTRUCTHUCTHICOBAN {
   }
 
   Future<void> onGiaiPhongTaiNguyenChienDauCo0SS09SS020() async {
-
     /// -----
     /// TODO:
     /// -----
@@ -4660,25 +4680,25 @@ class QUANLYTRANGTHAIHANGARCHIENDAUCO with CAUTRUCTHUCTHICOBAN {
     /// -----
     /// TODO:
     /// -----
-    await Future.delayed(Duration.zero);
-    await Future.wait([
-      onGiaiPhongTaiNguyenChienDauCo00E03SS010().catchError((e) => null),
-      onGiaiPhongTaiNguyenChienDauCo00E03SS020().catchError((e) => null),
-      onGiaiPhongTaiNguyenChienDauCo00E03SS030().catchError((e) => null),
-      onGiaiPhongTaiNguyenChienDauCo00D04SS010().catchError((e) => null),
-      onGiaiPhongTaiNguyenChienDauCo00C05SS010().catchError((e) => null),
-      onGiaiPhongTaiNguyenChienDauCo00B06SS010().catchError((e) => null),
-      onGiaiPhongTaiNguyenChienDauCo00A07SS010().catchError((e) => null),
-      onGiaiPhongTaiNguyenChienDauCo00S08SS010().catchError((e) => null),
-      onGiaiPhongTaiNguyenChienDauCo0SS09SS010().catchError((e) => null),
-      onGiaiPhongTaiNguyenChienDauCo0SS09SS020().catchError((e) => null),
-      onGiaiPhongTaiNguyenChienDauCo0SS09SS030().catchError((e) => null),
-      onGiaiPhongTaiNguyenChienDauCoSSS10SS010().catchError((e) => null),
-      onGiaiPhongTaiNguyenChienDauCoSSS10SS020().catchError((e) => null),
-      onGiaiPhongTaiNguyenChienDauCoSSS10SS030().catchError((e) => null),
-      onGiaiPhongTaiNguyenChienDauCoSSS10SS040().catchError((e) => null),
-      onGiaiPhongTaiNguyenChienDauCoSSS10SS050().catchError((e) => null),
-    ]);
+    // await Future.delayed(Duration.zero);
+    // await Future.wait([
+    //   onGiaiPhongTaiNguyenChienDauCo00E03SS010().catchError((e) => null),
+    //   onGiaiPhongTaiNguyenChienDauCo00E03SS020().catchError((e) => null),
+    //   onGiaiPhongTaiNguyenChienDauCo00E03SS030().catchError((e) => null),
+    //   onGiaiPhongTaiNguyenChienDauCo00D04SS010().catchError((e) => null),
+    //   onGiaiPhongTaiNguyenChienDauCo00C05SS010().catchError((e) => null),
+    //   onGiaiPhongTaiNguyenChienDauCo00B06SS010().catchError((e) => null),
+    //   onGiaiPhongTaiNguyenChienDauCo00A07SS010().catchError((e) => null),
+    //   onGiaiPhongTaiNguyenChienDauCo00S08SS010().catchError((e) => null),
+    //   onGiaiPhongTaiNguyenChienDauCo0SS09SS010().catchError((e) => null),
+    //   onGiaiPhongTaiNguyenChienDauCo0SS09SS020().catchError((e) => null),
+    //   // onGiaiPhongTaiNguyenChienDauCo0SS09SS030().catchError((e) => null),
+    //   onGiaiPhongTaiNguyenChienDauCoSSS10SS010().catchError((e) => null),
+    //   onGiaiPhongTaiNguyenChienDauCoSSS10SS020().catchError((e) => null),
+    //   onGiaiPhongTaiNguyenChienDauCoSSS10SS030().catchError((e) => null),
+    //   onGiaiPhongTaiNguyenChienDauCoSSS10SS040().catchError((e) => null),
+    //   onGiaiPhongTaiNguyenChienDauCoSSS10SS050().catchError((e) => null),
+    // ]);
 
     /// -----
     /// TODO:
@@ -4704,12 +4724,9 @@ class QUANLYTRANGTHAIHANGARCHIENDAUCO with CAUTRUCTHUCTHICOBAN {
         thuocTinhHinhAnh: getVuKhiSungChinhSS010CDCDCS0SS09SS030?.getSieuCapThuocTinh?.getTrangThaiHinhAnh?.getMoHinh,
 
         onThucThiHoanTat: () async {
-          await getTrangThaiHangarTongQuat?.getChienDauCoDangCapSao0SS09SS03?.getThuocTinh?.getThuocTinhHinhAnhSprite?.getDonViSpriteNgoaiHinhVuKhiTanCongCoBanSS01SS01
-              ?.caiDatSpriteAnimation(
-                value: getThuocTinhTaiNguyenChienDauCo?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhTheoMaDinhDanh(
-                  maDinhDanh: getVuKhiSungChinhSS010CDCDCS0SS09SS030?.getMaDinhDanhVuKhiTanCong,
-                ),
-              );
+          await getTrangThaiHangarTongQuat?.getChienDauCoDangCapSao0SS09SS03?.getThuocTinh?.getThuocTinhHinhAnhSprite?.getDonViSpriteNgoaiHinhVuKhiTanCongCoBanSS01SS01?.caiDatSpriteAnimation(
+            value: getThuocTinhTaiNguyenChienDauCo?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhTheoMaDinhDanh(maDinhDanh: getVuKhiSungChinhSS010CDCDCS0SS09SS030?.getMaDinhDanhVuKhiTanCong),
+          );
         },
       );
 
@@ -4719,12 +4736,9 @@ class QUANLYTRANGTHAIHANGARCHIENDAUCO with CAUTRUCTHUCTHICOBAN {
         thuocTinhHinhAnh: getVuKhiSungChinhSS020CDCDCS0SS09SS030?.getSieuCapThuocTinh?.getTrangThaiHinhAnh?.getMoHinh,
 
         onThucThiHoanTat: () async {
-          await getTrangThaiHangarTongQuat?.getChienDauCoDangCapSao0SS09SS03?.getThuocTinh?.getThuocTinhHinhAnhSprite?.getDonViSpriteNgoaiHinhVuKhiTanCongCoBanSS01SS02
-              ?.caiDatSpriteAnimation(
-                value: getThuocTinhTaiNguyenChienDauCo?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhTheoMaDinhDanh(
-                  maDinhDanh: getVuKhiSungChinhSS020CDCDCS0SS09SS030?.getMaDinhDanhVuKhiTanCong,
-                ),
-              );
+          await getTrangThaiHangarTongQuat?.getChienDauCoDangCapSao0SS09SS03?.getThuocTinh?.getThuocTinhHinhAnhSprite?.getDonViSpriteNgoaiHinhVuKhiTanCongCoBanSS01SS02?.caiDatSpriteAnimation(
+            value: getThuocTinhTaiNguyenChienDauCo?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhTheoMaDinhDanh(maDinhDanh: getVuKhiSungChinhSS020CDCDCS0SS09SS030?.getMaDinhDanhVuKhiTanCong),
+          );
         },
       );
 
@@ -4734,12 +4748,9 @@ class QUANLYTRANGTHAIHANGARCHIENDAUCO with CAUTRUCTHUCTHICOBAN {
         thuocTinhHinhAnh: getVuKhiSungChinhSS030CDCDCS0SS09SS030?.getSieuCapThuocTinh?.getTrangThaiHinhAnh?.getMoHinh,
 
         onThucThiHoanTat: () async {
-          await getTrangThaiHangarTongQuat?.getChienDauCoDangCapSao0SS09SS03?.getThuocTinh?.getThuocTinhHinhAnhSprite?.getDonViSpriteNgoaiHinhVuKhiTanCongCoBanSS01SS03
-              ?.caiDatSpriteAnimation(
-                value: getThuocTinhTaiNguyenChienDauCo?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhTheoMaDinhDanh(
-                  maDinhDanh: getVuKhiSungChinhSS030CDCDCS0SS09SS030?.getMaDinhDanhVuKhiTanCong,
-                ),
-              );
+          await getTrangThaiHangarTongQuat?.getChienDauCoDangCapSao0SS09SS03?.getThuocTinh?.getThuocTinhHinhAnhSprite?.getDonViSpriteNgoaiHinhVuKhiTanCongCoBanSS01SS03?.caiDatSpriteAnimation(
+            value: getThuocTinhTaiNguyenChienDauCo?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhTheoMaDinhDanh(maDinhDanh: getVuKhiSungChinhSS030CDCDCS0SS09SS030?.getMaDinhDanhVuKhiTanCong),
+          );
         },
       );
 
@@ -4749,12 +4760,9 @@ class QUANLYTRANGTHAIHANGARCHIENDAUCO with CAUTRUCTHUCTHICOBAN {
         thuocTinhHinhAnh: getTenLuaTanCongSS010CDCDCS0SS09SS030?.getSieuCapThuocTinh?.getTrangThaiHinhAnh?.getMoHinh,
 
         onThucThiHoanTat: () async {
-          await getTrangThaiHangarTongQuat?.getChienDauCoDangCapSao0SS09SS03?.getThuocTinh?.getThuocTinhHinhAnhSprite?.getDonViSpriteNgoaiHinhVuKhiTanCongThongMinhSS01
-              ?.caiDatSpriteAnimation(
-                value: getThuocTinhTaiNguyenChienDauCo?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhTheoMaDinhDanh(
-                  maDinhDanh: getTenLuaTanCongSS010CDCDCS0SS09SS030?.getMaDinhDanhVuKhiTanCong,
-                ),
-              );
+          await getTrangThaiHangarTongQuat?.getChienDauCoDangCapSao0SS09SS03?.getThuocTinh?.getThuocTinhHinhAnhSprite?.getDonViSpriteNgoaiHinhVuKhiTanCongThongMinhSS01?.caiDatSpriteAnimation(
+            value: getThuocTinhTaiNguyenChienDauCo?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhTheoMaDinhDanh(maDinhDanh: getTenLuaTanCongSS010CDCDCS0SS09SS030?.getMaDinhDanhVuKhiTanCong),
+          );
         },
       );
 
@@ -4764,12 +4772,9 @@ class QUANLYTRANGTHAIHANGARCHIENDAUCO with CAUTRUCTHUCTHICOBAN {
         thuocTinhHinhAnh: getTenLuaTanCongSS020CDCDCS0SS09SS030?.getSieuCapThuocTinh?.getTrangThaiHinhAnh?.getMoHinh,
 
         onThucThiHoanTat: () async {
-          await getTrangThaiHangarTongQuat?.getChienDauCoDangCapSao0SS09SS03?.getThuocTinh?.getThuocTinhHinhAnhSprite?.getDonViSpriteNgoaiHinhVuKhiTanCongThongMinhSS02
-              ?.caiDatSpriteAnimation(
-                value: getThuocTinhTaiNguyenChienDauCo?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhTheoMaDinhDanh(
-                  maDinhDanh: getTenLuaTanCongSS020CDCDCS0SS09SS030?.getMaDinhDanhVuKhiTanCong,
-                ),
-              );
+          await getTrangThaiHangarTongQuat?.getChienDauCoDangCapSao0SS09SS03?.getThuocTinh?.getThuocTinhHinhAnhSprite?.getDonViSpriteNgoaiHinhVuKhiTanCongThongMinhSS02?.caiDatSpriteAnimation(
+            value: getThuocTinhTaiNguyenChienDauCo?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhTheoMaDinhDanh(maDinhDanh: getTenLuaTanCongSS020CDCDCS0SS09SS030?.getMaDinhDanhVuKhiTanCong),
+          );
         },
       );
 
@@ -4779,12 +4784,9 @@ class QUANLYTRANGTHAIHANGARCHIENDAUCO with CAUTRUCTHUCTHICOBAN {
         thuocTinhHinhAnh: getTenLuaTanCongSS030CDCDCS0SS09SS030?.getSieuCapThuocTinh?.getTrangThaiHinhAnh?.getMoHinh,
 
         onThucThiHoanTat: () async {
-          await getTrangThaiHangarTongQuat?.getChienDauCoDangCapSao0SS09SS03?.getThuocTinh?.getThuocTinhHinhAnhSprite?.getDonViSpriteNgoaiHinhVuKhiTanCongThongMinhSS03
-              ?.caiDatSpriteAnimation(
-                value: getThuocTinhTaiNguyenChienDauCo?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhTheoMaDinhDanh(
-                  maDinhDanh: getTenLuaTanCongSS030CDCDCS0SS09SS030?.getMaDinhDanhVuKhiTanCong,
-                ),
-              );
+          await getTrangThaiHangarTongQuat?.getChienDauCoDangCapSao0SS09SS03?.getThuocTinh?.getThuocTinhHinhAnhSprite?.getDonViSpriteNgoaiHinhVuKhiTanCongThongMinhSS03?.caiDatSpriteAnimation(
+            value: getThuocTinhTaiNguyenChienDauCo?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhTheoMaDinhDanh(maDinhDanh: getTenLuaTanCongSS030CDCDCS0SS09SS030?.getMaDinhDanhVuKhiTanCong),
+          );
         },
       );
     }
@@ -4798,7 +4800,6 @@ class QUANLYTRANGTHAIHANGARCHIENDAUCO with CAUTRUCTHUCTHICOBAN {
   }
 
   Future<void> onGiaiPhongTaiNguyenChienDauCo0SS09SS030() async {
-
     /// -----
     /// TODO:
     /// -----
@@ -4869,25 +4870,25 @@ class QUANLYTRANGTHAIHANGARCHIENDAUCO with CAUTRUCTHUCTHICOBAN {
     /// -----
     /// TODO:
     /// -----
-    await Future.delayed(Duration.zero);
-    await Future.wait([
-      onGiaiPhongTaiNguyenChienDauCo00E03SS010().catchError((e) => null),
-      onGiaiPhongTaiNguyenChienDauCo00E03SS020().catchError((e) => null),
-      onGiaiPhongTaiNguyenChienDauCo00E03SS030().catchError((e) => null),
-      onGiaiPhongTaiNguyenChienDauCo00D04SS010().catchError((e) => null),
-      onGiaiPhongTaiNguyenChienDauCo00C05SS010().catchError((e) => null),
-      onGiaiPhongTaiNguyenChienDauCo00B06SS010().catchError((e) => null),
-      onGiaiPhongTaiNguyenChienDauCo00A07SS010().catchError((e) => null),
-      onGiaiPhongTaiNguyenChienDauCo00S08SS010().catchError((e) => null),
-      onGiaiPhongTaiNguyenChienDauCo0SS09SS010().catchError((e) => null),
-      onGiaiPhongTaiNguyenChienDauCo0SS09SS020().catchError((e) => null),
-      onGiaiPhongTaiNguyenChienDauCo0SS09SS030().catchError((e) => null),
-      onGiaiPhongTaiNguyenChienDauCoSSS10SS010().catchError((e) => null),
-      onGiaiPhongTaiNguyenChienDauCoSSS10SS020().catchError((e) => null),
-      onGiaiPhongTaiNguyenChienDauCoSSS10SS030().catchError((e) => null),
-      onGiaiPhongTaiNguyenChienDauCoSSS10SS040().catchError((e) => null),
-      onGiaiPhongTaiNguyenChienDauCoSSS10SS050().catchError((e) => null),
-    ]);
+    // await Future.delayed(Duration.zero);
+    // await Future.wait([
+    //   onGiaiPhongTaiNguyenChienDauCo00E03SS010().catchError((e) => null),
+    //   onGiaiPhongTaiNguyenChienDauCo00E03SS020().catchError((e) => null),
+    //   onGiaiPhongTaiNguyenChienDauCo00E03SS030().catchError((e) => null),
+    //   onGiaiPhongTaiNguyenChienDauCo00D04SS010().catchError((e) => null),
+    //   onGiaiPhongTaiNguyenChienDauCo00C05SS010().catchError((e) => null),
+    //   onGiaiPhongTaiNguyenChienDauCo00B06SS010().catchError((e) => null),
+    //   onGiaiPhongTaiNguyenChienDauCo00A07SS010().catchError((e) => null),
+    //   onGiaiPhongTaiNguyenChienDauCo00S08SS010().catchError((e) => null),
+    //   onGiaiPhongTaiNguyenChienDauCo0SS09SS010().catchError((e) => null),
+    //   onGiaiPhongTaiNguyenChienDauCo0SS09SS020().catchError((e) => null),
+    //   onGiaiPhongTaiNguyenChienDauCo0SS09SS030().catchError((e) => null),
+    //   // onGiaiPhongTaiNguyenChienDauCoSSS10SS010().catchError((e) => null),
+    //   onGiaiPhongTaiNguyenChienDauCoSSS10SS020().catchError((e) => null),
+    //   onGiaiPhongTaiNguyenChienDauCoSSS10SS030().catchError((e) => null),
+    //   onGiaiPhongTaiNguyenChienDauCoSSS10SS040().catchError((e) => null),
+    //   onGiaiPhongTaiNguyenChienDauCoSSS10SS050().catchError((e) => null),
+    // ]);
 
     /// -----
     /// TODO:
@@ -4913,12 +4914,9 @@ class QUANLYTRANGTHAIHANGARCHIENDAUCO with CAUTRUCTHUCTHICOBAN {
         thuocTinhHinhAnh: getVuKhiSungChinhSS010CDCDCSSSS10SS010?.getSieuCapThuocTinh?.getTrangThaiHinhAnh?.getMoHinh,
 
         onThucThiHoanTat: () async {
-          await getTrangThaiHangarTongQuat?.getChienDauCoDangCapSaoSSS10SS01?.getThuocTinh?.getThuocTinhHinhAnhSprite?.getDonViSpriteNgoaiHinhVuKhiTanCongCoBanSS01SS01
-              ?.caiDatSpriteAnimation(
-                value: getThuocTinhTaiNguyenChienDauCo?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhTheoMaDinhDanh(
-                  maDinhDanh: getVuKhiSungChinhSS010CDCDCSSSS10SS010?.getMaDinhDanhVuKhiTanCong,
-                ),
-              );
+          await getTrangThaiHangarTongQuat?.getChienDauCoDangCapSaoSSS10SS01?.getThuocTinh?.getThuocTinhHinhAnhSprite?.getDonViSpriteNgoaiHinhVuKhiTanCongCoBanSS01SS01?.caiDatSpriteAnimation(
+            value: getThuocTinhTaiNguyenChienDauCo?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhTheoMaDinhDanh(maDinhDanh: getVuKhiSungChinhSS010CDCDCSSSS10SS010?.getMaDinhDanhVuKhiTanCong),
+          );
         },
       );
 
@@ -4928,12 +4926,9 @@ class QUANLYTRANGTHAIHANGARCHIENDAUCO with CAUTRUCTHUCTHICOBAN {
         thuocTinhHinhAnh: getVuKhiSungChinhSS020CDCDCSSSS10SS010?.getSieuCapThuocTinh?.getTrangThaiHinhAnh?.getMoHinh,
 
         onThucThiHoanTat: () async {
-          await getTrangThaiHangarTongQuat?.getChienDauCoDangCapSaoSSS10SS01?.getThuocTinh?.getThuocTinhHinhAnhSprite?.getDonViSpriteNgoaiHinhVuKhiTanCongCoBanSS01SS02
-              ?.caiDatSpriteAnimation(
-                value: getThuocTinhTaiNguyenChienDauCo?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhTheoMaDinhDanh(
-                  maDinhDanh: getVuKhiSungChinhSS020CDCDCSSSS10SS010?.getMaDinhDanhVuKhiTanCong,
-                ),
-              );
+          await getTrangThaiHangarTongQuat?.getChienDauCoDangCapSaoSSS10SS01?.getThuocTinh?.getThuocTinhHinhAnhSprite?.getDonViSpriteNgoaiHinhVuKhiTanCongCoBanSS01SS02?.caiDatSpriteAnimation(
+            value: getThuocTinhTaiNguyenChienDauCo?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhTheoMaDinhDanh(maDinhDanh: getVuKhiSungChinhSS020CDCDCSSSS10SS010?.getMaDinhDanhVuKhiTanCong),
+          );
         },
       );
 
@@ -4943,12 +4938,9 @@ class QUANLYTRANGTHAIHANGARCHIENDAUCO with CAUTRUCTHUCTHICOBAN {
         thuocTinhHinhAnh: getVuKhiSungChinhSS030CDCDCSSSS10SS010?.getSieuCapThuocTinh?.getTrangThaiHinhAnh?.getMoHinh,
 
         onThucThiHoanTat: () async {
-          await getTrangThaiHangarTongQuat?.getChienDauCoDangCapSaoSSS10SS01?.getThuocTinh?.getThuocTinhHinhAnhSprite?.getDonViSpriteNgoaiHinhVuKhiTanCongCoBanSS01SS03
-              ?.caiDatSpriteAnimation(
-                value: getThuocTinhTaiNguyenChienDauCo?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhTheoMaDinhDanh(
-                  maDinhDanh: getVuKhiSungChinhSS030CDCDCSSSS10SS010?.getMaDinhDanhVuKhiTanCong,
-                ),
-              );
+          await getTrangThaiHangarTongQuat?.getChienDauCoDangCapSaoSSS10SS01?.getThuocTinh?.getThuocTinhHinhAnhSprite?.getDonViSpriteNgoaiHinhVuKhiTanCongCoBanSS01SS03?.caiDatSpriteAnimation(
+            value: getThuocTinhTaiNguyenChienDauCo?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhTheoMaDinhDanh(maDinhDanh: getVuKhiSungChinhSS030CDCDCSSSS10SS010?.getMaDinhDanhVuKhiTanCong),
+          );
         },
       );
 
@@ -4958,12 +4950,9 @@ class QUANLYTRANGTHAIHANGARCHIENDAUCO with CAUTRUCTHUCTHICOBAN {
         thuocTinhHinhAnh: getTenLuaTanCongSS010CDCDCSSSS10SS010?.getSieuCapThuocTinh?.getTrangThaiHinhAnh?.getMoHinh,
 
         onThucThiHoanTat: () async {
-          await getTrangThaiHangarTongQuat?.getChienDauCoDangCapSaoSSS10SS01?.getThuocTinh?.getThuocTinhHinhAnhSprite?.getDonViSpriteNgoaiHinhVuKhiTanCongThongMinhSS01
-              ?.caiDatSpriteAnimation(
-                value: getThuocTinhTaiNguyenChienDauCo?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhTheoMaDinhDanh(
-                  maDinhDanh: getTenLuaTanCongSS010CDCDCSSSS10SS010?.getMaDinhDanhVuKhiTanCong,
-                ),
-              );
+          await getTrangThaiHangarTongQuat?.getChienDauCoDangCapSaoSSS10SS01?.getThuocTinh?.getThuocTinhHinhAnhSprite?.getDonViSpriteNgoaiHinhVuKhiTanCongThongMinhSS01?.caiDatSpriteAnimation(
+            value: getThuocTinhTaiNguyenChienDauCo?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhTheoMaDinhDanh(maDinhDanh: getTenLuaTanCongSS010CDCDCSSSS10SS010?.getMaDinhDanhVuKhiTanCong),
+          );
         },
       );
 
@@ -4973,12 +4962,9 @@ class QUANLYTRANGTHAIHANGARCHIENDAUCO with CAUTRUCTHUCTHICOBAN {
         thuocTinhHinhAnh: getTenLuaTanCongSS020CDCDCSSSS10SS010?.getSieuCapThuocTinh?.getTrangThaiHinhAnh?.getMoHinh,
 
         onThucThiHoanTat: () async {
-          await getTrangThaiHangarTongQuat?.getChienDauCoDangCapSaoSSS10SS01?.getThuocTinh?.getThuocTinhHinhAnhSprite?.getDonViSpriteNgoaiHinhVuKhiTanCongThongMinhSS02
-              ?.caiDatSpriteAnimation(
-                value: getThuocTinhTaiNguyenChienDauCo?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhTheoMaDinhDanh(
-                  maDinhDanh: getTenLuaTanCongSS020CDCDCSSSS10SS010?.getMaDinhDanhVuKhiTanCong,
-                ),
-              );
+          await getTrangThaiHangarTongQuat?.getChienDauCoDangCapSaoSSS10SS01?.getThuocTinh?.getThuocTinhHinhAnhSprite?.getDonViSpriteNgoaiHinhVuKhiTanCongThongMinhSS02?.caiDatSpriteAnimation(
+            value: getThuocTinhTaiNguyenChienDauCo?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhTheoMaDinhDanh(maDinhDanh: getTenLuaTanCongSS020CDCDCSSSS10SS010?.getMaDinhDanhVuKhiTanCong),
+          );
         },
       );
 
@@ -4988,12 +4974,9 @@ class QUANLYTRANGTHAIHANGARCHIENDAUCO with CAUTRUCTHUCTHICOBAN {
         thuocTinhHinhAnh: getTenLuaTanCongSS030CDCDCSSSS10SS010?.getSieuCapThuocTinh?.getTrangThaiHinhAnh?.getMoHinh,
 
         onThucThiHoanTat: () async {
-          await getTrangThaiHangarTongQuat?.getChienDauCoDangCapSaoSSS10SS01?.getThuocTinh?.getThuocTinhHinhAnhSprite?.getDonViSpriteNgoaiHinhVuKhiTanCongThongMinhSS03
-              ?.caiDatSpriteAnimation(
-                value: getThuocTinhTaiNguyenChienDauCo?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhTheoMaDinhDanh(
-                  maDinhDanh: getTenLuaTanCongSS030CDCDCSSSS10SS010?.getMaDinhDanhVuKhiTanCong,
-                ),
-              );
+          await getTrangThaiHangarTongQuat?.getChienDauCoDangCapSaoSSS10SS01?.getThuocTinh?.getThuocTinhHinhAnhSprite?.getDonViSpriteNgoaiHinhVuKhiTanCongThongMinhSS03?.caiDatSpriteAnimation(
+            value: getThuocTinhTaiNguyenChienDauCo?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhTheoMaDinhDanh(maDinhDanh: getTenLuaTanCongSS030CDCDCSSSS10SS010?.getMaDinhDanhVuKhiTanCong),
+          );
         },
       );
     }
@@ -5007,7 +4990,6 @@ class QUANLYTRANGTHAIHANGARCHIENDAUCO with CAUTRUCTHUCTHICOBAN {
   }
 
   Future<void> onGiaiPhongTaiNguyenChienDauCoSSS10SS010() async {
-
     /// -----
     /// TODO:
     /// -----
@@ -5078,25 +5060,25 @@ class QUANLYTRANGTHAIHANGARCHIENDAUCO with CAUTRUCTHUCTHICOBAN {
     /// -----
     /// TODO:
     /// -----
-    await Future.delayed(Duration.zero);
-    await Future.wait([
-      onGiaiPhongTaiNguyenChienDauCo00E03SS010().catchError((e) => null),
-      onGiaiPhongTaiNguyenChienDauCo00E03SS020().catchError((e) => null),
-      onGiaiPhongTaiNguyenChienDauCo00E03SS030().catchError((e) => null),
-      onGiaiPhongTaiNguyenChienDauCo00D04SS010().catchError((e) => null),
-      onGiaiPhongTaiNguyenChienDauCo00C05SS010().catchError((e) => null),
-      onGiaiPhongTaiNguyenChienDauCo00B06SS010().catchError((e) => null),
-      onGiaiPhongTaiNguyenChienDauCo00A07SS010().catchError((e) => null),
-      onGiaiPhongTaiNguyenChienDauCo00S08SS010().catchError((e) => null),
-      onGiaiPhongTaiNguyenChienDauCo0SS09SS010().catchError((e) => null),
-      onGiaiPhongTaiNguyenChienDauCo0SS09SS020().catchError((e) => null),
-      onGiaiPhongTaiNguyenChienDauCo0SS09SS030().catchError((e) => null),
-      onGiaiPhongTaiNguyenChienDauCoSSS10SS010().catchError((e) => null),
-      onGiaiPhongTaiNguyenChienDauCoSSS10SS020().catchError((e) => null),
-      onGiaiPhongTaiNguyenChienDauCoSSS10SS030().catchError((e) => null),
-      onGiaiPhongTaiNguyenChienDauCoSSS10SS040().catchError((e) => null),
-      onGiaiPhongTaiNguyenChienDauCoSSS10SS050().catchError((e) => null),
-    ]);
+    // await Future.delayed(Duration.zero);
+    // await Future.wait([
+    //   onGiaiPhongTaiNguyenChienDauCo00E03SS010().catchError((e) => null),
+    //   onGiaiPhongTaiNguyenChienDauCo00E03SS020().catchError((e) => null),
+    //   onGiaiPhongTaiNguyenChienDauCo00E03SS030().catchError((e) => null),
+    //   onGiaiPhongTaiNguyenChienDauCo00D04SS010().catchError((e) => null),
+    //   onGiaiPhongTaiNguyenChienDauCo00C05SS010().catchError((e) => null),
+    //   onGiaiPhongTaiNguyenChienDauCo00B06SS010().catchError((e) => null),
+    //   onGiaiPhongTaiNguyenChienDauCo00A07SS010().catchError((e) => null),
+    //   onGiaiPhongTaiNguyenChienDauCo00S08SS010().catchError((e) => null),
+    //   onGiaiPhongTaiNguyenChienDauCo0SS09SS010().catchError((e) => null),
+    //   onGiaiPhongTaiNguyenChienDauCo0SS09SS020().catchError((e) => null),
+    //   onGiaiPhongTaiNguyenChienDauCo0SS09SS030().catchError((e) => null),
+    //   onGiaiPhongTaiNguyenChienDauCoSSS10SS010().catchError((e) => null),
+    //   // onGiaiPhongTaiNguyenChienDauCoSSS10SS020().catchError((e) => null),
+    //   onGiaiPhongTaiNguyenChienDauCoSSS10SS030().catchError((e) => null),
+    //   onGiaiPhongTaiNguyenChienDauCoSSS10SS040().catchError((e) => null),
+    //   onGiaiPhongTaiNguyenChienDauCoSSS10SS050().catchError((e) => null),
+    // ]);
 
     /// -----
     /// TODO:
@@ -5122,12 +5104,9 @@ class QUANLYTRANGTHAIHANGARCHIENDAUCO with CAUTRUCTHUCTHICOBAN {
         thuocTinhHinhAnh: getVuKhiSungChinhSS010CDCDCSSSS10SS020?.getSieuCapThuocTinh?.getTrangThaiHinhAnh?.getMoHinh,
 
         onThucThiHoanTat: () async {
-          await getTrangThaiHangarTongQuat?.getChienDauCoDangCapSaoSSS10SS02?.getThuocTinh?.getThuocTinhHinhAnhSprite?.getDonViSpriteNgoaiHinhVuKhiTanCongCoBanSS01SS01
-              ?.caiDatSpriteAnimation(
-                value: getThuocTinhTaiNguyenChienDauCo?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhTheoMaDinhDanh(
-                  maDinhDanh: getVuKhiSungChinhSS010CDCDCSSSS10SS020?.getMaDinhDanhVuKhiTanCong,
-                ),
-              );
+          await getTrangThaiHangarTongQuat?.getChienDauCoDangCapSaoSSS10SS02?.getThuocTinh?.getThuocTinhHinhAnhSprite?.getDonViSpriteNgoaiHinhVuKhiTanCongCoBanSS01SS01?.caiDatSpriteAnimation(
+            value: getThuocTinhTaiNguyenChienDauCo?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhTheoMaDinhDanh(maDinhDanh: getVuKhiSungChinhSS010CDCDCSSSS10SS020?.getMaDinhDanhVuKhiTanCong),
+          );
         },
       );
 
@@ -5137,12 +5116,9 @@ class QUANLYTRANGTHAIHANGARCHIENDAUCO with CAUTRUCTHUCTHICOBAN {
         thuocTinhHinhAnh: getVuKhiSungChinhSS020CDCDCSSSS10SS020?.getSieuCapThuocTinh?.getTrangThaiHinhAnh?.getMoHinh,
 
         onThucThiHoanTat: () async {
-          await getTrangThaiHangarTongQuat?.getChienDauCoDangCapSaoSSS10SS02?.getThuocTinh?.getThuocTinhHinhAnhSprite?.getDonViSpriteNgoaiHinhVuKhiTanCongCoBanSS01SS02
-              ?.caiDatSpriteAnimation(
-                value: getThuocTinhTaiNguyenChienDauCo?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhTheoMaDinhDanh(
-                  maDinhDanh: getVuKhiSungChinhSS020CDCDCSSSS10SS020?.getMaDinhDanhVuKhiTanCong,
-                ),
-              );
+          await getTrangThaiHangarTongQuat?.getChienDauCoDangCapSaoSSS10SS02?.getThuocTinh?.getThuocTinhHinhAnhSprite?.getDonViSpriteNgoaiHinhVuKhiTanCongCoBanSS01SS02?.caiDatSpriteAnimation(
+            value: getThuocTinhTaiNguyenChienDauCo?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhTheoMaDinhDanh(maDinhDanh: getVuKhiSungChinhSS020CDCDCSSSS10SS020?.getMaDinhDanhVuKhiTanCong),
+          );
         },
       );
 
@@ -5152,12 +5128,9 @@ class QUANLYTRANGTHAIHANGARCHIENDAUCO with CAUTRUCTHUCTHICOBAN {
         thuocTinhHinhAnh: getVuKhiSungChinhSS030CDCDCSSSS10SS020?.getSieuCapThuocTinh?.getTrangThaiHinhAnh?.getMoHinh,
 
         onThucThiHoanTat: () async {
-          await getTrangThaiHangarTongQuat?.getChienDauCoDangCapSaoSSS10SS02?.getThuocTinh?.getThuocTinhHinhAnhSprite?.getDonViSpriteNgoaiHinhVuKhiTanCongCoBanSS01SS03
-              ?.caiDatSpriteAnimation(
-                value: getThuocTinhTaiNguyenChienDauCo?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhTheoMaDinhDanh(
-                  maDinhDanh: getVuKhiSungChinhSS030CDCDCSSSS10SS020?.getMaDinhDanhVuKhiTanCong,
-                ),
-              );
+          await getTrangThaiHangarTongQuat?.getChienDauCoDangCapSaoSSS10SS02?.getThuocTinh?.getThuocTinhHinhAnhSprite?.getDonViSpriteNgoaiHinhVuKhiTanCongCoBanSS01SS03?.caiDatSpriteAnimation(
+            value: getThuocTinhTaiNguyenChienDauCo?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhTheoMaDinhDanh(maDinhDanh: getVuKhiSungChinhSS030CDCDCSSSS10SS020?.getMaDinhDanhVuKhiTanCong),
+          );
         },
       );
 
@@ -5167,12 +5140,9 @@ class QUANLYTRANGTHAIHANGARCHIENDAUCO with CAUTRUCTHUCTHICOBAN {
         thuocTinhHinhAnh: getTenLuaTanCongSS010CDCDCSSSS10SS020?.getSieuCapThuocTinh?.getTrangThaiHinhAnh?.getMoHinh,
 
         onThucThiHoanTat: () async {
-          await getTrangThaiHangarTongQuat?.getChienDauCoDangCapSaoSSS10SS02?.getThuocTinh?.getThuocTinhHinhAnhSprite?.getDonViSpriteNgoaiHinhVuKhiTanCongThongMinhSS01
-              ?.caiDatSpriteAnimation(
-                value: getThuocTinhTaiNguyenChienDauCo?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhTheoMaDinhDanh(
-                  maDinhDanh: getTenLuaTanCongSS010CDCDCSSSS10SS020?.getMaDinhDanhVuKhiTanCong,
-                ),
-              );
+          await getTrangThaiHangarTongQuat?.getChienDauCoDangCapSaoSSS10SS02?.getThuocTinh?.getThuocTinhHinhAnhSprite?.getDonViSpriteNgoaiHinhVuKhiTanCongThongMinhSS01?.caiDatSpriteAnimation(
+            value: getThuocTinhTaiNguyenChienDauCo?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhTheoMaDinhDanh(maDinhDanh: getTenLuaTanCongSS010CDCDCSSSS10SS020?.getMaDinhDanhVuKhiTanCong),
+          );
         },
       );
 
@@ -5182,12 +5152,9 @@ class QUANLYTRANGTHAIHANGARCHIENDAUCO with CAUTRUCTHUCTHICOBAN {
         thuocTinhHinhAnh: getTenLuaTanCongSS020CDCDCSSSS10SS020?.getSieuCapThuocTinh?.getTrangThaiHinhAnh?.getMoHinh,
 
         onThucThiHoanTat: () async {
-          await getTrangThaiHangarTongQuat?.getChienDauCoDangCapSaoSSS10SS02?.getThuocTinh?.getThuocTinhHinhAnhSprite?.getDonViSpriteNgoaiHinhVuKhiTanCongThongMinhSS02
-              ?.caiDatSpriteAnimation(
-                value: getThuocTinhTaiNguyenChienDauCo?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhTheoMaDinhDanh(
-                  maDinhDanh: getTenLuaTanCongSS020CDCDCSSSS10SS020?.getMaDinhDanhVuKhiTanCong,
-                ),
-              );
+          await getTrangThaiHangarTongQuat?.getChienDauCoDangCapSaoSSS10SS02?.getThuocTinh?.getThuocTinhHinhAnhSprite?.getDonViSpriteNgoaiHinhVuKhiTanCongThongMinhSS02?.caiDatSpriteAnimation(
+            value: getThuocTinhTaiNguyenChienDauCo?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhTheoMaDinhDanh(maDinhDanh: getTenLuaTanCongSS020CDCDCSSSS10SS020?.getMaDinhDanhVuKhiTanCong),
+          );
         },
       );
 
@@ -5197,12 +5164,9 @@ class QUANLYTRANGTHAIHANGARCHIENDAUCO with CAUTRUCTHUCTHICOBAN {
         thuocTinhHinhAnh: getTenLuaTanCongSS030CDCDCSSSS10SS020?.getSieuCapThuocTinh?.getTrangThaiHinhAnh?.getMoHinh,
 
         onThucThiHoanTat: () async {
-          await getTrangThaiHangarTongQuat?.getChienDauCoDangCapSaoSSS10SS02?.getThuocTinh?.getThuocTinhHinhAnhSprite?.getDonViSpriteNgoaiHinhVuKhiTanCongThongMinhSS03
-              ?.caiDatSpriteAnimation(
-                value: getThuocTinhTaiNguyenChienDauCo?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhTheoMaDinhDanh(
-                  maDinhDanh: getTenLuaTanCongSS030CDCDCSSSS10SS020?.getMaDinhDanhVuKhiTanCong,
-                ),
-              );
+          await getTrangThaiHangarTongQuat?.getChienDauCoDangCapSaoSSS10SS02?.getThuocTinh?.getThuocTinhHinhAnhSprite?.getDonViSpriteNgoaiHinhVuKhiTanCongThongMinhSS03?.caiDatSpriteAnimation(
+            value: getThuocTinhTaiNguyenChienDauCo?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhTheoMaDinhDanh(maDinhDanh: getTenLuaTanCongSS030CDCDCSSSS10SS020?.getMaDinhDanhVuKhiTanCong),
+          );
         },
       );
     }
@@ -5216,7 +5180,6 @@ class QUANLYTRANGTHAIHANGARCHIENDAUCO with CAUTRUCTHUCTHICOBAN {
   }
 
   Future<void> onGiaiPhongTaiNguyenChienDauCoSSS10SS020() async {
-
     /// -----
     /// TODO:
     /// -----
@@ -5287,25 +5250,25 @@ class QUANLYTRANGTHAIHANGARCHIENDAUCO with CAUTRUCTHUCTHICOBAN {
     /// -----
     /// TODO:
     /// -----
-    await Future.delayed(Duration.zero);
-    await Future.wait([
-      onGiaiPhongTaiNguyenChienDauCo00E03SS010().catchError((e) => null),
-      onGiaiPhongTaiNguyenChienDauCo00E03SS020().catchError((e) => null),
-      onGiaiPhongTaiNguyenChienDauCo00E03SS030().catchError((e) => null),
-      onGiaiPhongTaiNguyenChienDauCo00D04SS010().catchError((e) => null),
-      onGiaiPhongTaiNguyenChienDauCo00C05SS010().catchError((e) => null),
-      onGiaiPhongTaiNguyenChienDauCo00B06SS010().catchError((e) => null),
-      onGiaiPhongTaiNguyenChienDauCo00A07SS010().catchError((e) => null),
-      onGiaiPhongTaiNguyenChienDauCo00S08SS010().catchError((e) => null),
-      onGiaiPhongTaiNguyenChienDauCo0SS09SS010().catchError((e) => null),
-      onGiaiPhongTaiNguyenChienDauCo0SS09SS020().catchError((e) => null),
-      onGiaiPhongTaiNguyenChienDauCo0SS09SS030().catchError((e) => null),
-      onGiaiPhongTaiNguyenChienDauCoSSS10SS010().catchError((e) => null),
-      onGiaiPhongTaiNguyenChienDauCoSSS10SS020().catchError((e) => null),
-      onGiaiPhongTaiNguyenChienDauCoSSS10SS030().catchError((e) => null),
-      onGiaiPhongTaiNguyenChienDauCoSSS10SS040().catchError((e) => null),
-      onGiaiPhongTaiNguyenChienDauCoSSS10SS050().catchError((e) => null),
-    ]);
+    // await Future.delayed(Duration.zero);
+    // await Future.wait([
+    //   onGiaiPhongTaiNguyenChienDauCo00E03SS010().catchError((e) => null),
+    //   onGiaiPhongTaiNguyenChienDauCo00E03SS020().catchError((e) => null),
+    //   onGiaiPhongTaiNguyenChienDauCo00E03SS030().catchError((e) => null),
+    //   onGiaiPhongTaiNguyenChienDauCo00D04SS010().catchError((e) => null),
+    //   onGiaiPhongTaiNguyenChienDauCo00C05SS010().catchError((e) => null),
+    //   onGiaiPhongTaiNguyenChienDauCo00B06SS010().catchError((e) => null),
+    //   onGiaiPhongTaiNguyenChienDauCo00A07SS010().catchError((e) => null),
+    //   onGiaiPhongTaiNguyenChienDauCo00S08SS010().catchError((e) => null),
+    //   onGiaiPhongTaiNguyenChienDauCo0SS09SS010().catchError((e) => null),
+    //   onGiaiPhongTaiNguyenChienDauCo0SS09SS020().catchError((e) => null),
+    //   onGiaiPhongTaiNguyenChienDauCo0SS09SS030().catchError((e) => null),
+    //   onGiaiPhongTaiNguyenChienDauCoSSS10SS010().catchError((e) => null),
+    //   onGiaiPhongTaiNguyenChienDauCoSSS10SS020().catchError((e) => null),
+    //   // onGiaiPhongTaiNguyenChienDauCoSSS10SS030().catchError((e) => null),
+    //   onGiaiPhongTaiNguyenChienDauCoSSS10SS040().catchError((e) => null),
+    //   onGiaiPhongTaiNguyenChienDauCoSSS10SS050().catchError((e) => null),
+    // ]);
 
     /// -----
     /// TODO:
@@ -5331,12 +5294,9 @@ class QUANLYTRANGTHAIHANGARCHIENDAUCO with CAUTRUCTHUCTHICOBAN {
         thuocTinhHinhAnh: getVuKhiSungChinhSS010CDCDCSSSS10SS030?.getSieuCapThuocTinh?.getTrangThaiHinhAnh?.getMoHinh,
 
         onThucThiHoanTat: () async {
-          await getTrangThaiHangarTongQuat?.getChienDauCoDangCapSaoSSS10SS03?.getThuocTinh?.getThuocTinhHinhAnhSprite?.getDonViSpriteNgoaiHinhVuKhiTanCongCoBanSS01SS01
-              ?.caiDatSpriteAnimation(
-                value: getThuocTinhTaiNguyenChienDauCo?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhTheoMaDinhDanh(
-                  maDinhDanh: getVuKhiSungChinhSS010CDCDCSSSS10SS030?.getMaDinhDanhVuKhiTanCong,
-                ),
-              );
+          await getTrangThaiHangarTongQuat?.getChienDauCoDangCapSaoSSS10SS03?.getThuocTinh?.getThuocTinhHinhAnhSprite?.getDonViSpriteNgoaiHinhVuKhiTanCongCoBanSS01SS01?.caiDatSpriteAnimation(
+            value: getThuocTinhTaiNguyenChienDauCo?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhTheoMaDinhDanh(maDinhDanh: getVuKhiSungChinhSS010CDCDCSSSS10SS030?.getMaDinhDanhVuKhiTanCong),
+          );
         },
       );
 
@@ -5346,12 +5306,9 @@ class QUANLYTRANGTHAIHANGARCHIENDAUCO with CAUTRUCTHUCTHICOBAN {
         thuocTinhHinhAnh: getVuKhiSungChinhSS020CDCDCSSSS10SS030?.getSieuCapThuocTinh?.getTrangThaiHinhAnh?.getMoHinh,
 
         onThucThiHoanTat: () async {
-          await getTrangThaiHangarTongQuat?.getChienDauCoDangCapSaoSSS10SS03?.getThuocTinh?.getThuocTinhHinhAnhSprite?.getDonViSpriteNgoaiHinhVuKhiTanCongCoBanSS01SS02
-              ?.caiDatSpriteAnimation(
-                value: getThuocTinhTaiNguyenChienDauCo?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhTheoMaDinhDanh(
-                  maDinhDanh: getVuKhiSungChinhSS020CDCDCSSSS10SS030?.getMaDinhDanhVuKhiTanCong,
-                ),
-              );
+          await getTrangThaiHangarTongQuat?.getChienDauCoDangCapSaoSSS10SS03?.getThuocTinh?.getThuocTinhHinhAnhSprite?.getDonViSpriteNgoaiHinhVuKhiTanCongCoBanSS01SS02?.caiDatSpriteAnimation(
+            value: getThuocTinhTaiNguyenChienDauCo?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhTheoMaDinhDanh(maDinhDanh: getVuKhiSungChinhSS020CDCDCSSSS10SS030?.getMaDinhDanhVuKhiTanCong),
+          );
         },
       );
 
@@ -5361,12 +5318,9 @@ class QUANLYTRANGTHAIHANGARCHIENDAUCO with CAUTRUCTHUCTHICOBAN {
         thuocTinhHinhAnh: getVuKhiSungChinhSS030CDCDCSSSS10SS030?.getSieuCapThuocTinh?.getTrangThaiHinhAnh?.getMoHinh,
 
         onThucThiHoanTat: () async {
-          await getTrangThaiHangarTongQuat?.getChienDauCoDangCapSaoSSS10SS03?.getThuocTinh?.getThuocTinhHinhAnhSprite?.getDonViSpriteNgoaiHinhVuKhiTanCongCoBanSS01SS03
-              ?.caiDatSpriteAnimation(
-                value: getThuocTinhTaiNguyenChienDauCo?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhTheoMaDinhDanh(
-                  maDinhDanh: getVuKhiSungChinhSS030CDCDCSSSS10SS030?.getMaDinhDanhVuKhiTanCong,
-                ),
-              );
+          await getTrangThaiHangarTongQuat?.getChienDauCoDangCapSaoSSS10SS03?.getThuocTinh?.getThuocTinhHinhAnhSprite?.getDonViSpriteNgoaiHinhVuKhiTanCongCoBanSS01SS03?.caiDatSpriteAnimation(
+            value: getThuocTinhTaiNguyenChienDauCo?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhTheoMaDinhDanh(maDinhDanh: getVuKhiSungChinhSS030CDCDCSSSS10SS030?.getMaDinhDanhVuKhiTanCong),
+          );
         },
       );
 
@@ -5376,12 +5330,9 @@ class QUANLYTRANGTHAIHANGARCHIENDAUCO with CAUTRUCTHUCTHICOBAN {
         thuocTinhHinhAnh: getTenLuaTanCongSS010CDCDCSSSS10SS030?.getSieuCapThuocTinh?.getTrangThaiHinhAnh?.getMoHinh,
 
         onThucThiHoanTat: () async {
-          await getTrangThaiHangarTongQuat?.getChienDauCoDangCapSaoSSS10SS03?.getThuocTinh?.getThuocTinhHinhAnhSprite?.getDonViSpriteNgoaiHinhVuKhiTanCongThongMinhSS01
-              ?.caiDatSpriteAnimation(
-                value: getThuocTinhTaiNguyenChienDauCo?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhTheoMaDinhDanh(
-                  maDinhDanh: getTenLuaTanCongSS010CDCDCSSSS10SS030?.getMaDinhDanhVuKhiTanCong,
-                ),
-              );
+          await getTrangThaiHangarTongQuat?.getChienDauCoDangCapSaoSSS10SS03?.getThuocTinh?.getThuocTinhHinhAnhSprite?.getDonViSpriteNgoaiHinhVuKhiTanCongThongMinhSS01?.caiDatSpriteAnimation(
+            value: getThuocTinhTaiNguyenChienDauCo?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhTheoMaDinhDanh(maDinhDanh: getTenLuaTanCongSS010CDCDCSSSS10SS030?.getMaDinhDanhVuKhiTanCong),
+          );
         },
       );
 
@@ -5391,12 +5342,9 @@ class QUANLYTRANGTHAIHANGARCHIENDAUCO with CAUTRUCTHUCTHICOBAN {
         thuocTinhHinhAnh: getTenLuaTanCongSS020CDCDCSSSS10SS030?.getSieuCapThuocTinh?.getTrangThaiHinhAnh?.getMoHinh,
 
         onThucThiHoanTat: () async {
-          await getTrangThaiHangarTongQuat?.getChienDauCoDangCapSaoSSS10SS03?.getThuocTinh?.getThuocTinhHinhAnhSprite?.getDonViSpriteNgoaiHinhVuKhiTanCongThongMinhSS02
-              ?.caiDatSpriteAnimation(
-                value: getThuocTinhTaiNguyenChienDauCo?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhTheoMaDinhDanh(
-                  maDinhDanh: getTenLuaTanCongSS020CDCDCSSSS10SS030?.getMaDinhDanhVuKhiTanCong,
-                ),
-              );
+          await getTrangThaiHangarTongQuat?.getChienDauCoDangCapSaoSSS10SS03?.getThuocTinh?.getThuocTinhHinhAnhSprite?.getDonViSpriteNgoaiHinhVuKhiTanCongThongMinhSS02?.caiDatSpriteAnimation(
+            value: getThuocTinhTaiNguyenChienDauCo?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhTheoMaDinhDanh(maDinhDanh: getTenLuaTanCongSS020CDCDCSSSS10SS030?.getMaDinhDanhVuKhiTanCong),
+          );
         },
       );
 
@@ -5406,12 +5354,9 @@ class QUANLYTRANGTHAIHANGARCHIENDAUCO with CAUTRUCTHUCTHICOBAN {
         thuocTinhHinhAnh: getTenLuaTanCongSS030CDCDCSSSS10SS030?.getSieuCapThuocTinh?.getTrangThaiHinhAnh?.getMoHinh,
 
         onThucThiHoanTat: () async {
-          await getTrangThaiHangarTongQuat?.getChienDauCoDangCapSaoSSS10SS03?.getThuocTinh?.getThuocTinhHinhAnhSprite?.getDonViSpriteNgoaiHinhVuKhiTanCongThongMinhSS03
-              ?.caiDatSpriteAnimation(
-                value: getThuocTinhTaiNguyenChienDauCo?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhTheoMaDinhDanh(
-                  maDinhDanh: getTenLuaTanCongSS030CDCDCSSSS10SS030?.getMaDinhDanhVuKhiTanCong,
-                ),
-              );
+          await getTrangThaiHangarTongQuat?.getChienDauCoDangCapSaoSSS10SS03?.getThuocTinh?.getThuocTinhHinhAnhSprite?.getDonViSpriteNgoaiHinhVuKhiTanCongThongMinhSS03?.caiDatSpriteAnimation(
+            value: getThuocTinhTaiNguyenChienDauCo?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhTheoMaDinhDanh(maDinhDanh: getTenLuaTanCongSS030CDCDCSSSS10SS030?.getMaDinhDanhVuKhiTanCong),
+          );
         },
       );
     }
@@ -5425,7 +5370,6 @@ class QUANLYTRANGTHAIHANGARCHIENDAUCO with CAUTRUCTHUCTHICOBAN {
   }
 
   Future<void> onGiaiPhongTaiNguyenChienDauCoSSS10SS030() async {
-
     /// -----
     /// TODO:
     /// -----
@@ -5496,25 +5440,25 @@ class QUANLYTRANGTHAIHANGARCHIENDAUCO with CAUTRUCTHUCTHICOBAN {
     /// -----
     /// TODO:
     /// -----
-    await Future.delayed(Duration.zero);
-    await Future.wait([
-      onGiaiPhongTaiNguyenChienDauCo00E03SS010().catchError((e) => null),
-      onGiaiPhongTaiNguyenChienDauCo00E03SS020().catchError((e) => null),
-      onGiaiPhongTaiNguyenChienDauCo00E03SS030().catchError((e) => null),
-      onGiaiPhongTaiNguyenChienDauCo00D04SS010().catchError((e) => null),
-      onGiaiPhongTaiNguyenChienDauCo00C05SS010().catchError((e) => null),
-      onGiaiPhongTaiNguyenChienDauCo00B06SS010().catchError((e) => null),
-      onGiaiPhongTaiNguyenChienDauCo00A07SS010().catchError((e) => null),
-      onGiaiPhongTaiNguyenChienDauCo00S08SS010().catchError((e) => null),
-      onGiaiPhongTaiNguyenChienDauCo0SS09SS010().catchError((e) => null),
-      onGiaiPhongTaiNguyenChienDauCo0SS09SS020().catchError((e) => null),
-      onGiaiPhongTaiNguyenChienDauCo0SS09SS030().catchError((e) => null),
-      onGiaiPhongTaiNguyenChienDauCoSSS10SS010().catchError((e) => null),
-      onGiaiPhongTaiNguyenChienDauCoSSS10SS020().catchError((e) => null),
-      onGiaiPhongTaiNguyenChienDauCoSSS10SS030().catchError((e) => null),
-      onGiaiPhongTaiNguyenChienDauCoSSS10SS040().catchError((e) => null),
-      onGiaiPhongTaiNguyenChienDauCoSSS10SS050().catchError((e) => null),
-    ]);
+    // await Future.delayed(Duration.zero);
+    // await Future.wait([
+    //   onGiaiPhongTaiNguyenChienDauCo00E03SS010().catchError((e) => null),
+    //   onGiaiPhongTaiNguyenChienDauCo00E03SS020().catchError((e) => null),
+    //   onGiaiPhongTaiNguyenChienDauCo00E03SS030().catchError((e) => null),
+    //   onGiaiPhongTaiNguyenChienDauCo00D04SS010().catchError((e) => null),
+    //   onGiaiPhongTaiNguyenChienDauCo00C05SS010().catchError((e) => null),
+    //   onGiaiPhongTaiNguyenChienDauCo00B06SS010().catchError((e) => null),
+    //   onGiaiPhongTaiNguyenChienDauCo00A07SS010().catchError((e) => null),
+    //   onGiaiPhongTaiNguyenChienDauCo00S08SS010().catchError((e) => null),
+    //   onGiaiPhongTaiNguyenChienDauCo0SS09SS010().catchError((e) => null),
+    //   onGiaiPhongTaiNguyenChienDauCo0SS09SS020().catchError((e) => null),
+    //   onGiaiPhongTaiNguyenChienDauCo0SS09SS030().catchError((e) => null),
+    //   onGiaiPhongTaiNguyenChienDauCoSSS10SS010().catchError((e) => null),
+    //   onGiaiPhongTaiNguyenChienDauCoSSS10SS020().catchError((e) => null),
+    //   onGiaiPhongTaiNguyenChienDauCoSSS10SS030().catchError((e) => null),
+    //   // onGiaiPhongTaiNguyenChienDauCoSSS10SS040().catchError((e) => null),
+    //   onGiaiPhongTaiNguyenChienDauCoSSS10SS050().catchError((e) => null),
+    // ]);
 
     /// -----
     /// TODO:
@@ -5540,12 +5484,9 @@ class QUANLYTRANGTHAIHANGARCHIENDAUCO with CAUTRUCTHUCTHICOBAN {
         thuocTinhHinhAnh: getVuKhiSungChinhSS010CDCDCSSSS10SS040?.getSieuCapThuocTinh?.getTrangThaiHinhAnh?.getMoHinh,
 
         onThucThiHoanTat: () async {
-          await getTrangThaiHangarTongQuat?.getChienDauCoDangCapSaoSSS10SS04?.getThuocTinh?.getThuocTinhHinhAnhSprite?.getDonViSpriteNgoaiHinhVuKhiTanCongCoBanSS01SS01
-              ?.caiDatSpriteAnimation(
-                value: getThuocTinhTaiNguyenChienDauCo?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhTheoMaDinhDanh(
-                  maDinhDanh: getVuKhiSungChinhSS010CDCDCSSSS10SS040?.getMaDinhDanhVuKhiTanCong,
-                ),
-              );
+          await getTrangThaiHangarTongQuat?.getChienDauCoDangCapSaoSSS10SS04?.getThuocTinh?.getThuocTinhHinhAnhSprite?.getDonViSpriteNgoaiHinhVuKhiTanCongCoBanSS01SS01?.caiDatSpriteAnimation(
+            value: getThuocTinhTaiNguyenChienDauCo?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhTheoMaDinhDanh(maDinhDanh: getVuKhiSungChinhSS010CDCDCSSSS10SS040?.getMaDinhDanhVuKhiTanCong),
+          );
         },
       );
 
@@ -5555,12 +5496,9 @@ class QUANLYTRANGTHAIHANGARCHIENDAUCO with CAUTRUCTHUCTHICOBAN {
         thuocTinhHinhAnh: getVuKhiSungChinhSS020CDCDCSSSS10SS040?.getSieuCapThuocTinh?.getTrangThaiHinhAnh?.getMoHinh,
 
         onThucThiHoanTat: () async {
-          await getTrangThaiHangarTongQuat?.getChienDauCoDangCapSaoSSS10SS04?.getThuocTinh?.getThuocTinhHinhAnhSprite?.getDonViSpriteNgoaiHinhVuKhiTanCongCoBanSS01SS02
-              ?.caiDatSpriteAnimation(
-                value: getThuocTinhTaiNguyenChienDauCo?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhTheoMaDinhDanh(
-                  maDinhDanh: getVuKhiSungChinhSS020CDCDCSSSS10SS040?.getMaDinhDanhVuKhiTanCong,
-                ),
-              );
+          await getTrangThaiHangarTongQuat?.getChienDauCoDangCapSaoSSS10SS04?.getThuocTinh?.getThuocTinhHinhAnhSprite?.getDonViSpriteNgoaiHinhVuKhiTanCongCoBanSS01SS02?.caiDatSpriteAnimation(
+            value: getThuocTinhTaiNguyenChienDauCo?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhTheoMaDinhDanh(maDinhDanh: getVuKhiSungChinhSS020CDCDCSSSS10SS040?.getMaDinhDanhVuKhiTanCong),
+          );
         },
       );
 
@@ -5570,12 +5508,9 @@ class QUANLYTRANGTHAIHANGARCHIENDAUCO with CAUTRUCTHUCTHICOBAN {
         thuocTinhHinhAnh: getVuKhiSungChinhSS030CDCDCSSSS10SS040?.getSieuCapThuocTinh?.getTrangThaiHinhAnh?.getMoHinh,
 
         onThucThiHoanTat: () async {
-          await getTrangThaiHangarTongQuat?.getChienDauCoDangCapSaoSSS10SS04?.getThuocTinh?.getThuocTinhHinhAnhSprite?.getDonViSpriteNgoaiHinhVuKhiTanCongCoBanSS01SS03
-              ?.caiDatSpriteAnimation(
-                value: getThuocTinhTaiNguyenChienDauCo?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhTheoMaDinhDanh(
-                  maDinhDanh: getVuKhiSungChinhSS030CDCDCSSSS10SS040?.getMaDinhDanhVuKhiTanCong,
-                ),
-              );
+          await getTrangThaiHangarTongQuat?.getChienDauCoDangCapSaoSSS10SS04?.getThuocTinh?.getThuocTinhHinhAnhSprite?.getDonViSpriteNgoaiHinhVuKhiTanCongCoBanSS01SS03?.caiDatSpriteAnimation(
+            value: getThuocTinhTaiNguyenChienDauCo?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhTheoMaDinhDanh(maDinhDanh: getVuKhiSungChinhSS030CDCDCSSSS10SS040?.getMaDinhDanhVuKhiTanCong),
+          );
         },
       );
 
@@ -5585,12 +5520,9 @@ class QUANLYTRANGTHAIHANGARCHIENDAUCO with CAUTRUCTHUCTHICOBAN {
         thuocTinhHinhAnh: getTenLuaTanCongSS010CDCDCSSSS10SS040?.getSieuCapThuocTinh?.getTrangThaiHinhAnh?.getMoHinh,
 
         onThucThiHoanTat: () async {
-          await getTrangThaiHangarTongQuat?.getChienDauCoDangCapSaoSSS10SS04?.getThuocTinh?.getThuocTinhHinhAnhSprite?.getDonViSpriteNgoaiHinhVuKhiTanCongThongMinhSS01
-              ?.caiDatSpriteAnimation(
-                value: getThuocTinhTaiNguyenChienDauCo?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhTheoMaDinhDanh(
-                  maDinhDanh: getTenLuaTanCongSS010CDCDCSSSS10SS040?.getMaDinhDanhVuKhiTanCong,
-                ),
-              );
+          await getTrangThaiHangarTongQuat?.getChienDauCoDangCapSaoSSS10SS04?.getThuocTinh?.getThuocTinhHinhAnhSprite?.getDonViSpriteNgoaiHinhVuKhiTanCongThongMinhSS01?.caiDatSpriteAnimation(
+            value: getThuocTinhTaiNguyenChienDauCo?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhTheoMaDinhDanh(maDinhDanh: getTenLuaTanCongSS010CDCDCSSSS10SS040?.getMaDinhDanhVuKhiTanCong),
+          );
         },
       );
 
@@ -5600,12 +5532,9 @@ class QUANLYTRANGTHAIHANGARCHIENDAUCO with CAUTRUCTHUCTHICOBAN {
         thuocTinhHinhAnh: getTenLuaTanCongSS020CDCDCSSSS10SS040?.getSieuCapThuocTinh?.getTrangThaiHinhAnh?.getMoHinh,
 
         onThucThiHoanTat: () async {
-          await getTrangThaiHangarTongQuat?.getChienDauCoDangCapSaoSSS10SS04?.getThuocTinh?.getThuocTinhHinhAnhSprite?.getDonViSpriteNgoaiHinhVuKhiTanCongThongMinhSS02
-              ?.caiDatSpriteAnimation(
-                value: getThuocTinhTaiNguyenChienDauCo?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhTheoMaDinhDanh(
-                  maDinhDanh: getTenLuaTanCongSS020CDCDCSSSS10SS040?.getMaDinhDanhVuKhiTanCong,
-                ),
-              );
+          await getTrangThaiHangarTongQuat?.getChienDauCoDangCapSaoSSS10SS04?.getThuocTinh?.getThuocTinhHinhAnhSprite?.getDonViSpriteNgoaiHinhVuKhiTanCongThongMinhSS02?.caiDatSpriteAnimation(
+            value: getThuocTinhTaiNguyenChienDauCo?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhTheoMaDinhDanh(maDinhDanh: getTenLuaTanCongSS020CDCDCSSSS10SS040?.getMaDinhDanhVuKhiTanCong),
+          );
         },
       );
 
@@ -5615,12 +5544,9 @@ class QUANLYTRANGTHAIHANGARCHIENDAUCO with CAUTRUCTHUCTHICOBAN {
         thuocTinhHinhAnh: getTenLuaTanCongSS030CDCDCSSSS10SS040?.getSieuCapThuocTinh?.getTrangThaiHinhAnh?.getMoHinh,
 
         onThucThiHoanTat: () async {
-          await getTrangThaiHangarTongQuat?.getChienDauCoDangCapSaoSSS10SS04?.getThuocTinh?.getThuocTinhHinhAnhSprite?.getDonViSpriteNgoaiHinhVuKhiTanCongThongMinhSS03
-              ?.caiDatSpriteAnimation(
-                value: getThuocTinhTaiNguyenChienDauCo?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhTheoMaDinhDanh(
-                  maDinhDanh: getTenLuaTanCongSS030CDCDCSSSS10SS040?.getMaDinhDanhVuKhiTanCong,
-                ),
-              );
+          await getTrangThaiHangarTongQuat?.getChienDauCoDangCapSaoSSS10SS04?.getThuocTinh?.getThuocTinhHinhAnhSprite?.getDonViSpriteNgoaiHinhVuKhiTanCongThongMinhSS03?.caiDatSpriteAnimation(
+            value: getThuocTinhTaiNguyenChienDauCo?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhTheoMaDinhDanh(maDinhDanh: getTenLuaTanCongSS030CDCDCSSSS10SS040?.getMaDinhDanhVuKhiTanCong),
+          );
         },
       );
     }
@@ -5634,7 +5560,6 @@ class QUANLYTRANGTHAIHANGARCHIENDAUCO with CAUTRUCTHUCTHICOBAN {
   }
 
   Future<void> onGiaiPhongTaiNguyenChienDauCoSSS10SS040() async {
-
     /// -----
     /// TODO:
     /// -----
@@ -5705,25 +5630,25 @@ class QUANLYTRANGTHAIHANGARCHIENDAUCO with CAUTRUCTHUCTHICOBAN {
     /// -----
     /// TODO:
     /// -----
-    await Future.delayed(Duration.zero);
-    await Future.wait([
-      onGiaiPhongTaiNguyenChienDauCo00E03SS010().catchError((e) => null),
-      onGiaiPhongTaiNguyenChienDauCo00E03SS020().catchError((e) => null),
-      onGiaiPhongTaiNguyenChienDauCo00E03SS030().catchError((e) => null),
-      onGiaiPhongTaiNguyenChienDauCo00D04SS010().catchError((e) => null),
-      onGiaiPhongTaiNguyenChienDauCo00C05SS010().catchError((e) => null),
-      onGiaiPhongTaiNguyenChienDauCo00B06SS010().catchError((e) => null),
-      onGiaiPhongTaiNguyenChienDauCo00A07SS010().catchError((e) => null),
-      onGiaiPhongTaiNguyenChienDauCo00S08SS010().catchError((e) => null),
-      onGiaiPhongTaiNguyenChienDauCo0SS09SS010().catchError((e) => null),
-      onGiaiPhongTaiNguyenChienDauCo0SS09SS020().catchError((e) => null),
-      onGiaiPhongTaiNguyenChienDauCo0SS09SS030().catchError((e) => null),
-      onGiaiPhongTaiNguyenChienDauCoSSS10SS010().catchError((e) => null),
-      onGiaiPhongTaiNguyenChienDauCoSSS10SS020().catchError((e) => null),
-      onGiaiPhongTaiNguyenChienDauCoSSS10SS030().catchError((e) => null),
-      onGiaiPhongTaiNguyenChienDauCoSSS10SS040().catchError((e) => null),
-      onGiaiPhongTaiNguyenChienDauCoSSS10SS050().catchError((e) => null),
-    ]);
+    // await Future.delayed(Duration.zero);
+    // await Future.wait([
+    //   onGiaiPhongTaiNguyenChienDauCo00E03SS010().catchError((e) => null),
+    //   onGiaiPhongTaiNguyenChienDauCo00E03SS020().catchError((e) => null),
+    //   onGiaiPhongTaiNguyenChienDauCo00E03SS030().catchError((e) => null),
+    //   onGiaiPhongTaiNguyenChienDauCo00D04SS010().catchError((e) => null),
+    //   onGiaiPhongTaiNguyenChienDauCo00C05SS010().catchError((e) => null),
+    //   onGiaiPhongTaiNguyenChienDauCo00B06SS010().catchError((e) => null),
+    //   onGiaiPhongTaiNguyenChienDauCo00A07SS010().catchError((e) => null),
+    //   onGiaiPhongTaiNguyenChienDauCo00S08SS010().catchError((e) => null),
+    //   onGiaiPhongTaiNguyenChienDauCo0SS09SS010().catchError((e) => null),
+    //   onGiaiPhongTaiNguyenChienDauCo0SS09SS020().catchError((e) => null),
+    //   onGiaiPhongTaiNguyenChienDauCo0SS09SS030().catchError((e) => null),
+    //   onGiaiPhongTaiNguyenChienDauCoSSS10SS010().catchError((e) => null),
+    //   onGiaiPhongTaiNguyenChienDauCoSSS10SS020().catchError((e) => null),
+    //   onGiaiPhongTaiNguyenChienDauCoSSS10SS030().catchError((e) => null),
+    //   onGiaiPhongTaiNguyenChienDauCoSSS10SS040().catchError((e) => null),
+    //   // onGiaiPhongTaiNguyenChienDauCoSSS10SS050().catchError((e) => null),
+    // ]);
 
     /// -----
     /// TODO:
@@ -5749,12 +5674,9 @@ class QUANLYTRANGTHAIHANGARCHIENDAUCO with CAUTRUCTHUCTHICOBAN {
         thuocTinhHinhAnh: getVuKhiSungChinhSS010CDCDCSSSS10SS050?.getSieuCapThuocTinh?.getTrangThaiHinhAnh?.getMoHinh,
 
         onThucThiHoanTat: () async {
-          await getTrangThaiHangarTongQuat?.getChienDauCoDangCapSaoSSS10SS05?.getThuocTinh?.getThuocTinhHinhAnhSprite?.getDonViSpriteNgoaiHinhVuKhiTanCongCoBanSS01SS01
-              ?.caiDatSpriteAnimation(
-                value: getThuocTinhTaiNguyenChienDauCo?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhTheoMaDinhDanh(
-                  maDinhDanh: getVuKhiSungChinhSS010CDCDCSSSS10SS050?.getMaDinhDanhVuKhiTanCong,
-                ),
-              );
+          await getTrangThaiHangarTongQuat?.getChienDauCoDangCapSaoSSS10SS05?.getThuocTinh?.getThuocTinhHinhAnhSprite?.getDonViSpriteNgoaiHinhVuKhiTanCongCoBanSS01SS01?.caiDatSpriteAnimation(
+            value: getThuocTinhTaiNguyenChienDauCo?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhTheoMaDinhDanh(maDinhDanh: getVuKhiSungChinhSS010CDCDCSSSS10SS050?.getMaDinhDanhVuKhiTanCong),
+          );
         },
       );
 
@@ -5764,12 +5686,9 @@ class QUANLYTRANGTHAIHANGARCHIENDAUCO with CAUTRUCTHUCTHICOBAN {
         thuocTinhHinhAnh: getVuKhiSungChinhSS020CDCDCSSSS10SS050?.getSieuCapThuocTinh?.getTrangThaiHinhAnh?.getMoHinh,
 
         onThucThiHoanTat: () async {
-          await getTrangThaiHangarTongQuat?.getChienDauCoDangCapSaoSSS10SS05?.getThuocTinh?.getThuocTinhHinhAnhSprite?.getDonViSpriteNgoaiHinhVuKhiTanCongCoBanSS01SS02
-              ?.caiDatSpriteAnimation(
-                value: getThuocTinhTaiNguyenChienDauCo?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhTheoMaDinhDanh(
-                  maDinhDanh: getVuKhiSungChinhSS020CDCDCSSSS10SS050?.getMaDinhDanhVuKhiTanCong,
-                ),
-              );
+          await getTrangThaiHangarTongQuat?.getChienDauCoDangCapSaoSSS10SS05?.getThuocTinh?.getThuocTinhHinhAnhSprite?.getDonViSpriteNgoaiHinhVuKhiTanCongCoBanSS01SS02?.caiDatSpriteAnimation(
+            value: getThuocTinhTaiNguyenChienDauCo?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhTheoMaDinhDanh(maDinhDanh: getVuKhiSungChinhSS020CDCDCSSSS10SS050?.getMaDinhDanhVuKhiTanCong),
+          );
         },
       );
 
@@ -5779,12 +5698,9 @@ class QUANLYTRANGTHAIHANGARCHIENDAUCO with CAUTRUCTHUCTHICOBAN {
         thuocTinhHinhAnh: getVuKhiSungChinhSS030CDCDCSSSS10SS050?.getSieuCapThuocTinh?.getTrangThaiHinhAnh?.getMoHinh,
 
         onThucThiHoanTat: () async {
-          await getTrangThaiHangarTongQuat?.getChienDauCoDangCapSaoSSS10SS05?.getThuocTinh?.getThuocTinhHinhAnhSprite?.getDonViSpriteNgoaiHinhVuKhiTanCongCoBanSS01SS03
-              ?.caiDatSpriteAnimation(
-                value: getThuocTinhTaiNguyenChienDauCo?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhTheoMaDinhDanh(
-                  maDinhDanh: getVuKhiSungChinhSS030CDCDCSSSS10SS050?.getMaDinhDanhVuKhiTanCong,
-                ),
-              );
+          await getTrangThaiHangarTongQuat?.getChienDauCoDangCapSaoSSS10SS05?.getThuocTinh?.getThuocTinhHinhAnhSprite?.getDonViSpriteNgoaiHinhVuKhiTanCongCoBanSS01SS03?.caiDatSpriteAnimation(
+            value: getThuocTinhTaiNguyenChienDauCo?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhTheoMaDinhDanh(maDinhDanh: getVuKhiSungChinhSS030CDCDCSSSS10SS050?.getMaDinhDanhVuKhiTanCong),
+          );
         },
       );
 
@@ -5794,12 +5710,9 @@ class QUANLYTRANGTHAIHANGARCHIENDAUCO with CAUTRUCTHUCTHICOBAN {
         thuocTinhHinhAnh: getTenLuaTanCongSS010CDCDCSSSS10SS050?.getSieuCapThuocTinh?.getTrangThaiHinhAnh?.getMoHinh,
 
         onThucThiHoanTat: () async {
-          await getTrangThaiHangarTongQuat?.getChienDauCoDangCapSaoSSS10SS05?.getThuocTinh?.getThuocTinhHinhAnhSprite?.getDonViSpriteNgoaiHinhVuKhiTanCongThongMinhSS01
-              ?.caiDatSpriteAnimation(
-                value: getThuocTinhTaiNguyenChienDauCo?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhTheoMaDinhDanh(
-                  maDinhDanh: getTenLuaTanCongSS010CDCDCSSSS10SS050?.getMaDinhDanhVuKhiTanCong,
-                ),
-              );
+          await getTrangThaiHangarTongQuat?.getChienDauCoDangCapSaoSSS10SS05?.getThuocTinh?.getThuocTinhHinhAnhSprite?.getDonViSpriteNgoaiHinhVuKhiTanCongThongMinhSS01?.caiDatSpriteAnimation(
+            value: getThuocTinhTaiNguyenChienDauCo?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhTheoMaDinhDanh(maDinhDanh: getTenLuaTanCongSS010CDCDCSSSS10SS050?.getMaDinhDanhVuKhiTanCong),
+          );
         },
       );
 
@@ -5809,12 +5722,9 @@ class QUANLYTRANGTHAIHANGARCHIENDAUCO with CAUTRUCTHUCTHICOBAN {
         thuocTinhHinhAnh: getTenLuaTanCongSS020CDCDCSSSS10SS050?.getSieuCapThuocTinh?.getTrangThaiHinhAnh?.getMoHinh,
 
         onThucThiHoanTat: () async {
-          await getTrangThaiHangarTongQuat?.getChienDauCoDangCapSaoSSS10SS05?.getThuocTinh?.getThuocTinhHinhAnhSprite?.getDonViSpriteNgoaiHinhVuKhiTanCongThongMinhSS02
-              ?.caiDatSpriteAnimation(
-                value: getThuocTinhTaiNguyenChienDauCo?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhTheoMaDinhDanh(
-                  maDinhDanh: getTenLuaTanCongSS020CDCDCSSSS10SS050?.getMaDinhDanhVuKhiTanCong,
-                ),
-              );
+          await getTrangThaiHangarTongQuat?.getChienDauCoDangCapSaoSSS10SS05?.getThuocTinh?.getThuocTinhHinhAnhSprite?.getDonViSpriteNgoaiHinhVuKhiTanCongThongMinhSS02?.caiDatSpriteAnimation(
+            value: getThuocTinhTaiNguyenChienDauCo?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhTheoMaDinhDanh(maDinhDanh: getTenLuaTanCongSS020CDCDCSSSS10SS050?.getMaDinhDanhVuKhiTanCong),
+          );
         },
       );
 
@@ -5824,12 +5734,9 @@ class QUANLYTRANGTHAIHANGARCHIENDAUCO with CAUTRUCTHUCTHICOBAN {
         thuocTinhHinhAnh: getTenLuaTanCongSS030CDCDCSSSS10SS050?.getSieuCapThuocTinh?.getTrangThaiHinhAnh?.getMoHinh,
 
         onThucThiHoanTat: () async {
-          await getTrangThaiHangarTongQuat?.getChienDauCoDangCapSaoSSS10SS05?.getThuocTinh?.getThuocTinhHinhAnhSprite?.getDonViSpriteNgoaiHinhVuKhiTanCongThongMinhSS03
-              ?.caiDatSpriteAnimation(
-                value: getThuocTinhTaiNguyenChienDauCo?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhTheoMaDinhDanh(
-                  maDinhDanh: getTenLuaTanCongSS030CDCDCSSSS10SS050?.getMaDinhDanhVuKhiTanCong,
-                ),
-              );
+          await getTrangThaiHangarTongQuat?.getChienDauCoDangCapSaoSSS10SS05?.getThuocTinh?.getThuocTinhHinhAnhSprite?.getDonViSpriteNgoaiHinhVuKhiTanCongThongMinhSS03?.caiDatSpriteAnimation(
+            value: getThuocTinhTaiNguyenChienDauCo?.onTruyXuatTaiNguyenHinhAnhNgoaiHinhTheoMaDinhDanh(maDinhDanh: getTenLuaTanCongSS030CDCDCSSSS10SS050?.getMaDinhDanhVuKhiTanCong),
+          );
         },
       );
     }
@@ -5843,7 +5750,6 @@ class QUANLYTRANGTHAIHANGARCHIENDAUCO with CAUTRUCTHUCTHICOBAN {
   }
 
   Future<void> onGiaiPhongTaiNguyenChienDauCoSSS10SS050() async {
-
     /// -----
     /// TODO:
     /// -----

@@ -1603,262 +1603,6 @@ class QUANLYTRANGTHAIHANGARPHUONGTIEN with CAUTRUCTHUCTHICOBAN {
       /// -----
       /// TODO:
       /// -----
-
-      CAUTRUCTHUCTHITUANTUCOBAN? cauTrucThucThiTuanTu = CAUTRUCTHUCTHITUANTUCOBAN.onMacDinh();
-      cauTrucThucThiTuanTu.onAddDonViThucThiTuanTu(
-        onThucThiTuanTu: () async {
-          await getThuocTinhTaiNguyenPhuongTien
-              ?.onTruyXuatTaiNguyenHinhAnhNgoaiHinh(
-            maDinhDanh: getHIEUUNGVACHAMCONGKICHCLASSSS00ASS010SS010?.getMaDinhDanhPhuongTien,
-            thuocTinhHinhAnh: getHIEUUNGVACHAMCONGKICHCLASSSS00ASS010SS010?.getThuocTinhPhuongTien?.getThuocTinhHinhAnh,
-          );
-        },
-      );
-      cauTrucThucThiTuanTu.onAddDonViThucThiTuanTu(
-        onThucThiTuanTu: () async {
-          await getThuocTinhTaiNguyenPhuongTien
-              ?.onTruyXuatTaiNguyenHinhAnhNgoaiHinh(
-            maDinhDanh: getHIEUUNGVACHAMCONGKICHCLASSSS00ASS010SS020?.getMaDinhDanhPhuongTien,
-            thuocTinhHinhAnh: getHIEUUNGVACHAMCONGKICHCLASSSS00ASS010SS020?.getThuocTinhPhuongTien?.getThuocTinhHinhAnh,
-          );
-        },
-      );
-      cauTrucThucThiTuanTu.onAddDonViThucThiTuanTu(
-        onThucThiTuanTu: () async {
-          await getThuocTinhTaiNguyenPhuongTien
-              ?.onTruyXuatTaiNguyenHinhAnhNgoaiHinh(
-            maDinhDanh: getHIEUUNGVACHAMCONGKICHCLASSSS00ASS010SS030?.getMaDinhDanhPhuongTien,
-            thuocTinhHinhAnh: getHIEUUNGVACHAMCONGKICHCLASSSS00ASS010SS030?.getThuocTinhPhuongTien?.getThuocTinhHinhAnh,
-          );
-        },
-      );
-      cauTrucThucThiTuanTu.onAddDonViThucThiTuanTu(
-        onThucThiTuanTu: () async {
-          await getThuocTinhTaiNguyenPhuongTien
-              ?.onTruyXuatTaiNguyenHinhAnhNgoaiHinh(
-            maDinhDanh: getHIEUUNGVACHAMCONGKICHCLASSSS00ASS010SS040?.getMaDinhDanhPhuongTien,
-            thuocTinhHinhAnh: getHIEUUNGVACHAMCONGKICHCLASSSS00ASS010SS040?.getThuocTinhPhuongTien?.getThuocTinhHinhAnh,
-          );
-        },
-      );
-      cauTrucThucThiTuanTu.onAddDonViThucThiTuanTu(
-        onThucThiTuanTu: () async {
-          await getThuocTinhTaiNguyenPhuongTien
-              ?.onTruyXuatTaiNguyenHinhAnhNgoaiHinh(
-            maDinhDanh: getHIEUUNGVACHAMCONGKICHCLASSSS00ASS010SS050?.getMaDinhDanhPhuongTien,
-            thuocTinhHinhAnh: getHIEUUNGVACHAMCONGKICHCLASSSS00ASS010SS050?.getThuocTinhPhuongTien?.getThuocTinhHinhAnh,
-          );
-        },
-      );
-      cauTrucThucThiTuanTu.onAddDonViThucThiTuanTu(
-        onThucThiTuanTu: () async {
-          await getThuocTinhTaiNguyenPhuongTien
-              ?.onTruyXuatTaiNguyenHinhAnhNgoaiHinh(
-            maDinhDanh: getHIEUUNGVACHAMCONGKICHCLASSSS00ASS010SS060?.getMaDinhDanhPhuongTien,
-            thuocTinhHinhAnh: getHIEUUNGVACHAMCONGKICHCLASSSS00ASS010SS060?.getThuocTinhPhuongTien?.getThuocTinhHinhAnh,
-          );
-        },
-      );
-      cauTrucThucThiTuanTu.onAddDonViThucThiTuanTu(
-        onThucThiTuanTu: () async {
-          await getThuocTinhTaiNguyenPhuongTien
-              ?.onTruyXuatTaiNguyenHinhAnhNgoaiHinh(
-            maDinhDanh: getHIEUUNGVACHAMCONGKICHCLASSSS00ASS010SS070?.getMaDinhDanhPhuongTien,
-            thuocTinhHinhAnh: getHIEUUNGVACHAMCONGKICHCLASSSS00ASS010SS070?.getThuocTinhPhuongTien?.getThuocTinhHinhAnh,
-          );
-        },
-      );
-      cauTrucThucThiTuanTu.onAddDonViThucThiTuanTu(
-        onThucThiTuanTu: () async {
-          await getThuocTinhTaiNguyenPhuongTien
-              ?.onTruyXuatTaiNguyenHinhAnhNgoaiHinh(
-            maDinhDanh: getHIEUUNGVACHAMCONGKICHCLASSSS00ASS010SS080?.getMaDinhDanhPhuongTien,
-            thuocTinhHinhAnh: getHIEUUNGVACHAMCONGKICHCLASSSS00ASS010SS080?.getThuocTinhPhuongTien?.getThuocTinhHinhAnh,
-          );
-        },
-      );
-      cauTrucThucThiTuanTu.onAddDonViThucThiTuanTu(
-        onThucThiTuanTu: () async {
-          await getThuocTinhTaiNguyenPhuongTien
-              ?.onTruyXuatTaiNguyenHinhAnhNgoaiHinh(
-            maDinhDanh: getHIEUUNGVACHAMCONGKICHCLASSSS00ASS010SS090?.getMaDinhDanhPhuongTien,
-            thuocTinhHinhAnh: getHIEUUNGVACHAMCONGKICHCLASSSS00ASS010SS090?.getThuocTinhPhuongTien?.getThuocTinhHinhAnh,
-          );
-        },
-      );
-      cauTrucThucThiTuanTu.onAddDonViThucThiTuanTu(
-        onThucThiTuanTu: () async {
-          await getThuocTinhTaiNguyenPhuongTien
-              ?.onTruyXuatTaiNguyenHinhAnhNgoaiHinh(
-            maDinhDanh: getHIEUUNGVACHAMPHAHUYCLASSSS00ASS010SS010?.getMaDinhDanhPhuongTien,
-            thuocTinhHinhAnh: getHIEUUNGVACHAMPHAHUYCLASSSS00ASS010SS010?.getThuocTinhPhuongTien?.getThuocTinhHinhAnh,
-          );
-        },
-      );
-      cauTrucThucThiTuanTu.onAddDonViThucThiTuanTu(
-        onThucThiTuanTu: () async {
-          await getThuocTinhTaiNguyenPhuongTien
-              ?.onTruyXuatTaiNguyenHinhAnhNgoaiHinh(
-            maDinhDanh: getHIEUUNGVACHAMPHAHUYCLASSSS00ASS010SS020?.getMaDinhDanhPhuongTien,
-            thuocTinhHinhAnh: getHIEUUNGVACHAMPHAHUYCLASSSS00ASS010SS020?.getThuocTinhPhuongTien?.getThuocTinhHinhAnh,
-          );
-        },
-      );
-      cauTrucThucThiTuanTu.onAddDonViThucThiTuanTu(
-        onThucThiTuanTu: () async {
-          await getThuocTinhTaiNguyenPhuongTien
-              ?.onTruyXuatTaiNguyenHinhAnhNgoaiHinh(
-            maDinhDanh: getHIEUUNGVACHAMPHAHUYCLASSSS00ASS010SS030?.getMaDinhDanhPhuongTien,
-            thuocTinhHinhAnh: getHIEUUNGVACHAMPHAHUYCLASSSS00ASS010SS030?.getThuocTinhPhuongTien?.getThuocTinhHinhAnh,
-          );
-        },
-      );
-      cauTrucThucThiTuanTu.onAddDonViThucThiTuanTu(
-        onThucThiTuanTu: () async {
-          await getThuocTinhTaiNguyenPhuongTien
-              ?.onTruyXuatTaiNguyenHinhAnhNgoaiHinh(
-            maDinhDanh: getHIEUUNGVACHAMPHAHUYCLASSSS00ASS010SS040?.getMaDinhDanhPhuongTien,
-            thuocTinhHinhAnh: getHIEUUNGVACHAMPHAHUYCLASSSS00ASS010SS040?.getThuocTinhPhuongTien?.getThuocTinhHinhAnh,
-          );
-        },
-      );
-      cauTrucThucThiTuanTu.onAddDonViThucThiTuanTu(
-        onThucThiTuanTu: () async {
-          await getThuocTinhTaiNguyenPhuongTien
-              ?.onTruyXuatTaiNguyenHinhAnhNgoaiHinh(
-            maDinhDanh: getHIEUUNGVACHAMPHAHUYCLASSSS00ASS010SS050?.getMaDinhDanhPhuongTien,
-            thuocTinhHinhAnh: getHIEUUNGVACHAMPHAHUYCLASSSS00ASS010SS050?.getThuocTinhPhuongTien?.getThuocTinhHinhAnh,
-          );
-        },
-      );
-      cauTrucThucThiTuanTu.onAddDonViThucThiTuanTu(
-        onThucThiTuanTu: () async {
-          await getThuocTinhTaiNguyenPhuongTien
-              ?.onTruyXuatTaiNguyenHinhAnhNgoaiHinh(
-            maDinhDanh: getHIEUUNGVACHAMPHAHUYCLASSSS00ASS010SS060?.getMaDinhDanhPhuongTien,
-            thuocTinhHinhAnh: getHIEUUNGVACHAMPHAHUYCLASSSS00ASS010SS060?.getThuocTinhPhuongTien?.getThuocTinhHinhAnh,
-          );
-        },
-      );
-      cauTrucThucThiTuanTu.onAddDonViThucThiTuanTu(
-        onThucThiTuanTu: () async {
-          await getThuocTinhTaiNguyenPhuongTien
-              ?.onTruyXuatTaiNguyenHinhAnhNgoaiHinh(
-            maDinhDanh: getHIEUUNGVACHAMPHAHUYCLASSSS00ASS010SS070?.getMaDinhDanhPhuongTien,
-            thuocTinhHinhAnh: getHIEUUNGVACHAMPHAHUYCLASSSS00ASS010SS070?.getThuocTinhPhuongTien?.getThuocTinhHinhAnh,
-          );
-        },
-      );
-      cauTrucThucThiTuanTu.onAddDonViThucThiTuanTu(
-        onThucThiTuanTu: () async {
-          await getThuocTinhTaiNguyenPhuongTien
-              ?.onTruyXuatTaiNguyenHinhAnhNgoaiHinh(
-            maDinhDanh: getHIEUUNGVACHAMPHAHUYCLASSSS00ASS010SS080?.getMaDinhDanhPhuongTien,
-            thuocTinhHinhAnh: getHIEUUNGVACHAMPHAHUYCLASSSS00ASS010SS080?.getThuocTinhPhuongTien?.getThuocTinhHinhAnh,
-          );
-        },
-      );
-      cauTrucThucThiTuanTu.onAddDonViThucThiTuanTu(
-        onThucThiTuanTu: () async {
-          await getThuocTinhTaiNguyenPhuongTien
-              ?.onTruyXuatTaiNguyenHinhAnhNgoaiHinh(
-            maDinhDanh: getHIEUUNGVACHAMTANGCUONGCLASSSS00ASS010SS010?.getMaDinhDanhPhuongTien,
-            thuocTinhHinhAnh: getHIEUUNGVACHAMTANGCUONGCLASSSS00ASS010SS010?.getThuocTinhPhuongTien?.getThuocTinhHinhAnh,
-          );
-        },
-      );
-      cauTrucThucThiTuanTu.onAddDonViThucThiTuanTu(
-        onThucThiTuanTu: () async {
-          await getThuocTinhTaiNguyenPhuongTien
-              ?.onTruyXuatTaiNguyenHinhAnhNgoaiHinh(
-            maDinhDanh: getHIEUUNGVACHAMTANGCUONGCLASSSS00ASS010SS020?.getMaDinhDanhPhuongTien,
-            thuocTinhHinhAnh: getHIEUUNGVACHAMTANGCUONGCLASSSS00ASS010SS020?.getThuocTinhPhuongTien?.getThuocTinhHinhAnh,
-          );
-        },
-      );
-      cauTrucThucThiTuanTu.onAddDonViThucThiTuanTu(
-        onThucThiTuanTu: () async {
-          await getThuocTinhTaiNguyenPhuongTien
-              ?.onTruyXuatTaiNguyenHinhAnhNgoaiHinh(
-            maDinhDanh: getHIEUUNGVACHAMTANGCUONGCLASSSS00ASS010SS030?.getMaDinhDanhPhuongTien,
-            thuocTinhHinhAnh: getHIEUUNGVACHAMTANGCUONGCLASSSS00ASS010SS030?.getThuocTinhPhuongTien?.getThuocTinhHinhAnh,
-          );
-        },
-      );
-      cauTrucThucThiTuanTu.onAddDonViThucThiTuanTu(
-        onThucThiTuanTu: () async {
-          await getThuocTinhTaiNguyenPhuongTien
-              ?.onTruyXuatTaiNguyenHinhAnhNgoaiHinh(
-            maDinhDanh: getHIEUUNGVACHAMPHANTHUONGCLASSSS00ASS010SS010?.getMaDinhDanhPhuongTien,
-            thuocTinhHinhAnh: getHIEUUNGVACHAMPHANTHUONGCLASSSS00ASS010SS010?.getThuocTinhPhuongTien?.getThuocTinhHinhAnh,
-          );
-        },
-      );
-      cauTrucThucThiTuanTu.onAddDonViThucThiTuanTu(
-        onThucThiTuanTu: () async {
-          await getThuocTinhTaiNguyenPhuongTien
-              ?.onTruyXuatTaiNguyenHinhAnhNgoaiHinh(
-            maDinhDanh: getHIEUUNGVACHAMPHANTHUONGCLASSSS00ASS010SS020?.getMaDinhDanhPhuongTien,
-            thuocTinhHinhAnh: getHIEUUNGVACHAMPHANTHUONGCLASSSS00ASS010SS020?.getThuocTinhPhuongTien?.getThuocTinhHinhAnh,
-          );
-        },
-      );
-      cauTrucThucThiTuanTu.onAddDonViThucThiTuanTu(
-        onThucThiTuanTu: () async {
-          await getThuocTinhTaiNguyenPhuongTien
-              ?.onTruyXuatTaiNguyenHinhAnhNgoaiHinh(
-            maDinhDanh: getHIEUUNGVACHAMPHANTHUONGCLASSSS00ASS010SS030?.getMaDinhDanhPhuongTien,
-            thuocTinhHinhAnh: getHIEUUNGVACHAMPHANTHUONGCLASSSS00ASS010SS030?.getThuocTinhPhuongTien?.getThuocTinhHinhAnh,
-          );
-        },
-      );
-      cauTrucThucThiTuanTu.onAddDonViThucThiTuanTu(
-        onThucThiTuanTu: () async {
-          await getThuocTinhTaiNguyenPhuongTien
-              ?.onTruyXuatTaiNguyenHinhAnhNgoaiHinh(
-            maDinhDanh: getHIEUUNGVACHAMCONGKICHCLASSSS00BSS010SS010?.getMaDinhDanhPhuongTien,
-            thuocTinhHinhAnh: getHIEUUNGVACHAMCONGKICHCLASSSS00BSS010SS010?.getThuocTinhPhuongTien?.getThuocTinhHinhAnh,
-          );
-        },
-      );
-      cauTrucThucThiTuanTu.onAddDonViThucThiTuanTu(
-        onThucThiTuanTu: () async {
-          await getThuocTinhTaiNguyenPhuongTien
-              ?.onTruyXuatTaiNguyenHinhAnhNgoaiHinh(
-            maDinhDanh: getHIEUUNGVACHAMCONGKICHCLASSSS00BSS010SS020?.getMaDinhDanhPhuongTien,
-            thuocTinhHinhAnh: getHIEUUNGVACHAMCONGKICHCLASSSS00BSS010SS020?.getThuocTinhPhuongTien?.getThuocTinhHinhAnh,
-          );
-        },
-      );
-      cauTrucThucThiTuanTu.onAddDonViThucThiTuanTu(
-        onThucThiTuanTu: () async {
-          await getThuocTinhTaiNguyenPhuongTien
-              ?.onTruyXuatTaiNguyenHinhAnhNgoaiHinh(
-            maDinhDanh: getHIEUUNGVACHAMCONGKICHCLASSSS00BSS010SS030?.getMaDinhDanhPhuongTien,
-            thuocTinhHinhAnh: getHIEUUNGVACHAMCONGKICHCLASSSS00BSS010SS030?.getThuocTinhPhuongTien?.getThuocTinhHinhAnh,
-          );
-        },
-      );
-      cauTrucThucThiTuanTu.onAddDonViThucThiTuanTu(
-        onThucThiTuanTu: () async {
-          await getThuocTinhTaiNguyenPhuongTien
-              ?.onTruyXuatTaiNguyenHinhAnhNgoaiHinh(
-            maDinhDanh: getHIEUUNGVACHAMCONGKICHCLASSSS00BSS010SS040?.getMaDinhDanhPhuongTien,
-            thuocTinhHinhAnh: getHIEUUNGVACHAMCONGKICHCLASSSS00BSS010SS040?.getThuocTinhPhuongTien?.getThuocTinhHinhAnh,
-          );
-        },
-      );
-      cauTrucThucThiTuanTu.onAddDonViThucThiTuanTu(
-        onThucThiTuanTu: () async {
-          await getThuocTinhTaiNguyenPhuongTien
-              ?.onTruyXuatTaiNguyenHinhAnhNgoaiHinh(
-            maDinhDanh: getHIEUUNGVACHAMCONGKICHCLASSSS00BSS010SS050?.getMaDinhDanhPhuongTien,
-            thuocTinhHinhAnh: getHIEUUNGVACHAMCONGKICHCLASSSS00BSS010SS050?.getThuocTinhPhuongTien?.getThuocTinhHinhAnh,
-          );
-        },
-      );
-
-      cauTrucThucThiTuanTu.onThucThiTuanTu(interval: const Duration(milliseconds: 500));
     } catch (e) {
       await onReportRootIssue(nameFunction: 'onInitRootForSubCom');
     }
@@ -1898,6 +1642,283 @@ class QUANLYTRANGTHAIHANGARPHUONGTIEN with CAUTRUCTHUCTHICOBAN {
     return;
   }
 
+  Future<void> onTaiTaiNguyenMaster({required Future<void> Function()? onThucThiHoanTat}) async {
+    try {
+      /// -----
+      /// TODO:
+      /// -----
+      CAUTRUCTHUCTHITUANTUCOBAN? cauTrucThucThiTuanTu = CAUTRUCTHUCTHITUANTUCOBAN.onMacDinh();
+      cauTrucThucThiTuanTu.onAddDonViThucThiTuanTu(
+        onThucThiTuanTu: () async {
+          await getThuocTinhTaiNguyenPhuongTien?.onTruyXuatTaiNguyenHinhAnhNgoaiHinh(
+            maDinhDanh: getHIEUUNGVACHAMCONGKICHCLASSSS00ASS010SS010?.getMaDinhDanhPhuongTien,
+            thuocTinhHinhAnh: getHIEUUNGVACHAMCONGKICHCLASSSS00ASS010SS010?.getThuocTinhPhuongTien?.getThuocTinhHinhAnh,
+          );
+        },
+      );
+      cauTrucThucThiTuanTu.onAddDonViThucThiTuanTu(
+        onThucThiTuanTu: () async {
+          await getThuocTinhTaiNguyenPhuongTien?.onTruyXuatTaiNguyenHinhAnhNgoaiHinh(
+            maDinhDanh: getHIEUUNGVACHAMCONGKICHCLASSSS00ASS010SS020?.getMaDinhDanhPhuongTien,
+            thuocTinhHinhAnh: getHIEUUNGVACHAMCONGKICHCLASSSS00ASS010SS020?.getThuocTinhPhuongTien?.getThuocTinhHinhAnh,
+          );
+        },
+      );
+      cauTrucThucThiTuanTu.onAddDonViThucThiTuanTu(
+        onThucThiTuanTu: () async {
+          await getThuocTinhTaiNguyenPhuongTien?.onTruyXuatTaiNguyenHinhAnhNgoaiHinh(
+            maDinhDanh: getHIEUUNGVACHAMCONGKICHCLASSSS00ASS010SS030?.getMaDinhDanhPhuongTien,
+            thuocTinhHinhAnh: getHIEUUNGVACHAMCONGKICHCLASSSS00ASS010SS030?.getThuocTinhPhuongTien?.getThuocTinhHinhAnh,
+          );
+        },
+      );
+      cauTrucThucThiTuanTu.onAddDonViThucThiTuanTu(
+        onThucThiTuanTu: () async {
+          await getThuocTinhTaiNguyenPhuongTien?.onTruyXuatTaiNguyenHinhAnhNgoaiHinh(
+            maDinhDanh: getHIEUUNGVACHAMCONGKICHCLASSSS00ASS010SS040?.getMaDinhDanhPhuongTien,
+            thuocTinhHinhAnh: getHIEUUNGVACHAMCONGKICHCLASSSS00ASS010SS040?.getThuocTinhPhuongTien?.getThuocTinhHinhAnh,
+          );
+        },
+      );
+      cauTrucThucThiTuanTu.onAddDonViThucThiTuanTu(
+        onThucThiTuanTu: () async {
+          await getThuocTinhTaiNguyenPhuongTien?.onTruyXuatTaiNguyenHinhAnhNgoaiHinh(
+            maDinhDanh: getHIEUUNGVACHAMCONGKICHCLASSSS00ASS010SS050?.getMaDinhDanhPhuongTien,
+            thuocTinhHinhAnh: getHIEUUNGVACHAMCONGKICHCLASSSS00ASS010SS050?.getThuocTinhPhuongTien?.getThuocTinhHinhAnh,
+          );
+        },
+      );
+      cauTrucThucThiTuanTu.onAddDonViThucThiTuanTu(
+        onThucThiTuanTu: () async {
+          await getThuocTinhTaiNguyenPhuongTien?.onTruyXuatTaiNguyenHinhAnhNgoaiHinh(
+            maDinhDanh: getHIEUUNGVACHAMCONGKICHCLASSSS00ASS010SS060?.getMaDinhDanhPhuongTien,
+            thuocTinhHinhAnh: getHIEUUNGVACHAMCONGKICHCLASSSS00ASS010SS060?.getThuocTinhPhuongTien?.getThuocTinhHinhAnh,
+          );
+        },
+      );
+      cauTrucThucThiTuanTu.onAddDonViThucThiTuanTu(
+        onThucThiTuanTu: () async {
+          await getThuocTinhTaiNguyenPhuongTien?.onTruyXuatTaiNguyenHinhAnhNgoaiHinh(
+            maDinhDanh: getHIEUUNGVACHAMCONGKICHCLASSSS00ASS010SS070?.getMaDinhDanhPhuongTien,
+            thuocTinhHinhAnh: getHIEUUNGVACHAMCONGKICHCLASSSS00ASS010SS070?.getThuocTinhPhuongTien?.getThuocTinhHinhAnh,
+          );
+        },
+      );
+      cauTrucThucThiTuanTu.onAddDonViThucThiTuanTu(
+        onThucThiTuanTu: () async {
+          await getThuocTinhTaiNguyenPhuongTien?.onTruyXuatTaiNguyenHinhAnhNgoaiHinh(
+            maDinhDanh: getHIEUUNGVACHAMCONGKICHCLASSSS00ASS010SS080?.getMaDinhDanhPhuongTien,
+            thuocTinhHinhAnh: getHIEUUNGVACHAMCONGKICHCLASSSS00ASS010SS080?.getThuocTinhPhuongTien?.getThuocTinhHinhAnh,
+          );
+        },
+      );
+      cauTrucThucThiTuanTu.onAddDonViThucThiTuanTu(
+        onThucThiTuanTu: () async {
+          await getThuocTinhTaiNguyenPhuongTien?.onTruyXuatTaiNguyenHinhAnhNgoaiHinh(
+            maDinhDanh: getHIEUUNGVACHAMCONGKICHCLASSSS00ASS010SS090?.getMaDinhDanhPhuongTien,
+            thuocTinhHinhAnh: getHIEUUNGVACHAMCONGKICHCLASSSS00ASS010SS090?.getThuocTinhPhuongTien?.getThuocTinhHinhAnh,
+          );
+        },
+      );
+      cauTrucThucThiTuanTu.onAddDonViThucThiTuanTu(
+        onThucThiTuanTu: () async {
+          await getThuocTinhTaiNguyenPhuongTien?.onTruyXuatTaiNguyenHinhAnhNgoaiHinh(
+            maDinhDanh: getHIEUUNGVACHAMPHAHUYCLASSSS00ASS010SS010?.getMaDinhDanhPhuongTien,
+            thuocTinhHinhAnh: getHIEUUNGVACHAMPHAHUYCLASSSS00ASS010SS010?.getThuocTinhPhuongTien?.getThuocTinhHinhAnh,
+          );
+        },
+      );
+      cauTrucThucThiTuanTu.onAddDonViThucThiTuanTu(
+        onThucThiTuanTu: () async {
+          await getThuocTinhTaiNguyenPhuongTien?.onTruyXuatTaiNguyenHinhAnhNgoaiHinh(
+            maDinhDanh: getHIEUUNGVACHAMPHAHUYCLASSSS00ASS010SS020?.getMaDinhDanhPhuongTien,
+            thuocTinhHinhAnh: getHIEUUNGVACHAMPHAHUYCLASSSS00ASS010SS020?.getThuocTinhPhuongTien?.getThuocTinhHinhAnh,
+          );
+        },
+      );
+      cauTrucThucThiTuanTu.onAddDonViThucThiTuanTu(
+        onThucThiTuanTu: () async {
+          await getThuocTinhTaiNguyenPhuongTien?.onTruyXuatTaiNguyenHinhAnhNgoaiHinh(
+            maDinhDanh: getHIEUUNGVACHAMPHAHUYCLASSSS00ASS010SS030?.getMaDinhDanhPhuongTien,
+            thuocTinhHinhAnh: getHIEUUNGVACHAMPHAHUYCLASSSS00ASS010SS030?.getThuocTinhPhuongTien?.getThuocTinhHinhAnh,
+          );
+        },
+      );
+      cauTrucThucThiTuanTu.onAddDonViThucThiTuanTu(
+        onThucThiTuanTu: () async {
+          await getThuocTinhTaiNguyenPhuongTien?.onTruyXuatTaiNguyenHinhAnhNgoaiHinh(
+            maDinhDanh: getHIEUUNGVACHAMPHAHUYCLASSSS00ASS010SS040?.getMaDinhDanhPhuongTien,
+            thuocTinhHinhAnh: getHIEUUNGVACHAMPHAHUYCLASSSS00ASS010SS040?.getThuocTinhPhuongTien?.getThuocTinhHinhAnh,
+          );
+        },
+      );
+      cauTrucThucThiTuanTu.onAddDonViThucThiTuanTu(
+        onThucThiTuanTu: () async {
+          await getThuocTinhTaiNguyenPhuongTien?.onTruyXuatTaiNguyenHinhAnhNgoaiHinh(
+            maDinhDanh: getHIEUUNGVACHAMPHAHUYCLASSSS00ASS010SS050?.getMaDinhDanhPhuongTien,
+            thuocTinhHinhAnh: getHIEUUNGVACHAMPHAHUYCLASSSS00ASS010SS050?.getThuocTinhPhuongTien?.getThuocTinhHinhAnh,
+          );
+        },
+      );
+      cauTrucThucThiTuanTu.onAddDonViThucThiTuanTu(
+        onThucThiTuanTu: () async {
+          await getThuocTinhTaiNguyenPhuongTien?.onTruyXuatTaiNguyenHinhAnhNgoaiHinh(
+            maDinhDanh: getHIEUUNGVACHAMPHAHUYCLASSSS00ASS010SS060?.getMaDinhDanhPhuongTien,
+            thuocTinhHinhAnh: getHIEUUNGVACHAMPHAHUYCLASSSS00ASS010SS060?.getThuocTinhPhuongTien?.getThuocTinhHinhAnh,
+          );
+        },
+      );
+      cauTrucThucThiTuanTu.onAddDonViThucThiTuanTu(
+        onThucThiTuanTu: () async {
+          await getThuocTinhTaiNguyenPhuongTien?.onTruyXuatTaiNguyenHinhAnhNgoaiHinh(
+            maDinhDanh: getHIEUUNGVACHAMPHAHUYCLASSSS00ASS010SS070?.getMaDinhDanhPhuongTien,
+            thuocTinhHinhAnh: getHIEUUNGVACHAMPHAHUYCLASSSS00ASS010SS070?.getThuocTinhPhuongTien?.getThuocTinhHinhAnh,
+          );
+        },
+      );
+      cauTrucThucThiTuanTu.onAddDonViThucThiTuanTu(
+        onThucThiTuanTu: () async {
+          await getThuocTinhTaiNguyenPhuongTien?.onTruyXuatTaiNguyenHinhAnhNgoaiHinh(
+            maDinhDanh: getHIEUUNGVACHAMPHAHUYCLASSSS00ASS010SS080?.getMaDinhDanhPhuongTien,
+            thuocTinhHinhAnh: getHIEUUNGVACHAMPHAHUYCLASSSS00ASS010SS080?.getThuocTinhPhuongTien?.getThuocTinhHinhAnh,
+          );
+        },
+      );
+      // cauTrucThucThiTuanTu.onAddDonViThucThiTuanTu(
+      //   onThucThiTuanTu: () async {
+      //     await getThuocTinhTaiNguyenPhuongTien?.onTruyXuatTaiNguyenHinhAnhNgoaiHinh(
+      //       maDinhDanh: getHIEUUNGVACHAMTANGCUONGCLASSSS00ASS010SS010?.getMaDinhDanhPhuongTien,
+      //       thuocTinhHinhAnh: getHIEUUNGVACHAMTANGCUONGCLASSSS00ASS010SS010?.getThuocTinhPhuongTien?.getThuocTinhHinhAnh,
+      //     );
+      //   },
+      // );
+      // cauTrucThucThiTuanTu.onAddDonViThucThiTuanTu(
+      //   onThucThiTuanTu: () async {
+      //     await getThuocTinhTaiNguyenPhuongTien?.onTruyXuatTaiNguyenHinhAnhNgoaiHinh(
+      //       maDinhDanh: getHIEUUNGVACHAMTANGCUONGCLASSSS00ASS010SS020?.getMaDinhDanhPhuongTien,
+      //       thuocTinhHinhAnh: getHIEUUNGVACHAMTANGCUONGCLASSSS00ASS010SS020?.getThuocTinhPhuongTien?.getThuocTinhHinhAnh,
+      //     );
+      //   },
+      // );
+      // cauTrucThucThiTuanTu.onAddDonViThucThiTuanTu(
+      //   onThucThiTuanTu: () async {
+      //     await getThuocTinhTaiNguyenPhuongTien?.onTruyXuatTaiNguyenHinhAnhNgoaiHinh(
+      //       maDinhDanh: getHIEUUNGVACHAMTANGCUONGCLASSSS00ASS010SS030?.getMaDinhDanhPhuongTien,
+      //       thuocTinhHinhAnh: getHIEUUNGVACHAMTANGCUONGCLASSSS00ASS010SS030?.getThuocTinhPhuongTien?.getThuocTinhHinhAnh,
+      //     );
+      //   },
+      // );
+      // cauTrucThucThiTuanTu.onAddDonViThucThiTuanTu(
+      //   onThucThiTuanTu: () async {
+      //     await getThuocTinhTaiNguyenPhuongTien?.onTruyXuatTaiNguyenHinhAnhNgoaiHinh(
+      //       maDinhDanh: getHIEUUNGVACHAMPHANTHUONGCLASSSS00ASS010SS010?.getMaDinhDanhPhuongTien,
+      //       thuocTinhHinhAnh: getHIEUUNGVACHAMPHANTHUONGCLASSSS00ASS010SS010?.getThuocTinhPhuongTien?.getThuocTinhHinhAnh,
+      //     );
+      //   },
+      // );
+      // cauTrucThucThiTuanTu.onAddDonViThucThiTuanTu(
+      //   onThucThiTuanTu: () async {
+      //     await getThuocTinhTaiNguyenPhuongTien?.onTruyXuatTaiNguyenHinhAnhNgoaiHinh(
+      //       maDinhDanh: getHIEUUNGVACHAMPHANTHUONGCLASSSS00ASS010SS020?.getMaDinhDanhPhuongTien,
+      //       thuocTinhHinhAnh: getHIEUUNGVACHAMPHANTHUONGCLASSSS00ASS010SS020?.getThuocTinhPhuongTien?.getThuocTinhHinhAnh,
+      //     );
+      //   },
+      // );
+      // cauTrucThucThiTuanTu.onAddDonViThucThiTuanTu(
+      //   onThucThiTuanTu: () async {
+      //     await getThuocTinhTaiNguyenPhuongTien?.onTruyXuatTaiNguyenHinhAnhNgoaiHinh(
+      //       maDinhDanh: getHIEUUNGVACHAMPHANTHUONGCLASSSS00ASS010SS030?.getMaDinhDanhPhuongTien,
+      //       thuocTinhHinhAnh: getHIEUUNGVACHAMPHANTHUONGCLASSSS00ASS010SS030?.getThuocTinhPhuongTien?.getThuocTinhHinhAnh,
+      //     );
+      //   },
+      // );
+      cauTrucThucThiTuanTu.onAddDonViThucThiTuanTu(
+        onThucThiTuanTu: () async {
+          await getThuocTinhTaiNguyenPhuongTien?.onTruyXuatTaiNguyenHinhAnhNgoaiHinh(
+            maDinhDanh: getHIEUUNGVACHAMCONGKICHCLASSSS00BSS010SS010?.getMaDinhDanhPhuongTien,
+            thuocTinhHinhAnh: getHIEUUNGVACHAMCONGKICHCLASSSS00BSS010SS010?.getThuocTinhPhuongTien?.getThuocTinhHinhAnh,
+          );
+        },
+      );
+      cauTrucThucThiTuanTu.onAddDonViThucThiTuanTu(
+        onThucThiTuanTu: () async {
+          await getThuocTinhTaiNguyenPhuongTien?.onTruyXuatTaiNguyenHinhAnhNgoaiHinh(
+            maDinhDanh: getHIEUUNGVACHAMCONGKICHCLASSSS00BSS010SS020?.getMaDinhDanhPhuongTien,
+            thuocTinhHinhAnh: getHIEUUNGVACHAMCONGKICHCLASSSS00BSS010SS020?.getThuocTinhPhuongTien?.getThuocTinhHinhAnh,
+          );
+        },
+      );
+      cauTrucThucThiTuanTu.onAddDonViThucThiTuanTu(
+        onThucThiTuanTu: () async {
+          await getThuocTinhTaiNguyenPhuongTien?.onTruyXuatTaiNguyenHinhAnhNgoaiHinh(
+            maDinhDanh: getHIEUUNGVACHAMCONGKICHCLASSSS00BSS010SS030?.getMaDinhDanhPhuongTien,
+            thuocTinhHinhAnh: getHIEUUNGVACHAMCONGKICHCLASSSS00BSS010SS030?.getThuocTinhPhuongTien?.getThuocTinhHinhAnh,
+          );
+        },
+      );
+      cauTrucThucThiTuanTu.onAddDonViThucThiTuanTu(
+        onThucThiTuanTu: () async {
+          await getThuocTinhTaiNguyenPhuongTien?.onTruyXuatTaiNguyenHinhAnhNgoaiHinh(
+            maDinhDanh: getHIEUUNGVACHAMCONGKICHCLASSSS00BSS010SS040?.getMaDinhDanhPhuongTien,
+            thuocTinhHinhAnh: getHIEUUNGVACHAMCONGKICHCLASSSS00BSS010SS040?.getThuocTinhPhuongTien?.getThuocTinhHinhAnh,
+          );
+        },
+      );
+      cauTrucThucThiTuanTu.onAddDonViThucThiTuanTu(
+        onThucThiTuanTu: () async {
+          await getThuocTinhTaiNguyenPhuongTien?.onTruyXuatTaiNguyenHinhAnhNgoaiHinh(
+            maDinhDanh: getHIEUUNGVACHAMCONGKICHCLASSSS00BSS010SS050?.getMaDinhDanhPhuongTien,
+            thuocTinhHinhAnh: getHIEUUNGVACHAMCONGKICHCLASSSS00BSS010SS050?.getThuocTinhPhuongTien?.getThuocTinhHinhAnh,
+          );
+        },
+      );
+
+      cauTrucThucThiTuanTu.onThucThiHoanTat = onThucThiHoanTat;
+
+      cauTrucThucThiTuanTu.onThucThiTuanTu(interval: const Duration(milliseconds: 500));
+    } catch (e) {
+      await onReportRootIssue(nameFunction: 'onTaiTaiNguyenMaster');
+    }
+
+    ///
+    return;
+  }
+
+  /// -----
+  /// TODO:
+  /// -----
+  Future<void> onGiaiPhongTaiNguyenMaster({required Future<void> Function()? onThucThiHoanTat}) async {
+    try {
+      CAUTRUCTHUCTHITUANTUCOBAN? cauTrucThucThiTuanTu = CAUTRUCTHUCTHITUANTUCOBAN.onMacDinh();
+      cauTrucThucThiTuanTu.onThucThiHoanTat = onThucThiHoanTat;
+
+      if (getDanhSachPhuongTienTaiTaiNguyen.isNotEmpty == true && getDanhSachPhuongTienTaiTaiNguyen.length < 100) {
+        for (int index = 0; index < getDanhSachPhuongTienTaiTaiNguyen.length; index++) {
+          cauTrucThucThiTuanTu.onAddDonViThucThiTuanTu(
+            onThucThiTuanTu: () async {
+              await getThuocTinhTaiNguyenPhuongTien?.onGiaiPhongTaiNguyenHinhAnhPhuongTienRS050TheoTuanTu(
+                maDinhDanh: null,
+                thuocTinhHinhAnh: getDanhSachPhuongTienTaiTaiNguyen[index],
+                onThucThiHoanTat: () async {
+                  getDanhSachPhuongTienTaiTaiNguyen.remove(getDanhSachPhuongTienTaiTaiNguyen[index]);
+                },
+              );
+            },
+          );
+        }
+      }
+
+      cauTrucThucThiTuanTu.onThucThiHoanTat = onThucThiHoanTat;
+
+      await cauTrucThucThiTuanTu.onThucThiTuanTu(interval: const Duration(milliseconds: 100));
+    } catch (e) {
+      await onReportRootIssue(nameFunction: 'onTaiTaiNguyenMaster');
+    }
+
+    ///
+    return;
+  }
+
   /// -----
   /// TODO:
   /// -----
@@ -1906,14 +1927,17 @@ class QUANLYTRANGTHAIHANGARPHUONGTIEN with CAUTRUCTHUCTHICOBAN {
       if (getThuocTinhTaiNguyenPhuongTien?.getMapTaiNguyenHinhAnhNgoaiHinh?[maDinhDanhPhuongTien]?.getDonViHinhAnhSpriteNgoaiHinh?.getSpriteAnimation?.frames.isNotEmpty == true) {
         await donViSprite?.caiDatSpriteAnimation(value: getThuocTinhTaiNguyenPhuongTien?.getMapTaiNguyenHinhAnhNgoaiHinh?[maDinhDanhPhuongTien]?.getDonViHinhAnhSpriteNgoaiHinh?.getSpriteAnimation);
       } else {
-        if (getThuocTinhTaiNguyenPhuongTien?.getMapTaiNguyenHinhAnhNgoaiHinh?['[MONSTERDSTPCLASSSS00ASS010SS010]']?.getDonViHinhAnhSpriteNgoaiHinh?.getSpriteAnimation?.frames
-            .isNotEmpty == true) {
+        if (getThuocTinhTaiNguyenPhuongTien?.getMapTaiNguyenHinhAnhNgoaiHinh?['[MONSTERDSTPCLASSSS00ASS010SS010]']?.getDonViHinhAnhSpriteNgoaiHinh?.getSpriteAnimation?.frames.isNotEmpty == true) {
           await donViSprite?.caiDatSpriteAnimation(
-              value: getThuocTinhTaiNguyenPhuongTien?.getMapTaiNguyenHinhAnhNgoaiHinh?['[MONSTERDSTPCLASSSS00ASS010SS010]']?.getDonViHinhAnhSpriteNgoaiHinh?.getSpriteAnimation);
+            value: getThuocTinhTaiNguyenPhuongTien?.getMapTaiNguyenHinhAnhNgoaiHinh?['[MONSTERDSTPCLASSSS00ASS010SS010]']?.getDonViHinhAnhSpriteNgoaiHinh?.getSpriteAnimation,
+          );
         }
       }
     }
   }
+
+  final List<THUOCTINHHINHANHCOBAN?> _danhSachPhuongTienTaiTaiNguyen = [];
+  List<THUOCTINHHINHANHCOBAN?> get getDanhSachPhuongTienTaiTaiNguyen => _danhSachPhuongTienTaiTaiNguyen;
 
   Future<void> onTaiTaiNguyenPhuongTienTheoMaDinhDanh({required String? maDinhDanhPhuongTien}) async {
     // await getThuocTinhTaiNguyenPhuongTien
@@ -1934,6 +1958,8 @@ class QUANLYTRANGTHAIHANGARPHUONGTIEN with CAUTRUCTHUCTHICOBAN {
       thuocTinhHinhAnh: getThuocTinhTaiNguyenPhuongTien?.getMapTaiNguyenHinhAnhNgoaiHinh?[maDinhDanhPhuongTien],
       onThucThiHoanTat: () {},
     );
+
+    getDanhSachPhuongTienTaiTaiNguyen.add(getThuocTinhTaiNguyenPhuongTien?.getMapTaiNguyenHinhAnhNgoaiHinh?[maDinhDanhPhuongTien]);
 
     ///
     return;
@@ -4720,8 +4746,8 @@ class QUANLYTRANGTHAIHANGARPHUONGTIEN with CAUTRUCTHUCTHICOBAN {
   }
 
   ///
-/// TODO:
-///
+  /// TODO:
+  ///
   HIEUUNGVACHAMCONGKICHCLASSSS00BSS010SS010? _theHIEUUNGVACHAMCONGKICHCLASSSS00BSS010SS010;
   HIEUUNGVACHAMCONGKICHCLASSSS00BSS010SS010? get getHIEUUNGVACHAMCONGKICHCLASSSS00BSS010SS010 => _theHIEUUNGVACHAMCONGKICHCLASSSS00BSS010SS010;
   Future<void> onVoidCaiDatHIEUUNGVACHAMCONGKICHCLASSSS00BSS010SS010({required HIEUUNGVACHAMCONGKICHCLASSSS00BSS010SS010? value, bool? caiDatUuTien}) async {

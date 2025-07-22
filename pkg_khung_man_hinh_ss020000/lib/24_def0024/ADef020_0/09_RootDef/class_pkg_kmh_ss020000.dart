@@ -589,97 +589,101 @@ abstract class KHUNGMANHINHGAMECOSO extends FlameGame with CAUTRUCTHUCTHICOBAN, 
   Future<void> onKhoiDongGameCoSoSS020ChiTiet() async {
     await Future.delayed(Duration.zero);
 
-    // await getGlobalStateManagementSystem?.onGetEntityResourceManagement?.getQuanLyTrangThaiHangarChienDauCo?.onSanSangTaiTaiNguyenChienDauCo();
-    // await getGlobalStateManagementSystem?.onGetEntityResourceManagement?.getQuanLyTrangThaiHangarChienDauCo?.onTaiTaiNguyenChienDauCo();
-    CAUTRUCTHUCTHITUANTUCOBAN? cauTrucThucThiTuanTu;
-    cauTrucThucThiTuanTu = CAUTRUCTHUCTHITUANTUCOBAN.onMacDinh();
+    /// await getGlobalStateManagementSystem?.onGetEntityResourceManagement?.getQuanLyTrangThaiHangarChienDauCo?.onSanSangTaiTaiNguyenChienDauCo();
+    /// await getGlobalStateManagementSystem?.onGetEntityResourceManagement?.getQuanLyTrangThaiHangarChienDauCo?.onTaiTaiNguyenChienDauCo();
+    // CAUTRUCTHUCTHITUANTUCOBAN? cauTrucThucThiTuanTu;
+    // cauTrucThucThiTuanTu = CAUTRUCTHUCTHITUANTUCOBAN.onMacDinh();
+    //
+    // cauTrucThucThiTuanTu.onAddDonViThucThiTuanTu(
+    //   onThucThiTuanTu: () async {
+    //     await getGlobalStateManagementSystem?.onGetEntityResourceManagement?.getQuanLyTrangThaiHangarChienDauCo?.onTaiTaiNguyenChienDauCo00E03SS010(onThucThiHoanTat: null);
+    //   },
+    // );
+    // cauTrucThucThiTuanTu.onAddDonViThucThiTuanTu(
+    //   onThucThiTuanTu: () async {
+    //     await getGlobalStateManagementSystem?.onGetEntityResourceManagement?.getQuanLyTrangThaiHangarChienDauCo?.onTaiTaiNguyenChienDauCo00E03SS020(onThucThiHoanTat: null);
+    //   },
+    // );
+    // cauTrucThucThiTuanTu.onAddDonViThucThiTuanTu(
+    //   onThucThiTuanTu: () async {
+    //     await getGlobalStateManagementSystem?.onGetEntityResourceManagement?.getQuanLyTrangThaiHangarChienDauCo?.onTaiTaiNguyenChienDauCo00E03SS030(onThucThiHoanTat: null);
+    //   },
+    // );
+    // cauTrucThucThiTuanTu.onAddDonViThucThiTuanTu(
+    //   onThucThiTuanTu: () async {
+    //     await getGlobalStateManagementSystem?.onGetEntityResourceManagement?.getQuanLyTrangThaiHangarChienDauCo?.onTaiTaiNguyenChienDauCo00D04SS010(onThucThiHoanTat: null);
+    //   },
+    // );
+    // cauTrucThucThiTuanTu.onAddDonViThucThiTuanTu(
+    //   onThucThiTuanTu: () async {
+    //     await getGlobalStateManagementSystem?.onGetEntityResourceManagement?.getQuanLyTrangThaiHangarChienDauCo?.onTaiTaiNguyenChienDauCo00C05SS010(onThucThiHoanTat: null);
+    //   },
+    // );
+    // cauTrucThucThiTuanTu.onAddDonViThucThiTuanTu(
+    //   onThucThiTuanTu: () async {
+    //     await getGlobalStateManagementSystem?.onGetEntityResourceManagement?.getQuanLyTrangThaiHangarChienDauCo?.onTaiTaiNguyenChienDauCo00B06SS010(onThucThiHoanTat: null);
+    //   },
+    // );
+    // cauTrucThucThiTuanTu.onAddDonViThucThiTuanTu(
+    //   onThucThiTuanTu: () async {
+    //     await getGlobalStateManagementSystem?.onGetEntityResourceManagement?.getQuanLyTrangThaiHangarChienDauCo?.onTaiTaiNguyenChienDauCo00A07SS010(onThucThiHoanTat: null);
+    //   },
+    // );
+    // cauTrucThucThiTuanTu.onAddDonViThucThiTuanTu(
+    //   onThucThiTuanTu: () async {
+    //     await getGlobalStateManagementSystem?.onGetEntityResourceManagement?.getQuanLyTrangThaiHangarChienDauCo?.onTaiTaiNguyenChienDauCo00S08SS010(onThucThiHoanTat: null);
+    //   },
+    // );
+    // cauTrucThucThiTuanTu.onAddDonViThucThiTuanTu(
+    //   onThucThiTuanTu: () async {
+    //     await getGlobalStateManagementSystem?.onGetEntityResourceManagement?.getQuanLyTrangThaiHangarChienDauCo?.onTaiTaiNguyenChienDauCo0SS09SS010(onThucThiHoanTat: null);
+    //   },
+    // );
+    // cauTrucThucThiTuanTu.onAddDonViThucThiTuanTu(
+    //   onThucThiTuanTu: () async {
+    //     await getGlobalStateManagementSystem?.onGetEntityResourceManagement?.getQuanLyTrangThaiHangarChienDauCo?.onTaiTaiNguyenChienDauCo0SS09SS020(onThucThiHoanTat: null);
+    //   },
+    // );
+    // cauTrucThucThiTuanTu.onAddDonViThucThiTuanTu(
+    //   onThucThiTuanTu: () async {
+    //     await getGlobalStateManagementSystem?.onGetEntityResourceManagement?.getQuanLyTrangThaiHangarChienDauCo?.onTaiTaiNguyenChienDauCo0SS09SS030(onThucThiHoanTat: null);
+    //   },
+    // );
+    // cauTrucThucThiTuanTu.onAddDonViThucThiTuanTu(
+    //   onThucThiTuanTu: () async {
+    //     await getGlobalStateManagementSystem?.onGetEntityResourceManagement?.getQuanLyTrangThaiHangarChienDauCo?.onTaiTaiNguyenChienDauCoSSS10SS010(onThucThiHoanTat: null);
+    //   },
+    // );
+    // cauTrucThucThiTuanTu.onAddDonViThucThiTuanTu(
+    //   onThucThiTuanTu: () async {
+    //     await getGlobalStateManagementSystem?.onGetEntityResourceManagement?.getQuanLyTrangThaiHangarChienDauCo?.onTaiTaiNguyenChienDauCoSSS10SS020(onThucThiHoanTat: null);
+    //   },
+    // );
+    // cauTrucThucThiTuanTu.onAddDonViThucThiTuanTu(
+    //   onThucThiTuanTu: () async {
+    //     await getGlobalStateManagementSystem?.onGetEntityResourceManagement?.getQuanLyTrangThaiHangarChienDauCo?.onTaiTaiNguyenChienDauCoSSS10SS030(onThucThiHoanTat: null);
+    //   },
+    // );
+    // cauTrucThucThiTuanTu.onAddDonViThucThiTuanTu(
+    //   onThucThiTuanTu: () async {
+    //     await getGlobalStateManagementSystem?.onGetEntityResourceManagement?.getQuanLyTrangThaiHangarChienDauCo?.onTaiTaiNguyenChienDauCoSSS10SS040(onThucThiHoanTat: null);
+    //   },
+    // );
+    // cauTrucThucThiTuanTu.onAddDonViThucThiTuanTu(
+    //   onThucThiTuanTu: () async {
+    //     await getGlobalStateManagementSystem?.onGetEntityResourceManagement?.getQuanLyTrangThaiHangarChienDauCo?.onTaiTaiNguyenChienDauCoSSS10SS050(onThucThiHoanTat: null);
+    //   },
+    // );
+    //
+    // cauTrucThucThiTuanTu.onThucThiHoanTat = () async {
+    //   await onKhoiDongGameCoSoSS999();
+    // };
+    //
+    // cauTrucThucThiTuanTu.onThucThiTuanTu(interval: const Duration(milliseconds: 500));
 
-    cauTrucThucThiTuanTu.onAddDonViThucThiTuanTu(
-      onThucThiTuanTu: () async {
-        await getGlobalStateManagementSystem?.onGetEntityResourceManagement?.getQuanLyTrangThaiHangarChienDauCo?.onTaiTaiNguyenChienDauCo00E03SS010(onThucThiHoanTat: null);
-      },
-    );
-    cauTrucThucThiTuanTu.onAddDonViThucThiTuanTu(
-      onThucThiTuanTu: () async {
-        await getGlobalStateManagementSystem?.onGetEntityResourceManagement?.getQuanLyTrangThaiHangarChienDauCo?.onTaiTaiNguyenChienDauCo00E03SS020(onThucThiHoanTat: null);
-      },
-    );
-    cauTrucThucThiTuanTu.onAddDonViThucThiTuanTu(
-      onThucThiTuanTu: () async {
-        await getGlobalStateManagementSystem?.onGetEntityResourceManagement?.getQuanLyTrangThaiHangarChienDauCo?.onTaiTaiNguyenChienDauCo00E03SS030(onThucThiHoanTat: null);
-      },
-    );
-    cauTrucThucThiTuanTu.onAddDonViThucThiTuanTu(
-      onThucThiTuanTu: () async {
-        await getGlobalStateManagementSystem?.onGetEntityResourceManagement?.getQuanLyTrangThaiHangarChienDauCo?.onTaiTaiNguyenChienDauCo00D04SS010(onThucThiHoanTat: null);
-      },
-    );
-    cauTrucThucThiTuanTu.onAddDonViThucThiTuanTu(
-      onThucThiTuanTu: () async {
-        await getGlobalStateManagementSystem?.onGetEntityResourceManagement?.getQuanLyTrangThaiHangarChienDauCo?.onTaiTaiNguyenChienDauCo00C05SS010(onThucThiHoanTat: null);
-      },
-    );
-    cauTrucThucThiTuanTu.onAddDonViThucThiTuanTu(
-      onThucThiTuanTu: () async {
-        await getGlobalStateManagementSystem?.onGetEntityResourceManagement?.getQuanLyTrangThaiHangarChienDauCo?.onTaiTaiNguyenChienDauCo00B06SS010(onThucThiHoanTat: null);
-      },
-    );
-    cauTrucThucThiTuanTu.onAddDonViThucThiTuanTu(
-      onThucThiTuanTu: () async {
-        await getGlobalStateManagementSystem?.onGetEntityResourceManagement?.getQuanLyTrangThaiHangarChienDauCo?.onTaiTaiNguyenChienDauCo00A07SS010(onThucThiHoanTat: null);
-      },
-    );
-    cauTrucThucThiTuanTu.onAddDonViThucThiTuanTu(
-      onThucThiTuanTu: () async {
-        await getGlobalStateManagementSystem?.onGetEntityResourceManagement?.getQuanLyTrangThaiHangarChienDauCo?.onTaiTaiNguyenChienDauCo00S08SS010(onThucThiHoanTat: null);
-      },
-    );
-    cauTrucThucThiTuanTu.onAddDonViThucThiTuanTu(
-      onThucThiTuanTu: () async {
-        await getGlobalStateManagementSystem?.onGetEntityResourceManagement?.getQuanLyTrangThaiHangarChienDauCo?.onTaiTaiNguyenChienDauCo0SS09SS010(onThucThiHoanTat: null);
-      },
-    );
-    cauTrucThucThiTuanTu.onAddDonViThucThiTuanTu(
-      onThucThiTuanTu: () async {
-        await getGlobalStateManagementSystem?.onGetEntityResourceManagement?.getQuanLyTrangThaiHangarChienDauCo?.onTaiTaiNguyenChienDauCo0SS09SS020(onThucThiHoanTat: null);
-      },
-    );
-    cauTrucThucThiTuanTu.onAddDonViThucThiTuanTu(
-      onThucThiTuanTu: () async {
-        await getGlobalStateManagementSystem?.onGetEntityResourceManagement?.getQuanLyTrangThaiHangarChienDauCo?.onTaiTaiNguyenChienDauCo0SS09SS030(onThucThiHoanTat: null);
-      },
-    );
-    cauTrucThucThiTuanTu.onAddDonViThucThiTuanTu(
-      onThucThiTuanTu: () async {
-        await getGlobalStateManagementSystem?.onGetEntityResourceManagement?.getQuanLyTrangThaiHangarChienDauCo?.onTaiTaiNguyenChienDauCoSSS10SS010(onThucThiHoanTat: null);
-      },
-    );
-    cauTrucThucThiTuanTu.onAddDonViThucThiTuanTu(
-      onThucThiTuanTu: () async {
-        await getGlobalStateManagementSystem?.onGetEntityResourceManagement?.getQuanLyTrangThaiHangarChienDauCo?.onTaiTaiNguyenChienDauCoSSS10SS020(onThucThiHoanTat: null);
-      },
-    );
-    cauTrucThucThiTuanTu.onAddDonViThucThiTuanTu(
-      onThucThiTuanTu: () async {
-        await getGlobalStateManagementSystem?.onGetEntityResourceManagement?.getQuanLyTrangThaiHangarChienDauCo?.onTaiTaiNguyenChienDauCoSSS10SS030(onThucThiHoanTat: null);
-      },
-    );
-    cauTrucThucThiTuanTu.onAddDonViThucThiTuanTu(
-      onThucThiTuanTu: () async {
-        await getGlobalStateManagementSystem?.onGetEntityResourceManagement?.getQuanLyTrangThaiHangarChienDauCo?.onTaiTaiNguyenChienDauCoSSS10SS040(onThucThiHoanTat: null);
-      },
-    );
-    cauTrucThucThiTuanTu.onAddDonViThucThiTuanTu(
-      onThucThiTuanTu: () async {
-        await getGlobalStateManagementSystem?.onGetEntityResourceManagement?.getQuanLyTrangThaiHangarChienDauCo?.onTaiTaiNguyenChienDauCoSSS10SS050(onThucThiHoanTat: null);
-      },
-    );
-
-    cauTrucThucThiTuanTu.onThucThiHoanTat = () async {
+    await onTaiTaiNguyenMaster(onThucThiHoanTat: () async {
       await onKhoiDongGameCoSoSS999();
-    };
-
-    cauTrucThucThiTuanTu.onThucThiTuanTu(interval: const Duration(milliseconds: 500));
+    });
 
     /// -----
     /// TODO:

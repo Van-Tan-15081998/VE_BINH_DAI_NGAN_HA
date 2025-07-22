@@ -397,6 +397,42 @@ mixin KICHBANDIEUKHIENTHUOCCAPCOBAN {
   }
 
   /// -----
+  /// TODO: Giải Phóng Tài Nguyên Master
+  /// -----
+  Future<void> onGiaiPhongTaiNguyenMaster({required Future<void> Function()? onThucThiHoanTat}) async {
+    try {
+      /// -----
+      /// TODO:
+      /// -----
+    } catch (e) {
+      await onReportRootIssue(
+        nameFunction: 'onGiaiPhongTaiNguyenMaster',
+      );
+    }
+
+    ///
+    return;
+  }
+
+  /// -----
+  /// TODO: Tải Tài Nguyên Master
+  /// -----
+  Future<void> onTaiTaiNguyenMaster({required Future<void> Function()? onThucThiHoanTat}) async {
+    try {
+      /// -----
+      /// TODO:
+      /// -----
+    } catch (e) {
+      await onReportRootIssue(
+        nameFunction: 'onTaiTaiNguyenMaster',
+      );
+    }
+
+    ///
+    return;
+  }
+
+  /// -----
   /// TODO: Kích Hoạt Khung Màn Hình Thuộc Cấp SS300100 [Tải Tài Nguyên Nhiệm Vụ]
   /// -----
   Future<void> onKichHoatKhungManHinhThuocCapSS300100() async {

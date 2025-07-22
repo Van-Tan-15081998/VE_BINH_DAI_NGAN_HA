@@ -332,6 +332,70 @@ class QUANLYTAINGUYENTHANHPHANGAMEUI with CauTrucThucThiCoBan {
     return;
   }
 
+  Future<void> onGiaiPhongTaiNguyenTichHopTheoTuanTu({required CoreGameUIComponent? thanhPhanGameUI}) async {
+    /// -----
+    /// TODO:
+    /// -----
+    if (thanhPhanGameUI == null || thanhPhanGameUI.getSpriteThanhPhanGameUI?.getDonViSpriteNgoaiHinhGameUI?.getSpriteAnimation == null) {
+      return;
+    }
+
+    CAUTRUCTHUCTHITUANTUCOBAN? cauTrucThucThiTuanTu;
+    cauTrucThucThiTuanTu = CAUTRUCTHUCTHITUANTUCOBAN.onMacDinh();
+
+    int tongSoPart = thanhPhanGameUI.getSpriteThanhPhanGameUI?.getDonViSpriteNgoaiHinhGameUI?.getTongSoLuongThanhPhanTaiNguyen ?? 0;
+
+    cauTrucThucThiTuanTu.onAddDonViThucThiTuanTu(
+      onThucThiTuanTu: () async {
+        await onGiaiPhongTaiNguyenNgoaiHinhThanhPhanGameUIPartSS01(thanhPhanGameUI: thanhPhanGameUI);
+      },
+    );
+    cauTrucThucThiTuanTu.onAddDonViThucThiTuanTu(
+      onThucThiTuanTu: () async {
+        await onGiaiPhongTaiNguyenNgoaiHinhThanhPhanGameUIPartSS02(thanhPhanGameUI: thanhPhanGameUI);
+      },
+    );
+    cauTrucThucThiTuanTu.onAddDonViThucThiTuanTu(
+      onThucThiTuanTu: () async {
+        await onGiaiPhongTaiNguyenNgoaiHinhThanhPhanGameUIPartSS03(thanhPhanGameUI: thanhPhanGameUI);
+      },
+    );
+    cauTrucThucThiTuanTu.onAddDonViThucThiTuanTu(
+      onThucThiTuanTu: () async {
+        await onGiaiPhongTaiNguyenNgoaiHinhThanhPhanGameUIPartSS04(thanhPhanGameUI: thanhPhanGameUI);
+      },
+    );
+    cauTrucThucThiTuanTu.onAddDonViThucThiTuanTu(
+      onThucThiTuanTu: () async {
+        await onGiaiPhongTaiNguyenNgoaiHinhThanhPhanGameUIPartSS05(thanhPhanGameUI: thanhPhanGameUI);
+      },
+    );
+    cauTrucThucThiTuanTu.onAddDonViThucThiTuanTu(
+      onThucThiTuanTu: () async {
+        await onGiaiPhongTaiNguyenNgoaiHinhThanhPhanGameUIPartSS06(thanhPhanGameUI: thanhPhanGameUI);
+      },
+    );
+
+    /// -----
+    /// TODO:
+    /// -----
+    await Future.wait([
+      thanhPhanGameUI.getSpriteThanhPhanGameUI?.getDonViSpriteNgoaiHinhGameUI?.caiDatSpriteAnimation(value: null).catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+
+      thanhPhanGameUI.getSpriteThanhPhanGameUI?.getDonViSpriteNgoaiHinhGameUIPartSS01?.caiDatSpriteAnimation(value: null).catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      thanhPhanGameUI.getSpriteThanhPhanGameUI?.getDonViSpriteNgoaiHinhGameUIPartSS02?.caiDatSpriteAnimation(value: null).catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      thanhPhanGameUI.getSpriteThanhPhanGameUI?.getDonViSpriteNgoaiHinhGameUIPartSS03?.caiDatSpriteAnimation(value: null).catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      thanhPhanGameUI.getSpriteThanhPhanGameUI?.getDonViSpriteNgoaiHinhGameUIPartSS04?.caiDatSpriteAnimation(value: null).catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      thanhPhanGameUI.getSpriteThanhPhanGameUI?.getDonViSpriteNgoaiHinhGameUIPartSS05?.caiDatSpriteAnimation(value: null).catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      thanhPhanGameUI.getSpriteThanhPhanGameUI?.getDonViSpriteNgoaiHinhGameUIPartSS06?.caiDatSpriteAnimation(value: null).catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+    ]);
+
+    cauTrucThucThiTuanTu.onThucThiTuanTu(interval: const Duration(milliseconds: 20));
+
+    ///
+    return;
+  }
+
   Future<void> onTaiTaiNguyenNgoaiHinhThanhPhanGameUIFullPicture({required CoreGameUIComponent? thanhPhanGameUI}) async {
     /// -----
     /// TODO:
@@ -480,6 +544,35 @@ class QUANLYTAINGUYENTHANHPHANGAMEUI with CauTrucThucThiCoBan {
   }
 
   /// -----
+  /// TODO:
+  /// -----
+  Future<void> onGiaiPhongTaiNguyenNgoaiHinhThanhPhanGameUIPartSS01({required CoreGameUIComponent? thanhPhanGameUI}) async {
+    /// -----
+    /// TODO:
+    /// -----
+    String? nguonSpriteSheet = thanhPhanGameUI?.getSpriteThanhPhanGameUI?.getDonViSpriteNgoaiHinhGameUIPartSS01?.getNguonHinhAnh;
+
+    /// -----
+    /// TODO: Tải Tài Nguyên Hình Ảnh
+    /// -----
+    if (nguonSpriteSheet != null && nguonSpriteSheet.isNotEmpty == true) {
+      try {
+        if (getTaiHinhAnh?.containsKey(nguonSpriteSheet) == true) {
+          if (getTaiHinhAnh?.fromCache(nguonSpriteSheet) != null) {
+            // Ảnh đã có trong cache -> xóa
+            getTaiHinhAnh?.clear(nguonSpriteSheet);
+          }
+        }
+      } catch (e) {
+        return;
+      }
+    }
+
+    ///
+    return;
+  }
+
+  /// -----
   /// -----
   /// TODO: Tải Tài Nguyên Ngoại Hình Thành Phần GameUI Part SS02
   /// -----
@@ -557,6 +650,35 @@ class QUANLYTAINGUYENTHANHPHANGAMEUI with CauTrucThucThiCoBan {
                 print('💢💢💢 Truy Xuất Tài Nguyên Hình Ảnh [SpriteSheet - PartSS02] Không Thành Công 💢💢💢: $nguonSpriteSheet');
               }
             });
+      }
+    }
+
+    ///
+    return;
+  }
+
+  /// -----
+  /// TODO:
+  /// -----
+  Future<void> onGiaiPhongTaiNguyenNgoaiHinhThanhPhanGameUIPartSS02({required CoreGameUIComponent? thanhPhanGameUI}) async {
+    /// -----
+    /// TODO:
+    /// -----
+    String? nguonSpriteSheet = thanhPhanGameUI?.getSpriteThanhPhanGameUI?.getDonViSpriteNgoaiHinhGameUIPartSS02?.getNguonHinhAnh;
+
+    /// -----
+    /// TODO: Tải Tài Nguyên Hình Ảnh
+    /// -----
+    if (nguonSpriteSheet != null && nguonSpriteSheet.isNotEmpty == true) {
+      try {
+        if (getTaiHinhAnh?.containsKey(nguonSpriteSheet) == true) {
+          if (getTaiHinhAnh?.fromCache(nguonSpriteSheet) != null) {
+            // Ảnh đã có trong cache -> xóa
+            getTaiHinhAnh?.clear(nguonSpriteSheet);
+          }
+        }
+      } catch (e) {
+        return;
       }
     }
 
@@ -650,6 +772,35 @@ class QUANLYTAINGUYENTHANHPHANGAMEUI with CauTrucThucThiCoBan {
   }
 
   /// -----
+  /// TODO:
+  /// -----
+  Future<void> onGiaiPhongTaiNguyenNgoaiHinhThanhPhanGameUIPartSS03({required CoreGameUIComponent? thanhPhanGameUI}) async {
+    /// -----
+    /// TODO:
+    /// -----
+    String? nguonSpriteSheet = thanhPhanGameUI?.getSpriteThanhPhanGameUI?.getDonViSpriteNgoaiHinhGameUIPartSS03?.getNguonHinhAnh;
+
+    /// -----
+    /// TODO: Tải Tài Nguyên Hình Ảnh
+    /// -----
+    if (nguonSpriteSheet != null && nguonSpriteSheet.isNotEmpty == true) {
+      try {
+        if (getTaiHinhAnh?.containsKey(nguonSpriteSheet) == true) {
+          if (getTaiHinhAnh?.fromCache(nguonSpriteSheet) != null) {
+            // Ảnh đã có trong cache -> xóa
+            getTaiHinhAnh?.clear(nguonSpriteSheet);
+          }
+        }
+      } catch (e) {
+        return;
+      }
+    }
+
+    ///
+    return;
+  }
+
+  /// -----
   /// -----
   /// TODO: Tải Tài Nguyên Ngoại Hình Thành Phần GameUI Part SS04
   /// -----
@@ -727,6 +878,35 @@ class QUANLYTAINGUYENTHANHPHANGAMEUI with CauTrucThucThiCoBan {
                 print('💢💢💢 Truy Xuất Tài Nguyên Hình Ảnh [SpriteSheet - PartSS01] Không Thành Công 💢💢💢: $nguonSpriteSheet');
               }
             });
+      }
+    }
+
+    ///
+    return;
+  }
+
+  /// -----
+  /// TODO:
+  /// -----
+  Future<void> onGiaiPhongTaiNguyenNgoaiHinhThanhPhanGameUIPartSS04({required CoreGameUIComponent? thanhPhanGameUI}) async {
+    /// -----
+    /// TODO:
+    /// -----
+    String? nguonSpriteSheet = thanhPhanGameUI?.getSpriteThanhPhanGameUI?.getDonViSpriteNgoaiHinhGameUIPartSS04?.getNguonHinhAnh;
+
+    /// -----
+    /// TODO: Tải Tài Nguyên Hình Ảnh
+    /// -----
+    if (nguonSpriteSheet != null && nguonSpriteSheet.isNotEmpty == true) {
+      try {
+        if (getTaiHinhAnh?.containsKey(nguonSpriteSheet) == true) {
+          if (getTaiHinhAnh?.fromCache(nguonSpriteSheet) != null) {
+            // Ảnh đã có trong cache -> xóa
+            getTaiHinhAnh?.clear(nguonSpriteSheet);
+          }
+        }
+      } catch (e) {
+        return;
       }
     }
 
@@ -820,6 +1000,35 @@ class QUANLYTAINGUYENTHANHPHANGAMEUI with CauTrucThucThiCoBan {
   }
 
   /// -----
+  /// TODO:
+  /// -----
+  Future<void> onGiaiPhongTaiNguyenNgoaiHinhThanhPhanGameUIPartSS05({required CoreGameUIComponent? thanhPhanGameUI}) async {
+    /// -----
+    /// TODO:
+    /// -----
+    String? nguonSpriteSheet = thanhPhanGameUI?.getSpriteThanhPhanGameUI?.getDonViSpriteNgoaiHinhGameUIPartSS05?.getNguonHinhAnh;
+
+    /// -----
+    /// TODO: Tải Tài Nguyên Hình Ảnh
+    /// -----
+    if (nguonSpriteSheet != null && nguonSpriteSheet.isNotEmpty == true) {
+      try {
+        if (getTaiHinhAnh?.containsKey(nguonSpriteSheet) == true) {
+          if (getTaiHinhAnh?.fromCache(nguonSpriteSheet) != null) {
+            // Ảnh đã có trong cache -> xóa
+            getTaiHinhAnh?.clear(nguonSpriteSheet);
+          }
+        }
+      } catch (e) {
+        return;
+      }
+    }
+
+    ///
+    return;
+  }
+
+  /// -----
   /// -----
   /// TODO: Tải Tài Nguyên Ngoại Hình Thành Phần GameUI Part SS06
   /// -----
@@ -897,6 +1106,35 @@ class QUANLYTAINGUYENTHANHPHANGAMEUI with CauTrucThucThiCoBan {
                 print('💢💢💢 Truy Xuất Tài Nguyên Hình Ảnh [SpriteSheet - PartSS06] Không Thành Công 💢💢💢: $nguonSpriteSheet');
               }
             });
+      }
+    }
+
+    ///
+    return;
+  }
+
+  /// -----
+  /// TODO:
+  /// -----
+  Future<void> onGiaiPhongTaiNguyenNgoaiHinhThanhPhanGameUIPartSS06({required CoreGameUIComponent? thanhPhanGameUI}) async {
+    /// -----
+    /// TODO:
+    /// -----
+    String? nguonSpriteSheet = thanhPhanGameUI?.getSpriteThanhPhanGameUI?.getDonViSpriteNgoaiHinhGameUIPartSS06?.getNguonHinhAnh;
+
+    /// -----
+    /// TODO: Tải Tài Nguyên Hình Ảnh
+    /// -----
+    if (nguonSpriteSheet != null && nguonSpriteSheet.isNotEmpty == true) {
+      try {
+        if (getTaiHinhAnh?.containsKey(nguonSpriteSheet) == true) {
+          if (getTaiHinhAnh?.fromCache(nguonSpriteSheet) != null) {
+            // Ảnh đã có trong cache -> xóa
+            getTaiHinhAnh?.clear(nguonSpriteSheet);
+          }
+        }
+      } catch (e) {
+        return;
       }
     }
 

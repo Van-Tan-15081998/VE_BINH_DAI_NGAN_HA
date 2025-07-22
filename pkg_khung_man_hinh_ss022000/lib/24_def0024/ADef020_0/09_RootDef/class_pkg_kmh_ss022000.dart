@@ -46,6 +46,7 @@ class KHUNGMANHINHCHINH extends KHUNGMANHINHGAMECOSO {
             positionDy: sizeDyManHinhVatLy / 2,
           ),
         );
+        getKhungManHinhMasterLoading?.onCaiDatParentComponent(value: this);
         await getKhungManHinhMasterLoading?.onCaiDatDoUuTien(value: 10);
 
         await getKhungManHinhMasterLoading?.onSetupRoot();
@@ -129,12 +130,11 @@ class KHUNGMANHINHCHINH extends KHUNGMANHINHGAMECOSO {
 
     cauTrucThucThiTuanTuSS020.onAddDonViThucThiTuanTu(
       onThucThiTuanTu: () async {
-        await getGlobalStateManagementSystem?.getBangDieuKhienKichBanChienDauTheoGiaiDoan
-            ?.getQuanLyDieuKhienChuyenKichBanChienDau?.onKhoiDongKichBan(
-            trangThaiTongQuat: getGlobalStateManagementSystem,
-            onThucThiHoanTat: () async {
-              await cauTrucThucThiTuanTuSS030.onThucThiTuanTu();
-            }
+        await getGlobalStateManagementSystem?.getBangDieuKhienKichBanChienDauTheoGiaiDoan?.getQuanLyDieuKhienChuyenKichBanChienDau?.onKhoiDongKichBan(
+          trangThaiTongQuat: getGlobalStateManagementSystem,
+          onThucThiHoanTat: () async {
+            await cauTrucThucThiTuanTuSS030.onThucThiTuanTu();
+          },
         );
       },
     );
@@ -247,8 +247,7 @@ class KHUNGMANHINHCHINH extends KHUNGMANHINHGAMECOSO {
     CAUTRUCTHUCTHITUANTUCOBAN? cauTrucThiThiTuanTu;
     cauTrucThiThiTuanTu = CAUTRUCTHUCTHITUANTUCOBAN(
       onThucThiTuanTuSS010: () async {
-        await getGlobalStateManagementSystem?.getBangDieuKhienKichBanChienDauTheoGiaiDoan?.getQuanLyDieuKhienChuyenKichBanChienDau
-            ?.onTaiTaiNguyenPhuongTienTuanTu(onThucThiHoanTat: onThucThiHoanTat);
+        await getGlobalStateManagementSystem?.getBangDieuKhienKichBanChienDauTheoGiaiDoan?.getQuanLyDieuKhienChuyenKichBanChienDau?.onTaiTaiNguyenPhuongTienTuanTu(onThucThiHoanTat: onThucThiHoanTat);
       },
 
       onThucThiHoanTat: null,
@@ -287,7 +286,13 @@ class KHUNGMANHINHCHINH extends KHUNGMANHINHGAMECOSO {
     /// -----
     await Future.wait([
       onCaiDatQuanLyThanhPhanManHinhThuocCap(
-        value: QUANLYTHANHPHANMANHINHKHUNGMANHINHCHINH(globalStateManagementSystem: getGlobalStateManagementSystem, gameController: this, thanhPhanQuanLyThuocCapTrucTiep: null, sizeDx: getSizeDx, sizeDy: getSizeDy),
+        value: QUANLYTHANHPHANMANHINHKHUNGMANHINHCHINH(
+          globalStateManagementSystem: getGlobalStateManagementSystem,
+          gameController: this,
+          thanhPhanQuanLyThuocCapTrucTiep: null,
+          sizeDx: getSizeDx,
+          sizeDy: getSizeDy,
+        ),
       ).catchError((e) => null),
       onCaiDatQuanLyThanhPhanNutBamThuocCap(
         value: QUANLYTHANHPHANNUTBAMKHUNGMANHINHCHINH(
@@ -431,13 +436,31 @@ class KHUNGMANHINHCHINH extends KHUNGMANHINHGAMECOSO {
         ),
       ).catchError((e) => null),
       onCaiDatQuanLyThanhPhanVanBanThuocCap(
-        value: QUANLYTHANHPHANVANBANKHUNGMANHINHCHINH(globalStateManagementSystem: getGlobalStateManagementSystem, gameController: this, thanhPhanQuanLyThuocCapTrucTiep: null, sizeDx: getSizeDx, sizeDy: getSizeDy),
+        value: QUANLYTHANHPHANVANBANKHUNGMANHINHCHINH(
+          globalStateManagementSystem: getGlobalStateManagementSystem,
+          gameController: this,
+          thanhPhanQuanLyThuocCapTrucTiep: null,
+          sizeDx: getSizeDx,
+          sizeDy: getSizeDy,
+        ),
       ).catchError((e) => null),
       onCaiDatQuanLyThanhPhanHinhAnhThuocCap(
-        value: QUANLYTHANHPHANHINHANHKHUNGMANHINHCHINH(globalStateManagementSystem: getGlobalStateManagementSystem, gameController: this, thanhPhanQuanLyThuocCapTrucTiep: null, sizeDx: getSizeDx, sizeDy: getSizeDy),
+        value: QUANLYTHANHPHANHINHANHKHUNGMANHINHCHINH(
+          globalStateManagementSystem: getGlobalStateManagementSystem,
+          gameController: this,
+          thanhPhanQuanLyThuocCapTrucTiep: null,
+          sizeDx: getSizeDx,
+          sizeDy: getSizeDy,
+        ),
       ).catchError((e) => null),
       onCaiDatQuanLyThanhPhanTichHopThuocCap(
-        value: QUANLYTHANHPHANTICHHOPKHUNGMANHINHCHINH(globalStateManagementSystem: getGlobalStateManagementSystem, gameController: this, thanhPhanQuanLyThuocCapTrucTiep: null, sizeDx: getSizeDx, sizeDy: getSizeDy),
+        value: QUANLYTHANHPHANTICHHOPKHUNGMANHINHCHINH(
+          globalStateManagementSystem: getGlobalStateManagementSystem,
+          gameController: this,
+          thanhPhanQuanLyThuocCapTrucTiep: null,
+          sizeDx: getSizeDx,
+          sizeDy: getSizeDy,
+        ),
       ).catchError((e) => null),
     ]);
 
@@ -479,7 +502,7 @@ class KHUNGMANHINHCHINH extends KHUNGMANHINHGAMECOSO {
     // add(KHUNGMANHINHSS00230(trangThaiTongQuat: getGlobalState));
     // add(KHUNGMANHINHSS00240(trangThaiTongQuat: getGlobalState));
 
-    getGlobalStateManagementSystem?.getSuKienVaChamTrongChienDau?.onTaiTaiNguyen();
+    // getGlobalStateManagementSystem?.getSuKienVaChamTrongChienDau?.onTaiTaiNguyen();
 
     ///
     if (getQuanLyThanhPhanManHinhThuocCap is QUANLYTHANHPHANMANHINHKHUNGMANHINHCHINH) {
@@ -495,6 +518,116 @@ class KHUNGMANHINHCHINH extends KHUNGMANHINHGAMECOSO {
           }
         },
       );
+    }
+
+    ///
+    return;
+  }
+
+  /// -----
+  /// TODO: Tải Tài Nguyên Master
+  /// -----
+  @override
+  Future<void> onTaiTaiNguyenMaster({required Future<void> Function()? onThucThiHoanTat}) async {
+    try {
+      /// -----
+      /// TODO:
+      /// -----
+      CAUTRUCTHUCTHITUANTUCOBAN? cauTrucThucThiTuanTuSS010;
+      cauTrucThucThiTuanTuSS010 = CAUTRUCTHUCTHITUANTUCOBAN.onMacDinh();
+
+      CAUTRUCTHUCTHITUANTUCOBAN? cauTrucThucThiTuanTuSS020;
+      cauTrucThucThiTuanTuSS020 = CAUTRUCTHUCTHITUANTUCOBAN.onMacDinh();
+
+      CAUTRUCTHUCTHITUANTUCOBAN? cauTrucThucThiTuanTuSS030;
+      cauTrucThucThiTuanTuSS030 = CAUTRUCTHUCTHITUANTUCOBAN.onMacDinh();
+
+      cauTrucThucThiTuanTuSS010.onAddDonViThucThiTuanTu(
+        onThucThiTuanTu: () async {
+          getGlobalStateManagementSystem?.getQuanLyTrangThaiTPGAMEUI?.onTaiTaiNguyenMaster(
+            onThucThiHoanTat: () async {
+              await cauTrucThucThiTuanTuSS020?.onThucThiTuanTu(interval: const Duration(milliseconds: 250));
+            },
+          );
+        },
+      );
+
+      cauTrucThucThiTuanTuSS020.onAddDonViThucThiTuanTu(
+        onThucThiTuanTu: () async {
+          getGlobalStateManagementSystem?.onGetEntityResourceManagement?.getQuanLyTrangThaiHangarChienDauCo?.onTaiTaiNguyenMaster(
+            onThucThiHoanTat: () async {
+              await cauTrucThucThiTuanTuSS030?.onThucThiTuanTu(interval: const Duration(milliseconds: 300));
+            },
+          );
+        },
+      );
+
+      cauTrucThucThiTuanTuSS030.onAddDonViThucThiTuanTu(
+        onThucThiTuanTu: () async {
+          getGlobalStateManagementSystem?.onGetEntityResourceManagement?.getQuanLyTrangThaiHangarPhuongTien?.onTaiTaiNguyenMaster(onThucThiHoanTat: onThucThiHoanTat);
+        },
+      );
+
+      cauTrucThucThiTuanTuSS030.onThucThiHoanTat = onThucThiHoanTat;
+
+      await cauTrucThucThiTuanTuSS010.onThucThiTuanTu(interval: const Duration(milliseconds: 200));
+    } catch (e) {
+      await onReportRootIssue(nameFunction: 'onTaiTaiNguyenMaster');
+    }
+
+    ///
+    return;
+  }
+
+  /// -----
+  /// TODO: Tải Tài Nguyên Master
+  /// -----
+  @override
+  Future<void> onGiaiPhongTaiNguyenMaster({required Future<void> Function()? onThucThiHoanTat}) async {
+    try {
+      /// -----
+      /// TODO:
+      /// -----
+      CAUTRUCTHUCTHITUANTUCOBAN? cauTrucThucThiTuanTuSS010;
+      cauTrucThucThiTuanTuSS010 = CAUTRUCTHUCTHITUANTUCOBAN.onMacDinh();
+
+      CAUTRUCTHUCTHITUANTUCOBAN? cauTrucThucThiTuanTuSS020;
+      cauTrucThucThiTuanTuSS020 = CAUTRUCTHUCTHITUANTUCOBAN.onMacDinh();
+
+      CAUTRUCTHUCTHITUANTUCOBAN? cauTrucThucThiTuanTuSS030;
+      cauTrucThucThiTuanTuSS030 = CAUTRUCTHUCTHITUANTUCOBAN.onMacDinh();
+
+      cauTrucThucThiTuanTuSS010.onAddDonViThucThiTuanTu(
+        onThucThiTuanTu: () async {
+          getGlobalStateManagementSystem?.getQuanLyTrangThaiTPGAMEUI?.onGiaiPhongTaiNguyenMaster(
+            onThucThiHoanTat: () async {
+              await cauTrucThucThiTuanTuSS020?.onThucThiTuanTu(interval: const Duration(milliseconds: 100));
+            },
+          );
+        },
+      );
+
+      cauTrucThucThiTuanTuSS020.onAddDonViThucThiTuanTu(
+        onThucThiTuanTu: () async {
+          getGlobalStateManagementSystem?.onGetEntityResourceManagement?.getQuanLyTrangThaiHangarChienDauCo?.onGiaiPhongTaiNguyenMaster(
+            onThucThiHoanTat: () async {
+              await cauTrucThucThiTuanTuSS030?.onThucThiTuanTu(interval: const Duration(milliseconds: 100));
+            },
+          );
+        },
+      );
+
+      cauTrucThucThiTuanTuSS030.onAddDonViThucThiTuanTu(
+        onThucThiTuanTu: () async {
+          getGlobalStateManagementSystem?.onGetEntityResourceManagement?.getQuanLyTrangThaiHangarPhuongTien?.onGiaiPhongTaiNguyenMaster(onThucThiHoanTat: onThucThiHoanTat);
+        },
+      );
+
+      cauTrucThucThiTuanTuSS030.onThucThiHoanTat = onThucThiHoanTat;
+
+      await cauTrucThucThiTuanTuSS010.onThucThiTuanTu(interval: const Duration(milliseconds: 100));
+    } catch (e) {
+      await onReportRootIssue(nameFunction: 'onTaiTaiNguyenMaster');
     }
 
     ///

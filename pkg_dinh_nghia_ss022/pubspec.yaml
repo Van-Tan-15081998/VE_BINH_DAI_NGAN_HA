@@ -50,6 +50,17 @@ flutter:
 
   # To add assets to your package, add an assets section, like this:
   assets:
+
+    #_____[THANH_PHAN_GAMEUI_SPRITE_ANIMATION_MAC_DINH]_____
+    - lib/28_def0028/ADef010_0/08_SubDefs/Def10_2/07_Resized/Def25/
+    - lib/28_def0028/ADef010_0/08_SubDefs/Def10_2/07_Resized/Def50/
+    - lib/28_def0028/ADef010_0/08_SubDefs/Def10_2/07_Resized/Def90/
+
+    #_____[THANH_PHAN_GAMEUI_SPRITE_MAC_DINH]_____
+    - lib/28_def0028/ADef010_0/08_SubDefs/Def20_2/07_Resized/Def25/
+    - lib/28_def0028/ADef010_0/08_SubDefs/Def20_2/07_Resized/Def50/
+    - lib/28_def0028/ADef010_0/08_SubDefs/Def20_2/07_Resized/Def90/
+
     - lib/28_def0028/ADef210_0/08_SubDefs/Def210_2/07_Resized/Def50/
     - lib/28_def0028/ADef210_0/08_SubDefs/Def210_2/07_Resized/Def90/
     - lib/28_def0028/ADef210_0/08_SubDefs/Def220_2/07_Resized/Def50/

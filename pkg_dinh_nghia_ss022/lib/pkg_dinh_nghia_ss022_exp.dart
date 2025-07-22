@@ -24,6 +24,12 @@ export '26_def0026/ADef20_0/08_SubDefs/Def30_2/09_RootDef/class_20000000.dart';
 /// TODO: _____[THANH_PHAN_GAMEUI_CO_BAN]_____
 export '26_def0026/ADef20_0/09_RootDef/class_20000000.dart';
 
+/// TODO: _____[THANH_PHAN_GAMEUI_SPRITE_ANIMATION_MAC_DINH]_____
+export '28_def0028/ADef010_0/08_SubDefs/Def10_2/09_RootDef/class_gameui.dart';
+
+/// TODO: _____[THANH_PHAN_GAMEUI_SPRITE_MAC_DINH]_____
+export '28_def0028/ADef010_0/08_SubDefs/Def20_2/09_RootDef/class_gameui.dart';
+
 /// TODO: _____[THANH_NGANG_CHI_SO_MAU_CHIEN_DAU_CO]_____
 export '28_def0028/ADef210_0/08_SubDefs/Def210_2/09_RootDef/class_gameui.dart';
 

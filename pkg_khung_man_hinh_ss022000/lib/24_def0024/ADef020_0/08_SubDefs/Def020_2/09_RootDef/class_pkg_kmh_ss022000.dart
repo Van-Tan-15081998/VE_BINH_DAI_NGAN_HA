@@ -1,5 +1,6 @@
 import 'package:flame/components.dart';
 import 'package:flame/game.dart';
+import 'package:package_export/package_export.dart';
 import 'package:pkg_khung_man_hinh_ss020000/pkg_khung_man_hinh_ss020000_exp.dart';
 import 'package:pkg_khung_man_hinh_ss021000/pkg_khung_man_hinh_ss021000_exp.dart';
 import 'package:pkg_khung_man_hinh_ss022100/pkg_khung_man_hinh_ss022100_exp.dart';
@@ -450,14 +451,10 @@ class QUANLYTHANHPHANMANHINHKHUNGMANHINHCHINH extends QUANLYTHANHPHANMANHINHTHUO
                 )
                 .catchError((e) => null) ??
             onReportRootIssue(nameFunction: 'onKichHoatKhungManHinhThuocCapTabSS010'),
-        getKhungManHinhChinhTabSS020TT?.onHuyKichHoatThanhPhanManHinhThuocCap().catchError((e) => null) ??
-            onReportRootIssue(nameFunction: 'onKichHoatKhungManHinhThuocCapTabSS010'),
-        getKhungManHinhChinhTabSS030CD?.onHuyKichHoatThanhPhanManHinhThuocCap().catchError((e) => null) ??
-            onReportRootIssue(nameFunction: 'onKichHoatKhungManHinhThuocCapTabSS010'),
-        getKhungManHinhChinhTabSS040TV?.onHuyKichHoatThanhPhanManHinhThuocCap().catchError((e) => null) ??
-            onReportRootIssue(nameFunction: 'onKichHoatKhungManHinhThuocCapTabSS010'),
-        getKhungManHinhChinhTabSS050CD?.onHuyKichHoatThanhPhanManHinhThuocCap().catchError((e) => null) ??
-            onReportRootIssue(nameFunction: 'onKichHoatKhungManHinhThuocCapTabSS010'),
+        getKhungManHinhChinhTabSS020TT?.onHuyKichHoatThanhPhanManHinhThuocCap().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onKichHoatKhungManHinhThuocCapTabSS010'),
+        getKhungManHinhChinhTabSS030CD?.onHuyKichHoatThanhPhanManHinhThuocCap().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onKichHoatKhungManHinhThuocCapTabSS010'),
+        getKhungManHinhChinhTabSS040TV?.onHuyKichHoatThanhPhanManHinhThuocCap().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onKichHoatKhungManHinhThuocCapTabSS010'),
+        getKhungManHinhChinhTabSS050CD?.onHuyKichHoatThanhPhanManHinhThuocCap().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onKichHoatKhungManHinhThuocCapTabSS010'),
       ]);
 
       ///
@@ -479,8 +476,7 @@ class QUANLYTHANHPHANMANHINHKHUNGMANHINHCHINH extends QUANLYTHANHPHANMANHINHTHUO
       /// TODO:
       /// -----
       await Future.wait([
-        getKhungManHinhChinhTabSS010CH?.onHuyKichHoatThanhPhanManHinhThuocCap().catchError((e) => null) ??
-            onReportRootIssue(nameFunction: 'onKichHoatKhungManHinhThuocCapTabSS020'),
+        getKhungManHinhChinhTabSS010CH?.onHuyKichHoatThanhPhanManHinhThuocCap().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onKichHoatKhungManHinhThuocCapTabSS020'),
         getKhungManHinhChinhTabSS020TT
                 ?.onKichHoatThanhPhanManHinhThuocCap(
                   onHuyKichHoat: () {
@@ -489,12 +485,9 @@ class QUANLYTHANHPHANMANHINHKHUNGMANHINHCHINH extends QUANLYTHANHPHANMANHINHTHUO
                 )
                 .catchError((e) => null) ??
             onReportRootIssue(nameFunction: 'onKichHoatKhungManHinhThuocCapTabSS020'),
-        getKhungManHinhChinhTabSS030CD?.onHuyKichHoatThanhPhanManHinhThuocCap().catchError((e) => null) ??
-            onReportRootIssue(nameFunction: 'onKichHoatKhungManHinhThuocCapTabSS020'),
-        getKhungManHinhChinhTabSS040TV?.onHuyKichHoatThanhPhanManHinhThuocCap().catchError((e) => null) ??
-            onReportRootIssue(nameFunction: 'onKichHoatKhungManHinhThuocCapTabSS020'),
-        getKhungManHinhChinhTabSS050CD?.onHuyKichHoatThanhPhanManHinhThuocCap().catchError((e) => null) ??
-            onReportRootIssue(nameFunction: 'onKichHoatKhungManHinhThuocCapTabSS020'),
+        getKhungManHinhChinhTabSS030CD?.onHuyKichHoatThanhPhanManHinhThuocCap().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onKichHoatKhungManHinhThuocCapTabSS020'),
+        getKhungManHinhChinhTabSS040TV?.onHuyKichHoatThanhPhanManHinhThuocCap().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onKichHoatKhungManHinhThuocCapTabSS020'),
+        getKhungManHinhChinhTabSS050CD?.onHuyKichHoatThanhPhanManHinhThuocCap().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onKichHoatKhungManHinhThuocCapTabSS020'),
       ]);
 
       ///
@@ -516,10 +509,8 @@ class QUANLYTHANHPHANMANHINHKHUNGMANHINHCHINH extends QUANLYTHANHPHANMANHINHTHUO
       /// TODO:
       /// -----
       await Future.wait([
-        getKhungManHinhChinhTabSS010CH?.onHuyKichHoatThanhPhanManHinhThuocCap().catchError((e) => null) ??
-            onReportRootIssue(nameFunction: 'onKichHoatKhungManHinhThuocCapTabSS030'),
-        getKhungManHinhChinhTabSS020TT?.onHuyKichHoatThanhPhanManHinhThuocCap().catchError((e) => null) ??
-            onReportRootIssue(nameFunction: 'onKichHoatKhungManHinhThuocCapTabSS030'),
+        getKhungManHinhChinhTabSS010CH?.onHuyKichHoatThanhPhanManHinhThuocCap().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onKichHoatKhungManHinhThuocCapTabSS030'),
+        getKhungManHinhChinhTabSS020TT?.onHuyKichHoatThanhPhanManHinhThuocCap().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onKichHoatKhungManHinhThuocCapTabSS030'),
 
         getKhungManHinhChinhTabSS030CD
                 ?.onKichHoatThanhPhanManHinhThuocCap(
@@ -529,10 +520,8 @@ class QUANLYTHANHPHANMANHINHKHUNGMANHINHCHINH extends QUANLYTHANHPHANMANHINHTHUO
                 )
                 .catchError((e) => null) ??
             onReportRootIssue(nameFunction: 'onKichHoatKhungManHinhThuocCapTabSS030'),
-        getKhungManHinhChinhTabSS040TV?.onHuyKichHoatThanhPhanManHinhThuocCap().catchError((e) => null) ??
-            onReportRootIssue(nameFunction: 'onKichHoatKhungManHinhThuocCapTabSS030'),
-        getKhungManHinhChinhTabSS050CD?.onHuyKichHoatThanhPhanManHinhThuocCap().catchError((e) => null) ??
-            onReportRootIssue(nameFunction: 'onKichHoatKhungManHinhThuocCapTabSS030'),
+        getKhungManHinhChinhTabSS040TV?.onHuyKichHoatThanhPhanManHinhThuocCap().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onKichHoatKhungManHinhThuocCapTabSS030'),
+        getKhungManHinhChinhTabSS050CD?.onHuyKichHoatThanhPhanManHinhThuocCap().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onKichHoatKhungManHinhThuocCapTabSS030'),
       ]);
 
       ///
@@ -554,12 +543,9 @@ class QUANLYTHANHPHANMANHINHKHUNGMANHINHCHINH extends QUANLYTHANHPHANMANHINHTHUO
       /// TODO:
       /// -----
       await Future.wait([
-        getKhungManHinhChinhTabSS010CH?.onHuyKichHoatThanhPhanManHinhThuocCap().catchError((e) => null) ??
-            onReportRootIssue(nameFunction: 'onKichHoatKhungManHinhThuocCapTabSS040'),
-        getKhungManHinhChinhTabSS020TT?.onHuyKichHoatThanhPhanManHinhThuocCap().catchError((e) => null) ??
-            onReportRootIssue(nameFunction: 'onKichHoatKhungManHinhThuocCapTabSS040'),
-        getKhungManHinhChinhTabSS030CD?.onHuyKichHoatThanhPhanManHinhThuocCap().catchError((e) => null) ??
-            onReportRootIssue(nameFunction: 'onKichHoatKhungManHinhThuocCapTabSS040'),
+        getKhungManHinhChinhTabSS010CH?.onHuyKichHoatThanhPhanManHinhThuocCap().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onKichHoatKhungManHinhThuocCapTabSS040'),
+        getKhungManHinhChinhTabSS020TT?.onHuyKichHoatThanhPhanManHinhThuocCap().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onKichHoatKhungManHinhThuocCapTabSS040'),
+        getKhungManHinhChinhTabSS030CD?.onHuyKichHoatThanhPhanManHinhThuocCap().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onKichHoatKhungManHinhThuocCapTabSS040'),
 
         getKhungManHinhChinhTabSS040TV
                 ?.onKichHoatThanhPhanManHinhThuocCap(
@@ -569,8 +555,7 @@ class QUANLYTHANHPHANMANHINHKHUNGMANHINHCHINH extends QUANLYTHANHPHANMANHINHTHUO
                 )
                 .catchError((e) => null) ??
             onReportRootIssue(nameFunction: 'onKichHoatKhungManHinhThuocCapTabSS040'),
-        getKhungManHinhChinhTabSS050CD?.onHuyKichHoatThanhPhanManHinhThuocCap().catchError((e) => null) ??
-            onReportRootIssue(nameFunction: 'onKichHoatKhungManHinhThuocCapTabSS040'),
+        getKhungManHinhChinhTabSS050CD?.onHuyKichHoatThanhPhanManHinhThuocCap().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onKichHoatKhungManHinhThuocCapTabSS040'),
       ]);
 
       ///
@@ -592,15 +577,11 @@ class QUANLYTHANHPHANMANHINHKHUNGMANHINHCHINH extends QUANLYTHANHPHANMANHINHTHUO
       /// TODO:
       /// -----
       await Future.wait([
-        getKhungManHinhChinhTabSS010CH?.onHuyKichHoatThanhPhanManHinhThuocCap().catchError((e) => null) ??
-            onReportRootIssue(nameFunction: 'onKichHoatKhungManHinhThuocCapTabSS050'),
+        getKhungManHinhChinhTabSS010CH?.onHuyKichHoatThanhPhanManHinhThuocCap().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onKichHoatKhungManHinhThuocCapTabSS050'),
 
-        getKhungManHinhChinhTabSS020TT?.onHuyKichHoatThanhPhanManHinhThuocCap().catchError((e) => null) ??
-            onReportRootIssue(nameFunction: 'onKichHoatKhungManHinhThuocCapTabSS050'),
-        getKhungManHinhChinhTabSS030CD?.onHuyKichHoatThanhPhanManHinhThuocCap().catchError((e) => null) ??
-            onReportRootIssue(nameFunction: 'onKichHoatKhungManHinhThuocCapTabSS050'),
-        getKhungManHinhChinhTabSS040TV?.onHuyKichHoatThanhPhanManHinhThuocCap().catchError((e) => null) ??
-            onReportRootIssue(nameFunction: 'onKichHoatKhungManHinhThuocCapTabSS050'),
+        getKhungManHinhChinhTabSS020TT?.onHuyKichHoatThanhPhanManHinhThuocCap().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onKichHoatKhungManHinhThuocCapTabSS050'),
+        getKhungManHinhChinhTabSS030CD?.onHuyKichHoatThanhPhanManHinhThuocCap().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onKichHoatKhungManHinhThuocCapTabSS050'),
+        getKhungManHinhChinhTabSS040TV?.onHuyKichHoatThanhPhanManHinhThuocCap().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onKichHoatKhungManHinhThuocCapTabSS050'),
         getKhungManHinhChinhTabSS050CD
                 ?.onKichHoatThanhPhanManHinhThuocCap(
                   onHuyKichHoat: () {
@@ -657,6 +638,40 @@ class QUANLYTHANHPHANMANHINHKHUNGMANHINHCHINH extends QUANLYTHANHPHANMANHINHTHUO
   }
 
   /// -----
+  /// TODO: Giải Phóng Tài Nguyên Master
+  /// -----
+  @override
+  Future<void> onGiaiPhongTaiNguyenMaster({required Future<void> Function()? onThucThiHoanTat}) async {
+    try {
+      /// -----
+      /// TODO:
+      /// -----
+    } catch (e) {
+      await onReportRootIssue(nameFunction: 'onGiaiPhongTaiNguyenMaster');
+    }
+
+    ///
+    return;
+  }
+
+  /// -----
+  /// TODO: Tải Tài Nguyên Master
+  /// -----
+  @override
+  Future<void> onTaiTaiNguyenMaster({required Future<void> Function()? onThucThiHoanTat}) async {
+    try {
+      /// -----
+      /// TODO:
+      /// -----
+    } catch (e) {
+      await onReportRootIssue(nameFunction: 'onTaiTaiNguyenMaster');
+    }
+
+    ///
+    return;
+  }
+
+  /// -----
   /// TODO: Kích Hoạt Khung Màn Hình Thuộc Cấp SS300100 [Tải Tài Nguyên Nhiệm Vụ]
   /// -----
   @override
@@ -693,19 +708,29 @@ class QUANLYTHANHPHANMANHINHKHUNGMANHINHCHINH extends QUANLYTHANHPHANMANHINHTHUO
       //
       // await getKhungManHinhSS03000?.onHuyKichHoatKhungManHinhThuocCapSS300100();
 
+      await getGameController?.getQuanLyThanhPhanNutBamThuocCap?.onRemoveRoot(flameGame: getGameController, component: null);
+      await getGameController?.getQuanLyThanhPhanVanBanThuocCap?.onRemoveRoot(flameGame: getGameController, component: null);
+      await getGameController?.getQuanLyThanhPhanHinhAnhThuocCap?.onRemoveRoot(flameGame: getGameController, component: null);
+      await getGameController?.getQuanLyThanhPhanTichHopThuocCap?.onRemoveRoot(flameGame: getGameController, component: null);
+
       await getKhungManHinhSS03000?.onAddRoot(flameGame: null, component: getKhungManHinhSS03000);
 
       await Future.delayed(Duration(milliseconds: 1000));
 
-      await getGameController?.onKhoiDongNhiemVuChienDau(
+      await getGameController?.onGiaiPhongTaiNguyenMaster(
         onThucThiHoanTat: () async {
           await Future.delayed(Duration(milliseconds: 1000));
-          await getGameController?.onTaiTaiNguyenNhiemVuChienDau(
+          await getGameController?.onKhoiDongNhiemVuChienDau(
             onThucThiHoanTat: () async {
               await Future.delayed(Duration(milliseconds: 1000));
-              await getGameController?.onKichHoatThucThiNhiemVuChienDau(
+              await getGameController?.onTaiTaiNguyenNhiemVuChienDau(
                 onThucThiHoanTat: () async {
-                  await getKhungManHinhSS03000?.onHuyKichHoatKhungManHinhThuocCapSS300100();
+                  await Future.delayed(Duration(milliseconds: 1000));
+                  await getGameController?.onKichHoatThucThiNhiemVuChienDau(
+                    onThucThiHoanTat: () async {
+                      await getKhungManHinhSS03000?.onHuyKichHoatKhungManHinhThuocCapSS300100();
+                    },
+                  );
                 },
               );
             },
@@ -726,7 +751,41 @@ class QUANLYTHANHPHANMANHINHKHUNGMANHINHCHINH extends QUANLYTHANHPHANMANHINHTHUO
     await getKhungManHinhSS03000?.onHuyKichHoatThanhPhanManHinhThuocCap();
 
     /// TODO: Hiển Thị Màn Hình Loading Nhiệm Vụ
-    await getKhungManHinhSS03000?.onKichHoatKhungManHinhThuocCapSS300100();
+    // await getKhungManHinhSS03000?.onKichHoatKhungManHinhThuocCapSS300100();
+    await getKhungManHinhMasterLoading?.onKichHoatThanhPhanManHinhThuocCap(kichHoatUuTien: true);
+
+    await Future.delayed(Duration.zero);
+    await Future.delayed(Duration(milliseconds: 1000));
+
+    await getGameController?.onTaiTaiNguyenMaster(
+      onThucThiHoanTat: () async {
+        await Future.delayed(Duration(milliseconds: 1000));
+        await getKhungManHinhSS03000?.onRemoveRoot(flameGame: null, component: getKhungManHinhSS03000);
+        /// -----
+        /// TODO:
+        /// -----
+        await Future.wait([
+          onAddComponent(flameGame: getGameController, parentComponent: null, childComponent: getKhungManHinhChinhTabSS010CH).catchError((e) => null),
+          onAddComponent(flameGame: getGameController, parentComponent: null, childComponent: getKhungManHinhChinhTabSS020TT).catchError((e) => null),
+          onAddComponent(flameGame: getGameController, parentComponent: null, childComponent: getKhungManHinhChinhTabSS030CD).catchError((e) => null),
+          onAddComponent(flameGame: getGameController, parentComponent: null, childComponent: getKhungManHinhChinhTabSS040TV).catchError((e) => null),
+          onAddComponent(flameGame: getGameController, parentComponent: null, childComponent: getKhungManHinhChinhTabSS050CD).catchError((e) => null),
+        ]);
+
+        // await getGameController?.getQuanLyThanhPhanHinhAnhThuocCap?.onAddRoot(flameGame: getGameController, component: null);
+        await getGameController?.getQuanLyThanhPhanNutBamThuocCap?.onAddRoot(flameGame: getGameController, component: null);
+        await getGameController?.getQuanLyThanhPhanVanBanThuocCap?.onAddRoot(flameGame: getGameController, component: null);
+        await getGameController?.getQuanLyThanhPhanTichHopThuocCap?.onAddRoot(flameGame: getGameController, component: null);
+
+        await getGlobalStateManagementSystem?.getBangDieuKhienKichBanChienDauTheoGiaiDoan?.getQuanLyDieuKhienChuyenKichBanChienDau?.onNgatKetNoiSpritePhuongTien();
+
+        // await getKhungManHinhSS03000?.onHuyKichHoatKhungManHinhThuocCapSS300100();
+        await getKhungManHinhMasterLoading?.onHuyKichHoatThanhPhanManHinhThuocCap();
+      },
+    );
+
+
+    return;
 
     await getKhungManHinhSS03000?.onRemoveRoot(flameGame: null, component: getKhungManHinhSS03000);
 
