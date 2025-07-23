@@ -6,8 +6,8 @@ import 'package:pkg_dinh_nghia_ss050/pkg_dinh_nghia_ss050_exp.dart';
 /// -----
 /// TODO: Sprite Ngoại Hình Thân Chiến Đấu Cơ
 /// -----
-class SpriteSS01PkgManHinhSS00222 extends SpriteAnimationCoBan {
-  SpriteSS01PkgManHinhSS00222({required super.trangThaiTongQuat, bool? capNhatViTri}) {
+class SpriteChienDauCoThucThiChienDau extends SpriteAnimationCoBan {
+  SpriteChienDauCoThucThiChienDau({required super.trangThaiTongQuat, bool? capNhatViTri}) {
     _capNhatViTri = capNhatViTri ?? true;
   }
 
@@ -109,7 +109,7 @@ class SpriteSS01PkgManHinhSS00222 extends SpriteAnimationCoBan {
             ?.getSpriteAnimation,
       );
 
-      animation = getDonViSprite?.getSpriteAnimation;
+      // animation = getDonViSprite?.getSpriteAnimation;
     }
 
     return;

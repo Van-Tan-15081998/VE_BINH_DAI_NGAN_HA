@@ -1756,10 +1756,8 @@ class QUANLYTRANGTHAIHANGARCHIENDAUCO with CAUTRUCTHUCTHICOBAN {
   /// TODO: Giải Phóng Tài Nguyên Master
   /// -----
   Future<void> onGiaiPhongTaiNguyenMaster({required Future<void> Function()? onThucThiHoanTat}) async {
-
-    await onThucThiHoanTat?.call();
-
-    return;
+    // await onThucThiHoanTat?.call();
+    // return;
 
     try {
       /// -----
@@ -1865,7 +1863,7 @@ class QUANLYTRANGTHAIHANGARCHIENDAUCO with CAUTRUCTHUCTHICOBAN {
       );
 
       cauTrucThucThiTuanTu.onThucThiHoanTat = onThucThiHoanTat;
-      cauTrucThucThiTuanTu.onThucThiTuanTu(interval: const Duration(milliseconds: 100));
+      await cauTrucThucThiTuanTu.onThucThiTuanTu(interval: const Duration(milliseconds: 100));
     } catch (e) {
       await onReportRootIssue(nameFunction: 'onGiaiPhongTaiNguyenMaster');
     }
@@ -1969,7 +1967,7 @@ class QUANLYTRANGTHAIHANGARCHIENDAUCO with CAUTRUCTHUCTHICOBAN {
 
       cauTrucThucThiTuanTu.onThucThiHoanTat = onThucThiHoanTat;
 
-      cauTrucThucThiTuanTu.onThucThiTuanTu(interval: const Duration(milliseconds: 100));
+      await cauTrucThucThiTuanTu.onThucThiTuanTu(interval: const Duration(milliseconds: 100));
     } catch (e) {
       await onReportRootIssue(nameFunction: 'onTaiTaiNguyenMaster');
     }

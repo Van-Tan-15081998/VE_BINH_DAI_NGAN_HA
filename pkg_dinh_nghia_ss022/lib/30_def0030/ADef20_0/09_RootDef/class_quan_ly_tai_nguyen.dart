@@ -326,7 +326,7 @@ class QUANLYTAINGUYENTHANHPHANGAMEUI with CauTrucThucThiCoBan {
       }
     };
 
-    cauTrucThucThiTuanTu.onThucThiTuanTu(interval: const Duration(milliseconds: 200));
+    await cauTrucThucThiTuanTu.onThucThiTuanTu(interval: const Duration(milliseconds: 100));
 
     ///
     return;
@@ -390,7 +390,7 @@ class QUANLYTAINGUYENTHANHPHANGAMEUI with CauTrucThucThiCoBan {
       thanhPhanGameUI.getSpriteThanhPhanGameUI?.getDonViSpriteNgoaiHinhGameUIPartSS06?.caiDatSpriteAnimation(value: null).catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
     ]);
 
-    cauTrucThucThiTuanTu.onThucThiTuanTu(interval: const Duration(milliseconds: 20));
+    await cauTrucThucThiTuanTu.onThucThiTuanTu(interval: const Duration(milliseconds: 20));
 
     ///
     return;
@@ -464,6 +464,11 @@ class QUANLYTAINGUYENTHANHPHANGAMEUI with CauTrucThucThiCoBan {
   /// -----
   /// -----
   Future<void> onTaiTaiNguyenNgoaiHinhThanhPhanGameUIPartSS01({required CoreGameUIComponent? thanhPhanGameUI}) async {
+
+    if (true) {
+      print('Tai Nguyen Thanh Phan GameUI PartSS010');
+    }
+
     /// -----
     /// TODO:
     /// -----
@@ -547,6 +552,11 @@ class QUANLYTAINGUYENTHANHPHANGAMEUI with CauTrucThucThiCoBan {
   /// TODO:
   /// -----
   Future<void> onGiaiPhongTaiNguyenNgoaiHinhThanhPhanGameUIPartSS01({required CoreGameUIComponent? thanhPhanGameUI}) async {
+
+    if (true) {
+      print('Giai Phong Tai Nguyen Thanh Phan GameUI PartSS010');
+    }
+
     /// -----
     /// TODO:
     /// -----
@@ -578,6 +588,11 @@ class QUANLYTAINGUYENTHANHPHANGAMEUI with CauTrucThucThiCoBan {
   /// -----
   /// -----
   Future<void> onTaiTaiNguyenNgoaiHinhThanhPhanGameUIPartSS02({required CoreGameUIComponent? thanhPhanGameUI}) async {
+
+    if (true) {
+      print('Tai Nguyen Thanh Phan GameUI PartSS020');
+    }
+
     /// -----
     /// TODO:
     /// -----
@@ -661,6 +676,11 @@ class QUANLYTAINGUYENTHANHPHANGAMEUI with CauTrucThucThiCoBan {
   /// TODO:
   /// -----
   Future<void> onGiaiPhongTaiNguyenNgoaiHinhThanhPhanGameUIPartSS02({required CoreGameUIComponent? thanhPhanGameUI}) async {
+
+    if (true) {
+      print('Giai Phong Tai Nguyen Thanh Phan GameUI PartSS020');
+    }
+
     /// -----
     /// TODO:
     /// -----
@@ -692,6 +712,11 @@ class QUANLYTAINGUYENTHANHPHANGAMEUI with CauTrucThucThiCoBan {
   /// -----
   /// -----
   Future<void> onTaiTaiNguyenNgoaiHinhThanhPhanGameUIPartSS03({required CoreGameUIComponent? thanhPhanGameUI}) async {
+
+    if (true) {
+      print('Tai Nguyen Thanh Phan GameUI PartSS030');
+    }
+
     /// -----
     /// TODO:
     /// -----
@@ -775,6 +800,11 @@ class QUANLYTAINGUYENTHANHPHANGAMEUI with CauTrucThucThiCoBan {
   /// TODO:
   /// -----
   Future<void> onGiaiPhongTaiNguyenNgoaiHinhThanhPhanGameUIPartSS03({required CoreGameUIComponent? thanhPhanGameUI}) async {
+
+    if (true) {
+      print('Giai Phong Tai Nguyen Thanh Phan GameUI PartSS030');
+    }
+
     /// -----
     /// TODO:
     /// -----
@@ -806,6 +836,11 @@ class QUANLYTAINGUYENTHANHPHANGAMEUI with CauTrucThucThiCoBan {
   /// -----
   /// -----
   Future<void> onTaiTaiNguyenNgoaiHinhThanhPhanGameUIPartSS04({required CoreGameUIComponent? thanhPhanGameUI}) async {
+
+    if (true) {
+      print('Tai Nguyen Thanh Phan GameUI PartSS040');
+    }
+
     /// -----
     /// TODO:
     /// -----
@@ -889,6 +924,11 @@ class QUANLYTAINGUYENTHANHPHANGAMEUI with CauTrucThucThiCoBan {
   /// TODO:
   /// -----
   Future<void> onGiaiPhongTaiNguyenNgoaiHinhThanhPhanGameUIPartSS04({required CoreGameUIComponent? thanhPhanGameUI}) async {
+
+    if (true) {
+      print('Giai Phong Tai Nguyen Thanh Phan GameUI PartSS040');
+    }
+
     /// -----
     /// TODO:
     /// -----
@@ -920,6 +960,11 @@ class QUANLYTAINGUYENTHANHPHANGAMEUI with CauTrucThucThiCoBan {
   /// -----
   /// -----
   Future<void> onTaiTaiNguyenNgoaiHinhThanhPhanGameUIPartSS05({required CoreGameUIComponent? thanhPhanGameUI}) async {
+
+    if (true) {
+      print('Tai Nguyen Thanh Phan GameUI PartSS050');
+    }
+
     /// -----
     /// TODO:
     /// -----
@@ -1003,6 +1048,11 @@ class QUANLYTAINGUYENTHANHPHANGAMEUI with CauTrucThucThiCoBan {
   /// TODO:
   /// -----
   Future<void> onGiaiPhongTaiNguyenNgoaiHinhThanhPhanGameUIPartSS05({required CoreGameUIComponent? thanhPhanGameUI}) async {
+
+    if (true) {
+      print('Giai Phong Tai Nguyen Thanh Phan GameUI PartSS050');
+    }
+
     /// -----
     /// TODO:
     /// -----
@@ -1034,6 +1084,11 @@ class QUANLYTAINGUYENTHANHPHANGAMEUI with CauTrucThucThiCoBan {
   /// -----
   /// -----
   Future<void> onTaiTaiNguyenNgoaiHinhThanhPhanGameUIPartSS06({required CoreGameUIComponent? thanhPhanGameUI}) async {
+
+    if (true) {
+      print('Tai Nguyen Thanh Phan GameUI PartSS060');
+    }
+
     /// -----
     /// TODO:
     /// -----
@@ -1117,6 +1172,11 @@ class QUANLYTAINGUYENTHANHPHANGAMEUI with CauTrucThucThiCoBan {
   /// TODO:
   /// -----
   Future<void> onGiaiPhongTaiNguyenNgoaiHinhThanhPhanGameUIPartSS06({required CoreGameUIComponent? thanhPhanGameUI}) async {
+
+    if (true) {
+      print('Giai Phong Tai Nguyen Thanh Phan GameUI PartSS060');
+    }
+
     /// -----
     /// TODO:
     /// -----

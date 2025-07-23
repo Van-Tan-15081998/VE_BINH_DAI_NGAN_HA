@@ -2283,6 +2283,13 @@ class THUOCTINHTAINGUYENCOBAN with CAUTRUCTHUCTHICOBAN {
     /// -----
     /// TODO:
     /// -----
+    if (true) {
+      print('Tai Nguyen Thanh Phan PartSS010');
+    }
+
+    /// -----
+    /// TODO:
+    /// -----
     int tongSoFrame = 0;
     int soFrameTrenHang = 0;
     double chieuRongFrame = 0;
@@ -2402,6 +2409,13 @@ class THUOCTINHTAINGUYENCOBAN with CAUTRUCTHUCTHICOBAN {
     bool? caiDatUuTienKichThuocRS050,
     bool? caiDatUuTienKichThuocRS100,
   }) async {
+    /// -----
+    /// TODO:
+    /// -----
+    if (true) {
+      print('Tai Nguyen Thanh Phan PartSS020');
+    }
+
     /// -----
     /// TODO:
     /// -----
@@ -2530,6 +2544,13 @@ class THUOCTINHTAINGUYENCOBAN with CAUTRUCTHUCTHICOBAN {
     /// -----
     /// TODO:
     /// -----
+    if (true) {
+      print('Tai Nguyen Thanh Phan PartSS030');
+    }
+
+    /// -----
+    /// TODO:
+    /// -----
     int tongSoFrame = 0;
     int soFrameTrenHang = 0;
     double chieuRongFrame = 0;
@@ -2652,6 +2673,13 @@ class THUOCTINHTAINGUYENCOBAN with CAUTRUCTHUCTHICOBAN {
     bool? caiDatUuTienKichThuocRS050,
     bool? caiDatUuTienKichThuocRS100,
   }) async {
+    /// -----
+    /// TODO:
+    /// -----
+    if (true) {
+      print('Tai Nguyen Thanh Phan PartSS040');
+    }
+
     /// -----
     /// TODO:
     /// -----
@@ -2780,6 +2808,13 @@ class THUOCTINHTAINGUYENCOBAN with CAUTRUCTHUCTHICOBAN {
     /// -----
     /// TODO:
     /// -----
+    if (true) {
+      print('Tai Nguyen Thanh Phan PartSS050');
+    }
+
+    /// -----
+    /// TODO:
+    /// -----
     int tongSoFrame = 0;
     int soFrameTrenHang = 0;
     double chieuRongFrame = 0;
@@ -2902,6 +2937,13 @@ class THUOCTINHTAINGUYENCOBAN with CAUTRUCTHUCTHICOBAN {
     bool? caiDatUuTienKichThuocRS050,
     bool? caiDatUuTienKichThuocRS100,
   }) async {
+    /// -----
+    /// TODO:
+    /// -----
+    if (true) {
+      print('Tai Nguyen Thanh Phan PartSS060');
+    }
+
     /// -----
     /// TODO:
     /// -----
@@ -3030,6 +3072,13 @@ class THUOCTINHTAINGUYENCOBAN with CAUTRUCTHUCTHICOBAN {
     /// -----
     /// TODO:
     /// -----
+    if (true) {
+      print('Tai Nguyen Thanh Phan PartSS070');
+    }
+
+    /// -----
+    /// TODO:
+    /// -----
     int tongSoFrame = 0;
     int soFrameTrenHang = 0;
     double chieuRongFrame = 0;
@@ -3152,6 +3201,13 @@ class THUOCTINHTAINGUYENCOBAN with CAUTRUCTHUCTHICOBAN {
     bool? caiDatUuTienKichThuocRS050,
     bool? caiDatUuTienKichThuocRS100,
   }) async {
+    /// -----
+    /// TODO:
+    /// -----
+    if (true) {
+      print('Tai Nguyen Thanh Phan PartSS080');
+    }
+
     /// -----
     /// TODO:
     /// -----
@@ -3280,6 +3336,13 @@ class THUOCTINHTAINGUYENCOBAN with CAUTRUCTHUCTHICOBAN {
     /// -----
     /// TODO:
     /// -----
+    if (true) {
+      print('Tai Nguyen Thanh Phan PartSS090');
+    }
+
+    /// -----
+    /// TODO:
+    /// -----
     int tongSoFrame = 0;
     int soFrameTrenHang = 0;
     double chieuRongFrame = 0;
@@ -3402,6 +3465,13 @@ class THUOCTINHTAINGUYENCOBAN with CAUTRUCTHUCTHICOBAN {
     bool? caiDatUuTienKichThuocRS050,
     bool? caiDatUuTienKichThuocRS100,
   }) async {
+    /// -----
+    /// TODO:
+    /// -----
+    if (true) {
+      print('Tai Nguyen Thanh Phan PartSS100');
+    }
+
     /// -----
     /// TODO:
     /// -----
@@ -3530,6 +3600,13 @@ class THUOCTINHTAINGUYENCOBAN with CAUTRUCTHUCTHICOBAN {
     /// -----
     /// TODO:
     /// -----
+    if (true) {
+      print('Tai Nguyen Thanh Phan PartSS110');
+    }
+
+    /// -----
+    /// TODO:
+    /// -----
     int tongSoFrame = 0;
     int soFrameTrenHang = 0;
     double chieuRongFrame = 0;
@@ -3652,6 +3729,13 @@ class THUOCTINHTAINGUYENCOBAN with CAUTRUCTHUCTHICOBAN {
     bool? caiDatUuTienKichThuocRS050,
     bool? caiDatUuTienKichThuocRS100,
   }) async {
+    /// -----
+    /// TODO:
+    /// -----
+    if (true) {
+      print('Tai Nguyen Thanh Phan PartSS120');
+    }
+
     /// -----
     /// TODO:
     /// -----
@@ -3780,6 +3864,13 @@ class THUOCTINHTAINGUYENCOBAN with CAUTRUCTHUCTHICOBAN {
     /// -----
     /// TODO:
     /// -----
+    if (true) {
+      print('Tai Nguyen Thanh Phan PartSS130');
+    }
+
+    /// -----
+    /// TODO:
+    /// -----
     int tongSoFrame = 0;
     int soFrameTrenHang = 0;
     double chieuRongFrame = 0;
@@ -3902,6 +3993,13 @@ class THUOCTINHTAINGUYENCOBAN with CAUTRUCTHUCTHICOBAN {
     bool? caiDatUuTienKichThuocRS050,
     bool? caiDatUuTienKichThuocRS100,
   }) async {
+    /// -----
+    /// TODO:
+    /// -----
+    if (true) {
+      print('Tai Nguyen Thanh Phan PartSS140');
+    }
+
     /// -----
     /// TODO:
     /// -----
@@ -4030,6 +4128,13 @@ class THUOCTINHTAINGUYENCOBAN with CAUTRUCTHUCTHICOBAN {
     /// -----
     /// TODO:
     /// -----
+    if (true) {
+      print('Tai Nguyen Thanh Phan PartSS150');
+    }
+
+    /// -----
+    /// TODO:
+    /// -----
     int tongSoFrame = 0;
     int soFrameTrenHang = 0;
     double chieuRongFrame = 0;
@@ -4152,6 +4257,13 @@ class THUOCTINHTAINGUYENCOBAN with CAUTRUCTHUCTHICOBAN {
     bool? caiDatUuTienKichThuocRS050,
     bool? caiDatUuTienKichThuocRS100,
   }) async {
+    /// -----
+    /// TODO:
+    /// -----
+    if (true) {
+      print('Tai Nguyen Thanh Phan PartSS160');
+    }
+
     /// -----
     /// TODO:
     /// -----
@@ -4280,6 +4392,13 @@ class THUOCTINHTAINGUYENCOBAN with CAUTRUCTHUCTHICOBAN {
     /// -----
     /// TODO:
     /// -----
+    if (true) {
+      print('Tai Nguyen Thanh Phan PartSS170');
+    }
+
+    /// -----
+    /// TODO:
+    /// -----
     int tongSoFrame = 0;
     int soFrameTrenHang = 0;
     double chieuRongFrame = 0;
@@ -4402,6 +4521,13 @@ class THUOCTINHTAINGUYENCOBAN with CAUTRUCTHUCTHICOBAN {
     bool? caiDatUuTienKichThuocRS050,
     bool? caiDatUuTienKichThuocRS100,
   }) async {
+    /// -----
+    /// TODO:
+    /// -----
+    if (true) {
+      print('Tai Nguyen Thanh Phan PartSS180');
+    }
+
     /// -----
     /// TODO:
     /// -----
@@ -4530,6 +4656,13 @@ class THUOCTINHTAINGUYENCOBAN with CAUTRUCTHUCTHICOBAN {
     /// -----
     /// TODO:
     /// -----
+    if (true) {
+      print('Tai Nguyen Thanh Phan PartSS190');
+    }
+
+    /// -----
+    /// TODO:
+    /// -----
     int tongSoFrame = 0;
     int soFrameTrenHang = 0;
     double chieuRongFrame = 0;
@@ -4652,6 +4785,13 @@ class THUOCTINHTAINGUYENCOBAN with CAUTRUCTHUCTHICOBAN {
     bool? caiDatUuTienKichThuocRS050,
     bool? caiDatUuTienKichThuocRS100,
   }) async {
+    /// -----
+    /// TODO:
+    /// -----
+    if (true) {
+      print('Tai Nguyen Thanh Phan PartSS200');
+    }
+
     /// -----
     /// TODO:
     /// -----
@@ -4780,6 +4920,13 @@ class THUOCTINHTAINGUYENCOBAN with CAUTRUCTHUCTHICOBAN {
     /// -----
     /// TODO:
     /// -----
+    if (true) {
+      print('Tai Nguyen Thanh Phan PartSS210');
+    }
+
+    /// -----
+    /// TODO:
+    /// -----
     int tongSoFrame = 0;
     int soFrameTrenHang = 0;
     double chieuRongFrame = 0;
@@ -4902,6 +5049,13 @@ class THUOCTINHTAINGUYENCOBAN with CAUTRUCTHUCTHICOBAN {
     bool? caiDatUuTienKichThuocRS050,
     bool? caiDatUuTienKichThuocRS100,
   }) async {
+    /// -----
+    /// TODO:
+    /// -----
+    if (true) {
+      print('Tai Nguyen Thanh Phan PartSS220');
+    }
+
     /// -----
     /// TODO:
     /// -----
@@ -5030,6 +5184,13 @@ class THUOCTINHTAINGUYENCOBAN with CAUTRUCTHUCTHICOBAN {
     /// -----
     /// TODO:
     /// -----
+    if (true) {
+      print('Tai Nguyen Thanh Phan PartSS230');
+    }
+
+    /// -----
+    /// TODO:
+    /// -----
     int tongSoFrame = 0;
     int soFrameTrenHang = 0;
     double chieuRongFrame = 0;
@@ -5155,6 +5316,13 @@ class THUOCTINHTAINGUYENCOBAN with CAUTRUCTHUCTHICOBAN {
     /// -----
     /// TODO:
     /// -----
+    if (true) {
+      print('Tai Nguyen Thanh Phan PartSS240');
+    }
+
+    /// -----
+    /// TODO:
+    /// -----
     int tongSoFrame = 0;
     int soFrameTrenHang = 0;
     double chieuRongFrame = 0;
@@ -5277,6 +5445,13 @@ class THUOCTINHTAINGUYENCOBAN with CAUTRUCTHUCTHICOBAN {
     bool? caiDatUuTienKichThuocRS050,
     bool? caiDatUuTienKichThuocRS100,
   }) async {
+    /// -----
+    /// TODO:
+    /// -----
+    if (true) {
+      print('Tai Nguyen Thanh Phan PartSS250');
+    }
+
     /// -----
     /// TODO:
     /// -----
@@ -5420,6 +5595,10 @@ class THUOCTINHTAINGUYENCOBAN with CAUTRUCTHUCTHICOBAN {
           if (getTaiHinhAnh?.fromCache(nguonSpriteSheet) != null) {
             // Ảnh đã có trong cache -> xóa
             getTaiHinhAnh?.clear(nguonSpriteSheet);
+
+            if (true) {
+              print('Giai Phong Tai Nguyen Thanh Phan PartSS010');
+            }
           }
         }
       } catch (e) {
@@ -5461,6 +5640,10 @@ class THUOCTINHTAINGUYENCOBAN with CAUTRUCTHUCTHICOBAN {
           if (getTaiHinhAnh?.fromCache(nguonSpriteSheet) != null) {
             // Ảnh đã có trong cache -> xóa
             getTaiHinhAnh?.clear(nguonSpriteSheet);
+
+            if (true) {
+              print('Giai Phong Tai Nguyen Thanh Phan PartSS020');
+            }
           }
         }
       } catch (e) {
@@ -5502,6 +5685,10 @@ class THUOCTINHTAINGUYENCOBAN with CAUTRUCTHUCTHICOBAN {
           if (getTaiHinhAnh?.fromCache(nguonSpriteSheet) != null) {
             // Ảnh đã có trong cache -> xóa
             getTaiHinhAnh?.clear(nguonSpriteSheet);
+
+            if (true) {
+              print('Giai Phong Tai Nguyen Thanh Phan PartSS030');
+            }
           }
         }
       } catch (e) {
@@ -5543,6 +5730,10 @@ class THUOCTINHTAINGUYENCOBAN with CAUTRUCTHUCTHICOBAN {
           if (getTaiHinhAnh?.fromCache(nguonSpriteSheet) != null) {
             // Ảnh đã có trong cache -> xóa
             getTaiHinhAnh?.clear(nguonSpriteSheet);
+
+            if (true) {
+              print('Giai Phong Tai Nguyen Thanh Phan PartSS040');
+            }
           }
         }
       } catch (e) {
@@ -5584,6 +5775,10 @@ class THUOCTINHTAINGUYENCOBAN with CAUTRUCTHUCTHICOBAN {
           if (getTaiHinhAnh?.fromCache(nguonSpriteSheet) != null) {
             // Ảnh đã có trong cache -> xóa
             getTaiHinhAnh?.clear(nguonSpriteSheet);
+
+            if (true) {
+              print('Giai Phong Tai Nguyen Thanh Phan PartSS050');
+            }
           }
         }
       } catch (e) {
@@ -5625,6 +5820,10 @@ class THUOCTINHTAINGUYENCOBAN with CAUTRUCTHUCTHICOBAN {
           if (getTaiHinhAnh?.fromCache(nguonSpriteSheet) != null) {
             // Ảnh đã có trong cache -> xóa
             getTaiHinhAnh?.clear(nguonSpriteSheet);
+
+            if (true) {
+              print('Giai Phong Tai Nguyen Thanh Phan PartSS060');
+            }
           }
         }
       } catch (e) {
@@ -5666,6 +5865,10 @@ class THUOCTINHTAINGUYENCOBAN with CAUTRUCTHUCTHICOBAN {
           if (getTaiHinhAnh?.fromCache(nguonSpriteSheet) != null) {
             // Ảnh đã có trong cache -> xóa
             getTaiHinhAnh?.clear(nguonSpriteSheet);
+
+            if (true) {
+              print('Giai Phong Tai Nguyen Thanh Phan PartSS070');
+            }
           }
         }
       } catch (e) {
@@ -5707,6 +5910,10 @@ class THUOCTINHTAINGUYENCOBAN with CAUTRUCTHUCTHICOBAN {
           if (getTaiHinhAnh?.fromCache(nguonSpriteSheet) != null) {
             // Ảnh đã có trong cache -> xóa
             getTaiHinhAnh?.clear(nguonSpriteSheet);
+
+            if (true) {
+              print('Giai Phong Tai Nguyen Thanh Phan PartSS080');
+            }
           }
         }
       } catch (e) {
@@ -5748,6 +5955,10 @@ class THUOCTINHTAINGUYENCOBAN with CAUTRUCTHUCTHICOBAN {
           if (getTaiHinhAnh?.fromCache(nguonSpriteSheet) != null) {
             // Ảnh đã có trong cache -> xóa
             getTaiHinhAnh?.clear(nguonSpriteSheet);
+
+            if (true) {
+              print('Giai Phong Tai Nguyen Thanh Phan PartSS090');
+            }
           }
         }
       } catch (e) {
@@ -5789,6 +6000,10 @@ class THUOCTINHTAINGUYENCOBAN with CAUTRUCTHUCTHICOBAN {
           if (getTaiHinhAnh?.fromCache(nguonSpriteSheet) != null) {
             // Ảnh đã có trong cache -> xóa
             getTaiHinhAnh?.clear(nguonSpriteSheet);
+
+            if (true) {
+              print('Giai Phong Tai Nguyen Thanh Phan PartSS100');
+            }
           }
         }
       } catch (e) {
@@ -5830,6 +6045,10 @@ class THUOCTINHTAINGUYENCOBAN with CAUTRUCTHUCTHICOBAN {
           if (getTaiHinhAnh?.fromCache(nguonSpriteSheet) != null) {
             // Ảnh đã có trong cache -> xóa
             getTaiHinhAnh?.clear(nguonSpriteSheet);
+
+            if (true) {
+              print('Giai Phong Tai Nguyen Thanh Phan PartSS110');
+            }
           }
         }
       } catch (e) {
@@ -5871,6 +6090,10 @@ class THUOCTINHTAINGUYENCOBAN with CAUTRUCTHUCTHICOBAN {
           if (getTaiHinhAnh?.fromCache(nguonSpriteSheet) != null) {
             // Ảnh đã có trong cache -> xóa
             getTaiHinhAnh?.clear(nguonSpriteSheet);
+
+            if (true) {
+              print('Giai Phong Tai Nguyen Thanh Phan PartSS120');
+            }
           }
         }
       } catch (e) {
@@ -5912,6 +6135,10 @@ class THUOCTINHTAINGUYENCOBAN with CAUTRUCTHUCTHICOBAN {
           if (getTaiHinhAnh?.fromCache(nguonSpriteSheet) != null) {
             // Ảnh đã có trong cache -> xóa
             getTaiHinhAnh?.clear(nguonSpriteSheet);
+
+            if (true) {
+              print('Giai Phong Tai Nguyen Thanh Phan PartSS130');
+            }
           }
         }
       } catch (e) {
@@ -5953,6 +6180,10 @@ class THUOCTINHTAINGUYENCOBAN with CAUTRUCTHUCTHICOBAN {
           if (getTaiHinhAnh?.fromCache(nguonSpriteSheet) != null) {
             // Ảnh đã có trong cache -> xóa
             getTaiHinhAnh?.clear(nguonSpriteSheet);
+
+            if (true) {
+              print('Giai Phong Tai Nguyen Thanh Phan PartSS140');
+            }
           }
         }
       } catch (e) {
@@ -5994,6 +6225,10 @@ class THUOCTINHTAINGUYENCOBAN with CAUTRUCTHUCTHICOBAN {
           if (getTaiHinhAnh?.fromCache(nguonSpriteSheet) != null) {
             // Ảnh đã có trong cache -> xóa
             getTaiHinhAnh?.clear(nguonSpriteSheet);
+
+            if (true) {
+              print('Giai Phong Tai Nguyen Thanh Phan PartSS150');
+            }
           }
         }
       } catch (e) {
@@ -6035,6 +6270,10 @@ class THUOCTINHTAINGUYENCOBAN with CAUTRUCTHUCTHICOBAN {
           if (getTaiHinhAnh?.fromCache(nguonSpriteSheet) != null) {
             // Ảnh đã có trong cache -> xóa
             getTaiHinhAnh?.clear(nguonSpriteSheet);
+
+            if (true) {
+              print('Giai Phong Tai Nguyen Thanh Phan PartSS160');
+            }
           }
         }
       } catch (e) {
@@ -6076,6 +6315,10 @@ class THUOCTINHTAINGUYENCOBAN with CAUTRUCTHUCTHICOBAN {
           if (getTaiHinhAnh?.fromCache(nguonSpriteSheet) != null) {
             // Ảnh đã có trong cache -> xóa
             getTaiHinhAnh?.clear(nguonSpriteSheet);
+
+            if (true) {
+              print('Giai Phong Tai Nguyen Thanh Phan PartSS170');
+            }
           }
         }
       } catch (e) {
@@ -6117,6 +6360,10 @@ class THUOCTINHTAINGUYENCOBAN with CAUTRUCTHUCTHICOBAN {
           if (getTaiHinhAnh?.fromCache(nguonSpriteSheet) != null) {
             // Ảnh đã có trong cache -> xóa
             getTaiHinhAnh?.clear(nguonSpriteSheet);
+
+            if (true) {
+              print('Giai Phong Tai Nguyen Thanh Phan PartSS180');
+            }
           }
         }
       } catch (e) {
@@ -6158,6 +6405,10 @@ class THUOCTINHTAINGUYENCOBAN with CAUTRUCTHUCTHICOBAN {
           if (getTaiHinhAnh?.fromCache(nguonSpriteSheet) != null) {
             // Ảnh đã có trong cache -> xóa
             getTaiHinhAnh?.clear(nguonSpriteSheet);
+
+            if (true) {
+              print('Giai Phong Tai Nguyen Thanh Phan PartSS190');
+            }
           }
         }
       } catch (e) {
@@ -6199,6 +6450,10 @@ class THUOCTINHTAINGUYENCOBAN with CAUTRUCTHUCTHICOBAN {
           if (getTaiHinhAnh?.fromCache(nguonSpriteSheet) != null) {
             // Ảnh đã có trong cache -> xóa
             getTaiHinhAnh?.clear(nguonSpriteSheet);
+
+            if (true) {
+              print('Giai Phong Tai Nguyen Thanh Phan PartSS200');
+            }
           }
         }
       } catch (e) {
@@ -6240,6 +6495,10 @@ class THUOCTINHTAINGUYENCOBAN with CAUTRUCTHUCTHICOBAN {
           if (getTaiHinhAnh?.fromCache(nguonSpriteSheet) != null) {
             // Ảnh đã có trong cache -> xóa
             getTaiHinhAnh?.clear(nguonSpriteSheet);
+
+            if (true) {
+              print('Giai Phong Tai Nguyen Thanh Phan PartSS210');
+            }
           }
         }
       } catch (e) {
@@ -6281,6 +6540,10 @@ class THUOCTINHTAINGUYENCOBAN with CAUTRUCTHUCTHICOBAN {
           if (getTaiHinhAnh?.fromCache(nguonSpriteSheet) != null) {
             // Ảnh đã có trong cache -> xóa
             getTaiHinhAnh?.clear(nguonSpriteSheet);
+
+            if (true) {
+              print('Giai Phong Tai Nguyen Thanh Phan PartSS220');
+            }
           }
         }
       } catch (e) {
@@ -6322,6 +6585,10 @@ class THUOCTINHTAINGUYENCOBAN with CAUTRUCTHUCTHICOBAN {
           if (getTaiHinhAnh?.fromCache(nguonSpriteSheet) != null) {
             // Ảnh đã có trong cache -> xóa
             getTaiHinhAnh?.clear(nguonSpriteSheet);
+
+            if (true) {
+              print('Giai Phong Tai Nguyen Thanh Phan PartSS230');
+            }
           }
         }
       } catch (e) {
@@ -6363,6 +6630,10 @@ class THUOCTINHTAINGUYENCOBAN with CAUTRUCTHUCTHICOBAN {
           if (getTaiHinhAnh?.fromCache(nguonSpriteSheet) != null) {
             // Ảnh đã có trong cache -> xóa
             getTaiHinhAnh?.clear(nguonSpriteSheet);
+
+            if (true) {
+              print('Giai Phong Tai Nguyen Thanh Phan PartSS240');
+            }
           }
         }
       } catch (e) {
@@ -10118,6 +10389,39 @@ class THUOCTINHTAINGUYENCOBAN with CAUTRUCTHUCTHICOBAN {
   /// -----
   /// -----
   Future<void> onTruyXuatTaiNguyenHinhAnhChienDauCoRS050TheoTuanTu({required String? maDinhDanh, required THUOCTINHHINHANHCOBAN? thuocTinhHinhAnh, required VoidCallback? onThucThiHoanTat}) async {
+    /// -----
+    /// TODO:
+    /// -----
+    if (thuocTinhHinhAnh?.getKichThuocRS100 == true) {
+      if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100?.getSpriteAnimation?.frames.isNotEmpty == true) {
+        onThucThiHoanTat?.call();
+
+        return;
+      }
+    }
+
+    /// -----
+    /// TODO:
+    /// -----
+    if (thuocTinhHinhAnh?.getKichThuocRS050 == true) {
+      if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050?.getSpriteAnimation?.frames.isNotEmpty == true) {
+        onThucThiHoanTat?.call();
+
+        return;
+      }
+    }
+
+    /// -----
+    /// TODO:
+    /// -----
+    if (thuocTinhHinhAnh?.getKichThuocRS025 == true) {
+      if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025?.getSpriteAnimation?.frames.isNotEmpty == true) {
+        onThucThiHoanTat?.call();
+
+        return;
+      }
+    }
+
     if (kDebugMode) {
       stopwatch = Stopwatch();
       stopwatch?.start();
@@ -11344,6 +11648,39 @@ class THUOCTINHTAINGUYENCOBAN with CAUTRUCTHUCTHICOBAN {
   /// -----
   /// -----
   Future<void> onTruyXuatTaiNguyenHinhAnhPhuongTienRS050TheoTuanTu({required String? maDinhDanh, required THUOCTINHHINHANHCOBAN? thuocTinhHinhAnh, required VoidCallback? onThucThiHoanTat}) async {
+    /// -----
+    /// TODO:
+    /// -----
+    if (thuocTinhHinhAnh?.getKichThuocRS100 == true) {
+      if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100?.getSpriteAnimation?.frames.isNotEmpty == true) {
+        onThucThiHoanTat?.call();
+
+        return;
+      }
+    }
+
+    /// -----
+    /// TODO:
+    /// -----
+    if (thuocTinhHinhAnh?.getKichThuocRS050 == true) {
+      if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050?.getSpriteAnimation?.frames.isNotEmpty == true) {
+        onThucThiHoanTat?.call();
+
+        return;
+      }
+    }
+
+    /// -----
+    /// TODO:
+    /// -----
+    if (thuocTinhHinhAnh?.getKichThuocRS025 == true) {
+      if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025?.getSpriteAnimation?.frames.isNotEmpty == true) {
+        onThucThiHoanTat?.call();
+
+        return;
+      }
+    }
+
     if (kDebugMode) {
       stopwatch = Stopwatch();
       stopwatch?.start();

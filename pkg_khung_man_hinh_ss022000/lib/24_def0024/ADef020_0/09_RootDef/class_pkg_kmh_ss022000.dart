@@ -273,9 +273,7 @@ class KHUNGMANHINHCHINH extends KHUNGMANHINHGAMECOSO {
     CAUTRUCTHUCTHITUANTUCOBAN? cauTrucThiThiTuanTu;
     cauTrucThiThiTuanTu = CAUTRUCTHUCTHITUANTUCOBAN(
       onThucThiTuanTuSS010: () async {
-        await getGlobalStateManagementSystem?.getBangDieuKhienKichBanChienDauTheoGiaiDoan?.getQuanLyDieuKhienChuyenKichBanChienDau?.onTaiTaiNguyenPhuongTienTuanTu(
-          onThucThiHoanTat: onThucThiHoanTat,
-        );
+        await getGlobalStateManagementSystem?.getBangDieuKhienKichBanChienDauTheoGiaiDoan?.getQuanLyDieuKhienChuyenKichBanChienDau?.onTaiTaiNguyenPhuongTienTuanTu(onThucThiHoanTat: onThucThiHoanTat);
       },
 
       onThucThiHoanTat: null,
@@ -574,7 +572,7 @@ class KHUNGMANHINHCHINH extends KHUNGMANHINHGAMECOSO {
         onThucThiTuanTu: () async {
           getGlobalStateManagementSystem?.getQuanLyTrangThaiTPGAMEUI?.onTaiTaiNguyenMaster(
             onThucThiHoanTat: () async {
-              await cauTrucThucThiTuanTuSS020?.onThucThiTuanTu(interval: const Duration(milliseconds: 250));
+              await cauTrucThucThiTuanTuSS020?.onThucThiTuanTu(interval: const Duration(milliseconds: 100));
             },
           );
         },
@@ -584,7 +582,7 @@ class KHUNGMANHINHCHINH extends KHUNGMANHINHGAMECOSO {
         onThucThiTuanTu: () async {
           getGlobalStateManagementSystem?.onGetEntityResourceManagement?.getQuanLyTrangThaiHangarChienDauCo?.onTaiTaiNguyenMaster(
             onThucThiHoanTat: () async {
-              await cauTrucThucThiTuanTuSS030?.onThucThiTuanTu(interval: const Duration(milliseconds: 300));
+              await cauTrucThucThiTuanTuSS030?.onThucThiTuanTu(interval: const Duration(milliseconds: 100));
             },
           );
         },
@@ -598,7 +596,7 @@ class KHUNGMANHINHCHINH extends KHUNGMANHINHGAMECOSO {
 
       // cauTrucThucThiTuanTuSS030.onThucThiHoanTat = onThucThiHoanTat;
 
-      await cauTrucThucThiTuanTuSS010.onThucThiTuanTu(interval: const Duration(milliseconds: 200));
+      await cauTrucThucThiTuanTuSS010.onThucThiTuanTu(interval: const Duration(milliseconds: 100));
     } catch (e) {
       await onReportRootIssue(nameFunction: 'onTaiTaiNguyenMaster');
     }

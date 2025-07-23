@@ -1875,7 +1875,7 @@ class QUANLYTRANGTHAIHANGARPHUONGTIEN with CAUTRUCTHUCTHICOBAN {
 
       cauTrucThucThiTuanTu.onThucThiHoanTat = onThucThiHoanTat;
 
-      cauTrucThucThiTuanTu.onThucThiTuanTu(interval: const Duration(milliseconds: 100));
+      await cauTrucThucThiTuanTu.onThucThiTuanTu(interval: const Duration(milliseconds: 100));
     } catch (e) {
       await onReportRootIssue(nameFunction: 'onTaiTaiNguyenMaster');
     }

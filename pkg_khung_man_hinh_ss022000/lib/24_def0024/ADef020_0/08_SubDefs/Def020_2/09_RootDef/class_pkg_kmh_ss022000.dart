@@ -719,6 +719,9 @@ class QUANLYTHANHPHANMANHINHKHUNGMANHINHCHINH extends QUANLYTHANHPHANMANHINHTHUO
 
       await getGameController?.onGiaiPhongTaiNguyenMaster(
         onThucThiHoanTat: () async {
+
+          getGlobalStateManagementSystem?.onGetEntityResourceManagement?.getQuanLyTrangThaiHangarPhuongTien?.getDanhSachPhuongTienTaiTaiNguyen.clear();
+
           await Future.delayed(Duration(milliseconds: 1000));
           await getGameController?.onKhoiDongNhiemVuChienDau(
             onThucThiHoanTat: () async {
@@ -752,7 +755,7 @@ class QUANLYTHANHPHANMANHINHKHUNGMANHINHCHINH extends QUANLYTHANHPHANMANHINHTHUO
 
     await getGlobalStateManagementSystem?.getTienTrinhTongQuat?.getTienTrinhThucThiChienDau?.getTrangThai?.getMoHinh?.caiDatDangChuanBiThucThi();
 
-    getGlobalStateManagementSystem?.onGetEntityResourceManagement?.getQuanLyTrangThaiHangarPhuongTien?.getDanhSachPhuongTienTaiTaiNguyen.clear();
+    // getGlobalStateManagementSystem?.onGetEntityResourceManagement?.getQuanLyTrangThaiHangarPhuongTien?.getDanhSachPhuongTienTaiTaiNguyen.clear();
 
     /// TODO: Hiển Thị Màn Hình Bảng Điều Khiển Chiến Đấu
     await getKhungManHinhSS03000?.onHuyKichHoatThanhPhanManHinhThuocCap();
