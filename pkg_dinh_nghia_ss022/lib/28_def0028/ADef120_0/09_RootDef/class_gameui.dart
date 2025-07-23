@@ -258,6 +258,7 @@ class SPRITEGAMEUIKHUNGMANHINHTHUOCCAPCUAHANG extends SpriteComponent with HasVi
       getTrangThaiTongQuat?.getQuanLyTrangThaiTPGAMEUI?.onVoidTruyXuatSpriteNgoaiHinhThanhPhanGameUI(
         donViSprite: getDonViSprite,
         maDinhDanhThanhPhanGameUI: getThanhPhanGameUI?.getMaDinhDanhGameUI,
+          spriteAnimationComponent: null
       );
       sprite = getDonViSprite?.getSprite;
     }

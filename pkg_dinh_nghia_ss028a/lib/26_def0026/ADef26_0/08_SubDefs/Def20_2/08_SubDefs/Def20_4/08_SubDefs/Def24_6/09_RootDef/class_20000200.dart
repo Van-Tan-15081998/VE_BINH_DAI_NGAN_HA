@@ -747,4 +747,24 @@ abstract class QuanLyTrangThaiPhuongThucTanCongCoBan with CauTrucThucThiCoBan, V
 
     return false;
   }
+
+  Future<void> onNgatKetNoiSpriteVienDan() async {
+    getVienDanSS20?.getSpriteVienDan?.animation = null;
+    getVienDanSS22?.getSpriteVienDan?.animation = null;
+    getVienDanSS24?.getSpriteVienDan?.animation = null;
+    getVienDanSS26?.getSpriteVienDan?.animation = null;
+    getVienDanSS28?.getSpriteVienDan?.animation = null;
+
+    getVienDanSS30?.getSpriteVienDan?.animation = null;
+    getVienDanSS32?.getSpriteVienDan?.animation = null;
+    getVienDanSS34?.getSpriteVienDan?.animation = null;
+    getVienDanSS36?.getSpriteVienDan?.animation = null;
+    getVienDanSS38?.getSpriteVienDan?.animation = null;
+
+    getVienDanSS40?.getSpriteVienDan?.animation = null;
+    getVienDanSS42?.getSpriteVienDan?.animation = null;
+    getVienDanSS44?.getSpriteVienDan?.animation = null;
+    getVienDanSS46?.getSpriteVienDan?.animation = null;
+    getVienDanSS48?.getSpriteVienDan?.animation = null;
+  }
 }

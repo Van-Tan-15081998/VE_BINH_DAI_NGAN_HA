@@ -46,18 +46,4 @@ class SpritePhuongTienSS28BangDieuKhienDoiHinhSatThuTanCong extends SpritePhuong
 
     return;
   }
-
-  @override
-  void onRemoveFromParent() {
-    if (isMounted == true) {
-      onVoidCaiDatKiemTraHienThi(value: false);
-
-      animation = null;
-      getDonViSprite?.onVoidCaiDatSpriteAnimation(value: null);
-
-      removeFromParent();
-    }
-
-    return;
-  }
 }

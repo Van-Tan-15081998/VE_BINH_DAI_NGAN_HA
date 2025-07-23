@@ -773,6 +773,13 @@ class QUANLYTHANHPHANMANHINHKHUNGMANHINHCHINH extends QUANLYTHANHPHANMANHINHTHUO
         await Future.delayed(Duration(milliseconds: 1000));
 
         await getGlobalStateManagementSystem?.getBangDieuKhienKichBanChienDauTheoGiaiDoan?.getQuanLyDieuKhienChuyenKichBanChienDau?.onNgatKetNoiSpritePhuongTien();
+        await getGlobalStateManagementSystem?.getChienDauCoChienDauTongQuat?.getPhuongThucTanCongCoBan?.getPhuongThucTanCongCoBanSS01?.onNgatKetNoiSpriteVienDan();
+        await getGlobalStateManagementSystem?.getChienDauCoChienDauTongQuat?.getPhuongThucTanCongCoBan?.getPhuongThucTanCongCoBanSS02?.onNgatKetNoiSpriteVienDan();
+        await getGlobalStateManagementSystem?.getChienDauCoChienDauTongQuat?.getPhuongThucTanCongCoBan?.getPhuongThucTanCongCoBanSS03?.onNgatKetNoiSpriteVienDan();
+
+        await getGlobalStateManagementSystem?.getChienDauCoChienDauTongQuat?.getPhuongThucTanCongThongMinh?.getPhuongThucTanCongThongMinhSS01?.onNgatKetNoiSpriteVienDan();
+        await getGlobalStateManagementSystem?.getChienDauCoChienDauTongQuat?.getPhuongThucTanCongThongMinh?.getPhuongThucTanCongThongMinhSS02?.onNgatKetNoiSpriteVienDan();
+        await getGlobalStateManagementSystem?.getChienDauCoChienDauTongQuat?.getPhuongThucTanCongThongMinh?.getPhuongThucTanCongThongMinhSS03?.onNgatKetNoiSpriteVienDan();
 
         await getKhungManHinhSS03000?.onRemoveRoot(flameGame: null, component: getKhungManHinhSS03000);
         /// -----

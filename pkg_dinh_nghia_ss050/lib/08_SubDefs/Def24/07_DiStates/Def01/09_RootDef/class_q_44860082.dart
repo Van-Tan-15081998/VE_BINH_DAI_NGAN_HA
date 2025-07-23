@@ -48,10 +48,11 @@ class TrangThaiPhuongTien {
   /// -----
   /// TODO:
   /// -----
-  Future<void> onNgatKetNoiSprite() async {
-
-    getSpritePhuongTien?.onRemoveFromParent();
+  Future<void> onNgatKetNoiSprite({required Future<void> Function()? onThucThiHoanTat}) async {
+    getSpritePhuongTien?.onRemoveFromParent(onThucThiHoanTat: onThucThiHoanTat);
     getSpriteChiSoPhuongTien?.onRemoveFromParent();
+
+    // await onThucThiHoanTat?.call();
 
     return;
   }

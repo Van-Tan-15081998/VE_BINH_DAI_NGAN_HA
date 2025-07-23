@@ -83,7 +83,7 @@ class SPRITETHANHNGANGCHISOMAUCHIENDAUCO extends SpriteAnimationComponent with H
     onVoidCaiDatChieuCao(value: 0);
     onVoidCaiDatKiemTraHienThi(value: false);
 
-    onVoidCaiDatDonViSprite(value: DonViSpriteCoBan(maDinhDanh: null, nguonHinhAnh: null,  spriteAnimation: null, sprite: null));
+    onVoidCaiDatDonViSprite(value: DonViSpriteCoBan(maDinhDanh: null, nguonHinhAnh: null, spriteAnimation: null, sprite: null));
 
     onVoidCaiDatMoHinhChiTiet();
 
@@ -237,13 +237,15 @@ class SPRITETHANHNGANGCHISOMAUCHIENDAUCO extends SpriteAnimationComponent with H
 
     return;
   }
-  void onVoidCapNhatKiemTraHienThi()  {
+
+  void onVoidCapNhatKiemTraHienThi() {
     onVoidCaiDatKiemTraHienThi(value: true);
 
     if (getDonViSprite?.getSpriteAnimation == null) {
-      getTrangThaiTongQuat?.getQuanLyTrangThaiTPGAMEUI?.onTruyXuatSpriteNgoaiHinhThanhPhanGameUI(
+      getTrangThaiTongQuat?.getQuanLyTrangThaiTPGAMEUI?.onVoidTruyXuatSpriteNgoaiHinhThanhPhanGameUI(
         donViSprite: getDonViSprite,
         maDinhDanhThanhPhanGameUI: getGameUIThanhNgangChiSoMauChienDauCo?.getMaDinhDanhGameUI,
+        spriteAnimationComponent: this,
       );
       getSpriteGameUIThanhNgangChiSoMauChienDauCo?.animation = getDonViSprite?.getSpriteAnimation;
 
@@ -481,7 +483,7 @@ class SPRITETHANHNGANGCHISOMAUCHIENDAUCO extends SpriteAnimationComponent with H
               .floor();
 
       if (dx.isNaN == false && dy.isNaN == false) {
-        onVoidCapNhatChiSoMau(dt: dt, dx: dx/2, dy: dy - 50.0, tongChiSoMau: tongChiSoMau * 1.0, chiSoMauHienHanh: chiSoMauHienHanh * 1.0);
+        onVoidCapNhatChiSoMau(dt: dt, dx: dx / 2, dy: dy - 50.0, tongChiSoMau: tongChiSoMau * 1.0, chiSoMauHienHanh: chiSoMauHienHanh * 1.0);
       }
     }
   }

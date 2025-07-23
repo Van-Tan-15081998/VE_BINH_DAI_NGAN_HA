@@ -77,9 +77,10 @@ class SPRITETHANHNGANGCHISOMAUBOSS extends SPRITETHANHNGANGCHISOMAUCOBAN {
       onVoidCaiDatKiemTraHienThi(value: true);
 
       if (getDonViSprite?.getSpriteAnimation == null) {
-        getTrangThaiTongQuat?.getQuanLyTrangThaiTPGAMEUI?.onTruyXuatSpriteNgoaiHinhThanhPhanGameUI(
+        getTrangThaiTongQuat?.getQuanLyTrangThaiTPGAMEUI?.onVoidTruyXuatSpriteNgoaiHinhThanhPhanGameUI(
           donViSprite: getDonViSprite,
           maDinhDanhThanhPhanGameUI: getGameUIThanhNgangChiSoMauPhuongTienBoss?.getMaDinhDanhGameUI,
+          spriteAnimationComponent: this
         );
         getSpriteGameUIThanhNgangChiSoMauPhuongTienBoss?.animation = getDonViSprite?.getSpriteAnimation;
 

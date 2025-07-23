@@ -5,7 +5,7 @@ import 'package:pkg_man_hinh_ss00224/pkg_man_hinh_ss00224_exp.dart';
 /// TODO:
 /// -----
 class SpriteVienDanThongMinhSS03SS24 extends SpriteVienDanThongMinh {
-  SpriteVienDanThongMinhSS03SS24({required super.trangThaiTongQuat});
+  SpriteVienDanThongMinhSS03SS24({required super.trangThaiTongQuat, required super.parentComponent});
 
   /// -----
   /// TODO: Init Root
@@ -38,6 +38,8 @@ class SpriteVienDanThongMinhSS03SS24 extends SpriteVienDanThongMinh {
               ?.getPhuongThucTanCongThongMinhSS03
               ?.getVienDanSS24,
     );
+
+    await getMoHinh?.onCaiDatSpriteVienDan(value: this);
 
     return;
   }

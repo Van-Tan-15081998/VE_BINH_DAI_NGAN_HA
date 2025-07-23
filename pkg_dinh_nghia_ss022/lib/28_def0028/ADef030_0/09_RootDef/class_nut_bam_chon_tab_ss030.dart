@@ -302,6 +302,7 @@ class SPRITEGAMEUINUTBAMCHONTABCHIENDAUKHONGKICHHOAT extends SpriteAnimationComp
       getTrangThaiTongQuat?.getQuanLyTrangThaiTPGAMEUI?.onVoidTruyXuatSpriteNgoaiHinhThanhPhanGameUI(
         donViSprite: getDonViSprite,
         maDinhDanhThanhPhanGameUI: getThanhPhanGameUI?.getMaDinhDanhGameUI,
+          spriteAnimationComponent: this
       );
       animation = getDonViSprite?.getSpriteAnimation;
     }
@@ -408,6 +409,7 @@ class SPRITEGAMEUINUTBAMCHONTABCHIENDAUKICHHOAT extends SpriteAnimationComponent
       getTrangThaiTongQuat?.getQuanLyTrangThaiTPGAMEUI?.onVoidTruyXuatSpriteNgoaiHinhThanhPhanGameUI(
         donViSprite: getDonViSprite,
         maDinhDanhThanhPhanGameUI: getThanhPhanGameUI?.getMaDinhDanhGameUI,
+          spriteAnimationComponent: this
       );
       animation = getDonViSprite?.getSpriteAnimation;
     }

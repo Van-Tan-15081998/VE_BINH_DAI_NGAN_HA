@@ -91,6 +91,14 @@ class SpriteAnimationHasVisibility extends SpriteAnimationComponent with HasVisi
       _thanhPhanGameUI ??= value;
     }
 
+    if (getDonViSprite?.getSpriteAnimation == null && getThanhPhanGameUI != null) {
+      getGlobalStateManagementSystem?.getQuanLyTrangThaiTPGAMEUI?.onVoidTruyXuatSpriteNgoaiHinhThanhPhanGameUI(
+        donViSprite: getDonViSprite, //
+        maDinhDanhThanhPhanGameUI: getThanhPhanGameUI?.getMaDinhDanhGameUI, //
+        spriteAnimationComponent: this, //
+      );
+    }
+
     return;
   }
 
@@ -104,7 +112,13 @@ class SpriteAnimationHasVisibility extends SpriteAnimationComponent with HasVisi
   /// -----
   /// TODO:
   /// -----
-  SpriteAnimationHasVisibility({required GlobalStateManagementSystem? globalStateManagementSystem, required double? sizeDx, required double? sizeDy, required double? positionDx, required double? positionDy}) {
+  SpriteAnimationHasVisibility({
+    required GlobalStateManagementSystem? globalStateManagementSystem,
+    required double? sizeDx,
+    required double? sizeDy,
+    required double? positionDx,
+    required double? positionDy,
+  }) {
     onSetGlobalStateManagementSystem(value: globalStateManagementSystem, caiDatUuTien: true);
     onVoidCaiDatSizeDx(value: sizeDx, caiDatUuTien: true);
     onVoidCaiDatSizeDy(value: sizeDy, caiDatUuTien: true);
@@ -115,7 +129,13 @@ class SpriteAnimationHasVisibility extends SpriteAnimationComponent with HasVisi
   /// -----
   /// TODO:
   /// -----
-  SpriteAnimationHasVisibility.onActive({required GlobalStateManagementSystem? globalStateManagementSystem, required double? sizeDx, required double? sizeDy, required double? positionDx, required double? positionDy}) {
+  SpriteAnimationHasVisibility.onActive({
+    required GlobalStateManagementSystem? globalStateManagementSystem,
+    required double? sizeDx,
+    required double? sizeDy,
+    required double? positionDx,
+    required double? positionDy,
+  }) {
     onVoidCaiDatKiemTraHienThi(value: true);
 
     onSetGlobalStateManagementSystem(value: globalStateManagementSystem, caiDatUuTien: true);
@@ -207,7 +227,11 @@ class SpriteAnimationHasVisibility extends SpriteAnimationComponent with HasVisi
     }
 
     if (getDonViSprite?.getSpriteAnimation == null && getThanhPhanGameUI != null) {
-      getGlobalStateManagementSystem?.getQuanLyTrangThaiTPGAMEUI?.onVoidTruyXuatSpriteNgoaiHinhThanhPhanGameUI(donViSprite: getDonViSprite, maDinhDanhThanhPhanGameUI: getThanhPhanGameUI?.getMaDinhDanhGameUI);
+      getGlobalStateManagementSystem?.getQuanLyTrangThaiTPGAMEUI?.onVoidTruyXuatSpriteNgoaiHinhThanhPhanGameUI(
+        donViSprite: getDonViSprite, //
+        maDinhDanhThanhPhanGameUI: getThanhPhanGameUI?.getMaDinhDanhGameUI, //
+        spriteAnimationComponent: null, //
+      );
       animation = getDonViSprite?.getSpriteAnimation;
     }
   }

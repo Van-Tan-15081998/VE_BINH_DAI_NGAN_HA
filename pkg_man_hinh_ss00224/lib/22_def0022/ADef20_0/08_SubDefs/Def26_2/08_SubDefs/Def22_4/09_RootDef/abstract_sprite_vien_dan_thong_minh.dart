@@ -12,8 +12,9 @@ abstract class SpriteVienDanThongMinh extends SpriteAnimationComponent with HasV
   /// -----
   /// TODO:
   /// -----
-  SpriteVienDanThongMinh({required GlobalStateManagementSystem? trangThaiTongQuat}) {
+  SpriteVienDanThongMinh({required GlobalStateManagementSystem? trangThaiTongQuat, required Component? parentComponent}) {
     caiDatTrangThaiTongQuat(value: trangThaiTongQuat);
+    caiDatParentComponent(value: parentComponent);
   }
 
   /// -----
@@ -53,6 +54,43 @@ abstract class SpriteVienDanThongMinh extends SpriteAnimationComponent with HasV
   DonViSpriteCoBan? get getDonViSprite => _donViSprite;
   Future<void> caiDatDonViSprite({required DonViSpriteCoBan? value}) async {
     _donViSprite ??= value;
+    return;
+  }
+
+  /// -----
+  /// TODO:
+  /// -----
+  Component? _parentComponent;
+  Component? get getParentComponent => _parentComponent;
+  Future<void> caiDatParentComponent({required Component? value}) async {
+    _parentComponent ??= value;
+    return;
+  }
+
+  Future<void> onAddToParent() async {
+    if (getParentComponent != null && isMounted == false) {
+      await Future.delayed(Duration.zero);
+
+      animation = null;
+      getDonViSprite?.onVoidCaiDatSpriteAnimation(value: null);
+
+      await getParentComponent?.add(this);
+    }
+
+    return;
+  }
+
+  void onRemoveFromParent() {
+
+    onVoidCaiDatKiemTraHienThi(value: false);
+
+    animation = null;
+    getDonViSprite?.onVoidCaiDatSpriteAnimation(value: null);
+
+    if (isMounted == true) {
+      removeFromParent();
+    }
+
     return;
   }
 

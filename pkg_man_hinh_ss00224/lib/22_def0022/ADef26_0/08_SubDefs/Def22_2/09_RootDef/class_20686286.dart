@@ -142,50 +142,49 @@ class KhungHinhTichHopSS02PkgManHinhSS00224 extends Component with HasVisibility
     /// TODO:
     /// -----
     /// -----
-    _spriteVienDanThongMinhSS01SS20 = SpriteVienDanThongMinhSS01SS20(trangThaiTongQuat: getTrangThaiTongQuat);
-    _spriteVienDanThongMinhSS01SS22 = SpriteVienDanThongMinhSS01SS22(trangThaiTongQuat: getTrangThaiTongQuat);
-    _spriteVienDanThongMinhSS01SS24 = SpriteVienDanThongMinhSS01SS24(trangThaiTongQuat: getTrangThaiTongQuat);
-    _spriteVienDanThongMinhSS01SS26 = SpriteVienDanThongMinhSS01SS26(trangThaiTongQuat: getTrangThaiTongQuat);
-    _spriteVienDanThongMinhSS01SS28 = SpriteVienDanThongMinhSS01SS28(trangThaiTongQuat: getTrangThaiTongQuat);
-    _spriteVienDanThongMinhSS01SS30 = SpriteVienDanThongMinhSS01SS30(trangThaiTongQuat: getTrangThaiTongQuat);
-    _spriteVienDanThongMinhSS01SS32 = SpriteVienDanThongMinhSS01SS32(trangThaiTongQuat: getTrangThaiTongQuat);
-    _spriteVienDanThongMinhSS01SS34 = SpriteVienDanThongMinhSS01SS34(trangThaiTongQuat: getTrangThaiTongQuat);
-    _spriteVienDanThongMinhSS01SS36 = SpriteVienDanThongMinhSS01SS36(trangThaiTongQuat: getTrangThaiTongQuat);
-    _spriteVienDanThongMinhSS01SS38 = SpriteVienDanThongMinhSS01SS38(trangThaiTongQuat: getTrangThaiTongQuat);
+    _spriteVienDanThongMinhSS01SS20 = SpriteVienDanThongMinhSS01SS20(trangThaiTongQuat: getTrangThaiTongQuat, parentComponent: this);
+    _spriteVienDanThongMinhSS01SS22 = SpriteVienDanThongMinhSS01SS22(trangThaiTongQuat: getTrangThaiTongQuat, parentComponent: this);
+    _spriteVienDanThongMinhSS01SS24 = SpriteVienDanThongMinhSS01SS24(trangThaiTongQuat: getTrangThaiTongQuat, parentComponent: this);
+    _spriteVienDanThongMinhSS01SS26 = SpriteVienDanThongMinhSS01SS26(trangThaiTongQuat: getTrangThaiTongQuat, parentComponent: this);
+    _spriteVienDanThongMinhSS01SS28 = SpriteVienDanThongMinhSS01SS28(trangThaiTongQuat: getTrangThaiTongQuat, parentComponent: this);
+    _spriteVienDanThongMinhSS01SS30 = SpriteVienDanThongMinhSS01SS30(trangThaiTongQuat: getTrangThaiTongQuat, parentComponent: this);
+    _spriteVienDanThongMinhSS01SS32 = SpriteVienDanThongMinhSS01SS32(trangThaiTongQuat: getTrangThaiTongQuat, parentComponent: this);
+    _spriteVienDanThongMinhSS01SS34 = SpriteVienDanThongMinhSS01SS34(trangThaiTongQuat: getTrangThaiTongQuat, parentComponent: this);
+    _spriteVienDanThongMinhSS01SS36 = SpriteVienDanThongMinhSS01SS36(trangThaiTongQuat: getTrangThaiTongQuat, parentComponent: this);
+    _spriteVienDanThongMinhSS01SS38 = SpriteVienDanThongMinhSS01SS38(trangThaiTongQuat: getTrangThaiTongQuat, parentComponent: this);
 
-    _spriteVienDanThongMinhSS02SS20 = SpriteVienDanThongMinhSS02SS20(trangThaiTongQuat: getTrangThaiTongQuat);
-    _spriteVienDanThongMinhSS02SS22 = SpriteVienDanThongMinhSS02SS22(trangThaiTongQuat: getTrangThaiTongQuat);
-    _spriteVienDanThongMinhSS02SS24 = SpriteVienDanThongMinhSS02SS24(trangThaiTongQuat: getTrangThaiTongQuat);
-    _spriteVienDanThongMinhSS02SS26 = SpriteVienDanThongMinhSS02SS26(trangThaiTongQuat: getTrangThaiTongQuat);
-    _spriteVienDanThongMinhSS02SS28 = SpriteVienDanThongMinhSS02SS28(trangThaiTongQuat: getTrangThaiTongQuat);
-    _spriteVienDanThongMinhSS02SS30 = SpriteVienDanThongMinhSS02SS30(trangThaiTongQuat: getTrangThaiTongQuat);
-    _spriteVienDanThongMinhSS02SS32 = SpriteVienDanThongMinhSS02SS32(trangThaiTongQuat: getTrangThaiTongQuat);
-    _spriteVienDanThongMinhSS02SS34 = SpriteVienDanThongMinhSS02SS34(trangThaiTongQuat: getTrangThaiTongQuat);
-    _spriteVienDanThongMinhSS02SS36 = SpriteVienDanThongMinhSS02SS36(trangThaiTongQuat: getTrangThaiTongQuat);
-    _spriteVienDanThongMinhSS02SS38 = SpriteVienDanThongMinhSS02SS38(trangThaiTongQuat: getTrangThaiTongQuat);
+    _spriteVienDanThongMinhSS02SS20 = SpriteVienDanThongMinhSS02SS20(trangThaiTongQuat: getTrangThaiTongQuat, parentComponent: this);
+    _spriteVienDanThongMinhSS02SS22 = SpriteVienDanThongMinhSS02SS22(trangThaiTongQuat: getTrangThaiTongQuat, parentComponent: this);
+    _spriteVienDanThongMinhSS02SS24 = SpriteVienDanThongMinhSS02SS24(trangThaiTongQuat: getTrangThaiTongQuat, parentComponent: this);
+    _spriteVienDanThongMinhSS02SS26 = SpriteVienDanThongMinhSS02SS26(trangThaiTongQuat: getTrangThaiTongQuat, parentComponent: this);
+    _spriteVienDanThongMinhSS02SS28 = SpriteVienDanThongMinhSS02SS28(trangThaiTongQuat: getTrangThaiTongQuat, parentComponent: this);
+    _spriteVienDanThongMinhSS02SS30 = SpriteVienDanThongMinhSS02SS30(trangThaiTongQuat: getTrangThaiTongQuat, parentComponent: this);
+    _spriteVienDanThongMinhSS02SS32 = SpriteVienDanThongMinhSS02SS32(trangThaiTongQuat: getTrangThaiTongQuat, parentComponent: this);
+    _spriteVienDanThongMinhSS02SS34 = SpriteVienDanThongMinhSS02SS34(trangThaiTongQuat: getTrangThaiTongQuat, parentComponent: this);
+    _spriteVienDanThongMinhSS02SS36 = SpriteVienDanThongMinhSS02SS36(trangThaiTongQuat: getTrangThaiTongQuat, parentComponent: this);
+    _spriteVienDanThongMinhSS02SS38 = SpriteVienDanThongMinhSS02SS38(trangThaiTongQuat: getTrangThaiTongQuat, parentComponent: this);
 
-    _spriteVienDanThongMinhSS03SS20 = SpriteVienDanThongMinhSS03SS20(trangThaiTongQuat: getTrangThaiTongQuat);
-    _spriteVienDanThongMinhSS03SS22 = SpriteVienDanThongMinhSS03SS22(trangThaiTongQuat: getTrangThaiTongQuat);
-    _spriteVienDanThongMinhSS03SS24 = SpriteVienDanThongMinhSS03SS24(trangThaiTongQuat: getTrangThaiTongQuat);
-    _spriteVienDanThongMinhSS03SS26 = SpriteVienDanThongMinhSS03SS26(trangThaiTongQuat: getTrangThaiTongQuat);
-    _spriteVienDanThongMinhSS03SS28 = SpriteVienDanThongMinhSS03SS28(trangThaiTongQuat: getTrangThaiTongQuat);
-    _spriteVienDanThongMinhSS03SS30 = SpriteVienDanThongMinhSS03SS30(trangThaiTongQuat: getTrangThaiTongQuat);
-    _spriteVienDanThongMinhSS03SS32 = SpriteVienDanThongMinhSS03SS32(trangThaiTongQuat: getTrangThaiTongQuat);
-    _spriteVienDanThongMinhSS03SS34 = SpriteVienDanThongMinhSS03SS34(trangThaiTongQuat: getTrangThaiTongQuat);
-    _spriteVienDanThongMinhSS03SS36 = SpriteVienDanThongMinhSS03SS36(trangThaiTongQuat: getTrangThaiTongQuat);
-    _spriteVienDanThongMinhSS03SS38 = SpriteVienDanThongMinhSS03SS38(trangThaiTongQuat: getTrangThaiTongQuat);
+    _spriteVienDanThongMinhSS03SS20 = SpriteVienDanThongMinhSS03SS20(trangThaiTongQuat: getTrangThaiTongQuat, parentComponent: this);
+    _spriteVienDanThongMinhSS03SS22 = SpriteVienDanThongMinhSS03SS22(trangThaiTongQuat: getTrangThaiTongQuat, parentComponent: this);
+    _spriteVienDanThongMinhSS03SS24 = SpriteVienDanThongMinhSS03SS24(trangThaiTongQuat: getTrangThaiTongQuat, parentComponent: this);
+    _spriteVienDanThongMinhSS03SS26 = SpriteVienDanThongMinhSS03SS26(trangThaiTongQuat: getTrangThaiTongQuat, parentComponent: this);
+    _spriteVienDanThongMinhSS03SS28 = SpriteVienDanThongMinhSS03SS28(trangThaiTongQuat: getTrangThaiTongQuat, parentComponent: this);
+    _spriteVienDanThongMinhSS03SS30 = SpriteVienDanThongMinhSS03SS30(trangThaiTongQuat: getTrangThaiTongQuat, parentComponent: this);
+    _spriteVienDanThongMinhSS03SS32 = SpriteVienDanThongMinhSS03SS32(trangThaiTongQuat: getTrangThaiTongQuat, parentComponent: this);
+    _spriteVienDanThongMinhSS03SS34 = SpriteVienDanThongMinhSS03SS34(trangThaiTongQuat: getTrangThaiTongQuat, parentComponent: this);
+    _spriteVienDanThongMinhSS03SS36 = SpriteVienDanThongMinhSS03SS36(trangThaiTongQuat: getTrangThaiTongQuat, parentComponent: this);
+    _spriteVienDanThongMinhSS03SS38 = SpriteVienDanThongMinhSS03SS38(trangThaiTongQuat: getTrangThaiTongQuat, parentComponent: this);
 
-    _spriteVienDanThongMinhSS04SS20 = SpriteVienDanThongMinhSS04SS20(trangThaiTongQuat: getTrangThaiTongQuat);
-    _spriteVienDanThongMinhSS04SS22 = SpriteVienDanThongMinhSS04SS22(trangThaiTongQuat: getTrangThaiTongQuat);
-    _spriteVienDanThongMinhSS04SS24 = SpriteVienDanThongMinhSS04SS24(trangThaiTongQuat: getTrangThaiTongQuat);
-    _spriteVienDanThongMinhSS04SS26 = SpriteVienDanThongMinhSS04SS26(trangThaiTongQuat: getTrangThaiTongQuat);
-    _spriteVienDanThongMinhSS04SS28 = SpriteVienDanThongMinhSS04SS28(trangThaiTongQuat: getTrangThaiTongQuat);
-    _spriteVienDanThongMinhSS04SS30 = SpriteVienDanThongMinhSS04SS30(trangThaiTongQuat: getTrangThaiTongQuat);
-    _spriteVienDanThongMinhSS04SS32 = SpriteVienDanThongMinhSS04SS32(trangThaiTongQuat: getTrangThaiTongQuat);
-    _spriteVienDanThongMinhSS04SS34 = SpriteVienDanThongMinhSS04SS34(trangThaiTongQuat: getTrangThaiTongQuat);
-    _spriteVienDanThongMinhSS04SS36 = SpriteVienDanThongMinhSS04SS36(trangThaiTongQuat: getTrangThaiTongQuat);
-    _spriteVienDanThongMinhSS04SS38 = SpriteVienDanThongMinhSS04SS38(trangThaiTongQuat: getTrangThaiTongQuat);
-    
+    _spriteVienDanThongMinhSS04SS20 = SpriteVienDanThongMinhSS04SS20(trangThaiTongQuat: getTrangThaiTongQuat, parentComponent: this);
+    _spriteVienDanThongMinhSS04SS22 = SpriteVienDanThongMinhSS04SS22(trangThaiTongQuat: getTrangThaiTongQuat, parentComponent: this);
+    _spriteVienDanThongMinhSS04SS24 = SpriteVienDanThongMinhSS04SS24(trangThaiTongQuat: getTrangThaiTongQuat, parentComponent: this);
+    _spriteVienDanThongMinhSS04SS26 = SpriteVienDanThongMinhSS04SS26(trangThaiTongQuat: getTrangThaiTongQuat, parentComponent: this);
+    _spriteVienDanThongMinhSS04SS28 = SpriteVienDanThongMinhSS04SS28(trangThaiTongQuat: getTrangThaiTongQuat, parentComponent: this);
+    _spriteVienDanThongMinhSS04SS30 = SpriteVienDanThongMinhSS04SS30(trangThaiTongQuat: getTrangThaiTongQuat, parentComponent: this);
+    _spriteVienDanThongMinhSS04SS32 = SpriteVienDanThongMinhSS04SS32(trangThaiTongQuat: getTrangThaiTongQuat, parentComponent: this);
+    _spriteVienDanThongMinhSS04SS34 = SpriteVienDanThongMinhSS04SS34(trangThaiTongQuat: getTrangThaiTongQuat, parentComponent: this);
+    _spriteVienDanThongMinhSS04SS36 = SpriteVienDanThongMinhSS04SS36(trangThaiTongQuat: getTrangThaiTongQuat, parentComponent: this);
+    _spriteVienDanThongMinhSS04SS38 = SpriteVienDanThongMinhSS04SS38(trangThaiTongQuat: getTrangThaiTongQuat, parentComponent: this);
 
     return;
   }
@@ -194,7 +193,6 @@ class KhungHinhTichHopSS02PkgManHinhSS00224 extends Component with HasVisibility
   /// TODO: onAddRoot
   ///
   Future<void> onAddRoot() async {
-
     await Future.wait([
       onAddComponent(_spriteVienDanThongMinhSS01SS20),
       onAddComponent(_spriteVienDanThongMinhSS01SS22),

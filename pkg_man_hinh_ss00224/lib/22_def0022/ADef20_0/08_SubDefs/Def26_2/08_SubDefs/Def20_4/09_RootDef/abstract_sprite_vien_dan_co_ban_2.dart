@@ -1,3 +1,4 @@
+import 'dart:ui';
 import 'dart:async';
 import 'dart:math';
 import 'package:flame/components.dart';
@@ -8,12 +9,13 @@ import 'package:pkg_dinh_nghia_ss050/pkg_dinh_nghia_ss050_exp.dart';
 ///
 /// TODO:
 ///
-abstract class SpriteVienDanCoBan2 extends SpriteAnimationComponent with HasVisibility {
+abstract class SpriteVienDanCoBan extends SpriteAnimationComponent with HasVisibility {
   /// -----
   /// TODO:
   /// -----
-  SpriteVienDanCoBan2({required GlobalStateManagementSystem? trangThaiTongQuat}) {
+  SpriteVienDanCoBan({required GlobalStateManagementSystem? trangThaiTongQuat, required Component? parentComponent}) {
     caiDatTrangThaiTongQuat(value: trangThaiTongQuat);
+    caiDatParentComponent(value: parentComponent);
   }
 
   /// -----
@@ -53,6 +55,43 @@ abstract class SpriteVienDanCoBan2 extends SpriteAnimationComponent with HasVisi
   DonViSpriteCoBan? get getDonViSprite => _donViSprite;
   Future<void> caiDatDonViSprite({required DonViSpriteCoBan? value}) async {
     _donViSprite ??= value;
+    return;
+  }
+
+  /// -----
+  /// TODO:
+  /// -----
+  Component? _parentComponent;
+  Component? get getParentComponent => _parentComponent;
+  Future<void> caiDatParentComponent({required Component? value}) async {
+    _parentComponent ??= value;
+    return;
+  }
+
+  Future<void> onAddToParent() async {
+    if (getParentComponent != null && isMounted == false) {
+      await Future.delayed(Duration.zero);
+
+      animation = null;
+      getDonViSprite?.onVoidCaiDatSpriteAnimation(value: null);
+
+      await getParentComponent?.add(this);
+    }
+
+    return;
+  }
+
+  void onRemoveFromParent() {
+
+    onVoidCaiDatKiemTraHienThi(value: false);
+
+    animation = null;
+    getDonViSprite?.onVoidCaiDatSpriteAnimation(value: null);
+
+    if (isMounted == true) {
+      removeFromParent();
+    }
+
     return;
   }
 
@@ -267,8 +306,20 @@ abstract class SpriteVienDanCoBan2 extends SpriteAnimationComponent with HasVisi
     // debugMode = true;
     anchor = Anchor.center;
 
-    
-
     await onInitRoot();
+  }
+
+  @override
+  void renderTree(Canvas canvas) {
+    // import 'dart:ui';
+    try {
+      if (getKiemTraHienThi == true && animation != null) {
+        super.renderTree(canvas);
+      }
+    } catch (e) {
+      return;
+    }
+
+    return;
   }
 }

@@ -128,7 +128,7 @@ class QUANLYTAINGUYENTHANHPHANGAMEUI with CauTrucThucThiCoBan {
     return;
   }
 
-  Future<void> onTaiTaiNguyenTichHopTheoTuanTu({required CoreGameUIComponent? thanhPhanGameUI}) async {
+  Future<void> onTaiTaiNguyenTichHopTheoTuanTu({required CoreGameUIComponent? thanhPhanGameUI, Future<void> Function()? onThucThiHoanTat}) async {
     /// -----
     /// TODO:
     /// -----
@@ -323,6 +323,8 @@ class QUANLYTAINGUYENTHANHPHANGAMEUI with CauTrucThucThiCoBan {
         await thanhPhanGameUI.getSpriteThanhPhanGameUI?.getDonViSpriteNgoaiHinhGameUIPartSS04?.caiDatSpriteAnimation(value: null);
         await thanhPhanGameUI.getSpriteThanhPhanGameUI?.getDonViSpriteNgoaiHinhGameUIPartSS05?.caiDatSpriteAnimation(value: null);
         await thanhPhanGameUI.getSpriteThanhPhanGameUI?.getDonViSpriteNgoaiHinhGameUIPartSS06?.caiDatSpriteAnimation(value: null);
+
+        await onThucThiHoanTat?.call();
       }
     };
 

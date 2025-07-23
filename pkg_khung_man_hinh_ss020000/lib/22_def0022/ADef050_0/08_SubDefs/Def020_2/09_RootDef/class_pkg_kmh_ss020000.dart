@@ -288,6 +288,7 @@ abstract class THANHPHANHINHANHBACKGROUNDTHUOCCAP extends SpriteComponent with H
       getGlobalStateManagementSystem?.getQuanLyTrangThaiTPGAMEUI?.onVoidTruyXuatSpriteNgoaiHinhThanhPhanGameUI(
         donViSprite: getDonViSprite,
         maDinhDanhThanhPhanGameUI: getThanhPhanGameUI?.getMaDinhDanhGameUI,
+          spriteAnimationComponent: null
       );
       sprite = getDonViSprite?.getSprite;
     }
