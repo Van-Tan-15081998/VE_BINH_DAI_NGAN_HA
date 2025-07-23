@@ -71,16 +71,23 @@ abstract class SpritePhuongTienCoBan extends SpriteAnimationComponent with HasVi
   Future<void> onAddToParent() async {
     if (getParentComponent != null && isMounted == false) {
       await Future.delayed(Duration.zero);
+
+      animation = null;
+      getDonViSprite?.onVoidCaiDatSpriteAnimation(value: null);
+
       await getParentComponent?.add(this);
     }
 
     return;
   }
 
-  Future<void> onRemoveFromParent() async {
+  void onRemoveFromParent() {
     if (isMounted == true) {
-      await Future.delayed(Duration.zero);
       onVoidCaiDatKiemTraHienThi(value: false);
+
+      animation = null;
+      getDonViSprite?.onVoidCaiDatSpriteAnimation(value: null);
+
       removeFromParent();
     }
 
@@ -305,8 +312,12 @@ abstract class SpritePhuongTienCoBan extends SpriteAnimationComponent with HasVi
   @override
   void renderTree(Canvas canvas) {
     // import 'dart:ui';
-    if (getKiemTraHienThi == true) {
-      super.renderTree(canvas);
+    try {
+      if (getKiemTraHienThi == true && animation != null) {
+        super.renderTree(canvas);
+      }
+    } catch (e) {
+      return;
     }
 
     return;
@@ -344,6 +355,8 @@ abstract class SpritePhuongTienCoBan extends SpriteAnimationComponent with HasVi
       onVoidCapNhatTrangThaiMoHinh();
 
       onVoidCapNhatPositionSizeValues();
+    } else if (getTrangThaiTongQuat?.getTienTrinhTongQuat?.getTienTrinhThucThiChienDau?.getTrangThai?.getMoHinh?.onCheckBoolDangChuanBiThucThi() == true) {
+      onRemoveFromParent();
     }
   }
 }

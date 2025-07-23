@@ -357,7 +357,7 @@ class QUANLYDIEUKHIENCHUYENKICHBANCHIENDAU with CauTrucThucThiCoBan, DanhSachQua
     cauTrucThucThiTuanTu.onThucThiHoanTat = onThucThiHoanTat;
 
     // await cauTrucThucThiTuanTu.onThucThiTuanTu(interval: const Duration(milliseconds: 200));
-    await cauTrucThucThiTuanTu.onThucThiTuanTu(interval: const Duration(milliseconds: 500));
+    await cauTrucThucThiTuanTu.onThucThiTuanTu(interval: const Duration(milliseconds: 200));
 
     ///
     return;

@@ -125,6 +125,32 @@ class KHUNGMANHINHCHINH extends KHUNGMANHINHGAMECOSO {
           value: getGlobalStateManagementSystem?.getChienDauCoTongQuat?.getChienDauCoTrucTiepThucThiChienDau?.getTrangThai?.getMoHinh?.getThuocTinhChienDauTheoQuyChuan,
           caiDatUuTien: true,
         );
+
+        await getGlobalStateManagementSystem
+            ?.getChienDauCoTongQuat
+            ?.getChienDauCoTrucTiepThucThiChienDau
+            ?.getTrangThai
+            ?.getMoHinh
+            ?.getThuocTinhChienDauTheoQuyChuan
+            ?.getThuocTinhChienDauSinhTon
+            ?.getThuocTinhMauToiDa
+            ?.getCapDoMauToiDaHienHanh
+            ?.getCapDoChuanChinhThuc
+            ?.getChiSoTheoCapDo
+            ?.onKhoiPhucChiSoMauToiDaVanHanh();
+
+        await getGlobalStateManagementSystem
+            ?.getChienDauCoTongQuat
+            ?.getChienDauCoTrucTiepThucThiChienDau
+            ?.getTrangThai
+            ?.getMoHinh
+            ?.getThuocTinhChienDauTheoQuyChuan
+            ?.getThuocTinhChienDauTanCong
+            ?.getThuocTinhVuKhiSungChinh
+            ?.getCapDoSatThuongCoBanVKSCHienHanh
+            ?.getCapDoChuanChinhThuc
+            ?.getChiSoTheoCapDo
+            ?.onKhoiPhucChiSoSatThuongVanHanh();
       },
     );
 
@@ -247,7 +273,9 @@ class KHUNGMANHINHCHINH extends KHUNGMANHINHGAMECOSO {
     CAUTRUCTHUCTHITUANTUCOBAN? cauTrucThiThiTuanTu;
     cauTrucThiThiTuanTu = CAUTRUCTHUCTHITUANTUCOBAN(
       onThucThiTuanTuSS010: () async {
-        await getGlobalStateManagementSystem?.getBangDieuKhienKichBanChienDauTheoGiaiDoan?.getQuanLyDieuKhienChuyenKichBanChienDau?.onTaiTaiNguyenPhuongTienTuanTu(onThucThiHoanTat: onThucThiHoanTat);
+        await getGlobalStateManagementSystem?.getBangDieuKhienKichBanChienDauTheoGiaiDoan?.getQuanLyDieuKhienChuyenKichBanChienDau?.onTaiTaiNguyenPhuongTienTuanTu(
+          onThucThiHoanTat: onThucThiHoanTat,
+        );
       },
 
       onThucThiHoanTat: null,
@@ -568,7 +596,7 @@ class KHUNGMANHINHCHINH extends KHUNGMANHINHGAMECOSO {
         },
       );
 
-      cauTrucThucThiTuanTuSS030.onThucThiHoanTat = onThucThiHoanTat;
+      // cauTrucThucThiTuanTuSS030.onThucThiHoanTat = onThucThiHoanTat;
 
       await cauTrucThucThiTuanTuSS010.onThucThiTuanTu(interval: const Duration(milliseconds: 200));
     } catch (e) {
@@ -623,8 +651,8 @@ class KHUNGMANHINHCHINH extends KHUNGMANHINHGAMECOSO {
         },
       );
 
-      cauTrucThucThiTuanTuSS030.onThucThiHoanTat = onThucThiHoanTat;
-
+      // cauTrucThucThiTuanTuSS030.onThucThiHoanTat = onThucThiHoanTat;
+      //
       await cauTrucThucThiTuanTuSS010.onThucThiTuanTu(interval: const Duration(milliseconds: 100));
     } catch (e) {
       await onReportRootIssue(nameFunction: 'onTaiTaiNguyenMaster');

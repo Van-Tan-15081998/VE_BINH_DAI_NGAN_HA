@@ -32,4 +32,32 @@ class SpritePhuongTienSS28BangDieuKhienDoiHinhSatThuTanCong extends SpritePhuong
 
     return;
   }
+
+  @override
+  Future<void> onAddToParent() async {
+    if (getParentComponent != null && isMounted == false) {
+      await Future.delayed(Duration.zero);
+
+      animation = null;
+      getDonViSprite?.onVoidCaiDatSpriteAnimation(value: null);
+
+      await getParentComponent?.add(this);
+    }
+
+    return;
+  }
+
+  @override
+  void onRemoveFromParent() {
+    if (isMounted == true) {
+      onVoidCaiDatKiemTraHienThi(value: false);
+
+      animation = null;
+      getDonViSprite?.onVoidCaiDatSpriteAnimation(value: null);
+
+      removeFromParent();
+    }
+
+    return;
+  }
 }

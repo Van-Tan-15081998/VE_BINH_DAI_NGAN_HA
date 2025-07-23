@@ -930,16 +930,16 @@ class QUANLYTRANGTHAITHANHPHANGAMEUITONGQUAT with CauTrucThucThiCoBan {
       );
 
       cauTrucThucThiTuanTuSS010.onThucThiHoanTat = () async {
-        await cauTrucThucThiTuanTuSS020?.onThucThiTuanTu(interval: const Duration(milliseconds: 250));
+        await cauTrucThucThiTuanTuSS020?.onThucThiTuanTu(interval: const Duration(milliseconds: 100));
       };
 
       cauTrucThucThiTuanTuSS020.onThucThiHoanTat = () async {
-        await cauTrucThucThiTuanTuSS030?.onThucThiTuanTu(interval: const Duration(milliseconds: 300));
+        await cauTrucThucThiTuanTuSS030?.onThucThiTuanTu(interval: const Duration(milliseconds: 100));
       };
 
       cauTrucThucThiTuanTuSS030.onThucThiHoanTat = onThucThiHoanTat;
 
-      cauTrucThucThiTuanTuSS010.onThucThiTuanTu(interval: const Duration(milliseconds: 200));
+      cauTrucThucThiTuanTuSS010.onThucThiTuanTu(interval: const Duration(milliseconds: 100));
     } catch (e) {
       await onReportRootIssue(nameFunction: 'onTaiTaiNguyenMaster');
     }

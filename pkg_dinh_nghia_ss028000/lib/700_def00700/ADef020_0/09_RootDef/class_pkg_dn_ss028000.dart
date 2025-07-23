@@ -1969,7 +1969,7 @@ class QUANLYTRANGTHAIHANGARCHIENDAUCO with CAUTRUCTHUCTHICOBAN {
 
       cauTrucThucThiTuanTu.onThucThiHoanTat = onThucThiHoanTat;
 
-      cauTrucThucThiTuanTu.onThucThiTuanTu(interval: const Duration(milliseconds: 500));
+      cauTrucThucThiTuanTu.onThucThiTuanTu(interval: const Duration(milliseconds: 100));
     } catch (e) {
       await onReportRootIssue(nameFunction: 'onTaiTaiNguyenMaster');
     }

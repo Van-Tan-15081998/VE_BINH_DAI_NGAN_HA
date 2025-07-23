@@ -713,7 +713,7 @@ class QUANLYTHANHPHANMANHINHKHUNGMANHINHCHINH extends QUANLYTHANHPHANMANHINHTHUO
       await getGameController?.getQuanLyThanhPhanHinhAnhThuocCap?.onRemoveRoot(flameGame: getGameController, component: null);
       await getGameController?.getQuanLyThanhPhanTichHopThuocCap?.onRemoveRoot(flameGame: getGameController, component: null);
 
-      await getKhungManHinhSS03000?.onAddRoot(flameGame: null, component: getKhungManHinhSS03000);
+
 
       await Future.delayed(Duration(milliseconds: 1000));
 
@@ -728,6 +728,8 @@ class QUANLYTHANHPHANMANHINHKHUNGMANHINHCHINH extends QUANLYTHANHPHANMANHINHTHUO
                   await Future.delayed(Duration(milliseconds: 1000));
                   await getGameController?.onKichHoatThucThiNhiemVuChienDau(
                     onThucThiHoanTat: () async {
+                      await getKhungManHinhSS03000?.onAddRoot(flameGame: null, component: getKhungManHinhSS03000);
+
                       await getKhungManHinhSS03000?.onHuyKichHoatKhungManHinhThuocCapSS300100();
                     },
                   );
@@ -747,8 +749,14 @@ class QUANLYTHANHPHANMANHINHKHUNGMANHINHCHINH extends QUANLYTHANHPHANMANHINHTHUO
 
   @override
   Future<void> onTroVeTrangChu() async {
+
+    await getGlobalStateManagementSystem?.getTienTrinhTongQuat?.getTienTrinhThucThiChienDau?.getTrangThai?.getMoHinh?.caiDatDangChuanBiThucThi();
+
+    getGlobalStateManagementSystem?.onGetEntityResourceManagement?.getQuanLyTrangThaiHangarPhuongTien?.getDanhSachPhuongTienTaiTaiNguyen.clear();
+
     /// TODO: Hiển Thị Màn Hình Bảng Điều Khiển Chiến Đấu
     await getKhungManHinhSS03000?.onHuyKichHoatThanhPhanManHinhThuocCap();
+    await getKhungManHinhSS03000?.getQuanLyThanhPhanTichHopThuocCap?.onRemoveRoot(flameGame: null, component: getKhungManHinhSS03000);
 
     /// TODO: Hiển Thị Màn Hình Loading Nhiệm Vụ
     // await getKhungManHinhSS03000?.onKichHoatKhungManHinhThuocCapSS300100();
@@ -760,6 +768,9 @@ class QUANLYTHANHPHANMANHINHKHUNGMANHINHCHINH extends QUANLYTHANHPHANMANHINHTHUO
     await getGameController?.onTaiTaiNguyenMaster(
       onThucThiHoanTat: () async {
         await Future.delayed(Duration(milliseconds: 1000));
+
+        await getGlobalStateManagementSystem?.getBangDieuKhienKichBanChienDauTheoGiaiDoan?.getQuanLyDieuKhienChuyenKichBanChienDau?.onNgatKetNoiSpritePhuongTien();
+
         await getKhungManHinhSS03000?.onRemoveRoot(flameGame: null, component: getKhungManHinhSS03000);
         /// -----
         /// TODO:
@@ -776,8 +787,6 @@ class QUANLYTHANHPHANMANHINHKHUNGMANHINHCHINH extends QUANLYTHANHPHANMANHINHTHUO
         await getGameController?.getQuanLyThanhPhanNutBamThuocCap?.onAddRoot(flameGame: getGameController, component: null);
         await getGameController?.getQuanLyThanhPhanVanBanThuocCap?.onAddRoot(flameGame: getGameController, component: null);
         await getGameController?.getQuanLyThanhPhanTichHopThuocCap?.onAddRoot(flameGame: getGameController, component: null);
-
-        await getGlobalStateManagementSystem?.getBangDieuKhienKichBanChienDauTheoGiaiDoan?.getQuanLyDieuKhienChuyenKichBanChienDau?.onNgatKetNoiSpritePhuongTien();
 
         // await getKhungManHinhSS03000?.onHuyKichHoatKhungManHinhThuocCapSS300100();
         await getKhungManHinhMasterLoading?.onHuyKichHoatThanhPhanManHinhThuocCap();

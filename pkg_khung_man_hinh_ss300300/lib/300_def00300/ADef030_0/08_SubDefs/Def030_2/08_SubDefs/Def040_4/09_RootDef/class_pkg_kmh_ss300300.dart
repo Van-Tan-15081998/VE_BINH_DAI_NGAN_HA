@@ -27,7 +27,6 @@ class NUTBAMCHONQUAYVETRANGCHU extends THANHPHANNUTBAMTHUOCCAPTHUANKICHHOAT {
 
     await getGameController?.onHuyKichHoatKhungManHinhThuocCapSS300300();
 
-
     await getGameController?.onTroVeTrangChu();
   }
 

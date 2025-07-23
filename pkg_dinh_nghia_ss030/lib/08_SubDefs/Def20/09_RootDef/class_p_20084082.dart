@@ -505,7 +505,7 @@ class MoHinhPhuongTienTongQuat with CauTrucThucThiCoBan {
     // => Về sau dựa vào getDuLieuJsonLamPhang['[TRANG_THAI_TON_TAI]'] để cập nhật
     getDuLieuJsonLamPhang['[DI_CHUYEN_HIEN_THI]'] = false;
 
-    await getSpritePhuongTien?.onRemoveFromParent();
+    getSpritePhuongTien?.onRemoveFromParent();
     await getSpriteChiSoPhuongTien?.onRemoveFromParent();
 
     ///
