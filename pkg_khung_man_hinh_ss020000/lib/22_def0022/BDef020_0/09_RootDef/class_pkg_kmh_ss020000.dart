@@ -415,6 +415,24 @@ mixin KICHBANDIEUKHIENTHUOCCAPCOBAN {
   }
 
   /// -----
+  /// TODO: Giải Phóng Tài Nguyên Master Phương Tiện
+  /// -----
+  Future<void> onGiaiPhongTaiNguyenMasterPhuongTien({required Future<void> Function()? onThucThiHoanTat}) async {
+    try {
+      /// -----
+      /// TODO:
+      /// -----
+    } catch (e) {
+      await onReportRootIssue(
+        nameFunction: 'onGiaiPhongTaiNguyenMasterPhuongTien',
+      );
+    }
+
+    ///
+    return;
+  }
+
+  /// -----
   /// TODO: Tải Tài Nguyên Master
   /// -----
   Future<void> onTaiTaiNguyenMaster({required Future<void> Function()? onThucThiHoanTat}) async {
@@ -689,7 +707,7 @@ mixin KICHBANDIEUKHIENTHUOCCAPCOBAN {
   /// -----
   Future<void> onReportRootIssue({required String? nameFunction}) async {
     if (kDebugMode) {
-      String message = '[❗️❗️❗️Báo Cáo Vấn Đề❗️❗️❗️]: ▶️ $nameFunction';
+      // String message = '[❗️❗️❗️Báo Cáo Vấn Đề❗️❗️❗️]: ▶️ $nameFunction';
       // throw (Exception(message));
     }
 

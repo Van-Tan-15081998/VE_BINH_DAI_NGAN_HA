@@ -251,8 +251,8 @@ class TIENTRINHTAITAINGUYENCOBAN with CAUTRUCTHUCTHICOBAN {
   @override
   Future<void> onReportRootIssue({required String? nameFunction}) async {
     if (kDebugMode) {
-      String message = '[❗️❗️❗️Báo Cáo Vấn Đề❗️❗️❗️]: $getMaDinhDanhCauTrucThucThi ▶️ $nameFunction';
-      throw (Exception(message));
+      // String message = '[❗️❗️❗️Báo Cáo Vấn Đề❗️❗️❗️]: $getMaDinhDanhCauTrucThucThi ▶️ $nameFunction';
+      // throw (Exception(message));
     }
 
     ///

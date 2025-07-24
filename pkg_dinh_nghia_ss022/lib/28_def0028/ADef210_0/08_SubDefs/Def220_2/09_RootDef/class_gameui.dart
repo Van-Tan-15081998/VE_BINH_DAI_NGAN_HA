@@ -76,7 +76,6 @@ class GAMEUITHANHNGANGCHISOMAUPHUONGTIENCHIHUY extends CoreGameUIComponent {
 
     /// TODO: Resized 100
 
-
     final String nguonSpriteRS100PartSS001 = '07_Resized/Def90/sps_rs100_part_ss001.webp';
     final String nguonSpriteRS100PartSS002 = '07_Resized/Def90/sps_rs100_part_ss002.webp';
     final String nguonSpriteRS100PartSS003 = '07_Resized/Def90/sps_rs100_part_ss003.webp';
@@ -204,7 +203,7 @@ class GAMEUITHANHNGANGCHISOMAUPHUONGTIENCHIHUY extends CoreGameUIComponent {
     /// TODO: -----|-----|-----|-----|-----|-----|-----|-----|-----|-----
     /// TODO: -----|-----|-----|-----|-----|-----|-----|-----|-----|-----
 
-    await getSpriteThanhPhanGameUI?.onToiUuHoaKichThuocRS100();
+    await getSpriteThanhPhanGameUI?.onToiUuHoaKichThuocRS050();
 
     /// TODO: -----|-----|-----|-----|-----|-----|-----|-----|-----|-----
     /// TODO: -----|-----|-----|-----|-----|-----|-----|-----|-----|-----

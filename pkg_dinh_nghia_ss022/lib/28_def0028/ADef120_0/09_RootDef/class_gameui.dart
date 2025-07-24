@@ -144,11 +144,7 @@ class FLAMEGAMEKHUNGMANHINHTHUOCCAPCUAHANG extends FlameGame {
 
   @override
   FutureOr<void> onLoad() async {
-    _thanhPhanGameUI = SPRITEGAMEUIKHUNGMANHINHTHUOCCAPCUAHANG(
-      chieuRongSpriteGameUI: chieuRongFlameGameUI,
-      chieuCaoSpriteGameUI: chieuCaoFlameGameUI,
-      trangThaiTongQuat: getTrangThaiTongQuat,
-    );
+    _thanhPhanGameUI = SPRITEGAMEUIKHUNGMANHINHTHUOCCAPCUAHANG(chieuRongSpriteGameUI: chieuRongFlameGameUI, chieuCaoSpriteGameUI: chieuCaoFlameGameUI, trangThaiTongQuat: getTrangThaiTongQuat);
 
     if (_thanhPhanGameUI != null && _thanhPhanGameUI?.isMounted == false) {
       add(_thanhPhanGameUI!);
@@ -211,7 +207,7 @@ class SPRITEGAMEUIKHUNGMANHINHTHUOCCAPCUAHANG extends SpriteComponent with HasVi
     sprite = Sprite(imageMacDinh);
 
     onVoidCaiDatKiemTraHienThi(value: true);
-    onVoidCaiDatDonViSprite(value: DonViSpriteCoBan(maDinhDanh: null, nguonHinhAnh: null,  sprite: null, spriteAnimation: null));
+    onVoidCaiDatDonViSprite(value: DonViSpriteCoBan(maDinhDanh: null, nguonHinhAnh: null, sprite: null, spriteAnimation: null));
 
     _thanhPhanGameUI = GAMEUIKHUNGMANHINHTHUOCCAPCOBAN();
     await _thanhPhanGameUI?.onSetupRoot();
@@ -258,7 +254,7 @@ class SPRITEGAMEUIKHUNGMANHINHTHUOCCAPCUAHANG extends SpriteComponent with HasVi
       getTrangThaiTongQuat?.getQuanLyTrangThaiTPGAMEUI?.onVoidTruyXuatSpriteNgoaiHinhThanhPhanGameUI(
         donViSprite: getDonViSprite,
         maDinhDanhThanhPhanGameUI: getThanhPhanGameUI?.getMaDinhDanhGameUI,
-          spriteAnimationComponent: null
+        spriteAnimationComponent: null,
       );
       sprite = getDonViSprite?.getSprite;
     }

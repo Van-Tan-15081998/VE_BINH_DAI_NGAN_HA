@@ -5,6 +5,7 @@ import 'package:pkg_dinh_nghia_ss022/pkg_dinh_nghia_ss022_exp.dart';
 ///
 class GAMEUITHANHNGANGCHISOMAUCHIENDAUCO extends CoreGameUIComponent {
   static const String maDinhDanhGameUI = '[GAMEUI]_[GAMEUITHANHNGANGCHISOMAUCHIENDAUCO]';
+
   /// -----
   /// TODO: Setup Root
   /// -----

@@ -713,22 +713,22 @@ class QUANLYTHANHPHANMANHINHKHUNGMANHINHCHINH extends QUANLYTHANHPHANMANHINHTHUO
       await getGameController?.getQuanLyThanhPhanHinhAnhThuocCap?.onRemoveRoot(flameGame: getGameController, component: null);
       await getGameController?.getQuanLyThanhPhanTichHopThuocCap?.onRemoveRoot(flameGame: getGameController, component: null);
 
-
-
-      await Future.delayed(Duration(milliseconds: 1000));
+      await Future.delayed(Duration(milliseconds: 500));
 
       await getGameController?.onGiaiPhongTaiNguyenMaster(
         onThucThiHoanTat: () async {
+          /// TODO:
+          getGlobalStateManagementSystem?.getChienDauCoTongQuat?.getChiDinhChienDauCoThucThiChienDau?.getTrangThai?.getSpriteChienDauCo?.animation = null;
 
           getGlobalStateManagementSystem?.onGetEntityResourceManagement?.getQuanLyTrangThaiHangarPhuongTien?.getDanhSachPhuongTienTaiTaiNguyen.clear();
 
-          await Future.delayed(Duration(milliseconds: 1000));
+          await Future.delayed(Duration(milliseconds: 500));
           await getGameController?.onKhoiDongNhiemVuChienDau(
             onThucThiHoanTat: () async {
-              await Future.delayed(Duration(milliseconds: 1000));
+              await Future.delayed(Duration(milliseconds: 500));
               await getGameController?.onTaiTaiNguyenNhiemVuChienDau(
                 onThucThiHoanTat: () async {
-                  await Future.delayed(Duration(milliseconds: 1000));
+                  await Future.delayed(Duration(milliseconds: 500));
                   await getGameController?.onKichHoatThucThiNhiemVuChienDau(
                     onThucThiHoanTat: () async {
                       await getKhungManHinhSS03000?.onAddRoot(flameGame: null, component: getKhungManHinhSS03000);
@@ -752,10 +752,12 @@ class QUANLYTHANHPHANMANHINHKHUNGMANHINHCHINH extends QUANLYTHANHPHANMANHINHTHUO
 
   @override
   Future<void> onTroVeTrangChu() async {
-
     await getGlobalStateManagementSystem?.getTienTrinhTongQuat?.getTienTrinhThucThiChienDau?.getTrangThai?.getMoHinh?.caiDatDangChuanBiThucThi();
 
     // getGlobalStateManagementSystem?.onGetEntityResourceManagement?.getQuanLyTrangThaiHangarPhuongTien?.getDanhSachPhuongTienTaiTaiNguyen.clear();
+
+    /// TODO:
+    getGlobalStateManagementSystem?.getChienDauCoTongQuat?.getChiDinhChienDauCoThucThiChienDau?.getTrangThai?.getSpriteChienDauCo2?.animation = null;
 
     /// TODO: Hiển Thị Màn Hình Bảng Điều Khiển Chiến Đấu
     await getKhungManHinhSS03000?.onHuyKichHoatThanhPhanManHinhThuocCap();
@@ -766,43 +768,48 @@ class QUANLYTHANHPHANMANHINHKHUNGMANHINHCHINH extends QUANLYTHANHPHANMANHINHTHUO
     await getKhungManHinhMasterLoading?.onKichHoatThanhPhanManHinhThuocCap(kichHoatUuTien: true);
 
     await Future.delayed(Duration.zero);
-    await Future.delayed(Duration(milliseconds: 1000));
+    await Future.delayed(Duration(milliseconds: 500));
 
-    await getGameController?.onTaiTaiNguyenMaster(
+    await getGameController?.onGiaiPhongTaiNguyenMasterPhuongTien(
       onThucThiHoanTat: () async {
-        await Future.delayed(Duration(milliseconds: 1000));
+        await Future.delayed(Duration(milliseconds: 500));
+        await getGameController?.onTaiTaiNguyenMaster(
+          onThucThiHoanTat: () async {
+            await Future.delayed(Duration(milliseconds: 500));
 
-        await getGlobalStateManagementSystem?.getBangDieuKhienKichBanChienDauTheoGiaiDoan?.getQuanLyDieuKhienChuyenKichBanChienDau?.onNgatKetNoiSpritePhuongTien();
-        await getGlobalStateManagementSystem?.getChienDauCoChienDauTongQuat?.getPhuongThucTanCongCoBan?.getPhuongThucTanCongCoBanSS01?.onNgatKetNoiSpriteVienDan();
-        await getGlobalStateManagementSystem?.getChienDauCoChienDauTongQuat?.getPhuongThucTanCongCoBan?.getPhuongThucTanCongCoBanSS02?.onNgatKetNoiSpriteVienDan();
-        await getGlobalStateManagementSystem?.getChienDauCoChienDauTongQuat?.getPhuongThucTanCongCoBan?.getPhuongThucTanCongCoBanSS03?.onNgatKetNoiSpriteVienDan();
+            await getGlobalStateManagementSystem?.getBangDieuKhienKichBanChienDauTheoGiaiDoan?.getQuanLyDieuKhienChuyenKichBanChienDau?.onNgatKetNoiSpritePhuongTien();
+            await getGlobalStateManagementSystem?.getChienDauCoChienDauTongQuat?.getPhuongThucTanCongCoBan?.getPhuongThucTanCongCoBanSS01?.onNgatKetNoiSpriteVienDan();
+            await getGlobalStateManagementSystem?.getChienDauCoChienDauTongQuat?.getPhuongThucTanCongCoBan?.getPhuongThucTanCongCoBanSS02?.onNgatKetNoiSpriteVienDan();
+            await getGlobalStateManagementSystem?.getChienDauCoChienDauTongQuat?.getPhuongThucTanCongCoBan?.getPhuongThucTanCongCoBanSS03?.onNgatKetNoiSpriteVienDan();
 
-        await getGlobalStateManagementSystem?.getChienDauCoChienDauTongQuat?.getPhuongThucTanCongThongMinh?.getPhuongThucTanCongThongMinhSS01?.onNgatKetNoiSpriteVienDan();
-        await getGlobalStateManagementSystem?.getChienDauCoChienDauTongQuat?.getPhuongThucTanCongThongMinh?.getPhuongThucTanCongThongMinhSS02?.onNgatKetNoiSpriteVienDan();
-        await getGlobalStateManagementSystem?.getChienDauCoChienDauTongQuat?.getPhuongThucTanCongThongMinh?.getPhuongThucTanCongThongMinhSS03?.onNgatKetNoiSpriteVienDan();
+            await getGlobalStateManagementSystem?.getChienDauCoChienDauTongQuat?.getPhuongThucTanCongThongMinh?.getPhuongThucTanCongThongMinhSS01?.onNgatKetNoiSpriteVienDan();
+            await getGlobalStateManagementSystem?.getChienDauCoChienDauTongQuat?.getPhuongThucTanCongThongMinh?.getPhuongThucTanCongThongMinhSS02?.onNgatKetNoiSpriteVienDan();
+            await getGlobalStateManagementSystem?.getChienDauCoChienDauTongQuat?.getPhuongThucTanCongThongMinh?.getPhuongThucTanCongThongMinhSS03?.onNgatKetNoiSpriteVienDan();
 
-        await getKhungManHinhSS03000?.onRemoveRoot(flameGame: null, component: getKhungManHinhSS03000);
-        /// -----
-        /// TODO:
-        /// -----
-        await Future.wait([
-          onAddComponent(flameGame: getGameController, parentComponent: null, childComponent: getKhungManHinhChinhTabSS010CH).catchError((e) => null),
-          onAddComponent(flameGame: getGameController, parentComponent: null, childComponent: getKhungManHinhChinhTabSS020TT).catchError((e) => null),
-          onAddComponent(flameGame: getGameController, parentComponent: null, childComponent: getKhungManHinhChinhTabSS030CD).catchError((e) => null),
-          onAddComponent(flameGame: getGameController, parentComponent: null, childComponent: getKhungManHinhChinhTabSS040TV).catchError((e) => null),
-          onAddComponent(flameGame: getGameController, parentComponent: null, childComponent: getKhungManHinhChinhTabSS050CD).catchError((e) => null),
-        ]);
+            await getKhungManHinhSS03000?.onRemoveRoot(flameGame: null, component: getKhungManHinhSS03000);
 
-        // await getGameController?.getQuanLyThanhPhanHinhAnhThuocCap?.onAddRoot(flameGame: getGameController, component: null);
-        await getGameController?.getQuanLyThanhPhanNutBamThuocCap?.onAddRoot(flameGame: getGameController, component: null);
-        await getGameController?.getQuanLyThanhPhanVanBanThuocCap?.onAddRoot(flameGame: getGameController, component: null);
-        await getGameController?.getQuanLyThanhPhanTichHopThuocCap?.onAddRoot(flameGame: getGameController, component: null);
+            /// -----
+            /// TODO:
+            /// -----
+            await Future.wait([
+              onAddComponent(flameGame: getGameController, parentComponent: null, childComponent: getKhungManHinhChinhTabSS010CH).catchError((e) => null),
+              onAddComponent(flameGame: getGameController, parentComponent: null, childComponent: getKhungManHinhChinhTabSS020TT).catchError((e) => null),
+              onAddComponent(flameGame: getGameController, parentComponent: null, childComponent: getKhungManHinhChinhTabSS030CD).catchError((e) => null),
+              onAddComponent(flameGame: getGameController, parentComponent: null, childComponent: getKhungManHinhChinhTabSS040TV).catchError((e) => null),
+              onAddComponent(flameGame: getGameController, parentComponent: null, childComponent: getKhungManHinhChinhTabSS050CD).catchError((e) => null),
+            ]);
 
-        // await getKhungManHinhSS03000?.onHuyKichHoatKhungManHinhThuocCapSS300100();
-        await getKhungManHinhMasterLoading?.onHuyKichHoatThanhPhanManHinhThuocCap();
+            // await getGameController?.getQuanLyThanhPhanHinhAnhThuocCap?.onAddRoot(flameGame: getGameController, component: null);
+            await getGameController?.getQuanLyThanhPhanNutBamThuocCap?.onAddRoot(flameGame: getGameController, component: null);
+            await getGameController?.getQuanLyThanhPhanVanBanThuocCap?.onAddRoot(flameGame: getGameController, component: null);
+            await getGameController?.getQuanLyThanhPhanTichHopThuocCap?.onAddRoot(flameGame: getGameController, component: null);
+
+            // await getKhungManHinhSS03000?.onHuyKichHoatKhungManHinhThuocCapSS300100();
+            await getKhungManHinhMasterLoading?.onHuyKichHoatThanhPhanManHinhThuocCap();
+          },
+        );
       },
     );
-
 
     return;
 

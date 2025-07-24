@@ -4,8 +4,7 @@ import 'package:pkg_khung_man_hinh_ss020000/pkg_khung_man_hinh_ss020000_exp.dart
 /// -----
 /// TODO: Card Chiến Đấu Cơ Đẳng Cấp Sao [00C05_SS01]
 /// -----
-class KHUNGTAINGUYENTRAODOIMUACHIENDAUCODANGCAPSAO00C05SS01
-    extends THANHPHANTICHHOPSPRITEANIMATIONVANBANTHUOCCAP {
+class KHUNGTAINGUYENTRAODOIMUACHIENDAUCODANGCAPSAO00C05SS01 extends THANHPHANTICHHOPSPRITEANIMATIONVANBANTHUOCCAP {
   /// -----
   /// TODO:
   /// -----
@@ -23,10 +22,7 @@ class KHUNGTAINGUYENTRAODOIMUACHIENDAUCODANGCAPSAO00C05SS01
 
   @override
   Future<void> onCaiDatChiTietThanhPhanGameUI() async {
-    await onCaiDatThanhPhanGameUI(
-      value: GAMEUIKHUNGTHONGTINTAINGUYENVANGTRAODOI(),
-      caiDatUuTien: true,
-    );
+    await onCaiDatThanhPhanGameUI(value: GAMEUIKHUNGTHONGTINTAINGUYENVANGTRAODOI(), caiDatUuTien: true);
 
     await getThanhPhanGameUI?.onSetupRoot();
 

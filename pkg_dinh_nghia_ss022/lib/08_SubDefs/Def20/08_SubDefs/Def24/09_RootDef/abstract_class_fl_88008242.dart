@@ -124,13 +124,15 @@ abstract class SpriteAnimationCoBan extends SpriteAnimationComponent with HasVis
     return;
   }
   void onVoidCaiDatKiemTraHienThi({required bool? value}) {
-    _kiemTraHienThi = value;
+   if (_kiemTraHienThi != value) {
+     _kiemTraHienThi = value;
 
-    if (_kiemTraHienThi == false || _kiemTraHienThi == null) {
-      isVisible = false;
-    } else if (_kiemTraHienThi == true) {
-      isVisible = true;
-    }
+     if (_kiemTraHienThi == false || _kiemTraHienThi == null) {
+       isVisible = false;
+     } else if (_kiemTraHienThi == true) {
+       isVisible = true;
+     }
+   }
 
     return;
   }

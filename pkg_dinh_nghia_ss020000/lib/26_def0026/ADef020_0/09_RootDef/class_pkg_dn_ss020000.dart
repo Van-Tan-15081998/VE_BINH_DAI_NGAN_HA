@@ -35,7 +35,7 @@ mixin CAUTRUCTHUCTHICOBAN {
         await onAttachRootForSubCom(attachValue: attachValue);
       }
     } catch (e) {
-      await onReportRootIssue(nameFunction: 'onAttachRoot');
+      await onReportRootIssue(nameFunction: 'A');
     }
 
     ///
@@ -58,7 +58,7 @@ mixin CAUTRUCTHUCTHICOBAN {
         await onInitRootForSubCom();
       }
     } catch (e) {
-      await onReportRootIssue(nameFunction: 'onInitRoot');
+      await onReportRootIssue(nameFunction: 'I');
     }
 
     ///
@@ -81,7 +81,7 @@ mixin CAUTRUCTHUCTHICOBAN {
         await onSetupRootForSubCom();
       }
     } catch (e) {
-      await onReportRootIssue(nameFunction: 'onSetupRoot');
+      await onReportRootIssue(nameFunction: 'S');
     }
 
     ///
@@ -104,7 +104,7 @@ mixin CAUTRUCTHUCTHICOBAN {
         await onResetRootForSubCom();
       }
     } catch (e) {
-      await onReportRootIssue(nameFunction: 'onResetRoot');
+      await onReportRootIssue(nameFunction: 'R');
     }
 
     ///
@@ -120,7 +120,7 @@ mixin CAUTRUCTHUCTHICOBAN {
       /// TODO:
       /// -----
     } catch (e) {
-      await onReportRootIssue(nameFunction: 'onAttachRootForSubCom');
+      await onReportRootIssue(nameFunction: 'Aa');
     }
 
     ///
@@ -136,7 +136,7 @@ mixin CAUTRUCTHUCTHICOBAN {
       /// TODO:
       /// -----
     } catch (e) {
-      await onReportRootIssue(nameFunction: 'onSetupRootForSubCom');
+      await onReportRootIssue(nameFunction: 'Ss');
     }
 
     ///
@@ -152,7 +152,7 @@ mixin CAUTRUCTHUCTHICOBAN {
       /// TODO:
       /// -----
     } catch (e) {
-      await onReportRootIssue(nameFunction: 'onInitRootForSubCom');
+      await onReportRootIssue(nameFunction: 'Ii');
     }
 
     ///
@@ -168,7 +168,7 @@ mixin CAUTRUCTHUCTHICOBAN {
       /// TODO:
       /// -----
     } catch (e) {
-      await onReportRootIssue(nameFunction: 'onResetRootForSubCom');
+      await onReportRootIssue(nameFunction: 'Rr');
     }
 
     ///
@@ -180,7 +180,7 @@ mixin CAUTRUCTHUCTHICOBAN {
   /// -----
   Future<void> onReportRootIssue({required String? nameFunction}) async {
     if (kDebugMode) {
-      String message = '[❗️❗️❗️Báo Cáo Vấn Đề❗️❗️❗️]: $getMaDinhDanhCauTrucThucThi ▶️ $nameFunction';
+      // String message = '[❗️❗️❗️Báo Cáo Vấn Đề❗️❗️❗️]: $getMaDinhDanhCauTrucThucThi ▶️ $nameFunction';
       // throw (Exception(message));
     }
 

@@ -18,13 +18,7 @@ class KHUNGTHANHPHANNUTBAMCHONTABBANDO extends StatefulWidget {
   /// -----
   /// TODO:
   /// -----
-  const KHUNGTHANHPHANNUTBAMCHONTABBANDO({
-    super.key,
-    required this.chieuRongKhungThanhPhan,
-    required this.chieuCaoKhungThanhPhan,
-    required this.trangThaiTongQuat,
-    required this.onThucThi,
-  });
+  const KHUNGTHANHPHANNUTBAMCHONTABBANDO({super.key, required this.chieuRongKhungThanhPhan, required this.chieuCaoKhungThanhPhan, required this.trangThaiTongQuat, required this.onThucThi});
 
   @override
   State<KHUNGTHANHPHANNUTBAMCHONTABBANDO> createState() => KHUNGTHANHPHANNUTBAMCHONTABBANDOSTATE();
@@ -181,11 +175,7 @@ class FLAMEGAMEKHUNGTHANHPHANNUTBAMCHONTABBANDO extends FlameGame {
       chieuCaoSpriteGameUI: chieuCaoFlameGameUI,
       trangThaiTongQuat: getTrangThaiTongQuat,
     );
-    _thanhPhanGameUIKichHoat = SPRITEGAMEUINUTBAMCHONTABBANDOKICHHOAT(
-      chieuRongSpriteGameUI: chieuRongFlameGameUI,
-      chieuCaoSpriteGameUI: chieuCaoFlameGameUI,
-      trangThaiTongQuat: getTrangThaiTongQuat,
-    );
+    _thanhPhanGameUIKichHoat = SPRITEGAMEUINUTBAMCHONTABBANDOKICHHOAT(chieuRongSpriteGameUI: chieuRongFlameGameUI, chieuCaoSpriteGameUI: chieuCaoFlameGameUI, trangThaiTongQuat: getTrangThaiTongQuat);
 
     if (_thanhPhanGameUIKhongKichHoat != null && _thanhPhanGameUIKhongKichHoat?.isMounted == false) {
       add(_thanhPhanGameUIKhongKichHoat!);
@@ -247,7 +237,7 @@ class SPRITEGAMEUINUTBAMCHONTABBANDOKHONGKICHHOAT extends SpriteAnimationCompone
     anchor = Anchor.center;
 
     onVoidCaiDatKiemTraHienThi(value: true);
-    onVoidCaiDatDonViSprite(value: DonViSpriteCoBan(maDinhDanh: null, nguonHinhAnh: null,  sprite: null, spriteAnimation: null));
+    onVoidCaiDatDonViSprite(value: DonViSpriteCoBan(maDinhDanh: null, nguonHinhAnh: null, sprite: null, spriteAnimation: null));
 
     _thanhPhanGameUI = GAMEUINUTBAMCHONTABBANDOKHONGKICHHOAT();
     await _thanhPhanGameUI?.onSetupRoot();
@@ -294,7 +284,7 @@ class SPRITEGAMEUINUTBAMCHONTABBANDOKHONGKICHHOAT extends SpriteAnimationCompone
       getTrangThaiTongQuat?.getQuanLyTrangThaiTPGAMEUI?.onVoidTruyXuatSpriteNgoaiHinhThanhPhanGameUI(
         donViSprite: getDonViSprite,
         maDinhDanhThanhPhanGameUI: getThanhPhanGameUI?.getMaDinhDanhGameUI,
-          spriteAnimationComponent: this
+        spriteAnimationComponent: this,
       );
       animation = getDonViSprite?.getSpriteAnimation;
     }
@@ -345,7 +335,7 @@ class SPRITEGAMEUINUTBAMCHONTABBANDOKICHHOAT extends SpriteAnimationComponent wi
     anchor = Anchor.center;
 
     onVoidCaiDatKiemTraHienThi(value: false);
-    onVoidCaiDatDonViSprite(value: DonViSpriteCoBan(maDinhDanh: null, nguonHinhAnh: null,  sprite: null, spriteAnimation: null));
+    onVoidCaiDatDonViSprite(value: DonViSpriteCoBan(maDinhDanh: null, nguonHinhAnh: null, sprite: null, spriteAnimation: null));
 
     _thanhPhanGameUI = GAMEUINUTBAMCHONTABBANDOKICHHOAT();
     await _thanhPhanGameUI?.onSetupRoot();
@@ -401,7 +391,7 @@ class SPRITEGAMEUINUTBAMCHONTABBANDOKICHHOAT extends SpriteAnimationComponent wi
       getTrangThaiTongQuat?.getQuanLyTrangThaiTPGAMEUI?.onVoidTruyXuatSpriteNgoaiHinhThanhPhanGameUI(
         donViSprite: getDonViSprite,
         maDinhDanhThanhPhanGameUI: getThanhPhanGameUI?.getMaDinhDanhGameUI,
-          spriteAnimationComponent: this
+        spriteAnimationComponent: this,
       );
       animation = getDonViSprite?.getSpriteAnimation;
     }

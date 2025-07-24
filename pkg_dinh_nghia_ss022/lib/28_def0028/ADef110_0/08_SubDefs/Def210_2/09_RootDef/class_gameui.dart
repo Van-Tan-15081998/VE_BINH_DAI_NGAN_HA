@@ -73,8 +73,7 @@ class GAMEUIKHUNGMANHINHTHUOCCAPCOBAN extends CoreGameUIComponent {
     /// -----
     final String nguonSpriteNgoaiHinhGameUIRS100FullPicture = '$nguonSpriteDongKhoi/$nguonSpriteRS100FullPicture';
     await Future.wait([
-      getSpriteThanhPhanGameUI?.getDonViSpriteNgoaiHinhGameUI?.caiDatNguonHinhAnh(value: nguonSpriteNgoaiHinhGameUIRS100FullPicture).catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
+      getSpriteThanhPhanGameUI?.getDonViSpriteNgoaiHinhGameUI?.caiDatNguonHinhAnh(value: nguonSpriteNgoaiHinhGameUIRS100FullPicture).catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
       getSpriteThanhPhanGameUI?.getDonViSpriteNgoaiHinhGameUI?.caiDatChieuRongFrameRS100(value: chieuRongFrame).catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
       getSpriteThanhPhanGameUI?.getDonViSpriteNgoaiHinhGameUI?.caiDatChieuCaoFrameRS100(value: chieuCaoFrame).catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
     ]);

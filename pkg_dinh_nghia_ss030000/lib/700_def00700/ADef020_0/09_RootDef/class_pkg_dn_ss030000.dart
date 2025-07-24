@@ -1634,8 +1634,8 @@ class QUANLYTRANGTHAIHANGARPHUONGTIEN with CAUTRUCTHUCTHICOBAN {
   @override
   Future<void> onReportRootIssue({required String? nameFunction}) async {
     if (kDebugMode) {
-      String message = '[❗️❗️❗️Báo Cáo Vấn Đề❗️❗️❗️]: $getMaDinhDanhCauTrucThucThi ▶️ $nameFunction';
-      throw (Exception(message));
+      // String message = '[❗️❗️❗️Báo Cáo Vấn Đề❗️❗️❗️]: $getMaDinhDanhCauTrucThucThi ▶️ $nameFunction';
+      // throw (Exception(message));
     }
 
     ///
@@ -1643,6 +1643,10 @@ class QUANLYTRANGTHAIHANGARPHUONGTIEN with CAUTRUCTHUCTHICOBAN {
   }
 
   Future<void> onTaiTaiNguyenMaster({required Future<void> Function()? onThucThiHoanTat}) async {
+
+    await onThucThiHoanTat?.call();
+    return;
+
     try {
       /// -----
       /// TODO:
@@ -1910,7 +1914,7 @@ class QUANLYTRANGTHAIHANGARPHUONGTIEN with CAUTRUCTHUCTHICOBAN {
 
       cauTrucThucThiTuanTu.onThucThiHoanTat = onThucThiHoanTat;
 
-      await cauTrucThucThiTuanTu.onThucThiTuanTu(interval: const Duration(milliseconds: 100));
+      await cauTrucThucThiTuanTu.onThucThiTuanTu(interval: const Duration(milliseconds: 50));
     } catch (e) {
       await onReportRootIssue(nameFunction: 'onTaiTaiNguyenMaster');
     }

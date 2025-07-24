@@ -48,13 +48,11 @@ class CHIENDAUCOCHONCHIDINH extends SpriteAnimationCoBan {
 
   @override
   Future<void> caiDatMoHinhChiTiet() async {
-    await caiDatMoHinh(
-      value: getTrangThaiTongQuat?.getChienDauCoTongQuat?.getDieuKhienDiChuyenChienDauCo?.getViTriChienDauCo,
-    );
+    await caiDatMoHinh(value: getTrangThaiTongQuat?.getChienDauCoTongQuat?.getDieuKhienDiChuyenChienDauCo?.getViTriChienDauCo);
 
-    await caiDatTrangThai(
-      value: getTrangThaiTongQuat?.getChienDauCoTongQuat?.getChiDinhChienDauCoThucThiChienDau?.getTrangThai,
-    );
+    await caiDatTrangThai(value: getTrangThaiTongQuat?.getChienDauCoTongQuat?.getChiDinhChienDauCoThucThiChienDau?.getTrangThai);
+
+    getTrangThai?.onVoidCaiDatSpriteChienDauCo(value: this);
 
     return;
   }
@@ -62,8 +60,10 @@ class CHIENDAUCOCHONCHIDINH extends SpriteAnimationCoBan {
   @override
   bool onVoidKiemTraTanXuatCapNhat() {
     if (getTrangThaiTongQuat?.getThietLapTongQuat?.onKiemTraChoPhepCapNhatTheoTocDoKhungHinh(
-        maDinhDanh: '[SPRITE_ANIMATION_CHIEN_DAU_CO]',
-        chiSoTangTienGiamTanXuatCapNhat: getBienTangTienGiamTanXuatCapNhat) == true) {
+          maDinhDanh: '[SPRITE_ANIMATION_CHIEN_DAU_CO]',
+          chiSoTangTienGiamTanXuatCapNhat: getBienTangTienGiamTanXuatCapNhat,
+        ) ==
+        true) {
       return true;
     }
 
@@ -79,8 +79,7 @@ class CHIENDAUCOCHONCHIDINH extends SpriteAnimationCoBan {
       return;
     }
 
-    getTrangThaiTongQuat?.getChienDauCoTongQuat?.getDieuKhienDiChuyenChienDauCo?.getViTriChienDauCo?.getHuongBay
-        ?.caiDatDinhHuongTheoViTriXuatPhatNguyenBanChienDauCo();
+    getTrangThaiTongQuat?.getChienDauCoTongQuat?.getDieuKhienDiChuyenChienDauCo?.getViTriChienDauCo?.getHuongBay?.caiDatDinhHuongTheoViTriXuatPhatNguyenBanChienDauCo();
 
     // await capNhatTrangThaiMoHinh();
 
@@ -98,36 +97,39 @@ class CHIENDAUCOCHONCHIDINH extends SpriteAnimationCoBan {
   void onVoidCaiDatHoatAnhChiTiet() {
     if (getDonViSprite?.getMaDinhDanh != getTrangThai?.getMoHinh?.getMaDinhDanhChienDauCo) {
       animation = null;
-       getDonViSprite?.onVoidCaiDatMaDinhDanh(value: getTrangThai?.getMoHinh?.getMaDinhDanhChienDauCo);
-       getDonViSprite?.onVoidCaiDatSpriteAnimation(
-        value:
-        getTrangThai
-            ?.getMoHinh
-            ?.getThuocTinh
-            ?.getThuocTinhHinhAnhSprite
-            ?.getDonViSpriteNgoaiHinhThanChienDauCo
-            ?.getSpriteAnimation,
-      );
+      getDonViSprite?.onVoidCaiDatMaDinhDanh(value: getTrangThai?.getMoHinh?.getMaDinhDanhChienDauCo);
+      getDonViSprite?.onVoidCaiDatSpriteAnimation(value: getTrangThai?.getMoHinh?.getThuocTinh?.getThuocTinhHinhAnhSprite?.getDonViSpriteNgoaiHinhThanChienDauCo?.getSpriteAnimation);
 
-      // animation = getDonViSprite?.getSpriteAnimation;
+      animation = getDonViSprite?.getSpriteAnimation;
+    }
+    if (animation == null) {
+      if (getTrangThai?.getMoHinh?.getThuocTinh?.getThuocTinhHinhAnhSprite?.getDonViSpriteNgoaiHinhThanChienDauCo?.getSpriteAnimation != null) {
+        getDonViSprite?.onVoidCaiDatSpriteAnimation(value: getTrangThai?.getMoHinh?.getThuocTinh?.getThuocTinhHinhAnhSprite?.getDonViSpriteNgoaiHinhThanChienDauCo?.getSpriteAnimation);
+      }
+
+      animation = getDonViSprite?.getSpriteAnimation;
     }
 
     return;
   }
 
+  double dx = 0;
+  double dy = 0;
+  double chieuCaoThan = 0;
+  double chieuRongThan = 0;
+
   @override
   void onVoidCapNhatPositionSizeValues() {
-
     onVoidCaiDatKiemTraHienThi(value: true);
 
     if (getKiemTraHienThi == true) {
       ///
       /// TODO:
       ///
-      double dx = getMoHinh?.getDxTrongTamNotNull ?? 1.0;
-      double dy = getMoHinh?.getDyTrongTamNotNull ?? 1.0;
-      double chieuCaoThan = (getMoHinh?.getChieuCaoThan ?? 1.0) * 0.7;
-      double chieuRongThan = (getMoHinh?.getChieuRongThan ?? 1.0) * 0.7;
+      dx = getMoHinh?.getDxTrongTamNotNull ?? 1.0;
+      dy = getMoHinh?.getDyTrongTamNotNull ?? 1.0;
+      chieuCaoThan = (getMoHinh?.getChieuCaoThan ?? 1.0) * 0.7;
+      chieuRongThan = (getMoHinh?.getChieuRongThan ?? 1.0) * 0.7;
 
       ///
       /// TODO:

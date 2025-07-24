@@ -572,7 +572,7 @@ class KHUNGMANHINHCHINH extends KHUNGMANHINHGAMECOSO {
         onThucThiTuanTu: () async {
           getGlobalStateManagementSystem?.getQuanLyTrangThaiTPGAMEUI?.onTaiTaiNguyenMaster(
             onThucThiHoanTat: () async {
-              await cauTrucThucThiTuanTuSS020?.onThucThiTuanTu(interval: const Duration(milliseconds: 100));
+              await cauTrucThucThiTuanTuSS020?.onThucThiTuanTu(interval: const Duration(milliseconds: 50));
             },
           );
         },
@@ -582,7 +582,7 @@ class KHUNGMANHINHCHINH extends KHUNGMANHINHGAMECOSO {
         onThucThiTuanTu: () async {
           getGlobalStateManagementSystem?.onGetEntityResourceManagement?.getQuanLyTrangThaiHangarChienDauCo?.onTaiTaiNguyenMaster(
             onThucThiHoanTat: () async {
-              await cauTrucThucThiTuanTuSS030?.onThucThiTuanTu(interval: const Duration(milliseconds: 100));
+              await cauTrucThucThiTuanTuSS030?.onThucThiTuanTu(interval: const Duration(milliseconds: 50));
             },
           );
         },
@@ -596,7 +596,7 @@ class KHUNGMANHINHCHINH extends KHUNGMANHINHGAMECOSO {
 
       // cauTrucThucThiTuanTuSS030.onThucThiHoanTat = onThucThiHoanTat;
 
-      await cauTrucThucThiTuanTuSS010.onThucThiTuanTu(interval: const Duration(milliseconds: 100));
+      await cauTrucThucThiTuanTuSS010.onThucThiTuanTu(interval: const Duration(milliseconds: 50));
     } catch (e) {
       await onReportRootIssue(nameFunction: 'onTaiTaiNguyenMaster');
     }
@@ -627,7 +627,7 @@ class KHUNGMANHINHCHINH extends KHUNGMANHINHGAMECOSO {
         onThucThiTuanTu: () async {
           getGlobalStateManagementSystem?.getQuanLyTrangThaiTPGAMEUI?.onGiaiPhongTaiNguyenMaster(
             onThucThiHoanTat: () async {
-              await cauTrucThucThiTuanTuSS020?.onThucThiTuanTu(interval: const Duration(milliseconds: 100));
+              await cauTrucThucThiTuanTuSS020?.onThucThiTuanTu(interval: const Duration(milliseconds: 50));
             },
           );
         },
@@ -637,7 +637,7 @@ class KHUNGMANHINHCHINH extends KHUNGMANHINHGAMECOSO {
         onThucThiTuanTu: () async {
           getGlobalStateManagementSystem?.onGetEntityResourceManagement?.getQuanLyTrangThaiHangarChienDauCo?.onGiaiPhongTaiNguyenMaster(
             onThucThiHoanTat: () async {
-              await cauTrucThucThiTuanTuSS030?.onThucThiTuanTu(interval: const Duration(milliseconds: 100));
+              await cauTrucThucThiTuanTuSS030?.onThucThiTuanTu(interval: const Duration(milliseconds: 50));
             },
           );
         },
@@ -651,9 +651,37 @@ class KHUNGMANHINHCHINH extends KHUNGMANHINHGAMECOSO {
 
       // cauTrucThucThiTuanTuSS030.onThucThiHoanTat = onThucThiHoanTat;
       //
-      await cauTrucThucThiTuanTuSS010.onThucThiTuanTu(interval: const Duration(milliseconds: 100));
+      await cauTrucThucThiTuanTuSS010.onThucThiTuanTu(interval: const Duration(milliseconds: 50));
     } catch (e) {
       await onReportRootIssue(nameFunction: 'onTaiTaiNguyenMaster');
+    }
+
+    ///
+    return;
+  }
+
+  /// -----
+  /// TODO: Giải Phóng Tài Nguyên Master Phương Tiện
+  /// -----
+  @override
+  Future<void> onGiaiPhongTaiNguyenMasterPhuongTien({required Future<void> Function()? onThucThiHoanTat}) async {
+    try {
+      /// -----
+      /// TODO:
+      /// -----
+
+      CAUTRUCTHUCTHITUANTUCOBAN? cauTrucThucThiTuanTuSS010;
+      cauTrucThucThiTuanTuSS010 = CAUTRUCTHUCTHITUANTUCOBAN.onMacDinh();
+
+      cauTrucThucThiTuanTuSS010.onAddDonViThucThiTuanTu(
+        onThucThiTuanTu: () async {
+          getGlobalStateManagementSystem?.onGetEntityResourceManagement?.getQuanLyTrangThaiHangarPhuongTien?.onGiaiPhongTaiNguyenMaster(onThucThiHoanTat: onThucThiHoanTat);
+        },
+      );
+
+      await cauTrucThucThiTuanTuSS010.onThucThiTuanTu(interval: const Duration(milliseconds: 50));
+    } catch (e) {
+      await onReportRootIssue(nameFunction: 'onGiaiPhongTaiNguyenMasterPhuongTien');
     }
 
     ///

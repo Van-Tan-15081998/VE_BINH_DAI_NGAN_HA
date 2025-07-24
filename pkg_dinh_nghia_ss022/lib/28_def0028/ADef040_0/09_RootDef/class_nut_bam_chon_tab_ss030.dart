@@ -157,11 +157,7 @@ class FLAMEGAMEKHUNGTHANHPHANKHUNGTHONGTINTAINGUYENDOLLARTRAODOI extends FlameGa
 
   @override
   FutureOr<void> onLoad() async {
-    _thanhPhanGameUI = SPRITEGAMEUIKHUNGTHONGTINTAINGUYENDOLLARTRAODOI(
-      chieuRongSpriteGameUI: chieuRongFlameGameUI,
-      chieuCaoSpriteGameUI: chieuCaoFlameGameUI,
-      trangThaiTongQuat: getTrangThaiTongQuat,
-    );
+    _thanhPhanGameUI = SPRITEGAMEUIKHUNGTHONGTINTAINGUYENDOLLARTRAODOI(chieuRongSpriteGameUI: chieuRongFlameGameUI, chieuCaoSpriteGameUI: chieuCaoFlameGameUI, trangThaiTongQuat: getTrangThaiTongQuat);
 
     if (_thanhPhanGameUI != null && _thanhPhanGameUI?.isMounted == false) {
       add(_thanhPhanGameUI!);
@@ -219,7 +215,7 @@ class SPRITEGAMEUIKHUNGTHONGTINTAINGUYENDOLLARTRAODOI extends SpriteAnimationCom
     anchor = Anchor.center;
 
     onVoidCaiDatKiemTraHienThi(value: true);
-    onVoidCaiDatDonViSprite(value: DonViSpriteCoBan(maDinhDanh: null, nguonHinhAnh: null,  sprite: null, spriteAnimation: null));
+    onVoidCaiDatDonViSprite(value: DonViSpriteCoBan(maDinhDanh: null, nguonHinhAnh: null, sprite: null, spriteAnimation: null));
 
     _thanhPhanGameUI = GAMEUIKHUNGTHONGTINTAINGUYENDOLLARTRAODOI();
     await _thanhPhanGameUI?.onSetupRoot();
@@ -266,7 +262,7 @@ class SPRITEGAMEUIKHUNGTHONGTINTAINGUYENDOLLARTRAODOI extends SpriteAnimationCom
       getTrangThaiTongQuat?.getQuanLyTrangThaiTPGAMEUI?.onVoidTruyXuatSpriteNgoaiHinhThanhPhanGameUI(
         donViSprite: getDonViSprite,
         maDinhDanhThanhPhanGameUI: getThanhPhanGameUI?.getMaDinhDanhGameUI,
-          spriteAnimationComponent: this
+        spriteAnimationComponent: this,
       );
       animation = getDonViSprite?.getSpriteAnimation;
     }

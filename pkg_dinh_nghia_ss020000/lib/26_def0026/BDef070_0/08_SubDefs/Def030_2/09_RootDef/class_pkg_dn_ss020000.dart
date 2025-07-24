@@ -71,7 +71,7 @@ class DONVIHINHANHSPRITECOBAN with CAUTRUCTHUCTHICOBAN {
       /// -----
       /// TODO:
       /// -----
-      onVoidCaiDatTienTrinh(value: TIENTRINHTAITAINGUYENCOBAN.onTienTrinhNguyenBan(), caiDatUuTien: true);
+      // onVoidCaiDatTienTrinh(value: TIENTRINHTAITAINGUYENCOBAN.onTienTrinhNguyenBan(), caiDatUuTien: true);
 
       /// -----
       /// TODO: Setup Root For SubCom
@@ -185,8 +185,8 @@ class DONVIHINHANHSPRITECOBAN with CAUTRUCTHUCTHICOBAN {
   @override
   Future<void> onReportRootIssue({required String? nameFunction}) async {
     if (kDebugMode) {
-      String message = '[❗️❗️❗️Báo Cáo Vấn Đề❗️❗️❗️]: $getMaDinhDanhCauTrucThucThi ▶️ $nameFunction';
-      throw (Exception(message));
+      // String message = '[❗️❗️❗️Báo Cáo Vấn Đề❗️❗️❗️]: $getMaDinhDanhCauTrucThucThi ▶️ $nameFunction';
+      // throw (Exception(message));
     }
 
     ///
@@ -432,17 +432,17 @@ class DONVIHINHANHSPRITECOBAN with CAUTRUCTHUCTHICOBAN {
   ///
   /// TODO:
   ///
-  TIENTRINHTAITAINGUYENCOBAN? _tienTrinh;
-  TIENTRINHTAITAINGUYENCOBAN? get getTienTrinh => _tienTrinh;
-  void onVoidCaiDatTienTrinh({required TIENTRINHTAITAINGUYENCOBAN? value, bool? caiDatUuTien}) async {
-    if (caiDatUuTien == true) {
-      _tienTrinh = value;
-    } else {
-      if (getChieuCaoFrameRS050 == null || getChieuCaoFrameRS050 == 0) {
-        _tienTrinh = value;
-      }
-    }
-
-    return;
-  }
+  // TIENTRINHTAITAINGUYENCOBAN? _tienTrinh;
+  // TIENTRINHTAITAINGUYENCOBAN? get getTienTrinh => _tienTrinh;
+  // void onVoidCaiDatTienTrinh({required TIENTRINHTAITAINGUYENCOBAN? value, bool? caiDatUuTien}) async {
+  //   if (caiDatUuTien == true) {
+  //     _tienTrinh = value;
+  //   } else {
+  //     if (getChieuCaoFrameRS050 == null || getChieuCaoFrameRS050 == 0) {
+  //       _tienTrinh = value;
+  //     }
+  //   }
+  //
+  //   return;
+  // }
 }
