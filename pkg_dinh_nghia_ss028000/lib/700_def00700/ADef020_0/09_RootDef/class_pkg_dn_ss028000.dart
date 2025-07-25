@@ -1877,8 +1877,8 @@ class QUANLYTRANGTHAIHANGARCHIENDAUCO with CAUTRUCTHUCTHICOBAN {
   /// -----
   Future<void> onTaiTaiNguyenMaster({required Future<void> Function()? onThucThiHoanTat}) async {
 
-    await onThucThiHoanTat?.call();
-    return;
+    // await onThucThiHoanTat?.call();
+    // return;
 
     try {
       /// -----
