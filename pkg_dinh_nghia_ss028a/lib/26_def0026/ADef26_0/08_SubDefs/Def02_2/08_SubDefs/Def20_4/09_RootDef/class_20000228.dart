@@ -4,6 +4,7 @@ import 'package:pkg_dinh_nghia_ss028/pkg_dinh_nghia_ss028_exp.dart';
 import 'package:pkg_dinh_nghia_ss030/pkg_dinh_nghia_ss030_exp.dart';
 import 'package:pkg_dinh_nghia_ss050/pkg_dinh_nghia_ss050_exp.dart';
 import 'package:pkg_dinh_nghia_ss054/pkg_dinh_nghia_ss054_exp.dart';
+import 'package:pkg_dinh_nghia_ss030050/pkg_dinh_nghia_ss030050_exp.dart';
 
 abstract class VIENDANTANCONGCOBAN with CauTrucThucThiCoBan {
   /// -----
@@ -725,6 +726,104 @@ abstract class VIENDANTANCONGCOBAN with CauTrucThucThiCoBan {
   /// -----
   /// TODO:
   /// -----
+  bool? _tenLuaCanhTrai;
+  bool? get getTenLuaCanhTrai => _tenLuaCanhTrai;
+  bool get getTenLuaCanhTraiNotNull => _tenLuaCanhTrai ?? false;
+  void onVoidCaiDatTenLuaCanhTrai({required bool? value}) {
+    _tenLuaCanhTrai = value;
+    return;
+  }
+
+  /// -----
+  /// TODO:
+  /// -----
+  bool? _tenLuaCanhPhai;
+  bool? get getTenLuaCanhPhai => _tenLuaCanhPhai;
+  bool get getTenLuaCanhPhaiNotNull => _tenLuaCanhPhai ?? false;
+  void onVoidCaiDatTenLuaCanhPhai({required bool? value}) {
+    _tenLuaCanhPhai = value;
+    return;
+  }
+
+  /// -----
+  /// TODO: Biên Trái Nguyên Bản
+  /// -----
+  double? _bienTraiNguyenBan;
+  double? get getBienTraiNguyenBan => _bienTraiNguyenBan;
+  double get getBienTraiNguyenBanNotNull => _bienTraiNguyenBan ?? 0;
+  void onVoidCaiDatBienTraiNguyenBan({required double? value}) {
+    if (value != null && value != 0) {
+      if (value.isNaN == false && value.isFinite == true) {
+        _bienTraiNguyenBan = value;
+      } else {
+        _bienTraiNguyenBan = 0;
+      }
+    } else {
+      _bienTraiNguyenBan = 0;
+    }
+    return;
+  }
+
+  /// -----
+  /// TODO: Dx Trọng Tâm Nguyên Bản
+  /// -----
+  double? _dxTrongTamNguyenBan;
+  double? get getDxTrongTamNguyenBan => _dxTrongTamNguyenBan;
+  double get getDxTrongTamNguyenBanNotNull => _dxTrongTamNguyenBan ?? 0;
+  void onVoidCaiDatDxTrongTamNguyenBan({required double? value}) {
+    if (value != null && value != 0) {
+      if (value.isNaN == false && value.isFinite == true) {
+        _dxTrongTamNguyenBan = value;
+      } else {
+        _dxTrongTamNguyenBan = 0;
+      }
+    } else {
+      _dxTrongTamNguyenBan = 0;
+    }
+    return;
+  }
+
+  /// -----
+  /// TODO: Biên Dưới Nguyên Bản
+  /// -----
+  double? _bienDuoiNguyenBan;
+  double? get getBienDuoiNguyenBan => _bienDuoiNguyenBan;
+  double get getBienDuoiNguyenBanNotNull => _bienDuoiNguyenBan ?? 0;
+  void onVoidCaiDatBienDuoiNguyenBan({required double? value}) {
+    if (value != null && value != 0) {
+      if (value.isNaN == false && value.isFinite == true) {
+        _bienDuoiNguyenBan = value;
+      } else {
+        _bienDuoiNguyenBan = 0;
+      }
+    } else {
+      _bienDuoiNguyenBan = 0;
+    }
+    return;
+  }
+
+  /// -----
+  /// TODO: Dy Trọng Tâm Nguyên Bản
+  /// -----
+  double? _dyTrongTamNguyenBan;
+  double? get getDyTrongTamNguyenBan => _dyTrongTamNguyenBan;
+  double get getDyTrongTamNguyenBanNotNull => _dyTrongTamNguyenBan ?? 0;
+  void onVoidCaiDatDyTrongTamNguyenBan({required double? value}) {
+    if (value != null && value != 0) {
+      if (value.isNaN == false && value.isFinite == true) {
+        _dyTrongTamNguyenBan = value;
+      } else {
+        _dyTrongTamNguyenBan = 0;
+      }
+    } else {
+      _dyTrongTamNguyenBan = 0;
+    }
+    return;
+  }
+
+  /// -----
+  /// TODO:
+  /// -----
   final Map<String, dynamic> _duLieuJsonSuKienVaCham = {
     '[CHIEU_RONG_MAN_HINH_PHI_VAT_LY]': null,
     '[CHIEU_CAO_MAN_HINH_PHI_VAT_LY]': null,
@@ -946,6 +1045,22 @@ abstract class VIENDANTANCONGCOBAN with CauTrucThucThiCoBan {
   QuanLyTrangThaiDieuKhienTinhToanTongQuat? get getDieuKhienTinhToanTongQuat => _dieuKhienTinhToanTongQuat;
   Future<void> caiDatDieuKhienTinhToanTongQuat({required QuanLyTrangThaiDieuKhienTinhToanTongQuat? value}) async {
     _dieuKhienTinhToanTongQuat ??= value;
+    return;
+  }
+
+  /// -----
+  /// TODO:
+  /// -----
+  QUANLYTRANGTHAISUKIENVACHAMTHUOCPHUONGTIEN? _suKienVaChamThuocPhuongTien;
+  QUANLYTRANGTHAISUKIENVACHAMTHUOCPHUONGTIEN? get getSuKienVaChamThuocPhuongTien => _suKienVaChamThuocPhuongTien;
+  Future<void> caiDatSuKienVaChamThuocPhuongTien({required QUANLYTRANGTHAISUKIENVACHAMTHUOCPHUONGTIEN? value, bool? caiDatUuTien}) async {
+    if (caiDatUuTien == true) {
+      _suKienVaChamThuocPhuongTien = value;
+    } else {
+      _suKienVaChamThuocPhuongTien ??= value;
+    }
+
+    ///
     return;
   }
 

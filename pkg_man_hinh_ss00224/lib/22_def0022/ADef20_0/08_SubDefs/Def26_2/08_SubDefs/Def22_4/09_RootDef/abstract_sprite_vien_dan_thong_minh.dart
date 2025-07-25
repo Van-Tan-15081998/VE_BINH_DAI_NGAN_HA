@@ -1,3 +1,4 @@
+import 'dart:ui';
 import 'dart:async';
 import 'dart:math';
 import 'package:flame/components.dart';
@@ -150,7 +151,8 @@ abstract class SpriteVienDanThongMinh extends SpriteAnimationComponent with HasV
   /// -----
   void onVoidCapNhatKiemTraHienThi() {
 
-    if (getMoHinh?.getMoHinh?.getTrangThaiTonTai?.onCheckBoolKhoiTaoHoanTat() == true) {
+    // if (getMoHinh?.getMoHinh?.getTrangThaiTonTai?.onCheckBoolKhoiTaoHoanTat() == true) {
+    if (getMoHinh?.getMoHinh?.getTrangThaiTonTai?.onCheckBoolDangKichHoat() == true) {
       if (getDonViSprite?.getSpriteAnimation == null) {
         final random = Random();
         int randomNumber = random.nextInt(3) + 1; // tạo số từ 1 đến 3
@@ -304,5 +306,19 @@ abstract class SpriteVienDanThongMinh extends SpriteAnimationComponent with HasV
     
 
     await onInitRoot();
+  }
+
+  @override
+  void renderTree(Canvas canvas) {
+    // import 'dart:ui';
+    try {
+      if (getKiemTraHienThi == true && animation != null) {
+        super.renderTree(canvas);
+      }
+    } catch (e) {
+      return;
+    }
+
+    return;
   }
 }

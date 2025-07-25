@@ -155,103 +155,103 @@ abstract class VienDanThongMinh extends VIENDANTANCONGCOBAN {
     return;
   }
 
-  /// -----
-  /// TODO:
-  /// -----
-  bool? _tenLuaCanhTrai;
-  bool? get getTenLuaCanhTrai => _tenLuaCanhTrai;
-  bool get getTenLuaCanhTraiNotNull => _tenLuaCanhTrai ?? false;
-  void onVoidCaiDatTenLuaCanhTrai({required bool? value}) {
-    _tenLuaCanhTrai = value;
-    return;
-  }
-
-  /// -----
-  /// TODO:
-  /// -----
-  bool? _tenLuaCanhPhai;
-  bool? get getTenLuaCanhPhai => _tenLuaCanhPhai;
-  bool get getTenLuaCanhPhaiNotNull => _tenLuaCanhPhai ?? false;
-  void onVoidCaiDatTenLuaCanhPhai({required bool? value}) {
-    _tenLuaCanhPhai = value;
-    return;
-  }
-
-  /// -----
-  /// TODO: Biên Trái Nguyên Bản
-  /// -----
-  double? _bienTraiNguyenBan;
-  double? get getBienTraiNguyenBan => _bienTraiNguyenBan;
-  double get getBienTraiNguyenBanNotNull => _bienTraiNguyenBan ?? 0;
-  void onVoidCaiDatBienTraiNguyenBan({required double? value}) {
-    if (value != null && value != 0) {
-      if (value.isNaN == false && value.isFinite == true) {
-        _bienTraiNguyenBan = value;
-      } else {
-        _bienTraiNguyenBan = 0;
-      }
-    } else {
-      _bienTraiNguyenBan = 0;
-    }
-    return;
-  }
-
-  /// -----
-  /// TODO: Dx Trọng Tâm Nguyên Bản
-  /// -----
-  double? _dxTrongTamNguyenBan;
-  double? get getDxTrongTamNguyenBan => _dxTrongTamNguyenBan;
-  double get getDxTrongTamNguyenBanNotNull => _dxTrongTamNguyenBan ?? 0;
-  void onVoidCaiDatDxTrongTamNguyenBan({required double? value}) {
-    if (value != null && value != 0) {
-      if (value.isNaN == false && value.isFinite == true) {
-        _dxTrongTamNguyenBan = value;
-      } else {
-        _dxTrongTamNguyenBan = 0;
-      }
-    } else {
-      _dxTrongTamNguyenBan = 0;
-    }
-    return;
-  }
-
-  /// -----
-  /// TODO: Biên Dưới Nguyên Bản
-  /// -----
-  double? _bienDuoiNguyenBan;
-  double? get getBienDuoiNguyenBan => _bienDuoiNguyenBan;
-  double get getBienDuoiNguyenBanNotNull => _bienDuoiNguyenBan ?? 0;
-  void onVoidCaiDatBienDuoiNguyenBan({required double? value}) {
-    if (value != null && value != 0) {
-      if (value.isNaN == false && value.isFinite == true) {
-        _bienDuoiNguyenBan = value;
-      } else {
-        _bienDuoiNguyenBan = 0;
-      }
-    } else {
-      _bienDuoiNguyenBan = 0;
-    }
-    return;
-  }
-
-  /// -----
-  /// TODO: Dy Trọng Tâm Nguyên Bản
-  /// -----
-  double? _dyTrongTamNguyenBan;
-  double? get getDyTrongTamNguyenBan => _dyTrongTamNguyenBan;
-  double get getDyTrongTamNguyenBanNotNull => _dyTrongTamNguyenBan ?? 0;
-  void onVoidCaiDatDyTrongTamNguyenBan({required double? value}) {
-    if (value != null && value != 0) {
-      if (value.isNaN == false && value.isFinite == true) {
-        _dyTrongTamNguyenBan = value;
-      } else {
-        _dyTrongTamNguyenBan = 0;
-      }
-    } else {
-      _dyTrongTamNguyenBan = 0;
-    }
-    return;
-  }
+  // /// -----
+  // /// TODO:
+  // /// -----
+  // bool? _tenLuaCanhTrai;
+  // bool? get getTenLuaCanhTrai => _tenLuaCanhTrai;
+  // bool get getTenLuaCanhTraiNotNull => _tenLuaCanhTrai ?? false;
+  // void onVoidCaiDatTenLuaCanhTrai({required bool? value}) {
+  //   _tenLuaCanhTrai = value;
+  //   return;
+  // }
+  //
+  // /// -----
+  // /// TODO:
+  // /// -----
+  // bool? _tenLuaCanhPhai;
+  // bool? get getTenLuaCanhPhai => _tenLuaCanhPhai;
+  // bool get getTenLuaCanhPhaiNotNull => _tenLuaCanhPhai ?? false;
+  // void onVoidCaiDatTenLuaCanhPhai({required bool? value}) {
+  //   _tenLuaCanhPhai = value;
+  //   return;
+  // }
+  //
+  // /// -----
+  // /// TODO: Biên Trái Nguyên Bản
+  // /// -----
+  // double? _bienTraiNguyenBan;
+  // double? get getBienTraiNguyenBan => _bienTraiNguyenBan;
+  // double get getBienTraiNguyenBanNotNull => _bienTraiNguyenBan ?? 0;
+  // void onVoidCaiDatBienTraiNguyenBan({required double? value}) {
+  //   if (value != null && value != 0) {
+  //     if (value.isNaN == false && value.isFinite == true) {
+  //       _bienTraiNguyenBan = value;
+  //     } else {
+  //       _bienTraiNguyenBan = 0;
+  //     }
+  //   } else {
+  //     _bienTraiNguyenBan = 0;
+  //   }
+  //   return;
+  // }
+  //
+  // /// -----
+  // /// TODO: Dx Trọng Tâm Nguyên Bản
+  // /// -----
+  // double? _dxTrongTamNguyenBan;
+  // double? get getDxTrongTamNguyenBan => _dxTrongTamNguyenBan;
+  // double get getDxTrongTamNguyenBanNotNull => _dxTrongTamNguyenBan ?? 0;
+  // void onVoidCaiDatDxTrongTamNguyenBan({required double? value}) {
+  //   if (value != null && value != 0) {
+  //     if (value.isNaN == false && value.isFinite == true) {
+  //       _dxTrongTamNguyenBan = value;
+  //     } else {
+  //       _dxTrongTamNguyenBan = 0;
+  //     }
+  //   } else {
+  //     _dxTrongTamNguyenBan = 0;
+  //   }
+  //   return;
+  // }
+  //
+  // /// -----
+  // /// TODO: Biên Dưới Nguyên Bản
+  // /// -----
+  // double? _bienDuoiNguyenBan;
+  // double? get getBienDuoiNguyenBan => _bienDuoiNguyenBan;
+  // double get getBienDuoiNguyenBanNotNull => _bienDuoiNguyenBan ?? 0;
+  // void onVoidCaiDatBienDuoiNguyenBan({required double? value}) {
+  //   if (value != null && value != 0) {
+  //     if (value.isNaN == false && value.isFinite == true) {
+  //       _bienDuoiNguyenBan = value;
+  //     } else {
+  //       _bienDuoiNguyenBan = 0;
+  //     }
+  //   } else {
+  //     _bienDuoiNguyenBan = 0;
+  //   }
+  //   return;
+  // }
+  //
+  // /// -----
+  // /// TODO: Dy Trọng Tâm Nguyên Bản
+  // /// -----
+  // double? _dyTrongTamNguyenBan;
+  // double? get getDyTrongTamNguyenBan => _dyTrongTamNguyenBan;
+  // double get getDyTrongTamNguyenBanNotNull => _dyTrongTamNguyenBan ?? 0;
+  // void onVoidCaiDatDyTrongTamNguyenBan({required double? value}) {
+  //   if (value != null && value != 0) {
+  //     if (value.isNaN == false && value.isFinite == true) {
+  //       _dyTrongTamNguyenBan = value;
+  //     } else {
+  //       _dyTrongTamNguyenBan = 0;
+  //     }
+  //   } else {
+  //     _dyTrongTamNguyenBan = 0;
+  //   }
+  //   return;
+  // }
 
   /// -----
   /// TODO: Danh Sách Phương Tiện Hoạt Động Trong Màn Hình
@@ -307,22 +307,6 @@ abstract class VienDanThongMinh extends VIENDANTANCONGCOBAN {
     return;
   }
 
-  /// -----
-  /// TODO:
-  /// -----
-  QUANLYTRANGTHAISUKIENVACHAMTHUOCPHUONGTIEN? _suKienVaChamThuocPhuongTien;
-  QUANLYTRANGTHAISUKIENVACHAMTHUOCPHUONGTIEN? get getSuKienVaChamThuocPhuongTien => _suKienVaChamThuocPhuongTien;
-  Future<void> caiDatSuKienVaChamThuocPhuongTien({required QUANLYTRANGTHAISUKIENVACHAMTHUOCPHUONGTIEN? value, bool? caiDatUuTien}) async {
-    if (caiDatUuTien == true) {
-      _suKienVaChamThuocPhuongTien = value;
-    } else {
-      _suKienVaChamThuocPhuongTien ??= value;
-    }
-
-    ///
-    return;
-  }
-
   VienDanThongMinh() {
     caiDatMaDinhDanh(value: '[]');
     caiDatBienTrai(value: 0);
@@ -371,6 +355,7 @@ abstract class VienDanThongMinh extends VIENDANTANCONGCOBAN {
   /// -----
   /// TODO: Hàm Điều Khiển Di Chuyển Chi Tiết
   /// -----
+  @override
   void onVoidDieuKhienDiChuyenChiTiet() {
     if (onVoidKiemTraDiChuyenThoatManHinh() == true) {
       getTrangThaiTonTai?.onVoidCaiDatHuyHoanTat();
