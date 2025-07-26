@@ -669,7 +669,7 @@ abstract class QuanLyTrangThaiPhuongThucTanCongCoBan with CauTrucThucThiCoBan, V
       dxDiemLayMucTieu = dxDiemLayMucTieu + 20.0;
     }
 
-    final double dyDiemLayMucTieu = dyDiemXuatPhat * (-1);
+    final double dyDiemLayMucTieu = (dyDiemXuatPhat.abs() + 100.0) * (-1);
 
     trangThai?.getMoHinh?.onVoidCaiDatDxViTriLayMucTieu(value: dxDiemLayMucTieu);
     trangThai?.getMoHinh?.onVoidCaiDatDyViTriLayMucTieu(value: dyDiemLayMucTieu);
@@ -695,13 +695,7 @@ abstract class QuanLyTrangThaiPhuongThucTanCongCoBan with CauTrucThucThiCoBan, V
 
   void onVoidCaiDatKichThuoc({required TrangThaiVienDanCoBan? trangThai}) {
     donViSpriteVuKhiTanCongCoBan ??=
-        getChienDauCoTongQuat
-            ?.getChienDauCoTrucTiepThucThiChienDau
-            ?.getTrangThai
-            ?.getMoHinh
-            ?.getThuocTinh
-            ?.getThuocTinhHinhAnhSprite
-            ?.getDonViSpriteNgoaiHinhVuKhiTanCongThongMinhSS01;
+        getChienDauCoTongQuat?.getChienDauCoTrucTiepThucThiChienDau?.getTrangThai?.getMoHinh?.getThuocTinh?.getThuocTinhHinhAnhSprite?.getDonViSpriteNgoaiHinhVuKhiTanCongThongMinhSS01;
 
     chieuRongThanNguyenBan = trangThai?.getMoHinh?.getChieuRongThan ?? 20.0;
     chieuCaoThanNguyenBan = trangThai?.getMoHinh?.getChieuCaoThan ?? 20.0;
@@ -749,22 +743,52 @@ abstract class QuanLyTrangThaiPhuongThucTanCongCoBan with CauTrucThucThiCoBan, V
   }
 
   Future<void> onNgatKetNoiSpriteVienDan() async {
+    ///
     getVienDanSS20?.getSpriteVienDan?.animation = null;
+    getVienDanSS20?.getMoHinh?.onVoidHuyTrangThaiVienDan();
+
     getVienDanSS22?.getSpriteVienDan?.animation = null;
+    getVienDanSS22?.getMoHinh?.onVoidHuyTrangThaiVienDan();
+
     getVienDanSS24?.getSpriteVienDan?.animation = null;
+    getVienDanSS24?.getMoHinh?.onVoidHuyTrangThaiVienDan();
+
     getVienDanSS26?.getSpriteVienDan?.animation = null;
+    getVienDanSS26?.getMoHinh?.onVoidHuyTrangThaiVienDan();
+
     getVienDanSS28?.getSpriteVienDan?.animation = null;
+    getVienDanSS28?.getMoHinh?.onVoidHuyTrangThaiVienDan();
 
+    ///
     getVienDanSS30?.getSpriteVienDan?.animation = null;
-    getVienDanSS32?.getSpriteVienDan?.animation = null;
-    getVienDanSS34?.getSpriteVienDan?.animation = null;
-    getVienDanSS36?.getSpriteVienDan?.animation = null;
-    getVienDanSS38?.getSpriteVienDan?.animation = null;
+    getVienDanSS30?.getMoHinh?.onVoidHuyTrangThaiVienDan();
 
+    getVienDanSS32?.getSpriteVienDan?.animation = null;
+    getVienDanSS32?.getMoHinh?.onVoidHuyTrangThaiVienDan();
+
+    getVienDanSS34?.getSpriteVienDan?.animation = null;
+    getVienDanSS34?.getMoHinh?.onVoidHuyTrangThaiVienDan();
+
+    getVienDanSS36?.getSpriteVienDan?.animation = null;
+    getVienDanSS36?.getMoHinh?.onVoidHuyTrangThaiVienDan();
+
+    getVienDanSS38?.getSpriteVienDan?.animation = null;
+    getVienDanSS38?.getMoHinh?.onVoidHuyTrangThaiVienDan();
+
+    ///
     getVienDanSS40?.getSpriteVienDan?.animation = null;
+    getVienDanSS40?.getMoHinh?.onVoidHuyTrangThaiVienDan();
+
     getVienDanSS42?.getSpriteVienDan?.animation = null;
+    getVienDanSS42?.getMoHinh?.onVoidHuyTrangThaiVienDan();
+
     getVienDanSS44?.getSpriteVienDan?.animation = null;
+    getVienDanSS44?.getMoHinh?.onVoidHuyTrangThaiVienDan();
+
     getVienDanSS46?.getSpriteVienDan?.animation = null;
+    getVienDanSS46?.getMoHinh?.onVoidHuyTrangThaiVienDan();
+
     getVienDanSS48?.getSpriteVienDan?.animation = null;
+    getVienDanSS48?.getMoHinh?.onVoidHuyTrangThaiVienDan();
   }
 }

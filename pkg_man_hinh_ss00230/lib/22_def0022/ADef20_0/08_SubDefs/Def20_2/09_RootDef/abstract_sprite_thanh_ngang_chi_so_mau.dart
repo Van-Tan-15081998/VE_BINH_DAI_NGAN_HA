@@ -202,10 +202,10 @@ abstract class SPRITETHANHNGANGCHISOMAUCOBAN extends SpriteAnimationComponent wi
   /// -----
   /// TODO:
   /// -----
-  int _boiSoCapDoGiamTanXuatCapNhat = 3;
+  int _boiSoCapDoGiamTanXuatCapNhat = 2;
   int get getBoiSoCapDoGiamTanXuatCapNhat => _boiSoCapDoGiamTanXuatCapNhat;
   Future<void> caiDatBoiSoCapDoGiamTanXuatCapNhat({required int? value}) async {
-    _boiSoCapDoGiamTanXuatCapNhat = value ?? 3;
+    _boiSoCapDoGiamTanXuatCapNhat = value ?? 2;
   }
 
   /// -----

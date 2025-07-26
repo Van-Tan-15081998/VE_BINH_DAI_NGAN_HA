@@ -1231,4 +1231,14 @@ abstract class VIENDANTANCONGCOBAN with CauTrucThucThiCoBan {
   }
 
   void onDieuKhienDiChuyen({required int chiSoTangTienTheoThoiGianThuc});
+
+  void onVoidHuyTrangThaiVienDan() {
+    getTrangThaiTonTai?.onVoidCaiDatHuyHoanTat();
+
+    onVoidCaiDatDxViTriLayMucTieu(value: null);
+    onVoidCaiDatDyViTriLayMucTieu(value: null);
+
+    onVoidCaiDatDxTrongTam(value: -10000);
+    onVoidCaiDatDyTrongTam(value: -10000);
+  }
 }

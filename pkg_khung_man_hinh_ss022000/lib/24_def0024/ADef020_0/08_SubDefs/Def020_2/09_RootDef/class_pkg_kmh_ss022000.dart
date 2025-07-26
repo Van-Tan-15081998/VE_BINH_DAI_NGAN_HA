@@ -785,6 +785,7 @@ class QUANLYTHANHPHANMANHINHKHUNGMANHINHCHINH extends QUANLYTHANHPHANMANHINHTHUO
             await getGlobalStateManagementSystem?.getChienDauCoChienDauTongQuat?.getPhuongThucTanCongThongMinh?.getPhuongThucTanCongThongMinhSS01?.onNgatKetNoiSpriteVienDan();
             await getGlobalStateManagementSystem?.getChienDauCoChienDauTongQuat?.getPhuongThucTanCongThongMinh?.getPhuongThucTanCongThongMinhSS02?.onNgatKetNoiSpriteVienDan();
             await getGlobalStateManagementSystem?.getChienDauCoChienDauTongQuat?.getPhuongThucTanCongThongMinh?.getPhuongThucTanCongThongMinhSS03?.onNgatKetNoiSpriteVienDan();
+            await getGlobalStateManagementSystem?.getChienDauCoChienDauTongQuat?.getPhuongThucTanCongThongMinh?.getPhuongThucTanCongThongMinhSS04?.onNgatKetNoiSpriteVienDan();
 
             await getKhungManHinhSS03000?.onRemoveRoot(flameGame: null, component: getKhungManHinhSS03000);
 

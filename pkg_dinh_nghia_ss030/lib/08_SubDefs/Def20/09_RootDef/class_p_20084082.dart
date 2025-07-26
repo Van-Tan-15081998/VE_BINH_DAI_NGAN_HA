@@ -915,7 +915,8 @@ class MoHinhPhuongTienTongQuat with CauTrucThucThiCoBan {
         getTrangThaiTrongChienDau?.onVoidCaiDatMaDinhDanhVienDanVaCham(value: null, caiDatUuTien: true);
 
         /// Hủy Tham Chiếu
-        vienDanVaCham?.caiDatMoHinh(value: null);
+        // vienDanVaCham?.caiDatMoHinh(value: null);
+        vienDanVaCham?.getMoHinh?.onVoidHuyTrangThaiVienDan();
 
         if (this is MOHINHPHUONGTIENVUKHIBOMKHINHKHICAU) {
           final double dxTrongTamCapNhat = getDuLieuJsonLamPhang['[DX_TRONG_TAM]'] ?? 0;

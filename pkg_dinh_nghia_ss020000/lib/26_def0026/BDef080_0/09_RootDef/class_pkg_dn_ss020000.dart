@@ -5696,11 +5696,11 @@ class THUOCTINHTAINGUYENCOBAN with CAUTRUCTHUCTHICOBAN {
           await getTaiHinhAnh?.load(nguonSpriteSheetRS050PartSS230);
         },
       );
-      cauTrucThucThiTuanTu.onAddDonViThucThiTuanTu(
-        onThucThiTuanTu: () async {
-          await getTaiHinhAnh?.load(nguonSpriteSheetRS050PartSS240);
-        },
-      );
+      // cauTrucThucThiTuanTu.onAddDonViThucThiTuanTu(
+      //   onThucThiTuanTu: () async {
+      //     await getTaiHinhAnh?.load(nguonSpriteSheetRS050PartSS240);
+      //   },
+      // );
     }
 
     cauTrucThucThiTuanTu.onThucThiHoanTat = () async {
@@ -5975,13 +5975,13 @@ class THUOCTINHTAINGUYENCOBAN with CAUTRUCTHUCTHICOBAN {
             caiDatUuTienKichThuocRS025: false,
             onThucThiHoanTat: null,
           ).catchError((e) => null),
-          onTaiTaiNguyenHinhAnhNgoaiHinhPartSS24(
-            thuocTinhHinhAnh: thuocTinhHinhAnh,
-            caiDatUuTienKichThuocRS100: false,
-            caiDatUuTienKichThuocRS050: true,
-            caiDatUuTienKichThuocRS025: false,
-            onThucThiHoanTat: null,
-          ).catchError((e) => null),
+          // onTaiTaiNguyenHinhAnhNgoaiHinhPartSS24(
+          //   thuocTinhHinhAnh: thuocTinhHinhAnh,
+          //   caiDatUuTienKichThuocRS100: false,
+          //   caiDatUuTienKichThuocRS050: true,
+          //   caiDatUuTienKichThuocRS025: false,
+          //   onThucThiHoanTat: null,
+          // ).catchError((e) => null),
         ]);
       }
 
@@ -6195,7 +6195,7 @@ class THUOCTINHTAINGUYENCOBAN with CAUTRUCTHUCTHICOBAN {
       onThucThiHoanTat?.call();
     };
 
-    cauTrucThucThiTuanTu.onThucThiTuanTu(interval: const Duration(milliseconds: 200));
+    await cauTrucThucThiTuanTu.onThucThiTuanTu(interval: const Duration(milliseconds: 100));
 
     if (kDebugMode) {
       stopwatch?.stop();
@@ -6942,7 +6942,7 @@ class THUOCTINHTAINGUYENCOBAN with CAUTRUCTHUCTHICOBAN {
       onThucThiHoanTat?.call();
     };
 
-    cauTrucThucThiTuanTu.onThucThiTuanTu(interval: const Duration(milliseconds: 200));
+    await cauTrucThucThiTuanTu.onThucThiTuanTu(interval: const Duration(milliseconds: 100));
 
     if (kDebugMode) {
       stopwatch?.stop();
@@ -7295,7 +7295,7 @@ class THUOCTINHTAINGUYENCOBAN with CAUTRUCTHUCTHICOBAN {
       onThucThiHoanTat?.call();
     };
 
-    cauTrucThucThiTuanTu.onThucThiTuanTu(interval: const Duration(milliseconds: 200));
+    await cauTrucThucThiTuanTu.onThucThiTuanTu(interval: const Duration(milliseconds: 100));
 
     if (kDebugMode) {
       stopwatch?.stop();

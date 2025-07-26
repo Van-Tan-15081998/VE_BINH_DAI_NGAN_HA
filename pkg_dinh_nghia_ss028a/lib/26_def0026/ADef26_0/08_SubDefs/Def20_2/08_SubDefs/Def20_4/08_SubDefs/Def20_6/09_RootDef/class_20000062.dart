@@ -307,7 +307,8 @@ abstract class VienDanCoBan extends VIENDANTANCONGCOBAN {
   /// -----
   void onVoidDieuKhienDiChuyenChiTiet() {
     if (onVoidKiemTraDiChuyenThoatManHinh() == true) {
-      getTrangThaiTonTai?.onVoidCaiDatHuyHoanTat();
+      // getTrangThaiTonTai?.onVoidCaiDatHuyHoanTat();
+      onVoidHuyTrangThaiVienDan();
     } else {
       /// -----
       /// TODO:

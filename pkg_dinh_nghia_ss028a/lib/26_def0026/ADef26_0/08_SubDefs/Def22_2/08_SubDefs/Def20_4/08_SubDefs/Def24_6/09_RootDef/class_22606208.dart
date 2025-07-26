@@ -34,10 +34,7 @@ abstract class QuanLyTrangThaiPhuongThucTanCongThongMinh with CauTrucThucThiCoBa
     /// -----
     /// TODO:
     /// -----
-    await caiDatKichThuocManHinh(
-      chieuRongManHinhPhiVatLyP: getThietLapTongQuat?.getChieuRongManHinhPhiVatLy ?? 0,
-      chieuCaoManHinhPhiVatLyP: getThietLapTongQuat?.getChieuCaoManHinhPhiVatLy ?? 0,
-    );
+    await caiDatKichThuocManHinh(chieuRongManHinhPhiVatLyP: getThietLapTongQuat?.getChieuRongManHinhPhiVatLy ?? 0, chieuCaoManHinhPhiVatLyP: getThietLapTongQuat?.getChieuCaoManHinhPhiVatLy ?? 0);
 
     return;
   }
@@ -910,6 +907,18 @@ abstract class QuanLyTrangThaiPhuongThucTanCongThongMinh with CauTrucThucThiCoBa
     //   chieuCaoThan: null,
     // );
 
+    /// -----
+    /// TODO: Cài Đặt Vị Trí Lấy Mục Tiêu Ban Đầu
+    /// -----
+    double dxTrongTamViTriXuatPhat = trangThai?.getMoHinh?.getDxTrongTam ?? 0;
+    double dyTrongTamViTriXuatPhat = trangThai?.getMoHinh?.getDyTrongTam ?? 0;
+
+    double dxTrongTamViTriLayMucTieuBanDau = dxTrongTamViTriXuatPhat;
+    double dyTrongTamViTriLayMucTieuBanDau = dyTrongTamViTriXuatPhat - 10000;
+
+    (trangThai?.getMoHinh as VienDanThongMinh).onVoidCaiDatDxViTriLayMucTieu(value: dxTrongTamViTriLayMucTieuBanDau);
+    (trangThai?.getMoHinh as VienDanThongMinh).onVoidCaiDatDyViTriLayMucTieu(value: dyTrongTamViTriLayMucTieuBanDau);
+
     return;
   }
 
@@ -917,8 +926,7 @@ abstract class QuanLyTrangThaiPhuongThucTanCongThongMinh with CauTrucThucThiCoBa
   /// TODO:
   /// -----
   Future<void> onVoidTimKiemXacDinhMucTieuNgauNhienDuyNhat({required TrangThaiVienDanThongMinh? trangThai}) async {
-    List<TrangThaiPhuongTienHoatDong?> danhSachTrangThaiPhuongTienHoatDong =
-        (getDanhSachMoHinhTongQuat?.getDanhSachPhuongTienHoatDong?.getDanhSachTrangThaiPhuongTienHoatDong ?? []).toList();
+    List<TrangThaiPhuongTienHoatDong?> danhSachTrangThaiPhuongTienHoatDong = (getDanhSachMoHinhTongQuat?.getDanhSachPhuongTienHoatDong?.getDanhSachTrangThaiPhuongTienHoatDong ?? []).toList();
 
     final String? maDinhDanhDoiTuongMucTieu = (trangThai?.getMoHinh as VienDanThongMinh).getMaDinhDanhDoiTuongMucTieu;
 
@@ -937,22 +945,52 @@ abstract class QuanLyTrangThaiPhuongThucTanCongThongMinh with CauTrucThucThiCoBa
   }
 
   Future<void> onNgatKetNoiSpriteVienDan() async {
+    ///
     getVienDanSS20?.getSpriteVienDan?.animation = null;
+    getVienDanSS20?.getMoHinh?.onVoidHuyTrangThaiVienDan();
+
     getVienDanSS22?.getSpriteVienDan?.animation = null;
+    getVienDanSS22?.getMoHinh?.onVoidHuyTrangThaiVienDan();
+
     getVienDanSS24?.getSpriteVienDan?.animation = null;
+    getVienDanSS24?.getMoHinh?.onVoidHuyTrangThaiVienDan();
+
     getVienDanSS26?.getSpriteVienDan?.animation = null;
+    getVienDanSS26?.getMoHinh?.onVoidHuyTrangThaiVienDan();
+
     getVienDanSS28?.getSpriteVienDan?.animation = null;
+    getVienDanSS28?.getMoHinh?.onVoidHuyTrangThaiVienDan();
 
+    ///
     getVienDanSS30?.getSpriteVienDan?.animation = null;
-    getVienDanSS32?.getSpriteVienDan?.animation = null;
-    getVienDanSS34?.getSpriteVienDan?.animation = null;
-    getVienDanSS36?.getSpriteVienDan?.animation = null;
-    getVienDanSS38?.getSpriteVienDan?.animation = null;
+    getVienDanSS30?.getMoHinh?.onVoidHuyTrangThaiVienDan();
 
+    getVienDanSS32?.getSpriteVienDan?.animation = null;
+    getVienDanSS32?.getMoHinh?.onVoidHuyTrangThaiVienDan();
+
+    getVienDanSS34?.getSpriteVienDan?.animation = null;
+    getVienDanSS34?.getMoHinh?.onVoidHuyTrangThaiVienDan();
+
+    getVienDanSS36?.getSpriteVienDan?.animation = null;
+    getVienDanSS36?.getMoHinh?.onVoidHuyTrangThaiVienDan();
+
+    getVienDanSS38?.getSpriteVienDan?.animation = null;
+    getVienDanSS38?.getMoHinh?.onVoidHuyTrangThaiVienDan();
+
+    ///
     getVienDanSS40?.getSpriteVienDan?.animation = null;
+    getVienDanSS40?.getMoHinh?.onVoidHuyTrangThaiVienDan();
+
     getVienDanSS42?.getSpriteVienDan?.animation = null;
+    getVienDanSS42?.getMoHinh?.onVoidHuyTrangThaiVienDan();
+
     getVienDanSS44?.getSpriteVienDan?.animation = null;
+    getVienDanSS44?.getMoHinh?.onVoidHuyTrangThaiVienDan();
+
     getVienDanSS46?.getSpriteVienDan?.animation = null;
+    getVienDanSS46?.getMoHinh?.onVoidHuyTrangThaiVienDan();
+
     getVienDanSS48?.getSpriteVienDan?.animation = null;
+    getVienDanSS48?.getMoHinh?.onVoidHuyTrangThaiVienDan();
   }
 }
