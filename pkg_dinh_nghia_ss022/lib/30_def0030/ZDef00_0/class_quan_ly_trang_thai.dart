@@ -567,6 +567,10 @@ class QUANLYTRANGTHAITHANHPHANGAMEUITONGQUAT with CauTrucThucThiCoBan {
   /// -----
   Future<void> onTaiTaiNguyenMaster({required Future<void> Function()? onThucThiHoanTat}) async {
     try {
+
+      // await onThucThiHoanTat?.call();
+      // return;
+
       /// -----
       /// TODO:
       /// -----
@@ -594,16 +598,16 @@ class QUANLYTRANGTHAITHANHPHANGAMEUITONGQUAT with CauTrucThucThiCoBan {
         },
       );
 
-      cauTrucThucThiTuanTuSS010.onAddDonViThucThiTuanTu(
-        onThucThiTuanTu: () async {
-          await getQuanLyTaiNguyenThanhPhanGameUI?.onTaiTaiNguyenTichHopTheoTuanTu(
-            thanhPhanGameUI: getGameUISpriteAnimationMacDinh,
-            onThucThiHoanTat: () async {
-              await getGameUISpriteAnimationMacDinh?.getSpriteThanhPhanGameUI?.onTaiTaiNguyen();
-            },
-          );
-        },
-      );
+      // cauTrucThucThiTuanTuSS010.onAddDonViThucThiTuanTu(
+      //   onThucThiTuanTu: () async {
+      //     await getQuanLyTaiNguyenThanhPhanGameUI?.onTaiTaiNguyenTichHopTheoTuanTu(
+      //       thanhPhanGameUI: getGameUISpriteAnimationMacDinh,
+      //       onThucThiHoanTat: () async {
+      //         await getGameUISpriteAnimationMacDinh?.getSpriteThanhPhanGameUI?.onTaiTaiNguyen();
+      //       },
+      //     );
+      //   },
+      // );
 
       cauTrucThucThiTuanTuSS010.onAddDonViThucThiTuanTu(
         onThucThiTuanTu: () async {
@@ -762,16 +766,16 @@ class QUANLYTRANGTHAITHANHPHANGAMEUITONGQUAT with CauTrucThucThiCoBan {
       ///
       /// cauTrucThucThiTuanTuSS020
       ///
-      cauTrucThucThiTuanTuSS020.onAddDonViThucThiTuanTu(
-        onThucThiTuanTu: () async {
-          await getQuanLyTaiNguyenThanhPhanGameUI?.onTaiTaiNguyenTichHopTheoTuanTu(
-            thanhPhanGameUI: getGameUIKhungManHinhThuCapCoBan,
-            onThucThiHoanTat: () async {
-              await getGameUIKhungManHinhThuCapCoBan?.getSpriteThanhPhanGameUI?.onTaiTaiNguyen();
-            },
-          );
-        },
-      );
+      // cauTrucThucThiTuanTuSS020.onAddDonViThucThiTuanTu(
+      //   onThucThiTuanTu: () async {
+      //     await getQuanLyTaiNguyenThanhPhanGameUI?.onTaiTaiNguyenTichHopTheoTuanTu(
+      //       thanhPhanGameUI: getGameUIKhungManHinhThuCapCoBan,
+      //       onThucThiHoanTat: () async {
+      //         await getGameUIKhungManHinhThuCapCoBan?.getSpriteThanhPhanGameUI?.onTaiTaiNguyen();
+      //       },
+      //     );
+      //   },
+      // );
       cauTrucThucThiTuanTuSS020.onAddDonViThucThiTuanTu(
         onThucThiTuanTu: () async {
           await getQuanLyTaiNguyenThanhPhanGameUI?.onTaiTaiNguyenTichHopTheoTuanTu(
@@ -2074,7 +2078,7 @@ class QUANLYTRANGTHAITHANHPHANGAMEUITONGQUAT with CauTrucThucThiCoBan {
       ///
       getMapThanhPhanGameUI[maDinhDanhThanhPhanGameUI]?.getSpriteThanhPhanGameUI?.onVoidCaiDatSpriteAnimationComponentLienKet(value: spriteAnimationComponent);
 
-      print(maDinhDanhThanhPhanGameUI);
+      // print(maDinhDanhThanhPhanGameUI);
     }
 
     return;
