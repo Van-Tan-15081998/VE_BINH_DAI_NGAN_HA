@@ -69,7 +69,7 @@ class BANGDIEUKHIENDOIHINHTSTCSTAGESS00A001MAPSS00A extends BANGDIEUKHIENDOIHINH
       /// -----
       /// TODO: [26] => [30]
       /// -----
-      caiDatTrangThaiPhuongTienSS070(value: TrangThaiPhuongTien(value: PHUONGTIENCHIHUYCLASS50CSS01(1)), caiDatUuTien: true).catchError((e) => null),
+      caiDatTrangThaiPhuongTienSS070(value: TrangThaiPhuongTien(value: PHUONGTIENCHIHUYCLASS50CSS01(2)), caiDatUuTien: true).catchError((e) => null),
       caiDatTrangThaiPhuongTienSS072(value: TrangThaiPhuongTien(value: PHUONGTIENCHIHUYCLASS50CSS01(1)), caiDatUuTien: true).catchError((e) => null),
       caiDatTrangThaiPhuongTienSS074(value: TrangThaiPhuongTien(value: PHUONGTIENCHIHUYCLASS50CSS01(1)), caiDatUuTien: true).catchError((e) => null),
       caiDatTrangThaiPhuongTienSS076(value: TrangThaiPhuongTien(value: PHUONGTIENVUKHICHIHUYCLASS50CSS010VKSS030(1)), caiDatUuTien: true).catchError((e) => null),

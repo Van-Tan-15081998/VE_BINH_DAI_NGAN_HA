@@ -67,7 +67,7 @@ class BANGDIEUKHIENDOIHINHTSTCSTAGESS00A025MAPSS00A extends BANGDIEUKHIENDOIHINH
       /// -----
       /// TODO: [26] => [30] - [Nhóm SS00C - Turn SS020]
       /// -----
-      caiDatTrangThaiPhuongTienSS070(value: TrangThaiPhuongTien(value: PHUONGTIENCHIHUYCLASS10CSS01(1)), caiDatUuTien: true).catchError((e) => null),
+      caiDatTrangThaiPhuongTienSS070(value: TrangThaiPhuongTien(value: PHUONGTIENCHIHUYCLASS10CSS01(2)), caiDatUuTien: true).catchError((e) => null),
       caiDatTrangThaiPhuongTienSS072(value: TrangThaiPhuongTien(value: PHUONGTIENCHIHUYCLASS20BSS01(1)), caiDatUuTien: true).catchError((e) => null),
       caiDatTrangThaiPhuongTienSS074(value: TrangThaiPhuongTien(value: PHUONGTIENCHIHUYCLASS40CSS01(1)), caiDatUuTien: true).catchError((e) => null),
       caiDatTrangThaiPhuongTienSS076(value: TrangThaiPhuongTien(value: PHUONGTIENVUKHICHIHUYCLASS10CSS010VKSS010(1)), caiDatUuTien: true).catchError((e) => null),
