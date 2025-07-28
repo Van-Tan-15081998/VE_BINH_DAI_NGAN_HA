@@ -6,6 +6,21 @@ export '30_def0030/ZDef00_0/class_20000800.dart';
 /// TODO: _____[MO_HINH_THANH_TICH_CHIEN_DAU_CO_BAN]_____
 export '26_def0026/ZDef00_0/class_20000000.dart';
 
+/// TODO: _____[THUOC_TINH_THANH_TICH_CHIEN_DAU_THEO_NHIEM_VU]_____
+export '26_def0026/ADef20_0/09_RootDef/class_20000008.dart';
+
+/// TODO: _____[THUOC_TINH_THONG_TIN_THANH_TICH_TNV]_____
+export '26_def0026/ADef20_0/08_SubDefs/Def20_2/09_RootDef/class_20000022.dart';
+
+/// TODO: _____[THUOC_TINH_DIEU_KIEN_DAT_THANH_TICH_TNV]_____
+export '26_def0026/ADef20_0/08_SubDefs/Def30_2/09_RootDef/class_20000026.dart';
+
+/// TODO: _____[THUOC_TINH_PHAN_THUONG_DAT_THANH_TICH_TNV]_____
+export '26_def0026/ADef20_0/08_SubDefs/Def40_2/09_RootDef/class_20000028.dart';
+
+/// TODO: _____[TRANG_THAI_SO_HUU_PHAN_THUONG_DAT_THANH_TICH_TNV]_____
+export '26_def0026/ADef20_0/08_SubDefs/Def50_2/09_RootDef/class_20000060.dart';
+
 /// TODO: _____[THUOC_TINH_THANH_TICH_CHIEN_DAU_THEO_HANG_NGAY]_____
 export '26_def0026/ADef30_0/09_RootDef/class_20000008.dart';
 
@@ -102,6 +117,9 @@ export '28_def0028/ADef22_0/08_SubDefs/Def38_2/09_RootDef/class_20000668.dart';
 
 /// TODO: _____[MO_HINH_THANH_TICH_CHIEN_DAU_TLSSS040]_____
 export '28_def0028/ADef22_0/08_SubDefs/Def40_2/09_RootDef/class_20000680.dart';
+
+/// TODO: _____[MO_HINH_THANH_TICH_CHIEN_DAU_TNVSS020]_____
+export '28_def0028/ADef24_0/08_SubDefs/Def20_2/09_RootDef/class_20000606.dart';
 
 /// A Calculator.
 class Calculator {

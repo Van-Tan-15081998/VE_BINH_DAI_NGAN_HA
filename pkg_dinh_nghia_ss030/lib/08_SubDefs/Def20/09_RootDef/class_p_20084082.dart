@@ -1,6 +1,7 @@
 import 'dart:math';
 
 import 'package:flutter/material.dart';
+import 'package:pkg_dinh_nghia_dv_ss0060/pkg_dinh_nghia_dv_ss0060_exp.dart';
 import 'package:pkg_dinh_nghia_ss020/pkg_dinh_nghia_ss020_exp.dart';
 import 'package:pkg_dinh_nghia_ss028/pkg_dinh_nghia_ss028_exp.dart';
 import 'package:pkg_dinh_nghia_ss028a/pkg_dinh_nghia_ss028a_exp.dart';
@@ -588,6 +589,16 @@ class MoHinhPhuongTienTongQuat with CauTrucThucThiCoBan {
   }
 
   /// -----
+  /// TODO: Quản Lý Trạng Thái Dịch Vụ Thành Tích Chiến Đấu
+  /// -----
+  QUANLYTRANGTHAIDICHVUTHANHTICHCHIENDAU? _dichVuThanhTichChienDau;
+  QUANLYTRANGTHAIDICHVUTHANHTICHCHIENDAU? get getDichVuThanhTichChienDau => _dichVuThanhTichChienDau;
+  Future<void> onCaiDatDichVuThanhTichChienDau({required QUANLYTRANGTHAIDICHVUTHANHTICHCHIENDAU? value}) async {
+    _dichVuThanhTichChienDau ??= value;
+    return;
+  }
+
+  /// -----
   /// TODO: Hàm Xử Lý Va Chạm Gây Sát Thương Lên Phương Tiện
   /// -----
   Future<void> onXuLySatThuongHuongDenPhuongTien({required DiemToaDoHoanHaoCoBan? toaDoVaCham}) async {
@@ -981,6 +992,17 @@ class MoHinhPhuongTienTongQuat with CauTrucThucThiCoBan {
       /// TODO:
       /// -----
       getDieuKhienTinhToanTongQuat?.getTinhToanSatThuongHuongDenChienDauCo?.onVoidSatThuongPhuongTienVuKhi(phuongTien: this, toaDoVaCham: toaDoVaCham);
+
+      if (this is MOHINHPHUONGTIENVATPHAMPHANTHUONG) {
+
+        getDichVuThanhTichChienDau?.getThanhTichChienDauTNVSS020 //
+            ?.getThanhTichChienDauTheoNhiemVu //
+            ?.getPhanThuongDatThanhTich //
+            ?.getGoiTaiNguyenPhanThuongVang //
+            ?.getDonViSoLuong //
+            ?.onCaiDatTuDongTangTongSoLuong();
+      }
+
     } else {
       // if (onKiemTraPhuongTienDiChuyenThoatManHinh(
       //   huongBay: getPhuongThuc?.getPhuongThucBay?.getThamSoBay?.getDinhHuongBay,

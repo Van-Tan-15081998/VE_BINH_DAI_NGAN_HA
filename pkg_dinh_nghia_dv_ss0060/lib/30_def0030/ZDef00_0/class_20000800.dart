@@ -42,6 +42,11 @@ class QUANLYTRANGTHAIDICHVUTHANHTICHCHIENDAU with CauTrucThucThiCoBan {
   @override
   Future<void> onSetupRoot() async {
     /// -----
+    /// TODO: Nhóm Danh Sách Thành Tích Chiến Đấu Theo Nhiệm Vụ
+    /// -----
+    await caiDatThanhTichChienDauTNVSS020(value: MOHINHTHANHTICHCHIENDAUTNVSS020(), caiDatUuTien: true);
+
+    /// -----
     /// TODO: Nhóm Danh Sách Thành Tích Chiến Đấu Theo Hằng Ngày
     /// -----
     await caiDatThanhTichChienDauTHNSS020(value: MOHINHTHANHTICHCHIENDAUTHNSS020(), caiDatUuTien: true);
@@ -109,6 +114,11 @@ class QUANLYTRANGTHAIDICHVUTHANHTICHCHIENDAU with CauTrucThucThiCoBan {
   @override
   Future<void> onSetupRootForSubCom() async {
     /// -----
+    /// TODO: Nhóm Danh Sách Thành Tích Chiến Đấu Theo Nhiệm Vụ
+    /// -----
+    await getThanhTichChienDauTNVSS020?.onSetupRoot();
+
+    /// -----
     /// TODO: Nhóm Danh Sách Thành Tích Chiến Đấu Theo Hằng Ngày
     /// -----
     await getThanhTichChienDauTHNSS020?.onSetupRoot();
@@ -147,6 +157,11 @@ class QUANLYTRANGTHAIDICHVUTHANHTICHCHIENDAU with CauTrucThucThiCoBan {
   /// -----
   @override
   Future<void> onInitRootForSubCom() async {
+    /// -----
+    /// TODO: Nhóm Danh Sách Thành Tích Chiến Đấu Theo Nhiệm Vụ
+    /// -----
+    await getThanhTichChienDauTNVSS020?.onInitRoot();
+
     /// -----
     /// TODO: Nhóm Danh Sách Thành Tích Chiến Đấu Theo Hằng Ngày
     /// -----
@@ -187,6 +202,21 @@ class QUANLYTRANGTHAIDICHVUTHANHTICHCHIENDAU with CauTrucThucThiCoBan {
   @override
   Future<void> onResetRootForSubCom() async {
     ///
+    return;
+  }
+
+  /// -----
+  /// TODO: Nhóm Danh Sách Thành Tích Chiến Đấu Theo Nhiệm Vụ
+  /// -----
+  MOHINHTHANHTICHCHIENDAUTNVSS020? _thanhTichChienDauTNVSS020;
+  MOHINHTHANHTICHCHIENDAUTNVSS020? get getThanhTichChienDauTNVSS020 => _thanhTichChienDauTNVSS020;
+  Future<void> caiDatThanhTichChienDauTNVSS020({required MOHINHTHANHTICHCHIENDAUTNVSS020? value, bool? caiDatUuTien}) async {
+    if (caiDatUuTien == true) {
+      _thanhTichChienDauTNVSS020 = value;
+    } else {
+      _thanhTichChienDauTNVSS020 ??= value;
+    }
+
     return;
   }
 

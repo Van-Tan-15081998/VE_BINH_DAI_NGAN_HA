@@ -1,9 +1,9 @@
 import 'package:pkg_dinh_nghia_ss020/pkg_dinh_nghia_ss020_exp.dart';
 
 /// -----
-/// TODO: Gói Tài Nguyên Tổng Quát
+/// TODO: Trạng Thái Sở Hữu Phần Thưởng Đạt Thành Tích TNV
 /// -----
-class DONVISOLUONGTONGQUAT with CauTrucThucThiCoBan {
+class TRANGTHAISOHUUPHANTHUONGDATTHANHTICHTNV with CauTrucThucThiCoBan {
   /// -----
   /// TODO: Attach Root
   /// -----
@@ -40,6 +40,8 @@ class DONVISOLUONGTONGQUAT with CauTrucThucThiCoBan {
   /// -----
   @override
   Future<void> onSetupRoot() async {
+    await caiDatSoHuu(value: false, caiDatUuTien: true);
+
     /// -----
     /// TODO: Setup Root For SubCom
     /// -----
@@ -100,43 +102,17 @@ class DONVISOLUONGTONGQUAT with CauTrucThucThiCoBan {
   }
 
   /// -----
-  /// TODO: Mã Định Danh
+  /// TODO:
   /// -----
-  String? _maDinhDanh;
-  String? get getMaDinhDanh => _maDinhDanh;
-  Future<void> caiDatMaDinhDanh({required String? value, bool? caiDatUuTien}) async {
+  bool? _soHuu;
+  bool? get getSoHuu => _soHuu;
+  Future<void> caiDatSoHuu({required bool? value, bool? caiDatUuTien}) async {
     if (caiDatUuTien == true) {
-      _maDinhDanh = value;
+      _soHuu = value;
     } else {
-      _maDinhDanh ??= value;
+      _soHuu ??= value;
     }
 
     return;
   }
-
-  /// -----
-  /// TODO: Tổng Số Lượng
-  /// -----
-  int? _tongSoLuong;
-  int? get getTongSoLuong => _tongSoLuong;
-  Future<void> caiDatTongSoLuong({required int? value, bool? caiDatUuTien}) async {
-    if (value?.isNaN == false && (value ?? 0) >= 0) {
-      if (caiDatUuTien == true) {
-        _tongSoLuong = value;
-      } else {
-        _tongSoLuong ??= value;
-      }
-    }
-
-    return;
-  }
-  Future<void> onCaiDatTuDongTangTongSoLuong() async {
-    int tongSoLuong = getTongSoLuong ?? 0;
-    tongSoLuong += 1;
-
-    caiDatTongSoLuong(value: tongSoLuong, caiDatUuTien: true);
-
-    return;
-  }
-
 }
