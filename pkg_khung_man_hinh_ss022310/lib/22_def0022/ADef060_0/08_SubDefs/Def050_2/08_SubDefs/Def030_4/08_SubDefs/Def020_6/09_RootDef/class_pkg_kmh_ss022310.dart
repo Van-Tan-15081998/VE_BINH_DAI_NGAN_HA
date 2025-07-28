@@ -1,4 +1,8 @@
+import 'dart:ui';
+
+import 'package:flame/events.dart';
 import 'package:pkg_dinh_nghia_ss022/pkg_dinh_nghia_ss022_exp.dart';
+import 'package:pkg_dinh_nghia_ss028/pkg_dinh_nghia_ss028_exp.dart';
 import 'package:pkg_khung_man_hinh_ss020000/pkg_khung_man_hinh_ss020000_exp.dart';
 
 /// -----
@@ -18,6 +22,18 @@ class KHUNGTAINGUYENTRAODOIMUACHIENDAUCODANGCAPSAO00E03SS01 extends THANHPHANTIC
     required super.positionDy, //
   }) {
     onVoidCaiDatKiemTraVanBanThuan(value: false, caiDatUuTien: true);
+
+    onCaiDatChienDauCoDangCapSao00E03SS01(value: getGlobalStateManagementSystem?.getHangarChienDauCoTongQuat?.getChienDauCoDangCapSao00E03SS01);
+  }
+
+  /// -----
+  /// TODO:
+  /// -----
+  ChienDauCoDangCapSao00E03SS01? _chienDauCoDangCapSao00E03SS01;
+  ChienDauCoDangCapSao00E03SS01? get getChienDauCoDangCapSao00E03SS01 => _chienDauCoDangCapSao00E03SS01;
+  Future<void> onCaiDatChienDauCoDangCapSao00E03SS01({required ChienDauCoDangCapSao00E03SS01? value}) async {
+    _chienDauCoDangCapSao00E03SS01 ??= value;
+    return;
   }
 
   @override
@@ -31,5 +47,35 @@ class KHUNGTAINGUYENTRAODOIMUACHIENDAUCODANGCAPSAO00E03SS01 extends THANHPHANTIC
     await onCapNhatChiTietThanhPhanGameUI();
 
     return;
+  }
+
+  int tongSoLuongTaiNguyenVangTraoDoiMuaChienDauCo = 0;
+
+  @override
+  void update(double dt) {
+    // TODO: implement update
+    super.update(dt);
+
+    if (tongSoLuongTaiNguyenVangTraoDoiMuaChienDauCo !=
+        getChienDauCoDangCapSao00E03SS01
+            ?.getThuocTinhSoHuuChienDauCo
+            ?.getSoHuuTheoThoiGianVinhVien //
+            ?.getDieuKienSoHuuTheoThoiGianVinhVien //
+            ?.getGoiTaiNguyenThanhToan //
+            ?.getDonViSoLuong //
+            ?.getTongSoLuong) {
+      tongSoLuongTaiNguyenVangTraoDoiMuaChienDauCo =
+          getChienDauCoDangCapSao00E03SS01
+              ?.getThuocTinhSoHuuChienDauCo
+              ?.getSoHuuTheoThoiGianVinhVien //
+              ?.getDieuKienSoHuuTheoThoiGianVinhVien //
+              ?.getGoiTaiNguyenThanhToan //
+              ?.getDonViSoLuong //
+              ?.getTongSoLuong ??
+          0;
+
+      getThanhPhanVanBanThuan?.onVoidCaiDatVanBan(value: tongSoLuongTaiNguyenVangTraoDoiMuaChienDauCo.toString(), caiDatUuTien: true);
+      getThanhPhanVanBanSoHoc?.onVoidCaiDatVanBan(value: tongSoLuongTaiNguyenVangTraoDoiMuaChienDauCo.toDouble(), caiDatUuTien: true);
+    }
   }
 }

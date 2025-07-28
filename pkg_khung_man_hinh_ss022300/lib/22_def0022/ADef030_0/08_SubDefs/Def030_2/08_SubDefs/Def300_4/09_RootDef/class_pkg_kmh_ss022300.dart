@@ -24,8 +24,8 @@ class NUTBAMCHONCHIENDAU extends THANHPHANNUTBAMTHUOCCAPTHUANKICHHOAT {
 
   @override
   Future<void> onThucThi() async {
-
     await getGameController?.onKichHoatKhungManHinhThuocCapSS300100();
+
     ///
     return;
   }
@@ -42,14 +42,8 @@ class NUTBAMCHONCHIENDAU extends THANHPHANNUTBAMTHUOCCAPTHUANKICHHOAT {
 
   @override
   Future<void> onCaiDatChiTietThanhPhanGameUI() async {
-    await onCaiDatThanhPhanGameUIKichHoat(
-      value: GAMEUINUTBAMCOBANVA(),
-      caiDatUuTien: true,
-    );
-    await onCaiDatThanhPhanGameUIHuyKichHoat(
-      value: GAMEUINUTBAMCOBANVA(),
-      caiDatUuTien: true,
-    );
+    await onCaiDatThanhPhanGameUIKichHoat(value: GAMEUINUTBAMCOBANVA(), caiDatUuTien: true);
+    await onCaiDatThanhPhanGameUIHuyKichHoat(value: GAMEUINUTBAMCOBANVA(), caiDatUuTien: true);
 
     await getThanhPhanGameUIKichHoat?.onSetupRoot();
     await getThanhPhanGameUIHuyKichHoat?.onSetupRoot();
@@ -76,5 +70,11 @@ class NUTBAMCHONCHIENDAU extends THANHPHANNUTBAMTHUOCCAPTHUANKICHHOAT {
 
     ///
     return;
+  }
+
+  @override
+  void update(double dt) {
+    // TODO: implement update
+    super.update(dt);
   }
 }

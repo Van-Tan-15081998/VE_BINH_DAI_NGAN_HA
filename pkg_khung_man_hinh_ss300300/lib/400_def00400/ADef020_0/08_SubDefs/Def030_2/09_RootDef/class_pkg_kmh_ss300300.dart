@@ -296,6 +296,10 @@ class QUANLYTHANHPHANNUTBAMTHUOCCAP extends QUANLYTHANHPHANNUTBAMTHUOCCAPCOBAN {
 
         ///
       ]);
+
+      await getNutBamChonHoiSinh?.onKichHoatThanhPhanThuocCap();
+      await getNutBamChonQuayVeTrangchu?.onKichHoatThanhPhanThuocCap();
+
     } catch (e) {
       await onReportRootIssue(nameFunction: 'onInitRootForSubCom');
     }

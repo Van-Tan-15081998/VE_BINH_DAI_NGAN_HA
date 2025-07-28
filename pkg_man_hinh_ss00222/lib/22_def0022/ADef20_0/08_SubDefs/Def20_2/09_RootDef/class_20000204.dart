@@ -128,8 +128,8 @@ class CHIENDAUCOCHONCHIDINH extends SpriteAnimationCoBan {
       ///
       dx = getMoHinh?.getDxTrongTamNotNull ?? 1.0;
       dy = getMoHinh?.getDyTrongTamNotNull ?? 1.0;
-      chieuCaoThan = (getMoHinh?.getChieuCaoThan ?? 1.0) * 0.7;
-      chieuRongThan = (getMoHinh?.getChieuRongThan ?? 1.0) * 0.7;
+      chieuCaoThan = (getMoHinh?.getChieuCaoThan ?? 1.0) * 1.0;
+      chieuRongThan = (getMoHinh?.getChieuRongThan ?? 1.0) * 1.0;
 
       ///
       /// TODO:

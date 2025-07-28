@@ -32,11 +32,11 @@ class QUANLYTONGKHOTAINGUYENTRAODOIGIATRI with CauTrucThucThiCoBan {
     /// TODO: Khởi Tạo Cấp Tài Nguyên Phục Vụ Thử Nghiệm
     /// -----
     await getKhoTaiNguyenDongVang?.getGoiTaiNguyenChuanHienHanh?.getGoiTaiNguyenChuanChinhThuc?.getDonViSoLuong?.caiDatTongSoLuong(
-      value: 5000,
+      value: 500000,
       caiDatUuTien: true,
     );
     await getKhoTaiNguyenDongNgoc?.getGoiTaiNguyenChuanHienHanh?.getGoiTaiNguyenChuanChinhThuc?.getDonViSoLuong?.caiDatTongSoLuong(
-      value: 2000,
+      value: 1000,
       caiDatUuTien: true,
     );
 

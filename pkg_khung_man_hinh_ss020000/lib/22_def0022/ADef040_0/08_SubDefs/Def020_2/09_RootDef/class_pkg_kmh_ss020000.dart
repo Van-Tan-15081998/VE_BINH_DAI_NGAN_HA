@@ -137,8 +137,12 @@ class THANHPHANVANBANTHUANTHUOCCAP extends TextComponent
   void onVoidCaiDatVanBan({required String? value, bool? caiDatUuTien}) {
     if (caiDatUuTien == true) {
       _vanBan = value;
+
+      text = getVanBan ?? '';
     } else {
       _vanBan ??= value;
+
+      text = getVanBan ?? '';
     }
 
     ///
@@ -246,6 +250,16 @@ class THANHPHANVANBANTHUANTHUOCCAP extends TextComponent
 
     // TODO: implement onLoad
     return;
+  }
+
+  void onCaiDatPhongCachVanBan({Color? color, double? fontSize, FontWeight? fontWeight}) {
+    textRenderer = TextPaint(
+      style: TextStyle(
+        color: color ?? Color(0xFF2E2E2E),
+        fontSize: fontSize ?? 16,
+        fontWeight: fontWeight ?? FontWeight.bold,
+      ),
+    );
   }
 
   /// -----

@@ -5,8 +5,7 @@ import 'package:pkg_khung_man_hinh_ss020000/pkg_khung_man_hinh_ss020000_exp.dart
 /// -----
 /// TODO: Quản Lý Thành Phần Màn Hình
 /// -----
-class QUANLYTHANHPHANMANHINHTHUOCCAP
-    extends QUANLYTHANHPHANMANHINHTHUOCCAPCOBAN {
+class QUANLYTHANHPHANMANHINHTHUOCCAP extends QUANLYTHANHPHANMANHINHTHUOCCAPCOBAN {
   /// -----
   /// TODO:
   /// -----
@@ -22,10 +21,7 @@ class QUANLYTHANHPHANMANHINHTHUOCCAP
   /// TODO: Add Comp Root
   /// -----
   @override
-  Future<void> onAddRoot({
-    required FlameGame? flameGame,
-    required Component? component,
-  }) async {
+  Future<void> onAddRoot({required FlameGame? flameGame, required Component? component}) async {
     try {
       /// -----
       /// TODO:
@@ -50,10 +46,7 @@ class QUANLYTHANHPHANMANHINHTHUOCCAP
   /// TODO: Add Comp Root For SubCom
   /// -----
   @override
-  Future<void> onAddRootForSubCom({
-    required FlameGame? flameGame,
-    required Component? component,
-  }) async {
+  Future<void> onAddRootForSubCom({required FlameGame? flameGame, required Component? component}) async {
     try {
       /// -----
       /// TODO:
@@ -104,11 +97,8 @@ class QUANLYTHANHPHANMANHINHTHUOCCAP
       /// -----
       /// TODO:
       /// -----
-      double sizeDxManHinhVatLy =
-          getGlobalStateManagementSystem?.getThietLapTongQuat?.getChieuRongManHinhVatLy ??
-          100.0;
-      double sizeDyManHinhVatLy =
-          getGlobalStateManagementSystem?.getThietLapTongQuat?.getChieuCaoManHinhVatLy ?? 100.0;
+      double sizeDxManHinhVatLy = getGlobalStateManagementSystem?.getThietLapTongQuat?.getChieuRongManHinhVatLy ?? 100.0;
+      double sizeDyManHinhVatLy = getGlobalStateManagementSystem?.getThietLapTongQuat?.getChieuCaoManHinhVatLy ?? 100.0;
 
       double sizeDxNutBamChonTab = sizeDxManHinhVatLy * 0.9;
       double sizeDyNutBamChonTab = sizeDyManHinhVatLy * 0.8;

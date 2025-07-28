@@ -136,8 +136,12 @@ class THANHPHANVANBANSOHOCTHUOCCAP extends TextComponent
   void onVoidCaiDatVanBan({required double? value, bool? caiDatUuTien}) {
     if (caiDatUuTien == true) {
       _vanBan = value;
+
+      text = _vanBan?.floor().toString() ?? '0';
     } else {
       _vanBan ??= value;
+
+      text = _vanBan?.floor().toString() ?? '0';
     }
 
     ///
@@ -260,9 +264,9 @@ class THANHPHANVANBANSOHOCTHUOCCAP extends TextComponent
     // TODO: implement update
     super.update(dt);
 
-    if (text != (getVanBan?.toString() ?? '')) {
-      text = getVanBan?.toString() ?? '';
-    }
+    // if (text != (getVanBan?.toString() ?? '')) {
+    //   text = getVanBan?.toString() ?? '';
+    // }
   }
 
   /// -----

@@ -39,4 +39,36 @@ class KHUNGTICHHOPTAINGUYENNGOCTRAODOI
 
     return;
   }
+
+  int tongSoLuongTaiNguyenNgocTraoDoi = 0;
+
+  @override
+  void update(double dt) {
+    // TODO: implement update
+    super.update(dt);
+
+    if (tongSoLuongTaiNguyenNgocTraoDoi !=
+        getGlobalStateManagementSystem
+            ?.getTaiNguyenTraoDoiTongQuat
+            ?.getTongKhoTaiNguyen
+            ?.getKhoTaiNguyenDongNgoc
+            ?.getGoiTaiNguyenChuanHienHanh
+            ?.getGoiTaiNguyenChuanChinhThuc
+            ?.getDonViSoLuong
+            ?.getTongSoLuong) {
+      tongSoLuongTaiNguyenNgocTraoDoi =
+          getGlobalStateManagementSystem
+              ?.getTaiNguyenTraoDoiTongQuat
+              ?.getTongKhoTaiNguyen
+              ?.getKhoTaiNguyenDongNgoc
+              ?.getGoiTaiNguyenChuanHienHanh
+              ?.getGoiTaiNguyenChuanChinhThuc
+              ?.getDonViSoLuong
+              ?.getTongSoLuong ??
+              0;
+
+      getThanhPhanVanBanThuan?.onVoidCaiDatVanBan(value: tongSoLuongTaiNguyenNgocTraoDoi.toString(), caiDatUuTien: true);
+      getThanhPhanVanBanSoHoc?.onVoidCaiDatVanBan(value: tongSoLuongTaiNguyenNgocTraoDoi.toDouble(), caiDatUuTien: true);
+    }
+  }
 }

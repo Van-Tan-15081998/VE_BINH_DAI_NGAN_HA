@@ -115,30 +115,14 @@ class KHUNGMANHINHSS022310 extends THANHPHANMANHINHTHUOCCAPCOBAN {
     /// -----
     /// TODO: Ưu Tiên Kích Thước Nội Suy
     /// -----
-    double sizeDxManHinhVatLy =
-        getSizeDx ??
-        getGlobalStateManagementSystem?.getThietLapTongQuat?.getChieuRongManHinhVatLy ??
-        100.0;
-    double sizeDyManHinhVatLy =
-        getSizeDy ??
-        getGlobalStateManagementSystem?.getThietLapTongQuat?.getChieuCaoManHinhVatLy ??
-        100.0;
+    double sizeDxManHinhVatLy = getSizeDx ?? getGlobalStateManagementSystem?.getThietLapTongQuat?.getChieuRongManHinhVatLy ?? 100.0;
+    double sizeDyManHinhVatLy = getSizeDy ?? getGlobalStateManagementSystem?.getThietLapTongQuat?.getChieuCaoManHinhVatLy ?? 100.0;
 
-    getTrangThaiKichHoatThanhPhan?.getDiemToaDoThanhPhanHuyKichHoat
-        ?.onVoidCaiDatPositionDx(value: -10000.0, caiDatUuTien: true);
-    getTrangThaiKichHoatThanhPhan?.getDiemToaDoThanhPhanHuyKichHoat
-        ?.onVoidCaiDatPositionDy(value: -10000.0, caiDatUuTien: true);
+    getTrangThaiKichHoatThanhPhan?.getDiemToaDoThanhPhanHuyKichHoat?.onVoidCaiDatPositionDx(value: -10000.0, caiDatUuTien: true);
+    getTrangThaiKichHoatThanhPhan?.getDiemToaDoThanhPhanHuyKichHoat?.onVoidCaiDatPositionDy(value: -10000.0, caiDatUuTien: true);
 
-    getTrangThaiKichHoatThanhPhan?.getDiemToaDoThanhPhanKichHoat
-        ?.onVoidCaiDatPositionDx(
-          value: sizeDxManHinhVatLy / 2,
-          caiDatUuTien: true,
-        );
-    getTrangThaiKichHoatThanhPhan?.getDiemToaDoThanhPhanKichHoat
-        ?.onVoidCaiDatPositionDy(
-          value: sizeDyManHinhVatLy / 2,
-          caiDatUuTien: true,
-        );
+    getTrangThaiKichHoatThanhPhan?.getDiemToaDoThanhPhanKichHoat?.onVoidCaiDatPositionDx(value: sizeDxManHinhVatLy / 2, caiDatUuTien: true);
+    getTrangThaiKichHoatThanhPhan?.getDiemToaDoThanhPhanKichHoat?.onVoidCaiDatPositionDy(value: sizeDyManHinhVatLy / 2, caiDatUuTien: true);
 
     ///
     return;

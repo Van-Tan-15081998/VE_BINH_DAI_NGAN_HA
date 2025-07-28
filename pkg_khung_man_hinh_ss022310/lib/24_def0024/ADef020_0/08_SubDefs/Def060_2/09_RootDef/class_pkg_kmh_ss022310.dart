@@ -20,6 +20,22 @@ import 'package:pkg_khung_man_hinh_ss022310/22_def0022/ADef060_0/08_SubDefs/Def0
 import 'package:pkg_khung_man_hinh_ss022310/22_def0022/ADef060_0/08_SubDefs/Def020_2/08_SubDefs/Def200_4/08_SubDefs/Def050_6/09_RootDef/class_pkg_kmh_ss022310.dart';
 import 'package:pkg_khung_man_hinh_ss022310/22_def0022/ADef060_0/08_SubDefs/Def020_2/08_SubDefs/Def200_4/08_SubDefs/Def060_6/09_RootDef/class_pkg_kmh_ss022310.dart';
 import 'package:pkg_khung_man_hinh_ss022310/22_def0022/ADef060_0/08_SubDefs/Def030_2/09_RootDef/class_pkg_kmh_ss022310.dart';
+import 'package:pkg_khung_man_hinh_ss022310/22_def0022/ADef060_0/08_SubDefs/Def040_2/08_SubDefs/Def030_4/08_SubDefs/Def020_6/09_RootDef/class_pkg_kmh_ss022310.dart';
+import 'package:pkg_khung_man_hinh_ss022310/22_def0022/ADef060_0/08_SubDefs/Def040_2/08_SubDefs/Def030_4/08_SubDefs/Def030_6/09_RootDef/class_pkg_kmh_ss022310.dart';
+import 'package:pkg_khung_man_hinh_ss022310/22_def0022/ADef060_0/08_SubDefs/Def040_2/08_SubDefs/Def030_4/08_SubDefs/Def040_6/09_RootDef/class_pkg_kmh_ss022310.dart';
+import 'package:pkg_khung_man_hinh_ss022310/22_def0022/ADef060_0/08_SubDefs/Def040_2/08_SubDefs/Def040_4/08_SubDefs/Def020_6/09_RootDef/class_pkg_kmh_ss022310.dart';
+import 'package:pkg_khung_man_hinh_ss022310/22_def0022/ADef060_0/08_SubDefs/Def040_2/08_SubDefs/Def050_4/08_SubDefs/Def020_6/09_RootDef/class_pkg_kmh_ss022310.dart';
+import 'package:pkg_khung_man_hinh_ss022310/22_def0022/ADef060_0/08_SubDefs/Def040_2/08_SubDefs/Def060_4/08_SubDefs/Def020_6/09_RootDef/class_pkg_kmh_ss022310.dart';
+import 'package:pkg_khung_man_hinh_ss022310/22_def0022/ADef060_0/08_SubDefs/Def040_2/08_SubDefs/Def070_4/08_SubDefs/Def020_6/09_RootDef/class_pkg_kmh_ss022310.dart';
+import 'package:pkg_khung_man_hinh_ss022310/22_def0022/ADef060_0/08_SubDefs/Def040_2/08_SubDefs/Def080_4/08_SubDefs/Def020_6/09_RootDef/class_pkg_kmh_ss022310.dart';
+import 'package:pkg_khung_man_hinh_ss022310/22_def0022/ADef060_0/08_SubDefs/Def040_2/08_SubDefs/Def090_4/08_SubDefs/Def020_6/09_RootDef/class_pkg_kmh_ss022310.dart';
+import 'package:pkg_khung_man_hinh_ss022310/22_def0022/ADef060_0/08_SubDefs/Def040_2/08_SubDefs/Def090_4/08_SubDefs/Def030_6/09_RootDef/class_pkg_kmh_ss022310.dart';
+import 'package:pkg_khung_man_hinh_ss022310/22_def0022/ADef060_0/08_SubDefs/Def040_2/08_SubDefs/Def090_4/08_SubDefs/Def040_6/09_RootDef/class_pkg_kmh_ss022310.dart';
+import 'package:pkg_khung_man_hinh_ss022310/22_def0022/ADef060_0/08_SubDefs/Def040_2/08_SubDefs/Def200_4/08_SubDefs/Def020_6/09_RootDef/class_pkg_kmh_ss022310.dart';
+import 'package:pkg_khung_man_hinh_ss022310/22_def0022/ADef060_0/08_SubDefs/Def040_2/08_SubDefs/Def200_4/08_SubDefs/Def030_6/09_RootDef/class_pkg_kmh_ss022310.dart';
+import 'package:pkg_khung_man_hinh_ss022310/22_def0022/ADef060_0/08_SubDefs/Def040_2/08_SubDefs/Def200_4/08_SubDefs/Def040_6/09_RootDef/class_pkg_kmh_ss022310.dart';
+import 'package:pkg_khung_man_hinh_ss022310/22_def0022/ADef060_0/08_SubDefs/Def040_2/08_SubDefs/Def200_4/08_SubDefs/Def050_6/09_RootDef/class_pkg_kmh_ss022310.dart';
+import 'package:pkg_khung_man_hinh_ss022310/22_def0022/ADef060_0/08_SubDefs/Def040_2/08_SubDefs/Def200_4/08_SubDefs/Def060_6/09_RootDef/class_pkg_kmh_ss022310.dart';
 import 'package:pkg_khung_man_hinh_ss022310/22_def0022/ADef060_0/08_SubDefs/Def040_2/09_RootDef/class_pkg_kmh_ss022310.dart';
 import 'package:pkg_khung_man_hinh_ss022310/22_def0022/ADef060_0/08_SubDefs/Def050_2/08_SubDefs/Def030_4/08_SubDefs/Def020_6/09_RootDef/class_pkg_kmh_ss022310.dart';
 import 'package:pkg_khung_man_hinh_ss022310/22_def0022/ADef060_0/08_SubDefs/Def050_2/08_SubDefs/Def030_4/08_SubDefs/Def030_6/09_RootDef/class_pkg_kmh_ss022310.dart';
@@ -57,8 +73,7 @@ import 'package:pkg_khung_man_hinh_ss022310/22_def0022/ADef060_0/08_SubDefs/Def0
 /// -----
 /// TODO: Quản Lý Thành Phần Tích Hợp
 /// -----
-class QUANLYTHANHPHANTICHHOPTHUOCCAP
-    extends QUANLYTHANHPHANTICHHOPTHUOCCAPCOBAN {
+class QUANLYTHANHPHANTICHHOPTHUOCCAP extends QUANLYTHANHPHANTICHHOPTHUOCCAPCOBAN {
   /// -----
   /// TODO:
   /// -----
@@ -74,12 +89,8 @@ class QUANLYTHANHPHANTICHHOPTHUOCCAP
   /// TODO:
   /// -----
   NUTBAMCHUYENCHONCHIDINHTRAI? _nutBamChuyenChonChiDinhTrai;
-  NUTBAMCHUYENCHONCHIDINHTRAI? get getNutBamChuyenChonChiDinhTrai =>
-      _nutBamChuyenChonChiDinhTrai;
-  Future<void> onCaiDatNutBamChuyenChonChiDinhTrai({
-    required NUTBAMCHUYENCHONCHIDINHTRAI? value,
-    bool? caiDatUuTien,
-  }) async {
+  NUTBAMCHUYENCHONCHIDINHTRAI? get getNutBamChuyenChonChiDinhTrai => _nutBamChuyenChonChiDinhTrai;
+  Future<void> onCaiDatNutBamChuyenChonChiDinhTrai({required NUTBAMCHUYENCHONCHIDINHTRAI? value, bool? caiDatUuTien}) async {
     if (caiDatUuTien == true) {
       _nutBamChuyenChonChiDinhTrai = value;
     } else {
@@ -94,12 +105,8 @@ class QUANLYTHANHPHANTICHHOPTHUOCCAP
   /// TODO:
   /// -----
   NUTBAMCHUYENCHONCHIDINHPHAI? _nutBamChuyenChonChiDinhPhai;
-  NUTBAMCHUYENCHONCHIDINHPHAI? get getNutBamChuyenChonChiDinhPhai =>
-      _nutBamChuyenChonChiDinhPhai;
-  Future<void> onCaiDatNutBamChuyenChonChiDinhPhai({
-    required NUTBAMCHUYENCHONCHIDINHPHAI? value,
-    bool? caiDatUuTien,
-  }) async {
+  NUTBAMCHUYENCHONCHIDINHPHAI? get getNutBamChuyenChonChiDinhPhai => _nutBamChuyenChonChiDinhPhai;
+  Future<void> onCaiDatNutBamChuyenChonChiDinhPhai({required NUTBAMCHUYENCHONCHIDINHPHAI? value, bool? caiDatUuTien}) async {
     if (caiDatUuTien == true) {
       _nutBamChuyenChonChiDinhPhai = value;
     } else {
@@ -114,12 +121,8 @@ class QUANLYTHANHPHANTICHHOPTHUOCCAP
   /// TODO:
   /// -----
   CARDCHIENDAUCODANGCAPSAO00E03SS01? _cardChienDauCo00E03SS01;
-  CARDCHIENDAUCODANGCAPSAO00E03SS01? get getCardChienDauCo00E03SS01 =>
-      _cardChienDauCo00E03SS01;
-  Future<void> onCaiDatCardChienDauCo00E03SS01({
-    required CARDCHIENDAUCODANGCAPSAO00E03SS01? value,
-    bool? caiDatUuTien,
-  }) async {
+  CARDCHIENDAUCODANGCAPSAO00E03SS01? get getCardChienDauCo00E03SS01 => _cardChienDauCo00E03SS01;
+  Future<void> onCaiDatCardChienDauCo00E03SS01({required CARDCHIENDAUCODANGCAPSAO00E03SS01? value, bool? caiDatUuTien}) async {
     if (caiDatUuTien == true) {
       _cardChienDauCo00E03SS01 = value;
     } else {
@@ -134,12 +137,8 @@ class QUANLYTHANHPHANTICHHOPTHUOCCAP
   /// TODO:
   /// -----
   CARDCHIENDAUCODANGCAPSAO00E03SS02? _cardChienDauCo00E03SS02;
-  CARDCHIENDAUCODANGCAPSAO00E03SS02? get getCardChienDauCo00E03SS02 =>
-      _cardChienDauCo00E03SS02;
-  Future<void> onCaiDatCardChienDauCo00E03SS02({
-    required CARDCHIENDAUCODANGCAPSAO00E03SS02? value,
-    bool? caiDatUuTien,
-  }) async {
+  CARDCHIENDAUCODANGCAPSAO00E03SS02? get getCardChienDauCo00E03SS02 => _cardChienDauCo00E03SS02;
+  Future<void> onCaiDatCardChienDauCo00E03SS02({required CARDCHIENDAUCODANGCAPSAO00E03SS02? value, bool? caiDatUuTien}) async {
     if (caiDatUuTien == true) {
       _cardChienDauCo00E03SS02 = value;
     } else {
@@ -154,12 +153,8 @@ class QUANLYTHANHPHANTICHHOPTHUOCCAP
   /// TODO:
   /// -----
   CARDCHIENDAUCODANGCAPSAO00E03SS03? _cardChienDauCo00E03SS03;
-  CARDCHIENDAUCODANGCAPSAO00E03SS03? get getCardChienDauCo00E03SS03 =>
-      _cardChienDauCo00E03SS03;
-  Future<void> onCaiDatCardChienDauCo00E03SS03({
-    required CARDCHIENDAUCODANGCAPSAO00E03SS03? value,
-    bool? caiDatUuTien,
-  }) async {
+  CARDCHIENDAUCODANGCAPSAO00E03SS03? get getCardChienDauCo00E03SS03 => _cardChienDauCo00E03SS03;
+  Future<void> onCaiDatCardChienDauCo00E03SS03({required CARDCHIENDAUCODANGCAPSAO00E03SS03? value, bool? caiDatUuTien}) async {
     if (caiDatUuTien == true) {
       _cardChienDauCo00E03SS03 = value;
     } else {
@@ -174,12 +169,8 @@ class QUANLYTHANHPHANTICHHOPTHUOCCAP
   /// TODO:
   /// -----
   CARDCHIENDAUCODANGCAPSAO00D04SS01? _cardChienDauCo00D04SS01;
-  CARDCHIENDAUCODANGCAPSAO00D04SS01? get getCardChienDauCo00D04SS01 =>
-      _cardChienDauCo00D04SS01;
-  Future<void> onCaiDatCardChienDauCo00D04SS01({
-    required CARDCHIENDAUCODANGCAPSAO00D04SS01? value,
-    bool? caiDatUuTien,
-  }) async {
+  CARDCHIENDAUCODANGCAPSAO00D04SS01? get getCardChienDauCo00D04SS01 => _cardChienDauCo00D04SS01;
+  Future<void> onCaiDatCardChienDauCo00D04SS01({required CARDCHIENDAUCODANGCAPSAO00D04SS01? value, bool? caiDatUuTien}) async {
     if (caiDatUuTien == true) {
       _cardChienDauCo00D04SS01 = value;
     } else {
@@ -194,12 +185,8 @@ class QUANLYTHANHPHANTICHHOPTHUOCCAP
   /// TODO:
   /// -----
   CARDCHIENDAUCODANGCAPSAO00C05SS01? _cardChienDauCo00C05SS01;
-  CARDCHIENDAUCODANGCAPSAO00C05SS01? get getCardChienDauCo00C05SS01 =>
-      _cardChienDauCo00C05SS01;
-  Future<void> onCaiDatCardChienDauCo00C05SS01({
-    required CARDCHIENDAUCODANGCAPSAO00C05SS01? value,
-    bool? caiDatUuTien,
-  }) async {
+  CARDCHIENDAUCODANGCAPSAO00C05SS01? get getCardChienDauCo00C05SS01 => _cardChienDauCo00C05SS01;
+  Future<void> onCaiDatCardChienDauCo00C05SS01({required CARDCHIENDAUCODANGCAPSAO00C05SS01? value, bool? caiDatUuTien}) async {
     if (caiDatUuTien == true) {
       _cardChienDauCo00C05SS01 = value;
     } else {
@@ -214,12 +201,8 @@ class QUANLYTHANHPHANTICHHOPTHUOCCAP
   /// TODO:
   /// -----
   CARDCHIENDAUCODANGCAPSAO00B06SS01? _cardChienDauCo00B06SS01;
-  CARDCHIENDAUCODANGCAPSAO00B06SS01? get getCardChienDauCo00B06SS01 =>
-      _cardChienDauCo00B06SS01;
-  Future<void> onCaiDatCardChienDauCo00B06SS01({
-    required CARDCHIENDAUCODANGCAPSAO00B06SS01? value,
-    bool? caiDatUuTien,
-  }) async {
+  CARDCHIENDAUCODANGCAPSAO00B06SS01? get getCardChienDauCo00B06SS01 => _cardChienDauCo00B06SS01;
+  Future<void> onCaiDatCardChienDauCo00B06SS01({required CARDCHIENDAUCODANGCAPSAO00B06SS01? value, bool? caiDatUuTien}) async {
     if (caiDatUuTien == true) {
       _cardChienDauCo00B06SS01 = value;
     } else {
@@ -234,12 +217,8 @@ class QUANLYTHANHPHANTICHHOPTHUOCCAP
   /// TODO:
   /// -----
   CARDCHIENDAUCODANGCAPSAO00A07SS01? _cardChienDauCo00A07SS01;
-  CARDCHIENDAUCODANGCAPSAO00A07SS01? get getCardChienDauCo00A07SS01 =>
-      _cardChienDauCo00A07SS01;
-  Future<void> onCaiDatCardChienDauCo00A07SS01({
-    required CARDCHIENDAUCODANGCAPSAO00A07SS01? value,
-    bool? caiDatUuTien,
-  }) async {
+  CARDCHIENDAUCODANGCAPSAO00A07SS01? get getCardChienDauCo00A07SS01 => _cardChienDauCo00A07SS01;
+  Future<void> onCaiDatCardChienDauCo00A07SS01({required CARDCHIENDAUCODANGCAPSAO00A07SS01? value, bool? caiDatUuTien}) async {
     if (caiDatUuTien == true) {
       _cardChienDauCo00A07SS01 = value;
     } else {
@@ -254,12 +233,8 @@ class QUANLYTHANHPHANTICHHOPTHUOCCAP
   /// TODO:
   /// -----
   CARDCHIENDAUCODANGCAPSAO00S08SS01? _cardChienDauCo00S08SS01;
-  CARDCHIENDAUCODANGCAPSAO00S08SS01? get getCardChienDauCo00S08SS01 =>
-      _cardChienDauCo00S08SS01;
-  Future<void> onCaiDatCardChienDauCo00S08SS01({
-    required CARDCHIENDAUCODANGCAPSAO00S08SS01? value,
-    bool? caiDatUuTien,
-  }) async {
+  CARDCHIENDAUCODANGCAPSAO00S08SS01? get getCardChienDauCo00S08SS01 => _cardChienDauCo00S08SS01;
+  Future<void> onCaiDatCardChienDauCo00S08SS01({required CARDCHIENDAUCODANGCAPSAO00S08SS01? value, bool? caiDatUuTien}) async {
     if (caiDatUuTien == true) {
       _cardChienDauCo00S08SS01 = value;
     } else {
@@ -274,12 +249,8 @@ class QUANLYTHANHPHANTICHHOPTHUOCCAP
   /// TODO:
   /// -----
   CARDCHIENDAUCODANGCAPSAO0SS09SS01? _cardChienDauCo0SS09SS01;
-  CARDCHIENDAUCODANGCAPSAO0SS09SS01? get getCardChienDauCo0SS09SS01 =>
-      _cardChienDauCo0SS09SS01;
-  Future<void> onCaiDatCardChienDauCo0SS09SS01({
-    required CARDCHIENDAUCODANGCAPSAO0SS09SS01? value,
-    bool? caiDatUuTien,
-  }) async {
+  CARDCHIENDAUCODANGCAPSAO0SS09SS01? get getCardChienDauCo0SS09SS01 => _cardChienDauCo0SS09SS01;
+  Future<void> onCaiDatCardChienDauCo0SS09SS01({required CARDCHIENDAUCODANGCAPSAO0SS09SS01? value, bool? caiDatUuTien}) async {
     if (caiDatUuTien == true) {
       _cardChienDauCo0SS09SS01 = value;
     } else {
@@ -294,12 +265,8 @@ class QUANLYTHANHPHANTICHHOPTHUOCCAP
   /// TODO:
   /// -----
   CARDCHIENDAUCODANGCAPSAO0SS09SS02? _cardChienDauCo0SS09SS02;
-  CARDCHIENDAUCODANGCAPSAO0SS09SS02? get getCardChienDauCo0SS09SS02 =>
-      _cardChienDauCo0SS09SS02;
-  Future<void> onCaiDatCardChienDauCo0SS09SS02({
-    required CARDCHIENDAUCODANGCAPSAO0SS09SS02? value,
-    bool? caiDatUuTien,
-  }) async {
+  CARDCHIENDAUCODANGCAPSAO0SS09SS02? get getCardChienDauCo0SS09SS02 => _cardChienDauCo0SS09SS02;
+  Future<void> onCaiDatCardChienDauCo0SS09SS02({required CARDCHIENDAUCODANGCAPSAO0SS09SS02? value, bool? caiDatUuTien}) async {
     if (caiDatUuTien == true) {
       _cardChienDauCo0SS09SS02 = value;
     } else {
@@ -314,12 +281,8 @@ class QUANLYTHANHPHANTICHHOPTHUOCCAP
   /// TODO:
   /// -----
   CARDCHIENDAUCODANGCAPSAO0SS09SS03? _cardChienDauCo0SS09SS03;
-  CARDCHIENDAUCODANGCAPSAO0SS09SS03? get getCardChienDauCo0SS09SS03 =>
-      _cardChienDauCo0SS09SS03;
-  Future<void> onCaiDatCardChienDauCo0SS09SS03({
-    required CARDCHIENDAUCODANGCAPSAO0SS09SS03? value,
-    bool? caiDatUuTien,
-  }) async {
+  CARDCHIENDAUCODANGCAPSAO0SS09SS03? get getCardChienDauCo0SS09SS03 => _cardChienDauCo0SS09SS03;
+  Future<void> onCaiDatCardChienDauCo0SS09SS03({required CARDCHIENDAUCODANGCAPSAO0SS09SS03? value, bool? caiDatUuTien}) async {
     if (caiDatUuTien == true) {
       _cardChienDauCo0SS09SS03 = value;
     } else {
@@ -334,12 +297,8 @@ class QUANLYTHANHPHANTICHHOPTHUOCCAP
   /// TODO:
   /// -----
   CARDCHIENDAUCODANGCAPSAOSSS10SS01? _cardChienDauCoSSS10SS01;
-  CARDCHIENDAUCODANGCAPSAOSSS10SS01? get getCardChienDauCoSSS10SS01 =>
-      _cardChienDauCoSSS10SS01;
-  Future<void> onCaiDatCardChienDauCoSSS10SS01({
-    required CARDCHIENDAUCODANGCAPSAOSSS10SS01? value,
-    bool? caiDatUuTien,
-  }) async {
+  CARDCHIENDAUCODANGCAPSAOSSS10SS01? get getCardChienDauCoSSS10SS01 => _cardChienDauCoSSS10SS01;
+  Future<void> onCaiDatCardChienDauCoSSS10SS01({required CARDCHIENDAUCODANGCAPSAOSSS10SS01? value, bool? caiDatUuTien}) async {
     if (caiDatUuTien == true) {
       _cardChienDauCoSSS10SS01 = value;
     } else {
@@ -354,12 +313,8 @@ class QUANLYTHANHPHANTICHHOPTHUOCCAP
   /// TODO:
   /// -----
   CARDCHIENDAUCODANGCAPSAOSSS10SS02? _cardChienDauCoSSS10SS02;
-  CARDCHIENDAUCODANGCAPSAOSSS10SS02? get getCardChienDauCoSSS10SS02 =>
-      _cardChienDauCoSSS10SS02;
-  Future<void> onCaiDatCardChienDauCoSSS10SS02({
-    required CARDCHIENDAUCODANGCAPSAOSSS10SS02? value,
-    bool? caiDatUuTien,
-  }) async {
+  CARDCHIENDAUCODANGCAPSAOSSS10SS02? get getCardChienDauCoSSS10SS02 => _cardChienDauCoSSS10SS02;
+  Future<void> onCaiDatCardChienDauCoSSS10SS02({required CARDCHIENDAUCODANGCAPSAOSSS10SS02? value, bool? caiDatUuTien}) async {
     if (caiDatUuTien == true) {
       _cardChienDauCoSSS10SS02 = value;
     } else {
@@ -374,12 +329,8 @@ class QUANLYTHANHPHANTICHHOPTHUOCCAP
   /// TODO:
   /// -----
   CARDCHIENDAUCODANGCAPSAOSSS10SS03? _cardChienDauCoSSS10SS03;
-  CARDCHIENDAUCODANGCAPSAOSSS10SS03? get getCardChienDauCoSSS10SS03 =>
-      _cardChienDauCoSSS10SS03;
-  Future<void> onCaiDatCardChienDauCoSSS10SS03({
-    required CARDCHIENDAUCODANGCAPSAOSSS10SS03? value,
-    bool? caiDatUuTien,
-  }) async {
+  CARDCHIENDAUCODANGCAPSAOSSS10SS03? get getCardChienDauCoSSS10SS03 => _cardChienDauCoSSS10SS03;
+  Future<void> onCaiDatCardChienDauCoSSS10SS03({required CARDCHIENDAUCODANGCAPSAOSSS10SS03? value, bool? caiDatUuTien}) async {
     if (caiDatUuTien == true) {
       _cardChienDauCoSSS10SS03 = value;
     } else {
@@ -394,12 +345,8 @@ class QUANLYTHANHPHANTICHHOPTHUOCCAP
   /// TODO:
   /// -----
   CARDCHIENDAUCODANGCAPSAOSSS10SS04? _cardChienDauCoSSS10SS04;
-  CARDCHIENDAUCODANGCAPSAOSSS10SS04? get getCardChienDauCoSSS10SS04 =>
-      _cardChienDauCoSSS10SS04;
-  Future<void> onCaiDatCardChienDauCoSSS10SS04({
-    required CARDCHIENDAUCODANGCAPSAOSSS10SS04? value,
-    bool? caiDatUuTien,
-  }) async {
+  CARDCHIENDAUCODANGCAPSAOSSS10SS04? get getCardChienDauCoSSS10SS04 => _cardChienDauCoSSS10SS04;
+  Future<void> onCaiDatCardChienDauCoSSS10SS04({required CARDCHIENDAUCODANGCAPSAOSSS10SS04? value, bool? caiDatUuTien}) async {
     if (caiDatUuTien == true) {
       _cardChienDauCoSSS10SS04 = value;
     } else {
@@ -414,12 +361,8 @@ class QUANLYTHANHPHANTICHHOPTHUOCCAP
   /// TODO:
   /// -----
   CARDCHIENDAUCODANGCAPSAOSSS10SS05? _cardChienDauCoSSS10SS05;
-  CARDCHIENDAUCODANGCAPSAOSSS10SS05? get getCardChienDauCoSSS10SS05 =>
-      _cardChienDauCoSSS10SS05;
-  Future<void> onCaiDatCardChienDauCoSSS10SS05({
-    required CARDCHIENDAUCODANGCAPSAOSSS10SS05? value,
-    bool? caiDatUuTien,
-  }) async {
+  CARDCHIENDAUCODANGCAPSAOSSS10SS05? get getCardChienDauCoSSS10SS05 => _cardChienDauCoSSS10SS05;
+  Future<void> onCaiDatCardChienDauCoSSS10SS05({required CARDCHIENDAUCODANGCAPSAOSSS10SS05? value, bool? caiDatUuTien}) async {
     if (caiDatUuTien == true) {
       _cardChienDauCoSSS10SS05 = value;
     } else {
@@ -434,12 +377,8 @@ class QUANLYTHANHPHANTICHHOPTHUOCCAP
   /// TODO:
   /// -----
   CARDCHIENDAUCOCHONCHIDINH? _cardChienDauCoChonChiDinh;
-  CARDCHIENDAUCOCHONCHIDINH? get getCardChienDauCoChonChiDinh =>
-      _cardChienDauCoChonChiDinh;
-  Future<void> onCaiDatCardChienDauCoChonChiDinh({
-    required CARDCHIENDAUCOCHONCHIDINH? value,
-    bool? caiDatUuTien,
-  }) async {
+  CARDCHIENDAUCOCHONCHIDINH? get getCardChienDauCoChonChiDinh => _cardChienDauCoChonChiDinh;
+  Future<void> onCaiDatCardChienDauCoChonChiDinh({required CARDCHIENDAUCOCHONCHIDINH? value, bool? caiDatUuTien}) async {
     if (caiDatUuTien == true) {
       _cardChienDauCoChonChiDinh = value;
     } else {
@@ -454,13 +393,8 @@ class QUANLYTHANHPHANTICHHOPTHUOCCAP
   /// TODO:
   /// -----
   KHUNGNUTBAMMUACHIENDAUCOCHONCHIDINH? _khungNutBamMuaChienDauCoChonChiDinh;
-  KHUNGNUTBAMMUACHIENDAUCOCHONCHIDINH?
-  get getKhungNutBamMuaChienDauCoChonChiDinh =>
-      _khungNutBamMuaChienDauCoChonChiDinh;
-  Future<void> onCaiDatKhungNutBamMuaChienDauCoChonChiDinh({
-    required KHUNGNUTBAMMUACHIENDAUCOCHONCHIDINH? value,
-    bool? caiDatUuTien,
-  }) async {
+  KHUNGNUTBAMMUACHIENDAUCOCHONCHIDINH? get getKhungNutBamMuaChienDauCoChonChiDinh => _khungNutBamMuaChienDauCoChonChiDinh;
+  Future<void> onCaiDatKhungNutBamMuaChienDauCoChonChiDinh({required KHUNGNUTBAMMUACHIENDAUCOCHONCHIDINH? value, bool? caiDatUuTien}) async {
     if (caiDatUuTien == true) {
       _khungNutBamMuaChienDauCoChonChiDinh = value;
     } else {
@@ -474,14 +408,9 @@ class QUANLYTHANHPHANTICHHOPTHUOCCAP
   /// -----
   /// TODO:
   /// -----
-  KHUNGTAINGUYENTRAODOIMUACHIENDAUCODANGCAPSAO00E03SS01?
-  _costChienDauCo00E03SS01;
-  KHUNGTAINGUYENTRAODOIMUACHIENDAUCODANGCAPSAO00E03SS01?
-  get getCostChienDauCo00E03SS01 => _costChienDauCo00E03SS01;
-  Future<void> onCaiDatCostChienDauCo00E03SS01({
-    required KHUNGTAINGUYENTRAODOIMUACHIENDAUCODANGCAPSAO00E03SS01? value,
-    bool? caiDatUuTien,
-  }) async {
+  KHUNGTAINGUYENTRAODOIMUACHIENDAUCODANGCAPSAO00E03SS01? _costChienDauCo00E03SS01;
+  KHUNGTAINGUYENTRAODOIMUACHIENDAUCODANGCAPSAO00E03SS01? get getCostChienDauCo00E03SS01 => _costChienDauCo00E03SS01;
+  Future<void> onCaiDatCostChienDauCo00E03SS01({required KHUNGTAINGUYENTRAODOIMUACHIENDAUCODANGCAPSAO00E03SS01? value, bool? caiDatUuTien}) async {
     if (caiDatUuTien == true) {
       _costChienDauCo00E03SS01 = value;
     } else {
@@ -495,14 +424,9 @@ class QUANLYTHANHPHANTICHHOPTHUOCCAP
   /// -----
   /// TODO:
   /// -----
-  KHUNGTAINGUYENTRAODOIMUACHIENDAUCODANGCAPSAO00E03SS02?
-  _costChienDauCo00E03SS02;
-  KHUNGTAINGUYENTRAODOIMUACHIENDAUCODANGCAPSAO00E03SS02?
-  get getCostChienDauCo00E03SS02 => _costChienDauCo00E03SS02;
-  Future<void> onCaiDatCostChienDauCo00E03SS02({
-    required KHUNGTAINGUYENTRAODOIMUACHIENDAUCODANGCAPSAO00E03SS02? value,
-    bool? caiDatUuTien,
-  }) async {
+  KHUNGTAINGUYENTRAODOIMUACHIENDAUCODANGCAPSAO00E03SS02? _costChienDauCo00E03SS02;
+  KHUNGTAINGUYENTRAODOIMUACHIENDAUCODANGCAPSAO00E03SS02? get getCostChienDauCo00E03SS02 => _costChienDauCo00E03SS02;
+  Future<void> onCaiDatCostChienDauCo00E03SS02({required KHUNGTAINGUYENTRAODOIMUACHIENDAUCODANGCAPSAO00E03SS02? value, bool? caiDatUuTien}) async {
     if (caiDatUuTien == true) {
       _costChienDauCo00E03SS02 = value;
     } else {
@@ -516,14 +440,9 @@ class QUANLYTHANHPHANTICHHOPTHUOCCAP
   /// -----
   /// TODO:
   /// -----
-  KHUNGTAINGUYENTRAODOIMUACHIENDAUCODANGCAPSAO00E03SS03?
-  _costChienDauCo00E03SS03;
-  KHUNGTAINGUYENTRAODOIMUACHIENDAUCODANGCAPSAO00E03SS03?
-  get getCostChienDauCo00E03SS03 => _costChienDauCo00E03SS03;
-  Future<void> onCaiDatCostChienDauCo00E03SS03({
-    required KHUNGTAINGUYENTRAODOIMUACHIENDAUCODANGCAPSAO00E03SS03? value,
-    bool? caiDatUuTien,
-  }) async {
+  KHUNGTAINGUYENTRAODOIMUACHIENDAUCODANGCAPSAO00E03SS03? _costChienDauCo00E03SS03;
+  KHUNGTAINGUYENTRAODOIMUACHIENDAUCODANGCAPSAO00E03SS03? get getCostChienDauCo00E03SS03 => _costChienDauCo00E03SS03;
+  Future<void> onCaiDatCostChienDauCo00E03SS03({required KHUNGTAINGUYENTRAODOIMUACHIENDAUCODANGCAPSAO00E03SS03? value, bool? caiDatUuTien}) async {
     if (caiDatUuTien == true) {
       _costChienDauCo00E03SS03 = value;
     } else {
@@ -537,14 +456,9 @@ class QUANLYTHANHPHANTICHHOPTHUOCCAP
   /// -----
   /// TODO:
   /// -----
-  KHUNGTAINGUYENTRAODOIMUACHIENDAUCODANGCAPSAO00D04SS01?
-  _costChienDauCo00D04SS01;
-  KHUNGTAINGUYENTRAODOIMUACHIENDAUCODANGCAPSAO00D04SS01?
-  get getCostChienDauCo00D04SS01 => _costChienDauCo00D04SS01;
-  Future<void> onCaiDatCostChienDauCo00D04SS01({
-    required KHUNGTAINGUYENTRAODOIMUACHIENDAUCODANGCAPSAO00D04SS01? value,
-    bool? caiDatUuTien,
-  }) async {
+  KHUNGTAINGUYENTRAODOIMUACHIENDAUCODANGCAPSAO00D04SS01? _costChienDauCo00D04SS01;
+  KHUNGTAINGUYENTRAODOIMUACHIENDAUCODANGCAPSAO00D04SS01? get getCostChienDauCo00D04SS01 => _costChienDauCo00D04SS01;
+  Future<void> onCaiDatCostChienDauCo00D04SS01({required KHUNGTAINGUYENTRAODOIMUACHIENDAUCODANGCAPSAO00D04SS01? value, bool? caiDatUuTien}) async {
     if (caiDatUuTien == true) {
       _costChienDauCo00D04SS01 = value;
     } else {
@@ -558,14 +472,9 @@ class QUANLYTHANHPHANTICHHOPTHUOCCAP
   /// -----
   /// TODO:
   /// -----
-  KHUNGTAINGUYENTRAODOIMUACHIENDAUCODANGCAPSAO00C05SS01?
-  _costChienDauCo00C05SS01;
-  KHUNGTAINGUYENTRAODOIMUACHIENDAUCODANGCAPSAO00C05SS01?
-  get getCostChienDauCo00C05SS01 => _costChienDauCo00C05SS01;
-  Future<void> onCaiDatCostChienDauCo00C05SS01({
-    required KHUNGTAINGUYENTRAODOIMUACHIENDAUCODANGCAPSAO00C05SS01? value,
-    bool? caiDatUuTien,
-  }) async {
+  KHUNGTAINGUYENTRAODOIMUACHIENDAUCODANGCAPSAO00C05SS01? _costChienDauCo00C05SS01;
+  KHUNGTAINGUYENTRAODOIMUACHIENDAUCODANGCAPSAO00C05SS01? get getCostChienDauCo00C05SS01 => _costChienDauCo00C05SS01;
+  Future<void> onCaiDatCostChienDauCo00C05SS01({required KHUNGTAINGUYENTRAODOIMUACHIENDAUCODANGCAPSAO00C05SS01? value, bool? caiDatUuTien}) async {
     if (caiDatUuTien == true) {
       _costChienDauCo00C05SS01 = value;
     } else {
@@ -579,14 +488,9 @@ class QUANLYTHANHPHANTICHHOPTHUOCCAP
   /// -----
   /// TODO:
   /// -----
-  KHUNGTAINGUYENTRAODOIMUACHIENDAUCODANGCAPSAO00B06SS01?
-  _costChienDauCo00B06SS01;
-  KHUNGTAINGUYENTRAODOIMUACHIENDAUCODANGCAPSAO00B06SS01?
-  get getCostChienDauCo00B06SS01 => _costChienDauCo00B06SS01;
-  Future<void> onCaiDatCostChienDauCo00B06SS01({
-    required KHUNGTAINGUYENTRAODOIMUACHIENDAUCODANGCAPSAO00B06SS01? value,
-    bool? caiDatUuTien,
-  }) async {
+  KHUNGTAINGUYENTRAODOIMUACHIENDAUCODANGCAPSAO00B06SS01? _costChienDauCo00B06SS01;
+  KHUNGTAINGUYENTRAODOIMUACHIENDAUCODANGCAPSAO00B06SS01? get getCostChienDauCo00B06SS01 => _costChienDauCo00B06SS01;
+  Future<void> onCaiDatCostChienDauCo00B06SS01({required KHUNGTAINGUYENTRAODOIMUACHIENDAUCODANGCAPSAO00B06SS01? value, bool? caiDatUuTien}) async {
     if (caiDatUuTien == true) {
       _costChienDauCo00B06SS01 = value;
     } else {
@@ -600,14 +504,9 @@ class QUANLYTHANHPHANTICHHOPTHUOCCAP
   /// -----
   /// TODO:
   /// -----
-  KHUNGTAINGUYENTRAODOIMUACHIENDAUCODANGCAPSAO00A07SS01?
-  _costChienDauCo00A07SS01;
-  KHUNGTAINGUYENTRAODOIMUACHIENDAUCODANGCAPSAO00A07SS01?
-  get getCostChienDauCo00A07SS01 => _costChienDauCo00A07SS01;
-  Future<void> onCaiDatCostChienDauCo00A07SS01({
-    required KHUNGTAINGUYENTRAODOIMUACHIENDAUCODANGCAPSAO00A07SS01? value,
-    bool? caiDatUuTien,
-  }) async {
+  KHUNGTAINGUYENTRAODOIMUACHIENDAUCODANGCAPSAO00A07SS01? _costChienDauCo00A07SS01;
+  KHUNGTAINGUYENTRAODOIMUACHIENDAUCODANGCAPSAO00A07SS01? get getCostChienDauCo00A07SS01 => _costChienDauCo00A07SS01;
+  Future<void> onCaiDatCostChienDauCo00A07SS01({required KHUNGTAINGUYENTRAODOIMUACHIENDAUCODANGCAPSAO00A07SS01? value, bool? caiDatUuTien}) async {
     if (caiDatUuTien == true) {
       _costChienDauCo00A07SS01 = value;
     } else {
@@ -621,14 +520,9 @@ class QUANLYTHANHPHANTICHHOPTHUOCCAP
   /// -----
   /// TODO:
   /// -----
-  KHUNGTAINGUYENTRAODOIMUACHIENDAUCODANGCAPSAO00S08SS01?
-  _costChienDauCo00S08SS01;
-  KHUNGTAINGUYENTRAODOIMUACHIENDAUCODANGCAPSAO00S08SS01?
-  get getCostChienDauCo00S08SS01 => _costChienDauCo00S08SS01;
-  Future<void> onCaiDatCostChienDauCo00S08SS01({
-    required KHUNGTAINGUYENTRAODOIMUACHIENDAUCODANGCAPSAO00S08SS01? value,
-    bool? caiDatUuTien,
-  }) async {
+  KHUNGTAINGUYENTRAODOIMUACHIENDAUCODANGCAPSAO00S08SS01? _costChienDauCo00S08SS01;
+  KHUNGTAINGUYENTRAODOIMUACHIENDAUCODANGCAPSAO00S08SS01? get getCostChienDauCo00S08SS01 => _costChienDauCo00S08SS01;
+  Future<void> onCaiDatCostChienDauCo00S08SS01({required KHUNGTAINGUYENTRAODOIMUACHIENDAUCODANGCAPSAO00S08SS01? value, bool? caiDatUuTien}) async {
     if (caiDatUuTien == true) {
       _costChienDauCo00S08SS01 = value;
     } else {
@@ -642,14 +536,9 @@ class QUANLYTHANHPHANTICHHOPTHUOCCAP
   /// -----
   /// TODO:
   /// -----
-  KHUNGTAINGUYENTRAODOIMUACHIENDAUCODANGCAPSAO0SS09SS01?
-  _costChienDauCo0SS09SS01;
-  KHUNGTAINGUYENTRAODOIMUACHIENDAUCODANGCAPSAO0SS09SS01?
-  get getCostChienDauCo0SS09SS01 => _costChienDauCo0SS09SS01;
-  Future<void> onCaiDatCostChienDauCo0SS09SS01({
-    required KHUNGTAINGUYENTRAODOIMUACHIENDAUCODANGCAPSAO0SS09SS01? value,
-    bool? caiDatUuTien,
-  }) async {
+  KHUNGTAINGUYENTRAODOIMUACHIENDAUCODANGCAPSAO0SS09SS01? _costChienDauCo0SS09SS01;
+  KHUNGTAINGUYENTRAODOIMUACHIENDAUCODANGCAPSAO0SS09SS01? get getCostChienDauCo0SS09SS01 => _costChienDauCo0SS09SS01;
+  Future<void> onCaiDatCostChienDauCo0SS09SS01({required KHUNGTAINGUYENTRAODOIMUACHIENDAUCODANGCAPSAO0SS09SS01? value, bool? caiDatUuTien}) async {
     if (caiDatUuTien == true) {
       _costChienDauCo0SS09SS01 = value;
     } else {
@@ -663,14 +552,9 @@ class QUANLYTHANHPHANTICHHOPTHUOCCAP
   /// -----
   /// TODO:
   /// -----
-  KHUNGTAINGUYENTRAODOIMUACHIENDAUCODANGCAPSAO0SS09SS02?
-  _costChienDauCo0SS09SS02;
-  KHUNGTAINGUYENTRAODOIMUACHIENDAUCODANGCAPSAO0SS09SS02?
-  get getCostChienDauCo0SS09SS02 => _costChienDauCo0SS09SS02;
-  Future<void> onCaiDatCostChienDauCo0SS09SS02({
-    required KHUNGTAINGUYENTRAODOIMUACHIENDAUCODANGCAPSAO0SS09SS02? value,
-    bool? caiDatUuTien,
-  }) async {
+  KHUNGTAINGUYENTRAODOIMUACHIENDAUCODANGCAPSAO0SS09SS02? _costChienDauCo0SS09SS02;
+  KHUNGTAINGUYENTRAODOIMUACHIENDAUCODANGCAPSAO0SS09SS02? get getCostChienDauCo0SS09SS02 => _costChienDauCo0SS09SS02;
+  Future<void> onCaiDatCostChienDauCo0SS09SS02({required KHUNGTAINGUYENTRAODOIMUACHIENDAUCODANGCAPSAO0SS09SS02? value, bool? caiDatUuTien}) async {
     if (caiDatUuTien == true) {
       _costChienDauCo0SS09SS02 = value;
     } else {
@@ -684,14 +568,9 @@ class QUANLYTHANHPHANTICHHOPTHUOCCAP
   /// -----
   /// TODO:
   /// -----
-  KHUNGTAINGUYENTRAODOIMUACHIENDAUCODANGCAPSAO0SS09SS03?
-  _costChienDauCo0SS09SS03;
-  KHUNGTAINGUYENTRAODOIMUACHIENDAUCODANGCAPSAO0SS09SS03?
-  get getCostChienDauCo0SS09SS03 => _costChienDauCo0SS09SS03;
-  Future<void> onCaiDatCostChienDauCo0SS09SS03({
-    required KHUNGTAINGUYENTRAODOIMUACHIENDAUCODANGCAPSAO0SS09SS03? value,
-    bool? caiDatUuTien,
-  }) async {
+  KHUNGTAINGUYENTRAODOIMUACHIENDAUCODANGCAPSAO0SS09SS03? _costChienDauCo0SS09SS03;
+  KHUNGTAINGUYENTRAODOIMUACHIENDAUCODANGCAPSAO0SS09SS03? get getCostChienDauCo0SS09SS03 => _costChienDauCo0SS09SS03;
+  Future<void> onCaiDatCostChienDauCo0SS09SS03({required KHUNGTAINGUYENTRAODOIMUACHIENDAUCODANGCAPSAO0SS09SS03? value, bool? caiDatUuTien}) async {
     if (caiDatUuTien == true) {
       _costChienDauCo0SS09SS03 = value;
     } else {
@@ -705,14 +584,9 @@ class QUANLYTHANHPHANTICHHOPTHUOCCAP
   /// -----
   /// TODO:
   /// -----
-  KHUNGTAINGUYENTRAODOIMUACHIENDAUCODANGCAPSAOSSS10SS01?
-  _costChienDauCoSSS10SS01;
-  KHUNGTAINGUYENTRAODOIMUACHIENDAUCODANGCAPSAOSSS10SS01?
-  get getCostChienDauCoSSS10SS01 => _costChienDauCoSSS10SS01;
-  Future<void> onCaiDatCostChienDauCoSSS10SS01({
-    required KHUNGTAINGUYENTRAODOIMUACHIENDAUCODANGCAPSAOSSS10SS01? value,
-    bool? caiDatUuTien,
-  }) async {
+  KHUNGTAINGUYENTRAODOIMUACHIENDAUCODANGCAPSAOSSS10SS01? _costChienDauCoSSS10SS01;
+  KHUNGTAINGUYENTRAODOIMUACHIENDAUCODANGCAPSAOSSS10SS01? get getCostChienDauCoSSS10SS01 => _costChienDauCoSSS10SS01;
+  Future<void> onCaiDatCostChienDauCoSSS10SS01({required KHUNGTAINGUYENTRAODOIMUACHIENDAUCODANGCAPSAOSSS10SS01? value, bool? caiDatUuTien}) async {
     if (caiDatUuTien == true) {
       _costChienDauCoSSS10SS01 = value;
     } else {
@@ -726,14 +600,9 @@ class QUANLYTHANHPHANTICHHOPTHUOCCAP
   /// -----
   /// TODO:
   /// -----
-  KHUNGTAINGUYENTRAODOIMUACHIENDAUCODANGCAPSAOSSS10SS02?
-  _costChienDauCoSSS10SS02;
-  KHUNGTAINGUYENTRAODOIMUACHIENDAUCODANGCAPSAOSSS10SS02?
-  get getCostChienDauCoSSS10SS02 => _costChienDauCoSSS10SS02;
-  Future<void> onCaiDatCostChienDauCoSSS10SS02({
-    required KHUNGTAINGUYENTRAODOIMUACHIENDAUCODANGCAPSAOSSS10SS02? value,
-    bool? caiDatUuTien,
-  }) async {
+  KHUNGTAINGUYENTRAODOIMUACHIENDAUCODANGCAPSAOSSS10SS02? _costChienDauCoSSS10SS02;
+  KHUNGTAINGUYENTRAODOIMUACHIENDAUCODANGCAPSAOSSS10SS02? get getCostChienDauCoSSS10SS02 => _costChienDauCoSSS10SS02;
+  Future<void> onCaiDatCostChienDauCoSSS10SS02({required KHUNGTAINGUYENTRAODOIMUACHIENDAUCODANGCAPSAOSSS10SS02? value, bool? caiDatUuTien}) async {
     if (caiDatUuTien == true) {
       _costChienDauCoSSS10SS02 = value;
     } else {
@@ -747,14 +616,9 @@ class QUANLYTHANHPHANTICHHOPTHUOCCAP
   /// -----
   /// TODO:
   /// -----
-  KHUNGTAINGUYENTRAODOIMUACHIENDAUCODANGCAPSAOSSS10SS03?
-  _costChienDauCoSSS10SS03;
-  KHUNGTAINGUYENTRAODOIMUACHIENDAUCODANGCAPSAOSSS10SS03?
-  get getCostChienDauCoSSS10SS03 => _costChienDauCoSSS10SS03;
-  Future<void> onCaiDatCostChienDauCoSSS10SS03({
-    required KHUNGTAINGUYENTRAODOIMUACHIENDAUCODANGCAPSAOSSS10SS03? value,
-    bool? caiDatUuTien,
-  }) async {
+  KHUNGTAINGUYENTRAODOIMUACHIENDAUCODANGCAPSAOSSS10SS03? _costChienDauCoSSS10SS03;
+  KHUNGTAINGUYENTRAODOIMUACHIENDAUCODANGCAPSAOSSS10SS03? get getCostChienDauCoSSS10SS03 => _costChienDauCoSSS10SS03;
+  Future<void> onCaiDatCostChienDauCoSSS10SS03({required KHUNGTAINGUYENTRAODOIMUACHIENDAUCODANGCAPSAOSSS10SS03? value, bool? caiDatUuTien}) async {
     if (caiDatUuTien == true) {
       _costChienDauCoSSS10SS03 = value;
     } else {
@@ -768,14 +632,9 @@ class QUANLYTHANHPHANTICHHOPTHUOCCAP
   /// -----
   /// TODO:
   /// -----
-  KHUNGTAINGUYENTRAODOIMUACHIENDAUCODANGCAPSAOSSS10SS04?
-  _costChienDauCoSSS10SS04;
-  KHUNGTAINGUYENTRAODOIMUACHIENDAUCODANGCAPSAOSSS10SS04?
-  get getCostChienDauCoSSS10SS04 => _costChienDauCoSSS10SS04;
-  Future<void> onCaiDatCostChienDauCoSSS10SS04({
-    required KHUNGTAINGUYENTRAODOIMUACHIENDAUCODANGCAPSAOSSS10SS04? value,
-    bool? caiDatUuTien,
-  }) async {
+  KHUNGTAINGUYENTRAODOIMUACHIENDAUCODANGCAPSAOSSS10SS04? _costChienDauCoSSS10SS04;
+  KHUNGTAINGUYENTRAODOIMUACHIENDAUCODANGCAPSAOSSS10SS04? get getCostChienDauCoSSS10SS04 => _costChienDauCoSSS10SS04;
+  Future<void> onCaiDatCostChienDauCoSSS10SS04({required KHUNGTAINGUYENTRAODOIMUACHIENDAUCODANGCAPSAOSSS10SS04? value, bool? caiDatUuTien}) async {
     if (caiDatUuTien == true) {
       _costChienDauCoSSS10SS04 = value;
     } else {
@@ -789,14 +648,9 @@ class QUANLYTHANHPHANTICHHOPTHUOCCAP
   /// -----
   /// TODO:
   /// -----
-  KHUNGTAINGUYENTRAODOIMUACHIENDAUCODANGCAPSAOSSS10SS05?
-  _costChienDauCoSSS10SS05;
-  KHUNGTAINGUYENTRAODOIMUACHIENDAUCODANGCAPSAOSSS10SS05?
-  get getCostChienDauCoSSS10SS05 => _costChienDauCoSSS10SS05;
-  Future<void> onCaiDatCostChienDauCoSSS10SS05({
-    required KHUNGTAINGUYENTRAODOIMUACHIENDAUCODANGCAPSAOSSS10SS05? value,
-    bool? caiDatUuTien,
-  }) async {
+  KHUNGTAINGUYENTRAODOIMUACHIENDAUCODANGCAPSAOSSS10SS05? _costChienDauCoSSS10SS05;
+  KHUNGTAINGUYENTRAODOIMUACHIENDAUCODANGCAPSAOSSS10SS05? get getCostChienDauCoSSS10SS05 => _costChienDauCoSSS10SS05;
+  Future<void> onCaiDatCostChienDauCoSSS10SS05({required KHUNGTAINGUYENTRAODOIMUACHIENDAUCODANGCAPSAOSSS10SS05? value, bool? caiDatUuTien}) async {
     if (caiDatUuTien == true) {
       _costChienDauCoSSS10SS05 = value;
     } else {
@@ -815,12 +669,8 @@ class QUANLYTHANHPHANTICHHOPTHUOCCAP
   /// TODO:
   /// -----
   KHUNGDCSCHIENDAUCODANGCAPSAO00E03SS01? _khungDcsChienDauCo00E03SS01;
-  KHUNGDCSCHIENDAUCODANGCAPSAO00E03SS01? get getKhungDcsChienDauCo00E03SS01 =>
-      _khungDcsChienDauCo00E03SS01;
-  Future<void> onCaiDatKhungDcsChienDauCo00E03SS01({
-    required KHUNGDCSCHIENDAUCODANGCAPSAO00E03SS01? value,
-    bool? caiDatUuTien,
-  }) async {
+  KHUNGDCSCHIENDAUCODANGCAPSAO00E03SS01? get getKhungDcsChienDauCo00E03SS01 => _khungDcsChienDauCo00E03SS01;
+  Future<void> onCaiDatKhungDcsChienDauCo00E03SS01({required KHUNGDCSCHIENDAUCODANGCAPSAO00E03SS01? value, bool? caiDatUuTien}) async {
     if (caiDatUuTien == true) {
       _khungDcsChienDauCo00E03SS01 = value;
     } else {
@@ -835,12 +685,8 @@ class QUANLYTHANHPHANTICHHOPTHUOCCAP
   /// TODO:
   /// -----
   KHUNGDCSCHIENDAUCODANGCAPSAO00E03SS02? _khungDcsChienDauCo00E03SS02;
-  KHUNGDCSCHIENDAUCODANGCAPSAO00E03SS02? get getKhungDcsChienDauCo00E03SS02 =>
-      _khungDcsChienDauCo00E03SS02;
-  Future<void> onCaiDatKhungDcsChienDauCo00E03SS02({
-    required KHUNGDCSCHIENDAUCODANGCAPSAO00E03SS02? value,
-    bool? caiDatUuTien,
-  }) async {
+  KHUNGDCSCHIENDAUCODANGCAPSAO00E03SS02? get getKhungDcsChienDauCo00E03SS02 => _khungDcsChienDauCo00E03SS02;
+  Future<void> onCaiDatKhungDcsChienDauCo00E03SS02({required KHUNGDCSCHIENDAUCODANGCAPSAO00E03SS02? value, bool? caiDatUuTien}) async {
     if (caiDatUuTien == true) {
       _khungDcsChienDauCo00E03SS02 = value;
     } else {
@@ -855,12 +701,8 @@ class QUANLYTHANHPHANTICHHOPTHUOCCAP
   /// TODO:
   /// -----
   KHUNGDCSCHIENDAUCODANGCAPSAO00E03SS03? _khungDcsChienDauCo00E03SS03;
-  KHUNGDCSCHIENDAUCODANGCAPSAO00E03SS03? get getKhungDcsChienDauCo00E03SS03 =>
-      _khungDcsChienDauCo00E03SS03;
-  Future<void> onCaiDatKhungDcsChienDauCo00E03SS03({
-    required KHUNGDCSCHIENDAUCODANGCAPSAO00E03SS03? value,
-    bool? caiDatUuTien,
-  }) async {
+  KHUNGDCSCHIENDAUCODANGCAPSAO00E03SS03? get getKhungDcsChienDauCo00E03SS03 => _khungDcsChienDauCo00E03SS03;
+  Future<void> onCaiDatKhungDcsChienDauCo00E03SS03({required KHUNGDCSCHIENDAUCODANGCAPSAO00E03SS03? value, bool? caiDatUuTien}) async {
     if (caiDatUuTien == true) {
       _khungDcsChienDauCo00E03SS03 = value;
     } else {
@@ -875,12 +717,8 @@ class QUANLYTHANHPHANTICHHOPTHUOCCAP
   /// TODO:
   /// -----
   KHUNGDCSCHIENDAUCODANGCAPSAO00D04SS01? _khungDcsChienDauCo00D04SS01;
-  KHUNGDCSCHIENDAUCODANGCAPSAO00D04SS01? get getKhungDcsChienDauCo00D04SS01 =>
-      _khungDcsChienDauCo00D04SS01;
-  Future<void> onCaiDatKhungDcsChienDauCo00D04SS01({
-    required KHUNGDCSCHIENDAUCODANGCAPSAO00D04SS01? value,
-    bool? caiDatUuTien,
-  }) async {
+  KHUNGDCSCHIENDAUCODANGCAPSAO00D04SS01? get getKhungDcsChienDauCo00D04SS01 => _khungDcsChienDauCo00D04SS01;
+  Future<void> onCaiDatKhungDcsChienDauCo00D04SS01({required KHUNGDCSCHIENDAUCODANGCAPSAO00D04SS01? value, bool? caiDatUuTien}) async {
     if (caiDatUuTien == true) {
       _khungDcsChienDauCo00D04SS01 = value;
     } else {
@@ -895,12 +733,8 @@ class QUANLYTHANHPHANTICHHOPTHUOCCAP
   /// TODO:
   /// -----
   KHUNGDCSCHIENDAUCODANGCAPSAO00C05SS01? _khungDcsChienDauCo00C05SS01;
-  KHUNGDCSCHIENDAUCODANGCAPSAO00C05SS01? get getKhungDcsChienDauCo00C05SS01 =>
-      _khungDcsChienDauCo00C05SS01;
-  Future<void> onCaiDatKhungDcsChienDauCo00C05SS01({
-    required KHUNGDCSCHIENDAUCODANGCAPSAO00C05SS01? value,
-    bool? caiDatUuTien,
-  }) async {
+  KHUNGDCSCHIENDAUCODANGCAPSAO00C05SS01? get getKhungDcsChienDauCo00C05SS01 => _khungDcsChienDauCo00C05SS01;
+  Future<void> onCaiDatKhungDcsChienDauCo00C05SS01({required KHUNGDCSCHIENDAUCODANGCAPSAO00C05SS01? value, bool? caiDatUuTien}) async {
     if (caiDatUuTien == true) {
       _khungDcsChienDauCo00C05SS01 = value;
     } else {
@@ -915,12 +749,8 @@ class QUANLYTHANHPHANTICHHOPTHUOCCAP
   /// TODO:
   /// -----
   KHUNGDCSCHIENDAUCODANGCAPSAO00B06SS01? _khungDcsChienDauCo00B06SS01;
-  KHUNGDCSCHIENDAUCODANGCAPSAO00B06SS01? get getKhungDcsChienDauCo00B06SS01 =>
-      _khungDcsChienDauCo00B06SS01;
-  Future<void> onCaiDatKhungDcsChienDauCo00B06SS01({
-    required KHUNGDCSCHIENDAUCODANGCAPSAO00B06SS01? value,
-    bool? caiDatUuTien,
-  }) async {
+  KHUNGDCSCHIENDAUCODANGCAPSAO00B06SS01? get getKhungDcsChienDauCo00B06SS01 => _khungDcsChienDauCo00B06SS01;
+  Future<void> onCaiDatKhungDcsChienDauCo00B06SS01({required KHUNGDCSCHIENDAUCODANGCAPSAO00B06SS01? value, bool? caiDatUuTien}) async {
     if (caiDatUuTien == true) {
       _khungDcsChienDauCo00B06SS01 = value;
     } else {
@@ -935,12 +765,8 @@ class QUANLYTHANHPHANTICHHOPTHUOCCAP
   /// TODO:
   /// -----
   KHUNGDCSCHIENDAUCODANGCAPSAO00A07SS01? _khungDcsChienDauCo00A07SS01;
-  KHUNGDCSCHIENDAUCODANGCAPSAO00A07SS01? get getKhungDcsChienDauCo00A07SS01 =>
-      _khungDcsChienDauCo00A07SS01;
-  Future<void> onCaiDatKhungDcsChienDauCo00A07SS01({
-    required KHUNGDCSCHIENDAUCODANGCAPSAO00A07SS01? value,
-    bool? caiDatUuTien,
-  }) async {
+  KHUNGDCSCHIENDAUCODANGCAPSAO00A07SS01? get getKhungDcsChienDauCo00A07SS01 => _khungDcsChienDauCo00A07SS01;
+  Future<void> onCaiDatKhungDcsChienDauCo00A07SS01({required KHUNGDCSCHIENDAUCODANGCAPSAO00A07SS01? value, bool? caiDatUuTien}) async {
     if (caiDatUuTien == true) {
       _khungDcsChienDauCo00A07SS01 = value;
     } else {
@@ -955,12 +781,8 @@ class QUANLYTHANHPHANTICHHOPTHUOCCAP
   /// TODO:
   /// -----
   KHUNGDCSCHIENDAUCODANGCAPSAO00S08SS01? _khungDcsChienDauCo00S08SS01;
-  KHUNGDCSCHIENDAUCODANGCAPSAO00S08SS01? get getKhungDcsChienDauCo00S08SS01 =>
-      _khungDcsChienDauCo00S08SS01;
-  Future<void> onCaiDatKhungDcsChienDauCo00S08SS01({
-    required KHUNGDCSCHIENDAUCODANGCAPSAO00S08SS01? value,
-    bool? caiDatUuTien,
-  }) async {
+  KHUNGDCSCHIENDAUCODANGCAPSAO00S08SS01? get getKhungDcsChienDauCo00S08SS01 => _khungDcsChienDauCo00S08SS01;
+  Future<void> onCaiDatKhungDcsChienDauCo00S08SS01({required KHUNGDCSCHIENDAUCODANGCAPSAO00S08SS01? value, bool? caiDatUuTien}) async {
     if (caiDatUuTien == true) {
       _khungDcsChienDauCo00S08SS01 = value;
     } else {
@@ -975,12 +797,8 @@ class QUANLYTHANHPHANTICHHOPTHUOCCAP
   /// TODO:
   /// -----
   KHUNGDCSCHIENDAUCODANGCAPSAO0SS09SS01? _khungDcsChienDauCo0SS09SS01;
-  KHUNGDCSCHIENDAUCODANGCAPSAO0SS09SS01? get getKhungDcsChienDauCo0SS09SS01 =>
-      _khungDcsChienDauCo0SS09SS01;
-  Future<void> onCaiDatKhungDcsChienDauCo0SS09SS01({
-    required KHUNGDCSCHIENDAUCODANGCAPSAO0SS09SS01? value,
-    bool? caiDatUuTien,
-  }) async {
+  KHUNGDCSCHIENDAUCODANGCAPSAO0SS09SS01? get getKhungDcsChienDauCo0SS09SS01 => _khungDcsChienDauCo0SS09SS01;
+  Future<void> onCaiDatKhungDcsChienDauCo0SS09SS01({required KHUNGDCSCHIENDAUCODANGCAPSAO0SS09SS01? value, bool? caiDatUuTien}) async {
     if (caiDatUuTien == true) {
       _khungDcsChienDauCo0SS09SS01 = value;
     } else {
@@ -995,12 +813,8 @@ class QUANLYTHANHPHANTICHHOPTHUOCCAP
   /// TODO:
   /// -----
   KHUNGDCSCHIENDAUCODANGCAPSAO0SS09SS02? _khungDcsChienDauCo0SS09SS02;
-  KHUNGDCSCHIENDAUCODANGCAPSAO0SS09SS02? get getKhungDcsChienDauCo0SS09SS02 =>
-      _khungDcsChienDauCo0SS09SS02;
-  Future<void> onCaiDatKhungDcsChienDauCo0SS09SS02({
-    required KHUNGDCSCHIENDAUCODANGCAPSAO0SS09SS02? value,
-    bool? caiDatUuTien,
-  }) async {
+  KHUNGDCSCHIENDAUCODANGCAPSAO0SS09SS02? get getKhungDcsChienDauCo0SS09SS02 => _khungDcsChienDauCo0SS09SS02;
+  Future<void> onCaiDatKhungDcsChienDauCo0SS09SS02({required KHUNGDCSCHIENDAUCODANGCAPSAO0SS09SS02? value, bool? caiDatUuTien}) async {
     if (caiDatUuTien == true) {
       _khungDcsChienDauCo0SS09SS02 = value;
     } else {
@@ -1015,12 +829,8 @@ class QUANLYTHANHPHANTICHHOPTHUOCCAP
   /// TODO:
   /// -----
   KHUNGDCSCHIENDAUCODANGCAPSAO0SS09SS03? _khungDcsChienDauCo0SS09SS03;
-  KHUNGDCSCHIENDAUCODANGCAPSAO0SS09SS03? get getKhungDcsChienDauCo0SS09SS03 =>
-      _khungDcsChienDauCo0SS09SS03;
-  Future<void> onCaiDatKhungDcsChienDauCo0SS09SS03({
-    required KHUNGDCSCHIENDAUCODANGCAPSAO0SS09SS03? value,
-    bool? caiDatUuTien,
-  }) async {
+  KHUNGDCSCHIENDAUCODANGCAPSAO0SS09SS03? get getKhungDcsChienDauCo0SS09SS03 => _khungDcsChienDauCo0SS09SS03;
+  Future<void> onCaiDatKhungDcsChienDauCo0SS09SS03({required KHUNGDCSCHIENDAUCODANGCAPSAO0SS09SS03? value, bool? caiDatUuTien}) async {
     if (caiDatUuTien == true) {
       _khungDcsChienDauCo0SS09SS03 = value;
     } else {
@@ -1035,12 +845,8 @@ class QUANLYTHANHPHANTICHHOPTHUOCCAP
   /// TODO:
   /// -----
   KHUNGDCSCHIENDAUCODANGCAPSAOSSS10SS01? _khungDcsChienDauCoSSS10SS01;
-  KHUNGDCSCHIENDAUCODANGCAPSAOSSS10SS01? get getKhungDcsChienDauCoSSS10SS01 =>
-      _khungDcsChienDauCoSSS10SS01;
-  Future<void> onCaiDatKhungDcsChienDauCoSSS10SS01({
-    required KHUNGDCSCHIENDAUCODANGCAPSAOSSS10SS01? value,
-    bool? caiDatUuTien,
-  }) async {
+  KHUNGDCSCHIENDAUCODANGCAPSAOSSS10SS01? get getKhungDcsChienDauCoSSS10SS01 => _khungDcsChienDauCoSSS10SS01;
+  Future<void> onCaiDatKhungDcsChienDauCoSSS10SS01({required KHUNGDCSCHIENDAUCODANGCAPSAOSSS10SS01? value, bool? caiDatUuTien}) async {
     if (caiDatUuTien == true) {
       _khungDcsChienDauCoSSS10SS01 = value;
     } else {
@@ -1055,12 +861,8 @@ class QUANLYTHANHPHANTICHHOPTHUOCCAP
   /// TODO:
   /// -----
   KHUNGDCSCHIENDAUCODANGCAPSAOSSS10SS02? _khungDcsChienDauCoSSS10SS02;
-  KHUNGDCSCHIENDAUCODANGCAPSAOSSS10SS02? get getKhungDcsChienDauCoSSS10SS02 =>
-      _khungDcsChienDauCoSSS10SS02;
-  Future<void> onCaiDatKhungDcsChienDauCoSSS10SS02({
-    required KHUNGDCSCHIENDAUCODANGCAPSAOSSS10SS02? value,
-    bool? caiDatUuTien,
-  }) async {
+  KHUNGDCSCHIENDAUCODANGCAPSAOSSS10SS02? get getKhungDcsChienDauCoSSS10SS02 => _khungDcsChienDauCoSSS10SS02;
+  Future<void> onCaiDatKhungDcsChienDauCoSSS10SS02({required KHUNGDCSCHIENDAUCODANGCAPSAOSSS10SS02? value, bool? caiDatUuTien}) async {
     if (caiDatUuTien == true) {
       _khungDcsChienDauCoSSS10SS02 = value;
     } else {
@@ -1075,12 +877,8 @@ class QUANLYTHANHPHANTICHHOPTHUOCCAP
   /// TODO:
   /// -----
   KHUNGDCSCHIENDAUCODANGCAPSAOSSS10SS03? _khungDcsChienDauCoSSS10SS03;
-  KHUNGDCSCHIENDAUCODANGCAPSAOSSS10SS03? get getKhungDcsChienDauCoSSS10SS03 =>
-      _khungDcsChienDauCoSSS10SS03;
-  Future<void> onCaiDatKhungDcsChienDauCoSSS10SS03({
-    required KHUNGDCSCHIENDAUCODANGCAPSAOSSS10SS03? value,
-    bool? caiDatUuTien,
-  }) async {
+  KHUNGDCSCHIENDAUCODANGCAPSAOSSS10SS03? get getKhungDcsChienDauCoSSS10SS03 => _khungDcsChienDauCoSSS10SS03;
+  Future<void> onCaiDatKhungDcsChienDauCoSSS10SS03({required KHUNGDCSCHIENDAUCODANGCAPSAOSSS10SS03? value, bool? caiDatUuTien}) async {
     if (caiDatUuTien == true) {
       _khungDcsChienDauCoSSS10SS03 = value;
     } else {
@@ -1095,12 +893,8 @@ class QUANLYTHANHPHANTICHHOPTHUOCCAP
   /// TODO:
   /// -----
   KHUNGDCSCHIENDAUCODANGCAPSAOSSS10SS04? _khungDcsChienDauCoSSS10SS04;
-  KHUNGDCSCHIENDAUCODANGCAPSAOSSS10SS04? get getKhungDcsChienDauCoSSS10SS04 =>
-      _khungDcsChienDauCoSSS10SS04;
-  Future<void> onCaiDatKhungDcsChienDauCoSSS10SS04({
-    required KHUNGDCSCHIENDAUCODANGCAPSAOSSS10SS04? value,
-    bool? caiDatUuTien,
-  }) async {
+  KHUNGDCSCHIENDAUCODANGCAPSAOSSS10SS04? get getKhungDcsChienDauCoSSS10SS04 => _khungDcsChienDauCoSSS10SS04;
+  Future<void> onCaiDatKhungDcsChienDauCoSSS10SS04({required KHUNGDCSCHIENDAUCODANGCAPSAOSSS10SS04? value, bool? caiDatUuTien}) async {
     if (caiDatUuTien == true) {
       _khungDcsChienDauCoSSS10SS04 = value;
     } else {
@@ -1115,12 +909,8 @@ class QUANLYTHANHPHANTICHHOPTHUOCCAP
   /// TODO:
   /// -----
   KHUNGDCSCHIENDAUCODANGCAPSAOSSS10SS05? _khungDcsChienDauCoSSS10SS05;
-  KHUNGDCSCHIENDAUCODANGCAPSAOSSS10SS05? get getKhungDcsChienDauCoSSS10SS05 =>
-      _khungDcsChienDauCoSSS10SS05;
-  Future<void> onCaiDatKhungDcsChienDauCoSSS10SS05({
-    required KHUNGDCSCHIENDAUCODANGCAPSAOSSS10SS05? value,
-    bool? caiDatUuTien,
-  }) async {
+  KHUNGDCSCHIENDAUCODANGCAPSAOSSS10SS05? get getKhungDcsChienDauCoSSS10SS05 => _khungDcsChienDauCoSSS10SS05;
+  Future<void> onCaiDatKhungDcsChienDauCoSSS10SS05({required KHUNGDCSCHIENDAUCODANGCAPSAOSSS10SS05? value, bool? caiDatUuTien}) async {
     if (caiDatUuTien == true) {
       _khungDcsChienDauCoSSS10SS05 = value;
     } else {
@@ -1131,286 +921,329 @@ class QUANLYTHANHPHANTICHHOPTHUOCCAP
     return;
   }
 
+  ///
+  ///
+  ///
+  ///
+  ///
+
+  ///
+  KHUNGNUTBAMMUACHIENDAUCOCHONCHIDINHDANGCAPSAO00E03SS01? _khungnutbammuachiendaucochonchidinhdangcapsao00e03ss01;
+  KHUNGNUTBAMMUACHIENDAUCOCHONCHIDINHDANGCAPSAO00E03SS01? get getKHUNGNUTBAMMUACHIENDAUCOCHONCHIDINHDANGCAPSAO00E03SS01 => _khungnutbammuachiendaucochonchidinhdangcapsao00e03ss01;
+  Future<void> onCaiDatKHUNGNUTBAMMUACHIENDAUCOCHONCHIDINHDANGCAPSAO00E03SS01({required KHUNGNUTBAMMUACHIENDAUCOCHONCHIDINHDANGCAPSAO00E03SS01? value, bool? caiDatUuTien}) async {
+    if (caiDatUuTien == true) {
+      _khungnutbammuachiendaucochonchidinhdangcapsao00e03ss01 = value;
+    } else {
+      _khungnutbammuachiendaucochonchidinhdangcapsao00e03ss01 ??= value;
+    }
+
+    ///
+    return;
+  }
+
+  //
+  KHUNGNUTBAMMUACHIENDAUCOCHONCHIDINHDANGCAPSAO00E03SS02? _khungnutbammuachiendaucochonchidinhdangcapsao00e03ss02;
+  KHUNGNUTBAMMUACHIENDAUCOCHONCHIDINHDANGCAPSAO00E03SS02? get getKHUNGNUTBAMMUACHIENDAUCOCHONCHIDINHDANGCAPSAO00E03SS02 => _khungnutbammuachiendaucochonchidinhdangcapsao00e03ss02;
+  Future<void> onCaiDatKHUNGNUTBAMMUACHIENDAUCOCHONCHIDINHDANGCAPSAO00E03SS02({required KHUNGNUTBAMMUACHIENDAUCOCHONCHIDINHDANGCAPSAO00E03SS02? value, bool? caiDatUuTien}) async {
+    if (caiDatUuTien == true) {
+      _khungnutbammuachiendaucochonchidinhdangcapsao00e03ss02 = value;
+    } else {
+      _khungnutbammuachiendaucochonchidinhdangcapsao00e03ss02 ??= value;
+    }
+
+    ///
+    return;
+  }
+
+  //
+  KHUNGNUTBAMMUACHIENDAUCOCHONCHIDINHDANGCAPSAO00E03SS03? _khungnutbammuachiendaucochonchidinhdangcapsao00e03ss03;
+  KHUNGNUTBAMMUACHIENDAUCOCHONCHIDINHDANGCAPSAO00E03SS03? get getKHUNGNUTBAMMUACHIENDAUCOCHONCHIDINHDANGCAPSAO00E03SS03 => _khungnutbammuachiendaucochonchidinhdangcapsao00e03ss03;
+  Future<void> onCaiDatKHUNGNUTBAMMUACHIENDAUCOCHONCHIDINHDANGCAPSAO00E03SS03({required KHUNGNUTBAMMUACHIENDAUCOCHONCHIDINHDANGCAPSAO00E03SS03? value, bool? caiDatUuTien}) async {
+    if (caiDatUuTien == true) {
+      _khungnutbammuachiendaucochonchidinhdangcapsao00e03ss03 = value;
+    } else {
+      _khungnutbammuachiendaucochonchidinhdangcapsao00e03ss03 ??= value;
+    }
+
+    ///
+    return;
+  }
+
+  ///
+  KHUNGNUTBAMMUACHIENDAUCOCHONCHIDINHDANGCAPSAO00D04SS01? _khungnutbammuachiendaucochonchidinhdangcapsao00d04ss01;
+  KHUNGNUTBAMMUACHIENDAUCOCHONCHIDINHDANGCAPSAO00D04SS01? get getKHUNGNUTBAMMUACHIENDAUCOCHONCHIDINHDANGCAPSAO00D04SS01 => _khungnutbammuachiendaucochonchidinhdangcapsao00d04ss01;
+  Future<void> onCaiDatKHUNGNUTBAMMUACHIENDAUCOCHONCHIDINHDANGCAPSAO00D04SS01({required KHUNGNUTBAMMUACHIENDAUCOCHONCHIDINHDANGCAPSAO00D04SS01? value, bool? caiDatUuTien}) async {
+    if (caiDatUuTien == true) {
+      _khungnutbammuachiendaucochonchidinhdangcapsao00d04ss01 = value;
+    } else {
+      _khungnutbammuachiendaucochonchidinhdangcapsao00d04ss01 ??= value;
+    }
+
+    ///
+    return;
+  }
+
+  ///
+  KHUNGNUTBAMMUACHIENDAUCOCHONCHIDINHDANGCAPSAO00C05SS01? _khungnutbammuachiendaucochonchidinhdangcapsao00c05ss01;
+  KHUNGNUTBAMMUACHIENDAUCOCHONCHIDINHDANGCAPSAO00C05SS01? get getKHUNGNUTBAMMUACHIENDAUCOCHONCHIDINHDANGCAPSAO00C05SS01 => _khungnutbammuachiendaucochonchidinhdangcapsao00c05ss01;
+  Future<void> onCaiDatKHUNGNUTBAMMUACHIENDAUCOCHONCHIDINHDANGCAPSAO00C05SS01({required KHUNGNUTBAMMUACHIENDAUCOCHONCHIDINHDANGCAPSAO00C05SS01? value, bool? caiDatUuTien}) async {
+    if (caiDatUuTien == true) {
+      _khungnutbammuachiendaucochonchidinhdangcapsao00c05ss01 = value;
+    } else {
+      _khungnutbammuachiendaucochonchidinhdangcapsao00c05ss01 ??= value;
+    }
+
+    ///
+    return;
+  }
+
+  ///
+  KHUNGNUTBAMMUACHIENDAUCOCHONCHIDINHDANGCAPSAO00B06SS01? _khungnutbammuachiendaucochonchidinhdangcapsao00b06ss01;
+  KHUNGNUTBAMMUACHIENDAUCOCHONCHIDINHDANGCAPSAO00B06SS01? get getKHUNGNUTBAMMUACHIENDAUCOCHONCHIDINHDANGCAPSAO00B06SS01 => _khungnutbammuachiendaucochonchidinhdangcapsao00b06ss01;
+  Future<void> onCaiDatKHUNGNUTBAMMUACHIENDAUCOCHONCHIDINHDANGCAPSAO00B06SS01({required KHUNGNUTBAMMUACHIENDAUCOCHONCHIDINHDANGCAPSAO00B06SS01? value, bool? caiDatUuTien}) async {
+    if (caiDatUuTien == true) {
+      _khungnutbammuachiendaucochonchidinhdangcapsao00b06ss01 = value;
+    } else {
+      _khungnutbammuachiendaucochonchidinhdangcapsao00b06ss01 ??= value;
+    }
+
+    ///
+    return;
+  }
+
+  ///
+  KHUNGNUTBAMMUACHIENDAUCOCHONCHIDINHDANGCAPSAO00A07SS01? _khungnutbammuachiendaucochonchidinhdangcapsao00a07ss01;
+  KHUNGNUTBAMMUACHIENDAUCOCHONCHIDINHDANGCAPSAO00A07SS01? get getKHUNGNUTBAMMUACHIENDAUCOCHONCHIDINHDANGCAPSAO00A07SS01 => _khungnutbammuachiendaucochonchidinhdangcapsao00a07ss01;
+  Future<void> onCaiDatKHUNGNUTBAMMUACHIENDAUCOCHONCHIDINHDANGCAPSAO00A07SS01({required KHUNGNUTBAMMUACHIENDAUCOCHONCHIDINHDANGCAPSAO00A07SS01? value, bool? caiDatUuTien}) async {
+    if (caiDatUuTien == true) {
+      _khungnutbammuachiendaucochonchidinhdangcapsao00a07ss01 = value;
+    } else {
+      _khungnutbammuachiendaucochonchidinhdangcapsao00a07ss01 ??= value;
+    }
+
+    ///
+    return;
+  }
+
+  ///
+  KHUNGNUTBAMMUACHIENDAUCOCHONCHIDINHDANGCAPSAO00S08SS01? _khungnutbammuachiendaucochonchidinhdangcapsao00s08ss01;
+  KHUNGNUTBAMMUACHIENDAUCOCHONCHIDINHDANGCAPSAO00S08SS01? get getKHUNGNUTBAMMUACHIENDAUCOCHONCHIDINHDANGCAPSAO00S08SS01 => _khungnutbammuachiendaucochonchidinhdangcapsao00s08ss01;
+  Future<void> onCaiDatKHUNGNUTBAMMUACHIENDAUCOCHONCHIDINHDANGCAPSAO00S08SS01({required KHUNGNUTBAMMUACHIENDAUCOCHONCHIDINHDANGCAPSAO00S08SS01? value, bool? caiDatUuTien}) async {
+    if (caiDatUuTien == true) {
+      _khungnutbammuachiendaucochonchidinhdangcapsao00s08ss01 = value;
+    } else {
+      _khungnutbammuachiendaucochonchidinhdangcapsao00s08ss01 ??= value;
+    }
+
+    ///
+    return;
+  }
+
+  ///
+  KHUNGNUTBAMMUACHIENDAUCOCHONCHIDINHDANGCAPSAO0SS09SS01? _khungnutbammuachiendaucochonchidinhdangcapsao0ss09ss01;
+  KHUNGNUTBAMMUACHIENDAUCOCHONCHIDINHDANGCAPSAO0SS09SS01? get getKHUNGNUTBAMMUACHIENDAUCOCHONCHIDINHDANGCAPSAO0SS09SS01 => _khungnutbammuachiendaucochonchidinhdangcapsao0ss09ss01;
+  Future<void> onCaiDatKHUNGNUTBAMMUACHIENDAUCOCHONCHIDINHDANGCAPSAO0SS09SS01({required KHUNGNUTBAMMUACHIENDAUCOCHONCHIDINHDANGCAPSAO0SS09SS01? value, bool? caiDatUuTien}) async {
+    if (caiDatUuTien == true) {
+      _khungnutbammuachiendaucochonchidinhdangcapsao0ss09ss01 = value;
+    } else {
+      _khungnutbammuachiendaucochonchidinhdangcapsao0ss09ss01 ??= value;
+    }
+
+    ///
+    return;
+  }
+
+  //
+  KHUNGNUTBAMMUACHIENDAUCOCHONCHIDINHDANGCAPSAO0SS09SS02? _khungnutbammuachiendaucochonchidinhdangcapsao0ss09ss02;
+  KHUNGNUTBAMMUACHIENDAUCOCHONCHIDINHDANGCAPSAO0SS09SS02? get getKHUNGNUTBAMMUACHIENDAUCOCHONCHIDINHDANGCAPSAO0SS09SS02 => _khungnutbammuachiendaucochonchidinhdangcapsao0ss09ss02;
+  Future<void> onCaiDatKHUNGNUTBAMMUACHIENDAUCOCHONCHIDINHDANGCAPSAO0SS09SS02({required KHUNGNUTBAMMUACHIENDAUCOCHONCHIDINHDANGCAPSAO0SS09SS02? value, bool? caiDatUuTien}) async {
+    if (caiDatUuTien == true) {
+      _khungnutbammuachiendaucochonchidinhdangcapsao0ss09ss02 = value;
+    } else {
+      _khungnutbammuachiendaucochonchidinhdangcapsao0ss09ss02 ??= value;
+    }
+
+    ///
+    return;
+  }
+
+  //
+  KHUNGNUTBAMMUACHIENDAUCOCHONCHIDINHDANGCAPSAO0SS09SS03? _khungnutbammuachiendaucochonchidinhdangcapsao0ss09ss03;
+  KHUNGNUTBAMMUACHIENDAUCOCHONCHIDINHDANGCAPSAO0SS09SS03? get getKHUNGNUTBAMMUACHIENDAUCOCHONCHIDINHDANGCAPSAO0SS09SS03 => _khungnutbammuachiendaucochonchidinhdangcapsao0ss09ss03;
+  Future<void> onCaiDatKHUNGNUTBAMMUACHIENDAUCOCHONCHIDINHDANGCAPSAO0SS09SS03({required KHUNGNUTBAMMUACHIENDAUCOCHONCHIDINHDANGCAPSAO0SS09SS03? value, bool? caiDatUuTien}) async {
+    if (caiDatUuTien == true) {
+      _khungnutbammuachiendaucochonchidinhdangcapsao0ss09ss03 = value;
+    } else {
+      _khungnutbammuachiendaucochonchidinhdangcapsao0ss09ss03 ??= value;
+    }
+
+    ///
+    return;
+  }
+
+  ///
+  KHUNGNUTBAMMUACHIENDAUCOCHONCHIDINHDANGCAPSAOSSS10SS01? _khungnutbammuachiendaucochonchidinhdangcapsaosss10ss01;
+  KHUNGNUTBAMMUACHIENDAUCOCHONCHIDINHDANGCAPSAOSSS10SS01? get getKHUNGNUTBAMMUACHIENDAUCOCHONCHIDINHDANGCAPSAOSSS10SS01 => _khungnutbammuachiendaucochonchidinhdangcapsaosss10ss01;
+  Future<void> onCaiDatKHUNGNUTBAMMUACHIENDAUCOCHONCHIDINHDANGCAPSAOSSS10SS01({required KHUNGNUTBAMMUACHIENDAUCOCHONCHIDINHDANGCAPSAOSSS10SS01? value, bool? caiDatUuTien}) async {
+    if (caiDatUuTien == true) {
+      _khungnutbammuachiendaucochonchidinhdangcapsaosss10ss01 = value;
+    } else {
+      _khungnutbammuachiendaucochonchidinhdangcapsaosss10ss01 ??= value;
+    }
+
+    ///
+    return;
+  }
+
+  //
+  KHUNGNUTBAMMUACHIENDAUCOCHONCHIDINHDANGCAPSAOSSS10SS02? _khungnutbammuachiendaucochonchidinhdangcapsaosss10ss02;
+  KHUNGNUTBAMMUACHIENDAUCOCHONCHIDINHDANGCAPSAOSSS10SS02? get getKHUNGNUTBAMMUACHIENDAUCOCHONCHIDINHDANGCAPSAOSSS10SS02 => _khungnutbammuachiendaucochonchidinhdangcapsaosss10ss02;
+  Future<void> onCaiDatKHUNGNUTBAMMUACHIENDAUCOCHONCHIDINHDANGCAPSAOSSS10SS02({required KHUNGNUTBAMMUACHIENDAUCOCHONCHIDINHDANGCAPSAOSSS10SS02? value, bool? caiDatUuTien}) async {
+    if (caiDatUuTien == true) {
+      _khungnutbammuachiendaucochonchidinhdangcapsaosss10ss02 = value;
+    } else {
+      _khungnutbammuachiendaucochonchidinhdangcapsaosss10ss02 ??= value;
+    }
+
+    ///
+    return;
+  }
+
+  //
+  KHUNGNUTBAMMUACHIENDAUCOCHONCHIDINHDANGCAPSAOSSS10SS03? _khungnutbammuachiendaucochonchidinhdangcapsaosss10ss03;
+  KHUNGNUTBAMMUACHIENDAUCOCHONCHIDINHDANGCAPSAOSSS10SS03? get getKHUNGNUTBAMMUACHIENDAUCOCHONCHIDINHDANGCAPSAOSSS10SS03 => _khungnutbammuachiendaucochonchidinhdangcapsaosss10ss03;
+  Future<void> onCaiDatKHUNGNUTBAMMUACHIENDAUCOCHONCHIDINHDANGCAPSAOSSS10SS03({required KHUNGNUTBAMMUACHIENDAUCOCHONCHIDINHDANGCAPSAOSSS10SS03? value, bool? caiDatUuTien}) async {
+    if (caiDatUuTien == true) {
+      _khungnutbammuachiendaucochonchidinhdangcapsaosss10ss03 = value;
+    } else {
+      _khungnutbammuachiendaucochonchidinhdangcapsaosss10ss03 ??= value;
+    }
+
+    ///
+    return;
+  }
+
+  //
+  KHUNGNUTBAMMUACHIENDAUCOCHONCHIDINHDANGCAPSAOSSS10SS04? _khungnutbammuachiendaucochonchidinhdangcapsaosss10ss04;
+  KHUNGNUTBAMMUACHIENDAUCOCHONCHIDINHDANGCAPSAOSSS10SS04? get getKHUNGNUTBAMMUACHIENDAUCOCHONCHIDINHDANGCAPSAOSSS10SS04 => _khungnutbammuachiendaucochonchidinhdangcapsaosss10ss04;
+  Future<void> onCaiDatKHUNGNUTBAMMUACHIENDAUCOCHONCHIDINHDANGCAPSAOSSS10SS04({required KHUNGNUTBAMMUACHIENDAUCOCHONCHIDINHDANGCAPSAOSSS10SS04? value, bool? caiDatUuTien}) async {
+    if (caiDatUuTien == true) {
+      _khungnutbammuachiendaucochonchidinhdangcapsaosss10ss04 = value;
+    } else {
+      _khungnutbammuachiendaucochonchidinhdangcapsaosss10ss04 ??= value;
+    }
+
+    ///
+    return;
+  }
+
+  //
+  KHUNGNUTBAMMUACHIENDAUCOCHONCHIDINHDANGCAPSAOSSS10SS05? _khungnutbammuachiendaucochonchidinhdangcapsaosss10ss05;
+  KHUNGNUTBAMMUACHIENDAUCOCHONCHIDINHDANGCAPSAOSSS10SS05? get getKHUNGNUTBAMMUACHIENDAUCOCHONCHIDINHDANGCAPSAOSSS10SS05 => _khungnutbammuachiendaucochonchidinhdangcapsaosss10ss05;
+  Future<void> onCaiDatKHUNGNUTBAMMUACHIENDAUCOCHONCHIDINHDANGCAPSAOSSS10SS05({required KHUNGNUTBAMMUACHIENDAUCOCHONCHIDINHDANGCAPSAOSSS10SS05? value, bool? caiDatUuTien}) async {
+    if (caiDatUuTien == true) {
+      _khungnutbammuachiendaucochonchidinhdangcapsaosss10ss05 = value;
+    } else {
+      _khungnutbammuachiendaucochonchidinhdangcapsaosss10ss05 ??= value;
+    }
+
+    ///
+    return;
+  }
+
+  ///
+  ///
+  ///
+  ///
+  ///
+
   /// -----
   /// TODO: Add Comp Root
   /// -----
   @override
-  Future<void> onAddRoot({
-    required FlameGame? flameGame,
-    required Component? component,
-  }) async {
+  Future<void> onAddRoot({required FlameGame? flameGame, required Component? component}) async {
     try {
       /// -----
       /// TODO:
       /// -----
       await Future.wait([
-        onAddComponent(
-          flameGame: null,
-          parentComponent: component,
-          childComponent: getNutBamChuyenChonChiDinhTrai,
-        ).catchError((e) => null),
-        onAddComponent(
-          flameGame: null,
-          parentComponent: component,
-          childComponent: getNutBamChuyenChonChiDinhPhai,
-        ).catchError((e) => null),
+        onAddComponent(flameGame: null, parentComponent: component, childComponent: getNutBamChuyenChonChiDinhTrai).catchError((e) => null),
+        onAddComponent(flameGame: null, parentComponent: component, childComponent: getNutBamChuyenChonChiDinhPhai).catchError((e) => null),
 
-        onAddComponent(
-          flameGame: null,
-          parentComponent: component,
-          childComponent: getCardChienDauCo00E03SS01,
-        ).catchError((e) => null),
-        onAddComponent(
-          flameGame: null,
-          parentComponent: component,
-          childComponent: getCardChienDauCo00E03SS02,
-        ).catchError((e) => null),
-        onAddComponent(
-          flameGame: null,
-          parentComponent: component,
-          childComponent: getCardChienDauCo00E03SS03,
-        ).catchError((e) => null),
-        onAddComponent(
-          flameGame: null,
-          parentComponent: component,
-          childComponent: getCardChienDauCo00D04SS01,
-        ).catchError((e) => null),
-        onAddComponent(
-          flameGame: null,
-          parentComponent: component,
-          childComponent: getCardChienDauCo00C05SS01,
-        ).catchError((e) => null),
-        onAddComponent(
-          flameGame: null,
-          parentComponent: component,
-          childComponent: getCardChienDauCo00B06SS01,
-        ).catchError((e) => null),
-        onAddComponent(
-          flameGame: null,
-          parentComponent: component,
-          childComponent: getCardChienDauCo00A07SS01,
-        ).catchError((e) => null),
-        onAddComponent(
-          flameGame: null,
-          parentComponent: component,
-          childComponent: getCardChienDauCo00S08SS01,
-        ).catchError((e) => null),
-        onAddComponent(
-          flameGame: null,
-          parentComponent: component,
-          childComponent: getCardChienDauCo0SS09SS01,
-        ).catchError((e) => null),
-        onAddComponent(
-          flameGame: null,
-          parentComponent: component,
-          childComponent: getCardChienDauCo0SS09SS02,
-        ).catchError((e) => null),
-        onAddComponent(
-          flameGame: null,
-          parentComponent: component,
-          childComponent: getCardChienDauCo0SS09SS03,
-        ).catchError((e) => null),
-        onAddComponent(
-          flameGame: null,
-          parentComponent: component,
-          childComponent: getCardChienDauCoSSS10SS01,
-        ).catchError((e) => null),
-        onAddComponent(
-          flameGame: null,
-          parentComponent: component,
-          childComponent: getCardChienDauCoSSS10SS02,
-        ).catchError((e) => null),
-        onAddComponent(
-          flameGame: null,
-          parentComponent: component,
-          childComponent: getCardChienDauCoSSS10SS03,
-        ).catchError((e) => null),
-        onAddComponent(
-          flameGame: null,
-          parentComponent: component,
-          childComponent: getCardChienDauCoSSS10SS04,
-        ).catchError((e) => null),
-        onAddComponent(
-          flameGame: null,
-          parentComponent: component,
-          childComponent: getCardChienDauCoSSS10SS05,
-        ).catchError((e) => null),
+        onAddComponent(flameGame: null, parentComponent: component, childComponent: getCardChienDauCo00E03SS01).catchError((e) => null),
+        onAddComponent(flameGame: null, parentComponent: component, childComponent: getCardChienDauCo00E03SS02).catchError((e) => null),
+        onAddComponent(flameGame: null, parentComponent: component, childComponent: getCardChienDauCo00E03SS03).catchError((e) => null),
+        onAddComponent(flameGame: null, parentComponent: component, childComponent: getCardChienDauCo00D04SS01).catchError((e) => null),
+        onAddComponent(flameGame: null, parentComponent: component, childComponent: getCardChienDauCo00C05SS01).catchError((e) => null),
+        onAddComponent(flameGame: null, parentComponent: component, childComponent: getCardChienDauCo00B06SS01).catchError((e) => null),
+        onAddComponent(flameGame: null, parentComponent: component, childComponent: getCardChienDauCo00A07SS01).catchError((e) => null),
+        onAddComponent(flameGame: null, parentComponent: component, childComponent: getCardChienDauCo00S08SS01).catchError((e) => null),
+        onAddComponent(flameGame: null, parentComponent: component, childComponent: getCardChienDauCo0SS09SS01).catchError((e) => null),
+        onAddComponent(flameGame: null, parentComponent: component, childComponent: getCardChienDauCo0SS09SS02).catchError((e) => null),
+        onAddComponent(flameGame: null, parentComponent: component, childComponent: getCardChienDauCo0SS09SS03).catchError((e) => null),
+        onAddComponent(flameGame: null, parentComponent: component, childComponent: getCardChienDauCoSSS10SS01).catchError((e) => null),
+        onAddComponent(flameGame: null, parentComponent: component, childComponent: getCardChienDauCoSSS10SS02).catchError((e) => null),
+        onAddComponent(flameGame: null, parentComponent: component, childComponent: getCardChienDauCoSSS10SS03).catchError((e) => null),
+        onAddComponent(flameGame: null, parentComponent: component, childComponent: getCardChienDauCoSSS10SS04).catchError((e) => null),
+        onAddComponent(flameGame: null, parentComponent: component, childComponent: getCardChienDauCoSSS10SS05).catchError((e) => null),
 
         ///
-        onAddComponent(
-          flameGame: null,
-          parentComponent: component,
-          childComponent: getCostChienDauCo00E03SS01,
-        ).catchError((e) => null),
-        onAddComponent(
-          flameGame: null,
-          parentComponent: component,
-          childComponent: getCostChienDauCo00E03SS02,
-        ).catchError((e) => null),
-        onAddComponent(
-          flameGame: null,
-          parentComponent: component,
-          childComponent: getCostChienDauCo00E03SS03,
-        ).catchError((e) => null),
-        onAddComponent(
-          flameGame: null,
-          parentComponent: component,
-          childComponent: getCostChienDauCo00D04SS01,
-        ).catchError((e) => null),
-        onAddComponent(
-          flameGame: null,
-          parentComponent: component,
-          childComponent: getCostChienDauCo00C05SS01,
-        ).catchError((e) => null),
-        onAddComponent(
-          flameGame: null,
-          parentComponent: component,
-          childComponent: getCostChienDauCo00B06SS01,
-        ).catchError((e) => null),
-        onAddComponent(
-          flameGame: null,
-          parentComponent: component,
-          childComponent: getCostChienDauCo00A07SS01,
-        ).catchError((e) => null),
-        onAddComponent(
-          flameGame: null,
-          parentComponent: component,
-          childComponent: getCostChienDauCo00S08SS01,
-        ).catchError((e) => null),
-        onAddComponent(
-          flameGame: null,
-          parentComponent: component,
-          childComponent: getCostChienDauCo0SS09SS01,
-        ).catchError((e) => null),
-        onAddComponent(
-          flameGame: null,
-          parentComponent: component,
-          childComponent: getCostChienDauCo0SS09SS02,
-        ).catchError((e) => null),
-        onAddComponent(
-          flameGame: null,
-          parentComponent: component,
-          childComponent: getCostChienDauCo0SS09SS03,
-        ).catchError((e) => null),
-        onAddComponent(
-          flameGame: null,
-          parentComponent: component,
-          childComponent: getCostChienDauCoSSS10SS01,
-        ).catchError((e) => null),
-        onAddComponent(
-          flameGame: null,
-          parentComponent: component,
-          childComponent: getCostChienDauCoSSS10SS02,
-        ).catchError((e) => null),
-        onAddComponent(
-          flameGame: null,
-          parentComponent: component,
-          childComponent: getCostChienDauCoSSS10SS03,
-        ).catchError((e) => null),
-        onAddComponent(
-          flameGame: null,
-          parentComponent: component,
-          childComponent: getCostChienDauCoSSS10SS04,
-        ).catchError((e) => null),
-        onAddComponent(
-          flameGame: null,
-          parentComponent: component,
-          childComponent: getCostChienDauCoSSS10SS05,
-        ).catchError((e) => null),
+        onAddComponent(flameGame: null, parentComponent: component, childComponent: getCostChienDauCo00E03SS01).catchError((e) => null),
+        onAddComponent(flameGame: null, parentComponent: component, childComponent: getCostChienDauCo00E03SS02).catchError((e) => null),
+        onAddComponent(flameGame: null, parentComponent: component, childComponent: getCostChienDauCo00E03SS03).catchError((e) => null),
+        onAddComponent(flameGame: null, parentComponent: component, childComponent: getCostChienDauCo00D04SS01).catchError((e) => null),
+        onAddComponent(flameGame: null, parentComponent: component, childComponent: getCostChienDauCo00C05SS01).catchError((e) => null),
+        onAddComponent(flameGame: null, parentComponent: component, childComponent: getCostChienDauCo00B06SS01).catchError((e) => null),
+        onAddComponent(flameGame: null, parentComponent: component, childComponent: getCostChienDauCo00A07SS01).catchError((e) => null),
+        onAddComponent(flameGame: null, parentComponent: component, childComponent: getCostChienDauCo00S08SS01).catchError((e) => null),
+        onAddComponent(flameGame: null, parentComponent: component, childComponent: getCostChienDauCo0SS09SS01).catchError((e) => null),
+        onAddComponent(flameGame: null, parentComponent: component, childComponent: getCostChienDauCo0SS09SS02).catchError((e) => null),
+        onAddComponent(flameGame: null, parentComponent: component, childComponent: getCostChienDauCo0SS09SS03).catchError((e) => null),
+        onAddComponent(flameGame: null, parentComponent: component, childComponent: getCostChienDauCoSSS10SS01).catchError((e) => null),
+        onAddComponent(flameGame: null, parentComponent: component, childComponent: getCostChienDauCoSSS10SS02).catchError((e) => null),
+        onAddComponent(flameGame: null, parentComponent: component, childComponent: getCostChienDauCoSSS10SS03).catchError((e) => null),
+        onAddComponent(flameGame: null, parentComponent: component, childComponent: getCostChienDauCoSSS10SS04).catchError((e) => null),
+        onAddComponent(flameGame: null, parentComponent: component, childComponent: getCostChienDauCoSSS10SS05).catchError((e) => null),
 
         ///
-        onAddComponent(
-          flameGame: null,
-          parentComponent: component,
-          childComponent: getKhungDcsChienDauCo00E03SS01,
-        ).catchError((e) => null),
-        onAddComponent(
-          flameGame: null,
-          parentComponent: component,
-          childComponent: getKhungDcsChienDauCo00E03SS02,
-        ).catchError((e) => null),
-        onAddComponent(
-          flameGame: null,
-          parentComponent: component,
-          childComponent: getKhungDcsChienDauCo00E03SS03,
-        ).catchError((e) => null),
-        onAddComponent(
-          flameGame: null,
-          parentComponent: component,
-          childComponent: getKhungDcsChienDauCo00D04SS01,
-        ).catchError((e) => null),
-        onAddComponent(
-          flameGame: null,
-          parentComponent: component,
-          childComponent: getKhungDcsChienDauCo00C05SS01,
-        ).catchError((e) => null),
-        onAddComponent(
-          flameGame: null,
-          parentComponent: component,
-          childComponent: getKhungDcsChienDauCo00B06SS01,
-        ).catchError((e) => null),
-        onAddComponent(
-          flameGame: null,
-          parentComponent: component,
-          childComponent: getKhungDcsChienDauCo00A07SS01,
-        ).catchError((e) => null),
-        onAddComponent(
-          flameGame: null,
-          parentComponent: component,
-          childComponent: getKhungDcsChienDauCo00S08SS01,
-        ).catchError((e) => null),
-        onAddComponent(
-          flameGame: null,
-          parentComponent: component,
-          childComponent: getKhungDcsChienDauCo0SS09SS01,
-        ).catchError((e) => null),
-        onAddComponent(
-          flameGame: null,
-          parentComponent: component,
-          childComponent: getKhungDcsChienDauCo0SS09SS02,
-        ).catchError((e) => null),
-        onAddComponent(
-          flameGame: null,
-          parentComponent: component,
-          childComponent: getKhungDcsChienDauCo0SS09SS03,
-        ).catchError((e) => null),
-        onAddComponent(
-          flameGame: null,
-          parentComponent: component,
-          childComponent: getKhungDcsChienDauCoSSS10SS01,
-        ).catchError((e) => null),
-        onAddComponent(
-          flameGame: null,
-          parentComponent: component,
-          childComponent: getKhungDcsChienDauCoSSS10SS02,
-        ).catchError((e) => null),
-        onAddComponent(
-          flameGame: null,
-          parentComponent: component,
-          childComponent: getKhungDcsChienDauCoSSS10SS03,
-        ).catchError((e) => null),
-        onAddComponent(
-          flameGame: null,
-          parentComponent: component,
-          childComponent: getKhungDcsChienDauCoSSS10SS04,
-        ).catchError((e) => null),
-        onAddComponent(
-          flameGame: null,
-          parentComponent: component,
-          childComponent: getKhungDcsChienDauCoSSS10SS05,
-        ).catchError((e) => null),
+        onAddComponent(flameGame: null, parentComponent: component, childComponent: getKHUNGNUTBAMMUACHIENDAUCOCHONCHIDINHDANGCAPSAO00E03SS01).catchError((e) => null),
+        onAddComponent(flameGame: null, parentComponent: component, childComponent: getKHUNGNUTBAMMUACHIENDAUCOCHONCHIDINHDANGCAPSAO00E03SS02).catchError((e) => null),
+        onAddComponent(flameGame: null, parentComponent: component, childComponent: getKHUNGNUTBAMMUACHIENDAUCOCHONCHIDINHDANGCAPSAO00E03SS03).catchError((e) => null),
+        onAddComponent(flameGame: null, parentComponent: component, childComponent: getKHUNGNUTBAMMUACHIENDAUCOCHONCHIDINHDANGCAPSAO00D04SS01).catchError((e) => null),
+        onAddComponent(flameGame: null, parentComponent: component, childComponent: getKHUNGNUTBAMMUACHIENDAUCOCHONCHIDINHDANGCAPSAO00C05SS01).catchError((e) => null),
+        onAddComponent(flameGame: null, parentComponent: component, childComponent: getKHUNGNUTBAMMUACHIENDAUCOCHONCHIDINHDANGCAPSAO00B06SS01).catchError((e) => null),
+        onAddComponent(flameGame: null, parentComponent: component, childComponent: getKHUNGNUTBAMMUACHIENDAUCOCHONCHIDINHDANGCAPSAO00A07SS01).catchError((e) => null),
+        onAddComponent(flameGame: null, parentComponent: component, childComponent: getKHUNGNUTBAMMUACHIENDAUCOCHONCHIDINHDANGCAPSAO00S08SS01).catchError((e) => null),
+        onAddComponent(flameGame: null, parentComponent: component, childComponent: getKHUNGNUTBAMMUACHIENDAUCOCHONCHIDINHDANGCAPSAO0SS09SS01).catchError((e) => null),
+        onAddComponent(flameGame: null, parentComponent: component, childComponent: getKHUNGNUTBAMMUACHIENDAUCOCHONCHIDINHDANGCAPSAO0SS09SS02).catchError((e) => null),
+        onAddComponent(flameGame: null, parentComponent: component, childComponent: getKHUNGNUTBAMMUACHIENDAUCOCHONCHIDINHDANGCAPSAO0SS09SS03).catchError((e) => null),
+        onAddComponent(flameGame: null, parentComponent: component, childComponent: getKHUNGNUTBAMMUACHIENDAUCOCHONCHIDINHDANGCAPSAOSSS10SS01).catchError((e) => null),
+        onAddComponent(flameGame: null, parentComponent: component, childComponent: getKHUNGNUTBAMMUACHIENDAUCOCHONCHIDINHDANGCAPSAOSSS10SS02).catchError((e) => null),
+        onAddComponent(flameGame: null, parentComponent: component, childComponent: getKHUNGNUTBAMMUACHIENDAUCOCHONCHIDINHDANGCAPSAOSSS10SS03).catchError((e) => null),
+        onAddComponent(flameGame: null, parentComponent: component, childComponent: getKHUNGNUTBAMMUACHIENDAUCOCHONCHIDINHDANGCAPSAOSSS10SS04).catchError((e) => null),
+        onAddComponent(flameGame: null, parentComponent: component, childComponent: getKHUNGNUTBAMMUACHIENDAUCOCHONCHIDINHDANGCAPSAOSSS10SS05).catchError((e) => null),
 
         ///
-        onAddComponent(
-          flameGame: null,
-          parentComponent: component,
-          childComponent: getCardChienDauCoChonChiDinh,
-        ).catchError((e) => null),
-        onAddComponent(
-          flameGame: null,
-          parentComponent: component,
-          childComponent: getKhungNutBamMuaChienDauCoChonChiDinh,
-        ).catchError((e) => null),
+        onAddComponent(flameGame: null, parentComponent: component, childComponent: getKhungDcsChienDauCo00E03SS01).catchError((e) => null),
+        onAddComponent(flameGame: null, parentComponent: component, childComponent: getKhungDcsChienDauCo00E03SS02).catchError((e) => null),
+        onAddComponent(flameGame: null, parentComponent: component, childComponent: getKhungDcsChienDauCo00E03SS03).catchError((e) => null),
+        onAddComponent(flameGame: null, parentComponent: component, childComponent: getKhungDcsChienDauCo00D04SS01).catchError((e) => null),
+        onAddComponent(flameGame: null, parentComponent: component, childComponent: getKhungDcsChienDauCo00C05SS01).catchError((e) => null),
+        onAddComponent(flameGame: null, parentComponent: component, childComponent: getKhungDcsChienDauCo00B06SS01).catchError((e) => null),
+        onAddComponent(flameGame: null, parentComponent: component, childComponent: getKhungDcsChienDauCo00A07SS01).catchError((e) => null),
+        onAddComponent(flameGame: null, parentComponent: component, childComponent: getKhungDcsChienDauCo00S08SS01).catchError((e) => null),
+        onAddComponent(flameGame: null, parentComponent: component, childComponent: getKhungDcsChienDauCo0SS09SS01).catchError((e) => null),
+        onAddComponent(flameGame: null, parentComponent: component, childComponent: getKhungDcsChienDauCo0SS09SS02).catchError((e) => null),
+        onAddComponent(flameGame: null, parentComponent: component, childComponent: getKhungDcsChienDauCo0SS09SS03).catchError((e) => null),
+        onAddComponent(flameGame: null, parentComponent: component, childComponent: getKhungDcsChienDauCoSSS10SS01).catchError((e) => null),
+        onAddComponent(flameGame: null, parentComponent: component, childComponent: getKhungDcsChienDauCoSSS10SS02).catchError((e) => null),
+        onAddComponent(flameGame: null, parentComponent: component, childComponent: getKhungDcsChienDauCoSSS10SS03).catchError((e) => null),
+        onAddComponent(flameGame: null, parentComponent: component, childComponent: getKhungDcsChienDauCoSSS10SS04).catchError((e) => null),
+        onAddComponent(flameGame: null, parentComponent: component, childComponent: getKhungDcsChienDauCoSSS10SS05).catchError((e) => null),
+
+        ///
+        onAddComponent(flameGame: null, parentComponent: component, childComponent: getCardChienDauCoChonChiDinh).catchError((e) => null),
+        onAddComponent(flameGame: null, parentComponent: component, childComponent: getKhungNutBamMuaChienDauCoChonChiDinh).catchError((e) => null),
       ]);
 
       /// -----
@@ -1429,231 +1262,90 @@ class QUANLYTHANHPHANTICHHOPTHUOCCAP
   /// TODO: Add Comp Root For SubCom
   /// -----
   @override
-  Future<void> onAddRootForSubCom({
-    required FlameGame? flameGame,
-    required Component? component,
-  }) async {
+  Future<void> onAddRootForSubCom({required FlameGame? flameGame, required Component? component}) async {
     try {
       /// -----
       /// TODO:
       /// -----
 
       await Future.wait([
-        getNutBamChuyenChonChiDinhTrai
-                ?.onAddRoot(flameGame: null, component: component)
-                .catchError((e) => null) ??
-            onReportRootIssue(nameFunction: 'onAddRootForSubCom'),
-        getNutBamChuyenChonChiDinhPhai
-                ?.onAddRoot(flameGame: null, component: component)
-                .catchError((e) => null) ??
-            onReportRootIssue(nameFunction: 'onAddRootForSubCom'),
+        getNutBamChuyenChonChiDinhTrai?.onAddRoot(flameGame: null, component: component).catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onAddRootForSubCom'),
+        getNutBamChuyenChonChiDinhPhai?.onAddRoot(flameGame: null, component: component).catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onAddRootForSubCom'),
 
-        getCardChienDauCo00E03SS01
-                ?.onAddRoot(flameGame: null, component: component)
-                .catchError((e) => null) ??
-            onReportRootIssue(nameFunction: 'onAddRootForSubCom'),
-        getCardChienDauCo00E03SS02
-                ?.onAddRoot(flameGame: null, component: component)
-                .catchError((e) => null) ??
-            onReportRootIssue(nameFunction: 'onAddRootForSubCom'),
-        getCardChienDauCo00E03SS03
-                ?.onAddRoot(flameGame: null, component: component)
-                .catchError((e) => null) ??
-            onReportRootIssue(nameFunction: 'onAddRootForSubCom'),
-        getCardChienDauCo00D04SS01
-                ?.onAddRoot(flameGame: null, component: component)
-                .catchError((e) => null) ??
-            onReportRootIssue(nameFunction: 'onAddRootForSubCom'),
-        getCardChienDauCo00C05SS01
-                ?.onAddRoot(flameGame: null, component: component)
-                .catchError((e) => null) ??
-            onReportRootIssue(nameFunction: 'onAddRootForSubCom'),
-        getCardChienDauCo00B06SS01
-                ?.onAddRoot(flameGame: null, component: component)
-                .catchError((e) => null) ??
-            onReportRootIssue(nameFunction: 'onAddRootForSubCom'),
-        getCardChienDauCo00A07SS01
-                ?.onAddRoot(flameGame: null, component: component)
-                .catchError((e) => null) ??
-            onReportRootIssue(nameFunction: 'onAddRootForSubCom'),
-        getCardChienDauCo00S08SS01
-                ?.onAddRoot(flameGame: null, component: component)
-                .catchError((e) => null) ??
-            onReportRootIssue(nameFunction: 'onAddRootForSubCom'),
-        getCardChienDauCo0SS09SS01
-                ?.onAddRoot(flameGame: null, component: component)
-                .catchError((e) => null) ??
-            onReportRootIssue(nameFunction: 'onAddRootForSubCom'),
-        getCardChienDauCo0SS09SS02
-                ?.onAddRoot(flameGame: null, component: component)
-                .catchError((e) => null) ??
-            onReportRootIssue(nameFunction: 'onAddRootForSubCom'),
-        getCardChienDauCo0SS09SS03
-                ?.onAddRoot(flameGame: null, component: component)
-                .catchError((e) => null) ??
-            onReportRootIssue(nameFunction: 'onAddRootForSubCom'),
-        getCardChienDauCoSSS10SS01
-                ?.onAddRoot(flameGame: null, component: component)
-                .catchError((e) => null) ??
-            onReportRootIssue(nameFunction: 'onAddRootForSubCom'),
-        getCardChienDauCoSSS10SS02
-                ?.onAddRoot(flameGame: null, component: component)
-                .catchError((e) => null) ??
-            onReportRootIssue(nameFunction: 'onAddRootForSubCom'),
-        getCardChienDauCoSSS10SS03
-                ?.onAddRoot(flameGame: null, component: component)
-                .catchError((e) => null) ??
-            onReportRootIssue(nameFunction: 'onAddRootForSubCom'),
-        getCardChienDauCoSSS10SS04
-                ?.onAddRoot(flameGame: null, component: component)
-                .catchError((e) => null) ??
-            onReportRootIssue(nameFunction: 'onAddRootForSubCom'),
-        getCardChienDauCoSSS10SS05
-                ?.onAddRoot(flameGame: null, component: component)
-                .catchError((e) => null) ??
-            onReportRootIssue(nameFunction: 'onAddRootForSubCom'),
+        getCardChienDauCo00E03SS01?.onAddRoot(flameGame: null, component: component).catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onAddRootForSubCom'),
+        getCardChienDauCo00E03SS02?.onAddRoot(flameGame: null, component: component).catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onAddRootForSubCom'),
+        getCardChienDauCo00E03SS03?.onAddRoot(flameGame: null, component: component).catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onAddRootForSubCom'),
+        getCardChienDauCo00D04SS01?.onAddRoot(flameGame: null, component: component).catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onAddRootForSubCom'),
+        getCardChienDauCo00C05SS01?.onAddRoot(flameGame: null, component: component).catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onAddRootForSubCom'),
+        getCardChienDauCo00B06SS01?.onAddRoot(flameGame: null, component: component).catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onAddRootForSubCom'),
+        getCardChienDauCo00A07SS01?.onAddRoot(flameGame: null, component: component).catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onAddRootForSubCom'),
+        getCardChienDauCo00S08SS01?.onAddRoot(flameGame: null, component: component).catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onAddRootForSubCom'),
+        getCardChienDauCo0SS09SS01?.onAddRoot(flameGame: null, component: component).catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onAddRootForSubCom'),
+        getCardChienDauCo0SS09SS02?.onAddRoot(flameGame: null, component: component).catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onAddRootForSubCom'),
+        getCardChienDauCo0SS09SS03?.onAddRoot(flameGame: null, component: component).catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onAddRootForSubCom'),
+        getCardChienDauCoSSS10SS01?.onAddRoot(flameGame: null, component: component).catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onAddRootForSubCom'),
+        getCardChienDauCoSSS10SS02?.onAddRoot(flameGame: null, component: component).catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onAddRootForSubCom'),
+        getCardChienDauCoSSS10SS03?.onAddRoot(flameGame: null, component: component).catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onAddRootForSubCom'),
+        getCardChienDauCoSSS10SS04?.onAddRoot(flameGame: null, component: component).catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onAddRootForSubCom'),
+        getCardChienDauCoSSS10SS05?.onAddRoot(flameGame: null, component: component).catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onAddRootForSubCom'),
 
         ///
-        getCostChienDauCo00E03SS01
-                ?.onAddRoot(flameGame: null, component: component)
-                .catchError((e) => null) ??
-            onReportRootIssue(nameFunction: 'onAddRootForSubCom'),
-        getCostChienDauCo00E03SS02
-                ?.onAddRoot(flameGame: null, component: component)
-                .catchError((e) => null) ??
-            onReportRootIssue(nameFunction: 'onAddRootForSubCom'),
-        getCostChienDauCo00E03SS03
-                ?.onAddRoot(flameGame: null, component: component)
-                .catchError((e) => null) ??
-            onReportRootIssue(nameFunction: 'onAddRootForSubCom'),
-        getCostChienDauCo00D04SS01
-                ?.onAddRoot(flameGame: null, component: component)
-                .catchError((e) => null) ??
-            onReportRootIssue(nameFunction: 'onAddRootForSubCom'),
-        getCostChienDauCo00C05SS01
-                ?.onAddRoot(flameGame: null, component: component)
-                .catchError((e) => null) ??
-            onReportRootIssue(nameFunction: 'onAddRootForSubCom'),
-        getCostChienDauCo00B06SS01
-                ?.onAddRoot(flameGame: null, component: component)
-                .catchError((e) => null) ??
-            onReportRootIssue(nameFunction: 'onAddRootForSubCom'),
-        getCostChienDauCo00A07SS01
-                ?.onAddRoot(flameGame: null, component: component)
-                .catchError((e) => null) ??
-            onReportRootIssue(nameFunction: 'onAddRootForSubCom'),
-        getCostChienDauCo00S08SS01
-                ?.onAddRoot(flameGame: null, component: component)
-                .catchError((e) => null) ??
-            onReportRootIssue(nameFunction: 'onAddRootForSubCom'),
-        getCostChienDauCo0SS09SS01
-                ?.onAddRoot(flameGame: null, component: component)
-                .catchError((e) => null) ??
-            onReportRootIssue(nameFunction: 'onAddRootForSubCom'),
-        getCostChienDauCo0SS09SS02
-                ?.onAddRoot(flameGame: null, component: component)
-                .catchError((e) => null) ??
-            onReportRootIssue(nameFunction: 'onAddRootForSubCom'),
-        getCostChienDauCo0SS09SS03
-                ?.onAddRoot(flameGame: null, component: component)
-                .catchError((e) => null) ??
-            onReportRootIssue(nameFunction: 'onAddRootForSubCom'),
-        getCostChienDauCoSSS10SS01
-                ?.onAddRoot(flameGame: null, component: component)
-                .catchError((e) => null) ??
-            onReportRootIssue(nameFunction: 'onAddRootForSubCom'),
-        getCostChienDauCoSSS10SS02
-                ?.onAddRoot(flameGame: null, component: component)
-                .catchError((e) => null) ??
-            onReportRootIssue(nameFunction: 'onAddRootForSubCom'),
-        getCostChienDauCoSSS10SS03
-                ?.onAddRoot(flameGame: null, component: component)
-                .catchError((e) => null) ??
-            onReportRootIssue(nameFunction: 'onAddRootForSubCom'),
-        getCostChienDauCoSSS10SS04
-                ?.onAddRoot(flameGame: null, component: component)
-                .catchError((e) => null) ??
-            onReportRootIssue(nameFunction: 'onAddRootForSubCom'),
-        getCostChienDauCoSSS10SS05
-                ?.onAddRoot(flameGame: null, component: component)
-                .catchError((e) => null) ??
-            onReportRootIssue(nameFunction: 'onAddRootForSubCom'),
+        getCostChienDauCo00E03SS01?.onAddRoot(flameGame: null, component: component).catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onAddRootForSubCom'),
+        getCostChienDauCo00E03SS02?.onAddRoot(flameGame: null, component: component).catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onAddRootForSubCom'),
+        getCostChienDauCo00E03SS03?.onAddRoot(flameGame: null, component: component).catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onAddRootForSubCom'),
+        getCostChienDauCo00D04SS01?.onAddRoot(flameGame: null, component: component).catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onAddRootForSubCom'),
+        getCostChienDauCo00C05SS01?.onAddRoot(flameGame: null, component: component).catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onAddRootForSubCom'),
+        getCostChienDauCo00B06SS01?.onAddRoot(flameGame: null, component: component).catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onAddRootForSubCom'),
+        getCostChienDauCo00A07SS01?.onAddRoot(flameGame: null, component: component).catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onAddRootForSubCom'),
+        getCostChienDauCo00S08SS01?.onAddRoot(flameGame: null, component: component).catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onAddRootForSubCom'),
+        getCostChienDauCo0SS09SS01?.onAddRoot(flameGame: null, component: component).catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onAddRootForSubCom'),
+        getCostChienDauCo0SS09SS02?.onAddRoot(flameGame: null, component: component).catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onAddRootForSubCom'),
+        getCostChienDauCo0SS09SS03?.onAddRoot(flameGame: null, component: component).catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onAddRootForSubCom'),
+        getCostChienDauCoSSS10SS01?.onAddRoot(flameGame: null, component: component).catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onAddRootForSubCom'),
+        getCostChienDauCoSSS10SS02?.onAddRoot(flameGame: null, component: component).catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onAddRootForSubCom'),
+        getCostChienDauCoSSS10SS03?.onAddRoot(flameGame: null, component: component).catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onAddRootForSubCom'),
+        getCostChienDauCoSSS10SS04?.onAddRoot(flameGame: null, component: component).catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onAddRootForSubCom'),
+        getCostChienDauCoSSS10SS05?.onAddRoot(flameGame: null, component: component).catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onAddRootForSubCom'),
 
         ///
-        getKhungDcsChienDauCo00E03SS01
-                ?.onAddRoot(flameGame: null, component: component)
-                .catchError((e) => null) ??
-            onReportRootIssue(nameFunction: 'onAddRootForSubCom'),
-        getKhungDcsChienDauCo00E03SS02
-                ?.onAddRoot(flameGame: null, component: component)
-                .catchError((e) => null) ??
-            onReportRootIssue(nameFunction: 'onAddRootForSubCom'),
-        getKhungDcsChienDauCo00E03SS03
-                ?.onAddRoot(flameGame: null, component: component)
-                .catchError((e) => null) ??
-            onReportRootIssue(nameFunction: 'onAddRootForSubCom'),
-        getKhungDcsChienDauCo00D04SS01
-                ?.onAddRoot(flameGame: null, component: component)
-                .catchError((e) => null) ??
-            onReportRootIssue(nameFunction: 'onAddRootForSubCom'),
-        getKhungDcsChienDauCo00C05SS01
-                ?.onAddRoot(flameGame: null, component: component)
-                .catchError((e) => null) ??
-            onReportRootIssue(nameFunction: 'onAddRootForSubCom'),
-        getKhungDcsChienDauCo00B06SS01
-                ?.onAddRoot(flameGame: null, component: component)
-                .catchError((e) => null) ??
-            onReportRootIssue(nameFunction: 'onAddRootForSubCom'),
-        getKhungDcsChienDauCo00A07SS01
-                ?.onAddRoot(flameGame: null, component: component)
-                .catchError((e) => null) ??
-            onReportRootIssue(nameFunction: 'onAddRootForSubCom'),
-        getKhungDcsChienDauCo00S08SS01
-                ?.onAddRoot(flameGame: null, component: component)
-                .catchError((e) => null) ??
-            onReportRootIssue(nameFunction: 'onAddRootForSubCom'),
-        getKhungDcsChienDauCo0SS09SS01
-                ?.onAddRoot(flameGame: null, component: component)
-                .catchError((e) => null) ??
-            onReportRootIssue(nameFunction: 'onAddRootForSubCom'),
-        getKhungDcsChienDauCo0SS09SS02
-                ?.onAddRoot(flameGame: null, component: component)
-                .catchError((e) => null) ??
-            onReportRootIssue(nameFunction: 'onAddRootForSubCom'),
-        getKhungDcsChienDauCo0SS09SS03
-                ?.onAddRoot(flameGame: null, component: component)
-                .catchError((e) => null) ??
-            onReportRootIssue(nameFunction: 'onAddRootForSubCom'),
-        getKhungDcsChienDauCoSSS10SS01
-                ?.onAddRoot(flameGame: null, component: component)
-                .catchError((e) => null) ??
-            onReportRootIssue(nameFunction: 'onAddRootForSubCom'),
-        getKhungDcsChienDauCoSSS10SS02
-                ?.onAddRoot(flameGame: null, component: component)
-                .catchError((e) => null) ??
-            onReportRootIssue(nameFunction: 'onAddRootForSubCom'),
-        getKhungDcsChienDauCoSSS10SS03
-                ?.onAddRoot(flameGame: null, component: component)
-                .catchError((e) => null) ??
-            onReportRootIssue(nameFunction: 'onAddRootForSubCom'),
-        getKhungDcsChienDauCoSSS10SS04
-                ?.onAddRoot(flameGame: null, component: component)
-                .catchError((e) => null) ??
-            onReportRootIssue(nameFunction: 'onAddRootForSubCom'),
-        getKhungDcsChienDauCoSSS10SS05
-                ?.onAddRoot(flameGame: null, component: component)
-                .catchError((e) => null) ??
-            onReportRootIssue(nameFunction: 'onAddRootForSubCom'),
+        getKHUNGNUTBAMMUACHIENDAUCOCHONCHIDINHDANGCAPSAO00E03SS01?.onAddRoot(flameGame: null, component: component).catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onAddRootForSubCom'),
+        getKHUNGNUTBAMMUACHIENDAUCOCHONCHIDINHDANGCAPSAO00E03SS02?.onAddRoot(flameGame: null, component: component).catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onAddRootForSubCom'),
+        getKHUNGNUTBAMMUACHIENDAUCOCHONCHIDINHDANGCAPSAO00E03SS03?.onAddRoot(flameGame: null, component: component).catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onAddRootForSubCom'),
+        getKHUNGNUTBAMMUACHIENDAUCOCHONCHIDINHDANGCAPSAO00D04SS01?.onAddRoot(flameGame: null, component: component).catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onAddRootForSubCom'),
+        getKHUNGNUTBAMMUACHIENDAUCOCHONCHIDINHDANGCAPSAO00C05SS01?.onAddRoot(flameGame: null, component: component).catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onAddRootForSubCom'),
+        getKHUNGNUTBAMMUACHIENDAUCOCHONCHIDINHDANGCAPSAO00B06SS01?.onAddRoot(flameGame: null, component: component).catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onAddRootForSubCom'),
+        getKHUNGNUTBAMMUACHIENDAUCOCHONCHIDINHDANGCAPSAO00A07SS01?.onAddRoot(flameGame: null, component: component).catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onAddRootForSubCom'),
+        getKHUNGNUTBAMMUACHIENDAUCOCHONCHIDINHDANGCAPSAO00S08SS01?.onAddRoot(flameGame: null, component: component).catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onAddRootForSubCom'),
+        getKHUNGNUTBAMMUACHIENDAUCOCHONCHIDINHDANGCAPSAO0SS09SS01?.onAddRoot(flameGame: null, component: component).catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onAddRootForSubCom'),
+        getKHUNGNUTBAMMUACHIENDAUCOCHONCHIDINHDANGCAPSAO0SS09SS02?.onAddRoot(flameGame: null, component: component).catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onAddRootForSubCom'),
+        getKHUNGNUTBAMMUACHIENDAUCOCHONCHIDINHDANGCAPSAO0SS09SS03?.onAddRoot(flameGame: null, component: component).catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onAddRootForSubCom'),
+        getKHUNGNUTBAMMUACHIENDAUCOCHONCHIDINHDANGCAPSAOSSS10SS01?.onAddRoot(flameGame: null, component: component).catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onAddRootForSubCom'),
+        getKHUNGNUTBAMMUACHIENDAUCOCHONCHIDINHDANGCAPSAOSSS10SS02?.onAddRoot(flameGame: null, component: component).catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onAddRootForSubCom'),
+        getKHUNGNUTBAMMUACHIENDAUCOCHONCHIDINHDANGCAPSAOSSS10SS03?.onAddRoot(flameGame: null, component: component).catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onAddRootForSubCom'),
+        getKHUNGNUTBAMMUACHIENDAUCOCHONCHIDINHDANGCAPSAOSSS10SS04?.onAddRoot(flameGame: null, component: component).catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onAddRootForSubCom'),
+        getKHUNGNUTBAMMUACHIENDAUCOCHONCHIDINHDANGCAPSAOSSS10SS05?.onAddRoot(flameGame: null, component: component).catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onAddRootForSubCom'),
 
         ///
-        getCardChienDauCoChonChiDinh
-                ?.onAddRoot(flameGame: null, component: component)
-                .catchError((e) => null) ??
-            onReportRootIssue(nameFunction: 'onAddRootForSubCom'),
-        getKhungNutBamMuaChienDauCoChonChiDinh
-                ?.onAddRoot(flameGame: null, component: component)
-                .catchError((e) => null) ??
-            onReportRootIssue(nameFunction: 'onAddRootForSubCom'),
+        getKhungDcsChienDauCo00E03SS01?.onAddRoot(flameGame: null, component: component).catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onAddRootForSubCom'),
+        getKhungDcsChienDauCo00E03SS02?.onAddRoot(flameGame: null, component: component).catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onAddRootForSubCom'),
+        getKhungDcsChienDauCo00E03SS03?.onAddRoot(flameGame: null, component: component).catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onAddRootForSubCom'),
+        getKhungDcsChienDauCo00D04SS01?.onAddRoot(flameGame: null, component: component).catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onAddRootForSubCom'),
+        getKhungDcsChienDauCo00C05SS01?.onAddRoot(flameGame: null, component: component).catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onAddRootForSubCom'),
+        getKhungDcsChienDauCo00B06SS01?.onAddRoot(flameGame: null, component: component).catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onAddRootForSubCom'),
+        getKhungDcsChienDauCo00A07SS01?.onAddRoot(flameGame: null, component: component).catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onAddRootForSubCom'),
+        getKhungDcsChienDauCo00S08SS01?.onAddRoot(flameGame: null, component: component).catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onAddRootForSubCom'),
+        getKhungDcsChienDauCo0SS09SS01?.onAddRoot(flameGame: null, component: component).catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onAddRootForSubCom'),
+        getKhungDcsChienDauCo0SS09SS02?.onAddRoot(flameGame: null, component: component).catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onAddRootForSubCom'),
+        getKhungDcsChienDauCo0SS09SS03?.onAddRoot(flameGame: null, component: component).catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onAddRootForSubCom'),
+        getKhungDcsChienDauCoSSS10SS01?.onAddRoot(flameGame: null, component: component).catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onAddRootForSubCom'),
+        getKhungDcsChienDauCoSSS10SS02?.onAddRoot(flameGame: null, component: component).catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onAddRootForSubCom'),
+        getKhungDcsChienDauCoSSS10SS03?.onAddRoot(flameGame: null, component: component).catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onAddRootForSubCom'),
+        getKhungDcsChienDauCoSSS10SS04?.onAddRoot(flameGame: null, component: component).catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onAddRootForSubCom'),
+        getKhungDcsChienDauCoSSS10SS05?.onAddRoot(flameGame: null, component: component).catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onAddRootForSubCom'),
+
+        ///
+        getCardChienDauCoChonChiDinh?.onAddRoot(flameGame: null, component: component).catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onAddRootForSubCom'),
+        getKhungNutBamMuaChienDauCoChonChiDinh?.onAddRoot(flameGame: null, component: component).catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onAddRootForSubCom'),
       ]);
     } catch (e) {
       await onReportRootIssue(nameFunction: 'onAddRootForSubCom');
@@ -1663,20 +1355,17 @@ class QUANLYTHANHPHANTICHHOPTHUOCCAP
     return;
   }
 
-  final List<THANHPHANNUTBAMTICHHOPTHUOCCAP?> _danhSachCardChienDauCo =
-      [];
-  List<THANHPHANNUTBAMTICHHOPTHUOCCAP?> get getDanhSachCardChienDauCo =>
-      _danhSachCardChienDauCo;
+  final List<THANHPHANNUTBAMTICHHOPTHUOCCAP?> _danhSachCardChienDauCo = [];
+  List<THANHPHANNUTBAMTICHHOPTHUOCCAP?> get getDanhSachCardChienDauCo => _danhSachCardChienDauCo;
 
-  final List<THANHPHANTICHHOPSPRITEANIMATIONVANBANTHUOCCAP?>
-  _danhSachCostChienDauCo = [];
-  List<THANHPHANTICHHOPSPRITEANIMATIONVANBANTHUOCCAP?>
-  get getDanhSachCostChienDauCo => _danhSachCostChienDauCo;
+  final List<THANHPHANNUTBAMTHUOCCAPTHUANKICHHOAT?> _danhSachNutBamMuaChienDauCo = [];
+  List<THANHPHANNUTBAMTHUOCCAPTHUANKICHHOAT?> get getDanhSachNutBamMuaChienDauCo => _danhSachNutBamMuaChienDauCo;
 
-  final List<THANHPHANTICHHOPSPRITEANIMATIONTHUOCCAP?>
-  _danhSachKhungDcsChienDauCo = [];
-  List<THANHPHANTICHHOPSPRITEANIMATIONTHUOCCAP?>
-  get getDanhSachKhungDcsChienDauCo => _danhSachKhungDcsChienDauCo;
+  final List<THANHPHANTICHHOPSPRITEANIMATIONVANBANTHUOCCAP?> _danhSachCostChienDauCo = [];
+  List<THANHPHANTICHHOPSPRITEANIMATIONVANBANTHUOCCAP?> get getDanhSachCostChienDauCo => _danhSachCostChienDauCo;
+
+  final List<THANHPHANTICHHOPSPRITEANIMATIONTHUOCCAP?> _danhSachKhungDcsChienDauCo = [];
+  List<THANHPHANTICHHOPSPRITEANIMATIONTHUOCCAP?> get getDanhSachKhungDcsChienDauCo => _danhSachKhungDcsChienDauCo;
 
   /// -----
   /// TODO: Setup Root
@@ -2284,6 +1973,252 @@ class QUANLYTHANHPHANTICHHOPTHUOCCAP
         ///
         ///
         ///
+        ///
+        ///
+        onCaiDatKHUNGNUTBAMMUACHIENDAUCOCHONCHIDINHDANGCAPSAO00E03SS01(
+          value: KHUNGNUTBAMMUACHIENDAUCOCHONCHIDINHDANGCAPSAO00E03SS01(
+            globalStateManagementSystem: getGlobalStateManagementSystem,
+            gameController: getGameController,
+            thanhPhanQuanLyThuocCapTrucTiep: getThanhPhanQuanLyThuocCapTrucTiep,
+            sizeDx: 90.0,
+            sizeDy: 30.0,
+            positionDx: (sizeDxCost / 2.0) + 15.0,
+            positionDy: sizeDyKhungManHinh - (donViChieuRong * 8.5),
+            onTapCancelEvent: null,
+            onTapDownEvent: null,
+            onTapUpEvent: null,
+          ),
+          caiDatUuTien: true,
+        ).catchError((e) => null),
+        onCaiDatKHUNGNUTBAMMUACHIENDAUCOCHONCHIDINHDANGCAPSAO00E03SS02(
+          value: KHUNGNUTBAMMUACHIENDAUCOCHONCHIDINHDANGCAPSAO00E03SS02(
+            globalStateManagementSystem: getGlobalStateManagementSystem,
+            gameController: getGameController,
+            thanhPhanQuanLyThuocCapTrucTiep: getThanhPhanQuanLyThuocCapTrucTiep,
+            sizeDx: 90.0,
+            sizeDy: 30.0,
+            positionDx: (sizeDxCost / 2.0) + 15.0,
+            positionDy: sizeDyKhungManHinh - (donViChieuRong * 8.5),
+            onTapCancelEvent: null,
+            onTapDownEvent: null,
+            onTapUpEvent: null,
+          ),
+          caiDatUuTien: true,
+        ).catchError((e) => null),
+        onCaiDatKHUNGNUTBAMMUACHIENDAUCOCHONCHIDINHDANGCAPSAO00E03SS03(
+          value: KHUNGNUTBAMMUACHIENDAUCOCHONCHIDINHDANGCAPSAO00E03SS03(
+            globalStateManagementSystem: getGlobalStateManagementSystem,
+            gameController: getGameController,
+            thanhPhanQuanLyThuocCapTrucTiep: getThanhPhanQuanLyThuocCapTrucTiep,
+            sizeDx: 90.0,
+            sizeDy: 30.0,
+            positionDx: (sizeDxCost / 2.0) + 15.0,
+            positionDy: sizeDyKhungManHinh - (donViChieuRong * 8.5),
+            onTapCancelEvent: null,
+            onTapDownEvent: null,
+            onTapUpEvent: null,
+          ),
+          caiDatUuTien: true,
+        ).catchError((e) => null),
+        onCaiDatKHUNGNUTBAMMUACHIENDAUCOCHONCHIDINHDANGCAPSAO00D04SS01(
+          value: KHUNGNUTBAMMUACHIENDAUCOCHONCHIDINHDANGCAPSAO00D04SS01(
+            globalStateManagementSystem: getGlobalStateManagementSystem,
+            gameController: getGameController,
+            thanhPhanQuanLyThuocCapTrucTiep: getThanhPhanQuanLyThuocCapTrucTiep,
+            sizeDx: 90.0,
+            sizeDy: 30.0,
+            positionDx: (sizeDxCost / 2.0) + 15.0,
+            positionDy: sizeDyKhungManHinh - (donViChieuRong * 8.5),
+            onTapCancelEvent: null,
+            onTapDownEvent: null,
+            onTapUpEvent: null,
+          ),
+          caiDatUuTien: true,
+        ).catchError((e) => null),
+        onCaiDatKHUNGNUTBAMMUACHIENDAUCOCHONCHIDINHDANGCAPSAO00C05SS01(
+          value: KHUNGNUTBAMMUACHIENDAUCOCHONCHIDINHDANGCAPSAO00C05SS01(
+            globalStateManagementSystem: getGlobalStateManagementSystem,
+            gameController: getGameController,
+            thanhPhanQuanLyThuocCapTrucTiep: getThanhPhanQuanLyThuocCapTrucTiep,
+            sizeDx: 90.0,
+            sizeDy: 30.0,
+            positionDx: (sizeDxCost / 2.0) + 15.0,
+            positionDy: sizeDyKhungManHinh - (donViChieuRong * 8.5),
+            onTapCancelEvent: null,
+            onTapDownEvent: null,
+            onTapUpEvent: null,
+          ),
+          caiDatUuTien: true,
+        ).catchError((e) => null),
+        onCaiDatKHUNGNUTBAMMUACHIENDAUCOCHONCHIDINHDANGCAPSAO00B06SS01(
+          value: KHUNGNUTBAMMUACHIENDAUCOCHONCHIDINHDANGCAPSAO00B06SS01(
+            globalStateManagementSystem: getGlobalStateManagementSystem,
+            gameController: getGameController,
+            thanhPhanQuanLyThuocCapTrucTiep: getThanhPhanQuanLyThuocCapTrucTiep,
+            sizeDx: 90.0,
+            sizeDy: 30.0,
+            positionDx: (sizeDxCost / 2.0) + 15.0,
+            positionDy: sizeDyKhungManHinh - (donViChieuRong * 8.5),
+            onTapCancelEvent: null,
+            onTapDownEvent: null,
+            onTapUpEvent: null,
+          ),
+          caiDatUuTien: true,
+        ).catchError((e) => null),
+        onCaiDatKHUNGNUTBAMMUACHIENDAUCOCHONCHIDINHDANGCAPSAO00A07SS01(
+          value: KHUNGNUTBAMMUACHIENDAUCOCHONCHIDINHDANGCAPSAO00A07SS01(
+            globalStateManagementSystem: getGlobalStateManagementSystem,
+            gameController: getGameController,
+            thanhPhanQuanLyThuocCapTrucTiep: getThanhPhanQuanLyThuocCapTrucTiep,
+            sizeDx: 90.0,
+            sizeDy: 30.0,
+            positionDx: (sizeDxCost / 2.0) + 15.0,
+            positionDy: sizeDyKhungManHinh - (donViChieuRong * 8.5),
+            onTapCancelEvent: null,
+            onTapDownEvent: null,
+            onTapUpEvent: null,
+          ),
+          caiDatUuTien: true,
+        ).catchError((e) => null),
+        onCaiDatKHUNGNUTBAMMUACHIENDAUCOCHONCHIDINHDANGCAPSAO00S08SS01(
+          value: KHUNGNUTBAMMUACHIENDAUCOCHONCHIDINHDANGCAPSAO00S08SS01(
+            globalStateManagementSystem: getGlobalStateManagementSystem,
+            gameController: getGameController,
+            thanhPhanQuanLyThuocCapTrucTiep: getThanhPhanQuanLyThuocCapTrucTiep,
+            sizeDx: 90.0,
+            sizeDy: 30.0,
+            positionDx: (sizeDxCost / 2.0) + 15.0,
+            positionDy: sizeDyKhungManHinh - (donViChieuRong * 8.5),
+            onTapCancelEvent: null,
+            onTapDownEvent: null,
+            onTapUpEvent: null,
+          ),
+          caiDatUuTien: true,
+        ).catchError((e) => null),
+        onCaiDatKHUNGNUTBAMMUACHIENDAUCOCHONCHIDINHDANGCAPSAO0SS09SS01(
+          value: KHUNGNUTBAMMUACHIENDAUCOCHONCHIDINHDANGCAPSAO0SS09SS01(
+            globalStateManagementSystem: getGlobalStateManagementSystem,
+            gameController: getGameController,
+            thanhPhanQuanLyThuocCapTrucTiep: getThanhPhanQuanLyThuocCapTrucTiep,
+            sizeDx: 90.0,
+            sizeDy: 30.0,
+            positionDx: (sizeDxCost / 2.0) + 15.0,
+            positionDy: sizeDyKhungManHinh - (donViChieuRong * 8.5),
+            onTapCancelEvent: null,
+            onTapDownEvent: null,
+            onTapUpEvent: null,
+          ),
+          caiDatUuTien: true,
+        ).catchError((e) => null),
+        onCaiDatKHUNGNUTBAMMUACHIENDAUCOCHONCHIDINHDANGCAPSAO0SS09SS02(
+          value: KHUNGNUTBAMMUACHIENDAUCOCHONCHIDINHDANGCAPSAO0SS09SS02(
+            globalStateManagementSystem: getGlobalStateManagementSystem,
+            gameController: getGameController,
+            thanhPhanQuanLyThuocCapTrucTiep: getThanhPhanQuanLyThuocCapTrucTiep,
+            sizeDx: 90.0,
+            sizeDy: 30.0,
+            positionDx: (sizeDxCost / 2.0) + 15.0,
+            positionDy: sizeDyKhungManHinh - (donViChieuRong * 8.5),
+            onTapCancelEvent: null,
+            onTapDownEvent: null,
+            onTapUpEvent: null,
+          ),
+          caiDatUuTien: true,
+        ).catchError((e) => null),
+        onCaiDatKHUNGNUTBAMMUACHIENDAUCOCHONCHIDINHDANGCAPSAO0SS09SS03(
+          value: KHUNGNUTBAMMUACHIENDAUCOCHONCHIDINHDANGCAPSAO0SS09SS03(
+            globalStateManagementSystem: getGlobalStateManagementSystem,
+            gameController: getGameController,
+            thanhPhanQuanLyThuocCapTrucTiep: getThanhPhanQuanLyThuocCapTrucTiep,
+            sizeDx: 90.0,
+            sizeDy: 30.0,
+            positionDx: (sizeDxCost / 2.0) + 15.0,
+            positionDy: sizeDyKhungManHinh - (donViChieuRong * 8.5),
+            onTapCancelEvent: null,
+            onTapDownEvent: null,
+            onTapUpEvent: null,
+          ),
+          caiDatUuTien: true,
+        ).catchError((e) => null),
+        onCaiDatKHUNGNUTBAMMUACHIENDAUCOCHONCHIDINHDANGCAPSAOSSS10SS01(
+          value: KHUNGNUTBAMMUACHIENDAUCOCHONCHIDINHDANGCAPSAOSSS10SS01(
+            globalStateManagementSystem: getGlobalStateManagementSystem,
+            gameController: getGameController,
+            thanhPhanQuanLyThuocCapTrucTiep: getThanhPhanQuanLyThuocCapTrucTiep,
+            sizeDx: 90.0,
+            sizeDy: 30.0,
+            positionDx: (sizeDxCost / 2.0) + 15.0,
+            positionDy: sizeDyKhungManHinh - (donViChieuRong * 8.5),
+            onTapCancelEvent: null,
+            onTapDownEvent: null,
+            onTapUpEvent: null,
+          ),
+          caiDatUuTien: true,
+        ).catchError((e) => null),
+        onCaiDatKHUNGNUTBAMMUACHIENDAUCOCHONCHIDINHDANGCAPSAOSSS10SS02(
+          value: KHUNGNUTBAMMUACHIENDAUCOCHONCHIDINHDANGCAPSAOSSS10SS02(
+            globalStateManagementSystem: getGlobalStateManagementSystem,
+            gameController: getGameController,
+            thanhPhanQuanLyThuocCapTrucTiep: getThanhPhanQuanLyThuocCapTrucTiep,
+            sizeDx: 90.0,
+            sizeDy: 30.0,
+            positionDx: (sizeDxCost / 2.0) + 15.0,
+            positionDy: sizeDyKhungManHinh - (donViChieuRong * 8.5),
+            onTapCancelEvent: null,
+            onTapDownEvent: null,
+            onTapUpEvent: null,
+          ),
+          caiDatUuTien: true,
+        ).catchError((e) => null),
+        onCaiDatKHUNGNUTBAMMUACHIENDAUCOCHONCHIDINHDANGCAPSAOSSS10SS03(
+          value: KHUNGNUTBAMMUACHIENDAUCOCHONCHIDINHDANGCAPSAOSSS10SS03(
+            globalStateManagementSystem: getGlobalStateManagementSystem,
+            gameController: getGameController,
+            thanhPhanQuanLyThuocCapTrucTiep: getThanhPhanQuanLyThuocCapTrucTiep,
+            sizeDx: 90.0,
+            sizeDy: 30.0,
+            positionDx: (sizeDxCost / 2.0) + 15.0,
+            positionDy: sizeDyKhungManHinh - (donViChieuRong * 8.5),
+            onTapCancelEvent: null,
+            onTapDownEvent: null,
+            onTapUpEvent: null,
+          ),
+          caiDatUuTien: true,
+        ).catchError((e) => null),
+        onCaiDatKHUNGNUTBAMMUACHIENDAUCOCHONCHIDINHDANGCAPSAOSSS10SS04(
+          value: KHUNGNUTBAMMUACHIENDAUCOCHONCHIDINHDANGCAPSAOSSS10SS04(
+            globalStateManagementSystem: getGlobalStateManagementSystem,
+            gameController: getGameController,
+            thanhPhanQuanLyThuocCapTrucTiep: getThanhPhanQuanLyThuocCapTrucTiep,
+            sizeDx: 90.0,
+            sizeDy: 30.0,
+            positionDx: (sizeDxCost / 2.0) + 15.0,
+            positionDy: sizeDyKhungManHinh - (donViChieuRong * 8.5),
+            onTapCancelEvent: null,
+            onTapDownEvent: null,
+            onTapUpEvent: null,
+          ),
+          caiDatUuTien: true,
+        ).catchError((e) => null),
+        onCaiDatKHUNGNUTBAMMUACHIENDAUCOCHONCHIDINHDANGCAPSAOSSS10SS05(
+          value: KHUNGNUTBAMMUACHIENDAUCOCHONCHIDINHDANGCAPSAOSSS10SS05(
+            globalStateManagementSystem: getGlobalStateManagementSystem,
+            gameController: getGameController,
+            thanhPhanQuanLyThuocCapTrucTiep: getThanhPhanQuanLyThuocCapTrucTiep,
+            sizeDx: 90.0,
+            sizeDy: 30.0,
+            positionDx: (sizeDxCost / 2.0) + 15.0,
+            positionDy: sizeDyKhungManHinh - (donViChieuRong * 8.5),
+            onTapCancelEvent: null,
+            onTapDownEvent: null,
+            onTapUpEvent: null,
+          ),
+          caiDatUuTien: true,
+        ).catchError((e) => null),
+
+        ///
+        ///
+        ///
         onCaiDatKhungDcsChienDauCo00E03SS01(
           value: KHUNGDCSCHIENDAUCODANGCAPSAO00E03SS01(
             globalStateManagementSystem: getGlobalStateManagementSystem,
@@ -2459,6 +2394,10 @@ class QUANLYTHANHPHANTICHHOPTHUOCCAP
         ).catchError((e) => null),
       ]);
 
+      ///
+      ///
+      ///
+
       if (_danhSachCardChienDauCo.isEmpty == true) {
         _danhSachCardChienDauCo.addAll([
           getCardChienDauCo00E03SS01,
@@ -2498,6 +2437,27 @@ class QUANLYTHANHPHANTICHHOPTHUOCCAP
           getCostChienDauCoSSS10SS03,
           getCostChienDauCoSSS10SS04,
           getCostChienDauCoSSS10SS05,
+        ]);
+      }
+
+      if (_danhSachNutBamMuaChienDauCo.isEmpty == true) {
+        _danhSachNutBamMuaChienDauCo.addAll([
+          getKHUNGNUTBAMMUACHIENDAUCOCHONCHIDINHDANGCAPSAO00E03SS01,
+          getKHUNGNUTBAMMUACHIENDAUCOCHONCHIDINHDANGCAPSAO00E03SS02,
+          getKHUNGNUTBAMMUACHIENDAUCOCHONCHIDINHDANGCAPSAO00E03SS03,
+          getKHUNGNUTBAMMUACHIENDAUCOCHONCHIDINHDANGCAPSAO00D04SS01,
+          getKHUNGNUTBAMMUACHIENDAUCOCHONCHIDINHDANGCAPSAO00C05SS01,
+          getKHUNGNUTBAMMUACHIENDAUCOCHONCHIDINHDANGCAPSAO00B06SS01,
+          getKHUNGNUTBAMMUACHIENDAUCOCHONCHIDINHDANGCAPSAO00A07SS01,
+          getKHUNGNUTBAMMUACHIENDAUCOCHONCHIDINHDANGCAPSAO00S08SS01,
+          getKHUNGNUTBAMMUACHIENDAUCOCHONCHIDINHDANGCAPSAO0SS09SS01,
+          getKHUNGNUTBAMMUACHIENDAUCOCHONCHIDINHDANGCAPSAO0SS09SS02,
+          getKHUNGNUTBAMMUACHIENDAUCOCHONCHIDINHDANGCAPSAO0SS09SS03,
+          getKHUNGNUTBAMMUACHIENDAUCOCHONCHIDINHDANGCAPSAOSSS10SS01,
+          getKHUNGNUTBAMMUACHIENDAUCOCHONCHIDINHDANGCAPSAOSSS10SS02,
+          getKHUNGNUTBAMMUACHIENDAUCOCHONCHIDINHDANGCAPSAOSSS10SS03,
+          getKHUNGNUTBAMMUACHIENDAUCOCHONCHIDINHDANGCAPSAOSSS10SS04,
+          getKHUNGNUTBAMMUACHIENDAUCOCHONCHIDINHDANGCAPSAOSSS10SS05,
         ]);
       }
 
@@ -2546,120 +2506,84 @@ class QUANLYTHANHPHANTICHHOPTHUOCCAP
       /// TODO:
       /// -----
       await Future.wait([
-        getNutBamChuyenChonChiDinhTrai?.onSetupRoot().catchError((e) => null) ??
-            onReportRootIssue(nameFunction: 'onSetupRootForSubCom'),
-        getNutBamChuyenChonChiDinhPhai?.onSetupRoot().catchError((e) => null) ??
-            onReportRootIssue(nameFunction: 'onSetupRootForSubCom'),
+        getNutBamChuyenChonChiDinhTrai?.onSetupRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onSetupRootForSubCom'),
+        getNutBamChuyenChonChiDinhPhai?.onSetupRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onSetupRootForSubCom'),
 
         ///
-        getCardChienDauCo00E03SS01?.onSetupRoot().catchError((e) => null) ??
-            onReportRootIssue(nameFunction: 'onSetupRootForSubCom'),
-        getCardChienDauCo00E03SS02?.onSetupRoot().catchError((e) => null) ??
-            onReportRootIssue(nameFunction: 'onSetupRootForSubCom'),
-        getCardChienDauCo00E03SS03?.onSetupRoot().catchError((e) => null) ??
-            onReportRootIssue(nameFunction: 'onSetupRootForSubCom'),
-        getCardChienDauCo00D04SS01?.onSetupRoot().catchError((e) => null) ??
-            onReportRootIssue(nameFunction: 'onSetupRootForSubCom'),
-        getCardChienDauCo00C05SS01?.onSetupRoot().catchError((e) => null) ??
-            onReportRootIssue(nameFunction: 'onSetupRootForSubCom'),
-        getCardChienDauCo00B06SS01?.onSetupRoot().catchError((e) => null) ??
-            onReportRootIssue(nameFunction: 'onSetupRootForSubCom'),
-        getCardChienDauCo00A07SS01?.onSetupRoot().catchError((e) => null) ??
-            onReportRootIssue(nameFunction: 'onSetupRootForSubCom'),
-        getCardChienDauCo00S08SS01?.onSetupRoot().catchError((e) => null) ??
-            onReportRootIssue(nameFunction: 'onSetupRootForSubCom'),
-        getCardChienDauCo0SS09SS01?.onSetupRoot().catchError((e) => null) ??
-            onReportRootIssue(nameFunction: 'onSetupRootForSubCom'),
-        getCardChienDauCo0SS09SS02?.onSetupRoot().catchError((e) => null) ??
-            onReportRootIssue(nameFunction: 'onSetupRootForSubCom'),
-        getCardChienDauCo0SS09SS03?.onSetupRoot().catchError((e) => null) ??
-            onReportRootIssue(nameFunction: 'onSetupRootForSubCom'),
-        getCardChienDauCoSSS10SS01?.onSetupRoot().catchError((e) => null) ??
-            onReportRootIssue(nameFunction: 'onSetupRootForSubCom'),
-        getCardChienDauCoSSS10SS02?.onSetupRoot().catchError((e) => null) ??
-            onReportRootIssue(nameFunction: 'onSetupRootForSubCom'),
-        getCardChienDauCoSSS10SS03?.onSetupRoot().catchError((e) => null) ??
-            onReportRootIssue(nameFunction: 'onSetupRootForSubCom'),
-        getCardChienDauCoSSS10SS04?.onSetupRoot().catchError((e) => null) ??
-            onReportRootIssue(nameFunction: 'onSetupRootForSubCom'),
-        getCardChienDauCoSSS10SS05?.onSetupRoot().catchError((e) => null) ??
-            onReportRootIssue(nameFunction: 'onSetupRootForSubCom'),
+        getCardChienDauCo00E03SS01?.onSetupRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onSetupRootForSubCom'),
+        getCardChienDauCo00E03SS02?.onSetupRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onSetupRootForSubCom'),
+        getCardChienDauCo00E03SS03?.onSetupRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onSetupRootForSubCom'),
+        getCardChienDauCo00D04SS01?.onSetupRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onSetupRootForSubCom'),
+        getCardChienDauCo00C05SS01?.onSetupRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onSetupRootForSubCom'),
+        getCardChienDauCo00B06SS01?.onSetupRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onSetupRootForSubCom'),
+        getCardChienDauCo00A07SS01?.onSetupRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onSetupRootForSubCom'),
+        getCardChienDauCo00S08SS01?.onSetupRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onSetupRootForSubCom'),
+        getCardChienDauCo0SS09SS01?.onSetupRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onSetupRootForSubCom'),
+        getCardChienDauCo0SS09SS02?.onSetupRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onSetupRootForSubCom'),
+        getCardChienDauCo0SS09SS03?.onSetupRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onSetupRootForSubCom'),
+        getCardChienDauCoSSS10SS01?.onSetupRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onSetupRootForSubCom'),
+        getCardChienDauCoSSS10SS02?.onSetupRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onSetupRootForSubCom'),
+        getCardChienDauCoSSS10SS03?.onSetupRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onSetupRootForSubCom'),
+        getCardChienDauCoSSS10SS04?.onSetupRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onSetupRootForSubCom'),
+        getCardChienDauCoSSS10SS05?.onSetupRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onSetupRootForSubCom'),
 
         ///
-        getCostChienDauCo00E03SS01?.onSetupRoot().catchError((e) => null) ??
-            onReportRootIssue(nameFunction: 'onSetupRootForSubCom'),
-        getCostChienDauCo00E03SS02?.onSetupRoot().catchError((e) => null) ??
-            onReportRootIssue(nameFunction: 'onSetupRootForSubCom'),
-        getCostChienDauCo00E03SS03?.onSetupRoot().catchError((e) => null) ??
-            onReportRootIssue(nameFunction: 'onSetupRootForSubCom'),
-        getCostChienDauCo00D04SS01?.onSetupRoot().catchError((e) => null) ??
-            onReportRootIssue(nameFunction: 'onSetupRootForSubCom'),
-        getCostChienDauCo00C05SS01?.onSetupRoot().catchError((e) => null) ??
-            onReportRootIssue(nameFunction: 'onSetupRootForSubCom'),
-        getCostChienDauCo00B06SS01?.onSetupRoot().catchError((e) => null) ??
-            onReportRootIssue(nameFunction: 'onSetupRootForSubCom'),
-        getCostChienDauCo00A07SS01?.onSetupRoot().catchError((e) => null) ??
-            onReportRootIssue(nameFunction: 'onSetupRootForSubCom'),
-        getCostChienDauCo00S08SS01?.onSetupRoot().catchError((e) => null) ??
-            onReportRootIssue(nameFunction: 'onSetupRootForSubCom'),
-        getCostChienDauCo0SS09SS01?.onSetupRoot().catchError((e) => null) ??
-            onReportRootIssue(nameFunction: 'onSetupRootForSubCom'),
-        getCostChienDauCo0SS09SS02?.onSetupRoot().catchError((e) => null) ??
-            onReportRootIssue(nameFunction: 'onSetupRootForSubCom'),
-        getCostChienDauCo0SS09SS03?.onSetupRoot().catchError((e) => null) ??
-            onReportRootIssue(nameFunction: 'onSetupRootForSubCom'),
-        getCostChienDauCoSSS10SS01?.onSetupRoot().catchError((e) => null) ??
-            onReportRootIssue(nameFunction: 'onSetupRootForSubCom'),
-        getCostChienDauCoSSS10SS02?.onSetupRoot().catchError((e) => null) ??
-            onReportRootIssue(nameFunction: 'onSetupRootForSubCom'),
-        getCostChienDauCoSSS10SS03?.onSetupRoot().catchError((e) => null) ??
-            onReportRootIssue(nameFunction: 'onSetupRootForSubCom'),
-        getCostChienDauCoSSS10SS04?.onSetupRoot().catchError((e) => null) ??
-            onReportRootIssue(nameFunction: 'onSetupRootForSubCom'),
-        getCostChienDauCoSSS10SS05?.onSetupRoot().catchError((e) => null) ??
-            onReportRootIssue(nameFunction: 'onSetupRootForSubCom'),
+        getCostChienDauCo00E03SS01?.onSetupRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onSetupRootForSubCom'),
+        getCostChienDauCo00E03SS02?.onSetupRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onSetupRootForSubCom'),
+        getCostChienDauCo00E03SS03?.onSetupRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onSetupRootForSubCom'),
+        getCostChienDauCo00D04SS01?.onSetupRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onSetupRootForSubCom'),
+        getCostChienDauCo00C05SS01?.onSetupRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onSetupRootForSubCom'),
+        getCostChienDauCo00B06SS01?.onSetupRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onSetupRootForSubCom'),
+        getCostChienDauCo00A07SS01?.onSetupRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onSetupRootForSubCom'),
+        getCostChienDauCo00S08SS01?.onSetupRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onSetupRootForSubCom'),
+        getCostChienDauCo0SS09SS01?.onSetupRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onSetupRootForSubCom'),
+        getCostChienDauCo0SS09SS02?.onSetupRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onSetupRootForSubCom'),
+        getCostChienDauCo0SS09SS03?.onSetupRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onSetupRootForSubCom'),
+        getCostChienDauCoSSS10SS01?.onSetupRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onSetupRootForSubCom'),
+        getCostChienDauCoSSS10SS02?.onSetupRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onSetupRootForSubCom'),
+        getCostChienDauCoSSS10SS03?.onSetupRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onSetupRootForSubCom'),
+        getCostChienDauCoSSS10SS04?.onSetupRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onSetupRootForSubCom'),
+        getCostChienDauCoSSS10SS05?.onSetupRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onSetupRootForSubCom'),
 
         ///
-        getKhungDcsChienDauCo00E03SS01?.onSetupRoot().catchError((e) => null) ??
-            onReportRootIssue(nameFunction: 'onSetupRootForSubCom'),
-        getKhungDcsChienDauCo00E03SS02?.onSetupRoot().catchError((e) => null) ??
-            onReportRootIssue(nameFunction: 'onSetupRootForSubCom'),
-        getKhungDcsChienDauCo00E03SS03?.onSetupRoot().catchError((e) => null) ??
-            onReportRootIssue(nameFunction: 'onSetupRootForSubCom'),
-        getKhungDcsChienDauCo00D04SS01?.onSetupRoot().catchError((e) => null) ??
-            onReportRootIssue(nameFunction: 'onSetupRootForSubCom'),
-        getKhungDcsChienDauCo00C05SS01?.onSetupRoot().catchError((e) => null) ??
-            onReportRootIssue(nameFunction: 'onSetupRootForSubCom'),
-        getKhungDcsChienDauCo00B06SS01?.onSetupRoot().catchError((e) => null) ??
-            onReportRootIssue(nameFunction: 'onSetupRootForSubCom'),
-        getKhungDcsChienDauCo00A07SS01?.onSetupRoot().catchError((e) => null) ??
-            onReportRootIssue(nameFunction: 'onSetupRootForSubCom'),
-        getKhungDcsChienDauCo00S08SS01?.onSetupRoot().catchError((e) => null) ??
-            onReportRootIssue(nameFunction: 'onSetupRootForSubCom'),
-        getKhungDcsChienDauCo0SS09SS01?.onSetupRoot().catchError((e) => null) ??
-            onReportRootIssue(nameFunction: 'onSetupRootForSubCom'),
-        getKhungDcsChienDauCo0SS09SS02?.onSetupRoot().catchError((e) => null) ??
-            onReportRootIssue(nameFunction: 'onSetupRootForSubCom'),
-        getKhungDcsChienDauCo0SS09SS03?.onSetupRoot().catchError((e) => null) ??
-            onReportRootIssue(nameFunction: 'onSetupRootForSubCom'),
-        getKhungDcsChienDauCoSSS10SS01?.onSetupRoot().catchError((e) => null) ??
-            onReportRootIssue(nameFunction: 'onSetupRootForSubCom'),
-        getKhungDcsChienDauCoSSS10SS02?.onSetupRoot().catchError((e) => null) ??
-            onReportRootIssue(nameFunction: 'onSetupRootForSubCom'),
-        getKhungDcsChienDauCoSSS10SS03?.onSetupRoot().catchError((e) => null) ??
-            onReportRootIssue(nameFunction: 'onSetupRootForSubCom'),
-        getKhungDcsChienDauCoSSS10SS04?.onSetupRoot().catchError((e) => null) ??
-            onReportRootIssue(nameFunction: 'onSetupRootForSubCom'),
-        getKhungDcsChienDauCoSSS10SS05?.onSetupRoot().catchError((e) => null) ??
-            onReportRootIssue(nameFunction: 'onSetupRootForSubCom'),
+        getKHUNGNUTBAMMUACHIENDAUCOCHONCHIDINHDANGCAPSAO00E03SS01?.onSetupRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onSetupRootForSubCom'),
+        getKHUNGNUTBAMMUACHIENDAUCOCHONCHIDINHDANGCAPSAO00E03SS02?.onSetupRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onSetupRootForSubCom'),
+        getKHUNGNUTBAMMUACHIENDAUCOCHONCHIDINHDANGCAPSAO00E03SS03?.onSetupRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onSetupRootForSubCom'),
+        getKHUNGNUTBAMMUACHIENDAUCOCHONCHIDINHDANGCAPSAO00D04SS01?.onSetupRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onSetupRootForSubCom'),
+        getKHUNGNUTBAMMUACHIENDAUCOCHONCHIDINHDANGCAPSAO00C05SS01?.onSetupRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onSetupRootForSubCom'),
+        getKHUNGNUTBAMMUACHIENDAUCOCHONCHIDINHDANGCAPSAO00B06SS01?.onSetupRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onSetupRootForSubCom'),
+        getKHUNGNUTBAMMUACHIENDAUCOCHONCHIDINHDANGCAPSAO00A07SS01?.onSetupRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onSetupRootForSubCom'),
+        getKHUNGNUTBAMMUACHIENDAUCOCHONCHIDINHDANGCAPSAO00S08SS01?.onSetupRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onSetupRootForSubCom'),
+        getKHUNGNUTBAMMUACHIENDAUCOCHONCHIDINHDANGCAPSAO0SS09SS01?.onSetupRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onSetupRootForSubCom'),
+        getKHUNGNUTBAMMUACHIENDAUCOCHONCHIDINHDANGCAPSAO0SS09SS02?.onSetupRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onSetupRootForSubCom'),
+        getKHUNGNUTBAMMUACHIENDAUCOCHONCHIDINHDANGCAPSAO0SS09SS03?.onSetupRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onSetupRootForSubCom'),
+        getKHUNGNUTBAMMUACHIENDAUCOCHONCHIDINHDANGCAPSAOSSS10SS01?.onSetupRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onSetupRootForSubCom'),
+        getKHUNGNUTBAMMUACHIENDAUCOCHONCHIDINHDANGCAPSAOSSS10SS02?.onSetupRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onSetupRootForSubCom'),
+        getKHUNGNUTBAMMUACHIENDAUCOCHONCHIDINHDANGCAPSAOSSS10SS03?.onSetupRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onSetupRootForSubCom'),
+        getKHUNGNUTBAMMUACHIENDAUCOCHONCHIDINHDANGCAPSAOSSS10SS04?.onSetupRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onSetupRootForSubCom'),
+        getKHUNGNUTBAMMUACHIENDAUCOCHONCHIDINHDANGCAPSAOSSS10SS05?.onSetupRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onSetupRootForSubCom'),
 
         ///
-        getCardChienDauCoChonChiDinh?.onSetupRoot().catchError((e) => null) ??
-            onReportRootIssue(nameFunction: 'onSetupRootForSubCom'),
-        getKhungNutBamMuaChienDauCoChonChiDinh?.onSetupRoot().catchError(
-              (e) => null,
-            ) ??
-            onReportRootIssue(nameFunction: 'onSetupRootForSubCom'),
+        getKhungDcsChienDauCo00E03SS01?.onSetupRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onSetupRootForSubCom'),
+        getKhungDcsChienDauCo00E03SS02?.onSetupRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onSetupRootForSubCom'),
+        getKhungDcsChienDauCo00E03SS03?.onSetupRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onSetupRootForSubCom'),
+        getKhungDcsChienDauCo00D04SS01?.onSetupRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onSetupRootForSubCom'),
+        getKhungDcsChienDauCo00C05SS01?.onSetupRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onSetupRootForSubCom'),
+        getKhungDcsChienDauCo00B06SS01?.onSetupRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onSetupRootForSubCom'),
+        getKhungDcsChienDauCo00A07SS01?.onSetupRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onSetupRootForSubCom'),
+        getKhungDcsChienDauCo00S08SS01?.onSetupRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onSetupRootForSubCom'),
+        getKhungDcsChienDauCo0SS09SS01?.onSetupRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onSetupRootForSubCom'),
+        getKhungDcsChienDauCo0SS09SS02?.onSetupRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onSetupRootForSubCom'),
+        getKhungDcsChienDauCo0SS09SS03?.onSetupRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onSetupRootForSubCom'),
+        getKhungDcsChienDauCoSSS10SS01?.onSetupRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onSetupRootForSubCom'),
+        getKhungDcsChienDauCoSSS10SS02?.onSetupRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onSetupRootForSubCom'),
+        getKhungDcsChienDauCoSSS10SS03?.onSetupRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onSetupRootForSubCom'),
+        getKhungDcsChienDauCoSSS10SS04?.onSetupRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onSetupRootForSubCom'),
+        getKhungDcsChienDauCoSSS10SS05?.onSetupRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onSetupRootForSubCom'),
+
+        ///
+        getCardChienDauCoChonChiDinh?.onSetupRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onSetupRootForSubCom'),
+        getKhungNutBamMuaChienDauCoChonChiDinh?.onSetupRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onSetupRootForSubCom'),
       ]);
     } catch (e) {
       await onReportRootIssue(nameFunction: 'onSetupRootForSubCom');
@@ -2681,124 +2605,91 @@ class QUANLYTHANHPHANTICHHOPTHUOCCAP
       /// TODO:
       /// -----
       await Future.wait([
-        getNutBamChuyenChonChiDinhTrai?.onInitRoot().catchError((e) => null) ??
-            onReportRootIssue(nameFunction: 'onInitRootForSubCom'),
-        getNutBamChuyenChonChiDinhPhai?.onInitRoot().catchError((e) => null) ??
-            onReportRootIssue(nameFunction: 'onInitRootForSubCom'),
+        getNutBamChuyenChonChiDinhTrai?.onInitRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onInitRootForSubCom'),
+        getNutBamChuyenChonChiDinhPhai?.onInitRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onInitRootForSubCom'),
 
         ///
-        getCardChienDauCo00E03SS01?.onInitRoot().catchError((e) => null) ??
-            onReportRootIssue(nameFunction: 'onInitRootForSubCom'),
-        getCardChienDauCo00E03SS02?.onInitRoot().catchError((e) => null) ??
-            onReportRootIssue(nameFunction: 'onInitRootForSubCom'),
-        getCardChienDauCo00E03SS03?.onInitRoot().catchError((e) => null) ??
-            onReportRootIssue(nameFunction: 'onInitRootForSubCom'),
-        getCardChienDauCo00D04SS01?.onInitRoot().catchError((e) => null) ??
-            onReportRootIssue(nameFunction: 'onInitRootForSubCom'),
-        getCardChienDauCo00C05SS01?.onInitRoot().catchError((e) => null) ??
-            onReportRootIssue(nameFunction: 'onInitRootForSubCom'),
-        getCardChienDauCo00B06SS01?.onInitRoot().catchError((e) => null) ??
-            onReportRootIssue(nameFunction: 'onInitRootForSubCom'),
-        getCardChienDauCo00A07SS01?.onInitRoot().catchError((e) => null) ??
-            onReportRootIssue(nameFunction: 'onInitRootForSubCom'),
-        getCardChienDauCo00S08SS01?.onInitRoot().catchError((e) => null) ??
-            onReportRootIssue(nameFunction: 'onInitRootForSubCom'),
-        getCardChienDauCo0SS09SS01?.onInitRoot().catchError((e) => null) ??
-            onReportRootIssue(nameFunction: 'onInitRootForSubCom'),
-        getCardChienDauCo0SS09SS02?.onInitRoot().catchError((e) => null) ??
-            onReportRootIssue(nameFunction: 'onInitRootForSubCom'),
-        getCardChienDauCo0SS09SS03?.onInitRoot().catchError((e) => null) ??
-            onReportRootIssue(nameFunction: 'onInitRootForSubCom'),
-        getCardChienDauCoSSS10SS01?.onInitRoot().catchError((e) => null) ??
-            onReportRootIssue(nameFunction: 'onInitRootForSubCom'),
-        getCardChienDauCoSSS10SS02?.onInitRoot().catchError((e) => null) ??
-            onReportRootIssue(nameFunction: 'onInitRootForSubCom'),
-        getCardChienDauCoSSS10SS03?.onInitRoot().catchError((e) => null) ??
-            onReportRootIssue(nameFunction: 'onInitRootForSubCom'),
-        getCardChienDauCoSSS10SS04?.onInitRoot().catchError((e) => null) ??
-            onReportRootIssue(nameFunction: 'onInitRootForSubCom'),
-        getCardChienDauCoSSS10SS05?.onInitRoot().catchError((e) => null) ??
-            onReportRootIssue(nameFunction: 'onInitRootForSubCom'),
+        getCardChienDauCo00E03SS01?.onInitRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onInitRootForSubCom'),
+        getCardChienDauCo00E03SS02?.onInitRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onInitRootForSubCom'),
+        getCardChienDauCo00E03SS03?.onInitRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onInitRootForSubCom'),
+        getCardChienDauCo00D04SS01?.onInitRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onInitRootForSubCom'),
+        getCardChienDauCo00C05SS01?.onInitRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onInitRootForSubCom'),
+        getCardChienDauCo00B06SS01?.onInitRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onInitRootForSubCom'),
+        getCardChienDauCo00A07SS01?.onInitRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onInitRootForSubCom'),
+        getCardChienDauCo00S08SS01?.onInitRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onInitRootForSubCom'),
+        getCardChienDauCo0SS09SS01?.onInitRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onInitRootForSubCom'),
+        getCardChienDauCo0SS09SS02?.onInitRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onInitRootForSubCom'),
+        getCardChienDauCo0SS09SS03?.onInitRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onInitRootForSubCom'),
+        getCardChienDauCoSSS10SS01?.onInitRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onInitRootForSubCom'),
+        getCardChienDauCoSSS10SS02?.onInitRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onInitRootForSubCom'),
+        getCardChienDauCoSSS10SS03?.onInitRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onInitRootForSubCom'),
+        getCardChienDauCoSSS10SS04?.onInitRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onInitRootForSubCom'),
+        getCardChienDauCoSSS10SS05?.onInitRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onInitRootForSubCom'),
 
         ///
-        getCostChienDauCo00E03SS01?.onInitRoot().catchError((e) => null) ??
-            onReportRootIssue(nameFunction: 'onInitRootForSubCom'),
-        getCostChienDauCo00E03SS02?.onInitRoot().catchError((e) => null) ??
-            onReportRootIssue(nameFunction: 'onInitRootForSubCom'),
-        getCostChienDauCo00E03SS03?.onInitRoot().catchError((e) => null) ??
-            onReportRootIssue(nameFunction: 'onInitRootForSubCom'),
-        getCostChienDauCo00D04SS01?.onInitRoot().catchError((e) => null) ??
-            onReportRootIssue(nameFunction: 'onInitRootForSubCom'),
-        getCostChienDauCo00C05SS01?.onInitRoot().catchError((e) => null) ??
-            onReportRootIssue(nameFunction: 'onInitRootForSubCom'),
-        getCostChienDauCo00B06SS01?.onInitRoot().catchError((e) => null) ??
-            onReportRootIssue(nameFunction: 'onInitRootForSubCom'),
-        getCostChienDauCo00A07SS01?.onInitRoot().catchError((e) => null) ??
-            onReportRootIssue(nameFunction: 'onInitRootForSubCom'),
-        getCostChienDauCo00S08SS01?.onInitRoot().catchError((e) => null) ??
-            onReportRootIssue(nameFunction: 'onInitRootForSubCom'),
-        getCostChienDauCo0SS09SS01?.onInitRoot().catchError((e) => null) ??
-            onReportRootIssue(nameFunction: 'onInitRootForSubCom'),
-        getCostChienDauCo0SS09SS02?.onInitRoot().catchError((e) => null) ??
-            onReportRootIssue(nameFunction: 'onInitRootForSubCom'),
-        getCostChienDauCo0SS09SS03?.onInitRoot().catchError((e) => null) ??
-            onReportRootIssue(nameFunction: 'onInitRootForSubCom'),
-        getCostChienDauCoSSS10SS01?.onInitRoot().catchError((e) => null) ??
-            onReportRootIssue(nameFunction: 'onInitRootForSubCom'),
-        getCostChienDauCoSSS10SS02?.onInitRoot().catchError((e) => null) ??
-            onReportRootIssue(nameFunction: 'onInitRootForSubCom'),
-        getCostChienDauCoSSS10SS03?.onInitRoot().catchError((e) => null) ??
-            onReportRootIssue(nameFunction: 'onInitRootForSubCom'),
-        getCostChienDauCoSSS10SS04?.onInitRoot().catchError((e) => null) ??
-            onReportRootIssue(nameFunction: 'onInitRootForSubCom'),
-        getCostChienDauCoSSS10SS05?.onInitRoot().catchError((e) => null) ??
-            onReportRootIssue(nameFunction: 'onInitRootForSubCom'),
+        getCostChienDauCo00E03SS01?.onInitRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onInitRootForSubCom'),
+        getCostChienDauCo00E03SS02?.onInitRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onInitRootForSubCom'),
+        getCostChienDauCo00E03SS03?.onInitRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onInitRootForSubCom'),
+        getCostChienDauCo00D04SS01?.onInitRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onInitRootForSubCom'),
+        getCostChienDauCo00C05SS01?.onInitRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onInitRootForSubCom'),
+        getCostChienDauCo00B06SS01?.onInitRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onInitRootForSubCom'),
+        getCostChienDauCo00A07SS01?.onInitRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onInitRootForSubCom'),
+        getCostChienDauCo00S08SS01?.onInitRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onInitRootForSubCom'),
+        getCostChienDauCo0SS09SS01?.onInitRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onInitRootForSubCom'),
+        getCostChienDauCo0SS09SS02?.onInitRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onInitRootForSubCom'),
+        getCostChienDauCo0SS09SS03?.onInitRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onInitRootForSubCom'),
+        getCostChienDauCoSSS10SS01?.onInitRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onInitRootForSubCom'),
+        getCostChienDauCoSSS10SS02?.onInitRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onInitRootForSubCom'),
+        getCostChienDauCoSSS10SS03?.onInitRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onInitRootForSubCom'),
+        getCostChienDauCoSSS10SS04?.onInitRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onInitRootForSubCom'),
+        getCostChienDauCoSSS10SS05?.onInitRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onInitRootForSubCom'),
 
         ///
-        getKhungDcsChienDauCo00E03SS01?.onInitRoot().catchError((e) => null) ??
-            onReportRootIssue(nameFunction: 'onInitRootForSubCom'),
-        getKhungDcsChienDauCo00E03SS02?.onInitRoot().catchError((e) => null) ??
-            onReportRootIssue(nameFunction: 'onInitRootForSubCom'),
-        getKhungDcsChienDauCo00E03SS03?.onInitRoot().catchError((e) => null) ??
-            onReportRootIssue(nameFunction: 'onInitRootForSubCom'),
-        getKhungDcsChienDauCo00D04SS01?.onInitRoot().catchError((e) => null) ??
-            onReportRootIssue(nameFunction: 'onInitRootForSubCom'),
-        getKhungDcsChienDauCo00C05SS01?.onInitRoot().catchError((e) => null) ??
-            onReportRootIssue(nameFunction: 'onInitRootForSubCom'),
-        getKhungDcsChienDauCo00B06SS01?.onInitRoot().catchError((e) => null) ??
-            onReportRootIssue(nameFunction: 'onInitRootForSubCom'),
-        getKhungDcsChienDauCo00A07SS01?.onInitRoot().catchError((e) => null) ??
-            onReportRootIssue(nameFunction: 'onInitRootForSubCom'),
-        getKhungDcsChienDauCo00S08SS01?.onInitRoot().catchError((e) => null) ??
-            onReportRootIssue(nameFunction: 'onInitRootForSubCom'),
-        getKhungDcsChienDauCo0SS09SS01?.onInitRoot().catchError((e) => null) ??
-            onReportRootIssue(nameFunction: 'onInitRootForSubCom'),
-        getKhungDcsChienDauCo0SS09SS02?.onInitRoot().catchError((e) => null) ??
-            onReportRootIssue(nameFunction: 'onInitRootForSubCom'),
-        getKhungDcsChienDauCo0SS09SS03?.onInitRoot().catchError((e) => null) ??
-            onReportRootIssue(nameFunction: 'onInitRootForSubCom'),
-        getKhungDcsChienDauCoSSS10SS01?.onInitRoot().catchError((e) => null) ??
-            onReportRootIssue(nameFunction: 'onInitRootForSubCom'),
-        getKhungDcsChienDauCoSSS10SS02?.onInitRoot().catchError((e) => null) ??
-            onReportRootIssue(nameFunction: 'onInitRootForSubCom'),
-        getKhungDcsChienDauCoSSS10SS03?.onInitRoot().catchError((e) => null) ??
-            onReportRootIssue(nameFunction: 'onInitRootForSubCom'),
-        getKhungDcsChienDauCoSSS10SS04?.onInitRoot().catchError((e) => null) ??
-            onReportRootIssue(nameFunction: 'onInitRootForSubCom'),
-        getKhungDcsChienDauCoSSS10SS05?.onInitRoot().catchError((e) => null) ??
-            onReportRootIssue(nameFunction: 'onInitRootForSubCom'),
+        getKHUNGNUTBAMMUACHIENDAUCOCHONCHIDINHDANGCAPSAO00E03SS01?.onInitRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onInitRootForSubCom'),
+        getKHUNGNUTBAMMUACHIENDAUCOCHONCHIDINHDANGCAPSAO00E03SS02?.onInitRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onInitRootForSubCom'),
+        getKHUNGNUTBAMMUACHIENDAUCOCHONCHIDINHDANGCAPSAO00E03SS03?.onInitRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onInitRootForSubCom'),
+        getKHUNGNUTBAMMUACHIENDAUCOCHONCHIDINHDANGCAPSAO00D04SS01?.onInitRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onInitRootForSubCom'),
+        getKHUNGNUTBAMMUACHIENDAUCOCHONCHIDINHDANGCAPSAO00C05SS01?.onInitRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onInitRootForSubCom'),
+        getKHUNGNUTBAMMUACHIENDAUCOCHONCHIDINHDANGCAPSAO00B06SS01?.onInitRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onInitRootForSubCom'),
+        getKHUNGNUTBAMMUACHIENDAUCOCHONCHIDINHDANGCAPSAO00A07SS01?.onInitRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onInitRootForSubCom'),
+        getKHUNGNUTBAMMUACHIENDAUCOCHONCHIDINHDANGCAPSAO00S08SS01?.onInitRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onInitRootForSubCom'),
+        getKHUNGNUTBAMMUACHIENDAUCOCHONCHIDINHDANGCAPSAO0SS09SS01?.onInitRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onInitRootForSubCom'),
+        getKHUNGNUTBAMMUACHIENDAUCOCHONCHIDINHDANGCAPSAO0SS09SS02?.onInitRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onInitRootForSubCom'),
+        getKHUNGNUTBAMMUACHIENDAUCOCHONCHIDINHDANGCAPSAO0SS09SS03?.onInitRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onInitRootForSubCom'),
+        getKHUNGNUTBAMMUACHIENDAUCOCHONCHIDINHDANGCAPSAOSSS10SS01?.onInitRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onInitRootForSubCom'),
+        getKHUNGNUTBAMMUACHIENDAUCOCHONCHIDINHDANGCAPSAOSSS10SS02?.onInitRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onInitRootForSubCom'),
+        getKHUNGNUTBAMMUACHIENDAUCOCHONCHIDINHDANGCAPSAOSSS10SS03?.onInitRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onInitRootForSubCom'),
+        getKHUNGNUTBAMMUACHIENDAUCOCHONCHIDINHDANGCAPSAOSSS10SS04?.onInitRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onInitRootForSubCom'),
+        getKHUNGNUTBAMMUACHIENDAUCOCHONCHIDINHDANGCAPSAOSSS10SS05?.onInitRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onInitRootForSubCom'),
 
         ///
-        getCardChienDauCoChonChiDinh?.onInitRoot().catchError((e) => null) ??
-            onReportRootIssue(nameFunction: 'onInitRootForSubCom'),
-        getKhungNutBamMuaChienDauCoChonChiDinh?.onInitRoot().catchError(
-              (e) => null,
-            ) ??
-            onReportRootIssue(nameFunction: 'onInitRootForSubCom'),
+        getKhungDcsChienDauCo00E03SS01?.onInitRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onInitRootForSubCom'),
+        getKhungDcsChienDauCo00E03SS02?.onInitRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onInitRootForSubCom'),
+        getKhungDcsChienDauCo00E03SS03?.onInitRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onInitRootForSubCom'),
+        getKhungDcsChienDauCo00D04SS01?.onInitRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onInitRootForSubCom'),
+        getKhungDcsChienDauCo00C05SS01?.onInitRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onInitRootForSubCom'),
+        getKhungDcsChienDauCo00B06SS01?.onInitRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onInitRootForSubCom'),
+        getKhungDcsChienDauCo00A07SS01?.onInitRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onInitRootForSubCom'),
+        getKhungDcsChienDauCo00S08SS01?.onInitRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onInitRootForSubCom'),
+        getKhungDcsChienDauCo0SS09SS01?.onInitRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onInitRootForSubCom'),
+        getKhungDcsChienDauCo0SS09SS02?.onInitRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onInitRootForSubCom'),
+        getKhungDcsChienDauCo0SS09SS03?.onInitRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onInitRootForSubCom'),
+        getKhungDcsChienDauCoSSS10SS01?.onInitRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onInitRootForSubCom'),
+        getKhungDcsChienDauCoSSS10SS02?.onInitRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onInitRootForSubCom'),
+        getKhungDcsChienDauCoSSS10SS03?.onInitRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onInitRootForSubCom'),
+        getKhungDcsChienDauCoSSS10SS04?.onInitRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onInitRootForSubCom'),
+        getKhungDcsChienDauCoSSS10SS05?.onInitRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onInitRootForSubCom'),
+
+        ///
+        getCardChienDauCoChonChiDinh?.onInitRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onInitRootForSubCom'),
+        getKhungNutBamMuaChienDauCoChonChiDinh?.onInitRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onInitRootForSubCom'),
       ]);
     } catch (e) {
       await onReportRootIssue(nameFunction: 'onInitRootForSubCom');
     }
+
+    await getNutBamChuyenChonChiDinhTrai?.onKichHoatThanhPhanThuocCap();
+    await getNutBamChuyenChonChiDinhPhai?.onKichHoatThanhPhanThuocCap();
 
     /// -----
     /// TODO: Chọn Mặc Định
@@ -2814,20 +2705,23 @@ class QUANLYTHANHPHANTICHHOPTHUOCCAP
     /// TODO:
     /// -----
     if (getDanhSachCardChienDauCo.isNotEmpty == true) {
-      for (THANHPHANNUTBAMTICHHOPTHUOCCAP? thanhPhan
-          in getDanhSachCardChienDauCo) {
+      for (THANHPHANNUTBAMTICHHOPTHUOCCAP? thanhPhan in getDanhSachCardChienDauCo) {
         thanhPhan?.onVoidHuyKichHoat();
       }
     }
     if (getDanhSachCostChienDauCo.isNotEmpty == true) {
-      for (THANHPHANTICHHOPSPRITEANIMATIONVANBANTHUOCCAP? thanhPhan
-          in getDanhSachCostChienDauCo) {
+      for (THANHPHANTICHHOPSPRITEANIMATIONVANBANTHUOCCAP? thanhPhan in getDanhSachCostChienDauCo) {
         thanhPhan?.onHuyKichHoatThanhPhanThuocCap();
       }
     }
+    if (getDanhSachNutBamMuaChienDauCo.isNotEmpty == true) {
+      for (THANHPHANNUTBAMTHUOCCAPTHUANKICHHOAT? thanhPhan in getDanhSachNutBamMuaChienDauCo) {
+        thanhPhan?.onHuyKichHoatThanhPhanThuocCap();
+      }
+    }
+
     if (getDanhSachKhungDcsChienDauCo.isNotEmpty == true) {
-      for (THANHPHANTICHHOPSPRITEANIMATIONTHUOCCAP? thanhPhan
-          in getDanhSachKhungDcsChienDauCo) {
+      for (THANHPHANTICHHOPSPRITEANIMATIONTHUOCCAP? thanhPhan in getDanhSachKhungDcsChienDauCo) {
         thanhPhan?.onHuyKichHoatThanhPhanThuocCap();
       }
     }
@@ -2842,12 +2736,9 @@ class QUANLYTHANHPHANTICHHOPTHUOCCAP
       await onHuyChonChiDinhChienDauCo();
 
       getCardChienDauCo00E03SS01?.onVoidKichHoat();
-      getCostChienDauCo00E03SS01?.onKichHoatThanhPhanThuocCap(
-        kichHoatUuTien: true,
-      );
-      getKhungDcsChienDauCo00E03SS01?.onKichHoatThanhPhanThuocCap(
-        kichHoatUuTien: true,
-      );
+      getCostChienDauCo00E03SS01?.onKichHoatThanhPhanThuocCap(kichHoatUuTien: true);
+      getKHUNGNUTBAMMUACHIENDAUCOCHONCHIDINHDANGCAPSAO00E03SS01?.onKichHoatThanhPhanThuocCap(kichHoatUuTien: true);
+      getKhungDcsChienDauCo00E03SS01?.onKichHoatThanhPhanThuocCap(kichHoatUuTien: true);
     } catch (e) {
       await onReportRootIssue(nameFunction: 'onChonChiDinhChienDauCo00E03SS01');
     }
@@ -2868,12 +2759,9 @@ class QUANLYTHANHPHANTICHHOPTHUOCCAP
       await onHuyChonChiDinhChienDauCo();
 
       getCardChienDauCo00E03SS02?.onVoidKichHoat();
-      getCostChienDauCo00E03SS02?.onKichHoatThanhPhanThuocCap(
-        kichHoatUuTien: true,
-      );
-      getKhungDcsChienDauCo00E03SS02?.onKichHoatThanhPhanThuocCap(
-        kichHoatUuTien: true,
-      );
+      getCostChienDauCo00E03SS02?.onKichHoatThanhPhanThuocCap(kichHoatUuTien: true);
+      getKHUNGNUTBAMMUACHIENDAUCOCHONCHIDINHDANGCAPSAO00E03SS02?.onKichHoatThanhPhanThuocCap(kichHoatUuTien: true);
+      getKhungDcsChienDauCo00E03SS02?.onKichHoatThanhPhanThuocCap(kichHoatUuTien: true);
     } catch (e) {
       await onReportRootIssue(nameFunction: 'onChonChiDinhChienDauCo00E03SS02');
     }
@@ -2894,12 +2782,9 @@ class QUANLYTHANHPHANTICHHOPTHUOCCAP
       await onHuyChonChiDinhChienDauCo();
 
       getCardChienDauCo00E03SS03?.onVoidKichHoat();
-      getCostChienDauCo00E03SS03?.onKichHoatThanhPhanThuocCap(
-        kichHoatUuTien: true,
-      );
-      getKhungDcsChienDauCo00E03SS03?.onKichHoatThanhPhanThuocCap(
-        kichHoatUuTien: true,
-      );
+      getCostChienDauCo00E03SS03?.onKichHoatThanhPhanThuocCap(kichHoatUuTien: true);
+      getKHUNGNUTBAMMUACHIENDAUCOCHONCHIDINHDANGCAPSAO00E03SS03?.onKichHoatThanhPhanThuocCap(kichHoatUuTien: true);
+      getKhungDcsChienDauCo00E03SS03?.onKichHoatThanhPhanThuocCap(kichHoatUuTien: true);
     } catch (e) {
       await onReportRootIssue(nameFunction: 'onChonChiDinhChienDauCo00E03SS03');
     }
@@ -2920,12 +2805,9 @@ class QUANLYTHANHPHANTICHHOPTHUOCCAP
       await onHuyChonChiDinhChienDauCo();
 
       getCardChienDauCo00D04SS01?.onVoidKichHoat();
-      getCostChienDauCo00D04SS01?.onKichHoatThanhPhanThuocCap(
-        kichHoatUuTien: true,
-      );
-      getKhungDcsChienDauCo00D04SS01?.onKichHoatThanhPhanThuocCap(
-        kichHoatUuTien: true,
-      );
+      getCostChienDauCo00D04SS01?.onKichHoatThanhPhanThuocCap(kichHoatUuTien: true);
+      getKHUNGNUTBAMMUACHIENDAUCOCHONCHIDINHDANGCAPSAO00D04SS01?.onKichHoatThanhPhanThuocCap(kichHoatUuTien: true);
+      getKhungDcsChienDauCo00D04SS01?.onKichHoatThanhPhanThuocCap(kichHoatUuTien: true);
     } catch (e) {
       await onReportRootIssue(nameFunction: 'onChonChiDinhChienDauCo00D04SS01');
     }
@@ -2946,12 +2828,9 @@ class QUANLYTHANHPHANTICHHOPTHUOCCAP
       await onHuyChonChiDinhChienDauCo();
 
       getCardChienDauCo00C05SS01?.onVoidKichHoat();
-      getCostChienDauCo00C05SS01?.onKichHoatThanhPhanThuocCap(
-        kichHoatUuTien: true,
-      );
-      getKhungDcsChienDauCo00C05SS01?.onKichHoatThanhPhanThuocCap(
-        kichHoatUuTien: true,
-      );
+      getCostChienDauCo00C05SS01?.onKichHoatThanhPhanThuocCap(kichHoatUuTien: true);
+      getKHUNGNUTBAMMUACHIENDAUCOCHONCHIDINHDANGCAPSAO00C05SS01?.onKichHoatThanhPhanThuocCap(kichHoatUuTien: true);
+      getKhungDcsChienDauCo00C05SS01?.onKichHoatThanhPhanThuocCap(kichHoatUuTien: true);
     } catch (e) {
       await onReportRootIssue(nameFunction: 'onChonChiDinhChienDauCo00C05SS01');
     }
@@ -2972,12 +2851,9 @@ class QUANLYTHANHPHANTICHHOPTHUOCCAP
       await onHuyChonChiDinhChienDauCo();
 
       getCardChienDauCo00B06SS01?.onVoidKichHoat();
-      getCostChienDauCo00B06SS01?.onKichHoatThanhPhanThuocCap(
-        kichHoatUuTien: true,
-      );
-      getKhungDcsChienDauCo00B06SS01?.onKichHoatThanhPhanThuocCap(
-        kichHoatUuTien: true,
-      );
+      getCostChienDauCo00B06SS01?.onKichHoatThanhPhanThuocCap(kichHoatUuTien: true);
+      getKHUNGNUTBAMMUACHIENDAUCOCHONCHIDINHDANGCAPSAO00B06SS01?.onKichHoatThanhPhanThuocCap(kichHoatUuTien: true);
+      getKhungDcsChienDauCo00B06SS01?.onKichHoatThanhPhanThuocCap(kichHoatUuTien: true);
     } catch (e) {
       await onReportRootIssue(nameFunction: 'onChonChiDinhChienDauCo00B06SS01');
     }
@@ -2998,12 +2874,9 @@ class QUANLYTHANHPHANTICHHOPTHUOCCAP
       await onHuyChonChiDinhChienDauCo();
 
       getCardChienDauCo00A07SS01?.onVoidKichHoat();
-      getCostChienDauCo00A07SS01?.onKichHoatThanhPhanThuocCap(
-        kichHoatUuTien: true,
-      );
-      getKhungDcsChienDauCo00A07SS01?.onKichHoatThanhPhanThuocCap(
-        kichHoatUuTien: true,
-      );
+      getCostChienDauCo00A07SS01?.onKichHoatThanhPhanThuocCap(kichHoatUuTien: true);
+      getKHUNGNUTBAMMUACHIENDAUCOCHONCHIDINHDANGCAPSAO00A07SS01?.onKichHoatThanhPhanThuocCap(kichHoatUuTien: true);
+      getKhungDcsChienDauCo00A07SS01?.onKichHoatThanhPhanThuocCap(kichHoatUuTien: true);
     } catch (e) {
       await onReportRootIssue(nameFunction: 'onChonChiDinhChienDauCo00A07SS01');
     }
@@ -3024,12 +2897,9 @@ class QUANLYTHANHPHANTICHHOPTHUOCCAP
       await onHuyChonChiDinhChienDauCo();
 
       getCardChienDauCo00S08SS01?.onVoidKichHoat();
-      getCostChienDauCo00S08SS01?.onKichHoatThanhPhanThuocCap(
-        kichHoatUuTien: true,
-      );
-      getKhungDcsChienDauCo00S08SS01?.onKichHoatThanhPhanThuocCap(
-        kichHoatUuTien: true,
-      );
+      getCostChienDauCo00S08SS01?.onKichHoatThanhPhanThuocCap(kichHoatUuTien: true);
+      getKHUNGNUTBAMMUACHIENDAUCOCHONCHIDINHDANGCAPSAO00S08SS01?.onKichHoatThanhPhanThuocCap(kichHoatUuTien: true);
+      getKhungDcsChienDauCo00S08SS01?.onKichHoatThanhPhanThuocCap(kichHoatUuTien: true);
     } catch (e) {
       await onReportRootIssue(nameFunction: 'onChonChiDinhChienDauCo00S08SS01');
     }
@@ -3050,12 +2920,9 @@ class QUANLYTHANHPHANTICHHOPTHUOCCAP
       await onHuyChonChiDinhChienDauCo();
 
       getCardChienDauCo0SS09SS01?.onVoidKichHoat();
-      getCostChienDauCo0SS09SS01?.onKichHoatThanhPhanThuocCap(
-        kichHoatUuTien: true,
-      );
-      getKhungDcsChienDauCo0SS09SS01?.onKichHoatThanhPhanThuocCap(
-        kichHoatUuTien: true,
-      );
+      getCostChienDauCo0SS09SS01?.onKichHoatThanhPhanThuocCap(kichHoatUuTien: true);
+      getKHUNGNUTBAMMUACHIENDAUCOCHONCHIDINHDANGCAPSAO0SS09SS01?.onKichHoatThanhPhanThuocCap(kichHoatUuTien: true);
+      getKhungDcsChienDauCo0SS09SS01?.onKichHoatThanhPhanThuocCap(kichHoatUuTien: true);
     } catch (e) {
       await onReportRootIssue(nameFunction: 'onChonChiDinhChienDauCo0SS09SS01');
     }
@@ -3076,12 +2943,9 @@ class QUANLYTHANHPHANTICHHOPTHUOCCAP
       await onHuyChonChiDinhChienDauCo();
 
       getCardChienDauCo0SS09SS02?.onVoidKichHoat();
-      getCostChienDauCo0SS09SS02?.onKichHoatThanhPhanThuocCap(
-        kichHoatUuTien: true,
-      );
-      getKhungDcsChienDauCo0SS09SS02?.onKichHoatThanhPhanThuocCap(
-        kichHoatUuTien: true,
-      );
+      getCostChienDauCo0SS09SS02?.onKichHoatThanhPhanThuocCap(kichHoatUuTien: true);
+      getKHUNGNUTBAMMUACHIENDAUCOCHONCHIDINHDANGCAPSAO0SS09SS02?.onKichHoatThanhPhanThuocCap(kichHoatUuTien: true);
+      getKhungDcsChienDauCo0SS09SS02?.onKichHoatThanhPhanThuocCap(kichHoatUuTien: true);
     } catch (e) {
       await onReportRootIssue(nameFunction: 'onChonChiDinhChienDauCo0SS09SS02');
     }
@@ -3102,12 +2966,9 @@ class QUANLYTHANHPHANTICHHOPTHUOCCAP
       await onHuyChonChiDinhChienDauCo();
 
       getCardChienDauCo0SS09SS03?.onVoidKichHoat();
-      getCostChienDauCo0SS09SS03?.onKichHoatThanhPhanThuocCap(
-        kichHoatUuTien: true,
-      );
-      getKhungDcsChienDauCo0SS09SS03?.onKichHoatThanhPhanThuocCap(
-        kichHoatUuTien: true,
-      );
+      getCostChienDauCo0SS09SS03?.onKichHoatThanhPhanThuocCap(kichHoatUuTien: true);
+      getKHUNGNUTBAMMUACHIENDAUCOCHONCHIDINHDANGCAPSAO0SS09SS03?.onKichHoatThanhPhanThuocCap(kichHoatUuTien: true);
+      getKhungDcsChienDauCo0SS09SS03?.onKichHoatThanhPhanThuocCap(kichHoatUuTien: true);
     } catch (e) {
       await onReportRootIssue(nameFunction: 'onChonChiDinhChienDauCo0SS09SS03');
     }
@@ -3128,12 +2989,9 @@ class QUANLYTHANHPHANTICHHOPTHUOCCAP
       await onHuyChonChiDinhChienDauCo();
 
       getCardChienDauCoSSS10SS01?.onVoidKichHoat();
-      getCostChienDauCoSSS10SS01?.onKichHoatThanhPhanThuocCap(
-        kichHoatUuTien: true,
-      );
-      getKhungDcsChienDauCoSSS10SS01?.onKichHoatThanhPhanThuocCap(
-        kichHoatUuTien: true,
-      );
+      getCostChienDauCoSSS10SS01?.onKichHoatThanhPhanThuocCap(kichHoatUuTien: true);
+      getKHUNGNUTBAMMUACHIENDAUCOCHONCHIDINHDANGCAPSAOSSS10SS01?.onKichHoatThanhPhanThuocCap(kichHoatUuTien: true);
+      getKhungDcsChienDauCoSSS10SS01?.onKichHoatThanhPhanThuocCap(kichHoatUuTien: true);
     } catch (e) {
       await onReportRootIssue(nameFunction: 'onChonChiDinhChienDauCoSSS10SS01');
     }
@@ -3154,12 +3012,9 @@ class QUANLYTHANHPHANTICHHOPTHUOCCAP
       await onHuyChonChiDinhChienDauCo();
 
       getCardChienDauCoSSS10SS02?.onVoidKichHoat();
-      getCostChienDauCoSSS10SS02?.onKichHoatThanhPhanThuocCap(
-        kichHoatUuTien: true,
-      );
-      getKhungDcsChienDauCoSSS10SS02?.onKichHoatThanhPhanThuocCap(
-        kichHoatUuTien: true,
-      );
+      getCostChienDauCoSSS10SS02?.onKichHoatThanhPhanThuocCap(kichHoatUuTien: true);
+      getKHUNGNUTBAMMUACHIENDAUCOCHONCHIDINHDANGCAPSAOSSS10SS02?.onKichHoatThanhPhanThuocCap(kichHoatUuTien: true);
+      getKhungDcsChienDauCoSSS10SS02?.onKichHoatThanhPhanThuocCap(kichHoatUuTien: true);
     } catch (e) {
       await onReportRootIssue(nameFunction: 'onChonChiDinhChienDauCoSSS10SS02');
     }
@@ -3180,12 +3035,9 @@ class QUANLYTHANHPHANTICHHOPTHUOCCAP
       await onHuyChonChiDinhChienDauCo();
 
       getCardChienDauCoSSS10SS03?.onVoidKichHoat();
-      getCostChienDauCoSSS10SS03?.onKichHoatThanhPhanThuocCap(
-        kichHoatUuTien: true,
-      );
-      getKhungDcsChienDauCoSSS10SS03?.onKichHoatThanhPhanThuocCap(
-        kichHoatUuTien: true,
-      );
+      getCostChienDauCoSSS10SS03?.onKichHoatThanhPhanThuocCap(kichHoatUuTien: true);
+      getKHUNGNUTBAMMUACHIENDAUCOCHONCHIDINHDANGCAPSAOSSS10SS03?.onKichHoatThanhPhanThuocCap(kichHoatUuTien: true);
+      getKhungDcsChienDauCoSSS10SS03?.onKichHoatThanhPhanThuocCap(kichHoatUuTien: true);
     } catch (e) {
       await onReportRootIssue(nameFunction: 'onChonChiDinhChienDauCoSSS10SS03');
     }
@@ -3206,12 +3058,9 @@ class QUANLYTHANHPHANTICHHOPTHUOCCAP
       await onHuyChonChiDinhChienDauCo();
 
       getCardChienDauCoSSS10SS04?.onVoidKichHoat();
-      getCostChienDauCoSSS10SS04?.onKichHoatThanhPhanThuocCap(
-        kichHoatUuTien: true,
-      );
-      getKhungDcsChienDauCoSSS10SS04?.onKichHoatThanhPhanThuocCap(
-        kichHoatUuTien: true,
-      );
+      getCostChienDauCoSSS10SS04?.onKichHoatThanhPhanThuocCap(kichHoatUuTien: true);
+      getKHUNGNUTBAMMUACHIENDAUCOCHONCHIDINHDANGCAPSAOSSS10SS04?.onKichHoatThanhPhanThuocCap(kichHoatUuTien: true);
+      getKhungDcsChienDauCoSSS10SS04?.onKichHoatThanhPhanThuocCap(kichHoatUuTien: true);
     } catch (e) {
       await onReportRootIssue(nameFunction: 'onChonChiDinhChienDauCoSSS10SS04');
     }
@@ -3232,12 +3081,9 @@ class QUANLYTHANHPHANTICHHOPTHUOCCAP
       await onHuyChonChiDinhChienDauCo();
 
       getCardChienDauCoSSS10SS05?.onVoidKichHoat();
-      getCostChienDauCoSSS10SS05?.onKichHoatThanhPhanThuocCap(
-        kichHoatUuTien: true,
-      );
-      getKhungDcsChienDauCoSSS10SS05?.onKichHoatThanhPhanThuocCap(
-        kichHoatUuTien: true,
-      );
+      getCostChienDauCoSSS10SS05?.onKichHoatThanhPhanThuocCap(kichHoatUuTien: true);
+      getKHUNGNUTBAMMUACHIENDAUCOCHONCHIDINHDANGCAPSAOSSS10SS05?.onKichHoatThanhPhanThuocCap(kichHoatUuTien: true);
+      getKhungDcsChienDauCoSSS10SS05?.onKichHoatThanhPhanThuocCap(kichHoatUuTien: true);
     } catch (e) {
       await onReportRootIssue(nameFunction: 'onChonChiDinhChienDauCoSSS10SS05');
     }
@@ -3247,79 +3093,37 @@ class QUANLYTHANHPHANTICHHOPTHUOCCAP
   }
 
   Future<void> onThucThiChuyenChonChiDinhPhai() async {
-    if (getCardChienDauCo00E03SS01
-            ?.getTrangThaiKichHoatThanhPhan
-            ?.getKiemTraKichHoat ==
-        true) {
+    if (getCardChienDauCo00E03SS01?.getTrangThaiKichHoatThanhPhan?.getKiemTraKichHoat == true) {
       await getGameController?.onChonChiDinhChienDauCo00E03SS02();
-    } else if (getCardChienDauCo00E03SS02
-            ?.getTrangThaiKichHoatThanhPhan
-            ?.getKiemTraKichHoat ==
-        true) {
+    } else if (getCardChienDauCo00E03SS02?.getTrangThaiKichHoatThanhPhan?.getKiemTraKichHoat == true) {
       await getGameController?.onChonChiDinhChienDauCo00E03SS03();
-    } else if (getCardChienDauCo00E03SS03
-            ?.getTrangThaiKichHoatThanhPhan
-            ?.getKiemTraKichHoat ==
-        true) {
+    } else if (getCardChienDauCo00E03SS03?.getTrangThaiKichHoatThanhPhan?.getKiemTraKichHoat == true) {
       await getGameController?.onChonChiDinhChienDauCo00D04SS01();
-    } else if (getCardChienDauCo00D04SS01
-            ?.getTrangThaiKichHoatThanhPhan
-            ?.getKiemTraKichHoat ==
-        true) {
+    } else if (getCardChienDauCo00D04SS01?.getTrangThaiKichHoatThanhPhan?.getKiemTraKichHoat == true) {
       await getGameController?.onChonChiDinhChienDauCo00C05SS01();
-    } else if (getCardChienDauCo00C05SS01
-            ?.getTrangThaiKichHoatThanhPhan
-            ?.getKiemTraKichHoat ==
-        true) {
+    } else if (getCardChienDauCo00C05SS01?.getTrangThaiKichHoatThanhPhan?.getKiemTraKichHoat == true) {
       await getGameController?.onChonChiDinhChienDauCo00B06SS01();
-    } else if (getCardChienDauCo00B06SS01
-            ?.getTrangThaiKichHoatThanhPhan
-            ?.getKiemTraKichHoat ==
-        true) {
+    } else if (getCardChienDauCo00B06SS01?.getTrangThaiKichHoatThanhPhan?.getKiemTraKichHoat == true) {
       await getGameController?.onChonChiDinhChienDauCo00A07SS01();
-    } else if (getCardChienDauCo00A07SS01
-            ?.getTrangThaiKichHoatThanhPhan
-            ?.getKiemTraKichHoat ==
-        true) {
+    } else if (getCardChienDauCo00A07SS01?.getTrangThaiKichHoatThanhPhan?.getKiemTraKichHoat == true) {
       await getGameController?.onChonChiDinhChienDauCo00S08SS01();
-    } else if (getCardChienDauCo00S08SS01
-            ?.getTrangThaiKichHoatThanhPhan
-            ?.getKiemTraKichHoat ==
-        true) {
+    } else if (getCardChienDauCo00S08SS01?.getTrangThaiKichHoatThanhPhan?.getKiemTraKichHoat == true) {
       await getGameController?.onChonChiDinhChienDauCo0SS09SS01();
-    } else if (getCardChienDauCo0SS09SS01
-            ?.getTrangThaiKichHoatThanhPhan
-            ?.getKiemTraKichHoat ==
-        true) {
+    } else if (getCardChienDauCo0SS09SS01?.getTrangThaiKichHoatThanhPhan?.getKiemTraKichHoat == true) {
       await getGameController?.onChonChiDinhChienDauCo0SS09SS02();
-    } else if (getCardChienDauCo0SS09SS02
-            ?.getTrangThaiKichHoatThanhPhan
-            ?.getKiemTraKichHoat ==
-        true) {
+    } else if (getCardChienDauCo0SS09SS02?.getTrangThaiKichHoatThanhPhan?.getKiemTraKichHoat == true) {
       await getGameController?.onChonChiDinhChienDauCo0SS09SS03();
-    } else if (getCardChienDauCo0SS09SS03
-            ?.getTrangThaiKichHoatThanhPhan
-            ?.getKiemTraKichHoat ==
-        true) {
+    } else if (getCardChienDauCo0SS09SS03?.getTrangThaiKichHoatThanhPhan?.getKiemTraKichHoat == true) {
       await getGameController?.onChonChiDinhChienDauCoSSS10SS01();
-    } else if (getCardChienDauCoSSS10SS01
-            ?.getTrangThaiKichHoatThanhPhan
-            ?.getKiemTraKichHoat ==
-        true) {
+    } else if (getCardChienDauCoSSS10SS01?.getTrangThaiKichHoatThanhPhan?.getKiemTraKichHoat == true) {
       await getGameController?.onChonChiDinhChienDauCoSSS10SS02();
-    } else if (getCardChienDauCoSSS10SS02
-            ?.getTrangThaiKichHoatThanhPhan
-            ?.getKiemTraKichHoat ==
-        true) {
+    } else if (getCardChienDauCoSSS10SS02?.getTrangThaiKichHoatThanhPhan?.getKiemTraKichHoat == true) {
       await getGameController?.onChonChiDinhChienDauCoSSS10SS03();
-    } else if (getCardChienDauCoSSS10SS03?.getTrangThaiKichHoatThanhPhan?.getKiemTraKichHoat ==
-        true) {
+    } else if (getCardChienDauCoSSS10SS03?.getTrangThaiKichHoatThanhPhan?.getKiemTraKichHoat == true) {
       await getGameController?.onChonChiDinhChienDauCoSSS10SS04();
-    } else if (getCardChienDauCoSSS10SS04?.getTrangThaiKichHoatThanhPhan?.getKiemTraKichHoat ==
-        true) {
+    } else if (getCardChienDauCoSSS10SS04?.getTrangThaiKichHoatThanhPhan?.getKiemTraKichHoat == true) {
       await getGameController?.onChonChiDinhChienDauCoSSS10SS05();
-    } else if (getCardChienDauCoSSS10SS05?.getTrangThaiKichHoatThanhPhan?.getKiemTraKichHoat ==
-        true) {
+    } else if (getCardChienDauCoSSS10SS05?.getTrangThaiKichHoatThanhPhan?.getKiemTraKichHoat == true) {
       await getGameController?.onChonChiDinhChienDauCo00E03SS01();
     }
 
@@ -3328,79 +3132,37 @@ class QUANLYTHANHPHANTICHHOPTHUOCCAP
   }
 
   Future<void> onThucThiChuyenChonChiDinhTrai() async {
-    if (getCardChienDauCoSSS10SS05
-            ?.getTrangThaiKichHoatThanhPhan
-            ?.getKiemTraKichHoat ==
-        true) {
+    if (getCardChienDauCoSSS10SS05?.getTrangThaiKichHoatThanhPhan?.getKiemTraKichHoat == true) {
       await getGameController?.onChonChiDinhChienDauCoSSS10SS04();
-    } else if (getCardChienDauCoSSS10SS04
-            ?.getTrangThaiKichHoatThanhPhan
-            ?.getKiemTraKichHoat ==
-        true) {
+    } else if (getCardChienDauCoSSS10SS04?.getTrangThaiKichHoatThanhPhan?.getKiemTraKichHoat == true) {
       await getGameController?.onChonChiDinhChienDauCoSSS10SS03();
-    } else if (getCardChienDauCoSSS10SS03
-            ?.getTrangThaiKichHoatThanhPhan
-            ?.getKiemTraKichHoat ==
-        true) {
+    } else if (getCardChienDauCoSSS10SS03?.getTrangThaiKichHoatThanhPhan?.getKiemTraKichHoat == true) {
       await getGameController?.onChonChiDinhChienDauCoSSS10SS02();
-    } else if (getCardChienDauCoSSS10SS02
-            ?.getTrangThaiKichHoatThanhPhan
-            ?.getKiemTraKichHoat ==
-        true) {
+    } else if (getCardChienDauCoSSS10SS02?.getTrangThaiKichHoatThanhPhan?.getKiemTraKichHoat == true) {
       await getGameController?.onChonChiDinhChienDauCoSSS10SS01();
-    } else if (getCardChienDauCoSSS10SS01
-            ?.getTrangThaiKichHoatThanhPhan
-            ?.getKiemTraKichHoat ==
-        true) {
+    } else if (getCardChienDauCoSSS10SS01?.getTrangThaiKichHoatThanhPhan?.getKiemTraKichHoat == true) {
       await getGameController?.onChonChiDinhChienDauCo0SS09SS03();
-    } else if (getCardChienDauCo0SS09SS03
-            ?.getTrangThaiKichHoatThanhPhan
-            ?.getKiemTraKichHoat ==
-        true) {
+    } else if (getCardChienDauCo0SS09SS03?.getTrangThaiKichHoatThanhPhan?.getKiemTraKichHoat == true) {
       await getGameController?.onChonChiDinhChienDauCo0SS09SS02();
-    } else if (getCardChienDauCo0SS09SS02
-            ?.getTrangThaiKichHoatThanhPhan
-            ?.getKiemTraKichHoat ==
-        true) {
+    } else if (getCardChienDauCo0SS09SS02?.getTrangThaiKichHoatThanhPhan?.getKiemTraKichHoat == true) {
       await getGameController?.onChonChiDinhChienDauCo0SS09SS01();
-    } else if (getCardChienDauCo0SS09SS01
-            ?.getTrangThaiKichHoatThanhPhan
-            ?.getKiemTraKichHoat ==
-        true) {
+    } else if (getCardChienDauCo0SS09SS01?.getTrangThaiKichHoatThanhPhan?.getKiemTraKichHoat == true) {
       await getGameController?.onChonChiDinhChienDauCo00S08SS01();
-    } else if (getCardChienDauCo00S08SS01
-            ?.getTrangThaiKichHoatThanhPhan
-            ?.getKiemTraKichHoat ==
-        true) {
+    } else if (getCardChienDauCo00S08SS01?.getTrangThaiKichHoatThanhPhan?.getKiemTraKichHoat == true) {
       await getGameController?.onChonChiDinhChienDauCo00A07SS01();
-    } else if (getCardChienDauCo00A07SS01
-            ?.getTrangThaiKichHoatThanhPhan
-            ?.getKiemTraKichHoat ==
-        true) {
+    } else if (getCardChienDauCo00A07SS01?.getTrangThaiKichHoatThanhPhan?.getKiemTraKichHoat == true) {
       await getGameController?.onChonChiDinhChienDauCo00B06SS01();
-    } else if (getCardChienDauCo00B06SS01
-            ?.getTrangThaiKichHoatThanhPhan
-            ?.getKiemTraKichHoat ==
-        true) {
+    } else if (getCardChienDauCo00B06SS01?.getTrangThaiKichHoatThanhPhan?.getKiemTraKichHoat == true) {
       await getGameController?.onChonChiDinhChienDauCo00C05SS01();
-    } else if (getCardChienDauCo00C05SS01
-            ?.getTrangThaiKichHoatThanhPhan
-            ?.getKiemTraKichHoat ==
-        true) {
+    } else if (getCardChienDauCo00C05SS01?.getTrangThaiKichHoatThanhPhan?.getKiemTraKichHoat == true) {
       await getGameController?.onChonChiDinhChienDauCo00D04SS01();
-    } else if (getCardChienDauCo00D04SS01
-            ?.getTrangThaiKichHoatThanhPhan
-            ?.getKiemTraKichHoat ==
-        true) {
+    } else if (getCardChienDauCo00D04SS01?.getTrangThaiKichHoatThanhPhan?.getKiemTraKichHoat == true) {
       await getGameController?.onChonChiDinhChienDauCo00E03SS03();
-    } else if (getCardChienDauCo00E03SS03?.getTrangThaiKichHoatThanhPhan?.getKiemTraKichHoat ==
-        true) {
+    } else if (getCardChienDauCo00E03SS03?.getTrangThaiKichHoatThanhPhan?.getKiemTraKichHoat == true) {
       await getGameController?.onChonChiDinhChienDauCo00E03SS02();
-    } else if (getCardChienDauCo00E03SS02?.getTrangThaiKichHoatThanhPhan?.getKiemTraKichHoat ==
-        true) {
+    } else if (getCardChienDauCo00E03SS02?.getTrangThaiKichHoatThanhPhan?.getKiemTraKichHoat == true) {
       await getGameController?.onChonChiDinhChienDauCo00E03SS01();
-    } else if (getCardChienDauCo00E03SS01?.getTrangThaiKichHoatThanhPhan?.getKiemTraKichHoat ==
-        true) {
+    } else if (getCardChienDauCo00E03SS01?.getTrangThaiKichHoatThanhPhan?.getKiemTraKichHoat == true) {
       await getGameController?.onChonChiDinhChienDauCoSSS10SS05();
     }
 

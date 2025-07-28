@@ -1,3 +1,5 @@
+import 'dart:ui';
+
 import 'package:pkg_khung_man_hinh_ss020000/pkg_khung_man_hinh_ss020000_exp.dart';
 import 'package:pkg_khung_man_hinh_ss022300/24_def0024/ADef020_0/08_SubDefs/Def020_2/09_RootDef/class_pkg_kmh_ss022300.dart';
 import 'package:pkg_khung_man_hinh_ss022300/24_def0024/ADef020_0/08_SubDefs/Def030_2/09_RootDef/class_pkg_kmh_ss022300.dart';
@@ -54,14 +56,8 @@ class KHUNGMANHINHCHINHTABSS030CD extends THANHPHANMANHINHTHUOCCAPCOBAN {
           sizeDy: getSizeDy,
           onThucThiChuyenTabSS010: () {
             ///
-            if (getQuanLyThanhPhanManHinhThuocCap
-                is QUANLYTHANHPHANMANHINHTHUOCCAP) {
-              (getQuanLyThanhPhanManHinhThuocCap
-                      as QUANLYTHANHPHANMANHINHTHUOCCAP)
-                  .onKichHoatKhungManHinhTabSS010(
-                    flameGame: null,
-                    component: this,
-                  );
+            if (getQuanLyThanhPhanManHinhThuocCap is QUANLYTHANHPHANMANHINHTHUOCCAP) {
+              (getQuanLyThanhPhanManHinhThuocCap as QUANLYTHANHPHANMANHINHTHUOCCAP).onKichHoatKhungManHinhTabSS010(flameGame: null, component: this);
 
               // (getQuanLyThanhPhanManHinhThuocCap as QUANLYTHANHPHANMANHINHTHUOCCAP).getKhungManHinhTabSS010?.onKichHoatThanhPhanManHinhThuocCap(
               //   onHuyKichHoat: () {
@@ -75,14 +71,8 @@ class KHUNGMANHINHCHINHTABSS030CD extends THANHPHANMANHINHTHUOCCAPCOBAN {
           },
           onThucThiChuyenTabSS020: () {
             ///
-            if (getQuanLyThanhPhanManHinhThuocCap
-                is QUANLYTHANHPHANMANHINHTHUOCCAP) {
-              (getQuanLyThanhPhanManHinhThuocCap
-                      as QUANLYTHANHPHANMANHINHTHUOCCAP)
-                  .onKichHoatKhungManHinhTabSS020(
-                    flameGame: null,
-                    component: this,
-                  );
+            if (getQuanLyThanhPhanManHinhThuocCap is QUANLYTHANHPHANMANHINHTHUOCCAP) {
+              (getQuanLyThanhPhanManHinhThuocCap as QUANLYTHANHPHANMANHINHTHUOCCAP).onKichHoatKhungManHinhTabSS020(flameGame: null, component: this);
 
               // (getQuanLyThanhPhanManHinhThuocCap as QUANLYTHANHPHANMANHINHTHUOCCAP).getKhungManHinhTabSS010?.onHuyKichHoatThanhPhanManHinhThuocCap();
               // (getQuanLyThanhPhanManHinhThuocCap as QUANLYTHANHPHANMANHINHTHUOCCAP).getKhungManHinhTabSS020?.onKichHoatThanhPhanManHinhThuocCap(
@@ -160,4 +150,21 @@ class KHUNGMANHINHCHINHTABSS030CD extends THANHPHANMANHINHTHUOCCAPCOBAN {
   //   ///
   //   return;
   // }
+
+  @override
+  Future<void> onKichHoatThanhPhanManHinhThuocCap({VoidCallback? onHuyKichHoat, bool? kichHoatUuTien}) async {
+    await super.onKichHoatThanhPhanManHinhThuocCap(kichHoatUuTien: kichHoatUuTien, onHuyKichHoat: onHuyKichHoat);
+
+    /// Kích Hoạt Mặc Định Tab Chọn Chiến Đấu Cơ
+    if (getQuanLyThanhPhanManHinhThuocCap is QUANLYTHANHPHANMANHINHTHUOCCAP) {
+      if ((getQuanLyThanhPhanManHinhThuocCap as QUANLYTHANHPHANMANHINHTHUOCCAP).getKhungManHinhTabSS010?.getTrangThaiKichHoatThanhPhan?.getKiemTraKichHoat == false &&
+          (getQuanLyThanhPhanManHinhThuocCap as QUANLYTHANHPHANMANHINHTHUOCCAP).getKhungManHinhTabSS020?.getTrangThaiKichHoatThanhPhan?.getKiemTraKichHoat == false) {
+        // (getQuanLyThanhPhanManHinhThuocCap as QUANLYTHANHPHANMANHINHTHUOCCAP).getKhungManHinhTabSS010?.onKichHoatThanhPhanManHinhThuocCap();
+
+        if (getQuanLyThanhPhanNutBamThuocCap is QUANLYTHANHPHANNUTBAMTHUOCCAP) {
+          (getQuanLyThanhPhanNutBamThuocCap as QUANLYTHANHPHANNUTBAMTHUOCCAP).onThucThiChonTabSS010();
+        }
+      }
+    }
+  }
 }

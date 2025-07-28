@@ -108,6 +108,9 @@ abstract class THANHPHANNUTBAMTHUOCCAPTHUANKICHHOAT extends PositionComponent wi
 
     if (getPositionDx?.isNaN == false && position.x != getPositionDx) {
       position.x = getPositionDx ?? 10.0;
+
+      // getTrangThaiKichHoatThanhPhan?.getDiemToaDoThanhPhanKichHoat?.onVoidCaiDatPositionDx(value: getPositionDx ?? 0);
+      // getTrangThaiKichHoatThanhPhan?.getDiemToaDoThanhPhanHuyKichHoat?.onVoidCaiDatPositionDx(value: -10000);
     }
 
     return;
@@ -127,6 +130,9 @@ abstract class THANHPHANNUTBAMTHUOCCAPTHUANKICHHOAT extends PositionComponent wi
 
     if (getPositionDy?.isNaN == false && position.y != getPositionDy) {
       position.y = getPositionDy ?? 10.0;
+
+      // getTrangThaiKichHoatThanhPhan?.getDiemToaDoThanhPhanKichHoat?.onVoidCaiDatPositionDy(value: getPositionDy ?? 0);
+      // getTrangThaiKichHoatThanhPhan?.getDiemToaDoThanhPhanHuyKichHoat?.onVoidCaiDatPositionDy(value: -10000);
     }
 
     return;
@@ -165,7 +171,6 @@ abstract class THANHPHANNUTBAMTHUOCCAPTHUANKICHHOAT extends PositionComponent wi
   }
 
   Future<void> onAddToParent() async {
-
     if (getFlameGameParentComponent != null && isMounted == false) {
       await getFlameGameParentComponent?.add(this);
     } else if (getParentComponent != null && isMounted == false) {
@@ -202,6 +207,26 @@ abstract class THANHPHANNUTBAMTHUOCCAPTHUANKICHHOAT extends PositionComponent wi
       _trangThaiKichHoatThanhPhan ??= value;
     }
 
+    return;
+  }
+
+  /// -----
+  /// TODO:
+  /// -----
+  Future<void> onCapNhatTrangThaiKichHoatThanhPhan() async {
+    /// -----
+    /// TODO:
+    /// -----
+    double positionDx = getPositionDx ?? 100.0;
+    double positionDy = getPositionDy ?? 100.0;
+
+    getTrangThaiKichHoatThanhPhan?.getDiemToaDoThanhPhanHuyKichHoat?.onVoidCaiDatPositionDx(value: -10000.0, caiDatUuTien: true);
+    getTrangThaiKichHoatThanhPhan?.getDiemToaDoThanhPhanHuyKichHoat?.onVoidCaiDatPositionDy(value: -10000.0, caiDatUuTien: true);
+
+    getTrangThaiKichHoatThanhPhan?.getDiemToaDoThanhPhanKichHoat?.onVoidCaiDatPositionDx(value: getPositionDx, caiDatUuTien: true);
+    getTrangThaiKichHoatThanhPhan?.getDiemToaDoThanhPhanKichHoat?.onVoidCaiDatPositionDy(value: getPositionDy, caiDatUuTien: true);
+
+    ///
     return;
   }
 
@@ -454,6 +479,19 @@ abstract class THANHPHANNUTBAMTHUOCCAPTHUANKICHHOAT extends PositionComponent wi
   @override
   Future<void> onInitRoot() async {
     /// -----
+    /// TODO:
+    /// -----
+    await onCapNhatTrangThaiKichHoatThanhPhan();
+
+    if (getTrangThaiKichHoatThanhPhan?.getKiemTraKichHoat == true) {
+      onVoidCaiDatPositionDx(value: getTrangThaiKichHoatThanhPhan?.getDiemToaDoThanhPhanKichHoat?.getPositionDx, caiDatUuTien: true);
+      onVoidCaiDatPositionDy(value: getTrangThaiKichHoatThanhPhan?.getDiemToaDoThanhPhanKichHoat?.getPositionDy, caiDatUuTien: true);
+    } else if (getTrangThaiKichHoatThanhPhan?.getKiemTraKichHoat == false) {
+      onVoidCaiDatPositionDx(value: getTrangThaiKichHoatThanhPhan?.getDiemToaDoThanhPhanHuyKichHoat?.getPositionDx, caiDatUuTien: true);
+      onVoidCaiDatPositionDy(value: getTrangThaiKichHoatThanhPhan?.getDiemToaDoThanhPhanHuyKichHoat?.getPositionDy, caiDatUuTien: true);
+    }
+
+    /// -----
     /// TODO: Init Root For SubCom
     /// -----
     await onInitRootForSubCom();
@@ -639,6 +677,42 @@ abstract class THANHPHANNUTBAMTHUOCCAPTHUANKICHHOAT extends PositionComponent wi
   /// -----
   @override
   Future<void> onResetRootForSubCom() async {
+    ///
+    return;
+  }
+
+  /// -----
+  /// TODO:
+  /// -----
+  Future<void> onKichHoatThanhPhanThuocCap({VoidCallback? onHuyKichHoat, bool? kichHoatUuTien}) async {
+    if (kichHoatUuTien == true) {
+      getTrangThaiKichHoatThanhPhan?.onVoidCaiDatKiemTraKichHoat(value: true, caiDatUuTien: true);
+
+      onVoidCaiDatPositionDx(value: getTrangThaiKichHoatThanhPhan?.getDiemToaDoThanhPhanKichHoat?.getPositionDx, caiDatUuTien: true);
+      onVoidCaiDatPositionDy(value: getTrangThaiKichHoatThanhPhan?.getDiemToaDoThanhPhanKichHoat?.getPositionDy, caiDatUuTien: true);
+    } else if (getTrangThaiKichHoatThanhPhan?.getKiemTraKichHoat == false) {
+      getTrangThaiKichHoatThanhPhan?.onVoidCaiDatKiemTraKichHoat(value: true, caiDatUuTien: true);
+
+      onVoidCaiDatPositionDx(value: getTrangThaiKichHoatThanhPhan?.getDiemToaDoThanhPhanKichHoat?.getPositionDx, caiDatUuTien: true);
+      onVoidCaiDatPositionDy(value: getTrangThaiKichHoatThanhPhan?.getDiemToaDoThanhPhanKichHoat?.getPositionDy, caiDatUuTien: true);
+    } else if (getTrangThaiKichHoatThanhPhan?.getKiemTraKichHoat == true) {
+      await onHuyKichHoatThanhPhanThuocCap();
+      onHuyKichHoat?.call();
+    }
+
+    ///
+    return;
+  }
+
+  /// -----
+  /// TODO:
+  /// -----
+  Future<void> onHuyKichHoatThanhPhanThuocCap() async {
+    getTrangThaiKichHoatThanhPhan?.onVoidCaiDatKiemTraKichHoat(value: false, caiDatUuTien: true);
+
+    onVoidCaiDatPositionDx(value: getTrangThaiKichHoatThanhPhan?.getDiemToaDoThanhPhanHuyKichHoat?.getPositionDx, caiDatUuTien: true);
+    onVoidCaiDatPositionDy(value: getTrangThaiKichHoatThanhPhan?.getDiemToaDoThanhPhanHuyKichHoat?.getPositionDy, caiDatUuTien: true);
+
     ///
     return;
   }

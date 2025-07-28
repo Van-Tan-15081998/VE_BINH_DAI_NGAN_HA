@@ -23,10 +23,7 @@ class QUANLYTHANHPHANNUTBAMTHUOCCAP extends QUANLYTHANHPHANNUTBAMTHUOCCAPCOBAN {
   /// -----
   NUTBAMCHUYENTABSS010? _nutBamChuyenTabSS010;
   NUTBAMCHUYENTABSS010? get getNutBamChuyenTabSS010 => _nutBamChuyenTabSS010;
-  Future<void> onCaiDatNutBamChuyenTabSS010({
-    required NUTBAMCHUYENTABSS010? value,
-    bool? caiDatUuTien,
-  }) async {
+  Future<void> onCaiDatNutBamChuyenTabSS010({required NUTBAMCHUYENTABSS010? value, bool? caiDatUuTien}) async {
     if (caiDatUuTien == true) {
       _nutBamChuyenTabSS010 = value;
     } else {
@@ -42,10 +39,7 @@ class QUANLYTHANHPHANNUTBAMTHUOCCAP extends QUANLYTHANHPHANNUTBAMTHUOCCAPCOBAN {
   /// -----
   NUTBAMCHUYENTABSS020? _nutBamChuyenTabSS020;
   NUTBAMCHUYENTABSS020? get getNutBamChuyenTabSS020 => _nutBamChuyenTabSS020;
-  Future<void> onCaiDatNutBamChuyenTabSS020({
-    required NUTBAMCHUYENTABSS020? value,
-    bool? caiDatUuTien,
-  }) async {
+  Future<void> onCaiDatNutBamChuyenTabSS020({required NUTBAMCHUYENTABSS020? value, bool? caiDatUuTien}) async {
     if (caiDatUuTien == true) {
       _nutBamChuyenTabSS020 = value;
     } else {
@@ -61,10 +55,7 @@ class QUANLYTHANHPHANNUTBAMTHUOCCAP extends QUANLYTHANHPHANNUTBAMTHUOCCAPCOBAN {
   /// -----
   NUTBAMCHUYENTUDONG? _nutBamChuyenTuDong;
   NUTBAMCHUYENTUDONG? get getNutBamChuyenTuDong => _nutBamChuyenTuDong;
-  Future<void> onCaiDatNutBamChuyenTuDong({
-    required NUTBAMCHUYENTUDONG? value,
-    bool? caiDatUuTien,
-  }) async {
+  Future<void> onCaiDatNutBamChuyenTuDong({required NUTBAMCHUYENTUDONG? value, bool? caiDatUuTien}) async {
     if (caiDatUuTien == true) {
       _nutBamChuyenTuDong = value;
     } else {
@@ -77,10 +68,7 @@ class QUANLYTHANHPHANNUTBAMTHUOCCAP extends QUANLYTHANHPHANNUTBAMTHUOCCAPCOBAN {
 
   NUTBAMCHONCHIENDAU? _nutBamChonChienDau;
   NUTBAMCHONCHIENDAU? get getNutBamChonChienDau => _nutBamChonChienDau;
-  Future<void> onCaiDatNutBamChonChienDau({
-    required NUTBAMCHONCHIENDAU? value,
-    bool? caiDatUuTien,
-  }) async {
+  Future<void> onCaiDatNutBamChonChienDau({required NUTBAMCHONCHIENDAU? value, bool? caiDatUuTien}) async {
     if (caiDatUuTien == true) {
       _nutBamChonChienDau = value;
     } else {
@@ -127,11 +115,7 @@ class QUANLYTHANHPHANNUTBAMTHUOCCAP extends QUANLYTHANHPHANNUTBAMTHUOCCAPCOBAN {
 
     onThucThiChuyenTabSS010?.call();
 
-    onAddComponent(
-      flameGame: null,
-      parentComponent: getThanhPhanQuanLyThuocCapTrucTiep,
-      childComponent: getNutBamChuyenTuDong,
-    );
+    onAddComponent(flameGame: null, parentComponent: getThanhPhanQuanLyThuocCapTrucTiep, childComponent: getNutBamChuyenTuDong);
     getNutBamChonChienDau?.removeFromParent();
 
     ///
@@ -148,11 +132,7 @@ class QUANLYTHANHPHANNUTBAMTHUOCCAP extends QUANLYTHANHPHANNUTBAMTHUOCCAPCOBAN {
     onThucThiChuyenTabSS020?.call();
 
     getNutBamChuyenTuDong?.removeFromParent();
-    onAddComponent(
-      flameGame: null,
-      parentComponent: getThanhPhanQuanLyThuocCapTrucTiep,
-      childComponent: getNutBamChonChienDau,
-    );
+    onAddComponent(flameGame: null, parentComponent: getThanhPhanQuanLyThuocCapTrucTiep, childComponent: getNutBamChonChienDau);
 
     ///
     return;
@@ -186,31 +166,12 @@ class QUANLYTHANHPHANNUTBAMTHUOCCAP extends QUANLYTHANHPHANNUTBAMTHUOCCAPCOBAN {
   /// TODO: Add Comp Root
   /// -----
   @override
-  Future<void> onAddRoot({
-    required FlameGame? flameGame,
-    required Component? component,
-  }) async {
+  Future<void> onAddRoot({required FlameGame? flameGame, required Component? component}) async {
     await Future.wait([
-      onAddComponent(
-        flameGame: null,
-        parentComponent: component,
-        childComponent: getNutBamChuyenTabSS010,
-      ).catchError((e) => null),
-      onAddComponent(
-        flameGame: null,
-        parentComponent: component,
-        childComponent: getNutBamChuyenTabSS020,
-      ).catchError((e) => null),
-      onAddComponent(
-        flameGame: null,
-        parentComponent: component,
-        childComponent: getNutBamChuyenTuDong,
-      ).catchError((e) => null),
-      onAddComponent(
-        flameGame: null,
-        parentComponent: component,
-        childComponent: getNutBamChonChienDau,
-      ).catchError((e) => null),
+      onAddComponent(flameGame: null, parentComponent: component, childComponent: getNutBamChuyenTabSS010).catchError((e) => null),
+      onAddComponent(flameGame: null, parentComponent: component, childComponent: getNutBamChuyenTabSS020).catchError((e) => null),
+      onAddComponent(flameGame: null, parentComponent: component, childComponent: getNutBamChuyenTuDong).catchError((e) => null),
+      onAddComponent(flameGame: null, parentComponent: component, childComponent: getNutBamChonChienDau).catchError((e) => null),
     ]);
 
     /// -----
@@ -226,27 +187,12 @@ class QUANLYTHANHPHANNUTBAMTHUOCCAP extends QUANLYTHANHPHANNUTBAMTHUOCCAPCOBAN {
   /// TODO: Add Comp Root For SubCom
   /// -----
   @override
-  Future<void> onAddRootForSubCom({
-    required FlameGame? flameGame,
-    required Component? component,
-  }) async {
+  Future<void> onAddRootForSubCom({required FlameGame? flameGame, required Component? component}) async {
     await Future.wait([
-      getNutBamChuyenTabSS010
-              ?.onAddRoot(flameGame: null, component: component)
-              .catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
-      getNutBamChuyenTabSS020
-              ?.onAddRoot(flameGame: null, component: component)
-              .catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
-      getNutBamChuyenTuDong
-              ?.onAddRoot(flameGame: null, component: component)
-              .catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
-      getNutBamChonChienDau
-              ?.onAddRoot(flameGame: null, component: component)
-              .catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
+      getNutBamChuyenTabSS010?.onAddRoot(flameGame: null, component: component).catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getNutBamChuyenTabSS020?.onAddRoot(flameGame: null, component: component).catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getNutBamChuyenTuDong?.onAddRoot(flameGame: null, component: component).catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getNutBamChonChienDau?.onAddRoot(flameGame: null, component: component).catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
     ]);
 
     ///
@@ -329,8 +275,7 @@ class QUANLYTHANHPHANNUTBAMTHUOCCAP extends QUANLYTHANHPHANNUTBAMTHUOCCAPCOBAN {
           thanhPhanQuanLyThuocCapTrucTiep: getThanhPhanQuanLyThuocCapTrucTiep,
           sizeDx: sizeDxNutBamChonTab * 2,
           sizeDy: sizeDyNutBamChonTab,
-          positionDx:
-              sizeDxKhungManHinh - (sizeDxNutBamChonTab + donViChieuRong),
+          positionDx: sizeDxKhungManHinh - (sizeDxNutBamChonTab + donViChieuRong),
           positionDy: sizeDyKhungManHinh - (donViChieuRong * 2.0),
           onTapCancelEvent: null,
           onTapDownEvent: null,
@@ -346,14 +291,10 @@ class QUANLYTHANHPHANNUTBAMTHUOCCAP extends QUANLYTHANHPHANNUTBAMTHUOCCAPCOBAN {
     /// TODO:
     /// -----
     await Future.wait([
-      getNutBamChuyenTabSS010?.onSetupRoot().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
-      getNutBamChuyenTabSS020?.onSetupRoot().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
-      getNutBamChuyenTuDong?.onSetupRoot().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
-      getNutBamChonChienDau?.onSetupRoot().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
+      getNutBamChuyenTabSS010?.onSetupRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getNutBamChuyenTabSS020?.onSetupRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getNutBamChuyenTuDong?.onSetupRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getNutBamChonChienDau?.onSetupRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
     ]);
 
     ///
@@ -371,15 +312,16 @@ class QUANLYTHANHPHANNUTBAMTHUOCCAP extends QUANLYTHANHPHANNUTBAMTHUOCCAPCOBAN {
     /// TODO:
     /// -----
     await Future.wait([
-      getNutBamChuyenTabSS010?.onInitRoot().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
-      getNutBamChuyenTabSS020?.onInitRoot().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
-      getNutBamChuyenTuDong?.onInitRoot().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
-      getNutBamChonChienDau?.onInitRoot().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
+      getNutBamChuyenTabSS010?.onInitRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getNutBamChuyenTabSS020?.onInitRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getNutBamChuyenTuDong?.onInitRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getNutBamChonChienDau?.onInitRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
     ]);
+
+    await getNutBamChuyenTabSS010?.onKichHoatThanhPhanThuocCap();
+    await getNutBamChuyenTabSS020?.onKichHoatThanhPhanThuocCap();
+    await getNutBamChuyenTuDong?.onKichHoatThanhPhanThuocCap();
+    await getNutBamChonChienDau?.onKichHoatThanhPhanThuocCap();
 
     ///
     return;

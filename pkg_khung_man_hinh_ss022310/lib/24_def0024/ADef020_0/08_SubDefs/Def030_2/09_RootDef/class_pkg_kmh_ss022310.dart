@@ -129,10 +129,7 @@ class QUANLYTHANHPHANNUTBAMTHUOCCAP extends QUANLYTHANHPHANNUTBAMTHUOCCAPCOBAN {
   /// TODO: Add Comp Root
   /// -----
   @override
-  Future<void> onAddRoot({
-    required FlameGame? flameGame,
-    required Component? component,
-  }) async {
+  Future<void> onAddRoot({required FlameGame? flameGame, required Component? component}) async {
     try {
       /// -----
       /// TODO:
@@ -158,10 +155,7 @@ class QUANLYTHANHPHANNUTBAMTHUOCCAP extends QUANLYTHANHPHANNUTBAMTHUOCCAPCOBAN {
   /// TODO: Add Comp Root For SubCom
   /// -----
   @override
-  Future<void> onAddRootForSubCom({
-    required FlameGame? flameGame,
-    required Component? component,
-  }) async {
+  Future<void> onAddRootForSubCom({required FlameGame? flameGame, required Component? component}) async {
     try {
       /// -----
       /// TODO:
@@ -285,6 +279,9 @@ class QUANLYTHANHPHANNUTBAMTHUOCCAP extends QUANLYTHANHPHANNUTBAMTHUOCCAPCOBAN {
     } catch (e) {
       await onReportRootIssue(nameFunction: 'onInitRootForSubCom');
     }
+
+    // getNutBamChuyenChonChiDinhTrai?.onKi
+    // getNutBamChuyenChonChiDinhPhai
 
     ///
     return;

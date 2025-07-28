@@ -4,8 +4,7 @@ import 'package:pkg_khung_man_hinh_ss020000/pkg_khung_man_hinh_ss020000_exp.dart
 /// -----
 /// TODO: Khung Tích Hợp Tài Nguyên Dollar Trao Đổi
 /// -----
-class KHUNGTICHHOPTAINGUYENDOLLARTRAODOI
-    extends THANHPHANTICHHOPNUTBAMVANBANTHUOCCAP {
+class KHUNGTICHHOPTAINGUYENDOLLARTRAODOI extends THANHPHANTICHHOPNUTBAMVANBANTHUOCCAP {
   /// -----
   /// TODO:
   /// -----
@@ -26,10 +25,7 @@ class KHUNGTICHHOPTAINGUYENDOLLARTRAODOI
 
   @override
   Future<void> onCaiDatChiTietThanhPhanGameUI() async {
-    await onCaiDatThanhPhanGameUI(
-      value: GAMEUIKHUNGTHONGTINTAINGUYENDOLLARTRAODOI(),
-      caiDatUuTien: true,
-    );
+    await onCaiDatThanhPhanGameUI(value: GAMEUIKHUNGTHONGTINTAINGUYENDOLLARTRAODOI(), caiDatUuTien: true);
 
     await getThanhPhanGameUI?.onSetupRoot();
 
@@ -38,5 +34,20 @@ class KHUNGTICHHOPTAINGUYENDOLLARTRAODOI
     await onCapNhatChiTietThanhPhanGameUI();
 
     return;
+  }
+
+  int tongSoLuongTaiNguyenDollarTraoDoi = 1;
+
+  @override
+  void update(double dt) {
+    // TODO: implement update
+    super.update(dt);
+
+    if (tongSoLuongTaiNguyenDollarTraoDoi != 0) {
+      tongSoLuongTaiNguyenDollarTraoDoi = 0;
+
+      getThanhPhanVanBanThuan?.onVoidCaiDatVanBan(value: tongSoLuongTaiNguyenDollarTraoDoi.toString(), caiDatUuTien: true);
+      getThanhPhanVanBanSoHoc?.onVoidCaiDatVanBan(value: tongSoLuongTaiNguyenDollarTraoDoi.toDouble(), caiDatUuTien: true);
+    }
   }
 }

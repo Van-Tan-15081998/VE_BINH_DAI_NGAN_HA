@@ -12,8 +12,7 @@ import 'package:pkg_khung_man_hinh_ss022000/22_def0022/ADef030_0/08_SubDefs/Def0
 /// -----
 /// TODO: Quản Lý Thành Phần Nút Bấm Khung Màn Hình Chính
 /// -----
-class QUANLYTHANHPHANNUTBAMKHUNGMANHINHCHINH
-    extends QUANLYTHANHPHANNUTBAMTHUOCCAPCOBAN {
+class QUANLYTHANHPHANNUTBAMKHUNGMANHINHCHINH extends QUANLYTHANHPHANNUTBAMTHUOCCAPCOBAN {
   final VoidCallback? onThucThiChuyenTabSS010;
   final VoidCallback? onThucThiChuyenTabSS020;
   final VoidCallback? onThucThiChuyenTabSS030;
@@ -41,10 +40,7 @@ class QUANLYTHANHPHANNUTBAMKHUNGMANHINHCHINH
   /// -----
   NUTBAMCHUYENTABSS010? _nutBamChuyenTabSS010;
   NUTBAMCHUYENTABSS010? get getNutBamChuyenTabSS010 => _nutBamChuyenTabSS010;
-  Future<void> onCaiDatNutBamChuyenTabSS010({
-    required NUTBAMCHUYENTABSS010? value,
-    bool? caiDatUuTien,
-  }) async {
+  Future<void> onCaiDatNutBamChuyenTabSS010({required NUTBAMCHUYENTABSS010? value, bool? caiDatUuTien}) async {
     if (caiDatUuTien == true) {
       _nutBamChuyenTabSS010 = value;
     } else {
@@ -60,10 +56,7 @@ class QUANLYTHANHPHANNUTBAMKHUNGMANHINHCHINH
   /// -----
   NUTBAMCHUYENTABSS020? _nutBamChuyenTabSS020;
   NUTBAMCHUYENTABSS020? get getNutBamChuyenTabSS020 => _nutBamChuyenTabSS020;
-  Future<void> onCaiDatNutBamChuyenTabSS020({
-    required NUTBAMCHUYENTABSS020? value,
-    bool? caiDatUuTien,
-  }) async {
+  Future<void> onCaiDatNutBamChuyenTabSS020({required NUTBAMCHUYENTABSS020? value, bool? caiDatUuTien}) async {
     if (caiDatUuTien == true) {
       _nutBamChuyenTabSS020 = value;
     } else {
@@ -79,10 +72,7 @@ class QUANLYTHANHPHANNUTBAMKHUNGMANHINHCHINH
   /// -----
   NUTBAMCHUYENTABSS030? _nutBamChuyenTabSS030;
   NUTBAMCHUYENTABSS030? get getNutBamChuyenTabSS030 => _nutBamChuyenTabSS030;
-  Future<void> onCaiDatNutBamChuyenTabSS030({
-    required NUTBAMCHUYENTABSS030? value,
-    bool? caiDatUuTien,
-  }) async {
+  Future<void> onCaiDatNutBamChuyenTabSS030({required NUTBAMCHUYENTABSS030? value, bool? caiDatUuTien}) async {
     if (caiDatUuTien == true) {
       _nutBamChuyenTabSS030 = value;
     } else {
@@ -98,10 +88,7 @@ class QUANLYTHANHPHANNUTBAMKHUNGMANHINHCHINH
   /// -----
   NUTBAMCHUYENTABSS040? _nutBamChuyenTabSS040;
   NUTBAMCHUYENTABSS040? get getNutBamChuyenTabSS040 => _nutBamChuyenTabSS040;
-  Future<void> onCaiDatNutBamChuyenTabSS040({
-    required NUTBAMCHUYENTABSS040? value,
-    bool? caiDatUuTien,
-  }) async {
+  Future<void> onCaiDatNutBamChuyenTabSS040({required NUTBAMCHUYENTABSS040? value, bool? caiDatUuTien}) async {
     if (caiDatUuTien == true) {
       _nutBamChuyenTabSS040 = value;
     } else {
@@ -117,10 +104,7 @@ class QUANLYTHANHPHANNUTBAMKHUNGMANHINHCHINH
   /// -----
   NUTBAMCHUYENTABSS050? _nutBamChuyenTabSS050;
   NUTBAMCHUYENTABSS050? get getNutBamChuyenTabSS050 => _nutBamChuyenTabSS050;
-  Future<void> onCaiDatNutBamChuyenTabSS050({
-    required NUTBAMCHUYENTABSS050? value,
-    bool? caiDatUuTien,
-  }) async {
+  Future<void> onCaiDatNutBamChuyenTabSS050({required NUTBAMCHUYENTABSS050? value, bool? caiDatUuTien}) async {
     if (caiDatUuTien == true) {
       _nutBamChuyenTabSS050 = value;
     } else {
@@ -234,40 +218,17 @@ class QUANLYTHANHPHANNUTBAMKHUNGMANHINHCHINH
   /// TODO: Add Comp Root
   /// -----
   @override
-  Future<void> onAddRoot({
-    required FlameGame? flameGame,
-    required Component? component,
-  }) async {
+  Future<void> onAddRoot({required FlameGame? flameGame, required Component? component}) async {
     try {
       /// -----
       /// TODO:
       /// -----
       await Future.wait([
-        onAddComponent(
-          flameGame: flameGame,
-          parentComponent: component,
-          childComponent: getNutBamChuyenTabSS010,
-        ).catchError((e) => null),
-        onAddComponent(
-          flameGame: flameGame,
-          parentComponent: component,
-          childComponent: getNutBamChuyenTabSS020,
-        ).catchError((e) => null),
-        onAddComponent(
-          flameGame: flameGame,
-          parentComponent: component,
-          childComponent: getNutBamChuyenTabSS030,
-        ).catchError((e) => null),
-        onAddComponent(
-          flameGame: flameGame,
-          parentComponent: component,
-          childComponent: getNutBamChuyenTabSS040,
-        ).catchError((e) => null),
-        onAddComponent(
-          flameGame: flameGame,
-          parentComponent: component,
-          childComponent: getNutBamChuyenTabSS050,
-        ).catchError((e) => null),
+        onAddComponent(flameGame: flameGame, parentComponent: component, childComponent: getNutBamChuyenTabSS010).catchError((e) => null),
+        onAddComponent(flameGame: flameGame, parentComponent: component, childComponent: getNutBamChuyenTabSS020).catchError((e) => null),
+        onAddComponent(flameGame: flameGame, parentComponent: component, childComponent: getNutBamChuyenTabSS030).catchError((e) => null),
+        onAddComponent(flameGame: flameGame, parentComponent: component, childComponent: getNutBamChuyenTabSS040).catchError((e) => null),
+        onAddComponent(flameGame: flameGame, parentComponent: component, childComponent: getNutBamChuyenTabSS050).catchError((e) => null),
       ]);
 
       /// -----
@@ -286,35 +247,17 @@ class QUANLYTHANHPHANNUTBAMKHUNGMANHINHCHINH
   /// TODO: Add Comp Root For SubCom
   /// -----
   @override
-  Future<void> onAddRootForSubCom({
-    required FlameGame? flameGame,
-    required Component? component,
-  }) async {
+  Future<void> onAddRootForSubCom({required FlameGame? flameGame, required Component? component}) async {
     try {
       /// -----
       /// TODO:
       /// -----
       await Future.wait([
-        getNutBamChuyenTabSS010
-                ?.onAddRoot(flameGame: flameGame, component: component)
-                .catchError((e) => null) ??
-            onReportRootIssue(nameFunction: 'onAddRootForSubCom'),
-        getNutBamChuyenTabSS020
-                ?.onAddRoot(flameGame: flameGame, component: component)
-                .catchError((e) => null) ??
-            onReportRootIssue(nameFunction: 'onAddRootForSubCom'),
-        getNutBamChuyenTabSS030
-                ?.onAddRoot(flameGame: flameGame, component: component)
-                .catchError((e) => null) ??
-            onReportRootIssue(nameFunction: 'onAddRootForSubCom'),
-        getNutBamChuyenTabSS040
-                ?.onAddRoot(flameGame: flameGame, component: component)
-                .catchError((e) => null) ??
-            onReportRootIssue(nameFunction: 'onAddRootForSubCom'),
-        getNutBamChuyenTabSS050
-                ?.onAddRoot(flameGame: flameGame, component: component)
-                .catchError((e) => null) ??
-            onReportRootIssue(nameFunction: 'onAddRootForSubCom'),
+        getNutBamChuyenTabSS010?.onAddRoot(flameGame: flameGame, component: component).catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onAddRootForSubCom'),
+        getNutBamChuyenTabSS020?.onAddRoot(flameGame: flameGame, component: component).catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onAddRootForSubCom'),
+        getNutBamChuyenTabSS030?.onAddRoot(flameGame: flameGame, component: component).catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onAddRootForSubCom'),
+        getNutBamChuyenTabSS040?.onAddRoot(flameGame: flameGame, component: component).catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onAddRootForSubCom'),
+        getNutBamChuyenTabSS050?.onAddRoot(flameGame: flameGame, component: component).catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onAddRootForSubCom'),
       ]);
     } catch (e) {
       await onReportRootIssue(nameFunction: 'onAddRootForSubCom');
@@ -335,14 +278,9 @@ class QUANLYTHANHPHANNUTBAMKHUNGMANHINHCHINH
       /// -----
       /// TODO:
       /// -----
-      double sizeDyManHinhPhiVatLy =
-          getGlobalStateManagementSystem?.getThietLapTongQuat?.getChieuCaoManHinhPhiVatLy ??
-          100.0;
+      double sizeDyManHinhPhiVatLy = getGlobalStateManagementSystem?.getThietLapTongQuat?.getChieuCaoManHinhPhiVatLy ?? 100.0;
 
-      double donViChieuRong =
-          (getGlobalStateManagementSystem?.getThietLapTongQuat?.getChieuRongManHinhVatLy ??
-              100.0) /
-          36;
+      double donViChieuRong = (getGlobalStateManagementSystem?.getThietLapTongQuat?.getChieuRongManHinhVatLy ?? 100.0) / 36;
 
       double sizeDxNutBamChonTab = donViChieuRong * 6.0;
       double sizeDyNutBamChonTab = donViChieuRong * 4.0;
@@ -459,16 +397,11 @@ class QUANLYTHANHPHANNUTBAMKHUNGMANHINHCHINH
       /// TODO:
       /// -----
       await Future.wait([
-        getNutBamChuyenTabSS010?.onSetupRoot().catchError((e) => null) ??
-            onReportRootIssue(nameFunction: ''),
-        getNutBamChuyenTabSS020?.onSetupRoot().catchError((e) => null) ??
-            onReportRootIssue(nameFunction: ''),
-        getNutBamChuyenTabSS030?.onSetupRoot().catchError((e) => null) ??
-            onReportRootIssue(nameFunction: ''),
-        getNutBamChuyenTabSS040?.onSetupRoot().catchError((e) => null) ??
-            onReportRootIssue(nameFunction: ''),
-        getNutBamChuyenTabSS050?.onSetupRoot().catchError((e) => null) ??
-            onReportRootIssue(nameFunction: ''),
+        getNutBamChuyenTabSS010?.onSetupRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+        getNutBamChuyenTabSS020?.onSetupRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+        getNutBamChuyenTabSS030?.onSetupRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+        getNutBamChuyenTabSS040?.onSetupRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+        getNutBamChuyenTabSS050?.onSetupRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
       ]);
     } catch (e) {
       await onReportRootIssue(nameFunction: 'onSetupRootForSubCom');
@@ -490,17 +423,18 @@ class QUANLYTHANHPHANNUTBAMKHUNGMANHINHCHINH
       /// TODO:
       /// -----
       await Future.wait([
-        getNutBamChuyenTabSS010?.onInitRoot().catchError((e) => null) ??
-            onReportRootIssue(nameFunction: ''),
-        getNutBamChuyenTabSS020?.onInitRoot().catchError((e) => null) ??
-            onReportRootIssue(nameFunction: ''),
-        getNutBamChuyenTabSS030?.onInitRoot().catchError((e) => null) ??
-            onReportRootIssue(nameFunction: ''),
-        getNutBamChuyenTabSS040?.onInitRoot().catchError((e) => null) ??
-            onReportRootIssue(nameFunction: ''),
-        getNutBamChuyenTabSS050?.onInitRoot().catchError((e) => null) ??
-            onReportRootIssue(nameFunction: ''),
+        getNutBamChuyenTabSS010?.onInitRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+        getNutBamChuyenTabSS020?.onInitRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+        getNutBamChuyenTabSS030?.onInitRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+        getNutBamChuyenTabSS040?.onInitRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+        getNutBamChuyenTabSS050?.onInitRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
       ]);
+
+      await getNutBamChuyenTabSS010?.onKichHoatThanhPhanThuocCap();
+      await getNutBamChuyenTabSS020?.onKichHoatThanhPhanThuocCap();
+      await getNutBamChuyenTabSS030?.onKichHoatThanhPhanThuocCap();
+      await getNutBamChuyenTabSS040?.onKichHoatThanhPhanThuocCap();
+      await getNutBamChuyenTabSS050?.onKichHoatThanhPhanThuocCap();
     } catch (e) {
       await onReportRootIssue(nameFunction: 'onInitRootForSubCom');
     }
@@ -513,30 +447,17 @@ class QUANLYTHANHPHANNUTBAMKHUNGMANHINHCHINH
   /// TODO: Remove Comp Root
   /// -----
   @override
-  Future<void> onRemoveRoot({
-    required FlameGame? flameGame,
-    required Component? component,
-  }) async {
+  Future<void> onRemoveRoot({required FlameGame? flameGame, required Component? component}) async {
     try {
       /// -----
       /// TODO:
       /// -----
       await Future.wait([
-        onRemoveComponent(
-          component: getNutBamChuyenTabSS010,
-        ).catchError((e) => null),
-        onRemoveComponent(
-          component: getNutBamChuyenTabSS020,
-        ).catchError((e) => null),
-        onRemoveComponent(
-          component: getNutBamChuyenTabSS030,
-        ).catchError((e) => null),
-        onRemoveComponent(
-          component: getNutBamChuyenTabSS040,
-        ).catchError((e) => null),
-        onRemoveComponent(
-          component: getNutBamChuyenTabSS050,
-        ).catchError((e) => null),
+        onRemoveComponent(component: getNutBamChuyenTabSS010).catchError((e) => null),
+        onRemoveComponent(component: getNutBamChuyenTabSS020).catchError((e) => null),
+        onRemoveComponent(component: getNutBamChuyenTabSS030).catchError((e) => null),
+        onRemoveComponent(component: getNutBamChuyenTabSS040).catchError((e) => null),
+        onRemoveComponent(component: getNutBamChuyenTabSS050).catchError((e) => null),
       ]);
 
       /// -----
@@ -567,9 +488,7 @@ class QUANLYTHANHPHANNUTBAMKHUNGMANHINHCHINH
 
       ///
     } catch (e) {
-      await onReportRootIssue(
-        nameFunction: 'onKichHoatKhungManHinhThuocCapTabSS010',
-      );
+      await onReportRootIssue(nameFunction: 'onKichHoatKhungManHinhThuocCapTabSS010');
     }
 
     ///
@@ -592,9 +511,7 @@ class QUANLYTHANHPHANNUTBAMKHUNGMANHINHCHINH
 
       ///
     } catch (e) {
-      await onReportRootIssue(
-        nameFunction: 'onKichHoatKhungManHinhThuocCapTabSS020',
-      );
+      await onReportRootIssue(nameFunction: 'onKichHoatKhungManHinhThuocCapTabSS020');
     }
 
     ///
@@ -617,9 +534,7 @@ class QUANLYTHANHPHANNUTBAMKHUNGMANHINHCHINH
 
       ///
     } catch (e) {
-      await onReportRootIssue(
-        nameFunction: 'onKichHoatKhungManHinhThuocCapTabSS030',
-      );
+      await onReportRootIssue(nameFunction: 'onKichHoatKhungManHinhThuocCapTabSS030');
     }
 
     ///
@@ -642,9 +557,7 @@ class QUANLYTHANHPHANNUTBAMKHUNGMANHINHCHINH
 
       ///
     } catch (e) {
-      await onReportRootIssue(
-        nameFunction: 'onKichHoatKhungManHinhThuocCapTabSS040',
-      );
+      await onReportRootIssue(nameFunction: 'onKichHoatKhungManHinhThuocCapTabSS040');
     }
 
     ///
@@ -667,9 +580,7 @@ class QUANLYTHANHPHANNUTBAMKHUNGMANHINHCHINH
 
       ///
     } catch (e) {
-      await onReportRootIssue(
-        nameFunction: 'onKichHoatKhungManHinhThuocCapTabSS050',
-      );
+      await onReportRootIssue(nameFunction: 'onKichHoatKhungManHinhThuocCapTabSS050');
     }
 
     ///
@@ -685,26 +596,14 @@ class QUANLYTHANHPHANNUTBAMKHUNGMANHINHCHINH
       /// TODO:
       /// -----
       await Future.wait([
-        onRemoveComponent(
-          component: getNutBamChuyenTabSS010,
-        ).catchError((e) => null),
-        onRemoveComponent(
-          component: getNutBamChuyenTabSS020,
-        ).catchError((e) => null),
-        onRemoveComponent(
-          component: getNutBamChuyenTabSS030,
-        ).catchError((e) => null),
-        onRemoveComponent(
-          component: getNutBamChuyenTabSS040,
-        ).catchError((e) => null),
-        onRemoveComponent(
-          component: getNutBamChuyenTabSS050,
-        ).catchError((e) => null),
+        onRemoveComponent(component: getNutBamChuyenTabSS010).catchError((e) => null),
+        onRemoveComponent(component: getNutBamChuyenTabSS020).catchError((e) => null),
+        onRemoveComponent(component: getNutBamChuyenTabSS030).catchError((e) => null),
+        onRemoveComponent(component: getNutBamChuyenTabSS040).catchError((e) => null),
+        onRemoveComponent(component: getNutBamChuyenTabSS050).catchError((e) => null),
       ]);
     } catch (e) {
-      await onReportRootIssue(
-        nameFunction: 'onKichHoatKhungManHinhThuocCapSS300100',
-      );
+      await onReportRootIssue(nameFunction: 'onKichHoatKhungManHinhThuocCapSS300100');
     }
 
     ///
@@ -718,31 +617,11 @@ class QUANLYTHANHPHANNUTBAMKHUNGMANHINHCHINH
       /// TODO:
       /// -----
       await Future.wait([
-        onAddComponent(
-          flameGame: getGameController,
-          parentComponent: null,
-          childComponent: getNutBamChuyenTabSS010,
-        ).catchError((e) => null),
-        onAddComponent(
-          flameGame: getGameController,
-          parentComponent: null,
-          childComponent: getNutBamChuyenTabSS020,
-        ).catchError((e) => null),
-        onAddComponent(
-          flameGame: getGameController,
-          parentComponent: null,
-          childComponent: getNutBamChuyenTabSS030,
-        ).catchError((e) => null),
-        onAddComponent(
-          flameGame: getGameController,
-          parentComponent: null,
-          childComponent: getNutBamChuyenTabSS040,
-        ).catchError((e) => null),
-        onAddComponent(
-          flameGame: getGameController,
-          parentComponent: null,
-          childComponent: getNutBamChuyenTabSS050,
-        ).catchError((e) => null),
+        onAddComponent(flameGame: getGameController, parentComponent: null, childComponent: getNutBamChuyenTabSS010).catchError((e) => null),
+        onAddComponent(flameGame: getGameController, parentComponent: null, childComponent: getNutBamChuyenTabSS020).catchError((e) => null),
+        onAddComponent(flameGame: getGameController, parentComponent: null, childComponent: getNutBamChuyenTabSS030).catchError((e) => null),
+        onAddComponent(flameGame: getGameController, parentComponent: null, childComponent: getNutBamChuyenTabSS040).catchError((e) => null),
+        onAddComponent(flameGame: getGameController, parentComponent: null, childComponent: getNutBamChuyenTabSS050).catchError((e) => null),
       ]);
 
       /// -----
