@@ -617,6 +617,30 @@ abstract class QUANLYTHANHPHANMANHINHTHUOCCAPCOBAN with CAUTRUCTHUCTHICOBAN, KIC
   }
 
   /// -----
+  /// TODO: Kích Hoạt Khung Màn Hình Thuộc Cấp Tab SS030 [Tab Chính SS030]
+  /// -----
+  @override
+  Future<void> onKichHoatKhungManHinhThuocCapTabSS030TruongHopSS020() async {
+    try {
+      /// -----
+      /// TODO:
+      /// -----
+      if (getDanhSachThanhPhanManHinhThuocCap.isNotEmpty == true) {
+        for (THANHPHANMANHINHTHUOCCAPCOBAN? thanhPhan in getDanhSachThanhPhanManHinhThuocCap) {
+          await thanhPhan?.onKichHoatKhungManHinhThuocCapTabSS030TruongHopSS020();
+        }
+      }
+
+      ///
+    } catch (e) {
+      await onReportRootIssue(nameFunction: 'onKichHoatKhungManHinhThuocCapTabSS030TruongHopSS020');
+    }
+
+    ///
+    return;
+  }
+
+  /// -----
   /// TODO: Kích Hoạt Khung Màn Hình Thuộc Cấp Tab SS040 [Tab Chính SS040]
   /// -----
   @override

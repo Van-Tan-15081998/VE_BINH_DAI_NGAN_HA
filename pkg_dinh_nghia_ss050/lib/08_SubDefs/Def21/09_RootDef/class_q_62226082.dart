@@ -434,21 +434,21 @@ class QuanLyTrangThaiThietLapTongQuat
           switch (getTocDoKhungHinh) {
             case 60:
               {
-                if (chiSoTangTienGiamTanXuatCapNhat % 500 == 0) {
+                if (chiSoTangTienGiamTanXuatCapNhat % 100 == 0) {
                   return true;
                 }
               }
               break;
             case 90:
               {
-                if (chiSoTangTienGiamTanXuatCapNhat % 500 == 0) {
+                if (chiSoTangTienGiamTanXuatCapNhat % 100 == 0) {
                   return true;
                 }
               }
               break;
             case 120:
               {
-                if (chiSoTangTienGiamTanXuatCapNhat % 500 == 0) {
+                if (chiSoTangTienGiamTanXuatCapNhat % 100 == 0) {
                   return true;
                 }
               }
@@ -719,21 +719,21 @@ class QuanLyTrangThaiThietLapTongQuat
           switch (getTocDoKhungHinh) {
             case 60:
               {
-                if (chiSoTangTienGiamTanXuatCapNhat % 500 == 0) {
+                if (chiSoTangTienGiamTanXuatCapNhat % 100 == 0) {
                   return true;
                 }
               }
               break;
             case 90:
               {
-                if (chiSoTangTienGiamTanXuatCapNhat % 500 == 0) {
+                if (chiSoTangTienGiamTanXuatCapNhat % 100 == 0) {
                   return true;
                 }
               }
               break;
             case 120:
               {
-                if (chiSoTangTienGiamTanXuatCapNhat % 500 == 0) {
+                if (chiSoTangTienGiamTanXuatCapNhat % 100 == 0) {
                   return true;
                 }
               }

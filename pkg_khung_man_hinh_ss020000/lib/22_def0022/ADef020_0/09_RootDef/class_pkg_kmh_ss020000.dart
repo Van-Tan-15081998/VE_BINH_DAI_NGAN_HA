@@ -751,6 +751,32 @@ abstract class THANHPHANMANHINHTHUOCCAPCOBAN extends PositionComponent with CAUT
   }
 
   /// -----
+  /// TODO: Kích Hoạt Khung Màn Hình Thuộc Cấp Tab SS030 [Tab Chính SS030]
+  /// -----
+  @override
+  Future<void> onKichHoatKhungManHinhThuocCapTabSS030TruongHopSS020() async {
+    try {
+      /// -----
+      /// TODO:
+      /// -----
+      await Future.wait([
+        getQuanLyThanhPhanManHinhThuocCap?.onKichHoatKhungManHinhThuocCapTabSS030TruongHopSS020().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onKichHoatKhungManHinhThuocCapTabSS030'),
+        getQuanLyThanhPhanNutBamThuocCap?.onKichHoatKhungManHinhThuocCapTabSS030TruongHopSS020().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onKichHoatKhungManHinhThuocCapTabSS030'),
+        getQuanLyThanhPhanVanBanThuocCap?.onKichHoatKhungManHinhThuocCapTabSS030TruongHopSS020().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onKichHoatKhungManHinhThuocCapTabSS030'),
+        getQuanLyThanhPhanHinhAnhThuocCap?.onKichHoatKhungManHinhThuocCapTabSS030TruongHopSS020().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onKichHoatKhungManHinhThuocCapTabSS030'),
+        getQuanLyThanhPhanTichHopThuocCap?.onKichHoatKhungManHinhThuocCapTabSS030TruongHopSS020().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onKichHoatKhungManHinhThuocCapTabSS030'),
+      ]);
+
+      ///
+    } catch (e) {
+      await onReportRootIssue(nameFunction: 'onKichHoatKhungManHinhThuocCapTabSS030TruongHopSS020');
+    }
+
+    ///
+    return;
+  }
+
+  /// -----
   /// TODO: Kích Hoạt Khung Màn Hình Thuộc Cấp Tab SS040 [Tab Chính SS040]
   /// -----
   @override

@@ -175,6 +175,11 @@ export '28_def0028/ADef400_0/08_SubDefs/Def210_2/09_RootDef/class_gameui.dart';
 /// TODO: _____[CARD_NHIEM_VU_CHIEN_DAU_HUY_KICH_HOAT]_____
 export '28_def0028/ADef400_0/08_SubDefs/Def220_2/09_RootDef/class_gameui.dart';
 
+/// TODO: _____[CARD_NHIEM_VU_CHIEN_DAU_NGAN_CHAN_XAM_NHAP]_____
+export '28_def0028/ADef400_0/08_SubDefs/Def230_2/09_RootDef/class_gameui.dart';
+
+/// TODO: _____[NUT_BAM_CHIEN_DAU_NGAN_CHAN_XAM_NHAP]_____
+export '28_def0028/ADef400_0/08_SubDefs/Def240_2/09_RootDef/class_gameui.dart';
 
 /// TODO: _____[THANH_TICH_NHIEM_VU_CHIEN_DAU_SS010_KICH_HOAT]_____
 export '28_def0028/ADef400_0/08_SubDefs/Def300_2/09_RootDef/class_gameui.dart';

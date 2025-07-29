@@ -475,16 +475,28 @@ class QUANLYTHANHPHANNUTBAMKHUNGMANHINHCHINH extends QUANLYTHANHPHANNUTBAMTHUOCC
   /// -----
   /// TODO: Kích Hoạt Khung Màn Hình Thuộc Cấp Tab SS010 [Tab Chính SS010]
   /// -----
+  @override
   Future<void> onKichHoatKhungManHinhThuocCapTabSS010() async {
     try {
       /// -----
       /// TODO:
       /// -----
-      getNutBamChuyenTabSS010?.onVoidKichHoat();
-      getNutBamChuyenTabSS020?.onVoidHuyKichHoat();
-      getNutBamChuyenTabSS030?.onVoidHuyKichHoat();
-      getNutBamChuyenTabSS040?.onVoidHuyKichHoat();
-      getNutBamChuyenTabSS050?.onVoidHuyKichHoat();
+      if (getNutBamChuyenTabSS010?.getTrangThaiKichHoatHanhVi?.getKiemTraKichHoat == false) {
+        /// -----
+        /// TODO:
+        /// -----
+        getNutBamChuyenTabSS010?.onVoidKichHoatHanhVi();
+        getNutBamChuyenTabSS020?.onVoidHuyKichHoatHanhVi();
+        getNutBamChuyenTabSS030?.onVoidHuyKichHoatHanhVi();
+        getNutBamChuyenTabSS040?.onVoidHuyKichHoatHanhVi();
+        getNutBamChuyenTabSS050?.onVoidHuyKichHoatHanhVi();
+      } else if (getNutBamChuyenTabSS010?.getTrangThaiKichHoatHanhVi?.getKiemTraKichHoat == true) {
+        getNutBamChuyenTabSS010?.onVoidHuyKichHoatHanhVi();
+        getNutBamChuyenTabSS020?.onVoidHuyKichHoatHanhVi();
+        getNutBamChuyenTabSS030?.onVoidHuyKichHoatHanhVi();
+        getNutBamChuyenTabSS040?.onVoidHuyKichHoatHanhVi();
+        getNutBamChuyenTabSS050?.onVoidHuyKichHoatHanhVi();
+      }
 
       ///
     } catch (e) {
@@ -498,16 +510,28 @@ class QUANLYTHANHPHANNUTBAMKHUNGMANHINHCHINH extends QUANLYTHANHPHANNUTBAMTHUOCC
   /// -----
   /// TODO: Kích Hoạt Khung Màn Hình Thuộc Cấp Tab SS020 [Tab Chính SS020]
   /// -----
+  @override
   Future<void> onKichHoatKhungManHinhThuocCapTabSS020() async {
     try {
       /// -----
       /// TODO:
       /// -----
-      getNutBamChuyenTabSS010?.onVoidHuyKichHoat();
-      getNutBamChuyenTabSS020?.onVoidKichHoat();
-      getNutBamChuyenTabSS030?.onVoidHuyKichHoat();
-      getNutBamChuyenTabSS040?.onVoidHuyKichHoat();
-      getNutBamChuyenTabSS050?.onVoidHuyKichHoat();
+      if (getNutBamChuyenTabSS020?.getTrangThaiKichHoatHanhVi?.getKiemTraKichHoat == false) {
+        /// -----
+        /// TODO:
+        /// -----
+        getNutBamChuyenTabSS010?.onVoidHuyKichHoatHanhVi();
+        getNutBamChuyenTabSS020?.onVoidKichHoatHanhVi();
+        getNutBamChuyenTabSS030?.onVoidHuyKichHoatHanhVi();
+        getNutBamChuyenTabSS040?.onVoidHuyKichHoatHanhVi();
+        getNutBamChuyenTabSS050?.onVoidHuyKichHoatHanhVi();
+      } else if (getNutBamChuyenTabSS020?.getTrangThaiKichHoatHanhVi?.getKiemTraKichHoat == true) {
+        getNutBamChuyenTabSS010?.onVoidHuyKichHoatHanhVi();
+        getNutBamChuyenTabSS020?.onVoidHuyKichHoatHanhVi();
+        getNutBamChuyenTabSS030?.onVoidHuyKichHoatHanhVi();
+        getNutBamChuyenTabSS040?.onVoidHuyKichHoatHanhVi();
+        getNutBamChuyenTabSS050?.onVoidHuyKichHoatHanhVi();
+      }
 
       ///
     } catch (e) {
@@ -521,16 +545,33 @@ class QUANLYTHANHPHANNUTBAMKHUNGMANHINHCHINH extends QUANLYTHANHPHANNUTBAMTHUOCC
   /// -----
   /// TODO: Kích Hoạt Khung Màn Hình Thuộc Cấp Tab SS030 [Tab Chính SS030]
   /// -----
+  @override
   Future<void> onKichHoatKhungManHinhThuocCapTabSS030() async {
     try {
-      /// -----
-      /// TODO:
-      /// -----
-      getNutBamChuyenTabSS010?.onVoidHuyKichHoat();
-      getNutBamChuyenTabSS020?.onVoidHuyKichHoat();
-      getNutBamChuyenTabSS030?.onVoidKichHoat();
-      getNutBamChuyenTabSS040?.onVoidHuyKichHoat();
-      getNutBamChuyenTabSS050?.onVoidHuyKichHoat();
+
+      getNutBamChuyenTabSS010?.onVoidHuyKichHoatHanhVi();
+      getNutBamChuyenTabSS020?.onVoidHuyKichHoatHanhVi();
+      getNutBamChuyenTabSS030?.onVoidKichHoatHanhVi();
+      getNutBamChuyenTabSS040?.onVoidHuyKichHoatHanhVi();
+      getNutBamChuyenTabSS050?.onVoidHuyKichHoatHanhVi();
+
+
+      // if (getNutBamChuyenTabSS030?.getTrangThaiKichHoatHanhVi?.getKiemTraKichHoat == false) {
+      //   /// -----
+      //   /// TODO:
+      //   /// -----
+      //   getNutBamChuyenTabSS010?.onVoidHuyKichHoatHanhVi();
+      //   getNutBamChuyenTabSS020?.onVoidHuyKichHoatHanhVi();
+      //   getNutBamChuyenTabSS030?.onVoidKichHoatHanhVi();
+      //   getNutBamChuyenTabSS040?.onVoidHuyKichHoatHanhVi();
+      //   getNutBamChuyenTabSS050?.onVoidHuyKichHoatHanhVi();
+      // } else if (getNutBamChuyenTabSS030?.getTrangThaiKichHoatHanhVi?.getKiemTraKichHoat == true) {
+      //   getNutBamChuyenTabSS010?.onVoidHuyKichHoatHanhVi();
+      //   getNutBamChuyenTabSS020?.onVoidHuyKichHoatHanhVi();
+      //   getNutBamChuyenTabSS030?.onVoidHuyKichHoatHanhVi();
+      //   getNutBamChuyenTabSS040?.onVoidHuyKichHoatHanhVi();
+      //   getNutBamChuyenTabSS050?.onVoidHuyKichHoatHanhVi();
+      // }
 
       ///
     } catch (e) {
@@ -541,19 +582,40 @@ class QUANLYTHANHPHANNUTBAMKHUNGMANHINHCHINH extends QUANLYTHANHPHANNUTBAMTHUOCC
     return;
   }
 
+  @override
+  Future<void> onHuyKichHoatKhungManHinhThuocCapTabSS030() async {
+
+    getNutBamChuyenTabSS030?.onVoidHuyKichHoatHanhVi();
+
+    ///
+    return;
+  }
+
   /// -----
   /// TODO: Kích Hoạt Khung Màn Hình Thuộc Cấp Tab SS040 [Tab Chính SS040]
   /// -----
+  @override
   Future<void> onKichHoatKhungManHinhThuocCapTabSS040() async {
     try {
       /// -----
       /// TODO:
       /// -----
-      getNutBamChuyenTabSS010?.onVoidHuyKichHoat();
-      getNutBamChuyenTabSS020?.onVoidHuyKichHoat();
-      getNutBamChuyenTabSS030?.onVoidHuyKichHoat();
-      getNutBamChuyenTabSS040?.onVoidKichHoat();
-      getNutBamChuyenTabSS050?.onVoidHuyKichHoat();
+      if (getNutBamChuyenTabSS040?.getTrangThaiKichHoatHanhVi?.getKiemTraKichHoat == false) {
+        /// -----
+        /// TODO:
+        /// -----
+        getNutBamChuyenTabSS010?.onVoidHuyKichHoatHanhVi();
+        getNutBamChuyenTabSS020?.onVoidHuyKichHoatHanhVi();
+        getNutBamChuyenTabSS030?.onVoidHuyKichHoatHanhVi();
+        getNutBamChuyenTabSS040?.onVoidKichHoatHanhVi();
+        getNutBamChuyenTabSS050?.onVoidHuyKichHoatHanhVi();
+      } else if (getNutBamChuyenTabSS040?.getTrangThaiKichHoatHanhVi?.getKiemTraKichHoat == true) {
+        getNutBamChuyenTabSS010?.onVoidHuyKichHoatHanhVi();
+        getNutBamChuyenTabSS020?.onVoidHuyKichHoatHanhVi();
+        getNutBamChuyenTabSS030?.onVoidHuyKichHoatHanhVi();
+        getNutBamChuyenTabSS040?.onVoidHuyKichHoatHanhVi();
+        getNutBamChuyenTabSS050?.onVoidHuyKichHoatHanhVi();
+      }
 
       ///
     } catch (e) {
@@ -567,16 +629,28 @@ class QUANLYTHANHPHANNUTBAMKHUNGMANHINHCHINH extends QUANLYTHANHPHANNUTBAMTHUOCC
   /// -----
   /// TODO: Kích Hoạt Khung Màn Hình Thuộc Cấp Tab SS050 [Tab Chính SS050]
   /// -----
+  @override
   Future<void> onKichHoatKhungManHinhThuocCapTabSS050() async {
     try {
       /// -----
       /// TODO:
       /// -----
-      getNutBamChuyenTabSS010?.onVoidHuyKichHoat();
-      getNutBamChuyenTabSS020?.onVoidHuyKichHoat();
-      getNutBamChuyenTabSS030?.onVoidHuyKichHoat();
-      getNutBamChuyenTabSS040?.onVoidHuyKichHoat();
-      getNutBamChuyenTabSS050?.onVoidKichHoat();
+      if (getNutBamChuyenTabSS050?.getTrangThaiKichHoatHanhVi?.getKiemTraKichHoat == false) {
+        /// -----
+        /// TODO:
+        /// -----
+        getNutBamChuyenTabSS010?.onVoidHuyKichHoatHanhVi();
+        getNutBamChuyenTabSS020?.onVoidHuyKichHoatHanhVi();
+        getNutBamChuyenTabSS030?.onVoidHuyKichHoatHanhVi();
+        getNutBamChuyenTabSS040?.onVoidHuyKichHoatHanhVi();
+        getNutBamChuyenTabSS050?.onVoidKichHoatHanhVi();
+      } else if (getNutBamChuyenTabSS050?.getTrangThaiKichHoatHanhVi?.getKiemTraKichHoat == true) {
+        getNutBamChuyenTabSS010?.onVoidHuyKichHoatHanhVi();
+        getNutBamChuyenTabSS020?.onVoidHuyKichHoatHanhVi();
+        getNutBamChuyenTabSS030?.onVoidHuyKichHoatHanhVi();
+        getNutBamChuyenTabSS040?.onVoidHuyKichHoatHanhVi();
+        getNutBamChuyenTabSS050?.onVoidHuyKichHoatHanhVi();
+      }
 
       ///
     } catch (e) {
@@ -590,6 +664,7 @@ class QUANLYTHANHPHANNUTBAMKHUNGMANHINHCHINH extends QUANLYTHANHPHANNUTBAMTHUOCC
   /// -----
   /// TODO: Kích Hoạt Khung Màn Hình Thuộc Cấp SS300100 [Tải Tài Nguyên Nhiệm Vụ]
   /// -----
+  @override
   Future<void> onKichHoatKhungManHinhThuocCapSS300100() async {
     try {
       /// -----

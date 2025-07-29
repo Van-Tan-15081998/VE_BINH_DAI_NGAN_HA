@@ -159,13 +159,59 @@ abstract class QUANLYTHANHPHANNUTBAMTHUOCCAPCOBAN with CAUTRUCTHUCTHICOBAN, KICH
     try {
       if (flameGame != null) {
         if (childComponent != null && childComponent.isMounted == false) {
-          // await flameGame.add(childComponent); // Update v2
-          childComponent.parent = flameGame;
+          await flameGame.add(childComponent); // Update v2
+          // childComponent.parent = flameGame;
+
+          ///
+          ///
+          ///
+          if (childComponent is THANHPHANMANHINHTHUOCCAPCOBAN) {
+            childComponent.onCaiDatFlameGameParentComponent(value: flameGame);
+          } else if (childComponent is THANHPHANMANHINHDRAGTHUOCCAPCOBAN) {
+            childComponent.onCaiDatFlameGameParentComponent(value: flameGame);
+          } else if (childComponent is THANHPHANNUTBAMTHUOCCAPTHUANKICHHOAT) {
+            childComponent.onCaiDatFlameGameParentComponent(value: flameGame);
+          } else if (childComponent is THANHPHANVANBANTHUANTHUOCCAP) {
+            childComponent.onCaiDatFlameGameParentComponent(value: flameGame);
+          } else if (childComponent is THANHPHANVANBANSOHOCTHUOCCAP) {
+            childComponent.onCaiDatFlameGameParentComponent(value: flameGame);
+          } else if (childComponent is THANHPHANHINHANHBACKGROUNDTHUOCCAP) {
+            childComponent.onCaiDatFlameGameParentComponent(value: flameGame);
+          } else if (childComponent is THANHPHANTICHHOPNUTBAMVANBANTHUOCCAP) {
+            childComponent.onCaiDatFlameGameParentComponent(value: flameGame);
+          } else if (childComponent is THANHPHANTICHHOPSPRITEANIMATIONVANBANTHUOCCAP) {
+            childComponent.onCaiDatFlameGameParentComponent(value: flameGame);
+          } else if (childComponent is THANHPHANTICHHOPSPRITEANIMATIONTHUOCCAP) {
+            childComponent.onCaiDatFlameGameParentComponent(value: flameGame);
+          }
         }
       } else if (parentComponent != null) {
         if (childComponent != null && childComponent.isMounted == false) {
-          // await parentComponent.add(childComponent); // Update v2
-          childComponent.parent = parentComponent;
+          await parentComponent.add(childComponent); // Update v2
+          // childComponent.parent = parentComponent;
+
+          ///
+          ///
+          ///
+          if (childComponent is THANHPHANMANHINHTHUOCCAPCOBAN) {
+            childComponent.onCaiDatParentComponent(value: parentComponent);
+          } else if (childComponent is THANHPHANMANHINHDRAGTHUOCCAPCOBAN) {
+            childComponent.onCaiDatParentComponent(value: parentComponent);
+          } else if (childComponent is THANHPHANNUTBAMTHUOCCAPTHUANKICHHOAT) {
+            childComponent.onCaiDatParentComponent(value: parentComponent);
+          } else if (childComponent is THANHPHANVANBANTHUANTHUOCCAP) {
+            childComponent.onCaiDatParentComponent(value: parentComponent);
+          } else if (childComponent is THANHPHANVANBANSOHOCTHUOCCAP) {
+            childComponent.onCaiDatParentComponent(value: parentComponent);
+          } else if (childComponent is THANHPHANHINHANHBACKGROUNDTHUOCCAP) {
+            childComponent.onCaiDatParentComponent(value: parentComponent);
+          } else if (childComponent is THANHPHANTICHHOPNUTBAMVANBANTHUOCCAP) {
+            childComponent.onCaiDatParentComponent(value: parentComponent);
+          } else if (childComponent is THANHPHANTICHHOPSPRITEANIMATIONVANBANTHUOCCAP) {
+            childComponent.onCaiDatParentComponent(value: parentComponent);
+          } else if (childComponent is THANHPHANTICHHOPSPRITEANIMATIONTHUOCCAP) {
+            childComponent.onCaiDatParentComponent(value: parentComponent);
+          }
         }
       }
     } catch (e) {

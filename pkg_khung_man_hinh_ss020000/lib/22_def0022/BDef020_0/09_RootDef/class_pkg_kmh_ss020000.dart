@@ -289,6 +289,42 @@ mixin KICHBANDIEUKHIENTHUOCCAPCOBAN {
   }
 
   /// -----
+  /// TODO: Huỷ Kích Hoạt Khung Màn Hình Thuộc Cấp Tab SS030 [Tab Chính SS030]
+  /// -----
+  Future<void> onHuyKichHoatKhungManHinhThuocCapTabSS030() async {
+    try {
+      /// -----
+      /// TODO:
+      /// -----
+    } catch (e) {
+      await onReportRootIssue(
+        nameFunction: 'onHuyKichHoatKhungManHinhThuocCapTabSS030',
+      );
+    }
+
+    ///
+    return;
+  }
+
+  /// -----
+  /// TODO: Kích Hoạt Khung Màn Hình Thuộc Cấp Tab SS030 [Tab Chính SS030]
+  /// -----
+  Future<void> onKichHoatKhungManHinhThuocCapTabSS030TruongHopSS020() async {
+    try {
+      /// -----
+      /// TODO:
+      /// -----
+    } catch (e) {
+      await onReportRootIssue(
+        nameFunction: 'onKichHoatKhungManHinhThuocCapTabSS030TruongHopSS020',
+      );
+    }
+
+    ///
+    return;
+  }
+
+  /// -----
   /// TODO: Kích Hoạt Khung Màn Hình Thuộc Cấp Tab SS040 [Tab Chính SS040]
   /// -----
   Future<void> onKichHoatKhungManHinhThuocCapTabSS040() async {

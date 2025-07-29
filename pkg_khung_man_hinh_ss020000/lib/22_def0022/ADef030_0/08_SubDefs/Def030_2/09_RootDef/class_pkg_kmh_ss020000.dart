@@ -213,6 +213,21 @@ abstract class THANHPHANNUTBAMTHUOCCAPTHUANKICHHOAT extends PositionComponent wi
   /// -----
   /// TODO:
   /// -----
+  TRANGTHAIKICHHOATTHANHPHAN? _trangThaiKichHoatHanhVi;
+  TRANGTHAIKICHHOATTHANHPHAN? get getTrangThaiKichHoatHanhVi => _trangThaiKichHoatHanhVi;
+  Future<void> onCaiDatTrangThaiKichHoatHanhVi({required TRANGTHAIKICHHOATTHANHPHAN? value, bool? caiDatUuTien}) async {
+    if (caiDatUuTien == true) {
+      _trangThaiKichHoatHanhVi = value;
+    } else {
+      _trangThaiKichHoatHanhVi ??= value;
+    }
+
+    return;
+  }
+
+  /// -----
+  /// TODO:
+  /// -----
   Future<void> onCapNhatTrangThaiKichHoatThanhPhan() async {
     /// -----
     /// TODO:
@@ -365,6 +380,27 @@ abstract class THANHPHANNUTBAMTHUOCCAPTHUANKICHHOAT extends PositionComponent wi
   }
 
   /// -----
+  /// TODO: Kích Hoạt Hành Vi
+  /// -----
+  void onVoidKichHoatHanhVi() {
+    onThucThi();
+    getSpriteAnimationComponentKichHoat?.onVoidCaiDatKiemTraHienThi(value: true);
+    getSpriteAnimationComponentKichHoat2?.onVoidCaiDatKiemTraHienThi(value: true);
+    getSpriteAnimationComponentHuyKichHoat?.onVoidCaiDatKiemTraHienThi(value: false);
+    getTrangThaiKichHoatHanhVi?.onVoidCaiDatKiemTraKichHoat(value: true, caiDatUuTien: true);
+  }
+
+  /// -----
+  /// TODO: Hủy Kích Hoạt
+  /// -----
+  void onVoidHuyKichHoatHanhVi() {
+    getSpriteAnimationComponentKichHoat?.onVoidCaiDatKiemTraHienThi(value: false);
+    getSpriteAnimationComponentKichHoat2?.onVoidCaiDatKiemTraHienThi(value: false);
+    getSpriteAnimationComponentHuyKichHoat?.onVoidCaiDatKiemTraHienThi(value: true);
+    getTrangThaiKichHoatHanhVi?.onVoidCaiDatKiemTraKichHoat(value: false, caiDatUuTien: true);
+  }
+
+  /// -----
   /// TODO: Kích Hoạt
   /// -----
   void onVoidKichHoat() {
@@ -421,17 +457,63 @@ abstract class THANHPHANNUTBAMTHUOCCAPTHUANKICHHOAT extends PositionComponent wi
   /// -----
   /// TODO:
   /// -----
-  Future<void> onAddComponent({required FlameGame? flameGame, required Component? parentComponent, Component? childComponent}) async {
+Future<void> onAddComponent({required FlameGame? flameGame, required Component? parentComponent, Component? childComponent}) async {
     try {
       if (flameGame != null) {
         if (childComponent != null && childComponent.isMounted == false) {
-          // await flameGame.add(childComponent); // Update v2
-          childComponent.parent = flameGame;
+          await flameGame.add(childComponent); // Update v2
+          // childComponent.parent = flameGame;
+
+          ///
+          ///
+          ///
+          if (childComponent is THANHPHANMANHINHTHUOCCAPCOBAN) {
+            childComponent.onCaiDatFlameGameParentComponent(value: flameGame);
+          } else if (childComponent is THANHPHANMANHINHDRAGTHUOCCAPCOBAN) {
+            childComponent.onCaiDatFlameGameParentComponent(value: flameGame);
+          } else if (childComponent is THANHPHANNUTBAMTHUOCCAPTHUANKICHHOAT) {
+            childComponent.onCaiDatFlameGameParentComponent(value: flameGame);
+          } else if (childComponent is THANHPHANVANBANTHUANTHUOCCAP) {
+            childComponent.onCaiDatFlameGameParentComponent(value: flameGame);
+          } else if (childComponent is THANHPHANVANBANSOHOCTHUOCCAP) {
+            childComponent.onCaiDatFlameGameParentComponent(value: flameGame);
+          } else if (childComponent is THANHPHANHINHANHBACKGROUNDTHUOCCAP) {
+            childComponent.onCaiDatFlameGameParentComponent(value: flameGame);
+          } else if (childComponent is THANHPHANTICHHOPNUTBAMVANBANTHUOCCAP) {
+            childComponent.onCaiDatFlameGameParentComponent(value: flameGame);
+          } else if (childComponent is THANHPHANTICHHOPSPRITEANIMATIONVANBANTHUOCCAP) {
+            childComponent.onCaiDatFlameGameParentComponent(value: flameGame);
+          } else if (childComponent is THANHPHANTICHHOPSPRITEANIMATIONTHUOCCAP) {
+            childComponent.onCaiDatFlameGameParentComponent(value: flameGame);
+          }
         }
       } else if (parentComponent != null) {
         if (childComponent != null && childComponent.isMounted == false) {
-          // await parentComponent.add(childComponent); // Update v2
-          childComponent.parent = parentComponent;
+          await parentComponent.add(childComponent); // Update v2
+          // childComponent.parent = parentComponent;
+
+          ///
+          ///
+          ///
+          if (childComponent is THANHPHANMANHINHTHUOCCAPCOBAN) {
+            childComponent.onCaiDatParentComponent(value: parentComponent);
+          } else if (childComponent is THANHPHANMANHINHDRAGTHUOCCAPCOBAN) {
+            childComponent.onCaiDatParentComponent(value: parentComponent);
+          } else if (childComponent is THANHPHANNUTBAMTHUOCCAPTHUANKICHHOAT) {
+            childComponent.onCaiDatParentComponent(value: parentComponent);
+          } else if (childComponent is THANHPHANVANBANTHUANTHUOCCAP) {
+            childComponent.onCaiDatParentComponent(value: parentComponent);
+          } else if (childComponent is THANHPHANVANBANSOHOCTHUOCCAP) {
+            childComponent.onCaiDatParentComponent(value: parentComponent);
+          } else if (childComponent is THANHPHANHINHANHBACKGROUNDTHUOCCAP) {
+            childComponent.onCaiDatParentComponent(value: parentComponent);
+          } else if (childComponent is THANHPHANTICHHOPNUTBAMVANBANTHUOCCAP) {
+            childComponent.onCaiDatParentComponent(value: parentComponent);
+          } else if (childComponent is THANHPHANTICHHOPSPRITEANIMATIONVANBANTHUOCCAP) {
+            childComponent.onCaiDatParentComponent(value: parentComponent);
+          } else if (childComponent is THANHPHANTICHHOPSPRITEANIMATIONTHUOCCAP) {
+            childComponent.onCaiDatParentComponent(value: parentComponent);
+          }
         }
       }
     } catch (e) {
@@ -531,6 +613,7 @@ abstract class THANHPHANNUTBAMTHUOCCAPTHUANKICHHOAT extends PositionComponent wi
     /// TODO:
     /// -----
     await onCaiDatTrangThaiKichHoatThanhPhan(value: TRANGTHAIKICHHOATTHANHPHAN(), caiDatUuTien: true);
+    await onCaiDatTrangThaiKichHoatHanhVi(value: TRANGTHAIKICHHOATTHANHPHAN(), caiDatUuTien: true);
 
     /// -----
     /// TODO:

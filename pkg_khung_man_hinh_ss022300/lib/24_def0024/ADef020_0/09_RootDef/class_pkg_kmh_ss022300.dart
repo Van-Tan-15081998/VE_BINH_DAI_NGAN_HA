@@ -86,6 +86,18 @@ class KHUNGMANHINHCHINHTABSS030CD extends THANHPHANMANHINHTHUOCCAPCOBAN {
           },
           onThucThiChuyenTabSS030: () {
             ///
+            if (getQuanLyThanhPhanManHinhThuocCap is QUANLYTHANHPHANMANHINHTHUOCCAP) {
+              (getQuanLyThanhPhanManHinhThuocCap as QUANLYTHANHPHANMANHINHTHUOCCAP).onKichHoatKhungManHinhTabSS030(flameGame: null, component: this);
+
+              // (getQuanLyThanhPhanManHinhThuocCap as QUANLYTHANHPHANMANHINHTHUOCCAP).getKhungManHinhTabSS010?.onHuyKichHoatThanhPhanManHinhThuocCap();
+              // (getQuanLyThanhPhanManHinhThuocCap as QUANLYTHANHPHANMANHINHTHUOCCAP).getKhungManHinhTabSS020?.onKichHoatThanhPhanManHinhThuocCap(
+              //   onHuyKichHoat: () {
+              //     if (getQuanLyThanhPhanNutBamThuocCap is QUANLYTHANHPHANNUTBAMTHUOCCAP) {
+              //       (getQuanLyThanhPhanNutBamThuocCap as QUANLYTHANHPHANNUTBAMTHUOCCAP).onThucThiChonTabSS000();
+              //     }
+              //   },
+              // );
+            }
           },
           onThucThiChuyenTabSS040: () {
             ///
@@ -151,20 +163,20 @@ class KHUNGMANHINHCHINHTABSS030CD extends THANHPHANMANHINHTHUOCCAPCOBAN {
   //   return;
   // }
 
-  @override
-  Future<void> onKichHoatThanhPhanManHinhThuocCap({VoidCallback? onHuyKichHoat, bool? kichHoatUuTien}) async {
-    await super.onKichHoatThanhPhanManHinhThuocCap(kichHoatUuTien: kichHoatUuTien, onHuyKichHoat: onHuyKichHoat);
-
-    /// Kích Hoạt Mặc Định Tab Chọn Chiến Đấu Cơ
-    if (getQuanLyThanhPhanManHinhThuocCap is QUANLYTHANHPHANMANHINHTHUOCCAP) {
-      if ((getQuanLyThanhPhanManHinhThuocCap as QUANLYTHANHPHANMANHINHTHUOCCAP).getKhungManHinhTabSS010?.getTrangThaiKichHoatThanhPhan?.getKiemTraKichHoat == false &&
-          (getQuanLyThanhPhanManHinhThuocCap as QUANLYTHANHPHANMANHINHTHUOCCAP).getKhungManHinhTabSS020?.getTrangThaiKichHoatThanhPhan?.getKiemTraKichHoat == false) {
-        // (getQuanLyThanhPhanManHinhThuocCap as QUANLYTHANHPHANMANHINHTHUOCCAP).getKhungManHinhTabSS010?.onKichHoatThanhPhanManHinhThuocCap();
-
-        if (getQuanLyThanhPhanNutBamThuocCap is QUANLYTHANHPHANNUTBAMTHUOCCAP) {
-          (getQuanLyThanhPhanNutBamThuocCap as QUANLYTHANHPHANNUTBAMTHUOCCAP).onThucThiChonTabSS010();
-        }
-      }
-    }
-  }
+  // @override
+  // Future<void> onKichHoatThanhPhanManHinhThuocCap({VoidCallback? onHuyKichHoat, bool? kichHoatUuTien}) async {
+  //   await super.onKichHoatThanhPhanManHinhThuocCap(kichHoatUuTien: kichHoatUuTien, onHuyKichHoat: onHuyKichHoat);
+  //
+  //   /// Kích Hoạt Mặc Định Tab Chọn Chiến Đấu Cơ
+  //   if (getQuanLyThanhPhanManHinhThuocCap is QUANLYTHANHPHANMANHINHTHUOCCAP) {
+  //     if ((getQuanLyThanhPhanManHinhThuocCap as QUANLYTHANHPHANMANHINHTHUOCCAP).getKhungManHinhTabSS010?.getTrangThaiKichHoatThanhPhan?.getKiemTraKichHoat == false &&
+  //         (getQuanLyThanhPhanManHinhThuocCap as QUANLYTHANHPHANMANHINHTHUOCCAP).getKhungManHinhTabSS020?.getTrangThaiKichHoatThanhPhan?.getKiemTraKichHoat == false) {
+  //       // (getQuanLyThanhPhanManHinhThuocCap as QUANLYTHANHPHANMANHINHTHUOCCAP).getKhungManHinhTabSS010?.onKichHoatThanhPhanManHinhThuocCap();
+  //
+  //       if (getQuanLyThanhPhanNutBamThuocCap is QUANLYTHANHPHANNUTBAMTHUOCCAP) {
+  //         (getQuanLyThanhPhanNutBamThuocCap as QUANLYTHANHPHANNUTBAMTHUOCCAP).onThucThiChonTabSS010();
+  //       }
+  //     }
+  //   }
+  // }
 }
