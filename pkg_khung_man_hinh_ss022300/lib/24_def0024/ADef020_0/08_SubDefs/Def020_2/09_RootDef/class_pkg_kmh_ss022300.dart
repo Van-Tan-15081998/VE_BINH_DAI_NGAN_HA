@@ -86,6 +86,15 @@ class QUANLYTHANHPHANMANHINHTHUOCCAP extends QUANLYTHANHPHANMANHINHTHUOCCAPCOBAN
   /// TODO:
   /// -----
   Future<void> onKichHoatKhungManHinhTabSS020({required FlameGame? flameGame, required Component? component}) async {
+
+    /// -----
+    /// TODO:
+    /// -----
+    await getGlobalStateManagementSystem?.getBangDieuKhienKichBanChienDauTheoGiaiDoan?.getQuanLyDieuKhienChuyenKichBanChienDau?.onCaiDatNhiemVuChienDauChonChiDinh(
+      value: getGlobalStateManagementSystem?.getBanDoChienDau?.getNhiemVuChienDauChonChiDinh,
+      caiDatUuTien: true,
+    );
+
     await onAddComponent(flameGame: null, parentComponent: component, childComponent: getKhungManHinhTabSS020).catchError((e) => null);
 
     await getKhungManHinhTabSS020?.onKichHoatThanhPhanManHinhThuocCap(kichHoatUuTien: true);

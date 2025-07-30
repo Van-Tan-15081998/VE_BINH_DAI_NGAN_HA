@@ -295,7 +295,7 @@ class QUANLYTHANHPHANTICHHOPKHUNGMANHINHCHINH extends QUANLYTHANHPHANTICHHOPTHUO
             gameController: getGameController,
             thanhPhanQuanLyThuocCapTrucTiep: getThanhPhanQuanLyThuocCapTrucTiep,
             sizeDx: chieuRongManHinhVatLy / 2.5,
-            sizeDy: (chieuRongManHinhVatLy / 2.5) / 1.6,
+            sizeDy: (chieuRongManHinhVatLy / 2.5) / 1.33,
             positionDx: (chieuRongManHinhVatLy / 2) / 2,
             positionDy: (chieuRongManHinhVatLy / 2.5),
             onTapCancelEvent: null,
@@ -315,7 +315,7 @@ class QUANLYTHANHPHANTICHHOPKHUNGMANHINHCHINH extends QUANLYTHANHPHANTICHHOPTHUO
             gameController: getGameController,
             thanhPhanQuanLyThuocCapTrucTiep: getThanhPhanQuanLyThuocCapTrucTiep,
             sizeDx: chieuRongManHinhVatLy / 2.5,
-            sizeDy: (chieuRongManHinhVatLy / 2.5) / 1.6,
+            sizeDy: (chieuRongManHinhVatLy / 2.5) / 1.33,
             positionDx: chieuRongManHinhVatLy - ((chieuRongManHinhVatLy / 2) / 2),
             positionDy: (chieuRongManHinhVatLy / 2.5),
             onTapCancelEvent: null,
@@ -338,7 +338,7 @@ class QUANLYTHANHPHANTICHHOPKHUNGMANHINHCHINH extends QUANLYTHANHPHANTICHHOPTHUO
             gameController: getGameController,
             thanhPhanQuanLyThuocCapTrucTiep: getThanhPhanQuanLyThuocCapTrucTiep,
             sizeDx: chieuRongManHinhVatLy / 2.5,
-            sizeDy: (chieuRongManHinhVatLy / 2.5) / 1.6,
+            sizeDy: (chieuRongManHinhVatLy / 2.5) / 1.33,
             positionDx: (chieuRongManHinhVatLy / 2) / 2,
             positionDy: (chieuRongManHinhVatLy / 2.5) * 2,
             onTapCancelEvent: null,
@@ -358,7 +358,7 @@ class QUANLYTHANHPHANTICHHOPKHUNGMANHINHCHINH extends QUANLYTHANHPHANTICHHOPTHUO
             gameController: getGameController,
             thanhPhanQuanLyThuocCapTrucTiep: getThanhPhanQuanLyThuocCapTrucTiep,
             sizeDx: chieuRongManHinhVatLy / 2.5,
-            sizeDy: (chieuRongManHinhVatLy / 2.5) / 1.6,
+            sizeDy: (chieuRongManHinhVatLy / 2.5) / 1.33,
             positionDx: chieuRongManHinhVatLy - ((chieuRongManHinhVatLy / 2) / 2),
             positionDy: (chieuRongManHinhVatLy / 2.5) * 2,
             onTapCancelEvent: null,
@@ -381,7 +381,7 @@ class QUANLYTHANHPHANTICHHOPKHUNGMANHINHCHINH extends QUANLYTHANHPHANTICHHOPTHUO
             gameController: getGameController,
             thanhPhanQuanLyThuocCapTrucTiep: getThanhPhanQuanLyThuocCapTrucTiep,
             sizeDx: chieuRongManHinhVatLy / 2.5,
-            sizeDy: (chieuRongManHinhVatLy / 2.5) / 1.6,
+            sizeDy: (chieuRongManHinhVatLy / 2.5) / 1.33,
             positionDx: (chieuRongManHinhVatLy / 2) / 2,
             positionDy: (chieuRongManHinhVatLy / 2.5) * 3,
             onTapCancelEvent: null,
@@ -401,7 +401,7 @@ class QUANLYTHANHPHANTICHHOPKHUNGMANHINHCHINH extends QUANLYTHANHPHANTICHHOPTHUO
             gameController: getGameController,
             thanhPhanQuanLyThuocCapTrucTiep: getThanhPhanQuanLyThuocCapTrucTiep,
             sizeDx: chieuRongManHinhVatLy / 2.5,
-            sizeDy: (chieuRongManHinhVatLy / 2.5) / 1.6,
+            sizeDy: (chieuRongManHinhVatLy / 2.5) / 1.33,
             positionDx: chieuRongManHinhVatLy - ((chieuRongManHinhVatLy / 2) / 2),
             positionDy: (chieuRongManHinhVatLy / 2.5) * 3,
             onTapCancelEvent: null,
@@ -416,6 +416,44 @@ class QUANLYTHANHPHANTICHHOPKHUNGMANHINHCHINH extends QUANLYTHANHPHANTICHHOPTHUO
         ).catchError((e) => null),
       ]);
 
+      /// -----
+      /// TODO:
+      /// -----
+      await getGlobalStateManagementSystem
+          ?.getBangDieuKhienKichBanChienDauTheoGiaiDoan
+          ?.getQuanLyVanHanhNganChanXamNhap
+          ?.getCauTrucLuotXamNhapNgauNhienSS010 //
+          ?.caiDatCardNhiemVuNganChanXamNhap(value: getCardNhiemVuChienDauChongXamNhapSS010, caiDatUuTien: true);
+      await getGlobalStateManagementSystem
+          ?.getBangDieuKhienKichBanChienDauTheoGiaiDoan
+          ?.getQuanLyVanHanhNganChanXamNhap
+          ?.getCauTrucLuotXamNhapNgauNhienSS020 //
+          ?.caiDatCardNhiemVuNganChanXamNhap(value: getCardNhiemVuChienDauChongXamNhapSS020, caiDatUuTien: true);
+      await getGlobalStateManagementSystem
+          ?.getBangDieuKhienKichBanChienDauTheoGiaiDoan
+          ?.getQuanLyVanHanhNganChanXamNhap
+          ?.getCauTrucLuotXamNhapNgauNhienSS030 //
+          ?.caiDatCardNhiemVuNganChanXamNhap(value: getCardNhiemVuChienDauChongXamNhapSS030, caiDatUuTien: true);
+      await getGlobalStateManagementSystem
+          ?.getBangDieuKhienKichBanChienDauTheoGiaiDoan
+          ?.getQuanLyVanHanhNganChanXamNhap
+          ?.getCauTrucLuotXamNhapNgauNhienSS040 //
+          ?.caiDatCardNhiemVuNganChanXamNhap(value: getCardNhiemVuChienDauChongXamNhapSS040, caiDatUuTien: true);
+      await getGlobalStateManagementSystem
+          ?.getBangDieuKhienKichBanChienDauTheoGiaiDoan
+          ?.getQuanLyVanHanhNganChanXamNhap
+          ?.getCauTrucLuotXamNhapNgauNhienSS050 //
+          ?.caiDatCardNhiemVuNganChanXamNhap(value: getCardNhiemVuChienDauChongXamNhapSS050, caiDatUuTien: true);
+      await getGlobalStateManagementSystem
+          ?.getBangDieuKhienKichBanChienDauTheoGiaiDoan
+          ?.getQuanLyVanHanhNganChanXamNhap
+          ?.getCauTrucLuotXamNhapNgauNhienSS060 //
+          ?.caiDatCardNhiemVuNganChanXamNhap(value: getCardNhiemVuChienDauChongXamNhapSS060, caiDatUuTien: true);
+
+      await getGlobalStateManagementSystem
+          ?.getBangDieuKhienKichBanChienDauTheoGiaiDoan
+          ?.getQuanLyVanHanhNganChanXamNhap
+          ?.caiDatSanSangVanHanh(value: true, caiDatUuTien: true);
       /// -----
       /// TODO: Setup Root For SubCom
       /// -----
@@ -481,12 +519,12 @@ class QUANLYTHANHPHANTICHHOPKHUNGMANHINHCHINH extends QUANLYTHANHPHANTICHHOPTHUO
         getCardNhiemVuChienDauChongXamNhapSS060?.onInitRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onInitRootForSubCom'),
       ]);
 
-      await getCardNhiemVuChienDauChongXamNhapSS010?.onKichHoatThanhPhanThuocCap();
-      await getCardNhiemVuChienDauChongXamNhapSS020?.onKichHoatThanhPhanThuocCap();
-      await getCardNhiemVuChienDauChongXamNhapSS030?.onKichHoatThanhPhanThuocCap();
-      await getCardNhiemVuChienDauChongXamNhapSS040?.onKichHoatThanhPhanThuocCap();
-      await getCardNhiemVuChienDauChongXamNhapSS050?.onKichHoatThanhPhanThuocCap();
-      await getCardNhiemVuChienDauChongXamNhapSS060?.onKichHoatThanhPhanThuocCap();
+      // await getCardNhiemVuChienDauChongXamNhapSS010?.onKichHoatThanhPhanThuocCap();
+      // await getCardNhiemVuChienDauChongXamNhapSS020?.onKichHoatThanhPhanThuocCap();
+      // await getCardNhiemVuChienDauChongXamNhapSS030?.onKichHoatThanhPhanThuocCap();
+      // await getCardNhiemVuChienDauChongXamNhapSS040?.onKichHoatThanhPhanThuocCap();
+      // await getCardNhiemVuChienDauChongXamNhapSS050?.onKichHoatThanhPhanThuocCap();
+      // await getCardNhiemVuChienDauChongXamNhapSS060?.onKichHoatThanhPhanThuocCap();
     } catch (e) {
       await onReportRootIssue(nameFunction: 'onInitRootForSubCom');
     }

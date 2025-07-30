@@ -356,7 +356,7 @@ class QUANLYTHANHPHANNUTBAMTHUOCCAP extends QUANLYTHANHPHANNUTBAMTHUOCCAPCOBAN {
           onTapCancelEvent: null,
           onTapDownEvent: null,
           onTapUpEvent: () {
-            onThucThiChonTabSS020();
+            // onThucThiChonTabSS020();
           },
         ),
         caiDatUuTien: true,

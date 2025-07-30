@@ -331,7 +331,7 @@ class KHUNGMANHINHCHINH extends KHUNGMANHINHGAMECOSO {
           onThucThiChuyenTabSS020: null,
           onThucThiChuyenTabSS030: null,
           onThucThiChuyenTabSS040: null,
-          onThucThiChuyenTabSS050: null
+          onThucThiChuyenTabSS050: null,
         ),
       ).catchError((e) => null),
       onCaiDatQuanLyThanhPhanVanBanThuocCap(
@@ -567,6 +567,10 @@ class KHUNGMANHINHCHINH extends KHUNGMANHINHGAMECOSO {
   Future<void> update(double dt) async {
     // TODO: implement update
     super.update(dt);
+
+    if (getGlobalStateManagementSystem?.getTienTrinhTongQuat?.getTienTrinhThucThiChienDau?.getTrangThai?.getMoHinh?.onCheckBoolDangChuanBiThucThi() == true) {
+      getGlobalStateManagementSystem?.getBangDieuKhienKichBanChienDauTheoGiaiDoan?.getQuanLyVanHanhNganChanXamNhap?.onVanHanhNganChanXamNhap();
+    }
 
     count++;
 

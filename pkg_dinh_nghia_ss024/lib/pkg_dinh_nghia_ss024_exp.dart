@@ -33,4 +33,5 @@ export '26_def0026/ADef20_0/08_SubDefs/Def20_2/07_DiStates/Def20_2/09_RootDef/cl
 /// TODO: _____[QUAN_LY_TRANG_THAI_TONG_QUAT_BAN_DO_CHIEN_DAU]_____
 export '30_def0030/ZDef00_0/class_20000022.dart';
 
-
+/// TODO: 0_____[NHIEM_VU_CHIEN_DAU_NGAN_CHAN_XAM_NHAP]_____
+export '28_def0028/BDef20_0/09_RootDef/nhiem_vu_chien_dau_ngan_chan_xam_nhap.dart';

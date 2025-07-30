@@ -6589,13 +6589,13 @@ class THUOCTINHTAINGUYENCOBAN with CAUTRUCTHUCTHICOBAN {
   /// TODO: Truy Xuất Tài Nguyên Hình Ảnh Ngoại Hình RS050
   /// -----
   /// -----
-  Future<void> onTruyXuatTaiNguyenHinhAnhPhuongTienRS050TheoTuanTu({required String? maDinhDanh, required THUOCTINHHINHANHCOBAN? thuocTinhHinhAnh, required VoidCallback? onThucThiHoanTat}) async {
+  Future<void> onTruyXuatTaiNguyenHinhAnhPhuongTienRS050TheoTuanTu({required String? maDinhDanh, required THUOCTINHHINHANHCOBAN? thuocTinhHinhAnh, required Future<void> Function(SpriteAnimation? spriteAnimation)? onThucThiHoanTat}) async {
     /// -----
     /// TODO:
     /// -----
     if (thuocTinhHinhAnh?.getKichThuocRS100 == true) {
       if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100?.getSpriteAnimation?.frames.isNotEmpty == true) {
-        onThucThiHoanTat?.call();
+        await onThucThiHoanTat?.call(thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100?.getSpriteAnimation);
 
         return;
       }
@@ -6606,7 +6606,7 @@ class THUOCTINHTAINGUYENCOBAN with CAUTRUCTHUCTHICOBAN {
     /// -----
     if (thuocTinhHinhAnh?.getKichThuocRS050 == true) {
       if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050?.getSpriteAnimation?.frames.isNotEmpty == true) {
-        onThucThiHoanTat?.call();
+        await onThucThiHoanTat?.call(thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050?.getSpriteAnimation);
 
         return;
       }
@@ -6617,7 +6617,7 @@ class THUOCTINHTAINGUYENCOBAN with CAUTRUCTHUCTHICOBAN {
     /// -----
     if (thuocTinhHinhAnh?.getKichThuocRS025 == true) {
       if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025?.getSpriteAnimation?.frames.isNotEmpty == true) {
-        onThucThiHoanTat?.call();
+        await onThucThiHoanTat?.call(thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025?.getSpriteAnimation);
 
         return;
       }
@@ -6939,7 +6939,7 @@ class THUOCTINHTAINGUYENCOBAN with CAUTRUCTHUCTHICOBAN {
         ); //
       }
 
-      onThucThiHoanTat?.call();
+      await onThucThiHoanTat?.call(thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinh?.getSpriteAnimation);
     };
 
     await cauTrucThucThiTuanTu.onThucThiTuanTu(interval: const Duration(milliseconds: 100));
@@ -6957,13 +6957,13 @@ class THUOCTINHTAINGUYENCOBAN with CAUTRUCTHUCTHICOBAN {
   /// TODO: Truy Xuất Tài Nguyên Hình Ảnh Ngoại Hình RS100
   /// -----
   /// -----
-  Future<void> onTruyXuatTaiNguyenHinhAnhPhuongTienRS100TheoTuanTu({required String? maDinhDanh, required THUOCTINHHINHANHCOBAN? thuocTinhHinhAnh, required VoidCallback? onThucThiHoanTat}) async {
+  Future<void> onTruyXuatTaiNguyenHinhAnhPhuongTienRS100TheoTuanTu({required String? maDinhDanh, required THUOCTINHHINHANHCOBAN? thuocTinhHinhAnh, required Future<void> Function(SpriteAnimation? spriteAnimation)? onThucThiHoanTat}) async {
     /// -----
     /// TODO:
     /// -----
     if (thuocTinhHinhAnh?.getKichThuocRS100 == true) {
       if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100?.getSpriteAnimation?.frames.isNotEmpty == true) {
-        onThucThiHoanTat?.call();
+        await onThucThiHoanTat?.call(thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS100?.getSpriteAnimation);
 
         return;
       }
@@ -6974,7 +6974,7 @@ class THUOCTINHTAINGUYENCOBAN with CAUTRUCTHUCTHICOBAN {
     /// -----
     if (thuocTinhHinhAnh?.getKichThuocRS050 == true) {
       if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050?.getSpriteAnimation?.frames.isNotEmpty == true) {
-        onThucThiHoanTat?.call();
+        await onThucThiHoanTat?.call(thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS050?.getSpriteAnimation);
 
         return;
       }
@@ -6985,7 +6985,7 @@ class THUOCTINHTAINGUYENCOBAN with CAUTRUCTHUCTHICOBAN {
     /// -----
     if (thuocTinhHinhAnh?.getKichThuocRS025 == true) {
       if (thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025?.getSpriteAnimation?.frames.isNotEmpty == true) {
-        onThucThiHoanTat?.call();
+        await onThucThiHoanTat?.call(thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinhRS025?.getSpriteAnimation);
 
         return;
       }
@@ -7292,7 +7292,7 @@ class THUOCTINHTAINGUYENCOBAN with CAUTRUCTHUCTHICOBAN {
         ); //
       }
 
-      onThucThiHoanTat?.call();
+      await onThucThiHoanTat?.call(thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinh?.getSpriteAnimation);
     };
 
     await cauTrucThucThiTuanTu.onThucThiTuanTu(interval: const Duration(milliseconds: 100));

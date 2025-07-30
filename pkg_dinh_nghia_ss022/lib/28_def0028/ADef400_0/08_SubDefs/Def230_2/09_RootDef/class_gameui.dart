@@ -37,8 +37,8 @@ class GAMEUICARDNHIEMVUCHIENDAUNGANCHANXAMNHAP extends CoreGameUIComponent {
     /// -----
     final int tongSoFrame = 2;
     final int tongSoFrameTrenHang = 2;
-    final double chieuRongFrame = 400.0;
-    final double chieuCaoFrame = 250.0;
+    final double chieuRongFrame = 600.0;
+    final double chieuCaoFrame = 450.0;
     await Future.wait([
       getSpriteThanhPhanGameUI?.getDonViSpriteNgoaiHinhGameUI?.caiDatNguonHinhAnh(value: null).catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
       getSpriteThanhPhanGameUI?.getDonViSpriteNgoaiHinhGameUI?.caiDatTongSoFrame(value: tongSoFrame).catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),

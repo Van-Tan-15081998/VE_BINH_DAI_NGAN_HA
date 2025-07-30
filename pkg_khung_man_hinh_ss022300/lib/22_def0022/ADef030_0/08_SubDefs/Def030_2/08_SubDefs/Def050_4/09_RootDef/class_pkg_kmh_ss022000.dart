@@ -24,7 +24,7 @@ class NUTBAMCHUYENTABSS030 extends THANHPHANNUTBAMTHUOCCAPTHUANKICHHOAT {
   @override
   Future<void> onCaiDatChiTietThanhPhanGameUI() async {
     await onCaiDatThanhPhanGameUIKichHoat(
-      value: GAMEUINUTBAMCHONTABCHIENDAUCOKICHHOAT(),
+      value: GAMEUINUTBAMCHONTABNGANCHANXAMNHAPKHONGKICHHOAT(),
       caiDatUuTien: true,
     );
     await onCaiDatThanhPhanGameUIKichHoat2(
@@ -32,7 +32,7 @@ class NUTBAMCHUYENTABSS030 extends THANHPHANNUTBAMTHUOCCAPTHUANKICHHOAT {
       caiDatUuTien: true,
     );
     await onCaiDatThanhPhanGameUIHuyKichHoat(
-      value: GAMEUINUTBAMCHONTABCHIENDAUCOKICHHOAT(),
+      value: GAMEUINUTBAMCHONTABNGANCHANXAMNHAPKHONGKICHHOAT(),
       caiDatUuTien: true,
     );
 

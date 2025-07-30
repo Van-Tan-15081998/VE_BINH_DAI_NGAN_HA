@@ -82,7 +82,6 @@ abstract class SpritePhuongTienCoBan extends SpriteAnimationComponent with HasVi
   }
 
   void onRemoveFromParent({Future<void> Function()? onThucThiHoanTat}) {
-
     onVoidCaiDatKiemTraHienThi(value: false);
 
     animation = null;

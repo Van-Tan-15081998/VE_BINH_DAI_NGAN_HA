@@ -42,6 +42,7 @@ class QUANLYTRANGTHAIBANGDIEUKHIENKICHBANCHIENDAUTHEOGIAIDOAN with CauTrucThucTh
     /// TODO:
     /// -----
     await caiDatQuanLyDieuKhienChuyenKichBanChienDau(value: QUANLYDIEUKHIENCHUYENKICHBANCHIENDAU(), caiDatUuTien: true);
+    await caiDatQuanLyVanHanhNganChanXamNhap(value: QUANLYVANHANHNGANCHANXAMNHAP(), caiDatUuTien: true);
 
     /// -----
     /// TODO: Setup Root For SubCom
@@ -75,6 +76,7 @@ class QUANLYTRANGTHAIBANGDIEUKHIENKICHBANCHIENDAUTHEOGIAIDOAN with CauTrucThucTh
     /// TODO:
     /// -----
     await getQuanLyDieuKhienChuyenKichBanChienDau?.onAttachRoot(attachValue: attachValue);
+    await getQuanLyVanHanhNganChanXamNhap?.onAttachRoot(attachValue: attachValue);
 
     ///
     return;
@@ -89,6 +91,7 @@ class QUANLYTRANGTHAIBANGDIEUKHIENKICHBANCHIENDAUTHEOGIAIDOAN with CauTrucThucTh
     /// TODO:
     /// -----
     await getQuanLyDieuKhienChuyenKichBanChienDau?.onSetupRoot();
+    await getQuanLyVanHanhNganChanXamNhap?.onSetupRoot();
 
     ///
     return;
@@ -103,6 +106,7 @@ class QUANLYTRANGTHAIBANGDIEUKHIENKICHBANCHIENDAUTHEOGIAIDOAN with CauTrucThucTh
     /// TODO:
     /// -----
     await getQuanLyDieuKhienChuyenKichBanChienDau?.onInitRoot();
+    await getQuanLyVanHanhNganChanXamNhap?.onInitRoot();
 
     ///
     return;
@@ -131,6 +135,19 @@ class QUANLYTRANGTHAIBANGDIEUKHIENKICHBANCHIENDAUTHEOGIAIDOAN with CauTrucThucTh
   }
 
   /// -----
+  /// TODO: Vận Hành
+  /// -----
+  Future<void> onVanHanhNganChanXamNhap() async {
+    /// -----
+    /// TODO:
+    /// -----
+    await getQuanLyVanHanhNganChanXamNhap?.onVanHanhNganChanXamNhap();
+
+    ///
+    return;
+  }
+
+  /// -----
   /// TODO: Quản Lý Điều Khiển Chuyển Kịch Bản Chiến Đấu
   /// -----
   QUANLYDIEUKHIENCHUYENKICHBANCHIENDAU? _quanLyDieuKhienChuyenKichBanChienDau;
@@ -140,6 +157,21 @@ class QUANLYTRANGTHAIBANGDIEUKHIENKICHBANCHIENDAUTHEOGIAIDOAN with CauTrucThucTh
       _quanLyDieuKhienChuyenKichBanChienDau = value;
     } else {
       _quanLyDieuKhienChuyenKichBanChienDau ??= value;
+    }
+
+    return;
+  }
+
+  /// -----
+  /// TODO:
+  /// -----
+  QUANLYVANHANHNGANCHANXAMNHAP? _quanLyVanHanhNganChanXamNhap;
+  QUANLYVANHANHNGANCHANXAMNHAP? get getQuanLyVanHanhNganChanXamNhap => _quanLyVanHanhNganChanXamNhap;
+  Future<void> caiDatQuanLyVanHanhNganChanXamNhap({required QUANLYVANHANHNGANCHANXAMNHAP? value, bool? caiDatUuTien}) async {
+    if (caiDatUuTien == true) {
+      _quanLyVanHanhNganChanXamNhap = value;
+    } else {
+      _quanLyVanHanhNganChanXamNhap ??= value;
     }
 
     return;

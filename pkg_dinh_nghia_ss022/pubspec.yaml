@@ -116,6 +116,14 @@ flutter:
     - lib/28_def0028/ADef050_0/08_SubDefs/Def320_2/07_Resized/Def50/
     - lib/28_def0028/ADef050_0/08_SubDefs/Def320_2/07_Resized/Def90/
     #
+    - lib/28_def0028/ADef050_0/08_SubDefs/Def410_2/07_Resized/Def50/
+    - lib/28_def0028/ADef050_0/08_SubDefs/Def410_2/07_Resized/Def90/
+    #
+    #
+    - lib/28_def0028/ADef050_0/08_SubDefs/Def420_2/07_Resized/Def50/
+    - lib/28_def0028/ADef050_0/08_SubDefs/Def420_2/07_Resized/Def90/
+    #
+    #
     # _____[NUT_BAM_CHUYEN_CHON_CHI_DINH_TRAI]_____
     - lib/28_def0028/ADef060_0/08_SubDefs/Def210_2/07_Resized/Def50/
     - lib/28_def0028/ADef060_0/08_SubDefs/Def210_2/07_Resized/Def90/

@@ -271,6 +271,16 @@ abstract class THANHPHANNUTBAMTHUOCCAPTHUANKICHHOAT extends PositionComponent wi
     onVoidCaiDatSizeDy(value: sizeDy, caiDatUuTien: true);
     onVoidCaiDatPositionDx(value: positionDx, caiDatUuTien: true);
     onVoidCaiDatPositionDy(value: positionDy, caiDatUuTien: true);
+
+    _spriteAnimationComponentPhuongTienChiHuyXamNhap = SpriteAnimationComponent();
+    if (_spriteAnimationComponentPhuongTienChiHuyXamNhap != null &&
+        _spriteAnimationComponentPhuongTienChiHuyXamNhap?.isMounted == false) {
+      add(_spriteAnimationComponentPhuongTienChiHuyXamNhap!);
+    }
+    _spriteAnimationComponentPhuongTienChiHuyXamNhap?.anchor = Anchor.center;
+    _spriteAnimationComponentPhuongTienChiHuyXamNhap?.position.setValues((getSizeDx ?? 0) * 0.30, (getSizeDy ?? 0) * 0.6);
+    _spriteAnimationComponentPhuongTienChiHuyXamNhap?.size.setValues(50.0, 50.0);
+
   }
 
   void onThucThi() {
@@ -297,6 +307,9 @@ abstract class THANHPHANNUTBAMTHUOCCAPTHUANKICHHOAT extends PositionComponent wi
     super.onTapCancel(event);
     onTapCancelEvent?.call();
   }
+
+  SpriteAnimationComponent? _spriteAnimationComponentPhuongTienChiHuyXamNhap;
+  SpriteAnimationComponent? get getSpriteAnimationComponentPhuongTienChiHuyXamNhap => _spriteAnimationComponentPhuongTienChiHuyXamNhap;
 
   /// -----
   /// TODO:

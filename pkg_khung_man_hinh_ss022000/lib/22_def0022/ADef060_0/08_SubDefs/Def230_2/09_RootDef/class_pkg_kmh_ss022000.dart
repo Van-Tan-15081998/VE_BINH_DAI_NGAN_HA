@@ -1,4 +1,5 @@
 import 'package:pkg_dinh_nghia_ss022/pkg_dinh_nghia_ss022_exp.dart';
+import 'package:pkg_dinh_nghia_ss020000/pkg_dinh_nghia_ss020000_exp.dart';
 import 'package:pkg_khung_man_hinh_ss020000/pkg_khung_man_hinh_ss020000_exp.dart';
 
 /// -----
@@ -40,6 +41,91 @@ class CARDNHIEMVUNGANCHANXAMNHAPSS020 extends THANHPHANNUTBAMTHUOCCAPTHUANKICHHO
   }
 
   int tongSoLuongTaiNguyenVangTraoDoi = 0;
+
+  @override
+  void onThucThi() async {
+    /// -----
+    /// TODO:
+    /// -----
+    await getGlobalStateManagementSystem?.getBangDieuKhienKichBanChienDauTheoGiaiDoan?.getQuanLyDieuKhienChuyenKichBanChienDau?.onCaiDatNhiemVuChienDauChonChiDinh(
+      value: getGlobalStateManagementSystem?.getBangDieuKhienKichBanChienDauTheoGiaiDoan?.getQuanLyVanHanhNganChanXamNhap?.getNhiemVuChienDauChonChiDinh,
+      caiDatUuTien: true,
+    );
+
+    await getGlobalStateManagementSystem //
+        ?.getBangDieuKhienKichBanChienDauTheoGiaiDoan //
+        ?.getQuanLyVanHanhNganChanXamNhap //
+        ?.getCauTrucLuotXamNhapNgauNhienSS020 //
+        ?.onSetupRoot();
+
+    // await getGlobalStateManagementSystem
+    //     ?.getBangDieuKhienKichBanChienDauTheoGiaiDoan
+    //     ?.getQuanLyVanHanhNganChanXamNhap
+    //     ?.getCauTrucLuotXamNhapNgauNhienSS020 //
+    //     ?.caiDatHinhAnhPhuongTienChiHuyXamNhap(globalStateManagementSystem: getGlobalStateManagementSystem);
+
+
+    await getGlobalStateManagementSystem
+        ?.getBangDieuKhienKichBanChienDauTheoGiaiDoan
+        ?.getQuanLyVanHanhNganChanXamNhap
+        ?.getNhiemVuChienDauChonChiDinh //
+        ?.getMoHinh
+        ?.caiDatKichBanChienDau(
+      value:
+      getGlobalStateManagementSystem //
+          ?.getBangDieuKhienKichBanChienDauTheoGiaiDoan //
+          ?.getQuanLyVanHanhNganChanXamNhap //
+          ?.getCauTrucLuotXamNhapNgauNhienSS020 //
+          ?.getDonViLuotXamNhap //
+          ?.getKichBanChienDau, //
+        caiDatUuTien: true
+    );
+
+    getGlobalStateManagementSystem?.getBangDieuKhienKichBanChienDauTheoGiaiDoan?.getQuanLyDieuKhienChuyenKichBanChienDau?.onThucThiNhiemVuNganChanXamNhapHoanTat = () async {
+      await getGlobalStateManagementSystem //
+          ?.getBangDieuKhienKichBanChienDauTheoGiaiDoan //
+          ?.getQuanLyVanHanhNganChanXamNhap //
+          ?.getCauTrucLuotXamNhapNgauNhienSS020 //
+          ?.caiDatDonViLuotXamNhap(value: null, caiDatUuTien: true);
+    };
+
+    ///
+    return;
+  }
+
+  @override
+  void onTapUp(TapUpEvent event) {
+    super.onTapUp(event);
+
+    onThucThi();
+  }
+
+  @override
+  Future<void> onKichHoatThanhPhanThuocCap({VoidCallback? onHuyKichHoat, bool? kichHoatUuTien}) async {
+    await super.onKichHoatThanhPhanThuocCap(onHuyKichHoat: onHuyKichHoat, kichHoatUuTien: kichHoatUuTien);
+
+    if (getTrangThaiKichHoatThanhPhan?.getKiemTraKichHoat == true) {
+      await getGlobalStateManagementSystem
+          ?.getBangDieuKhienKichBanChienDauTheoGiaiDoan
+          ?.getQuanLyVanHanhNganChanXamNhap
+          ?.getCauTrucLuotXamNhapNgauNhienSS020 //
+          ?.caiDatHinhAnhPhuongTienChiHuyXamNhap(globalStateManagementSystem: getGlobalStateManagementSystem);
+    }
+  }
+
+  @override
+  Future<void> onHuyKichHoatThanhPhanThuocCap() async {
+    await super.onHuyKichHoatThanhPhanThuocCap();
+
+    if (getTrangThaiKichHoatThanhPhan?.getKiemTraKichHoat == false) {
+      await getGlobalStateManagementSystem
+          ?.getBangDieuKhienKichBanChienDauTheoGiaiDoan
+          ?.getQuanLyVanHanhNganChanXamNhap
+          ?.getCauTrucLuotXamNhapNgauNhienSS020 //
+          ?.giaiPhongTaiNguyenHinhAnhPhuongTienChiHuyXamNhap(globalStateManagementSystem: getGlobalStateManagementSystem);
+    }
+  }
+
 
   @override
   void update(double dt) {

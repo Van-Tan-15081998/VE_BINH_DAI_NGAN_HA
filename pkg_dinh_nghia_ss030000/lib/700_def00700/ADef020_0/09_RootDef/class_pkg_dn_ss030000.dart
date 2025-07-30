@@ -1603,6 +1603,9 @@ class QUANLYTRANGTHAIHANGARPHUONGTIEN with CAUTRUCTHUCTHICOBAN {
       /// -----
       /// TODO:
       /// -----
+
+      await onCaiDatChatLuongDoHoaCao();
+
     } catch (e) {
       await onReportRootIssue(nameFunction: 'onInitRootForSubCom');
     }
@@ -1963,7 +1966,10 @@ class QUANLYTRANGTHAIHANGARPHUONGTIEN with CAUTRUCTHUCTHICOBAN {
   final List<THUOCTINHHINHANHCOBAN?> _danhSachPhuongTienTaiTaiNguyen = [];
   List<THUOCTINHHINHANHCOBAN?> get getDanhSachPhuongTienTaiTaiNguyen => _danhSachPhuongTienTaiTaiNguyen;
 
-  Future<void> onTaiTaiNguyenPhuongTienTheoMaDinhDanh({required String? maDinhDanhPhuongTien}) async {
+  Future<void> onTaiTaiNguyenPhuongTienTheoMaDinhDanh({
+    required String? maDinhDanhPhuongTien,//
+    Future<void> Function(SpriteAnimation? spriteAnimation)? onThucThiHoanTat
+  }) async {
     // await getThuocTinhTaiNguyenPhuongTien
     //     ?.onTruyXuatTaiNguyenHinhAnhNgoaiHinh(
     //   maDinhDanh: maDinhDanhPhuongTien,
@@ -1981,17 +1987,53 @@ class QUANLYTRANGTHAIHANGARPHUONGTIEN with CAUTRUCTHUCTHICOBAN {
       await getThuocTinhTaiNguyenPhuongTien?.onTruyXuatTaiNguyenHinhAnhPhuongTienRS050TheoTuanTu(
         maDinhDanh: maDinhDanhPhuongTien,
         thuocTinhHinhAnh: getThuocTinhTaiNguyenPhuongTien?.getMapTaiNguyenHinhAnhNgoaiHinh?[maDinhDanhPhuongTien],
-        onThucThiHoanTat: () {},
+        onThucThiHoanTat: (SpriteAnimation? spriteAnimation) async {
+          await onThucThiHoanTat?.call(spriteAnimation);
+        },
       );
     } else if (getThuocTinhTaiNguyenPhuongTien?.getMapTaiNguyenHinhAnhNgoaiHinh?[maDinhDanhPhuongTien]?.getKichThuocRS100 == true) {
       await getThuocTinhTaiNguyenPhuongTien?.onTruyXuatTaiNguyenHinhAnhPhuongTienRS100TheoTuanTu(
         maDinhDanh: maDinhDanhPhuongTien,
         thuocTinhHinhAnh: getThuocTinhTaiNguyenPhuongTien?.getMapTaiNguyenHinhAnhNgoaiHinh?[maDinhDanhPhuongTien],
-        onThucThiHoanTat: () {},
+        onThucThiHoanTat: (SpriteAnimation? spriteAnimation) async {
+          await onThucThiHoanTat?.call(spriteAnimation);
+        },
       );
     }
 
-    getDanhSachPhuongTienTaiTaiNguyen.add(getThuocTinhTaiNguyenPhuongTien?.getMapTaiNguyenHinhAnhNgoaiHinh?[maDinhDanhPhuongTien]);
+    ///
+    return;
+  }
+
+  Future<void> onGiaiPhongTaiNguyenPhuongTienTheoMaDinhDanh({required String? maDinhDanhPhuongTien}) async {
+
+    /// -----
+    /// TODO: RS050
+    /// -----
+    if (getThuocTinhTaiNguyenPhuongTien?.getMapTaiNguyenHinhAnhNgoaiHinh?[maDinhDanhPhuongTien]?.getDonViHinhAnhSpriteNgoaiHinh?.getSpriteAnimation?.frames.isNotEmpty == true) {
+      if (getThuocTinhTaiNguyenPhuongTien?.getMapTaiNguyenHinhAnhNgoaiHinh?[maDinhDanhPhuongTien]?.getKichThuocRS050 == true) {
+        await getThuocTinhTaiNguyenPhuongTien?.onGiaiPhongTaiNguyenHinhAnhPhuongTienRS050TheoTuanTu(
+          maDinhDanh: null,
+          thuocTinhHinhAnh: getThuocTinhTaiNguyenPhuongTien?.getMapTaiNguyenHinhAnhNgoaiHinh?[maDinhDanhPhuongTien],
+          onThucThiHoanTat: () async {
+            ///
+          },
+        );
+      }
+
+      /// -----
+      /// TODO: RS100
+      /// -----
+      else if (getThuocTinhTaiNguyenPhuongTien?.getMapTaiNguyenHinhAnhNgoaiHinh?[maDinhDanhPhuongTien]?.getKichThuocRS100 == true) {
+        await getThuocTinhTaiNguyenPhuongTien?.onGiaiPhongTaiNguyenHinhAnhPhuongTienRS100TheoTuanTu(
+          maDinhDanh: null,
+          thuocTinhHinhAnh: getThuocTinhTaiNguyenPhuongTien?.getMapTaiNguyenHinhAnhNgoaiHinh?[maDinhDanhPhuongTien],
+          onThucThiHoanTat: () async {
+            ///
+          },
+        );
+      }
+    }
 
     ///
     return;
