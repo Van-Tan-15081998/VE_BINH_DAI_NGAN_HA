@@ -51,11 +51,11 @@ class QUANLYTHANHPHANHINHANHKHUNGMANHINHCHINH
       /// TODO:
       /// -----
       await Future.wait([
-        onAddComponent(
-          flameGame: flameGame,
-          parentComponent: null,
-          childComponent: getHinhAnhBackGround,
-        ).catchError((e) => null),
+        // onAddComponent(
+        //   flameGame: flameGame,
+        //   parentComponent: null,
+        //   childComponent: getHinhAnhBackGround,
+        // ).catchError((e) => null),
       ]);
 
       /// -----

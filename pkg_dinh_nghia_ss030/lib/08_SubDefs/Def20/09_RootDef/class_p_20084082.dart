@@ -1033,14 +1033,43 @@ class MoHinhPhuongTienTongQuat with CauTrucThucThiCoBan {
               ) ==
               true) {
             /// -----
-            /// TODO: Phương Tiện Vũ Khí Ngẫu Nhiên
-            /// Cập Nhật Trạng Thái Tồn Tại => Hủy Trạng Thái Khi Chạm Điểm Tọa Độ Giai Đoạn SS020
+            /// TODO: Phương Tiện Vũ Khí Ngẫu Nhiên && Phương Tiện Vũ Khí Chỉ Huy
+            /// Cập Nhật Trạng Thái Tồn Tại => Hủy Trạng Thái Khi
+            /// 1: Chạm Điểm Tọa Độ Giai Đoạn SS020
+            /// 2: Vị Trí Thuộc Phạm Vi Ngoài Màn Hình
             /// -----
+            if (this is MOHINHPHUONGTIENVUKHI) {
+              if (duLieuJsonBienPhaiPhuongTien < 0) {
+                getTrangThaiTrongChienDau?.getTrangThaiTonTai?.onVoidCaiDatHuyHoanTat();
+                ///
+                return;
+              }
+              if (duLieuJsonBienTraiPhuongTien > duLieuJsonChieuRongManHinhPhiVatLy) {
+                getTrangThaiTrongChienDau?.getTrangThaiTonTai?.onVoidCaiDatHuyHoanTat();
+                ///
+                return;
+              }
+              if (duLieuJsonBienTrenPhuongTien > duLieuJsonChieuCaoManHinhPhiVatLy) {
+                getTrangThaiTrongChienDau?.getTrangThaiTonTai?.onVoidCaiDatHuyHoanTat();
+                ///
+                return;
+              }
+              if (duLieuJsonBienDuoiPhuongTien < 0) {
+                getTrangThaiTrongChienDau?.getTrangThaiTonTai?.onVoidCaiDatHuyHoanTat();
+                ///
+                return;
+              }
+            }
+
             if (this is MOHINHPHUONGTIENVUKHINGAUNHIEN) {
               getTrangThaiTrongChienDau?.getTrangThaiTonTai?.onVoidCaiDatHuyHoanTat();
+              ///
+              return;
             }
             if (this is MOHINHPHUONGTIENVATPHAMTANGCUONG) {
               getTrangThaiTrongChienDau?.getTrangThaiTonTai?.onVoidCaiDatHuyHoanTat();
+              ///
+              return;
             }
 
             ///

@@ -450,10 +450,8 @@ class QUANLYTHANHPHANTICHHOPKHUNGMANHINHCHINH extends QUANLYTHANHPHANTICHHOPTHUO
           ?.getCauTrucLuotXamNhapNgauNhienSS060 //
           ?.caiDatCardNhiemVuNganChanXamNhap(value: getCardNhiemVuChienDauChongXamNhapSS060, caiDatUuTien: true);
 
-      await getGlobalStateManagementSystem
-          ?.getBangDieuKhienKichBanChienDauTheoGiaiDoan
-          ?.getQuanLyVanHanhNganChanXamNhap
-          ?.caiDatSanSangVanHanh(value: true, caiDatUuTien: true);
+      await getGlobalStateManagementSystem?.getBangDieuKhienKichBanChienDauTheoGiaiDoan?.getQuanLyVanHanhNganChanXamNhap?.caiDatSanSangVanHanh(value: true, caiDatUuTien: true);
+
       /// -----
       /// TODO: Setup Root For SubCom
       /// -----
@@ -660,6 +658,14 @@ class QUANLYTHANHPHANTICHHOPKHUNGMANHINHCHINH extends QUANLYTHANHPHANTICHHOPTHUO
       /// -----
       /// TODO:
       /// -----
+
+      await getCardNhiemVuChienDauChongXamNhapSS010?.onGiaiPhongTaiNguyen();
+      await getCardNhiemVuChienDauChongXamNhapSS020?.onGiaiPhongTaiNguyen();
+      await getCardNhiemVuChienDauChongXamNhapSS030?.onGiaiPhongTaiNguyen();
+      await getCardNhiemVuChienDauChongXamNhapSS040?.onGiaiPhongTaiNguyen();
+      await getCardNhiemVuChienDauChongXamNhapSS050?.onGiaiPhongTaiNguyen();
+      await getCardNhiemVuChienDauChongXamNhapSS060?.onGiaiPhongTaiNguyen();
+
       await Future.wait([
         onRemoveComponent(component: getKhungTichHopTaiNguyenVangTraoDoi).catchError((e) => null),
         onRemoveComponent(component: getKhungTichHopTaiNguyenNgocTraoDoi).catchError((e) => null),
@@ -674,6 +680,19 @@ class QUANLYTHANHPHANTICHHOPKHUNGMANHINHCHINH extends QUANLYTHANHPHANTICHHOPTHUO
     } catch (e) {
       await onReportRootIssue(nameFunction: 'onKichHoatKhungManHinhThuocCapSS300100');
     }
+
+    ///
+    return;
+  }
+  @override
+  Future<void> onTaiTaiNguyen() async {
+
+    await getCardNhiemVuChienDauChongXamNhapSS010?.onTaiTaiNguyen();
+    await getCardNhiemVuChienDauChongXamNhapSS020?.onTaiTaiNguyen();
+    await getCardNhiemVuChienDauChongXamNhapSS030?.onTaiTaiNguyen();
+    await getCardNhiemVuChienDauChongXamNhapSS040?.onTaiTaiNguyen();
+    await getCardNhiemVuChienDauChongXamNhapSS050?.onTaiTaiNguyen();
+    await getCardNhiemVuChienDauChongXamNhapSS060?.onTaiTaiNguyen();
 
     ///
     return;

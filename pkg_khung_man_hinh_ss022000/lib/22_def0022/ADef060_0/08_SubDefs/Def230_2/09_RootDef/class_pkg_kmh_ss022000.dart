@@ -8,7 +8,7 @@ import 'package:pkg_khung_man_hinh_ss020000/pkg_khung_man_hinh_ss020000_exp.dart
 class CARDNHIEMVUNGANCHANXAMNHAPSS020 extends THANHPHANNUTBAMTHUOCCAPTHUANKICHHOAT {
   /// -----
   /// TODO:
-  /// ----- 
+  /// -----
   CARDNHIEMVUNGANCHANXAMNHAPSS020({
     required super.globalStateManagementSystem, //
     required super.gameController,
@@ -64,22 +64,21 @@ class CARDNHIEMVUNGANCHANXAMNHAPSS020 extends THANHPHANNUTBAMTHUOCCAPTHUANKICHHO
     //     ?.getCauTrucLuotXamNhapNgauNhienSS020 //
     //     ?.caiDatHinhAnhPhuongTienChiHuyXamNhap(globalStateManagementSystem: getGlobalStateManagementSystem);
 
-
     await getGlobalStateManagementSystem
         ?.getBangDieuKhienKichBanChienDauTheoGiaiDoan
         ?.getQuanLyVanHanhNganChanXamNhap
         ?.getNhiemVuChienDauChonChiDinh //
         ?.getMoHinh
         ?.caiDatKichBanChienDau(
-      value:
-      getGlobalStateManagementSystem //
-          ?.getBangDieuKhienKichBanChienDauTheoGiaiDoan //
-          ?.getQuanLyVanHanhNganChanXamNhap //
-          ?.getCauTrucLuotXamNhapNgauNhienSS020 //
-          ?.getDonViLuotXamNhap //
-          ?.getKichBanChienDau, //
-        caiDatUuTien: true
-    );
+          value:
+              getGlobalStateManagementSystem //
+                  ?.getBangDieuKhienKichBanChienDauTheoGiaiDoan //
+                  ?.getQuanLyVanHanhNganChanXamNhap //
+                  ?.getCauTrucLuotXamNhapNgauNhienSS020 //
+                  ?.getDonViLuotXamNhap //
+                  ?.getKichBanChienDau, //
+          caiDatUuTien: true,
+        );
 
     getGlobalStateManagementSystem?.getBangDieuKhienKichBanChienDauTheoGiaiDoan?.getQuanLyDieuKhienChuyenKichBanChienDau?.onThucThiNhiemVuNganChanXamNhapHoanTat = () async {
       await getGlobalStateManagementSystem //
@@ -126,12 +125,27 @@ class CARDNHIEMVUNGANCHANXAMNHAPSS020 extends THANHPHANNUTBAMTHUOCCAPTHUANKICHHO
     }
   }
 
+  Future<void> onTaiTaiNguyen() async {
+    await getGlobalStateManagementSystem
+        ?.getBangDieuKhienKichBanChienDauTheoGiaiDoan
+        ?.getQuanLyVanHanhNganChanXamNhap
+        ?.getCauTrucLuotXamNhapNgauNhienSS020 //
+        ?.caiDatHinhAnhPhuongTienChiHuyXamNhap(globalStateManagementSystem: getGlobalStateManagementSystem);
+
+    return;
+  }
+
+  Future<void> onGiaiPhongTaiNguyen() async {
+    await getGlobalStateManagementSystem
+        ?.getBangDieuKhienKichBanChienDauTheoGiaiDoan
+        ?.getQuanLyVanHanhNganChanXamNhap
+        ?.getCauTrucLuotXamNhapNgauNhienSS020 //
+        ?.giaiPhongTaiNguyenHinhAnhPhuongTienChiHuyXamNhap(globalStateManagementSystem: getGlobalStateManagementSystem);
+  }
 
   @override
   void update(double dt) {
     // TODO: implement update
     super.update(dt);
-
-
   }
 }

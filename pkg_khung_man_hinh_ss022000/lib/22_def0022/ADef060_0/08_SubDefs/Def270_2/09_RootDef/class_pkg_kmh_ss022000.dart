@@ -125,6 +125,24 @@ class CARDNHIEMVUNGANCHANXAMNHAPSS060 extends THANHPHANNUTBAMTHUOCCAPTHUANKICHHO
     }
   }
 
+  Future<void> onTaiTaiNguyen() async {
+    await getGlobalStateManagementSystem
+        ?.getBangDieuKhienKichBanChienDauTheoGiaiDoan
+        ?.getQuanLyVanHanhNganChanXamNhap
+        ?.getCauTrucLuotXamNhapNgauNhienSS060 //
+        ?.caiDatHinhAnhPhuongTienChiHuyXamNhap(globalStateManagementSystem: getGlobalStateManagementSystem);
+
+    return;
+  }
+
+  Future<void> onGiaiPhongTaiNguyen() async {
+    await getGlobalStateManagementSystem
+        ?.getBangDieuKhienKichBanChienDauTheoGiaiDoan
+        ?.getQuanLyVanHanhNganChanXamNhap
+        ?.getCauTrucLuotXamNhapNgauNhienSS060 //
+        ?.giaiPhongTaiNguyenHinhAnhPhuongTienChiHuyXamNhap(globalStateManagementSystem: getGlobalStateManagementSystem);
+  }
+
   @override
   void update(double dt) {
     // TODO: implement update

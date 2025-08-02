@@ -1,3 +1,5 @@
+import 'dart:math';
+
 import 'package:pkg_dinh_nghia_ss030/pkg_dinh_nghia_ss030_exp.dart';
 
 import 'package:pkg_dinh_nghia_ss020000/pkg_dinh_nghia_ss020000_exp.dart';
@@ -12,6 +14,38 @@ import 'package:pkg_khung_man_hinh_ss022000/pkg_khung_man_hinh_ss022000_exp.dart
 /// TODO:
 /// -----
 class CAUTRUCLUOTXAMNHAPNGAUNHIEN with CAUTRUCTHUCTHICOBAN {
+
+  /// -----
+  /// TODO: Setup Root
+  /// -----
+  @override
+  Future<void> onSetupRoot({bool? isIgnoreSetupRootForSubCom}) async {
+    try {
+      /// -----
+      /// TODO:
+      /// -----
+      final random = Random();
+      int number = random.nextInt(500) + 1; // Tạo số từ 1 đến 20000
+
+      await caiDatKhoangThoiGianXuatHienLuotXamNhap(value: number, caiDatUuTien: true);
+      // await caiDatKhoangThoiGianXuatHienLuotXamNhap(value: 0, caiDatUuTien: true);
+
+
+      /// -----
+      /// TODO: Setup Root For SubCom
+      /// -----
+      if (isIgnoreSetupRootForSubCom == null || isIgnoreSetupRootForSubCom == false) {
+        await onSetupRootForSubCom();
+      }
+    } catch (e) {
+      await onReportRootIssue(nameFunction: 'S');
+    }
+
+    ///
+    return;
+  }
+
+
   /// -----
   /// TODO:
   /// -----
@@ -20,15 +54,16 @@ class CAUTRUCLUOTXAMNHAPNGAUNHIEN with CAUTRUCTHUCTHICOBAN {
       maDinhDanhPhuongTien: getDonViLuotXamNhap?.getPhuongTienChiHuyXamNhap?.getMaDinhDanhPhuongTien,
       onThucThiHoanTat: (SpriteAnimation? spriteAnimation) async {
         getCardNhiemVuNganChanXamNhap?.getSpriteAnimationComponentPhuongTienChiHuyXamNhap?.animation = spriteAnimation;
-      }
+      },
     );
 
     return;
   }
 
   Future<void> giaiPhongTaiNguyenHinhAnhPhuongTienChiHuyXamNhap({required GlobalStateManagementSystem? globalStateManagementSystem}) async {
-    // await globalStateManagementSystem?.onGetEntityResourceManagement?.getQuanLyTrangThaiHangarPhuongTien?.onGiaiPhongTaiNguyenPhuongTienTheoMaDinhDanh(
-    //     maDinhDanhPhuongTien: getDonViLuotXamNhap?.getPhuongTienChiHuyXamNhap?.getMaDinhDanhPhuongTien);
+    await globalStateManagementSystem?.onGetEntityResourceManagement?.getQuanLyTrangThaiHangarPhuongTien?.onGiaiPhongTaiNguyenPhuongTienTheoMaDinhDanh(
+      maDinhDanhPhuongTien: getDonViLuotXamNhap?.getPhuongTienChiHuyXamNhap?.getMaDinhDanhPhuongTien,
+    );
 
     getCardNhiemVuNganChanXamNhap?.getSpriteAnimationComponentPhuongTienChiHuyXamNhap?.animation = null;
 
@@ -49,6 +84,8 @@ class CAUTRUCLUOTXAMNHAPNGAUNHIEN with CAUTRUCTHUCTHICOBAN {
 
     if (getDonViLuotXamNhap == null) {
       await getCardNhiemVuNganChanXamNhap?.onHuyKichHoatThanhPhanThuocCap();
+
+      await caiDatTuDongKhoangThoiGianXuatHienLuotXamNhap();
     }
 
     return;
@@ -67,6 +104,23 @@ class CAUTRUCLUOTXAMNHAPNGAUNHIEN with CAUTRUCTHUCTHICOBAN {
     }
 
     return;
+  }
+
+  Future<void> caiDatTuDongKhoangThoiGianXuatHienLuotXamNhap() async {
+    final random = Random();
+    int number = random.nextInt(5000) + 1; // Tạo số từ 1 đến 20000
+
+    await caiDatKhoangThoiGianXuatHienLuotXamNhap(value: number, caiDatUuTien: true);
+
+    return;
+  }
+
+  void onVanHanhKhoangThoiGianXuatHienLuotXamNhap() {
+    if ((getKhoangThoiGianXuatHienLuotXamNhap ?? 0) > 0) {
+      caiDatKhoangThoiGianXuatHienLuotXamNhap(value: (getKhoangThoiGianXuatHienLuotXamNhap ?? 0) - 1, caiDatUuTien: true);
+    } else if (getKhoangThoiGianXuatHienLuotXamNhap == 0) {
+      ///
+    }
   }
 
   /// -----

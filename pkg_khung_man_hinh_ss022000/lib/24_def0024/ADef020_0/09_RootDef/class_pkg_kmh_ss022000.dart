@@ -548,7 +548,7 @@ class KHUNGMANHINHCHINH extends KHUNGMANHINHGAMECOSO {
 
       cauTrucThucThiTuanTuSS010.onAddDonViThucThiTuanTu(
         onThucThiTuanTu: () async {
-          getGlobalStateManagementSystem?.onGetEntityResourceManagement?.getQuanLyTrangThaiHangarPhuongTien?.onGiaiPhongTaiNguyenMaster(onThucThiHoanTat: onThucThiHoanTat);
+          await getGlobalStateManagementSystem?.onGetEntityResourceManagement?.getQuanLyTrangThaiHangarPhuongTien?.onGiaiPhongTaiNguyenMaster(onThucThiHoanTat: onThucThiHoanTat);
         },
       );
 
@@ -568,8 +568,10 @@ class KHUNGMANHINHCHINH extends KHUNGMANHINHGAMECOSO {
     // TODO: implement update
     super.update(dt);
 
-    if (getGlobalStateManagementSystem?.getTienTrinhTongQuat?.getTienTrinhThucThiChienDau?.getTrangThai?.getMoHinh?.onCheckBoolDangChuanBiThucThi() == true) {
-      getGlobalStateManagementSystem?.getBangDieuKhienKichBanChienDauTheoGiaiDoan?.getQuanLyVanHanhNganChanXamNhap?.onVanHanhNganChanXamNhap();
+    if (count % 10 == 0) {
+      if (getGlobalStateManagementSystem?.getTienTrinhTongQuat?.getTienTrinhThucThiChienDau?.getTrangThai?.getMoHinh?.onCheckBoolDangChuanBiThucThi() == true) {
+        getGlobalStateManagementSystem?.getBangDieuKhienKichBanChienDauTheoGiaiDoan?.getQuanLyVanHanhNganChanXamNhap?.onVanHanhNganChanXamNhap();
+      }
     }
 
     count++;

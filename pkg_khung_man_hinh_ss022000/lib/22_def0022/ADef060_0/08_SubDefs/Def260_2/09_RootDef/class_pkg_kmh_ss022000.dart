@@ -8,7 +8,7 @@ import 'package:pkg_khung_man_hinh_ss020000/pkg_khung_man_hinh_ss020000_exp.dart
 class CARDNHIEMVUNGANCHANXAMNHAPSS050 extends THANHPHANNUTBAMTHUOCCAPTHUANKICHHOAT {
   /// -----
   /// TODO:
-  /// ----- 
+  /// -----
   CARDNHIEMVUNGANCHANXAMNHAPSS050({
     required super.globalStateManagementSystem, //
     required super.gameController,
@@ -70,15 +70,15 @@ class CARDNHIEMVUNGANCHANXAMNHAPSS050 extends THANHPHANNUTBAMTHUOCCAPTHUANKICHHO
         ?.getNhiemVuChienDauChonChiDinh //
         ?.getMoHinh
         ?.caiDatKichBanChienDau(
-      value:
-      getGlobalStateManagementSystem //
-          ?.getBangDieuKhienKichBanChienDauTheoGiaiDoan //
-          ?.getQuanLyVanHanhNganChanXamNhap //
-          ?.getCauTrucLuotXamNhapNgauNhienSS050 //
-          ?.getDonViLuotXamNhap //
-          ?.getKichBanChienDau, //
-        caiDatUuTien: true
-    );
+          value:
+              getGlobalStateManagementSystem //
+                  ?.getBangDieuKhienKichBanChienDauTheoGiaiDoan //
+                  ?.getQuanLyVanHanhNganChanXamNhap //
+                  ?.getCauTrucLuotXamNhapNgauNhienSS050 //
+                  ?.getDonViLuotXamNhap //
+                  ?.getKichBanChienDau, //
+          caiDatUuTien: true,
+        );
 
     getGlobalStateManagementSystem?.getBangDieuKhienKichBanChienDauTheoGiaiDoan?.getQuanLyDieuKhienChuyenKichBanChienDau?.onThucThiNhiemVuNganChanXamNhapHoanTat = () async {
       await getGlobalStateManagementSystem //
@@ -125,11 +125,27 @@ class CARDNHIEMVUNGANCHANXAMNHAPSS050 extends THANHPHANNUTBAMTHUOCCAPTHUANKICHHO
     }
   }
 
+  Future<void> onTaiTaiNguyen() async {
+    await getGlobalStateManagementSystem
+        ?.getBangDieuKhienKichBanChienDauTheoGiaiDoan
+        ?.getQuanLyVanHanhNganChanXamNhap
+        ?.getCauTrucLuotXamNhapNgauNhienSS050 //
+        ?.caiDatHinhAnhPhuongTienChiHuyXamNhap(globalStateManagementSystem: getGlobalStateManagementSystem);
+
+    return;
+  }
+
+  Future<void> onGiaiPhongTaiNguyen() async {
+    await getGlobalStateManagementSystem
+        ?.getBangDieuKhienKichBanChienDauTheoGiaiDoan
+        ?.getQuanLyVanHanhNganChanXamNhap
+        ?.getCauTrucLuotXamNhapNgauNhienSS050 //
+        ?.giaiPhongTaiNguyenHinhAnhPhuongTienChiHuyXamNhap(globalStateManagementSystem: getGlobalStateManagementSystem);
+  }
+
   @override
   void update(double dt) {
     // TODO: implement update
     super.update(dt);
-
-
   }
 }

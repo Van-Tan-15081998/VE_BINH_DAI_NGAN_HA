@@ -419,4 +419,9 @@ Future<void> onAddComponent({required FlameGame? flameGame, required Component? 
     ///
     return;
   }
+
+  Future<void> onTaiTaiNguyen() async {
+    ///
+    return;
+  }
 }

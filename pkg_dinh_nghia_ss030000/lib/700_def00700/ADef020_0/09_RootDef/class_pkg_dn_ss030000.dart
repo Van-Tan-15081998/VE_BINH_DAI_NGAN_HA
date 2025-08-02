@@ -1605,7 +1605,6 @@ class QUANLYTRANGTHAIHANGARPHUONGTIEN with CAUTRUCTHUCTHICOBAN {
       /// -----
 
       await onCaiDatChatLuongDoHoaCao();
-
     } catch (e) {
       await onReportRootIssue(nameFunction: 'onInitRootForSubCom');
     }
@@ -1966,9 +1965,12 @@ class QUANLYTRANGTHAIHANGARPHUONGTIEN with CAUTRUCTHUCTHICOBAN {
   final List<THUOCTINHHINHANHCOBAN?> _danhSachPhuongTienTaiTaiNguyen = [];
   List<THUOCTINHHINHANHCOBAN?> get getDanhSachPhuongTienTaiTaiNguyen => _danhSachPhuongTienTaiTaiNguyen;
 
+  final List<THUOCTINHHINHANHCOBAN?> _danhSachPhuongTienXamNhapTaiTaiNguyen = [];
+  List<THUOCTINHHINHANHCOBAN?> get getDanhSachPhuongTienXamNhapTaiTaiNguyen => _danhSachPhuongTienXamNhapTaiTaiNguyen;
+
   Future<void> onTaiTaiNguyenPhuongTienTheoMaDinhDanh({
-    required String? maDinhDanhPhuongTien,//
-    Future<void> Function(SpriteAnimation? spriteAnimation)? onThucThiHoanTat
+    required String? maDinhDanhPhuongTien, //
+    Future<void> Function(SpriteAnimation? spriteAnimation)? onThucThiHoanTat,
   }) async {
     // await getThuocTinhTaiNguyenPhuongTien
     //     ?.onTruyXuatTaiNguyenHinhAnhNgoaiHinh(
@@ -2001,12 +2003,16 @@ class QUANLYTRANGTHAIHANGARPHUONGTIEN with CAUTRUCTHUCTHICOBAN {
       );
     }
 
+    /// -----
+    /// TODO:
+    /// -----
+    getDanhSachPhuongTienTaiTaiNguyen.add(getThuocTinhTaiNguyenPhuongTien?.getMapTaiNguyenHinhAnhNgoaiHinh?[maDinhDanhPhuongTien]);
+
     ///
     return;
   }
 
   Future<void> onGiaiPhongTaiNguyenPhuongTienTheoMaDinhDanh({required String? maDinhDanhPhuongTien}) async {
-
     /// -----
     /// TODO: RS050
     /// -----
@@ -2020,7 +2026,6 @@ class QUANLYTRANGTHAIHANGARPHUONGTIEN with CAUTRUCTHUCTHICOBAN {
           },
         );
       }
-
       /// -----
       /// TODO: RS100
       /// -----

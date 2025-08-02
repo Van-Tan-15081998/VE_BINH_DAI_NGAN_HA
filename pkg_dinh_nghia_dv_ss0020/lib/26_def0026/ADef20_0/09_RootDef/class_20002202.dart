@@ -45,6 +45,7 @@ class THUOCTINHAMTHANHHETHONG with CauTrucThucThiCoBan {
     /// TODO:
     /// -----
     await caiDatAmThanhHieuUngNutBam(value: THUOCTINHHIEUUNGAMTHANHNUTBAM());
+    await caiDatAmThanhHieuUngXamNhap(value: THUOCTINHHIEUUNGAMTHANHXAMNHAP());
     await caiDatAmThanhHieuUngChienDauChienThang(value: THUOCTINHHIEUUNGAMTHANHHIEUUNGCHIENDAUCHIENTHANG());
 
     /// -----
@@ -79,6 +80,7 @@ class THUOCTINHAMTHANHHETHONG with CauTrucThucThiCoBan {
     /// TODO:
     /// -----
     await getAmThanhHieuUngNutBam?.onAttachRoot(attachValue: attachValue);
+    await getAmThanhHieuUngXamNhap?.onAttachRoot(attachValue: attachValue);
     await getAmThanhHieuUngChienDauChienThang?.onAttachRoot(attachValue: attachValue);
 
     ///
@@ -94,6 +96,7 @@ class THUOCTINHAMTHANHHETHONG with CauTrucThucThiCoBan {
     /// TODO:
     /// -----
     await getAmThanhHieuUngNutBam?.onSetupRoot();
+    await getAmThanhHieuUngXamNhap?.onSetupRoot();
     await getAmThanhHieuUngChienDauChienThang?.onSetupRoot();
 
     ///
@@ -109,6 +112,7 @@ class THUOCTINHAMTHANHHETHONG with CauTrucThucThiCoBan {
     /// TODO:
     /// -----
     await getAmThanhHieuUngNutBam?.onInitRoot();
+    await getAmThanhHieuUngXamNhap?.onInitRoot();
     await getAmThanhHieuUngChienDauChienThang?.onInitRoot();
 
     ///
@@ -134,6 +138,21 @@ class THUOCTINHAMTHANHHETHONG with CauTrucThucThiCoBan {
       _amThanhHieuUngNutBam = value;
     } else {
       _amThanhHieuUngNutBam ??= value;
+    }
+
+    return;
+  }
+
+  /// -----
+  /// TODO:
+  /// -----
+  THUOCTINHHIEUUNGAMTHANHXAMNHAP? _amThanhHieuUngXamNhap;
+  THUOCTINHHIEUUNGAMTHANHXAMNHAP? get getAmThanhHieuUngXamNhap => _amThanhHieuUngXamNhap;
+  Future<void> caiDatAmThanhHieuUngXamNhap({required THUOCTINHHIEUUNGAMTHANHXAMNHAP? value, bool? caiDatUuTien}) async {
+    if (caiDatUuTien == true) {
+      _amThanhHieuUngXamNhap = value;
+    } else {
+      _amThanhHieuUngXamNhap ??= value;
     }
 
     return;
