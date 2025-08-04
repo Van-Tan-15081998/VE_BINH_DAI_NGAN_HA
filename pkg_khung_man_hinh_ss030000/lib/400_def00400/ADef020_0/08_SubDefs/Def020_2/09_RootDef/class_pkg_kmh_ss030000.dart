@@ -500,6 +500,7 @@ class QUANLYTHANHPHANMANHINHTHUOCCAP extends QUANLYTHANHPHANMANHINHTHUOCCAPCOBAN
       /// -----
       /// TODO:
       /// -----
+      await getKhungManHinhSS300500?.onKichHoatThanhPhanManHinhThuocCap(kichHoatUuTien: true);
     } catch (e) {
       await onReportRootIssue(nameFunction: 'onKichHoatKhungManHinhThuocCapSS300500');
     }
@@ -517,6 +518,7 @@ class QUANLYTHANHPHANMANHINHTHUOCCAP extends QUANLYTHANHPHANMANHINHTHUOCCAPCOBAN
       /// -----
       /// TODO:
       /// -----
+      await getKhungManHinhSS300500?.onHuyKichHoatThanhPhanManHinhThuocCap();
     } catch (e) {
       await onReportRootIssue(nameFunction: 'onHuyKichHoatKhungManHinhThuocCapSS300500');
     }

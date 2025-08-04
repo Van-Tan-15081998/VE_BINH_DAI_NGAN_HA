@@ -1,6 +1,7 @@
 import 'package:pkg_dinh_nghia_ss020000/pkg_dinh_nghia_ss020000_exp.dart';
 import 'package:pkg_khung_man_hinh_ss020000/pkg_khung_man_hinh_ss020000_exp.dart';
 import 'package:pkg_khung_man_hinh_ss300400/300_def00300/ADef050_0/08_SubDefs/Def020_2/09_RootDef/class_pkg_kmh_ss300400.dart';
+import 'package:pkg_khung_man_hinh_ss300400/300_def00300/ADef050_0/08_SubDefs/Def030_2/09_RootDef/class_pkg_kmh_ss300400.dart';
 
 /// -----
 /// TODO: Quản Lý Thành Phần Hình Ảnh Thuộc Cấp
@@ -28,11 +29,30 @@ class QUANLYTHANHPHANHINHANHTHUOCCAP extends QUANLYTHANHPHANHINHANHTHUOCCAPCOBAN
   }
 
   /// -----
+  /// TODO:
+  /// -----
+  HINHANHKHUNGMANHINHCHIENTHANG? _hinhAnhKhungManHinhChienThang;
+  HINHANHKHUNGMANHINHCHIENTHANG? get getHinhAnhKhungManHinhChienThang => _hinhAnhKhungManHinhChienThang;
+  Future<void> onCaiDatHinhAnhKhungManHinhChienThang({required HINHANHKHUNGMANHINHCHIENTHANG? value, bool? caiDatUuTien}) async {
+    if (caiDatUuTien == true) {
+      _hinhAnhKhungManHinhChienThang = value;
+    } else {
+      _hinhAnhKhungManHinhChienThang ??= value;
+    }
+
+    ///
+    return;
+  }
+
+  /// -----
   /// TODO: Add Comp Root
   /// -----
   @override
   Future<void> onAddRoot({required FlameGame? flameGame, required Component? component}) async {
-    await Future.wait([onAddComponent(flameGame: null, parentComponent: component, childComponent: getHinhAnhBackGround).catchError((e) => null)]);
+    await Future.wait([
+      onAddComponent(flameGame: null, parentComponent: component, childComponent: getHinhAnhBackGround).catchError((e) => null),
+      onAddComponent(flameGame: null, parentComponent: component, childComponent: getHinhAnhKhungManHinhChienThang).catchError((e) => null),
+    ]);
 
     /// -----
     /// TODO: Add Comp Root For SubCom
@@ -48,7 +68,10 @@ class QUANLYTHANHPHANHINHANHTHUOCCAP extends QUANLYTHANHPHANHINHANHTHUOCCAPCOBAN
   /// -----
   @override
   Future<void> onAddRootForSubCom({required FlameGame? flameGame, required Component? component}) async {
-    await Future.wait([getHinhAnhBackGround?.onAddRoot(flameGame: null, component: component).catchError((e) => null) ?? onReportRootIssue(nameFunction: '')]);
+    await Future.wait([
+      getHinhAnhBackGround?.onAddRoot(flameGame: null, component: component).catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getHinhAnhKhungManHinhChienThang?.onAddRoot(flameGame: null, component: component).catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+    ]);
 
     ///
     return;
@@ -77,12 +100,28 @@ class QUANLYTHANHPHANHINHANHTHUOCCAP extends QUANLYTHANHPHANHINHANHTHUOCCAPCOBAN
         ),
         caiDatUuTien: true,
       ).catchError((e) => null),
+
+      onCaiDatHinhAnhKhungManHinhChienThang(
+        value: HINHANHKHUNGMANHINHCHIENTHANG(
+          globalStateManagementSystem: getGlobalStateManagementSystem,
+          gameController: getGameController,
+          thanhPhanQuanLyThuocCapTrucTiep: getThanhPhanQuanLyThuocCapTrucTiep,
+          sizeDx: sizeDxManHinhVatLy,
+          sizeDy: sizeDxManHinhVatLy,
+          positionDx: sizeDxManHinhVatLy / 2,
+          positionDy: sizeDyManHinhVatLy / 2,
+        ),
+        caiDatUuTien: true,
+      ).catchError((e) => null),
     ]);
 
     /// -----
     /// TODO:
     /// -----
-    await Future.wait([getHinhAnhBackGround?.onSetupRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: '')]);
+    await Future.wait([
+      getHinhAnhBackGround?.onSetupRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getHinhAnhKhungManHinhChienThang?.onSetupRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+    ]);
 
     ///
     return;
@@ -98,7 +137,10 @@ class QUANLYTHANHPHANHINHANHTHUOCCAP extends QUANLYTHANHPHANHINHANHTHUOCCAPCOBAN
     /// -----
     /// TODO:
     /// -----
-    await Future.wait([getHinhAnhBackGround?.onInitRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: '')]);
+    await Future.wait([
+      getHinhAnhBackGround?.onInitRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getHinhAnhKhungManHinhChienThang?.onInitRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+    ]);
 
     ///
     return;

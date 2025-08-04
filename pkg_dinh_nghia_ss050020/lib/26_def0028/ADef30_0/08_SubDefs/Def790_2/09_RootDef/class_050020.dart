@@ -18,6 +18,8 @@ class DONVILUOTXAMNHAPCAPDOASS790 extends DONVILUOTXAMNHAPCOBAN {
       await getPhuongTienChiHuyXamNhap?.onSetupRoot();
       await getPhuongTienChiHuyXamNhap?.onInitRoot();
 
+      await caiDatKiemTraKichBanXuatHienBoss(value: true, caiDatUuTien: true);
+
       /// -----
       /// TODO: Setup Root For SubCom
       /// -----

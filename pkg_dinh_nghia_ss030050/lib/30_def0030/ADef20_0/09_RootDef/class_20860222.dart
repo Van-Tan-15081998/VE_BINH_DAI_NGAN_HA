@@ -2539,8 +2539,42 @@ class SUKIENVACHAMTHUOCPHUONGTIEN with CauTrucThucThiCoBan, DanhSachQuanLyTrangT
         //
         if (phuongTienVaCham?.getMoHinh?.getPhuongTien?.getMoHinh?.getTrangThaiTrongChienDau?.getTrangThaiTonTai?.onCheckBoolKhoiTaoHoanTat() == true) {
           if (phuongTienVaChamVienDan.value.isNotEmpty == true && phuongTienVaChamVienDan.value['[MA_DINH_DANH_VIEN_DAN_VA_CHAM]'] != '[]') {
+
+            /// -----
+            /// TODO: Gán Viên Đạn Va Chạm
+            /// -----
             if (phuongTienVaCham?.getMoHinh?.getPhuongTien?.getMoHinh?.getTrangThaiTrongChienDau?.getMaDinhDanhVienDanVaCham == null) {
                phuongTienVaCham?.getMoHinh?.getPhuongTien?.getMoHinh?.getTrangThaiTrongChienDau?.onVoidCaiDatMaDinhDanhVienDanVaCham(
+                value: phuongTienVaChamVienDan.value['[MA_DINH_DANH_VIEN_DAN_VA_CHAM]'],
+                caiDatUuTien: true,
+              );
+            }
+
+            /// -----
+            /// TODO: Gán Viên Đạn Va Chạm SS010
+            /// -----
+            else if (phuongTienVaCham?.getMoHinh?.getPhuongTien?.getMoHinh?.getTrangThaiTrongChienDau?.getMaDinhDanhVienDanVaChamSS010 == null) {
+              phuongTienVaCham?.getMoHinh?.getPhuongTien?.getMoHinh?.getTrangThaiTrongChienDau?.onVoidCaiDatMaDinhDanhVienDanVaChamSS010(
+                value: phuongTienVaChamVienDan.value['[MA_DINH_DANH_VIEN_DAN_VA_CHAM]'],
+                caiDatUuTien: true,
+              );
+            }
+
+            /// -----
+            /// TODO: Gán Viên Đạn Va Chạm SS020
+            /// -----
+            else if (phuongTienVaCham?.getMoHinh?.getPhuongTien?.getMoHinh?.getTrangThaiTrongChienDau?.getMaDinhDanhVienDanVaChamSS020 == null) {
+              phuongTienVaCham?.getMoHinh?.getPhuongTien?.getMoHinh?.getTrangThaiTrongChienDau?.onVoidCaiDatMaDinhDanhVienDanVaChamSS020(
+                value: phuongTienVaChamVienDan.value['[MA_DINH_DANH_VIEN_DAN_VA_CHAM]'],
+                caiDatUuTien: true,
+              );
+            }
+
+            /// -----
+            /// TODO: Gán Viên Đạn Va Chạm SS030
+            /// -----
+            else if (phuongTienVaCham?.getMoHinh?.getPhuongTien?.getMoHinh?.getTrangThaiTrongChienDau?.getMaDinhDanhVienDanVaChamSS030 == null) {
+              phuongTienVaCham?.getMoHinh?.getPhuongTien?.getMoHinh?.getTrangThaiTrongChienDau?.onVoidCaiDatMaDinhDanhVienDanVaChamSS030(
                 value: phuongTienVaChamVienDan.value['[MA_DINH_DANH_VIEN_DAN_VA_CHAM]'],
                 caiDatUuTien: true,
               );

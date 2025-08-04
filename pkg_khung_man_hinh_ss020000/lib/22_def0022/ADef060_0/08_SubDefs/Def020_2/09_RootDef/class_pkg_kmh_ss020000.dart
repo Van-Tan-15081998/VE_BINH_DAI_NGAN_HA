@@ -11,17 +11,16 @@ import 'package:pkg_khung_man_hinh_ss020000/pkg_khung_man_hinh_ss020000_exp.dart
 /// TODO: Thành Phần Tích Hợp Nút Bấm Văn Bản Thuộc Cấp
 /// -----
 abstract class THANHPHANTICHHOPNUTBAMVANBANTHUOCCAP extends PositionComponent
-    // with TapCallbacks, GestureHitboxes, HasGameRef, CauTrucThucThiCoBan {
-    with TapCallbacks, CauTrucThucThiCoBan {
+        // with TapCallbacks, GestureHitboxes, HasGameRef, CauTrucThucThiCoBan {
+        with
+        TapCallbacks,
+        CauTrucThucThiCoBan {
   /// -----
   /// TODO:
   /// -----
   GlobalStateManagementSystem? _globalStateManagementSystem;
   GlobalStateManagementSystem? get getGlobalStateManagementSystem => _globalStateManagementSystem;
-  void onSetGlobalStateManagementSystem({
-    required GlobalStateManagementSystem? value,
-    bool? caiDatUuTien,
-  }) {
+  void onSetGlobalStateManagementSystem({required GlobalStateManagementSystem? value, bool? caiDatUuTien}) {
     if (caiDatUuTien == true) {
       _globalStateManagementSystem = value;
     } else {
@@ -36,10 +35,7 @@ abstract class THANHPHANTICHHOPNUTBAMVANBANTHUOCCAP extends PositionComponent
   /// -----
   KHUNGMANHINHGAMECOSO? _gameController;
   KHUNGMANHINHGAMECOSO? get getGameController => _gameController;
-  void onVoidCaiDatGameController({
-    required KHUNGMANHINHGAMECOSO? value,
-    bool? caiDatUuTien,
-  }) {
+  void onVoidCaiDatGameController({required KHUNGMANHINHGAMECOSO? value, bool? caiDatUuTien}) {
     if (caiDatUuTien == true) {
       _gameController = value;
     } else {
@@ -53,12 +49,8 @@ abstract class THANHPHANTICHHOPNUTBAMVANBANTHUOCCAP extends PositionComponent
   /// TODO:
   /// -----
   THANHPHANMANHINHTHUOCCAPCOBAN? _thanhPhanQuanLyThuocCapTrucTiep;
-  THANHPHANMANHINHTHUOCCAPCOBAN? get getThanhPhanQuanLyThuocCapTrucTiep =>
-      _thanhPhanQuanLyThuocCapTrucTiep;
-  void onVoidCaiDatThanhPhanQuanLyThuocCapTrucTiep({
-    required THANHPHANMANHINHTHUOCCAPCOBAN? value,
-    bool? caiDatUuTien,
-  }) {
+  THANHPHANMANHINHTHUOCCAPCOBAN? get getThanhPhanQuanLyThuocCapTrucTiep => _thanhPhanQuanLyThuocCapTrucTiep;
+  void onVoidCaiDatThanhPhanQuanLyThuocCapTrucTiep({required THANHPHANMANHINHTHUOCCAPCOBAN? value, bool? caiDatUuTien}) {
     if (caiDatUuTien == true) {
       _thanhPhanQuanLyThuocCapTrucTiep = value;
     } else {
@@ -146,10 +138,7 @@ abstract class THANHPHANTICHHOPNUTBAMVANBANTHUOCCAP extends PositionComponent
 
   bool? _kiemTraVanBanThuan;
   bool? get getKiemTraVanBanThuan => _kiemTraVanBanThuan;
-  void onVoidCaiDatKiemTraVanBanThuan({
-    required bool? value,
-    bool? caiDatUuTien,
-  }) {
+  void onVoidCaiDatKiemTraVanBanThuan({required bool? value, bool? caiDatUuTien}) {
     if (caiDatUuTien == true) {
       _kiemTraVanBanThuan = value;
     } else {
@@ -192,7 +181,6 @@ abstract class THANHPHANTICHHOPNUTBAMVANBANTHUOCCAP extends PositionComponent
   }
 
   Future<void> onAddToParent() async {
-
     if (getFlameGameParentComponent != null && isMounted == false) {
       await getFlameGameParentComponent?.add(this);
     } else if (getParentComponent != null && isMounted == false) {
@@ -223,10 +211,7 @@ abstract class THANHPHANTICHHOPNUTBAMVANBANTHUOCCAP extends PositionComponent
   }) {
     onSetGlobalStateManagementSystem(value: globalStateManagementSystem, caiDatUuTien: true);
     onVoidCaiDatGameController(value: gameController, caiDatUuTien: true);
-    onVoidCaiDatThanhPhanQuanLyThuocCapTrucTiep(
-      value: thanhPhanQuanLyThuocCapTrucTiep,
-      caiDatUuTien: true,
-    );
+    onVoidCaiDatThanhPhanQuanLyThuocCapTrucTiep(value: thanhPhanQuanLyThuocCapTrucTiep, caiDatUuTien: true);
     onVoidCaiDatSizeDx(value: sizeDx, caiDatUuTien: true);
     onVoidCaiDatSizeDy(value: sizeDy, caiDatUuTien: true);
     onVoidCaiDatPositionDx(value: positionDx, caiDatUuTien: true);
@@ -293,12 +278,8 @@ abstract class THANHPHANTICHHOPNUTBAMVANBANTHUOCCAP extends PositionComponent
   /// TODO:
   /// -----
   SpriteAnimationHasVisibility? _spriteAnimationComponent;
-  SpriteAnimationHasVisibility? get getSpriteAnimationComponent =>
-      _spriteAnimationComponent;
-  Future<void> onCaiDatSpriteAnimationComponent({
-    required SpriteAnimationHasVisibility? value,
-    bool? caiDatUuTien,
-  }) async {
+  SpriteAnimationHasVisibility? get getSpriteAnimationComponent => _spriteAnimationComponent;
+  Future<void> onCaiDatSpriteAnimationComponent({required SpriteAnimationHasVisibility? value, bool? caiDatUuTien}) async {
     if (caiDatUuTien == true) {
       _spriteAnimationComponent = value;
     } else {
@@ -310,10 +291,7 @@ abstract class THANHPHANTICHHOPNUTBAMVANBANTHUOCCAP extends PositionComponent
 
   CoreGameUIComponent? _thanhPhanGameUI;
   CoreGameUIComponent? get getThanhPhanGameUI => _thanhPhanGameUI;
-  Future<void> onCaiDatThanhPhanGameUI({
-    required CoreGameUIComponent? value,
-    bool? caiDatUuTien,
-  }) async {
+  Future<void> onCaiDatThanhPhanGameUI({required CoreGameUIComponent? value, bool? caiDatUuTien}) async {
     if (caiDatUuTien == true) {
       _thanhPhanGameUI = value;
     } else {
@@ -327,12 +305,8 @@ abstract class THANHPHANTICHHOPNUTBAMVANBANTHUOCCAP extends PositionComponent
   /// TODO:
   /// -----
   THANHPHANVANBANTHUANTHUOCCAP? _thanhPhanVanBanThuan;
-  THANHPHANVANBANTHUANTHUOCCAP? get getThanhPhanVanBanThuan =>
-      _thanhPhanVanBanThuan;
-  Future<void> onCaiDatThanhPhanVanBanThuan({
-    required THANHPHANVANBANTHUANTHUOCCAP? value,
-    bool? caiDatUuTien,
-  }) async {
+  THANHPHANVANBANTHUANTHUOCCAP? get getThanhPhanVanBanThuan => _thanhPhanVanBanThuan;
+  Future<void> onCaiDatThanhPhanVanBanThuan({required THANHPHANVANBANTHUANTHUOCCAP? value, bool? caiDatUuTien}) async {
     if (caiDatUuTien == true) {
       _thanhPhanVanBanThuan = value;
     } else {
@@ -346,12 +320,8 @@ abstract class THANHPHANTICHHOPNUTBAMVANBANTHUOCCAP extends PositionComponent
   /// TODO:
   /// -----
   THANHPHANVANBANSOHOCTHUOCCAP? _thanhPhanVanBanSoHoc;
-  THANHPHANVANBANSOHOCTHUOCCAP? get getThanhPhanVanBanSoHoc =>
-      _thanhPhanVanBanSoHoc;
-  Future<void> onCaiDatThanhPhanVanBanSoHoc({
-    required THANHPHANVANBANSOHOCTHUOCCAP? value,
-    bool? caiDatUuTien,
-  }) async {
+  THANHPHANVANBANSOHOCTHUOCCAP? get getThanhPhanVanBanSoHoc => _thanhPhanVanBanSoHoc;
+  Future<void> onCaiDatThanhPhanVanBanSoHoc({required THANHPHANVANBANSOHOCTHUOCCAP? value, bool? caiDatUuTien}) async {
     if (caiDatUuTien == true) {
       _thanhPhanVanBanSoHoc = value;
     } else {
@@ -364,37 +334,16 @@ abstract class THANHPHANTICHHOPNUTBAMVANBANTHUOCCAP extends PositionComponent
   /// -----
   /// TODO: Add Comp Root
   /// -----
-  Future<void> onAddRoot({
-    required FlameGame? flameGame,
-    required Component? component,
-  }) async {
+  Future<void> onAddRoot({required FlameGame? flameGame, required Component? component}) async {
     /// -----
     /// TODO:
     /// -----
-    await Future.wait([
-      onAddComponent(
-        flameGame: null,
-        parentComponent: this,
-        childComponent: getSpriteAnimationComponent,
-      ).catchError((e) => null),
-    ]);
+    await Future.wait([onAddComponent(flameGame: null, parentComponent: this, childComponent: getSpriteAnimationComponent).catchError((e) => null)]);
 
     if (getKiemTraVanBanThuan == true) {
-      await Future.wait([
-        onAddComponent(
-          flameGame: null,
-          parentComponent: this,
-          childComponent: getThanhPhanVanBanThuan,
-        ).catchError((e) => null),
-      ]);
+      await Future.wait([onAddComponent(flameGame: null, parentComponent: this, childComponent: getThanhPhanVanBanThuan).catchError((e) => null)]);
     } else if (getKiemTraVanBanThuan == false) {
-      await Future.wait([
-        onAddComponent(
-          flameGame: null,
-          parentComponent: this,
-          childComponent: getThanhPhanVanBanSoHoc,
-        ).catchError((e) => null),
-      ]);
+      await Future.wait([onAddComponent(flameGame: null, parentComponent: this, childComponent: getThanhPhanVanBanSoHoc).catchError((e) => null)]);
     }
 
     /// -----
@@ -409,10 +358,7 @@ abstract class THANHPHANTICHHOPNUTBAMVANBANTHUOCCAP extends PositionComponent
   /// -----
   /// TODO: Add Comp Root For SubCom
   /// -----
-  Future<void> onAddRootForSubCom({
-    required FlameGame? flameGame,
-    required Component? component,
-  }) async {
+  Future<void> onAddRootForSubCom({required FlameGame? flameGame, required Component? component}) async {
     ///
     return;
   }
@@ -420,11 +366,7 @@ abstract class THANHPHANTICHHOPNUTBAMVANBANTHUOCCAP extends PositionComponent
   /// -----
   /// TODO:
   /// -----
-  Future<void> onAddComponent({
-    required FlameGame? flameGame,
-    required Component? parentComponent,
-    Component? childComponent,
-  }) async {
+  Future<void> onAddComponent({required FlameGame? flameGame, required Component? parentComponent, Component? childComponent}) async {
     try {
       if (flameGame != null) {
         if (childComponent != null && childComponent.isMounted == false) {
@@ -496,13 +438,7 @@ abstract class THANHPHANTICHHOPNUTBAMVANBANTHUOCCAP extends PositionComponent
   Future<void> onCaiDatChiTietThanhPhanGameUI();
   Future<void> onCapNhatChiTietThanhPhanGameUI() async {
     await Future.wait([
-      getSpriteAnimationComponent
-              ?.onCaiDatThanhPhanGameUI(
-                value: getThanhPhanGameUI,
-                caiDatUuTien: true,
-              )
-              .catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
+      getSpriteAnimationComponent?.onCaiDatThanhPhanGameUI(value: getThanhPhanGameUI, caiDatUuTien: true).catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
     ]);
   }
 

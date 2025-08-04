@@ -189,6 +189,9 @@ class QUANLYTHANHPHANNUTBAMTHUOCCAP extends QUANLYTHANHPHANNUTBAMTHUOCCAPCOBAN {
 
         ///
       ]);
+
+      await getNutBamSS030000SS010?.onKichHoatThanhPhanThuocCap(kichHoatUuTien: true);
+
     } catch (e) {
       await onReportRootIssue(nameFunction: 'onInitRootForSubCom');
     }

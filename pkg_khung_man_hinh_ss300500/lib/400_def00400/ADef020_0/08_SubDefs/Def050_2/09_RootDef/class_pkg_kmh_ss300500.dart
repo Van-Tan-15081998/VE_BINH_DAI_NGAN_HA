@@ -1,32 +1,23 @@
 import 'package:pkg_dinh_nghia_ss020000/pkg_dinh_nghia_ss020000_exp.dart';
 import 'package:pkg_khung_man_hinh_ss020000/pkg_khung_man_hinh_ss020000_exp.dart';
 import 'package:pkg_khung_man_hinh_ss300500/300_def00300/ADef050_0/08_SubDefs/Def020_2/09_RootDef/class_pkg_kmh_ss300500.dart';
+import 'package:pkg_khung_man_hinh_ss300500/300_def00300/ADef050_0/08_SubDefs/Def030_2/09_RootDef/class_pkg_kmh_ss300500.dart';
 
 /// -----
 /// TODO: Quản Lý Thành Phần Hình Ảnh Thuộc Cấp
 /// -----
-class QUANLYTHANHPHANHINHANHTHUOCCAP
-    extends QUANLYTHANHPHANHINHANHTHUOCCAPCOBAN {
+class QUANLYTHANHPHANHINHANHTHUOCCAP extends QUANLYTHANHPHANHINHANHTHUOCCAPCOBAN {
   /// -----
   /// TODO:
   /// -----
-  QUANLYTHANHPHANHINHANHTHUOCCAP({
-    required super.globalStateManagementSystem,
-    required super.gameController,
-    required super.thanhPhanQuanLyThuocCapTrucTiep,
-    required super.sizeDx,
-    required super.sizeDy,
-  });
+  QUANLYTHANHPHANHINHANHTHUOCCAP({required super.globalStateManagementSystem, required super.gameController, required super.thanhPhanQuanLyThuocCapTrucTiep, required super.sizeDx, required super.sizeDy});
 
   /// -----
   /// TODO:
   /// -----
   HINHANHBACKGROUNDKHUNGMANHINH? _hinhAnhBackGround;
   HINHANHBACKGROUNDKHUNGMANHINH? get getHinhAnhBackGround => _hinhAnhBackGround;
-  Future<void> onCaiDatHinhAnhBackGround({
-    required HINHANHBACKGROUNDKHUNGMANHINH? value,
-    bool? caiDatUuTien,
-  }) async {
+  Future<void> onCaiDatHinhAnhBackGround({required HINHANHBACKGROUNDKHUNGMANHINH? value, bool? caiDatUuTien}) async {
     if (caiDatUuTien == true) {
       _hinhAnhBackGround = value;
     } else {
@@ -38,19 +29,29 @@ class QUANLYTHANHPHANHINHANHTHUOCCAP
   }
 
   /// -----
+  /// TODO:
+  /// -----
+  HINHANHKHUNGMANHINHTHATBAI? _hinhAnhKhungManHinhThatBai;
+  HINHANHKHUNGMANHINHTHATBAI? get getHinhAnhKhungManHinhThatBai => _hinhAnhKhungManHinhThatBai;
+  Future<void> onCaiDatHinhAnhKhungManHinhThatBai({required HINHANHKHUNGMANHINHTHATBAI? value, bool? caiDatUuTien}) async {
+    if (caiDatUuTien == true) {
+      _hinhAnhKhungManHinhThatBai = value;
+    } else {
+      _hinhAnhKhungManHinhThatBai ??= value;
+    }
+
+    ///
+    return;
+  }
+
+  /// -----
   /// TODO: Add Comp Root
   /// -----
   @override
-  Future<void> onAddRoot({
-    required FlameGame? flameGame,
-    required Component? component,
-  }) async {
+  Future<void> onAddRoot({required FlameGame? flameGame, required Component? component}) async {
     await Future.wait([
-      onAddComponent(
-        flameGame: null,
-        parentComponent: component,
-        childComponent: getHinhAnhBackGround,
-      ).catchError((e) => null),
+      onAddComponent(flameGame: null, parentComponent: component, childComponent: getHinhAnhBackGround).catchError((e) => null),
+      onAddComponent(flameGame: null, parentComponent: component, childComponent: getHinhAnhKhungManHinhThatBai).catchError((e) => null),
     ]);
 
     /// -----
@@ -66,15 +67,10 @@ class QUANLYTHANHPHANHINHANHTHUOCCAP
   /// TODO: Add Comp Root For SubCom
   /// -----
   @override
-  Future<void> onAddRootForSubCom({
-    required FlameGame? flameGame,
-    required Component? component,
-  }) async {
+  Future<void> onAddRootForSubCom({required FlameGame? flameGame, required Component? component}) async {
     await Future.wait([
-      getHinhAnhBackGround
-              ?.onAddRoot(flameGame: null, component: component)
-              .catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
+      getHinhAnhBackGround?.onAddRoot(flameGame: null, component: component).catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getHinhAnhKhungManHinhThatBai?.onAddRoot(flameGame: null, component: component).catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
     ]);
 
     ///
@@ -104,14 +100,27 @@ class QUANLYTHANHPHANHINHANHTHUOCCAP
         ),
         caiDatUuTien: true,
       ).catchError((e) => null),
+
+      onCaiDatHinhAnhKhungManHinhThatBai(
+        value: HINHANHKHUNGMANHINHTHATBAI(
+          globalStateManagementSystem: getGlobalStateManagementSystem,
+          gameController: getGameController,
+          thanhPhanQuanLyThuocCapTrucTiep: getThanhPhanQuanLyThuocCapTrucTiep,
+          sizeDx: sizeDxManHinhVatLy,
+          sizeDy: sizeDxManHinhVatLy,
+          positionDx: sizeDxManHinhVatLy / 2,
+          positionDy: sizeDyManHinhVatLy / 2,
+        ),
+        caiDatUuTien: true,
+      ).catchError((e) => null),
     ]);
 
     /// -----
     /// TODO:
     /// -----
     await Future.wait([
-      getHinhAnhBackGround?.onSetupRoot().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
+      getHinhAnhBackGround?.onSetupRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getHinhAnhKhungManHinhThatBai?.onSetupRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
     ]);
 
     ///
@@ -129,8 +138,8 @@ class QUANLYTHANHPHANHINHANHTHUOCCAP
     /// TODO:
     /// -----
     await Future.wait([
-      getHinhAnhBackGround?.onInitRoot().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
+      getHinhAnhBackGround?.onInitRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getHinhAnhKhungManHinhThatBai?.onInitRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
     ]);
 
     ///

@@ -205,5 +205,8 @@ export '28_def0028/ADef400_0/08_SubDefs/Def500_2/09_RootDef/class_gameui.dart';
 /// TODO: _____[THANH_TICH_NHIEM_VU_CHIEN_DAU_SS030_HUY_KICH_HOAT]_____
 export '28_def0028/ADef400_0/08_SubDefs/Def510_2/09_RootDef/class_gameui.dart';
 
+/// TODO: _____[KHUNG_MAN_HINH_CHIEN_THANG]_____
+export '28_def0028/BDef200_0/08_SubDefs/Def210_2/09_RootDef/class_gameui.dart';
 
-
+/// TODO: _____[KHUNG_MAN_HINH_THAT_BAI]_____
+export '28_def0028/BDef200_0/08_SubDefs/Def220_2/09_RootDef/class_gameui.dart';

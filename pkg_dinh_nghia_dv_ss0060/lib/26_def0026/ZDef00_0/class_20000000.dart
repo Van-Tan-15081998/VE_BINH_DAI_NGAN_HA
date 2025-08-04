@@ -145,6 +145,24 @@ class MOHINHTHANHTICHCHIENDAUCOBAN with CauTrucThucThiCoBan {
     return;
   }
 
+  Future<void> onKhoiPhucDonViSoLuongNguyenBan() async {
+
+    /// -----
+    /// TODO:
+    /// -----
+    await getThanhTichChienDauTheoNhiemVu?.getPhanThuongDatThanhTich?.getGoiTaiNguyenPhanThuongVang?.getDonViSoLuong?.caiDatTongSoLuong(
+      value: 1,
+      caiDatUuTien: true,
+    );
+    await getThanhTichChienDauTheoNhiemVu?.getPhanThuongDatThanhTich?.getGoiTaiNguyenPhanThuongNgoc?.getDonViSoLuong?.caiDatTongSoLuong(
+      value: 1,
+      caiDatUuTien: true,
+    );
+
+    ///
+    return;
+  }
+
   /// -----
   /// TODO: Mã Định Danh
   /// -----

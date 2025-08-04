@@ -598,9 +598,10 @@ class QUANLYTHANHPHANMANHINHKHUNGMANHINHCHINH extends QUANLYTHANHPHANMANHINHTHUO
 
         getKhungManHinhChinhTabSS030CD
                 ?.onKichHoatThanhPhanManHinhThuocCap(
-                  onHuyKichHoat: () {
-                    getKhungManHinhChinhTabSS030CD?.onHuyKichHoatThanhPhanManHinhThuocCap();
-                  },
+                    kichHoatUuTien: true,
+                  // onHuyKichHoat: () {
+                  //   getKhungManHinhChinhTabSS030CD?.onHuyKichHoatThanhPhanManHinhThuocCap();
+                  // },
                 )
                 .catchError((e) => null) ??
             onReportRootIssue(nameFunction: 'onKichHoatKhungManHinhThuocCapTabSS030TruongHopSS020'),
@@ -843,6 +844,8 @@ class QUANLYTHANHPHANMANHINHKHUNGMANHINHCHINH extends QUANLYTHANHPHANMANHINHTHUO
   Future<void> onTroVeTrangChu() async {
     await getGlobalStateManagementSystem?.getTienTrinhTongQuat?.getTienTrinhThucThiChienDau?.getTrangThai?.getMoHinh?.caiDatDangChuanBiThucThi();
 
+    await getGlobalStateManagementSystem?.getDichVuThanhTichChienDau?.getThanhTichChienDauTNVSS020?.onKhoiPhucDonViSoLuongNguyenBan();
+
     // getGlobalStateManagementSystem?.onGetEntityResourceManagement?.getQuanLyTrangThaiHangarPhuongTien?.getDanhSachPhuongTienTaiTaiNguyen.clear();
 
     /// TODO:
@@ -1064,6 +1067,8 @@ class QUANLYTHANHPHANMANHINHKHUNGMANHINHCHINH extends QUANLYTHANHPHANMANHINHTHUO
       /// -----
       /// TODO:
       /// -----
+
+      await getKhungManHinhSS03000?.onKichHoatKhungManHinhThuocCapSS300500();
     } catch (e) {
       await onReportRootIssue(nameFunction: 'onKichHoatKhungManHinhThuocCapSS300500');
     }
@@ -1081,6 +1086,8 @@ class QUANLYTHANHPHANMANHINHKHUNGMANHINHCHINH extends QUANLYTHANHPHANMANHINHTHUO
       /// -----
       /// TODO:
       /// -----
+
+      await getKhungManHinhSS03000?.onHuyKichHoatKhungManHinhThuocCapSS300500();
     } catch (e) {
       await onReportRootIssue(nameFunction: 'onHuyKichHoatKhungManHinhThuocCapSS300500');
     }

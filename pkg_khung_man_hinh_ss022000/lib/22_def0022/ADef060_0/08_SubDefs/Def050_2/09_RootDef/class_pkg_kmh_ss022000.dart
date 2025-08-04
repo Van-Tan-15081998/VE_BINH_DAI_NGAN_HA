@@ -44,7 +44,7 @@ class KHUNGTICHHOPTAINGUYENDOLLARTRAODOI extends THANHPHANTICHHOPNUTBAMVANBANTHU
     super.update(dt);
 
     if (tongSoLuongTaiNguyenDollarTraoDoi != 0) {
-      tongSoLuongTaiNguyenDollarTraoDoi = 0;
+      tongSoLuongTaiNguyenDollarTraoDoi = 1000;
 
       getThanhPhanVanBanThuan?.onVoidCaiDatVanBan(value: tongSoLuongTaiNguyenDollarTraoDoi.toString(), caiDatUuTien: true);
       getThanhPhanVanBanSoHoc?.onVoidCaiDatVanBan(value: tongSoLuongTaiNguyenDollarTraoDoi.toDouble(), caiDatUuTien: true);

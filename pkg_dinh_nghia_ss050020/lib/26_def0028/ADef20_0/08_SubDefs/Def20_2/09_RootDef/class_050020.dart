@@ -35,5 +35,15 @@ class DONVILUOTXAMNHAPCOBAN with CAUTRUCTHUCTHICOBAN {
     return;
   }
 
+  bool? _kiemTraKichBanXuatHienBoss = false;
+  bool? get getKiemTraKichBanXuatHienBoss => _kiemTraKichBanXuatHienBoss;
+  Future<void> caiDatKiemTraKichBanXuatHienBoss({required bool? value, bool? caiDatUuTien}) async {
+    if (caiDatUuTien == true) {
+      _kiemTraKichBanXuatHienBoss = value;
+    } else {
+      _kiemTraKichBanXuatHienBoss ??= value;
+    }
 
+    return;
+  }
 }

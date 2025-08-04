@@ -4,8 +4,7 @@ import 'package:pkg_khung_man_hinh_ss020000/pkg_khung_man_hinh_ss020000_exp.dart
 /// -----
 /// TODO: Khung Tích Hợp Tài Nguyên Ngọc Trao Đổi
 /// -----
-class KHUNGTICHHOPTAINGUYENNGOCTRAODOI
-    extends THANHPHANTICHHOPNUTBAMVANBANTHUOCCAP {
+class KHUNGTICHHOPTAINGUYENNGOCTRAODOI extends THANHPHANTICHHOPNUTBAMVANBANTHUOCCAP {
   /// -----
   /// TODO:
   /// -----
@@ -26,10 +25,7 @@ class KHUNGTICHHOPTAINGUYENNGOCTRAODOI
 
   @override
   Future<void> onCaiDatChiTietThanhPhanGameUI() async {
-    await onCaiDatThanhPhanGameUI(
-      value: GAMEUIKHUNGTHONGTINTAINGUYENNGOCTRAODOI(),
-      caiDatUuTien: true,
-    );
+    await onCaiDatThanhPhanGameUI(value: GAMEUIKHUNGTHONGTINTAINGUYENNGOCTRAODOI(), caiDatUuTien: true);
 
     await getThanhPhanGameUI?.onSetupRoot();
 
@@ -65,7 +61,7 @@ class KHUNGTICHHOPTAINGUYENNGOCTRAODOI
               ?.getGoiTaiNguyenChuanChinhThuc
               ?.getDonViSoLuong
               ?.getTongSoLuong ??
-              0;
+          0;
 
       getThanhPhanVanBanThuan?.onVoidCaiDatVanBan(value: tongSoLuongTaiNguyenNgocTraoDoi.toString(), caiDatUuTien: true);
       getThanhPhanVanBanSoHoc?.onVoidCaiDatVanBan(value: tongSoLuongTaiNguyenNgocTraoDoi.toDouble(), caiDatUuTien: true);

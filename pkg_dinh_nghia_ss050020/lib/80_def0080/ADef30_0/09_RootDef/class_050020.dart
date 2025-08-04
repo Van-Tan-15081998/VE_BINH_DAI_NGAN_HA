@@ -72,7 +72,25 @@ class QUANLYVANHANHNGANCHANXAMNHAP with CAUTRUCTHUCTHICOBAN, DanhSachQuanLyTrang
 
       if (getCauTrucLuotXamNhapNgauNhienSS010?.getDonViLuotXamNhap == null && getCauTrucLuotXamNhapNgauNhienSS010?.getKhoangThoiGianXuatHienLuotXamNhap == 0) {
         final random = Random();
-        DONVILUOTXAMNHAPCOBAN? donViNgauNhien = getDanhSachDonViLuotXamNhap[random.nextInt(getDanhSachDonViLuotXamNhap.length)];
+        DONVILUOTXAMNHAPCOBAN? donViNgauNhien;
+
+        if (
+            // (getCauTrucLuotXamNhapNgauNhienSS010?.getDonViLuotXamNhap?.getKiemTraKichBanXuatHienBoss == null || getCauTrucLuotXamNhapNgauNhienSS010?.getDonViLuotXamNhap?.getKiemTraKichBanXuatHienBoss == false) &&
+            (getCauTrucLuotXamNhapNgauNhienSS020?.getDonViLuotXamNhap?.getKiemTraKichBanXuatHienBoss == null || getCauTrucLuotXamNhapNgauNhienSS020?.getDonViLuotXamNhap?.getKiemTraKichBanXuatHienBoss == false) &&
+            (getCauTrucLuotXamNhapNgauNhienSS030?.getDonViLuotXamNhap?.getKiemTraKichBanXuatHienBoss == null || getCauTrucLuotXamNhapNgauNhienSS030?.getDonViLuotXamNhap?.getKiemTraKichBanXuatHienBoss == false) &&
+            (getCauTrucLuotXamNhapNgauNhienSS040?.getDonViLuotXamNhap?.getKiemTraKichBanXuatHienBoss == null || getCauTrucLuotXamNhapNgauNhienSS040?.getDonViLuotXamNhap?.getKiemTraKichBanXuatHienBoss == false) &&
+            (getCauTrucLuotXamNhapNgauNhienSS050?.getDonViLuotXamNhap?.getKiemTraKichBanXuatHienBoss == null || getCauTrucLuotXamNhapNgauNhienSS050?.getDonViLuotXamNhap?.getKiemTraKichBanXuatHienBoss == false) &&
+            (getCauTrucLuotXamNhapNgauNhienSS060?.getDonViLuotXamNhap?.getKiemTraKichBanXuatHienBoss == null || getCauTrucLuotXamNhapNgauNhienSS060?.getDonViLuotXamNhap?.getKiemTraKichBanXuatHienBoss == false)
+        ) {
+          int soNgauNhien = random.nextInt(10) + 1; // Tạo số từ 1 đến 10
+          if (soNgauNhien % 2 == 0) {
+            donViNgauNhien = getDanhSachDonViLuotXamNhapXuatHienBoss[random.nextInt(getDanhSachDonViLuotXamNhapXuatHienBoss.length)];
+          } else {
+            donViNgauNhien = getDanhSachDonViLuotXamNhap[random.nextInt(getDanhSachDonViLuotXamNhap.length)];
+          }
+        } else {
+          donViNgauNhien = getDanhSachDonViLuotXamNhap[random.nextInt(getDanhSachDonViLuotXamNhap.length)];
+        }
 
         await getCauTrucLuotXamNhapNgauNhienSS010?.caiDatDonViLuotXamNhap(value: donViNgauNhien, caiDatUuTien: true);
         await getCauTrucLuotXamNhapNgauNhienSS010?.getDonViLuotXamNhap?.onSetupRoot();
@@ -84,7 +102,25 @@ class QUANLYVANHANHNGANCHANXAMNHAP with CAUTRUCTHUCTHICOBAN, DanhSachQuanLyTrang
 
       if (getCauTrucLuotXamNhapNgauNhienSS020?.getDonViLuotXamNhap == null && getCauTrucLuotXamNhapNgauNhienSS020?.getKhoangThoiGianXuatHienLuotXamNhap == 0) {
         final random = Random();
-        DONVILUOTXAMNHAPCOBAN? donViNgauNhien = getDanhSachDonViLuotXamNhap[random.nextInt(getDanhSachDonViLuotXamNhap.length)];
+        DONVILUOTXAMNHAPCOBAN? donViNgauNhien;
+
+        if (
+        (getCauTrucLuotXamNhapNgauNhienSS010?.getDonViLuotXamNhap?.getKiemTraKichBanXuatHienBoss == null || getCauTrucLuotXamNhapNgauNhienSS010?.getDonViLuotXamNhap?.getKiemTraKichBanXuatHienBoss == false) &&
+            // (getCauTrucLuotXamNhapNgauNhienSS020?.getDonViLuotXamNhap?.getKiemTraKichBanXuatHienBoss == null || getCauTrucLuotXamNhapNgauNhienSS020?.getDonViLuotXamNhap?.getKiemTraKichBanXuatHienBoss == false) &&
+            (getCauTrucLuotXamNhapNgauNhienSS030?.getDonViLuotXamNhap?.getKiemTraKichBanXuatHienBoss == null || getCauTrucLuotXamNhapNgauNhienSS030?.getDonViLuotXamNhap?.getKiemTraKichBanXuatHienBoss == false) &&
+            (getCauTrucLuotXamNhapNgauNhienSS040?.getDonViLuotXamNhap?.getKiemTraKichBanXuatHienBoss == null || getCauTrucLuotXamNhapNgauNhienSS040?.getDonViLuotXamNhap?.getKiemTraKichBanXuatHienBoss == false) &&
+            (getCauTrucLuotXamNhapNgauNhienSS050?.getDonViLuotXamNhap?.getKiemTraKichBanXuatHienBoss == null || getCauTrucLuotXamNhapNgauNhienSS050?.getDonViLuotXamNhap?.getKiemTraKichBanXuatHienBoss == false) &&
+            (getCauTrucLuotXamNhapNgauNhienSS060?.getDonViLuotXamNhap?.getKiemTraKichBanXuatHienBoss == null || getCauTrucLuotXamNhapNgauNhienSS060?.getDonViLuotXamNhap?.getKiemTraKichBanXuatHienBoss == false)
+        ) {
+          int soNgauNhien = random.nextInt(10) + 1; // Tạo số từ 1 đến 10
+          if (soNgauNhien % 2 == 0) {
+            donViNgauNhien = getDanhSachDonViLuotXamNhapXuatHienBoss[random.nextInt(getDanhSachDonViLuotXamNhapXuatHienBoss.length)];
+          } else {
+            donViNgauNhien = getDanhSachDonViLuotXamNhap[random.nextInt(getDanhSachDonViLuotXamNhap.length)];
+          }
+        } else {
+          donViNgauNhien = getDanhSachDonViLuotXamNhap[random.nextInt(getDanhSachDonViLuotXamNhap.length)];
+        }
 
         await getCauTrucLuotXamNhapNgauNhienSS020?.caiDatDonViLuotXamNhap(value: donViNgauNhien, caiDatUuTien: true);
         await getCauTrucLuotXamNhapNgauNhienSS020?.getDonViLuotXamNhap?.onSetupRoot();
@@ -100,7 +136,24 @@ class QUANLYVANHANHNGANCHANXAMNHAP with CAUTRUCTHUCTHICOBAN, DanhSachQuanLyTrang
 
       if (getCauTrucLuotXamNhapNgauNhienSS030?.getDonViLuotXamNhap == null && getCauTrucLuotXamNhapNgauNhienSS030?.getKhoangThoiGianXuatHienLuotXamNhap == 0) {
         final random = Random();
-        DONVILUOTXAMNHAPCOBAN? donViNgauNhien = getDanhSachDonViLuotXamNhap[random.nextInt(getDanhSachDonViLuotXamNhap.length)];
+        DONVILUOTXAMNHAPCOBAN? donViNgauNhien;
+        if (
+        (getCauTrucLuotXamNhapNgauNhienSS010?.getDonViLuotXamNhap?.getKiemTraKichBanXuatHienBoss == null || getCauTrucLuotXamNhapNgauNhienSS010?.getDonViLuotXamNhap?.getKiemTraKichBanXuatHienBoss == false) &&
+            (getCauTrucLuotXamNhapNgauNhienSS020?.getDonViLuotXamNhap?.getKiemTraKichBanXuatHienBoss == null || getCauTrucLuotXamNhapNgauNhienSS020?.getDonViLuotXamNhap?.getKiemTraKichBanXuatHienBoss == false) &&
+            // (getCauTrucLuotXamNhapNgauNhienSS030?.getDonViLuotXamNhap?.getKiemTraKichBanXuatHienBoss == null || getCauTrucLuotXamNhapNgauNhienSS030?.getDonViLuotXamNhap?.getKiemTraKichBanXuatHienBoss == false) &&
+            (getCauTrucLuotXamNhapNgauNhienSS040?.getDonViLuotXamNhap?.getKiemTraKichBanXuatHienBoss == null || getCauTrucLuotXamNhapNgauNhienSS040?.getDonViLuotXamNhap?.getKiemTraKichBanXuatHienBoss == false) &&
+            (getCauTrucLuotXamNhapNgauNhienSS050?.getDonViLuotXamNhap?.getKiemTraKichBanXuatHienBoss == null || getCauTrucLuotXamNhapNgauNhienSS050?.getDonViLuotXamNhap?.getKiemTraKichBanXuatHienBoss == false) &&
+            (getCauTrucLuotXamNhapNgauNhienSS060?.getDonViLuotXamNhap?.getKiemTraKichBanXuatHienBoss == null || getCauTrucLuotXamNhapNgauNhienSS060?.getDonViLuotXamNhap?.getKiemTraKichBanXuatHienBoss == false)
+        ) {
+          int soNgauNhien = random.nextInt(10) + 1; // Tạo số từ 1 đến 10
+          if (soNgauNhien % 2 == 0) {
+            donViNgauNhien = getDanhSachDonViLuotXamNhapXuatHienBoss[random.nextInt(getDanhSachDonViLuotXamNhapXuatHienBoss.length)];
+          } else {
+            donViNgauNhien = getDanhSachDonViLuotXamNhap[random.nextInt(getDanhSachDonViLuotXamNhap.length)];
+          }
+        } else {
+          donViNgauNhien = getDanhSachDonViLuotXamNhap[random.nextInt(getDanhSachDonViLuotXamNhap.length)];
+        }
 
         await getCauTrucLuotXamNhapNgauNhienSS030?.caiDatDonViLuotXamNhap(value: donViNgauNhien, caiDatUuTien: true);
         await getCauTrucLuotXamNhapNgauNhienSS030?.getDonViLuotXamNhap?.onSetupRoot();
@@ -118,7 +171,25 @@ class QUANLYVANHANHNGANCHANXAMNHAP with CAUTRUCTHUCTHICOBAN, DanhSachQuanLyTrang
 
       if (getCauTrucLuotXamNhapNgauNhienSS040?.getDonViLuotXamNhap == null && getCauTrucLuotXamNhapNgauNhienSS040?.getKhoangThoiGianXuatHienLuotXamNhap == 0) {
         final random = Random();
-        DONVILUOTXAMNHAPCOBAN? donViNgauNhien = getDanhSachDonViLuotXamNhap[random.nextInt(getDanhSachDonViLuotXamNhap.length)];
+        DONVILUOTXAMNHAPCOBAN? donViNgauNhien;
+
+        if (
+        (getCauTrucLuotXamNhapNgauNhienSS010?.getDonViLuotXamNhap?.getKiemTraKichBanXuatHienBoss == null || getCauTrucLuotXamNhapNgauNhienSS010?.getDonViLuotXamNhap?.getKiemTraKichBanXuatHienBoss == false) &&
+            (getCauTrucLuotXamNhapNgauNhienSS020?.getDonViLuotXamNhap?.getKiemTraKichBanXuatHienBoss == null || getCauTrucLuotXamNhapNgauNhienSS020?.getDonViLuotXamNhap?.getKiemTraKichBanXuatHienBoss == false) &&
+            (getCauTrucLuotXamNhapNgauNhienSS030?.getDonViLuotXamNhap?.getKiemTraKichBanXuatHienBoss == null || getCauTrucLuotXamNhapNgauNhienSS030?.getDonViLuotXamNhap?.getKiemTraKichBanXuatHienBoss == false) &&
+            // (getCauTrucLuotXamNhapNgauNhienSS040?.getDonViLuotXamNhap?.getKiemTraKichBanXuatHienBoss == null || getCauTrucLuotXamNhapNgauNhienSS040?.getDonViLuotXamNhap?.getKiemTraKichBanXuatHienBoss == false) &&
+            (getCauTrucLuotXamNhapNgauNhienSS050?.getDonViLuotXamNhap?.getKiemTraKichBanXuatHienBoss == null || getCauTrucLuotXamNhapNgauNhienSS050?.getDonViLuotXamNhap?.getKiemTraKichBanXuatHienBoss == false) &&
+            (getCauTrucLuotXamNhapNgauNhienSS060?.getDonViLuotXamNhap?.getKiemTraKichBanXuatHienBoss == null || getCauTrucLuotXamNhapNgauNhienSS060?.getDonViLuotXamNhap?.getKiemTraKichBanXuatHienBoss == false)
+        ) {
+          int soNgauNhien = random.nextInt(10) + 1; // Tạo số từ 1 đến 10
+          if (soNgauNhien % 2 == 0) {
+            donViNgauNhien = getDanhSachDonViLuotXamNhapXuatHienBoss[random.nextInt(getDanhSachDonViLuotXamNhapXuatHienBoss.length)];
+          } else {
+            donViNgauNhien = getDanhSachDonViLuotXamNhap[random.nextInt(getDanhSachDonViLuotXamNhap.length)];
+          }
+        } else {
+          donViNgauNhien = getDanhSachDonViLuotXamNhap[random.nextInt(getDanhSachDonViLuotXamNhap.length)];
+        }
 
         await getCauTrucLuotXamNhapNgauNhienSS040?.caiDatDonViLuotXamNhap(value: donViNgauNhien, caiDatUuTien: true);
         await getCauTrucLuotXamNhapNgauNhienSS040?.getDonViLuotXamNhap?.onSetupRoot();
@@ -136,7 +207,25 @@ class QUANLYVANHANHNGANCHANXAMNHAP with CAUTRUCTHUCTHICOBAN, DanhSachQuanLyTrang
 
       if (getCauTrucLuotXamNhapNgauNhienSS050?.getDonViLuotXamNhap == null && getCauTrucLuotXamNhapNgauNhienSS050?.getKhoangThoiGianXuatHienLuotXamNhap == 0) {
         final random = Random();
-        DONVILUOTXAMNHAPCOBAN? donViNgauNhien = getDanhSachDonViLuotXamNhap[random.nextInt(getDanhSachDonViLuotXamNhap.length)];
+        DONVILUOTXAMNHAPCOBAN? donViNgauNhien;
+
+        if (
+        (getCauTrucLuotXamNhapNgauNhienSS010?.getDonViLuotXamNhap?.getKiemTraKichBanXuatHienBoss == null || getCauTrucLuotXamNhapNgauNhienSS010?.getDonViLuotXamNhap?.getKiemTraKichBanXuatHienBoss == false) &&
+            (getCauTrucLuotXamNhapNgauNhienSS020?.getDonViLuotXamNhap?.getKiemTraKichBanXuatHienBoss == null || getCauTrucLuotXamNhapNgauNhienSS020?.getDonViLuotXamNhap?.getKiemTraKichBanXuatHienBoss == false) &&
+            (getCauTrucLuotXamNhapNgauNhienSS030?.getDonViLuotXamNhap?.getKiemTraKichBanXuatHienBoss == null || getCauTrucLuotXamNhapNgauNhienSS030?.getDonViLuotXamNhap?.getKiemTraKichBanXuatHienBoss == false) &&
+            (getCauTrucLuotXamNhapNgauNhienSS040?.getDonViLuotXamNhap?.getKiemTraKichBanXuatHienBoss == null || getCauTrucLuotXamNhapNgauNhienSS040?.getDonViLuotXamNhap?.getKiemTraKichBanXuatHienBoss == false) &&
+            // (getCauTrucLuotXamNhapNgauNhienSS050?.getDonViLuotXamNhap?.getKiemTraKichBanXuatHienBoss == null || getCauTrucLuotXamNhapNgauNhienSS050?.getDonViLuotXamNhap?.getKiemTraKichBanXuatHienBoss == false) &&
+            (getCauTrucLuotXamNhapNgauNhienSS060?.getDonViLuotXamNhap?.getKiemTraKichBanXuatHienBoss == null || getCauTrucLuotXamNhapNgauNhienSS060?.getDonViLuotXamNhap?.getKiemTraKichBanXuatHienBoss == false)
+        ) {
+          int soNgauNhien = random.nextInt(10) + 1; // Tạo số từ 1 đến 10
+          if (soNgauNhien % 2 == 0) {
+            donViNgauNhien = getDanhSachDonViLuotXamNhapXuatHienBoss[random.nextInt(getDanhSachDonViLuotXamNhapXuatHienBoss.length)];
+          } else {
+            donViNgauNhien = getDanhSachDonViLuotXamNhap[random.nextInt(getDanhSachDonViLuotXamNhap.length)];
+          }
+        } else {
+          donViNgauNhien = getDanhSachDonViLuotXamNhap[random.nextInt(getDanhSachDonViLuotXamNhap.length)];
+        }
 
         await getCauTrucLuotXamNhapNgauNhienSS050?.caiDatDonViLuotXamNhap(value: donViNgauNhien, caiDatUuTien: true);
         await getCauTrucLuotXamNhapNgauNhienSS050?.getDonViLuotXamNhap?.onSetupRoot();
@@ -154,60 +243,79 @@ class QUANLYVANHANHNGANCHANXAMNHAP with CAUTRUCTHUCTHICOBAN, DanhSachQuanLyTrang
 
       if (getCauTrucLuotXamNhapNgauNhienSS060?.getDonViLuotXamNhap == null && getCauTrucLuotXamNhapNgauNhienSS060?.getKhoangThoiGianXuatHienLuotXamNhap == 0) {
         final random = Random();
-        DONVILUOTXAMNHAPCOBAN? donViNgauNhien = getDanhSachDonViLuotXamNhap[random.nextInt(getDanhSachDonViLuotXamNhap.length)];
+        DONVILUOTXAMNHAPCOBAN? donViNgauNhien;
 
-        ///
-        /// TODO: XNNNSS00C
-        ///
-        // DONVILUOTXAMNHAPCOBAN? donViNgauNhien = getDonViLuotXamNhapCapDoASS510;
-        // DONVILUOTXAMNHAPCOBAN? donViNgauNhien = getDonViLuotXamNhapCapDoASS520;
-        // DONVILUOTXAMNHAPCOBAN? donViNgauNhien = getDonViLuotXamNhapCapDoASS530;
-        // DONVILUOTXAMNHAPCOBAN? donViNgauNhien = getDonViLuotXamNhapCapDoASS540;
-        // DONVILUOTXAMNHAPCOBAN? donViNgauNhien = getDonViLuotXamNhapCapDoASS550;
-        // DONVILUOTXAMNHAPCOBAN? donViNgauNhien = getDonViLuotXamNhapCapDoASS560;
-        // DONVILUOTXAMNHAPCOBAN? donViNgauNhien = getDonViLuotXamNhapCapDoASS570;
-        // DONVILUOTXAMNHAPCOBAN? donViNgauNhien = getDonViLuotXamNhapCapDoASS580;
-        // DONVILUOTXAMNHAPCOBAN? donViNgauNhien = getDonViLuotXamNhapCapDoASS590;
-        // DONVILUOTXAMNHAPCOBAN? donViNgauNhien = getDonViLuotXamNhapCapDoASS600;
-        // DONVILUOTXAMNHAPCOBAN? donViNgauNhien = getDonViLuotXamNhapCapDoASS610;
-        // DONVILUOTXAMNHAPCOBAN? donViNgauNhien = getDonViLuotXamNhapCapDoASS620;
-        // DONVILUOTXAMNHAPCOBAN? donViNgauNhien = getDonViLuotXamNhapCapDoASS630;
-        // DONVILUOTXAMNHAPCOBAN? donViNgauNhien = getDonViLuotXamNhapCapDoASS640;
-        // DONVILUOTXAMNHAPCOBAN? donViNgauNhien = getDonViLuotXamNhapCapDoASS650;
-        // DONVILUOTXAMNHAPCOBAN? donViNgauNhien = getDonViLuotXamNhapCapDoASS660;
-        // DONVILUOTXAMNHAPCOBAN? donViNgauNhien = getDonViLuotXamNhapCapDoASS670;
-        // DONVILUOTXAMNHAPCOBAN? donViNgauNhien = getDonViLuotXamNhapCapDoASS680;
-        // DONVILUOTXAMNHAPCOBAN? donViNgauNhien = getDonViLuotXamNhapCapDoASS690;
-        // DONVILUOTXAMNHAPCOBAN? donViNgauNhien = getDonViLuotXamNhapCapDoASS700;
+        if (
+        (getCauTrucLuotXamNhapNgauNhienSS010?.getDonViLuotXamNhap?.getKiemTraKichBanXuatHienBoss == null || getCauTrucLuotXamNhapNgauNhienSS010?.getDonViLuotXamNhap?.getKiemTraKichBanXuatHienBoss == false) &&
+            (getCauTrucLuotXamNhapNgauNhienSS020?.getDonViLuotXamNhap?.getKiemTraKichBanXuatHienBoss == null || getCauTrucLuotXamNhapNgauNhienSS020?.getDonViLuotXamNhap?.getKiemTraKichBanXuatHienBoss == false) &&
+            (getCauTrucLuotXamNhapNgauNhienSS030?.getDonViLuotXamNhap?.getKiemTraKichBanXuatHienBoss == null || getCauTrucLuotXamNhapNgauNhienSS030?.getDonViLuotXamNhap?.getKiemTraKichBanXuatHienBoss == false) &&
+            (getCauTrucLuotXamNhapNgauNhienSS040?.getDonViLuotXamNhap?.getKiemTraKichBanXuatHienBoss == null || getCauTrucLuotXamNhapNgauNhienSS040?.getDonViLuotXamNhap?.getKiemTraKichBanXuatHienBoss == false) &&
+            (getCauTrucLuotXamNhapNgauNhienSS050?.getDonViLuotXamNhap?.getKiemTraKichBanXuatHienBoss == null || getCauTrucLuotXamNhapNgauNhienSS050?.getDonViLuotXamNhap?.getKiemTraKichBanXuatHienBoss == false)
+            // (getCauTrucLuotXamNhapNgauNhienSS060?.getDonViLuotXamNhap?.getKiemTraKichBanXuatHienBoss == null || getCauTrucLuotXamNhapNgauNhienSS060?.getDonViLuotXamNhap?.getKiemTraKichBanXuatHienBoss == false) &&
+        ) {
+          int soNgauNhien = random.nextInt(10) + 1; // Tạo số từ 1 đến 10
+          if (soNgauNhien % 2 == 0) {
+            donViNgauNhien = getDanhSachDonViLuotXamNhapXuatHienBoss[random.nextInt(getDanhSachDonViLuotXamNhapXuatHienBoss.length)];
+          } else {
+            donViNgauNhien = getDanhSachDonViLuotXamNhap[random.nextInt(getDanhSachDonViLuotXamNhap.length)];
+          }
+        } else {
+          donViNgauNhien = getDanhSachDonViLuotXamNhap[random.nextInt(getDanhSachDonViLuotXamNhap.length)];
 
-        ///
-        /// TODO: XNNNSS00D
-        ///
-        // DONVILUOTXAMNHAPCOBAN? donViNgauNhien = getDonViLuotXamNhapCapDoASS760;
-        // DONVILUOTXAMNHAPCOBAN? donViNgauNhien = getDonViLuotXamNhapCapDoASS770;
-        // DONVILUOTXAMNHAPCOBAN? donViNgauNhien = getDonViLuotXamNhapCapDoASS780; // X Không Hoạt Động
-        // DONVILUOTXAMNHAPCOBAN? donViNgauNhien = getDonViLuotXamNhapCapDoASS790; // X Không Hoạt Động
-        // DONVILUOTXAMNHAPCOBAN? donViNgauNhien = getDonViLuotXamNhapCapDoASS800;
-        // DONVILUOTXAMNHAPCOBAN? donViNgauNhien = getDonViLuotXamNhapCapDoASS810;
-        // DONVILUOTXAMNHAPCOBAN? donViNgauNhien = getDonViLuotXamNhapCapDoASS820;
-        // DONVILUOTXAMNHAPCOBAN? donViNgauNhien = getDonViLuotXamNhapCapDoASS830; // X Không Hoạt Động
-        // DONVILUOTXAMNHAPCOBAN? donViNgauNhien = getDonViLuotXamNhapCapDoASS840; // X Không Hoạt Động
-        // DONVILUOTXAMNHAPCOBAN? donViNgauNhien = getDonViLuotXamNhapCapDoASS850;
-        // DONVILUOTXAMNHAPCOBAN? donViNgauNhien = getDonViLuotXamNhapCapDoASS860;
-        // DONVILUOTXAMNHAPCOBAN? donViNgauNhien = getDonViLuotXamNhapCapDoASS870;
-        // DONVILUOTXAMNHAPCOBAN? donViNgauNhien = getDonViLuotXamNhapCapDoASS880; // X Không Hoạt Động
-        // DONVILUOTXAMNHAPCOBAN? donViNgauNhien = getDonViLuotXamNhapCapDoASS890; // X Không Hoạt Động
-        // DONVILUOTXAMNHAPCOBAN? donViNgauNhien = getDonViLuotXamNhapCapDoASS900;
-        // DONVILUOTXAMNHAPCOBAN? donViNgauNhien = getDonViLuotXamNhapCapDoASS910;
-        // DONVILUOTXAMNHAPCOBAN? donViNgauNhien = getDonViLuotXamNhapCapDoASS920;
-        // DONVILUOTXAMNHAPCOBAN? donViNgauNhien = getDonViLuotXamNhapCapDoASS930; // X Không Hoạt Động
-        // DONVILUOTXAMNHAPCOBAN? donViNgauNhien = getDonViLuotXamNhapCapDoASS940; // X Không Hoạt Động
-        // DONVILUOTXAMNHAPCOBAN? donViNgauNhien = getDonViLuotXamNhapCapDoASS950;
-        // DONVILUOTXAMNHAPCOBAN? donViNgauNhien = getDonViLuotXamNhapCapDoASS960;
-        // DONVILUOTXAMNHAPCOBAN? donViNgauNhien = getDonViLuotXamNhapCapDoASS970;
-        // DONVILUOTXAMNHAPCOBAN? donViNgauNhien = getDonViLuotXamNhapCapDoASS980; // X Không Hoạt Động
-        // DONVILUOTXAMNHAPCOBAN? donViNgauNhien = getDonViLuotXamNhapCapDoASS990; // X Không Hoạt Động
-        // DONVILUOTXAMNHAPCOBAN? donViNgauNhien = getDonViLuotXamNhapCapDoASS1000;
+          ///
+          /// TODO: XNNNSS00C
+          ///
+          // DONVILUOTXAMNHAPCOBAN? donViNgauNhien = getDonViLuotXamNhapCapDoASS510;
+          // DONVILUOTXAMNHAPCOBAN? donViNgauNhien = getDonViLuotXamNhapCapDoASS520;
+          // DONVILUOTXAMNHAPCOBAN? donViNgauNhien = getDonViLuotXamNhapCapDoASS530;
+          // DONVILUOTXAMNHAPCOBAN? donViNgauNhien = getDonViLuotXamNhapCapDoASS540;
+          // DONVILUOTXAMNHAPCOBAN? donViNgauNhien = getDonViLuotXamNhapCapDoASS550;
+          // DONVILUOTXAMNHAPCOBAN? donViNgauNhien = getDonViLuotXamNhapCapDoASS560;
+          // DONVILUOTXAMNHAPCOBAN? donViNgauNhien = getDonViLuotXamNhapCapDoASS570;
+          // DONVILUOTXAMNHAPCOBAN? donViNgauNhien = getDonViLuotXamNhapCapDoASS580;
+          // DONVILUOTXAMNHAPCOBAN? donViNgauNhien = getDonViLuotXamNhapCapDoASS590;
+          // DONVILUOTXAMNHAPCOBAN? donViNgauNhien = getDonViLuotXamNhapCapDoASS600;
+          // DONVILUOTXAMNHAPCOBAN? donViNgauNhien = getDonViLuotXamNhapCapDoASS610;
+          // DONVILUOTXAMNHAPCOBAN? donViNgauNhien = getDonViLuotXamNhapCapDoASS620;
+          // DONVILUOTXAMNHAPCOBAN? donViNgauNhien = getDonViLuotXamNhapCapDoASS630;
+          // DONVILUOTXAMNHAPCOBAN? donViNgauNhien = getDonViLuotXamNhapCapDoASS640;
+          // DONVILUOTXAMNHAPCOBAN? donViNgauNhien = getDonViLuotXamNhapCapDoASS650;
+          // DONVILUOTXAMNHAPCOBAN? donViNgauNhien = getDonViLuotXamNhapCapDoASS660;
+          // DONVILUOTXAMNHAPCOBAN? donViNgauNhien = getDonViLuotXamNhapCapDoASS670;
+          // DONVILUOTXAMNHAPCOBAN? donViNgauNhien = getDonViLuotXamNhapCapDoASS680;
+          // DONVILUOTXAMNHAPCOBAN? donViNgauNhien = getDonViLuotXamNhapCapDoASS690;
+          // DONVILUOTXAMNHAPCOBAN? donViNgauNhien = getDonViLuotXamNhapCapDoASS700;
+
+          ///
+          /// TODO: XNNNSS00D
+          ///
+          // DONVILUOTXAMNHAPCOBAN? donViNgauNhien = getDonViLuotXamNhapCapDoASS760;
+          // DONVILUOTXAMNHAPCOBAN? donViNgauNhien = getDonViLuotXamNhapCapDoASS770;
+          // DONVILUOTXAMNHAPCOBAN? donViNgauNhien = getDonViLuotXamNhapCapDoASS780; // X Không Hoạt Động
+          // DONVILUOTXAMNHAPCOBAN? donViNgauNhien = getDonViLuotXamNhapCapDoASS790; // X Không Hoạt Động
+          // DONVILUOTXAMNHAPCOBAN? donViNgauNhien = getDonViLuotXamNhapCapDoASS800;
+          // DONVILUOTXAMNHAPCOBAN? donViNgauNhien = getDonViLuotXamNhapCapDoASS810;
+          // DONVILUOTXAMNHAPCOBAN? donViNgauNhien = getDonViLuotXamNhapCapDoASS820;
+          // DONVILUOTXAMNHAPCOBAN? donViNgauNhien = getDonViLuotXamNhapCapDoASS830; // X Không Hoạt Động
+          // DONVILUOTXAMNHAPCOBAN? donViNgauNhien = getDonViLuotXamNhapCapDoASS840; // X Không Hoạt Động
+          // DONVILUOTXAMNHAPCOBAN? donViNgauNhien = getDonViLuotXamNhapCapDoASS850;
+          // DONVILUOTXAMNHAPCOBAN? donViNgauNhien = getDonViLuotXamNhapCapDoASS860;
+          // DONVILUOTXAMNHAPCOBAN? donViNgauNhien = getDonViLuotXamNhapCapDoASS870;
+          // DONVILUOTXAMNHAPCOBAN? donViNgauNhien = getDonViLuotXamNhapCapDoASS880; // X Không Hoạt Động
+          // DONVILUOTXAMNHAPCOBAN? donViNgauNhien = getDonViLuotXamNhapCapDoASS890; // X Không Hoạt Động
+          // DONVILUOTXAMNHAPCOBAN? donViNgauNhien = getDonViLuotXamNhapCapDoASS900;
+          // DONVILUOTXAMNHAPCOBAN? donViNgauNhien = getDonViLuotXamNhapCapDoASS910;
+          // DONVILUOTXAMNHAPCOBAN? donViNgauNhien = getDonViLuotXamNhapCapDoASS920;
+          // DONVILUOTXAMNHAPCOBAN? donViNgauNhien = getDonViLuotXamNhapCapDoASS930; // X Không Hoạt Động
+          // DONVILUOTXAMNHAPCOBAN? donViNgauNhien = getDonViLuotXamNhapCapDoASS940; // X Không Hoạt Động
+          // DONVILUOTXAMNHAPCOBAN? donViNgauNhien = getDonViLuotXamNhapCapDoASS950;
+          // DONVILUOTXAMNHAPCOBAN? donViNgauNhien = getDonViLuotXamNhapCapDoASS960;
+          // DONVILUOTXAMNHAPCOBAN? donViNgauNhien = getDonViLuotXamNhapCapDoASS970;
+          // DONVILUOTXAMNHAPCOBAN? donViNgauNhien = getDonViLuotXamNhapCapDoASS980; // X Không Hoạt Động
+          // DONVILUOTXAMNHAPCOBAN? donViNgauNhien = getDonViLuotXamNhapCapDoASS990; // X Không Hoạt Động
+          // DONVILUOTXAMNHAPCOBAN? donViNgauNhien = getDonViLuotXamNhapCapDoASS1000;
+
+        }
 
         await getCauTrucLuotXamNhapNgauNhienSS060?.caiDatDonViLuotXamNhap(value: donViNgauNhien, caiDatUuTien: true);
         await getCauTrucLuotXamNhapNgauNhienSS060?.getDonViLuotXamNhap?.onSetupRoot();
@@ -470,6 +578,9 @@ class QUANLYVANHANHNGANCHANXAMNHAP with CAUTRUCTHUCTHICOBAN, DanhSachQuanLyTrang
           // getDonViLuotXamNhapCapDoASS480,
           // getDonViLuotXamNhapCapDoASS490,
           // getDonViLuotXamNhapCapDoASS500,
+
+          /// TODO: XNNNSS00C
+          /// -----
           getDonViLuotXamNhapCapDoASS510,
           getDonViLuotXamNhapCapDoASS520,
           getDonViLuotXamNhapCapDoASS530,
@@ -497,33 +608,43 @@ class QUANLYVANHANHNGANCHANXAMNHAP with CAUTRUCTHUCTHICOBAN, DanhSachQuanLyTrang
           // getDonViLuotXamNhapCapDoASS730, // [X] Không Hoạt Động
           // getDonViLuotXamNhapCapDoASS740, // [X] Không Hoạt Động
           // getDonViLuotXamNhapCapDoASS750, // [X] Không Hoạt Động
-          getDonViLuotXamNhapCapDoASS760, // [V] Hoạt Động [OPEN]
-          getDonViLuotXamNhapCapDoASS770, // [V] Hoạt Động [OPEN]
-          // getDonViLuotXamNhapCapDoASS780, // [X] Không Hoạt Động
-          // getDonViLuotXamNhapCapDoASS790, // [X] Không Hoạt Động
-          getDonViLuotXamNhapCapDoASS800, // [V] Hoạt Động [OPEN]
+
+
+        ]);
+      }
+
+      if (getDanhSachDonViLuotXamNhapXuatHienBoss.isEmpty == true) {
+        getDanhSachDonViLuotXamNhapXuatHienBoss.addAll([
+          /// -----
+          /// TODO: XNNNSS00D
+          /// -----
+          getDonViLuotXamNhapCapDoASS760, // 1 - // [V] Hoạt Động [OPEN]
+          getDonViLuotXamNhapCapDoASS770, // 2 - // [V] Hoạt Động [OPEN]
+          // getDonViLuotXamNhapCapDoASS780, // 3 - // [X] Không Hoạt Động
+          // getDonViLuotXamNhapCapDoASS790, // 4 - // [X] Không Hoạt Động
+          getDonViLuotXamNhapCapDoASS800, // 5 - // [V] Hoạt Động [OPEN]
           //
-          getDonViLuotXamNhapCapDoASS810, // [V] Hoạt Động [OPEN]
-          getDonViLuotXamNhapCapDoASS820, // [V] Hoạt Động [OPEN]
-          // getDonViLuotXamNhapCapDoASS830, // [X] Không Hoạt Động
-          // getDonViLuotXamNhapCapDoASS840, // [X] Không Hoạt Động
-          getDonViLuotXamNhapCapDoASS850, // [V] Hoạt Động [OPEN]
-          getDonViLuotXamNhapCapDoASS860, // [V] Hoạt Động [OPEN]
-          getDonViLuotXamNhapCapDoASS870, // [V] Hoạt Động [OPEN]
-          // getDonViLuotXamNhapCapDoASS880, // [X] Không Hoạt Động
-          // getDonViLuotXamNhapCapDoASS890, // [X] Không Hoạt Động
-          getDonViLuotXamNhapCapDoASS900, // [V] Hoạt Động [OPEN]
+          getDonViLuotXamNhapCapDoASS810, // 6 - // [V] Hoạt Động [OPEN]
+          getDonViLuotXamNhapCapDoASS820, // 7 - // [V] Hoạt Động [OPEN]
+          // getDonViLuotXamNhapCapDoASS830, // 8 - // [X] Không Hoạt Động
+          // getDonViLuotXamNhapCapDoASS840, // 9 - // [X] Không Hoạt Động
+          getDonViLuotXamNhapCapDoASS850, // 10 - // [V] Hoạt Động [OPEN]
+          getDonViLuotXamNhapCapDoASS860, // 11 - // [V] Hoạt Động [OPEN]
+          getDonViLuotXamNhapCapDoASS870, // 12 - // [V] Hoạt Động [OPEN]
+          // getDonViLuotXamNhapCapDoASS880, // 13 - // [X] Không Hoạt Động
+          // getDonViLuotXamNhapCapDoASS890, // 14 - // [X] Không Hoạt Động
+          getDonViLuotXamNhapCapDoASS900, // 15 - // [V] Hoạt Động [OPEN]
           //
-          getDonViLuotXamNhapCapDoASS910, // [V] Hoạt Động [OPEN]
-          getDonViLuotXamNhapCapDoASS920, // [V] Hoạt Động [OPEN]
-          // getDonViLuotXamNhapCapDoASS930, // [X] Không Hoạt Động
-          // getDonViLuotXamNhapCapDoASS940, // [X] Không Hoạt Động
-          getDonViLuotXamNhapCapDoASS950, // [V] Hoạt Động [OPEN]
-          getDonViLuotXamNhapCapDoASS960,
-          getDonViLuotXamNhapCapDoASS970,
-          // getDonViLuotXamNhapCapDoASS980, // [X] Không Hoạt Động
-          // getDonViLuotXamNhapCapDoASS990, // [X] Không Hoạt Động
-          getDonViLuotXamNhapCapDoASS1000,
+          getDonViLuotXamNhapCapDoASS910, // 16 - // [V] Hoạt Động [OPEN]
+          getDonViLuotXamNhapCapDoASS920, // 17 - // [V] Hoạt Động [OPEN]
+          // getDonViLuotXamNhapCapDoASS930, // 18 - // [X] Không Hoạt Động
+          // getDonViLuotXamNhapCapDoASS940, // 19 - // [X] Không Hoạt Động
+          getDonViLuotXamNhapCapDoASS950, // 20 - // [V] Hoạt Động [OPEN]
+          getDonViLuotXamNhapCapDoASS960, // 21 -
+          getDonViLuotXamNhapCapDoASS970, // 22 -
+          // getDonViLuotXamNhapCapDoASS980, // 23 -  // [X] Không Hoạt Động
+          // getDonViLuotXamNhapCapDoASS990, // 24 -  // [X] Không Hoạt Động
+          getDonViLuotXamNhapCapDoASS1000, // 25 -
         ]);
       }
 
@@ -882,6 +1003,9 @@ class QUANLYVANHANHNGANCHANXAMNHAP with CAUTRUCTHUCTHICOBAN, DanhSachQuanLyTrang
 
   final List<DONVILUOTXAMNHAPCOBAN?> _danhSachDonViLuotXamNhap = [];
   List<DONVILUOTXAMNHAPCOBAN?> get getDanhSachDonViLuotXamNhap => _danhSachDonViLuotXamNhap;
+
+  final List<DONVILUOTXAMNHAPCOBAN?> _danhSachDonViLuotXamNhapXuatHienBoss = [];
+  List<DONVILUOTXAMNHAPCOBAN?> get getDanhSachDonViLuotXamNhapXuatHienBoss => _danhSachDonViLuotXamNhapXuatHienBoss;
 
   /// -----
   /// TODO: Nhiệm Vụ Chiến Đấu Chọn Chỉ Định

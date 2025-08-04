@@ -33,41 +33,41 @@ class BANGDIEUKHIENDOIHINHVKNNSTAGESS00C007XNNNSS00C extends BANGDIEUKHIENDOIHIN
       caiDatTrangThaiPhuongTienSS036(value: TrangThaiPhuongTien(value: PHUONGTIENTRINHSATCLASS30ASS01(1)), caiDatUuTien: true).catchError((e) => null),
       caiDatTrangThaiPhuongTienSS038(value: TrangThaiPhuongTien(value: PHUONGTIENTRINHSATCLASS30ASS01(1)), caiDatUuTien: true).catchError((e) => null),
 
-      /// -----
+            /// -----
       /// TODO: [11] => [15]
       /// -----
-      caiDatTrangThaiPhuongTienSS040(value: TrangThaiPhuongTien(value: PHUONGTIENTRINHSATCLASS30ASS02(1)), caiDatUuTien: true).catchError((e) => null),
-      caiDatTrangThaiPhuongTienSS042(value: TrangThaiPhuongTien(value: PHUONGTIENTRINHSATCLASS30ASS02(1)), caiDatUuTien: true).catchError((e) => null),
-      caiDatTrangThaiPhuongTienSS044(value: TrangThaiPhuongTien(value: PHUONGTIENTRINHSATCLASS30ASS02(1)), caiDatUuTien: true).catchError((e) => null),
-      caiDatTrangThaiPhuongTienSS046(value: TrangThaiPhuongTien(value: PHUONGTIENTRINHSATCLASS30ASS02(1)), caiDatUuTien: true).catchError((e) => null),
-      caiDatTrangThaiPhuongTienSS048(value: TrangThaiPhuongTien(value: PHUONGTIENTRINHSATCLASS30ASS02(1)), caiDatUuTien: true).catchError((e) => null),
+      caiDatTrangThaiPhuongTienSS040(value: TrangThaiPhuongTien(value: PHUONGTIENTRINHSATCLASS30ASS02(2)), caiDatUuTien: true).catchError((e) => null),
+      caiDatTrangThaiPhuongTienSS042(value: TrangThaiPhuongTien(value: PHUONGTIENTRINHSATCLASS30ASS02(2)), caiDatUuTien: true).catchError((e) => null),
+      caiDatTrangThaiPhuongTienSS044(value: TrangThaiPhuongTien(value: PHUONGTIENTRINHSATCLASS30ASS02(2)), caiDatUuTien: true).catchError((e) => null),
+      caiDatTrangThaiPhuongTienSS046(value: TrangThaiPhuongTien(value: PHUONGTIENTRINHSATCLASS30ASS02(2)), caiDatUuTien: true).catchError((e) => null),
+      caiDatTrangThaiPhuongTienSS048(value: TrangThaiPhuongTien(value: PHUONGTIENTRINHSATCLASS30ASS02(2)), caiDatUuTien: true).catchError((e) => null),
 
       /// -----
       /// TODO: [16] => [20]
       /// -----
-      caiDatTrangThaiPhuongTienSS050(value: TrangThaiPhuongTien(value: PHUONGTIENTRINHSATCLASS30ASS02(1)), caiDatUuTien: true).catchError((e) => null),
-      caiDatTrangThaiPhuongTienSS052(value: TrangThaiPhuongTien(value: PHUONGTIENTRINHSATCLASS30ASS02(1)), caiDatUuTien: true).catchError((e) => null),
-      caiDatTrangThaiPhuongTienSS054(value: TrangThaiPhuongTien(value: PHUONGTIENTRINHSATCLASS30ASS02(1)), caiDatUuTien: true).catchError((e) => null),
-      caiDatTrangThaiPhuongTienSS056(value: TrangThaiPhuongTien(value: PHUONGTIENTRINHSATCLASS30ASS02(1)), caiDatUuTien: true).catchError((e) => null),
-      caiDatTrangThaiPhuongTienSS058(value: TrangThaiPhuongTien(value: PHUONGTIENTRINHSATCLASS30ASS02(1)), caiDatUuTien: true).catchError((e) => null),
+      caiDatTrangThaiPhuongTienSS050(value: TrangThaiPhuongTien(value: PHUONGTIENTRINHSATCLASS30ASS02(2)), caiDatUuTien: true).catchError((e) => null),
+      caiDatTrangThaiPhuongTienSS052(value: TrangThaiPhuongTien(value: PHUONGTIENTRINHSATCLASS30ASS02(2)), caiDatUuTien: true).catchError((e) => null),
+      caiDatTrangThaiPhuongTienSS054(value: TrangThaiPhuongTien(value: PHUONGTIENTRINHSATCLASS30ASS02(2)), caiDatUuTien: true).catchError((e) => null),
+      caiDatTrangThaiPhuongTienSS056(value: TrangThaiPhuongTien(value: PHUONGTIENTRINHSATCLASS30ASS02(2)), caiDatUuTien: true).catchError((e) => null),
+      caiDatTrangThaiPhuongTienSS058(value: TrangThaiPhuongTien(value: PHUONGTIENTRINHSATCLASS30ASS02(2)), caiDatUuTien: true).catchError((e) => null),
 
       /// -----
       /// TODO: [21] => [25]
       /// -----
-      caiDatTrangThaiPhuongTienSS060(value: TrangThaiPhuongTien(value: PHUONGTIENTRINHSATCLASS30ASS03(1)), caiDatUuTien: true).catchError((e) => null),
-      caiDatTrangThaiPhuongTienSS062(value: TrangThaiPhuongTien(value: PHUONGTIENTRINHSATCLASS30ASS03(1)), caiDatUuTien: true).catchError((e) => null),
-      caiDatTrangThaiPhuongTienSS064(value: TrangThaiPhuongTien(value: PHUONGTIENTRINHSATCLASS30ASS03(1)), caiDatUuTien: true).catchError((e) => null),
-      caiDatTrangThaiPhuongTienSS066(value: TrangThaiPhuongTien(value: PHUONGTIENTRINHSATCLASS30ASS03(1)), caiDatUuTien: true).catchError((e) => null),
-      caiDatTrangThaiPhuongTienSS068(value: TrangThaiPhuongTien(value: PHUONGTIENTRINHSATCLASS30ASS03(1)), caiDatUuTien: true).catchError((e) => null),
+      caiDatTrangThaiPhuongTienSS060(value: TrangThaiPhuongTien(value: PHUONGTIENTRINHSATCLASS30ASS03(3)), caiDatUuTien: true).catchError((e) => null),
+      caiDatTrangThaiPhuongTienSS062(value: TrangThaiPhuongTien(value: PHUONGTIENTRINHSATCLASS30ASS03(3)), caiDatUuTien: true).catchError((e) => null),
+      caiDatTrangThaiPhuongTienSS064(value: TrangThaiPhuongTien(value: PHUONGTIENTRINHSATCLASS30ASS03(3)), caiDatUuTien: true).catchError((e) => null),
+      caiDatTrangThaiPhuongTienSS066(value: TrangThaiPhuongTien(value: PHUONGTIENTRINHSATCLASS30ASS03(3)), caiDatUuTien: true).catchError((e) => null),
+      caiDatTrangThaiPhuongTienSS068(value: TrangThaiPhuongTien(value: PHUONGTIENTRINHSATCLASS30ASS03(3)), caiDatUuTien: true).catchError((e) => null),
 
       /// -----
       /// TODO: [26] => [30]
       /// -----
-      caiDatTrangThaiPhuongTienSS070(value: TrangThaiPhuongTien(value: PHUONGTIENTRINHSATCLASS30ASS03(1)), caiDatUuTien: true).catchError((e) => null),
-      caiDatTrangThaiPhuongTienSS072(value: TrangThaiPhuongTien(value: PHUONGTIENTRINHSATCLASS30ASS03(1)), caiDatUuTien: true).catchError((e) => null),
-      caiDatTrangThaiPhuongTienSS074(value: TrangThaiPhuongTien(value: PHUONGTIENTRINHSATCLASS30ASS03(1)), caiDatUuTien: true).catchError((e) => null),
-      caiDatTrangThaiPhuongTienSS076(value: TrangThaiPhuongTien(value: PHUONGTIENTRINHSATCLASS30ASS03(1)), caiDatUuTien: true).catchError((e) => null),
-      caiDatTrangThaiPhuongTienSS078(value: TrangThaiPhuongTien(value: PHUONGTIENTRINHSATCLASS30ASS03(1)), caiDatUuTien: true).catchError((e) => null),
+      caiDatTrangThaiPhuongTienSS070(value: TrangThaiPhuongTien(value: PHUONGTIENTRINHSATCLASS30ASS03(3)), caiDatUuTien: true).catchError((e) => null),
+      caiDatTrangThaiPhuongTienSS072(value: TrangThaiPhuongTien(value: PHUONGTIENTRINHSATCLASS30ASS03(3)), caiDatUuTien: true).catchError((e) => null),
+      caiDatTrangThaiPhuongTienSS074(value: TrangThaiPhuongTien(value: PHUONGTIENTRINHSATCLASS30ASS03(3)), caiDatUuTien: true).catchError((e) => null),
+      caiDatTrangThaiPhuongTienSS076(value: TrangThaiPhuongTien(value: PHUONGTIENTRINHSATCLASS30ASS03(3)), caiDatUuTien: true).catchError((e) => null),
+      caiDatTrangThaiPhuongTienSS078(value: TrangThaiPhuongTien(value: PHUONGTIENTRINHSATCLASS30ASS03(3)), caiDatUuTien: true).catchError((e) => null),
     ]);
 
     await caiDatBangDieuKhienGiaiDoanThuocDoiHinh(value: BANGDIEUKHIENGIAIDOANTHUOCDOIHINHVUKHINGAUNHIEN(), caiDatUuTien: true);

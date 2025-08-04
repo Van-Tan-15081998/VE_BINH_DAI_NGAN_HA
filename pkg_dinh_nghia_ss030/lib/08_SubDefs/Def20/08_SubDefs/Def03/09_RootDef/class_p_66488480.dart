@@ -148,15 +148,15 @@ class MoHinhTrangThaiTrongChienDauPhuongTien with CauTrucThucThiCoBan {
   }
 
   /// -----
-  /// TODO: Mã Định Danh Viên Đạn Va Chạm SS001
+  /// TODO: Mã Định Danh Viên Đạn Va Chạm SS010
   /// -----
-  String? _maDinhDanhVienDanVaChamSS001;
-  String? get getMaDinhDanhVienDanVaChamSS001 => _maDinhDanhVienDanVaChamSS001;
-  void onVoidCaiDatMaDinhDanhVienDanVaChamSS001({required String? value, bool? caiDatUuTien}) {
+  String? _maDinhDanhVienDanVaChamSS010;
+  String? get getMaDinhDanhVienDanVaChamSS010 => _maDinhDanhVienDanVaChamSS010;
+  void onVoidCaiDatMaDinhDanhVienDanVaChamSS010({required String? value, bool? caiDatUuTien}) {
     if (caiDatUuTien == true) {
-      _maDinhDanhVienDanVaChamSS001 = value;
+      _maDinhDanhVienDanVaChamSS010 = value;
     } else {
-      _maDinhDanhVienDanVaChamSS001 ??= value;
+      _maDinhDanhVienDanVaChamSS010 ??= value;
     }
 
     ///
@@ -165,15 +165,15 @@ class MoHinhTrangThaiTrongChienDauPhuongTien with CauTrucThucThiCoBan {
 
 
   /// -----
-  /// TODO: Mã Định Danh Viên Đạn Va Chạm SS002
+  /// TODO: Mã Định Danh Viên Đạn Va Chạm SS020
   /// -----
-  String? _maDinhDanhVienDanVaChamSS002;
-  String? get getMaDinhDanhVienDanVaChamSS002 => _maDinhDanhVienDanVaChamSS002;
-  void onVoidCaiDatMaDinhDanhVienDanVaChamSS002({required String? value, bool? caiDatUuTien}) {
+  String? _maDinhDanhVienDanVaChamSS020;
+  String? get getMaDinhDanhVienDanVaChamSS020 => _maDinhDanhVienDanVaChamSS020;
+  void onVoidCaiDatMaDinhDanhVienDanVaChamSS020({required String? value, bool? caiDatUuTien}) {
     if (caiDatUuTien == true) {
-      _maDinhDanhVienDanVaChamSS002 = value;
+      _maDinhDanhVienDanVaChamSS020 = value;
     } else {
-      _maDinhDanhVienDanVaChamSS002 ??= value;
+      _maDinhDanhVienDanVaChamSS020 ??= value;
     }
 
     ///
@@ -181,15 +181,15 @@ class MoHinhTrangThaiTrongChienDauPhuongTien with CauTrucThucThiCoBan {
   }
 
   /// -----
-  /// TODO: Mã Định Danh Viên Đạn Va Chạm SS003
+  /// TODO: Mã Định Danh Viên Đạn Va Chạm SS030
   /// -----
-  String? _maDinhDanhVienDanVaChamSS003;
-  String? get getMaDinhDanhVienDanVaChamSS003 => _maDinhDanhVienDanVaChamSS003;
-  void onVoidCaiDatMaDinhDanhVienDanVaChamSS003({required String? value, bool? caiDatUuTien}) {
+  String? _maDinhDanhVienDanVaChamSS030;
+  String? get getMaDinhDanhVienDanVaChamSS030 => _maDinhDanhVienDanVaChamSS030;
+  void onVoidCaiDatMaDinhDanhVienDanVaChamSS030({required String? value, bool? caiDatUuTien}) {
     if (caiDatUuTien == true) {
-      _maDinhDanhVienDanVaChamSS003 = value;
+      _maDinhDanhVienDanVaChamSS030 = value;
     } else {
-      _maDinhDanhVienDanVaChamSS003 ??= value;
+      _maDinhDanhVienDanVaChamSS030 ??= value;
     }
 
     ///

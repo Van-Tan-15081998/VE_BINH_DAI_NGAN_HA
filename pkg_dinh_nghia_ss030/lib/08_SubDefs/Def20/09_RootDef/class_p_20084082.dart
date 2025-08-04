@@ -676,103 +676,103 @@ class MoHinhPhuongTienTongQuat with CauTrucThucThiCoBan {
   Future<void> onXuLySuKienVaCham({required String maDinhDanhSuKienVaCham}) async {
     return;
 
-    /// -----
-    /// TODO:
-    /// -----
-    TRANGTHAIVIENDANTANCONGCOBAN? vienDanVaCham;
-
-    String? maDinhDanhVienDanVaCham;
-
-    switch (maDinhDanhSuKienVaCham) {
-      case '[SU_KIEN_VA_CHAM_SS001]':
-        {
-          maDinhDanhVienDanVaCham = getTrangThaiTrongChienDau?.getMaDinhDanhVienDanVaChamSS001;
-        }
-        break;
-      case '[SU_KIEN_VA_CHAM_SS002]':
-        {
-          maDinhDanhVienDanVaCham = getTrangThaiTrongChienDau?.getMaDinhDanhVienDanVaChamSS002;
-        }
-        break;
-      case '[SU_KIEN_VA_CHAM_SS003]':
-        {
-          maDinhDanhVienDanVaCham = getTrangThaiTrongChienDau?.getMaDinhDanhVienDanVaChamSS003;
-        }
-        break;
-    }
-
-    if (maDinhDanhVienDanVaCham != null && maDinhDanhVienDanVaCham.isNotEmpty == true) {
-      vienDanVaCham = getSuKienVaChamThuocPhuongTien?.getMapVienDanVaCham[maDinhDanhVienDanVaCham]?.getMoHinh?.getVienDanVaCham;
-
-      final double chieuRongThanPhuongTien = getPhuongThuc?.getPhuongThucBay?.getViTri?.getChieuRongThanNotNull ?? 0;
-      final double chieuCaoThanPhuongTien = getPhuongThuc?.getPhuongThucBay?.getViTri?.getChieuCaoThanNotNull ?? 0;
-
-      final double dxTrongTamPhuongTien = getPhuongThuc?.getPhuongThucBay?.getViTri?.getDxTrongTamNotNull ?? 0;
-      final double dyTrongTamPhuongTien = getPhuongThuc?.getPhuongThucBay?.getViTri?.getDyTrongTamNotNull ?? 0;
-
-      final double dxTrongTamVienDan = vienDanVaCham?.getMoHinh?.getDxTrongTamNotNull ?? 0;
-      final double dyTrongTamVienDan = vienDanVaCham?.getMoHinh?.getDyTrongTamNotNull ?? 0;
-
-      if ((dxTrongTamVienDan < (dxTrongTamPhuongTien + (chieuRongThanPhuongTien / 2))) &&
-          (dxTrongTamVienDan > (dxTrongTamPhuongTien - (chieuRongThanPhuongTien / 2))) &&
-          (dyTrongTamVienDan < (dyTrongTamPhuongTien + (chieuCaoThanPhuongTien / 2))) &&
-          (dyTrongTamVienDan > (dyTrongTamPhuongTien - (chieuCaoThanPhuongTien / 2)))) {
-        if (kDebugMode) {
-          print('[📋]_[LOG]_[XAC_NHAN_SU_KIEN_VA_CHAM_CHINH_XAC 🎯]');
-        }
-      } else {
-        if (kDebugMode) {
-          print('[📋]_[LOG]_[XAC_NHAN_SU_KIEN_VA_CHAM_KHONG_CHINH_XAC 🎯]');
-        }
-        vienDanVaCham = null;
-
-        switch (maDinhDanhSuKienVaCham) {
-          case '[SU_KIEN_VA_CHAM_SS001]':
-            {
-              getTrangThaiTrongChienDau?.onVoidCaiDatMaDinhDanhVienDanVaChamSS001(value: null, caiDatUuTien: true);
-
-              /// Hủy Tham Chiếu
-            }
-            break;
-          case '[SU_KIEN_VA_CHAM_SS002]':
-            {
-              getTrangThaiTrongChienDau?.onVoidCaiDatMaDinhDanhVienDanVaChamSS002(value: null, caiDatUuTien: true);
-
-              /// Hủy Tham Chiếu
-            }
-            break;
-          case '[SU_KIEN_VA_CHAM_SS003]':
-            {
-              getTrangThaiTrongChienDau?.onVoidCaiDatMaDinhDanhVienDanVaChamSS003(value: null, caiDatUuTien: true);
-
-              /// Hủy Tham Chiếu
-            }
-            break;
-        }
-      }
-    }
-
-    if (vienDanVaCham?.getMoHinh?.getTrangThaiTonTai?.onCheckBoolKhoiTaoHoanTat() == true) {
-      /// -----
-      /// TODO: Tọa Độ Va Chạm
-      /// -----
-      double dx = ((vienDanVaCham?.getMoHinh?.getDxTrongTamNotNull ?? 0)) * 1.0;
-      double dy = (vienDanVaCham?.getMoHinh?.getDyTrongTamNotNull ?? 0) * 1.0;
-
-      DiemToaDoHoanHaoCoBan toaDoVaCham = DiemToaDoHoanHaoCoBan(maDinhDanh: '[TOA_DO_VA_CHAM]', dx: dx, dy: dy);
-
-      /// -----
-      /// TODO: Xử Lý Sự Kiện Va Chạm Gây Sát Thương Lên Phương Tiện
-      /// -----
-      await onXuLySatThuongHuongDenPhuongTien(toaDoVaCham: toaDoVaCham);
-
-      await vienDanVaCham?.caiDatMoHinh(value: null);
-
-      return;
-    }
-
-    ///
-    return;
+    // /// -----
+    // /// TODO:
+    // /// -----
+    // TRANGTHAIVIENDANTANCONGCOBAN? vienDanVaCham;
+    //
+    // String? maDinhDanhVienDanVaCham;
+    //
+    // switch (maDinhDanhSuKienVaCham) {
+    //   case '[SU_KIEN_VA_CHAM_SS001]':
+    //     {
+    //       maDinhDanhVienDanVaCham = getTrangThaiTrongChienDau?.getMaDinhDanhVienDanVaChamSS001;
+    //     }
+    //     break;
+    //   case '[SU_KIEN_VA_CHAM_SS002]':
+    //     {
+    //       maDinhDanhVienDanVaCham = getTrangThaiTrongChienDau?.getMaDinhDanhVienDanVaChamSS002;
+    //     }
+    //     break;
+    //   case '[SU_KIEN_VA_CHAM_SS003]':
+    //     {
+    //       maDinhDanhVienDanVaCham = getTrangThaiTrongChienDau?.getMaDinhDanhVienDanVaChamSS003;
+    //     }
+    //     break;
+    // }
+    //
+    // if (maDinhDanhVienDanVaCham != null && maDinhDanhVienDanVaCham.isNotEmpty == true) {
+    //   vienDanVaCham = getSuKienVaChamThuocPhuongTien?.getMapVienDanVaCham[maDinhDanhVienDanVaCham]?.getMoHinh?.getVienDanVaCham;
+    //
+    //   final double chieuRongThanPhuongTien = getPhuongThuc?.getPhuongThucBay?.getViTri?.getChieuRongThanNotNull ?? 0;
+    //   final double chieuCaoThanPhuongTien = getPhuongThuc?.getPhuongThucBay?.getViTri?.getChieuCaoThanNotNull ?? 0;
+    //
+    //   final double dxTrongTamPhuongTien = getPhuongThuc?.getPhuongThucBay?.getViTri?.getDxTrongTamNotNull ?? 0;
+    //   final double dyTrongTamPhuongTien = getPhuongThuc?.getPhuongThucBay?.getViTri?.getDyTrongTamNotNull ?? 0;
+    //
+    //   final double dxTrongTamVienDan = vienDanVaCham?.getMoHinh?.getDxTrongTamNotNull ?? 0;
+    //   final double dyTrongTamVienDan = vienDanVaCham?.getMoHinh?.getDyTrongTamNotNull ?? 0;
+    //
+    //   if ((dxTrongTamVienDan < (dxTrongTamPhuongTien + (chieuRongThanPhuongTien / 2))) &&
+    //       (dxTrongTamVienDan > (dxTrongTamPhuongTien - (chieuRongThanPhuongTien / 2))) &&
+    //       (dyTrongTamVienDan < (dyTrongTamPhuongTien + (chieuCaoThanPhuongTien / 2))) &&
+    //       (dyTrongTamVienDan > (dyTrongTamPhuongTien - (chieuCaoThanPhuongTien / 2)))) {
+    //     if (kDebugMode) {
+    //       print('[📋]_[LOG]_[XAC_NHAN_SU_KIEN_VA_CHAM_CHINH_XAC 🎯]');
+    //     }
+    //   } else {
+    //     if (kDebugMode) {
+    //       print('[📋]_[LOG]_[XAC_NHAN_SU_KIEN_VA_CHAM_KHONG_CHINH_XAC 🎯]');
+    //     }
+    //     vienDanVaCham = null;
+    //
+    //     switch (maDinhDanhSuKienVaCham) {
+    //       case '[SU_KIEN_VA_CHAM_SS001]':
+    //         {
+    //           getTrangThaiTrongChienDau?.onVoidCaiDatMaDinhDanhVienDanVaChamSS001(value: null, caiDatUuTien: true);
+    //
+    //           /// Hủy Tham Chiếu
+    //         }
+    //         break;
+    //       case '[SU_KIEN_VA_CHAM_SS002]':
+    //         {
+    //           getTrangThaiTrongChienDau?.onVoidCaiDatMaDinhDanhVienDanVaChamSS002(value: null, caiDatUuTien: true);
+    //
+    //           /// Hủy Tham Chiếu
+    //         }
+    //         break;
+    //       case '[SU_KIEN_VA_CHAM_SS003]':
+    //         {
+    //           getTrangThaiTrongChienDau?.onVoidCaiDatMaDinhDanhVienDanVaChamSS003(value: null, caiDatUuTien: true);
+    //
+    //           /// Hủy Tham Chiếu
+    //         }
+    //         break;
+    //     }
+    //   }
+    // }
+    //
+    // if (vienDanVaCham?.getMoHinh?.getTrangThaiTonTai?.onCheckBoolKhoiTaoHoanTat() == true) {
+    //   /// -----
+    //   /// TODO: Tọa Độ Va Chạm
+    //   /// -----
+    //   double dx = ((vienDanVaCham?.getMoHinh?.getDxTrongTamNotNull ?? 0)) * 1.0;
+    //   double dy = (vienDanVaCham?.getMoHinh?.getDyTrongTamNotNull ?? 0) * 1.0;
+    //
+    //   DiemToaDoHoanHaoCoBan toaDoVaCham = DiemToaDoHoanHaoCoBan(maDinhDanh: '[TOA_DO_VA_CHAM]', dx: dx, dy: dy);
+    //
+    //   /// -----
+    //   /// TODO: Xử Lý Sự Kiện Va Chạm Gây Sát Thương Lên Phương Tiện
+    //   /// -----
+    //   await onXuLySatThuongHuongDenPhuongTien(toaDoVaCham: toaDoVaCham);
+    //
+    //   await vienDanVaCham?.caiDatMoHinh(value: null);
+    //
+    //   return;
+    // }
+    //
+    // ///
+    // return;
   }
 
   /// -----
@@ -813,17 +813,41 @@ class MoHinhPhuongTienTongQuat with CauTrucThucThiCoBan {
   double duLieuJsonDxTrongTamVienDanVaCham = 0;
   double duLieuJsonDyTrongTamVienDanVaCham = 0;
 
+  double duLieuJsonDxTrongTamVienDanVaChamSS010 = 0;
+  double duLieuJsonDyTrongTamVienDanVaChamSS010 = 0;
+
+  double duLieuJsonDxTrongTamVienDanVaChamSS020 = 0;
+  double duLieuJsonDyTrongTamVienDanVaChamSS020 = 0;
+
+  double duLieuJsonDxTrongTamVienDanVaChamSS030 = 0;
+  double duLieuJsonDyTrongTamVienDanVaChamSS030 = 0;
+
   double duLieuJsonBienTraiPhuongTienVaCham = 0;
   double duLieuJsonBienPhaiPhuongTienVaCham = 0;
   double duLieuJsonBienTrenPhuongTienVaCham = 0;
   double duLieuJsonBienDuoiPhuongTienVaCham = 0;
 
   TRANGTHAIVIENDANTANCONGCOBAN? vienDanVaCham;
+  TRANGTHAIVIENDANTANCONGCOBAN? vienDanVaChamSS010;
+  TRANGTHAIVIENDANTANCONGCOBAN? vienDanVaChamSS020;
+  TRANGTHAIVIENDANTANCONGCOBAN? vienDanVaChamSS030;
 
   double dxTrongTamDiemVaCham = 0;
   double dyTrongTamDiemVaCham = 0;
 
+  double dxTrongTamDiemVaChamSS010 = 0;
+  double dyTrongTamDiemVaChamSS010 = 0;
+
+  double dxTrongTamDiemVaChamSS020 = 0;
+  double dyTrongTamDiemVaChamSS020 = 0;
+
+  double dxTrongTamDiemVaChamSS030 = 0;
+  double dyTrongTamDiemVaChamSS030 = 0;
+
   DiemToaDoHoanHaoCoBan toaDoVaCham = DiemToaDoHoanHaoCoBan(maDinhDanh: '[TOA_DO_VA_CHAM]', dx: 0, dy: 0);
+  DiemToaDoHoanHaoCoBan toaDoVaChamSS010 = DiemToaDoHoanHaoCoBan(maDinhDanh: '[TOA_DO_VA_CHAM]', dx: 0, dy: 0);
+  DiemToaDoHoanHaoCoBan toaDoVaChamSS020 = DiemToaDoHoanHaoCoBan(maDinhDanh: '[TOA_DO_VA_CHAM]', dx: 0, dy: 0);
+  DiemToaDoHoanHaoCoBan toaDoVaChamSS030 = DiemToaDoHoanHaoCoBan(maDinhDanh: '[TOA_DO_VA_CHAM]', dx: 0, dy: 0);
 
   bool kiemTraChamChienDauCo = false;
 
@@ -839,33 +863,28 @@ class MoHinhPhuongTienTongQuat with CauTrucThucThiCoBan {
       /// TODO: Thực Hiện Khi Phương Tiện Đã Vào Trong Màn Hình
       /// -----
       vienDanVaCham = null;
+      vienDanVaChamSS010 = null;
+      vienDanVaChamSS020 = null;
+      vienDanVaChamSS030 = null;
 
+      /// -----
+      /// TODO: Kiểm Tra Viên Đạn Va Chạm
+      /// -----
       if (getTrangThaiTrongChienDau?.getMaDinhDanhVienDanVaCham != null && getTrangThaiTrongChienDau?.getMaDinhDanhVienDanVaCham?.isNotEmpty == true) {
         vienDanVaCham = getSuKienVaChamThuocPhuongTien?.getMapVienDanVaCham[getTrangThaiTrongChienDau?.getMaDinhDanhVienDanVaCham]?.getMoHinh?.getVienDanVaCham;
 
-        if (vienDanVaCham?.getMoHinh?.getDuLieuJsonLamPhang['[TRANG_THAI_TON_TAI]'] == true) {
-          // final double chieuRongThanPhuongTien = getDuLieuJsonLamPhang['[CHIEU_RONG_THAN]'] ?? 0;
-          // final double chieuCaoThanPhuongTien = getDuLieuJsonLamPhang['[CHIEU_CAO_THAN]'] ?? 0;
-          //
-          // final double dxTrongTamPhuongTien = getDuLieuJsonLamPhang['[DX_TRONG_TAM]'] ?? 0;
-          // final double dyTrongTamPhuongTien = getDuLieuJsonLamPhang['[DY_TRONG_TAM]'] ?? 0;
-
-          // final double dxTrongTamVienDan = vienDanVaCham?.getMoHinh?.getDxTrongTamNotNull ?? 0;
-          // final double dyTrongTamVienDan = vienDanVaCham?.getMoHinh?.getDyTrongTamNotNull ?? 0;
+        if (vienDanVaCham != null && vienDanVaCham?.getMoHinh?.getDuLieuJsonLamPhang['[TRANG_THAI_TON_TAI]'] == true) {
           duLieuJsonDxTrongTamVienDanVaCham = vienDanVaCham?.getMoHinh?.getDxTrongTamNotNull ?? 0;
           duLieuJsonDyTrongTamVienDanVaCham = vienDanVaCham?.getMoHinh?.getDyTrongTamNotNull ?? 0;
 
           /// -----
           /// TODO: Đối Chiếu Dx Trọng Tâm, Dy Trọng Tâm
           /// -----
-          // double bienTrai = dxTrongTamPhuongTien - (chieuRongThanPhuongTien / 2);
-          // double bienPhai = dxTrongTamPhuongTien + (chieuRongThanPhuongTien / 2);
-          // double bienTren = dyTrongTamPhuongTien - (chieuCaoThanPhuongTien / 2);
-          // double bienDuoi = dyTrongTamPhuongTien + (chieuCaoThanPhuongTien / 2);
-           duLieuJsonBienTraiPhuongTienVaCham = duLieuJsonBienTraiPhuongTien - 10.0;
-           duLieuJsonBienPhaiPhuongTienVaCham = duLieuJsonBienPhaiPhuongTien + 10.0;
-           duLieuJsonBienTrenPhuongTienVaCham = duLieuJsonBienTrenPhuongTien;
-           duLieuJsonBienDuoiPhuongTienVaCham = duLieuJsonBienDuoiPhuongTien + 20.0;
+
+          duLieuJsonBienTraiPhuongTienVaCham = duLieuJsonBienTraiPhuongTien - 10.0;
+          duLieuJsonBienPhaiPhuongTienVaCham = duLieuJsonBienPhaiPhuongTien + 10.0;
+          duLieuJsonBienTrenPhuongTienVaCham = duLieuJsonBienTrenPhuongTien;
+          duLieuJsonBienDuoiPhuongTienVaCham = duLieuJsonBienDuoiPhuongTien + 20.0;
 
           /// TODO: Bổ Sung Vùng Đệm Phát Hiện Va Chạm
           // bienTrai -= 10.0;
@@ -877,67 +896,344 @@ class MoHinhPhuongTienTongQuat with CauTrucThucThiCoBan {
               duLieuJsonDyTrongTamVienDanVaCham > duLieuJsonBienTrenPhuongTienVaCham &&
               duLieuJsonDyTrongTamVienDanVaCham < duLieuJsonBienDuoiPhuongTienVaCham) {
 
-          // if ((dxTrongTamVienDan < (dxTrongTamPhuongTien + (chieuRongThanPhuongTien / 2))) &&
-          //     (dxTrongTamVienDan > (dxTrongTamPhuongTien - (chieuRongThanPhuongTien / 2))) &&
-          //     (dyTrongTamVienDan < (dyTrongTamPhuongTien + (chieuCaoThanPhuongTien / 2))) &&
-          //     (dyTrongTamVienDan > (dyTrongTamPhuongTien - (chieuCaoThanPhuongTien / 2)))) {
-            if (kDebugMode) {
-              // print('[📋]_[LOG]_[XAC_NHAN_SU_KIEN_VA_CHAM_CHINH_XAC 🎯]');
+            /// -----
+            /// TODO: Nếu Xuất Hiện Va Chạm
+            /// -----
+            // if (vienDanVaCham?.getMoHinh?.getTrangThaiTonTai?.onCheckBoolKhoiTaoHoanTat() == true) {
+            if (vienDanVaCham?.getMoHinh?.getTrangThaiTonTai?.onCheckBoolDangKichHoat() == true) {
+              /// -----
+              /// TODO: Tọa Độ Va Chạm
+              /// -----
+
+              dxTrongTamDiemVaCham = ((vienDanVaCham?.getMoHinh?.getDxTrongTamNotNull ?? 0)) * 1.0;
+              dyTrongTamDiemVaCham = (vienDanVaCham?.getMoHinh?.getDyTrongTamNotNull ?? 0) * 1.0;
+
+              toaDoVaCham.onVoidCaiDatDx(value: dxTrongTamDiemVaCham);
+              toaDoVaCham.onVoidCaiDatDy(value: dyTrongTamDiemVaCham);
+
+              /// -----
+              /// TODO: Xử Lý Sự Kiện Va Chạm Gây Sát Thương Lên Phương Tiện
+              /// -----
+              onXuLySatThuongHuongDenPhuongTien(toaDoVaCham: toaDoVaCham);
+
+              getTrangThaiTrongChienDau?.onVoidCaiDatMaDinhDanhVienDanVaCham(value: null, caiDatUuTien: true);
+
+              /// Hủy Tham Chiếu
+              // vienDanVaCham?.caiDatMoHinh(value: null);
+              vienDanVaCham?.getMoHinh?.onVoidHuyTrangThaiVienDan();
+
+              if (this is MOHINHPHUONGTIENVUKHIBOMKHINHKHICAU) {
+                final double dxTrongTamCapNhat = duLieuJsonDxTrongTamPhuongTien ?? 0;
+                final double dyTrongTamCapNhat = duLieuJsonDyTrongTamPhuongTien ?? 0;
+
+                /// -----
+                /// TODO: Cập Nhật Vị Trí Mới
+                /// -----
+                getPhuongThuc?.getPhuongThucBay?.getViTri?.onVoidCaiDatDxTrongTamCapNhatCacGiaTriBien(value: dxTrongTamCapNhat);
+                getPhuongThuc?.getPhuongThucBay?.getViTri?.onVoidCaiDatDyTrongTamCapNhatCacGiaTriBien(value: dyTrongTamCapNhat - 10.0);
+
+                ///
+                // return;
+              }
+
+              if (this is MOHINHPHUONGTIENVATPHAMTANGCUONG) {
+                final double dxTrongTamCapNhat = duLieuJsonDxTrongTamPhuongTien ?? 0;
+                final double dyTrongTamCapNhat = duLieuJsonDyTrongTamPhuongTien ?? 0;
+
+                /// -----
+                /// TODO: Cập Nhật Vị Trí Mới
+                /// -----
+                getPhuongThuc?.getPhuongThucBay?.getViTri?.onVoidCaiDatDxTrongTamCapNhatCacGiaTriBien(value: dxTrongTamCapNhat);
+                getPhuongThuc?.getPhuongThucBay?.getViTri?.onVoidCaiDatDyTrongTamCapNhatCacGiaTriBien(value: dyTrongTamCapNhat - 5.0);
+
+                ///
+                // return;
+              }
             }
           } else {
-            if (kDebugMode) {
-              // print('[📋]_[LOG]_[XAC_NHAN_SU_KIEN_VA_CHAM_KHONG_CHINH_XAC 🎯]');
-            }
-            vienDanVaCham = null;
+            ///
             getTrangThaiTrongChienDau?.onVoidCaiDatMaDinhDanhVienDanVaCham(value: null, caiDatUuTien: true);
-
-            /// Hủy Tham Chiếu
           }
         } else {
-          vienDanVaCham = null;
           getTrangThaiTrongChienDau?.onVoidCaiDatMaDinhDanhVienDanVaCham(value: null, caiDatUuTien: true);
         }
       }
 
-      // vienDanVaCham = await onXacNhanSuKienVaChamChinhXacVoiVienDan();
+      /// -----
+      /// TODO: Kiểm Tra Viên Đạn Va Chạm SS010
+      /// -----
+      if (getTrangThaiTrongChienDau?.getMaDinhDanhVienDanVaChamSS010 != null && getTrangThaiTrongChienDau?.getMaDinhDanhVienDanVaChamSS010?.isNotEmpty == true) {
+        vienDanVaChamSS010 = getSuKienVaChamThuocPhuongTien?.getMapVienDanVaCham[getTrangThaiTrongChienDau?.getMaDinhDanhVienDanVaChamSS010]?.getMoHinh?.getVienDanVaCham;
+
+        if (vienDanVaChamSS010 != null && vienDanVaChamSS010?.getMoHinh?.getDuLieuJsonLamPhang['[TRANG_THAI_TON_TAI]'] == true) {
+          duLieuJsonDxTrongTamVienDanVaChamSS010 = vienDanVaChamSS010?.getMoHinh?.getDxTrongTamNotNull ?? 0;
+          duLieuJsonDxTrongTamVienDanVaChamSS010 = vienDanVaChamSS010?.getMoHinh?.getDyTrongTamNotNull ?? 0;
+
+          /// -----
+          /// TODO: Đối Chiếu Dx Trọng Tâm, Dy Trọng Tâm
+          /// -----
+
+          duLieuJsonBienTraiPhuongTienVaCham = duLieuJsonBienTraiPhuongTien - 10.0;
+          duLieuJsonBienPhaiPhuongTienVaCham = duLieuJsonBienPhaiPhuongTien + 10.0;
+          duLieuJsonBienTrenPhuongTienVaCham = duLieuJsonBienTrenPhuongTien;
+          duLieuJsonBienDuoiPhuongTienVaCham = duLieuJsonBienDuoiPhuongTien + 20.0;
+
+          /// TODO: Bổ Sung Vùng Đệm Phát Hiện Va Chạm
+          // bienTrai -= 10.0;
+          // bienPhai += 10.0;
+          // bienDuoi += 20.0;
+
+          if (duLieuJsonDxTrongTamVienDanVaChamSS010 > duLieuJsonBienTraiPhuongTienVaCham &&
+              duLieuJsonDxTrongTamVienDanVaChamSS010 < duLieuJsonBienPhaiPhuongTienVaCham &&
+              duLieuJsonDyTrongTamVienDanVaChamSS010 > duLieuJsonBienTrenPhuongTienVaCham &&
+              duLieuJsonDyTrongTamVienDanVaChamSS010 < duLieuJsonBienDuoiPhuongTienVaCham) {
+
+            /// -----
+            /// TODO: Nếu Xuất Hiện Va Chạm SS010
+            /// -----
+            if (vienDanVaChamSS010?.getMoHinh?.getTrangThaiTonTai?.onCheckBoolDangKichHoat() == true) {
+              /// -----
+              /// TODO: Tọa Độ Va Chạm
+              /// -----
+              dxTrongTamDiemVaChamSS010 = ((vienDanVaChamSS010?.getMoHinh?.getDxTrongTamNotNull ?? 0)) * 1.0;
+              dyTrongTamDiemVaChamSS010 = (vienDanVaChamSS010?.getMoHinh?.getDyTrongTamNotNull ?? 0) * 1.0;
+
+              toaDoVaChamSS010.onVoidCaiDatDx(value: dxTrongTamDiemVaChamSS010);
+              toaDoVaChamSS010.onVoidCaiDatDy(value: dyTrongTamDiemVaChamSS010);
+
+              /// -----
+              /// TODO: Xử Lý Sự Kiện Va Chạm Gây Sát Thương Lên Phương Tiện
+              /// -----
+              onXuLySatThuongHuongDenPhuongTien(toaDoVaCham: toaDoVaChamSS010);
+
+              getTrangThaiTrongChienDau?.onVoidCaiDatMaDinhDanhVienDanVaChamSS010(value: null, caiDatUuTien: true);
+
+              /// Hủy Tham Chiếu
+              vienDanVaChamSS010?.getMoHinh?.onVoidHuyTrangThaiVienDan();
+
+              if (this is MOHINHPHUONGTIENVUKHIBOMKHINHKHICAU) {
+                final double dxTrongTamCapNhat = duLieuJsonDxTrongTamPhuongTien ?? 0;
+                final double dyTrongTamCapNhat = duLieuJsonDyTrongTamPhuongTien ?? 0;
+
+                /// -----
+                /// TODO: Cập Nhật Vị Trí Mới
+                /// -----
+                getPhuongThuc?.getPhuongThucBay?.getViTri?.onVoidCaiDatDxTrongTamCapNhatCacGiaTriBien(value: dxTrongTamCapNhat);
+                getPhuongThuc?.getPhuongThucBay?.getViTri?.onVoidCaiDatDyTrongTamCapNhatCacGiaTriBien(value: dyTrongTamCapNhat - 10.0);
+
+                ///
+                // return;
+              }
+
+              if (this is MOHINHPHUONGTIENVATPHAMTANGCUONG) {
+                final double dxTrongTamCapNhat = duLieuJsonDxTrongTamPhuongTien ?? 0;
+                final double dyTrongTamCapNhat = duLieuJsonDyTrongTamPhuongTien ?? 0;
+
+                /// -----
+                /// TODO: Cập Nhật Vị Trí Mới
+                /// -----
+                getPhuongThuc?.getPhuongThucBay?.getViTri?.onVoidCaiDatDxTrongTamCapNhatCacGiaTriBien(value: dxTrongTamCapNhat);
+                getPhuongThuc?.getPhuongThucBay?.getViTri?.onVoidCaiDatDyTrongTamCapNhatCacGiaTriBien(value: dyTrongTamCapNhat - 5.0);
+
+                ///
+                // return;
+              }
+            }
+          } else {
+            ///
+            getTrangThaiTrongChienDau?.onVoidCaiDatMaDinhDanhVienDanVaChamSS010(value: null, caiDatUuTien: true);
+          }
+        } else {
+          getTrangThaiTrongChienDau?.onVoidCaiDatMaDinhDanhVienDanVaChamSS010(value: null, caiDatUuTien: true);
+        }
+      }
 
       /// -----
-      /// TODO: Nếu Xuất Hiện Va Chạm
+      /// TODO: Kiểm Tra Viên Đạn Va Chạm SS020
       /// -----
-      // if (vienDanVaCham?.getMoHinh?.getTrangThaiTonTai?.onCheckBoolKhoiTaoHoanTat() == true) {
-      if (vienDanVaCham?.getMoHinh?.getTrangThaiTonTai?.onCheckBoolDangKichHoat() == true) {
-        /// -----
-        /// TODO: Tọa Độ Va Chạm
-        /// -----
-        // double dx = ((vienDanVaCham?.getMoHinh?.getDxTrongTamNotNull ?? 0)) * 1.0;
-        // double dy = (vienDanVaCham?.getMoHinh?.getDyTrongTamNotNull ?? 0) * 1.0;
-        dxTrongTamDiemVaCham = ((vienDanVaCham?.getMoHinh?.getDxTrongTamNotNull ?? 0)) * 1.0;
-        dyTrongTamDiemVaCham = (vienDanVaCham?.getMoHinh?.getDyTrongTamNotNull ?? 0) * 1.0;
+      if (getTrangThaiTrongChienDau?.getMaDinhDanhVienDanVaChamSS020 != null && getTrangThaiTrongChienDau?.getMaDinhDanhVienDanVaChamSS020?.isNotEmpty == true) {
+        vienDanVaChamSS020 = getSuKienVaChamThuocPhuongTien?.getMapVienDanVaCham[getTrangThaiTrongChienDau?.getMaDinhDanhVienDanVaChamSS020]?.getMoHinh?.getVienDanVaCham;
 
-        // DiemToaDoHoanHaoCoBan toaDoVaCham = DiemToaDoHoanHaoCoBan(maDinhDanh: '[TOA_DO_VA_CHAM]', dx: dx, dy: dy);
-        toaDoVaCham.onVoidCaiDatDx(value: dxTrongTamDiemVaCham);
-        toaDoVaCham.onVoidCaiDatDy(value: dyTrongTamDiemVaCham);
+        if (vienDanVaChamSS020 != null && vienDanVaChamSS020?.getMoHinh?.getDuLieuJsonLamPhang['[TRANG_THAI_TON_TAI]'] == true) {
+          duLieuJsonDxTrongTamVienDanVaChamSS020 = vienDanVaChamSS020?.getMoHinh?.getDxTrongTamNotNull ?? 0;
+          duLieuJsonDxTrongTamVienDanVaChamSS020 = vienDanVaChamSS020?.getMoHinh?.getDyTrongTamNotNull ?? 0;
 
-        /// -----
-        /// TODO: Xử Lý Sự Kiện Va Chạm Gây Sát Thương Lên Phương Tiện
-        /// -----
-        onXuLySatThuongHuongDenPhuongTien(toaDoVaCham: toaDoVaCham);
+          /// -----
+          /// TODO: Đối Chiếu Dx Trọng Tâm, Dy Trọng Tâm
+          /// -----
 
-        getTrangThaiTrongChienDau?.onVoidCaiDatMaDinhDanhVienDanVaCham(value: null, caiDatUuTien: true);
+          duLieuJsonBienTraiPhuongTienVaCham = duLieuJsonBienTraiPhuongTien - 10.0;
+          duLieuJsonBienPhaiPhuongTienVaCham = duLieuJsonBienPhaiPhuongTien + 10.0;
+          duLieuJsonBienTrenPhuongTienVaCham = duLieuJsonBienTrenPhuongTien;
+          duLieuJsonBienDuoiPhuongTienVaCham = duLieuJsonBienDuoiPhuongTien + 20.0;
 
-        /// Hủy Tham Chiếu
-        // vienDanVaCham?.caiDatMoHinh(value: null);
-        vienDanVaCham?.getMoHinh?.onVoidHuyTrangThaiVienDan();
+          /// TODO: Bổ Sung Vùng Đệm Phát Hiện Va Chạm
+          // bienTrai -= 10.0;
+          // bienPhai += 10.0;
+          // bienDuoi += 20.0;
 
+          if (duLieuJsonDxTrongTamVienDanVaChamSS020 > duLieuJsonBienTraiPhuongTienVaCham &&
+              duLieuJsonDxTrongTamVienDanVaChamSS020 < duLieuJsonBienPhaiPhuongTienVaCham &&
+              duLieuJsonDyTrongTamVienDanVaChamSS020 > duLieuJsonBienTrenPhuongTienVaCham &&
+              duLieuJsonDyTrongTamVienDanVaChamSS020 < duLieuJsonBienDuoiPhuongTienVaCham) {
+
+            /// -----
+            /// TODO: Nếu Xuất Hiện Va Chạm SS020
+            /// -----
+            if (vienDanVaChamSS020?.getMoHinh?.getTrangThaiTonTai?.onCheckBoolDangKichHoat() == true) {
+              /// -----
+              /// TODO: Tọa Độ Va Chạm
+              /// -----
+              dxTrongTamDiemVaChamSS020 = (vienDanVaChamSS020?.getMoHinh?.getDxTrongTamNotNull ?? 0) * 1.0;
+              dyTrongTamDiemVaChamSS020 = (vienDanVaChamSS020?.getMoHinh?.getDyTrongTamNotNull ?? 0) * 1.0;
+
+              toaDoVaChamSS020.onVoidCaiDatDx(value: dxTrongTamDiemVaChamSS020);
+              toaDoVaChamSS020.onVoidCaiDatDy(value: dyTrongTamDiemVaChamSS020);
+
+              /// -----
+              /// TODO: Xử Lý Sự Kiện Va Chạm Gây Sát Thương Lên Phương Tiện
+              /// -----
+              onXuLySatThuongHuongDenPhuongTien(toaDoVaCham: toaDoVaChamSS020);
+
+              getTrangThaiTrongChienDau?.onVoidCaiDatMaDinhDanhVienDanVaChamSS020(value: null, caiDatUuTien: true);
+
+              /// Hủy Tham Chiếu
+              vienDanVaChamSS020?.getMoHinh?.onVoidHuyTrangThaiVienDan();
+
+              if (this is MOHINHPHUONGTIENVUKHIBOMKHINHKHICAU) {
+                final double dxTrongTamCapNhat = duLieuJsonDxTrongTamPhuongTien ?? 0;
+                final double dyTrongTamCapNhat = duLieuJsonDyTrongTamPhuongTien ?? 0;
+
+                /// -----
+                /// TODO: Cập Nhật Vị Trí Mới
+                /// -----
+                getPhuongThuc?.getPhuongThucBay?.getViTri?.onVoidCaiDatDxTrongTamCapNhatCacGiaTriBien(value: dxTrongTamCapNhat);
+                getPhuongThuc?.getPhuongThucBay?.getViTri?.onVoidCaiDatDyTrongTamCapNhatCacGiaTriBien(value: dyTrongTamCapNhat - 10.0);
+
+                ///
+                // return;
+              }
+
+              if (this is MOHINHPHUONGTIENVATPHAMTANGCUONG) {
+                final double dxTrongTamCapNhat = duLieuJsonDxTrongTamPhuongTien ?? 0;
+                final double dyTrongTamCapNhat = duLieuJsonDyTrongTamPhuongTien ?? 0;
+
+                /// -----
+                /// TODO: Cập Nhật Vị Trí Mới
+                /// -----
+                getPhuongThuc?.getPhuongThucBay?.getViTri?.onVoidCaiDatDxTrongTamCapNhatCacGiaTriBien(value: dxTrongTamCapNhat);
+                getPhuongThuc?.getPhuongThucBay?.getViTri?.onVoidCaiDatDyTrongTamCapNhatCacGiaTriBien(value: dyTrongTamCapNhat - 5.0);
+
+                ///
+                // return;
+              }
+            }
+          } else {
+            ///
+            getTrangThaiTrongChienDau?.onVoidCaiDatMaDinhDanhVienDanVaChamSS020(value: null, caiDatUuTien: true);
+          }
+        } else {
+          getTrangThaiTrongChienDau?.onVoidCaiDatMaDinhDanhVienDanVaChamSS020(value: null, caiDatUuTien: true);
+        }
+      }
+
+      /// -----
+      /// TODO: Kiểm Tra Viên Đạn Va Chạm SS030
+      /// -----
+      if (getTrangThaiTrongChienDau?.getMaDinhDanhVienDanVaChamSS030 != null && getTrangThaiTrongChienDau?.getMaDinhDanhVienDanVaChamSS030?.isNotEmpty == true) {
+        vienDanVaChamSS030 = getSuKienVaChamThuocPhuongTien?.getMapVienDanVaCham[getTrangThaiTrongChienDau?.getMaDinhDanhVienDanVaChamSS030]?.getMoHinh?.getVienDanVaCham;
+
+        if (vienDanVaChamSS030 != null && vienDanVaChamSS030?.getMoHinh?.getDuLieuJsonLamPhang['[TRANG_THAI_TON_TAI]'] == true) {
+          duLieuJsonDxTrongTamVienDanVaChamSS030 = vienDanVaChamSS030?.getMoHinh?.getDxTrongTamNotNull ?? 0;
+          duLieuJsonDxTrongTamVienDanVaChamSS030 = vienDanVaChamSS030?.getMoHinh?.getDyTrongTamNotNull ?? 0;
+
+          /// -----
+          /// TODO: Đối Chiếu Dx Trọng Tâm, Dy Trọng Tâm
+          /// -----
+
+          duLieuJsonBienTraiPhuongTienVaCham = duLieuJsonBienTraiPhuongTien - 10.0;
+          duLieuJsonBienPhaiPhuongTienVaCham = duLieuJsonBienPhaiPhuongTien + 10.0;
+          duLieuJsonBienTrenPhuongTienVaCham = duLieuJsonBienTrenPhuongTien;
+          duLieuJsonBienDuoiPhuongTienVaCham = duLieuJsonBienDuoiPhuongTien + 20.0;
+
+          /// TODO: Bổ Sung Vùng Đệm Phát Hiện Va Chạm
+          // bienTrai -= 10.0;
+          // bienPhai += 10.0;
+          // bienDuoi += 20.0;
+
+          if (duLieuJsonDxTrongTamVienDanVaChamSS030 > duLieuJsonBienTraiPhuongTienVaCham &&
+              duLieuJsonDxTrongTamVienDanVaChamSS030 < duLieuJsonBienPhaiPhuongTienVaCham &&
+              duLieuJsonDyTrongTamVienDanVaChamSS030 > duLieuJsonBienTrenPhuongTienVaCham &&
+              duLieuJsonDyTrongTamVienDanVaChamSS030 < duLieuJsonBienDuoiPhuongTienVaCham) {
+            /// -----
+            /// TODO: Nếu Xuất Hiện Va Chạm SS030
+            /// -----
+            if (vienDanVaChamSS030?.getMoHinh?.getTrangThaiTonTai?.onCheckBoolDangKichHoat() == true) {
+              /// -----
+              /// TODO: Tọa Độ Va Chạm
+              /// -----
+              dxTrongTamDiemVaChamSS030 = (vienDanVaChamSS030?.getMoHinh?.getDxTrongTamNotNull ?? 0) * 1.0;
+              dyTrongTamDiemVaChamSS030 = (vienDanVaChamSS030?.getMoHinh?.getDyTrongTamNotNull ?? 0) * 1.0;
+
+              toaDoVaChamSS030.onVoidCaiDatDx(value: dxTrongTamDiemVaChamSS030);
+              toaDoVaChamSS030.onVoidCaiDatDy(value: dyTrongTamDiemVaChamSS030);
+
+              /// -----
+              /// TODO: Xử Lý Sự Kiện Va Chạm Gây Sát Thương Lên Phương Tiện
+              /// -----
+              onXuLySatThuongHuongDenPhuongTien(toaDoVaCham: toaDoVaChamSS030);
+
+              getTrangThaiTrongChienDau?.onVoidCaiDatMaDinhDanhVienDanVaChamSS030(value: null, caiDatUuTien: true);
+
+              /// Hủy Tham Chiếu
+              vienDanVaChamSS030?.getMoHinh?.onVoidHuyTrangThaiVienDan();
+
+              if (this is MOHINHPHUONGTIENVUKHIBOMKHINHKHICAU) {
+                final double dxTrongTamCapNhat = duLieuJsonDxTrongTamPhuongTien ?? 0;
+                final double dyTrongTamCapNhat = duLieuJsonDyTrongTamPhuongTien ?? 0;
+
+                /// -----
+                /// TODO: Cập Nhật Vị Trí Mới
+                /// -----
+                getPhuongThuc?.getPhuongThucBay?.getViTri?.onVoidCaiDatDxTrongTamCapNhatCacGiaTriBien(value: dxTrongTamCapNhat);
+                getPhuongThuc?.getPhuongThucBay?.getViTri?.onVoidCaiDatDyTrongTamCapNhatCacGiaTriBien(value: dyTrongTamCapNhat - 10.0);
+
+                ///
+                // return;
+              }
+
+              if (this is MOHINHPHUONGTIENVATPHAMTANGCUONG) {
+                final double dxTrongTamCapNhat = duLieuJsonDxTrongTamPhuongTien ?? 0;
+                final double dyTrongTamCapNhat = duLieuJsonDyTrongTamPhuongTien ?? 0;
+
+                /// -----
+                /// TODO: Cập Nhật Vị Trí Mới
+                /// -----
+                getPhuongThuc?.getPhuongThucBay?.getViTri?.onVoidCaiDatDxTrongTamCapNhatCacGiaTriBien(value: dxTrongTamCapNhat);
+                getPhuongThuc?.getPhuongThucBay?.getViTri?.onVoidCaiDatDyTrongTamCapNhatCacGiaTriBien(value: dyTrongTamCapNhat - 5.0);
+
+                ///
+                // return;
+              }
+            }
+          } else {
+            ///
+            getTrangThaiTrongChienDau?.onVoidCaiDatMaDinhDanhVienDanVaChamSS030(value: null, caiDatUuTien: true);
+          }
+        } else {
+          getTrangThaiTrongChienDau?.onVoidCaiDatMaDinhDanhVienDanVaChamSS030(value: null, caiDatUuTien: true);
+        }
+      }
+
+      if (vienDanVaCham != null || vienDanVaChamSS010 != null && vienDanVaChamSS020 != null && vienDanVaChamSS030 != null) {
         if (this is MOHINHPHUONGTIENVUKHIBOMKHINHKHICAU) {
-          final double dxTrongTamCapNhat = getDuLieuJsonLamPhang['[DX_TRONG_TAM]'] ?? 0;
-          final double dyTrongTamCapNhat = getDuLieuJsonLamPhang['[DY_TRONG_TAM]'] ?? 0;
+          ///
+          return;
+        }
 
-          /// -----
-          /// TODO: Cập Nhật Vị Trí Mới
-          /// -----
-          getPhuongThuc?.getPhuongThucBay?.getViTri?.onVoidCaiDatDxTrongTamCapNhatCacGiaTriBien(value: dxTrongTamCapNhat);
-          getPhuongThuc?.getPhuongThucBay?.getViTri?.onVoidCaiDatDyTrongTamCapNhatCacGiaTriBien(value: dyTrongTamCapNhat - 10.0);
+        if (this is MOHINHPHUONGTIENVATPHAMTANGCUONG) {
+          ///
+          return;
         }
 
         if (this is! MOHINHPHUONGTIENVUKHITHIENTHACH) {
@@ -945,15 +1241,6 @@ class MoHinhPhuongTienTongQuat with CauTrucThucThiCoBan {
         }
       }
     }
-
-    // await Future.wait([
-    //   onXuLySuKienVaCham(maDinhDanhSuKienVaCham: '[SU_KIEN_VA_CHAM_SS001]'),
-    //   onXuLySuKienVaCham(maDinhDanhSuKienVaCham: '[SU_KIEN_VA_CHAM_SS002]'),
-    //   onXuLySuKienVaCham(maDinhDanhSuKienVaCham: '[SU_KIEN_VA_CHAM_SS003]'),
-    // ]);
-    // await onXuLySuKienVaCham(maDinhDanhSuKienVaCham: '[SU_KIEN_VA_CHAM_SS001]');
-    // await onXuLySuKienVaCham(maDinhDanhSuKienVaCham: '[SU_KIEN_VA_CHAM_SS002]');
-    // await onXuLySuKienVaCham(maDinhDanhSuKienVaCham: '[SU_KIEN_VA_CHAM_SS003]');
 
     /// -----
     /// TODO: Check Va Chạm Giữa Phương Tiện Với Chiến Đấu Cơ
@@ -966,8 +1253,6 @@ class MoHinhPhuongTienTongQuat with CauTrucThucThiCoBan {
     chieuRongThanChienDauCo = getViTriChienDauCo?.getChieuRongThan ?? 0;
     chieuCaoThanChienDauCo = getViTriChienDauCo?.getChieuCaoThan ?? 0;
 
-    // final double dxTrongTamPhuongTien = getDuLieuJsonLamPhang['[DX_TRONG_TAM]'] ?? 0;
-    // final double dyTrongTamPhuongTien = getDuLieuJsonLamPhang['[DY_TRONG_TAM]'] ?? 0;
     if (true) {
       if ((duLieuJsonDxTrongTamPhuongTien < (dxTrongTamChienDauCo + (chieuRongThanChienDauCo / 2))) &&
           (duLieuJsonDxTrongTamPhuongTien > (dxTrongTamChienDauCo - (chieuRongThanChienDauCo / 2))) &&
@@ -1038,7 +1323,8 @@ class MoHinhPhuongTienTongQuat with CauTrucThucThiCoBan {
             /// 1: Chạm Điểm Tọa Độ Giai Đoạn SS020
             /// 2: Vị Trí Thuộc Phạm Vi Ngoài Màn Hình
             /// -----
-            if (this is MOHINHPHUONGTIENVUKHI) {
+            // if (this is MOHINHPHUONGTIENVUKHI) {
+            if (this is MoHinhPhuongTienTongQuat) {
               if (duLieuJsonBienPhaiPhuongTien < 0) {
                 getTrangThaiTrongChienDau?.getTrangThaiTonTai?.onVoidCaiDatHuyHoanTat();
                 ///

@@ -58,12 +58,6 @@ class CARDNHIEMVUNGANCHANXAMNHAPSS020 extends THANHPHANNUTBAMTHUOCCAPTHUANKICHHO
         ?.getCauTrucLuotXamNhapNgauNhienSS020 //
         ?.onSetupRoot();
 
-    // await getGlobalStateManagementSystem
-    //     ?.getBangDieuKhienKichBanChienDauTheoGiaiDoan
-    //     ?.getQuanLyVanHanhNganChanXamNhap
-    //     ?.getCauTrucLuotXamNhapNgauNhienSS020 //
-    //     ?.caiDatHinhAnhPhuongTienChiHuyXamNhap(globalStateManagementSystem: getGlobalStateManagementSystem);
-
     await getGlobalStateManagementSystem
         ?.getBangDieuKhienKichBanChienDauTheoGiaiDoan
         ?.getQuanLyVanHanhNganChanXamNhap
