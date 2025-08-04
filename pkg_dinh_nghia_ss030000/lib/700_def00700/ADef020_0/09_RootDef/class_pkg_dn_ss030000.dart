@@ -106,6 +106,10 @@ class QUANLYTRANGTHAIHANGARPHUONGTIEN with CAUTRUCTHUCTHICOBAN {
         onVoidCaiDatMONSTERTTTSCLASSSS00ASS090SS010(value: MONSTERTTTSCLASSSS00ASS090SS010(), caiDatUuTien: true).catchError((e) => null),
         onVoidCaiDatMONSTERTTTSCLASSSS00ASS090SS020(value: MONSTERTTTSCLASSSS00ASS090SS020(), caiDatUuTien: true).catchError((e) => null),
         onVoidCaiDatMONSTERTTTSCLASSSS00ASS090SS030(value: MONSTERTTTSCLASSSS00ASS090SS030(), caiDatUuTien: true).catchError((e) => null),
+        onVoidCaiDatMONSTERTTTSCLASSSS00ASS090SS040(value: MONSTERTTTSCLASSSS00ASS090SS040(), caiDatUuTien: true).catchError((e) => null),
+        onVoidCaiDatMONSTERTTTSCLASSSS00ASS090SS050(value: MONSTERTTTSCLASSSS00ASS090SS050(), caiDatUuTien: true).catchError((e) => null),
+        onVoidCaiDatMONSTERTTTSCLASSSS00ASS090SS060(value: MONSTERTTTSCLASSSS00ASS090SS060(), caiDatUuTien: true).catchError((e) => null),
+
         onVoidCaiDatMONSTERTTTSCLASSSS00ASS100SS010(value: MONSTERTTTSCLASSSS00ASS100SS010(), caiDatUuTien: true).catchError((e) => null),
         onVoidCaiDatMONSTERTTTSCLASSSS00ASS100SS020(value: MONSTERTTTSCLASSSS00ASS100SS020(), caiDatUuTien: true).catchError((e) => null),
         onVoidCaiDatMONSTERTTTSCLASSSS00ASS100SS030(value: MONSTERTTTSCLASSSS00ASS100SS030(), caiDatUuTien: true).catchError((e) => null),
@@ -441,6 +445,10 @@ class QUANLYTRANGTHAIHANGARPHUONGTIEN with CAUTRUCTHUCTHICOBAN {
         getMONSTERTTTSCLASSSS00ASS090SS010?.onSetupRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onSetupRootForSubCom'),
         getMONSTERTTTSCLASSSS00ASS090SS020?.onSetupRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onSetupRootForSubCom'),
         getMONSTERTTTSCLASSSS00ASS090SS030?.onSetupRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onSetupRootForSubCom'),
+        getMONSTERTTTSCLASSSS00ASS090SS040?.onSetupRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onSetupRootForSubCom'),
+        getMONSTERTTTSCLASSSS00ASS090SS050?.onSetupRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onSetupRootForSubCom'),
+        getMONSTERTTTSCLASSSS00ASS090SS060?.onSetupRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onSetupRootForSubCom'),
+
         getMONSTERTTTSCLASSSS00ASS100SS010?.onSetupRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onSetupRootForSubCom'),
         getMONSTERTTTSCLASSSS00ASS100SS020?.onSetupRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onSetupRootForSubCom'),
         getMONSTERTTTSCLASSSS00ASS100SS030?.onSetupRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onSetupRootForSubCom'),
@@ -713,6 +721,9 @@ class QUANLYTRANGTHAIHANGARPHUONGTIEN with CAUTRUCTHUCTHICOBAN {
         MONSTERTTTSCLASSSS00ASS090SS010.maDinhDanhPhuongTien: getMONSTERTTTSCLASSSS00ASS090SS010?.getThuocTinhPhuongTien?.getThuocTinhHinhAnh,
         MONSTERTTTSCLASSSS00ASS090SS020.maDinhDanhPhuongTien: getMONSTERTTTSCLASSSS00ASS090SS020?.getThuocTinhPhuongTien?.getThuocTinhHinhAnh,
         MONSTERTTTSCLASSSS00ASS090SS030.maDinhDanhPhuongTien: getMONSTERTTTSCLASSSS00ASS090SS030?.getThuocTinhPhuongTien?.getThuocTinhHinhAnh,
+        MONSTERTTTSCLASSSS00ASS090SS040.maDinhDanhPhuongTien: getMONSTERTTTSCLASSSS00ASS090SS040?.getThuocTinhPhuongTien?.getThuocTinhHinhAnh,
+        MONSTERTTTSCLASSSS00ASS090SS050.maDinhDanhPhuongTien: getMONSTERTTTSCLASSSS00ASS090SS050?.getThuocTinhPhuongTien?.getThuocTinhHinhAnh,
+        MONSTERTTTSCLASSSS00ASS090SS060.maDinhDanhPhuongTien: getMONSTERTTTSCLASSSS00ASS090SS060?.getThuocTinhPhuongTien?.getThuocTinhHinhAnh,
 
         MONSTERTTTSCLASSSS00ASS100SS010.maDinhDanhPhuongTien: getMONSTERTTTSCLASSSS00ASS100SS010?.getThuocTinhPhuongTien?.getThuocTinhHinhAnh,
         MONSTERTTTSCLASSSS00ASS100SS020.maDinhDanhPhuongTien: getMONSTERTTTSCLASSSS00ASS100SS020?.getThuocTinhPhuongTien?.getThuocTinhHinhAnh,
@@ -1048,6 +1059,10 @@ class QUANLYTRANGTHAIHANGARPHUONGTIEN with CAUTRUCTHUCTHICOBAN {
         getMONSTERTTTSCLASSSS00ASS090SS010?.onInitRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onInitRootForSubCom'),
         getMONSTERTTTSCLASSSS00ASS090SS020?.onInitRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onInitRootForSubCom'),
         getMONSTERTTTSCLASSSS00ASS090SS030?.onInitRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onInitRootForSubCom'),
+        getMONSTERTTTSCLASSSS00ASS090SS040?.onInitRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onInitRootForSubCom'),
+        getMONSTERTTTSCLASSSS00ASS090SS050?.onInitRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onInitRootForSubCom'),
+        getMONSTERTTTSCLASSSS00ASS090SS060?.onInitRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onInitRootForSubCom'),
+
         getMONSTERTTTSCLASSSS00ASS100SS010?.onInitRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onInitRootForSubCom'),
         getMONSTERTTTSCLASSSS00ASS100SS020?.onInitRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onInitRootForSubCom'),
         getMONSTERTTTSCLASSSS00ASS100SS030?.onInitRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onInitRootForSubCom'),
@@ -2427,6 +2442,39 @@ class QUANLYTRANGTHAIHANGARPHUONGTIEN with CAUTRUCTHUCTHICOBAN {
       _theMONSTERTTTSCLASSSS00ASS090SS030 = value;
     } else {
       _theMONSTERTTTSCLASSSS00ASS090SS030 ??= value;
+    }
+    return;
+  }
+
+  MONSTERTTTSCLASSSS00ASS090SS040? _theMONSTERTTTSCLASSSS00ASS090SS040;
+  MONSTERTTTSCLASSSS00ASS090SS040? get getMONSTERTTTSCLASSSS00ASS090SS040 => _theMONSTERTTTSCLASSSS00ASS090SS040;
+  Future<void> onVoidCaiDatMONSTERTTTSCLASSSS00ASS090SS040({required MONSTERTTTSCLASSSS00ASS090SS040? value, bool? caiDatUuTien}) async {
+    if (caiDatUuTien == true) {
+      _theMONSTERTTTSCLASSSS00ASS090SS040 = value;
+    } else {
+      _theMONSTERTTTSCLASSSS00ASS090SS040 ??= value;
+    }
+    return;
+  }
+
+  MONSTERTTTSCLASSSS00ASS090SS050? _theMONSTERTTTSCLASSSS00ASS090SS050;
+  MONSTERTTTSCLASSSS00ASS090SS050? get getMONSTERTTTSCLASSSS00ASS090SS050 => _theMONSTERTTTSCLASSSS00ASS090SS050;
+  Future<void> onVoidCaiDatMONSTERTTTSCLASSSS00ASS090SS050({required MONSTERTTTSCLASSSS00ASS090SS050? value, bool? caiDatUuTien}) async {
+    if (caiDatUuTien == true) {
+      _theMONSTERTTTSCLASSSS00ASS090SS050 = value;
+    } else {
+      _theMONSTERTTTSCLASSSS00ASS090SS050 ??= value;
+    }
+    return;
+  }
+
+  MONSTERTTTSCLASSSS00ASS090SS060? _theMONSTERTTTSCLASSSS00ASS090SS060;
+  MONSTERTTTSCLASSSS00ASS090SS060? get getMONSTERTTTSCLASSSS00ASS090SS060 => _theMONSTERTTTSCLASSSS00ASS090SS060;
+  Future<void> onVoidCaiDatMONSTERTTTSCLASSSS00ASS090SS060({required MONSTERTTTSCLASSSS00ASS090SS060? value, bool? caiDatUuTien}) async {
+    if (caiDatUuTien == true) {
+      _theMONSTERTTTSCLASSSS00ASS090SS060 = value;
+    } else {
+      _theMONSTERTTTSCLASSSS00ASS090SS060 ??= value;
     }
     return;
   }

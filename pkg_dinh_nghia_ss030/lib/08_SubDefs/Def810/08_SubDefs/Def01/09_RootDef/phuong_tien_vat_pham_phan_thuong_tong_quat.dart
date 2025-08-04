@@ -4,7 +4,7 @@ import 'package:pkg_dinh_nghia_ss030/pkg_dinh_nghia_ss030_exp.dart';
 /// TODO:
 /// -----
 class MOHINHPHUONGTIENVATPHAMPHANTHUONG extends MoHinhPhuongTienTongQuat {
-  MOHINHPHUONGTIENVATPHAMPHANTHUONG(super.capDo);
+  MOHINHPHUONGTIENVATPHAMPHANTHUONG({super.capDo, super.phuongTienThongSoaiToiCao});
   /// -----
   /// TODO: Init Root
   /// -----

@@ -8,7 +8,7 @@ import 'package:pkg_dinh_nghia_ss030/pkg_dinh_nghia_ss030_exp.dart';
 /// TODO:
 /// -----
 class PHUONGTIENVUKHICHIHUYCLASS30ASS010VKSS020 extends MOHINHPHUONGTIENVUKHI {
-  PHUONGTIENVUKHICHIHUYCLASS30ASS010VKSS020(super.capDo);
+  PHUONGTIENVUKHICHIHUYCLASS30ASS010VKSS020({super.capDo, super.phuongTienThongSoaiToiCao});
 
   ///
   static const String maDinhDanhPhuongTien = '[VUKHIMONSTERTSTCCLASSSS00ASS030SS010SS020]';

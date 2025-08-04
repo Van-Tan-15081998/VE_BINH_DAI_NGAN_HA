@@ -66,6 +66,9 @@ export '600_def00640/ADef080_0/08_SubDefs/Def040_2/09_RootDef/class_pkg_dn_ss030
 export '600_def00640/ADef090_0/08_SubDefs/Def020_2/09_RootDef/class_pkg_dn_ss030000.dart';
 export '600_def00640/ADef090_0/08_SubDefs/Def030_2/09_RootDef/class_pkg_dn_ss030000.dart';
 export '600_def00640/ADef090_0/08_SubDefs/Def040_2/09_RootDef/class_pkg_dn_ss030000.dart';
+export '600_def00640/ADef090_0/08_SubDefs/Def050_2/09_RootDef/class_pkg_dn_ss030000.dart';
+export '600_def00640/ADef090_0/08_SubDefs/Def060_2/09_RootDef/class_pkg_dn_ss030000.dart';
+export '600_def00640/ADef090_0/08_SubDefs/Def070_2/09_RootDef/class_pkg_dn_ss030000.dart';
 
 export '600_def00640/ADef100_0/08_SubDefs/Def020_2/09_RootDef/class_pkg_dn_ss030000.dart';
 export '600_def00640/ADef100_0/08_SubDefs/Def030_2/09_RootDef/class_pkg_dn_ss030000.dart';

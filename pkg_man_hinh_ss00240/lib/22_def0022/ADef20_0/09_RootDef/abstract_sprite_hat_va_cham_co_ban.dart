@@ -98,11 +98,25 @@ abstract class SpriteHatVaChamCoBan extends SpriteAnimationComponent with HasVis
     return;
   }
 
+  // @override
+  // void renderTree(Canvas canvas) {
+  //   // import 'dart:ui';
+  //   if (getKiemTraHienThi == true) {
+  //     super.renderTree(canvas);
+  //   }
+  //
+  //   return;
+  // }
+
   @override
   void renderTree(Canvas canvas) {
     // import 'dart:ui';
-    if (getKiemTraHienThi == true) {
-      super.renderTree(canvas);
+    try {
+      if (getKiemTraHienThi == true && animation != null) {
+        super.renderTree(canvas);
+      }
+    } catch (e) {
+      return;
     }
 
     return;

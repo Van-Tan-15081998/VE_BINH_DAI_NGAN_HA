@@ -9,7 +9,7 @@ import 'package:pkg_dinh_nghia_ss030020/28_def0028/ADef30_0/08_SubDefs/Def20_2/0
 /// TODO:
 /// -----
 class PHUONGTIENCHIHUYCLASS20BSS01 extends MOHINHPHUONGTIENCHIHUY {
-  PHUONGTIENCHIHUYCLASS20BSS01(super.capDo);
+  PHUONGTIENCHIHUYCLASS20BSS01({super.capDo, super.phuongTienThongSoaiToiCao});
   
   ///
   static const String maDinhDanhPhuongTien = '[MONSTERTSTCCLASSSS00ASS070SS010]';

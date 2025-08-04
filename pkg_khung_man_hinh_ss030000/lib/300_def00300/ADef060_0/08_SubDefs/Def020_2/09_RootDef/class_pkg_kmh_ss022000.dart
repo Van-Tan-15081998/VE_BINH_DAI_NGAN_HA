@@ -36,7 +36,7 @@ class KHUNGTICHHOPTHANHTICHCHIENDAUTAINGUYENVANGTRAODOI extends THANHPHANTICHHOP
     return;
   }
 
-  int tongSoLuongTaiNguyenVangTraoDoi = 0;
+  int tongSoLuongTaiNguyenVangTraoDoi = -1;
 
   @override
   void update(double dt) {

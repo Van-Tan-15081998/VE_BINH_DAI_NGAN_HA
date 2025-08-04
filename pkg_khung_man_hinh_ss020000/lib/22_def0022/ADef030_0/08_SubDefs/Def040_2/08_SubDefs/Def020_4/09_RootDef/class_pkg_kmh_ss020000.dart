@@ -1,5 +1,5 @@
 import 'dart:async';
-
+import 'dart:ui';
 import 'package:flame/components.dart';
 import 'package:pkg_dinh_nghia_ss020/pkg_dinh_nghia_ss020_exp.dart';
 import 'package:pkg_dinh_nghia_ss022/pkg_dinh_nghia_ss022_exp.dart';
@@ -203,6 +203,20 @@ class SpriteAnimationHasVisibility extends SpriteAnimationComponent
     super.update(dt);
 
     onVoidCapNhatHoatAnh();
+  }
+
+  @override
+  void renderTree(Canvas canvas) {
+    // import 'dart:ui';
+    try {
+      if (getKiemTraHienThi == true && animation != null) {
+        super.renderTree(canvas);
+      }
+    } catch (e) {
+      return;
+    }
+
+    return;
   }
 
   /// -----

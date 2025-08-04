@@ -17,8 +17,9 @@ import 'package:pkg_man_hinh_ss00226/22_def0022/ADef20_0/09_RootDef/abstract_spr
 /// TODO:
 /// -----
 class MoHinhPhuongTienTongQuat with CauTrucThucThiCoBan {
-  MoHinhPhuongTienTongQuat(int? capDo) {
+  MoHinhPhuongTienTongQuat({int? capDo, bool? phuongTienThongSoaiToiCao}) {
     onCaiDatMaDinhDanhCapDo(value: capDo);
+    onVoidCaiDatKiemTraPhuongTienThongSoaiToiCao(value: phuongTienThongSoaiToiCao);
   }
 
   Stopwatch? stopwatch;
@@ -258,6 +259,22 @@ class MoHinhPhuongTienTongQuat with CauTrucThucThiCoBan {
   /// -----
   /// TODO:
   /// -----
+  bool? _kiemTraPhuongTienThongSoaiToiCao;
+  bool? get getKiemTraPhuongTienThongSoaiToiCao => _kiemTraPhuongTienThongSoaiToiCao;
+  Future<void> onVoidCaiDatKiemTraPhuongTienThongSoaiToiCao({required bool? value, bool? caiDatUuTien}) async {
+    if (caiDatUuTien == true) {
+      _kiemTraPhuongTienThongSoaiToiCao = value;
+    } else {
+      _kiemTraPhuongTienThongSoaiToiCao ??= value;
+    }
+
+    ///
+    return;
+  }
+
+  /// -----
+  /// TODO:
+  /// -----
   SpritePhuongTienCoBan? _spritePhuongTien;
   SpritePhuongTienCoBan? get getSpritePhuongTien => _spritePhuongTien;
   Future<void> onCaiDatSpritePhuongTien({required SpritePhuongTienCoBan? value}) async {
@@ -376,17 +393,17 @@ class MoHinhPhuongTienTongQuat with CauTrucThucThiCoBan {
     /// TODO:
     /// -----
 
-     duLieuJsonChieuRongThanPhuongTien = getDuLieuJsonLamPhang['[CHIEU_RONG_THAN]'] ?? 0;
-     duLieuJsonChieuCaoThanPhuongTien = getDuLieuJsonLamPhang['[CHIEU_CAO_THAN]'] ?? 0;
-     duLieuJsonDxTrongTamPhuongTien = getDuLieuJsonLamPhang['[DX_TRONG_TAM]'] ?? 0;
-     duLieuJsonDyTrongTamPhuongTien = getDuLieuJsonLamPhang['[DY_TRONG_TAM]'] ?? 0;
+    duLieuJsonChieuRongThanPhuongTien = getDuLieuJsonLamPhang['[CHIEU_RONG_THAN]'] ?? 0;
+    duLieuJsonChieuCaoThanPhuongTien = getDuLieuJsonLamPhang['[CHIEU_CAO_THAN]'] ?? 0;
+    duLieuJsonDxTrongTamPhuongTien = getDuLieuJsonLamPhang['[DX_TRONG_TAM]'] ?? 0;
+    duLieuJsonDyTrongTamPhuongTien = getDuLieuJsonLamPhang['[DY_TRONG_TAM]'] ?? 0;
 
     duLieuJsonBienPhaiPhuongTien = (getDuLieuJsonLamPhang['[DX_TRONG_TAM]'] ?? 0) + (getDuLieuJsonLamPhang['[CHIEU_RONG_THAN]'] ?? 0);
-     duLieuJsonBienTraiPhuongTien = (getDuLieuJsonLamPhang['[DX_TRONG_TAM]'] ?? 0) - (getDuLieuJsonLamPhang['[CHIEU_RONG_THAN]'] ?? 0);
-     duLieuJsonBienTrenPhuongTien = (getDuLieuJsonLamPhang['[DY_TRONG_TAM]'] ?? 0) - (getDuLieuJsonLamPhang['[CHIEU_CAO_THAN]'] ?? 0);
-     duLieuJsonBienDuoiPhuongTien = (getDuLieuJsonLamPhang['[DY_TRONG_TAM]'] ?? 0) + (getDuLieuJsonLamPhang['[CHIEU_CAO_THAN]'] ?? 0);
-     duLieuJsonChieuRongManHinhPhiVatLy = getDuLieuJsonLamPhang['[CHIEU_RONG_MAN_HINH_PHI_VAT_LY]'] ?? 0;
-     duLieuJsonChieuCaoManHinhPhiVatLy = getDuLieuJsonLamPhang['[CHIEU_CAO_MAN_HINH_PHI_VAT_LY]'] ?? 0;
+    duLieuJsonBienTraiPhuongTien = (getDuLieuJsonLamPhang['[DX_TRONG_TAM]'] ?? 0) - (getDuLieuJsonLamPhang['[CHIEU_RONG_THAN]'] ?? 0);
+    duLieuJsonBienTrenPhuongTien = (getDuLieuJsonLamPhang['[DY_TRONG_TAM]'] ?? 0) - (getDuLieuJsonLamPhang['[CHIEU_CAO_THAN]'] ?? 0);
+    duLieuJsonBienDuoiPhuongTien = (getDuLieuJsonLamPhang['[DY_TRONG_TAM]'] ?? 0) + (getDuLieuJsonLamPhang['[CHIEU_CAO_THAN]'] ?? 0);
+    duLieuJsonChieuRongManHinhPhiVatLy = getDuLieuJsonLamPhang['[CHIEU_RONG_MAN_HINH_PHI_VAT_LY]'] ?? 0;
+    duLieuJsonChieuCaoManHinhPhiVatLy = getDuLieuJsonLamPhang['[CHIEU_CAO_MAN_HINH_PHI_VAT_LY]'] ?? 0;
 
     if (this is MOHINHPHUONGTIENVUKHIDIEUKHIEN) {
       if (getDuLieuJsonLamPhang['[TRANG_THAI_TON_TAI]'] == false || getDuLieuJsonLamPhang['[TAN_CONG_HIEN_THI]'] == false) {
@@ -895,7 +912,6 @@ class MoHinhPhuongTienTongQuat with CauTrucThucThiCoBan {
               duLieuJsonDxTrongTamVienDanVaCham < duLieuJsonBienPhaiPhuongTienVaCham &&
               duLieuJsonDyTrongTamVienDanVaCham > duLieuJsonBienTrenPhuongTienVaCham &&
               duLieuJsonDyTrongTamVienDanVaCham < duLieuJsonBienDuoiPhuongTienVaCham) {
-
             /// -----
             /// TODO: Nếu Xuất Hiện Va Chạm
             /// -----
@@ -987,7 +1003,6 @@ class MoHinhPhuongTienTongQuat with CauTrucThucThiCoBan {
               duLieuJsonDxTrongTamVienDanVaChamSS010 < duLieuJsonBienPhaiPhuongTienVaCham &&
               duLieuJsonDyTrongTamVienDanVaChamSS010 > duLieuJsonBienTrenPhuongTienVaCham &&
               duLieuJsonDyTrongTamVienDanVaChamSS010 < duLieuJsonBienDuoiPhuongTienVaCham) {
-
             /// -----
             /// TODO: Nếu Xuất Hiện Va Chạm SS010
             /// -----
@@ -1076,7 +1091,6 @@ class MoHinhPhuongTienTongQuat with CauTrucThucThiCoBan {
               duLieuJsonDxTrongTamVienDanVaChamSS020 < duLieuJsonBienPhaiPhuongTienVaCham &&
               duLieuJsonDyTrongTamVienDanVaChamSS020 > duLieuJsonBienTrenPhuongTienVaCham &&
               duLieuJsonDyTrongTamVienDanVaChamSS020 < duLieuJsonBienDuoiPhuongTienVaCham) {
-
             /// -----
             /// TODO: Nếu Xuất Hiện Va Chạm SS020
             /// -----
@@ -1273,14 +1287,9 @@ class MoHinhPhuongTienTongQuat with CauTrucThucThiCoBan {
       // DiemToaDoHoanHaoCoBan toaDoVaCham = DiemToaDoHoanHaoCoBan(maDinhDanh: '[TOA_DO_VA_CHAM]', dx: dxTrongTamPhuongTien, dy: dyTrongTamPhuongTien);
       DiemToaDoHoanHaoCoBan toaDoVaCham = DiemToaDoHoanHaoCoBan(maDinhDanh: '[TOA_DO_VA_CHAM]', dx: duLieuJsonDxTrongTamPhuongTien, dy: duLieuJsonDyTrongTamPhuongTien);
 
-      /// -----
-      /// TODO:
-      /// -----
-      getDieuKhienTinhToanTongQuat?.getTinhToanSatThuongHuongDenChienDauCo?.onVoidSatThuongPhuongTienVuKhi(phuongTien: this, toaDoVaCham: toaDoVaCham);
-
       if (this is MOHINHPHUONGTIENVATPHAMPHANTHUONG) {
-
-        getDichVuThanhTichChienDau?.getThanhTichChienDauTNVSS020 //
+        getDichVuThanhTichChienDau
+            ?.getThanhTichChienDauTNVSS020 //
             ?.getThanhTichChienDauTheoNhiemVu //
             ?.getPhanThuongDatThanhTich //
             ?.getGoiTaiNguyenPhanThuongVang //
@@ -1288,6 +1297,17 @@ class MoHinhPhuongTienTongQuat with CauTrucThucThiCoBan {
             ?.onCaiDatTuDongTangTongSoLuong();
       }
 
+      if (getKiemTraPhuongTienThongSoaiToiCao == true) {
+        /// -----
+        /// TODO:
+        /// -----
+        getDieuKhienTinhToanTongQuat?.getTinhToanSatThuongHuongDenChienDauCo?.onVoidSatThuongPhuongTienVuKhi(phuongTien: this, toaDoVaCham: toaDoVaCham, vaChamPhaHuyChienDauCo: true);
+      } else {
+        /// -----
+        /// TODO:
+        /// -----
+        getDieuKhienTinhToanTongQuat?.getTinhToanSatThuongHuongDenChienDauCo?.onVoidSatThuongPhuongTienVuKhi(phuongTien: this, toaDoVaCham: toaDoVaCham);
+      }
     } else {
       // if (onKiemTraPhuongTienDiChuyenThoatManHinh(
       //   huongBay: getPhuongThuc?.getPhuongThucBay?.getThamSoBay?.getDinhHuongBay,
@@ -1327,21 +1347,25 @@ class MoHinhPhuongTienTongQuat with CauTrucThucThiCoBan {
             if (this is MoHinhPhuongTienTongQuat) {
               if (duLieuJsonBienPhaiPhuongTien < 0) {
                 getTrangThaiTrongChienDau?.getTrangThaiTonTai?.onVoidCaiDatHuyHoanTat();
+
                 ///
                 return;
               }
               if (duLieuJsonBienTraiPhuongTien > duLieuJsonChieuRongManHinhPhiVatLy) {
                 getTrangThaiTrongChienDau?.getTrangThaiTonTai?.onVoidCaiDatHuyHoanTat();
+
                 ///
                 return;
               }
               if (duLieuJsonBienTrenPhuongTien > duLieuJsonChieuCaoManHinhPhiVatLy) {
                 getTrangThaiTrongChienDau?.getTrangThaiTonTai?.onVoidCaiDatHuyHoanTat();
+
                 ///
                 return;
               }
               if (duLieuJsonBienDuoiPhuongTien < 0) {
                 getTrangThaiTrongChienDau?.getTrangThaiTonTai?.onVoidCaiDatHuyHoanTat();
+
                 ///
                 return;
               }
@@ -1349,11 +1373,13 @@ class MoHinhPhuongTienTongQuat with CauTrucThucThiCoBan {
 
             if (this is MOHINHPHUONGTIENVUKHINGAUNHIEN) {
               getTrangThaiTrongChienDau?.getTrangThaiTonTai?.onVoidCaiDatHuyHoanTat();
+
               ///
               return;
             }
             if (this is MOHINHPHUONGTIENVATPHAMTANGCUONG) {
               getTrangThaiTrongChienDau?.getTrangThaiTonTai?.onVoidCaiDatHuyHoanTat();
+
               ///
               return;
             }

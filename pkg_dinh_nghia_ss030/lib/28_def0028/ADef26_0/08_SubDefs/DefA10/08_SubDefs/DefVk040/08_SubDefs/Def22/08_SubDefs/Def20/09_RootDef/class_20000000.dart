@@ -15,7 +15,7 @@ class PHUONGTHUCBAYPHUONGTIENVUKHICHIHUYCLASS10ASS010VKSS040 extends MoHinhPhuon
     /// -----
     /// TODO:
     /// -----
-    await getThamSoBay?.caiDatTocDoBay(value: TocDoBayCoBan(tocDo: 8.000));
+    await getThamSoBay?.caiDatTocDoBay(value: TocDoBayCoBan(tocDo: 10.000));
 
     ///
     await getThamSoBay?.caiDatDinhHuongBay(value: DinhHuongBayCoBan.dinhHuongTheoDoanDuongBayThuocKichBan());

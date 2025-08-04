@@ -120,7 +120,37 @@ class TinhToanSatThuongHuongDenChienDauCo with CauTrucThucThiCoBan, DanhSachQuan
   /// -----
   /// TODO:
   /// -----
-  void onVoidSatThuongPhuongTienVuKhi({required MoHinhPhuongTienTongQuat? phuongTien, required DiemToaDoHoanHaoCoBan? toaDoVaCham}) async {
+  void onVoidSatThuongPhuongTienVuKhi({required MoHinhPhuongTienTongQuat? phuongTien, required DiemToaDoHoanHaoCoBan? toaDoVaCham, bool? vaChamPhaHuyChienDauCo}) async {
+    if (vaChamPhaHuyChienDauCo == true) {
+
+      if (getTrungTamVanHanhThuocTinhChienDauTheoQuyChuan?.getCapDoMauToiDaHienHanh?.getCapDoChuanChinhThuc?.getChiSoTheoCapDo?.getChiSoMauToiDaVanHanh != 0) {
+        await getDichVuMayPhatAmThanh?.getHieuUngAmThanhSuKienVaChamTrongChienDau?.getSuKienVaChamPhaHuy?.getHieuUngAmThanhVaChamCoBanSS01?.onPlay();
+
+        getTrungTamVanHanhThuocTinhChienDauTheoQuyChuan?.getCapDoMauToiDaHienHanh?.getCapDoChuanChinhThuc?.getChiSoTheoCapDo?.onCaiDatChiSoMauToiDaVanHanh(
+          value: 0,
+          caiDatUuTien: true,
+        );
+
+        DiemToaDoHoanHaoCoBan diemToaDoTrungTam = DiemToaDoHoanHaoCoBan(maDinhDanh: '', dx: 0, dy: 0);
+
+        double dx = (phuongTien?.getDuLieuJsonLamPhang['[DX_TRONG_TAM]'] ?? 0) * 1.0;
+        double dy = (phuongTien?.getDuLieuJsonLamPhang['[DY_TRONG_TAM]'] ?? 0) * 1.0;
+
+        diemToaDoTrungTam.onVoidCaiDatDx(value: dx);
+        diemToaDoTrungTam.onVoidCaiDatDy(value: dy);
+
+        /// -----
+        /// TODO:
+        /// -----
+        getSuKienVaChamTrongChienDau?.getSuKienVaChamPhaHuy?.onVoidXuLyVaCham(toaDoTrungTam: diemToaDoTrungTam);
+        getSuKienVaChamTrongChienDau?.getSuKienVaChamPhaHuy?.onVoidXuLySatThuongVaCham(toaDoTrungTam: diemToaDoTrungTam, satThuong: 0);
+
+        return;
+      }
+
+      return;
+    }
+
     if (phuongTien is MOHINHPHUONGTIENVATPHAMPHANTHUONG) {
       phuongTien.getTrangThaiTrongChienDau?.getTrangThaiTonTai?.onVoidCaiDatHuyHoanTat();
       phuongTien.getDuLieuJsonLamPhang['[VAT_PHAM_TON_TAI_SAN_SANG]'] = true;
@@ -128,11 +158,12 @@ class TinhToanSatThuongHuongDenChienDauCo with CauTrucThucThiCoBan, DanhSachQuan
 
       await getDichVuMayPhatAmThanh?.getHieuUngAmThanhSuKienVaChamTrongChienDau?.getSuKienVaChamVatPhamPhanThuong?.getHieuUngAmThanhVaChamCoBanSS01?.onPlay();
     } else {
-      double chiSoMauToiDa = getTrungTamVanHanhThuocTinhChienDauTheoQuyChuan?.getCapDoMauToiDaHienHanh?.getCapDoChuanChinhThuc?.getChiSoTheoCapDo?.getChiSoMauToiDaVanHanh ?? 0;
+      double chiSoMauToiDa = getTrungTamVanHanhThuocTinhChienDauTheoQuyChuan?.getCapDoMauToiDaHienHanh?.getCapDoChuanChinhThuc?.getChiSoTheoCapDo?.getChiSoMauToiDa ?? 0;
+      double chiSoMauToiDaVanHanh = getTrungTamVanHanhThuocTinhChienDauTheoQuyChuan?.getCapDoMauToiDaHienHanh?.getCapDoChuanChinhThuc?.getChiSoTheoCapDo?.getChiSoMauToiDaVanHanh ?? 0;
 
-      if (chiSoMauToiDa - 10 >= 0) {
+      if ((chiSoMauToiDaVanHanh - (chiSoMauToiDa * 10/100)) >= 0) {
         getTrungTamVanHanhThuocTinhChienDauTheoQuyChuan?.getCapDoMauToiDaHienHanh?.getCapDoChuanChinhThuc?.getChiSoTheoCapDo?.onCaiDatChiSoMauToiDaVanHanh(
-          value: chiSoMauToiDa - 10,
+          value: (chiSoMauToiDaVanHanh - (chiSoMauToiDa * 10/100)),
           caiDatUuTien: true,
         );
       } else {

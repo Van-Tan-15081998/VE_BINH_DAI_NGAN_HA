@@ -70,7 +70,7 @@ class KhungHinhTichHopSuKienVaChamCongKich extends Component with HasVisibility 
 
     try {
       await onSetupRoot();
-      // await onAddRoot();
+      await onAddRoot();
     } catch (e) {
       return;
     }
@@ -211,83 +211,83 @@ class KhungHinhTichHopSuKienVaChamCongKich extends Component with HasVisibility 
   /// TODO: onAddRoot
   ///
   Future<void> onAddRoot() async {
-    if (_spriteHatVaChamCongKichSS20 != null && _spriteHatVaChamCongKichSS20?.isMounted == false) {
-      await add(_spriteHatVaChamCongKichSS20!);
-    }
-    if (_spriteHatVaChamCongKichSS22 != null && _spriteHatVaChamCongKichSS22?.isMounted == false) {
-      await add(_spriteHatVaChamCongKichSS22!);
-    }
-    if (_spriteHatVaChamCongKichSS24 != null && _spriteHatVaChamCongKichSS24?.isMounted == false) {
-      await add(_spriteHatVaChamCongKichSS24!);
-    }
-    if (_spriteHatVaChamCongKichSS26 != null && _spriteHatVaChamCongKichSS26?.isMounted == false) {
-      await add(_spriteHatVaChamCongKichSS26!);
-    }
-    if (_spriteHatVaChamCongKichSS28 != null && _spriteHatVaChamCongKichSS28?.isMounted == false) {
-      await add(_spriteHatVaChamCongKichSS28!);
-    }
-    if (_spriteHatVaChamCongKichSS30 != null && _spriteHatVaChamCongKichSS30?.isMounted == false) {
-      await add(_spriteHatVaChamCongKichSS30!);
-    }
-    if (_spriteHatVaChamCongKichSS32 != null && _spriteHatVaChamCongKichSS32?.isMounted == false) {
-      await add(_spriteHatVaChamCongKichSS32!);
-    }
-    if (_spriteHatVaChamCongKichSS34 != null && _spriteHatVaChamCongKichSS34?.isMounted == false) {
-      await add(_spriteHatVaChamCongKichSS34!);
-    }
-    if (_spriteHatVaChamCongKichSS36 != null && _spriteHatVaChamCongKichSS36?.isMounted == false) {
-      await add(_spriteHatVaChamCongKichSS36!);
-    }
-    if (_spriteHatVaChamCongKichSS38 != null && _spriteHatVaChamCongKichSS38?.isMounted == false) {
-      await add(_spriteHatVaChamCongKichSS38!);
-    }
-    if (_spriteHatVaChamCongKichSS40 != null && _spriteHatVaChamCongKichSS40?.isMounted == false) {
-      await add(_spriteHatVaChamCongKichSS40!);
-    }
-    if (_spriteHatVaChamCongKichSS42 != null && _spriteHatVaChamCongKichSS42?.isMounted == false) {
-      await add(_spriteHatVaChamCongKichSS42!);
-    }
-    if (_spriteHatVaChamCongKichSS44 != null && _spriteHatVaChamCongKichSS44?.isMounted == false) {
-      await add(_spriteHatVaChamCongKichSS44!);
-    }
-    if (_spriteHatVaChamCongKichSS46 != null && _spriteHatVaChamCongKichSS46?.isMounted == false) {
-      await add(_spriteHatVaChamCongKichSS46!);
-    }
-    if (_spriteHatVaChamCongKichSS48 != null && _spriteHatVaChamCongKichSS48?.isMounted == false) {
-      await add(_spriteHatVaChamCongKichSS48!);
-    }
-
-    if (_spriteHatVaChamCongKichSS50 != null && _spriteHatVaChamCongKichSS50?.isMounted == false) {
-      await add(_spriteHatVaChamCongKichSS50!);
-    }
-    if (_spriteHatVaChamCongKichSS52 != null && _spriteHatVaChamCongKichSS52?.isMounted == false) {
-      await add(_spriteHatVaChamCongKichSS52!);
-    }
-    if (_spriteHatVaChamCongKichSS54 != null && _spriteHatVaChamCongKichSS54?.isMounted == false) {
-      await add(_spriteHatVaChamCongKichSS54!);
-    }
-    if (_spriteHatVaChamCongKichSS56 != null && _spriteHatVaChamCongKichSS56?.isMounted == false) {
-      await add(_spriteHatVaChamCongKichSS56!);
-    }
-    if (_spriteHatVaChamCongKichSS58 != null && _spriteHatVaChamCongKichSS58?.isMounted == false) {
-      await add(_spriteHatVaChamCongKichSS58!);
-    }
-
-    if (_spriteHatVaChamCongKichSS60 != null && _spriteHatVaChamCongKichSS60?.isMounted == false) {
-      await add(_spriteHatVaChamCongKichSS60!);
-    }
-    if (_spriteHatVaChamCongKichSS62 != null && _spriteHatVaChamCongKichSS62?.isMounted == false) {
-      await add(_spriteHatVaChamCongKichSS62!);
-    }
-    if (_spriteHatVaChamCongKichSS64 != null && _spriteHatVaChamCongKichSS64?.isMounted == false) {
-      await add(_spriteHatVaChamCongKichSS64!);
-    }
-    if (_spriteHatVaChamCongKichSS66 != null && _spriteHatVaChamCongKichSS66?.isMounted == false) {
-      await add(_spriteHatVaChamCongKichSS66!);
-    }
-    if (_spriteHatVaChamCongKichSS68 != null && _spriteHatVaChamCongKichSS68?.isMounted == false) {
-      await add(_spriteHatVaChamCongKichSS68!);
-    }
+    // if (_spriteHatVaChamCongKichSS20 != null && _spriteHatVaChamCongKichSS20?.isMounted == false) {
+    //   await add(_spriteHatVaChamCongKichSS20!);
+    // }
+    // if (_spriteHatVaChamCongKichSS22 != null && _spriteHatVaChamCongKichSS22?.isMounted == false) {
+    //   await add(_spriteHatVaChamCongKichSS22!);
+    // }
+    // if (_spriteHatVaChamCongKichSS24 != null && _spriteHatVaChamCongKichSS24?.isMounted == false) {
+    //   await add(_spriteHatVaChamCongKichSS24!);
+    // }
+    // if (_spriteHatVaChamCongKichSS26 != null && _spriteHatVaChamCongKichSS26?.isMounted == false) {
+    //   await add(_spriteHatVaChamCongKichSS26!);
+    // }
+    // if (_spriteHatVaChamCongKichSS28 != null && _spriteHatVaChamCongKichSS28?.isMounted == false) {
+    //   await add(_spriteHatVaChamCongKichSS28!);
+    // }
+    // if (_spriteHatVaChamCongKichSS30 != null && _spriteHatVaChamCongKichSS30?.isMounted == false) {
+    //   await add(_spriteHatVaChamCongKichSS30!);
+    // }
+    // if (_spriteHatVaChamCongKichSS32 != null && _spriteHatVaChamCongKichSS32?.isMounted == false) {
+    //   await add(_spriteHatVaChamCongKichSS32!);
+    // }
+    // if (_spriteHatVaChamCongKichSS34 != null && _spriteHatVaChamCongKichSS34?.isMounted == false) {
+    //   await add(_spriteHatVaChamCongKichSS34!);
+    // }
+    // if (_spriteHatVaChamCongKichSS36 != null && _spriteHatVaChamCongKichSS36?.isMounted == false) {
+    //   await add(_spriteHatVaChamCongKichSS36!);
+    // }
+    // if (_spriteHatVaChamCongKichSS38 != null && _spriteHatVaChamCongKichSS38?.isMounted == false) {
+    //   await add(_spriteHatVaChamCongKichSS38!);
+    // }
+    // if (_spriteHatVaChamCongKichSS40 != null && _spriteHatVaChamCongKichSS40?.isMounted == false) {
+    //   await add(_spriteHatVaChamCongKichSS40!);
+    // }
+    // if (_spriteHatVaChamCongKichSS42 != null && _spriteHatVaChamCongKichSS42?.isMounted == false) {
+    //   await add(_spriteHatVaChamCongKichSS42!);
+    // }
+    // if (_spriteHatVaChamCongKichSS44 != null && _spriteHatVaChamCongKichSS44?.isMounted == false) {
+    //   await add(_spriteHatVaChamCongKichSS44!);
+    // }
+    // if (_spriteHatVaChamCongKichSS46 != null && _spriteHatVaChamCongKichSS46?.isMounted == false) {
+    //   await add(_spriteHatVaChamCongKichSS46!);
+    // }
+    // if (_spriteHatVaChamCongKichSS48 != null && _spriteHatVaChamCongKichSS48?.isMounted == false) {
+    //   await add(_spriteHatVaChamCongKichSS48!);
+    // }
+    //
+    // if (_spriteHatVaChamCongKichSS50 != null && _spriteHatVaChamCongKichSS50?.isMounted == false) {
+    //   await add(_spriteHatVaChamCongKichSS50!);
+    // }
+    // if (_spriteHatVaChamCongKichSS52 != null && _spriteHatVaChamCongKichSS52?.isMounted == false) {
+    //   await add(_spriteHatVaChamCongKichSS52!);
+    // }
+    // if (_spriteHatVaChamCongKichSS54 != null && _spriteHatVaChamCongKichSS54?.isMounted == false) {
+    //   await add(_spriteHatVaChamCongKichSS54!);
+    // }
+    // if (_spriteHatVaChamCongKichSS56 != null && _spriteHatVaChamCongKichSS56?.isMounted == false) {
+    //   await add(_spriteHatVaChamCongKichSS56!);
+    // }
+    // if (_spriteHatVaChamCongKichSS58 != null && _spriteHatVaChamCongKichSS58?.isMounted == false) {
+    //   await add(_spriteHatVaChamCongKichSS58!);
+    // }
+    //
+    // if (_spriteHatVaChamCongKichSS60 != null && _spriteHatVaChamCongKichSS60?.isMounted == false) {
+    //   await add(_spriteHatVaChamCongKichSS60!);
+    // }
+    // if (_spriteHatVaChamCongKichSS62 != null && _spriteHatVaChamCongKichSS62?.isMounted == false) {
+    //   await add(_spriteHatVaChamCongKichSS62!);
+    // }
+    // if (_spriteHatVaChamCongKichSS64 != null && _spriteHatVaChamCongKichSS64?.isMounted == false) {
+    //   await add(_spriteHatVaChamCongKichSS64!);
+    // }
+    // if (_spriteHatVaChamCongKichSS66 != null && _spriteHatVaChamCongKichSS66?.isMounted == false) {
+    //   await add(_spriteHatVaChamCongKichSS66!);
+    // }
+    // if (_spriteHatVaChamCongKichSS68 != null && _spriteHatVaChamCongKichSS68?.isMounted == false) {
+    //   await add(_spriteHatVaChamCongKichSS68!);
+    // }
 
     ///
     if (_spriteHatSatThuongVaChamCongKichSS20 != null && _spriteHatSatThuongVaChamCongKichSS20?.isMounted == false) {

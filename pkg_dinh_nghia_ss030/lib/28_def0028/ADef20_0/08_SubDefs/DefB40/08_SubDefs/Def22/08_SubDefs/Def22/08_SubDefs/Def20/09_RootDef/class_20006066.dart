@@ -15,7 +15,7 @@ class PHUONGTHUCBAYPHUONGTIENTRINHSATCLASS40BSS02 extends MoHinhPhuongThucBayPhu
     /// -----
     /// TODO:
     /// -----
-    await getThamSoBay?.caiDatTocDoBay(value: TocDoBayCoBan(tocDo: 6.000));
+    await getThamSoBay?.caiDatTocDoBay(value: TocDoBayCoBan(tocDo: 12.000));
 
     ///
     await getThamSoBay?.caiDatDinhHuongBay(value: DinhHuongBayCoBan.dinhHuongTheoDoanDuongBayThuocKichBan());

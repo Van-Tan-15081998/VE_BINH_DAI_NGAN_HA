@@ -1,5 +1,5 @@
 import 'dart:async';
-
+import 'dart:ui';
 import 'package:van_tan_export/van_tan_export.dart';
 import 'package:package_export/package_export.dart';
 
@@ -195,6 +195,20 @@ class SpriteAnimationHasVisibility extends SpriteAnimationComponent with HasVisi
     super.update(dt);
 
     onVoidCapNhatHoatAnh();
+  }
+
+  @override
+  void renderTree(Canvas canvas) {
+    // import 'dart:ui';
+    try {
+      if (getKiemTraHienThi == true && animation != null) {
+        super.renderTree(canvas);
+      }
+    } catch (e) {
+      return;
+    }
+
+    return;
   }
 
   /// -----

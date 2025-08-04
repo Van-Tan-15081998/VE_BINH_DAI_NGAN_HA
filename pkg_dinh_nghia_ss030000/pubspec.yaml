@@ -138,6 +138,15 @@ flutter:
      - lib/600_def00640/ADef090_0/08_SubDefs/Def040_2/02_SpriteStore/Def025_4/
      - lib/600_def00640/ADef090_0/08_SubDefs/Def040_2/02_SpriteStore/Def050_4/
      - lib/600_def00640/ADef090_0/08_SubDefs/Def040_2/02_SpriteStore/Def200_4/
+     - lib/600_def00640/ADef090_0/08_SubDefs/Def050_2/02_SpriteStore/Def025_4/
+     - lib/600_def00640/ADef090_0/08_SubDefs/Def050_2/02_SpriteStore/Def050_4/
+     - lib/600_def00640/ADef090_0/08_SubDefs/Def050_2/02_SpriteStore/Def200_4/
+     - lib/600_def00640/ADef090_0/08_SubDefs/Def060_2/02_SpriteStore/Def025_4/
+     - lib/600_def00640/ADef090_0/08_SubDefs/Def060_2/02_SpriteStore/Def050_4/
+     - lib/600_def00640/ADef090_0/08_SubDefs/Def060_2/02_SpriteStore/Def200_4/
+     - lib/600_def00640/ADef090_0/08_SubDefs/Def070_2/02_SpriteStore/Def025_4/
+     - lib/600_def00640/ADef090_0/08_SubDefs/Def070_2/02_SpriteStore/Def050_4/
+     - lib/600_def00640/ADef090_0/08_SubDefs/Def070_2/02_SpriteStore/Def200_4/
 
      - lib/600_def00640/ADef100_0/08_SubDefs/Def020_2/02_SpriteStore/Def025_4/
      - lib/600_def00640/ADef100_0/08_SubDefs/Def020_2/02_SpriteStore/Def050_4/

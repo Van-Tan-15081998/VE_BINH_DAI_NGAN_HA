@@ -14,7 +14,7 @@ class DONVILUOTXAMNHAPCAPDOASS930 extends DONVILUOTXAMNHAPCOBAN {
 
       await caiDatKichBanChienDau(value: KICHBANCHIENDAUTHEOGIAIDOANSTAGESS00D018XNNNSS00D(), caiDatUuTien: true);
 
-      await caiDatPhuongTienChiHuyXamNhap(value: PHUONGTIENHOVECLASS10ASS02(1));
+      await caiDatPhuongTienChiHuyXamNhap(value: PHUONGTIENHOVECLASS10ASS02(capDo: 1));
       await getPhuongTienChiHuyXamNhap?.onSetupRoot();
       await getPhuongTienChiHuyXamNhap?.onInitRoot();
 

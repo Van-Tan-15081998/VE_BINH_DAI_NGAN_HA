@@ -317,6 +317,9 @@ class QUANLYVANHANHNGANCHANXAMNHAP with CAUTRUCTHUCTHICOBAN, DanhSachQuanLyTrang
 
         }
 
+        /// TEST
+        donViNgauNhien = getDonViLuotXamNhapCapDoASS700;
+
         await getCauTrucLuotXamNhapNgauNhienSS060?.caiDatDonViLuotXamNhap(value: donViNgauNhien, caiDatUuTien: true);
         await getCauTrucLuotXamNhapNgauNhienSS060?.getDonViLuotXamNhap?.onSetupRoot();
         await getCauTrucLuotXamNhapNgauNhienSS060?.getDonViLuotXamNhap?.onInitRoot();
@@ -518,6 +521,27 @@ class QUANLYVANHANHNGANCHANXAMNHAP with CAUTRUCTHUCTHICOBAN, DanhSachQuanLyTrang
         caiDatDonViLuotXamNhapCapDoASS980(value: DONVILUOTXAMNHAPCAPDOASS980()).catchError((e) => null),
         caiDatDonViLuotXamNhapCapDoASS990(value: DONVILUOTXAMNHAPCAPDOASS990()).catchError((e) => null),
         caiDatDonViLuotXamNhapCapDoASS1000(value: DONVILUOTXAMNHAPCAPDOASS1000()).catchError((e) => null),
+
+        caiDatDonViLuotXamNhapCapDoASS1010(value: DONVILUOTXAMNHAPCAPDOASS1010()).catchError((e) => null),
+        caiDatDonViLuotXamNhapCapDoASS1020(value: DONVILUOTXAMNHAPCAPDOASS1020()).catchError((e) => null),
+        caiDatDonViLuotXamNhapCapDoASS1030(value: DONVILUOTXAMNHAPCAPDOASS1030()).catchError((e) => null),
+        caiDatDonViLuotXamNhapCapDoASS1040(value: DONVILUOTXAMNHAPCAPDOASS1040()).catchError((e) => null),
+        caiDatDonViLuotXamNhapCapDoASS1050(value: DONVILUOTXAMNHAPCAPDOASS1050()).catchError((e) => null),
+        caiDatDonViLuotXamNhapCapDoASS1060(value: DONVILUOTXAMNHAPCAPDOASS1060()).catchError((e) => null),
+        caiDatDonViLuotXamNhapCapDoASS1070(value: DONVILUOTXAMNHAPCAPDOASS1070()).catchError((e) => null),
+        caiDatDonViLuotXamNhapCapDoASS1080(value: DONVILUOTXAMNHAPCAPDOASS1080()).catchError((e) => null),
+        caiDatDonViLuotXamNhapCapDoASS1090(value: DONVILUOTXAMNHAPCAPDOASS1090()).catchError((e) => null),
+        caiDatDonViLuotXamNhapCapDoASS1100(value: DONVILUOTXAMNHAPCAPDOASS1100()).catchError((e) => null),
+        caiDatDonViLuotXamNhapCapDoASS1110(value: DONVILUOTXAMNHAPCAPDOASS1110()).catchError((e) => null),
+        caiDatDonViLuotXamNhapCapDoASS1120(value: DONVILUOTXAMNHAPCAPDOASS1120()).catchError((e) => null),
+        caiDatDonViLuotXamNhapCapDoASS1130(value: DONVILUOTXAMNHAPCAPDOASS1130()).catchError((e) => null),
+        caiDatDonViLuotXamNhapCapDoASS1140(value: DONVILUOTXAMNHAPCAPDOASS1140()).catchError((e) => null),
+        caiDatDonViLuotXamNhapCapDoASS1150(value: DONVILUOTXAMNHAPCAPDOASS1150()).catchError((e) => null),
+        caiDatDonViLuotXamNhapCapDoASS1160(value: DONVILUOTXAMNHAPCAPDOASS1160()).catchError((e) => null),
+        caiDatDonViLuotXamNhapCapDoASS1170(value: DONVILUOTXAMNHAPCAPDOASS1170()).catchError((e) => null),
+        caiDatDonViLuotXamNhapCapDoASS1180(value: DONVILUOTXAMNHAPCAPDOASS1180()).catchError((e) => null),
+        caiDatDonViLuotXamNhapCapDoASS1190(value: DONVILUOTXAMNHAPCAPDOASS1190()).catchError((e) => null),
+        caiDatDonViLuotXamNhapCapDoASS1200(value: DONVILUOTXAMNHAPCAPDOASS1200()).catchError((e) => null),
       ]);
 
       await getNhiemVuChienDauChonChiDinh?.onCaiDatMoHinh(value: getNhiemVuChienDauNganChanXamNhap);
@@ -609,7 +633,26 @@ class QUANLYVANHANHNGANCHANXAMNHAP with CAUTRUCTHUCTHICOBAN, DanhSachQuanLyTrang
           // getDonViLuotXamNhapCapDoASS740, // [X] Không Hoạt Động
           // getDonViLuotXamNhapCapDoASS750, // [X] Không Hoạt Động
 
-
+          getDonViLuotXamNhapCapDoASS1010,
+          getDonViLuotXamNhapCapDoASS1020,
+          getDonViLuotXamNhapCapDoASS1030,
+          getDonViLuotXamNhapCapDoASS1040,
+          getDonViLuotXamNhapCapDoASS1050,
+          getDonViLuotXamNhapCapDoASS1060,
+          getDonViLuotXamNhapCapDoASS1070,
+          getDonViLuotXamNhapCapDoASS1080,
+          getDonViLuotXamNhapCapDoASS1090,
+          getDonViLuotXamNhapCapDoASS1100,
+          getDonViLuotXamNhapCapDoASS1110,
+          getDonViLuotXamNhapCapDoASS1120,
+          getDonViLuotXamNhapCapDoASS1130,
+          getDonViLuotXamNhapCapDoASS1140,
+          getDonViLuotXamNhapCapDoASS1150,
+          getDonViLuotXamNhapCapDoASS1160,
+          getDonViLuotXamNhapCapDoASS1170,
+          getDonViLuotXamNhapCapDoASS1180,
+          getDonViLuotXamNhapCapDoASS1190,
+          getDonViLuotXamNhapCapDoASS1200,
         ]);
       }
 
@@ -835,6 +878,28 @@ class QUANLYVANHANHNGANCHANXAMNHAP with CAUTRUCTHUCTHICOBAN, DanhSachQuanLyTrang
         getDonViLuotXamNhapCapDoASS980?.onSetupRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
         getDonViLuotXamNhapCapDoASS990?.onSetupRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
         getDonViLuotXamNhapCapDoASS1000?.onSetupRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+
+        ///
+        getDonViLuotXamNhapCapDoASS1010?.onSetupRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+        getDonViLuotXamNhapCapDoASS1020?.onSetupRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+        getDonViLuotXamNhapCapDoASS1030?.onSetupRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+        getDonViLuotXamNhapCapDoASS1040?.onSetupRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+        getDonViLuotXamNhapCapDoASS1050?.onSetupRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+        getDonViLuotXamNhapCapDoASS1060?.onSetupRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+        getDonViLuotXamNhapCapDoASS1070?.onSetupRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+        getDonViLuotXamNhapCapDoASS1080?.onSetupRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+        getDonViLuotXamNhapCapDoASS1090?.onSetupRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+        getDonViLuotXamNhapCapDoASS1100?.onSetupRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+        getDonViLuotXamNhapCapDoASS1110?.onSetupRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+        getDonViLuotXamNhapCapDoASS1120?.onSetupRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+        getDonViLuotXamNhapCapDoASS1130?.onSetupRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+        getDonViLuotXamNhapCapDoASS1140?.onSetupRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+        getDonViLuotXamNhapCapDoASS1150?.onSetupRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+        getDonViLuotXamNhapCapDoASS1160?.onSetupRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+        getDonViLuotXamNhapCapDoASS1170?.onSetupRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+        getDonViLuotXamNhapCapDoASS1180?.onSetupRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+        getDonViLuotXamNhapCapDoASS1190?.onSetupRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+        getDonViLuotXamNhapCapDoASS1200?.onSetupRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
       ]);
     } catch (e) {
       await onReportRootIssue(nameFunction: 'Ss');
@@ -975,6 +1040,28 @@ class QUANLYVANHANHNGANCHANXAMNHAP with CAUTRUCTHUCTHICOBAN, DanhSachQuanLyTrang
         getDonViLuotXamNhapCapDoASS980?.onInitRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
         getDonViLuotXamNhapCapDoASS990?.onInitRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
         getDonViLuotXamNhapCapDoASS1000?.onInitRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+
+        ///
+        getDonViLuotXamNhapCapDoASS1010?.onInitRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+        getDonViLuotXamNhapCapDoASS1020?.onInitRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+        getDonViLuotXamNhapCapDoASS1030?.onInitRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+        getDonViLuotXamNhapCapDoASS1040?.onInitRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+        getDonViLuotXamNhapCapDoASS1050?.onInitRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+        getDonViLuotXamNhapCapDoASS1060?.onInitRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+        getDonViLuotXamNhapCapDoASS1070?.onInitRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+        getDonViLuotXamNhapCapDoASS1080?.onInitRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+        getDonViLuotXamNhapCapDoASS1090?.onInitRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+        getDonViLuotXamNhapCapDoASS1100?.onInitRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+        getDonViLuotXamNhapCapDoASS1110?.onInitRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+        getDonViLuotXamNhapCapDoASS1120?.onInitRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+        getDonViLuotXamNhapCapDoASS1130?.onInitRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+        getDonViLuotXamNhapCapDoASS1140?.onInitRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+        getDonViLuotXamNhapCapDoASS1150?.onInitRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+        getDonViLuotXamNhapCapDoASS1160?.onInitRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+        getDonViLuotXamNhapCapDoASS1170?.onInitRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+        getDonViLuotXamNhapCapDoASS1180?.onInitRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+        getDonViLuotXamNhapCapDoASS1190?.onInitRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+        getDonViLuotXamNhapCapDoASS1200?.onInitRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
       ]);
     } catch (e) {
       await onReportRootIssue(nameFunction: 'Ii');
@@ -2628,6 +2715,306 @@ class QUANLYVANHANHNGANCHANXAMNHAP with CAUTRUCTHUCTHICOBAN, DanhSachQuanLyTrang
       _donViLuotXamNhapCapDoASS1000 = value;
     } else {
       _donViLuotXamNhapCapDoASS1000 ??= value;
+    }
+
+    return;
+  }
+
+  /// -----
+  /// TODO:
+  /// -----
+  DONVILUOTXAMNHAPCAPDOASS1010? _donViLuotXamNhapCapDoASS1010;
+  DONVILUOTXAMNHAPCAPDOASS1010? get getDonViLuotXamNhapCapDoASS1010 => _donViLuotXamNhapCapDoASS1010;
+  Future<void> caiDatDonViLuotXamNhapCapDoASS1010({required DONVILUOTXAMNHAPCAPDOASS1010? value, bool? caiDatUuTien}) async {
+    if (caiDatUuTien == true) {
+      _donViLuotXamNhapCapDoASS1010 = value;
+    } else {
+      _donViLuotXamNhapCapDoASS1010 ??= value;
+    }
+
+    return;
+  }
+
+  /// -----
+  /// TODO:
+  /// -----
+  DONVILUOTXAMNHAPCAPDOASS1020? _donViLuotXamNhapCapDoASS1020;
+  DONVILUOTXAMNHAPCAPDOASS1020? get getDonViLuotXamNhapCapDoASS1020 => _donViLuotXamNhapCapDoASS1020;
+  Future<void> caiDatDonViLuotXamNhapCapDoASS1020({required DONVILUOTXAMNHAPCAPDOASS1020? value, bool? caiDatUuTien}) async {
+    if (caiDatUuTien == true) {
+      _donViLuotXamNhapCapDoASS1020 = value;
+    } else {
+      _donViLuotXamNhapCapDoASS1020 ??= value;
+    }
+
+    return;
+  }
+
+  /// -----
+  /// TODO:
+  /// -----
+  DONVILUOTXAMNHAPCAPDOASS1030? _donViLuotXamNhapCapDoASS1030;
+  DONVILUOTXAMNHAPCAPDOASS1030? get getDonViLuotXamNhapCapDoASS1030 => _donViLuotXamNhapCapDoASS1030;
+  Future<void> caiDatDonViLuotXamNhapCapDoASS1030({required DONVILUOTXAMNHAPCAPDOASS1030? value, bool? caiDatUuTien}) async {
+    if (caiDatUuTien == true) {
+      _donViLuotXamNhapCapDoASS1030 = value;
+    } else {
+      _donViLuotXamNhapCapDoASS1030 ??= value;
+    }
+
+    return;
+  }
+
+  /// -----
+  /// TODO:
+  /// -----
+  DONVILUOTXAMNHAPCAPDOASS1040? _donViLuotXamNhapCapDoASS1040;
+  DONVILUOTXAMNHAPCAPDOASS1040? get getDonViLuotXamNhapCapDoASS1040 => _donViLuotXamNhapCapDoASS1040;
+  Future<void> caiDatDonViLuotXamNhapCapDoASS1040({required DONVILUOTXAMNHAPCAPDOASS1040? value, bool? caiDatUuTien}) async {
+    if (caiDatUuTien == true) {
+      _donViLuotXamNhapCapDoASS1040 = value;
+    } else {
+      _donViLuotXamNhapCapDoASS1040 ??= value;
+    }
+
+    return;
+  }
+
+  /// -----
+  /// TODO:
+  /// -----
+  DONVILUOTXAMNHAPCAPDOASS1050? _donViLuotXamNhapCapDoASS1050;
+  DONVILUOTXAMNHAPCAPDOASS1050? get getDonViLuotXamNhapCapDoASS1050 => _donViLuotXamNhapCapDoASS1050;
+  Future<void> caiDatDonViLuotXamNhapCapDoASS1050({required DONVILUOTXAMNHAPCAPDOASS1050? value, bool? caiDatUuTien}) async {
+    if (caiDatUuTien == true) {
+      _donViLuotXamNhapCapDoASS1050 = value;
+    } else {
+      _donViLuotXamNhapCapDoASS1050 ??= value;
+    }
+
+    return;
+  }
+
+  /// -----
+  /// TODO:
+  /// -----
+  DONVILUOTXAMNHAPCAPDOASS1060? _donViLuotXamNhapCapDoASS1060;
+  DONVILUOTXAMNHAPCAPDOASS1060? get getDonViLuotXamNhapCapDoASS1060 => _donViLuotXamNhapCapDoASS1060;
+  Future<void> caiDatDonViLuotXamNhapCapDoASS1060({required DONVILUOTXAMNHAPCAPDOASS1060? value, bool? caiDatUuTien}) async {
+    if (caiDatUuTien == true) {
+      _donViLuotXamNhapCapDoASS1060 = value;
+    } else {
+      _donViLuotXamNhapCapDoASS1060 ??= value;
+    }
+
+    return;
+  }
+
+  /// -----
+  /// TODO:
+  /// -----
+  DONVILUOTXAMNHAPCAPDOASS1070? _donViLuotXamNhapCapDoASS1070;
+  DONVILUOTXAMNHAPCAPDOASS1070? get getDonViLuotXamNhapCapDoASS1070 => _donViLuotXamNhapCapDoASS1070;
+  Future<void> caiDatDonViLuotXamNhapCapDoASS1070({required DONVILUOTXAMNHAPCAPDOASS1070? value, bool? caiDatUuTien}) async {
+    if (caiDatUuTien == true) {
+      _donViLuotXamNhapCapDoASS1070 = value;
+    } else {
+      _donViLuotXamNhapCapDoASS1070 ??= value;
+    }
+
+    return;
+  }
+
+  /// -----
+  /// TODO:
+  /// -----
+  DONVILUOTXAMNHAPCAPDOASS1080? _donViLuotXamNhapCapDoASS1080;
+  DONVILUOTXAMNHAPCAPDOASS1080? get getDonViLuotXamNhapCapDoASS1080 => _donViLuotXamNhapCapDoASS1080;
+  Future<void> caiDatDonViLuotXamNhapCapDoASS1080({required DONVILUOTXAMNHAPCAPDOASS1080? value, bool? caiDatUuTien}) async {
+    if (caiDatUuTien == true) {
+      _donViLuotXamNhapCapDoASS1080 = value;
+    } else {
+      _donViLuotXamNhapCapDoASS1080 ??= value;
+    }
+
+    return;
+  }
+
+  /// -----
+  /// TODO:
+  /// -----
+  DONVILUOTXAMNHAPCAPDOASS1090? _donViLuotXamNhapCapDoASS1090;
+  DONVILUOTXAMNHAPCAPDOASS1090? get getDonViLuotXamNhapCapDoASS1090 => _donViLuotXamNhapCapDoASS1090;
+  Future<void> caiDatDonViLuotXamNhapCapDoASS1090({required DONVILUOTXAMNHAPCAPDOASS1090? value, bool? caiDatUuTien}) async {
+    if (caiDatUuTien == true) {
+      _donViLuotXamNhapCapDoASS1090 = value;
+    } else {
+      _donViLuotXamNhapCapDoASS1090 ??= value;
+    }
+
+    return;
+  }
+
+  /// -----
+  /// TODO:
+  /// -----
+  DONVILUOTXAMNHAPCAPDOASS1100? _donViLuotXamNhapCapDoASS1100;
+  DONVILUOTXAMNHAPCAPDOASS1100? get getDonViLuotXamNhapCapDoASS1100 => _donViLuotXamNhapCapDoASS1100;
+  Future<void> caiDatDonViLuotXamNhapCapDoASS1100({required DONVILUOTXAMNHAPCAPDOASS1100? value, bool? caiDatUuTien}) async {
+    if (caiDatUuTien == true) {
+      _donViLuotXamNhapCapDoASS1100 = value;
+    } else {
+      _donViLuotXamNhapCapDoASS1100 ??= value;
+    }
+
+    return;
+  }
+
+  /// -----
+  /// TODO:
+  /// -----
+  DONVILUOTXAMNHAPCAPDOASS1110? _donViLuotXamNhapCapDoASS1110;
+  DONVILUOTXAMNHAPCAPDOASS1110? get getDonViLuotXamNhapCapDoASS1110 => _donViLuotXamNhapCapDoASS1110;
+  Future<void> caiDatDonViLuotXamNhapCapDoASS1110({required DONVILUOTXAMNHAPCAPDOASS1110? value, bool? caiDatUuTien}) async {
+    if (caiDatUuTien == true) {
+      _donViLuotXamNhapCapDoASS1110 = value;
+    } else {
+      _donViLuotXamNhapCapDoASS1110 ??= value;
+    }
+
+    return;
+  }
+
+  /// -----
+  /// TODO:
+  /// -----
+  DONVILUOTXAMNHAPCAPDOASS1120? _donViLuotXamNhapCapDoASS1120;
+  DONVILUOTXAMNHAPCAPDOASS1120? get getDonViLuotXamNhapCapDoASS1120 => _donViLuotXamNhapCapDoASS1120;
+  Future<void> caiDatDonViLuotXamNhapCapDoASS1120({required DONVILUOTXAMNHAPCAPDOASS1120? value, bool? caiDatUuTien}) async {
+    if (caiDatUuTien == true) {
+      _donViLuotXamNhapCapDoASS1120 = value;
+    } else {
+      _donViLuotXamNhapCapDoASS1120 ??= value;
+    }
+
+    return;
+  }
+
+  /// -----
+  /// TODO:
+  /// -----
+  DONVILUOTXAMNHAPCAPDOASS1130? _donViLuotXamNhapCapDoASS1130;
+  DONVILUOTXAMNHAPCAPDOASS1130? get getDonViLuotXamNhapCapDoASS1130 => _donViLuotXamNhapCapDoASS1130;
+  Future<void> caiDatDonViLuotXamNhapCapDoASS1130({required DONVILUOTXAMNHAPCAPDOASS1130? value, bool? caiDatUuTien}) async {
+    if (caiDatUuTien == true) {
+      _donViLuotXamNhapCapDoASS1130 = value;
+    } else {
+      _donViLuotXamNhapCapDoASS1130 ??= value;
+    }
+
+    return;
+  }
+
+  /// -----
+  /// TODO:
+  /// -----
+  DONVILUOTXAMNHAPCAPDOASS1140? _donViLuotXamNhapCapDoASS1140;
+  DONVILUOTXAMNHAPCAPDOASS1140? get getDonViLuotXamNhapCapDoASS1140 => _donViLuotXamNhapCapDoASS1140;
+  Future<void> caiDatDonViLuotXamNhapCapDoASS1140({required DONVILUOTXAMNHAPCAPDOASS1140? value, bool? caiDatUuTien}) async {
+    if (caiDatUuTien == true) {
+      _donViLuotXamNhapCapDoASS1140 = value;
+    } else {
+      _donViLuotXamNhapCapDoASS1140 ??= value;
+    }
+
+    return;
+  }
+
+  /// -----
+  /// TODO:
+  /// -----
+  DONVILUOTXAMNHAPCAPDOASS1150? _donViLuotXamNhapCapDoASS1150;
+  DONVILUOTXAMNHAPCAPDOASS1150? get getDonViLuotXamNhapCapDoASS1150 => _donViLuotXamNhapCapDoASS1150;
+  Future<void> caiDatDonViLuotXamNhapCapDoASS1150({required DONVILUOTXAMNHAPCAPDOASS1150? value, bool? caiDatUuTien}) async {
+    if (caiDatUuTien == true) {
+      _donViLuotXamNhapCapDoASS1150 = value;
+    } else {
+      _donViLuotXamNhapCapDoASS1150 ??= value;
+    }
+
+    return;
+  }
+
+  /// -----
+  /// TODO:
+  /// -----
+  DONVILUOTXAMNHAPCAPDOASS1160? _donViLuotXamNhapCapDoASS1160;
+  DONVILUOTXAMNHAPCAPDOASS1160? get getDonViLuotXamNhapCapDoASS1160 => _donViLuotXamNhapCapDoASS1160;
+  Future<void> caiDatDonViLuotXamNhapCapDoASS1160({required DONVILUOTXAMNHAPCAPDOASS1160? value, bool? caiDatUuTien}) async {
+    if (caiDatUuTien == true) {
+      _donViLuotXamNhapCapDoASS1160 = value;
+    } else {
+      _donViLuotXamNhapCapDoASS1160 ??= value;
+    }
+
+    return;
+  }
+
+  /// -----
+  /// TODO:
+  /// -----
+  DONVILUOTXAMNHAPCAPDOASS1170? _donViLuotXamNhapCapDoASS1170;
+  DONVILUOTXAMNHAPCAPDOASS1170? get getDonViLuotXamNhapCapDoASS1170 => _donViLuotXamNhapCapDoASS1170;
+  Future<void> caiDatDonViLuotXamNhapCapDoASS1170({required DONVILUOTXAMNHAPCAPDOASS1170? value, bool? caiDatUuTien}) async {
+    if (caiDatUuTien == true) {
+      _donViLuotXamNhapCapDoASS1170 = value;
+    } else {
+      _donViLuotXamNhapCapDoASS1170 ??= value;
+    }
+
+    return;
+  }
+
+  /// -----
+  /// TODO:
+  /// -----
+  DONVILUOTXAMNHAPCAPDOASS1180? _donViLuotXamNhapCapDoASS1180;
+  DONVILUOTXAMNHAPCAPDOASS1180? get getDonViLuotXamNhapCapDoASS1180 => _donViLuotXamNhapCapDoASS1180;
+  Future<void> caiDatDonViLuotXamNhapCapDoASS1180({required DONVILUOTXAMNHAPCAPDOASS1180? value, bool? caiDatUuTien}) async {
+    if (caiDatUuTien == true) {
+      _donViLuotXamNhapCapDoASS1180 = value;
+    } else {
+      _donViLuotXamNhapCapDoASS1180 ??= value;
+    }
+
+    return;
+  }
+
+  /// -----
+  /// TODO:
+  /// -----
+  DONVILUOTXAMNHAPCAPDOASS1190? _donViLuotXamNhapCapDoASS1190;
+  DONVILUOTXAMNHAPCAPDOASS1190? get getDonViLuotXamNhapCapDoASS1190 => _donViLuotXamNhapCapDoASS1190;
+  Future<void> caiDatDonViLuotXamNhapCapDoASS1190({required DONVILUOTXAMNHAPCAPDOASS1190? value, bool? caiDatUuTien}) async {
+    if (caiDatUuTien == true) {
+      _donViLuotXamNhapCapDoASS1190 = value;
+    } else {
+      _donViLuotXamNhapCapDoASS1190 ??= value;
+    }
+
+    return;
+  }
+
+  /// -----
+  /// TODO:
+  /// -----
+  DONVILUOTXAMNHAPCAPDOASS1200? _donViLuotXamNhapCapDoASS1200;
+  DONVILUOTXAMNHAPCAPDOASS1200? get getDonViLuotXamNhapCapDoASS1200 => _donViLuotXamNhapCapDoASS1200;
+  Future<void> caiDatDonViLuotXamNhapCapDoASS1200({required DONVILUOTXAMNHAPCAPDOASS1200? value, bool? caiDatUuTien}) async {
+    if (caiDatUuTien == true) {
+      _donViLuotXamNhapCapDoASS1200 = value;
+    } else {
+      _donViLuotXamNhapCapDoASS1200 ??= value;
     }
 
     return;

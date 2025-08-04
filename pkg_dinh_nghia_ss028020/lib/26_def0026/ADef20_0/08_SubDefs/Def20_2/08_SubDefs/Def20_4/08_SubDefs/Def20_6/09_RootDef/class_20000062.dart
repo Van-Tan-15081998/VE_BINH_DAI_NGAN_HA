@@ -144,7 +144,9 @@ class MOHINHCHISOMAUTOIDATHEOCAPDO with CauTrucThucThiCoBan {
   Future<void> onTangCuong05PhanTramChiSoMauToiDaVanHanh() async {
     double chiSoMauToiDa = getChiSoMauToiDa ?? 1000;
 
-    onCaiDatChiSoMauToiDaVanHanh(value: (getChiSoMauToiDaVanHanh ?? 0) + chiSoMauToiDa * (5/100), caiDatUuTien: true);
+    if ((getChiSoMauToiDaVanHanh ?? 0) < (getChiSoMauToiDa ?? 0)) {
+      onCaiDatChiSoMauToiDaVanHanh(value: (getChiSoMauToiDaVanHanh ?? 0) + chiSoMauToiDa * (5 / 100), caiDatUuTien: true);
+    }
 
     ///
     return;

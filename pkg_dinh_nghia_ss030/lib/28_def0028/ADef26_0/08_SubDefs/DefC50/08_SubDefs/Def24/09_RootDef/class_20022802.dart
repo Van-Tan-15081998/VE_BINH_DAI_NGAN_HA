@@ -8,7 +8,7 @@ import 'package:pkg_dinh_nghia_ss030/pkg_dinh_nghia_ss030_exp.dart';
 /// TODO:
 /// -----
 class PHUONGTIENCHIHUYCLASS50CSS03 extends MOHINHPHUONGTIENCHIHUY {
-  PHUONGTIENCHIHUYCLASS50CSS03(super.capDo);
+  PHUONGTIENCHIHUYCLASS50CSS03({super.capDo, super.phuongTienThongSoaiToiCao});
   
   ///
   static const String maDinhDanhPhuongTien = '';
