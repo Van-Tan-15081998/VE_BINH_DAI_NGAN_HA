@@ -73,6 +73,7 @@ abstract class SpriteHatSatThuongVaChamCoBan extends TextComponent with HasVisib
   /// TODO: Kiểm Tra Tần Xuất Cập Nhật
   /// -----
   int _bienTangTienGiamTanXuatCapNhat = 0;
+  int get getBienTangTienGiamTanXuatCapNhat => _bienTangTienGiamTanXuatCapNhat = 0;
   final int _boiSoCapDoGiamTanXuatCapNhat = 2;
   void onVoidCaiDatTuDongBienTangTienGiamTanXuatCapNhat() {
     if (_bienTangTienGiamTanXuatCapNhat < 1000000) {
@@ -84,9 +85,18 @@ abstract class SpriteHatSatThuongVaChamCoBan extends TextComponent with HasVisib
   }
 
   bool onVoidKiemTraTanXuatCapNhat() {
-    if (_bienTangTienGiamTanXuatCapNhat % _boiSoCapDoGiamTanXuatCapNhat == 0) {
+    // if (_bienTangTienGiamTanXuatCapNhat % _boiSoCapDoGiamTanXuatCapNhat == 0) {
+    //   return true;
+    // }
+    // return false;
+    if (getTrangThaiTongQuat?.getThietLapTongQuat?.onKiemTraChoPhepCapNhatTheoTocDoKhungHinh(
+      maDinhDanh: '[SPRITE_ANIMATION_CO_BAN]',
+      chiSoTangTienGiamTanXuatCapNhat: getBienTangTienGiamTanXuatCapNhat,
+    ) ==
+        true) {
       return true;
     }
+
     return false;
   }
 
@@ -107,8 +117,8 @@ abstract class SpriteHatSatThuongVaChamCoBan extends TextComponent with HasVisib
     return;
   }
 
-  double fontSizeNguyenBan = 20;
-  double fontSizeCapNhat = 20;
+  double fontSizeNguyenBan = 28;
+  double fontSizeCapNhat = 28;
   int _bienTangTien = 0;
   /// -----
   /// TODO:
@@ -214,12 +224,12 @@ abstract class SpriteHatSatThuongVaChamCoBan extends TextComponent with HasVisib
         }
       }
 
-      if (size.x > 1 && size.y > 1) {
-        size.setValues(size.x - 1, size.y - 1);
-      }
+      // if (size.x > 1 && size.y > 1) {
+      //   size.setValues(size.x - 1, size.y - 1);
+      // }
 
-      if (fontSizeCapNhat > 0) {
-        fontSizeCapNhat = fontSizeCapNhat - 1.0;
+      if (fontSizeCapNhat > 1.0) {
+        fontSizeCapNhat = fontSizeCapNhat - 0.8;
         // textRenderer = TextPaint(style: GoogleFonts.sairaSemiCondensed(
         //   textStyle: TextStyle(fontSize: fontSizeCapNhat, fontWeight: FontWeight.bold, color: Color(0xFFCCF2FF)),
         // ));

@@ -269,21 +269,25 @@ abstract class SpriteAnimationCoBan extends SpriteAnimationComponent with HasVis
   /// -----
   /// TODO:
   /// -----
+  bool khongThucThiCapNhatNguyenBan = false;
+
   @override
   void update(double dt) {
     super.update(dt);
 
-    onVoidCaiDatTuDongBienTangTienGiamTanXuatCapNhat();
-    if (onVoidKiemTraTanXuatCapNhat() == false) {
-      return;
+    if (khongThucThiCapNhatNguyenBan == false) {
+      onVoidCaiDatTuDongBienTangTienGiamTanXuatCapNhat();
+      if (onVoidKiemTraTanXuatCapNhat() == false) {
+        return;
+      }
+
+      onVoidCapNhatTrangThaiMoHinh();
+
+      onVoidCapNhatKiemTraHienThi();
+
+      onVoidCaiDatHoatAnh();
+
+      onVoidCapNhatPositionSizeValues();
     }
-
-    onVoidCapNhatTrangThaiMoHinh();
-
-    onVoidCapNhatKiemTraHienThi();
-
-    onVoidCaiDatHoatAnh();
-
-    onVoidCapNhatPositionSizeValues();
   }
 }

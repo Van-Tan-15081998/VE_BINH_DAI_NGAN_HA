@@ -1,3 +1,4 @@
+import 'dart:ui';
 import 'package:flame/collisions.dart';
 import 'package:flame/components.dart';
 import 'package:flame/events.dart';
@@ -272,7 +273,7 @@ abstract class THANHPHANNUTBAMTHUOCCAPTHUANKICHHOAT extends PositionComponent wi
     onVoidCaiDatPositionDx(value: positionDx, caiDatUuTien: true);
     onVoidCaiDatPositionDy(value: positionDy, caiDatUuTien: true);
 
-    _spriteAnimationComponentPhuongTienChiHuyXamNhap = SpriteAnimationComponent();
+    _spriteAnimationComponentPhuongTienChiHuyXamNhap = SpriteAnimationComponentPhuongTienChiHuyXamNhap();
     if (_spriteAnimationComponentPhuongTienChiHuyXamNhap != null &&
         _spriteAnimationComponentPhuongTienChiHuyXamNhap?.isMounted == false) {
       add(_spriteAnimationComponentPhuongTienChiHuyXamNhap!);
@@ -308,8 +309,8 @@ abstract class THANHPHANNUTBAMTHUOCCAPTHUANKICHHOAT extends PositionComponent wi
     onTapCancelEvent?.call();
   }
 
-  SpriteAnimationComponent? _spriteAnimationComponentPhuongTienChiHuyXamNhap;
-  SpriteAnimationComponent? get getSpriteAnimationComponentPhuongTienChiHuyXamNhap => _spriteAnimationComponentPhuongTienChiHuyXamNhap;
+  SpriteAnimationComponentPhuongTienChiHuyXamNhap? _spriteAnimationComponentPhuongTienChiHuyXamNhap;
+  SpriteAnimationComponentPhuongTienChiHuyXamNhap? get getSpriteAnimationComponentPhuongTienChiHuyXamNhap => _spriteAnimationComponentPhuongTienChiHuyXamNhap;
 
   /// -----
   /// TODO:
@@ -824,5 +825,26 @@ Future<void> onAddComponent({required FlameGame? flameGame, required Component? 
   void update(double dt) {
     // TODO: implement update
     super.update(dt);
+  }
+}
+
+class SpriteAnimationComponentPhuongTienChiHuyXamNhap extends SpriteAnimationComponent {
+
+  void onGiaiPhongTaiNguyen() {
+    animation = null;
+
+    return;
+  }
+
+  @override
+  void renderTree(Canvas canvas) {
+    //
+    try {
+        super.renderTree(canvas);
+    } catch (e) {
+      return;
+    }
+
+    return;
   }
 }

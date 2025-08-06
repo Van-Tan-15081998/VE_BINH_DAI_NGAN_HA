@@ -33,6 +33,8 @@ class SpriteChienDauCoThucThiChienDau extends SpriteAnimationCoBan {
     // debugMode = true;
     anchor = Anchor.center;
 
+    khongThucThiCapNhatNguyenBan = true;
+
     caiDatMoHinhChiTiet();
 
     return;

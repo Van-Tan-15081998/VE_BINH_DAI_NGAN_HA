@@ -142,7 +142,8 @@ class CARDNHIEMVUNGANCHANXAMNHAPSS060 extends THANHPHANNUTBAMTHUOCCAPTHUANKICHHO
         ?.getCauTrucLuotXamNhapNgauNhienSS060 //
         ?.giaiPhongTaiNguyenHinhAnhPhuongTienChiHuyXamNhap(globalStateManagementSystem: getGlobalStateManagementSystem);
 
-    getSpriteAnimationComponentPhuongTienChiHuyXamNhap?.animation = null;
+    // getSpriteAnimationComponentPhuongTienChiHuyXamNhap?.animation = null;
+    getSpriteAnimationComponentPhuongTienChiHuyXamNhap?.onGiaiPhongTaiNguyen();
   }
 
   @override

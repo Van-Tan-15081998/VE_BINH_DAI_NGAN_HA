@@ -854,6 +854,7 @@ class QUANLYTHANHPHANMANHINHKHUNGMANHINHCHINH extends QUANLYTHANHPHANMANHINHTHUO
     /// TODO: Hiển Thị Màn Hình Bảng Điều Khiển Chiến Đấu
     await getKhungManHinhSS03000?.onHuyKichHoatThanhPhanManHinhThuocCap();
     await getKhungManHinhSS03000?.getQuanLyThanhPhanTichHopThuocCap?.onRemoveRoot(flameGame: null, component: getKhungManHinhSS03000);
+    await getKhungManHinhSS03000?.onRemoveRoot(flameGame: null, component: getKhungManHinhSS03000);
 
     /// TODO: Hiển Thị Màn Hình Loading Nhiệm Vụ
     // await getKhungManHinhSS03000?.onKichHoatKhungManHinhThuocCapSS300100();
@@ -884,7 +885,7 @@ class QUANLYTHANHPHANMANHINHKHUNGMANHINHCHINH extends QUANLYTHANHPHANMANHINHTHUO
             await getGlobalStateManagementSystem?.getChienDauCoChienDauTongQuat?.getPhuongThucTanCongThongMinh?.getPhuongThucTanCongThongMinhSS03?.onNgatKetNoiSpriteVienDan();
             await getGlobalStateManagementSystem?.getChienDauCoChienDauTongQuat?.getPhuongThucTanCongThongMinh?.getPhuongThucTanCongThongMinhSS04?.onNgatKetNoiSpriteVienDan();
 
-            await getKhungManHinhSS03000?.onRemoveRoot(flameGame: null, component: getKhungManHinhSS03000);
+            // await getKhungManHinhSS03000?.onRemoveRoot(flameGame: null, component: getKhungManHinhSS03000);
 
             /// -----
             /// TODO:

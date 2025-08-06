@@ -151,11 +151,11 @@ class MOHINHTHANHTICHCHIENDAUCOBAN with CauTrucThucThiCoBan {
     /// TODO:
     /// -----
     await getThanhTichChienDauTheoNhiemVu?.getPhanThuongDatThanhTich?.getGoiTaiNguyenPhanThuongVang?.getDonViSoLuong?.caiDatTongSoLuong(
-      value: 1,
+      value: 0,
       caiDatUuTien: true,
     );
     await getThanhTichChienDauTheoNhiemVu?.getPhanThuongDatThanhTich?.getGoiTaiNguyenPhanThuongNgoc?.getDonViSoLuong?.caiDatTongSoLuong(
-      value: 1,
+      value: 0,
       caiDatUuTien: true,
     );
 
