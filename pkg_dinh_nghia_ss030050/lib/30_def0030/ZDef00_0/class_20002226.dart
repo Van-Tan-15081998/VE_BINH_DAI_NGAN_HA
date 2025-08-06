@@ -419,6 +419,13 @@ class QUANLYTRANGTHAISUKIENVACHAMTHUOCPHUONGTIEN extends SUKIENVACHAMTHUOCPHUONG
   Map<String, Map<String, dynamic>> _danhSachPhuongTienVaChamVienDanSS010 = {};
   Map<String, Map<String, dynamic>> _danhSachPhuongTienVaChamVienDanSS020 = {};
   Map<String, Map<String, dynamic>> _danhSachPhuongTienVaChamVienDanSS030 = {};
+  Map<String, Map<String, dynamic>> _danhSachPhuongTienVaChamVienDanSS040 = {};
+  Map<String, Map<String, dynamic>> _danhSachPhuongTienVaChamVienDanSS050 = {};
+  Map<String, Map<String, dynamic>> _danhSachPhuongTienVaChamVienDanSS060 = {};
+  Map<String, Map<String, dynamic>> _danhSachPhuongTienVaChamVienDanSS070 = {};
+  Map<String, Map<String, dynamic>> _danhSachPhuongTienVaChamVienDanSS080 = {};
+  Map<String, Map<String, dynamic>> _danhSachPhuongTienVaChamVienDanSS090 = {};
+  Map<String, Map<String, dynamic>> _danhSachPhuongTienVaChamVienDanSS100 = {};
 
   /// -----
   /// TODO:
@@ -458,6 +465,13 @@ class QUANLYTRANGTHAISUKIENVACHAMTHUOCPHUONGTIEN extends SUKIENVACHAMTHUOCPHUONG
   Map<String, Map<String, dynamic>> danhSachPhuongTienVaChamVienDanSS010 = {};
   Map<String, Map<String, dynamic>> danhSachPhuongTienVaChamVienDanSS020 = {};
   Map<String, Map<String, dynamic>> danhSachPhuongTienVaChamVienDanSS030 = {};
+  Map<String, Map<String, dynamic>> danhSachPhuongTienVaChamVienDanSS040 = {};
+  Map<String, Map<String, dynamic>> danhSachPhuongTienVaChamVienDanSS050 = {};
+  Map<String, Map<String, dynamic>> danhSachPhuongTienVaChamVienDanSS060 = {};
+  Map<String, Map<String, dynamic>> danhSachPhuongTienVaChamVienDanSS070 = {};
+  Map<String, Map<String, dynamic>> danhSachPhuongTienVaChamVienDanSS080 = {};
+  Map<String, Map<String, dynamic>> danhSachPhuongTienVaChamVienDanSS090 = {};
+  Map<String, Map<String, dynamic>> danhSachPhuongTienVaChamVienDanSS100 = {};
   void onVoidLoopOnTimelineSS020() {
     if (isCompletedLoopOnTimelineSS020 == true) {
       isCompletedLoopOnTimelineSS020 = false;
@@ -466,14 +480,35 @@ class QUANLYTRANGTHAISUKIENVACHAMTHUOCPHUONGTIEN extends SUKIENVACHAMTHUOCPHUONG
       danhSachPhuongTienVaChamVienDanSS010 = Map.from(_danhSachPhuongTienVaChamVienDanSS010);
       danhSachPhuongTienVaChamVienDanSS020 = Map.from(_danhSachPhuongTienVaChamVienDanSS020);
       danhSachPhuongTienVaChamVienDanSS030 = Map.from(_danhSachPhuongTienVaChamVienDanSS030);
+      danhSachPhuongTienVaChamVienDanSS040 = Map.from(_danhSachPhuongTienVaChamVienDanSS030);
+      danhSachPhuongTienVaChamVienDanSS050 = Map.from(_danhSachPhuongTienVaChamVienDanSS030);
+      danhSachPhuongTienVaChamVienDanSS060 = Map.from(_danhSachPhuongTienVaChamVienDanSS030);
+      danhSachPhuongTienVaChamVienDanSS070 = Map.from(_danhSachPhuongTienVaChamVienDanSS030);
+      danhSachPhuongTienVaChamVienDanSS080 = Map.from(_danhSachPhuongTienVaChamVienDanSS030);
+      danhSachPhuongTienVaChamVienDanSS090 = Map.from(_danhSachPhuongTienVaChamVienDanSS030);
+      danhSachPhuongTienVaChamVienDanSS100 = Map.from(_danhSachPhuongTienVaChamVienDanSS030);
       _danhSachPhuongTienVaChamVienDan = {};
       _danhSachPhuongTienVaChamVienDanSS010 = {};
       _danhSachPhuongTienVaChamVienDanSS020 = {};
       _danhSachPhuongTienVaChamVienDanSS030 = {};
+      _danhSachPhuongTienVaChamVienDanSS040 = {};
+      _danhSachPhuongTienVaChamVienDanSS050 = {};
+      _danhSachPhuongTienVaChamVienDanSS060 = {};
+      _danhSachPhuongTienVaChamVienDanSS070 = {};
+      _danhSachPhuongTienVaChamVienDanSS080 = {};
+      _danhSachPhuongTienVaChamVienDanSS090 = {};
+      _danhSachPhuongTienVaChamVienDanSS100 = {};
       onVoidTichHopNhanDinhSuKienVaChamThuocPhuongTienV2(danhSachPhuongTienVaChamVienDan: danhSachPhuongTienVaChamVienDan);
       onVoidTichHopNhanDinhSuKienVaChamThuocPhuongTienV2(danhSachPhuongTienVaChamVienDan: danhSachPhuongTienVaChamVienDanSS010);
       onVoidTichHopNhanDinhSuKienVaChamThuocPhuongTienV2(danhSachPhuongTienVaChamVienDan: danhSachPhuongTienVaChamVienDanSS020);
       onVoidTichHopNhanDinhSuKienVaChamThuocPhuongTienV2(danhSachPhuongTienVaChamVienDan: danhSachPhuongTienVaChamVienDanSS030);
+      onVoidTichHopNhanDinhSuKienVaChamThuocPhuongTienV2(danhSachPhuongTienVaChamVienDan: danhSachPhuongTienVaChamVienDanSS040);
+      onVoidTichHopNhanDinhSuKienVaChamThuocPhuongTienV2(danhSachPhuongTienVaChamVienDan: danhSachPhuongTienVaChamVienDanSS050);
+      onVoidTichHopNhanDinhSuKienVaChamThuocPhuongTienV2(danhSachPhuongTienVaChamVienDan: danhSachPhuongTienVaChamVienDanSS060);
+      onVoidTichHopNhanDinhSuKienVaChamThuocPhuongTienV2(danhSachPhuongTienVaChamVienDan: danhSachPhuongTienVaChamVienDanSS070);
+      onVoidTichHopNhanDinhSuKienVaChamThuocPhuongTienV2(danhSachPhuongTienVaChamVienDan: danhSachPhuongTienVaChamVienDanSS080);
+      onVoidTichHopNhanDinhSuKienVaChamThuocPhuongTienV2(danhSachPhuongTienVaChamVienDan: danhSachPhuongTienVaChamVienDanSS090);
+      onVoidTichHopNhanDinhSuKienVaChamThuocPhuongTienV2(danhSachPhuongTienVaChamVienDan: danhSachPhuongTienVaChamVienDanSS100, caiDatDanhSachPhuongTienHoatDong: true);
     }
 
     ///
@@ -544,6 +579,13 @@ class QUANLYTRANGTHAISUKIENVACHAMTHUOCPHUONGTIEN extends SUKIENVACHAMTHUOCPHUONG
   Map<String, Map<String, dynamic>> mapPhuongTienVaChamVienDanSS010 = {};
   Map<String, Map<String, dynamic>> mapPhuongTienVaChamVienDanSS020 = {};
   Map<String, Map<String, dynamic>> mapPhuongTienVaChamVienDanSS030 = {};
+  Map<String, Map<String, dynamic>> mapPhuongTienVaChamVienDanSS040 = {};
+  Map<String, Map<String, dynamic>> mapPhuongTienVaChamVienDanSS050 = {};
+  Map<String, Map<String, dynamic>> mapPhuongTienVaChamVienDanSS060 = {};
+  Map<String, Map<String, dynamic>> mapPhuongTienVaChamVienDanSS070 = {};
+  Map<String, Map<String, dynamic>> mapPhuongTienVaChamVienDanSS080 = {};
+  Map<String, Map<String, dynamic>> mapPhuongTienVaChamVienDanSS090 = {};
+  Map<String, Map<String, dynamic>> mapPhuongTienVaChamVienDanSS100 = {};
 
   Map<String, Map<String, dynamic>> mapVienDanVaChamPhuongTien = {};
 
@@ -566,6 +608,13 @@ class QUANLYTRANGTHAISUKIENVACHAMTHUOCPHUONGTIEN extends SUKIENVACHAMTHUOCPHUONG
     mapPhuongTienVaChamVienDanSS010 = Map.from(_mapPhuongTienVaChamVienDan);
     mapPhuongTienVaChamVienDanSS020 = Map.from(_mapPhuongTienVaChamVienDan);
     mapPhuongTienVaChamVienDanSS030 = Map.from(_mapPhuongTienVaChamVienDan);
+    mapPhuongTienVaChamVienDanSS040 = Map.from(_mapPhuongTienVaChamVienDan);
+    mapPhuongTienVaChamVienDanSS050 = Map.from(_mapPhuongTienVaChamVienDan);
+    mapPhuongTienVaChamVienDanSS060 = Map.from(_mapPhuongTienVaChamVienDan);
+    mapPhuongTienVaChamVienDanSS070 = Map.from(_mapPhuongTienVaChamVienDan);
+    mapPhuongTienVaChamVienDanSS080 = Map.from(_mapPhuongTienVaChamVienDan);
+    mapPhuongTienVaChamVienDanSS090 = Map.from(_mapPhuongTienVaChamVienDan);
+    mapPhuongTienVaChamVienDanSS100 = Map.from(_mapPhuongTienVaChamVienDan);
 
     phuongTienVaChamVienDan = {};
 
@@ -619,17 +668,12 @@ class QUANLYTRANGTHAISUKIENVACHAMTHUOCPHUONGTIEN extends SUKIENVACHAMTHUOCPHUONG
                 phuongTienHoatDong?[maDinhDanhPhuongTienVaCham] = maDinhDanhPhuongTienVaCham;
 
                 /// -----
-                /// TODO: Đối Chiếu Dx Trọng Tâm, Dy Trọng Tâm
+                /// TODO: Đối Chiếu Dx Trọng Tâm, Dy Trọng Tâm & Bổ Sung Vùng Đệm Phát Hiện Va Chạm
                 /// -----
                 bienTraiPhuongTienVaCham = dxTrongTamPhuongTienVaCham - (chieuRongThanPhuongTienVaCham / 2) - 10.0;
                 bienPhaiPhuongTienVaCham = dxTrongTamPhuongTienVaCham + (chieuRongThanPhuongTienVaCham / 2) + 10.0;
                 bienTrenPhuongTienVaCham = dyTrongTamPhuongTienVaCham - (chieuCaoThanPhuongTienVaCham / 2);
                 bienDuoiPhuongTienVaCham = dyTrongTamPhuongTienVaCham + (chieuCaoThanPhuongTienVaCham / 2) + 20.0;
-
-                /// TODO: Bổ Sung Vùng Đệm Phát Hiện Va Chạm
-                // bienTrai -= 10.0;
-                // bienPhai += 10.0;
-                // bienDuoi += 20.0;
 
                 if (dxTrongTamVienDanVaCham > bienTraiPhuongTienVaCham //
                     && dxTrongTamVienDanVaCham < bienPhaiPhuongTienVaCham //
@@ -638,16 +682,6 @@ class QUANLYTRANGTHAISUKIENVACHAMTHUOCPHUONGTIEN extends SUKIENVACHAMTHUOCPHUONG
                 ) {
                   phuongTienVaChamVienDan['[MA_DINH_DANH_VIEN_DAN_VA_CHAM]'] = maDinhDanhVienDanVaCham;
 
-                  if (kDebugMode) {
-                    // print(
-                    //   '[📋]_[LOG]_[SU_KIEN_VA_CHAM 🎯]: ${phuongTienVaChamVienDan['[MA_DINH_DANH_PHUONG_TIEN_VA_CHAM]']} - ${phuongTienVaChamVienDan['[MA_DINH_DANH_VIEN_DAN_VA_CHAM]']}',
-                    // );
-                    // print(
-                    //   '[📋]_[LOG]_[THONG_SO_SU_KIEN_VA_CHAM 🎯]: [DX_TRONG_TAM_P: $dxTrongTamPhuongTien] - [DY_TRONG_TAM_P: $dyTrongTamPhuongTien]',
-                    // );
-                    // print('[📋]_[LOG]_[THONG_SO_SU_KIEN_VA_CHAM 🎯]: [DX_TRONG_TAM_V: $dxTrongTamVienDan] - [DY_TRONG_TAM_V: $dyTrongTamVienDan]');
-                  }
-
                   if (mapPhuongTienVaChamVienDan[maDinhDanhPhuongTienVaCham]?.isEmpty == true) {
                     mapPhuongTienVaChamVienDan[maDinhDanhPhuongTienVaCham] = phuongTienVaChamVienDan;
                   } else if (mapPhuongTienVaChamVienDanSS010[maDinhDanhPhuongTienVaCham]?.isEmpty == true) {
@@ -655,8 +689,23 @@ class QUANLYTRANGTHAISUKIENVACHAMTHUOCPHUONGTIEN extends SUKIENVACHAMTHUOCPHUONG
                   } else if (mapPhuongTienVaChamVienDanSS020[maDinhDanhPhuongTienVaCham]?.isEmpty == true) {
                     mapPhuongTienVaChamVienDanSS020[maDinhDanhPhuongTienVaCham] = phuongTienVaChamVienDan;
                   } else if (mapPhuongTienVaChamVienDanSS030[maDinhDanhPhuongTienVaCham]?.isEmpty == true) {
-                    mapPhuongTienVaChamVienDanSS030[maDinhDanhPhuongTienVaCham] = phuongTienVaChamVienDan;
-                  } else {
+                      mapPhuongTienVaChamVienDanSS030[maDinhDanhPhuongTienVaCham] = phuongTienVaChamVienDan;
+                  } else if (mapPhuongTienVaChamVienDanSS040[maDinhDanhPhuongTienVaCham]?.isEmpty == true) {
+                    mapPhuongTienVaChamVienDanSS040[maDinhDanhPhuongTienVaCham] = phuongTienVaChamVienDan;
+                  } else if (mapPhuongTienVaChamVienDanSS050[maDinhDanhPhuongTienVaCham]?.isEmpty == true) {
+                    mapPhuongTienVaChamVienDanSS050[maDinhDanhPhuongTienVaCham] = phuongTienVaChamVienDan;
+                  } else if (mapPhuongTienVaChamVienDanSS060[maDinhDanhPhuongTienVaCham]?.isEmpty == true) {
+                    mapPhuongTienVaChamVienDanSS060[maDinhDanhPhuongTienVaCham] = phuongTienVaChamVienDan;
+                  } else if (mapPhuongTienVaChamVienDanSS070[maDinhDanhPhuongTienVaCham]?.isEmpty == true) {
+                    mapPhuongTienVaChamVienDanSS070[maDinhDanhPhuongTienVaCham] = phuongTienVaChamVienDan;
+                  } else if (mapPhuongTienVaChamVienDanSS080[maDinhDanhPhuongTienVaCham]?.isEmpty == true) {
+                    mapPhuongTienVaChamVienDanSS080[maDinhDanhPhuongTienVaCham] = phuongTienVaChamVienDan;
+                  } else if (mapPhuongTienVaChamVienDanSS090[maDinhDanhPhuongTienVaCham]?.isEmpty == true) {
+                    mapPhuongTienVaChamVienDanSS090[maDinhDanhPhuongTienVaCham] = phuongTienVaChamVienDan;
+                  } else if (mapPhuongTienVaChamVienDanSS100[maDinhDanhPhuongTienVaCham]?.isEmpty == true) {
+                    mapPhuongTienVaChamVienDanSS100[maDinhDanhPhuongTienVaCham] = phuongTienVaChamVienDan;
+                  }
+                  else {
                     break;
                   }
 
@@ -673,6 +722,13 @@ class QUANLYTRANGTHAISUKIENVACHAMTHUOCPHUONGTIEN extends SUKIENVACHAMTHUOCPHUONG
     mapPhuongTienVaChamVienDanSS010['[DANH_SACH_MA_DINH_DANH_PHUONG_TIEN_HOAT_DONG]'] = phuongTienHoatDong;
     mapPhuongTienVaChamVienDanSS020['[DANH_SACH_MA_DINH_DANH_PHUONG_TIEN_HOAT_DONG]'] = phuongTienHoatDong;
     mapPhuongTienVaChamVienDanSS030['[DANH_SACH_MA_DINH_DANH_PHUONG_TIEN_HOAT_DONG]'] = phuongTienHoatDong;
+    mapPhuongTienVaChamVienDanSS040['[DANH_SACH_MA_DINH_DANH_PHUONG_TIEN_HOAT_DONG]'] = phuongTienHoatDong;
+    mapPhuongTienVaChamVienDanSS050['[DANH_SACH_MA_DINH_DANH_PHUONG_TIEN_HOAT_DONG]'] = phuongTienHoatDong;
+    mapPhuongTienVaChamVienDanSS060['[DANH_SACH_MA_DINH_DANH_PHUONG_TIEN_HOAT_DONG]'] = phuongTienHoatDong;
+    mapPhuongTienVaChamVienDanSS070['[DANH_SACH_MA_DINH_DANH_PHUONG_TIEN_HOAT_DONG]'] = phuongTienHoatDong;
+    mapPhuongTienVaChamVienDanSS080['[DANH_SACH_MA_DINH_DANH_PHUONG_TIEN_HOAT_DONG]'] = phuongTienHoatDong;
+    mapPhuongTienVaChamVienDanSS090['[DANH_SACH_MA_DINH_DANH_PHUONG_TIEN_HOAT_DONG]'] = phuongTienHoatDong;
+    mapPhuongTienVaChamVienDanSS100['[DANH_SACH_MA_DINH_DANH_PHUONG_TIEN_HOAT_DONG]'] = phuongTienHoatDong;
 
     /// -----
     /// TODO:
@@ -681,11 +737,25 @@ class QUANLYTRANGTHAISUKIENVACHAMTHUOCPHUONGTIEN extends SUKIENVACHAMTHUOCPHUONG
     mapPhuongTienVaChamVienDanSS010.removeWhere((key, value) => value.isEmpty == true);
     mapPhuongTienVaChamVienDanSS020.removeWhere((key, value) => value.isEmpty == true);
     mapPhuongTienVaChamVienDanSS030.removeWhere((key, value) => value.isEmpty == true);
+    mapPhuongTienVaChamVienDanSS040.removeWhere((key, value) => value.isEmpty == true);
+    mapPhuongTienVaChamVienDanSS050.removeWhere((key, value) => value.isEmpty == true);
+    mapPhuongTienVaChamVienDanSS060.removeWhere((key, value) => value.isEmpty == true);
+    mapPhuongTienVaChamVienDanSS070.removeWhere((key, value) => value.isEmpty == true);
+    mapPhuongTienVaChamVienDanSS080.removeWhere((key, value) => value.isEmpty == true);
+    mapPhuongTienVaChamVienDanSS090.removeWhere((key, value) => value.isEmpty == true);
+    mapPhuongTienVaChamVienDanSS100.removeWhere((key, value) => value.isEmpty == true);
 
     _danhSachPhuongTienVaChamVienDan = mapPhuongTienVaChamVienDan;
     _danhSachPhuongTienVaChamVienDanSS010 = mapPhuongTienVaChamVienDanSS010;
     _danhSachPhuongTienVaChamVienDanSS020 = mapPhuongTienVaChamVienDanSS020;
     _danhSachPhuongTienVaChamVienDanSS030 = mapPhuongTienVaChamVienDanSS030;
+    _danhSachPhuongTienVaChamVienDanSS040 = mapPhuongTienVaChamVienDanSS040;
+    _danhSachPhuongTienVaChamVienDanSS050 = mapPhuongTienVaChamVienDanSS050;
+    _danhSachPhuongTienVaChamVienDanSS060 = mapPhuongTienVaChamVienDanSS060;
+    _danhSachPhuongTienVaChamVienDanSS070 = mapPhuongTienVaChamVienDanSS070;
+    _danhSachPhuongTienVaChamVienDanSS080 = mapPhuongTienVaChamVienDanSS080;
+    _danhSachPhuongTienVaChamVienDanSS090 = mapPhuongTienVaChamVienDanSS090;
+    _danhSachPhuongTienVaChamVienDanSS100 = mapPhuongTienVaChamVienDanSS100;
 
     isCompletedLoopOnTimelineSS020 = true;
 

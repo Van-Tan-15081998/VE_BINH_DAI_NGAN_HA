@@ -1,3 +1,4 @@
+import 'dart:ui';
 import 'dart:async';
 import 'package:flame/components.dart';
 import 'package:pkg_dinh_nghia_ss022/pkg_dinh_nghia_ss022_exp.dart';
@@ -73,6 +74,22 @@ class SpriteChienDauCoThucThiChienDau extends SpriteAnimationCoBan {
   }
 
   @override
+  void renderTree(Canvas canvas) {
+    // import 'dart:ui';
+    try {
+      if (getKiemTraHienThi == true && animation != null) {
+        super.renderTree(canvas);
+      }
+    } catch (e) {
+      animation = null;
+
+      return;
+    }
+
+    return;
+  }
+
+  @override
   void update(double dt) {
     super.update(dt);
 
@@ -97,21 +114,31 @@ class SpriteChienDauCoThucThiChienDau extends SpriteAnimationCoBan {
     }
   }
 
+  int _delay = 10;
+
   @override
   void onVoidCaiDatHoatAnhChiTiet() {
-    if (getDonViSprite?.getMaDinhDanh != getTrangThai?.getMoHinh?.getMaDinhDanhChienDauCo) {
-      animation = null;
-      getDonViSprite?.onVoidCaiDatMaDinhDanh(value: getTrangThai?.getMoHinh?.getMaDinhDanhChienDauCo);
-      getDonViSprite?.onVoidCaiDatSpriteAnimation(value: getTrangThai?.getMoHinh?.getThuocTinh?.getThuocTinhHinhAnhSprite?.getDonViSpriteNgoaiHinhThanChienDauCo?.getSpriteAnimation);
+    if (_delay >= 1) {
+      _delay -= 1;
 
-      animation = getDonViSprite?.getSpriteAnimation;
-    }
-    if (animation == null) {
-      if (getTrangThai?.getMoHinh?.getThuocTinh?.getThuocTinhHinhAnhSprite?.getDonViSpriteNgoaiHinhThanChienDauCo?.getSpriteAnimation != null) {
-        getDonViSprite?.onVoidCaiDatSpriteAnimation(value: getTrangThai?.getMoHinh?.getThuocTinh?.getThuocTinhHinhAnhSprite?.getDonViSpriteNgoaiHinhThanChienDauCo?.getSpriteAnimation);
+      if (_delay == 0) {
+        _delay = 10;
+
+        if (getDonViSprite?.getMaDinhDanh != getTrangThai?.getMoHinh?.getMaDinhDanhChienDauCo) {
+          animation = null;
+          getDonViSprite?.onVoidCaiDatMaDinhDanh(value: getTrangThai?.getMoHinh?.getMaDinhDanhChienDauCo);
+          getDonViSprite?.onVoidCaiDatSpriteAnimation(value: getTrangThai?.getMoHinh?.getThuocTinh?.getThuocTinhHinhAnhSprite?.getDonViSpriteNgoaiHinhThanChienDauCo?.getSpriteAnimation);
+
+          animation = getDonViSprite?.getSpriteAnimation;
+        }
+        if (animation == null) {
+          if (getTrangThai?.getMoHinh?.getThuocTinh?.getThuocTinhHinhAnhSprite?.getDonViSpriteNgoaiHinhThanChienDauCo?.getSpriteAnimation != null) {
+            getDonViSprite?.onVoidCaiDatSpriteAnimation(value: getTrangThai?.getMoHinh?.getThuocTinh?.getThuocTinhHinhAnhSprite?.getDonViSpriteNgoaiHinhThanChienDauCo?.getSpriteAnimation);
+          }
+
+          animation = getDonViSprite?.getSpriteAnimation;
+        }
       }
-
-      animation = getDonViSprite?.getSpriteAnimation;
     }
 
     return;

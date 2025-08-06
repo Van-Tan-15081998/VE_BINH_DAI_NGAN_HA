@@ -120,7 +120,7 @@ class KHUNGMANHINHSS300100 extends THANHPHANMANHINHTHUOCCAPCOBAN {
   //   return;
   // }
 
-  flutter_async.Timer? _timer;
+  // flutter_async.Timer? _timer;
   /// -----
   /// TODO: OnLoad
   /// -----
@@ -143,7 +143,7 @@ class KHUNGMANHINHSS300100 extends THANHPHANMANHINHTHUOCCAPCOBAN {
 
   @override
   void onRemove() {
-    _timer?.cancel(); // rất quan trọng!
+    // _timer?.cancel(); // rất quan trọng!
     super.onRemove();
   }
 }

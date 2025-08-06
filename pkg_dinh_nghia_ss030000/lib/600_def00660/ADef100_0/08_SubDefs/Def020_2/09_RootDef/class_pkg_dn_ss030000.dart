@@ -80,8 +80,8 @@ class MONSTERSTTCCLASSSS00ASS100SS010 extends MOHINHPHUONGTIENCOBAN {
     final int tongSoPart = 6;
     final int tongSoFrame = 16;
     final int tongSoFrameTrenHang = 4;
-    final double chieuRongFrame = 260.0;
-    final double chieuCaoFrame = 250.0;
+    final double chieuRongFrame = 300.0;
+    final double chieuCaoFrame = 300.0;
 
     /// -----
     /// TODO: Kích Thước Resize
@@ -93,7 +93,7 @@ class MONSTERSTTCCLASSSS00ASS100SS010 extends MOHINHPHUONGTIENCOBAN {
     /// -----
     /// TODO: Nguồn Hình Ảnh Cơ Bản
     /// -----
-    final String nguonHinhAnhCoBan = 'packages/pkg_dinh_nghia_ss030000/lib';
+    final String nguonHinhAnhCoBan = 'packages/pkg_dinh_nghia_ss030000/lib/600_def00660/ADef100_0/08_SubDefs/Def020_2';
 
     /// -----
     /// TODO:

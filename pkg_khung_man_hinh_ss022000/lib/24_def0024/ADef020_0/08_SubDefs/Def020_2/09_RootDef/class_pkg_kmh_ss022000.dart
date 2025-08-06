@@ -798,12 +798,14 @@ class QUANLYTHANHPHANMANHINHKHUNGMANHINHCHINH extends QUANLYTHANHPHANMANHINHTHUO
       //
       // await getKhungManHinhSS03000?.onHuyKichHoatKhungManHinhThuocCapSS300100();
 
+      await Future.delayed(Duration(milliseconds: 100));
+
       await getGameController?.getQuanLyThanhPhanNutBamThuocCap?.onRemoveRoot(flameGame: getGameController, component: null);
       await getGameController?.getQuanLyThanhPhanVanBanThuocCap?.onRemoveRoot(flameGame: getGameController, component: null);
       await getGameController?.getQuanLyThanhPhanHinhAnhThuocCap?.onRemoveRoot(flameGame: getGameController, component: null);
       await getGameController?.getQuanLyThanhPhanTichHopThuocCap?.onRemoveRoot(flameGame: getGameController, component: null);
 
-      await Future.delayed(Duration(milliseconds: 500));
+      await Future.delayed(Duration(milliseconds: 100));
 
       await getGameController?.onGiaiPhongTaiNguyenMaster(
         onThucThiHoanTat: () async {
@@ -812,13 +814,13 @@ class QUANLYTHANHPHANMANHINHKHUNGMANHINHCHINH extends QUANLYTHANHPHANMANHINHTHUO
 
           getGlobalStateManagementSystem?.onGetEntityResourceManagement?.getQuanLyTrangThaiHangarPhuongTien?.getDanhSachPhuongTienTaiTaiNguyen.clear();
 
-          await Future.delayed(Duration(milliseconds: 500));
+          await Future.delayed(Duration(milliseconds: 100));
           await getGameController?.onKhoiDongNhiemVuChienDau(
             onThucThiHoanTat: () async {
-              await Future.delayed(Duration(milliseconds: 500));
+              await Future.delayed(Duration(milliseconds: 100));
               await getGameController?.onTaiTaiNguyenNhiemVuChienDau(
                 onThucThiHoanTat: () async {
-                  await Future.delayed(Duration(milliseconds: 500));
+                  await Future.delayed(Duration(milliseconds: 100));
                   await getGameController?.onKichHoatThucThiNhiemVuChienDau(
                     onThucThiHoanTat: () async {
                       await getKhungManHinhSS03000?.onAddRoot(flameGame: null, component: getKhungManHinhSS03000);
@@ -849,7 +851,7 @@ class QUANLYTHANHPHANMANHINHKHUNGMANHINHCHINH extends QUANLYTHANHPHANMANHINHTHUO
     // getGlobalStateManagementSystem?.onGetEntityResourceManagement?.getQuanLyTrangThaiHangarPhuongTien?.getDanhSachPhuongTienTaiTaiNguyen.clear();
 
     /// TODO:
-    getGlobalStateManagementSystem?.getChienDauCoTongQuat?.getChiDinhChienDauCoThucThiChienDau?.getTrangThai?.getSpriteChienDauCo2?.animation = null;
+    getGlobalStateManagementSystem?.getChienDauCoTongQuat?.getChiDinhChienDauCoThucThiChienDau?.getTrangThai?.getSpriteChienDauCo2?.onGiaiPhongTaiNguyen();
 
     /// TODO: Hiển Thị Màn Hình Bảng Điều Khiển Chiến Đấu
     await getKhungManHinhSS03000?.onHuyKichHoatThanhPhanManHinhThuocCap();
@@ -861,14 +863,14 @@ class QUANLYTHANHPHANMANHINHKHUNGMANHINHCHINH extends QUANLYTHANHPHANMANHINHTHUO
     await getKhungManHinhMasterLoading?.onKichHoatThanhPhanManHinhThuocCap(kichHoatUuTien: true);
 
     await Future.delayed(Duration.zero);
-    await Future.delayed(Duration(milliseconds: 500));
+    await Future.delayed(Duration(milliseconds: 100));
 
     await getGameController?.onGiaiPhongTaiNguyenMasterPhuongTien(
       onThucThiHoanTat: () async {
-        await Future.delayed(Duration(milliseconds: 500));
+        await Future.delayed(Duration(milliseconds: 100));
         await getGameController?.onTaiTaiNguyenMaster(
           onThucThiHoanTat: () async {
-            await Future.delayed(Duration(milliseconds: 500));
+            await Future.delayed(Duration(milliseconds: 100));
 
             ///
             /// TODO:

@@ -106,11 +106,13 @@ class QUANLYTHANHPHANMANHINHTHUOCCAP extends QUANLYTHANHPHANMANHINHTHUOCCAPCOBAN
       /// TODO:
       /// -----
       await Future.wait([
-        onAddComponent(flameGame: null, parentComponent: component, childComponent: getKhungManHinhSS300100).catchError((e) => null),
+
         onAddComponent(flameGame: null, parentComponent: component, childComponent: getKhungManHinhSS300200).catchError((e) => null),
         onAddComponent(flameGame: null, parentComponent: component, childComponent: getKhungManHinhSS300300).catchError((e) => null),
         onAddComponent(flameGame: null, parentComponent: component, childComponent: getKhungManHinhSS300400).catchError((e) => null),
         onAddComponent(flameGame: null, parentComponent: component, childComponent: getKhungManHinhSS300500).catchError((e) => null),
+
+        onAddComponent(flameGame: null, parentComponent: component, childComponent: getKhungManHinhSS300100).catchError((e) => null),
       ]);
 
       /// -----
@@ -135,11 +137,13 @@ class QUANLYTHANHPHANMANHINHTHUOCCAP extends QUANLYTHANHPHANMANHINHTHUOCCAPCOBAN
       /// TODO:
       /// -----
       await Future.wait([
-        getKhungManHinhSS300100?.onAddRoot(flameGame: flameGame, component: component).catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onAddRootForSubCom'),
+
         getKhungManHinhSS300200?.onAddRoot(flameGame: flameGame, component: component).catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onAddRootForSubCom'),
         getKhungManHinhSS300300?.onAddRoot(flameGame: flameGame, component: component).catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onAddRootForSubCom'),
         getKhungManHinhSS300400?.onAddRoot(flameGame: flameGame, component: component).catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onAddRootForSubCom'),
         getKhungManHinhSS300500?.onAddRoot(flameGame: flameGame, component: component).catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onAddRootForSubCom'),
+
+        getKhungManHinhSS300100?.onAddRoot(flameGame: flameGame, component: component).catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onAddRootForSubCom'),
       ]);
     } catch (e) {
       await onReportRootIssue(nameFunction: 'onAddRootForSubCom');
@@ -242,7 +246,7 @@ class QUANLYTHANHPHANMANHINHTHUOCCAP extends QUANLYTHANHPHANMANHINHTHUOCCAPCOBAN
         ]);
       }
 
-      await getKhungManHinhSS300100?.onCaiDatDoUuTien(value: 20);
+      await getKhungManHinhSS300100?.onCaiDatDoUuTien(value: 1000);
       await getKhungManHinhSS300200?.onCaiDatDoUuTien(value: 20);
       await getKhungManHinhSS300300?.onCaiDatDoUuTien(value: 20);
       await getKhungManHinhSS300400?.onCaiDatDoUuTien(value: 20);
@@ -353,7 +357,7 @@ class QUANLYTHANHPHANMANHINHTHUOCCAP extends QUANLYTHANHPHANMANHINHTHUOCCAPCOBAN
       /// TODO:
       /// -----
 
-      getKhungManHinhSS300100?.onKichHoatThanhPhanManHinhThuocCap(kichHoatUuTien: true);
+      await getKhungManHinhSS300100?.onKichHoatThanhPhanManHinhThuocCap(kichHoatUuTien: true);
     } catch (e) {
       await onReportRootIssue(nameFunction: 'onKichHoatKhungManHinhThuocCapSS300100');
     }
@@ -371,7 +375,7 @@ class QUANLYTHANHPHANMANHINHTHUOCCAP extends QUANLYTHANHPHANMANHINHTHUOCCAPCOBAN
       /// -----
       /// TODO:
       /// -----
-      getKhungManHinhSS300100?.onHuyKichHoatThanhPhanManHinhThuocCap();
+      await getKhungManHinhSS300100?.onHuyKichHoatThanhPhanManHinhThuocCap();
     } catch (e) {
       await onReportRootIssue(nameFunction: 'onHuyKichHoatKhungManHinhThuocCapSS300100');
     }
@@ -389,7 +393,7 @@ class QUANLYTHANHPHANMANHINHTHUOCCAP extends QUANLYTHANHPHANMANHINHTHUOCCAPCOBAN
       /// -----
       /// TODO:
       /// -----
-      getKhungManHinhSS300200?.onKichHoatThanhPhanManHinhThuocCap(kichHoatUuTien: true);
+      await getKhungManHinhSS300200?.onKichHoatThanhPhanManHinhThuocCap(kichHoatUuTien: true);
     } catch (e) {
       await onReportRootIssue(nameFunction: 'onKichHoatKhungManHinhThuocCapSS300200');
     }
@@ -464,7 +468,7 @@ class QUANLYTHANHPHANMANHINHTHUOCCAP extends QUANLYTHANHPHANMANHINHTHUOCCAPCOBAN
 
       await getKhungManHinhSS300400?.onKichHoatThanhPhanManHinhThuocCap(kichHoatUuTien: true);
 
-      getGlobalStateManagementSystem?.getDichVuMayPhatAmThanh?.getAmThanhHeThong?.getAmThanhHieuUngChienDauChienThang?.onPlay();
+      await getGlobalStateManagementSystem?.getDichVuMayPhatAmThanh?.getAmThanhHeThong?.getAmThanhHieuUngChienDauChienThang?.onPlay();
     } catch (e) {
       await onReportRootIssue(nameFunction: 'onKichHoatKhungManHinhThuocCapSS300400ChienThang');
     }

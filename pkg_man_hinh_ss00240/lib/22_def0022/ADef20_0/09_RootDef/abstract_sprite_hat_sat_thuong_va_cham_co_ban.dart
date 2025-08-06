@@ -117,8 +117,8 @@ abstract class SpriteHatSatThuongVaChamCoBan extends TextComponent with HasVisib
     return;
   }
 
-  double fontSizeNguyenBan = 28;
-  double fontSizeCapNhat = 28;
+  double fontSizeNguyenBan = 30;
+  double fontSizeCapNhat = 30;
   int _bienTangTien = 0;
   /// -----
   /// TODO:

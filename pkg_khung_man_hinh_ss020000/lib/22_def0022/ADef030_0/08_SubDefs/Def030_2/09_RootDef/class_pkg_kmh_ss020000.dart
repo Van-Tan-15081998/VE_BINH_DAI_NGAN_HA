@@ -11,7 +11,7 @@ import 'package:pkg_khung_man_hinh_ss020000/pkg_khung_man_hinh_ss020000_exp.dart
 /// -----
 /// TODO: Thành Phần Nút Bấm Thuộc Cấp Thuần Kích Hoạt
 /// -----
-abstract class THANHPHANNUTBAMTHUOCCAPTHUANKICHHOAT extends PositionComponent with TapCallbacks, CauTrucThucThiCoBan {
+abstract class THANHPHANNUTBAMTHUOCCAPTHUANKICHHOAT extends PositionComponent with HasVisibility, TapCallbacks, CauTrucThucThiCoBan {
   /// -----
   /// TODO:
   /// -----

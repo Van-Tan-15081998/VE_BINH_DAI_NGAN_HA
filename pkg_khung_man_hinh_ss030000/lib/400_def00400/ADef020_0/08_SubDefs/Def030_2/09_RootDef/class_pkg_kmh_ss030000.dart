@@ -112,8 +112,8 @@ class QUANLYTHANHPHANNUTBAMTHUOCCAP extends QUANLYTHANHPHANNUTBAMTHUOCCAPCOBAN {
       double sizeDxKhungManHinh = getSizeDx ?? 100.0;
       double sizeDyKhungManHinh = getSizeDy ?? 100.0;
 
-      double sizeDxNutBam = 50.0;
-      double sizeDyNutBam = 50.0;
+      double sizeDxNutBam = 45.0;
+      double sizeDyNutBam = 45.0;
 
       await Future.wait([
         onCaiDatNutBamSS030000SS010(
@@ -123,8 +123,8 @@ class QUANLYTHANHPHANNUTBAMTHUOCCAP extends QUANLYTHANHPHANNUTBAMTHUOCCAPCOBAN {
             thanhPhanQuanLyThuocCapTrucTiep: getThanhPhanQuanLyThuocCapTrucTiep,
             sizeDx: sizeDxNutBam,
             sizeDy: sizeDyNutBam,
-            positionDx: sizeDxKhungManHinh - sizeDxNutBam,
-            positionDy: sizeDyNutBam * 2,
+            positionDx: sizeDxKhungManHinh - (sizeDxNutBam * 2/3),
+            positionDy: sizeDyNutBam * 2/3,
             onTapCancelEvent: null,
             onTapDownEvent: null,
             onTapUpEvent: () {},

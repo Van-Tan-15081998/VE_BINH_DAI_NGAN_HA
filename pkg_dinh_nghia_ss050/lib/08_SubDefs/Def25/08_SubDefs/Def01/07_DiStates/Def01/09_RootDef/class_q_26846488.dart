@@ -24,9 +24,9 @@ class TrangThaiChienDauCoChiDinhThucThiChienDau {
   /// -----
   /// TODO:
   /// -----
-  SpriteAnimationComponent? _spriteChienDauCo;
-  SpriteAnimationComponent? get getSpriteChienDauCo => _spriteChienDauCo;
-  void onVoidCaiDatSpriteChienDauCo({required SpriteAnimationComponent? value}) {
+  SpriteAnimationCoBan? _spriteChienDauCo;
+  SpriteAnimationCoBan? get getSpriteChienDauCo => _spriteChienDauCo;
+  void onVoidCaiDatSpriteChienDauCo({required SpriteAnimationCoBan? value}) {
     _spriteChienDauCo = value;
     return;
   }
@@ -34,9 +34,9 @@ class TrangThaiChienDauCoChiDinhThucThiChienDau {
   /// -----
   /// TODO:
   /// -----
-  SpriteAnimationComponent? _spriteChienDauCo2;
-  SpriteAnimationComponent? get getSpriteChienDauCo2 => _spriteChienDauCo2;
-  void onVoidCaiDatSpriteChienDauCo2({required SpriteAnimationComponent? value}) {
+  SpriteAnimationCoBan? _spriteChienDauCo2;
+  SpriteAnimationCoBan? get getSpriteChienDauCo2 => _spriteChienDauCo2;
+  void onVoidCaiDatSpriteChienDauCo2({required SpriteAnimationCoBan? value}) {
     _spriteChienDauCo2 = value;
     return;
   }

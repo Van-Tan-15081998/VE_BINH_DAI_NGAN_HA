@@ -450,7 +450,7 @@ class QUANLYTHANHPHANTICHHOPKHUNGMANHINHCHINH extends QUANLYTHANHPHANTICHHOPTHUO
           ?.getCauTrucLuotXamNhapNgauNhienSS060 //
           ?.caiDatCardNhiemVuNganChanXamNhap(value: getCardNhiemVuChienDauChongXamNhapSS060, caiDatUuTien: true);
 
-      await getGlobalStateManagementSystem?.getBangDieuKhienKichBanChienDauTheoGiaiDoan?.getQuanLyVanHanhNganChanXamNhap?.caiDatSanSangVanHanh(value: true, caiDatUuTien: true);
+      // await getGlobalStateManagementSystem?.getBangDieuKhienKichBanChienDauTheoGiaiDoan?.getQuanLyVanHanhNganChanXamNhap?.caiDatSanSangVanHanh(value: true, caiDatUuTien: true);
 
       /// -----
       /// TODO: Setup Root For SubCom

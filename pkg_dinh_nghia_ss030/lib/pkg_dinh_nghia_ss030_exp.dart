@@ -298,6 +298,10 @@ export '28_def0028/ADef22_0/08_SubDefs/DefB40/08_SubDefs/Def24/09_RootDef/class_
 /// TODO: _____[PHUONG_TIEN_TAN_CONG_CLASS_50B_SS01]_____
 /// TODO: _____[PHUONG_TIEN_TAN_CONG_CLASS_50B_SS02]_____
 /// TODO: _____[PHUONG_TIEN_TAN_CONG_CLASS_50B_SS03]_____
+export '28_def0028/ADef22_0/08_SubDefs/DefB50/08_SubDefs/Def20/09_RootDef/class_20020668.dart';
+export '28_def0028/ADef22_0/08_SubDefs/DefB50/08_SubDefs/Def22/09_RootDef/class_20020800.dart';
+export '28_def0028/ADef22_0/08_SubDefs/DefB50/08_SubDefs/Def24/09_RootDef/class_20020822.dart';
+
 
 // export '28_def0028/ADef24_0/08_SubDefs/DefA10/08_SubDefs/Def20/09_RootDef/class_20020866.dart';
 // export '28_def0028/ADef24_0/08_SubDefs/DefA10/08_SubDefs/Def22/09_RootDef/class_20020888.dart';

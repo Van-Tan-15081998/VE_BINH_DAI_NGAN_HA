@@ -290,4 +290,8 @@ abstract class SpriteAnimationCoBan extends SpriteAnimationComponent with HasVis
       onVoidCapNhatPositionSizeValues();
     }
   }
+
+  void onGiaiPhongTaiNguyen() {
+    animation = null;
+  }
 }

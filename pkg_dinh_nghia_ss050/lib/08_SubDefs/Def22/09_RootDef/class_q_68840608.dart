@@ -158,4 +158,19 @@ class QuanLyTrangThaiTienTrinhTongQuat with KhungThucThiCoBan {
     _tienTrinhThucThiChienDauGanKetChienDauCo ??= value;
     return;
   }
+
+  bool? _trangThaiHoatDongTaiManHinhChinh;
+  bool? get getTrangThaiHoatDongTaiManHinhChinh => _trangThaiHoatDongTaiManHinhChinh;
+  Future<void> onCaiDatTrangThaiHoatDongTaiManHinhChinh({required bool? value, bool? caiDatUuTien, Future<void> Function()? onThucThiHoanTat}) async {
+    if (caiDatUuTien == true) {
+      _trangThaiHoatDongTaiManHinhChinh = value;
+    } else {
+      _trangThaiHoatDongTaiManHinhChinh ??= value;
+    }
+
+    await onThucThiHoanTat?.call();
+
+    ///
+    return;
+  }
 }

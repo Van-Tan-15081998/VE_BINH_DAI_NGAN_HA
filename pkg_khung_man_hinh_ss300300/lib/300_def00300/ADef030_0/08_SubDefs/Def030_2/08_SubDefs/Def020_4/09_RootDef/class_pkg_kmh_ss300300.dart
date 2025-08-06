@@ -1,3 +1,4 @@
+import 'dart:ui';
 import 'package:flame/events.dart';
 import 'package:pkg_dinh_nghia_ss022/pkg_dinh_nghia_ss022_exp.dart';
 import 'package:pkg_khung_man_hinh_ss020000/pkg_khung_man_hinh_ss020000_exp.dart';
@@ -89,6 +90,10 @@ class NUTBAMCHONHOISINH extends THANHPHANNUTBAMTHUOCCAPTHUANKICHHOAT {
     await super.onInitRoot();
 
     getThanhPhanVanBan?.onVoidCaiDatVanBan(value: 'HỒI SINH', caiDatUuTien: true);
+
+    getThanhPhanVanBan?.onCaiDatPhongCachVanBan(color: Color(0xFF2E2E2E), fontSize: 15, fontWeight: FontWeight.bold);
+
+    getThanhPhanVanBan?.caiDatTuyChinhTextRenderer = true;
 
     ///
     return;

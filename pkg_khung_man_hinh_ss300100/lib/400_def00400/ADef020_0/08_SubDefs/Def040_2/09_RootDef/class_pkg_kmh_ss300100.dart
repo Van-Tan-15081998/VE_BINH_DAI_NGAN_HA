@@ -114,6 +114,8 @@ class QUANLYTHANHPHANVANBANTHUOCCAP extends QUANLYTHANHPHANVANBANTHUOCCAPCOBAN {
           onReportRootIssue(nameFunction: ''),
     ]);
 
+    getVanBanDinhDanhKhungManHinh?.priority = 1001;
+
     ///
     return;
   }

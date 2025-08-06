@@ -33,6 +33,8 @@ class KHUNGTICHHOPTAINGUYENDOLLARTRAODOI extends THANHPHANTICHHOPNUTBAMVANBANTHU
 
     await onCapNhatChiTietThanhPhanGameUI();
 
+    isVisible = false;
+
     return;
   }
 
@@ -42,6 +44,16 @@ class KHUNGTICHHOPTAINGUYENDOLLARTRAODOI extends THANHPHANTICHHOPNUTBAMVANBANTHU
   void update(double dt) {
     // TODO: implement update
     super.update(dt);
+
+    if (getGlobalStateManagementSystem?.getTienTrinhTongQuat?.getTrangThaiHoatDongTaiManHinhChinh == true) {
+      if (isVisible == false) {
+        isVisible = true;
+      }
+    } else {
+      if (isVisible == true) {
+        isVisible = false;
+      }
+    }
 
     if (tongSoLuongTaiNguyenDollarTraoDoi != 0) {
       tongSoLuongTaiNguyenDollarTraoDoi = 1000;

@@ -276,8 +276,8 @@ class QUANLYDIEUKHIENCHUYENKICHBANCHIENDAU with CauTrucThucThiCoBan, DanhSachQua
           0) {
         await getTienTrinhTongQuat?.getTienTrinhThucThiChienDau?.getTrangThai?.getMoHinh?.caiDatChienDauCoMatKhaNangChienDau();
 
-        // await getMainGameController?.onKichHoatKhungManHinhThuocCapSS300300(); // Khung Màn Hình Hồi Sinh
-        await getMainGameController?.onKichHoatKhungManHinhThuocCapSS300500(); // Khung Màn Hình Thất Bại
+        await getMainGameController?.onKichHoatKhungManHinhThuocCapSS300300(); // Khung Màn Hình Hồi Sinh
+        // await getMainGameController?.onKichHoatKhungManHinhThuocCapSS300500(); // Khung Màn Hình Thất Bại
 
         return;
       }

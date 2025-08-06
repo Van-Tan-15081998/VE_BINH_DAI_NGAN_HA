@@ -3,6 +3,7 @@ import 'dart:math';
 import 'package:pkg_dinh_nghia_ss024/pkg_dinh_nghia_ss024_exp.dart';
 
 import 'package:pkg_dinh_nghia_ss020000/pkg_dinh_nghia_ss020000_exp.dart';
+import 'package:pkg_dinh_nghia_ss050020/26_def0028/ADef30_0/08_SubDefs/Def9999_2/09_RootDef/class_050020.dart';
 
 import 'package:pkg_dinh_nghia_ss050020/pkg_dinh_nghia_ss050020_exp.dart';
 
@@ -75,13 +76,17 @@ class QUANLYVANHANHNGANCHANXAMNHAP with CAUTRUCTHUCTHICOBAN, DanhSachQuanLyTrang
         DONVILUOTXAMNHAPCOBAN? donViNgauNhien;
 
         if (
-            // (getCauTrucLuotXamNhapNgauNhienSS010?.getDonViLuotXamNhap?.getKiemTraKichBanXuatHienBoss == null || getCauTrucLuotXamNhapNgauNhienSS010?.getDonViLuotXamNhap?.getKiemTraKichBanXuatHienBoss == false) &&
-            (getCauTrucLuotXamNhapNgauNhienSS020?.getDonViLuotXamNhap?.getKiemTraKichBanXuatHienBoss == null || getCauTrucLuotXamNhapNgauNhienSS020?.getDonViLuotXamNhap?.getKiemTraKichBanXuatHienBoss == false) &&
-            (getCauTrucLuotXamNhapNgauNhienSS030?.getDonViLuotXamNhap?.getKiemTraKichBanXuatHienBoss == null || getCauTrucLuotXamNhapNgauNhienSS030?.getDonViLuotXamNhap?.getKiemTraKichBanXuatHienBoss == false) &&
-            (getCauTrucLuotXamNhapNgauNhienSS040?.getDonViLuotXamNhap?.getKiemTraKichBanXuatHienBoss == null || getCauTrucLuotXamNhapNgauNhienSS040?.getDonViLuotXamNhap?.getKiemTraKichBanXuatHienBoss == false) &&
-            (getCauTrucLuotXamNhapNgauNhienSS050?.getDonViLuotXamNhap?.getKiemTraKichBanXuatHienBoss == null || getCauTrucLuotXamNhapNgauNhienSS050?.getDonViLuotXamNhap?.getKiemTraKichBanXuatHienBoss == false) &&
-            (getCauTrucLuotXamNhapNgauNhienSS060?.getDonViLuotXamNhap?.getKiemTraKichBanXuatHienBoss == null || getCauTrucLuotXamNhapNgauNhienSS060?.getDonViLuotXamNhap?.getKiemTraKichBanXuatHienBoss == false)
-        ) {
+        // (getCauTrucLuotXamNhapNgauNhienSS010?.getDonViLuotXamNhap?.getKiemTraKichBanXuatHienBoss == null || getCauTrucLuotXamNhapNgauNhienSS010?.getDonViLuotXamNhap?.getKiemTraKichBanXuatHienBoss == false) &&
+        (getCauTrucLuotXamNhapNgauNhienSS020?.getDonViLuotXamNhap?.getKiemTraKichBanXuatHienBoss == null ||
+                getCauTrucLuotXamNhapNgauNhienSS020?.getDonViLuotXamNhap?.getKiemTraKichBanXuatHienBoss == false) &&
+            (getCauTrucLuotXamNhapNgauNhienSS030?.getDonViLuotXamNhap?.getKiemTraKichBanXuatHienBoss == null ||
+                getCauTrucLuotXamNhapNgauNhienSS030?.getDonViLuotXamNhap?.getKiemTraKichBanXuatHienBoss == false) &&
+            (getCauTrucLuotXamNhapNgauNhienSS040?.getDonViLuotXamNhap?.getKiemTraKichBanXuatHienBoss == null ||
+                getCauTrucLuotXamNhapNgauNhienSS040?.getDonViLuotXamNhap?.getKiemTraKichBanXuatHienBoss == false) &&
+            (getCauTrucLuotXamNhapNgauNhienSS050?.getDonViLuotXamNhap?.getKiemTraKichBanXuatHienBoss == null ||
+                getCauTrucLuotXamNhapNgauNhienSS050?.getDonViLuotXamNhap?.getKiemTraKichBanXuatHienBoss == false) &&
+            (getCauTrucLuotXamNhapNgauNhienSS060?.getDonViLuotXamNhap?.getKiemTraKichBanXuatHienBoss == null ||
+                getCauTrucLuotXamNhapNgauNhienSS060?.getDonViLuotXamNhap?.getKiemTraKichBanXuatHienBoss == false)) {
           int soNgauNhien = random.nextInt(10) + 1; // Tạo số từ 1 đến 10
           if (soNgauNhien % 2 == 0) {
             donViNgauNhien = getDanhSachDonViLuotXamNhapXuatHienBoss[random.nextInt(getDanhSachDonViLuotXamNhapXuatHienBoss.length)];
@@ -104,14 +109,17 @@ class QUANLYVANHANHNGANCHANXAMNHAP with CAUTRUCTHUCTHICOBAN, DanhSachQuanLyTrang
         final random = Random();
         DONVILUOTXAMNHAPCOBAN? donViNgauNhien;
 
-        if (
-        (getCauTrucLuotXamNhapNgauNhienSS010?.getDonViLuotXamNhap?.getKiemTraKichBanXuatHienBoss == null || getCauTrucLuotXamNhapNgauNhienSS010?.getDonViLuotXamNhap?.getKiemTraKichBanXuatHienBoss == false) &&
+        if ((getCauTrucLuotXamNhapNgauNhienSS010?.getDonViLuotXamNhap?.getKiemTraKichBanXuatHienBoss == null ||
+                getCauTrucLuotXamNhapNgauNhienSS010?.getDonViLuotXamNhap?.getKiemTraKichBanXuatHienBoss == false) &&
             // (getCauTrucLuotXamNhapNgauNhienSS020?.getDonViLuotXamNhap?.getKiemTraKichBanXuatHienBoss == null || getCauTrucLuotXamNhapNgauNhienSS020?.getDonViLuotXamNhap?.getKiemTraKichBanXuatHienBoss == false) &&
-            (getCauTrucLuotXamNhapNgauNhienSS030?.getDonViLuotXamNhap?.getKiemTraKichBanXuatHienBoss == null || getCauTrucLuotXamNhapNgauNhienSS030?.getDonViLuotXamNhap?.getKiemTraKichBanXuatHienBoss == false) &&
-            (getCauTrucLuotXamNhapNgauNhienSS040?.getDonViLuotXamNhap?.getKiemTraKichBanXuatHienBoss == null || getCauTrucLuotXamNhapNgauNhienSS040?.getDonViLuotXamNhap?.getKiemTraKichBanXuatHienBoss == false) &&
-            (getCauTrucLuotXamNhapNgauNhienSS050?.getDonViLuotXamNhap?.getKiemTraKichBanXuatHienBoss == null || getCauTrucLuotXamNhapNgauNhienSS050?.getDonViLuotXamNhap?.getKiemTraKichBanXuatHienBoss == false) &&
-            (getCauTrucLuotXamNhapNgauNhienSS060?.getDonViLuotXamNhap?.getKiemTraKichBanXuatHienBoss == null || getCauTrucLuotXamNhapNgauNhienSS060?.getDonViLuotXamNhap?.getKiemTraKichBanXuatHienBoss == false)
-        ) {
+            (getCauTrucLuotXamNhapNgauNhienSS030?.getDonViLuotXamNhap?.getKiemTraKichBanXuatHienBoss == null ||
+                getCauTrucLuotXamNhapNgauNhienSS030?.getDonViLuotXamNhap?.getKiemTraKichBanXuatHienBoss == false) &&
+            (getCauTrucLuotXamNhapNgauNhienSS040?.getDonViLuotXamNhap?.getKiemTraKichBanXuatHienBoss == null ||
+                getCauTrucLuotXamNhapNgauNhienSS040?.getDonViLuotXamNhap?.getKiemTraKichBanXuatHienBoss == false) &&
+            (getCauTrucLuotXamNhapNgauNhienSS050?.getDonViLuotXamNhap?.getKiemTraKichBanXuatHienBoss == null ||
+                getCauTrucLuotXamNhapNgauNhienSS050?.getDonViLuotXamNhap?.getKiemTraKichBanXuatHienBoss == false) &&
+            (getCauTrucLuotXamNhapNgauNhienSS060?.getDonViLuotXamNhap?.getKiemTraKichBanXuatHienBoss == null ||
+                getCauTrucLuotXamNhapNgauNhienSS060?.getDonViLuotXamNhap?.getKiemTraKichBanXuatHienBoss == false)) {
           int soNgauNhien = random.nextInt(10) + 1; // Tạo số từ 1 đến 10
           if (soNgauNhien % 2 == 0) {
             donViNgauNhien = getDanhSachDonViLuotXamNhapXuatHienBoss[random.nextInt(getDanhSachDonViLuotXamNhapXuatHienBoss.length)];
@@ -137,14 +145,17 @@ class QUANLYVANHANHNGANCHANXAMNHAP with CAUTRUCTHUCTHICOBAN, DanhSachQuanLyTrang
       if (getCauTrucLuotXamNhapNgauNhienSS030?.getDonViLuotXamNhap == null && getCauTrucLuotXamNhapNgauNhienSS030?.getKhoangThoiGianXuatHienLuotXamNhap == 0) {
         final random = Random();
         DONVILUOTXAMNHAPCOBAN? donViNgauNhien;
-        if (
-        (getCauTrucLuotXamNhapNgauNhienSS010?.getDonViLuotXamNhap?.getKiemTraKichBanXuatHienBoss == null || getCauTrucLuotXamNhapNgauNhienSS010?.getDonViLuotXamNhap?.getKiemTraKichBanXuatHienBoss == false) &&
-            (getCauTrucLuotXamNhapNgauNhienSS020?.getDonViLuotXamNhap?.getKiemTraKichBanXuatHienBoss == null || getCauTrucLuotXamNhapNgauNhienSS020?.getDonViLuotXamNhap?.getKiemTraKichBanXuatHienBoss == false) &&
+        if ((getCauTrucLuotXamNhapNgauNhienSS010?.getDonViLuotXamNhap?.getKiemTraKichBanXuatHienBoss == null ||
+                getCauTrucLuotXamNhapNgauNhienSS010?.getDonViLuotXamNhap?.getKiemTraKichBanXuatHienBoss == false) &&
+            (getCauTrucLuotXamNhapNgauNhienSS020?.getDonViLuotXamNhap?.getKiemTraKichBanXuatHienBoss == null ||
+                getCauTrucLuotXamNhapNgauNhienSS020?.getDonViLuotXamNhap?.getKiemTraKichBanXuatHienBoss == false) &&
             // (getCauTrucLuotXamNhapNgauNhienSS030?.getDonViLuotXamNhap?.getKiemTraKichBanXuatHienBoss == null || getCauTrucLuotXamNhapNgauNhienSS030?.getDonViLuotXamNhap?.getKiemTraKichBanXuatHienBoss == false) &&
-            (getCauTrucLuotXamNhapNgauNhienSS040?.getDonViLuotXamNhap?.getKiemTraKichBanXuatHienBoss == null || getCauTrucLuotXamNhapNgauNhienSS040?.getDonViLuotXamNhap?.getKiemTraKichBanXuatHienBoss == false) &&
-            (getCauTrucLuotXamNhapNgauNhienSS050?.getDonViLuotXamNhap?.getKiemTraKichBanXuatHienBoss == null || getCauTrucLuotXamNhapNgauNhienSS050?.getDonViLuotXamNhap?.getKiemTraKichBanXuatHienBoss == false) &&
-            (getCauTrucLuotXamNhapNgauNhienSS060?.getDonViLuotXamNhap?.getKiemTraKichBanXuatHienBoss == null || getCauTrucLuotXamNhapNgauNhienSS060?.getDonViLuotXamNhap?.getKiemTraKichBanXuatHienBoss == false)
-        ) {
+            (getCauTrucLuotXamNhapNgauNhienSS040?.getDonViLuotXamNhap?.getKiemTraKichBanXuatHienBoss == null ||
+                getCauTrucLuotXamNhapNgauNhienSS040?.getDonViLuotXamNhap?.getKiemTraKichBanXuatHienBoss == false) &&
+            (getCauTrucLuotXamNhapNgauNhienSS050?.getDonViLuotXamNhap?.getKiemTraKichBanXuatHienBoss == null ||
+                getCauTrucLuotXamNhapNgauNhienSS050?.getDonViLuotXamNhap?.getKiemTraKichBanXuatHienBoss == false) &&
+            (getCauTrucLuotXamNhapNgauNhienSS060?.getDonViLuotXamNhap?.getKiemTraKichBanXuatHienBoss == null ||
+                getCauTrucLuotXamNhapNgauNhienSS060?.getDonViLuotXamNhap?.getKiemTraKichBanXuatHienBoss == false)) {
           int soNgauNhien = random.nextInt(10) + 1; // Tạo số từ 1 đến 10
           if (soNgauNhien % 2 == 0) {
             donViNgauNhien = getDanhSachDonViLuotXamNhapXuatHienBoss[random.nextInt(getDanhSachDonViLuotXamNhapXuatHienBoss.length)];
@@ -173,14 +184,17 @@ class QUANLYVANHANHNGANCHANXAMNHAP with CAUTRUCTHUCTHICOBAN, DanhSachQuanLyTrang
         final random = Random();
         DONVILUOTXAMNHAPCOBAN? donViNgauNhien;
 
-        if (
-        (getCauTrucLuotXamNhapNgauNhienSS010?.getDonViLuotXamNhap?.getKiemTraKichBanXuatHienBoss == null || getCauTrucLuotXamNhapNgauNhienSS010?.getDonViLuotXamNhap?.getKiemTraKichBanXuatHienBoss == false) &&
-            (getCauTrucLuotXamNhapNgauNhienSS020?.getDonViLuotXamNhap?.getKiemTraKichBanXuatHienBoss == null || getCauTrucLuotXamNhapNgauNhienSS020?.getDonViLuotXamNhap?.getKiemTraKichBanXuatHienBoss == false) &&
-            (getCauTrucLuotXamNhapNgauNhienSS030?.getDonViLuotXamNhap?.getKiemTraKichBanXuatHienBoss == null || getCauTrucLuotXamNhapNgauNhienSS030?.getDonViLuotXamNhap?.getKiemTraKichBanXuatHienBoss == false) &&
+        if ((getCauTrucLuotXamNhapNgauNhienSS010?.getDonViLuotXamNhap?.getKiemTraKichBanXuatHienBoss == null ||
+                getCauTrucLuotXamNhapNgauNhienSS010?.getDonViLuotXamNhap?.getKiemTraKichBanXuatHienBoss == false) &&
+            (getCauTrucLuotXamNhapNgauNhienSS020?.getDonViLuotXamNhap?.getKiemTraKichBanXuatHienBoss == null ||
+                getCauTrucLuotXamNhapNgauNhienSS020?.getDonViLuotXamNhap?.getKiemTraKichBanXuatHienBoss == false) &&
+            (getCauTrucLuotXamNhapNgauNhienSS030?.getDonViLuotXamNhap?.getKiemTraKichBanXuatHienBoss == null ||
+                getCauTrucLuotXamNhapNgauNhienSS030?.getDonViLuotXamNhap?.getKiemTraKichBanXuatHienBoss == false) &&
             // (getCauTrucLuotXamNhapNgauNhienSS040?.getDonViLuotXamNhap?.getKiemTraKichBanXuatHienBoss == null || getCauTrucLuotXamNhapNgauNhienSS040?.getDonViLuotXamNhap?.getKiemTraKichBanXuatHienBoss == false) &&
-            (getCauTrucLuotXamNhapNgauNhienSS050?.getDonViLuotXamNhap?.getKiemTraKichBanXuatHienBoss == null || getCauTrucLuotXamNhapNgauNhienSS050?.getDonViLuotXamNhap?.getKiemTraKichBanXuatHienBoss == false) &&
-            (getCauTrucLuotXamNhapNgauNhienSS060?.getDonViLuotXamNhap?.getKiemTraKichBanXuatHienBoss == null || getCauTrucLuotXamNhapNgauNhienSS060?.getDonViLuotXamNhap?.getKiemTraKichBanXuatHienBoss == false)
-        ) {
+            (getCauTrucLuotXamNhapNgauNhienSS050?.getDonViLuotXamNhap?.getKiemTraKichBanXuatHienBoss == null ||
+                getCauTrucLuotXamNhapNgauNhienSS050?.getDonViLuotXamNhap?.getKiemTraKichBanXuatHienBoss == false) &&
+            (getCauTrucLuotXamNhapNgauNhienSS060?.getDonViLuotXamNhap?.getKiemTraKichBanXuatHienBoss == null ||
+                getCauTrucLuotXamNhapNgauNhienSS060?.getDonViLuotXamNhap?.getKiemTraKichBanXuatHienBoss == false)) {
           int soNgauNhien = random.nextInt(10) + 1; // Tạo số từ 1 đến 10
           if (soNgauNhien % 2 == 0) {
             donViNgauNhien = getDanhSachDonViLuotXamNhapXuatHienBoss[random.nextInt(getDanhSachDonViLuotXamNhapXuatHienBoss.length)];
@@ -209,14 +223,17 @@ class QUANLYVANHANHNGANCHANXAMNHAP with CAUTRUCTHUCTHICOBAN, DanhSachQuanLyTrang
         final random = Random();
         DONVILUOTXAMNHAPCOBAN? donViNgauNhien;
 
-        if (
-        (getCauTrucLuotXamNhapNgauNhienSS010?.getDonViLuotXamNhap?.getKiemTraKichBanXuatHienBoss == null || getCauTrucLuotXamNhapNgauNhienSS010?.getDonViLuotXamNhap?.getKiemTraKichBanXuatHienBoss == false) &&
-            (getCauTrucLuotXamNhapNgauNhienSS020?.getDonViLuotXamNhap?.getKiemTraKichBanXuatHienBoss == null || getCauTrucLuotXamNhapNgauNhienSS020?.getDonViLuotXamNhap?.getKiemTraKichBanXuatHienBoss == false) &&
-            (getCauTrucLuotXamNhapNgauNhienSS030?.getDonViLuotXamNhap?.getKiemTraKichBanXuatHienBoss == null || getCauTrucLuotXamNhapNgauNhienSS030?.getDonViLuotXamNhap?.getKiemTraKichBanXuatHienBoss == false) &&
-            (getCauTrucLuotXamNhapNgauNhienSS040?.getDonViLuotXamNhap?.getKiemTraKichBanXuatHienBoss == null || getCauTrucLuotXamNhapNgauNhienSS040?.getDonViLuotXamNhap?.getKiemTraKichBanXuatHienBoss == false) &&
+        if ((getCauTrucLuotXamNhapNgauNhienSS010?.getDonViLuotXamNhap?.getKiemTraKichBanXuatHienBoss == null ||
+                getCauTrucLuotXamNhapNgauNhienSS010?.getDonViLuotXamNhap?.getKiemTraKichBanXuatHienBoss == false) &&
+            (getCauTrucLuotXamNhapNgauNhienSS020?.getDonViLuotXamNhap?.getKiemTraKichBanXuatHienBoss == null ||
+                getCauTrucLuotXamNhapNgauNhienSS020?.getDonViLuotXamNhap?.getKiemTraKichBanXuatHienBoss == false) &&
+            (getCauTrucLuotXamNhapNgauNhienSS030?.getDonViLuotXamNhap?.getKiemTraKichBanXuatHienBoss == null ||
+                getCauTrucLuotXamNhapNgauNhienSS030?.getDonViLuotXamNhap?.getKiemTraKichBanXuatHienBoss == false) &&
+            (getCauTrucLuotXamNhapNgauNhienSS040?.getDonViLuotXamNhap?.getKiemTraKichBanXuatHienBoss == null ||
+                getCauTrucLuotXamNhapNgauNhienSS040?.getDonViLuotXamNhap?.getKiemTraKichBanXuatHienBoss == false) &&
             // (getCauTrucLuotXamNhapNgauNhienSS050?.getDonViLuotXamNhap?.getKiemTraKichBanXuatHienBoss == null || getCauTrucLuotXamNhapNgauNhienSS050?.getDonViLuotXamNhap?.getKiemTraKichBanXuatHienBoss == false) &&
-            (getCauTrucLuotXamNhapNgauNhienSS060?.getDonViLuotXamNhap?.getKiemTraKichBanXuatHienBoss == null || getCauTrucLuotXamNhapNgauNhienSS060?.getDonViLuotXamNhap?.getKiemTraKichBanXuatHienBoss == false)
-        ) {
+            (getCauTrucLuotXamNhapNgauNhienSS060?.getDonViLuotXamNhap?.getKiemTraKichBanXuatHienBoss == null ||
+                getCauTrucLuotXamNhapNgauNhienSS060?.getDonViLuotXamNhap?.getKiemTraKichBanXuatHienBoss == false)) {
           int soNgauNhien = random.nextInt(10) + 1; // Tạo số từ 1 đến 10
           if (soNgauNhien % 2 == 0) {
             donViNgauNhien = getDanhSachDonViLuotXamNhapXuatHienBoss[random.nextInt(getDanhSachDonViLuotXamNhapXuatHienBoss.length)];
@@ -245,13 +262,17 @@ class QUANLYVANHANHNGANCHANXAMNHAP with CAUTRUCTHUCTHICOBAN, DanhSachQuanLyTrang
         final random = Random();
         DONVILUOTXAMNHAPCOBAN? donViNgauNhien;
 
-        if (
-        (getCauTrucLuotXamNhapNgauNhienSS010?.getDonViLuotXamNhap?.getKiemTraKichBanXuatHienBoss == null || getCauTrucLuotXamNhapNgauNhienSS010?.getDonViLuotXamNhap?.getKiemTraKichBanXuatHienBoss == false) &&
-            (getCauTrucLuotXamNhapNgauNhienSS020?.getDonViLuotXamNhap?.getKiemTraKichBanXuatHienBoss == null || getCauTrucLuotXamNhapNgauNhienSS020?.getDonViLuotXamNhap?.getKiemTraKichBanXuatHienBoss == false) &&
-            (getCauTrucLuotXamNhapNgauNhienSS030?.getDonViLuotXamNhap?.getKiemTraKichBanXuatHienBoss == null || getCauTrucLuotXamNhapNgauNhienSS030?.getDonViLuotXamNhap?.getKiemTraKichBanXuatHienBoss == false) &&
-            (getCauTrucLuotXamNhapNgauNhienSS040?.getDonViLuotXamNhap?.getKiemTraKichBanXuatHienBoss == null || getCauTrucLuotXamNhapNgauNhienSS040?.getDonViLuotXamNhap?.getKiemTraKichBanXuatHienBoss == false) &&
-            (getCauTrucLuotXamNhapNgauNhienSS050?.getDonViLuotXamNhap?.getKiemTraKichBanXuatHienBoss == null || getCauTrucLuotXamNhapNgauNhienSS050?.getDonViLuotXamNhap?.getKiemTraKichBanXuatHienBoss == false)
-            // (getCauTrucLuotXamNhapNgauNhienSS060?.getDonViLuotXamNhap?.getKiemTraKichBanXuatHienBoss == null || getCauTrucLuotXamNhapNgauNhienSS060?.getDonViLuotXamNhap?.getKiemTraKichBanXuatHienBoss == false) &&
+        if ((getCauTrucLuotXamNhapNgauNhienSS010?.getDonViLuotXamNhap?.getKiemTraKichBanXuatHienBoss == null ||
+                getCauTrucLuotXamNhapNgauNhienSS010?.getDonViLuotXamNhap?.getKiemTraKichBanXuatHienBoss == false) &&
+            (getCauTrucLuotXamNhapNgauNhienSS020?.getDonViLuotXamNhap?.getKiemTraKichBanXuatHienBoss == null ||
+                getCauTrucLuotXamNhapNgauNhienSS020?.getDonViLuotXamNhap?.getKiemTraKichBanXuatHienBoss == false) &&
+            (getCauTrucLuotXamNhapNgauNhienSS030?.getDonViLuotXamNhap?.getKiemTraKichBanXuatHienBoss == null ||
+                getCauTrucLuotXamNhapNgauNhienSS030?.getDonViLuotXamNhap?.getKiemTraKichBanXuatHienBoss == false) &&
+            (getCauTrucLuotXamNhapNgauNhienSS040?.getDonViLuotXamNhap?.getKiemTraKichBanXuatHienBoss == null ||
+                getCauTrucLuotXamNhapNgauNhienSS040?.getDonViLuotXamNhap?.getKiemTraKichBanXuatHienBoss == false) &&
+            (getCauTrucLuotXamNhapNgauNhienSS050?.getDonViLuotXamNhap?.getKiemTraKichBanXuatHienBoss == null ||
+                getCauTrucLuotXamNhapNgauNhienSS050?.getDonViLuotXamNhap?.getKiemTraKichBanXuatHienBoss == false)
+        // (getCauTrucLuotXamNhapNgauNhienSS060?.getDonViLuotXamNhap?.getKiemTraKichBanXuatHienBoss == null || getCauTrucLuotXamNhapNgauNhienSS060?.getDonViLuotXamNhap?.getKiemTraKichBanXuatHienBoss == false) &&
         ) {
           int soNgauNhien = random.nextInt(10) + 1; // Tạo số từ 1 đến 10
           if (soNgauNhien % 2 == 0) {
@@ -314,11 +335,11 @@ class QUANLYVANHANHNGANCHANXAMNHAP with CAUTRUCTHUCTHICOBAN, DanhSachQuanLyTrang
           // DONVILUOTXAMNHAPCOBAN? donViNgauNhien = getDonViLuotXamNhapCapDoASS980; // X Không Hoạt Động
           // DONVILUOTXAMNHAPCOBAN? donViNgauNhien = getDonViLuotXamNhapCapDoASS990; // X Không Hoạt Động
           // DONVILUOTXAMNHAPCOBAN? donViNgauNhien = getDonViLuotXamNhapCapDoASS1000;
-
         }
 
         /// TEST
-        donViNgauNhien = getDonViLuotXamNhapCapDoASS700;
+        donViNgauNhien = getDonViLuotXamNhapCapDoASS1200;
+        // donViNgauNhien = getDonViLuotXamNhapCapDoASS9999;
 
         await getCauTrucLuotXamNhapNgauNhienSS060?.caiDatDonViLuotXamNhap(value: donViNgauNhien, caiDatUuTien: true);
         await getCauTrucLuotXamNhapNgauNhienSS060?.getDonViLuotXamNhap?.onSetupRoot();
@@ -542,6 +563,8 @@ class QUANLYVANHANHNGANCHANXAMNHAP with CAUTRUCTHUCTHICOBAN, DanhSachQuanLyTrang
         caiDatDonViLuotXamNhapCapDoASS1180(value: DONVILUOTXAMNHAPCAPDOASS1180()).catchError((e) => null),
         caiDatDonViLuotXamNhapCapDoASS1190(value: DONVILUOTXAMNHAPCAPDOASS1190()).catchError((e) => null),
         caiDatDonViLuotXamNhapCapDoASS1200(value: DONVILUOTXAMNHAPCAPDOASS1200()).catchError((e) => null),
+
+        caiDatDonViLuotXamNhapCapDoASS9999(value: DONVILUOTXAMNHAPCAPDOASS9999()).catchError((e) => null),
       ]);
 
       await getNhiemVuChienDauChonChiDinh?.onCaiDatMoHinh(value: getNhiemVuChienDauNganChanXamNhap);
@@ -626,13 +649,13 @@ class QUANLYVANHANHNGANCHANXAMNHAP with CAUTRUCTHUCTHICOBAN, DanhSachQuanLyTrang
           getDonViLuotXamNhapCapDoASS680,
           getDonViLuotXamNhapCapDoASS690,
           getDonViLuotXamNhapCapDoASS700,
+
           //
           // getDonViLuotXamNhapCapDoASS710, // [X] Không Hoạt Động
           // getDonViLuotXamNhapCapDoASS720, // [X] Không Hoạt Động
           // getDonViLuotXamNhapCapDoASS730, // [X] Không Hoạt Động
           // getDonViLuotXamNhapCapDoASS740, // [X] Không Hoạt Động
           // getDonViLuotXamNhapCapDoASS750, // [X] Không Hoạt Động
-
           getDonViLuotXamNhapCapDoASS1010,
           getDonViLuotXamNhapCapDoASS1020,
           getDonViLuotXamNhapCapDoASS1030,
@@ -900,6 +923,9 @@ class QUANLYVANHANHNGANCHANXAMNHAP with CAUTRUCTHUCTHICOBAN, DanhSachQuanLyTrang
         getDonViLuotXamNhapCapDoASS1180?.onSetupRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
         getDonViLuotXamNhapCapDoASS1190?.onSetupRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
         getDonViLuotXamNhapCapDoASS1200?.onSetupRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+
+        /// TEST
+        getDonViLuotXamNhapCapDoASS9999?.onSetupRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
       ]);
     } catch (e) {
       await onReportRootIssue(nameFunction: 'Ss');
@@ -1062,6 +1088,9 @@ class QUANLYVANHANHNGANCHANXAMNHAP with CAUTRUCTHUCTHICOBAN, DanhSachQuanLyTrang
         getDonViLuotXamNhapCapDoASS1180?.onInitRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
         getDonViLuotXamNhapCapDoASS1190?.onInitRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
         getDonViLuotXamNhapCapDoASS1200?.onInitRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+
+        /// TEST
+        getDonViLuotXamNhapCapDoASS9999?.onInitRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
       ]);
     } catch (e) {
       await onReportRootIssue(nameFunction: 'Ii');
@@ -3015,6 +3044,21 @@ class QUANLYVANHANHNGANCHANXAMNHAP with CAUTRUCTHUCTHICOBAN, DanhSachQuanLyTrang
       _donViLuotXamNhapCapDoASS1200 = value;
     } else {
       _donViLuotXamNhapCapDoASS1200 ??= value;
+    }
+
+    return;
+  }
+
+  /// -----
+  /// TODO:
+  /// -----
+  DONVILUOTXAMNHAPCAPDOASS9999? _donViLuotXamNhapCapDoASS9999;
+  DONVILUOTXAMNHAPCAPDOASS9999? get getDonViLuotXamNhapCapDoASS9999 => _donViLuotXamNhapCapDoASS9999;
+  Future<void> caiDatDonViLuotXamNhapCapDoASS9999({required DONVILUOTXAMNHAPCAPDOASS9999? value, bool? caiDatUuTien}) async {
+    if (caiDatUuTien == true) {
+      _donViLuotXamNhapCapDoASS9999 = value;
+    } else {
+      _donViLuotXamNhapCapDoASS9999 ??= value;
     }
 
     return;

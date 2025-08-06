@@ -13,6 +13,7 @@ import 'package:pkg_khung_man_hinh_ss020000/pkg_khung_man_hinh_ss020000_exp.dart
 abstract class THANHPHANTICHHOPNUTBAMVANBANTHUOCCAP extends PositionComponent
         // with TapCallbacks, GestureHitboxes, HasGameRef, CauTrucThucThiCoBan {
         with
+        HasVisibility,
         TapCallbacks,
         CauTrucThucThiCoBan {
   /// -----
@@ -437,9 +438,7 @@ abstract class THANHPHANTICHHOPNUTBAMVANBANTHUOCCAP extends PositionComponent
   /// -----
   Future<void> onCaiDatChiTietThanhPhanGameUI();
   Future<void> onCapNhatChiTietThanhPhanGameUI() async {
-    await Future.wait([
-      getSpriteAnimationComponent?.onCaiDatThanhPhanGameUI(value: getThanhPhanGameUI, caiDatUuTien: true).catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
-    ]);
+    await Future.wait([getSpriteAnimationComponent?.onCaiDatThanhPhanGameUI(value: getThanhPhanGameUI, caiDatUuTien: true).catchError((e) => null) ?? onReportRootIssue(nameFunction: '')]);
   }
 
   /// -----

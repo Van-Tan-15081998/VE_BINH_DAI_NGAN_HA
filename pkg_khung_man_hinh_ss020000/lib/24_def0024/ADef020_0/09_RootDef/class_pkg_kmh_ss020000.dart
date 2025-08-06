@@ -538,7 +538,9 @@ abstract class KHUNGMANHINHGAMECOSO extends FlameGame with CAUTRUCTHUCTHICOBAN, 
     /// -----
     await onKichHoatKhungManHinhThuocCapLoadingSS010();
 
-    await Future.wait([getGlobalStateManagementSystem?.onInitRootForFistOnly().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onInitRootForSubCom')]);
+    await Future.wait([
+      getGlobalStateManagementSystem?.onInitRootForFistOnly().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onInitRootForSubCom'), //
+    ]);
 
     /// -----
     /// TODO:
@@ -738,6 +740,14 @@ abstract class KHUNGMANHINHGAMECOSO extends FlameGame with CAUTRUCTHUCTHICOBAN, 
     /// TODO: Hủy Kích Hoạt Khung Màn Hình Thuộc Cấp Loading SS010 [Master Loading]
     /// -----
     await onHuyKichHoatKhungManHinhThuocCapLoadingSS010();
+
+    await getGlobalStateManagementSystem?.getTienTrinhTongQuat?.onCaiDatTrangThaiHoatDongTaiManHinhChinh(
+      value: true,
+      caiDatUuTien: true,
+      onThucThiHoanTat: () async {
+        await getGlobalStateManagementSystem?.getBangDieuKhienKichBanChienDauTheoGiaiDoan?.getQuanLyVanHanhNganChanXamNhap?.caiDatSanSangVanHanh(value: true, caiDatUuTien: true);
+      },
+    );
 
     ///
     return;

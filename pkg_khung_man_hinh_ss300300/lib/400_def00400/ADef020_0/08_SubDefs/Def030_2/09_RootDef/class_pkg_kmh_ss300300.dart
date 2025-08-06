@@ -56,17 +56,17 @@ class QUANLYTHANHPHANNUTBAMTHUOCCAP extends QUANLYTHANHPHANNUTBAMTHUOCCAPCOBAN {
     return;
   }
 
-  NUTBAMCHONQUAYVETRANGCHU? _nutBamChonQuayVeTrangchu;
-  NUTBAMCHONQUAYVETRANGCHU? get getNutBamChonQuayVeTrangchu =>
-      _nutBamChonQuayVeTrangchu;
-  Future<void> onCaiDatNutBamChonQuayVeTrangchu({
-    required NUTBAMCHONQUAYVETRANGCHU? value,
+  NUTBAMCHONTIEPTUCVOIKETQUATHATBAI? _nutBamChonTiepTucVoiKetQuaThatBai;
+  NUTBAMCHONTIEPTUCVOIKETQUATHATBAI? get getNutBamChonTiepTucVoiKetQuaThatBai =>
+      _nutBamChonTiepTucVoiKetQuaThatBai;
+  Future<void> onCaiDatNutBamChonTiepTucVoiKetQuaThatBai({
+    required NUTBAMCHONTIEPTUCVOIKETQUATHATBAI? value,
     bool? caiDatUuTien,
   }) async {
     if (caiDatUuTien == true) {
-      _nutBamChonQuayVeTrangchu = value;
+      _nutBamChonTiepTucVoiKetQuaThatBai = value;
     } else {
-      _nutBamChonQuayVeTrangchu ??= value;
+      _nutBamChonTiepTucVoiKetQuaThatBai ??= value;
     }
 
     ///
@@ -145,7 +145,7 @@ class QUANLYTHANHPHANNUTBAMTHUOCCAP extends QUANLYTHANHPHANNUTBAMTHUOCCAPCOBAN {
       onAddComponent(
         flameGame: flameGame,
         parentComponent: component,
-        childComponent: getNutBamChonQuayVeTrangchu,
+        childComponent: getNutBamChonTiepTucVoiKetQuaThatBai,
       ).catchError((e) => null),
 
       ///
@@ -173,7 +173,7 @@ class QUANLYTHANHPHANNUTBAMTHUOCCAP extends QUANLYTHANHPHANNUTBAMTHUOCCAPCOBAN {
               ?.onAddRoot(flameGame: flameGame, component: component)
               .catchError((e) => null) ??
           onReportRootIssue(nameFunction: 'onAddRootForSubCom'),
-      getNutBamChonQuayVeTrangchu
+      getNutBamChonTiepTucVoiKetQuaThatBai
               ?.onAddRoot(flameGame: flameGame, component: component)
               .catchError((e) => null) ??
           onReportRootIssue(nameFunction: 'onAddRootForSubCom'),
@@ -219,8 +219,8 @@ class QUANLYTHANHPHANNUTBAMTHUOCCAP extends QUANLYTHANHPHANNUTBAMTHUOCCAPCOBAN {
           caiDatUuTien: true,
         ).catchError((e) => null),
 
-        onCaiDatNutBamChonQuayVeTrangchu(
-          value: NUTBAMCHONQUAYVETRANGCHU(
+        onCaiDatNutBamChonTiepTucVoiKetQuaThatBai(
+          value: NUTBAMCHONTIEPTUCVOIKETQUATHATBAI(
             globalStateManagementSystem: getGlobalStateManagementSystem,
             gameController: getGameController,
             thanhPhanQuanLyThuocCapTrucTiep: getThanhPhanQuanLyThuocCapTrucTiep,
@@ -264,7 +264,7 @@ class QUANLYTHANHPHANNUTBAMTHUOCCAP extends QUANLYTHANHPHANNUTBAMTHUOCCAPCOBAN {
       await Future.wait([
         getNutBamChonHoiSinh?.onSetupRoot().catchError((e) => null) ??
             onReportRootIssue(nameFunction: 'onSetupRootForSubCom'),
-        getNutBamChonQuayVeTrangchu?.onSetupRoot().catchError((e) => null) ??
+        getNutBamChonTiepTucVoiKetQuaThatBai?.onSetupRoot().catchError((e) => null) ??
             onReportRootIssue(nameFunction: 'onSetupRootForSubCom'),
 
         ///
@@ -291,14 +291,14 @@ class QUANLYTHANHPHANNUTBAMTHUOCCAP extends QUANLYTHANHPHANNUTBAMTHUOCCAPCOBAN {
       await Future.wait([
         getNutBamChonHoiSinh?.onInitRoot().catchError((e) => null) ??
             onReportRootIssue(nameFunction: 'onInitRootForSubCom'),
-        getNutBamChonQuayVeTrangchu?.onInitRoot().catchError((e) => null) ??
+        getNutBamChonTiepTucVoiKetQuaThatBai?.onInitRoot().catchError((e) => null) ??
             onReportRootIssue(nameFunction: 'onInitRootForSubCom'),
 
         ///
       ]);
 
       await getNutBamChonHoiSinh?.onKichHoatThanhPhanThuocCap();
-      await getNutBamChonQuayVeTrangchu?.onKichHoatThanhPhanThuocCap();
+      await getNutBamChonTiepTucVoiKetQuaThatBai?.onKichHoatThanhPhanThuocCap();
 
     } catch (e) {
       await onReportRootIssue(nameFunction: 'onInitRootForSubCom');

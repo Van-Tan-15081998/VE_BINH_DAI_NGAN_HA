@@ -52,9 +52,6 @@ class KhungVongLapSS01PkgManHinhSS00226 extends Component with VongLapThoiGianCo
 
   @override
   void update(double dt) {
-
-    // return;
-
     ///
     ///
     /// TODO: Chạy Vòng Loop
@@ -63,35 +60,23 @@ class KhungVongLapSS01PkgManHinhSS00226 extends Component with VongLapThoiGianCo
 
     if (getTrangThaiTongQuat?.getTienTrinhTongQuat?.getTienTrinhThucThiChienDau?.getTrangThai?.getMoHinh?.onCheckBoolDangThucThi() == true) {
       onVoidCapNhatChiSoTangTienTheoThoiGianThuc();
-      // if (onBoolKiemTraTanXuatCapNhat() == false) {
-      //   return;
-      // }
 
       try {
-        if (getChiSoTangTienTheoThoiGianThuc % 10 == 0) {
-          // if (getChiSoTangTienTheoThoiGianThuc % 6 == 4) {
+        // if (getChiSoTangTienTheoThoiGianThuc % 10 == 0) { // Khoảng Cách = 5
+        if (getChiSoTangTienTheoThoiGianThuc % 6 == 0) {
+          // Khoảng Cách = 3
+          // if (getChiSoTangTienTheoThoiGianThuc % 4 == 0) { // Khoảng Cách = 2
           getTrangThaiTongQuat?.getSuKienVaChamThuocPhuongTien?.onVoidLoopOnTimelineSS010();
-        } else if (getChiSoTangTienTheoThoiGianThuc % 10 == 5) {
-          // else if (getChiSoTangTienTheoThoiGianThuc % 6 == 1) {
+        }
+        // else if (getChiSoTangTienTheoThoiGianThuc % 10 == 5) { // Khoảng Cách = 5
+        else if (getChiSoTangTienTheoThoiGianThuc % 6 == 3) {
+          // Khoảng Cách = 3
+          // else if (getChiSoTangTienTheoThoiGianThuc % 4 == 2) { // Khoảng Cách = 2
           getTrangThaiTongQuat?.getSuKienVaChamThuocPhuongTien?.onVoidLoopOnTimelineSS020();
         }
       } catch (e) {
         print('❌ Lỗi: $e');
       }
     }
-    // try {
-    //   stopwatch = Stopwatch();
-    //   stopwatch?.start();
-    //   await getTrangThaiTongQuat?.getSuKienVaChamThuocPhuongTien?.onLoop().timeout(
-    //     Duration(milliseconds: 20),
-    //     onTimeout: () {
-    //       stopwatch?.stop();
-    //       print('⏰ Quá thời gian!: ${stopwatch?.elapsedMilliseconds}ms');
-    //       return 'Giá trị mặc định';
-    //     },
-    //   );
-    // } catch (e) {
-    //   print('❌ Lỗi: $e');
-    // }
   }
 }

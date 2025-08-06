@@ -2519,12 +2519,10 @@ class SUKIENVACHAMTHUOCPHUONGTIEN with CauTrucThucThiCoBan, DanhSachQuanLyTrangT
   /// -----
   /// TODO:
   /// -----
-  void onVoidTichHopNhanDinhSuKienVaChamThuocPhuongTienV2({required Map<String, Map<String, dynamic>> danhSachPhuongTienVaChamVienDan}) {
-
-    if (kDebugMode) {
-      stopwatch = Stopwatch();
-      stopwatch?.start();
-    }
+  void onVoidTichHopNhanDinhSuKienVaChamThuocPhuongTienV2({
+    required Map<String, Map<String, dynamic>> danhSachPhuongTienVaChamVienDan,
+    bool? caiDatDanhSachPhuongTienHoatDong
+  }) {
 
     /// -----
     /// TODO:
@@ -2534,7 +2532,7 @@ class SUKIENVACHAMTHUOCPHUONGTIEN with CauTrucThucThiCoBan, DanhSachQuanLyTrangT
 
     if (danhSachPhuongTienVaChamVienDan.isNotEmpty == true) {
       for (final phuongTienVaChamVienDan in danhSachPhuongTienVaChamVienDan.entries) {
-        // TRANGTHAIPHUONGTIENVACHAM? phuongTienVaCham = getMapPhuongTienVaCham[phuongTienVaChamVienDan.key];
+
         phuongTienVaCham = getMapPhuongTienVaCham[phuongTienVaChamVienDan.key];
         //
         if (phuongTienVaCham?.getMoHinh?.getPhuongTien?.getMoHinh?.getTrangThaiTrongChienDau?.getTrangThaiTonTai?.onCheckBoolKhoiTaoHoanTat() == true) {
@@ -2580,10 +2578,78 @@ class SUKIENVACHAMTHUOCPHUONGTIEN with CauTrucThucThiCoBan, DanhSachQuanLyTrangT
               );
             }
 
-            if (kDebugMode) {
-              // print(
-              //   '[📋]_[LOG]_[TICH_HOP_THANH_CONG_SU_KIEN_VA_CHAM 🎯]: ${phuongTienVaCham?.getMoHinh?.getMaDinhDanhPhuongTienVaCham} - ${phuongTienVaChamVienDan.value['[MA_DINH_DANH_VIEN_DAN_VA_CHAM]']}',
-              // );
+            /// -----
+            /// TODO: Gán Viên Đạn Va Chạm SS040
+            /// -----
+            else if (phuongTienVaCham?.getMoHinh?.getPhuongTien?.getMoHinh?.getTrangThaiTrongChienDau?.getMaDinhDanhVienDanVaChamSS040 == null) {
+              phuongTienVaCham?.getMoHinh?.getPhuongTien?.getMoHinh?.getTrangThaiTrongChienDau?.onVoidCaiDatMaDinhDanhVienDanVaChamSS040(
+                value: phuongTienVaChamVienDan.value['[MA_DINH_DANH_VIEN_DAN_VA_CHAM]'],
+                caiDatUuTien: true,
+              );
+            }
+
+            /// -----
+            /// TODO: Gán Viên Đạn Va Chạm SS050
+            /// -----
+            else if (phuongTienVaCham?.getMoHinh?.getPhuongTien?.getMoHinh?.getTrangThaiTrongChienDau?.getMaDinhDanhVienDanVaChamSS050 == null) {
+              phuongTienVaCham?.getMoHinh?.getPhuongTien?.getMoHinh?.getTrangThaiTrongChienDau?.onVoidCaiDatMaDinhDanhVienDanVaChamSS050(
+                value: phuongTienVaChamVienDan.value['[MA_DINH_DANH_VIEN_DAN_VA_CHAM]'],
+                caiDatUuTien: true,
+              );
+            }
+
+            /// -----
+            /// TODO: Gán Viên Đạn Va Chạm SS060
+            /// -----
+            else if (phuongTienVaCham?.getMoHinh?.getPhuongTien?.getMoHinh?.getTrangThaiTrongChienDau?.getMaDinhDanhVienDanVaChamSS060 == null) {
+              phuongTienVaCham?.getMoHinh?.getPhuongTien?.getMoHinh?.getTrangThaiTrongChienDau?.onVoidCaiDatMaDinhDanhVienDanVaChamSS060(
+                value: phuongTienVaChamVienDan.value['[MA_DINH_DANH_VIEN_DAN_VA_CHAM]'],
+                caiDatUuTien: true,
+              );
+            }
+
+            /// -----
+            /// TODO: Gán Viên Đạn Va Chạm SS070
+            /// -----
+            else if (phuongTienVaCham?.getMoHinh?.getPhuongTien?.getMoHinh?.getTrangThaiTrongChienDau?.getMaDinhDanhVienDanVaChamSS070 == null) {
+              phuongTienVaCham?.getMoHinh?.getPhuongTien?.getMoHinh?.getTrangThaiTrongChienDau?.onVoidCaiDatMaDinhDanhVienDanVaChamSS070(
+                value: phuongTienVaChamVienDan.value['[MA_DINH_DANH_VIEN_DAN_VA_CHAM]'],
+                caiDatUuTien: true,
+              );
+            }
+
+            /// -----
+            /// TODO: Gán Viên Đạn Va Chạm SS080
+            /// -----
+            else if (phuongTienVaCham?.getMoHinh?.getPhuongTien?.getMoHinh?.getTrangThaiTrongChienDau?.getMaDinhDanhVienDanVaChamSS080 == null) {
+              phuongTienVaCham?.getMoHinh?.getPhuongTien?.getMoHinh?.getTrangThaiTrongChienDau?.onVoidCaiDatMaDinhDanhVienDanVaChamSS080(
+                value: phuongTienVaChamVienDan.value['[MA_DINH_DANH_VIEN_DAN_VA_CHAM]'],
+                caiDatUuTien: true,
+              );
+            }
+
+            /// -----
+            /// TODO: Gán Viên Đạn Va Chạm SS090
+            /// -----
+            else if (phuongTienVaCham?.getMoHinh?.getPhuongTien?.getMoHinh?.getTrangThaiTrongChienDau?.getMaDinhDanhVienDanVaChamSS090 == null) {
+              phuongTienVaCham?.getMoHinh?.getPhuongTien?.getMoHinh?.getTrangThaiTrongChienDau?.onVoidCaiDatMaDinhDanhVienDanVaChamSS090(
+                value: phuongTienVaChamVienDan.value['[MA_DINH_DANH_VIEN_DAN_VA_CHAM]'],
+                caiDatUuTien: true,
+              );
+            }
+
+            /// -----
+            /// TODO: Gán Viên Đạn Va Chạm SS100
+            /// -----
+            else if (phuongTienVaCham?.getMoHinh?.getPhuongTien?.getMoHinh?.getTrangThaiTrongChienDau?.getMaDinhDanhVienDanVaChamSS100 == null) {
+              phuongTienVaCham?.getMoHinh?.getPhuongTien?.getMoHinh?.getTrangThaiTrongChienDau?.onVoidCaiDatMaDinhDanhVienDanVaChamSS100(
+                value: phuongTienVaChamVienDan.value['[MA_DINH_DANH_VIEN_DAN_VA_CHAM]'],
+                caiDatUuTien: true,
+              );
+            }
+
+            else {
+              ///
             }
           } else {
             /// -----
@@ -2596,22 +2662,15 @@ class SUKIENVACHAMTHUOCPHUONGTIEN with CauTrucThucThiCoBan, DanhSachQuanLyTrangT
           }
         }
 
-        if (phuongTienVaChamVienDan.key == '[DANH_SACH_MA_DINH_DANH_PHUONG_TIEN_HOAT_DONG]') {
-          getDanhSachMaDinhDanhPhuongTienHoatDong?.clear();
-          // Map<String, dynamic> mapDanhSachMaDinhDanhPhuongTienHoatDong = phuongTienVaChamVienDan?.value ?? {};
-          mapDanhSachMaDinhDanhPhuongTienHoatDong = phuongTienVaChamVienDan?.value ?? {};
+        if (caiDatDanhSachPhuongTienHoatDong == true) {
+          if (phuongTienVaChamVienDan.key == '[DANH_SACH_MA_DINH_DANH_PHUONG_TIEN_HOAT_DONG]') {
+            getDanhSachMaDinhDanhPhuongTienHoatDong?.clear();
+            mapDanhSachMaDinhDanhPhuongTienHoatDong = phuongTienVaChamVienDan?.value ?? {};
 
-          // List<dynamic> danhSachMaDinhDanhPhuongTienHoatDong = mapDanhSachMaDinhDanhPhuongTienHoatDong.values.toList();
-
-          getDanhSachMaDinhDanhPhuongTienHoatDong.addAll(mapDanhSachMaDinhDanhPhuongTienHoatDong.keys);
+            getDanhSachMaDinhDanhPhuongTienHoatDong.addAll(mapDanhSachMaDinhDanhPhuongTienHoatDong.keys);
+          }
         }
       }
-    }
-
-
-    if (kDebugMode) {
-      stopwatch?.stop();
-      print('[⌚️⌚️⌚️] Thời Gian Xử Lý ISOLATE onVoidTichHopNhanDinhSuKienVaChamThuocPhuongTienV2 [⌚️⌚️⌚️]: ${stopwatch?.elapsedMilliseconds}ms');
     }
 
     ///

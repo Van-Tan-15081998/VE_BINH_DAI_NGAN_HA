@@ -221,6 +221,8 @@ class THANHPHANVANBANTHUANTHUOCCAP extends TextComponent
     onVoidCaiDatPositionDy(value: positionDy, caiDatUuTien: true);
   }
 
+  bool caiDatTuyChinhTextRenderer = false;
+
   /// -----
   /// TODO:
   /// -----
@@ -232,13 +234,15 @@ class THANHPHANVANBANTHUANTHUOCCAP extends TextComponent
 
     text = 'VĂN BẢN';
 
-    textRenderer = TextPaint(
-      style: TextStyle(
-        color: Color(0xFFFFFFFF),
-        fontSize: 16,
-        fontWeight: FontWeight.bold,
-      ),
-    );
+    if (caiDatTuyChinhTextRenderer == false) {
+      textRenderer = TextPaint(
+        style: TextStyle(
+          color: Color(0xFFFFFFFF),
+          fontSize: 16,
+          fontWeight: FontWeight.bold,
+        ),
+      );
+    }
 
     if (getKiemTraHienThi == null) {
       onVoidCaiDatKiemTraHienThi(value: false);

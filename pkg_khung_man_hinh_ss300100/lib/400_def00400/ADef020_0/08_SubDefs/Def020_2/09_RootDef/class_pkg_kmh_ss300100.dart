@@ -4,8 +4,7 @@ import 'package:pkg_khung_man_hinh_ss020000/pkg_khung_man_hinh_ss020000_exp.dart
 /// -----
 /// TODO: Quản Lý Thành Phần Màn Hình Thuộc Cấp
 /// -----
-class QUANLYTHANHPHANMANHINHTHUOCCAP
-    extends QUANLYTHANHPHANMANHINHTHUOCCAPCOBAN {
+class QUANLYTHANHPHANMANHINHTHUOCCAP extends QUANLYTHANHPHANMANHINHTHUOCCAPCOBAN {
   /// -----
   /// TODO:
   /// -----
@@ -25,10 +24,7 @@ class QUANLYTHANHPHANMANHINHTHUOCCAP
   /// TODO: Add Comp Root
   /// -----
   @override
-  Future<void> onAddRoot({
-    required FlameGame? flameGame,
-    required Component? component,
-  }) async {
+  Future<void> onAddRoot({required FlameGame? flameGame, required Component? component}) async {
     await Future.wait([
       ///
     ]);
@@ -46,10 +42,7 @@ class QUANLYTHANHPHANMANHINHTHUOCCAP
   /// TODO: Add Comp Root For SubCom
   /// -----
   @override
-  Future<void> onAddRootForSubCom({
-    required FlameGame? flameGame,
-    required Component? component,
-  }) async {
+  Future<void> onAddRootForSubCom({required FlameGame? flameGame, required Component? component}) async {
     await Future.wait([
       ///
     ]);
