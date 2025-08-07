@@ -150,7 +150,7 @@ class CARDNHIEMVUSS00A001MAPSS00A extends THANHPHANNUTBAMTICHHOPTHUOCCAP {
   @override
   Future<void> onInitRootForSubCom() async {
     getSpriteAnimationComponentThanhTichSS010KichHoat
-        ?.onVoidCaiDatKiemTraHienThi(value: true);
+        ?.onVoidCaiDatKiemTraHienThi(value: false);
     getSpriteAnimationComponentThanhTichSS020KichHoat
         ?.onVoidCaiDatKiemTraHienThi(value: false);
     getSpriteAnimationComponentThanhTichSS030KichHoat

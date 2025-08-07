@@ -338,7 +338,10 @@ class QUANLYVANHANHNGANCHANXAMNHAP with CAUTRUCTHUCTHICOBAN, DanhSachQuanLyTrang
         }
 
         /// TEST
-        donViNgauNhien = getDonViLuotXamNhapCapDoASS1200;
+        donViNgauNhien = getDonViLuotXamNhapCapDoASS2010;
+        donViNgauNhien = getDonViLuotXamNhapCapDoASS2020;
+        donViNgauNhien = getDonViLuotXamNhapCapDoASS2030;
+        // donViNgauNhien = getDonViLuotXamNhapCapDoASS1200;
         // donViNgauNhien = getDonViLuotXamNhapCapDoASS9999;
 
         await getCauTrucLuotXamNhapNgauNhienSS060?.caiDatDonViLuotXamNhap(value: donViNgauNhien, caiDatUuTien: true);
@@ -563,6 +566,33 @@ class QUANLYVANHANHNGANCHANXAMNHAP with CAUTRUCTHUCTHICOBAN, DanhSachQuanLyTrang
         caiDatDonViLuotXamNhapCapDoASS1180(value: DONVILUOTXAMNHAPCAPDOASS1180()).catchError((e) => null),
         caiDatDonViLuotXamNhapCapDoASS1190(value: DONVILUOTXAMNHAPCAPDOASS1190()).catchError((e) => null),
         caiDatDonViLuotXamNhapCapDoASS1200(value: DONVILUOTXAMNHAPCAPDOASS1200()).catchError((e) => null),
+
+        ///
+        caiDatDonViLuotXamNhapCapDoASS2010(value: DONVILUOTXAMNHAPCAPDOASS2010()).catchError((e) => null),
+        caiDatDonViLuotXamNhapCapDoASS2020(value: DONVILUOTXAMNHAPCAPDOASS2020()).catchError((e) => null),
+        caiDatDonViLuotXamNhapCapDoASS2030(value: DONVILUOTXAMNHAPCAPDOASS2030()).catchError((e) => null),
+        caiDatDonViLuotXamNhapCapDoASS2040(value: DONVILUOTXAMNHAPCAPDOASS2040()).catchError((e) => null),
+        caiDatDonViLuotXamNhapCapDoASS2050(value: DONVILUOTXAMNHAPCAPDOASS2050()).catchError((e) => null),
+        caiDatDonViLuotXamNhapCapDoASS2060(value: DONVILUOTXAMNHAPCAPDOASS2060()).catchError((e) => null),
+        caiDatDonViLuotXamNhapCapDoASS2070(value: DONVILUOTXAMNHAPCAPDOASS2070()).catchError((e) => null),
+        caiDatDonViLuotXamNhapCapDoASS2080(value: DONVILUOTXAMNHAPCAPDOASS2080()).catchError((e) => null),
+        caiDatDonViLuotXamNhapCapDoASS2090(value: DONVILUOTXAMNHAPCAPDOASS2090()).catchError((e) => null),
+        caiDatDonViLuotXamNhapCapDoASS2100(value: DONVILUOTXAMNHAPCAPDOASS2100()).catchError((e) => null),
+        caiDatDonViLuotXamNhapCapDoASS2110(value: DONVILUOTXAMNHAPCAPDOASS2110()).catchError((e) => null),
+        caiDatDonViLuotXamNhapCapDoASS2120(value: DONVILUOTXAMNHAPCAPDOASS2120()).catchError((e) => null),
+        caiDatDonViLuotXamNhapCapDoASS2130(value: DONVILUOTXAMNHAPCAPDOASS2130()).catchError((e) => null),
+        caiDatDonViLuotXamNhapCapDoASS2140(value: DONVILUOTXAMNHAPCAPDOASS2140()).catchError((e) => null),
+        caiDatDonViLuotXamNhapCapDoASS2150(value: DONVILUOTXAMNHAPCAPDOASS2150()).catchError((e) => null),
+        caiDatDonViLuotXamNhapCapDoASS2160(value: DONVILUOTXAMNHAPCAPDOASS2160()).catchError((e) => null),
+        caiDatDonViLuotXamNhapCapDoASS2170(value: DONVILUOTXAMNHAPCAPDOASS2170()).catchError((e) => null),
+        caiDatDonViLuotXamNhapCapDoASS2180(value: DONVILUOTXAMNHAPCAPDOASS2180()).catchError((e) => null),
+        caiDatDonViLuotXamNhapCapDoASS2190(value: DONVILUOTXAMNHAPCAPDOASS2190()).catchError((e) => null),
+        caiDatDonViLuotXamNhapCapDoASS2200(value: DONVILUOTXAMNHAPCAPDOASS2200()).catchError((e) => null),
+        caiDatDonViLuotXamNhapCapDoASS2210(value: DONVILUOTXAMNHAPCAPDOASS2210()).catchError((e) => null),
+        caiDatDonViLuotXamNhapCapDoASS2220(value: DONVILUOTXAMNHAPCAPDOASS2220()).catchError((e) => null),
+        caiDatDonViLuotXamNhapCapDoASS2230(value: DONVILUOTXAMNHAPCAPDOASS2230()).catchError((e) => null),
+        caiDatDonViLuotXamNhapCapDoASS2240(value: DONVILUOTXAMNHAPCAPDOASS2240()).catchError((e) => null),
+        caiDatDonViLuotXamNhapCapDoASS2250(value: DONVILUOTXAMNHAPCAPDOASS2250()).catchError((e) => null),
 
         caiDatDonViLuotXamNhapCapDoASS9999(value: DONVILUOTXAMNHAPCAPDOASS9999()).catchError((e) => null),
       ]);
@@ -924,6 +954,33 @@ class QUANLYVANHANHNGANCHANXAMNHAP with CAUTRUCTHUCTHICOBAN, DanhSachQuanLyTrang
         getDonViLuotXamNhapCapDoASS1190?.onSetupRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
         getDonViLuotXamNhapCapDoASS1200?.onSetupRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
 
+        ///
+        getDonViLuotXamNhapCapDoASS2010?.onSetupRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+        getDonViLuotXamNhapCapDoASS2020?.onSetupRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+        getDonViLuotXamNhapCapDoASS2030?.onSetupRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+        getDonViLuotXamNhapCapDoASS2040?.onSetupRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+        getDonViLuotXamNhapCapDoASS2050?.onSetupRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+        getDonViLuotXamNhapCapDoASS2060?.onSetupRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+        getDonViLuotXamNhapCapDoASS2070?.onSetupRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+        getDonViLuotXamNhapCapDoASS2080?.onSetupRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+        getDonViLuotXamNhapCapDoASS2090?.onSetupRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+        getDonViLuotXamNhapCapDoASS2100?.onSetupRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+        getDonViLuotXamNhapCapDoASS2110?.onSetupRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+        getDonViLuotXamNhapCapDoASS2120?.onSetupRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+        getDonViLuotXamNhapCapDoASS2130?.onSetupRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+        getDonViLuotXamNhapCapDoASS2140?.onSetupRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+        getDonViLuotXamNhapCapDoASS2150?.onSetupRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+        getDonViLuotXamNhapCapDoASS2160?.onSetupRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+        getDonViLuotXamNhapCapDoASS2170?.onSetupRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+        getDonViLuotXamNhapCapDoASS2180?.onSetupRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+        getDonViLuotXamNhapCapDoASS2190?.onSetupRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+        getDonViLuotXamNhapCapDoASS2200?.onSetupRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+        getDonViLuotXamNhapCapDoASS2210?.onSetupRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+        getDonViLuotXamNhapCapDoASS2220?.onSetupRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+        getDonViLuotXamNhapCapDoASS2230?.onSetupRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+        getDonViLuotXamNhapCapDoASS2240?.onSetupRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+        getDonViLuotXamNhapCapDoASS2250?.onSetupRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+
         /// TEST
         getDonViLuotXamNhapCapDoASS9999?.onSetupRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
       ]);
@@ -1088,6 +1145,33 @@ class QUANLYVANHANHNGANCHANXAMNHAP with CAUTRUCTHUCTHICOBAN, DanhSachQuanLyTrang
         getDonViLuotXamNhapCapDoASS1180?.onInitRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
         getDonViLuotXamNhapCapDoASS1190?.onInitRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
         getDonViLuotXamNhapCapDoASS1200?.onInitRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+
+        ///
+        getDonViLuotXamNhapCapDoASS2010?.onInitRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+        getDonViLuotXamNhapCapDoASS2020?.onInitRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+        getDonViLuotXamNhapCapDoASS2030?.onInitRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+        getDonViLuotXamNhapCapDoASS2040?.onInitRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+        getDonViLuotXamNhapCapDoASS2050?.onInitRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+        getDonViLuotXamNhapCapDoASS2060?.onInitRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+        getDonViLuotXamNhapCapDoASS2070?.onInitRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+        getDonViLuotXamNhapCapDoASS2080?.onInitRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+        getDonViLuotXamNhapCapDoASS2090?.onInitRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+        getDonViLuotXamNhapCapDoASS2100?.onInitRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+        getDonViLuotXamNhapCapDoASS2110?.onInitRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+        getDonViLuotXamNhapCapDoASS2120?.onInitRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+        getDonViLuotXamNhapCapDoASS2130?.onInitRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+        getDonViLuotXamNhapCapDoASS2140?.onInitRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+        getDonViLuotXamNhapCapDoASS2150?.onInitRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+        getDonViLuotXamNhapCapDoASS2160?.onInitRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+        getDonViLuotXamNhapCapDoASS2170?.onInitRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+        getDonViLuotXamNhapCapDoASS2180?.onInitRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+        getDonViLuotXamNhapCapDoASS2190?.onInitRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+        getDonViLuotXamNhapCapDoASS2200?.onInitRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+        getDonViLuotXamNhapCapDoASS2210?.onInitRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+        getDonViLuotXamNhapCapDoASS2220?.onInitRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+        getDonViLuotXamNhapCapDoASS2230?.onInitRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+        getDonViLuotXamNhapCapDoASS2240?.onInitRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+        getDonViLuotXamNhapCapDoASS2250?.onInitRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
 
         /// TEST
         getDonViLuotXamNhapCapDoASS9999?.onInitRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
@@ -3044,6 +3128,381 @@ class QUANLYVANHANHNGANCHANXAMNHAP with CAUTRUCTHUCTHICOBAN, DanhSachQuanLyTrang
       _donViLuotXamNhapCapDoASS1200 = value;
     } else {
       _donViLuotXamNhapCapDoASS1200 ??= value;
+    }
+
+    return;
+  }
+
+  /// -----
+  /// TODO:
+  /// -----
+  DONVILUOTXAMNHAPCAPDOASS2010? _donViLuotXamNhapCapDoASS2010;
+  DONVILUOTXAMNHAPCAPDOASS2010? get getDonViLuotXamNhapCapDoASS2010 => _donViLuotXamNhapCapDoASS2010;
+  Future<void> caiDatDonViLuotXamNhapCapDoASS2010({required DONVILUOTXAMNHAPCAPDOASS2010? value, bool? caiDatUuTien}) async {
+    if (caiDatUuTien == true) {
+      _donViLuotXamNhapCapDoASS2010 = value;
+    } else {
+      _donViLuotXamNhapCapDoASS2010 ??= value;
+    }
+
+    return;
+  }
+
+  /// -----
+  /// TODO:
+  /// -----
+  DONVILUOTXAMNHAPCAPDOASS2020? _donViLuotXamNhapCapDoASS2020;
+  DONVILUOTXAMNHAPCAPDOASS2020? get getDonViLuotXamNhapCapDoASS2020 => _donViLuotXamNhapCapDoASS2020;
+  Future<void> caiDatDonViLuotXamNhapCapDoASS2020({required DONVILUOTXAMNHAPCAPDOASS2020? value, bool? caiDatUuTien}) async {
+    if (caiDatUuTien == true) {
+      _donViLuotXamNhapCapDoASS2020 = value;
+    } else {
+      _donViLuotXamNhapCapDoASS2020 ??= value;
+    }
+
+    return;
+  }
+
+  /// -----
+  /// TODO:
+  /// -----
+  DONVILUOTXAMNHAPCAPDOASS2030? _donViLuotXamNhapCapDoASS2030;
+  DONVILUOTXAMNHAPCAPDOASS2030? get getDonViLuotXamNhapCapDoASS2030 => _donViLuotXamNhapCapDoASS2030;
+  Future<void> caiDatDonViLuotXamNhapCapDoASS2030({required DONVILUOTXAMNHAPCAPDOASS2030? value, bool? caiDatUuTien}) async {
+    if (caiDatUuTien == true) {
+      _donViLuotXamNhapCapDoASS2030 = value;
+    } else {
+      _donViLuotXamNhapCapDoASS2030 ??= value;
+    }
+
+    return;
+  }
+
+  /// -----
+  /// TODO:
+  /// -----
+  DONVILUOTXAMNHAPCAPDOASS2040? _donViLuotXamNhapCapDoASS2040;
+  DONVILUOTXAMNHAPCAPDOASS2040? get getDonViLuotXamNhapCapDoASS2040 => _donViLuotXamNhapCapDoASS2040;
+  Future<void> caiDatDonViLuotXamNhapCapDoASS2040({required DONVILUOTXAMNHAPCAPDOASS2040? value, bool? caiDatUuTien}) async {
+    if (caiDatUuTien == true) {
+      _donViLuotXamNhapCapDoASS2040 = value;
+    } else {
+      _donViLuotXamNhapCapDoASS2040 ??= value;
+    }
+
+    return;
+  }
+
+  /// -----
+  /// TODO:
+  /// -----
+  DONVILUOTXAMNHAPCAPDOASS2050? _donViLuotXamNhapCapDoASS2050;
+  DONVILUOTXAMNHAPCAPDOASS2050? get getDonViLuotXamNhapCapDoASS2050 => _donViLuotXamNhapCapDoASS2050;
+  Future<void> caiDatDonViLuotXamNhapCapDoASS2050({required DONVILUOTXAMNHAPCAPDOASS2050? value, bool? caiDatUuTien}) async {
+    if (caiDatUuTien == true) {
+      _donViLuotXamNhapCapDoASS2050 = value;
+    } else {
+      _donViLuotXamNhapCapDoASS2050 ??= value;
+    }
+
+    return;
+  }
+
+  /// -----
+  /// TODO:
+  /// -----
+  DONVILUOTXAMNHAPCAPDOASS2060? _donViLuotXamNhapCapDoASS2060;
+  DONVILUOTXAMNHAPCAPDOASS2060? get getDonViLuotXamNhapCapDoASS2060 => _donViLuotXamNhapCapDoASS2060;
+  Future<void> caiDatDonViLuotXamNhapCapDoASS2060({required DONVILUOTXAMNHAPCAPDOASS2060? value, bool? caiDatUuTien}) async {
+    if (caiDatUuTien == true) {
+      _donViLuotXamNhapCapDoASS2060 = value;
+    } else {
+      _donViLuotXamNhapCapDoASS2060 ??= value;
+    }
+
+    return;
+  }
+
+  /// -----
+  /// TODO:
+  /// -----
+  DONVILUOTXAMNHAPCAPDOASS2070? _donViLuotXamNhapCapDoASS2070;
+  DONVILUOTXAMNHAPCAPDOASS2070? get getDonViLuotXamNhapCapDoASS2070 => _donViLuotXamNhapCapDoASS2070;
+  Future<void> caiDatDonViLuotXamNhapCapDoASS2070({required DONVILUOTXAMNHAPCAPDOASS2070? value, bool? caiDatUuTien}) async {
+    if (caiDatUuTien == true) {
+      _donViLuotXamNhapCapDoASS2070 = value;
+    } else {
+      _donViLuotXamNhapCapDoASS2070 ??= value;
+    }
+
+    return;
+  }
+
+  /// -----
+  /// TODO:
+  /// -----
+  DONVILUOTXAMNHAPCAPDOASS2080? _donViLuotXamNhapCapDoASS2080;
+  DONVILUOTXAMNHAPCAPDOASS2080? get getDonViLuotXamNhapCapDoASS2080 => _donViLuotXamNhapCapDoASS2080;
+  Future<void> caiDatDonViLuotXamNhapCapDoASS2080({required DONVILUOTXAMNHAPCAPDOASS2080? value, bool? caiDatUuTien}) async {
+    if (caiDatUuTien == true) {
+      _donViLuotXamNhapCapDoASS2080 = value;
+    } else {
+      _donViLuotXamNhapCapDoASS2080 ??= value;
+    }
+
+    return;
+  }
+
+  /// -----
+  /// TODO:
+  /// -----
+  DONVILUOTXAMNHAPCAPDOASS2090? _donViLuotXamNhapCapDoASS2090;
+  DONVILUOTXAMNHAPCAPDOASS2090? get getDonViLuotXamNhapCapDoASS2090 => _donViLuotXamNhapCapDoASS2090;
+  Future<void> caiDatDonViLuotXamNhapCapDoASS2090({required DONVILUOTXAMNHAPCAPDOASS2090? value, bool? caiDatUuTien}) async {
+    if (caiDatUuTien == true) {
+      _donViLuotXamNhapCapDoASS2090 = value;
+    } else {
+      _donViLuotXamNhapCapDoASS2090 ??= value;
+    }
+
+    return;
+  }
+
+  /// -----
+  /// TODO:
+  /// -----
+  DONVILUOTXAMNHAPCAPDOASS2100? _donViLuotXamNhapCapDoASS2100;
+  DONVILUOTXAMNHAPCAPDOASS2100? get getDonViLuotXamNhapCapDoASS2100 => _donViLuotXamNhapCapDoASS2100;
+  Future<void> caiDatDonViLuotXamNhapCapDoASS2100({required DONVILUOTXAMNHAPCAPDOASS2100? value, bool? caiDatUuTien}) async {
+    if (caiDatUuTien == true) {
+      _donViLuotXamNhapCapDoASS2100 = value;
+    } else {
+      _donViLuotXamNhapCapDoASS2100 ??= value;
+    }
+
+    return;
+  }
+
+  /// -----
+  /// TODO:
+  /// -----
+  DONVILUOTXAMNHAPCAPDOASS2110? _donViLuotXamNhapCapDoASS2110;
+  DONVILUOTXAMNHAPCAPDOASS2110? get getDonViLuotXamNhapCapDoASS2110 => _donViLuotXamNhapCapDoASS2110;
+  Future<void> caiDatDonViLuotXamNhapCapDoASS2110({required DONVILUOTXAMNHAPCAPDOASS2110? value, bool? caiDatUuTien}) async {
+    if (caiDatUuTien == true) {
+      _donViLuotXamNhapCapDoASS2110 = value;
+    } else {
+      _donViLuotXamNhapCapDoASS2110 ??= value;
+    }
+
+    return;
+  }
+
+  /// -----
+  /// TODO:
+  /// -----
+  DONVILUOTXAMNHAPCAPDOASS2120? _donViLuotXamNhapCapDoASS2120;
+  DONVILUOTXAMNHAPCAPDOASS2120? get getDonViLuotXamNhapCapDoASS2120 => _donViLuotXamNhapCapDoASS2120;
+  Future<void> caiDatDonViLuotXamNhapCapDoASS2120({required DONVILUOTXAMNHAPCAPDOASS2120? value, bool? caiDatUuTien}) async {
+    if (caiDatUuTien == true) {
+      _donViLuotXamNhapCapDoASS2120 = value;
+    } else {
+      _donViLuotXamNhapCapDoASS2120 ??= value;
+    }
+
+    return;
+  }
+
+  /// -----
+  /// TODO:
+  /// -----
+  DONVILUOTXAMNHAPCAPDOASS2130? _donViLuotXamNhapCapDoASS2130;
+  DONVILUOTXAMNHAPCAPDOASS2130? get getDonViLuotXamNhapCapDoASS2130 => _donViLuotXamNhapCapDoASS2130;
+  Future<void> caiDatDonViLuotXamNhapCapDoASS2130({required DONVILUOTXAMNHAPCAPDOASS2130? value, bool? caiDatUuTien}) async {
+    if (caiDatUuTien == true) {
+      _donViLuotXamNhapCapDoASS2130 = value;
+    } else {
+      _donViLuotXamNhapCapDoASS2130 ??= value;
+    }
+
+    return;
+  }
+
+  /// -----
+  /// TODO:
+  /// -----
+  DONVILUOTXAMNHAPCAPDOASS2140? _donViLuotXamNhapCapDoASS2140;
+  DONVILUOTXAMNHAPCAPDOASS2140? get getDonViLuotXamNhapCapDoASS2140 => _donViLuotXamNhapCapDoASS2140;
+  Future<void> caiDatDonViLuotXamNhapCapDoASS2140({required DONVILUOTXAMNHAPCAPDOASS2140? value, bool? caiDatUuTien}) async {
+    if (caiDatUuTien == true) {
+      _donViLuotXamNhapCapDoASS2140 = value;
+    } else {
+      _donViLuotXamNhapCapDoASS2140 ??= value;
+    }
+
+    return;
+  }
+
+  /// -----
+  /// TODO:
+  /// -----
+  DONVILUOTXAMNHAPCAPDOASS2150? _donViLuotXamNhapCapDoASS2150;
+  DONVILUOTXAMNHAPCAPDOASS2150? get getDonViLuotXamNhapCapDoASS2150 => _donViLuotXamNhapCapDoASS2150;
+  Future<void> caiDatDonViLuotXamNhapCapDoASS2150({required DONVILUOTXAMNHAPCAPDOASS2150? value, bool? caiDatUuTien}) async {
+    if (caiDatUuTien == true) {
+      _donViLuotXamNhapCapDoASS2150 = value;
+    } else {
+      _donViLuotXamNhapCapDoASS2150 ??= value;
+    }
+
+    return;
+  }
+
+  /// -----
+  /// TODO:
+  /// -----
+  DONVILUOTXAMNHAPCAPDOASS2160? _donViLuotXamNhapCapDoASS2160;
+  DONVILUOTXAMNHAPCAPDOASS2160? get getDonViLuotXamNhapCapDoASS2160 => _donViLuotXamNhapCapDoASS2160;
+  Future<void> caiDatDonViLuotXamNhapCapDoASS2160({required DONVILUOTXAMNHAPCAPDOASS2160? value, bool? caiDatUuTien}) async {
+    if (caiDatUuTien == true) {
+      _donViLuotXamNhapCapDoASS2160 = value;
+    } else {
+      _donViLuotXamNhapCapDoASS2160 ??= value;
+    }
+
+    return;
+  }
+
+  /// -----
+  /// TODO:
+  /// -----
+  DONVILUOTXAMNHAPCAPDOASS2170? _donViLuotXamNhapCapDoASS2170;
+  DONVILUOTXAMNHAPCAPDOASS2170? get getDonViLuotXamNhapCapDoASS2170 => _donViLuotXamNhapCapDoASS2170;
+  Future<void> caiDatDonViLuotXamNhapCapDoASS2170({required DONVILUOTXAMNHAPCAPDOASS2170? value, bool? caiDatUuTien}) async {
+    if (caiDatUuTien == true) {
+      _donViLuotXamNhapCapDoASS2170 = value;
+    } else {
+      _donViLuotXamNhapCapDoASS2170 ??= value;
+    }
+
+    return;
+  }
+
+  /// -----
+  /// TODO:
+  /// -----
+  DONVILUOTXAMNHAPCAPDOASS2180? _donViLuotXamNhapCapDoASS2180;
+  DONVILUOTXAMNHAPCAPDOASS2180? get getDonViLuotXamNhapCapDoASS2180 => _donViLuotXamNhapCapDoASS2180;
+  Future<void> caiDatDonViLuotXamNhapCapDoASS2180({required DONVILUOTXAMNHAPCAPDOASS2180? value, bool? caiDatUuTien}) async {
+    if (caiDatUuTien == true) {
+      _donViLuotXamNhapCapDoASS2180 = value;
+    } else {
+      _donViLuotXamNhapCapDoASS2180 ??= value;
+    }
+
+    return;
+  }
+
+  /// -----
+  /// TODO:
+  /// -----
+  DONVILUOTXAMNHAPCAPDOASS2190? _donViLuotXamNhapCapDoASS2190;
+  DONVILUOTXAMNHAPCAPDOASS2190? get getDonViLuotXamNhapCapDoASS2190 => _donViLuotXamNhapCapDoASS2190;
+  Future<void> caiDatDonViLuotXamNhapCapDoASS2190({required DONVILUOTXAMNHAPCAPDOASS2190? value, bool? caiDatUuTien}) async {
+    if (caiDatUuTien == true) {
+      _donViLuotXamNhapCapDoASS2190 = value;
+    } else {
+      _donViLuotXamNhapCapDoASS2190 ??= value;
+    }
+
+    return;
+  }
+
+  /// -----
+  /// TODO:
+  /// -----
+  DONVILUOTXAMNHAPCAPDOASS2200? _donViLuotXamNhapCapDoASS2200;
+  DONVILUOTXAMNHAPCAPDOASS2200? get getDonViLuotXamNhapCapDoASS2200 => _donViLuotXamNhapCapDoASS2200;
+  Future<void> caiDatDonViLuotXamNhapCapDoASS2200({required DONVILUOTXAMNHAPCAPDOASS2200? value, bool? caiDatUuTien}) async {
+    if (caiDatUuTien == true) {
+      _donViLuotXamNhapCapDoASS2200 = value;
+    } else {
+      _donViLuotXamNhapCapDoASS2200 ??= value;
+    }
+
+    return;
+  }
+
+  /// -----
+  /// TODO:
+  /// -----
+  DONVILUOTXAMNHAPCAPDOASS2210? _donViLuotXamNhapCapDoASS2210;
+  DONVILUOTXAMNHAPCAPDOASS2210? get getDonViLuotXamNhapCapDoASS2210 => _donViLuotXamNhapCapDoASS2210;
+  Future<void> caiDatDonViLuotXamNhapCapDoASS2210({required DONVILUOTXAMNHAPCAPDOASS2210? value, bool? caiDatUuTien}) async {
+    if (caiDatUuTien == true) {
+      _donViLuotXamNhapCapDoASS2210 = value;
+    } else {
+      _donViLuotXamNhapCapDoASS2210 ??= value;
+    }
+
+    return;
+  }
+
+  /// -----
+  /// TODO:
+  /// -----
+  DONVILUOTXAMNHAPCAPDOASS2220? _donViLuotXamNhapCapDoASS2220;
+  DONVILUOTXAMNHAPCAPDOASS2220? get getDonViLuotXamNhapCapDoASS2220 => _donViLuotXamNhapCapDoASS2220;
+  Future<void> caiDatDonViLuotXamNhapCapDoASS2220({required DONVILUOTXAMNHAPCAPDOASS2220? value, bool? caiDatUuTien}) async {
+    if (caiDatUuTien == true) {
+      _donViLuotXamNhapCapDoASS2220 = value;
+    } else {
+      _donViLuotXamNhapCapDoASS2220 ??= value;
+    }
+
+    return;
+  }
+
+  /// -----
+  /// TODO:
+  /// -----
+  DONVILUOTXAMNHAPCAPDOASS2230? _donViLuotXamNhapCapDoASS2230;
+  DONVILUOTXAMNHAPCAPDOASS2230? get getDonViLuotXamNhapCapDoASS2230 => _donViLuotXamNhapCapDoASS2230;
+  Future<void> caiDatDonViLuotXamNhapCapDoASS2230({required DONVILUOTXAMNHAPCAPDOASS2230? value, bool? caiDatUuTien}) async {
+    if (caiDatUuTien == true) {
+      _donViLuotXamNhapCapDoASS2230 = value;
+    } else {
+      _donViLuotXamNhapCapDoASS2230 ??= value;
+    }
+
+    return;
+  }
+
+  /// -----
+  /// TODO:
+  /// -----
+  DONVILUOTXAMNHAPCAPDOASS2240? _donViLuotXamNhapCapDoASS2240;
+  DONVILUOTXAMNHAPCAPDOASS2240? get getDonViLuotXamNhapCapDoASS2240 => _donViLuotXamNhapCapDoASS2240;
+  Future<void> caiDatDonViLuotXamNhapCapDoASS2240({required DONVILUOTXAMNHAPCAPDOASS2240? value, bool? caiDatUuTien}) async {
+    if (caiDatUuTien == true) {
+      _donViLuotXamNhapCapDoASS2240 = value;
+    } else {
+      _donViLuotXamNhapCapDoASS2240 ??= value;
+    }
+
+    return;
+  }
+
+  /// -----
+  /// TODO:
+  /// -----
+  DONVILUOTXAMNHAPCAPDOASS2250? _donViLuotXamNhapCapDoASS2250;
+  DONVILUOTXAMNHAPCAPDOASS2250? get getDonViLuotXamNhapCapDoASS2250 => _donViLuotXamNhapCapDoASS2250;
+  Future<void> caiDatDonViLuotXamNhapCapDoASS2250({required DONVILUOTXAMNHAPCAPDOASS2250? value, bool? caiDatUuTien}) async {
+    if (caiDatUuTien == true) {
+      _donViLuotXamNhapCapDoASS2250 = value;
+    } else {
+      _donViLuotXamNhapCapDoASS2250 ??= value;
     }
 
     return;
