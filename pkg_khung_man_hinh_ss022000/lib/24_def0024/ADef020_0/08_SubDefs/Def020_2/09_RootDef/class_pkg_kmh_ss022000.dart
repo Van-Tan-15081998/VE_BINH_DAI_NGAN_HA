@@ -767,6 +767,15 @@ class QUANLYTHANHPHANMANHINHKHUNGMANHINHCHINH extends QUANLYTHANHPHANMANHINHTHUO
   @override
   Future<void> onKichHoatKhungManHinhThuocCapSS300100() async {
     try {
+
+      await getGlobalStateManagementSystem?.getTienTrinhTongQuat?.onCaiDatTrangThaiHoatDongTaiManHinhChinh(
+        value: false,
+        caiDatUuTien: true,
+        onThucThiHoanTat: () async {
+          await getGlobalStateManagementSystem?.getBangDieuKhienKichBanChienDauTheoGiaiDoan?.getQuanLyVanHanhNganChanXamNhap?.caiDatSanSangVanHanh(value: false, caiDatUuTien: true);
+        },
+      );
+
       /// -----
       /// TODO:
       /// -----
@@ -871,6 +880,14 @@ class QUANLYTHANHPHANMANHINHKHUNGMANHINHCHINH extends QUANLYTHANHPHANMANHINHTHUO
         await getGameController?.onTaiTaiNguyenMaster(
           onThucThiHoanTat: () async {
             await Future.delayed(Duration(milliseconds: 100));
+
+            await getGlobalStateManagementSystem?.getTienTrinhTongQuat?.onCaiDatTrangThaiHoatDongTaiManHinhChinh(
+              value: true,
+              caiDatUuTien: true,
+              onThucThiHoanTat: () async {
+                await getGlobalStateManagementSystem?.getBangDieuKhienKichBanChienDauTheoGiaiDoan?.getQuanLyVanHanhNganChanXamNhap?.caiDatSanSangVanHanh(value: true, caiDatUuTien: true);
+              },
+            );
 
             ///
             /// TODO:

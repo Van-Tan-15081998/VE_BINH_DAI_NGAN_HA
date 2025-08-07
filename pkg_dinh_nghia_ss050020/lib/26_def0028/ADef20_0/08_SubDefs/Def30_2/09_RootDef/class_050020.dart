@@ -45,7 +45,6 @@ class CAUTRUCLUOTXAMNHAPNGAUNHIEN with CAUTRUCTHUCTHICOBAN {
     return;
   }
 
-
   /// -----
   /// TODO:
   /// -----
@@ -53,14 +52,18 @@ class CAUTRUCLUOTXAMNHAPNGAUNHIEN with CAUTRUCTHUCTHICOBAN {
     required GlobalStateManagementSystem? globalStateManagementSystem, //
     Future<void> Function()? onThucThiHoanTat, //
   }) async {
-    await globalStateManagementSystem?.onGetEntityResourceManagement?.getQuanLyTrangThaiHangarPhuongTien?.onTaiTaiNguyenPhuongTienTheoMaDinhDanh(
-      maDinhDanhPhuongTien: getDonViLuotXamNhap?.getPhuongTienChiHuyXamNhap?.getMaDinhDanhPhuongTien,
-      onThucThiHoanTat: (SpriteAnimation? spriteAnimation) async {
-        getCardNhiemVuNganChanXamNhap?.getSpriteAnimationComponentPhuongTienChiHuyXamNhap?.animation = spriteAnimation;
+    if (globalStateManagementSystem?.getTienTrinhTongQuat?.getTrangThaiHoatDongTaiManHinhChinh == true) {
+      await globalStateManagementSystem?.onGetEntityResourceManagement?.getQuanLyTrangThaiHangarPhuongTien?.onTaiTaiNguyenPhuongTienTheoMaDinhDanh(
+        maDinhDanhPhuongTien: getDonViLuotXamNhap?.getPhuongTienChiHuyXamNhap?.getMaDinhDanhPhuongTien,
+        onThucThiHoanTat: (SpriteAnimation? spriteAnimation) async {
+          if (globalStateManagementSystem?.getTienTrinhTongQuat?.getTrangThaiHoatDongTaiManHinhChinh == true) {
+            getCardNhiemVuNganChanXamNhap?.getSpriteAnimationComponentPhuongTienChiHuyXamNhap?.onCaiDatAnimation(spriteAnimation: spriteAnimation);
 
-        await onThucThiHoanTat?.call();
-      },
-    );
+            await onThucThiHoanTat?.call();
+          }
+        },
+      );
+    }
 
     return;
   }
@@ -70,7 +73,7 @@ class CAUTRUCLUOTXAMNHAPNGAUNHIEN with CAUTRUCTHUCTHICOBAN {
       maDinhDanhPhuongTien: getDonViLuotXamNhap?.getPhuongTienChiHuyXamNhap?.getMaDinhDanhPhuongTien,
     );
 
-    getCardNhiemVuNganChanXamNhap?.getSpriteAnimationComponentPhuongTienChiHuyXamNhap?.animation = null;
+    getCardNhiemVuNganChanXamNhap?.getSpriteAnimationComponentPhuongTienChiHuyXamNhap?.onCaiDatAnimation(spriteAnimation: null);
 
     return;
   }

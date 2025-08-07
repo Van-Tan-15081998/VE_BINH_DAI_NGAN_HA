@@ -337,12 +337,8 @@ class QUANLYVANHANHNGANCHANXAMNHAP with CAUTRUCTHUCTHICOBAN, DanhSachQuanLyTrang
           // DONVILUOTXAMNHAPCOBAN? donViNgauNhien = getDonViLuotXamNhapCapDoASS1000;
         }
 
-        /// TEST
-        donViNgauNhien = getDonViLuotXamNhapCapDoASS2010;
-        donViNgauNhien = getDonViLuotXamNhapCapDoASS2020;
-        donViNgauNhien = getDonViLuotXamNhapCapDoASS2030;
-        // donViNgauNhien = getDonViLuotXamNhapCapDoASS1200;
-        // donViNgauNhien = getDonViLuotXamNhapCapDoASS9999;
+        /// Chi Dinh
+        donViNgauNhien = getDanhSachDonViLuotXamNhapXuatHienBossTichHop[random.nextInt(getDanhSachDonViLuotXamNhapXuatHienBossTichHop.length)];
 
         await getCauTrucLuotXamNhapNgauNhienSS060?.caiDatDonViLuotXamNhap(value: donViNgauNhien, caiDatUuTien: true);
         await getCauTrucLuotXamNhapNgauNhienSS060?.getDonViLuotXamNhap?.onSetupRoot();
@@ -741,6 +737,36 @@ class QUANLYVANHANHNGANCHANXAMNHAP with CAUTRUCTHUCTHICOBAN, DanhSachQuanLyTrang
           // getDonViLuotXamNhapCapDoASS980, // 23 -  // [X] Không Hoạt Động
           // getDonViLuotXamNhapCapDoASS990, // 24 -  // [X] Không Hoạt Động
           getDonViLuotXamNhapCapDoASS1000, // 25 -
+        ]);
+      }
+
+      if (getDanhSachDonViLuotXamNhapXuatHienBossTichHop.isEmpty == true) {
+        getDanhSachDonViLuotXamNhapXuatHienBossTichHop.addAll([
+          getDonViLuotXamNhapCapDoASS2010,
+          getDonViLuotXamNhapCapDoASS2020,
+          getDonViLuotXamNhapCapDoASS2030,
+          getDonViLuotXamNhapCapDoASS2040,
+          getDonViLuotXamNhapCapDoASS2050,
+          getDonViLuotXamNhapCapDoASS2060,
+          getDonViLuotXamNhapCapDoASS2070,
+          getDonViLuotXamNhapCapDoASS2080,
+          getDonViLuotXamNhapCapDoASS2090,
+          getDonViLuotXamNhapCapDoASS2100,
+          getDonViLuotXamNhapCapDoASS2110,
+          getDonViLuotXamNhapCapDoASS2120,
+          getDonViLuotXamNhapCapDoASS2130,
+          getDonViLuotXamNhapCapDoASS2140,
+          getDonViLuotXamNhapCapDoASS2150,
+          getDonViLuotXamNhapCapDoASS2160,
+          getDonViLuotXamNhapCapDoASS2170,
+          getDonViLuotXamNhapCapDoASS2180,
+          getDonViLuotXamNhapCapDoASS2190,
+          getDonViLuotXamNhapCapDoASS2200,
+          getDonViLuotXamNhapCapDoASS2210,
+          getDonViLuotXamNhapCapDoASS2220,
+          getDonViLuotXamNhapCapDoASS2230,
+          getDonViLuotXamNhapCapDoASS2240,
+          getDonViLuotXamNhapCapDoASS2250,
         ]);
       }
 
@@ -1206,6 +1232,9 @@ class QUANLYVANHANHNGANCHANXAMNHAP with CAUTRUCTHUCTHICOBAN, DanhSachQuanLyTrang
 
   final List<DONVILUOTXAMNHAPCOBAN?> _danhSachDonViLuotXamNhapXuatHienBoss = [];
   List<DONVILUOTXAMNHAPCOBAN?> get getDanhSachDonViLuotXamNhapXuatHienBoss => _danhSachDonViLuotXamNhapXuatHienBoss;
+
+  final List<DONVILUOTXAMNHAPCOBAN?> _danhSachDonViLuotXamNhapXuatHienBossTichHop = [];
+  List<DONVILUOTXAMNHAPCOBAN?> get getDanhSachDonViLuotXamNhapXuatHienBossTichHop => _danhSachDonViLuotXamNhapXuatHienBossTichHop;
 
   /// -----
   /// TODO: Nhiệm Vụ Chiến Đấu Chọn Chỉ Định

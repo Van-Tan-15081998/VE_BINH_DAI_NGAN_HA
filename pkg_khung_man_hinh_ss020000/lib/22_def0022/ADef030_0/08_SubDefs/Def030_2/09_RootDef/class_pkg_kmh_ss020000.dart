@@ -836,6 +836,18 @@ class SpriteAnimationComponentPhuongTienChiHuyXamNhap extends SpriteAnimationCom
     return;
   }
 
+  void onCaiDatAnimation({required SpriteAnimation? spriteAnimation}) {
+    if (spriteAnimation != null) {
+      if (isMounted == true) {
+        animation = spriteAnimation;
+      }
+    } else {
+      animation = spriteAnimation;
+    }
+
+    return;
+  }
+
   @override
   void renderTree(Canvas canvas) {
     //
