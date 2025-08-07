@@ -49,11 +49,16 @@ class CAUTRUCLUOTXAMNHAPNGAUNHIEN with CAUTRUCTHUCTHICOBAN {
   /// -----
   /// TODO:
   /// -----
-  Future<void> caiDatHinhAnhPhuongTienChiHuyXamNhap({required GlobalStateManagementSystem? globalStateManagementSystem}) async {
+  Future<void> caiDatHinhAnhPhuongTienChiHuyXamNhap({
+    required GlobalStateManagementSystem? globalStateManagementSystem, //
+    Future<void> Function()? onThucThiHoanTat, //
+  }) async {
     await globalStateManagementSystem?.onGetEntityResourceManagement?.getQuanLyTrangThaiHangarPhuongTien?.onTaiTaiNguyenPhuongTienTheoMaDinhDanh(
       maDinhDanhPhuongTien: getDonViLuotXamNhap?.getPhuongTienChiHuyXamNhap?.getMaDinhDanhPhuongTien,
       onThucThiHoanTat: (SpriteAnimation? spriteAnimation) async {
         getCardNhiemVuNganChanXamNhap?.getSpriteAnimationComponentPhuongTienChiHuyXamNhap?.animation = spriteAnimation;
+
+        await onThucThiHoanTat?.call();
       },
     );
 

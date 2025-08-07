@@ -688,111 +688,6 @@ class MoHinhPhuongTienTongQuat with CauTrucThucThiCoBan {
   }
 
   /// -----
-  /// TODO: Xử Lý Sự Kiện Va Chạm SS001
-  /// -----
-  Future<void> onXuLySuKienVaCham({required String maDinhDanhSuKienVaCham}) async {
-    return;
-
-    // /// -----
-    // /// TODO:
-    // /// -----
-    // TRANGTHAIVIENDANTANCONGCOBAN? vienDanVaCham;
-    //
-    // String? maDinhDanhVienDanVaCham;
-    //
-    // switch (maDinhDanhSuKienVaCham) {
-    //   case '[SU_KIEN_VA_CHAM_SS001]':
-    //     {
-    //       maDinhDanhVienDanVaCham = getTrangThaiTrongChienDau?.getMaDinhDanhVienDanVaChamSS001;
-    //     }
-    //     break;
-    //   case '[SU_KIEN_VA_CHAM_SS002]':
-    //     {
-    //       maDinhDanhVienDanVaCham = getTrangThaiTrongChienDau?.getMaDinhDanhVienDanVaChamSS002;
-    //     }
-    //     break;
-    //   case '[SU_KIEN_VA_CHAM_SS003]':
-    //     {
-    //       maDinhDanhVienDanVaCham = getTrangThaiTrongChienDau?.getMaDinhDanhVienDanVaChamSS003;
-    //     }
-    //     break;
-    // }
-    //
-    // if (maDinhDanhVienDanVaCham != null && maDinhDanhVienDanVaCham.isNotEmpty == true) {
-    //   vienDanVaCham = getSuKienVaChamThuocPhuongTien?.getMapVienDanVaCham[maDinhDanhVienDanVaCham]?.getMoHinh?.getVienDanVaCham;
-    //
-    //   final double chieuRongThanPhuongTien = getPhuongThuc?.getPhuongThucBay?.getViTri?.getChieuRongThanNotNull ?? 0;
-    //   final double chieuCaoThanPhuongTien = getPhuongThuc?.getPhuongThucBay?.getViTri?.getChieuCaoThanNotNull ?? 0;
-    //
-    //   final double dxTrongTamPhuongTien = getPhuongThuc?.getPhuongThucBay?.getViTri?.getDxTrongTamNotNull ?? 0;
-    //   final double dyTrongTamPhuongTien = getPhuongThuc?.getPhuongThucBay?.getViTri?.getDyTrongTamNotNull ?? 0;
-    //
-    //   final double dxTrongTamVienDan = vienDanVaCham?.getMoHinh?.getDxTrongTamNotNull ?? 0;
-    //   final double dyTrongTamVienDan = vienDanVaCham?.getMoHinh?.getDyTrongTamNotNull ?? 0;
-    //
-    //   if ((dxTrongTamVienDan < (dxTrongTamPhuongTien + (chieuRongThanPhuongTien / 2))) &&
-    //       (dxTrongTamVienDan > (dxTrongTamPhuongTien - (chieuRongThanPhuongTien / 2))) &&
-    //       (dyTrongTamVienDan < (dyTrongTamPhuongTien + (chieuCaoThanPhuongTien / 2))) &&
-    //       (dyTrongTamVienDan > (dyTrongTamPhuongTien - (chieuCaoThanPhuongTien / 2)))) {
-    //     if (kDebugMode) {
-    //       print('[📋]_[LOG]_[XAC_NHAN_SU_KIEN_VA_CHAM_CHINH_XAC 🎯]');
-    //     }
-    //   } else {
-    //     if (kDebugMode) {
-    //       print('[📋]_[LOG]_[XAC_NHAN_SU_KIEN_VA_CHAM_KHONG_CHINH_XAC 🎯]');
-    //     }
-    //     vienDanVaCham = null;
-    //
-    //     switch (maDinhDanhSuKienVaCham) {
-    //       case '[SU_KIEN_VA_CHAM_SS001]':
-    //         {
-    //           getTrangThaiTrongChienDau?.onVoidCaiDatMaDinhDanhVienDanVaChamSS001(value: null, caiDatUuTien: true);
-    //
-    //           /// Hủy Tham Chiếu
-    //         }
-    //         break;
-    //       case '[SU_KIEN_VA_CHAM_SS002]':
-    //         {
-    //           getTrangThaiTrongChienDau?.onVoidCaiDatMaDinhDanhVienDanVaChamSS002(value: null, caiDatUuTien: true);
-    //
-    //           /// Hủy Tham Chiếu
-    //         }
-    //         break;
-    //       case '[SU_KIEN_VA_CHAM_SS003]':
-    //         {
-    //           getTrangThaiTrongChienDau?.onVoidCaiDatMaDinhDanhVienDanVaChamSS003(value: null, caiDatUuTien: true);
-    //
-    //           /// Hủy Tham Chiếu
-    //         }
-    //         break;
-    //     }
-    //   }
-    // }
-    //
-    // if (vienDanVaCham?.getMoHinh?.getTrangThaiTonTai?.onCheckBoolKhoiTaoHoanTat() == true) {
-    //   /// -----
-    //   /// TODO: Tọa Độ Va Chạm
-    //   /// -----
-    //   double dx = ((vienDanVaCham?.getMoHinh?.getDxTrongTamNotNull ?? 0)) * 1.0;
-    //   double dy = (vienDanVaCham?.getMoHinh?.getDyTrongTamNotNull ?? 0) * 1.0;
-    //
-    //   DiemToaDoHoanHaoCoBan toaDoVaCham = DiemToaDoHoanHaoCoBan(maDinhDanh: '[TOA_DO_VA_CHAM]', dx: dx, dy: dy);
-    //
-    //   /// -----
-    //   /// TODO: Xử Lý Sự Kiện Va Chạm Gây Sát Thương Lên Phương Tiện
-    //   /// -----
-    //   await onXuLySatThuongHuongDenPhuongTien(toaDoVaCham: toaDoVaCham);
-    //
-    //   await vienDanVaCham?.caiDatMoHinh(value: null);
-    //
-    //   return;
-    // }
-    //
-    // ///
-    // return;
-  }
-
-  /// -----
   /// TODO:
   /// -----
   Future<TRANGTHAIVIENDANTANCONGCOBAN?> onXacNhanSuKienVaChamChinhXacVoiVienDan() async {
@@ -930,6 +825,8 @@ class MoHinhPhuongTienTongQuat with CauTrucThucThiCoBan {
   double chieuCaoThanChienDauCo = 0;
 
   void onVoidDieuKhienDiChuyenTheoDoiHinhChiTiet({required int chiSoTangTienTheoThoiGianThuc}) {
+    bool hanCheTocDoBay = false;
+
     if (true) {
       /// -----
       /// TODO: Kiểm Tra Va Chạm Giữa Phương Tiện Với Danh Sách Viên Đạn Chiến Đấu Cơ Hoạt Động
@@ -941,6 +838,12 @@ class MoHinhPhuongTienTongQuat with CauTrucThucThiCoBan {
       vienDanVaChamSS030 = null;
       vienDanVaChamSS040 = null;
       vienDanVaChamSS050 = null;
+      vienDanVaChamSS060 = null;
+      vienDanVaChamSS070 = null;
+      vienDanVaChamSS080 = null;
+      vienDanVaChamSS090 = null;
+      vienDanVaChamSS100 = null;
+
 
       /// -----
       /// TODO: Kiểm Tra Viên Đạn Va Chạm
@@ -1086,7 +989,22 @@ class MoHinhPhuongTienTongQuat with CauTrucThucThiCoBan {
       ///
       /// TODO:
       ///
-      if (vienDanVaCham != null || vienDanVaChamSS010 != null && vienDanVaChamSS020 != null && vienDanVaChamSS030 != null) {
+      if (
+          vienDanVaCham != null || //
+          vienDanVaChamSS010 != null || //
+          vienDanVaChamSS020 != null || //
+          vienDanVaChamSS030 != null || //
+          vienDanVaChamSS040 != null || //
+          vienDanVaChamSS050 != null || //
+          vienDanVaChamSS060 != null || //
+          vienDanVaChamSS070 != null || //
+          vienDanVaChamSS080 != null || //
+          vienDanVaChamSS090 != null || //
+          vienDanVaChamSS100 != null //
+      ) {
+
+        hanCheTocDoBay = true;
+
         if (this is MOHINHPHUONGTIENVUKHIBOMKHINHKHICAU) {
           ///
           return;
@@ -1245,6 +1163,10 @@ class MoHinhPhuongTienTongQuat with CauTrucThucThiCoBan {
             /// TODO:
             /// -----
             double step = getPhuongThuc?.getPhuongThucBay?.getThamSoBay?.getTocDoBay?.getTocDoHienHanh ?? 1.0; // Khoảng cách giữa các điểm
+
+            if (hanCheTocDoBay == true) {
+              step *= 0.5;
+            }
 
             // Tính độ dài của đoạn thẳng AB
             double lengthAB = (diemKetThuc - diemBatDau).distance;

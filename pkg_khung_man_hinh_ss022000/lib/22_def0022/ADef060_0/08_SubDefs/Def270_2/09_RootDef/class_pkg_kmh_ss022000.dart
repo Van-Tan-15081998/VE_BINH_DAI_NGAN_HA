@@ -101,14 +101,20 @@ class CARDNHIEMVUNGANCHANXAMNHAPSS060 extends THANHPHANNUTBAMTHUOCCAPTHUANKICHHO
 
   @override
   Future<void> onKichHoatThanhPhanThuocCap({VoidCallback? onHuyKichHoat, bool? kichHoatUuTien}) async {
-    await super.onKichHoatThanhPhanThuocCap(onHuyKichHoat: onHuyKichHoat, kichHoatUuTien: kichHoatUuTien);
+    // await super.onKichHoatThanhPhanThuocCap(onHuyKichHoat: onHuyKichHoat, kichHoatUuTien: kichHoatUuTien);
 
-    if (getTrangThaiKichHoatThanhPhan?.getKiemTraKichHoat == true) {
+    // if (getTrangThaiKichHoatThanhPhan?.getKiemTraKichHoat == true) {
+    if (true) {
       await getGlobalStateManagementSystem
           ?.getBangDieuKhienKichBanChienDauTheoGiaiDoan
           ?.getQuanLyVanHanhNganChanXamNhap
           ?.getCauTrucLuotXamNhapNgauNhienSS060 //
-          ?.caiDatHinhAnhPhuongTienChiHuyXamNhap(globalStateManagementSystem: getGlobalStateManagementSystem);
+          ?.caiDatHinhAnhPhuongTienChiHuyXamNhap(
+          globalStateManagementSystem: getGlobalStateManagementSystem,
+          onThucThiHoanTat: () async {
+            await super.onKichHoatThanhPhanThuocCap(onHuyKichHoat: onHuyKichHoat, kichHoatUuTien: kichHoatUuTien);
+          }
+      );
     }
   }
 
