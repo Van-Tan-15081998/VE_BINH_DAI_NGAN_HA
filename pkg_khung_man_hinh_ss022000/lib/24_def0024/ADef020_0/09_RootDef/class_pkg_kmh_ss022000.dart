@@ -59,6 +59,8 @@ class KHUNGMANHINHCHINH extends KHUNGMANHINHGAMECOSO {
           await add(getKhungManHinhMasterLoading!);
         }
 
+        await onKichHoatManHinhLoading?.call();
+
         /// -----
         /// TODO:
         /// -----

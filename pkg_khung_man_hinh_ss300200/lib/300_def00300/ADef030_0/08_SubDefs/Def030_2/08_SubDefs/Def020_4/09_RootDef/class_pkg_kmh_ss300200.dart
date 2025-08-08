@@ -26,6 +26,8 @@ class NUTBAMCHONTIEPTUC extends THANHPHANNUTBAMTHUOCCAPTHUANKICHHOAT {
   @override
   void onThucThi() async {
     await getGameController?.onHuyKichHoatKhungManHinhThuocCapSS300200();
+
+    await getGlobalStateManagementSystem?.getTienTrinhTongQuat?.getTienTrinhThucThiChienDau?.getTrangThai?.getMoHinh?.caiDatDangThucThi();
   }
 
   @override

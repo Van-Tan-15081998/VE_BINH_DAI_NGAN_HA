@@ -6195,7 +6195,7 @@ class THUOCTINHTAINGUYENCOBAN with CAUTRUCTHUCTHICOBAN {
       onThucThiHoanTat?.call();
     };
 
-    await cauTrucThucThiTuanTu.onThucThiTuanTu(interval: const Duration(milliseconds: 100));
+    await cauTrucThucThiTuanTu.onThucThiTuanTu(interval: const Duration(milliseconds: 50));
 
     if (kDebugMode) {
       stopwatch?.stop();
@@ -6942,7 +6942,7 @@ class THUOCTINHTAINGUYENCOBAN with CAUTRUCTHUCTHICOBAN {
       await onThucThiHoanTat?.call(thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinh?.getSpriteAnimation);
     };
 
-    await cauTrucThucThiTuanTu.onThucThiTuanTu(interval: const Duration(milliseconds: 100));
+    await cauTrucThucThiTuanTu.onThucThiTuanTu(interval: const Duration(milliseconds: 50));
 
     if (kDebugMode) {
       stopwatch?.stop();
@@ -7295,7 +7295,7 @@ class THUOCTINHTAINGUYENCOBAN with CAUTRUCTHUCTHICOBAN {
       await onThucThiHoanTat?.call(thuocTinhHinhAnh?.getDonViHinhAnhSpriteNgoaiHinh?.getSpriteAnimation);
     };
 
-    await cauTrucThucThiTuanTu.onThucThiTuanTu(interval: const Duration(milliseconds: 100));
+    await cauTrucThucThiTuanTu.onThucThiTuanTu(interval: const Duration(milliseconds: 50));
 
     if (kDebugMode) {
       stopwatch?.stop();

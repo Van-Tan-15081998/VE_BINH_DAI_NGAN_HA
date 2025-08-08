@@ -63,9 +63,9 @@ class BANGDIEUKHIENDOIHINHTSTCSTAGESS00G014XNNNSS00G extends BANGDIEUKHIENDOIHIN
       /// -----
       /// TODO: [26] => [30] - [Nhóm SS00C - Turn SS020]
       /// -----
-      caiDatTrangThaiPhuongTienSS070(value: TrangThaiPhuongTien(value: PHUONGTIENCHIHUYCLASS40ASS01(capDo: 2)), caiDatUuTien: true).catchError((e) => null),
-      caiDatTrangThaiPhuongTienSS072(value: TrangThaiPhuongTien(value: PHUONGTIENCHIHUYCLASS30BSS01(capDo: 1)), caiDatUuTien: true).catchError((e) => null),
-      caiDatTrangThaiPhuongTienSS074(value: TrangThaiPhuongTien(value: PHUONGTIENCHIHUYCLASS50ASS01(capDo: 1)), caiDatUuTien: true).catchError((e) => null),
+      caiDatTrangThaiPhuongTienSS070(value: TrangThaiPhuongTien(value: PHUONGTIENCHIHUYCLASS40ASS01(capDo: 2, phuongTienThongSoaiToiCao: true)), caiDatUuTien: true).catchError((e) => null),
+      caiDatTrangThaiPhuongTienSS072(value: TrangThaiPhuongTien(value: PHUONGTIENCHIHUYCLASS30BSS01(capDo: 1, phuongTienThongSoaiToiCao: true)), caiDatUuTien: true).catchError((e) => null),
+      caiDatTrangThaiPhuongTienSS074(value: TrangThaiPhuongTien(value: PHUONGTIENCHIHUYCLASS50ASS01(capDo: 1, phuongTienThongSoaiToiCao: true)), caiDatUuTien: true).catchError((e) => null),
       caiDatTrangThaiPhuongTienSS076(value: TrangThaiPhuongTien(value: null), caiDatUuTien: true).catchError((e) => null),
       caiDatTrangThaiPhuongTienSS078(value: TrangThaiPhuongTien(value: null), caiDatUuTien: true).catchError((e) => null),
     ]);

@@ -21,8 +21,20 @@ export '26_def0026/ADef20_0/08_SubDefs/Def30_2/09_RootDef/class_20002208.dart';
 /// TODO: _____[THUOC_TINH_AM_THANH_HIEU_UNG_XAM_NHAP]_____
 export '26_def0026/ADef20_0/08_SubDefs/Def34_2/09_RootDef/class_20002208.dart';
 
+/// TODO: _____[THUOC_TINH_AM_THANH_HIEU_UNG_PHUONG_TIEN_TAN_CONG]_____
+export '26_def0026/ADef20_0/08_SubDefs/Def36_2/09_RootDef/class_20002208.dart';
+
+/// TODO: _____[THUOC_TINH_AM_THANH_HIEU_UNG_PHUONG_TIEN_XUAT_HIEN]_____
+export '26_def0026/ADef20_0/08_SubDefs/Def38_2/09_RootDef/class_20002208.dart';
+
 /// TODO: _____[THUOC_TINH_AM_THANH_HIEU_UNG_CHIEN_DAU_CHIEN_THANG]_____
 export '26_def0026/ADef20_0/08_SubDefs/Def40_2/09_RootDef/class_20002208.dart';
+
+/// TODO: _____[THUOC_TINH_AM_THANH_HIEU_UNG_CHIEN_DAU_THAT_BAI]_____
+export '26_def0026/ADef20_0/08_SubDefs/Def42_2/09_RootDef/class_20002208.dart';
+
+/// TODO: 0_____[THUOC_TINH_AM_THANH_HIEU_UNG_QUA_TRINH_CHIEN_DAU]_____
+export '26_def0026/ADef20_0/08_SubDefs/Def50_2/09_RootDef/class_20002208.dart';
 
 /// TODO: _____[THUOC_TINH_HIEU_UNG_AM_THANH_CHIEN_DAU_CO]_____
 export '26_def0026/ADef30_0/09_RootDef/class_20002828.dart';

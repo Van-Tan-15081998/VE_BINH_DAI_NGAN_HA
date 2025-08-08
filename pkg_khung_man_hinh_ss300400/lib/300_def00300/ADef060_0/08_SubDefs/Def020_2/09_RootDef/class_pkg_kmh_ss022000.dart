@@ -33,6 +33,11 @@ class KHUNGTICHHOPTHANHTICHCHIENDAUTAINGUYENVANGTRAODOI extends THANHPHANTICHHOP
 
     await onCapNhatChiTietThanhPhanGameUI();
 
+    getThanhPhanVanBanSoHoc?.onVoidCaiDatAnchorCenter();
+    getThanhPhanVanBanSoHoc?.onVoidCaiDatPositionDx(value: (getSizeDx ?? 0) * 2/3, caiDatUuTien: true);
+    getThanhPhanVanBanSoHoc?.onVoidCaiDatPositionDy(value: (getSizeDy ?? 0) / 2, caiDatUuTien: true);
+
+    ///
     return;
   }
 

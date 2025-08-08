@@ -22,6 +22,8 @@ class QUANLYDIEUKHIENCHUYENKICHBANCHIENDAU with CauTrucThucThiCoBan, DanhSachQua
     /// TODO:
     /// -----
     if (attachValue is GlobalStateManagementSystem) {
+      await caiDatDichVuMayPhatAmThanh(value: attachValue.getDichVuMayPhatAmThanh);
+
       await caiDatTienTrinhTongQuat(value: attachValue.getTienTrinhTongQuat);
 
       await caiDatChienDauCoTongQuat(value: attachValue.getChienDauCoTongQuat);
@@ -504,6 +506,8 @@ class QUANLYDIEUKHIENCHUYENKICHBANCHIENDAU with CauTrucThucThiCoBan, DanhSachQua
       phuongTienSS072: phuongTienSS072,
       phuongTienSS074: phuongTienSS074,
     );
+
+    await getDichVuMayPhatAmThanh?.getAmThanhHeThong?.getAmThanhHieuUngPhuongTienTanCong?.onPlay();
   }
 
   Future<void> onTSTCThucThiTanCongLienKichHinhThucSS020({required MoHinhPhuongTienTongQuat? phuongTien, bool? phuongTienSS070, bool? phuongTienSS072, bool? phuongTienSS074}) async {
@@ -513,6 +517,8 @@ class QUANLYDIEUKHIENCHUYENKICHBANCHIENDAU with CauTrucThucThiCoBan, DanhSachQua
       phuongTienSS072: phuongTienSS072,
       phuongTienSS074: phuongTienSS074,
     );
+
+    await getDichVuMayPhatAmThanh?.getAmThanhHeThong?.getAmThanhHieuUngPhuongTienTanCong?.onPlay();
   }
 
   Future<void> onTSTCThucThiTanCongLienKichHinhThucSS030({required MoHinhPhuongTienTongQuat? phuongTien, bool? phuongTienSS070, bool? phuongTienSS072, bool? phuongTienSS074}) async {
@@ -522,6 +528,8 @@ class QUANLYDIEUKHIENCHUYENKICHBANCHIENDAU with CauTrucThucThiCoBan, DanhSachQua
       phuongTienSS072: phuongTienSS072,
       phuongTienSS074: phuongTienSS074,
     );
+
+    await getDichVuMayPhatAmThanh?.getAmThanhHeThong?.getAmThanhHieuUngPhuongTienTanCong?.onPlay();
   }
 
   /// -----

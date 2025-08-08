@@ -35,10 +35,10 @@ class GAMEUICARDDANGCAPSAO00D040 extends CoreGameUIComponent {
     /// -----
     /// TODO: Ngoại Hình Thân
     /// -----
-    final int tongSoFrame = 9;
-    final int tongSoFrameTrenHang = 3;
-    final double chieuRongFrame = 359.0;
-    final double chieuCaoFrame = 359.0;
+    final int tongSoFrame = 4;
+    final int tongSoFrameTrenHang = 2;
+    final double chieuRongFrame = 350.0;
+    final double chieuCaoFrame = 350.0;
     await Future.wait([
       getSpriteThanhPhanGameUI?.getDonViSpriteNgoaiHinhGameUI?.caiDatNguonHinhAnh(value: null).catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
       getSpriteThanhPhanGameUI?.getDonViSpriteNgoaiHinhGameUI?.caiDatTongSoFrame(value: tongSoFrame).catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),

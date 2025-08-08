@@ -340,6 +340,8 @@ class QUANLYVANHANHNGANCHANXAMNHAP with CAUTRUCTHUCTHICOBAN, DanhSachQuanLyTrang
         /// Chi Dinh
         donViNgauNhien = getDanhSachDonViLuotXamNhapXuatHienBossTichHop[random.nextInt(getDanhSachDonViLuotXamNhapXuatHienBossTichHop.length)];
 
+        // donViNgauNhien = getDonViLuotXamNhapCapDoASS2030;
+
         await getCauTrucLuotXamNhapNgauNhienSS060?.caiDatDonViLuotXamNhap(value: donViNgauNhien, caiDatUuTien: true);
         await getCauTrucLuotXamNhapNgauNhienSS060?.getDonViLuotXamNhap?.onSetupRoot();
         await getCauTrucLuotXamNhapNgauNhienSS060?.getDonViLuotXamNhap?.onInitRoot();

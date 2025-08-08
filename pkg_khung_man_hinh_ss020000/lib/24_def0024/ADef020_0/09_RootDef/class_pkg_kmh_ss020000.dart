@@ -84,6 +84,15 @@ abstract class KHUNGMANHINHGAMECOSO extends FlameGame with CAUTRUCTHUCTHICOBAN, 
     return;
   }
 
+  Future<void> Function()? onKichHoatManHinhLoading;
+  Future<void> Function()? onHuyKichHoatManHinhLoading;
+
+  Future<void> Function()? onKichHoatManHinhBackground;
+  Future<void> Function()? onHuyKichHoatManHinhBackground;
+
+  Future<void> Function()? onKichHoatCaiDatDoHoaThap;
+  Future<void> Function()? onKichHoatCaiDatDoHoaCao;
+
   /// -----
   /// TODO:
   /// -----
@@ -736,10 +745,16 @@ abstract class KHUNGMANHINHGAMECOSO extends FlameGame with CAUTRUCTHUCTHICOBAN, 
   /// -----
   @override
   Future<void> onKhoiDongGameCoSoSS999ChiTiet() async {
+
+    await getGlobalStateManagementSystem?.getDichVuMayPhatAmThanh?.getAmThanhHeThong?.getAmThanhHieuUngQuaTrinhChienDau?.onPlayHieuUngAmThanhBackground();
+
     /// -----
     /// TODO: Hủy Kích Hoạt Khung Màn Hình Thuộc Cấp Loading SS010 [Master Loading]
     /// -----
     await onHuyKichHoatKhungManHinhThuocCapLoadingSS010();
+    await onHuyKichHoatManHinhLoading?.call();
+
+    await onKichHoatManHinhBackground?.call();
 
     await getGlobalStateManagementSystem?.getTienTrinhTongQuat?.onCaiDatTrangThaiHoatDongTaiManHinhChinh(
       value: true,
@@ -748,6 +763,7 @@ abstract class KHUNGMANHINHGAMECOSO extends FlameGame with CAUTRUCTHUCTHICOBAN, 
         await getGlobalStateManagementSystem?.getBangDieuKhienKichBanChienDauTheoGiaiDoan?.getQuanLyVanHanhNganChanXamNhap?.caiDatSanSangVanHanh(value: true, caiDatUuTien: true);
       },
     );
+
 
     ///
     return;

@@ -328,7 +328,7 @@ class QUANLYTAINGUYENTHANHPHANGAMEUI with CauTrucThucThiCoBan {
       }
     };
 
-    await cauTrucThucThiTuanTu.onThucThiTuanTu(interval: const Duration(milliseconds: 100));
+    await cauTrucThucThiTuanTu.onThucThiTuanTu(interval: const Duration(milliseconds: 50));
 
     ///
     return;

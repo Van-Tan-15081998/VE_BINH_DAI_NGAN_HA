@@ -1863,7 +1863,7 @@ class QUANLYTRANGTHAIHANGARCHIENDAUCO with CAUTRUCTHUCTHICOBAN {
       );
 
       cauTrucThucThiTuanTu.onThucThiHoanTat = onThucThiHoanTat;
-      await cauTrucThucThiTuanTu.onThucThiTuanTu(interval: const Duration(milliseconds: 100));
+      await cauTrucThucThiTuanTu.onThucThiTuanTu(interval: const Duration(milliseconds: 50));
     } catch (e) {
       await onReportRootIssue(nameFunction: 'onGiaiPhongTaiNguyenMaster');
     }
@@ -1971,7 +1971,7 @@ class QUANLYTRANGTHAIHANGARCHIENDAUCO with CAUTRUCTHUCTHICOBAN {
 
       cauTrucThucThiTuanTu.onThucThiHoanTat = onThucThiHoanTat;
 
-      await cauTrucThucThiTuanTu.onThucThiTuanTu(interval: const Duration(milliseconds: 100));
+      await cauTrucThucThiTuanTu.onThucThiTuanTu(interval: const Duration(milliseconds: 50));
     } catch (e) {
       await onReportRootIssue(nameFunction: 'onTaiTaiNguyenMaster');
     }

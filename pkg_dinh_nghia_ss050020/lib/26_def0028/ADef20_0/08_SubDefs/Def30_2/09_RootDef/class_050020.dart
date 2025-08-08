@@ -25,7 +25,7 @@ class CAUTRUCLUOTXAMNHAPNGAUNHIEN with CAUTRUCTHUCTHICOBAN {
       /// TODO:
       /// -----
       final random = Random();
-      int number = random.nextInt(500) + 1; // Tạo số từ 1 đến 20000
+      int number = random.nextInt(200) + 1; // Tạo số từ 1 đến 20000
 
       await caiDatKhoangThoiGianXuatHienLuotXamNhap(value: number, caiDatUuTien: true);
       // await caiDatKhoangThoiGianXuatHienLuotXamNhap(value: 0, caiDatUuTien: true);
@@ -116,7 +116,7 @@ class CAUTRUCLUOTXAMNHAPNGAUNHIEN with CAUTRUCTHUCTHICOBAN {
 
   Future<void> caiDatTuDongKhoangThoiGianXuatHienLuotXamNhap() async {
     final random = Random();
-    int number = random.nextInt(5000) + 1; // Tạo số từ 1 đến 20000
+    int number = random.nextInt(1000) + 1; // Tạo số từ 1 đến 50000
 
     await caiDatKhoangThoiGianXuatHienLuotXamNhap(value: number, caiDatUuTien: true);
 

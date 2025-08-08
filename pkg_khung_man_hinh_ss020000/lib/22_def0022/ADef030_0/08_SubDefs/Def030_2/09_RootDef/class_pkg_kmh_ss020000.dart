@@ -230,6 +230,10 @@ abstract class THANHPHANNUTBAMTHUOCCAPTHUANKICHHOAT extends PositionComponent wi
   /// TODO:
   /// -----
   Future<void> onCapNhatTrangThaiKichHoatThanhPhan() async {
+
+    await getTrangThaiKichHoatHanhVi?.onSetupRoot();
+    await getTrangThaiKichHoatHanhVi?.onInitRoot();
+
     /// -----
     /// TODO:
     /// -----

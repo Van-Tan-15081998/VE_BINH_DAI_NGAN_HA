@@ -48,7 +48,7 @@ mixin CAUTRUCPHATAMTHANHCOBAN {
     /// -----
     /// TODO: Comment Để Quá Trình Âm Thanh Hoạt Động
     /// -----
-    return;
+    // return;
 
     if (getNguonAmThanh?.isNotEmpty == true) {
       try {
@@ -155,6 +155,31 @@ mixin CAUTRUCPHATAMTHANHCOBAN {
             await getMayPhatAmThanh?.onPlayAmThanhBackground(nguonAmThanh: getNguonAmThanh!);
           }
       }
+    }
+    return true;
+  }
+
+  /// -----
+  /// TODO: Phát Âm Thanh
+  /// -----
+  Future<bool?> onPlayHieuUngAmThanhBackground() async {
+    if (getNguonAmThanh != null && getNguonAmThanh?.isNotEmpty == true) {
+      await getMayPhatAmThanh?.onPlayHieuUngAmThanhBackground(
+        nguonAmThanh: getNguonAmThanh!,
+        nguonAmThanhLuuVaoRam: getNguonAmThanhLuuVaoRam,
+        nguonAmThanhSanSang: getNguonAmThanhSanSang,
+      );
+    }
+    return true;
+  }
+
+  Future<bool?> onStopHieuUngAmThanhBackground() async {
+    if (getNguonAmThanh != null && getNguonAmThanh?.isNotEmpty == true) {
+      await getMayPhatAmThanh?.onStopHieuUngAmThanhBackground(
+        nguonAmThanh: getNguonAmThanh!,
+        nguonAmThanhLuuVaoRam: getNguonAmThanhLuuVaoRam,
+        nguonAmThanhSanSang: getNguonAmThanhSanSang,
+      );
     }
     return true;
   }

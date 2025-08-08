@@ -20,6 +20,8 @@ class HINHANHBACKGROUNDKHUNGMANHINH extends THANHPHANHINHANHBACKGROUNDTHUOCCAP {
 
   @override
   Future<void> onCaiDatChiTietThanhPhanGameUI() async {
+    /// THAY THE BANG VIDEO
+
     await onCaiDatThanhPhanGameUI(
       value: GAMEUIKHUNGMANHINHTHUOCCAPCOBAN(),
       caiDatUuTien: true,

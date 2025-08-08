@@ -137,11 +137,11 @@ class CARDNHIEMVUSS00A003MAPSS00A extends THANHPHANNUTBAMTICHHOPTHUOCCAP {
     getSpriteAnimationComponentThanhTichSS030KichHoat
         ?.onVoidCaiDatKiemTraHienThi(value: false);
     getSpriteAnimationComponentThanhTichSS010HuyKichHoat
-        ?.onVoidCaiDatKiemTraHienThi(value: false);
+        ?.onVoidCaiDatKiemTraHienThi(value: true);
     getSpriteAnimationComponentThanhTichSS020HuyKichHoat
-        ?.onVoidCaiDatKiemTraHienThi(value: false);
+        ?.onVoidCaiDatKiemTraHienThi(value: true);
     getSpriteAnimationComponentThanhTichSS030HuyKichHoat
-        ?.onVoidCaiDatKiemTraHienThi(value: false);
+        ?.onVoidCaiDatKiemTraHienThi(value: true);
 
     ///
     return;

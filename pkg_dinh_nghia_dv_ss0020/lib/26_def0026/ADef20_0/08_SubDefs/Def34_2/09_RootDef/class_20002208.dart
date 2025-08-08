@@ -61,7 +61,7 @@ class THUOCTINHHIEUUNGAMTHANHXAMNHAP with CauTrucThucThiCoBan, CAUTRUCPHATAMTHAN
     await caiDatNguonAmThanh(
       value:
           'packages/pkg_dinh_nghia_dv_ss0020/lib/26_def0026/ADef20_0/08_SubDefs/Def34_2/06_SoundSrcs/'
-          'am_thanh_hieu_ung_xam_nhap_ss020.mp3.mp3',
+          'am_thanh_hieu_ung_xam_nhap_ss020.mp3',
     );
 
     /// -----

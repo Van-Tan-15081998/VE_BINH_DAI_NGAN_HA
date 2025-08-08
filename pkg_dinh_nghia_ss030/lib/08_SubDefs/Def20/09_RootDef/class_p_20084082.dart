@@ -618,7 +618,7 @@ class MoHinhPhuongTienTongQuat with CauTrucThucThiCoBan {
   /// -----
   /// TODO: Hàm Xử Lý Va Chạm Gây Sát Thương Lên Phương Tiện
   /// -----
-  Future<void> onXuLySatThuongHuongDenPhuongTien({required DiemToaDoHoanHaoCoBan? toaDoVaCham}) async {
+  void onXuLySatThuongHuongDenPhuongTien({required DiemToaDoHoanHaoCoBan? toaDoVaCham}) {
     /// -----
     /// TODO: Tính Toán Xử Lý Sát Thương Lên Phương Tiện
     /// -----

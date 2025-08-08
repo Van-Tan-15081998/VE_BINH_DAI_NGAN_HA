@@ -34,13 +34,13 @@ class QUANLYTHANHPHANNUTBAMTHUOCCAP extends QUANLYTHANHPHANNUTBAMTHUOCCAPCOBAN {
     required this.onThucThiChuyenTabSS050,
   });
 
-  NUTBAMCHONQUAYVETRANGCHU? _nutBamChonQuayVeTrangchu;
-  NUTBAMCHONQUAYVETRANGCHU? get getNutBamChonQuayVeTrangchu => _nutBamChonQuayVeTrangchu;
-  Future<void> onCaiDatNutBamChonQuayVeTrangchu({required NUTBAMCHONQUAYVETRANGCHU? value, bool? caiDatUuTien}) async {
+  NUTBAMCHONQUAYVETRANGCHU? _nutBamChonQuayVeTrangChu;
+  NUTBAMCHONQUAYVETRANGCHU? get getNutBamChonQuayVeTrangChu => _nutBamChonQuayVeTrangChu;
+  Future<void> onCaiDatNutBamChonQuayVeTrangChu({required NUTBAMCHONQUAYVETRANGCHU? value, bool? caiDatUuTien}) async {
     if (caiDatUuTien == true) {
-      _nutBamChonQuayVeTrangchu = value;
+      _nutBamChonQuayVeTrangChu = value;
     } else {
-      _nutBamChonQuayVeTrangchu ??= value;
+      _nutBamChonQuayVeTrangChu ??= value;
     }
 
     ///
@@ -125,7 +125,7 @@ class QUANLYTHANHPHANNUTBAMTHUOCCAP extends QUANLYTHANHPHANNUTBAMTHUOCCAPCOBAN {
     /// -----
     await Future.wait([
 
-      onAddComponent(flameGame: flameGame, parentComponent: component, childComponent: getNutBamChonQuayVeTrangchu).catchError((e) => null),
+      onAddComponent(flameGame: flameGame, parentComponent: component, childComponent: getNutBamChonQuayVeTrangChu).catchError((e) => null),
 
       ///
       onAddComponent(
@@ -152,7 +152,7 @@ class QUANLYTHANHPHANNUTBAMTHUOCCAP extends QUANLYTHANHPHANNUTBAMTHUOCCAPCOBAN {
   @override
   Future<void> onAddRootForSubCom({required FlameGame? flameGame, required Component? component}) async {
     await Future.wait([
-      getNutBamChonQuayVeTrangchu?.onAddRoot(flameGame: flameGame, component: component).catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onAddRootForSubCom'),
+      getNutBamChonQuayVeTrangChu?.onAddRoot(flameGame: flameGame, component: component).catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onAddRootForSubCom'),
 
       getKhungTichHopThanhTichChienDauTaiNguyenVangTraoDoi?.onAddRoot(flameGame: flameGame, component: component).catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onAddRootForSubCom'),
 
@@ -209,7 +209,7 @@ class QUANLYTHANHPHANNUTBAMTHUOCCAP extends QUANLYTHANHPHANNUTBAMTHUOCCAPCOBAN {
 
 
 
-        onCaiDatNutBamChonQuayVeTrangchu(
+        onCaiDatNutBamChonQuayVeTrangChu(
           value: NUTBAMCHONQUAYVETRANGCHU(
             globalStateManagementSystem: getGlobalStateManagementSystem,
             gameController: getGameController,
@@ -252,7 +252,7 @@ class QUANLYTHANHPHANNUTBAMTHUOCCAP extends QUANLYTHANHPHANNUTBAMTHUOCCAPCOBAN {
       /// TODO:
       /// -----
       await Future.wait([
-        getNutBamChonQuayVeTrangchu?.onSetupRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onSetupRootForSubCom'),
+        getNutBamChonQuayVeTrangChu?.onSetupRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onSetupRootForSubCom'),
 
         getKhungTichHopThanhTichChienDauTaiNguyenVangTraoDoi?.onSetupRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onSetupRootForSubCom'),
 
@@ -279,7 +279,7 @@ class QUANLYTHANHPHANNUTBAMTHUOCCAP extends QUANLYTHANHPHANNUTBAMTHUOCCAPCOBAN {
       /// TODO:
       /// -----
       await Future.wait([
-        getNutBamChonQuayVeTrangchu?.onInitRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onInitRootForSubCom'),
+        getNutBamChonQuayVeTrangChu?.onInitRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onInitRootForSubCom'),
 
         getKhungTichHopThanhTichChienDauTaiNguyenVangTraoDoi?.onInitRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onSetupRootForSubCom'),
 
@@ -287,7 +287,7 @@ class QUANLYTHANHPHANNUTBAMTHUOCCAP extends QUANLYTHANHPHANNUTBAMTHUOCCAPCOBAN {
         ///
       ]);
 
-      await getNutBamChonQuayVeTrangchu?.onKichHoatThanhPhanThuocCap();
+      await getNutBamChonQuayVeTrangChu?.onKichHoatThanhPhanThuocCap();
 
       // await getKhungTichHopThanhTichChienDauTaiNguyenVangTraoDoi?.onKichHoatThanhPhanThuocCap();
 

@@ -768,6 +768,13 @@ class QUANLYTHANHPHANMANHINHKHUNGMANHINHCHINH extends QUANLYTHANHPHANMANHINHTHUO
   Future<void> onKichHoatKhungManHinhThuocCapSS300100() async {
     try {
 
+      await getGlobalStateManagementSystem?.getDichVuMayPhatAmThanh?.getAmThanhHeThong?.getAmThanhHieuUngQuaTrinhChienDau?.onStopHieuUngAmThanhBackground();
+
+      await getGameController?.onKichHoatManHinhLoading?.call();
+
+      await getGameController?.onHuyKichHoatManHinhBackground?.call();
+
+
       await getGlobalStateManagementSystem?.getTienTrinhTongQuat?.onCaiDatTrangThaiHoatDongTaiManHinhChinh(
         value: false,
         caiDatUuTien: true,
@@ -835,6 +842,10 @@ class QUANLYTHANHPHANMANHINHKHUNGMANHINHCHINH extends QUANLYTHANHPHANMANHINHTHUO
                       await getKhungManHinhSS03000?.onAddRoot(flameGame: null, component: getKhungManHinhSS03000);
 
                       await getKhungManHinhSS03000?.onHuyKichHoatKhungManHinhThuocCapSS300100();
+
+                      await getGameController?.onHuyKichHoatManHinhLoading?.call();
+
+                      await getGameController?.onKichHoatManHinhBackground?.call();
                     },
                   );
                 },
@@ -853,6 +864,13 @@ class QUANLYTHANHPHANMANHINHKHUNGMANHINHCHINH extends QUANLYTHANHPHANMANHINHTHUO
 
   @override
   Future<void> onTroVeTrangChu() async {
+
+    await getGlobalStateManagementSystem?.getDichVuMayPhatAmThanh?.getAmThanhHeThong?.getAmThanhHieuUngQuaTrinhChienDau?.onPlayHieuUngAmThanhBackground();
+
+    await getGameController?.onKichHoatManHinhLoading?.call();
+
+    await getGameController?.onHuyKichHoatManHinhBackground?.call();
+
     await getGlobalStateManagementSystem?.getTienTrinhTongQuat?.getTienTrinhThucThiChienDau?.getTrangThai?.getMoHinh?.caiDatDangChuanBiThucThi();
 
     await getGlobalStateManagementSystem?.getDichVuThanhTichChienDau?.getThanhTichChienDauTNVSS020?.onKhoiPhucDonViSoLuongNguyenBan();
@@ -924,6 +942,10 @@ class QUANLYTHANHPHANMANHINHKHUNGMANHINHCHINH extends QUANLYTHANHPHANMANHINHTHUO
 
             // await getKhungManHinhSS03000?.onHuyKichHoatKhungManHinhThuocCapSS300100();
             await getKhungManHinhMasterLoading?.onHuyKichHoatThanhPhanManHinhThuocCap();
+
+            await getGameController?.onHuyKichHoatManHinhLoading?.call();
+
+            await getGameController?.onKichHoatManHinhBackground?.call();
           },
         );
       },
@@ -1089,6 +1111,8 @@ class QUANLYTHANHPHANMANHINHKHUNGMANHINHCHINH extends QUANLYTHANHPHANMANHINHTHUO
       /// -----
 
       await getKhungManHinhSS03000?.onKichHoatKhungManHinhThuocCapSS300500();
+
+      await getGlobalStateManagementSystem?.getDichVuMayPhatAmThanh?.getAmThanhHeThong?.getAmThanhHieuUngChienDauThatBai?.onPlay();
     } catch (e) {
       await onReportRootIssue(nameFunction: 'onKichHoatKhungManHinhThuocCapSS300500');
     }

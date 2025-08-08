@@ -33,10 +33,12 @@ class NUTBAMCHONCHATLUONGDOHOATHAP extends THANHPHANNUTBAMTHUOCCAPTHUANKICHHOAT 
     /// -----
     /// TODO:
     /// -----
-    await getGlobalStateManagementSystem?.onGetEntityResourceManagement?.getQuanLyTrangThaiHangarChienDauCo
-        ?.onCaiDatChatLuongDoHoaThap();
-    await getGlobalStateManagementSystem?.onGetEntityResourceManagement?.getQuanLyTrangThaiHangarPhuongTien
-        ?.onCaiDatChatLuongDoHoaThap();
+    // await getGlobalStateManagementSystem?.onGetEntityResourceManagement?.getQuanLyTrangThaiHangarChienDauCo
+    //     ?.onCaiDatChatLuongDoHoaThap();
+    // await getGlobalStateManagementSystem?.onGetEntityResourceManagement?.getQuanLyTrangThaiHangarPhuongTien
+    //     ?.onCaiDatChatLuongDoHoaThap();
+
+    await getGameController?.onKichHoatCaiDatDoHoaThap?.call();
 
     ///
     return;

@@ -430,11 +430,11 @@ class QUANLYTHANHPHANNUTBAMKHUNGMANHINHCHINH extends QUANLYTHANHPHANNUTBAMTHUOCC
         getNutBamChuyenTabSS050?.onInitRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
       ]);
 
-      await getNutBamChuyenTabSS010?.onKichHoatThanhPhanThuocCap();
-      await getNutBamChuyenTabSS020?.onKichHoatThanhPhanThuocCap();
-      await getNutBamChuyenTabSS030?.onKichHoatThanhPhanThuocCap();
-      await getNutBamChuyenTabSS040?.onKichHoatThanhPhanThuocCap();
-      await getNutBamChuyenTabSS050?.onKichHoatThanhPhanThuocCap();
+      await getNutBamChuyenTabSS010?.onKichHoatThanhPhanThuocCap(kichHoatUuTien: true);
+      await getNutBamChuyenTabSS020?.onKichHoatThanhPhanThuocCap(kichHoatUuTien: true);
+      await getNutBamChuyenTabSS030?.onKichHoatThanhPhanThuocCap(kichHoatUuTien: true);
+      await getNutBamChuyenTabSS040?.onKichHoatThanhPhanThuocCap(kichHoatUuTien: true);
+      await getNutBamChuyenTabSS050?.onKichHoatThanhPhanThuocCap(kichHoatUuTien: true);
     } catch (e) {
       await onReportRootIssue(nameFunction: 'onInitRootForSubCom');
     }

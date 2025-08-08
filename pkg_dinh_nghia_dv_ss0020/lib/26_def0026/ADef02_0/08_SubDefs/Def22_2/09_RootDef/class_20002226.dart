@@ -203,6 +203,42 @@ class MAYPHATAMTHANHCOBAN with CauTrucThucThiCoBan {
     return;
   }
 
+  Future<bool?> onPlayHieuUngAmThanhBackground({
+    required String nguonAmThanh,
+    required String? nguonAmThanhLuuVaoRam,
+    required soloud.AudioSource? nguonAmThanhSanSang,
+  }) async {
+    if (getKichHoatAmThanhHieuUng == true) {
+      /// TODO: Sử Dụng Máy Phát Hiệu Ứng Âm Thanh SS020 [1]
+      if (await getMayPhatAmThanhHieuUngSS020?.isKiemTraTrangThaiSanSangPhatAmThanh() == true) {
+        await getMayPhatAmThanhHieuUngSS020?.onPlayHieuUngAmThanhBackground(
+          nguonAmThanh: nguonAmThanh,
+          nguonAmThanhLuuVaoRam: nguonAmThanhLuuVaoRam,
+          nguonAmThanhSanSang: nguonAmThanhSanSang,
+          amLuong: getAmLuong ?? 1.0,
+        );
+      }
+    }
+  }
+
+  Future<bool?> onStopHieuUngAmThanhBackground({
+    required String nguonAmThanh,
+    required String? nguonAmThanhLuuVaoRam,
+    required soloud.AudioSource? nguonAmThanhSanSang,
+  }) async {
+    if (getKichHoatAmThanhHieuUng == true) {
+      /// TODO: Sử Dụng Máy Phát Hiệu Ứng Âm Thanh SS020 [1]
+      if (await getMayPhatAmThanhHieuUngSS020?.isKiemTraTrangThaiSanSangPhatAmThanh() == true) {
+        await getMayPhatAmThanhHieuUngSS020?.onStopHieuUngAmThanhBackground(
+          nguonAmThanh: nguonAmThanh,
+          nguonAmThanhLuuVaoRam: nguonAmThanhLuuVaoRam,
+          nguonAmThanhSanSang: nguonAmThanhSanSang,
+          amLuong: getAmLuong ?? 1.0,
+        );
+      }
+    }
+  }
+
   /// -----
   /// TODO: Play Hiệu Ứng Âm Thanh  (Đưa Âm Thanh Vào Ngăn Xếp)
   /// -----
