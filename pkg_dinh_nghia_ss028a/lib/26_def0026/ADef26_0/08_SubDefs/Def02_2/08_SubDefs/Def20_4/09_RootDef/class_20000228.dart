@@ -824,6 +824,21 @@ abstract class VIENDANTANCONGCOBAN with CauTrucThucThiCoBan {
   /// -----
   /// TODO:
   /// -----
+  MoHinhPhuongTienTongQuat? _phuongTienHoatDongLayMucTieu;
+  MoHinhPhuongTienTongQuat? get getPhuongTienHoatDongLayMucTieu => _phuongTienHoatDongLayMucTieu;
+  void onVoidCaiDatPhuongTienHoatDongLayMucTieu({required MoHinhPhuongTienTongQuat? value, bool? caiDatUuTien}) async {
+    if (caiDatUuTien == true) {
+      _phuongTienHoatDongLayMucTieu = value;
+    } else {
+      _phuongTienHoatDongLayMucTieu ??= value;
+    }
+
+    return;
+  }
+
+  /// -----
+  /// TODO:
+  /// -----
   final Map<String, dynamic> _duLieuJsonSuKienVaCham = {
     '[CHIEU_RONG_MAN_HINH_PHI_VAT_LY]': null,
     '[CHIEU_CAO_MAN_HINH_PHI_VAT_LY]': null,
@@ -1240,5 +1255,7 @@ abstract class VIENDANTANCONGCOBAN with CauTrucThucThiCoBan {
 
     onVoidCaiDatDxTrongTam(value: -10000);
     onVoidCaiDatDyTrongTam(value: -10000);
+
+    onXuLyDuLieuJsonLamPhang();
   }
 }

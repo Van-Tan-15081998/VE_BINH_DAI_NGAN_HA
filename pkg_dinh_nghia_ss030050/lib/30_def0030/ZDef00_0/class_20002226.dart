@@ -665,7 +665,9 @@ class QUANLYTRANGTHAISUKIENVACHAMTHUOCPHUONGTIEN extends SUKIENVACHAMTHUOCPHUONG
 
                 phuongTienVaChamVienDan = {'[MA_DINH_DANH_PHUONG_TIEN_VA_CHAM]': maDinhDanhPhuongTienVaCham, '[MA_DINH_DANH_VIEN_DAN_VA_CHAM]': '[]'};
 
-                phuongTienHoatDong?[maDinhDanhPhuongTienVaCham] = maDinhDanhPhuongTienVaCham;
+                if (duLieuPhuongTienVaCham['[DI_CHUYEN_HIEN_THI]'] == true) {
+                  phuongTienHoatDong?[maDinhDanhPhuongTienVaCham] = maDinhDanhPhuongTienVaCham;
+                }
 
                 /// -----
                 /// TODO: Đối Chiếu Dx Trọng Tâm, Dy Trọng Tâm & Bổ Sung Vùng Đệm Phát Hiện Va Chạm

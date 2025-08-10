@@ -31,6 +31,10 @@ class MoHinhTrangThaiTrongChienDauPhuongTien with CauTrucThucThiCoBan {
 
     await caiDatTrangThaiPhuongTienNhanSatThuong(value: MoHinhTrangThaiPhuongTienNhanSatThuong());
 
+    onVoidCaiDatVienDanThongMinhVaChamSS010(value: TrangThaiVienDanThongMinh(moHinh: null));
+    onVoidCaiDatVienDanThongMinhVaChamSS020(value: TrangThaiVienDanThongMinh(moHinh: null));
+    onVoidCaiDatVienDanThongMinhVaChamSS030(value: TrangThaiVienDanThongMinh(moHinh: null));
+
     /// -----
     /// TODO: Setup Root For SubCom
     /// -----
@@ -131,6 +135,75 @@ class MoHinhTrangThaiTrongChienDauPhuongTien with CauTrucThucThiCoBan {
     return;
   }
 
+  void onVoidCaiDatVienDanThongMinhVaCham({VienDanThongMinh? vienDanThongMinh}) {
+    if (getVienDanThongMinhVaChamSS010?.getMoHinh?.getTrangThaiTonTai?.isHuyHoanTat() == true) {
+      getVienDanThongMinhVaChamSS010?.caiDatMoHinh(value: null);
+    }
+    if (getVienDanThongMinhVaChamSS020?.getMoHinh?.getTrangThaiTonTai?.isHuyHoanTat() == true) {
+      getVienDanThongMinhVaChamSS020?.caiDatMoHinh(value: null);
+    }
+    if (getVienDanThongMinhVaChamSS030?.getMoHinh?.getTrangThaiTonTai?.isHuyHoanTat() == true) {
+      getVienDanThongMinhVaChamSS030?.caiDatMoHinh(value: null);
+    }
+    if (getVienDanThongMinhVaChamSS010?.getMoHinh == null && vienDanThongMinh != null) {
+      getVienDanThongMinhVaChamSS010?.caiDatMoHinh(value: vienDanThongMinh);
+    } else if (getVienDanThongMinhVaChamSS020?.getMoHinh == null && vienDanThongMinh != null) {
+      getVienDanThongMinhVaChamSS020?.caiDatMoHinh(value: vienDanThongMinh);
+    } else if (getVienDanThongMinhVaChamSS030?.getMoHinh == null && vienDanThongMinh != null) {
+      getVienDanThongMinhVaChamSS030?.caiDatMoHinh(value: vienDanThongMinh);
+    }
+
+    return;
+  }
+
+  /// -----
+  /// TODO:
+  /// -----
+  TrangThaiVienDanThongMinh? _vienDanThongMinhVaChamSS010;
+  TrangThaiVienDanThongMinh? get getVienDanThongMinhVaChamSS010 => _vienDanThongMinhVaChamSS010;
+  void onVoidCaiDatVienDanThongMinhVaChamSS010({required TrangThaiVienDanThongMinh? value, bool? caiDatUuTien}) {
+    if (caiDatUuTien == true) {
+      _vienDanThongMinhVaChamSS010 = value;
+    } else {
+      _vienDanThongMinhVaChamSS010 ??= value;
+    }
+
+    ///
+    return;
+  }
+
+  /// -----
+  /// TODO:
+  /// -----
+  TrangThaiVienDanThongMinh? _vienDanThongMinhVaChamSS020;
+  TrangThaiVienDanThongMinh? get getVienDanThongMinhVaChamSS020 => _vienDanThongMinhVaChamSS020;
+  void onVoidCaiDatVienDanThongMinhVaChamSS020({required TrangThaiVienDanThongMinh? value, bool? caiDatUuTien}) {
+    if (caiDatUuTien == true) {
+      _vienDanThongMinhVaChamSS020 = value;
+    } else {
+      _vienDanThongMinhVaChamSS020 ??= value;
+    }
+
+    ///
+    return;
+  }
+
+  /// -----
+  /// TODO:
+  /// -----
+  TrangThaiVienDanThongMinh? _vienDanThongMinhVaChamSS030;
+  TrangThaiVienDanThongMinh? get getVienDanThongMinhVaChamSS030 => _vienDanThongMinhVaChamSS030;
+  void onVoidCaiDatVienDanThongMinhVaChamSS030({required TrangThaiVienDanThongMinh? value, bool? caiDatUuTien}) {
+    if (caiDatUuTien == true) {
+      _vienDanThongMinhVaChamSS030 = value;
+    } else {
+      _vienDanThongMinhVaChamSS030 ??= value;
+    }
+
+    ///
+    return;
+  }
+
   /// -----
   /// TODO: Mã Định Danh Viên Đạn Va Chạm
   /// -----
@@ -162,7 +235,6 @@ class MoHinhTrangThaiTrongChienDauPhuongTien with CauTrucThucThiCoBan {
     ///
     return;
   }
-
 
   /// -----
   /// TODO: Mã Định Danh Viên Đạn Va Chạm SS020
@@ -333,6 +405,7 @@ class MoHinhTrangThaiTrongChienDauPhuongTien with CauTrucThucThiCoBan {
     _trangThaiTonTai = value;
     return;
   }
+
   void onVoidCaiDatTrangThaiTonTai({required TrangThaiTonTaiCoBan? value}) {
     _trangThaiTonTai = value;
     return;
