@@ -80,8 +80,8 @@ class VUKHIMONSTERCLASSSS00ASS010SS010 extends MOHINHPHUONGTIENCOBAN {
     final int tongSoPart = 4;
     final int tongSoFrame = 16;
     final int tongSoFrameTrenHang = 4;
-    final double chieuRongFrame = 250.0;
-    final double chieuCaoFrame = 250.0;
+    final double chieuRongFrame = 200.0;
+    final double chieuCaoFrame = 200.0;
 
     /// -----
     /// TODO: Kích Thước Resize

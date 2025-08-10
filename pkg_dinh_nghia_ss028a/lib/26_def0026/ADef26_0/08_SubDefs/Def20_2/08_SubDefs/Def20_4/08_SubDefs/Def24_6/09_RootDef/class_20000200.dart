@@ -542,7 +542,7 @@ abstract class QuanLyTrangThaiPhuongThucTanCongCoBan with CauTrucThucThiCoBan, V
       trangThaiVienDan?.getMoHinh?.caiDatChieuCaoManHinhPhiVatLy(value: getThietLapTongQuat?.getChieuCaoManHinhPhiVatLy);
       trangThaiVienDan?.getMoHinh?.caiDatDinhHuongBay(value: DinhHuongBayCoBan.dinhHuongTheoDuoiLenTren());
       trangThaiVienDan?.getMoHinh?.onVoidCaiDatThoiGianKichHoat(value: ThoiGianKichHoatCoBan.kichHoat10());
-      trangThaiVienDan?.getMoHinh?.onVoidCaiDatTocDoBayNguyenBan(value: TocDoBayCoBan(tocDo: 10.000));
+      trangThaiVienDan?.getMoHinh?.onVoidCaiDatTocDoBayNguyenBan(value: TocDoBayCoBan(tocDo: 8.000));
       trangThaiVienDan?.getMoHinh?.onVoidCaiDatGocXoay(value: pi);
 
       trangThaiVienDan?.getMoHinh?.caiDatQuanLyTrangThaiDanhSachMoHinh(value: getDanhSachMoHinhTongQuat);

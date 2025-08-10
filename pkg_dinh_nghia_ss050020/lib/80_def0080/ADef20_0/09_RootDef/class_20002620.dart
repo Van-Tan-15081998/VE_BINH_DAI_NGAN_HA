@@ -499,6 +499,39 @@ class QUANLYDIEUKHIENCHUYENKICHBANCHIENDAU with CauTrucThucThiCoBan, DanhSachQua
     // );
   }
 
+  ///
+  /// TODO: Tấn Công Đơn Có Định Hướng (CDC)
+  ///
+  Future<void> onPTTCThucThiTanCongLienKichHinhThucSS010({required MoHinhPhuongTienTongQuat? phuongTien}) async {
+    await getNhiemVuChienDauChonChiDinh?.getMoHinh?.getKichBanChienDau?.getBangDieuKhienGiaiDoanThuocKichBan?.getBangDieuKhienGiaiDoanThuocDoiHinhVKTD?.onPTTCThucThiTanCongLienKichHinhThucSS010(
+      phuongTien: phuongTien,
+    );
+
+    await getDichVuMayPhatAmThanh?.getAmThanhHeThong?.getAmThanhHieuUngPhuongTienTanCong?.onPlay();
+  }
+
+  ///
+  /// TODO: Tấn Công Đơn Tuyến Tính Dọc
+  ///
+  Future<void> onPTTCThucThiTanCongLienKichHinhThucSS020({required MoHinhPhuongTienTongQuat? phuongTien}) async {
+    await getNhiemVuChienDauChonChiDinh?.getMoHinh?.getKichBanChienDau?.getBangDieuKhienGiaiDoanThuocKichBan?.getBangDieuKhienGiaiDoanThuocDoiHinhVKTD?.onPTTCThucThiTanCongLienKichHinhThucSS020(
+      phuongTien: phuongTien,
+    );
+
+    await getDichVuMayPhatAmThanh?.getAmThanhHeThong?.getAmThanhHieuUngPhuongTienTanCong?.onPlay();
+  }
+
+  ///
+  /// TODO: Tấn Công Đơn Có Định Hướng Hành Trình (CDC)
+  ///
+  Future<void> onPTTCThucThiTanCongLienKichHinhThucSS050({required MoHinhPhuongTienTongQuat? phuongTien}) async {
+    await getNhiemVuChienDauChonChiDinh?.getMoHinh?.getKichBanChienDau?.getBangDieuKhienGiaiDoanThuocKichBan?.getBangDieuKhienGiaiDoanThuocDoiHinhVKTD?.onPTTCThucThiTanCongLienKichHinhThucSS050(
+      phuongTien: phuongTien,
+    );
+
+    await getDichVuMayPhatAmThanh?.getAmThanhHeThong?.getAmThanhHieuUngPhuongTienTanCong?.onPlay();
+  }
+
   Future<void> onTSTCThucThiTanCongLienKichHinhThucSS010({required MoHinhPhuongTienTongQuat? phuongTien, bool? phuongTienSS070, bool? phuongTienSS072, bool? phuongTienSS074}) async {
     await getNhiemVuChienDauChonChiDinh?.getMoHinh?.getKichBanChienDau?.getBangDieuKhienGiaiDoanThuocKichBan?.getBangDieuKhienGiaiDoanThuocDoiHinhVKDK?.onTSTCThucThiTanCongLienKichHinhThucSS010(
       phuongTien: phuongTien,

@@ -1,9 +1,9 @@
-import 'package:pkg_man_hinh_ss00226/22_def0022/ADef20_0/09_RootDef/abstract_sprite_phuong_tien.dart';
+import 'package:pkg_man_hinh_ss00226/22_def0022/ADef21_0/08_SubDefs/Def210_2/08_SubDefs/sprite_phuong_tien_vu_khi_tu_dong.dart';
 
 /// -----
 /// TODO:
 /// -----
-class SpritePhuongTienSS26BangDieuKhienDoiHinhVuKhiTuDong extends SpritePhuongTienCoBan {
+class SpritePhuongTienSS26BangDieuKhienDoiHinhVuKhiTuDong extends SpritePhuongTienVuKhiTuDong {
   SpritePhuongTienSS26BangDieuKhienDoiHinhVuKhiTuDong({required super.trangThaiTongQuat, required super.parentComponent});
 
   /// -----
@@ -29,6 +29,13 @@ class SpritePhuongTienSS26BangDieuKhienDoiHinhVuKhiTuDong extends SpritePhuongTi
     await caiDatMoHinh(value: getTrangThaiTongQuat?.getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhVKTD?.getTrangThaiPhuongTienSS026);
 
     await getMoHinh?.onCaiDatSpritePhuongTien(value: this);
+
+    return;
+  }
+
+  @override
+  void update(double dt) {
+    super.update(dt);
 
     return;
   }

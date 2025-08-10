@@ -270,21 +270,21 @@ class QuanLyTrangThaiThietLapTongQuat
           switch (getTocDoKhungHinh) {
             case 60:
               {
-                if (chiSoTangTienGiamTanXuatCapNhat % 3 == 0) {
+                if (chiSoTangTienGiamTanXuatCapNhat % 2 == 0) {
                   return true;
                 }
               }
               break;
             case 90:
               {
-                if (chiSoTangTienGiamTanXuatCapNhat % 6 == 0) {
+                if (chiSoTangTienGiamTanXuatCapNhat % 4 == 0) {
                   return true;
                 }
               }
               break;
             case 120:
               {
-                if (chiSoTangTienGiamTanXuatCapNhat % 6 == 0) {
+                if (chiSoTangTienGiamTanXuatCapNhat % 4 == 0) {
                   return true;
                 }
               }

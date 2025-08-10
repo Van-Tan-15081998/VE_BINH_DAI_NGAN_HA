@@ -5,7 +5,7 @@ import 'package:pkg_dinh_nghia_ss050020/pkg_dinh_nghia_ss050020_exp.dart';
 /// -----
 /// TODO: Bảng Điều Khiển Đội Hình Vũ Khí Tự Động [VKTD]
 /// -----
-class BANGDIEUKHIENDOIHINHVKTD extends BANGDIEUKHIENDOIHINHVUKHITUDONG {
+class BANGDIEUKHIENDOIHINHVKTD extends BANGDIEUKHIENDOIHINHVUKHITUDONG { //
   /// -----
   /// TODO: Setup Root
   /// -----

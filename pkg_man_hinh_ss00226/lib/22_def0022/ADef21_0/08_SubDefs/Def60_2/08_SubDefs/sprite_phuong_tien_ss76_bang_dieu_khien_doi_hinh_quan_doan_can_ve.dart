@@ -36,4 +36,20 @@ class SpritePhuongTienSS76BangDieuKhienDoiHinhQuanDoanCanVe extends SpritePhuong
 
     return;
   }
+
+  /// -----
+  /// TODO: Thực Thi Tấn Công
+  /// -----
+  @override
+  void onVoidThucThiTanCong() async {
+    ///
+    if (getMoHinh?.getMoHinh?.getDuLieuJsonLamPhang['[DI_CHUYEN_HIEN_THI]'] == true) {
+
+      if (getBienTangTienGiamTanXuatCapNhat % 700 == 0) {
+        await getTrangThaiTongQuat?.getBangDieuKhienKichBanChienDauTheoGiaiDoan?.getQuanLyDieuKhienChuyenKichBanChienDau?.onPTTCThucThiTanCongLienKichHinhThucSS020(
+            phuongTien: getMoHinh?.getMoHinh
+        );
+      }
+    }
+  }
 }

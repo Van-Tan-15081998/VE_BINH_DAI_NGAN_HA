@@ -161,9 +161,9 @@ class TinhToanSatThuongHuongDenChienDauCo with CauTrucThucThiCoBan, DanhSachQuan
       double chiSoMauToiDa = getTrungTamVanHanhThuocTinhChienDauTheoQuyChuan?.getCapDoMauToiDaHienHanh?.getCapDoChuanChinhThuc?.getChiSoTheoCapDo?.getChiSoMauToiDa ?? 0;
       double chiSoMauToiDaVanHanh = getTrungTamVanHanhThuocTinhChienDauTheoQuyChuan?.getCapDoMauToiDaHienHanh?.getCapDoChuanChinhThuc?.getChiSoTheoCapDo?.getChiSoMauToiDaVanHanh ?? 0;
 
-      if ((chiSoMauToiDaVanHanh - (chiSoMauToiDa * 10/100)) >= 0) {
+      if ((chiSoMauToiDaVanHanh - (chiSoMauToiDa * 5/100)) >= 0) {
         getTrungTamVanHanhThuocTinhChienDauTheoQuyChuan?.getCapDoMauToiDaHienHanh?.getCapDoChuanChinhThuc?.getChiSoTheoCapDo?.onCaiDatChiSoMauToiDaVanHanh(
-          value: (chiSoMauToiDaVanHanh - (chiSoMauToiDa * 10/100)),
+          value: (chiSoMauToiDaVanHanh - (chiSoMauToiDa * 5/100)),
           caiDatUuTien: true,
         );
       } else {

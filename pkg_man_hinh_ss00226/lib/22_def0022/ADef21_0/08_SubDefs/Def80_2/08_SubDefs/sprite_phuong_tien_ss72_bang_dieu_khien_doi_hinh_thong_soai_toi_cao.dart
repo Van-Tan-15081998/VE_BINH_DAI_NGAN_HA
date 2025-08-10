@@ -38,9 +38,26 @@ class SpritePhuongTienSS72BangDieuKhienDoiHinhThongSoaiToiCao extends SpritePhuo
   /// TODO: Thực Thi Tấn Công
   /// -----
   @override
-  void onVoidThucThiTanCong() {
+  void onVoidThucThiTanCong() async {
     ///
     if (getMoHinh?.getMoHinh?.getDuLieuJsonLamPhang['[DI_CHUYEN_HIEN_THI]'] == true) {
+
+      if (getBienTangTienGiamTanXuatCapNhat % 500 == 0) {
+        await getTrangThaiTongQuat?.getBangDieuKhienKichBanChienDauTheoGiaiDoan?.getQuanLyDieuKhienChuyenKichBanChienDau?.onPTTCThucThiTanCongLienKichHinhThucSS050(
+            phuongTien: getMoHinh?.getMoHinh
+        );
+      }
+      if (getBienTangTienGiamTanXuatCapNhat % 300 == 0) {
+        await getTrangThaiTongQuat?.getBangDieuKhienKichBanChienDauTheoGiaiDoan?.getQuanLyDieuKhienChuyenKichBanChienDau?.onPTTCThucThiTanCongLienKichHinhThucSS010(
+            phuongTien: getMoHinh?.getMoHinh
+        );
+      }
+      if (getBienTangTienGiamTanXuatCapNhat % 300 == 0) {
+        await getTrangThaiTongQuat?.getBangDieuKhienKichBanChienDauTheoGiaiDoan?.getQuanLyDieuKhienChuyenKichBanChienDau?.onPTTCThucThiTanCongLienKichHinhThucSS020(
+            phuongTien: getMoHinh?.getMoHinh
+        );
+      }
+
       if (getMoHinh?.getMoHinh is MOHINHPHUONGTIENCHIHUY) {
         /// -----|-----|-----|-----|-----|
         /// -----|-----|-----|-----|-----|
