@@ -665,8 +665,9 @@ class QUANLYTRANGTHAISUKIENVACHAMTHUOCPHUONGTIEN extends SUKIENVACHAMTHUOCPHUONG
 
                 phuongTienVaChamVienDan = {'[MA_DINH_DANH_PHUONG_TIEN_VA_CHAM]': maDinhDanhPhuongTienVaCham, '[MA_DINH_DANH_VIEN_DAN_VA_CHAM]': '[]'};
 
-                if (duLieuPhuongTienVaCham['[DI_CHUYEN_HIEN_THI]'] == true) {
-                  phuongTienHoatDong?[maDinhDanhPhuongTienVaCham] = maDinhDanhPhuongTienVaCham;
+                if (duLieuPhuongTienVaCham['[DI_CHUYEN_HIEN_THI]'] == true && duLieuPhuongTienVaCham['[KICH_HOAT_HOAT_DONG]'] == true) {
+                // if (duLieuPhuongTienVaCham['[DI_CHUYEN_HIEN_THI]'] == true) {
+                  phuongTienHoatDong[maDinhDanhPhuongTienVaCham] = maDinhDanhPhuongTienVaCham;
                 }
 
                 /// -----

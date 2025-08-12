@@ -12,9 +12,9 @@ class SpritePhuongTienVatPhamTangCuong extends SpritePhuongTienCoBan {
   @override
   bool onVoidKiemTraTanXuatCapNhat() {
     if (getTrangThaiTongQuat?.getThietLapTongQuat?.onKiemTraChoPhepCapNhatTheoTocDoKhungHinh(
-      maDinhDanh: '[SPRITE_ANIMATION_VU_KHI_DIEU_KHIEN]',
-      chiSoTangTienGiamTanXuatCapNhat: getBienTangTienGiamTanXuatCapNhat,
-    ) ==
+          maDinhDanh: '[SPRITE_ANIMATION_VU_KHI_DIEU_KHIEN]',
+          chiSoTangTienGiamTanXuatCapNhat: getBienTangTienGiamTanXuatCapNhat,
+        ) ==
         true) {
       return true;
     }
@@ -26,7 +26,7 @@ class SpritePhuongTienVatPhamTangCuong extends SpritePhuongTienCoBan {
   /// TODO:
   /// -----
   @override
-  void onVoidCapNhatKiemTraHienThi()  {
+  void onVoidCapNhatKiemTraHienThi() {
     if (getMoHinh?.getMoHinh?.getDuLieuJsonLamPhang['[DI_CHUYEN_HIEN_THI]'] == true) {
       /// -----
       /// TODO: Cài Đặt SpriteAnimation cho Phương Tiện Mới
@@ -70,7 +70,7 @@ class SpritePhuongTienVatPhamTangCuong extends SpritePhuongTienCoBan {
   double chieuRongThanCapNhat = 0;
 
   @override
-  void onVoidCapNhatPositionSizeValues()  {
+  void onVoidCapNhatPositionSizeValues() {
     if (getKiemTraHienThi == true) {
       ///
       /// TODO:
@@ -94,6 +94,7 @@ class SpritePhuongTienVatPhamTangCuong extends SpritePhuongTienCoBan {
         if (size.x != chieuRongThanCapNhat || size.y != chieuCaoThanCapNhat) {
           size.setValues(chieuRongThanCapNhat, chieuCaoThanCapNhat);
         }
+
         /// -----
         /// TODO:
         /// -----

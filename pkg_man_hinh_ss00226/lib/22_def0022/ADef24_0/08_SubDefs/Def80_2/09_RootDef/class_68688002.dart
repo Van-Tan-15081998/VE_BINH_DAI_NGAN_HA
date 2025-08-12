@@ -41,17 +41,15 @@ class KhungVongLapBangDieuKhienDoiHinhThongSoaiToiCao extends Component with Von
 
   @override
   void update(double dt) {
-
-      // ///
-      // ///
-      // /// TODO: Chạy Vòng Loop
-      // ///
-      // ///
-      //
-      // onVoidCapNhatChiSoTangTienTheoThoiGianThuc();
-      // if (onBoolKiemTraTanXuatCapNhat() == false) {
-      //   return;
-      // }
-
+    // ///
+    // ///
+    // /// TODO: Chạy Vòng Loop
+    // ///
+    // ///
+    //
+    // onVoidCapNhatChiSoTangTienTheoThoiGianThuc();
+    // if (onBoolKiemTraTanXuatCapNhat() == false) {
+    //   return;
+    // }
   }
 }

@@ -695,6 +695,8 @@ abstract class QuanLyTrangThaiPhuongThucTanCongThongMinh with CauTrucThucThiCoBa
         //  onVoidTimKiemXacDinhMucTieuNgauNhienDuyNhat(trangThai: trangThaiVienDan);
       }
 
+      // trangThaiVienDan.getMoHinh?.onXuLyDuLieuJsonLamPhang();
+
       // trangThaiVienDan.getMoHinh?.getTrangThaiTonTai?.caiDatKhoiTaoHoanTat();
       trangThaiVienDan.getMoHinh?.getTrangThaiTonTai?.onVoidCaiDatDangKichHoat();
 

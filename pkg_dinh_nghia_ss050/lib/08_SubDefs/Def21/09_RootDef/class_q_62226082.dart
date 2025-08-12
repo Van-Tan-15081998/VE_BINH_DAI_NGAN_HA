@@ -456,6 +456,145 @@ class QuanLyTrangThaiThietLapTongQuat
           }
         }
         break;
+
+      case '[PHUONG_TIEN_THUC_THI_TAN_CONG_300]':
+        {
+          switch (getTocDoKhungHinh) {
+            case 60:
+              {
+                if (chiSoTangTienGiamTanXuatCapNhat % 300 == 0) {
+                  return true;
+                }
+              }
+              break;
+            case 90:
+              {
+                if (chiSoTangTienGiamTanXuatCapNhat % 600 == 0) {
+                  return true;
+                }
+              }
+              break;
+            case 120:
+              {
+                if (chiSoTangTienGiamTanXuatCapNhat % 600 == 0) {
+                  return true;
+                }
+              }
+              break;
+          }
+        }
+        break;
+      case '[PHUONG_TIEN_THUC_THI_TAN_CONG_400]':
+        {
+          switch (getTocDoKhungHinh) {
+            case 60:
+              {
+                if (chiSoTangTienGiamTanXuatCapNhat % 400 == 0) {
+                  return true;
+                }
+              }
+              break;
+            case 90:
+              {
+                if (chiSoTangTienGiamTanXuatCapNhat % 800 == 0) {
+                  return true;
+                }
+              }
+              break;
+            case 120:
+              {
+                if (chiSoTangTienGiamTanXuatCapNhat % 800 == 0) {
+                  return true;
+                }
+              }
+              break;
+          }
+        }
+        break;
+
+      case '[PHUONG_TIEN_THUC_THI_TAN_CONG_500]':
+        {
+          switch (getTocDoKhungHinh) {
+            case 60:
+              {
+                if (chiSoTangTienGiamTanXuatCapNhat % 500 == 0) {
+                  return true;
+                }
+              }
+              break;
+            case 90:
+              {
+                if (chiSoTangTienGiamTanXuatCapNhat % 1000 == 0) {
+                  return true;
+                }
+              }
+              break;
+            case 120:
+              {
+                if (chiSoTangTienGiamTanXuatCapNhat % 1000 == 0) {
+                  return true;
+                }
+              }
+              break;
+          }
+        }
+        break;
+
+      case '[PHUONG_TIEN_THUC_THI_TAN_CONG_600]':
+        {
+          switch (getTocDoKhungHinh) {
+            case 60:
+              {
+                if (chiSoTangTienGiamTanXuatCapNhat % 600 == 0) {
+                  return true;
+                }
+              }
+              break;
+            case 90:
+              {
+                if (chiSoTangTienGiamTanXuatCapNhat % 1200 == 0) {
+                  return true;
+                }
+              }
+              break;
+            case 120:
+              {
+                if (chiSoTangTienGiamTanXuatCapNhat % 1200 == 0) {
+                  return true;
+                }
+              }
+              break;
+          }
+        }
+        break;
+
+      case '[PHUONG_TIEN_THUC_THI_TAN_CONG_700]':
+        {
+          switch (getTocDoKhungHinh) {
+            case 60:
+              {
+                if (chiSoTangTienGiamTanXuatCapNhat % 700 == 0) {
+                  return true;
+                }
+              }
+              break;
+            case 90:
+              {
+                if (chiSoTangTienGiamTanXuatCapNhat % 1400 == 0) {
+                  return true;
+                }
+              }
+              break;
+            case 120:
+              {
+                if (chiSoTangTienGiamTanXuatCapNhat % 1400 == 0) {
+                  return true;
+                }
+              }
+              break;
+          }
+        }
+        break;
     }
 
     return false;

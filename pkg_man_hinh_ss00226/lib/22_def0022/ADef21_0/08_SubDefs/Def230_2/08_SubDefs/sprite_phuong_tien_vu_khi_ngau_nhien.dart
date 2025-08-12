@@ -1,3 +1,4 @@
+import 'dart:math';
 import 'package:pkg_dinh_nghia_ss030/pkg_dinh_nghia_ss030_exp.dart';
 import 'package:pkg_man_hinh_ss00226/22_def0022/ADef20_0/09_RootDef/abstract_sprite_phuong_tien.dart';
 
@@ -12,9 +13,9 @@ class SpritePhuongTienVuKhiNgauNhien extends SpritePhuongTienCoBan {
   @override
   bool onVoidKiemTraTanXuatCapNhat() {
     if (getTrangThaiTongQuat?.getThietLapTongQuat?.onKiemTraChoPhepCapNhatTheoTocDoKhungHinh(
-      maDinhDanh: '[SPRITE_ANIMATION_VU_KHI_DIEU_KHIEN]',
-      chiSoTangTienGiamTanXuatCapNhat: getBienTangTienGiamTanXuatCapNhat,
-    ) ==
+          maDinhDanh: '[SPRITE_ANIMATION_VU_KHI_DIEU_KHIEN]',
+          chiSoTangTienGiamTanXuatCapNhat: getBienTangTienGiamTanXuatCapNhat,
+        ) ==
         true) {
       return true;
     }
@@ -26,7 +27,7 @@ class SpritePhuongTienVuKhiNgauNhien extends SpritePhuongTienCoBan {
   /// TODO:
   /// -----
   @override
-  void onVoidCapNhatKiemTraHienThi()  {
+  void onVoidCapNhatKiemTraHienThi() {
     if (getMoHinh?.getMoHinh?.getDuLieuJsonLamPhang['[DI_CHUYEN_HIEN_THI]'] == true) {
       /// -----
       /// TODO: Cài Đặt SpriteAnimation cho Phương Tiện Mới
@@ -70,7 +71,7 @@ class SpritePhuongTienVuKhiNgauNhien extends SpritePhuongTienCoBan {
   double chieuRongThanCapNhat = 0;
 
   @override
-  void onVoidCapNhatPositionSizeValues()  {
+  void onVoidCapNhatPositionSizeValues() {
     if (getKiemTraHienThi == true) {
       ///
       /// TODO:
@@ -94,11 +95,35 @@ class SpritePhuongTienVuKhiNgauNhien extends SpritePhuongTienCoBan {
         if (size.x != chieuRongThanCapNhat || size.y != chieuCaoThanCapNhat) {
           size.setValues(chieuRongThanCapNhat, chieuCaoThanCapNhat);
         }
+
         /// -----
         /// TODO:
         /// -----
         if (angle != gocXoay) {
           angle = gocXoay;
+        }
+      }
+    }
+  }
+
+  /// -----
+  /// TODO: Thực Thi Tấn Công
+  /// -----
+  @override
+  void onVoidThucThiTanCong() async {
+    ///
+    // if (getMoHinh?.getMoHinh?.getDuLieuJsonLamPhang['[DI_CHUYEN_HIEN_THI]'] == true) {
+    if (getKiemTraHienThi == true) {
+      if (getTrangThaiTongQuat?.getThietLapTongQuat?.onKiemTraChoPhepCapNhatTheoTocDoKhungHinh(
+        maDinhDanh: '[PHUONG_TIEN_THUC_THI_TAN_CONG_300]',
+        chiSoTangTienGiamTanXuatCapNhat: getBienTangTienGiamTanXuatCapNhat,
+      ) ==
+          true) {
+        final random = Random();
+        int number = random.nextInt(10) + 1;
+
+        if (number % 2 == 0) {
+          await getTrangThaiTongQuat?.getBangDieuKhienKichBanChienDauTheoGiaiDoan?.getQuanLyDieuKhienChuyenKichBanChienDau?.onPTTCThucThiTanCongLienKichHinhThucSS010(phuongTien: getMoHinh?.getMoHinh);
         }
       }
     }

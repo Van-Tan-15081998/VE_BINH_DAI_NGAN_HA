@@ -64,9 +64,7 @@ class KhungHinhTongQuatSS01PkgManHinhSS00226 extends FlameGame {
   final KhungHinhNenBangDieuKhienDoiHinhVuKhiDieuKhien _khungHinhNenBangDieuKhienDoiHinhVuKhiDieuKhien = KhungHinhNenBangDieuKhienDoiHinhVuKhiDieuKhien(trangThaiTongQuat: null);
   final KhungHinhNenBangDieuKhienDoiHinhVuKhiNgauNhien _khungHinhNenBangDieuKhienDoiHinhVuKhiNgauNhien = KhungHinhNenBangDieuKhienDoiHinhVuKhiNgauNhien(trangThaiTongQuat: null);
 
-  final KhungHinhNenBangDieuKhienDoiHinhVatPhamPhanThuong _khungHinhNenBangDieuKhienDoiHinhVatPhamPhanThuong = KhungHinhNenBangDieuKhienDoiHinhVatPhamPhanThuong(
-    trangThaiTongQuat: null,
-  );
+  final KhungHinhNenBangDieuKhienDoiHinhVatPhamPhanThuong _khungHinhNenBangDieuKhienDoiHinhVatPhamPhanThuong = KhungHinhNenBangDieuKhienDoiHinhVatPhamPhanThuong(trangThaiTongQuat: null);
 
   @override
   Color backgroundColor() => Colors.transparent;
@@ -169,7 +167,5 @@ class KhungHinhTongQuatSS01PkgManHinhSS00226 extends FlameGame {
     if (_khungHinhNenBangDieuKhienDoiHinhVuKhiDieuKhien.isMounted == false) {
       await add(_khungHinhNenBangDieuKhienDoiHinhVuKhiDieuKhien);
     }
-
-
   }
 }

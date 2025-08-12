@@ -1277,6 +1277,31 @@ abstract class THANHPHANMANHINHDRAGTHUOCCAPCOBAN extends PositionComponent with 
     return;
   }
 
+  @override
+  Future<void> onKichHoatVanHanhKhungManHinhChienDau() async {
+    try {
+      await Future.wait([
+        getQuanLyThanhPhanManHinhThuocCap?.onKichHoatVanHanhKhungManHinhChienDau().catchError((e) => null) ??
+            onReportRootIssue(nameFunction: 'onKichHoatVanHanhKhungManHinhChienDau'),
+        getQuanLyThanhPhanNutBamThuocCap?.onKichHoatVanHanhKhungManHinhChienDau().catchError((e) => null) ??
+            onReportRootIssue(nameFunction: 'onKichHoatVanHanhKhungManHinhChienDau'),
+        getQuanLyThanhPhanVanBanThuocCap?.onKichHoatVanHanhKhungManHinhChienDau().catchError((e) => null) ??
+            onReportRootIssue(nameFunction: 'onKichHoatVanHanhKhungManHinhChienDau'),
+        getQuanLyThanhPhanHinhAnhThuocCap?.onKichHoatVanHanhKhungManHinhChienDau().catchError((e) => null) ??
+            onReportRootIssue(nameFunction: 'onKichHoatVanHanhKhungManHinhChienDau'),
+        getQuanLyThanhPhanTichHopThuocCap?.onKichHoatVanHanhKhungManHinhChienDau().catchError((e) => null) ??
+            onReportRootIssue(nameFunction: 'onKichHoatVanHanhKhungManHinhChienDau'),
+      ]);
+
+      ///
+    } catch (e) {
+      await onReportRootIssue(nameFunction: 'onKichHoatVanHanhKhungManHinhChienDau');
+    }
+
+    ///
+    return;
+  }
+
   /// -----
   /// TODO: Kích Hoạt Khung Màn Hình Thuộc Cấp SS223100 [Bách Khoa Chiến Đấu Cơ]
   /// -----

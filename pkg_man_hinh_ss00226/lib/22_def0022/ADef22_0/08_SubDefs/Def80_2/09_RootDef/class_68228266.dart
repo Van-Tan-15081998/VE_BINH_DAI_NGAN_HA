@@ -99,6 +99,7 @@ class KhungHinhNenBangDieuKhienDoiHinhThongSoaiToiCao extends PositionComponent 
     if (position.x != _bienTraiCapNhatKhungHinhNen) {
       position.x = _bienTraiCapNhatKhungHinhNen ?? 0;
     }
+
     /// -----
     /// TODO:
     /// -----

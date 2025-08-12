@@ -1235,14 +1235,51 @@ abstract class VIENDANTANCONGCOBAN with CauTrucThucThiCoBan {
   }
 
   /// -----
+  /// TODO: Kiểm Tra Trạng Thái Tồn Tại
+  /// -----
+  bool onVoidKiemTraTrangThaiTonTaiDangKichHoat() {
+    if (getTrangThaiTonTai?.onCheckBoolDangKichHoat() == true) {
+      return true;
+    }
+
+    return false;
+  }
+
+  /// -----
   /// TODO: Kiểm Tra Viên Đạn Di Chuyển Thoát Màn Hình
   /// -----
   bool onVoidKiemTraDiChuyenThoatManHinh() {
-    if (getDuLieuJsonLamPhang['[DI_CHUYEN_HIEN_THI]'] == true) {
-      return false;
+    // if (getDuLieuJsonLamPhang['[DI_CHUYEN_HIEN_THI]'] == true) {
+    //   return false;
+    // }
+
+    bool kiemTraDiChuyenThoatManHinh = false;
+
+    duLieuJsonBienPhai = getDxTrongTamNotNull + getChieuRongThanNotNull / 2;
+    duLieuJsonBienTrai = getDxTrongTamNotNull - getChieuRongThanNotNull / 2;
+    duLieuJsonBienTren = getDyTrongTamNotNull - getChieuCaoThanNotNull / 2;
+    duLieuJsonBienDuoi = getDyTrongTamNotNull + getChieuCaoThanNotNull / 2;
+    duLieuJsonChieuRongManHinhPhiVatLy = getChieuRongManHinhPhiVatLyNotNull;
+    duLieuJsonChieuCaoManHinhPhiVatLy = getChieuCaoManHinhPhiVatLyNotNull;
+
+    if (duLieuJsonBienPhai < 0) {
+      kiemTraDiChuyenThoatManHinh = true;
+      return kiemTraDiChuyenThoatManHinh;
+    }
+    if (duLieuJsonBienTrai > duLieuJsonChieuRongManHinhPhiVatLy) {
+      kiemTraDiChuyenThoatManHinh = true;
+      return kiemTraDiChuyenThoatManHinh;
+    }
+    if (duLieuJsonBienTren > duLieuJsonChieuCaoManHinhPhiVatLy) {
+      kiemTraDiChuyenThoatManHinh = true;
+      return kiemTraDiChuyenThoatManHinh;
+    }
+    if (duLieuJsonBienDuoi < 0) {
+      kiemTraDiChuyenThoatManHinh = true;
+      return kiemTraDiChuyenThoatManHinh;
     }
 
-    return true;
+    return kiemTraDiChuyenThoatManHinh;
   }
 
   void onDieuKhienDiChuyen({required int chiSoTangTienTheoThoiGianThuc});

@@ -124,6 +124,10 @@ flutter:
     - lib/28_def0028/ADef050_0/08_SubDefs/Def420_2/07_Resized/Def90/
     #
     #
+    - lib/28_def0028/ADef020_0/08_SubDefs/Def020_2/07_Resized/Def50/
+    - lib/28_def0028/ADef020_0/08_SubDefs/Def020_2/07_Resized/Def90/
+    #
+    #
     # _____[NUT_BAM_CHUYEN_CHON_CHI_DINH_TRAI]_____
     - lib/28_def0028/ADef060_0/08_SubDefs/Def210_2/07_Resized/Def50/
     - lib/28_def0028/ADef060_0/08_SubDefs/Def210_2/07_Resized/Def90/
@@ -282,7 +286,8 @@ flutter:
     #_____[KHUNG_MAN_HINH_THAT_BAI]_____
     - lib/28_def0028/BDef200_0/08_SubDefs/Def220_2/07_Resized/Def90/
     #
-    #
+    # KHUNG MAN HINH CHIEN DAU
+    - lib/28_def0028/ADef110_0/08_SubDefs/Def310_2/07_Resized/Def90/
     #
     #
     #

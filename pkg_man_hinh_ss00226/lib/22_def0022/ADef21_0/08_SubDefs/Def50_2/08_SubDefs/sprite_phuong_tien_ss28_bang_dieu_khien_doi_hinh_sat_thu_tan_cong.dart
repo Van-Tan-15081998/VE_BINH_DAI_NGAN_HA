@@ -1,5 +1,5 @@
 import 'package:pkg_man_hinh_ss00226/22_def0022/ADef20_0/09_RootDef/abstract_sprite_phuong_tien.dart';
-
+import 'package:pkg_dinh_nghia_ss020000/pkg_dinh_nghia_ss020000_exp.dart';
 /// -----
 /// TODO:
 /// -----
@@ -54,11 +54,12 @@ class SpritePhuongTienSS28BangDieuKhienDoiHinhSatThuTanCong extends SpritePhuong
   void onVoidThucThiTanCong() async {
     ///
     if (getMoHinh?.getMoHinh?.getDuLieuJsonLamPhang['[DI_CHUYEN_HIEN_THI]'] == true) {
-
-      if (getBienTangTienGiamTanXuatCapNhat % 500 == 0) {
-        await getTrangThaiTongQuat?.getBangDieuKhienKichBanChienDauTheoGiaiDoan?.getQuanLyDieuKhienChuyenKichBanChienDau?.onPTTCThucThiTanCongLienKichHinhThucSS050(
-            phuongTien: getMoHinh?.getMoHinh
-        );
+      if (getTrangThaiTongQuat?.getThietLapTongQuat?.onKiemTraChoPhepCapNhatTheoTocDoKhungHinh(
+            maDinhDanh: '[PHUONG_TIEN_THUC_THI_TAN_CONG_500]',
+            chiSoTangTienGiamTanXuatCapNhat: getBienTangTienGiamTanXuatCapNhat,
+          ) ==
+          true) {
+        await getTrangThaiTongQuat?.getBangDieuKhienKichBanChienDauTheoGiaiDoan?.getQuanLyDieuKhienChuyenKichBanChienDau?.onPTTCThucThiTanCongLienKichHinhThucSS050(phuongTien: getMoHinh?.getMoHinh);
       }
     }
   }

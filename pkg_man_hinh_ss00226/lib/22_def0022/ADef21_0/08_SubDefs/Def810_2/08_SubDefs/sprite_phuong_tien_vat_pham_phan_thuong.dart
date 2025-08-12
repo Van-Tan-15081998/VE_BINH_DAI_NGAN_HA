@@ -70,7 +70,7 @@ class SpritePhuongTienVatPhamPhanThuong extends SpritePhuongTienCoBan {
   double chieuRongThanCapNhat = 0;
 
   @override
-  void onVoidCapNhatPositionSizeValues()  {
+  void onVoidCapNhatPositionSizeValues() {
     if (getKiemTraHienThi == true) {
       ///
       /// TODO:
@@ -94,6 +94,7 @@ class SpritePhuongTienVatPhamPhanThuong extends SpritePhuongTienCoBan {
         if (size.x != chieuRongThanCapNhat || size.y != chieuCaoThanCapNhat) {
           size.setValues(chieuRongThanCapNhat, chieuCaoThanCapNhat);
         }
+
         /// -----
         /// TODO:
         /// -----

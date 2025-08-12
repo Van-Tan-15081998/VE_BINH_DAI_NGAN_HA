@@ -66,11 +66,8 @@ class KHUNGMANHINHSS00226 extends PositionComponent {
   final KhungHinhNenBangDieuKhienDoiHinhVuKhiDieuKhien _khungHinhNenBangDieuKhienDoiHinhVuKhiDieuKhien = KhungHinhNenBangDieuKhienDoiHinhVuKhiDieuKhien(trangThaiTongQuat: null);
   final KhungHinhNenBangDieuKhienDoiHinhVuKhiNgauNhien _khungHinhNenBangDieuKhienDoiHinhVuKhiNgauNhien = KhungHinhNenBangDieuKhienDoiHinhVuKhiNgauNhien(trangThaiTongQuat: null);
 
-  final KhungHinhNenBangDieuKhienDoiHinhVatPhamTangCuong _khungHinhNenBangDieuKhienDoiHinhVatPhamTangCuong = KhungHinhNenBangDieuKhienDoiHinhVatPhamTangCuong(trangThaiTongQuat: null,
-  );
-  final KhungHinhNenBangDieuKhienDoiHinhVatPhamPhanThuong _khungHinhNenBangDieuKhienDoiHinhVatPhamPhanThuong = KhungHinhNenBangDieuKhienDoiHinhVatPhamPhanThuong(
-    trangThaiTongQuat: null,
-  );
+  final KhungHinhNenBangDieuKhienDoiHinhVatPhamTangCuong _khungHinhNenBangDieuKhienDoiHinhVatPhamTangCuong = KhungHinhNenBangDieuKhienDoiHinhVatPhamTangCuong(trangThaiTongQuat: null);
+  final KhungHinhNenBangDieuKhienDoiHinhVatPhamPhanThuong _khungHinhNenBangDieuKhienDoiHinhVatPhamPhanThuong = KhungHinhNenBangDieuKhienDoiHinhVatPhamPhanThuong(trangThaiTongQuat: null);
 
   @override
   Color backgroundColor() => Colors.transparent;
@@ -110,8 +107,6 @@ class KHUNGMANHINHSS00226 extends PositionComponent {
     if (_khungVongLapSS01.isMounted == false) {
       await add(_khungVongLapSS01);
     }
-
-
 
     if (_khungHinhNenBangDieuKhienDoiHinhVatPhamPhanThuong.isMounted == false) {
       await add(_khungHinhNenBangDieuKhienDoiHinhVatPhamPhanThuong);
@@ -158,6 +153,7 @@ class KHUNGMANHINHSS00226 extends PositionComponent {
     }
 
     if (_khungHinhNenBangDieuKhienDoiHinhVuKhiNgauNhien.isMounted == false) {
+      /// TODO: Mở Comment
       await add(_khungHinhNenBangDieuKhienDoiHinhVuKhiNgauNhien);
     }
 
@@ -171,13 +167,16 @@ class KHUNGMANHINHSS00226 extends PositionComponent {
 
     ///
     if (_khungHinhNenBangDieuKhienDoiHinhVuKhiTuDong.isMounted == false) {
+      /// TODO: Mở Comment
       await add(_khungHinhNenBangDieuKhienDoiHinhVuKhiTuDong);
     }
     if (_khungHinhNenBangDieuKhienDoiHinhVuKhiDieuKhien.isMounted == false) {
+      /// TODO: Mở Comment
       await add(_khungHinhNenBangDieuKhienDoiHinhVuKhiDieuKhien);
     }
 
     if (_khungHinhNenBangDieuKhienDoiHinhVatPhamTangCuong.isMounted == false) {
+      /// TODO: Mở Comment
       await add(_khungHinhNenBangDieuKhienDoiHinhVatPhamTangCuong);
     }
   }

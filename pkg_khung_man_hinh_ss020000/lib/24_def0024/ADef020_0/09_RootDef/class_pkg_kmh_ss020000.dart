@@ -488,12 +488,22 @@ abstract class KHUNGMANHINHGAMECOSO extends FlameGame with CAUTRUCTHUCTHICOBAN, 
   /// TODO:
   /// -----
   Future<void> onKhoiDongGameCoSo() async {
-    await onKhoiDongGameCoSoSS010();
-    await Future.delayed(Duration.zero);
-    await onKhoiDongGameCoSoSS020();
-    await Future.delayed(Duration.zero);
-    await onKhoiDongGameCoSoSS030();
-    await Future.delayed(Duration.zero);
+    CAUTRUCTHUCTHITUANTUCOBAN? cauTrucThucThiTuanTuSS010 = CAUTRUCTHUCTHITUANTUCOBAN.onMacDinh();
+    CAUTRUCTHUCTHITUANTUCOBAN? cauTrucThucThiTuanTuSS020 = CAUTRUCTHUCTHITUANTUCOBAN.onMacDinh();
+    CAUTRUCTHUCTHITUANTUCOBAN? cauTrucThucThiTuanTuSS030 = CAUTRUCTHUCTHITUANTUCOBAN.onMacDinh();
+
+    await onKhoiDongGameCoSoSS010(
+      onThucThiHoanTat: () async {
+        await onKhoiDongGameCoSoSS020(
+          onThucThiHoanTat: () async {
+            await onKhoiDongGameCoSoSS030();
+          },
+        );
+      },
+    );
+    // await Future.delayed(Duration.zero);
+    // await Future.delayed(Duration.zero);
+    // await Future.delayed(Duration.zero);
     // await onKhoiDongGameCoSoSS999();
 
     ///
@@ -541,7 +551,7 @@ abstract class KHUNGMANHINHGAMECOSO extends FlameGame with CAUTRUCTHUCTHICOBAN, 
   /// TODO: Khởi Động Game Cơ Sở SS000 [Giai Đoạn Khởi Động SS000]
   /// -----
   @override
-  Future<void> onKhoiDongGameCoSoSS000ChiTiet() async {
+  Future<void> onKhoiDongGameCoSoSS000ChiTiet({Future<void> Function()? onThucThiHoanTat}) async {
     /// -----
     /// TODO: Kích Hoạt Khung Màn Hình Thuộc Cấp Loading SS010 [Master Loading]
     /// -----
@@ -564,30 +574,73 @@ abstract class KHUNGMANHINHGAMECOSO extends FlameGame with CAUTRUCTHUCTHICOBAN, 
   /// TODO: Khởi Động Game Cơ Sở SS010 [Giai Đoạn Khởi Động SS010] => Thiết Lập Game
   /// -----
   @override
-  Future<void> onKhoiDongGameCoSoSS010ChiTiet() async {
-    await Future.delayed(Duration.zero); // nhường event loop, nhưng không delay lâu
-    /// -----|-----|-----
-    /// TODO: Setup Root
-    /// -----|-----|-----
-    await getGlobalStateManagementSystem?.onSetupRoot();
+  Future<void> onKhoiDongGameCoSoSS010ChiTiet({Future<void> Function()? onThucThiHoanTat}) async {
+    CAUTRUCTHUCTHITUANTUCOBAN? cauTrucThucThiTuanTuSS010 = CAUTRUCTHUCTHITUANTUCOBAN.onMacDinh();
+    CAUTRUCTHUCTHITUANTUCOBAN? cauTrucThucThiTuanTuSS020 = CAUTRUCTHUCTHITUANTUCOBAN.onMacDinh();
+    CAUTRUCTHUCTHITUANTUCOBAN? cauTrucThucThiTuanTuSS030 = CAUTRUCTHUCTHITUANTUCOBAN.onMacDinh();
 
-    await Future.delayed(Duration.zero); // nhường event loop, nhưng không delay lâu
-    /// -----|-----|-----
-    /// TODO: Attach Root
-    /// -----|-----|-----
-    await getGlobalStateManagementSystem?.onAttachRoot(attachValue: null);
+    // // await Future.delayed(Duration.zero); // nhường event loop, nhưng không delay lâu
+    // /// -----|-----|-----
+    // /// TODO: Setup Root
+    // /// -----|-----|-----
+    // cauTrucThucThiTuanTuSS010.onAddDonViThucThiTuanTu(
+    //   onThucThiTuanTu: () async {
+    //     await getGlobalStateManagementSystem?.onSetupRoot();
+    //   },
+    // );
+    //
+    // // await Future.delayed(Duration.zero); // nhường event loop, nhưng không delay lâu
+    // /// -----|-----|-----
+    // /// TODO: Attach Root
+    // /// -----|-----|-----
+    // cauTrucThucThiTuanTuSS020.onAddDonViThucThiTuanTu(
+    //   onThucThiTuanTu: () async {
+    //     await getGlobalStateManagementSystem?.onAttachRoot(attachValue: null);
+    //   },
+    // );
+    //
+    // // await Future.delayed(Duration.zero); // nhường event loop, nhưng không delay lâu
+    // /// -----|-----|-----
+    // /// TODO: Init Root
+    // /// -----|-----|-----
+    //
+    // cauTrucThucThiTuanTuSS030.onAddDonViThucThiTuanTu(
+    //   onThucThiTuanTu: () async {
+    //     await getGlobalStateManagementSystem?.onInitRoot();
+    //   },
+    // );
+    //
+    // // await Future.delayed(Duration.zero); // nhường event loop, nhưng không delay lâu
+    // /// -----
+    // /// TODO:
+    // /// -----
+    // cauTrucThucThiTuanTuSS010.onThucThiHoanTat = () async {
+    //   await cauTrucThucThiTuanTuSS020.onThucThiTuanTu();
+    // };
+    // cauTrucThucThiTuanTuSS020.onThucThiHoanTat = () async {
+    //   await cauTrucThucThiTuanTuSS030.onThucThiTuanTu();
+    // };
+    // cauTrucThucThiTuanTuSS030.onThucThiHoanTat = () async {
+    //   await super.onKhoiDongGameCoSoSS010ChiTiet(onThucThiHoanTat: onThucThiHoanTat);
+    // };
+    //
+    // await cauTrucThucThiTuanTuSS010.onThucThiTuanTu(interval: const Duration(milliseconds: 100));
 
-    await Future.delayed(Duration.zero); // nhường event loop, nhưng không delay lâu
-    /// -----|-----|-----
-    /// TODO: Init Root
-    /// -----|-----|-----
-    await getGlobalStateManagementSystem?.onInitRoot();
+    await getGlobalStateManagementSystem?.onSetupRoot(
+        onThucThiHoanTat: () async {
+          await getGlobalStateManagementSystem?.onAttachRoot(
+              attachValue: null,
+              onThucThiHoanTat: () async {
+                await getGlobalStateManagementSystem?.onInitRoot(
+                    onThucThiHoanTat: () async {
+                      await super.onKhoiDongGameCoSoSS010ChiTiet(onThucThiHoanTat: onThucThiHoanTat);
+                    }
+                );
+              }
+          );
+        }
+    );
 
-    await Future.delayed(Duration.zero); // nhường event loop, nhưng không delay lâu
-    /// -----
-    /// TODO:
-    /// -----
-    await super.onKhoiDongGameCoSoSS010ChiTiet();
 
     ///
     return;
@@ -597,8 +650,8 @@ abstract class KHUNGMANHINHGAMECOSO extends FlameGame with CAUTRUCTHUCTHICOBAN, 
   /// TODO: Khởi Động Game Cơ Sở SS020 [Giai Đoạn Khởi Động SS020] => Tải Tài Nguyên
   /// -----
   @override
-  Future<void> onKhoiDongGameCoSoSS020ChiTiet() async {
-    await Future.delayed(Duration.zero);
+  Future<void> onKhoiDongGameCoSoSS020ChiTiet({Future<void> Function()? onThucThiHoanTat}) async {
+    // await Future.delayed(Duration.zero);
 
     /// await getGlobalStateManagementSystem?.onGetEntityResourceManagement?.getQuanLyTrangThaiHangarChienDauCo?.onSanSangTaiTaiNguyenChienDauCo();
     /// await getGlobalStateManagementSystem?.onGetEntityResourceManagement?.getQuanLyTrangThaiHangarChienDauCo?.onTaiTaiNguyenChienDauCo();
@@ -701,7 +754,7 @@ abstract class KHUNGMANHINHGAMECOSO extends FlameGame with CAUTRUCTHUCTHICOBAN, 
     /// -----
     /// TODO:
     /// -----
-    await super.onKhoiDongGameCoSoSS020ChiTiet();
+    await super.onKhoiDongGameCoSoSS020ChiTiet(onThucThiHoanTat: onThucThiHoanTat);
 
     ///
     return;
@@ -711,7 +764,7 @@ abstract class KHUNGMANHINHGAMECOSO extends FlameGame with CAUTRUCTHUCTHICOBAN, 
   /// TODO: Khởi Động Game Cơ Sở SS030 [Giai Đoạn Khởi Động SS030] => Tích Hợp Thành Phần
   /// -----
   @override
-  Future<void> onKhoiDongGameCoSoSS030ChiTiet() async {
+  Future<void> onKhoiDongGameCoSoSS030ChiTiet({Future<void> Function()? onThucThiHoanTat}) async {
     await Future.delayed(Duration.zero); // nhường event loop, nhưng không delay lâu
     /// -----|-----|-----
     /// TODO: Setup Root
@@ -744,8 +797,7 @@ abstract class KHUNGMANHINHGAMECOSO extends FlameGame with CAUTRUCTHUCTHICOBAN, 
   /// TODO: Khởi Động Game Cơ Sở SS999 [Giai Đoạn Khởi Động SS999]
   /// -----
   @override
-  Future<void> onKhoiDongGameCoSoSS999ChiTiet() async {
-
+  Future<void> onKhoiDongGameCoSoSS999ChiTiet({Future<void> Function()? onThucThiHoanTat}) async {
     await getGlobalStateManagementSystem?.getDichVuMayPhatAmThanh?.getAmThanhHeThong?.getAmThanhHieuUngQuaTrinhChienDau?.onPlayHieuUngAmThanhBackground();
 
     /// -----
@@ -763,7 +815,6 @@ abstract class KHUNGMANHINHGAMECOSO extends FlameGame with CAUTRUCTHUCTHICOBAN, 
         await getGlobalStateManagementSystem?.getBangDieuKhienKichBanChienDauTheoGiaiDoan?.getQuanLyVanHanhNganChanXamNhap?.caiDatSanSangVanHanh(value: true, caiDatUuTien: true);
       },
     );
-
 
     ///
     return;
@@ -796,6 +847,30 @@ abstract class KHUNGMANHINHGAMECOSO extends FlameGame with CAUTRUCTHUCTHICOBAN, 
     return;
   }
 
+  @override
+  Future<void> onHuyKichHoatKhungManHinhThuocCapTabSS010() async {
+    try {
+      /// -----
+      /// TODO:
+      /// -----
+
+      await Future.wait([
+        getQuanLyThanhPhanManHinhThuocCap?.onHuyKichHoatKhungManHinhThuocCapTabSS010().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onHuyKichHoatKhungManHinhThuocCapTabSS010'),
+        getQuanLyThanhPhanNutBamThuocCap?.onHuyKichHoatKhungManHinhThuocCapTabSS010().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onHuyKichHoatKhungManHinhThuocCapTabSS010'),
+        getQuanLyThanhPhanVanBanThuocCap?.onHuyKichHoatKhungManHinhThuocCapTabSS010().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onHuyKichHoatKhungManHinhThuocCapTabSS010'),
+        getQuanLyThanhPhanHinhAnhThuocCap?.onHuyKichHoatKhungManHinhThuocCapTabSS010().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onHuyKichHoatKhungManHinhThuocCapTabSS010'),
+        getQuanLyThanhPhanTichHopThuocCap?.onHuyKichHoatKhungManHinhThuocCapTabSS010().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onHuyKichHoatKhungManHinhThuocCapTabSS010'),
+      ]);
+
+      ///
+    } catch (e) {
+      await onReportRootIssue(nameFunction: 'onHuyKichHoatKhungManHinhThuocCapTabSS010');
+    }
+
+    ///
+    return;
+  }
+
   /// -----
   /// TODO: Kích Hoạt Khung Màn Hình Thuộc Cấp Tab SS020 [Tab Chính SS020]
   /// -----
@@ -817,6 +892,33 @@ abstract class KHUNGMANHINHGAMECOSO extends FlameGame with CAUTRUCTHUCTHICOBAN, 
       ///
     } catch (e) {
       await onReportRootIssue(nameFunction: 'onKichHoatKhungManHinhThuocCapTabSS020');
+    }
+
+    ///
+    return;
+  }
+
+  /// -----
+  /// TODO: Kích Hoạt Khung Màn Hình Thuộc Cấp Tab SS020 [Tab Chính SS020]
+  /// -----
+  @override
+  Future<void> onHuyKichHoatKhungManHinhThuocCapTabSS020() async {
+    try {
+      /// -----
+      /// TODO:
+      /// -----
+
+      await Future.wait([
+        getQuanLyThanhPhanManHinhThuocCap?.onHuyKichHoatKhungManHinhThuocCapTabSS020().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onHuyKichHoatKhungManHinhThuocCapTabSS020'),
+        getQuanLyThanhPhanNutBamThuocCap?.onHuyKichHoatKhungManHinhThuocCapTabSS020().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onHuyKichHoatKhungManHinhThuocCapTabSS020'),
+        getQuanLyThanhPhanVanBanThuocCap?.onHuyKichHoatKhungManHinhThuocCapTabSS020().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onHuyKichHoatKhungManHinhThuocCapTabSS020'),
+        getQuanLyThanhPhanHinhAnhThuocCap?.onHuyKichHoatKhungManHinhThuocCapTabSS020().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onHuyKichHoatKhungManHinhThuocCapTabSS020'),
+        getQuanLyThanhPhanTichHopThuocCap?.onHuyKichHoatKhungManHinhThuocCapTabSS020().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onHuyKichHoatKhungManHinhThuocCapTabSS020'),
+      ]);
+
+      ///
+    } catch (e) {
+      await onReportRootIssue(nameFunction: 'onHuyKichHoatKhungManHinhThuocCapTabSS020');
     }
 
     ///
@@ -927,6 +1029,29 @@ abstract class KHUNGMANHINHGAMECOSO extends FlameGame with CAUTRUCTHUCTHICOBAN, 
     return;
   }
 
+  @override
+  Future<void> onHuyKichHoatKhungManHinhThuocCapTabSS040() async {
+    try {
+      /// -----
+      /// TODO:
+      /// -----
+      await Future.wait([
+        getQuanLyThanhPhanManHinhThuocCap?.onHuyKichHoatKhungManHinhThuocCapTabSS040().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onHuyKichHoatKhungManHinhThuocCapTabSS040'),
+        getQuanLyThanhPhanNutBamThuocCap?.onHuyKichHoatKhungManHinhThuocCapTabSS040().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onHuyKichHoatKhungManHinhThuocCapTabSS040'),
+        getQuanLyThanhPhanVanBanThuocCap?.onHuyKichHoatKhungManHinhThuocCapTabSS040().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onHuyKichHoatKhungManHinhThuocCapTabSS040'),
+        getQuanLyThanhPhanHinhAnhThuocCap?.onHuyKichHoatKhungManHinhThuocCapTabSS040().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onHuyKichHoatKhungManHinhThuocCapTabSS040'),
+        getQuanLyThanhPhanTichHopThuocCap?.onHuyKichHoatKhungManHinhThuocCapTabSS040().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onHuyKichHoatKhungManHinhThuocCapTabSS040'),
+      ]);
+
+      ///
+    } catch (e) {
+      await onReportRootIssue(nameFunction: 'onHuyKichHoatKhungManHinhThuocCapTabSS040');
+    }
+
+    ///
+    return;
+  }
+
   /// -----
   /// TODO: Kích Hoạt Khung Màn Hình Thuộc Cấp Tab SS050 [Tab Chính SS050]
   /// -----
@@ -947,6 +1072,29 @@ abstract class KHUNGMANHINHGAMECOSO extends FlameGame with CAUTRUCTHUCTHICOBAN, 
       ///
     } catch (e) {
       await onReportRootIssue(nameFunction: 'onKichHoatKhungManHinhThuocCapTabSS050');
+    }
+
+    ///
+    return;
+  }
+
+  @override
+  Future<void> onHuyKichHoatKhungManHinhThuocCapTabSS050() async {
+    try {
+      /// -----
+      /// TODO:
+      /// -----
+      await Future.wait([
+        getQuanLyThanhPhanManHinhThuocCap?.onHuyKichHoatKhungManHinhThuocCapTabSS050().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onHuyKichHoatKhungManHinhThuocCapTabSS050'),
+        getQuanLyThanhPhanNutBamThuocCap?.onHuyKichHoatKhungManHinhThuocCapTabSS050().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onHuyKichHoatKhungManHinhThuocCapTabSS050'),
+        getQuanLyThanhPhanVanBanThuocCap?.onHuyKichHoatKhungManHinhThuocCapTabSS050().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onHuyKichHoatKhungManHinhThuocCapTabSS050'),
+        getQuanLyThanhPhanHinhAnhThuocCap?.onHuyKichHoatKhungManHinhThuocCapTabSS050().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onHuyKichHoatKhungManHinhThuocCapTabSS050'),
+        getQuanLyThanhPhanTichHopThuocCap?.onHuyKichHoatKhungManHinhThuocCapTabSS050().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onHuyKichHoatKhungManHinhThuocCapTabSS050'),
+      ]);
+
+      ///
+    } catch (e) {
+      await onReportRootIssue(nameFunction: 'onHuyKichHoatKhungManHinhThuocCapTabSS050');
     }
 
     ///
@@ -1315,6 +1463,30 @@ abstract class KHUNGMANHINHGAMECOSO extends FlameGame with CAUTRUCTHUCTHICOBAN, 
       ///
     } catch (e) {
       await onReportRootIssue(nameFunction: 'onHuyKichHoatKhungManHinhThuocCapSS300500');
+    }
+
+    ///
+    return;
+  }
+
+  /// -----
+  /// TODO:
+  /// -----
+  Future<void> onKichHoatVanHanhKhungManHinhChienDau() async {
+    try {
+      /// -----
+      /// TODO:
+      /// -----
+
+      await Future.wait([
+        getQuanLyThanhPhanManHinhThuocCap?.onKichHoatVanHanhKhungManHinhChienDau().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onKichHoatVanHanhKhungManHinhChienDau'),
+        getQuanLyThanhPhanNutBamThuocCap?.onKichHoatVanHanhKhungManHinhChienDau().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onKichHoatVanHanhKhungManHinhChienDau'),
+        getQuanLyThanhPhanVanBanThuocCap?.onKichHoatVanHanhKhungManHinhChienDau().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onKichHoatVanHanhKhungManHinhChienDau'),
+        getQuanLyThanhPhanHinhAnhThuocCap?.onKichHoatVanHanhKhungManHinhChienDau().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onKichHoatVanHanhKhungManHinhChienDau'),
+        getQuanLyThanhPhanTichHopThuocCap?.onKichHoatVanHanhKhungManHinhChienDau().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onKichHoatVanHanhKhungManHinhChienDau'),
+      ]);
+    } catch (e) {
+      await onReportRootIssue(nameFunction: 'onKichHoatVanHanhKhungManHinhChienDau');
     }
 
     ///

@@ -351,7 +351,8 @@ abstract class VienDanThongMinh extends VIENDANTANCONGCOBAN {
   /// -----
   @override
   void onDieuKhienDiChuyen({required int chiSoTangTienTheoThoiGianThuc}) {
-    if (onVoidKiemTraTrangThaiTonTaiKhoiTaoHoanTat() == true) {
+    // if (onVoidKiemTraTrangThaiTonTaiKhoiTaoHoanTat() == true) {
+    if (onVoidKiemTraTrangThaiTonTaiDangKichHoat() == true) {
       if (QuanLyDongThoiGianCoBan.onKiemTraKichHoat(chiSoKichHoat: getThoiGianKichHoatNotNull.getChiSoKichHoat, chiSoTangTienTheoThoiGianThuc: chiSoTangTienTheoThoiGianThuc)) {
         /// -----
         /// TODO:
@@ -384,7 +385,7 @@ abstract class VienDanThongMinh extends VIENDANTANCONGCOBAN {
   /// -----
   @override
   void onVoidDieuKhienDiChuyenChiTiet() {
-    if (onVoidKiemTraDiChuyenThoatManHinh() == true) {
+    if (onVoidKiemTraDiChuyenThoatManHinh() == true ) {
       onVoidHuyTrangThaiVienDan();
     } else {
       /// -----
@@ -547,6 +548,13 @@ abstract class VienDanThongMinh extends VIENDANTANCONGCOBAN {
 
       onVoidCaiDatDxViTriLayMucTieu(value: (diemKetThuc.dx ?? 0));
       onVoidCaiDatDyViTriLayMucTieu(value: (diemKetThuc.dy ?? 0));
+    } else {
+      if (getDxViTriLayMucTieu == null || getDxViTriLayMucTieu == 0) {
+        onVoidCaiDatDxViTriLayMucTieu(value: (getDxTrongTam ?? 0));
+      }
+      if (getDyViTriLayMucTieu == null || getDyViTriLayMucTieu == 0) {
+        onVoidCaiDatDyViTriLayMucTieu(value: -10000);
+      }
     }
 
     // else {
@@ -579,11 +587,17 @@ abstract class VienDanThongMinh extends VIENDANTANCONGCOBAN {
         TRANGTHAIPHUONGTIENVACHAM? phuongTienLayMucTieu =
             getSuKienVaChamThuocPhuongTien?.getDanhSachPhuongTienVaCham.where((TRANGTHAIPHUONGTIENVACHAM? phuongTien) => phuongTien?.getMoHinh?.getMaDinhDanhPhuongTienVaCham == maDinhDanh).first;
 
-        ///
-        onVoidCaiDatPhuongTienHoatDongLayMucTieu(value: phuongTienLayMucTieu?.getMoHinh?.getPhuongTien?.getMoHinh, caiDatUuTien: true);
+        if (phuongTienLayMucTieu?.getMoHinh?.getPhuongTien?.getMoHinh?.getDuLieuJsonLamPhang['[TRANG_THAI_TON_TAI]'] == true &&
+            phuongTienLayMucTieu?.getMoHinh?.getPhuongTien?.getMoHinh?.getDuLieuJsonLamPhang['[KICH_HOAT_HOAT_DONG]'] == true &&
+            phuongTienLayMucTieu?.getMoHinh?.getPhuongTien?.getMoHinh?.getDuLieuJsonLamPhang['[DI_CHUYEN_HIEN_THI]'] == true) {
+          ///
+          onVoidCaiDatPhuongTienHoatDongLayMucTieu(value: phuongTienLayMucTieu?.getMoHinh?.getPhuongTien?.getMoHinh, caiDatUuTien: true);
 
-        ///
-        phuongTienLayMucTieu?.getMoHinh?.getPhuongTien?.getMoHinh?.getTrangThaiTrongChienDau?.onVoidCaiDatVienDanThongMinhVaCham(vienDanThongMinh: this);
+          ///
+          phuongTienLayMucTieu?.getMoHinh?.getPhuongTien?.getMoHinh?.getTrangThaiTrongChienDau?.onVoidCaiDatVienDanThongMinhVaCham(vienDanThongMinh: this);
+        } else {
+          return;
+        }
 
         return;
       }
@@ -658,26 +672,30 @@ abstract class VienDanThongMinh extends VIENDANTANCONGCOBAN {
   /// -----
   /// TODO:
   /// -----
+  bool? trangThaiTonTaiPhuongTienHoatDongLayMucTieu;
+
   void onVoidDieuKhienBayDenMucTieu() {
     /// -----
     /// TODO:
     /// -----
     onVoidXacDinhViTriPhuongTienHoatDongLayMucTieu();
 
-    final double dxDiemKetThuc = getDxViTriLayMucTieuNotNull;
-    final double dyDiemKetThuc = getDyViTriLayMucTieuNotNull;
+    final double dxDiemKetThuc = getDxViTriLayMucTieu ?? (getDxTrongTam ?? 0);
+    final double dyDiemKetThuc = getDyViTriLayMucTieu ?? -10000;
 
     if (getPhuongTienHoatDongLayMucTieu != null) {
-      if (getPhuongTienHoatDongLayMucTieu?.getTrangThaiTrongChienDau?.getTrangThaiTonTai?.isHuyHoanTat() == true ||
+      trangThaiTonTaiPhuongTienHoatDongLayMucTieu = getPhuongTienHoatDongLayMucTieu?.getTrangThaiTrongChienDau?.getTrangThaiTonTai?.onCheckBoolKhoiTaoHoanTat() ?? false;
+
+      // if (getPhuongTienHoatDongLayMucTieu?.getDuLieuJsonLamPhang['[TRANG_THAI_TON_TAI]'] == false ||
+      if (trangThaiTonTaiPhuongTienHoatDongLayMucTieu == false ||
           getPhuongTienHoatDongLayMucTieu?.getDuLieuJsonLamPhang['[KICH_HOAT_HOAT_DONG]'] == false ||
           getPhuongTienHoatDongLayMucTieu?.getDuLieuJsonLamPhang['[DI_CHUYEN_HIEN_THI]'] == false) {
-
         /// Huỷ Tham Chiếu Phương Tiện Hoạt Động Lấy Mục Tiêu
         onVoidCaiDatPhuongTienHoatDongLayMucTieu(value: null, caiDatUuTien: true);
 
-        onVoidDieuKhienBayTheoLichSu();
-
-        return;
+        // onVoidDieuKhienBayTheoLichSu();
+        //
+        // return;
       }
     } else {
       onVoidTimKiemXacDinhMucTieuNgauNhienDuyNhat();

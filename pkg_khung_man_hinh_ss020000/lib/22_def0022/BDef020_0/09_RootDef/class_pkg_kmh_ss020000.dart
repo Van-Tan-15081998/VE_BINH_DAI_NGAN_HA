@@ -61,7 +61,7 @@ mixin KICHBANDIEUKHIENTHUOCCAPCOBAN {
   /// TODO: Khởi Động Game Cơ Sở SS010 [Giai Đoạn Khởi Động SS010] => Thiết Lập Game
   /// TODO: [1] : Thiết Lập Trạng Thái Tổng Quát (Cơ Sở Dữ Liệu, Chiến Đấu Cơ, Phương Tiện, Nhiệm Vụ,...)
   /// -----
-  Future<void> onKhoiDongGameCoSoSS010() async {
+  Future<void> onKhoiDongGameCoSoSS010({Future<void> Function()? onThucThiHoanTat}) async {
     if (getGiaiDoanKhoiDongGame?.isGiaiDoanSS010() == true) {
       try {
         /// -----
@@ -71,7 +71,7 @@ mixin KICHBANDIEUKHIENTHUOCCAPCOBAN {
         /// -----
         /// TODO:
         /// -----
-        await onKhoiDongGameCoSoSS010ChiTiet();
+        await onKhoiDongGameCoSoSS010ChiTiet(onThucThiHoanTat: onThucThiHoanTat);
 
         ///
       } catch (e) {
@@ -83,11 +83,13 @@ mixin KICHBANDIEUKHIENTHUOCCAPCOBAN {
     return;
   }
 
-  Future<void> onKhoiDongGameCoSoSS010ChiTiet() async {
+  Future<void> onKhoiDongGameCoSoSS010ChiTiet({Future<void> Function()? onThucThiHoanTat}) async {
     /// -----
     /// TODO:
     /// -----
     getGiaiDoanKhoiDongGame?.onVoidCaiDatGiaiDoanSS020();
+
+    await onThucThiHoanTat?.call();
 
     ///
     return;
@@ -96,13 +98,13 @@ mixin KICHBANDIEUKHIENTHUOCCAPCOBAN {
   /// -----
   /// TODO: Khởi Động Game Cơ Sở SS020 [Giai Đoạn Khởi Động SS020] => Tải Tài Nguyên
   /// -----
-  Future<void> onKhoiDongGameCoSoSS020() async {
+  Future<void> onKhoiDongGameCoSoSS020({Future<void> Function()? onThucThiHoanTat}) async {
     if (getGiaiDoanKhoiDongGame?.isGiaiDoanSS020() == true) {
       try {
         /// -----
         /// TODO:
         /// -----
-        await onKhoiDongGameCoSoSS020ChiTiet();
+        await onKhoiDongGameCoSoSS020ChiTiet(onThucThiHoanTat: onThucThiHoanTat);
 
         ///
       } catch (e) {
@@ -114,11 +116,13 @@ mixin KICHBANDIEUKHIENTHUOCCAPCOBAN {
     return;
   }
 
-  Future<void> onKhoiDongGameCoSoSS020ChiTiet() async {
+  Future<void> onKhoiDongGameCoSoSS020ChiTiet({Future<void> Function()? onThucThiHoanTat}) async {
     /// -----
     /// TODO:
     /// -----
     getGiaiDoanKhoiDongGame?.onVoidCaiDatGiaiDoanSS030();
+
+    await onThucThiHoanTat?.call();
 
     ///
     return;
@@ -127,7 +131,7 @@ mixin KICHBANDIEUKHIENTHUOCCAPCOBAN {
   /// -----
   /// TODO: Khởi Động Game Cơ Sở SS030 [Giai Đoạn Khởi Động SS030] => Tích Hợp Thành Phần
   /// -----
-  Future<void> onKhoiDongGameCoSoSS030() async {
+  Future<void> onKhoiDongGameCoSoSS030({Future<void> Function()? onThucThiHoanTat}) async {
     if (getGiaiDoanKhoiDongGame?.isGiaiDoanSS030() == true) {
       try {
         /// -----
@@ -137,7 +141,7 @@ mixin KICHBANDIEUKHIENTHUOCCAPCOBAN {
         /// -----
         /// TODO:
         /// -----
-        await onKhoiDongGameCoSoSS030ChiTiet();
+        await onKhoiDongGameCoSoSS030ChiTiet(onThucThiHoanTat: onThucThiHoanTat);
 
         ///
       } catch (e) {
@@ -149,11 +153,13 @@ mixin KICHBANDIEUKHIENTHUOCCAPCOBAN {
     return;
   }
 
-  Future<void> onKhoiDongGameCoSoSS030ChiTiet() async {
+  Future<void> onKhoiDongGameCoSoSS030ChiTiet({Future<void> Function()? onThucThiHoanTat}) async {
     /// -----
     /// TODO:
     /// -----
     getGiaiDoanKhoiDongGame?.onVoidCaiDatGiaiDoanSS040();
+
+    await onThucThiHoanTat?.call();
 
     ///
     return;
@@ -162,7 +168,7 @@ mixin KICHBANDIEUKHIENTHUOCCAPCOBAN {
   /// -----
   /// TODO: Khởi Động Game Cơ Sở SS999 [Giai Đoạn Khởi Động SS999] => Khởi Động Game Cơ Sở Hoàn Tất
   /// -----
-  Future<void> onKhoiDongGameCoSoSS999() async {
+  Future<void> onKhoiDongGameCoSoSS999({Future<void> Function()? onThucThiHoanTat}) async {
     if (getGiaiDoanKhoiDongGame?.isGiaiDoanSS040() == true) {
       try {
         /// -----
@@ -172,7 +178,7 @@ mixin KICHBANDIEUKHIENTHUOCCAPCOBAN {
         /// -----
         /// TODO:
         /// -----
-        await onKhoiDongGameCoSoSS999ChiTiet();
+        await onKhoiDongGameCoSoSS999ChiTiet(onThucThiHoanTat: onThucThiHoanTat);
 
         ///
       } catch (e) {
@@ -184,11 +190,13 @@ mixin KICHBANDIEUKHIENTHUOCCAPCOBAN {
     return;
   }
 
-  Future<void> onKhoiDongGameCoSoSS999ChiTiet() async {
+  Future<void> onKhoiDongGameCoSoSS999ChiTiet({Future<void> Function()? onThucThiHoanTat}) async {
     /// -----
     /// TODO:
     /// -----
     getGiaiDoanKhoiDongGame?.onVoidCaiDatGiaiDoanSS999();
+
+    await onThucThiHoanTat?.call();
 
     ///
     return;
@@ -253,6 +261,24 @@ mixin KICHBANDIEUKHIENTHUOCCAPCOBAN {
   }
 
   /// -----
+  /// TODO: Kích Hoạt Khung Màn Hình Thuộc Cấp Tab SS010 [Tab Chính SS010]
+  /// -----
+  Future<void> onHuyKichHoatKhungManHinhThuocCapTabSS010() async {
+    try {
+      /// -----
+      /// TODO:
+      /// -----
+    } catch (e) {
+      await onReportRootIssue(
+        nameFunction: 'onHuyKichHoatKhungManHinhThuocCapTabSS010',
+      );
+    }
+
+    ///
+    return;
+  }
+
+  /// -----
   /// TODO: Kích Hoạt Khung Màn Hình Thuộc Cấp Tab SS020 [Tab Chính SS020]
   /// -----
   Future<void> onKichHoatKhungManHinhThuocCapTabSS020() async {
@@ -263,6 +289,24 @@ mixin KICHBANDIEUKHIENTHUOCCAPCOBAN {
     } catch (e) {
       await onReportRootIssue(
         nameFunction: 'onKichHoatKhungManHinhThuocCapTabSS020',
+      );
+    }
+
+    ///
+    return;
+  }
+
+  /// -----
+  /// TODO: Kích Hoạt Khung Màn Hình Thuộc Cấp Tab SS020 [Tab Chính SS020]
+  /// -----
+  Future<void> onHuyKichHoatKhungManHinhThuocCapTabSS020() async {
+    try {
+      /// -----
+      /// TODO:
+      /// -----
+    } catch (e) {
+      await onReportRootIssue(
+        nameFunction: 'onHuyKichHoatKhungManHinhThuocCapTabSS020',
       );
     }
 
@@ -343,6 +387,24 @@ mixin KICHBANDIEUKHIENTHUOCCAPCOBAN {
   }
 
   /// -----
+  /// TODO: Kích Hoạt Khung Màn Hình Thuộc Cấp Tab SS040 [Tab Chính SS040]
+  /// -----
+  Future<void> onHuyKichHoatKhungManHinhThuocCapTabSS040() async {
+    try {
+      /// -----
+      /// TODO:
+      /// -----
+    } catch (e) {
+      await onReportRootIssue(
+        nameFunction: 'onHuyKichHoatKhungManHinhThuocCapTabSS040',
+      );
+    }
+
+    ///
+    return;
+  }
+
+  /// -----
   /// TODO: Kích Hoạt Khung Màn Hình Thuộc Cấp Tab SS050 [Tab Chính SS050]
   /// -----
   Future<void> onKichHoatKhungManHinhThuocCapTabSS050() async {
@@ -353,6 +415,24 @@ mixin KICHBANDIEUKHIENTHUOCCAPCOBAN {
     } catch (e) {
       await onReportRootIssue(
         nameFunction: 'onKichHoatKhungManHinhThuocCapTabSS050',
+      );
+    }
+
+    ///
+    return;
+  }
+
+  /// -----
+  /// TODO: Kích Hoạt Khung Màn Hình Thuộc Cấp Tab SS050 [Tab Chính SS050]
+  /// -----
+  Future<void> onHuyKichHoatKhungManHinhThuocCapTabSS050() async {
+    try {
+      /// -----
+      /// TODO:
+      /// -----
+    } catch (e) {
+      await onReportRootIssue(
+        nameFunction: 'onHuyKichHoatKhungManHinhThuocCapTabSS050',
       );
     }
 
@@ -731,6 +811,24 @@ mixin KICHBANDIEUKHIENTHUOCCAPCOBAN {
     } catch (e) {
       await onReportRootIssue(
         nameFunction: 'onHuyKichHoatKhungManHinhThuocCapSS223200',
+      );
+    }
+
+    ///
+    return;
+  }
+
+  /// -----
+  /// TODO:
+  /// -----
+  Future<void> onKichHoatVanHanhKhungManHinhChienDau() async {
+    try {
+      /// -----
+      /// TODO:
+      /// -----
+    } catch (e) {
+      await onReportRootIssue(
+        nameFunction: 'onKichHoatVanHanhKhungManHinhChienDau',
       );
     }
 

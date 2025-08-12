@@ -1215,9 +1215,30 @@ class BANGDIEUKHIENGIAIDOANTHUOCDOIHINHCOBAN with CauTrucThucThiCoBan {
     // await onLoopTheoNhanDinhTrangThaiNhomSS00C();
     // await onLoopTheoNhanDinhTrangThaiNhomSS00D();
 
-     onLoopTheoNhanDinhTrangThaiNhomSS00A();
-     onLoopTheoNhanDinhTrangThaiNhomSS00B();
-     onLoopTheoNhanDinhTrangThaiNhomSS00C();
+    CAUTRUCTHUCTHITUANTUCOBAN? cauTrucThucThiTuanTu;
+    cauTrucThucThiTuanTu = CAUTRUCTHUCTHITUANTUCOBAN.onMacDinh();
+
+    cauTrucThucThiTuanTu.onAddDonViThucThiTuanTu(
+        onThucThiTuanTu: () async {
+           onLoopTheoNhanDinhTrangThaiNhomSS00A();
+        }
+    );
+    cauTrucThucThiTuanTu.onAddDonViThucThiTuanTu(
+        onThucThiTuanTu: () async {
+           onLoopTheoNhanDinhTrangThaiNhomSS00B();
+        }
+    );
+    cauTrucThucThiTuanTu.onAddDonViThucThiTuanTu(
+        onThucThiTuanTu: () async {
+           onLoopTheoNhanDinhTrangThaiNhomSS00C();
+        }
+    );
+
+    cauTrucThucThiTuanTu.onThucThiTuanTu(interval: const Duration(milliseconds: 50));
+
+     // onLoopTheoNhanDinhTrangThaiNhomSS00A();
+     // onLoopTheoNhanDinhTrangThaiNhomSS00B();
+     // onLoopTheoNhanDinhTrangThaiNhomSS00C();
      // onLoopTheoNhanDinhTrangThaiNhomSS00D();
 
     ///

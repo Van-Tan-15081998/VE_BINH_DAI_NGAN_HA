@@ -503,6 +503,9 @@ class QUANLYDIEUKHIENCHUYENKICHBANCHIENDAU with CauTrucThucThiCoBan, DanhSachQua
   /// TODO: Tấn Công Đơn Có Định Hướng (CDC)
   ///
   Future<void> onPTTCThucThiTanCongLienKichHinhThucSS010({required MoHinhPhuongTienTongQuat? phuongTien}) async {
+
+    // return;
+
     await getNhiemVuChienDauChonChiDinh?.getMoHinh?.getKichBanChienDau?.getBangDieuKhienGiaiDoanThuocKichBan?.getBangDieuKhienGiaiDoanThuocDoiHinhVKTD?.onPTTCThucThiTanCongLienKichHinhThucSS010(
       phuongTien: phuongTien,
     );
@@ -514,6 +517,9 @@ class QUANLYDIEUKHIENCHUYENKICHBANCHIENDAU with CauTrucThucThiCoBan, DanhSachQua
   /// TODO: Tấn Công Đơn Tuyến Tính Dọc
   ///
   Future<void> onPTTCThucThiTanCongLienKichHinhThucSS020({required MoHinhPhuongTienTongQuat? phuongTien}) async {
+
+    // return;
+
     await getNhiemVuChienDauChonChiDinh?.getMoHinh?.getKichBanChienDau?.getBangDieuKhienGiaiDoanThuocKichBan?.getBangDieuKhienGiaiDoanThuocDoiHinhVKTD?.onPTTCThucThiTanCongLienKichHinhThucSS020(
       phuongTien: phuongTien,
     );
@@ -525,6 +531,9 @@ class QUANLYDIEUKHIENCHUYENKICHBANCHIENDAU with CauTrucThucThiCoBan, DanhSachQua
   /// TODO: Tấn Công Đơn Có Định Hướng Hành Trình (CDC)
   ///
   Future<void> onPTTCThucThiTanCongLienKichHinhThucSS050({required MoHinhPhuongTienTongQuat? phuongTien}) async {
+
+    // return;
+
     await getNhiemVuChienDauChonChiDinh?.getMoHinh?.getKichBanChienDau?.getBangDieuKhienGiaiDoanThuocKichBan?.getBangDieuKhienGiaiDoanThuocDoiHinhVKTD?.onPTTCThucThiTanCongLienKichHinhThucSS050(
       phuongTien: phuongTien,
     );

@@ -68,7 +68,7 @@ class NUTBAMCHONCHIENDAU extends THANHPHANNUTBAMTHUOCCAPTHUANKICHHOAT {
     /// -----
     await super.onInitRoot();
 
-    getThanhPhanVanBan?.onVoidCaiDatVanBan(value: 'PLAY', caiDatUuTien: true);
+    getThanhPhanVanBan?.onVoidCaiDatVanBan(value: 'CHƠI', caiDatUuTien: true);
 
     getThanhPhanVanBan?.onCaiDatPhongCachVanBan(color: Color(0xFF2E2E2E), fontSize: 15, fontWeight: FontWeight.bold);
 

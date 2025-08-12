@@ -507,6 +507,15 @@ class QUANLYTHANHPHANNUTBAMKHUNGMANHINHCHINH extends QUANLYTHANHPHANNUTBAMTHUOCC
     return;
   }
 
+  @override
+  Future<void> onHuyKichHoatKhungManHinhThuocCapTabSS010() async {
+
+    getNutBamChuyenTabSS010?.onVoidHuyKichHoatHanhVi();
+
+    ///
+    return;
+  }
+
   /// -----
   /// TODO: Kích Hoạt Khung Màn Hình Thuộc Cấp Tab SS020 [Tab Chính SS020]
   /// -----
@@ -537,6 +546,15 @@ class QUANLYTHANHPHANNUTBAMKHUNGMANHINHCHINH extends QUANLYTHANHPHANNUTBAMTHUOCC
     } catch (e) {
       await onReportRootIssue(nameFunction: 'onKichHoatKhungManHinhThuocCapTabSS020');
     }
+
+    ///
+    return;
+  }
+
+  @override
+  Future<void> onHuyKichHoatKhungManHinhThuocCapTabSS020() async {
+
+    getNutBamChuyenTabSS020?.onVoidHuyKichHoatHanhVi();
 
     ///
     return;
@@ -626,6 +644,15 @@ class QUANLYTHANHPHANNUTBAMKHUNGMANHINHCHINH extends QUANLYTHANHPHANNUTBAMTHUOCC
     return;
   }
 
+  @override
+  Future<void> onHuyKichHoatKhungManHinhThuocCapTabSS040() async {
+
+    getNutBamChuyenTabSS040?.onVoidHuyKichHoatHanhVi();
+
+    ///
+    return;
+  }
+
   /// -----
   /// TODO: Kích Hoạt Khung Màn Hình Thuộc Cấp Tab SS050 [Tab Chính SS050]
   /// -----
@@ -656,6 +683,15 @@ class QUANLYTHANHPHANNUTBAMKHUNGMANHINHCHINH extends QUANLYTHANHPHANNUTBAMTHUOCC
     } catch (e) {
       await onReportRootIssue(nameFunction: 'onKichHoatKhungManHinhThuocCapTabSS050');
     }
+
+    ///
+    return;
+  }
+
+  @override
+  Future<void> onHuyKichHoatKhungManHinhThuocCapTabSS050() async {
+
+    getNutBamChuyenTabSS050?.onVoidHuyKichHoatHanhVi();
 
     ///
     return;

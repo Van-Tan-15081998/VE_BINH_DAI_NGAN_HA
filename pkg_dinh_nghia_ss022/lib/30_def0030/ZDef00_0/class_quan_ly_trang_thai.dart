@@ -80,6 +80,7 @@ class QUANLYTRANGTHAITHANHPHANGAMEUITONGQUAT with CauTrucThucThiCoBan {
       onCaiDatGameUIKhungThongTinTaiNguyenDollarTraoDoi(value: GAMEUIKHUNGTHONGTINTAINGUYENDOLLARTRAODOI()).catchError((e) => null),
 
       onCaiDatGameUIKhungManHinhThuCapCoBan(value: GAMEUIKHUNGMANHINHTHUOCCAPCOBAN()).catchError((e) => null),
+      onCaiDatGameUIKhungManHinhThuCapChienDau(value: GAMEUIKHUNGMANHINHTHUOCCAPCHIENDAU()).catchError((e) => null),
 
       onCaiDatGameUINutBamChonTabChienDauCoKhongKichHoat(value: GAMEUINUTBAMCHONTABCHIENDAUCOKHONGKICHHOAT()).catchError((e) => null),
       onCaiDatGameUINutBamChonTabChienDauCoKichHoat(value: GAMEUINUTBAMCHONTABCHIENDAUCOKICHHOAT()).catchError((e) => null),
@@ -105,6 +106,7 @@ class QUANLYTRANGTHAITHANHPHANGAMEUITONGQUAT with CauTrucThucThiCoBan {
 
       ///
       onCaiDatGameUINutBamCoBanVA(value: GAMEUINUTBAMCOBANVA()).catchError((e) => null),
+      onCaiDatGameUINutBamDongManHinh(value: GAMEUINUTBAMDONGMANHINH()).catchError((e) => null),
       onCaiDatGameUINutBamChuyenTiep(value: GAMEUINUTBAMCHUYENTIEP()).catchError((e) => null),
 
       onCaiDatGameUINutBamQuayVe(value: GAMEUINUTBAMQUAYVE()).catchError((e) => null),
@@ -172,6 +174,7 @@ class QUANLYTRANGTHAITHANHPHANGAMEUITONGQUAT with CauTrucThucThiCoBan {
       GAMEUIKHUNGTHONGTINTAINGUYENDOLLARTRAODOI.maDinhDanhGameUI: getGameUIKhungThongTinTaiNguyenDollarTraoDoi,
 
       GAMEUIKHUNGMANHINHTHUOCCAPCOBAN.maDinhDanhGameUI: getGameUIKhungManHinhThuCapCoBan,
+      GAMEUIKHUNGMANHINHTHUOCCAPCHIENDAU.maDinhDanhGameUI: getGameUIKhungManHinhThuCapChienDau,
 
       GAMEUINUTBAMCHONTABCHIENDAUCOKHONGKICHHOAT.maDinhDanhGameUI: getGameUINutBamChonTabChienDauCoKhongKichHoat,
       GAMEUINUTBAMCHONTABCHIENDAUCOKICHHOAT.maDinhDanhGameUI: getGameUINutBamChonTabChienDauCoKichHoat,
@@ -197,6 +200,7 @@ class QUANLYTRANGTHAITHANHPHANGAMEUITONGQUAT with CauTrucThucThiCoBan {
 
       ///
       GAMEUINUTBAMCOBANVA.maDinhDanhGameUI: getGameUINutBamCoBanVA,
+      GAMEUINUTBAMDONGMANHINH.maDinhDanhGameUI: getGameUINutBamDongManHinh,
       GAMEUINUTBAMCHUYENTIEP.maDinhDanhGameUI: getGameUINutBamChuyenTiep,
 
       GAMEUINUTBAMQUAYVE.maDinhDanhGameUI: getGameUINutBamQuayVe,
@@ -304,6 +308,7 @@ class QUANLYTRANGTHAITHANHPHANGAMEUITONGQUAT with CauTrucThucThiCoBan {
       getGameUIKhungThongTinTaiNguyenDollarTraoDoi?.onSetupRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
 
       getGameUIKhungManHinhThuCapCoBan?.onSetupRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getGameUIKhungManHinhThuCapChienDau?.onSetupRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
 
       getGameUINutBamChonTabChienDauCoKhongKichHoat?.onSetupRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
       getGameUINutBamChonTabChienDauCoKichHoat?.onSetupRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
@@ -329,6 +334,7 @@ class QUANLYTRANGTHAITHANHPHANGAMEUITONGQUAT with CauTrucThucThiCoBan {
 
       ///
       getGameUINutBamCoBanVA?.onSetupRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getGameUINutBamDongManHinh?.onSetupRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
       getGameUINutBamChuyenTiep?.onSetupRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
       getGameUINutBamQuayVe?.onSetupRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
       getGameUINutBamTamDungKichHoat?.onSetupRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
@@ -409,6 +415,7 @@ class QUANLYTRANGTHAITHANHPHANGAMEUITONGQUAT with CauTrucThucThiCoBan {
       getGameUIKhungThongTinTaiNguyenDollarTraoDoi?.onInitRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
 
       getGameUIKhungManHinhThuCapCoBan?.onInitRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getGameUIKhungManHinhThuCapChienDau?.onInitRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
 
       getGameUINutBamChonTabChienDauCoKhongKichHoat?.onInitRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
       getGameUINutBamChonTabChienDauCoKichHoat?.onInitRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
@@ -434,6 +441,7 @@ class QUANLYTRANGTHAITHANHPHANGAMEUITONGQUAT with CauTrucThucThiCoBan {
 
       ///
       getGameUINutBamCoBanVA?.onInitRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getGameUINutBamDongManHinh?.onInitRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
       getGameUINutBamChuyenTiep?.onInitRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
       getGameUINutBamQuayVe?.onInitRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
       getGameUINutBamTamDungKichHoat?.onInitRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
@@ -633,6 +641,17 @@ class QUANLYTRANGTHAITHANHPHANGAMEUITONGQUAT with CauTrucThucThiCoBan {
             thanhPhanGameUI: getGameUIKhungManHinhThuCapCoBan,
             onThucThiHoanTat: () async {
               await getGameUIKhungManHinhThuCapCoBan?.getSpriteThanhPhanGameUI?.onTaiTaiNguyen();
+            },
+          );
+        },
+      );
+
+      cauTrucThucThiTuanTuSS010.onAddDonViThucThiTuanTu(
+        onThucThiTuanTu: () async {
+          await getQuanLyTaiNguyenThanhPhanGameUI?.onTaiTaiNguyenTichHopTheoTuanTu(
+            thanhPhanGameUI: getGameUIKhungManHinhThuCapChienDau,
+            onThucThiHoanTat: () async {
+              await getGameUIKhungManHinhThuCapChienDau?.getSpriteThanhPhanGameUI?.onTaiTaiNguyen();
             },
           );
         },
@@ -1261,6 +1280,16 @@ class QUANLYTRANGTHAITHANHPHANGAMEUITONGQUAT with CauTrucThucThiCoBan {
             thanhPhanGameUI: getGameUINutBamCoBanVA,
             onThucThiHoanTat: () async {
               await getGameUINutBamCoBanVA?.getSpriteThanhPhanGameUI?.onTaiTaiNguyen();
+            },
+          );
+        },
+      );
+      cauTrucThucThiTuanTuSS030.onAddDonViThucThiTuanTu(
+        onThucThiTuanTu: () async {
+          await getQuanLyTaiNguyenThanhPhanGameUI?.onTaiTaiNguyenTichHopTheoTuanTu(
+            thanhPhanGameUI: getGameUINutBamDongManHinh,
+            onThucThiHoanTat: () async {
+              await getGameUINutBamDongManHinh?.getSpriteThanhPhanGameUI?.onTaiTaiNguyen();
             },
           );
         },
@@ -1913,6 +1942,13 @@ class QUANLYTRANGTHAITHANHPHANGAMEUITONGQUAT with CauTrucThucThiCoBan {
     return;
   }
 
+  GAMEUIKHUNGMANHINHTHUOCCAPCHIENDAU? _gameUIKhungManHinhThuCapChienDau;
+  GAMEUIKHUNGMANHINHTHUOCCAPCHIENDAU? get getGameUIKhungManHinhThuCapChienDau => _gameUIKhungManHinhThuCapChienDau;
+  Future<void> onCaiDatGameUIKhungManHinhThuCapChienDau({required GAMEUIKHUNGMANHINHTHUOCCAPCHIENDAU? value}) async {
+    _gameUIKhungManHinhThuCapChienDau ??= value;
+    return;
+  }
+
   GAMEUINUTBAMCHONTABCHIENDAUCOKHONGKICHHOAT? _gameUINutBamChonTabChienDauCoKhongKichHoat;
   GAMEUINUTBAMCHONTABCHIENDAUCOKHONGKICHHOAT? get getGameUINutBamChonTabChienDauCoKhongKichHoat => _gameUINutBamChonTabChienDauCoKhongKichHoat;
   Future<void> onCaiDatGameUINutBamChonTabChienDauCoKhongKichHoat({required GAMEUINUTBAMCHONTABCHIENDAUCOKHONGKICHHOAT? value}) async {
@@ -2047,6 +2083,13 @@ class QUANLYTRANGTHAITHANHPHANGAMEUITONGQUAT with CauTrucThucThiCoBan {
   GAMEUINUTBAMCOBANVA? get getGameUINutBamCoBanVA => _gameUINutBamCoBanVA;
   Future<void> onCaiDatGameUINutBamCoBanVA({required GAMEUINUTBAMCOBANVA? value}) async {
     _gameUINutBamCoBanVA ??= value;
+    return;
+  }
+
+  GAMEUINUTBAMDONGMANHINH? _gameUINutBamDongManHinh;
+  GAMEUINUTBAMDONGMANHINH? get getGameUINutBamDongManHinh => _gameUINutBamDongManHinh;
+  Future<void> onCaiDatGameUINutBamDongManHinh({required GAMEUINUTBAMDONGMANHINH? value}) async {
+    _gameUINutBamDongManHinh ??= value;
     return;
   }
 

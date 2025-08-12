@@ -72,9 +72,9 @@ abstract class SPRITETHANHNGANGCHISOMAUCOBAN extends SpriteAnimationComponent wi
     return;
   }
 
-  Future<void> onRemoveFromParent() async {
+  void onRemoveFromParent() {
     if (isMounted == true) {
-      await Future.delayed(Duration.zero);
+      // await Future.delayed(Duration.zero);
       removeFromParent();
     }
 

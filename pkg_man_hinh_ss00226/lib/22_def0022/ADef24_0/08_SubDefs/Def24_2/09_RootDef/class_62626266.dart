@@ -41,19 +41,17 @@ class KhungVongLapBangDieuKhienChienDauSS02 extends Component with VongLapThoiGi
 
   @override
   void update(double dt) {
-
-      // ///
-      // ///
-      // /// TODO: Chạy Vòng Loop
-      // ///
-      // ///
-      //
-      // onVoidCapNhatChiSoTangTienTheoThoiGianThuc();
-      // if (onBoolKiemTraTanXuatCapNhat() == false) {
-      //   return;
-      // }
-      //
-      // await getTrangThaiTongQuat?.getBangDieuKhienChienDauSS02?.onLoop();
-
+    // ///
+    // ///
+    // /// TODO: Chạy Vòng Loop
+    // ///
+    // ///
+    //
+    // onVoidCapNhatChiSoTangTienTheoThoiGianThuc();
+    // if (onBoolKiemTraTanXuatCapNhat() == false) {
+    //   return;
+    // }
+    //
+    // await getTrangThaiTongQuat?.getBangDieuKhienChienDauSS02?.onLoop();
   }
 }

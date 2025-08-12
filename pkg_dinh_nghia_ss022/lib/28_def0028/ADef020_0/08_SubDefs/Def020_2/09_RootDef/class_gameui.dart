@@ -7,37 +7,6 @@ class GAMEUINUTBAMDONGMANHINH extends CoreGameUIComponent {
   static const String maDinhDanhGameUI = '[GAMEUI]_[GAMEUINUTBAMDONGMANHINH]';
 
   /// -----
-  /// TODO: Attach Root
-  /// -----
-  @override
-  Future<void> onAttachRoot({required dynamic attachValue}) async {
-    /// -----
-    /// TODO: Attach Root For SubCom
-    /// -----
-    await onAttachRootForSubCom(attachValue: attachValue);
-
-    return;
-  }
-
-  /// -----
-  /// TODO: Init Root
-  /// -----
-  @override
-  Future<void> onInitRoot() async {
-    ///
-    /// TODO:
-    ///
-
-    /// -----
-    /// TODO: Init Root For SubCom
-    /// -----
-    await onInitRootForSubCom();
-
-    ///
-    return;
-  }
-
-  /// -----
   /// TODO: Setup Root
   /// -----
   @override
@@ -60,66 +29,16 @@ class GAMEUINUTBAMDONGMANHINH extends CoreGameUIComponent {
   }
 
   /// -----
-  /// TODO: Reset Root
-  /// -----
-  @override
-  Future<void> onResetRoot() async {
-    /// -----
-    /// TODO: Init Root For SubCom
-    /// -----
-    await onResetRootForSubCom();
-
-    ///
-    return;
-  }
-
-  /// -----
-  /// TODO: Attach Root For SubCom
-  /// -----
-  @override
-  Future<void> onAttachRootForSubCom({required dynamic attachValue}) async {
-    ///
-    return;
-  }
-
-  /// -----
-  /// TODO: Setup Root For SubCom
-  /// -----
-  @override
-  Future<void> onSetupRootForSubCom() async {
-    ///
-    return;
-  }
-
-  /// -----
-  /// TODO: Init Root For SubCom
-  /// -----
-  @override
-  Future<void> onInitRootForSubCom() async {
-    ///
-    return;
-  }
-
-  /// -----
-  /// TODO: Reset Root For SubCom
-  /// -----
-  @override
-  Future<void> onResetRootForSubCom() async {
-    ///
-    return;
-  }
-
-  /// -----
   /// TODO: Cài Đặt Thuộc Tính Sprite
   /// -----
   Future<void> onInitSpriteGameUI() async {
     /// -----
     /// TODO: Ngoại Hình Thân
     /// -----
-    final int tongSoFrame = 16;
-    final int tongSoFrameTrenHang = 4;
-    final double chieuRongFrame = 250.0;
-    final double chieuCaoFrame = 250.0;
+    final int tongSoFrame = 4;
+    final int tongSoFrameTrenHang = 2;
+    final double chieuRongFrame = 200.0;
+    final double chieuCaoFrame = 200.0;
     await Future.wait([
       getSpriteThanhPhanGameUI?.getDonViSpriteNgoaiHinhGameUI?.caiDatNguonHinhAnh(value: null).catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
       getSpriteThanhPhanGameUI?.getDonViSpriteNgoaiHinhGameUI?.caiDatTongSoFrame(value: tongSoFrame).catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
@@ -137,31 +56,31 @@ class GAMEUINUTBAMDONGMANHINH extends CoreGameUIComponent {
     /// -----
     /// TODO: Nguồn Sprite Đồng Khởi
     /// -----
-    final String nguonSpriteDongKhoi = 'packages/pkg_dinh_nghia_ss030/lib';
+    final String nguonSpriteDongKhoi = 'packages/pkg_dinh_nghia_ss022/lib/28_def0028/ADef020_0/08_SubDefs/Def020_2';
 
     /// TODO: Resized 25
-    final String nguonSpriteRS025PartSS001 = '07_Resized/Def25/sps_rs025_part_ss001.png';
-    final String nguonSpriteRS025PartSS002 = '07_Resized/Def25/sps_rs025_part_ss002.png';
-    final String nguonSpriteRS025PartSS003 = '07_Resized/Def25/sps_rs025_part_ss003.png';
-    final String nguonSpriteRS025PartSS004 = '07_Resized/Def25/sps_rs025_part_ss004.png';
-    final String nguonSpriteRS025PartSS005 = '07_Resized/Def25/sps_rs025_part_ss005.png';
-    final String nguonSpriteRS025PartSS006 = '07_Resized/Def25/sps_rs025_part_ss006.png';
+    final String nguonSpriteRS025PartSS001 = '07_Resized/Def25/sps_rs025_part_ss001.webp';
+    final String nguonSpriteRS025PartSS002 = '07_Resized/Def25/sps_rs025_part_ss002.webp';
+    final String nguonSpriteRS025PartSS003 = '07_Resized/Def25/sps_rs025_part_ss003.webp';
+    final String nguonSpriteRS025PartSS004 = '07_Resized/Def25/sps_rs025_part_ss004.webp';
+    final String nguonSpriteRS025PartSS005 = '07_Resized/Def25/sps_rs025_part_ss005.webp';
+    final String nguonSpriteRS025PartSS006 = '07_Resized/Def25/sps_rs025_part_ss006.webp';
 
     /// TODO: Resized 50
-    final String nguonSpriteRS050PartSS001 = '07_Resized/Def50/sps_rs050_part_ss001.png';
-    final String nguonSpriteRS050PartSS002 = '07_Resized/Def50/sps_rs050_part_ss002.png';
-    final String nguonSpriteRS050PartSS003 = '07_Resized/Def50/sps_rs050_part_ss003.png';
-    final String nguonSpriteRS050PartSS004 = '07_Resized/Def50/sps_rs050_part_ss004.png';
-    final String nguonSpriteRS050PartSS005 = '07_Resized/Def50/sps_rs050_part_ss005.png';
-    final String nguonSpriteRS050PartSS006 = '07_Resized/Def50/sps_rs050_part_ss006.png';
+    final String nguonSpriteRS050PartSS001 = '07_Resized/Def50/sps_rs050_part_ss001.webp';
+    final String nguonSpriteRS050PartSS002 = '07_Resized/Def50/sps_rs050_part_ss002.webp';
+    final String nguonSpriteRS050PartSS003 = '07_Resized/Def50/sps_rs050_part_ss003.webp';
+    final String nguonSpriteRS050PartSS004 = '07_Resized/Def50/sps_rs050_part_ss004.webp';
+    final String nguonSpriteRS050PartSS005 = '07_Resized/Def50/sps_rs050_part_ss005.webp';
+    final String nguonSpriteRS050PartSS006 = '07_Resized/Def50/sps_rs050_part_ss006.webp';
 
     /// TODO: Resized 100
-    final String nguonSpriteRS100PartSS001 = '07_Resized/Def90/sps_rs100_part_ss001.png';
-    final String nguonSpriteRS100PartSS002 = '07_Resized/Def90/sps_rs100_part_ss002.png';
-    final String nguonSpriteRS100PartSS003 = '07_Resized/Def90/sps_rs100_part_ss003.png';
-    final String nguonSpriteRS100PartSS004 = '07_Resized/Def90/sps_rs100_part_ss004.png';
-    final String nguonSpriteRS100PartSS005 = '07_Resized/Def90/sps_rs100_part_ss005.png';
-    final String nguonSpriteRS100PartSS006 = '07_Resized/Def90/sps_rs100_part_ss006.png';
+    final String nguonSpriteRS100PartSS001 = '07_Resized/Def90/sps_rs100_part_ss001.webp';
+    final String nguonSpriteRS100PartSS002 = '07_Resized/Def90/sps_rs100_part_ss002.webp';
+    final String nguonSpriteRS100PartSS003 = '07_Resized/Def90/sps_rs100_part_ss003.webp';
+    final String nguonSpriteRS100PartSS004 = '07_Resized/Def90/sps_rs100_part_ss004.webp';
+    final String nguonSpriteRS100PartSS005 = '07_Resized/Def90/sps_rs100_part_ss005.webp';
+    final String nguonSpriteRS100PartSS006 = '07_Resized/Def90/sps_rs100_part_ss006.webp';
 
     /// -----
     /// TODO: Ngoại Hình GameUI Part SS01
@@ -283,7 +202,8 @@ class GAMEUINUTBAMDONGMANHINH extends CoreGameUIComponent {
     /// TODO: -----|-----|-----|-----|-----|-----|-----|-----|-----|-----
     /// TODO: -----|-----|-----|-----|-----|-----|-----|-----|-----|-----
 
-    await getSpriteThanhPhanGameUI?.onToiUuHoaKichThuocRS100();
+    await getSpriteThanhPhanGameUI?.getDonViSpriteNgoaiHinhGameUI?.onCaiDatTongSoLuongThanhPhanTaiNguyen(value: 1, caiDatUuTien: true);
+    await getSpriteThanhPhanGameUI?.onToiUuHoaKichThuocRS050();
 
     /// TODO: -----|-----|-----|-----|-----|-----|-----|-----|-----|-----
     /// TODO: -----|-----|-----|-----|-----|-----|-----|-----|-----|-----
