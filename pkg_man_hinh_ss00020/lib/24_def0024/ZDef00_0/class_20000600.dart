@@ -11,7 +11,7 @@ class MANHINHKHOIDONG extends StatefulWidget {
   const MANHINHKHOIDONG({super.key, required this.trangThaiTongQuat, required this.onThucThiHoanTat});
 
   final VoidCallback? onThucThiHoanTat;
-  final QuanLyTrangThaiTongQuat? trangThaiTongQuat;
+  final GlobalStateManagementSystem? trangThaiTongQuat;
 
   @override
   State<MANHINHKHOIDONG> createState() => _MANHINHKHOIDONGState();

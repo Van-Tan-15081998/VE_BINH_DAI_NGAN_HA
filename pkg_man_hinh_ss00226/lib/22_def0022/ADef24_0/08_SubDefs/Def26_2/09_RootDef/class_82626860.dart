@@ -10,9 +10,9 @@ class KhungVongLapBangDieuKhienChienDauSS03 extends Component with VongLapThoiGi
   /// -----
   /// TODO:
   /// -----
-  QuanLyTrangThaiTongQuat? _trangThaiTongQuat;
-  QuanLyTrangThaiTongQuat? get getTrangThaiTongQuat => _trangThaiTongQuat;
-  Future<void> caiDatTrangThaiTongQuat({required QuanLyTrangThaiTongQuat? value}) async {
+  GlobalStateManagementSystem? _trangThaiTongQuat;
+  GlobalStateManagementSystem? get getTrangThaiTongQuat => _trangThaiTongQuat;
+  Future<void> caiDatTrangThaiTongQuat({required GlobalStateManagementSystem? value}) async {
     _trangThaiTongQuat ??= value;
     return;
   }
@@ -20,7 +20,7 @@ class KhungVongLapBangDieuKhienChienDauSS03 extends Component with VongLapThoiGi
   /// -----
   /// TODO:
   /// -----
-  KhungVongLapBangDieuKhienChienDauSS03({required QuanLyTrangThaiTongQuat? trangThaiTongQuat}) {
+  KhungVongLapBangDieuKhienChienDauSS03({required GlobalStateManagementSystem? trangThaiTongQuat}) {
     caiDatTrangThaiTongQuat(value: trangThaiTongQuat);
   }
 
@@ -32,7 +32,7 @@ class KhungVongLapBangDieuKhienChienDauSS03 extends Component with VongLapThoiGi
   /// -----
   /// TODO:
   /// -----
-  Future<bool> kiemTraTanXuatCapNhat() async {
+  bool onBoolKiemTraTanXuatCapNhat() {
     if (getChiSoTangTienTheoThoiGianThuc % 20 == 0) {
       return true;
     }
@@ -40,20 +40,18 @@ class KhungVongLapBangDieuKhienChienDauSS03 extends Component with VongLapThoiGi
   }
 
   @override
-  FutureOr<void> update(double dt) async {
-    if (getTrangThaiTongQuat != null) {
-      ///
-      ///
-      /// TODO: Chạy Vòng Loop
-      ///
-      ///
-
-      await onCapNhatChiSoTangTienTheoThoiGianThuc();
-      if (await kiemTraTanXuatCapNhat() == false) {
-        return;
-      }
-
-      await getTrangThaiTongQuat?.getBangDieuKhienChienDauSS03?.onLoop();
-    }
+  void update(double dt) {
+    // ///
+    // ///
+    // /// TODO: Chạy Vòng Loop
+    // ///
+    // ///
+    //
+    // onVoidCapNhatChiSoTangTienTheoThoiGianThuc();
+    // if (onBoolKiemTraTanXuatCapNhat() == false) {
+    //   return;
+    // }
+    //
+    // await getTrangThaiTongQuat?.getBangDieuKhienChienDauSS03?.onLoop();
   }
 }

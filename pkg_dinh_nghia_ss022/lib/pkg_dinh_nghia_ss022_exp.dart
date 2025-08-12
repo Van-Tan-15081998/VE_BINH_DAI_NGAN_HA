@@ -24,6 +24,12 @@ export '26_def0026/ADef20_0/08_SubDefs/Def30_2/09_RootDef/class_20000000.dart';
 /// TODO: _____[THANH_PHAN_GAMEUI_CO_BAN]_____
 export '26_def0026/ADef20_0/09_RootDef/class_20000000.dart';
 
+/// TODO: _____[THANH_PHAN_GAMEUI_SPRITE_ANIMATION_MAC_DINH]_____
+export '28_def0028/ADef010_0/08_SubDefs/Def10_2/09_RootDef/class_gameui.dart';
+
+/// TODO: _____[THANH_PHAN_GAMEUI_SPRITE_MAC_DINH]_____
+export '28_def0028/ADef010_0/08_SubDefs/Def20_2/09_RootDef/class_gameui.dart';
+
 /// TODO: _____[THANH_NGANG_CHI_SO_MAU_CHIEN_DAU_CO]_____
 export '28_def0028/ADef210_0/08_SubDefs/Def210_2/09_RootDef/class_gameui.dart';
 
@@ -84,6 +90,12 @@ export '28_def0028/ADef050_0/08_SubDefs/Def310_2/09_RootDef/class_gameui.dart';
 /// TODO: _____[NUT_BAM_CHON_TAB_BAN_DO_KICH_HOAT]_____
 export '28_def0028/ADef050_0/08_SubDefs/Def320_2/09_RootDef/class_gameui.dart';
 
+/// TODO:
+export '28_def0028/ADef050_0/08_SubDefs/Def410_2/09_RootDef/class_gameui.dart';
+
+/// TODO:
+export '28_def0028/ADef050_0/08_SubDefs/Def420_2/09_RootDef/class_gameui.dart';
+
 /// TODO: _____[NUT_BAM_CHUYEN_CHON_CHI_DINH_TRAI]_____
 export '28_def0028/ADef060_0/08_SubDefs/Def210_2/09_RootDef/class_gameui.dart';
 /// TODO: _____[NUT_BAM_CHUYEN_CHON_CHI_DINH_PHAI]_____
@@ -122,6 +134,9 @@ export '28_def0028/ADef120_0/09_RootDef/class_gameui.dart';
 
 /// TODO: _____[NUT_BAM_CO_BAN_VA]_____
 export '28_def0028/ADef020_0/08_SubDefs/Def010_2/09_RootDef/class_gameui.dart';
+
+/// TODO: _____[GAMEUI_NUT_BAM_DONG_MAN_HINH]_____
+export '28_def0028/ADef020_0/08_SubDefs/Def020_2/09_RootDef/class_gameui.dart';
 
 /// TODO: _____[NUT_QUAY_VE]_____
 export '28_def0028/ADef020_0/08_SubDefs/Def030_2/09_RootDef/class_gameui.dart';
@@ -169,6 +184,11 @@ export '28_def0028/ADef400_0/08_SubDefs/Def210_2/09_RootDef/class_gameui.dart';
 /// TODO: _____[CARD_NHIEM_VU_CHIEN_DAU_HUY_KICH_HOAT]_____
 export '28_def0028/ADef400_0/08_SubDefs/Def220_2/09_RootDef/class_gameui.dart';
 
+/// TODO: _____[CARD_NHIEM_VU_CHIEN_DAU_NGAN_CHAN_XAM_NHAP]_____
+export '28_def0028/ADef400_0/08_SubDefs/Def230_2/09_RootDef/class_gameui.dart';
+
+/// TODO: _____[NUT_BAM_CHIEN_DAU_NGAN_CHAN_XAM_NHAP]_____
+export '28_def0028/ADef400_0/08_SubDefs/Def240_2/09_RootDef/class_gameui.dart';
 
 /// TODO: _____[THANH_TICH_NHIEM_VU_CHIEN_DAU_SS010_KICH_HOAT]_____
 export '28_def0028/ADef400_0/08_SubDefs/Def300_2/09_RootDef/class_gameui.dart';
@@ -188,9 +208,11 @@ export '28_def0028/ADef400_0/08_SubDefs/Def500_2/09_RootDef/class_gameui.dart';
 /// TODO: _____[THANH_TICH_NHIEM_VU_CHIEN_DAU_SS030_HUY_KICH_HOAT]_____
 export '28_def0028/ADef400_0/08_SubDefs/Def510_2/09_RootDef/class_gameui.dart';
 
+/// TODO: _____[KHUNG_MAN_HINH_CHIEN_THANG]_____
+export '28_def0028/BDef200_0/08_SubDefs/Def210_2/09_RootDef/class_gameui.dart';
 
-/// A Calculator.
-class Calculator {
-  /// Returns [value] plus 1.
-  int addOne(int value) => value + 1;
-}
+/// TODO: _____[KHUNG_MAN_HINH_THAT_BAI]_____
+export '28_def0028/BDef200_0/08_SubDefs/Def220_2/09_RootDef/class_gameui.dart';
+
+/// TODO: _____[KHUNG_MAN_HINH_THU_CAP_CHIEN_DAU]_____
+export '28_def0028/ADef110_0/08_SubDefs/Def310_2/09_RootDef/class_gameui.dart';

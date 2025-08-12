@@ -95,343 +95,343 @@ class MOHINHVIENDANVACHAM with CauTrucThucThiCoBan {
   static const String maDinhDanhVienDanVaChamSS188 = '[VIEN_DAN_VA_CHAM_SS188]';
 
   MOHINHVIENDANVACHAM.onSS020() {
-    onCaiDatMaDinhDanhVienDanVaCham(value: MOHINHVIENDANVACHAM.maDinhDanhVienDanVaChamSS020, caiDatUuTien: true);
+    onVoidCaiDatMaDinhDanhVienDanVaCham(value: MOHINHVIENDANVACHAM.maDinhDanhVienDanVaChamSS020, caiDatUuTien: true);
   }
 
   MOHINHVIENDANVACHAM.onSS022() {
-    onCaiDatMaDinhDanhVienDanVaCham(value: MOHINHVIENDANVACHAM.maDinhDanhVienDanVaChamSS022, caiDatUuTien: true);
+    onVoidCaiDatMaDinhDanhVienDanVaCham(value: MOHINHVIENDANVACHAM.maDinhDanhVienDanVaChamSS022, caiDatUuTien: true);
   }
 
   MOHINHVIENDANVACHAM.onSS024() {
-    onCaiDatMaDinhDanhVienDanVaCham(value: MOHINHVIENDANVACHAM.maDinhDanhVienDanVaChamSS024, caiDatUuTien: true);
+    onVoidCaiDatMaDinhDanhVienDanVaCham(value: MOHINHVIENDANVACHAM.maDinhDanhVienDanVaChamSS024, caiDatUuTien: true);
   }
 
   MOHINHVIENDANVACHAM.onSS026() {
-    onCaiDatMaDinhDanhVienDanVaCham(value: MOHINHVIENDANVACHAM.maDinhDanhVienDanVaChamSS026, caiDatUuTien: true);
+    onVoidCaiDatMaDinhDanhVienDanVaCham(value: MOHINHVIENDANVACHAM.maDinhDanhVienDanVaChamSS026, caiDatUuTien: true);
   }
 
   MOHINHVIENDANVACHAM.onSS028() {
-    onCaiDatMaDinhDanhVienDanVaCham(value: MOHINHVIENDANVACHAM.maDinhDanhVienDanVaChamSS028, caiDatUuTien: true);
+    onVoidCaiDatMaDinhDanhVienDanVaCham(value: MOHINHVIENDANVACHAM.maDinhDanhVienDanVaChamSS028, caiDatUuTien: true);
   }
 
   MOHINHVIENDANVACHAM.onSS030() {
-    onCaiDatMaDinhDanhVienDanVaCham(value: MOHINHVIENDANVACHAM.maDinhDanhVienDanVaChamSS030, caiDatUuTien: true);
+    onVoidCaiDatMaDinhDanhVienDanVaCham(value: MOHINHVIENDANVACHAM.maDinhDanhVienDanVaChamSS030, caiDatUuTien: true);
   }
 
   MOHINHVIENDANVACHAM.onSS032() {
-    onCaiDatMaDinhDanhVienDanVaCham(value: MOHINHVIENDANVACHAM.maDinhDanhVienDanVaChamSS032, caiDatUuTien: true);
+    onVoidCaiDatMaDinhDanhVienDanVaCham(value: MOHINHVIENDANVACHAM.maDinhDanhVienDanVaChamSS032, caiDatUuTien: true);
   }
 
   MOHINHVIENDANVACHAM.onSS034() {
-    onCaiDatMaDinhDanhVienDanVaCham(value: MOHINHVIENDANVACHAM.maDinhDanhVienDanVaChamSS034, caiDatUuTien: true);
+    onVoidCaiDatMaDinhDanhVienDanVaCham(value: MOHINHVIENDANVACHAM.maDinhDanhVienDanVaChamSS034, caiDatUuTien: true);
   }
 
   MOHINHVIENDANVACHAM.onSS036() {
-    onCaiDatMaDinhDanhVienDanVaCham(value: MOHINHVIENDANVACHAM.maDinhDanhVienDanVaChamSS036, caiDatUuTien: true);
+    onVoidCaiDatMaDinhDanhVienDanVaCham(value: MOHINHVIENDANVACHAM.maDinhDanhVienDanVaChamSS036, caiDatUuTien: true);
   }
 
   MOHINHVIENDANVACHAM.onSS038() {
-    onCaiDatMaDinhDanhVienDanVaCham(value: MOHINHVIENDANVACHAM.maDinhDanhVienDanVaChamSS038, caiDatUuTien: true);
+    onVoidCaiDatMaDinhDanhVienDanVaCham(value: MOHINHVIENDANVACHAM.maDinhDanhVienDanVaChamSS038, caiDatUuTien: true);
   }
 
   MOHINHVIENDANVACHAM.onSS040() {
-    onCaiDatMaDinhDanhVienDanVaCham(value: MOHINHVIENDANVACHAM.maDinhDanhVienDanVaChamSS040, caiDatUuTien: true);
+    onVoidCaiDatMaDinhDanhVienDanVaCham(value: MOHINHVIENDANVACHAM.maDinhDanhVienDanVaChamSS040, caiDatUuTien: true);
   }
 
   MOHINHVIENDANVACHAM.onSS042() {
-    onCaiDatMaDinhDanhVienDanVaCham(value: MOHINHVIENDANVACHAM.maDinhDanhVienDanVaChamSS042, caiDatUuTien: true);
+    onVoidCaiDatMaDinhDanhVienDanVaCham(value: MOHINHVIENDANVACHAM.maDinhDanhVienDanVaChamSS042, caiDatUuTien: true);
   }
 
   MOHINHVIENDANVACHAM.onSS044() {
-    onCaiDatMaDinhDanhVienDanVaCham(value: MOHINHVIENDANVACHAM.maDinhDanhVienDanVaChamSS044, caiDatUuTien: true);
+    onVoidCaiDatMaDinhDanhVienDanVaCham(value: MOHINHVIENDANVACHAM.maDinhDanhVienDanVaChamSS044, caiDatUuTien: true);
   }
 
   MOHINHVIENDANVACHAM.onSS046() {
-    onCaiDatMaDinhDanhVienDanVaCham(value: MOHINHVIENDANVACHAM.maDinhDanhVienDanVaChamSS046, caiDatUuTien: true);
+    onVoidCaiDatMaDinhDanhVienDanVaCham(value: MOHINHVIENDANVACHAM.maDinhDanhVienDanVaChamSS046, caiDatUuTien: true);
   }
 
   MOHINHVIENDANVACHAM.onSS048() {
-    onCaiDatMaDinhDanhVienDanVaCham(value: MOHINHVIENDANVACHAM.maDinhDanhVienDanVaChamSS048, caiDatUuTien: true);
+    onVoidCaiDatMaDinhDanhVienDanVaCham(value: MOHINHVIENDANVACHAM.maDinhDanhVienDanVaChamSS048, caiDatUuTien: true);
   }
 
   MOHINHVIENDANVACHAM.onSS050() {
-    onCaiDatMaDinhDanhVienDanVaCham(value: MOHINHVIENDANVACHAM.maDinhDanhVienDanVaChamSS050, caiDatUuTien: true);
+    onVoidCaiDatMaDinhDanhVienDanVaCham(value: MOHINHVIENDANVACHAM.maDinhDanhVienDanVaChamSS050, caiDatUuTien: true);
   }
 
   MOHINHVIENDANVACHAM.onSS052() {
-    onCaiDatMaDinhDanhVienDanVaCham(value: MOHINHVIENDANVACHAM.maDinhDanhVienDanVaChamSS052, caiDatUuTien: true);
+    onVoidCaiDatMaDinhDanhVienDanVaCham(value: MOHINHVIENDANVACHAM.maDinhDanhVienDanVaChamSS052, caiDatUuTien: true);
   }
 
   MOHINHVIENDANVACHAM.onSS054() {
-    onCaiDatMaDinhDanhVienDanVaCham(value: MOHINHVIENDANVACHAM.maDinhDanhVienDanVaChamSS054, caiDatUuTien: true);
+    onVoidCaiDatMaDinhDanhVienDanVaCham(value: MOHINHVIENDANVACHAM.maDinhDanhVienDanVaChamSS054, caiDatUuTien: true);
   }
 
   MOHINHVIENDANVACHAM.onSS056() {
-    onCaiDatMaDinhDanhVienDanVaCham(value: MOHINHVIENDANVACHAM.maDinhDanhVienDanVaChamSS056, caiDatUuTien: true);
+    onVoidCaiDatMaDinhDanhVienDanVaCham(value: MOHINHVIENDANVACHAM.maDinhDanhVienDanVaChamSS056, caiDatUuTien: true);
   }
 
   MOHINHVIENDANVACHAM.onSS058() {
-    onCaiDatMaDinhDanhVienDanVaCham(value: MOHINHVIENDANVACHAM.maDinhDanhVienDanVaChamSS058, caiDatUuTien: true);
+    onVoidCaiDatMaDinhDanhVienDanVaCham(value: MOHINHVIENDANVACHAM.maDinhDanhVienDanVaChamSS058, caiDatUuTien: true);
   }
 
   MOHINHVIENDANVACHAM.onSS060() {
-    onCaiDatMaDinhDanhVienDanVaCham(value: MOHINHVIENDANVACHAM.maDinhDanhVienDanVaChamSS060, caiDatUuTien: true);
+    onVoidCaiDatMaDinhDanhVienDanVaCham(value: MOHINHVIENDANVACHAM.maDinhDanhVienDanVaChamSS060, caiDatUuTien: true);
   }
 
   MOHINHVIENDANVACHAM.onSS062() {
-    onCaiDatMaDinhDanhVienDanVaCham(value: MOHINHVIENDANVACHAM.maDinhDanhVienDanVaChamSS062, caiDatUuTien: true);
+    onVoidCaiDatMaDinhDanhVienDanVaCham(value: MOHINHVIENDANVACHAM.maDinhDanhVienDanVaChamSS062, caiDatUuTien: true);
   }
 
   MOHINHVIENDANVACHAM.onSS064() {
-    onCaiDatMaDinhDanhVienDanVaCham(value: MOHINHVIENDANVACHAM.maDinhDanhVienDanVaChamSS064, caiDatUuTien: true);
+    onVoidCaiDatMaDinhDanhVienDanVaCham(value: MOHINHVIENDANVACHAM.maDinhDanhVienDanVaChamSS064, caiDatUuTien: true);
   }
 
   MOHINHVIENDANVACHAM.onSS066() {
-    onCaiDatMaDinhDanhVienDanVaCham(value: MOHINHVIENDANVACHAM.maDinhDanhVienDanVaChamSS066, caiDatUuTien: true);
+    onVoidCaiDatMaDinhDanhVienDanVaCham(value: MOHINHVIENDANVACHAM.maDinhDanhVienDanVaChamSS066, caiDatUuTien: true);
   }
 
   MOHINHVIENDANVACHAM.onSS068() {
-    onCaiDatMaDinhDanhVienDanVaCham(value: MOHINHVIENDANVACHAM.maDinhDanhVienDanVaChamSS068, caiDatUuTien: true);
+    onVoidCaiDatMaDinhDanhVienDanVaCham(value: MOHINHVIENDANVACHAM.maDinhDanhVienDanVaChamSS068, caiDatUuTien: true);
   }
 
   MOHINHVIENDANVACHAM.onSS070() {
-    onCaiDatMaDinhDanhVienDanVaCham(value: MOHINHVIENDANVACHAM.maDinhDanhVienDanVaChamSS070, caiDatUuTien: true);
+    onVoidCaiDatMaDinhDanhVienDanVaCham(value: MOHINHVIENDANVACHAM.maDinhDanhVienDanVaChamSS070, caiDatUuTien: true);
   }
 
   MOHINHVIENDANVACHAM.onSS072() {
-    onCaiDatMaDinhDanhVienDanVaCham(value: MOHINHVIENDANVACHAM.maDinhDanhVienDanVaChamSS072, caiDatUuTien: true);
+    onVoidCaiDatMaDinhDanhVienDanVaCham(value: MOHINHVIENDANVACHAM.maDinhDanhVienDanVaChamSS072, caiDatUuTien: true);
   }
 
   MOHINHVIENDANVACHAM.onSS074() {
-    onCaiDatMaDinhDanhVienDanVaCham(value: MOHINHVIENDANVACHAM.maDinhDanhVienDanVaChamSS074, caiDatUuTien: true);
+    onVoidCaiDatMaDinhDanhVienDanVaCham(value: MOHINHVIENDANVACHAM.maDinhDanhVienDanVaChamSS074, caiDatUuTien: true);
   }
 
   MOHINHVIENDANVACHAM.onSS076() {
-    onCaiDatMaDinhDanhVienDanVaCham(value: MOHINHVIENDANVACHAM.maDinhDanhVienDanVaChamSS076, caiDatUuTien: true);
+    onVoidCaiDatMaDinhDanhVienDanVaCham(value: MOHINHVIENDANVACHAM.maDinhDanhVienDanVaChamSS076, caiDatUuTien: true);
   }
 
   MOHINHVIENDANVACHAM.onSS078() {
-    onCaiDatMaDinhDanhVienDanVaCham(value: MOHINHVIENDANVACHAM.maDinhDanhVienDanVaChamSS078, caiDatUuTien: true);
+    onVoidCaiDatMaDinhDanhVienDanVaCham(value: MOHINHVIENDANVACHAM.maDinhDanhVienDanVaChamSS078, caiDatUuTien: true);
   }
 
   MOHINHVIENDANVACHAM.onSS080() {
-    onCaiDatMaDinhDanhVienDanVaCham(value: MOHINHVIENDANVACHAM.maDinhDanhVienDanVaChamSS080, caiDatUuTien: true);
+    onVoidCaiDatMaDinhDanhVienDanVaCham(value: MOHINHVIENDANVACHAM.maDinhDanhVienDanVaChamSS080, caiDatUuTien: true);
   }
 
   MOHINHVIENDANVACHAM.onSS082() {
-    onCaiDatMaDinhDanhVienDanVaCham(value: MOHINHVIENDANVACHAM.maDinhDanhVienDanVaChamSS082, caiDatUuTien: true);
+    onVoidCaiDatMaDinhDanhVienDanVaCham(value: MOHINHVIENDANVACHAM.maDinhDanhVienDanVaChamSS082, caiDatUuTien: true);
   }
 
   MOHINHVIENDANVACHAM.onSS084() {
-    onCaiDatMaDinhDanhVienDanVaCham(value: MOHINHVIENDANVACHAM.maDinhDanhVienDanVaChamSS084, caiDatUuTien: true);
+    onVoidCaiDatMaDinhDanhVienDanVaCham(value: MOHINHVIENDANVACHAM.maDinhDanhVienDanVaChamSS084, caiDatUuTien: true);
   }
 
   MOHINHVIENDANVACHAM.onSS086() {
-    onCaiDatMaDinhDanhVienDanVaCham(value: MOHINHVIENDANVACHAM.maDinhDanhVienDanVaChamSS086, caiDatUuTien: true);
+    onVoidCaiDatMaDinhDanhVienDanVaCham(value: MOHINHVIENDANVACHAM.maDinhDanhVienDanVaChamSS086, caiDatUuTien: true);
   }
 
   MOHINHVIENDANVACHAM.onSS088() {
-    onCaiDatMaDinhDanhVienDanVaCham(value: MOHINHVIENDANVACHAM.maDinhDanhVienDanVaChamSS088, caiDatUuTien: true);
+    onVoidCaiDatMaDinhDanhVienDanVaCham(value: MOHINHVIENDANVACHAM.maDinhDanhVienDanVaChamSS088, caiDatUuTien: true);
   }
 
   MOHINHVIENDANVACHAM.onSS090() {
-    onCaiDatMaDinhDanhVienDanVaCham(value: MOHINHVIENDANVACHAM.maDinhDanhVienDanVaChamSS090, caiDatUuTien: true);
+    onVoidCaiDatMaDinhDanhVienDanVaCham(value: MOHINHVIENDANVACHAM.maDinhDanhVienDanVaChamSS090, caiDatUuTien: true);
   }
 
   MOHINHVIENDANVACHAM.onSS092() {
-    onCaiDatMaDinhDanhVienDanVaCham(value: MOHINHVIENDANVACHAM.maDinhDanhVienDanVaChamSS092, caiDatUuTien: true);
+    onVoidCaiDatMaDinhDanhVienDanVaCham(value: MOHINHVIENDANVACHAM.maDinhDanhVienDanVaChamSS092, caiDatUuTien: true);
   }
 
   MOHINHVIENDANVACHAM.onSS094() {
-    onCaiDatMaDinhDanhVienDanVaCham(value: MOHINHVIENDANVACHAM.maDinhDanhVienDanVaChamSS094, caiDatUuTien: true);
+    onVoidCaiDatMaDinhDanhVienDanVaCham(value: MOHINHVIENDANVACHAM.maDinhDanhVienDanVaChamSS094, caiDatUuTien: true);
   }
 
   MOHINHVIENDANVACHAM.onSS096() {
-    onCaiDatMaDinhDanhVienDanVaCham(value: MOHINHVIENDANVACHAM.maDinhDanhVienDanVaChamSS096, caiDatUuTien: true);
+    onVoidCaiDatMaDinhDanhVienDanVaCham(value: MOHINHVIENDANVACHAM.maDinhDanhVienDanVaChamSS096, caiDatUuTien: true);
   }
 
   MOHINHVIENDANVACHAM.onSS098() {
-    onCaiDatMaDinhDanhVienDanVaCham(value: MOHINHVIENDANVACHAM.maDinhDanhVienDanVaChamSS098, caiDatUuTien: true);
+    onVoidCaiDatMaDinhDanhVienDanVaCham(value: MOHINHVIENDANVACHAM.maDinhDanhVienDanVaChamSS098, caiDatUuTien: true);
   }
 
   MOHINHVIENDANVACHAM.onSS100() {
-    onCaiDatMaDinhDanhVienDanVaCham(value: MOHINHVIENDANVACHAM.maDinhDanhVienDanVaChamSS100, caiDatUuTien: true);
+    onVoidCaiDatMaDinhDanhVienDanVaCham(value: MOHINHVIENDANVACHAM.maDinhDanhVienDanVaChamSS100, caiDatUuTien: true);
   }
 
   MOHINHVIENDANVACHAM.onSS102() {
-    onCaiDatMaDinhDanhVienDanVaCham(value: MOHINHVIENDANVACHAM.maDinhDanhVienDanVaChamSS102, caiDatUuTien: true);
+    onVoidCaiDatMaDinhDanhVienDanVaCham(value: MOHINHVIENDANVACHAM.maDinhDanhVienDanVaChamSS102, caiDatUuTien: true);
   }
 
   MOHINHVIENDANVACHAM.onSS104() {
-    onCaiDatMaDinhDanhVienDanVaCham(value: MOHINHVIENDANVACHAM.maDinhDanhVienDanVaChamSS104, caiDatUuTien: true);
+    onVoidCaiDatMaDinhDanhVienDanVaCham(value: MOHINHVIENDANVACHAM.maDinhDanhVienDanVaChamSS104, caiDatUuTien: true);
   }
 
   MOHINHVIENDANVACHAM.onSS106() {
-    onCaiDatMaDinhDanhVienDanVaCham(value: MOHINHVIENDANVACHAM.maDinhDanhVienDanVaChamSS106, caiDatUuTien: true);
+    onVoidCaiDatMaDinhDanhVienDanVaCham(value: MOHINHVIENDANVACHAM.maDinhDanhVienDanVaChamSS106, caiDatUuTien: true);
   }
 
   MOHINHVIENDANVACHAM.onSS108() {
-    onCaiDatMaDinhDanhVienDanVaCham(value: MOHINHVIENDANVACHAM.maDinhDanhVienDanVaChamSS108, caiDatUuTien: true);
+    onVoidCaiDatMaDinhDanhVienDanVaCham(value: MOHINHVIENDANVACHAM.maDinhDanhVienDanVaChamSS108, caiDatUuTien: true);
   }
 
   MOHINHVIENDANVACHAM.onSS110() {
-    onCaiDatMaDinhDanhVienDanVaCham(value: MOHINHVIENDANVACHAM.maDinhDanhVienDanVaChamSS110, caiDatUuTien: true);
+    onVoidCaiDatMaDinhDanhVienDanVaCham(value: MOHINHVIENDANVACHAM.maDinhDanhVienDanVaChamSS110, caiDatUuTien: true);
   }
 
   MOHINHVIENDANVACHAM.onSS112() {
-    onCaiDatMaDinhDanhVienDanVaCham(value: MOHINHVIENDANVACHAM.maDinhDanhVienDanVaChamSS112, caiDatUuTien: true);
+    onVoidCaiDatMaDinhDanhVienDanVaCham(value: MOHINHVIENDANVACHAM.maDinhDanhVienDanVaChamSS112, caiDatUuTien: true);
   }
 
   MOHINHVIENDANVACHAM.onSS114() {
-    onCaiDatMaDinhDanhVienDanVaCham(value: MOHINHVIENDANVACHAM.maDinhDanhVienDanVaChamSS114, caiDatUuTien: true);
+    onVoidCaiDatMaDinhDanhVienDanVaCham(value: MOHINHVIENDANVACHAM.maDinhDanhVienDanVaChamSS114, caiDatUuTien: true);
   }
 
   MOHINHVIENDANVACHAM.onSS116() {
-    onCaiDatMaDinhDanhVienDanVaCham(value: MOHINHVIENDANVACHAM.maDinhDanhVienDanVaChamSS116, caiDatUuTien: true);
+    onVoidCaiDatMaDinhDanhVienDanVaCham(value: MOHINHVIENDANVACHAM.maDinhDanhVienDanVaChamSS116, caiDatUuTien: true);
   }
 
   MOHINHVIENDANVACHAM.onSS118() {
-    onCaiDatMaDinhDanhVienDanVaCham(value: MOHINHVIENDANVACHAM.maDinhDanhVienDanVaChamSS118, caiDatUuTien: true);
+    onVoidCaiDatMaDinhDanhVienDanVaCham(value: MOHINHVIENDANVACHAM.maDinhDanhVienDanVaChamSS118, caiDatUuTien: true);
   }
 
   MOHINHVIENDANVACHAM.onSS120() {
-    onCaiDatMaDinhDanhVienDanVaCham(value: MOHINHVIENDANVACHAM.maDinhDanhVienDanVaChamSS120, caiDatUuTien: true);
+    onVoidCaiDatMaDinhDanhVienDanVaCham(value: MOHINHVIENDANVACHAM.maDinhDanhVienDanVaChamSS120, caiDatUuTien: true);
   }
 
   MOHINHVIENDANVACHAM.onSS122() {
-    onCaiDatMaDinhDanhVienDanVaCham(value: MOHINHVIENDANVACHAM.maDinhDanhVienDanVaChamSS122, caiDatUuTien: true);
+    onVoidCaiDatMaDinhDanhVienDanVaCham(value: MOHINHVIENDANVACHAM.maDinhDanhVienDanVaChamSS122, caiDatUuTien: true);
   }
 
   MOHINHVIENDANVACHAM.onSS124() {
-    onCaiDatMaDinhDanhVienDanVaCham(value: MOHINHVIENDANVACHAM.maDinhDanhVienDanVaChamSS124, caiDatUuTien: true);
+    onVoidCaiDatMaDinhDanhVienDanVaCham(value: MOHINHVIENDANVACHAM.maDinhDanhVienDanVaChamSS124, caiDatUuTien: true);
   }
 
   MOHINHVIENDANVACHAM.onSS126() {
-    onCaiDatMaDinhDanhVienDanVaCham(value: MOHINHVIENDANVACHAM.maDinhDanhVienDanVaChamSS126, caiDatUuTien: true);
+    onVoidCaiDatMaDinhDanhVienDanVaCham(value: MOHINHVIENDANVACHAM.maDinhDanhVienDanVaChamSS126, caiDatUuTien: true);
   }
 
   MOHINHVIENDANVACHAM.onSS128() {
-    onCaiDatMaDinhDanhVienDanVaCham(value: MOHINHVIENDANVACHAM.maDinhDanhVienDanVaChamSS128, caiDatUuTien: true);
+    onVoidCaiDatMaDinhDanhVienDanVaCham(value: MOHINHVIENDANVACHAM.maDinhDanhVienDanVaChamSS128, caiDatUuTien: true);
   }
 
   MOHINHVIENDANVACHAM.onSS130() {
-    onCaiDatMaDinhDanhVienDanVaCham(value: MOHINHVIENDANVACHAM.maDinhDanhVienDanVaChamSS130, caiDatUuTien: true);
+    onVoidCaiDatMaDinhDanhVienDanVaCham(value: MOHINHVIENDANVACHAM.maDinhDanhVienDanVaChamSS130, caiDatUuTien: true);
   }
 
   MOHINHVIENDANVACHAM.onSS132() {
-    onCaiDatMaDinhDanhVienDanVaCham(value: MOHINHVIENDANVACHAM.maDinhDanhVienDanVaChamSS132, caiDatUuTien: true);
+    onVoidCaiDatMaDinhDanhVienDanVaCham(value: MOHINHVIENDANVACHAM.maDinhDanhVienDanVaChamSS132, caiDatUuTien: true);
   }
 
   MOHINHVIENDANVACHAM.onSS134() {
-    onCaiDatMaDinhDanhVienDanVaCham(value: MOHINHVIENDANVACHAM.maDinhDanhVienDanVaChamSS134, caiDatUuTien: true);
+    onVoidCaiDatMaDinhDanhVienDanVaCham(value: MOHINHVIENDANVACHAM.maDinhDanhVienDanVaChamSS134, caiDatUuTien: true);
   }
 
   MOHINHVIENDANVACHAM.onSS136() {
-    onCaiDatMaDinhDanhVienDanVaCham(value: MOHINHVIENDANVACHAM.maDinhDanhVienDanVaChamSS136, caiDatUuTien: true);
+    onVoidCaiDatMaDinhDanhVienDanVaCham(value: MOHINHVIENDANVACHAM.maDinhDanhVienDanVaChamSS136, caiDatUuTien: true);
   }
 
   MOHINHVIENDANVACHAM.onSS138() {
-    onCaiDatMaDinhDanhVienDanVaCham(value: MOHINHVIENDANVACHAM.maDinhDanhVienDanVaChamSS138, caiDatUuTien: true);
+    onVoidCaiDatMaDinhDanhVienDanVaCham(value: MOHINHVIENDANVACHAM.maDinhDanhVienDanVaChamSS138, caiDatUuTien: true);
   }
 
   MOHINHVIENDANVACHAM.onSS140() {
-    onCaiDatMaDinhDanhVienDanVaCham(value: MOHINHVIENDANVACHAM.maDinhDanhVienDanVaChamSS140, caiDatUuTien: true);
+    onVoidCaiDatMaDinhDanhVienDanVaCham(value: MOHINHVIENDANVACHAM.maDinhDanhVienDanVaChamSS140, caiDatUuTien: true);
   }
 
   MOHINHVIENDANVACHAM.onSS142() {
-    onCaiDatMaDinhDanhVienDanVaCham(value: MOHINHVIENDANVACHAM.maDinhDanhVienDanVaChamSS142, caiDatUuTien: true);
+    onVoidCaiDatMaDinhDanhVienDanVaCham(value: MOHINHVIENDANVACHAM.maDinhDanhVienDanVaChamSS142, caiDatUuTien: true);
   }
 
   MOHINHVIENDANVACHAM.onSS144() {
-    onCaiDatMaDinhDanhVienDanVaCham(value: MOHINHVIENDANVACHAM.maDinhDanhVienDanVaChamSS144, caiDatUuTien: true);
+    onVoidCaiDatMaDinhDanhVienDanVaCham(value: MOHINHVIENDANVACHAM.maDinhDanhVienDanVaChamSS144, caiDatUuTien: true);
   }
 
   MOHINHVIENDANVACHAM.onSS146() {
-    onCaiDatMaDinhDanhVienDanVaCham(value: MOHINHVIENDANVACHAM.maDinhDanhVienDanVaChamSS146, caiDatUuTien: true);
+    onVoidCaiDatMaDinhDanhVienDanVaCham(value: MOHINHVIENDANVACHAM.maDinhDanhVienDanVaChamSS146, caiDatUuTien: true);
   }
 
   MOHINHVIENDANVACHAM.onSS148() {
-    onCaiDatMaDinhDanhVienDanVaCham(value: MOHINHVIENDANVACHAM.maDinhDanhVienDanVaChamSS148, caiDatUuTien: true);
+    onVoidCaiDatMaDinhDanhVienDanVaCham(value: MOHINHVIENDANVACHAM.maDinhDanhVienDanVaChamSS148, caiDatUuTien: true);
   }
 
   MOHINHVIENDANVACHAM.onSS150() {
-    onCaiDatMaDinhDanhVienDanVaCham(value: MOHINHVIENDANVACHAM.maDinhDanhVienDanVaChamSS150, caiDatUuTien: true);
+    onVoidCaiDatMaDinhDanhVienDanVaCham(value: MOHINHVIENDANVACHAM.maDinhDanhVienDanVaChamSS150, caiDatUuTien: true);
   }
 
   MOHINHVIENDANVACHAM.onSS152() {
-    onCaiDatMaDinhDanhVienDanVaCham(value: MOHINHVIENDANVACHAM.maDinhDanhVienDanVaChamSS152, caiDatUuTien: true);
+    onVoidCaiDatMaDinhDanhVienDanVaCham(value: MOHINHVIENDANVACHAM.maDinhDanhVienDanVaChamSS152, caiDatUuTien: true);
   }
 
   MOHINHVIENDANVACHAM.onSS154() {
-    onCaiDatMaDinhDanhVienDanVaCham(value: MOHINHVIENDANVACHAM.maDinhDanhVienDanVaChamSS154, caiDatUuTien: true);
+    onVoidCaiDatMaDinhDanhVienDanVaCham(value: MOHINHVIENDANVACHAM.maDinhDanhVienDanVaChamSS154, caiDatUuTien: true);
   }
 
   MOHINHVIENDANVACHAM.onSS156() {
-    onCaiDatMaDinhDanhVienDanVaCham(value: MOHINHVIENDANVACHAM.maDinhDanhVienDanVaChamSS156, caiDatUuTien: true);
+    onVoidCaiDatMaDinhDanhVienDanVaCham(value: MOHINHVIENDANVACHAM.maDinhDanhVienDanVaChamSS156, caiDatUuTien: true);
   }
 
   MOHINHVIENDANVACHAM.onSS158() {
-    onCaiDatMaDinhDanhVienDanVaCham(value: MOHINHVIENDANVACHAM.maDinhDanhVienDanVaChamSS158, caiDatUuTien: true);
+    onVoidCaiDatMaDinhDanhVienDanVaCham(value: MOHINHVIENDANVACHAM.maDinhDanhVienDanVaChamSS158, caiDatUuTien: true);
   }
 
   MOHINHVIENDANVACHAM.onSS160() {
-    onCaiDatMaDinhDanhVienDanVaCham(value: MOHINHVIENDANVACHAM.maDinhDanhVienDanVaChamSS160, caiDatUuTien: true);
+    onVoidCaiDatMaDinhDanhVienDanVaCham(value: MOHINHVIENDANVACHAM.maDinhDanhVienDanVaChamSS160, caiDatUuTien: true);
   }
 
   MOHINHVIENDANVACHAM.onSS162() {
-    onCaiDatMaDinhDanhVienDanVaCham(value: MOHINHVIENDANVACHAM.maDinhDanhVienDanVaChamSS162, caiDatUuTien: true);
+    onVoidCaiDatMaDinhDanhVienDanVaCham(value: MOHINHVIENDANVACHAM.maDinhDanhVienDanVaChamSS162, caiDatUuTien: true);
   }
 
   MOHINHVIENDANVACHAM.onSS164() {
-    onCaiDatMaDinhDanhVienDanVaCham(value: MOHINHVIENDANVACHAM.maDinhDanhVienDanVaChamSS164, caiDatUuTien: true);
+    onVoidCaiDatMaDinhDanhVienDanVaCham(value: MOHINHVIENDANVACHAM.maDinhDanhVienDanVaChamSS164, caiDatUuTien: true);
   }
 
   MOHINHVIENDANVACHAM.onSS166() {
-    onCaiDatMaDinhDanhVienDanVaCham(value: MOHINHVIENDANVACHAM.maDinhDanhVienDanVaChamSS166, caiDatUuTien: true);
+    onVoidCaiDatMaDinhDanhVienDanVaCham(value: MOHINHVIENDANVACHAM.maDinhDanhVienDanVaChamSS166, caiDatUuTien: true);
   }
 
   MOHINHVIENDANVACHAM.onSS168() {
-    onCaiDatMaDinhDanhVienDanVaCham(value: MOHINHVIENDANVACHAM.maDinhDanhVienDanVaChamSS168, caiDatUuTien: true);
+    onVoidCaiDatMaDinhDanhVienDanVaCham(value: MOHINHVIENDANVACHAM.maDinhDanhVienDanVaChamSS168, caiDatUuTien: true);
   }
 
   MOHINHVIENDANVACHAM.onSS170() {
-    onCaiDatMaDinhDanhVienDanVaCham(value: MOHINHVIENDANVACHAM.maDinhDanhVienDanVaChamSS170, caiDatUuTien: true);
+    onVoidCaiDatMaDinhDanhVienDanVaCham(value: MOHINHVIENDANVACHAM.maDinhDanhVienDanVaChamSS170, caiDatUuTien: true);
   }
 
   MOHINHVIENDANVACHAM.onSS172() {
-    onCaiDatMaDinhDanhVienDanVaCham(value: MOHINHVIENDANVACHAM.maDinhDanhVienDanVaChamSS172, caiDatUuTien: true);
+    onVoidCaiDatMaDinhDanhVienDanVaCham(value: MOHINHVIENDANVACHAM.maDinhDanhVienDanVaChamSS172, caiDatUuTien: true);
   }
 
   MOHINHVIENDANVACHAM.onSS174() {
-    onCaiDatMaDinhDanhVienDanVaCham(value: MOHINHVIENDANVACHAM.maDinhDanhVienDanVaChamSS174, caiDatUuTien: true);
+    onVoidCaiDatMaDinhDanhVienDanVaCham(value: MOHINHVIENDANVACHAM.maDinhDanhVienDanVaChamSS174, caiDatUuTien: true);
   }
 
   MOHINHVIENDANVACHAM.onSS176() {
-    onCaiDatMaDinhDanhVienDanVaCham(value: MOHINHVIENDANVACHAM.maDinhDanhVienDanVaChamSS176, caiDatUuTien: true);
+    onVoidCaiDatMaDinhDanhVienDanVaCham(value: MOHINHVIENDANVACHAM.maDinhDanhVienDanVaChamSS176, caiDatUuTien: true);
   }
 
   MOHINHVIENDANVACHAM.onSS178() {
-    onCaiDatMaDinhDanhVienDanVaCham(value: MOHINHVIENDANVACHAM.maDinhDanhVienDanVaChamSS178, caiDatUuTien: true);
+    onVoidCaiDatMaDinhDanhVienDanVaCham(value: MOHINHVIENDANVACHAM.maDinhDanhVienDanVaChamSS178, caiDatUuTien: true);
   }
 
   MOHINHVIENDANVACHAM.onSS180() {
-    onCaiDatMaDinhDanhVienDanVaCham(value: MOHINHVIENDANVACHAM.maDinhDanhVienDanVaChamSS180, caiDatUuTien: true);
+    onVoidCaiDatMaDinhDanhVienDanVaCham(value: MOHINHVIENDANVACHAM.maDinhDanhVienDanVaChamSS180, caiDatUuTien: true);
   }
 
   MOHINHVIENDANVACHAM.onSS182() {
-    onCaiDatMaDinhDanhVienDanVaCham(value: MOHINHVIENDANVACHAM.maDinhDanhVienDanVaChamSS182, caiDatUuTien: true);
+    onVoidCaiDatMaDinhDanhVienDanVaCham(value: MOHINHVIENDANVACHAM.maDinhDanhVienDanVaChamSS182, caiDatUuTien: true);
   }
 
   MOHINHVIENDANVACHAM.onSS184() {
-    onCaiDatMaDinhDanhVienDanVaCham(value: MOHINHVIENDANVACHAM.maDinhDanhVienDanVaChamSS184, caiDatUuTien: true);
+    onVoidCaiDatMaDinhDanhVienDanVaCham(value: MOHINHVIENDANVACHAM.maDinhDanhVienDanVaChamSS184, caiDatUuTien: true);
   }
 
   MOHINHVIENDANVACHAM.onSS186() {
-    onCaiDatMaDinhDanhVienDanVaCham(value: MOHINHVIENDANVACHAM.maDinhDanhVienDanVaChamSS186, caiDatUuTien: true);
+    onVoidCaiDatMaDinhDanhVienDanVaCham(value: MOHINHVIENDANVACHAM.maDinhDanhVienDanVaChamSS186, caiDatUuTien: true);
   }
 
   MOHINHVIENDANVACHAM.onSS188() {
-    onCaiDatMaDinhDanhVienDanVaCham(value: MOHINHVIENDANVACHAM.maDinhDanhVienDanVaChamSS188, caiDatUuTien: true);
+    onVoidCaiDatMaDinhDanhVienDanVaCham(value: MOHINHVIENDANVACHAM.maDinhDanhVienDanVaChamSS188, caiDatUuTien: true);
   }
 
   /// -----
@@ -439,7 +439,7 @@ class MOHINHVIENDANVACHAM with CauTrucThucThiCoBan {
   /// -----
   MOHINHVIENDANVACHAM({required String maDinhDanh, required String maDinhDanhVienDanVaCham}) {
     onCaiDatMaDinhDanh(value: maDinhDanh);
-    onCaiDatMaDinhDanhVienDanVaCham(value: maDinhDanhVienDanVaCham);
+    onVoidCaiDatMaDinhDanhVienDanVaCham(value: maDinhDanhVienDanVaCham);
   }
 
   /// -----
@@ -558,7 +558,7 @@ class MOHINHVIENDANVACHAM with CauTrucThucThiCoBan {
   /// -----
   String? _maDinhDanhVienDanVaCham;
   String? get getMaDinhDanhVienDanVaCham => _maDinhDanhVienDanVaCham;
-  Future<void> onCaiDatMaDinhDanhVienDanVaCham({required String? value, bool? caiDatUuTien}) async {
+  Future<void> onVoidCaiDatMaDinhDanhVienDanVaCham({required String? value, bool? caiDatUuTien}) async {
     if (caiDatUuTien == true) {
       _maDinhDanhVienDanVaCham = value;
     } else {
@@ -717,7 +717,7 @@ class MOHINHVIENDANVACHAM with CauTrucThucThiCoBan {
     '[CHIEU_CAO_THAN]': getVienDanVaCham?.getMoHinh?.getChieuCaoThan ?? 0,
     '[DX_TRONG_TAM]': getVienDanVaCham?.getMoHinh?.getDxTrongTam ?? 0,
     '[DY_TRONG_TAM]': getVienDanVaCham?.getMoHinh?.getDyTrongTam ?? 0,
-    '[TRANG_THAI_TON_TAI]': getVienDanVaCham?.getMoHinh?.getTrangThaiTonTai?.isKhoiTaoHoanTat() ?? false,
+    '[TRANG_THAI_TON_TAI]': getVienDanVaCham?.getMoHinh?.getTrangThaiTonTai?.onCheckBoolKhoiTaoHoanTat() ?? false,
     '[DU_LIEU_JSON_SU_KIEN_VA_CHAM]': getDuLieuJsonSuKienVaCham()
   };
 

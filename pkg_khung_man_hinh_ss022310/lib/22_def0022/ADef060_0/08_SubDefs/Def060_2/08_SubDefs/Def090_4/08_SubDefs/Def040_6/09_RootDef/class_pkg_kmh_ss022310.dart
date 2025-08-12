@@ -4,13 +4,12 @@ import 'package:pkg_khung_man_hinh_ss020000/pkg_khung_man_hinh_ss020000_exp.dart
 /// -----
 /// TODO: Chiến Đấu Cơ Đẳng Cấp Sao [0SS09_SS03]
 /// -----
-class KHUNGDCSCHIENDAUCODANGCAPSAO0SS09SS03
-    extends THANHPHANTICHHOPSPRITEANIMATIONTHUOCCAP {
+class KHUNGDCSCHIENDAUCODANGCAPSAO0SS09SS03 extends THANHPHANTICHHOPSPRITEANIMATIONTHUOCCAP {
   /// -----
   /// TODO:
   /// -----
   KHUNGDCSCHIENDAUCODANGCAPSAO0SS09SS03({
-    required super.globalState,
+    required super.globalStateManagementSystem,
     required super.sizeDx,
     required super.sizeDy, //
     required super.positionDx, //
@@ -19,10 +18,7 @@ class KHUNGDCSCHIENDAUCODANGCAPSAO0SS09SS03
 
   @override
   Future<void> onCaiDatChiTietThanhPhanGameUI() async {
-    await onCaiDatThanhPhanGameUI(
-      value: GAMEUIDANGCAPSAO0SS09(),
-      caiDatUuTien: true,
-    );
+    await onCaiDatThanhPhanGameUI(value: GAMEUIDANGCAPSAO0SS09(), caiDatUuTien: true);
 
     await getThanhPhanGameUI?.onSetupRoot();
 

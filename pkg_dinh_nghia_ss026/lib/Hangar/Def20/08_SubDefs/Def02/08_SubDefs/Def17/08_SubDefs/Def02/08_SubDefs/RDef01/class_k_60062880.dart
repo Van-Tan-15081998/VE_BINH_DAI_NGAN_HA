@@ -54,16 +54,11 @@ class DoiHinh1HLKhoiQQChieuNghichHanhLangBaySs1 extends MoHinhKichBanBayTheoDoiH
       MoHinhPhuongTienThuocKichBanChienDau phuongTienThuocKichBan = MoHinhPhuongTienThuocKichBanChienDau(
         maDinhDanh: maDinhDanh,
         phuongTien: phuongTien,
-        viTriXuatPhat:
-            HanhLangBayCoBan.dcs_3_1(
-              khoangCach: phuongTienCachViTriXuatPhat,
-              dinhHuongTaoKhoangCach: DinhHuongTaoKhoangCachCoBan.cachBienTren(),
-            ).getViTriXuatPhat,
+        viTriXuatPhat: HanhLangBayCoBan.dcs_3_1(khoangCach: phuongTienCachViTriXuatPhat, dinhHuongTaoKhoangCach: DinhHuongTaoKhoangCachCoBan.cachBienTren()).getViTriXuatPhat,
         danhSachDoanDuongBayThuocKichBan: [
           MoHinhDoanDuongBayThuocKichBanChienDau(
             maDinhDanhDiemToaDo: null,
-            diemToaDoCuongChe:
-                HanhLangBayCoBan.dcs_3_1(khoangCach: 0, dinhHuongTaoKhoangCach: DinhHuongTaoKhoangCachCoBan.cachBienGiua()).getViTriXuatPhat,
+            diemToaDoCuongChe: HanhLangBayCoBan.dcs_3_1(khoangCach: 0, dinhHuongTaoKhoangCach: DinhHuongTaoKhoangCachCoBan.cachBienGiua()).getViTriXuatPhat,
             maDinhDanhDiemToaDoCauNoiThuNhat: null,
             maDinhDanhDiemToaDoCauNoiThuHai: null,
             diemToaDoCauNoiCuongCheThuNhat: null,
@@ -78,8 +73,7 @@ class DoiHinh1HLKhoiQQChieuNghichHanhLangBaySs1 extends MoHinhKichBanBayTheoDoiH
           ),
           MoHinhDoanDuongBayThuocKichBanChienDau(
             maDinhDanhDiemToaDo: null,
-            diemToaDoCuongChe:
-                HanhLangBayCoBan.dcs_7_4(khoangCach: 0, dinhHuongTaoKhoangCach: DinhHuongTaoKhoangCachCoBan.cachBienGiua()).getViTriXuatPhat,
+            diemToaDoCuongChe: HanhLangBayCoBan.dcs_7_4(khoangCach: 0, dinhHuongTaoKhoangCach: DinhHuongTaoKhoangCachCoBan.cachBienGiua()).getViTriXuatPhat,
             maDinhDanhDiemToaDoCauNoiThuNhat: null,
             maDinhDanhDiemToaDoCauNoiThuHai: null,
             diemToaDoCauNoiCuongCheThuNhat: null,
@@ -94,8 +88,7 @@ class DoiHinh1HLKhoiQQChieuNghichHanhLangBaySs1 extends MoHinhKichBanBayTheoDoiH
           ),
           MoHinhDoanDuongBayThuocKichBanChienDau(
             maDinhDanhDiemToaDo: null,
-            diemToaDoCuongChe:
-                HanhLangBayCoBan.dcs_7_5(khoangCach: 0, dinhHuongTaoKhoangCach: DinhHuongTaoKhoangCachCoBan.cachBienGiua()).getViTriXuatPhat,
+            diemToaDoCuongChe: HanhLangBayCoBan.dcs_7_5(khoangCach: 0, dinhHuongTaoKhoangCach: DinhHuongTaoKhoangCachCoBan.cachBienGiua()).getViTriXuatPhat,
             maDinhDanhDiemToaDoCauNoiThuNhat: null,
             maDinhDanhDiemToaDoCauNoiThuHai: null,
             diemToaDoCauNoiCuongCheThuNhat: null,
@@ -105,55 +98,12 @@ class DoiHinh1HLKhoiQQChieuNghichHanhLangBaySs1 extends MoHinhKichBanBayTheoDoiH
             offsetDx: null,
             offsetDy: null,
             tocDoBay: tocDoBayPhuongTien,
-            tocDoBayCuongChe: TocDoCuongCheCoBan(
-              tocDoCuongChe: null,
-              heSoTangGiamTocDo: HeSoTangGiamTocDoCoBan.giamToc(capDo: 1),
-              tocDoToiThieu: TocDoBayCoBan(tocDo: 1.000),
-              tocDoToiDa: null,
-            ),
+            tocDoBayCuongChe: TocDoCuongCheCoBan(tocDoCuongChe: null, heSoTangGiamTocDo: HeSoTangGiamTocDoCoBan.giamToc(capDo: 1), tocDoToiThieu: TocDoBayCoBan(tocDo: 1.000), tocDoToiDa: null),
             dinhHuongLayMucTieuCuongChe: DinhHuongLayMucTieuCoBan.onMacDinh(),
           ),
           MoHinhDoanDuongBayThuocKichBanChienDau(
             maDinhDanhDiemToaDo: null,
-            diemToaDoCuongChe:
-                HanhLangBayCoBan.dcs_3_8(khoangCach: 0, dinhHuongTaoKhoangCach: DinhHuongTaoKhoangCachCoBan.cachBienGiua()).getViTriXuatPhat,
-            maDinhDanhDiemToaDoCauNoiThuNhat: null,
-            maDinhDanhDiemToaDoCauNoiThuHai: null,
-            diemToaDoCauNoiCuongCheThuNhat: null,
-            diemToaDoCauNoiCuongCheThuHai: null,
-            chieuXoay: null,
-            doanDuongTron: null,
-            offsetDx: null,
-            offsetDy: null,
-            tocDoBay: tocDoBayPhuongTien,
-            tocDoBayCuongChe: _tocDoCuongCheHanhTrinhCaoNhat ?? TocDoCuongCheCoBan.onTangTocCoBan(),
-            dinhHuongLayMucTieuCuongChe: DinhHuongLayMucTieuCoBan.onMacDinh(),
-          ),
-          MoHinhDoanDuongBayThuocKichBanChienDau(
-            maDinhDanhDiemToaDo: null,
-            diemToaDoCuongChe:
-                HanhLangBayCoBan.dcs_3_9(khoangCach: 0, dinhHuongTaoKhoangCach: DinhHuongTaoKhoangCachCoBan.cachBienGiua()).getViTriXuatPhat,
-            maDinhDanhDiemToaDoCauNoiThuNhat: null,
-            maDinhDanhDiemToaDoCauNoiThuHai: null,
-            diemToaDoCauNoiCuongCheThuNhat: null,
-            diemToaDoCauNoiCuongCheThuHai: null,
-            chieuXoay: null,
-            doanDuongTron: null,
-            offsetDx: null,
-            offsetDy: null,
-            tocDoBay: tocDoBayPhuongTien,
-            tocDoBayCuongChe: TocDoCuongCheCoBan(
-              tocDoCuongChe: null,
-              heSoTangGiamTocDo: HeSoTangGiamTocDoCoBan.giamToc(capDo: 1),
-              tocDoToiThieu: TocDoBayCoBan(tocDo: 1.000),
-              tocDoToiDa: null,
-            ),
-            dinhHuongLayMucTieuCuongChe: DinhHuongLayMucTieuCoBan.onMacDinh(),
-          ),
-          MoHinhDoanDuongBayThuocKichBanChienDau(
-            maDinhDanhDiemToaDo: null,
-            diemToaDoCuongChe:
-                HanhLangBayCoBan.dcs_7_12(khoangCach: 0, dinhHuongTaoKhoangCach: DinhHuongTaoKhoangCachCoBan.cachBienGiua()).getViTriXuatPhat,
+            diemToaDoCuongChe: HanhLangBayCoBan.dcs_3_8(khoangCach: 0, dinhHuongTaoKhoangCach: DinhHuongTaoKhoangCachCoBan.cachBienGiua()).getViTriXuatPhat,
             maDinhDanhDiemToaDoCauNoiThuNhat: null,
             maDinhDanhDiemToaDoCauNoiThuHai: null,
             diemToaDoCauNoiCuongCheThuNhat: null,
@@ -168,8 +118,7 @@ class DoiHinh1HLKhoiQQChieuNghichHanhLangBaySs1 extends MoHinhKichBanBayTheoDoiH
           ),
           MoHinhDoanDuongBayThuocKichBanChienDau(
             maDinhDanhDiemToaDo: null,
-            diemToaDoCuongChe:
-                HanhLangBayCoBan.dcs_7_13(khoangCach: 0, dinhHuongTaoKhoangCach: DinhHuongTaoKhoangCachCoBan.cachBienGiua()).getViTriXuatPhat,
+            diemToaDoCuongChe: HanhLangBayCoBan.dcs_3_9(khoangCach: 0, dinhHuongTaoKhoangCach: DinhHuongTaoKhoangCachCoBan.cachBienGiua()).getViTriXuatPhat,
             maDinhDanhDiemToaDoCauNoiThuNhat: null,
             maDinhDanhDiemToaDoCauNoiThuHai: null,
             diemToaDoCauNoiCuongCheThuNhat: null,
@@ -179,18 +128,12 @@ class DoiHinh1HLKhoiQQChieuNghichHanhLangBaySs1 extends MoHinhKichBanBayTheoDoiH
             offsetDx: null,
             offsetDy: null,
             tocDoBay: tocDoBayPhuongTien,
-            tocDoBayCuongChe: TocDoCuongCheCoBan(
-              tocDoCuongChe: null,
-              heSoTangGiamTocDo: HeSoTangGiamTocDoCoBan.giamToc(capDo: 1),
-              tocDoToiThieu: TocDoBayCoBan(tocDo: 1.000),
-              tocDoToiDa: null,
-            ),
+            tocDoBayCuongChe: TocDoCuongCheCoBan(tocDoCuongChe: null, heSoTangGiamTocDo: HeSoTangGiamTocDoCoBan.giamToc(capDo: 1), tocDoToiThieu: TocDoBayCoBan(tocDo: 1.000), tocDoToiDa: null),
             dinhHuongLayMucTieuCuongChe: DinhHuongLayMucTieuCoBan.onMacDinh(),
           ),
           MoHinhDoanDuongBayThuocKichBanChienDau(
             maDinhDanhDiemToaDo: null,
-            diemToaDoCuongChe:
-                HanhLangBayCoBan.dcs_3_16(khoangCach: 0, dinhHuongTaoKhoangCach: DinhHuongTaoKhoangCachCoBan.cachBienGiua()).getViTriXuatPhat,
+            diemToaDoCuongChe: HanhLangBayCoBan.dcs_7_12(khoangCach: 0, dinhHuongTaoKhoangCach: DinhHuongTaoKhoangCachCoBan.cachBienGiua()).getViTriXuatPhat,
             maDinhDanhDiemToaDoCauNoiThuNhat: null,
             maDinhDanhDiemToaDoCauNoiThuHai: null,
             diemToaDoCauNoiCuongCheThuNhat: null,
@@ -205,8 +148,37 @@ class DoiHinh1HLKhoiQQChieuNghichHanhLangBaySs1 extends MoHinhKichBanBayTheoDoiH
           ),
           MoHinhDoanDuongBayThuocKichBanChienDau(
             maDinhDanhDiemToaDo: null,
-            diemToaDoCuongChe:
-                HanhLangBayCoBan.dcs_3_20(khoangCach: 0, dinhHuongTaoKhoangCach: DinhHuongTaoKhoangCachCoBan.cachBienGiua()).getViTriXuatPhat,
+            diemToaDoCuongChe: HanhLangBayCoBan.dcs_7_13(khoangCach: 0, dinhHuongTaoKhoangCach: DinhHuongTaoKhoangCachCoBan.cachBienGiua()).getViTriXuatPhat,
+            maDinhDanhDiemToaDoCauNoiThuNhat: null,
+            maDinhDanhDiemToaDoCauNoiThuHai: null,
+            diemToaDoCauNoiCuongCheThuNhat: null,
+            diemToaDoCauNoiCuongCheThuHai: null,
+            chieuXoay: null,
+            doanDuongTron: null,
+            offsetDx: null,
+            offsetDy: null,
+            tocDoBay: tocDoBayPhuongTien,
+            tocDoBayCuongChe: TocDoCuongCheCoBan(tocDoCuongChe: null, heSoTangGiamTocDo: HeSoTangGiamTocDoCoBan.giamToc(capDo: 1), tocDoToiThieu: TocDoBayCoBan(tocDo: 1.000), tocDoToiDa: null),
+            dinhHuongLayMucTieuCuongChe: DinhHuongLayMucTieuCoBan.onMacDinh(),
+          ),
+          MoHinhDoanDuongBayThuocKichBanChienDau(
+            maDinhDanhDiemToaDo: null,
+            diemToaDoCuongChe: HanhLangBayCoBan.dcs_3_16(khoangCach: 0, dinhHuongTaoKhoangCach: DinhHuongTaoKhoangCachCoBan.cachBienGiua()).getViTriXuatPhat,
+            maDinhDanhDiemToaDoCauNoiThuNhat: null,
+            maDinhDanhDiemToaDoCauNoiThuHai: null,
+            diemToaDoCauNoiCuongCheThuNhat: null,
+            diemToaDoCauNoiCuongCheThuHai: null,
+            chieuXoay: null,
+            doanDuongTron: null,
+            offsetDx: null,
+            offsetDy: null,
+            tocDoBay: tocDoBayPhuongTien,
+            tocDoBayCuongChe: _tocDoCuongCheHanhTrinhCaoNhat ?? TocDoCuongCheCoBan.onTangTocCoBan(),
+            dinhHuongLayMucTieuCuongChe: DinhHuongLayMucTieuCoBan.onMacDinh(),
+          ),
+          MoHinhDoanDuongBayThuocKichBanChienDau(
+            maDinhDanhDiemToaDo: null,
+            diemToaDoCuongChe: HanhLangBayCoBan.dcs_3_20(khoangCach: 0, dinhHuongTaoKhoangCach: DinhHuongTaoKhoangCachCoBan.cachBienGiua()).getViTriXuatPhat,
             maDinhDanhDiemToaDoCauNoiThuNhat: null,
             maDinhDanhDiemToaDoCauNoiThuHai: null,
             diemToaDoCauNoiCuongCheThuNhat: null,

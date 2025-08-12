@@ -10,7 +10,7 @@ class QuanLyTrangThaiTienTrinhTongQuat with KhungThucThiCoBan {
   /// -----
   @override
   Future<void> onAttachRoot({required dynamic attachValue}) async {
-    if (attachValue is QuanLyTrangThaiTongQuat) {
+    if (attachValue is GlobalStateManagementSystem) {
       ///
     }
 
@@ -156,6 +156,21 @@ class QuanLyTrangThaiTienTrinhTongQuat with KhungThucThiCoBan {
       _tienTrinhThucThiChienDauGanKetChienDauCo;
   Future<void> caiDatTienTrinhThucThiChienDauGanKetChienDauCo({required QuanLyTrangThaiTienTrinhThucThiChienDauGanKetChienDauCo? value}) async {
     _tienTrinhThucThiChienDauGanKetChienDauCo ??= value;
+    return;
+  }
+
+  bool? _trangThaiHoatDongTaiManHinhChinh;
+  bool? get getTrangThaiHoatDongTaiManHinhChinh => _trangThaiHoatDongTaiManHinhChinh;
+  Future<void> onCaiDatTrangThaiHoatDongTaiManHinhChinh({required bool? value, bool? caiDatUuTien, Future<void> Function()? onThucThiHoanTat}) async {
+    if (caiDatUuTien == true) {
+      _trangThaiHoatDongTaiManHinhChinh = value;
+    } else {
+      _trangThaiHoatDongTaiManHinhChinh ??= value;
+    }
+
+    await onThucThiHoanTat?.call();
+
+    ///
     return;
   }
 }

@@ -6,6 +6,8 @@ import 'package:pkg_dinh_nghia_ss022/pkg_dinh_nghia_ss022_exp.dart';
 import 'package:pkg_dinh_nghia_ss032/pkg_dinh_nghia_ss032_exp.dart';
 import 'package:pkg_dinh_nghia_ss050/pkg_dinh_nghia_ss050_exp.dart';
 
+import 'package:google_fonts/google_fonts.dart';
+
 ///
 /// TODO:
 ///
@@ -13,7 +15,7 @@ abstract class SpriteHatSatThuongVaChamCoBan extends TextComponent with HasVisib
   /// -----
   /// TODO:
   /// -----
-  SpriteHatSatThuongVaChamCoBan({required QuanLyTrangThaiTongQuat? trangThaiTongQuat}) {
+  SpriteHatSatThuongVaChamCoBan({required GlobalStateManagementSystem? trangThaiTongQuat}) {
     caiDatTrangThaiTongQuat(value: trangThaiTongQuat);
   }
 
@@ -40,9 +42,9 @@ abstract class SpriteHatSatThuongVaChamCoBan extends TextComponent with HasVisib
   /// -----
   /// TODO: Quản Lý Trạng Thái Tổng Quát
   /// -----
-  QuanLyTrangThaiTongQuat? _trangThaiTongQuat;
-  QuanLyTrangThaiTongQuat? get getTrangThaiTongQuat => _trangThaiTongQuat;
-  Future<void> caiDatTrangThaiTongQuat({required QuanLyTrangThaiTongQuat? value}) async {
+  GlobalStateManagementSystem? _trangThaiTongQuat;
+  GlobalStateManagementSystem? get getTrangThaiTongQuat => _trangThaiTongQuat;
+  Future<void> caiDatTrangThaiTongQuat({required GlobalStateManagementSystem? value}) async {
     _trangThaiTongQuat ??= value;
     return;
   }
@@ -71,6 +73,7 @@ abstract class SpriteHatSatThuongVaChamCoBan extends TextComponent with HasVisib
   /// TODO: Kiểm Tra Tần Xuất Cập Nhật
   /// -----
   int _bienTangTienGiamTanXuatCapNhat = 0;
+  int get getBienTangTienGiamTanXuatCapNhat => _bienTangTienGiamTanXuatCapNhat = 0;
   final int _boiSoCapDoGiamTanXuatCapNhat = 2;
   void onVoidCaiDatTuDongBienTangTienGiamTanXuatCapNhat() {
     if (_bienTangTienGiamTanXuatCapNhat < 1000000) {
@@ -82,9 +85,18 @@ abstract class SpriteHatSatThuongVaChamCoBan extends TextComponent with HasVisib
   }
 
   bool onVoidKiemTraTanXuatCapNhat() {
-    if (_bienTangTienGiamTanXuatCapNhat % _boiSoCapDoGiamTanXuatCapNhat == 0) {
+    // if (_bienTangTienGiamTanXuatCapNhat % _boiSoCapDoGiamTanXuatCapNhat == 0) {
+    //   return true;
+    // }
+    // return false;
+    if (getTrangThaiTongQuat?.getThietLapTongQuat?.onKiemTraChoPhepCapNhatTheoTocDoKhungHinh(
+      maDinhDanh: '[SPRITE_ANIMATION_CO_BAN]',
+      chiSoTangTienGiamTanXuatCapNhat: getBienTangTienGiamTanXuatCapNhat,
+    ) ==
+        true) {
       return true;
     }
+
     return false;
   }
 
@@ -105,29 +117,37 @@ abstract class SpriteHatSatThuongVaChamCoBan extends TextComponent with HasVisib
     return;
   }
 
+  double fontSizeNguyenBan = 30;
+  double fontSizeCapNhat = 30;
   int _bienTangTien = 0;
   /// -----
   /// TODO:
   /// -----
   void onVoidCapNhatKiemTraHienThi() {
-    if (getMoHinh?.getMoHinh?.getThuocTinhTichHop?.getTrangThaiTonTai?.isKhoiTaoHoanTat() == true) {
+    if (getMoHinh?.getMoHinh?.getThuocTinhTichHop?.getTrangThaiTonTai?.onCheckBoolKhoiTaoHoanTat() == true) {
       if (getKiemTraHienThi == false) {
         onVoidCaiDatKiemTraHienThi(value: true);
+        fontSizeCapNhat = fontSizeNguyenBan;
+
+        if (text != getMoHinh?.getMoHinh?.getThuocTinhTichHop?.getSatThuong?.toString()) {
+          text = '${getMoHinh?.getMoHinh?.getThuocTinhTichHop?.getSatThuong?.floor().toString()}';
+        }
+
+        // textRenderer = TextPaint(style: GoogleFonts.sairaSemiCondensed(
+        //   textStyle: TextStyle(fontSize: fontSizeNguyenBan, fontWeight: FontWeight.bold, color: Color(0xFFCCF2FF)),
+        // ));
+
+        textRenderer = TextPaint(style: TextStyle(fontSize: fontSizeNguyenBan, fontWeight: FontWeight.bold, color: Color(0xFFCCF2FF)));
       }
       /// -----
       /// TODO: Cài Đặt
       /// -----
       _bienTangTien++;
-      if (_bienTangTien == 10) {
+      if (_bienTangTien >= 20) {
         _bienTangTien = 0;
         getMoHinh?.getMoHinh?.getThuocTinhTichHop?.getTrangThaiTonTai?.caiDatHuyHoanTat();
       }
 
-      if (text != getMoHinh?.getMoHinh?.getThuocTinhTichHop?.getSatThuong?.toString()) {
-        text = '💥${getMoHinh?.getMoHinh?.getThuocTinhTichHop?.getSatThuong?.floor().toString()}' ?? '0';
-      }
-
-      textRenderer = TextPaint(style: TextStyle(fontSize: 18, color: Colors.white));
     } else {
       if (getKiemTraHienThi == true) {
         onVoidCaiDatKiemTraHienThi(value: false);
@@ -180,25 +200,44 @@ abstract class SpriteHatSatThuongVaChamCoBan extends TextComponent with HasVisib
   /// -----
   /// TODO: Cập Nhật Position Và Size
   /// -----
+  bool capNhatDuyNhatHoanTat = false;
   void onVoidCapNhatPositionSizeValues() {
     if (getKiemTraHienThi == true) {
-      ///
-      /// TODO:
-      ///
-      double dy = getMoHinh?.getMoHinh?.getThuocTinhTichHop?.getDy ?? 1.0;
-      double dx = getMoHinh?.getMoHinh?.getThuocTinhTichHop?.getDx ?? 1.0;
-      double chieuCaoThan = getMoHinh?.getMoHinh?.getThuocTinhTichHop?.getChieuCaoThan ?? 1.0;
-      double chieuRongThan = getMoHinh?.getMoHinh?.getThuocTinhTichHop?.getChieuRongThan ?? 1.0;
 
-      ///
-      /// TODO:
-      ///
-      if (position.x != dx || position.y != dy) {
-        position.setValues(dx, dy);
+      if (capNhatDuyNhatHoanTat == false) {
+        ///
+        /// TODO:
+        ///
+        double dy = getMoHinh?.getMoHinh?.getThuocTinhTichHop?.getDyTrongTam ?? 1.0;
+        double dx = getMoHinh?.getMoHinh?.getThuocTinhTichHop?.getDxTrongTam ?? 1.0;
+        double chieuCaoThan = getMoHinh?.getMoHinh?.getThuocTinhTichHop?.getChieuCaoThan ?? 1.0;
+        double chieuRongThan = getMoHinh?.getMoHinh?.getThuocTinhTichHop?.getChieuRongThan ?? 1.0;
+
+        ///
+        /// TODO:
+        ///
+        if (position.x != dx || position.y != dy) {
+          position.setValues(dx, dy);
+        }
+        if (size.x != chieuRongThan || size.y != chieuCaoThan) {
+          size.setValues(chieuRongThan, chieuCaoThan);
+        }
       }
-      if (size.x != chieuRongThan || size.y != chieuCaoThan) {
-        size.setValues(chieuRongThan, chieuCaoThan);
+
+      // if (size.x > 1 && size.y > 1) {
+      //   size.setValues(size.x - 1, size.y - 1);
+      // }
+
+      if (fontSizeCapNhat > 1.0) {
+        fontSizeCapNhat = fontSizeCapNhat - 0.8;
+        // textRenderer = TextPaint(style: GoogleFonts.sairaSemiCondensed(
+        //   textStyle: TextStyle(fontSize: fontSizeCapNhat, fontWeight: FontWeight.bold, color: Color(0xFFCCF2FF)),
+        // ));
+        textRenderer = TextPaint(style: TextStyle(fontSize: fontSizeCapNhat, fontWeight: FontWeight.bold, color: Color(0xFFCCF2FF)));
       }
+
+    } else {
+      capNhatDuyNhatHoanTat = false;
     }
   }
 

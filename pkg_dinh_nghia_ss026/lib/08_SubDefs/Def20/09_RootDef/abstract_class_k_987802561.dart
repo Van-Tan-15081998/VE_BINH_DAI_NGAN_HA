@@ -73,334 +73,94 @@ abstract class MoHinhKichBanChienDauTongQuat {
     /// TODO: Danh sách phương Tiện theo giai đoạn
     ///
     await caiDatDanhSachPhuongTienGiaiDoanSS1(
-      value: MoHinhDanhSachPhuongTienThuocGiaiDoanKichBanChienDau(
-        maDinhDanh: '[GIAI_DOAN_SS01]',
-        nhomSS01: [],
-        nhomSS02: [],
-        nhomSS03: [],
-        nhomSS04: [],
-        nhomSS05: [],
-        nhomSS06: [],
-      ),
+      value: MoHinhDanhSachPhuongTienThuocGiaiDoanKichBanChienDau(maDinhDanh: '[GIAI_DOAN_SS01]', nhomSS01: [], nhomSS02: [], nhomSS03: [], nhomSS04: [], nhomSS05: [], nhomSS06: []),
     );
     await caiDatDanhSachPhuongTienGiaiDoanSS2(
-      value: MoHinhDanhSachPhuongTienThuocGiaiDoanKichBanChienDau(
-        maDinhDanh: '[GIAI_DOAN_SS02]',
-        nhomSS01: [],
-        nhomSS02: [],
-        nhomSS03: [],
-        nhomSS04: [],
-        nhomSS05: [],
-        nhomSS06: [],
-      ),
+      value: MoHinhDanhSachPhuongTienThuocGiaiDoanKichBanChienDau(maDinhDanh: '[GIAI_DOAN_SS02]', nhomSS01: [], nhomSS02: [], nhomSS03: [], nhomSS04: [], nhomSS05: [], nhomSS06: []),
     );
     await caiDatDanhSachPhuongTienGiaiDoanSS3(
-      value: MoHinhDanhSachPhuongTienThuocGiaiDoanKichBanChienDau(
-        maDinhDanh: '[GIAI_DOAN_SS03]',
-        nhomSS01: [],
-        nhomSS02: [],
-        nhomSS03: [],
-        nhomSS04: [],
-        nhomSS05: [],
-        nhomSS06: [],
-      ),
+      value: MoHinhDanhSachPhuongTienThuocGiaiDoanKichBanChienDau(maDinhDanh: '[GIAI_DOAN_SS03]', nhomSS01: [], nhomSS02: [], nhomSS03: [], nhomSS04: [], nhomSS05: [], nhomSS06: []),
     );
     await caiDatDanhSachPhuongTienGiaiDoanSS4(
-      value: MoHinhDanhSachPhuongTienThuocGiaiDoanKichBanChienDau(
-        maDinhDanh: '[GIAI_DOAN_SS04]',
-        nhomSS01: [],
-        nhomSS02: [],
-        nhomSS03: [],
-        nhomSS04: [],
-        nhomSS05: [],
-        nhomSS06: [],
-      ),
+      value: MoHinhDanhSachPhuongTienThuocGiaiDoanKichBanChienDau(maDinhDanh: '[GIAI_DOAN_SS04]', nhomSS01: [], nhomSS02: [], nhomSS03: [], nhomSS04: [], nhomSS05: [], nhomSS06: []),
     );
     await caiDatDanhSachPhuongTienGiaiDoanSS5(
-      value: MoHinhDanhSachPhuongTienThuocGiaiDoanKichBanChienDau(
-        maDinhDanh: '[GIAI_DOAN_SS05]',
-        nhomSS01: [],
-        nhomSS02: [],
-        nhomSS03: [],
-        nhomSS04: [],
-        nhomSS05: [],
-        nhomSS06: [],
-      ),
+      value: MoHinhDanhSachPhuongTienThuocGiaiDoanKichBanChienDau(maDinhDanh: '[GIAI_DOAN_SS05]', nhomSS01: [], nhomSS02: [], nhomSS03: [], nhomSS04: [], nhomSS05: [], nhomSS06: []),
     );
     await caiDatDanhSachPhuongTienGiaiDoanSS6(
-      value: MoHinhDanhSachPhuongTienThuocGiaiDoanKichBanChienDau(
-        maDinhDanh: '[GIAI_DOAN_SS06]',
-        nhomSS01: [],
-        nhomSS02: [],
-        nhomSS03: [],
-        nhomSS04: [],
-        nhomSS05: [],
-        nhomSS06: [],
-      ),
+      value: MoHinhDanhSachPhuongTienThuocGiaiDoanKichBanChienDau(maDinhDanh: '[GIAI_DOAN_SS06]', nhomSS01: [], nhomSS02: [], nhomSS03: [], nhomSS04: [], nhomSS05: [], nhomSS06: []),
     );
     await caiDatDanhSachPhuongTienGiaiDoanSS7(
-      value: MoHinhDanhSachPhuongTienThuocGiaiDoanKichBanChienDau(
-        maDinhDanh: '[GIAI_DOAN_SS07]',
-        nhomSS01: [],
-        nhomSS02: [],
-        nhomSS03: [],
-        nhomSS04: [],
-        nhomSS05: [],
-        nhomSS06: [],
-      ),
+      value: MoHinhDanhSachPhuongTienThuocGiaiDoanKichBanChienDau(maDinhDanh: '[GIAI_DOAN_SS07]', nhomSS01: [], nhomSS02: [], nhomSS03: [], nhomSS04: [], nhomSS05: [], nhomSS06: []),
     );
     await caiDatDanhSachPhuongTienGiaiDoanSS8(
-      value: MoHinhDanhSachPhuongTienThuocGiaiDoanKichBanChienDau(
-        maDinhDanh: '[GIAI_DOAN_SS08]',
-        nhomSS01: [],
-        nhomSS02: [],
-        nhomSS03: [],
-        nhomSS04: [],
-        nhomSS05: [],
-        nhomSS06: [],
-      ),
+      value: MoHinhDanhSachPhuongTienThuocGiaiDoanKichBanChienDau(maDinhDanh: '[GIAI_DOAN_SS08]', nhomSS01: [], nhomSS02: [], nhomSS03: [], nhomSS04: [], nhomSS05: [], nhomSS06: []),
     );
     await caiDatDanhSachPhuongTienGiaiDoanSS9(
-      value: MoHinhDanhSachPhuongTienThuocGiaiDoanKichBanChienDau(
-        maDinhDanh: '[GIAI_DOAN_SS09]',
-        nhomSS01: [],
-        nhomSS02: [],
-        nhomSS03: [],
-        nhomSS04: [],
-        nhomSS05: [],
-        nhomSS06: [],
-      ),
+      value: MoHinhDanhSachPhuongTienThuocGiaiDoanKichBanChienDau(maDinhDanh: '[GIAI_DOAN_SS09]', nhomSS01: [], nhomSS02: [], nhomSS03: [], nhomSS04: [], nhomSS05: [], nhomSS06: []),
     );
     await caiDatDanhSachPhuongTienGiaiDoanSS10(
-      value: MoHinhDanhSachPhuongTienThuocGiaiDoanKichBanChienDau(
-        maDinhDanh: '[GIAI_DOAN_SS10]',
-        nhomSS01: [],
-        nhomSS02: [],
-        nhomSS03: [],
-        nhomSS04: [],
-        nhomSS05: [],
-        nhomSS06: [],
-      ),
+      value: MoHinhDanhSachPhuongTienThuocGiaiDoanKichBanChienDau(maDinhDanh: '[GIAI_DOAN_SS10]', nhomSS01: [], nhomSS02: [], nhomSS03: [], nhomSS04: [], nhomSS05: [], nhomSS06: []),
     );
     await caiDatDanhSachPhuongTienGiaiDoanSS11(
-      value: MoHinhDanhSachPhuongTienThuocGiaiDoanKichBanChienDau(
-        maDinhDanh: '[GIAI_DOAN_SS11]',
-        nhomSS01: [],
-        nhomSS02: [],
-        nhomSS03: [],
-        nhomSS04: [],
-        nhomSS05: [],
-        nhomSS06: [],
-      ),
+      value: MoHinhDanhSachPhuongTienThuocGiaiDoanKichBanChienDau(maDinhDanh: '[GIAI_DOAN_SS11]', nhomSS01: [], nhomSS02: [], nhomSS03: [], nhomSS04: [], nhomSS05: [], nhomSS06: []),
     );
     await caiDatDanhSachPhuongTienGiaiDoanSS12(
-      value: MoHinhDanhSachPhuongTienThuocGiaiDoanKichBanChienDau(
-        maDinhDanh: '[GIAI_DOAN_SS12]',
-        nhomSS01: [],
-        nhomSS02: [],
-        nhomSS03: [],
-        nhomSS04: [],
-        nhomSS05: [],
-        nhomSS06: [],
-      ),
+      value: MoHinhDanhSachPhuongTienThuocGiaiDoanKichBanChienDau(maDinhDanh: '[GIAI_DOAN_SS12]', nhomSS01: [], nhomSS02: [], nhomSS03: [], nhomSS04: [], nhomSS05: [], nhomSS06: []),
     );
     await caiDatDanhSachPhuongTienGiaiDoanSS13(
-      value: MoHinhDanhSachPhuongTienThuocGiaiDoanKichBanChienDau(
-        maDinhDanh: '[GIAI_DOAN_SS13]',
-        nhomSS01: [],
-        nhomSS02: [],
-        nhomSS03: [],
-        nhomSS04: [],
-        nhomSS05: [],
-        nhomSS06: [],
-      ),
+      value: MoHinhDanhSachPhuongTienThuocGiaiDoanKichBanChienDau(maDinhDanh: '[GIAI_DOAN_SS13]', nhomSS01: [], nhomSS02: [], nhomSS03: [], nhomSS04: [], nhomSS05: [], nhomSS06: []),
     );
     await caiDatDanhSachPhuongTienGiaiDoanSS14(
-      value: MoHinhDanhSachPhuongTienThuocGiaiDoanKichBanChienDau(
-        maDinhDanh: '[GIAI_DOAN_SS14]',
-        nhomSS01: [],
-        nhomSS02: [],
-        nhomSS03: [],
-        nhomSS04: [],
-        nhomSS05: [],
-        nhomSS06: [],
-      ),
+      value: MoHinhDanhSachPhuongTienThuocGiaiDoanKichBanChienDau(maDinhDanh: '[GIAI_DOAN_SS14]', nhomSS01: [], nhomSS02: [], nhomSS03: [], nhomSS04: [], nhomSS05: [], nhomSS06: []),
     );
     await caiDatDanhSachPhuongTienGiaiDoanSS15(
-      value: MoHinhDanhSachPhuongTienThuocGiaiDoanKichBanChienDau(
-        maDinhDanh: '[GIAI_DOAN_SS15]',
-        nhomSS01: [],
-        nhomSS02: [],
-        nhomSS03: [],
-        nhomSS04: [],
-        nhomSS05: [],
-        nhomSS06: [],
-      ),
+      value: MoHinhDanhSachPhuongTienThuocGiaiDoanKichBanChienDau(maDinhDanh: '[GIAI_DOAN_SS15]', nhomSS01: [], nhomSS02: [], nhomSS03: [], nhomSS04: [], nhomSS05: [], nhomSS06: []),
     );
     await caiDatDanhSachPhuongTienGiaiDoanSS16(
-      value: MoHinhDanhSachPhuongTienThuocGiaiDoanKichBanChienDau(
-        maDinhDanh: '[GIAI_DOAN_SS16]',
-        nhomSS01: [],
-        nhomSS02: [],
-        nhomSS03: [],
-        nhomSS04: [],
-        nhomSS05: [],
-        nhomSS06: [],
-      ),
+      value: MoHinhDanhSachPhuongTienThuocGiaiDoanKichBanChienDau(maDinhDanh: '[GIAI_DOAN_SS16]', nhomSS01: [], nhomSS02: [], nhomSS03: [], nhomSS04: [], nhomSS05: [], nhomSS06: []),
     );
     await caiDatDanhSachPhuongTienGiaiDoanSS17(
-      value: MoHinhDanhSachPhuongTienThuocGiaiDoanKichBanChienDau(
-        maDinhDanh: '[GIAI_DOAN_SS17]',
-        nhomSS01: [],
-        nhomSS02: [],
-        nhomSS03: [],
-        nhomSS04: [],
-        nhomSS05: [],
-        nhomSS06: [],
-      ),
+      value: MoHinhDanhSachPhuongTienThuocGiaiDoanKichBanChienDau(maDinhDanh: '[GIAI_DOAN_SS17]', nhomSS01: [], nhomSS02: [], nhomSS03: [], nhomSS04: [], nhomSS05: [], nhomSS06: []),
     );
     await caiDatDanhSachPhuongTienGiaiDoanSS18(
-      value: MoHinhDanhSachPhuongTienThuocGiaiDoanKichBanChienDau(
-        maDinhDanh: '[GIAI_DOAN_SS18]',
-        nhomSS01: [],
-        nhomSS02: [],
-        nhomSS03: [],
-        nhomSS04: [],
-        nhomSS05: [],
-        nhomSS06: [],
-      ),
+      value: MoHinhDanhSachPhuongTienThuocGiaiDoanKichBanChienDau(maDinhDanh: '[GIAI_DOAN_SS18]', nhomSS01: [], nhomSS02: [], nhomSS03: [], nhomSS04: [], nhomSS05: [], nhomSS06: []),
     );
     await caiDatDanhSachPhuongTienGiaiDoanSS19(
-      value: MoHinhDanhSachPhuongTienThuocGiaiDoanKichBanChienDau(
-        maDinhDanh: '[GIAI_DOAN_SS19]',
-        nhomSS01: [],
-        nhomSS02: [],
-        nhomSS03: [],
-        nhomSS04: [],
-        nhomSS05: [],
-        nhomSS06: [],
-      ),
+      value: MoHinhDanhSachPhuongTienThuocGiaiDoanKichBanChienDau(maDinhDanh: '[GIAI_DOAN_SS19]', nhomSS01: [], nhomSS02: [], nhomSS03: [], nhomSS04: [], nhomSS05: [], nhomSS06: []),
     );
     await caiDatDanhSachPhuongTienGiaiDoanSS20(
-      value: MoHinhDanhSachPhuongTienThuocGiaiDoanKichBanChienDau(
-        maDinhDanh: '[GIAI_DOAN_SS20]',
-        nhomSS01: [],
-        nhomSS02: [],
-        nhomSS03: [],
-        nhomSS04: [],
-        nhomSS05: [],
-        nhomSS06: [],
-      ),
+      value: MoHinhDanhSachPhuongTienThuocGiaiDoanKichBanChienDau(maDinhDanh: '[GIAI_DOAN_SS20]', nhomSS01: [], nhomSS02: [], nhomSS03: [], nhomSS04: [], nhomSS05: [], nhomSS06: []),
     );
     await caiDatDanhSachPhuongTienGiaiDoanSS21(
-      value: MoHinhDanhSachPhuongTienThuocGiaiDoanKichBanChienDau(
-        maDinhDanh: '[GIAI_DOAN_SS21]',
-        nhomSS01: [],
-        nhomSS02: [],
-        nhomSS03: [],
-        nhomSS04: [],
-        nhomSS05: [],
-        nhomSS06: [],
-      ),
+      value: MoHinhDanhSachPhuongTienThuocGiaiDoanKichBanChienDau(maDinhDanh: '[GIAI_DOAN_SS21]', nhomSS01: [], nhomSS02: [], nhomSS03: [], nhomSS04: [], nhomSS05: [], nhomSS06: []),
     );
     await caiDatDanhSachPhuongTienGiaiDoanSS22(
-      value: MoHinhDanhSachPhuongTienThuocGiaiDoanKichBanChienDau(
-        maDinhDanh: '[GIAI_DOAN_SS22]',
-        nhomSS01: [],
-        nhomSS02: [],
-        nhomSS03: [],
-        nhomSS04: [],
-        nhomSS05: [],
-        nhomSS06: [],
-      ),
+      value: MoHinhDanhSachPhuongTienThuocGiaiDoanKichBanChienDau(maDinhDanh: '[GIAI_DOAN_SS22]', nhomSS01: [], nhomSS02: [], nhomSS03: [], nhomSS04: [], nhomSS05: [], nhomSS06: []),
     );
     await caiDatDanhSachPhuongTienGiaiDoanSS23(
-      value: MoHinhDanhSachPhuongTienThuocGiaiDoanKichBanChienDau(
-        maDinhDanh: '[GIAI_DOAN_SS23]',
-        nhomSS01: [],
-        nhomSS02: [],
-        nhomSS03: [],
-        nhomSS04: [],
-        nhomSS05: [],
-        nhomSS06: [],
-      ),
+      value: MoHinhDanhSachPhuongTienThuocGiaiDoanKichBanChienDau(maDinhDanh: '[GIAI_DOAN_SS23]', nhomSS01: [], nhomSS02: [], nhomSS03: [], nhomSS04: [], nhomSS05: [], nhomSS06: []),
     );
     await caiDatDanhSachPhuongTienGiaiDoanSS24(
-      value: MoHinhDanhSachPhuongTienThuocGiaiDoanKichBanChienDau(
-        maDinhDanh: '[GIAI_DOAN_SS24]',
-        nhomSS01: [],
-        nhomSS02: [],
-        nhomSS03: [],
-        nhomSS04: [],
-        nhomSS05: [],
-        nhomSS06: [],
-      ),
+      value: MoHinhDanhSachPhuongTienThuocGiaiDoanKichBanChienDau(maDinhDanh: '[GIAI_DOAN_SS24]', nhomSS01: [], nhomSS02: [], nhomSS03: [], nhomSS04: [], nhomSS05: [], nhomSS06: []),
     );
     await caiDatDanhSachPhuongTienGiaiDoanSS25(
-      value: MoHinhDanhSachPhuongTienThuocGiaiDoanKichBanChienDau(
-        maDinhDanh: '[GIAI_DOAN_SS25]',
-        nhomSS01: [],
-        nhomSS02: [],
-        nhomSS03: [],
-        nhomSS04: [],
-        nhomSS05: [],
-        nhomSS06: [],
-      ),
+      value: MoHinhDanhSachPhuongTienThuocGiaiDoanKichBanChienDau(maDinhDanh: '[GIAI_DOAN_SS25]', nhomSS01: [], nhomSS02: [], nhomSS03: [], nhomSS04: [], nhomSS05: [], nhomSS06: []),
     );
     await caiDatDanhSachPhuongTienGiaiDoanSS26(
-      value: MoHinhDanhSachPhuongTienThuocGiaiDoanKichBanChienDau(
-        maDinhDanh: '[GIAI_DOAN_SS26]',
-        nhomSS01: [],
-        nhomSS02: [],
-        nhomSS03: [],
-        nhomSS04: [],
-        nhomSS05: [],
-        nhomSS06: [],
-      ),
+      value: MoHinhDanhSachPhuongTienThuocGiaiDoanKichBanChienDau(maDinhDanh: '[GIAI_DOAN_SS26]', nhomSS01: [], nhomSS02: [], nhomSS03: [], nhomSS04: [], nhomSS05: [], nhomSS06: []),
     );
     await caiDatDanhSachPhuongTienGiaiDoanSS27(
-      value: MoHinhDanhSachPhuongTienThuocGiaiDoanKichBanChienDau(
-        maDinhDanh: '[GIAI_DOAN_SS27]',
-        nhomSS01: [],
-        nhomSS02: [],
-        nhomSS03: [],
-        nhomSS04: [],
-        nhomSS05: [],
-        nhomSS06: [],
-      ),
+      value: MoHinhDanhSachPhuongTienThuocGiaiDoanKichBanChienDau(maDinhDanh: '[GIAI_DOAN_SS27]', nhomSS01: [], nhomSS02: [], nhomSS03: [], nhomSS04: [], nhomSS05: [], nhomSS06: []),
     );
     await caiDatDanhSachPhuongTienGiaiDoanSS28(
-      value: MoHinhDanhSachPhuongTienThuocGiaiDoanKichBanChienDau(
-        maDinhDanh: '[GIAI_DOAN_SS28]',
-        nhomSS01: [],
-        nhomSS02: [],
-        nhomSS03: [],
-        nhomSS04: [],
-        nhomSS05: [],
-        nhomSS06: [],
-      ),
+      value: MoHinhDanhSachPhuongTienThuocGiaiDoanKichBanChienDau(maDinhDanh: '[GIAI_DOAN_SS28]', nhomSS01: [], nhomSS02: [], nhomSS03: [], nhomSS04: [], nhomSS05: [], nhomSS06: []),
     );
     await caiDatDanhSachPhuongTienGiaiDoanSS29(
-      value: MoHinhDanhSachPhuongTienThuocGiaiDoanKichBanChienDau(
-        maDinhDanh: '[GIAI_DOAN_SS29]',
-        nhomSS01: [],
-        nhomSS02: [],
-        nhomSS03: [],
-        nhomSS04: [],
-        nhomSS05: [],
-        nhomSS06: [],
-      ),
+      value: MoHinhDanhSachPhuongTienThuocGiaiDoanKichBanChienDau(maDinhDanh: '[GIAI_DOAN_SS29]', nhomSS01: [], nhomSS02: [], nhomSS03: [], nhomSS04: [], nhomSS05: [], nhomSS06: []),
     );
     await caiDatDanhSachPhuongTienGiaiDoanSS30(
-      value: MoHinhDanhSachPhuongTienThuocGiaiDoanKichBanChienDau(
-        maDinhDanh: '[GIAI_DOAN_SS30]',
-        nhomSS01: [],
-        nhomSS02: [],
-        nhomSS03: [],
-        nhomSS04: [],
-        nhomSS05: [],
-        nhomSS06: [],
-      ),
+      value: MoHinhDanhSachPhuongTienThuocGiaiDoanKichBanChienDau(maDinhDanh: '[GIAI_DOAN_SS30]', nhomSS01: [], nhomSS02: [], nhomSS03: [], nhomSS04: [], nhomSS05: [], nhomSS06: []),
     );
 
     await addDanhSachGiaiDoanKichBan(value: getGiaiDoanKichBanSS01);
@@ -1322,9 +1082,7 @@ abstract class MoHinhKichBanChienDauTongQuat {
     if ((getDanhSachPhuongTienThuocGiaiDoanSS01?.getTatCaPhuongTienThuocGiaiDoan?.length ?? 0) > 50) {
       throw ('SO_LUONG_PHUONG_TIEN_GIAI_DOAN_SS1_VUOT_QUA_NGUONG');
     } else {
-      await getGiaiDoanKichBanSS01?.caiDatDanhSachPhuongTienThuocKichBan(
-        value: getDanhSachPhuongTienThuocGiaiDoanSS01?.getTatCaPhuongTienThuocGiaiDoan ?? [],
-      );
+      await getGiaiDoanKichBanSS01?.caiDatDanhSachPhuongTienThuocKichBan(value: getDanhSachPhuongTienThuocGiaiDoanSS01?.getTatCaPhuongTienThuocGiaiDoan ?? []);
     }
 
     return;
@@ -1369,9 +1127,7 @@ abstract class MoHinhKichBanChienDauTongQuat {
     if ((getDanhSachPhuongTienThuocGiaiDoanSS02?.getTatCaPhuongTienThuocGiaiDoan?.length ?? 0) > 50) {
       throw ('SO_LUONG_PHUONG_TIEN_GIAI_DOAN_SS2_VUOT_QUA_NGUONG');
     } else {
-      await getGiaiDoanKichBanSS02?.caiDatDanhSachPhuongTienThuocKichBan(
-        value: getDanhSachPhuongTienThuocGiaiDoanSS02?.getTatCaPhuongTienThuocGiaiDoan ?? [],
-      );
+      await getGiaiDoanKichBanSS02?.caiDatDanhSachPhuongTienThuocKichBan(value: getDanhSachPhuongTienThuocGiaiDoanSS02?.getTatCaPhuongTienThuocGiaiDoan ?? []);
     }
 
     return;
@@ -1416,9 +1172,7 @@ abstract class MoHinhKichBanChienDauTongQuat {
     if ((getDanhSachPhuongTienThuocGiaiDoanSS03?.getTatCaPhuongTienThuocGiaiDoan?.length ?? 0) > 50) {
       throw ('SO_LUONG_PHUONG_TIEN_GIAI_DOAN_SS3_VUOT_QUA_NGUONG');
     } else {
-      await getGiaiDoanKichBanSS03?.caiDatDanhSachPhuongTienThuocKichBan(
-        value: getDanhSachPhuongTienThuocGiaiDoanSS03?.getTatCaPhuongTienThuocGiaiDoan ?? [],
-      );
+      await getGiaiDoanKichBanSS03?.caiDatDanhSachPhuongTienThuocKichBan(value: getDanhSachPhuongTienThuocGiaiDoanSS03?.getTatCaPhuongTienThuocGiaiDoan ?? []);
     }
 
     return;
@@ -1463,9 +1217,7 @@ abstract class MoHinhKichBanChienDauTongQuat {
     if ((getDanhSachPhuongTienThuocGiaiDoanSS04?.getTatCaPhuongTienThuocGiaiDoan?.length ?? 0) > 50) {
       throw ('SO_LUONG_PHUONG_TIEN_GIAI_DOAN_SS4_VUOT_QUA_NGUONG');
     } else {
-      await getGiaiDoanKichBanSS04?.caiDatDanhSachPhuongTienThuocKichBan(
-        value: getDanhSachPhuongTienThuocGiaiDoanSS04?.getTatCaPhuongTienThuocGiaiDoan ?? [],
-      );
+      await getGiaiDoanKichBanSS04?.caiDatDanhSachPhuongTienThuocKichBan(value: getDanhSachPhuongTienThuocGiaiDoanSS04?.getTatCaPhuongTienThuocGiaiDoan ?? []);
     }
 
     return;
@@ -1510,9 +1262,7 @@ abstract class MoHinhKichBanChienDauTongQuat {
     if ((getDanhSachPhuongTienThuocGiaiDoanSS05?.getTatCaPhuongTienThuocGiaiDoan?.length ?? 0) > 50) {
       throw ('SO_LUONG_PHUONG_TIEN_GIAI_DOAN_SS5_VUOT_QUA_NGUONG');
     } else {
-      await getGiaiDoanKichBanSS05?.caiDatDanhSachPhuongTienThuocKichBan(
-        value: getDanhSachPhuongTienThuocGiaiDoanSS05?.getTatCaPhuongTienThuocGiaiDoan ?? [],
-      );
+      await getGiaiDoanKichBanSS05?.caiDatDanhSachPhuongTienThuocKichBan(value: getDanhSachPhuongTienThuocGiaiDoanSS05?.getTatCaPhuongTienThuocGiaiDoan ?? []);
     }
 
     return;
@@ -1557,9 +1307,7 @@ abstract class MoHinhKichBanChienDauTongQuat {
     if ((getDanhSachPhuongTienThuocGiaiDoanSS06?.getTatCaPhuongTienThuocGiaiDoan?.length ?? 0) > 50) {
       throw ('SO_LUONG_PHUONG_TIEN_GIAI_DOAN_SS6_VUOT_QUA_NGUONG');
     } else {
-      await getGiaiDoanKichBanSS06?.caiDatDanhSachPhuongTienThuocKichBan(
-        value: getDanhSachPhuongTienThuocGiaiDoanSS06?.getTatCaPhuongTienThuocGiaiDoan ?? [],
-      );
+      await getGiaiDoanKichBanSS06?.caiDatDanhSachPhuongTienThuocKichBan(value: getDanhSachPhuongTienThuocGiaiDoanSS06?.getTatCaPhuongTienThuocGiaiDoan ?? []);
     }
 
     return;
@@ -1604,9 +1352,7 @@ abstract class MoHinhKichBanChienDauTongQuat {
     if ((getDanhSachPhuongTienThuocGiaiDoanSS07?.getTatCaPhuongTienThuocGiaiDoan?.length ?? 0) > 50) {
       throw ('SO_LUONG_PHUONG_TIEN_GIAI_DOAN_SS7_VUOT_QUA_NGUONG');
     } else {
-      await getGiaiDoanKichBanSS07?.caiDatDanhSachPhuongTienThuocKichBan(
-        value: getDanhSachPhuongTienThuocGiaiDoanSS07?.getTatCaPhuongTienThuocGiaiDoan ?? [],
-      );
+      await getGiaiDoanKichBanSS07?.caiDatDanhSachPhuongTienThuocKichBan(value: getDanhSachPhuongTienThuocGiaiDoanSS07?.getTatCaPhuongTienThuocGiaiDoan ?? []);
     }
 
     return;
@@ -1651,9 +1397,7 @@ abstract class MoHinhKichBanChienDauTongQuat {
     if ((getDanhSachPhuongTienThuocGiaiDoanSS08?.getTatCaPhuongTienThuocGiaiDoan?.length ?? 0) > 50) {
       throw ('SO_LUONG_PHUONG_TIEN_GIAI_DOAN_SS8_VUOT_QUA_NGUONG');
     } else {
-      await getGiaiDoanKichBanSS08?.caiDatDanhSachPhuongTienThuocKichBan(
-        value: getDanhSachPhuongTienThuocGiaiDoanSS08?.getTatCaPhuongTienThuocGiaiDoan ?? [],
-      );
+      await getGiaiDoanKichBanSS08?.caiDatDanhSachPhuongTienThuocKichBan(value: getDanhSachPhuongTienThuocGiaiDoanSS08?.getTatCaPhuongTienThuocGiaiDoan ?? []);
     }
 
     return;
@@ -1698,9 +1442,7 @@ abstract class MoHinhKichBanChienDauTongQuat {
     if ((getDanhSachPhuongTienThuocGiaiDoanSS09?.getTatCaPhuongTienThuocGiaiDoan?.length ?? 0) > 50) {
       throw ('SO_LUONG_PHUONG_TIEN_GIAI_DOAN_SS9_VUOT_QUA_NGUONG');
     } else {
-      await getGiaiDoanKichBanSS09?.caiDatDanhSachPhuongTienThuocKichBan(
-        value: getDanhSachPhuongTienThuocGiaiDoanSS09?.getTatCaPhuongTienThuocGiaiDoan ?? [],
-      );
+      await getGiaiDoanKichBanSS09?.caiDatDanhSachPhuongTienThuocKichBan(value: getDanhSachPhuongTienThuocGiaiDoanSS09?.getTatCaPhuongTienThuocGiaiDoan ?? []);
     }
 
     return;
@@ -1745,9 +1487,7 @@ abstract class MoHinhKichBanChienDauTongQuat {
     if ((getDanhSachPhuongTienThuocGiaiDoanSS10?.getTatCaPhuongTienThuocGiaiDoan?.length ?? 0) > 50) {
       throw ('SO_LUONG_PHUONG_TIEN_GIAI_DOAN_SS10_VUOT_QUA_NGUONG');
     } else {
-      await getGiaiDoanKichBanSS10?.caiDatDanhSachPhuongTienThuocKichBan(
-        value: getDanhSachPhuongTienThuocGiaiDoanSS10?.getTatCaPhuongTienThuocGiaiDoan ?? [],
-      );
+      await getGiaiDoanKichBanSS10?.caiDatDanhSachPhuongTienThuocKichBan(value: getDanhSachPhuongTienThuocGiaiDoanSS10?.getTatCaPhuongTienThuocGiaiDoan ?? []);
     }
 
     return;
@@ -1792,9 +1532,7 @@ abstract class MoHinhKichBanChienDauTongQuat {
     if ((getDanhSachPhuongTienThuocGiaiDoanSS11?.getTatCaPhuongTienThuocGiaiDoan?.length ?? 0) > 50) {
       throw ('SO_LUONG_PHUONG_TIEN_GIAI_DOAN_SS11_VUOT_QUA_NGUONG');
     } else {
-      await getGiaiDoanKichBanSS11?.caiDatDanhSachPhuongTienThuocKichBan(
-        value: getDanhSachPhuongTienThuocGiaiDoanSS11?.getTatCaPhuongTienThuocGiaiDoan ?? [],
-      );
+      await getGiaiDoanKichBanSS11?.caiDatDanhSachPhuongTienThuocKichBan(value: getDanhSachPhuongTienThuocGiaiDoanSS11?.getTatCaPhuongTienThuocGiaiDoan ?? []);
     }
 
     return;
@@ -1839,9 +1577,7 @@ abstract class MoHinhKichBanChienDauTongQuat {
     if ((getDanhSachPhuongTienThuocGiaiDoanSS12?.getTatCaPhuongTienThuocGiaiDoan?.length ?? 0) > 50) {
       throw ('SO_LUONG_PHUONG_TIEN_GIAI_DOAN_SS12_VUOT_QUA_NGUONG');
     } else {
-      await getGiaiDoanKichBanSS12?.caiDatDanhSachPhuongTienThuocKichBan(
-        value: getDanhSachPhuongTienThuocGiaiDoanSS12?.getTatCaPhuongTienThuocGiaiDoan ?? [],
-      );
+      await getGiaiDoanKichBanSS12?.caiDatDanhSachPhuongTienThuocKichBan(value: getDanhSachPhuongTienThuocGiaiDoanSS12?.getTatCaPhuongTienThuocGiaiDoan ?? []);
     }
 
     return;
@@ -1886,9 +1622,7 @@ abstract class MoHinhKichBanChienDauTongQuat {
     if ((getDanhSachPhuongTienThuocGiaiDoanSS13?.getTatCaPhuongTienThuocGiaiDoan?.length ?? 0) > 50) {
       throw ('SO_LUONG_PHUONG_TIEN_GIAI_DOAN_SS13_VUOT_QUA_NGUONG');
     } else {
-      await getGiaiDoanKichBanSS13?.caiDatDanhSachPhuongTienThuocKichBan(
-        value: getDanhSachPhuongTienThuocGiaiDoanSS13?.getTatCaPhuongTienThuocGiaiDoan ?? [],
-      );
+      await getGiaiDoanKichBanSS13?.caiDatDanhSachPhuongTienThuocKichBan(value: getDanhSachPhuongTienThuocGiaiDoanSS13?.getTatCaPhuongTienThuocGiaiDoan ?? []);
     }
 
     return;
@@ -1933,9 +1667,7 @@ abstract class MoHinhKichBanChienDauTongQuat {
     if ((getDanhSachPhuongTienThuocGiaiDoanSS14?.getTatCaPhuongTienThuocGiaiDoan?.length ?? 0) > 50) {
       throw ('SO_LUONG_PHUONG_TIEN_GIAI_DOAN_SS14_VUOT_QUA_NGUONG');
     } else {
-      await getGiaiDoanKichBanSS14?.caiDatDanhSachPhuongTienThuocKichBan(
-        value: getDanhSachPhuongTienThuocGiaiDoanSS14?.getTatCaPhuongTienThuocGiaiDoan ?? [],
-      );
+      await getGiaiDoanKichBanSS14?.caiDatDanhSachPhuongTienThuocKichBan(value: getDanhSachPhuongTienThuocGiaiDoanSS14?.getTatCaPhuongTienThuocGiaiDoan ?? []);
     }
 
     return;
@@ -1980,9 +1712,7 @@ abstract class MoHinhKichBanChienDauTongQuat {
     if ((getDanhSachPhuongTienThuocGiaiDoanSS15?.getTatCaPhuongTienThuocGiaiDoan?.length ?? 0) > 50) {
       throw ('SO_LUONG_PHUONG_TIEN_GIAI_DOAN_SS15_VUOT_QUA_NGUONG');
     } else {
-      await getGiaiDoanKichBanSS15?.caiDatDanhSachPhuongTienThuocKichBan(
-        value: getDanhSachPhuongTienThuocGiaiDoanSS15?.getTatCaPhuongTienThuocGiaiDoan ?? [],
-      );
+      await getGiaiDoanKichBanSS15?.caiDatDanhSachPhuongTienThuocKichBan(value: getDanhSachPhuongTienThuocGiaiDoanSS15?.getTatCaPhuongTienThuocGiaiDoan ?? []);
     }
 
     return;
@@ -2027,9 +1757,7 @@ abstract class MoHinhKichBanChienDauTongQuat {
     if ((getDanhSachPhuongTienThuocGiaiDoanSS16?.getTatCaPhuongTienThuocGiaiDoan?.length ?? 0) > 50) {
       throw ('SO_LUONG_PHUONG_TIEN_GIAI_DOAN_SS16_VUOT_QUA_NGUONG');
     } else {
-      await getGiaiDoanKichBanSS16?.caiDatDanhSachPhuongTienThuocKichBan(
-        value: getDanhSachPhuongTienThuocGiaiDoanSS16?.getTatCaPhuongTienThuocGiaiDoan ?? [],
-      );
+      await getGiaiDoanKichBanSS16?.caiDatDanhSachPhuongTienThuocKichBan(value: getDanhSachPhuongTienThuocGiaiDoanSS16?.getTatCaPhuongTienThuocGiaiDoan ?? []);
     }
 
     return;
@@ -2074,9 +1802,7 @@ abstract class MoHinhKichBanChienDauTongQuat {
     if ((getDanhSachPhuongTienThuocGiaiDoanSS17?.getTatCaPhuongTienThuocGiaiDoan?.length ?? 0) > 50) {
       throw ('SO_LUONG_PHUONG_TIEN_GIAI_DOAN_SS17_VUOT_QUA_NGUONG');
     } else {
-      await getGiaiDoanKichBanSS17?.caiDatDanhSachPhuongTienThuocKichBan(
-        value: getDanhSachPhuongTienThuocGiaiDoanSS17?.getTatCaPhuongTienThuocGiaiDoan ?? [],
-      );
+      await getGiaiDoanKichBanSS17?.caiDatDanhSachPhuongTienThuocKichBan(value: getDanhSachPhuongTienThuocGiaiDoanSS17?.getTatCaPhuongTienThuocGiaiDoan ?? []);
     }
 
     return;
@@ -2121,9 +1847,7 @@ abstract class MoHinhKichBanChienDauTongQuat {
     if ((getDanhSachPhuongTienThuocGiaiDoanSS18?.getTatCaPhuongTienThuocGiaiDoan?.length ?? 0) > 50) {
       throw ('SO_LUONG_PHUONG_TIEN_GIAI_DOAN_SS18_VUOT_QUA_NGUONG');
     } else {
-      await getGiaiDoanKichBanSS18?.caiDatDanhSachPhuongTienThuocKichBan(
-        value: getDanhSachPhuongTienThuocGiaiDoanSS18?.getTatCaPhuongTienThuocGiaiDoan ?? [],
-      );
+      await getGiaiDoanKichBanSS18?.caiDatDanhSachPhuongTienThuocKichBan(value: getDanhSachPhuongTienThuocGiaiDoanSS18?.getTatCaPhuongTienThuocGiaiDoan ?? []);
     }
 
     return;
@@ -2168,9 +1892,7 @@ abstract class MoHinhKichBanChienDauTongQuat {
     if ((getDanhSachPhuongTienThuocGiaiDoanSS19?.getTatCaPhuongTienThuocGiaiDoan?.length ?? 0) > 50) {
       throw ('SO_LUONG_PHUONG_TIEN_GIAI_DOAN_SS19_VUOT_QUA_NGUONG');
     } else {
-      await getGiaiDoanKichBanSS19?.caiDatDanhSachPhuongTienThuocKichBan(
-        value: getDanhSachPhuongTienThuocGiaiDoanSS19?.getTatCaPhuongTienThuocGiaiDoan ?? [],
-      );
+      await getGiaiDoanKichBanSS19?.caiDatDanhSachPhuongTienThuocKichBan(value: getDanhSachPhuongTienThuocGiaiDoanSS19?.getTatCaPhuongTienThuocGiaiDoan ?? []);
     }
 
     return;
@@ -2215,9 +1937,7 @@ abstract class MoHinhKichBanChienDauTongQuat {
     if ((getDanhSachPhuongTienThuocGiaiDoanSS20?.getTatCaPhuongTienThuocGiaiDoan?.length ?? 0) > 50) {
       throw ('SO_LUONG_PHUONG_TIEN_GIAI_DOAN_SS20_VUOT_QUA_NGUONG');
     } else {
-      await getGiaiDoanKichBanSS20?.caiDatDanhSachPhuongTienThuocKichBan(
-        value: getDanhSachPhuongTienThuocGiaiDoanSS20?.getTatCaPhuongTienThuocGiaiDoan ?? [],
-      );
+      await getGiaiDoanKichBanSS20?.caiDatDanhSachPhuongTienThuocKichBan(value: getDanhSachPhuongTienThuocGiaiDoanSS20?.getTatCaPhuongTienThuocGiaiDoan ?? []);
     }
 
     return;
@@ -2262,9 +1982,7 @@ abstract class MoHinhKichBanChienDauTongQuat {
     if ((getDanhSachPhuongTienThuocGiaiDoanSS21?.getTatCaPhuongTienThuocGiaiDoan?.length ?? 0) > 50) {
       throw ('SO_LUONG_PHUONG_TIEN_GIAI_DOAN_SS21_VUOT_QUA_NGUONG');
     } else {
-      await getGiaiDoanKichBanSS21?.caiDatDanhSachPhuongTienThuocKichBan(
-        value: getDanhSachPhuongTienThuocGiaiDoanSS21?.getTatCaPhuongTienThuocGiaiDoan ?? [],
-      );
+      await getGiaiDoanKichBanSS21?.caiDatDanhSachPhuongTienThuocKichBan(value: getDanhSachPhuongTienThuocGiaiDoanSS21?.getTatCaPhuongTienThuocGiaiDoan ?? []);
     }
 
     return;
@@ -2309,9 +2027,7 @@ abstract class MoHinhKichBanChienDauTongQuat {
     if ((getDanhSachPhuongTienThuocGiaiDoanSS22?.getTatCaPhuongTienThuocGiaiDoan?.length ?? 0) > 50) {
       throw ('SO_LUONG_PHUONG_TIEN_GIAI_DOAN_SS22_VUOT_QUA_NGUONG');
     } else {
-      await getGiaiDoanKichBanSS22?.caiDatDanhSachPhuongTienThuocKichBan(
-        value: getDanhSachPhuongTienThuocGiaiDoanSS22?.getTatCaPhuongTienThuocGiaiDoan ?? [],
-      );
+      await getGiaiDoanKichBanSS22?.caiDatDanhSachPhuongTienThuocKichBan(value: getDanhSachPhuongTienThuocGiaiDoanSS22?.getTatCaPhuongTienThuocGiaiDoan ?? []);
     }
 
     return;
@@ -2356,9 +2072,7 @@ abstract class MoHinhKichBanChienDauTongQuat {
     if ((getDanhSachPhuongTienThuocGiaiDoanSS23?.getTatCaPhuongTienThuocGiaiDoan?.length ?? 0) > 50) {
       throw ('SO_LUONG_PHUONG_TIEN_GIAI_DOAN_SS23_VUOT_QUA_NGUONG');
     } else {
-      await getGiaiDoanKichBanSS23?.caiDatDanhSachPhuongTienThuocKichBan(
-        value: getDanhSachPhuongTienThuocGiaiDoanSS23?.getTatCaPhuongTienThuocGiaiDoan ?? [],
-      );
+      await getGiaiDoanKichBanSS23?.caiDatDanhSachPhuongTienThuocKichBan(value: getDanhSachPhuongTienThuocGiaiDoanSS23?.getTatCaPhuongTienThuocGiaiDoan ?? []);
     }
 
     return;
@@ -2403,9 +2117,7 @@ abstract class MoHinhKichBanChienDauTongQuat {
     if ((getDanhSachPhuongTienThuocGiaiDoanSS24?.getTatCaPhuongTienThuocGiaiDoan?.length ?? 0) > 50) {
       throw ('SO_LUONG_PHUONG_TIEN_GIAI_DOAN_SS24_VUOT_QUA_NGUONG');
     } else {
-      await getGiaiDoanKichBanSS24?.caiDatDanhSachPhuongTienThuocKichBan(
-        value: getDanhSachPhuongTienThuocGiaiDoanSS24?.getTatCaPhuongTienThuocGiaiDoan ?? [],
-      );
+      await getGiaiDoanKichBanSS24?.caiDatDanhSachPhuongTienThuocKichBan(value: getDanhSachPhuongTienThuocGiaiDoanSS24?.getTatCaPhuongTienThuocGiaiDoan ?? []);
     }
 
     return;
@@ -2450,9 +2162,7 @@ abstract class MoHinhKichBanChienDauTongQuat {
     if ((getDanhSachPhuongTienThuocGiaiDoanSS25?.getTatCaPhuongTienThuocGiaiDoan?.length ?? 0) > 50) {
       throw ('SO_LUONG_PHUONG_TIEN_GIAI_DOAN_SS25_VUOT_QUA_NGUONG');
     } else {
-      await getGiaiDoanKichBanSS25?.caiDatDanhSachPhuongTienThuocKichBan(
-        value: getDanhSachPhuongTienThuocGiaiDoanSS25?.getTatCaPhuongTienThuocGiaiDoan ?? [],
-      );
+      await getGiaiDoanKichBanSS25?.caiDatDanhSachPhuongTienThuocKichBan(value: getDanhSachPhuongTienThuocGiaiDoanSS25?.getTatCaPhuongTienThuocGiaiDoan ?? []);
     }
 
     return;
@@ -2497,9 +2207,7 @@ abstract class MoHinhKichBanChienDauTongQuat {
     if ((getDanhSachPhuongTienThuocGiaiDoanSS26?.getTatCaPhuongTienThuocGiaiDoan?.length ?? 0) > 50) {
       throw ('SO_LUONG_PHUONG_TIEN_GIAI_DOAN_SS26_VUOT_QUA_NGUONG');
     } else {
-      await getGiaiDoanKichBanSS26?.caiDatDanhSachPhuongTienThuocKichBan(
-        value: getDanhSachPhuongTienThuocGiaiDoanSS26?.getTatCaPhuongTienThuocGiaiDoan ?? [],
-      );
+      await getGiaiDoanKichBanSS26?.caiDatDanhSachPhuongTienThuocKichBan(value: getDanhSachPhuongTienThuocGiaiDoanSS26?.getTatCaPhuongTienThuocGiaiDoan ?? []);
     }
 
     return;
@@ -2544,9 +2252,7 @@ abstract class MoHinhKichBanChienDauTongQuat {
     if ((getDanhSachPhuongTienThuocGiaiDoanSS27?.getTatCaPhuongTienThuocGiaiDoan?.length ?? 0) > 50) {
       throw ('SO_LUONG_PHUONG_TIEN_GIAI_DOAN_SS27_VUOT_QUA_NGUONG');
     } else {
-      await getGiaiDoanKichBanSS27?.caiDatDanhSachPhuongTienThuocKichBan(
-        value: getDanhSachPhuongTienThuocGiaiDoanSS27?.getTatCaPhuongTienThuocGiaiDoan ?? [],
-      );
+      await getGiaiDoanKichBanSS27?.caiDatDanhSachPhuongTienThuocKichBan(value: getDanhSachPhuongTienThuocGiaiDoanSS27?.getTatCaPhuongTienThuocGiaiDoan ?? []);
     }
 
     return;
@@ -2591,9 +2297,7 @@ abstract class MoHinhKichBanChienDauTongQuat {
     if ((getDanhSachPhuongTienThuocGiaiDoanSS28?.getTatCaPhuongTienThuocGiaiDoan?.length ?? 0) > 50) {
       throw ('SO_LUONG_PHUONG_TIEN_GIAI_DOAN_SS28_VUOT_QUA_NGUONG');
     } else {
-      await getGiaiDoanKichBanSS28?.caiDatDanhSachPhuongTienThuocKichBan(
-        value: getDanhSachPhuongTienThuocGiaiDoanSS28?.getTatCaPhuongTienThuocGiaiDoan ?? [],
-      );
+      await getGiaiDoanKichBanSS28?.caiDatDanhSachPhuongTienThuocKichBan(value: getDanhSachPhuongTienThuocGiaiDoanSS28?.getTatCaPhuongTienThuocGiaiDoan ?? []);
     }
 
     return;
@@ -2638,9 +2342,7 @@ abstract class MoHinhKichBanChienDauTongQuat {
     if ((getDanhSachPhuongTienThuocGiaiDoanSS29?.getTatCaPhuongTienThuocGiaiDoan?.length ?? 0) > 50) {
       throw ('SO_LUONG_PHUONG_TIEN_GIAI_DOAN_SS29_VUOT_QUA_NGUONG');
     } else {
-      await getGiaiDoanKichBanSS29?.caiDatDanhSachPhuongTienThuocKichBan(
-        value: getDanhSachPhuongTienThuocGiaiDoanSS29?.getTatCaPhuongTienThuocGiaiDoan ?? [],
-      );
+      await getGiaiDoanKichBanSS29?.caiDatDanhSachPhuongTienThuocKichBan(value: getDanhSachPhuongTienThuocGiaiDoanSS29?.getTatCaPhuongTienThuocGiaiDoan ?? []);
     }
 
     return;
@@ -2685,9 +2387,7 @@ abstract class MoHinhKichBanChienDauTongQuat {
     if ((getDanhSachPhuongTienThuocGiaiDoanSS30?.getTatCaPhuongTienThuocGiaiDoan?.length ?? 0) > 50) {
       throw ('SO_LUONG_PHUONG_TIEN_GIAI_DOAN_SS30_VUOT_QUA_NGUONG');
     } else {
-      await getGiaiDoanKichBanSS30?.caiDatDanhSachPhuongTienThuocKichBan(
-        value: getDanhSachPhuongTienThuocGiaiDoanSS30?.getTatCaPhuongTienThuocGiaiDoan ?? [],
-      );
+      await getGiaiDoanKichBanSS30?.caiDatDanhSachPhuongTienThuocKichBan(value: getDanhSachPhuongTienThuocGiaiDoanSS30?.getTatCaPhuongTienThuocGiaiDoan ?? []);
     }
 
     return;
@@ -2734,10 +2434,7 @@ abstract class MoHinhKichBanChienDauTongQuat {
   Future<MoHinhGiaiDoanKichBanChienDau?> getGiaiDoanKichBanDauTien() async {
     MoHinhGiaiDoanKichBanChienDau? giaiDoanKichBanDauTien;
 
-    giaiDoanKichBanDauTien = getDanhSachGiaiDoanKichBanNotNull.firstWhere(
-      (giaiDoanKichBan) => giaiDoanKichBan?.getMaDinhDanh == '[GIAI_DOAN_SS01]',
-      orElse: () => null,
-    );
+    giaiDoanKichBanDauTien = getDanhSachGiaiDoanKichBanNotNull.firstWhere((giaiDoanKichBan) => giaiDoanKichBan?.getMaDinhDanh == '[GIAI_DOAN_SS01]', orElse: () => null);
 
     await caiDatMaDinhDanhGiaiDoanKichBanHienHanh(value: giaiDoanKichBanDauTien?.getMaDinhDanh);
 
@@ -2898,10 +2595,7 @@ abstract class MoHinhKichBanChienDauTongQuat {
         break;
     }
 
-    giaiDoanKichBanTiepTheo = getDanhSachGiaiDoanKichBanNotNull.firstWhere(
-      (giaiDoanKichBan) => giaiDoanKichBan?.getMaDinhDanh == maDinhDanhGiaiDoanKichBanTiepTheo,
-      orElse: () => null,
-    );
+    giaiDoanKichBanTiepTheo = getDanhSachGiaiDoanKichBanNotNull.firstWhere((giaiDoanKichBan) => giaiDoanKichBan?.getMaDinhDanh == maDinhDanhGiaiDoanKichBanTiepTheo, orElse: () => null);
 
     await caiDatMaDinhDanhGiaiDoanKichBanHienHanh(value: giaiDoanKichBanTiepTheo?.getMaDinhDanh);
 

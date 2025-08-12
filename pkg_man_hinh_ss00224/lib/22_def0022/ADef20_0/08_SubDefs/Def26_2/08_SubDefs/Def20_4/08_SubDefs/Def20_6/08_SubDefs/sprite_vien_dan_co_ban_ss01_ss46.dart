@@ -4,8 +4,8 @@ import 'package:pkg_man_hinh_ss00224/pkg_man_hinh_ss00224_exp.dart';
 /// -----
 /// TODO:
 /// -----
-class SpriteVienDanCoBanSS01SS46 extends SpriteVienDanCoBan2 {
-  SpriteVienDanCoBanSS01SS46({required super.trangThaiTongQuat});
+class SpriteVienDanCoBanSS01SS46 extends SpriteVienDanCoBan {
+  SpriteVienDanCoBanSS01SS46({required super.trangThaiTongQuat, required super.parentComponent});
 
   /// -----
   /// TODO: Init Root
@@ -39,6 +39,8 @@ class SpriteVienDanCoBanSS01SS46 extends SpriteVienDanCoBan2 {
               ?.getVienDanSS46,
     );
 
+    await getMoHinh?.onCaiDatSpriteVienDan(value: this);
+
     return;
   }
 
@@ -46,34 +48,36 @@ class SpriteVienDanCoBanSS01SS46 extends SpriteVienDanCoBan2 {
   /// TODO:
   /// -----
   @override
-    FutureOr<void> update(double dt) async {
+    void update(double dt) {
     super.update(dt);
 
-    if (getBienTangTienGiamTanXuatCapNhat % 2 == 0) {
-      getMoHinh?.getMoHinh?.onXuLyDuLieuJsonLamPhang();
+    if (getTrangThaiTongQuat?.getTienTrinhTongQuat?.getTienTrinhThucThiChienDau?.getTrangThai?.getMoHinh?.onCheckBoolDangThucThi() == true) {
+      if (getBienTangTienGiamTanXuatCapNhat % 2 == 0) {
+        getMoHinh?.getMoHinh?.onXuLyDuLieuJsonLamPhang();
+      }
+
+      /// -----
+      /// TODO:
+      /// -----
+      onVoidCaiDatTuDongBienTangTienGiamTanXuatCapNhat();
+      if (onVoidKiemTraTanXuatCapNhat() == false) {
+        return;
+      }
+
+      /// -----
+      /// TODO:
+      /// -----
+      onVoidCapNhatTrangThaiMoHinh();
+
+      /// -----
+      /// TODO:
+      /// -----
+      onVoidCapNhatKiemTraHienThi();
+
+      /// -----
+      /// TODO:
+      /// -----
+      onVoidCapNhatPositionSizeValues();
     }
-
-    /// -----
-    /// TODO:
-    /// -----
-    onVoidCaiDatTuDongBienTangTienGiamTanXuatCapNhat();
-    if (onVoidKiemTraTanXuatCapNhat() == false) {
-      return;
-    }
-
-    /// -----
-    /// TODO:
-    /// -----
-    onVoidCapNhatTrangThaiMoHinh();
-
-    /// -----
-    /// TODO:
-    /// -----
-    onVoidCapNhatKiemTraHienThi();
-
-    /// -----
-    /// TODO:
-    /// -----
-    onVoidCapNhatPositionSizeValues();
   }
 }

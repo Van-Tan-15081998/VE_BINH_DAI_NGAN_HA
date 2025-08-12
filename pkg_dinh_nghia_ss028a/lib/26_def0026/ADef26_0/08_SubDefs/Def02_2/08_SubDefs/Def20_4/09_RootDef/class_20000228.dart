@@ -4,6 +4,7 @@ import 'package:pkg_dinh_nghia_ss028/pkg_dinh_nghia_ss028_exp.dart';
 import 'package:pkg_dinh_nghia_ss030/pkg_dinh_nghia_ss030_exp.dart';
 import 'package:pkg_dinh_nghia_ss050/pkg_dinh_nghia_ss050_exp.dart';
 import 'package:pkg_dinh_nghia_ss054/pkg_dinh_nghia_ss054_exp.dart';
+import 'package:pkg_dinh_nghia_ss030050/pkg_dinh_nghia_ss030050_exp.dart';
 
 abstract class VIENDANTANCONGCOBAN with CauTrucThucThiCoBan {
   /// -----
@@ -677,7 +678,7 @@ abstract class VIENDANTANCONGCOBAN with CauTrucThucThiCoBan {
   double? _gocXoay;
   double? get getGocXoay => _gocXoay;
   double get getGocXoayNotNull => _gocXoay ?? 0;
-  Future<void> caiDatGocXoay({required double? value}) async {
+  void onVoidCaiDatGocXoay({required double? value}) {
     if (value != null && value != 0) {
       if (value.isNaN == false && value.isFinite == true) {
         _gocXoay = value;
@@ -687,6 +688,151 @@ abstract class VIENDANTANCONGCOBAN with CauTrucThucThiCoBan {
     } else {
       _gocXoay = 0;
     }
+    return;
+  }
+
+  double? _dxViTriLayMucTieu;
+  double? get getDxViTriLayMucTieu => _dxViTriLayMucTieu;
+  double get getDxViTriLayMucTieuNotNull => _dxViTriLayMucTieu ?? 0;
+  void onVoidCaiDatDxViTriLayMucTieu({required double? value}) {
+    if (value != null && value != 0) {
+      if (value.isNaN == false && value.isFinite == true) {
+        _dxViTriLayMucTieu = value;
+      } else {
+        _dxViTriLayMucTieu = 0;
+      }
+    } else {
+      _dxViTriLayMucTieu = null;
+    }
+    return;
+  }
+
+  double? _dyViTriLayMucTieu;
+  double? get getDyViTriLayMucTieu => _dyViTriLayMucTieu;
+  double get getDyViTriLayMucTieuNotNull => _dyViTriLayMucTieu ?? 0;
+  void onVoidCaiDatDyViTriLayMucTieu({required double? value}) {
+    if (value != null && value != 0) {
+      if (value.isNaN == false && value.isFinite == true) {
+        _dyViTriLayMucTieu = value;
+      } else {
+        _dyViTriLayMucTieu = 0;
+      }
+    } else {
+      _dyViTriLayMucTieu = null;
+    }
+    return;
+  }
+
+  /// -----
+  /// TODO:
+  /// -----
+  bool? _tenLuaCanhTrai;
+  bool? get getTenLuaCanhTrai => _tenLuaCanhTrai;
+  bool get getTenLuaCanhTraiNotNull => _tenLuaCanhTrai ?? false;
+  void onVoidCaiDatTenLuaCanhTrai({required bool? value}) {
+    _tenLuaCanhTrai = value;
+    return;
+  }
+
+  /// -----
+  /// TODO:
+  /// -----
+  bool? _tenLuaCanhPhai;
+  bool? get getTenLuaCanhPhai => _tenLuaCanhPhai;
+  bool get getTenLuaCanhPhaiNotNull => _tenLuaCanhPhai ?? false;
+  void onVoidCaiDatTenLuaCanhPhai({required bool? value}) {
+    _tenLuaCanhPhai = value;
+    return;
+  }
+
+  /// -----
+  /// TODO: Biên Trái Nguyên Bản
+  /// -----
+  double? _bienTraiNguyenBan;
+  double? get getBienTraiNguyenBan => _bienTraiNguyenBan;
+  double get getBienTraiNguyenBanNotNull => _bienTraiNguyenBan ?? 0;
+  void onVoidCaiDatBienTraiNguyenBan({required double? value}) {
+    if (value != null && value != 0) {
+      if (value.isNaN == false && value.isFinite == true) {
+        _bienTraiNguyenBan = value;
+      } else {
+        _bienTraiNguyenBan = 0;
+      }
+    } else {
+      _bienTraiNguyenBan = 0;
+    }
+    return;
+  }
+
+  /// -----
+  /// TODO: Dx Trọng Tâm Nguyên Bản
+  /// -----
+  double? _dxTrongTamNguyenBan;
+  double? get getDxTrongTamNguyenBan => _dxTrongTamNguyenBan;
+  double get getDxTrongTamNguyenBanNotNull => _dxTrongTamNguyenBan ?? 0;
+  void onVoidCaiDatDxTrongTamNguyenBan({required double? value}) {
+    if (value != null && value != 0) {
+      if (value.isNaN == false && value.isFinite == true) {
+        _dxTrongTamNguyenBan = value;
+      } else {
+        _dxTrongTamNguyenBan = 0;
+      }
+    } else {
+      _dxTrongTamNguyenBan = 0;
+    }
+    return;
+  }
+
+  /// -----
+  /// TODO: Biên Dưới Nguyên Bản
+  /// -----
+  double? _bienDuoiNguyenBan;
+  double? get getBienDuoiNguyenBan => _bienDuoiNguyenBan;
+  double get getBienDuoiNguyenBanNotNull => _bienDuoiNguyenBan ?? 0;
+  void onVoidCaiDatBienDuoiNguyenBan({required double? value}) {
+    if (value != null && value != 0) {
+      if (value.isNaN == false && value.isFinite == true) {
+        _bienDuoiNguyenBan = value;
+      } else {
+        _bienDuoiNguyenBan = 0;
+      }
+    } else {
+      _bienDuoiNguyenBan = 0;
+    }
+    return;
+  }
+
+  /// -----
+  /// TODO: Dy Trọng Tâm Nguyên Bản
+  /// -----
+  double? _dyTrongTamNguyenBan;
+  double? get getDyTrongTamNguyenBan => _dyTrongTamNguyenBan;
+  double get getDyTrongTamNguyenBanNotNull => _dyTrongTamNguyenBan ?? 0;
+  void onVoidCaiDatDyTrongTamNguyenBan({required double? value}) {
+    if (value != null && value != 0) {
+      if (value.isNaN == false && value.isFinite == true) {
+        _dyTrongTamNguyenBan = value;
+      } else {
+        _dyTrongTamNguyenBan = 0;
+      }
+    } else {
+      _dyTrongTamNguyenBan = 0;
+    }
+    return;
+  }
+
+  /// -----
+  /// TODO:
+  /// -----
+  MoHinhPhuongTienTongQuat? _phuongTienHoatDongLayMucTieu;
+  MoHinhPhuongTienTongQuat? get getPhuongTienHoatDongLayMucTieu => _phuongTienHoatDongLayMucTieu;
+  void onVoidCaiDatPhuongTienHoatDongLayMucTieu({required MoHinhPhuongTienTongQuat? value, bool? caiDatUuTien}) async {
+    if (caiDatUuTien == true) {
+      _phuongTienHoatDongLayMucTieu = value;
+    } else {
+      _phuongTienHoatDongLayMucTieu ??= value;
+    }
+
     return;
   }
 
@@ -716,7 +862,8 @@ abstract class VIENDANTANCONGCOBAN with CauTrucThucThiCoBan {
     /// -----
     _duLieuJsonSuKienVaCham['[CHIEU_RONG_MAN_HINH_PHI_VAT_LY]'] = getChieuRongManHinhPhiVatLy ?? 0;
     _duLieuJsonSuKienVaCham['[CHIEU_CAO_MAN_HINH_PHI_VAT_LY]'] = getChieuCaoManHinhPhiVatLy ?? 0;
-    _duLieuJsonSuKienVaCham['[TRANG_THAI_TON_TAI]'] = getTrangThaiTonTai?.isKhoiTaoHoanTat() ?? false;
+    // _duLieuJsonSuKienVaCham['[TRANG_THAI_TON_TAI]'] = getTrangThaiTonTai?.onCheckBoolKhoiTaoHoanTat() ?? false;
+    _duLieuJsonSuKienVaCham['[TRANG_THAI_TON_TAI]'] = getTrangThaiTonTai?.onCheckBoolDangKichHoat() ?? false;
     _duLieuJsonSuKienVaCham['[CHIEU_RONG_THAN]'] = getChieuRongThan ?? 0;
     _duLieuJsonSuKienVaCham['[CHIEU_CAO_THAN]'] = getChieuCaoThan ?? 0;
     _duLieuJsonSuKienVaCham['[DX_TRONG_TAM]'] = getDxTrongTam ?? 0;
@@ -744,13 +891,21 @@ abstract class VIENDANTANCONGCOBAN with CauTrucThucThiCoBan {
   /// -----
   /// TODO:
   /// -----
+  double duLieuJsonBienPhai = 0;
+  double duLieuJsonBienTrai = 0;
+  double duLieuJsonBienTren = 0;
+  double duLieuJsonBienDuoi = 0;
+  double duLieuJsonChieuRongManHinhPhiVatLy = 0;
+  double duLieuJsonChieuCaoManHinhPhiVatLy = 0;
+
   void onXuLyDuLieuJsonLamPhang() {
     /// -----
     /// TODO:
     /// -----
     getDuLieuJsonLamPhang['[CHIEU_RONG_MAN_HINH_PHI_VAT_LY]'] = getChieuRongManHinhPhiVatLy ?? 0;
     getDuLieuJsonLamPhang['[CHIEU_CAO_MAN_HINH_PHI_VAT_LY]'] = getChieuCaoManHinhPhiVatLy ?? 0;
-    getDuLieuJsonLamPhang['[TRANG_THAI_TON_TAI]'] = getTrangThaiTonTai?.isKhoiTaoHoanTat() ?? false;
+    // getDuLieuJsonLamPhang['[TRANG_THAI_TON_TAI]'] = getTrangThaiTonTai?.onCheckBoolKhoiTaoHoanTat() ?? false;
+    getDuLieuJsonLamPhang['[TRANG_THAI_TON_TAI]'] = getTrangThaiTonTai?.onCheckBoolDangKichHoat() ?? false;
     getDuLieuJsonLamPhang['[CHIEU_RONG_THAN]'] = getChieuRongThan ?? 0;
     getDuLieuJsonLamPhang['[CHIEU_CAO_THAN]'] = getChieuCaoThan ?? 0;
     getDuLieuJsonLamPhang['[DX_TRONG_TAM]'] = getDxTrongTam ?? 0;
@@ -759,31 +914,31 @@ abstract class VIENDANTANCONGCOBAN with CauTrucThucThiCoBan {
     /// -----
     /// TODO:
     /// -----
-    double bienPhai = (getDuLieuJsonLamPhang['[DX_TRONG_TAM]'] ?? 0) + (getDuLieuJsonLamPhang['[CHIEU_RONG_THAN]'] ?? 0);
-    double bienTrai = (getDuLieuJsonLamPhang['[DX_TRONG_TAM]'] ?? 0) - (getDuLieuJsonLamPhang['[CHIEU_RONG_THAN]'] ?? 0);
-    double bienTren = (getDuLieuJsonLamPhang['[DY_TRONG_TAM]'] ?? 0) - (getDuLieuJsonLamPhang['[CHIEU_CAO_THAN]'] ?? 0);
-    double bienDuoi = (getDuLieuJsonLamPhang['[DY_TRONG_TAM]'] ?? 0) + (getDuLieuJsonLamPhang['[CHIEU_CAO_THAN]'] ?? 0);
-    double chieuRongManHinhPhiVatLy = getDuLieuJsonLamPhang['[CHIEU_RONG_MAN_HINH_PHI_VAT_LY]'] ?? 0;
-    double chieuCaoManHinhPhiVatLy = getDuLieuJsonLamPhang['[CHIEU_CAO_MAN_HINH_PHI_VAT_LY]'] ?? 0;
+    duLieuJsonBienPhai = (getDuLieuJsonLamPhang['[DX_TRONG_TAM]'] ?? 0) + (getDuLieuJsonLamPhang['[CHIEU_RONG_THAN]'] ?? 0);
+    duLieuJsonBienTrai = (getDuLieuJsonLamPhang['[DX_TRONG_TAM]'] ?? 0) - (getDuLieuJsonLamPhang['[CHIEU_RONG_THAN]'] ?? 0);
+    duLieuJsonBienTren = (getDuLieuJsonLamPhang['[DY_TRONG_TAM]'] ?? 0) - (getDuLieuJsonLamPhang['[CHIEU_CAO_THAN]'] ?? 0);
+    duLieuJsonBienDuoi = (getDuLieuJsonLamPhang['[DY_TRONG_TAM]'] ?? 0) + (getDuLieuJsonLamPhang['[CHIEU_CAO_THAN]'] ?? 0);
+    duLieuJsonChieuRongManHinhPhiVatLy = getDuLieuJsonLamPhang['[CHIEU_RONG_MAN_HINH_PHI_VAT_LY]'] ?? 0;
+    duLieuJsonChieuCaoManHinhPhiVatLy = getDuLieuJsonLamPhang['[CHIEU_CAO_MAN_HINH_PHI_VAT_LY]'] ?? 0;
 
     if (getDuLieuJsonLamPhang['[TRANG_THAI_TON_TAI]'] == false) {
       getDuLieuJsonLamPhang['[DI_CHUYEN_HIEN_THI]'] = false;
       return;
     }
 
-    if (bienPhai < 0) {
+    if (duLieuJsonBienPhai < 0) {
       getDuLieuJsonLamPhang['[DI_CHUYEN_HIEN_THI]'] = false;
       return;
     }
-    if (bienTrai > chieuRongManHinhPhiVatLy) {
+    if (duLieuJsonBienTrai > duLieuJsonChieuRongManHinhPhiVatLy) {
       getDuLieuJsonLamPhang['[DI_CHUYEN_HIEN_THI]'] = false;
       return;
     }
-    if (bienTren > chieuCaoManHinhPhiVatLy) {
+    if (duLieuJsonBienTren > duLieuJsonChieuCaoManHinhPhiVatLy) {
       getDuLieuJsonLamPhang['[DI_CHUYEN_HIEN_THI]'] = false;
       return;
     }
-    if (bienDuoi < 0) {
+    if (duLieuJsonBienDuoi < 0) {
       getDuLieuJsonLamPhang['[DI_CHUYEN_HIEN_THI]'] = false;
       return;
     }
@@ -850,7 +1005,7 @@ abstract class VIENDANTANCONGCOBAN with CauTrucThucThiCoBan {
   ThoiGianKichHoatCoBan? _thoiGianKichHoat;
   ThoiGianKichHoatCoBan? get getThoiGianKichHoat => _thoiGianKichHoat;
   ThoiGianKichHoatCoBan get getThoiGianKichHoatNotNull => _thoiGianKichHoat ?? ThoiGianKichHoatCoBan.onMacDinh();
-  Future<void> caiDatThoiGianKichHoat({required ThoiGianKichHoatCoBan? value}) async {
+  Future<void> onVoidCaiDatThoiGianKichHoat({required ThoiGianKichHoatCoBan? value}) async {
     _thoiGianKichHoat = value;
     return;
   }
@@ -874,6 +1029,53 @@ abstract class VIENDANTANCONGCOBAN with CauTrucThucThiCoBan {
   DinhHuongBayLanCoBan get getDinhHuongBayLanNotNull => _dinhHuongBayLan ?? DinhHuongBayLanCoBan.onMacDinh();
   Future<void> caiDatDinhHuongBayLan({required DinhHuongBayLanCoBan? value}) async {
     _dinhHuongBayLan = value;
+    return;
+  }
+
+  /// -----
+  /// TODO: Tốc độ bay ban đầu (nguyên bản) của viên đạn
+  /// -----
+  TocDoCoBan? _tocDoBayNguyenBan;
+  TocDoCoBan? get getTocDoBayNguyenBan => _tocDoBayNguyenBan;
+  TocDoCoBan get getTocDoBayNguyenBanNotNull => _tocDoBayNguyenBan ?? TocDoBayCoBan.onMacDinh();
+  void onVoidCaiDatTocDoBayNguyenBan({required TocDoCoBan? value}) {
+    _tocDoBayNguyenBan = value;
+    return;
+  }
+
+  /// -----
+  /// TODO:
+  /// -----
+  QuanLyTrangThaiDanhSachMoHinhTongQuat? _quanLyTrangThaiDanhSachMoHinh;
+  QuanLyTrangThaiDanhSachMoHinhTongQuat? get getQuanLyTrangThaiDanhSachMoHinh => _quanLyTrangThaiDanhSachMoHinh;
+  Future<void> caiDatQuanLyTrangThaiDanhSachMoHinh({required QuanLyTrangThaiDanhSachMoHinhTongQuat? value}) async {
+    _quanLyTrangThaiDanhSachMoHinh = value;
+    return;
+  }
+
+  /// -----
+  /// TODO:
+  /// -----
+  QuanLyTrangThaiDieuKhienTinhToanTongQuat? _dieuKhienTinhToanTongQuat;
+  QuanLyTrangThaiDieuKhienTinhToanTongQuat? get getDieuKhienTinhToanTongQuat => _dieuKhienTinhToanTongQuat;
+  Future<void> caiDatDieuKhienTinhToanTongQuat({required QuanLyTrangThaiDieuKhienTinhToanTongQuat? value}) async {
+    _dieuKhienTinhToanTongQuat ??= value;
+    return;
+  }
+
+  /// -----
+  /// TODO:
+  /// -----
+  QUANLYTRANGTHAISUKIENVACHAMTHUOCPHUONGTIEN? _suKienVaChamThuocPhuongTien;
+  QUANLYTRANGTHAISUKIENVACHAMTHUOCPHUONGTIEN? get getSuKienVaChamThuocPhuongTien => _suKienVaChamThuocPhuongTien;
+  Future<void> caiDatSuKienVaChamThuocPhuongTien({required QUANLYTRANGTHAISUKIENVACHAMTHUOCPHUONGTIEN? value, bool? caiDatUuTien}) async {
+    if (caiDatUuTien == true) {
+      _suKienVaChamThuocPhuongTien = value;
+    } else {
+      _suKienVaChamThuocPhuongTien ??= value;
+    }
+
+    ///
     return;
   }
 
@@ -919,8 +1121,30 @@ abstract class VIENDANTANCONGCOBAN with CauTrucThucThiCoBan {
 
     double tongKichThuoc = chieuRongThan + chieuCaoThan;
 
-    double chieuRongThanCapNhat = 100.0 * (chieuRongThan / tongKichThuoc);
-    double chieuCaoThanCapNhat = 100.0 * (chieuCaoThan / tongKichThuoc);
+    double chieuRongThanCapNhat = 90.0 * (chieuRongThan / tongKichThuoc);
+    double chieuCaoThanCapNhat = 90.0 * (chieuCaoThan / tongKichThuoc);
+
+    await caiDatChieuRongThan(value: chieuRongThanCapNhat);
+    await caiDatChieuCaoThan(value: chieuCaoThanCapNhat);
+
+    await onCapNhatToaDoViTri();
+
+    return;
+  }
+
+  /// -----
+  /// TODO: Hàm Xử Lý Kích Thước
+  /// -----
+  Future<void> onXuLyKichThuocTenLuaTanCong({required MoHinhChienDauCoTongQuat? chienDauCo}) async {
+    double chieuRongThan =
+        chienDauCo?.getThuocTinh?.getThuocTinhHinhAnhSprite?.getDonViSpriteNgoaiHinhVuKhiTanCongThongMinhSS01?.getChieuRongFrame ?? 100.0;
+    double chieuCaoThan =
+        chienDauCo?.getThuocTinh?.getThuocTinhHinhAnhSprite?.getDonViSpriteNgoaiHinhVuKhiTanCongThongMinhSS01?.getChieuCaoFrame ?? 100.0;
+
+    double tongKichThuoc = chieuRongThan + chieuCaoThan;
+
+    double chieuRongThanCapNhat = 120.0 * (chieuRongThan / tongKichThuoc);
+    double chieuCaoThanCapNhat = 120.0 * (chieuCaoThan / tongKichThuoc);
 
     await caiDatChieuRongThan(value: chieuRongThanCapNhat);
     await caiDatChieuCaoThan(value: chieuCaoThanCapNhat);
@@ -1011,15 +1235,64 @@ abstract class VIENDANTANCONGCOBAN with CauTrucThucThiCoBan {
   }
 
   /// -----
+  /// TODO: Kiểm Tra Trạng Thái Tồn Tại
+  /// -----
+  bool onVoidKiemTraTrangThaiTonTaiDangKichHoat() {
+    if (getTrangThaiTonTai?.onCheckBoolDangKichHoat() == true) {
+      return true;
+    }
+
+    return false;
+  }
+
+  /// -----
   /// TODO: Kiểm Tra Viên Đạn Di Chuyển Thoát Màn Hình
   /// -----
   bool onVoidKiemTraDiChuyenThoatManHinh() {
-    if (getDuLieuJsonLamPhang['[DI_CHUYEN_HIEN_THI]'] == true) {
-      return false;
+    // if (getDuLieuJsonLamPhang['[DI_CHUYEN_HIEN_THI]'] == true) {
+    //   return false;
+    // }
+
+    bool kiemTraDiChuyenThoatManHinh = false;
+
+    duLieuJsonBienPhai = getDxTrongTamNotNull + getChieuRongThanNotNull / 2;
+    duLieuJsonBienTrai = getDxTrongTamNotNull - getChieuRongThanNotNull / 2;
+    duLieuJsonBienTren = getDyTrongTamNotNull - getChieuCaoThanNotNull / 2;
+    duLieuJsonBienDuoi = getDyTrongTamNotNull + getChieuCaoThanNotNull / 2;
+    duLieuJsonChieuRongManHinhPhiVatLy = getChieuRongManHinhPhiVatLyNotNull;
+    duLieuJsonChieuCaoManHinhPhiVatLy = getChieuCaoManHinhPhiVatLyNotNull;
+
+    if (duLieuJsonBienPhai < 0) {
+      kiemTraDiChuyenThoatManHinh = true;
+      return kiemTraDiChuyenThoatManHinh;
+    }
+    if (duLieuJsonBienTrai > duLieuJsonChieuRongManHinhPhiVatLy) {
+      kiemTraDiChuyenThoatManHinh = true;
+      return kiemTraDiChuyenThoatManHinh;
+    }
+    if (duLieuJsonBienTren > duLieuJsonChieuCaoManHinhPhiVatLy) {
+      kiemTraDiChuyenThoatManHinh = true;
+      return kiemTraDiChuyenThoatManHinh;
+    }
+    if (duLieuJsonBienDuoi < 0) {
+      kiemTraDiChuyenThoatManHinh = true;
+      return kiemTraDiChuyenThoatManHinh;
     }
 
-    return true;
+    return kiemTraDiChuyenThoatManHinh;
   }
 
   void onDieuKhienDiChuyen({required int chiSoTangTienTheoThoiGianThuc});
+
+  void onVoidHuyTrangThaiVienDan() {
+    getTrangThaiTonTai?.onVoidCaiDatHuyHoanTat();
+
+    onVoidCaiDatDxViTriLayMucTieu(value: null);
+    onVoidCaiDatDyViTriLayMucTieu(value: null);
+
+    onVoidCaiDatDxTrongTam(value: -10000);
+    onVoidCaiDatDyTrongTam(value: -10000);
+
+    onXuLyDuLieuJsonLamPhang();
+  }
 }

@@ -51,16 +51,11 @@ class DoiHinh15HLKhoiOChieuThuanHanhLangBaySs10 extends MoHinhKichBanBayTheoDoiH
       MoHinhPhuongTienThuocKichBanChienDau phuongTienThuocKichBan = MoHinhPhuongTienThuocKichBanChienDau(
         maDinhDanh: maDinhDanh,
         phuongTien: phuongTien,
-        viTriXuatPhat:
-            HanhLangBayCoBan.dcs_0_12(
-              khoangCach: phuongTienCachViTriXuatPhat,
-              dinhHuongTaoKhoangCach: DinhHuongTaoKhoangCachCoBan.cachBienTrai(),
-            ).getViTriXuatPhat,
+        viTriXuatPhat: HanhLangBayCoBan.dcs_0_12(khoangCach: phuongTienCachViTriXuatPhat, dinhHuongTaoKhoangCach: DinhHuongTaoKhoangCachCoBan.cachBienTrai()).getViTriXuatPhat,
         danhSachDoanDuongBayThuocKichBan: [
           MoHinhDoanDuongBayThuocKichBanChienDau(
             maDinhDanhDiemToaDo: null,
-            diemToaDoCuongChe:
-                HanhLangBayCoBan.dcs_0_12(khoangCach: 0, dinhHuongTaoKhoangCach: DinhHuongTaoKhoangCachCoBan.cachBienGiua()).getViTriXuatPhat,
+            diemToaDoCuongChe: HanhLangBayCoBan.dcs_0_12(khoangCach: 0, dinhHuongTaoKhoangCach: DinhHuongTaoKhoangCachCoBan.cachBienGiua()).getViTriXuatPhat,
             maDinhDanhDiemToaDoCauNoiThuNhat: null,
             maDinhDanhDiemToaDoCauNoiThuHai: null,
             diemToaDoCauNoiCuongCheThuNhat: null,
@@ -75,8 +70,7 @@ class DoiHinh15HLKhoiOChieuThuanHanhLangBaySs10 extends MoHinhKichBanBayTheoDoiH
           ),
           MoHinhDoanDuongBayThuocKichBanChienDau(
             maDinhDanhDiemToaDo: null,
-            diemToaDoCuongChe:
-                HanhLangBayCoBan.dcs_11_12(khoangCach: 0, dinhHuongTaoKhoangCach: DinhHuongTaoKhoangCachCoBan.cachBienGiua()).getViTriXuatPhat,
+            diemToaDoCuongChe: HanhLangBayCoBan.dcs_11_12(khoangCach: 0, dinhHuongTaoKhoangCach: DinhHuongTaoKhoangCachCoBan.cachBienGiua()).getViTriXuatPhat,
             maDinhDanhDiemToaDoCauNoiThuNhat: null,
             maDinhDanhDiemToaDoCauNoiThuHai: null,
             diemToaDoCauNoiCuongCheThuNhat: null,

@@ -4,13 +4,12 @@ import 'package:pkg_khung_man_hinh_ss020000/pkg_khung_man_hinh_ss020000_exp.dart
 /// -----
 /// TODO: Khung Nút Bấm Mua Chiến Đấu Cơ Chọn Chỉ Định
 /// -----
-class KHUNGNUTBAMMUACHIENDAUCOCHONCHIDINH
-    extends THANHPHANNUTBAMTHUOCCAPTHUANKICHHOAT {
+class KHUNGNUTBAMMUACHIENDAUCOCHONCHIDINH extends THANHPHANNUTBAMTHUOCCAPTHUANKICHHOAT {
   /// -----
   /// TODO:
   /// -----
   KHUNGNUTBAMMUACHIENDAUCOCHONCHIDINH({
-    required super.globalState,
+    required super.globalStateManagementSystem,
     required super.gameController,
     required super.thanhPhanQuanLyThuocCapTrucTiep,
     required super.sizeDx,
@@ -24,14 +23,8 @@ class KHUNGNUTBAMMUACHIENDAUCOCHONCHIDINH
 
   @override
   Future<void> onCaiDatChiTietThanhPhanGameUI() async {
-    await onCaiDatThanhPhanGameUIKichHoat(
-      value: GAMEUINUTBAMCHONTABCUAHANGKHONGKICHHOAT(),
-      caiDatUuTien: true,
-    );
-    await onCaiDatThanhPhanGameUIHuyKichHoat(
-      value: GAMEUINUTBAMCHONTABCUAHANGKICHHOAT(),
-      caiDatUuTien: true,
-    );
+    await onCaiDatThanhPhanGameUIKichHoat(value: GAMEUINUTBAMCHONTABCUAHANGKHONGKICHHOAT(), caiDatUuTien: true);
+    await onCaiDatThanhPhanGameUIHuyKichHoat(value: GAMEUINUTBAMCHONTABCUAHANGKICHHOAT(), caiDatUuTien: true);
 
     await getThanhPhanGameUIKichHoat?.onSetupRoot();
     await getThanhPhanGameUIHuyKichHoat?.onSetupRoot();

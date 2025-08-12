@@ -133,4 +133,20 @@ class MOHINHCHISOSATTHUONGCOBANVKSCTHEOCAPDO with CauTrucThucThiCoBan {
 
     return;
   }
+
+  Future<void> onKhoiPhucChiSoSatThuongVanHanh() async {
+    onCaiDatChiSoSatThuongVanHanh(value: getChiSoSatThuong, caiDatUuTien: true);
+
+    ///
+    return;
+  }
+
+  Future<void> onTangCuong05PhanTramChiSoSatThuongVanHanh() async {
+    double chiSoSatThuong = getChiSoSatThuong ?? 100;
+
+    onCaiDatChiSoSatThuongVanHanh(value: (getChiSoSatThuongVanHanh ?? 0) + chiSoSatThuong * (5/100), caiDatUuTien: true);
+
+    ///
+    return;
+  }
 }

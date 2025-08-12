@@ -9,7 +9,7 @@ class MANHINHCHINH extends StatefulWidget {
   /// -----
   /// TODO:
   /// -----
-  final QuanLyTrangThaiTongQuat? trangThaiTongQuat;
+  final GlobalStateManagementSystem? trangThaiTongQuat;
 
   @override
   State<MANHINHCHINH> createState() => _MANHINHCHINHState();

@@ -1,3 +1,4 @@
+import 'dart:ui';
 import 'dart:async';
 import 'dart:math';
 import 'package:flame/components.dart';
@@ -8,12 +9,13 @@ import 'package:pkg_dinh_nghia_ss050/pkg_dinh_nghia_ss050_exp.dart';
 ///
 /// TODO:
 ///
-abstract class SpriteVienDanCoBan2 extends SpriteAnimationComponent with HasVisibility {
+abstract class SpriteVienDanCoBan extends SpriteAnimationComponent with HasVisibility {
   /// -----
   /// TODO:
   /// -----
-  SpriteVienDanCoBan2({required QuanLyTrangThaiTongQuat? trangThaiTongQuat}) {
+  SpriteVienDanCoBan({required GlobalStateManagementSystem? trangThaiTongQuat, required Component? parentComponent}) {
     caiDatTrangThaiTongQuat(value: trangThaiTongQuat);
+    caiDatParentComponent(value: parentComponent);
   }
 
   /// -----
@@ -39,9 +41,9 @@ abstract class SpriteVienDanCoBan2 extends SpriteAnimationComponent with HasVisi
   /// -----
   /// TODO: Quản Lý Trạng Thái Tổng Quát
   /// -----
-  QuanLyTrangThaiTongQuat? _trangThaiTongQuat;
-  QuanLyTrangThaiTongQuat? get getTrangThaiTongQuat => _trangThaiTongQuat;
-  Future<void> caiDatTrangThaiTongQuat({required QuanLyTrangThaiTongQuat? value}) async {
+  GlobalStateManagementSystem? _trangThaiTongQuat;
+  GlobalStateManagementSystem? get getTrangThaiTongQuat => _trangThaiTongQuat;
+  Future<void> caiDatTrangThaiTongQuat({required GlobalStateManagementSystem? value}) async {
     _trangThaiTongQuat ??= value;
     return;
   }
@@ -53,6 +55,43 @@ abstract class SpriteVienDanCoBan2 extends SpriteAnimationComponent with HasVisi
   DonViSpriteCoBan? get getDonViSprite => _donViSprite;
   Future<void> caiDatDonViSprite({required DonViSpriteCoBan? value}) async {
     _donViSprite ??= value;
+    return;
+  }
+
+  /// -----
+  /// TODO:
+  /// -----
+  Component? _parentComponent;
+  Component? get getParentComponent => _parentComponent;
+  Future<void> caiDatParentComponent({required Component? value}) async {
+    _parentComponent ??= value;
+    return;
+  }
+
+  Future<void> onAddToParent() async {
+    if (getParentComponent != null && isMounted == false) {
+      await Future.delayed(Duration.zero);
+
+      animation = null;
+      getDonViSprite?.onVoidCaiDatSpriteAnimation(value: null);
+
+      await getParentComponent?.add(this);
+    }
+
+    return;
+  }
+
+  void onRemoveFromParent() {
+
+    onVoidCaiDatKiemTraHienThi(value: false);
+
+    animation = null;
+    getDonViSprite?.onVoidCaiDatSpriteAnimation(value: null);
+
+    if (isMounted == true) {
+      removeFromParent();
+    }
+
     return;
   }
 
@@ -112,7 +151,8 @@ abstract class SpriteVienDanCoBan2 extends SpriteAnimationComponent with HasVisi
   /// -----
   void onVoidCapNhatKiemTraHienThi() {
 
-    if (getMoHinh?.getMoHinh?.getTrangThaiTonTai?.isKhoiTaoHoanTat() == true) {
+    // if (getMoHinh?.getMoHinh?.getTrangThaiTonTai?.onCheckBoolKhoiTaoHoanTat() == true) {
+    if (getMoHinh?.getMoHinh?.getTrangThaiTonTai?.onCheckBoolDangKichHoat() == true) {
       if (getDonViSprite?.getSpriteAnimation == null) {
         final random = Random();
         int randomNumber = random.nextInt(3) + 1; // tạo số từ 1 đến 3
@@ -208,35 +248,45 @@ abstract class SpriteVienDanCoBan2 extends SpriteAnimationComponent with HasVisi
   /// -----
   /// TODO: Cập Nhật Position Và Size
   /// -----
-  void onVoidCapNhatPositionSizeValues() {
+  Map<String, dynamic>? duLieuJsonLamPhangCapNhat = {};
+
+  double dxCapNhat = 0;
+  double dyCapNhat = 0;
+  double chieuCaoThanCapNhat = 0;
+  double chieuRongThanCapNhat = 0;
+  double gocXoay = 0;
+
+  @override
+  void onVoidCapNhatPositionSizeValues()  {
     if (getKiemTraHienThi == true) {
       ///
       /// TODO:
       ///
-      double gocXoay = getMoHinh?.getMoHinh?.getGocXoay ?? 1.0;
+      duLieuJsonLamPhangCapNhat = getMoHinh?.getMoHinh?.getDuLieuJsonLamPhang;
 
-      Map<String, dynamic>? duLieuJsonLamPhang = getMoHinh?.getMoHinh?.getDuLieuJsonLamPhang;
+      dxCapNhat = duLieuJsonLamPhangCapNhat?['[DX_TRONG_TAM]'] ?? 1.0;
+      dyCapNhat = duLieuJsonLamPhangCapNhat?['[DY_TRONG_TAM]'] ?? 1.0;
+      chieuCaoThanCapNhat = duLieuJsonLamPhangCapNhat?['[CHIEU_CAO_THAN]'] ?? 1.0;
+      chieuRongThanCapNhat = duLieuJsonLamPhangCapNhat?['[CHIEU_RONG_THAN]'] ?? 1.0;
 
-      double dx = duLieuJsonLamPhang?['[DX_TRONG_TAM]'] ?? 1.0;
-      double dy = duLieuJsonLamPhang?['[DY_TRONG_TAM]'] ?? 1.0;
-      double chieuCaoThan = duLieuJsonLamPhang?['[CHIEU_CAO_THAN]'] ?? 1.0;
-      double chieuRongThan = duLieuJsonLamPhang?['[CHIEU_RONG_THAN]'] ?? 1.0;
+      gocXoay = getMoHinh?.getMoHinh?.getGocXoay ?? 1.0;
 
-      ///
-      /// TODO:
-      ///
-      if (position.x != dx || position.y != dy) {
-        position.setValues(dx, dy);
-      }
-      if (size.x != chieuRongThan || size.y != chieuCaoThan) {
-        size.setValues(chieuRongThan, chieuCaoThan);
-      }
-
-      // if (angle != gocXoay && getBienTangTienGiamTanXuatCapNhat % 2 == 0) {
-      //   angle = gocXoay;
-      // }
-      if (angle != 0) {
-        angle = 0;
+      if (dxCapNhat.isNaN == false && dyCapNhat.isNaN == false && chieuCaoThanCapNhat.isNaN == false && chieuRongThanCapNhat.isNaN == false) {
+        ///
+        /// TODO:
+        ///
+        if (position.x != dxCapNhat || position.y != dyCapNhat) {
+          position.setValues(dxCapNhat, dyCapNhat);
+        }
+        if (size.x != chieuRongThanCapNhat || size.y != chieuCaoThanCapNhat) {
+          size.setValues(chieuRongThanCapNhat, chieuCaoThanCapNhat);
+        }
+        /// -----
+        /// TODO:
+        /// -----
+        if (angle != gocXoay) {
+          angle = gocXoay;
+        }
       }
     }
   }
@@ -256,8 +306,20 @@ abstract class SpriteVienDanCoBan2 extends SpriteAnimationComponent with HasVisi
     // debugMode = true;
     anchor = Anchor.center;
 
-    
-
     await onInitRoot();
+  }
+
+  @override
+  void renderTree(Canvas canvas) {
+    // import 'dart:ui';
+    try {
+      if (getKiemTraHienThi == true && animation != null) {
+        super.renderTree(canvas);
+      }
+    } catch (e) {
+      return;
+    }
+
+    return;
   }
 }

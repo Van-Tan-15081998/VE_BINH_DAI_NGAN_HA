@@ -12,7 +12,7 @@ class BANGHIDULIEUCOBAN with CauTrucThucThiCoBan {
   @override
   Future<void> onAttachRoot({required dynamic attachValue}) async {
 
-    if (attachValue is QuanLyTrangThaiTongQuat) {
+    if (attachValue is GlobalStateManagementSystem) {
       await onCaiDatMayLuuTruDuLieu(value: attachValue.getDichVuCoSoDuLieu?.getMayLuuTruDuLieu, caiDatUuTien: true);
     }
 

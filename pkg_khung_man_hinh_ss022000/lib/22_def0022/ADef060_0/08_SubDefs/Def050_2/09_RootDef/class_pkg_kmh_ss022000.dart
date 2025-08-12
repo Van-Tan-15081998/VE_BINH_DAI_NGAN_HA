@@ -4,13 +4,12 @@ import 'package:pkg_khung_man_hinh_ss020000/pkg_khung_man_hinh_ss020000_exp.dart
 /// -----
 /// TODO: Khung Tích Hợp Tài Nguyên Dollar Trao Đổi
 /// -----
-class KHUNGTICHHOPTAINGUYENDOLLARTRAODOI
-    extends THANHPHANTICHHOPNUTBAMVANBANTHUOCCAP {
+class KHUNGTICHHOPTAINGUYENDOLLARTRAODOI extends THANHPHANTICHHOPNUTBAMVANBANTHUOCCAP {
   /// -----
   /// TODO:
   /// -----
   KHUNGTICHHOPTAINGUYENDOLLARTRAODOI({
-    required super.globalState,
+    required super.globalStateManagementSystem,
     required super.gameController,
     required super.thanhPhanQuanLyThuocCapTrucTiep,
     required super.sizeDx,
@@ -26,10 +25,7 @@ class KHUNGTICHHOPTAINGUYENDOLLARTRAODOI
 
   @override
   Future<void> onCaiDatChiTietThanhPhanGameUI() async {
-    await onCaiDatThanhPhanGameUI(
-      value: GAMEUIKHUNGTHONGTINTAINGUYENDOLLARTRAODOI(),
-      caiDatUuTien: true,
-    );
+    await onCaiDatThanhPhanGameUI(value: GAMEUIKHUNGTHONGTINTAINGUYENDOLLARTRAODOI(), caiDatUuTien: true);
 
     await getThanhPhanGameUI?.onSetupRoot();
 
@@ -37,6 +33,33 @@ class KHUNGTICHHOPTAINGUYENDOLLARTRAODOI
 
     await onCapNhatChiTietThanhPhanGameUI();
 
+    isVisible = false;
+
     return;
+  }
+
+  int tongSoLuongTaiNguyenDollarTraoDoi = 1;
+
+  @override
+  void update(double dt) {
+    // TODO: implement update
+    super.update(dt);
+
+    if (getGlobalStateManagementSystem?.getTienTrinhTongQuat?.getTrangThaiHoatDongTaiManHinhChinh == true) {
+      if (isVisible == false) {
+        isVisible = true;
+      }
+    } else {
+      if (isVisible == true) {
+        isVisible = false;
+      }
+    }
+
+    if (tongSoLuongTaiNguyenDollarTraoDoi != 0) {
+      tongSoLuongTaiNguyenDollarTraoDoi = 1000;
+
+      getThanhPhanVanBanThuan?.onVoidCaiDatVanBan(value: tongSoLuongTaiNguyenDollarTraoDoi.toString(), caiDatUuTien: true);
+      getThanhPhanVanBanSoHoc?.onVoidCaiDatVanBan(value: tongSoLuongTaiNguyenDollarTraoDoi.toDouble(), caiDatUuTien: true);
+    }
   }
 }

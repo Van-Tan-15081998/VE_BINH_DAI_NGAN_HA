@@ -93,7 +93,7 @@ mixin CauTrucThucThiCoBan {
   /// -----
   Future<void> onReportRootIssue({required String? nameFunction}) async {
     if (kDebugMode) {
-      String message = '[❗️❗️❗️Báo Cáo Vấn Đề❗️❗️❗️]: ▶️ $nameFunction';
+      // String message = '[❗️❗️❗️Báo Cáo Vấn Đề❗️❗️❗️]: ▶️ $nameFunction';
       // throw (Exception(message));
     }
 

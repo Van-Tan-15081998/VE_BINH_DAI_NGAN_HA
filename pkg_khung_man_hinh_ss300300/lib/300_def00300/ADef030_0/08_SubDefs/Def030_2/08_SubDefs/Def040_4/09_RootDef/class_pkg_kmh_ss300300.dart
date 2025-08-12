@@ -1,3 +1,5 @@
+import 'dart:ui';
+
 import 'package:flame/events.dart';
 import 'package:pkg_dinh_nghia_ss022/pkg_dinh_nghia_ss022_exp.dart';
 import 'package:pkg_khung_man_hinh_ss020000/pkg_khung_man_hinh_ss020000_exp.dart';
@@ -5,12 +7,12 @@ import 'package:pkg_khung_man_hinh_ss020000/pkg_khung_man_hinh_ss020000_exp.dart
 /// -----
 /// TODO: Nút Bấm Chọn Quay Về Trang Chủ
 /// -----
-class NUTBAMCHONQUAYVETRANGCHU extends THANHPHANNUTBAMTHUOCCAPTHUANKICHHOAT {
+class NUTBAMCHONTIEPTUCVOIKETQUATHATBAI extends THANHPHANNUTBAMTHUOCCAPTHUANKICHHOAT {
   /// -----
   /// TODO:
   /// -----
-  NUTBAMCHONQUAYVETRANGCHU({
-    required super.globalState,
+  NUTBAMCHONTIEPTUCVOIKETQUATHATBAI({
+    required super.globalStateManagementSystem,
     required super.gameController,
     required super.thanhPhanQuanLyThuocCapTrucTiep,
     required super.sizeDx,
@@ -24,7 +26,11 @@ class NUTBAMCHONQUAYVETRANGCHU extends THANHPHANNUTBAMTHUOCCAPTHUANKICHHOAT {
 
   @override
   void onThucThi() async {
-    await getGameController?.onTroVeTrangChu();
+
+    // await getGameController?.onHuyKichHoatKhungManHinhThuocCapSS300300();
+    await getGameController?.onKichHoatKhungManHinhThuocCapSS300500(); // Khung Màn Hình Thất Bại
+
+    // await getGameController?.onTroVeTrangChu();
   }
 
   @override
@@ -71,11 +77,21 @@ class NUTBAMCHONQUAYVETRANGCHU extends THANHPHANNUTBAMTHUOCCAPTHUANKICHHOAT {
     await super.onInitRoot();
 
     getThanhPhanVanBan?.onVoidCaiDatVanBan(
-      value: 'TRANG CHỦ',
+      value: 'TIẾP TỤC',
       caiDatUuTien: true,
     );
 
+    getThanhPhanVanBan?.onCaiDatPhongCachVanBan(color: Color(0xFF2E2E2E), fontSize: 15, fontWeight: FontWeight.bold);
+
+    getThanhPhanVanBan?.caiDatTuyChinhTextRenderer = true;
+
     ///
     return;
+  }
+
+  @override
+  void update(double dt) {
+    // TODO: implement update
+    super.update(dt);
   }
 }

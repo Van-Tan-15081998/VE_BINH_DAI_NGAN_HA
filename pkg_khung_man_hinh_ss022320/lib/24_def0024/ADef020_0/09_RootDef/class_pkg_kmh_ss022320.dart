@@ -1,3 +1,4 @@
+import 'dart:ui';
 import 'package:pkg_khung_man_hinh_ss020000/pkg_khung_man_hinh_ss020000_exp.dart';
 import 'package:pkg_khung_man_hinh_ss022320/24_def0024/ADef020_0/08_SubDefs/Def020_2/09_RootDef/class_pkg_kmh_ss022320.dart';
 import 'package:pkg_khung_man_hinh_ss022320/24_def0024/ADef020_0/08_SubDefs/Def030_2/09_RootDef/class_pkg_kmh_ss022320.dart';
@@ -13,7 +14,7 @@ class KHUNGMANHINHSS022320 extends THANHPHANMANHINHTHUOCCAPCOBAN {
   /// TODO:
   /// -----
   KHUNGMANHINHSS022320({
-    required super.globalState,
+    required super.globalStateManagementSystem,
     required super.gameController,
     required super.thanhPhanQuanLyThuocCapTrucTiep,
     required super.sizeDx,
@@ -21,6 +22,24 @@ class KHUNGMANHINHSS022320 extends THANHPHANMANHINHTHUOCCAPCOBAN {
     required super.positionDx,
     required super.positionDy,
   });
+
+  // @override
+  // void updateTree(double dt) {
+  //   if (false) {
+  //     super.updateTree(dt);
+  //   }
+  //
+  //   return;
+  // }
+  //
+  // @override
+  // void renderTree(Canvas canvas) { // import 'dart:ui';
+  //   if (false) {
+  //     super.renderTree(canvas);
+  //   }
+  //
+  //   return;
+  // }
 
   /// -----
   /// TODO: Setup Root
@@ -38,7 +57,7 @@ class KHUNGMANHINHSS022320 extends THANHPHANMANHINHTHUOCCAPCOBAN {
     await Future.wait([
       onCaiDatQuanLyThanhPhanManHinhThuocCap(
         value: QUANLYTHANHPHANMANHINHTHUOCCAP(
-          globalState: getGlobalState,
+          globalStateManagementSystem: getGlobalStateManagementSystem,
           gameController: getGameController,
           thanhPhanQuanLyThuocCapTrucTiep: getThanhPhanQuanLyThuocCapTrucTiep,
           sizeDx: getSizeDx,
@@ -47,7 +66,7 @@ class KHUNGMANHINHSS022320 extends THANHPHANMANHINHTHUOCCAPCOBAN {
       ).catchError((e) => null),
       onCaiDatQuanLyThanhPhanNutBamThuocCap(
         value: QUANLYTHANHPHANNUTBAMTHUOCCAP(
-          globalState: getGlobalState,
+          globalStateManagementSystem: getGlobalStateManagementSystem,
           gameController: getGameController,
           thanhPhanQuanLyThuocCapTrucTiep: getThanhPhanQuanLyThuocCapTrucTiep,
           sizeDx: getSizeDx,
@@ -56,7 +75,7 @@ class KHUNGMANHINHSS022320 extends THANHPHANMANHINHTHUOCCAPCOBAN {
       ).catchError((e) => null),
       onCaiDatQuanLyThanhPhanVanBanThuocCap(
         value: QUANLYTHANHPHANVANBANTHUOCCAP(
-          globalState: getGlobalState,
+          globalStateManagementSystem: getGlobalStateManagementSystem,
           gameController: getGameController,
           thanhPhanQuanLyThuocCapTrucTiep: getThanhPhanQuanLyThuocCapTrucTiep,
           sizeDx: getSizeDx,
@@ -65,7 +84,7 @@ class KHUNGMANHINHSS022320 extends THANHPHANMANHINHTHUOCCAPCOBAN {
       ).catchError((e) => null),
       onCaiDatQuanLyThanhPhanHinhAnhThuocCap(
         value: QUANLYTHANHPHANHINHANHTHUOCCAP(
-          globalState: getGlobalState,
+          globalStateManagementSystem: getGlobalStateManagementSystem,
           gameController: getGameController,
           thanhPhanQuanLyThuocCapTrucTiep: getThanhPhanQuanLyThuocCapTrucTiep,
           sizeDx: getSizeDx,
@@ -74,7 +93,7 @@ class KHUNGMANHINHSS022320 extends THANHPHANMANHINHTHUOCCAPCOBAN {
       ).catchError((e) => null),
       onCaiDatQuanLyThanhPhanTichHopThuocCap(
         value: QUANLYTHANHPHANTICHHOPTHUOCCAP(
-          globalState: getGlobalState,
+          globalStateManagementSystem: getGlobalStateManagementSystem,
           gameController: getGameController,
           thanhPhanQuanLyThuocCapTrucTiep: getThanhPhanQuanLyThuocCapTrucTiep,
           sizeDx: getSizeDx,
@@ -102,11 +121,11 @@ class KHUNGMANHINHSS022320 extends THANHPHANMANHINHTHUOCCAPCOBAN {
     /// -----
     double sizeDxManHinhVatLy =
         getSizeDx ??
-        getGlobalState?.getThietLapTongQuat?.getChieuRongManHinhVatLy ??
+        getGlobalStateManagementSystem?.getThietLapTongQuat?.getChieuRongManHinhVatLy ??
         100.0;
     double sizeDyManHinhVatLy =
         getSizeDy ??
-        getGlobalState?.getThietLapTongQuat?.getChieuCaoManHinhVatLy ??
+        getGlobalStateManagementSystem?.getThietLapTongQuat?.getChieuCaoManHinhVatLy ??
         100.0;
 
     getTrangThaiKichHoatThanhPhan?.getDiemToaDoThanhPhanHuyKichHoat

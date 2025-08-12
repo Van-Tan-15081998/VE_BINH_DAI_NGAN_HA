@@ -15,7 +15,7 @@ import 'package:pkg_man_hinh_ss00028ss030/24_def0024/ZDef00_0/class_20002626.dar
 class MANHINHCHIENDAU extends StatefulWidget {
   const MANHINHCHIENDAU({super.key, required this.trangThaiTongQuat, required this.onTrienKhaiChienDau});
 
-  final QuanLyTrangThaiTongQuat? trangThaiTongQuat;
+  final GlobalStateManagementSystem? trangThaiTongQuat;
 
   final VoidCallback? onTrienKhaiChienDau;
 
@@ -223,9 +223,9 @@ class _MANHINHCHIENDAUState extends State<MANHINHCHIENDAU> with SingleTickerProv
                         /// -----
                         /// TODO:
                         /// -----
-                        await widget.trangThaiTongQuat?.getBangDieuKhienKichBanChienDauTheoGiaiDoan
-                        ?.getQuanLyDieuKhienChuyenKichBanChienDau
-                        ?.onKhoiDongKichBan(trangThaiTongQuat: widget.trangThaiTongQuat);
+                        // await widget.trangThaiTongQuat?.getBangDieuKhienKichBanChienDauTheoGiaiDoan
+                        // ?.getQuanLyDieuKhienChuyenKichBanChienDau
+                        // ?.onKhoiDongKichBan(trangThaiTongQuat: widget.trangThaiTongQuat);
 
                         /// -----
                         /// TODO:

@@ -10,9 +10,9 @@ class KhungVongLapSS01PkgManHinhSS00224 extends Component with VongLapThoiGianCo
   /// -----
   /// TODO:
   /// -----
-  QuanLyTrangThaiTongQuat? _trangThaiTongQuat;
-  QuanLyTrangThaiTongQuat? get getTrangThaiTongQuat => _trangThaiTongQuat;
-  Future<void> caiDatTrangThaiTongQuat({required QuanLyTrangThaiTongQuat? value}) async {
+  GlobalStateManagementSystem? _trangThaiTongQuat;
+  GlobalStateManagementSystem? get getTrangThaiTongQuat => _trangThaiTongQuat;
+  Future<void> caiDatTrangThaiTongQuat({required GlobalStateManagementSystem? value}) async {
     _trangThaiTongQuat ??= value;
     return;
   }
@@ -20,7 +20,7 @@ class KhungVongLapSS01PkgManHinhSS00224 extends Component with VongLapThoiGianCo
   /// -----
   /// TODO:
   /// -----
-  KhungVongLapSS01PkgManHinhSS00224({required QuanLyTrangThaiTongQuat? trangThaiTongQuat}) {
+  KhungVongLapSS01PkgManHinhSS00224({required GlobalStateManagementSystem? trangThaiTongQuat}) {
     caiDatTrangThaiTongQuat(value: trangThaiTongQuat);
   }
 
@@ -34,7 +34,7 @@ class KhungVongLapSS01PkgManHinhSS00224 extends Component with VongLapThoiGianCo
   /// -----
   bool onVoidKiemTraTanXuatCapNhat() {
     if (getTrangThaiTongQuat?.getThietLapTongQuat?.onKiemTraChoPhepCapNhatTheoTocDoKhungHinh(
-        maDinhDanh: '[VONG_LAP_CHIEN_DAUCO_TAN_CONG_CO_BAN]',
+        maDinhDanh: '[VONG_LAP_CHIEN_DAU_CO_TAN_CONG_CO_BAN]',
         chiSoTangTienGiamTanXuatCapNhat: getChiSoTangTienTheoThoiGianThuc) == true) {
       return true;
     }
@@ -44,7 +44,7 @@ class KhungVongLapSS01PkgManHinhSS00224 extends Component with VongLapThoiGianCo
 
   @override
   void update(double dt) {
-    if (getTrangThaiTongQuat != null) {
+
       /// -----
       /// -----
       /// TODO: Chạy Vòng Loop
@@ -59,6 +59,6 @@ class KhungVongLapSS01PkgManHinhSS00224 extends Component with VongLapThoiGianCo
        getTrangThaiTongQuat?.getChienDauCoChienDauTongQuat?.getPhuongThucTanCongCoBan?.getPhuongThucTanCongCoBanSS01?.onLoop();
        getTrangThaiTongQuat?.getChienDauCoChienDauTongQuat?.getPhuongThucTanCongCoBan?.getPhuongThucTanCongCoBanSS02?.onLoop();
        getTrangThaiTongQuat?.getChienDauCoChienDauTongQuat?.getPhuongThucTanCongCoBan?.getPhuongThucTanCongCoBanSS03?.onLoop();
-    }
+
   }
 }

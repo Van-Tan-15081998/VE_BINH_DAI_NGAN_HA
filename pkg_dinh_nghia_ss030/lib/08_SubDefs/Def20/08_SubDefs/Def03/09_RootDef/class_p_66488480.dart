@@ -31,6 +31,10 @@ class MoHinhTrangThaiTrongChienDauPhuongTien with CauTrucThucThiCoBan {
 
     await caiDatTrangThaiPhuongTienNhanSatThuong(value: MoHinhTrangThaiPhuongTienNhanSatThuong());
 
+    onVoidCaiDatVienDanThongMinhVaChamSS010(value: TrangThaiVienDanThongMinh(moHinh: null));
+    onVoidCaiDatVienDanThongMinhVaChamSS020(value: TrangThaiVienDanThongMinh(moHinh: null));
+    onVoidCaiDatVienDanThongMinhVaChamSS030(value: TrangThaiVienDanThongMinh(moHinh: null));
+
     /// -----
     /// TODO: Setup Root For SubCom
     /// -----
@@ -131,21 +135,80 @@ class MoHinhTrangThaiTrongChienDauPhuongTien with CauTrucThucThiCoBan {
     return;
   }
 
+  void onVoidCaiDatVienDanThongMinhVaCham({VienDanThongMinh? vienDanThongMinh}) {
+    if (getVienDanThongMinhVaChamSS010?.getMoHinh?.getTrangThaiTonTai?.isHuyHoanTat() == true) {
+      getVienDanThongMinhVaChamSS010?.caiDatMoHinh(value: null);
+    }
+    if (getVienDanThongMinhVaChamSS020?.getMoHinh?.getTrangThaiTonTai?.isHuyHoanTat() == true) {
+      getVienDanThongMinhVaChamSS020?.caiDatMoHinh(value: null);
+    }
+    if (getVienDanThongMinhVaChamSS030?.getMoHinh?.getTrangThaiTonTai?.isHuyHoanTat() == true) {
+      getVienDanThongMinhVaChamSS030?.caiDatMoHinh(value: null);
+    }
+    if (getVienDanThongMinhVaChamSS010?.getMoHinh == null && vienDanThongMinh != null) {
+      getVienDanThongMinhVaChamSS010?.caiDatMoHinh(value: vienDanThongMinh);
+    } else if (getVienDanThongMinhVaChamSS020?.getMoHinh == null && vienDanThongMinh != null) {
+      getVienDanThongMinhVaChamSS020?.caiDatMoHinh(value: vienDanThongMinh);
+    } else if (getVienDanThongMinhVaChamSS030?.getMoHinh == null && vienDanThongMinh != null) {
+      getVienDanThongMinhVaChamSS030?.caiDatMoHinh(value: vienDanThongMinh);
+    }
+
+    return;
+  }
+
   /// -----
-  /// TODO: Mã Định Danh Viên Đạn Va Chạm
+  /// TODO:
   /// -----
-  String? _maDinhDanhVienDanVaCham;
-  String? get getMaDinhDanhVienDanVaCham => _maDinhDanhVienDanVaCham;
-  Future<void> onCaiDatMaDinhDanhVienDanVaCham({required String? value, bool? caiDatUuTien}) async {
+  TrangThaiVienDanThongMinh? _vienDanThongMinhVaChamSS010;
+  TrangThaiVienDanThongMinh? get getVienDanThongMinhVaChamSS010 => _vienDanThongMinhVaChamSS010;
+  void onVoidCaiDatVienDanThongMinhVaChamSS010({required TrangThaiVienDanThongMinh? value, bool? caiDatUuTien}) {
     if (caiDatUuTien == true) {
-      _maDinhDanhVienDanVaCham = value;
+      _vienDanThongMinhVaChamSS010 = value;
     } else {
-      _maDinhDanhVienDanVaCham ??= value;
+      _vienDanThongMinhVaChamSS010 ??= value;
     }
 
     ///
     return;
   }
+
+  /// -----
+  /// TODO:
+  /// -----
+  TrangThaiVienDanThongMinh? _vienDanThongMinhVaChamSS020;
+  TrangThaiVienDanThongMinh? get getVienDanThongMinhVaChamSS020 => _vienDanThongMinhVaChamSS020;
+  void onVoidCaiDatVienDanThongMinhVaChamSS020({required TrangThaiVienDanThongMinh? value, bool? caiDatUuTien}) {
+    if (caiDatUuTien == true) {
+      _vienDanThongMinhVaChamSS020 = value;
+    } else {
+      _vienDanThongMinhVaChamSS020 ??= value;
+    }
+
+    ///
+    return;
+  }
+
+  /// -----
+  /// TODO:
+  /// -----
+  TrangThaiVienDanThongMinh? _vienDanThongMinhVaChamSS030;
+  TrangThaiVienDanThongMinh? get getVienDanThongMinhVaChamSS030 => _vienDanThongMinhVaChamSS030;
+  void onVoidCaiDatVienDanThongMinhVaChamSS030({required TrangThaiVienDanThongMinh? value, bool? caiDatUuTien}) {
+    if (caiDatUuTien == true) {
+      _vienDanThongMinhVaChamSS030 = value;
+    } else {
+      _vienDanThongMinhVaChamSS030 ??= value;
+    }
+
+    ///
+    return;
+  }
+
+  /// -----
+  /// TODO: Mã Định Danh Viên Đạn Va Chạm
+  /// -----
+  String? _maDinhDanhVienDanVaCham;
+  String? get getMaDinhDanhVienDanVaCham => _maDinhDanhVienDanVaCham;
   void onVoidCaiDatMaDinhDanhVienDanVaCham({required String? value, bool? caiDatUuTien}) {
     if (caiDatUuTien == true) {
       _maDinhDanhVienDanVaCham = value;
@@ -158,32 +221,15 @@ class MoHinhTrangThaiTrongChienDauPhuongTien with CauTrucThucThiCoBan {
   }
 
   /// -----
-  /// TODO: Mã Định Danh Viên Đạn Va Chạm SS001
+  /// TODO: Mã Định Danh Viên Đạn Va Chạm SS010
   /// -----
-  String? _maDinhDanhVienDanVaChamSS001;
-  String? get getMaDinhDanhVienDanVaChamSS001 => _maDinhDanhVienDanVaChamSS001;
-  void onVoidCaiDatMaDinhDanhVienDanVaChamSS001({required String? value, bool? caiDatUuTien}) {
+  String? _maDinhDanhVienDanVaChamSS010;
+  String? get getMaDinhDanhVienDanVaChamSS010 => _maDinhDanhVienDanVaChamSS010;
+  void onVoidCaiDatMaDinhDanhVienDanVaChamSS010({required String? value, bool? caiDatUuTien}) {
     if (caiDatUuTien == true) {
-      _maDinhDanhVienDanVaChamSS001 = value;
+      _maDinhDanhVienDanVaChamSS010 = value;
     } else {
-      _maDinhDanhVienDanVaChamSS001 ??= value;
-    }
-
-    ///
-    return;
-  }
-
-
-  /// -----
-  /// TODO: Mã Định Danh Viên Đạn Va Chạm SS002
-  /// -----
-  String? _maDinhDanhVienDanVaChamSS002;
-  String? get getMaDinhDanhVienDanVaChamSS002 => _maDinhDanhVienDanVaChamSS002;
-  void onVoidCaiDatMaDinhDanhVienDanVaChamSS002({required String? value, bool? caiDatUuTien}) {
-    if (caiDatUuTien == true) {
-      _maDinhDanhVienDanVaChamSS002 = value;
-    } else {
-      _maDinhDanhVienDanVaChamSS002 ??= value;
+      _maDinhDanhVienDanVaChamSS010 ??= value;
     }
 
     ///
@@ -191,15 +237,143 @@ class MoHinhTrangThaiTrongChienDauPhuongTien with CauTrucThucThiCoBan {
   }
 
   /// -----
-  /// TODO: Mã Định Danh Viên Đạn Va Chạm SS003
+  /// TODO: Mã Định Danh Viên Đạn Va Chạm SS020
   /// -----
-  String? _maDinhDanhVienDanVaChamSS003;
-  String? get getMaDinhDanhVienDanVaChamSS003 => _maDinhDanhVienDanVaChamSS003;
-  void onVoidCaiDatMaDinhDanhVienDanVaChamSS003({required String? value, bool? caiDatUuTien}) {
+  String? _maDinhDanhVienDanVaChamSS020;
+  String? get getMaDinhDanhVienDanVaChamSS020 => _maDinhDanhVienDanVaChamSS020;
+  void onVoidCaiDatMaDinhDanhVienDanVaChamSS020({required String? value, bool? caiDatUuTien}) {
     if (caiDatUuTien == true) {
-      _maDinhDanhVienDanVaChamSS003 = value;
+      _maDinhDanhVienDanVaChamSS020 = value;
     } else {
-      _maDinhDanhVienDanVaChamSS003 ??= value;
+      _maDinhDanhVienDanVaChamSS020 ??= value;
+    }
+
+    ///
+    return;
+  }
+
+  /// -----
+  /// TODO: Mã Định Danh Viên Đạn Va Chạm SS030
+  /// -----
+  String? _maDinhDanhVienDanVaChamSS030;
+  String? get getMaDinhDanhVienDanVaChamSS030 => _maDinhDanhVienDanVaChamSS030;
+  void onVoidCaiDatMaDinhDanhVienDanVaChamSS030({required String? value, bool? caiDatUuTien}) {
+    if (caiDatUuTien == true) {
+      _maDinhDanhVienDanVaChamSS030 = value;
+    } else {
+      _maDinhDanhVienDanVaChamSS030 ??= value;
+    }
+
+    ///
+    return;
+  }
+
+  /// -----
+  /// TODO: Mã Định Danh Viên Đạn Va Chạm SS040
+  /// -----
+  String? _maDinhDanhVienDanVaChamSS040;
+  String? get getMaDinhDanhVienDanVaChamSS040 => _maDinhDanhVienDanVaChamSS040;
+  void onVoidCaiDatMaDinhDanhVienDanVaChamSS040({required String? value, bool? caiDatUuTien}) {
+    if (caiDatUuTien == true) {
+      _maDinhDanhVienDanVaChamSS040 = value;
+    } else {
+      _maDinhDanhVienDanVaChamSS040 ??= value;
+    }
+
+    ///
+    return;
+  }
+
+  /// -----
+  /// TODO: Mã Định Danh Viên Đạn Va Chạm SS050
+  /// -----
+  String? _maDinhDanhVienDanVaChamSS050;
+  String? get getMaDinhDanhVienDanVaChamSS050 => _maDinhDanhVienDanVaChamSS050;
+  void onVoidCaiDatMaDinhDanhVienDanVaChamSS050({required String? value, bool? caiDatUuTien}) {
+    if (caiDatUuTien == true) {
+      _maDinhDanhVienDanVaChamSS050 = value;
+    } else {
+      _maDinhDanhVienDanVaChamSS050 ??= value;
+    }
+
+    ///
+    return;
+  }
+
+  /// -----
+  /// TODO: Mã Định Danh Viên Đạn Va Chạm SS060
+  /// -----
+  String? _maDinhDanhVienDanVaChamSS060;
+  String? get getMaDinhDanhVienDanVaChamSS060 => _maDinhDanhVienDanVaChamSS060;
+  void onVoidCaiDatMaDinhDanhVienDanVaChamSS060({required String? value, bool? caiDatUuTien}) {
+    if (caiDatUuTien == true) {
+      _maDinhDanhVienDanVaChamSS060 = value;
+    } else {
+      _maDinhDanhVienDanVaChamSS060 ??= value;
+    }
+
+    ///
+    return;
+  }
+
+  /// -----
+  /// TODO: Mã Định Danh Viên Đạn Va Chạm SS070
+  /// -----
+  String? _maDinhDanhVienDanVaChamSS070;
+  String? get getMaDinhDanhVienDanVaChamSS070 => _maDinhDanhVienDanVaChamSS070;
+  void onVoidCaiDatMaDinhDanhVienDanVaChamSS070({required String? value, bool? caiDatUuTien}) {
+    if (caiDatUuTien == true) {
+      _maDinhDanhVienDanVaChamSS070 = value;
+    } else {
+      _maDinhDanhVienDanVaChamSS070 ??= value;
+    }
+
+    ///
+    return;
+  }
+
+  /// -----
+  /// TODO: Mã Định Danh Viên Đạn Va Chạm SS080
+  /// -----
+  String? _maDinhDanhVienDanVaChamSS080;
+  String? get getMaDinhDanhVienDanVaChamSS080 => _maDinhDanhVienDanVaChamSS080;
+  void onVoidCaiDatMaDinhDanhVienDanVaChamSS080({required String? value, bool? caiDatUuTien}) {
+    if (caiDatUuTien == true) {
+      _maDinhDanhVienDanVaChamSS080 = value;
+    } else {
+      _maDinhDanhVienDanVaChamSS080 ??= value;
+    }
+
+    ///
+    return;
+  }
+
+  /// -----
+  /// TODO: Mã Định Danh Viên Đạn Va Chạm SS090
+  /// -----
+  String? _maDinhDanhVienDanVaChamSS090;
+  String? get getMaDinhDanhVienDanVaChamSS090 => _maDinhDanhVienDanVaChamSS090;
+  void onVoidCaiDatMaDinhDanhVienDanVaChamSS090({required String? value, bool? caiDatUuTien}) {
+    if (caiDatUuTien == true) {
+      _maDinhDanhVienDanVaChamSS090 = value;
+    } else {
+      _maDinhDanhVienDanVaChamSS090 ??= value;
+    }
+
+    ///
+    return;
+  }
+
+  /// -----
+  /// TODO: Mã Định Danh Viên Đạn Va Chạm SS100
+  /// -----
+  String? _maDinhDanhVienDanVaChamSS100;
+  String? get getMaDinhDanhVienDanVaChamSS100 => _maDinhDanhVienDanVaChamSS100;
+  void onVoidCaiDatMaDinhDanhVienDanVaChamSS100({required String? value, bool? caiDatUuTien}) {
+    if (caiDatUuTien == true) {
+      _maDinhDanhVienDanVaChamSS100 = value;
+    } else {
+      _maDinhDanhVienDanVaChamSS100 ??= value;
     }
 
     ///
@@ -231,6 +405,7 @@ class MoHinhTrangThaiTrongChienDauPhuongTien with CauTrucThucThiCoBan {
     _trangThaiTonTai = value;
     return;
   }
+
   void onVoidCaiDatTrangThaiTonTai({required TrangThaiTonTaiCoBan? value}) {
     _trangThaiTonTai = value;
     return;

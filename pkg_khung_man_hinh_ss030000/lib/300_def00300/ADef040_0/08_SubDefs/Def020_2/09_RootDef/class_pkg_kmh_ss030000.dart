@@ -8,7 +8,7 @@ class VANBANDINHDANHKHUNGMANHINH extends VANBANDINHDANHKHUNGMANHINHTHUOCCAP {
   /// TODO:
   /// -----
   VANBANDINHDANHKHUNGMANHINH({
-    required super.globalState,
+    required super.globalStateManagementSystem,
     required super.gameController,
     required super.thanhPhanQuanLyThuocCapTrucTiep,
     required super.sizeDx,
@@ -19,7 +19,7 @@ class VANBANDINHDANHKHUNGMANHINH extends VANBANDINHDANHKHUNGMANHINHTHUOCCAP {
 
   @override
   Future<void> onCaiDatChiTietThanhPhanVanBan() async {
-    onVoidCaiDatVanBan(value: 'Bảng Điều Khiển Chiến Đấu', caiDatUuTien: true);
+    // onVoidCaiDatVanBan(value: 'Bảng Điều Khiển Chiến Đấu', caiDatUuTien: true);
 
     return;
   }

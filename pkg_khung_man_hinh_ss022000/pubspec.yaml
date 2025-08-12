@@ -14,6 +14,9 @@ dependencies:
   flame: 1.25.0
   provider: 6.0.2
 
+  pkg_dinh_nghia_ss020000:
+    path: ../pkg_dinh_nghia_ss020000
+
   pkg_dinh_nghia_ss020:
     path: ../pkg_dinh_nghia_ss020
   pkg_dinh_nghia_ss022:
@@ -50,6 +53,12 @@ dependencies:
     path: ../pkg_man_hinh_ss00230
   pkg_man_hinh_ss00240:
     path: ../pkg_man_hinh_ss00240
+
+  van_tan_export:
+    path: ../../van_tan/van_tan_exports/van_tan_export
+
+  package_export:
+    path: ../../packages/package_exports/package_export
 
 dev_dependencies:
   #  flutter_test:

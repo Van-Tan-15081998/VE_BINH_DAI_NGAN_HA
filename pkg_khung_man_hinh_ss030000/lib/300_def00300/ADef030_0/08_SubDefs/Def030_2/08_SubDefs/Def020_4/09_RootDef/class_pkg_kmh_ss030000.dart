@@ -1,4 +1,5 @@
 import 'package:flame/events.dart';
+import 'package:flame/flame.dart';
 import 'package:pkg_dinh_nghia_ss022/pkg_dinh_nghia_ss022_exp.dart';
 import 'package:pkg_khung_man_hinh_ss020000/pkg_khung_man_hinh_ss020000_exp.dart';
 
@@ -10,7 +11,7 @@ class NUTBAMSS030000SS010 extends THANHPHANNUTBAMTHUOCCAPTHUANKICHHOAT {
   /// TODO:
   /// -----
   NUTBAMSS030000SS010({
-    required super.globalState, //
+    required super.globalStateManagementSystem, //
     required super.gameController,
     required super.thanhPhanQuanLyThuocCapTrucTiep,
     required super.sizeDx, //
@@ -24,6 +25,9 @@ class NUTBAMSS030000SS010 extends THANHPHANNUTBAMTHUOCCAPTHUANKICHHOAT {
 
   @override
   void onThucThi() async {
+
+    await getGlobalStateManagementSystem?.getTienTrinhTongQuat?.getTienTrinhThucThiChienDau?.getTrangThai?.getMoHinh?.caiDatDangTamDungThucThi();
+
     await getGameController?.onKichHoatKhungManHinhThuocCapSS300200();
   }
 
@@ -33,10 +37,16 @@ class NUTBAMSS030000SS010 extends THANHPHANNUTBAMTHUOCCAPTHUANKICHHOAT {
 
     onVoidKichHoat();
 
+    /// Kiểm Tra RAM
+
+    // Flame.images.clearCache();
+
     /// -----
     /// TODO:
     /// -----
     // await getGameController?.onKichHoatKhungManHinhThuocCapSS300200();
+
+    return;
   }
 
 
@@ -59,6 +69,25 @@ class NUTBAMSS030000SS010 extends THANHPHANNUTBAMTHUOCCAPTHUANKICHHOAT {
 
     await onCapNhatChiTietThanhPhanGameUI();
 
+    isVisible = false;
+
     return;
   }
+
+  @override
+  void update(double dt) {
+    // TODO: implement update
+    super.update(dt);
+
+    if (getGlobalStateManagementSystem?.getTienTrinhTongQuat?.getTienTrinhThucThiChienDau?.getTrangThai?.getMoHinh?.onCheckBoolDangThucThi() == true) {
+      if (isVisible == false) {
+        isVisible = true;
+      }
+    } else {
+      if (isVisible == true) {
+        isVisible = false;
+      }
+    }
+  }
+
 }

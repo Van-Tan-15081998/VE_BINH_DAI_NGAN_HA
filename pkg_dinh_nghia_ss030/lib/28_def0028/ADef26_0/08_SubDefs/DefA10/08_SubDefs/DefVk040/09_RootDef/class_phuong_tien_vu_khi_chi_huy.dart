@@ -8,7 +8,7 @@ import 'package:pkg_dinh_nghia_ss030/pkg_dinh_nghia_ss030_exp.dart';
 /// TODO:
 /// -----
 class PHUONGTIENVUKHICHIHUYCLASS10ASS010VKSS040 extends MOHINHPHUONGTIENVUKHIDIEUKHIEN {
-  PHUONGTIENVUKHICHIHUYCLASS10ASS010VKSS040(super.capDo);
+  PHUONGTIENVUKHICHIHUYCLASS10ASS010VKSS040({super.capDo, super.phuongTienThongSoaiToiCao});
   
   ///
   static const String maDinhDanhPhuongTien = '[VUKHIMONSTERTSTCCLASSSS00ASS010SS010SS040]';
@@ -76,16 +76,19 @@ class PHUONGTIENVUKHICHIHUYCLASS10ASS010VKSS040 extends MOHINHPHUONGTIENVUKHIDIE
     await getThuocTinh?.getThuocTinhSprite?.getDonViSpriteNgoaiHinhThanPhuongTien?.caiDatChieuRongFrameRS100(value: chieuRongFrame);
     await getThuocTinh?.getThuocTinhSprite?.getDonViSpriteNgoaiHinhThanPhuongTien?.caiDatChieuCaoFrameRS100(value: chieuCaoFrame);
 
+
     /// TODO: -----|-----|-----|-----|-----|-----|-----|-----|-----|-----
     /// TODO: -----|-----|-----|-----|-----|-----|-----|-----|-----|-----
     /// TODO: -----|-----|-----|-----|-----|-----|-----|-----|-----|-----
     /// TODO: -----|-----|-----|-----|-----|-----|-----|-----|-----|-----
     /// TODO: -----|-----|-----|-----|-----|-----|-----|-----|-----|-----
 
-    /// -----
+
+/// -----
     /// TODO: Nguồn Sprite Đồng Khởi
     /// -----
-    final String nguonSpriteDongKhoi =
+    
+final String nguonSpriteDongKhoi =
         'packages/pkg_dinh_nghia_ss030/lib/28_def0028/ADef26_0/08_SubDefs/DefA10/08_SubDefs/DefVk040/08_SubDefs/Def20/08_SubDefs/Def20/08_SubDefs';
 
     /// TODO: Resized 25

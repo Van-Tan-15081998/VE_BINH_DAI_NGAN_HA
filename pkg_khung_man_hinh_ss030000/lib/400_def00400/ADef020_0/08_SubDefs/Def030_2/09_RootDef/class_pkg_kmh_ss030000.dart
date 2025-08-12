@@ -10,7 +10,7 @@ class QUANLYTHANHPHANNUTBAMTHUOCCAP extends QUANLYTHANHPHANNUTBAMTHUOCCAPCOBAN {
   /// TODO:
   /// -----
   QUANLYTHANHPHANNUTBAMTHUOCCAP({
-    required super.globalState,
+    required super.globalStateManagementSystem,
     required super.gameController,
     required super.thanhPhanQuanLyThuocCapTrucTiep,
     required super.sizeDx,
@@ -112,19 +112,19 @@ class QUANLYTHANHPHANNUTBAMTHUOCCAP extends QUANLYTHANHPHANNUTBAMTHUOCCAPCOBAN {
       double sizeDxKhungManHinh = getSizeDx ?? 100.0;
       double sizeDyKhungManHinh = getSizeDy ?? 100.0;
 
-      double sizeDxNutBam = 50.0;
-      double sizeDyNutBam = 50.0;
+      double sizeDxNutBam = 45.0;
+      double sizeDyNutBam = 45.0;
 
       await Future.wait([
         onCaiDatNutBamSS030000SS010(
           value: NUTBAMSS030000SS010(
-            globalState: getGlobalState,
+            globalStateManagementSystem: getGlobalStateManagementSystem,
             gameController: getGameController,
             thanhPhanQuanLyThuocCapTrucTiep: getThanhPhanQuanLyThuocCapTrucTiep,
             sizeDx: sizeDxNutBam,
             sizeDy: sizeDyNutBam,
-            positionDx: sizeDxKhungManHinh - sizeDxNutBam,
-            positionDy: sizeDyNutBam * 2,
+            positionDx: sizeDxKhungManHinh - (sizeDxNutBam * 2/3),
+            positionDy: sizeDyNutBam * 2/3,
             onTapCancelEvent: null,
             onTapDownEvent: null,
             onTapUpEvent: () {},
@@ -189,6 +189,9 @@ class QUANLYTHANHPHANNUTBAMTHUOCCAP extends QUANLYTHANHPHANNUTBAMTHUOCCAPCOBAN {
 
         ///
       ]);
+
+      await getNutBamSS030000SS010?.onKichHoatThanhPhanThuocCap(kichHoatUuTien: true);
+
     } catch (e) {
       await onReportRootIssue(nameFunction: 'onInitRootForSubCom');
     }

@@ -4,15 +4,13 @@ import 'package:pkg_dinh_nghia_ss030/pkg_dinh_nghia_ss030_exp.dart';
 /// TODO:
 /// -----
 class MOHINHPHUONGTIENVATPHAMTANGCUONG extends MoHinhPhuongTienTongQuat {
-  MOHINHPHUONGTIENVATPHAMTANGCUONG(super.capDo);
+  MOHINHPHUONGTIENVATPHAMTANGCUONG({super.capDo, super.phuongTienThongSoaiToiCao});
   /// -----
   /// TODO: Init Root
   /// -----
   @override
   Future<void> onInitRoot() async {
     await super.onInitRoot();
-
-    await getTrangThaiTrongChienDau?.getTrangThaiPhuongTienNhanSatThuong?.caiDatSoLanNhanSatThuongToiDa(value: 30);
 
     return;
   }

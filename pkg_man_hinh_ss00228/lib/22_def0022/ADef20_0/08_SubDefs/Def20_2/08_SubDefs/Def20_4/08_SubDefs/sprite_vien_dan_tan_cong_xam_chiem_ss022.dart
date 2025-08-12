@@ -53,7 +53,7 @@ class SPRITEVIENDANTANCONGXAMCHIEMSS022 extends SPRITEVIENDANTANCONGXAMCHIEMCOBA
     /// TODO:
     /// -----
     await caiDatTuDongBienTangTienGiamTanXuatCapNhat();
-    if (await kiemTraTanXuatCapNhat() == false) {
+    if (onBoolKiemTraTanXuatCapNhat() == false) {
       return;
     }
 

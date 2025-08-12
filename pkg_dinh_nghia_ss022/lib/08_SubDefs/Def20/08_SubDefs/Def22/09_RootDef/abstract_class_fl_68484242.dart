@@ -8,7 +8,7 @@ import 'package:flame/components.dart';
 /// TODO: [class AbstractSprite52190478] [SpriteCoBan]
 ///
 abstract class SpriteCoBan extends SpriteComponent with HasVisibility {
-  SpriteCoBan({required QuanLyTrangThaiTongQuat? trangThaiTongQuat}) {
+  SpriteCoBan({required GlobalStateManagementSystem? trangThaiTongQuat}) {
     caiDatTrangThaiTongQuat(value: trangThaiTongQuat);
   }
 
@@ -35,9 +35,9 @@ abstract class SpriteCoBan extends SpriteComponent with HasVisibility {
   /// -----
   /// TODO: Quản Lý Trạng Thái Tổng Quát
   /// -----
-  QuanLyTrangThaiTongQuat? _trangThaiTongQuat;
-  QuanLyTrangThaiTongQuat? get getTrangThaiTongQuat => _trangThaiTongQuat;
-  Future<void> caiDatTrangThaiTongQuat({required QuanLyTrangThaiTongQuat? value}) async {
+  GlobalStateManagementSystem? _trangThaiTongQuat;
+  GlobalStateManagementSystem? get getTrangThaiTongQuat => _trangThaiTongQuat;
+  Future<void> caiDatTrangThaiTongQuat({required GlobalStateManagementSystem? value}) async {
     _trangThaiTongQuat ??= value;
     return;
   }
@@ -76,7 +76,7 @@ abstract class SpriteCoBan extends SpriteComponent with HasVisibility {
     return;
   }
 
-  Future<bool> kiemTraTanXuatCapNhat() async {
+  bool onBoolKiemTraTanXuatCapNhat() {
     if (_bienTangTienGiamTanXuatCapNhat % _boiSoCapDoGiamTanXuatCapNhat == 0) {
       return true;
     }
@@ -101,7 +101,7 @@ abstract class SpriteCoBan extends SpriteComponent with HasVisibility {
   }
 
   Future<void> capNhatKiemTraHienThi() async {
-    if (await getMoHinh?.getTrangThaiTonTai?.isKhoiTaoHoanTat() == true) {
+    if (await getMoHinh?.getTrangThaiTonTai?.onCheckBoolKhoiTaoHoanTat() == true) {
       await caiDatKiemTraHienThi(value: true);
     } else {
       await caiDatKiemTraHienThi(value: false);
@@ -193,7 +193,7 @@ abstract class SpriteCoBan extends SpriteComponent with HasVisibility {
     super.update(dt);
 
     await caiDatTuDongBienTangTienGiamTanXuatCapNhat();
-    if (await kiemTraTanXuatCapNhat() == false) {
+    if (onBoolKiemTraTanXuatCapNhat() == false) {
       return;
     }
 

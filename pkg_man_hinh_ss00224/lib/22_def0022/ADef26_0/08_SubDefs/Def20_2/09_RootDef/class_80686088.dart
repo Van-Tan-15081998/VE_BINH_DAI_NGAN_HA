@@ -54,16 +54,16 @@ class KhungHinhTichHopSS01PkgManHinhSS00224 extends Component with HasVisibility
   /// -----
   /// TODO:
   /// -----
-  KhungHinhTichHopSS01PkgManHinhSS00224({required QuanLyTrangThaiTongQuat? trangThaiTongQuat}) {
+  KhungHinhTichHopSS01PkgManHinhSS00224({required GlobalStateManagementSystem? trangThaiTongQuat}) {
     caiDatTrangThaiTongQuat(value: trangThaiTongQuat);
   }
 
   /// -----
   /// TODO:
   /// -----
-  QuanLyTrangThaiTongQuat? _trangThaiTongQuat;
-  QuanLyTrangThaiTongQuat? get getTrangThaiTongQuat => _trangThaiTongQuat;
-  Future<void> caiDatTrangThaiTongQuat({required QuanLyTrangThaiTongQuat? value}) async {
+  GlobalStateManagementSystem? _trangThaiTongQuat;
+  GlobalStateManagementSystem? get getTrangThaiTongQuat => _trangThaiTongQuat;
+  Future<void> caiDatTrangThaiTongQuat({required GlobalStateManagementSystem? value}) async {
     _trangThaiTongQuat ??= value;
     return;
   }
@@ -148,53 +148,53 @@ class KhungHinhTichHopSS01PkgManHinhSS00224 extends Component with HasVisibility
     /// TODO:
     /// -----
     /// -----
-    _spriteVienDanCoBanSS01SS20 = SpriteVienDanCoBanSS01SS20(trangThaiTongQuat: getTrangThaiTongQuat);
-    _spriteVienDanCoBanSS01SS22 = SpriteVienDanCoBanSS01SS22(trangThaiTongQuat: getTrangThaiTongQuat);
-    _spriteVienDanCoBanSS01SS24 = SpriteVienDanCoBanSS01SS24(trangThaiTongQuat: getTrangThaiTongQuat);
-    _spriteVienDanCoBanSS01SS26 = SpriteVienDanCoBanSS01SS26(trangThaiTongQuat: getTrangThaiTongQuat);
-    _spriteVienDanCoBanSS01SS28 = SpriteVienDanCoBanSS01SS28(trangThaiTongQuat: getTrangThaiTongQuat);
-    _spriteVienDanCoBanSS01SS30 = SpriteVienDanCoBanSS01SS30(trangThaiTongQuat: getTrangThaiTongQuat);
-    _spriteVienDanCoBanSS01SS32 = SpriteVienDanCoBanSS01SS32(trangThaiTongQuat: getTrangThaiTongQuat);
-    _spriteVienDanCoBanSS01SS34 = SpriteVienDanCoBanSS01SS34(trangThaiTongQuat: getTrangThaiTongQuat);
-    _spriteVienDanCoBanSS01SS36 = SpriteVienDanCoBanSS01SS36(trangThaiTongQuat: getTrangThaiTongQuat);
-    _spriteVienDanCoBanSS01SS38 = SpriteVienDanCoBanSS01SS38(trangThaiTongQuat: getTrangThaiTongQuat);
-    _spriteVienDanCoBanSS01SS40 = SpriteVienDanCoBanSS01SS40(trangThaiTongQuat: getTrangThaiTongQuat);
-    _spriteVienDanCoBanSS01SS42 = SpriteVienDanCoBanSS01SS42(trangThaiTongQuat: getTrangThaiTongQuat);
-    _spriteVienDanCoBanSS01SS44 = SpriteVienDanCoBanSS01SS44(trangThaiTongQuat: getTrangThaiTongQuat);
-    _spriteVienDanCoBanSS01SS46 = SpriteVienDanCoBanSS01SS46(trangThaiTongQuat: getTrangThaiTongQuat);
-    _spriteVienDanCoBanSS01SS48 = SpriteVienDanCoBanSS01SS48(trangThaiTongQuat: getTrangThaiTongQuat);
+    _spriteVienDanCoBanSS01SS20 = SpriteVienDanCoBanSS01SS20(trangThaiTongQuat: getTrangThaiTongQuat, parentComponent: this);
+    _spriteVienDanCoBanSS01SS22 = SpriteVienDanCoBanSS01SS22(trangThaiTongQuat: getTrangThaiTongQuat, parentComponent: this);
+    _spriteVienDanCoBanSS01SS24 = SpriteVienDanCoBanSS01SS24(trangThaiTongQuat: getTrangThaiTongQuat, parentComponent: this);
+    _spriteVienDanCoBanSS01SS26 = SpriteVienDanCoBanSS01SS26(trangThaiTongQuat: getTrangThaiTongQuat, parentComponent: this);
+    _spriteVienDanCoBanSS01SS28 = SpriteVienDanCoBanSS01SS28(trangThaiTongQuat: getTrangThaiTongQuat, parentComponent: this);
+    _spriteVienDanCoBanSS01SS30 = SpriteVienDanCoBanSS01SS30(trangThaiTongQuat: getTrangThaiTongQuat, parentComponent: this);
+    _spriteVienDanCoBanSS01SS32 = SpriteVienDanCoBanSS01SS32(trangThaiTongQuat: getTrangThaiTongQuat, parentComponent: this);
+    _spriteVienDanCoBanSS01SS34 = SpriteVienDanCoBanSS01SS34(trangThaiTongQuat: getTrangThaiTongQuat, parentComponent: this);
+    _spriteVienDanCoBanSS01SS36 = SpriteVienDanCoBanSS01SS36(trangThaiTongQuat: getTrangThaiTongQuat, parentComponent: this);
+    _spriteVienDanCoBanSS01SS38 = SpriteVienDanCoBanSS01SS38(trangThaiTongQuat: getTrangThaiTongQuat, parentComponent: this);
+    _spriteVienDanCoBanSS01SS40 = SpriteVienDanCoBanSS01SS40(trangThaiTongQuat: getTrangThaiTongQuat, parentComponent: this);
+    _spriteVienDanCoBanSS01SS42 = SpriteVienDanCoBanSS01SS42(trangThaiTongQuat: getTrangThaiTongQuat, parentComponent: this);
+    _spriteVienDanCoBanSS01SS44 = SpriteVienDanCoBanSS01SS44(trangThaiTongQuat: getTrangThaiTongQuat, parentComponent: this);
+    _spriteVienDanCoBanSS01SS46 = SpriteVienDanCoBanSS01SS46(trangThaiTongQuat: getTrangThaiTongQuat, parentComponent: this);
+    _spriteVienDanCoBanSS01SS48 = SpriteVienDanCoBanSS01SS48(trangThaiTongQuat: getTrangThaiTongQuat, parentComponent: this);
 
-    _spriteVienDanCoBanSS02SS20 = SpriteVienDanCoBanSS02SS20(trangThaiTongQuat: getTrangThaiTongQuat);
-    _spriteVienDanCoBanSS02SS22 = SpriteVienDanCoBanSS02SS22(trangThaiTongQuat: getTrangThaiTongQuat);
-    _spriteVienDanCoBanSS02SS24 = SpriteVienDanCoBanSS02SS24(trangThaiTongQuat: getTrangThaiTongQuat);
-    _spriteVienDanCoBanSS02SS26 = SpriteVienDanCoBanSS02SS26(trangThaiTongQuat: getTrangThaiTongQuat);
-    _spriteVienDanCoBanSS02SS28 = SpriteVienDanCoBanSS02SS28(trangThaiTongQuat: getTrangThaiTongQuat);
-    _spriteVienDanCoBanSS02SS30 = SpriteVienDanCoBanSS02SS30(trangThaiTongQuat: getTrangThaiTongQuat);
-    _spriteVienDanCoBanSS02SS32 = SpriteVienDanCoBanSS02SS32(trangThaiTongQuat: getTrangThaiTongQuat);
-    _spriteVienDanCoBanSS02SS34 = SpriteVienDanCoBanSS02SS34(trangThaiTongQuat: getTrangThaiTongQuat);
-    _spriteVienDanCoBanSS02SS36 = SpriteVienDanCoBanSS02SS36(trangThaiTongQuat: getTrangThaiTongQuat);
-    _spriteVienDanCoBanSS02SS38 = SpriteVienDanCoBanSS02SS38(trangThaiTongQuat: getTrangThaiTongQuat);
-    _spriteVienDanCoBanSS02SS40 = SpriteVienDanCoBanSS02SS40(trangThaiTongQuat: getTrangThaiTongQuat);
-    _spriteVienDanCoBanSS02SS42 = SpriteVienDanCoBanSS02SS42(trangThaiTongQuat: getTrangThaiTongQuat);
-    _spriteVienDanCoBanSS02SS44 = SpriteVienDanCoBanSS02SS44(trangThaiTongQuat: getTrangThaiTongQuat);
-    _spriteVienDanCoBanSS02SS46 = SpriteVienDanCoBanSS02SS46(trangThaiTongQuat: getTrangThaiTongQuat);
-    _spriteVienDanCoBanSS02SS48 = SpriteVienDanCoBanSS02SS48(trangThaiTongQuat: getTrangThaiTongQuat);
+    _spriteVienDanCoBanSS02SS20 = SpriteVienDanCoBanSS02SS20(trangThaiTongQuat: getTrangThaiTongQuat, parentComponent: this);
+    _spriteVienDanCoBanSS02SS22 = SpriteVienDanCoBanSS02SS22(trangThaiTongQuat: getTrangThaiTongQuat, parentComponent: this);
+    _spriteVienDanCoBanSS02SS24 = SpriteVienDanCoBanSS02SS24(trangThaiTongQuat: getTrangThaiTongQuat, parentComponent: this);
+    _spriteVienDanCoBanSS02SS26 = SpriteVienDanCoBanSS02SS26(trangThaiTongQuat: getTrangThaiTongQuat, parentComponent: this);
+    _spriteVienDanCoBanSS02SS28 = SpriteVienDanCoBanSS02SS28(trangThaiTongQuat: getTrangThaiTongQuat, parentComponent: this);
+    _spriteVienDanCoBanSS02SS30 = SpriteVienDanCoBanSS02SS30(trangThaiTongQuat: getTrangThaiTongQuat, parentComponent: this);
+    _spriteVienDanCoBanSS02SS32 = SpriteVienDanCoBanSS02SS32(trangThaiTongQuat: getTrangThaiTongQuat, parentComponent: this);
+    _spriteVienDanCoBanSS02SS34 = SpriteVienDanCoBanSS02SS34(trangThaiTongQuat: getTrangThaiTongQuat, parentComponent: this);
+    _spriteVienDanCoBanSS02SS36 = SpriteVienDanCoBanSS02SS36(trangThaiTongQuat: getTrangThaiTongQuat, parentComponent: this);
+    _spriteVienDanCoBanSS02SS38 = SpriteVienDanCoBanSS02SS38(trangThaiTongQuat: getTrangThaiTongQuat, parentComponent: this);
+    _spriteVienDanCoBanSS02SS40 = SpriteVienDanCoBanSS02SS40(trangThaiTongQuat: getTrangThaiTongQuat, parentComponent: this);
+    _spriteVienDanCoBanSS02SS42 = SpriteVienDanCoBanSS02SS42(trangThaiTongQuat: getTrangThaiTongQuat, parentComponent: this);
+    _spriteVienDanCoBanSS02SS44 = SpriteVienDanCoBanSS02SS44(trangThaiTongQuat: getTrangThaiTongQuat, parentComponent: this);
+    _spriteVienDanCoBanSS02SS46 = SpriteVienDanCoBanSS02SS46(trangThaiTongQuat: getTrangThaiTongQuat, parentComponent: this);
+    _spriteVienDanCoBanSS02SS48 = SpriteVienDanCoBanSS02SS48(trangThaiTongQuat: getTrangThaiTongQuat, parentComponent: this);
 
-    _spriteVienDanCoBanSS03SS20 = SpriteVienDanCoBanSS03SS20(trangThaiTongQuat: getTrangThaiTongQuat);
-    _spriteVienDanCoBanSS03SS22 = SpriteVienDanCoBanSS03SS22(trangThaiTongQuat: getTrangThaiTongQuat);
-    _spriteVienDanCoBanSS03SS24 = SpriteVienDanCoBanSS03SS24(trangThaiTongQuat: getTrangThaiTongQuat);
-    _spriteVienDanCoBanSS03SS26 = SpriteVienDanCoBanSS03SS26(trangThaiTongQuat: getTrangThaiTongQuat);
-    _spriteVienDanCoBanSS03SS28 = SpriteVienDanCoBanSS03SS28(trangThaiTongQuat: getTrangThaiTongQuat);
-    _spriteVienDanCoBanSS03SS30 = SpriteVienDanCoBanSS03SS30(trangThaiTongQuat: getTrangThaiTongQuat);
-    _spriteVienDanCoBanSS03SS32 = SpriteVienDanCoBanSS03SS32(trangThaiTongQuat: getTrangThaiTongQuat);
-    _spriteVienDanCoBanSS03SS34 = SpriteVienDanCoBanSS03SS34(trangThaiTongQuat: getTrangThaiTongQuat);
-    _spriteVienDanCoBanSS03SS36 = SpriteVienDanCoBanSS03SS36(trangThaiTongQuat: getTrangThaiTongQuat);
-    _spriteVienDanCoBanSS03SS38 = SpriteVienDanCoBanSS03SS38(trangThaiTongQuat: getTrangThaiTongQuat);
-    _spriteVienDanCoBanSS03SS40 = SpriteVienDanCoBanSS03SS40(trangThaiTongQuat: getTrangThaiTongQuat);
-    _spriteVienDanCoBanSS03SS42 = SpriteVienDanCoBanSS03SS42(trangThaiTongQuat: getTrangThaiTongQuat);
-    _spriteVienDanCoBanSS03SS44 = SpriteVienDanCoBanSS03SS44(trangThaiTongQuat: getTrangThaiTongQuat);
-    _spriteVienDanCoBanSS03SS46 = SpriteVienDanCoBanSS03SS46(trangThaiTongQuat: getTrangThaiTongQuat);
-    _spriteVienDanCoBanSS03SS48 = SpriteVienDanCoBanSS03SS48(trangThaiTongQuat: getTrangThaiTongQuat);
+    _spriteVienDanCoBanSS03SS20 = SpriteVienDanCoBanSS03SS20(trangThaiTongQuat: getTrangThaiTongQuat, parentComponent: this);
+    _spriteVienDanCoBanSS03SS22 = SpriteVienDanCoBanSS03SS22(trangThaiTongQuat: getTrangThaiTongQuat, parentComponent: this);
+    _spriteVienDanCoBanSS03SS24 = SpriteVienDanCoBanSS03SS24(trangThaiTongQuat: getTrangThaiTongQuat, parentComponent: this);
+    _spriteVienDanCoBanSS03SS26 = SpriteVienDanCoBanSS03SS26(trangThaiTongQuat: getTrangThaiTongQuat, parentComponent: this);
+    _spriteVienDanCoBanSS03SS28 = SpriteVienDanCoBanSS03SS28(trangThaiTongQuat: getTrangThaiTongQuat, parentComponent: this);
+    _spriteVienDanCoBanSS03SS30 = SpriteVienDanCoBanSS03SS30(trangThaiTongQuat: getTrangThaiTongQuat, parentComponent: this);
+    _spriteVienDanCoBanSS03SS32 = SpriteVienDanCoBanSS03SS32(trangThaiTongQuat: getTrangThaiTongQuat, parentComponent: this);
+    _spriteVienDanCoBanSS03SS34 = SpriteVienDanCoBanSS03SS34(trangThaiTongQuat: getTrangThaiTongQuat, parentComponent: this);
+    _spriteVienDanCoBanSS03SS36 = SpriteVienDanCoBanSS03SS36(trangThaiTongQuat: getTrangThaiTongQuat, parentComponent: this);
+    _spriteVienDanCoBanSS03SS38 = SpriteVienDanCoBanSS03SS38(trangThaiTongQuat: getTrangThaiTongQuat, parentComponent: this);
+    _spriteVienDanCoBanSS03SS40 = SpriteVienDanCoBanSS03SS40(trangThaiTongQuat: getTrangThaiTongQuat, parentComponent: this);
+    _spriteVienDanCoBanSS03SS42 = SpriteVienDanCoBanSS03SS42(trangThaiTongQuat: getTrangThaiTongQuat, parentComponent: this);
+    _spriteVienDanCoBanSS03SS44 = SpriteVienDanCoBanSS03SS44(trangThaiTongQuat: getTrangThaiTongQuat, parentComponent: this);
+    _spriteVienDanCoBanSS03SS46 = SpriteVienDanCoBanSS03SS46(trangThaiTongQuat: getTrangThaiTongQuat, parentComponent: this);
+    _spriteVienDanCoBanSS03SS48 = SpriteVienDanCoBanSS03SS48(trangThaiTongQuat: getTrangThaiTongQuat, parentComponent: this);
 
     return;
   }

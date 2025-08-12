@@ -9,7 +9,7 @@ class NUTBAMCHUYENTABSS030 extends THANHPHANNUTBAMTHUOCCAPTHUANKICHHOAT {
   /// TODO:
   /// -----
   NUTBAMCHUYENTABSS030({
-    required super.globalState,
+    required super.globalStateManagementSystem,
     required super.gameController,
     required super.thanhPhanQuanLyThuocCapTrucTiep,
     required super.sizeDx,
@@ -24,18 +24,24 @@ class NUTBAMCHUYENTABSS030 extends THANHPHANNUTBAMTHUOCCAPTHUANKICHHOAT {
   @override
   Future<void> onCaiDatChiTietThanhPhanGameUI() async {
     await onCaiDatThanhPhanGameUIKichHoat(
-      value: GAMEUINUTBAMCHONTABCHIENDAUKICHHOAT(),
+      value: GAMEUINUTBAMCHONTABNGANCHANXAMNHAPKICHHOAT(),
+      caiDatUuTien: true,
+    );
+    await onCaiDatThanhPhanGameUIKichHoat2(
+      value: GAMEUICARDNHIEMVUCHIENDAUKICHHOAT(),
       caiDatUuTien: true,
     );
     await onCaiDatThanhPhanGameUIHuyKichHoat(
-      value: GAMEUINUTBAMCHONTABCHIENDAUKHONGKICHHOAT(),
+      value: GAMEUINUTBAMCHONTABNGANCHANXAMNHAPKICHHOAT(),
       caiDatUuTien: true,
     );
 
     await getThanhPhanGameUIKichHoat?.onSetupRoot();
+    await getThanhPhanGameUIKichHoat2?.onSetupRoot();
     await getThanhPhanGameUIHuyKichHoat?.onSetupRoot();
 
     await getThanhPhanGameUIKichHoat?.onInitRoot();
+    await getThanhPhanGameUIKichHoat2?.onInitRoot();
     await getThanhPhanGameUIHuyKichHoat?.onInitRoot();
 
     await onCapNhatChiTietThanhPhanGameUI();

@@ -4,13 +4,12 @@ import 'package:pkg_khung_man_hinh_ss020000/pkg_khung_man_hinh_ss020000_exp.dart
 /// -----
 /// TODO: Khung Tích Hợp Tài Nguyên Vàng Trao Đổi
 /// -----
-class KHUNGTICHHOPTAINGUYENVANGTRAODOI
-    extends THANHPHANTICHHOPNUTBAMVANBANTHUOCCAP {
+class KHUNGTICHHOPTAINGUYENVANGTRAODOI extends THANHPHANTICHHOPNUTBAMVANBANTHUOCCAP {
   /// -----
   /// TODO:
-  /// -----
+  /// ----- 
   KHUNGTICHHOPTAINGUYENVANGTRAODOI({
-    required super.globalState, //
+    required super.globalStateManagementSystem, //
     required super.gameController,
     required super.thanhPhanQuanLyThuocCapTrucTiep,
     required super.sizeDx, //
@@ -26,10 +25,7 @@ class KHUNGTICHHOPTAINGUYENVANGTRAODOI
 
   @override
   Future<void> onCaiDatChiTietThanhPhanGameUI() async {
-    await onCaiDatThanhPhanGameUI(
-      value: GAMEUIKHUNGTHONGTINTAINGUYENVANGTRAODOI(),
-      caiDatUuTien: true,
-    );
+    await onCaiDatThanhPhanGameUI(value: GAMEUIKHUNGTHONGTINTAINGUYENVANGTRAODOI(), caiDatUuTien: true);
 
     await getThanhPhanGameUI?.onSetupRoot();
 
@@ -37,6 +33,50 @@ class KHUNGTICHHOPTAINGUYENVANGTRAODOI
 
     await onCapNhatChiTietThanhPhanGameUI();
 
+    isVisible = false;
+
     return;
+  }
+
+  int tongSoLuongTaiNguyenVangTraoDoi = 0;
+
+  @override
+  void update(double dt) {
+    // TODO: implement update
+    super.update(dt);
+
+    if (getGlobalStateManagementSystem?.getTienTrinhTongQuat?.getTrangThaiHoatDongTaiManHinhChinh == true) {
+      if (isVisible == false) {
+        isVisible = true;
+      }
+    } else {
+      if (isVisible == true) {
+        isVisible = false;
+      }
+    }
+
+    if (tongSoLuongTaiNguyenVangTraoDoi !=
+        getGlobalStateManagementSystem
+            ?.getTaiNguyenTraoDoiTongQuat
+            ?.getTongKhoTaiNguyen
+            ?.getKhoTaiNguyenDongVang
+            ?.getGoiTaiNguyenChuanHienHanh
+            ?.getGoiTaiNguyenChuanChinhThuc
+            ?.getDonViSoLuong
+            ?.getTongSoLuong) {
+      tongSoLuongTaiNguyenVangTraoDoi =
+          getGlobalStateManagementSystem
+              ?.getTaiNguyenTraoDoiTongQuat
+              ?.getTongKhoTaiNguyen
+              ?.getKhoTaiNguyenDongVang
+              ?.getGoiTaiNguyenChuanHienHanh
+              ?.getGoiTaiNguyenChuanChinhThuc
+              ?.getDonViSoLuong
+              ?.getTongSoLuong ??
+          0;
+
+      getThanhPhanVanBanThuan?.onVoidCaiDatVanBan(value: tongSoLuongTaiNguyenVangTraoDoi.toString(), caiDatUuTien: true);
+      getThanhPhanVanBanSoHoc?.onVoidCaiDatVanBan(value: tongSoLuongTaiNguyenVangTraoDoi.toDouble(), caiDatUuTien: true);
+    }
   }
 }

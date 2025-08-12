@@ -12,6 +12,8 @@ dependencies:
   flutter:
     sdk: flutter
 
+  google_fonts: 5.0.0
+
   pkg_dinh_nghia_ss020:
     path: ../pkg_dinh_nghia_ss020
   pkg_dinh_nghia_ss022:

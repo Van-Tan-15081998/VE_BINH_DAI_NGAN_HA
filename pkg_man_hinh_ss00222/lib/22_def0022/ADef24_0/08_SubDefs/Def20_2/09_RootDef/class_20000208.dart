@@ -10,9 +10,9 @@ class KhungVongLapSS01PkgManHinhSS00222 extends Component with VongLapThoiGianCo
   /// -----
   /// TODO:
   /// -----
-  QuanLyTrangThaiTongQuat? _trangThaiTongQuat;
-  QuanLyTrangThaiTongQuat? get getTrangThaiTongQuat => _trangThaiTongQuat;
-  Future<void> caiDatTrangThaiTongQuat({required QuanLyTrangThaiTongQuat? value}) async {
+  GlobalStateManagementSystem? _trangThaiTongQuat;
+  GlobalStateManagementSystem? get getTrangThaiTongQuat => _trangThaiTongQuat;
+  Future<void> caiDatTrangThaiTongQuat({required GlobalStateManagementSystem? value}) async {
     _trangThaiTongQuat ??= value;
     return;
   }
@@ -20,7 +20,7 @@ class KhungVongLapSS01PkgManHinhSS00222 extends Component with VongLapThoiGianCo
   /// -----
   /// TODO:
   /// -----
-  KhungVongLapSS01PkgManHinhSS00222({required QuanLyTrangThaiTongQuat? trangThaiTongQuat}) {
+  KhungVongLapSS01PkgManHinhSS00222({required GlobalStateManagementSystem? trangThaiTongQuat}) {
     caiDatTrangThaiTongQuat(value: trangThaiTongQuat);
   }
 
@@ -32,7 +32,7 @@ class KhungVongLapSS01PkgManHinhSS00222 extends Component with VongLapThoiGianCo
   /// -----
   /// TODO:
   /// -----
-  // Future<bool> kiemTraTanXuatCapNhat() async {
+  // bool onBoolKiemTraTanXuatCapNhat() {
   //   if (getChiSoTangTienTheoThoiGianThuc % 3 == 0) {
   //     return true;
   //   }
@@ -41,9 +41,9 @@ class KhungVongLapSS01PkgManHinhSS00222 extends Component with VongLapThoiGianCo
 
   bool onVoidKiemTraTanXuatCapNhat() {
     if (getTrangThaiTongQuat?.getThietLapTongQuat?.onKiemTraChoPhepCapNhatTheoTocDoKhungHinh(
-      maDinhDanh: '[KHUNG_HINH_NEN_CHIEN_DAU]',
-      chiSoTangTienGiamTanXuatCapNhat: getChiSoTangTienTheoThoiGianThuc,
-    ) ==
+          maDinhDanh: '[KHUNG_HINH_NEN_CHIEN_DAU]',
+          chiSoTangTienGiamTanXuatCapNhat: getChiSoTangTienTheoThoiGianThuc,
+        ) ==
         true) {
       return true;
     }
@@ -52,20 +52,18 @@ class KhungVongLapSS01PkgManHinhSS00222 extends Component with VongLapThoiGianCo
   }
 
   @override
-  FutureOr<void> update(double dt) async {
-    if (getTrangThaiTongQuat != null) {
-      ///
-      ///
-      /// TODO: Chạy Vòng Loop
-      ///
-      ///
+  void update(double dt) {
+    ///
+    ///
+    /// TODO: Chạy Vòng Loop
+    ///
+    ///
 
-      onVoidCaiDatTuDongBienTangTienGiamTanXuatCapNhat();
-      if (onVoidKiemTraTanXuatCapNhat() == false) {
-        return;
-      }
-
-      getTrangThaiTongQuat?.getChienDauCoTongQuat?.getDieuKhienDiChuyenChienDauCo?.onLoop();
+    onVoidCaiDatTuDongBienTangTienGiamTanXuatCapNhat();
+    if (onVoidKiemTraTanXuatCapNhat() == false) {
+      return;
     }
+
+    getTrangThaiTongQuat?.getChienDauCoTongQuat?.getDieuKhienDiChuyenChienDauCo?.onLoop();
   }
 }

@@ -12,7 +12,7 @@ import 'package:pkg_dinh_nghia_ss022/28_def0028/ADef040_0/09_RootDef/class_nut_b
 import 'package:pkg_dinh_nghia_ss050/pkg_dinh_nghia_ss050_exp.dart';
 
 class KHUNGTHANHPHANMENUKHUNGTHONGTINTAINGUYENTRAODOI extends StatefulWidget {
-  final QuanLyTrangThaiTongQuat? trangThaiTongQuat;
+  final GlobalStateManagementSystem? trangThaiTongQuat;
   final double? chieuRongKhungThanhPhan;
   final double? chieuCaoKhungThanhPhan;
   final VoidCallback? onThucThiChonTabSS010;

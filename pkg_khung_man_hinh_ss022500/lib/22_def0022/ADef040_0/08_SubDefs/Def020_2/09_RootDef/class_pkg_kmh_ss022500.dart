@@ -10,7 +10,7 @@ class VANBANDINHDANHKHUNGMANHINHCHINHTABSS050CD
   /// TODO:
   /// -----
   VANBANDINHDANHKHUNGMANHINHCHINHTABSS050CD({
-    required super.globalState,
+    required super.globalStateManagementSystem,
     required super.gameController,
     required super.thanhPhanQuanLyThuocCapTrucTiep,
     required super.sizeDx,
@@ -24,5 +24,11 @@ class VANBANDINHDANHKHUNGMANHINHCHINHTABSS050CD
     onVoidCaiDatVanBan(value: 'Cài Đặt', caiDatUuTien: true);
 
     return;
+  }
+
+  @override
+  Future<void> update(double dt) async {
+    // TODO: implement update
+    super.update(dt);
   }
 }

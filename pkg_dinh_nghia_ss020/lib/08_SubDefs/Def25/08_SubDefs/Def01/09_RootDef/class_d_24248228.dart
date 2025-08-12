@@ -79,7 +79,7 @@ class TienTrinhKhoiTaoCoBan {
     return;
   }
 
-  Future<bool> isKhoiTaoHoanTat() async {
+  bool onCheckBoolKhoiTaoHoanTat() {
     if (getTrangThai == '[TRANG_THAI_KHOI_TAO_HOAN_TAT]') {
       return true;
     }

@@ -7,12 +7,12 @@ import 'package:pkg_man_hinh_ss00222/22_def0022/ADef20_0/08_SubDefs/Def20_2/09_R
 /// -----
 /// TODO: Card Chiến Đấu Cơ Chọn Chỉ Định
 /// -----
-class CARDCHIENDAUCOCHONCHIDINH extends THANHPHANNUTBAMTHUOCCAPTHUANKICHHOAT {
+class CARDCHIENDAUCOCHONCHIDINH extends THANHPHANNUTBAMTICHHOPTHUOCCAP {
   /// -----
   /// TODO:
   /// -----
   CARDCHIENDAUCOCHONCHIDINH({
-    required super.globalState,
+    required super.globalStateManagementSystem,
     required super.gameController,
     required super.thanhPhanQuanLyThuocCapTrucTiep,
     required super.sizeDx,
@@ -29,9 +29,7 @@ class CARDCHIENDAUCOCHONCHIDINH extends THANHPHANNUTBAMTHUOCCAPTHUANKICHHOAT {
   /// -----
   TrangThaiChienDauCoChiDinhThucThiChienDau? _trangThai;
   TrangThaiChienDauCoChiDinhThucThiChienDau? get getTrangThai => _trangThai;
-  Future<void> caiDatTrangThai({
-    required TrangThaiChienDauCoChiDinhThucThiChienDau? value,
-  }) async {
+  Future<void> caiDatTrangThai({required TrangThaiChienDauCoChiDinhThucThiChienDau? value}) async {
     _trangThai ??= value;
     return;
   }
@@ -45,18 +43,11 @@ class CARDCHIENDAUCOCHONCHIDINH extends THANHPHANNUTBAMTHUOCCAPTHUANKICHHOAT {
 
   @override
   Future<void> onCaiDatChiTietThanhPhanGameUI() async {
-    _spriteChienDauCoChonChiDinh = CHIENDAUCOCHONCHIDINH(
-      trangThaiTongQuat: getGlobalState,
-      capNhatViTri: false,
-    );
+    _spriteChienDauCoChonChiDinh = CHIENDAUCOCHONCHIDINH(trangThaiTongQuat: getGlobalStateManagementSystem, capNhatViTri: false);
 
-    if (_spriteChienDauCoChonChiDinh != null &&
-        _spriteChienDauCoChonChiDinh?.isMounted == false) {
+    if (_spriteChienDauCoChonChiDinh != null && _spriteChienDauCoChonChiDinh?.isMounted == false) {
       add(_spriteChienDauCoChonChiDinh!);
-      _spriteChienDauCoChonChiDinh?.position.setValues(
-        (getSizeDx ?? 0) / 2,
-        (getSizeDy ?? 0) / 2,
-      );
+      _spriteChienDauCoChonChiDinh?.position.setValues((getSizeDx ?? 0) / 2, (getSizeDy ?? 0) / 2);
     }
 
     // await onCaiDatThanhPhanGameUIKichHoat(value: GAMEUINUTBAMCHONTABCHIENDAUCOKICHHOAT(), caiDatUuTien: true);

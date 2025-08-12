@@ -4,7 +4,7 @@ import 'package:pkg_dinh_nghia_ss030/pkg_dinh_nghia_ss030_exp.dart';
 /// TODO:
 /// -----
 class MOHINHPHUONGTIENVUKHI extends MoHinhPhuongTienTongQuat {
-  MOHINHPHUONGTIENVUKHI(super.capDo);
+  MOHINHPHUONGTIENVUKHI({super.capDo, super.phuongTienThongSoaiToiCao});
   /// -----
   /// TODO: Init Root
   /// -----
@@ -140,12 +140,12 @@ class MOHINHPHUONGTIENVUKHI extends MoHinhPhuongTienTongQuat {
 }
 
 class MOHINHPHUONGTIENVUKHIDIEUKHIEN extends MOHINHPHUONGTIENVUKHI {
-  MOHINHPHUONGTIENVUKHIDIEUKHIEN(super.capDo);
+  MOHINHPHUONGTIENVUKHIDIEUKHIEN({super.capDo, super.phuongTienThongSoaiToiCao});
   ///
 }
 
 class MOHINHPHUONGTIENVUKHINGAUNHIEN extends MOHINHPHUONGTIENVUKHI {
-  MOHINHPHUONGTIENVUKHINGAUNHIEN(super.capDo);
+  MOHINHPHUONGTIENVUKHINGAUNHIEN({super.capDo, super.phuongTienThongSoaiToiCao});
   ///
 }
 
@@ -153,7 +153,7 @@ class MOHINHPHUONGTIENVUKHINGAUNHIEN extends MOHINHPHUONGTIENVUKHI {
 /// TODO: Phương Tiện Vũ Khí Bom Khinh Khí Cầu
 /// -----
 class MOHINHPHUONGTIENVUKHIBOMKHINHKHICAU extends MOHINHPHUONGTIENVUKHINGAUNHIEN {
-  MOHINHPHUONGTIENVUKHIBOMKHINHKHICAU(super.capDo);
+  MOHINHPHUONGTIENVUKHIBOMKHINHKHICAU({super.capDo, super.phuongTienThongSoaiToiCao});
   ///
 }
 
@@ -161,6 +161,6 @@ class MOHINHPHUONGTIENVUKHIBOMKHINHKHICAU extends MOHINHPHUONGTIENVUKHINGAUNHIEN
 /// TODO: Phương Tiện Vũ Khí Thiên Thạch
 /// -----
 class MOHINHPHUONGTIENVUKHITHIENTHACH extends MOHINHPHUONGTIENVUKHINGAUNHIEN {
-  MOHINHPHUONGTIENVUKHITHIENTHACH(super.capDo);
+  MOHINHPHUONGTIENVUKHITHIENTHACH({super.capDo, super.phuongTienThongSoaiToiCao});
   ///
 }

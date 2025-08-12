@@ -15,7 +15,7 @@ import 'package:pkg_man_hinh_ss00026/24_def0024/ADef22_0/08_SubDefs/Def20_2/08_S
 class MANHINHTHANHTICHCHIENDAUTHEOHANGNGAY extends StatefulWidget {
   const MANHINHTHANHTICHCHIENDAUTHEOHANGNGAY({super.key, required this.trangThaiTongQuat});
 
-  final QuanLyTrangThaiTongQuat? trangThaiTongQuat;
+  final GlobalStateManagementSystem? trangThaiTongQuat;
 
   @override
   State<MANHINHTHANHTICHCHIENDAUTHEOHANGNGAY> createState() => _MANHINHTHANHTICHCHIENDAUTHEOHANGNGAYSTATE();

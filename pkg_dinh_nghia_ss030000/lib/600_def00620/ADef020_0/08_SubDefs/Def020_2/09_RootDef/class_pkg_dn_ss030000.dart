@@ -83,11 +83,17 @@ class MONSTERDSTPCLASSSS00ASS010SS010 extends MOHINHPHUONGTIENCOBAN {
     final double chieuRongFrame = 260.0;
     final double chieuCaoFrame = 260.0;
 
+    // final int tongSoPart = 6;
+    // final int tongSoFrame = 4;
+    // final int tongSoFrameTrenHang = 2;
+    // final double chieuRongFrame = 260.0;
+    // final double chieuCaoFrame = 260.0;
+
     /// -----
     /// TODO: Kích Thước Resize
     /// -----
-    final bool kichThuocRS025 = true; // Kích Thước Resize 25
-    final bool kichThuocRS050 = false; // Kích Thước Resize 50
+    final bool kichThuocRS025 = false; // Kích Thước Resize 25
+    final bool kichThuocRS050 = true; // Kích Thước Resize 50
     final bool kichThuocRS100 = false; // Kích Thước Resize 100
 
     /// -----

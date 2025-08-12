@@ -33,7 +33,7 @@ class MoHinhThuocTinhHieuSuatChienDau {
   ///
   ThoiGianKichHoatCoBan? _thoiGianKichHoatBanNguyenBan;
   ThoiGianKichHoatCoBan? get getThoiGianKichHoatBanNguyenBan => _thoiGianKichHoatBanNguyenBan;
-  Future<void> caiDatThoiGianKichHoatBanNguyenBan({required ThoiGianKichHoatCoBan? value}) async {
+  Future<void> onVoidCaiDatThoiGianKichHoatBanNguyenBan({required ThoiGianKichHoatCoBan? value}) async {
     _thoiGianKichHoatBanNguyenBan = value;
     return;
   }
@@ -43,7 +43,7 @@ class MoHinhThuocTinhHieuSuatChienDau {
   ///
   TocDoCoBan? _tocDoBayNguyenBanVienDan;
   TocDoCoBan? get getTocDoBayNguyenBanVienDan => _tocDoBayNguyenBanVienDan;
-  Future<void> caiDatTocDoBayNguyenBanVienDan({required TocDoCoBan? value}) async {
+  void onVoidCaiDatTocDoBayNguyenBanVienDan({required TocDoCoBan? value}) {
     _tocDoBayNguyenBanVienDan = value;
     return;
   }
@@ -51,13 +51,13 @@ class MoHinhThuocTinhHieuSuatChienDau {
   MoHinhThuocTinhHieuSuatChienDau(
       {required String maDinhDanhCapDo, required ThoiGianKichHoatCoBan thoiGianKichHoatBanNguyenBan, required TocDoCoBan tocDoBayNguyenBanVienDan}) {
     caiDatMaDinhDanhCapDo(value: maDinhDanhCapDo);
-    caiDatThoiGianKichHoatBanNguyenBan(value: thoiGianKichHoatBanNguyenBan);
-    caiDatTocDoBayNguyenBanVienDan(value: tocDoBayNguyenBanVienDan);
+    onVoidCaiDatThoiGianKichHoatBanNguyenBan(value: thoiGianKichHoatBanNguyenBan);
+    onVoidCaiDatTocDoBayNguyenBanVienDan(value: tocDoBayNguyenBanVienDan);
   }
 
   MoHinhThuocTinhHieuSuatChienDau.onMacDinh() {
     caiDatMaDinhDanhCapDo(value: '[CAP_DO_SS01]');
-    caiDatThoiGianKichHoatBanNguyenBan(value: ThoiGianKichHoatCoBan.onMacDinh());
-    caiDatTocDoBayNguyenBanVienDan(value: TocDoBayCoBan.onMacDinh());
+    onVoidCaiDatThoiGianKichHoatBanNguyenBan(value: ThoiGianKichHoatCoBan.onMacDinh());
+    onVoidCaiDatTocDoBayNguyenBanVienDan(value: TocDoBayCoBan.onMacDinh());
   }
 }

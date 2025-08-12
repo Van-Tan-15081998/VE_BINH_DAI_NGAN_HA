@@ -52,7 +52,7 @@
 //   /// TODO:
 //   /// -----
 //   QUANLYTHANHPHANNUTBAMTHUOCCAP({
-//     required super.globalState,
+//     required super.globalStateManagementSystem,
 // required super.gameController,
 // required super.sizeDx,
 //     required super.sizeDy,
@@ -175,7 +175,7 @@
 //     await Future.wait([
 //       onCaiDatNutBamChuyenTabSS010(
 //         value: NUTBAMCHUYENTABSS010(
-//           globalState: getGlobalState,gameController: getGameController, thanhPhanQuanLyThuocCapTrucTiep: getThanhPhanQuanLyThuocCapTrucTiep,
+//           globalStateManagementSystem: getGlobalStateManagementSystem,gameController: getGameController, thanhPhanQuanLyThuocCapTrucTiep: getThanhPhanQuanLyThuocCapTrucTiep,
 //           sizeDx: sizeDxNutBamChonTab,
 //           sizeDy: sizeDyNutBamChonTab,
 //           positionDx: donViChieuRong * 9.0,
@@ -190,7 +190,7 @@
 //       ).catchError((e) => null),
 //       onCaiDatNutBamChuyenTabSS020(
 //         value: NUTBAMCHUYENTABSS020(
-//           globalState: getGlobalState,gameController: getGameController, thanhPhanQuanLyThuocCapTrucTiep: getThanhPhanQuanLyThuocCapTrucTiep,
+//           globalStateManagementSystem: getGlobalStateManagementSystem,gameController: getGameController, thanhPhanQuanLyThuocCapTrucTiep: getThanhPhanQuanLyThuocCapTrucTiep,
 //           sizeDx: sizeDxNutBamChonTab,
 //           sizeDy: sizeDyNutBamChonTab,
 //           positionDx: donViChieuRong * 21.0,

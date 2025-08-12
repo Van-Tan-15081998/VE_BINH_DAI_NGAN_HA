@@ -12,16 +12,16 @@ class KhungHinhNenBangDieuKhienDoiHinhVatPhamPhanThuong extends PositionComponen
   /// -----
   /// TODO:
   /// -----
-  KhungHinhNenBangDieuKhienDoiHinhVatPhamPhanThuong({required QuanLyTrangThaiTongQuat? trangThaiTongQuat}) {
+  KhungHinhNenBangDieuKhienDoiHinhVatPhamPhanThuong({required GlobalStateManagementSystem? trangThaiTongQuat}) {
     caiDatTrangThaiTongQuat(value: trangThaiTongQuat);
   }
 
   /// -----
   /// TODO:
   /// -----
-  QuanLyTrangThaiTongQuat? _trangThaiTongQuat;
-  QuanLyTrangThaiTongQuat? get getTrangThaiTongQuat => _trangThaiTongQuat;
-  Future<void> caiDatTrangThaiTongQuat({required QuanLyTrangThaiTongQuat? value}) async {
+  GlobalStateManagementSystem? _trangThaiTongQuat;
+  GlobalStateManagementSystem? get getTrangThaiTongQuat => _trangThaiTongQuat;
+  Future<void> caiDatTrangThaiTongQuat({required GlobalStateManagementSystem? value}) async {
     _trangThaiTongQuat ??= value;
     return;
   }
@@ -98,7 +98,7 @@ class KhungHinhNenBangDieuKhienDoiHinhVatPhamPhanThuong extends PositionComponen
     /// TODO:
     /// -----
     if (position.x != _bienTraiCapNhatKhungHinhNen) {
-      position.setValues(_bienTraiCapNhatKhungHinhNen ?? 0, position.y);
+      position.x = _bienTraiCapNhatKhungHinhNen ?? 0;
     }
 
     /// -----

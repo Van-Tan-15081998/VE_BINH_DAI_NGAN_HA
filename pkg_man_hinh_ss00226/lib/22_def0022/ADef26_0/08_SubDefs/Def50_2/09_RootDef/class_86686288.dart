@@ -39,16 +39,16 @@ class KhungHinhTichHopBangDieuKhienDoiHinhSatThuTanCong extends Component with H
   /// -----
   /// TODO:
   /// -----
-  KhungHinhTichHopBangDieuKhienDoiHinhSatThuTanCong({required QuanLyTrangThaiTongQuat? trangThaiTongQuat}) {
+  KhungHinhTichHopBangDieuKhienDoiHinhSatThuTanCong({required GlobalStateManagementSystem? trangThaiTongQuat}) {
     caiDatTrangThaiTongQuat(value: trangThaiTongQuat);
   }
 
   /// -----
   /// TODO:
   /// -----
-  QuanLyTrangThaiTongQuat? _trangThaiTongQuat;
-  QuanLyTrangThaiTongQuat? get getTrangThaiTongQuat => _trangThaiTongQuat;
-  Future<void> caiDatTrangThaiTongQuat({required QuanLyTrangThaiTongQuat? value}) async {
+  GlobalStateManagementSystem? _trangThaiTongQuat;
+  GlobalStateManagementSystem? get getTrangThaiTongQuat => _trangThaiTongQuat;
+  Future<void> caiDatTrangThaiTongQuat({required GlobalStateManagementSystem? value}) async {
     _trangThaiTongQuat ??= value;
     return;
   }

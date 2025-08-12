@@ -7,9 +7,9 @@ class KhungVongLapLayerSS01 extends Component with VongLapThoiGianCoBan {
   /// -----
   /// TODO:
   /// -----
-  QuanLyTrangThaiTongQuat? _trangThaiTongQuat;
-  QuanLyTrangThaiTongQuat? get getTrangThaiTongQuat => _trangThaiTongQuat;
-  Future<void> caiDatTrangThaiTongQuat({required QuanLyTrangThaiTongQuat? value}) async {
+  GlobalStateManagementSystem? _trangThaiTongQuat;
+  GlobalStateManagementSystem? get getTrangThaiTongQuat => _trangThaiTongQuat;
+  Future<void> caiDatTrangThaiTongQuat({required GlobalStateManagementSystem? value}) async {
     _trangThaiTongQuat ??= value;
     return;
   }
@@ -17,7 +17,7 @@ class KhungVongLapLayerSS01 extends Component with VongLapThoiGianCoBan {
   /// -----
   /// TODO:
   /// -----
-  KhungVongLapLayerSS01({required QuanLyTrangThaiTongQuat? trangThaiTongQuat}) {
+  KhungVongLapLayerSS01({required GlobalStateManagementSystem? trangThaiTongQuat}) {
     caiDatTrangThaiTongQuat(value: trangThaiTongQuat);
   }
 
@@ -29,7 +29,7 @@ class KhungVongLapLayerSS01 extends Component with VongLapThoiGianCoBan {
   /// -----
   /// TODO:
   /// -----
-  Future<bool> kiemTraTanXuatCapNhat() async {
+  bool onBoolKiemTraTanXuatCapNhat() {
     if (getChiSoTangTienTheoThoiGianThuc % 2 == 0) {
       return true;
     }
@@ -37,20 +37,18 @@ class KhungVongLapLayerSS01 extends Component with VongLapThoiGianCoBan {
   }
 
   @override
-  FutureOr<void> update(double dt) async {
-    if (getTrangThaiTongQuat != null) {
+  void update(double dt) {
       ///
       ///
       /// TODO: Chạy Vòng Loop
       ///
       ///
 
-      await onCapNhatChiSoTangTienTheoThoiGianThuc();
-      if (await kiemTraTanXuatCapNhat() == false) {
+      onVoidCapNhatChiSoTangTienTheoThoiGianThuc();
+      if (onBoolKiemTraTanXuatCapNhat() == false) {
         return;
       }
 
-      await getTrangThaiTongQuat?.getChienDauCoTongQuat?.getDieuKhienDiChuyenChienDauCo?.onLoop();
-    }
+      getTrangThaiTongQuat?.getChienDauCoTongQuat?.getDieuKhienDiChuyenChienDauCo?.onLoop();
   }
 }

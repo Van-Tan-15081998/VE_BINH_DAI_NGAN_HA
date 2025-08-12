@@ -10,9 +10,9 @@ class KHUNGVONGLAPSS01BANGDIEUKHIENCHIENDAU extends Component with VongLapThoiGi
   /// -----
   /// TODO:
   /// -----
-  QuanLyTrangThaiTongQuat? _trangThaiTongQuat;
-  QuanLyTrangThaiTongQuat? get getTrangThaiTongQuat => _trangThaiTongQuat;
-  Future<void> caiDatTrangThaiTongQuat({required QuanLyTrangThaiTongQuat? value}) async {
+  GlobalStateManagementSystem? _trangThaiTongQuat;
+  GlobalStateManagementSystem? get getTrangThaiTongQuat => _trangThaiTongQuat;
+  Future<void> caiDatTrangThaiTongQuat({required GlobalStateManagementSystem? value}) async {
     _trangThaiTongQuat ??= value;
     return;
   }
@@ -20,7 +20,7 @@ class KHUNGVONGLAPSS01BANGDIEUKHIENCHIENDAU extends Component with VongLapThoiGi
   /// -----
   /// TODO:
   /// -----
-  KHUNGVONGLAPSS01BANGDIEUKHIENCHIENDAU({required QuanLyTrangThaiTongQuat? trangThaiTongQuat}) {
+  KHUNGVONGLAPSS01BANGDIEUKHIENCHIENDAU({required GlobalStateManagementSystem? trangThaiTongQuat}) {
     caiDatTrangThaiTongQuat(value: trangThaiTongQuat);
   }
 
@@ -58,6 +58,6 @@ class KHUNGVONGLAPSS01BANGDIEUKHIENCHIENDAU extends Component with VongLapThoiGi
       return;
     }
 
-    getTrangThaiTongQuat?.getSuKienVaChamThuocPhuongTien?.onLoop();
+    // getTrangThaiTongQuat?.getSuKienVaChamThuocPhuongTien?.onLoop();
   }
 }

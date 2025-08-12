@@ -14,7 +14,9 @@ class TinhToanSatThuongHuongDenChienDauCo with CauTrucThucThiCoBan, DanhSachQuan
   /// -----
   @override
   Future<void> onAttachRoot({required dynamic attachValue}) async {
-    if (attachValue is QuanLyTrangThaiTongQuat) {
+    if (attachValue is GlobalStateManagementSystem) {
+      await caiDatDichVuMayPhatAmThanh(value: attachValue.getDichVuMayPhatAmThanh);
+
       await caiDatSuKienVaChamTrongChienDau(value: attachValue.getSuKienVaChamTrongChienDau);
 
       ///
@@ -72,7 +74,7 @@ class TinhToanSatThuongHuongDenChienDauCo with CauTrucThucThiCoBan, DanhSachQuan
   /// -----
   @override
   Future<void> onAttachRootForSubCom({required dynamic attachValue}) async {
-    if (attachValue is QuanLyTrangThaiTongQuat) {
+    if (attachValue is GlobalStateManagementSystem) {
       ///
     }
 
@@ -118,36 +120,92 @@ class TinhToanSatThuongHuongDenChienDauCo with CauTrucThucThiCoBan, DanhSachQuan
   /// -----
   /// TODO:
   /// -----
-  void onVoidSatThuongPhuongTienVuKhi({required MoHinhPhuongTienTongQuat? phuongTien, required DiemToaDoHoanHaoCoBan? toaDoVaCham}) {
-    double chiSoMauToiDa = getTrungTamVanHanhThuocTinhChienDauTheoQuyChuan?.getCapDoMauToiDaHienHanh?.getCapDoChuanChinhThuc?.getChiSoTheoCapDo?.getChiSoMauToiDaVanHanh ?? 0;
+  void onVoidSatThuongPhuongTienVuKhi({required MoHinhPhuongTienTongQuat? phuongTien, required DiemToaDoHoanHaoCoBan? toaDoVaCham, bool? vaChamPhaHuyChienDauCo}) async {
+    if (vaChamPhaHuyChienDauCo == true) {
 
-    if (chiSoMauToiDa - 10 >= 0) {
-      getTrungTamVanHanhThuocTinhChienDauTheoQuyChuan?.getCapDoMauToiDaHienHanh?.getCapDoChuanChinhThuc?.getChiSoTheoCapDo?.onCaiDatChiSoMauToiDaVanHanh(
-        value: chiSoMauToiDa - 10,
-        caiDatUuTien: true,
-      );
-    } else {
-      getTrungTamVanHanhThuocTinhChienDauTheoQuyChuan?.getCapDoMauToiDaHienHanh?.getCapDoChuanChinhThuc?.getChiSoTheoCapDo?.onCaiDatChiSoMauToiDaVanHanh(
-        value: 0,
-        caiDatUuTien: true,
-      );
+      if (getTrungTamVanHanhThuocTinhChienDauTheoQuyChuan?.getCapDoMauToiDaHienHanh?.getCapDoChuanChinhThuc?.getChiSoTheoCapDo?.getChiSoMauToiDaVanHanh != 0) {
+        await getDichVuMayPhatAmThanh?.getHieuUngAmThanhSuKienVaChamTrongChienDau?.getSuKienVaChamPhaHuy?.getHieuUngAmThanhVaChamCoBanSS01?.onPlay();
+
+        getTrungTamVanHanhThuocTinhChienDauTheoQuyChuan?.getCapDoMauToiDaHienHanh?.getCapDoChuanChinhThuc?.getChiSoTheoCapDo?.onCaiDatChiSoMauToiDaVanHanh(
+          value: 0,
+          caiDatUuTien: true,
+        );
+
+        DiemToaDoHoanHaoCoBan diemToaDoTrungTam = DiemToaDoHoanHaoCoBan(maDinhDanh: '', dx: 0, dy: 0);
+
+        double dx = (phuongTien?.getDuLieuJsonLamPhang['[DX_TRONG_TAM]'] ?? 0) * 1.0;
+        double dy = (phuongTien?.getDuLieuJsonLamPhang['[DY_TRONG_TAM]'] ?? 0) * 1.0;
+
+        diemToaDoTrungTam.onVoidCaiDatDx(value: dx);
+        diemToaDoTrungTam.onVoidCaiDatDy(value: dy);
+
+        /// -----
+        /// TODO:
+        /// -----
+        getSuKienVaChamTrongChienDau?.getSuKienVaChamPhaHuy?.onVoidXuLyVaCham(toaDoTrungTam: diemToaDoTrungTam);
+        getSuKienVaChamTrongChienDau?.getSuKienVaChamPhaHuy?.onVoidXuLySatThuongVaCham(toaDoTrungTam: diemToaDoTrungTam, satThuong: 0);
+
+        return;
+      }
+
+      return;
     }
 
-    DiemToaDoHoanHaoCoBan diemToaDoTrungTam = DiemToaDoHoanHaoCoBan(maDinhDanh: '', dx: 0, dy: 0);
+    if (phuongTien is MOHINHPHUONGTIENVATPHAMPHANTHUONG) {
+      // phuongTien.getTrangThaiTrongChienDau?.getTrangThaiTonTai?.onVoidCaiDatHuyHoanTat();
+      phuongTien.onVoidCaiDatTrangThaiChienDauHuyTonTai();
+      phuongTien.getDuLieuJsonLamPhang['[VAT_PHAM_TON_TAI_SAN_SANG]'] = true;
+      phuongTien.getDuLieuJsonLamPhang['[VAT_PHAM_TON_TAI_HIEN_THI]'] = false;
 
-    double dx = (phuongTien?.getDuLieuJsonLamPhang['[DX_TRONG_TAM]'] ?? 0) * 1.0;
-    double dy = (phuongTien?.getDuLieuJsonLamPhang['[DY_TRONG_TAM]'] ?? 0) * 1.0;
+      await getDichVuMayPhatAmThanh?.getHieuUngAmThanhSuKienVaChamTrongChienDau?.getSuKienVaChamVatPhamPhanThuong?.getHieuUngAmThanhVaChamCoBanSS01?.onPlay();
+    } else {
+      double chiSoMauToiDa = getTrungTamVanHanhThuocTinhChienDauTheoQuyChuan?.getCapDoMauToiDaHienHanh?.getCapDoChuanChinhThuc?.getChiSoTheoCapDo?.getChiSoMauToiDa ?? 0;
+      double chiSoMauToiDaVanHanh = getTrungTamVanHanhThuocTinhChienDauTheoQuyChuan?.getCapDoMauToiDaHienHanh?.getCapDoChuanChinhThuc?.getChiSoTheoCapDo?.getChiSoMauToiDaVanHanh ?? 0;
 
-    diemToaDoTrungTam.onVoidCaiDatDx(value: dx);
-    diemToaDoTrungTam.onVoidCaiDatDy(value: dy);
+      if (phuongTien is MOHINHPHUONGTIENVATPHAMTANGCUONG) {
+        if ((chiSoMauToiDaVanHanh - (chiSoMauToiDa * 2/100)) >= 0) {
+          getTrungTamVanHanhThuocTinhChienDauTheoQuyChuan?.getCapDoMauToiDaHienHanh?.getCapDoChuanChinhThuc?.getChiSoTheoCapDo?.onCaiDatChiSoMauToiDaVanHanh(
+            value: (chiSoMauToiDaVanHanh - (chiSoMauToiDa * 2/100)),
+            caiDatUuTien: true,
+          );
+        } else {
+          getTrungTamVanHanhThuocTinhChienDauTheoQuyChuan?.getCapDoMauToiDaHienHanh?.getCapDoChuanChinhThuc?.getChiSoTheoCapDo?.onCaiDatChiSoMauToiDaVanHanh(
+            value: 0,
+            caiDatUuTien: true,
+          );
+        }
+      } else {
+        if ((chiSoMauToiDaVanHanh - (chiSoMauToiDa * 5 / 100)) >= 0) {
+          getTrungTamVanHanhThuocTinhChienDauTheoQuyChuan?.getCapDoMauToiDaHienHanh?.getCapDoChuanChinhThuc?.getChiSoTheoCapDo?.onCaiDatChiSoMauToiDaVanHanh(
+            value: (chiSoMauToiDaVanHanh - (chiSoMauToiDa * 5 / 100)),
+            caiDatUuTien: true,
+          );
+        } else {
+          getTrungTamVanHanhThuocTinhChienDauTheoQuyChuan?.getCapDoMauToiDaHienHanh?.getCapDoChuanChinhThuc?.getChiSoTheoCapDo?.onCaiDatChiSoMauToiDaVanHanh(
+            value: 0,
+            caiDatUuTien: true,
+          );
+        }
+      }
 
-    phuongTien?.getTrangThaiTrongChienDau?.getTrangThaiTonTai?.onVoidCaiDatHuyHoanTat();
+      DiemToaDoHoanHaoCoBan diemToaDoTrungTam = DiemToaDoHoanHaoCoBan(maDinhDanh: '', dx: 0, dy: 0);
 
-    /// -----
-    /// TODO:
-    /// -----
-    getSuKienVaChamTrongChienDau?.getSuKienVaChamPhaHuy?.onXuLyVaCham(toaDoTrungTam: diemToaDoTrungTam);
-    getSuKienVaChamTrongChienDau?.getSuKienVaChamPhaHuy?.onXuLySatThuongVaCham(toaDoTrungTam: diemToaDoTrungTam, satThuong: 0);
+      double dx = (phuongTien?.getDuLieuJsonLamPhang['[DX_TRONG_TAM]'] ?? 0) * 1.0;
+      double dy = (phuongTien?.getDuLieuJsonLamPhang['[DY_TRONG_TAM]'] ?? 0) * 1.0;
+
+      diemToaDoTrungTam.onVoidCaiDatDx(value: dx);
+      diemToaDoTrungTam.onVoidCaiDatDy(value: dy);
+
+      // phuongTien?.getTrangThaiTrongChienDau?.getTrangThaiTonTai?.onVoidCaiDatHuyHoanTat();
+      phuongTien?.onVoidCaiDatTrangThaiChienDauHuyTonTai();
+      // phuongTien?.onVoidCaiDatHuyKichHoatHoatDongThuocGiaiDoan();
+
+      /// -----
+      /// TODO:
+      /// -----
+      getSuKienVaChamTrongChienDau?.getSuKienVaChamPhaHuy?.onVoidXuLyVaCham(toaDoTrungTam: diemToaDoTrungTam);
+      getSuKienVaChamTrongChienDau?.getSuKienVaChamPhaHuy?.onVoidXuLySatThuongVaCham(toaDoTrungTam: diemToaDoTrungTam, satThuong: 0);
+    }
 
     return;
   }

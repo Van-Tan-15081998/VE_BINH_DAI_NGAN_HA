@@ -3,7 +3,7 @@ import 'package:pkg_dinh_nghia_ss022/pkg_dinh_nghia_ss022_exp.dart';
 import 'package:pkg_man_hinh_ss00230/pkg_man_hinh_ss00230_exp.dart';
 
 class SPRITETHANHNGANGCHISOMAUBOSS extends SPRITETHANHNGANGCHISOMAUCOBAN {
-  SPRITETHANHNGANGCHISOMAUBOSS({required super.trangThaiTongQuat});
+  SPRITETHANHNGANGCHISOMAUBOSS({required super.trangThaiTongQuat, required super.parentComponent});
 
   @override
   void onVoidCaiDatMoHinhChiTiet() {
@@ -55,15 +55,15 @@ class SPRITETHANHNGANGCHISOMAUBOSS extends SPRITETHANHNGANGCHISOMAUCOBAN {
   @override
   void onVoidCaiDatNguonHinhAnh() {
     onVoidCaiDatNguonHinhAnhThanhNgangChiSoMauHienHanh(
-      value: '../../packages/pkg_man_hinh_ss00230/lib/22_def0022/ADef20_0/07_ImgSrcs/Def080_2/09_RootDef/thanh_ngang_chi_so_mau_hien_hanh.png',
+      value: '../../packages/pkg_man_hinh_ss00230/lib/22_def0022/ADef20_0/07_ImgSrcs/Def080_2/09_RootDef/thanh_ngang_chi_so_mau_hien_hanh.webp',
       caiDatUuTien: true,
     );
     onVoidCaiDatNguonHinhAnhThanhNgangChiSoMauHieuUng(
-      value: '../../packages/pkg_man_hinh_ss00230/lib/22_def0022/ADef20_0/07_ImgSrcs/Def080_2/09_RootDef/thanh_ngang_chi_so_mau_hieu_ung.png',
+      value: '../../packages/pkg_man_hinh_ss00230/lib/22_def0022/ADef20_0/07_ImgSrcs/Def080_2/09_RootDef/thanh_ngang_chi_so_mau_hieu_ung.webp',
       caiDatUuTien: true,
     );
     onVoidCaiDatNguonHinhAnhKhungVienChiSoMau(
-      value: '../../packages/pkg_man_hinh_ss00230/lib/22_def0022/ADef20_0/07_ImgSrcs/Def080_2/09_RootDef/khung_vien_chi_so_mau.png',
+      value: '../../packages/pkg_man_hinh_ss00230/lib/22_def0022/ADef20_0/07_ImgSrcs/Def080_2/09_RootDef/khung_vien_chi_so_mau.webp',
       caiDatUuTien: true,
     );
   }
@@ -72,14 +72,15 @@ class SPRITETHANHNGANGCHISOMAUBOSS extends SPRITETHANHNGANGCHISOMAUCOBAN {
   /// TODO:
   /// -----
   @override
-  void onVoidCapNhatKiemTraHienThi() async {
+  void onVoidCapNhatKiemTraHienThi()  {
     if (getMoHinh?.getMoHinh?.onVoidKiemTraDiChuyenHienThi() == true) {
       onVoidCaiDatKiemTraHienThi(value: true);
 
       if (getDonViSprite?.getSpriteAnimation == null) {
-        getTrangThaiTongQuat?.getQuanLyTrangThaiTPGAMEUI?.onTruyXuatSpriteNgoaiHinhThanhPhanGameUI(
+        getTrangThaiTongQuat?.getQuanLyTrangThaiTPGAMEUI?.onVoidTruyXuatSpriteNgoaiHinhThanhPhanGameUI(
           donViSprite: getDonViSprite,
           maDinhDanhThanhPhanGameUI: getGameUIThanhNgangChiSoMauPhuongTienBoss?.getMaDinhDanhGameUI,
+          spriteAnimationComponent: this
         );
         getSpriteGameUIThanhNgangChiSoMauPhuongTienBoss?.animation = getDonViSprite?.getSpriteAnimation;
 

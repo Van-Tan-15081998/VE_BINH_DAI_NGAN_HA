@@ -11,7 +11,7 @@ class QuanLyTrangThaiDieuKhienTinhToanTongQuat with KhungThucThiCoBan {
   /// -----
   @override
   Future<void> onAttachRoot({required dynamic attachValue}) async {
-    if (attachValue is QuanLyTrangThaiTongQuat) {
+    if (attachValue is GlobalStateManagementSystem) {
       ///
     }
 
@@ -75,7 +75,7 @@ class QuanLyTrangThaiDieuKhienTinhToanTongQuat with KhungThucThiCoBan {
     await getTinhToanSatThuongHuongDenChienDauCo?.onAttachRoot(attachValue: attachValue);
     await getTrungTamVanHanhThuocTinhChienDauTheoQuyChuan?.onAttachRoot(attachValue: attachValue);
 
-    if (attachValue is QuanLyTrangThaiTongQuat) {
+    if (attachValue is GlobalStateManagementSystem) {
       ///
     }
 

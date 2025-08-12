@@ -29,16 +29,16 @@ class DOIHINHVATPHAMTANGCUONGSTAGESS00A001 extends DOIHINHVATPHAMTANGCUONGCOBAN 
     /// -----
     /// TODO: Xây Dựng Đội Hình Chiến Đấu [VPTC] Nhóm SS00A,SS00B,SS00C [Giai Đoạn SS010]
     /// -----
-    await getGiaiDoanSS010?.caiDatBanVeXayDungDoiHinhNhomSS00A(value: null);
-    await getGiaiDoanSS010?.caiDatBanVeXayDungDoiHinhNhomSS00B(value: null);
-    await getGiaiDoanSS010?.caiDatBanVeXayDungDoiHinhNhomSS00C(value: null);
+    await getGiaiDoanSS010?.caiDatBanVeXayDungDoiHinhNhomSS00A(value: getBanVeXayDungDoiHinhDCTCSS010?.getBanVeXayDungDoiHinhVKNN);
+    await getGiaiDoanSS010?.caiDatBanVeXayDungDoiHinhNhomSS00B(value: getBanVeXayDungDoiHinhDCTCSS020?.getBanVeXayDungDoiHinhVKNN);
+    await getGiaiDoanSS010?.caiDatBanVeXayDungDoiHinhNhomSS00C(value: getBanVeXayDungDoiHinhDCTCSS030?.getBanVeXayDungDoiHinhVKNN);
 
     /// -----
     /// TODO: Xây Dựng Đội Hình Chiến Đấu [VPTC] Nhóm SS00A,SS00B,SS00C [Giai Đoạn SS020]
     /// -----
-    await getGiaiDoanSS020?.caiDatBanVeXayDungDoiHinhNhomSS00A(value: null);
-    await getGiaiDoanSS020?.caiDatBanVeXayDungDoiHinhNhomSS00B(value: null);
-    await getGiaiDoanSS020?.caiDatBanVeXayDungDoiHinhNhomSS00C(value: null);
+    await getGiaiDoanSS020?.caiDatBanVeXayDungDoiHinhNhomSS00A(value: getBanVeXayDungDoiHinhDCTCSS010?.getBanVeXayDungDoiHinhVKNN);
+    await getGiaiDoanSS020?.caiDatBanVeXayDungDoiHinhNhomSS00B(value: getBanVeXayDungDoiHinhDCTCSS020?.getBanVeXayDungDoiHinhVKNN);
+    await getGiaiDoanSS020?.caiDatBanVeXayDungDoiHinhNhomSS00C(value: getBanVeXayDungDoiHinhDCTCSS030?.getBanVeXayDungDoiHinhVKNN);
 
     /// -----
     /// TODO: Setup Root For SubCom

@@ -25,10 +25,7 @@ mixin GIAIDOANVATPHAMPHANTHUONGCOBAN {
   /// -----
   DANHSACHHOATDONGCHIENDAUXAMCHIEMTHUOCGIAIDOANCOBAN? _danhSachHoatDongChienDauXamChiem;
   DANHSACHHOATDONGCHIENDAUXAMCHIEMTHUOCGIAIDOANCOBAN? get getDanhSachHoatDongChienDauXamChiem => _danhSachHoatDongChienDauXamChiem;
-  Future<void> caiDatDanhSachHoatDongChienDauXamChiem({
-    required DANHSACHHOATDONGCHIENDAUXAMCHIEMTHUOCGIAIDOANCOBAN? value,
-    bool? caiDatUuTien,
-  }) async {
+  Future<void> caiDatDanhSachHoatDongChienDauXamChiem({required DANHSACHHOATDONGCHIENDAUXAMCHIEMTHUOCGIAIDOANCOBAN? value, bool? caiDatUuTien}) async {
     if (caiDatUuTien == true) {
       _danhSachHoatDongChienDauXamChiem = value;
     } else {

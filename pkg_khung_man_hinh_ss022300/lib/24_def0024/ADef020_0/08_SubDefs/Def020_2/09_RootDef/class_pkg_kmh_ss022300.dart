@@ -8,13 +8,12 @@ import 'package:pkg_khung_man_hinh_ss022330/pkg_khung_man_hinh_ss022330_exp.dart
 /// -----
 /// TODO: Quản Lý Thành Phần Màn Hình Thuộc Cấp
 /// -----
-class QUANLYTHANHPHANMANHINHTHUOCCAP
-    extends QUANLYTHANHPHANMANHINHTHUOCCAPCOBAN {
+class QUANLYTHANHPHANMANHINHTHUOCCAP extends QUANLYTHANHPHANMANHINHTHUOCCAPCOBAN {
   /// -----
   /// TODO:
   /// -----
   QUANLYTHANHPHANMANHINHTHUOCCAP({
-    required super.globalState,
+    required super.globalStateManagementSystem,
     required super.gameController,
     required super.thanhPhanQuanLyThuocCapTrucTiep,
     required super.sizeDx,
@@ -26,10 +25,7 @@ class QUANLYTHANHPHANMANHINHTHUOCCAP
   /// -----
   KHUNGMANHINHSS022310? _khungManHinhTabSS010;
   KHUNGMANHINHSS022310? get getKhungManHinhTabSS010 => _khungManHinhTabSS010;
-  Future<void> onCaiDatKhungManHinhTabSS010({
-    required KHUNGMANHINHSS022310? value,
-    bool? caiDatUuTien,
-  }) async {
+  Future<void> onCaiDatKhungManHinhTabSS010({required KHUNGMANHINHSS022310? value, bool? caiDatUuTien}) async {
     if (caiDatUuTien == true) {
       _khungManHinhTabSS010 = value;
     } else {
@@ -45,10 +41,7 @@ class QUANLYTHANHPHANMANHINHTHUOCCAP
   /// -----
   KHUNGMANHINHSS022320? _khungManHinhTabSS020;
   KHUNGMANHINHSS022320? get getKhungManHinhTabSS020 => _khungManHinhTabSS020;
-  Future<void> onCaiDatKhungManHinhTabSS020({
-    required KHUNGMANHINHSS022320? value,
-    bool? caiDatUuTien,
-  }) async {
+  Future<void> onCaiDatKhungManHinhTabSS020({required KHUNGMANHINHSS022320? value, bool? caiDatUuTien}) async {
     if (caiDatUuTien == true) {
       _khungManHinhTabSS020 = value;
     } else {
@@ -62,13 +55,9 @@ class QUANLYTHANHPHANMANHINHTHUOCCAP
   /// -----
   /// TODO:
   /// -----
-  KHUNGMANHINHTABSS030THUOCCAPTABSS030CD? _khungManHinhTabSS030;
-  KHUNGMANHINHTABSS030THUOCCAPTABSS030CD? get getKhungManHinhTabSS030 =>
-      _khungManHinhTabSS030;
-  Future<void> onCaiDatKhungManHinhTabSS030({
-    required KHUNGMANHINHTABSS030THUOCCAPTABSS030CD? value,
-    bool? caiDatUuTien,
-  }) async {
+  KHUNGMANHINHSS022330? _khungManHinhTabSS030;
+  KHUNGMANHINHSS022330? get getKhungManHinhTabSS030 => _khungManHinhTabSS030;
+  Future<void> onCaiDatKhungManHinhTabSS030({required KHUNGMANHINHSS022330? value, bool? caiDatUuTien}) async {
     if (caiDatUuTien == true) {
       _khungManHinhTabSS030 = value;
     } else {
@@ -82,21 +71,13 @@ class QUANLYTHANHPHANMANHINHTHUOCCAP
   /// -----
   /// TODO:
   /// -----
-  Future<void> onKichHoatKhungManHinhTabSS010({
-    required FlameGame? flameGame,
-    required Component? component,
-  }) async {
-    await onAddComponent(
-      flameGame: null,
-      parentComponent: component,
-      childComponent: getKhungManHinhTabSS010,
-    ).catchError((e) => null);
+  Future<void> onKichHoatKhungManHinhTabSS010({required FlameGame? flameGame, required Component? component}) async {
+    await onAddComponent(flameGame: null, parentComponent: component, childComponent: getKhungManHinhTabSS010).catchError((e) => null);
 
-    await getKhungManHinhTabSS010?.onKichHoatThanhPhanManHinhThuocCap(
-      kichHoatUuTien: true,
-    );
+    await getKhungManHinhTabSS010?.onKichHoatThanhPhanManHinhThuocCap(kichHoatUuTien: true);
 
     await onHuyKichHoatKhungManHinhTabSS020();
+    await onHuyKichHoatKhungManHinhTabSS030();
 
     return;
   }
@@ -104,21 +85,36 @@ class QUANLYTHANHPHANMANHINHTHUOCCAP
   /// -----
   /// TODO:
   /// -----
-  Future<void> onKichHoatKhungManHinhTabSS020({
-    required FlameGame? flameGame,
-    required Component? component,
-  }) async {
-    await onAddComponent(
-      flameGame: null,
-      parentComponent: component,
-      childComponent: getKhungManHinhTabSS020,
-    ).catchError((e) => null);
+  Future<void> onKichHoatKhungManHinhTabSS020({required FlameGame? flameGame, required Component? component}) async {
 
-    await getKhungManHinhTabSS020?.onKichHoatThanhPhanManHinhThuocCap(
-      kichHoatUuTien: true,
+    /// -----
+    /// TODO:
+    /// -----
+    await getGlobalStateManagementSystem?.getBangDieuKhienKichBanChienDauTheoGiaiDoan?.getQuanLyDieuKhienChuyenKichBanChienDau?.onCaiDatNhiemVuChienDauChonChiDinh(
+      value: getGlobalStateManagementSystem?.getBanDoChienDau?.getNhiemVuChienDauChonChiDinh,
+      caiDatUuTien: true,
     );
 
+    await onAddComponent(flameGame: null, parentComponent: component, childComponent: getKhungManHinhTabSS020).catchError((e) => null);
+
+    await getKhungManHinhTabSS020?.onKichHoatThanhPhanManHinhThuocCap(kichHoatUuTien: true);
+
     await onHuyKichHoatKhungManHinhTabSS010();
+    await onHuyKichHoatKhungManHinhTabSS030();
+
+    return;
+  }
+
+  /// -----
+  /// TODO:
+  /// -----
+  Future<void> onKichHoatKhungManHinhTabSS030({required FlameGame? flameGame, required Component? component}) async {
+    await onAddComponent(flameGame: null, parentComponent: component, childComponent: getKhungManHinhTabSS030).catchError((e) => null);
+
+    await getKhungManHinhTabSS030?.onKichHoatThanhPhanManHinhThuocCap(kichHoatUuTien: true);
+
+    await onHuyKichHoatKhungManHinhTabSS010();
+    await onHuyKichHoatKhungManHinhTabSS020();
 
     return;
   }
@@ -146,25 +142,25 @@ class QUANLYTHANHPHANMANHINHTHUOCCAP
   }
 
   /// -----
+  /// TODO:
+  /// -----
+  Future<void> onHuyKichHoatKhungManHinhTabSS030() async {
+    await onRemoveComponent(component: getKhungManHinhTabSS030);
+
+    await getKhungManHinhTabSS030?.onHuyKichHoatThanhPhanManHinhThuocCap();
+
+    return;
+  }
+
+  /// -----
   /// TODO: Add Comp Root
   /// -----
   @override
-  Future<void> onAddRoot({
-    required FlameGame? flameGame,
-    required Component? component,
-  }) async {
+  Future<void> onAddRoot({required FlameGame? flameGame, required Component? component}) async {
     await Future.wait([
-      onAddComponent(
-        flameGame: null,
-        parentComponent: component,
-        childComponent: getKhungManHinhTabSS010,
-      ).catchError((e) => null),
-      onAddComponent(
-        flameGame: null,
-        parentComponent: component,
-        childComponent: getKhungManHinhTabSS020,
-      ).catchError((e) => null),
-      // onAddComponent(flameGame: null, parentComponent: component, childComponent: getKhungManHinhTabSS030).catchError((e) => null),
+      onAddComponent(flameGame: null, parentComponent: component, childComponent: getKhungManHinhTabSS010).catchError((e) => null),
+      onAddComponent(flameGame: null, parentComponent: component, childComponent: getKhungManHinhTabSS020).catchError((e) => null),
+      onAddComponent(flameGame: null, parentComponent: component, childComponent: getKhungManHinhTabSS030).catchError((e) => null),
     ]);
 
     /// -----
@@ -180,20 +176,11 @@ class QUANLYTHANHPHANMANHINHTHUOCCAP
   /// TODO: Add Comp Root For SubCom
   /// -----
   @override
-  Future<void> onAddRootForSubCom({
-    required FlameGame? flameGame,
-    required Component? component,
-  }) async {
+  Future<void> onAddRootForSubCom({required FlameGame? flameGame, required Component? component}) async {
     await Future.wait([
-      getKhungManHinhTabSS010
-              ?.onAddRoot(flameGame: flameGame, component: component)
-              .catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
-      getKhungManHinhTabSS020
-              ?.onAddRoot(flameGame: flameGame, component: component)
-              .catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
-      // getKhungManHinhTabSS030?.onAddRoot(flameGame: flameGame, component: component).catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getKhungManHinhTabSS010?.onAddRoot(flameGame: flameGame, component: component).catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getKhungManHinhTabSS020?.onAddRoot(flameGame: flameGame, component: component).catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getKhungManHinhTabSS030?.onAddRoot(flameGame: flameGame, component: component).catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
     ]);
 
     ///
@@ -216,7 +203,7 @@ class QUANLYTHANHPHANMANHINHTHUOCCAP
     await Future.wait([
       onCaiDatKhungManHinhTabSS010(
         value: KHUNGMANHINHSS022310(
-          globalState: getGlobalState,
+          globalStateManagementSystem: getGlobalStateManagementSystem,
           gameController: getGameController,
           thanhPhanQuanLyThuocCapTrucTiep: getThanhPhanQuanLyThuocCapTrucTiep,
           sizeDx: sizeDxKhungManHinhTab,
@@ -228,7 +215,7 @@ class QUANLYTHANHPHANMANHINHTHUOCCAP
       ).catchError((e) => null),
       onCaiDatKhungManHinhTabSS020(
         value: KHUNGMANHINHSS022320(
-          globalState: getGlobalState,
+          globalStateManagementSystem: getGlobalStateManagementSystem,
           gameController: getGameController,
           thanhPhanQuanLyThuocCapTrucTiep: getThanhPhanQuanLyThuocCapTrucTiep,
           sizeDx: sizeDxKhungManHinhTab,
@@ -239,8 +226,8 @@ class QUANLYTHANHPHANMANHINHTHUOCCAP
         caiDatUuTien: true,
       ).catchError((e) => null),
       onCaiDatKhungManHinhTabSS030(
-        value: KHUNGMANHINHTABSS030THUOCCAPTABSS030CD(
-          globalState: getGlobalState,
+        value: KHUNGMANHINHSS022330(
+          globalStateManagementSystem: getGlobalStateManagementSystem,
           gameController: getGameController,
           thanhPhanQuanLyThuocCapTrucTiep: getThanhPhanQuanLyThuocCapTrucTiep,
           sizeDx: sizeDxKhungManHinhTab,
@@ -256,21 +243,16 @@ class QUANLYTHANHPHANMANHINHTHUOCCAP
     /// TODO:
     /// -----
     await Future.wait([
-      getKhungManHinhTabSS010?.onSetupRoot().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
-      getKhungManHinhTabSS020?.onSetupRoot().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
-      // getKhungManHinhTabSS030?.onSetupRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getKhungManHinhTabSS010?.onSetupRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getKhungManHinhTabSS020?.onSetupRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getKhungManHinhTabSS030?.onSetupRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
     ]);
 
     ///
     ///
     ///
     if (getDanhSachThanhPhanManHinhThuocCap.isEmpty == true) {
-      getDanhSachThanhPhanManHinhThuocCap.addAll([
-        getKhungManHinhTabSS010,
-        getKhungManHinhTabSS020,
-      ]);
+      getDanhSachThanhPhanManHinhThuocCap.addAll([getKhungManHinhTabSS010, getKhungManHinhTabSS020, getKhungManHinhTabSS030]);
     }
 
     ///
@@ -288,14 +270,34 @@ class QUANLYTHANHPHANMANHINHTHUOCCAP
     /// TODO:
     /// -----
     await Future.wait([
-      getKhungManHinhTabSS010?.onInitRoot().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
-      getKhungManHinhTabSS020?.onInitRoot().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
-      // getKhungManHinhTabSS030?.onInitRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getKhungManHinhTabSS010?.onInitRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getKhungManHinhTabSS020?.onInitRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getKhungManHinhTabSS030?.onInitRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
     ]);
+
+    await getKhungManHinhTabSS010?.onKichHoatThanhPhanManHinhThuocCap(kichHoatUuTien: true);
+    await getKhungManHinhTabSS020?.onKichHoatThanhPhanManHinhThuocCap(kichHoatUuTien: true);
+    await getKhungManHinhTabSS030?.onKichHoatThanhPhanManHinhThuocCap(kichHoatUuTien: true);
 
     ///
     return;
+  }
+
+  @override
+  Future<void> onKichHoatKhungManHinhThuocCapTabSS030() async {
+    await super.onKichHoatKhungManHinhThuocCapTabSS030TruongHopSS020();
+
+    await getKhungManHinhTabSS010?.onKichHoatThanhPhanManHinhThuocCap(kichHoatUuTien: true);
+    await getKhungManHinhTabSS020?.onHuyKichHoatThanhPhanManHinhThuocCap();
+    await getKhungManHinhTabSS030?.onHuyKichHoatThanhPhanManHinhThuocCap();
+  }
+
+  @override
+  Future<void> onKichHoatKhungManHinhThuocCapTabSS030TruongHopSS020() async {
+    await super.onKichHoatKhungManHinhThuocCapTabSS030TruongHopSS020();
+
+    await getKhungManHinhTabSS010?.onKichHoatThanhPhanManHinhThuocCap(kichHoatUuTien: true);
+    await getKhungManHinhTabSS020?.onHuyKichHoatThanhPhanManHinhThuocCap();
+    await getKhungManHinhTabSS030?.onHuyKichHoatThanhPhanManHinhThuocCap();
   }
 }

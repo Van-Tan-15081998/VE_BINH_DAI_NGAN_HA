@@ -5,13 +5,12 @@ import 'package:pkg_khung_man_hinh_ss300100/300_def00300/ADef050_0/08_SubDefs/De
 /// -----
 /// TODO: Quản Lý Thành Phần Hình Ảnh Thuộc Cấp
 /// -----
-class QUANLYTHANHPHANHINHANHTHUOCCAP
-    extends QUANLYTHANHPHANHINHANHTHUOCCAPCOBAN {
+class QUANLYTHANHPHANHINHANHTHUOCCAP extends QUANLYTHANHPHANHINHANHTHUOCCAPCOBAN {
   /// -----
   /// TODO:
   /// -----
   QUANLYTHANHPHANHINHANHTHUOCCAP({
-    required super.globalState,
+    required super.globalStateManagementSystem,
     required super.gameController,
     required super.thanhPhanQuanLyThuocCapTrucTiep,
     required super.sizeDx,
@@ -23,10 +22,7 @@ class QUANLYTHANHPHANHINHANHTHUOCCAP
   /// -----
   HINHANHBACKGROUNDKHUNGMANHINH? _hinhAnhBackGround;
   HINHANHBACKGROUNDKHUNGMANHINH? get getHinhAnhBackGround => _hinhAnhBackGround;
-  Future<void> onCaiDatHinhAnhBackGround({
-    required HINHANHBACKGROUNDKHUNGMANHINH? value,
-    bool? caiDatUuTien,
-  }) async {
+  Future<void> onCaiDatHinhAnhBackGround({required HINHANHBACKGROUNDKHUNGMANHINH? value, bool? caiDatUuTien}) async {
     if (caiDatUuTien == true) {
       _hinhAnhBackGround = value;
     } else {
@@ -41,17 +37,8 @@ class QUANLYTHANHPHANHINHANHTHUOCCAP
   /// TODO: Add Comp Root
   /// -----
   @override
-  Future<void> onAddRoot({
-    required FlameGame? flameGame,
-    required Component? component,
-  }) async {
-    await Future.wait([
-      onAddComponent(
-        flameGame: null,
-        parentComponent: component,
-        childComponent: getHinhAnhBackGround,
-      ).catchError((e) => null),
-    ]);
+  Future<void> onAddRoot({required FlameGame? flameGame, required Component? component}) async {
+    await Future.wait([onAddComponent(flameGame: null, parentComponent: component, childComponent: getHinhAnhBackGround).catchError((e) => null)]);
 
     /// -----
     /// TODO: Add Comp Root For SubCom
@@ -66,16 +53,8 @@ class QUANLYTHANHPHANHINHANHTHUOCCAP
   /// TODO: Add Comp Root For SubCom
   /// -----
   @override
-  Future<void> onAddRootForSubCom({
-    required FlameGame? flameGame,
-    required Component? component,
-  }) async {
-    await Future.wait([
-      getHinhAnhBackGround
-              ?.onAddRoot(flameGame: null, component: component)
-              .catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
-    ]);
+  Future<void> onAddRootForSubCom({required FlameGame? flameGame, required Component? component}) async {
+    await Future.wait([getHinhAnhBackGround?.onAddRoot(flameGame: null, component: component).catchError((e) => null) ?? onReportRootIssue(nameFunction: '')]);
 
     ///
     return;
@@ -94,11 +73,11 @@ class QUANLYTHANHPHANHINHANHTHUOCCAP
     await Future.wait([
       onCaiDatHinhAnhBackGround(
         value: HINHANHBACKGROUNDKHUNGMANHINH(
-          globalState: getGlobalState,
+          globalStateManagementSystem: getGlobalStateManagementSystem,
           gameController: getGameController,
           thanhPhanQuanLyThuocCapTrucTiep: getThanhPhanQuanLyThuocCapTrucTiep,
-          sizeDx: sizeDxManHinhVatLy,
-          sizeDy: sizeDyManHinhVatLy,
+          sizeDx: sizeDxManHinhVatLy + 50.0,
+          sizeDy: sizeDyManHinhVatLy + 50.0,
           positionDx: sizeDxManHinhVatLy / 2,
           positionDy: sizeDyManHinhVatLy / 2,
         ),
@@ -109,10 +88,9 @@ class QUANLYTHANHPHANHINHANHTHUOCCAP
     /// -----
     /// TODO:
     /// -----
-    await Future.wait([
-      getHinhAnhBackGround?.onSetupRoot().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
-    ]);
+    await Future.wait([getHinhAnhBackGround?.onSetupRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: '')]);
+
+    getHinhAnhBackGround?.priority = 1000;
 
     ///
     return;
@@ -128,10 +106,7 @@ class QUANLYTHANHPHANHINHANHTHUOCCAP
     /// -----
     /// TODO:
     /// -----
-    await Future.wait([
-      getHinhAnhBackGround?.onInitRoot().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
-    ]);
+    await Future.wait([getHinhAnhBackGround?.onInitRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: '')]);
 
     ///
     return;

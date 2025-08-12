@@ -130,4 +130,13 @@ class DONVISOLUONGTONGQUAT with CauTrucThucThiCoBan {
 
     return;
   }
+  Future<void> onCaiDatTuDongTangTongSoLuong() async {
+    int tongSoLuong = getTongSoLuong ?? 0;
+    tongSoLuong += 1;
+
+    caiDatTongSoLuong(value: tongSoLuong, caiDatUuTien: true);
+
+    return;
+  }
+
 }

@@ -1,5 +1,5 @@
 import 'package:pkg_man_hinh_ss00226/22_def0022/ADef20_0/09_RootDef/abstract_sprite_phuong_tien.dart';
-
+import 'package:pkg_dinh_nghia_ss020000/pkg_dinh_nghia_ss020000_exp.dart';
 /// -----
 /// TODO:
 /// -----
@@ -41,5 +41,32 @@ class SpritePhuongTienSS68BangDieuKhienDoiHinhDauSyTienPhong extends SpritePhuon
     //   });
     // }
     return;
+  }
+
+  /// -----
+  /// TODO: Thực Thi Tấn Công
+  /// -----
+  @override
+  void onVoidThucThiTanCong() async {
+    ///
+    if (getMoHinh?.getMoHinh?.getDuLieuJsonLamPhang['[DI_CHUYEN_HIEN_THI]'] == true) {
+      if (getTrangThaiTongQuat?.getThietLapTongQuat?.onKiemTraChoPhepCapNhatTheoTocDoKhungHinh(
+            maDinhDanh: '[PHUONG_TIEN_THUC_THI_TAN_CONG_300]',
+            chiSoTangTienGiamTanXuatCapNhat: getBienTangTienGiamTanXuatCapNhat,
+          ) ==
+          true) {
+        CAUTRUCTHUCTHITUANTUCOBAN? cauTrucThucThiTuanTu = CAUTRUCTHUCTHITUANTUCOBAN.onMacDinh();
+        cauTrucThucThiTuanTu.onAddDonViThucThiTuanTu(
+          onThucThiTuanTu: () async {
+            print('ThucThiTanCong');
+          },
+        );
+        cauTrucThucThiTuanTu.onAddDonViThucThiTuanTu(
+          onThucThiTuanTu: () async {
+            await getTrangThaiTongQuat?.getBangDieuKhienKichBanChienDauTheoGiaiDoan?.getQuanLyDieuKhienChuyenKichBanChienDau?.onPTTCThucThiTanCongLienKichHinhThucSS020(phuongTien: getMoHinh?.getMoHinh);
+          },
+        );
+        await cauTrucThucThiTuanTu.onThucThiTuanTu(interval: const Duration(milliseconds: 50));      }
+    }
   }
 }

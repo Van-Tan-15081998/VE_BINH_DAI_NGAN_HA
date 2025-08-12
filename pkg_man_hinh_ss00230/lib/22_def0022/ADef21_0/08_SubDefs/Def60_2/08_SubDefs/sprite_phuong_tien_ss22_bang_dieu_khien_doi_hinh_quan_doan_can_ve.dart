@@ -4,7 +4,7 @@ import 'package:pkg_man_hinh_ss00230/pkg_man_hinh_ss00230_exp.dart';
 /// TODO:
 /// -----
 class SpritePhuongTienSS22BangDieuKhienDoiHinhQuanDoanCanVe extends SPRITETHANHNGANGCHISOMAUQDCV {
-  SpritePhuongTienSS22BangDieuKhienDoiHinhQuanDoanCanVe({required super.trangThaiTongQuat});
+  SpritePhuongTienSS22BangDieuKhienDoiHinhQuanDoanCanVe({required super.trangThaiTongQuat, required super.parentComponent});
 
   /// -----
   /// TODO: Init Root
@@ -19,6 +19,8 @@ class SpritePhuongTienSS22BangDieuKhienDoiHinhQuanDoanCanVe extends SPRITETHANHN
   @override
   void onVoidCaiDatMoHinhChiTiet() async {
     onVoidCaiDatMoHinh(value: getTrangThaiTongQuat?.getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhQDCV?.getTrangThaiPhuongTienSS022);
+
+    await getMoHinh?.onCaiDatSpriteChiSoPhuongTien(value: this);
 
     return;
   }

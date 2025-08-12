@@ -55,755 +55,755 @@ class QuanLyTrangThaiHangarPhuongTienTongQuat with CauTrucThucThiCoBan {
       /// TODO:
       /// -----
       caiDatPhuongTienTrinhSatClass10ASS01(
-        value: PHUONGTIENTRINHSATCLASS10ASS01(1),
+        value: PHUONGTIENTRINHSATCLASS10ASS01(capDo: 1)
       ).catchError((e) => null),
       caiDatPhuongTienTrinhSatClass10ASS02(
-        value: PHUONGTIENTRINHSATCLASS10ASS02(1),
+        value: PHUONGTIENTRINHSATCLASS10ASS02(capDo: 1)
       ).catchError((e) => null),
       caiDatPhuongTienTrinhSatClass10ASS03(
-        value: PHUONGTIENTRINHSATCLASS10ASS03(1),
+        value: PHUONGTIENTRINHSATCLASS10ASS03(capDo: 1)
       ).catchError((e) => null),
 
       caiDatPhuongTienTrinhSatClass20ASS01(
-        value: PHUONGTIENTRINHSATCLASS20ASS01(1),
+        value: PHUONGTIENTRINHSATCLASS20ASS01(capDo: 1)
       ).catchError((e) => null),
       caiDatPhuongTienTrinhSatClass20ASS02(
-        value: PHUONGTIENTRINHSATCLASS20ASS02(1),
+        value: PHUONGTIENTRINHSATCLASS20ASS02(capDo: 1)
       ).catchError((e) => null),
       caiDatPhuongTienTrinhSatClass20ASS03(
-        value: PHUONGTIENTRINHSATCLASS20ASS03(1),
+        value: PHUONGTIENTRINHSATCLASS20ASS03(capDo: 1)
       ).catchError((e) => null),
 
       caiDatPhuongTienTrinhSatClass30ASS01(
-        value: PHUONGTIENTRINHSATCLASS30ASS01(1),
+        value: PHUONGTIENTRINHSATCLASS30ASS01(capDo: 1)
       ).catchError((e) => null),
       caiDatPhuongTienTrinhSatClass30ASS02(
-        value: PHUONGTIENTRINHSATCLASS30ASS02(1),
+        value: PHUONGTIENTRINHSATCLASS30ASS02(capDo: 1)
       ).catchError((e) => null),
       caiDatPhuongTienTrinhSatClass30ASS03(
-        value: PHUONGTIENTRINHSATCLASS30ASS03(1),
+        value: PHUONGTIENTRINHSATCLASS30ASS03(capDo: 1)
       ).catchError((e) => null),
 
       caiDatPhuongTienTrinhSatClass40ASS01(
-        value: PHUONGTIENTRINHSATCLASS40ASS01(1),
+        value: PHUONGTIENTRINHSATCLASS40ASS01(capDo: 1)
       ).catchError((e) => null),
       caiDatPhuongTienTrinhSatClass40ASS02(
-        value: PHUONGTIENTRINHSATCLASS40ASS02(1),
+        value: PHUONGTIENTRINHSATCLASS40ASS02(capDo: 1)
       ).catchError((e) => null),
       caiDatPhuongTienTrinhSatClass40ASS03(
-        value: PHUONGTIENTRINHSATCLASS40ASS03(1),
+        value: PHUONGTIENTRINHSATCLASS40ASS03(capDo: 1)
       ).catchError((e) => null),
 
       caiDatPhuongTienTrinhSatClass50ASS01(
-        value: PHUONGTIENTRINHSATCLASS50ASS01(1),
+        value: PHUONGTIENTRINHSATCLASS50ASS01(capDo: 1)
       ).catchError((e) => null),
       caiDatPhuongTienTrinhSatClass50ASS02(
-        value: PHUONGTIENTRINHSATCLASS50ASS02(1),
+        value: PHUONGTIENTRINHSATCLASS50ASS02(capDo: 1)
       ).catchError((e) => null),
       caiDatPhuongTienTrinhSatClass50ASS03(
-        value: PHUONGTIENTRINHSATCLASS50ASS03(1),
+        value: PHUONGTIENTRINHSATCLASS50ASS03(capDo: 1)
       ).catchError((e) => null),
 
       caiDatPhuongTienTrinhSatClass10BSS01(
-        value: PHUONGTIENTRINHSATCLASS10BSS01(1),
+        value: PHUONGTIENTRINHSATCLASS10BSS01(capDo: 1)
       ).catchError((e) => null),
       caiDatPhuongTienTrinhSatClass10BSS02(
-        value: PHUONGTIENTRINHSATCLASS10BSS02(1),
+        value: PHUONGTIENTRINHSATCLASS10BSS02(capDo: 1)
       ).catchError((e) => null),
       caiDatPhuongTienTrinhSatClass10BSS03(
-        value: PHUONGTIENTRINHSATCLASS10BSS03(1),
+        value: PHUONGTIENTRINHSATCLASS10BSS03(capDo: 1)
       ).catchError((e) => null),
 
       caiDatPhuongTienTrinhSatClass20BSS01(
-        value: PHUONGTIENTRINHSATCLASS20BSS01(1),
+        value: PHUONGTIENTRINHSATCLASS20BSS01(capDo: 1)
       ).catchError((e) => null),
       caiDatPhuongTienTrinhSatClass20BSS02(
-        value: PHUONGTIENTRINHSATCLASS20BSS02(1),
+        value: PHUONGTIENTRINHSATCLASS20BSS02(capDo: 1)
       ).catchError((e) => null),
       caiDatPhuongTienTrinhSatClass20BSS03(
-        value: PHUONGTIENTRINHSATCLASS20BSS03(1),
+        value: PHUONGTIENTRINHSATCLASS20BSS03(capDo: 1)
       ).catchError((e) => null),
 
       caiDatPhuongTienTrinhSatClass30BSS01(
-        value: PHUONGTIENTRINHSATCLASS30BSS01(1),
+        value: PHUONGTIENTRINHSATCLASS30BSS01(capDo: 1)
       ).catchError((e) => null),
       caiDatPhuongTienTrinhSatClass30BSS02(
-        value: PHUONGTIENTRINHSATCLASS30BSS02(1),
+        value: PHUONGTIENTRINHSATCLASS30BSS02(capDo: 1)
       ).catchError((e) => null),
       caiDatPhuongTienTrinhSatClass30BSS03(
-        value: PHUONGTIENTRINHSATCLASS30BSS03(1),
+        value: PHUONGTIENTRINHSATCLASS30BSS03(capDo: 1)
       ).catchError((e) => null),
 
       caiDatPhuongTienTrinhSatClass40BSS01(
-        value: PHUONGTIENTRINHSATCLASS40BSS01(1),
+        value: PHUONGTIENTRINHSATCLASS40BSS01(capDo: 1)
       ).catchError((e) => null),
       caiDatPhuongTienTrinhSatClass40BSS02(
-        value: PHUONGTIENTRINHSATCLASS40BSS02(1),
+        value: PHUONGTIENTRINHSATCLASS40BSS02(capDo: 1)
       ).catchError((e) => null),
       caiDatPhuongTienTrinhSatClass40BSS03(
-        value: PHUONGTIENTRINHSATCLASS40BSS03(1),
+        value: PHUONGTIENTRINHSATCLASS40BSS03(capDo: 1)
       ).catchError((e) => null),
 
       caiDatPhuongTienTrinhSatClass50BSS01(
-        value: PHUONGTIENTRINHSATCLASS50BSS01(1),
+        value: PHUONGTIENTRINHSATCLASS50BSS01(capDo: 1)
       ).catchError((e) => null),
       caiDatPhuongTienTrinhSatClass50BSS02(
-        value: PHUONGTIENTRINHSATCLASS50BSS02(1),
+        value: PHUONGTIENTRINHSATCLASS50BSS02(capDo: 1)
       ).catchError((e) => null),
       caiDatPhuongTienTrinhSatClass50BSS03(
-        value: PHUONGTIENTRINHSATCLASS50BSS03(1),
+        value: PHUONGTIENTRINHSATCLASS50BSS03(capDo: 1)
       ).catchError((e) => null),
 
       caiDatPhuongTienTrinhSatClass10CSS01(
-        value: PHUONGTIENTRINHSATCLASS10CSS01(1),
+        value: PHUONGTIENTRINHSATCLASS10CSS01(capDo: 1)
       ).catchError((e) => null),
       caiDatPhuongTienTrinhSatClass10CSS02(
-        value: PHUONGTIENTRINHSATCLASS10CSS02(1),
+        value: PHUONGTIENTRINHSATCLASS10CSS02(capDo: 1)
       ).catchError((e) => null),
       caiDatPhuongTienTrinhSatClass10CSS03(
-        value: PHUONGTIENTRINHSATCLASS10CSS03(1),
+        value: PHUONGTIENTRINHSATCLASS10CSS03(capDo: 1)
       ).catchError((e) => null),
 
       caiDatPhuongTienTrinhSatClass20CSS01(
-        value: PHUONGTIENTRINHSATCLASS20CSS01(1),
+        value: PHUONGTIENTRINHSATCLASS20CSS01(capDo: 1)
       ).catchError((e) => null),
       caiDatPhuongTienTrinhSatClass20CSS02(
-        value: PHUONGTIENTRINHSATCLASS20CSS02(1),
+        value: PHUONGTIENTRINHSATCLASS20CSS02(capDo: 1)
       ).catchError((e) => null),
       caiDatPhuongTienTrinhSatClass20CSS03(
-        value: PHUONGTIENTRINHSATCLASS20CSS03(1),
+        value: PHUONGTIENTRINHSATCLASS20CSS03(capDo: 1)
       ).catchError((e) => null),
 
       caiDatPhuongTienTrinhSatClass30CSS01(
-        value: PHUONGTIENTRINHSATCLASS30CSS01(1),
+        value: PHUONGTIENTRINHSATCLASS30CSS01(capDo: 1)
       ).catchError((e) => null),
       caiDatPhuongTienTrinhSatClass30CSS02(
-        value: PHUONGTIENTRINHSATCLASS30CSS02(1),
+        value: PHUONGTIENTRINHSATCLASS30CSS02(capDo: 1)
       ).catchError((e) => null),
       caiDatPhuongTienTrinhSatClass30CSS03(
-        value: PHUONGTIENTRINHSATCLASS30CSS03(1),
+        value: PHUONGTIENTRINHSATCLASS30CSS03(capDo: 1)
       ).catchError((e) => null),
 
       caiDatPhuongTienTrinhSatClass40CSS01(
-        value: PHUONGTIENTRINHSATCLASS40CSS01(1),
+        value: PHUONGTIENTRINHSATCLASS40CSS01(capDo: 1)
       ).catchError((e) => null),
       caiDatPhuongTienTrinhSatClass40CSS02(
-        value: PHUONGTIENTRINHSATCLASS40CSS02(1),
+        value: PHUONGTIENTRINHSATCLASS40CSS02(capDo: 1)
       ).catchError((e) => null),
       caiDatPhuongTienTrinhSatClass40CSS03(
-        value: PHUONGTIENTRINHSATCLASS40CSS03(1),
+        value: PHUONGTIENTRINHSATCLASS40CSS03(capDo: 1)
       ).catchError((e) => null),
 
       caiDatPhuongTienTrinhSatClass50CSS01(
-        value: PHUONGTIENTRINHSATCLASS50CSS01(1),
+        value: PHUONGTIENTRINHSATCLASS50CSS01(capDo: 1)
       ).catchError((e) => null),
       caiDatPhuongTienTrinhSatClass50CSS02(
-        value: PHUONGTIENTRINHSATCLASS50CSS02(1),
+        value: PHUONGTIENTRINHSATCLASS50CSS02(capDo: 1)
       ).catchError((e) => null),
       caiDatPhuongTienTrinhSatClass50CSS03(
-        value: PHUONGTIENTRINHSATCLASS50CSS03(1),
+        value: PHUONGTIENTRINHSATCLASS50CSS03(capDo: 1)
       ).catchError((e) => null),
 
       ///
       ///
       ///
       caiDatPhuongTienTanCongClass10ASS01(
-        value: PHUONGTIENTANCONGCLASS10ASS01(1),
+        value: PHUONGTIENTANCONGCLASS10ASS01(capDo: 1)
       ).catchError((e) => null),
       caiDatPhuongTienTanCongClass10ASS02(
-        value: PHUONGTIENTANCONGCLASS10ASS02(1),
+        value: PHUONGTIENTANCONGCLASS10ASS02(capDo: 1)
       ).catchError((e) => null),
       caiDatPhuongTienTanCongClass10ASS03(
-        value: PHUONGTIENTANCONGCLASS10ASS03(1),
+        value: PHUONGTIENTANCONGCLASS10ASS03(capDo: 1)
       ).catchError((e) => null),
 
       caiDatPhuongTienTanCongClass20ASS01(
-        value: PHUONGTIENTANCONGCLASS20ASS01(1),
+        value: PHUONGTIENTANCONGCLASS20ASS01(capDo: 1)
       ).catchError((e) => null),
       caiDatPhuongTienTanCongClass20ASS02(
-        value: PHUONGTIENTANCONGCLASS20ASS02(1),
+        value: PHUONGTIENTANCONGCLASS20ASS02(capDo: 1)
       ).catchError((e) => null),
       caiDatPhuongTienTanCongClass20ASS03(
-        value: PHUONGTIENTANCONGCLASS20ASS03(1),
+        value: PHUONGTIENTANCONGCLASS20ASS03(capDo: 1)
       ).catchError((e) => null),
 
       caiDatPhuongTienTanCongClass30ASS01(
-        value: PHUONGTIENTANCONGCLASS30ASS01(1),
+        value: PHUONGTIENTANCONGCLASS30ASS01(capDo: 1)
       ).catchError((e) => null),
       caiDatPhuongTienTanCongClass30ASS02(
-        value: PHUONGTIENTANCONGCLASS30ASS02(1),
+        value: PHUONGTIENTANCONGCLASS30ASS02(capDo: 1)
       ).catchError((e) => null),
       caiDatPhuongTienTanCongClass30ASS03(
-        value: PHUONGTIENTANCONGCLASS30ASS03(1),
+        value: PHUONGTIENTANCONGCLASS30ASS03(capDo: 1)
       ).catchError((e) => null),
 
       caiDatPhuongTienTanCongClass40ASS01(
-        value: PHUONGTIENTANCONGCLASS40ASS01(1),
+        value: PHUONGTIENTANCONGCLASS40ASS01(capDo: 1)
       ).catchError((e) => null),
       caiDatPhuongTienTanCongClass40ASS02(
-        value: PHUONGTIENTANCONGCLASS40ASS02(1),
+        value: PHUONGTIENTANCONGCLASS40ASS02(capDo: 1)
       ).catchError((e) => null),
       caiDatPhuongTienTanCongClass40ASS03(
-        value: PHUONGTIENTANCONGCLASS40ASS03(1),
+        value: PHUONGTIENTANCONGCLASS40ASS03(capDo: 1)
       ).catchError((e) => null),
 
       caiDatPhuongTienTanCongClass50ASS01(
-        value: PHUONGTIENTANCONGCLASS50ASS01(1),
+        value: PHUONGTIENTANCONGCLASS50ASS01(capDo: 1)
       ).catchError((e) => null),
       caiDatPhuongTienTanCongClass50ASS02(
-        value: PHUONGTIENTANCONGCLASS50ASS02(1),
+        value: PHUONGTIENTANCONGCLASS50ASS02(capDo: 1)
       ).catchError((e) => null),
       caiDatPhuongTienTanCongClass50ASS03(
-        value: PHUONGTIENTANCONGCLASS50ASS03(1),
+        value: PHUONGTIENTANCONGCLASS50ASS03(capDo: 1)
       ).catchError((e) => null),
 
       caiDatPhuongTienTanCongClass10BSS01(
-        value: PHUONGTIENTANCONGCLASS10BSS01(1),
+        value: PHUONGTIENTANCONGCLASS10BSS01(capDo: 1)
       ).catchError((e) => null),
       caiDatPhuongTienTanCongClass10BSS02(
-        value: PHUONGTIENTANCONGCLASS10BSS02(1),
+        value: PHUONGTIENTANCONGCLASS10BSS02(capDo: 1)
       ).catchError((e) => null),
       caiDatPhuongTienTanCongClass10BSS03(
-        value: PHUONGTIENTANCONGCLASS10BSS03(1),
+        value: PHUONGTIENTANCONGCLASS10BSS03(capDo: 1)
       ).catchError((e) => null),
 
       caiDatPhuongTienTanCongClass20BSS01(
-        value: PHUONGTIENTANCONGCLASS20BSS01(1),
+        value: PHUONGTIENTANCONGCLASS20BSS01(capDo: 1)
       ).catchError((e) => null),
       caiDatPhuongTienTanCongClass20BSS02(
-        value: PHUONGTIENTANCONGCLASS20BSS02(1),
+        value: PHUONGTIENTANCONGCLASS20BSS02(capDo: 1)
       ).catchError((e) => null),
       caiDatPhuongTienTanCongClass20BSS03(
-        value: PHUONGTIENTANCONGCLASS20BSS03(1),
+        value: PHUONGTIENTANCONGCLASS20BSS03(capDo: 1)
       ).catchError((e) => null),
 
       caiDatPhuongTienTanCongClass30BSS01(
-        value: PHUONGTIENTANCONGCLASS30BSS01(1),
+        value: PHUONGTIENTANCONGCLASS30BSS01(capDo: 1)
       ).catchError((e) => null),
       caiDatPhuongTienTanCongClass30BSS02(
-        value: PHUONGTIENTANCONGCLASS30BSS02(1),
+        value: PHUONGTIENTANCONGCLASS30BSS02(capDo: 1)
       ).catchError((e) => null),
       caiDatPhuongTienTanCongClass30BSS03(
-        value: PHUONGTIENTANCONGCLASS30BSS03(1),
+        value: PHUONGTIENTANCONGCLASS30BSS03(capDo: 1)
       ).catchError((e) => null),
 
       caiDatPhuongTienTanCongClass40BSS01(
-        value: PHUONGTIENTANCONGCLASS40BSS01(1),
+        value: PHUONGTIENTANCONGCLASS40BSS01(capDo: 1)
       ).catchError((e) => null),
       caiDatPhuongTienTanCongClass40BSS02(
-        value: PHUONGTIENTANCONGCLASS40BSS02(1),
+        value: PHUONGTIENTANCONGCLASS40BSS02(capDo: 1)
       ).catchError((e) => null),
       caiDatPhuongTienTanCongClass40BSS03(
-        value: PHUONGTIENTANCONGCLASS40BSS03(1),
+        value: PHUONGTIENTANCONGCLASS40BSS03(capDo: 1)
       ).catchError((e) => null),
 
       ///
       ///
       ///
       caiDatPhuongTienHoVeClass10ASS01(
-        value: PHUONGTIENHOVECLASS10ASS01(1),
+        value: PHUONGTIENHOVECLASS10ASS01(capDo: 1)
       ).catchError((e) => null),
       caiDatPhuongTienHoVeClass10ASS02(
-        value: PHUONGTIENHOVECLASS10ASS02(1),
+        value: PHUONGTIENHOVECLASS10ASS02(capDo: 1)
       ).catchError((e) => null),
       caiDatPhuongTienHoVeClass10ASS03(
-        value: PHUONGTIENHOVECLASS10ASS03(1),
+        value: PHUONGTIENHOVECLASS10ASS03(capDo: 1)
       ).catchError((e) => null),
 
       caiDatPhuongTienHoVeClass20ASS01(
-        value: PHUONGTIENHOVECLASS20ASS01(1),
+        value: PHUONGTIENHOVECLASS20ASS01(capDo: 1)
       ).catchError((e) => null),
       caiDatPhuongTienHoVeClass20ASS02(
-        value: PHUONGTIENHOVECLASS20ASS02(1),
+        value: PHUONGTIENHOVECLASS20ASS02(capDo: 1)
       ).catchError((e) => null),
       caiDatPhuongTienHoVeClass20ASS03(
-        value: PHUONGTIENHOVECLASS20ASS03(1),
+        value: PHUONGTIENHOVECLASS20ASS03(capDo: 1)
       ).catchError((e) => null),
 
       caiDatPhuongTienHoVeClass30ASS01(
-        value: PHUONGTIENHOVECLASS30ASS01(1),
+        value: PHUONGTIENHOVECLASS30ASS01(capDo: 1)
       ).catchError((e) => null),
       caiDatPhuongTienHoVeClass30ASS02(
-        value: PHUONGTIENHOVECLASS30ASS02(1),
+        value: PHUONGTIENHOVECLASS30ASS02(capDo: 1)
       ).catchError((e) => null),
       caiDatPhuongTienHoVeClass30ASS03(
-        value: PHUONGTIENHOVECLASS30ASS03(1),
+        value: PHUONGTIENHOVECLASS30ASS03(capDo: 1)
       ).catchError((e) => null),
 
       ///
       ///
       ///
       caiDatPhuongTienChiHuyClass10ASS01(
-        value: PHUONGTIENCHIHUYCLASS10ASS01(1),
+        value: PHUONGTIENCHIHUYCLASS10ASS01(capDo: 1)
       ).catchError((e) => null),
       caiDatPhuongTienChiHuyCLASS10ASS010VKSS010(
-        value: PHUONGTIENVUKHICHIHUYCLASS10ASS010VKSS010(1),
+        value: PHUONGTIENVUKHICHIHUYCLASS10ASS010VKSS010(capDo: 1)
       ).catchError((e) => null),
       caiDatPhuongTienChiHuyCLASS10ASS010VKSS020(
-        value: PHUONGTIENVUKHICHIHUYCLASS10ASS010VKSS020(1),
+        value: PHUONGTIENVUKHICHIHUYCLASS10ASS010VKSS020(capDo: 1)
       ).catchError((e) => null),
       caiDatPhuongTienChiHuyCLASS10ASS010VKSS030(
-        value: PHUONGTIENVUKHICHIHUYCLASS10ASS010VKSS030(1),
+        value: PHUONGTIENVUKHICHIHUYCLASS10ASS010VKSS030(capDo: 1)
       ).catchError((e) => null),
       caiDatPhuongTienChiHuyCLASS10ASS010VKSS040(
-        value: PHUONGTIENVUKHICHIHUYCLASS10ASS010VKSS040(1),
+        value: PHUONGTIENVUKHICHIHUYCLASS10ASS010VKSS040(capDo: 1)
       ).catchError((e) => null),
 
       caiDatPhuongTienChiHuyClass20ASS01(
-        value: PHUONGTIENCHIHUYCLASS20ASS01(1),
+        value: PHUONGTIENCHIHUYCLASS20ASS01(capDo: 1)
       ).catchError((e) => null),
       caiDatPhuongTienChiHuyCLASS20ASS010VKSS010(
-        value: PHUONGTIENVUKHICHIHUYCLASS20ASS010VKSS010(1),
+        value: PHUONGTIENVUKHICHIHUYCLASS20ASS010VKSS010(capDo: 1)
       ).catchError((e) => null),
       caiDatPhuongTienChiHuyCLASS20ASS010VKSS020(
-        value: PHUONGTIENVUKHICHIHUYCLASS20ASS010VKSS020(1),
+        value: PHUONGTIENVUKHICHIHUYCLASS20ASS010VKSS020(capDo: 1)
       ).catchError((e) => null),
       caiDatPhuongTienChiHuyCLASS20ASS010VKSS030(
-        value: PHUONGTIENVUKHICHIHUYCLASS20ASS010VKSS030(1),
+        value: PHUONGTIENVUKHICHIHUYCLASS20ASS010VKSS030(capDo: 1)
       ).catchError((e) => null),
       caiDatPhuongTienChiHuyCLASS20ASS010VKSS040(
-        value: PHUONGTIENVUKHICHIHUYCLASS20ASS010VKSS040(1),
+        value: PHUONGTIENVUKHICHIHUYCLASS20ASS010VKSS040(capDo: 1)
       ).catchError((e) => null),
 
       caiDatPhuongTienChiHuyClass30ASS01(
-        value: PHUONGTIENCHIHUYCLASS30ASS01(1),
+        value: PHUONGTIENCHIHUYCLASS30ASS01(capDo: 1)
       ).catchError((e) => null),
       caiDatPhuongTienChiHuyCLASS30ASS010VKSS010(
-        value: PHUONGTIENVUKHICHIHUYCLASS30ASS010VKSS010(1),
+        value: PHUONGTIENVUKHICHIHUYCLASS30ASS010VKSS010(capDo: 1)
       ).catchError((e) => null),
       caiDatPhuongTienChiHuyCLASS30ASS010VKSS020(
-        value: PHUONGTIENVUKHICHIHUYCLASS30ASS010VKSS020(1),
+        value: PHUONGTIENVUKHICHIHUYCLASS30ASS010VKSS020(capDo: 1)
       ).catchError((e) => null),
       caiDatPhuongTienChiHuyCLASS30ASS010VKSS030(
-        value: PHUONGTIENVUKHICHIHUYCLASS30ASS010VKSS030(1),
+        value: PHUONGTIENVUKHICHIHUYCLASS30ASS010VKSS030(capDo: 1)
       ).catchError((e) => null),
       caiDatPhuongTienChiHuyCLASS30ASS010VKSS040(
-        value: PHUONGTIENVUKHICHIHUYCLASS30ASS010VKSS040(1),
+        value: PHUONGTIENVUKHICHIHUYCLASS30ASS010VKSS040(capDo: 1)
       ).catchError((e) => null),
 
       caiDatPhuongTienChiHuyClass40ASS01(
-        value: PHUONGTIENCHIHUYCLASS40ASS01(1),
+        value: PHUONGTIENCHIHUYCLASS40ASS01(capDo: 1)
       ).catchError((e) => null),
       caiDatPhuongTienChiHuyCLASS40ASS010VKSS010(
-        value: PHUONGTIENVUKHICHIHUYCLASS40ASS010VKSS010(1),
+        value: PHUONGTIENVUKHICHIHUYCLASS40ASS010VKSS010(capDo: 1)
       ).catchError((e) => null),
       caiDatPhuongTienChiHuyCLASS40ASS010VKSS020(
-        value: PHUONGTIENVUKHICHIHUYCLASS40ASS010VKSS020(1),
+        value: PHUONGTIENVUKHICHIHUYCLASS40ASS010VKSS020(capDo: 1)
       ).catchError((e) => null),
       caiDatPhuongTienChiHuyCLASS40ASS010VKSS030(
-        value: PHUONGTIENVUKHICHIHUYCLASS40ASS010VKSS030(1),
+        value: PHUONGTIENVUKHICHIHUYCLASS40ASS010VKSS030(capDo: 1)
       ).catchError((e) => null),
       caiDatPhuongTienChiHuyCLASS40ASS010VKSS040(
-        value: PHUONGTIENVUKHICHIHUYCLASS40ASS010VKSS040(1),
+        value: PHUONGTIENVUKHICHIHUYCLASS40ASS010VKSS040(capDo: 1)
       ).catchError((e) => null),
 
       caiDatPhuongTienChiHuyClass50ASS01(
-        value: PHUONGTIENCHIHUYCLASS50ASS01(1),
+        value: PHUONGTIENCHIHUYCLASS50ASS01(capDo: 1)
       ).catchError((e) => null),
       caiDatPhuongTienChiHuyCLASS50ASS010VKSS010(
-        value: PHUONGTIENVUKHICHIHUYCLASS50ASS010VKSS010(1),
+        value: PHUONGTIENVUKHICHIHUYCLASS50ASS010VKSS010(capDo: 1)
       ).catchError((e) => null),
       caiDatPhuongTienChiHuyCLASS50ASS010VKSS020(
-        value: PHUONGTIENVUKHICHIHUYCLASS50ASS010VKSS020(1),
+        value: PHUONGTIENVUKHICHIHUYCLASS50ASS010VKSS020(capDo: 1)
       ).catchError((e) => null),
       caiDatPhuongTienChiHuyCLASS50ASS010VKSS030(
-        value: PHUONGTIENVUKHICHIHUYCLASS50ASS010VKSS030(1),
+        value: PHUONGTIENVUKHICHIHUYCLASS50ASS010VKSS030(capDo: 1)
       ).catchError((e) => null),
       caiDatPhuongTienChiHuyCLASS50ASS010VKSS040(
-        value: PHUONGTIENVUKHICHIHUYCLASS50ASS010VKSS040(1),
+        value: PHUONGTIENVUKHICHIHUYCLASS50ASS010VKSS040(capDo: 1)
       ).catchError((e) => null),
 
       ///
       caiDatPhuongTienChiHuyClass10BSS01(
-        value: PHUONGTIENCHIHUYCLASS10BSS01(1),
+        value: PHUONGTIENCHIHUYCLASS10BSS01(capDo: 1)
       ).catchError((e) => null),
       caiDatPhuongTienChiHuyCLASS10BSS010VKSS010(
-        value: PHUONGTIENVUKHICHIHUYCLASS10BSS010VKSS010(1),
+        value: PHUONGTIENVUKHICHIHUYCLASS10BSS010VKSS010(capDo: 1)
       ).catchError((e) => null),
       caiDatPhuongTienChiHuyCLASS10BSS010VKSS020(
-        value: PHUONGTIENVUKHICHIHUYCLASS10BSS010VKSS020(1),
+        value: PHUONGTIENVUKHICHIHUYCLASS10BSS010VKSS020(capDo: 1)
       ).catchError((e) => null),
       caiDatPhuongTienChiHuyCLASS10BSS010VKSS030(
-        value: PHUONGTIENVUKHICHIHUYCLASS10BSS010VKSS030(1),
+        value: PHUONGTIENVUKHICHIHUYCLASS10BSS010VKSS030(capDo: 1)
       ).catchError((e) => null),
       caiDatPhuongTienChiHuyCLASS10BSS010VKSS040(
-        value: PHUONGTIENVUKHICHIHUYCLASS10BSS010VKSS040(1),
+        value: PHUONGTIENVUKHICHIHUYCLASS10BSS010VKSS040(capDo: 1)
       ).catchError((e) => null),
 
       caiDatPhuongTienChiHuyClass20BSS01(
-        value: PHUONGTIENCHIHUYCLASS20BSS01(1),
+        value: PHUONGTIENCHIHUYCLASS20BSS01(capDo: 1)
       ).catchError((e) => null),
       caiDatPhuongTienChiHuyCLASS20BSS010VKSS010(
-        value: PHUONGTIENVUKHICHIHUYCLASS20BSS010VKSS010(1),
+        value: PHUONGTIENVUKHICHIHUYCLASS20BSS010VKSS010(capDo: 1)
       ).catchError((e) => null),
       caiDatPhuongTienChiHuyCLASS20BSS010VKSS020(
-        value: PHUONGTIENVUKHICHIHUYCLASS20BSS010VKSS020(1),
+        value: PHUONGTIENVUKHICHIHUYCLASS20BSS010VKSS020(capDo: 1)
       ).catchError((e) => null),
       caiDatPhuongTienChiHuyCLASS20BSS010VKSS030(
-        value: PHUONGTIENVUKHICHIHUYCLASS20BSS010VKSS030(1),
+        value: PHUONGTIENVUKHICHIHUYCLASS20BSS010VKSS030(capDo: 1)
       ).catchError((e) => null),
       caiDatPhuongTienChiHuyCLASS20BSS010VKSS040(
-        value: PHUONGTIENVUKHICHIHUYCLASS20BSS010VKSS040(1),
+        value: PHUONGTIENVUKHICHIHUYCLASS20BSS010VKSS040(capDo: 1)
       ).catchError((e) => null),
 
       caiDatPhuongTienChiHuyClass30BSS01(
-        value: PHUONGTIENCHIHUYCLASS30BSS01(1),
+        value: PHUONGTIENCHIHUYCLASS30BSS01(capDo: 1)
       ).catchError((e) => null),
       caiDatPhuongTienChiHuyCLASS30BSS010VKSS010(
-        value: PHUONGTIENVUKHICHIHUYCLASS30BSS010VKSS010(1),
+        value: PHUONGTIENVUKHICHIHUYCLASS30BSS010VKSS010(capDo: 1)
       ).catchError((e) => null),
       caiDatPhuongTienChiHuyCLASS30BSS010VKSS020(
-        value: PHUONGTIENVUKHICHIHUYCLASS30BSS010VKSS020(1),
+        value: PHUONGTIENVUKHICHIHUYCLASS30BSS010VKSS020(capDo: 1)
       ).catchError((e) => null),
       caiDatPhuongTienChiHuyCLASS30BSS010VKSS030(
-        value: PHUONGTIENVUKHICHIHUYCLASS30BSS010VKSS030(1),
+        value: PHUONGTIENVUKHICHIHUYCLASS30BSS010VKSS030(capDo: 1)
       ).catchError((e) => null),
       caiDatPhuongTienChiHuyCLASS30BSS010VKSS040(
-        value: PHUONGTIENVUKHICHIHUYCLASS30BSS010VKSS040(1),
+        value: PHUONGTIENVUKHICHIHUYCLASS30BSS010VKSS040(capDo: 1)
       ).catchError((e) => null),
 
       caiDatPhuongTienChiHuyClass40BSS01(
-        value: PHUONGTIENCHIHUYCLASS40BSS01(1),
+        value: PHUONGTIENCHIHUYCLASS40BSS01(capDo: 1)
       ).catchError((e) => null),
       caiDatPhuongTienChiHuyCLASS40BSS010VKSS010(
-        value: PHUONGTIENVUKHICHIHUYCLASS40BSS010VKSS010(1),
+        value: PHUONGTIENVUKHICHIHUYCLASS40BSS010VKSS010(capDo: 1)
       ).catchError((e) => null),
       caiDatPhuongTienChiHuyCLASS40BSS010VKSS020(
-        value: PHUONGTIENVUKHICHIHUYCLASS40BSS010VKSS020(1),
+        value: PHUONGTIENVUKHICHIHUYCLASS40BSS010VKSS020(capDo: 1)
       ).catchError((e) => null),
       caiDatPhuongTienChiHuyCLASS40BSS010VKSS030(
-        value: PHUONGTIENVUKHICHIHUYCLASS40BSS010VKSS030(1),
+        value: PHUONGTIENVUKHICHIHUYCLASS40BSS010VKSS030(capDo: 1)
       ).catchError((e) => null),
       caiDatPhuongTienChiHuyCLASS40BSS010VKSS040(
-        value: PHUONGTIENVUKHICHIHUYCLASS40BSS010VKSS040(1),
+        value: PHUONGTIENVUKHICHIHUYCLASS40BSS010VKSS040(capDo: 1)
       ).catchError((e) => null),
 
       caiDatPhuongTienChiHuyClass50BSS01(
-        value: PHUONGTIENCHIHUYCLASS50BSS01(1),
+        value: PHUONGTIENCHIHUYCLASS50BSS01(capDo: 1)
       ).catchError((e) => null),
       caiDatPhuongTienChiHuyCLASS50BSS010VKSS010(
-        value: PHUONGTIENVUKHICHIHUYCLASS50BSS010VKSS010(1),
+        value: PHUONGTIENVUKHICHIHUYCLASS50BSS010VKSS010(capDo: 1)
       ).catchError((e) => null),
       caiDatPhuongTienChiHuyCLASS50BSS010VKSS020(
-        value: PHUONGTIENVUKHICHIHUYCLASS50BSS010VKSS020(1),
+        value: PHUONGTIENVUKHICHIHUYCLASS50BSS010VKSS020(capDo: 1)
       ).catchError((e) => null),
       caiDatPhuongTienChiHuyCLASS50BSS010VKSS030(
-        value: PHUONGTIENVUKHICHIHUYCLASS50BSS010VKSS030(1),
+        value: PHUONGTIENVUKHICHIHUYCLASS50BSS010VKSS030(capDo: 1)
       ).catchError((e) => null),
       caiDatPhuongTienChiHuyCLASS50BSS010VKSS040(
-        value: PHUONGTIENVUKHICHIHUYCLASS50BSS010VKSS040(1),
+        value: PHUONGTIENVUKHICHIHUYCLASS50BSS010VKSS040(capDo: 1)
       ).catchError((e) => null),
 
       ///
       caiDatPhuongTienChiHuyClass10CSS01(
-        value: PHUONGTIENCHIHUYCLASS10CSS01(1),
+        value: PHUONGTIENCHIHUYCLASS10CSS01(capDo: 1)
       ).catchError((e) => null),
       caiDatPhuongTienChiHuyCLASS10CSS010VKSS010(
-        value: PHUONGTIENVUKHICHIHUYCLASS10CSS010VKSS010(1),
+        value: PHUONGTIENVUKHICHIHUYCLASS10CSS010VKSS010(capDo: 1)
       ).catchError((e) => null),
       caiDatPhuongTienChiHuyCLASS10CSS010VKSS020(
-        value: PHUONGTIENVUKHICHIHUYCLASS10CSS010VKSS020(1),
+        value: PHUONGTIENVUKHICHIHUYCLASS10CSS010VKSS020(capDo: 1)
       ).catchError((e) => null),
       caiDatPhuongTienChiHuyCLASS10CSS010VKSS030(
-        value: PHUONGTIENVUKHICHIHUYCLASS10CSS010VKSS030(1),
+        value: PHUONGTIENVUKHICHIHUYCLASS10CSS010VKSS030(capDo: 1)
       ).catchError((e) => null),
       caiDatPhuongTienChiHuyCLASS10CSS010VKSS040(
-        value: PHUONGTIENVUKHICHIHUYCLASS10CSS010VKSS040(1),
+        value: PHUONGTIENVUKHICHIHUYCLASS10CSS010VKSS040(capDo: 1)
       ).catchError((e) => null),
 
       caiDatPhuongTienChiHuyClass20CSS01(
-        value: PHUONGTIENCHIHUYCLASS20CSS01(1),
+        value: PHUONGTIENCHIHUYCLASS20CSS01(capDo: 1)
       ).catchError((e) => null),
       caiDatPhuongTienChiHuyCLASS20CSS010VKSS010(
-        value: PHUONGTIENVUKHICHIHUYCLASS20CSS010VKSS010(1),
+        value: PHUONGTIENVUKHICHIHUYCLASS20CSS010VKSS010(capDo: 1)
       ).catchError((e) => null),
       caiDatPhuongTienChiHuyCLASS20CSS010VKSS020(
-        value: PHUONGTIENVUKHICHIHUYCLASS20CSS010VKSS020(1),
+        value: PHUONGTIENVUKHICHIHUYCLASS20CSS010VKSS020(capDo: 1)
       ).catchError((e) => null),
       caiDatPhuongTienChiHuyCLASS20CSS010VKSS030(
-        value: PHUONGTIENVUKHICHIHUYCLASS20CSS010VKSS030(1),
+        value: PHUONGTIENVUKHICHIHUYCLASS20CSS010VKSS030(capDo: 1)
       ).catchError((e) => null),
       caiDatPhuongTienChiHuyCLASS20CSS010VKSS040(
-        value: PHUONGTIENVUKHICHIHUYCLASS20CSS010VKSS040(1),
+        value: PHUONGTIENVUKHICHIHUYCLASS20CSS010VKSS040(capDo: 1)
       ).catchError((e) => null),
 
       caiDatPhuongTienChiHuyClass30CSS01(
-        value: PHUONGTIENCHIHUYCLASS30CSS01(1),
+        value: PHUONGTIENCHIHUYCLASS30CSS01(capDo: 1)
       ).catchError((e) => null),
       caiDatPhuongTienChiHuyCLASS30CSS010VKSS010(
-        value: PHUONGTIENVUKHICHIHUYCLASS30CSS010VKSS010(1),
+        value: PHUONGTIENVUKHICHIHUYCLASS30CSS010VKSS010(capDo: 1)
       ).catchError((e) => null),
       caiDatPhuongTienChiHuyCLASS30CSS010VKSS020(
-        value: PHUONGTIENVUKHICHIHUYCLASS30CSS010VKSS020(1),
+        value: PHUONGTIENVUKHICHIHUYCLASS30CSS010VKSS020(capDo: 1)
       ).catchError((e) => null),
       caiDatPhuongTienChiHuyCLASS30CSS010VKSS030(
-        value: PHUONGTIENVUKHICHIHUYCLASS30CSS010VKSS030(1),
+        value: PHUONGTIENVUKHICHIHUYCLASS30CSS010VKSS030(capDo: 1)
       ).catchError((e) => null),
       caiDatPhuongTienChiHuyCLASS30CSS010VKSS040(
-        value: PHUONGTIENVUKHICHIHUYCLASS30CSS010VKSS040(1),
+        value: PHUONGTIENVUKHICHIHUYCLASS30CSS010VKSS040(capDo: 1)
       ).catchError((e) => null),
 
       caiDatPhuongTienChiHuyClass40CSS01(
-        value: PHUONGTIENCHIHUYCLASS40CSS01(1),
+        value: PHUONGTIENCHIHUYCLASS40CSS01(capDo: 1)
       ).catchError((e) => null),
       caiDatPhuongTienChiHuyCLASS40CSS010VKSS010(
-        value: PHUONGTIENVUKHICHIHUYCLASS40CSS010VKSS010(1),
+        value: PHUONGTIENVUKHICHIHUYCLASS40CSS010VKSS010(capDo: 1)
       ).catchError((e) => null),
       caiDatPhuongTienChiHuyCLASS40CSS010VKSS020(
-        value: PHUONGTIENVUKHICHIHUYCLASS40CSS010VKSS020(1),
+        value: PHUONGTIENVUKHICHIHUYCLASS40CSS010VKSS020(capDo: 1)
       ).catchError((e) => null),
       caiDatPhuongTienChiHuyCLASS40CSS010VKSS030(
-        value: PHUONGTIENVUKHICHIHUYCLASS40CSS010VKSS030(1),
+        value: PHUONGTIENVUKHICHIHUYCLASS40CSS010VKSS030(capDo: 1)
       ).catchError((e) => null),
       caiDatPhuongTienChiHuyCLASS40CSS010VKSS040(
-        value: PHUONGTIENVUKHICHIHUYCLASS40CSS010VKSS040(1),
+        value: PHUONGTIENVUKHICHIHUYCLASS40CSS010VKSS040(capDo: 1)
       ).catchError((e) => null),
 
       caiDatPhuongTienChiHuyClass50CSS01(
-        value: PHUONGTIENCHIHUYCLASS50CSS01(1),
+        value: PHUONGTIENCHIHUYCLASS50CSS01(capDo: 1)
       ).catchError((e) => null),
       caiDatPhuongTienChiHuyCLASS50CSS010VKSS010(
-        value: PHUONGTIENVUKHICHIHUYCLASS50CSS010VKSS010(1),
+        value: PHUONGTIENVUKHICHIHUYCLASS50CSS010VKSS010(capDo: 1)
       ).catchError((e) => null),
       caiDatPhuongTienChiHuyCLASS50CSS010VKSS020(
-        value: PHUONGTIENVUKHICHIHUYCLASS50CSS010VKSS020(1),
+        value: PHUONGTIENVUKHICHIHUYCLASS50CSS010VKSS020(capDo: 1)
       ).catchError((e) => null),
       caiDatPhuongTienChiHuyCLASS50CSS010VKSS030(
-        value: PHUONGTIENVUKHICHIHUYCLASS50CSS010VKSS030(1),
+        value: PHUONGTIENVUKHICHIHUYCLASS50CSS010VKSS030(capDo: 1)
       ).catchError((e) => null),
       caiDatPhuongTienChiHuyCLASS50CSS010VKSS040(
-        value: PHUONGTIENVUKHICHIHUYCLASS50CSS010VKSS040(1),
+        value: PHUONGTIENVUKHICHIHUYCLASS50CSS010VKSS040(capDo: 1)
       ).catchError((e) => null),
 
       ///
       ///
       ///
       caiDatPhuongTienVuKhiCLASS10ASS010VKSS010(
-        value: PHUONGTIENVUKHICLASS10ASS010VKSS010(1),
+        value: PHUONGTIENVUKHICLASS10ASS010VKSS010(capDo: 1)
       ).catchError((e) => null),
       caiDatPhuongTienVuKhiCLASS10ASS010VKSS020(
-        value: PHUONGTIENVUKHICLASS10ASS010VKSS020(1),
+        value: PHUONGTIENVUKHICLASS10ASS010VKSS020(capDo: 1)
       ).catchError((e) => null),
       caiDatPhuongTienVuKhiCLASS10ASS010VKSS030(
-        value: PHUONGTIENVUKHICLASS10ASS010VKSS030(1),
+        value: PHUONGTIENVUKHICLASS10ASS010VKSS030(capDo: 1)
       ).catchError((e) => null),
       caiDatPhuongTienVuKhiCLASS10ASS010VKSS040(
-        value: PHUONGTIENVUKHICLASS10ASS010VKSS040(1),
+        value: PHUONGTIENVUKHICLASS10ASS010VKSS040(capDo: 1)
       ).catchError((e) => null),
 
       caiDatPhuongTienVuKhiCLASS20ASS010VKSS010(
-        value: PHUONGTIENVUKHICLASS20ASS010VKSS010(1),
+        value: PHUONGTIENVUKHICLASS20ASS010VKSS010(capDo: 1)
       ).catchError((e) => null),
       caiDatPhuongTienVuKhiCLASS20ASS010VKSS020(
-        value: PHUONGTIENVUKHICLASS20ASS010VKSS020(1),
+        value: PHUONGTIENVUKHICLASS20ASS010VKSS020(capDo: 1)
       ).catchError((e) => null),
       caiDatPhuongTienVuKhiCLASS20ASS010VKSS030(
-        value: PHUONGTIENVUKHICLASS20ASS010VKSS030(1),
+        value: PHUONGTIENVUKHICLASS20ASS010VKSS030(capDo: 1)
       ).catchError((e) => null),
       caiDatPhuongTienVuKhiCLASS20ASS010VKSS040(
-        value: PHUONGTIENVUKHICLASS20ASS010VKSS040(1),
+        value: PHUONGTIENVUKHICLASS20ASS010VKSS040(capDo: 1)
       ).catchError((e) => null),
 
       caiDatPhuongTienVuKhiCLASS30ASS010VKSS010(
-        value: PHUONGTIENVUKHICLASS30ASS010VKSS010(1),
+        value: PHUONGTIENVUKHICLASS30ASS010VKSS010(capDo: 1)
       ).catchError((e) => null),
       caiDatPhuongTienVuKhiCLASS30ASS010VKSS020(
-        value: PHUONGTIENVUKHICLASS30ASS010VKSS020(1),
+        value: PHUONGTIENVUKHICLASS30ASS010VKSS020(capDo: 1)
       ).catchError((e) => null),
       caiDatPhuongTienVuKhiCLASS30ASS010VKSS030(
-        value: PHUONGTIENVUKHICLASS30ASS010VKSS030(1),
+        value: PHUONGTIENVUKHICLASS30ASS010VKSS030(capDo: 1)
       ).catchError((e) => null),
       caiDatPhuongTienVuKhiCLASS30ASS010VKSS040(
-        value: PHUONGTIENVUKHICLASS30ASS010VKSS040(1),
+        value: PHUONGTIENVUKHICLASS30ASS010VKSS040(capDo: 1)
       ).catchError((e) => null),
 
       caiDatPhuongTienVuKhiCLASS40ASS010VKSS010(
-        value: PHUONGTIENVUKHICLASS40ASS010VKSS010(1),
+        value: PHUONGTIENVUKHICLASS40ASS010VKSS010(capDo: 1)
       ).catchError((e) => null),
       caiDatPhuongTienVuKhiCLASS40ASS010VKSS020(
-        value: PHUONGTIENVUKHICLASS40ASS010VKSS020(1),
+        value: PHUONGTIENVUKHICLASS40ASS010VKSS020(capDo: 1)
       ).catchError((e) => null),
       caiDatPhuongTienVuKhiCLASS40ASS010VKSS030(
-        value: PHUONGTIENVUKHICLASS40ASS010VKSS030(1),
+        value: PHUONGTIENVUKHICLASS40ASS010VKSS030(capDo: 1)
       ).catchError((e) => null),
       caiDatPhuongTienVuKhiCLASS40ASS010VKSS040(
-        value: PHUONGTIENVUKHICLASS40ASS010VKSS040(1),
+        value: PHUONGTIENVUKHICLASS40ASS010VKSS040(capDo: 1)
       ).catchError((e) => null),
 
       caiDatPhuongTienVuKhiCLASS50ASS010VKSS010(
-        value: PHUONGTIENVUKHICLASS50ASS010VKSS010(1),
+        value: PHUONGTIENVUKHICLASS50ASS010VKSS010(capDo: 1)
       ).catchError((e) => null),
       caiDatPhuongTienVuKhiCLASS50ASS010VKSS020(
-        value: PHUONGTIENVUKHICLASS50ASS010VKSS020(1),
+        value: PHUONGTIENVUKHICLASS50ASS010VKSS020(capDo: 1)
       ).catchError((e) => null),
       caiDatPhuongTienVuKhiCLASS50ASS010VKSS030(
-        value: PHUONGTIENVUKHICLASS50ASS010VKSS030(1),
+        value: PHUONGTIENVUKHICLASS50ASS010VKSS030(capDo: 1)
       ).catchError((e) => null),
       caiDatPhuongTienVuKhiCLASS50ASS010VKSS040(
-        value: PHUONGTIENVUKHICLASS50ASS010VKSS040(1),
+        value: PHUONGTIENVUKHICLASS50ASS010VKSS040(capDo: 1)
       ).catchError((e) => null),
 
       ///
       caiDatPhuongTienVuKhiCLASS10BSS010VKSS010(
-        value: PHUONGTIENVUKHICLASS10BSS010VKSS010(1),
+        value: PHUONGTIENVUKHICLASS10BSS010VKSS010(capDo: 1)
       ).catchError((e) => null),
       caiDatPhuongTienVuKhiCLASS10BSS010VKSS020(
-        value: PHUONGTIENVUKHICLASS10BSS010VKSS020(1),
+        value: PHUONGTIENVUKHICLASS10BSS010VKSS020(capDo: 1)
       ).catchError((e) => null),
       caiDatPhuongTienVuKhiCLASS10BSS010VKSS030(
-        value: PHUONGTIENVUKHICLASS10BSS010VKSS030(1),
+        value: PHUONGTIENVUKHICLASS10BSS010VKSS030(capDo: 1)
       ).catchError((e) => null),
       caiDatPhuongTienVuKhiCLASS10BSS010VKSS040(
-        value: PHUONGTIENVUKHICLASS10BSS010VKSS040(1),
+        value: PHUONGTIENVUKHICLASS10BSS010VKSS040(capDo: 1)
       ).catchError((e) => null),
 
       caiDatPhuongTienVuKhiCLASS20BSS010VKSS010(
-        value: PHUONGTIENVUKHICLASS20BSS010VKSS010(1),
+        value: PHUONGTIENVUKHICLASS20BSS010VKSS010(capDo: 1)
       ).catchError((e) => null),
       caiDatPhuongTienVuKhiCLASS20BSS010VKSS020(
-        value: PHUONGTIENVUKHICLASS20BSS010VKSS020(1),
+        value: PHUONGTIENVUKHICLASS20BSS010VKSS020(capDo: 1)
       ).catchError((e) => null),
       caiDatPhuongTienVuKhiCLASS20BSS010VKSS030(
-        value: PHUONGTIENVUKHICLASS20BSS010VKSS030(1),
+        value: PHUONGTIENVUKHICLASS20BSS010VKSS030(capDo: 1)
       ).catchError((e) => null),
       caiDatPhuongTienVuKhiCLASS20BSS010VKSS040(
-        value: PHUONGTIENVUKHICLASS20BSS010VKSS040(1),
+        value: PHUONGTIENVUKHICLASS20BSS010VKSS040(capDo: 1)
       ).catchError((e) => null),
 
       caiDatPhuongTienVuKhiCLASS30BSS010VKSS010(
-        value: PHUONGTIENVUKHICLASS30BSS010VKSS010(1),
+        value: PHUONGTIENVUKHICLASS30BSS010VKSS010(capDo: 1)
       ).catchError((e) => null),
       caiDatPhuongTienVuKhiCLASS30BSS010VKSS020(
-        value: PHUONGTIENVUKHICLASS30BSS010VKSS020(1),
+        value: PHUONGTIENVUKHICLASS30BSS010VKSS020(capDo: 1)
       ).catchError((e) => null),
       caiDatPhuongTienVuKhiCLASS30BSS010VKSS030(
-        value: PHUONGTIENVUKHICLASS30BSS010VKSS030(1),
+        value: PHUONGTIENVUKHICLASS30BSS010VKSS030(capDo: 1)
       ).catchError((e) => null),
       caiDatPhuongTienVuKhiCLASS30BSS010VKSS040(
-        value: PHUONGTIENVUKHICLASS30BSS010VKSS040(1),
+        value: PHUONGTIENVUKHICLASS30BSS010VKSS040(capDo: 1)
       ).catchError((e) => null),
 
       caiDatPhuongTienVuKhiCLASS40BSS010VKSS010(
-        value: PHUONGTIENVUKHICLASS40BSS010VKSS010(1),
+        value: PHUONGTIENVUKHICLASS40BSS010VKSS010(capDo: 1)
       ).catchError((e) => null),
       caiDatPhuongTienVuKhiCLASS40BSS010VKSS020(
-        value: PHUONGTIENVUKHICLASS40BSS010VKSS020(1),
+        value: PHUONGTIENVUKHICLASS40BSS010VKSS020(capDo: 1)
       ).catchError((e) => null),
       caiDatPhuongTienVuKhiCLASS40BSS010VKSS030(
-        value: PHUONGTIENVUKHICLASS40BSS010VKSS030(1),
+        value: PHUONGTIENVUKHICLASS40BSS010VKSS030(capDo: 1)
       ).catchError((e) => null),
       caiDatPhuongTienVuKhiCLASS40BSS010VKSS040(
-        value: PHUONGTIENVUKHICLASS40BSS010VKSS040(1),
+        value: PHUONGTIENVUKHICLASS40BSS010VKSS040(capDo: 1)
       ).catchError((e) => null),
 
       caiDatPhuongTienVuKhiCLASS50BSS010VKSS010(
-        value: PHUONGTIENVUKHICLASS50BSS010VKSS010(1),
+        value: PHUONGTIENVUKHICLASS50BSS010VKSS010(capDo: 1)
       ).catchError((e) => null),
       caiDatPhuongTienVuKhiCLASS50BSS010VKSS020(
-        value: PHUONGTIENVUKHICLASS50BSS010VKSS020(1),
+        value: PHUONGTIENVUKHICLASS50BSS010VKSS020(capDo: 1)
       ).catchError((e) => null),
       caiDatPhuongTienVuKhiCLASS50BSS010VKSS030(
-        value: PHUONGTIENVUKHICLASS50BSS010VKSS030(1),
+        value: PHUONGTIENVUKHICLASS50BSS010VKSS030(capDo: 1)
       ).catchError((e) => null),
       caiDatPhuongTienVuKhiCLASS50BSS010VKSS040(
-        value: PHUONGTIENVUKHICLASS50BSS010VKSS040(1),
+        value: PHUONGTIENVUKHICLASS50BSS010VKSS040(capDo: 1)
       ).catchError((e) => null),
 
       ///
       caiDatPhuongTienVuKhiCLASS10CSS010VKSS010(
-        value: PHUONGTIENVUKHICLASS10CSS010VKSS010(1),
+        value: PHUONGTIENVUKHICLASS10CSS010VKSS010(capDo: 1)
       ).catchError((e) => null),
       caiDatPhuongTienVuKhiCLASS10CSS010VKSS020(
-        value: PHUONGTIENVUKHICLASS10CSS010VKSS020(1),
+        value: PHUONGTIENVUKHICLASS10CSS010VKSS020(capDo: 1)
       ).catchError((e) => null),
       caiDatPhuongTienVuKhiCLASS10CSS010VKSS030(
-        value: PHUONGTIENVUKHICLASS10CSS010VKSS030(1),
+        value: PHUONGTIENVUKHICLASS10CSS010VKSS030(capDo: 1)
       ).catchError((e) => null),
       caiDatPhuongTienVuKhiCLASS10CSS010VKSS040(
-        value: PHUONGTIENVUKHICLASS10CSS010VKSS040(1),
+        value: PHUONGTIENVUKHICLASS10CSS010VKSS040(capDo: 1)
       ).catchError((e) => null),
 
       caiDatPhuongTienVuKhiCLASS20CSS010VKSS010(
-        value: PHUONGTIENVUKHICLASS20CSS010VKSS010(1),
+        value: PHUONGTIENVUKHICLASS20CSS010VKSS010(capDo: 1)
       ).catchError((e) => null),
       caiDatPhuongTienVuKhiCLASS20CSS010VKSS020(
-        value: PHUONGTIENVUKHICLASS20CSS010VKSS020(1),
+        value: PHUONGTIENVUKHICLASS20CSS010VKSS020(capDo: 1)
       ).catchError((e) => null),
       caiDatPhuongTienVuKhiCLASS20CSS010VKSS030(
-        value: PHUONGTIENVUKHICLASS20CSS010VKSS030(1),
+        value: PHUONGTIENVUKHICLASS20CSS010VKSS030(capDo: 1)
       ).catchError((e) => null),
       caiDatPhuongTienVuKhiCLASS20CSS010VKSS040(
-        value: PHUONGTIENVUKHICLASS20CSS010VKSS040(1),
+        value: PHUONGTIENVUKHICLASS20CSS010VKSS040(capDo: 1)
       ).catchError((e) => null),
 
       caiDatPhuongTienVuKhiCLASS30CSS010VKSS010(
-        value: PHUONGTIENVUKHICLASS30CSS010VKSS010(1),
+        value: PHUONGTIENVUKHICLASS30CSS010VKSS010(capDo: 1)
       ).catchError((e) => null),
       caiDatPhuongTienVuKhiCLASS30CSS010VKSS020(
-        value: PHUONGTIENVUKHICLASS30CSS010VKSS020(1),
+        value: PHUONGTIENVUKHICLASS30CSS010VKSS020(capDo: 1)
       ).catchError((e) => null),
       caiDatPhuongTienVuKhiCLASS30CSS010VKSS030(
-        value: PHUONGTIENVUKHICLASS30CSS010VKSS030(1),
+        value: PHUONGTIENVUKHICLASS30CSS010VKSS030(capDo: 1)
       ).catchError((e) => null),
       caiDatPhuongTienVuKhiCLASS30CSS010VKSS040(
-        value: PHUONGTIENVUKHICLASS30CSS010VKSS040(1),
+        value: PHUONGTIENVUKHICLASS30CSS010VKSS040(capDo: 1)
       ).catchError((e) => null),
 
       caiDatPhuongTienVuKhiCLASS40CSS010VKSS010(
-        value: PHUONGTIENVUKHICLASS40CSS010VKSS010(1),
+        value: PHUONGTIENVUKHICLASS40CSS010VKSS010(capDo: 1)
       ).catchError((e) => null),
       caiDatPhuongTienVuKhiCLASS40CSS010VKSS020(
-        value: PHUONGTIENVUKHICLASS40CSS010VKSS020(1),
+        value: PHUONGTIENVUKHICLASS40CSS010VKSS020(capDo: 1)
       ).catchError((e) => null),
       caiDatPhuongTienVuKhiCLASS40CSS010VKSS030(
-        value: PHUONGTIENVUKHICLASS40CSS010VKSS030(1),
+        value: PHUONGTIENVUKHICLASS40CSS010VKSS030(capDo: 1)
       ).catchError((e) => null),
       caiDatPhuongTienVuKhiCLASS40CSS010VKSS040(
-        value: PHUONGTIENVUKHICLASS40CSS010VKSS040(1),
+        value: PHUONGTIENVUKHICLASS40CSS010VKSS040(capDo: 1)
       ).catchError((e) => null),
 
       caiDatPhuongTienVuKhiCLASS50CSS010VKSS010(
-        value: PHUONGTIENVUKHICLASS50CSS010VKSS010(1),
+        value: PHUONGTIENVUKHICLASS50CSS010VKSS010(capDo: 1)
       ).catchError((e) => null),
       caiDatPhuongTienVuKhiCLASS50CSS010VKSS020(
-        value: PHUONGTIENVUKHICLASS50CSS010VKSS020(1),
+        value: PHUONGTIENVUKHICLASS50CSS010VKSS020(capDo: 1)
       ).catchError((e) => null),
       caiDatPhuongTienVuKhiCLASS50CSS010VKSS030(
-        value: PHUONGTIENVUKHICLASS50CSS010VKSS030(1),
+        value: PHUONGTIENVUKHICLASS50CSS010VKSS030(capDo: 1)
       ).catchError((e) => null),
       caiDatPhuongTienVuKhiCLASS50CSS010VKSS040(
-        value: PHUONGTIENVUKHICLASS50CSS010VKSS040(1),
+        value: PHUONGTIENVUKHICLASS50CSS010VKSS040(capDo: 1)
       ).catchError((e) => null),
       caiDatPhuongTienVuKhiCLASS50CSS010VKSS050(
-        value: PHUONGTIENVUKHICLASS50CSS010VKSS050(1),
+        value: PHUONGTIENVUKHICLASS50CSS010VKSS050(capDo: 1)
       ).catchError((e) => null),
       caiDatPhuongTienVuKhiCLASS50CSS010VKSS060(
-        value: PHUONGTIENVUKHICLASS50CSS010VKSS060(1),
+        value: PHUONGTIENVUKHICLASS50CSS010VKSS060(capDo: 1)
       ).catchError((e) => null),
       caiDatPhuongTienVuKhiCLASS50CSS010VKSS070(
-        value: PHUONGTIENVUKHICLASS50CSS010VKSS070(1),
+        value: PHUONGTIENVUKHICLASS50CSS010VKSS070(capDo: 1)
       ).catchError((e) => null),
       caiDatPhuongTienVuKhiCLASS50CSS010VKSS080(
-        value: PHUONGTIENVUKHICLASS50CSS010VKSS080(1),
+        value: PHUONGTIENVUKHICLASS50CSS010VKSS080(capDo: 1)
       ).catchError((e) => null),
 
       caiDatPhuongTienVATPHAMPHANTHUONGCLASS10ASS010VPSS010(
-        value: PHUONGTIENVATPHAMPHANTHUONGCLASS10ASS010VPSS010(1),
+        value: PHUONGTIENVATPHAMPHANTHUONGCLASS10ASS010VPSS010(capDo: 1)
       ).catchError((e) => null),
       caiDatPhuongTienVATPHAMPHANTHUONGCLASS10ASS010VPSS020(
-        value: PHUONGTIENVATPHAMPHANTHUONGCLASS10ASS010VPSS020(1),
+        value: PHUONGTIENVATPHAMPHANTHUONGCLASS10ASS010VPSS020(capDo: 1)
       ).catchError((e) => null),
       caiDatPhuongTienVATPHAMPHANTHUONGCLASS10ASS010VPSS030(
-        value: PHUONGTIENVATPHAMPHANTHUONGCLASS10ASS010VPSS030(1),
+        value: PHUONGTIENVATPHAMPHANTHUONGCLASS10ASS010VPSS030(capDo: 1)
       ).catchError((e) => null),
       caiDatPhuongTienVATPHAMPHANTHUONGCLASS10ASS010VPSS040(
-        value: PHUONGTIENVATPHAMPHANTHUONGCLASS10ASS010VPSS040(1),
+        value: PHUONGTIENVATPHAMPHANTHUONGCLASS10ASS010VPSS040(capDo: 1)
       ).catchError((e) => null),
       caiDatPhuongTienVATPHAMPHANTHUONGCLASS10ASS010VPSS050(
-        value: PHUONGTIENVATPHAMPHANTHUONGCLASS10ASS010VPSS050(1),
+        value: PHUONGTIENVATPHAMPHANTHUONGCLASS10ASS010VPSS050(capDo: 1)
       ).catchError((e) => null),
       caiDatPhuongTienVATPHAMPHANTHUONGCLASS10ASS010VPSS060(
-        value: PHUONGTIENVATPHAMPHANTHUONGCLASS10ASS010VPSS060(1),
+        value: PHUONGTIENVATPHAMPHANTHUONGCLASS10ASS010VPSS060(capDo: 1)
       ).catchError((e) => null),
     ]);
 

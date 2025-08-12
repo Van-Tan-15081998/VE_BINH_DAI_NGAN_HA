@@ -1,3 +1,4 @@
+import 'dart:ui';
 import 'package:flame/events.dart';
 import 'package:pkg_dinh_nghia_ss022/pkg_dinh_nghia_ss022_exp.dart';
 import 'package:pkg_khung_man_hinh_ss020000/pkg_khung_man_hinh_ss020000_exp.dart';
@@ -10,7 +11,7 @@ class NUTBAMCHONHOISINH extends THANHPHANNUTBAMTHUOCCAPTHUANKICHHOAT {
   /// TODO:
   /// -----
   NUTBAMCHONHOISINH({
-    required super.globalState,
+    required super.globalStateManagementSystem,
     required super.gameController,
     required super.thanhPhanQuanLyThuocCapTrucTiep,
     required super.sizeDx,
@@ -25,7 +26,7 @@ class NUTBAMCHONHOISINH extends THANHPHANNUTBAMTHUOCCAPTHUANKICHHOAT {
   @override
   void onThucThi() async {
 
-    await getGlobalState?.getChienDauCoTongQuat
+    await getGlobalStateManagementSystem?.getChienDauCoTongQuat
         ?.getChienDauCoTrucTiepThucThiChienDau
         ?.getTrangThai
         ?.getMoHinh
@@ -37,7 +38,7 @@ class NUTBAMCHONHOISINH extends THANHPHANNUTBAMTHUOCCAPTHUANKICHHOAT {
         ?.getChiSoTheoCapDo
         ?.onKhoiPhucChiSoMauToiDaVanHanh();
 
-    getGlobalState?.getTienTrinhTongQuat?.getTienTrinhThucThiChienDau?.getTrangThai?.getMoHinh?.onVoidCaiDatDangThucThi();
+    getGlobalStateManagementSystem?.getTienTrinhTongQuat?.getTienTrinhThucThiChienDau?.getTrangThai?.getMoHinh?.onVoidCaiDatDangThucThi();
 
 
 
@@ -90,7 +91,17 @@ class NUTBAMCHONHOISINH extends THANHPHANNUTBAMTHUOCCAPTHUANKICHHOAT {
 
     getThanhPhanVanBan?.onVoidCaiDatVanBan(value: 'HỒI SINH', caiDatUuTien: true);
 
+    getThanhPhanVanBan?.onCaiDatPhongCachVanBan(color: Color(0xFF2E2E2E), fontSize: 15, fontWeight: FontWeight.bold);
+
+    getThanhPhanVanBan?.caiDatTuyChinhTextRenderer = true;
+
     ///
     return;
+  }
+
+  @override
+  void update(double dt) {
+    // TODO: implement update
+    super.update(dt);
   }
 }

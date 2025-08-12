@@ -11,7 +11,7 @@ abstract class SpriteAnimationCoBan extends SpriteAnimationComponent with HasVis
   /// -----
   /// TODO:
   /// -----
-  SpriteAnimationCoBan({required QuanLyTrangThaiTongQuat? trangThaiTongQuat}) {
+  SpriteAnimationCoBan({required GlobalStateManagementSystem? trangThaiTongQuat}) {
     caiDatTrangThaiTongQuat(value: trangThaiTongQuat);
   }
 
@@ -38,9 +38,9 @@ abstract class SpriteAnimationCoBan extends SpriteAnimationComponent with HasVis
   /// -----
   /// TODO: Quản Lý Trạng Thái Tổng Quát
   /// -----
-  QuanLyTrangThaiTongQuat? _trangThaiTongQuat;
-  QuanLyTrangThaiTongQuat? get getTrangThaiTongQuat => _trangThaiTongQuat;
-  Future<void> caiDatTrangThaiTongQuat({required QuanLyTrangThaiTongQuat? value}) async {
+  GlobalStateManagementSystem? _trangThaiTongQuat;
+  GlobalStateManagementSystem? get getTrangThaiTongQuat => _trangThaiTongQuat;
+  Future<void> caiDatTrangThaiTongQuat({required GlobalStateManagementSystem? value}) async {
     _trangThaiTongQuat ??= value;
     return;
   }
@@ -87,7 +87,7 @@ abstract class SpriteAnimationCoBan extends SpriteAnimationComponent with HasVis
     return;
   }
 
-  Future<bool> kiemTraTanXuatCapNhat() async {
+  bool onBoolKiemTraTanXuatCapNhat() {
     if (getTrangThaiTongQuat?.getThietLapTongQuat?.onKiemTraChoPhepCapNhatTheoTocDoKhungHinh(
         maDinhDanh: '[SPRITE_ANIMATION_CO_BAN]',
         chiSoTangTienGiamTanXuatCapNhat: _bienTangTienGiamTanXuatCapNhat) == true) {
@@ -124,13 +124,15 @@ abstract class SpriteAnimationCoBan extends SpriteAnimationComponent with HasVis
     return;
   }
   void onVoidCaiDatKiemTraHienThi({required bool? value}) {
-    _kiemTraHienThi = value;
+   if (_kiemTraHienThi != value) {
+     _kiemTraHienThi = value;
 
-    if (_kiemTraHienThi == false || _kiemTraHienThi == null) {
-      isVisible = false;
-    } else if (_kiemTraHienThi == true) {
-      isVisible = true;
-    }
+     if (_kiemTraHienThi == false || _kiemTraHienThi == null) {
+       isVisible = false;
+     } else if (_kiemTraHienThi == true) {
+       isVisible = true;
+     }
+   }
 
     return;
   }
@@ -139,14 +141,14 @@ abstract class SpriteAnimationCoBan extends SpriteAnimationComponent with HasVis
   /// TODO:
   /// -----
   Future<void> capNhatKiemTraHienThi() async {
-    if (getMoHinh?.getTrangThaiTonTai?.isKhoiTaoHoanTat() == true) {
+    if (getMoHinh?.getTrangThaiTonTai?.onCheckBoolKhoiTaoHoanTat() == true) {
       await caiDatKiemTraHienThi(value: true);
     } else {
       await caiDatKiemTraHienThi(value: false);
     }
   }
   void onVoidCapNhatKiemTraHienThi() {
-    if (getMoHinh?.getTrangThaiTonTai?.isKhoiTaoHoanTat() == true) {
+    if (getMoHinh?.getTrangThaiTonTai?.onCheckBoolKhoiTaoHoanTat() == true) {
       onVoidCaiDatKiemTraHienThi(value: true);
     } else {
       onVoidCaiDatKiemTraHienThi(value: false);
@@ -267,21 +269,29 @@ abstract class SpriteAnimationCoBan extends SpriteAnimationComponent with HasVis
   /// -----
   /// TODO:
   /// -----
+  bool khongThucThiCapNhatNguyenBan = false;
+
   @override
   void update(double dt) {
     super.update(dt);
 
-    onVoidCaiDatTuDongBienTangTienGiamTanXuatCapNhat();
-    if (onVoidKiemTraTanXuatCapNhat() == false) {
-      return;
+    if (khongThucThiCapNhatNguyenBan == false) {
+      onVoidCaiDatTuDongBienTangTienGiamTanXuatCapNhat();
+      if (onVoidKiemTraTanXuatCapNhat() == false) {
+        return;
+      }
+
+      onVoidCapNhatTrangThaiMoHinh();
+
+      onVoidCapNhatKiemTraHienThi();
+
+      onVoidCaiDatHoatAnh();
+
+      onVoidCapNhatPositionSizeValues();
     }
+  }
 
-    onVoidCapNhatTrangThaiMoHinh();
-
-    onVoidCapNhatKiemTraHienThi();
-
-    onVoidCaiDatHoatAnh();
-
-    onVoidCapNhatPositionSizeValues();
+  void onGiaiPhongTaiNguyen() {
+    animation = null;
   }
 }

@@ -20,7 +20,7 @@ class THUOCTINHHIEUUNGAMTHANHVUKHITANCONGCOBAN0SS09SS03 extends THUOCTINHHIEUUNG
     await caiDatNguonAmThanh(
       value:
           'packages/pkg_dinh_nghia_dv_ss0020/lib/26_def0026/ADef30_0/08_SubDefs/Def32_2/08_SubDefs/Def24_4/08_SubDefs/Def20_6/06_SoundSrcs/'
-          'vu_khi_tan_cong_co_ban_0SS09SS03.mp3',
+          'vu_khi_tan_cong_co_ban_0SS09SS03_v2.mp3',
     );
 
     /// -----

@@ -12,9 +12,9 @@ class SpritePhuongTienVatPhamPhanThuong extends SpritePhuongTienCoBan {
   @override
   bool onVoidKiemTraTanXuatCapNhat() {
     if (getTrangThaiTongQuat?.getThietLapTongQuat?.onKiemTraChoPhepCapNhatTheoTocDoKhungHinh(
-      maDinhDanh: '[SPRITE_ANIMATION_VU_KHI_DIEU_KHIEN]',
-      chiSoTangTienGiamTanXuatCapNhat: getBienTangTienGiamTanXuatCapNhat,
-    ) ==
+          maDinhDanh: '[SPRITE_ANIMATION_VU_KHI_DIEU_KHIEN]',
+          chiSoTangTienGiamTanXuatCapNhat: getBienTangTienGiamTanXuatCapNhat,
+        ) ==
         true) {
       return true;
     }
@@ -26,10 +26,8 @@ class SpritePhuongTienVatPhamPhanThuong extends SpritePhuongTienCoBan {
   /// TODO:
   /// -----
   @override
-  void onVoidCapNhatKiemTraHienThi() async {
-    if (getMoHinh?.getMoHinh?.getDuLieuJsonLamPhang['[DI_CHUYEN_HIEN_THI]'] == true &&
-        getMoHinh?.getMoHinh?.getDuLieuJsonLamPhang['[VAT_PHAM_HIEN_THI]'] == true
-    ) {
+  void onVoidCapNhatKiemTraHienThi() {
+    if (getMoHinh?.getMoHinh?.getDuLieuJsonLamPhang['[DI_CHUYEN_HIEN_THI]'] == true && getMoHinh?.getMoHinh?.getDuLieuJsonLamPhang['[VAT_PHAM_TON_TAI_HIEN_THI]'] == true) {
       /// -----
       /// TODO: Cài Đặt SpriteAnimation cho Phương Tiện Mới
       /// -----
@@ -63,34 +61,40 @@ class SpritePhuongTienVatPhamPhanThuong extends SpritePhuongTienCoBan {
   /// -----
   /// TODO: Cập Nhật Position Và Size
   /// -----
+
+  Map<String, dynamic>? duLieuJsonLamPhangCapNhat = {};
+
+  double dxCapNhat = 0;
+  double dyCapNhat = 0;
+  double chieuCaoThanCapNhat = 0;
+  double chieuRongThanCapNhat = 0;
+
   @override
-  void onVoidCapNhatPositionSizeValues() async {
+  void onVoidCapNhatPositionSizeValues() {
     if (getKiemTraHienThi == true) {
       ///
       /// TODO:
       ///
-      Map<String, dynamic>? duLieuJsonLamPhang = getMoHinh?.getMoHinh?.getDuLieuJsonLamPhang;
+      duLieuJsonLamPhangCapNhat = getMoHinh?.getMoHinh?.getDuLieuJsonLamPhang;
 
-      double dx = duLieuJsonLamPhang?['[DX_TRONG_TAM]'] ?? 1.0;
-      double dy = duLieuJsonLamPhang?['[DY_TRONG_TAM]'] ?? 1.0;
-      double chieuCaoThan = duLieuJsonLamPhang?['[CHIEU_CAO_THAN]'] ?? 1.0;
-      double chieuRongThan = duLieuJsonLamPhang?['[CHIEU_RONG_THAN]'] ?? 1.0;
+      dxCapNhat = duLieuJsonLamPhangCapNhat?['[DX_TRONG_TAM]'] ?? 1.0;
+      dyCapNhat = duLieuJsonLamPhangCapNhat?['[DY_TRONG_TAM]'] ?? 1.0;
+      chieuCaoThanCapNhat = duLieuJsonLamPhangCapNhat?['[CHIEU_CAO_THAN]'] ?? 1.0;
+      chieuRongThanCapNhat = duLieuJsonLamPhangCapNhat?['[CHIEU_RONG_THAN]'] ?? 1.0;
 
-      double gocXoay = duLieuJsonLamPhang?['[GOC_XOAY]'] ?? 1.0;
+      double gocXoay = duLieuJsonLamPhangCapNhat?['[GOC_XOAY]'] ?? 1.0;
 
-      if (dx.isNaN == false && dy.isNaN == false && chieuCaoThan.isNaN == false && chieuRongThan.isNaN == false) {
-        /// -----
+      if (dxCapNhat.isNaN == false && dyCapNhat.isNaN == false && chieuCaoThanCapNhat.isNaN == false && chieuRongThanCapNhat.isNaN == false) {
+        ///
         /// TODO:
-        /// -----
-        if (position.x != dx || position.y != dy) {
-          position.setValues(dx, dy);
+        ///
+        if (position.x != dxCapNhat || position.y != dyCapNhat) {
+          position.setValues(dxCapNhat, dyCapNhat);
         }
-        /// -----
-        /// TODO:
-        /// -----
-        if (size.x != chieuRongThan || size.y != chieuCaoThan) {
-          size.setValues(chieuRongThan, chieuCaoThan);
+        if (size.x != chieuRongThanCapNhat || size.y != chieuCaoThanCapNhat) {
+          size.setValues(chieuRongThanCapNhat, chieuCaoThanCapNhat);
         }
+
         /// -----
         /// TODO:
         /// -----

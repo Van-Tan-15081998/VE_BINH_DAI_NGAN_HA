@@ -52,6 +52,11 @@ class THUOCTINHHIEUUNGAMTHANHSUKIENVACHAMTRONGCHIENDAU with CauTrucThucThiCoBan 
     await caiDatSuKienVaChamPhaHuy(value: THUOCTINHHIEUUNGAMTHANHSUKIENVACHAMPHAHUY());
 
     /// -----
+    /// TODO:
+    /// -----
+    await caiDatSuKienVaChamVatPhamPhanThuong(value: THUOCTINHHIEUUNGAMTHANHSUKIENVACHAMVATPHAM());
+
+    /// -----
     /// TODO: Setup Root For SubCom
     /// -----
     await onSetupRootForSubCom();
@@ -89,6 +94,11 @@ class THUOCTINHHIEUUNGAMTHANHSUKIENVACHAMTRONGCHIENDAU with CauTrucThucThiCoBan 
     /// -----
     await getSuKienVaChamPhaHuy?.onAttachRoot(attachValue: attachValue);
 
+    /// -----
+    /// TODO:
+    /// -----
+    await getSuKienVaChamVatPhamPhanThuong?.onAttachRoot(attachValue: attachValue);
+
     ///
     return;
   }
@@ -108,6 +118,11 @@ class THUOCTINHHIEUUNGAMTHANHSUKIENVACHAMTRONGCHIENDAU with CauTrucThucThiCoBan 
     /// -----
     await getSuKienVaChamPhaHuy?.onSetupRoot();
 
+    /// -----
+    /// TODO:
+    /// -----
+    await getSuKienVaChamVatPhamPhanThuong?.onSetupRoot();
+
     ///
     return;
   }
@@ -126,6 +141,11 @@ class THUOCTINHHIEUUNGAMTHANHSUKIENVACHAMTRONGCHIENDAU with CauTrucThucThiCoBan 
     /// TODO:
     /// -----
     await getSuKienVaChamPhaHuy?.onInitRoot();
+
+    /// -----
+    /// TODO:
+    /// -----
+    await getSuKienVaChamVatPhamPhanThuong?.onInitRoot();
 
     ///
     return;
@@ -165,6 +185,21 @@ class THUOCTINHHIEUUNGAMTHANHSUKIENVACHAMTRONGCHIENDAU with CauTrucThucThiCoBan 
       _suKienVaChamPhaHuy = value;
     } else {
       _suKienVaChamPhaHuy ??= value;
+    }
+
+    return;
+  }
+
+  /// -----
+  /// TODO: Sự Kiện Va Chạm Phá Hủy
+  /// -----
+  THUOCTINHHIEUUNGAMTHANHSUKIENVACHAMVATPHAM? _suKienVaChamVatPhamPhanThuong;
+  THUOCTINHHIEUUNGAMTHANHSUKIENVACHAMVATPHAM? get getSuKienVaChamVatPhamPhanThuong => _suKienVaChamVatPhamPhanThuong;
+  Future<void> caiDatSuKienVaChamVatPhamPhanThuong({required THUOCTINHHIEUUNGAMTHANHSUKIENVACHAMVATPHAM? value, bool? caiDatUuTien}) async {
+    if (caiDatUuTien == true) {
+      _suKienVaChamVatPhamPhanThuong = value;
+    } else {
+      _suKienVaChamVatPhamPhanThuong ??= value;
     }
 
     return;

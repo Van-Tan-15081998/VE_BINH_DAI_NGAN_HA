@@ -81,6 +81,7 @@ class THUOCTINHHIEUUNGAMTHANHCHIENDAUCOCOBAN with CauTrucThucThiCoBan {
     /// TODO:
     /// -----
     await getVuKhiTanCongCoBan?.onAttachRoot(attachValue: attachValue);
+    await getVuKhiTanCongThongMinh?.onAttachRoot(attachValue: attachValue);
 
     ///
     return;
@@ -95,6 +96,7 @@ class THUOCTINHHIEUUNGAMTHANHCHIENDAUCOCOBAN with CauTrucThucThiCoBan {
     /// TODO:
     /// -----
     await getVuKhiTanCongCoBan?.onSetupRoot();
+    await getVuKhiTanCongThongMinh?.onSetupRoot();
 
     ///
     return;
@@ -109,6 +111,7 @@ class THUOCTINHHIEUUNGAMTHANHCHIENDAUCOCOBAN with CauTrucThucThiCoBan {
     /// TODO:
     /// -----
     await getVuKhiTanCongCoBan?.onInitRoot();
+    await getVuKhiTanCongThongMinh?.onInitRoot();
 
     ///
     return;
@@ -133,6 +136,21 @@ class THUOCTINHHIEUUNGAMTHANHCHIENDAUCOCOBAN with CauTrucThucThiCoBan {
       _vuKhiTanCongCoBan = value;
     } else {
       _vuKhiTanCongCoBan ??= value;
+    }
+
+    return;
+  }
+
+  /// -----
+  /// TODO:
+  /// -----
+  THUOCTINHHIEUUNGAMTHANHVUKHITANCONGTHONGMINH? _vuKhiTanCongThongMinh;
+  THUOCTINHHIEUUNGAMTHANHVUKHITANCONGTHONGMINH? get getVuKhiTanCongThongMinh => _vuKhiTanCongThongMinh;
+  Future<void> caiDatVuKhiTanCongThongMinh({required THUOCTINHHIEUUNGAMTHANHVUKHITANCONGTHONGMINH? value, bool? caiDatUuTien}) async {
+    if (caiDatUuTien == true) {
+      _vuKhiTanCongThongMinh = value;
+    } else {
+      _vuKhiTanCongThongMinh ??= value;
     }
 
     return;

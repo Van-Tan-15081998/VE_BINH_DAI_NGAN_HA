@@ -11,6 +11,9 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  pkg_dinh_nghia_dv_ss0060:
+    path: ../pkg_dinh_nghia_dv_ss0060
+
   pkg_dinh_nghia_ss020:
     path: ../pkg_dinh_nghia_ss020
   pkg_dinh_nghia_ss022:
@@ -33,6 +36,8 @@ dependencies:
 
   pkg_man_hinh_ss00226:
     path: ../pkg_man_hinh_ss00226
+  pkg_man_hinh_ss00230:
+    path: ../pkg_man_hinh_ss00230
 
 
 dev_dependencies:

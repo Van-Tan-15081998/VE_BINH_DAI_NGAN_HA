@@ -7,7 +7,7 @@ mixin VongLapThoiGianCoBan {
   /// -----
   int _chiSoTangTienTheoThoiGianThuc = 0;
   int get getChiSoTangTienTheoThoiGianThuc => _chiSoTangTienTheoThoiGianThuc;
-  Future<void> onCapNhatChiSoTangTienTheoThoiGianThuc() async {
+  void onVoidCapNhatChiSoTangTienTheoThoiGianThuc() {
     if (_chiSoTangTienTheoThoiGianThuc <= 1000000) {
       _chiSoTangTienTheoThoiGianThuc += 1;
     } else {

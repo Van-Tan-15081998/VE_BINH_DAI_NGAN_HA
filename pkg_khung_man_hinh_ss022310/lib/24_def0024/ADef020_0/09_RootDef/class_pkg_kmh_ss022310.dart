@@ -13,7 +13,7 @@ class KHUNGMANHINHSS022310 extends THANHPHANMANHINHTHUOCCAPCOBAN {
   /// TODO:
   /// -----
   KHUNGMANHINHSS022310({
-    required super.globalState,
+    required super.globalStateManagementSystem,
     required super.gameController,
     required super.thanhPhanQuanLyThuocCapTrucTiep,
     required super.sizeDx,
@@ -38,7 +38,7 @@ class KHUNGMANHINHSS022310 extends THANHPHANMANHINHTHUOCCAPCOBAN {
     await Future.wait([
       onCaiDatQuanLyThanhPhanManHinhThuocCap(
         value: QUANLYTHANHPHANMANHINHTHUOCCAP(
-          globalState: getGlobalState,
+          globalStateManagementSystem: getGlobalStateManagementSystem,
           gameController: getGameController,
           thanhPhanQuanLyThuocCapTrucTiep: getThanhPhanQuanLyThuocCapTrucTiep,
           sizeDx: getSizeDx,
@@ -47,7 +47,7 @@ class KHUNGMANHINHSS022310 extends THANHPHANMANHINHTHUOCCAPCOBAN {
       ).catchError((e) => null),
       onCaiDatQuanLyThanhPhanNutBamThuocCap(
         value: QUANLYTHANHPHANNUTBAMTHUOCCAP(
-          globalState: getGlobalState,
+          globalStateManagementSystem: getGlobalStateManagementSystem,
           gameController: getGameController,
           thanhPhanQuanLyThuocCapTrucTiep: getThanhPhanQuanLyThuocCapTrucTiep,
           sizeDx: getSizeDx,
@@ -71,7 +71,7 @@ class KHUNGMANHINHSS022310 extends THANHPHANMANHINHTHUOCCAPCOBAN {
       ).catchError((e) => null),
       onCaiDatQuanLyThanhPhanVanBanThuocCap(
         value: QUANLYTHANHPHANVANBANTHUOCCAP(
-          globalState: getGlobalState,
+          globalStateManagementSystem: getGlobalStateManagementSystem,
           gameController: getGameController,
           thanhPhanQuanLyThuocCapTrucTiep: getThanhPhanQuanLyThuocCapTrucTiep,
           sizeDx: getSizeDx,
@@ -80,7 +80,7 @@ class KHUNGMANHINHSS022310 extends THANHPHANMANHINHTHUOCCAPCOBAN {
       ).catchError((e) => null),
       onCaiDatQuanLyThanhPhanHinhAnhThuocCap(
         value: QUANLYTHANHPHANHINHANHTHUOCCAP(
-          globalState: getGlobalState,
+          globalStateManagementSystem: getGlobalStateManagementSystem,
           gameController: getGameController,
           thanhPhanQuanLyThuocCapTrucTiep: getThanhPhanQuanLyThuocCapTrucTiep,
           sizeDx: getSizeDx,
@@ -89,7 +89,7 @@ class KHUNGMANHINHSS022310 extends THANHPHANMANHINHTHUOCCAPCOBAN {
       ).catchError((e) => null),
       onCaiDatQuanLyThanhPhanTichHopThuocCap(
         value: QUANLYTHANHPHANTICHHOPTHUOCCAP(
-          globalState: getGlobalState,
+          globalStateManagementSystem: getGlobalStateManagementSystem,
           gameController: getGameController,
           thanhPhanQuanLyThuocCapTrucTiep: getThanhPhanQuanLyThuocCapTrucTiep,
           sizeDx: getSizeDx,
@@ -115,30 +115,14 @@ class KHUNGMANHINHSS022310 extends THANHPHANMANHINHTHUOCCAPCOBAN {
     /// -----
     /// TODO: Ưu Tiên Kích Thước Nội Suy
     /// -----
-    double sizeDxManHinhVatLy =
-        getSizeDx ??
-        getGlobalState?.getThietLapTongQuat?.getChieuRongManHinhVatLy ??
-        100.0;
-    double sizeDyManHinhVatLy =
-        getSizeDy ??
-        getGlobalState?.getThietLapTongQuat?.getChieuCaoManHinhVatLy ??
-        100.0;
+    double sizeDxManHinhVatLy = getSizeDx ?? getGlobalStateManagementSystem?.getThietLapTongQuat?.getChieuRongManHinhVatLy ?? 100.0;
+    double sizeDyManHinhVatLy = getSizeDy ?? getGlobalStateManagementSystem?.getThietLapTongQuat?.getChieuCaoManHinhVatLy ?? 100.0;
 
-    getTrangThaiKichHoatThanhPhan?.getDiemToaDoThanhPhanHuyKichHoat
-        ?.onVoidCaiDatPositionDx(value: -10000.0, caiDatUuTien: true);
-    getTrangThaiKichHoatThanhPhan?.getDiemToaDoThanhPhanHuyKichHoat
-        ?.onVoidCaiDatPositionDy(value: -10000.0, caiDatUuTien: true);
+    getTrangThaiKichHoatThanhPhan?.getDiemToaDoThanhPhanHuyKichHoat?.onVoidCaiDatPositionDx(value: -10000.0, caiDatUuTien: true);
+    getTrangThaiKichHoatThanhPhan?.getDiemToaDoThanhPhanHuyKichHoat?.onVoidCaiDatPositionDy(value: -10000.0, caiDatUuTien: true);
 
-    getTrangThaiKichHoatThanhPhan?.getDiemToaDoThanhPhanKichHoat
-        ?.onVoidCaiDatPositionDx(
-          value: sizeDxManHinhVatLy / 2,
-          caiDatUuTien: true,
-        );
-    getTrangThaiKichHoatThanhPhan?.getDiemToaDoThanhPhanKichHoat
-        ?.onVoidCaiDatPositionDy(
-          value: sizeDyManHinhVatLy / 2,
-          caiDatUuTien: true,
-        );
+    getTrangThaiKichHoatThanhPhan?.getDiemToaDoThanhPhanKichHoat?.onVoidCaiDatPositionDx(value: sizeDxManHinhVatLy / 2, caiDatUuTien: true);
+    getTrangThaiKichHoatThanhPhan?.getDiemToaDoThanhPhanKichHoat?.onVoidCaiDatPositionDy(value: sizeDyManHinhVatLy / 2, caiDatUuTien: true);
 
     ///
     return;

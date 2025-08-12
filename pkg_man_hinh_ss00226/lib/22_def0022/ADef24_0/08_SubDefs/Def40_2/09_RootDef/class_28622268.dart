@@ -10,9 +10,9 @@ class KhungVongLapBangDieuKhienDoiHinhTuanTraTrinhSat extends Component with Von
   /// -----
   /// TODO:
   /// -----
-  QuanLyTrangThaiTongQuat? _trangThaiTongQuat;
-  QuanLyTrangThaiTongQuat? get getTrangThaiTongQuat => _trangThaiTongQuat;
-  Future<void> caiDatTrangThaiTongQuat({required QuanLyTrangThaiTongQuat? value}) async {
+  GlobalStateManagementSystem? _trangThaiTongQuat;
+  GlobalStateManagementSystem? get getTrangThaiTongQuat => _trangThaiTongQuat;
+  Future<void> caiDatTrangThaiTongQuat({required GlobalStateManagementSystem? value}) async {
     _trangThaiTongQuat ??= value;
     return;
   }
@@ -20,7 +20,7 @@ class KhungVongLapBangDieuKhienDoiHinhTuanTraTrinhSat extends Component with Von
   /// -----
   /// TODO:
   /// -----
-  KhungVongLapBangDieuKhienDoiHinhTuanTraTrinhSat({required QuanLyTrangThaiTongQuat? trangThaiTongQuat}) {
+  KhungVongLapBangDieuKhienDoiHinhTuanTraTrinhSat({required GlobalStateManagementSystem? trangThaiTongQuat}) {
     caiDatTrangThaiTongQuat(value: trangThaiTongQuat);
   }
 
@@ -32,7 +32,7 @@ class KhungVongLapBangDieuKhienDoiHinhTuanTraTrinhSat extends Component with Von
   /// -----
   /// TODO:
   /// -----
-  Future<bool> kiemTraTanXuatCapNhat() async {
+  bool onBoolKiemTraTanXuatCapNhat() {
     if (getChiSoTangTienTheoThoiGianThuc % 10 == 0) {
       return true;
     }
@@ -40,18 +40,16 @@ class KhungVongLapBangDieuKhienDoiHinhTuanTraTrinhSat extends Component with Von
   }
 
   @override
-  FutureOr<void> update(double dt) async {
-    if (getTrangThaiTongQuat != null) {
-      ///
-      ///
-      /// TODO: Chạy Vòng Loop
-      ///
-      ///
-
-      await onCapNhatChiSoTangTienTheoThoiGianThuc();
-      if (await kiemTraTanXuatCapNhat() == false) {
-        return;
-      }
-    }
+  void update(double dt) {
+    // ///
+    // ///
+    // /// TODO: Chạy Vòng Loop
+    // ///
+    // ///
+    //
+    // onVoidCapNhatChiSoTangTienTheoThoiGianThuc();
+    // if (onBoolKiemTraTanXuatCapNhat() == false) {
+    //   return;
+    // }
   }
 }

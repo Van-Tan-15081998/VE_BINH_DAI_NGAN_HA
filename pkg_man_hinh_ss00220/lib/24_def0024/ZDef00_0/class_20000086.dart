@@ -21,7 +21,7 @@ class MANHINHBANGDIEUKHIENCHIENDAU extends StatefulWidget {
   /// -----
   /// TODO:
   /// -----
-  final QuanLyTrangThaiTongQuat? trangThaiTongQuat;
+  final GlobalStateManagementSystem? trangThaiTongQuat;
 
   @override
   State<MANHINHBANGDIEUKHIENCHIENDAU> createState() => _MANHINHBANGDIEUKHIENCHIENDAUState();

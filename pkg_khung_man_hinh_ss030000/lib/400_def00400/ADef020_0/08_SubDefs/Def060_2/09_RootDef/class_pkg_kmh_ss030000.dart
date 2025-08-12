@@ -7,6 +7,8 @@ import 'package:pkg_man_hinh_ss00226/pkg_man_hinh_ss00226_exp.dart';
 import 'package:pkg_man_hinh_ss00230/pkg_man_hinh_ss00230_exp.dart';
 import 'package:pkg_man_hinh_ss00240/pkg_man_hinh_ss00240_exp.dart';
 
+import 'package:pkg_khung_man_hinh_ss030000/300_def00300/ADef060_0/08_SubDefs/Def020_2/09_RootDef/class_pkg_kmh_ss022000.dart';
+
 import 'package:pkg_khung_man_hinh_ss020000/pkg_khung_man_hinh_ss020000_exp.dart';
 
 /// -----
@@ -18,12 +20,29 @@ class QUANLYTHANHPHANTICHHOPTHUOCCAP
   /// TODO:
   /// -----
   QUANLYTHANHPHANTICHHOPTHUOCCAP({
-    required super.globalState,
+    required super.globalStateManagementSystem,
     required super.gameController,
     required super.thanhPhanQuanLyThuocCapTrucTiep,
     required super.sizeDx,
     required super.sizeDy,
   });
+
+
+  /// -----
+  /// TODO:
+  /// -----
+  KHUNGTICHHOPTHANHTICHCHIENDAUTAINGUYENVANGTRAODOI? _khungTichHopThanhTichChienDauTaiNguyenVangTraoDoi;
+  KHUNGTICHHOPTHANHTICHCHIENDAUTAINGUYENVANGTRAODOI? get getKhungTichHopThanhTichChienDauTaiNguyenVangTraoDoi => _khungTichHopThanhTichChienDauTaiNguyenVangTraoDoi;
+  Future<void> onCaiDatKhungTichHopThanhTichChienDauTaiNguyenVangTraoDoi({required KHUNGTICHHOPTHANHTICHCHIENDAUTAINGUYENVANGTRAODOI? value, bool? caiDatUuTien}) async {
+    if (caiDatUuTien == true) {
+      _khungTichHopThanhTichChienDauTaiNguyenVangTraoDoi = value;
+    } else {
+      _khungTichHopThanhTichChienDauTaiNguyenVangTraoDoi ??= value;
+    }
+
+    ///
+    return;
+  }
 
   /// -----
   /// TODO:
@@ -120,6 +139,12 @@ class QUANLYTHANHPHANTICHHOPTHUOCCAP
         onAddComponent(
           flameGame: null,
           parentComponent: component,
+          childComponent: getKhungTichHopThanhTichChienDauTaiNguyenVangTraoDoi,
+        ).catchError((e) => null),
+        ///
+        onAddComponent(
+          flameGame: null,
+          parentComponent: component,
           childComponent: getKhungManHinhSS00226,
         ).catchError((e) => null),
         onAddComponent(
@@ -169,7 +194,7 @@ class QUANLYTHANHPHANTICHHOPTHUOCCAP
       /// TODO:
       /// -----
       await Future.wait([
-        ///
+        getKhungTichHopThanhTichChienDauTaiNguyenVangTraoDoi?.onAddRoot(flameGame: flameGame, component: component).catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onAddRootForSubCom'),
       ]);
     } catch (e) {
       await onReportRootIssue(nameFunction: 'onAddRootForSubCom');
@@ -191,26 +216,49 @@ class QUANLYTHANHPHANTICHHOPTHUOCCAP
       /// TODO:
       /// -----
 
+      double donViChieuRong = (getGlobalStateManagementSystem?.getThietLapTongQuat?.getChieuRongManHinhVatLy ?? 100.0) / 36;
+
+      double sizeDxKhungTichHopTaiNguyen = donViChieuRong * 10.5;
+      double sizeDyKhungTichHopTaiNguyenVangTraoDoi = sizeDxKhungTichHopTaiNguyen / 3.66;
+
       await Future.wait([
+        onCaiDatKhungTichHopThanhTichChienDauTaiNguyenVangTraoDoi(
+          value: KHUNGTICHHOPTHANHTICHCHIENDAUTAINGUYENVANGTRAODOI(
+            globalStateManagementSystem: getGlobalStateManagementSystem,
+            gameController: getGameController,
+            thanhPhanQuanLyThuocCapTrucTiep: getThanhPhanQuanLyThuocCapTrucTiep,
+            sizeDx: sizeDxKhungTichHopTaiNguyen,
+            sizeDy: sizeDyKhungTichHopTaiNguyenVangTraoDoi,
+            positionDx: donViChieuRong * 7.0,
+            positionDy: donViChieuRong * 4.0,
+            onTapCancelEvent: null,
+            onTapDownEvent: null,
+            onTapUpEvent: () {
+              ///
+            },
+          ),
+          caiDatUuTien: true,
+        ).catchError((e) => null),
+
         ///
         onCaiDatKhungManHinhSS00226(
-          value: KHUNGMANHINHSS00226(trangThaiTongQuat: getGlobalState),
+          value: KHUNGMANHINHSS00226(trangThaiTongQuat: getGlobalStateManagementSystem),
           caiDatUuTien: true,
         ).catchError((e) => null),
         onCaiDatKhungManHinhSS00222(
-          value: KHUNGMANHINHSS00222(trangThaiTongQuat: getGlobalState),
+          value: KHUNGMANHINHSS00222(trangThaiTongQuat: getGlobalStateManagementSystem),
           caiDatUuTien: true,
         ).catchError((e) => null),
         onCaiDatKhungManHinhSS00224(
-          value: KHUNGMANHINHSS00224(trangThaiTongQuat: getGlobalState),
+          value: KHUNGMANHINHSS00224(trangThaiTongQuat: getGlobalStateManagementSystem),
           caiDatUuTien: true,
         ).catchError((e) => null),
         onCaiDatKhungManHinhSS00230(
-          value: KHUNGMANHINHSS00230(trangThaiTongQuat: getGlobalState),
+          value: KHUNGMANHINHSS00230(trangThaiTongQuat: getGlobalStateManagementSystem),
           caiDatUuTien: true,
         ).catchError((e) => null),
         onCaiDatKhungManHinhSS00240(
-          value: KHUNGMANHINHSS00240(trangThaiTongQuat: getGlobalState),
+          value: KHUNGMANHINHSS00240(trangThaiTongQuat: getGlobalStateManagementSystem),
           caiDatUuTien: true,
         ).catchError((e) => null),
       ]);
@@ -244,6 +292,7 @@ class QUANLYTHANHPHANTICHHOPTHUOCCAP
       /// -----
       await Future.wait([
         ///
+        getKhungTichHopThanhTichChienDauTaiNguyenVangTraoDoi?.onSetupRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onSetupRootForSubCom'),
       ]);
     } catch (e) {
       await onReportRootIssue(nameFunction: 'onSetupRootForSubCom');
@@ -270,6 +319,8 @@ class QUANLYTHANHPHANTICHHOPTHUOCCAP
       /// -----
       await Future.wait([
         ///
+        getKhungTichHopThanhTichChienDauTaiNguyenVangTraoDoi?.onInitRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onSetupRootForSubCom'),
+
       ]);
     } catch (e) {
       await onReportRootIssue(nameFunction: 'onInitRootForSubCom');
@@ -293,6 +344,10 @@ class QUANLYTHANHPHANTICHHOPTHUOCCAP
       /// -----
       await Future.wait([
         onRemoveComponent(
+          component: getKhungTichHopThanhTichChienDauTaiNguyenVangTraoDoi,
+        ).catchError((e) => null),
+
+        onRemoveComponent(
           component: getKhungManHinhSS00226,
         ).catchError((e) => null),
         onRemoveComponent(
@@ -308,6 +363,8 @@ class QUANLYTHANHPHANTICHHOPTHUOCCAP
           component: getKhungManHinhSS00240,
         ).catchError((e) => null),
       ]);
+
+      // await getKhungTichHopThanhTichChienDauTaiNguyenVangTraoDoi?.onKichHoatThanhPhanThuocCap();
 
       /// -----
       /// TODO: Remove Comp Root For SubCom

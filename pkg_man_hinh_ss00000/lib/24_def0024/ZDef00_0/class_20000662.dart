@@ -12,7 +12,7 @@ class MANHINHTROCHOI extends StatefulWidget {
   /// -----
   /// TODO:
   /// -----
-  final QuanLyTrangThaiTongQuat? trangThaiTongQuat;
+  final GlobalStateManagementSystem? trangThaiTongQuat;
 
   @override
   State<MANHINHTROCHOI> createState() => _MANHINHTROCHOIState();

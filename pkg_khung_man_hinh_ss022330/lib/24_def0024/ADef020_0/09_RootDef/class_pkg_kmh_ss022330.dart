@@ -9,13 +9,12 @@ import 'package:pkg_khung_man_hinh_ss022330/24_def0024/ADef020_0/08_SubDefs/Def0
 /// -----
 /// TODO: Quản Lý Thành Phần Màn Hình
 /// -----
-class KHUNGMANHINHTABSS030THUOCCAPTABSS030CD
-    extends THANHPHANMANHINHCUONDYTHUOCCAPCOBAN {
+class KHUNGMANHINHSS022330 extends THANHPHANMANHINHTHUOCCAPCOBAN {
   /// -----
   /// TODO:
   /// -----
-  KHUNGMANHINHTABSS030THUOCCAPTABSS030CD({
-    required super.globalState,
+  KHUNGMANHINHSS022330({
+    required super.globalStateManagementSystem,
     required super.gameController,
     required super.thanhPhanQuanLyThuocCapTrucTiep,
     required super.sizeDx,
@@ -28,22 +27,11 @@ class KHUNGMANHINHTABSS030THUOCCAPTABSS030CD
   /// TODO: Setup Root
   /// -----
   @override
-  Future<void> onSetupRoot() async {
+  Future<void> onSetupRoot({bool? isIgnoreSetupRootForSubCom}) async {
     /// -----
     /// TODO:
     /// -----
-    await onCaiDatTrangThaiKichHoatThanhPhan(
-      value: TRANGTHAIKICHHOATTHANHPHAN(),
-      caiDatUuTien: true,
-    );
-    await onCaiDatThanhPhanGioiHanHienThi(
-      value: ClipComponent.rectangle(size: size),
-      caiDatUuTien: true,
-    );
-    await onCaiDatThanhPhanHienThi(
-      value: PositionComponent(size: size),
-      caiDatUuTien: true,
-    );
+    await super.onSetupRoot(isIgnoreSetupRootForSubCom: true);
 
     /// -----
     /// TODO:
@@ -51,7 +39,7 @@ class KHUNGMANHINHTABSS030THUOCCAPTABSS030CD
     await Future.wait([
       onCaiDatQuanLyThanhPhanManHinhThuocCap(
         value: QUANLYTHANHPHANMANHINHTHUOCCAP(
-          globalState: getGlobalState,
+          globalStateManagementSystem: getGlobalStateManagementSystem,
           gameController: getGameController,
           thanhPhanQuanLyThuocCapTrucTiep: getThanhPhanQuanLyThuocCapTrucTiep,
           sizeDx: getSizeDx,
@@ -60,7 +48,7 @@ class KHUNGMANHINHTABSS030THUOCCAPTABSS030CD
       ).catchError((e) => null),
       onCaiDatQuanLyThanhPhanNutBamThuocCap(
         value: QUANLYTHANHPHANNUTBAMTHUOCCAP(
-          globalState: getGlobalState,
+          globalStateManagementSystem: getGlobalStateManagementSystem,
           gameController: getGameController,
           thanhPhanQuanLyThuocCapTrucTiep: getThanhPhanQuanLyThuocCapTrucTiep,
           sizeDx: getSizeDx,
@@ -84,7 +72,7 @@ class KHUNGMANHINHTABSS030THUOCCAPTABSS030CD
       ).catchError((e) => null),
       onCaiDatQuanLyThanhPhanVanBanThuocCap(
         value: QUANLYTHANHPHANVANBANTHUOCCAP(
-          globalState: getGlobalState,
+          globalStateManagementSystem: getGlobalStateManagementSystem,
           gameController: getGameController,
           thanhPhanQuanLyThuocCapTrucTiep: getThanhPhanQuanLyThuocCapTrucTiep,
           sizeDx: getSizeDx,
@@ -93,7 +81,7 @@ class KHUNGMANHINHTABSS030THUOCCAPTABSS030CD
       ).catchError((e) => null),
       onCaiDatQuanLyThanhPhanHinhAnhThuocCap(
         value: QUANLYTHANHPHANHINHANHTHUOCCAP(
-          globalState: getGlobalState,
+          globalStateManagementSystem: getGlobalStateManagementSystem,
           gameController: getGameController,
           thanhPhanQuanLyThuocCapTrucTiep: getThanhPhanQuanLyThuocCapTrucTiep,
           sizeDx: getSizeDx,
@@ -102,7 +90,7 @@ class KHUNGMANHINHTABSS030THUOCCAPTABSS030CD
       ).catchError((e) => null),
       onCaiDatQuanLyThanhPhanTichHopThuocCap(
         value: QUANLYTHANHPHANTICHHOPTHUOCCAP(
-          globalState: getGlobalState,
+          globalStateManagementSystem: getGlobalStateManagementSystem,
           gameController: getGameController,
           thanhPhanQuanLyThuocCapTrucTiep: getThanhPhanQuanLyThuocCapTrucTiep,
           sizeDx: getSizeDx,
@@ -115,6 +103,27 @@ class KHUNGMANHINHTABSS030THUOCCAPTABSS030CD
     /// TODO: Setup Root For SubCom
     /// -----
     await onSetupRootForSubCom();
+
+    ///
+    return;
+  }
+
+  /// -----
+  /// TODO:
+  /// -----
+  @override
+  Future<void> onCapNhatTrangThaiKichHoatThanhPhan() async {
+    /// -----
+    /// TODO: Ưu Tiên Kích Thước Nội Suy
+    /// -----
+    double sizeDxManHinhVatLy = getSizeDx ?? getGlobalStateManagementSystem?.getThietLapTongQuat?.getChieuRongManHinhVatLy ?? 100.0;
+    double sizeDyManHinhVatLy = getSizeDy ?? getGlobalStateManagementSystem?.getThietLapTongQuat?.getChieuCaoManHinhVatLy ?? 100.0;
+
+    getTrangThaiKichHoatThanhPhan?.getDiemToaDoThanhPhanHuyKichHoat?.onVoidCaiDatPositionDx(value: -10000.0, caiDatUuTien: true);
+    getTrangThaiKichHoatThanhPhan?.getDiemToaDoThanhPhanHuyKichHoat?.onVoidCaiDatPositionDy(value: -10000.0, caiDatUuTien: true);
+
+    getTrangThaiKichHoatThanhPhan?.getDiemToaDoThanhPhanKichHoat?.onVoidCaiDatPositionDx(value: sizeDxManHinhVatLy / 2, caiDatUuTien: true);
+    getTrangThaiKichHoatThanhPhan?.getDiemToaDoThanhPhanKichHoat?.onVoidCaiDatPositionDy(value: sizeDyManHinhVatLy / 2, caiDatUuTien: true);
 
     ///
     return;

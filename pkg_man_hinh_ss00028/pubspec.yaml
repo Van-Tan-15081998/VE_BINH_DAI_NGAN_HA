@@ -19,8 +19,8 @@ dependencies:
   pkg_dinh_nghia_ss050:
     path: ../pkg_dinh_nghia_ss050
 
-  pkg_man_hinh_ss00028a:
-    path: ../pkg_man_hinh_ss00028a
+#  pkg_man_hinh_ss00028a:
+#    path: ../pkg_man_hinh_ss00028a
   pkg_man_hinh_ss00028b:
     path: ../pkg_man_hinh_ss00028b
   pkg_man_hinh_ss00028c:

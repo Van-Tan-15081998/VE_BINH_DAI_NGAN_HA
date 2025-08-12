@@ -4,13 +4,12 @@ import 'package:pkg_khung_man_hinh_ss020000/pkg_khung_man_hinh_ss020000_exp.dart
 /// -----
 /// TODO: Card Chiến Đấu Cơ Đẳng Cấp Sao [00D04_SS03]
 /// -----
-class CARDCHIENDAUCODANGCAPSAO00D04SS03
-    extends THANHPHANNUTBAMTHUOCCAPTHUANKICHHOAT {
+class CARDCHIENDAUCODANGCAPSAO00D04SS03 extends THANHPHANNUTBAMTICHHOPTHUOCCAP {
   /// -----
   /// TODO:
   /// -----
   CARDCHIENDAUCODANGCAPSAO00D04SS03({
-    required super.globalState,
+    required super.globalStateManagementSystem,
     required super.gameController,
     required super.thanhPhanQuanLyThuocCapTrucTiep,
     required super.sizeDx,
@@ -24,14 +23,8 @@ class CARDCHIENDAUCODANGCAPSAO00D04SS03
 
   @override
   Future<void> onCaiDatChiTietThanhPhanGameUI() async {
-    await onCaiDatThanhPhanGameUIKichHoat(
-      value: GAMEUINUTBAMCHONTABCHIENDAUCOKICHHOAT(),
-      caiDatUuTien: true,
-    );
-    await onCaiDatThanhPhanGameUIHuyKichHoat(
-      value: GAMEUINUTBAMCHONTABCHIENDAUCOKHONGKICHHOAT(),
-      caiDatUuTien: true,
-    );
+    await onCaiDatThanhPhanGameUIKichHoat(value: GAMEUINUTBAMCHONTABCHIENDAUCOKICHHOAT(), caiDatUuTien: true);
+    await onCaiDatThanhPhanGameUIHuyKichHoat(value: GAMEUINUTBAMCHONTABCHIENDAUCOKHONGKICHHOAT(), caiDatUuTien: true);
 
     await getThanhPhanGameUIKichHoat?.onSetupRoot();
     await getThanhPhanGameUIHuyKichHoat?.onSetupRoot();

@@ -11,7 +11,7 @@ abstract class SpritePhuongTienCoBan extends SpriteAnimationComponent
   /// -----
   /// TODO:
   /// -----
-  SpritePhuongTienCoBan({required QuanLyTrangThaiTongQuat? trangThaiTongQuat}) {
+  SpritePhuongTienCoBan({required GlobalStateManagementSystem? trangThaiTongQuat}) {
     caiDatTrangThaiTongQuat(value: trangThaiTongQuat);
   }
 
@@ -45,10 +45,10 @@ abstract class SpritePhuongTienCoBan extends SpriteAnimationComponent
   /// -----
   /// TODO: Quản Lý Trạng Thái Tổng Quát
   /// -----
-  QuanLyTrangThaiTongQuat? _trangThaiTongQuat;
-  QuanLyTrangThaiTongQuat? get getTrangThaiTongQuat => _trangThaiTongQuat;
+  GlobalStateManagementSystem? _trangThaiTongQuat;
+  GlobalStateManagementSystem? get getTrangThaiTongQuat => _trangThaiTongQuat;
   Future<void> caiDatTrangThaiTongQuat({
-    required QuanLyTrangThaiTongQuat? value,
+    required GlobalStateManagementSystem? value,
   }) async {
     _trangThaiTongQuat ??= value;
     return;
@@ -90,7 +90,7 @@ abstract class SpritePhuongTienCoBan extends SpriteAnimationComponent
     return;
   }
 
-  Future<bool> kiemTraTanXuatCapNhat() async {
+  bool onBoolKiemTraTanXuatCapNhat() {
     if (_bienTangTienGiamTanXuatCapNhat % _boiSoCapDoGiamTanXuatCapNhat == 0) {
       return true;
     }
@@ -122,7 +122,7 @@ abstract class SpritePhuongTienCoBan extends SpriteAnimationComponent
             ?.getMoHinh
             ?.getTrangThaiTrongChienDau
             ?.getTrangThaiTonTai
-            ?.isKhoiTaoHoanTat() ==
+            ?.onCheckBoolKhoiTaoHoanTat() ==
         true) {
       await caiDatKiemTraHienThi(value: true);
     } else {
@@ -255,7 +255,7 @@ abstract class SpritePhuongTienCoBan extends SpriteAnimationComponent
     super.update(dt);
 
     await caiDatTuDongBienTangTienGiamTanXuatCapNhat();
-    if (await kiemTraTanXuatCapNhat() == false) {
+    if (onBoolKiemTraTanXuatCapNhat() == false) {
       return;
     }
 

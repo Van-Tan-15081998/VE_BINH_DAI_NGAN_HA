@@ -10,16 +10,16 @@ class KhungHinhNenSuKienVaChamCongKich extends PositionComponent {
   /// -----
   /// TODO:
   /// -----
-  KhungHinhNenSuKienVaChamCongKich({required QuanLyTrangThaiTongQuat? trangThaiTongQuat}) {
+  KhungHinhNenSuKienVaChamCongKich({required GlobalStateManagementSystem? trangThaiTongQuat}) {
     caiDatTrangThaiTongQuat(value: trangThaiTongQuat);
   }
 
   /// -----
   /// TODO:
   /// -----
-  QuanLyTrangThaiTongQuat? _trangThaiTongQuat;
-  QuanLyTrangThaiTongQuat? get getTrangThaiTongQuat => _trangThaiTongQuat;
-  Future<void> caiDatTrangThaiTongQuat({required QuanLyTrangThaiTongQuat? value}) async {
+  GlobalStateManagementSystem? _trangThaiTongQuat;
+  GlobalStateManagementSystem? get getTrangThaiTongQuat => _trangThaiTongQuat;
+  Future<void> caiDatTrangThaiTongQuat({required GlobalStateManagementSystem? value}) async {
     _trangThaiTongQuat ??= value;
     return;
   }
@@ -105,9 +105,8 @@ class KhungHinhNenSuKienVaChamCongKich extends PositionComponent {
     /// TODO:
     /// -----
     if (position.x != _bienTraiCapNhatKhungHinhNen) {
-      position.setValues(_bienTraiCapNhatKhungHinhNen ?? 0, position.y);
+      position.x = _bienTraiCapNhatKhungHinhNen ?? 0;
     }
-
     /// -----
     /// TODO:
     /// -----

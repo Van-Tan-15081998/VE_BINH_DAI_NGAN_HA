@@ -38,9 +38,31 @@ class SpritePhuongTienSS70BangDieuKhienDoiHinhThongSoaiToiCao extends SpritePhuo
   /// TODO: Thực Thi Tấn Công
   /// -----
   @override
-  void onVoidThucThiTanCong() {
+  void onVoidThucThiTanCong() async {
     ///
     if (getMoHinh?.getMoHinh?.getDuLieuJsonLamPhang['[DI_CHUYEN_HIEN_THI]'] == true) {
+      if (getTrangThaiTongQuat?.getThietLapTongQuat?.onKiemTraChoPhepCapNhatTheoTocDoKhungHinh(
+            maDinhDanh: '[PHUONG_TIEN_THUC_THI_TAN_CONG_500]',
+            chiSoTangTienGiamTanXuatCapNhat: getBienTangTienGiamTanXuatCapNhat,
+          ) ==
+          true) {
+        await getTrangThaiTongQuat?.getBangDieuKhienKichBanChienDauTheoGiaiDoan?.getQuanLyDieuKhienChuyenKichBanChienDau?.onPTTCThucThiTanCongLienKichHinhThucSS050(phuongTien: getMoHinh?.getMoHinh);
+      }
+      if (getTrangThaiTongQuat?.getThietLapTongQuat?.onKiemTraChoPhepCapNhatTheoTocDoKhungHinh(
+            maDinhDanh: '[PHUONG_TIEN_THUC_THI_TAN_CONG_300]',
+            chiSoTangTienGiamTanXuatCapNhat: getBienTangTienGiamTanXuatCapNhat,
+          ) ==
+          true) {
+        await getTrangThaiTongQuat?.getBangDieuKhienKichBanChienDauTheoGiaiDoan?.getQuanLyDieuKhienChuyenKichBanChienDau?.onPTTCThucThiTanCongLienKichHinhThucSS010(phuongTien: getMoHinh?.getMoHinh);
+      }
+      if (getTrangThaiTongQuat?.getThietLapTongQuat?.onKiemTraChoPhepCapNhatTheoTocDoKhungHinh(
+            maDinhDanh: '[PHUONG_TIEN_THUC_THI_TAN_CONG_300]',
+            chiSoTangTienGiamTanXuatCapNhat: getBienTangTienGiamTanXuatCapNhat,
+          ) ==
+          true) {
+        await getTrangThaiTongQuat?.getBangDieuKhienKichBanChienDauTheoGiaiDoan?.getQuanLyDieuKhienChuyenKichBanChienDau?.onPTTCThucThiTanCongLienKichHinhThucSS020(phuongTien: getMoHinh?.getMoHinh);
+      }
+
       if (getMoHinh?.getMoHinh is MOHINHPHUONGTIENCHIHUY) {
         /// -----|-----|-----|-----|-----|
         /// -----|-----|-----|-----|-----|
@@ -52,9 +74,7 @@ class SpritePhuongTienSS70BangDieuKhienDoiHinhThongSoaiToiCao extends SpritePhuo
         /// TODO: Thực Thi Tấn Công Tại Frame 45 [Đòn Đánh Liên Kích SS010]
         /// -----
         if ((animationTicker?.currentIndex ?? 0) == 45 && getSanSangThucThiTanCongLienKichSS010 == true) {
-          if (getMoHinh?.getMoHinh is PHUONGTIENCHIHUYCLASS10CSS01 ||
-              getMoHinh?.getMoHinh is PHUONGTIENCHIHUYCLASS20CSS01 ||
-              getMoHinh?.getMoHinh is PHUONGTIENCHIHUYCLASS50CSS01) {
+          if (getMoHinh?.getMoHinh is PHUONGTIENCHIHUYCLASS10CSS01 || getMoHinh?.getMoHinh is PHUONGTIENCHIHUYCLASS20CSS01 || getMoHinh?.getMoHinh is PHUONGTIENCHIHUYCLASS50CSS01) {
             /// -----
             /// TODO:
             /// -----
@@ -63,15 +83,9 @@ class SpritePhuongTienSS70BangDieuKhienDoiHinhThongSoaiToiCao extends SpritePhuo
             /// -----
             /// TODO:
             /// -----
-            getTrangThaiTongQuat?.getBangDieuKhienKichBanChienDauTheoGiaiDoan?.getQuanLyDieuKhienChuyenKichBanChienDau?.onTSTCThucThiTanCongLienKichHinhThucSS010(
-              phuongTien: getMoHinh?.getMoHinh,
-            );
-            getTrangThaiTongQuat?.getBangDieuKhienKichBanChienDauTheoGiaiDoan?.getQuanLyDieuKhienChuyenKichBanChienDau?.onTSTCThucThiTanCongLienKichHinhThucSS020(
-              phuongTien: getMoHinh?.getMoHinh,
-            );
-            getTrangThaiTongQuat?.getBangDieuKhienKichBanChienDauTheoGiaiDoan?.getQuanLyDieuKhienChuyenKichBanChienDau?.onTSTCThucThiTanCongLienKichHinhThucSS030(
-              phuongTien: getMoHinh?.getMoHinh,
-            );
+            getTrangThaiTongQuat?.getBangDieuKhienKichBanChienDauTheoGiaiDoan?.getQuanLyDieuKhienChuyenKichBanChienDau?.onTSTCThucThiTanCongLienKichHinhThucSS010(phuongTien: getMoHinh?.getMoHinh);
+            getTrangThaiTongQuat?.getBangDieuKhienKichBanChienDauTheoGiaiDoan?.getQuanLyDieuKhienChuyenKichBanChienDau?.onTSTCThucThiTanCongLienKichHinhThucSS020(phuongTien: getMoHinh?.getMoHinh);
+            getTrangThaiTongQuat?.getBangDieuKhienKichBanChienDauTheoGiaiDoan?.getQuanLyDieuKhienChuyenKichBanChienDau?.onTSTCThucThiTanCongLienKichHinhThucSS030(phuongTien: getMoHinh?.getMoHinh);
           }
         }
 
@@ -103,15 +117,9 @@ class SpritePhuongTienSS70BangDieuKhienDoiHinhThongSoaiToiCao extends SpritePhuo
             /// -----
             /// TODO:
             /// -----
-            getTrangThaiTongQuat?.getBangDieuKhienKichBanChienDauTheoGiaiDoan?.getQuanLyDieuKhienChuyenKichBanChienDau?.onTSTCThucThiTanCongLienKichHinhThucSS010(
-              phuongTien: getMoHinh?.getMoHinh,
-            );
-            getTrangThaiTongQuat?.getBangDieuKhienKichBanChienDauTheoGiaiDoan?.getQuanLyDieuKhienChuyenKichBanChienDau?.onTSTCThucThiTanCongLienKichHinhThucSS020(
-              phuongTien: getMoHinh?.getMoHinh,
-            );
-            getTrangThaiTongQuat?.getBangDieuKhienKichBanChienDauTheoGiaiDoan?.getQuanLyDieuKhienChuyenKichBanChienDau?.onTSTCThucThiTanCongLienKichHinhThucSS030(
-              phuongTien: getMoHinh?.getMoHinh,
-            );
+            getTrangThaiTongQuat?.getBangDieuKhienKichBanChienDauTheoGiaiDoan?.getQuanLyDieuKhienChuyenKichBanChienDau?.onTSTCThucThiTanCongLienKichHinhThucSS010(phuongTien: getMoHinh?.getMoHinh);
+            getTrangThaiTongQuat?.getBangDieuKhienKichBanChienDauTheoGiaiDoan?.getQuanLyDieuKhienChuyenKichBanChienDau?.onTSTCThucThiTanCongLienKichHinhThucSS020(phuongTien: getMoHinh?.getMoHinh);
+            getTrangThaiTongQuat?.getBangDieuKhienKichBanChienDauTheoGiaiDoan?.getQuanLyDieuKhienChuyenKichBanChienDau?.onTSTCThucThiTanCongLienKichHinhThucSS030(phuongTien: getMoHinh?.getMoHinh);
           }
         }
 
@@ -128,15 +136,9 @@ class SpritePhuongTienSS70BangDieuKhienDoiHinhThongSoaiToiCao extends SpritePhuo
             /// -----
             /// TODO:
             /// -----
-            getTrangThaiTongQuat?.getBangDieuKhienKichBanChienDauTheoGiaiDoan?.getQuanLyDieuKhienChuyenKichBanChienDau?.onTSTCThucThiTanCongLienKichHinhThucSS010(
-              phuongTien: getMoHinh?.getMoHinh,
-            );
-            getTrangThaiTongQuat?.getBangDieuKhienKichBanChienDauTheoGiaiDoan?.getQuanLyDieuKhienChuyenKichBanChienDau?.onTSTCThucThiTanCongLienKichHinhThucSS020(
-              phuongTien: getMoHinh?.getMoHinh,
-            );
-            getTrangThaiTongQuat?.getBangDieuKhienKichBanChienDauTheoGiaiDoan?.getQuanLyDieuKhienChuyenKichBanChienDau?.onTSTCThucThiTanCongLienKichHinhThucSS030(
-              phuongTien: getMoHinh?.getMoHinh,
-            );
+            getTrangThaiTongQuat?.getBangDieuKhienKichBanChienDauTheoGiaiDoan?.getQuanLyDieuKhienChuyenKichBanChienDau?.onTSTCThucThiTanCongLienKichHinhThucSS010(phuongTien: getMoHinh?.getMoHinh);
+            getTrangThaiTongQuat?.getBangDieuKhienKichBanChienDauTheoGiaiDoan?.getQuanLyDieuKhienChuyenKichBanChienDau?.onTSTCThucThiTanCongLienKichHinhThucSS020(phuongTien: getMoHinh?.getMoHinh);
+            getTrangThaiTongQuat?.getBangDieuKhienKichBanChienDauTheoGiaiDoan?.getQuanLyDieuKhienChuyenKichBanChienDau?.onTSTCThucThiTanCongLienKichHinhThucSS030(phuongTien: getMoHinh?.getMoHinh);
           }
         }
 
@@ -153,15 +155,9 @@ class SpritePhuongTienSS70BangDieuKhienDoiHinhThongSoaiToiCao extends SpritePhuo
             /// -----
             /// TODO:
             /// -----
-            getTrangThaiTongQuat?.getBangDieuKhienKichBanChienDauTheoGiaiDoan?.getQuanLyDieuKhienChuyenKichBanChienDau?.onTSTCThucThiTanCongLienKichHinhThucSS010(
-              phuongTien: getMoHinh?.getMoHinh,
-            );
-            getTrangThaiTongQuat?.getBangDieuKhienKichBanChienDauTheoGiaiDoan?.getQuanLyDieuKhienChuyenKichBanChienDau?.onTSTCThucThiTanCongLienKichHinhThucSS020(
-              phuongTien: getMoHinh?.getMoHinh,
-            );
-            getTrangThaiTongQuat?.getBangDieuKhienKichBanChienDauTheoGiaiDoan?.getQuanLyDieuKhienChuyenKichBanChienDau?.onTSTCThucThiTanCongLienKichHinhThucSS030(
-              phuongTien: getMoHinh?.getMoHinh,
-            );
+            getTrangThaiTongQuat?.getBangDieuKhienKichBanChienDauTheoGiaiDoan?.getQuanLyDieuKhienChuyenKichBanChienDau?.onTSTCThucThiTanCongLienKichHinhThucSS010(phuongTien: getMoHinh?.getMoHinh);
+            getTrangThaiTongQuat?.getBangDieuKhienKichBanChienDauTheoGiaiDoan?.getQuanLyDieuKhienChuyenKichBanChienDau?.onTSTCThucThiTanCongLienKichHinhThucSS020(phuongTien: getMoHinh?.getMoHinh);
+            getTrangThaiTongQuat?.getBangDieuKhienKichBanChienDauTheoGiaiDoan?.getQuanLyDieuKhienChuyenKichBanChienDau?.onTSTCThucThiTanCongLienKichHinhThucSS030(phuongTien: getMoHinh?.getMoHinh);
           }
         }
 
@@ -187,15 +183,9 @@ class SpritePhuongTienSS70BangDieuKhienDoiHinhThongSoaiToiCao extends SpritePhuo
             /// -----
             /// TODO:
             /// -----
-            getTrangThaiTongQuat?.getBangDieuKhienKichBanChienDauTheoGiaiDoan?.getQuanLyDieuKhienChuyenKichBanChienDau?.onTSTCThucThiTanCongLienKichHinhThucSS010(
-              phuongTien: getMoHinh?.getMoHinh,
-            );
-            getTrangThaiTongQuat?.getBangDieuKhienKichBanChienDauTheoGiaiDoan?.getQuanLyDieuKhienChuyenKichBanChienDau?.onTSTCThucThiTanCongLienKichHinhThucSS020(
-              phuongTien: getMoHinh?.getMoHinh,
-            );
-            getTrangThaiTongQuat?.getBangDieuKhienKichBanChienDauTheoGiaiDoan?.getQuanLyDieuKhienChuyenKichBanChienDau?.onTSTCThucThiTanCongLienKichHinhThucSS030(
-              phuongTien: getMoHinh?.getMoHinh,
-            );
+            getTrangThaiTongQuat?.getBangDieuKhienKichBanChienDauTheoGiaiDoan?.getQuanLyDieuKhienChuyenKichBanChienDau?.onTSTCThucThiTanCongLienKichHinhThucSS010(phuongTien: getMoHinh?.getMoHinh);
+            getTrangThaiTongQuat?.getBangDieuKhienKichBanChienDauTheoGiaiDoan?.getQuanLyDieuKhienChuyenKichBanChienDau?.onTSTCThucThiTanCongLienKichHinhThucSS020(phuongTien: getMoHinh?.getMoHinh);
+            getTrangThaiTongQuat?.getBangDieuKhienKichBanChienDauTheoGiaiDoan?.getQuanLyDieuKhienChuyenKichBanChienDau?.onTSTCThucThiTanCongLienKichHinhThucSS030(phuongTien: getMoHinh?.getMoHinh);
           }
         }
 

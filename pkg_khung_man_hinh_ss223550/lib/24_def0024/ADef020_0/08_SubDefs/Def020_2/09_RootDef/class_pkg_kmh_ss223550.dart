@@ -9,7 +9,7 @@
 //   /// -----
 //   /// TODO:
 //   /// -----
-//   QUANLYTHANHPHANMANHINHTHUOCCAP({required super.globalState, required super.gameController, required super.thanhPhanQuanLyThuocCapTrucTiep, required super.sizeDx, required super.sizeDy});
+//   QUANLYTHANHPHANMANHINHTHUOCCAP({required super.globalStateManagementSystem, required super.gameController, required super.thanhPhanQuanLyThuocCapTrucTiep, required super.sizeDx, required super.sizeDy});
 //
 //   /// -----
 //   /// TODO: Add Comp Root

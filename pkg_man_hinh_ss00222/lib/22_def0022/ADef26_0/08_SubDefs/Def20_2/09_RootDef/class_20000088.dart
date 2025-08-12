@@ -10,21 +10,21 @@ class KhungHinhTichHopSS01PkgManHinhSS00222 extends Component with HasVisibility
   /// -----
   /// TODO:
   /// -----
-  KhungHinhTichHopSS01PkgManHinhSS00222({required QuanLyTrangThaiTongQuat? trangThaiTongQuat}) {
+  KhungHinhTichHopSS01PkgManHinhSS00222({required GlobalStateManagementSystem? trangThaiTongQuat}) {
     caiDatTrangThaiTongQuat(value: trangThaiTongQuat);
   }
 
   /// -----
   /// TODO:
   /// -----
-  QuanLyTrangThaiTongQuat? _trangThaiTongQuat;
-  QuanLyTrangThaiTongQuat? get getTrangThaiTongQuat => _trangThaiTongQuat;
-  Future<void> caiDatTrangThaiTongQuat({required QuanLyTrangThaiTongQuat? value}) async {
+  GlobalStateManagementSystem? _trangThaiTongQuat;
+  GlobalStateManagementSystem? get getTrangThaiTongQuat => _trangThaiTongQuat;
+  Future<void> caiDatTrangThaiTongQuat({required GlobalStateManagementSystem? value}) async {
     _trangThaiTongQuat ??= value;
     return;
   }
 
-  SpriteSS01PkgManHinhSS00222? _spriteSS01PkgManHinhSS00222;
+  SpriteChienDauCoThucThiChienDau? _spriteChienDauCoThucThiChienDau;
 
   @override
   FutureOr<void> onLoad() async {
@@ -44,15 +44,15 @@ class KhungHinhTichHopSS01PkgManHinhSS00222 extends Component with HasVisibility
   /// TODO: Setup Root
   /// -----
   Future<void> onSetupRoot() async {
-    _spriteSS01PkgManHinhSS00222 = SpriteSS01PkgManHinhSS00222(trangThaiTongQuat: getTrangThaiTongQuat);
+    _spriteChienDauCoThucThiChienDau = SpriteChienDauCoThucThiChienDau(trangThaiTongQuat: getTrangThaiTongQuat);
   }
 
   ///
   /// TODO: onAddRoot
   ///
   Future<void> onAddRoot() async {
-    if (_spriteSS01PkgManHinhSS00222 != null && _spriteSS01PkgManHinhSS00222?.isMounted == false) {
-      await add(_spriteSS01PkgManHinhSS00222!);
+    if (_spriteChienDauCoThucThiChienDau != null && _spriteChienDauCoThucThiChienDau?.isMounted == false) {
+      await add(_spriteChienDauCoThucThiChienDau!);
     }
   }
 }

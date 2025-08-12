@@ -19,16 +19,16 @@ class KHUNGHINHTICHHOPPHUONGTHUCTANCONGXAMCHIEM extends Component with HasVisibi
   /// -----
   /// TODO:
   /// -----
-  KHUNGHINHTICHHOPPHUONGTHUCTANCONGXAMCHIEM({required QuanLyTrangThaiTongQuat? trangThaiTongQuat}) {
+  KHUNGHINHTICHHOPPHUONGTHUCTANCONGXAMCHIEM({required GlobalStateManagementSystem? trangThaiTongQuat}) {
     caiDatTrangThaiTongQuat(value: trangThaiTongQuat);
   }
 
   /// -----
   /// TODO:
   /// -----
-  QuanLyTrangThaiTongQuat? _trangThaiTongQuat;
-  QuanLyTrangThaiTongQuat? get getTrangThaiTongQuat => _trangThaiTongQuat;
-  Future<void> caiDatTrangThaiTongQuat({required QuanLyTrangThaiTongQuat? value}) async {
+  GlobalStateManagementSystem? _trangThaiTongQuat;
+  GlobalStateManagementSystem? get getTrangThaiTongQuat => _trangThaiTongQuat;
+  Future<void> caiDatTrangThaiTongQuat({required GlobalStateManagementSystem? value}) async {
     _trangThaiTongQuat ??= value;
     return;
   }

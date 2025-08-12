@@ -58,7 +58,7 @@ class SpritePhuongTienThongSoaiToiCao extends SpritePhuongTienCoBan {
   /// TODO: Thực Thi Tấn Công
   /// -----
   @override
-  void onVoidThucThiTanCong() {
+  void onVoidThucThiTanCong() async {
     ///
     return;
   }

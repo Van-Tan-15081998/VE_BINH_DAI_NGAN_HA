@@ -10,7 +10,7 @@ class NUTBAMCHONCHATLUONGDOHOACAO extends THANHPHANNUTBAMTHUOCCAPTHUANKICHHOAT {
   /// TODO:
   /// -----
   NUTBAMCHONCHATLUONGDOHOACAO({
-    required super.globalState,
+    required super.globalStateManagementSystem,
     required super.gameController,
     required super.thanhPhanQuanLyThuocCapTrucTiep,
     required super.sizeDx,
@@ -30,10 +30,12 @@ class NUTBAMCHONCHATLUONGDOHOACAO extends THANHPHANNUTBAMTHUOCCAPTHUANKICHHOAT {
   @override
   void onThucThi() async {
 
-    await getGlobalState?.onGetEntityResourceManagement?.getQuanLyTrangThaiHangarChienDauCo
-        ?.onCaiDatChatLuongDoHoaCao();
-    await getGlobalState?.onGetEntityResourceManagement?.getQuanLyTrangThaiHangarPhuongTien
-        ?.onCaiDatChatLuongDoHoaCao();
+    // await getGlobalStateManagementSystem?.onGetEntityResourceManagement?.getQuanLyTrangThaiHangarChienDauCo
+    //     ?.onCaiDatChatLuongDoHoaCao();
+    // await getGlobalStateManagementSystem?.onGetEntityResourceManagement?.getQuanLyTrangThaiHangarPhuongTien
+    //     ?.onCaiDatChatLuongDoHoaCao();
+
+    await getGameController?.onKichHoatCaiDatDoHoaCao?.call();
 
     ///
     return;

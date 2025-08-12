@@ -1,28 +1,22 @@
 import 'dart:async';
-
-import 'package:flame/components.dart';
-import 'package:pkg_dinh_nghia_ss020/pkg_dinh_nghia_ss020_exp.dart';
-import 'package:pkg_dinh_nghia_ss022/pkg_dinh_nghia_ss022_exp.dart';
-import 'package:pkg_dinh_nghia_ss050/pkg_dinh_nghia_ss050_exp.dart';
+import 'dart:ui';
+import 'package:van_tan_export/van_tan_export.dart';
+import 'package:package_export/package_export.dart';
 
 /// -----
 /// TODO:
 /// -----
-class SPRITEANIMATIONHASVISIBILITY extends SpriteAnimationComponent
-    with HasVisibility, CauTrucThucThiCoBan {
+class SpriteAnimationHasVisibility extends SpriteAnimationComponent with HasVisibility, CauTrucThucThiCoBan {
   /// -----
   /// TODO:
   /// -----
-  QuanLyTrangThaiTongQuat? _globalState;
-  QuanLyTrangThaiTongQuat? get getGlobalState => _globalState;
-  void onVoidCaiDatGlobalState({
-    required QuanLyTrangThaiTongQuat? value,
-    bool? caiDatUuTien,
-  }) {
+  GlobalStateManagementSystem? _globalStateManagementSystem;
+  GlobalStateManagementSystem? get getGlobalStateManagementSystem => _globalStateManagementSystem;
+  void onSetGlobalStateManagementSystem({required GlobalStateManagementSystem? value, bool? caiDatUuTien}) {
     if (caiDatUuTien == true) {
-      _globalState = value;
+      _globalStateManagementSystem = value;
     } else {
-      _globalState ??= value;
+      _globalStateManagementSystem ??= value;
     }
 
     return;
@@ -88,16 +82,21 @@ class SPRITEANIMATIONHASVISIBILITY extends SpriteAnimationComponent
     return;
   }
 
-  THANHPHANGAMEUICOBAN? _thanhPhanGameUI;
-  THANHPHANGAMEUICOBAN? get getThanhPhanGameUI => _thanhPhanGameUI;
-  Future<void> onCaiDatThanhPhanGameUI({
-    required THANHPHANGAMEUICOBAN? value,
-    bool? caiDatUuTien,
-  }) async {
+  CoreGameUIComponent? _thanhPhanGameUI;
+  CoreGameUIComponent? get getThanhPhanGameUI => _thanhPhanGameUI;
+  Future<void> onCaiDatThanhPhanGameUI({required CoreGameUIComponent? value, bool? caiDatUuTien}) async {
     if (caiDatUuTien == true) {
       _thanhPhanGameUI = value;
     } else {
       _thanhPhanGameUI ??= value;
+    }
+
+    if (getDonViSprite?.getSpriteAnimation == null && getThanhPhanGameUI != null) {
+      getGlobalStateManagementSystem?.getQuanLyTrangThaiTPGAMEUI?.onVoidTruyXuatSpriteNgoaiHinhThanhPhanGameUI(
+        donViSprite: getDonViSprite, //
+        maDinhDanhThanhPhanGameUI: getThanhPhanGameUI?.getMaDinhDanhGameUI, //
+        spriteAnimationComponent: this, //
+      );
     }
 
     return;
@@ -113,14 +112,14 @@ class SPRITEANIMATIONHASVISIBILITY extends SpriteAnimationComponent
   /// -----
   /// TODO:
   /// -----
-  SPRITEANIMATIONHASVISIBILITY({
-    required QuanLyTrangThaiTongQuat? globalState,
+  SpriteAnimationHasVisibility({
+    required GlobalStateManagementSystem? globalStateManagementSystem,
     required double? sizeDx,
     required double? sizeDy,
     required double? positionDx,
     required double? positionDy,
   }) {
-    onVoidCaiDatGlobalState(value: globalState, caiDatUuTien: true);
+    onSetGlobalStateManagementSystem(value: globalStateManagementSystem, caiDatUuTien: true);
     onVoidCaiDatSizeDx(value: sizeDx, caiDatUuTien: true);
     onVoidCaiDatSizeDy(value: sizeDy, caiDatUuTien: true);
     onVoidCaiDatPositionDx(value: positionDx, caiDatUuTien: true);
@@ -130,8 +129,8 @@ class SPRITEANIMATIONHASVISIBILITY extends SpriteAnimationComponent
   /// -----
   /// TODO:
   /// -----
-  SPRITEANIMATIONHASVISIBILITY.onKichHoat({
-    required QuanLyTrangThaiTongQuat? globalState,
+  SpriteAnimationHasVisibility.onActive({
+    required GlobalStateManagementSystem? globalStateManagementSystem,
     required double? sizeDx,
     required double? sizeDy,
     required double? positionDx,
@@ -139,7 +138,7 @@ class SPRITEANIMATIONHASVISIBILITY extends SpriteAnimationComponent
   }) {
     onVoidCaiDatKiemTraHienThi(value: true);
 
-    onVoidCaiDatGlobalState(value: globalState, caiDatUuTien: true);
+    onSetGlobalStateManagementSystem(value: globalStateManagementSystem, caiDatUuTien: true);
     onVoidCaiDatSizeDx(value: sizeDx, caiDatUuTien: true);
     onVoidCaiDatSizeDy(value: sizeDy, caiDatUuTien: true);
     onVoidCaiDatPositionDx(value: positionDx, caiDatUuTien: true);
@@ -149,8 +148,8 @@ class SPRITEANIMATIONHASVISIBILITY extends SpriteAnimationComponent
   /// -----
   /// TODO:
   /// -----
-  SPRITEANIMATIONHASVISIBILITY.onHuyKichHoat({
-    required QuanLyTrangThaiTongQuat? globalState,
+  SpriteAnimationHasVisibility.onInActive({
+    required GlobalStateManagementSystem? globalStateManagementSystem,
     required double? sizeDx,
     required double? sizeDy,
     required double? positionDx,
@@ -158,7 +157,7 @@ class SPRITEANIMATIONHASVISIBILITY extends SpriteAnimationComponent
   }) {
     onVoidCaiDatKiemTraHienThi(value: false);
 
-    onVoidCaiDatGlobalState(value: globalState, caiDatUuTien: true);
+    onSetGlobalStateManagementSystem(value: globalStateManagementSystem, caiDatUuTien: true);
     onVoidCaiDatSizeDx(value: sizeDx, caiDatUuTien: true);
     onVoidCaiDatSizeDy(value: sizeDy, caiDatUuTien: true);
     onVoidCaiDatPositionDx(value: positionDx, caiDatUuTien: true);
@@ -177,14 +176,7 @@ class SPRITEANIMATIONHASVISIBILITY extends SpriteAnimationComponent
     if (getKiemTraHienThi == null) {
       onVoidCaiDatKiemTraHienThi(value: false);
     }
-    onVoidCaiDatDonViSprite(
-      value: DonViSpriteCoBan(
-        maDinhDanh: null,
-        nguonHinhAnh: null,
-        sprite: null,
-        spriteAnimation: null,
-      ),
-    );
+    onVoidCaiDatDonViSprite(value: DonViSpriteCoBan(maDinhDanh: null, nguonHinhAnh: null, sprite: null, spriteAnimation: null));
 
     position.setValues((getPositionDx ?? 1.0), (getPositionDy ?? 1.0));
 
@@ -205,6 +197,20 @@ class SPRITEANIMATIONHASVISIBILITY extends SpriteAnimationComponent
     onVoidCapNhatHoatAnh();
   }
 
+  @override
+  void renderTree(Canvas canvas) {
+    // import 'dart:ui';
+    try {
+      if (getKiemTraHienThi == true && animation != null) {
+        super.renderTree(canvas);
+      }
+    } catch (e) {
+      return;
+    }
+
+    return;
+  }
+
   /// -----
   /// TODO: Kiểm Tra Hiển Thị
   /// -----
@@ -214,8 +220,7 @@ class SPRITEANIMATIONHASVISIBILITY extends SpriteAnimationComponent
     if (getKiemTraHienThi != value) {
       _kiemTraHienThi = value;
 
-      if ((_kiemTraHienThi == false || _kiemTraHienThi == null) &&
-          isVisible == true) {
+      if ((_kiemTraHienThi == false || _kiemTraHienThi == null) && isVisible == true) {
         isVisible = false;
       } else if (_kiemTraHienThi == true && isVisible == false) {
         isVisible = true;
@@ -235,13 +240,12 @@ class SPRITEANIMATIONHASVISIBILITY extends SpriteAnimationComponent
       }
     }
 
-    if (getDonViSprite?.getSpriteAnimation == null &&
-        getThanhPhanGameUI != null) {
-      getGlobalState?.getQuanLyTrangThaiTPGAMEUI
-          ?.onVoidTruyXuatSpriteNgoaiHinhThanhPhanGameUI(
-            donViSprite: getDonViSprite,
-            maDinhDanhThanhPhanGameUI: getThanhPhanGameUI?.getMaDinhDanhGameUI,
-          );
+    if (getDonViSprite?.getSpriteAnimation == null && getThanhPhanGameUI != null) {
+      getGlobalStateManagementSystem?.getQuanLyTrangThaiTPGAMEUI?.onVoidTruyXuatSpriteNgoaiHinhThanhPhanGameUI(
+        donViSprite: getDonViSprite, //
+        maDinhDanhThanhPhanGameUI: getThanhPhanGameUI?.getMaDinhDanhGameUI, //
+        spriteAnimationComponent: null, //
+      );
       animation = getDonViSprite?.getSpriteAnimation;
     }
   }

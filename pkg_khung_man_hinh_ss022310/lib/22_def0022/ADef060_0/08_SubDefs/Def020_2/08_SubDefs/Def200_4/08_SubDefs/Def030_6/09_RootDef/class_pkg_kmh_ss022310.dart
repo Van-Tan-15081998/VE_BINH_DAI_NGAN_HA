@@ -6,13 +6,12 @@ import 'package:pkg_khung_man_hinh_ss020000/pkg_khung_man_hinh_ss020000_exp.dart
 /// -----
 /// TODO: Card Chiến Đấu Cơ Đẳng Cấp Sao [SSS10_SS02]
 /// -----
-class CARDCHIENDAUCODANGCAPSAOSSS10SS02
-    extends THANHPHANNUTBAMTHUOCCAPTHUANKICHHOAT {
+class CARDCHIENDAUCODANGCAPSAOSSS10SS02 extends THANHPHANNUTBAMTICHHOPTHUOCCAP {
   /// -----
   /// TODO:
   /// -----
   CARDCHIENDAUCODANGCAPSAOSSS10SS02({
-    required super.globalState,
+    required super.globalStateManagementSystem,
     required super.gameController,
     required super.thanhPhanQuanLyThuocCapTrucTiep,
     required super.sizeDx,
@@ -23,23 +22,15 @@ class CARDCHIENDAUCODANGCAPSAOSSS10SS02
     required super.onTapDownEvent, //
     required super.onTapUpEvent, //
   }) {
-    onCaiDatChienDauCoDangCapSaoSSS10SS02(
-      value:
-          getGlobalState
-              ?.getHangarChienDauCoTongQuat
-              ?.getChienDauCoDangCapSaoSSS10SS02,
-    );
+    onCaiDatChienDauCoDangCapSaoSSS10SS02(value: getGlobalStateManagementSystem?.getHangarChienDauCoTongQuat?.getChienDauCoDangCapSaoSSS10SS02);
   }
 
   /// -----
   /// TODO:
   /// -----
   ChienDauCoDangCapSaoSSS10SS02? _chienDauCoDangCapSaoSSS10SS02;
-  ChienDauCoDangCapSaoSSS10SS02? get getChienDauCoDangCapSaoSSS10SS02 =>
-      _chienDauCoDangCapSaoSSS10SS02;
-  Future<void> onCaiDatChienDauCoDangCapSaoSSS10SS02({
-    required ChienDauCoDangCapSaoSSS10SS02? value,
-  }) async {
+  ChienDauCoDangCapSaoSSS10SS02? get getChienDauCoDangCapSaoSSS10SS02 => _chienDauCoDangCapSaoSSS10SS02;
+  Future<void> onCaiDatChienDauCoDangCapSaoSSS10SS02({required ChienDauCoDangCapSaoSSS10SS02? value}) async {
     _chienDauCoDangCapSaoSSS10SS02 ??= value;
     return;
   }
@@ -49,54 +40,25 @@ class CARDCHIENDAUCODANGCAPSAOSSS10SS02
     /// -----
     /// TODO: Cài Đặt Chiến Đấu Cơ Chỉ Định Thực Thi Và Chiến Đấu Cơ Trực Tiếp Thực Thi Chiến Đấu Và Thực Thi Thông Tin
     /// -----
-    await getGlobalState
-        ?.getChienDauCoTongQuat
-        ?.getChiDinhChienDauCoThucThiChienDau
-        ?.getTrangThai
-        ?.caiDatMoHinh(value: getChienDauCoDangCapSaoSSS10SS02);
-    await getGlobalState
-        ?.getChienDauCoTongQuat
-        ?.getChienDauCoTrucTiepThucThiChienDau
-        ?.getTrangThai
-        ?.caiDatMoHinh(value: getChienDauCoDangCapSaoSSS10SS02);
-    await getGlobalState
-        ?.getChienDauCoTongQuat
-        ?.getChienDauCoChiDinhThucThiThongTin
-        ?.getTrangThai
-        ?.caiDatMoHinh(value: getChienDauCoDangCapSaoSSS10SS02);
+    await getGlobalStateManagementSystem?.getChienDauCoTongQuat?.getChiDinhChienDauCoThucThiChienDau?.getTrangThai?.caiDatMoHinh(value: getChienDauCoDangCapSaoSSS10SS02);
+    await getGlobalStateManagementSystem?.getChienDauCoTongQuat?.getChienDauCoTrucTiepThucThiChienDau?.getTrangThai?.caiDatMoHinh(value: getChienDauCoDangCapSaoSSS10SS02);
+    await getGlobalStateManagementSystem?.getChienDauCoTongQuat?.getChienDauCoChiDinhThucThiThongTin?.getTrangThai?.caiDatMoHinh(value: getChienDauCoDangCapSaoSSS10SS02);
 
     /// -----
     /// TODO: Cài Đặt Vị Trí Cho Chiến Đấu Cơ Trực Tiếp Thực Thi Chiến Đấu
     /// -----
-    await getGlobalState
-        ?.getChienDauCoTongQuat
-        ?.getChienDauCoTrucTiepThucThiChienDau
-        ?.getTrangThai
-        ?.getMoHinh
-        ?.getPhuongThuc
-        ?.getPhuongThucBay
-        ?.caiDatViTri(
-          value:
-              getGlobalState
-                  ?.getChienDauCoTongQuat
-                  ?.getDieuKhienDiChuyenChienDauCo
-                  ?.getViTriChienDauCo,
-        );
-    await getGlobalState?.getChienDauCoTongQuat?.getDieuKhienDiChuyenChienDauCo
-        ?.onCapNhatKichThuocChienDauCo(
-          chienDauCo:
-              getGlobalState
-                  ?.getChienDauCoTongQuat
-                  ?.getChienDauCoTrucTiepThucThiChienDau
-                  ?.getTrangThai
-                  ?.getMoHinh,
-        );
+    await getGlobalStateManagementSystem?.getChienDauCoTongQuat?.getChienDauCoTrucTiepThucThiChienDau?.getTrangThai?.getMoHinh?.getPhuongThuc?.getPhuongThucBay?.caiDatViTri(
+      value: getGlobalStateManagementSystem?.getChienDauCoTongQuat?.getDieuKhienDiChuyenChienDauCo?.getViTriChienDauCo,
+    );
+    await getGlobalStateManagementSystem?.getChienDauCoTongQuat?.getDieuKhienDiChuyenChienDauCo?.onCapNhatKichThuocChienDauCo(
+      chienDauCo: getGlobalStateManagementSystem?.getChienDauCoTongQuat?.getChienDauCoTrucTiepThucThiChienDau?.getTrangThai?.getMoHinh,
+    );
 
     /// -----
     /// TODO:
     /// -----
-    await getGlobalState?.onGetEntityResourceManagement?.getQuanLyTrangThaiHangarChienDauCo
-        ?.onTaiTaiNguyenChienDauCoSSS10SS020FullSize();
+    // await getGlobalStateManagementSystem?.onGetEntityResourceManagement?.getQuanLyTrangThaiHangarChienDauCo
+    //     ?.onTaiTaiNguyenChienDauCoSSS10SS020FullSize();
 
     ///
     return;
@@ -114,18 +76,9 @@ class CARDCHIENDAUCODANGCAPSAOSSS10SS02
 
   @override
   Future<void> onCaiDatChiTietThanhPhanGameUI() async {
-    await onCaiDatThanhPhanGameUIKichHoat(
-      value: GAMEUICARDDANGCAPSAOSSS100(),
-      caiDatUuTien: true,
-    );
-    await onCaiDatThanhPhanGameUIKichHoat2(
-      value: GAMEUICARDCHIENDAUCOKICHHOAT(),
-      caiDatUuTien: true,
-    );
-    await onCaiDatThanhPhanGameUIHuyKichHoat(
-      value: GAMEUICARDDANGCAPSAOSSS100(),
-      caiDatUuTien: true,
-    );
+    await onCaiDatThanhPhanGameUIKichHoat(value: GAMEUICARDDANGCAPSAOSSS100(), caiDatUuTien: true);
+    await onCaiDatThanhPhanGameUIKichHoat2(value: GAMEUICARDCHIENDAUCOKICHHOAT(), caiDatUuTien: true);
+    await onCaiDatThanhPhanGameUIHuyKichHoat(value: GAMEUICARDDANGCAPSAOSSS100(), caiDatUuTien: true);
 
     await getThanhPhanGameUIKichHoat?.onSetupRoot();
     await getThanhPhanGameUIKichHoat2?.onSetupRoot();
@@ -142,29 +95,20 @@ class CARDCHIENDAUCODANGCAPSAOSSS10SS02
 
   @override
   Future<void> onCapNhatChiTietSpriteAnimationComponentOnLayerSS010() async {
-    double sizeDxCapNhat =
-        (getChienDauCoDangCapSaoSSS10SS02
-                ?.getThuocTinh
-                ?.getThuocTinhKichThuoc
-                ?.getChieuRongThan ??
-            50.0) *
-        0.35;
-    double sizeDyCapNhat =
-        (getChienDauCoDangCapSaoSSS10SS02
-                ?.getThuocTinh
-                ?.getThuocTinhKichThuoc
-                ?.getChieuCaoThan ??
-            50.0) *
-        0.35;
+    double sizeDxCapNhat = (getChienDauCoDangCapSaoSSS10SS02?.getThuocTinh?.getThuocTinhKichThuoc?.getChieuRongThan ?? 50.0) * 0.35;
+    double sizeDyCapNhat = (getChienDauCoDangCapSaoSSS10SS02?.getThuocTinh?.getThuocTinhKichThuoc?.getChieuCaoThan ?? 50.0) * 0.35;
 
-    getSpriteAnimationComponentOnLayerSS01?.onVoidCaiDatSizeDx(
-      value: sizeDxCapNhat,
-      caiDatUuTien: true,
+    getSpriteAnimationComponentOnLayerSS01?.onVoidCaiDatSizeDx(value: sizeDxCapNhat, caiDatUuTien: true);
+    getSpriteAnimationComponentOnLayerSS01?.onVoidCaiDatSizeDy(value: sizeDyCapNhat, caiDatUuTien: true);
+
+    /// -----
+    /// TODO: Cài Đặt Liên Kết
+    /// -----
+    await getGlobalStateManagementSystem?.onGetEntityResourceManagement?.getQuanLyTrangThaiHangarChienDauCo?.onTruyXuatHinhAnhNgoaiHinhChienDauCoSSS10SS020(
+      spriteAnimationComponent: getSpriteAnimationComponentOnLayerSS01,
     );
-    getSpriteAnimationComponentOnLayerSS01?.onVoidCaiDatSizeDy(
-      value: sizeDyCapNhat,
-      caiDatUuTien: true,
-    );
+
+    await onRemoveThanhPhanKhongHoatDong();
 
     ///
     return;
@@ -175,17 +119,12 @@ class CARDCHIENDAUCODANGCAPSAOSSS10SS02
     // TODO: implement update
     super.update(dt);
 
-    if (getSpriteAnimationComponentOnLayerSS01?.animation == null) {
-      getSpriteAnimationComponentOnLayerSS01?.animation =
-          getChienDauCoDangCapSaoSSS10SS02
-              ?.getThuocTinh
-              ?.getThuocTinhHinhAnhSprite
-              ?.getDonViSpriteNgoaiHinhThanChienDauCo
-              ?.getSpriteAnimation;
+    if (getSpriteAnimationComponentOnLayerSS01?.animation != null) {
+      getSpriteAnimationComponentOnLayerSS01?.onVoidCaiDatKiemTraHienThi(value: true);
+    } else if (getSpriteAnimationComponentOnLayerSS01?.animation == null) {
+      getSpriteAnimationComponentOnLayerSS01?.animation = getChienDauCoDangCapSaoSSS10SS02?.getThuocTinh?.getThuocTinhHinhAnhSprite?.getDonViSpriteNgoaiHinhThanChienDauCo?.getSpriteAnimation;
 
-      getSpriteAnimationComponentOnLayerSS01?.onVoidCaiDatKiemTraHienThi(
-        value: true,
-      );
+      getSpriteAnimationComponentOnLayerSS01?.onVoidCaiDatKiemTraHienThi(value: true);
 
       onCapNhatChiTietSpriteAnimationComponentOnLayerSS010();
     }

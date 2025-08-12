@@ -21,7 +21,7 @@ class MANHINHTHANHPHANNHIEMVUCHIENDAUCHUONGSS010MAPSS00A extends StatefulWidget 
   /// -----
   /// TODO:
   /// -----
-  final QuanLyTrangThaiTongQuat? trangThaiTongQuat;
+  final GlobalStateManagementSystem? trangThaiTongQuat;
 
   /// -----
   /// TODO:

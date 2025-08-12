@@ -66,8 +66,4 @@ export '28_def0028/ADef34_0/08_SubDefs/Def26_2/09_RootDef/class_20000860.dart';
 /// TODO: _____[CHIEN_DAU_CO_DANG_CAP_SAO_SSS10_SS05]_____
 export '28_def0028/ADef34_0/08_SubDefs/Def28_2/09_RootDef/class_20000862.dart';
 
-/// A Calculator.
-class Calculator {
-  /// Returns [value] plus 1.
-  int addOne(int value) => value + 1;
-}
+

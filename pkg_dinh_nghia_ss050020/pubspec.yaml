@@ -27,10 +27,17 @@ dependencies:
   pkg_dinh_nghia_ss050:
     path: ../pkg_dinh_nghia_ss050
 
+  pkg_dinh_nghia_ss020000:
+    path: ../pkg_dinh_nghia_ss020000
   pkg_dinh_nghia_ss030020:
     path: ../pkg_dinh_nghia_ss030020
   pkg_dinh_nghia_ss030030:
     path: ../pkg_dinh_nghia_ss030030
+
+  pkg_khung_man_hinh_ss020000:
+    path: ../pkg_khung_man_hinh_ss020000
+  pkg_khung_man_hinh_ss022000:
+    path: ../pkg_khung_man_hinh_ss022000
 
 dev_dependencies:
 #  flutter_test:

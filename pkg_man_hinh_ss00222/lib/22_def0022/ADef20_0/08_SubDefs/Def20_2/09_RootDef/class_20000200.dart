@@ -1,3 +1,4 @@
+import 'dart:ui';
 import 'dart:async';
 import 'package:flame/components.dart';
 import 'package:pkg_dinh_nghia_ss022/pkg_dinh_nghia_ss022_exp.dart';
@@ -6,8 +7,8 @@ import 'package:pkg_dinh_nghia_ss050/pkg_dinh_nghia_ss050_exp.dart';
 /// -----
 /// TODO: Sprite Ngoại Hình Thân Chiến Đấu Cơ
 /// -----
-class SpriteSS01PkgManHinhSS00222 extends SpriteAnimationCoBan {
-  SpriteSS01PkgManHinhSS00222({required super.trangThaiTongQuat, bool? capNhatViTri}) {
+class SpriteChienDauCoThucThiChienDau extends SpriteAnimationCoBan {
+  SpriteChienDauCoThucThiChienDau({required super.trangThaiTongQuat, bool? capNhatViTri}) {
     _capNhatViTri = capNhatViTri ?? true;
   }
 
@@ -33,6 +34,8 @@ class SpriteSS01PkgManHinhSS00222 extends SpriteAnimationCoBan {
     // debugMode = true;
     anchor = Anchor.center;
 
+    khongThucThiCapNhatNguyenBan = true;
+
     caiDatMoHinhChiTiet();
 
     return;
@@ -48,13 +51,11 @@ class SpriteSS01PkgManHinhSS00222 extends SpriteAnimationCoBan {
 
   @override
   Future<void> caiDatMoHinhChiTiet() async {
-    await caiDatMoHinh(
-      value: getTrangThaiTongQuat?.getChienDauCoTongQuat?.getDieuKhienDiChuyenChienDauCo?.getViTriChienDauCo,
-    );
+    await caiDatMoHinh(value: getTrangThaiTongQuat?.getChienDauCoTongQuat?.getDieuKhienDiChuyenChienDauCo?.getViTriChienDauCo);
 
-    await caiDatTrangThai(
-      value: getTrangThaiTongQuat?.getChienDauCoTongQuat?.getChiDinhChienDauCoThucThiChienDau?.getTrangThai,
-    );
+    await caiDatTrangThai(value: getTrangThaiTongQuat?.getChienDauCoTongQuat?.getChiDinhChienDauCoThucThiChienDau?.getTrangThai);
+
+    getTrangThai?.onVoidCaiDatSpriteChienDauCo2(value: this);
 
     return;
   }
@@ -62,8 +63,10 @@ class SpriteSS01PkgManHinhSS00222 extends SpriteAnimationCoBan {
   @override
   bool onVoidKiemTraTanXuatCapNhat() {
     if (getTrangThaiTongQuat?.getThietLapTongQuat?.onKiemTraChoPhepCapNhatTheoTocDoKhungHinh(
-        maDinhDanh: '[SPRITE_ANIMATION_CHIEN_DAU_CO]',
-        chiSoTangTienGiamTanXuatCapNhat: getBienTangTienGiamTanXuatCapNhat) == true) {
+          maDinhDanh: '[SPRITE_ANIMATION_CHIEN_DAU_CO]',
+          chiSoTangTienGiamTanXuatCapNhat: getBienTangTienGiamTanXuatCapNhat,
+        ) ==
+        true) {
       return true;
     }
 
@@ -71,63 +74,93 @@ class SpriteSS01PkgManHinhSS00222 extends SpriteAnimationCoBan {
   }
 
   @override
-  void update(double dt) {
-    super.update(dt);
-
-    onVoidCaiDatTuDongBienTangTienGiamTanXuatCapNhat();
-    if (onVoidKiemTraTanXuatCapNhat() == false) {
-      return;
-    }
-
-    getTrangThaiTongQuat?.getChienDauCoTongQuat?.getDieuKhienDiChuyenChienDauCo?.getViTriChienDauCo?.getHuongBay
-        ?.caiDatDinhHuongTheoViTriXuatPhatNguyenBanChienDauCo();
-
-    // await capNhatTrangThaiMoHinh();
-
-    // await capNhatKiemTraHienThi();
-    //
-
-    onVoidCaiDatHoatAnhChiTiet();
-
-    onVoidCaiDatKiemTraHienThi(value: true);
-
-    onVoidCapNhatPositionSizeValues();
-  }
-
-  @override
-  void onVoidCaiDatHoatAnhChiTiet() {
-    if (getDonViSprite?.getMaDinhDanh != getTrangThai?.getMoHinh?.getMaDinhDanhChienDauCo) {
+  void renderTree(Canvas canvas) {
+    // import 'dart:ui';
+    try {
+      if (getKiemTraHienThi == true && animation != null) {
+        super.renderTree(canvas);
+      }
+    } catch (e) {
       animation = null;
-       getDonViSprite?.onVoidCaiDatMaDinhDanh(value: getTrangThai?.getMoHinh?.getMaDinhDanhChienDauCo);
-       getDonViSprite?.onVoidCaiDatSpriteAnimation(
-        value:
-        getTrangThai
-            ?.getMoHinh
-            ?.getThuocTinh
-            ?.getThuocTinhHinhAnhSprite
-            ?.getDonViSpriteNgoaiHinhThanChienDauCo
-            ?.getSpriteAnimation,
-      );
 
-      animation = getDonViSprite?.getSpriteAnimation;
+      return;
     }
 
     return;
   }
 
   @override
-  void onVoidCapNhatPositionSizeValues() {
+  void update(double dt) {
+    super.update(dt);
 
+    if (getTrangThaiTongQuat?.getTienTrinhTongQuat?.getTienTrinhThucThiChienDau?.getTrangThai?.getMoHinh?.onCheckBoolDangThucThi() == true) {
+      onVoidCaiDatTuDongBienTangTienGiamTanXuatCapNhat();
+      if (onVoidKiemTraTanXuatCapNhat() == false) {
+        return;
+      }
+
+      getTrangThaiTongQuat?.getChienDauCoTongQuat?.getDieuKhienDiChuyenChienDauCo?.getViTriChienDauCo?.getHuongBay?.caiDatDinhHuongTheoViTriXuatPhatNguyenBanChienDauCo();
+
+      // await capNhatTrangThaiMoHinh();
+
+      // await capNhatKiemTraHienThi();
+      //
+
+      onVoidCaiDatHoatAnhChiTiet();
+
+      onVoidCaiDatKiemTraHienThi(value: true);
+
+      onVoidCapNhatPositionSizeValues();
+    }
+  }
+
+  int _delay = 10;
+
+  @override
+  void onVoidCaiDatHoatAnhChiTiet() {
+    if (_delay >= 1) {
+      _delay -= 1;
+
+      if (_delay == 0) {
+        _delay = 10;
+
+        if (getDonViSprite?.getMaDinhDanh != getTrangThai?.getMoHinh?.getMaDinhDanhChienDauCo) {
+          animation = null;
+          getDonViSprite?.onVoidCaiDatMaDinhDanh(value: getTrangThai?.getMoHinh?.getMaDinhDanhChienDauCo);
+          getDonViSprite?.onVoidCaiDatSpriteAnimation(value: getTrangThai?.getMoHinh?.getThuocTinh?.getThuocTinhHinhAnhSprite?.getDonViSpriteNgoaiHinhThanChienDauCo?.getSpriteAnimation);
+
+          animation = getDonViSprite?.getSpriteAnimation;
+        }
+        if (animation == null) {
+          if (getTrangThai?.getMoHinh?.getThuocTinh?.getThuocTinhHinhAnhSprite?.getDonViSpriteNgoaiHinhThanChienDauCo?.getSpriteAnimation != null) {
+            getDonViSprite?.onVoidCaiDatSpriteAnimation(value: getTrangThai?.getMoHinh?.getThuocTinh?.getThuocTinhHinhAnhSprite?.getDonViSpriteNgoaiHinhThanChienDauCo?.getSpriteAnimation);
+          }
+
+          animation = getDonViSprite?.getSpriteAnimation;
+        }
+      }
+    }
+
+    return;
+  }
+
+  double dx = 0;
+  double dy = 0;
+  double chieuCaoThan = 0;
+  double chieuRongThan = 0;
+
+  @override
+  void onVoidCapNhatPositionSizeValues() {
     onVoidCaiDatKiemTraHienThi(value: true);
 
     if (getKiemTraHienThi == true) {
       ///
       /// TODO:
       ///
-      double dx = getMoHinh?.getDxTrongTamNotNull ?? 1.0;
-      double dy = getMoHinh?.getDyTrongTamNotNull ?? 1.0;
-      double chieuCaoThan = getMoHinh?.getChieuCaoThan ?? 1.0;
-      double chieuRongThan = getMoHinh?.getChieuRongThan ?? 1.0;
+      dx = getMoHinh?.getDxTrongTamNotNull ?? 1.0;
+      dy = getMoHinh?.getDyTrongTamNotNull ?? 1.0;
+      chieuCaoThan = getMoHinh?.getChieuCaoThan ?? 1.0;
+      chieuRongThan = getMoHinh?.getChieuRongThan ?? 1.0;
 
       ///
       /// TODO:

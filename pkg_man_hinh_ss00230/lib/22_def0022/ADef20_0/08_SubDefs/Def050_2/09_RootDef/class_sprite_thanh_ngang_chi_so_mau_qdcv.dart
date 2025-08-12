@@ -1,7 +1,7 @@
 import 'package:pkg_man_hinh_ss00230/pkg_man_hinh_ss00230_exp.dart';
 
 class SPRITETHANHNGANGCHISOMAUQDCV extends SPRITETHANHNGANGCHISOMAUCOBAN {
-  SPRITETHANHNGANGCHISOMAUQDCV({required super.trangThaiTongQuat});
+  SPRITETHANHNGANGCHISOMAUQDCV({required super.trangThaiTongQuat, required super.parentComponent});
 
   @override
   void onVoidCaiDatMoHinhChiTiet() {
@@ -14,15 +14,15 @@ class SPRITETHANHNGANGCHISOMAUQDCV extends SPRITETHANHNGANGCHISOMAUCOBAN {
   @override
   void onVoidCaiDatNguonHinhAnh() {
     onVoidCaiDatNguonHinhAnhThanhNgangChiSoMauHienHanh(
-      value: '../../packages/pkg_man_hinh_ss00230/lib/22_def0022/ADef20_0/07_ImgSrcs/Def040_2/09_RootDef/thanh_ngang_chi_so_mau_hien_hanh.png',
+      value: '../../packages/pkg_man_hinh_ss00230/lib/22_def0022/ADef20_0/07_ImgSrcs/Def040_2/09_RootDef/thanh_ngang_chi_so_mau_hien_hanh.webp',
       caiDatUuTien: true,
     );
     onVoidCaiDatNguonHinhAnhThanhNgangChiSoMauHieuUng(
-      value: '../../packages/pkg_man_hinh_ss00230/lib/22_def0022/ADef20_0/07_ImgSrcs/Def040_2/09_RootDef/thanh_ngang_chi_so_mau_hieu_ung.png',
+      value: '../../packages/pkg_man_hinh_ss00230/lib/22_def0022/ADef20_0/07_ImgSrcs/Def040_2/09_RootDef/thanh_ngang_chi_so_mau_hieu_ung.webp',
       caiDatUuTien: true,
     );
     onVoidCaiDatNguonHinhAnhKhungVienChiSoMau(
-      value: '../../packages/pkg_man_hinh_ss00230/lib/22_def0022/ADef20_0/07_ImgSrcs/Def040_2/09_RootDef/khung_vien_chi_so_mau.png',
+      value: '../../packages/pkg_man_hinh_ss00230/lib/22_def0022/ADef20_0/07_ImgSrcs/Def040_2/09_RootDef/khung_vien_chi_so_mau.webp',
       caiDatUuTien: true,
     );
   }

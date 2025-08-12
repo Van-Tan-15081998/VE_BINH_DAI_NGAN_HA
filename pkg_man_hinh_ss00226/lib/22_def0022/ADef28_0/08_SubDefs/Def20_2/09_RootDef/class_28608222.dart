@@ -26,16 +26,16 @@ class KhungHinhTongQuatSS01PkgManHinhSS00226 extends FlameGame {
   /// -----
   /// TODO:
   /// -----
-  KhungHinhTongQuatSS01PkgManHinhSS00226({required QuanLyTrangThaiTongQuat? trangThaiTongQuat}) {
+  KhungHinhTongQuatSS01PkgManHinhSS00226({required GlobalStateManagementSystem? trangThaiTongQuat}) {
     caiDatTrangThaiTongQuat(value: trangThaiTongQuat);
   }
 
   /// -----
   /// TODO:
   /// -----
-  QuanLyTrangThaiTongQuat? _trangThaiTongQuat;
-  QuanLyTrangThaiTongQuat? get getTrangThaiTongQuat => _trangThaiTongQuat;
-  Future<void> caiDatTrangThaiTongQuat({required QuanLyTrangThaiTongQuat? value}) async {
+  GlobalStateManagementSystem? _trangThaiTongQuat;
+  GlobalStateManagementSystem? get getTrangThaiTongQuat => _trangThaiTongQuat;
+  Future<void> caiDatTrangThaiTongQuat({required GlobalStateManagementSystem? value}) async {
     _trangThaiTongQuat ??= value;
     return;
   }
@@ -64,9 +64,7 @@ class KhungHinhTongQuatSS01PkgManHinhSS00226 extends FlameGame {
   final KhungHinhNenBangDieuKhienDoiHinhVuKhiDieuKhien _khungHinhNenBangDieuKhienDoiHinhVuKhiDieuKhien = KhungHinhNenBangDieuKhienDoiHinhVuKhiDieuKhien(trangThaiTongQuat: null);
   final KhungHinhNenBangDieuKhienDoiHinhVuKhiNgauNhien _khungHinhNenBangDieuKhienDoiHinhVuKhiNgauNhien = KhungHinhNenBangDieuKhienDoiHinhVuKhiNgauNhien(trangThaiTongQuat: null);
 
-  final KhungHinhNenBangDieuKhienDoiHinhVatPhamPhanThuong _khungHinhNenBangDieuKhienDoiHinhVatPhamPhanThuong = KhungHinhNenBangDieuKhienDoiHinhVatPhamPhanThuong(
-    trangThaiTongQuat: null,
-  );
+  final KhungHinhNenBangDieuKhienDoiHinhVatPhamPhanThuong _khungHinhNenBangDieuKhienDoiHinhVatPhamPhanThuong = KhungHinhNenBangDieuKhienDoiHinhVatPhamPhanThuong(trangThaiTongQuat: null);
 
   @override
   Color backgroundColor() => Colors.transparent;
@@ -169,7 +167,5 @@ class KhungHinhTongQuatSS01PkgManHinhSS00226 extends FlameGame {
     if (_khungHinhNenBangDieuKhienDoiHinhVuKhiDieuKhien.isMounted == false) {
       await add(_khungHinhNenBangDieuKhienDoiHinhVuKhiDieuKhien);
     }
-
-
   }
 }

@@ -51,56 +51,56 @@ class BANGDIEUKHIENDOIHINHTUANTRATRINHSAT extends BANGDIEUKHIENDOIHINHCOBAN {
       /// -----
       /// TODO: [1] => [5]
       /// -----
-      caiDatTrangThaiPhuongTienSS020(value: TrangThaiPhuongTien(value: PHUONGTIENCHIHUYCLASS10ASS01(1)), caiDatUuTien: true).catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
-      caiDatTrangThaiPhuongTienSS022(value: TrangThaiPhuongTien(value: PHUONGTIENCHIHUYCLASS10ASS01(1)), caiDatUuTien: true).catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
-      caiDatTrangThaiPhuongTienSS024(value: TrangThaiPhuongTien(value: PHUONGTIENCHIHUYCLASS10ASS01(1)), caiDatUuTien: true).catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
-      caiDatTrangThaiPhuongTienSS026(value: TrangThaiPhuongTien(value: PHUONGTIENCHIHUYCLASS10ASS01(1)), caiDatUuTien: true).catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
-      caiDatTrangThaiPhuongTienSS028(value: TrangThaiPhuongTien(value: PHUONGTIENCHIHUYCLASS10ASS01(1)), caiDatUuTien: true).catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      caiDatTrangThaiPhuongTienSS020(value: TrangThaiPhuongTien(value: PHUONGTIENCHIHUYCLASS10ASS01(capDo: 1)), caiDatUuTien: true).catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      caiDatTrangThaiPhuongTienSS022(value: TrangThaiPhuongTien(value: PHUONGTIENCHIHUYCLASS10ASS01(capDo: 1)), caiDatUuTien: true).catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      caiDatTrangThaiPhuongTienSS024(value: TrangThaiPhuongTien(value: PHUONGTIENCHIHUYCLASS10ASS01(capDo: 1)), caiDatUuTien: true).catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      caiDatTrangThaiPhuongTienSS026(value: TrangThaiPhuongTien(value: PHUONGTIENCHIHUYCLASS10ASS01(capDo: 1)), caiDatUuTien: true).catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      caiDatTrangThaiPhuongTienSS028(value: TrangThaiPhuongTien(value: PHUONGTIENCHIHUYCLASS10ASS01(capDo: 1)), caiDatUuTien: true).catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
 
       /// -----
       /// TODO: [6] => [10]
       /// -----
-      caiDatTrangThaiPhuongTienSS030(value: TrangThaiPhuongTien(value: PHUONGTIENCHIHUYCLASS10ASS01(1)), caiDatUuTien: true).catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
-      caiDatTrangThaiPhuongTienSS032(value: TrangThaiPhuongTien(value: PHUONGTIENCHIHUYCLASS10ASS01(1)), caiDatUuTien: true).catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
-      caiDatTrangThaiPhuongTienSS034(value: TrangThaiPhuongTien(value: PHUONGTIENCHIHUYCLASS10ASS01(1)), caiDatUuTien: true).catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
-      caiDatTrangThaiPhuongTienSS036(value: TrangThaiPhuongTien(value: PHUONGTIENCHIHUYCLASS10ASS01(1)), caiDatUuTien: true).catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
-      caiDatTrangThaiPhuongTienSS038(value: TrangThaiPhuongTien(value: PHUONGTIENCHIHUYCLASS10ASS01(1)), caiDatUuTien: true).catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      caiDatTrangThaiPhuongTienSS030(value: TrangThaiPhuongTien(value: PHUONGTIENCHIHUYCLASS10ASS01(capDo: 1)), caiDatUuTien: true).catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      caiDatTrangThaiPhuongTienSS032(value: TrangThaiPhuongTien(value: PHUONGTIENCHIHUYCLASS10ASS01(capDo: 1)), caiDatUuTien: true).catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      caiDatTrangThaiPhuongTienSS034(value: TrangThaiPhuongTien(value: PHUONGTIENCHIHUYCLASS10ASS01(capDo: 1)), caiDatUuTien: true).catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      caiDatTrangThaiPhuongTienSS036(value: TrangThaiPhuongTien(value: PHUONGTIENCHIHUYCLASS10ASS01(capDo: 1)), caiDatUuTien: true).catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      caiDatTrangThaiPhuongTienSS038(value: TrangThaiPhuongTien(value: PHUONGTIENCHIHUYCLASS10ASS01(capDo: 1)), caiDatUuTien: true).catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
 
       /// -----
       /// TODO: [11] => [15]
       /// -----
-      caiDatTrangThaiPhuongTienSS040(value: TrangThaiPhuongTien(value: PHUONGTIENCHIHUYCLASS10ASS01(1)), caiDatUuTien: true).catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
-      caiDatTrangThaiPhuongTienSS042(value: TrangThaiPhuongTien(value: PHUONGTIENCHIHUYCLASS10ASS01(1)), caiDatUuTien: true).catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
-      caiDatTrangThaiPhuongTienSS044(value: TrangThaiPhuongTien(value: PHUONGTIENCHIHUYCLASS10ASS01(1)), caiDatUuTien: true).catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
-      caiDatTrangThaiPhuongTienSS046(value: TrangThaiPhuongTien(value: PHUONGTIENCHIHUYCLASS10ASS01(1)), caiDatUuTien: true).catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
-      caiDatTrangThaiPhuongTienSS048(value: TrangThaiPhuongTien(value: PHUONGTIENCHIHUYCLASS10ASS01(1)), caiDatUuTien: true).catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      caiDatTrangThaiPhuongTienSS040(value: TrangThaiPhuongTien(value: PHUONGTIENCHIHUYCLASS10ASS01(capDo: 1)), caiDatUuTien: true).catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      caiDatTrangThaiPhuongTienSS042(value: TrangThaiPhuongTien(value: PHUONGTIENCHIHUYCLASS10ASS01(capDo: 1)), caiDatUuTien: true).catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      caiDatTrangThaiPhuongTienSS044(value: TrangThaiPhuongTien(value: PHUONGTIENCHIHUYCLASS10ASS01(capDo: 1)), caiDatUuTien: true).catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      caiDatTrangThaiPhuongTienSS046(value: TrangThaiPhuongTien(value: PHUONGTIENCHIHUYCLASS10ASS01(capDo: 1)), caiDatUuTien: true).catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      caiDatTrangThaiPhuongTienSS048(value: TrangThaiPhuongTien(value: PHUONGTIENCHIHUYCLASS10ASS01(capDo: 1)), caiDatUuTien: true).catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
 
       /// -----
       /// TODO: [16] => [20]
       /// -----
-      caiDatTrangThaiPhuongTienSS050(value: TrangThaiPhuongTien(value: PHUONGTIENCHIHUYCLASS10ASS01(1)), caiDatUuTien: true).catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
-      caiDatTrangThaiPhuongTienSS052(value: TrangThaiPhuongTien(value: PHUONGTIENCHIHUYCLASS10ASS01(1)), caiDatUuTien: true).catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
-      caiDatTrangThaiPhuongTienSS054(value: TrangThaiPhuongTien(value: PHUONGTIENCHIHUYCLASS10ASS01(1)), caiDatUuTien: true).catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
-      caiDatTrangThaiPhuongTienSS056(value: TrangThaiPhuongTien(value: PHUONGTIENCHIHUYCLASS10ASS01(1)), caiDatUuTien: true).catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
-      caiDatTrangThaiPhuongTienSS058(value: TrangThaiPhuongTien(value: PHUONGTIENCHIHUYCLASS10ASS01(1)), caiDatUuTien: true).catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      caiDatTrangThaiPhuongTienSS050(value: TrangThaiPhuongTien(value: PHUONGTIENCHIHUYCLASS10ASS01(capDo: 1)), caiDatUuTien: true).catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      caiDatTrangThaiPhuongTienSS052(value: TrangThaiPhuongTien(value: PHUONGTIENCHIHUYCLASS10ASS01(capDo: 1)), caiDatUuTien: true).catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      caiDatTrangThaiPhuongTienSS054(value: TrangThaiPhuongTien(value: PHUONGTIENCHIHUYCLASS10ASS01(capDo: 1)), caiDatUuTien: true).catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      caiDatTrangThaiPhuongTienSS056(value: TrangThaiPhuongTien(value: PHUONGTIENCHIHUYCLASS10ASS01(capDo: 1)), caiDatUuTien: true).catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      caiDatTrangThaiPhuongTienSS058(value: TrangThaiPhuongTien(value: PHUONGTIENCHIHUYCLASS10ASS01(capDo: 1)), caiDatUuTien: true).catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
 
       /// -----
       /// TODO: [21] => [25]
       /// -----
-      caiDatTrangThaiPhuongTienSS060(value: TrangThaiPhuongTien(value: PHUONGTIENCHIHUYCLASS10ASS01(1)), caiDatUuTien: true).catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
-      caiDatTrangThaiPhuongTienSS062(value: TrangThaiPhuongTien(value: PHUONGTIENCHIHUYCLASS10ASS01(1)), caiDatUuTien: true).catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
-      caiDatTrangThaiPhuongTienSS064(value: TrangThaiPhuongTien(value: PHUONGTIENCHIHUYCLASS10ASS01(1)), caiDatUuTien: true).catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
-      caiDatTrangThaiPhuongTienSS066(value: TrangThaiPhuongTien(value: PHUONGTIENCHIHUYCLASS10ASS01(1)), caiDatUuTien: true).catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
-      caiDatTrangThaiPhuongTienSS068(value: TrangThaiPhuongTien(value: PHUONGTIENCHIHUYCLASS10ASS01(1)), caiDatUuTien: true).catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      caiDatTrangThaiPhuongTienSS060(value: TrangThaiPhuongTien(value: PHUONGTIENCHIHUYCLASS10ASS01(capDo: 1)), caiDatUuTien: true).catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      caiDatTrangThaiPhuongTienSS062(value: TrangThaiPhuongTien(value: PHUONGTIENCHIHUYCLASS10ASS01(capDo: 1)), caiDatUuTien: true).catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      caiDatTrangThaiPhuongTienSS064(value: TrangThaiPhuongTien(value: PHUONGTIENCHIHUYCLASS10ASS01(capDo: 1)), caiDatUuTien: true).catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      caiDatTrangThaiPhuongTienSS066(value: TrangThaiPhuongTien(value: PHUONGTIENCHIHUYCLASS10ASS01(capDo: 1)), caiDatUuTien: true).catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      caiDatTrangThaiPhuongTienSS068(value: TrangThaiPhuongTien(value: PHUONGTIENCHIHUYCLASS10ASS01(capDo: 1)), caiDatUuTien: true).catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
 
       /// -----
       /// TODO: [26] => [30]
       /// -----
-      caiDatTrangThaiPhuongTienSS070(value: TrangThaiPhuongTien(value: PHUONGTIENCHIHUYCLASS10ASS01(1)), caiDatUuTien: true).catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
-      caiDatTrangThaiPhuongTienSS072(value: TrangThaiPhuongTien(value: PHUONGTIENCHIHUYCLASS10ASS01(1)), caiDatUuTien: true).catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
-      caiDatTrangThaiPhuongTienSS074(value: TrangThaiPhuongTien(value: PHUONGTIENCHIHUYCLASS10ASS01(1)), caiDatUuTien: true).catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
-      caiDatTrangThaiPhuongTienSS076(value: TrangThaiPhuongTien(value: PHUONGTIENCHIHUYCLASS10ASS01(1)), caiDatUuTien: true).catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
-      caiDatTrangThaiPhuongTienSS078(value: TrangThaiPhuongTien(value: PHUONGTIENCHIHUYCLASS10ASS01(1)), caiDatUuTien: true).catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      caiDatTrangThaiPhuongTienSS070(value: TrangThaiPhuongTien(value: PHUONGTIENCHIHUYCLASS10ASS01(capDo: 1)), caiDatUuTien: true).catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      caiDatTrangThaiPhuongTienSS072(value: TrangThaiPhuongTien(value: PHUONGTIENCHIHUYCLASS10ASS01(capDo: 1)), caiDatUuTien: true).catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      caiDatTrangThaiPhuongTienSS074(value: TrangThaiPhuongTien(value: PHUONGTIENCHIHUYCLASS10ASS01(capDo: 1)), caiDatUuTien: true).catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      caiDatTrangThaiPhuongTienSS076(value: TrangThaiPhuongTien(value: PHUONGTIENCHIHUYCLASS10ASS01(capDo: 1)), caiDatUuTien: true).catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      caiDatTrangThaiPhuongTienSS078(value: TrangThaiPhuongTien(value: PHUONGTIENCHIHUYCLASS10ASS01(capDo: 1)), caiDatUuTien: true).catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
     ]);
 
     await caiDatBangDieuKhienGiaiDoanThuocDoiHinh(value: BANGDIEUKHIENGIAIDOANTHUOCDOIHINHTUANTRATRINHSAT(), caiDatUuTien: true);

@@ -27,7 +27,7 @@ class MANHINHTHANHPHANSSAAAA extends StatefulWidget {
   /// -----
   /// TODO:
   /// -----
-  final QuanLyTrangThaiTongQuat? trangThaiTongQuat;
+  final GlobalStateManagementSystem? trangThaiTongQuat;
 
   @override
   State<MANHINHTHANHPHANSSAAAA> createState() => _MANHINHTHANHPHANSSAAAAState();
@@ -99,7 +99,7 @@ class _MANHINHTHANHPHANSSAAAAState extends State<MANHINHTHANHPHANSSAAAA> {
   Widget build(BuildContext context) {
 
     _khungManHinhChinh ??= KHUNGMANHINHCHINH(
-      globalState: widget.trangThaiTongQuat,
+      globalStateManagementSystem: widget.trangThaiTongQuat,
       sizeDx: widget.trangThaiTongQuat?.getThietLapTongQuat?.getChieuRongManHinhPhiVatLy ?? KichThuocTienIchCoBan.maxWidth(context),
       sizeDy: widget.trangThaiTongQuat?.getThietLapTongQuat?.getChieuCaoManHinhPhiVatLy ?? KichThuocTienIchCoBan.maxHeight(context),
     );

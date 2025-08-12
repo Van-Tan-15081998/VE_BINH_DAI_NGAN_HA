@@ -4,7 +4,7 @@ import 'package:pkg_dinh_nghia_ss024/pkg_dinh_nghia_ss024_exp.dart';
 /// -----
 /// TODO: Quản Lý Trạng Thái Tổng Quát Bản Đồ Chiến Đấu
 /// -----
-class QUANLYTRANGTHAITONGQUATBANDOCHIENDAU with CauTrucThucThiCoBan {
+class GlobalStateManagementSystemBANDOCHIENDAU with CauTrucThucThiCoBan {
   /// -----
   /// TODO: Attach Root
   /// -----

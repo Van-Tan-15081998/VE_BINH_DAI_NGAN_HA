@@ -11,21 +11,17 @@ import 'package:pkg_khung_man_hinh_ss020000/pkg_khung_man_hinh_ss020000_exp.dart
 /// -----
 /// TODO: Thành Phần Văn Bản Số Học Thuộc Cấp
 /// -----
-class THANHPHANVANBANSOHOCTHUOCCAP extends TextComponent
-    with HasVisibility, CauTrucThucThiCoBan {
+class THANHPHANVANBANSOHOCTHUOCCAP extends TextComponent with HasVisibility, CauTrucThucThiCoBan {
   /// -----
   /// TODO:
   /// -----
-  QuanLyTrangThaiTongQuat? _globalState;
-  QuanLyTrangThaiTongQuat? get getGlobalState => _globalState;
-  void onVoidCaiDatGlobalState({
-    required QuanLyTrangThaiTongQuat? value,
-    bool? caiDatUuTien,
-  }) {
+  GlobalStateManagementSystem? _globalStateManagementSystem;
+  GlobalStateManagementSystem? get getGlobalStateManagementSystem => _globalStateManagementSystem;
+  void onSetGlobalStateManagementSystem({required GlobalStateManagementSystem? value, bool? caiDatUuTien}) {
     if (caiDatUuTien == true) {
-      _globalState = value;
+      _globalStateManagementSystem = value;
     } else {
-      _globalState ??= value;
+      _globalStateManagementSystem ??= value;
     }
 
     return;
@@ -36,10 +32,7 @@ class THANHPHANVANBANSOHOCTHUOCCAP extends TextComponent
   /// -----
   KHUNGMANHINHGAMECOSO? _gameController;
   KHUNGMANHINHGAMECOSO? get getGameController => _gameController;
-  void onVoidCaiDatGameController({
-    required KHUNGMANHINHGAMECOSO? value,
-    bool? caiDatUuTien,
-  }) {
+  void onVoidCaiDatGameController({required KHUNGMANHINHGAMECOSO? value, bool? caiDatUuTien}) {
     if (caiDatUuTien == true) {
       _gameController = value;
     } else {
@@ -53,12 +46,8 @@ class THANHPHANVANBANSOHOCTHUOCCAP extends TextComponent
   /// TODO:
   /// -----
   THANHPHANMANHINHTHUOCCAPCOBAN? _thanhPhanQuanLyThuocCapTrucTiep;
-  THANHPHANMANHINHTHUOCCAPCOBAN? get getThanhPhanQuanLyThuocCapTrucTiep =>
-      _thanhPhanQuanLyThuocCapTrucTiep;
-  void onVoidCaiDatThanhPhanQuanLyThuocCapTrucTiep({
-    required THANHPHANMANHINHTHUOCCAPCOBAN? value,
-    bool? caiDatUuTien,
-  }) {
+  THANHPHANMANHINHTHUOCCAPCOBAN? get getThanhPhanQuanLyThuocCapTrucTiep => _thanhPhanQuanLyThuocCapTrucTiep;
+  void onVoidCaiDatThanhPhanQuanLyThuocCapTrucTiep({required THANHPHANMANHINHTHUOCCAPCOBAN? value, bool? caiDatUuTien}) {
     if (caiDatUuTien == true) {
       _thanhPhanQuanLyThuocCapTrucTiep = value;
     } else {
@@ -110,6 +99,8 @@ class THANHPHANVANBANSOHOCTHUOCCAP extends TextComponent
       _positionDx ??= value;
     }
 
+    position.setValues((getPositionDx ?? 1.0), (getPositionDy ?? 1.0));
+
     return;
   }
 
@@ -125,6 +116,8 @@ class THANHPHANVANBANSOHOCTHUOCCAP extends TextComponent
       _positionDy ??= value;
     }
 
+    position.setValues((getPositionDx ?? 1.0), (getPositionDy ?? 1.0));
+
     return;
   }
 
@@ -136,11 +129,78 @@ class THANHPHANVANBANSOHOCTHUOCCAP extends TextComponent
   void onVoidCaiDatVanBan({required double? value, bool? caiDatUuTien}) {
     if (caiDatUuTien == true) {
       _vanBan = value;
+
+      if (getVanBan == 0) {
+        text = '';
+        return;
+      }
+
+      text = _vanBan?.floor().toString() ?? '';
     } else {
       _vanBan ??= value;
+
+      if (getVanBan == 0) {
+        text = '';
+        return;
+      }
+
+      text = _vanBan?.floor().toString() ?? '';
     }
 
     ///
+    return;
+  }
+
+  bool _caiDatUuTienAnchor = false;
+  void onVoidCaiDatAnchorCenterRight() {
+    anchor = Anchor.centerRight;
+    _caiDatUuTienAnchor = true;
+  }
+
+  void onVoidCaiDatAnchorCenter() {
+    anchor = Anchor.center;
+    _caiDatUuTienAnchor = true;
+  }
+
+  /// -----
+  /// TODO: FlameGame Parent Component
+  /// -----
+  Component? _flameGameParentComponent;
+  Component? get getFlameGameParentComponent => _flameGameParentComponent;
+  void onCaiDatFlameGameParentComponent({required Component? value, bool? isPriorityOverride}) {
+    if (isPriorityOverride == true) {
+      _flameGameParentComponent = value;
+    } else {
+      _flameGameParentComponent ??= value;
+    }
+
+    ///
+    return;
+  }
+
+  /// -----
+  /// TODO: Parent Component
+  /// -----
+  Component? _parentComponent;
+  Component? get getParentComponent => _parentComponent;
+  void onCaiDatParentComponent({required Component? value, bool? isPriorityOverride}) {
+    if (isPriorityOverride == true) {
+      _parentComponent = value;
+    } else {
+      _parentComponent ??= value;
+    }
+
+    ///
+    return;
+  }
+
+  Future<void> onAddToParent() async {
+    if (getFlameGameParentComponent != null && isMounted == false) {
+      await getFlameGameParentComponent?.add(this);
+    } else if (getParentComponent != null && isMounted == false) {
+      await getParentComponent?.add(this);
+    }
+
     return;
   }
 
@@ -153,7 +213,7 @@ class THANHPHANVANBANSOHOCTHUOCCAP extends TextComponent
   /// TODO:
   /// -----
   THANHPHANVANBANSOHOCTHUOCCAP({
-    required QuanLyTrangThaiTongQuat? globalState,
+    required GlobalStateManagementSystem? globalStateManagementSystem,
     required KHUNGMANHINHGAMECOSO? gameController,
     required THANHPHANMANHINHTHUOCCAPCOBAN? thanhPhanQuanLyThuocCapTrucTiep,
     required double? sizeDx,
@@ -161,18 +221,17 @@ class THANHPHANVANBANSOHOCTHUOCCAP extends TextComponent
     required double? positionDx,
     required double? positionDy,
   }) {
-    onVoidCaiDatGlobalState(value: globalState, caiDatUuTien: true);
+    onSetGlobalStateManagementSystem(value: globalStateManagementSystem, caiDatUuTien: true);
     onVoidCaiDatGameController(value: gameController, caiDatUuTien: true);
-    onVoidCaiDatThanhPhanQuanLyThuocCapTrucTiep(
-      value: thanhPhanQuanLyThuocCapTrucTiep,
-      caiDatUuTien: true,
-    );
+    onVoidCaiDatThanhPhanQuanLyThuocCapTrucTiep(value: thanhPhanQuanLyThuocCapTrucTiep, caiDatUuTien: true);
     onVoidCaiDatSizeDx(value: sizeDx, caiDatUuTien: true);
     onVoidCaiDatSizeDy(value: sizeDy, caiDatUuTien: true);
-    onVoidCaiDatPositionDx(value: positionDx, caiDatUuTien: true);
+    // onVoidCaiDatPositionDx(value: positionDx, caiDatUuTien: true);
+    // onVoidCaiDatPositionDy(value: positionDy, caiDatUuTien: true);
+    onVoidCaiDatPositionDx(value: (sizeDx ?? 0) - 10.0, caiDatUuTien: true);
     onVoidCaiDatPositionDy(value: positionDy, caiDatUuTien: true);
 
-    onVoidCaiDatVanBan(value: 100000, caiDatUuTien: true);
+    onVoidCaiDatVanBan(value: 0, caiDatUuTien: true);
   }
 
   /// -----
@@ -182,26 +241,19 @@ class THANHPHANVANBANSOHOCTHUOCCAP extends TextComponent
   FutureOr<void> onLoad() async {
     super.onLoad();
 
-    anchor = Anchor.centerLeft;
+    if (_caiDatUuTienAnchor == false) {
+      anchor = Anchor.centerRight;
+    }
 
-    text = '100.000';
+    text = '0';
 
-    textRenderer = TextPaint(
-      style: TextStyle(
-        color: Color(0xFFFFFFFF),
-        fontSize: 14,
-        fontWeight: FontWeight.w500,
-      ),
-    );
+    textRenderer = TextPaint(style: TextStyle(color: Color(0xFFFFFFFF), fontSize: 14, fontWeight: FontWeight.w500));
 
     if (getKiemTraHienThi == null) {
       onVoidCaiDatKiemTraHienThi(value: false);
     }
 
-    position.setValues(
-      (getPositionDx ?? 1.0) - (getSizeDy ?? 1.0) / 3,
-      (getPositionDy ?? 1.0),
-    );
+    // position.setValues((getPositionDx ?? 1.0) - (getSizeDy ?? 1.0) / 3, (getPositionDy ?? 1.0));
 
     size.setValues((getSizeDx ?? 1.0), (18.0));
 
@@ -217,9 +269,9 @@ class THANHPHANVANBANSOHOCTHUOCCAP extends TextComponent
     // TODO: implement update
     super.update(dt);
 
-    if (text != (getVanBan?.toString() ?? '')) {
-      text = getVanBan?.toString() ?? '';
-    }
+    // if (text != (getVanBan?.toString() ?? '')) {
+    //   text = getVanBan?.toString() ?? '';
+    // }
   }
 
   /// -----
@@ -231,8 +283,7 @@ class THANHPHANVANBANSOHOCTHUOCCAP extends TextComponent
     if (getKiemTraHienThi != value) {
       _kiemTraHienThi = value;
 
-      if ((_kiemTraHienThi == false || _kiemTraHienThi == null) &&
-          isVisible == true) {
+      if ((_kiemTraHienThi == false || _kiemTraHienThi == null) && isVisible == true) {
         isVisible = false;
       } else if (_kiemTraHienThi == true && isVisible == false) {
         isVisible = true;
@@ -245,10 +296,7 @@ class THANHPHANVANBANSOHOCTHUOCCAP extends TextComponent
   /// -----
   /// TODO: Add Comp Root
   /// -----
-  Future<void> onAddRoot({
-    required FlameGame? flameGame,
-    required Component? component,
-  }) async {
+  Future<void> onAddRoot({required FlameGame? flameGame, required Component? component}) async {
     /// -----
     /// TODO: Add Comp Root For SubCom
     /// -----
@@ -261,10 +309,7 @@ class THANHPHANVANBANSOHOCTHUOCCAP extends TextComponent
   /// -----
   /// TODO: Add Comp Root For SubCom
   /// -----
-  Future<void> onAddRootForSubCom({
-    required FlameGame? flameGame,
-    required Component? component,
-  }) async {
+  Future<void> onAddRootForSubCom({required FlameGame? flameGame, required Component? component}) async {
     ///
     return;
   }

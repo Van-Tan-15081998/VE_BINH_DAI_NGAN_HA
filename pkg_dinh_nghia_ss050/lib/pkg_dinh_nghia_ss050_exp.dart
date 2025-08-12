@@ -185,8 +185,4 @@ export '08_SubDefs/Def90/09_RootDef/class_20000086.dart';
 /// TODO: _____[QUAN_LY_TRANG_THAI_VAT_PHAM_PHAN_THUONG_TONG_QUAT]_____
 export '26_def0026/ADef810_0/09_RootDef/quan_ly_trang_thai_thanh_phan_tong_quat.dart';
 
-/// A Calculator.
-class Calculator {
-  /// Returns [value] plus 1.
-  int addOne(int value) => value + 1;
-}
+

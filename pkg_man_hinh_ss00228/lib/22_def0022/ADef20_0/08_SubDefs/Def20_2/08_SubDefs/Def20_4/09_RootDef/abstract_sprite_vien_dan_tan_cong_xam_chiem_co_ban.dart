@@ -12,7 +12,7 @@ abstract class SPRITEVIENDANTANCONGXAMCHIEMCOBAN extends SpriteAnimationComponen
   /// -----
   /// TODO:
   /// -----
-  SPRITEVIENDANTANCONGXAMCHIEMCOBAN({required QuanLyTrangThaiTongQuat? trangThaiTongQuat}) {
+  SPRITEVIENDANTANCONGXAMCHIEMCOBAN({required GlobalStateManagementSystem? trangThaiTongQuat}) {
     caiDatTrangThaiTongQuat(value: trangThaiTongQuat);
   }
 
@@ -39,9 +39,9 @@ abstract class SPRITEVIENDANTANCONGXAMCHIEMCOBAN extends SpriteAnimationComponen
   /// -----
   /// TODO: Quản Lý Trạng Thái Tổng Quát
   /// -----
-  QuanLyTrangThaiTongQuat? _trangThaiTongQuat;
-  QuanLyTrangThaiTongQuat? get getTrangThaiTongQuat => _trangThaiTongQuat;
-  Future<void> caiDatTrangThaiTongQuat({required QuanLyTrangThaiTongQuat? value}) async {
+  GlobalStateManagementSystem? _trangThaiTongQuat;
+  GlobalStateManagementSystem? get getTrangThaiTongQuat => _trangThaiTongQuat;
+  Future<void> caiDatTrangThaiTongQuat({required GlobalStateManagementSystem? value}) async {
     _trangThaiTongQuat ??= value;
     return;
   }
@@ -89,12 +89,12 @@ abstract class SPRITEVIENDANTANCONGXAMCHIEMCOBAN extends SpriteAnimationComponen
     return;
   }
 
-  Future<bool> kiemTraTanXuatCapNhat() async {
+  bool onBoolKiemTraTanXuatCapNhat() {
     // if (getBienTangTienGiamTanXuatCapNhat % getBoiSoCapDoGiamTanXuatCapNhat == 0) {
     //   return true;
     // }
 
-    if (await getTrangThaiTongQuat?.getThietLapTongQuat?.onKiemTraChoPhepCapNhatTheoTocDoKhungHinh(
+    if (getTrangThaiTongQuat?.getThietLapTongQuat?.onKiemTraChoPhepCapNhatTheoTocDoKhungHinh(
           maDinhDanh: '[SPRITE_ANIMATION_CO_BAN]',
           chiSoTangTienGiamTanXuatCapNhat: _bienTangTienGiamTanXuatCapNhat,
         ) ==
@@ -131,7 +131,7 @@ abstract class SPRITEVIENDANTANCONGXAMCHIEMCOBAN extends SpriteAnimationComponen
     /// -----
     // await onGiaiPhongTaiNguyen();
     //
-    // if (await getMoHinh?.getMoHinh?.getTrangThaiTonTai?.isKhoiTaoHoanTat() == true) {
+    // if (await getMoHinh?.getMoHinh?.getTrangThaiTonTai?.onCheckBoolKhoiTaoHoanTat() == true) {
     //   if (getDonViSprite?.getSpriteAnimation == null) {
     //     final random = Random();
     //     int randomNumber = random.nextInt(3) + 1; // tạo số từ 1 đến 3

@@ -18,9 +18,9 @@ class _ManHinhKhoiDongQuanLyTrangThaiState extends State<ManHinhKhoiDongQuanLyTr
   ///
   /// TODO:
   ///
-  QuanLyTrangThaiTongQuat? _trangThaiTongQuat;
-  QuanLyTrangThaiTongQuat? get getTrangThaiTongQuat => _trangThaiTongQuat;
-  Future<void> caiDatTrangThaiTongQuat({required QuanLyTrangThaiTongQuat? value}) async {
+  GlobalStateManagementSystem? _trangThaiTongQuat;
+  GlobalStateManagementSystem? get getTrangThaiTongQuat => _trangThaiTongQuat;
+  Future<void> caiDatTrangThaiTongQuat({required GlobalStateManagementSystem? value}) async {
     _trangThaiTongQuat ??= value;
     return;
   }
@@ -95,7 +95,7 @@ class _ManHinhKhoiDongQuanLyTrangThaiState extends State<ManHinhKhoiDongQuanLyTr
         _chieuRongManHinh = constraints.maxWidth;
         _chieuCaoManHinh = constraints.maxHeight;
 
-        final QuanLyTrangThaiTongQuat trangThaiTongQuat = Provider.of<QuanLyTrangThaiTongQuat>(context, listen: false);
+        final GlobalStateManagementSystem trangThaiTongQuat = Provider.of<GlobalStateManagementSystem>(context, listen: false);
         _trangThaiTongQuat ??= trangThaiTongQuat;
 
         ///

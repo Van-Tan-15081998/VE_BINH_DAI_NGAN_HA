@@ -12,8 +12,9 @@ abstract class SPRITETHANHNGANGCHISOMAUCOBAN extends SpriteAnimationComponent wi
   /// -----
   /// TODO:
   /// -----
-  SPRITETHANHNGANGCHISOMAUCOBAN({required QuanLyTrangThaiTongQuat? trangThaiTongQuat}) {
+  SPRITETHANHNGANGCHISOMAUCOBAN({required GlobalStateManagementSystem? trangThaiTongQuat, required Component? parentComponent}) {
     caiDatTrangThaiTongQuat(value: trangThaiTongQuat);
+    caiDatParentComponent(value: parentComponent);
   }
 
   String? _nguonHinhAnhThanhNgangChiSoMauHienHanh;
@@ -53,19 +54,47 @@ abstract class SPRITETHANHNGANGCHISOMAUCOBAN extends SpriteAnimationComponent wi
   }
 
   /// -----
+  /// TODO:
+  /// -----
+  Component? _parentComponent;
+  Component? get getParentComponent => _parentComponent;
+  Future<void> caiDatParentComponent({required Component? value}) async {
+    _parentComponent ??= value;
+    return;
+  }
+
+  Future<void> onAddToParent() async {
+    if (getParentComponent != null && isMounted == false) {
+      await Future.delayed(Duration.zero);
+      await getParentComponent?.add(this);
+    }
+
+    return;
+  }
+
+  void onRemoveFromParent() {
+    if (isMounted == true) {
+      // await Future.delayed(Duration.zero);
+      removeFromParent();
+    }
+
+    return;
+  }
+
+  /// -----
   /// TODO: Cài Đặt Nguồn Hình Ảnh
   /// -----
   void onVoidCaiDatNguonHinhAnh() {
     onVoidCaiDatNguonHinhAnhThanhNgangChiSoMauHienHanh(
-      value: '../../packages/pkg_man_hinh_ss00230/lib/22_def0022/ADef20_0/07_ImgSrcs/Def00_2/09_RootDef/thanh_ngang_chi_so_mau_hien_hanh.png',
+      value: '../../packages/pkg_man_hinh_ss00230/lib/22_def0022/ADef20_0/07_ImgSrcs/Def00_2/09_RootDef/thanh_ngang_chi_so_mau_hien_hanh.webp',
       caiDatUuTien: true,
     );
     onVoidCaiDatNguonHinhAnhThanhNgangChiSoMauHieuUng(
-      value: '../../packages/pkg_man_hinh_ss00230/lib/22_def0022/ADef20_0/07_ImgSrcs/Def00_2/09_RootDef/thanh_ngang_chi_so_mau_hieu_ung.png',
+      value: '../../packages/pkg_man_hinh_ss00230/lib/22_def0022/ADef20_0/07_ImgSrcs/Def00_2/09_RootDef/thanh_ngang_chi_so_mau_hieu_ung.webp',
       caiDatUuTien: true,
     );
     onVoidCaiDatNguonHinhAnhKhungVienChiSoMau(
-      value: '../../packages/pkg_man_hinh_ss00230/lib/22_def0022/ADef20_0/07_ImgSrcs/Def00_2/09_RootDef/khung_vien_chi_so_mau.png',
+      value: '../../packages/pkg_man_hinh_ss00230/lib/22_def0022/ADef20_0/07_ImgSrcs/Def00_2/09_RootDef/khung_vien_chi_so_mau.webp',
       caiDatUuTien: true,
     );
   }
@@ -87,7 +116,7 @@ abstract class SPRITETHANHNGANGCHISOMAUCOBAN extends SpriteAnimationComponent wi
     position.setValues(getDx ?? 0, getDy ?? 0);
     size.setValues(getChieuRong ?? 0, getChieuCao ?? 0);
 
-    onVoidCaiDatDonViSprite(value: DonViSpriteCoBan(maDinhDanh: null, nguonHinhAnh: null,  spriteAnimation: null, sprite: null));
+    onVoidCaiDatDonViSprite(value: DonViSpriteCoBan(maDinhDanh: null, nguonHinhAnh: null, spriteAnimation: null, sprite: null));
 
     onVoidCaiDatMoHinhChiTiet();
 
@@ -130,8 +159,6 @@ abstract class SPRITETHANHNGANGCHISOMAUCOBAN extends SpriteAnimationComponent wi
       add(_khungVienChiSoMau!);
     }
 
-
-
     return;
   }
 
@@ -145,9 +172,9 @@ abstract class SPRITETHANHNGANGCHISOMAUCOBAN extends SpriteAnimationComponent wi
   /// -----
   /// TODO: Quản Lý Trạng Thái Tổng Quát
   /// -----
-  QuanLyTrangThaiTongQuat? _trangThaiTongQuat;
-  QuanLyTrangThaiTongQuat? get getTrangThaiTongQuat => _trangThaiTongQuat;
-  Future<void> caiDatTrangThaiTongQuat({required QuanLyTrangThaiTongQuat? value}) async {
+  GlobalStateManagementSystem? _trangThaiTongQuat;
+  GlobalStateManagementSystem? get getTrangThaiTongQuat => _trangThaiTongQuat;
+  Future<void> caiDatTrangThaiTongQuat({required GlobalStateManagementSystem? value}) async {
     _trangThaiTongQuat ??= value;
     return;
   }
@@ -208,16 +235,18 @@ abstract class SPRITETHANHNGANGCHISOMAUCOBAN extends SpriteAnimationComponent wi
   bool? _kiemTraHienThi;
   bool? get getKiemTraHienThi => _kiemTraHienThi;
   void onVoidCaiDatKiemTraHienThi({required bool? value}) {
-    _kiemTraHienThi = value;
+    if (_kiemTraHienThi != value) {
+      _kiemTraHienThi = value;
 
-    if (_kiemTraHienThi == false) {
-      onVoidCaiDatChiSoMauHieuUng(value: null);
-    }
+      if (_kiemTraHienThi == false) {
+        onVoidCaiDatChiSoMauHieuUng(value: null);
+      }
 
-    if (_kiemTraHienThi == false || _kiemTraHienThi == null) {
-      isVisible = false;
-    } else if (_kiemTraHienThi == true) {
-      isVisible = true;
+      if (_kiemTraHienThi == false || _kiemTraHienThi == null) {
+        isVisible = false;
+      } else if (_kiemTraHienThi == true) {
+        isVisible = true;
+      }
     }
 
     return;
@@ -427,35 +456,49 @@ abstract class SPRITETHANHNGANGCHISOMAUCOBAN extends SpriteAnimationComponent wi
   /// -----
   /// TODO: Cập Nhật Position Và Size
   /// -----
+
+  MoHinhPhuongTienTongQuat? phuongTienCapNhat;
+
+  double duLieuJsonChieuRongThanPhuongTien = 0;
+  double duLieuJsonChieuCaoThanPhuongTien = 0;
+  double duLieuJsonDxTrongTamPhuongTien = 0;
+  double duLieuJsonDyTrongTamPhuongTien = 0;
+
+  int duLieuJsonChiSoMauToiDaPhuongTien = 0;
+  int duLieuJsonChiSoMauToiDaVanHanhPhuongTien = 0;
+
   void onVoidCapNhatPositionSizeValues(double dt) {
     if (getKiemTraHienThi == true) {
       ///
       /// TODO:
       ///
-      MoHinhPhuongTienTongQuat? phuongTien = getMoHinh?.getMoHinh;
+      phuongTienCapNhat = getMoHinh?.getMoHinh;
 
-      double dx = phuongTien?.getDuLieuJsonLamPhang['[DX_TRONG_TAM]'] ?? 1.0;
-      double dy = phuongTien?.getDuLieuJsonLamPhang['[DY_TRONG_TAM]'] ?? 1.0;
-      double chieuCaoThan = phuongTien?.getDuLieuJsonLamPhang['[CHIEU_CAO_THAN]'] ?? 1.0;
-      double chieuRongThan = phuongTien?.getDuLieuJsonLamPhang['[CHIEU_RONG_THAN]'] ?? 1.0;
+      duLieuJsonDxTrongTamPhuongTien = phuongTienCapNhat?.getDuLieuJsonLamPhang['[DX_TRONG_TAM]'] ?? 1.0;
+      duLieuJsonDyTrongTamPhuongTien = phuongTienCapNhat?.getDuLieuJsonLamPhang['[DY_TRONG_TAM]'] ?? 1.0;
+      duLieuJsonChieuCaoThanPhuongTien = phuongTienCapNhat?.getDuLieuJsonLamPhang['[CHIEU_CAO_THAN]'] ?? 1.0;
+      duLieuJsonChieuRongThanPhuongTien = phuongTienCapNhat?.getDuLieuJsonLamPhang['[CHIEU_RONG_THAN]'] ?? 1.0;
 
       // int tongChiSoMau = phuongTien?.getTrangThaiTrongChienDau?.getTrangThaiPhuongTienNhanSatThuong?.getSoLanNhanSatThuongToiDa ?? 0;
       // int chiSoMauHienHanh = phuongTien?.getTrangThaiTrongChienDau?.getTrangThaiPhuongTienNhanSatThuong?.getSoLanNhanSatThuong ?? 0;
 
-      int tongChiSoMau = (phuongTien?.getDuLieuJsonLamPhang['[CHI_SO_MAU_TOI_DA]'] ?? 0).floor();
-      int chiSoMauHienHanh = (phuongTien?.getDuLieuJsonLamPhang['[CHI_SO_MAU_TOI_DA_VAN_HANH]'] ?? 0).floor();
+      duLieuJsonChiSoMauToiDaPhuongTien = (phuongTienCapNhat?.getDuLieuJsonLamPhang['[CHI_SO_MAU_TOI_DA]'] ?? 0).floor();
+      duLieuJsonChiSoMauToiDaVanHanhPhuongTien = (phuongTienCapNhat?.getDuLieuJsonLamPhang['[CHI_SO_MAU_TOI_DA_VAN_HANH]'] ?? 0).floor();
 
       // chiSoMauHienHanh = tongChiSoMau - chiSoMauHienHanh;
 
-      if (dx.isNaN == false && dy.isNaN == false && chieuCaoThan.isNaN == false && chieuRongThan.isNaN == false) {
+      if (duLieuJsonDxTrongTamPhuongTien.isNaN == false &&
+          duLieuJsonDyTrongTamPhuongTien.isNaN == false && //
+          duLieuJsonChieuCaoThanPhuongTien.isNaN == false &&
+          duLieuJsonChieuRongThanPhuongTien.isNaN == false) {
         onVoidCapNhatChiSoMau(
           dt: dt,
-          dx: dx,
-          dy: dy,
-          tongChiSoMau: tongChiSoMau * 1.0,
-          chiSoMauHienHanh: chiSoMauHienHanh * 1.0,
-          chieuRongPhuongTienDich: chieuRongThan,
-          chieuCaoPhuongTienDich: chieuCaoThan,
+          dx: duLieuJsonDxTrongTamPhuongTien,
+          dy: duLieuJsonDyTrongTamPhuongTien,
+          tongChiSoMau: duLieuJsonChiSoMauToiDaPhuongTien.floorToDouble(),
+          chiSoMauHienHanh: duLieuJsonChiSoMauToiDaVanHanhPhuongTien.floorToDouble(),
+          chieuRongPhuongTienDich: duLieuJsonChieuCaoThanPhuongTien,
+          chieuCaoPhuongTienDich: duLieuJsonChieuRongThanPhuongTien,
         );
       }
     }
@@ -479,7 +522,7 @@ abstract class SPRITETHANHNGANGCHISOMAUCOBAN extends SpriteAnimationComponent wi
   }
 
   @override
-  FutureOr<void> update(double dt) async {
+  void update(double dt) {
     super.update(dt);
 
     onVoidCaiDatTuDongBienTangTienGiamTanXuatCapNhat();

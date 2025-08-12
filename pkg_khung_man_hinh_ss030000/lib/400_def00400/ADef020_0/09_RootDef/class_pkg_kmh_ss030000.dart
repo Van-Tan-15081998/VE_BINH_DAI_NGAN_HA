@@ -18,7 +18,7 @@ class KHUNGMANHINHSS030000 extends THANHPHANMANHINHDRAGTHUOCCAPCOBAN {
   /// TODO:
   /// -----
   KHUNGMANHINHSS030000({
-    required super.globalState,
+    required super.globalStateManagementSystem,
     required super.gameController,
     required super.thanhPhanQuanLyThuocCapTrucTiep,
     required super.sizeDx,
@@ -44,7 +44,7 @@ class KHUNGMANHINHSS030000 extends THANHPHANMANHINHDRAGTHUOCCAPCOBAN {
       await Future.wait([
         onCaiDatQuanLyThanhPhanManHinhThuocCap(
           value: QUANLYTHANHPHANMANHINHTHUOCCAP(
-            globalState: getGlobalState,
+            globalStateManagementSystem: getGlobalStateManagementSystem,
             gameController: getGameController,
             thanhPhanQuanLyThuocCapTrucTiep: null,
             sizeDx: getSizeDx,
@@ -53,7 +53,7 @@ class KHUNGMANHINHSS030000 extends THANHPHANMANHINHDRAGTHUOCCAPCOBAN {
         ).catchError((e) => null),
         onCaiDatQuanLyThanhPhanNutBamThuocCap(
           value: QUANLYTHANHPHANNUTBAMTHUOCCAP(
-            globalState: getGlobalState,
+            globalStateManagementSystem: getGlobalStateManagementSystem,
             gameController: getGameController,
             thanhPhanQuanLyThuocCapTrucTiep: null,
             sizeDx: getSizeDx,
@@ -62,7 +62,7 @@ class KHUNGMANHINHSS030000 extends THANHPHANMANHINHDRAGTHUOCCAPCOBAN {
         ).catchError((e) => null),
         onCaiDatQuanLyThanhPhanVanBanThuocCap(
           value: QUANLYTHANHPHANVANBANTHUOCCAP(
-            globalState: getGlobalState,
+            globalStateManagementSystem: getGlobalStateManagementSystem,
             gameController: getGameController,
             thanhPhanQuanLyThuocCapTrucTiep: null,
             sizeDx: getSizeDx,
@@ -71,7 +71,7 @@ class KHUNGMANHINHSS030000 extends THANHPHANMANHINHDRAGTHUOCCAPCOBAN {
         ).catchError((e) => null),
         onCaiDatQuanLyThanhPhanHinhAnhThuocCap(
           value: QUANLYTHANHPHANHINHANHTHUOCCAP(
-            globalState: getGlobalState,
+            globalStateManagementSystem: getGlobalStateManagementSystem,
             gameController: getGameController,
             thanhPhanQuanLyThuocCapTrucTiep: null,
             sizeDx: getSizeDx,
@@ -80,7 +80,7 @@ class KHUNGMANHINHSS030000 extends THANHPHANMANHINHDRAGTHUOCCAPCOBAN {
         ).catchError((e) => null),
         onCaiDatQuanLyThanhPhanTichHopThuocCap(
           value: QUANLYTHANHPHANTICHHOPTHUOCCAP(
-            globalState: getGlobalState,
+            globalStateManagementSystem: getGlobalStateManagementSystem,
             gameController: getGameController,
             thanhPhanQuanLyThuocCapTrucTiep: null,
             sizeDx: getSizeDx,
@@ -147,7 +147,7 @@ class KHUNGMANHINHSS030000 extends THANHPHANMANHINHDRAGTHUOCCAPCOBAN {
 
     // Offset cursorOffset = event.canvasStartPosition.toOffset();
     Offset offsetDelta = event.localDelta.toOffset(); // Là một Vector2(dx, dy)
-    getGlobalState?.getChienDauCoTongQuat?.getDieuKhienDiChuyenChienDauCo
+    getGlobalStateManagementSystem?.getChienDauCoTongQuat?.getDieuKhienDiChuyenChienDauCo
         ?.onVoidCapNhatViTri(newPosition: offsetDelta);
 
     return;

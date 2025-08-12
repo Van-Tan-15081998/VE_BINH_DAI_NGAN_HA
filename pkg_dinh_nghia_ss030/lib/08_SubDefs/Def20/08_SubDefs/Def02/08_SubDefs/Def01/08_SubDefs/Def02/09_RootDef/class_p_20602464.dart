@@ -113,7 +113,7 @@ class MoHinhThamSoBayPhuongTien {
 
   ThoiGianKichHoatCoBan? get getThoiGianKichHoat => _thoiGianKichHoat;
 
-  Future<void> caiDatThoiGianKichHoat({required ThoiGianKichHoatCoBan? value}) async {
+  Future<void> onVoidCaiDatThoiGianKichHoat({required ThoiGianKichHoatCoBan? value}) async {
     _thoiGianKichHoat = value;
     return;
   }
@@ -177,7 +177,7 @@ class MoHinhThamSoBayPhuongTien {
     /// -----
     /// TODO:
     /// -----
-    caiDatThoiGianKichHoat(value: thoiGianKichHoat);
+    onVoidCaiDatThoiGianKichHoat(value: thoiGianKichHoat);
 
     /// -----
     /// TODO:
@@ -213,7 +213,7 @@ class MoHinhThamSoBayPhuongTien {
     /// -----
     /// TODO:
     /// -----
-    await caiDatThoiGianKichHoat(value: thoiGianKichHoat);
+    onVoidCaiDatThoiGianKichHoat(value: thoiGianKichHoat);
 
     /// -----
     /// TODO:

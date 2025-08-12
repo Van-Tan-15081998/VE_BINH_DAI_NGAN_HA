@@ -1,4 +1,5 @@
-
+import 'dart:math';
+import 'dart:ui';
 import 'package:pkg_dinh_nghia_ss020/pkg_dinh_nghia_ss020_exp.dart';
 import 'package:pkg_dinh_nghia_ss030/pkg_dinh_nghia_ss030_exp.dart';
 import 'package:pkg_dinh_nghia_ss050/pkg_dinh_nghia_ss050_exp.dart';
@@ -12,13 +13,13 @@ abstract class VienDanCoBan extends VIENDANTANCONGCOBAN {
   /// -----
   /// TODO: Tốc độ bay ban đầu (nguyên bản) của viên đạn
   /// -----
-  TocDoCoBan? _tocDoBayNguyenBan;
-  TocDoCoBan? get getTocDoBayNguyenBan => _tocDoBayNguyenBan;
-  TocDoCoBan get getTocDoBayNguyenBanNotNull => _tocDoBayNguyenBan ?? TocDoBayCoBan.onMacDinh();
-  Future<void> caiDatTocDoBayNguyenBan({required TocDoCoBan? value}) async {
-    _tocDoBayNguyenBan = value;
-    return;
-  }
+  // TocDoCoBan? _tocDoBayNguyenBan;
+  // TocDoCoBan? get getTocDoBayNguyenBan => _tocDoBayNguyenBan;
+  // TocDoCoBan get getTocDoBayNguyenBanNotNull => _tocDoBayNguyenBan ?? TocDoBayCoBan.onMacDinh();
+  // void onVoidCaiDatTocDoBayNguyenBan({required TocDoCoBan? value}) {
+  //   _tocDoBayNguyenBan = value;
+  //   return;
+  // }
 
   /// -----
   /// TODO: Tốc độ bay tăng cường của viên đạn
@@ -26,7 +27,7 @@ abstract class VienDanCoBan extends VIENDANTANCONGCOBAN {
   TocDoBayCoBan? _tocDoBayTangCuong;
   TocDoBayCoBan? get getTocDoBayTangCuong => _tocDoBayTangCuong;
   TocDoBayCoBan get getTocDoBayTangCuongNotNull => _tocDoBayTangCuong ?? TocDoBayCoBan.onMacDinh();
-  Future<void> caiDatTocDoBayTangCuong({required TocDoBayCoBan? value}) async {
+  void onVoidCaiDatTocDoBayTangCuong({required TocDoBayCoBan? value}) {
     _tocDoBayTangCuong = value;
     return;
   }
@@ -71,21 +72,21 @@ abstract class VienDanCoBan extends VIENDANTANCONGCOBAN {
     return;
   }
 
-  double? _dxViTriLayMucTieu;
-  double? get getDxViTriLayMucTieu => _dxViTriLayMucTieu;
-  double get getDxViTriLayMucTieuNotNull => _dxViTriLayMucTieu ?? 0;
-  Future<void> caiDatDxViTriLayMucTieu({required double? value}) async {
-    if (value != null && value != 0) {
-      if (value.isNaN == false && value.isFinite == true) {
-        _dxViTriLayMucTieu = value;
-      } else {
-        _dxViTriLayMucTieu = 0;
-      }
-    } else {
-      _dxViTriLayMucTieu = null;
-    }
-    return;
-  }
+  // double? _dxViTriLayMucTieu;
+  // double? get getDxViTriLayMucTieu => _dxViTriLayMucTieu;
+  // double get getDxViTriLayMucTieuNotNull => _dxViTriLayMucTieu ?? 0;
+  // void onVoidCaiDatDxViTriLayMucTieu({required double? value}) {
+  //   if (value != null && value != 0) {
+  //     if (value.isNaN == false && value.isFinite == true) {
+  //       _dxViTriLayMucTieu = value;
+  //     } else {
+  //       _dxViTriLayMucTieu = 0;
+  //     }
+  //   } else {
+  //     _dxViTriLayMucTieu = null;
+  //   }
+  //   return;
+  // }
 
   /// -----
   /// TODO: Vị Trí Đích - Biên Dưới
@@ -106,21 +107,21 @@ abstract class VienDanCoBan extends VIENDANTANCONGCOBAN {
     return;
   }
 
-  double? _dyViTriLayMucTieu;
-  double? get getDyViTriLayMucTieu => _dyViTriLayMucTieu;
-  double get getDyViTriLayMucTieuNotNull => _dyViTriLayMucTieu ?? 0;
-  Future<void> caiDatDyViTriLayMucTieu({required double? value}) async {
-    if (value != null && value != 0) {
-      if (value.isNaN == false && value.isFinite == true) {
-        _dyViTriLayMucTieu = value;
-      } else {
-        _dyViTriLayMucTieu = 0;
-      }
-    } else {
-      _dyViTriLayMucTieu = null;
-    }
-    return;
-  }
+  // double? _dyViTriLayMucTieu;
+  // double? get getDyViTriLayMucTieu => _dyViTriLayMucTieu;
+  // double get getDyViTriLayMucTieuNotNull => _dyViTriLayMucTieu ?? 0;
+  // void onVoidCaiDatDyViTriLayMucTieu({required double? value}) {
+  //   if (value != null && value != 0) {
+  //     if (value.isNaN == false && value.isFinite == true) {
+  //       _dyViTriLayMucTieu = value;
+  //     } else {
+  //       _dyViTriLayMucTieu = 0;
+  //     }
+  //   } else {
+  //     _dyViTriLayMucTieu = null;
+  //   }
+  //   return;
+  // }
 
   /// -----
   /// TODO: Danh Sách Phương Tiện Hoạt Động Trong Màn Hình
@@ -159,22 +160,22 @@ abstract class VienDanCoBan extends VIENDANTANCONGCOBAN {
   /// -----
   /// TODO:
   /// -----
-  QuanLyTrangThaiDanhSachMoHinhTongQuat? _quanLyTrangThaiDanhSachMoHinh;
-  QuanLyTrangThaiDanhSachMoHinhTongQuat? get getQuanLyTrangThaiDanhSachMoHinh => _quanLyTrangThaiDanhSachMoHinh;
-  Future<void> caiDatQuanLyTrangThaiDanhSachMoHinh({required QuanLyTrangThaiDanhSachMoHinhTongQuat? value}) async {
-    _quanLyTrangThaiDanhSachMoHinh = value;
-    return;
-  }
-
-  /// -----
-  /// TODO:
-  /// -----
-  QuanLyTrangThaiDieuKhienTinhToanTongQuat? _dieuKhienTinhToanTongQuat;
-  QuanLyTrangThaiDieuKhienTinhToanTongQuat? get getDieuKhienTinhToanTongQuat => _dieuKhienTinhToanTongQuat;
-  Future<void> caiDatDieuKhienTinhToanTongQuat({required QuanLyTrangThaiDieuKhienTinhToanTongQuat? value}) async {
-    _dieuKhienTinhToanTongQuat ??= value;
-    return;
-  }
+  // QuanLyTrangThaiDanhSachMoHinhTongQuat? _quanLyTrangThaiDanhSachMoHinh;
+  // QuanLyTrangThaiDanhSachMoHinhTongQuat? get getQuanLyTrangThaiDanhSachMoHinh => _quanLyTrangThaiDanhSachMoHinh;
+  // Future<void> caiDatQuanLyTrangThaiDanhSachMoHinh({required QuanLyTrangThaiDanhSachMoHinhTongQuat? value}) async {
+  //   _quanLyTrangThaiDanhSachMoHinh = value;
+  //   return;
+  // }
+  //
+  // /// -----
+  // /// TODO:
+  // /// -----
+  // QuanLyTrangThaiDieuKhienTinhToanTongQuat? _dieuKhienTinhToanTongQuat;
+  // QuanLyTrangThaiDieuKhienTinhToanTongQuat? get getDieuKhienTinhToanTongQuat => _dieuKhienTinhToanTongQuat;
+  // Future<void> caiDatDieuKhienTinhToanTongQuat({required QuanLyTrangThaiDieuKhienTinhToanTongQuat? value}) async {
+  //   _dieuKhienTinhToanTongQuat ??= value;
+  //   return;
+  // }
 
   VienDanCoBan() {
     caiDatMaDinhDanh(value: '[]');
@@ -190,10 +191,10 @@ abstract class VienDanCoBan extends VIENDANTANCONGCOBAN {
     caiDatBienDuoiViTriLayMucTieu(value: 0);
     caiDatChieuRongManHinhPhiVatLy(value: 0);
     caiDatChieuCaoManHinhPhiVatLy(value: 0);
-    caiDatThoiGianKichHoat(value: ThoiGianKichHoatCoBan.onMacDinh());
+    onVoidCaiDatThoiGianKichHoat(value: ThoiGianKichHoatCoBan.onMacDinh());
     caiDatDinhHuongBay(value: DinhHuongBayCoBan.onMacDinh());
-    caiDatTocDoBayNguyenBan(value: TocDoBayCoBan.onMacDinh());
-    caiDatTocDoBayTangCuong(value: null);
+    onVoidCaiDatTocDoBayNguyenBan(value: TocDoBayCoBan.onMacDinh());
+    onVoidCaiDatTocDoBayTangCuong(value: null);
     caiDatTrangThaiTonTai(value: TrangThaiTonTaiCoBan.onMacDinh());
     caiDatMaDinhDanhDoiTuongMucTieuNguyenBan();
   }
@@ -212,6 +213,51 @@ abstract class VienDanCoBan extends VIENDANTANCONGCOBAN {
     } else {
       khoangCachDiChuyenCapNhat = getTocDoBayNguyenBanNotNull.getKhoangCach();
     }
+
+
+
+    final double dxDiemKetThuc = getDxViTriLayMucTieuNotNull;
+    final double dyDiemKetThuc = getDyViTriLayMucTieuNotNull;
+
+    if (dxDiemKetThuc != 0 && getDyViTriLayMucTieuNotNull != 0) {
+      final Offset diemKetThuc = Offset(dxDiemKetThuc, dyDiemKetThuc);
+
+      final double dxDiemBatDau = getDxTrongTam ?? 0;
+      final double dyDiemBatDau = getDyTrongTam ?? 0;
+      final Offset diemBatDau = Offset(dxDiemBatDau, dyDiemBatDau);
+
+      double step = khoangCachDiChuyenCapNhat;
+
+      final double lengthAB = (diemKetThuc - diemBatDau).distance;
+      // Tính tỉ lệ khoảng cách
+      final double ratio = step / lengthAB;
+      // Tính tọa độ điểm P
+      final Offset pointP = Offset(diemBatDau.dx + ratio * (diemKetThuc.dx - diemBatDau.dx), diemBatDau.dy + ratio * (diemKetThuc.dy - diemBatDau.dy));
+
+      /// -----
+      /// TODO: Cập Nhật Vị Trí Mới (Dx Trọng Tâm)
+      /// -----
+      double dxTrongTamCapNhat = pointP.dx;
+
+      /// -----
+      /// TODO: Cập Nhật Vị Trí Mới (Dy Trọng Tâm)
+      /// -----
+      double dyTrongTamCapNhat = pointP.dy;
+
+      /// -----
+      /// TODO: Cập Nhật Vị Trí Mới
+      /// -----
+      onVoidCaiDatDxTrongTamCapNhatCacGiaTriBien(value: dxTrongTamCapNhat);
+      onVoidCaiDatDyTrongTamCapNhatCacGiaTriBien(value: dyTrongTamCapNhat);
+
+      /// TODO: Cập nhật góc quay của viên đạn so với trục Oy
+      double angle = atan2(diemKetThuc.dx - diemBatDau.dx, diemKetThuc.dy - diemBatDau.dy);
+      angle = angle * (-1); // Điều chỉnh góc để lấy góc với trục y
+      onVoidCaiDatGocXoay(value: angle);
+
+      return;
+    }
+
 
     /// -----
     /// TODO: Cập Nhật Vị Trí Mới (Dx Trọng Tâm)
@@ -261,7 +307,8 @@ abstract class VienDanCoBan extends VIENDANTANCONGCOBAN {
   /// -----
   void onVoidDieuKhienDiChuyenChiTiet() {
     if (onVoidKiemTraDiChuyenThoatManHinh() == true) {
-      getTrangThaiTonTai?.onVoidCaiDatHuyHoanTat();
+      // getTrangThaiTonTai?.onVoidCaiDatHuyHoanTat();
+      onVoidHuyTrangThaiVienDan();
     } else {
       /// -----
       /// TODO:

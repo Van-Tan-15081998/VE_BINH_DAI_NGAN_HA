@@ -16,6 +16,9 @@ dependencies:
   pkg_dinh_nghia_ss050:
     path: ../pkg_dinh_nghia_ss050
 
+  pkg_dinh_nghia_ss020000:
+    path: ../pkg_dinh_nghia_ss020000
+
   animate_do: 3.0.2
   cupertino_icons: ^1.0.6
   #  audioplayers: 6.0.0
@@ -47,70 +50,121 @@ flutter:
 
   # To add assets to your package, add an assets section, like this:
   assets:
+
+    #_____[THANH_PHAN_GAMEUI_SPRITE_ANIMATION_MAC_DINH]_____
+    - lib/28_def0028/ADef010_0/08_SubDefs/Def10_2/07_Resized/Def25/
+    - lib/28_def0028/ADef010_0/08_SubDefs/Def10_2/07_Resized/Def50/
+    - lib/28_def0028/ADef010_0/08_SubDefs/Def10_2/07_Resized/Def90/
+
+    #_____[THANH_PHAN_GAMEUI_SPRITE_MAC_DINH]_____
+    - lib/28_def0028/ADef010_0/08_SubDefs/Def20_2/07_Resized/Def25/
+    - lib/28_def0028/ADef010_0/08_SubDefs/Def20_2/07_Resized/Def50/
+    - lib/28_def0028/ADef010_0/08_SubDefs/Def20_2/07_Resized/Def90/
+
+    - lib/28_def0028/ADef210_0/08_SubDefs/Def210_2/07_Resized/Def50/
     - lib/28_def0028/ADef210_0/08_SubDefs/Def210_2/07_Resized/Def90/
+    - lib/28_def0028/ADef210_0/08_SubDefs/Def220_2/07_Resized/Def50/
     - lib/28_def0028/ADef210_0/08_SubDefs/Def220_2/07_Resized/Def90/
     #
     #
     # _____[NUT_BAM_CHON_TAB_CUA_HANG_KHONG_KICH_HOAT]_____
+    - lib/28_def0028/ADef030_0/08_SubDefs/Def210_2/07_Resized/Def50/
     - lib/28_def0028/ADef030_0/08_SubDefs/Def210_2/07_Resized/Def90/
     # _____[NUT_BAM_CHON_TAB_CUA_HANG_KICH_HOAT]_____
+    - lib/28_def0028/ADef030_0/08_SubDefs/Def220_2/07_Resized/Def50/
     - lib/28_def0028/ADef030_0/08_SubDefs/Def220_2/07_Resized/Def90/
     #
     # _____[NUT_BAM_CHON_TAB_THANH_TICH_KHONG_KICH_HOAT]_____
+    - lib/28_def0028/ADef030_0/08_SubDefs/Def310_2/07_Resized/Def50/
     - lib/28_def0028/ADef030_0/08_SubDefs/Def310_2/07_Resized/Def90/
     # _____[NUT_BAM_CHON_TAB_THANH_TICH_KICH_HOAT]_____
+    - lib/28_def0028/ADef030_0/08_SubDefs/Def320_2/07_Resized/Def50/
     - lib/28_def0028/ADef030_0/08_SubDefs/Def320_2/07_Resized/Def90/
     #
     # _____[NUT_BAM_CHON_TAB_CHIEN_DAU_KHONG_KICH_HOAT]_____
+    - lib/28_def0028/ADef030_0/08_SubDefs/Def510_2/07_Resized/Def50/
     - lib/28_def0028/ADef030_0/08_SubDefs/Def510_2/07_Resized/Def90/
     # _____[NUT_BAM_CHON_TAB_CHIEN_DAU_KICH_HOAT]_____
+    - lib/28_def0028/ADef030_0/08_SubDefs/Def520_2/07_Resized/Def50/
     - lib/28_def0028/ADef030_0/08_SubDefs/Def520_2/07_Resized/Def90/
     #
     # _____[NUT_BAM_CHON_TAB_THU_VIEN_KHONG_KICH_HOAT]_____
+    - lib/28_def0028/ADef030_0/08_SubDefs/Def710_2/07_Resized/Def50/
     - lib/28_def0028/ADef030_0/08_SubDefs/Def710_2/07_Resized/Def90/
     # _____[NUT_BAM_CHON_TAB_THU_VIEN_KICH_HOAT]_____
+    - lib/28_def0028/ADef030_0/08_SubDefs/Def720_2/07_Resized/Def50/
     - lib/28_def0028/ADef030_0/08_SubDefs/Def720_2/07_Resized/Def90/
     #
     # _____[NUT_BAM_CHON_TAB_CAI_DAT_KHONG_KICH_HOAT]_____
+    - lib/28_def0028/ADef030_0/08_SubDefs/Def810_2/07_Resized/Def50/
     - lib/28_def0028/ADef030_0/08_SubDefs/Def810_2/07_Resized/Def90/
     # _____[NUT_BAM_CHON_TAB_CAI_DAT_KICH_HOAT]_____
+    - lib/28_def0028/ADef030_0/08_SubDefs/Def820_2/07_Resized/Def50/
     - lib/28_def0028/ADef030_0/08_SubDefs/Def820_2/07_Resized/Def90/
     #
     # _____[NUT_BAM_CHON_TAB_CHIEN_DAU_CO_KHONG_KICH_HOAT]_____
+    - lib/28_def0028/ADef050_0/08_SubDefs/Def210_2/07_Resized/Def50/
     - lib/28_def0028/ADef050_0/08_SubDefs/Def210_2/07_Resized/Def90/
     # _____[NUT_BAM_CHON_TAB_CHIEN_DAU_CO_KICH_HOAT]_____
+    - lib/28_def0028/ADef050_0/08_SubDefs/Def220_2/07_Resized/Def50/
     - lib/28_def0028/ADef050_0/08_SubDefs/Def220_2/07_Resized/Def90/
     #
     # _____[NUT_BAM_CHON_TAB_BAN_DO_KHONG_KICH_HOAT]_____
+    - lib/28_def0028/ADef050_0/08_SubDefs/Def310_2/07_Resized/Def50/
     - lib/28_def0028/ADef050_0/08_SubDefs/Def310_2/07_Resized/Def90/
     # _____[NUT_BAM_CHON_TAB_BAN_DO_KICH_HOAT]_____
+    - lib/28_def0028/ADef050_0/08_SubDefs/Def320_2/07_Resized/Def50/
     - lib/28_def0028/ADef050_0/08_SubDefs/Def320_2/07_Resized/Def90/
     #
+    - lib/28_def0028/ADef050_0/08_SubDefs/Def410_2/07_Resized/Def50/
+    - lib/28_def0028/ADef050_0/08_SubDefs/Def410_2/07_Resized/Def90/
+    #
+    #
+    - lib/28_def0028/ADef050_0/08_SubDefs/Def420_2/07_Resized/Def50/
+    - lib/28_def0028/ADef050_0/08_SubDefs/Def420_2/07_Resized/Def90/
+    #
+    #
+    - lib/28_def0028/ADef020_0/08_SubDefs/Def020_2/07_Resized/Def50/
+    - lib/28_def0028/ADef020_0/08_SubDefs/Def020_2/07_Resized/Def90/
+    #
+    #
     # _____[NUT_BAM_CHUYEN_CHON_CHI_DINH_TRAI]_____
+    - lib/28_def0028/ADef060_0/08_SubDefs/Def210_2/07_Resized/Def50/
     - lib/28_def0028/ADef060_0/08_SubDefs/Def210_2/07_Resized/Def90/
     # _____[NUT_BAM_CHUYEN_CHON_CHI_DINH_PHAI]_____
+    - lib/28_def0028/ADef060_0/08_SubDefs/Def220_2/07_Resized/Def50/
     - lib/28_def0028/ADef060_0/08_SubDefs/Def220_2/07_Resized/Def90/
     # _____[NUT_BAM_CHON_TAB_THONG_TIN_CHIEN_DAU_CO]_____
+    - lib/28_def0028/ADef060_0/08_SubDefs/Def230_2/07_Resized/Def50/
     - lib/28_def0028/ADef060_0/08_SubDefs/Def230_2/07_Resized/Def90/
     # _____[NUT_BAM_CHON_TAB_NANG_CAP_CHIEN_DAU_CO]_____
+    - lib/28_def0028/ADef060_0/08_SubDefs/Def240_2/07_Resized/Def50/
     - lib/28_def0028/ADef060_0/08_SubDefs/Def240_2/07_Resized/Def90/
     #
     #
     # _____[DANG_CAP_SAO_00E03]_____
+    - lib/28_def0028/ADef062_0/08_SubDefs/Def230_2/07_Resized/Def50/
     - lib/28_def0028/ADef062_0/08_SubDefs/Def230_2/07_Resized/Def90/
     # _____[DANG_CAP_SAO_00D04]_____
+    - lib/28_def0028/ADef062_0/08_SubDefs/Def240_2/07_Resized/Def50/
     - lib/28_def0028/ADef062_0/08_SubDefs/Def240_2/07_Resized/Def90/
     # _____[DANG_CAP_SAO_00C05]_____
+    - lib/28_def0028/ADef062_0/08_SubDefs/Def250_2/07_Resized/Def50/
     - lib/28_def0028/ADef062_0/08_SubDefs/Def250_2/07_Resized/Def90/
     # _____[DANG_CAP_SAO_00B06]_____
+    - lib/28_def0028/ADef062_0/08_SubDefs/Def260_2/07_Resized/Def50/
     - lib/28_def0028/ADef062_0/08_SubDefs/Def260_2/07_Resized/Def90/
     # _____[DANG_CAP_SAO_00A07]_____
+    - lib/28_def0028/ADef062_0/08_SubDefs/Def270_2/07_Resized/Def50/
     - lib/28_def0028/ADef062_0/08_SubDefs/Def270_2/07_Resized/Def90/
     # _____[DANG_CAP_SAO_00S08]_____
+    - lib/28_def0028/ADef062_0/08_SubDefs/Def280_2/07_Resized/Def50/
     - lib/28_def0028/ADef062_0/08_SubDefs/Def280_2/07_Resized/Def90/
     # _____[DANG_CAP_SAO_0SS09]_____
+    - lib/28_def0028/ADef062_0/08_SubDefs/Def290_2/07_Resized/Def50/
     - lib/28_def0028/ADef062_0/08_SubDefs/Def290_2/07_Resized/Def90/
     # _____[DANG_CAP_SAO_SSS10]_____
+    - lib/28_def0028/ADef062_0/08_SubDefs/Def300_2/07_Resized/Def50/
     - lib/28_def0028/ADef062_0/08_SubDefs/Def300_2/07_Resized/Def90/
     #
     #
@@ -120,80 +174,120 @@ flutter:
     #
     #
     # _____[KHUNG_THONG_TIN_TAI_NGUYEN_VANG_TRAO_DOI]_____
+    - lib/28_def0028/ADef040_0/08_SubDefs/Def210_2/07_Resized/Def50/
     - lib/28_def0028/ADef040_0/08_SubDefs/Def210_2/07_Resized/Def90/
     #
     # _____[KHUNG_THONG_TIN_TAI_NGUYEN_NGOC_TRAO_DOI]_____
+    - lib/28_def0028/ADef040_0/08_SubDefs/Def310_2/07_Resized/Def50/
     - lib/28_def0028/ADef040_0/08_SubDefs/Def310_2/07_Resized/Def90/
     #
     # _____[KHUNG_THONG_TIN_TAI_NGUYEN_DOLLAR_TRAO_DOI]_____
+    - lib/28_def0028/ADef040_0/08_SubDefs/Def510_2/07_Resized/Def50/
     - lib/28_def0028/ADef040_0/08_SubDefs/Def510_2/07_Resized/Def90/
     #
     # _____[KHUNG_MAN_HINH_THU_CAP_CO_BAN]_____
+    - lib/28_def0028/ADef110_0/08_SubDefs/Def210_2/07_Resized/Def50/
     - lib/28_def0028/ADef110_0/08_SubDefs/Def210_2/07_Resized/Def90/
     #
     #
     #
     #0_____[NUT_QUAY_VE]_____
+    - lib/28_def0028/ADef020_0/08_SubDefs/Def030_2/07_Resized/Def50/
     - lib/28_def0028/ADef020_0/08_SubDefs/Def030_2/07_Resized/Def90/
     #0_____[NUT_TAM_DUNG_KICH_HOAT]_____
+    - lib/28_def0028/ADef020_0/08_SubDefs/Def040_2/07_Resized/Def50/
     - lib/28_def0028/ADef020_0/08_SubDefs/Def040_2/07_Resized/Def90/
     #0_____[NUT_TAM_DUNG_HUY_KICH_HOAT]_____
+    - lib/28_def0028/ADef020_0/08_SubDefs/Def050_2/07_Resized/Def50/
     - lib/28_def0028/ADef020_0/08_SubDefs/Def050_2/07_Resized/Def90/
     #
     #
     #0_____[CARD_DANG_CAP_SAO_00E030]_____
+    - lib/28_def0028/ADef300_0/08_SubDefs/Def210_2/07_Resized/Def50/
     - lib/28_def0028/ADef300_0/08_SubDefs/Def210_2/07_Resized/Def90/
     #0_____[CARD_DANG_CAP_SAO_00D040]_____
+    - lib/28_def0028/ADef300_0/08_SubDefs/Def220_2/07_Resized/Def50/
     - lib/28_def0028/ADef300_0/08_SubDefs/Def220_2/07_Resized/Def90/
     #0_____[CARD_DANG_CAP_SAO_00C050]_____
+    - lib/28_def0028/ADef300_0/08_SubDefs/Def230_2/07_Resized/Def50/
     - lib/28_def0028/ADef300_0/08_SubDefs/Def230_2/07_Resized/Def90/
     #0_____[CARD_DANG_CAP_SAO_00B060]_____
+    - lib/28_def0028/ADef300_0/08_SubDefs/Def240_2/07_Resized/Def50/
     - lib/28_def0028/ADef300_0/08_SubDefs/Def240_2/07_Resized/Def90/
     #0_____[CARD_DANG_CAP_SAO_00A070]_____
+    - lib/28_def0028/ADef300_0/08_SubDefs/Def250_2/07_Resized/Def50/
     - lib/28_def0028/ADef300_0/08_SubDefs/Def250_2/07_Resized/Def90/
     #0_____[CARD_DANG_CAP_SAO_00S080]_____
+    - lib/28_def0028/ADef300_0/08_SubDefs/Def260_2/07_Resized/Def50/
     - lib/28_def0028/ADef300_0/08_SubDefs/Def260_2/07_Resized/Def90/
     #0_____[CARD_DANG_CAP_SAO_0SS090]_____
+    - lib/28_def0028/ADef300_0/08_SubDefs/Def270_2/07_Resized/Def50/
     - lib/28_def0028/ADef300_0/08_SubDefs/Def270_2/07_Resized/Def90/
     #0_____[CARD_DANG_CAP_SAO_SSS100]_____
+    - lib/28_def0028/ADef300_0/08_SubDefs/Def280_2/07_Resized/Def50/
     - lib/28_def0028/ADef300_0/08_SubDefs/Def280_2/07_Resized/Def90/
     #0_____[CARD_CHIEN_DAU_CO_KICH_HOAT]_____
+    - lib/28_def0028/ADef300_0/08_SubDefs/Def300_2/07_Resized/Def50/
     - lib/28_def0028/ADef300_0/08_SubDefs/Def300_2/07_Resized/Def90/
     #
     #0_____[CARD_NHIEM_VU_CHIEN_DAU_KICH_HOAT]_____
+    - lib/28_def0028/ADef400_0/08_SubDefs/Def210_2/07_Resized/Def50/
     - lib/28_def0028/ADef400_0/08_SubDefs/Def210_2/07_Resized/Def90/
     #0_____[CARD_NHIEM_VU_CHIEN_DAU_HUY_KICH_HOAT]_____
+    - lib/28_def0028/ADef400_0/08_SubDefs/Def220_2/07_Resized/Def50/
     - lib/28_def0028/ADef400_0/08_SubDefs/Def220_2/07_Resized/Def90/
     #
     #
+    #
+    - lib/28_def0028/ADef400_0/08_SubDefs/Def230_2/07_Resized/Def50/
+    - lib/28_def0028/ADef400_0/08_SubDefs/Def230_2/07_Resized/Def90/
+    #
+    - lib/28_def0028/ADef400_0/08_SubDefs/Def240_2/07_Resized/Def50/
+    - lib/28_def0028/ADef400_0/08_SubDefs/Def240_2/07_Resized/Def90/
+    #
+    #
+    #
+    #
+    #
     #0_____[THANH_TICH_NHIEM_VU_CHIEN_DAU_SS010_KICH_HOAT]_____
+    - lib/28_def0028/ADef400_0/08_SubDefs/Def300_2/07_Resized/Def50/
     - lib/28_def0028/ADef400_0/08_SubDefs/Def300_2/07_Resized/Def90/
     #0_____[THANH_TICH_NHIEM_VU_CHIEN_DAU_SS010_HUY_KICH_HOAT]_____
+    - lib/28_def0028/ADef400_0/08_SubDefs/Def310_2/07_Resized/Def50/
     - lib/28_def0028/ADef400_0/08_SubDefs/Def310_2/07_Resized/Def90/
     #
     #0_____[THANH_TICH_NHIEM_VU_CHIEN_DAU_SS020_KICH_HOAT]_____
+    - lib/28_def0028/ADef400_0/08_SubDefs/Def400_2/07_Resized/Def50/
     - lib/28_def0028/ADef400_0/08_SubDefs/Def400_2/07_Resized/Def90/
     #0_____[THANH_TICH_NHIEM_VU_CHIEN_DAU_SS020_HUY_KICH_HOAT]_____
+    - lib/28_def0028/ADef400_0/08_SubDefs/Def410_2/07_Resized/Def50/
     - lib/28_def0028/ADef400_0/08_SubDefs/Def410_2/07_Resized/Def90/
     #
     #0_____[THANH_TICH_NHIEM_VU_CHIEN_DAU_SS030_KICH_HOAT]_____
+    - lib/28_def0028/ADef400_0/08_SubDefs/Def500_2/07_Resized/Def50/
     - lib/28_def0028/ADef400_0/08_SubDefs/Def500_2/07_Resized/Def90/
     #0_____[THANH_TICH_NHIEM_VU_CHIEN_DAU_SS030_HUY_KICH_HOAT]_____
+    - lib/28_def0028/ADef400_0/08_SubDefs/Def510_2/07_Resized/Def50/
     - lib/28_def0028/ADef400_0/08_SubDefs/Def510_2/07_Resized/Def90/
     #
     #
     # 0_____[NUT_BAM_CO_BAN_VA]_____
+    - lib/28_def0028/ADef020_0/08_SubDefs/Def010_2/07_Resized/Def50/
     - lib/28_def0028/ADef020_0/08_SubDefs/Def010_2/07_Resized/Def90/
     #
     #0_____[NUT_CHUYEN_TIEP]_____
+    - lib/28_def0028/ADef020_0/08_SubDefs/Def032_2/07_Resized/Def50/
     - lib/28_def0028/ADef020_0/08_SubDefs/Def032_2/07_Resized/Def90/
     #
     #
+    #_____[KHUNG_MAN_HINH_CHIEN_THANG]_____
+    - lib/28_def0028/BDef200_0/08_SubDefs/Def210_2/07_Resized/Def90/
     #
+    #_____[KHUNG_MAN_HINH_THAT_BAI]_____
+    - lib/28_def0028/BDef200_0/08_SubDefs/Def220_2/07_Resized/Def90/
     #
-    #
-    #
-    #
+    # KHUNG MAN HINH CHIEN DAU
+    - lib/28_def0028/ADef110_0/08_SubDefs/Def310_2/07_Resized/Def90/
     #
     #
     #

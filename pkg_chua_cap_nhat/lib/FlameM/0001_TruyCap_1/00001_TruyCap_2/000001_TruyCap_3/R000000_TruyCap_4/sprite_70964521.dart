@@ -61,7 +61,7 @@ class SpriteNgoaiHinhThanChienDauCo extends SpriteAnimationCoBan {
     super.update(dt);
 
     await caiDatTuDongBienTangTienGiamTanXuatCapNhat();
-    if (await kiemTraTanXuatCapNhat() == false) {
+    if (onBoolKiemTraTanXuatCapNhat() == false) {
       return;
     }
 

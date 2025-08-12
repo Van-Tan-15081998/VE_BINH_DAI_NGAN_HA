@@ -12,7 +12,7 @@ class GIAIDOANCHIENDAUCOBAN with CauTrucThucThiCoBan {
   /// -----
   @override
   Future<void> onAttachRoot({required dynamic attachValue}) async {
-    if (attachValue is QuanLyTrangThaiTongQuat) {
+    if (attachValue is GlobalStateManagementSystem) {
       await caiDatThietLapTongQuat(value: attachValue.getThietLapTongQuat);
     }
 
@@ -218,12 +218,8 @@ class GIAIDOANCHIENDAUCOBAN with CauTrucThucThiCoBan {
   /// TODO: Danh Sách Hoạt Động Chiến Đấu Xâm Chiếm Nhóm SS00A Thuộc Giai Đoạn Cơ Bản
   /// -----
   DANHSACHHOATDONGCHIENDAUXAMCHIEMNHOMSS00ATHUOCGIAIDOANCOBAN? _danhSachHoatDongChienDauXamChiemNhomSS00A;
-  DANHSACHHOATDONGCHIENDAUXAMCHIEMNHOMSS00ATHUOCGIAIDOANCOBAN? get getDanhSachHoatDongChienDauXamChiemNhomSS00A =>
-      _danhSachHoatDongChienDauXamChiemNhomSS00A;
-  Future<void> caiDatDanhSachHoatDongChienDauXamChiemNhomSS00A({
-    required DANHSACHHOATDONGCHIENDAUXAMCHIEMNHOMSS00ATHUOCGIAIDOANCOBAN? value,
-    bool? caiDatUuTien,
-  }) async {
+  DANHSACHHOATDONGCHIENDAUXAMCHIEMNHOMSS00ATHUOCGIAIDOANCOBAN? get getDanhSachHoatDongChienDauXamChiemNhomSS00A => _danhSachHoatDongChienDauXamChiemNhomSS00A;
+  Future<void> caiDatDanhSachHoatDongChienDauXamChiemNhomSS00A({required DANHSACHHOATDONGCHIENDAUXAMCHIEMNHOMSS00ATHUOCGIAIDOANCOBAN? value, bool? caiDatUuTien}) async {
     if (caiDatUuTien == true) {
       _danhSachHoatDongChienDauXamChiemNhomSS00A = value;
     } else {
@@ -237,12 +233,8 @@ class GIAIDOANCHIENDAUCOBAN with CauTrucThucThiCoBan {
   /// TODO: Danh Sách Hoạt Động Chiến Đấu Xâm Chiếm Nhóm SS00B Thuộc Giai Đoạn Cơ Bản
   /// -----
   DANHSACHHOATDONGCHIENDAUXAMCHIEMNHOMSS00BTHUOCGIAIDOANCOBAN? _danhSachHoatDongChienDauXamChiemNhomSS00B;
-  DANHSACHHOATDONGCHIENDAUXAMCHIEMNHOMSS00BTHUOCGIAIDOANCOBAN? get getDanhSachHoatDongChienDauXamChiemNhomSS00B =>
-      _danhSachHoatDongChienDauXamChiemNhomSS00B;
-  Future<void> caiDatDanhSachHoatDongChienDauXamChiemNhomSS00B({
-    required DANHSACHHOATDONGCHIENDAUXAMCHIEMNHOMSS00BTHUOCGIAIDOANCOBAN? value,
-    bool? caiDatUuTien,
-  }) async {
+  DANHSACHHOATDONGCHIENDAUXAMCHIEMNHOMSS00BTHUOCGIAIDOANCOBAN? get getDanhSachHoatDongChienDauXamChiemNhomSS00B => _danhSachHoatDongChienDauXamChiemNhomSS00B;
+  Future<void> caiDatDanhSachHoatDongChienDauXamChiemNhomSS00B({required DANHSACHHOATDONGCHIENDAUXAMCHIEMNHOMSS00BTHUOCGIAIDOANCOBAN? value, bool? caiDatUuTien}) async {
     if (caiDatUuTien == true) {
       _danhSachHoatDongChienDauXamChiemNhomSS00B = value;
     } else {
@@ -256,12 +248,8 @@ class GIAIDOANCHIENDAUCOBAN with CauTrucThucThiCoBan {
   /// TODO: Danh Sách Hoạt Động Chiến Đấu Xâm Chiếm Nhóm SS00C Thuộc Giai Đoạn Cơ Bản
   /// -----
   DANHSACHHOATDONGCHIENDAUXAMCHIEMNHOMSS00CTHUOCGIAIDOANCOBAN? _danhSachHoatDongChienDauXamChiemNhomSS00C;
-  DANHSACHHOATDONGCHIENDAUXAMCHIEMNHOMSS00CTHUOCGIAIDOANCOBAN? get getDanhSachHoatDongChienDauXamChiemNhomSS00C =>
-      _danhSachHoatDongChienDauXamChiemNhomSS00C;
-  Future<void> caiDatDanhSachHoatDongChienDauXamChiemNhomSS00C({
-    required DANHSACHHOATDONGCHIENDAUXAMCHIEMNHOMSS00CTHUOCGIAIDOANCOBAN? value,
-    bool? caiDatUuTien,
-  }) async {
+  DANHSACHHOATDONGCHIENDAUXAMCHIEMNHOMSS00CTHUOCGIAIDOANCOBAN? get getDanhSachHoatDongChienDauXamChiemNhomSS00C => _danhSachHoatDongChienDauXamChiemNhomSS00C;
+  Future<void> caiDatDanhSachHoatDongChienDauXamChiemNhomSS00C({required DANHSACHHOATDONGCHIENDAUXAMCHIEMNHOMSS00CTHUOCGIAIDOANCOBAN? value, bool? caiDatUuTien}) async {
     if (caiDatUuTien == true) {
       _danhSachHoatDongChienDauXamChiemNhomSS00C = value;
     } else {
@@ -275,12 +263,8 @@ class GIAIDOANCHIENDAUCOBAN with CauTrucThucThiCoBan {
   /// TODO: Danh Sách Hoạt Động Chiến Đấu Xâm Chiếm Nhóm SS00D Thuộc Giai Đoạn Cơ Bản
   /// -----
   DANHSACHHOATDONGCHIENDAUXAMCHIEMNHOMSS00DTHUOCGIAIDOANCOBAN? _danhSachHoatDongChienDauXamChiemNhomSS00D;
-  DANHSACHHOATDONGCHIENDAUXAMCHIEMNHOMSS00DTHUOCGIAIDOANCOBAN? get getDanhSachHoatDongChienDauXamChiemNhomSS00D =>
-      _danhSachHoatDongChienDauXamChiemNhomSS00D;
-  Future<void> caiDatDanhSachHoatDongChienDauXamChiemNhomSS00D({
-    required DANHSACHHOATDONGCHIENDAUXAMCHIEMNHOMSS00DTHUOCGIAIDOANCOBAN? value,
-    bool? caiDatUuTien,
-  }) async {
+  DANHSACHHOATDONGCHIENDAUXAMCHIEMNHOMSS00DTHUOCGIAIDOANCOBAN? get getDanhSachHoatDongChienDauXamChiemNhomSS00D => _danhSachHoatDongChienDauXamChiemNhomSS00D;
+  Future<void> caiDatDanhSachHoatDongChienDauXamChiemNhomSS00D({required DANHSACHHOATDONGCHIENDAUXAMCHIEMNHOMSS00DTHUOCGIAIDOANCOBAN? value, bool? caiDatUuTien}) async {
     if (caiDatUuTien == true) {
       _danhSachHoatDongChienDauXamChiemNhomSS00D = value;
     } else {

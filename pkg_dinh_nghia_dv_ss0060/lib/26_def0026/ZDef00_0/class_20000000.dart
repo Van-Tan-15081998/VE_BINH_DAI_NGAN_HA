@@ -44,6 +44,11 @@ class MOHINHTHANHTICHCHIENDAUCOBAN with CauTrucThucThiCoBan {
     /// -----
     /// TODO:
     /// -----
+    await caiDatThanhTichChienDauTheoNhiemVu(value: THUOCTINHTHANHTICHCHIENDAUTHEONHIEMVU(), caiDatUuTien: true);
+
+    /// -----
+    /// TODO:
+    /// -----
     await caiDatThanhTichChienDauTheoHangNgay(value: THUOCTINHTHANHTICHCHIENDAUTHEOHANGNGAY(), caiDatUuTien: true);
 
     /// -----
@@ -91,6 +96,11 @@ class MOHINHTHANHTICHCHIENDAUCOBAN with CauTrucThucThiCoBan {
     /// -----
     /// TODO:
     /// -----
+    await getThanhTichChienDauTheoNhiemVu?.onSetupRoot();
+
+    /// -----
+    /// TODO:
+    /// -----
     await getThanhTichChienDauTheoHangNgay?.onSetupRoot();
 
     /// -----
@@ -107,6 +117,11 @@ class MOHINHTHANHTICHCHIENDAUCOBAN with CauTrucThucThiCoBan {
   /// -----
   @override
   Future<void> onInitRootForSubCom() async {
+    /// -----
+    /// TODO:
+    /// -----
+    await getThanhTichChienDauTheoNhiemVu?.onInitRoot();
+
     /// -----
     /// TODO:
     /// -----
@@ -130,6 +145,24 @@ class MOHINHTHANHTICHCHIENDAUCOBAN with CauTrucThucThiCoBan {
     return;
   }
 
+  Future<void> onKhoiPhucDonViSoLuongNguyenBan() async {
+
+    /// -----
+    /// TODO:
+    /// -----
+    await getThanhTichChienDauTheoNhiemVu?.getPhanThuongDatThanhTich?.getGoiTaiNguyenPhanThuongVang?.getDonViSoLuong?.caiDatTongSoLuong(
+      value: 0,
+      caiDatUuTien: true,
+    );
+    await getThanhTichChienDauTheoNhiemVu?.getPhanThuongDatThanhTich?.getGoiTaiNguyenPhanThuongNgoc?.getDonViSoLuong?.caiDatTongSoLuong(
+      value: 0,
+      caiDatUuTien: true,
+    );
+
+    ///
+    return;
+  }
+
   /// -----
   /// TODO: Mã Định Danh
   /// -----
@@ -140,6 +173,21 @@ class MOHINHTHANHTICHCHIENDAUCOBAN with CauTrucThucThiCoBan {
       _maDinhDanh = value;
     } else {
       _maDinhDanh ??= value;
+    }
+
+    return;
+  }
+
+  /// -----
+  /// TODO: Thuộc Tính Thành Tích Chiến Đấu Theo Nhiệm Vụ
+  /// -----
+  THUOCTINHTHANHTICHCHIENDAUTHEONHIEMVU? _thanhTichChienDauTheoNhiemVu;
+  THUOCTINHTHANHTICHCHIENDAUTHEONHIEMVU? get getThanhTichChienDauTheoNhiemVu => _thanhTichChienDauTheoNhiemVu;
+  Future<void> caiDatThanhTichChienDauTheoNhiemVu({required THUOCTINHTHANHTICHCHIENDAUTHEONHIEMVU? value, bool? caiDatUuTien}) async {
+    if (caiDatUuTien == true) {
+      _thanhTichChienDauTheoNhiemVu = value;
+    } else {
+      _thanhTichChienDauTheoNhiemVu ??= value;
     }
 
     return;

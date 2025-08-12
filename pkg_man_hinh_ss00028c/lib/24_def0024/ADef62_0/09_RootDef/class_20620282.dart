@@ -9,7 +9,7 @@ class MANHINHTHANHPHANEEEE extends StatefulWidget {
   const MANHINHTHANHPHANEEEE({super.key, required this.trangThaiTongQuat, required this.onThucThiHoanTat});
 
   final VoidCallback? onThucThiHoanTat;
-  final QuanLyTrangThaiTongQuat? trangThaiTongQuat;
+  final GlobalStateManagementSystem? trangThaiTongQuat;
 
   @override
   State<MANHINHTHANHPHANEEEE> createState() => _MANHINHTHANHPHANEEEEState();

@@ -157,21 +157,61 @@ class QuanLyTrangThaiPhuongThucTanCongCoBanSS02 extends QuanLyTrangThaiPhuongThu
   Future<void> onInitRoot() async {
     await onCaiDatKiemTraKichHoatSungChinhSs02(value: true);
 
-    await caiDatVienDanSS20(value: TrangThaiVienDanCoBanSS02(moHinh: null));
-    await caiDatVienDanSS22(value: TrangThaiVienDanCoBanSS02(moHinh: null));
-    await caiDatVienDanSS24(value: TrangThaiVienDanCoBanSS02(moHinh: null));
-    await caiDatVienDanSS26(value: TrangThaiVienDanCoBanSS02(moHinh: null));
-    await caiDatVienDanSS28(value: TrangThaiVienDanCoBanSS02(moHinh: null));
-    await caiDatVienDanSS30(value: TrangThaiVienDanCoBanSS02(moHinh: null));
-    await caiDatVienDanSS32(value: TrangThaiVienDanCoBanSS02(moHinh: null));
-    await caiDatVienDanSS34(value: TrangThaiVienDanCoBanSS02(moHinh: null));
-    await caiDatVienDanSS36(value: TrangThaiVienDanCoBanSS02(moHinh: null));
-    await caiDatVienDanSS38(value: TrangThaiVienDanCoBanSS02(moHinh: null));
-    await caiDatVienDanSS40(value: TrangThaiVienDanCoBanSS02(moHinh: null));
-    await caiDatVienDanSS42(value: TrangThaiVienDanCoBanSS02(moHinh: null));
-    await caiDatVienDanSS44(value: TrangThaiVienDanCoBanSS02(moHinh: null));
-    await caiDatVienDanSS46(value: TrangThaiVienDanCoBanSS02(moHinh: null));
-    await caiDatVienDanSS48(value: TrangThaiVienDanCoBanSS02(moHinh: null));
+    await caiDatVienDanSS20(value: TrangThaiVienDanCoBanSS02(moHinh: VienDanPhuongThucTanCongCoBanSS02()));
+    await caiDatVienDanSS22(value: TrangThaiVienDanCoBanSS02(moHinh: VienDanPhuongThucTanCongCoBanSS02()));
+    await caiDatVienDanSS24(value: TrangThaiVienDanCoBanSS02(moHinh: VienDanPhuongThucTanCongCoBanSS02()));
+    await caiDatVienDanSS26(value: TrangThaiVienDanCoBanSS02(moHinh: VienDanPhuongThucTanCongCoBanSS02()));
+    await caiDatVienDanSS28(value: TrangThaiVienDanCoBanSS02(moHinh: VienDanPhuongThucTanCongCoBanSS02()));
+    await caiDatVienDanSS30(value: TrangThaiVienDanCoBanSS02(moHinh: VienDanPhuongThucTanCongCoBanSS02()));
+    await caiDatVienDanSS32(value: TrangThaiVienDanCoBanSS02(moHinh: VienDanPhuongThucTanCongCoBanSS02()));
+    await caiDatVienDanSS34(value: TrangThaiVienDanCoBanSS02(moHinh: VienDanPhuongThucTanCongCoBanSS02()));
+    await caiDatVienDanSS36(value: TrangThaiVienDanCoBanSS02(moHinh: VienDanPhuongThucTanCongCoBanSS02()));
+    await caiDatVienDanSS38(value: TrangThaiVienDanCoBanSS02(moHinh: VienDanPhuongThucTanCongCoBanSS02()));
+    await caiDatVienDanSS40(value: TrangThaiVienDanCoBanSS02(moHinh: VienDanPhuongThucTanCongCoBanSS02()));
+    await caiDatVienDanSS42(value: TrangThaiVienDanCoBanSS02(moHinh: VienDanPhuongThucTanCongCoBanSS02()));
+    await caiDatVienDanSS44(value: TrangThaiVienDanCoBanSS02(moHinh: VienDanPhuongThucTanCongCoBanSS02()));
+    await caiDatVienDanSS46(value: TrangThaiVienDanCoBanSS02(moHinh: VienDanPhuongThucTanCongCoBanSS02()));
+    await caiDatVienDanSS48(value: TrangThaiVienDanCoBanSS02(moHinh: VienDanPhuongThucTanCongCoBanSS02()));
+
+    await Future.wait([
+      getVienDanSS20?.getMoHinh?.onSetupRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onSetupRoot'),
+      getVienDanSS22?.getMoHinh?.onSetupRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onSetupRoot'),
+      getVienDanSS24?.getMoHinh?.onSetupRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onSetupRoot'),
+      getVienDanSS26?.getMoHinh?.onSetupRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onSetupRoot'),
+      getVienDanSS28?.getMoHinh?.onSetupRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onSetupRoot'),
+
+      getVienDanSS30?.getMoHinh?.onSetupRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onSetupRoot'),
+      getVienDanSS32?.getMoHinh?.onSetupRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onSetupRoot'),
+      getVienDanSS34?.getMoHinh?.onSetupRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onSetupRoot'),
+      getVienDanSS36?.getMoHinh?.onSetupRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onSetupRoot'),
+      getVienDanSS38?.getMoHinh?.onSetupRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onSetupRoot'),
+
+      getVienDanSS40?.getMoHinh?.onSetupRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onSetupRoot'),
+      getVienDanSS42?.getMoHinh?.onSetupRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onSetupRoot'),
+      getVienDanSS44?.getMoHinh?.onSetupRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onSetupRoot'),
+      getVienDanSS46?.getMoHinh?.onSetupRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onSetupRoot'),
+      getVienDanSS48?.getMoHinh?.onSetupRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onSetupRoot'),
+    ]);
+
+    await Future.wait([
+      getVienDanSS20?.getMoHinh?.onInitRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onInitRoot'),
+      getVienDanSS22?.getMoHinh?.onInitRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onInitRoot'),
+      getVienDanSS24?.getMoHinh?.onInitRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onInitRoot'),
+      getVienDanSS26?.getMoHinh?.onInitRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onInitRoot'),
+      getVienDanSS28?.getMoHinh?.onInitRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onInitRoot'),
+
+      getVienDanSS30?.getMoHinh?.onInitRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onInitRoot'),
+      getVienDanSS32?.getMoHinh?.onInitRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onInitRoot'),
+      getVienDanSS34?.getMoHinh?.onInitRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onInitRoot'),
+      getVienDanSS36?.getMoHinh?.onInitRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onInitRoot'),
+      getVienDanSS38?.getMoHinh?.onInitRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onInitRoot'),
+
+      getVienDanSS40?.getMoHinh?.onInitRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onInitRoot'),
+      getVienDanSS42?.getMoHinh?.onInitRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onInitRoot'),
+      getVienDanSS44?.getMoHinh?.onInitRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onInitRoot'),
+      getVienDanSS46?.getMoHinh?.onInitRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onInitRoot'),
+      getVienDanSS48?.getMoHinh?.onInitRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onInitRoot'),
+    ]);
 
     /// -----
     /// TODO:

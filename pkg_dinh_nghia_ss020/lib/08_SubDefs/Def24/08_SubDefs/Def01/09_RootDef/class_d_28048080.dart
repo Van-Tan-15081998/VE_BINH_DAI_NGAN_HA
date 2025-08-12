@@ -47,6 +47,12 @@ class TrangThaiTonTaiCoBan {
     }
     return false;
   }
+  bool onCheckBoolNguyenBan() {
+    if (getTrangThai == '[NGUYEN_BAN]') {
+      return true;
+    }
+    return false;
+  }
 
   /// -----
   /// TODO: Trạng Thái => Khởi Tạo Hoàn Tất
@@ -63,8 +69,30 @@ class TrangThaiTonTaiCoBan {
     return;
   }
 
-  bool isKhoiTaoHoanTat() {
+  bool onCheckBoolKhoiTaoHoanTat() {
     if (getTrangThai == '[KHOI_TAO_HOAN_TAT]') {
+      return true;
+    }
+    return false;
+  }
+
+  /// -----
+  /// TODO: Trạng Thái => Đang Kích Hoạt
+  /// -----
+  TrangThaiTonTaiCoBan.dangKichHoat() {
+    caiDatTrangThai(value: '[DANG_KICH_HOAT]');
+  }
+  Future<void> caiDatDangKichHoat() async {
+    caiDatTrangThai(value: '[DANG_KICH_HOAT]');
+    return;
+  }
+  void onVoidCaiDatDangKichHoat() {
+    caiDatTrangThai(value: '[DANG_KICH_HOAT]');
+    return;
+  }
+
+  bool onCheckBoolDangKichHoat() {
+    if (getTrangThai == '[DANG_KICH_HOAT]') {
       return true;
     }
     return false;

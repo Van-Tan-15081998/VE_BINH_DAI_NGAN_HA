@@ -369,7 +369,7 @@ class DonViSpriteCoBan with CauTrucThucThiCoBan {
         return;
       } catch (e) {
         if (kDebugMode) {
-          print('💢💢💢 Lưu File Sprite Sheet Không Thành Công 💢💢💢: $getNguonHinhAnh');
+          // print('💢💢💢 Lưu File Sprite Sheet Không Thành Công 💢💢💢: $getNguonHinhAnh');
         }
       }
     }
@@ -396,7 +396,7 @@ class DonViSpriteCoBan with CauTrucThucThiCoBan {
       /// -----
       if (await file.exists()) {
         if (kDebugMode) {
-          print('🟩 File Sprite Sheet Đã Tồn Tại Trong Kho Lưu Trữ: $assetPath');
+          // print('🟩 File Sprite Sheet Đã Tồn Tại Trong Kho Lưu Trữ: $assetPath');
         }
         return file.path;
       }
@@ -427,7 +427,7 @@ class DonViSpriteCoBan with CauTrucThucThiCoBan {
       return frame.image;
     } catch (e) {
       if (kDebugMode) {
-        print('💢💢💢 Truy Xuất Tài Nguyên Hình Ảnh [SpriteSheet] Không Thành Công 💢💢💢: $nguonSpriteSheet');
+        // print('💢💢💢 Truy Xuất Tài Nguyên Hình Ảnh [SpriteSheet] Không Thành Công 💢💢💢: $nguonSpriteSheet');
       }
     }
 
@@ -452,16 +452,16 @@ class DonViSpriteCoBan with CauTrucThucThiCoBan {
         if (await file.exists()) {
           await file.delete();
           if (kDebugMode) {
-            print('✅ 🟥 Đã Xóa File Sprite Sheet: $assetPath');
+            // print('✅ 🟥 Đã Xóa File Sprite Sheet: $assetPath');
           }
         } else {
           if (kDebugMode) {
-            print('⚠️ [Không Thể Xóa] File Sprite Sheet Không Tồn Tại: $assetPath');
+            // print('⚠️ [Không Thể Xóa] File Sprite Sheet Không Tồn Tại: $assetPath');
           }
         }
       } catch (e) {
         if (kDebugMode) {
-          print('💢💢💢 Xóa File Sprite Sheet Không Thành Công 💢💢💢: $assetPath');
+          // print('💢💢💢 Xóa File Sprite Sheet Không Thành Công 💢💢💢: $assetPath');
         }
       }
     }

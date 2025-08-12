@@ -283,6 +283,29 @@ class MAYPHATAMTHANHV5 with CauTrucThucThiCoBan {
     }
   }
 
+  SoundHandle? handleHieuUngAmThanhBackground;
+  Future<void> onPlayHieuUngAmThanhBackground({
+    required String nguonAmThanh,
+    required String? nguonAmThanhLuuVaoRam,
+    required AudioSource? nguonAmThanhSanSang,
+    required double amLuong,
+  }) async {
+    if (nguonAmThanhSanSang != null) {
+      handleHieuUngAmThanhBackground = await SoLoud.instance.play(nguonAmThanhSanSang, volume: 1.0, looping: true);
+    }
+  }
+
+  Future<void> onStopHieuUngAmThanhBackground({
+    required String nguonAmThanh,
+    required String? nguonAmThanhLuuVaoRam,
+    required AudioSource? nguonAmThanhSanSang,
+    required double amLuong,
+  }) async {
+    if (handleHieuUngAmThanhBackground != null) {
+      await SoLoud.instance.stop(handleHieuUngAmThanhBackground!);
+    }
+  }
+
   /// -----
   /// TODO: Reset Ngăn Xếp - Hàng Đợi
   /// -----

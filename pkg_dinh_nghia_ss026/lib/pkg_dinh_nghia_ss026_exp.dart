@@ -710,9 +710,3 @@ export '28_def0028/ADef40_0/08_SubDefs/Def0440_2/09_RootDef/class_kich_ban_chien
 
 /// TODO: _____[KICH_BAN_CHIEN_DAU_THEO_DOI_HINH_THUOC_GIAI_DOAN_STAGE_SS00C025]_____
 export '28_def0028/ADef40_0/08_SubDefs/Def0450_2/09_RootDef/class_kich_ban_chien_dau_theo_doi_hinh_thuoc_giai_doan.dart';
-
-/// A Calculator.
-class Calculator {
-  /// Returns [value] plus 1.
-  int addOne(int value) => value + 1;
-}

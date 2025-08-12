@@ -15,7 +15,7 @@ class PHUONGTHUCBAYPHUONGTIENVUKHICLASS50CSS010VKSS040 extends MoHinhPhuongThucB
     /// -----
     /// TODO:
     /// -----
-    await getThamSoBay?.caiDatTocDoBay(value: TocDoBayCoBan(tocDo: 8.000));
+    await getThamSoBay?.caiDatTocDoBay(value: TocDoBayCoBan(tocDo: 15.000));
 
     ///
     await getThamSoBay?.caiDatDinhHuongBay(value: DinhHuongBayCoBan.dinhHuongTheoDoanDuongBayThuocKichBan());
@@ -24,7 +24,7 @@ class PHUONGTHUCBAYPHUONGTIENVUKHICLASS50CSS010VKSS040 extends MoHinhPhuongThucB
     await getThamSoBay?.caiDatDinhHuongLayMucTieu(value: DinhHuongLayMucTieuCoBan.onMacDinh());
 
     ///
-    await getThamSoBay?.caiDatThoiGianKichHoat(value: ThoiGianKichHoatCoBan.kichHoat10());
+    getThamSoBay?.onVoidCaiDatThoiGianKichHoat(value: ThoiGianKichHoatCoBan.kichHoat10());
 
     ///
     await getThamSoBay?.caiDatDanhSachDoanDuongBayThuocKichBanChienDau(value: []);

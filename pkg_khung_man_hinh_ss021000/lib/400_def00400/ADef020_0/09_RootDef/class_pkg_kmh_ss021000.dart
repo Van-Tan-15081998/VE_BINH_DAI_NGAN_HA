@@ -1,3 +1,4 @@
+import 'dart:async' as flutter_async;
 import 'package:pkg_dinh_nghia_ss020000/pkg_dinh_nghia_ss020000_exp.dart';
 import 'package:pkg_khung_man_hinh_ss020000/pkg_khung_man_hinh_ss020000_exp.dart';
 import 'package:pkg_khung_man_hinh_ss021000/400_def00400/ADef020_0/08_SubDefs/Def020_2/09_RootDef/class_pkg_kmh_ss021000.dart';
@@ -14,7 +15,7 @@ class KHUNGMANHINHMASTERLOADING extends THANHPHANMANHINHTHUOCCAPCOBAN {
   /// TODO:
   /// -----
   KHUNGMANHINHMASTERLOADING({
-    required super.globalState,
+    required super.globalStateManagementSystem,
     required super.gameController,
     required super.thanhPhanQuanLyThuocCapTrucTiep,
     required super.sizeDx,
@@ -39,7 +40,7 @@ class KHUNGMANHINHMASTERLOADING extends THANHPHANMANHINHTHUOCCAPCOBAN {
     await Future.wait([
       onCaiDatQuanLyThanhPhanManHinhThuocCap(
         value: QUANLYTHANHPHANMANHINHTHUOCCAP(
-          globalState: getGlobalState,
+          globalStateManagementSystem: getGlobalStateManagementSystem,
           gameController: getGameController,
           thanhPhanQuanLyThuocCapTrucTiep: getThanhPhanQuanLyThuocCapTrucTiep,
           sizeDx: getSizeDx,
@@ -48,7 +49,7 @@ class KHUNGMANHINHMASTERLOADING extends THANHPHANMANHINHTHUOCCAPCOBAN {
       ).catchError((e) => null),
       onCaiDatQuanLyThanhPhanNutBamThuocCap(
         value: QUANLYTHANHPHANNUTBAMTHUOCCAP(
-          globalState: getGlobalState,
+          globalStateManagementSystem: getGlobalStateManagementSystem,
           gameController: getGameController,
           thanhPhanQuanLyThuocCapTrucTiep: getThanhPhanQuanLyThuocCapTrucTiep,
           sizeDx: getSizeDx,
@@ -72,7 +73,7 @@ class KHUNGMANHINHMASTERLOADING extends THANHPHANMANHINHTHUOCCAPCOBAN {
       ).catchError((e) => null),
       onCaiDatQuanLyThanhPhanVanBanThuocCap(
         value: QUANLYTHANHPHANVANBANTHUOCCAP(
-          globalState: getGlobalState,
+          globalStateManagementSystem: getGlobalStateManagementSystem,
           gameController: getGameController,
           thanhPhanQuanLyThuocCapTrucTiep: getThanhPhanQuanLyThuocCapTrucTiep,
           sizeDx: getSizeDx,
@@ -81,7 +82,7 @@ class KHUNGMANHINHMASTERLOADING extends THANHPHANMANHINHTHUOCCAPCOBAN {
       ).catchError((e) => null),
       onCaiDatQuanLyThanhPhanHinhAnhThuocCap(
         value: QUANLYTHANHPHANHINHANHTHUOCCAP(
-          globalState: getGlobalState,
+          globalStateManagementSystem: getGlobalStateManagementSystem,
           gameController: getGameController,
           thanhPhanQuanLyThuocCapTrucTiep: getThanhPhanQuanLyThuocCapTrucTiep,
           sizeDx: getSizeDx,
@@ -90,7 +91,7 @@ class KHUNGMANHINHMASTERLOADING extends THANHPHANMANHINHTHUOCCAPCOBAN {
       ).catchError((e) => null),
       onCaiDatQuanLyThanhPhanTichHopThuocCap(
         value: QUANLYTHANHPHANTICHHOPTHUOCCAP(
-          globalState: getGlobalState,
+          globalStateManagementSystem: getGlobalStateManagementSystem,
           gameController: getGameController,
           thanhPhanQuanLyThuocCapTrucTiep: getThanhPhanQuanLyThuocCapTrucTiep,
           sizeDx: getSizeDx,
@@ -114,9 +115,9 @@ class KHUNGMANHINHMASTERLOADING extends THANHPHANMANHINHTHUOCCAPCOBAN {
   @override
   Future<void> onCapNhatTrangThaiKichHoatThanhPhan() async {
     double sizeDxManHinhVatLy =
-        getGlobalState?.getChieuRongManHinhVatLy ?? 100.0;
+        getGlobalStateManagementSystem?.getChieuRongManHinhVatLy ?? 100.0;
     double sizeDyManHinhVatLy =
-        getGlobalState?.getChieuCaoManHinhVatLy ?? 100.0;
+        getGlobalStateManagementSystem?.getChieuCaoManHinhVatLy ?? 100.0;
 
     getTrangThaiKichHoatThanhPhan?.getDiemToaDoThanhPhanHuyKichHoat
         ?.onVoidCaiDatPositionDx(value: -10000.0, caiDatUuTien: true);
@@ -164,5 +165,145 @@ class KHUNGMANHINHMASTERLOADING extends THANHPHANMANHINHTHUOCCAPCOBAN {
 
     ///
     return;
+  }
+
+  flutter_async.Timer? _timer;
+
+  CAUTRUCTHUCTHITUANTUCOBAN? cauTrucThucThiTuanTu;
+  /// -----
+  /// TODO: OnLoad
+  /// -----
+  @override
+  Future<void> onLoad() async {
+    super.onLoad();
+
+    // await getGameController?.onKhoiDongGameCoSoSS999();
+
+    // cauTrucThucThiTuanTu = CAUTRUCTHUCTHITUANTUCOBAN.onMacDinh();
+    //
+    // cauTrucThucThiTuanTu?.onAddDonViThucThiTuanTu(
+    //   onThucThiTuanTu: () async {
+    //     await getGlobalStateManagementSystem?.onGetEntityResourceManagement?.getQuanLyTrangThaiHangarChienDauCo?.onTaiTaiNguyenChienDauCo00E03SS010(
+    //         onThucThiHoanTat: null);
+    //   },
+    // );
+    // cauTrucThucThiTuanTu?.onAddDonViThucThiTuanTu(
+    //   onThucThiTuanTu: () async {
+    //     await getGlobalStateManagementSystem?.onGetEntityResourceManagement?.getQuanLyTrangThaiHangarChienDauCo?.onTaiTaiNguyenChienDauCo00E03SS020(
+    //         onThucThiHoanTat: null);
+    //   },
+    // );
+    // cauTrucThucThiTuanTu?.onAddDonViThucThiTuanTu(
+    //   onThucThiTuanTu: () async {
+    //     await getGlobalStateManagementSystem?.onGetEntityResourceManagement?.getQuanLyTrangThaiHangarChienDauCo?.onTaiTaiNguyenChienDauCo00E03SS030(
+    //         onThucThiHoanTat: null);
+    //   },
+    // );
+    // cauTrucThucThiTuanTu?.onAddDonViThucThiTuanTu(
+    //   onThucThiTuanTu: () async {
+    //     await getGlobalStateManagementSystem?.onGetEntityResourceManagement?.getQuanLyTrangThaiHangarChienDauCo?.onTaiTaiNguyenChienDauCo00D04SS010(
+    //         onThucThiHoanTat: null);
+    //   },
+    // );
+    // cauTrucThucThiTuanTu?.onAddDonViThucThiTuanTu(
+    //   onThucThiTuanTu: () async {
+    //     await getGlobalStateManagementSystem?.onGetEntityResourceManagement?.getQuanLyTrangThaiHangarChienDauCo?.onTaiTaiNguyenChienDauCo00C05SS010(
+    //         onThucThiHoanTat: null);
+    //   },
+    // );
+    // cauTrucThucThiTuanTu?.onAddDonViThucThiTuanTu(
+    //   onThucThiTuanTu: () async {
+    //     await getGlobalStateManagementSystem?.onGetEntityResourceManagement?.getQuanLyTrangThaiHangarChienDauCo?.onTaiTaiNguyenChienDauCo00B06SS010(
+    //         onThucThiHoanTat: null);
+    //   },
+    // );
+    // cauTrucThucThiTuanTu?.onAddDonViThucThiTuanTu(
+    //   onThucThiTuanTu: () async {
+    //     await getGlobalStateManagementSystem?.onGetEntityResourceManagement?.getQuanLyTrangThaiHangarChienDauCo?.onTaiTaiNguyenChienDauCo00A07SS010(
+    //         onThucThiHoanTat: null);
+    //   },
+    // );
+    // cauTrucThucThiTuanTu?.onAddDonViThucThiTuanTu(
+    //   onThucThiTuanTu: () async {
+    //     await getGlobalStateManagementSystem?.onGetEntityResourceManagement?.getQuanLyTrangThaiHangarChienDauCo?.onTaiTaiNguyenChienDauCo00S08SS010(
+    //         onThucThiHoanTat: null);
+    //   },
+    // );
+    // cauTrucThucThiTuanTu?.onAddDonViThucThiTuanTu(
+    //   onThucThiTuanTu: () async {
+    //     await getGlobalStateManagementSystem?.onGetEntityResourceManagement?.getQuanLyTrangThaiHangarChienDauCo?.onTaiTaiNguyenChienDauCo0SS09SS010(
+    //         onThucThiHoanTat: null);
+    //   },
+    // );
+    // cauTrucThucThiTuanTu?.onAddDonViThucThiTuanTu(
+    //   onThucThiTuanTu: () async {
+    //     await getGlobalStateManagementSystem?.onGetEntityResourceManagement?.getQuanLyTrangThaiHangarChienDauCo?.onTaiTaiNguyenChienDauCo0SS09SS020(
+    //         onThucThiHoanTat: null);
+    //   },
+    // );
+    // cauTrucThucThiTuanTu?.onAddDonViThucThiTuanTu(
+    //   onThucThiTuanTu: () async {
+    //     await getGlobalStateManagementSystem?.onGetEntityResourceManagement?.getQuanLyTrangThaiHangarChienDauCo?.onTaiTaiNguyenChienDauCo0SS09SS030(
+    //         onThucThiHoanTat: null);
+    //   },
+    // );
+    // cauTrucThucThiTuanTu?.onAddDonViThucThiTuanTu(
+    //   onThucThiTuanTu: () async {
+    //     await getGlobalStateManagementSystem?.onGetEntityResourceManagement?.getQuanLyTrangThaiHangarChienDauCo?.onTaiTaiNguyenChienDauCoSSS10SS010(
+    //         onThucThiHoanTat: null);
+    //   },
+    // );
+    // cauTrucThucThiTuanTu?.onAddDonViThucThiTuanTu(
+    //   onThucThiTuanTu: () async {
+    //     await getGlobalStateManagementSystem?.onGetEntityResourceManagement?.getQuanLyTrangThaiHangarChienDauCo?.onTaiTaiNguyenChienDauCoSSS10SS020(
+    //         onThucThiHoanTat: null);
+    //   },
+    // );
+    // cauTrucThucThiTuanTu?.onAddDonViThucThiTuanTu(
+    //   onThucThiTuanTu: () async {
+    //     await getGlobalStateManagementSystem?.onGetEntityResourceManagement?.getQuanLyTrangThaiHangarChienDauCo?.onTaiTaiNguyenChienDauCoSSS10SS030(
+    //         onThucThiHoanTat: null);
+    //   },
+    // );
+    // cauTrucThucThiTuanTu?.onAddDonViThucThiTuanTu(
+    //   onThucThiTuanTu: () async {
+    //     await getGlobalStateManagementSystem?.onGetEntityResourceManagement?.getQuanLyTrangThaiHangarChienDauCo?.onTaiTaiNguyenChienDauCoSSS10SS040(
+    //         onThucThiHoanTat: null);
+    //   },
+    // );
+    // cauTrucThucThiTuanTu?.onAddDonViThucThiTuanTu(
+    //   onThucThiTuanTu: () async {
+    //     await getGlobalStateManagementSystem?.onGetEntityResourceManagement?.getQuanLyTrangThaiHangarChienDauCo?.onTaiTaiNguyenChienDauCoSSS10SS050(
+    //         onThucThiHoanTat: null);
+    //   },
+    // );
+    //
+    // cauTrucThucThiTuanTu?.onThucThiHoanTat = () async {
+    //   await getGameController?.onKhoiDongGameCoSoSS999();
+    // };
+    //
+    // cauTrucThucThiTuanTu?.onThucThiTuanTu(interval: const Duration(milliseconds: 200));
+
+    // _timer = flutter_async.Timer.periodic(Duration(milliseconds: 1000), (_) async {
+    //
+    //   await getGlobalStateManagementSystem?.onGetEntityResourceManagement?.getQuanLyTrangThaiHangarChienDauCo?.onTaiTaiNguyenChienDauCo(
+    //       onThucThiHoanTat: () async {
+    //         _timer?.cancel();
+    //         await getGameController?.onKhoiDongGameCoSoSS999();
+    //       }
+    //   );
+    //
+    //
+    //
+    //   // if (kDebugMode) {
+    //     print('Tải Tài Nguyên Chiến Đấu Cơ');
+    //   // }
+    // });
+  }
+
+  @override
+  void onRemove() {
+    _timer?.cancel(); // rất quan trọng!
+    super.onRemove();
   }
 }

@@ -26,7 +26,7 @@ class MoHinhThuocTinhPhuongTienTongQuat with CauTrucThucThiCoBan {
     await caiDatThuocTinhKichThuoc(value: MoHinhThuocTinhKichThuocPhuongTien());
     await caiDatThuocTinhPhongThu(value: MoHinhThuocTinhPhongThuPhuongTien());
     await caiDatThuocTinhSinhTon(value: MoHinhThuocTinhSinhTonPhuongTien());
-    await caiDatThuocTinhSprite(value: MoHinhThuocTinhSpritePhuongTien());
+     onVoidCaiDatThuocTinhSprite(value: MoHinhThuocTinhSpritePhuongTien());
 
     /// -----
     /// TODO: Setup Root For SubCom
@@ -434,7 +434,7 @@ class MoHinhThuocTinhPhuongTienTongQuat with CauTrucThucThiCoBan {
   /// -----
   MoHinhThuocTinhSpritePhuongTien? _thuocTinhSprite;
   MoHinhThuocTinhSpritePhuongTien? get getThuocTinhSprite => _thuocTinhSprite;
-  Future<void> caiDatThuocTinhSprite({required MoHinhThuocTinhSpritePhuongTien? value, bool? caiDatUuTien}) async {
+  Future<void> onVoidCaiDatThuocTinhSprite({required MoHinhThuocTinhSpritePhuongTien? value, bool? caiDatUuTien}) async {
     if (caiDatUuTien == true) {
       _thuocTinhSprite = value;
     } else {

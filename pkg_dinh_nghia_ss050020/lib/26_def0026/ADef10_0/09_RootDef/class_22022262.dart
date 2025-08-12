@@ -14,13 +14,15 @@ abstract class BANGDIEUKHIENDOIHINHCOBAN with CauTrucThucThiCoBan, DanhSachQuanL
   /// -----
   @override
   Future<void> onAttachRoot({required dynamic attachValue}) async {
-    if (attachValue is QuanLyTrangThaiTongQuat) {
+    if (attachValue is GlobalStateManagementSystem) {
       await caiDatThietLapTongQuat(value: attachValue.getThietLapTongQuat);
 
       await caiDatDanhSachMoHinhTongQuat(value: attachValue.getDanhSachMoHinhTongQuat);
       await caiDatDieuKhienTinhToanTongQuat(value: attachValue.getDieuKhienTinhToanTongQuat);
       await caiDatSuKienVaChamThuocPhuongTien(value: attachValue.getSuKienVaChamThuocPhuongTien);
       await onCaiDatQuanLyTrangThaiVPPTTQ(value: attachValue.getQuanLyTrangThaiVPPTTQ);
+
+      await caiDatDichVuThanhTichChienDau(value: attachValue.getDichVuThanhTichChienDau);
 
       await onCaiDatViTriChienDauCo(
         value: attachValue.getChienDauCoTongQuat?.getChienDauCoTrucTiepThucThiChienDau?.getTrangThai?.getMoHinh?.getPhuongThuc?.getPhuongThucBay?.getViTri,
@@ -408,6 +410,8 @@ abstract class BANGDIEUKHIENDOIHINHCOBAN with CauTrucThucThiCoBan, DanhSachQuanL
       await trangThai?.getMoHinh?.caiDatSuKienVaChamThuocPhuongTien(value: getSuKienVaChamThuocPhuongTien);
       await trangThai?.getMoHinh?.onCaiDatQuanLyTrangThaiVPPTTQ(value: getQuanLyTrangThaiVPPTTQ);
 
+      await trangThai?.getMoHinh?.onCaiDatDichVuThanhTichChienDau(value: getDichVuThanhTichChienDau);
+
       await trangThai?.getMoHinh?.onCaiDatViTriChienDauCo(value: getViTriChienDauCo);
     }
 
@@ -479,6 +483,8 @@ abstract class BANGDIEUKHIENDOIHINHCOBAN with CauTrucThucThiCoBan, DanhSachQuanL
       await trangThai?.getMoHinh?.caiDatSuKienVaChamThuocPhuongTien(value: getSuKienVaChamThuocPhuongTien);
       await trangThai?.getMoHinh?.onCaiDatQuanLyTrangThaiVPPTTQ(value: getQuanLyTrangThaiVPPTTQ);
 
+      await trangThai?.getMoHinh?.onCaiDatDichVuThanhTichChienDau(value: getDichVuThanhTichChienDau);
+
       await trangThai?.getMoHinh?.onCaiDatViTriChienDauCo(value: getViTriChienDauCo);
     }
 
@@ -549,6 +555,8 @@ abstract class BANGDIEUKHIENDOIHINHCOBAN with CauTrucThucThiCoBan, DanhSachQuanL
       await trangThai?.getMoHinh?.caiDatQuanLyDieuKhienTinhToan(value: getDieuKhienTinhToanTongQuat);
       await trangThai?.getMoHinh?.caiDatSuKienVaChamThuocPhuongTien(value: getSuKienVaChamThuocPhuongTien);
       await trangThai?.getMoHinh?.onCaiDatQuanLyTrangThaiVPPTTQ(value: getQuanLyTrangThaiVPPTTQ);
+
+      await trangThai?.getMoHinh?.onCaiDatDichVuThanhTichChienDau(value: getDichVuThanhTichChienDau);
 
       await trangThai?.getMoHinh?.onCaiDatViTriChienDauCo(value: getViTriChienDauCo);
     }

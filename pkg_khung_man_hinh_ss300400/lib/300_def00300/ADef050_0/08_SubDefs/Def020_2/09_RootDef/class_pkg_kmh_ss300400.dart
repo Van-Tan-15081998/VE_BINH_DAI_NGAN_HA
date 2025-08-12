@@ -9,7 +9,7 @@ class HINHANHBACKGROUNDKHUNGMANHINH extends THANHPHANHINHANHBACKGROUNDTHUOCCAP {
   /// TODO:
   /// -----
   HINHANHBACKGROUNDKHUNGMANHINH({
-    required super.globalState, //
+    required super.globalStateManagementSystem, //
     required super.gameController,
     required super.thanhPhanQuanLyThuocCapTrucTiep,
     required super.sizeDx, //
@@ -30,6 +30,8 @@ class HINHANHBACKGROUNDKHUNGMANHINH extends THANHPHANHINHANHBACKGROUNDTHUOCCAP {
     await getThanhPhanGameUI?.onInitRoot();
 
     await onCapNhatChiTietThanhPhanGameUI();
+
+
 
     return;
   }

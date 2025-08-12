@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:pkg_dinh_nghia_ss020/pkg_dinh_nghia_ss020_exp.dart';
 import 'package:pkg_dinh_nghia_ss028/pkg_dinh_nghia_ss028_exp.dart';
 import 'package:pkg_dinh_nghia_ss050/pkg_dinh_nghia_ss050_exp.dart';
-import 'package:pkg_man_hinh_ss00028a/pkg_man_hinh_ss00028a_exp.dart';
+// import 'package:pkg_man_hinh_ss00028a/pkg_man_hinh_ss00028a_exp.dart';
 import 'package:pkg_man_hinh_ss00028/24_def0024/ADef22_0/08_SubDefs/Def20_2/08_SubDefs/Def20_4/08_SubDefs/Def20_6/08_SubDefs/Def20_8/09_RootDef/class_20206266.dart';
 import 'package:pkg_man_hinh_ss00028/24_def0024/ADef22_0/08_SubDefs/Def20_2/08_SubDefs/Def20_4/08_SubDefs/Def20_6/08_SubDefs/Def22_8/09_RootDef/class_20880286.dart';
 import 'package:pkg_man_hinh_ss00028/24_def0024/ADef22_0/08_SubDefs/Def20_2/08_SubDefs/Def24_4/08_SubDefs/Def20_6/08_SubDefs/Def20_8/09_RootDef/class_82668626.dart';
@@ -29,7 +29,7 @@ import 'package:provider/provider.dart';
 class MANHINHTHANHPHANAAAA extends StatefulWidget {
   const MANHINHTHANHPHANAAAA({super.key, required this.trangThaiTongQuat});
 
-  final QuanLyTrangThaiTongQuat? trangThaiTongQuat;
+  final GlobalStateManagementSystem? trangThaiTongQuat;
 
   @override
   State<MANHINHTHANHPHANAAAA> createState() => _MANHINHTHANHPHANAAAAState();
@@ -460,9 +460,9 @@ class _MANHINHTHANHPHANAAAAState extends State<MANHINHTHANHPHANAAAA> with Automa
   /// -----
   /// TODO:
   /// -----
-  QuanLyTrangThaiTongQuat? _trangThaiTongQuat;
-  QuanLyTrangThaiTongQuat? get getTrangThaiTongQuat => _trangThaiTongQuat;
-  Future<void> caiDatTrangThaiTongQuat({required QuanLyTrangThaiTongQuat? value}) async {
+  GlobalStateManagementSystem? _trangThaiTongQuat;
+  GlobalStateManagementSystem? get getTrangThaiTongQuat => _trangThaiTongQuat;
+  Future<void> caiDatTrangThaiTongQuat({required GlobalStateManagementSystem? value}) async {
     _trangThaiTongQuat ??= value;
     return;
   }
@@ -536,15 +536,7 @@ class _MANHINHTHANHPHANAAAAState extends State<MANHINHTHANHPHANAAAA> with Automa
                     bottom: 0,
                     width: KichThuocTienIchCoBan.maxWidth(context) * 0.95,
                     height: KichThuocTienIchCoBan.maxHeight(context) * 0.80,
-                    child: MANHINHBACHKHOACHIENDAUCO(
-                      trangThaiTongQuat: getTrangThaiTongQuat,
-                      onChuyenChonTraiChienDauCoChiDinhThucThiThongTin: () async {
-                        await onChuyenChonTrai();
-                      },
-                      onChuyenChonPhaiChienDauCoChiDinhThucThiThongTin: () async {
-                        await onChuyenChonPhai();
-                      },
-                    ),
+                    child: Container()
                   ),
                 ],
               ),
@@ -562,7 +554,7 @@ class _MANHINHTHANHPHANAAAAState extends State<MANHINHTHANHPHANAAAA> with Automa
   Widget build(BuildContext context) {
     super.build(context);
 
-    final QuanLyTrangThaiTongQuat trangThaiTongQuat = Provider.of<QuanLyTrangThaiTongQuat>(context, listen: false);
+    final GlobalStateManagementSystem trangThaiTongQuat = Provider.of<GlobalStateManagementSystem>(context, listen: false);
     _trangThaiTongQuat ??= trangThaiTongQuat;
 
     return Container(

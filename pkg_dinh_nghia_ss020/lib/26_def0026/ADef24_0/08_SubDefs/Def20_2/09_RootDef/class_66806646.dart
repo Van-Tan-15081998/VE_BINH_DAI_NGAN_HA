@@ -622,7 +622,7 @@ class DinhHuongBayCoBan {
     return;
   }
 
-  Future<bool> isDinhHuongTheoViTriPhuongTienLayMucTieu() async {
+  bool onCheckBoolXacDinhViTriPhuongTienHoatDongLayMucTieu() {
     if (getDinhHuong == '[DINH_HUONG_THEO_VI_TRI_PHUONG_TIEN_LAY_MUC_TIEU]') {
       return true;
     }

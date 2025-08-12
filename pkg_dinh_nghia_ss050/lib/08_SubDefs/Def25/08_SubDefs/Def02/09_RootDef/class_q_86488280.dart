@@ -12,7 +12,7 @@ class QuanLyTrangThaiChienDauCoTrucTiepThucThiChienDau with KhungThucThiCoBan, D
   @override
   Future<void> onAttachRoot({required dynamic attachValue}) async {
 
-    if (attachValue is QuanLyTrangThaiTongQuat) {
+    if (attachValue is GlobalStateManagementSystem) {
       await onSetEntityResourceManagement(value: attachValue.onGetEntityResourceManagement);
     }
 
@@ -70,7 +70,7 @@ class QuanLyTrangThaiChienDauCoTrucTiepThucThiChienDau with KhungThucThiCoBan, D
   /// -----
   @override
   Future<void> onAttachRootForSubCom({required dynamic attachValue}) async {
-    if (attachValue is QuanLyTrangThaiTongQuat) {
+    if (attachValue is GlobalStateManagementSystem) {
       ///
     }
 
@@ -104,7 +104,17 @@ class QuanLyTrangThaiChienDauCoTrucTiepThucThiChienDau with KhungThucThiCoBan, D
   /// -----
   /// TODO:
   /// -----
+  Future<void> onResetViTriChienDauCo() async {
+
+    return;
+  }
+
+  /// -----
+  /// TODO:
+  /// -----
   Future<void> onTaiTaiNguyenChienDauCo() async {
+
+    // return;
 
     if (getTrangThai?.getMoHinh is ChienDauCoDangCapSao00E03SS01) {
       await onGetEntityResourceManagement?.getQuanLyTrangThaiHangarChienDauCo?.onTaiTaiNguyenChienDauCo00E03SS010FullSize(isLoadForMissionExecution: true);

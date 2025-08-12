@@ -12,17 +12,18 @@ import 'package:pkg_khung_man_hinh_ss020000/pkg_khung_man_hinh_ss020000_exp.dart
 /// -----
 /// TODO: Thành Phần Màn Hình Drag Thuộc Cấp
 /// -----
-abstract class THANHPHANMANHINHDRAGTHUOCCAPCOBAN extends PositionComponent with DragCallbacks, HasGameRef, CAUTRUCTHUCTHICOBAN, KICHBANDIEUKHIENTHUOCCAPCOBAN {
+// abstract class THANHPHANMANHINHDRAGTHUOCCAPCOBAN extends PositionComponent with DragCallbacks, HasGameRef, CAUTRUCTHUCTHICOBAN, KICHBANDIEUKHIENTHUOCCAPCOBAN {
+abstract class THANHPHANMANHINHDRAGTHUOCCAPCOBAN extends PositionComponent with DragCallbacks, CAUTRUCTHUCTHICOBAN, KICHBANDIEUKHIENTHUOCCAPCOBAN {
   /// -----
   /// TODO:
   /// -----
-  QuanLyTrangThaiTongQuat? _globalState;
-  QuanLyTrangThaiTongQuat? get getGlobalState => _globalState;
-  void onVoidCaiDatGlobalState({required QuanLyTrangThaiTongQuat? value, bool? caiDatUuTien}) {
+  GlobalStateManagementSystem? _globalStateManagementSystem;
+  GlobalStateManagementSystem? get getGlobalStateManagementSystem => _globalStateManagementSystem;
+  void onSetGlobalStateManagementSystem({required GlobalStateManagementSystem? value, bool? caiDatUuTien}) {
     if (caiDatUuTien == true) {
-      _globalState = value;
+      _globalStateManagementSystem = value;
     } else {
-      _globalState ??= value;
+      _globalStateManagementSystem ??= value;
     }
 
     return;
@@ -135,6 +136,68 @@ abstract class THANHPHANMANHINHDRAGTHUOCCAPCOBAN extends PositionComponent with 
   }
 
   /// -----
+  /// TODO: FlameGame Parent Component
+  /// -----
+  Component? _flameGameParentComponent;
+  Component? get getFlameGameParentComponent => _flameGameParentComponent;
+  void onCaiDatFlameGameParentComponent({required Component? value, bool? isPriorityOverride}) {
+    if (isPriorityOverride == true) {
+      _flameGameParentComponent = value;
+    } else {
+      _flameGameParentComponent ??= value;
+    }
+
+    ///
+    return;
+  }
+
+  /// -----
+  /// TODO: Parent Component
+  /// -----
+  Component? _parentComponent;
+  Component? get getParentComponent => _parentComponent;
+  void onCaiDatParentComponent({required Component? value, bool? isPriorityOverride}) {
+    if (isPriorityOverride == true) {
+      _parentComponent = value;
+    } else {
+      _parentComponent ??= value;
+    }
+
+    ///
+    return;
+  }
+
+  Future<void> onAddToParent() async {
+
+    if (getFlameGameParentComponent != null && isMounted == false) {
+      await getFlameGameParentComponent?.add(this);
+    } else if (getParentComponent != null && isMounted == false) {
+      await getParentComponent?.add(this);
+    }
+
+    return;
+  }
+
+  /// -----
+  /// TODO:
+  /// -----
+  Future<void> onRemoveFromParent() async {
+    if (isMounted == true) {
+      removeFromParent();
+    }
+
+    return;
+  }
+
+  Future<void> onActiveShow() async {
+    await onAddToParent();
+  }
+
+  Future<void> onInActiveShow() async {
+    await onRemoveFromParent();
+  }
+
+  /// -----
   /// TODO:
   /// -----
   TRANGTHAIKICHHOATTHANHPHAN? _trangThaiKichHoatThanhPhan;
@@ -156,8 +219,8 @@ abstract class THANHPHANMANHINHDRAGTHUOCCAPCOBAN extends PositionComponent with 
   /// TODO:
   /// -----
   Future<void> onCapNhatTrangThaiKichHoatThanhPhan() async {
-    double sizeDxManHinhVatLy = getGlobalState?.getThietLapTongQuat?.getChieuRongManHinhVatLy ?? 100.0;
-    double sizeDyManHinhVatLy = getGlobalState?.getThietLapTongQuat?.getChieuCaoManHinhVatLy ?? 100.0;
+    double sizeDxManHinhVatLy = getGlobalStateManagementSystem?.getThietLapTongQuat?.getChieuRongManHinhVatLy ?? 100.0;
+    double sizeDyManHinhVatLy = getGlobalStateManagementSystem?.getThietLapTongQuat?.getChieuCaoManHinhVatLy ?? 100.0;
 
     getTrangThaiKichHoatThanhPhan?.getDiemToaDoThanhPhanHuyKichHoat?.onVoidCaiDatPositionDx(value: -10000.0, caiDatUuTien: true);
     getTrangThaiKichHoatThanhPhan?.getDiemToaDoThanhPhanHuyKichHoat?.onVoidCaiDatPositionDy(value: -10000.0, caiDatUuTien: true);
@@ -178,11 +241,15 @@ abstract class THANHPHANMANHINHDRAGTHUOCCAPCOBAN extends PositionComponent with 
 
       onVoidCaiDatPositionDx(value: getTrangThaiKichHoatThanhPhan?.getDiemToaDoThanhPhanKichHoat?.getPositionDx, caiDatUuTien: true);
       onVoidCaiDatPositionDy(value: getTrangThaiKichHoatThanhPhan?.getDiemToaDoThanhPhanKichHoat?.getPositionDy, caiDatUuTien: true);
+
+      await onActiveShow();
     } else if (getTrangThaiKichHoatThanhPhan?.getKiemTraKichHoat == false) {
       getTrangThaiKichHoatThanhPhan?.onVoidCaiDatKiemTraKichHoat(value: true, caiDatUuTien: true);
 
       onVoidCaiDatPositionDx(value: getTrangThaiKichHoatThanhPhan?.getDiemToaDoThanhPhanKichHoat?.getPositionDx, caiDatUuTien: true);
       onVoidCaiDatPositionDy(value: getTrangThaiKichHoatThanhPhan?.getDiemToaDoThanhPhanKichHoat?.getPositionDy, caiDatUuTien: true);
+
+      await onActiveShow();
     } else if (getTrangThaiKichHoatThanhPhan?.getKiemTraKichHoat == true) {
       await onHuyKichHoatThanhPhanManHinhThuocCap();
       onHuyKichHoat?.call();
@@ -201,6 +268,8 @@ abstract class THANHPHANMANHINHDRAGTHUOCCAPCOBAN extends PositionComponent with 
     onVoidCaiDatPositionDx(value: getTrangThaiKichHoatThanhPhan?.getDiemToaDoThanhPhanHuyKichHoat?.getPositionDx, caiDatUuTien: true);
     onVoidCaiDatPositionDy(value: getTrangThaiKichHoatThanhPhan?.getDiemToaDoThanhPhanHuyKichHoat?.getPositionDy, caiDatUuTien: true);
 
+    await onInActiveShow();
+
     ///
     return;
   }
@@ -209,7 +278,7 @@ abstract class THANHPHANMANHINHDRAGTHUOCCAPCOBAN extends PositionComponent with 
   /// TODO:
   /// -----
   THANHPHANMANHINHDRAGTHUOCCAPCOBAN({
-    required QuanLyTrangThaiTongQuat? globalState,
+    required GlobalStateManagementSystem? globalStateManagementSystem,
     required KHUNGMANHINHGAMECOSO? gameController,
     required THANHPHANMANHINHTHUOCCAPCOBAN? thanhPhanQuanLyThuocCapTrucTiep,
     required double? sizeDx,
@@ -217,7 +286,7 @@ abstract class THANHPHANMANHINHDRAGTHUOCCAPCOBAN extends PositionComponent with 
     required double? positionDx,
     required double? positionDy,
   }) {
-    onVoidCaiDatGlobalState(value: globalState, caiDatUuTien: true);
+    onSetGlobalStateManagementSystem(value: globalStateManagementSystem, caiDatUuTien: true);
     onVoidCaiDatGameController(value: gameController, caiDatUuTien: true);
     onVoidCaiDatThanhPhanQuanLyThuocCapTrucTiep(value: thanhPhanQuanLyThuocCapTrucTiep, caiDatUuTien: true);
     onVoidCaiDatSizeDx(value: sizeDx, caiDatUuTien: true);
@@ -309,7 +378,9 @@ abstract class THANHPHANMANHINHDRAGTHUOCCAPCOBAN extends PositionComponent with 
       /// -----
       /// TODO:
       /// -----
-      await flameGame?.add(this);
+      // await flameGame?.add(this);
+
+      // parent?.add(this);
 
       /// -----
       /// TODO:
@@ -348,6 +419,8 @@ abstract class THANHPHANMANHINHDRAGTHUOCCAPCOBAN extends PositionComponent with 
   /// TODO: Remove Comp Root
   /// -----
   Future<void> onRemoveRoot({required FlameGame? flameGame, required Component? component}) async {
+
+    removeFromParent();
 
     /// -----
     /// TODO: Remove Comp Root For SubCom
@@ -1090,27 +1163,27 @@ abstract class THANHPHANMANHINHDRAGTHUOCCAPCOBAN extends PositionComponent with 
   /// TODO: Kích Hoạt Khung Màn Hình Thuộc Cấp SS300400 [Thực Thi Nhiệm Vụ Chiến Thắng]
   /// -----
   @override
-  Future<void> onKichHoatKhungManHinhThuocCapSS300400() async {
+  Future<void> onKichHoatKhungManHinhThuocCapSS300400ChienThang() async {
     try {
       /// -----
       /// TODO:
       /// -----
       await Future.wait([
-        getQuanLyThanhPhanManHinhThuocCap?.onKichHoatKhungManHinhThuocCapSS300400().catchError((e) => null) ??
-            onReportRootIssue(nameFunction: 'onKichHoatKhungManHinhThuocCapSS300400'),
-        getQuanLyThanhPhanNutBamThuocCap?.onKichHoatKhungManHinhThuocCapSS300400().catchError((e) => null) ??
-            onReportRootIssue(nameFunction: 'onKichHoatKhungManHinhThuocCapSS300400'),
-        getQuanLyThanhPhanVanBanThuocCap?.onKichHoatKhungManHinhThuocCapSS300400().catchError((e) => null) ??
-            onReportRootIssue(nameFunction: 'onKichHoatKhungManHinhThuocCapSS300400'),
-        getQuanLyThanhPhanHinhAnhThuocCap?.onKichHoatKhungManHinhThuocCapSS300400().catchError((e) => null) ??
-            onReportRootIssue(nameFunction: 'onKichHoatKhungManHinhThuocCapSS300400'),
-        getQuanLyThanhPhanTichHopThuocCap?.onKichHoatKhungManHinhThuocCapSS300400().catchError((e) => null) ??
-            onReportRootIssue(nameFunction: 'onKichHoatKhungManHinhThuocCapSS300400'),
+        getQuanLyThanhPhanManHinhThuocCap?.onKichHoatKhungManHinhThuocCapSS300400ChienThang().catchError((e) => null) ??
+            onReportRootIssue(nameFunction: 'onKichHoatKhungManHinhThuocCapSS300400ChienThang'),
+        getQuanLyThanhPhanNutBamThuocCap?.onKichHoatKhungManHinhThuocCapSS300400ChienThang().catchError((e) => null) ??
+            onReportRootIssue(nameFunction: 'onKichHoatKhungManHinhThuocCapSS300400ChienThang'),
+        getQuanLyThanhPhanVanBanThuocCap?.onKichHoatKhungManHinhThuocCapSS300400ChienThang().catchError((e) => null) ??
+            onReportRootIssue(nameFunction: 'onKichHoatKhungManHinhThuocCapSS300400ChienThang'),
+        getQuanLyThanhPhanHinhAnhThuocCap?.onKichHoatKhungManHinhThuocCapSS300400ChienThang().catchError((e) => null) ??
+            onReportRootIssue(nameFunction: 'onKichHoatKhungManHinhThuocCapSS300400ChienThang'),
+        getQuanLyThanhPhanTichHopThuocCap?.onKichHoatKhungManHinhThuocCapSS300400ChienThang().catchError((e) => null) ??
+            onReportRootIssue(nameFunction: 'onKichHoatKhungManHinhThuocCapSS300400ChienThang'),
       ]);
 
       ///
     } catch (e) {
-      await onReportRootIssue(nameFunction: 'onKichHoatKhungManHinhThuocCapSS300400');
+      await onReportRootIssue(nameFunction: 'onKichHoatKhungManHinhThuocCapSS300400ChienThang');
     }
 
     ///
@@ -1121,27 +1194,27 @@ abstract class THANHPHANMANHINHDRAGTHUOCCAPCOBAN extends PositionComponent with 
   /// TODO: Hủy Kích Hoạt Khung Màn Hình Thuộc Cấp SS300400 [Thực Thi Nhiệm Vụ Chiến Thắng]
   /// -----
   @override
-  Future<void> onHuyKichHoatKhungManHinhThuocCapSS300400() async {
+  Future<void> onHuyKichHoatKhungManHinhThuocCapSS300400ChienThang() async {
     try {
       /// -----
       /// TODO:
       /// -----
       await Future.wait([
-        getQuanLyThanhPhanManHinhThuocCap?.onHuyKichHoatKhungManHinhThuocCapSS300400().catchError((e) => null) ??
-            onReportRootIssue(nameFunction: 'onHuyKichHoatKhungManHinhThuocCapSS300400'),
-        getQuanLyThanhPhanNutBamThuocCap?.onHuyKichHoatKhungManHinhThuocCapSS300400().catchError((e) => null) ??
-            onReportRootIssue(nameFunction: 'onHuyKichHoatKhungManHinhThuocCapSS300400'),
-        getQuanLyThanhPhanVanBanThuocCap?.onHuyKichHoatKhungManHinhThuocCapSS300400().catchError((e) => null) ??
-            onReportRootIssue(nameFunction: 'onHuyKichHoatKhungManHinhThuocCapSS300400'),
-        getQuanLyThanhPhanHinhAnhThuocCap?.onHuyKichHoatKhungManHinhThuocCapSS300400().catchError((e) => null) ??
-            onReportRootIssue(nameFunction: 'onHuyKichHoatKhungManHinhThuocCapSS300400'),
-        getQuanLyThanhPhanTichHopThuocCap?.onHuyKichHoatKhungManHinhThuocCapSS300400().catchError((e) => null) ??
-            onReportRootIssue(nameFunction: 'onHuyKichHoatKhungManHinhThuocCapSS300400'),
+        getQuanLyThanhPhanManHinhThuocCap?.onHuyKichHoatKhungManHinhThuocCapSS300400ChienThang().catchError((e) => null) ??
+            onReportRootIssue(nameFunction: 'onHuyKichHoatKhungManHinhThuocCapSS300400ChienThang'),
+        getQuanLyThanhPhanNutBamThuocCap?.onHuyKichHoatKhungManHinhThuocCapSS300400ChienThang().catchError((e) => null) ??
+            onReportRootIssue(nameFunction: 'onHuyKichHoatKhungManHinhThuocCapSS300400ChienThang'),
+        getQuanLyThanhPhanVanBanThuocCap?.onHuyKichHoatKhungManHinhThuocCapSS300400ChienThang().catchError((e) => null) ??
+            onReportRootIssue(nameFunction: 'onHuyKichHoatKhungManHinhThuocCapSS300400ChienThang'),
+        getQuanLyThanhPhanHinhAnhThuocCap?.onHuyKichHoatKhungManHinhThuocCapSS300400ChienThang().catchError((e) => null) ??
+            onReportRootIssue(nameFunction: 'onHuyKichHoatKhungManHinhThuocCapSS300400ChienThang'),
+        getQuanLyThanhPhanTichHopThuocCap?.onHuyKichHoatKhungManHinhThuocCapSS300400ChienThang().catchError((e) => null) ??
+            onReportRootIssue(nameFunction: 'onHuyKichHoatKhungManHinhThuocCapSS300400ChienThang'),
       ]);
 
       ///
     } catch (e) {
-      await onReportRootIssue(nameFunction: 'onHuyKichHoatKhungManHinhThuocCapSS300400');
+      await onReportRootIssue(nameFunction: 'onHuyKichHoatKhungManHinhThuocCapSS300400ChienThang');
     }
 
     ///
@@ -1198,6 +1271,31 @@ abstract class THANHPHANMANHINHDRAGTHUOCCAPCOBAN extends PositionComponent with 
       ///
     } catch (e) {
       await onReportRootIssue(nameFunction: 'onHuyKichHoatKhungManHinhThuocCapSS300500');
+    }
+
+    ///
+    return;
+  }
+
+  @override
+  Future<void> onKichHoatVanHanhKhungManHinhChienDau() async {
+    try {
+      await Future.wait([
+        getQuanLyThanhPhanManHinhThuocCap?.onKichHoatVanHanhKhungManHinhChienDau().catchError((e) => null) ??
+            onReportRootIssue(nameFunction: 'onKichHoatVanHanhKhungManHinhChienDau'),
+        getQuanLyThanhPhanNutBamThuocCap?.onKichHoatVanHanhKhungManHinhChienDau().catchError((e) => null) ??
+            onReportRootIssue(nameFunction: 'onKichHoatVanHanhKhungManHinhChienDau'),
+        getQuanLyThanhPhanVanBanThuocCap?.onKichHoatVanHanhKhungManHinhChienDau().catchError((e) => null) ??
+            onReportRootIssue(nameFunction: 'onKichHoatVanHanhKhungManHinhChienDau'),
+        getQuanLyThanhPhanHinhAnhThuocCap?.onKichHoatVanHanhKhungManHinhChienDau().catchError((e) => null) ??
+            onReportRootIssue(nameFunction: 'onKichHoatVanHanhKhungManHinhChienDau'),
+        getQuanLyThanhPhanTichHopThuocCap?.onKichHoatVanHanhKhungManHinhChienDau().catchError((e) => null) ??
+            onReportRootIssue(nameFunction: 'onKichHoatVanHanhKhungManHinhChienDau'),
+      ]);
+
+      ///
+    } catch (e) {
+      await onReportRootIssue(nameFunction: 'onKichHoatVanHanhKhungManHinhChienDau');
     }
 
     ///

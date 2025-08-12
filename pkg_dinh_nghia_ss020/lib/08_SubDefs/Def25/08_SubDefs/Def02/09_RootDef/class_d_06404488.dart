@@ -51,6 +51,12 @@ class TienTrinhThucThiCoBan {
     }
     return false;
   }
+  bool onCheckBoolDangChuanBiThucThi() {
+    if (getTrangThai == '[TRANG_THAI_DANG_CHUAN_BI_THUC_THI]') {
+      return true;
+    }
+    return false;
+  }
 
   /// -----
   /// TODO: Trạng Thái => Đang Thực Thi
@@ -68,7 +74,7 @@ class TienTrinhThucThiCoBan {
     return;
   }
 
-  bool isDangThucThi() {
+  bool onCheckBoolDangThucThi() {
     if (getTrangThai == '[TRANG_THAI_DANG_THUC_THI]') {
       return true;
     }
@@ -126,6 +132,13 @@ class TienTrinhThucThiCoBan {
   }
 
   Future<bool> isHuyThucThi() async {
+    if (getTrangThai == '[TRANG_THAI_HUY_THUC_THI]') {
+      return true;
+    }
+    return false;
+  }
+
+  bool onCheckBoolHuyThucThi() {
     if (getTrangThai == '[TRANG_THAI_HUY_THUC_THI]') {
       return true;
     }

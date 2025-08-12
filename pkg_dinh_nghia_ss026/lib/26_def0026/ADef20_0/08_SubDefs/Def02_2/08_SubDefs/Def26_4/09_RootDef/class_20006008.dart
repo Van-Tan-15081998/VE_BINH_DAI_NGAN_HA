@@ -42,13 +42,15 @@ abstract class DOIHINHPHUONGTIENCOBAN with CauTrucThucThiCoBan {
   /// -----
   @override
   Future<void> onSetupRoot() async {
-    /// -----
-    /// TODO:
-    /// -----
-    await caiDatDanhSachPhuongTienNhomSS00A(value: DANHSACHPHUONGTIENNHOMSS00ATHUOCGIAIDOANCOBAN(), caiDatUuTien: true);
-    await caiDatDanhSachPhuongTienNhomSS00B(value: DANHSACHPHUONGTIENNHOMSS00BTHUOCGIAIDOANCOBAN(), caiDatUuTien: true);
-    await caiDatDanhSachPhuongTienNhomSS00C(value: DANHSACHPHUONGTIENNHOMSS00CTHUOCGIAIDOANCOBAN(), caiDatUuTien: true);
-    await caiDatDanhSachPhuongTienNhomSS00D(value: DANHSACHPHUONGTIENNHOMSS00DTHUOCGIAIDOANCOBAN(), caiDatUuTien: true);
+    await Future.wait([
+      /// -----
+      /// TODO:
+      /// -----
+      caiDatDanhSachPhuongTienNhomSS00A(value: DANHSACHPHUONGTIENNHOMSS00ATHUOCGIAIDOANCOBAN(), caiDatUuTien: true).catchError((e) => null),
+      caiDatDanhSachPhuongTienNhomSS00B(value: DANHSACHPHUONGTIENNHOMSS00BTHUOCGIAIDOANCOBAN(), caiDatUuTien: true).catchError((e) => null),
+      caiDatDanhSachPhuongTienNhomSS00C(value: DANHSACHPHUONGTIENNHOMSS00CTHUOCGIAIDOANCOBAN(), caiDatUuTien: true).catchError((e) => null),
+      caiDatDanhSachPhuongTienNhomSS00D(value: DANHSACHPHUONGTIENNHOMSS00DTHUOCGIAIDOANCOBAN(), caiDatUuTien: true).catchError((e) => null),
+    ]);
 
     /// -----
     /// TODO: Setup Root For SubCom
@@ -78,58 +80,62 @@ abstract class DOIHINHPHUONGTIENCOBAN with CauTrucThucThiCoBan {
   /// -----
   @override
   Future<void> onAttachRootForSubCom({required dynamic attachValue}) async {
-    /// -----
-    /// TODO:
-    /// -----
-    // await getGiaiDoanSS020?.caiDatDanhSachPhuongTien(value: getDanhSachPhuongTien);
-    // await getGiaiDoanSS030?.caiDatDanhSachPhuongTien(value: getDanhSachPhuongTien);
-    // await getGiaiDoanSS040?.caiDatDanhSachPhuongTien(value: getDanhSachPhuongTien);
-    /// TODO:
-    await getGiaiDoanSS010?.caiDatDanhSachPhuongTienNhomSS00A(value: getDanhSachPhuongTienNhomSS00A, caiDatUuTien: true);
-    await getGiaiDoanSS020?.caiDatDanhSachPhuongTienNhomSS00A(value: getDanhSachPhuongTienNhomSS00A, caiDatUuTien: true);
-    await getGiaiDoanSS030?.caiDatDanhSachPhuongTienNhomSS00A(value: getDanhSachPhuongTienNhomSS00A, caiDatUuTien: true);
-    await getGiaiDoanSS040?.caiDatDanhSachPhuongTienNhomSS00A(value: getDanhSachPhuongTienNhomSS00A, caiDatUuTien: true);
-    await getGiaiDoanSS050?.caiDatDanhSachPhuongTienNhomSS00A(value: getDanhSachPhuongTienNhomSS00A, caiDatUuTien: true);
-    await getGiaiDoanSS060?.caiDatDanhSachPhuongTienNhomSS00A(value: getDanhSachPhuongTienNhomSS00A, caiDatUuTien: true);
-    await getGiaiDoanSS070?.caiDatDanhSachPhuongTienNhomSS00A(value: getDanhSachPhuongTienNhomSS00A, caiDatUuTien: true);
+    await Future.wait([
+      /// -----
+      /// TODO:
+      /// -----
+      // await getGiaiDoanSS020?.caiDatDanhSachPhuongTien(value: getDanhSachPhuongTien);
+      // await getGiaiDoanSS030?.caiDatDanhSachPhuongTien(value: getDanhSachPhuongTien);
+      // await getGiaiDoanSS040?.caiDatDanhSachPhuongTien(value: getDanhSachPhuongTien);
+      /// TODO:
+      getGiaiDoanSS010?.caiDatDanhSachPhuongTienNhomSS00A(value: getDanhSachPhuongTienNhomSS00A, caiDatUuTien: true).catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getGiaiDoanSS020?.caiDatDanhSachPhuongTienNhomSS00A(value: getDanhSachPhuongTienNhomSS00A, caiDatUuTien: true).catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getGiaiDoanSS030?.caiDatDanhSachPhuongTienNhomSS00A(value: getDanhSachPhuongTienNhomSS00A, caiDatUuTien: true).catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getGiaiDoanSS040?.caiDatDanhSachPhuongTienNhomSS00A(value: getDanhSachPhuongTienNhomSS00A, caiDatUuTien: true).catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getGiaiDoanSS050?.caiDatDanhSachPhuongTienNhomSS00A(value: getDanhSachPhuongTienNhomSS00A, caiDatUuTien: true).catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getGiaiDoanSS060?.caiDatDanhSachPhuongTienNhomSS00A(value: getDanhSachPhuongTienNhomSS00A, caiDatUuTien: true).catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getGiaiDoanSS070?.caiDatDanhSachPhuongTienNhomSS00A(value: getDanhSachPhuongTienNhomSS00A, caiDatUuTien: true).catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
 
-    /// TODO:
-    await getGiaiDoanSS010?.caiDatDanhSachPhuongTienNhomSS00B(value: getDanhSachPhuongTienNhomSS00B, caiDatUuTien: true);
-    await getGiaiDoanSS020?.caiDatDanhSachPhuongTienNhomSS00B(value: getDanhSachPhuongTienNhomSS00B, caiDatUuTien: true);
-    await getGiaiDoanSS030?.caiDatDanhSachPhuongTienNhomSS00B(value: getDanhSachPhuongTienNhomSS00B, caiDatUuTien: true);
-    await getGiaiDoanSS040?.caiDatDanhSachPhuongTienNhomSS00B(value: getDanhSachPhuongTienNhomSS00B, caiDatUuTien: true);
-    await getGiaiDoanSS050?.caiDatDanhSachPhuongTienNhomSS00B(value: getDanhSachPhuongTienNhomSS00B, caiDatUuTien: true);
-    await getGiaiDoanSS060?.caiDatDanhSachPhuongTienNhomSS00B(value: getDanhSachPhuongTienNhomSS00B, caiDatUuTien: true);
-    await getGiaiDoanSS070?.caiDatDanhSachPhuongTienNhomSS00B(value: getDanhSachPhuongTienNhomSS00B, caiDatUuTien: true);
+      /// TODO:
+      getGiaiDoanSS010?.caiDatDanhSachPhuongTienNhomSS00B(value: getDanhSachPhuongTienNhomSS00B, caiDatUuTien: true).catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getGiaiDoanSS020?.caiDatDanhSachPhuongTienNhomSS00B(value: getDanhSachPhuongTienNhomSS00B, caiDatUuTien: true).catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getGiaiDoanSS030?.caiDatDanhSachPhuongTienNhomSS00B(value: getDanhSachPhuongTienNhomSS00B, caiDatUuTien: true).catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getGiaiDoanSS040?.caiDatDanhSachPhuongTienNhomSS00B(value: getDanhSachPhuongTienNhomSS00B, caiDatUuTien: true).catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getGiaiDoanSS050?.caiDatDanhSachPhuongTienNhomSS00B(value: getDanhSachPhuongTienNhomSS00B, caiDatUuTien: true).catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getGiaiDoanSS060?.caiDatDanhSachPhuongTienNhomSS00B(value: getDanhSachPhuongTienNhomSS00B, caiDatUuTien: true).catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getGiaiDoanSS070?.caiDatDanhSachPhuongTienNhomSS00B(value: getDanhSachPhuongTienNhomSS00B, caiDatUuTien: true).catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
 
-    /// TODO:
-    await getGiaiDoanSS010?.caiDatDanhSachPhuongTienNhomSS00C(value: getDanhSachPhuongTienNhomSS00C, caiDatUuTien: true);
-    await getGiaiDoanSS020?.caiDatDanhSachPhuongTienNhomSS00C(value: getDanhSachPhuongTienNhomSS00C, caiDatUuTien: true);
-    await getGiaiDoanSS030?.caiDatDanhSachPhuongTienNhomSS00C(value: getDanhSachPhuongTienNhomSS00C, caiDatUuTien: true);
-    await getGiaiDoanSS040?.caiDatDanhSachPhuongTienNhomSS00C(value: getDanhSachPhuongTienNhomSS00C, caiDatUuTien: true);
-    await getGiaiDoanSS050?.caiDatDanhSachPhuongTienNhomSS00C(value: getDanhSachPhuongTienNhomSS00C, caiDatUuTien: true);
-    await getGiaiDoanSS060?.caiDatDanhSachPhuongTienNhomSS00C(value: getDanhSachPhuongTienNhomSS00C, caiDatUuTien: true);
-    await getGiaiDoanSS070?.caiDatDanhSachPhuongTienNhomSS00C(value: getDanhSachPhuongTienNhomSS00C, caiDatUuTien: true);
+      /// TODO:
+      getGiaiDoanSS010?.caiDatDanhSachPhuongTienNhomSS00C(value: getDanhSachPhuongTienNhomSS00C, caiDatUuTien: true).catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getGiaiDoanSS020?.caiDatDanhSachPhuongTienNhomSS00C(value: getDanhSachPhuongTienNhomSS00C, caiDatUuTien: true).catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getGiaiDoanSS030?.caiDatDanhSachPhuongTienNhomSS00C(value: getDanhSachPhuongTienNhomSS00C, caiDatUuTien: true).catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getGiaiDoanSS040?.caiDatDanhSachPhuongTienNhomSS00C(value: getDanhSachPhuongTienNhomSS00C, caiDatUuTien: true).catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getGiaiDoanSS050?.caiDatDanhSachPhuongTienNhomSS00C(value: getDanhSachPhuongTienNhomSS00C, caiDatUuTien: true).catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getGiaiDoanSS060?.caiDatDanhSachPhuongTienNhomSS00C(value: getDanhSachPhuongTienNhomSS00C, caiDatUuTien: true).catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getGiaiDoanSS070?.caiDatDanhSachPhuongTienNhomSS00C(value: getDanhSachPhuongTienNhomSS00C, caiDatUuTien: true).catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
 
-    /// TODO:
-    await getGiaiDoanSS010?.caiDatDanhSachPhuongTienNhomSS00D(value: getDanhSachPhuongTienNhomSS00D, caiDatUuTien: true);
-    await getGiaiDoanSS020?.caiDatDanhSachPhuongTienNhomSS00D(value: getDanhSachPhuongTienNhomSS00D, caiDatUuTien: true);
-    await getGiaiDoanSS030?.caiDatDanhSachPhuongTienNhomSS00D(value: getDanhSachPhuongTienNhomSS00D, caiDatUuTien: true);
-    await getGiaiDoanSS040?.caiDatDanhSachPhuongTienNhomSS00D(value: getDanhSachPhuongTienNhomSS00D, caiDatUuTien: true);
-    await getGiaiDoanSS050?.caiDatDanhSachPhuongTienNhomSS00D(value: getDanhSachPhuongTienNhomSS00D, caiDatUuTien: true);
-    await getGiaiDoanSS060?.caiDatDanhSachPhuongTienNhomSS00D(value: getDanhSachPhuongTienNhomSS00D, caiDatUuTien: true);
-    await getGiaiDoanSS070?.caiDatDanhSachPhuongTienNhomSS00D(value: getDanhSachPhuongTienNhomSS00D, caiDatUuTien: true);
+      /// TODO:
+      getGiaiDoanSS010?.caiDatDanhSachPhuongTienNhomSS00D(value: getDanhSachPhuongTienNhomSS00D, caiDatUuTien: true).catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getGiaiDoanSS020?.caiDatDanhSachPhuongTienNhomSS00D(value: getDanhSachPhuongTienNhomSS00D, caiDatUuTien: true).catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getGiaiDoanSS030?.caiDatDanhSachPhuongTienNhomSS00D(value: getDanhSachPhuongTienNhomSS00D, caiDatUuTien: true).catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getGiaiDoanSS040?.caiDatDanhSachPhuongTienNhomSS00D(value: getDanhSachPhuongTienNhomSS00D, caiDatUuTien: true).catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getGiaiDoanSS050?.caiDatDanhSachPhuongTienNhomSS00D(value: getDanhSachPhuongTienNhomSS00D, caiDatUuTien: true).catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getGiaiDoanSS060?.caiDatDanhSachPhuongTienNhomSS00D(value: getDanhSachPhuongTienNhomSS00D, caiDatUuTien: true).catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getGiaiDoanSS070?.caiDatDanhSachPhuongTienNhomSS00D(value: getDanhSachPhuongTienNhomSS00D, caiDatUuTien: true).catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+    ]);
 
-    /// -----
-    /// TODO:
-    /// -----
-    await getGiaiDoanSS010?.onAttachRoot(attachValue: attachValue);
-    await getGiaiDoanSS020?.onAttachRoot(attachValue: attachValue);
-    await getGiaiDoanSS030?.onAttachRoot(attachValue: attachValue);
-    await getGiaiDoanSS040?.onAttachRoot(attachValue: attachValue);
-    await getGiaiDoanSS050?.onAttachRoot(attachValue: attachValue);
-    await getGiaiDoanSS060?.onAttachRoot(attachValue: attachValue);
-    await getGiaiDoanSS070?.onAttachRoot(attachValue: attachValue);
+    await Future.wait([
+      /// -----
+      /// TODO:
+      /// -----
+      getGiaiDoanSS010?.onAttachRoot(attachValue: attachValue).catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getGiaiDoanSS020?.onAttachRoot(attachValue: attachValue).catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getGiaiDoanSS030?.onAttachRoot(attachValue: attachValue).catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getGiaiDoanSS040?.onAttachRoot(attachValue: attachValue).catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getGiaiDoanSS050?.onAttachRoot(attachValue: attachValue).catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getGiaiDoanSS060?.onAttachRoot(attachValue: attachValue).catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getGiaiDoanSS070?.onAttachRoot(attachValue: attachValue).catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+    ]);
 
     ///
     return;
@@ -145,21 +151,25 @@ abstract class DOIHINHPHUONGTIENCOBAN with CauTrucThucThiCoBan {
     /// -----
     await getDanhSachPhuongTien?.onSetupRoot();
 
-    await getDanhSachPhuongTienNhomSS00A?.onSetupRoot();
-    await getDanhSachPhuongTienNhomSS00B?.onSetupRoot();
-    await getDanhSachPhuongTienNhomSS00C?.onSetupRoot();
-    await getDanhSachPhuongTienNhomSS00D?.onSetupRoot();
+    await Future.wait([
+      getDanhSachPhuongTienNhomSS00A?.onSetupRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getDanhSachPhuongTienNhomSS00B?.onSetupRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getDanhSachPhuongTienNhomSS00C?.onSetupRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getDanhSachPhuongTienNhomSS00D?.onSetupRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+    ]);
 
-    /// -----
-    /// TODO:
-    /// -----
-    await getGiaiDoanSS010?.onSetupRoot();
-    await getGiaiDoanSS020?.onSetupRoot();
-    await getGiaiDoanSS030?.onSetupRoot();
-    await getGiaiDoanSS040?.onSetupRoot();
-    await getGiaiDoanSS050?.onSetupRoot();
-    await getGiaiDoanSS060?.onSetupRoot();
-    await getGiaiDoanSS070?.onSetupRoot();
+    await Future.wait([
+      /// -----
+      /// TODO:
+      /// -----
+      getGiaiDoanSS010?.onSetupRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getGiaiDoanSS020?.onSetupRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getGiaiDoanSS030?.onSetupRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getGiaiDoanSS040?.onSetupRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getGiaiDoanSS050?.onSetupRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getGiaiDoanSS060?.onSetupRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getGiaiDoanSS070?.onSetupRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+    ]);
 
     ///
     return;
@@ -175,21 +185,25 @@ abstract class DOIHINHPHUONGTIENCOBAN with CauTrucThucThiCoBan {
     /// -----
     await getDanhSachPhuongTien?.onInitRoot();
 
-    await getDanhSachPhuongTienNhomSS00A?.onInitRoot();
-    await getDanhSachPhuongTienNhomSS00B?.onInitRoot();
-    await getDanhSachPhuongTienNhomSS00C?.onInitRoot();
-    await getDanhSachPhuongTienNhomSS00D?.onInitRoot();
+    await Future.wait([
+      getDanhSachPhuongTienNhomSS00A?.onInitRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getDanhSachPhuongTienNhomSS00B?.onInitRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getDanhSachPhuongTienNhomSS00C?.onInitRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getDanhSachPhuongTienNhomSS00D?.onInitRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+    ]);
 
-    /// -----
-    /// TODO:
-    /// -----
-    await getGiaiDoanSS010?.onInitRoot();
-    await getGiaiDoanSS020?.onInitRoot();
-    await getGiaiDoanSS030?.onInitRoot();
-    await getGiaiDoanSS040?.onInitRoot();
-    await getGiaiDoanSS050?.onInitRoot();
-    await getGiaiDoanSS060?.onInitRoot();
-    await getGiaiDoanSS070?.onInitRoot();
+    await Future.wait([
+      /// -----
+      /// TODO:
+      /// -----
+      getGiaiDoanSS010?.onInitRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getGiaiDoanSS020?.onInitRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getGiaiDoanSS030?.onInitRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getGiaiDoanSS040?.onInitRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getGiaiDoanSS050?.onInitRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getGiaiDoanSS060?.onInitRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getGiaiDoanSS070?.onInitRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+    ]);
 
     ///
     return;
@@ -389,30 +403,39 @@ abstract class DOIHINHPHUONGTIENCOBAN with CauTrucThucThiCoBan {
   /// -----
   Future<void> onTichHopKichBanPhuongTienSS020NhomSS00A({required TrangThaiPhuongTien? trangThaiPhuongTien, bool? caiDatUuTien}) async {
     if (caiDatUuTien == true) {
-      /// -----
-      /// TODO: Tích Hợp Kịch Bản Vào Phương Tiện SS020 - Nhóm SS00A
-      /// -----
-      await trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS010(
-        value: getGiaiDoanSS010?.getDanhSachHoatDongChienDauXamChiemNhomSS00A?.getHoatDongChienDauXamChiemSS020,
-      );
-      await trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS020(
-        value: getGiaiDoanSS020?.getDanhSachHoatDongChienDauXamChiemNhomSS00A?.getHoatDongChienDauXamChiemSS020,
-      );
-      await trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS030(
-        value: getGiaiDoanSS030?.getDanhSachHoatDongChienDauXamChiemNhomSS00A?.getHoatDongChienDauXamChiemSS020,
-      );
-      await trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS040(
-        value: getGiaiDoanSS040?.getDanhSachHoatDongChienDauXamChiemNhomSS00A?.getHoatDongChienDauXamChiemSS020,
-      );
-      await trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS050(
-        value: getGiaiDoanSS050?.getDanhSachHoatDongChienDauXamChiemNhomSS00A?.getHoatDongChienDauXamChiemSS020,
-      );
-      await trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS060(
-        value: getGiaiDoanSS060?.getDanhSachHoatDongChienDauXamChiemNhomSS00A?.getHoatDongChienDauXamChiemSS020,
-      );
-      await trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS070(
-        value: getGiaiDoanSS070?.getDanhSachHoatDongChienDauXamChiemNhomSS00A?.getHoatDongChienDauXamChiemSS020,
-      );
+      await Future.wait([
+        /// -----
+        /// TODO: Tích Hợp Kịch Bản Vào Phương Tiện SS020 - Nhóm SS00A
+        /// -----
+        trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem
+                ?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS010(value: getGiaiDoanSS010?.getDanhSachHoatDongChienDauXamChiemNhomSS00A?.getHoatDongChienDauXamChiemSS020)
+                .catchError((e) => null) ??
+            onReportRootIssue(nameFunction: ''),
+        trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem
+                ?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS020(value: getGiaiDoanSS020?.getDanhSachHoatDongChienDauXamChiemNhomSS00A?.getHoatDongChienDauXamChiemSS020)
+                .catchError((e) => null) ??
+            onReportRootIssue(nameFunction: ''),
+        trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem
+                ?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS030(value: getGiaiDoanSS030?.getDanhSachHoatDongChienDauXamChiemNhomSS00A?.getHoatDongChienDauXamChiemSS020)
+                .catchError((e) => null) ??
+            onReportRootIssue(nameFunction: ''),
+        trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem
+                ?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS040(value: getGiaiDoanSS040?.getDanhSachHoatDongChienDauXamChiemNhomSS00A?.getHoatDongChienDauXamChiemSS020)
+                .catchError((e) => null) ??
+            onReportRootIssue(nameFunction: ''),
+        trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem
+                ?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS050(value: getGiaiDoanSS050?.getDanhSachHoatDongChienDauXamChiemNhomSS00A?.getHoatDongChienDauXamChiemSS020)
+                .catchError((e) => null) ??
+            onReportRootIssue(nameFunction: ''),
+        trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem
+                ?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS060(value: getGiaiDoanSS060?.getDanhSachHoatDongChienDauXamChiemNhomSS00A?.getHoatDongChienDauXamChiemSS020)
+                .catchError((e) => null) ??
+            onReportRootIssue(nameFunction: ''),
+        trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem
+                ?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS070(value: getGiaiDoanSS070?.getDanhSachHoatDongChienDauXamChiemNhomSS00A?.getHoatDongChienDauXamChiemSS020)
+                .catchError((e) => null) ??
+            onReportRootIssue(nameFunction: ''),
+      ]);
 
       /// -----
       /// TODO: Gắn Kết Phương Tiện SS020 Vào Khung Kịch Bản
@@ -432,30 +455,39 @@ abstract class DOIHINHPHUONGTIENCOBAN with CauTrucThucThiCoBan {
   /// -----
   Future<void> onTichHopKichBanPhuongTienSS020NhomSS00B({required TrangThaiPhuongTien? trangThaiPhuongTien, bool? caiDatUuTien}) async {
     if (caiDatUuTien == true) {
-      /// -----
-      /// TODO: Tích Hợp Kịch Bản Vào Phương Tiện SS020 - Nhóm SS00B
-      /// -----
-      await trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS010(
-        value: getGiaiDoanSS010?.getDanhSachHoatDongChienDauXamChiemNhomSS00B?.getHoatDongChienDauXamChiemSS020,
-      );
-      await trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS020(
-        value: getGiaiDoanSS020?.getDanhSachHoatDongChienDauXamChiemNhomSS00B?.getHoatDongChienDauXamChiemSS020,
-      );
-      await trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS030(
-        value: getGiaiDoanSS030?.getDanhSachHoatDongChienDauXamChiemNhomSS00B?.getHoatDongChienDauXamChiemSS020,
-      );
-      await trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS040(
-        value: getGiaiDoanSS040?.getDanhSachHoatDongChienDauXamChiemNhomSS00B?.getHoatDongChienDauXamChiemSS020,
-      );
-      await trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS050(
-        value: getGiaiDoanSS050?.getDanhSachHoatDongChienDauXamChiemNhomSS00B?.getHoatDongChienDauXamChiemSS020,
-      );
-      await trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS060(
-        value: getGiaiDoanSS060?.getDanhSachHoatDongChienDauXamChiemNhomSS00B?.getHoatDongChienDauXamChiemSS020,
-      );
-      await trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS070(
-        value: getGiaiDoanSS070?.getDanhSachHoatDongChienDauXamChiemNhomSS00B?.getHoatDongChienDauXamChiemSS020,
-      );
+      await Future.wait([
+        /// -----
+        /// TODO: Tích Hợp Kịch Bản Vào Phương Tiện SS020 - Nhóm SS00B
+        /// -----
+        trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem
+                ?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS010(value: getGiaiDoanSS010?.getDanhSachHoatDongChienDauXamChiemNhomSS00B?.getHoatDongChienDauXamChiemSS020)
+                .catchError((e) => null) ??
+            onReportRootIssue(nameFunction: ''),
+        trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem
+                ?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS020(value: getGiaiDoanSS020?.getDanhSachHoatDongChienDauXamChiemNhomSS00B?.getHoatDongChienDauXamChiemSS020)
+                .catchError((e) => null) ??
+            onReportRootIssue(nameFunction: ''),
+        trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem
+                ?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS030(value: getGiaiDoanSS030?.getDanhSachHoatDongChienDauXamChiemNhomSS00B?.getHoatDongChienDauXamChiemSS020)
+                .catchError((e) => null) ??
+            onReportRootIssue(nameFunction: ''),
+        trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem
+                ?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS040(value: getGiaiDoanSS040?.getDanhSachHoatDongChienDauXamChiemNhomSS00B?.getHoatDongChienDauXamChiemSS020)
+                .catchError((e) => null) ??
+            onReportRootIssue(nameFunction: ''),
+        trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem
+                ?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS050(value: getGiaiDoanSS050?.getDanhSachHoatDongChienDauXamChiemNhomSS00B?.getHoatDongChienDauXamChiemSS020)
+                .catchError((e) => null) ??
+            onReportRootIssue(nameFunction: ''),
+        trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem
+                ?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS060(value: getGiaiDoanSS060?.getDanhSachHoatDongChienDauXamChiemNhomSS00B?.getHoatDongChienDauXamChiemSS020)
+                .catchError((e) => null) ??
+            onReportRootIssue(nameFunction: ''),
+        trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem
+                ?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS070(value: getGiaiDoanSS070?.getDanhSachHoatDongChienDauXamChiemNhomSS00B?.getHoatDongChienDauXamChiemSS020)
+                .catchError((e) => null) ??
+            onReportRootIssue(nameFunction: ''),
+      ]);
 
       /// -----
       /// TODO: Gắn Kết Phương Tiện SS020 Vào Khung Kịch Bản
@@ -475,30 +507,39 @@ abstract class DOIHINHPHUONGTIENCOBAN with CauTrucThucThiCoBan {
   /// -----
   Future<void> onTichHopKichBanPhuongTienSS020NhomSS00C({required TrangThaiPhuongTien? trangThaiPhuongTien, bool? caiDatUuTien}) async {
     if (caiDatUuTien == true) {
-      /// -----
-      /// TODO: Tích Hợp Kịch Bản Vào Phương Tiện SS020 - Nhóm SS00C
-      /// -----
-      await trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS010(
-        value: getGiaiDoanSS010?.getDanhSachHoatDongChienDauXamChiemNhomSS00C?.getHoatDongChienDauXamChiemSS020,
-      );
-      await trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS020(
-        value: getGiaiDoanSS020?.getDanhSachHoatDongChienDauXamChiemNhomSS00C?.getHoatDongChienDauXamChiemSS020,
-      );
-      await trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS030(
-        value: getGiaiDoanSS030?.getDanhSachHoatDongChienDauXamChiemNhomSS00C?.getHoatDongChienDauXamChiemSS020,
-      );
-      await trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS040(
-        value: getGiaiDoanSS040?.getDanhSachHoatDongChienDauXamChiemNhomSS00C?.getHoatDongChienDauXamChiemSS020,
-      );
-      await trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS050(
-        value: getGiaiDoanSS050?.getDanhSachHoatDongChienDauXamChiemNhomSS00C?.getHoatDongChienDauXamChiemSS020,
-      );
-      await trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS060(
-        value: getGiaiDoanSS060?.getDanhSachHoatDongChienDauXamChiemNhomSS00C?.getHoatDongChienDauXamChiemSS020,
-      );
-      await trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS070(
-        value: getGiaiDoanSS070?.getDanhSachHoatDongChienDauXamChiemNhomSS00C?.getHoatDongChienDauXamChiemSS020,
-      );
+      await Future.wait([
+        /// -----
+        /// TODO: Tích Hợp Kịch Bản Vào Phương Tiện SS020 - Nhóm SS00C
+        /// -----
+        trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem
+                ?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS010(value: getGiaiDoanSS010?.getDanhSachHoatDongChienDauXamChiemNhomSS00C?.getHoatDongChienDauXamChiemSS020)
+                .catchError((e) => null) ??
+            onReportRootIssue(nameFunction: ''),
+        trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem
+                ?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS020(value: getGiaiDoanSS020?.getDanhSachHoatDongChienDauXamChiemNhomSS00C?.getHoatDongChienDauXamChiemSS020)
+                .catchError((e) => null) ??
+            onReportRootIssue(nameFunction: ''),
+        trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem
+                ?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS030(value: getGiaiDoanSS030?.getDanhSachHoatDongChienDauXamChiemNhomSS00C?.getHoatDongChienDauXamChiemSS020)
+                .catchError((e) => null) ??
+            onReportRootIssue(nameFunction: ''),
+        trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem
+                ?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS040(value: getGiaiDoanSS040?.getDanhSachHoatDongChienDauXamChiemNhomSS00C?.getHoatDongChienDauXamChiemSS020)
+                .catchError((e) => null) ??
+            onReportRootIssue(nameFunction: ''),
+        trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem
+                ?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS050(value: getGiaiDoanSS050?.getDanhSachHoatDongChienDauXamChiemNhomSS00C?.getHoatDongChienDauXamChiemSS020)
+                .catchError((e) => null) ??
+            onReportRootIssue(nameFunction: ''),
+        trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem
+                ?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS060(value: getGiaiDoanSS060?.getDanhSachHoatDongChienDauXamChiemNhomSS00C?.getHoatDongChienDauXamChiemSS020)
+                .catchError((e) => null) ??
+            onReportRootIssue(nameFunction: ''),
+        trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem
+                ?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS070(value: getGiaiDoanSS070?.getDanhSachHoatDongChienDauXamChiemNhomSS00C?.getHoatDongChienDauXamChiemSS020)
+                .catchError((e) => null) ??
+            onReportRootIssue(nameFunction: ''),
+      ]);
 
       /// -----
       /// TODO: Gắn Kết Phương Tiện SS020 Vào Khung Kịch Bản
@@ -518,30 +559,39 @@ abstract class DOIHINHPHUONGTIENCOBAN with CauTrucThucThiCoBan {
   /// -----
   Future<void> onTichHopKichBanPhuongTienSS020NhomSS00D({required TrangThaiPhuongTien? trangThaiPhuongTien, bool? caiDatUuTien}) async {
     if (caiDatUuTien == true) {
-      /// -----
-      /// TODO: Tích Hợp Kịch Bản Vào Phương Tiện SS020 - Nhóm SS00D
-      /// -----
-      await trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS010(
-        value: getGiaiDoanSS010?.getDanhSachHoatDongChienDauXamChiemNhomSS00D?.getHoatDongChienDauXamChiemSS020,
-      );
-      await trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS020(
-        value: getGiaiDoanSS020?.getDanhSachHoatDongChienDauXamChiemNhomSS00D?.getHoatDongChienDauXamChiemSS020,
-      );
-      await trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS030(
-        value: getGiaiDoanSS030?.getDanhSachHoatDongChienDauXamChiemNhomSS00D?.getHoatDongChienDauXamChiemSS020,
-      );
-      await trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS040(
-        value: getGiaiDoanSS040?.getDanhSachHoatDongChienDauXamChiemNhomSS00D?.getHoatDongChienDauXamChiemSS020,
-      );
-      await trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS050(
-        value: getGiaiDoanSS050?.getDanhSachHoatDongChienDauXamChiemNhomSS00D?.getHoatDongChienDauXamChiemSS020,
-      );
-      await trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS060(
-        value: getGiaiDoanSS060?.getDanhSachHoatDongChienDauXamChiemNhomSS00D?.getHoatDongChienDauXamChiemSS020,
-      );
-      await trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS070(
-        value: getGiaiDoanSS070?.getDanhSachHoatDongChienDauXamChiemNhomSS00D?.getHoatDongChienDauXamChiemSS020,
-      );
+      await Future.wait([
+        /// -----
+        /// TODO: Tích Hợp Kịch Bản Vào Phương Tiện SS020 - Nhóm SS00D
+        /// -----
+        trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem
+                ?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS010(value: getGiaiDoanSS010?.getDanhSachHoatDongChienDauXamChiemNhomSS00D?.getHoatDongChienDauXamChiemSS020)
+                .catchError((e) => null) ??
+            onReportRootIssue(nameFunction: ''),
+        trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem
+                ?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS020(value: getGiaiDoanSS020?.getDanhSachHoatDongChienDauXamChiemNhomSS00D?.getHoatDongChienDauXamChiemSS020)
+                .catchError((e) => null) ??
+            onReportRootIssue(nameFunction: ''),
+        trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem
+                ?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS030(value: getGiaiDoanSS030?.getDanhSachHoatDongChienDauXamChiemNhomSS00D?.getHoatDongChienDauXamChiemSS020)
+                .catchError((e) => null) ??
+            onReportRootIssue(nameFunction: ''),
+        trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem
+                ?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS040(value: getGiaiDoanSS040?.getDanhSachHoatDongChienDauXamChiemNhomSS00D?.getHoatDongChienDauXamChiemSS020)
+                .catchError((e) => null) ??
+            onReportRootIssue(nameFunction: ''),
+        trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem
+                ?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS050(value: getGiaiDoanSS050?.getDanhSachHoatDongChienDauXamChiemNhomSS00D?.getHoatDongChienDauXamChiemSS020)
+                .catchError((e) => null) ??
+            onReportRootIssue(nameFunction: ''),
+        trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem
+                ?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS060(value: getGiaiDoanSS060?.getDanhSachHoatDongChienDauXamChiemNhomSS00D?.getHoatDongChienDauXamChiemSS020)
+                .catchError((e) => null) ??
+            onReportRootIssue(nameFunction: ''),
+        trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem
+                ?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS070(value: getGiaiDoanSS070?.getDanhSachHoatDongChienDauXamChiemNhomSS00D?.getHoatDongChienDauXamChiemSS020)
+                .catchError((e) => null) ??
+            onReportRootIssue(nameFunction: ''),
+      ]);
 
       /// -----
       /// TODO: Gắn Kết Phương Tiện SS020 Vào Khung Kịch Bản
@@ -569,30 +619,39 @@ abstract class DOIHINHPHUONGTIENCOBAN with CauTrucThucThiCoBan {
   /// -----
   Future<void> onTichHopKichBanPhuongTienSS022NhomSS00A({required TrangThaiPhuongTien? trangThaiPhuongTien, bool? caiDatUuTien}) async {
     if (caiDatUuTien == true) {
-      /// -----
-      /// TODO: Tích Hợp Kịch Bản Vào Phương Tiện SS022 - Nhóm SS00A
-      /// -----
-      await trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS010(
-        value: getGiaiDoanSS010?.getDanhSachHoatDongChienDauXamChiemNhomSS00A?.getHoatDongChienDauXamChiemSS022,
-      );
-      await trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS020(
-        value: getGiaiDoanSS020?.getDanhSachHoatDongChienDauXamChiemNhomSS00A?.getHoatDongChienDauXamChiemSS022,
-      );
-      await trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS030(
-        value: getGiaiDoanSS030?.getDanhSachHoatDongChienDauXamChiemNhomSS00A?.getHoatDongChienDauXamChiemSS022,
-      );
-      await trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS040(
-        value: getGiaiDoanSS040?.getDanhSachHoatDongChienDauXamChiemNhomSS00A?.getHoatDongChienDauXamChiemSS022,
-      );
-      await trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS050(
-        value: getGiaiDoanSS050?.getDanhSachHoatDongChienDauXamChiemNhomSS00A?.getHoatDongChienDauXamChiemSS022,
-      );
-      await trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS060(
-        value: getGiaiDoanSS060?.getDanhSachHoatDongChienDauXamChiemNhomSS00A?.getHoatDongChienDauXamChiemSS022,
-      );
-      await trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS070(
-        value: getGiaiDoanSS070?.getDanhSachHoatDongChienDauXamChiemNhomSS00A?.getHoatDongChienDauXamChiemSS022,
-      );
+      await Future.wait([
+        /// -----
+        /// TODO: Tích Hợp Kịch Bản Vào Phương Tiện SS022 - Nhóm SS00A
+        /// -----
+        trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem
+                ?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS010(value: getGiaiDoanSS010?.getDanhSachHoatDongChienDauXamChiemNhomSS00A?.getHoatDongChienDauXamChiemSS022)
+                .catchError((e) => null) ??
+            onReportRootIssue(nameFunction: ''),
+        trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem
+                ?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS020(value: getGiaiDoanSS020?.getDanhSachHoatDongChienDauXamChiemNhomSS00A?.getHoatDongChienDauXamChiemSS022)
+                .catchError((e) => null) ??
+            onReportRootIssue(nameFunction: ''),
+        trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem
+                ?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS030(value: getGiaiDoanSS030?.getDanhSachHoatDongChienDauXamChiemNhomSS00A?.getHoatDongChienDauXamChiemSS022)
+                .catchError((e) => null) ??
+            onReportRootIssue(nameFunction: ''),
+        trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem
+                ?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS040(value: getGiaiDoanSS040?.getDanhSachHoatDongChienDauXamChiemNhomSS00A?.getHoatDongChienDauXamChiemSS022)
+                .catchError((e) => null) ??
+            onReportRootIssue(nameFunction: ''),
+        trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem
+                ?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS050(value: getGiaiDoanSS050?.getDanhSachHoatDongChienDauXamChiemNhomSS00A?.getHoatDongChienDauXamChiemSS022)
+                .catchError((e) => null) ??
+            onReportRootIssue(nameFunction: ''),
+        trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem
+                ?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS060(value: getGiaiDoanSS060?.getDanhSachHoatDongChienDauXamChiemNhomSS00A?.getHoatDongChienDauXamChiemSS022)
+                .catchError((e) => null) ??
+            onReportRootIssue(nameFunction: ''),
+        trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem
+                ?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS070(value: getGiaiDoanSS070?.getDanhSachHoatDongChienDauXamChiemNhomSS00A?.getHoatDongChienDauXamChiemSS022)
+                .catchError((e) => null) ??
+            onReportRootIssue(nameFunction: ''),
+      ]);
 
       /// -----
       /// TODO: Gắn Kết Phương Tiện SS020 Vào Khung Kịch Bản
@@ -612,30 +671,39 @@ abstract class DOIHINHPHUONGTIENCOBAN with CauTrucThucThiCoBan {
   /// -----
   Future<void> onTichHopKichBanPhuongTienSS022NhomSS00B({required TrangThaiPhuongTien? trangThaiPhuongTien, bool? caiDatUuTien}) async {
     if (caiDatUuTien == true) {
-      /// -----
-      /// TODO: Tích Hợp Kịch Bản Vào Phương Tiện SS022 - Nhóm SS00B
-      /// -----
-      await trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS010(
-        value: getGiaiDoanSS010?.getDanhSachHoatDongChienDauXamChiemNhomSS00B?.getHoatDongChienDauXamChiemSS022,
-      );
-      await trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS020(
-        value: getGiaiDoanSS020?.getDanhSachHoatDongChienDauXamChiemNhomSS00B?.getHoatDongChienDauXamChiemSS022,
-      );
-      await trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS030(
-        value: getGiaiDoanSS030?.getDanhSachHoatDongChienDauXamChiemNhomSS00B?.getHoatDongChienDauXamChiemSS022,
-      );
-      await trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS040(
-        value: getGiaiDoanSS040?.getDanhSachHoatDongChienDauXamChiemNhomSS00B?.getHoatDongChienDauXamChiemSS022,
-      );
-      await trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS050(
-        value: getGiaiDoanSS050?.getDanhSachHoatDongChienDauXamChiemNhomSS00B?.getHoatDongChienDauXamChiemSS022,
-      );
-      await trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS060(
-        value: getGiaiDoanSS060?.getDanhSachHoatDongChienDauXamChiemNhomSS00B?.getHoatDongChienDauXamChiemSS022,
-      );
-      await trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS070(
-        value: getGiaiDoanSS070?.getDanhSachHoatDongChienDauXamChiemNhomSS00B?.getHoatDongChienDauXamChiemSS022,
-      );
+      await Future.wait([
+        /// -----
+        /// TODO: Tích Hợp Kịch Bản Vào Phương Tiện SS022 - Nhóm SS00B
+        /// -----
+        trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem
+                ?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS010(value: getGiaiDoanSS010?.getDanhSachHoatDongChienDauXamChiemNhomSS00B?.getHoatDongChienDauXamChiemSS022)
+                .catchError((e) => null) ??
+            onReportRootIssue(nameFunction: ''),
+        trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem
+                ?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS020(value: getGiaiDoanSS020?.getDanhSachHoatDongChienDauXamChiemNhomSS00B?.getHoatDongChienDauXamChiemSS022)
+                .catchError((e) => null) ??
+            onReportRootIssue(nameFunction: ''),
+        trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem
+                ?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS030(value: getGiaiDoanSS030?.getDanhSachHoatDongChienDauXamChiemNhomSS00B?.getHoatDongChienDauXamChiemSS022)
+                .catchError((e) => null) ??
+            onReportRootIssue(nameFunction: ''),
+        trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem
+                ?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS040(value: getGiaiDoanSS040?.getDanhSachHoatDongChienDauXamChiemNhomSS00B?.getHoatDongChienDauXamChiemSS022)
+                .catchError((e) => null) ??
+            onReportRootIssue(nameFunction: ''),
+        trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem
+                ?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS050(value: getGiaiDoanSS050?.getDanhSachHoatDongChienDauXamChiemNhomSS00B?.getHoatDongChienDauXamChiemSS022)
+                .catchError((e) => null) ??
+            onReportRootIssue(nameFunction: ''),
+        trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem
+                ?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS060(value: getGiaiDoanSS060?.getDanhSachHoatDongChienDauXamChiemNhomSS00B?.getHoatDongChienDauXamChiemSS022)
+                .catchError((e) => null) ??
+            onReportRootIssue(nameFunction: ''),
+        trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem
+                ?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS070(value: getGiaiDoanSS070?.getDanhSachHoatDongChienDauXamChiemNhomSS00B?.getHoatDongChienDauXamChiemSS022)
+                .catchError((e) => null) ??
+            onReportRootIssue(nameFunction: ''),
+      ]);
 
       /// -----
       /// TODO: Gắn Kết Phương Tiện SS020 Vào Khung Kịch Bản
@@ -655,30 +723,39 @@ abstract class DOIHINHPHUONGTIENCOBAN with CauTrucThucThiCoBan {
   /// -----
   Future<void> onTichHopKichBanPhuongTienSS022NhomSS00C({required TrangThaiPhuongTien? trangThaiPhuongTien, bool? caiDatUuTien}) async {
     if (caiDatUuTien == true) {
-      /// -----
-      /// TODO: Tích Hợp Kịch Bản Vào Phương Tiện SS022 - Nhóm SS00C
-      /// -----
-      await trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS010(
-        value: getGiaiDoanSS010?.getDanhSachHoatDongChienDauXamChiemNhomSS00C?.getHoatDongChienDauXamChiemSS022,
-      );
-      await trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS020(
-        value: getGiaiDoanSS020?.getDanhSachHoatDongChienDauXamChiemNhomSS00C?.getHoatDongChienDauXamChiemSS022,
-      );
-      await trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS030(
-        value: getGiaiDoanSS030?.getDanhSachHoatDongChienDauXamChiemNhomSS00C?.getHoatDongChienDauXamChiemSS022,
-      );
-      await trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS040(
-        value: getGiaiDoanSS040?.getDanhSachHoatDongChienDauXamChiemNhomSS00C?.getHoatDongChienDauXamChiemSS022,
-      );
-      await trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS050(
-        value: getGiaiDoanSS050?.getDanhSachHoatDongChienDauXamChiemNhomSS00C?.getHoatDongChienDauXamChiemSS022,
-      );
-      await trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS060(
-        value: getGiaiDoanSS060?.getDanhSachHoatDongChienDauXamChiemNhomSS00C?.getHoatDongChienDauXamChiemSS022,
-      );
-      await trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS070(
-        value: getGiaiDoanSS070?.getDanhSachHoatDongChienDauXamChiemNhomSS00C?.getHoatDongChienDauXamChiemSS022,
-      );
+      await Future.wait([
+        /// -----
+        /// TODO: Tích Hợp Kịch Bản Vào Phương Tiện SS022 - Nhóm SS00C
+        /// -----
+        trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem
+                ?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS010(value: getGiaiDoanSS010?.getDanhSachHoatDongChienDauXamChiemNhomSS00C?.getHoatDongChienDauXamChiemSS022)
+                .catchError((e) => null) ??
+            onReportRootIssue(nameFunction: ''),
+        trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem
+                ?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS020(value: getGiaiDoanSS020?.getDanhSachHoatDongChienDauXamChiemNhomSS00C?.getHoatDongChienDauXamChiemSS022)
+                .catchError((e) => null) ??
+            onReportRootIssue(nameFunction: ''),
+        trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem
+                ?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS030(value: getGiaiDoanSS030?.getDanhSachHoatDongChienDauXamChiemNhomSS00C?.getHoatDongChienDauXamChiemSS022)
+                .catchError((e) => null) ??
+            onReportRootIssue(nameFunction: ''),
+        trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem
+                ?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS040(value: getGiaiDoanSS040?.getDanhSachHoatDongChienDauXamChiemNhomSS00C?.getHoatDongChienDauXamChiemSS022)
+                .catchError((e) => null) ??
+            onReportRootIssue(nameFunction: ''),
+        trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem
+                ?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS050(value: getGiaiDoanSS050?.getDanhSachHoatDongChienDauXamChiemNhomSS00C?.getHoatDongChienDauXamChiemSS022)
+                .catchError((e) => null) ??
+            onReportRootIssue(nameFunction: ''),
+        trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem
+                ?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS060(value: getGiaiDoanSS060?.getDanhSachHoatDongChienDauXamChiemNhomSS00C?.getHoatDongChienDauXamChiemSS022)
+                .catchError((e) => null) ??
+            onReportRootIssue(nameFunction: ''),
+        trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem
+                ?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS070(value: getGiaiDoanSS070?.getDanhSachHoatDongChienDauXamChiemNhomSS00C?.getHoatDongChienDauXamChiemSS022)
+                .catchError((e) => null) ??
+            onReportRootIssue(nameFunction: ''),
+      ]);
 
       /// -----
       /// TODO: Gắn Kết Phương Tiện SS020 Vào Khung Kịch Bản
@@ -698,30 +775,39 @@ abstract class DOIHINHPHUONGTIENCOBAN with CauTrucThucThiCoBan {
   /// -----
   Future<void> onTichHopKichBanPhuongTienSS022NhomSS00D({required TrangThaiPhuongTien? trangThaiPhuongTien, bool? caiDatUuTien}) async {
     if (caiDatUuTien == true) {
-      /// -----
-      /// TODO: Tích Hợp Kịch Bản Vào Phương Tiện SS022 - Nhóm SS00D
-      /// -----
-      await trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS010(
-        value: getGiaiDoanSS010?.getDanhSachHoatDongChienDauXamChiemNhomSS00D?.getHoatDongChienDauXamChiemSS022,
-      );
-      await trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS020(
-        value: getGiaiDoanSS020?.getDanhSachHoatDongChienDauXamChiemNhomSS00D?.getHoatDongChienDauXamChiemSS022,
-      );
-      await trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS030(
-        value: getGiaiDoanSS030?.getDanhSachHoatDongChienDauXamChiemNhomSS00D?.getHoatDongChienDauXamChiemSS022,
-      );
-      await trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS040(
-        value: getGiaiDoanSS040?.getDanhSachHoatDongChienDauXamChiemNhomSS00D?.getHoatDongChienDauXamChiemSS022,
-      );
-      await trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS050(
-        value: getGiaiDoanSS050?.getDanhSachHoatDongChienDauXamChiemNhomSS00D?.getHoatDongChienDauXamChiemSS022,
-      );
-      await trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS060(
-        value: getGiaiDoanSS060?.getDanhSachHoatDongChienDauXamChiemNhomSS00D?.getHoatDongChienDauXamChiemSS022,
-      );
-      await trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS070(
-        value: getGiaiDoanSS070?.getDanhSachHoatDongChienDauXamChiemNhomSS00D?.getHoatDongChienDauXamChiemSS022,
-      );
+      await Future.wait([
+        /// -----
+        /// TODO: Tích Hợp Kịch Bản Vào Phương Tiện SS022 - Nhóm SS00D
+        /// -----
+        trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem
+                ?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS010(value: getGiaiDoanSS010?.getDanhSachHoatDongChienDauXamChiemNhomSS00D?.getHoatDongChienDauXamChiemSS022)
+                .catchError((e) => null) ??
+            onReportRootIssue(nameFunction: ''),
+        trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem
+                ?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS020(value: getGiaiDoanSS020?.getDanhSachHoatDongChienDauXamChiemNhomSS00D?.getHoatDongChienDauXamChiemSS022)
+                .catchError((e) => null) ??
+            onReportRootIssue(nameFunction: ''),
+        trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem
+                ?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS030(value: getGiaiDoanSS030?.getDanhSachHoatDongChienDauXamChiemNhomSS00D?.getHoatDongChienDauXamChiemSS022)
+                .catchError((e) => null) ??
+            onReportRootIssue(nameFunction: ''),
+        trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem
+                ?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS040(value: getGiaiDoanSS040?.getDanhSachHoatDongChienDauXamChiemNhomSS00D?.getHoatDongChienDauXamChiemSS022)
+                .catchError((e) => null) ??
+            onReportRootIssue(nameFunction: ''),
+        trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem
+                ?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS050(value: getGiaiDoanSS050?.getDanhSachHoatDongChienDauXamChiemNhomSS00D?.getHoatDongChienDauXamChiemSS022)
+                .catchError((e) => null) ??
+            onReportRootIssue(nameFunction: ''),
+        trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem
+                ?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS060(value: getGiaiDoanSS060?.getDanhSachHoatDongChienDauXamChiemNhomSS00D?.getHoatDongChienDauXamChiemSS022)
+                .catchError((e) => null) ??
+            onReportRootIssue(nameFunction: ''),
+        trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem
+                ?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS070(value: getGiaiDoanSS070?.getDanhSachHoatDongChienDauXamChiemNhomSS00D?.getHoatDongChienDauXamChiemSS022)
+                .catchError((e) => null) ??
+            onReportRootIssue(nameFunction: ''),
+      ]);
 
       /// -----
       /// TODO: Gắn Kết Phương Tiện SS020 Vào Khung Kịch Bản
@@ -749,30 +835,39 @@ abstract class DOIHINHPHUONGTIENCOBAN with CauTrucThucThiCoBan {
   /// -----
   Future<void> onTichHopKichBanPhuongTienSS024NhomSS00A({required TrangThaiPhuongTien? trangThaiPhuongTien, bool? caiDatUuTien}) async {
     if (caiDatUuTien == true) {
-      /// -----
-      /// TODO: Tích Hợp Kịch Bản Vào Phương Tiện SS024 - Nhóm SS00A
-      /// -----
-      await trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS010(
-        value: getGiaiDoanSS010?.getDanhSachHoatDongChienDauXamChiemNhomSS00A?.getHoatDongChienDauXamChiemSS024,
-      );
-      await trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS020(
-        value: getGiaiDoanSS020?.getDanhSachHoatDongChienDauXamChiemNhomSS00A?.getHoatDongChienDauXamChiemSS024,
-      );
-      await trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS030(
-        value: getGiaiDoanSS030?.getDanhSachHoatDongChienDauXamChiemNhomSS00A?.getHoatDongChienDauXamChiemSS024,
-      );
-      await trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS040(
-        value: getGiaiDoanSS040?.getDanhSachHoatDongChienDauXamChiemNhomSS00A?.getHoatDongChienDauXamChiemSS024,
-      );
-      await trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS050(
-        value: getGiaiDoanSS050?.getDanhSachHoatDongChienDauXamChiemNhomSS00A?.getHoatDongChienDauXamChiemSS024,
-      );
-      await trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS060(
-        value: getGiaiDoanSS060?.getDanhSachHoatDongChienDauXamChiemNhomSS00A?.getHoatDongChienDauXamChiemSS024,
-      );
-      await trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS070(
-        value: getGiaiDoanSS070?.getDanhSachHoatDongChienDauXamChiemNhomSS00A?.getHoatDongChienDauXamChiemSS024,
-      );
+      await Future.wait([
+        /// -----
+        /// TODO: Tích Hợp Kịch Bản Vào Phương Tiện SS024 - Nhóm SS00A
+        /// -----
+        trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem
+                ?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS010(value: getGiaiDoanSS010?.getDanhSachHoatDongChienDauXamChiemNhomSS00A?.getHoatDongChienDauXamChiemSS024)
+                .catchError((e) => null) ??
+            onReportRootIssue(nameFunction: ''),
+        trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem
+                ?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS020(value: getGiaiDoanSS020?.getDanhSachHoatDongChienDauXamChiemNhomSS00A?.getHoatDongChienDauXamChiemSS024)
+                .catchError((e) => null) ??
+            onReportRootIssue(nameFunction: ''),
+        trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem
+                ?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS030(value: getGiaiDoanSS030?.getDanhSachHoatDongChienDauXamChiemNhomSS00A?.getHoatDongChienDauXamChiemSS024)
+                .catchError((e) => null) ??
+            onReportRootIssue(nameFunction: ''),
+        trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem
+                ?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS040(value: getGiaiDoanSS040?.getDanhSachHoatDongChienDauXamChiemNhomSS00A?.getHoatDongChienDauXamChiemSS024)
+                .catchError((e) => null) ??
+            onReportRootIssue(nameFunction: ''),
+        trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem
+                ?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS050(value: getGiaiDoanSS050?.getDanhSachHoatDongChienDauXamChiemNhomSS00A?.getHoatDongChienDauXamChiemSS024)
+                .catchError((e) => null) ??
+            onReportRootIssue(nameFunction: ''),
+        trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem
+                ?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS060(value: getGiaiDoanSS060?.getDanhSachHoatDongChienDauXamChiemNhomSS00A?.getHoatDongChienDauXamChiemSS024)
+                .catchError((e) => null) ??
+            onReportRootIssue(nameFunction: ''),
+        trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem
+                ?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS070(value: getGiaiDoanSS070?.getDanhSachHoatDongChienDauXamChiemNhomSS00A?.getHoatDongChienDauXamChiemSS024)
+                .catchError((e) => null) ??
+            onReportRootIssue(nameFunction: ''),
+      ]);
 
       /// -----
       /// TODO: Gắn Kết Phương Tiện SS020 Vào Khung Kịch Bản
@@ -792,30 +887,39 @@ abstract class DOIHINHPHUONGTIENCOBAN with CauTrucThucThiCoBan {
   /// -----
   Future<void> onTichHopKichBanPhuongTienSS024NhomSS00B({required TrangThaiPhuongTien? trangThaiPhuongTien, bool? caiDatUuTien}) async {
     if (caiDatUuTien == true) {
-      /// -----
-      /// TODO: Tích Hợp Kịch Bản Vào Phương Tiện SS024 - Nhóm SS00B
-      /// -----
-      await trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS010(
-        value: getGiaiDoanSS010?.getDanhSachHoatDongChienDauXamChiemNhomSS00B?.getHoatDongChienDauXamChiemSS024,
-      );
-      await trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS020(
-        value: getGiaiDoanSS020?.getDanhSachHoatDongChienDauXamChiemNhomSS00B?.getHoatDongChienDauXamChiemSS024,
-      );
-      await trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS030(
-        value: getGiaiDoanSS030?.getDanhSachHoatDongChienDauXamChiemNhomSS00B?.getHoatDongChienDauXamChiemSS024,
-      );
-      await trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS040(
-        value: getGiaiDoanSS040?.getDanhSachHoatDongChienDauXamChiemNhomSS00B?.getHoatDongChienDauXamChiemSS024,
-      );
-      await trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS050(
-        value: getGiaiDoanSS050?.getDanhSachHoatDongChienDauXamChiemNhomSS00B?.getHoatDongChienDauXamChiemSS024,
-      );
-      await trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS060(
-        value: getGiaiDoanSS060?.getDanhSachHoatDongChienDauXamChiemNhomSS00B?.getHoatDongChienDauXamChiemSS024,
-      );
-      await trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS070(
-        value: getGiaiDoanSS070?.getDanhSachHoatDongChienDauXamChiemNhomSS00B?.getHoatDongChienDauXamChiemSS024,
-      );
+      await Future.wait([
+        /// -----
+        /// TODO: Tích Hợp Kịch Bản Vào Phương Tiện SS024 - Nhóm SS00B
+        /// -----
+        trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem
+                ?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS010(value: getGiaiDoanSS010?.getDanhSachHoatDongChienDauXamChiemNhomSS00B?.getHoatDongChienDauXamChiemSS024)
+                .catchError((e) => null) ??
+            onReportRootIssue(nameFunction: ''),
+        trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem
+                ?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS020(value: getGiaiDoanSS020?.getDanhSachHoatDongChienDauXamChiemNhomSS00B?.getHoatDongChienDauXamChiemSS024)
+                .catchError((e) => null) ??
+            onReportRootIssue(nameFunction: ''),
+        trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem
+                ?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS030(value: getGiaiDoanSS030?.getDanhSachHoatDongChienDauXamChiemNhomSS00B?.getHoatDongChienDauXamChiemSS024)
+                .catchError((e) => null) ??
+            onReportRootIssue(nameFunction: ''),
+        trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem
+                ?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS040(value: getGiaiDoanSS040?.getDanhSachHoatDongChienDauXamChiemNhomSS00B?.getHoatDongChienDauXamChiemSS024)
+                .catchError((e) => null) ??
+            onReportRootIssue(nameFunction: ''),
+        trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem
+                ?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS050(value: getGiaiDoanSS050?.getDanhSachHoatDongChienDauXamChiemNhomSS00B?.getHoatDongChienDauXamChiemSS024)
+                .catchError((e) => null) ??
+            onReportRootIssue(nameFunction: ''),
+        trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem
+                ?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS060(value: getGiaiDoanSS060?.getDanhSachHoatDongChienDauXamChiemNhomSS00B?.getHoatDongChienDauXamChiemSS024)
+                .catchError((e) => null) ??
+            onReportRootIssue(nameFunction: ''),
+        trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem
+                ?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS070(value: getGiaiDoanSS070?.getDanhSachHoatDongChienDauXamChiemNhomSS00B?.getHoatDongChienDauXamChiemSS024)
+                .catchError((e) => null) ??
+            onReportRootIssue(nameFunction: ''),
+      ]);
 
       /// -----
       /// TODO: Gắn Kết Phương Tiện SS020 Vào Khung Kịch Bản
@@ -835,30 +939,39 @@ abstract class DOIHINHPHUONGTIENCOBAN with CauTrucThucThiCoBan {
   /// -----
   Future<void> onTichHopKichBanPhuongTienSS024NhomSS00C({required TrangThaiPhuongTien? trangThaiPhuongTien, bool? caiDatUuTien}) async {
     if (caiDatUuTien == true) {
-      /// -----
-      /// TODO: Tích Hợp Kịch Bản Vào Phương Tiện SS024 - Nhóm SS00C
-      /// -----
-      await trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS010(
-        value: getGiaiDoanSS010?.getDanhSachHoatDongChienDauXamChiemNhomSS00C?.getHoatDongChienDauXamChiemSS024,
-      );
-      await trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS020(
-        value: getGiaiDoanSS020?.getDanhSachHoatDongChienDauXamChiemNhomSS00C?.getHoatDongChienDauXamChiemSS024,
-      );
-      await trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS030(
-        value: getGiaiDoanSS030?.getDanhSachHoatDongChienDauXamChiemNhomSS00C?.getHoatDongChienDauXamChiemSS024,
-      );
-      await trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS040(
-        value: getGiaiDoanSS040?.getDanhSachHoatDongChienDauXamChiemNhomSS00C?.getHoatDongChienDauXamChiemSS024,
-      );
-      await trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS050(
-        value: getGiaiDoanSS050?.getDanhSachHoatDongChienDauXamChiemNhomSS00C?.getHoatDongChienDauXamChiemSS024,
-      );
-      await trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS060(
-        value: getGiaiDoanSS060?.getDanhSachHoatDongChienDauXamChiemNhomSS00C?.getHoatDongChienDauXamChiemSS024,
-      );
-      await trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS070(
-        value: getGiaiDoanSS070?.getDanhSachHoatDongChienDauXamChiemNhomSS00C?.getHoatDongChienDauXamChiemSS024,
-      );
+      await Future.wait([
+        /// -----
+        /// TODO: Tích Hợp Kịch Bản Vào Phương Tiện SS024 - Nhóm SS00C
+        /// -----
+        trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem
+                ?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS010(value: getGiaiDoanSS010?.getDanhSachHoatDongChienDauXamChiemNhomSS00C?.getHoatDongChienDauXamChiemSS024)
+                .catchError((e) => null) ??
+            onReportRootIssue(nameFunction: ''),
+        trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem
+                ?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS020(value: getGiaiDoanSS020?.getDanhSachHoatDongChienDauXamChiemNhomSS00C?.getHoatDongChienDauXamChiemSS024)
+                .catchError((e) => null) ??
+            onReportRootIssue(nameFunction: ''),
+        trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem
+                ?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS030(value: getGiaiDoanSS030?.getDanhSachHoatDongChienDauXamChiemNhomSS00C?.getHoatDongChienDauXamChiemSS024)
+                .catchError((e) => null) ??
+            onReportRootIssue(nameFunction: ''),
+        trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem
+                ?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS040(value: getGiaiDoanSS040?.getDanhSachHoatDongChienDauXamChiemNhomSS00C?.getHoatDongChienDauXamChiemSS024)
+                .catchError((e) => null) ??
+            onReportRootIssue(nameFunction: ''),
+        trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem
+                ?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS050(value: getGiaiDoanSS050?.getDanhSachHoatDongChienDauXamChiemNhomSS00C?.getHoatDongChienDauXamChiemSS024)
+                .catchError((e) => null) ??
+            onReportRootIssue(nameFunction: ''),
+        trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem
+                ?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS060(value: getGiaiDoanSS060?.getDanhSachHoatDongChienDauXamChiemNhomSS00C?.getHoatDongChienDauXamChiemSS024)
+                .catchError((e) => null) ??
+            onReportRootIssue(nameFunction: ''),
+        trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem
+                ?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS070(value: getGiaiDoanSS070?.getDanhSachHoatDongChienDauXamChiemNhomSS00C?.getHoatDongChienDauXamChiemSS024)
+                .catchError((e) => null) ??
+            onReportRootIssue(nameFunction: ''),
+      ]);
 
       /// -----
       /// TODO: Gắn Kết Phương Tiện SS020 Vào Khung Kịch Bản
@@ -878,30 +991,39 @@ abstract class DOIHINHPHUONGTIENCOBAN with CauTrucThucThiCoBan {
   /// -----
   Future<void> onTichHopKichBanPhuongTienSS024NhomSS00D({required TrangThaiPhuongTien? trangThaiPhuongTien, bool? caiDatUuTien}) async {
     if (caiDatUuTien == true) {
-      /// -----
-      /// TODO: Tích Hợp Kịch Bản Vào Phương Tiện SS024 - Nhóm SS00D
-      /// -----
-      await trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS010(
-        value: getGiaiDoanSS010?.getDanhSachHoatDongChienDauXamChiemNhomSS00D?.getHoatDongChienDauXamChiemSS024,
-      );
-      await trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS020(
-        value: getGiaiDoanSS020?.getDanhSachHoatDongChienDauXamChiemNhomSS00D?.getHoatDongChienDauXamChiemSS024,
-      );
-      await trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS030(
-        value: getGiaiDoanSS030?.getDanhSachHoatDongChienDauXamChiemNhomSS00D?.getHoatDongChienDauXamChiemSS024,
-      );
-      await trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS040(
-        value: getGiaiDoanSS040?.getDanhSachHoatDongChienDauXamChiemNhomSS00D?.getHoatDongChienDauXamChiemSS024,
-      );
-      await trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS050(
-        value: getGiaiDoanSS050?.getDanhSachHoatDongChienDauXamChiemNhomSS00D?.getHoatDongChienDauXamChiemSS024,
-      );
-      await trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS060(
-        value: getGiaiDoanSS060?.getDanhSachHoatDongChienDauXamChiemNhomSS00D?.getHoatDongChienDauXamChiemSS024,
-      );
-      await trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS070(
-        value: getGiaiDoanSS070?.getDanhSachHoatDongChienDauXamChiemNhomSS00D?.getHoatDongChienDauXamChiemSS024,
-      );
+      await Future.wait([
+        /// -----
+        /// TODO: Tích Hợp Kịch Bản Vào Phương Tiện SS024 - Nhóm SS00D
+        /// -----
+        trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem
+                ?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS010(value: getGiaiDoanSS010?.getDanhSachHoatDongChienDauXamChiemNhomSS00D?.getHoatDongChienDauXamChiemSS024)
+                .catchError((e) => null) ??
+            onReportRootIssue(nameFunction: ''),
+        trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem
+                ?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS020(value: getGiaiDoanSS020?.getDanhSachHoatDongChienDauXamChiemNhomSS00D?.getHoatDongChienDauXamChiemSS024)
+                .catchError((e) => null) ??
+            onReportRootIssue(nameFunction: ''),
+        trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem
+                ?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS030(value: getGiaiDoanSS030?.getDanhSachHoatDongChienDauXamChiemNhomSS00D?.getHoatDongChienDauXamChiemSS024)
+                .catchError((e) => null) ??
+            onReportRootIssue(nameFunction: ''),
+        trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem
+                ?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS040(value: getGiaiDoanSS040?.getDanhSachHoatDongChienDauXamChiemNhomSS00D?.getHoatDongChienDauXamChiemSS024)
+                .catchError((e) => null) ??
+            onReportRootIssue(nameFunction: ''),
+        trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem
+                ?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS050(value: getGiaiDoanSS050?.getDanhSachHoatDongChienDauXamChiemNhomSS00D?.getHoatDongChienDauXamChiemSS024)
+                .catchError((e) => null) ??
+            onReportRootIssue(nameFunction: ''),
+        trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem
+                ?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS060(value: getGiaiDoanSS060?.getDanhSachHoatDongChienDauXamChiemNhomSS00D?.getHoatDongChienDauXamChiemSS024)
+                .catchError((e) => null) ??
+            onReportRootIssue(nameFunction: ''),
+        trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem
+                ?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS070(value: getGiaiDoanSS070?.getDanhSachHoatDongChienDauXamChiemNhomSS00D?.getHoatDongChienDauXamChiemSS024)
+                .catchError((e) => null) ??
+            onReportRootIssue(nameFunction: ''),
+      ]);
 
       /// -----
       /// TODO: Gắn Kết Phương Tiện SS020 Vào Khung Kịch Bản
@@ -929,30 +1051,39 @@ abstract class DOIHINHPHUONGTIENCOBAN with CauTrucThucThiCoBan {
   /// -----
   Future<void> onTichHopKichBanPhuongTienSS026NhomSS00A({required TrangThaiPhuongTien? trangThaiPhuongTien, bool? caiDatUuTien}) async {
     if (caiDatUuTien == true) {
-      /// -----
-      /// TODO: Tích Hợp Kịch Bản Vào Phương Tiện SS026 - Nhóm SS00A
-      /// -----
-      await trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS010(
-        value: getGiaiDoanSS010?.getDanhSachHoatDongChienDauXamChiemNhomSS00A?.getHoatDongChienDauXamChiemSS026,
-      );
-      await trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS020(
-        value: getGiaiDoanSS020?.getDanhSachHoatDongChienDauXamChiemNhomSS00A?.getHoatDongChienDauXamChiemSS026,
-      );
-      await trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS030(
-        value: getGiaiDoanSS030?.getDanhSachHoatDongChienDauXamChiemNhomSS00A?.getHoatDongChienDauXamChiemSS026,
-      );
-      await trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS040(
-        value: getGiaiDoanSS040?.getDanhSachHoatDongChienDauXamChiemNhomSS00A?.getHoatDongChienDauXamChiemSS026,
-      );
-      await trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS050(
-        value: getGiaiDoanSS050?.getDanhSachHoatDongChienDauXamChiemNhomSS00A?.getHoatDongChienDauXamChiemSS026,
-      );
-      await trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS060(
-        value: getGiaiDoanSS060?.getDanhSachHoatDongChienDauXamChiemNhomSS00A?.getHoatDongChienDauXamChiemSS026,
-      );
-      await trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS070(
-        value: getGiaiDoanSS070?.getDanhSachHoatDongChienDauXamChiemNhomSS00A?.getHoatDongChienDauXamChiemSS026,
-      );
+      await Future.wait([
+        /// -----
+        /// TODO: Tích Hợp Kịch Bản Vào Phương Tiện SS026 - Nhóm SS00A
+        /// -----
+        trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem
+                ?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS010(value: getGiaiDoanSS010?.getDanhSachHoatDongChienDauXamChiemNhomSS00A?.getHoatDongChienDauXamChiemSS026)
+                .catchError((e) => null) ??
+            onReportRootIssue(nameFunction: ''),
+        trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem
+                ?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS020(value: getGiaiDoanSS020?.getDanhSachHoatDongChienDauXamChiemNhomSS00A?.getHoatDongChienDauXamChiemSS026)
+                .catchError((e) => null) ??
+            onReportRootIssue(nameFunction: ''),
+        trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem
+                ?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS030(value: getGiaiDoanSS030?.getDanhSachHoatDongChienDauXamChiemNhomSS00A?.getHoatDongChienDauXamChiemSS026)
+                .catchError((e) => null) ??
+            onReportRootIssue(nameFunction: ''),
+        trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem
+                ?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS040(value: getGiaiDoanSS040?.getDanhSachHoatDongChienDauXamChiemNhomSS00A?.getHoatDongChienDauXamChiemSS026)
+                .catchError((e) => null) ??
+            onReportRootIssue(nameFunction: ''),
+        trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem
+                ?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS050(value: getGiaiDoanSS050?.getDanhSachHoatDongChienDauXamChiemNhomSS00A?.getHoatDongChienDauXamChiemSS026)
+                .catchError((e) => null) ??
+            onReportRootIssue(nameFunction: ''),
+        trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem
+                ?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS060(value: getGiaiDoanSS060?.getDanhSachHoatDongChienDauXamChiemNhomSS00A?.getHoatDongChienDauXamChiemSS026)
+                .catchError((e) => null) ??
+            onReportRootIssue(nameFunction: ''),
+        trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem
+                ?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS070(value: getGiaiDoanSS070?.getDanhSachHoatDongChienDauXamChiemNhomSS00A?.getHoatDongChienDauXamChiemSS026)
+                .catchError((e) => null) ??
+            onReportRootIssue(nameFunction: ''),
+      ]);
 
       /// -----
       /// TODO: Gắn Kết Phương Tiện SS020 Vào Khung Kịch Bản
@@ -972,30 +1103,39 @@ abstract class DOIHINHPHUONGTIENCOBAN with CauTrucThucThiCoBan {
   /// -----
   Future<void> onTichHopKichBanPhuongTienSS026NhomSS00B({required TrangThaiPhuongTien? trangThaiPhuongTien, bool? caiDatUuTien}) async {
     if (caiDatUuTien == true) {
-      /// -----
-      /// TODO: Tích Hợp Kịch Bản Vào Phương Tiện SS026 - Nhóm SS00B
-      /// -----
-      await trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS010(
-        value: getGiaiDoanSS010?.getDanhSachHoatDongChienDauXamChiemNhomSS00B?.getHoatDongChienDauXamChiemSS026,
-      );
-      await trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS020(
-        value: getGiaiDoanSS020?.getDanhSachHoatDongChienDauXamChiemNhomSS00B?.getHoatDongChienDauXamChiemSS026,
-      );
-      await trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS030(
-        value: getGiaiDoanSS030?.getDanhSachHoatDongChienDauXamChiemNhomSS00B?.getHoatDongChienDauXamChiemSS026,
-      );
-      await trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS040(
-        value: getGiaiDoanSS040?.getDanhSachHoatDongChienDauXamChiemNhomSS00B?.getHoatDongChienDauXamChiemSS026,
-      );
-      await trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS050(
-        value: getGiaiDoanSS050?.getDanhSachHoatDongChienDauXamChiemNhomSS00B?.getHoatDongChienDauXamChiemSS026,
-      );
-      await trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS060(
-        value: getGiaiDoanSS060?.getDanhSachHoatDongChienDauXamChiemNhomSS00B?.getHoatDongChienDauXamChiemSS026,
-      );
-      await trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS070(
-        value: getGiaiDoanSS070?.getDanhSachHoatDongChienDauXamChiemNhomSS00B?.getHoatDongChienDauXamChiemSS026,
-      );
+      await Future.wait([
+        /// -----
+        /// TODO: Tích Hợp Kịch Bản Vào Phương Tiện SS026 - Nhóm SS00B
+        /// -----
+        trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem
+                ?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS010(value: getGiaiDoanSS010?.getDanhSachHoatDongChienDauXamChiemNhomSS00B?.getHoatDongChienDauXamChiemSS026)
+                .catchError((e) => null) ??
+            onReportRootIssue(nameFunction: ''),
+        trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem
+                ?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS020(value: getGiaiDoanSS020?.getDanhSachHoatDongChienDauXamChiemNhomSS00B?.getHoatDongChienDauXamChiemSS026)
+                .catchError((e) => null) ??
+            onReportRootIssue(nameFunction: ''),
+        trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem
+                ?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS030(value: getGiaiDoanSS030?.getDanhSachHoatDongChienDauXamChiemNhomSS00B?.getHoatDongChienDauXamChiemSS026)
+                .catchError((e) => null) ??
+            onReportRootIssue(nameFunction: ''),
+        trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem
+                ?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS040(value: getGiaiDoanSS040?.getDanhSachHoatDongChienDauXamChiemNhomSS00B?.getHoatDongChienDauXamChiemSS026)
+                .catchError((e) => null) ??
+            onReportRootIssue(nameFunction: ''),
+        trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem
+                ?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS050(value: getGiaiDoanSS050?.getDanhSachHoatDongChienDauXamChiemNhomSS00B?.getHoatDongChienDauXamChiemSS026)
+                .catchError((e) => null) ??
+            onReportRootIssue(nameFunction: ''),
+        trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem
+                ?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS060(value: getGiaiDoanSS060?.getDanhSachHoatDongChienDauXamChiemNhomSS00B?.getHoatDongChienDauXamChiemSS026)
+                .catchError((e) => null) ??
+            onReportRootIssue(nameFunction: ''),
+        trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem
+                ?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS070(value: getGiaiDoanSS070?.getDanhSachHoatDongChienDauXamChiemNhomSS00B?.getHoatDongChienDauXamChiemSS026)
+                .catchError((e) => null) ??
+            onReportRootIssue(nameFunction: ''),
+      ]);
 
       /// -----
       /// TODO: Gắn Kết Phương Tiện SS020 Vào Khung Kịch Bản
@@ -1015,30 +1155,39 @@ abstract class DOIHINHPHUONGTIENCOBAN with CauTrucThucThiCoBan {
   /// -----
   Future<void> onTichHopKichBanPhuongTienSS026NhomSS00C({required TrangThaiPhuongTien? trangThaiPhuongTien, bool? caiDatUuTien}) async {
     if (caiDatUuTien == true) {
-      /// -----
-      /// TODO: Tích Hợp Kịch Bản Vào Phương Tiện SS026 - Nhóm SS00C
-      /// -----
-      await trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS010(
-        value: getGiaiDoanSS010?.getDanhSachHoatDongChienDauXamChiemNhomSS00C?.getHoatDongChienDauXamChiemSS026,
-      );
-      await trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS020(
-        value: getGiaiDoanSS020?.getDanhSachHoatDongChienDauXamChiemNhomSS00C?.getHoatDongChienDauXamChiemSS026,
-      );
-      await trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS030(
-        value: getGiaiDoanSS030?.getDanhSachHoatDongChienDauXamChiemNhomSS00C?.getHoatDongChienDauXamChiemSS026,
-      );
-      await trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS040(
-        value: getGiaiDoanSS040?.getDanhSachHoatDongChienDauXamChiemNhomSS00C?.getHoatDongChienDauXamChiemSS026,
-      );
-      await trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS050(
-        value: getGiaiDoanSS050?.getDanhSachHoatDongChienDauXamChiemNhomSS00C?.getHoatDongChienDauXamChiemSS026,
-      );
-      await trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS060(
-        value: getGiaiDoanSS060?.getDanhSachHoatDongChienDauXamChiemNhomSS00C?.getHoatDongChienDauXamChiemSS026,
-      );
-      await trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS070(
-        value: getGiaiDoanSS070?.getDanhSachHoatDongChienDauXamChiemNhomSS00C?.getHoatDongChienDauXamChiemSS026,
-      );
+      await Future.wait([
+        /// -----
+        /// TODO: Tích Hợp Kịch Bản Vào Phương Tiện SS026 - Nhóm SS00C
+        /// -----
+        trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem
+                ?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS010(value: getGiaiDoanSS010?.getDanhSachHoatDongChienDauXamChiemNhomSS00C?.getHoatDongChienDauXamChiemSS026)
+                .catchError((e) => null) ??
+            onReportRootIssue(nameFunction: ''),
+        trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem
+                ?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS020(value: getGiaiDoanSS020?.getDanhSachHoatDongChienDauXamChiemNhomSS00C?.getHoatDongChienDauXamChiemSS026)
+                .catchError((e) => null) ??
+            onReportRootIssue(nameFunction: ''),
+        trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem
+                ?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS030(value: getGiaiDoanSS030?.getDanhSachHoatDongChienDauXamChiemNhomSS00C?.getHoatDongChienDauXamChiemSS026)
+                .catchError((e) => null) ??
+            onReportRootIssue(nameFunction: ''),
+        trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem
+                ?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS040(value: getGiaiDoanSS040?.getDanhSachHoatDongChienDauXamChiemNhomSS00C?.getHoatDongChienDauXamChiemSS026)
+                .catchError((e) => null) ??
+            onReportRootIssue(nameFunction: ''),
+        trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem
+                ?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS050(value: getGiaiDoanSS050?.getDanhSachHoatDongChienDauXamChiemNhomSS00C?.getHoatDongChienDauXamChiemSS026)
+                .catchError((e) => null) ??
+            onReportRootIssue(nameFunction: ''),
+        trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem
+                ?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS060(value: getGiaiDoanSS060?.getDanhSachHoatDongChienDauXamChiemNhomSS00C?.getHoatDongChienDauXamChiemSS026)
+                .catchError((e) => null) ??
+            onReportRootIssue(nameFunction: ''),
+        trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem
+                ?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS070(value: getGiaiDoanSS070?.getDanhSachHoatDongChienDauXamChiemNhomSS00C?.getHoatDongChienDauXamChiemSS026)
+                .catchError((e) => null) ??
+            onReportRootIssue(nameFunction: ''),
+      ]);
 
       /// -----
       /// TODO: Gắn Kết Phương Tiện SS020 Vào Khung Kịch Bản
@@ -1058,30 +1207,39 @@ abstract class DOIHINHPHUONGTIENCOBAN with CauTrucThucThiCoBan {
   /// -----
   Future<void> onTichHopKichBanPhuongTienSS026NhomSS00D({required TrangThaiPhuongTien? trangThaiPhuongTien, bool? caiDatUuTien}) async {
     if (caiDatUuTien == true) {
-      /// -----
-      /// TODO: Tích Hợp Kịch Bản Vào Phương Tiện SS026 - Nhóm SS00D
-      /// -----
-      await trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS010(
-        value: getGiaiDoanSS010?.getDanhSachHoatDongChienDauXamChiemNhomSS00D?.getHoatDongChienDauXamChiemSS026,
-      );
-      await trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS020(
-        value: getGiaiDoanSS020?.getDanhSachHoatDongChienDauXamChiemNhomSS00D?.getHoatDongChienDauXamChiemSS026,
-      );
-      await trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS030(
-        value: getGiaiDoanSS030?.getDanhSachHoatDongChienDauXamChiemNhomSS00D?.getHoatDongChienDauXamChiemSS026,
-      );
-      await trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS040(
-        value: getGiaiDoanSS040?.getDanhSachHoatDongChienDauXamChiemNhomSS00D?.getHoatDongChienDauXamChiemSS026,
-      );
-      await trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS050(
-        value: getGiaiDoanSS050?.getDanhSachHoatDongChienDauXamChiemNhomSS00D?.getHoatDongChienDauXamChiemSS026,
-      );
-      await trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS060(
-        value: getGiaiDoanSS060?.getDanhSachHoatDongChienDauXamChiemNhomSS00D?.getHoatDongChienDauXamChiemSS026,
-      );
-      await trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS070(
-        value: getGiaiDoanSS070?.getDanhSachHoatDongChienDauXamChiemNhomSS00D?.getHoatDongChienDauXamChiemSS026,
-      );
+      await Future.wait([
+        /// -----
+        /// TODO: Tích Hợp Kịch Bản Vào Phương Tiện SS026 - Nhóm SS00D
+        /// -----
+        trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem
+                ?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS010(value: getGiaiDoanSS010?.getDanhSachHoatDongChienDauXamChiemNhomSS00D?.getHoatDongChienDauXamChiemSS026)
+                .catchError((e) => null) ??
+            onReportRootIssue(nameFunction: ''),
+        trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem
+                ?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS020(value: getGiaiDoanSS020?.getDanhSachHoatDongChienDauXamChiemNhomSS00D?.getHoatDongChienDauXamChiemSS026)
+                .catchError((e) => null) ??
+            onReportRootIssue(nameFunction: ''),
+        trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem
+                ?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS030(value: getGiaiDoanSS030?.getDanhSachHoatDongChienDauXamChiemNhomSS00D?.getHoatDongChienDauXamChiemSS026)
+                .catchError((e) => null) ??
+            onReportRootIssue(nameFunction: ''),
+        trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem
+                ?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS040(value: getGiaiDoanSS040?.getDanhSachHoatDongChienDauXamChiemNhomSS00D?.getHoatDongChienDauXamChiemSS026)
+                .catchError((e) => null) ??
+            onReportRootIssue(nameFunction: ''),
+        trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem
+                ?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS050(value: getGiaiDoanSS050?.getDanhSachHoatDongChienDauXamChiemNhomSS00D?.getHoatDongChienDauXamChiemSS026)
+                .catchError((e) => null) ??
+            onReportRootIssue(nameFunction: ''),
+        trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem
+                ?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS060(value: getGiaiDoanSS060?.getDanhSachHoatDongChienDauXamChiemNhomSS00D?.getHoatDongChienDauXamChiemSS026)
+                .catchError((e) => null) ??
+            onReportRootIssue(nameFunction: ''),
+        trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem
+                ?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS070(value: getGiaiDoanSS070?.getDanhSachHoatDongChienDauXamChiemNhomSS00D?.getHoatDongChienDauXamChiemSS026)
+                .catchError((e) => null) ??
+            onReportRootIssue(nameFunction: ''),
+      ]);
 
       /// -----
       /// TODO: Gắn Kết Phương Tiện SS020 Vào Khung Kịch Bản
@@ -1109,30 +1267,39 @@ abstract class DOIHINHPHUONGTIENCOBAN with CauTrucThucThiCoBan {
   /// -----
   Future<void> onTichHopKichBanPhuongTienSS028NhomSS00A({required TrangThaiPhuongTien? trangThaiPhuongTien, bool? caiDatUuTien}) async {
     if (caiDatUuTien == true) {
-      /// -----
-      /// TODO: Tích Hợp Kịch Bản Vào Phương Tiện SS028 - Nhóm SS00A
-      /// -----
-      await trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS010(
-        value: getGiaiDoanSS010?.getDanhSachHoatDongChienDauXamChiemNhomSS00A?.getHoatDongChienDauXamChiemSS028,
-      );
-      await trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS020(
-        value: getGiaiDoanSS020?.getDanhSachHoatDongChienDauXamChiemNhomSS00A?.getHoatDongChienDauXamChiemSS028,
-      );
-      await trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS030(
-        value: getGiaiDoanSS030?.getDanhSachHoatDongChienDauXamChiemNhomSS00A?.getHoatDongChienDauXamChiemSS028,
-      );
-      await trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS040(
-        value: getGiaiDoanSS040?.getDanhSachHoatDongChienDauXamChiemNhomSS00A?.getHoatDongChienDauXamChiemSS028,
-      );
-      await trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS050(
-        value: getGiaiDoanSS050?.getDanhSachHoatDongChienDauXamChiemNhomSS00A?.getHoatDongChienDauXamChiemSS028,
-      );
-      await trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS060(
-        value: getGiaiDoanSS060?.getDanhSachHoatDongChienDauXamChiemNhomSS00A?.getHoatDongChienDauXamChiemSS028,
-      );
-      await trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS070(
-        value: getGiaiDoanSS070?.getDanhSachHoatDongChienDauXamChiemNhomSS00A?.getHoatDongChienDauXamChiemSS028,
-      );
+      await Future.wait([
+        /// -----
+        /// TODO: Tích Hợp Kịch Bản Vào Phương Tiện SS028 - Nhóm SS00A
+        /// -----
+        trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem
+                ?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS010(value: getGiaiDoanSS010?.getDanhSachHoatDongChienDauXamChiemNhomSS00A?.getHoatDongChienDauXamChiemSS028)
+                .catchError((e) => null) ??
+            onReportRootIssue(nameFunction: ''),
+        trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem
+                ?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS020(value: getGiaiDoanSS020?.getDanhSachHoatDongChienDauXamChiemNhomSS00A?.getHoatDongChienDauXamChiemSS028)
+                .catchError((e) => null) ??
+            onReportRootIssue(nameFunction: ''),
+        trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem
+                ?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS030(value: getGiaiDoanSS030?.getDanhSachHoatDongChienDauXamChiemNhomSS00A?.getHoatDongChienDauXamChiemSS028)
+                .catchError((e) => null) ??
+            onReportRootIssue(nameFunction: ''),
+        trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem
+                ?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS040(value: getGiaiDoanSS040?.getDanhSachHoatDongChienDauXamChiemNhomSS00A?.getHoatDongChienDauXamChiemSS028)
+                .catchError((e) => null) ??
+            onReportRootIssue(nameFunction: ''),
+        trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem
+                ?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS050(value: getGiaiDoanSS050?.getDanhSachHoatDongChienDauXamChiemNhomSS00A?.getHoatDongChienDauXamChiemSS028)
+                .catchError((e) => null) ??
+            onReportRootIssue(nameFunction: ''),
+        trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem
+                ?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS060(value: getGiaiDoanSS060?.getDanhSachHoatDongChienDauXamChiemNhomSS00A?.getHoatDongChienDauXamChiemSS028)
+                .catchError((e) => null) ??
+            onReportRootIssue(nameFunction: ''),
+        trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem
+                ?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS070(value: getGiaiDoanSS070?.getDanhSachHoatDongChienDauXamChiemNhomSS00A?.getHoatDongChienDauXamChiemSS028)
+                .catchError((e) => null) ??
+            onReportRootIssue(nameFunction: ''),
+      ]);
 
       /// -----
       /// TODO: Gắn Kết Phương Tiện SS020 Vào Khung Kịch Bản
@@ -1152,31 +1319,39 @@ abstract class DOIHINHPHUONGTIENCOBAN with CauTrucThucThiCoBan {
   /// -----
   Future<void> onTichHopKichBanPhuongTienSS028NhomSS00B({required TrangThaiPhuongTien? trangThaiPhuongTien, bool? caiDatUuTien}) async {
     if (caiDatUuTien == true) {
-      /// -----
-      /// TODO: Tích Hợp Kịch Bản Vào Phương Tiện SS028 - Nhóm SS00B
-      /// -----
-
-      await trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS010(
-        value: getGiaiDoanSS010?.getDanhSachHoatDongChienDauXamChiemNhomSS00B?.getHoatDongChienDauXamChiemSS028,
-      );
-      await trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS020(
-        value: getGiaiDoanSS020?.getDanhSachHoatDongChienDauXamChiemNhomSS00B?.getHoatDongChienDauXamChiemSS028,
-      );
-      await trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS030(
-        value: getGiaiDoanSS030?.getDanhSachHoatDongChienDauXamChiemNhomSS00B?.getHoatDongChienDauXamChiemSS028,
-      );
-      await trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS040(
-        value: getGiaiDoanSS040?.getDanhSachHoatDongChienDauXamChiemNhomSS00B?.getHoatDongChienDauXamChiemSS028,
-      );
-      await trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS050(
-        value: getGiaiDoanSS050?.getDanhSachHoatDongChienDauXamChiemNhomSS00B?.getHoatDongChienDauXamChiemSS028,
-      );
-      await trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS060(
-        value: getGiaiDoanSS060?.getDanhSachHoatDongChienDauXamChiemNhomSS00B?.getHoatDongChienDauXamChiemSS028,
-      );
-      await trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS070(
-        value: getGiaiDoanSS070?.getDanhSachHoatDongChienDauXamChiemNhomSS00B?.getHoatDongChienDauXamChiemSS028,
-      );
+      await Future.wait([
+        /// -----
+        /// TODO: Tích Hợp Kịch Bản Vào Phương Tiện SS028 - Nhóm SS00B
+        /// -----
+        trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem
+                ?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS010(value: getGiaiDoanSS010?.getDanhSachHoatDongChienDauXamChiemNhomSS00B?.getHoatDongChienDauXamChiemSS028)
+                .catchError((e) => null) ??
+            onReportRootIssue(nameFunction: ''),
+        trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem
+                ?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS020(value: getGiaiDoanSS020?.getDanhSachHoatDongChienDauXamChiemNhomSS00B?.getHoatDongChienDauXamChiemSS028)
+                .catchError((e) => null) ??
+            onReportRootIssue(nameFunction: ''),
+        trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem
+                ?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS030(value: getGiaiDoanSS030?.getDanhSachHoatDongChienDauXamChiemNhomSS00B?.getHoatDongChienDauXamChiemSS028)
+                .catchError((e) => null) ??
+            onReportRootIssue(nameFunction: ''),
+        trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem
+                ?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS040(value: getGiaiDoanSS040?.getDanhSachHoatDongChienDauXamChiemNhomSS00B?.getHoatDongChienDauXamChiemSS028)
+                .catchError((e) => null) ??
+            onReportRootIssue(nameFunction: ''),
+        trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem
+                ?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS050(value: getGiaiDoanSS050?.getDanhSachHoatDongChienDauXamChiemNhomSS00B?.getHoatDongChienDauXamChiemSS028)
+                .catchError((e) => null) ??
+            onReportRootIssue(nameFunction: ''),
+        trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem
+                ?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS060(value: getGiaiDoanSS060?.getDanhSachHoatDongChienDauXamChiemNhomSS00B?.getHoatDongChienDauXamChiemSS028)
+                .catchError((e) => null) ??
+            onReportRootIssue(nameFunction: ''),
+        trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem
+                ?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS070(value: getGiaiDoanSS070?.getDanhSachHoatDongChienDauXamChiemNhomSS00B?.getHoatDongChienDauXamChiemSS028)
+                .catchError((e) => null) ??
+            onReportRootIssue(nameFunction: ''),
+      ]);
 
       /// -----
       /// TODO: Gắn Kết Phương Tiện SS020 Vào Khung Kịch Bản
@@ -1196,30 +1371,39 @@ abstract class DOIHINHPHUONGTIENCOBAN with CauTrucThucThiCoBan {
   /// -----
   Future<void> onTichHopKichBanPhuongTienSS028NhomSS00C({required TrangThaiPhuongTien? trangThaiPhuongTien, bool? caiDatUuTien}) async {
     if (caiDatUuTien == true) {
-      /// -----
-      /// TODO: Tích Hợp Kịch Bản Vào Phương Tiện SS028 - Nhóm SS00C
-      /// -----
-      await trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS010(
-        value: getGiaiDoanSS010?.getDanhSachHoatDongChienDauXamChiemNhomSS00C?.getHoatDongChienDauXamChiemSS028,
-      );
-      await trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS020(
-        value: getGiaiDoanSS020?.getDanhSachHoatDongChienDauXamChiemNhomSS00C?.getHoatDongChienDauXamChiemSS028,
-      );
-      await trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS030(
-        value: getGiaiDoanSS030?.getDanhSachHoatDongChienDauXamChiemNhomSS00C?.getHoatDongChienDauXamChiemSS028,
-      );
-      await trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS040(
-        value: getGiaiDoanSS040?.getDanhSachHoatDongChienDauXamChiemNhomSS00C?.getHoatDongChienDauXamChiemSS028,
-      );
-      await trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS050(
-        value: getGiaiDoanSS050?.getDanhSachHoatDongChienDauXamChiemNhomSS00C?.getHoatDongChienDauXamChiemSS028,
-      );
-      await trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS060(
-        value: getGiaiDoanSS060?.getDanhSachHoatDongChienDauXamChiemNhomSS00C?.getHoatDongChienDauXamChiemSS028,
-      );
-      await trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS070(
-        value: getGiaiDoanSS070?.getDanhSachHoatDongChienDauXamChiemNhomSS00C?.getHoatDongChienDauXamChiemSS028,
-      );
+      await Future.wait([
+        /// -----
+        /// TODO: Tích Hợp Kịch Bản Vào Phương Tiện SS028 - Nhóm SS00C
+        /// -----
+        trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem
+                ?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS010(value: getGiaiDoanSS010?.getDanhSachHoatDongChienDauXamChiemNhomSS00C?.getHoatDongChienDauXamChiemSS028)
+                .catchError((e) => null) ??
+            onReportRootIssue(nameFunction: ''),
+        trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem
+                ?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS020(value: getGiaiDoanSS020?.getDanhSachHoatDongChienDauXamChiemNhomSS00C?.getHoatDongChienDauXamChiemSS028)
+                .catchError((e) => null) ??
+            onReportRootIssue(nameFunction: ''),
+        trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem
+                ?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS030(value: getGiaiDoanSS030?.getDanhSachHoatDongChienDauXamChiemNhomSS00C?.getHoatDongChienDauXamChiemSS028)
+                .catchError((e) => null) ??
+            onReportRootIssue(nameFunction: ''),
+        trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem
+                ?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS040(value: getGiaiDoanSS040?.getDanhSachHoatDongChienDauXamChiemNhomSS00C?.getHoatDongChienDauXamChiemSS028)
+                .catchError((e) => null) ??
+            onReportRootIssue(nameFunction: ''),
+        trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem
+                ?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS050(value: getGiaiDoanSS050?.getDanhSachHoatDongChienDauXamChiemNhomSS00C?.getHoatDongChienDauXamChiemSS028)
+                .catchError((e) => null) ??
+            onReportRootIssue(nameFunction: ''),
+        trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem
+                ?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS060(value: getGiaiDoanSS060?.getDanhSachHoatDongChienDauXamChiemNhomSS00C?.getHoatDongChienDauXamChiemSS028)
+                .catchError((e) => null) ??
+            onReportRootIssue(nameFunction: ''),
+        trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem
+                ?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS070(value: getGiaiDoanSS070?.getDanhSachHoatDongChienDauXamChiemNhomSS00C?.getHoatDongChienDauXamChiemSS028)
+                .catchError((e) => null) ??
+            onReportRootIssue(nameFunction: ''),
+      ]);
 
       /// -----
       /// TODO: Gắn Kết Phương Tiện SS020 Vào Khung Kịch Bản
@@ -1239,30 +1423,39 @@ abstract class DOIHINHPHUONGTIENCOBAN with CauTrucThucThiCoBan {
   /// -----
   Future<void> onTichHopKichBanPhuongTienSS028NhomSS00D({required TrangThaiPhuongTien? trangThaiPhuongTien, bool? caiDatUuTien}) async {
     if (caiDatUuTien == true) {
-      /// -----
-      /// TODO: Tích Hợp Kịch Bản Vào Phương Tiện SS028 - Nhóm SS00D
-      /// -----
-      await trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS010(
-        value: getGiaiDoanSS010?.getDanhSachHoatDongChienDauXamChiemNhomSS00D?.getHoatDongChienDauXamChiemSS028,
-      );
-      await trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS020(
-        value: getGiaiDoanSS020?.getDanhSachHoatDongChienDauXamChiemNhomSS00D?.getHoatDongChienDauXamChiemSS028,
-      );
-      await trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS030(
-        value: getGiaiDoanSS030?.getDanhSachHoatDongChienDauXamChiemNhomSS00D?.getHoatDongChienDauXamChiemSS028,
-      );
-      await trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS040(
-        value: getGiaiDoanSS040?.getDanhSachHoatDongChienDauXamChiemNhomSS00D?.getHoatDongChienDauXamChiemSS028,
-      );
-      await trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS050(
-        value: getGiaiDoanSS050?.getDanhSachHoatDongChienDauXamChiemNhomSS00D?.getHoatDongChienDauXamChiemSS028,
-      );
-      await trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS060(
-        value: getGiaiDoanSS060?.getDanhSachHoatDongChienDauXamChiemNhomSS00D?.getHoatDongChienDauXamChiemSS028,
-      );
-      await trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS070(
-        value: getGiaiDoanSS070?.getDanhSachHoatDongChienDauXamChiemNhomSS00D?.getHoatDongChienDauXamChiemSS028,
-      );
+      await Future.wait([
+        /// -----
+        /// TODO: Tích Hợp Kịch Bản Vào Phương Tiện SS028 - Nhóm SS00D
+        /// -----
+        trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem
+                ?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS010(value: getGiaiDoanSS010?.getDanhSachHoatDongChienDauXamChiemNhomSS00D?.getHoatDongChienDauXamChiemSS028)
+                .catchError((e) => null) ??
+            onReportRootIssue(nameFunction: ''),
+        trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem
+                ?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS020(value: getGiaiDoanSS020?.getDanhSachHoatDongChienDauXamChiemNhomSS00D?.getHoatDongChienDauXamChiemSS028)
+                .catchError((e) => null) ??
+            onReportRootIssue(nameFunction: ''),
+        trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem
+                ?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS030(value: getGiaiDoanSS030?.getDanhSachHoatDongChienDauXamChiemNhomSS00D?.getHoatDongChienDauXamChiemSS028)
+                .catchError((e) => null) ??
+            onReportRootIssue(nameFunction: ''),
+        trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem
+                ?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS040(value: getGiaiDoanSS040?.getDanhSachHoatDongChienDauXamChiemNhomSS00D?.getHoatDongChienDauXamChiemSS028)
+                .catchError((e) => null) ??
+            onReportRootIssue(nameFunction: ''),
+        trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem
+                ?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS050(value: getGiaiDoanSS050?.getDanhSachHoatDongChienDauXamChiemNhomSS00D?.getHoatDongChienDauXamChiemSS028)
+                .catchError((e) => null) ??
+            onReportRootIssue(nameFunction: ''),
+        trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem
+                ?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS060(value: getGiaiDoanSS060?.getDanhSachHoatDongChienDauXamChiemNhomSS00D?.getHoatDongChienDauXamChiemSS028)
+                .catchError((e) => null) ??
+            onReportRootIssue(nameFunction: ''),
+        trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem
+                ?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS070(value: getGiaiDoanSS070?.getDanhSachHoatDongChienDauXamChiemNhomSS00D?.getHoatDongChienDauXamChiemSS028)
+                .catchError((e) => null) ??
+            onReportRootIssue(nameFunction: ''),
+      ]);
 
       /// -----
       /// TODO: Gắn Kết Phương Tiện SS020 Vào Khung Kịch Bản
@@ -1290,30 +1483,39 @@ abstract class DOIHINHPHUONGTIENCOBAN with CauTrucThucThiCoBan {
   /// -----
   Future<void> onTichHopKichBanPhuongTienSS030NhomSS00A({required TrangThaiPhuongTien? trangThaiPhuongTien, bool? caiDatUuTien}) async {
     if (caiDatUuTien == true) {
-      /// -----
-      /// TODO: Tích Hợp Kịch Bản Vào Phương Tiện SS020 - Nhóm SS00A
-      /// -----
-      await trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS020(
-        value: getGiaiDoanSS020?.getDanhSachHoatDongChienDauXamChiemNhomSS00A?.getHoatDongChienDauXamChiemSS030,
-      );
-      await trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS010(
-        value: getGiaiDoanSS010?.getDanhSachHoatDongChienDauXamChiemNhomSS00A?.getHoatDongChienDauXamChiemSS030,
-      );
-      await trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS030(
-        value: getGiaiDoanSS030?.getDanhSachHoatDongChienDauXamChiemNhomSS00A?.getHoatDongChienDauXamChiemSS030,
-      );
-      await trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS040(
-        value: getGiaiDoanSS040?.getDanhSachHoatDongChienDauXamChiemNhomSS00A?.getHoatDongChienDauXamChiemSS030,
-      );
-      await trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS050(
-        value: getGiaiDoanSS050?.getDanhSachHoatDongChienDauXamChiemNhomSS00A?.getHoatDongChienDauXamChiemSS030,
-      );
-      await trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS060(
-        value: getGiaiDoanSS060?.getDanhSachHoatDongChienDauXamChiemNhomSS00A?.getHoatDongChienDauXamChiemSS030,
-      );
-      await trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS070(
-        value: getGiaiDoanSS070?.getDanhSachHoatDongChienDauXamChiemNhomSS00A?.getHoatDongChienDauXamChiemSS030,
-      );
+      await Future.wait([
+        /// -----
+        /// TODO: Tích Hợp Kịch Bản Vào Phương Tiện SS020 - Nhóm SS00A
+        /// -----
+        trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem
+                ?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS020(value: getGiaiDoanSS020?.getDanhSachHoatDongChienDauXamChiemNhomSS00A?.getHoatDongChienDauXamChiemSS030)
+                .catchError((e) => null) ??
+            onReportRootIssue(nameFunction: ''),
+        trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem
+                ?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS010(value: getGiaiDoanSS010?.getDanhSachHoatDongChienDauXamChiemNhomSS00A?.getHoatDongChienDauXamChiemSS030)
+                .catchError((e) => null) ??
+            onReportRootIssue(nameFunction: ''),
+        trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem
+                ?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS030(value: getGiaiDoanSS030?.getDanhSachHoatDongChienDauXamChiemNhomSS00A?.getHoatDongChienDauXamChiemSS030)
+                .catchError((e) => null) ??
+            onReportRootIssue(nameFunction: ''),
+        trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem
+                ?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS040(value: getGiaiDoanSS040?.getDanhSachHoatDongChienDauXamChiemNhomSS00A?.getHoatDongChienDauXamChiemSS030)
+                .catchError((e) => null) ??
+            onReportRootIssue(nameFunction: ''),
+        trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem
+                ?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS050(value: getGiaiDoanSS050?.getDanhSachHoatDongChienDauXamChiemNhomSS00A?.getHoatDongChienDauXamChiemSS030)
+                .catchError((e) => null) ??
+            onReportRootIssue(nameFunction: ''),
+        trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem
+                ?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS060(value: getGiaiDoanSS060?.getDanhSachHoatDongChienDauXamChiemNhomSS00A?.getHoatDongChienDauXamChiemSS030)
+                .catchError((e) => null) ??
+            onReportRootIssue(nameFunction: ''),
+        trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem
+                ?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS070(value: getGiaiDoanSS070?.getDanhSachHoatDongChienDauXamChiemNhomSS00A?.getHoatDongChienDauXamChiemSS030)
+                .catchError((e) => null) ??
+            onReportRootIssue(nameFunction: ''),
+      ]);
 
       /// -----
       /// TODO: Gắn Kết Phương Tiện SS020 Vào Khung Kịch Bản
@@ -1333,30 +1535,39 @@ abstract class DOIHINHPHUONGTIENCOBAN with CauTrucThucThiCoBan {
   /// -----
   Future<void> onTichHopKichBanPhuongTienSS030NhomSS00B({required TrangThaiPhuongTien? trangThaiPhuongTien, bool? caiDatUuTien}) async {
     if (caiDatUuTien == true) {
-      /// -----
-      /// TODO: Tích Hợp Kịch Bản Vào Phương Tiện SS030 - Nhóm SS00B
-      /// -----
-      await trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS010(
-        value: getGiaiDoanSS010?.getDanhSachHoatDongChienDauXamChiemNhomSS00B?.getHoatDongChienDauXamChiemSS030,
-      );
-      await trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS020(
-        value: getGiaiDoanSS020?.getDanhSachHoatDongChienDauXamChiemNhomSS00B?.getHoatDongChienDauXamChiemSS030,
-      );
-      await trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS030(
-        value: getGiaiDoanSS030?.getDanhSachHoatDongChienDauXamChiemNhomSS00B?.getHoatDongChienDauXamChiemSS030,
-      );
-      await trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS040(
-        value: getGiaiDoanSS040?.getDanhSachHoatDongChienDauXamChiemNhomSS00B?.getHoatDongChienDauXamChiemSS030,
-      );
-      await trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS050(
-        value: getGiaiDoanSS050?.getDanhSachHoatDongChienDauXamChiemNhomSS00B?.getHoatDongChienDauXamChiemSS030,
-      );
-      await trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS060(
-        value: getGiaiDoanSS060?.getDanhSachHoatDongChienDauXamChiemNhomSS00B?.getHoatDongChienDauXamChiemSS030,
-      );
-      await trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS070(
-        value: getGiaiDoanSS070?.getDanhSachHoatDongChienDauXamChiemNhomSS00B?.getHoatDongChienDauXamChiemSS030,
-      );
+      await Future.wait([
+        /// -----
+        /// TODO: Tích Hợp Kịch Bản Vào Phương Tiện SS030 - Nhóm SS00B
+        /// -----
+        trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem
+                ?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS010(value: getGiaiDoanSS010?.getDanhSachHoatDongChienDauXamChiemNhomSS00B?.getHoatDongChienDauXamChiemSS030)
+                .catchError((e) => null) ??
+            onReportRootIssue(nameFunction: ''),
+        trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem
+                ?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS020(value: getGiaiDoanSS020?.getDanhSachHoatDongChienDauXamChiemNhomSS00B?.getHoatDongChienDauXamChiemSS030)
+                .catchError((e) => null) ??
+            onReportRootIssue(nameFunction: ''),
+        trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem
+                ?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS030(value: getGiaiDoanSS030?.getDanhSachHoatDongChienDauXamChiemNhomSS00B?.getHoatDongChienDauXamChiemSS030)
+                .catchError((e) => null) ??
+            onReportRootIssue(nameFunction: ''),
+        trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem
+                ?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS040(value: getGiaiDoanSS040?.getDanhSachHoatDongChienDauXamChiemNhomSS00B?.getHoatDongChienDauXamChiemSS030)
+                .catchError((e) => null) ??
+            onReportRootIssue(nameFunction: ''),
+        trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem
+                ?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS050(value: getGiaiDoanSS050?.getDanhSachHoatDongChienDauXamChiemNhomSS00B?.getHoatDongChienDauXamChiemSS030)
+                .catchError((e) => null) ??
+            onReportRootIssue(nameFunction: ''),
+        trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem
+                ?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS060(value: getGiaiDoanSS060?.getDanhSachHoatDongChienDauXamChiemNhomSS00B?.getHoatDongChienDauXamChiemSS030)
+                .catchError((e) => null) ??
+            onReportRootIssue(nameFunction: ''),
+        trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem
+                ?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS070(value: getGiaiDoanSS070?.getDanhSachHoatDongChienDauXamChiemNhomSS00B?.getHoatDongChienDauXamChiemSS030)
+                .catchError((e) => null) ??
+            onReportRootIssue(nameFunction: ''),
+      ]);
 
       /// -----
       /// TODO: Gắn Kết Phương Tiện SS020 Vào Khung Kịch Bản
@@ -1376,30 +1587,39 @@ abstract class DOIHINHPHUONGTIENCOBAN with CauTrucThucThiCoBan {
   /// -----
   Future<void> onTichHopKichBanPhuongTienSS030NhomSS00C({required TrangThaiPhuongTien? trangThaiPhuongTien, bool? caiDatUuTien}) async {
     if (caiDatUuTien == true) {
-      /// -----
-      /// TODO: Tích Hợp Kịch Bản Vào Phương Tiện SS030 - Nhóm SS00C
-      /// -----
-      await trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS010(
-        value: getGiaiDoanSS010?.getDanhSachHoatDongChienDauXamChiemNhomSS00C?.getHoatDongChienDauXamChiemSS030,
-      );
-      await trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS020(
-        value: getGiaiDoanSS020?.getDanhSachHoatDongChienDauXamChiemNhomSS00C?.getHoatDongChienDauXamChiemSS030,
-      );
-      await trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS030(
-        value: getGiaiDoanSS030?.getDanhSachHoatDongChienDauXamChiemNhomSS00C?.getHoatDongChienDauXamChiemSS030,
-      );
-      await trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS040(
-        value: getGiaiDoanSS040?.getDanhSachHoatDongChienDauXamChiemNhomSS00C?.getHoatDongChienDauXamChiemSS030,
-      );
-      await trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS050(
-        value: getGiaiDoanSS050?.getDanhSachHoatDongChienDauXamChiemNhomSS00C?.getHoatDongChienDauXamChiemSS030,
-      );
-      await trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS060(
-        value: getGiaiDoanSS060?.getDanhSachHoatDongChienDauXamChiemNhomSS00C?.getHoatDongChienDauXamChiemSS030,
-      );
-      await trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS070(
-        value: getGiaiDoanSS070?.getDanhSachHoatDongChienDauXamChiemNhomSS00C?.getHoatDongChienDauXamChiemSS030,
-      );
+      await Future.wait([
+        /// -----
+        /// TODO: Tích Hợp Kịch Bản Vào Phương Tiện SS030 - Nhóm SS00C
+        /// -----
+        trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem
+                ?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS010(value: getGiaiDoanSS010?.getDanhSachHoatDongChienDauXamChiemNhomSS00C?.getHoatDongChienDauXamChiemSS030)
+                .catchError((e) => null) ??
+            onReportRootIssue(nameFunction: ''),
+        trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem
+                ?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS020(value: getGiaiDoanSS020?.getDanhSachHoatDongChienDauXamChiemNhomSS00C?.getHoatDongChienDauXamChiemSS030)
+                .catchError((e) => null) ??
+            onReportRootIssue(nameFunction: ''),
+        trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem
+                ?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS030(value: getGiaiDoanSS030?.getDanhSachHoatDongChienDauXamChiemNhomSS00C?.getHoatDongChienDauXamChiemSS030)
+                .catchError((e) => null) ??
+            onReportRootIssue(nameFunction: ''),
+        trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem
+                ?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS040(value: getGiaiDoanSS040?.getDanhSachHoatDongChienDauXamChiemNhomSS00C?.getHoatDongChienDauXamChiemSS030)
+                .catchError((e) => null) ??
+            onReportRootIssue(nameFunction: ''),
+        trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem
+                ?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS050(value: getGiaiDoanSS050?.getDanhSachHoatDongChienDauXamChiemNhomSS00C?.getHoatDongChienDauXamChiemSS030)
+                .catchError((e) => null) ??
+            onReportRootIssue(nameFunction: ''),
+        trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem
+                ?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS060(value: getGiaiDoanSS060?.getDanhSachHoatDongChienDauXamChiemNhomSS00C?.getHoatDongChienDauXamChiemSS030)
+                .catchError((e) => null) ??
+            onReportRootIssue(nameFunction: ''),
+        trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem
+                ?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS070(value: getGiaiDoanSS070?.getDanhSachHoatDongChienDauXamChiemNhomSS00C?.getHoatDongChienDauXamChiemSS030)
+                .catchError((e) => null) ??
+            onReportRootIssue(nameFunction: ''),
+      ]);
 
       /// -----
       /// TODO: Gắn Kết Phương Tiện SS020 Vào Khung Kịch Bản
@@ -1419,30 +1639,39 @@ abstract class DOIHINHPHUONGTIENCOBAN with CauTrucThucThiCoBan {
   /// -----
   Future<void> onTichHopKichBanPhuongTienSS030NhomSS00D({required TrangThaiPhuongTien? trangThaiPhuongTien, bool? caiDatUuTien}) async {
     if (caiDatUuTien == true) {
-      /// -----
-      /// TODO: Tích Hợp Kịch Bản Vào Phương Tiện SS030 - Nhóm SS00D
-      /// -----
-      await trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS010(
-        value: getGiaiDoanSS010?.getDanhSachHoatDongChienDauXamChiemNhomSS00D?.getHoatDongChienDauXamChiemSS030,
-      );
-      await trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS020(
-        value: getGiaiDoanSS020?.getDanhSachHoatDongChienDauXamChiemNhomSS00D?.getHoatDongChienDauXamChiemSS030,
-      );
-      await trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS030(
-        value: getGiaiDoanSS030?.getDanhSachHoatDongChienDauXamChiemNhomSS00D?.getHoatDongChienDauXamChiemSS030,
-      );
-      await trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS040(
-        value: getGiaiDoanSS040?.getDanhSachHoatDongChienDauXamChiemNhomSS00D?.getHoatDongChienDauXamChiemSS030,
-      );
-      await trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS050(
-        value: getGiaiDoanSS050?.getDanhSachHoatDongChienDauXamChiemNhomSS00D?.getHoatDongChienDauXamChiemSS030,
-      );
-      await trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS060(
-        value: getGiaiDoanSS060?.getDanhSachHoatDongChienDauXamChiemNhomSS00D?.getHoatDongChienDauXamChiemSS030,
-      );
-      await trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS070(
-        value: getGiaiDoanSS070?.getDanhSachHoatDongChienDauXamChiemNhomSS00D?.getHoatDongChienDauXamChiemSS030,
-      );
+      await Future.wait([
+        /// -----
+        /// TODO: Tích Hợp Kịch Bản Vào Phương Tiện SS030 - Nhóm SS00D
+        /// -----
+        trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem
+                ?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS010(value: getGiaiDoanSS010?.getDanhSachHoatDongChienDauXamChiemNhomSS00D?.getHoatDongChienDauXamChiemSS030)
+                .catchError((e) => null) ??
+            onReportRootIssue(nameFunction: ''),
+        trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem
+                ?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS020(value: getGiaiDoanSS020?.getDanhSachHoatDongChienDauXamChiemNhomSS00D?.getHoatDongChienDauXamChiemSS030)
+                .catchError((e) => null) ??
+            onReportRootIssue(nameFunction: ''),
+        trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem
+                ?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS030(value: getGiaiDoanSS030?.getDanhSachHoatDongChienDauXamChiemNhomSS00D?.getHoatDongChienDauXamChiemSS030)
+                .catchError((e) => null) ??
+            onReportRootIssue(nameFunction: ''),
+        trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem
+                ?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS040(value: getGiaiDoanSS040?.getDanhSachHoatDongChienDauXamChiemNhomSS00D?.getHoatDongChienDauXamChiemSS030)
+                .catchError((e) => null) ??
+            onReportRootIssue(nameFunction: ''),
+        trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem
+                ?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS050(value: getGiaiDoanSS050?.getDanhSachHoatDongChienDauXamChiemNhomSS00D?.getHoatDongChienDauXamChiemSS030)
+                .catchError((e) => null) ??
+            onReportRootIssue(nameFunction: ''),
+        trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem
+                ?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS060(value: getGiaiDoanSS060?.getDanhSachHoatDongChienDauXamChiemNhomSS00D?.getHoatDongChienDauXamChiemSS030)
+                .catchError((e) => null) ??
+            onReportRootIssue(nameFunction: ''),
+        trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem
+                ?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS070(value: getGiaiDoanSS070?.getDanhSachHoatDongChienDauXamChiemNhomSS00D?.getHoatDongChienDauXamChiemSS030)
+                .catchError((e) => null) ??
+            onReportRootIssue(nameFunction: ''),
+      ]);
 
       /// -----
       /// TODO: Gắn Kết Phương Tiện SS020 Vào Khung Kịch Bản
@@ -1470,30 +1699,39 @@ abstract class DOIHINHPHUONGTIENCOBAN with CauTrucThucThiCoBan {
   /// -----
   Future<void> onTichHopKichBanPhuongTienSS032NhomSS00A({required TrangThaiPhuongTien? trangThaiPhuongTien, bool? caiDatUuTien}) async {
     if (caiDatUuTien == true) {
-      /// -----
-      /// TODO: Tích Hợp Kịch Bản Vào Phương Tiện SS032 - Nhóm SS00A
-      /// -----
-      await trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS010(
-        value: getGiaiDoanSS010?.getDanhSachHoatDongChienDauXamChiemNhomSS00A?.getHoatDongChienDauXamChiemSS032,
-      );
-      await trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS020(
-        value: getGiaiDoanSS020?.getDanhSachHoatDongChienDauXamChiemNhomSS00A?.getHoatDongChienDauXamChiemSS032,
-      );
-      await trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS030(
-        value: getGiaiDoanSS030?.getDanhSachHoatDongChienDauXamChiemNhomSS00A?.getHoatDongChienDauXamChiemSS032,
-      );
-      await trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS040(
-        value: getGiaiDoanSS040?.getDanhSachHoatDongChienDauXamChiemNhomSS00A?.getHoatDongChienDauXamChiemSS032,
-      );
-      await trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS050(
-        value: getGiaiDoanSS050?.getDanhSachHoatDongChienDauXamChiemNhomSS00A?.getHoatDongChienDauXamChiemSS032,
-      );
-      await trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS060(
-        value: getGiaiDoanSS060?.getDanhSachHoatDongChienDauXamChiemNhomSS00A?.getHoatDongChienDauXamChiemSS032,
-      );
-      await trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS070(
-        value: getGiaiDoanSS070?.getDanhSachHoatDongChienDauXamChiemNhomSS00A?.getHoatDongChienDauXamChiemSS032,
-      );
+      await Future.wait([
+        /// -----
+        /// TODO: Tích Hợp Kịch Bản Vào Phương Tiện SS032 - Nhóm SS00A
+        /// -----
+        trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem
+                ?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS010(value: getGiaiDoanSS010?.getDanhSachHoatDongChienDauXamChiemNhomSS00A?.getHoatDongChienDauXamChiemSS032)
+                .catchError((e) => null) ??
+            onReportRootIssue(nameFunction: ''),
+        trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem
+                ?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS020(value: getGiaiDoanSS020?.getDanhSachHoatDongChienDauXamChiemNhomSS00A?.getHoatDongChienDauXamChiemSS032)
+                .catchError((e) => null) ??
+            onReportRootIssue(nameFunction: ''),
+        trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem
+                ?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS030(value: getGiaiDoanSS030?.getDanhSachHoatDongChienDauXamChiemNhomSS00A?.getHoatDongChienDauXamChiemSS032)
+                .catchError((e) => null) ??
+            onReportRootIssue(nameFunction: ''),
+        trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem
+                ?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS040(value: getGiaiDoanSS040?.getDanhSachHoatDongChienDauXamChiemNhomSS00A?.getHoatDongChienDauXamChiemSS032)
+                .catchError((e) => null) ??
+            onReportRootIssue(nameFunction: ''),
+        trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem
+                ?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS050(value: getGiaiDoanSS050?.getDanhSachHoatDongChienDauXamChiemNhomSS00A?.getHoatDongChienDauXamChiemSS032)
+                .catchError((e) => null) ??
+            onReportRootIssue(nameFunction: ''),
+        trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem
+                ?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS060(value: getGiaiDoanSS060?.getDanhSachHoatDongChienDauXamChiemNhomSS00A?.getHoatDongChienDauXamChiemSS032)
+                .catchError((e) => null) ??
+            onReportRootIssue(nameFunction: ''),
+        trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem
+                ?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS070(value: getGiaiDoanSS070?.getDanhSachHoatDongChienDauXamChiemNhomSS00A?.getHoatDongChienDauXamChiemSS032)
+                .catchError((e) => null) ??
+            onReportRootIssue(nameFunction: ''),
+      ]);
 
       /// -----
       /// TODO: Gắn Kết Phương Tiện SS020 Vào Khung Kịch Bản
@@ -1513,30 +1751,39 @@ abstract class DOIHINHPHUONGTIENCOBAN with CauTrucThucThiCoBan {
   /// -----
   Future<void> onTichHopKichBanPhuongTienSS032NhomSS00B({required TrangThaiPhuongTien? trangThaiPhuongTien, bool? caiDatUuTien}) async {
     if (caiDatUuTien == true) {
-      /// -----
-      /// TODO: Tích Hợp Kịch Bản Vào Phương Tiện SS032 - Nhóm SS00B
-      /// -----
-      await trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS010(
-        value: getGiaiDoanSS010?.getDanhSachHoatDongChienDauXamChiemNhomSS00B?.getHoatDongChienDauXamChiemSS032,
-      );
-      await trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS020(
-        value: getGiaiDoanSS020?.getDanhSachHoatDongChienDauXamChiemNhomSS00B?.getHoatDongChienDauXamChiemSS032,
-      );
-      await trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS030(
-        value: getGiaiDoanSS030?.getDanhSachHoatDongChienDauXamChiemNhomSS00B?.getHoatDongChienDauXamChiemSS032,
-      );
-      await trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS040(
-        value: getGiaiDoanSS040?.getDanhSachHoatDongChienDauXamChiemNhomSS00B?.getHoatDongChienDauXamChiemSS032,
-      );
-      await trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS050(
-        value: getGiaiDoanSS050?.getDanhSachHoatDongChienDauXamChiemNhomSS00B?.getHoatDongChienDauXamChiemSS032,
-      );
-      await trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS060(
-        value: getGiaiDoanSS060?.getDanhSachHoatDongChienDauXamChiemNhomSS00B?.getHoatDongChienDauXamChiemSS032,
-      );
-      await trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS070(
-        value: getGiaiDoanSS070?.getDanhSachHoatDongChienDauXamChiemNhomSS00B?.getHoatDongChienDauXamChiemSS032,
-      );
+      await Future.wait([
+        /// -----
+        /// TODO: Tích Hợp Kịch Bản Vào Phương Tiện SS032 - Nhóm SS00B
+        /// -----
+        trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem
+                ?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS010(value: getGiaiDoanSS010?.getDanhSachHoatDongChienDauXamChiemNhomSS00B?.getHoatDongChienDauXamChiemSS032)
+                .catchError((e) => null) ??
+            onReportRootIssue(nameFunction: ''),
+        trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem
+                ?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS020(value: getGiaiDoanSS020?.getDanhSachHoatDongChienDauXamChiemNhomSS00B?.getHoatDongChienDauXamChiemSS032)
+                .catchError((e) => null) ??
+            onReportRootIssue(nameFunction: ''),
+        trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem
+                ?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS030(value: getGiaiDoanSS030?.getDanhSachHoatDongChienDauXamChiemNhomSS00B?.getHoatDongChienDauXamChiemSS032)
+                .catchError((e) => null) ??
+            onReportRootIssue(nameFunction: ''),
+        trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem
+                ?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS040(value: getGiaiDoanSS040?.getDanhSachHoatDongChienDauXamChiemNhomSS00B?.getHoatDongChienDauXamChiemSS032)
+                .catchError((e) => null) ??
+            onReportRootIssue(nameFunction: ''),
+        trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem
+                ?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS050(value: getGiaiDoanSS050?.getDanhSachHoatDongChienDauXamChiemNhomSS00B?.getHoatDongChienDauXamChiemSS032)
+                .catchError((e) => null) ??
+            onReportRootIssue(nameFunction: ''),
+        trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem
+                ?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS060(value: getGiaiDoanSS060?.getDanhSachHoatDongChienDauXamChiemNhomSS00B?.getHoatDongChienDauXamChiemSS032)
+                .catchError((e) => null) ??
+            onReportRootIssue(nameFunction: ''),
+        trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem
+                ?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS070(value: getGiaiDoanSS070?.getDanhSachHoatDongChienDauXamChiemNhomSS00B?.getHoatDongChienDauXamChiemSS032)
+                .catchError((e) => null) ??
+            onReportRootIssue(nameFunction: ''),
+      ]);
 
       /// -----
       /// TODO: Gắn Kết Phương Tiện SS020 Vào Khung Kịch Bản
@@ -1556,30 +1803,39 @@ abstract class DOIHINHPHUONGTIENCOBAN with CauTrucThucThiCoBan {
   /// -----
   Future<void> onTichHopKichBanPhuongTienSS032NhomSS00C({required TrangThaiPhuongTien? trangThaiPhuongTien, bool? caiDatUuTien}) async {
     if (caiDatUuTien == true) {
-      /// -----
-      /// TODO: Tích Hợp Kịch Bản Vào Phương Tiện SS032 - Nhóm SS00C
-      /// -----
-      await trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS010(
-        value: getGiaiDoanSS010?.getDanhSachHoatDongChienDauXamChiemNhomSS00C?.getHoatDongChienDauXamChiemSS032,
-      );
-      await trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS020(
-        value: getGiaiDoanSS020?.getDanhSachHoatDongChienDauXamChiemNhomSS00C?.getHoatDongChienDauXamChiemSS032,
-      );
-      await trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS030(
-        value: getGiaiDoanSS030?.getDanhSachHoatDongChienDauXamChiemNhomSS00C?.getHoatDongChienDauXamChiemSS032,
-      );
-      await trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS040(
-        value: getGiaiDoanSS040?.getDanhSachHoatDongChienDauXamChiemNhomSS00C?.getHoatDongChienDauXamChiemSS032,
-      );
-      await trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS050(
-        value: getGiaiDoanSS050?.getDanhSachHoatDongChienDauXamChiemNhomSS00C?.getHoatDongChienDauXamChiemSS032,
-      );
-      await trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS060(
-        value: getGiaiDoanSS060?.getDanhSachHoatDongChienDauXamChiemNhomSS00C?.getHoatDongChienDauXamChiemSS032,
-      );
-      await trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS070(
-        value: getGiaiDoanSS070?.getDanhSachHoatDongChienDauXamChiemNhomSS00C?.getHoatDongChienDauXamChiemSS032,
-      );
+      await Future.wait([
+        /// -----
+        /// TODO: Tích Hợp Kịch Bản Vào Phương Tiện SS032 - Nhóm SS00C
+        /// -----
+        trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem
+                ?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS010(value: getGiaiDoanSS010?.getDanhSachHoatDongChienDauXamChiemNhomSS00C?.getHoatDongChienDauXamChiemSS032)
+                .catchError((e) => null) ??
+            onReportRootIssue(nameFunction: ''),
+        trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem
+                ?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS020(value: getGiaiDoanSS020?.getDanhSachHoatDongChienDauXamChiemNhomSS00C?.getHoatDongChienDauXamChiemSS032)
+                .catchError((e) => null) ??
+            onReportRootIssue(nameFunction: ''),
+        trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem
+                ?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS030(value: getGiaiDoanSS030?.getDanhSachHoatDongChienDauXamChiemNhomSS00C?.getHoatDongChienDauXamChiemSS032)
+                .catchError((e) => null) ??
+            onReportRootIssue(nameFunction: ''),
+        trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem
+                ?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS040(value: getGiaiDoanSS040?.getDanhSachHoatDongChienDauXamChiemNhomSS00C?.getHoatDongChienDauXamChiemSS032)
+                .catchError((e) => null) ??
+            onReportRootIssue(nameFunction: ''),
+        trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem
+                ?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS050(value: getGiaiDoanSS050?.getDanhSachHoatDongChienDauXamChiemNhomSS00C?.getHoatDongChienDauXamChiemSS032)
+                .catchError((e) => null) ??
+            onReportRootIssue(nameFunction: ''),
+        trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem
+                ?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS060(value: getGiaiDoanSS060?.getDanhSachHoatDongChienDauXamChiemNhomSS00C?.getHoatDongChienDauXamChiemSS032)
+                .catchError((e) => null) ??
+            onReportRootIssue(nameFunction: ''),
+        trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem
+                ?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS070(value: getGiaiDoanSS070?.getDanhSachHoatDongChienDauXamChiemNhomSS00C?.getHoatDongChienDauXamChiemSS032)
+                .catchError((e) => null) ??
+            onReportRootIssue(nameFunction: ''),
+      ]);
 
       /// -----
       /// TODO: Gắn Kết Phương Tiện SS020 Vào Khung Kịch Bản
@@ -1599,30 +1855,39 @@ abstract class DOIHINHPHUONGTIENCOBAN with CauTrucThucThiCoBan {
   /// -----
   Future<void> onTichHopKichBanPhuongTienSS032NhomSS00D({required TrangThaiPhuongTien? trangThaiPhuongTien, bool? caiDatUuTien}) async {
     if (caiDatUuTien == true) {
-      /// -----
-      /// TODO: Tích Hợp Kịch Bản Vào Phương Tiện SS032 - Nhóm SS00D
-      /// -----
-      await trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS010(
-        value: getGiaiDoanSS010?.getDanhSachHoatDongChienDauXamChiemNhomSS00D?.getHoatDongChienDauXamChiemSS032,
-      );
-      await trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS020(
-        value: getGiaiDoanSS020?.getDanhSachHoatDongChienDauXamChiemNhomSS00D?.getHoatDongChienDauXamChiemSS032,
-      );
-      await trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS030(
-        value: getGiaiDoanSS030?.getDanhSachHoatDongChienDauXamChiemNhomSS00D?.getHoatDongChienDauXamChiemSS032,
-      );
-      await trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS040(
-        value: getGiaiDoanSS040?.getDanhSachHoatDongChienDauXamChiemNhomSS00D?.getHoatDongChienDauXamChiemSS032,
-      );
-      await trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS050(
-        value: getGiaiDoanSS050?.getDanhSachHoatDongChienDauXamChiemNhomSS00D?.getHoatDongChienDauXamChiemSS032,
-      );
-      await trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS060(
-        value: getGiaiDoanSS060?.getDanhSachHoatDongChienDauXamChiemNhomSS00D?.getHoatDongChienDauXamChiemSS032,
-      );
-      await trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS070(
-        value: getGiaiDoanSS070?.getDanhSachHoatDongChienDauXamChiemNhomSS00D?.getHoatDongChienDauXamChiemSS032,
-      );
+      await Future.wait([
+        /// -----
+        /// TODO: Tích Hợp Kịch Bản Vào Phương Tiện SS032 - Nhóm SS00D
+        /// -----
+        trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem
+                ?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS010(value: getGiaiDoanSS010?.getDanhSachHoatDongChienDauXamChiemNhomSS00D?.getHoatDongChienDauXamChiemSS032)
+                .catchError((e) => null) ??
+            onReportRootIssue(nameFunction: ''),
+        trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem
+                ?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS020(value: getGiaiDoanSS020?.getDanhSachHoatDongChienDauXamChiemNhomSS00D?.getHoatDongChienDauXamChiemSS032)
+                .catchError((e) => null) ??
+            onReportRootIssue(nameFunction: ''),
+        trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem
+                ?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS030(value: getGiaiDoanSS030?.getDanhSachHoatDongChienDauXamChiemNhomSS00D?.getHoatDongChienDauXamChiemSS032)
+                .catchError((e) => null) ??
+            onReportRootIssue(nameFunction: ''),
+        trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem
+                ?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS040(value: getGiaiDoanSS040?.getDanhSachHoatDongChienDauXamChiemNhomSS00D?.getHoatDongChienDauXamChiemSS032)
+                .catchError((e) => null) ??
+            onReportRootIssue(nameFunction: ''),
+        trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem
+                ?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS050(value: getGiaiDoanSS050?.getDanhSachHoatDongChienDauXamChiemNhomSS00D?.getHoatDongChienDauXamChiemSS032)
+                .catchError((e) => null) ??
+            onReportRootIssue(nameFunction: ''),
+        trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem
+                ?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS060(value: getGiaiDoanSS060?.getDanhSachHoatDongChienDauXamChiemNhomSS00D?.getHoatDongChienDauXamChiemSS032)
+                .catchError((e) => null) ??
+            onReportRootIssue(nameFunction: ''),
+        trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem
+                ?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS070(value: getGiaiDoanSS070?.getDanhSachHoatDongChienDauXamChiemNhomSS00D?.getHoatDongChienDauXamChiemSS032)
+                .catchError((e) => null) ??
+            onReportRootIssue(nameFunction: ''),
+      ]);
 
       /// -----
       /// TODO: Gắn Kết Phương Tiện SS020 Vào Khung Kịch Bản
@@ -1650,30 +1915,39 @@ abstract class DOIHINHPHUONGTIENCOBAN with CauTrucThucThiCoBan {
   /// -----
   Future<void> onTichHopKichBanPhuongTienSS034NhomSS00A({required TrangThaiPhuongTien? trangThaiPhuongTien, bool? caiDatUuTien}) async {
     if (caiDatUuTien == true) {
-      /// -----
-      /// TODO: Tích Hợp Kịch Bản Vào Phương Tiện SS034 - Nhóm SS00A
-      /// -----
-      await trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS020(
-        value: getGiaiDoanSS020?.getDanhSachHoatDongChienDauXamChiemNhomSS00A?.getHoatDongChienDauXamChiemSS034,
-      );
-      await trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS010(
-        value: getGiaiDoanSS010?.getDanhSachHoatDongChienDauXamChiemNhomSS00A?.getHoatDongChienDauXamChiemSS034,
-      );
-      await trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS030(
-        value: getGiaiDoanSS030?.getDanhSachHoatDongChienDauXamChiemNhomSS00A?.getHoatDongChienDauXamChiemSS034,
-      );
-      await trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS040(
-        value: getGiaiDoanSS040?.getDanhSachHoatDongChienDauXamChiemNhomSS00A?.getHoatDongChienDauXamChiemSS034,
-      );
-      await trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS050(
-        value: getGiaiDoanSS050?.getDanhSachHoatDongChienDauXamChiemNhomSS00A?.getHoatDongChienDauXamChiemSS034,
-      );
-      await trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS060(
-        value: getGiaiDoanSS060?.getDanhSachHoatDongChienDauXamChiemNhomSS00A?.getHoatDongChienDauXamChiemSS034,
-      );
-      await trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS070(
-        value: getGiaiDoanSS070?.getDanhSachHoatDongChienDauXamChiemNhomSS00A?.getHoatDongChienDauXamChiemSS034,
-      );
+      await Future.wait([
+        /// -----
+        /// TODO: Tích Hợp Kịch Bản Vào Phương Tiện SS034 - Nhóm SS00A
+        /// -----
+        trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem
+                ?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS020(value: getGiaiDoanSS020?.getDanhSachHoatDongChienDauXamChiemNhomSS00A?.getHoatDongChienDauXamChiemSS034)
+                .catchError((e) => null) ??
+            onReportRootIssue(nameFunction: ''),
+        trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem
+                ?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS010(value: getGiaiDoanSS010?.getDanhSachHoatDongChienDauXamChiemNhomSS00A?.getHoatDongChienDauXamChiemSS034)
+                .catchError((e) => null) ??
+            onReportRootIssue(nameFunction: ''),
+        trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem
+                ?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS030(value: getGiaiDoanSS030?.getDanhSachHoatDongChienDauXamChiemNhomSS00A?.getHoatDongChienDauXamChiemSS034)
+                .catchError((e) => null) ??
+            onReportRootIssue(nameFunction: ''),
+        trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem
+                ?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS040(value: getGiaiDoanSS040?.getDanhSachHoatDongChienDauXamChiemNhomSS00A?.getHoatDongChienDauXamChiemSS034)
+                .catchError((e) => null) ??
+            onReportRootIssue(nameFunction: ''),
+        trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem
+                ?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS050(value: getGiaiDoanSS050?.getDanhSachHoatDongChienDauXamChiemNhomSS00A?.getHoatDongChienDauXamChiemSS034)
+                .catchError((e) => null) ??
+            onReportRootIssue(nameFunction: ''),
+        trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem
+                ?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS060(value: getGiaiDoanSS060?.getDanhSachHoatDongChienDauXamChiemNhomSS00A?.getHoatDongChienDauXamChiemSS034)
+                .catchError((e) => null) ??
+            onReportRootIssue(nameFunction: ''),
+        trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem
+                ?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS070(value: getGiaiDoanSS070?.getDanhSachHoatDongChienDauXamChiemNhomSS00A?.getHoatDongChienDauXamChiemSS034)
+                .catchError((e) => null) ??
+            onReportRootIssue(nameFunction: ''),
+      ]);
 
       /// -----
       /// TODO: Gắn Kết Phương Tiện SS020 Vào Khung Kịch Bản
@@ -1693,30 +1967,39 @@ abstract class DOIHINHPHUONGTIENCOBAN with CauTrucThucThiCoBan {
   /// -----
   Future<void> onTichHopKichBanPhuongTienSS034NhomSS00B({required TrangThaiPhuongTien? trangThaiPhuongTien, bool? caiDatUuTien}) async {
     if (caiDatUuTien == true) {
-      /// -----
-      /// TODO: Tích Hợp Kịch Bản Vào Phương Tiện SS034 - Nhóm SS00B
-      /// -----
-      await trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS010(
-        value: getGiaiDoanSS010?.getDanhSachHoatDongChienDauXamChiemNhomSS00B?.getHoatDongChienDauXamChiemSS034,
-      );
-      await trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS020(
-        value: getGiaiDoanSS020?.getDanhSachHoatDongChienDauXamChiemNhomSS00B?.getHoatDongChienDauXamChiemSS034,
-      );
-      await trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS030(
-        value: getGiaiDoanSS030?.getDanhSachHoatDongChienDauXamChiemNhomSS00B?.getHoatDongChienDauXamChiemSS034,
-      );
-      await trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS040(
-        value: getGiaiDoanSS040?.getDanhSachHoatDongChienDauXamChiemNhomSS00B?.getHoatDongChienDauXamChiemSS034,
-      );
-      await trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS050(
-        value: getGiaiDoanSS050?.getDanhSachHoatDongChienDauXamChiemNhomSS00B?.getHoatDongChienDauXamChiemSS034,
-      );
-      await trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS060(
-        value: getGiaiDoanSS060?.getDanhSachHoatDongChienDauXamChiemNhomSS00B?.getHoatDongChienDauXamChiemSS034,
-      );
-      await trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS070(
-        value: getGiaiDoanSS070?.getDanhSachHoatDongChienDauXamChiemNhomSS00B?.getHoatDongChienDauXamChiemSS034,
-      );
+      await Future.wait([
+        /// -----
+        /// TODO: Tích Hợp Kịch Bản Vào Phương Tiện SS034 - Nhóm SS00B
+        /// -----
+        trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem
+                ?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS010(value: getGiaiDoanSS010?.getDanhSachHoatDongChienDauXamChiemNhomSS00B?.getHoatDongChienDauXamChiemSS034)
+                .catchError((e) => null) ??
+            onReportRootIssue(nameFunction: ''),
+        trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem
+                ?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS020(value: getGiaiDoanSS020?.getDanhSachHoatDongChienDauXamChiemNhomSS00B?.getHoatDongChienDauXamChiemSS034)
+                .catchError((e) => null) ??
+            onReportRootIssue(nameFunction: ''),
+        trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem
+                ?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS030(value: getGiaiDoanSS030?.getDanhSachHoatDongChienDauXamChiemNhomSS00B?.getHoatDongChienDauXamChiemSS034)
+                .catchError((e) => null) ??
+            onReportRootIssue(nameFunction: ''),
+        trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem
+                ?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS040(value: getGiaiDoanSS040?.getDanhSachHoatDongChienDauXamChiemNhomSS00B?.getHoatDongChienDauXamChiemSS034)
+                .catchError((e) => null) ??
+            onReportRootIssue(nameFunction: ''),
+        trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem
+                ?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS050(value: getGiaiDoanSS050?.getDanhSachHoatDongChienDauXamChiemNhomSS00B?.getHoatDongChienDauXamChiemSS034)
+                .catchError((e) => null) ??
+            onReportRootIssue(nameFunction: ''),
+        trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem
+                ?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS060(value: getGiaiDoanSS060?.getDanhSachHoatDongChienDauXamChiemNhomSS00B?.getHoatDongChienDauXamChiemSS034)
+                .catchError((e) => null) ??
+            onReportRootIssue(nameFunction: ''),
+        trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem
+                ?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS070(value: getGiaiDoanSS070?.getDanhSachHoatDongChienDauXamChiemNhomSS00B?.getHoatDongChienDauXamChiemSS034)
+                .catchError((e) => null) ??
+            onReportRootIssue(nameFunction: ''),
+      ]);
 
       /// -----
       /// TODO: Gắn Kết Phương Tiện SS020 Vào Khung Kịch Bản
@@ -1736,30 +2019,39 @@ abstract class DOIHINHPHUONGTIENCOBAN with CauTrucThucThiCoBan {
   /// -----
   Future<void> onTichHopKichBanPhuongTienSS034NhomSS00C({required TrangThaiPhuongTien? trangThaiPhuongTien, bool? caiDatUuTien}) async {
     if (caiDatUuTien == true) {
-      /// -----
-      /// TODO: Tích Hợp Kịch Bản Vào Phương Tiện SS034 - Nhóm SS00C
-      /// -----
-      await trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS010(
-        value: getGiaiDoanSS010?.getDanhSachHoatDongChienDauXamChiemNhomSS00C?.getHoatDongChienDauXamChiemSS034,
-      );
-      await trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS020(
-        value: getGiaiDoanSS020?.getDanhSachHoatDongChienDauXamChiemNhomSS00C?.getHoatDongChienDauXamChiemSS034,
-      );
-      await trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS030(
-        value: getGiaiDoanSS030?.getDanhSachHoatDongChienDauXamChiemNhomSS00C?.getHoatDongChienDauXamChiemSS034,
-      );
-      await trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS040(
-        value: getGiaiDoanSS040?.getDanhSachHoatDongChienDauXamChiemNhomSS00C?.getHoatDongChienDauXamChiemSS034,
-      );
-      await trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS050(
-        value: getGiaiDoanSS050?.getDanhSachHoatDongChienDauXamChiemNhomSS00C?.getHoatDongChienDauXamChiemSS034,
-      );
-      await trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS060(
-        value: getGiaiDoanSS060?.getDanhSachHoatDongChienDauXamChiemNhomSS00C?.getHoatDongChienDauXamChiemSS034,
-      );
-      await trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS070(
-        value: getGiaiDoanSS070?.getDanhSachHoatDongChienDauXamChiemNhomSS00C?.getHoatDongChienDauXamChiemSS034,
-      );
+      await Future.wait([
+        /// -----
+        /// TODO: Tích Hợp Kịch Bản Vào Phương Tiện SS034 - Nhóm SS00C
+        /// -----
+        trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem
+                ?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS010(value: getGiaiDoanSS010?.getDanhSachHoatDongChienDauXamChiemNhomSS00C?.getHoatDongChienDauXamChiemSS034)
+                .catchError((e) => null) ??
+            onReportRootIssue(nameFunction: ''),
+        trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem
+                ?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS020(value: getGiaiDoanSS020?.getDanhSachHoatDongChienDauXamChiemNhomSS00C?.getHoatDongChienDauXamChiemSS034)
+                .catchError((e) => null) ??
+            onReportRootIssue(nameFunction: ''),
+        trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem
+                ?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS030(value: getGiaiDoanSS030?.getDanhSachHoatDongChienDauXamChiemNhomSS00C?.getHoatDongChienDauXamChiemSS034)
+                .catchError((e) => null) ??
+            onReportRootIssue(nameFunction: ''),
+        trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem
+                ?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS040(value: getGiaiDoanSS040?.getDanhSachHoatDongChienDauXamChiemNhomSS00C?.getHoatDongChienDauXamChiemSS034)
+                .catchError((e) => null) ??
+            onReportRootIssue(nameFunction: ''),
+        trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem
+                ?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS050(value: getGiaiDoanSS050?.getDanhSachHoatDongChienDauXamChiemNhomSS00C?.getHoatDongChienDauXamChiemSS034)
+                .catchError((e) => null) ??
+            onReportRootIssue(nameFunction: ''),
+        trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem
+                ?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS060(value: getGiaiDoanSS060?.getDanhSachHoatDongChienDauXamChiemNhomSS00C?.getHoatDongChienDauXamChiemSS034)
+                .catchError((e) => null) ??
+            onReportRootIssue(nameFunction: ''),
+        trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem
+                ?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS070(value: getGiaiDoanSS070?.getDanhSachHoatDongChienDauXamChiemNhomSS00C?.getHoatDongChienDauXamChiemSS034)
+                .catchError((e) => null) ??
+            onReportRootIssue(nameFunction: ''),
+      ]);
 
       /// -----
       /// TODO: Gắn Kết Phương Tiện SS020 Vào Khung Kịch Bản
@@ -1779,30 +2071,39 @@ abstract class DOIHINHPHUONGTIENCOBAN with CauTrucThucThiCoBan {
   /// -----
   Future<void> onTichHopKichBanPhuongTienSS034NhomSS00D({required TrangThaiPhuongTien? trangThaiPhuongTien, bool? caiDatUuTien}) async {
     if (caiDatUuTien == true) {
-      /// -----
-      /// TODO: Tích Hợp Kịch Bản Vào Phương Tiện SS034 - Nhóm SS00D
-      /// -----
-      await trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS010(
-        value: getGiaiDoanSS010?.getDanhSachHoatDongChienDauXamChiemNhomSS00D?.getHoatDongChienDauXamChiemSS034,
-      );
-      await trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS020(
-        value: getGiaiDoanSS020?.getDanhSachHoatDongChienDauXamChiemNhomSS00D?.getHoatDongChienDauXamChiemSS034,
-      );
-      await trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS030(
-        value: getGiaiDoanSS030?.getDanhSachHoatDongChienDauXamChiemNhomSS00D?.getHoatDongChienDauXamChiemSS034,
-      );
-      await trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS040(
-        value: getGiaiDoanSS040?.getDanhSachHoatDongChienDauXamChiemNhomSS00D?.getHoatDongChienDauXamChiemSS034,
-      );
-      await trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS050(
-        value: getGiaiDoanSS050?.getDanhSachHoatDongChienDauXamChiemNhomSS00D?.getHoatDongChienDauXamChiemSS034,
-      );
-      await trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS060(
-        value: getGiaiDoanSS060?.getDanhSachHoatDongChienDauXamChiemNhomSS00D?.getHoatDongChienDauXamChiemSS034,
-      );
-      await trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS070(
-        value: getGiaiDoanSS070?.getDanhSachHoatDongChienDauXamChiemNhomSS00D?.getHoatDongChienDauXamChiemSS034,
-      );
+      await Future.wait([
+        /// -----
+        /// TODO: Tích Hợp Kịch Bản Vào Phương Tiện SS034 - Nhóm SS00D
+        /// -----
+        trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem
+                ?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS010(value: getGiaiDoanSS010?.getDanhSachHoatDongChienDauXamChiemNhomSS00D?.getHoatDongChienDauXamChiemSS034)
+                .catchError((e) => null) ??
+            onReportRootIssue(nameFunction: ''),
+        trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem
+                ?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS020(value: getGiaiDoanSS020?.getDanhSachHoatDongChienDauXamChiemNhomSS00D?.getHoatDongChienDauXamChiemSS034)
+                .catchError((e) => null) ??
+            onReportRootIssue(nameFunction: ''),
+        trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem
+                ?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS030(value: getGiaiDoanSS030?.getDanhSachHoatDongChienDauXamChiemNhomSS00D?.getHoatDongChienDauXamChiemSS034)
+                .catchError((e) => null) ??
+            onReportRootIssue(nameFunction: ''),
+        trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem
+                ?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS040(value: getGiaiDoanSS040?.getDanhSachHoatDongChienDauXamChiemNhomSS00D?.getHoatDongChienDauXamChiemSS034)
+                .catchError((e) => null) ??
+            onReportRootIssue(nameFunction: ''),
+        trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem
+                ?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS050(value: getGiaiDoanSS050?.getDanhSachHoatDongChienDauXamChiemNhomSS00D?.getHoatDongChienDauXamChiemSS034)
+                .catchError((e) => null) ??
+            onReportRootIssue(nameFunction: ''),
+        trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem
+                ?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS060(value: getGiaiDoanSS060?.getDanhSachHoatDongChienDauXamChiemNhomSS00D?.getHoatDongChienDauXamChiemSS034)
+                .catchError((e) => null) ??
+            onReportRootIssue(nameFunction: ''),
+        trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem
+                ?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS070(value: getGiaiDoanSS070?.getDanhSachHoatDongChienDauXamChiemNhomSS00D?.getHoatDongChienDauXamChiemSS034)
+                .catchError((e) => null) ??
+            onReportRootIssue(nameFunction: ''),
+      ]);
 
       /// -----
       /// TODO: Gắn Kết Phương Tiện SS020 Vào Khung Kịch Bản
@@ -1830,30 +2131,39 @@ abstract class DOIHINHPHUONGTIENCOBAN with CauTrucThucThiCoBan {
   /// -----
   Future<void> onTichHopKichBanPhuongTienSS036NhomSS00A({required TrangThaiPhuongTien? trangThaiPhuongTien, bool? caiDatUuTien}) async {
     if (caiDatUuTien == true) {
-      /// -----
-      /// TODO: Tích Hợp Kịch Bản Vào Phương Tiện SS036 - Nhóm SS00A
-      /// -----
-      await trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS010(
-        value: getGiaiDoanSS010?.getDanhSachHoatDongChienDauXamChiemNhomSS00A?.getHoatDongChienDauXamChiemSS036,
-      );
-      await trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS020(
-        value: getGiaiDoanSS020?.getDanhSachHoatDongChienDauXamChiemNhomSS00A?.getHoatDongChienDauXamChiemSS036,
-      );
-      await trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS030(
-        value: getGiaiDoanSS030?.getDanhSachHoatDongChienDauXamChiemNhomSS00A?.getHoatDongChienDauXamChiemSS036,
-      );
-      await trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS040(
-        value: getGiaiDoanSS040?.getDanhSachHoatDongChienDauXamChiemNhomSS00A?.getHoatDongChienDauXamChiemSS036,
-      );
-      await trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS050(
-        value: getGiaiDoanSS050?.getDanhSachHoatDongChienDauXamChiemNhomSS00A?.getHoatDongChienDauXamChiemSS036,
-      );
-      await trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS060(
-        value: getGiaiDoanSS060?.getDanhSachHoatDongChienDauXamChiemNhomSS00A?.getHoatDongChienDauXamChiemSS036,
-      );
-      await trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS070(
-        value: getGiaiDoanSS070?.getDanhSachHoatDongChienDauXamChiemNhomSS00A?.getHoatDongChienDauXamChiemSS036,
-      );
+      await Future.wait([
+        /// -----
+        /// TODO: Tích Hợp Kịch Bản Vào Phương Tiện SS036 - Nhóm SS00A
+        /// -----
+        trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem
+                ?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS010(value: getGiaiDoanSS010?.getDanhSachHoatDongChienDauXamChiemNhomSS00A?.getHoatDongChienDauXamChiemSS036)
+                .catchError((e) => null) ??
+            onReportRootIssue(nameFunction: ''),
+        trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem
+                ?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS020(value: getGiaiDoanSS020?.getDanhSachHoatDongChienDauXamChiemNhomSS00A?.getHoatDongChienDauXamChiemSS036)
+                .catchError((e) => null) ??
+            onReportRootIssue(nameFunction: ''),
+        trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem
+                ?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS030(value: getGiaiDoanSS030?.getDanhSachHoatDongChienDauXamChiemNhomSS00A?.getHoatDongChienDauXamChiemSS036)
+                .catchError((e) => null) ??
+            onReportRootIssue(nameFunction: ''),
+        trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem
+                ?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS040(value: getGiaiDoanSS040?.getDanhSachHoatDongChienDauXamChiemNhomSS00A?.getHoatDongChienDauXamChiemSS036)
+                .catchError((e) => null) ??
+            onReportRootIssue(nameFunction: ''),
+        trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem
+                ?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS050(value: getGiaiDoanSS050?.getDanhSachHoatDongChienDauXamChiemNhomSS00A?.getHoatDongChienDauXamChiemSS036)
+                .catchError((e) => null) ??
+            onReportRootIssue(nameFunction: ''),
+        trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem
+                ?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS060(value: getGiaiDoanSS060?.getDanhSachHoatDongChienDauXamChiemNhomSS00A?.getHoatDongChienDauXamChiemSS036)
+                .catchError((e) => null) ??
+            onReportRootIssue(nameFunction: ''),
+        trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem
+                ?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS070(value: getGiaiDoanSS070?.getDanhSachHoatDongChienDauXamChiemNhomSS00A?.getHoatDongChienDauXamChiemSS036)
+                .catchError((e) => null) ??
+            onReportRootIssue(nameFunction: ''),
+      ]);
 
       /// -----
       /// TODO: Gắn Kết Phương Tiện SS020 Vào Khung Kịch Bản
@@ -1873,30 +2183,39 @@ abstract class DOIHINHPHUONGTIENCOBAN with CauTrucThucThiCoBan {
   /// -----
   Future<void> onTichHopKichBanPhuongTienSS036NhomSS00B({required TrangThaiPhuongTien? trangThaiPhuongTien, bool? caiDatUuTien}) async {
     if (caiDatUuTien == true) {
-      /// -----
-      /// TODO: Tích Hợp Kịch Bản Vào Phương Tiện SS036 - Nhóm SS00B
-      /// -----
-      await trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS010(
-        value: getGiaiDoanSS010?.getDanhSachHoatDongChienDauXamChiemNhomSS00B?.getHoatDongChienDauXamChiemSS036,
-      );
-      await trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS020(
-        value: getGiaiDoanSS020?.getDanhSachHoatDongChienDauXamChiemNhomSS00B?.getHoatDongChienDauXamChiemSS036,
-      );
-      await trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS030(
-        value: getGiaiDoanSS030?.getDanhSachHoatDongChienDauXamChiemNhomSS00B?.getHoatDongChienDauXamChiemSS036,
-      );
-      await trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS040(
-        value: getGiaiDoanSS040?.getDanhSachHoatDongChienDauXamChiemNhomSS00B?.getHoatDongChienDauXamChiemSS036,
-      );
-      await trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS050(
-        value: getGiaiDoanSS050?.getDanhSachHoatDongChienDauXamChiemNhomSS00B?.getHoatDongChienDauXamChiemSS036,
-      );
-      await trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS060(
-        value: getGiaiDoanSS060?.getDanhSachHoatDongChienDauXamChiemNhomSS00B?.getHoatDongChienDauXamChiemSS036,
-      );
-      await trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS070(
-        value: getGiaiDoanSS070?.getDanhSachHoatDongChienDauXamChiemNhomSS00B?.getHoatDongChienDauXamChiemSS036,
-      );
+      await Future.wait([
+        /// -----
+        /// TODO: Tích Hợp Kịch Bản Vào Phương Tiện SS036 - Nhóm SS00B
+        /// -----
+        trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem
+                ?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS010(value: getGiaiDoanSS010?.getDanhSachHoatDongChienDauXamChiemNhomSS00B?.getHoatDongChienDauXamChiemSS036)
+                .catchError((e) => null) ??
+            onReportRootIssue(nameFunction: ''),
+        trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem
+                ?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS020(value: getGiaiDoanSS020?.getDanhSachHoatDongChienDauXamChiemNhomSS00B?.getHoatDongChienDauXamChiemSS036)
+                .catchError((e) => null) ??
+            onReportRootIssue(nameFunction: ''),
+        trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem
+                ?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS030(value: getGiaiDoanSS030?.getDanhSachHoatDongChienDauXamChiemNhomSS00B?.getHoatDongChienDauXamChiemSS036)
+                .catchError((e) => null) ??
+            onReportRootIssue(nameFunction: ''),
+        trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem
+                ?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS040(value: getGiaiDoanSS040?.getDanhSachHoatDongChienDauXamChiemNhomSS00B?.getHoatDongChienDauXamChiemSS036)
+                .catchError((e) => null) ??
+            onReportRootIssue(nameFunction: ''),
+        trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem
+                ?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS050(value: getGiaiDoanSS050?.getDanhSachHoatDongChienDauXamChiemNhomSS00B?.getHoatDongChienDauXamChiemSS036)
+                .catchError((e) => null) ??
+            onReportRootIssue(nameFunction: ''),
+        trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem
+                ?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS060(value: getGiaiDoanSS060?.getDanhSachHoatDongChienDauXamChiemNhomSS00B?.getHoatDongChienDauXamChiemSS036)
+                .catchError((e) => null) ??
+            onReportRootIssue(nameFunction: ''),
+        trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem
+                ?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS070(value: getGiaiDoanSS070?.getDanhSachHoatDongChienDauXamChiemNhomSS00B?.getHoatDongChienDauXamChiemSS036)
+                .catchError((e) => null) ??
+            onReportRootIssue(nameFunction: ''),
+      ]);
 
       /// -----
       /// TODO: Gắn Kết Phương Tiện SS020 Vào Khung Kịch Bản
@@ -1916,30 +2235,39 @@ abstract class DOIHINHPHUONGTIENCOBAN with CauTrucThucThiCoBan {
   /// -----
   Future<void> onTichHopKichBanPhuongTienSS036NhomSS00C({required TrangThaiPhuongTien? trangThaiPhuongTien, bool? caiDatUuTien}) async {
     if (caiDatUuTien == true) {
-      /// -----
-      /// TODO: Tích Hợp Kịch Bản Vào Phương Tiện SS036 - Nhóm SS00C
-      /// -----
-      await trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS010(
-        value: getGiaiDoanSS010?.getDanhSachHoatDongChienDauXamChiemNhomSS00C?.getHoatDongChienDauXamChiemSS036,
-      );
-      await trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS020(
-        value: getGiaiDoanSS020?.getDanhSachHoatDongChienDauXamChiemNhomSS00C?.getHoatDongChienDauXamChiemSS036,
-      );
-      await trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS030(
-        value: getGiaiDoanSS030?.getDanhSachHoatDongChienDauXamChiemNhomSS00C?.getHoatDongChienDauXamChiemSS036,
-      );
-      await trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS040(
-        value: getGiaiDoanSS040?.getDanhSachHoatDongChienDauXamChiemNhomSS00C?.getHoatDongChienDauXamChiemSS036,
-      );
-      await trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS050(
-        value: getGiaiDoanSS050?.getDanhSachHoatDongChienDauXamChiemNhomSS00C?.getHoatDongChienDauXamChiemSS036,
-      );
-      await trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS060(
-        value: getGiaiDoanSS060?.getDanhSachHoatDongChienDauXamChiemNhomSS00C?.getHoatDongChienDauXamChiemSS036,
-      );
-      await trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS070(
-        value: getGiaiDoanSS070?.getDanhSachHoatDongChienDauXamChiemNhomSS00C?.getHoatDongChienDauXamChiemSS036,
-      );
+      await Future.wait([
+        /// -----
+        /// TODO: Tích Hợp Kịch Bản Vào Phương Tiện SS036 - Nhóm SS00C
+        /// -----
+        trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem
+                ?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS010(value: getGiaiDoanSS010?.getDanhSachHoatDongChienDauXamChiemNhomSS00C?.getHoatDongChienDauXamChiemSS036)
+                .catchError((e) => null) ??
+            onReportRootIssue(nameFunction: ''),
+        trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem
+                ?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS020(value: getGiaiDoanSS020?.getDanhSachHoatDongChienDauXamChiemNhomSS00C?.getHoatDongChienDauXamChiemSS036)
+                .catchError((e) => null) ??
+            onReportRootIssue(nameFunction: ''),
+        trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem
+                ?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS030(value: getGiaiDoanSS030?.getDanhSachHoatDongChienDauXamChiemNhomSS00C?.getHoatDongChienDauXamChiemSS036)
+                .catchError((e) => null) ??
+            onReportRootIssue(nameFunction: ''),
+        trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem
+                ?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS040(value: getGiaiDoanSS040?.getDanhSachHoatDongChienDauXamChiemNhomSS00C?.getHoatDongChienDauXamChiemSS036)
+                .catchError((e) => null) ??
+            onReportRootIssue(nameFunction: ''),
+        trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem
+                ?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS050(value: getGiaiDoanSS050?.getDanhSachHoatDongChienDauXamChiemNhomSS00C?.getHoatDongChienDauXamChiemSS036)
+                .catchError((e) => null) ??
+            onReportRootIssue(nameFunction: ''),
+        trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem
+                ?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS060(value: getGiaiDoanSS060?.getDanhSachHoatDongChienDauXamChiemNhomSS00C?.getHoatDongChienDauXamChiemSS036)
+                .catchError((e) => null) ??
+            onReportRootIssue(nameFunction: ''),
+        trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem
+                ?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS070(value: getGiaiDoanSS070?.getDanhSachHoatDongChienDauXamChiemNhomSS00C?.getHoatDongChienDauXamChiemSS036)
+                .catchError((e) => null) ??
+            onReportRootIssue(nameFunction: ''),
+      ]);
 
       /// -----
       /// TODO: Gắn Kết Phương Tiện SS020 Vào Khung Kịch Bản
@@ -1959,30 +2287,39 @@ abstract class DOIHINHPHUONGTIENCOBAN with CauTrucThucThiCoBan {
   /// -----
   Future<void> onTichHopKichBanPhuongTienSS036NhomSS00D({required TrangThaiPhuongTien? trangThaiPhuongTien, bool? caiDatUuTien}) async {
     if (caiDatUuTien == true) {
-      /// -----
-      /// TODO: Tích Hợp Kịch Bản Vào Phương Tiện SS036 - Nhóm SS00D
-      /// -----
-      await trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS010(
-        value: getGiaiDoanSS010?.getDanhSachHoatDongChienDauXamChiemNhomSS00D?.getHoatDongChienDauXamChiemSS036,
-      );
-      await trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS020(
-        value: getGiaiDoanSS020?.getDanhSachHoatDongChienDauXamChiemNhomSS00D?.getHoatDongChienDauXamChiemSS036,
-      );
-      await trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS030(
-        value: getGiaiDoanSS030?.getDanhSachHoatDongChienDauXamChiemNhomSS00D?.getHoatDongChienDauXamChiemSS036,
-      );
-      await trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS040(
-        value: getGiaiDoanSS040?.getDanhSachHoatDongChienDauXamChiemNhomSS00D?.getHoatDongChienDauXamChiemSS036,
-      );
-      await trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS050(
-        value: getGiaiDoanSS050?.getDanhSachHoatDongChienDauXamChiemNhomSS00D?.getHoatDongChienDauXamChiemSS036,
-      );
-      await trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS060(
-        value: getGiaiDoanSS060?.getDanhSachHoatDongChienDauXamChiemNhomSS00D?.getHoatDongChienDauXamChiemSS036,
-      );
-      await trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS070(
-        value: getGiaiDoanSS070?.getDanhSachHoatDongChienDauXamChiemNhomSS00D?.getHoatDongChienDauXamChiemSS036,
-      );
+      await Future.wait([
+        /// -----
+        /// TODO: Tích Hợp Kịch Bản Vào Phương Tiện SS036 - Nhóm SS00D
+        /// -----
+        trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem
+                ?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS010(value: getGiaiDoanSS010?.getDanhSachHoatDongChienDauXamChiemNhomSS00D?.getHoatDongChienDauXamChiemSS036)
+                .catchError((e) => null) ??
+            onReportRootIssue(nameFunction: ''),
+        trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem
+                ?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS020(value: getGiaiDoanSS020?.getDanhSachHoatDongChienDauXamChiemNhomSS00D?.getHoatDongChienDauXamChiemSS036)
+                .catchError((e) => null) ??
+            onReportRootIssue(nameFunction: ''),
+        trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem
+                ?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS030(value: getGiaiDoanSS030?.getDanhSachHoatDongChienDauXamChiemNhomSS00D?.getHoatDongChienDauXamChiemSS036)
+                .catchError((e) => null) ??
+            onReportRootIssue(nameFunction: ''),
+        trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem
+                ?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS040(value: getGiaiDoanSS040?.getDanhSachHoatDongChienDauXamChiemNhomSS00D?.getHoatDongChienDauXamChiemSS036)
+                .catchError((e) => null) ??
+            onReportRootIssue(nameFunction: ''),
+        trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem
+                ?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS050(value: getGiaiDoanSS050?.getDanhSachHoatDongChienDauXamChiemNhomSS00D?.getHoatDongChienDauXamChiemSS036)
+                .catchError((e) => null) ??
+            onReportRootIssue(nameFunction: ''),
+        trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem
+                ?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS060(value: getGiaiDoanSS060?.getDanhSachHoatDongChienDauXamChiemNhomSS00D?.getHoatDongChienDauXamChiemSS036)
+                .catchError((e) => null) ??
+            onReportRootIssue(nameFunction: ''),
+        trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem
+                ?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS070(value: getGiaiDoanSS070?.getDanhSachHoatDongChienDauXamChiemNhomSS00D?.getHoatDongChienDauXamChiemSS036)
+                .catchError((e) => null) ??
+            onReportRootIssue(nameFunction: ''),
+      ]);
 
       /// -----
       /// TODO: Gắn Kết Phương Tiện SS020 Vào Khung Kịch Bản
@@ -2010,30 +2347,39 @@ abstract class DOIHINHPHUONGTIENCOBAN with CauTrucThucThiCoBan {
   /// -----
   Future<void> onTichHopKichBanPhuongTienSS038NhomSS00A({required TrangThaiPhuongTien? trangThaiPhuongTien, bool? caiDatUuTien}) async {
     if (caiDatUuTien == true) {
-      /// -----
-      /// TODO: Tích Hợp Kịch Bản Vào Phương Tiện SS038 - Nhóm SS00A
-      /// -----
-      await trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS010(
-        value: getGiaiDoanSS010?.getDanhSachHoatDongChienDauXamChiemNhomSS00A?.getHoatDongChienDauXamChiemSS038,
-      );
-      await trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS020(
-        value: getGiaiDoanSS020?.getDanhSachHoatDongChienDauXamChiemNhomSS00A?.getHoatDongChienDauXamChiemSS038,
-      );
-      await trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS030(
-        value: getGiaiDoanSS030?.getDanhSachHoatDongChienDauXamChiemNhomSS00A?.getHoatDongChienDauXamChiemSS038,
-      );
-      await trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS040(
-        value: getGiaiDoanSS040?.getDanhSachHoatDongChienDauXamChiemNhomSS00A?.getHoatDongChienDauXamChiemSS038,
-      );
-      await trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS050(
-        value: getGiaiDoanSS050?.getDanhSachHoatDongChienDauXamChiemNhomSS00A?.getHoatDongChienDauXamChiemSS038,
-      );
-      await trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS060(
-        value: getGiaiDoanSS060?.getDanhSachHoatDongChienDauXamChiemNhomSS00A?.getHoatDongChienDauXamChiemSS038,
-      );
-      await trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS070(
-        value: getGiaiDoanSS070?.getDanhSachHoatDongChienDauXamChiemNhomSS00A?.getHoatDongChienDauXamChiemSS038,
-      );
+      await Future.wait([
+        /// -----
+        /// TODO: Tích Hợp Kịch Bản Vào Phương Tiện SS038 - Nhóm SS00A
+        /// -----
+        trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem
+                ?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS010(value: getGiaiDoanSS010?.getDanhSachHoatDongChienDauXamChiemNhomSS00A?.getHoatDongChienDauXamChiemSS038)
+                .catchError((e) => null) ??
+            onReportRootIssue(nameFunction: ''),
+        trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem
+                ?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS020(value: getGiaiDoanSS020?.getDanhSachHoatDongChienDauXamChiemNhomSS00A?.getHoatDongChienDauXamChiemSS038)
+                .catchError((e) => null) ??
+            onReportRootIssue(nameFunction: ''),
+        trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem
+                ?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS030(value: getGiaiDoanSS030?.getDanhSachHoatDongChienDauXamChiemNhomSS00A?.getHoatDongChienDauXamChiemSS038)
+                .catchError((e) => null) ??
+            onReportRootIssue(nameFunction: ''),
+        trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem
+                ?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS040(value: getGiaiDoanSS040?.getDanhSachHoatDongChienDauXamChiemNhomSS00A?.getHoatDongChienDauXamChiemSS038)
+                .catchError((e) => null) ??
+            onReportRootIssue(nameFunction: ''),
+        trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem
+                ?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS050(value: getGiaiDoanSS050?.getDanhSachHoatDongChienDauXamChiemNhomSS00A?.getHoatDongChienDauXamChiemSS038)
+                .catchError((e) => null) ??
+            onReportRootIssue(nameFunction: ''),
+        trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem
+                ?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS060(value: getGiaiDoanSS060?.getDanhSachHoatDongChienDauXamChiemNhomSS00A?.getHoatDongChienDauXamChiemSS038)
+                .catchError((e) => null) ??
+            onReportRootIssue(nameFunction: ''),
+        trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem
+                ?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS070(value: getGiaiDoanSS070?.getDanhSachHoatDongChienDauXamChiemNhomSS00A?.getHoatDongChienDauXamChiemSS038)
+                .catchError((e) => null) ??
+            onReportRootIssue(nameFunction: ''),
+      ]);
 
       /// -----
       /// TODO: Gắn Kết Phương Tiện SS020 Vào Khung Kịch Bản
@@ -2053,30 +2399,39 @@ abstract class DOIHINHPHUONGTIENCOBAN with CauTrucThucThiCoBan {
   /// -----
   Future<void> onTichHopKichBanPhuongTienSS038NhomSS00B({required TrangThaiPhuongTien? trangThaiPhuongTien, bool? caiDatUuTien}) async {
     if (caiDatUuTien == true) {
-      /// -----
-      /// TODO: Tích Hợp Kịch Bản Vào Phương Tiện SS038 - Nhóm SS00B
-      /// -----
-      await trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS010(
-        value: getGiaiDoanSS010?.getDanhSachHoatDongChienDauXamChiemNhomSS00B?.getHoatDongChienDauXamChiemSS038,
-      );
-      await trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS020(
-        value: getGiaiDoanSS020?.getDanhSachHoatDongChienDauXamChiemNhomSS00B?.getHoatDongChienDauXamChiemSS038,
-      );
-      await trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS030(
-        value: getGiaiDoanSS030?.getDanhSachHoatDongChienDauXamChiemNhomSS00B?.getHoatDongChienDauXamChiemSS038,
-      );
-      await trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS040(
-        value: getGiaiDoanSS040?.getDanhSachHoatDongChienDauXamChiemNhomSS00B?.getHoatDongChienDauXamChiemSS038,
-      );
-      await trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS050(
-        value: getGiaiDoanSS050?.getDanhSachHoatDongChienDauXamChiemNhomSS00B?.getHoatDongChienDauXamChiemSS038,
-      );
-      await trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS060(
-        value: getGiaiDoanSS060?.getDanhSachHoatDongChienDauXamChiemNhomSS00B?.getHoatDongChienDauXamChiemSS038,
-      );
-      await trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS070(
-        value: getGiaiDoanSS070?.getDanhSachHoatDongChienDauXamChiemNhomSS00B?.getHoatDongChienDauXamChiemSS038,
-      );
+      await Future.wait([
+        /// -----
+        /// TODO: Tích Hợp Kịch Bản Vào Phương Tiện SS038 - Nhóm SS00B
+        /// -----
+        trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem
+                ?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS010(value: getGiaiDoanSS010?.getDanhSachHoatDongChienDauXamChiemNhomSS00B?.getHoatDongChienDauXamChiemSS038)
+                .catchError((e) => null) ??
+            onReportRootIssue(nameFunction: ''),
+        trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem
+                ?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS020(value: getGiaiDoanSS020?.getDanhSachHoatDongChienDauXamChiemNhomSS00B?.getHoatDongChienDauXamChiemSS038)
+                .catchError((e) => null) ??
+            onReportRootIssue(nameFunction: ''),
+        trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem
+                ?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS030(value: getGiaiDoanSS030?.getDanhSachHoatDongChienDauXamChiemNhomSS00B?.getHoatDongChienDauXamChiemSS038)
+                .catchError((e) => null) ??
+            onReportRootIssue(nameFunction: ''),
+        trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem
+                ?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS040(value: getGiaiDoanSS040?.getDanhSachHoatDongChienDauXamChiemNhomSS00B?.getHoatDongChienDauXamChiemSS038)
+                .catchError((e) => null) ??
+            onReportRootIssue(nameFunction: ''),
+        trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem
+                ?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS050(value: getGiaiDoanSS050?.getDanhSachHoatDongChienDauXamChiemNhomSS00B?.getHoatDongChienDauXamChiemSS038)
+                .catchError((e) => null) ??
+            onReportRootIssue(nameFunction: ''),
+        trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem
+                ?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS060(value: getGiaiDoanSS060?.getDanhSachHoatDongChienDauXamChiemNhomSS00B?.getHoatDongChienDauXamChiemSS038)
+                .catchError((e) => null) ??
+            onReportRootIssue(nameFunction: ''),
+        trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem
+                ?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS070(value: getGiaiDoanSS070?.getDanhSachHoatDongChienDauXamChiemNhomSS00B?.getHoatDongChienDauXamChiemSS038)
+                .catchError((e) => null) ??
+            onReportRootIssue(nameFunction: ''),
+      ]);
 
       /// -----
       /// TODO: Gắn Kết Phương Tiện SS020 Vào Khung Kịch Bản
@@ -2096,30 +2451,39 @@ abstract class DOIHINHPHUONGTIENCOBAN with CauTrucThucThiCoBan {
   /// -----
   Future<void> onTichHopKichBanPhuongTienSS038NhomSS00C({required TrangThaiPhuongTien? trangThaiPhuongTien, bool? caiDatUuTien}) async {
     if (caiDatUuTien == true) {
-      /// -----
-      /// TODO: Tích Hợp Kịch Bản Vào Phương Tiện SS038 - Nhóm SS00C
-      /// -----
-      await trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS010(
-        value: getGiaiDoanSS010?.getDanhSachHoatDongChienDauXamChiemNhomSS00C?.getHoatDongChienDauXamChiemSS038,
-      );
-      await trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS020(
-        value: getGiaiDoanSS020?.getDanhSachHoatDongChienDauXamChiemNhomSS00C?.getHoatDongChienDauXamChiemSS038,
-      );
-      await trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS030(
-        value: getGiaiDoanSS030?.getDanhSachHoatDongChienDauXamChiemNhomSS00C?.getHoatDongChienDauXamChiemSS038,
-      );
-      await trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS040(
-        value: getGiaiDoanSS040?.getDanhSachHoatDongChienDauXamChiemNhomSS00C?.getHoatDongChienDauXamChiemSS038,
-      );
-      await trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS050(
-        value: getGiaiDoanSS050?.getDanhSachHoatDongChienDauXamChiemNhomSS00C?.getHoatDongChienDauXamChiemSS038,
-      );
-      await trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS060(
-        value: getGiaiDoanSS060?.getDanhSachHoatDongChienDauXamChiemNhomSS00C?.getHoatDongChienDauXamChiemSS038,
-      );
-      await trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS070(
-        value: getGiaiDoanSS070?.getDanhSachHoatDongChienDauXamChiemNhomSS00C?.getHoatDongChienDauXamChiemSS038,
-      );
+      await Future.wait([
+        /// -----
+        /// TODO: Tích Hợp Kịch Bản Vào Phương Tiện SS038 - Nhóm SS00C
+        /// -----
+        trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem
+                ?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS010(value: getGiaiDoanSS010?.getDanhSachHoatDongChienDauXamChiemNhomSS00C?.getHoatDongChienDauXamChiemSS038)
+                .catchError((e) => null) ??
+            onReportRootIssue(nameFunction: ''),
+        trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem
+                ?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS020(value: getGiaiDoanSS020?.getDanhSachHoatDongChienDauXamChiemNhomSS00C?.getHoatDongChienDauXamChiemSS038)
+                .catchError((e) => null) ??
+            onReportRootIssue(nameFunction: ''),
+        trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem
+                ?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS030(value: getGiaiDoanSS030?.getDanhSachHoatDongChienDauXamChiemNhomSS00C?.getHoatDongChienDauXamChiemSS038)
+                .catchError((e) => null) ??
+            onReportRootIssue(nameFunction: ''),
+        trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem
+                ?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS040(value: getGiaiDoanSS040?.getDanhSachHoatDongChienDauXamChiemNhomSS00C?.getHoatDongChienDauXamChiemSS038)
+                .catchError((e) => null) ??
+            onReportRootIssue(nameFunction: ''),
+        trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem
+                ?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS050(value: getGiaiDoanSS050?.getDanhSachHoatDongChienDauXamChiemNhomSS00C?.getHoatDongChienDauXamChiemSS038)
+                .catchError((e) => null) ??
+            onReportRootIssue(nameFunction: ''),
+        trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem
+                ?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS060(value: getGiaiDoanSS060?.getDanhSachHoatDongChienDauXamChiemNhomSS00C?.getHoatDongChienDauXamChiemSS038)
+                .catchError((e) => null) ??
+            onReportRootIssue(nameFunction: ''),
+        trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem
+                ?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS070(value: getGiaiDoanSS070?.getDanhSachHoatDongChienDauXamChiemNhomSS00C?.getHoatDongChienDauXamChiemSS038)
+                .catchError((e) => null) ??
+            onReportRootIssue(nameFunction: ''),
+      ]);
 
       /// -----
       /// TODO: Gắn Kết Phương Tiện SS020 Vào Khung Kịch Bản
@@ -2139,30 +2503,39 @@ abstract class DOIHINHPHUONGTIENCOBAN with CauTrucThucThiCoBan {
   /// -----
   Future<void> onTichHopKichBanPhuongTienSS038NhomSS00D({required TrangThaiPhuongTien? trangThaiPhuongTien, bool? caiDatUuTien}) async {
     if (caiDatUuTien == true) {
-      /// -----
-      /// TODO: Tích Hợp Kịch Bản Vào Phương Tiện SS038 - Nhóm SS00D
-      /// -----
-      await trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS010(
-        value: getGiaiDoanSS010?.getDanhSachHoatDongChienDauXamChiemNhomSS00D?.getHoatDongChienDauXamChiemSS038,
-      );
-      await trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS020(
-        value: getGiaiDoanSS020?.getDanhSachHoatDongChienDauXamChiemNhomSS00D?.getHoatDongChienDauXamChiemSS038,
-      );
-      await trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS030(
-        value: getGiaiDoanSS030?.getDanhSachHoatDongChienDauXamChiemNhomSS00D?.getHoatDongChienDauXamChiemSS038,
-      );
-      await trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS040(
-        value: getGiaiDoanSS040?.getDanhSachHoatDongChienDauXamChiemNhomSS00D?.getHoatDongChienDauXamChiemSS038,
-      );
-      await trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS050(
-        value: getGiaiDoanSS050?.getDanhSachHoatDongChienDauXamChiemNhomSS00D?.getHoatDongChienDauXamChiemSS038,
-      );
-      await trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS060(
-        value: getGiaiDoanSS060?.getDanhSachHoatDongChienDauXamChiemNhomSS00D?.getHoatDongChienDauXamChiemSS038,
-      );
-      await trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS070(
-        value: getGiaiDoanSS070?.getDanhSachHoatDongChienDauXamChiemNhomSS00D?.getHoatDongChienDauXamChiemSS038,
-      );
+      await Future.wait([
+        /// -----
+        /// TODO: Tích Hợp Kịch Bản Vào Phương Tiện SS038 - Nhóm SS00D
+        /// -----
+        trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem
+                ?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS010(value: getGiaiDoanSS010?.getDanhSachHoatDongChienDauXamChiemNhomSS00D?.getHoatDongChienDauXamChiemSS038)
+                .catchError((e) => null) ??
+            onReportRootIssue(nameFunction: ''),
+        trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem
+                ?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS020(value: getGiaiDoanSS020?.getDanhSachHoatDongChienDauXamChiemNhomSS00D?.getHoatDongChienDauXamChiemSS038)
+                .catchError((e) => null) ??
+            onReportRootIssue(nameFunction: ''),
+        trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem
+                ?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS030(value: getGiaiDoanSS030?.getDanhSachHoatDongChienDauXamChiemNhomSS00D?.getHoatDongChienDauXamChiemSS038)
+                .catchError((e) => null) ??
+            onReportRootIssue(nameFunction: ''),
+        trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem
+                ?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS040(value: getGiaiDoanSS040?.getDanhSachHoatDongChienDauXamChiemNhomSS00D?.getHoatDongChienDauXamChiemSS038)
+                .catchError((e) => null) ??
+            onReportRootIssue(nameFunction: ''),
+        trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem
+                ?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS050(value: getGiaiDoanSS050?.getDanhSachHoatDongChienDauXamChiemNhomSS00D?.getHoatDongChienDauXamChiemSS038)
+                .catchError((e) => null) ??
+            onReportRootIssue(nameFunction: ''),
+        trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem
+                ?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS060(value: getGiaiDoanSS060?.getDanhSachHoatDongChienDauXamChiemNhomSS00D?.getHoatDongChienDauXamChiemSS038)
+                .catchError((e) => null) ??
+            onReportRootIssue(nameFunction: ''),
+        trangThaiPhuongTien?.getMoHinh?.getTrangThaiHoatDongChienDauXamChiem
+                ?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanSS070(value: getGiaiDoanSS070?.getDanhSachHoatDongChienDauXamChiemNhomSS00D?.getHoatDongChienDauXamChiemSS038)
+                .catchError((e) => null) ??
+            onReportRootIssue(nameFunction: ''),
+      ]);
 
       /// -----
       /// TODO: Gắn Kết Phương Tiện SS020 Vào Khung Kịch Bản

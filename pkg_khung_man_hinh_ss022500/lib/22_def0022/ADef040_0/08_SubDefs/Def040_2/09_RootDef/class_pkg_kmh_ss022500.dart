@@ -10,7 +10,7 @@ class VANBANCAIDATCHATLUONGDOHOA
   /// TODO:
   /// -----
   VANBANCAIDATCHATLUONGDOHOA({
-    required super.globalState,
+    required super.globalStateManagementSystem,
     required super.gameController,
     required super.thanhPhanQuanLyThuocCapTrucTiep,
     required super.sizeDx,
@@ -24,5 +24,11 @@ class VANBANCAIDATCHATLUONGDOHOA
     onVoidCaiDatVanBan(value: 'Chọn Chất Lượng Đồ Họa', caiDatUuTien: true);
 
     return;
+  }
+
+  @override
+  Future<void> update(double dt) async {
+    // TODO: implement update
+    super.update(dt);
   }
 }

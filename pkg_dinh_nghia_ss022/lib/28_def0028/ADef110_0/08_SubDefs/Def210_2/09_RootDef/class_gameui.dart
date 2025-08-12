@@ -3,7 +3,7 @@ import 'package:pkg_dinh_nghia_ss022/pkg_dinh_nghia_ss022_exp.dart';
 ///
 /// TODO: [GAMEUI] Khung Màn Hình Thuộc Cấp Cơ Bản
 ///
-class GAMEUIKHUNGMANHINHTHUOCCAPCOBAN extends THANHPHANGAMEUICOBAN {
+class GAMEUIKHUNGMANHINHTHUOCCAPCOBAN extends CoreGameUIComponent {
   static const String maDinhDanhGameUI = '[GAMEUI]_[GAMEUIKHUNGMANHINHTHUOCCAPCOBAN]';
 
   /// -----
@@ -65,15 +65,15 @@ class GAMEUIKHUNGMANHINHTHUOCCAPCOBAN extends THANHPHANGAMEUICOBAN {
     /// TODO: Resized 50
 
     /// TODO: Resized 100
-    final String nguonSpriteRS100FullPicture = '07_Resized/Def90/sps_rs100_full_picture.png';
+    // final String nguonSpriteRS100FullPicture = '07_Resized/Def90/sps_rs100_full_picture.png';
+    final String nguonSpriteRS100FullPicture = '07_Resized/Def90/sps_rs100_full_picture.webp';
 
     /// -----
     /// TODO: Ngoại Hình GameUI FullPicture
     /// -----
     final String nguonSpriteNgoaiHinhGameUIRS100FullPicture = '$nguonSpriteDongKhoi/$nguonSpriteRS100FullPicture';
     await Future.wait([
-      getSpriteThanhPhanGameUI?.getDonViSpriteNgoaiHinhGameUI?.caiDatNguonHinhAnh(value: nguonSpriteNgoaiHinhGameUIRS100FullPicture).catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
+      getSpriteThanhPhanGameUI?.getDonViSpriteNgoaiHinhGameUI?.caiDatNguonHinhAnh(value: nguonSpriteNgoaiHinhGameUIRS100FullPicture).catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
       getSpriteThanhPhanGameUI?.getDonViSpriteNgoaiHinhGameUI?.caiDatChieuRongFrameRS100(value: chieuRongFrame).catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
       getSpriteThanhPhanGameUI?.getDonViSpriteNgoaiHinhGameUI?.caiDatChieuCaoFrameRS100(value: chieuCaoFrame).catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
     ]);

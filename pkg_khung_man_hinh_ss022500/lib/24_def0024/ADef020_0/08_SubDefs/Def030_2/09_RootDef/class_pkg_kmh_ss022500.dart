@@ -5,12 +5,12 @@ import 'package:flame/game.dart';
 import 'package:pkg_khung_man_hinh_ss020000/pkg_khung_man_hinh_ss020000_exp.dart';
 import 'package:pkg_khung_man_hinh_ss022500/22_def0022/ADef030_0/08_SubDefs/Def030_2/08_SubDefs/Def020_4/09_RootDef/class_pkg_kmh_ss022500.dart';
 import 'package:pkg_khung_man_hinh_ss022500/22_def0022/ADef030_0/08_SubDefs/Def030_2/08_SubDefs/Def040_4/09_RootDef/class_pkg_kmh_ss022500.dart';
+import 'package:pkg_khung_man_hinh_ss022500/22_def0022/ADef030_0/08_SubDefs/Def030_2/08_SubDefs/Def240_4/09_RootDef/class_pkg_kmh_ss022500.dart';
 
 /// -----
 /// TODO: Quản Lý Thành Phần Nút Bấm Khung Màn Hình Chính Tab SS030 Chiến Đấu
 /// -----
-class QUANLYTHANHPHANNUTBAMKHUNGMANHINHCHINHTABSS050CD
-    extends QUANLYTHANHPHANNUTBAMTHUOCCAPCOBAN {
+class QUANLYTHANHPHANNUTBAMKHUNGMANHINHCHINHTABSS050CD extends QUANLYTHANHPHANNUTBAMTHUOCCAPCOBAN {
   final VoidCallback? onThucThiChuyenTabSS010;
   final VoidCallback? onThucThiChuyenTabSS020;
   final VoidCallback? onThucThiChuyenTabSS030;
@@ -21,7 +21,7 @@ class QUANLYTHANHPHANNUTBAMKHUNGMANHINHCHINHTABSS050CD
   /// TODO:
   /// -----
   QUANLYTHANHPHANNUTBAMKHUNGMANHINHCHINHTABSS050CD({
-    required super.globalState,
+    required super.globalStateManagementSystem,
     required super.gameController,
     required super.thanhPhanQuanLyThuocCapTrucTiep,
     required super.sizeDx,
@@ -35,10 +35,7 @@ class QUANLYTHANHPHANNUTBAMKHUNGMANHINHCHINHTABSS050CD
 
   NUTBAMCHONCHATLUONGDOHOATHAP? _nutBamChonChatLuongDoHoaThap;
   NUTBAMCHONCHATLUONGDOHOATHAP? get getNutBamChonChatLuongDoHoaThap => _nutBamChonChatLuongDoHoaThap;
-  Future<void> onCaiDatNutBamChonChatLuongDoHoaThap({
-    required NUTBAMCHONCHATLUONGDOHOATHAP? value,
-    bool? caiDatUuTien,
-  }) async {
+  Future<void> onCaiDatNutBamChonChatLuongDoHoaThap({required NUTBAMCHONCHATLUONGDOHOATHAP? value, bool? caiDatUuTien}) async {
     if (caiDatUuTien == true) {
       _nutBamChonChatLuongDoHoaThap = value;
     } else {
@@ -51,14 +48,27 @@ class QUANLYTHANHPHANNUTBAMKHUNGMANHINHCHINHTABSS050CD
 
   NUTBAMCHONCHATLUONGDOHOACAO? _nutBamChonChatLuongDoHoaCao;
   NUTBAMCHONCHATLUONGDOHOACAO? get getNutBamChonChatLuongDoHoaCao => _nutBamChonChatLuongDoHoaCao;
-  Future<void> onCaiDatNutBamChonChatLuongDoHoaCao({
-    required NUTBAMCHONCHATLUONGDOHOACAO? value,
-    bool? caiDatUuTien,
-  }) async {
+  Future<void> onCaiDatNutBamChonChatLuongDoHoaCao({required NUTBAMCHONCHATLUONGDOHOACAO? value, bool? caiDatUuTien}) async {
     if (caiDatUuTien == true) {
       _nutBamChonChatLuongDoHoaCao = value;
     } else {
       _nutBamChonChatLuongDoHoaCao ??= value;
+    }
+
+    ///
+    return;
+  }
+
+  /// -----
+  /// TODO:
+  /// -----
+  NUTBAMDONGMANHINH? _nutBamDongManHinh;
+  NUTBAMDONGMANHINH? get getNutBamDongManHinh => _nutBamDongManHinh;
+  Future<void> onCaiDatNutBamDongManHinh({required NUTBAMDONGMANHINH? value, bool? caiDatUuTien}) async {
+    if (caiDatUuTien == true) {
+      _nutBamDongManHinh = value;
+    } else {
+      _nutBamDongManHinh ??= value;
     }
 
     ///
@@ -109,21 +119,11 @@ class QUANLYTHANHPHANNUTBAMKHUNGMANHINHCHINHTABSS050CD
   /// TODO: Add Comp Root
   /// -----
   @override
-  Future<void> onAddRoot({
-    required FlameGame? flameGame,
-    required Component? component,
-  }) async {
+  Future<void> onAddRoot({required FlameGame? flameGame, required Component? component}) async {
     await Future.wait([
-      onAddComponent(
-        flameGame: null,
-        parentComponent: component,
-        childComponent: getNutBamChonChatLuongDoHoaThap,
-      ).catchError((e) => null),
-      onAddComponent(
-        flameGame: null,
-        parentComponent: component,
-        childComponent: getNutBamChonChatLuongDoHoaCao,
-      ).catchError((e) => null),
+      onAddComponent(flameGame: null, parentComponent: component, childComponent: getNutBamChonChatLuongDoHoaThap).catchError((e) => null),
+      onAddComponent(flameGame: null, parentComponent: component, childComponent: getNutBamChonChatLuongDoHoaCao).catchError((e) => null),
+      onAddComponent(flameGame: null, parentComponent: component, childComponent: getNutBamDongManHinh).catchError((e) => null),
     ]);
 
     /// -----
@@ -139,19 +139,11 @@ class QUANLYTHANHPHANNUTBAMKHUNGMANHINHCHINHTABSS050CD
   /// TODO: Add Comp Root For SubCom
   /// -----
   @override
-  Future<void> onAddRootForSubCom({
-    required FlameGame? flameGame,
-    required Component? component,
-  }) async {
+  Future<void> onAddRootForSubCom({required FlameGame? flameGame, required Component? component}) async {
     await Future.wait([
-      getNutBamChonChatLuongDoHoaThap
-          ?.onAddRoot(flameGame: null, component: component)
-          .catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
-      getNutBamChonChatLuongDoHoaCao
-          ?.onAddRoot(flameGame: null, component: component)
-          .catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
+      getNutBamChonChatLuongDoHoaThap?.onAddRoot(flameGame: null, component: component).catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getNutBamChonChatLuongDoHoaCao?.onAddRoot(flameGame: null, component: component).catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getNutBamDongManHinh?.onAddRoot(flameGame: null, component: component).catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
     ]);
 
     ///
@@ -168,13 +160,17 @@ class QUANLYTHANHPHANNUTBAMKHUNGMANHINHCHINHTABSS050CD
     double sizeDxKhungManHinh = getSizeDx ?? 100.0;
     double sizeDyKhungManHinh = getSizeDy ?? 100.0;
 
+    double donViChieuRong = sizeDxKhungManHinh / 16;
+    double sizeDxNutBamChonTab = donViChieuRong * 2.0;
+    double sizeDyNutBamChonTab = donViChieuRong * 2.0;
+
     double sizeDxNutBam = 80.0;
     double sizeDyNutBam = 40.0;
 
     await Future.wait([
       onCaiDatNutBamChonChatLuongDoHoaThap(
         value: NUTBAMCHONCHATLUONGDOHOATHAP(
-          globalState: getGlobalState,
+          globalStateManagementSystem: getGlobalStateManagementSystem,
           gameController: getGameController,
           thanhPhanQuanLyThuocCapTrucTiep: getThanhPhanQuanLyThuocCapTrucTiep,
           sizeDx: sizeDxNutBam,
@@ -184,14 +180,14 @@ class QUANLYTHANHPHANNUTBAMKHUNGMANHINHCHINHTABSS050CD
           onTapCancelEvent: null,
           onTapDownEvent: null,
           onTapUpEvent: () {
-           ///
+            ///
           },
         ),
         caiDatUuTien: true,
       ).catchError((e) => null),
       onCaiDatNutBamChonChatLuongDoHoaCao(
         value: NUTBAMCHONCHATLUONGDOHOACAO(
-          globalState: getGlobalState,
+          globalStateManagementSystem: getGlobalStateManagementSystem,
           gameController: getGameController,
           thanhPhanQuanLyThuocCapTrucTiep: getThanhPhanQuanLyThuocCapTrucTiep,
           sizeDx: sizeDxNutBam,
@@ -206,16 +202,33 @@ class QUANLYTHANHPHANNUTBAMKHUNGMANHINHCHINHTABSS050CD
         ),
         caiDatUuTien: true,
       ).catchError((e) => null),
+
+      onCaiDatNutBamDongManHinh(
+        value: NUTBAMDONGMANHINH(
+          globalStateManagementSystem: getGlobalStateManagementSystem,
+          gameController: getGameController,
+          thanhPhanQuanLyThuocCapTrucTiep: getThanhPhanQuanLyThuocCapTrucTiep,
+          sizeDx: sizeDxNutBamChonTab,
+          sizeDy: sizeDyNutBamChonTab,
+          positionDx: sizeDxKhungManHinh - (sizeDxNutBamChonTab),
+          positionDy: sizeDyNutBamChonTab,
+          onTapCancelEvent: null,
+          onTapDownEvent: null,
+          onTapUpEvent: () async {
+            await getGameController?.onHuyKichHoatKhungManHinhThuocCapTabSS050();
+          },
+        ),
+        caiDatUuTien: true,
+      ).catchError((e) => null),
     ]);
 
     /// -----
     /// TODO:
     /// -----
     await Future.wait([
-      getNutBamChonChatLuongDoHoaThap?.onSetupRoot().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
-      getNutBamChonChatLuongDoHoaCao?.onSetupRoot().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
+      getNutBamChonChatLuongDoHoaThap?.onSetupRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getNutBamChonChatLuongDoHoaCao?.onSetupRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getNutBamDongManHinh?.onSetupRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
     ]);
 
     ///
@@ -233,10 +246,14 @@ class QUANLYTHANHPHANNUTBAMKHUNGMANHINHCHINHTABSS050CD
     /// TODO:
     /// -----
     await Future.wait([
-      getNutBamChonChatLuongDoHoaThap?.onInitRoot().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
-      getNutBamChonChatLuongDoHoaCao?.onInitRoot().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),    ]);
+      getNutBamChonChatLuongDoHoaThap?.onInitRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getNutBamChonChatLuongDoHoaCao?.onInitRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getNutBamDongManHinh?.onInitRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+    ]);
+
+    await getNutBamChonChatLuongDoHoaThap?.onKichHoatThanhPhanThuocCap();
+    await getNutBamChonChatLuongDoHoaCao?.onKichHoatThanhPhanThuocCap();
+    await getNutBamDongManHinh?.onKichHoatThanhPhanThuocCap();
 
     ///
     return;
@@ -253,11 +270,8 @@ class QUANLYTHANHPHANNUTBAMKHUNGMANHINHCHINHTABSS050CD
       /// -----
       getNutBamChonChatLuongDoHoaThap?.onVoidKichHoat();
       getNutBamChonChatLuongDoHoaCao?.onVoidHuyKichHoat();
-
     } catch (e) {
-      await onReportRootIssue(
-        nameFunction: 'onChonChiDinhCaiDatChatLuongDoHoaThap',
-      );
+      await onReportRootIssue(nameFunction: 'onChonChiDinhCaiDatChatLuongDoHoaThap');
     }
 
     ///
@@ -275,11 +289,8 @@ class QUANLYTHANHPHANNUTBAMKHUNGMANHINHCHINHTABSS050CD
       /// -----
       getNutBamChonChatLuongDoHoaThap?.onVoidHuyKichHoat();
       getNutBamChonChatLuongDoHoaCao?.onVoidKichHoat();
-
     } catch (e) {
-      await onReportRootIssue(
-        nameFunction: 'onChonChiDinhCaiDatChatLuongDoHoaCao',
-      );
+      await onReportRootIssue(nameFunction: 'onChonChiDinhCaiDatChatLuongDoHoaCao');
     }
 
     ///

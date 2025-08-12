@@ -12,7 +12,7 @@ class THUOCTINHSOHUUCHIENDAUCOSSS10SS030 extends THUOCTINHSOHUUCHIENDAUCOCOBAN {
     /// TODO:
     /// -----
     await getSoHuuTheoThoiGianVinhVien?.getDieuKienSoHuuTheoThoiGianVinhVien?.getGoiTaiNguyenThanhToan?.getDonViSoLuong?.caiDatTongSoLuong(
-      value: 1000,
+      value: 250000,
     );
 
     ///

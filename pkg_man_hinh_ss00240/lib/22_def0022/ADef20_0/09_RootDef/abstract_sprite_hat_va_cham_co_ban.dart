@@ -1,3 +1,4 @@
+import 'dart:ui';
 import 'dart:async';
 import 'package:flame/components.dart';
 import 'package:pkg_dinh_nghia_ss022/pkg_dinh_nghia_ss022_exp.dart';
@@ -12,8 +13,9 @@ abstract class SpriteHatVaChamCoBan extends SpriteAnimationComponent with HasVis
   /// -----
   /// TODO:
   /// -----
-  SpriteHatVaChamCoBan({required QuanLyTrangThaiTongQuat? trangThaiTongQuat}) {
+  SpriteHatVaChamCoBan({required GlobalStateManagementSystem? trangThaiTongQuat, required Component? parentComponent}) {
     caiDatTrangThaiTongQuat(value: trangThaiTongQuat);
+    caiDatParentComponent(value: parentComponent);
   }
 
   /// -----
@@ -22,9 +24,9 @@ abstract class SpriteHatVaChamCoBan extends SpriteAnimationComponent with HasVis
   Future<void> onInitRoot() async {
     onVoidCaiDatKiemTraHienThi(value: false);
 
-    await caiDatDonViSprite(value: DonViSpriteCoBan(maDinhDanh: null, nguonHinhAnh: null,  spriteAnimation: null, sprite: null));
+    await caiDatDonViSprite(value: DonViSpriteCoBan(maDinhDanh: null, nguonHinhAnh: null, spriteAnimation: null, sprite: null));
 
-    await caiDatMoHinhChiTiet();
+    await onCaiDatMoHinhChiTiet();
 
     return;
   }
@@ -39,9 +41,9 @@ abstract class SpriteHatVaChamCoBan extends SpriteAnimationComponent with HasVis
   /// -----
   /// TODO: Quản Lý Trạng Thái Tổng Quát
   /// -----
-  QuanLyTrangThaiTongQuat? _trangThaiTongQuat;
-  QuanLyTrangThaiTongQuat? get getTrangThaiTongQuat => _trangThaiTongQuat;
-  Future<void> caiDatTrangThaiTongQuat({required QuanLyTrangThaiTongQuat? value}) async {
+  GlobalStateManagementSystem? _trangThaiTongQuat;
+  GlobalStateManagementSystem? get getTrangThaiTongQuat => _trangThaiTongQuat;
+  Future<void> caiDatTrangThaiTongQuat({required GlobalStateManagementSystem? value}) async {
     _trangThaiTongQuat ??= value;
     return;
   }
@@ -53,6 +55,70 @@ abstract class SpriteHatVaChamCoBan extends SpriteAnimationComponent with HasVis
   DonViSpriteCoBan? get getDonViSprite => _donViSprite;
   Future<void> caiDatDonViSprite({required DonViSpriteCoBan? value}) async {
     _donViSprite ??= value;
+    return;
+  }
+
+  /// -----
+  /// TODO:
+  /// -----
+  Component? _parentComponent;
+  Component? get getParentComponent => _parentComponent;
+  Future<void> caiDatParentComponent({required Component? value}) async {
+    _parentComponent ??= value;
+    return;
+  }
+
+  Future<void> onAddToParent() async {
+    if (getParentComponent != null && isMounted == false) {
+      dy = 0;
+      dx = 0;
+      chieuCaoThan = 0;
+      chieuRongThan = 0;
+
+      await getParentComponent?.add(this);
+
+      position.setValues(-1000.0, -1000.0);
+
+      animationTicker?.reset();
+    }
+
+    return;
+  }
+
+  void onRemoveFromParent() {
+    if (isMounted == true) {
+      getMoHinh?.getMoHinh?.getThuocTinhTichHop?.getTrangThaiTonTai?.onVoidCaiDatHuyHoanTat();
+      onVoidCaiDatKiemTraHienThi(value: false);
+
+      position.setValues(-1000.0, -1000.0);
+
+      removeFromParent();
+    }
+
+    return;
+  }
+
+  // @override
+  // void renderTree(Canvas canvas) {
+  //   // import 'dart:ui';
+  //   if (getKiemTraHienThi == true) {
+  //     super.renderTree(canvas);
+  //   }
+  //
+  //   return;
+  // }
+
+  @override
+  void renderTree(Canvas canvas) {
+    // import 'dart:ui';
+    try {
+      if (getKiemTraHienThi == true && animation != null) {
+        super.renderTree(canvas);
+      }
+    } catch (e) {
+      return;
+    }
+
     return;
   }
 
@@ -93,12 +159,14 @@ abstract class SpriteHatVaChamCoBan extends SpriteAnimationComponent with HasVis
   bool? _kiemTraHienThi;
   bool? get getKiemTraHienThi => _kiemTraHienThi;
   void onVoidCaiDatKiemTraHienThi({required bool? value}) {
-    _kiemTraHienThi = value;
+    if (_kiemTraHienThi != value) {
+      _kiemTraHienThi = value;
 
-    if (_kiemTraHienThi == false || _kiemTraHienThi == null) {
-      isVisible = false;
-    } else if (_kiemTraHienThi == true) {
-      isVisible = true;
+      if (_kiemTraHienThi == false || _kiemTraHienThi == null) {
+        isVisible = false;
+      } else if (_kiemTraHienThi == true) {
+        isVisible = true;
+      }
     }
 
     return;
@@ -108,7 +176,8 @@ abstract class SpriteHatVaChamCoBan extends SpriteAnimationComponent with HasVis
   /// TODO:
   /// -----
   void onVoidCapNhatKiemTraHienThi() {
-    if (getMoHinh?.getMoHinh?.getThuocTinhTichHop?.getTrangThaiTonTai?.isKhoiTaoHoanTat() == true) {
+    if (getMoHinh?.getMoHinh?.getThuocTinhTichHop?.getTrangThaiTonTai?.onCheckBoolDangKichHoat() == true) {
+
       /// -----
       /// TODO: Cài Đặt SpriteAnimation cho Hạt Va Chạm Mới
       /// -----
@@ -123,16 +192,16 @@ abstract class SpriteHatVaChamCoBan extends SpriteAnimationComponent with HasVis
             maDinhDanhPhuongTien: getMoHinh?.getMoHinh?.getMaDinhDanh,
           );
           animation = getDonViSprite?.getSpriteAnimation;
+          animation?.loop = false;
 
           onVoidCaiDatKiemTraHienThi(value: true);
         } else {
           if (animation == null) {
             animation = getDonViSprite?.getSpriteAnimation;
+            animation?.loop = false;
           }
         }
-      }
-
-      if (getMoHinh?.getMoHinh is HatVaChamPhaHuy) {
+      } else if (getMoHinh?.getMoHinh is HatVaChamPhaHuy) {
         if (getDonViSprite?.getSpriteAnimation == null) {
           //  getTrangThaiTongQuat?.getSuKienVaChamTrongChienDau?.onTruyXuatSpriteNgoaiHinhHatVaChamPhaHuy(
           //   donViSprite: getDonViSprite,
@@ -143,24 +212,30 @@ abstract class SpriteHatVaChamCoBan extends SpriteAnimationComponent with HasVis
             maDinhDanhPhuongTien: getMoHinh?.getMoHinh?.getMaDinhDanh,
           );
           animation = getDonViSprite?.getSpriteAnimation;
+          animation?.loop = false;
 
           onVoidCaiDatKiemTraHienThi(value: true);
         } else {
           if (animation == null) {
             animation = getDonViSprite?.getSpriteAnimation;
+            animation?.loop = false;
           }
         }
       }
+      if (getKiemTraHienThi == false) {
+        onVoidCaiDatKiemTraHienThi(value: true);
+      }
+
     } else {
       if (getDonViSprite?.getSpriteAnimation != null) {
         getDonViSprite?.onVoidCaiDatSpriteAnimation(value: null);
       }
-       if (getKiemTraHienThi == true) {
-         onVoidCaiDatKiemTraHienThi(value: false);
-       }
-       if (animation != null) {
-         animation = null;
-       }
+      if (getKiemTraHienThi == true) {
+        onVoidCaiDatKiemTraHienThi(value: false);
+      }
+      if (animation != null) {
+        // animation = null;
+      }
     }
   }
 
@@ -204,20 +279,27 @@ abstract class SpriteHatVaChamCoBan extends SpriteAnimationComponent with HasVis
   /// -----
   /// TODO: Cài Đặt Mô Hình Chi Tiết
   /// -----
-  Future<void> caiDatMoHinhChiTiet();
+  Future<void> onCaiDatMoHinhChiTiet();
 
   /// -----
   /// TODO: Cập Nhật Position Và Size
   /// -----
+  double dy = 0;
+  double dx = 0;
+  double chieuCaoThan = 0;
+  double chieuRongThan = 0;
+
   void onVoidCapNhatPositionSizeValues() {
     if (getKiemTraHienThi == true) {
       ///
       /// TODO:
       ///
-      double dy = getMoHinh?.getMoHinh?.getThuocTinhTichHop?.getDy ?? 1.0;
-      double dx = getMoHinh?.getMoHinh?.getThuocTinhTichHop?.getDx ?? 1.0;
-      double chieuCaoThan = getMoHinh?.getMoHinh?.getThuocTinhTichHop?.getChieuCaoThan ?? 1.0;
-      double chieuRongThan = getMoHinh?.getMoHinh?.getThuocTinhTichHop?.getChieuRongThan ?? 1.0;
+      if (dy == 0 || dx == 0 || chieuCaoThan == 0 || chieuRongThan == 0) {
+        dy = getMoHinh?.getMoHinh?.getThuocTinhTichHop?.getDyTrongTam ?? 1.0;
+        dx = getMoHinh?.getMoHinh?.getThuocTinhTichHop?.getDxTrongTam ?? 1.0;
+        chieuCaoThan = getMoHinh?.getMoHinh?.getThuocTinhTichHop?.getChieuCaoThan ?? 1.0;
+        chieuRongThan = getMoHinh?.getMoHinh?.getThuocTinhTichHop?.getChieuRongThan ?? 1.0;
+      }
 
       ///
       /// TODO:
@@ -227,6 +309,10 @@ abstract class SpriteHatVaChamCoBan extends SpriteAnimationComponent with HasVis
       }
       if (size.x != chieuRongThan || size.y != chieuCaoThan) {
         size.setValues(chieuRongThan, chieuCaoThan);
+      }
+
+      if (isVisible == false) {
+        isVisible = true;
       }
     }
   }
@@ -248,14 +334,49 @@ abstract class SpriteHatVaChamCoBan extends SpriteAnimationComponent with HasVis
     await onInitRoot();
   }
 
+  // @override
+  // void update(double dt) async {
+  //   super.update(dt);
+  //
+  //   if (animationTicker?.isLastFrame == true) {
+  //     await getMoHinh?.getSpriteHatVaCham?.onRemoveFromParent().then((_) async {
+  //       await getMoHinh?.getMoHinh?.getThuocTinhTichHop?.getTrangThaiTonTai?.caiDatHuyHoanTat();
+  //     });
+  //
+  //     // if (getMoHinh?.getMoHinh?.getThuocTinhTichHop?.getTrangThaiTonTai?.onCheckBoolDangKichHoat() == true) {
+  //     //   getMoHinh?.getMoHinh?.getThuocTinhTichHop?.getTrangThaiTonTai?.onVoidCaiDatHuyHoanTat();
+  //     // }
+  //
+  //     // await getMoHinh?.getSpriteHatVaCham?.onRemoveFromParent();
+  //   }
+  //
+  //   /// -----
+  //   /// TODO:
+  //   /// -----
+  //   onVoidCaiDatTuDongBienTangTienGiamTanXuatCapNhat();
+  //   if (onVoidKiemTraTanXuatCapNhat() == false) {
+  //     return;
+  //   }
+  //
+  //   onVoidCapNhatKiemTraHienThi();
+  //
+  //   onVoidCapNhatPositionSizeValues();
+  // }
+
   @override
   void update(double dt) {
     super.update(dt);
 
     if (animationTicker?.isLastFrame == true) {
-      if (getMoHinh?.getMoHinh?.getThuocTinhTichHop?.getTrangThaiTonTai?.isKhoiTaoHoanTat() == true) {
-        getMoHinh?.getMoHinh?.getThuocTinhTichHop?.getTrangThaiTonTai?.caiDatHuyHoanTat();
-      }
+      getMoHinh?.getSpriteHatVaCham?.onRemoveFromParent();
+
+      // if (getMoHinh?.getMoHinh?.getThuocTinhTichHop?.getTrangThaiTonTai?.onCheckBoolDangKichHoat() == true) {
+      //   getMoHinh?.getMoHinh?.getThuocTinhTichHop?.getTrangThaiTonTai?.onVoidCaiDatHuyHoanTat();
+      // }
+
+      // await getMoHinh?.getSpriteHatVaCham?.onRemoveFromParent();
+
+      return;
     }
 
     /// -----
@@ -266,9 +387,9 @@ abstract class SpriteHatVaChamCoBan extends SpriteAnimationComponent with HasVis
       return;
     }
 
-    onVoidCapNhatKiemTraHienThi();
-
     onVoidCapNhatPositionSizeValues();
+
+    onVoidCapNhatKiemTraHienThi();
   }
 }
 
