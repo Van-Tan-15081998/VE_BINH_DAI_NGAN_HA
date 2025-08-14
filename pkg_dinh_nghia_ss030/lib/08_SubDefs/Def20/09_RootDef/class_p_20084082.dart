@@ -525,7 +525,9 @@ class MoHinhPhuongTienTongQuat with CauTrucThucThiCoBan {
     // getPhuongThuc?.getPhuongThucBay?.getViTri?.onVoidCaiDatDxTrongTamCapNhatCacGiaTriBien(value: -10000);
     // getPhuongThuc?.getPhuongThucBay?.getViTri?.onVoidCaiDatDyTrongTamCapNhatCacGiaTriBien(value: -10000);
 
+    // C
     getDuLieuJsonLamPhang['[KICH_HOAT_HOAT_DONG]'] = false; // Kích Hoạt thuộc tính này 1 lần duy nhất trong vòng đời phương tiện
+
     // => Về sau dựa vào getDuLieuJsonLamPhang['[TRANG_THAI_TON_TAI]'] để cập nhật
     getDuLieuJsonLamPhang['[DI_CHUYEN_HIEN_THI]'] = false;
 
@@ -632,6 +634,8 @@ class MoHinhPhuongTienTongQuat with CauTrucThucThiCoBan {
 
     getTrangThaiTrongChienDau?.getTrangThaiTonTai?.onVoidCaiDatHuyHoanTat();
     getDuLieuJsonLamPhang['[TRANG_THAI_TON_TAI]'] = getTrangThaiTrongChienDau?.getTrangThaiTonTai?.onCheckBoolKhoiTaoHoanTat() ?? false;
+
+    // C
     getDuLieuJsonLamPhang['[KICH_HOAT_HOAT_DONG]'] = false;
 
     getTrangThaiTrongChienDau?.onVoidCaiDatMaDinhDanhVienDanVaCham(value: null, caiDatUuTien: true);
@@ -1605,6 +1609,9 @@ class MoHinhPhuongTienTongQuat with CauTrucThucThiCoBan {
   }
 
   Future<void> onPTTCThucThiTanCongLienKichHinhThucSS010({required MoHinhPhuongTienTongQuat? phuongTien}) async {
+
+    // getDuLieuJsonLamPhang['[KICH_HOAT_HOAT_DONG]'] = true;
+
     onCaiDatPhuongTienVuKhiTanCong(value: true, caiDatUuTien: true);
     onCaiDatPhuongTienVuKhiTanCongDinhHuongCDC(value: false, caiDatUuTien: true);
 
@@ -1666,6 +1673,9 @@ class MoHinhPhuongTienTongQuat with CauTrucThucThiCoBan {
   /// TODO:
   /// -----
   Future<void> onPTTCThucThiTanCongLienKichHinhThucSS020({required MoHinhPhuongTienTongQuat? phuongTien}) async {
+
+    // getDuLieuJsonLamPhang['[KICH_HOAT_HOAT_DONG]'] = true;
+
     onCaiDatPhuongTienVuKhiTanCong(value: true, caiDatUuTien: true);
     onCaiDatPhuongTienVuKhiTanCongDinhHuongCDC(value: false, caiDatUuTien: true);
 
@@ -1811,6 +1821,9 @@ class MoHinhPhuongTienTongQuat with CauTrucThucThiCoBan {
   }
 
   Future<void> onPTTCThucThiTanCongLienKichHinhThucSS050({required MoHinhPhuongTienTongQuat? phuongTien}) async {
+
+    // getDuLieuJsonLamPhang['[KICH_HOAT_HOAT_DONG]'] = true;
+
     onCaiDatPhuongTienVuKhiTanCong(value: true, caiDatUuTien: true);
     onCaiDatPhuongTienVuKhiTanCongDinhHuongCDC(value: true, caiDatUuTien: true);
     onCaiDatTuDongDiemCapNhatTheoDoiHanhTrinhBay(value: 40, caiDatUuTien: true);

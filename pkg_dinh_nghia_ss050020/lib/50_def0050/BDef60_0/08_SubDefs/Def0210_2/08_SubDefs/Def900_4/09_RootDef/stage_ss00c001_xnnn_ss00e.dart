@@ -86,7 +86,13 @@ class BANGDIEUKHIENGIAIDOANTHUOCKICHBANSTAGESS00E001XNNNSS00E extends BANGDIEUKH
     /// -----
     /// TODO: Đội Hình VKTD
     /// -----
-
+    await getBangDieuKhienGiaiDoanThuocDoiHinhVKTD?.getDonViGiaiDoanNhomSS00ATurnSS01HoatDongSS020?.caiDatTrangThaiDangKichHoat();
+    await getBangDieuKhienGiaiDoanThuocDoiHinhVKTD?.getDonViGiaiDoanNhomSS00ATurnSS02HoatDongSS020?.caiDatTrangThaiDangKichHoat();
+    await getBangDieuKhienGiaiDoanThuocDoiHinhVKTD?.getDonViGiaiDoanNhomSS00BTurnSS01HoatDongSS020?.caiDatTrangThaiDangKichHoat();
+    await getBangDieuKhienGiaiDoanThuocDoiHinhVKTD?.getDonViGiaiDoanNhomSS00BTurnSS02HoatDongSS020?.caiDatTrangThaiDangKichHoat();
+    await getBangDieuKhienGiaiDoanThuocDoiHinhVKTD?.getDonViGiaiDoanNhomSS00CTurnSS01HoatDongSS020?.caiDatTrangThaiDangKichHoat();
+    await getBangDieuKhienGiaiDoanThuocDoiHinhVKTD?.getDonViGiaiDoanNhomSS00CTurnSS02HoatDongSS020?.caiDatTrangThaiDangKichHoat();
+    
     /// -----
     /// TODO: Đội Hình VKDK
     /// -----

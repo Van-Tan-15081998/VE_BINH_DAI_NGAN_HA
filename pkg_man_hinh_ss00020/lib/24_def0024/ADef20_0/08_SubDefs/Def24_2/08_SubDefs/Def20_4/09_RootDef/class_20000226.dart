@@ -14,14 +14,14 @@ class _ManHinhVideoKhoiDongState extends State<ManHinhVideoKhoiDong> {
   @override
   void initState() {
     super.initState();
-    _controller =
-    VideoPlayerController.asset("packages/pkg_chua_cap_nhat/assets/images/01_Man_Hinh/Screen01/08_SubComs/Com01/08_SubComs/Com02/08_SubComs/Com03/Com01/video_800.mp4")
-      ..initialize().then((_) {
-        setState(() {}); // Cập nhật UI sau khi video được khởi tạo
-      })
-      ..setPlaybackSpeed(1.0)
-      ..setLooping(false)
-      ..play();
+    // _controller =
+    // VideoPlayerController.asset("packages/pkg_chua_cap_nhat/assets/images/01_Man_Hinh/Screen01/08_SubComs/Com01/08_SubComs/Com02/08_SubComs/Com03/Com01/video_800.mp4")
+    //   ..initialize().then((_) {
+    //     setState(() {}); // Cập nhật UI sau khi video được khởi tạo
+    //   })
+    //   ..setPlaybackSpeed(1.0)
+    //   ..setLooping(false)
+    //   ..play();
   }
 
   @override

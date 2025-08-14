@@ -33,14 +33,14 @@ flutter:
   # To add assets to your package, add an assets section, like this:
    assets:
      # _____[Hinh_The_Thanh_Tich_Chien_Dau_Theo_Hang_Ngay]_____
-     - lib/20_def0020/ADef20_0/08_SubDefs/Def20_2/hinh_the_thanh_tich_chien_dau_theo_hang_ngay_ss01.png
+#     - lib/20_def0020/ADef20_0/08_SubDefs/Def20_2/hinh_the_thanh_tich_chien_dau_theo_hang_ngay_ss01.png
      # _____[Hinh_The_Thanh_Tich_Chien_Dau_Theo_Lich_Su]_____
-     - lib/20_def0020/ADef22_0/08_SubDefs/Def20_2/hinh_the_thanh_tich_chien_dau_theo_lich_su_ss01.png
+#     - lib/20_def0020/ADef22_0/08_SubDefs/Def20_2/hinh_the_thanh_tich_chien_dau_theo_lich_su_ss01.png
 
      # _____[Hinh_Van_Ban_Thu_Nhap_So_Huu_Phan_Thuong_THN]_____
-     - lib/20_def0020/ADef24_0/09_RootDef/hinh_van_ban_thu_nhap_so_huu_phan_thuong_theo_hang_ngay.png
+#     - lib/20_def0020/ADef24_0/09_RootDef/hinh_van_ban_thu_nhap_so_huu_phan_thuong_theo_hang_ngay.png
      # _____[Hinh_Van_Ban_Thu_Nhap_So_Huu_Phan_Thuong_TLS]_____
-     - lib/20_def0020/ADef26_0/09_RootDef/hinh_van_ban_thu_nhap_so_huu_phan_thuong_theo_lich_su.png
+#     - lib/20_def0020/ADef26_0/09_RootDef/hinh_van_ban_thu_nhap_so_huu_phan_thuong_theo_lich_su.png
      #
      #
      #

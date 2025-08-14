@@ -56,15 +56,15 @@ flutter:
   # To add assets to your package, add an assets section, like this:
    assets:
      # _____[Nut_Bam_Chuyen_Man_Hinh_SS01]_____
-     - lib/24_def0024/ADef22_0/08_SubDefs/Def20_2/08_SubDefs/Def20_4/08_SubDefs/Def20_6/08_SubDefs/Def20_8/06_ImgSrcs/nut_bam_chuyen_man_hinh_ss01.png
+#     - lib/24_def0024/ADef22_0/08_SubDefs/Def20_2/08_SubDefs/Def20_4/08_SubDefs/Def20_6/08_SubDefs/Def20_8/06_ImgSrcs/nut_bam_chuyen_man_hinh_ss01.png
      # _____[Nut_Bam_Chuyen_Man_Hinh_SS02]_____
-     - lib/24_def0024/ADef22_0/08_SubDefs/Def20_2/08_SubDefs/Def20_4/08_SubDefs/Def20_6/08_SubDefs/Def22_8/06_ImgSrcs/nut_bam_chuyen_man_hinh_ss02.png
+#     - lib/24_def0024/ADef22_0/08_SubDefs/Def20_2/08_SubDefs/Def20_4/08_SubDefs/Def20_6/08_SubDefs/Def22_8/06_ImgSrcs/nut_bam_chuyen_man_hinh_ss02.png
      # _____[Nut_Bam_Chuyen_Man_Hinh_SS03]_____
-     - lib/24_def0024/ADef22_0/08_SubDefs/Def20_2/08_SubDefs/Def20_4/08_SubDefs/Def20_6/08_SubDefs/Def24_8/06_ImgSrcs/nut_bam_chuyen_man_hinh_ss03.png
+#     - lib/24_def0024/ADef22_0/08_SubDefs/Def20_2/08_SubDefs/Def20_4/08_SubDefs/Def20_6/08_SubDefs/Def24_8/06_ImgSrcs/nut_bam_chuyen_man_hinh_ss03.png
      # _____[Nut_Bam_Chuyen_Man_Hinh_SS04]_____
-     - lib/24_def0024/ADef22_0/08_SubDefs/Def20_2/08_SubDefs/Def20_4/08_SubDefs/Def20_6/08_SubDefs/Def26_8/06_ImgSrcs/nut_bam_chuyen_man_hinh_ss04.png
+#     - lib/24_def0024/ADef22_0/08_SubDefs/Def20_2/08_SubDefs/Def20_4/08_SubDefs/Def20_6/08_SubDefs/Def26_8/06_ImgSrcs/nut_bam_chuyen_man_hinh_ss04.png
      # _____[Nut_Bam_Chuyen_Man_Hinh_SS05]_____
-     - lib/24_def0024/ADef22_0/08_SubDefs/Def20_2/08_SubDefs/Def20_4/08_SubDefs/Def20_6/08_SubDefs/Def28_8/06_ImgSrcs/nut_bam_chuyen_man_hinh_ss05.png
+#     - lib/24_def0024/ADef22_0/08_SubDefs/Def20_2/08_SubDefs/Def20_4/08_SubDefs/Def20_6/08_SubDefs/Def28_8/06_ImgSrcs/nut_bam_chuyen_man_hinh_ss05.png
 
      # _____[Background video]_____
      - lib/24_def0024/ADef22_0/09_RootDef/

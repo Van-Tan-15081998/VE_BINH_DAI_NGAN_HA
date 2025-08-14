@@ -42,8 +42,8 @@ flutter:
   # To add assets to your package, add an assets section, like this:
    assets:
      #
-     - lib/24_def0024/ADef22_0/07_ImgSrcs/khung_tai_nguyen_ss01.png
-     - lib/24_def0024/ADef32_0/07_ImgSrcs/khung_tai_nguyen_ss02.png
+#     - lib/24_def0024/ADef22_0/07_ImgSrcs/khung_tai_nguyen_ss01.png
+#     - lib/24_def0024/ADef32_0/07_ImgSrcs/khung_tai_nguyen_ss02.png
 #     - images/a_dot_burr.jpeg
 #     - images/a_dot_ham.jpeg
   #

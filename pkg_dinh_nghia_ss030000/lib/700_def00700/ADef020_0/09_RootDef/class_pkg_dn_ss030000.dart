@@ -1740,6 +1740,7 @@ class QUANLYTRANGTHAIHANGARPHUONGTIEN with CAUTRUCTHUCTHICOBAN {
           );
         },
       );
+      // 123
       cauTrucThucThiTuanTu.onAddDonViThucThiTuanTu(
         onThucThiTuanTu: () async {
           await getThuocTinhTaiNguyenPhuongTien?.onTruyXuatTaiNguyenHinhAnhNgoaiHinh(
@@ -2092,6 +2093,15 @@ class QUANLYTRANGTHAIHANGARPHUONGTIEN with CAUTRUCTHUCTHICOBAN {
     getMONSTERTSTCCLASSSS00ASS130SS010?.getThuocTinhPhuongTien?.getThuocTinhHinhAnh?.onVoidCaiDatKichThuocRS100(value: true, caiDatUuTien: true, caiDatTuongQuan: true);
     getMONSTERTSTCCLASSSS00ASS140SS010?.getThuocTinhPhuongTien?.getThuocTinhHinhAnh?.onVoidCaiDatKichThuocRS100(value: true, caiDatUuTien: true, caiDatTuongQuan: true);
     getMONSTERTSTCCLASSSS00ASS150SS010?.getThuocTinhPhuongTien?.getThuocTinhHinhAnh?.onVoidCaiDatKichThuocRS100(value: true, caiDatUuTien: true, caiDatTuongQuan: true);
+
+    getHIEUUNGVACHAMPHAHUYCLASSSS00ASS010SS010?.getThuocTinhPhuongTien?.getThuocTinhHinhAnh?.onVoidCaiDatKichThuocRS025(value: true, caiDatUuTien: true, caiDatTuongQuan: true);
+    getHIEUUNGVACHAMPHAHUYCLASSSS00ASS010SS020?.getThuocTinhPhuongTien?.getThuocTinhHinhAnh?.onVoidCaiDatKichThuocRS025(value: true, caiDatUuTien: true, caiDatTuongQuan: true);
+    getHIEUUNGVACHAMPHAHUYCLASSSS00ASS010SS030?.getThuocTinhPhuongTien?.getThuocTinhHinhAnh?.onVoidCaiDatKichThuocRS025(value: true, caiDatUuTien: true, caiDatTuongQuan: true);
+    getHIEUUNGVACHAMPHAHUYCLASSSS00ASS010SS040?.getThuocTinhPhuongTien?.getThuocTinhHinhAnh?.onVoidCaiDatKichThuocRS025(value: true, caiDatUuTien: true, caiDatTuongQuan: true);
+    getHIEUUNGVACHAMPHAHUYCLASSSS00ASS010SS050?.getThuocTinhPhuongTien?.getThuocTinhHinhAnh?.onVoidCaiDatKichThuocRS025(value: true, caiDatUuTien: true, caiDatTuongQuan: true);
+    getHIEUUNGVACHAMPHAHUYCLASSSS00ASS010SS060?.getThuocTinhPhuongTien?.getThuocTinhHinhAnh?.onVoidCaiDatKichThuocRS025(value: true, caiDatUuTien: true, caiDatTuongQuan: true);
+    getHIEUUNGVACHAMPHAHUYCLASSSS00ASS010SS070?.getThuocTinhPhuongTien?.getThuocTinhHinhAnh?.onVoidCaiDatKichThuocRS025(value: true, caiDatUuTien: true, caiDatTuongQuan: true);
+    getHIEUUNGVACHAMPHAHUYCLASSSS00ASS010SS080?.getThuocTinhPhuongTien?.getThuocTinhHinhAnh?.onVoidCaiDatKichThuocRS025(value: true, caiDatUuTien: true, caiDatTuongQuan: true);
 
     ///
     return;

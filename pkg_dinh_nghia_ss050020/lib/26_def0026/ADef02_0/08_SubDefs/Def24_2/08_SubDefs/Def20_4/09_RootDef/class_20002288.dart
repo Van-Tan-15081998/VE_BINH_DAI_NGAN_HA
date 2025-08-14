@@ -64,7 +64,7 @@ class BANGDIEUKHIENGIAIDOANTHUOCKICHBANHINHTHUCSS010 extends BANGDIEUKHIENGIAIDO
     await getBangDieuKhienGiaiDoanThuocDoiHinhVKTD?.getDonViGiaiDoanNhomSS00BTurnSS02HoatDongSS020?.caiDatTrangThaiDangKichHoat();
     await getBangDieuKhienGiaiDoanThuocDoiHinhVKTD?.getDonViGiaiDoanNhomSS00CTurnSS01HoatDongSS020?.caiDatTrangThaiDangKichHoat();
     await getBangDieuKhienGiaiDoanThuocDoiHinhVKTD?.getDonViGiaiDoanNhomSS00CTurnSS02HoatDongSS020?.caiDatTrangThaiDangKichHoat();
-
+    
     /// -----
     /// TODO: Đội Hình VKDK
     /// -----
