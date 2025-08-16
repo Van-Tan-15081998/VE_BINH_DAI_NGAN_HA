@@ -914,10 +914,10 @@ abstract class VIENDANTANCONGCOBAN with CauTrucThucThiCoBan {
     /// -----
     /// TODO:
     /// -----
-    duLieuJsonBienPhai = (getDuLieuJsonLamPhang['[DX_TRONG_TAM]'] ?? 0) + (getDuLieuJsonLamPhang['[CHIEU_RONG_THAN]'] ?? 0);
-    duLieuJsonBienTrai = (getDuLieuJsonLamPhang['[DX_TRONG_TAM]'] ?? 0) - (getDuLieuJsonLamPhang['[CHIEU_RONG_THAN]'] ?? 0);
-    duLieuJsonBienTren = (getDuLieuJsonLamPhang['[DY_TRONG_TAM]'] ?? 0) - (getDuLieuJsonLamPhang['[CHIEU_CAO_THAN]'] ?? 0);
-    duLieuJsonBienDuoi = (getDuLieuJsonLamPhang['[DY_TRONG_TAM]'] ?? 0) + (getDuLieuJsonLamPhang['[CHIEU_CAO_THAN]'] ?? 0);
+    duLieuJsonBienPhai = (getDuLieuJsonLamPhang['[DX_TRONG_TAM]'] ?? 0) + ((getDuLieuJsonLamPhang['[CHIEU_RONG_THAN]'] ?? 0) / 2);
+    duLieuJsonBienTrai = (getDuLieuJsonLamPhang['[DX_TRONG_TAM]'] ?? 0) - ((getDuLieuJsonLamPhang['[CHIEU_RONG_THAN]'] ?? 0) / 2);
+    duLieuJsonBienTren = (getDuLieuJsonLamPhang['[DY_TRONG_TAM]'] ?? 0) - ((getDuLieuJsonLamPhang['[CHIEU_CAO_THAN]'] ?? 0) / 2);
+    duLieuJsonBienDuoi = (getDuLieuJsonLamPhang['[DY_TRONG_TAM]'] ?? 0) + ((getDuLieuJsonLamPhang['[CHIEU_CAO_THAN]'] ?? 0) / 2);
     duLieuJsonChieuRongManHinhPhiVatLy = getDuLieuJsonLamPhang['[CHIEU_RONG_MAN_HINH_PHI_VAT_LY]'] ?? 0;
     duLieuJsonChieuCaoManHinhPhiVatLy = getDuLieuJsonLamPhang['[CHIEU_CAO_MAN_HINH_PHI_VAT_LY]'] ?? 0;
 

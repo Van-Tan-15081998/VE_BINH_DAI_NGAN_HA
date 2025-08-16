@@ -86,7 +86,7 @@ class BienKhungHinhNenCoBan {
   /// TODO:
   /// -----
   Future<void> onInitRoot() async {
-     onVoidCaiDatBienTraiTangTien(value: -25.0);
+     onVoidCaiDatBienTraiTangTien(value: -35.00);
 
     return;
   }
@@ -95,7 +95,7 @@ class BienKhungHinhNenCoBan {
   /// TODO:
   /// -----
   Future<void> onResetRoot() async {
-     onVoidCaiDatBienTraiTangTien(value: -25.0);
+     onVoidCaiDatBienTraiTangTien(value: -35.00);
 
     return;
   }
@@ -104,6 +104,6 @@ class BienKhungHinhNenCoBan {
   /// TODO:
   /// -----
   BienKhungHinhNenCoBan.onMacDinh() {
-    onVoidCaiDatBienTraiTangTien(value: -25.0);
+    onVoidCaiDatBienTraiTangTien(value: -35.00);
   }
 }

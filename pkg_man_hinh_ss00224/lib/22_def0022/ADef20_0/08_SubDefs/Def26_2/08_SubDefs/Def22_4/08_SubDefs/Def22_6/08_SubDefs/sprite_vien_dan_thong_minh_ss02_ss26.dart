@@ -14,6 +14,8 @@ class SpriteVienDanThongMinhSS02SS26 extends SpriteVienDanThongMinh {
   Future<void> onInitRoot() async {
     await super.onInitRoot();
 
+    getSpriteMaDinhDanhVienDanThongMinh?.caiDatMaDinhDanh(value: 226);
+
     return;
   }
 

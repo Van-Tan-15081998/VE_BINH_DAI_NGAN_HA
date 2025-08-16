@@ -165,7 +165,8 @@ class QuanLyTrangThaiDieuKhienDiChuyenKhungHinhNenChienDau with KhungThucThiCoBa
       /// TODO: Độ lệch biên trái của 'layer điều khiển' không được vượt quá khoảng [ -50; 0]
       /// TODO: -100.0 là giá trị lệch biên trái ban đầu => lấy làm gốc cho sự lệch tâm lun
       if ((eccentricity * (-1) + (getTrangThai?.getMoHinh?.getBienTraiTangTien ?? 0) < 0) &&
-          (eccentricity * (-1) + (getTrangThai?.getMoHinh?.getBienTraiTangTien ?? 0) > (-50.0))) {
+          // (eccentricity * (-1) + (getTrangThai?.getMoHinh?.getBienTraiTangTien ?? 0) > (-50.0))) {
+          (eccentricity * (-1) + (getTrangThai?.getMoHinh?.getBienTraiTangTien ?? 0) > (-70.00))) {
         ///
         /// TODO: Không thực thi nếu không phải là giá trị mới
         ///
@@ -181,7 +182,8 @@ class QuanLyTrangThaiDieuKhienDiChuyenKhungHinhNenChienDau with KhungThucThiCoBa
       /// TODO: Độ lệch biên trái của 'layer điều khiển' không được vượt quá khoảng [ -50; 0]
       /// TODO: -100.0 là giá trị lệch biên trái ban đầu => lấy làm gốc cho sự lệch tâm lun
       if ((eccentricity * (-1) + (getTrangThai?.getMoHinh?.getBienTraiTangTien ?? 0) < 0) &&
-          (eccentricity * (-1) + (getTrangThai?.getMoHinh?.getBienTraiTangTien ?? 0) > (-50.0))) {
+          // (eccentricity * (-1) + (getTrangThai?.getMoHinh?.getBienTraiTangTien ?? 0) > (-50.0))) {
+          (eccentricity * (-1) + (getTrangThai?.getMoHinh?.getBienTraiTangTien ?? 0) > (-70.00))) {
         ///
         /// TODO: Không thực thi nếu không phải là giá trị mới
         ///

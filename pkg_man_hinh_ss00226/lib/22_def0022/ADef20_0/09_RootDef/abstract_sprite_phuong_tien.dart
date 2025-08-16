@@ -1,7 +1,8 @@
-import 'dart:ui';
+// import 'dart:ui';
 import 'dart:async';
 import 'package:flutter/foundation.dart';
 import 'package:flame/components.dart';
+import 'package:flutter/material.dart';
 import 'package:pkg_dinh_nghia_ss022/pkg_dinh_nghia_ss022_exp.dart';
 import 'package:pkg_dinh_nghia_ss030/pkg_dinh_nghia_ss030_exp.dart';
 import 'package:pkg_dinh_nghia_ss050/pkg_dinh_nghia_ss050_exp.dart';
@@ -27,6 +28,8 @@ abstract class SpritePhuongTienCoBan extends SpriteAnimationComponent with HasVi
     await caiDatDonViSprite(value: DonViSpriteCoBan(maDinhDanh: null, nguonHinhAnh: null, spriteAnimation: null, sprite: null));
 
     // await onCaiDatMoHinhChiTiet();
+
+    await caiDatSpriteMaDinhDanhPhuongTien(value: SpriteMaDinhDanhPhuongTien(maDinhDanh: 0));
 
     return;
   }
@@ -102,6 +105,18 @@ abstract class SpritePhuongTienCoBan extends SpriteAnimationComponent with HasVi
   String? get getMaDinhDanhMoHinhHienHanh => _maDinhDanhMoHinhHienHanh;
   Future<void> caiDatMaDinhDanhMoHinhHienHanh({required String? value}) async {
     _maDinhDanhMoHinhHienHanh = value;
+    return;
+  }
+
+  SpriteMaDinhDanhPhuongTien? _spriteMaDinhDanhPhuongTien;
+  SpriteMaDinhDanhPhuongTien? get getSpriteMaDinhDanhPhuongTien => _spriteMaDinhDanhPhuongTien;
+  Future<void> caiDatSpriteMaDinhDanhPhuongTien({required SpriteMaDinhDanhPhuongTien? value}) async {
+    _spriteMaDinhDanhPhuongTien = value;
+
+    if (getSpriteMaDinhDanhPhuongTien != null && kDebugMode == true) {
+      add(getSpriteMaDinhDanhPhuongTien!);
+    }
+
     return;
   }
 
@@ -360,4 +375,34 @@ abstract class SpritePhuongTienCoBan extends SpriteAnimationComponent with HasVi
       onRemoveFromParent();
     }
   }
+}
+
+
+class SpriteMaDinhDanhPhuongTien extends TextComponent with HasVisibility {
+
+  int maDinhDanh = 0;
+  void caiDatMaDinhDanh({required int value}) async {
+    maDinhDanh = value;
+    text = '$maDinhDanh';
+
+    return;
+  }
+
+  SpriteMaDinhDanhPhuongTien({required int? maDinhDanh}) {
+    maDinhDanh = maDinhDanh;
+  }
+
+  @override
+  Future<void> onLoad() async {
+    super.onLoad();
+
+    anchor = Anchor.center;
+
+    position.setValues(10.0, 10.0);
+
+    text = '$maDinhDanh';
+
+    textRenderer = TextPaint(style: TextStyle(fontSize: 12, fontWeight: FontWeight.bold, color: Color(0xEB8C00FF)));
+  }
+
 }

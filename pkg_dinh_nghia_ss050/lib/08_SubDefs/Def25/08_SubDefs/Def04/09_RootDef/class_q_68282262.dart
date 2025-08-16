@@ -396,24 +396,24 @@ class QuanLyTrangThaiDieuKhienDiChuyenChienDauCo with KhungThucThiCoBan, DanhSac
   void dieuKhienDiChuyenKhungHinhNenDiaHinhVeViTriXuatPhatNguyenBan() {
     if (getTienTrinhTongQuat?.getTienTrinhTrienKhaiChienDau?.getTrangThai?.getMoHinh?.onCheckBoolDangChuanBiThucThi() == true ||
         getTienTrinhTongQuat?.getTienTrinhTrienKhaiChienDau?.getTrangThai?.getMoHinh?.onCheckBoolHuyThucThi() == true) {
-      if ((getDieuKhienDiChuyenTongQuat?.getKhungHinhNenDiaHinh?.getTrangThai?.getMoHinh?.getBienTraiTangTien ?? 0) > -25.0) {
+      if ((getDieuKhienDiChuyenTongQuat?.getKhungHinhNenDiaHinh?.getTrangThai?.getMoHinh?.getBienTraiTangTien ?? 0) > -35.0) {
         double bienTraiTangTienCapNhat = getDieuKhienDiChuyenTongQuat?.getKhungHinhNenDiaHinh?.getTrangThai?.getMoHinh?.getBienTraiTangTien ?? 0;
 
-        if (bienTraiTangTienCapNhat - 0.5 > -25.0) {
+        if (bienTraiTangTienCapNhat - 0.5 > -35.0) {
           bienTraiTangTienCapNhat -= 0.5;
           getDieuKhienDiChuyenTongQuat?.getKhungHinhNenDiaHinh?.getTrangThai?.getMoHinh?.onVoidCaiDatBienTraiTangTien(value: bienTraiTangTienCapNhat);
         } else {
-          bienTraiTangTienCapNhat = -25.0;
+          bienTraiTangTienCapNhat = -35.0;
           getDieuKhienDiChuyenTongQuat?.getKhungHinhNenDiaHinh?.getTrangThai?.getMoHinh?.onVoidCaiDatBienTraiTangTien(value: bienTraiTangTienCapNhat);
         }
-      } else if ((getDieuKhienDiChuyenTongQuat?.getKhungHinhNenDiaHinh?.getTrangThai?.getMoHinh?.getBienTraiTangTien ?? 0) < -25.0) {
+      } else if ((getDieuKhienDiChuyenTongQuat?.getKhungHinhNenDiaHinh?.getTrangThai?.getMoHinh?.getBienTraiTangTien ?? 0) < -35.0) {
         double bienTraiTangTienCapNhat = getDieuKhienDiChuyenTongQuat?.getKhungHinhNenDiaHinh?.getTrangThai?.getMoHinh?.getBienTraiTangTien ?? 0;
 
-        if (bienTraiTangTienCapNhat + 0.5 < -25.0) {
+        if (bienTraiTangTienCapNhat + 0.5 < -35.0) {
           bienTraiTangTienCapNhat += 0.5;
           getDieuKhienDiChuyenTongQuat?.getKhungHinhNenDiaHinh?.getTrangThai?.getMoHinh?.onVoidCaiDatBienTraiTangTien(value: bienTraiTangTienCapNhat);
         } else {
-          bienTraiTangTienCapNhat = -25.0;
+          bienTraiTangTienCapNhat = -35.0;
           getDieuKhienDiChuyenTongQuat?.getKhungHinhNenDiaHinh?.getTrangThai?.getMoHinh?.onVoidCaiDatBienTraiTangTien(value: bienTraiTangTienCapNhat);
         }
       }
@@ -428,24 +428,24 @@ class QuanLyTrangThaiDieuKhienDiChuyenChienDauCo with KhungThucThiCoBan, DanhSac
   void dieuKhienDiChuyenKhungHinhNenChienDauVeViTriXuatPhatNguyenBan() {
     if (getTienTrinhTongQuat?.getTienTrinhTrienKhaiChienDau?.getTrangThai?.getMoHinh?.onCheckBoolDangChuanBiThucThi() == true ||
         getTienTrinhTongQuat?.getTienTrinhTrienKhaiChienDau?.getTrangThai?.getMoHinh?.onCheckBoolHuyThucThi() == true) {
-      if ((getDieuKhienDiChuyenTongQuat?.getKhungHinhNenChienDau?.getTrangThai?.getMoHinh?.getBienTraiTangTien ?? 0) > -25.0) {
+      if ((getDieuKhienDiChuyenTongQuat?.getKhungHinhNenChienDau?.getTrangThai?.getMoHinh?.getBienTraiTangTien ?? 0) > -35.0) {
         double bienTraiTangTienCapNhat = getDieuKhienDiChuyenTongQuat?.getKhungHinhNenChienDau?.getTrangThai?.getMoHinh?.getBienTraiTangTien ?? 0;
 
-        if (bienTraiTangTienCapNhat - 0.5 > -25.0) {
+        if (bienTraiTangTienCapNhat - 0.5 > -35.0) {
           bienTraiTangTienCapNhat -= 0.5;
           getDieuKhienDiChuyenTongQuat?.getKhungHinhNenChienDau?.getTrangThai?.getMoHinh?.onVoidCaiDatBienTraiTangTien(value: bienTraiTangTienCapNhat);
         } else {
-          bienTraiTangTienCapNhat = -25.0;
+          bienTraiTangTienCapNhat = -35.0;
           getDieuKhienDiChuyenTongQuat?.getKhungHinhNenChienDau?.getTrangThai?.getMoHinh?.onVoidCaiDatBienTraiTangTien(value: bienTraiTangTienCapNhat);
         }
-      } else if ((getDieuKhienDiChuyenTongQuat?.getKhungHinhNenChienDau?.getTrangThai?.getMoHinh?.getBienTraiTangTien ?? 0) < -25.0) {
+      } else if ((getDieuKhienDiChuyenTongQuat?.getKhungHinhNenChienDau?.getTrangThai?.getMoHinh?.getBienTraiTangTien ?? 0) < -35.0) {
         double bienTraiTangTienCapNhat = getDieuKhienDiChuyenTongQuat?.getKhungHinhNenChienDau?.getTrangThai?.getMoHinh?.getBienTraiTangTien ?? 0;
 
-        if (bienTraiTangTienCapNhat + 0.5 < -25.0) {
+        if (bienTraiTangTienCapNhat + 0.5 < -35.0) {
           bienTraiTangTienCapNhat += 0.5;
           getDieuKhienDiChuyenTongQuat?.getKhungHinhNenChienDau?.getTrangThai?.getMoHinh?.onVoidCaiDatBienTraiTangTien(value: bienTraiTangTienCapNhat);
         } else {
-          bienTraiTangTienCapNhat = -25.0;
+          bienTraiTangTienCapNhat = -35.0;
           getDieuKhienDiChuyenTongQuat?.getKhungHinhNenChienDau?.getTrangThai?.getMoHinh?.onVoidCaiDatBienTraiTangTien(value: bienTraiTangTienCapNhat);
         }
       }
@@ -469,7 +469,7 @@ class QuanLyTrangThaiDieuKhienDiChuyenChienDauCo with KhungThucThiCoBan, DanhSac
 
   double dyTrongTamCapNhat = 0;
 
-  void onVoidCapNhatViTri({required Offset newPosition}) {
+  void onVoidCapNhatViTriV1({required Offset newPosition}) {
     // double bienDaoDongKhungHinhNenSs1 = 0.10;
     // double bienDaoDongKhungHinhNenSs2 = 0.05;
 
@@ -816,6 +816,522 @@ class QuanLyTrangThaiDieuKhienDiChuyenChienDauCo with KhungThucThiCoBan, DanhSac
               _viTriChienDauCo?.onVoidCaiDatDxTrongTamCapNhatCacGiaTriBien(value: dxTrongTamCapNhat);
               _viTriChienDauCo?.onVoidCaiDatDyTrongTamCapNhatCacGiaTriBien(value: dyTrongTamCapNhat);
             }
+          }
+        }
+      }
+    }
+  }
+
+  void onVoidCapNhatViTri({required Offset newPosition}) {
+    // double bienDaoDongKhungHinhNenSs1 = 0.10;
+    // double bienDaoDongKhungHinhNenSs2 = 0.05;
+
+    if (_viTriChienDauCo?.isDieuKhienSanSang() == true) {
+      if (getTienTrinhTongQuat?.getTienTrinhThucThiChienDau?.getTrangThai?.getMoHinh?.onCheckBoolDangThucThi() == true) {
+        if (newPosition.dx != 0 || newPosition.dy != 0) {
+          dxTrongTamHienHanh = _viTriChienDauCo?.getDxTrongTamNotNull ?? 0;
+          dyTrongTamHienHanh = _viTriChienDauCo?.getDyTrongTamNotNull ?? 0;
+          chieuRongThan = _viTriChienDauCo?.getChieuRongThanNotNull ?? 0;
+          chieuCaoThan = _viTriChienDauCo?.getChieuCaoThanNotNull ?? 0;
+
+
+          if ((dxTrongTamHienHanh + newPosition.dx) >= 0 && (dxTrongTamHienHanh + newPosition.dx) <= getChieuRongManHinhPhiVatLy) {
+
+
+            if ((dyTrongTamHienHanh + newPosition.dy) >= 0 && (dyTrongTamHienHanh + newPosition.dy) <= getChieuCaoManHinhPhiVatLy) {
+              dxTrongTamCapNhat = dxTrongTamHienHanh;
+
+              if (newPosition.dx > 0) {
+
+                /// -----
+                /// TODO: Dịch Chuyển Chiến Đấu Cơ Sang Phải
+                /// -----
+
+                ///
+                /// TODO: Dịch chuyển chiến đấu cơ một cách nhanh chóng
+                ///
+                if (newPosition.dx > 30.0) {
+                  getDieuKhienDiChuyenTongQuat?.getKhungHinhNenDiaHinh?.onCalculate(1.00);
+                  // getDieuKhienDiChuyenTongQuat?.getKhungHinhNenChienDau?.onCalculate(1.00 + bienDaoDongKhungHinhNenSs1);
+                  getDieuKhienDiChuyenTongQuat?.getKhungHinhNenChienDau?.onCalculate(newPosition.dx * (0.15));
+                  getDieuKhienDiChuyenTongQuat?.getKhungHinhNenVatTheMoiTruong?.onCalculate(1.00 + bienDaoDongKhungHinhNenSs2);
+                  dxTrongTamCapNhat += newPosition.dx * (1.30);
+                } else if (newPosition.dx > 29.0) {
+                  getDieuKhienDiChuyenTongQuat?.getKhungHinhNenDiaHinh?.onCalculate(1.00);
+                  // getDieuKhienDiChuyenTongQuat?.getKhungHinhNenChienDau?.onCalculate(1.00 + bienDaoDongKhungHinhNenSs1);
+                  getDieuKhienDiChuyenTongQuat?.getKhungHinhNenChienDau?.onCalculate(newPosition.dx * (0.15));
+                  getDieuKhienDiChuyenTongQuat?.getKhungHinhNenVatTheMoiTruong?.onCalculate(1.00 + bienDaoDongKhungHinhNenSs2);
+                  dxTrongTamCapNhat += newPosition.dx * (1.30);
+                } else if (newPosition.dx > 28.0) {
+                  getDieuKhienDiChuyenTongQuat?.getKhungHinhNenDiaHinh?.onCalculate(1.00);
+                  // getDieuKhienDiChuyenTongQuat?.getKhungHinhNenChienDau?.onCalculate(1.00 + bienDaoDongKhungHinhNenSs1);
+                  getDieuKhienDiChuyenTongQuat?.getKhungHinhNenChienDau?.onCalculate(newPosition.dx * (0.15));
+                  getDieuKhienDiChuyenTongQuat?.getKhungHinhNenVatTheMoiTruong?.onCalculate(1.00 + bienDaoDongKhungHinhNenSs2);
+                  dxTrongTamCapNhat += newPosition.dx * (1.30);
+                } else if (newPosition.dx > 27.0) {
+                  getDieuKhienDiChuyenTongQuat?.getKhungHinhNenDiaHinh?.onCalculate(1.00);
+                  // getDieuKhienDiChuyenTongQuat?.getKhungHinhNenChienDau?.onCalculate(1.00 + bienDaoDongKhungHinhNenSs1);
+                  getDieuKhienDiChuyenTongQuat?.getKhungHinhNenChienDau?.onCalculate(newPosition.dx * (0.15));
+                  getDieuKhienDiChuyenTongQuat?.getKhungHinhNenVatTheMoiTruong?.onCalculate(1.00 + bienDaoDongKhungHinhNenSs2);
+                  dxTrongTamCapNhat += newPosition.dx * (1.30);
+                } else if (newPosition.dx > 26.0) {
+                  getDieuKhienDiChuyenTongQuat?.getKhungHinhNenDiaHinh?.onCalculate(1.00);
+                  // getDieuKhienDiChuyenTongQuat?.getKhungHinhNenChienDau?.onCalculate(1.00 + bienDaoDongKhungHinhNenSs1);
+                  getDieuKhienDiChuyenTongQuat?.getKhungHinhNenChienDau?.onCalculate(newPosition.dx * (0.15));
+                  getDieuKhienDiChuyenTongQuat?.getKhungHinhNenVatTheMoiTruong?.onCalculate(1.00 + bienDaoDongKhungHinhNenSs2);
+                  dxTrongTamCapNhat += newPosition.dx * (1.30);
+                } else if (newPosition.dx > 25.0) {
+                  getDieuKhienDiChuyenTongQuat?.getKhungHinhNenDiaHinh?.onCalculate(1.00);
+                  // getDieuKhienDiChuyenTongQuat?.getKhungHinhNenChienDau?.onCalculate(1.00 + bienDaoDongKhungHinhNenSs1);
+                  getDieuKhienDiChuyenTongQuat?.getKhungHinhNenChienDau?.onCalculate(newPosition.dx * (0.15));
+                  getDieuKhienDiChuyenTongQuat?.getKhungHinhNenVatTheMoiTruong?.onCalculate(1.00 + bienDaoDongKhungHinhNenSs2);
+                  dxTrongTamCapNhat += newPosition.dx * (1.30);
+                } else if (newPosition.dx > 24.0) {
+                  getDieuKhienDiChuyenTongQuat?.getKhungHinhNenDiaHinh?.onCalculate(1.00);
+                  // getDieuKhienDiChuyenTongQuat?.getKhungHinhNenChienDau?.onCalculate(1.00 + bienDaoDongKhungHinhNenSs1);
+                  getDieuKhienDiChuyenTongQuat?.getKhungHinhNenChienDau?.onCalculate(newPosition.dx * (0.15));
+                  getDieuKhienDiChuyenTongQuat?.getKhungHinhNenVatTheMoiTruong?.onCalculate(1.00 + bienDaoDongKhungHinhNenSs2);
+                  dxTrongTamCapNhat += newPosition.dx * (1.30);
+                } else if (newPosition.dx > 23.0) {
+                  getDieuKhienDiChuyenTongQuat?.getKhungHinhNenDiaHinh?.onCalculate(1.00);
+                  // getDieuKhienDiChuyenTongQuat?.getKhungHinhNenChienDau?.onCalculate(1.00 + bienDaoDongKhungHinhNenSs1);
+                  getDieuKhienDiChuyenTongQuat?.getKhungHinhNenChienDau?.onCalculate(newPosition.dx * (0.15));
+                  getDieuKhienDiChuyenTongQuat?.getKhungHinhNenVatTheMoiTruong?.onCalculate(1.00 + bienDaoDongKhungHinhNenSs2);
+                  dxTrongTamCapNhat += newPosition.dx * (1.30);
+                } else if (newPosition.dx > 22.0) {
+                  getDieuKhienDiChuyenTongQuat?.getKhungHinhNenDiaHinh?.onCalculate(1.00);
+                  // getDieuKhienDiChuyenTongQuat?.getKhungHinhNenChienDau?.onCalculate(1.00 + bienDaoDongKhungHinhNenSs1);
+                  getDieuKhienDiChuyenTongQuat?.getKhungHinhNenChienDau?.onCalculate(newPosition.dx * (0.15));
+                  getDieuKhienDiChuyenTongQuat?.getKhungHinhNenVatTheMoiTruong?.onCalculate(1.00 + bienDaoDongKhungHinhNenSs2);
+                  dxTrongTamCapNhat += newPosition.dx * (1.30);
+                } else if (newPosition.dx > 21.0) {
+                  getDieuKhienDiChuyenTongQuat?.getKhungHinhNenDiaHinh?.onCalculate(1.00);
+                  // getDieuKhienDiChuyenTongQuat?.getKhungHinhNenChienDau?.onCalculate(1.00 + bienDaoDongKhungHinhNenSs1);
+                  getDieuKhienDiChuyenTongQuat?.getKhungHinhNenChienDau?.onCalculate(newPosition.dx * (0.15));
+                  getDieuKhienDiChuyenTongQuat?.getKhungHinhNenVatTheMoiTruong?.onCalculate(1.00 + bienDaoDongKhungHinhNenSs2);
+                  dxTrongTamCapNhat += newPosition.dx * (1.30);
+                } else if (newPosition.dx > 20.0) {
+                  getDieuKhienDiChuyenTongQuat?.getKhungHinhNenDiaHinh?.onCalculate(1.00);
+                  // getDieuKhienDiChuyenTongQuat?.getKhungHinhNenChienDau?.onCalculate(1.00 + bienDaoDongKhungHinhNenSs1);
+                  getDieuKhienDiChuyenTongQuat?.getKhungHinhNenChienDau?.onCalculate(newPosition.dx * (0.20));
+                  getDieuKhienDiChuyenTongQuat?.getKhungHinhNenVatTheMoiTruong?.onCalculate(1.00 + bienDaoDongKhungHinhNenSs2);
+                  dxTrongTamCapNhat += newPosition.dx * (1.30);
+                } else if (newPosition.dx > 19.0) {
+                  getDieuKhienDiChuyenTongQuat?.getKhungHinhNenDiaHinh?.onCalculate(1.00);
+                  // getDieuKhienDiChuyenTongQuat?.getKhungHinhNenChienDau?.onCalculate(1.00 + bienDaoDongKhungHinhNenSs1);
+                  getDieuKhienDiChuyenTongQuat?.getKhungHinhNenChienDau?.onCalculate(newPosition.dx * (0.20));
+                  getDieuKhienDiChuyenTongQuat?.getKhungHinhNenVatTheMoiTruong?.onCalculate(1.00 + bienDaoDongKhungHinhNenSs2);
+                  dxTrongTamCapNhat += newPosition.dx * (1.30);
+                } else if (newPosition.dx > 18.0) {
+                  getDieuKhienDiChuyenTongQuat?.getKhungHinhNenDiaHinh?.onCalculate(1.00);
+                  // getDieuKhienDiChuyenTongQuat?.getKhungHinhNenChienDau?.onCalculate(1.00 + bienDaoDongKhungHinhNenSs1);
+                  getDieuKhienDiChuyenTongQuat?.getKhungHinhNenChienDau?.onCalculate(newPosition.dx * (0.20));
+                  getDieuKhienDiChuyenTongQuat?.getKhungHinhNenVatTheMoiTruong?.onCalculate(1.00 + bienDaoDongKhungHinhNenSs2);
+                  dxTrongTamCapNhat += newPosition.dx * (1.30);
+                } else if (newPosition.dx > 17.0) {
+                  getDieuKhienDiChuyenTongQuat?.getKhungHinhNenDiaHinh?.onCalculate(1.00);
+                  // getDieuKhienDiChuyenTongQuat?.getKhungHinhNenChienDau?.onCalculate(1.00 + bienDaoDongKhungHinhNenSs1);
+                  getDieuKhienDiChuyenTongQuat?.getKhungHinhNenChienDau?.onCalculate(newPosition.dx * (0.20));
+                  getDieuKhienDiChuyenTongQuat?.getKhungHinhNenVatTheMoiTruong?.onCalculate(1.00 + bienDaoDongKhungHinhNenSs2);
+                  dxTrongTamCapNhat += newPosition.dx * (1.30);
+                } else if (newPosition.dx > 16.0) {
+                  getDieuKhienDiChuyenTongQuat?.getKhungHinhNenDiaHinh?.onCalculate(1.00);
+                  // getDieuKhienDiChuyenTongQuat?.getKhungHinhNenChienDau?.onCalculate(1.00 + bienDaoDongKhungHinhNenSs1);
+                  getDieuKhienDiChuyenTongQuat?.getKhungHinhNenChienDau?.onCalculate(newPosition.dx * (0.20));
+                  getDieuKhienDiChuyenTongQuat?.getKhungHinhNenVatTheMoiTruong?.onCalculate(1.00 + bienDaoDongKhungHinhNenSs2);
+                  dxTrongTamCapNhat += newPosition.dx * (1.30);
+                } else if (newPosition.dx > 15.0) {
+                  getDieuKhienDiChuyenTongQuat?.getKhungHinhNenDiaHinh?.onCalculate(1.00);
+                  // getDieuKhienDiChuyenTongQuat?.getKhungHinhNenChienDau?.onCalculate(1.00 + bienDaoDongKhungHinhNenSs1);
+                  getDieuKhienDiChuyenTongQuat?.getKhungHinhNenChienDau?.onCalculate(newPosition.dx * (0.20));
+                  getDieuKhienDiChuyenTongQuat?.getKhungHinhNenVatTheMoiTruong?.onCalculate(1.00 + bienDaoDongKhungHinhNenSs2);
+                  dxTrongTamCapNhat += newPosition.dx * (1.30);
+                } else if (newPosition.dx > 14.0) {
+                  getDieuKhienDiChuyenTongQuat?.getKhungHinhNenDiaHinh?.onCalculate(1.00);
+                  // getDieuKhienDiChuyenTongQuat?.getKhungHinhNenChienDau?.onCalculate(1.00 + bienDaoDongKhungHinhNenSs1);
+                  getDieuKhienDiChuyenTongQuat?.getKhungHinhNenChienDau?.onCalculate(newPosition.dx * (0.20));
+                  getDieuKhienDiChuyenTongQuat?.getKhungHinhNenVatTheMoiTruong?.onCalculate(1.00 + bienDaoDongKhungHinhNenSs2);
+                  dxTrongTamCapNhat += newPosition.dx * (1.30);
+                } else if (newPosition.dx > 13.0) {
+                  getDieuKhienDiChuyenTongQuat?.getKhungHinhNenDiaHinh?.onCalculate(1.00);
+                  // getDieuKhienDiChuyenTongQuat?.getKhungHinhNenChienDau?.onCalculate(1.00 + bienDaoDongKhungHinhNenSs1);
+                  getDieuKhienDiChuyenTongQuat?.getKhungHinhNenChienDau?.onCalculate(newPosition.dx * (0.20));
+                  getDieuKhienDiChuyenTongQuat?.getKhungHinhNenVatTheMoiTruong?.onCalculate(1.00 + bienDaoDongKhungHinhNenSs2);
+                  dxTrongTamCapNhat += newPosition.dx * (1.30);
+                } else if (newPosition.dx > 12.0) {
+                  getDieuKhienDiChuyenTongQuat?.getKhungHinhNenDiaHinh?.onCalculate(1.00);
+                  // getDieuKhienDiChuyenTongQuat?.getKhungHinhNenChienDau?.onCalculate(1.00 + bienDaoDongKhungHinhNenSs1);
+                  getDieuKhienDiChuyenTongQuat?.getKhungHinhNenChienDau?.onCalculate(newPosition.dx * (0.20));
+                  getDieuKhienDiChuyenTongQuat?.getKhungHinhNenVatTheMoiTruong?.onCalculate(1.00 + bienDaoDongKhungHinhNenSs2);
+                  dxTrongTamCapNhat += newPosition.dx * (1.30);
+                } else if (newPosition.dx > 11.0) {
+                  getDieuKhienDiChuyenTongQuat?.getKhungHinhNenDiaHinh?.onCalculate(1.00);
+                  // getDieuKhienDiChuyenTongQuat?.getKhungHinhNenChienDau?.onCalculate(1.00 + bienDaoDongKhungHinhNenSs1);
+                  getDieuKhienDiChuyenTongQuat?.getKhungHinhNenChienDau?.onCalculate(newPosition.dx * (0.20));
+                  getDieuKhienDiChuyenTongQuat?.getKhungHinhNenVatTheMoiTruong?.onCalculate(1.00 + bienDaoDongKhungHinhNenSs2);
+                  dxTrongTamCapNhat += newPosition.dx * (1.30);
+                } else if (newPosition.dx > 10.0) {
+                  getDieuKhienDiChuyenTongQuat?.getKhungHinhNenDiaHinh?.onCalculate(1.00);
+                  // getDieuKhienDiChuyenTongQuat?.getKhungHinhNenChienDau?.onCalculate(1.00 + bienDaoDongKhungHinhNenSs1);
+                  getDieuKhienDiChuyenTongQuat?.getKhungHinhNenChienDau?.onCalculate(newPosition.dx * (0.25));
+                  getDieuKhienDiChuyenTongQuat?.getKhungHinhNenVatTheMoiTruong?.onCalculate(1.00 + bienDaoDongKhungHinhNenSs2);
+                  dxTrongTamCapNhat += newPosition.dx * (1.30);
+                } else if (newPosition.dx > 9.0) {
+                  getDieuKhienDiChuyenTongQuat?.getKhungHinhNenDiaHinh?.onCalculate(1.00);
+                  // getDieuKhienDiChuyenTongQuat?.getKhungHinhNenChienDau?.onCalculate(1.00 + bienDaoDongKhungHinhNenSs1);
+                  getDieuKhienDiChuyenTongQuat?.getKhungHinhNenChienDau?.onCalculate(newPosition.dx * (0.25));
+                  getDieuKhienDiChuyenTongQuat?.getKhungHinhNenVatTheMoiTruong?.onCalculate(1.00 + bienDaoDongKhungHinhNenSs2);
+                  // dxTrongTamCapNhat += newPosition.dx * (1.00) + 1.00;
+                  dxTrongTamCapNhat += newPosition.dx * (1.25);
+                } else if (newPosition.dx > 8.0) {
+                  getDieuKhienDiChuyenTongQuat?.getKhungHinhNenDiaHinh?.onCalculate(0.90);
+                  // getDieuKhienDiChuyenTongQuat?.getKhungHinhNenChienDau?.onCalculate(0.90 + bienDaoDongKhungHinhNenSs1);
+                  getDieuKhienDiChuyenTongQuat?.getKhungHinhNenChienDau?.onCalculate(newPosition.dx * (0.25));
+                  getDieuKhienDiChuyenTongQuat?.getKhungHinhNenVatTheMoiTruong?.onCalculate(0.90 + bienDaoDongKhungHinhNenSs2);
+                  // dxTrongTamCapNhat += newPosition.dx * (1.00) + 0.90;
+                  dxTrongTamCapNhat += newPosition.dx * (1.25);
+                } else if (newPosition.dx > 7.0) {
+                  getDieuKhienDiChuyenTongQuat?.getKhungHinhNenDiaHinh?.onCalculate(0.80);
+                  // getDieuKhienDiChuyenTongQuat?.getKhungHinhNenChienDau?.onCalculate(0.80 + bienDaoDongKhungHinhNenSs1);
+                  getDieuKhienDiChuyenTongQuat?.getKhungHinhNenChienDau?.onCalculate(newPosition.dx * (0.25));
+                  getDieuKhienDiChuyenTongQuat?.getKhungHinhNenVatTheMoiTruong?.onCalculate(0.80 + bienDaoDongKhungHinhNenSs2);
+                  // dxTrongTamCapNhat += newPosition.dx * (1.00) + 0.80;
+                  dxTrongTamCapNhat += newPosition.dx * (1.25);
+                } else if (newPosition.dx > 6.0) {
+                  getDieuKhienDiChuyenTongQuat?.getKhungHinhNenDiaHinh?.onCalculate(0.70);
+                  // getDieuKhienDiChuyenTongQuat?.getKhungHinhNenChienDau?.onCalculate(0.70 + bienDaoDongKhungHinhNenSs1);
+                  getDieuKhienDiChuyenTongQuat?.getKhungHinhNenChienDau?.onCalculate(newPosition.dx * (0.25));
+                  getDieuKhienDiChuyenTongQuat?.getKhungHinhNenVatTheMoiTruong?.onCalculate(0.70 + bienDaoDongKhungHinhNenSs2);
+                  // dxTrongTamCapNhat += newPosition.dx * (1.00) + 0.70;
+                  dxTrongTamCapNhat += newPosition.dx * (1.25);
+                } else if (newPosition.dx > 5.0) {
+                  getDieuKhienDiChuyenTongQuat?.getKhungHinhNenDiaHinh?.onCalculate(0.60);
+                  // getDieuKhienDiChuyenTongQuat?.getKhungHinhNenChienDau?.onCalculate(0.60 + bienDaoDongKhungHinhNenSs1);
+                  getDieuKhienDiChuyenTongQuat?.getKhungHinhNenChienDau?.onCalculate(newPosition.dx * (0.25));
+                  getDieuKhienDiChuyenTongQuat?.getKhungHinhNenVatTheMoiTruong?.onCalculate(0.60 + bienDaoDongKhungHinhNenSs2);
+                  // dxTrongTamCapNhat += newPosition.dx * (1.00) + 0.60;
+                  dxTrongTamCapNhat += newPosition.dx * (1.25);
+                } else if (newPosition.dx > 4.0) {
+                  getDieuKhienDiChuyenTongQuat?.getKhungHinhNenDiaHinh?.onCalculate(0.50);
+                  // getDieuKhienDiChuyenTongQuat?.getKhungHinhNenChienDau?.onCalculate(0.50 + bienDaoDongKhungHinhNenSs1);
+                  getDieuKhienDiChuyenTongQuat?.getKhungHinhNenChienDau?.onCalculate(newPosition.dx * (0.25));
+                  getDieuKhienDiChuyenTongQuat?.getKhungHinhNenVatTheMoiTruong?.onCalculate(0.50 + bienDaoDongKhungHinhNenSs2);
+                  // dxTrongTamCapNhat += newPosition.dx * (1.00) + 0.50;
+                  dxTrongTamCapNhat += newPosition.dx * (1.25);
+                } else if (newPosition.dx > 3.0) {
+                  getDieuKhienDiChuyenTongQuat?.getKhungHinhNenDiaHinh?.onCalculate(0.40);
+                  // getDieuKhienDiChuyenTongQuat?.getKhungHinhNenChienDau?.onCalculate(0.40 + bienDaoDongKhungHinhNenSs1);
+                  getDieuKhienDiChuyenTongQuat?.getKhungHinhNenChienDau?.onCalculate(newPosition.dx * (0.25));
+                  getDieuKhienDiChuyenTongQuat?.getKhungHinhNenVatTheMoiTruong?.onCalculate(0.40 + bienDaoDongKhungHinhNenSs2);
+                  // dxTrongTamCapNhat += newPosition.dx * (1.00) + 0.40;
+                  dxTrongTamCapNhat += newPosition.dx * (1.25);
+                } else if (newPosition.dx > 2.0) {
+                  getDieuKhienDiChuyenTongQuat?.getKhungHinhNenDiaHinh?.onCalculate(0.30);
+                  // getDieuKhienDiChuyenTongQuat?.getKhungHinhNenChienDau?.onCalculate(0.30 + bienDaoDongKhungHinhNenSs1);
+                  getDieuKhienDiChuyenTongQuat?.getKhungHinhNenChienDau?.onCalculate(newPosition.dx * (0.25));
+                  getDieuKhienDiChuyenTongQuat?.getKhungHinhNenVatTheMoiTruong?.onCalculate(0.30 + bienDaoDongKhungHinhNenSs2);
+                  // dxTrongTamCapNhat += newPosition.dx * (1.00) + 0.30;
+                  dxTrongTamCapNhat += newPosition.dx * (1.25);
+                } else if (newPosition.dx > 1.0) {
+                  getDieuKhienDiChuyenTongQuat?.getKhungHinhNenDiaHinh?.onCalculate(0.20);
+                  // getDieuKhienDiChuyenTongQuat?.getKhungHinhNenChienDau?.onCalculate(0.20 + bienDaoDongKhungHinhNenSs1);
+                  getDieuKhienDiChuyenTongQuat?.getKhungHinhNenChienDau?.onCalculate(newPosition.dx * (0.25));
+                  getDieuKhienDiChuyenTongQuat?.getKhungHinhNenVatTheMoiTruong?.onCalculate(0.20 + bienDaoDongKhungHinhNenSs2);
+                  // dxTrongTamCapNhat += newPosition.dx * (1.00) + 0.20;
+                  dxTrongTamCapNhat += newPosition.dx * (1.25);
+                } else {
+                  getDieuKhienDiChuyenTongQuat?.getKhungHinhNenDiaHinh?.onCalculate(0.10);
+                  // getDieuKhienDiChuyenTongQuat?.getKhungHinhNenChienDau?.onCalculate(0.10 + bienDaoDongKhungHinhNenSs1);
+                  getDieuKhienDiChuyenTongQuat?.getKhungHinhNenChienDau?.onCalculate(newPosition.dx * (0.25));
+                  getDieuKhienDiChuyenTongQuat?.getKhungHinhNenVatTheMoiTruong?.onCalculate(0.10 + bienDaoDongKhungHinhNenSs2);
+                  // dxTrongTamCapNhat += newPosition.dx * (1.00) + 0.10;
+                  dxTrongTamCapNhat += newPosition.dx * (1.25);
+                }
+              } else if (newPosition.dx < 0) {
+
+                /// -----
+                /// TODO: Dịch Chuyển Chiến Đấu Cơ Sang Phải
+                /// -----
+
+                ///
+                /// TODO: Dịch chuyển chiến đấu cơ một cách nhanh chóng
+                ///
+                if (newPosition.dx < -30.0) {
+                  getDieuKhienDiChuyenTongQuat?.getKhungHinhNenDiaHinh?.onCalculate(-1.00);
+                  // getDieuKhienDiChuyenTongQuat?.getKhungHinhNenChienDau?.onCalculate(-1.00 - bienDaoDongKhungHinhNenSs1);
+                  getDieuKhienDiChuyenTongQuat?.getKhungHinhNenChienDau?.onCalculate(newPosition.dx * (0.15));
+                  getDieuKhienDiChuyenTongQuat?.getKhungHinhNenVatTheMoiTruong?.onCalculate(-1.00 - bienDaoDongKhungHinhNenSs2);
+                  dxTrongTamCapNhat += newPosition.dx * (1.30);
+                } else if (newPosition.dx < -29.0) {
+                  getDieuKhienDiChuyenTongQuat?.getKhungHinhNenDiaHinh?.onCalculate(-1.00);
+                  // getDieuKhienDiChuyenTongQuat?.getKhungHinhNenChienDau?.onCalculate(-1.00 - bienDaoDongKhungHinhNenSs1);
+                  getDieuKhienDiChuyenTongQuat?.getKhungHinhNenChienDau?.onCalculate(newPosition.dx * (0.15));
+                  getDieuKhienDiChuyenTongQuat?.getKhungHinhNenVatTheMoiTruong?.onCalculate(-1.00 - bienDaoDongKhungHinhNenSs2);
+                  dxTrongTamCapNhat += newPosition.dx * (1.30);
+                } else if (newPosition.dx < -28.0) {
+                  getDieuKhienDiChuyenTongQuat?.getKhungHinhNenDiaHinh?.onCalculate(-1.00);
+                  // getDieuKhienDiChuyenTongQuat?.getKhungHinhNenChienDau?.onCalculate(-1.00 - bienDaoDongKhungHinhNenSs1);
+                  getDieuKhienDiChuyenTongQuat?.getKhungHinhNenChienDau?.onCalculate(newPosition.dx * (0.15));
+                  getDieuKhienDiChuyenTongQuat?.getKhungHinhNenVatTheMoiTruong?.onCalculate(-1.00 - bienDaoDongKhungHinhNenSs2);
+                  dxTrongTamCapNhat += newPosition.dx * (1.30);
+                } else if (newPosition.dx < -27.0) {
+                  getDieuKhienDiChuyenTongQuat?.getKhungHinhNenDiaHinh?.onCalculate(-1.00);
+                  // getDieuKhienDiChuyenTongQuat?.getKhungHinhNenChienDau?.onCalculate(-1.00 - bienDaoDongKhungHinhNenSs1);
+                  getDieuKhienDiChuyenTongQuat?.getKhungHinhNenChienDau?.onCalculate(newPosition.dx * (0.15));
+                  getDieuKhienDiChuyenTongQuat?.getKhungHinhNenVatTheMoiTruong?.onCalculate(-1.00 - bienDaoDongKhungHinhNenSs2);
+                  dxTrongTamCapNhat += newPosition.dx * (1.30);
+                } else if (newPosition.dx < -26.0) {
+                  getDieuKhienDiChuyenTongQuat?.getKhungHinhNenDiaHinh?.onCalculate(-1.00);
+                  // getDieuKhienDiChuyenTongQuat?.getKhungHinhNenChienDau?.onCalculate(-1.00 - bienDaoDongKhungHinhNenSs1);
+                  getDieuKhienDiChuyenTongQuat?.getKhungHinhNenChienDau?.onCalculate(newPosition.dx * (0.15));
+                  getDieuKhienDiChuyenTongQuat?.getKhungHinhNenVatTheMoiTruong?.onCalculate(-1.00 - bienDaoDongKhungHinhNenSs2);
+                  dxTrongTamCapNhat += newPosition.dx * (1.30);
+                } else if (newPosition.dx < -25.0) {
+                  getDieuKhienDiChuyenTongQuat?.getKhungHinhNenDiaHinh?.onCalculate(-1.00);
+                  // getDieuKhienDiChuyenTongQuat?.getKhungHinhNenChienDau?.onCalculate(-1.00 - bienDaoDongKhungHinhNenSs1);
+                  getDieuKhienDiChuyenTongQuat?.getKhungHinhNenChienDau?.onCalculate(newPosition.dx * (0.15));
+                  getDieuKhienDiChuyenTongQuat?.getKhungHinhNenVatTheMoiTruong?.onCalculate(-1.00 - bienDaoDongKhungHinhNenSs2);
+                  dxTrongTamCapNhat += newPosition.dx * (1.30);
+                } else if (newPosition.dx < -24.0) {
+                  getDieuKhienDiChuyenTongQuat?.getKhungHinhNenDiaHinh?.onCalculate(-1.00);
+                  // getDieuKhienDiChuyenTongQuat?.getKhungHinhNenChienDau?.onCalculate(-1.00 - bienDaoDongKhungHinhNenSs1);
+                  getDieuKhienDiChuyenTongQuat?.getKhungHinhNenChienDau?.onCalculate(newPosition.dx * (0.15));
+                  getDieuKhienDiChuyenTongQuat?.getKhungHinhNenVatTheMoiTruong?.onCalculate(-1.00 - bienDaoDongKhungHinhNenSs2);
+                  dxTrongTamCapNhat += newPosition.dx * (1.30);
+                } else if (newPosition.dx < -23.0) {
+                  getDieuKhienDiChuyenTongQuat?.getKhungHinhNenDiaHinh?.onCalculate(-1.00);
+                  // getDieuKhienDiChuyenTongQuat?.getKhungHinhNenChienDau?.onCalculate(-1.00 - bienDaoDongKhungHinhNenSs1);
+                  getDieuKhienDiChuyenTongQuat?.getKhungHinhNenChienDau?.onCalculate(newPosition.dx * (0.15));
+                  getDieuKhienDiChuyenTongQuat?.getKhungHinhNenVatTheMoiTruong?.onCalculate(-1.00 - bienDaoDongKhungHinhNenSs2);
+                  dxTrongTamCapNhat += newPosition.dx * (1.30);
+                } else if (newPosition.dx < -22.0) {
+                  getDieuKhienDiChuyenTongQuat?.getKhungHinhNenDiaHinh?.onCalculate(-1.00);
+                  // getDieuKhienDiChuyenTongQuat?.getKhungHinhNenChienDau?.onCalculate(-1.00 - bienDaoDongKhungHinhNenSs1);
+                  getDieuKhienDiChuyenTongQuat?.getKhungHinhNenChienDau?.onCalculate(newPosition.dx * (0.15));
+                  getDieuKhienDiChuyenTongQuat?.getKhungHinhNenVatTheMoiTruong?.onCalculate(-1.00 - bienDaoDongKhungHinhNenSs2);
+                  dxTrongTamCapNhat += newPosition.dx * (1.30);
+                } else if (newPosition.dx < -21.0) {
+                  getDieuKhienDiChuyenTongQuat?.getKhungHinhNenDiaHinh?.onCalculate(-1.00);
+                  // getDieuKhienDiChuyenTongQuat?.getKhungHinhNenChienDau?.onCalculate(-1.00 - bienDaoDongKhungHinhNenSs1);
+                  getDieuKhienDiChuyenTongQuat?.getKhungHinhNenChienDau?.onCalculate(newPosition.dx * (0.15));
+                  getDieuKhienDiChuyenTongQuat?.getKhungHinhNenVatTheMoiTruong?.onCalculate(-1.00 - bienDaoDongKhungHinhNenSs2);
+                  dxTrongTamCapNhat += newPosition.dx * (1.30);
+                } else if (newPosition.dx < -20.0) {
+                  getDieuKhienDiChuyenTongQuat?.getKhungHinhNenDiaHinh?.onCalculate(-1.00);
+                  // getDieuKhienDiChuyenTongQuat?.getKhungHinhNenChienDau?.onCalculate(-1.00 - bienDaoDongKhungHinhNenSs1);
+                  getDieuKhienDiChuyenTongQuat?.getKhungHinhNenChienDau?.onCalculate(newPosition.dx * (0.20));
+                  getDieuKhienDiChuyenTongQuat?.getKhungHinhNenVatTheMoiTruong?.onCalculate(-1.00 - bienDaoDongKhungHinhNenSs2);
+                  dxTrongTamCapNhat += newPosition.dx * (1.30);
+                } else if (newPosition.dx < -19.0) {
+                  getDieuKhienDiChuyenTongQuat?.getKhungHinhNenDiaHinh?.onCalculate(-1.00);
+                  // getDieuKhienDiChuyenTongQuat?.getKhungHinhNenChienDau?.onCalculate(-1.00 - bienDaoDongKhungHinhNenSs1);
+                  getDieuKhienDiChuyenTongQuat?.getKhungHinhNenChienDau?.onCalculate(newPosition.dx * (0.20));
+                  getDieuKhienDiChuyenTongQuat?.getKhungHinhNenVatTheMoiTruong?.onCalculate(-1.00 - bienDaoDongKhungHinhNenSs2);
+                  dxTrongTamCapNhat += newPosition.dx * (1.30);
+                } else if (newPosition.dx < -18.0) {
+                  getDieuKhienDiChuyenTongQuat?.getKhungHinhNenDiaHinh?.onCalculate(-1.00);
+                  // getDieuKhienDiChuyenTongQuat?.getKhungHinhNenChienDau?.onCalculate(-1.00 - bienDaoDongKhungHinhNenSs1);
+                  getDieuKhienDiChuyenTongQuat?.getKhungHinhNenChienDau?.onCalculate(newPosition.dx * (0.20));
+                  getDieuKhienDiChuyenTongQuat?.getKhungHinhNenVatTheMoiTruong?.onCalculate(-1.00 - bienDaoDongKhungHinhNenSs2);
+                  dxTrongTamCapNhat += newPosition.dx * (1.30);
+                } else if (newPosition.dx < -17.0) {
+                  getDieuKhienDiChuyenTongQuat?.getKhungHinhNenDiaHinh?.onCalculate(-1.00);
+                  // getDieuKhienDiChuyenTongQuat?.getKhungHinhNenChienDau?.onCalculate(-1.00 - bienDaoDongKhungHinhNenSs1);
+                  getDieuKhienDiChuyenTongQuat?.getKhungHinhNenChienDau?.onCalculate(newPosition.dx * (0.20));
+                  getDieuKhienDiChuyenTongQuat?.getKhungHinhNenVatTheMoiTruong?.onCalculate(-1.00 - bienDaoDongKhungHinhNenSs2);
+                  dxTrongTamCapNhat += newPosition.dx * (1.30);
+                } else if (newPosition.dx < -16.0) {
+                  getDieuKhienDiChuyenTongQuat?.getKhungHinhNenDiaHinh?.onCalculate(-1.00);
+                  // getDieuKhienDiChuyenTongQuat?.getKhungHinhNenChienDau?.onCalculate(-1.00 - bienDaoDongKhungHinhNenSs1);
+                  getDieuKhienDiChuyenTongQuat?.getKhungHinhNenChienDau?.onCalculate(newPosition.dx * (0.20));
+                  getDieuKhienDiChuyenTongQuat?.getKhungHinhNenVatTheMoiTruong?.onCalculate(-1.00 - bienDaoDongKhungHinhNenSs2);
+                  dxTrongTamCapNhat += newPosition.dx * (1.30);
+                } else if (newPosition.dx < -15.0) {
+                  getDieuKhienDiChuyenTongQuat?.getKhungHinhNenDiaHinh?.onCalculate(-1.00);
+                  // getDieuKhienDiChuyenTongQuat?.getKhungHinhNenChienDau?.onCalculate(-1.00 - bienDaoDongKhungHinhNenSs1);
+                  getDieuKhienDiChuyenTongQuat?.getKhungHinhNenChienDau?.onCalculate(newPosition.dx * (0.20));
+                  getDieuKhienDiChuyenTongQuat?.getKhungHinhNenVatTheMoiTruong?.onCalculate(-1.00 - bienDaoDongKhungHinhNenSs2);
+                  dxTrongTamCapNhat += newPosition.dx * (1.30);
+                } else if (newPosition.dx < -14.0) {
+                  getDieuKhienDiChuyenTongQuat?.getKhungHinhNenDiaHinh?.onCalculate(-1.00);
+                  // getDieuKhienDiChuyenTongQuat?.getKhungHinhNenChienDau?.onCalculate(-1.00 - bienDaoDongKhungHinhNenSs1);
+                  getDieuKhienDiChuyenTongQuat?.getKhungHinhNenChienDau?.onCalculate(newPosition.dx * (0.20));
+                  getDieuKhienDiChuyenTongQuat?.getKhungHinhNenVatTheMoiTruong?.onCalculate(-1.00 - bienDaoDongKhungHinhNenSs2);
+                  dxTrongTamCapNhat += newPosition.dx * (1.30);
+                } else if (newPosition.dx < -13.0) {
+                  getDieuKhienDiChuyenTongQuat?.getKhungHinhNenDiaHinh?.onCalculate(-1.00);
+                  // getDieuKhienDiChuyenTongQuat?.getKhungHinhNenChienDau?.onCalculate(-1.00 - bienDaoDongKhungHinhNenSs1);
+                  getDieuKhienDiChuyenTongQuat?.getKhungHinhNenChienDau?.onCalculate(newPosition.dx * (0.20));
+                  getDieuKhienDiChuyenTongQuat?.getKhungHinhNenVatTheMoiTruong?.onCalculate(-1.00 - bienDaoDongKhungHinhNenSs2);
+                  dxTrongTamCapNhat += newPosition.dx * (1.30);
+                } else if (newPosition.dx < -12.0) {
+                  getDieuKhienDiChuyenTongQuat?.getKhungHinhNenDiaHinh?.onCalculate(-1.00);
+                  // getDieuKhienDiChuyenTongQuat?.getKhungHinhNenChienDau?.onCalculate(-1.00 - bienDaoDongKhungHinhNenSs1);
+                  getDieuKhienDiChuyenTongQuat?.getKhungHinhNenChienDau?.onCalculate(newPosition.dx * (0.20));
+                  getDieuKhienDiChuyenTongQuat?.getKhungHinhNenVatTheMoiTruong?.onCalculate(-1.00 - bienDaoDongKhungHinhNenSs2);
+                  dxTrongTamCapNhat += newPosition.dx * (1.30);
+                } else if (newPosition.dx < -11.0) {
+                  getDieuKhienDiChuyenTongQuat?.getKhungHinhNenDiaHinh?.onCalculate(-1.00);
+                  // getDieuKhienDiChuyenTongQuat?.getKhungHinhNenChienDau?.onCalculate(-1.00 - bienDaoDongKhungHinhNenSs1);
+                  getDieuKhienDiChuyenTongQuat?.getKhungHinhNenChienDau?.onCalculate(newPosition.dx * (0.20));
+                  getDieuKhienDiChuyenTongQuat?.getKhungHinhNenVatTheMoiTruong?.onCalculate(-1.00 - bienDaoDongKhungHinhNenSs2);
+                  dxTrongTamCapNhat += newPosition.dx * (1.30);
+                } else if (newPosition.dx < -10.0) {
+                  getDieuKhienDiChuyenTongQuat?.getKhungHinhNenDiaHinh?.onCalculate(-1.00);
+                  // getDieuKhienDiChuyenTongQuat?.getKhungHinhNenChienDau?.onCalculate(-1.00 - bienDaoDongKhungHinhNenSs1);
+                  getDieuKhienDiChuyenTongQuat?.getKhungHinhNenChienDau?.onCalculate(newPosition.dx * (0.25));
+                  getDieuKhienDiChuyenTongQuat?.getKhungHinhNenVatTheMoiTruong?.onCalculate(-1.00 - bienDaoDongKhungHinhNenSs2);
+                  dxTrongTamCapNhat += newPosition.dx * (1.25);
+                } else if (newPosition.dx < -9.0) {
+                  getDieuKhienDiChuyenTongQuat?.getKhungHinhNenDiaHinh?.onCalculate(-1.00);
+                  // getDieuKhienDiChuyenTongQuat?.getKhungHinhNenChienDau?.onCalculate(-1.00 - bienDaoDongKhungHinhNenSs1);
+                  getDieuKhienDiChuyenTongQuat?.getKhungHinhNenChienDau?.onCalculate(newPosition.dx * (0.25));
+                  getDieuKhienDiChuyenTongQuat?.getKhungHinhNenVatTheMoiTruong?.onCalculate(-1.00 - bienDaoDongKhungHinhNenSs2);
+                  // dxTrongTamCapNhat += newPosition.dx * (1.00) - 1.00;
+                  dxTrongTamCapNhat += newPosition.dx * (1.25);
+                } else if (newPosition.dx < -8.0) {
+                  getDieuKhienDiChuyenTongQuat?.getKhungHinhNenDiaHinh?.onCalculate(-0.90);
+                  // getDieuKhienDiChuyenTongQuat?.getKhungHinhNenChienDau?.onCalculate(-0.90 - bienDaoDongKhungHinhNenSs1);
+                  getDieuKhienDiChuyenTongQuat?.getKhungHinhNenChienDau?.onCalculate(newPosition.dx * (0.25));
+                  getDieuKhienDiChuyenTongQuat?.getKhungHinhNenVatTheMoiTruong?.onCalculate(-0.90 - bienDaoDongKhungHinhNenSs2);
+                  // dxTrongTamCapNhat += newPosition.dx * (1.00) - 0.90;
+                  dxTrongTamCapNhat += newPosition.dx * (1.25);
+                } else if (newPosition.dx < -7.0) {
+                  getDieuKhienDiChuyenTongQuat?.getKhungHinhNenDiaHinh?.onCalculate(-0.80);
+                  // getDieuKhienDiChuyenTongQuat?.getKhungHinhNenChienDau?.onCalculate(-0.80 - bienDaoDongKhungHinhNenSs1);
+                  getDieuKhienDiChuyenTongQuat?.getKhungHinhNenChienDau?.onCalculate(newPosition.dx * (0.25));
+                  getDieuKhienDiChuyenTongQuat?.getKhungHinhNenVatTheMoiTruong?.onCalculate(-0.80 - bienDaoDongKhungHinhNenSs2);
+                  // dxTrongTamCapNhat += newPosition.dx * (1.00) - 0.80;
+                  dxTrongTamCapNhat += newPosition.dx * (1.25);
+                } else if (newPosition.dx < -6.0) {
+                  getDieuKhienDiChuyenTongQuat?.getKhungHinhNenDiaHinh?.onCalculate(-0.70);
+                  // getDieuKhienDiChuyenTongQuat?.getKhungHinhNenChienDau?.onCalculate(-0.70 - bienDaoDongKhungHinhNenSs1);
+                  getDieuKhienDiChuyenTongQuat?.getKhungHinhNenChienDau?.onCalculate(newPosition.dx * (0.25));
+                  getDieuKhienDiChuyenTongQuat?.getKhungHinhNenVatTheMoiTruong?.onCalculate(-0.70 - bienDaoDongKhungHinhNenSs2);
+                  // dxTrongTamCapNhat += newPosition.dx * (1.00) - 0.70;
+                  dxTrongTamCapNhat += newPosition.dx * (1.25);
+                } else if (newPosition.dx < -5.0) {
+                  getDieuKhienDiChuyenTongQuat?.getKhungHinhNenDiaHinh?.onCalculate(-0.60);
+                  // getDieuKhienDiChuyenTongQuat?.getKhungHinhNenChienDau?.onCalculate(-0.60 - bienDaoDongKhungHinhNenSs1);
+                  getDieuKhienDiChuyenTongQuat?.getKhungHinhNenChienDau?.onCalculate(newPosition.dx * (0.25));
+                  getDieuKhienDiChuyenTongQuat?.getKhungHinhNenVatTheMoiTruong?.onCalculate(-0.60 - bienDaoDongKhungHinhNenSs2);
+                  // dxTrongTamCapNhat += newPosition.dx * (1.00) - 0.60;
+                  dxTrongTamCapNhat += newPosition.dx * (1.25);
+                } else if (newPosition.dx < -4.0) {
+                  getDieuKhienDiChuyenTongQuat?.getKhungHinhNenDiaHinh?.onCalculate(-0.50);
+                  // getDieuKhienDiChuyenTongQuat?.getKhungHinhNenChienDau?.onCalculate(-0.50 - bienDaoDongKhungHinhNenSs1);
+                  getDieuKhienDiChuyenTongQuat?.getKhungHinhNenChienDau?.onCalculate(newPosition.dx * (0.25));
+                  getDieuKhienDiChuyenTongQuat?.getKhungHinhNenVatTheMoiTruong?.onCalculate(-0.50 - bienDaoDongKhungHinhNenSs2);
+                  // dxTrongTamCapNhat += newPosition.dx * (1.00) - 0.50;
+                  dxTrongTamCapNhat += newPosition.dx * (1.25);
+                } else if (newPosition.dx < -3.0) {
+                  getDieuKhienDiChuyenTongQuat?.getKhungHinhNenDiaHinh?.onCalculate(-0.40);
+                  // getDieuKhienDiChuyenTongQuat?.getKhungHinhNenChienDau?.onCalculate(-0.40 - bienDaoDongKhungHinhNenSs1);
+                  getDieuKhienDiChuyenTongQuat?.getKhungHinhNenChienDau?.onCalculate(newPosition.dx * (0.25));
+                  getDieuKhienDiChuyenTongQuat?.getKhungHinhNenVatTheMoiTruong?.onCalculate(-0.40 - bienDaoDongKhungHinhNenSs2);
+                  // dxTrongTamCapNhat += newPosition.dx * (1.00) - 0.40;
+                  dxTrongTamCapNhat += newPosition.dx * (1.25);
+                } else if (newPosition.dx < -2.0) {
+                  getDieuKhienDiChuyenTongQuat?.getKhungHinhNenDiaHinh?.onCalculate(-0.30);
+                  // getDieuKhienDiChuyenTongQuat?.getKhungHinhNenChienDau?.onCalculate(-0.30 - bienDaoDongKhungHinhNenSs1);
+                  getDieuKhienDiChuyenTongQuat?.getKhungHinhNenChienDau?.onCalculate(newPosition.dx * (0.25));
+                  getDieuKhienDiChuyenTongQuat?.getKhungHinhNenVatTheMoiTruong?.onCalculate(-0.30 - bienDaoDongKhungHinhNenSs2);
+                  // dxTrongTamCapNhat += newPosition.dx * (1.00) - 0.30;
+                  dxTrongTamCapNhat += newPosition.dx * (1.25);
+                } else if (newPosition.dx < -1.0) {
+                  getDieuKhienDiChuyenTongQuat?.getKhungHinhNenDiaHinh?.onCalculate(-0.20);
+                  // getDieuKhienDiChuyenTongQuat?.getKhungHinhNenChienDau?.onCalculate(-0.20 - bienDaoDongKhungHinhNenSs1);
+                  getDieuKhienDiChuyenTongQuat?.getKhungHinhNenChienDau?.onCalculate(newPosition.dx * (0.25));
+                  getDieuKhienDiChuyenTongQuat?.getKhungHinhNenVatTheMoiTruong?.onCalculate(-0.20 - bienDaoDongKhungHinhNenSs2);
+                  // dxTrongTamCapNhat += newPosition.dx * (1.00) - 0.20;
+                  dxTrongTamCapNhat += newPosition.dx * (1.25);
+                } else {
+                  getDieuKhienDiChuyenTongQuat?.getKhungHinhNenDiaHinh?.onCalculate(-0.10);
+                  // getDieuKhienDiChuyenTongQuat?.getKhungHinhNenChienDau?.onCalculate(-0.10 - bienDaoDongKhungHinhNenSs1);
+                  getDieuKhienDiChuyenTongQuat?.getKhungHinhNenChienDau?.onCalculate(newPosition.dx * (0.25));
+                  getDieuKhienDiChuyenTongQuat?.getKhungHinhNenVatTheMoiTruong?.onCalculate(-0.10 - bienDaoDongKhungHinhNenSs2);
+                  // dxTrongTamCapNhat += newPosition.dx * (1.00) - 0.10;
+                  dxTrongTamCapNhat += newPosition.dx * (1.25);
+                }
+              }
+
+              dyTrongTamCapNhat = dyTrongTamHienHanh;
+              dyTrongTamCapNhat += newPosition.dy;
+
+              /// -----
+              /// TODO: Cập Nhật Vị Trí Mới
+              /// -----
+              _viTriChienDauCo?.onVoidCaiDatDxTrongTamCapNhatCacGiaTriBien(value: dxTrongTamCapNhat);
+              _viTriChienDauCo?.onVoidCaiDatDyTrongTamCapNhatCacGiaTriBien(value: dyTrongTamCapNhat);
+            } else {
+              /// -----
+              /// TODO:
+              /// -----
+              dxTrongTamCapNhat = dxTrongTamHienHanh;
+              dyTrongTamCapNhat = dyTrongTamHienHanh;
+
+              print('2');
+              ///
+              if ((dyTrongTamHienHanh + newPosition.dy) < 0) {
+                print('2.1');
+
+                /// -----
+                /// TODO: Dịch Chuyển Chiến Đấu Cơ Lên Trên Vượt Quá Biên Trên Màn Hình
+                /// -----
+
+                if ((dxTrongTamCapNhat + newPosition.dx * (1.25)) > 0 && (dxTrongTamCapNhat + newPosition.dx * (1.25)) < getChieuRongManHinhPhiVatLy) {
+                  dxTrongTamCapNhat += newPosition.dx * (1.25);
+                }
+              } else if ((dyTrongTamHienHanh + newPosition.dy) > getChieuCaoManHinhPhiVatLy) {
+                print('2.2');
+
+                /// -----
+                /// TODO: Dịch Chuyển Chiến Đấu Cơ Xuống Dưới Vượt Quá Biên Dưới Màn Hình
+                /// -----
+                if ((dxTrongTamCapNhat + newPosition.dx * (1.25)) > 0 && (dxTrongTamCapNhat + newPosition.dx * (1.25)) < getChieuRongManHinhPhiVatLy) {
+                  dxTrongTamCapNhat += newPosition.dx * (1.25);
+                }
+              }
+
+              _viTriChienDauCo?.onVoidCaiDatDxTrongTamCapNhatCacGiaTriBien(value: dxTrongTamCapNhat);
+              _viTriChienDauCo?.onVoidCaiDatDyTrongTamCapNhatCacGiaTriBien(value: dyTrongTamCapNhat);
+
+            }
+
+          } else {
+            /// -----
+            /// TODO: Dịch Chuyển Chiến Đấu Cơ Sang Trái/Phải Vượt Quá Biên Màn Hình
+            /// -----
+            dxTrongTamCapNhat = dxTrongTamHienHanh;
+            dyTrongTamCapNhat = dyTrongTamHienHanh;
+
+            print('1');
+            if ((dxTrongTamHienHanh + newPosition.dx) < 0) {
+              print('1.1');
+
+              /// -----
+              /// TODO: Dịch Chuyển Chiến Đấu Cơ Sang Trái Vượt Quá Biên Trái Màn Hình
+              /// -----
+
+              if ((dyTrongTamCapNhat + newPosition.dy) > 0 && (dyTrongTamCapNhat + newPosition.dy) < getChieuCaoManHinhPhiVatLy) {
+                dyTrongTamCapNhat += newPosition.dy;
+              }
+
+            } else if ((dxTrongTamHienHanh + newPosition.dx) > getChieuRongManHinhPhiVatLy) {
+              print('1.2');
+
+              /// -----
+              /// TODO: Dịch Chuyển Chiến Đấu Cơ Sang Phải Vượt Quá Biên Phải Màn Hình
+              /// -----
+
+              if ((dyTrongTamCapNhat + newPosition.dy) > 0 && (dyTrongTamCapNhat + newPosition.dy) < getChieuCaoManHinhPhiVatLy) {
+                dyTrongTamCapNhat += newPosition.dy;
+              }
+
+            }
+
+            _viTriChienDauCo?.onVoidCaiDatDxTrongTamCapNhatCacGiaTriBien(value: dxTrongTamCapNhat);
+            _viTriChienDauCo?.onVoidCaiDatDyTrongTamCapNhatCacGiaTriBien(value: dyTrongTamCapNhat);
           }
         }
       }

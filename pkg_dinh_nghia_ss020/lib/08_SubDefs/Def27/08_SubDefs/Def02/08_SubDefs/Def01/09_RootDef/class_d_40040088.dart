@@ -5,7 +5,8 @@ mixin KichThuocManHinhCoBan {
   /// -----
   /// TODO:
   /// -----
-  static const double donViMoRongPhiVatLy = 50.0;
+  // static const double donViMoRongPhiVatLy = 50.0;
+  static const double donViMoRongPhiVatLy = 70.00;
 
   /// -----
   /// TODO: Chiều Rộng Màn Hình Phi Vật Lý

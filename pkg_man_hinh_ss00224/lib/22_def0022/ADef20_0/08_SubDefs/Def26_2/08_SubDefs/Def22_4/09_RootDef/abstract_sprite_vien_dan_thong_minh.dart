@@ -1,7 +1,9 @@
-import 'dart:ui';
+// import 'dart:ui';
 import 'dart:async';
+import 'package:flutter/foundation.dart';
 import 'dart:math';
 import 'package:flame/components.dart';
+import 'package:flutter/material.dart';
 import 'package:pkg_dinh_nghia_ss022/pkg_dinh_nghia_ss022_exp.dart';
 import 'package:pkg_dinh_nghia_ss028a/pkg_dinh_nghia_ss028a_exp.dart';
 import 'package:pkg_dinh_nghia_ss050/pkg_dinh_nghia_ss050_exp.dart';
@@ -27,6 +29,8 @@ abstract class SpriteVienDanThongMinh extends SpriteAnimationComponent with HasV
     await caiDatDonViSprite(value: DonViSpriteCoBan(maDinhDanh: null, spriteAnimation: null, sprite: null, nguonHinhAnh: null));
 
     await caiDatMoHinhChiTiet();
+
+    await caiDatSpriteMaDinhDanhVienDanThongMinh(value: SpriteMaDinhDanhVienDanThongMinh(maDinhDanh: 0));
 
     return;
   }
@@ -102,6 +106,21 @@ abstract class SpriteVienDanThongMinh extends SpriteAnimationComponent with HasV
   String? get getMaDinhDanhMoHinhHienHanh => _maDinhDanhMoHinhHienHanh;
   Future<void> caiDatMaDinhDanhMoHinhHienHanh({required String? value}) async {
     _maDinhDanhMoHinhHienHanh = value;
+    return;
+  }
+
+  /// -----
+  /// TODO:
+  /// -----
+  SpriteMaDinhDanhVienDanThongMinh? _spriteMaDinhDanhVienDanThongMinh;
+  SpriteMaDinhDanhVienDanThongMinh? get getSpriteMaDinhDanhVienDanThongMinh => _spriteMaDinhDanhVienDanThongMinh;
+  Future<void> caiDatSpriteMaDinhDanhVienDanThongMinh({required SpriteMaDinhDanhVienDanThongMinh? value}) async {
+    _spriteMaDinhDanhVienDanThongMinh = value;
+
+    if (getSpriteMaDinhDanhVienDanThongMinh != null && kDebugMode == true) {
+      add(getSpriteMaDinhDanhVienDanThongMinh!);
+    }
+
     return;
   }
 
@@ -321,4 +340,33 @@ abstract class SpriteVienDanThongMinh extends SpriteAnimationComponent with HasV
 
     return;
   }
+}
+
+class SpriteMaDinhDanhVienDanThongMinh extends TextComponent with HasVisibility {
+
+  int maDinhDanh = 0;
+  void caiDatMaDinhDanh({required int value}) async {
+    maDinhDanh = value;
+    text = '$maDinhDanh';
+
+    return;
+  }
+
+  SpriteMaDinhDanhVienDanThongMinh({required int? maDinhDanh}) {
+    maDinhDanh = maDinhDanh;
+  }
+
+  @override
+  Future<void> onLoad() async {
+    super.onLoad();
+
+    anchor = Anchor.center;
+
+    position.setValues(10.0, 10.0);
+
+    text = '$maDinhDanh';
+
+    textRenderer = TextPaint(style: TextStyle(fontSize: 12, fontWeight: FontWeight.bold, color: Color(0xEBFF004D)));
+  }
+
 }

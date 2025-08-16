@@ -393,17 +393,17 @@ class MoHinhPhuongTienTongQuat with CauTrucThucThiCoBan {
     /// TODO:
     /// -----
 
-    duLieuJsonChieuRongThanPhuongTien = getDuLieuJsonLamPhang['[CHIEU_RONG_THAN]'] ?? 0;
-    duLieuJsonChieuCaoThanPhuongTien = getDuLieuJsonLamPhang['[CHIEU_CAO_THAN]'] ?? 0;
-    duLieuJsonDxTrongTamPhuongTien = getDuLieuJsonLamPhang['[DX_TRONG_TAM]'] ?? 0;
-    duLieuJsonDyTrongTamPhuongTien = getDuLieuJsonLamPhang['[DY_TRONG_TAM]'] ?? 0;
+    duLieuJsonChieuRongThanPhuongTien = viTriPhuongTien?.getChieuRongThan ?? 0;
+    duLieuJsonChieuCaoThanPhuongTien = viTriPhuongTien?.getChieuCaoThan ?? 0;
+    duLieuJsonDxTrongTamPhuongTien = viTriPhuongTien?.getDxTrongTam ?? 0;
+    duLieuJsonDyTrongTamPhuongTien = viTriPhuongTien?.getDyTrongTam ?? 0;
 
-    duLieuJsonBienPhaiPhuongTien = (getDuLieuJsonLamPhang['[DX_TRONG_TAM]'] ?? 0) + ((getDuLieuJsonLamPhang['[CHIEU_RONG_THAN]'] ?? 0) / 2);
-    duLieuJsonBienTraiPhuongTien = (getDuLieuJsonLamPhang['[DX_TRONG_TAM]'] ?? 0) - ((getDuLieuJsonLamPhang['[CHIEU_RONG_THAN]'] ?? 0) / 2);
-    duLieuJsonBienTrenPhuongTien = (getDuLieuJsonLamPhang['[DY_TRONG_TAM]'] ?? 0) - ((getDuLieuJsonLamPhang['[CHIEU_CAO_THAN]'] ?? 0) / 2);
-    duLieuJsonBienDuoiPhuongTien = (getDuLieuJsonLamPhang['[DY_TRONG_TAM]'] ?? 0) + ((getDuLieuJsonLamPhang['[CHIEU_CAO_THAN]'] ?? 0) / 2);
-    duLieuJsonChieuRongManHinhPhiVatLy = getDuLieuJsonLamPhang['[CHIEU_RONG_MAN_HINH_PHI_VAT_LY]'] ?? 0;
-    duLieuJsonChieuCaoManHinhPhiVatLy = getDuLieuJsonLamPhang['[CHIEU_CAO_MAN_HINH_PHI_VAT_LY]'] ?? 0;
+    duLieuJsonBienPhaiPhuongTien = (viTriPhuongTien?.getDxTrongTam ?? 0) + ((viTriPhuongTien?.getChieuRongThan ?? 0) / 2);
+    duLieuJsonBienTraiPhuongTien = (viTriPhuongTien?.getDxTrongTam ?? 0) - ((viTriPhuongTien?.getChieuRongThan ?? 0) / 2);
+    duLieuJsonBienTrenPhuongTien = (viTriPhuongTien?.getDyTrongTam ?? 0) - ((viTriPhuongTien?.getChieuCaoThan ?? 0) / 2);
+    duLieuJsonBienDuoiPhuongTien = (viTriPhuongTien?.getDyTrongTam ?? 0) + ((viTriPhuongTien?.getChieuCaoThan ?? 0) / 2);
+    duLieuJsonChieuRongManHinhPhiVatLy = viTriPhuongTien?.getChieuRongManHinhPhiVatLy ?? 0;
+    duLieuJsonChieuCaoManHinhPhiVatLy = viTriPhuongTien?.getChieuCaoManHinhPhiVatLy ?? 0;
 
     if (this is MOHINHPHUONGTIENVUKHIDIEUKHIEN) {
       if (getDuLieuJsonLamPhang['[TRANG_THAI_TON_TAI]'] == false || getDuLieuJsonLamPhang['[TAN_CONG_HIEN_THI]'] == false) {
@@ -663,6 +663,32 @@ class MoHinhPhuongTienTongQuat with CauTrucThucThiCoBan {
     getPhuongThuc?.getPhuongThucBay?.getViTri?.onVoidCaiDatDyTrongTamCapNhatCacGiaTriBien(value: -10000);
 
     // onXuLyDuLieuJsonLamPhang();
+
+    return;
+  }
+
+  void onVoidKhoiPhucTrangThaiTrongChienDau() {
+
+    getTrangThaiTrongChienDau?.onVoidCaiDatMaDinhDanhVienDanVaCham(value: null, caiDatUuTien: true);
+    getTrangThaiTrongChienDau?.onVoidCaiDatMaDinhDanhVienDanVaChamSS010(value: null, caiDatUuTien: true);
+    getTrangThaiTrongChienDau?.onVoidCaiDatMaDinhDanhVienDanVaChamSS020(value: null, caiDatUuTien: true);
+    getTrangThaiTrongChienDau?.onVoidCaiDatMaDinhDanhVienDanVaChamSS030(value: null, caiDatUuTien: true);
+    getTrangThaiTrongChienDau?.onVoidCaiDatMaDinhDanhVienDanVaChamSS040(value: null, caiDatUuTien: true);
+    getTrangThaiTrongChienDau?.onVoidCaiDatMaDinhDanhVienDanVaChamSS050(value: null, caiDatUuTien: true);
+    getTrangThaiTrongChienDau?.onVoidCaiDatMaDinhDanhVienDanVaChamSS060(value: null, caiDatUuTien: true);
+    getTrangThaiTrongChienDau?.onVoidCaiDatMaDinhDanhVienDanVaChamSS070(value: null, caiDatUuTien: true);
+    getTrangThaiTrongChienDau?.onVoidCaiDatMaDinhDanhVienDanVaChamSS080(value: null, caiDatUuTien: true);
+    getTrangThaiTrongChienDau?.onVoidCaiDatMaDinhDanhVienDanVaChamSS090(value: null, caiDatUuTien: true);
+    getTrangThaiTrongChienDau?.onVoidCaiDatMaDinhDanhVienDanVaChamSS100(value: null, caiDatUuTien: true);
+
+    getTrangThaiTrongChienDau?.getVienDanThongMinhVaChamSS010?.getMoHinh?.onVoidCaiDatPhuongTienHoatDongLayMucTieu(value: null, caiDatUuTien: true);
+    getTrangThaiTrongChienDau?.getVienDanThongMinhVaChamSS010?.caiDatMoHinh(value: null);
+
+    getTrangThaiTrongChienDau?.getVienDanThongMinhVaChamSS020?.getMoHinh?.onVoidCaiDatPhuongTienHoatDongLayMucTieu(value: null, caiDatUuTien: true);
+    getTrangThaiTrongChienDau?.getVienDanThongMinhVaChamSS020?.caiDatMoHinh(value: null);
+
+    getTrangThaiTrongChienDau?.getVienDanThongMinhVaChamSS030?.getMoHinh?.onVoidCaiDatPhuongTienHoatDongLayMucTieu(value: null, caiDatUuTien: true);
+    getTrangThaiTrongChienDau?.getVienDanThongMinhVaChamSS030?.caiDatMoHinh(value: null);
 
     return;
   }
@@ -2074,6 +2100,8 @@ class MoHinhPhuongTienTongQuat with CauTrucThucThiCoBan {
 
     getTrangThaiHoatDongChienDauXamChiem?.caiDatHoatDongChienDauXamChiemThuocGiaiDoanHienHanh(value: null);
 
+    onVoidKhoiPhucTrangThaiTrongChienDau();
+
     onXuLyDuLieuJsonLamPhang();
 
     // if (getDuLieuJsonLamPhang['[TRANG_THAI_TON_TAI]'] == false) {
@@ -2178,7 +2206,11 @@ class MoHinhPhuongTienTongQuat with CauTrucThucThiCoBan {
         /// Phục Hồi Điểm Nhận Sát Thương
         getTrangThaiTrongChienDau?.getTrangThaiPhuongTienNhanSatThuong?.onVoidKhoiPhucTrangThai();
       }
+
+      onVoidKhoiPhucTrangThaiTrongChienDau();
     }
+
+    return;
   }
 
   /// -----
@@ -2300,8 +2332,13 @@ class MoHinhPhuongTienTongQuat with CauTrucThucThiCoBan {
       /// -----
       /// TODO: Phục Hồi Điểm Nhận Sát Thương
       /// -----
-      getTrangThaiTrongChienDau?.getTrangThaiPhuongTienNhanSatThuong?.onVoidKhoiPhucTrangThai();
+      // getTrangThaiTrongChienDau?.getTrangThaiPhuongTienNhanSatThuong?.onVoidKhoiPhucTrangThai();
+
+
+      onVoidKhoiPhucTrangThaiTrongChienDau();
     }
+
+    return;
   }
 
   /// -----
@@ -2407,8 +2444,12 @@ class MoHinhPhuongTienTongQuat with CauTrucThucThiCoBan {
       /// -----
       /// TODO: Phục Hồi Điểm Nhận Sát Thương
       /// -----
-      getTrangThaiTrongChienDau?.getTrangThaiPhuongTienNhanSatThuong?.onVoidKhoiPhucTrangThai();
+      // getTrangThaiTrongChienDau?.getTrangThaiPhuongTienNhanSatThuong?.onVoidKhoiPhucTrangThai();
+
+      onVoidKhoiPhucTrangThaiTrongChienDau();
     }
+
+    return;
   }
 
   /// -----
@@ -2534,8 +2575,12 @@ class MoHinhPhuongTienTongQuat with CauTrucThucThiCoBan {
       /// -----
       /// TODO: Phục Hồi Điểm Nhận Sát Thương
       /// -----
-      getTrangThaiTrongChienDau?.getTrangThaiPhuongTienNhanSatThuong?.onVoidKhoiPhucTrangThai();
+      // getTrangThaiTrongChienDau?.getTrangThaiPhuongTienNhanSatThuong?.onVoidKhoiPhucTrangThai();
+
+      onVoidKhoiPhucTrangThaiTrongChienDau();
     }
+
+    return;
   }
 
   void onKiemTraVaChamVienDanChienDauCoSS010() {

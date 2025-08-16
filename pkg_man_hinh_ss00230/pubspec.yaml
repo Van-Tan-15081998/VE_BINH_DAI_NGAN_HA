@@ -39,7 +39,7 @@ flutter:
 
   # To add assets to your package, add an assets section, like this:
    assets:
-     - lib/22_def0022/ADef20_0/07_ImgSrcs/Def00_2/09_RootDef/
+#     - lib/22_def0022/ADef20_0/07_ImgSrcs/Def00_2/09_RootDef/
      - lib/22_def0022/ADef20_0/07_ImgSrcs/Def010_2/09_RootDef/
      - lib/22_def0022/ADef20_0/07_ImgSrcs/Def020_2/09_RootDef/
      - lib/22_def0022/ADef20_0/07_ImgSrcs/Def030_2/09_RootDef/

@@ -13,6 +13,8 @@ class SpritePhuongTienSS44BangDieuKhienDoiHinhVuKhiTuDong extends SpritePhuongTi
   Future<void> onInitRoot() async {
     await super.onInitRoot();
 
+    getSpriteMaDinhDanhPhuongTien?.caiDatMaDinhDanh(value: 44);
+
     return;
   }
 
@@ -31,5 +33,40 @@ class SpritePhuongTienSS44BangDieuKhienDoiHinhVuKhiTuDong extends SpritePhuongTi
     await getMoHinh?.onCaiDatSpritePhuongTien(value: this);
 
     return;
+  }
+
+  /// -----
+  /// TODO:
+  /// -----
+  @override
+  void onVoidCapNhatKiemTraHienThi() {
+    if (getMoHinh?.getMoHinh?.getDuLieuJsonLamPhang['[DI_CHUYEN_HIEN_THI]'] == true && getMoHinh?.getMoHinh?.getDuLieuJsonLamPhang['[TAN_CONG_HIEN_THI]'] == true) {
+      /// -----
+      /// TODO: Cài Đặt SpriteAnimation cho Phương Tiện Mới
+      /// -----
+      if (animation == null) {
+        if (getDonViSprite?.getSpriteAnimation == null) {
+          getTrangThaiTongQuat?.onGetEntityResourceManagement?.getQuanLyTrangThaiHangarPhuongTien?.onTruyXuatSpriteNgoaiHinhThanPhuongTien(
+            donViSprite: getDonViSprite,
+            maDinhDanhPhuongTien: getMoHinh?.getMoHinh?.getMaDinhDanhPhuongTien,
+          );
+          animation = getDonViSprite?.getSpriteAnimation;
+
+          onVoidCaiDatKiemTraHienThi(value: true);
+        }
+      } else {
+        print('animation = null');
+      }
+    } else {
+      if (getDonViSprite?.getSpriteAnimation != null) {
+        getDonViSprite?.caiDatSpriteAnimation(value: null);
+      }
+      if (getKiemTraHienThi == true) {
+        onVoidCaiDatKiemTraHienThi(value: false);
+      }
+      if (animation != null) {
+        animation = null;
+      }
+    }
   }
 }

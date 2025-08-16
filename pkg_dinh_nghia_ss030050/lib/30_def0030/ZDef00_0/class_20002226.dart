@@ -573,6 +573,8 @@ class QUANLYTRANGTHAISUKIENVACHAMTHUOCPHUONGTIEN extends SUKIENVACHAMTHUOCPHUONG
   dynamic chieuCaoThanPhuongTienVaCham;
   dynamic dxTrongTamPhuongTienVaCham;
   dynamic dyTrongTamPhuongTienVaCham;
+  dynamic chieuRongManHinhPhiVatLy;
+  dynamic chieuCaoManHinhPhiVatLy;
 
   Map<String, dynamic> phuongTienHoatDong = {};
   Map<String, Map<String, dynamic>> mapPhuongTienVaChamVienDan = {};
@@ -593,6 +595,9 @@ class QUANLYTRANGTHAISUKIENVACHAMTHUOCPHUONGTIEN extends SUKIENVACHAMTHUOCPHUONG
   double bienPhaiPhuongTienVaCham = 0;
   double bienTrenPhuongTienVaCham = 0;
   double bienDuoiPhuongTienVaCham = 0;
+
+  bool kiemTraDiChuyenHienThiPhuongTienVaCham = false;
+  bool kiemTraKichHoatHoatDongPhuongTienVaCham = false;
 
   Map<String, dynamic> phuongTienVaChamVienDan = {};
   Map<String, dynamic> vienDanVaChamPhuongTien = {};
@@ -663,56 +668,82 @@ class QUANLYTRANGTHAISUKIENVACHAMTHUOCPHUONGTIEN extends SUKIENVACHAMTHUOCPHUONG
                 // final dyTrongTamPhuongTien = duLieuPhuongTien['[DY_TRONG_TAM]'];
                 dyTrongTamPhuongTienVaCham = duLieuPhuongTienVaCham['[DY_TRONG_TAM]'];
 
-                phuongTienVaChamVienDan = {'[MA_DINH_DANH_PHUONG_TIEN_VA_CHAM]': maDinhDanhPhuongTienVaCham, '[MA_DINH_DANH_VIEN_DAN_VA_CHAM]': '[]'};
+                chieuRongManHinhPhiVatLy = duLieuPhuongTienVaCham['[CHIEU_RONG_MAN_HINH_PHI_VAT_LY]'];
+                chieuCaoManHinhPhiVatLy = duLieuPhuongTienVaCham['[CHIEU_CAO_MAN_HINH_PHI_VAT_LY]'];
 
-                if (duLieuPhuongTienVaCham['[DI_CHUYEN_HIEN_THI]'] == true && duLieuPhuongTienVaCham['[KICH_HOAT_HOAT_DONG]'] == true) {
-                // if (duLieuPhuongTienVaCham['[DI_CHUYEN_HIEN_THI]'] == true) {
-                  phuongTienHoatDong[maDinhDanhPhuongTienVaCham] = maDinhDanhPhuongTienVaCham;
+                /// Tái Kiểm Tra Phương Tiện Di Chuyển Hiển Thị
+                bienTraiPhuongTienVaCham = dxTrongTamPhuongTienVaCham - (chieuRongThanPhuongTienVaCham / 2);
+                bienPhaiPhuongTienVaCham = dxTrongTamPhuongTienVaCham + (chieuRongThanPhuongTienVaCham / 2);
+                bienTrenPhuongTienVaCham = dyTrongTamPhuongTienVaCham - (chieuCaoThanPhuongTienVaCham / 2);
+                bienDuoiPhuongTienVaCham = dyTrongTamPhuongTienVaCham + (chieuCaoThanPhuongTienVaCham / 2);
+
+                if (bienTraiPhuongTienVaCham > chieuRongManHinhPhiVatLy ||
+                    bienPhaiPhuongTienVaCham < 0 ||
+                    bienTrenPhuongTienVaCham < 0 ||
+                    bienDuoiPhuongTienVaCham > chieuCaoManHinhPhiVatLy
+                ) {
+                  kiemTraDiChuyenHienThiPhuongTienVaCham = false;
+                } else {
+                  kiemTraDiChuyenHienThiPhuongTienVaCham = true;
                 }
 
-                /// -----
-                /// TODO: Đối Chiếu Dx Trọng Tâm, Dy Trọng Tâm & Bổ Sung Vùng Đệm Phát Hiện Va Chạm
-                /// -----
-                bienTraiPhuongTienVaCham = dxTrongTamPhuongTienVaCham - (chieuRongThanPhuongTienVaCham / 2) - 10.0;
-                bienPhaiPhuongTienVaCham = dxTrongTamPhuongTienVaCham + (chieuRongThanPhuongTienVaCham / 2) + 10.0;
-                bienTrenPhuongTienVaCham = dyTrongTamPhuongTienVaCham - (chieuCaoThanPhuongTienVaCham / 2);
-                bienDuoiPhuongTienVaCham = dyTrongTamPhuongTienVaCham + (chieuCaoThanPhuongTienVaCham / 2) + 20.0;
+                if (duLieuPhuongTienVaCham['[KICH_HOAT_HOAT_DONG]'] == true) {
+                  kiemTraKichHoatHoatDongPhuongTienVaCham = true;
+                } else {
+                  kiemTraKichHoatHoatDongPhuongTienVaCham = false;
+                }
 
-                if (dxTrongTamVienDanVaCham > bienTraiPhuongTienVaCham //
-                    && dxTrongTamVienDanVaCham < bienPhaiPhuongTienVaCham //
-                    && dyTrongTamVienDanVaCham > bienTrenPhuongTienVaCham //
-                    && dyTrongTamVienDanVaCham < bienDuoiPhuongTienVaCham //
-                ) {
-                  phuongTienVaChamVienDan['[MA_DINH_DANH_VIEN_DAN_VA_CHAM]'] = maDinhDanhVienDanVaCham;
+                phuongTienVaChamVienDan = {'[MA_DINH_DANH_PHUONG_TIEN_VA_CHAM]': maDinhDanhPhuongTienVaCham, '[MA_DINH_DANH_VIEN_DAN_VA_CHAM]': '[]'};
 
-                  if (mapPhuongTienVaChamVienDan[maDinhDanhPhuongTienVaCham]?.isEmpty == true) {
-                    mapPhuongTienVaChamVienDan[maDinhDanhPhuongTienVaCham] = phuongTienVaChamVienDan;
-                  } else if (mapPhuongTienVaChamVienDanSS010[maDinhDanhPhuongTienVaCham]?.isEmpty == true) {
-                    mapPhuongTienVaChamVienDanSS010[maDinhDanhPhuongTienVaCham] = phuongTienVaChamVienDan;
-                  } else if (mapPhuongTienVaChamVienDanSS020[maDinhDanhPhuongTienVaCham]?.isEmpty == true) {
-                    mapPhuongTienVaChamVienDanSS020[maDinhDanhPhuongTienVaCham] = phuongTienVaChamVienDan;
-                  } else if (mapPhuongTienVaChamVienDanSS030[maDinhDanhPhuongTienVaCham]?.isEmpty == true) {
+                if (kiemTraDiChuyenHienThiPhuongTienVaCham == true && kiemTraKichHoatHoatDongPhuongTienVaCham == true) {
+                  // if (duLieuPhuongTienVaCham['[DI_CHUYEN_HIEN_THI]'] == true) {
+                  phuongTienHoatDong[maDinhDanhPhuongTienVaCham] = maDinhDanhPhuongTienVaCham;
+
+
+                  /// -----
+                  /// TODO: Đối Chiếu Dx Trọng Tâm, Dy Trọng Tâm & Bổ Sung Vùng Đệm Phát Hiện Va Chạm
+                  /// -----
+                  bienTraiPhuongTienVaCham = dxTrongTamPhuongTienVaCham - (chieuRongThanPhuongTienVaCham / 2) - 10.0;
+                  bienPhaiPhuongTienVaCham = dxTrongTamPhuongTienVaCham + (chieuRongThanPhuongTienVaCham / 2) + 10.0;
+                  bienTrenPhuongTienVaCham = dyTrongTamPhuongTienVaCham - (chieuCaoThanPhuongTienVaCham / 2);
+                  bienDuoiPhuongTienVaCham = dyTrongTamPhuongTienVaCham + (chieuCaoThanPhuongTienVaCham / 2) + 20.0;
+
+                  if (dxTrongTamVienDanVaCham > bienTraiPhuongTienVaCham //
+                      && dxTrongTamVienDanVaCham < bienPhaiPhuongTienVaCham //
+                      && dyTrongTamVienDanVaCham > bienTrenPhuongTienVaCham //
+                      && dyTrongTamVienDanVaCham < bienDuoiPhuongTienVaCham //
+                  ) {
+                    phuongTienVaChamVienDan['[MA_DINH_DANH_VIEN_DAN_VA_CHAM]'] = maDinhDanhVienDanVaCham;
+
+                    if (mapPhuongTienVaChamVienDan[maDinhDanhPhuongTienVaCham]?.isEmpty == true) {
+                      mapPhuongTienVaChamVienDan[maDinhDanhPhuongTienVaCham] = phuongTienVaChamVienDan;
+                    } else if (mapPhuongTienVaChamVienDanSS010[maDinhDanhPhuongTienVaCham]?.isEmpty == true) {
+                      mapPhuongTienVaChamVienDanSS010[maDinhDanhPhuongTienVaCham] = phuongTienVaChamVienDan;
+                    } else if (mapPhuongTienVaChamVienDanSS020[maDinhDanhPhuongTienVaCham]?.isEmpty == true) {
+                      mapPhuongTienVaChamVienDanSS020[maDinhDanhPhuongTienVaCham] = phuongTienVaChamVienDan;
+                    } else if (mapPhuongTienVaChamVienDanSS030[maDinhDanhPhuongTienVaCham]?.isEmpty == true) {
                       mapPhuongTienVaChamVienDanSS030[maDinhDanhPhuongTienVaCham] = phuongTienVaChamVienDan;
-                  } else if (mapPhuongTienVaChamVienDanSS040[maDinhDanhPhuongTienVaCham]?.isEmpty == true) {
-                    mapPhuongTienVaChamVienDanSS040[maDinhDanhPhuongTienVaCham] = phuongTienVaChamVienDan;
-                  } else if (mapPhuongTienVaChamVienDanSS050[maDinhDanhPhuongTienVaCham]?.isEmpty == true) {
-                    mapPhuongTienVaChamVienDanSS050[maDinhDanhPhuongTienVaCham] = phuongTienVaChamVienDan;
-                  } else if (mapPhuongTienVaChamVienDanSS060[maDinhDanhPhuongTienVaCham]?.isEmpty == true) {
-                    mapPhuongTienVaChamVienDanSS060[maDinhDanhPhuongTienVaCham] = phuongTienVaChamVienDan;
-                  } else if (mapPhuongTienVaChamVienDanSS070[maDinhDanhPhuongTienVaCham]?.isEmpty == true) {
-                    mapPhuongTienVaChamVienDanSS070[maDinhDanhPhuongTienVaCham] = phuongTienVaChamVienDan;
-                  } else if (mapPhuongTienVaChamVienDanSS080[maDinhDanhPhuongTienVaCham]?.isEmpty == true) {
-                    mapPhuongTienVaChamVienDanSS080[maDinhDanhPhuongTienVaCham] = phuongTienVaChamVienDan;
-                  } else if (mapPhuongTienVaChamVienDanSS090[maDinhDanhPhuongTienVaCham]?.isEmpty == true) {
-                    mapPhuongTienVaChamVienDanSS090[maDinhDanhPhuongTienVaCham] = phuongTienVaChamVienDan;
-                  } else if (mapPhuongTienVaChamVienDanSS100[maDinhDanhPhuongTienVaCham]?.isEmpty == true) {
-                    mapPhuongTienVaChamVienDanSS100[maDinhDanhPhuongTienVaCham] = phuongTienVaChamVienDan;
-                  }
-                  else {
+                    } else if (mapPhuongTienVaChamVienDanSS040[maDinhDanhPhuongTienVaCham]?.isEmpty == true) {
+                      mapPhuongTienVaChamVienDanSS040[maDinhDanhPhuongTienVaCham] = phuongTienVaChamVienDan;
+                    } else if (mapPhuongTienVaChamVienDanSS050[maDinhDanhPhuongTienVaCham]?.isEmpty == true) {
+                      mapPhuongTienVaChamVienDanSS050[maDinhDanhPhuongTienVaCham] = phuongTienVaChamVienDan;
+                    } else if (mapPhuongTienVaChamVienDanSS060[maDinhDanhPhuongTienVaCham]?.isEmpty == true) {
+                      mapPhuongTienVaChamVienDanSS060[maDinhDanhPhuongTienVaCham] = phuongTienVaChamVienDan;
+                    } else if (mapPhuongTienVaChamVienDanSS070[maDinhDanhPhuongTienVaCham]?.isEmpty == true) {
+                      mapPhuongTienVaChamVienDanSS070[maDinhDanhPhuongTienVaCham] = phuongTienVaChamVienDan;
+                    } else if (mapPhuongTienVaChamVienDanSS080[maDinhDanhPhuongTienVaCham]?.isEmpty == true) {
+                      mapPhuongTienVaChamVienDanSS080[maDinhDanhPhuongTienVaCham] = phuongTienVaChamVienDan;
+                    } else if (mapPhuongTienVaChamVienDanSS090[maDinhDanhPhuongTienVaCham]?.isEmpty == true) {
+                      mapPhuongTienVaChamVienDanSS090[maDinhDanhPhuongTienVaCham] = phuongTienVaChamVienDan;
+                    } else if (mapPhuongTienVaChamVienDanSS100[maDinhDanhPhuongTienVaCham]?.isEmpty == true) {
+                      mapPhuongTienVaChamVienDanSS100[maDinhDanhPhuongTienVaCham] = phuongTienVaChamVienDan;
+                    }
+                    else {
+                      break;
+                    }
+
                     break;
                   }
-
-                  break;
                 }
               }
             }
