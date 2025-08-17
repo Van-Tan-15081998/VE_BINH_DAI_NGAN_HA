@@ -1,3 +1,4 @@
+import 'package:flutter/foundation.dart';
 import 'package:flutter_soloud/flutter_soloud.dart';
 import 'package:pkg_dinh_nghia_ss020/pkg_dinh_nghia_ss020_exp.dart';
 import 'package:pkg_dinh_nghia_dv_ss0020/pkg_dinh_nghia_dv_ss0020_exp.dart';
@@ -48,7 +49,9 @@ class QUANLYTRANGTHAIDICHVUMAYPHATAMTHANH with CauTrucThucThiCoBan {
     /// -----
     /// TODO: Mở Comment Để Âm Thanh Hoạt Động
     /// -----
-    await caiDatMayPhatAmThanh(value: MAYPHATAMTHANHCOBAN());
+    if (kDebugMode == false) {
+      await caiDatMayPhatAmThanh(value: MAYPHATAMTHANHCOBAN());
+    }
 
     /// -----
     /// TODO:

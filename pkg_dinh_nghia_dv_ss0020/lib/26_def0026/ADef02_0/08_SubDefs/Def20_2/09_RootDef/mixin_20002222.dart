@@ -48,7 +48,9 @@ mixin CAUTRUCPHATAMTHANHCOBAN {
     /// -----
     /// TODO: Comment Để Quá Trình Âm Thanh Hoạt Động
     /// -----
-    // return;
+    if (kDebugMode == true) {
+      return;
+    }
 
     if (getNguonAmThanh?.isNotEmpty == true) {
       try {
