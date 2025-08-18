@@ -105,6 +105,37 @@ class MoHinhThuocTinhTanCongChienDauCo {
     return;
   }
 
+  String? _maDinhDanhHinhThucDuongBayVienDanDacHuu;
+  String? get getMaDinhDanhHinhThucDuongBayVienDanDacHuu => _maDinhDanhHinhThucDuongBayVienDanDacHuu;
+  Future<void> onVoidCaiDatMaDinhDanhHinhThucDuongBayVienDanDacHuu({required String? value}) async {
+    _maDinhDanhHinhThucDuongBayVienDanDacHuu ??= value;
+
+    onVoidCaiDatMaDinhDanhHinhThucVienDanVanHanh(value: getMaDinhDanhHinhThucDuongBayVienDanDacHuu);
+
+    return;
+  }
+
+  ///
+  /// TODO: Mã Định Danh Hình Thức Viên Đạn Vận Hành (Vị Trí Xuất Phát + Vị Trí Lấy Mục Tiêu)
+  ///
+  String? _maDinhDanhHinhThucVienDanVanHanh;
+  String? get getMaDinhDanhHinhThucVienDanVanHanh => _maDinhDanhHinhThucVienDanVanHanh;
+  Future<void> onVoidCaiDatMaDinhDanhHinhThucVienDanVanHanh({required String? value}) async {
+    _maDinhDanhHinhThucVienDanVanHanh = value;
+    return;
+  }
+
+  Future<void> onVoidChuyenDoiMaDinhDanhHinhThucVienDanVanHanh() async {
+
+    if (getMaDinhDanhHinhThucVienDanVanHanh == getMaDinhDanhHinhThucDuongBayVienDanDacHuu) {
+      onVoidCaiDatMaDinhDanhHinhThucVienDanVanHanh(value: '[HINH_THUC_SS010]');
+    } else {
+      onVoidCaiDatMaDinhDanhHinhThucVienDanVanHanh(value: getMaDinhDanhHinhThucDuongBayVienDanDacHuu);
+    }
+
+    return;
+  }
+
   ///
   /// TODO: Trang Bị Vũ Khí Tấn Công Cơ Bản
   ///

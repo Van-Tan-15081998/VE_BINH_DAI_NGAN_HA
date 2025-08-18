@@ -106,6 +106,8 @@ class MoHinhThuocTinhChienDauCoTongQuat {
     return;
   }
 
+
+
   /// -----
   /// TODO: Thuộc Tính Kích Thước
   /// -----

@@ -73,6 +73,9 @@ class ChienDauCoDangCapSaoSSS10SS03 extends MoHinhChienDauCoDangCapSaoSSS10 {
   @override
   Future<void> onInitRoot() async {
     await super.onInitRoot();
+
+    getThuocTinh?.getThuocTinhTanCong?.onVoidCaiDatMaDinhDanhHinhThucDuongBayVienDanDacHuu(value: '[HINH_THUC_SS010]');
+
     return;
   }
 

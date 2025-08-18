@@ -154,6 +154,17 @@ class KHUNGMANHINHSS030000 extends THANHPHANMANHINHDRAGTHUOCCAPCOBAN {
   }
 
   @override
+  void onDragEnd(DragEndEvent event) {
+    super.onDragEnd(event);
+
+    getGlobalStateManagementSystem?.getChienDauCoTongQuat?.getChienDauCoTrucTiepThucThiChienDau?.getTrangThai?.getMoHinh?.getThuocTinh?.getThuocTinhTanCong?.onVoidChuyenDoiMaDinhDanhHinhThucVienDanVanHanh();
+
+    if (kDebugMode) {
+      print("Người dùng nhấc tay ra khỏi màn hình");
+    }
+  }
+
+  @override
   void update(double dt) {
     // TODO: implement update
     super.update(dt);

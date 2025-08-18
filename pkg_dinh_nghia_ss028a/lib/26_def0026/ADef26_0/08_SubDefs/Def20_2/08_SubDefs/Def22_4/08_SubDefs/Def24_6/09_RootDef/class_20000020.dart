@@ -270,6 +270,10 @@ class QuanLyTrangThaiPhuongThucTanCongCoBanSS01 extends QuanLyTrangThaiPhuongThu
     MoHinhChienDauCoTongQuat? chienDauCo = getChienDauCoTongQuat?.getChienDauCoTrucTiepThucThiChienDau?.getTrangThai?.getMoHinh;
 
     if (QuanLyDongThoiGianCoBan.onKiemTraKichHoat(chiSoKichHoat: 50, chiSoTangTienTheoThoiGianThuc: getChiSoTangTienTheoThoiGianThuc) == true) {
+      onVoidCapNhatTuDongChiSoTangTienThucThiTheoChuKyFrom1To3();
+      onVoidCapNhatTuDongChiSoTangTienThucThiTheoChuKyFrom1To6();
+      onVoidCapNhatTuDongChiSoTangTienThucThiTheoChuKyFrom1To100();
+
       return true;
     }
 

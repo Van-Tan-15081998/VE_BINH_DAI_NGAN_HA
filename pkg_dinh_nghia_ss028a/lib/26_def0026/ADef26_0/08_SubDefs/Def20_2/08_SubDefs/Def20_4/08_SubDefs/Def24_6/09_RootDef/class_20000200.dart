@@ -129,6 +129,7 @@ abstract class QuanLyTrangThaiPhuongThucTanCongCoBan with CauTrucThucThiCoBan, V
     /// -----
     if (getTienTrinhTongQuat?.getTienTrinhThucThiChienDau?.getTrangThai?.getMoHinh?.onCheckBoolDangThucThi() == true) {
       onVoidCapNhatChiSoTangTienTheoThoiGianThuc();
+      // getChiSoTangTienTheoThoiGianThuc
 
       ///
       /// TODO:
@@ -596,60 +597,352 @@ abstract class QuanLyTrangThaiPhuongThucTanCongCoBan with CauTrucThucThiCoBan, V
     dxTrongTamChienDauCo = viTriChienDauCo?.getDxTrongTamNotNull ?? 0;
     dyTrongTamChienDauCo = viTriChienDauCo?.getDyTrongTamNotNull ?? 0;
 
+    double dxTrongTamViTriXuatPhat = 0;
+    double dyTrongTamViTriXuatPhat = 0;
+
     ///
     /// TODO: Cập nhật biên dưới
     ///
-    // await trangThai?.getMoHinh?.caiDatBienDuoi(
-    //   value:
-    //       (chienDauCo?.getPhuongThuc?.getPhuongThucBay?.getViTri?.getBienDuoiNotNull ?? 0) +
-    //       (chienDauCo?.getPhuongThuc?.getPhuongThucBay?.getViTri?.getChieuCaoThanNotNull ?? 0) -
-    //       20.0,
-    // );
-    trangThai?.getMoHinh?.onVoidCaiDatDyTrongTamCapNhatCacGiaTriBien(value: dyTrongTamChienDauCo - chieuCaoThanChienDauCo + 50.0);
+    // dyTrongTamViTriXuatPhat = dyTrongTamChienDauCo - chieuCaoThanChienDauCo + 50.0;
+    //
+    // /// -----
+    // /// TODO: Cập nhật biên trái
+    // /// -----
+    // if (getKiemTraKichHoatSungChinhSs01 == true) {
+    //   dxTrongTamViTriXuatPhat = dxTrongTamChienDauCo;
+    // }
+    //
+    // if (getKiemTraKichHoatSungChinhSs02 == true) {
+    //   dxTrongTamViTriXuatPhat = dxTrongTamChienDauCo - 40.0;
+    // }
+    //
+    // if (getKiemTraKichHoatSungChinhSs03 == true) {
+    //   dxTrongTamViTriXuatPhat = dxTrongTamChienDauCo + 40.0;
+    // }
 
-    /// -----
-    /// TODO: Cập nhật biên trái
-    /// -----
-    if (getKiemTraKichHoatSungChinhSs01 == true) {
-      // await trangThai?.getMoHinh?.caiDatBienTrai(
-      //   value:
-      //       (chienDauCo?.getPhuongThuc?.getPhuongThucBay?.getViTri?.getBienTrai ?? 0) +
-      //       (chienDauCo?.getPhuongThuc?.getPhuongThucBay?.getViTri?.getChieuRongThanNotNull ?? 0) / 2 -
-      //       (trangThai.getMoHinh?.getChieuRongThanNotNull ?? 0) / 2,
-      // );
-      trangThai?.getMoHinh?.onVoidCaiDatDxTrongTamCapNhatCacGiaTriBien(value: dxTrongTamChienDauCo);
+    String maDinhDanhHinhThucVienDanVanHanh =
+        getChienDauCoTongQuat?.getChienDauCoTrucTiepThucThiChienDau?.getTrangThai?.getMoHinh?.getThuocTinh?.getThuocTinhTanCong?.getMaDinhDanhHinhThucVienDanVanHanh ??
+        '[HINH_THUC_SS010]';
+
+    switch (maDinhDanhHinhThucVienDanVanHanh) {
+      case '[HINH_THUC_SS010]':
+        {
+          if (getKiemTraKichHoatSungChinhSs01 == true) {
+            dxTrongTamViTriXuatPhat = dxTrongTamChienDauCo;
+            dyTrongTamViTriXuatPhat = dyTrongTamChienDauCo - ((chieuCaoThanChienDauCo / 2) + 5.0);
+          }
+          if (getKiemTraKichHoatSungChinhSs02 == true) {
+            dxTrongTamViTriXuatPhat = dxTrongTamChienDauCo - 35.0;
+            dyTrongTamViTriXuatPhat = dyTrongTamChienDauCo - ((chieuCaoThanChienDauCo / 2) + 5.0);
+          }
+          if (getKiemTraKichHoatSungChinhSs03 == true) {
+            dxTrongTamViTriXuatPhat = dxTrongTamChienDauCo + 35.0;
+            dyTrongTamViTriXuatPhat = dyTrongTamChienDauCo - ((chieuCaoThanChienDauCo / 2) + 5.0);
+          }
+        }
+        break;
+      case '[HINH_THUC_SS020]':
+        {
+          if (getKiemTraKichHoatSungChinhSs01 == true) {
+            dxTrongTamViTriXuatPhat = dxTrongTamChienDauCo;
+            dyTrongTamViTriXuatPhat = dyTrongTamChienDauCo - ((chieuCaoThanChienDauCo / 2) + 20.0);
+          }
+          if (getKiemTraKichHoatSungChinhSs02 == true) {
+            dxTrongTamViTriXuatPhat = dxTrongTamChienDauCo - 35.0;
+            dyTrongTamViTriXuatPhat = dyTrongTamChienDauCo - ((chieuCaoThanChienDauCo / 2) + 5.0);
+          }
+          if (getKiemTraKichHoatSungChinhSs03 == true) {
+            dxTrongTamViTriXuatPhat = dxTrongTamChienDauCo + 35.0;
+            dyTrongTamViTriXuatPhat = dyTrongTamChienDauCo - ((chieuCaoThanChienDauCo / 2) + 5.0);
+          }
+        }
+        break;
+      case '[HINH_THUC_SS030]':
+        {
+          if (getKiemTraKichHoatSungChinhSs01 == true) {
+            dxTrongTamViTriXuatPhat = dxTrongTamChienDauCo;
+            dyTrongTamViTriXuatPhat = dyTrongTamChienDauCo - ((chieuCaoThanChienDauCo / 2) + 20.0);
+          }
+          if (getKiemTraKichHoatSungChinhSs02 == true) {
+            dxTrongTamViTriXuatPhat = dxTrongTamChienDauCo - 35.0;
+            dyTrongTamViTriXuatPhat = dyTrongTamChienDauCo - ((chieuCaoThanChienDauCo / 2) + 5.0);
+          }
+          if (getKiemTraKichHoatSungChinhSs03 == true) {
+            dxTrongTamViTriXuatPhat = dxTrongTamChienDauCo + 35.0;
+            dyTrongTamViTriXuatPhat = dyTrongTamChienDauCo - ((chieuCaoThanChienDauCo / 2) + 5.0);
+          }
+        }
+        break;
+      case '[HINH_THUC_SS040]':
+        {
+          if (getKiemTraKichHoatSungChinhSs01 == true) {
+            dxTrongTamViTriXuatPhat = dxTrongTamChienDauCo;
+            dyTrongTamViTriXuatPhat = dyTrongTamChienDauCo - ((chieuCaoThanChienDauCo / 2) + 20.0);
+          }
+          if (getKiemTraKichHoatSungChinhSs02 == true) {
+            dxTrongTamViTriXuatPhat = dxTrongTamChienDauCo - 35.0;
+            dyTrongTamViTriXuatPhat = dyTrongTamChienDauCo - ((chieuCaoThanChienDauCo / 2) + 5.0);
+          }
+          if (getKiemTraKichHoatSungChinhSs03 == true) {
+            dxTrongTamViTriXuatPhat = dxTrongTamChienDauCo + 35.0;
+            dyTrongTamViTriXuatPhat = dyTrongTamChienDauCo - ((chieuCaoThanChienDauCo / 2) + 5.0);
+          }
+        }
+        break;
+      case '[HINH_THUC_SS050]':
+        {
+          if (getKiemTraKichHoatSungChinhSs01 == true) {
+            dxTrongTamViTriXuatPhat = dxTrongTamChienDauCo;
+            dyTrongTamViTriXuatPhat = dyTrongTamChienDauCo - ((chieuCaoThanChienDauCo / 2) + 20.0);
+          }
+          if (getKiemTraKichHoatSungChinhSs02 == true) {
+            dxTrongTamViTriXuatPhat = dxTrongTamChienDauCo - 35.0;
+            dyTrongTamViTriXuatPhat = dyTrongTamChienDauCo - ((chieuCaoThanChienDauCo / 2) + 5.0);
+          }
+          if (getKiemTraKichHoatSungChinhSs03 == true) {
+            dxTrongTamViTriXuatPhat = dxTrongTamChienDauCo + 35.0;
+            dyTrongTamViTriXuatPhat = dyTrongTamChienDauCo - ((chieuCaoThanChienDauCo / 2) + 5.0);
+          }
+        }
+        break;
+      case '[HINH_THUC_SS060]':
+        {
+          if (getKiemTraKichHoatSungChinhSs01 == true) {
+            dxTrongTamViTriXuatPhat = dxTrongTamChienDauCo;
+            dyTrongTamViTriXuatPhat = dyTrongTamChienDauCo - ((chieuCaoThanChienDauCo / 2) + 20.0);
+          }
+          if (getKiemTraKichHoatSungChinhSs02 == true) {
+            dxTrongTamViTriXuatPhat = dxTrongTamChienDauCo - 35.0;
+            dyTrongTamViTriXuatPhat = dyTrongTamChienDauCo - ((chieuCaoThanChienDauCo / 2) + 5.0);
+          }
+          if (getKiemTraKichHoatSungChinhSs03 == true) {
+            dxTrongTamViTriXuatPhat = dxTrongTamChienDauCo + 35.0;
+            dyTrongTamViTriXuatPhat = dyTrongTamChienDauCo - ((chieuCaoThanChienDauCo / 2) + 5.0);
+          }
+        }
+        break;
+      case '[HINH_THUC_SS070]':
+        {
+          if (getKiemTraKichHoatSungChinhSs01 == true) {
+            dxTrongTamViTriXuatPhat = dxTrongTamChienDauCo;
+            dyTrongTamViTriXuatPhat = dyTrongTamChienDauCo - ((chieuCaoThanChienDauCo / 2) + 15.0);
+          }
+          if (getKiemTraKichHoatSungChinhSs02 == true) {
+            if (getChiSoTangTienThucThiTheoChuKyFrom1To100 % 2 == 0) {
+              dxTrongTamViTriXuatPhat = dxTrongTamChienDauCo - 35.0;
+              dyTrongTamViTriXuatPhat = dyTrongTamChienDauCo - ((chieuCaoThanChienDauCo / 2) + 25.0);
+            } else {
+              dxTrongTamViTriXuatPhat = dxTrongTamChienDauCo - 35.0;
+              dyTrongTamViTriXuatPhat = dyTrongTamChienDauCo - ((chieuCaoThanChienDauCo / 2) + 5.0);
+            }
+          }
+          if (getKiemTraKichHoatSungChinhSs03 == true) {
+            if (getChiSoTangTienThucThiTheoChuKyFrom1To100 % 2 == 0) {
+              dxTrongTamViTriXuatPhat = dxTrongTamChienDauCo + 35.0;
+              dyTrongTamViTriXuatPhat = dyTrongTamChienDauCo - ((chieuCaoThanChienDauCo / 2) + 5.0);
+            } else {
+              dxTrongTamViTriXuatPhat = dxTrongTamChienDauCo + 35.0;
+              dyTrongTamViTriXuatPhat = dyTrongTamChienDauCo - ((chieuCaoThanChienDauCo / 2) + 25.0);
+            }
+          }
+        }
+        break;
+
+      case '[HINH_THUC_SS080]':
+        {
+          if (getKiemTraKichHoatSungChinhSs01 == true) {
+            dxTrongTamViTriXuatPhat = dxTrongTamChienDauCo;
+            dyTrongTamViTriXuatPhat = dyTrongTamChienDauCo - ((chieuCaoThanChienDauCo / 2) + 5.0);
+          }
+          if (getKiemTraKichHoatSungChinhSs02 == true) {
+            dxTrongTamViTriXuatPhat = dxTrongTamChienDauCo - 35.0;
+            dyTrongTamViTriXuatPhat = dyTrongTamChienDauCo - ((chieuCaoThanChienDauCo / 2) + 5.0);
+          }
+          if (getKiemTraKichHoatSungChinhSs03 == true) {
+            dxTrongTamViTriXuatPhat = dxTrongTamChienDauCo + 35.0;
+            dyTrongTamViTriXuatPhat = dyTrongTamChienDauCo - ((chieuCaoThanChienDauCo / 2) + 5.0);
+          }
+        }
+        break;
+
+      case '[HINH_THUC_SS090]':
+        {
+          if (getKiemTraKichHoatSungChinhSs01 == true) {
+            if (getChiSoTangTienThucThiTheoChuKyFrom1To3 == 1) {
+              dxTrongTamViTriXuatPhat = dxTrongTamChienDauCo - 35.0;
+              dyTrongTamViTriXuatPhat = dyTrongTamChienDauCo - ((chieuCaoThanChienDauCo / 2) + 5.0);
+            }
+            if (getChiSoTangTienThucThiTheoChuKyFrom1To3 == 2) {
+              dxTrongTamViTriXuatPhat = dxTrongTamChienDauCo;
+              dyTrongTamViTriXuatPhat = dyTrongTamChienDauCo - ((chieuCaoThanChienDauCo / 2) + 5.0);
+            }
+            if (getChiSoTangTienThucThiTheoChuKyFrom1To3 == 3) {
+              dxTrongTamViTriXuatPhat = dxTrongTamChienDauCo + 35.0;
+              dyTrongTamViTriXuatPhat = dyTrongTamChienDauCo - ((chieuCaoThanChienDauCo / 2) + 5.0);
+            }
+          }
+          if (getKiemTraKichHoatSungChinhSs02 == true) {
+            dxTrongTamViTriXuatPhat = dxTrongTamChienDauCo - 35.0;
+            dyTrongTamViTriXuatPhat = dyTrongTamChienDauCo - ((chieuCaoThanChienDauCo / 2) + 5.0);
+          }
+          if (getKiemTraKichHoatSungChinhSs03 == true) {
+            dxTrongTamViTriXuatPhat = dxTrongTamChienDauCo + 35.0;
+            dyTrongTamViTriXuatPhat = dyTrongTamChienDauCo - ((chieuCaoThanChienDauCo / 2) + 5.0);
+          }
+        }
+        break;
+
+      case '[HINH_THUC_SS100]':
+        {
+          if (getKiemTraKichHoatSungChinhSs01 == true) {
+            dxTrongTamViTriXuatPhat = dxTrongTamChienDauCo;
+            dyTrongTamViTriXuatPhat = dyTrongTamChienDauCo - ((chieuCaoThanChienDauCo / 2) + 5.0);
+          }
+          if (getKiemTraKichHoatSungChinhSs02 == true) {
+            if (getChiSoTangTienThucThiTheoChuKyFrom1To6 == 1 || getChiSoTangTienThucThiTheoChuKyFrom1To6 == 2 || getChiSoTangTienThucThiTheoChuKyFrom1To6 == 3) {
+              dxTrongTamViTriXuatPhat = dxTrongTamChienDauCo - 35.0;
+              dyTrongTamViTriXuatPhat = dyTrongTamChienDauCo - ((chieuCaoThanChienDauCo / 2) + 5.0);
+            }
+            if (getChiSoTangTienThucThiTheoChuKyFrom1To6 == 4 || getChiSoTangTienThucThiTheoChuKyFrom1To6 == 5 || getChiSoTangTienThucThiTheoChuKyFrom1To6 == 6) {
+              dxTrongTamViTriXuatPhat = dxTrongTamChienDauCo - 70.0;
+              dyTrongTamViTriXuatPhat = dyTrongTamChienDauCo - ((chieuCaoThanChienDauCo / 2) + 5.0);
+            }
+          }
+          if (getKiemTraKichHoatSungChinhSs03 == true) {
+            if (getChiSoTangTienThucThiTheoChuKyFrom1To6 == 1 || getChiSoTangTienThucThiTheoChuKyFrom1To6 == 2 || getChiSoTangTienThucThiTheoChuKyFrom1To6 == 3) {
+              dxTrongTamViTriXuatPhat = dxTrongTamChienDauCo + 35.0;
+              dyTrongTamViTriXuatPhat = dyTrongTamChienDauCo - ((chieuCaoThanChienDauCo / 2) + 5.0);
+            }
+            if (getChiSoTangTienThucThiTheoChuKyFrom1To6 == 4 || getChiSoTangTienThucThiTheoChuKyFrom1To6 == 5 || getChiSoTangTienThucThiTheoChuKyFrom1To6 == 6) {
+              dxTrongTamViTriXuatPhat = dxTrongTamChienDauCo + 70.0;
+              dyTrongTamViTriXuatPhat = dyTrongTamChienDauCo - ((chieuCaoThanChienDauCo / 2) + 5.0);
+            }
+          }
+        }
+        break;
+
+      case '[HINH_THUC_SS110]':
+        {
+          if (getKiemTraKichHoatSungChinhSs01 == true) {
+            dxTrongTamViTriXuatPhat = dxTrongTamChienDauCo;
+            dyTrongTamViTriXuatPhat = dyTrongTamChienDauCo - ((chieuCaoThanChienDauCo / 2) + 5.0);
+          }
+          if (getKiemTraKichHoatSungChinhSs02 == true) {
+            if (getChiSoTangTienThucThiTheoChuKyFrom1To6 == 1 || getChiSoTangTienThucThiTheoChuKyFrom1To6 == 2 || getChiSoTangTienThucThiTheoChuKyFrom1To6 == 3) {
+              dxTrongTamViTriXuatPhat = dxTrongTamChienDauCo - 35.0;
+              dyTrongTamViTriXuatPhat = dyTrongTamChienDauCo - ((chieuCaoThanChienDauCo / 2) + 5.0);
+            }
+            if (getChiSoTangTienThucThiTheoChuKyFrom1To6 == 4 || getChiSoTangTienThucThiTheoChuKyFrom1To6 == 5 || getChiSoTangTienThucThiTheoChuKyFrom1To6 == 6) {
+              dxTrongTamViTriXuatPhat = dxTrongTamChienDauCo - 70.0;
+              dyTrongTamViTriXuatPhat = dyTrongTamChienDauCo - ((chieuCaoThanChienDauCo / 2) + 5.0);
+            }
+          }
+          if (getKiemTraKichHoatSungChinhSs03 == true) {
+            if (getChiSoTangTienThucThiTheoChuKyFrom1To6 == 1 || getChiSoTangTienThucThiTheoChuKyFrom1To6 == 2 || getChiSoTangTienThucThiTheoChuKyFrom1To6 == 3) {
+              dxTrongTamViTriXuatPhat = dxTrongTamChienDauCo + 35.0;
+              dyTrongTamViTriXuatPhat = dyTrongTamChienDauCo - ((chieuCaoThanChienDauCo / 2) + 5.0);
+            }
+            if (getChiSoTangTienThucThiTheoChuKyFrom1To6 == 4 || getChiSoTangTienThucThiTheoChuKyFrom1To6 == 5 || getChiSoTangTienThucThiTheoChuKyFrom1To6 == 6) {
+              dxTrongTamViTriXuatPhat = dxTrongTamChienDauCo + 70.0;
+              dyTrongTamViTriXuatPhat = dyTrongTamChienDauCo - ((chieuCaoThanChienDauCo / 2) + 5.0);
+            }
+          }
+        }
+        break;
+
+      case '[HINH_THUC_SS120]':
+        {
+          if (getKiemTraKichHoatSungChinhSs01 == true) {
+            dxTrongTamViTriXuatPhat = dxTrongTamChienDauCo;
+            dyTrongTamViTriXuatPhat = dyTrongTamChienDauCo - ((chieuCaoThanChienDauCo / 2) + 5.0);
+          }
+          if (getKiemTraKichHoatSungChinhSs02 == true) {
+            if (getChiSoTangTienThucThiTheoChuKyFrom1To6 == 1 || getChiSoTangTienThucThiTheoChuKyFrom1To6 == 2 || getChiSoTangTienThucThiTheoChuKyFrom1To6 == 3) {
+              dxTrongTamViTriXuatPhat = dxTrongTamChienDauCo - 35.0;
+              dyTrongTamViTriXuatPhat = dyTrongTamChienDauCo - ((chieuCaoThanChienDauCo / 2) + 5.0);
+            }
+            if (getChiSoTangTienThucThiTheoChuKyFrom1To6 == 4 || getChiSoTangTienThucThiTheoChuKyFrom1To6 == 5 || getChiSoTangTienThucThiTheoChuKyFrom1To6 == 6) {
+              dxTrongTamViTriXuatPhat = dxTrongTamChienDauCo - 70.0;
+              dyTrongTamViTriXuatPhat = dyTrongTamChienDauCo - ((chieuCaoThanChienDauCo / 2) + 5.0);
+            }
+          }
+          if (getKiemTraKichHoatSungChinhSs03 == true) {
+            if (getChiSoTangTienThucThiTheoChuKyFrom1To6 == 1 || getChiSoTangTienThucThiTheoChuKyFrom1To6 == 2 || getChiSoTangTienThucThiTheoChuKyFrom1To6 == 3) {
+              dxTrongTamViTriXuatPhat = dxTrongTamChienDauCo + 35.0;
+              dyTrongTamViTriXuatPhat = dyTrongTamChienDauCo - ((chieuCaoThanChienDauCo / 2) + 5.0);
+            }
+            if (getChiSoTangTienThucThiTheoChuKyFrom1To6 == 4 || getChiSoTangTienThucThiTheoChuKyFrom1To6 == 5 || getChiSoTangTienThucThiTheoChuKyFrom1To6 == 6) {
+              dxTrongTamViTriXuatPhat = dxTrongTamChienDauCo + 70.0;
+              dyTrongTamViTriXuatPhat = dyTrongTamChienDauCo - ((chieuCaoThanChienDauCo / 2) + 5.0);
+            }
+          }
+        }
+        break;
+
+      case '[HINH_THUC_SS130]':
+        {
+          if (getKiemTraKichHoatSungChinhSs01 == true) {
+            dxTrongTamViTriXuatPhat = dxTrongTamChienDauCo;
+            dyTrongTamViTriXuatPhat = dyTrongTamChienDauCo - ((chieuCaoThanChienDauCo / 2) + 15.0);
+          }
+          if (getKiemTraKichHoatSungChinhSs02 == true) {
+            if (getChiSoTangTienThucThiTheoChuKyFrom1To6 == 1) {
+              dxTrongTamViTriXuatPhat = dxTrongTamChienDauCo - 20.0;
+              dyTrongTamViTriXuatPhat = dyTrongTamChienDauCo - ((chieuCaoThanChienDauCo / 2) + 10.0);
+            }
+            if (getChiSoTangTienThucThiTheoChuKyFrom1To6 == 2) {
+              dxTrongTamViTriXuatPhat = dxTrongTamChienDauCo - 25.0;
+              dyTrongTamViTriXuatPhat = dyTrongTamChienDauCo - ((chieuCaoThanChienDauCo / 2) + 20.0);
+            }
+            if (getChiSoTangTienThucThiTheoChuKyFrom1To6 == 3) {
+              dxTrongTamViTriXuatPhat = dxTrongTamChienDauCo - 30.0;
+              dyTrongTamViTriXuatPhat = dyTrongTamChienDauCo - ((chieuCaoThanChienDauCo / 2) + 30.0);
+            }
+            if (getChiSoTangTienThucThiTheoChuKyFrom1To6 == 4) {
+              dxTrongTamViTriXuatPhat = dxTrongTamChienDauCo - 20.0;
+              dyTrongTamViTriXuatPhat = dyTrongTamChienDauCo - ((chieuCaoThanChienDauCo / 2) + 10.0);
+            }
+            if (getChiSoTangTienThucThiTheoChuKyFrom1To6 == 5) {
+              dxTrongTamViTriXuatPhat = dxTrongTamChienDauCo - 25.0;
+              dyTrongTamViTriXuatPhat = dyTrongTamChienDauCo - ((chieuCaoThanChienDauCo / 2) + 20.0);
+            }
+            if (getChiSoTangTienThucThiTheoChuKyFrom1To6 == 6) {
+              dxTrongTamViTriXuatPhat = dxTrongTamChienDauCo - 30.0;
+              dyTrongTamViTriXuatPhat = dyTrongTamChienDauCo - ((chieuCaoThanChienDauCo / 2) + 30.0);
+            }
+          }
+          if (getKiemTraKichHoatSungChinhSs03 == true) {
+            if (getChiSoTangTienThucThiTheoChuKyFrom1To6 == 1) {
+              dxTrongTamViTriXuatPhat = dxTrongTamChienDauCo + 20.0;
+              dyTrongTamViTriXuatPhat = dyTrongTamChienDauCo - ((chieuCaoThanChienDauCo / 2) + 10.0);
+            }
+            if (getChiSoTangTienThucThiTheoChuKyFrom1To6 == 2) {
+              dxTrongTamViTriXuatPhat = dxTrongTamChienDauCo + 25.0;
+              dyTrongTamViTriXuatPhat = dyTrongTamChienDauCo - ((chieuCaoThanChienDauCo / 2) + 20.0);
+            }
+            if (getChiSoTangTienThucThiTheoChuKyFrom1To6 == 3) {
+              dxTrongTamViTriXuatPhat = dxTrongTamChienDauCo + 30.0;
+              dyTrongTamViTriXuatPhat = dyTrongTamChienDauCo - ((chieuCaoThanChienDauCo / 2) + 30.0);
+            }
+            if (getChiSoTangTienThucThiTheoChuKyFrom1To6 == 4) {
+              dxTrongTamViTriXuatPhat = dxTrongTamChienDauCo + 20.0;
+              dyTrongTamViTriXuatPhat = dyTrongTamChienDauCo - ((chieuCaoThanChienDauCo / 2) + 10.0);
+            }
+            if (getChiSoTangTienThucThiTheoChuKyFrom1To6 == 5) {
+              dxTrongTamViTriXuatPhat = dxTrongTamChienDauCo + 25.0;
+              dyTrongTamViTriXuatPhat = dyTrongTamChienDauCo - ((chieuCaoThanChienDauCo / 2) + 20.0);
+            }
+            if (getChiSoTangTienThucThiTheoChuKyFrom1To6 == 6) {
+              dxTrongTamViTriXuatPhat = dxTrongTamChienDauCo + 30.0;
+              dyTrongTamViTriXuatPhat = dyTrongTamChienDauCo - ((chieuCaoThanChienDauCo / 2) + 30.0);
+            }
+          }
+        }
+        break;
     }
 
-    if (getKiemTraKichHoatSungChinhSs02 == true) {
-      //  trangThai?.getMoHinh?.caiDatBienTrai(
-      //   value:
-      //       (chienDauCo?.getPhuongThuc?.getPhuongThucBay?.getViTri?.getBienTrai ?? 0) +
-      //       (chienDauCo?.getPhuongThuc?.getPhuongThucBay?.getViTri?.getChieuRongThanNotNull ?? 0) / 2 -
-      //       (trangThai.getMoHinh?.getChieuRongThanNotNull ?? 0) / 2 -
-      //       20.0,
-      // );
-      trangThai?.getMoHinh?.onVoidCaiDatDxTrongTamCapNhatCacGiaTriBien(value: dxTrongTamChienDauCo - 40.0);
-    }
-
-    if (getKiemTraKichHoatSungChinhSs03 == true) {
-      //  trangThai?.getMoHinh?.caiDatBienTrai(
-      //   value:
-      //       (chienDauCo?.getPhuongThuc?.getPhuongThucBay?.getViTri?.getBienTrai ?? 0) +
-      //       (chienDauCo?.getPhuongThuc?.getPhuongThucBay?.getViTri?.getChieuRongThanNotNull ?? 0) / 2 -
-      //       (trangThai.getMoHinh?.getChieuRongThanNotNull ?? 0) / 2 +
-      //       20.0,
-      // );
-      trangThai?.getMoHinh?.onVoidCaiDatDxTrongTamCapNhatCacGiaTriBien(value: dxTrongTamChienDauCo + 40.0);
-    }
-
-    //  trangThai?.getMoHinh?.onCapNhatCacGiaTriBien(
-    //   bienTrai: null,
-    //   bienPhai: null,
-    //   bienDuoi: null,
-    //   bienTren: null,
-    //   chieuRongThan: null,
-    //   chieuCaoThan: null,
-    // );
+    trangThai?.getMoHinh?.onVoidCaiDatDxTrongTamCapNhatCacGiaTriBien(value: dxTrongTamViTriXuatPhat);
+    trangThai?.getMoHinh?.onVoidCaiDatDyTrongTamCapNhatCacGiaTriBien(value: dyTrongTamViTriXuatPhat);
 
     return;
   }
@@ -658,21 +951,408 @@ abstract class QuanLyTrangThaiPhuongThucTanCongCoBan with CauTrucThucThiCoBan, V
     final double dxDiemXuatPhat = trangThai?.getMoHinh?.getDxTrongTam ?? 0;
     final double dyDiemXuatPhat = trangThai?.getMoHinh?.getDyTrongTam ?? 0;
 
-    double dxDiemLayMucTieu = dxDiemXuatPhat;
+    double dxTrongTamViTriLayMucTieu = dxDiemXuatPhat;
+    double dyTrongTamViTriLayMucTieu = (dyDiemXuatPhat.abs() + 100.0) * (-1);
+
     if (getKiemTraKichHoatSungChinhSs01 == true) {
       ///
     }
     if (getKiemTraKichHoatSungChinhSs02 == true) {
-      dxDiemLayMucTieu = dxDiemLayMucTieu - 20.0;
+      dxTrongTamViTriLayMucTieu = dxDiemXuatPhat - 20.0;
     }
     if (getKiemTraKichHoatSungChinhSs03 == true) {
-      dxDiemLayMucTieu = dxDiemLayMucTieu + 20.0;
+      dxTrongTamViTriLayMucTieu = dxDiemXuatPhat + 20.0;
     }
 
-    final double dyDiemLayMucTieu = (dyDiemXuatPhat.abs() + 100.0) * (-1);
+    String maDinhDanhHinhThucVienDanVanHanh =
+        getChienDauCoTongQuat?.getChienDauCoTrucTiepThucThiChienDau?.getTrangThai?.getMoHinh?.getThuocTinh?.getThuocTinhTanCong?.getMaDinhDanhHinhThucVienDanVanHanh ??
+        '[HINH_THUC_SS010]';
 
-    trangThai?.getMoHinh?.onVoidCaiDatDxViTriLayMucTieu(value: dxDiemLayMucTieu);
-    trangThai?.getMoHinh?.onVoidCaiDatDyViTriLayMucTieu(value: dyDiemLayMucTieu);
+    switch (maDinhDanhHinhThucVienDanVanHanh) {
+      case '[HINH_THUC_SS010]':
+        {
+          if (getKiemTraKichHoatSungChinhSs01 == true) {
+            dxTrongTamViTriLayMucTieu = dxDiemXuatPhat;
+            dyTrongTamViTriLayMucTieu = (dyDiemXuatPhat.abs() + 100.0) * (-1);
+          }
+          if (getKiemTraKichHoatSungChinhSs02 == true) {
+            dxTrongTamViTriLayMucTieu = dxDiemXuatPhat - 20.0;
+            dyTrongTamViTriLayMucTieu = (dyDiemXuatPhat.abs() + 100.0) * (-1);
+          }
+          if (getKiemTraKichHoatSungChinhSs03 == true) {
+            dxTrongTamViTriLayMucTieu = dxDiemXuatPhat + 20.0;
+            dyTrongTamViTriLayMucTieu = (dyDiemXuatPhat.abs() + 100.0) * (-1);
+          }
+        }
+        break;
+      case '[HINH_THUC_SS020]':
+        {
+          if (getKiemTraKichHoatSungChinhSs01 == true) {
+            dxTrongTamViTriLayMucTieu = dxDiemXuatPhat;
+            dyTrongTamViTriLayMucTieu = (dyDiemXuatPhat.abs() + 100.0) * (-1);
+          }
+          if (getKiemTraKichHoatSungChinhSs02 == true) {
+            dxTrongTamViTriLayMucTieu = dxDiemXuatPhat - 20.0;
+            dyTrongTamViTriLayMucTieu = (dyDiemXuatPhat.abs() + 100.0) * (-1);
+          }
+          if (getKiemTraKichHoatSungChinhSs03 == true) {
+            dxTrongTamViTriLayMucTieu = dxDiemXuatPhat + 20.0;
+            dyTrongTamViTriLayMucTieu = (dyDiemXuatPhat.abs() + 100.0) * (-1);
+          }
+        }
+        break;
+      case '[HINH_THUC_SS030]':
+        {
+          if (getKiemTraKichHoatSungChinhSs01 == true) {
+            dxTrongTamViTriLayMucTieu = dxDiemXuatPhat;
+            dyTrongTamViTriLayMucTieu = (dyDiemXuatPhat.abs() + 100.0) * (-1);
+          }
+          if (getKiemTraKichHoatSungChinhSs02 == true) {
+            if (getChiSoTangTienThucThiTheoChuKyFrom1To100 % 2 == 0) {
+              dxTrongTamViTriLayMucTieu = dxDiemXuatPhat - 100.0;
+              dyTrongTamViTriLayMucTieu = (dyDiemXuatPhat.abs() + 100.0) * (-1);
+            } else {
+              dxTrongTamViTriLayMucTieu = dxDiemXuatPhat - 20.0;
+              dyTrongTamViTriLayMucTieu = (dyDiemXuatPhat.abs() + 100.0) * (-1);
+            }
+          }
+          if (getKiemTraKichHoatSungChinhSs03 == true) {
+            if (getChiSoTangTienThucThiTheoChuKyFrom1To100 % 2 == 0) {
+              dxTrongTamViTriLayMucTieu = dxDiemXuatPhat + 100.0;
+              dyTrongTamViTriLayMucTieu = (dyDiemXuatPhat.abs() + 100.0) * (-1);
+            } else {
+              dxTrongTamViTriLayMucTieu = dxDiemXuatPhat + 20.0;
+              dyTrongTamViTriLayMucTieu = (dyDiemXuatPhat.abs() + 100.0) * (-1);
+            }
+          }
+        }
+        break;
+
+      case '[HINH_THUC_SS040]':
+        {
+          if (getKiemTraKichHoatSungChinhSs01 == true) {
+            dxTrongTamViTriLayMucTieu = dxDiemXuatPhat;
+            dyTrongTamViTriLayMucTieu = (dyDiemXuatPhat.abs() + 100.0) * (-1);
+          }
+          if (getKiemTraKichHoatSungChinhSs02 == true) {
+            if (getChiSoTangTienThucThiTheoChuKyFrom1To100 % 2 == 0) {
+              dxTrongTamViTriLayMucTieu = dxDiemXuatPhat - 150.0;
+              dyTrongTamViTriLayMucTieu = (dyDiemXuatPhat.abs() + 100.0) * (-1);
+            } else {
+              dxTrongTamViTriLayMucTieu = dxDiemXuatPhat - 100.0;
+              dyTrongTamViTriLayMucTieu = (dyDiemXuatPhat.abs() + 100.0) * (-1);
+            }
+          }
+          if (getKiemTraKichHoatSungChinhSs03 == true) {
+            if (getChiSoTangTienThucThiTheoChuKyFrom1To100 % 2 == 0) {
+              dxTrongTamViTriLayMucTieu = dxDiemXuatPhat + 150.0;
+              dyTrongTamViTriLayMucTieu = (dyDiemXuatPhat.abs() + 100.0) * (-1);
+            } else {
+              dxTrongTamViTriLayMucTieu = dxDiemXuatPhat + 100.0;
+              dyTrongTamViTriLayMucTieu = (dyDiemXuatPhat.abs() + 100.0) * (-1);
+            }
+          }
+        }
+        break;
+
+      case '[HINH_THUC_SS050]':
+        {
+          if (getKiemTraKichHoatSungChinhSs01 == true) {
+            if (getChiSoTangTienThucThiTheoChuKyFrom1To3 == 2) {
+              dxTrongTamViTriLayMucTieu = dxDiemXuatPhat;
+              dyTrongTamViTriLayMucTieu = (dyDiemXuatPhat.abs() + 100.0) * (-1);
+            } else if (getChiSoTangTienThucThiTheoChuKyFrom1To3 == 1) {
+              dxTrongTamViTriLayMucTieu = dxDiemXuatPhat + 100.0;
+              dyTrongTamViTriLayMucTieu = (dyDiemXuatPhat.abs() + 100.0) * (-1);
+            } else if (getChiSoTangTienThucThiTheoChuKyFrom1To3 == 3) {
+              dxTrongTamViTriLayMucTieu = dxDiemXuatPhat - 100.0;
+              dyTrongTamViTriLayMucTieu = (dyDiemXuatPhat.abs() + 100.0) * (-1);
+            }
+          }
+          if (getKiemTraKichHoatSungChinhSs02 == true) {
+            dxTrongTamViTriLayMucTieu = dxDiemXuatPhat - 100.0;
+            dyTrongTamViTriLayMucTieu = (dyDiemXuatPhat.abs() + 100.0) * (-1);
+          }
+          if (getKiemTraKichHoatSungChinhSs03 == true) {
+            dxTrongTamViTriLayMucTieu = dxDiemXuatPhat + 100.0;
+            dyTrongTamViTriLayMucTieu = (dyDiemXuatPhat.abs() + 100.0) * (-1);
+          }
+        }
+        break;
+
+      case '[HINH_THUC_SS060]':
+        {
+          if (getKiemTraKichHoatSungChinhSs01 == true) {
+            dxTrongTamViTriLayMucTieu = dxDiemXuatPhat;
+            dyTrongTamViTriLayMucTieu = (dyDiemXuatPhat.abs() + 100.0) * (-1);
+          }
+          if (getKiemTraKichHoatSungChinhSs02 == true) {
+            if (getChiSoTangTienThucThiTheoChuKyFrom1To6 == 1 || getChiSoTangTienThucThiTheoChuKyFrom1To6 == 2 || getChiSoTangTienThucThiTheoChuKyFrom1To6 == 3) {
+              dxTrongTamViTriLayMucTieu = dxDiemXuatPhat - 20.0;
+              dyTrongTamViTriLayMucTieu = (dyDiemXuatPhat.abs() + 100.0) * (-1);
+            }
+            if (getChiSoTangTienThucThiTheoChuKyFrom1To6 == 4 || getChiSoTangTienThucThiTheoChuKyFrom1To6 == 5 || getChiSoTangTienThucThiTheoChuKyFrom1To6 == 6) {
+              dxTrongTamViTriLayMucTieu = dxDiemXuatPhat - 170.0;
+              dyTrongTamViTriLayMucTieu = (dyDiemXuatPhat.abs() + 100.0) * (-1);
+            }
+          }
+          if (getKiemTraKichHoatSungChinhSs03 == true) {
+            if (getChiSoTangTienThucThiTheoChuKyFrom1To6 == 1 || getChiSoTangTienThucThiTheoChuKyFrom1To6 == 2 || getChiSoTangTienThucThiTheoChuKyFrom1To6 == 3) {
+              dxTrongTamViTriLayMucTieu = dxDiemXuatPhat + 20.0;
+              dyTrongTamViTriLayMucTieu = (dyDiemXuatPhat.abs() + 100.0) * (-1);
+            }
+            if (getChiSoTangTienThucThiTheoChuKyFrom1To6 == 4 || getChiSoTangTienThucThiTheoChuKyFrom1To6 == 5 || getChiSoTangTienThucThiTheoChuKyFrom1To6 == 6) {
+              dxTrongTamViTriLayMucTieu = dxDiemXuatPhat + 170.0;
+              dyTrongTamViTriLayMucTieu = (dyDiemXuatPhat.abs() + 100.0) * (-1);
+            }
+          }
+        }
+        break;
+
+      case '[HINH_THUC_SS070]':
+        {
+          if (getKiemTraKichHoatSungChinhSs01 == true) {
+            dxTrongTamViTriLayMucTieu = dxDiemXuatPhat;
+            dyTrongTamViTriLayMucTieu = (dyDiemXuatPhat.abs() + 100.0) * (-1);
+          }
+          if (getKiemTraKichHoatSungChinhSs02 == true) {
+            dxTrongTamViTriLayMucTieu = dxDiemXuatPhat - 20.0;
+            dyTrongTamViTriLayMucTieu = (dyDiemXuatPhat.abs() + 100.0) * (-1);
+          }
+          if (getKiemTraKichHoatSungChinhSs03 == true) {
+            dxTrongTamViTriLayMucTieu = dxDiemXuatPhat + 20.0;
+            dyTrongTamViTriLayMucTieu = (dyDiemXuatPhat.abs() + 100.0) * (-1);
+          }
+        }
+        break;
+
+      case '[HINH_THUC_SS080]':
+        {
+          if (getKiemTraKichHoatSungChinhSs01 == true) {
+            dxTrongTamViTriLayMucTieu = dxDiemXuatPhat;
+            dyTrongTamViTriLayMucTieu = (dyDiemXuatPhat.abs() + 100.0) * (-1);
+          }
+          if (getKiemTraKichHoatSungChinhSs02 == true) {
+            if (getChiSoTangTienThucThiTheoChuKyFrom1To6 == 1 || getChiSoTangTienThucThiTheoChuKyFrom1To6 == 2 || getChiSoTangTienThucThiTheoChuKyFrom1To6 == 3) {
+              dxTrongTamViTriLayMucTieu = dxDiemXuatPhat + 170.0;
+              dyTrongTamViTriLayMucTieu = (dyDiemXuatPhat.abs() + 100.0) * (-1);
+            }
+            if (getChiSoTangTienThucThiTheoChuKyFrom1To6 == 4 || getChiSoTangTienThucThiTheoChuKyFrom1To6 == 5 || getChiSoTangTienThucThiTheoChuKyFrom1To6 == 6) {
+              dxTrongTamViTriLayMucTieu = dxDiemXuatPhat - 170.0;
+              dyTrongTamViTriLayMucTieu = (dyDiemXuatPhat.abs() + 100.0) * (-1);
+            }
+          }
+          if (getKiemTraKichHoatSungChinhSs03 == true) {
+            if (getChiSoTangTienThucThiTheoChuKyFrom1To6 == 1 || getChiSoTangTienThucThiTheoChuKyFrom1To6 == 2 || getChiSoTangTienThucThiTheoChuKyFrom1To6 == 3) {
+              dxTrongTamViTriLayMucTieu = dxDiemXuatPhat - 170.0;
+              dyTrongTamViTriLayMucTieu = (dyDiemXuatPhat.abs() + 100.0) * (-1);
+            }
+            if (getChiSoTangTienThucThiTheoChuKyFrom1To6 == 4 || getChiSoTangTienThucThiTheoChuKyFrom1To6 == 5 || getChiSoTangTienThucThiTheoChuKyFrom1To6 == 6) {
+              dxTrongTamViTriLayMucTieu = dxDiemXuatPhat + 170.0;
+              dyTrongTamViTriLayMucTieu = (dyDiemXuatPhat.abs() + 100.0) * (-1);
+            }
+          }
+        }
+        break;
+
+      case '[HINH_THUC_SS090]':
+        {
+          if (getKiemTraKichHoatSungChinhSs01 == true) {
+            if (getChiSoTangTienThucThiTheoChuKyFrom1To3 == 1) {
+              dxTrongTamViTriLayMucTieu = dxDiemXuatPhat - 170.0;
+              dyTrongTamViTriLayMucTieu = (dyDiemXuatPhat.abs() + 100.0) * (-1);
+            }
+            if (getChiSoTangTienThucThiTheoChuKyFrom1To3 == 2) {
+              dxTrongTamViTriLayMucTieu = dxDiemXuatPhat;
+              dyTrongTamViTriLayMucTieu = (dyDiemXuatPhat.abs() + 100.0) * (-1);
+            }
+            if (getChiSoTangTienThucThiTheoChuKyFrom1To3 == 3) {
+              dxTrongTamViTriLayMucTieu = dxDiemXuatPhat + 170.0;
+              dyTrongTamViTriLayMucTieu = (dyDiemXuatPhat.abs() + 100.0) * (-1);
+            }
+          }
+          if (getKiemTraKichHoatSungChinhSs02 == true) {
+            if (getChiSoTangTienThucThiTheoChuKyFrom1To3 == 1) {
+              dxTrongTamViTriLayMucTieu = dxDiemXuatPhat - 35.0;
+              dyTrongTamViTriLayMucTieu = (dyDiemXuatPhat.abs() + 100.0) * (-1);
+            }
+            if (getChiSoTangTienThucThiTheoChuKyFrom1To3 == 2) {
+              dxTrongTamViTriLayMucTieu = dxDiemXuatPhat - 35.0;
+              dyTrongTamViTriLayMucTieu = (dyDiemXuatPhat.abs() + 100.0) * (-1);
+            }
+            if (getChiSoTangTienThucThiTheoChuKyFrom1To3 == 3) {
+              dxTrongTamViTriLayMucTieu = dxDiemXuatPhat - 35.0;
+              dyTrongTamViTriLayMucTieu = (dyDiemXuatPhat.abs() + 100.0) * (-1);
+            }
+          }
+          if (getKiemTraKichHoatSungChinhSs03 == true) {
+            if (getChiSoTangTienThucThiTheoChuKyFrom1To3 == 1) {
+              dxTrongTamViTriLayMucTieu = dxDiemXuatPhat + 35.0;
+              dyTrongTamViTriLayMucTieu = (dyDiemXuatPhat.abs() + 100.0) * (-1);
+            }
+            if (getChiSoTangTienThucThiTheoChuKyFrom1To3 == 2) {
+              dxTrongTamViTriLayMucTieu = dxDiemXuatPhat + 35.0;
+              dyTrongTamViTriLayMucTieu = (dyDiemXuatPhat.abs() + 100.0) * (-1);
+            }
+            if (getChiSoTangTienThucThiTheoChuKyFrom1To3 == 3) {
+              dxTrongTamViTriLayMucTieu = dxDiemXuatPhat + 35.0;
+              dyTrongTamViTriLayMucTieu = (dyDiemXuatPhat.abs() + 100.0) * (-1);
+            }
+          }
+        }
+        break;
+
+      case '[HINH_THUC_SS100]':
+        {
+          if (getKiemTraKichHoatSungChinhSs01 == true) {
+            dxTrongTamViTriLayMucTieu = dxDiemXuatPhat;
+            dyTrongTamViTriLayMucTieu = (dyDiemXuatPhat.abs() + 100.0) * (-1);
+          }
+          if (getKiemTraKichHoatSungChinhSs02 == true) {
+            if (getChiSoTangTienThucThiTheoChuKyFrom1To6 == 1 || getChiSoTangTienThucThiTheoChuKyFrom1To6 == 2 || getChiSoTangTienThucThiTheoChuKyFrom1To6 == 3) {
+              dxTrongTamViTriLayMucTieu = dxDiemXuatPhat + 35.0;
+              dyTrongTamViTriLayMucTieu = (dyDiemXuatPhat.abs() + 100.0) * (-1);
+            }
+            if (getChiSoTangTienThucThiTheoChuKyFrom1To6 == 4 || getChiSoTangTienThucThiTheoChuKyFrom1To6 == 5 || getChiSoTangTienThucThiTheoChuKyFrom1To6 == 6) {
+              dxTrongTamViTriLayMucTieu = dxDiemXuatPhat - 70.0;
+              dyTrongTamViTriLayMucTieu = (dyDiemXuatPhat.abs() + 100.0) * (-1);
+            }
+          }
+          if (getKiemTraKichHoatSungChinhSs03 == true) {
+            if (getChiSoTangTienThucThiTheoChuKyFrom1To6 == 1 || getChiSoTangTienThucThiTheoChuKyFrom1To6 == 2 || getChiSoTangTienThucThiTheoChuKyFrom1To6 == 3) {
+              dxTrongTamViTriLayMucTieu = dxDiemXuatPhat - 35.0;
+              dyTrongTamViTriLayMucTieu = (dyDiemXuatPhat.abs() + 100.0) * (-1);
+            }
+            if (getChiSoTangTienThucThiTheoChuKyFrom1To6 == 4 || getChiSoTangTienThucThiTheoChuKyFrom1To6 == 5 || getChiSoTangTienThucThiTheoChuKyFrom1To6 == 6) {
+              dxTrongTamViTriLayMucTieu = dxDiemXuatPhat + 70.0;
+              dyTrongTamViTriLayMucTieu = (dyDiemXuatPhat.abs() + 100.0) * (-1);
+            }
+          }
+        }
+        break;
+
+      case '[HINH_THUC_SS110]':
+        {
+          if (getKiemTraKichHoatSungChinhSs01 == true) {
+            dxTrongTamViTriLayMucTieu = dxDiemXuatPhat;
+            dyTrongTamViTriLayMucTieu = (dyDiemXuatPhat.abs() + 100.0) * (-1);
+          }
+          if (getKiemTraKichHoatSungChinhSs02 == true) {
+            if (getChiSoTangTienThucThiTheoChuKyFrom1To6 == 1 || getChiSoTangTienThucThiTheoChuKyFrom1To6 == 2 || getChiSoTangTienThucThiTheoChuKyFrom1To6 == 3) {
+              dxTrongTamViTriLayMucTieu = dxDiemXuatPhat + 35.0;
+              dyTrongTamViTriLayMucTieu = (dyDiemXuatPhat.abs() + 100.0) * (-1);
+            }
+            if (getChiSoTangTienThucThiTheoChuKyFrom1To6 == 4 || getChiSoTangTienThucThiTheoChuKyFrom1To6 == 5 || getChiSoTangTienThucThiTheoChuKyFrom1To6 == 6) {
+              dxTrongTamViTriLayMucTieu = dxDiemXuatPhat + 300.0;
+              dyTrongTamViTriLayMucTieu = (dyDiemXuatPhat.abs() + 100.0) * (-1);
+            }
+          }
+          if (getKiemTraKichHoatSungChinhSs03 == true) {
+            if (getChiSoTangTienThucThiTheoChuKyFrom1To6 == 1 || getChiSoTangTienThucThiTheoChuKyFrom1To6 == 2 || getChiSoTangTienThucThiTheoChuKyFrom1To6 == 3) {
+              dxTrongTamViTriLayMucTieu = dxDiemXuatPhat - 35.0;
+              dyTrongTamViTriLayMucTieu = (dyDiemXuatPhat.abs() + 100.0) * (-1);
+            }
+            if (getChiSoTangTienThucThiTheoChuKyFrom1To6 == 4 || getChiSoTangTienThucThiTheoChuKyFrom1To6 == 5 || getChiSoTangTienThucThiTheoChuKyFrom1To6 == 6) {
+              dxTrongTamViTriLayMucTieu = dxDiemXuatPhat - 300.0;
+              dyTrongTamViTriLayMucTieu = (dyDiemXuatPhat.abs() + 100.0) * (-1);
+            }
+          }
+        }
+        break;
+
+      case '[HINH_THUC_SS120]':
+        {
+          if (getKiemTraKichHoatSungChinhSs01 == true) {
+            dxTrongTamViTriLayMucTieu = dxDiemXuatPhat;
+            dyTrongTamViTriLayMucTieu = (dyDiemXuatPhat.abs() + 100.0) * (-1);
+          }
+          if (getKiemTraKichHoatSungChinhSs02 == true) {
+            if (getChiSoTangTienThucThiTheoChuKyFrom1To6 == 1 || getChiSoTangTienThucThiTheoChuKyFrom1To6 == 2 || getChiSoTangTienThucThiTheoChuKyFrom1To6 == 3) {
+              dxTrongTamViTriLayMucTieu = dxDiemXuatPhat - 150.0;
+              dyTrongTamViTriLayMucTieu = (dyDiemXuatPhat.abs() + 100.0) * (-1);
+            }
+            if (getChiSoTangTienThucThiTheoChuKyFrom1To6 == 4 || getChiSoTangTienThucThiTheoChuKyFrom1To6 == 5 || getChiSoTangTienThucThiTheoChuKyFrom1To6 == 6) {
+              dxTrongTamViTriLayMucTieu = dxDiemXuatPhat + 300.0;
+              dyTrongTamViTriLayMucTieu = (dyDiemXuatPhat.abs() + 100.0) * (-1);
+            }
+          }
+          if (getKiemTraKichHoatSungChinhSs03 == true) {
+            if (getChiSoTangTienThucThiTheoChuKyFrom1To6 == 1 || getChiSoTangTienThucThiTheoChuKyFrom1To6 == 2 || getChiSoTangTienThucThiTheoChuKyFrom1To6 == 3) {
+              dxTrongTamViTriLayMucTieu = dxDiemXuatPhat + 150.0;
+              dyTrongTamViTriLayMucTieu = (dyDiemXuatPhat.abs() + 100.0) * (-1);
+            }
+            if (getChiSoTangTienThucThiTheoChuKyFrom1To6 == 4 || getChiSoTangTienThucThiTheoChuKyFrom1To6 == 5 || getChiSoTangTienThucThiTheoChuKyFrom1To6 == 6) {
+              dxTrongTamViTriLayMucTieu = dxDiemXuatPhat - 300.0;
+              dyTrongTamViTriLayMucTieu = (dyDiemXuatPhat.abs() + 100.0) * (-1);
+            }
+          }
+        }
+        break;
+
+      case '[HINH_THUC_SS130]':
+        {
+          if (getKiemTraKichHoatSungChinhSs01 == true) {
+            dxTrongTamViTriLayMucTieu = dxDiemXuatPhat;
+            dyTrongTamViTriLayMucTieu = (dyDiemXuatPhat.abs() + 100.0) * (-1);
+          }
+          if (getKiemTraKichHoatSungChinhSs02 == true) {
+            if (getChiSoTangTienThucThiTheoChuKyFrom1To6 == 1) {
+              dxTrongTamViTriLayMucTieu = dxDiemXuatPhat - 100;
+              dyTrongTamViTriLayMucTieu = (dyDiemXuatPhat.abs() + 100.0) * (-1);
+            }
+            if (getChiSoTangTienThucThiTheoChuKyFrom1To6 == 2) {
+              dxTrongTamViTriLayMucTieu = dxDiemXuatPhat - 150;
+              dyTrongTamViTriLayMucTieu = (dyDiemXuatPhat.abs() + 100.0) * (-1);
+            }
+            if (getChiSoTangTienThucThiTheoChuKyFrom1To6 == 3) {
+              dxTrongTamViTriLayMucTieu = dxDiemXuatPhat - 300;
+              dyTrongTamViTriLayMucTieu = (dyDiemXuatPhat.abs() + 100.0) * (-1);
+            }
+            if (getChiSoTangTienThucThiTheoChuKyFrom1To6 == 4) {
+              dxTrongTamViTriLayMucTieu = dxDiemXuatPhat - 300;
+              dyTrongTamViTriLayMucTieu = (dyDiemXuatPhat.abs() + 100.0) * (-1);
+            }
+            if (getChiSoTangTienThucThiTheoChuKyFrom1To6 == 5) {
+              dxTrongTamViTriLayMucTieu = dxDiemXuatPhat - 400;
+              dyTrongTamViTriLayMucTieu = (dyDiemXuatPhat.abs() + 100.0) * (-1);
+            }
+            if (getChiSoTangTienThucThiTheoChuKyFrom1To6 == 6) {
+              dxTrongTamViTriLayMucTieu = dxDiemXuatPhat - 500;
+              dyTrongTamViTriLayMucTieu = (dyDiemXuatPhat.abs() + 100.0) * (-1);
+            }
+          }
+          if (getKiemTraKichHoatSungChinhSs03 == true) {
+            if (getChiSoTangTienThucThiTheoChuKyFrom1To6 == 1) {
+              dxTrongTamViTriLayMucTieu = dxDiemXuatPhat + 100;
+              dyTrongTamViTriLayMucTieu = (dyDiemXuatPhat.abs() + 100.0) * (-1);
+            }
+            if (getChiSoTangTienThucThiTheoChuKyFrom1To6 == 2) {
+              dxTrongTamViTriLayMucTieu = dxDiemXuatPhat + 150;
+              dyTrongTamViTriLayMucTieu = (dyDiemXuatPhat.abs() + 100.0) * (-1);
+            }
+            if (getChiSoTangTienThucThiTheoChuKyFrom1To6 == 3) {
+              dxTrongTamViTriLayMucTieu = dxDiemXuatPhat + 300;
+              dyTrongTamViTriLayMucTieu = (dyDiemXuatPhat.abs() + 100.0) * (-1);
+            }
+            if (getChiSoTangTienThucThiTheoChuKyFrom1To6 == 4) {
+              dxTrongTamViTriLayMucTieu = dxDiemXuatPhat + 300;
+              dyTrongTamViTriLayMucTieu = (dyDiemXuatPhat.abs() + 100.0) * (-1);
+            }
+            if (getChiSoTangTienThucThiTheoChuKyFrom1To6 == 5) {
+              dxTrongTamViTriLayMucTieu = dxDiemXuatPhat + 400;
+              dyTrongTamViTriLayMucTieu = (dyDiemXuatPhat.abs() + 100.0) * (-1);
+            }
+            if (getChiSoTangTienThucThiTheoChuKyFrom1To6 == 6) {
+              dxTrongTamViTriLayMucTieu = dxDiemXuatPhat + 500;
+              dyTrongTamViTriLayMucTieu = (dyDiemXuatPhat.abs() + 100.0) * (-1);
+            }
+          }
+        }
+        break;
+    }
+
+    trangThai?.getMoHinh?.onVoidCaiDatDxViTriLayMucTieu(value: dxTrongTamViTriLayMucTieu);
+    trangThai?.getMoHinh?.onVoidCaiDatDyViTriLayMucTieu(value: dyTrongTamViTriLayMucTieu);
 
     ///
     return;
@@ -695,7 +1375,13 @@ abstract class QuanLyTrangThaiPhuongThucTanCongCoBan with CauTrucThucThiCoBan, V
 
   void onVoidCaiDatKichThuoc({required TrangThaiVienDanCoBan? trangThai}) {
     donViSpriteVuKhiTanCongCoBan ??=
-        getChienDauCoTongQuat?.getChienDauCoTrucTiepThucThiChienDau?.getTrangThai?.getMoHinh?.getThuocTinh?.getThuocTinhHinhAnhSprite?.getDonViSpriteNgoaiHinhVuKhiTanCongThongMinhSS01;
+        getChienDauCoTongQuat
+            ?.getChienDauCoTrucTiepThucThiChienDau
+            ?.getTrangThai
+            ?.getMoHinh
+            ?.getThuocTinh
+            ?.getThuocTinhHinhAnhSprite
+            ?.getDonViSpriteNgoaiHinhVuKhiTanCongThongMinhSS01;
 
     chieuRongThanNguyenBan = trangThai?.getMoHinh?.getChieuRongThan ?? 20.0;
     chieuCaoThanNguyenBan = trangThai?.getMoHinh?.getChieuCaoThan ?? 20.0;
@@ -736,6 +1422,10 @@ abstract class QuanLyTrangThaiPhuongThucTanCongCoBan with CauTrucThucThiCoBan, V
     MoHinhChienDauCoTongQuat? chienDauCo = getChienDauCoTongQuat?.getChienDauCoTrucTiepThucThiChienDau?.getTrangThai?.getMoHinh;
 
     if (QuanLyDongThoiGianCoBan.onKiemTraKichHoat(chiSoKichHoat: 50, chiSoTangTienTheoThoiGianThuc: getChiSoTangTienTheoThoiGianThuc) == true) {
+      onVoidCapNhatTuDongChiSoTangTienThucThiTheoChuKyFrom1To3();
+      onVoidCapNhatTuDongChiSoTangTienThucThiTheoChuKyFrom1To6();
+      onVoidCapNhatTuDongChiSoTangTienThucThiTheoChuKyFrom1To100();
+
       return true;
     }
 
