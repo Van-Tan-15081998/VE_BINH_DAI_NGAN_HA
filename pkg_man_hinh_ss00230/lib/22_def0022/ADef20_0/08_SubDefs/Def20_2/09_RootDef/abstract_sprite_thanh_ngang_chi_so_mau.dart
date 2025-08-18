@@ -82,6 +82,21 @@ abstract class SPRITETHANHNGANGCHISOMAUCOBAN extends SpriteAnimationComponent wi
   }
 
   /// -----
+  /// TODO:
+  /// -----
+  SpriteMaDinhDanhThanhNgangChiSoPhuongTien? _spriteMaDinhDanhThanhNgangChiSoPhuongTien;
+  SpriteMaDinhDanhThanhNgangChiSoPhuongTien? get getSpriteMaDinhDanhThanhNgangChiSoPhuongTien => _spriteMaDinhDanhThanhNgangChiSoPhuongTien;
+  Future<void> caiDatSpriteMaDinhDanhThanhNgangChiSoPhuongTien({required SpriteMaDinhDanhThanhNgangChiSoPhuongTien? value}) async {
+    _spriteMaDinhDanhThanhNgangChiSoPhuongTien = value;
+
+    if (getSpriteMaDinhDanhThanhNgangChiSoPhuongTien != null && kDebugMode == true) {
+      add(getSpriteMaDinhDanhThanhNgangChiSoPhuongTien!);
+    }
+
+    return;
+  }
+
+  /// -----
   /// TODO: Cài Đặt Nguồn Hình Ảnh
   /// -----
   void onVoidCaiDatNguonHinhAnh() {
@@ -158,6 +173,8 @@ abstract class SPRITETHANHNGANGCHISOMAUCOBAN extends SpriteAnimationComponent wi
     if (_khungVienChiSoMau != null && _khungVienChiSoMau?.isMounted == false) {
       add(_khungVienChiSoMau!);
     }
+
+    await caiDatSpriteMaDinhDanhThanhNgangChiSoPhuongTien(value: SpriteMaDinhDanhThanhNgangChiSoPhuongTien(maDinhDanh: 0));
 
     return;
   }
@@ -602,5 +619,33 @@ class DonViSpriteAnimationCoBan {
     caiDatMaDinhDanhHinhThuc(value: maDinhDanhHinhThuc);
     caiDatSpriteAnimation(value: spriteAnimation);
     caiDatSprite(value: sprite);
+  }
+}
+
+class SpriteMaDinhDanhThanhNgangChiSoPhuongTien extends TextComponent with HasVisibility {
+
+  int maDinhDanh = 0;
+  void caiDatMaDinhDanh({required int value}) async {
+    maDinhDanh = value;
+    text = '$maDinhDanh';
+
+    return;
+  }
+
+  SpriteMaDinhDanhThanhNgangChiSoPhuongTien({required int? maDinhDanh}) {
+    maDinhDanh = maDinhDanh;
+  }
+
+  @override
+  Future<void> onLoad() async {
+    super.onLoad();
+
+    anchor = Anchor.center;
+
+    position.setValues(10.0, 10.0);
+
+    text = '$maDinhDanh';
+
+    textRenderer = TextPaint(style: TextStyle(fontSize: 12, fontWeight: FontWeight.bold, color: Color(0xFFF3EE63)));
   }
 }

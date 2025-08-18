@@ -404,5 +404,4 @@ class SpriteMaDinhDanhPhuongTien extends TextComponent with HasVisibility {
 
     textRenderer = TextPaint(style: TextStyle(fontSize: 12, fontWeight: FontWeight.bold, color: Color(0xEB8C00FF)));
   }
-
 }
