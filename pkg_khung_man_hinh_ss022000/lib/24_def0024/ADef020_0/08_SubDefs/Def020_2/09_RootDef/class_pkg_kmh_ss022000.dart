@@ -9,6 +9,7 @@ import 'package:pkg_khung_man_hinh_ss022300/pkg_khung_man_hinh_ss022300_exp.dart
 import 'package:pkg_khung_man_hinh_ss022400/pkg_khung_man_hinh_ss022400_exp.dart';
 import 'package:pkg_khung_man_hinh_ss022500/pkg_khung_man_hinh_ss022500_exp.dart';
 import 'package:pkg_khung_man_hinh_ss030000/pkg_khung_man_hinh_ss030000_exp.dart';
+import 'package:pkg_khung_man_hinh_ss223100/pkg_khung_man_hinh_ss223100_exp.dart';
 
 /// -----
 /// TODO: Quản Lý Thành Phần Màn Hình Khung Màn Hình Chính
@@ -122,6 +123,22 @@ class QUANLYTHANHPHANMANHINHKHUNGMANHINHCHINH extends QUANLYTHANHPHANMANHINHTHUO
   }
 
   /// -----
+  /// TODO: Khung màn hình Bách khoa Chiến Đấu Cơ
+  /// -----
+  KHUNGMANHINHSS223100? _khungManHinhSS223100;
+  KHUNGMANHINHSS223100? get getKhungManHinhSS223100 => _khungManHinhSS223100;
+  Future<void> onCaiDatKhungManHinhSS223100({required KHUNGMANHINHSS223100? value, bool? caiDatUuTien}) async {
+    if (caiDatUuTien == true) {
+      _khungManHinhSS223100 = value;
+    } else {
+      _khungManHinhSS223100 ??= value;
+    }
+
+    ///
+    return;
+  }
+
+  /// -----
   /// TODO: Khung Màn Hình Bảng Điều Khiển Chiến Đấu
   /// -----
   KHUNGMANHINHSS030000? _khungManHinhSS03000;
@@ -153,6 +170,7 @@ class QUANLYTHANHPHANMANHINHKHUNGMANHINHCHINH extends QUANLYTHANHPHANMANHINHTHUO
         onAddComponent(flameGame: flameGame, parentComponent: component, childComponent: getKhungManHinhChinhTabSS030CD).catchError((e) => null),
         onAddComponent(flameGame: flameGame, parentComponent: component, childComponent: getKhungManHinhChinhTabSS040TV).catchError((e) => null),
         onAddComponent(flameGame: flameGame, parentComponent: component, childComponent: getKhungManHinhChinhTabSS050CD).catchError((e) => null),
+        onAddComponent(flameGame: flameGame, parentComponent: component, childComponent: getKhungManHinhSS223100).catchError((e) => null),
         onAddComponent(flameGame: flameGame, parentComponent: component, childComponent: getKhungManHinhSS03000).catchError((e) => null),
       ]);
 
@@ -187,6 +205,7 @@ class QUANLYTHANHPHANMANHINHKHUNGMANHINHCHINH extends QUANLYTHANHPHANMANHINHTHUO
         getKhungManHinhChinhTabSS030CD?.onAddRoot(flameGame: flameGame, component: component).catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onAddRootForSubCom'),
         getKhungManHinhChinhTabSS040TV?.onAddRoot(flameGame: flameGame, component: component).catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onAddRootForSubCom'),
         getKhungManHinhChinhTabSS050CD?.onAddRoot(flameGame: flameGame, component: component).catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onAddRootForSubCom'),
+        getKhungManHinhSS223100?.onAddRoot(flameGame: flameGame, component: component).catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onAddRootForSubCom'),
         getKhungManHinhSS03000?.onAddRoot(flameGame: flameGame, component: component).catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onAddRootForSubCom'),
       ]);
     } catch (e) {
@@ -211,11 +230,11 @@ class QUANLYTHANHPHANMANHINHKHUNGMANHINHCHINH extends QUANLYTHANHPHANMANHINHTHUO
       double sizeDxManHinhVatLy = getGlobalStateManagementSystem?.getThietLapTongQuat?.getChieuRongManHinhVatLy ?? 100.0;
       double sizeDyManHinhVatLy = getGlobalStateManagementSystem?.getThietLapTongQuat?.getChieuCaoManHinhVatLy ?? 100.0;
 
-      double sizeDxNutBamChonTab = sizeDxManHinhVatLy * 0.95;
-      double sizeDyNutBamChonTab = sizeDyManHinhVatLy * 0.8;
+      double sizeDxKhungManHinhTab = sizeDxManHinhVatLy * 0.95;
+      double sizeDyKhungManHinhTab = sizeDyManHinhVatLy * 0.8;
 
-      // double sizeDxNutBamChonTab = sizeDxManHinhVatLy * 1.0;
-      // double sizeDyNutBamChonTab = sizeDyManHinhVatLy * 1.0;
+      // double sizeDxKhungManHinhTab = sizeDxManHinhVatLy * 1.0;
+      // double sizeDyKhungManHinhTab = sizeDyManHinhVatLy * 1.0;
 
       await Future.wait([
         // onCaiDatKhungManHinhMasterLoading(
@@ -224,8 +243,8 @@ class QUANLYTHANHPHANMANHINHKHUNGMANHINHCHINH extends QUANLYTHANHPHANMANHINHTHUO
         //     gameController: getGameController, thanhPhanQuanLyThuocCapTrucTiep: getThanhPhanQuanLyThuocCapTrucTiep,
         //     sizeDx: sizeDxManHinhVatLy,
         //     sizeDy: sizeDyManHinhVatLy,
-        //     // sizeDx: sizeDxNutBamChonTab,
-        //     // sizeDy: sizeDyNutBamChonTab,
+        //     // sizeDx: sizeDxKhungManHinhTab,
+        //     // sizeDy: sizeDyKhungManHinhTab,
         //     positionDx: sizeDxManHinhVatLy / 2,
         //     positionDy: sizeDyManHinhVatLy / 2,
         //   ),
@@ -236,8 +255,8 @@ class QUANLYTHANHPHANMANHINHKHUNGMANHINHCHINH extends QUANLYTHANHPHANMANHINHTHUO
             globalStateManagementSystem: getGlobalStateManagementSystem,
             gameController: getGameController,
             thanhPhanQuanLyThuocCapTrucTiep: getThanhPhanQuanLyThuocCapTrucTiep,
-            sizeDx: sizeDxNutBamChonTab,
-            sizeDy: sizeDyNutBamChonTab,
+            sizeDx: sizeDxKhungManHinhTab,
+            sizeDy: sizeDyKhungManHinhTab,
             positionDx: sizeDxManHinhVatLy / 2,
             positionDy: sizeDyManHinhVatLy / 2,
           ),
@@ -248,8 +267,8 @@ class QUANLYTHANHPHANMANHINHKHUNGMANHINHCHINH extends QUANLYTHANHPHANMANHINHTHUO
             globalStateManagementSystem: getGlobalStateManagementSystem,
             gameController: getGameController,
             thanhPhanQuanLyThuocCapTrucTiep: getThanhPhanQuanLyThuocCapTrucTiep,
-            sizeDx: sizeDxNutBamChonTab,
-            sizeDy: sizeDyNutBamChonTab,
+            sizeDx: sizeDxKhungManHinhTab,
+            sizeDy: sizeDyKhungManHinhTab,
             positionDx: sizeDxManHinhVatLy / 2,
             positionDy: sizeDyManHinhVatLy / 2,
           ),
@@ -260,8 +279,8 @@ class QUANLYTHANHPHANMANHINHKHUNGMANHINHCHINH extends QUANLYTHANHPHANMANHINHTHUO
             globalStateManagementSystem: getGlobalStateManagementSystem,
             gameController: getGameController,
             thanhPhanQuanLyThuocCapTrucTiep: getThanhPhanQuanLyThuocCapTrucTiep,
-            sizeDx: sizeDxNutBamChonTab,
-            sizeDy: sizeDyNutBamChonTab,
+            sizeDx: sizeDxKhungManHinhTab,
+            sizeDy: sizeDyKhungManHinhTab,
             positionDx: sizeDxManHinhVatLy / 2,
             positionDy: sizeDyManHinhVatLy / 2,
           ),
@@ -272,8 +291,8 @@ class QUANLYTHANHPHANMANHINHKHUNGMANHINHCHINH extends QUANLYTHANHPHANMANHINHTHUO
             globalStateManagementSystem: getGlobalStateManagementSystem,
             gameController: getGameController,
             thanhPhanQuanLyThuocCapTrucTiep: getThanhPhanQuanLyThuocCapTrucTiep,
-            sizeDx: sizeDxNutBamChonTab,
-            sizeDy: sizeDyNutBamChonTab,
+            sizeDx: sizeDxKhungManHinhTab,
+            sizeDy: sizeDyKhungManHinhTab,
             positionDx: sizeDxManHinhVatLy / 2,
             positionDy: sizeDyManHinhVatLy / 2,
           ),
@@ -284,8 +303,8 @@ class QUANLYTHANHPHANMANHINHKHUNGMANHINHCHINH extends QUANLYTHANHPHANMANHINHTHUO
             globalStateManagementSystem: getGlobalStateManagementSystem,
             gameController: getGameController,
             thanhPhanQuanLyThuocCapTrucTiep: getThanhPhanQuanLyThuocCapTrucTiep,
-            sizeDx: sizeDxNutBamChonTab,
-            sizeDy: sizeDyNutBamChonTab,
+            sizeDx: sizeDxKhungManHinhTab,
+            sizeDy: sizeDyKhungManHinhTab,
             positionDx: sizeDxManHinhVatLy / 2,
             positionDy: sizeDyManHinhVatLy / 2,
           ),
@@ -303,7 +322,21 @@ class QUANLYTHANHPHANMANHINHKHUNGMANHINHCHINH extends QUANLYTHANHPHANMANHINHTHUO
           ),
           caiDatUuTien: true,
         ).catchError((e) => null),
+
+        onCaiDatKhungManHinhSS223100(
+          value: KHUNGMANHINHSS223100(
+            globalStateManagementSystem: getGlobalStateManagementSystem,
+            gameController: getGameController,
+            thanhPhanQuanLyThuocCapTrucTiep: getThanhPhanQuanLyThuocCapTrucTiep,
+            sizeDx: sizeDxKhungManHinhTab,
+            sizeDy: sizeDyKhungManHinhTab,
+            positionDx: sizeDxManHinhVatLy / 2,
+            positionDy: sizeDyManHinhVatLy / 2,
+          ),
+          caiDatUuTien: true,
+        ).catchError((e) => null),
       ]);
+      
 
       /// -----
       /// TODO:
@@ -315,6 +348,7 @@ class QUANLYTHANHPHANMANHINHKHUNGMANHINHCHINH extends QUANLYTHANHPHANMANHINHTHUO
         getKhungManHinhChinhTabSS030CD?.onCaiDatDoUuTien(value: 1).catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onSetupRoot'),
         getKhungManHinhChinhTabSS040TV?.onCaiDatDoUuTien(value: 1).catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onSetupRoot'),
         getKhungManHinhChinhTabSS050CD?.onCaiDatDoUuTien(value: 1).catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onSetupRoot'),
+        getKhungManHinhSS223100?.onCaiDatDoUuTien(value: 2).catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onSetupRoot'),
         getKhungManHinhSS03000?.onCaiDatDoUuTien(value: 2).catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onSetupRoot'),
       ]);
 
@@ -328,6 +362,7 @@ class QUANLYTHANHPHANMANHINHKHUNGMANHINHCHINH extends QUANLYTHANHPHANMANHINHTHUO
           getKhungManHinhChinhTabSS030CD,
           getKhungManHinhChinhTabSS040TV,
           getKhungManHinhChinhTabSS050CD,
+          getKhungManHinhSS223100,
         ]);
       }
       if (getDanhSachThanhPhanManHinhDragThuocCap.isEmpty == true) {
@@ -364,6 +399,7 @@ class QUANLYTHANHPHANMANHINHKHUNGMANHINHCHINH extends QUANLYTHANHPHANMANHINHTHUO
         getKhungManHinhChinhTabSS030CD?.onSetupRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onSetupRootForSubCom'),
         getKhungManHinhChinhTabSS040TV?.onSetupRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onSetupRootForSubCom'),
         getKhungManHinhChinhTabSS050CD?.onSetupRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onSetupRootForSubCom'),
+        getKhungManHinhSS223100?.onSetupRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onSetupRootForSubCom'),
         getKhungManHinhSS03000?.onSetupRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onSetupRootForSubCom'),
       ]);
 
@@ -377,6 +413,7 @@ class QUANLYTHANHPHANMANHINHKHUNGMANHINHCHINH extends QUANLYTHANHPHANMANHINHTHUO
           getKhungManHinhChinhTabSS030CD,
           getKhungManHinhChinhTabSS040TV,
           getKhungManHinhChinhTabSS050CD,
+          getKhungManHinhSS223100,
         ]);
       }
     } catch (e) {
@@ -405,6 +442,7 @@ class QUANLYTHANHPHANMANHINHKHUNGMANHINHCHINH extends QUANLYTHANHPHANMANHINHTHUO
         getKhungManHinhChinhTabSS030CD?.onInitRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onInitRootForSubCom'),
         getKhungManHinhChinhTabSS040TV?.onInitRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onInitRootForSubCom'),
         getKhungManHinhChinhTabSS050CD?.onInitRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onInitRootForSubCom'),
+        getKhungManHinhSS223100?.onInitRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onInitRootForSubCom'),
         getKhungManHinhSS03000?.onInitRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onInitRootForSubCom'),
       ]);
     } catch (e) {
@@ -431,6 +469,7 @@ class QUANLYTHANHPHANMANHINHKHUNGMANHINHCHINH extends QUANLYTHANHPHANMANHINHTHUO
         onRemoveComponent(component: getKhungManHinhChinhTabSS030CD).catchError((e) => null),
         onRemoveComponent(component: getKhungManHinhChinhTabSS040TV).catchError((e) => null),
         onRemoveComponent(component: getKhungManHinhChinhTabSS050CD).catchError((e) => null),
+        onRemoveComponent(component: getKhungManHinhSS223100).catchError((e) => null),
         // onRemoveComponent(component: getKhungManHinhSS03000).catchError((e) => null),
       ]);
 
@@ -468,6 +507,7 @@ class QUANLYTHANHPHANMANHINHKHUNGMANHINHCHINH extends QUANLYTHANHPHANMANHINHTHUO
         getKhungManHinhChinhTabSS030CD?.onHuyKichHoatThanhPhanManHinhThuocCap().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onKichHoatKhungManHinhThuocCapTabSS010'),
         getKhungManHinhChinhTabSS040TV?.onHuyKichHoatThanhPhanManHinhThuocCap().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onKichHoatKhungManHinhThuocCapTabSS010'),
         getKhungManHinhChinhTabSS050CD?.onHuyKichHoatThanhPhanManHinhThuocCap().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onKichHoatKhungManHinhThuocCapTabSS010'),
+        getKhungManHinhSS223100?.onHuyKichHoatThanhPhanManHinhThuocCap().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onKichHoatKhungManHinhThuocCapTabSS010'),
       ]);
 
       ///
@@ -494,6 +534,7 @@ class QUANLYTHANHPHANMANHINHKHUNGMANHINHCHINH extends QUANLYTHANHPHANMANHINHTHUO
         getKhungManHinhChinhTabSS030CD?.onHuyKichHoatThanhPhanManHinhThuocCap().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onHuyKichHoatKhungManHinhThuocCapTabSS010'),
         getKhungManHinhChinhTabSS040TV?.onHuyKichHoatThanhPhanManHinhThuocCap().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onHuyKichHoatKhungManHinhThuocCapTabSS010'),
         getKhungManHinhChinhTabSS050CD?.onHuyKichHoatThanhPhanManHinhThuocCap().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onHuyKichHoatKhungManHinhThuocCapTabSS010'),
+        getKhungManHinhSS223100?.onHuyKichHoatThanhPhanManHinhThuocCap().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onHuyKichHoatKhungManHinhThuocCapTabSS010'),
       ]);
 
       /// -----
@@ -532,6 +573,7 @@ class QUANLYTHANHPHANMANHINHKHUNGMANHINHCHINH extends QUANLYTHANHPHANMANHINHTHUO
         getKhungManHinhChinhTabSS030CD?.onHuyKichHoatThanhPhanManHinhThuocCap().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onKichHoatKhungManHinhThuocCapTabSS020'),
         getKhungManHinhChinhTabSS040TV?.onHuyKichHoatThanhPhanManHinhThuocCap().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onKichHoatKhungManHinhThuocCapTabSS020'),
         getKhungManHinhChinhTabSS050CD?.onHuyKichHoatThanhPhanManHinhThuocCap().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onKichHoatKhungManHinhThuocCapTabSS020'),
+        getKhungManHinhSS223100?.onHuyKichHoatThanhPhanManHinhThuocCap().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onKichHoatKhungManHinhThuocCapTabSS020'),
       ]);
 
       ///
@@ -558,6 +600,7 @@ class QUANLYTHANHPHANMANHINHKHUNGMANHINHCHINH extends QUANLYTHANHPHANMANHINHTHUO
         getKhungManHinhChinhTabSS030CD?.onHuyKichHoatThanhPhanManHinhThuocCap().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onHuyKichHoatKhungManHinhThuocCapTabSS020'),
         getKhungManHinhChinhTabSS040TV?.onHuyKichHoatThanhPhanManHinhThuocCap().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onHuyKichHoatKhungManHinhThuocCapTabSS020'),
         getKhungManHinhChinhTabSS050CD?.onHuyKichHoatThanhPhanManHinhThuocCap().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onHuyKichHoatKhungManHinhThuocCapTabSS020'),
+        getKhungManHinhSS223100?.onHuyKichHoatThanhPhanManHinhThuocCap().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onHuyKichHoatKhungManHinhThuocCapTabSS020'),
       ]);
 
       /// -----
@@ -598,6 +641,7 @@ class QUANLYTHANHPHANMANHINHKHUNGMANHINHCHINH extends QUANLYTHANHPHANMANHINHTHUO
             onReportRootIssue(nameFunction: 'onKichHoatKhungManHinhThuocCapTabSS030'),
         getKhungManHinhChinhTabSS040TV?.onHuyKichHoatThanhPhanManHinhThuocCap().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onKichHoatKhungManHinhThuocCapTabSS030'),
         getKhungManHinhChinhTabSS050CD?.onHuyKichHoatThanhPhanManHinhThuocCap().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onKichHoatKhungManHinhThuocCapTabSS030'),
+        getKhungManHinhSS223100?.onHuyKichHoatThanhPhanManHinhThuocCap().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onKichHoatKhungManHinhThuocCapTabSS030'),
       ]);
 
       /// -----
@@ -629,6 +673,7 @@ class QUANLYTHANHPHANMANHINHKHUNGMANHINHCHINH extends QUANLYTHANHPHANMANHINHTHUO
         getKhungManHinhChinhTabSS030CD?.onHuyKichHoatThanhPhanManHinhThuocCap().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onHuyKichHoatKhungManHinhThuocCapTabSS030'),
         getKhungManHinhChinhTabSS040TV?.onHuyKichHoatThanhPhanManHinhThuocCap().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onHuyKichHoatKhungManHinhThuocCapTabSS030'),
         getKhungManHinhChinhTabSS050CD?.onHuyKichHoatThanhPhanManHinhThuocCap().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onHuyKichHoatKhungManHinhThuocCapTabSS030'),
+        getKhungManHinhSS223100?.onHuyKichHoatThanhPhanManHinhThuocCap().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onHuyKichHoatKhungManHinhThuocCapTabSS030'),
       ]);
 
       /// -----
@@ -669,6 +714,7 @@ class QUANLYTHANHPHANMANHINHKHUNGMANHINHCHINH extends QUANLYTHANHPHANMANHINHTHUO
             onReportRootIssue(nameFunction: 'onKichHoatKhungManHinhThuocCapTabSS030TruongHopSS020'),
         getKhungManHinhChinhTabSS040TV?.onHuyKichHoatThanhPhanManHinhThuocCap().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onKichHoatKhungManHinhThuocCapTabSS030TruongHopSS020'),
         getKhungManHinhChinhTabSS050CD?.onHuyKichHoatThanhPhanManHinhThuocCap().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onKichHoatKhungManHinhThuocCapTabSS030TruongHopSS020'),
+        getKhungManHinhSS223100?.onHuyKichHoatThanhPhanManHinhThuocCap().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onKichHoatKhungManHinhThuocCapTabSS030TruongHopSS020'),
       ]);
 
       /// -----
@@ -708,6 +754,7 @@ class QUANLYTHANHPHANMANHINHKHUNGMANHINHCHINH extends QUANLYTHANHPHANMANHINHTHUO
                 .catchError((e) => null) ??
             onReportRootIssue(nameFunction: 'onKichHoatKhungManHinhThuocCapTabSS040'),
         getKhungManHinhChinhTabSS050CD?.onHuyKichHoatThanhPhanManHinhThuocCap().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onKichHoatKhungManHinhThuocCapTabSS040'),
+        getKhungManHinhSS223100?.onHuyKichHoatThanhPhanManHinhThuocCap().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onKichHoatKhungManHinhThuocCapTabSS040'),
       ]);
 
       ///
@@ -734,6 +781,7 @@ class QUANLYTHANHPHANMANHINHKHUNGMANHINHCHINH extends QUANLYTHANHPHANMANHINHTHUO
         getKhungManHinhChinhTabSS030CD?.onHuyKichHoatThanhPhanManHinhThuocCap().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onHuyKichHoatKhungManHinhThuocCapTabSS040'),
         getKhungManHinhChinhTabSS040TV?.onHuyKichHoatThanhPhanManHinhThuocCap().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onHuyKichHoatKhungManHinhThuocCapTabSS040'),
         getKhungManHinhChinhTabSS050CD?.onHuyKichHoatThanhPhanManHinhThuocCap().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onHuyKichHoatKhungManHinhThuocCapTabSS040'),
+        getKhungManHinhSS223100?.onHuyKichHoatThanhPhanManHinhThuocCap().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onHuyKichHoatKhungManHinhThuocCapTabSS040'),
       ]);
 
       /// -----
@@ -773,6 +821,8 @@ class QUANLYTHANHPHANMANHINHKHUNGMANHINHCHINH extends QUANLYTHANHPHANMANHINHTHUO
                 )
                 .catchError((e) => null) ??
             onReportRootIssue(nameFunction: 'onKichHoatKhungManHinhThuocCapTabSS050'),
+        getKhungManHinhSS223100?.onHuyKichHoatThanhPhanManHinhThuocCap().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onKichHoatKhungManHinhThuocCapTabSS050'),
+
       ]);
 
       ///
@@ -799,6 +849,7 @@ class QUANLYTHANHPHANMANHINHKHUNGMANHINHCHINH extends QUANLYTHANHPHANMANHINHTHUO
         getKhungManHinhChinhTabSS030CD?.onHuyKichHoatThanhPhanManHinhThuocCap().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onHuyKichHoatKhungManHinhThuocCapTabSS050'),
         getKhungManHinhChinhTabSS040TV?.onHuyKichHoatThanhPhanManHinhThuocCap().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onHuyKichHoatKhungManHinhThuocCapTabSS050'),
         getKhungManHinhChinhTabSS050CD?.onHuyKichHoatThanhPhanManHinhThuocCap().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onHuyKichHoatKhungManHinhThuocCapTabSS050'),
+        getKhungManHinhSS223100?.onHuyKichHoatThanhPhanManHinhThuocCap().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onHuyKichHoatKhungManHinhThuocCapTabSS050'),
       ]);
 
       /// -----
@@ -814,6 +865,61 @@ class QUANLYTHANHPHANMANHINHKHUNGMANHINHCHINH extends QUANLYTHANHPHANMANHINHTHUO
     ///
     return;
   }
+
+  /// -----
+  /// TODO: Kích Hoạt Khung Màn Hình Thuộc Cấp SS223100 [Bách Khoa Chiến Đấu Cơ]
+  /// -----
+  @override
+  Future<void> onKichHoatKhungManHinhThuocCapSS223100() async {
+    try {
+      /// -----
+      /// TODO:
+      /// -----
+
+      await Future.wait([
+        getKhungManHinhSS223100
+            ?.onKichHoatThanhPhanManHinhThuocCap(
+          onHuyKichHoat: () {
+            getKhungManHinhSS223100?.onHuyKichHoatThanhPhanManHinhThuocCap();
+          },
+        )
+            .catchError((e) => null) ??
+            onReportRootIssue(nameFunction: 'onKichHoatKhungManHinhThuocCapTabSS050'),
+      ]);
+
+    } catch (e) {
+      await onReportRootIssue(
+        nameFunction: 'onKichHoatKhungManHinhThuocCapSS223100',
+      );
+    }
+
+    ///
+    return;
+  }
+
+  /// -----
+  /// TODO: Kích Hoạt Khung Màn Hình Thuộc Cấp SS223100
+  /// -----
+  @override
+  Future<void> onHuyKichHoatKhungManHinhThuocCapSS223100() async {
+    try {
+      /// -----
+      /// TODO:
+      /// -----
+      await Future.wait([
+        getKhungManHinhSS223100?.onHuyKichHoatThanhPhanManHinhThuocCap().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onHuyKichHoatKhungManHinhThuocCapTabSS050'),
+      ]);
+
+    } catch (e) {
+      await onReportRootIssue(
+        nameFunction: 'onHuyKichHoatKhungManHinhThuocCapSS223100',
+      );
+    }
+
+    ///
+    return;
+  }
+
 
   /// -----
   /// TODO: Kích Hoạt Khung Màn Hình Thuộc Cấp Loading SS010 [Master Loading]
@@ -971,7 +1077,8 @@ class QUANLYTHANHPHANMANHINHKHUNGMANHINHCHINH extends QUANLYTHANHPHANMANHINHTHUO
 
                       await getGameController?.onKichHoatManHinhBackground?.call();
 
-                      await getGameController?.onKichHoatVanHanhKhungManHinhChienDau();
+                      // await getGameController?.onKichHoatVanHanhKhungManHinhChienDau();
+                      await getKhungManHinhSS03000?.onKichHoatVanHanhKhungManHinhChienDau();
                     },
                   );
                 },

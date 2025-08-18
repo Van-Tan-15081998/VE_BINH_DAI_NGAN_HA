@@ -121,7 +121,8 @@ class QUANLYTHANHPHANHINHANHTHUOCCAP extends QUANLYTHANHPHANHINHANHTHUOCCAPCOBAN
     try {
 
       double sizeDyNguyenBan = getHinhAnhBackGround?.getSizeDy ?? 100.0;
-      double sizeDyVanHanh = (sizeDyNguyenBan / 6) * (-1);
+      // double sizeDyVanHanh = (sizeDyNguyenBan / 12) * (1);
+      double sizeDyVanHanh = getSizeDy ?? sizeDyNguyenBan;
 
       getHinhAnhBackGround?.onVoidCaiDatPositionDy(value: sizeDyVanHanh, caiDatUuTien: true);
 

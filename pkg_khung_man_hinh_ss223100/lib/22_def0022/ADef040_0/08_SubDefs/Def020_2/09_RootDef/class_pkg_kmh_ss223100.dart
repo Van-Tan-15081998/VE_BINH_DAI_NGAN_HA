@@ -19,7 +19,7 @@ class VANBANDINHDANHKHUNGMANHINH extends THANHPHANVANBANTHUANTHUOCCAP {
 
   @override
   Future<void> onCaiDatChiTietThanhPhanVanBan() async {
-    onVoidCaiDatVanBan(value: 'Chiến Đấu', caiDatUuTien: true);
+    onVoidCaiDatVanBan(value: 'Chiến Đấu Cơ', caiDatUuTien: true);
 
     return;
   }

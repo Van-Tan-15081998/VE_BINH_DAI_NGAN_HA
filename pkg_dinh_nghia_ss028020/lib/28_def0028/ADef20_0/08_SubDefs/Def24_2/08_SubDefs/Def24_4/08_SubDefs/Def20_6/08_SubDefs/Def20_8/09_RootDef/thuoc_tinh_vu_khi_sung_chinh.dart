@@ -311,91 +311,91 @@ class MOHINHTHUOCTINHVUKHISUNGCHINH00E03SS03 extends MOHINHTHUOCTINHVUKHISUNGCHI
   /// -----
   Future<void> onInitCapDoSatThuongBaoKichVKSCTheoQuyChuan() async {
     /// TODO: Cấp Độ Sát Thương Bạo Kích SS01
-    await getCapDoSatThuongBaoKichVKSCSS01?.getChiSoTheoCapDo?.caiDatChiSoSatThuong(value: 10.00, caiDatUuTien: true);
+    await getCapDoSatThuongBaoKichVKSCSS01?.getChiSoTheoCapDo?.caiDatChiSoSatThuong(value: 100.00, caiDatUuTien: true);
     await getCapDoSatThuongBaoKichVKSCSS01?.getDieuKienNangCap?.caiDatSoDiemNangCap(value: 0, caiDatUuTien: true);
     await getCapDoSatThuongBaoKichVKSCSS01?.getDieuKienNangCap?.getGoiDiemNangCapYeuCau?.getDonViSoLuong?.caiDatTongSoLuong(value: 0, caiDatUuTien: true);
     await getCapDoSatThuongBaoKichVKSCSS01?.getDieuKienNangCap?.getGoiDiemNangCapCaoNhat?.getDonViSoLuong?.caiDatTongSoLuong(value: 0, caiDatUuTien: true);
 
     /// TODO: Cấp Độ Sát Thương Bạo Kích SS02
-    await getCapDoSatThuongBaoKichVKSCSS02?.getChiSoTheoCapDo?.caiDatChiSoSatThuong(value: 20.00, caiDatUuTien: true);
+    await getCapDoSatThuongBaoKichVKSCSS02?.getChiSoTheoCapDo?.caiDatChiSoSatThuong(value: 120.00, caiDatUuTien: true);
     await getCapDoSatThuongBaoKichVKSCSS02?.getDieuKienNangCap?.caiDatSoDiemNangCap(value: 2, caiDatUuTien: true);
     await getCapDoSatThuongBaoKichVKSCSS02?.getDieuKienNangCap?.getGoiDiemNangCapYeuCau?.getDonViSoLuong?.caiDatTongSoLuong(value: 2, caiDatUuTien: true);
     await getCapDoSatThuongBaoKichVKSCSS02?.getDieuKienNangCap?.getGoiDiemNangCapCaoNhat?.getDonViSoLuong?.caiDatTongSoLuong(value: 2, caiDatUuTien: true);
 
     /// TODO: Cấp Độ Sát Thương Bạo Kích SS03
-    await getCapDoSatThuongBaoKichVKSCSS03?.getChiSoTheoCapDo?.caiDatChiSoSatThuong(value: 30.00, caiDatUuTien: true);
+    await getCapDoSatThuongBaoKichVKSCSS03?.getChiSoTheoCapDo?.caiDatChiSoSatThuong(value: 130.00, caiDatUuTien: true);
     await getCapDoSatThuongBaoKichVKSCSS03?.getDieuKienNangCap?.caiDatSoDiemNangCap(value: 2, caiDatUuTien: true);
     await getCapDoSatThuongBaoKichVKSCSS03?.getDieuKienNangCap?.getGoiDiemNangCapYeuCau?.getDonViSoLuong?.caiDatTongSoLuong(value: 2, caiDatUuTien: true);
     await getCapDoSatThuongBaoKichVKSCSS03?.getDieuKienNangCap?.getGoiDiemNangCapCaoNhat?.getDonViSoLuong?.caiDatTongSoLuong(value: 4, caiDatUuTien: true);
 
     /// TODO: Cấp Độ Sát Thương Bạo Kích SS04
-    await getCapDoSatThuongBaoKichVKSCSS04?.getChiSoTheoCapDo?.caiDatChiSoSatThuong(value: 40.00, caiDatUuTien: true);
+    await getCapDoSatThuongBaoKichVKSCSS04?.getChiSoTheoCapDo?.caiDatChiSoSatThuong(value: 140.00, caiDatUuTien: true);
     await getCapDoSatThuongBaoKichVKSCSS04?.getDieuKienNangCap?.caiDatSoDiemNangCap(value: 2, caiDatUuTien: true);
     await getCapDoSatThuongBaoKichVKSCSS04?.getDieuKienNangCap?.getGoiDiemNangCapYeuCau?.getDonViSoLuong?.caiDatTongSoLuong(value: 2, caiDatUuTien: true);
     await getCapDoSatThuongBaoKichVKSCSS04?.getDieuKienNangCap?.getGoiDiemNangCapCaoNhat?.getDonViSoLuong?.caiDatTongSoLuong(value: 6, caiDatUuTien: true);
 
     /// TODO: Cấp Độ Sát Thương Bạo Kích SS05
-    await getCapDoSatThuongBaoKichVKSCSS05?.getChiSoTheoCapDo?.caiDatChiSoSatThuong(value: 50.00, caiDatUuTien: true);
+    await getCapDoSatThuongBaoKichVKSCSS05?.getChiSoTheoCapDo?.caiDatChiSoSatThuong(value: 150.00, caiDatUuTien: true);
     await getCapDoSatThuongBaoKichVKSCSS05?.getDieuKienNangCap?.caiDatSoDiemNangCap(value: 2, caiDatUuTien: true);
     await getCapDoSatThuongBaoKichVKSCSS05?.getDieuKienNangCap?.getGoiDiemNangCapYeuCau?.getDonViSoLuong?.caiDatTongSoLuong(value: 2, caiDatUuTien: true);
     await getCapDoSatThuongBaoKichVKSCSS05?.getDieuKienNangCap?.getGoiDiemNangCapCaoNhat?.getDonViSoLuong?.caiDatTongSoLuong(value: 8, caiDatUuTien: true);
 
     /// TODO: Cấp Độ Sát Thương Bạo Kích SS06
-    await getCapDoSatThuongBaoKichVKSCSS06?.getChiSoTheoCapDo?.caiDatChiSoSatThuong(value: 60.00, caiDatUuTien: true);
+    await getCapDoSatThuongBaoKichVKSCSS06?.getChiSoTheoCapDo?.caiDatChiSoSatThuong(value: 160.00, caiDatUuTien: true);
     await getCapDoSatThuongBaoKichVKSCSS06?.getDieuKienNangCap?.caiDatSoDiemNangCap(value: 2, caiDatUuTien: true);
     await getCapDoSatThuongBaoKichVKSCSS06?.getDieuKienNangCap?.getGoiDiemNangCapYeuCau?.getDonViSoLuong?.caiDatTongSoLuong(value: 2, caiDatUuTien: true);
     await getCapDoSatThuongBaoKichVKSCSS06?.getDieuKienNangCap?.getGoiDiemNangCapCaoNhat?.getDonViSoLuong?.caiDatTongSoLuong(value: 10, caiDatUuTien: true);
 
     /// TODO: Cấp Độ Sát Thương Bạo Kích SS07
-    await getCapDoSatThuongBaoKichVKSCSS07?.getChiSoTheoCapDo?.caiDatChiSoSatThuong(value: 70.00, caiDatUuTien: true);
+    await getCapDoSatThuongBaoKichVKSCSS07?.getChiSoTheoCapDo?.caiDatChiSoSatThuong(value: 170.00, caiDatUuTien: true);
     await getCapDoSatThuongBaoKichVKSCSS07?.getDieuKienNangCap?.caiDatSoDiemNangCap(value: 2, caiDatUuTien: true);
     await getCapDoSatThuongBaoKichVKSCSS07?.getDieuKienNangCap?.getGoiDiemNangCapYeuCau?.getDonViSoLuong?.caiDatTongSoLuong(value: 2, caiDatUuTien: true);
     await getCapDoSatThuongBaoKichVKSCSS07?.getDieuKienNangCap?.getGoiDiemNangCapCaoNhat?.getDonViSoLuong?.caiDatTongSoLuong(value: 12, caiDatUuTien: true);
 
     /// TODO: Cấp Độ Sát Thương Bạo Kích SS08
-    await getCapDoSatThuongBaoKichVKSCSS08?.getChiSoTheoCapDo?.caiDatChiSoSatThuong(value: 80.00, caiDatUuTien: true);
+    await getCapDoSatThuongBaoKichVKSCSS08?.getChiSoTheoCapDo?.caiDatChiSoSatThuong(value: 180.00, caiDatUuTien: true);
     await getCapDoSatThuongBaoKichVKSCSS08?.getDieuKienNangCap?.caiDatSoDiemNangCap(value: 2, caiDatUuTien: true);
     await getCapDoSatThuongBaoKichVKSCSS08?.getDieuKienNangCap?.getGoiDiemNangCapYeuCau?.getDonViSoLuong?.caiDatTongSoLuong(value: 2, caiDatUuTien: true);
     await getCapDoSatThuongBaoKichVKSCSS08?.getDieuKienNangCap?.getGoiDiemNangCapCaoNhat?.getDonViSoLuong?.caiDatTongSoLuong(value: 14, caiDatUuTien: true);
 
     /// TODO: Cấp Độ Sát Thương Bạo Kích SS09
-    await getCapDoSatThuongBaoKichVKSCSS09?.getChiSoTheoCapDo?.caiDatChiSoSatThuong(value: 90.00, caiDatUuTien: true);
+    await getCapDoSatThuongBaoKichVKSCSS09?.getChiSoTheoCapDo?.caiDatChiSoSatThuong(value: 190.00, caiDatUuTien: true);
     await getCapDoSatThuongBaoKichVKSCSS09?.getDieuKienNangCap?.caiDatSoDiemNangCap(value: 2, caiDatUuTien: true);
     await getCapDoSatThuongBaoKichVKSCSS09?.getDieuKienNangCap?.getGoiDiemNangCapYeuCau?.getDonViSoLuong?.caiDatTongSoLuong(value: 2, caiDatUuTien: true);
     await getCapDoSatThuongBaoKichVKSCSS09?.getDieuKienNangCap?.getGoiDiemNangCapCaoNhat?.getDonViSoLuong?.caiDatTongSoLuong(value: 16, caiDatUuTien: true);
 
     /// TODO: Cấp Độ Sát Thương Bạo Kích SS10
-    await getCapDoSatThuongBaoKichVKSCSS10?.getChiSoTheoCapDo?.caiDatChiSoSatThuong(value: 100.00, caiDatUuTien: true);
+    await getCapDoSatThuongBaoKichVKSCSS10?.getChiSoTheoCapDo?.caiDatChiSoSatThuong(value: 200.00, caiDatUuTien: true);
     await getCapDoSatThuongBaoKichVKSCSS10?.getDieuKienNangCap?.caiDatSoDiemNangCap(value: 2, caiDatUuTien: true);
     await getCapDoSatThuongBaoKichVKSCSS10?.getDieuKienNangCap?.getGoiDiemNangCapYeuCau?.getDonViSoLuong?.caiDatTongSoLuong(value: 2, caiDatUuTien: true);
     await getCapDoSatThuongBaoKichVKSCSS10?.getDieuKienNangCap?.getGoiDiemNangCapCaoNhat?.getDonViSoLuong?.caiDatTongSoLuong(value: 18, caiDatUuTien: true);
 
     /// TODO: Cấp Độ Sát Thương Bạo Kích SS11
-    await getCapDoSatThuongBaoKichVKSCSS11?.getChiSoTheoCapDo?.caiDatChiSoSatThuong(value: 110.00, caiDatUuTien: true);
+    await getCapDoSatThuongBaoKichVKSCSS11?.getChiSoTheoCapDo?.caiDatChiSoSatThuong(value: 210.00, caiDatUuTien: true);
     await getCapDoSatThuongBaoKichVKSCSS11?.getDieuKienNangCap?.caiDatSoDiemNangCap(value: 2, caiDatUuTien: true);
     await getCapDoSatThuongBaoKichVKSCSS11?.getDieuKienNangCap?.getGoiDiemNangCapYeuCau?.getDonViSoLuong?.caiDatTongSoLuong(value: 2, caiDatUuTien: true);
     await getCapDoSatThuongBaoKichVKSCSS11?.getDieuKienNangCap?.getGoiDiemNangCapCaoNhat?.getDonViSoLuong?.caiDatTongSoLuong(value: 20, caiDatUuTien: true);
 
     /// TODO: Cấp Độ Sát Thương Bạo Kích SS12
-    await getCapDoSatThuongBaoKichVKSCSS12?.getChiSoTheoCapDo?.caiDatChiSoSatThuong(value: 120.00, caiDatUuTien: true);
+    await getCapDoSatThuongBaoKichVKSCSS12?.getChiSoTheoCapDo?.caiDatChiSoSatThuong(value: 220.00, caiDatUuTien: true);
     await getCapDoSatThuongBaoKichVKSCSS12?.getDieuKienNangCap?.caiDatSoDiemNangCap(value: 2, caiDatUuTien: true);
     await getCapDoSatThuongBaoKichVKSCSS12?.getDieuKienNangCap?.getGoiDiemNangCapYeuCau?.getDonViSoLuong?.caiDatTongSoLuong(value: 2, caiDatUuTien: true);
     await getCapDoSatThuongBaoKichVKSCSS12?.getDieuKienNangCap?.getGoiDiemNangCapCaoNhat?.getDonViSoLuong?.caiDatTongSoLuong(value: 22, caiDatUuTien: true);
 
     /// TODO: Cấp Độ Sát Thương Bạo Kích SS13
-    await getCapDoSatThuongBaoKichVKSCSS13?.getChiSoTheoCapDo?.caiDatChiSoSatThuong(value: 130.00, caiDatUuTien: true);
+    await getCapDoSatThuongBaoKichVKSCSS13?.getChiSoTheoCapDo?.caiDatChiSoSatThuong(value: 230.00, caiDatUuTien: true);
     await getCapDoSatThuongBaoKichVKSCSS13?.getDieuKienNangCap?.caiDatSoDiemNangCap(value: 2, caiDatUuTien: true);
     await getCapDoSatThuongBaoKichVKSCSS13?.getDieuKienNangCap?.getGoiDiemNangCapYeuCau?.getDonViSoLuong?.caiDatTongSoLuong(value: 2, caiDatUuTien: true);
     await getCapDoSatThuongBaoKichVKSCSS13?.getDieuKienNangCap?.getGoiDiemNangCapCaoNhat?.getDonViSoLuong?.caiDatTongSoLuong(value: 24, caiDatUuTien: true);
 
     /// TODO: Cấp Độ Sát Thương Bạo Kích SS14
-    await getCapDoSatThuongBaoKichVKSCSS14?.getChiSoTheoCapDo?.caiDatChiSoSatThuong(value: 140.00, caiDatUuTien: true);
+    await getCapDoSatThuongBaoKichVKSCSS14?.getChiSoTheoCapDo?.caiDatChiSoSatThuong(value: 240.00, caiDatUuTien: true);
     await getCapDoSatThuongBaoKichVKSCSS14?.getDieuKienNangCap?.caiDatSoDiemNangCap(value: 2, caiDatUuTien: true);
     await getCapDoSatThuongBaoKichVKSCSS14?.getDieuKienNangCap?.getGoiDiemNangCapYeuCau?.getDonViSoLuong?.caiDatTongSoLuong(value: 2, caiDatUuTien: true);
     await getCapDoSatThuongBaoKichVKSCSS14?.getDieuKienNangCap?.getGoiDiemNangCapCaoNhat?.getDonViSoLuong?.caiDatTongSoLuong(value: 26, caiDatUuTien: true);
 
     /// TODO: Cấp Độ Sát Thương Bạo Kích SS15
-    await getCapDoSatThuongBaoKichVKSCSS15?.getChiSoTheoCapDo?.caiDatChiSoSatThuong(value: 150.00, caiDatUuTien: true);
+    await getCapDoSatThuongBaoKichVKSCSS15?.getChiSoTheoCapDo?.caiDatChiSoSatThuong(value: 250.00, caiDatUuTien: true);
     await getCapDoSatThuongBaoKichVKSCSS15?.getDieuKienNangCap?.caiDatSoDiemNangCap(value: 2, caiDatUuTien: true);
     await getCapDoSatThuongBaoKichVKSCSS15?.getDieuKienNangCap?.getGoiDiemNangCapYeuCau?.getDonViSoLuong?.caiDatTongSoLuong(value: 2, caiDatUuTien: true);
     await getCapDoSatThuongBaoKichVKSCSS15?.getDieuKienNangCap?.getGoiDiemNangCapCaoNhat?.getDonViSoLuong?.caiDatTongSoLuong(value: 28, caiDatUuTien: true);

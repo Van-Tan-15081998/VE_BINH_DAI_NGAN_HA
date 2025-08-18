@@ -1734,8 +1734,10 @@ class QUANLYTHANHPHANTICHHOPTHUOCCAP extends QUANLYTHANHPHANTICHHOPTHUOCCAPCOBAN
             positionDy: sizeDyKhungManHinh - (donViChieuRong * 6.0),
             onTapCancelEvent: null,
             onTapDownEvent: null,
-            onTapUpEvent: () {
+            onTapUpEvent: () async {
               ///
+              await getGameController?.onKichHoatKhungManHinhThuocCapSS223100();
+
             },
           ),
           caiDatUuTien: true,

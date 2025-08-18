@@ -4,6 +4,7 @@ import 'package:pkg_khung_man_hinh_ss020000/pkg_khung_man_hinh_ss020000_exp.dart
 import 'package:pkg_khung_man_hinh_ss022310/pkg_khung_man_hinh_ss022310_exp.dart';
 import 'package:pkg_khung_man_hinh_ss022320/pkg_khung_man_hinh_ss022320_exp.dart';
 import 'package:pkg_khung_man_hinh_ss022330/pkg_khung_man_hinh_ss022330_exp.dart';
+import 'package:pkg_khung_man_hinh_ss223100/pkg_khung_man_hinh_ss223100_exp.dart';
 
 /// -----
 /// TODO: Quản Lý Thành Phần Màn Hình Thuộc Cấp
@@ -62,6 +63,22 @@ class QUANLYTHANHPHANMANHINHTHUOCCAP extends QUANLYTHANHPHANMANHINHTHUOCCAPCOBAN
       _khungManHinhTabSS030 = value;
     } else {
       _khungManHinhTabSS030 ??= value;
+    }
+
+    ///
+    return;
+  }
+
+  /// -----
+  /// TODO: Khung màn hình Bách khoa Chiến Đấu Cơ
+  /// -----
+  KHUNGMANHINHSS223100? _khungManHinhSS223100;
+  KHUNGMANHINHSS223100? get getKhungManHinhSS223100 => _khungManHinhSS223100;
+  Future<void> onCaiDatKhungManHinhSS223100({required KHUNGMANHINHSS223100? value, bool? caiDatUuTien}) async {
+    if (caiDatUuTien == true) {
+      _khungManHinhSS223100 = value;
+    } else {
+      _khungManHinhSS223100 ??= value;
     }
 
     ///
@@ -237,6 +254,19 @@ class QUANLYTHANHPHANMANHINHTHUOCCAP extends QUANLYTHANHPHANMANHINHTHUOCCAPCOBAN
         ),
         caiDatUuTien: true,
       ).catchError((e) => null),
+
+      // onCaiDatKhungManHinhSS223100(
+      //   value: KHUNGMANHINHSS223100(
+      //     globalStateManagementSystem: getGlobalStateManagementSystem,
+      //     gameController: getGameController,
+      //     thanhPhanQuanLyThuocCapTrucTiep: getThanhPhanQuanLyThuocCapTrucTiep,
+      //     sizeDx: sizeDxKhungManHinhTab,
+      //     sizeDy: sizeDyKhungManHinhTab,
+      //     positionDx: positionDxKhungManHinhTab,
+      //     positionDy: positionDyKhungManHinhTab,
+      //   ),
+      //   caiDatUuTien: true,
+      // ).catchError((e) => null),
     ]);
 
     /// -----
@@ -246,13 +276,14 @@ class QUANLYTHANHPHANMANHINHTHUOCCAP extends QUANLYTHANHPHANMANHINHTHUOCCAPCOBAN
       getKhungManHinhTabSS010?.onSetupRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
       getKhungManHinhTabSS020?.onSetupRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
       getKhungManHinhTabSS030?.onSetupRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getKhungManHinhSS223100?.onSetupRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
     ]);
 
     ///
     ///
     ///
     if (getDanhSachThanhPhanManHinhThuocCap.isEmpty == true) {
-      getDanhSachThanhPhanManHinhThuocCap.addAll([getKhungManHinhTabSS010, getKhungManHinhTabSS020, getKhungManHinhTabSS030]);
+      getDanhSachThanhPhanManHinhThuocCap.addAll([getKhungManHinhTabSS010, getKhungManHinhTabSS020, getKhungManHinhTabSS030, getKhungManHinhSS223100]);
     }
 
     ///
@@ -273,11 +304,13 @@ class QUANLYTHANHPHANMANHINHTHUOCCAP extends QUANLYTHANHPHANMANHINHTHUOCCAPCOBAN
       getKhungManHinhTabSS010?.onInitRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
       getKhungManHinhTabSS020?.onInitRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
       getKhungManHinhTabSS030?.onInitRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+      getKhungManHinhSS223100?.onInitRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
     ]);
 
     await getKhungManHinhTabSS010?.onKichHoatThanhPhanManHinhThuocCap(kichHoatUuTien: true);
     await getKhungManHinhTabSS020?.onKichHoatThanhPhanManHinhThuocCap(kichHoatUuTien: true);
     await getKhungManHinhTabSS030?.onKichHoatThanhPhanManHinhThuocCap(kichHoatUuTien: true);
+    await getKhungManHinhSS223100?.onKichHoatThanhPhanManHinhThuocCap(kichHoatUuTien: true);
 
     ///
     return;
@@ -290,6 +323,7 @@ class QUANLYTHANHPHANMANHINHTHUOCCAP extends QUANLYTHANHPHANMANHINHTHUOCCAPCOBAN
     await getKhungManHinhTabSS010?.onKichHoatThanhPhanManHinhThuocCap(kichHoatUuTien: true);
     await getKhungManHinhTabSS020?.onHuyKichHoatThanhPhanManHinhThuocCap();
     await getKhungManHinhTabSS030?.onHuyKichHoatThanhPhanManHinhThuocCap();
+    await getKhungManHinhSS223100?.onHuyKichHoatThanhPhanManHinhThuocCap();
   }
 
   @override
@@ -299,5 +333,6 @@ class QUANLYTHANHPHANMANHINHTHUOCCAP extends QUANLYTHANHPHANMANHINHTHUOCCAPCOBAN
     await getKhungManHinhTabSS010?.onKichHoatThanhPhanManHinhThuocCap(kichHoatUuTien: true);
     await getKhungManHinhTabSS020?.onHuyKichHoatThanhPhanManHinhThuocCap();
     await getKhungManHinhTabSS030?.onHuyKichHoatThanhPhanManHinhThuocCap();
+    await getKhungManHinhSS223100?.onHuyKichHoatThanhPhanManHinhThuocCap();
   }
 }

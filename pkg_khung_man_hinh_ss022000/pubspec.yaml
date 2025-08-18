@@ -54,6 +54,10 @@ dependencies:
   pkg_man_hinh_ss00240:
     path: ../pkg_man_hinh_ss00240
 
+  pkg_khung_man_hinh_ss223100:
+    path: ../pkg_khung_man_hinh_ss223100
+
+
   van_tan_export:
     path: ../../van_tan/van_tan_exports/van_tan_export
 

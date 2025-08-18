@@ -441,6 +441,42 @@ mixin KICHBANDIEUKHIENTHUOCCAPCOBAN {
   }
 
   /// -----
+  /// TODO: Kích Hoạt Khung Màn Hình Thuộc Cấp SS223100 [Bách Khoa Chiến Đấu Cơ]
+  /// -----
+  Future<void> onKichHoatKhungManHinhThuocCapSS223100() async {
+    try {
+      /// -----
+      /// TODO:
+      /// -----
+    } catch (e) {
+      await onReportRootIssue(
+        nameFunction: 'onKichHoatKhungManHinhThuocCapSS223100',
+      );
+    }
+
+    ///
+    return;
+  }
+
+  /// -----
+  /// TODO: Kích Hoạt Khung Màn Hình Thuộc Cấp SS223100
+  /// -----
+  Future<void> onHuyKichHoatKhungManHinhThuocCapSS223100() async {
+    try {
+      /// -----
+      /// TODO:
+      /// -----
+    } catch (e) {
+      await onReportRootIssue(
+        nameFunction: 'onHuyKichHoatKhungManHinhThuocCapSS223100',
+      );
+    }
+
+    ///
+    return;
+  }
+
+  /// -----
   /// TODO: Kích Hoạt Khung Màn Hình Thuộc Cấp Loading SS010 [Master Loading]
   /// -----
   Future<void> onKichHoatKhungManHinhThuocCapLoadingSS010() async {
@@ -739,42 +775,6 @@ mixin KICHBANDIEUKHIENTHUOCCAPCOBAN {
     } catch (e) {
       await onReportRootIssue(
         nameFunction: 'onHuyKichHoatKhungManHinhThuocCapSS300500',
-      );
-    }
-
-    ///
-    return;
-  }
-
-  /// -----
-  /// TODO: Kích Hoạt Khung Màn Hình Thuộc Cấp SS223100 [Bách Khoa Chiến Đấu Cơ]
-  /// -----
-  Future<void> onKichHoatKhungManHinhThuocCapSS223100() async {
-    try {
-      /// -----
-      /// TODO:
-      /// -----
-    } catch (e) {
-      await onReportRootIssue(
-        nameFunction: 'onKichHoatKhungManHinhThuocCapSS223100',
-      );
-    }
-
-    ///
-    return;
-  }
-
-  /// -----
-  /// TODO: Hủy Kích Hoạt Khung Màn Hình Thuộc Cấp SS223100 [Bách Khoa Chiến Đấu Cơ]
-  /// -----
-  Future<void> onHuyKichHoatKhungManHinhThuocCapSS223100() async {
-    try {
-      /// -----
-      /// TODO:
-      /// -----
-    } catch (e) {
-      await onReportRootIssue(
-        nameFunction: 'onHuyKichHoatKhungManHinhThuocCapSS223100',
       );
     }
 

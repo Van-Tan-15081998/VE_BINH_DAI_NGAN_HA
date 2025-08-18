@@ -1472,6 +1472,7 @@ abstract class KHUNGMANHINHGAMECOSO extends FlameGame with CAUTRUCTHUCTHICOBAN, 
   /// -----
   /// TODO:
   /// -----
+  @override
   Future<void> onKichHoatVanHanhKhungManHinhChienDau() async {
     try {
       /// -----

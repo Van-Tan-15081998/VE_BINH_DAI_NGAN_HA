@@ -2,6 +2,8 @@ import 'package:flame/components.dart';
 import 'package:flame/game.dart';
 import 'package:pkg_khung_man_hinh_ss020000/pkg_khung_man_hinh_ss020000_exp.dart';
 
+import 'package:pkg_khung_man_hinh_ss223100/22_def0022/ADef060_0/08_SubDefs/Def030_2/09_RootDef/class_pkg_kmh_ss223100.dart';
+
 /// -----
 /// TODO: Quản Lý Thành Phần Tích Hợp Thuộc Cấp
 /// -----
@@ -19,6 +21,23 @@ class QUANLYTHANHPHANTICHHOPTHUOCCAP
   });
 
   /// -----
+  /// TODO:
+  /// -----
+  CARDCHIENDAUCOCHONCHIDINH? _cardChienDauCoChonChiDinh;
+  CARDCHIENDAUCOCHONCHIDINH? get getCardChienDauCoChonChiDinh => _cardChienDauCoChonChiDinh;
+  Future<void> onCaiDatCardChienDauCoChonChiDinh({required CARDCHIENDAUCOCHONCHIDINH? value, bool? caiDatUuTien}) async {
+    if (caiDatUuTien == true) {
+      _cardChienDauCoChonChiDinh = value;
+    } else {
+      _cardChienDauCoChonChiDinh ??= value;
+    }
+
+    ///
+    return;
+  }
+
+
+  /// -----
   /// TODO: Add Comp Root
   /// -----
   @override
@@ -32,6 +51,7 @@ class QUANLYTHANHPHANTICHHOPTHUOCCAP
       /// -----
       await Future.wait([
         ///
+        onAddComponent(flameGame: null, parentComponent: component, childComponent: getCardChienDauCoChonChiDinh).catchError((e) => null),
       ]);
 
       /// -----
@@ -60,6 +80,7 @@ class QUANLYTHANHPHANTICHHOPTHUOCCAP
       /// -----
       await Future.wait([
         ///
+        getCardChienDauCoChonChiDinh?.onAddRoot(flameGame: null, component: component).catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onAddRootForSubCom'),
       ]);
     } catch (e) {
       await onReportRootIssue(nameFunction: 'onAddRootForSubCom');
@@ -77,9 +98,42 @@ class QUANLYTHANHPHANTICHHOPTHUOCCAP
     await super.onSetupRoot(isIgnoreSetupRootForSubCom: true);
 
     try {
+
       /// -----
       /// TODO:
       /// -----
+      double sizeDxKhungManHinh = getSizeDx ?? 100.0;
+      double sizeDyKhungManHinh = getSizeDy ?? 100.0;
+
+      double donViChieuRong = sizeDxKhungManHinh / 16;
+
+      ///
+      /// TODO:
+      ///
+      await Future.wait([
+      onCaiDatCardChienDauCoChonChiDinh(
+        value: CARDCHIENDAUCOCHONCHIDINH(
+          globalStateManagementSystem: getGlobalStateManagementSystem,
+          gameController: getGameController,
+          thanhPhanQuanLyThuocCapTrucTiep: getThanhPhanQuanLyThuocCapTrucTiep,
+          sizeDx: donViChieuRong * 2.0,
+          sizeDy: donViChieuRong * 2.0,
+          // positionDx: sizeDxKhungManHinh / 2.0,
+          // positionDy: sizeDyKhungManHinh - (donViChieuRong * 6.0),
+          positionDx: donViChieuRong * 3.0,
+          positionDy: donViChieuRong * 6.0,
+          onTapCancelEvent: null,
+          onTapDownEvent: null,
+          onTapUpEvent: () async {
+            ///
+
+
+          },
+        ),
+        caiDatUuTien: true,
+      ).catchError((e) => null),
+
+      ]);
 
       /// -----
       /// TODO: Setup Root For SubCom
@@ -106,6 +160,7 @@ class QUANLYTHANHPHANTICHHOPTHUOCCAP
       /// -----
       await Future.wait([
         ///
+        getCardChienDauCoChonChiDinh?.onSetupRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onSetupRootForSubCom'),
       ]);
 
       /// -----
@@ -142,6 +197,7 @@ class QUANLYTHANHPHANTICHHOPTHUOCCAP
       /// -----
       await Future.wait([
         ///
+        getCardChienDauCoChonChiDinh?.onInitRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onInitRootForSubCom'),
       ]);
     } catch (e) {
       await onReportRootIssue(nameFunction: 'onInitRootForSubCom');
