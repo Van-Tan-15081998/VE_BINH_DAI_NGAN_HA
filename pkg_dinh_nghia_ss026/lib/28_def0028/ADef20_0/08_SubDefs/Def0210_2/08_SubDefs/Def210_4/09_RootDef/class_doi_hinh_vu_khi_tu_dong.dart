@@ -26,19 +26,35 @@ class DOIHINHVUKHITUDONGSTAGESS00A001 extends DOIHINHVUKHITUDONGCOBAN {
     await caiDatGiaiDoanSS060(value: GIAIDOANVUKHITUDONGSS060STAGESS00A001(), caiDatUuTien: true);
     await caiDatGiaiDoanSS070(value: GIAIDOANVUKHITUDONGSS070STAGESS00A001(), caiDatUuTien: true);
 
-    /// -----
-    /// TODO: Xây Dựng Đội Hình Chiến Đấu [VKTD] Nhóm SS00A,SS00B,SS00C [Giai Đoạn SS010]
-    /// -----
-    await getGiaiDoanSS010?.caiDatBanVeXayDungDoiHinhNhomSS00A(value: getBanVeXayDungDoiHinhDCTCSS010?.getBanVeXayDungDoiHinhVKNN);
-    await getGiaiDoanSS010?.caiDatBanVeXayDungDoiHinhNhomSS00B(value: getBanVeXayDungDoiHinhDCTCSS020?.getBanVeXayDungDoiHinhVKNN);
-    await getGiaiDoanSS010?.caiDatBanVeXayDungDoiHinhNhomSS00C(value: getBanVeXayDungDoiHinhDCTCSS030?.getBanVeXayDungDoiHinhVKNN);
+    // /// -----
+    // /// TODO: Xây Dựng Đội Hình Chiến Đấu [VKTD] Nhóm SS00A,SS00B,SS00C [Giai Đoạn SS010]
+    // /// -----
+    // await getGiaiDoanSS010?.caiDatBanVeXayDungDoiHinhNhomSS00A(value: getBanVeXayDungDoiHinhDCTCSS010?.getBanVeXayDungDoiHinhVKNN);
+    // await getGiaiDoanSS010?.caiDatBanVeXayDungDoiHinhNhomSS00B(value: getBanVeXayDungDoiHinhDCTCSS020?.getBanVeXayDungDoiHinhVKNN);
+    // await getGiaiDoanSS010?.caiDatBanVeXayDungDoiHinhNhomSS00C(value: getBanVeXayDungDoiHinhDCTCSS030?.getBanVeXayDungDoiHinhVKNN);
+    //
+    // /// -----
+    // /// TODO: Xây Dựng Đội Hình Chiến Đấu [VKTD] Nhóm SS00A,SS00B,SS00C [Giai Đoạn SS020]
+    // /// -----
+    // await getGiaiDoanSS020?.caiDatBanVeXayDungDoiHinhNhomSS00A(value: getBanVeXayDungDoiHinhDCTCSS010?.getBanVeXayDungDoiHinhVKNN);
+    // await getGiaiDoanSS020?.caiDatBanVeXayDungDoiHinhNhomSS00B(value: getBanVeXayDungDoiHinhDCTCSS020?.getBanVeXayDungDoiHinhVKNN);
+    // await getGiaiDoanSS020?.caiDatBanVeXayDungDoiHinhNhomSS00C(value: getBanVeXayDungDoiHinhDCTCSS030?.getBanVeXayDungDoiHinhVKNN);
 
     /// -----
-    /// TODO: Xây Dựng Đội Hình Chiến Đấu [VKTD] Nhóm SS00A,SS00B,SS00C [Giai Đoạn SS020]
+    /// TODO: Xây Dựng Đội Hình Chiến Đấu [VKTD] Nhóm SS00A,SS00B,SS00C,SS00D [Giai Đoạn SS010]
     /// -----
-    await getGiaiDoanSS020?.caiDatBanVeXayDungDoiHinhNhomSS00A(value: getBanVeXayDungDoiHinhDCTCSS010?.getBanVeXayDungDoiHinhVKNN);
-    await getGiaiDoanSS020?.caiDatBanVeXayDungDoiHinhNhomSS00B(value: getBanVeXayDungDoiHinhDCTCSS020?.getBanVeXayDungDoiHinhVKNN);
-    await getGiaiDoanSS020?.caiDatBanVeXayDungDoiHinhNhomSS00C(value: getBanVeXayDungDoiHinhDCTCSS030?.getBanVeXayDungDoiHinhVKNN);
+    await getGiaiDoanSS010?.caiDatBanVeXayDungDoiHinhNhomSS00A(value: null);
+    await getGiaiDoanSS010?.caiDatBanVeXayDungDoiHinhNhomSS00B(value: null);
+    await getGiaiDoanSS010?.caiDatBanVeXayDungDoiHinhNhomSS00C(value: null);
+    await getGiaiDoanSS010?.caiDatBanVeXayDungDoiHinhNhomSS00D(value: null);
+
+    /// -----
+    /// TODO: Xây Dựng Đội Hình Chiến Đấu [VKTD] Nhóm SS00A,SS00B,SS00C,SS00D [Giai Đoạn SS020]
+    /// -----
+    await getGiaiDoanSS020?.caiDatBanVeXayDungDoiHinhNhomSS00A(value: null);
+    await getGiaiDoanSS020?.caiDatBanVeXayDungDoiHinhNhomSS00B(value: null);
+    await getGiaiDoanSS020?.caiDatBanVeXayDungDoiHinhNhomSS00C(value: null);
+    await getGiaiDoanSS020?.caiDatBanVeXayDungDoiHinhNhomSS00D(value: null);
 
     /// -----
     /// TODO: Setup Root For SubCom

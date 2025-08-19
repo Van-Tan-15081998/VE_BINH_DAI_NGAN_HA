@@ -88,6 +88,9 @@ class THUOCTINHCHIENDAUTHEOQUYCHUANCOBAN with CauTrucThucThiCoBan {
   /// -----
   @override
   Future<void> onAttachRootForSubCom({required dynamic attachValue}) async {
+
+    getThuocTinhCapDoChienDauCoTheoQuyChuan?.onAttachRoot(attachValue: attachValue);
+
     ///
     return;
   }
@@ -141,6 +144,8 @@ class THUOCTINHCHIENDAUTHEOQUYCHUANCOBAN with CauTrucThucThiCoBan {
 
     /// TODO:
     await getThuocTinhCapDoChienDauCoTheoQuyChuan?.onInitRoot();
+
+    await getThuocTinhCapDoChienDauCoTheoQuyChuan?.onDongBoHoaBanGhiDuLieu();
 
     ///
     return;

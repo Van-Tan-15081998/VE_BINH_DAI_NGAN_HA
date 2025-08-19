@@ -23,6 +23,8 @@ dependencies:
 
   pkg_dinh_nghia_dv_ss0030:
     path: ../pkg_dinh_nghia_dv_ss0030
+  pkg_dinh_nghia_dv_ss2000:
+    path: ../pkg_dinh_nghia_dv_ss2000
 
 dev_dependencies:
 #  flutter_test:

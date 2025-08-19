@@ -177,8 +177,43 @@ class QuanLyTrangThaiHangarChienDauCoTongQuat with KhungThucThiCoBan {
   @override
   Future<void> onAttachRootForSubCom({required dynamic attachValue}) async {
     if (attachValue is GlobalStateManagementSystem) {
+
+      await getChienDauCoDangCapSao00E03SS01?.onAttachRoot(attachValue: attachValue);
+      await getChienDauCoDangCapSao00E03SS02?.onAttachRoot(attachValue: attachValue);
+      await getChienDauCoDangCapSao00E03SS03?.onAttachRoot(attachValue: attachValue);
+
+      await getChienDauCoDangCapSao00D04SS01?.onAttachRoot(attachValue: attachValue);
+      await getChienDauCoDangCapSao00D04SS02?.onAttachRoot(attachValue: attachValue);
+      await getChienDauCoDangCapSao00D04SS03?.onAttachRoot(attachValue: attachValue);
+
+      await getChienDauCoDangCapSao00C05SS01?.onAttachRoot(attachValue: attachValue);
+      await getChienDauCoDangCapSao00C05SS02?.onAttachRoot(attachValue: attachValue);
+      await getChienDauCoDangCapSao00C05SS03?.onAttachRoot(attachValue: attachValue);
+
+      await getChienDauCoDangCapSao00B06SS01?.onAttachRoot(attachValue: attachValue);
+      await getChienDauCoDangCapSao00B06SS02?.onAttachRoot(attachValue: attachValue);
+      await getChienDauCoDangCapSao00B06SS03?.onAttachRoot(attachValue: attachValue);
+
+      await getChienDauCoDangCapSao00A07SS01?.onAttachRoot(attachValue: attachValue);
+      await getChienDauCoDangCapSao00A07SS02?.onAttachRoot(attachValue: attachValue);
+      await getChienDauCoDangCapSao00A07SS03?.onAttachRoot(attachValue: attachValue);
+
+      await getChienDauCoDangCapSao00S08SS01?.onAttachRoot(attachValue: attachValue);
+      await getChienDauCoDangCapSao00S08SS02?.onAttachRoot(attachValue: attachValue);
+      await getChienDauCoDangCapSao00S08SS03?.onAttachRoot(attachValue: attachValue);
+
+      await getChienDauCoDangCapSao0SS09SS01?.onAttachRoot(attachValue: attachValue);
+      await getChienDauCoDangCapSao0SS09SS02?.onAttachRoot(attachValue: attachValue);
+      await getChienDauCoDangCapSao0SS09SS03?.onAttachRoot(attachValue: attachValue);
+
+      await getChienDauCoDangCapSaoSSS10SS01?.onAttachRoot(attachValue: attachValue);
+      await getChienDauCoDangCapSaoSSS10SS02?.onAttachRoot(attachValue: attachValue);
+      await getChienDauCoDangCapSaoSSS10SS03?.onAttachRoot(attachValue: attachValue);
+      await getChienDauCoDangCapSaoSSS10SS04?.onAttachRoot(attachValue: attachValue);
+      await getChienDauCoDangCapSaoSSS10SS05?.onAttachRoot(attachValue: attachValue);
+
       ///
-  }
+    }
 
     return;
   }

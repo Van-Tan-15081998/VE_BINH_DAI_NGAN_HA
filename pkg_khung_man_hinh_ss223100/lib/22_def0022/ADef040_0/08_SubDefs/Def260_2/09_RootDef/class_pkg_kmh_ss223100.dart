@@ -19,7 +19,8 @@ class VANBANCAPDOCHIENDAUCOCHONCHIDINH extends THANHPHANVANBANTHUANTHUOCCAP {
 
   @override
   Future<void> onCaiDatChiTietThanhPhanVanBan() async {
-    onVoidCaiDatVanBan(value: 'Cấp: 15/15', caiDatUuTien: true);
+    onVoidCaiDatVanBan(value: 'Cấp:', caiDatUuTien: true);
+    onVoidCaiDatAnchor(value: '[AnchorCenterLeft]', caiDatUuTien: true);
 
     return;
   }

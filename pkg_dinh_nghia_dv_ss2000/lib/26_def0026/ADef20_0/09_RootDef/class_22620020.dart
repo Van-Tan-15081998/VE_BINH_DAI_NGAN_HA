@@ -269,6 +269,25 @@ class MAYLUUTRUDULIEUCOBAN with CauTrucThucThiCoBan {
     }
   }
 
+  ///
+  /// TODO: Hàm chuyển đổi string timestamp sang int
+  ///
+  int? safeParseDateToTimestamp({required String? dateString}) {
+    try {
+      if (dateString != null && dateString?.isNotEmpty == true) {
+        DateTime dt = DateTime.parse(dateString);
+        return dt.millisecondsSinceEpoch;
+      } else {
+        return null; // hoặc trả về giá trị mặc định
+      }
+    } catch (e) {
+      if (kDebugMode) {
+        print("Lỗi parse DateTime: $e");
+      }
+      return null; // hoặc trả về giá trị mặc định
+    }
+  }
+
   /// -----
   /// TODO: Truy Xuất Bản Ghi Dữ Liệu Theo Khóa (Khóa Bản Ghi)
   /// -----
@@ -296,18 +315,22 @@ class MAYLUUTRUDULIEUCOBAN with CauTrucThucThiCoBan {
         await duLieu?.onCaiDatGiaTriBanGhiDuLieu(value: duLieuTraVe['gia_tri_ban_ghi_du_lieu'], caiDatUuTien: true);
         await duLieu?.onCaiDatLichSuGiaTriBanGhiDuLieu(value: duLieuTraVe['lich_su_gia_tri_ban_ghi_du_lieu'], caiDatUuTien: true);
         await duLieu?.onCaiDatPhienBanCapNhatBanGhiDuLieu(value: duLieuTraVe['phien_ban_cap_nhat_ban_ghi_du_lieu'], caiDatUuTien: true);
-        await duLieu?.onCaiDatThoiGianKhoiTaoBanGhiDuLieu(value: duLieuTraVe['thoi_gian_khoi_tao_ban_ghi_du_lieu'], caiDatUuTien: true);
-        await duLieu?.onCaiDatThoiGianCapNhatBanGhiDuLieu(value: duLieuTraVe['thoi_gian_cap_nhat_ban_ghi_du_lieu'], caiDatUuTien: true);
+
+        int? thoiGianKhoiTaoBanGhiDuLieu = safeParseDateToTimestamp(dateString: duLieuTraVe['thoi_gian_khoi_tao_ban_ghi_du_lieu']);
+        int? thoiGianCapNhatBanGhiDuLieu = safeParseDateToTimestamp(dateString: duLieuTraVe['thoi_gian_cap_nhat_ban_ghi_du_lieu']);
+
+        await duLieu?.onCaiDatThoiGianKhoiTaoBanGhiDuLieu(value: thoiGianKhoiTaoBanGhiDuLieu, caiDatUuTien: true);
+        await duLieu?.onCaiDatThoiGianCapNhatBanGhiDuLieu(value: thoiGianCapNhatBanGhiDuLieu, caiDatUuTien: true);
 
         if (kDebugMode) {
-          print('[📋]_[LOG] KHÓA BẢN GHI DỮ LIỆU [$khoaBanGhiDuLieu] ✅✅✅ TRUY XUẤT THÀNH CÔNG ✅✅✅ [LOG]_[📋]');
+          print('[📋]_[LOG 0] KHÓA BẢN GHI DỮ LIỆU [$khoaBanGhiDuLieu] ✅✅✅ TRUY XUẤT THÀNH CÔNG ✅✅✅ [LOG]_[📋]');
         }
 
         ///
         return true;
       } else {
         if (kDebugMode) {
-          print('[📋]_[LOG] KHÓA BẢN GHI DỮ LIỆU [$khoaBanGhiDuLieu] 💢💢💢 TRUY XUẤT KHÔNG THÀNH CÔNG 💢💢💢 [LOG]_[📋]');
+          print('[📋]_[LOG 1] KHÓA BẢN GHI DỮ LIỆU [$khoaBanGhiDuLieu] 💢💢💢 TRUY XUẤT KHÔNG THÀNH CÔNG 💢💢💢 [LOG]_[📋]');
         }
 
         ///
@@ -315,7 +338,7 @@ class MAYLUUTRUDULIEUCOBAN with CauTrucThucThiCoBan {
       }
     } catch (e) {
       if (kDebugMode) {
-        print('[📋]_[LOG] KHÓA BẢN GHI DỮ LIỆU [$khoaBanGhiDuLieu] 💢💢💢 TRUY XUẤT KHÔNG THÀNH CÔNG 💢💢💢 [LOG]_[📋]');
+        print('[📋]_[LOG ERROR] KHÓA BẢN GHI DỮ LIỆU [$khoaBanGhiDuLieu] 💢💢💢 TRUY XUẤT KHÔNG THÀNH CÔNG 💢💢💢 [LOG]_[📋]');
       }
 
       ///
@@ -367,7 +390,7 @@ class MAYLUUTRUDULIEUCOBAN with CauTrucThucThiCoBan {
       return false;
     } catch (e) {
       if (kDebugMode) {
-        print('[📋]_[LOG] KHÓA BẢN GHI DỮ LIỆU [$khoaBanGhiDuLieu] 💢💢💢 TRUY XUẤT KHÔNG THÀNH CÔNG 💢💢💢 [LOG]_[📋]');
+        print('[📋]_[LOG ERROR] KHÓA BẢN GHI DỮ LIỆU [$khoaBanGhiDuLieu] 💢💢💢 TRUY XUẤT KHÔNG THÀNH CÔNG 💢💢💢 [LOG]_[📋]');
       }
 
       ///

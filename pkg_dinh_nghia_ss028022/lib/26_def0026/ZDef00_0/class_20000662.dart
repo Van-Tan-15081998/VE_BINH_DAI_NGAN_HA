@@ -79,6 +79,12 @@ class THUOCTINHSOHUUCHIENDAUCOCOBAN with CauTrucThucThiCoBan {
   /// -----
   @override
   Future<void> onAttachRootForSubCom({required dynamic attachValue}) async {
+
+    /// -----
+    /// TODO:
+    /// -----
+    await getSoHuuTheoThoiGianVinhVien?.onAttachRoot(attachValue: attachValue);
+
     ///
     return;
   }
@@ -117,6 +123,11 @@ class THUOCTINHSOHUUCHIENDAUCOCOBAN with CauTrucThucThiCoBan {
     /// -----
     await getSoHuuTheoThoiGianHuuHan?.onInitRoot();
 
+    /// -----
+    /// TODO:
+    /// -----
+    await onDongBoHoaBanGhiDuLieu();
+
     ///
     return;
   }
@@ -126,6 +137,19 @@ class THUOCTINHSOHUUCHIENDAUCOCOBAN with CauTrucThucThiCoBan {
   /// -----
   @override
   Future<void> onResetRootForSubCom() async {
+    ///
+    return;
+  }
+
+  /// -----
+  /// TODO: Đồng Bộ Hóa Bản Ghi Dữ Liệu
+  /// -----
+  Future<void> onDongBoHoaBanGhiDuLieu() async {
+    /// -----
+    /// TODO:
+    /// -----
+    await getSoHuuTheoThoiGianVinhVien?.onDongBoHoaBanGhiDuLieu();
+
     ///
     return;
   }

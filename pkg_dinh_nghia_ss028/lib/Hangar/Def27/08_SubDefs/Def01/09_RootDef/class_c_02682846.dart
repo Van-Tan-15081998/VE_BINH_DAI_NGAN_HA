@@ -72,12 +72,23 @@ class ChienDauCoDangCapSaoSSS10SS01 extends MoHinhChienDauCoDangCapSaoSSS10 {
   /// -----
   @override
   Future<void> onInitRoot() async {
+
+
+    await getThuocTinhSoHuuChienDauCo?.getSoHuuTheoThoiGianVinhVien?.caiDatKhoaBanGhiDuLieuSoHuuTheoThoiGianVinhVienChienDauCoDangCapSaoSSS10SS010();
+
+    await getThuocTinhChienDauTheoQuyChuan?.getThuocTinhCapDoChienDauCoTheoQuyChuan?.caiDatKhoaBanGhiDuLieuCapDoTheoQuyChuanChienDauCoDangCapSaoSSS10SS010();
+
     await super.onInitRoot();
 
     getThuocTinh?.getThuocTinhTanCong?.onVoidCaiDatMaDinhDanhHinhThucDuongBayVienDanDacHuu(value: '[HINH_THUC_SS120]');
 
+    getThuocTinh?.caiDatTenChienDauCo(value: 'SSS10SS01', caiDatUuTien: true);
+    getThuocTinh?.caiDatMaDinhDanhDangCapSao(value: '[SSS10SS01]', caiDatUuTien: true);
+
+
     return;
   }
+
 
   /// -----
   /// TODO: Reset Root

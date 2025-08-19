@@ -24,6 +24,11 @@ class SpritePhuongTienSS70BangDieuKhienDoiHinhVuKhiTuDong extends SPRITETHANHNGA
 
     await getMoHinh?.onCaiDatSpriteChiSoPhuongTien(value: this);
 
-    return;
+    return; // [VUKHIMONSTERCLASSSS00ASS010SS020]
+  }
+
+  @override
+  void update(double dt) {
+    super.update(dt);
   }
 }

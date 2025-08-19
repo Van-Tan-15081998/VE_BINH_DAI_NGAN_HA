@@ -9,11 +9,11 @@ class MoHinhChienDauCoTongQuat {
   /// -----
   /// TODO: Attach Root
   /// -----
-  Future<void> onAttachRoot() async {
+  Future<void> onAttachRoot({required dynamic attachValue}) async {
     /// -----
     /// TODO: Attach Root For SubCom
     /// -----
-    await onAttachRootForSubCom();
+    await onAttachRootForSubCom(attachValue: attachValue);
 
     return;
   }
@@ -60,7 +60,11 @@ class MoHinhChienDauCoTongQuat {
   /// -----
   /// TODO: Attach Root For SubCom
   /// -----
-  Future<void> onAttachRootForSubCom() async {
+  Future<void> onAttachRootForSubCom({required dynamic attachValue}) async {
+
+    getThuocTinhSoHuuChienDauCo?.onAttachRoot(attachValue: attachValue);
+    getThuocTinhChienDauTheoQuyChuan?.onAttachRoot(attachValue: attachValue);
+
     return;
   }
 

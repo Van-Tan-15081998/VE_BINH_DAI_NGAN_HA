@@ -106,7 +106,35 @@ class MoHinhThuocTinhChienDauCoTongQuat {
     return;
   }
 
+  /// -----
+  /// TODO: Tên Chiến Đấu Cơ
+  /// -----
+  String? _tenChienDauCo;
+  String? get getTenChienDauCo => _tenChienDauCo;
+  Future<void> caiDatTenChienDauCo({required String? value, bool? caiDatUuTien}) async {
+    if (caiDatUuTien == true) {
+      _tenChienDauCo = value;
+    } else {
+      _tenChienDauCo ??= value;
+    }
 
+    return;
+  }
+
+  /// -----
+  /// TODO: Mã Định Danh Đẳng Cấp Sao
+  /// -----
+  String? _maDinhDanhDangCapSao;
+  String? get getMaDinhDanhDangCapSao => _maDinhDanhDangCapSao;
+  Future<void> caiDatMaDinhDanhDangCapSao({required String? value, bool? caiDatUuTien}) async {
+    if (caiDatUuTien == true) {
+      _maDinhDanhDangCapSao = value;
+    } else {
+      _maDinhDanhDangCapSao ??= value;
+    }
+
+    return;
+  }
 
   /// -----
   /// TODO: Thuộc Tính Kích Thước

@@ -159,7 +159,7 @@ class GlobalStateManagementSystem extends CoreStateManagement {
       await caiDatDichVuHeThong(value: QuanLyTrangThaiDichVuHeThong());
 
       await caiDatDichVuMayPhatAmThanh(value: QUANLYTRANGTHAIDICHVUMAYPHATAMTHANH());
-      // await caiDatDichVuCoSoDuLieu(value: QUANLYTRANGTHAIDICHVUCOSODULIEU());
+      await caiDatDichVuCoSoDuLieu(value: QUANLYTRANGTHAIDICHVUCOSODULIEU());
 
       await caiDatThietLapTongQuat(value: QuanLyTrangThaiThietLapTongQuat());
       await caiDatTienTrinhTongQuat(value: QuanLyTrangThaiTienTrinhTongQuat());

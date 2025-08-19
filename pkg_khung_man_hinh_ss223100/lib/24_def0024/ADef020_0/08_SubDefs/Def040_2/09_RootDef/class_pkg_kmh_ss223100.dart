@@ -5,7 +5,9 @@ import 'package:pkg_khung_man_hinh_ss223100/22_def0022/ADef040_0/08_SubDefs/Def0
 
 import 'package:pkg_khung_man_hinh_ss223100/22_def0022/ADef040_0/08_SubDefs/Def220_2/09_RootDef/class_pkg_kmh_ss223100.dart';
 import 'package:pkg_khung_man_hinh_ss223100/22_def0022/ADef040_0/08_SubDefs/Def240_2/09_RootDef/class_pkg_kmh_ss223100.dart';
+import 'package:pkg_khung_man_hinh_ss223100/22_def0022/ADef040_0/08_SubDefs/Def242_2/09_RootDef/class_pkg_kmh_ss223100.dart';
 import 'package:pkg_khung_man_hinh_ss223100/22_def0022/ADef040_0/08_SubDefs/Def260_2/09_RootDef/class_pkg_kmh_ss223100.dart';
+import 'package:pkg_khung_man_hinh_ss223100/22_def0022/ADef040_0/08_SubDefs/Def262_2/09_RootDef/class_pkg_kmh_ss223100.dart';
 
 import 'package:pkg_khung_man_hinh_ss223100/22_def0022/ADef040_0/08_SubDefs/Def300_2/09_RootDef/class_pkg_kmh_ss223100.dart';
 import 'package:pkg_khung_man_hinh_ss223100/22_def0022/ADef040_0/08_SubDefs/Def320_2/09_RootDef/class_pkg_kmh_ss223100.dart';
@@ -26,6 +28,8 @@ import 'package:pkg_khung_man_hinh_ss223100/22_def0022/ADef040_0/08_SubDefs/Def6
 import 'package:pkg_khung_man_hinh_ss223100/22_def0022/ADef040_0/08_SubDefs/Def640_2/09_RootDef/class_pkg_kmh_ss223100.dart';
 import 'package:pkg_khung_man_hinh_ss223100/22_def0022/ADef040_0/08_SubDefs/Def660_2/09_RootDef/class_pkg_kmh_ss223100.dart';
 import 'package:pkg_khung_man_hinh_ss223100/22_def0022/ADef040_0/08_SubDefs/Def680_2/09_RootDef/class_pkg_kmh_ss223100.dart';
+
+import 'package:pkg_khung_man_hinh_ss223100/22_def0022/ADef040_0/08_SubDefs/Def700_2/09_RootDef/class_pkg_kmh_ss223100.dart';
 
 /// -----
 /// TODO: Quản Lý Thành Phần Văn Bản Thuộc Cấp
@@ -93,6 +97,22 @@ class QUANLYTHANHPHANVANBANTHUOCCAP extends QUANLYTHANHPHANVANBANTHUOCCAPCOBAN {
   /// -----
   /// TODO:
   /// -----
+  VANBANGIATRIDANGCAPSAOCHIENDAUCOCHONCHIDINH? _vanBanGiaTriDangCapSaoChienDauCoChonChiDinh;
+  VANBANGIATRIDANGCAPSAOCHIENDAUCOCHONCHIDINH? get getVanBanGiaTriDangCapSaoChienDauCoChonChiDinh => _vanBanGiaTriDangCapSaoChienDauCoChonChiDinh;
+  Future<void> onCaiDatVanBanGiaTriDangCapSaoChienDauCoChonChiDinh({required VANBANGIATRIDANGCAPSAOCHIENDAUCOCHONCHIDINH? value, bool? caiDatUuTien}) async {
+    if (caiDatUuTien == true) {
+      _vanBanGiaTriDangCapSaoChienDauCoChonChiDinh = value;
+    } else {
+      _vanBanGiaTriDangCapSaoChienDauCoChonChiDinh ??= value;
+    }
+
+    ///
+    return;
+  }
+
+  /// -----
+  /// TODO:
+  /// -----
   VANBANCAPDOCHIENDAUCOCHONCHIDINH? _vanBanCapDoChienDauCoChonChiDinh;
   VANBANCAPDOCHIENDAUCOCHONCHIDINH? get getVanBanCapDoChienDauCoChonChiDinh => _vanBanCapDoChienDauCoChonChiDinh;
   Future<void> onCaiDatVanBanCapDoChienDauCoChonChiDinh({required VANBANCAPDOCHIENDAUCOCHONCHIDINH? value, bool? caiDatUuTien}) async {
@@ -100,6 +120,22 @@ class QUANLYTHANHPHANVANBANTHUOCCAP extends QUANLYTHANHPHANVANBANTHUOCCAPCOBAN {
       _vanBanCapDoChienDauCoChonChiDinh = value;
     } else {
       _vanBanCapDoChienDauCoChonChiDinh ??= value;
+    }
+
+    ///
+    return;
+  }
+
+  /// -----
+  /// TODO:
+  /// -----
+  VANBANGIATRICAPDOCHIENDAUCOCHONCHIDINH? _vanBanGiaTriCapDoChienDauCoChonChiDinh;
+  VANBANGIATRICAPDOCHIENDAUCOCHONCHIDINH? get getVanBanGiaTriCapDoChienDauCoChonChiDinh => _vanBanGiaTriCapDoChienDauCoChonChiDinh;
+  Future<void> onCaiDatVanBanGiaTriCapDoChienDauCoChonChiDinh({required VANBANGIATRICAPDOCHIENDAUCOCHONCHIDINH? value, bool? caiDatUuTien}) async {
+    if (caiDatUuTien == true) {
+      _vanBanGiaTriCapDoChienDauCoChonChiDinh = value;
+    } else {
+      _vanBanGiaTriCapDoChienDauCoChonChiDinh ??= value;
     }
 
     ///
@@ -390,6 +426,19 @@ class QUANLYTHANHPHANVANBANTHUOCCAP extends QUANLYTHANHPHANVANBANTHUOCCAPCOBAN {
     return;
   }
 
+  VANBANDIEUKIENNANGCAPCHIENDAUCO? _vanBanDieuKienNangCapChienDauCo;
+  VANBANDIEUKIENNANGCAPCHIENDAUCO? get getVanBanDieuKienNangCapChienDauCo => _vanBanDieuKienNangCapChienDauCo;
+  Future<void> onCaiDatVanBanDieuKienNangCapChienDauCo({required VANBANDIEUKIENNANGCAPCHIENDAUCO? value, bool? caiDatUuTien}) async {
+    if (caiDatUuTien == true) {
+      _vanBanDieuKienNangCapChienDauCo = value;
+    } else {
+      _vanBanDieuKienNangCapChienDauCo ??= value;
+    }
+
+    ///
+    return;
+  }
+
   /// -----
   /// TODO: Add Comp Root
   /// -----
@@ -403,7 +452,9 @@ class QUANLYTHANHPHANVANBANTHUOCCAP extends QUANLYTHANHPHANVANBANTHUOCCAPCOBAN {
         onAddComponent(flameGame: null, parentComponent: component, childComponent: getVanBanDinhDanhKhungManHinh).catchError((e) => null),
         onAddComponent(flameGame: null, parentComponent: component, childComponent: getVanBanDinhDanhChienDauCoChonChiDinh).catchError((e) => null),
         onAddComponent(flameGame: null, parentComponent: component, childComponent: getVanBanDangCapSaoChienDauCoChonChiDinh).catchError((e) => null),
+        onAddComponent(flameGame: null, parentComponent: component, childComponent: getVanBanGiaTriDangCapSaoChienDauCoChonChiDinh).catchError((e) => null),
         onAddComponent(flameGame: null, parentComponent: component, childComponent: getVanBanCapDoChienDauCoChonChiDinh).catchError((e) => null),
+        onAddComponent(flameGame: null, parentComponent: component, childComponent: getVanBanGiaTriCapDoChienDauCoChonChiDinh).catchError((e) => null),
 
         onAddComponent(flameGame: null, parentComponent: component, childComponent: getVanBanHPChienDauCoChonChiDinh).catchError((e) => null),
         onAddComponent(flameGame: null, parentComponent: component, childComponent: getVanBanGiaTriHPChienDauCoChonChiDinh).catchError((e) => null),
@@ -436,6 +487,8 @@ class QUANLYTHANHPHANVANBANTHUOCCAP extends QUANLYTHANHPHANVANBANTHUOCCAPCOBAN {
         onAddComponent(flameGame: null, parentComponent: component, childComponent: getVanBanGiaTriChiSoTyLeBaoKichTenLua).catchError((e) => null),
         onAddComponent(flameGame: null, parentComponent: component, childComponent: getVanBanGiaTriChiSoSatThuongBaoKichTenLua).catchError((e) => null),
 
+        onAddComponent(flameGame: null, parentComponent: component, childComponent: getVanBanDieuKienNangCapChienDauCo).catchError((e) => null),
+
       ]);
 
       /// -----
@@ -463,7 +516,9 @@ class QUANLYTHANHPHANVANBANTHUOCCAP extends QUANLYTHANHPHANVANBANTHUOCCAPCOBAN {
         getVanBanDinhDanhKhungManHinh?.onAddRoot(flameGame: null, component: component).catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
         getVanBanDinhDanhChienDauCoChonChiDinh?.onAddRoot(flameGame: null, component: component).catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
         getVanBanDangCapSaoChienDauCoChonChiDinh?.onAddRoot(flameGame: null, component: component).catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+        getVanBanGiaTriDangCapSaoChienDauCoChonChiDinh?.onAddRoot(flameGame: null, component: component).catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
         getVanBanCapDoChienDauCoChonChiDinh?.onAddRoot(flameGame: null, component: component).catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+        getVanBanGiaTriCapDoChienDauCoChonChiDinh?.onAddRoot(flameGame: null, component: component).catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
 
         getVanBanHPChienDauCoChonChiDinh?.onAddRoot(flameGame: null, component: component).catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
         getVanBanGiaTriHPChienDauCoChonChiDinh?.onAddRoot(flameGame: null, component: component).catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
@@ -496,6 +551,8 @@ class QUANLYTHANHPHANVANBANTHUOCCAP extends QUANLYTHANHPHANVANBANTHUOCCAPCOBAN {
         getVanBanGiaTriChiSoTyLeBaoKichTenLua?.onAddRoot(flameGame: null, component: component).catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
         getVanBanGiaTriChiSoSatThuongBaoKichTenLua?.onAddRoot(flameGame: null, component: component).catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
 
+        getVanBanDieuKienNangCapChienDauCo?.onAddRoot(flameGame: null, component: component).catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+
       ]);
     } catch (e) {
       await onReportRootIssue(nameFunction: 'onAddRootForSubCom');
@@ -516,8 +573,10 @@ class QUANLYTHANHPHANVANBANTHUOCCAP extends QUANLYTHANHPHANVANBANTHUOCCAPCOBAN {
       /// -----
       /// TODO:
       /// -----
-      double sizeDxManHinhVatLy = getSizeDx ?? 100.0;
-      double sizeDyManHinhVatLy = getSizeDy ?? 100.0;
+      double sizeDxKhungManHinh = getSizeDx ?? 100.0;
+      double sizeDyKhungManHinh = getSizeDy ?? 100.0;
+
+      double donViChieuRong = sizeDxKhungManHinh / 16;
 
       await Future.wait([
         onCaiDatVanBanDinhDanhKhungManHinh(
@@ -525,9 +584,9 @@ class QUANLYTHANHPHANVANBANTHUOCCAP extends QUANLYTHANHPHANVANBANTHUOCCAPCOBAN {
             globalStateManagementSystem: getGlobalStateManagementSystem,
             gameController: getGameController,
             thanhPhanQuanLyThuocCapTrucTiep: getThanhPhanQuanLyThuocCapTrucTiep,
-            sizeDx: sizeDxManHinhVatLy,
-            sizeDy: sizeDyManHinhVatLy,
-            positionDx: sizeDxManHinhVatLy / 2,
+            sizeDx: sizeDxKhungManHinh,
+            sizeDy: sizeDyKhungManHinh,
+            positionDx: sizeDxKhungManHinh / 2,
             positionDy: 35.0,
           ),
           caiDatUuTien: true,
@@ -538,10 +597,10 @@ class QUANLYTHANHPHANVANBANTHUOCCAP extends QUANLYTHANHPHANVANBANTHUOCCAPCOBAN {
             globalStateManagementSystem: getGlobalStateManagementSystem,
             gameController: getGameController,
             thanhPhanQuanLyThuocCapTrucTiep: getThanhPhanQuanLyThuocCapTrucTiep,
-            sizeDx: sizeDxManHinhVatLy / 2,
+            sizeDx: sizeDxKhungManHinh / 2,
             sizeDy: 30,
-            positionDx: sizeDxManHinhVatLy * (2 / 3),
-            positionDy: sizeDyManHinhVatLy / 6,
+            positionDx: sizeDxKhungManHinh * (2 / 5),
+            positionDy: sizeDyKhungManHinh / 7,
           ),
           caiDatUuTien: true,
         ).catchError((e) => null),
@@ -551,10 +610,23 @@ class QUANLYTHANHPHANVANBANTHUOCCAP extends QUANLYTHANHPHANVANBANTHUOCCAPCOBAN {
             globalStateManagementSystem: getGlobalStateManagementSystem,
             gameController: getGameController,
             thanhPhanQuanLyThuocCapTrucTiep: getThanhPhanQuanLyThuocCapTrucTiep,
-            sizeDx: sizeDxManHinhVatLy / 2,
+            sizeDx: sizeDxKhungManHinh / 2,
             sizeDy: 30,
-            positionDx: sizeDxManHinhVatLy * (2 / 3),
-            positionDy: (sizeDyManHinhVatLy / 6) + 30.0,
+            positionDx: sizeDxKhungManHinh * (2 / 5),
+            positionDy: (sizeDyKhungManHinh / 7) + 30.0,
+          ),
+          caiDatUuTien: true,
+        ).catchError((e) => null),
+
+        onCaiDatVanBanGiaTriDangCapSaoChienDauCoChonChiDinh(
+          value: VANBANGIATRIDANGCAPSAOCHIENDAUCOCHONCHIDINH(
+            globalStateManagementSystem: getGlobalStateManagementSystem,
+            gameController: getGameController,
+            thanhPhanQuanLyThuocCapTrucTiep: getThanhPhanQuanLyThuocCapTrucTiep,
+            sizeDx: sizeDxKhungManHinh / 2,
+            sizeDy: 30,
+            positionDx: sizeDxKhungManHinh * (9 / 10),
+            positionDy: (sizeDyKhungManHinh / 7) + 30.0,
           ),
           caiDatUuTien: true,
         ).catchError((e) => null),
@@ -564,10 +636,23 @@ class QUANLYTHANHPHANVANBANTHUOCCAP extends QUANLYTHANHPHANVANBANTHUOCCAPCOBAN {
             globalStateManagementSystem: getGlobalStateManagementSystem,
             gameController: getGameController,
             thanhPhanQuanLyThuocCapTrucTiep: getThanhPhanQuanLyThuocCapTrucTiep,
-            sizeDx: sizeDxManHinhVatLy / 2,
+            sizeDx: sizeDxKhungManHinh / 2,
             sizeDy: 30,
-            positionDx: sizeDxManHinhVatLy * (2 / 3),
-            positionDy: (sizeDyManHinhVatLy / 6) + 60.0,
+            positionDx: sizeDxKhungManHinh * (2 / 5),
+            positionDy: (sizeDyKhungManHinh / 7) + 60.0,
+          ),
+          caiDatUuTien: true,
+        ).catchError((e) => null),
+
+        onCaiDatVanBanGiaTriCapDoChienDauCoChonChiDinh(
+          value: VANBANGIATRICAPDOCHIENDAUCOCHONCHIDINH(
+            globalStateManagementSystem: getGlobalStateManagementSystem,
+            gameController: getGameController,
+            thanhPhanQuanLyThuocCapTrucTiep: getThanhPhanQuanLyThuocCapTrucTiep,
+            sizeDx: sizeDxKhungManHinh / 2,
+            sizeDy: 30,
+            positionDx: sizeDxKhungManHinh * (9 / 10),
+            positionDy: (sizeDyKhungManHinh / 7) + 60.0,
           ),
           caiDatUuTien: true,
         ).catchError((e) => null),
@@ -577,10 +662,10 @@ class QUANLYTHANHPHANVANBANTHUOCCAP extends QUANLYTHANHPHANVANBANTHUOCCAPCOBAN {
             globalStateManagementSystem: getGlobalStateManagementSystem,
             gameController: getGameController,
             thanhPhanQuanLyThuocCapTrucTiep: getThanhPhanQuanLyThuocCapTrucTiep,
-            sizeDx: sizeDxManHinhVatLy / 2,
+            sizeDx: sizeDxKhungManHinh / 2,
             sizeDy: 30,
-            positionDx: sizeDxManHinhVatLy * (1 / 10),
-            positionDy: (sizeDyManHinhVatLy / 6) + 100.0,
+            positionDx: sizeDxKhungManHinh * (1 / 10),
+            positionDy: (sizeDyKhungManHinh / 6) + 100.0,
           ),
           caiDatUuTien: true,
         ).catchError((e) => null),
@@ -589,10 +674,10 @@ class QUANLYTHANHPHANVANBANTHUOCCAP extends QUANLYTHANHPHANVANBANTHUOCCAPCOBAN {
             globalStateManagementSystem: getGlobalStateManagementSystem,
             gameController: getGameController,
             thanhPhanQuanLyThuocCapTrucTiep: getThanhPhanQuanLyThuocCapTrucTiep,
-            sizeDx: sizeDxManHinhVatLy / 2,
+            sizeDx: sizeDxKhungManHinh / 2,
             sizeDy: 30,
-            positionDx: sizeDxManHinhVatLy * (9 / 10),
-            positionDy: (sizeDyManHinhVatLy / 6) + 100.0,
+            positionDx: sizeDxKhungManHinh * (9 / 10),
+            positionDy: (sizeDyKhungManHinh / 6) + 100.0,
           ),
           caiDatUuTien: true,
         ).catchError((e) => null),
@@ -605,10 +690,10 @@ class QUANLYTHANHPHANVANBANTHUOCCAP extends QUANLYTHANHPHANVANBANTHUOCCAPCOBAN {
             globalStateManagementSystem: getGlobalStateManagementSystem,
             gameController: getGameController,
             thanhPhanQuanLyThuocCapTrucTiep: getThanhPhanQuanLyThuocCapTrucTiep,
-            sizeDx: sizeDxManHinhVatLy / 2,
+            sizeDx: sizeDxKhungManHinh / 2,
             sizeDy: 30,
-            positionDx: sizeDxManHinhVatLy * (1 / 10),
-            positionDy: (sizeDyManHinhVatLy / 6) + 140.0,
+            positionDx: sizeDxKhungManHinh * (1 / 10),
+            positionDy: (sizeDyKhungManHinh / 6) + 140.0,
           ),
           caiDatUuTien: true,
         ).catchError((e) => null),
@@ -618,10 +703,10 @@ class QUANLYTHANHPHANVANBANTHUOCCAP extends QUANLYTHANHPHANVANBANTHUOCCAPCOBAN {
             globalStateManagementSystem: getGlobalStateManagementSystem,
             gameController: getGameController,
             thanhPhanQuanLyThuocCapTrucTiep: getThanhPhanQuanLyThuocCapTrucTiep,
-            sizeDx: sizeDxManHinhVatLy / 2,
+            sizeDx: sizeDxKhungManHinh / 2,
             sizeDy: 30,
-            positionDx: sizeDxManHinhVatLy * (2 / 10),
-            positionDy: (sizeDyManHinhVatLy / 6) + 170.0,
+            positionDx: sizeDxKhungManHinh * (2 / 10),
+            positionDy: (sizeDyKhungManHinh / 6) + 170.0,
           ),
           caiDatUuTien: true,
         ).catchError((e) => null),
@@ -630,10 +715,10 @@ class QUANLYTHANHPHANVANBANTHUOCCAP extends QUANLYTHANHPHANVANBANTHUOCCAPCOBAN {
             globalStateManagementSystem: getGlobalStateManagementSystem,
             gameController: getGameController,
             thanhPhanQuanLyThuocCapTrucTiep: getThanhPhanQuanLyThuocCapTrucTiep,
-            sizeDx: sizeDxManHinhVatLy / 2,
+            sizeDx: sizeDxKhungManHinh / 2,
             sizeDy: 30,
-            positionDx: sizeDxManHinhVatLy * (2 / 10),
-            positionDy: (sizeDyManHinhVatLy / 6) + 200.0,
+            positionDx: sizeDxKhungManHinh * (2 / 10),
+            positionDy: (sizeDyKhungManHinh / 6) + 200.0,
           ),
           caiDatUuTien: true,
         ).catchError((e) => null),
@@ -642,10 +727,10 @@ class QUANLYTHANHPHANVANBANTHUOCCAP extends QUANLYTHANHPHANVANBANTHUOCCAPCOBAN {
             globalStateManagementSystem: getGlobalStateManagementSystem,
             gameController: getGameController,
             thanhPhanQuanLyThuocCapTrucTiep: getThanhPhanQuanLyThuocCapTrucTiep,
-            sizeDx: sizeDxManHinhVatLy / 2,
+            sizeDx: sizeDxKhungManHinh / 2,
             sizeDy: 30,
-            positionDx: sizeDxManHinhVatLy * (2 / 10),
-            positionDy: (sizeDyManHinhVatLy / 6) + 230.0,
+            positionDx: sizeDxKhungManHinh * (2 / 10),
+            positionDy: (sizeDyKhungManHinh / 6) + 230.0,
           ),
           caiDatUuTien: true,
         ).catchError((e) => null),
@@ -654,10 +739,10 @@ class QUANLYTHANHPHANVANBANTHUOCCAP extends QUANLYTHANHPHANVANBANTHUOCCAPCOBAN {
             globalStateManagementSystem: getGlobalStateManagementSystem,
             gameController: getGameController,
             thanhPhanQuanLyThuocCapTrucTiep: getThanhPhanQuanLyThuocCapTrucTiep,
-            sizeDx: sizeDxManHinhVatLy / 2,
+            sizeDx: sizeDxKhungManHinh / 2,
             sizeDy: 30,
-            positionDx: sizeDxManHinhVatLy * (2 / 10),
-            positionDy: (sizeDyManHinhVatLy / 6) + 260.0,
+            positionDx: sizeDxKhungManHinh * (2 / 10),
+            positionDy: (sizeDyKhungManHinh / 6) + 260.0,
           ),
           caiDatUuTien: true,
         ).catchError((e) => null),
@@ -670,10 +755,10 @@ class QUANLYTHANHPHANVANBANTHUOCCAP extends QUANLYTHANHPHANVANBANTHUOCCAPCOBAN {
             globalStateManagementSystem: getGlobalStateManagementSystem,
             gameController: getGameController,
             thanhPhanQuanLyThuocCapTrucTiep: getThanhPhanQuanLyThuocCapTrucTiep,
-            sizeDx: sizeDxManHinhVatLy / 2,
+            sizeDx: sizeDxKhungManHinh / 2,
             sizeDy: 30,
-            positionDx: sizeDxManHinhVatLy * (9 / 10),
-            positionDy: (sizeDyManHinhVatLy / 6) + 170.0,
+            positionDx: sizeDxKhungManHinh * (9 / 10),
+            positionDy: (sizeDyKhungManHinh / 6) + 170.0,
           ),
           caiDatUuTien: true,
         ).catchError((e) => null),
@@ -682,10 +767,10 @@ class QUANLYTHANHPHANVANBANTHUOCCAP extends QUANLYTHANHPHANVANBANTHUOCCAPCOBAN {
             globalStateManagementSystem: getGlobalStateManagementSystem,
             gameController: getGameController,
             thanhPhanQuanLyThuocCapTrucTiep: getThanhPhanQuanLyThuocCapTrucTiep,
-            sizeDx: sizeDxManHinhVatLy / 2,
+            sizeDx: sizeDxKhungManHinh / 2,
             sizeDy: 30,
-            positionDx: sizeDxManHinhVatLy * (9 / 10),
-            positionDy: (sizeDyManHinhVatLy / 6) + 200.0,
+            positionDx: sizeDxKhungManHinh * (9 / 10),
+            positionDy: (sizeDyKhungManHinh / 6) + 200.0,
           ),
           caiDatUuTien: true,
         ).catchError((e) => null),
@@ -694,10 +779,10 @@ class QUANLYTHANHPHANVANBANTHUOCCAP extends QUANLYTHANHPHANVANBANTHUOCCAPCOBAN {
             globalStateManagementSystem: getGlobalStateManagementSystem,
             gameController: getGameController,
             thanhPhanQuanLyThuocCapTrucTiep: getThanhPhanQuanLyThuocCapTrucTiep,
-            sizeDx: sizeDxManHinhVatLy / 2,
+            sizeDx: sizeDxKhungManHinh / 2,
             sizeDy: 30,
-            positionDx: sizeDxManHinhVatLy * (9 / 10),
-            positionDy: (sizeDyManHinhVatLy / 6) + 230.0,
+            positionDx: sizeDxKhungManHinh * (9 / 10),
+            positionDy: (sizeDyKhungManHinh / 6) + 230.0,
           ),
           caiDatUuTien: true,
         ).catchError((e) => null),
@@ -706,10 +791,10 @@ class QUANLYTHANHPHANVANBANTHUOCCAP extends QUANLYTHANHPHANVANBANTHUOCCAPCOBAN {
             globalStateManagementSystem: getGlobalStateManagementSystem,
             gameController: getGameController,
             thanhPhanQuanLyThuocCapTrucTiep: getThanhPhanQuanLyThuocCapTrucTiep,
-            sizeDx: sizeDxManHinhVatLy / 2,
+            sizeDx: sizeDxKhungManHinh / 2,
             sizeDy: 30,
-            positionDx: sizeDxManHinhVatLy * (9 / 10),
-            positionDy: (sizeDyManHinhVatLy / 6) + 260.0,
+            positionDx: sizeDxKhungManHinh * (9 / 10),
+            positionDy: (sizeDyKhungManHinh / 6) + 260.0,
           ),
           caiDatUuTien: true,
         ).catchError((e) => null),
@@ -726,10 +811,10 @@ class QUANLYTHANHPHANVANBANTHUOCCAP extends QUANLYTHANHPHANVANBANTHUOCCAPCOBAN {
             globalStateManagementSystem: getGlobalStateManagementSystem,
             gameController: getGameController,
             thanhPhanQuanLyThuocCapTrucTiep: getThanhPhanQuanLyThuocCapTrucTiep,
-            sizeDx: sizeDxManHinhVatLy / 2,
+            sizeDx: sizeDxKhungManHinh / 2,
             sizeDy: 30,
-            positionDx: sizeDxManHinhVatLy * (1 / 10),
-            positionDy: (sizeDyManHinhVatLy / 6) + 300.0,
+            positionDx: sizeDxKhungManHinh * (1 / 10),
+            positionDy: (sizeDyKhungManHinh / 6) + 300.0,
           ),
           caiDatUuTien: true,
         ).catchError((e) => null),
@@ -739,10 +824,10 @@ class QUANLYTHANHPHANVANBANTHUOCCAP extends QUANLYTHANHPHANVANBANTHUOCCAPCOBAN {
             globalStateManagementSystem: getGlobalStateManagementSystem,
             gameController: getGameController,
             thanhPhanQuanLyThuocCapTrucTiep: getThanhPhanQuanLyThuocCapTrucTiep,
-            sizeDx: sizeDxManHinhVatLy / 2,
+            sizeDx: sizeDxKhungManHinh / 2,
             sizeDy: 30,
-            positionDx: sizeDxManHinhVatLy * (2 / 10),
-            positionDy: (sizeDyManHinhVatLy / 6) + 330.0,
+            positionDx: sizeDxKhungManHinh * (2 / 10),
+            positionDy: (sizeDyKhungManHinh / 6) + 330.0,
           ),
           caiDatUuTien: true,
         ).catchError((e) => null),
@@ -751,10 +836,10 @@ class QUANLYTHANHPHANVANBANTHUOCCAP extends QUANLYTHANHPHANVANBANTHUOCCAPCOBAN {
             globalStateManagementSystem: getGlobalStateManagementSystem,
             gameController: getGameController,
             thanhPhanQuanLyThuocCapTrucTiep: getThanhPhanQuanLyThuocCapTrucTiep,
-            sizeDx: sizeDxManHinhVatLy / 2,
+            sizeDx: sizeDxKhungManHinh / 2,
             sizeDy: 30,
-            positionDx: sizeDxManHinhVatLy * (2 / 10),
-            positionDy: (sizeDyManHinhVatLy / 6) + 360.0,
+            positionDx: sizeDxKhungManHinh * (2 / 10),
+            positionDy: (sizeDyKhungManHinh / 6) + 360.0,
           ),
           caiDatUuTien: true,
         ).catchError((e) => null),
@@ -763,10 +848,10 @@ class QUANLYTHANHPHANVANBANTHUOCCAP extends QUANLYTHANHPHANVANBANTHUOCCAPCOBAN {
             globalStateManagementSystem: getGlobalStateManagementSystem,
             gameController: getGameController,
             thanhPhanQuanLyThuocCapTrucTiep: getThanhPhanQuanLyThuocCapTrucTiep,
-            sizeDx: sizeDxManHinhVatLy / 2,
+            sizeDx: sizeDxKhungManHinh / 2,
             sizeDy: 30,
-            positionDx: sizeDxManHinhVatLy * (2 / 10),
-            positionDy: (sizeDyManHinhVatLy / 6) + 390.0,
+            positionDx: sizeDxKhungManHinh * (2 / 10),
+            positionDy: (sizeDyKhungManHinh / 6) + 390.0,
           ),
           caiDatUuTien: true,
         ).catchError((e) => null),
@@ -775,10 +860,10 @@ class QUANLYTHANHPHANVANBANTHUOCCAP extends QUANLYTHANHPHANVANBANTHUOCCAPCOBAN {
             globalStateManagementSystem: getGlobalStateManagementSystem,
             gameController: getGameController,
             thanhPhanQuanLyThuocCapTrucTiep: getThanhPhanQuanLyThuocCapTrucTiep,
-            sizeDx: sizeDxManHinhVatLy / 2,
+            sizeDx: sizeDxKhungManHinh / 2,
             sizeDy: 30,
-            positionDx: sizeDxManHinhVatLy * (2 / 10),
-            positionDy: (sizeDyManHinhVatLy / 6) + 420.0,
+            positionDx: sizeDxKhungManHinh * (2 / 10),
+            positionDy: (sizeDyKhungManHinh / 6) + 420.0,
           ),
           caiDatUuTien: true,
         ).catchError((e) => null),
@@ -791,10 +876,10 @@ class QUANLYTHANHPHANVANBANTHUOCCAP extends QUANLYTHANHPHANVANBANTHUOCCAPCOBAN {
             globalStateManagementSystem: getGlobalStateManagementSystem,
             gameController: getGameController,
             thanhPhanQuanLyThuocCapTrucTiep: getThanhPhanQuanLyThuocCapTrucTiep,
-            sizeDx: sizeDxManHinhVatLy / 2,
+            sizeDx: sizeDxKhungManHinh / 2,
             sizeDy: 30,
-            positionDx: sizeDxManHinhVatLy * (9 / 10),
-            positionDy: (sizeDyManHinhVatLy / 6) + 330.0,
+            positionDx: sizeDxKhungManHinh * (9 / 10),
+            positionDy: (sizeDyKhungManHinh / 6) + 330.0,
           ),
           caiDatUuTien: true,
         ).catchError((e) => null),
@@ -803,10 +888,10 @@ class QUANLYTHANHPHANVANBANTHUOCCAP extends QUANLYTHANHPHANVANBANTHUOCCAPCOBAN {
             globalStateManagementSystem: getGlobalStateManagementSystem,
             gameController: getGameController,
             thanhPhanQuanLyThuocCapTrucTiep: getThanhPhanQuanLyThuocCapTrucTiep,
-            sizeDx: sizeDxManHinhVatLy / 2,
+            sizeDx: sizeDxKhungManHinh / 2,
             sizeDy: 30,
-            positionDx: sizeDxManHinhVatLy * (9 / 10),
-            positionDy: (sizeDyManHinhVatLy / 6) + 360.0,
+            positionDx: sizeDxKhungManHinh * (9 / 10),
+            positionDy: (sizeDyKhungManHinh / 6) + 360.0,
           ),
           caiDatUuTien: true,
         ).catchError((e) => null),
@@ -815,10 +900,10 @@ class QUANLYTHANHPHANVANBANTHUOCCAP extends QUANLYTHANHPHANVANBANTHUOCCAPCOBAN {
             globalStateManagementSystem: getGlobalStateManagementSystem,
             gameController: getGameController,
             thanhPhanQuanLyThuocCapTrucTiep: getThanhPhanQuanLyThuocCapTrucTiep,
-            sizeDx: sizeDxManHinhVatLy / 2,
+            sizeDx: sizeDxKhungManHinh / 2,
             sizeDy: 30,
-            positionDx: sizeDxManHinhVatLy * (9 / 10),
-            positionDy: (sizeDyManHinhVatLy / 6) + 390.0,
+            positionDx: sizeDxKhungManHinh * (9 / 10),
+            positionDy: (sizeDyKhungManHinh / 6) + 390.0,
           ),
           caiDatUuTien: true,
         ).catchError((e) => null),
@@ -827,10 +912,23 @@ class QUANLYTHANHPHANVANBANTHUOCCAP extends QUANLYTHANHPHANVANBANTHUOCCAPCOBAN {
             globalStateManagementSystem: getGlobalStateManagementSystem,
             gameController: getGameController,
             thanhPhanQuanLyThuocCapTrucTiep: getThanhPhanQuanLyThuocCapTrucTiep,
-            sizeDx: sizeDxManHinhVatLy / 2,
+            sizeDx: sizeDxKhungManHinh / 2,
             sizeDy: 30,
-            positionDx: sizeDxManHinhVatLy * (9 / 10),
-            positionDy: (sizeDyManHinhVatLy / 6) + 420.0,
+            positionDx: sizeDxKhungManHinh * (9 / 10),
+            positionDy: (sizeDyKhungManHinh / 6) + 420.0,
+          ),
+          caiDatUuTien: true,
+        ).catchError((e) => null),
+
+        onCaiDatVanBanDieuKienNangCapChienDauCo(
+          value: VANBANDIEUKIENNANGCAPCHIENDAUCO(
+            globalStateManagementSystem: getGlobalStateManagementSystem,
+            gameController: getGameController,
+            thanhPhanQuanLyThuocCapTrucTiep: getThanhPhanQuanLyThuocCapTrucTiep,
+            sizeDx: sizeDxKhungManHinh / 2,
+            sizeDy: 30,
+            positionDx: sizeDxKhungManHinh / 2,
+            positionDy: sizeDyKhungManHinh - (donViChieuRong * 2.5),
           ),
           caiDatUuTien: true,
         ).catchError((e) => null),
@@ -864,7 +962,9 @@ class QUANLYTHANHPHANVANBANTHUOCCAP extends QUANLYTHANHPHANVANBANTHUOCCAPCOBAN {
         getVanBanDinhDanhKhungManHinh?.onSetupRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
         getVanBanDinhDanhChienDauCoChonChiDinh?.onSetupRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
         getVanBanDangCapSaoChienDauCoChonChiDinh?.onSetupRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+        getVanBanGiaTriDangCapSaoChienDauCoChonChiDinh?.onSetupRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
         getVanBanCapDoChienDauCoChonChiDinh?.onSetupRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+        getVanBanGiaTriCapDoChienDauCoChonChiDinh?.onSetupRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
 
         getVanBanHPChienDauCoChonChiDinh?.onSetupRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
         getVanBanGiaTriHPChienDauCoChonChiDinh?.onSetupRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
@@ -897,6 +997,8 @@ class QUANLYTHANHPHANVANBANTHUOCCAP extends QUANLYTHANHPHANVANBANTHUOCCAPCOBAN {
         getVanBanGiaTriChiSoTyLeBaoKichTenLua?.onSetupRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
         getVanBanGiaTriChiSoSatThuongBaoKichTenLua?.onSetupRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
 
+        getVanBanDieuKienNangCapChienDauCo?.onSetupRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+
       ]);
     } catch (e) {
       await onReportRootIssue(nameFunction: 'onSetupRootForSubCom');
@@ -921,7 +1023,9 @@ class QUANLYTHANHPHANVANBANTHUOCCAP extends QUANLYTHANHPHANVANBANTHUOCCAPCOBAN {
         getVanBanDinhDanhKhungManHinh?.onInitRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
         getVanBanDinhDanhChienDauCoChonChiDinh?.onInitRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
         getVanBanDangCapSaoChienDauCoChonChiDinh?.onInitRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+        getVanBanGiaTriDangCapSaoChienDauCoChonChiDinh?.onInitRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
         getVanBanCapDoChienDauCoChonChiDinh?.onInitRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+        getVanBanGiaTriCapDoChienDauCoChonChiDinh?.onInitRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
 
         getVanBanHPChienDauCoChonChiDinh?.onInitRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
         getVanBanGiaTriHPChienDauCoChonChiDinh?.onInitRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
@@ -954,6 +1058,8 @@ class QUANLYTHANHPHANVANBANTHUOCCAP extends QUANLYTHANHPHANVANBANTHUOCCAPCOBAN {
         getVanBanGiaTriChiSoSatThuongCoBanTenLua?.onInitRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
         getVanBanGiaTriChiSoTyLeBaoKichTenLua?.onInitRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
         getVanBanGiaTriChiSoSatThuongBaoKichTenLua?.onInitRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+
+        getVanBanDieuKienNangCapChienDauCo?.onInitRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
 
       ]);
     } catch (e) {
