@@ -147,6 +147,37 @@ class THUOCTINHCHIENDAUTHEOQUYCHUANCOBAN with CauTrucThucThiCoBan {
 
     await getThuocTinhCapDoChienDauCoTheoQuyChuan?.onDongBoHoaBanGhiDuLieu();
 
+    await getThuocTinhChienDauSinhTon?.getThuocTinhMauToiDa?.onDongBoHoaCapDoMauToiDaTheoCapDoChienDauCoTheoQuyChuan(
+      thuocTinhCapDoChienDauCoTheoQuyChuan: getThuocTinhCapDoChienDauCoTheoQuyChuan
+    );
+
+    await getThuocTinhChienDauTanCong?.getThuocTinhVuKhiSungChinh?.onDongBoHoaCapDoSatThuongCoBanTheoCapDoChienDauCoTheoQuyChuan(
+      thuocTinhCapDoChienDauCoTheoQuyChuan: getThuocTinhCapDoChienDauCoTheoQuyChuan
+    );
+    await getThuocTinhChienDauTanCong?.getThuocTinhVuKhiSungChinh?.onDongBoHoaCapDoTyLeBaoKichTheoCapDoChienDauCoTheoQuyChuan(
+      thuocTinhCapDoChienDauCoTheoQuyChuan: getThuocTinhCapDoChienDauCoTheoQuyChuan
+    );
+    await getThuocTinhChienDauTanCong?.getThuocTinhVuKhiSungChinh?.onDongBoHoaCapDoSatThuongBaoKichTheoCapDoChienDauCoTheoQuyChuan(
+      thuocTinhCapDoChienDauCoTheoQuyChuan: getThuocTinhCapDoChienDauCoTheoQuyChuan
+    );
+    await getThuocTinhChienDauTanCong?.getThuocTinhVuKhiSungChinh?.onDongBoHoaCapDoTocDoBanTheoCapDoChienDauCoTheoQuyChuan(
+      thuocTinhCapDoChienDauCoTheoQuyChuan: getThuocTinhCapDoChienDauCoTheoQuyChuan
+    );
+
+    await getThuocTinhChienDauTanCong?.getThuocTinhTenLuaTanCong?.onDongBoHoaCapDoSatThuongCoBanTheoCapDoChienDauCoTheoQuyChuan(
+      thuocTinhCapDoChienDauCoTheoQuyChuan: getThuocTinhCapDoChienDauCoTheoQuyChuan
+    );
+    await getThuocTinhChienDauTanCong?.getThuocTinhTenLuaTanCong?.onDongBoHoaCapDoTyLeBaoKichTheoCapDoChienDauCoTheoQuyChuan(
+      thuocTinhCapDoChienDauCoTheoQuyChuan: getThuocTinhCapDoChienDauCoTheoQuyChuan
+    );
+    await getThuocTinhChienDauTanCong?.getThuocTinhTenLuaTanCong?.onDongBoHoaCapDoSatThuongBaoKichTheoCapDoChienDauCoTheoQuyChuan(
+      thuocTinhCapDoChienDauCoTheoQuyChuan: getThuocTinhCapDoChienDauCoTheoQuyChuan
+    );
+    await getThuocTinhChienDauTanCong?.getThuocTinhTenLuaTanCong?.onDongBoHoaCapDoTocDoBanTheoCapDoChienDauCoTheoQuyChuan(
+      thuocTinhCapDoChienDauCoTheoQuyChuan: getThuocTinhCapDoChienDauCoTheoQuyChuan
+    );
+
+
     ///
     return;
   }
@@ -391,6 +422,7 @@ class THUOCTINHCHIENDAUTHEOQUYCHUANCOBAN with CauTrucThucThiCoBan {
   /// -----
   Future<void> onNangCapCapDoMauToiDa({
     required QUANLYTRANGTHAITAINGUYENTRAODOIGIATRI? quanLyTongQuat,
+    required MOHINHTHUOCTINHCAPDOCHIENDAUCOTHEOQUYCHUAN? thuocTinhCapDoChienDauCoTheoQuyChuan,
     required Future<void> Function()? onThanhToanKhongThanhCong,
     required Future<void> Function()? onThanhToanThanhCong,
     required Future<void> Function()? onDieuKienThanhToan,
@@ -404,6 +436,7 @@ class THUOCTINHCHIENDAUTHEOQUYCHUANCOBAN with CauTrucThucThiCoBan {
 
     await getThuocTinhChienDauSinhTon?.getThuocTinhMauToiDa?.onNangCapCapDoMauToiDa(
       quanLyTongQuat: quanLyTongQuat,
+      thuocTinhCapDoChienDauCoTheoQuyChuan: getThuocTinhCapDoChienDauCoTheoQuyChuan,
       goiTaiNguyenChuanThanhToan: null,
       goiTaiNguyenChuanHienHanh: goiDiemNangCapThuocTinhHienHanh,
       onThanhToanKhongThanhCong: onThanhToanKhongThanhCong,
@@ -479,6 +512,7 @@ class THUOCTINHCHIENDAUTHEOQUYCHUANCOBAN with CauTrucThucThiCoBan {
   /// -----
   Future<void> onNangCapCapDoSatThuongCoBanVKSC({
     required QUANLYTRANGTHAITAINGUYENTRAODOIGIATRI? quanLyTongQuat,
+    required MOHINHTHUOCTINHCAPDOCHIENDAUCOTHEOQUYCHUAN? thuocTinhCapDoChienDauCoTheoQuyChuan,
     required Future<void> Function()? onThanhToanKhongThanhCong,
     required Future<void> Function()? onThanhToanThanhCong,
     required Future<void> Function()? onDieuKienThanhToan,
@@ -492,6 +526,7 @@ class THUOCTINHCHIENDAUTHEOQUYCHUANCOBAN with CauTrucThucThiCoBan {
 
     await getThuocTinhChienDauTanCong?.getThuocTinhVuKhiSungChinh?.onNangCapCapDoSatThuongCoBanVKSC(
       quanLyTongQuat: quanLyTongQuat,
+      thuocTinhCapDoChienDauCoTheoQuyChuan: getThuocTinhCapDoChienDauCoTheoQuyChuan,
       goiTaiNguyenChuanThanhToan: null,
       goiTaiNguyenChuanHienHanh: goiDiemNangCapThuocTinhHienHanh,
       onThanhToanKhongThanhCong: onThanhToanKhongThanhCong,
@@ -526,6 +561,7 @@ class THUOCTINHCHIENDAUTHEOQUYCHUANCOBAN with CauTrucThucThiCoBan {
   /// -----
   Future<void> onNangCapCapDoTyLeBaoKichVKSC({
     required QUANLYTRANGTHAITAINGUYENTRAODOIGIATRI? quanLyTongQuat,
+    required MOHINHTHUOCTINHCAPDOCHIENDAUCOTHEOQUYCHUAN? thuocTinhCapDoChienDauCoTheoQuyChuan,
     required Future<void> Function()? onThanhToanKhongThanhCong,
     required Future<void> Function()? onThanhToanThanhCong,
     required Future<void> Function()? onDieuKienThanhToan,
@@ -539,6 +575,7 @@ class THUOCTINHCHIENDAUTHEOQUYCHUANCOBAN with CauTrucThucThiCoBan {
 
     await getThuocTinhChienDauTanCong?.getThuocTinhVuKhiSungChinh?.onNangCapCapDoTyLeBaoKichVKSC(
       quanLyTongQuat: quanLyTongQuat,
+      thuocTinhCapDoChienDauCoTheoQuyChuan: getThuocTinhCapDoChienDauCoTheoQuyChuan,
       goiTaiNguyenChuanThanhToan: null,
       goiTaiNguyenChuanHienHanh: goiDiemNangCapThuocTinhHienHanh,
       onThanhToanKhongThanhCong: onThanhToanKhongThanhCong,
@@ -573,6 +610,7 @@ class THUOCTINHCHIENDAUTHEOQUYCHUANCOBAN with CauTrucThucThiCoBan {
   /// -----
   Future<void> onNangCapCapDoSatThuongBaoKichVKSC({
     required QUANLYTRANGTHAITAINGUYENTRAODOIGIATRI? quanLyTongQuat,
+    required MOHINHTHUOCTINHCAPDOCHIENDAUCOTHEOQUYCHUAN? thuocTinhCapDoChienDauCoTheoQuyChuan,
     required Future<void> Function()? onThanhToanKhongThanhCong,
     required Future<void> Function()? onThanhToanThanhCong,
     required Future<void> Function()? onDieuKienThanhToan,
@@ -586,6 +624,7 @@ class THUOCTINHCHIENDAUTHEOQUYCHUANCOBAN with CauTrucThucThiCoBan {
 
     await getThuocTinhChienDauTanCong?.getThuocTinhVuKhiSungChinh?.onNangCapCapDoSatThuongBaoKichVKSC(
       quanLyTongQuat: quanLyTongQuat,
+      thuocTinhCapDoChienDauCoTheoQuyChuan: getThuocTinhCapDoChienDauCoTheoQuyChuan,
       goiTaiNguyenChuanThanhToan: null,
       goiTaiNguyenChuanHienHanh: goiDiemNangCapThuocTinhHienHanh,
       onThanhToanKhongThanhCong: onThanhToanKhongThanhCong,
@@ -620,6 +659,7 @@ class THUOCTINHCHIENDAUTHEOQUYCHUANCOBAN with CauTrucThucThiCoBan {
   /// -----
   Future<void> onNangCapCapDoTocDoBanVKSC({
     required QUANLYTRANGTHAITAINGUYENTRAODOIGIATRI? quanLyTongQuat,
+    required MOHINHTHUOCTINHCAPDOCHIENDAUCOTHEOQUYCHUAN? thuocTinhCapDoChienDauCoTheoQuyChuan,
     required Future<void> Function()? onThanhToanKhongThanhCong,
     required Future<void> Function()? onThanhToanThanhCong,
     required Future<void> Function()? onDieuKienThanhToan,
@@ -633,6 +673,7 @@ class THUOCTINHCHIENDAUTHEOQUYCHUANCOBAN with CauTrucThucThiCoBan {
 
     await getThuocTinhChienDauTanCong?.getThuocTinhVuKhiSungChinh?.onNangCapCapDoTocDoBanVKSC(
       quanLyTongQuat: quanLyTongQuat,
+      thuocTinhCapDoChienDauCoTheoQuyChuan: getThuocTinhCapDoChienDauCoTheoQuyChuan,
       goiTaiNguyenChuanThanhToan: null,
       goiTaiNguyenChuanHienHanh: goiDiemNangCapThuocTinhHienHanh,
       onThanhToanKhongThanhCong: onThanhToanKhongThanhCong,
@@ -722,6 +763,7 @@ class THUOCTINHCHIENDAUTHEOQUYCHUANCOBAN with CauTrucThucThiCoBan {
   /// -----
   Future<void> onNangCapCapDoSatThuongCoBanTLTC({
     required QUANLYTRANGTHAITAINGUYENTRAODOIGIATRI? quanLyTongQuat,
+    required MOHINHTHUOCTINHCAPDOCHIENDAUCOTHEOQUYCHUAN? thuocTinhCapDoChienDauCoTheoQuyChuan,
     required Future<void> Function()? onThanhToanKhongThanhCong,
     required Future<void> Function()? onThanhToanThanhCong,
     required Future<void> Function()? onDieuKienThanhToan,
@@ -735,6 +777,7 @@ class THUOCTINHCHIENDAUTHEOQUYCHUANCOBAN with CauTrucThucThiCoBan {
 
     await getThuocTinhChienDauTanCong?.getThuocTinhTenLuaTanCong?.onNangCapCapDoSatThuongCoBanTLTC(
       quanLyTongQuat: quanLyTongQuat,
+      thuocTinhCapDoChienDauCoTheoQuyChuan: getThuocTinhCapDoChienDauCoTheoQuyChuan,
       goiTaiNguyenChuanThanhToan: null,
       goiTaiNguyenChuanHienHanh: goiDiemNangCapThuocTinhHienHanh,
       onThanhToanKhongThanhCong: onThanhToanKhongThanhCong,
@@ -769,6 +812,7 @@ class THUOCTINHCHIENDAUTHEOQUYCHUANCOBAN with CauTrucThucThiCoBan {
   /// -----
   Future<void> onNangCapCapDoTyLeBaoKichTLTC({
     required QUANLYTRANGTHAITAINGUYENTRAODOIGIATRI? quanLyTongQuat,
+    required MOHINHTHUOCTINHCAPDOCHIENDAUCOTHEOQUYCHUAN? thuocTinhCapDoChienDauCoTheoQuyChuan,
     required Future<void> Function()? onThanhToanKhongThanhCong,
     required Future<void> Function()? onThanhToanThanhCong,
     required Future<void> Function()? onDieuKienThanhToan,
@@ -782,6 +826,7 @@ class THUOCTINHCHIENDAUTHEOQUYCHUANCOBAN with CauTrucThucThiCoBan {
 
     await getThuocTinhChienDauTanCong?.getThuocTinhTenLuaTanCong?.onNangCapCapDoTyLeBaoKichTLTC(
       quanLyTongQuat: quanLyTongQuat,
+      thuocTinhCapDoChienDauCoTheoQuyChuan: getThuocTinhCapDoChienDauCoTheoQuyChuan,
       goiTaiNguyenChuanThanhToan: null,
       goiTaiNguyenChuanHienHanh: goiDiemNangCapThuocTinhHienHanh,
       onThanhToanKhongThanhCong: onThanhToanKhongThanhCong,
@@ -816,6 +861,7 @@ class THUOCTINHCHIENDAUTHEOQUYCHUANCOBAN with CauTrucThucThiCoBan {
   /// -----
   Future<void> onNangCapCapDoSatThuongBaoKichTLTC({
     required QUANLYTRANGTHAITAINGUYENTRAODOIGIATRI? quanLyTongQuat,
+    required MOHINHTHUOCTINHCAPDOCHIENDAUCOTHEOQUYCHUAN? thuocTinhCapDoChienDauCoTheoQuyChuan,
     required Future<void> Function()? onThanhToanKhongThanhCong,
     required Future<void> Function()? onThanhToanThanhCong,
     required Future<void> Function()? onDieuKienThanhToan,
@@ -829,6 +875,7 @@ class THUOCTINHCHIENDAUTHEOQUYCHUANCOBAN with CauTrucThucThiCoBan {
 
     await getThuocTinhChienDauTanCong?.getThuocTinhTenLuaTanCong?.onNangCapCapDoSatThuongBaoKichTLTC(
       quanLyTongQuat: quanLyTongQuat,
+      thuocTinhCapDoChienDauCoTheoQuyChuan: getThuocTinhCapDoChienDauCoTheoQuyChuan,
       goiTaiNguyenChuanThanhToan: null,
       goiTaiNguyenChuanHienHanh: goiDiemNangCapThuocTinhHienHanh,
       onThanhToanKhongThanhCong: onThanhToanKhongThanhCong,
@@ -863,6 +910,7 @@ class THUOCTINHCHIENDAUTHEOQUYCHUANCOBAN with CauTrucThucThiCoBan {
   /// -----
   Future<void> onNangCapCapDoTocDoBanTLTC({
     required QUANLYTRANGTHAITAINGUYENTRAODOIGIATRI? quanLyTongQuat,
+    required MOHINHTHUOCTINHCAPDOCHIENDAUCOTHEOQUYCHUAN? thuocTinhCapDoChienDauCoTheoQuyChuan,
     required Future<void> Function()? onThanhToanKhongThanhCong,
     required Future<void> Function()? onThanhToanThanhCong,
     required Future<void> Function()? onDieuKienThanhToan,
@@ -876,6 +924,7 @@ class THUOCTINHCHIENDAUTHEOQUYCHUANCOBAN with CauTrucThucThiCoBan {
 
     await getThuocTinhChienDauTanCong?.getThuocTinhTenLuaTanCong?.onNangCapCapDoTocDoBanTLTC(
       quanLyTongQuat: quanLyTongQuat,
+      thuocTinhCapDoChienDauCoTheoQuyChuan: getThuocTinhCapDoChienDauCoTheoQuyChuan,
       goiTaiNguyenChuanThanhToan: null,
       goiTaiNguyenChuanHienHanh: goiDiemNangCapThuocTinhHienHanh,
       onThanhToanKhongThanhCong: onThanhToanKhongThanhCong,
@@ -1021,6 +1070,82 @@ class THUOCTINHCHIENDAUTHEOQUYCHUANCOBAN with CauTrucThucThiCoBan {
       onThanhToanThanhCong: onThanhToanThanhCong,
       onDieuKienThanhToan: onDieuKienThanhToan,
       onDieuKienNangCap: onDieuKienNangCap,
+      onNangCapThanhCong: () async {
+        await onNangCapCapDoMauToiDa(
+            quanLyTongQuat: quanLyTongQuat,
+            thuocTinhCapDoChienDauCoTheoQuyChuan: getThuocTinhCapDoChienDauCoTheoQuyChuan,
+            onThanhToanKhongThanhCong: null,
+            onThanhToanThanhCong: null,
+            onDieuKienThanhToan: null,
+            onDieuKienNangCap: null
+        );
+
+        await onNangCapCapDoSatThuongCoBanVKSC(
+          quanLyTongQuat: quanLyTongQuat,
+            thuocTinhCapDoChienDauCoTheoQuyChuan: getThuocTinhCapDoChienDauCoTheoQuyChuan,
+          onThanhToanKhongThanhCong: null,
+          onThanhToanThanhCong: null,
+          onDieuKienThanhToan: null,
+          onDieuKienNangCap: null
+        );
+        await onNangCapCapDoTyLeBaoKichVKSC(
+            quanLyTongQuat: quanLyTongQuat,
+            thuocTinhCapDoChienDauCoTheoQuyChuan: getThuocTinhCapDoChienDauCoTheoQuyChuan,
+            onThanhToanKhongThanhCong: null,
+            onThanhToanThanhCong: null,
+            onDieuKienThanhToan: null,
+            onDieuKienNangCap: null
+        );
+        await onNangCapCapDoSatThuongBaoKichVKSC(
+            quanLyTongQuat: quanLyTongQuat,
+            thuocTinhCapDoChienDauCoTheoQuyChuan: getThuocTinhCapDoChienDauCoTheoQuyChuan,
+            onThanhToanKhongThanhCong: null,
+            onThanhToanThanhCong: null,
+            onDieuKienThanhToan: null,
+            onDieuKienNangCap: null
+        );
+        await onNangCapCapDoTocDoBanVKSC(
+            quanLyTongQuat: quanLyTongQuat,
+            thuocTinhCapDoChienDauCoTheoQuyChuan: getThuocTinhCapDoChienDauCoTheoQuyChuan,
+            onThanhToanKhongThanhCong: null,
+            onThanhToanThanhCong: null,
+            onDieuKienThanhToan: null,
+            onDieuKienNangCap: null
+        );
+
+        await onNangCapCapDoSatThuongCoBanTLTC(
+            quanLyTongQuat: quanLyTongQuat,
+            thuocTinhCapDoChienDauCoTheoQuyChuan: getThuocTinhCapDoChienDauCoTheoQuyChuan,
+            onThanhToanKhongThanhCong: null,
+            onThanhToanThanhCong: null,
+            onDieuKienThanhToan: null,
+            onDieuKienNangCap: null
+        );
+        await onNangCapCapDoTyLeBaoKichTLTC(
+            quanLyTongQuat: quanLyTongQuat,
+            thuocTinhCapDoChienDauCoTheoQuyChuan: getThuocTinhCapDoChienDauCoTheoQuyChuan,
+            onThanhToanKhongThanhCong: null,
+            onThanhToanThanhCong: null,
+            onDieuKienThanhToan: null,
+            onDieuKienNangCap: null
+        );
+        await onNangCapCapDoSatThuongBaoKichTLTC(
+            quanLyTongQuat: quanLyTongQuat,
+            thuocTinhCapDoChienDauCoTheoQuyChuan: getThuocTinhCapDoChienDauCoTheoQuyChuan,
+            onThanhToanKhongThanhCong: null,
+            onThanhToanThanhCong: null,
+            onDieuKienThanhToan: null,
+            onDieuKienNangCap: null
+        );
+        await onNangCapCapDoTocDoBanTLTC(
+            quanLyTongQuat: quanLyTongQuat,
+            thuocTinhCapDoChienDauCoTheoQuyChuan: getThuocTinhCapDoChienDauCoTheoQuyChuan,
+            onThanhToanKhongThanhCong: null,
+            onThanhToanThanhCong: null,
+            onDieuKienThanhToan: null,
+            onDieuKienNangCap: null
+        );
+      }
     );
 
     /// -----

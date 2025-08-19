@@ -701,6 +701,7 @@ class MOHINHTHUOCTINHCAPDOCHIENDAUCOTHEOQUYCHUAN with CauTrucThucThiCoBan, CauTr
     required Future<void> Function()? onThanhToanThanhCong,
     required Future<void> Function()? onDieuKienThanhToan,
     required Future<void> Function()? onDieuKienNangCap,
+    required Future<void> Function()? onNangCapThanhCong,
   }) async {
     /// -----
     /// TODO: Kiểm Tra Điều Kiện Nâng Cấp
@@ -810,6 +811,8 @@ class MOHINHTHUOCTINHCAPDOCHIENDAUCOTHEOQUYCHUAN with CauTrucThucThiCoBan, CauTr
         /// TODO:
         /// -----
         await onCapNhatBanGhiDuLieu();
+
+        await onNangCapThanhCong?.call();
 
         /// -----
         /// TODO: Cập Nhật Cấp Độ Chiến Đấu Cơ Theo Quy Chuẩn Tiếp Theo (Nếu Có)

@@ -1259,11 +1259,65 @@ class MOHINHTHUOCTINHVUKHISUNGCHINH with CauTrucThucThiCoBan {
   /// ----- | ----- | ----- | -----
   /// ----- | ----- | ----- | -----
 
+  Future<void> onDongBoHoaCapDoSatThuongCoBanTheoCapDoChienDauCoTheoQuyChuan({
+    required MOHINHTHUOCTINHCAPDOCHIENDAUCOTHEOQUYCHUAN? thuocTinhCapDoChienDauCoTheoQuyChuan,
+  }) async {
+    if (thuocTinhCapDoChienDauCoTheoQuyChuan?.getCapDoChienDauCoTheoQuyChuanHienHanh?.getCapDoChuanChinhThuc?.getMaDinhDanh == '[CAP_DO_SS01]') {
+      await getCapDoSatThuongCoBanVKSCHienHanh?.caiDatCapDoChuanChinhThuc(value: getCapDoSatThuongCoBanVKSCSS01, caiDatUuTien: true);
+    }
+    if (thuocTinhCapDoChienDauCoTheoQuyChuan?.getCapDoChienDauCoTheoQuyChuanHienHanh?.getCapDoChuanChinhThuc?.getMaDinhDanh == '[CAP_DO_SS02]') {
+      await getCapDoSatThuongCoBanVKSCHienHanh?.caiDatCapDoChuanChinhThuc(value: getCapDoSatThuongCoBanVKSCSS02, caiDatUuTien: true);
+    }
+    if (thuocTinhCapDoChienDauCoTheoQuyChuan?.getCapDoChienDauCoTheoQuyChuanHienHanh?.getCapDoChuanChinhThuc?.getMaDinhDanh == '[CAP_DO_SS03]') {
+      await getCapDoSatThuongCoBanVKSCHienHanh?.caiDatCapDoChuanChinhThuc(value: getCapDoSatThuongCoBanVKSCSS03, caiDatUuTien: true);
+    }
+    if (thuocTinhCapDoChienDauCoTheoQuyChuan?.getCapDoChienDauCoTheoQuyChuanHienHanh?.getCapDoChuanChinhThuc?.getMaDinhDanh == '[CAP_DO_SS04]') {
+      await getCapDoSatThuongCoBanVKSCHienHanh?.caiDatCapDoChuanChinhThuc(value: getCapDoSatThuongCoBanVKSCSS04, caiDatUuTien: true);
+    }
+    if (thuocTinhCapDoChienDauCoTheoQuyChuan?.getCapDoChienDauCoTheoQuyChuanHienHanh?.getCapDoChuanChinhThuc?.getMaDinhDanh == '[CAP_DO_SS05]') {
+      await getCapDoSatThuongCoBanVKSCHienHanh?.caiDatCapDoChuanChinhThuc(value: getCapDoSatThuongCoBanVKSCSS05, caiDatUuTien: true);
+    }
+    if (thuocTinhCapDoChienDauCoTheoQuyChuan?.getCapDoChienDauCoTheoQuyChuanHienHanh?.getCapDoChuanChinhThuc?.getMaDinhDanh == '[CAP_DO_SS06]') {
+      await getCapDoSatThuongCoBanVKSCHienHanh?.caiDatCapDoChuanChinhThuc(value: getCapDoSatThuongCoBanVKSCSS06, caiDatUuTien: true);
+    }
+    if (thuocTinhCapDoChienDauCoTheoQuyChuan?.getCapDoChienDauCoTheoQuyChuanHienHanh?.getCapDoChuanChinhThuc?.getMaDinhDanh == '[CAP_DO_SS07]') {
+      await getCapDoSatThuongCoBanVKSCHienHanh?.caiDatCapDoChuanChinhThuc(value: getCapDoSatThuongCoBanVKSCSS07, caiDatUuTien: true);
+    }
+    if (thuocTinhCapDoChienDauCoTheoQuyChuan?.getCapDoChienDauCoTheoQuyChuanHienHanh?.getCapDoChuanChinhThuc?.getMaDinhDanh == '[CAP_DO_SS08]') {
+      await getCapDoSatThuongCoBanVKSCHienHanh?.caiDatCapDoChuanChinhThuc(value: getCapDoSatThuongCoBanVKSCSS08, caiDatUuTien: true);
+    }
+    if (thuocTinhCapDoChienDauCoTheoQuyChuan?.getCapDoChienDauCoTheoQuyChuanHienHanh?.getCapDoChuanChinhThuc?.getMaDinhDanh == '[CAP_DO_SS09]') {
+      await getCapDoSatThuongCoBanVKSCHienHanh?.caiDatCapDoChuanChinhThuc(value: getCapDoSatThuongCoBanVKSCSS09, caiDatUuTien: true);
+    }
+    if (thuocTinhCapDoChienDauCoTheoQuyChuan?.getCapDoChienDauCoTheoQuyChuanHienHanh?.getCapDoChuanChinhThuc?.getMaDinhDanh == '[CAP_DO_SS10]') {
+      await getCapDoSatThuongCoBanVKSCHienHanh?.caiDatCapDoChuanChinhThuc(value: getCapDoSatThuongCoBanVKSCSS10, caiDatUuTien: true);
+    }
+    if (thuocTinhCapDoChienDauCoTheoQuyChuan?.getCapDoChienDauCoTheoQuyChuanHienHanh?.getCapDoChuanChinhThuc?.getMaDinhDanh == '[CAP_DO_SS11]') {
+      await getCapDoSatThuongCoBanVKSCHienHanh?.caiDatCapDoChuanChinhThuc(value: getCapDoSatThuongCoBanVKSCSS11, caiDatUuTien: true);
+    }
+    if (thuocTinhCapDoChienDauCoTheoQuyChuan?.getCapDoChienDauCoTheoQuyChuanHienHanh?.getCapDoChuanChinhThuc?.getMaDinhDanh == '[CAP_DO_SS12]') {
+      await getCapDoSatThuongCoBanVKSCHienHanh?.caiDatCapDoChuanChinhThuc(value: getCapDoSatThuongCoBanVKSCSS12, caiDatUuTien: true);
+    }
+    if (thuocTinhCapDoChienDauCoTheoQuyChuan?.getCapDoChienDauCoTheoQuyChuanHienHanh?.getCapDoChuanChinhThuc?.getMaDinhDanh == '[CAP_DO_SS13]') {
+      await getCapDoSatThuongCoBanVKSCHienHanh?.caiDatCapDoChuanChinhThuc(value: getCapDoSatThuongCoBanVKSCSS13, caiDatUuTien: true);
+    }
+    if (thuocTinhCapDoChienDauCoTheoQuyChuan?.getCapDoChienDauCoTheoQuyChuanHienHanh?.getCapDoChuanChinhThuc?.getMaDinhDanh == '[CAP_DO_SS14]') {
+      await getCapDoSatThuongCoBanVKSCHienHanh?.caiDatCapDoChuanChinhThuc(value: getCapDoSatThuongCoBanVKSCSS14, caiDatUuTien: true);
+    }
+    if (thuocTinhCapDoChienDauCoTheoQuyChuan?.getCapDoChienDauCoTheoQuyChuanHienHanh?.getCapDoChuanChinhThuc?.getMaDinhDanh == '[CAP_DO_SS15]') {
+      await getCapDoSatThuongCoBanVKSCHienHanh?.caiDatCapDoChuanChinhThuc(value: getCapDoSatThuongCoBanVKSCSS15, caiDatUuTien: true);
+    }
+
+    await onCapNhatCapDoSatThuongCoBanVKSCTiepTheo();
+  }
+
+
   /// -----
   /// TODO: [1] Nâng Cấp Cấp Độ [MOHINHCAPDOSATTHUONGCOBANVKSCHIENHANH]
   /// -----
   Future<void> onNangCapCapDoSatThuongCoBanVKSC({
     required QUANLYTRANGTHAITAINGUYENTRAODOIGIATRI? quanLyTongQuat,
+    required MOHINHTHUOCTINHCAPDOCHIENDAUCOTHEOQUYCHUAN? thuocTinhCapDoChienDauCoTheoQuyChuan,
     required GOITAINGUYENCHUANTHANHTOAN? goiTaiNguyenChuanThanhToan,
     required GOITAINGUYENCHUANHIENHANH? goiTaiNguyenChuanHienHanh,
     required Future<void> Function()? onThanhToanKhongThanhCong,
@@ -1286,19 +1340,20 @@ class MOHINHTHUOCTINHVUKHISUNGCHINH with CauTrucThucThiCoBan {
       /// -----
       /// TODO: [2] Số Điểm Nâng Cấp Phải Ít Nhất Bằng Số Điểm Nâng Cấp Thuộc Tính Yêu Cầu
       /// -----
-      await quanLyTongQuat?.getTongKhoTaiNguyen?.getKhoTaiNguyenDongVang?.getDichVuKhoTaiNguyen?.onThucThiThanhToan(
-        goiTaiNguyenChuanThanhToan: getCapDoSatThuongCoBanVKSCHienHanh?.getCapDoNoiSuyTiepTheo?.getDieuKienNangCap?.getGoiDiemNangCapYeuCau,
-        goiTaiNguyenChuanHienHanh: goiTaiNguyenChuanHienHanh,
-        onThanhToanKhongThanhCong: onThanhToanKhongThanhCong,
-        onThanhToanThanhCong: null,
-        onDieuKienThanhToan: onDieuKienThanhToan,
-      );
+      // await quanLyTongQuat?.getTongKhoTaiNguyen?.getKhoTaiNguyenDongVang?.getDichVuKhoTaiNguyen?.onThucThiThanhToan(
+      //   goiTaiNguyenChuanThanhToan: getCapDoSatThuongCoBanVKSCHienHanh?.getCapDoNoiSuyTiepTheo?.getDieuKienNangCap?.getGoiDiemNangCapYeuCau,
+      //   goiTaiNguyenChuanHienHanh: goiTaiNguyenChuanHienHanh,
+      //   onThanhToanKhongThanhCong: onThanhToanKhongThanhCong,
+      //   onThanhToanThanhCong: null,
+      //   onDieuKienThanhToan: onDieuKienThanhToan,
+      // );
 
       /// -----
       /// TODO:
       /// -----
 
-      if (getCapDoSatThuongCoBanVKSCHienHanh?.getCapDoNoiSuyTiepTheo?.getDieuKienNangCap?.getGoiDiemNangCapYeuCau?.getHoanTatThucThiGiaoDich == true) {
+      // if (getCapDoSatThuongCoBanVKSCHienHanh?.getCapDoNoiSuyTiepTheo?.getDieuKienNangCap?.getGoiDiemNangCapYeuCau?.getHoanTatThucThiGiaoDich == true) {
+      if (true) {
         /// -----
         /// TODO: Thỏa Điều Kiện [2]
         /// -----
@@ -1350,11 +1405,64 @@ class MOHINHTHUOCTINHVUKHISUNGCHINH with CauTrucThucThiCoBan {
     }
   }
 
+  Future<void> onDongBoHoaCapDoTyLeBaoKichTheoCapDoChienDauCoTheoQuyChuan({
+    required MOHINHTHUOCTINHCAPDOCHIENDAUCOTHEOQUYCHUAN? thuocTinhCapDoChienDauCoTheoQuyChuan,
+  }) async {
+    if (thuocTinhCapDoChienDauCoTheoQuyChuan?.getCapDoChienDauCoTheoQuyChuanHienHanh?.getCapDoChuanChinhThuc?.getMaDinhDanh == '[CAP_DO_SS01]') {
+      await getCapDoTyLeBaoKichVKSCHienHanh?.caiDatCapDoChuanChinhThuc(value: getCapDoTyLeBaoKichVKSCSS01, caiDatUuTien: true);
+    }
+    if (thuocTinhCapDoChienDauCoTheoQuyChuan?.getCapDoChienDauCoTheoQuyChuanHienHanh?.getCapDoChuanChinhThuc?.getMaDinhDanh == '[CAP_DO_SS02]') {
+      await getCapDoTyLeBaoKichVKSCHienHanh?.caiDatCapDoChuanChinhThuc(value: getCapDoTyLeBaoKichVKSCSS02, caiDatUuTien: true);
+    }
+    if (thuocTinhCapDoChienDauCoTheoQuyChuan?.getCapDoChienDauCoTheoQuyChuanHienHanh?.getCapDoChuanChinhThuc?.getMaDinhDanh == '[CAP_DO_SS03]') {
+      await getCapDoTyLeBaoKichVKSCHienHanh?.caiDatCapDoChuanChinhThuc(value: getCapDoTyLeBaoKichVKSCSS03, caiDatUuTien: true);
+    }
+    if (thuocTinhCapDoChienDauCoTheoQuyChuan?.getCapDoChienDauCoTheoQuyChuanHienHanh?.getCapDoChuanChinhThuc?.getMaDinhDanh == '[CAP_DO_SS04]') {
+      await getCapDoTyLeBaoKichVKSCHienHanh?.caiDatCapDoChuanChinhThuc(value: getCapDoTyLeBaoKichVKSCSS04, caiDatUuTien: true);
+    }
+    if (thuocTinhCapDoChienDauCoTheoQuyChuan?.getCapDoChienDauCoTheoQuyChuanHienHanh?.getCapDoChuanChinhThuc?.getMaDinhDanh == '[CAP_DO_SS05]') {
+      await getCapDoTyLeBaoKichVKSCHienHanh?.caiDatCapDoChuanChinhThuc(value: getCapDoTyLeBaoKichVKSCSS05, caiDatUuTien: true);
+    }
+    if (thuocTinhCapDoChienDauCoTheoQuyChuan?.getCapDoChienDauCoTheoQuyChuanHienHanh?.getCapDoChuanChinhThuc?.getMaDinhDanh == '[CAP_DO_SS06]') {
+      await getCapDoTyLeBaoKichVKSCHienHanh?.caiDatCapDoChuanChinhThuc(value: getCapDoTyLeBaoKichVKSCSS06, caiDatUuTien: true);
+    }
+    if (thuocTinhCapDoChienDauCoTheoQuyChuan?.getCapDoChienDauCoTheoQuyChuanHienHanh?.getCapDoChuanChinhThuc?.getMaDinhDanh == '[CAP_DO_SS07]') {
+      await getCapDoTyLeBaoKichVKSCHienHanh?.caiDatCapDoChuanChinhThuc(value: getCapDoTyLeBaoKichVKSCSS07, caiDatUuTien: true);
+    }
+    if (thuocTinhCapDoChienDauCoTheoQuyChuan?.getCapDoChienDauCoTheoQuyChuanHienHanh?.getCapDoChuanChinhThuc?.getMaDinhDanh == '[CAP_DO_SS08]') {
+      await getCapDoTyLeBaoKichVKSCHienHanh?.caiDatCapDoChuanChinhThuc(value: getCapDoTyLeBaoKichVKSCSS08, caiDatUuTien: true);
+    }
+    if (thuocTinhCapDoChienDauCoTheoQuyChuan?.getCapDoChienDauCoTheoQuyChuanHienHanh?.getCapDoChuanChinhThuc?.getMaDinhDanh == '[CAP_DO_SS09]') {
+      await getCapDoTyLeBaoKichVKSCHienHanh?.caiDatCapDoChuanChinhThuc(value: getCapDoTyLeBaoKichVKSCSS09, caiDatUuTien: true);
+    }
+    if (thuocTinhCapDoChienDauCoTheoQuyChuan?.getCapDoChienDauCoTheoQuyChuanHienHanh?.getCapDoChuanChinhThuc?.getMaDinhDanh == '[CAP_DO_SS10]') {
+      await getCapDoTyLeBaoKichVKSCHienHanh?.caiDatCapDoChuanChinhThuc(value: getCapDoTyLeBaoKichVKSCSS10, caiDatUuTien: true);
+    }
+    if (thuocTinhCapDoChienDauCoTheoQuyChuan?.getCapDoChienDauCoTheoQuyChuanHienHanh?.getCapDoChuanChinhThuc?.getMaDinhDanh == '[CAP_DO_SS11]') {
+      await getCapDoTyLeBaoKichVKSCHienHanh?.caiDatCapDoChuanChinhThuc(value: getCapDoTyLeBaoKichVKSCSS11, caiDatUuTien: true);
+    }
+    if (thuocTinhCapDoChienDauCoTheoQuyChuan?.getCapDoChienDauCoTheoQuyChuanHienHanh?.getCapDoChuanChinhThuc?.getMaDinhDanh == '[CAP_DO_SS12]') {
+      await getCapDoTyLeBaoKichVKSCHienHanh?.caiDatCapDoChuanChinhThuc(value: getCapDoTyLeBaoKichVKSCSS12, caiDatUuTien: true);
+    }
+    if (thuocTinhCapDoChienDauCoTheoQuyChuan?.getCapDoChienDauCoTheoQuyChuanHienHanh?.getCapDoChuanChinhThuc?.getMaDinhDanh == '[CAP_DO_SS13]') {
+      await getCapDoTyLeBaoKichVKSCHienHanh?.caiDatCapDoChuanChinhThuc(value: getCapDoTyLeBaoKichVKSCSS13, caiDatUuTien: true);
+    }
+    if (thuocTinhCapDoChienDauCoTheoQuyChuan?.getCapDoChienDauCoTheoQuyChuanHienHanh?.getCapDoChuanChinhThuc?.getMaDinhDanh == '[CAP_DO_SS14]') {
+      await getCapDoTyLeBaoKichVKSCHienHanh?.caiDatCapDoChuanChinhThuc(value: getCapDoTyLeBaoKichVKSCSS14, caiDatUuTien: true);
+    }
+    if (thuocTinhCapDoChienDauCoTheoQuyChuan?.getCapDoChienDauCoTheoQuyChuanHienHanh?.getCapDoChuanChinhThuc?.getMaDinhDanh == '[CAP_DO_SS15]') {
+      await getCapDoTyLeBaoKichVKSCHienHanh?.caiDatCapDoChuanChinhThuc(value: getCapDoTyLeBaoKichVKSCSS15, caiDatUuTien: true);
+    }
+
+    await onCapNhatCapDoTyLeBaoKichVKSCTiepTheo();
+  }
+
   /// -----
   /// TODO: [2] Nâng Cấp Cấp Độ [MOHINHCAPDOTYLEBAOKICHVKSCHIENHANH]
   /// -----
   Future<void> onNangCapCapDoTyLeBaoKichVKSC({
     required QUANLYTRANGTHAITAINGUYENTRAODOIGIATRI? quanLyTongQuat,
+    required MOHINHTHUOCTINHCAPDOCHIENDAUCOTHEOQUYCHUAN? thuocTinhCapDoChienDauCoTheoQuyChuan,
     required GOITAINGUYENCHUANTHANHTOAN? goiTaiNguyenChuanThanhToan,
     required GOITAINGUYENCHUANHIENHANH? goiTaiNguyenChuanHienHanh,
     required Future<void> Function()? onThanhToanKhongThanhCong,
@@ -1377,19 +1485,20 @@ class MOHINHTHUOCTINHVUKHISUNGCHINH with CauTrucThucThiCoBan {
       /// -----
       /// TODO: [2] Số Điểm Nâng Cấp Phải Ít Nhất Bằng Số Điểm Nâng Cấp Thuộc Tính Yêu Cầu
       /// -----
-      await quanLyTongQuat?.getTongKhoTaiNguyen?.getKhoTaiNguyenDongVang?.getDichVuKhoTaiNguyen?.onThucThiThanhToan(
-        goiTaiNguyenChuanThanhToan: getCapDoTyLeBaoKichVKSCHienHanh?.getCapDoNoiSuyTiepTheo?.getDieuKienNangCap?.getGoiDiemNangCapYeuCau,
-        goiTaiNguyenChuanHienHanh: goiTaiNguyenChuanHienHanh,
-        onThanhToanKhongThanhCong: onThanhToanKhongThanhCong,
-        onThanhToanThanhCong: null,
-        onDieuKienThanhToan: onDieuKienThanhToan,
-      );
+      // await quanLyTongQuat?.getTongKhoTaiNguyen?.getKhoTaiNguyenDongVang?.getDichVuKhoTaiNguyen?.onThucThiThanhToan(
+      //   goiTaiNguyenChuanThanhToan: getCapDoTyLeBaoKichVKSCHienHanh?.getCapDoNoiSuyTiepTheo?.getDieuKienNangCap?.getGoiDiemNangCapYeuCau,
+      //   goiTaiNguyenChuanHienHanh: goiTaiNguyenChuanHienHanh,
+      //   onThanhToanKhongThanhCong: onThanhToanKhongThanhCong,
+      //   onThanhToanThanhCong: null,
+      //   onDieuKienThanhToan: onDieuKienThanhToan,
+      // );
 
       /// -----
       /// TODO:
       /// -----
 
-      if (getCapDoTyLeBaoKichVKSCHienHanh?.getCapDoNoiSuyTiepTheo?.getDieuKienNangCap?.getGoiDiemNangCapYeuCau?.getHoanTatThucThiGiaoDich == true) {
+      // if (getCapDoTyLeBaoKichVKSCHienHanh?.getCapDoNoiSuyTiepTheo?.getDieuKienNangCap?.getGoiDiemNangCapYeuCau?.getHoanTatThucThiGiaoDich == true) {
+      if (true) {
         /// -----
         /// TODO: Thỏa Điều Kiện [2]
         /// -----
@@ -1441,11 +1550,64 @@ class MOHINHTHUOCTINHVUKHISUNGCHINH with CauTrucThucThiCoBan {
     }
   }
 
+  Future<void> onDongBoHoaCapDoSatThuongBaoKichTheoCapDoChienDauCoTheoQuyChuan({
+    required MOHINHTHUOCTINHCAPDOCHIENDAUCOTHEOQUYCHUAN? thuocTinhCapDoChienDauCoTheoQuyChuan,
+  }) async {
+    if (thuocTinhCapDoChienDauCoTheoQuyChuan?.getCapDoChienDauCoTheoQuyChuanHienHanh?.getCapDoChuanChinhThuc?.getMaDinhDanh == '[CAP_DO_SS01]') {
+      await getCapDoSatThuongBaoKichVKSCHienHanh?.caiDatCapDoChuanChinhThuc(value: getCapDoSatThuongBaoKichVKSCSS01, caiDatUuTien: true);
+    }
+    if (thuocTinhCapDoChienDauCoTheoQuyChuan?.getCapDoChienDauCoTheoQuyChuanHienHanh?.getCapDoChuanChinhThuc?.getMaDinhDanh == '[CAP_DO_SS02]') {
+      await getCapDoSatThuongBaoKichVKSCHienHanh?.caiDatCapDoChuanChinhThuc(value: getCapDoSatThuongBaoKichVKSCSS02, caiDatUuTien: true);
+    }
+    if (thuocTinhCapDoChienDauCoTheoQuyChuan?.getCapDoChienDauCoTheoQuyChuanHienHanh?.getCapDoChuanChinhThuc?.getMaDinhDanh == '[CAP_DO_SS03]') {
+      await getCapDoSatThuongBaoKichVKSCHienHanh?.caiDatCapDoChuanChinhThuc(value: getCapDoSatThuongBaoKichVKSCSS03, caiDatUuTien: true);
+    }
+    if (thuocTinhCapDoChienDauCoTheoQuyChuan?.getCapDoChienDauCoTheoQuyChuanHienHanh?.getCapDoChuanChinhThuc?.getMaDinhDanh == '[CAP_DO_SS04]') {
+      await getCapDoSatThuongBaoKichVKSCHienHanh?.caiDatCapDoChuanChinhThuc(value: getCapDoSatThuongBaoKichVKSCSS04, caiDatUuTien: true);
+    }
+    if (thuocTinhCapDoChienDauCoTheoQuyChuan?.getCapDoChienDauCoTheoQuyChuanHienHanh?.getCapDoChuanChinhThuc?.getMaDinhDanh == '[CAP_DO_SS05]') {
+      await getCapDoSatThuongBaoKichVKSCHienHanh?.caiDatCapDoChuanChinhThuc(value: getCapDoSatThuongBaoKichVKSCSS05, caiDatUuTien: true);
+    }
+    if (thuocTinhCapDoChienDauCoTheoQuyChuan?.getCapDoChienDauCoTheoQuyChuanHienHanh?.getCapDoChuanChinhThuc?.getMaDinhDanh == '[CAP_DO_SS06]') {
+      await getCapDoSatThuongBaoKichVKSCHienHanh?.caiDatCapDoChuanChinhThuc(value: getCapDoSatThuongBaoKichVKSCSS06, caiDatUuTien: true);
+    }
+    if (thuocTinhCapDoChienDauCoTheoQuyChuan?.getCapDoChienDauCoTheoQuyChuanHienHanh?.getCapDoChuanChinhThuc?.getMaDinhDanh == '[CAP_DO_SS07]') {
+      await getCapDoSatThuongBaoKichVKSCHienHanh?.caiDatCapDoChuanChinhThuc(value: getCapDoSatThuongBaoKichVKSCSS07, caiDatUuTien: true);
+    }
+    if (thuocTinhCapDoChienDauCoTheoQuyChuan?.getCapDoChienDauCoTheoQuyChuanHienHanh?.getCapDoChuanChinhThuc?.getMaDinhDanh == '[CAP_DO_SS08]') {
+      await getCapDoSatThuongBaoKichVKSCHienHanh?.caiDatCapDoChuanChinhThuc(value: getCapDoSatThuongBaoKichVKSCSS08, caiDatUuTien: true);
+    }
+    if (thuocTinhCapDoChienDauCoTheoQuyChuan?.getCapDoChienDauCoTheoQuyChuanHienHanh?.getCapDoChuanChinhThuc?.getMaDinhDanh == '[CAP_DO_SS09]') {
+      await getCapDoSatThuongBaoKichVKSCHienHanh?.caiDatCapDoChuanChinhThuc(value: getCapDoSatThuongBaoKichVKSCSS09, caiDatUuTien: true);
+    }
+    if (thuocTinhCapDoChienDauCoTheoQuyChuan?.getCapDoChienDauCoTheoQuyChuanHienHanh?.getCapDoChuanChinhThuc?.getMaDinhDanh == '[CAP_DO_SS10]') {
+      await getCapDoSatThuongBaoKichVKSCHienHanh?.caiDatCapDoChuanChinhThuc(value: getCapDoSatThuongBaoKichVKSCSS10, caiDatUuTien: true);
+    }
+    if (thuocTinhCapDoChienDauCoTheoQuyChuan?.getCapDoChienDauCoTheoQuyChuanHienHanh?.getCapDoChuanChinhThuc?.getMaDinhDanh == '[CAP_DO_SS11]') {
+      await getCapDoSatThuongBaoKichVKSCHienHanh?.caiDatCapDoChuanChinhThuc(value: getCapDoSatThuongBaoKichVKSCSS11, caiDatUuTien: true);
+    }
+    if (thuocTinhCapDoChienDauCoTheoQuyChuan?.getCapDoChienDauCoTheoQuyChuanHienHanh?.getCapDoChuanChinhThuc?.getMaDinhDanh == '[CAP_DO_SS12]') {
+      await getCapDoSatThuongBaoKichVKSCHienHanh?.caiDatCapDoChuanChinhThuc(value: getCapDoSatThuongBaoKichVKSCSS12, caiDatUuTien: true);
+    }
+    if (thuocTinhCapDoChienDauCoTheoQuyChuan?.getCapDoChienDauCoTheoQuyChuanHienHanh?.getCapDoChuanChinhThuc?.getMaDinhDanh == '[CAP_DO_SS13]') {
+      await getCapDoSatThuongBaoKichVKSCHienHanh?.caiDatCapDoChuanChinhThuc(value: getCapDoSatThuongBaoKichVKSCSS13, caiDatUuTien: true);
+    }
+    if (thuocTinhCapDoChienDauCoTheoQuyChuan?.getCapDoChienDauCoTheoQuyChuanHienHanh?.getCapDoChuanChinhThuc?.getMaDinhDanh == '[CAP_DO_SS14]') {
+      await getCapDoSatThuongBaoKichVKSCHienHanh?.caiDatCapDoChuanChinhThuc(value: getCapDoSatThuongBaoKichVKSCSS14, caiDatUuTien: true);
+    }
+    if (thuocTinhCapDoChienDauCoTheoQuyChuan?.getCapDoChienDauCoTheoQuyChuanHienHanh?.getCapDoChuanChinhThuc?.getMaDinhDanh == '[CAP_DO_SS15]') {
+      await getCapDoSatThuongBaoKichVKSCHienHanh?.caiDatCapDoChuanChinhThuc(value: getCapDoSatThuongBaoKichVKSCSS15, caiDatUuTien: true);
+    }
+
+    await onCapNhatCapDoSatThuongBaoKichVKSCTiepTheo();
+  }
+
   /// -----
   /// TODO: [3] Nâng Cấp Cấp Độ [MOHINHCAPDOSATTHUONGBAOKICHVKSCHIENHANH]
   /// -----
   Future<void> onNangCapCapDoSatThuongBaoKichVKSC({
     required QUANLYTRANGTHAITAINGUYENTRAODOIGIATRI? quanLyTongQuat,
+    required MOHINHTHUOCTINHCAPDOCHIENDAUCOTHEOQUYCHUAN? thuocTinhCapDoChienDauCoTheoQuyChuan,
     required GOITAINGUYENCHUANTHANHTOAN? goiTaiNguyenChuanThanhToan,
     required GOITAINGUYENCHUANHIENHANH? goiTaiNguyenChuanHienHanh,
     required Future<void> Function()? onThanhToanKhongThanhCong,
@@ -1468,19 +1630,20 @@ class MOHINHTHUOCTINHVUKHISUNGCHINH with CauTrucThucThiCoBan {
       /// -----
       /// TODO: [2] Số Điểm Nâng Cấp Phải Ít Nhất Bằng Số Điểm Nâng Cấp Thuộc Tính Yêu Cầu
       /// -----
-      await quanLyTongQuat?.getTongKhoTaiNguyen?.getKhoTaiNguyenDongVang?.getDichVuKhoTaiNguyen?.onThucThiThanhToan(
-        goiTaiNguyenChuanThanhToan: getCapDoSatThuongBaoKichVKSCHienHanh?.getCapDoNoiSuyTiepTheo?.getDieuKienNangCap?.getGoiDiemNangCapYeuCau,
-        goiTaiNguyenChuanHienHanh: goiTaiNguyenChuanHienHanh,
-        onThanhToanKhongThanhCong: onThanhToanKhongThanhCong,
-        onThanhToanThanhCong: null,
-        onDieuKienThanhToan: onDieuKienThanhToan,
-      );
+      // await quanLyTongQuat?.getTongKhoTaiNguyen?.getKhoTaiNguyenDongVang?.getDichVuKhoTaiNguyen?.onThucThiThanhToan(
+      //   goiTaiNguyenChuanThanhToan: getCapDoSatThuongBaoKichVKSCHienHanh?.getCapDoNoiSuyTiepTheo?.getDieuKienNangCap?.getGoiDiemNangCapYeuCau,
+      //   goiTaiNguyenChuanHienHanh: goiTaiNguyenChuanHienHanh,
+      //   onThanhToanKhongThanhCong: onThanhToanKhongThanhCong,
+      //   onThanhToanThanhCong: null,
+      //   onDieuKienThanhToan: onDieuKienThanhToan,
+      // );
 
       /// -----
       /// TODO:
       /// -----
 
-      if (getCapDoSatThuongBaoKichVKSCHienHanh?.getCapDoNoiSuyTiepTheo?.getDieuKienNangCap?.getGoiDiemNangCapYeuCau?.getHoanTatThucThiGiaoDich == true) {
+      // if (getCapDoSatThuongBaoKichVKSCHienHanh?.getCapDoNoiSuyTiepTheo?.getDieuKienNangCap?.getGoiDiemNangCapYeuCau?.getHoanTatThucThiGiaoDich == true) {
+      if (true) {
         /// -----
         /// TODO: Thỏa Điều Kiện [2]
         /// -----
@@ -1532,11 +1695,64 @@ class MOHINHTHUOCTINHVUKHISUNGCHINH with CauTrucThucThiCoBan {
     }
   }
 
+  Future<void> onDongBoHoaCapDoTocDoBanTheoCapDoChienDauCoTheoQuyChuan({
+    required MOHINHTHUOCTINHCAPDOCHIENDAUCOTHEOQUYCHUAN? thuocTinhCapDoChienDauCoTheoQuyChuan,
+  }) async {
+    if (thuocTinhCapDoChienDauCoTheoQuyChuan?.getCapDoChienDauCoTheoQuyChuanHienHanh?.getCapDoChuanChinhThuc?.getMaDinhDanh == '[CAP_DO_SS01]') {
+      await getCapDoTocDoBanVKSCHienHanh?.caiDatCapDoChuanChinhThuc(value: getCapDoTocDoBanVKSCSS01, caiDatUuTien: true);
+    }
+    if (thuocTinhCapDoChienDauCoTheoQuyChuan?.getCapDoChienDauCoTheoQuyChuanHienHanh?.getCapDoChuanChinhThuc?.getMaDinhDanh == '[CAP_DO_SS02]') {
+      await getCapDoTocDoBanVKSCHienHanh?.caiDatCapDoChuanChinhThuc(value: getCapDoTocDoBanVKSCSS02, caiDatUuTien: true);
+    }
+    if (thuocTinhCapDoChienDauCoTheoQuyChuan?.getCapDoChienDauCoTheoQuyChuanHienHanh?.getCapDoChuanChinhThuc?.getMaDinhDanh == '[CAP_DO_SS03]') {
+      await getCapDoTocDoBanVKSCHienHanh?.caiDatCapDoChuanChinhThuc(value: getCapDoTocDoBanVKSCSS03, caiDatUuTien: true);
+    }
+    if (thuocTinhCapDoChienDauCoTheoQuyChuan?.getCapDoChienDauCoTheoQuyChuanHienHanh?.getCapDoChuanChinhThuc?.getMaDinhDanh == '[CAP_DO_SS04]') {
+      await getCapDoTocDoBanVKSCHienHanh?.caiDatCapDoChuanChinhThuc(value: getCapDoTocDoBanVKSCSS04, caiDatUuTien: true);
+    }
+    if (thuocTinhCapDoChienDauCoTheoQuyChuan?.getCapDoChienDauCoTheoQuyChuanHienHanh?.getCapDoChuanChinhThuc?.getMaDinhDanh == '[CAP_DO_SS05]') {
+      await getCapDoTocDoBanVKSCHienHanh?.caiDatCapDoChuanChinhThuc(value: getCapDoTocDoBanVKSCSS05, caiDatUuTien: true);
+    }
+    if (thuocTinhCapDoChienDauCoTheoQuyChuan?.getCapDoChienDauCoTheoQuyChuanHienHanh?.getCapDoChuanChinhThuc?.getMaDinhDanh == '[CAP_DO_SS06]') {
+      await getCapDoTocDoBanVKSCHienHanh?.caiDatCapDoChuanChinhThuc(value: getCapDoTocDoBanVKSCSS06, caiDatUuTien: true);
+    }
+    if (thuocTinhCapDoChienDauCoTheoQuyChuan?.getCapDoChienDauCoTheoQuyChuanHienHanh?.getCapDoChuanChinhThuc?.getMaDinhDanh == '[CAP_DO_SS07]') {
+      await getCapDoTocDoBanVKSCHienHanh?.caiDatCapDoChuanChinhThuc(value: getCapDoTocDoBanVKSCSS07, caiDatUuTien: true);
+    }
+    if (thuocTinhCapDoChienDauCoTheoQuyChuan?.getCapDoChienDauCoTheoQuyChuanHienHanh?.getCapDoChuanChinhThuc?.getMaDinhDanh == '[CAP_DO_SS08]') {
+      await getCapDoTocDoBanVKSCHienHanh?.caiDatCapDoChuanChinhThuc(value: getCapDoTocDoBanVKSCSS08, caiDatUuTien: true);
+    }
+    if (thuocTinhCapDoChienDauCoTheoQuyChuan?.getCapDoChienDauCoTheoQuyChuanHienHanh?.getCapDoChuanChinhThuc?.getMaDinhDanh == '[CAP_DO_SS09]') {
+      await getCapDoTocDoBanVKSCHienHanh?.caiDatCapDoChuanChinhThuc(value: getCapDoTocDoBanVKSCSS09, caiDatUuTien: true);
+    }
+    if (thuocTinhCapDoChienDauCoTheoQuyChuan?.getCapDoChienDauCoTheoQuyChuanHienHanh?.getCapDoChuanChinhThuc?.getMaDinhDanh == '[CAP_DO_SS10]') {
+      await getCapDoTocDoBanVKSCHienHanh?.caiDatCapDoChuanChinhThuc(value: getCapDoTocDoBanVKSCSS10, caiDatUuTien: true);
+    }
+    if (thuocTinhCapDoChienDauCoTheoQuyChuan?.getCapDoChienDauCoTheoQuyChuanHienHanh?.getCapDoChuanChinhThuc?.getMaDinhDanh == '[CAP_DO_SS11]') {
+      await getCapDoTocDoBanVKSCHienHanh?.caiDatCapDoChuanChinhThuc(value: getCapDoTocDoBanVKSCSS11, caiDatUuTien: true);
+    }
+    if (thuocTinhCapDoChienDauCoTheoQuyChuan?.getCapDoChienDauCoTheoQuyChuanHienHanh?.getCapDoChuanChinhThuc?.getMaDinhDanh == '[CAP_DO_SS12]') {
+      await getCapDoTocDoBanVKSCHienHanh?.caiDatCapDoChuanChinhThuc(value: getCapDoTocDoBanVKSCSS12, caiDatUuTien: true);
+    }
+    if (thuocTinhCapDoChienDauCoTheoQuyChuan?.getCapDoChienDauCoTheoQuyChuanHienHanh?.getCapDoChuanChinhThuc?.getMaDinhDanh == '[CAP_DO_SS13]') {
+      await getCapDoTocDoBanVKSCHienHanh?.caiDatCapDoChuanChinhThuc(value: getCapDoTocDoBanVKSCSS13, caiDatUuTien: true);
+    }
+    if (thuocTinhCapDoChienDauCoTheoQuyChuan?.getCapDoChienDauCoTheoQuyChuanHienHanh?.getCapDoChuanChinhThuc?.getMaDinhDanh == '[CAP_DO_SS14]') {
+      await getCapDoTocDoBanVKSCHienHanh?.caiDatCapDoChuanChinhThuc(value: getCapDoTocDoBanVKSCSS14, caiDatUuTien: true);
+    }
+    if (thuocTinhCapDoChienDauCoTheoQuyChuan?.getCapDoChienDauCoTheoQuyChuanHienHanh?.getCapDoChuanChinhThuc?.getMaDinhDanh == '[CAP_DO_SS15]') {
+      await getCapDoTocDoBanVKSCHienHanh?.caiDatCapDoChuanChinhThuc(value: getCapDoTocDoBanVKSCSS15, caiDatUuTien: true);
+    }
+
+    await onCapNhatCapDoTocDoBanVKSCTiepTheo();
+  }
+
   /// -----
   /// TODO: [4] Nâng Cấp Cấp Độ [MOHINHCAPDOTOCDOBANVKSCHIENHANH]
   /// -----
   Future<void> onNangCapCapDoTocDoBanVKSC({
     required QUANLYTRANGTHAITAINGUYENTRAODOIGIATRI? quanLyTongQuat,
+    required MOHINHTHUOCTINHCAPDOCHIENDAUCOTHEOQUYCHUAN? thuocTinhCapDoChienDauCoTheoQuyChuan,
     required GOITAINGUYENCHUANTHANHTOAN? goiTaiNguyenChuanThanhToan,
     required GOITAINGUYENCHUANHIENHANH? goiTaiNguyenChuanHienHanh,
     required Future<void> Function()? onThanhToanKhongThanhCong,
@@ -1559,19 +1775,20 @@ class MOHINHTHUOCTINHVUKHISUNGCHINH with CauTrucThucThiCoBan {
       /// -----
       /// TODO: [2] Số Điểm Nâng Cấp Phải Ít Nhất Bằng Số Điểm Nâng Cấp Thuộc Tính Yêu Cầu
       /// -----
-      await quanLyTongQuat?.getTongKhoTaiNguyen?.getKhoTaiNguyenDongVang?.getDichVuKhoTaiNguyen?.onThucThiThanhToan(
-        goiTaiNguyenChuanThanhToan: getCapDoTocDoBanVKSCHienHanh?.getCapDoNoiSuyTiepTheo?.getDieuKienNangCap?.getGoiDiemNangCapYeuCau,
-        goiTaiNguyenChuanHienHanh: goiTaiNguyenChuanHienHanh,
-        onThanhToanKhongThanhCong: onThanhToanKhongThanhCong,
-        onThanhToanThanhCong: null,
-        onDieuKienThanhToan: onDieuKienThanhToan,
-      );
+      // await quanLyTongQuat?.getTongKhoTaiNguyen?.getKhoTaiNguyenDongVang?.getDichVuKhoTaiNguyen?.onThucThiThanhToan(
+      //   goiTaiNguyenChuanThanhToan: getCapDoTocDoBanVKSCHienHanh?.getCapDoNoiSuyTiepTheo?.getDieuKienNangCap?.getGoiDiemNangCapYeuCau,
+      //   goiTaiNguyenChuanHienHanh: goiTaiNguyenChuanHienHanh,
+      //   onThanhToanKhongThanhCong: onThanhToanKhongThanhCong,
+      //   onThanhToanThanhCong: null,
+      //   onDieuKienThanhToan: onDieuKienThanhToan,
+      // );
 
       /// -----
       /// TODO:
       /// -----
 
-      if (getCapDoTocDoBanVKSCHienHanh?.getCapDoNoiSuyTiepTheo?.getDieuKienNangCap?.getGoiDiemNangCapYeuCau?.getHoanTatThucThiGiaoDich == true) {
+      // if (getCapDoTocDoBanVKSCHienHanh?.getCapDoNoiSuyTiepTheo?.getDieuKienNangCap?.getGoiDiemNangCapYeuCau?.getHoanTatThucThiGiaoDich == true) {
+      if (true) {
         /// -----
         /// TODO: Thỏa Điều Kiện [2]
         /// -----
