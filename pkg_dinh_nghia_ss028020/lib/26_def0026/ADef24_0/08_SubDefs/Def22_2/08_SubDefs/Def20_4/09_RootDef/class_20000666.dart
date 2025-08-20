@@ -1584,6 +1584,9 @@ class MOHINHTHUOCTINHTENLUATANCONG with CauTrucThucThiCoBan {
     /// TODO: [1] Cấp Độ Hiện Tại Chưa Phải Là Cấp Độ Cao Nhất
     /// -----
     if (getCapDoSatThuongCoBanTLTCHienHanh?.getCapDoChuanChinhThuc?.getMaDinhDanh != getCapDoSatThuongCoBanTLTCHienHanh?.getCapDoMacDinhCaoNhat?.getMaDinhDanh) {
+
+      await onDongBoHoaCapDoSatThuongCoBanTheoCapDoChienDauCoTheoQuyChuan(thuocTinhCapDoChienDauCoTheoQuyChuan: thuocTinhCapDoChienDauCoTheoQuyChuan);
+
       /// -----
       /// TODO: Thỏa Điều Kiện [1]
       /// -----
@@ -1604,7 +1607,7 @@ class MOHINHTHUOCTINHTENLUATANCONG with CauTrucThucThiCoBan {
       /// -----
 
       // if (getCapDoSatThuongCoBanTLTCHienHanh?.getCapDoNoiSuyTiepTheo?.getDieuKienNangCap?.getGoiDiemNangCapYeuCau?.getHoanTatThucThiGiaoDich == true) {
-      if (true) {
+      if (false) {
         /// -----
         /// TODO: Thỏa Điều Kiện [2]
         /// -----
@@ -1737,6 +1740,9 @@ class MOHINHTHUOCTINHTENLUATANCONG with CauTrucThucThiCoBan {
     /// TODO: [1] Cấp Độ Hiện Tại Chưa Phải Là Cấp Độ Cao Nhất
     /// -----
     if (getCapDoTyLeBaoKichTLTCHienHanh?.getCapDoChuanChinhThuc?.getMaDinhDanh != getCapDoTyLeBaoKichTLTCHienHanh?.getCapDoMacDinhCaoNhat?.getMaDinhDanh) {
+
+      await onDongBoHoaCapDoTyLeBaoKichTheoCapDoChienDauCoTheoQuyChuan(thuocTinhCapDoChienDauCoTheoQuyChuan: thuocTinhCapDoChienDauCoTheoQuyChuan);
+
       /// -----
       /// TODO: Thỏa Điều Kiện [1]
       /// -----
@@ -1757,7 +1763,7 @@ class MOHINHTHUOCTINHTENLUATANCONG with CauTrucThucThiCoBan {
       /// -----
 
       // if (getCapDoTyLeBaoKichTLTCHienHanh?.getCapDoNoiSuyTiepTheo?.getDieuKienNangCap?.getGoiDiemNangCapYeuCau?.getHoanTatThucThiGiaoDich == true) {
-      if (true) {
+      if (false) {
         /// -----
         /// TODO: Thỏa Điều Kiện [2]
         /// -----
@@ -1890,6 +1896,9 @@ class MOHINHTHUOCTINHTENLUATANCONG with CauTrucThucThiCoBan {
     /// TODO: [1] Cấp Độ Hiện Tại Chưa Phải Là Cấp Độ Cao Nhất
     /// -----
     if (getCapDoSatThuongBaoKichTLTCHienHanh?.getCapDoChuanChinhThuc?.getMaDinhDanh != getCapDoSatThuongBaoKichTLTCHienHanh?.getCapDoMacDinhCaoNhat?.getMaDinhDanh) {
+
+      await onDongBoHoaCapDoSatThuongBaoKichTheoCapDoChienDauCoTheoQuyChuan(thuocTinhCapDoChienDauCoTheoQuyChuan: thuocTinhCapDoChienDauCoTheoQuyChuan);
+
       /// -----
       /// TODO: Thỏa Điều Kiện [1]
       /// -----
@@ -1910,7 +1919,7 @@ class MOHINHTHUOCTINHTENLUATANCONG with CauTrucThucThiCoBan {
       /// -----
 
       // if (getCapDoSatThuongBaoKichTLTCHienHanh?.getCapDoNoiSuyTiepTheo?.getDieuKienNangCap?.getGoiDiemNangCapYeuCau?.getHoanTatThucThiGiaoDich == true) {
-      if (true) {
+      if (false) {
         /// -----
         /// TODO: Thỏa Điều Kiện [2]
         /// -----
@@ -2043,6 +2052,9 @@ class MOHINHTHUOCTINHTENLUATANCONG with CauTrucThucThiCoBan {
     /// TODO: [1] Cấp Độ Hiện Tại Chưa Phải Là Cấp Độ Cao Nhất
     /// -----
     if (getCapDoTocDoBanTLTCHienHanh?.getCapDoChuanChinhThuc?.getMaDinhDanh != getCapDoTocDoBanTLTCHienHanh?.getCapDoMacDinhCaoNhat?.getMaDinhDanh) {
+
+      await onDongBoHoaCapDoTocDoBanTheoCapDoChienDauCoTheoQuyChuan(thuocTinhCapDoChienDauCoTheoQuyChuan: thuocTinhCapDoChienDauCoTheoQuyChuan);
+
       /// -----
       /// TODO: Thỏa Điều Kiện [1]
       /// -----
@@ -2063,7 +2075,7 @@ class MOHINHTHUOCTINHTENLUATANCONG with CauTrucThucThiCoBan {
       /// -----
 
       // if (getCapDoTocDoBanTLTCHienHanh?.getCapDoNoiSuyTiepTheo?.getDieuKienNangCap?.getGoiDiemNangCapYeuCau?.getHoanTatThucThiGiaoDich == true) {
-      if (true) {
+      if (false) {
         /// -----
         /// TODO: Thỏa Điều Kiện [2]
         /// -----

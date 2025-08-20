@@ -4,7 +4,7 @@ import 'package:pkg_khung_man_hinh_ss020000/pkg_khung_man_hinh_ss020000_exp.dart
 /// -----
 /// TODO: Thành Phần Màn Hình Thuộc Cấp
 /// -----
-abstract class THANHPHANMANHINHTHUOCCAPCOBAN extends PositionComponent with CAUTRUCTHUCTHICOBAN, KICHBANDIEUKHIENTHUOCCAPCOBAN {
+abstract class THANHPHANMANHINHTHUOCCAPCOBAN extends PositionComponent with HasVisibility,  CAUTRUCTHUCTHICOBAN, KICHBANDIEUKHIENTHUOCCAPCOBAN {
   /// -----
   /// TODO:
   /// -----
@@ -180,10 +180,14 @@ abstract class THANHPHANMANHINHTHUOCCAPCOBAN extends PositionComponent with CAUT
   }
 
   Future<void> onActiveShow() async {
+    await Future.delayed(Duration(milliseconds: 100));
     await onAddToParent();
+    await Future.delayed(Duration(milliseconds: 100));
+    isVisible = true;
   }
 
   Future<void> onInActiveShow() async {
+    isVisible = false;
     await onRemoveFromParent();
   }
 

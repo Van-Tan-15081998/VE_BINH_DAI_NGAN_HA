@@ -8,18 +8,13 @@ import 'package:pkg_khung_man_hinh_ss020000/pkg_khung_man_hinh_ss020000_exp.dart
 /// -----
 /// TODO: Thành Phần Tích Hợp Sprite Animation Văn Bản Thuộc Cấp
 /// -----
-abstract class THANHPHANTICHHOPSPRITEANIMATIONVANBANTHUOCCAP
-    extends PositionComponent
-    with CauTrucThucThiCoBan {
+abstract class THANHPHANTICHHOPSPRITEANIMATIONVANBANTHUOCCAP extends PositionComponent with CauTrucThucThiCoBan {
   /// -----
   /// TODO:
   /// -----
   GlobalStateManagementSystem? _globalStateManagementSystem;
   GlobalStateManagementSystem? get getGlobalStateManagementSystem => _globalStateManagementSystem;
-  void onSetGlobalStateManagementSystem({
-    required GlobalStateManagementSystem? value,
-    bool? caiDatUuTien,
-  }) {
+  void onSetGlobalStateManagementSystem({required GlobalStateManagementSystem? value, bool? caiDatUuTien}) {
     if (caiDatUuTien == true) {
       _globalStateManagementSystem = value;
     } else {
@@ -34,10 +29,7 @@ abstract class THANHPHANTICHHOPSPRITEANIMATIONVANBANTHUOCCAP
   /// -----
   KHUNGMANHINHGAMECOSO? _gameController;
   KHUNGMANHINHGAMECOSO? get getGameController => _gameController;
-  void onVoidCaiDatGameController({
-    required KHUNGMANHINHGAMECOSO? value,
-    bool? caiDatUuTien,
-  }) {
+  void onVoidCaiDatGameController({required KHUNGMANHINHGAMECOSO? value, bool? caiDatUuTien}) {
     if (caiDatUuTien == true) {
       _gameController = value;
     } else {
@@ -51,12 +43,8 @@ abstract class THANHPHANTICHHOPSPRITEANIMATIONVANBANTHUOCCAP
   /// TODO:
   /// -----
   THANHPHANMANHINHTHUOCCAPCOBAN? _thanhPhanQuanLyThuocCapTrucTiep;
-  THANHPHANMANHINHTHUOCCAPCOBAN? get getThanhPhanQuanLyThuocCapTrucTiep =>
-      _thanhPhanQuanLyThuocCapTrucTiep;
-  void onVoidCaiDatThanhPhanQuanLyThuocCapTrucTiep({
-    required THANHPHANMANHINHTHUOCCAPCOBAN? value,
-    bool? caiDatUuTien,
-  }) {
+  THANHPHANMANHINHTHUOCCAPCOBAN? get getThanhPhanQuanLyThuocCapTrucTiep => _thanhPhanQuanLyThuocCapTrucTiep;
+  void onVoidCaiDatThanhPhanQuanLyThuocCapTrucTiep({required THANHPHANMANHINHTHUOCCAPCOBAN? value, bool? caiDatUuTien}) {
     if (caiDatUuTien == true) {
       _thanhPhanQuanLyThuocCapTrucTiep = value;
     } else {
@@ -144,10 +132,7 @@ abstract class THANHPHANTICHHOPSPRITEANIMATIONVANBANTHUOCCAP
 
   bool? _kiemTraVanBanThuan;
   bool? get getKiemTraVanBanThuan => _kiemTraVanBanThuan;
-  void onVoidCaiDatKiemTraVanBanThuan({
-    required bool? value,
-    bool? caiDatUuTien,
-  }) {
+  void onVoidCaiDatKiemTraVanBanThuan({required bool? value, bool? caiDatUuTien}) {
     if (caiDatUuTien == true) {
       _kiemTraVanBanThuan = value;
     } else {
@@ -190,7 +175,6 @@ abstract class THANHPHANTICHHOPSPRITEANIMATIONVANBANTHUOCCAP
   }
 
   Future<void> onAddToParent() async {
-
     if (getFlameGameParentComponent != null && isMounted == false) {
       await getFlameGameParentComponent?.add(this);
     } else if (getParentComponent != null && isMounted == false) {
@@ -204,12 +188,8 @@ abstract class THANHPHANTICHHOPSPRITEANIMATIONVANBANTHUOCCAP
   /// TODO:
   /// -----
   TRANGTHAIKICHHOATTHANHPHAN? _trangThaiKichHoatThanhPhan;
-  TRANGTHAIKICHHOATTHANHPHAN? get getTrangThaiKichHoatThanhPhan =>
-      _trangThaiKichHoatThanhPhan;
-  Future<void> onCaiDatTrangThaiKichHoatThanhPhan({
-    required TRANGTHAIKICHHOATTHANHPHAN? value,
-    bool? caiDatUuTien,
-  }) async {
+  TRANGTHAIKICHHOATTHANHPHAN? get getTrangThaiKichHoatThanhPhan => _trangThaiKichHoatThanhPhan;
+  Future<void> onCaiDatTrangThaiKichHoatThanhPhan({required TRANGTHAIKICHHOATTHANHPHAN? value, bool? caiDatUuTien}) async {
     if (caiDatUuTien == true) {
       _trangThaiKichHoatThanhPhan = value;
     } else {
@@ -229,15 +209,11 @@ abstract class THANHPHANTICHHOPSPRITEANIMATIONVANBANTHUOCCAP
     double positionDx = getPositionDx ?? 100.0;
     double positionDy = getPositionDy ?? 100.0;
 
-    getTrangThaiKichHoatThanhPhan?.getDiemToaDoThanhPhanHuyKichHoat
-        ?.onVoidCaiDatPositionDx(value: -10000.0, caiDatUuTien: true);
-    getTrangThaiKichHoatThanhPhan?.getDiemToaDoThanhPhanHuyKichHoat
-        ?.onVoidCaiDatPositionDy(value: -10000.0, caiDatUuTien: true);
+    getTrangThaiKichHoatThanhPhan?.getDiemToaDoThanhPhanHuyKichHoat?.onVoidCaiDatPositionDx(value: -10000.0, caiDatUuTien: true);
+    getTrangThaiKichHoatThanhPhan?.getDiemToaDoThanhPhanHuyKichHoat?.onVoidCaiDatPositionDy(value: -10000.0, caiDatUuTien: true);
 
-    getTrangThaiKichHoatThanhPhan?.getDiemToaDoThanhPhanKichHoat
-        ?.onVoidCaiDatPositionDx(value: getPositionDx, caiDatUuTien: true);
-    getTrangThaiKichHoatThanhPhan?.getDiemToaDoThanhPhanKichHoat
-        ?.onVoidCaiDatPositionDy(value: getPositionDy, caiDatUuTien: true);
+    getTrangThaiKichHoatThanhPhan?.getDiemToaDoThanhPhanKichHoat?.onVoidCaiDatPositionDx(value: getPositionDx, caiDatUuTien: true);
+    getTrangThaiKichHoatThanhPhan?.getDiemToaDoThanhPhanKichHoat?.onVoidCaiDatPositionDy(value: getPositionDy, caiDatUuTien: true);
 
     ///
     return;
@@ -246,50 +222,17 @@ abstract class THANHPHANTICHHOPSPRITEANIMATIONVANBANTHUOCCAP
   /// -----
   /// TODO:
   /// -----
-  Future<void> onKichHoatThanhPhanThuocCap({
-    VoidCallback? onHuyKichHoat,
-    bool? kichHoatUuTien,
-  }) async {
+  Future<void> onKichHoatThanhPhanThuocCap({VoidCallback? onHuyKichHoat, bool? kichHoatUuTien}) async {
     if (kichHoatUuTien == true) {
-      getTrangThaiKichHoatThanhPhan?.onVoidCaiDatKiemTraKichHoat(
-        value: true,
-        caiDatUuTien: true,
-      );
+      getTrangThaiKichHoatThanhPhan?.onVoidCaiDatKiemTraKichHoat(value: true, caiDatUuTien: true);
 
-      onVoidCaiDatPositionDx(
-        value:
-            getTrangThaiKichHoatThanhPhan
-                ?.getDiemToaDoThanhPhanKichHoat
-                ?.getPositionDx,
-        caiDatUuTien: true,
-      );
-      onVoidCaiDatPositionDy(
-        value:
-            getTrangThaiKichHoatThanhPhan
-                ?.getDiemToaDoThanhPhanKichHoat
-                ?.getPositionDy,
-        caiDatUuTien: true,
-      );
+      onVoidCaiDatPositionDx(value: getTrangThaiKichHoatThanhPhan?.getDiemToaDoThanhPhanKichHoat?.getPositionDx, caiDatUuTien: true);
+      onVoidCaiDatPositionDy(value: getTrangThaiKichHoatThanhPhan?.getDiemToaDoThanhPhanKichHoat?.getPositionDy, caiDatUuTien: true);
     } else if (getTrangThaiKichHoatThanhPhan?.getKiemTraKichHoat == false) {
-      getTrangThaiKichHoatThanhPhan?.onVoidCaiDatKiemTraKichHoat(
-        value: true,
-        caiDatUuTien: true,
-      );
+      getTrangThaiKichHoatThanhPhan?.onVoidCaiDatKiemTraKichHoat(value: true, caiDatUuTien: true);
 
-      onVoidCaiDatPositionDx(
-        value:
-            getTrangThaiKichHoatThanhPhan
-                ?.getDiemToaDoThanhPhanKichHoat
-                ?.getPositionDx,
-        caiDatUuTien: true,
-      );
-      onVoidCaiDatPositionDy(
-        value:
-            getTrangThaiKichHoatThanhPhan
-                ?.getDiemToaDoThanhPhanKichHoat
-                ?.getPositionDy,
-        caiDatUuTien: true,
-      );
+      onVoidCaiDatPositionDx(value: getTrangThaiKichHoatThanhPhan?.getDiemToaDoThanhPhanKichHoat?.getPositionDx, caiDatUuTien: true);
+      onVoidCaiDatPositionDy(value: getTrangThaiKichHoatThanhPhan?.getDiemToaDoThanhPhanKichHoat?.getPositionDy, caiDatUuTien: true);
     } else if (getTrangThaiKichHoatThanhPhan?.getKiemTraKichHoat == true) {
       await onHuyKichHoatThanhPhanThuocCap();
       onHuyKichHoat?.call();
@@ -303,25 +246,10 @@ abstract class THANHPHANTICHHOPSPRITEANIMATIONVANBANTHUOCCAP
   /// TODO:
   /// -----
   Future<void> onHuyKichHoatThanhPhanThuocCap() async {
-    getTrangThaiKichHoatThanhPhan?.onVoidCaiDatKiemTraKichHoat(
-      value: false,
-      caiDatUuTien: true,
-    );
+    getTrangThaiKichHoatThanhPhan?.onVoidCaiDatKiemTraKichHoat(value: false, caiDatUuTien: true);
 
-    onVoidCaiDatPositionDx(
-      value:
-          getTrangThaiKichHoatThanhPhan
-              ?.getDiemToaDoThanhPhanHuyKichHoat
-              ?.getPositionDx,
-      caiDatUuTien: true,
-    );
-    onVoidCaiDatPositionDy(
-      value:
-          getTrangThaiKichHoatThanhPhan
-              ?.getDiemToaDoThanhPhanHuyKichHoat
-              ?.getPositionDy,
-      caiDatUuTien: true,
-    );
+    onVoidCaiDatPositionDx(value: getTrangThaiKichHoatThanhPhan?.getDiemToaDoThanhPhanHuyKichHoat?.getPositionDx, caiDatUuTien: true);
+    onVoidCaiDatPositionDy(value: getTrangThaiKichHoatThanhPhan?.getDiemToaDoThanhPhanHuyKichHoat?.getPositionDy, caiDatUuTien: true);
 
     ///
     return;
@@ -341,10 +269,7 @@ abstract class THANHPHANTICHHOPSPRITEANIMATIONVANBANTHUOCCAP
   }) {
     onSetGlobalStateManagementSystem(value: globalStateManagementSystem, caiDatUuTien: true);
     onVoidCaiDatGameController(value: gameController, caiDatUuTien: true);
-    onVoidCaiDatThanhPhanQuanLyThuocCapTrucTiep(
-      value: thanhPhanQuanLyThuocCapTrucTiep,
-      caiDatUuTien: true,
-    );
+    onVoidCaiDatThanhPhanQuanLyThuocCapTrucTiep(value: thanhPhanQuanLyThuocCapTrucTiep, caiDatUuTien: true);
     onVoidCaiDatSizeDx(value: sizeDx, caiDatUuTien: true);
     onVoidCaiDatSizeDy(value: sizeDy, caiDatUuTien: true);
     onVoidCaiDatPositionDx(value: positionDx, caiDatUuTien: true);
@@ -387,12 +312,8 @@ abstract class THANHPHANTICHHOPSPRITEANIMATIONVANBANTHUOCCAP
   /// TODO:
   /// -----
   SpriteAnimationHasVisibility? _spriteAnimationComponent;
-  SpriteAnimationHasVisibility? get getSpriteAnimationComponent =>
-      _spriteAnimationComponent;
-  Future<void> onCaiDatSpriteAnimationComponent({
-    required SpriteAnimationHasVisibility? value,
-    bool? caiDatUuTien,
-  }) async {
+  SpriteAnimationHasVisibility? get getSpriteAnimationComponent => _spriteAnimationComponent;
+  Future<void> onCaiDatSpriteAnimationComponent({required SpriteAnimationHasVisibility? value, bool? caiDatUuTien}) async {
     if (caiDatUuTien == true) {
       _spriteAnimationComponent = value;
     } else {
@@ -404,10 +325,7 @@ abstract class THANHPHANTICHHOPSPRITEANIMATIONVANBANTHUOCCAP
 
   CoreGameUIComponent? _thanhPhanGameUI;
   CoreGameUIComponent? get getThanhPhanGameUI => _thanhPhanGameUI;
-  Future<void> onCaiDatThanhPhanGameUI({
-    required CoreGameUIComponent? value,
-    bool? caiDatUuTien,
-  }) async {
+  Future<void> onCaiDatThanhPhanGameUI({required CoreGameUIComponent? value, bool? caiDatUuTien}) async {
     if (caiDatUuTien == true) {
       _thanhPhanGameUI = value;
     } else {
@@ -421,12 +339,8 @@ abstract class THANHPHANTICHHOPSPRITEANIMATIONVANBANTHUOCCAP
   /// TODO:
   /// -----
   THANHPHANVANBANTHUANTHUOCCAP? _thanhPhanVanBanThuan;
-  THANHPHANVANBANTHUANTHUOCCAP? get getThanhPhanVanBanThuan =>
-      _thanhPhanVanBanThuan;
-  Future<void> onCaiDatThanhPhanVanBanThuan({
-    required THANHPHANVANBANTHUANTHUOCCAP? value,
-    bool? caiDatUuTien,
-  }) async {
+  THANHPHANVANBANTHUANTHUOCCAP? get getThanhPhanVanBanThuan => _thanhPhanVanBanThuan;
+  Future<void> onCaiDatThanhPhanVanBanThuan({required THANHPHANVANBANTHUANTHUOCCAP? value, bool? caiDatUuTien}) async {
     if (caiDatUuTien == true) {
       _thanhPhanVanBanThuan = value;
     } else {
@@ -440,12 +354,8 @@ abstract class THANHPHANTICHHOPSPRITEANIMATIONVANBANTHUOCCAP
   /// TODO:
   /// -----
   THANHPHANVANBANSOHOCTHUOCCAP? _thanhPhanVanBanSoHoc;
-  THANHPHANVANBANSOHOCTHUOCCAP? get getThanhPhanVanBanSoHoc =>
-      _thanhPhanVanBanSoHoc;
-  Future<void> onCaiDatThanhPhanVanBanSoHoc({
-    required THANHPHANVANBANSOHOCTHUOCCAP? value,
-    bool? caiDatUuTien,
-  }) async {
+  THANHPHANVANBANSOHOCTHUOCCAP? get getThanhPhanVanBanSoHoc => _thanhPhanVanBanSoHoc;
+  Future<void> onCaiDatThanhPhanVanBanSoHoc({required THANHPHANVANBANSOHOCTHUOCCAP? value, bool? caiDatUuTien}) async {
     if (caiDatUuTien == true) {
       _thanhPhanVanBanSoHoc = value;
     } else {
@@ -458,38 +368,22 @@ abstract class THANHPHANTICHHOPSPRITEANIMATIONVANBANTHUOCCAP
   /// -----
   /// TODO: Add Comp Root
   /// -----
-  Future<void> onAddRoot({
-    required FlameGame? flameGame,
-    required Component? component,
-  }) async {
+  Future<void> onAddRoot({required FlameGame? flameGame, required Component? component}) async {
     /// -----
     /// TODO:
     /// -----
-    await Future.wait([
-      onAddComponent(
-        flameGame: null,
-        parentComponent: this,
-        childComponent: getSpriteAnimationComponent,
-      ).catchError((e) => null),
-    ]);
+    await Future.wait([onAddComponent(flameGame: null, parentComponent: this, childComponent: getSpriteAnimationComponent).catchError((e) => null)]);
 
-    if (getKiemTraVanBanThuan == true) {
-      await Future.wait([
-        onAddComponent(
-          flameGame: null,
-          parentComponent: this,
-          childComponent: getThanhPhanVanBanThuan,
-        ).catchError((e) => null),
-      ]);
-    } else if (getKiemTraVanBanThuan == false) {
-      await Future.wait([
-        onAddComponent(
-          flameGame: null,
-          parentComponent: this,
-          childComponent: getThanhPhanVanBanSoHoc,
-        ).catchError((e) => null),
-      ]);
-    }
+    // if (getKiemTraVanBanThuan == true) {
+    //   await Future.wait([onAddComponent(flameGame: null, parentComponent: this, childComponent: getThanhPhanVanBanThuan).catchError((e) => null)]);
+    // } else if (getKiemTraVanBanThuan == false) {
+    //   await Future.wait([onAddComponent(flameGame: null, parentComponent: this, childComponent: getThanhPhanVanBanSoHoc).catchError((e) => null)]);
+    // }
+
+    await Future.wait([
+      onAddComponent(flameGame: null, parentComponent: this, childComponent: getThanhPhanVanBanThuan).catchError((e) => null),
+      onAddComponent(flameGame: null, parentComponent: this, childComponent: getThanhPhanVanBanSoHoc).catchError((e) => null),
+    ]);
 
     /// -----
     /// TODO: Add Comp Root For SubCom
@@ -503,10 +397,7 @@ abstract class THANHPHANTICHHOPSPRITEANIMATIONVANBANTHUOCCAP
   /// -----
   /// TODO: Add Comp Root For SubCom
   /// -----
-  Future<void> onAddRootForSubCom({
-    required FlameGame? flameGame,
-    required Component? component,
-  }) async {
+  Future<void> onAddRootForSubCom({required FlameGame? flameGame, required Component? component}) async {
     ///
     return;
   }
@@ -514,11 +405,7 @@ abstract class THANHPHANTICHHOPSPRITEANIMATIONVANBANTHUOCCAP
   /// -----
   /// TODO:
   /// -----
-  Future<void> onAddComponent({
-    required FlameGame? flameGame,
-    required Component? parentComponent,
-    Component? childComponent,
-  }) async {
+  Future<void> onAddComponent({required FlameGame? flameGame, required Component? parentComponent, Component? childComponent}) async {
     try {
       if (flameGame != null) {
         if (childComponent != null && childComponent.isMounted == false) {
@@ -581,35 +468,11 @@ abstract class THANHPHANTICHHOPSPRITEANIMATIONVANBANTHUOCCAP
     await onCapNhatTrangThaiKichHoatThanhPhan();
 
     if (getTrangThaiKichHoatThanhPhan?.getKiemTraKichHoat == true) {
-      onVoidCaiDatPositionDx(
-        value:
-            getTrangThaiKichHoatThanhPhan
-                ?.getDiemToaDoThanhPhanKichHoat
-                ?.getPositionDx,
-        caiDatUuTien: true,
-      );
-      onVoidCaiDatPositionDy(
-        value:
-            getTrangThaiKichHoatThanhPhan
-                ?.getDiemToaDoThanhPhanKichHoat
-                ?.getPositionDy,
-        caiDatUuTien: true,
-      );
+      onVoidCaiDatPositionDx(value: getTrangThaiKichHoatThanhPhan?.getDiemToaDoThanhPhanKichHoat?.getPositionDx, caiDatUuTien: true);
+      onVoidCaiDatPositionDy(value: getTrangThaiKichHoatThanhPhan?.getDiemToaDoThanhPhanKichHoat?.getPositionDy, caiDatUuTien: true);
     } else if (getTrangThaiKichHoatThanhPhan?.getKiemTraKichHoat == false) {
-      onVoidCaiDatPositionDx(
-        value:
-            getTrangThaiKichHoatThanhPhan
-                ?.getDiemToaDoThanhPhanHuyKichHoat
-                ?.getPositionDx,
-        caiDatUuTien: true,
-      );
-      onVoidCaiDatPositionDy(
-        value:
-            getTrangThaiKichHoatThanhPhan
-                ?.getDiemToaDoThanhPhanHuyKichHoat
-                ?.getPositionDy,
-        caiDatUuTien: true,
-      );
+      onVoidCaiDatPositionDx(value: getTrangThaiKichHoatThanhPhan?.getDiemToaDoThanhPhanHuyKichHoat?.getPositionDx, caiDatUuTien: true);
+      onVoidCaiDatPositionDy(value: getTrangThaiKichHoatThanhPhan?.getDiemToaDoThanhPhanHuyKichHoat?.getPositionDy, caiDatUuTien: true);
     }
 
     /// -----
@@ -626,15 +489,7 @@ abstract class THANHPHANTICHHOPSPRITEANIMATIONVANBANTHUOCCAP
   /// -----
   Future<void> onCaiDatChiTietThanhPhanGameUI();
   Future<void> onCapNhatChiTietThanhPhanGameUI() async {
-    await Future.wait([
-      getSpriteAnimationComponent
-              ?.onCaiDatThanhPhanGameUI(
-                value: getThanhPhanGameUI,
-                caiDatUuTien: true,
-              )
-              .catchError((e) => null) ??
-          onReportRootIssue(nameFunction: ''),
-    ]);
+    await Future.wait([getSpriteAnimationComponent?.onCaiDatThanhPhanGameUI(value: getThanhPhanGameUI, caiDatUuTien: true).catchError((e) => null) ?? onReportRootIssue(nameFunction: '')]);
   }
 
   /// -----
@@ -653,10 +508,7 @@ abstract class THANHPHANTICHHOPSPRITEANIMATIONVANBANTHUOCCAP
     /// TODO:
     /// -----
     await Future.wait([
-      onCaiDatTrangThaiKichHoatThanhPhan(
-        value: TRANGTHAIKICHHOATTHANHPHAN(),
-        caiDatUuTien: true,
-      ).catchError((e) => null),
+      onCaiDatTrangThaiKichHoatThanhPhan(value: TRANGTHAIKICHHOATTHANHPHAN(), caiDatUuTien: true).catchError((e) => null),
 
       onCaiDatSpriteAnimationComponent(
         value: SpriteAnimationHasVisibility(
@@ -741,10 +593,7 @@ abstract class THANHPHANTICHHOPSPRITEANIMATIONVANBANTHUOCCAP
   /// -----
   @override
   Future<void> onSetupRootForSubCom() async {
-    await Future.wait([
-      getTrangThaiKichHoatThanhPhan?.onSetupRoot().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: 'onSetupRootForSubCom'),
-    ]);
+    await Future.wait([getTrangThaiKichHoatThanhPhan?.onSetupRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onSetupRootForSubCom')]);
 
     ///
     return;
@@ -755,10 +604,7 @@ abstract class THANHPHANTICHHOPSPRITEANIMATIONVANBANTHUOCCAP
   /// -----
   @override
   Future<void> onInitRootForSubCom() async {
-    await Future.wait([
-      getTrangThaiKichHoatThanhPhan?.onInitRoot().catchError((e) => null) ??
-          onReportRootIssue(nameFunction: 'onSetupRootForSubCom'),
-    ]);
+    await Future.wait([getTrangThaiKichHoatThanhPhan?.onInitRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onSetupRootForSubCom')]);
 
     ///
     return;

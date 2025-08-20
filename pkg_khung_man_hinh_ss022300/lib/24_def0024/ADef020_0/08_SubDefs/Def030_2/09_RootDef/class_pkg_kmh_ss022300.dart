@@ -160,7 +160,7 @@ class QUANLYTHANHPHANNUTBAMTHUOCCAP extends QUANLYTHANHPHANNUTBAMTHUOCCAPCOBAN {
   /// -----
   /// TODO:
   /// -----
-  void onThucThiChonTabSS010() async {
+  Future<void> onThucThiChonTabSS010() async {
     getNutBamChuyenTabSS010?.onVoidKichHoatHanhVi();
     getNutBamChuyenTabSS020?.onVoidHuyKichHoatHanhVi();
     getNutBamChuyenTabSS030?.onVoidHuyKichHoatHanhVi();
@@ -178,7 +178,7 @@ class QUANLYTHANHPHANNUTBAMTHUOCCAP extends QUANLYTHANHPHANNUTBAMTHUOCCAPCOBAN {
   /// -----
   /// TODO:
   /// -----
-  void onThucThiChonTabSS020() async {
+  Future<void> onThucThiChonTabSS020() async {
     getNutBamChuyenTabSS010?.onVoidHuyKichHoatHanhVi();
     getNutBamChuyenTabSS020?.onVoidKichHoatHanhVi();
     getNutBamChuyenTabSS030?.onVoidHuyKichHoatHanhVi();
@@ -198,7 +198,7 @@ class QUANLYTHANHPHANNUTBAMTHUOCCAP extends QUANLYTHANHPHANNUTBAMTHUOCCAPCOBAN {
   /// -----
   /// TODO:
   /// -----
-  void onThucThiChonTabSS030() async {
+  Future<void> onThucThiChonTabSS030() async {
     getNutBamChuyenTabSS010?.onVoidHuyKichHoatHanhVi();
     getNutBamChuyenTabSS020?.onVoidHuyKichHoatHanhVi();
     getNutBamChuyenTabSS030?.onVoidKichHoatHanhVi();
@@ -300,8 +300,8 @@ class QUANLYTHANHPHANNUTBAMTHUOCCAP extends QUANLYTHANHPHANNUTBAMTHUOCCAPCOBAN {
           positionDy: sizeDyKhungManHinh - (donViChieuRong * 2.0),
           onTapCancelEvent: null,
           onTapDownEvent: null,
-          onTapUpEvent: () {
-            onThucThiChonTabSS010();
+          onTapUpEvent: () async {
+            await onThucThiChonTabSS010();
           },
         ),
         caiDatUuTien: true,
@@ -317,8 +317,8 @@ class QUANLYTHANHPHANNUTBAMTHUOCCAP extends QUANLYTHANHPHANNUTBAMTHUOCCAPCOBAN {
           positionDy: sizeDyKhungManHinh - (donViChieuRong * 2.0),
           onTapCancelEvent: null,
           onTapDownEvent: null,
-          onTapUpEvent: () {
-            onThucThiChonTabSS020();
+          onTapUpEvent: () async {
+            await onThucThiChonTabSS020();
           },
         ),
         caiDatUuTien: true,
@@ -334,8 +334,8 @@ class QUANLYTHANHPHANNUTBAMTHUOCCAP extends QUANLYTHANHPHANNUTBAMTHUOCCAPCOBAN {
           positionDy: sizeDyKhungManHinh - (donViChieuRong * 2.0),
           onTapCancelEvent: null,
           onTapDownEvent: null,
-          onTapUpEvent: () {
-            onThucThiChonTabSS030();
+          onTapUpEvent: () async {
+            await onThucThiChonTabSS030();
           },
         ),
         caiDatUuTien: true,
@@ -352,11 +352,11 @@ class QUANLYTHANHPHANNUTBAMTHUOCCAP extends QUANLYTHANHPHANNUTBAMTHUOCCAPCOBAN {
           positionDy: sizeDyKhungManHinh - (donViChieuRong * 2.0),
           onTapCancelEvent: null,
           onTapDownEvent: null,
-          onTapUpEvent: () {
+          onTapUpEvent: () async {
             if (getNutBamChuyenTabSS020?.getTrangThaiKichHoatThanhPhan?.getKiemTraKichHoat == true) {
-              onThucThiChonTabSS020();
+              await onThucThiChonTabSS020();
             } else if (getNutBamChuyenTabSS030?.getTrangThaiKichHoatThanhPhan?.getKiemTraKichHoat == true) {
-              onThucThiChonTabSS030();
+              await onThucThiChonTabSS030();
             }
           },
         ),
@@ -374,8 +374,22 @@ class QUANLYTHANHPHANNUTBAMTHUOCCAP extends QUANLYTHANHPHANNUTBAMTHUOCCAPCOBAN {
           positionDy: sizeDyKhungManHinh - (donViChieuRong * 2.0),
           onTapCancelEvent: null,
           onTapDownEvent: null,
-          onTapUpEvent: () {
+          onTapUpEvent: () async {
             // onThucThiChonTabSS020();
+
+            if (getGlobalStateManagementSystem
+                ?.getChienDauCoTongQuat
+                ?.getChienDauCoTrucTiepThucThiChienDau
+                ?.getTrangThai
+                ?.getMoHinh
+                ?.getThuocTinhSoHuuChienDauCo
+                ?.getSoHuuTheoThoiGianVinhVien
+                ?.getTrangThaiSoHuuTheoThoiGianVinhVien
+                ?.getSoHuu ==
+            false) {
+              await onThucThiChonTabSS010();
+            }
+
           },
         ),
         caiDatUuTien: true,
@@ -473,7 +487,7 @@ class QUANLYTHANHPHANNUTBAMTHUOCCAP extends QUANLYTHANHPHANNUTBAMTHUOCCAPCOBAN {
     await getNutBamChuyenTabSS030?.onHuyKichHoatThanhPhanThuocCap();
 
     /// Chon Tab 1 Làm Mặc Định
-    onThucThiChonTabSS010();
+    await onThucThiChonTabSS010();
   }
 
   @override
@@ -482,6 +496,6 @@ class QUANLYTHANHPHANNUTBAMTHUOCCAP extends QUANLYTHANHPHANNUTBAMTHUOCCAPCOBAN {
     await getNutBamChuyenTabSS030?.onKichHoatThanhPhanThuocCap(kichHoatUuTien: true);
 
     /// Chon Tab 1 Làm Mặc Định
-    onThucThiChonTabSS010();
+    await onThucThiChonTabSS010();
   }
 }

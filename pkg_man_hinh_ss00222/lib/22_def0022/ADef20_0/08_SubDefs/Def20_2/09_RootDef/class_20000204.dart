@@ -1,3 +1,4 @@
+import 'dart:ui';
 import 'dart:async';
 import 'package:flame/components.dart';
 import 'package:pkg_dinh_nghia_ss022/pkg_dinh_nghia_ss022_exp.dart';
@@ -60,14 +61,34 @@ class CHIENDAUCOCHONCHIDINH extends SpriteAnimationCoBan {
   @override
   bool onVoidKiemTraTanXuatCapNhat() {
     if (getTrangThaiTongQuat?.getThietLapTongQuat?.onKiemTraChoPhepCapNhatTheoTocDoKhungHinh(
-          maDinhDanh: '[SPRITE_ANIMATION_CHIEN_DAU_CO]',
-          chiSoTangTienGiamTanXuatCapNhat: getBienTangTienGiamTanXuatCapNhat,
-        ) ==
+      maDinhDanh: '[SPRITE_ANIMATION_CHIEN_DAU_CO]',
+      chiSoTangTienGiamTanXuatCapNhat: getBienTangTienGiamTanXuatCapNhat,
+    ) ==
         true) {
       return true;
     }
 
     return false;
+  }
+
+  @override
+  void renderTree(Canvas canvas) {
+    // import 'dart:ui';
+    try {
+      if (getKiemTraHienThi == true && animation != null) {
+        super.renderTree(canvas);
+      }
+    } catch (e) {
+      return;
+    }
+
+    return;
+  }
+
+  void onGiaiPhongTaiNguyen() {
+    animation = null;
+
+    return;
   }
 
   @override
@@ -79,7 +100,7 @@ class CHIENDAUCOCHONCHIDINH extends SpriteAnimationCoBan {
       return;
     }
 
-    getTrangThaiTongQuat?.getChienDauCoTongQuat?.getDieuKhienDiChuyenChienDauCo?.getViTriChienDauCo?.getHuongBay?.caiDatDinhHuongTheoViTriXuatPhatNguyenBanChienDauCo();
+    // getTrangThaiTongQuat?.getChienDauCoTongQuat?.getDieuKhienDiChuyenChienDauCo?.getViTriChienDauCo?.getHuongBay?.caiDatDinhHuongTheoViTriXuatPhatNguyenBanChienDauCo();
 
     // await capNhatTrangThaiMoHinh();
 

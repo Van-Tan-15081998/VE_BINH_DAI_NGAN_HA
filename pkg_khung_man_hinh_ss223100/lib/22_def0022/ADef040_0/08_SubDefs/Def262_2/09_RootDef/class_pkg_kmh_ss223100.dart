@@ -60,70 +60,91 @@ class VANBANGIATRICAPDOCHIENDAUCOCHONCHIDINH extends THANHPHANVANBANTHUANTHUOCCA
     // TODO: implement update
     super.update(dt);
 
-    if (getGiaTriChiSoVanHanh != getTrangThai
-        ?.getMoHinh
-        ?.getThuocTinhChienDauTheoQuyChuan
-        ?.getThuocTinhCapDoChienDauCoTheoQuyChuan
-        ?.getCapDoChienDauCoTheoQuyChuanHienHanh
-        ?.getCapDoChuanChinhThuc) {
-      onCaiDatGiaTriChiSoVanHanh(value: getTrangThai
-          ?.getMoHinh
-          ?.getThuocTinhChienDauTheoQuyChuan
-          ?.getThuocTinhCapDoChienDauCoTheoQuyChuan
-          ?.getCapDoChienDauCoTheoQuyChuanHienHanh
-          ?.getCapDoChuanChinhThuc
-          ?.getMaDinhDanh ?? '[CAP_DO_SS01]',
-          caiDatUuTien: true
+    if (getGiaTriChiSoVanHanh != getTrangThai?.getMoHinh?.getThuocTinhChienDauTheoQuyChuan?.getThuocTinhCapDoChienDauCoTheoQuyChuan?.getCapDoChienDauCoTheoQuyChuanHienHanh?.getCapDoChuanChinhThuc?.getMaDinhDanh) {
+      onCaiDatGiaTriChiSoVanHanh(
+        value:
+            getTrangThai?.getMoHinh?.getThuocTinhChienDauTheoQuyChuan?.getThuocTinhCapDoChienDauCoTheoQuyChuan?.getCapDoChienDauCoTheoQuyChuanHienHanh?.getCapDoChuanChinhThuc?.getMaDinhDanh ??
+            '[CAP_DO_SS01]',
+        caiDatUuTien: true,
       );
 
       switch (getGiaTriChiSoVanHanh ?? '[CAP_DO_SS01]') {
-        case '[CAP_DO_SS01]': {
-          onVoidCaiDatVanBan(value: '1/15', caiDatUuTien: true);
-        } break;
-        case '[CAP_DO_SS02]': {
-          onVoidCaiDatVanBan(value: '2/15', caiDatUuTien: true);
-        } break;
-        case '[CAP_DO_SS03]': {
-          onVoidCaiDatVanBan(value: '3/15', caiDatUuTien: true);
-        } break;
-        case '[CAP_DO_SS04]': {
-          onVoidCaiDatVanBan(value: '4/15', caiDatUuTien: true);
-        } break;
-        case '[CAP_DO_SS05]': {
-          onVoidCaiDatVanBan(value: '5/15', caiDatUuTien: true);
-        } break;
-        case '[CAP_DO_SS06]': {
-          onVoidCaiDatVanBan(value: '6/15', caiDatUuTien: true);
-        } break;
-        case '[CAP_DO_SS07]': {
-          onVoidCaiDatVanBan(value: '7/15', caiDatUuTien: true);
-        } break;
-        case '[CAP_DO_SS08]': {
-          onVoidCaiDatVanBan(value: '8/15', caiDatUuTien: true);
-        } break;
-        case '[CAP_DO_SS09]': {
-          onVoidCaiDatVanBan(value: '9/15', caiDatUuTien: true);
-        } break;
-        case '[CAP_DO_SS10]': {
-          onVoidCaiDatVanBan(value: '10/15', caiDatUuTien: true);
-        } break;
-        case '[CAP_DO_SS11]': {
-          onVoidCaiDatVanBan(value: '11/15', caiDatUuTien: true);
-        } break;
-        case '[CAP_DO_SS12]': {
-          onVoidCaiDatVanBan(value: '12/15', caiDatUuTien: true);
-        } break;
-        case '[CAP_DO_SS13]': {
-          onVoidCaiDatVanBan(value: '13/15', caiDatUuTien: true);
-        } break;
-        case '[CAP_DO_SS14]': {
-          onVoidCaiDatVanBan(value: '14/15', caiDatUuTien: true);
-        } break;
-        case '[CAP_DO_SS15]': {
-          onVoidCaiDatVanBan(value: '15/15', caiDatUuTien: true);
-        } break;
+        case '[CAP_DO_SS01]':
+          {
+            onVoidCaiDatVanBan(value: '1/15', caiDatUuTien: true);
+          }
+          break;
+        case '[CAP_DO_SS02]':
+          {
+            onVoidCaiDatVanBan(value: '2/15', caiDatUuTien: true);
+          }
+          break;
+        case '[CAP_DO_SS03]':
+          {
+            onVoidCaiDatVanBan(value: '3/15', caiDatUuTien: true);
+          }
+          break;
+        case '[CAP_DO_SS04]':
+          {
+            onVoidCaiDatVanBan(value: '4/15', caiDatUuTien: true);
+          }
+          break;
+        case '[CAP_DO_SS05]':
+          {
+            onVoidCaiDatVanBan(value: '5/15', caiDatUuTien: true);
+          }
+          break;
+        case '[CAP_DO_SS06]':
+          {
+            onVoidCaiDatVanBan(value: '6/15', caiDatUuTien: true);
+          }
+          break;
+        case '[CAP_DO_SS07]':
+          {
+            onVoidCaiDatVanBan(value: '7/15', caiDatUuTien: true);
+          }
+          break;
+        case '[CAP_DO_SS08]':
+          {
+            onVoidCaiDatVanBan(value: '8/15', caiDatUuTien: true);
+          }
+          break;
+        case '[CAP_DO_SS09]':
+          {
+            onVoidCaiDatVanBan(value: '9/15', caiDatUuTien: true);
+          }
+          break;
+        case '[CAP_DO_SS10]':
+          {
+            onVoidCaiDatVanBan(value: '10/15', caiDatUuTien: true);
+          }
+          break;
+        case '[CAP_DO_SS11]':
+          {
+            onVoidCaiDatVanBan(value: '11/15', caiDatUuTien: true);
+          }
+          break;
+        case '[CAP_DO_SS12]':
+          {
+            onVoidCaiDatVanBan(value: '12/15', caiDatUuTien: true);
+          }
+          break;
+        case '[CAP_DO_SS13]':
+          {
+            onVoidCaiDatVanBan(value: '13/15', caiDatUuTien: true);
+          }
+          break;
+        case '[CAP_DO_SS14]':
+          {
+            onVoidCaiDatVanBan(value: '14/15', caiDatUuTien: true);
+          }
+          break;
+        case '[CAP_DO_SS15]':
+          {
+            onVoidCaiDatVanBan(value: '15/15', caiDatUuTien: true);
+          }
+          break;
       }
-
     }
   }
 }

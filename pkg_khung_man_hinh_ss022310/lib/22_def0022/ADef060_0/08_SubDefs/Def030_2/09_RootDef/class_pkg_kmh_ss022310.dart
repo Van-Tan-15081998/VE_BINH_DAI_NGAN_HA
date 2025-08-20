@@ -22,7 +22,10 @@ class CARDCHIENDAUCOCHONCHIDINH extends THANHPHANNUTBAMTICHHOPTHUOCCAP {
     required super.onTapCancelEvent, //
     required super.onTapDownEvent, //
     required super.onTapUpEvent, //
-  });
+  }) {
+    // debugMode = true;
+    // priority = 2;
+  }
 
   /// -----
   /// TODO:
@@ -46,6 +49,8 @@ class CARDCHIENDAUCOCHONCHIDINH extends THANHPHANNUTBAMTICHHOPTHUOCCAP {
     _spriteChienDauCoChonChiDinh = CHIENDAUCOCHONCHIDINH(trangThaiTongQuat: getGlobalStateManagementSystem, capNhatViTri: false);
 
     if (_spriteChienDauCoChonChiDinh != null && _spriteChienDauCoChonChiDinh?.isMounted == false) {
+      _spriteChienDauCoChonChiDinh?.onCaiDatParentComponent(value: this);
+
       add(_spriteChienDauCoChonChiDinh!);
       _spriteChienDauCoChonChiDinh?.position.setValues((getSizeDx ?? 0) / 2, (getSizeDy ?? 0) / 2);
     }
@@ -64,5 +69,12 @@ class CARDCHIENDAUCOCHONCHIDINH extends THANHPHANNUTBAMTICHHOPTHUOCCAP {
     await onCapNhatChiTietThanhPhanGameUI();
 
     return;
+  }
+
+  @override
+  void update(double dt) {
+    // TODO: implement update
+    super.update(dt);
+
   }
 }

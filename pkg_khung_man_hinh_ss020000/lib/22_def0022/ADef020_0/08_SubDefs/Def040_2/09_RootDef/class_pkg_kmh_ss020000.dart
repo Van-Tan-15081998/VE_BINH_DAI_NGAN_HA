@@ -13,7 +13,7 @@ import 'package:pkg_khung_man_hinh_ss020000/pkg_khung_man_hinh_ss020000_exp.dart
 /// TODO: Thành Phần Màn Hình Drag Thuộc Cấp
 /// -----
 // abstract class THANHPHANMANHINHDRAGTHUOCCAPCOBAN extends PositionComponent with DragCallbacks, HasGameRef, CAUTRUCTHUCTHICOBAN, KICHBANDIEUKHIENTHUOCCAPCOBAN {
-abstract class THANHPHANMANHINHDRAGTHUOCCAPCOBAN extends PositionComponent with DragCallbacks, CAUTRUCTHUCTHICOBAN, KICHBANDIEUKHIENTHUOCCAPCOBAN {
+abstract class THANHPHANMANHINHDRAGTHUOCCAPCOBAN extends PositionComponent with HasVisibility, DragCallbacks, CAUTRUCTHUCTHICOBAN, KICHBANDIEUKHIENTHUOCCAPCOBAN {
   /// -----
   /// TODO:
   /// -----
@@ -190,10 +190,14 @@ abstract class THANHPHANMANHINHDRAGTHUOCCAPCOBAN extends PositionComponent with 
   }
 
   Future<void> onActiveShow() async {
+    await Future.delayed(Duration(milliseconds: 100));
     await onAddToParent();
+    await Future.delayed(Duration(milliseconds: 100));
+    isVisible = true;
   }
 
   Future<void> onInActiveShow() async {
+    isVisible = false;
     await onRemoveFromParent();
   }
 

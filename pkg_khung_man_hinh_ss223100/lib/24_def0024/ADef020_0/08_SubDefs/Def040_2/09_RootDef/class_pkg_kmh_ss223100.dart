@@ -30,6 +30,7 @@ import 'package:pkg_khung_man_hinh_ss223100/22_def0022/ADef040_0/08_SubDefs/Def6
 import 'package:pkg_khung_man_hinh_ss223100/22_def0022/ADef040_0/08_SubDefs/Def680_2/09_RootDef/class_pkg_kmh_ss223100.dart';
 
 import 'package:pkg_khung_man_hinh_ss223100/22_def0022/ADef040_0/08_SubDefs/Def700_2/09_RootDef/class_pkg_kmh_ss223100.dart';
+import 'package:pkg_khung_man_hinh_ss223100/22_def0022/ADef040_0/08_SubDefs/Def720_2/09_RootDef/class_pkg_kmh_ss223100.dart';
 
 /// -----
 /// TODO: Quản Lý Thành Phần Văn Bản Thuộc Cấp
@@ -439,6 +440,19 @@ class QUANLYTHANHPHANVANBANTHUOCCAP extends QUANLYTHANHPHANVANBANTHUOCCAPCOBAN {
     return;
   }
 
+  VANBANGIATRICHISODIEUKIENNANGCAPCHIENDAUCO? _vanBanGiaTriChiSoDieuKienNangCapChienDauCo;
+  VANBANGIATRICHISODIEUKIENNANGCAPCHIENDAUCO? get getVanBanGiaTriChiSoDieuKienNangCapChienDauCo => _vanBanGiaTriChiSoDieuKienNangCapChienDauCo;
+  Future<void> onCaiDatVanBanGiaTriChiSoDieuKienNangCapChienDauCo({required VANBANGIATRICHISODIEUKIENNANGCAPCHIENDAUCO? value, bool? caiDatUuTien}) async {
+    if (caiDatUuTien == true) {
+      _vanBanGiaTriChiSoDieuKienNangCapChienDauCo = value;
+    } else {
+      _vanBanGiaTriChiSoDieuKienNangCapChienDauCo ??= value;
+    }
+
+    ///
+    return;
+  }
+
   /// -----
   /// TODO: Add Comp Root
   /// -----
@@ -488,6 +502,7 @@ class QUANLYTHANHPHANVANBANTHUOCCAP extends QUANLYTHANHPHANVANBANTHUOCCAPCOBAN {
         onAddComponent(flameGame: null, parentComponent: component, childComponent: getVanBanGiaTriChiSoSatThuongBaoKichTenLua).catchError((e) => null),
 
         onAddComponent(flameGame: null, parentComponent: component, childComponent: getVanBanDieuKienNangCapChienDauCo).catchError((e) => null),
+        onAddComponent(flameGame: null, parentComponent: component, childComponent: getVanBanGiaTriChiSoDieuKienNangCapChienDauCo).catchError((e) => null),
 
       ]);
 
@@ -552,6 +567,7 @@ class QUANLYTHANHPHANVANBANTHUOCCAP extends QUANLYTHANHPHANVANBANTHUOCCAPCOBAN {
         getVanBanGiaTriChiSoSatThuongBaoKichTenLua?.onAddRoot(flameGame: null, component: component).catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
 
         getVanBanDieuKienNangCapChienDauCo?.onAddRoot(flameGame: null, component: component).catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+        getVanBanGiaTriChiSoDieuKienNangCapChienDauCo?.onAddRoot(flameGame: null, component: component).catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
 
       ]);
     } catch (e) {
@@ -933,6 +949,19 @@ class QUANLYTHANHPHANVANBANTHUOCCAP extends QUANLYTHANHPHANVANBANTHUOCCAPCOBAN {
           caiDatUuTien: true,
         ).catchError((e) => null),
 
+        onCaiDatVanBanGiaTriChiSoDieuKienNangCapChienDauCo(
+          value: VANBANGIATRICHISODIEUKIENNANGCAPCHIENDAUCO(
+            globalStateManagementSystem: getGlobalStateManagementSystem,
+            gameController: getGameController,
+            thanhPhanQuanLyThuocCapTrucTiep: getThanhPhanQuanLyThuocCapTrucTiep,
+            sizeDx: sizeDxKhungManHinh / 2,
+            sizeDy: 30,
+            positionDx: sizeDxKhungManHinh / 2,
+            positionDy: sizeDyKhungManHinh - (donViChieuRong * 1.5),
+          ),
+          caiDatUuTien: true,
+        ).catchError((e) => null),
+
       ]);
 
       /// -----
@@ -998,6 +1027,7 @@ class QUANLYTHANHPHANVANBANTHUOCCAP extends QUANLYTHANHPHANVANBANTHUOCCAPCOBAN {
         getVanBanGiaTriChiSoSatThuongBaoKichTenLua?.onSetupRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
 
         getVanBanDieuKienNangCapChienDauCo?.onSetupRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+        getVanBanGiaTriChiSoDieuKienNangCapChienDauCo?.onSetupRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
 
       ]);
     } catch (e) {
@@ -1060,6 +1090,7 @@ class QUANLYTHANHPHANVANBANTHUOCCAP extends QUANLYTHANHPHANVANBANTHUOCCAPCOBAN {
         getVanBanGiaTriChiSoSatThuongBaoKichTenLua?.onInitRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
 
         getVanBanDieuKienNangCapChienDauCo?.onInitRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
+        getVanBanGiaTriChiSoDieuKienNangCapChienDauCo?.onInitRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: ''),
 
       ]);
     } catch (e) {

@@ -1056,7 +1056,7 @@ class QUANLYTHANHPHANMANHINHKHUNGMANHINHCHINH extends QUANLYTHANHPHANMANHINHTHUO
       await getGameController?.onGiaiPhongTaiNguyenMaster(
         onThucThiHoanTat: () async {
           /// TODO:
-          getGlobalStateManagementSystem?.getChienDauCoTongQuat?.getChiDinhChienDauCoThucThiChienDau?.getTrangThai?.getSpriteChienDauCo?.animation = null;
+          getGlobalStateManagementSystem?.getChienDauCoTongQuat?.getChiDinhChienDauCoThucThiChienDau?.getTrangThai?.getSpriteChienDauCo?.onGiaiPhongTaiNguyen();
 
           getGlobalStateManagementSystem?.onGetEntityResourceManagement?.getQuanLyTrangThaiHangarPhuongTien?.getDanhSachPhuongTienTaiTaiNguyen.clear();
 

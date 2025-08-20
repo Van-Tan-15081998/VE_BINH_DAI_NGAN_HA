@@ -83,6 +83,9 @@ class NUTBAMSS030000SS010 extends THANHPHANNUTBAMTHUOCCAPTHUANKICHHOAT {
       if (isVisible == false) {
         isVisible = true;
       }
+
+
+
     } else {
       if (isVisible == true) {
         isVisible = false;

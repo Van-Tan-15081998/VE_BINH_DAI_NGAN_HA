@@ -244,6 +244,9 @@ class THANHPHANVANBANTHUANTHUOCCAP extends TextComponent with HasVisibility, Cau
         case '[AnchorCenterRight]': {
           anchor = Anchor.centerRight;
         } break;
+        case '[AnchorBottomCenter]': {
+          anchor = Anchor.bottomCenter;
+        } break;
       }
 
     } else {

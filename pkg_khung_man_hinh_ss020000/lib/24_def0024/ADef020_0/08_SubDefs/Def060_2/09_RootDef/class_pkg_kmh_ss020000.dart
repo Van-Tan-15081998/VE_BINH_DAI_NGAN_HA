@@ -167,6 +167,8 @@ Future<void> onAddComponent({required FlameGame? flameGame, required Component? 
             childComponent.onCaiDatFlameGameParentComponent(value: flameGame);
           } else if (childComponent is THANHPHANNUTBAMTHUOCCAPTHUANKICHHOAT) {
             childComponent.onCaiDatFlameGameParentComponent(value: flameGame);
+          } else if (childComponent is THANHPHANNUTBAMTICHHOPTHUOCCAP) {
+            childComponent.onCaiDatFlameGameParentComponent(value: flameGame);
           } else if (childComponent is THANHPHANVANBANTHUANTHUOCCAP) {
             childComponent.onCaiDatFlameGameParentComponent(value: flameGame);
           } else if (childComponent is THANHPHANVANBANSOHOCTHUOCCAP) {
@@ -194,6 +196,8 @@ Future<void> onAddComponent({required FlameGame? flameGame, required Component? 
           } else if (childComponent is THANHPHANMANHINHDRAGTHUOCCAPCOBAN) {
             childComponent.onCaiDatParentComponent(value: parentComponent);
           } else if (childComponent is THANHPHANNUTBAMTHUOCCAPTHUANKICHHOAT) {
+            childComponent.onCaiDatParentComponent(value: parentComponent);
+          } else if (childComponent is THANHPHANNUTBAMTICHHOPTHUOCCAP) {
             childComponent.onCaiDatParentComponent(value: parentComponent);
           } else if (childComponent is THANHPHANVANBANTHUANTHUOCCAP) {
             childComponent.onCaiDatParentComponent(value: parentComponent);

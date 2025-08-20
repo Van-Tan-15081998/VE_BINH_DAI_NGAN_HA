@@ -5,11 +5,11 @@ import 'package:pkg_khung_man_hinh_ss020000/pkg_khung_man_hinh_ss020000_exp.dart
 /// -----
 /// TODO: Văn Bản Súng Chính Chiến Đấu Cơ Chọn Chỉ Định
 /// -----
-class VANBANDIEUKIENNANGCAPCHIENDAUCO extends THANHPHANVANBANTHUANTHUOCCAP {
+class VANBANGIATRICHISODIEUKIENNANGCAPCHIENDAUCO extends THANHPHANVANBANTHUANTHUOCCAP {
   /// -----
   /// TODO:
   /// -----
-  VANBANDIEUKIENNANGCAPCHIENDAUCO({
+  VANBANGIATRICHISODIEUKIENNANGCAPCHIENDAUCO({
     required super.globalStateManagementSystem,
     required super.gameController,
     required super.thanhPhanQuanLyThuocCapTrucTiep,
@@ -31,9 +31,9 @@ class VANBANDIEUKIENNANGCAPCHIENDAUCO extends THANHPHANVANBANTHUANTHUOCCAP {
     return;
   }
 
-  double? _giaTriChiSoVanHanh;
-  double? get getGiaTriChiSoVanHanh => _giaTriChiSoVanHanh;
-  Future<void> onCaiDatGiaTriChiSoVanHanh({required double? value, bool? caiDatUuTien}) async {
+  int? _giaTriChiSoVanHanh;
+  int? get getGiaTriChiSoVanHanh => _giaTriChiSoVanHanh;
+  Future<void> onCaiDatGiaTriChiSoVanHanh({required int? value, bool? caiDatUuTien}) async {
     if (caiDatUuTien == true) {
       _giaTriChiSoVanHanh = value;
     } else {
@@ -46,7 +46,7 @@ class VANBANDIEUKIENNANGCAPCHIENDAUCO extends THANHPHANVANBANTHUANTHUOCCAP {
 
   @override
   Future<void> onCaiDatChiTietThanhPhanVanBan() async {
-    onVoidCaiDatVanBan(value: 'Phí nâng cấp', caiDatUuTien: true);
+    onVoidCaiDatVanBan(value: '', caiDatUuTien: true);
     onVoidCaiDatAnchor(value: '[AnchorCenter]', caiDatUuTien: true);
 
     return;
@@ -62,7 +62,7 @@ class VANBANDIEUKIENNANGCAPCHIENDAUCO extends THANHPHANVANBANTHUANTHUOCCAP {
     /// -----
     await super.onInitRoot();
 
-    onCaiDatPhongCachVanBan(color: Color(0xFF91E1FB), fontSize: 13, fontWeight: FontWeight.bold);
+    onCaiDatPhongCachVanBan(color: Color(0xFFF7F4BF), fontSize: 15, fontWeight: FontWeight.bold);
 
     caiDatTuyChinhTextRenderer = true;
 
@@ -80,8 +80,34 @@ class VANBANDIEUKIENNANGCAPCHIENDAUCO extends THANHPHANVANBANTHUANTHUOCCAP {
         onVoidCaiDatVanBan(value: '', caiDatUuTien: true);
       }
     } else if (getTrangThai?.getMoHinh?.getThuocTinhSoHuuChienDauCo?.getSoHuuTheoThoiGianVinhVien?.getTrangThaiSoHuuTheoThoiGianVinhVien?.getSoHuu == true) {
-      if (getVanBan?.isNotEmpty == false) {
-        onVoidCaiDatVanBan(value: 'Phí nâng cấp', caiDatUuTien: true);
+      if (getGiaTriChiSoVanHanh !=
+          getTrangThai
+              ?.getMoHinh
+              ?.getThuocTinhChienDauTheoQuyChuan
+              ?.getThuocTinhCapDoChienDauCoTheoQuyChuan
+              ?.getCapDoChienDauCoTheoQuyChuanHienHanh
+              ?.getCapDoNoiSuyTiepTheo
+              ?.getDieuKienNangCap
+              ?.getGoiTaiNguyenThanhToan
+              ?.getDonViSoLuong
+              ?.getTongSoLuong) {
+        onCaiDatGiaTriChiSoVanHanh(
+          value:
+              getTrangThai
+                  ?.getMoHinh
+                  ?.getThuocTinhChienDauTheoQuyChuan
+                  ?.getThuocTinhCapDoChienDauCoTheoQuyChuan
+                  ?.getCapDoChienDauCoTheoQuyChuanHienHanh
+                  ?.getCapDoNoiSuyTiepTheo
+                  ?.getDieuKienNangCap
+                  ?.getGoiTaiNguyenThanhToan
+                  ?.getDonViSoLuong
+                  ?.getTongSoLuong ??
+              0,
+          caiDatUuTien: true,
+        );
+
+        onVoidCaiDatVanBan(value: '${getGiaTriChiSoVanHanh?.toString()} (G)', caiDatUuTien: true);
       }
     }
   }

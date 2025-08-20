@@ -26,7 +26,21 @@ class NUTBAMCHONCHIENDAU extends THANHPHANNUTBAMTHUOCCAPTHUANKICHHOAT {
 
   @override
   Future<void> onThucThi() async {
-    await getGameController?.onKichHoatKhungManHinhThuocCapSS300100();
+    /// -----
+    /// TODO: Chỉ Thực Thi Khi Chọn Chiến Đấu Cơ Đã Sở Hữu
+    /// -----
+    if (getGlobalStateManagementSystem
+            ?.getChienDauCoTongQuat
+            ?.getChienDauCoTrucTiepThucThiChienDau
+            ?.getTrangThai
+            ?.getMoHinh
+            ?.getThuocTinhSoHuuChienDauCo
+            ?.getSoHuuTheoThoiGianVinhVien
+            ?.getTrangThaiSoHuuTheoThoiGianVinhVien
+            ?.getSoHuu ==
+        true) {
+      await getGameController?.onKichHoatKhungManHinhThuocCapSS300100();
+    }
 
     ///
     return;

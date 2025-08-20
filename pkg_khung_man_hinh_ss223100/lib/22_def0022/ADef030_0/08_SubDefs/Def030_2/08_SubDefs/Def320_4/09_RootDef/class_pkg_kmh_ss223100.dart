@@ -76,4 +76,32 @@ class NUTBAMNANGCAPCHIENDAUCOCHONCHIDINH extends THANHPHANNUTBAMTHUOCCAPTHUANKIC
     ///
     return;
   }
+
+  @override
+  void update(double dt) {
+    // TODO: implement update
+    super.update(dt);
+
+    if (getTrangThai?.getMoHinh?.getThuocTinhSoHuuChienDauCo?.getSoHuuTheoThoiGianVinhVien?.getTrangThaiSoHuuTheoThoiGianVinhVien?.getSoHuu == false) {
+      if (getTrangThaiKichHoatThanhPhan?.getKiemTraKichHoat == true) {
+        onHuyKichHoatThanhPhanThuocCap();
+      }
+    } else if (getTrangThai?.getMoHinh?.getThuocTinhSoHuuChienDauCo?.getSoHuuTheoThoiGianVinhVien?.getTrangThaiSoHuuTheoThoiGianVinhVien?.getSoHuu == true) {
+      if (getTrangThaiKichHoatThanhPhan?.getKiemTraKichHoat == false) {
+        onKichHoatThanhPhanThuocCap(kichHoatUuTien: true);
+      }
+
+      if (getTrangThai?.getMoHinh?.getThuocTinhChienDauTheoQuyChuan?.getThuocTinhCapDoChienDauCoTheoQuyChuan
+          ?.getCapDoChienDauCoTheoQuyChuanHienHanh?.getCapDoChuanChinhThuc?.getMaDinhDanh == '[CAP_DO_SS15]') {
+
+        if (getThanhPhanVanBan?.getVanBan != 'Cấp tối đa') {
+          getThanhPhanVanBan?.onVoidCaiDatVanBan(value: 'Cấp tối đa', caiDatUuTien: true);
+        }
+      } else {
+        if (getThanhPhanVanBan?.getVanBan != 'Nâng cấp') {
+          getThanhPhanVanBan?.onVoidCaiDatVanBan(value: 'Nâng cấp', caiDatUuTien: true);
+        }
+      }
+    }
+  }
 }

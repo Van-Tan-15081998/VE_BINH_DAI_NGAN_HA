@@ -508,6 +508,9 @@ class MOHINHTHUOCTINHMAUTOIDA with CauTrucThucThiCoBan, CauTrucNangCapCoBan {
     /// TODO: [1] Cấp Độ Hiện Tại Chưa Phải Là Cấp Độ Cao Nhất
     /// -----
     if (getCapDoMauToiDaHienHanh?.getCapDoChuanChinhThuc?.getMaDinhDanh != getCapDoMauToiDaHienHanh?.getCapDoMacDinhCaoNhat?.getMaDinhDanh) {
+
+      await onDongBoHoaCapDoMauToiDaTheoCapDoChienDauCoTheoQuyChuan(thuocTinhCapDoChienDauCoTheoQuyChuan: thuocTinhCapDoChienDauCoTheoQuyChuan);
+
       /// -----
       /// TODO: Thỏa Điều Kiện [1]
       /// -----
@@ -527,7 +530,7 @@ class MOHINHTHUOCTINHMAUTOIDA with CauTrucThucThiCoBan, CauTrucNangCapCoBan {
       /// TODO: Nâng Cấp
       /// -----
       // if (getCapDoMauToiDaHienHanh?.getCapDoNoiSuyTiepTheo?.getDieuKienNangCap?.getGoiDiemNangCapYeuCau?.getHoanTatThucThiGiaoDich == true) {
-      if (true) {
+      if (false) {
         /// -----
         /// TODO: Thỏa Điều Kiện [2]
         /// -----
