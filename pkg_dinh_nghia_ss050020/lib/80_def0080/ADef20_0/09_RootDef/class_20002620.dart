@@ -294,6 +294,20 @@ class QUANLYDIEUKHIENCHUYENKICHBANCHIENDAU with CauTrucThucThiCoBan, DanhSachQua
           if (getBangDieuKhienChienDau?.getBangDieuKhienDoiHinhTSTC?.getTrangThaiPhuongTienSS074?.getMoHinh?.getTrangThaiTrongChienDau?.getTrangThaiTonTai?.isHuyHoanTat() == true) {
             await getTienTrinhTongQuat?.getTienTrinhThucThiChienDau?.getTrangThai?.getMoHinh?.caiDatThucThiHoanTat();
 
+            /// -----
+            /// TODO: Mở Khoá Truy Cập Nhiệm Vụ Chiến Đấu Tiếp Theo
+            /// -----
+            await getNhiemVuChienDauChonChiDinh?.getMoHinh?.getNhiemVuChienDauTiepTheo?.getKhoaTruyCapNhiemVuChienDau?.onCapNhatTrangThaiKichHoatKhoaTruyCapValueT(
+              onThucThiHoanTat: () async {
+                await getNhiemVuChienDauChonChiDinh?.getMoHinh?.onCapNhatNhiemVuChienDauTiepTheoKichHoatKhoaTruyCapValueT();
+              }
+            );
+
+            /// -----
+            /// TODO: Cập Nhật Thành Tích Nhiệm Vụ Chiến Đấu
+            /// -----
+            await getNhiemVuChienDauChonChiDinh?.getMoHinh?.getThanhTichNhiemVuChienDau?.onCapNhatThanhTichNhiemVuSS00C();
+
             await getMainGameController?.onKichHoatKhungManHinhThuocCapSS300400ChienThang();
 
             await onThucThiNhiemVuNganChanXamNhapHoanTat?.call();

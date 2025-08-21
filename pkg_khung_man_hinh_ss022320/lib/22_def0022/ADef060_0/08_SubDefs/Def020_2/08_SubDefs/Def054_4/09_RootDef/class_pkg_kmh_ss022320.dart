@@ -1,3 +1,4 @@
+import 'package:flutter/material.dart';
 import 'package:flame/events.dart';
 import 'package:pkg_dinh_nghia_ss022/pkg_dinh_nghia_ss022_exp.dart';
 import 'package:pkg_dinh_nghia_ss024/pkg_dinh_nghia_ss024_exp.dart';
@@ -126,6 +127,26 @@ class CARDNHIEMVUSS00A018MAPSS00A extends THANHPHANNUTBAMTICHHOPTHUOCCAP {
   }
 
   /// -----
+  /// TODO: Init Root
+  /// -----
+  @override
+  Future<void> onInitRoot() async {
+    /// -----
+    /// TODO:
+    /// -----
+    await super.onInitRoot();
+
+    getThanhPhanVanBan?.onVoidCaiDatVanBan(value: '18', caiDatUuTien: true);
+
+    getThanhPhanVanBan?.onCaiDatPhongCachVanBan(color: Color(0xFF91E1FB), fontSize: 20, fontWeight: FontWeight.bold);
+
+    getThanhPhanVanBan?.caiDatTuyChinhTextRenderer = true;
+
+    ///
+    return;
+  }
+
+  /// -----
   /// TODO: Bản Đồ Chiến Đấu
   /// -----
   TRANGTHAIBANDOCHIENDAU? _banDoChienDauCoBan = TRANGTHAIBANDOCHIENDAU(
@@ -163,5 +184,76 @@ class CARDNHIEMVUSS00A018MAPSS00A extends THANHPHANNUTBAMTICHHOPTHUOCCAP {
     }
 
     return;
+  }
+
+  String? _giaTriChiSoVanHanh;
+  String? get getGiaTriChiSoVanHanh => _giaTriChiSoVanHanh;
+  Future<void> onCaiDatGiaTriChiSoVanHanh({required String? value, bool? caiDatUuTien}) async {
+    if (caiDatUuTien == true) {
+      _giaTriChiSoVanHanh = value;
+    } else {
+      _giaTriChiSoVanHanh ??= value;
+    }
+
+    ///
+    return;
+  }
+
+  String? _giaTriChiSoVanHanhThanhTichNhiemVu;
+  String? get getGiaTriChiSoVanHanhThanhTichNhiemVu => _giaTriChiSoVanHanhThanhTichNhiemVu;
+  Future<void> onCaiDatGiaTriChiSoVanHanhThanhTichNhiemVu({required String? value, bool? caiDatUuTien}) async {
+    if (caiDatUuTien == true) {
+      _giaTriChiSoVanHanhThanhTichNhiemVu = value;
+    } else {
+      _giaTriChiSoVanHanhThanhTichNhiemVu ??= value;
+    }
+
+    ///
+    return;
+  }
+
+  @override
+  void update(double dt) {
+    // TODO: implement update
+    super.update(dt);
+
+    if (getGiaTriChiSoVanHanh != getNhiemVuChienDau?.getMoHinh?.getKhoaTruyCapNhiemVuChienDau?.getTrangThaiKhoaTruyCap) {
+
+      onCaiDatGiaTriChiSoVanHanh(value: getNhiemVuChienDau?.getMoHinh?.getKhoaTruyCapNhiemVuChienDau?.getTrangThaiKhoaTruyCap,
+          caiDatUuTien: true);
+
+      if (getNhiemVuChienDau?.getMoHinh?.getKhoaTruyCapNhiemVuChienDau?.onKiemTraTrangThaiKhoaTruyCap() == true) {
+        getThanhPhanVanBan?.onCaiDatPhongCachVanBan(color: Color(0xFF2E2E2E), fontSize: 20, fontWeight: FontWeight.bold);
+      } else {
+        getThanhPhanVanBan?.onCaiDatPhongCachVanBan(color: Color(0xFF91E1FB), fontSize: 20, fontWeight: FontWeight.bold);
+      }
+    }
+
+    if (getGiaTriChiSoVanHanhThanhTichNhiemVu != getNhiemVuChienDau?.getMoHinh?.getThanhTichNhiemVuChienDau?.getCapDoThanhTich) {
+      onCaiDatGiaTriChiSoVanHanhThanhTichNhiemVu(value: getNhiemVuChienDau?.getMoHinh?.getThanhTichNhiemVuChienDau?.getCapDoThanhTich, caiDatUuTien: true);
+
+      if (getGiaTriChiSoVanHanhThanhTichNhiemVu == '[MA_DINH_DANH_THANH_TICH_CAP_DO_SS00C]') {
+        getSpriteAnimationComponentThanhTichSS010KichHoat?.onVoidCaiDatKiemTraHienThi(value: true);
+        getSpriteAnimationComponentThanhTichSS020KichHoat?.onVoidCaiDatKiemTraHienThi(value: false);
+        getSpriteAnimationComponentThanhTichSS030KichHoat?.onVoidCaiDatKiemTraHienThi(value: false);
+        getSpriteAnimationComponentThanhTichSS010HuyKichHoat?.onVoidCaiDatKiemTraHienThi(value: false);
+        getSpriteAnimationComponentThanhTichSS020HuyKichHoat?.onVoidCaiDatKiemTraHienThi(value: true);
+        getSpriteAnimationComponentThanhTichSS030HuyKichHoat?.onVoidCaiDatKiemTraHienThi(value: true);
+      } else if (getGiaTriChiSoVanHanhThanhTichNhiemVu == '[MA_DINH_DANH_THANH_TICH_CAP_DO_SS00B]') {
+        getSpriteAnimationComponentThanhTichSS010KichHoat?.onVoidCaiDatKiemTraHienThi(value: true);
+        getSpriteAnimationComponentThanhTichSS020KichHoat?.onVoidCaiDatKiemTraHienThi(value: true);
+        getSpriteAnimationComponentThanhTichSS030KichHoat?.onVoidCaiDatKiemTraHienThi(value: false);
+        getSpriteAnimationComponentThanhTichSS010HuyKichHoat?.onVoidCaiDatKiemTraHienThi(value: false);
+        getSpriteAnimationComponentThanhTichSS020HuyKichHoat?.onVoidCaiDatKiemTraHienThi(value: false);
+        getSpriteAnimationComponentThanhTichSS030HuyKichHoat?.onVoidCaiDatKiemTraHienThi(value: true);
+      } else if (getGiaTriChiSoVanHanhThanhTichNhiemVu == '[MA_DINH_DANH_THANH_TICH_CAP_DO_SS00A]') {
+        getSpriteAnimationComponentThanhTichSS010KichHoat?.onVoidCaiDatKiemTraHienThi(value: true);
+        getSpriteAnimationComponentThanhTichSS020KichHoat?.onVoidCaiDatKiemTraHienThi(value: true);
+        getSpriteAnimationComponentThanhTichSS030KichHoat?.onVoidCaiDatKiemTraHienThi(value: true);
+        getSpriteAnimationComponentThanhTichSS010HuyKichHoat?.onVoidCaiDatKiemTraHienThi(value: false);
+        getSpriteAnimationComponentThanhTichSS020HuyKichHoat?.onVoidCaiDatKiemTraHienThi(value: false);
+        getSpriteAnimationComponentThanhTichSS030HuyKichHoat?.onVoidCaiDatKiemTraHienThi(value: false);
+      }
+    }
   }
 }

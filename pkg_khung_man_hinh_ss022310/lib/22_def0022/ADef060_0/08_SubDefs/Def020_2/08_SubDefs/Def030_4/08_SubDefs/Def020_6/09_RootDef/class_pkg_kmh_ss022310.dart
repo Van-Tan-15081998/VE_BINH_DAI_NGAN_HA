@@ -121,12 +121,18 @@ class CARDCHIENDAUCODANGCAPSAO00E03SS01 extends THANHPHANNUTBAMTICHHOPTHUOCCAP {
 
     if (getSpriteAnimationComponentOnLayerSS01?.animation != null) {
       getSpriteAnimationComponentOnLayerSS01?.onVoidCaiDatKiemTraHienThi(value: true);
-    } else if (getSpriteAnimationComponentOnLayerSS01?.animation != null) {
+    } else if (getSpriteAnimationComponentOnLayerSS01?.animation == null) {
       getSpriteAnimationComponentOnLayerSS01?.animation = getChienDauCoDangCapSao00E03SS01?.getThuocTinh?.getThuocTinhHinhAnhSprite?.getDonViSpriteNgoaiHinhThanChienDauCo?.getSpriteAnimation;
 
       getSpriteAnimationComponentOnLayerSS01?.onVoidCaiDatKiemTraHienThi(value: true);
 
       onCapNhatChiTietSpriteAnimationComponentOnLayerSS010();
     }
+  }
+
+  @override
+  void onRemove() {
+    super.onRemove();
+    getSpriteAnimationComponentOnLayerSS01?.animation = null;
   }
 }

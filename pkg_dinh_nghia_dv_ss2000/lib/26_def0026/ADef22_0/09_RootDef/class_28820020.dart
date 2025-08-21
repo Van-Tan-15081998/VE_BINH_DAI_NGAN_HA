@@ -198,11 +198,13 @@ class BANGHIDULIEUCOBAN with CauTrucThucThiCoBan {
     required String giaTriBanGhiDuLieuCapNhat,
     required Function({required KHUNGDULIEUCOBAN? duLieu}) onThucThiSauHoanTat,
   }) async {
+    bool? ketQuaThucThi = false;
+
     /// -----
     /// TODO: [1] Cập Nhật
     /// -----
     if (getKhoaBanGhiDuLieu != null && getKhoaBanGhiDuLieu?.isNotEmpty == true) {
-      return await getMayLuuTruDuLieu?.onCapNhatBanGhiDuLieu(
+      ketQuaThucThi = await getMayLuuTruDuLieu?.onCapNhatBanGhiDuLieu(
         khoaBanGhiDuLieu: getKhoaBanGhiDuLieu ?? '[KHOA_BAN_GHI_DU_LIEU_NGUYEN_BAN]',
         giaTriBanGhiDuLieuCapNhat: giaTriBanGhiDuLieuCapNhat,
         lichSuBanGhiDuLieuCapNhat: getDuLieu?.getGiaTriBanGhiDuLieu ?? '',
@@ -211,13 +213,15 @@ class BANGHIDULIEUCOBAN with CauTrucThucThiCoBan {
       );
     }
 
-    /// -----
-    /// TODO: [2] Đồng Bộ Hóa
-    /// -----
-    await onThucThiSauHoanTat(duLieu: getDuLieu);
+    if (ketQuaThucThi == true) {
+      /// -----
+      /// TODO: [2] Đồng Bộ Hóa
+      /// -----
+      await onThucThiSauHoanTat(duLieu: getDuLieu);
+    }
 
     ///
-    return false;
+    return ketQuaThucThi;
   }
 
   /// -----

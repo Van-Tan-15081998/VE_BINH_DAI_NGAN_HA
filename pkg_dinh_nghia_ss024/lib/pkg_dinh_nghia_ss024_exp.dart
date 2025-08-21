@@ -35,3 +35,32 @@ export '30_def0030/ZDef00_0/class_20000022.dart';
 
 /// TODO: 0_____[NHIEM_VU_CHIEN_DAU_NGAN_CHAN_XAM_NHAP]_____
 export '28_def0028/BDef20_0/09_RootDef/nhiem_vu_chien_dau_ngan_chan_xam_nhap.dart';
+
+
+export '28_def0028/ADef20_0/08_SubDefs/Def0210_2/09_RootDef/nhiem_vu_chien_dau_ss00a001_map_ss00a.dart';
+export '28_def0028/ADef20_0/08_SubDefs/Def0220_2/09_RootDef/nhiem_vu_chien_dau_ss00a002_map_ss00a.dart';
+export '28_def0028/ADef20_0/08_SubDefs/Def0230_2/09_RootDef/nhiem_vu_chien_dau_ss00a003_map_ss00a.dart';
+export '28_def0028/ADef20_0/08_SubDefs/Def0240_2/09_RootDef/nhiem_vu_chien_dau_ss00a004_map_ss00a.dart';
+export '28_def0028/ADef20_0/08_SubDefs/Def0250_2/09_RootDef/nhiem_vu_chien_dau_ss00a005_map_ss00a.dart';
+export '28_def0028/ADef20_0/08_SubDefs/Def0260_2/09_RootDef/nhiem_vu_chien_dau_ss00a006_map_ss00a.dart';
+export '28_def0028/ADef20_0/08_SubDefs/Def0270_2/09_RootDef/nhiem_vu_chien_dau_ss00a007_map_ss00a.dart';
+export '28_def0028/ADef20_0/08_SubDefs/Def0280_2/09_RootDef/nhiem_vu_chien_dau_ss00a008_map_ss00a.dart';
+export '28_def0028/ADef20_0/08_SubDefs/Def0290_2/09_RootDef/nhiem_vu_chien_dau_ss00a009_map_ss00a.dart';
+export '28_def0028/ADef20_0/08_SubDefs/Def0300_2/09_RootDef/nhiem_vu_chien_dau_ss00a010_map_ss00a.dart';
+
+export '28_def0028/ADef20_0/08_SubDefs/Def0310_2/09_RootDef/nhiem_vu_chien_dau_ss00a011_map_ss00a.dart';
+export '28_def0028/ADef20_0/08_SubDefs/Def0320_2/09_RootDef/nhiem_vu_chien_dau_ss00a012_map_ss00a.dart';
+export '28_def0028/ADef20_0/08_SubDefs/Def0330_2/09_RootDef/nhiem_vu_chien_dau_ss00a013_map_ss00a.dart';
+export '28_def0028/ADef20_0/08_SubDefs/Def0340_2/09_RootDef/nhiem_vu_chien_dau_ss00a014_map_ss00a.dart';
+export '28_def0028/ADef20_0/08_SubDefs/Def0350_2/09_RootDef/nhiem_vu_chien_dau_ss00a015_map_ss00a.dart';
+export '28_def0028/ADef20_0/08_SubDefs/Def0360_2/09_RootDef/nhiem_vu_chien_dau_ss00a016_map_ss00a.dart';
+export '28_def0028/ADef20_0/08_SubDefs/Def0370_2/09_RootDef/nhiem_vu_chien_dau_ss00a017_map_ss00a.dart';
+export '28_def0028/ADef20_0/08_SubDefs/Def0380_2/09_RootDef/nhiem_vu_chien_dau_ss00a018_map_ss00a.dart';
+export '28_def0028/ADef20_0/08_SubDefs/Def0390_2/09_RootDef/nhiem_vu_chien_dau_ss00a019_map_ss00a.dart';
+export '28_def0028/ADef20_0/08_SubDefs/Def0400_2/09_RootDef/nhiem_vu_chien_dau_ss00a020_map_ss00a.dart';
+
+export '28_def0028/ADef20_0/08_SubDefs/Def0410_2/09_RootDef/nhiem_vu_chien_dau_ss00a021_map_ss00a.dart';
+export '28_def0028/ADef20_0/08_SubDefs/Def0420_2/09_RootDef/nhiem_vu_chien_dau_ss00a022_map_ss00a.dart';
+export '28_def0028/ADef20_0/08_SubDefs/Def0430_2/09_RootDef/nhiem_vu_chien_dau_ss00a023_map_ss00a.dart';
+export '28_def0028/ADef20_0/08_SubDefs/Def0440_2/09_RootDef/nhiem_vu_chien_dau_ss00a024_map_ss00a.dart';
+export '28_def0028/ADef20_0/08_SubDefs/Def0450_2/09_RootDef/nhiem_vu_chien_dau_ss00a025_map_ss00a.dart';

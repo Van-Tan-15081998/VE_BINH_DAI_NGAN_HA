@@ -355,4 +355,41 @@ class NHIEMVUCHIENDAUCOBAN with CauTrucThucThiCoBan {
 
     return;
   }
+
+  /// -----
+  /// TODO:
+  /// -----
+  NHIEMVUCHIENDAUCOBAN? _nhiemVuChienDauTiepTheo;
+  NHIEMVUCHIENDAUCOBAN? get getNhiemVuChienDauTiepTheo => _nhiemVuChienDauTiepTheo;
+  Future<void> caiDatNhiemVuChienDauTiepTheo({required NHIEMVUCHIENDAUCOBAN? value, bool? caiDatUuTien}) async {
+    if (caiDatUuTien == true) {
+      _nhiemVuChienDauTiepTheo = value;
+    } else {
+      _nhiemVuChienDauTiepTheo ??= value;
+    }
+
+    return;
+  }
+
+  /// -----
+  /// TODO: Cài Đặt Nhiệm Vụ Mới Mở Khoá
+  /// -----
+  Future<void> onCapNhatNhiemVuChienDauTiepTheoKichHoatKhoaTruyCapValueT() async {
+    caiDatNhiemVuChienDauTiepTheoKichHoatKhoaTruyCapValueT(value: getNhiemVuChienDauTiepTheo, caiDatUuTien: true);
+  }
+
+  /// -----
+  /// TODO:
+  /// -----
+  NHIEMVUCHIENDAUCOBAN? _nhiemVuChienDauTiepTheoKichHoatKhoaTruyCapValueT;
+  NHIEMVUCHIENDAUCOBAN? get getNhiemVuChienDauTiepTheoKichHoatKhoaTruyCapValueT => _nhiemVuChienDauTiepTheoKichHoatKhoaTruyCapValueT;
+  Future<void> caiDatNhiemVuChienDauTiepTheoKichHoatKhoaTruyCapValueT({required NHIEMVUCHIENDAUCOBAN? value, bool? caiDatUuTien}) async {
+    if (caiDatUuTien == true) {
+      _nhiemVuChienDauTiepTheoKichHoatKhoaTruyCapValueT = value;
+    } else {
+      _nhiemVuChienDauTiepTheoKichHoatKhoaTruyCapValueT ??= value;
+    }
+
+    return;
+  }
 }

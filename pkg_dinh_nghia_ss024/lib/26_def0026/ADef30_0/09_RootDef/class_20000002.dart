@@ -77,4 +77,40 @@ class BANDOCHIENDAUMAPSS00A extends BANDOCHIENDAUCOBAN {
     ///
     return;
   }
+
+  /// -----
+  /// TODO: Init Root For SubCom
+  /// -----
+  @override
+  Future<void> onInitRootForSubCom() async {
+    await super.onInitRootForSubCom();
+
+    await getNhiemVuChienDauSS010?.caiDatNhiemVuChienDauTiepTheo(value: getNhiemVuChienDauSS020, caiDatUuTien: true);
+    await getNhiemVuChienDauSS020?.caiDatNhiemVuChienDauTiepTheo(value: getNhiemVuChienDauSS030, caiDatUuTien: true);
+    await getNhiemVuChienDauSS030?.caiDatNhiemVuChienDauTiepTheo(value: getNhiemVuChienDauSS040, caiDatUuTien: true);
+    await getNhiemVuChienDauSS040?.caiDatNhiemVuChienDauTiepTheo(value: getNhiemVuChienDauSS050, caiDatUuTien: true);
+    await getNhiemVuChienDauSS050?.caiDatNhiemVuChienDauTiepTheo(value: getNhiemVuChienDauSS060, caiDatUuTien: true);
+    await getNhiemVuChienDauSS060?.caiDatNhiemVuChienDauTiepTheo(value: getNhiemVuChienDauSS070, caiDatUuTien: true);
+    await getNhiemVuChienDauSS070?.caiDatNhiemVuChienDauTiepTheo(value: getNhiemVuChienDauSS080, caiDatUuTien: true);
+    await getNhiemVuChienDauSS080?.caiDatNhiemVuChienDauTiepTheo(value: getNhiemVuChienDauSS090, caiDatUuTien: true);
+    await getNhiemVuChienDauSS090?.caiDatNhiemVuChienDauTiepTheo(value: getNhiemVuChienDauSS100, caiDatUuTien: true);
+    await getNhiemVuChienDauSS100?.caiDatNhiemVuChienDauTiepTheo(value: getNhiemVuChienDauSS110, caiDatUuTien: true);
+
+    await getNhiemVuChienDauSS110?.caiDatNhiemVuChienDauTiepTheo(value: getNhiemVuChienDauSS120, caiDatUuTien: true);
+    await getNhiemVuChienDauSS120?.caiDatNhiemVuChienDauTiepTheo(value: getNhiemVuChienDauSS130, caiDatUuTien: true);
+    await getNhiemVuChienDauSS130?.caiDatNhiemVuChienDauTiepTheo(value: getNhiemVuChienDauSS140, caiDatUuTien: true);
+    await getNhiemVuChienDauSS140?.caiDatNhiemVuChienDauTiepTheo(value: getNhiemVuChienDauSS150, caiDatUuTien: true);
+    await getNhiemVuChienDauSS150?.caiDatNhiemVuChienDauTiepTheo(value: getNhiemVuChienDauSS160, caiDatUuTien: true);
+    await getNhiemVuChienDauSS160?.caiDatNhiemVuChienDauTiepTheo(value: getNhiemVuChienDauSS170, caiDatUuTien: true);
+    await getNhiemVuChienDauSS170?.caiDatNhiemVuChienDauTiepTheo(value: getNhiemVuChienDauSS180, caiDatUuTien: true);
+    await getNhiemVuChienDauSS180?.caiDatNhiemVuChienDauTiepTheo(value: getNhiemVuChienDauSS190, caiDatUuTien: true);
+    await getNhiemVuChienDauSS190?.caiDatNhiemVuChienDauTiepTheo(value: getNhiemVuChienDauSS200, caiDatUuTien: true);
+    await getNhiemVuChienDauSS200?.caiDatNhiemVuChienDauTiepTheo(value: getNhiemVuChienDauSS210, caiDatUuTien: true);
+
+    await getNhiemVuChienDauSS210?.caiDatNhiemVuChienDauTiepTheo(value: getNhiemVuChienDauSS220, caiDatUuTien: true);
+    await getNhiemVuChienDauSS220?.caiDatNhiemVuChienDauTiepTheo(value: getNhiemVuChienDauSS230, caiDatUuTien: true);
+    await getNhiemVuChienDauSS230?.caiDatNhiemVuChienDauTiepTheo(value: getNhiemVuChienDauSS240, caiDatUuTien: true);
+    await getNhiemVuChienDauSS240?.caiDatNhiemVuChienDauTiepTheo(value: getNhiemVuChienDauSS250, caiDatUuTien: true);
+    await getNhiemVuChienDauSS250?.caiDatNhiemVuChienDauTiepTheo(value: getNhiemVuChienDauSS250, caiDatUuTien: true);
+  }
 }

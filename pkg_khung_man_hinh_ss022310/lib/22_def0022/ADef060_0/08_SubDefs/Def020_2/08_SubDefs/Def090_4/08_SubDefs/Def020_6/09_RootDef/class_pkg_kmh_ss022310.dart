@@ -129,4 +129,10 @@ class CARDCHIENDAUCODANGCAPSAO0SS09SS01 extends THANHPHANNUTBAMTICHHOPTHUOCCAP {
       onCapNhatChiTietSpriteAnimationComponentOnLayerSS010();
     }
   }
+
+  @override
+  void onRemove() {
+    super.onRemove();
+    getSpriteAnimationComponentOnLayerSS01?.animation = null;
+  }
 }

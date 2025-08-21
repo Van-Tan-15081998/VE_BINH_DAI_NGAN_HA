@@ -1177,8 +1177,14 @@ class QUANLYTHANHPHANMANHINHKHUNGMANHINHCHINH extends QUANLYTHANHPHANMANHINHTHUO
             await getKhungManHinhMasterLoading?.onHuyKichHoatThanhPhanManHinhThuocCap();
 
             await getGameController?.onHuyKichHoatManHinhLoading?.call();
-
             await getGameController?.onKichHoatManHinhBackground?.call();
+
+            if (getGlobalStateManagementSystem?.getBanDoChienDau?.getNhiemVuChienDauChonChiDinh?.getMoHinh
+            ?.getNhiemVuChienDauTiepTheoKichHoatKhoaTruyCapValueT != null) {
+              await Future.delayed(Duration(milliseconds: 100));
+              // await getKhungManHinhChinhTabSS030CD?.onKichHoatThanhPhanManHinhThuocCap(kichHoatUuTien: true);
+              await getGameController?.onKichHoatKhungManHinhThuocCapTabSS030();
+            }
           },
         );
       },

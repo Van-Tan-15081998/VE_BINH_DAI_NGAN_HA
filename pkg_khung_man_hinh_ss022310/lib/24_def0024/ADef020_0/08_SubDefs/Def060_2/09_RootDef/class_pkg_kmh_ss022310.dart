@@ -19,7 +19,11 @@ import 'package:pkg_khung_man_hinh_ss022310/22_def0022/ADef060_0/08_SubDefs/Def0
 import 'package:pkg_khung_man_hinh_ss022310/22_def0022/ADef060_0/08_SubDefs/Def020_2/08_SubDefs/Def200_4/08_SubDefs/Def040_6/09_RootDef/class_pkg_kmh_ss022310.dart';
 import 'package:pkg_khung_man_hinh_ss022310/22_def0022/ADef060_0/08_SubDefs/Def020_2/08_SubDefs/Def200_4/08_SubDefs/Def050_6/09_RootDef/class_pkg_kmh_ss022310.dart';
 import 'package:pkg_khung_man_hinh_ss022310/22_def0022/ADef060_0/08_SubDefs/Def020_2/08_SubDefs/Def200_4/08_SubDefs/Def060_6/09_RootDef/class_pkg_kmh_ss022310.dart';
-import 'package:pkg_khung_man_hinh_ss022310/22_def0022/ADef060_0/08_SubDefs/Def030_2/09_RootDef/class_pkg_kmh_ss022310.dart';
+
+/// Card Chiến Đấu Cơ Chọn Chỉ Định
+// import 'package:pkg_khung_man_hinh_ss022310/22_def0022/ADef060_0/08_SubDefs/Def030_2/09_RootDef/class_pkg_kmh_ss022310.dart';
+import 'package:pkg_khung_man_hinh_ss022310/22_def0022/ADef060_0/08_SubDefs/Def032_2/09_RootDef/class_pkg_kmh_ss022310.dart';
+
 import 'package:pkg_khung_man_hinh_ss022310/22_def0022/ADef060_0/08_SubDefs/Def040_2/08_SubDefs/Def030_4/08_SubDefs/Def020_6/09_RootDef/class_pkg_kmh_ss022310.dart';
 import 'package:pkg_khung_man_hinh_ss022310/22_def0022/ADef060_0/08_SubDefs/Def040_2/08_SubDefs/Def030_4/08_SubDefs/Def030_6/09_RootDef/class_pkg_kmh_ss022310.dart';
 import 'package:pkg_khung_man_hinh_ss022310/22_def0022/ADef060_0/08_SubDefs/Def040_2/08_SubDefs/Def030_4/08_SubDefs/Def040_6/09_RootDef/class_pkg_kmh_ss022310.dart';
@@ -1728,8 +1732,8 @@ class QUANLYTHANHPHANTICHHOPTHUOCCAP extends QUANLYTHANHPHANTICHHOPTHUOCCAPCOBAN
             globalStateManagementSystem: getGlobalStateManagementSystem,
             gameController: getGameController,
             thanhPhanQuanLyThuocCapTrucTiep: getThanhPhanQuanLyThuocCapTrucTiep,
-            sizeDx: donViChieuRong * 2.0,
-            sizeDy: donViChieuRong * 2.0,
+            sizeDx: donViChieuRong * 3.0,
+            sizeDy: donViChieuRong * 3.0,
             positionDx: sizeDxKhungManHinh / 2.0,
             positionDy: sizeDyKhungManHinh - (donViChieuRong * 6.0),
             onTapCancelEvent: null,
@@ -2693,10 +2697,10 @@ class QUANLYTHANHPHANTICHHOPTHUOCCAP extends QUANLYTHANHPHANTICHHOPTHUOCCAPCOBAN
     await getNutBamChuyenChonChiDinhTrai?.onKichHoatThanhPhanThuocCap();
     await getNutBamChuyenChonChiDinhPhai?.onKichHoatThanhPhanThuocCap();
 
-    /// -----
-    /// TODO: Chọn Mặc Định
-    /// -----
-    await getGameController?.onChonChiDinhChienDauCo00E03SS01();
+    // /// -----
+    // /// TODO: Chọn Mặc Định
+    // /// -----
+    // await getGameController?.onChonChiDinhChienDauCo00E03SS01();
 
     ///
     return;

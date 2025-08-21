@@ -103,7 +103,6 @@ class QUANLYTHANHPHANMANHINHTHUOCCAP extends QUANLYTHANHPHANMANHINHTHUOCCAPCOBAN
   /// TODO:
   /// -----
   Future<void> onKichHoatKhungManHinhTabSS020({required FlameGame? flameGame, required Component? component}) async {
-
     /// -----
     /// TODO:
     /// -----
@@ -283,7 +282,12 @@ class QUANLYTHANHPHANMANHINHTHUOCCAP extends QUANLYTHANHPHANMANHINHTHUOCCAPCOBAN
     ///
     ///
     if (getDanhSachThanhPhanManHinhThuocCap.isEmpty == true) {
-      getDanhSachThanhPhanManHinhThuocCap.addAll([getKhungManHinhTabSS010, getKhungManHinhTabSS020, getKhungManHinhTabSS030, getKhungManHinhSS223100]);
+      getDanhSachThanhPhanManHinhThuocCap.addAll([
+        getKhungManHinhTabSS010, //
+        getKhungManHinhTabSS020, //
+        getKhungManHinhTabSS030, //
+        getKhungManHinhSS223100,
+      ]);
     }
 
     ///
@@ -318,21 +322,45 @@ class QUANLYTHANHPHANMANHINHTHUOCCAP extends QUANLYTHANHPHANMANHINHTHUOCCAPCOBAN
 
   @override
   Future<void> onKichHoatKhungManHinhThuocCapTabSS030() async {
-    await super.onKichHoatKhungManHinhThuocCapTabSS030TruongHopSS020();
+    await super.onKichHoatKhungManHinhThuocCapTabSS030();
 
-    await getKhungManHinhTabSS010?.onKichHoatThanhPhanManHinhThuocCap(kichHoatUuTien: true);
-    await getKhungManHinhTabSS020?.onHuyKichHoatThanhPhanManHinhThuocCap();
-    await getKhungManHinhTabSS030?.onHuyKichHoatThanhPhanManHinhThuocCap();
-    await getKhungManHinhSS223100?.onHuyKichHoatThanhPhanManHinhThuocCap();
+    if (getGlobalStateManagementSystem?.getChienDauCoTongQuat?.getChiDinhChienDauCoThucThiChienDau?.getTrangThai?.getMoHinh != null) {
+      await getKhungManHinhTabSS010?.onHuyKichHoatThanhPhanManHinhThuocCap();
+      await getKhungManHinhTabSS020?.onKichHoatThanhPhanManHinhThuocCap(kichHoatUuTien: true);
+      await getKhungManHinhTabSS030?.onHuyKichHoatThanhPhanManHinhThuocCap();
+      await getKhungManHinhSS223100?.onHuyKichHoatThanhPhanManHinhThuocCap();
+    } else {
+      await getKhungManHinhTabSS010?.onKichHoatThanhPhanManHinhThuocCap(kichHoatUuTien: true);
+      await getKhungManHinhTabSS020?.onHuyKichHoatThanhPhanManHinhThuocCap();
+      await getKhungManHinhTabSS030?.onHuyKichHoatThanhPhanManHinhThuocCap();
+      await getKhungManHinhSS223100?.onHuyKichHoatThanhPhanManHinhThuocCap();
+
+      /// -----
+      /// TODO: Chọn Mặc Định
+      /// -----
+      await getGameController?.onChonChiDinhChienDauCo00E03SS01();
+    }
   }
 
   @override
   Future<void> onKichHoatKhungManHinhThuocCapTabSS030TruongHopSS020() async {
     await super.onKichHoatKhungManHinhThuocCapTabSS030TruongHopSS020();
 
-    await getKhungManHinhTabSS010?.onKichHoatThanhPhanManHinhThuocCap(kichHoatUuTien: true);
-    await getKhungManHinhTabSS020?.onHuyKichHoatThanhPhanManHinhThuocCap();
-    await getKhungManHinhTabSS030?.onHuyKichHoatThanhPhanManHinhThuocCap();
-    await getKhungManHinhSS223100?.onHuyKichHoatThanhPhanManHinhThuocCap();
+    if (getGlobalStateManagementSystem?.getChienDauCoTongQuat?.getChiDinhChienDauCoThucThiChienDau?.getTrangThai?.getMoHinh != null) {
+      await getKhungManHinhTabSS010?.onHuyKichHoatThanhPhanManHinhThuocCap();
+      await getKhungManHinhTabSS020?.onHuyKichHoatThanhPhanManHinhThuocCap();
+      await getKhungManHinhTabSS030?.onKichHoatThanhPhanManHinhThuocCap(kichHoatUuTien: true);
+      await getKhungManHinhSS223100?.onHuyKichHoatThanhPhanManHinhThuocCap();
+    } else {
+      await getKhungManHinhTabSS010?.onKichHoatThanhPhanManHinhThuocCap(kichHoatUuTien: true);
+      await getKhungManHinhTabSS020?.onHuyKichHoatThanhPhanManHinhThuocCap();
+      await getKhungManHinhTabSS030?.onHuyKichHoatThanhPhanManHinhThuocCap();
+      await getKhungManHinhSS223100?.onHuyKichHoatThanhPhanManHinhThuocCap();
+
+      /// -----
+      /// TODO: Chọn Mặc Định
+      /// -----
+      await getGameController?.onChonChiDinhChienDauCo00E03SS01();
+    }
   }
 }

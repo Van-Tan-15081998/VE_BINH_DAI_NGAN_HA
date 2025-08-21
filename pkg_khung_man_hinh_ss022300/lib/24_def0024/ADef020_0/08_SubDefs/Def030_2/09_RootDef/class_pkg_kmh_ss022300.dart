@@ -378,18 +378,17 @@ class QUANLYTHANHPHANNUTBAMTHUOCCAP extends QUANLYTHANHPHANNUTBAMTHUOCCAPCOBAN {
             // onThucThiChonTabSS020();
 
             if (getGlobalStateManagementSystem
-                ?.getChienDauCoTongQuat
-                ?.getChienDauCoTrucTiepThucThiChienDau
-                ?.getTrangThai
-                ?.getMoHinh
-                ?.getThuocTinhSoHuuChienDauCo
-                ?.getSoHuuTheoThoiGianVinhVien
-                ?.getTrangThaiSoHuuTheoThoiGianVinhVien
-                ?.getSoHuu ==
-            false) {
+                    ?.getChienDauCoTongQuat
+                    ?.getChienDauCoTrucTiepThucThiChienDau
+                    ?.getTrangThai
+                    ?.getMoHinh
+                    ?.getThuocTinhSoHuuChienDauCo
+                    ?.getSoHuuTheoThoiGianVinhVien
+                    ?.getTrangThaiSoHuuTheoThoiGianVinhVien
+                    ?.getSoHuu ==
+                false) {
               await onThucThiChonTabSS010();
             }
-
           },
         ),
         caiDatUuTien: true,
@@ -486,8 +485,13 @@ class QUANLYTHANHPHANNUTBAMTHUOCCAP extends QUANLYTHANHPHANNUTBAMTHUOCCAPCOBAN {
     await getNutBamChuyenTabSS020?.onKichHoatThanhPhanThuocCap(kichHoatUuTien: true);
     await getNutBamChuyenTabSS030?.onHuyKichHoatThanhPhanThuocCap();
 
-    /// Chon Tab 1 Làm Mặc Định
-    await onThucThiChonTabSS010();
+    if (getGlobalStateManagementSystem?.getChienDauCoTongQuat?.getChiDinhChienDauCoThucThiChienDau?.getTrangThai?.getMoHinh != null) {
+      /// Chon Tab 1 Làm Mặc Định
+      await onThucThiChonTabSS020();
+    } else {
+      /// Chon Tab 1 Làm Mặc Định
+      await onThucThiChonTabSS010();
+    }
   }
 
   @override
@@ -495,7 +499,12 @@ class QUANLYTHANHPHANNUTBAMTHUOCCAP extends QUANLYTHANHPHANNUTBAMTHUOCCAPCOBAN {
     await getNutBamChuyenTabSS020?.onHuyKichHoatThanhPhanThuocCap();
     await getNutBamChuyenTabSS030?.onKichHoatThanhPhanThuocCap(kichHoatUuTien: true);
 
-    /// Chon Tab 1 Làm Mặc Định
-    await onThucThiChonTabSS010();
+    if (getGlobalStateManagementSystem?.getChienDauCoTongQuat?.getChiDinhChienDauCoThucThiChienDau?.getTrangThai?.getMoHinh != null) {
+      /// Chon Tab 1 Làm Mặc Định
+      await onThucThiChonTabSS030();
+    } else {
+      /// Chon Tab 1 Làm Mặc Định
+      await onThucThiChonTabSS010();
+    }
   }
 }

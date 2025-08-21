@@ -59,7 +59,7 @@ class NHIEMVUCHIENDAUSS00C021MAPSS00C extends NHIEMVUCHIENDAUCOBAN {
       caiDatUuTien: true,
     );
     await getKhoaTruyCapNhiemVuChienDau?.onCaiDatGiaTriBanGhiDuLieuNguyenBan(
-      value: KHOATRUYCAPNHIEMVUCHIENDAUCOBAN.constGiaTriBanGhiDuLieuTrangThaiKichHoatKhoaTruyCap,
+      value: KHOATRUYCAPNHIEMVUCHIENDAUCOBAN.constGiaTriBanGhiDuLieuTrangThaiKichHoatKhoaTruyCapValueT,
       caiDatUuTien: true,
     );
 

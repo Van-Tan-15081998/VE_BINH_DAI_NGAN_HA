@@ -95,8 +95,9 @@ class KHOATRUYCAPNHIEMVUCHIENDAUCOBAN with CauTrucThucThiCoBan, CauTrucCoSoDuLie
   /// -----
   /// TODO: Danh Sách Giá Trị Trạng Thái Kích Hoạt Khóa Truy Cập [Dùng Cho Value Database]
   /// -----
-  static const String constGiaTriBanGhiDuLieuTrangThaiKichHoatKhoaTruyCap = '[MA_DINH_DANH_TRANG_THAI_KICH_HOAT_KHOA_TRUY_CAP]';
-  static const String constGiaTriBanGhiDuLieuTrangThaiHuyKichHoatKhoaTruyCap = '[MA_DINH_DANH_TRANG_THAI_HUY_KICH_HOAT_KHOA_TRUY_CAP]';
+
+  static const String constGiaTriBanGhiDuLieuTrangThaiKichHoatKhoaTruyCapValueT = '[MA_DINH_DANH_TRANG_THAI_KICH_HOAT_KHOA_TRUY_CAP_VALUE_TRUE]';
+  static const String constGiaTriBanGhiDuLieuTrangThaiKichHoatKhoaTruyCapValueF = '[MA_DINH_DANH_TRANG_THAI_KICH_HOAT_KHOA_TRUY_CAP_VALUE_FALSE]';
 
   /// -----
   /// TODO: Attach Root
@@ -248,7 +249,7 @@ class KHOATRUYCAPNHIEMVUCHIENDAUCOBAN with CauTrucThucThiCoBan, CauTrucCoSoDuLie
     /// TODO:
     /// -----
     await getBanGhiDuLieu?.onCapNhatBanGhiDuLieu(
-      giaTriBanGhiDuLieuCapNhat: getTrangThaiKhoaTruyCap ?? KHOATRUYCAPNHIEMVUCHIENDAUCOBAN.constGiaTriBanGhiDuLieuTrangThaiKichHoatKhoaTruyCap,
+      giaTriBanGhiDuLieuCapNhat: getTrangThaiKhoaTruyCap ?? KHOATRUYCAPNHIEMVUCHIENDAUCOBAN.constGiaTriBanGhiDuLieuTrangThaiKichHoatKhoaTruyCapValueT,
       onThucThiSauHoanTat: ({KHUNGDULIEUCOBAN? duLieu}) async {
         await onCaiDatTrangThaiKhoaTruyCap(value: duLieu?.getGiaTriBanGhiDuLieu, caiDatUuTien: true);
       },
@@ -256,6 +257,25 @@ class KHOATRUYCAPNHIEMVUCHIENDAUCOBAN with CauTrucThucThiCoBan, CauTrucCoSoDuLie
 
     ///
     return;
+  }
+
+  /// -----
+  /// TODO:
+  /// -----
+  Future<void> onCapNhatTrangThaiKichHoatKhoaTruyCapValueT({Future<void> Function()? onThucThiHoanTat}) async {
+    String? giaTriBanGhiDuLieuVanHanh = getTrangThaiKhoaTruyCap;
+
+    await getBanGhiDuLieu?.onCapNhatBanGhiDuLieu(
+      giaTriBanGhiDuLieuCapNhat: KHOATRUYCAPNHIEMVUCHIENDAUCOBAN.constGiaTriBanGhiDuLieuTrangThaiKichHoatKhoaTruyCapValueF,
+      onThucThiSauHoanTat: ({KHUNGDULIEUCOBAN? duLieu}) async {
+        await onCaiDatTrangThaiKhoaTruyCap(value: duLieu?.getGiaTriBanGhiDuLieu, caiDatUuTien: true);
+
+        // if (giaTriBanGhiDuLieuVanHanh == KHOATRUYCAPNHIEMVUCHIENDAUCOBAN.constGiaTriBanGhiDuLieuTrangThaiKichHoatKhoaTruyCapValueT &&
+        //     getTrangThaiKhoaTruyCap == KHOATRUYCAPNHIEMVUCHIENDAUCOBAN.constGiaTriBanGhiDuLieuTrangThaiKichHoatKhoaTruyCapValueF) {
+          await onThucThiHoanTat?.call();
+        // }
+      },
+    );
   }
 
   /// -----
@@ -288,20 +308,27 @@ class KHOATRUYCAPNHIEMVUCHIENDAUCOBAN with CauTrucThucThiCoBan, CauTrucCoSoDuLie
     return;
   }
 
+  bool onKiemTraTrangThaiKhoaTruyCap() {
+    if (getTrangThaiKhoaTruyCap == KHOATRUYCAPNHIEMVUCHIENDAUCOBAN.constGiaTriBanGhiDuLieuTrangThaiKichHoatKhoaTruyCapValueT) {
+      return true;
+    } else if (getTrangThaiKhoaTruyCap == KHOATRUYCAPNHIEMVUCHIENDAUCOBAN.constGiaTriBanGhiDuLieuTrangThaiKichHoatKhoaTruyCapValueF) {
+      return false;
+    }
+
+    return true;
+  }
+
   /// -----
   /// TODO: Kích Hoạt Khóa Nhiệm Vụ Chiến Đấu
   /// -----
   Future<void> onCaiDatKichHoatKhoaTruyCap() async {
-    await onCaiDatTrangThaiKhoaTruyCap(
-      value: KHOATRUYCAPNHIEMVUCHIENDAUCOBAN.constGiaTriBanGhiDuLieuTrangThaiKichHoatKhoaTruyCap,
-      caiDatUuTien: true,
-    );
+    await onCaiDatTrangThaiKhoaTruyCap(value: KHOATRUYCAPNHIEMVUCHIENDAUCOBAN.constGiaTriBanGhiDuLieuTrangThaiKichHoatKhoaTruyCapValueT, caiDatUuTien: true);
 
     return;
   }
 
   bool isKichHoatKhoaTruyCap() {
-    if (getTrangThaiKhoaTruyCap == KHOATRUYCAPNHIEMVUCHIENDAUCOBAN.constGiaTriBanGhiDuLieuTrangThaiKichHoatKhoaTruyCap) {
+    if (getTrangThaiKhoaTruyCap == KHOATRUYCAPNHIEMVUCHIENDAUCOBAN.constGiaTriBanGhiDuLieuTrangThaiKichHoatKhoaTruyCapValueT) {
       return true;
     }
 
@@ -312,16 +339,13 @@ class KHOATRUYCAPNHIEMVUCHIENDAUCOBAN with CauTrucThucThiCoBan, CauTrucCoSoDuLie
   /// TODO: Hủy Kích Hoạt Khóa Nhiệm Vụ Chiến Đấu
   /// -----
   Future<void> onCaiDatHuyKichHoatKhoaTruyCap() async {
-    await onCaiDatTrangThaiKhoaTruyCap(
-      value: KHOATRUYCAPNHIEMVUCHIENDAUCOBAN.constGiaTriBanGhiDuLieuTrangThaiHuyKichHoatKhoaTruyCap,
-      caiDatUuTien: true,
-    );
+    await onCaiDatTrangThaiKhoaTruyCap(value: KHOATRUYCAPNHIEMVUCHIENDAUCOBAN.constGiaTriBanGhiDuLieuTrangThaiKichHoatKhoaTruyCapValueF, caiDatUuTien: true);
 
     return;
   }
 
   bool isHuyKichHoatKhoaTruyCap() {
-    if (getTrangThaiKhoaTruyCap == KHOATRUYCAPNHIEMVUCHIENDAUCOBAN.constGiaTriBanGhiDuLieuTrangThaiHuyKichHoatKhoaTruyCap) {
+    if (getTrangThaiKhoaTruyCap == KHOATRUYCAPNHIEMVUCHIENDAUCOBAN.constGiaTriBanGhiDuLieuTrangThaiKichHoatKhoaTruyCapValueF) {
       return true;
     }
 

@@ -261,6 +261,51 @@ class THANHTICHNHIEMVUCHIENDAUCOBAN with CauTrucThucThiCoBan, CauTrucCoSoDuLieuC
     return;
   }
 
+  Future<void> onCapNhatThanhTichNhiemVuSS00C() async {
+    if (getCapDoThanhTich == THANHTICHNHIEMVUCHIENDAUCOBAN.constGiaTriBanGhiDuLieuThanhTichCapDoSS00D) {
+      /// -----
+      /// TODO:
+      /// -----
+      await getBanGhiDuLieu?.onCapNhatBanGhiDuLieu(
+        giaTriBanGhiDuLieuCapNhat: THANHTICHNHIEMVUCHIENDAUCOBAN.constGiaTriBanGhiDuLieuThanhTichCapDoSS00C,
+        onThucThiSauHoanTat: ({KHUNGDULIEUCOBAN? duLieu}) async {
+          await onCaiDatCapDoThanhTich(value: duLieu?.getGiaTriBanGhiDuLieu, caiDatUuTien: true);
+        },
+      );
+    }
+  }
+
+  Future<void> onCapNhatThanhTichNhiemVuSS00B() async {
+    if (getCapDoThanhTich == THANHTICHNHIEMVUCHIENDAUCOBAN.constGiaTriBanGhiDuLieuThanhTichCapDoSS00D ||
+        getCapDoThanhTich == THANHTICHNHIEMVUCHIENDAUCOBAN.constGiaTriBanGhiDuLieuThanhTichCapDoSS00C) {
+      /// -----
+      /// TODO:
+      /// -----
+      await getBanGhiDuLieu?.onCapNhatBanGhiDuLieu(
+        giaTriBanGhiDuLieuCapNhat: THANHTICHNHIEMVUCHIENDAUCOBAN.constGiaTriBanGhiDuLieuThanhTichCapDoSS00B,
+        onThucThiSauHoanTat: ({KHUNGDULIEUCOBAN? duLieu}) async {
+          await onCaiDatCapDoThanhTich(value: duLieu?.getGiaTriBanGhiDuLieu, caiDatUuTien: true);
+        },
+      );
+    }
+  }
+
+  Future<void> onCapNhatThanhTichNhiemVuSS00A() async {
+    if (getCapDoThanhTich == THANHTICHNHIEMVUCHIENDAUCOBAN.constGiaTriBanGhiDuLieuThanhTichCapDoSS00D ||
+        getCapDoThanhTich == THANHTICHNHIEMVUCHIENDAUCOBAN.constGiaTriBanGhiDuLieuThanhTichCapDoSS00C ||
+        getCapDoThanhTich == THANHTICHNHIEMVUCHIENDAUCOBAN.constGiaTriBanGhiDuLieuThanhTichCapDoSS00B) {
+      /// -----
+      /// TODO:
+      /// -----
+      await getBanGhiDuLieu?.onCapNhatBanGhiDuLieu(
+        giaTriBanGhiDuLieuCapNhat: THANHTICHNHIEMVUCHIENDAUCOBAN.constGiaTriBanGhiDuLieuThanhTichCapDoSS00A,
+        onThucThiSauHoanTat: ({KHUNGDULIEUCOBAN? duLieu}) async {
+          await onCaiDatCapDoThanhTich(value: duLieu?.getGiaTriBanGhiDuLieu, caiDatUuTien: true);
+        },
+      );
+    }
+  }
+
   /// -----
   /// TODO: Mã Định Danh
   /// -----

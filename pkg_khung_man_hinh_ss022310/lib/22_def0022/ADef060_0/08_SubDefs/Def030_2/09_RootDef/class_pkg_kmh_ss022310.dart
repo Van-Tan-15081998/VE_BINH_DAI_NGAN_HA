@@ -23,7 +23,7 @@ class CARDCHIENDAUCOCHONCHIDINH extends THANHPHANNUTBAMTICHHOPTHUOCCAP {
     required super.onTapDownEvent, //
     required super.onTapUpEvent, //
   }) {
-    // debugMode = true;
+    debugMode = true;
     // priority = 2;
   }
 
