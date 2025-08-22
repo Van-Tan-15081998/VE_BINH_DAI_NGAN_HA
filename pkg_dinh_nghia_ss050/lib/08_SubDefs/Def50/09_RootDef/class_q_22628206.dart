@@ -302,6 +302,11 @@ class QuanLyTrangThaiHangarChienDauCoTongQuat with KhungThucThiCoBan {
     await getChienDauCoDangCapSaoSSS10SS04?.onInitRoot();
     await getChienDauCoDangCapSaoSSS10SS05?.onInitRoot();
 
+    /// -----
+    /// TODO: Khởi Tạo Mặc Định Chiến Đấu Cơ Sở Hữu
+    /// -----
+    await getChienDauCoDangCapSao00E03SS01?.getThuocTinhSoHuuChienDauCo?.getSoHuuTheoThoiGianVinhVien?.getTrangThaiSoHuuTheoThoiGianVinhVien?.caiDatSoHuu(value: true, caiDatUuTien: true);
+
     return;
   }
 

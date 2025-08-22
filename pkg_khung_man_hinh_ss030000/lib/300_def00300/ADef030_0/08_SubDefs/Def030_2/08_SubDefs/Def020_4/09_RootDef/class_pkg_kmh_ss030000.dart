@@ -74,6 +74,13 @@ class NUTBAMSS030000SS010 extends THANHPHANNUTBAMTHUOCCAPTHUANKICHHOAT {
     return;
   }
 
+  // @override
+  // Future<void> onLoad() async {
+  //   super.onLoad();
+  //
+  //   onCaiDatDoUuTien(value: 0);
+  // }
+
   @override
   void update(double dt) {
     // TODO: implement update

@@ -3,11 +3,12 @@ import 'package:flame/events.dart';
 import 'package:pkg_dinh_nghia_ss022/pkg_dinh_nghia_ss022_exp.dart';
 import 'package:pkg_dinh_nghia_ss024/pkg_dinh_nghia_ss024_exp.dart';
 import 'package:pkg_khung_man_hinh_ss020000/pkg_khung_man_hinh_ss020000_exp.dart';
+import 'package:pkg_khung_man_hinh_ss022320/22_def0022/ADef060_0/08_SubDefs/Def020_2/08_SubDefs/Def010_4/09_RootDef/class_pkg_kmh_ss022320.dart';
 
 /// -----
 /// TODO:
 /// -----
-class CARDNHIEMVUSS00A004MAPSS00A extends THANHPHANNUTBAMTICHHOPTHUOCCAP {
+class CARDNHIEMVUSS00A004MAPSS00A extends CARDNHIEMVUCHIENDAUCOBAN {
   /// -----
   /// TODO:
   /// -----
@@ -53,9 +54,11 @@ class CARDNHIEMVUSS00A004MAPSS00A extends THANHPHANNUTBAMTICHHOPTHUOCCAP {
   void onTapUp(TapUpEvent event) async {
     super.onTapUp(event);
 
-    onVoidKichHoat();
+    if (getNhiemVuChienDau?.getMoHinh?.getKhoaTruyCapNhiemVuChienDau?.onKiemTraTrangThaiKhoaTruyCap() == false) {
+      // onVoidKichHoat();
 
-    await getGameController?.onChonChiDinhNhiemVuChienDauSS00A004MAPSS00A();
+      await getGameController?.onChonChiDinhNhiemVuChienDauSS00A004MAPSS00A();
+    }
   }
 
   @override
@@ -163,26 +166,6 @@ class CARDNHIEMVUSS00A004MAPSS00A extends THANHPHANNUTBAMTICHHOPTHUOCCAP {
     getThanhPhanVanBan?.caiDatTuyChinhTextRenderer = true;
 
     ///
-    return;
-  }
-
-  /// -----
-  /// TODO: Nhiệm Vụ Chiến Đấu
-  /// -----
-  TRANGTHAINHIEMVUCHIENDAU? _nhiemVuChienDau = TRANGTHAINHIEMVUCHIENDAU(
-    value: null,
-  );
-  TRANGTHAINHIEMVUCHIENDAU? get getNhiemVuChienDau => _nhiemVuChienDau;
-  Future<void> onCaiDatNhiemVuChienDau({
-    required TRANGTHAINHIEMVUCHIENDAU? value,
-    bool? caiDatUuTien,
-  }) async {
-    if (caiDatUuTien == true) {
-      _nhiemVuChienDau = value;
-    } else {
-      _nhiemVuChienDau ??= value;
-    }
-
     return;
   }
 

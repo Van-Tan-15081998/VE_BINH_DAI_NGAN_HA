@@ -27,11 +27,12 @@ import 'package:pkg_khung_man_hinh_ss022320/22_def0022/ADef060_0/08_SubDefs/Def0
 import 'package:pkg_khung_man_hinh_ss022320/22_def0022/ADef060_0/08_SubDefs/Def020_2/08_SubDefs/Def066_4/09_RootDef/class_pkg_kmh_ss022320.dart';
 import 'package:pkg_khung_man_hinh_ss022320/22_def0022/ADef060_0/08_SubDefs/Def020_2/08_SubDefs/Def068_4/09_RootDef/class_pkg_kmh_ss022320.dart';
 
+import 'package:pkg_khung_man_hinh_ss022320/22_def0022/ADef060_0/08_SubDefs/Def020_2/08_SubDefs/Def010_4/09_RootDef/class_pkg_kmh_ss022320.dart';
+
 /// -----
 /// TODO: Quản Lý Thành Phần Tích Hợp
 /// -----
-class QUANLYTHANHPHANTICHHOPTHUOCCAP
-    extends QUANLYTHANHPHANTICHHOPTHUOCCAPCOBAN {
+class QUANLYTHANHPHANTICHHOPTHUOCCAP extends QUANLYTHANHPHANTICHHOPTHUOCCAPCOBAN {
   /// -----
   /// TODO:
   /// -----
@@ -44,19 +45,14 @@ class QUANLYTHANHPHANTICHHOPTHUOCCAP
   });
 
   List<THANHPHANNUTBAMTICHHOPTHUOCCAP?> danhSachCardNhiemVuChienDau = [];
-  List<THANHPHANNUTBAMTICHHOPTHUOCCAP?>
-  get getDanhSachCardNhiemVuChienDau => danhSachCardNhiemVuChienDau;
+  List<THANHPHANNUTBAMTICHHOPTHUOCCAP?> get getDanhSachCardNhiemVuChienDau => danhSachCardNhiemVuChienDau;
 
   /// -----
   /// TODO:
   /// -----
-  CARDNHIEMVUSS00A001MAPSS00A? _cardNhiemVuSS00A001MAPSS00A;
-  CARDNHIEMVUSS00A001MAPSS00A? get getCardNhiemVuSS00A001MAPSS00A =>
-      _cardNhiemVuSS00A001MAPSS00A;
-  Future<void> onCaiDatCardNhiemVuSS00A001MAPSS00A({
-    required CARDNHIEMVUSS00A001MAPSS00A? value,
-    bool? caiDatUuTien,
-  }) async {
+  CARDNHIEMVUCHIENDAUCOBAN? _cardNhiemVuSS00A001MAPSS00A;
+  CARDNHIEMVUCHIENDAUCOBAN? get getCardNhiemVuSS00A001MAPSS00A => _cardNhiemVuSS00A001MAPSS00A;
+  Future<void> onCaiDatCardNhiemVuSS00A001MAPSS00A({required CARDNHIEMVUCHIENDAUCOBAN? value, bool? caiDatUuTien}) async {
     if (caiDatUuTien == true) {
       _cardNhiemVuSS00A001MAPSS00A = value;
     } else {
@@ -70,13 +66,9 @@ class QUANLYTHANHPHANTICHHOPTHUOCCAP
   /// -----
   /// TODO:
   /// -----
-  CARDNHIEMVUSS00A002MAPSS00A? _cardNhiemVuSS00A002MAPSS00A;
-  CARDNHIEMVUSS00A002MAPSS00A? get getCardNhiemVuSS00A002MAPSS00A =>
-      _cardNhiemVuSS00A002MAPSS00A;
-  Future<void> onCaiDatCardNhiemVuSS00A002MAPSS00A({
-    required CARDNHIEMVUSS00A002MAPSS00A? value,
-    bool? caiDatUuTien,
-  }) async {
+  CARDNHIEMVUCHIENDAUCOBAN? _cardNhiemVuSS00A002MAPSS00A;
+  CARDNHIEMVUCHIENDAUCOBAN? get getCardNhiemVuSS00A002MAPSS00A => _cardNhiemVuSS00A002MAPSS00A;
+  Future<void> onCaiDatCardNhiemVuSS00A002MAPSS00A({required CARDNHIEMVUCHIENDAUCOBAN? value, bool? caiDatUuTien}) async {
     if (caiDatUuTien == true) {
       _cardNhiemVuSS00A002MAPSS00A = value;
     } else {
@@ -90,13 +82,9 @@ class QUANLYTHANHPHANTICHHOPTHUOCCAP
   /// -----
   /// TODO:
   /// -----
-  CARDNHIEMVUSS00A003MAPSS00A? _cardNhiemVuSS00A003MAPSS00A;
-  CARDNHIEMVUSS00A003MAPSS00A? get getCardNhiemVuSS00A003MAPSS00A =>
-      _cardNhiemVuSS00A003MAPSS00A;
-  Future<void> onCaiDatCardNhiemVuSS00A003MAPSS00A({
-    required CARDNHIEMVUSS00A003MAPSS00A? value,
-    bool? caiDatUuTien,
-  }) async {
+  CARDNHIEMVUCHIENDAUCOBAN? _cardNhiemVuSS00A003MAPSS00A;
+  CARDNHIEMVUCHIENDAUCOBAN? get getCardNhiemVuSS00A003MAPSS00A => _cardNhiemVuSS00A003MAPSS00A;
+  Future<void> onCaiDatCardNhiemVuSS00A003MAPSS00A({required CARDNHIEMVUCHIENDAUCOBAN? value, bool? caiDatUuTien}) async {
     if (caiDatUuTien == true) {
       _cardNhiemVuSS00A003MAPSS00A = value;
     } else {
@@ -110,13 +98,9 @@ class QUANLYTHANHPHANTICHHOPTHUOCCAP
   /// -----
   /// TODO:
   /// -----
-  CARDNHIEMVUSS00A004MAPSS00A? _cardNhiemVuSS00A004MAPSS00A;
-  CARDNHIEMVUSS00A004MAPSS00A? get getCardNhiemVuSS00A004MAPSS00A =>
-      _cardNhiemVuSS00A004MAPSS00A;
-  Future<void> onCaiDatCardNhiemVuSS00A004MAPSS00A({
-    required CARDNHIEMVUSS00A004MAPSS00A? value,
-    bool? caiDatUuTien,
-  }) async {
+  CARDNHIEMVUCHIENDAUCOBAN? _cardNhiemVuSS00A004MAPSS00A;
+  CARDNHIEMVUCHIENDAUCOBAN? get getCardNhiemVuSS00A004MAPSS00A => _cardNhiemVuSS00A004MAPSS00A;
+  Future<void> onCaiDatCardNhiemVuSS00A004MAPSS00A({required CARDNHIEMVUCHIENDAUCOBAN? value, bool? caiDatUuTien}) async {
     if (caiDatUuTien == true) {
       _cardNhiemVuSS00A004MAPSS00A = value;
     } else {
@@ -130,13 +114,9 @@ class QUANLYTHANHPHANTICHHOPTHUOCCAP
   /// -----
   /// TODO:
   /// -----
-  CARDNHIEMVUSS00A005MAPSS00A? _cardNhiemVuSS00A005MAPSS00A;
-  CARDNHIEMVUSS00A005MAPSS00A? get getCardNhiemVuSS00A005MAPSS00A =>
-      _cardNhiemVuSS00A005MAPSS00A;
-  Future<void> onCaiDatCardNhiemVuSS00A005MAPSS00A({
-    required CARDNHIEMVUSS00A005MAPSS00A? value,
-    bool? caiDatUuTien,
-  }) async {
+  CARDNHIEMVUCHIENDAUCOBAN? _cardNhiemVuSS00A005MAPSS00A;
+  CARDNHIEMVUCHIENDAUCOBAN? get getCardNhiemVuSS00A005MAPSS00A => _cardNhiemVuSS00A005MAPSS00A;
+  Future<void> onCaiDatCardNhiemVuSS00A005MAPSS00A({required CARDNHIEMVUCHIENDAUCOBAN? value, bool? caiDatUuTien}) async {
     if (caiDatUuTien == true) {
       _cardNhiemVuSS00A005MAPSS00A = value;
     } else {
@@ -150,13 +130,9 @@ class QUANLYTHANHPHANTICHHOPTHUOCCAP
   /// -----
   /// TODO:
   /// -----
-  CARDNHIEMVUSS00A006MAPSS00A? _cardNhiemVuSS00A006MAPSS00A;
-  CARDNHIEMVUSS00A006MAPSS00A? get getCardNhiemVuSS00A006MAPSS00A =>
-      _cardNhiemVuSS00A006MAPSS00A;
-  Future<void> onCaiDatCardNhiemVuSS00A006MAPSS00A({
-    required CARDNHIEMVUSS00A006MAPSS00A? value,
-    bool? caiDatUuTien,
-  }) async {
+  CARDNHIEMVUCHIENDAUCOBAN? _cardNhiemVuSS00A006MAPSS00A;
+  CARDNHIEMVUCHIENDAUCOBAN? get getCardNhiemVuSS00A006MAPSS00A => _cardNhiemVuSS00A006MAPSS00A;
+  Future<void> onCaiDatCardNhiemVuSS00A006MAPSS00A({required CARDNHIEMVUCHIENDAUCOBAN? value, bool? caiDatUuTien}) async {
     if (caiDatUuTien == true) {
       _cardNhiemVuSS00A006MAPSS00A = value;
     } else {
@@ -170,13 +146,9 @@ class QUANLYTHANHPHANTICHHOPTHUOCCAP
   /// -----
   /// TODO:
   /// -----
-  CARDNHIEMVUSS00A007MAPSS00A? _cardNhiemVuSS00A007MAPSS00A;
-  CARDNHIEMVUSS00A007MAPSS00A? get getCardNhiemVuSS00A007MAPSS00A =>
-      _cardNhiemVuSS00A007MAPSS00A;
-  Future<void> onCaiDatCardNhiemVuSS00A007MAPSS00A({
-    required CARDNHIEMVUSS00A007MAPSS00A? value,
-    bool? caiDatUuTien,
-  }) async {
+  CARDNHIEMVUCHIENDAUCOBAN? _cardNhiemVuSS00A007MAPSS00A;
+  CARDNHIEMVUCHIENDAUCOBAN? get getCardNhiemVuSS00A007MAPSS00A => _cardNhiemVuSS00A007MAPSS00A;
+  Future<void> onCaiDatCardNhiemVuSS00A007MAPSS00A({required CARDNHIEMVUCHIENDAUCOBAN? value, bool? caiDatUuTien}) async {
     if (caiDatUuTien == true) {
       _cardNhiemVuSS00A007MAPSS00A = value;
     } else {
@@ -190,13 +162,9 @@ class QUANLYTHANHPHANTICHHOPTHUOCCAP
   /// -----
   /// TODO:
   /// -----
-  CARDNHIEMVUSS00A008MAPSS00A? _cardNhiemVuSS00A008MAPSS00A;
-  CARDNHIEMVUSS00A008MAPSS00A? get getCardNhiemVuSS00A008MAPSS00A =>
-      _cardNhiemVuSS00A008MAPSS00A;
-  Future<void> onCaiDatCardNhiemVuSS00A008MAPSS00A({
-    required CARDNHIEMVUSS00A008MAPSS00A? value,
-    bool? caiDatUuTien,
-  }) async {
+  CARDNHIEMVUCHIENDAUCOBAN? _cardNhiemVuSS00A008MAPSS00A;
+  CARDNHIEMVUCHIENDAUCOBAN? get getCardNhiemVuSS00A008MAPSS00A => _cardNhiemVuSS00A008MAPSS00A;
+  Future<void> onCaiDatCardNhiemVuSS00A008MAPSS00A({required CARDNHIEMVUCHIENDAUCOBAN? value, bool? caiDatUuTien}) async {
     if (caiDatUuTien == true) {
       _cardNhiemVuSS00A008MAPSS00A = value;
     } else {
@@ -210,13 +178,9 @@ class QUANLYTHANHPHANTICHHOPTHUOCCAP
   /// -----
   /// TODO:
   /// -----
-  CARDNHIEMVUSS00A009MAPSS00A? _cardNhiemVuSS00A009MAPSS00A;
-  CARDNHIEMVUSS00A009MAPSS00A? get getCardNhiemVuSS00A009MAPSS00A =>
-      _cardNhiemVuSS00A009MAPSS00A;
-  Future<void> onCaiDatCardNhiemVuSS00A009MAPSS00A({
-    required CARDNHIEMVUSS00A009MAPSS00A? value,
-    bool? caiDatUuTien,
-  }) async {
+  CARDNHIEMVUCHIENDAUCOBAN? _cardNhiemVuSS00A009MAPSS00A;
+  CARDNHIEMVUCHIENDAUCOBAN? get getCardNhiemVuSS00A009MAPSS00A => _cardNhiemVuSS00A009MAPSS00A;
+  Future<void> onCaiDatCardNhiemVuSS00A009MAPSS00A({required CARDNHIEMVUCHIENDAUCOBAN? value, bool? caiDatUuTien}) async {
     if (caiDatUuTien == true) {
       _cardNhiemVuSS00A009MAPSS00A = value;
     } else {
@@ -230,13 +194,9 @@ class QUANLYTHANHPHANTICHHOPTHUOCCAP
   /// -----
   /// TODO:
   /// -----
-  CARDNHIEMVUSS00A010MAPSS00A? _cardNhiemVuSS00A010MAPSS00A;
-  CARDNHIEMVUSS00A010MAPSS00A? get getCardNhiemVuSS00A010MAPSS00A =>
-      _cardNhiemVuSS00A010MAPSS00A;
-  Future<void> onCaiDatCardNhiemVuSS00A010MAPSS00A({
-    required CARDNHIEMVUSS00A010MAPSS00A? value,
-    bool? caiDatUuTien,
-  }) async {
+  CARDNHIEMVUCHIENDAUCOBAN? _cardNhiemVuSS00A010MAPSS00A;
+  CARDNHIEMVUCHIENDAUCOBAN? get getCardNhiemVuSS00A010MAPSS00A => _cardNhiemVuSS00A010MAPSS00A;
+  Future<void> onCaiDatCardNhiemVuSS00A010MAPSS00A({required CARDNHIEMVUCHIENDAUCOBAN? value, bool? caiDatUuTien}) async {
     if (caiDatUuTien == true) {
       _cardNhiemVuSS00A010MAPSS00A = value;
     } else {
@@ -250,13 +210,9 @@ class QUANLYTHANHPHANTICHHOPTHUOCCAP
   /// -----
   /// TODO:
   /// -----
-  CARDNHIEMVUSS00A011MAPSS00A? _cardNhiemVuSS00A011MAPSS00A;
-  CARDNHIEMVUSS00A011MAPSS00A? get getCardNhiemVuSS00A011MAPSS00A =>
-      _cardNhiemVuSS00A011MAPSS00A;
-  Future<void> onCaiDatCardNhiemVuSS00A011MAPSS00A({
-    required CARDNHIEMVUSS00A011MAPSS00A? value,
-    bool? caiDatUuTien,
-  }) async {
+  CARDNHIEMVUCHIENDAUCOBAN? _cardNhiemVuSS00A011MAPSS00A;
+  CARDNHIEMVUCHIENDAUCOBAN? get getCardNhiemVuSS00A011MAPSS00A => _cardNhiemVuSS00A011MAPSS00A;
+  Future<void> onCaiDatCardNhiemVuSS00A011MAPSS00A({required CARDNHIEMVUCHIENDAUCOBAN? value, bool? caiDatUuTien}) async {
     if (caiDatUuTien == true) {
       _cardNhiemVuSS00A011MAPSS00A = value;
     } else {
@@ -270,13 +226,9 @@ class QUANLYTHANHPHANTICHHOPTHUOCCAP
   /// -----
   /// TODO:
   /// -----
-  CARDNHIEMVUSS00A012MAPSS00A? _cardNhiemVuSS00A012MAPSS00A;
-  CARDNHIEMVUSS00A012MAPSS00A? get getCardNhiemVuSS00A012MAPSS00A =>
-      _cardNhiemVuSS00A012MAPSS00A;
-  Future<void> onCaiDatCardNhiemVuSS00A012MAPSS00A({
-    required CARDNHIEMVUSS00A012MAPSS00A? value,
-    bool? caiDatUuTien,
-  }) async {
+  CARDNHIEMVUCHIENDAUCOBAN? _cardNhiemVuSS00A012MAPSS00A;
+  CARDNHIEMVUCHIENDAUCOBAN? get getCardNhiemVuSS00A012MAPSS00A => _cardNhiemVuSS00A012MAPSS00A;
+  Future<void> onCaiDatCardNhiemVuSS00A012MAPSS00A({required CARDNHIEMVUCHIENDAUCOBAN? value, bool? caiDatUuTien}) async {
     if (caiDatUuTien == true) {
       _cardNhiemVuSS00A012MAPSS00A = value;
     } else {
@@ -290,13 +242,9 @@ class QUANLYTHANHPHANTICHHOPTHUOCCAP
   /// -----
   /// TODO:
   /// -----
-  CARDNHIEMVUSS00A013MAPSS00A? _cardNhiemVuSS00A013MAPSS00A;
-  CARDNHIEMVUSS00A013MAPSS00A? get getCardNhiemVuSS00A013MAPSS00A =>
-      _cardNhiemVuSS00A013MAPSS00A;
-  Future<void> onCaiDatCardNhiemVuSS00A013MAPSS00A({
-    required CARDNHIEMVUSS00A013MAPSS00A? value,
-    bool? caiDatUuTien,
-  }) async {
+  CARDNHIEMVUCHIENDAUCOBAN? _cardNhiemVuSS00A013MAPSS00A;
+  CARDNHIEMVUCHIENDAUCOBAN? get getCardNhiemVuSS00A013MAPSS00A => _cardNhiemVuSS00A013MAPSS00A;
+  Future<void> onCaiDatCardNhiemVuSS00A013MAPSS00A({required CARDNHIEMVUCHIENDAUCOBAN? value, bool? caiDatUuTien}) async {
     if (caiDatUuTien == true) {
       _cardNhiemVuSS00A013MAPSS00A = value;
     } else {
@@ -310,13 +258,9 @@ class QUANLYTHANHPHANTICHHOPTHUOCCAP
   /// -----
   /// TODO:
   /// -----
-  CARDNHIEMVUSS00A014MAPSS00A? _cardNhiemVuSS00A014MAPSS00A;
-  CARDNHIEMVUSS00A014MAPSS00A? get getCardNhiemVuSS00A014MAPSS00A =>
-      _cardNhiemVuSS00A014MAPSS00A;
-  Future<void> onCaiDatCardNhiemVuSS00A014MAPSS00A({
-    required CARDNHIEMVUSS00A014MAPSS00A? value,
-    bool? caiDatUuTien,
-  }) async {
+  CARDNHIEMVUCHIENDAUCOBAN? _cardNhiemVuSS00A014MAPSS00A;
+  CARDNHIEMVUCHIENDAUCOBAN? get getCardNhiemVuSS00A014MAPSS00A => _cardNhiemVuSS00A014MAPSS00A;
+  Future<void> onCaiDatCardNhiemVuSS00A014MAPSS00A({required CARDNHIEMVUCHIENDAUCOBAN? value, bool? caiDatUuTien}) async {
     if (caiDatUuTien == true) {
       _cardNhiemVuSS00A014MAPSS00A = value;
     } else {
@@ -330,13 +274,9 @@ class QUANLYTHANHPHANTICHHOPTHUOCCAP
   /// -----
   /// TODO:
   /// -----
-  CARDNHIEMVUSS00A015MAPSS00A? _cardNhiemVuSS00A015MAPSS00A;
-  CARDNHIEMVUSS00A015MAPSS00A? get getCardNhiemVuSS00A015MAPSS00A =>
-      _cardNhiemVuSS00A015MAPSS00A;
-  Future<void> onCaiDatCardNhiemVuSS00A015MAPSS00A({
-    required CARDNHIEMVUSS00A015MAPSS00A? value,
-    bool? caiDatUuTien,
-  }) async {
+  CARDNHIEMVUCHIENDAUCOBAN? _cardNhiemVuSS00A015MAPSS00A;
+  CARDNHIEMVUCHIENDAUCOBAN? get getCardNhiemVuSS00A015MAPSS00A => _cardNhiemVuSS00A015MAPSS00A;
+  Future<void> onCaiDatCardNhiemVuSS00A015MAPSS00A({required CARDNHIEMVUCHIENDAUCOBAN? value, bool? caiDatUuTien}) async {
     if (caiDatUuTien == true) {
       _cardNhiemVuSS00A015MAPSS00A = value;
     } else {
@@ -350,13 +290,9 @@ class QUANLYTHANHPHANTICHHOPTHUOCCAP
   /// -----
   /// TODO:
   /// -----
-  CARDNHIEMVUSS00A016MAPSS00A? _cardNhiemVuSS00A016MAPSS00A;
-  CARDNHIEMVUSS00A016MAPSS00A? get getCardNhiemVuSS00A016MAPSS00A =>
-      _cardNhiemVuSS00A016MAPSS00A;
-  Future<void> onCaiDatCardNhiemVuSS00A016MAPSS00A({
-    required CARDNHIEMVUSS00A016MAPSS00A? value,
-    bool? caiDatUuTien,
-  }) async {
+  CARDNHIEMVUCHIENDAUCOBAN? _cardNhiemVuSS00A016MAPSS00A;
+  CARDNHIEMVUCHIENDAUCOBAN? get getCardNhiemVuSS00A016MAPSS00A => _cardNhiemVuSS00A016MAPSS00A;
+  Future<void> onCaiDatCardNhiemVuSS00A016MAPSS00A({required CARDNHIEMVUCHIENDAUCOBAN? value, bool? caiDatUuTien}) async {
     if (caiDatUuTien == true) {
       _cardNhiemVuSS00A016MAPSS00A = value;
     } else {
@@ -370,13 +306,9 @@ class QUANLYTHANHPHANTICHHOPTHUOCCAP
   /// -----
   /// TODO:
   /// -----
-  CARDNHIEMVUSS00A017MAPSS00A? _cardNhiemVuSS00A017MAPSS00A;
-  CARDNHIEMVUSS00A017MAPSS00A? get getCardNhiemVuSS00A017MAPSS00A =>
-      _cardNhiemVuSS00A017MAPSS00A;
-  Future<void> onCaiDatCardNhiemVuSS00A017MAPSS00A({
-    required CARDNHIEMVUSS00A017MAPSS00A? value,
-    bool? caiDatUuTien,
-  }) async {
+  CARDNHIEMVUCHIENDAUCOBAN? _cardNhiemVuSS00A017MAPSS00A;
+  CARDNHIEMVUCHIENDAUCOBAN? get getCardNhiemVuSS00A017MAPSS00A => _cardNhiemVuSS00A017MAPSS00A;
+  Future<void> onCaiDatCardNhiemVuSS00A017MAPSS00A({required CARDNHIEMVUCHIENDAUCOBAN? value, bool? caiDatUuTien}) async {
     if (caiDatUuTien == true) {
       _cardNhiemVuSS00A017MAPSS00A = value;
     } else {
@@ -390,13 +322,9 @@ class QUANLYTHANHPHANTICHHOPTHUOCCAP
   /// -----
   /// TODO:
   /// -----
-  CARDNHIEMVUSS00A018MAPSS00A? _cardNhiemVuSS00A018MAPSS00A;
-  CARDNHIEMVUSS00A018MAPSS00A? get getCardNhiemVuSS00A018MAPSS00A =>
-      _cardNhiemVuSS00A018MAPSS00A;
-  Future<void> onCaiDatCardNhiemVuSS00A018MAPSS00A({
-    required CARDNHIEMVUSS00A018MAPSS00A? value,
-    bool? caiDatUuTien,
-  }) async {
+  CARDNHIEMVUCHIENDAUCOBAN? _cardNhiemVuSS00A018MAPSS00A;
+  CARDNHIEMVUCHIENDAUCOBAN? get getCardNhiemVuSS00A018MAPSS00A => _cardNhiemVuSS00A018MAPSS00A;
+  Future<void> onCaiDatCardNhiemVuSS00A018MAPSS00A({required CARDNHIEMVUCHIENDAUCOBAN? value, bool? caiDatUuTien}) async {
     if (caiDatUuTien == true) {
       _cardNhiemVuSS00A018MAPSS00A = value;
     } else {
@@ -410,13 +338,9 @@ class QUANLYTHANHPHANTICHHOPTHUOCCAP
   /// -----
   /// TODO:
   /// -----
-  CARDNHIEMVUSS00A019MAPSS00A? _cardNhiemVuSS00A019MAPSS00A;
-  CARDNHIEMVUSS00A019MAPSS00A? get getCardNhiemVuSS00A019MAPSS00A =>
-      _cardNhiemVuSS00A019MAPSS00A;
-  Future<void> onCaiDatCardNhiemVuSS00A019MAPSS00A({
-    required CARDNHIEMVUSS00A019MAPSS00A? value,
-    bool? caiDatUuTien,
-  }) async {
+  CARDNHIEMVUCHIENDAUCOBAN? _cardNhiemVuSS00A019MAPSS00A;
+  CARDNHIEMVUCHIENDAUCOBAN? get getCardNhiemVuSS00A019MAPSS00A => _cardNhiemVuSS00A019MAPSS00A;
+  Future<void> onCaiDatCardNhiemVuSS00A019MAPSS00A({required CARDNHIEMVUCHIENDAUCOBAN? value, bool? caiDatUuTien}) async {
     if (caiDatUuTien == true) {
       _cardNhiemVuSS00A019MAPSS00A = value;
     } else {
@@ -430,13 +354,9 @@ class QUANLYTHANHPHANTICHHOPTHUOCCAP
   /// -----
   /// TODO:
   /// -----
-  CARDNHIEMVUSS00A020MAPSS00A? _cardNhiemVuSS00A020MAPSS00A;
-  CARDNHIEMVUSS00A020MAPSS00A? get getCardNhiemVuSS00A020MAPSS00A =>
-      _cardNhiemVuSS00A020MAPSS00A;
-  Future<void> onCaiDatCardNhiemVuSS00A020MAPSS00A({
-    required CARDNHIEMVUSS00A020MAPSS00A? value,
-    bool? caiDatUuTien,
-  }) async {
+  CARDNHIEMVUCHIENDAUCOBAN? _cardNhiemVuSS00A020MAPSS00A;
+  CARDNHIEMVUCHIENDAUCOBAN? get getCardNhiemVuSS00A020MAPSS00A => _cardNhiemVuSS00A020MAPSS00A;
+  Future<void> onCaiDatCardNhiemVuSS00A020MAPSS00A({required CARDNHIEMVUCHIENDAUCOBAN? value, bool? caiDatUuTien}) async {
     if (caiDatUuTien == true) {
       _cardNhiemVuSS00A020MAPSS00A = value;
     } else {
@@ -450,13 +370,9 @@ class QUANLYTHANHPHANTICHHOPTHUOCCAP
   /// -----
   /// TODO:
   /// -----
-  CARDNHIEMVUSS00A021MAPSS00A? _cardNhiemVuSS00A021MAPSS00A;
-  CARDNHIEMVUSS00A021MAPSS00A? get getCardNhiemVuSS00A021MAPSS00A =>
-      _cardNhiemVuSS00A021MAPSS00A;
-  Future<void> onCaiDatCardNhiemVuSS00A021MAPSS00A({
-    required CARDNHIEMVUSS00A021MAPSS00A? value,
-    bool? caiDatUuTien,
-  }) async {
+  CARDNHIEMVUCHIENDAUCOBAN? _cardNhiemVuSS00A021MAPSS00A;
+  CARDNHIEMVUCHIENDAUCOBAN? get getCardNhiemVuSS00A021MAPSS00A => _cardNhiemVuSS00A021MAPSS00A;
+  Future<void> onCaiDatCardNhiemVuSS00A021MAPSS00A({required CARDNHIEMVUCHIENDAUCOBAN? value, bool? caiDatUuTien}) async {
     if (caiDatUuTien == true) {
       _cardNhiemVuSS00A021MAPSS00A = value;
     } else {
@@ -470,13 +386,9 @@ class QUANLYTHANHPHANTICHHOPTHUOCCAP
   /// -----
   /// TODO:
   /// -----
-  CARDNHIEMVUSS00A022MAPSS00A? _cardNhiemVuSS00A022MAPSS00A;
-  CARDNHIEMVUSS00A022MAPSS00A? get getCardNhiemVuSS00A022MAPSS00A =>
-      _cardNhiemVuSS00A022MAPSS00A;
-  Future<void> onCaiDatCardNhiemVuSS00A022MAPSS00A({
-    required CARDNHIEMVUSS00A022MAPSS00A? value,
-    bool? caiDatUuTien,
-  }) async {
+  CARDNHIEMVUCHIENDAUCOBAN? _cardNhiemVuSS00A022MAPSS00A;
+  CARDNHIEMVUCHIENDAUCOBAN? get getCardNhiemVuSS00A022MAPSS00A => _cardNhiemVuSS00A022MAPSS00A;
+  Future<void> onCaiDatCardNhiemVuSS00A022MAPSS00A({required CARDNHIEMVUCHIENDAUCOBAN? value, bool? caiDatUuTien}) async {
     if (caiDatUuTien == true) {
       _cardNhiemVuSS00A022MAPSS00A = value;
     } else {
@@ -490,13 +402,9 @@ class QUANLYTHANHPHANTICHHOPTHUOCCAP
   /// -----
   /// TODO:
   /// -----
-  CARDNHIEMVUSS00A023MAPSS00A? _cardNhiemVuSS00A023MAPSS00A;
-  CARDNHIEMVUSS00A023MAPSS00A? get getCardNhiemVuSS00A023MAPSS00A =>
-      _cardNhiemVuSS00A023MAPSS00A;
-  Future<void> onCaiDatCardNhiemVuSS00A023MAPSS00A({
-    required CARDNHIEMVUSS00A023MAPSS00A? value,
-    bool? caiDatUuTien,
-  }) async {
+  CARDNHIEMVUCHIENDAUCOBAN? _cardNhiemVuSS00A023MAPSS00A;
+  CARDNHIEMVUCHIENDAUCOBAN? get getCardNhiemVuSS00A023MAPSS00A => _cardNhiemVuSS00A023MAPSS00A;
+  Future<void> onCaiDatCardNhiemVuSS00A023MAPSS00A({required CARDNHIEMVUCHIENDAUCOBAN? value, bool? caiDatUuTien}) async {
     if (caiDatUuTien == true) {
       _cardNhiemVuSS00A023MAPSS00A = value;
     } else {
@@ -510,13 +418,9 @@ class QUANLYTHANHPHANTICHHOPTHUOCCAP
   /// -----
   /// TODO:
   /// -----
-  CARDNHIEMVUSS00A024MAPSS00A? _cardNhiemVuSS00A024MAPSS00A;
-  CARDNHIEMVUSS00A024MAPSS00A? get getCardNhiemVuSS00A024MAPSS00A =>
-      _cardNhiemVuSS00A024MAPSS00A;
-  Future<void> onCaiDatCardNhiemVuSS00A024MAPSS00A({
-    required CARDNHIEMVUSS00A024MAPSS00A? value,
-    bool? caiDatUuTien,
-  }) async {
+  CARDNHIEMVUCHIENDAUCOBAN? _cardNhiemVuSS00A024MAPSS00A;
+  CARDNHIEMVUCHIENDAUCOBAN? get getCardNhiemVuSS00A024MAPSS00A => _cardNhiemVuSS00A024MAPSS00A;
+  Future<void> onCaiDatCardNhiemVuSS00A024MAPSS00A({required CARDNHIEMVUCHIENDAUCOBAN? value, bool? caiDatUuTien}) async {
     if (caiDatUuTien == true) {
       _cardNhiemVuSS00A024MAPSS00A = value;
     } else {
@@ -530,13 +434,9 @@ class QUANLYTHANHPHANTICHHOPTHUOCCAP
   /// -----
   /// TODO:
   /// -----
-  CARDNHIEMVUSS00A025MAPSS00A? _cardNhiemVuSS00A025MAPSS00A;
-  CARDNHIEMVUSS00A025MAPSS00A? get getCardNhiemVuSS00A025MAPSS00A =>
-      _cardNhiemVuSS00A025MAPSS00A;
-  Future<void> onCaiDatCardNhiemVuSS00A025MAPSS00A({
-    required CARDNHIEMVUSS00A025MAPSS00A? value,
-    bool? caiDatUuTien,
-  }) async {
+  CARDNHIEMVUCHIENDAUCOBAN? _cardNhiemVuSS00A025MAPSS00A;
+  CARDNHIEMVUCHIENDAUCOBAN? get getCardNhiemVuSS00A025MAPSS00A => _cardNhiemVuSS00A025MAPSS00A;
+  Future<void> onCaiDatCardNhiemVuSS00A025MAPSS00A({required CARDNHIEMVUCHIENDAUCOBAN? value, bool? caiDatUuTien}) async {
     if (caiDatUuTien == true) {
       _cardNhiemVuSS00A025MAPSS00A = value;
     } else {
@@ -551,140 +451,37 @@ class QUANLYTHANHPHANTICHHOPTHUOCCAP
   /// TODO: Add Comp Root
   /// -----
   @override
-  Future<void> onAddRoot({
-    required FlameGame? flameGame,
-    required Component? component,
-  }) async {
+  Future<void> onAddRoot({required FlameGame? flameGame, required Component? component}) async {
     try {
       /// -----
       /// TODO:
       /// -----
       await Future.wait([
-        onAddComponent(
-          flameGame: null,
-          parentComponent: component,
-          childComponent: getCardNhiemVuSS00A001MAPSS00A,
-        ).catchError((e) => null),
-        onAddComponent(
-          flameGame: null,
-          parentComponent: component,
-          childComponent: getCardNhiemVuSS00A002MAPSS00A,
-        ).catchError((e) => null),
-        onAddComponent(
-          flameGame: null,
-          parentComponent: component,
-          childComponent: getCardNhiemVuSS00A003MAPSS00A,
-        ).catchError((e) => null),
-        onAddComponent(
-          flameGame: null,
-          parentComponent: component,
-          childComponent: getCardNhiemVuSS00A004MAPSS00A,
-        ).catchError((e) => null),
-        onAddComponent(
-          flameGame: null,
-          parentComponent: component,
-          childComponent: getCardNhiemVuSS00A005MAPSS00A,
-        ).catchError((e) => null),
-        onAddComponent(
-          flameGame: null,
-          parentComponent: component,
-          childComponent: getCardNhiemVuSS00A006MAPSS00A,
-        ).catchError((e) => null),
-        onAddComponent(
-          flameGame: null,
-          parentComponent: component,
-          childComponent: getCardNhiemVuSS00A007MAPSS00A,
-        ).catchError((e) => null),
-        onAddComponent(
-          flameGame: null,
-          parentComponent: component,
-          childComponent: getCardNhiemVuSS00A008MAPSS00A,
-        ).catchError((e) => null),
-        onAddComponent(
-          flameGame: null,
-          parentComponent: component,
-          childComponent: getCardNhiemVuSS00A009MAPSS00A,
-        ).catchError((e) => null),
-        onAddComponent(
-          flameGame: null,
-          parentComponent: component,
-          childComponent: getCardNhiemVuSS00A010MAPSS00A,
-        ).catchError((e) => null),
-        onAddComponent(
-          flameGame: null,
-          parentComponent: component,
-          childComponent: getCardNhiemVuSS00A011MAPSS00A,
-        ).catchError((e) => null),
-        onAddComponent(
-          flameGame: null,
-          parentComponent: component,
-          childComponent: getCardNhiemVuSS00A012MAPSS00A,
-        ).catchError((e) => null),
-        onAddComponent(
-          flameGame: null,
-          parentComponent: component,
-          childComponent: getCardNhiemVuSS00A013MAPSS00A,
-        ).catchError((e) => null),
-        onAddComponent(
-          flameGame: null,
-          parentComponent: component,
-          childComponent: getCardNhiemVuSS00A014MAPSS00A,
-        ).catchError((e) => null),
-        onAddComponent(
-          flameGame: null,
-          parentComponent: component,
-          childComponent: getCardNhiemVuSS00A015MAPSS00A,
-        ).catchError((e) => null),
-        onAddComponent(
-          flameGame: null,
-          parentComponent: component,
-          childComponent: getCardNhiemVuSS00A016MAPSS00A,
-        ).catchError((e) => null),
-        onAddComponent(
-          flameGame: null,
-          parentComponent: component,
-          childComponent: getCardNhiemVuSS00A017MAPSS00A,
-        ).catchError((e) => null),
-        onAddComponent(
-          flameGame: null,
-          parentComponent: component,
-          childComponent: getCardNhiemVuSS00A018MAPSS00A,
-        ).catchError((e) => null),
-        onAddComponent(
-          flameGame: null,
-          parentComponent: component,
-          childComponent: getCardNhiemVuSS00A019MAPSS00A,
-        ).catchError((e) => null),
-        onAddComponent(
-          flameGame: null,
-          parentComponent: component,
-          childComponent: getCardNhiemVuSS00A020MAPSS00A,
-        ).catchError((e) => null),
-        onAddComponent(
-          flameGame: null,
-          parentComponent: component,
-          childComponent: getCardNhiemVuSS00A021MAPSS00A,
-        ).catchError((e) => null),
-        onAddComponent(
-          flameGame: null,
-          parentComponent: component,
-          childComponent: getCardNhiemVuSS00A022MAPSS00A,
-        ).catchError((e) => null),
-        onAddComponent(
-          flameGame: null,
-          parentComponent: component,
-          childComponent: getCardNhiemVuSS00A023MAPSS00A,
-        ).catchError((e) => null),
-        onAddComponent(
-          flameGame: null,
-          parentComponent: component,
-          childComponent: getCardNhiemVuSS00A024MAPSS00A,
-        ).catchError((e) => null),
-        onAddComponent(
-          flameGame: null,
-          parentComponent: component,
-          childComponent: getCardNhiemVuSS00A025MAPSS00A,
-        ).catchError((e) => null),
+        onAddComponent(flameGame: null, parentComponent: component, childComponent: getCardNhiemVuSS00A001MAPSS00A).catchError((e) => null),
+        onAddComponent(flameGame: null, parentComponent: component, childComponent: getCardNhiemVuSS00A002MAPSS00A).catchError((e) => null),
+        onAddComponent(flameGame: null, parentComponent: component, childComponent: getCardNhiemVuSS00A003MAPSS00A).catchError((e) => null),
+        onAddComponent(flameGame: null, parentComponent: component, childComponent: getCardNhiemVuSS00A004MAPSS00A).catchError((e) => null),
+        onAddComponent(flameGame: null, parentComponent: component, childComponent: getCardNhiemVuSS00A005MAPSS00A).catchError((e) => null),
+        onAddComponent(flameGame: null, parentComponent: component, childComponent: getCardNhiemVuSS00A006MAPSS00A).catchError((e) => null),
+        onAddComponent(flameGame: null, parentComponent: component, childComponent: getCardNhiemVuSS00A007MAPSS00A).catchError((e) => null),
+        onAddComponent(flameGame: null, parentComponent: component, childComponent: getCardNhiemVuSS00A008MAPSS00A).catchError((e) => null),
+        onAddComponent(flameGame: null, parentComponent: component, childComponent: getCardNhiemVuSS00A009MAPSS00A).catchError((e) => null),
+        onAddComponent(flameGame: null, parentComponent: component, childComponent: getCardNhiemVuSS00A010MAPSS00A).catchError((e) => null),
+        onAddComponent(flameGame: null, parentComponent: component, childComponent: getCardNhiemVuSS00A011MAPSS00A).catchError((e) => null),
+        onAddComponent(flameGame: null, parentComponent: component, childComponent: getCardNhiemVuSS00A012MAPSS00A).catchError((e) => null),
+        onAddComponent(flameGame: null, parentComponent: component, childComponent: getCardNhiemVuSS00A013MAPSS00A).catchError((e) => null),
+        onAddComponent(flameGame: null, parentComponent: component, childComponent: getCardNhiemVuSS00A014MAPSS00A).catchError((e) => null),
+        onAddComponent(flameGame: null, parentComponent: component, childComponent: getCardNhiemVuSS00A015MAPSS00A).catchError((e) => null),
+        onAddComponent(flameGame: null, parentComponent: component, childComponent: getCardNhiemVuSS00A016MAPSS00A).catchError((e) => null),
+        onAddComponent(flameGame: null, parentComponent: component, childComponent: getCardNhiemVuSS00A017MAPSS00A).catchError((e) => null),
+        onAddComponent(flameGame: null, parentComponent: component, childComponent: getCardNhiemVuSS00A018MAPSS00A).catchError((e) => null),
+        onAddComponent(flameGame: null, parentComponent: component, childComponent: getCardNhiemVuSS00A019MAPSS00A).catchError((e) => null),
+        onAddComponent(flameGame: null, parentComponent: component, childComponent: getCardNhiemVuSS00A020MAPSS00A).catchError((e) => null),
+        onAddComponent(flameGame: null, parentComponent: component, childComponent: getCardNhiemVuSS00A021MAPSS00A).catchError((e) => null),
+        onAddComponent(flameGame: null, parentComponent: component, childComponent: getCardNhiemVuSS00A022MAPSS00A).catchError((e) => null),
+        onAddComponent(flameGame: null, parentComponent: component, childComponent: getCardNhiemVuSS00A023MAPSS00A).catchError((e) => null),
+        onAddComponent(flameGame: null, parentComponent: component, childComponent: getCardNhiemVuSS00A024MAPSS00A).catchError((e) => null),
+        onAddComponent(flameGame: null, parentComponent: component, childComponent: getCardNhiemVuSS00A025MAPSS00A).catchError((e) => null),
       ]);
 
       /// -----
@@ -703,115 +500,37 @@ class QUANLYTHANHPHANTICHHOPTHUOCCAP
   /// TODO: Add Comp Root For SubCom
   /// -----
   @override
-  Future<void> onAddRootForSubCom({
-    required FlameGame? flameGame,
-    required Component? component,
-  }) async {
+  Future<void> onAddRootForSubCom({required FlameGame? flameGame, required Component? component}) async {
     try {
       /// -----
       /// TODO:
       /// -----
       await Future.wait([
-        getCardNhiemVuSS00A001MAPSS00A
-                ?.onAddRoot(flameGame: null, component: component)
-                .catchError((e) => null) ??
-            onReportRootIssue(nameFunction: 'onAddRootForSubCom'),
-        getCardNhiemVuSS00A002MAPSS00A
-                ?.onAddRoot(flameGame: null, component: component)
-                .catchError((e) => null) ??
-            onReportRootIssue(nameFunction: 'onAddRootForSubCom'),
-        getCardNhiemVuSS00A003MAPSS00A
-                ?.onAddRoot(flameGame: null, component: component)
-                .catchError((e) => null) ??
-            onReportRootIssue(nameFunction: 'onAddRootForSubCom'),
-        getCardNhiemVuSS00A004MAPSS00A
-                ?.onAddRoot(flameGame: null, component: component)
-                .catchError((e) => null) ??
-            onReportRootIssue(nameFunction: 'onAddRootForSubCom'),
-        getCardNhiemVuSS00A005MAPSS00A
-                ?.onAddRoot(flameGame: null, component: component)
-                .catchError((e) => null) ??
-            onReportRootIssue(nameFunction: 'onAddRootForSubCom'),
-        getCardNhiemVuSS00A006MAPSS00A
-                ?.onAddRoot(flameGame: null, component: component)
-                .catchError((e) => null) ??
-            onReportRootIssue(nameFunction: 'onAddRootForSubCom'),
-        getCardNhiemVuSS00A007MAPSS00A
-                ?.onAddRoot(flameGame: null, component: component)
-                .catchError((e) => null) ??
-            onReportRootIssue(nameFunction: 'onAddRootForSubCom'),
-        getCardNhiemVuSS00A008MAPSS00A
-                ?.onAddRoot(flameGame: null, component: component)
-                .catchError((e) => null) ??
-            onReportRootIssue(nameFunction: 'onAddRootForSubCom'),
-        getCardNhiemVuSS00A009MAPSS00A
-                ?.onAddRoot(flameGame: null, component: component)
-                .catchError((e) => null) ??
-            onReportRootIssue(nameFunction: 'onAddRootForSubCom'),
-        getCardNhiemVuSS00A010MAPSS00A
-                ?.onAddRoot(flameGame: null, component: component)
-                .catchError((e) => null) ??
-            onReportRootIssue(nameFunction: 'onAddRootForSubCom'),
-        getCardNhiemVuSS00A011MAPSS00A
-                ?.onAddRoot(flameGame: null, component: component)
-                .catchError((e) => null) ??
-            onReportRootIssue(nameFunction: 'onAddRootForSubCom'),
-        getCardNhiemVuSS00A012MAPSS00A
-                ?.onAddRoot(flameGame: null, component: component)
-                .catchError((e) => null) ??
-            onReportRootIssue(nameFunction: 'onAddRootForSubCom'),
-        getCardNhiemVuSS00A013MAPSS00A
-                ?.onAddRoot(flameGame: null, component: component)
-                .catchError((e) => null) ??
-            onReportRootIssue(nameFunction: 'onAddRootForSubCom'),
-        getCardNhiemVuSS00A014MAPSS00A
-                ?.onAddRoot(flameGame: null, component: component)
-                .catchError((e) => null) ??
-            onReportRootIssue(nameFunction: 'onAddRootForSubCom'),
-        getCardNhiemVuSS00A015MAPSS00A
-                ?.onAddRoot(flameGame: null, component: component)
-                .catchError((e) => null) ??
-            onReportRootIssue(nameFunction: 'onAddRootForSubCom'),
-        getCardNhiemVuSS00A016MAPSS00A
-                ?.onAddRoot(flameGame: null, component: component)
-                .catchError((e) => null) ??
-            onReportRootIssue(nameFunction: 'onAddRootForSubCom'),
-        getCardNhiemVuSS00A017MAPSS00A
-                ?.onAddRoot(flameGame: null, component: component)
-                .catchError((e) => null) ??
-            onReportRootIssue(nameFunction: 'onAddRootForSubCom'),
-        getCardNhiemVuSS00A018MAPSS00A
-                ?.onAddRoot(flameGame: null, component: component)
-                .catchError((e) => null) ??
-            onReportRootIssue(nameFunction: 'onAddRootForSubCom'),
-        getCardNhiemVuSS00A019MAPSS00A
-                ?.onAddRoot(flameGame: null, component: component)
-                .catchError((e) => null) ??
-            onReportRootIssue(nameFunction: 'onAddRootForSubCom'),
-        getCardNhiemVuSS00A020MAPSS00A
-                ?.onAddRoot(flameGame: null, component: component)
-                .catchError((e) => null) ??
-            onReportRootIssue(nameFunction: 'onAddRootForSubCom'),
-        getCardNhiemVuSS00A021MAPSS00A
-                ?.onAddRoot(flameGame: null, component: component)
-                .catchError((e) => null) ??
-            onReportRootIssue(nameFunction: 'onAddRootForSubCom'),
-        getCardNhiemVuSS00A022MAPSS00A
-                ?.onAddRoot(flameGame: null, component: component)
-                .catchError((e) => null) ??
-            onReportRootIssue(nameFunction: 'onAddRootForSubCom'),
-        getCardNhiemVuSS00A023MAPSS00A
-                ?.onAddRoot(flameGame: null, component: component)
-                .catchError((e) => null) ??
-            onReportRootIssue(nameFunction: 'onAddRootForSubCom'),
-        getCardNhiemVuSS00A024MAPSS00A
-                ?.onAddRoot(flameGame: null, component: component)
-                .catchError((e) => null) ??
-            onReportRootIssue(nameFunction: 'onAddRootForSubCom'),
-        getCardNhiemVuSS00A025MAPSS00A
-                ?.onAddRoot(flameGame: null, component: component)
-                .catchError((e) => null) ??
-            onReportRootIssue(nameFunction: 'onAddRootForSubCom'),
+        getCardNhiemVuSS00A001MAPSS00A?.onAddRoot(flameGame: null, component: component).catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onAddRootForSubCom'),
+        getCardNhiemVuSS00A002MAPSS00A?.onAddRoot(flameGame: null, component: component).catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onAddRootForSubCom'),
+        getCardNhiemVuSS00A003MAPSS00A?.onAddRoot(flameGame: null, component: component).catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onAddRootForSubCom'),
+        getCardNhiemVuSS00A004MAPSS00A?.onAddRoot(flameGame: null, component: component).catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onAddRootForSubCom'),
+        getCardNhiemVuSS00A005MAPSS00A?.onAddRoot(flameGame: null, component: component).catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onAddRootForSubCom'),
+        getCardNhiemVuSS00A006MAPSS00A?.onAddRoot(flameGame: null, component: component).catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onAddRootForSubCom'),
+        getCardNhiemVuSS00A007MAPSS00A?.onAddRoot(flameGame: null, component: component).catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onAddRootForSubCom'),
+        getCardNhiemVuSS00A008MAPSS00A?.onAddRoot(flameGame: null, component: component).catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onAddRootForSubCom'),
+        getCardNhiemVuSS00A009MAPSS00A?.onAddRoot(flameGame: null, component: component).catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onAddRootForSubCom'),
+        getCardNhiemVuSS00A010MAPSS00A?.onAddRoot(flameGame: null, component: component).catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onAddRootForSubCom'),
+        getCardNhiemVuSS00A011MAPSS00A?.onAddRoot(flameGame: null, component: component).catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onAddRootForSubCom'),
+        getCardNhiemVuSS00A012MAPSS00A?.onAddRoot(flameGame: null, component: component).catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onAddRootForSubCom'),
+        getCardNhiemVuSS00A013MAPSS00A?.onAddRoot(flameGame: null, component: component).catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onAddRootForSubCom'),
+        getCardNhiemVuSS00A014MAPSS00A?.onAddRoot(flameGame: null, component: component).catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onAddRootForSubCom'),
+        getCardNhiemVuSS00A015MAPSS00A?.onAddRoot(flameGame: null, component: component).catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onAddRootForSubCom'),
+        getCardNhiemVuSS00A016MAPSS00A?.onAddRoot(flameGame: null, component: component).catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onAddRootForSubCom'),
+        getCardNhiemVuSS00A017MAPSS00A?.onAddRoot(flameGame: null, component: component).catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onAddRootForSubCom'),
+        getCardNhiemVuSS00A018MAPSS00A?.onAddRoot(flameGame: null, component: component).catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onAddRootForSubCom'),
+        getCardNhiemVuSS00A019MAPSS00A?.onAddRoot(flameGame: null, component: component).catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onAddRootForSubCom'),
+        getCardNhiemVuSS00A020MAPSS00A?.onAddRoot(flameGame: null, component: component).catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onAddRootForSubCom'),
+        getCardNhiemVuSS00A021MAPSS00A?.onAddRoot(flameGame: null, component: component).catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onAddRootForSubCom'),
+        getCardNhiemVuSS00A022MAPSS00A?.onAddRoot(flameGame: null, component: component).catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onAddRootForSubCom'),
+        getCardNhiemVuSS00A023MAPSS00A?.onAddRoot(flameGame: null, component: component).catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onAddRootForSubCom'),
+        getCardNhiemVuSS00A024MAPSS00A?.onAddRoot(flameGame: null, component: component).catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onAddRootForSubCom'),
+        getCardNhiemVuSS00A025MAPSS00A?.onAddRoot(flameGame: null, component: component).catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onAddRootForSubCom'),
       ]);
     } catch (e) {
       await onReportRootIssue(nameFunction: 'onAddRootForSubCom');
@@ -1343,56 +1062,31 @@ class QUANLYTHANHPHANTICHHOPTHUOCCAP
       /// TODO:
       /// -----
       await Future.wait([
-        getCardNhiemVuSS00A001MAPSS00A?.onSetupRoot().catchError((e) => null) ??
-            onReportRootIssue(nameFunction: 'onSetupRootForSubCom'),
-        getCardNhiemVuSS00A002MAPSS00A?.onSetupRoot().catchError((e) => null) ??
-            onReportRootIssue(nameFunction: 'onSetupRootForSubCom'),
-        getCardNhiemVuSS00A003MAPSS00A?.onSetupRoot().catchError((e) => null) ??
-            onReportRootIssue(nameFunction: 'onSetupRootForSubCom'),
-        getCardNhiemVuSS00A004MAPSS00A?.onSetupRoot().catchError((e) => null) ??
-            onReportRootIssue(nameFunction: 'onSetupRootForSubCom'),
-        getCardNhiemVuSS00A005MAPSS00A?.onSetupRoot().catchError((e) => null) ??
-            onReportRootIssue(nameFunction: 'onSetupRootForSubCom'),
-        getCardNhiemVuSS00A006MAPSS00A?.onSetupRoot().catchError((e) => null) ??
-            onReportRootIssue(nameFunction: 'onSetupRootForSubCom'),
-        getCardNhiemVuSS00A007MAPSS00A?.onSetupRoot().catchError((e) => null) ??
-            onReportRootIssue(nameFunction: 'onSetupRootForSubCom'),
-        getCardNhiemVuSS00A008MAPSS00A?.onSetupRoot().catchError((e) => null) ??
-            onReportRootIssue(nameFunction: 'onSetupRootForSubCom'),
-        getCardNhiemVuSS00A009MAPSS00A?.onSetupRoot().catchError((e) => null) ??
-            onReportRootIssue(nameFunction: 'onSetupRootForSubCom'),
-        getCardNhiemVuSS00A010MAPSS00A?.onSetupRoot().catchError((e) => null) ??
-            onReportRootIssue(nameFunction: 'onSetupRootForSubCom'),
-        getCardNhiemVuSS00A011MAPSS00A?.onSetupRoot().catchError((e) => null) ??
-            onReportRootIssue(nameFunction: 'onSetupRootForSubCom'),
-        getCardNhiemVuSS00A012MAPSS00A?.onSetupRoot().catchError((e) => null) ??
-            onReportRootIssue(nameFunction: 'onSetupRootForSubCom'),
-        getCardNhiemVuSS00A013MAPSS00A?.onSetupRoot().catchError((e) => null) ??
-            onReportRootIssue(nameFunction: 'onSetupRootForSubCom'),
-        getCardNhiemVuSS00A014MAPSS00A?.onSetupRoot().catchError((e) => null) ??
-            onReportRootIssue(nameFunction: 'onSetupRootForSubCom'),
-        getCardNhiemVuSS00A015MAPSS00A?.onSetupRoot().catchError((e) => null) ??
-            onReportRootIssue(nameFunction: 'onSetupRootForSubCom'),
-        getCardNhiemVuSS00A016MAPSS00A?.onSetupRoot().catchError((e) => null) ??
-            onReportRootIssue(nameFunction: 'onSetupRootForSubCom'),
-        getCardNhiemVuSS00A017MAPSS00A?.onSetupRoot().catchError((e) => null) ??
-            onReportRootIssue(nameFunction: 'onSetupRootForSubCom'),
-        getCardNhiemVuSS00A018MAPSS00A?.onSetupRoot().catchError((e) => null) ??
-            onReportRootIssue(nameFunction: 'onSetupRootForSubCom'),
-        getCardNhiemVuSS00A019MAPSS00A?.onSetupRoot().catchError((e) => null) ??
-            onReportRootIssue(nameFunction: 'onSetupRootForSubCom'),
-        getCardNhiemVuSS00A020MAPSS00A?.onSetupRoot().catchError((e) => null) ??
-            onReportRootIssue(nameFunction: 'onSetupRootForSubCom'),
-        getCardNhiemVuSS00A021MAPSS00A?.onSetupRoot().catchError((e) => null) ??
-            onReportRootIssue(nameFunction: 'onSetupRootForSubCom'),
-        getCardNhiemVuSS00A022MAPSS00A?.onSetupRoot().catchError((e) => null) ??
-            onReportRootIssue(nameFunction: 'onSetupRootForSubCom'),
-        getCardNhiemVuSS00A023MAPSS00A?.onSetupRoot().catchError((e) => null) ??
-            onReportRootIssue(nameFunction: 'onSetupRootForSubCom'),
-        getCardNhiemVuSS00A024MAPSS00A?.onSetupRoot().catchError((e) => null) ??
-            onReportRootIssue(nameFunction: 'onSetupRootForSubCom'),
-        getCardNhiemVuSS00A025MAPSS00A?.onSetupRoot().catchError((e) => null) ??
-            onReportRootIssue(nameFunction: 'onSetupRootForSubCom'),
+        getCardNhiemVuSS00A001MAPSS00A?.onSetupRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onSetupRootForSubCom'),
+        getCardNhiemVuSS00A002MAPSS00A?.onSetupRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onSetupRootForSubCom'),
+        getCardNhiemVuSS00A003MAPSS00A?.onSetupRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onSetupRootForSubCom'),
+        getCardNhiemVuSS00A004MAPSS00A?.onSetupRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onSetupRootForSubCom'),
+        getCardNhiemVuSS00A005MAPSS00A?.onSetupRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onSetupRootForSubCom'),
+        getCardNhiemVuSS00A006MAPSS00A?.onSetupRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onSetupRootForSubCom'),
+        getCardNhiemVuSS00A007MAPSS00A?.onSetupRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onSetupRootForSubCom'),
+        getCardNhiemVuSS00A008MAPSS00A?.onSetupRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onSetupRootForSubCom'),
+        getCardNhiemVuSS00A009MAPSS00A?.onSetupRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onSetupRootForSubCom'),
+        getCardNhiemVuSS00A010MAPSS00A?.onSetupRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onSetupRootForSubCom'),
+        getCardNhiemVuSS00A011MAPSS00A?.onSetupRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onSetupRootForSubCom'),
+        getCardNhiemVuSS00A012MAPSS00A?.onSetupRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onSetupRootForSubCom'),
+        getCardNhiemVuSS00A013MAPSS00A?.onSetupRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onSetupRootForSubCom'),
+        getCardNhiemVuSS00A014MAPSS00A?.onSetupRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onSetupRootForSubCom'),
+        getCardNhiemVuSS00A015MAPSS00A?.onSetupRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onSetupRootForSubCom'),
+        getCardNhiemVuSS00A016MAPSS00A?.onSetupRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onSetupRootForSubCom'),
+        getCardNhiemVuSS00A017MAPSS00A?.onSetupRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onSetupRootForSubCom'),
+        getCardNhiemVuSS00A018MAPSS00A?.onSetupRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onSetupRootForSubCom'),
+        getCardNhiemVuSS00A019MAPSS00A?.onSetupRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onSetupRootForSubCom'),
+        getCardNhiemVuSS00A020MAPSS00A?.onSetupRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onSetupRootForSubCom'),
+        getCardNhiemVuSS00A021MAPSS00A?.onSetupRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onSetupRootForSubCom'),
+        getCardNhiemVuSS00A022MAPSS00A?.onSetupRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onSetupRootForSubCom'),
+        getCardNhiemVuSS00A023MAPSS00A?.onSetupRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onSetupRootForSubCom'),
+        getCardNhiemVuSS00A024MAPSS00A?.onSetupRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onSetupRootForSubCom'),
+        getCardNhiemVuSS00A025MAPSS00A?.onSetupRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onSetupRootForSubCom'),
       ]);
     } catch (e) {
       await onReportRootIssue(nameFunction: 'onSetupRootForSubCom');
@@ -1414,56 +1108,31 @@ class QUANLYTHANHPHANTICHHOPTHUOCCAP
       /// TODO:
       /// -----
       await Future.wait([
-        getCardNhiemVuSS00A001MAPSS00A?.onInitRoot().catchError((e) => null) ??
-            onReportRootIssue(nameFunction: 'onInitRootForSubCom'),
-        getCardNhiemVuSS00A002MAPSS00A?.onInitRoot().catchError((e) => null) ??
-            onReportRootIssue(nameFunction: 'onInitRootForSubCom'),
-        getCardNhiemVuSS00A003MAPSS00A?.onInitRoot().catchError((e) => null) ??
-            onReportRootIssue(nameFunction: 'onInitRootForSubCom'),
-        getCardNhiemVuSS00A004MAPSS00A?.onInitRoot().catchError((e) => null) ??
-            onReportRootIssue(nameFunction: 'onInitRootForSubCom'),
-        getCardNhiemVuSS00A005MAPSS00A?.onInitRoot().catchError((e) => null) ??
-            onReportRootIssue(nameFunction: 'onInitRootForSubCom'),
-        getCardNhiemVuSS00A006MAPSS00A?.onInitRoot().catchError((e) => null) ??
-            onReportRootIssue(nameFunction: 'onInitRootForSubCom'),
-        getCardNhiemVuSS00A007MAPSS00A?.onInitRoot().catchError((e) => null) ??
-            onReportRootIssue(nameFunction: 'onInitRootForSubCom'),
-        getCardNhiemVuSS00A008MAPSS00A?.onInitRoot().catchError((e) => null) ??
-            onReportRootIssue(nameFunction: 'onInitRootForSubCom'),
-        getCardNhiemVuSS00A009MAPSS00A?.onInitRoot().catchError((e) => null) ??
-            onReportRootIssue(nameFunction: 'onInitRootForSubCom'),
-        getCardNhiemVuSS00A010MAPSS00A?.onInitRoot().catchError((e) => null) ??
-            onReportRootIssue(nameFunction: 'onInitRootForSubCom'),
-        getCardNhiemVuSS00A011MAPSS00A?.onInitRoot().catchError((e) => null) ??
-            onReportRootIssue(nameFunction: 'onInitRootForSubCom'),
-        getCardNhiemVuSS00A012MAPSS00A?.onInitRoot().catchError((e) => null) ??
-            onReportRootIssue(nameFunction: 'onInitRootForSubCom'),
-        getCardNhiemVuSS00A013MAPSS00A?.onInitRoot().catchError((e) => null) ??
-            onReportRootIssue(nameFunction: 'onInitRootForSubCom'),
-        getCardNhiemVuSS00A014MAPSS00A?.onInitRoot().catchError((e) => null) ??
-            onReportRootIssue(nameFunction: 'onInitRootForSubCom'),
-        getCardNhiemVuSS00A015MAPSS00A?.onInitRoot().catchError((e) => null) ??
-            onReportRootIssue(nameFunction: 'onInitRootForSubCom'),
-        getCardNhiemVuSS00A016MAPSS00A?.onInitRoot().catchError((e) => null) ??
-            onReportRootIssue(nameFunction: 'onInitRootForSubCom'),
-        getCardNhiemVuSS00A017MAPSS00A?.onInitRoot().catchError((e) => null) ??
-            onReportRootIssue(nameFunction: 'onInitRootForSubCom'),
-        getCardNhiemVuSS00A018MAPSS00A?.onInitRoot().catchError((e) => null) ??
-            onReportRootIssue(nameFunction: 'onInitRootForSubCom'),
-        getCardNhiemVuSS00A019MAPSS00A?.onInitRoot().catchError((e) => null) ??
-            onReportRootIssue(nameFunction: 'onInitRootForSubCom'),
-        getCardNhiemVuSS00A020MAPSS00A?.onInitRoot().catchError((e) => null) ??
-            onReportRootIssue(nameFunction: 'onInitRootForSubCom'),
-        getCardNhiemVuSS00A021MAPSS00A?.onInitRoot().catchError((e) => null) ??
-            onReportRootIssue(nameFunction: 'onInitRootForSubCom'),
-        getCardNhiemVuSS00A022MAPSS00A?.onInitRoot().catchError((e) => null) ??
-            onReportRootIssue(nameFunction: 'onInitRootForSubCom'),
-        getCardNhiemVuSS00A023MAPSS00A?.onInitRoot().catchError((e) => null) ??
-            onReportRootIssue(nameFunction: 'onInitRootForSubCom'),
-        getCardNhiemVuSS00A024MAPSS00A?.onInitRoot().catchError((e) => null) ??
-            onReportRootIssue(nameFunction: 'onInitRootForSubCom'),
-        getCardNhiemVuSS00A025MAPSS00A?.onInitRoot().catchError((e) => null) ??
-            onReportRootIssue(nameFunction: 'onInitRootForSubCom'),
+        getCardNhiemVuSS00A001MAPSS00A?.onInitRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onInitRootForSubCom'),
+        getCardNhiemVuSS00A002MAPSS00A?.onInitRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onInitRootForSubCom'),
+        getCardNhiemVuSS00A003MAPSS00A?.onInitRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onInitRootForSubCom'),
+        getCardNhiemVuSS00A004MAPSS00A?.onInitRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onInitRootForSubCom'),
+        getCardNhiemVuSS00A005MAPSS00A?.onInitRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onInitRootForSubCom'),
+        getCardNhiemVuSS00A006MAPSS00A?.onInitRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onInitRootForSubCom'),
+        getCardNhiemVuSS00A007MAPSS00A?.onInitRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onInitRootForSubCom'),
+        getCardNhiemVuSS00A008MAPSS00A?.onInitRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onInitRootForSubCom'),
+        getCardNhiemVuSS00A009MAPSS00A?.onInitRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onInitRootForSubCom'),
+        getCardNhiemVuSS00A010MAPSS00A?.onInitRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onInitRootForSubCom'),
+        getCardNhiemVuSS00A011MAPSS00A?.onInitRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onInitRootForSubCom'),
+        getCardNhiemVuSS00A012MAPSS00A?.onInitRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onInitRootForSubCom'),
+        getCardNhiemVuSS00A013MAPSS00A?.onInitRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onInitRootForSubCom'),
+        getCardNhiemVuSS00A014MAPSS00A?.onInitRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onInitRootForSubCom'),
+        getCardNhiemVuSS00A015MAPSS00A?.onInitRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onInitRootForSubCom'),
+        getCardNhiemVuSS00A016MAPSS00A?.onInitRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onInitRootForSubCom'),
+        getCardNhiemVuSS00A017MAPSS00A?.onInitRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onInitRootForSubCom'),
+        getCardNhiemVuSS00A018MAPSS00A?.onInitRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onInitRootForSubCom'),
+        getCardNhiemVuSS00A019MAPSS00A?.onInitRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onInitRootForSubCom'),
+        getCardNhiemVuSS00A020MAPSS00A?.onInitRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onInitRootForSubCom'),
+        getCardNhiemVuSS00A021MAPSS00A?.onInitRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onInitRootForSubCom'),
+        getCardNhiemVuSS00A022MAPSS00A?.onInitRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onInitRootForSubCom'),
+        getCardNhiemVuSS00A023MAPSS00A?.onInitRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onInitRootForSubCom'),
+        getCardNhiemVuSS00A024MAPSS00A?.onInitRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onInitRootForSubCom'),
+        getCardNhiemVuSS00A025MAPSS00A?.onInitRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onInitRootForSubCom'),
       ]);
     } catch (e) {
       await onReportRootIssue(nameFunction: 'onInitRootForSubCom');
@@ -1488,8 +1157,7 @@ class QUANLYTHANHPHANTICHHOPTHUOCCAP
 
   Future<void> onHuyChonChiDinhNhiemVuChienDau() async {
     if (getDanhSachCardNhiemVuChienDau.isNotEmpty == true) {
-      for (THANHPHANNUTBAMTICHHOPTHUOCCAP? thanhPhan
-          in getDanhSachCardNhiemVuChienDau) {
+      for (THANHPHANNUTBAMTICHHOPTHUOCCAP? thanhPhan in getDanhSachCardNhiemVuChienDau) {
         thanhPhan?.onVoidHuyKichHoat();
       }
     }
@@ -1507,13 +1175,13 @@ class QUANLYTHANHPHANTICHHOPTHUOCCAP
       /// -----
       /// TODO:
       /// -----
-      await onHuyChonChiDinhNhiemVuChienDau();
+      // if (getCardNhiemVuSS00A001MAPSS00A?.getNhiemVuChienDau?.getMoHinh?.getKhoaTruyCapNhiemVuChienDau?.onKiemTraTrangThaiKhoaTruyCap() == false) {
+        await onHuyChonChiDinhNhiemVuChienDau();
 
-      getCardNhiemVuSS00A001MAPSS00A?.onVoidKichHoat();
+        getCardNhiemVuSS00A001MAPSS00A?.onVoidKichHoat();
+      // }
     } catch (e) {
-      await onReportRootIssue(
-        nameFunction: 'onChonChiDinhNhiemVuChienDauSS00A001MAPSS00A',
-      );
+      await onReportRootIssue(nameFunction: 'onChonChiDinhNhiemVuChienDauSS00A001MAPSS00A');
     }
 
     ///
@@ -1529,13 +1197,13 @@ class QUANLYTHANHPHANTICHHOPTHUOCCAP
       /// -----
       /// TODO:
       /// -----
-      await onHuyChonChiDinhNhiemVuChienDau();
+      if (getCardNhiemVuSS00A002MAPSS00A?.getNhiemVuChienDau?.getMoHinh?.getKhoaTruyCapNhiemVuChienDau?.onKiemTraTrangThaiKhoaTruyCap() == false) {
+        await onHuyChonChiDinhNhiemVuChienDau();
 
-      getCardNhiemVuSS00A002MAPSS00A?.onVoidKichHoat();
+        getCardNhiemVuSS00A002MAPSS00A?.onVoidKichHoat();
+      }
     } catch (e) {
-      await onReportRootIssue(
-        nameFunction: 'onChonChiDinhNhiemVuChienDauSS00A002MAPSS00A',
-      );
+      await onReportRootIssue(nameFunction: 'onChonChiDinhNhiemVuChienDauSS00A002MAPSS00A');
     }
 
     ///
@@ -1551,13 +1219,13 @@ class QUANLYTHANHPHANTICHHOPTHUOCCAP
       /// -----
       /// TODO:
       /// -----
-      await onHuyChonChiDinhNhiemVuChienDau();
+      if (getCardNhiemVuSS00A003MAPSS00A?.getNhiemVuChienDau?.getMoHinh?.getKhoaTruyCapNhiemVuChienDau?.onKiemTraTrangThaiKhoaTruyCap() == false) {
+        await onHuyChonChiDinhNhiemVuChienDau();
 
-      getCardNhiemVuSS00A003MAPSS00A?.onVoidKichHoat();
+        getCardNhiemVuSS00A003MAPSS00A?.onVoidKichHoat();
+      }
     } catch (e) {
-      await onReportRootIssue(
-        nameFunction: 'onChonChiDinhNhiemVuChienDauSS00A003MAPSS00A',
-      );
+      await onReportRootIssue(nameFunction: 'onChonChiDinhNhiemVuChienDauSS00A003MAPSS00A');
     }
 
     ///
@@ -1573,13 +1241,13 @@ class QUANLYTHANHPHANTICHHOPTHUOCCAP
       /// -----
       /// TODO:
       /// -----
-      await onHuyChonChiDinhNhiemVuChienDau();
+      if (getCardNhiemVuSS00A004MAPSS00A?.getNhiemVuChienDau?.getMoHinh?.getKhoaTruyCapNhiemVuChienDau?.onKiemTraTrangThaiKhoaTruyCap() == false) {
+        await onHuyChonChiDinhNhiemVuChienDau();
 
-      getCardNhiemVuSS00A004MAPSS00A?.onVoidKichHoat();
+        getCardNhiemVuSS00A004MAPSS00A?.onVoidKichHoat();
+      }
     } catch (e) {
-      await onReportRootIssue(
-        nameFunction: 'onChonChiDinhNhiemVuChienDauSS00A004MAPSS00A',
-      );
+      await onReportRootIssue(nameFunction: 'onChonChiDinhNhiemVuChienDauSS00A004MAPSS00A');
     }
 
     ///
@@ -1595,13 +1263,13 @@ class QUANLYTHANHPHANTICHHOPTHUOCCAP
       /// -----
       /// TODO:
       /// -----
-      await onHuyChonChiDinhNhiemVuChienDau();
+      if (getCardNhiemVuSS00A005MAPSS00A?.getNhiemVuChienDau?.getMoHinh?.getKhoaTruyCapNhiemVuChienDau?.onKiemTraTrangThaiKhoaTruyCap() == false) {
+        await onHuyChonChiDinhNhiemVuChienDau();
 
-      getCardNhiemVuSS00A005MAPSS00A?.onVoidKichHoat();
+        getCardNhiemVuSS00A005MAPSS00A?.onVoidKichHoat();
+      }
     } catch (e) {
-      await onReportRootIssue(
-        nameFunction: 'onChonChiDinhNhiemVuChienDauSS00A005MAPSS00A',
-      );
+      await onReportRootIssue(nameFunction: 'onChonChiDinhNhiemVuChienDauSS00A005MAPSS00A');
     }
 
     ///
@@ -1617,13 +1285,13 @@ class QUANLYTHANHPHANTICHHOPTHUOCCAP
       /// -----
       /// TODO:
       /// -----
-      await onHuyChonChiDinhNhiemVuChienDau();
+      if (getCardNhiemVuSS00A006MAPSS00A?.getNhiemVuChienDau?.getMoHinh?.getKhoaTruyCapNhiemVuChienDau?.onKiemTraTrangThaiKhoaTruyCap() == false) {
+        await onHuyChonChiDinhNhiemVuChienDau();
 
-      getCardNhiemVuSS00A006MAPSS00A?.onVoidKichHoat();
+        getCardNhiemVuSS00A006MAPSS00A?.onVoidKichHoat();
+      }
     } catch (e) {
-      await onReportRootIssue(
-        nameFunction: 'onChonChiDinhNhiemVuChienDauSS00A006MAPSS00A',
-      );
+      await onReportRootIssue(nameFunction: 'onChonChiDinhNhiemVuChienDauSS00A006MAPSS00A');
     }
 
     ///
@@ -1639,13 +1307,13 @@ class QUANLYTHANHPHANTICHHOPTHUOCCAP
       /// -----
       /// TODO:
       /// -----
-      await onHuyChonChiDinhNhiemVuChienDau();
+      if (getCardNhiemVuSS00A007MAPSS00A?.getNhiemVuChienDau?.getMoHinh?.getKhoaTruyCapNhiemVuChienDau?.onKiemTraTrangThaiKhoaTruyCap() == false) {
+        await onHuyChonChiDinhNhiemVuChienDau();
 
-      getCardNhiemVuSS00A007MAPSS00A?.onVoidKichHoat();
+        getCardNhiemVuSS00A007MAPSS00A?.onVoidKichHoat();
+      }
     } catch (e) {
-      await onReportRootIssue(
-        nameFunction: 'onChonChiDinhNhiemVuChienDauSS00A007MAPSS00A',
-      );
+      await onReportRootIssue(nameFunction: 'onChonChiDinhNhiemVuChienDauSS00A007MAPSS00A');
     }
 
     ///
@@ -1661,13 +1329,13 @@ class QUANLYTHANHPHANTICHHOPTHUOCCAP
       /// -----
       /// TODO:
       /// -----
-      await onHuyChonChiDinhNhiemVuChienDau();
+      if (getCardNhiemVuSS00A008MAPSS00A?.getNhiemVuChienDau?.getMoHinh?.getKhoaTruyCapNhiemVuChienDau?.onKiemTraTrangThaiKhoaTruyCap() == false) {
+        await onHuyChonChiDinhNhiemVuChienDau();
 
-      getCardNhiemVuSS00A008MAPSS00A?.onVoidKichHoat();
+        getCardNhiemVuSS00A008MAPSS00A?.onVoidKichHoat();
+      }
     } catch (e) {
-      await onReportRootIssue(
-        nameFunction: 'onChonChiDinhNhiemVuChienDauSS00A008MAPSS00A',
-      );
+      await onReportRootIssue(nameFunction: 'onChonChiDinhNhiemVuChienDauSS00A008MAPSS00A');
     }
 
     ///
@@ -1683,13 +1351,13 @@ class QUANLYTHANHPHANTICHHOPTHUOCCAP
       /// -----
       /// TODO:
       /// -----
-      await onHuyChonChiDinhNhiemVuChienDau();
+      if (getCardNhiemVuSS00A009MAPSS00A?.getNhiemVuChienDau?.getMoHinh?.getKhoaTruyCapNhiemVuChienDau?.onKiemTraTrangThaiKhoaTruyCap() == false) {
+        await onHuyChonChiDinhNhiemVuChienDau();
 
-      getCardNhiemVuSS00A009MAPSS00A?.onVoidKichHoat();
+        getCardNhiemVuSS00A009MAPSS00A?.onVoidKichHoat();
+      }
     } catch (e) {
-      await onReportRootIssue(
-        nameFunction: 'onChonChiDinhNhiemVuChienDauSS00A009MAPSS00A',
-      );
+      await onReportRootIssue(nameFunction: 'onChonChiDinhNhiemVuChienDauSS00A009MAPSS00A');
     }
 
     ///
@@ -1705,13 +1373,13 @@ class QUANLYTHANHPHANTICHHOPTHUOCCAP
       /// -----
       /// TODO:
       /// -----
-      await onHuyChonChiDinhNhiemVuChienDau();
+      if (getCardNhiemVuSS00A010MAPSS00A?.getNhiemVuChienDau?.getMoHinh?.getKhoaTruyCapNhiemVuChienDau?.onKiemTraTrangThaiKhoaTruyCap() == false) {
+        await onHuyChonChiDinhNhiemVuChienDau();
 
-      getCardNhiemVuSS00A010MAPSS00A?.onVoidKichHoat();
+        getCardNhiemVuSS00A010MAPSS00A?.onVoidKichHoat();
+      }
     } catch (e) {
-      await onReportRootIssue(
-        nameFunction: 'onChonChiDinhNhiemVuChienDauSS00A010MAPSS00A',
-      );
+      await onReportRootIssue(nameFunction: 'onChonChiDinhNhiemVuChienDauSS00A010MAPSS00A');
     }
 
     ///
@@ -1727,13 +1395,13 @@ class QUANLYTHANHPHANTICHHOPTHUOCCAP
       /// -----
       /// TODO:
       /// -----
-      await onHuyChonChiDinhNhiemVuChienDau();
+      if (getCardNhiemVuSS00A011MAPSS00A?.getNhiemVuChienDau?.getMoHinh?.getKhoaTruyCapNhiemVuChienDau?.onKiemTraTrangThaiKhoaTruyCap() == false) {
+        await onHuyChonChiDinhNhiemVuChienDau();
 
-      getCardNhiemVuSS00A011MAPSS00A?.onVoidKichHoat();
+        getCardNhiemVuSS00A011MAPSS00A?.onVoidKichHoat();
+      }
     } catch (e) {
-      await onReportRootIssue(
-        nameFunction: 'onChonChiDinhNhiemVuChienDauSS00A011MAPSS00A',
-      );
+      await onReportRootIssue(nameFunction: 'onChonChiDinhNhiemVuChienDauSS00A011MAPSS00A');
     }
 
     ///
@@ -1749,13 +1417,13 @@ class QUANLYTHANHPHANTICHHOPTHUOCCAP
       /// -----
       /// TODO:
       /// -----
-      await onHuyChonChiDinhNhiemVuChienDau();
+      if (getCardNhiemVuSS00A012MAPSS00A?.getNhiemVuChienDau?.getMoHinh?.getKhoaTruyCapNhiemVuChienDau?.onKiemTraTrangThaiKhoaTruyCap() == false) {
+        await onHuyChonChiDinhNhiemVuChienDau();
 
-      getCardNhiemVuSS00A012MAPSS00A?.onVoidKichHoat();
+        getCardNhiemVuSS00A012MAPSS00A?.onVoidKichHoat();
+      }
     } catch (e) {
-      await onReportRootIssue(
-        nameFunction: 'onChonChiDinhNhiemVuChienDauSS00A012MAPSS00A',
-      );
+      await onReportRootIssue(nameFunction: 'onChonChiDinhNhiemVuChienDauSS00A012MAPSS00A');
     }
 
     ///
@@ -1771,13 +1439,13 @@ class QUANLYTHANHPHANTICHHOPTHUOCCAP
       /// -----
       /// TODO:
       /// -----
-      await onHuyChonChiDinhNhiemVuChienDau();
+      if (getCardNhiemVuSS00A013MAPSS00A?.getNhiemVuChienDau?.getMoHinh?.getKhoaTruyCapNhiemVuChienDau?.onKiemTraTrangThaiKhoaTruyCap() == false) {
+        await onHuyChonChiDinhNhiemVuChienDau();
 
-      getCardNhiemVuSS00A013MAPSS00A?.onVoidKichHoat();
+        getCardNhiemVuSS00A013MAPSS00A?.onVoidKichHoat();
+      }
     } catch (e) {
-      await onReportRootIssue(
-        nameFunction: 'onChonChiDinhNhiemVuChienDauSS00A013MAPSS00A',
-      );
+      await onReportRootIssue(nameFunction: 'onChonChiDinhNhiemVuChienDauSS00A013MAPSS00A');
     }
 
     ///
@@ -1793,13 +1461,13 @@ class QUANLYTHANHPHANTICHHOPTHUOCCAP
       /// -----
       /// TODO:
       /// -----
-      await onHuyChonChiDinhNhiemVuChienDau();
+      if (getCardNhiemVuSS00A014MAPSS00A?.getNhiemVuChienDau?.getMoHinh?.getKhoaTruyCapNhiemVuChienDau?.onKiemTraTrangThaiKhoaTruyCap() == false) {
+        await onHuyChonChiDinhNhiemVuChienDau();
 
-      getCardNhiemVuSS00A014MAPSS00A?.onVoidKichHoat();
+        getCardNhiemVuSS00A014MAPSS00A?.onVoidKichHoat();
+      }
     } catch (e) {
-      await onReportRootIssue(
-        nameFunction: 'onChonChiDinhNhiemVuChienDauSS00A014MAPSS00A',
-      );
+      await onReportRootIssue(nameFunction: 'onChonChiDinhNhiemVuChienDauSS00A014MAPSS00A');
     }
 
     ///
@@ -1815,13 +1483,13 @@ class QUANLYTHANHPHANTICHHOPTHUOCCAP
       /// -----
       /// TODO:
       /// -----
-      await onHuyChonChiDinhNhiemVuChienDau();
+      if (getCardNhiemVuSS00A015MAPSS00A?.getNhiemVuChienDau?.getMoHinh?.getKhoaTruyCapNhiemVuChienDau?.onKiemTraTrangThaiKhoaTruyCap() == false) {
+        await onHuyChonChiDinhNhiemVuChienDau();
 
-      getCardNhiemVuSS00A015MAPSS00A?.onVoidKichHoat();
+        getCardNhiemVuSS00A015MAPSS00A?.onVoidKichHoat();
+      }
     } catch (e) {
-      await onReportRootIssue(
-        nameFunction: 'onChonChiDinhNhiemVuChienDauSS00A015MAPSS00A',
-      );
+      await onReportRootIssue(nameFunction: 'onChonChiDinhNhiemVuChienDauSS00A015MAPSS00A');
     }
 
     ///
@@ -1837,13 +1505,13 @@ class QUANLYTHANHPHANTICHHOPTHUOCCAP
       /// -----
       /// TODO:
       /// -----
-      await onHuyChonChiDinhNhiemVuChienDau();
+      if (getCardNhiemVuSS00A016MAPSS00A?.getNhiemVuChienDau?.getMoHinh?.getKhoaTruyCapNhiemVuChienDau?.onKiemTraTrangThaiKhoaTruyCap() == false) {
+        await onHuyChonChiDinhNhiemVuChienDau();
 
-      getCardNhiemVuSS00A016MAPSS00A?.onVoidKichHoat();
+        getCardNhiemVuSS00A016MAPSS00A?.onVoidKichHoat();
+      }
     } catch (e) {
-      await onReportRootIssue(
-        nameFunction: 'onChonChiDinhNhiemVuChienDauSS00A016MAPSS00A',
-      );
+      await onReportRootIssue(nameFunction: 'onChonChiDinhNhiemVuChienDauSS00A016MAPSS00A');
     }
 
     ///
@@ -1859,13 +1527,13 @@ class QUANLYTHANHPHANTICHHOPTHUOCCAP
       /// -----
       /// TODO:
       /// -----
-      await onHuyChonChiDinhNhiemVuChienDau();
+      if (getCardNhiemVuSS00A017MAPSS00A?.getNhiemVuChienDau?.getMoHinh?.getKhoaTruyCapNhiemVuChienDau?.onKiemTraTrangThaiKhoaTruyCap() == false) {
+        await onHuyChonChiDinhNhiemVuChienDau();
 
-      getCardNhiemVuSS00A017MAPSS00A?.onVoidKichHoat();
+        getCardNhiemVuSS00A017MAPSS00A?.onVoidKichHoat();
+      }
     } catch (e) {
-      await onReportRootIssue(
-        nameFunction: 'onChonChiDinhNhiemVuChienDauSS00A017MAPSS00A',
-      );
+      await onReportRootIssue(nameFunction: 'onChonChiDinhNhiemVuChienDauSS00A017MAPSS00A');
     }
 
     ///
@@ -1881,13 +1549,13 @@ class QUANLYTHANHPHANTICHHOPTHUOCCAP
       /// -----
       /// TODO:
       /// -----
-      await onHuyChonChiDinhNhiemVuChienDau();
+      if (getCardNhiemVuSS00A018MAPSS00A?.getNhiemVuChienDau?.getMoHinh?.getKhoaTruyCapNhiemVuChienDau?.onKiemTraTrangThaiKhoaTruyCap() == false) {
+        await onHuyChonChiDinhNhiemVuChienDau();
 
-      getCardNhiemVuSS00A018MAPSS00A?.onVoidKichHoat();
+        getCardNhiemVuSS00A018MAPSS00A?.onVoidKichHoat();
+      }
     } catch (e) {
-      await onReportRootIssue(
-        nameFunction: 'onChonChiDinhNhiemVuChienDauSS00A018MAPSS00A',
-      );
+      await onReportRootIssue(nameFunction: 'onChonChiDinhNhiemVuChienDauSS00A018MAPSS00A');
     }
 
     ///
@@ -1903,13 +1571,13 @@ class QUANLYTHANHPHANTICHHOPTHUOCCAP
       /// -----
       /// TODO:
       /// -----
-      await onHuyChonChiDinhNhiemVuChienDau();
+      if (getCardNhiemVuSS00A019MAPSS00A?.getNhiemVuChienDau?.getMoHinh?.getKhoaTruyCapNhiemVuChienDau?.onKiemTraTrangThaiKhoaTruyCap() == false) {
+        await onHuyChonChiDinhNhiemVuChienDau();
 
-      getCardNhiemVuSS00A019MAPSS00A?.onVoidKichHoat();
+        getCardNhiemVuSS00A019MAPSS00A?.onVoidKichHoat();
+      }
     } catch (e) {
-      await onReportRootIssue(
-        nameFunction: 'onChonChiDinhNhiemVuChienDauSS00A019MAPSS00A',
-      );
+      await onReportRootIssue(nameFunction: 'onChonChiDinhNhiemVuChienDauSS00A019MAPSS00A');
     }
 
     ///
@@ -1925,13 +1593,13 @@ class QUANLYTHANHPHANTICHHOPTHUOCCAP
       /// -----
       /// TODO:
       /// -----
-      await onHuyChonChiDinhNhiemVuChienDau();
+      if (getCardNhiemVuSS00A020MAPSS00A?.getNhiemVuChienDau?.getMoHinh?.getKhoaTruyCapNhiemVuChienDau?.onKiemTraTrangThaiKhoaTruyCap() == false) {
+        await onHuyChonChiDinhNhiemVuChienDau();
 
-      getCardNhiemVuSS00A020MAPSS00A?.onVoidKichHoat();
+        getCardNhiemVuSS00A020MAPSS00A?.onVoidKichHoat();
+      }
     } catch (e) {
-      await onReportRootIssue(
-        nameFunction: 'onChonChiDinhNhiemVuChienDauSS00A020MAPSS00A',
-      );
+      await onReportRootIssue(nameFunction: 'onChonChiDinhNhiemVuChienDauSS00A020MAPSS00A');
     }
 
     ///
@@ -1947,13 +1615,13 @@ class QUANLYTHANHPHANTICHHOPTHUOCCAP
       /// -----
       /// TODO:
       /// -----
-      await onHuyChonChiDinhNhiemVuChienDau();
+      if (getCardNhiemVuSS00A021MAPSS00A?.getNhiemVuChienDau?.getMoHinh?.getKhoaTruyCapNhiemVuChienDau?.onKiemTraTrangThaiKhoaTruyCap() == false) {
+        await onHuyChonChiDinhNhiemVuChienDau();
 
-      getCardNhiemVuSS00A021MAPSS00A?.onVoidKichHoat();
+        getCardNhiemVuSS00A021MAPSS00A?.onVoidKichHoat();
+      }
     } catch (e) {
-      await onReportRootIssue(
-        nameFunction: 'onChonChiDinhNhiemVuChienDauSS00A021MAPSS00A',
-      );
+      await onReportRootIssue(nameFunction: 'onChonChiDinhNhiemVuChienDauSS00A021MAPSS00A');
     }
 
     ///
@@ -1969,13 +1637,13 @@ class QUANLYTHANHPHANTICHHOPTHUOCCAP
       /// -----
       /// TODO:
       /// -----
-      await onHuyChonChiDinhNhiemVuChienDau();
+      if (getCardNhiemVuSS00A022MAPSS00A?.getNhiemVuChienDau?.getMoHinh?.getKhoaTruyCapNhiemVuChienDau?.onKiemTraTrangThaiKhoaTruyCap() == false) {
+        await onHuyChonChiDinhNhiemVuChienDau();
 
-      getCardNhiemVuSS00A022MAPSS00A?.onVoidKichHoat();
+        getCardNhiemVuSS00A022MAPSS00A?.onVoidKichHoat();
+      }
     } catch (e) {
-      await onReportRootIssue(
-        nameFunction: 'onChonChiDinhNhiemVuChienDauSS00A022MAPSS00A',
-      );
+      await onReportRootIssue(nameFunction: 'onChonChiDinhNhiemVuChienDauSS00A022MAPSS00A');
     }
 
     ///
@@ -1991,13 +1659,13 @@ class QUANLYTHANHPHANTICHHOPTHUOCCAP
       /// -----
       /// TODO:
       /// -----
-      await onHuyChonChiDinhNhiemVuChienDau();
+      if (getCardNhiemVuSS00A023MAPSS00A?.getNhiemVuChienDau?.getMoHinh?.getKhoaTruyCapNhiemVuChienDau?.onKiemTraTrangThaiKhoaTruyCap() == false) {
+        await onHuyChonChiDinhNhiemVuChienDau();
 
-      getCardNhiemVuSS00A023MAPSS00A?.onVoidKichHoat();
+        getCardNhiemVuSS00A023MAPSS00A?.onVoidKichHoat();
+      }
     } catch (e) {
-      await onReportRootIssue(
-        nameFunction: 'onChonChiDinhNhiemVuChienDauSS00A023MAPSS00A',
-      );
+      await onReportRootIssue(nameFunction: 'onChonChiDinhNhiemVuChienDauSS00A023MAPSS00A');
     }
 
     ///
@@ -2013,13 +1681,13 @@ class QUANLYTHANHPHANTICHHOPTHUOCCAP
       /// -----
       /// TODO:
       /// -----
-      await onHuyChonChiDinhNhiemVuChienDau();
+      if (getCardNhiemVuSS00A024MAPSS00A?.getNhiemVuChienDau?.getMoHinh?.getKhoaTruyCapNhiemVuChienDau?.onKiemTraTrangThaiKhoaTruyCap() == false) {
+        await onHuyChonChiDinhNhiemVuChienDau();
 
-      getCardNhiemVuSS00A024MAPSS00A?.onVoidKichHoat();
+        getCardNhiemVuSS00A024MAPSS00A?.onVoidKichHoat();
+      }
     } catch (e) {
-      await onReportRootIssue(
-        nameFunction: 'onChonChiDinhNhiemVuChienDauSS00A024MAPSS00A',
-      );
+      await onReportRootIssue(nameFunction: 'onChonChiDinhNhiemVuChienDauSS00A024MAPSS00A');
     }
 
     ///
@@ -2035,13 +1703,13 @@ class QUANLYTHANHPHANTICHHOPTHUOCCAP
       /// -----
       /// TODO:
       /// -----
-      await onHuyChonChiDinhNhiemVuChienDau();
+      if (getCardNhiemVuSS00A025MAPSS00A?.getNhiemVuChienDau?.getMoHinh?.getKhoaTruyCapNhiemVuChienDau?.onKiemTraTrangThaiKhoaTruyCap() == false) {
+        await onHuyChonChiDinhNhiemVuChienDau();
 
-      getCardNhiemVuSS00A025MAPSS00A?.onVoidKichHoat();
+        getCardNhiemVuSS00A025MAPSS00A?.onVoidKichHoat();
+      }
     } catch (e) {
-      await onReportRootIssue(
-        nameFunction: 'onChonChiDinhNhiemVuChienDauSS00A025MAPSS00A',
-      );
+      await onReportRootIssue(nameFunction: 'onChonChiDinhNhiemVuChienDauSS00A025MAPSS00A');
     }
 
     ///

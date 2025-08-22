@@ -127,4 +127,17 @@ class KHUNGMANHINHSS022310 extends THANHPHANMANHINHTHUOCCAPCOBAN {
     ///
     return;
   }
+
+  @override
+  Future<void> onLoad() async {
+    super.onLoad();
+
+    onCaiDatDoUuTien(value: 15);
+  }
+
+  @override
+  void update(double dt) {
+    // TODO: implement update
+    super.update(dt);
+  }
 }

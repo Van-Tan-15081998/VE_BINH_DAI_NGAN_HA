@@ -4,7 +4,7 @@ import 'package:pkg_khung_man_hinh_ss020000/pkg_khung_man_hinh_ss020000_exp.dart
 /// -----
 /// TODO: Thành Phần Màn Hình Thuộc Cấp
 /// -----
-abstract class THANHPHANMANHINHTHUOCCAPCOBAN extends PositionComponent with HasVisibility,  CAUTRUCTHUCTHICOBAN, KICHBANDIEUKHIENTHUOCCAPCOBAN {
+abstract class THANHPHANMANHINHTHUOCCAPCOBAN extends PositionComponent with HasVisibility, CAUTRUCTHUCTHICOBAN, KICHBANDIEUKHIENTHUOCCAPCOBAN {
   /// -----
   /// TODO:
   /// -----
@@ -268,6 +268,18 @@ abstract class THANHPHANMANHINHTHUOCCAPCOBAN extends PositionComponent with HasV
     return;
   }
 
+  THANHPHANMANHINHTHUOCCAPNGANCHANSUKIENTAP? _thanhPhanManHinhThuocCapNganChanSuKienTap;
+  THANHPHANMANHINHTHUOCCAPNGANCHANSUKIENTAP? get getThanhPhanManHinhThuocCapNganChanSuKienTap => _thanhPhanManHinhThuocCapNganChanSuKienTap;
+  Future<void> onCaiDatThanhPhanManHinhThuocCapNganChanSuKienTap({required THANHPHANMANHINHTHUOCCAPNGANCHANSUKIENTAP? value, bool? caiDatUuTien}) async {
+    if (caiDatUuTien == true) {
+      _thanhPhanManHinhThuocCapNganChanSuKienTap = value;
+    } else {
+      _thanhPhanManHinhThuocCapNganChanSuKienTap ??= value;
+    }
+
+    return;
+  }
+
   /// -----
   /// TODO:
   /// -----
@@ -280,6 +292,7 @@ abstract class THANHPHANMANHINHTHUOCCAPCOBAN extends PositionComponent with HasV
     required double? positionDx,
     required double? positionDy,
   }) {
+    onCaiDatDoUuTien(value: 15);
     onSetGlobalStateManagementSystem(value: globalStateManagementSystem, caiDatUuTien: true);
     onVoidCaiDatGameController(value: gameController, caiDatUuTien: true);
     onVoidCaiDatThanhPhanQuanLyThuocCapTrucTiep(value: thanhPhanQuanLyThuocCapTrucTiep, caiDatUuTien: true);
@@ -369,6 +382,9 @@ abstract class THANHPHANMANHINHTHUOCCAPCOBAN extends PositionComponent with HasV
   /// -----
   Future<void> onAddRoot({required FlameGame? flameGame, required Component? component}) async {
     // await flameGame?.add(this);
+    if (getThanhPhanManHinhThuocCapNganChanSuKienTap != null && getThanhPhanManHinhThuocCapNganChanSuKienTap?.isMounted == false) {
+      add(getThanhPhanManHinhThuocCapNganChanSuKienTap!);
+    }
 
     /// -----
     /// TODO:
@@ -510,6 +526,16 @@ abstract class THANHPHANMANHINHTHUOCCAPCOBAN extends PositionComponent with HasV
       /// TODO:
       /// -----
       await onCaiDatTrangThaiKichHoatThanhPhan(value: TRANGTHAIKICHHOATTHANHPHAN(), caiDatUuTien: true);
+
+      await onCaiDatThanhPhanManHinhThuocCapNganChanSuKienTap(value: THANHPHANMANHINHTHUOCCAPNGANCHANSUKIENTAP(
+        globalStateManagementSystem: getGlobalStateManagementSystem,
+        gameController: getGameController,
+        thanhPhanQuanLyThuocCapTrucTiep: null,
+        sizeDx: getSizeDx,
+        sizeDy: getSizeDy,
+        positionDx: (getSizeDx ?? 0) / 2,
+        positionDy: (getSizeDy ?? 0) / 2,
+      ));
 
       /// -----
       /// TODO: Setup Root For SubCom
@@ -670,7 +696,7 @@ abstract class THANHPHANMANHINHTHUOCCAPCOBAN extends PositionComponent with HasV
   /// -----
   /// TODO:
   /// -----
-  Future<void> onCaiDatDoUuTien({required int value}) async {
+  void onCaiDatDoUuTien({required int value}) {
     priority = value;
   }
 
@@ -2394,5 +2420,54 @@ abstract class THANHPHANMANHINHTHUOCCAPCOBAN extends PositionComponent with HasV
 
     ///
     return;
+  }
+}
+
+class THANHPHANMANHINHTHUOCCAPNGANCHANSUKIENTAP extends THANHPHANMANHINHTHUOCCAPCOBAN with TapCallbacks {
+  THANHPHANMANHINHTHUOCCAPNGANCHANSUKIENTAP({
+    required super.globalStateManagementSystem, //
+    required super.gameController, //
+    required super.thanhPhanQuanLyThuocCapTrucTiep, //
+    required super.sizeDx, //
+    required super.sizeDy, //
+    required super.positionDx, //
+    required super.positionDy}) {
+    onCaiDatDoUuTien(value: 10);
+
+  }
+
+  @override
+  Future<void> onLoad() async {
+    super.onLoad();
+
+    // debugMode = true;
+  }
+
+  @override
+  void onTapDown(TapDownEvent event) {
+
+    if (kDebugMode) {
+      print('onTapDown on NGANCHANSUKIENTAP');
+    }
+
+    // Chặn event, không propagate xuống dưới
+    // event.handled = true; sẽ ngăn không cho Flame gửi event đó tiếp xuống các component phía dưới.
+    event.handled = true;
+  }
+
+  @override
+  void onTapUp(TapUpEvent event) {
+
+    if (kDebugMode) {
+      print('onTapUp on NGANCHANSUKIENTAP');
+    }
+
+    event.handled = true;
+  }
+
+  @override
+  void update(double dt) async {
+    // TODO: implement update
+    super.update(dt);
   }
 }

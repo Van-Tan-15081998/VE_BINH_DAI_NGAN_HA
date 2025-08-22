@@ -215,6 +215,8 @@ class THUOCTINHSOHUUTHEOTHOIGIANVINHVIEN with CauTrucThucThiCoBan, CauTrucCoSoDu
           await getTrangThaiSoHuuTheoThoiGianVinhVien?.caiDatSoHuu(value: false, caiDatUuTien: true);
         } else if (giaTriBanGhiDuLieuSoHuuTheoThoiGianVinhVienChienDauCo == THUOCTINHSOHUUTHEOTHOIGIANVINHVIEN.constGiaTriBanGhiDuLieuSoHuuTheoThoiGianVinhVienChienDauCoValueT) {
           await getTrangThaiSoHuuTheoThoiGianVinhVien?.caiDatSoHuu(value: true, caiDatUuTien: true);
+        } else {
+          return;
         }
       },
     );

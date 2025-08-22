@@ -822,7 +822,15 @@ Future<void> onAddComponent({required FlameGame? flameGame, required Component? 
   Future<void> onLoad() async {
     super.onLoad();
     anchor = Anchor.center;
-    // add(RectangleHitbox()); // cần thiết để hitbox hoạt động
+
+    onCaiDatDoUuTien(value: 20);
+  }
+
+  /// -----
+  /// TODO:
+  /// -----
+  void onCaiDatDoUuTien({required int value}) {
+    priority = value;
   }
 
   @override

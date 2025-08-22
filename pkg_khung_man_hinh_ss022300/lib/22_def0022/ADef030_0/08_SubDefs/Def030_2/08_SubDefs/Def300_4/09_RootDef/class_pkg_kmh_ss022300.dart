@@ -38,7 +38,7 @@ class NUTBAMCHONCHIENDAU extends THANHPHANNUTBAMTHUOCCAPTHUANKICHHOAT {
             ?.getSoHuuTheoThoiGianVinhVien
             ?.getTrangThaiSoHuuTheoThoiGianVinhVien
             ?.getSoHuu ==
-        true) {
+        true || true) {
       await getGameController?.onKichHoatKhungManHinhThuocCapSS300100();
     }
 

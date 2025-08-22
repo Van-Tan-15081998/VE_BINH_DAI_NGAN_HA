@@ -121,99 +121,95 @@ class KHUNGMANHINHSS022320 extends THANHPHANMANHINHTHUOCCAPCOBAN {
     /// -----
     /// TODO: Ưu Tiên Kích Thước Nội Suy
     /// -----
-    double sizeDxManHinhVatLy =
-        getSizeDx ??
-            getGlobalStateManagementSystem?.getThietLapTongQuat?.getChieuRongManHinhVatLy ??
-            100.0;
-    double sizeDyManHinhVatLy =
-        getSizeDy ??
-            getGlobalStateManagementSystem?.getThietLapTongQuat?.getChieuCaoManHinhVatLy ??
-            100.0;
+    double sizeDxManHinhVatLy = getSizeDx ?? getGlobalStateManagementSystem?.getThietLapTongQuat?.getChieuRongManHinhVatLy ?? 100.0;
+    double sizeDyManHinhVatLy = getSizeDy ?? getGlobalStateManagementSystem?.getThietLapTongQuat?.getChieuCaoManHinhVatLy ?? 100.0;
 
-    getTrangThaiKichHoatThanhPhan?.getDiemToaDoThanhPhanHuyKichHoat
-        ?.onVoidCaiDatPositionDx(value: -10000.0, caiDatUuTien: true);
-    getTrangThaiKichHoatThanhPhan?.getDiemToaDoThanhPhanHuyKichHoat
-        ?.onVoidCaiDatPositionDy(value: -10000.0, caiDatUuTien: true);
+    getTrangThaiKichHoatThanhPhan?.getDiemToaDoThanhPhanHuyKichHoat?.onVoidCaiDatPositionDx(value: -10000.0, caiDatUuTien: true);
+    getTrangThaiKichHoatThanhPhan?.getDiemToaDoThanhPhanHuyKichHoat?.onVoidCaiDatPositionDy(value: -10000.0, caiDatUuTien: true);
 
-    getTrangThaiKichHoatThanhPhan?.getDiemToaDoThanhPhanKichHoat
-        ?.onVoidCaiDatPositionDx(
-      value: sizeDxManHinhVatLy / 2,
-      caiDatUuTien: true,
-    );
-    getTrangThaiKichHoatThanhPhan?.getDiemToaDoThanhPhanKichHoat
-        ?.onVoidCaiDatPositionDy(
-      value: sizeDyManHinhVatLy / 2,
-      caiDatUuTien: true,
-    );
+    getTrangThaiKichHoatThanhPhan?.getDiemToaDoThanhPhanKichHoat?.onVoidCaiDatPositionDx(value: sizeDxManHinhVatLy / 2, caiDatUuTien: true);
+    getTrangThaiKichHoatThanhPhan?.getDiemToaDoThanhPhanKichHoat?.onVoidCaiDatPositionDy(value: sizeDyManHinhVatLy / 2, caiDatUuTien: true);
 
     ///
     return;
   }
+
+  NHIEMVUCHIENDAUCOBAN? nhiemVuChienDauTiepTheoKichHoatKhoaTruyCapValueT;
 
   @override
   void update(double dt) async {
     // TODO: implement update
     super.update(dt);
 
-    if (getGlobalStateManagementSystem?.getBanDoChienDau?.getNhiemVuChienDauChonChiDinh?.getMoHinh
-        ?.getNhiemVuChienDauTiepTheoKichHoatKhoaTruyCapValueT != null) {
-      NHIEMVUCHIENDAUCOBAN? nhiemVuChienDau = getGlobalStateManagementSystem?.getBanDoChienDau?.getNhiemVuChienDauChonChiDinh?.getMoHinh
-          ?.getNhiemVuChienDauTiepTheoKichHoatKhoaTruyCapValueT;
+    if (getGlobalStateManagementSystem?.getBanDoChienDau?.getNhiemVuChienDauChonChiDinh?.getMoHinh?.getNhiemVuChienDauTiepTheoKichHoatKhoaTruyCapValueT != null) {
+      if (nhiemVuChienDauTiepTheoKichHoatKhoaTruyCapValueT !=
+          getGlobalStateManagementSystem?.getBanDoChienDau?.getNhiemVuChienDauChonChiDinh?.getMoHinh?.getNhiemVuChienDauTiepTheoKichHoatKhoaTruyCapValueT) {
+        nhiemVuChienDauTiepTheoKichHoatKhoaTruyCapValueT =
+            getGlobalStateManagementSystem?.getBanDoChienDau?.getNhiemVuChienDauChonChiDinh?.getMoHinh?.getNhiemVuChienDauTiepTheoKichHoatKhoaTruyCapValueT;
 
-      if (nhiemVuChienDau is NHIEMVUCHIENDAUSS00A001MAPSS00A) {
-        await getGameController?.onChonChiDinhNhiemVuChienDauSS00A001MAPSS00A();
-      } else if (nhiemVuChienDau is NHIEMVUCHIENDAUSS00A002MAPSS00A) {
-        await getGameController?.onChonChiDinhNhiemVuChienDauSS00A002MAPSS00A();
-      } else if (nhiemVuChienDau is NHIEMVUCHIENDAUSS00A003MAPSS00A) {
-        await getGameController?.onChonChiDinhNhiemVuChienDauSS00A003MAPSS00A();
-      } else if (nhiemVuChienDau is NHIEMVUCHIENDAUSS00A004MAPSS00A) {
-        await getGameController?.onChonChiDinhNhiemVuChienDauSS00A004MAPSS00A();
-      } else if (nhiemVuChienDau is NHIEMVUCHIENDAUSS00A005MAPSS00A) {
-        await getGameController?.onChonChiDinhNhiemVuChienDauSS00A005MAPSS00A();
-      } else if (nhiemVuChienDau is NHIEMVUCHIENDAUSS00A006MAPSS00A) {
-        await getGameController?.onChonChiDinhNhiemVuChienDauSS00A006MAPSS00A();
-      } else if (nhiemVuChienDau is NHIEMVUCHIENDAUSS00A007MAPSS00A) {
-        await getGameController?.onChonChiDinhNhiemVuChienDauSS00A007MAPSS00A();
-      } else if (nhiemVuChienDau is NHIEMVUCHIENDAUSS00A008MAPSS00A) {
-        await getGameController?.onChonChiDinhNhiemVuChienDauSS00A008MAPSS00A();
-      } else if (nhiemVuChienDau is NHIEMVUCHIENDAUSS00A009MAPSS00A) {
-        await getGameController?.onChonChiDinhNhiemVuChienDauSS00A009MAPSS00A();
-      } else if (nhiemVuChienDau is NHIEMVUCHIENDAUSS00A010MAPSS00A) {
-        await getGameController?.onChonChiDinhNhiemVuChienDauSS00A010MAPSS00A();
-      } else if (nhiemVuChienDau is NHIEMVUCHIENDAUSS00A011MAPSS00A) {
-        await getGameController?.onChonChiDinhNhiemVuChienDauSS00A011MAPSS00A();
-      } else if (nhiemVuChienDau is NHIEMVUCHIENDAUSS00A012MAPSS00A) {
-        await getGameController?.onChonChiDinhNhiemVuChienDauSS00A012MAPSS00A();
-      } else if (nhiemVuChienDau is NHIEMVUCHIENDAUSS00A013MAPSS00A) {
-        await getGameController?.onChonChiDinhNhiemVuChienDauSS00A013MAPSS00A();
-      } else if (nhiemVuChienDau is NHIEMVUCHIENDAUSS00A014MAPSS00A) {
-        await getGameController?.onChonChiDinhNhiemVuChienDauSS00A014MAPSS00A();
-      } else if (nhiemVuChienDau is NHIEMVUCHIENDAUSS00A015MAPSS00A) {
-        await getGameController?.onChonChiDinhNhiemVuChienDauSS00A015MAPSS00A();
-      } else if (nhiemVuChienDau is NHIEMVUCHIENDAUSS00A016MAPSS00A) {
-        await getGameController?.onChonChiDinhNhiemVuChienDauSS00A016MAPSS00A();
-      } else if (nhiemVuChienDau is NHIEMVUCHIENDAUSS00A017MAPSS00A) {
-        await getGameController?.onChonChiDinhNhiemVuChienDauSS00A017MAPSS00A();
-      } else if (nhiemVuChienDau is NHIEMVUCHIENDAUSS00A018MAPSS00A) {
-        await getGameController?.onChonChiDinhNhiemVuChienDauSS00A018MAPSS00A();
-      } else if (nhiemVuChienDau is NHIEMVUCHIENDAUSS00A019MAPSS00A) {
-        await getGameController?.onChonChiDinhNhiemVuChienDauSS00A019MAPSS00A();
-      } else if (nhiemVuChienDau is NHIEMVUCHIENDAUSS00A020MAPSS00A) {
-        await getGameController?.onChonChiDinhNhiemVuChienDauSS00A020MAPSS00A();
-      } else if (nhiemVuChienDau is NHIEMVUCHIENDAUSS00A021MAPSS00A) {
-        await getGameController?.onChonChiDinhNhiemVuChienDauSS00A021MAPSS00A();
-      } else if (nhiemVuChienDau is NHIEMVUCHIENDAUSS00A022MAPSS00A) {
-        await getGameController?.onChonChiDinhNhiemVuChienDauSS00A022MAPSS00A();
-      } else if (nhiemVuChienDau is NHIEMVUCHIENDAUSS00A023MAPSS00A) {
-        await getGameController?.onChonChiDinhNhiemVuChienDauSS00A023MAPSS00A();
-      } else if (nhiemVuChienDau is NHIEMVUCHIENDAUSS00A024MAPSS00A) {
-        await getGameController?.onChonChiDinhNhiemVuChienDauSS00A024MAPSS00A();
-      } else if (nhiemVuChienDau is NHIEMVUCHIENDAUSS00A025MAPSS00A) {
-        await getGameController?.onChonChiDinhNhiemVuChienDauSS00A025MAPSS00A();
+        if (nhiemVuChienDauTiepTheoKichHoatKhoaTruyCapValueT is NHIEMVUCHIENDAUSS00A001MAPSS00A) {
+          await getGameController?.onChonChiDinhNhiemVuChienDauSS00A001MAPSS00A();
+        } else if (nhiemVuChienDauTiepTheoKichHoatKhoaTruyCapValueT is NHIEMVUCHIENDAUSS00A002MAPSS00A) {
+          await getGameController?.onChonChiDinhNhiemVuChienDauSS00A002MAPSS00A();
+        } else if (nhiemVuChienDauTiepTheoKichHoatKhoaTruyCapValueT is NHIEMVUCHIENDAUSS00A003MAPSS00A) {
+          await getGameController?.onChonChiDinhNhiemVuChienDauSS00A003MAPSS00A();
+        } else if (nhiemVuChienDauTiepTheoKichHoatKhoaTruyCapValueT is NHIEMVUCHIENDAUSS00A004MAPSS00A) {
+          await getGameController?.onChonChiDinhNhiemVuChienDauSS00A004MAPSS00A();
+        } else if (nhiemVuChienDauTiepTheoKichHoatKhoaTruyCapValueT is NHIEMVUCHIENDAUSS00A005MAPSS00A) {
+          await getGameController?.onChonChiDinhNhiemVuChienDauSS00A005MAPSS00A();
+        } else if (nhiemVuChienDauTiepTheoKichHoatKhoaTruyCapValueT is NHIEMVUCHIENDAUSS00A006MAPSS00A) {
+          await getGameController?.onChonChiDinhNhiemVuChienDauSS00A006MAPSS00A();
+        } else if (nhiemVuChienDauTiepTheoKichHoatKhoaTruyCapValueT is NHIEMVUCHIENDAUSS00A007MAPSS00A) {
+          await getGameController?.onChonChiDinhNhiemVuChienDauSS00A007MAPSS00A();
+        } else if (nhiemVuChienDauTiepTheoKichHoatKhoaTruyCapValueT is NHIEMVUCHIENDAUSS00A008MAPSS00A) {
+          await getGameController?.onChonChiDinhNhiemVuChienDauSS00A008MAPSS00A();
+        } else if (nhiemVuChienDauTiepTheoKichHoatKhoaTruyCapValueT is NHIEMVUCHIENDAUSS00A009MAPSS00A) {
+          await getGameController?.onChonChiDinhNhiemVuChienDauSS00A009MAPSS00A();
+        } else if (nhiemVuChienDauTiepTheoKichHoatKhoaTruyCapValueT is NHIEMVUCHIENDAUSS00A010MAPSS00A) {
+          await getGameController?.onChonChiDinhNhiemVuChienDauSS00A010MAPSS00A();
+        } else if (nhiemVuChienDauTiepTheoKichHoatKhoaTruyCapValueT is NHIEMVUCHIENDAUSS00A011MAPSS00A) {
+          await getGameController?.onChonChiDinhNhiemVuChienDauSS00A011MAPSS00A();
+        } else if (nhiemVuChienDauTiepTheoKichHoatKhoaTruyCapValueT is NHIEMVUCHIENDAUSS00A012MAPSS00A) {
+          await getGameController?.onChonChiDinhNhiemVuChienDauSS00A012MAPSS00A();
+        } else if (nhiemVuChienDauTiepTheoKichHoatKhoaTruyCapValueT is NHIEMVUCHIENDAUSS00A013MAPSS00A) {
+          await getGameController?.onChonChiDinhNhiemVuChienDauSS00A013MAPSS00A();
+        } else if (nhiemVuChienDauTiepTheoKichHoatKhoaTruyCapValueT is NHIEMVUCHIENDAUSS00A014MAPSS00A) {
+          await getGameController?.onChonChiDinhNhiemVuChienDauSS00A014MAPSS00A();
+        } else if (nhiemVuChienDauTiepTheoKichHoatKhoaTruyCapValueT is NHIEMVUCHIENDAUSS00A015MAPSS00A) {
+          await getGameController?.onChonChiDinhNhiemVuChienDauSS00A015MAPSS00A();
+        } else if (nhiemVuChienDauTiepTheoKichHoatKhoaTruyCapValueT is NHIEMVUCHIENDAUSS00A016MAPSS00A) {
+          await getGameController?.onChonChiDinhNhiemVuChienDauSS00A016MAPSS00A();
+        } else if (nhiemVuChienDauTiepTheoKichHoatKhoaTruyCapValueT is NHIEMVUCHIENDAUSS00A017MAPSS00A) {
+          await getGameController?.onChonChiDinhNhiemVuChienDauSS00A017MAPSS00A();
+        } else if (nhiemVuChienDauTiepTheoKichHoatKhoaTruyCapValueT is NHIEMVUCHIENDAUSS00A018MAPSS00A) {
+          await getGameController?.onChonChiDinhNhiemVuChienDauSS00A018MAPSS00A();
+        } else if (nhiemVuChienDauTiepTheoKichHoatKhoaTruyCapValueT is NHIEMVUCHIENDAUSS00A019MAPSS00A) {
+          await getGameController?.onChonChiDinhNhiemVuChienDauSS00A019MAPSS00A();
+        } else if (nhiemVuChienDauTiepTheoKichHoatKhoaTruyCapValueT is NHIEMVUCHIENDAUSS00A020MAPSS00A) {
+          await getGameController?.onChonChiDinhNhiemVuChienDauSS00A020MAPSS00A();
+        } else if (nhiemVuChienDauTiepTheoKichHoatKhoaTruyCapValueT is NHIEMVUCHIENDAUSS00A021MAPSS00A) {
+          await getGameController?.onChonChiDinhNhiemVuChienDauSS00A021MAPSS00A();
+        } else if (nhiemVuChienDauTiepTheoKichHoatKhoaTruyCapValueT is NHIEMVUCHIENDAUSS00A022MAPSS00A) {
+          await getGameController?.onChonChiDinhNhiemVuChienDauSS00A022MAPSS00A();
+        } else if (nhiemVuChienDauTiepTheoKichHoatKhoaTruyCapValueT is NHIEMVUCHIENDAUSS00A023MAPSS00A) {
+          await getGameController?.onChonChiDinhNhiemVuChienDauSS00A023MAPSS00A();
+        } else if (nhiemVuChienDauTiepTheoKichHoatKhoaTruyCapValueT is NHIEMVUCHIENDAUSS00A024MAPSS00A) {
+          await getGameController?.onChonChiDinhNhiemVuChienDauSS00A024MAPSS00A();
+        } else if (nhiemVuChienDauTiepTheoKichHoatKhoaTruyCapValueT is NHIEMVUCHIENDAUSS00A025MAPSS00A) {
+          await getGameController?.onChonChiDinhNhiemVuChienDauSS00A025MAPSS00A();
+        }
+
+        await getGlobalStateManagementSystem?.getBanDoChienDau?.getNhiemVuChienDauChonChiDinh?.getMoHinh?.caiDatNhiemVuChienDauTiepTheoKichHoatKhoaTruyCapValueT(value: null, caiDatUuTien: true);
       }
-
-      await getGlobalStateManagementSystem?.getBanDoChienDau?.getNhiemVuChienDauChonChiDinh?.getMoHinh
-          ?.caiDatNhiemVuChienDauTiepTheoKichHoatKhoaTruyCapValueT(value: null, caiDatUuTien: true);
     }
+
+    return;
+  }
+
+  @override
+  Future<void> onLoad() async {
+    super.onLoad();
+
+    onCaiDatDoUuTien(value: 15);
   }
 }

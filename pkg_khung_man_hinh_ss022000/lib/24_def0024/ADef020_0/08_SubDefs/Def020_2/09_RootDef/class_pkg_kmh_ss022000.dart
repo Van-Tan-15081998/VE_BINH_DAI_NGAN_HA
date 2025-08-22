@@ -341,16 +341,16 @@ class QUANLYTHANHPHANMANHINHKHUNGMANHINHCHINH extends QUANLYTHANHPHANMANHINHTHUO
       /// -----
       /// TODO:
       /// -----
-      await Future.wait([
-        // getKhungManHinhMasterLoading?.onCaiDatDoUuTien(value: 1).catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onSetupRoot'),
-        getKhungManHinhChinhTabSS010CH?.onCaiDatDoUuTien(value: 1).catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onSetupRoot'),
-        getKhungManHinhChinhTabSS020TT?.onCaiDatDoUuTien(value: 1).catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onSetupRoot'),
-        getKhungManHinhChinhTabSS030CD?.onCaiDatDoUuTien(value: 1).catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onSetupRoot'),
-        getKhungManHinhChinhTabSS040TV?.onCaiDatDoUuTien(value: 1).catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onSetupRoot'),
-        getKhungManHinhChinhTabSS050CD?.onCaiDatDoUuTien(value: 1).catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onSetupRoot'),
-        getKhungManHinhSS223100?.onCaiDatDoUuTien(value: 2).catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onSetupRoot'),
-        getKhungManHinhSS03000?.onCaiDatDoUuTien(value: 2).catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onSetupRoot'),
-      ]);
+
+        // getKhungManHinhMasterLoading?.onCaiDatDoUuTien(value: 1);
+        getKhungManHinhChinhTabSS010CH?.onCaiDatDoUuTien(value: 15);
+        getKhungManHinhChinhTabSS020TT?.onCaiDatDoUuTien(value: 15);
+        getKhungManHinhChinhTabSS030CD?.onCaiDatDoUuTien(value: 15);
+        getKhungManHinhChinhTabSS040TV?.onCaiDatDoUuTien(value: 15);
+        getKhungManHinhChinhTabSS050CD?.onCaiDatDoUuTien(value: 15);
+        getKhungManHinhSS223100?.onCaiDatDoUuTien(value: 25);
+        getKhungManHinhSS03000?.onCaiDatDoUuTien(value: 25);
+
 
       ///
       ///

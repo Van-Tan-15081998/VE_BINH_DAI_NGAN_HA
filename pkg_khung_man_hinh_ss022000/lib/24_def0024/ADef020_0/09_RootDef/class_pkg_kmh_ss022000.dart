@@ -47,7 +47,7 @@ class KHUNGMANHINHCHINH extends KHUNGMANHINHGAMECOSO {
           ),
         );
         getKhungManHinhMasterLoading?.onCaiDatParentComponent(value: this);
-        await getKhungManHinhMasterLoading?.onCaiDatDoUuTien(value: 10);
+        getKhungManHinhMasterLoading?.onCaiDatDoUuTien(value: 1000);
 
         await getKhungManHinhMasterLoading?.onSetupRoot();
         await getKhungManHinhMasterLoading?.onInitRoot();

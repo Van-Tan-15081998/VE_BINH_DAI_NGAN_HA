@@ -38,6 +38,13 @@ class KHUNGTICHHOPTHANHTICHCHIENDAUTAINGUYENVANGTRAODOI extends THANHPHANTICHHOP
     return;
   }
 
+  // @override
+  // Future<void> onLoad() async {
+  //   super.onLoad();
+  //
+  //   onCaiDatDoUuTien(value: 0);
+  // }
+
   int tongSoLuongTaiNguyenVangTraoDoi = -1;
 
   @override

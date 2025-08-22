@@ -153,6 +153,13 @@ class CARDNHIEMVUNGANCHANXAMNHAPSS050 extends THANHPHANNUTBAMTHUOCCAPTHUANKICHHO
   }
 
   @override
+  Future<void> onLoad() async {
+    super.onLoad();
+
+    onCaiDatDoUuTien(value: 5);
+  }
+
+  @override
   void update(double dt) {
     // TODO: implement update
     super.update(dt);

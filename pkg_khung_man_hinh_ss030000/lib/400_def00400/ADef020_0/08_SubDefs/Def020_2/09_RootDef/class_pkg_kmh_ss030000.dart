@@ -246,11 +246,11 @@ class QUANLYTHANHPHANMANHINHTHUOCCAP extends QUANLYTHANHPHANMANHINHTHUOCCAPCOBAN
         ]);
       }
 
-      await getKhungManHinhSS300100?.onCaiDatDoUuTien(value: 1000);
-      await getKhungManHinhSS300200?.onCaiDatDoUuTien(value: 20);
-      await getKhungManHinhSS300300?.onCaiDatDoUuTien(value: 20);
-      await getKhungManHinhSS300400?.onCaiDatDoUuTien(value: 20);
-      await getKhungManHinhSS300500?.onCaiDatDoUuTien(value: 20);
+      getKhungManHinhSS300100?.onCaiDatDoUuTien(value: 1000);
+      getKhungManHinhSS300200?.onCaiDatDoUuTien(value: 25);
+      getKhungManHinhSS300300?.onCaiDatDoUuTien(value: 25);
+      getKhungManHinhSS300400?.onCaiDatDoUuTien(value: 25);
+      getKhungManHinhSS300500?.onCaiDatDoUuTien(value: 25);
 
       /// -----
       /// TODO: Setup Root For SubCom

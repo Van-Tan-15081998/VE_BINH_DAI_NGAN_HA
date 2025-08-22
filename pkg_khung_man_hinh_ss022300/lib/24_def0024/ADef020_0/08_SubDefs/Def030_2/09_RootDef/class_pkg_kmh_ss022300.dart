@@ -377,6 +377,9 @@ class QUANLYTHANHPHANNUTBAMTHUOCCAP extends QUANLYTHANHPHANNUTBAMTHUOCCAPCOBAN {
           onTapUpEvent: () async {
             // onThucThiChonTabSS020();
 
+            /// -----
+            /// TODO: Điều Kiện Thực Thi Nhiệm Vụ => Sở Hữu Chiến Đấu Cơ
+            /// -----
             if (getGlobalStateManagementSystem
                     ?.getChienDauCoTongQuat
                     ?.getChienDauCoTrucTiepThucThiChienDau
@@ -386,7 +389,7 @@ class QUANLYTHANHPHANNUTBAMTHUOCCAP extends QUANLYTHANHPHANNUTBAMTHUOCCAPCOBAN {
                     ?.getSoHuuTheoThoiGianVinhVien
                     ?.getTrangThaiSoHuuTheoThoiGianVinhVien
                     ?.getSoHuu ==
-                false) {
+                false || false) {
               await onThucThiChonTabSS010();
             }
           },
