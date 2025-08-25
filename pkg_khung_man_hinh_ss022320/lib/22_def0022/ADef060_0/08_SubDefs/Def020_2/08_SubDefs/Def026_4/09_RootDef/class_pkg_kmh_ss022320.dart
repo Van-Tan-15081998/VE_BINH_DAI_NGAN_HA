@@ -124,6 +124,8 @@ class CARDNHIEMVUSS00A004MAPSS00A extends CARDNHIEMVUCHIENDAUCOBAN {
     await getThanhPhanGameUIThanhTichSS020HuyKichHoat?.onInitRoot();
     await getThanhPhanGameUIThanhTichSS030HuyKichHoat?.onInitRoot();
 
+    await super.onCaiDatChiTietThanhPhanGameUI();
+
     await onCapNhatChiTietThanhPhanGameUI();
 
     return;
@@ -161,7 +163,7 @@ class CARDNHIEMVUSS00A004MAPSS00A extends CARDNHIEMVUCHIENDAUCOBAN {
 
     getThanhPhanVanBan?.onVoidCaiDatVanBan(value: '4', caiDatUuTien: true);
 
-    getThanhPhanVanBan?.onCaiDatPhongCachVanBan(color: Color(0xFF91E1FB), fontSize: 20, fontWeight: FontWeight.bold);
+    getThanhPhanVanBan?.onCaiDatPhongCachVanBan(color: Color(0xFF91E1FB), fontSize: 22, fontWeight: FontWeight.bold);
 
     getThanhPhanVanBan?.caiDatTuyChinhTextRenderer = true;
 
@@ -206,9 +208,9 @@ class CARDNHIEMVUSS00A004MAPSS00A extends CARDNHIEMVUCHIENDAUCOBAN {
           caiDatUuTien: true);
 
       if (getNhiemVuChienDau?.getMoHinh?.getKhoaTruyCapNhiemVuChienDau?.onKiemTraTrangThaiKhoaTruyCap() == true) {
-        getThanhPhanVanBan?.onCaiDatPhongCachVanBan(color: Color(0xFF2E2E2E), fontSize: 20, fontWeight: FontWeight.bold);
+        getThanhPhanVanBan?.onCaiDatPhongCachVanBan(color: Color(0xFF2E2E2E), fontSize: 22, fontWeight: FontWeight.bold);
       } else {
-        getThanhPhanVanBan?.onCaiDatPhongCachVanBan(color: Color(0xFF91E1FB), fontSize: 20, fontWeight: FontWeight.bold);
+        getThanhPhanVanBan?.onCaiDatPhongCachVanBan(color: Color(0xFF91E1FB), fontSize: 22, fontWeight: FontWeight.bold);
       }
     }
 

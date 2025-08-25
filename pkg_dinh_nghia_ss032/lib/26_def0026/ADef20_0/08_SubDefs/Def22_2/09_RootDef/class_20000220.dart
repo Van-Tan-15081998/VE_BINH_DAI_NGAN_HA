@@ -24,6 +24,13 @@ class TrangThaiHatVaChamCoBan {
     return;
   }
 
+  SpriteHatDinhHinhHuongXaDongCoTenLua? _spriteHatDinhHinhHuongXaDongCoTenLua;
+  SpriteHatDinhHinhHuongXaDongCoTenLua? get getSpriteHatDinhHinhHuongXaDongCoTenLua => _spriteHatDinhHinhHuongXaDongCoTenLua;
+  Future<void> onCaiDatSpriteHatDinhHinhHuongXaDongCoTenLua({required SpriteHatDinhHinhHuongXaDongCoTenLua? value}) async {
+    _spriteHatDinhHinhHuongXaDongCoTenLua ??= value;
+    return;
+  }
+
   /// -----
   /// TODO:
   /// -----

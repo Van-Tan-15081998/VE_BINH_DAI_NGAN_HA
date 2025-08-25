@@ -13,6 +13,8 @@ class SpritePhuongTienSS72BangDieuKhienDoiHinhTuanTraTrinhSat extends SpritePhuo
   Future<void> onInitRoot() async {
     await super.onInitRoot();
 
+    getSpriteMaDinhDanhPhuongTien?.caiDatMaDinhDanh(value: 0);
+
     return;
   }
 

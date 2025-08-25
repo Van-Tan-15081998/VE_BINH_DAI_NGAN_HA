@@ -114,7 +114,7 @@ abstract class SpritePhuongTienCoBan extends SpriteAnimationComponent with HasVi
     _spriteMaDinhDanhPhuongTien = value;
 
     if (getSpriteMaDinhDanhPhuongTien != null && kDebugMode == true) {
-      add(getSpriteMaDinhDanhPhuongTien!);
+      // add(getSpriteMaDinhDanhPhuongTien!);
     }
 
     return;
@@ -350,6 +350,24 @@ abstract class SpritePhuongTienCoBan extends SpriteAnimationComponent with HasVi
     await onInitRoot();
   }
 
+  int? _chiSoMauHienHanh;
+  int? get getChiSoMauHienHanh => _chiSoMauHienHanh;
+  void onVoidCaiDatChiSoMauHienHanh({required int? value}) {
+    _chiSoMauHienHanh = value ?? 0;
+    return;
+  }
+  void onVoidCapNhatChiSoMauPhuongTien() {
+    int chiSoMauHienHanh = (getMoHinh?.getMoHinh?.getDuLieuJsonLamPhang['[CHI_SO_MAU_TOI_DA_VAN_HANH]'] ?? 0).floor();
+
+    if (getChiSoMauHienHanh != chiSoMauHienHanh) {
+      onVoidCaiDatChiSoMauHienHanh(value: (getMoHinh?.getMoHinh?.getDuLieuJsonLamPhang['[CHI_SO_MAU_TOI_DA_VAN_HANH]'] ?? 0).floor());
+
+      getSpriteMaDinhDanhPhuongTien?.caiDatMaDinhDanh(value: getChiSoMauHienHanh ?? 0);
+    }
+
+    return;
+  }
+
   @override
   void update(double dt) {
     super.update(dt);
@@ -371,6 +389,9 @@ abstract class SpritePhuongTienCoBan extends SpriteAnimationComponent with HasVi
       onVoidCapNhatTrangThaiMoHinh();
 
       onVoidCapNhatPositionSizeValues();
+
+      onVoidCapNhatChiSoMauPhuongTien();
+
     } else if (getTrangThaiTongQuat?.getTienTrinhTongQuat?.getTienTrinhThucThiChienDau?.getTrangThai?.getMoHinh?.onCheckBoolDangChuanBiThucThi() == true) {
       onRemoveFromParent();
     }
@@ -381,6 +402,7 @@ abstract class SpritePhuongTienCoBan extends SpriteAnimationComponent with HasVi
 class SpriteMaDinhDanhPhuongTien extends TextComponent with HasVisibility {
 
   int maDinhDanh = 0;
+  int get getMaDinhDanh => maDinhDanh;
   void caiDatMaDinhDanh({required int value}) async {
     maDinhDanh = value;
     text = '$maDinhDanh';

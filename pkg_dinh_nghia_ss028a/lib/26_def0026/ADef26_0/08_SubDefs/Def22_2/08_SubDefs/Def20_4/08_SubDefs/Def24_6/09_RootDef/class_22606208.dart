@@ -21,6 +21,8 @@ abstract class QuanLyTrangThaiPhuongThucTanCongThongMinh with CauTrucThucThiCoBa
       await caiDatTienTrinhTongQuat(value: attachValue.getTienTrinhTongQuat);
       await caiDatChienDauCoTongQuat(value: attachValue.getChienDauCoTongQuat);
 
+      await caiDatSuKienVaChamTrongChienDau(value: attachValue.getSuKienVaChamTrongChienDau);
+
       await caiDatDanhSachMoHinhTongQuat(value: attachValue.getDanhSachMoHinhTongQuat);
       await caiDatDieuKhienTinhToanTongQuat(value: attachValue.getDieuKhienTinhToanTongQuat);
       await caiDatSuKienVaChamThuocPhuongTien(value: attachValue.getSuKienVaChamThuocPhuongTien);
@@ -664,6 +666,10 @@ abstract class QuanLyTrangThaiPhuongThucTanCongThongMinh with CauTrucThucThiCoBa
       trangThaiVienDan?.getMoHinh?.onVoidCaiDatTocDoBayNguyenBan(value: TocDoBayCoBan(tocDo: 5.000));
       trangThaiVienDan?.getMoHinh?.onVoidCaiDatGocXoay(value: pi);
 
+      trangThaiVienDan?.getMoHinh?.onVoidCaiDatChiSoTangTienHuongTheoMucTieuTheoThoiGianThuc(value: 0);
+
+      trangThaiVienDan?.getMoHinh?.onVoidCaiDatPhuongTienHoatDongLayMucTieu(value: null, caiDatUuTien: true);
+
       trangThaiVienDan?.getMoHinh?.caiDatQuanLyTrangThaiDanhSachMoHinh(value: getDanhSachMoHinhTongQuat);
       trangThaiVienDan?.getMoHinh?.caiDatDieuKhienTinhToanTongQuat(value: getDieuKhienTinhToanTongQuat);
       trangThaiVienDan?.getMoHinh?.caiDatSuKienVaChamThuocPhuongTien(value: getSuKienVaChamThuocPhuongTien);
@@ -700,10 +706,7 @@ abstract class QuanLyTrangThaiPhuongThucTanCongThongMinh with CauTrucThucThiCoBa
       // trangThaiVienDan.getMoHinh?.getTrangThaiTonTai?.caiDatKhoiTaoHoanTat();
       trangThaiVienDan.getMoHinh?.getTrangThaiTonTai?.onVoidCaiDatDangKichHoat();
 
-      /// -----
-      /// TODO: Add Viên Đạn Vào Danh Sách Hoạt Động
-      /// -----
-      // getDanhSachMoHinhTongQuat?.getDanhSachVienDanChienDauCoHoatDong?.getDanhSachVienDanChienDauCoHoatDong.add(trangThaiVienDan);
+      await trangThaiVienDan?.getMoHinh?.caiDatSuKienVaChamTrongChienDau(value: getSuKienVaChamTrongChienDau);
     }
 
     return;

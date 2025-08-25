@@ -82,6 +82,13 @@ abstract class SPRITETHANHNGANGCHISOMAUCOBAN extends SpriteAnimationComponent wi
     return;
   }
 
+  bool? _hienThiChiSoMauPhuongTien = true;
+  bool? get getHienThiChiSoMauPhuongTien => _hienThiChiSoMauPhuongTien = true;
+  void onVoidCaiDatHienThiChiSoMauPhuongTien({required bool? value}) {
+    _hienThiChiSoMauPhuongTien = value ?? false;
+    return;
+  }
+
   /// -----
   /// TODO:
   /// -----
@@ -90,7 +97,7 @@ abstract class SPRITETHANHNGANGCHISOMAUCOBAN extends SpriteAnimationComponent wi
   Future<void> caiDatSpriteMaDinhDanhThanhNgangChiSoPhuongTien({required SpriteMaDinhDanhThanhNgangChiSoPhuongTien? value}) async {
     _spriteMaDinhDanhThanhNgangChiSoPhuongTien = value;
 
-    if (getSpriteMaDinhDanhThanhNgangChiSoPhuongTien != null && kDebugMode == true) {
+    if (getSpriteMaDinhDanhThanhNgangChiSoPhuongTien != null && getHienThiChiSoMauPhuongTien == true) {
       add(getSpriteMaDinhDanhThanhNgangChiSoPhuongTien!);
     }
 
@@ -522,6 +529,15 @@ abstract class SPRITETHANHNGANGCHISOMAUCOBAN extends SpriteAnimationComponent wi
     }
   }
 
+  void onVoidCapNhatChiSoMauPhuongTien() {
+    if (getSpriteMaDinhDanhThanhNgangChiSoPhuongTien?.getMaDinhDanh != getChiSoMauHienHanh) {
+
+      getSpriteMaDinhDanhThanhNgangChiSoPhuongTien?.caiDatMaDinhDanh(value: (getChiSoMauHienHanh ?? 0).floor());
+    }
+
+    return;
+  }
+
   /// -----
   /// TODO: Cập Nhật Trạng Thái Mô Hình
   /// -----
@@ -551,6 +567,8 @@ abstract class SPRITETHANHNGANGCHISOMAUCOBAN extends SpriteAnimationComponent wi
     onVoidCapNhatKiemTraHienThi();
 
     onVoidCapNhatPositionSizeValues(dt);
+
+    onVoidCapNhatChiSoMauPhuongTien();
   }
 }
 
@@ -626,6 +644,7 @@ class DonViSpriteAnimationCoBan {
 class SpriteMaDinhDanhThanhNgangChiSoPhuongTien extends TextComponent with HasVisibility {
 
   int maDinhDanh = 0;
+  int get getMaDinhDanh => maDinhDanh;
   void caiDatMaDinhDanh({required int value}) async {
     maDinhDanh = value;
     text = '$maDinhDanh';
@@ -643,7 +662,7 @@ class SpriteMaDinhDanhThanhNgangChiSoPhuongTien extends TextComponent with HasVi
 
     anchor = Anchor.center;
 
-    position.setValues(10.0, 10.0);
+    position.setValues(10.0, -10.0);
 
     text = '$maDinhDanh';
 

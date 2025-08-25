@@ -14,6 +14,7 @@ class SpritePhuongTienSS74BangDieuKhienDoiHinhThongSoaiToiCao extends SPRITETHAN
     await super.onInitRoot();
 
     getSpriteMaDinhDanhThanhNgangChiSoPhuongTien?.caiDatMaDinhDanh(value: 674);
+    getSpriteMaDinhDanhThanhNgangChiSoPhuongTien?.position?.setValues(10.0, -10.0);
 
     return;
   }

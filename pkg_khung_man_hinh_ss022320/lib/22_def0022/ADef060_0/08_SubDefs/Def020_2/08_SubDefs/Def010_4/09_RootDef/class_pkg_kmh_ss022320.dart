@@ -41,6 +41,16 @@ class CARDNHIEMVUCHIENDAUCOBAN extends THANHPHANNUTBAMTICHHOPTHUOCCAP {
 
   @override
   Future<void> onCaiDatChiTietThanhPhanGameUI() async {
+    getThanhPhanVanBan?.priority = 1;
+    getThanhPhanVanBan?.onVoidCapNhatPositionDy(value: -5.0);
+
+    getSpriteAnimationComponentThanhTichSS010KichHoat?.priority = 2;
+    getSpriteAnimationComponentThanhTichSS020KichHoat?.priority = 2;
+    getSpriteAnimationComponentThanhTichSS030KichHoat?.priority = 2;
+    getSpriteAnimationComponentThanhTichSS010HuyKichHoat?.priority = 2;
+    getSpriteAnimationComponentThanhTichSS020HuyKichHoat?.priority = 2;
+    getSpriteAnimationComponentThanhTichSS030HuyKichHoat?.priority = 2;
+
     return;
   }
 }

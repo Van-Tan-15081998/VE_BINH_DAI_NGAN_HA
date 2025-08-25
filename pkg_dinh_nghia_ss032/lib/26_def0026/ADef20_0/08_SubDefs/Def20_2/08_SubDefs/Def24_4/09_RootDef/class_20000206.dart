@@ -16,5 +16,23 @@ class MoHinhThuocTinhTichHopHatVaCham extends MoHinhCoBan {
 
     return;
   }
+
+  /// -----
+  /// TODO:
+  /// -----
+  int _chiSoTangTienGioiHanTrangThaiTonTai = 0;
+  int get getChiSoTangTienGioiHanTrangThaiTonTai => _chiSoTangTienGioiHanTrangThaiTonTai;
+
+  void onVoidCaiDatChiSoTangTienGioiHanTrangThaiTonTai({required int? value}) {
+    _chiSoTangTienGioiHanTrangThaiTonTai = value ?? 0;
+    return;
+  }
+
+  void onVoidCapNhatChiSoTangTienGioiHanTrangThaiTonTai() {
+    if (_chiSoTangTienGioiHanTrangThaiTonTai <= 50) {
+      _chiSoTangTienGioiHanTrangThaiTonTai += 1;
+    }
+    return;
+  }
 }
 

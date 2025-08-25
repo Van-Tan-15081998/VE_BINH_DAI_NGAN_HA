@@ -118,6 +118,13 @@ class THANHPHANVANBANTHUANTHUOCCAP extends TextComponent with HasVisibility, Cau
     return;
   }
 
+  void onVoidCapNhatPositionDy({required double value}) {
+    onVoidCaiDatPositionDy(value: (getPositionDy ?? 0) + value, caiDatUuTien: true);
+
+    ///
+    return;
+  }
+
   /// -----
   /// TODO:
   /// -----

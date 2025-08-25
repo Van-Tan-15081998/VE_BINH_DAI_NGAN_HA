@@ -6,12 +6,20 @@ import 'package:pkg_dinh_nghia_ss050/pkg_dinh_nghia_ss050_exp.dart';
 import 'package:pkg_dinh_nghia_ss054/pkg_dinh_nghia_ss054_exp.dart';
 import 'package:pkg_dinh_nghia_ss030050/pkg_dinh_nghia_ss030050_exp.dart';
 
-abstract class VIENDANTANCONGCOBAN with CauTrucThucThiCoBan {
+abstract class VIENDANTANCONGCOBAN with CauTrucThucThiCoBan, DanhSachQuanLyTrangThai {
   /// -----
   /// TODO: Attach Root
   /// -----
   @override
   Future<void> onAttachRoot({required dynamic attachValue}) async {
+
+    if (attachValue is GlobalStateManagementSystem) {
+
+      await caiDatSuKienVaChamTrongChienDau(value: attachValue.getSuKienVaChamTrongChienDau);
+
+      ///
+    }
+
     /// -----
     /// TODO: Attach Root For SubCom
     /// -----
@@ -173,6 +181,31 @@ abstract class VIENDANTANCONGCOBAN with CauTrucThucThiCoBan {
       _chiSoTangTienTheoThoiGianThuc += 1;
     } else {
       _chiSoTangTienTheoThoiGianThuc = 0;
+    }
+    return;
+  }
+
+  /// -----
+  /// TODO:
+  /// -----
+  DiemToaDoHoanHaoCoBan? diemToaDoDinhHinhHuongXaDongCoTenLua = DiemToaDoHoanHaoCoBan(maDinhDanh: '', dx: 0, dy: 0);
+
+  /// -----
+  /// TODO:
+  /// -----
+  int _chiSoTangTienHuongTheoMucTieuTheoThoiGianThuc = 0;
+  int get getChiSoTangTienHuongTheoMucTieuTheoThoiGianThuc => _chiSoTangTienHuongTheoMucTieuTheoThoiGianThuc;
+
+  void onVoidCaiDatChiSoTangTienHuongTheoMucTieuTheoThoiGianThuc({required int? value}) {
+    _chiSoTangTienHuongTheoMucTieuTheoThoiGianThuc = value ?? 0;
+    return;
+  }
+
+  void onVoidCapNhatChiSoTangTienHuongTheoMucTieuTheoThoiGianThuc() {
+    if (_chiSoTangTienHuongTheoMucTieuTheoThoiGianThuc <= 1000000) {
+      _chiSoTangTienHuongTheoMucTieuTheoThoiGianThuc += 1;
+    } else {
+      _chiSoTangTienHuongTheoMucTieuTheoThoiGianThuc = 0;
     }
     return;
   }
@@ -770,15 +803,19 @@ abstract class VIENDANTANCONGCOBAN with CauTrucThucThiCoBan {
   double? _dxTrongTamNguyenBan;
   double? get getDxTrongTamNguyenBan => _dxTrongTamNguyenBan;
   double get getDxTrongTamNguyenBanNotNull => _dxTrongTamNguyenBan ?? 0;
-  void onVoidCaiDatDxTrongTamNguyenBan({required double? value}) {
-    if (value != null && value != 0) {
-      if (value.isNaN == false && value.isFinite == true) {
-        _dxTrongTamNguyenBan = value;
+  void onVoidCaiDatDxTrongTamNguyenBan({required double? value, bool? caiDatUuTien}) {
+    if (caiDatUuTien == true) {
+      _dxTrongTamNguyenBan = value;
+    } else {
+      if (value != null && value != 0) {
+        if (value.isNaN == false && value.isFinite == true) {
+          _dxTrongTamNguyenBan = value;
+        } else {
+          _dxTrongTamNguyenBan = 0;
+        }
       } else {
         _dxTrongTamNguyenBan = 0;
       }
-    } else {
-      _dxTrongTamNguyenBan = 0;
     }
     return;
   }
@@ -808,16 +845,35 @@ abstract class VIENDANTANCONGCOBAN with CauTrucThucThiCoBan {
   double? _dyTrongTamNguyenBan;
   double? get getDyTrongTamNguyenBan => _dyTrongTamNguyenBan;
   double get getDyTrongTamNguyenBanNotNull => _dyTrongTamNguyenBan ?? 0;
-  void onVoidCaiDatDyTrongTamNguyenBan({required double? value}) {
-    if (value != null && value != 0) {
-      if (value.isNaN == false && value.isFinite == true) {
-        _dyTrongTamNguyenBan = value;
+  void onVoidCaiDatDyTrongTamNguyenBan({required double? value, bool? caiDatUuTien}) {
+    if (caiDatUuTien == true) {
+      _dyTrongTamNguyenBan = value;
+    } else {
+      if (value != null && value != 0) {
+        if (value.isNaN == false && value.isFinite == true) {
+          _dyTrongTamNguyenBan = value;
+        } else {
+          _dyTrongTamNguyenBan = 0;
+        }
       } else {
         _dyTrongTamNguyenBan = 0;
       }
-    } else {
-      _dyTrongTamNguyenBan = 0;
     }
+    return;
+  }
+
+  /// -----
+  /// TODO: Viên Đạn Khúc Xạ Va Chạm Vật Cản
+  /// -----
+  bool? _vienDanKhucXaVaChamVatCan;
+  bool? get getVienDanKhucXaVaChamVatCan => _vienDanKhucXaVaChamVatCan;
+  void onVoidCaiDatVienDanKhucXaVaChamVatCan({required bool? value, bool? caiDatUuTien}) async {
+    if (caiDatUuTien == true) {
+      _vienDanKhucXaVaChamVatCan = value;
+    } else {
+      _vienDanKhucXaVaChamVatCan ??= value;
+    }
+
     return;
   }
 

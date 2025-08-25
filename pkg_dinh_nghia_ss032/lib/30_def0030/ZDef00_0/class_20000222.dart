@@ -1,5 +1,6 @@
 import 'package:pkg_dinh_nghia_ss020/pkg_dinh_nghia_ss020_exp.dart';
 import 'package:pkg_dinh_nghia_ss022/pkg_dinh_nghia_ss022_exp.dart';
+import 'package:pkg_dinh_nghia_ss032/26_def0026/ADef30_0/08_SubDefs/Def24_2/09_RootDef/class_20000228.dart';
 import 'package:pkg_dinh_nghia_ss032/30_def0030/ADef20_0/09_RootDef/class_20060228.dart';
 import 'package:pkg_dinh_nghia_ss032/pkg_dinh_nghia_ss032_hangar.dart';
 import 'package:pkg_dinh_nghia_ss032/pkg_dinh_nghia_ss032_exp.dart';
@@ -30,6 +31,7 @@ class QuanLyTrangThaiSuKienVaChamTrongChienDau with KhungThucThiCoBan {
 
     await caiDatSuKienVaChamCongKich(value: QuanLyTrangThaiSuKienVaChamCongKich());
     await caiDatSuKienVaChamPhaHuy(value: QuanLyTrangThaiSuKienVaChamPhaHuy());
+    await caiDatDinhHinhHuongXaDongCoTenLua(value: QuanLyTrangThaiDinhHinhHuongXaDongCoTenLua());
 
     await caiDatHatVaChamCongKichSS01(value: HatVaChamCongKichSS01());
     await caiDatHatVaChamCongKichSS02(value: HatVaChamCongKichSS02());
@@ -115,6 +117,7 @@ class QuanLyTrangThaiSuKienVaChamTrongChienDau with KhungThucThiCoBan {
   Future<void> onAttachRootForSubCom({required dynamic attachValue}) async {
     await getSuKienVaChamCongKich?.onAttachRoot(attachValue: attachValue);
     await getSuKienVaChamPhaHuy?.onAttachRoot(attachValue: attachValue);
+    await getDinhHinhHuongXaDongCoTenLua?.onAttachRoot(attachValue: attachValue);
 
     return;
   }
@@ -127,6 +130,7 @@ class QuanLyTrangThaiSuKienVaChamTrongChienDau with KhungThucThiCoBan {
     await getTaiNguyenHatVaCham?.onSetupRoot();
     await getSuKienVaChamCongKich?.onSetupRoot();
     await getSuKienVaChamPhaHuy?.onSetupRoot();
+    await getDinhHinhHuongXaDongCoTenLua?.onSetupRoot();
 
     await getHatVaChamCongKichSS01?.onSetupRoot();
     await getHatVaChamCongKichSS02?.onSetupRoot();
@@ -158,6 +162,7 @@ class QuanLyTrangThaiSuKienVaChamTrongChienDau with KhungThucThiCoBan {
     await getTaiNguyenHatVaCham?.onInitRoot();
     await getSuKienVaChamCongKich?.onInitRoot();
     await getSuKienVaChamPhaHuy?.onInitRoot();
+    await getDinhHinhHuongXaDongCoTenLua?.onInitRoot();
 
     await getHatVaChamCongKichSS01?.onInitRoot();
     await getHatVaChamCongKichSS02?.onInitRoot();
@@ -513,6 +518,16 @@ class QuanLyTrangThaiSuKienVaChamTrongChienDau with KhungThucThiCoBan {
   QuanLyTrangThaiSuKienVaChamPhaHuy? get getSuKienVaChamPhaHuy => _suKienVaChamPhaHuy;
   Future<void> caiDatSuKienVaChamPhaHuy({required QuanLyTrangThaiSuKienVaChamPhaHuy? value}) async {
     _suKienVaChamPhaHuy ??= value;
+    return;
+  }
+
+  /// -----
+  /// TODO:
+  /// -----
+  QuanLyTrangThaiDinhHinhHuongXaDongCoTenLua? _dinhHinhHuongXaDongCoTenLua;
+  QuanLyTrangThaiDinhHinhHuongXaDongCoTenLua? get getDinhHinhHuongXaDongCoTenLua => _dinhHinhHuongXaDongCoTenLua;
+  Future<void> caiDatDinhHinhHuongXaDongCoTenLua({required QuanLyTrangThaiDinhHinhHuongXaDongCoTenLua? value}) async {
+    _dinhHinhHuongXaDongCoTenLua ??= value;
     return;
   }
 

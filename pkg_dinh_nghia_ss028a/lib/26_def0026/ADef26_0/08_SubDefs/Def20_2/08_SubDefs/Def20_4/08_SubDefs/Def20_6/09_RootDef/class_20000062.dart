@@ -214,12 +214,21 @@ abstract class VienDanCoBan extends VIENDANTANCONGCOBAN {
       khoangCachDiChuyenCapNhat = getTocDoBayNguyenBanNotNull.getKhoangCach();
     }
 
+    if (getVienDanKhucXaVaChamVatCan == true) {
 
+      if ((getDxTrongTam ?? 0) - 10.0 <= 0) {
+        /// TODO: Vượt Quá Biên Trái
+        onVoidCaiDatDxViTriLayMucTieu(value: getDxTrongTamNguyenBan ?? 0);
+      } else if ((getDxTrongTam ?? 0) + 10.0 >= (getChieuRongManHinhPhiVatLy ?? 0)) {
+        /// TODO: Vượt Quá Biên Phải
+        onVoidCaiDatDxViTriLayMucTieu(value: (getChieuRongManHinhPhiVatLy ?? 0) - (getDxTrongTamNguyenBan ?? 0));
+      }
+    }
 
     final double dxDiemKetThuc = getDxViTriLayMucTieuNotNull;
     final double dyDiemKetThuc = getDyViTriLayMucTieuNotNull;
 
-    if (dxDiemKetThuc != 0 && getDyViTriLayMucTieuNotNull != 0) {
+    if (dxDiemKetThuc != 0 && dyDiemKetThuc != 0) {
       final Offset diemKetThuc = Offset(dxDiemKetThuc, dyDiemKetThuc);
 
       final double dxDiemBatDau = getDxTrongTam ?? 0;
@@ -297,6 +306,7 @@ abstract class VienDanCoBan extends VIENDANTANCONGCOBAN {
         /// TODO:
         /// -----
         onVoidCapNhatChiSoTangTienTheoThoiGianThuc();
+        onVoidCapNhatChiSoTangTienHuongTheoMucTieuTheoThoiGianThuc();
       }
     }
     return;

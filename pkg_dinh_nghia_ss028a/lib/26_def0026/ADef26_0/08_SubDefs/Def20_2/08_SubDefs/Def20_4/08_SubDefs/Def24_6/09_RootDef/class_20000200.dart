@@ -546,6 +546,8 @@ abstract class QuanLyTrangThaiPhuongThucTanCongCoBan with CauTrucThucThiCoBan, V
       trangThaiVienDan?.getMoHinh?.onVoidCaiDatTocDoBayNguyenBan(value: TocDoBayCoBan(tocDo: 8.000));
       trangThaiVienDan?.getMoHinh?.onVoidCaiDatGocXoay(value: pi);
 
+      trangThaiVienDan?.getMoHinh?.onVoidCaiDatVienDanKhucXaVaChamVatCan(value: false, caiDatUuTien: true);
+
       trangThaiVienDan?.getMoHinh?.caiDatQuanLyTrangThaiDanhSachMoHinh(value: getDanhSachMoHinhTongQuat);
       trangThaiVienDan?.getMoHinh?.caiDatDieuKhienTinhToanTongQuat(value: getDieuKhienTinhToanTongQuat);
 
@@ -939,10 +941,64 @@ abstract class QuanLyTrangThaiPhuongThucTanCongCoBan with CauTrucThucThiCoBan, V
           }
         }
         break;
+
+      case '[HINH_THUC_SS140]':
+        {
+          if (getKiemTraKichHoatSungChinhSs01 == true) {
+            dxTrongTamViTriXuatPhat = dxTrongTamChienDauCo;
+            dyTrongTamViTriXuatPhat = dyTrongTamChienDauCo - ((chieuCaoThanChienDauCo / 2) + 5.0);
+          }
+          if (getKiemTraKichHoatSungChinhSs02 == true) {
+            dxTrongTamViTriXuatPhat = dxTrongTamChienDauCo - 35.0;
+            dyTrongTamViTriXuatPhat = dyTrongTamChienDauCo - ((chieuCaoThanChienDauCo / 2) + 5.0);
+          }
+          if (getKiemTraKichHoatSungChinhSs03 == true) {
+            dxTrongTamViTriXuatPhat = dxTrongTamChienDauCo + 35.0;
+            dyTrongTamViTriXuatPhat = dyTrongTamChienDauCo - ((chieuCaoThanChienDauCo / 2) + 5.0);
+          }
+        }
+        break;
+
+      case '[HINH_THUC_SS150]':
+        {
+          if (getKiemTraKichHoatSungChinhSs01 == true) {
+            dxTrongTamViTriXuatPhat = dxTrongTamChienDauCo;
+            dyTrongTamViTriXuatPhat = dyTrongTamChienDauCo - ((chieuCaoThanChienDauCo / 2) + 5.0);
+          }
+          if (getKiemTraKichHoatSungChinhSs02 == true) {
+            dxTrongTamViTriXuatPhat = dxTrongTamChienDauCo - 35.0;
+            dyTrongTamViTriXuatPhat = dyTrongTamChienDauCo - ((chieuCaoThanChienDauCo / 2) + 5.0);
+          }
+          if (getKiemTraKichHoatSungChinhSs03 == true) {
+            dxTrongTamViTriXuatPhat = dxTrongTamChienDauCo + 35.0;
+            dyTrongTamViTriXuatPhat = dyTrongTamChienDauCo - ((chieuCaoThanChienDauCo / 2) + 5.0);
+          }
+        }
+        break;
+
+      case '[HINH_THUC_SS160]':
+        {
+          if (getKiemTraKichHoatSungChinhSs01 == true) {
+            dxTrongTamViTriXuatPhat = dxTrongTamChienDauCo;
+            dyTrongTamViTriXuatPhat = dyTrongTamChienDauCo - ((chieuCaoThanChienDauCo / 2) + 5.0);
+          }
+          if (getKiemTraKichHoatSungChinhSs02 == true) {
+            dxTrongTamViTriXuatPhat = dxTrongTamChienDauCo - 35.0;
+            dyTrongTamViTriXuatPhat = dyTrongTamChienDauCo - ((chieuCaoThanChienDauCo / 2) + 5.0);
+          }
+          if (getKiemTraKichHoatSungChinhSs03 == true) {
+            dxTrongTamViTriXuatPhat = dxTrongTamChienDauCo + 35.0;
+            dyTrongTamViTriXuatPhat = dyTrongTamChienDauCo - ((chieuCaoThanChienDauCo / 2) + 5.0);
+          }
+        }
+        break;
     }
 
     trangThai?.getMoHinh?.onVoidCaiDatDxTrongTamCapNhatCacGiaTriBien(value: dxTrongTamViTriXuatPhat);
     trangThai?.getMoHinh?.onVoidCaiDatDyTrongTamCapNhatCacGiaTriBien(value: dyTrongTamViTriXuatPhat);
+
+    trangThai?.getMoHinh?.onVoidCaiDatDxTrongTamNguyenBan(value: dxTrongTamViTriXuatPhat);
+    trangThai?.getMoHinh?.onVoidCaiDatDyTrongTamNguyenBan(value: dyTrongTamViTriXuatPhat);
 
     return;
   }
@@ -1347,6 +1403,108 @@ abstract class QuanLyTrangThaiPhuongThucTanCongCoBan with CauTrucThucThiCoBan, V
               dyTrongTamViTriLayMucTieu = (dyDiemXuatPhat.abs() + 100.0) * (-1);
             }
           }
+        }
+        break;
+
+      case '[HINH_THUC_SS140]':
+        {
+          if (getKiemTraKichHoatSungChinhSs01 == true) {
+            dxTrongTamViTriLayMucTieu = dxDiemXuatPhat;
+            dyTrongTamViTriLayMucTieu = (dyDiemXuatPhat.abs() + 100.0) * (-1);
+          }
+          if (getKiemTraKichHoatSungChinhSs02 == true) {
+            dxTrongTamViTriLayMucTieu = -25.0;
+            dyTrongTamViTriLayMucTieu = -60.0;
+          }
+          if (getKiemTraKichHoatSungChinhSs03 == true) {
+            dxTrongTamViTriLayMucTieu = (getThietLapTongQuat?.getChieuRongManHinhPhiVatLy ?? 0) + 25.0;
+            dyTrongTamViTriLayMucTieu = -60.0;
+          }
+
+        }
+        break;
+
+      case '[HINH_THUC_SS150]':
+        {
+
+          trangThai?.getMoHinh?.onVoidCaiDatVienDanKhucXaVaChamVatCan(value: true, caiDatUuTien: true);
+
+          if (getKiemTraKichHoatSungChinhSs01 == true) {
+            dxTrongTamViTriLayMucTieu = dxDiemXuatPhat;
+            dyTrongTamViTriLayMucTieu = (dyDiemXuatPhat.abs() + 100.0) * (-1);
+          }
+          if (getKiemTraKichHoatSungChinhSs02 == true) {
+            dxTrongTamViTriLayMucTieu = (dxDiemXuatPhat.abs()) * (-1);
+            dyTrongTamViTriLayMucTieu = -50.0;
+          }
+          if (getKiemTraKichHoatSungChinhSs03 == true) {
+            dxTrongTamViTriLayMucTieu = (getThietLapTongQuat?.getChieuRongManHinhPhiVatLy ?? 0) + (dxDiemXuatPhat.abs());
+            dyTrongTamViTriLayMucTieu = -50.0;
+          }
+
+        }
+        break;
+
+      case '[HINH_THUC_SS160]':
+        {
+          if (getKiemTraKichHoatSungChinhSs01 == true) {
+
+            if (getChiSoTangTienThucThiTheoChuKyFrom1To3 == 1) {
+              trangThai?.getMoHinh?.onVoidCaiDatVienDanKhucXaVaChamVatCan(value: true, caiDatUuTien: true);
+
+              dxTrongTamViTriLayMucTieu = (dxDiemXuatPhat.abs()) * (-2);
+              dyTrongTamViTriLayMucTieu = -50.0;
+            }
+            if (getChiSoTangTienThucThiTheoChuKyFrom1To3 == 2) {
+              dxTrongTamViTriLayMucTieu = dxDiemXuatPhat;
+              dyTrongTamViTriLayMucTieu = (dyDiemXuatPhat.abs() + 100.0) * (-1);
+            }
+            if (getChiSoTangTienThucThiTheoChuKyFrom1To3 == 3) {
+              trangThai?.getMoHinh?.onVoidCaiDatVienDanKhucXaVaChamVatCan(value: true, caiDatUuTien: true);
+
+              dxTrongTamViTriLayMucTieu = (getThietLapTongQuat?.getChieuRongManHinhPhiVatLy ?? 0) + (dxDiemXuatPhat.abs()) * 2.0;
+              dyTrongTamViTriLayMucTieu = -50.0;
+            }
+          }
+          if (getKiemTraKichHoatSungChinhSs02 == true) {
+
+            if (getChiSoTangTienThucThiTheoChuKyFrom1To3 == 1) {
+              trangThai?.getMoHinh?.onVoidCaiDatVienDanKhucXaVaChamVatCan(value: true, caiDatUuTien: true);
+
+              dxTrongTamViTriLayMucTieu = (dxDiemXuatPhat.abs()) * (-3);
+              dyTrongTamViTriLayMucTieu = -50.0;
+            }
+            if (getChiSoTangTienThucThiTheoChuKyFrom1To3 == 2) {
+              dxTrongTamViTriLayMucTieu = dxDiemXuatPhat;
+              dyTrongTamViTriLayMucTieu = (dyDiemXuatPhat.abs() + 100.0) * (-1);
+            }
+            if (getChiSoTangTienThucThiTheoChuKyFrom1To3 == 3) {
+              trangThai?.getMoHinh?.onVoidCaiDatVienDanKhucXaVaChamVatCan(value: true, caiDatUuTien: true);
+
+              dxTrongTamViTriLayMucTieu = (getThietLapTongQuat?.getChieuRongManHinhPhiVatLy ?? 0) + (dxDiemXuatPhat.abs()) * 1.0;
+              dyTrongTamViTriLayMucTieu = -50.0;
+            }
+          }
+          if (getKiemTraKichHoatSungChinhSs03 == true) {
+
+            if (getChiSoTangTienThucThiTheoChuKyFrom1To3 == 1) {
+              trangThai?.getMoHinh?.onVoidCaiDatVienDanKhucXaVaChamVatCan(value: true, caiDatUuTien: true);
+
+              dxTrongTamViTriLayMucTieu = (dxDiemXuatPhat.abs()) * (-1);
+              dyTrongTamViTriLayMucTieu = -50.0;
+            }
+            if (getChiSoTangTienThucThiTheoChuKyFrom1To3 == 2) {
+              dxTrongTamViTriLayMucTieu = dxDiemXuatPhat;
+              dyTrongTamViTriLayMucTieu = (dyDiemXuatPhat.abs() + 100.0) * (-1);
+            }
+            if (getChiSoTangTienThucThiTheoChuKyFrom1To3 == 3) {
+              trangThai?.getMoHinh?.onVoidCaiDatVienDanKhucXaVaChamVatCan(value: true, caiDatUuTien: true);
+
+              dxTrongTamViTriLayMucTieu = (getThietLapTongQuat?.getChieuRongManHinhPhiVatLy ?? 0) + (dxDiemXuatPhat.abs()) * 3.0;
+              dyTrongTamViTriLayMucTieu = -50.0;
+            }
+          }
+
         }
         break;
     }

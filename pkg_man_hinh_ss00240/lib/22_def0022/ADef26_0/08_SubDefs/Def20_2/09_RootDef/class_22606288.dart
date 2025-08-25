@@ -43,6 +43,57 @@ import 'package:pkg_man_hinh_ss00240/22_def0022/ADef20_0/08_SubDefs/Def22_2/08_S
 import 'package:pkg_man_hinh_ss00240/22_def0022/ADef20_0/08_SubDefs/Def22_2/08_SubDefs/sprite_hat_sat_thuong_va_cham_cong_kich_ss46.dart';
 import 'package:pkg_man_hinh_ss00240/22_def0022/ADef20_0/08_SubDefs/Def22_2/08_SubDefs/sprite_hat_sat_thuong_va_cham_cong_kich_ss48.dart';
 
+import 'package:pkg_man_hinh_ss00240/22_def0022/ADef20_0/08_SubDefs/Def40_2/08_SubDefs/sprite_hat_dinh_hinh_huong_xa_dong_co_ten_lua_ss20.dart';
+import 'package:pkg_man_hinh_ss00240/22_def0022/ADef20_0/08_SubDefs/Def40_2/08_SubDefs/sprite_hat_dinh_hinh_huong_xa_dong_co_ten_lua_ss22.dart';
+import 'package:pkg_man_hinh_ss00240/22_def0022/ADef20_0/08_SubDefs/Def40_2/08_SubDefs/sprite_hat_dinh_hinh_huong_xa_dong_co_ten_lua_ss24.dart';
+import 'package:pkg_man_hinh_ss00240/22_def0022/ADef20_0/08_SubDefs/Def40_2/08_SubDefs/sprite_hat_dinh_hinh_huong_xa_dong_co_ten_lua_ss26.dart';
+import 'package:pkg_man_hinh_ss00240/22_def0022/ADef20_0/08_SubDefs/Def40_2/08_SubDefs/sprite_hat_dinh_hinh_huong_xa_dong_co_ten_lua_ss28.dart';
+import 'package:pkg_man_hinh_ss00240/22_def0022/ADef20_0/08_SubDefs/Def40_2/08_SubDefs/sprite_hat_dinh_hinh_huong_xa_dong_co_ten_lua_ss30.dart';
+import 'package:pkg_man_hinh_ss00240/22_def0022/ADef20_0/08_SubDefs/Def40_2/08_SubDefs/sprite_hat_dinh_hinh_huong_xa_dong_co_ten_lua_ss32.dart';
+import 'package:pkg_man_hinh_ss00240/22_def0022/ADef20_0/08_SubDefs/Def40_2/08_SubDefs/sprite_hat_dinh_hinh_huong_xa_dong_co_ten_lua_ss34.dart';
+import 'package:pkg_man_hinh_ss00240/22_def0022/ADef20_0/08_SubDefs/Def40_2/08_SubDefs/sprite_hat_dinh_hinh_huong_xa_dong_co_ten_lua_ss36.dart';
+import 'package:pkg_man_hinh_ss00240/22_def0022/ADef20_0/08_SubDefs/Def40_2/08_SubDefs/sprite_hat_dinh_hinh_huong_xa_dong_co_ten_lua_ss38.dart';
+import 'package:pkg_man_hinh_ss00240/22_def0022/ADef20_0/08_SubDefs/Def40_2/08_SubDefs/sprite_hat_dinh_hinh_huong_xa_dong_co_ten_lua_ss40.dart';
+import 'package:pkg_man_hinh_ss00240/22_def0022/ADef20_0/08_SubDefs/Def40_2/08_SubDefs/sprite_hat_dinh_hinh_huong_xa_dong_co_ten_lua_ss42.dart';
+import 'package:pkg_man_hinh_ss00240/22_def0022/ADef20_0/08_SubDefs/Def40_2/08_SubDefs/sprite_hat_dinh_hinh_huong_xa_dong_co_ten_lua_ss44.dart';
+import 'package:pkg_man_hinh_ss00240/22_def0022/ADef20_0/08_SubDefs/Def40_2/08_SubDefs/sprite_hat_dinh_hinh_huong_xa_dong_co_ten_lua_ss46.dart';
+import 'package:pkg_man_hinh_ss00240/22_def0022/ADef20_0/08_SubDefs/Def40_2/08_SubDefs/sprite_hat_dinh_hinh_huong_xa_dong_co_ten_lua_ss48.dart';
+import 'package:pkg_man_hinh_ss00240/22_def0022/ADef20_0/08_SubDefs/Def40_2/08_SubDefs/sprite_hat_dinh_hinh_huong_xa_dong_co_ten_lua_ss50.dart';
+import 'package:pkg_man_hinh_ss00240/22_def0022/ADef20_0/08_SubDefs/Def40_2/08_SubDefs/sprite_hat_dinh_hinh_huong_xa_dong_co_ten_lua_ss52.dart';
+import 'package:pkg_man_hinh_ss00240/22_def0022/ADef20_0/08_SubDefs/Def40_2/08_SubDefs/sprite_hat_dinh_hinh_huong_xa_dong_co_ten_lua_ss54.dart';
+import 'package:pkg_man_hinh_ss00240/22_def0022/ADef20_0/08_SubDefs/Def40_2/08_SubDefs/sprite_hat_dinh_hinh_huong_xa_dong_co_ten_lua_ss56.dart';
+import 'package:pkg_man_hinh_ss00240/22_def0022/ADef20_0/08_SubDefs/Def40_2/08_SubDefs/sprite_hat_dinh_hinh_huong_xa_dong_co_ten_lua_ss58.dart';
+import 'package:pkg_man_hinh_ss00240/22_def0022/ADef20_0/08_SubDefs/Def40_2/08_SubDefs/sprite_hat_dinh_hinh_huong_xa_dong_co_ten_lua_ss60.dart';
+import 'package:pkg_man_hinh_ss00240/22_def0022/ADef20_0/08_SubDefs/Def40_2/08_SubDefs/sprite_hat_dinh_hinh_huong_xa_dong_co_ten_lua_ss62.dart';
+import 'package:pkg_man_hinh_ss00240/22_def0022/ADef20_0/08_SubDefs/Def40_2/08_SubDefs/sprite_hat_dinh_hinh_huong_xa_dong_co_ten_lua_ss64.dart';
+import 'package:pkg_man_hinh_ss00240/22_def0022/ADef20_0/08_SubDefs/Def40_2/08_SubDefs/sprite_hat_dinh_hinh_huong_xa_dong_co_ten_lua_ss66.dart';
+import 'package:pkg_man_hinh_ss00240/22_def0022/ADef20_0/08_SubDefs/Def40_2/08_SubDefs/sprite_hat_dinh_hinh_huong_xa_dong_co_ten_lua_ss68.dart';
+import 'package:pkg_man_hinh_ss00240/22_def0022/ADef20_0/08_SubDefs/Def40_2/08_SubDefs/sprite_hat_dinh_hinh_huong_xa_dong_co_ten_lua_ss70.dart';
+import 'package:pkg_man_hinh_ss00240/22_def0022/ADef20_0/08_SubDefs/Def40_2/08_SubDefs/sprite_hat_dinh_hinh_huong_xa_dong_co_ten_lua_ss72.dart';
+import 'package:pkg_man_hinh_ss00240/22_def0022/ADef20_0/08_SubDefs/Def40_2/08_SubDefs/sprite_hat_dinh_hinh_huong_xa_dong_co_ten_lua_ss74.dart';
+import 'package:pkg_man_hinh_ss00240/22_def0022/ADef20_0/08_SubDefs/Def40_2/08_SubDefs/sprite_hat_dinh_hinh_huong_xa_dong_co_ten_lua_ss76.dart';
+import 'package:pkg_man_hinh_ss00240/22_def0022/ADef20_0/08_SubDefs/Def40_2/08_SubDefs/sprite_hat_dinh_hinh_huong_xa_dong_co_ten_lua_ss78.dart';
+import 'package:pkg_man_hinh_ss00240/22_def0022/ADef20_0/08_SubDefs/Def40_2/08_SubDefs/sprite_hat_dinh_hinh_huong_xa_dong_co_ten_lua_ss80.dart';
+import 'package:pkg_man_hinh_ss00240/22_def0022/ADef20_0/08_SubDefs/Def40_2/08_SubDefs/sprite_hat_dinh_hinh_huong_xa_dong_co_ten_lua_ss82.dart';
+import 'package:pkg_man_hinh_ss00240/22_def0022/ADef20_0/08_SubDefs/Def40_2/08_SubDefs/sprite_hat_dinh_hinh_huong_xa_dong_co_ten_lua_ss84.dart';
+import 'package:pkg_man_hinh_ss00240/22_def0022/ADef20_0/08_SubDefs/Def40_2/08_SubDefs/sprite_hat_dinh_hinh_huong_xa_dong_co_ten_lua_ss86.dart';
+import 'package:pkg_man_hinh_ss00240/22_def0022/ADef20_0/08_SubDefs/Def40_2/08_SubDefs/sprite_hat_dinh_hinh_huong_xa_dong_co_ten_lua_ss88.dart';
+import 'package:pkg_man_hinh_ss00240/22_def0022/ADef20_0/08_SubDefs/Def40_2/08_SubDefs/sprite_hat_dinh_hinh_huong_xa_dong_co_ten_lua_ss90.dart';
+import 'package:pkg_man_hinh_ss00240/22_def0022/ADef20_0/08_SubDefs/Def40_2/08_SubDefs/sprite_hat_dinh_hinh_huong_xa_dong_co_ten_lua_ss92.dart';
+import 'package:pkg_man_hinh_ss00240/22_def0022/ADef20_0/08_SubDefs/Def40_2/08_SubDefs/sprite_hat_dinh_hinh_huong_xa_dong_co_ten_lua_ss94.dart';
+import 'package:pkg_man_hinh_ss00240/22_def0022/ADef20_0/08_SubDefs/Def40_2/08_SubDefs/sprite_hat_dinh_hinh_huong_xa_dong_co_ten_lua_ss96.dart';
+import 'package:pkg_man_hinh_ss00240/22_def0022/ADef20_0/08_SubDefs/Def40_2/08_SubDefs/sprite_hat_dinh_hinh_huong_xa_dong_co_ten_lua_ss98.dart';
+import 'package:pkg_man_hinh_ss00240/22_def0022/ADef20_0/08_SubDefs/Def40_2/08_SubDefs/sprite_hat_dinh_hinh_huong_xa_dong_co_ten_lua_ss100.dart';
+import 'package:pkg_man_hinh_ss00240/22_def0022/ADef20_0/08_SubDefs/Def40_2/08_SubDefs/sprite_hat_dinh_hinh_huong_xa_dong_co_ten_lua_ss102.dart';
+import 'package:pkg_man_hinh_ss00240/22_def0022/ADef20_0/08_SubDefs/Def40_2/08_SubDefs/sprite_hat_dinh_hinh_huong_xa_dong_co_ten_lua_ss104.dart';
+import 'package:pkg_man_hinh_ss00240/22_def0022/ADef20_0/08_SubDefs/Def40_2/08_SubDefs/sprite_hat_dinh_hinh_huong_xa_dong_co_ten_lua_ss106.dart';
+import 'package:pkg_man_hinh_ss00240/22_def0022/ADef20_0/08_SubDefs/Def40_2/08_SubDefs/sprite_hat_dinh_hinh_huong_xa_dong_co_ten_lua_ss108.dart';
+import 'package:pkg_man_hinh_ss00240/22_def0022/ADef20_0/08_SubDefs/Def40_2/08_SubDefs/sprite_hat_dinh_hinh_huong_xa_dong_co_ten_lua_ss110.dart';
+import 'package:pkg_man_hinh_ss00240/22_def0022/ADef20_0/08_SubDefs/Def40_2/08_SubDefs/sprite_hat_dinh_hinh_huong_xa_dong_co_ten_lua_ss112.dart';
+import 'package:pkg_man_hinh_ss00240/22_def0022/ADef20_0/08_SubDefs/Def40_2/08_SubDefs/sprite_hat_dinh_hinh_huong_xa_dong_co_ten_lua_ss114.dart';
+import 'package:pkg_man_hinh_ss00240/22_def0022/ADef20_0/08_SubDefs/Def40_2/08_SubDefs/sprite_hat_dinh_hinh_huong_xa_dong_co_ten_lua_ss116.dart';
+import 'package:pkg_man_hinh_ss00240/22_def0022/ADef20_0/08_SubDefs/Def40_2/08_SubDefs/sprite_hat_dinh_hinh_huong_xa_dong_co_ten_lua_ss118.dart';
+
 /// -----
 /// TODO:
 /// -----
@@ -106,6 +157,57 @@ class KhungHinhTichHopSuKienVaChamCongKich extends Component with HasVisibility 
     _spriteHatVaChamCongKichSS66?.onCaiDatMoHinhChiTiet();
     _spriteHatVaChamCongKichSS68?.onCaiDatMoHinhChiTiet();
 
+    _spriteHatDinhHinhHuongXaDongCoTenLuaSS20?.onCaiDatMoHinhChiTiet();
+    _spriteHatDinhHinhHuongXaDongCoTenLuaSS22?.onCaiDatMoHinhChiTiet();
+    _spriteHatDinhHinhHuongXaDongCoTenLuaSS24?.onCaiDatMoHinhChiTiet();
+    _spriteHatDinhHinhHuongXaDongCoTenLuaSS26?.onCaiDatMoHinhChiTiet();
+    _spriteHatDinhHinhHuongXaDongCoTenLuaSS28?.onCaiDatMoHinhChiTiet();
+    _spriteHatDinhHinhHuongXaDongCoTenLuaSS30?.onCaiDatMoHinhChiTiet();
+    _spriteHatDinhHinhHuongXaDongCoTenLuaSS32?.onCaiDatMoHinhChiTiet();
+    _spriteHatDinhHinhHuongXaDongCoTenLuaSS34?.onCaiDatMoHinhChiTiet();
+    _spriteHatDinhHinhHuongXaDongCoTenLuaSS36?.onCaiDatMoHinhChiTiet();
+    _spriteHatDinhHinhHuongXaDongCoTenLuaSS38?.onCaiDatMoHinhChiTiet();
+    _spriteHatDinhHinhHuongXaDongCoTenLuaSS40?.onCaiDatMoHinhChiTiet();
+    _spriteHatDinhHinhHuongXaDongCoTenLuaSS42?.onCaiDatMoHinhChiTiet();
+    _spriteHatDinhHinhHuongXaDongCoTenLuaSS44?.onCaiDatMoHinhChiTiet();
+    _spriteHatDinhHinhHuongXaDongCoTenLuaSS46?.onCaiDatMoHinhChiTiet();
+    _spriteHatDinhHinhHuongXaDongCoTenLuaSS48?.onCaiDatMoHinhChiTiet();
+    _spriteHatDinhHinhHuongXaDongCoTenLuaSS50?.onCaiDatMoHinhChiTiet();
+    _spriteHatDinhHinhHuongXaDongCoTenLuaSS52?.onCaiDatMoHinhChiTiet();
+    _spriteHatDinhHinhHuongXaDongCoTenLuaSS54?.onCaiDatMoHinhChiTiet();
+    _spriteHatDinhHinhHuongXaDongCoTenLuaSS56?.onCaiDatMoHinhChiTiet();
+    _spriteHatDinhHinhHuongXaDongCoTenLuaSS58?.onCaiDatMoHinhChiTiet();
+    _spriteHatDinhHinhHuongXaDongCoTenLuaSS60?.onCaiDatMoHinhChiTiet();
+    _spriteHatDinhHinhHuongXaDongCoTenLuaSS62?.onCaiDatMoHinhChiTiet();
+    _spriteHatDinhHinhHuongXaDongCoTenLuaSS64?.onCaiDatMoHinhChiTiet();
+    _spriteHatDinhHinhHuongXaDongCoTenLuaSS66?.onCaiDatMoHinhChiTiet();
+    _spriteHatDinhHinhHuongXaDongCoTenLuaSS68?.onCaiDatMoHinhChiTiet();
+    _spriteHatDinhHinhHuongXaDongCoTenLuaSS70?.onCaiDatMoHinhChiTiet();
+    _spriteHatDinhHinhHuongXaDongCoTenLuaSS72?.onCaiDatMoHinhChiTiet();
+    _spriteHatDinhHinhHuongXaDongCoTenLuaSS74?.onCaiDatMoHinhChiTiet();
+    _spriteHatDinhHinhHuongXaDongCoTenLuaSS76?.onCaiDatMoHinhChiTiet();
+    _spriteHatDinhHinhHuongXaDongCoTenLuaSS78?.onCaiDatMoHinhChiTiet();
+    _spriteHatDinhHinhHuongXaDongCoTenLuaSS80?.onCaiDatMoHinhChiTiet();
+    _spriteHatDinhHinhHuongXaDongCoTenLuaSS82?.onCaiDatMoHinhChiTiet();
+    _spriteHatDinhHinhHuongXaDongCoTenLuaSS84?.onCaiDatMoHinhChiTiet();
+    _spriteHatDinhHinhHuongXaDongCoTenLuaSS86?.onCaiDatMoHinhChiTiet();
+    _spriteHatDinhHinhHuongXaDongCoTenLuaSS88?.onCaiDatMoHinhChiTiet();
+    _spriteHatDinhHinhHuongXaDongCoTenLuaSS90?.onCaiDatMoHinhChiTiet();
+    _spriteHatDinhHinhHuongXaDongCoTenLuaSS92?.onCaiDatMoHinhChiTiet();
+    _spriteHatDinhHinhHuongXaDongCoTenLuaSS94?.onCaiDatMoHinhChiTiet();
+    _spriteHatDinhHinhHuongXaDongCoTenLuaSS96?.onCaiDatMoHinhChiTiet();
+    _spriteHatDinhHinhHuongXaDongCoTenLuaSS98?.onCaiDatMoHinhChiTiet();
+    _spriteHatDinhHinhHuongXaDongCoTenLuaSS100?.onCaiDatMoHinhChiTiet();
+    _spriteHatDinhHinhHuongXaDongCoTenLuaSS102?.onCaiDatMoHinhChiTiet();
+    _spriteHatDinhHinhHuongXaDongCoTenLuaSS104?.onCaiDatMoHinhChiTiet();
+    _spriteHatDinhHinhHuongXaDongCoTenLuaSS106?.onCaiDatMoHinhChiTiet();
+    _spriteHatDinhHinhHuongXaDongCoTenLuaSS108?.onCaiDatMoHinhChiTiet();
+    _spriteHatDinhHinhHuongXaDongCoTenLuaSS110?.onCaiDatMoHinhChiTiet();
+    _spriteHatDinhHinhHuongXaDongCoTenLuaSS112?.onCaiDatMoHinhChiTiet();
+    _spriteHatDinhHinhHuongXaDongCoTenLuaSS114?.onCaiDatMoHinhChiTiet();
+    _spriteHatDinhHinhHuongXaDongCoTenLuaSS116?.onCaiDatMoHinhChiTiet();
+    _spriteHatDinhHinhHuongXaDongCoTenLuaSS118?.onCaiDatMoHinhChiTiet();
+
     return;
   }
 
@@ -152,6 +254,67 @@ class KhungHinhTichHopSuKienVaChamCongKich extends Component with HasVisibility 
   SpriteHatSatThuongVaChamCongKichSS44? _spriteHatSatThuongVaChamCongKichSS44;
   SpriteHatSatThuongVaChamCongKichSS46? _spriteHatSatThuongVaChamCongKichSS46;
   SpriteHatSatThuongVaChamCongKichSS48? _spriteHatSatThuongVaChamCongKichSS48;
+
+
+  SpriteHatDinhHinhHuongXaDongCoTenLuaSS20? _spriteHatDinhHinhHuongXaDongCoTenLuaSS20;
+  SpriteHatDinhHinhHuongXaDongCoTenLuaSS22? _spriteHatDinhHinhHuongXaDongCoTenLuaSS22;
+  SpriteHatDinhHinhHuongXaDongCoTenLuaSS24? _spriteHatDinhHinhHuongXaDongCoTenLuaSS24;
+  SpriteHatDinhHinhHuongXaDongCoTenLuaSS26? _spriteHatDinhHinhHuongXaDongCoTenLuaSS26;
+  SpriteHatDinhHinhHuongXaDongCoTenLuaSS28? _spriteHatDinhHinhHuongXaDongCoTenLuaSS28;
+
+  SpriteHatDinhHinhHuongXaDongCoTenLuaSS30? _spriteHatDinhHinhHuongXaDongCoTenLuaSS30;
+  SpriteHatDinhHinhHuongXaDongCoTenLuaSS32? _spriteHatDinhHinhHuongXaDongCoTenLuaSS32;
+  SpriteHatDinhHinhHuongXaDongCoTenLuaSS34? _spriteHatDinhHinhHuongXaDongCoTenLuaSS34;
+  SpriteHatDinhHinhHuongXaDongCoTenLuaSS36? _spriteHatDinhHinhHuongXaDongCoTenLuaSS36;
+  SpriteHatDinhHinhHuongXaDongCoTenLuaSS38? _spriteHatDinhHinhHuongXaDongCoTenLuaSS38;
+
+  SpriteHatDinhHinhHuongXaDongCoTenLuaSS40? _spriteHatDinhHinhHuongXaDongCoTenLuaSS40;
+  SpriteHatDinhHinhHuongXaDongCoTenLuaSS42? _spriteHatDinhHinhHuongXaDongCoTenLuaSS42;
+  SpriteHatDinhHinhHuongXaDongCoTenLuaSS44? _spriteHatDinhHinhHuongXaDongCoTenLuaSS44;
+  SpriteHatDinhHinhHuongXaDongCoTenLuaSS46? _spriteHatDinhHinhHuongXaDongCoTenLuaSS46;
+  SpriteHatDinhHinhHuongXaDongCoTenLuaSS48? _spriteHatDinhHinhHuongXaDongCoTenLuaSS48;
+
+  SpriteHatDinhHinhHuongXaDongCoTenLuaSS50? _spriteHatDinhHinhHuongXaDongCoTenLuaSS50;
+  SpriteHatDinhHinhHuongXaDongCoTenLuaSS52? _spriteHatDinhHinhHuongXaDongCoTenLuaSS52;
+  SpriteHatDinhHinhHuongXaDongCoTenLuaSS54? _spriteHatDinhHinhHuongXaDongCoTenLuaSS54;
+  SpriteHatDinhHinhHuongXaDongCoTenLuaSS56? _spriteHatDinhHinhHuongXaDongCoTenLuaSS56;
+  SpriteHatDinhHinhHuongXaDongCoTenLuaSS58? _spriteHatDinhHinhHuongXaDongCoTenLuaSS58;
+
+  SpriteHatDinhHinhHuongXaDongCoTenLuaSS60? _spriteHatDinhHinhHuongXaDongCoTenLuaSS60;
+  SpriteHatDinhHinhHuongXaDongCoTenLuaSS62? _spriteHatDinhHinhHuongXaDongCoTenLuaSS62;
+  SpriteHatDinhHinhHuongXaDongCoTenLuaSS64? _spriteHatDinhHinhHuongXaDongCoTenLuaSS64;
+  SpriteHatDinhHinhHuongXaDongCoTenLuaSS66? _spriteHatDinhHinhHuongXaDongCoTenLuaSS66;
+  SpriteHatDinhHinhHuongXaDongCoTenLuaSS68? _spriteHatDinhHinhHuongXaDongCoTenLuaSS68;
+
+  SpriteHatDinhHinhHuongXaDongCoTenLuaSS70? _spriteHatDinhHinhHuongXaDongCoTenLuaSS70;
+  SpriteHatDinhHinhHuongXaDongCoTenLuaSS72? _spriteHatDinhHinhHuongXaDongCoTenLuaSS72;
+  SpriteHatDinhHinhHuongXaDongCoTenLuaSS74? _spriteHatDinhHinhHuongXaDongCoTenLuaSS74;
+  SpriteHatDinhHinhHuongXaDongCoTenLuaSS76? _spriteHatDinhHinhHuongXaDongCoTenLuaSS76;
+  SpriteHatDinhHinhHuongXaDongCoTenLuaSS78? _spriteHatDinhHinhHuongXaDongCoTenLuaSS78;
+
+  SpriteHatDinhHinhHuongXaDongCoTenLuaSS80? _spriteHatDinhHinhHuongXaDongCoTenLuaSS80;
+  SpriteHatDinhHinhHuongXaDongCoTenLuaSS82? _spriteHatDinhHinhHuongXaDongCoTenLuaSS82;
+  SpriteHatDinhHinhHuongXaDongCoTenLuaSS84? _spriteHatDinhHinhHuongXaDongCoTenLuaSS84;
+  SpriteHatDinhHinhHuongXaDongCoTenLuaSS86? _spriteHatDinhHinhHuongXaDongCoTenLuaSS86;
+  SpriteHatDinhHinhHuongXaDongCoTenLuaSS88? _spriteHatDinhHinhHuongXaDongCoTenLuaSS88;
+
+  SpriteHatDinhHinhHuongXaDongCoTenLuaSS90? _spriteHatDinhHinhHuongXaDongCoTenLuaSS90;
+  SpriteHatDinhHinhHuongXaDongCoTenLuaSS92? _spriteHatDinhHinhHuongXaDongCoTenLuaSS92;
+  SpriteHatDinhHinhHuongXaDongCoTenLuaSS94? _spriteHatDinhHinhHuongXaDongCoTenLuaSS94;
+  SpriteHatDinhHinhHuongXaDongCoTenLuaSS96? _spriteHatDinhHinhHuongXaDongCoTenLuaSS96;
+  SpriteHatDinhHinhHuongXaDongCoTenLuaSS98? _spriteHatDinhHinhHuongXaDongCoTenLuaSS98;
+
+  SpriteHatDinhHinhHuongXaDongCoTenLuaSS100? _spriteHatDinhHinhHuongXaDongCoTenLuaSS100;
+  SpriteHatDinhHinhHuongXaDongCoTenLuaSS102? _spriteHatDinhHinhHuongXaDongCoTenLuaSS102;
+  SpriteHatDinhHinhHuongXaDongCoTenLuaSS104? _spriteHatDinhHinhHuongXaDongCoTenLuaSS104;
+  SpriteHatDinhHinhHuongXaDongCoTenLuaSS106? _spriteHatDinhHinhHuongXaDongCoTenLuaSS106;
+  SpriteHatDinhHinhHuongXaDongCoTenLuaSS108? _spriteHatDinhHinhHuongXaDongCoTenLuaSS108;
+
+  SpriteHatDinhHinhHuongXaDongCoTenLuaSS110? _spriteHatDinhHinhHuongXaDongCoTenLuaSS110;
+  SpriteHatDinhHinhHuongXaDongCoTenLuaSS112? _spriteHatDinhHinhHuongXaDongCoTenLuaSS112;
+  SpriteHatDinhHinhHuongXaDongCoTenLuaSS114? _spriteHatDinhHinhHuongXaDongCoTenLuaSS114;
+  SpriteHatDinhHinhHuongXaDongCoTenLuaSS116? _spriteHatDinhHinhHuongXaDongCoTenLuaSS116;
+  SpriteHatDinhHinhHuongXaDongCoTenLuaSS118? _spriteHatDinhHinhHuongXaDongCoTenLuaSS118;
 
   /// -----
   /// TODO: Setup Root
@@ -204,6 +367,57 @@ class KhungHinhTichHopSuKienVaChamCongKich extends Component with HasVisibility 
     _spriteHatSatThuongVaChamCongKichSS46 = SpriteHatSatThuongVaChamCongKichSS46(trangThaiTongQuat: getTrangThaiTongQuat);
     _spriteHatSatThuongVaChamCongKichSS48 = SpriteHatSatThuongVaChamCongKichSS48(trangThaiTongQuat: getTrangThaiTongQuat);
 
+    _spriteHatDinhHinhHuongXaDongCoTenLuaSS20 = SpriteHatDinhHinhHuongXaDongCoTenLuaSS20(trangThaiTongQuat: getTrangThaiTongQuat, parentComponent: this);
+    _spriteHatDinhHinhHuongXaDongCoTenLuaSS22 = SpriteHatDinhHinhHuongXaDongCoTenLuaSS22(trangThaiTongQuat: getTrangThaiTongQuat, parentComponent: this);
+    _spriteHatDinhHinhHuongXaDongCoTenLuaSS24 = SpriteHatDinhHinhHuongXaDongCoTenLuaSS24(trangThaiTongQuat: getTrangThaiTongQuat, parentComponent: this);
+    _spriteHatDinhHinhHuongXaDongCoTenLuaSS26 = SpriteHatDinhHinhHuongXaDongCoTenLuaSS26(trangThaiTongQuat: getTrangThaiTongQuat, parentComponent: this);
+    _spriteHatDinhHinhHuongXaDongCoTenLuaSS28 = SpriteHatDinhHinhHuongXaDongCoTenLuaSS28(trangThaiTongQuat: getTrangThaiTongQuat, parentComponent: this);
+    _spriteHatDinhHinhHuongXaDongCoTenLuaSS30 = SpriteHatDinhHinhHuongXaDongCoTenLuaSS30(trangThaiTongQuat: getTrangThaiTongQuat, parentComponent: this);
+    _spriteHatDinhHinhHuongXaDongCoTenLuaSS32 = SpriteHatDinhHinhHuongXaDongCoTenLuaSS32(trangThaiTongQuat: getTrangThaiTongQuat, parentComponent: this);
+    _spriteHatDinhHinhHuongXaDongCoTenLuaSS34 = SpriteHatDinhHinhHuongXaDongCoTenLuaSS34(trangThaiTongQuat: getTrangThaiTongQuat, parentComponent: this);
+    _spriteHatDinhHinhHuongXaDongCoTenLuaSS36 = SpriteHatDinhHinhHuongXaDongCoTenLuaSS36(trangThaiTongQuat: getTrangThaiTongQuat, parentComponent: this);
+    _spriteHatDinhHinhHuongXaDongCoTenLuaSS38 = SpriteHatDinhHinhHuongXaDongCoTenLuaSS38(trangThaiTongQuat: getTrangThaiTongQuat, parentComponent: this);
+    _spriteHatDinhHinhHuongXaDongCoTenLuaSS40 = SpriteHatDinhHinhHuongXaDongCoTenLuaSS40(trangThaiTongQuat: getTrangThaiTongQuat, parentComponent: this);
+    _spriteHatDinhHinhHuongXaDongCoTenLuaSS42 = SpriteHatDinhHinhHuongXaDongCoTenLuaSS42(trangThaiTongQuat: getTrangThaiTongQuat, parentComponent: this);
+    _spriteHatDinhHinhHuongXaDongCoTenLuaSS44 = SpriteHatDinhHinhHuongXaDongCoTenLuaSS44(trangThaiTongQuat: getTrangThaiTongQuat, parentComponent: this);
+    _spriteHatDinhHinhHuongXaDongCoTenLuaSS46 = SpriteHatDinhHinhHuongXaDongCoTenLuaSS46(trangThaiTongQuat: getTrangThaiTongQuat, parentComponent: this);
+    _spriteHatDinhHinhHuongXaDongCoTenLuaSS48 = SpriteHatDinhHinhHuongXaDongCoTenLuaSS48(trangThaiTongQuat: getTrangThaiTongQuat, parentComponent: this);
+    _spriteHatDinhHinhHuongXaDongCoTenLuaSS50 = SpriteHatDinhHinhHuongXaDongCoTenLuaSS50(trangThaiTongQuat: getTrangThaiTongQuat, parentComponent: this);
+    _spriteHatDinhHinhHuongXaDongCoTenLuaSS52 = SpriteHatDinhHinhHuongXaDongCoTenLuaSS52(trangThaiTongQuat: getTrangThaiTongQuat, parentComponent: this);
+    _spriteHatDinhHinhHuongXaDongCoTenLuaSS54 = SpriteHatDinhHinhHuongXaDongCoTenLuaSS54(trangThaiTongQuat: getTrangThaiTongQuat, parentComponent: this);
+    _spriteHatDinhHinhHuongXaDongCoTenLuaSS56 = SpriteHatDinhHinhHuongXaDongCoTenLuaSS56(trangThaiTongQuat: getTrangThaiTongQuat, parentComponent: this);
+    _spriteHatDinhHinhHuongXaDongCoTenLuaSS58 = SpriteHatDinhHinhHuongXaDongCoTenLuaSS58(trangThaiTongQuat: getTrangThaiTongQuat, parentComponent: this);
+    _spriteHatDinhHinhHuongXaDongCoTenLuaSS60 = SpriteHatDinhHinhHuongXaDongCoTenLuaSS60(trangThaiTongQuat: getTrangThaiTongQuat, parentComponent: this);
+    _spriteHatDinhHinhHuongXaDongCoTenLuaSS62 = SpriteHatDinhHinhHuongXaDongCoTenLuaSS62(trangThaiTongQuat: getTrangThaiTongQuat, parentComponent: this);
+    _spriteHatDinhHinhHuongXaDongCoTenLuaSS64 = SpriteHatDinhHinhHuongXaDongCoTenLuaSS64(trangThaiTongQuat: getTrangThaiTongQuat, parentComponent: this);
+    _spriteHatDinhHinhHuongXaDongCoTenLuaSS66 = SpriteHatDinhHinhHuongXaDongCoTenLuaSS66(trangThaiTongQuat: getTrangThaiTongQuat, parentComponent: this);
+    _spriteHatDinhHinhHuongXaDongCoTenLuaSS68 = SpriteHatDinhHinhHuongXaDongCoTenLuaSS68(trangThaiTongQuat: getTrangThaiTongQuat, parentComponent: this);
+    _spriteHatDinhHinhHuongXaDongCoTenLuaSS70 = SpriteHatDinhHinhHuongXaDongCoTenLuaSS70(trangThaiTongQuat: getTrangThaiTongQuat, parentComponent: this);
+    _spriteHatDinhHinhHuongXaDongCoTenLuaSS72 = SpriteHatDinhHinhHuongXaDongCoTenLuaSS72(trangThaiTongQuat: getTrangThaiTongQuat, parentComponent: this);
+    _spriteHatDinhHinhHuongXaDongCoTenLuaSS74 = SpriteHatDinhHinhHuongXaDongCoTenLuaSS74(trangThaiTongQuat: getTrangThaiTongQuat, parentComponent: this);
+    _spriteHatDinhHinhHuongXaDongCoTenLuaSS76 = SpriteHatDinhHinhHuongXaDongCoTenLuaSS76(trangThaiTongQuat: getTrangThaiTongQuat, parentComponent: this);
+    _spriteHatDinhHinhHuongXaDongCoTenLuaSS78 = SpriteHatDinhHinhHuongXaDongCoTenLuaSS78(trangThaiTongQuat: getTrangThaiTongQuat, parentComponent: this);
+    _spriteHatDinhHinhHuongXaDongCoTenLuaSS80 = SpriteHatDinhHinhHuongXaDongCoTenLuaSS80(trangThaiTongQuat: getTrangThaiTongQuat, parentComponent: this);
+    _spriteHatDinhHinhHuongXaDongCoTenLuaSS82 = SpriteHatDinhHinhHuongXaDongCoTenLuaSS82(trangThaiTongQuat: getTrangThaiTongQuat, parentComponent: this);
+    _spriteHatDinhHinhHuongXaDongCoTenLuaSS84 = SpriteHatDinhHinhHuongXaDongCoTenLuaSS84(trangThaiTongQuat: getTrangThaiTongQuat, parentComponent: this);
+    _spriteHatDinhHinhHuongXaDongCoTenLuaSS86 = SpriteHatDinhHinhHuongXaDongCoTenLuaSS86(trangThaiTongQuat: getTrangThaiTongQuat, parentComponent: this);
+    _spriteHatDinhHinhHuongXaDongCoTenLuaSS88 = SpriteHatDinhHinhHuongXaDongCoTenLuaSS88(trangThaiTongQuat: getTrangThaiTongQuat, parentComponent: this);
+    _spriteHatDinhHinhHuongXaDongCoTenLuaSS90 = SpriteHatDinhHinhHuongXaDongCoTenLuaSS90(trangThaiTongQuat: getTrangThaiTongQuat, parentComponent: this);
+    _spriteHatDinhHinhHuongXaDongCoTenLuaSS92 = SpriteHatDinhHinhHuongXaDongCoTenLuaSS92(trangThaiTongQuat: getTrangThaiTongQuat, parentComponent: this);
+    _spriteHatDinhHinhHuongXaDongCoTenLuaSS94 = SpriteHatDinhHinhHuongXaDongCoTenLuaSS94(trangThaiTongQuat: getTrangThaiTongQuat, parentComponent: this);
+    _spriteHatDinhHinhHuongXaDongCoTenLuaSS96 = SpriteHatDinhHinhHuongXaDongCoTenLuaSS96(trangThaiTongQuat: getTrangThaiTongQuat, parentComponent: this);
+    _spriteHatDinhHinhHuongXaDongCoTenLuaSS98 = SpriteHatDinhHinhHuongXaDongCoTenLuaSS98(trangThaiTongQuat: getTrangThaiTongQuat, parentComponent: this);
+    _spriteHatDinhHinhHuongXaDongCoTenLuaSS100 = SpriteHatDinhHinhHuongXaDongCoTenLuaSS100(trangThaiTongQuat: getTrangThaiTongQuat, parentComponent: this);
+    _spriteHatDinhHinhHuongXaDongCoTenLuaSS102 = SpriteHatDinhHinhHuongXaDongCoTenLuaSS102(trangThaiTongQuat: getTrangThaiTongQuat, parentComponent: this);
+    _spriteHatDinhHinhHuongXaDongCoTenLuaSS104 = SpriteHatDinhHinhHuongXaDongCoTenLuaSS104(trangThaiTongQuat: getTrangThaiTongQuat, parentComponent: this);
+    _spriteHatDinhHinhHuongXaDongCoTenLuaSS106 = SpriteHatDinhHinhHuongXaDongCoTenLuaSS106(trangThaiTongQuat: getTrangThaiTongQuat, parentComponent: this);
+    _spriteHatDinhHinhHuongXaDongCoTenLuaSS108 = SpriteHatDinhHinhHuongXaDongCoTenLuaSS108(trangThaiTongQuat: getTrangThaiTongQuat, parentComponent: this);
+    _spriteHatDinhHinhHuongXaDongCoTenLuaSS110 = SpriteHatDinhHinhHuongXaDongCoTenLuaSS110(trangThaiTongQuat: getTrangThaiTongQuat, parentComponent: this);
+    _spriteHatDinhHinhHuongXaDongCoTenLuaSS112 = SpriteHatDinhHinhHuongXaDongCoTenLuaSS112(trangThaiTongQuat: getTrangThaiTongQuat, parentComponent: this);
+    _spriteHatDinhHinhHuongXaDongCoTenLuaSS114 = SpriteHatDinhHinhHuongXaDongCoTenLuaSS114(trangThaiTongQuat: getTrangThaiTongQuat, parentComponent: this);
+    _spriteHatDinhHinhHuongXaDongCoTenLuaSS116 = SpriteHatDinhHinhHuongXaDongCoTenLuaSS116(trangThaiTongQuat: getTrangThaiTongQuat, parentComponent: this);
+    _spriteHatDinhHinhHuongXaDongCoTenLuaSS118 = SpriteHatDinhHinhHuongXaDongCoTenLuaSS118(trangThaiTongQuat: getTrangThaiTongQuat, parentComponent: this);
+
     return;
   }
 
@@ -211,83 +425,6 @@ class KhungHinhTichHopSuKienVaChamCongKich extends Component with HasVisibility 
   /// TODO: onAddRoot
   ///
   Future<void> onAddRoot() async {
-    // if (_spriteHatVaChamCongKichSS20 != null && _spriteHatVaChamCongKichSS20?.isMounted == false) {
-    //   await add(_spriteHatVaChamCongKichSS20!);
-    // }
-    // if (_spriteHatVaChamCongKichSS22 != null && _spriteHatVaChamCongKichSS22?.isMounted == false) {
-    //   await add(_spriteHatVaChamCongKichSS22!);
-    // }
-    // if (_spriteHatVaChamCongKichSS24 != null && _spriteHatVaChamCongKichSS24?.isMounted == false) {
-    //   await add(_spriteHatVaChamCongKichSS24!);
-    // }
-    // if (_spriteHatVaChamCongKichSS26 != null && _spriteHatVaChamCongKichSS26?.isMounted == false) {
-    //   await add(_spriteHatVaChamCongKichSS26!);
-    // }
-    // if (_spriteHatVaChamCongKichSS28 != null && _spriteHatVaChamCongKichSS28?.isMounted == false) {
-    //   await add(_spriteHatVaChamCongKichSS28!);
-    // }
-    // if (_spriteHatVaChamCongKichSS30 != null && _spriteHatVaChamCongKichSS30?.isMounted == false) {
-    //   await add(_spriteHatVaChamCongKichSS30!);
-    // }
-    // if (_spriteHatVaChamCongKichSS32 != null && _spriteHatVaChamCongKichSS32?.isMounted == false) {
-    //   await add(_spriteHatVaChamCongKichSS32!);
-    // }
-    // if (_spriteHatVaChamCongKichSS34 != null && _spriteHatVaChamCongKichSS34?.isMounted == false) {
-    //   await add(_spriteHatVaChamCongKichSS34!);
-    // }
-    // if (_spriteHatVaChamCongKichSS36 != null && _spriteHatVaChamCongKichSS36?.isMounted == false) {
-    //   await add(_spriteHatVaChamCongKichSS36!);
-    // }
-    // if (_spriteHatVaChamCongKichSS38 != null && _spriteHatVaChamCongKichSS38?.isMounted == false) {
-    //   await add(_spriteHatVaChamCongKichSS38!);
-    // }
-    // if (_spriteHatVaChamCongKichSS40 != null && _spriteHatVaChamCongKichSS40?.isMounted == false) {
-    //   await add(_spriteHatVaChamCongKichSS40!);
-    // }
-    // if (_spriteHatVaChamCongKichSS42 != null && _spriteHatVaChamCongKichSS42?.isMounted == false) {
-    //   await add(_spriteHatVaChamCongKichSS42!);
-    // }
-    // if (_spriteHatVaChamCongKichSS44 != null && _spriteHatVaChamCongKichSS44?.isMounted == false) {
-    //   await add(_spriteHatVaChamCongKichSS44!);
-    // }
-    // if (_spriteHatVaChamCongKichSS46 != null && _spriteHatVaChamCongKichSS46?.isMounted == false) {
-    //   await add(_spriteHatVaChamCongKichSS46!);
-    // }
-    // if (_spriteHatVaChamCongKichSS48 != null && _spriteHatVaChamCongKichSS48?.isMounted == false) {
-    //   await add(_spriteHatVaChamCongKichSS48!);
-    // }
-    //
-    // if (_spriteHatVaChamCongKichSS50 != null && _spriteHatVaChamCongKichSS50?.isMounted == false) {
-    //   await add(_spriteHatVaChamCongKichSS50!);
-    // }
-    // if (_spriteHatVaChamCongKichSS52 != null && _spriteHatVaChamCongKichSS52?.isMounted == false) {
-    //   await add(_spriteHatVaChamCongKichSS52!);
-    // }
-    // if (_spriteHatVaChamCongKichSS54 != null && _spriteHatVaChamCongKichSS54?.isMounted == false) {
-    //   await add(_spriteHatVaChamCongKichSS54!);
-    // }
-    // if (_spriteHatVaChamCongKichSS56 != null && _spriteHatVaChamCongKichSS56?.isMounted == false) {
-    //   await add(_spriteHatVaChamCongKichSS56!);
-    // }
-    // if (_spriteHatVaChamCongKichSS58 != null && _spriteHatVaChamCongKichSS58?.isMounted == false) {
-    //   await add(_spriteHatVaChamCongKichSS58!);
-    // }
-    //
-    // if (_spriteHatVaChamCongKichSS60 != null && _spriteHatVaChamCongKichSS60?.isMounted == false) {
-    //   await add(_spriteHatVaChamCongKichSS60!);
-    // }
-    // if (_spriteHatVaChamCongKichSS62 != null && _spriteHatVaChamCongKichSS62?.isMounted == false) {
-    //   await add(_spriteHatVaChamCongKichSS62!);
-    // }
-    // if (_spriteHatVaChamCongKichSS64 != null && _spriteHatVaChamCongKichSS64?.isMounted == false) {
-    //   await add(_spriteHatVaChamCongKichSS64!);
-    // }
-    // if (_spriteHatVaChamCongKichSS66 != null && _spriteHatVaChamCongKichSS66?.isMounted == false) {
-    //   await add(_spriteHatVaChamCongKichSS66!);
-    // }
-    // if (_spriteHatVaChamCongKichSS68 != null && _spriteHatVaChamCongKichSS68?.isMounted == false) {
-    //   await add(_spriteHatVaChamCongKichSS68!);
-    // }
 
     ///
     if (_spriteHatSatThuongVaChamCongKichSS20 != null && _spriteHatSatThuongVaChamCongKichSS20?.isMounted == false) {

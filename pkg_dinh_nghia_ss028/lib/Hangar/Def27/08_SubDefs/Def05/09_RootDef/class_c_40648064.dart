@@ -79,7 +79,7 @@ class ChienDauCoDangCapSaoSSS10SS05 extends MoHinhChienDauCoDangCapSaoSSS10 {
 
     await super.onInitRoot();
 
-    getThuocTinh?.getThuocTinhTanCong?.onVoidCaiDatMaDinhDanhHinhThucDuongBayVienDanDacHuu(value: '[HINH_THUC_SS010]');
+    getThuocTinh?.getThuocTinhTanCong?.onVoidCaiDatMaDinhDanhHinhThucDuongBayVienDanDacHuu(value: '[HINH_THUC_SS160]');
 
     getThuocTinh?.caiDatTenChienDauCo(value: 'SSS10SS05', caiDatUuTien: true);
     getThuocTinh?.caiDatMaDinhDanhDangCapSao(value: '[SSS10SS05]', caiDatUuTien: true);

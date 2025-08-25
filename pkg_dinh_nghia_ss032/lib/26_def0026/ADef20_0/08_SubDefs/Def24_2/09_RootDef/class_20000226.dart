@@ -347,6 +347,206 @@ abstract class QuanLyTrangThaiSuKienVaChamCoBan with CauTrucThucThiCoBan, VongLa
     return;
   }
 
+  /// 26
+  TrangThaiHatVaChamCoBan? _hatVaChamSS70;
+  TrangThaiHatVaChamCoBan? get getHatVaChamSS70 => _hatVaChamSS70;
+  Future<void> caiDatHatVaChamSS70({required TrangThaiHatVaChamCoBan? value}) async {
+    _hatVaChamSS70 = value;
+    return;
+  }
+
+  /// 27
+  TrangThaiHatVaChamCoBan? _hatVaChamSS72;
+  TrangThaiHatVaChamCoBan? get getHatVaChamSS72 => _hatVaChamSS72;
+  Future<void> caiDatHatVaChamSS72({required TrangThaiHatVaChamCoBan? value}) async {
+    _hatVaChamSS72 = value;
+    return;
+  }
+
+  /// 28
+  TrangThaiHatVaChamCoBan? _hatVaChamSS74;
+  TrangThaiHatVaChamCoBan? get getHatVaChamSS74 => _hatVaChamSS74;
+  Future<void> caiDatHatVaChamSS74({required TrangThaiHatVaChamCoBan? value}) async {
+    _hatVaChamSS74 = value;
+    return;
+  }
+
+  /// 29
+  TrangThaiHatVaChamCoBan? _hatVaChamSS76;
+  TrangThaiHatVaChamCoBan? get getHatVaChamSS76 => _hatVaChamSS76;
+  Future<void> caiDatHatVaChamSS76({required TrangThaiHatVaChamCoBan? value}) async {
+    _hatVaChamSS76 = value;
+    return;
+  }
+
+  /// 30
+  TrangThaiHatVaChamCoBan? _hatVaChamSS78;
+  TrangThaiHatVaChamCoBan? get getHatVaChamSS78 => _hatVaChamSS78;
+  Future<void> caiDatHatVaChamSS78({required TrangThaiHatVaChamCoBan? value}) async {
+    _hatVaChamSS78 = value;
+    return;
+  }
+
+  /// 31
+  TrangThaiHatVaChamCoBan? _hatVaChamSS80;
+  TrangThaiHatVaChamCoBan? get getHatVaChamSS80 => _hatVaChamSS80;
+  Future<void> caiDatHatVaChamSS80({required TrangThaiHatVaChamCoBan? value}) async {
+    _hatVaChamSS80 = value;
+    return;
+  }
+
+  /// 32
+  TrangThaiHatVaChamCoBan? _hatVaChamSS82;
+  TrangThaiHatVaChamCoBan? get getHatVaChamSS82 => _hatVaChamSS82;
+  Future<void> caiDatHatVaChamSS82({required TrangThaiHatVaChamCoBan? value}) async {
+    _hatVaChamSS82 = value;
+    return;
+  }
+
+  /// 33
+  TrangThaiHatVaChamCoBan? _hatVaChamSS84;
+  TrangThaiHatVaChamCoBan? get getHatVaChamSS84 => _hatVaChamSS84;
+  Future<void> caiDatHatVaChamSS84({required TrangThaiHatVaChamCoBan? value}) async {
+    _hatVaChamSS84 = value;
+    return;
+  }
+
+  /// 34
+  TrangThaiHatVaChamCoBan? _hatVaChamSS86;
+  TrangThaiHatVaChamCoBan? get getHatVaChamSS86 => _hatVaChamSS86;
+  Future<void> caiDatHatVaChamSS86({required TrangThaiHatVaChamCoBan? value}) async {
+    _hatVaChamSS86 = value;
+    return;
+  }
+
+  /// 35
+  TrangThaiHatVaChamCoBan? _hatVaChamSS88;
+  TrangThaiHatVaChamCoBan? get getHatVaChamSS88 => _hatVaChamSS88;
+  Future<void> caiDatHatVaChamSS88({required TrangThaiHatVaChamCoBan? value}) async {
+    _hatVaChamSS88 = value;
+    return;
+  }
+
+  /// 36
+  TrangThaiHatVaChamCoBan? _hatVaChamSS90;
+  TrangThaiHatVaChamCoBan? get getHatVaChamSS90 => _hatVaChamSS90;
+  Future<void> caiDatHatVaChamSS90({required TrangThaiHatVaChamCoBan? value}) async {
+    _hatVaChamSS90 = value;
+    return;
+  }
+
+  /// 37
+  TrangThaiHatVaChamCoBan? _hatVaChamSS92;
+  TrangThaiHatVaChamCoBan? get getHatVaChamSS92 => _hatVaChamSS92;
+  Future<void> caiDatHatVaChamSS92({required TrangThaiHatVaChamCoBan? value}) async {
+    _hatVaChamSS92 = value;
+    return;
+  }
+
+  /// 38
+  TrangThaiHatVaChamCoBan? _hatVaChamSS94;
+  TrangThaiHatVaChamCoBan? get getHatVaChamSS94 => _hatVaChamSS94;
+  Future<void> caiDatHatVaChamSS94({required TrangThaiHatVaChamCoBan? value}) async {
+    _hatVaChamSS94 = value;
+    return;
+  }
+
+  /// 39
+  TrangThaiHatVaChamCoBan? _hatVaChamSS96;
+  TrangThaiHatVaChamCoBan? get getHatVaChamSS96 => _hatVaChamSS96;
+  Future<void> caiDatHatVaChamSS96({required TrangThaiHatVaChamCoBan? value}) async {
+    _hatVaChamSS96 = value;
+    return;
+  }
+
+  /// 40
+  TrangThaiHatVaChamCoBan? _hatVaChamSS98;
+  TrangThaiHatVaChamCoBan? get getHatVaChamSS98 => _hatVaChamSS98;
+  Future<void> caiDatHatVaChamSS98({required TrangThaiHatVaChamCoBan? value}) async {
+    _hatVaChamSS98 = value;
+    return;
+  }
+
+  /// 41
+  TrangThaiHatVaChamCoBan? _hatVaChamSS100;
+  TrangThaiHatVaChamCoBan? get getHatVaChamSS100 => _hatVaChamSS100;
+  Future<void> caiDatHatVaChamSS100({required TrangThaiHatVaChamCoBan? value}) async {
+    _hatVaChamSS100 = value;
+    return;
+  }
+
+  /// 42
+  TrangThaiHatVaChamCoBan? _hatVaChamSS102;
+  TrangThaiHatVaChamCoBan? get getHatVaChamSS102 => _hatVaChamSS102;
+  Future<void> caiDatHatVaChamSS102({required TrangThaiHatVaChamCoBan? value}) async {
+    _hatVaChamSS102 = value;
+    return;
+  }
+
+  /// 43
+  TrangThaiHatVaChamCoBan? _hatVaChamSS104;
+  TrangThaiHatVaChamCoBan? get getHatVaChamSS104 => _hatVaChamSS104;
+  Future<void> caiDatHatVaChamSS104({required TrangThaiHatVaChamCoBan? value}) async {
+    _hatVaChamSS104 = value;
+    return;
+  }
+
+  /// 44
+  TrangThaiHatVaChamCoBan? _hatVaChamSS106;
+  TrangThaiHatVaChamCoBan? get getHatVaChamSS106 => _hatVaChamSS106;
+  Future<void> caiDatHatVaChamSS106({required TrangThaiHatVaChamCoBan? value}) async {
+    _hatVaChamSS106 = value;
+    return;
+  }
+
+  /// 45
+  TrangThaiHatVaChamCoBan? _hatVaChamSS108;
+  TrangThaiHatVaChamCoBan? get getHatVaChamSS108 => _hatVaChamSS108;
+  Future<void> caiDatHatVaChamSS108({required TrangThaiHatVaChamCoBan? value}) async {
+    _hatVaChamSS108 = value;
+    return;
+  }
+
+  /// 46
+  TrangThaiHatVaChamCoBan? _hatVaChamSS110;
+  TrangThaiHatVaChamCoBan? get getHatVaChamSS110 => _hatVaChamSS110;
+  Future<void> caiDatHatVaChamSS110({required TrangThaiHatVaChamCoBan? value}) async {
+    _hatVaChamSS110 = value;
+    return;
+  }
+
+  /// 47
+  TrangThaiHatVaChamCoBan? _hatVaChamSS112;
+  TrangThaiHatVaChamCoBan? get getHatVaChamSS112 => _hatVaChamSS112;
+  Future<void> caiDatHatVaChamSS112({required TrangThaiHatVaChamCoBan? value}) async {
+    _hatVaChamSS112 = value;
+    return;
+  }
+
+  /// 48
+  TrangThaiHatVaChamCoBan? _hatVaChamSS114;
+  TrangThaiHatVaChamCoBan? get getHatVaChamSS114 => _hatVaChamSS114;
+  Future<void> caiDatHatVaChamSS114({required TrangThaiHatVaChamCoBan? value}) async {
+    _hatVaChamSS114 = value;
+    return;
+  }
+
+  /// 49
+  TrangThaiHatVaChamCoBan? _hatVaChamSS116;
+  TrangThaiHatVaChamCoBan? get getHatVaChamSS116 => _hatVaChamSS116;
+  Future<void> caiDatHatVaChamSS116({required TrangThaiHatVaChamCoBan? value}) async {
+    _hatVaChamSS116 = value;
+    return;
+  }
+
+  /// 50
+  TrangThaiHatVaChamCoBan? _hatVaChamSS118;
+  TrangThaiHatVaChamCoBan? get getHatVaChamSS118 => _hatVaChamSS118;
+  Future<void> caiDatHatVaChamSS118({required TrangThaiHatVaChamCoBan? value}) async {
+    _hatVaChamSS118 = value;
+    return;
+  }
+
   ///
   ///
   ///
@@ -897,7 +1097,7 @@ abstract class QuanLyTrangThaiSuKienVaChamCoBan with CauTrucThucThiCoBan, VongLa
   /// -----
   void onVoidKhoiTaoTrangThai({required int index, required TrangThaiHatVaChamCoBan? trangThaiHatVaCham, required DiemToaDoHoanHaoCoBan? toaDoTrungTam}) async {
     if (trangThaiHatVaCham != null) {
-      int timestamp = DateTime.now().millisecondsSinceEpoch;
+      // int timestamp = DateTime.now().millisecondsSinceEpoch;
 
       if (trangThaiHatVaCham?.getMoHinh == null) {
         MoHinhHatVaChamCoBan? hatVaCham;
@@ -971,7 +1171,7 @@ abstract class QuanLyTrangThaiSuKienVaChamCoBan with CauTrucThucThiCoBan, VongLa
     required double? satThuong,
   }) async {
     if (trangThaiHatSatThuongVaCham != null) {
-      int timestamp = DateTime.now().millisecondsSinceEpoch;
+      // int timestamp = DateTime.now().millisecondsSinceEpoch;
 
       MoHinhHatVaChamCoBan? hatVaCham;
 

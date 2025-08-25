@@ -344,7 +344,6 @@ abstract class THANHPHANNUTBAMTICHHOPTHUOCCAP extends PositionComponent with Tap
   /// TODO: Thành Tích
   /// -----
   /// -----
-
   SpriteAnimationHasVisibility? _spriteAnimationComponentThanhTichSS010KichHoat;
   SpriteAnimationHasVisibility? get getSpriteAnimationComponentThanhTichSS010KichHoat => _spriteAnimationComponentThanhTichSS010KichHoat;
   Future<void> onCaiDatSpriteAnimationComponentThanhTichSS010KichHoat({required SpriteAnimationHasVisibility? value, bool? caiDatUuTien}) async {
