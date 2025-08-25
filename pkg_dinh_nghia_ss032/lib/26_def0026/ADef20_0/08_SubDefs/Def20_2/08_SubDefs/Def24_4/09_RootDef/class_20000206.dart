@@ -29,7 +29,7 @@ class MoHinhThuocTinhTichHopHatVaCham extends MoHinhCoBan {
   }
 
   void onVoidCapNhatChiSoTangTienGioiHanTrangThaiTonTai() {
-    if (_chiSoTangTienGioiHanTrangThaiTonTai <= 50) {
+    if (_chiSoTangTienGioiHanTrangThaiTonTai <= 30) {
       _chiSoTangTienGioiHanTrangThaiTonTai += 1;
     }
     return;

@@ -6,6 +6,7 @@ import 'package:pkg_dinh_nghia_ss020/pkg_dinh_nghia_ss020_exp.dart';
 import 'package:pkg_dinh_nghia_ss028/pkg_dinh_nghia_ss028_exp.dart';
 import 'package:pkg_dinh_nghia_ss028a/pkg_dinh_nghia_ss028a_exp.dart';
 import 'package:pkg_dinh_nghia_ss030/pkg_dinh_nghia_ss030_exp.dart';
+import 'package:pkg_dinh_nghia_ss032/pkg_dinh_nghia_ss032_exp.dart';
 import 'package:pkg_dinh_nghia_ss030030/pkg_dinh_nghia_ss030030_exp.dart';
 import 'package:pkg_dinh_nghia_ss030050/pkg_dinh_nghia_ss030050_exp.dart';
 import 'package:pkg_dinh_nghia_ss050/pkg_dinh_nghia_ss050_exp.dart';
@@ -16,7 +17,7 @@ import 'package:pkg_man_hinh_ss00226/22_def0022/ADef20_0/09_RootDef/abstract_spr
 /// -----
 /// TODO:
 /// -----
-class MoHinhPhuongTienTongQuat with CauTrucThucThiCoBan {
+class MoHinhPhuongTienTongQuat with CauTrucThucThiCoBan, VongLapThoiGianCoBan{
   MoHinhPhuongTienTongQuat({int? capDo, bool? phuongTienThongSoaiToiCao}) {
     onCaiDatMaDinhDanhCapDo(value: capDo);
     onVoidCaiDatKiemTraPhuongTienThongSoaiToiCao(value: phuongTienThongSoaiToiCao);
@@ -568,6 +569,11 @@ class MoHinhPhuongTienTongQuat with CauTrucThucThiCoBan {
   /// -----
   /// TODO:
   /// -----
+  DiemToaDoHoanHaoCoBan? diemToaDoDinhHinhHuongXaDongCoTenLua = DiemToaDoHoanHaoCoBan(maDinhDanh: '', dx: 0, dy: 0);
+
+  /// -----
+  /// TODO:
+  /// -----
   QuanLyTrangThaiDanhSachMoHinhTongQuat? _quanLyTrangThaiDanhSachMoHinh;
   QuanLyTrangThaiDanhSachMoHinhTongQuat? get getQuanLyTrangThaiDanhSachMoHinh => _quanLyTrangThaiDanhSachMoHinh;
   Future<void> caiDatQuanLyDanhSachMoHinh({required QuanLyTrangThaiDanhSachMoHinhTongQuat? value, bool? caiDatUuTien}) async {
@@ -607,6 +613,16 @@ class MoHinhPhuongTienTongQuat with CauTrucThucThiCoBan {
     }
 
     ///
+    return;
+  }
+
+  /// -----
+  /// TODO:
+  /// -----
+  QuanLyTrangThaiSuKienVaChamTrongChienDau? _suKienVaChamTrongChienDau;
+  QuanLyTrangThaiSuKienVaChamTrongChienDau? get getSuKienVaChamTrongChienDau => _suKienVaChamTrongChienDau;
+  Future<void> caiDatSuKienVaChamTrongChienDau({required QuanLyTrangThaiSuKienVaChamTrongChienDau? value}) async {
+    _suKienVaChamTrongChienDau ??= value;
     return;
   }
 
@@ -748,6 +764,9 @@ class MoHinhPhuongTienTongQuat with CauTrucThucThiCoBan {
     /// - Đang Kích Hoạt Hoạt Động Giai Đoạn SS020
     /// -----
     if (getDuLieuJsonLamPhang['[TRANG_THAI_TON_TAI]'] == true && getDuLieuJsonLamPhang['[KICH_HOAT_HOAT_DONG]'] == true) {
+
+      onVoidCapNhatChiSoTangTienTheoThoiGianThuc();
+
       /// -----
       /// TODO:
       /// -----
@@ -1424,8 +1443,21 @@ class MoHinhPhuongTienTongQuat with CauTrucThucThiCoBan {
     }
 
     /// -----
-    /// TODO: Hủy phương tiện bay thoát màn hình
+    /// TODO:
     /// -----
+
+    if (this is PHUONGTIENVUKHICLASS10ASS010VKSS020 && onVoidKiemTraDiChuyenHienThi() == true) {
+      if (getChiSoTangTienTheoThoiGianThuc % 2 == 0) {
+        diemToaDoDinhHinhHuongXaDongCoTenLua?.caiDatDx(value: getPhuongThuc?.getPhuongThucBay?.getViTri?.getDxTrongTam ?? 0);
+        diemToaDoDinhHinhHuongXaDongCoTenLua?.caiDatDy(value: getPhuongThuc?.getPhuongThucBay?.getViTri?.getDyTrongTam ?? 0);
+
+        getSuKienVaChamTrongChienDau?.getDinhHinhHuongXaDongCoTenLua?.onVoidXuLyVaChamSS020(
+            toaDoTrungTam: diemToaDoDinhHinhHuongXaDongCoTenLua,
+            maDinhDanh: '[HINH_THUC_SS070]'
+        );
+      }
+    }
+
 
     ///
     return;

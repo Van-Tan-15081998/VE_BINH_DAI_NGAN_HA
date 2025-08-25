@@ -668,11 +668,14 @@ abstract class VienDanThongMinh extends VIENDANTANCONGCOBAN {
     angle = angle * (-1); // Điều chỉnh góc để lấy góc với trục y
     onVoidCaiDatGocXoay(value: angle);
 
-    if (getChiSoTangTienHuongTheoMucTieuTheoThoiGianThuc % 3 == 0) {
+    if (getChiSoTangTienHuongTheoMucTieuTheoThoiGianThuc % 2 == 0) {
       diemToaDoDinhHinhHuongXaDongCoTenLua?.caiDatDx(value: getDxTrongTam ?? 0);
       diemToaDoDinhHinhHuongXaDongCoTenLua?.caiDatDy(value: getDyTrongTam ?? 0);
 
-      getSuKienVaChamTrongChienDau?.getDinhHinhHuongXaDongCoTenLua?.onVoidXuLyVaCham(toaDoTrungTam: diemToaDoDinhHinhHuongXaDongCoTenLua);
+      getSuKienVaChamTrongChienDau?.getDinhHinhHuongXaDongCoTenLua?.onVoidXuLyVaCham(
+          toaDoTrungTam: diemToaDoDinhHinhHuongXaDongCoTenLua,
+        maDinhDanh: getMaDinhDanh ?? '[HINH_THUC_SS010]'
+      );
     }
 
     return;

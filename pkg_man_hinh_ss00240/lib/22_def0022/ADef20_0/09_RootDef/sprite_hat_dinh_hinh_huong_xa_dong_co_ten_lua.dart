@@ -1,5 +1,6 @@
 import 'dart:ui';
 import 'dart:async';
+import 'dart:math';
 import 'package:flutter/material.dart';
 import 'package:flame/components.dart';
 import 'package:pkg_dinh_nghia_ss022/pkg_dinh_nghia_ss022_exp.dart';
@@ -27,7 +28,7 @@ abstract class SpriteHatDinhHinhHuongXaDongCoTenLua extends SpriteAnimationCompo
 
     await onCaiDatMoHinhChiTiet();
 
-    await caiDatSpriteMaDinhDanhHatDinhHinhHuongXaDongCoTenLua(value: SpriteMaDinhDanhHatDinhHinhHuongXaDongCoTenLua(maDinhDanh: 0));
+    await caiDatSpriteMaDinhDanhHatDinhHinhHuongXaDongCoTenLua(value: SpriteMaDinhDanhHatDinhHinhHuongXaDongCoTenLua(maDinhDanh: '|'));
 
     return;
   }
@@ -88,7 +89,6 @@ abstract class SpriteHatDinhHinhHuongXaDongCoTenLua extends SpriteAnimationCompo
   }
 
   void onRemoveFromParent() {
-    return;
 
     if (isMounted == true) {
       getMoHinh?.getMoHinh?.getThuocTinhTichHop?.getTrangThaiTonTai?.onVoidCaiDatHuyHoanTat();
@@ -102,20 +102,10 @@ abstract class SpriteHatDinhHinhHuongXaDongCoTenLua extends SpriteAnimationCompo
     return;
   }
 
-  // @override
-  // void renderTree(Canvas canvas) {
-  //   // import 'dart:ui';
-  //   if (getKiemTraHienThi == true) {
-  //     super.renderTree(canvas);
-  //   }
-  //
-  //   return;
-  // }
-
   @override
   void renderTree(Canvas canvas) {
     try {
-      if (getKiemTraHienThi == true && animation != null) {
+      if (getKiemTraHienThi == true) {
         super.renderTree(canvas);
       }
     } catch (e) {
@@ -162,10 +152,6 @@ abstract class SpriteHatDinhHinhHuongXaDongCoTenLua extends SpriteAnimationCompo
   bool? _kiemTraHienThi;
   bool? get getKiemTraHienThi => _kiemTraHienThi;
   void onVoidCaiDatKiemTraHienThi({required bool? value}) {
-
-    _kiemTraHienThi = true;
-    return;
-
 
     if (_kiemTraHienThi != value) {
       _kiemTraHienThi = value;
@@ -265,14 +251,77 @@ abstract class SpriteHatDinhHinhHuongXaDongCoTenLua extends SpriteAnimationCompo
       if (isVisible == false) {
         isVisible = true;
       }
+
+      if ((getMoHinh?.getMoHinh?.getThuocTinhTichHop?.getChiSoTangTienGioiHanTrangThaiTonTai ?? 0) >= 30) {
+        getSpriteMaDinhDanhHatDinhHinhHuongXaDongCoTenLua?.textRenderer = TextPaint(style: TextStyle(fontSize: 8, fontWeight: FontWeight.bold, color: Colors.transparent));
+        angle -= 0.4;
+      } else if ((getMoHinh?.getMoHinh?.getThuocTinhTichHop?.getChiSoTangTienGioiHanTrangThaiTonTai ?? 0) >= 25) {
+        getSpriteMaDinhDanhHatDinhHinhHuongXaDongCoTenLua?.textRenderer = TextPaint(style: TextStyle(fontSize: 10, fontWeight: FontWeight.bold, color: Colors.transparent));
+        angle -= 0.5;
+      } else if ((getMoHinh?.getMoHinh?.getThuocTinhTichHop?.getChiSoTangTienGioiHanTrangThaiTonTai ?? 0) >= 20) {
+        getSpriteMaDinhDanhHatDinhHinhHuongXaDongCoTenLua?.textRenderer = TextPaint(style: TextStyle(fontSize: 12, fontWeight: FontWeight.bold, color: Color(0xFFCCCCCC)));
+        angle -= 0.6;
+      } else if ((getMoHinh?.getMoHinh?.getThuocTinhTichHop?.getChiSoTangTienGioiHanTrangThaiTonTai ?? 0) >= 15) {
+        getSpriteMaDinhDanhHatDinhHinhHuongXaDongCoTenLua?.textRenderer = TextPaint(style: TextStyle(fontSize: 14, fontWeight: FontWeight.bold, color: Color(0xFFB0B0B0)));
+        angle -= 0.7;
+      } else if ((getMoHinh?.getMoHinh?.getThuocTinhTichHop?.getChiSoTangTienGioiHanTrangThaiTonTai ?? 0) >= 10) {
+        getSpriteMaDinhDanhHatDinhHinhHuongXaDongCoTenLua?.textRenderer = TextPaint(style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold, color: Color(0xFFFFFFFF)));
+        angle -= 0.8;
+      } else if ((getMoHinh?.getMoHinh?.getThuocTinhTichHop?.getChiSoTangTienGioiHanTrangThaiTonTai ?? 0) >= 5) {
+
+        if (getMoHinh?.getMoHinh?.getThuocTinhTichHop?.getMaDinhDanh == '[HINH_THUC_SS010]') {
+          getSpriteMaDinhDanhHatDinhHinhHuongXaDongCoTenLua?.textRenderer = TextPaint(style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold, color: Color(0xFFFF6B6B)));
+        }
+        if (getMoHinh?.getMoHinh?.getThuocTinhTichHop?.getMaDinhDanh == '[HINH_THUC_SS020]') {
+          getSpriteMaDinhDanhHatDinhHinhHuongXaDongCoTenLua?.textRenderer = TextPaint(style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold, color: Color(0xFFFF6B00)));
+        }
+        if (getMoHinh?.getMoHinh?.getThuocTinhTichHop?.getMaDinhDanh == '[HINH_THUC_SS030]') {
+          getSpriteMaDinhDanhHatDinhHinhHuongXaDongCoTenLua?.textRenderer = TextPaint(style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold, color: Color(0xFF9B1BFF)));
+        }
+        if (getMoHinh?.getMoHinh?.getThuocTinhTichHop?.getMaDinhDanh == '[HINH_THUC_SS040]') {
+          getSpriteMaDinhDanhHatDinhHinhHuongXaDongCoTenLua?.textRenderer = TextPaint(style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold, color: Color(0xFF00D4A3)));
+        }
+        if (getMoHinh?.getMoHinh?.getThuocTinhTichHop?.getMaDinhDanh == '[HINH_THUC_SS050]') {
+          getSpriteMaDinhDanhHatDinhHinhHuongXaDongCoTenLua?.textRenderer = TextPaint(style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold, color: Color(0xFFFFD700)));
+        }
+        if (getMoHinh?.getMoHinh?.getThuocTinhTichHop?.getMaDinhDanh == '[HINH_THUC_SS060]') {
+          getSpriteMaDinhDanhHatDinhHinhHuongXaDongCoTenLua?.textRenderer = TextPaint(style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold, color: Color(0xFF00CFFF)));
+        }
+        if (getMoHinh?.getMoHinh?.getThuocTinhTichHop?.getMaDinhDanh == '[HINH_THUC_SS070]') {
+          getSpriteMaDinhDanhHatDinhHinhHuongXaDongCoTenLua?.textRenderer = TextPaint(style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold, color: Color(0xFF5BBD2B)));
+        }
+
+        angle -= 0.9;
+      } else {
+        angle -= 1.0;
+        getSpriteMaDinhDanhHatDinhHinhHuongXaDongCoTenLua?.textRenderer = TextPaint(style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold, color: Color(0xFFFFE066)));
+
+        if (getMoHinh?.getMoHinh?.getThuocTinhTichHop?.getMaDinhDanh == '[HINH_THUC_SS070]') {
+          getSpriteMaDinhDanhHatDinhHinhHuongXaDongCoTenLua?.textRenderer = TextPaint(style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold, color: Color(0xFF00B2BF)));
+        }
+      }
+
     }
   }
 
   /// -----
   /// TODO: Cập Nhật Trạng Thái Mô Hình
   /// -----
-  Future<void> capNhatTrangThaiMoHinh() async {
-    // await getMoHinh?.getMoHinh?.onDieuKhienBay(chiSoTangTienTheoThoiGianThuc: _bienTangTienGiamTanXuatCapNhat);
+  void onVoidCapNhatTrangThaiMoHinh() {
+
+    getMoHinh?.getMoHinh?.getThuocTinhTichHop?.onVoidCapNhatChiSoTangTienGioiHanTrangThaiTonTai();
+
+    final random = Random();
+    // random.nextDouble() trả về giá trị từ 0.0 đến < 1.0
+    // Ta nhân 2 để có khoảng [0, 2), rồi trừ 1 để được [-1, 1)
+    double value = random.nextDouble() * 2 - 1;
+
+    dy = getMoHinh?.getMoHinh?.getThuocTinhTichHop?.getDyTrongTam ?? 1.0;
+    dx = getMoHinh?.getMoHinh?.getThuocTinhTichHop?.getDxTrongTam ?? 1.0;
+
+    getMoHinh?.getMoHinh?.getThuocTinhTichHop?.caiDatDxTrongTam(value: dx + value);
+    getMoHinh?.getMoHinh?.getThuocTinhTichHop?.caiDatDyTrongTam(value: dy + value);
+
     return;
   }
 
@@ -280,7 +329,7 @@ abstract class SpriteHatDinhHinhHuongXaDongCoTenLua extends SpriteAnimationCompo
   Future<void> onLoad() async {
     super.onLoad();
 
-    debugMode = true;
+    // debugMode = true;
 
     anchor = Anchor.center;
 
@@ -293,8 +342,8 @@ abstract class SpriteHatDinhHinhHuongXaDongCoTenLua extends SpriteAnimationCompo
   void update(double dt) {
     super.update(dt);
 
-    if ((getMoHinh?.getMoHinh?.getThuocTinhTichHop?.getChiSoTangTienGioiHanTrangThaiTonTai ?? 0) > 50) {
-      getMoHinh?.getSpriteHatVaCham?.onRemoveFromParent();
+    if ((getMoHinh?.getMoHinh?.getThuocTinhTichHop?.getChiSoTangTienGioiHanTrangThaiTonTai ?? 0) >= 30) {
+      getMoHinh?.getSpriteHatDinhHinhHuongXaDongCoTenLua?.onRemoveFromParent();
 
       return;
     }
@@ -307,6 +356,8 @@ abstract class SpriteHatDinhHinhHuongXaDongCoTenLua extends SpriteAnimationCompo
       return;
     }
 
+    onVoidCapNhatTrangThaiMoHinh();
+
     onVoidCapNhatPositionSizeValues();
 
     onVoidCapNhatKiemTraHienThi();
@@ -315,17 +366,17 @@ abstract class SpriteHatDinhHinhHuongXaDongCoTenLua extends SpriteAnimationCompo
 
 class SpriteMaDinhDanhHatDinhHinhHuongXaDongCoTenLua extends TextComponent with HasVisibility {
 
-  int maDinhDanh = 0;
-  int get getMaDinhDanh => maDinhDanh;
-  void caiDatMaDinhDanh({required int value}) async {
-    maDinhDanh = value;
-    text = '$maDinhDanh';
+  String _maDinhDanh = '';
+  String get getMaDinhDanh => _maDinhDanh;
+  void caiDatMaDinhDanh({required String value}) async {
+    _maDinhDanh = value;
+    text = _maDinhDanh;
 
     return;
   }
 
-  SpriteMaDinhDanhHatDinhHinhHuongXaDongCoTenLua({required int? maDinhDanh}) {
-    maDinhDanh = maDinhDanh;
+  SpriteMaDinhDanhHatDinhHinhHuongXaDongCoTenLua({required String maDinhDanh}) {
+    _maDinhDanh = maDinhDanh;
   }
 
   @override
@@ -334,10 +385,10 @@ class SpriteMaDinhDanhHatDinhHinhHuongXaDongCoTenLua extends TextComponent with 
 
     anchor = Anchor.center;
 
-    position.setValues(10.0, 10.0);
+    position.setValues(1.0, 1.0);
 
-    text = '$maDinhDanh';
+    text = getMaDinhDanh;
 
-    textRenderer = TextPaint(style: TextStyle(fontSize: 12, fontWeight: FontWeight.bold, color: Color(0xEB8C00FF)));
+    textRenderer = TextPaint(style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold, color: Color(0xEB8C00FF)));
   }
 }

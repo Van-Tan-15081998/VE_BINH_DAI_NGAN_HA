@@ -653,10 +653,29 @@ abstract class QuanLyTrangThaiPhuongThucTanCongThongMinh with CauTrucThucThiCoBa
         trangThaiVienDan.onVoidCaiDatMoHinh(value: vienDan);
       }
 
+      final random = Random();
+
+      // Sinh số nguyên từ 1 đến 6
+      int soNgauNhien = random.nextInt(6) + 1;
+
+      if (soNgauNhien == 1) {
+        trangThaiVienDan.getMoHinh?.caiDatMaDinhDanh(value: '[HINH_THUC_SS010]');
+      } else if (soNgauNhien == 2) {
+        trangThaiVienDan.getMoHinh?.caiDatMaDinhDanh(value: '[HINH_THUC_SS020]');
+      } else if (soNgauNhien == 3) {
+        trangThaiVienDan.getMoHinh?.caiDatMaDinhDanh(value: '[HINH_THUC_SS030]');
+      } else if (soNgauNhien == 4) {
+        trangThaiVienDan.getMoHinh?.caiDatMaDinhDanh(value: '[HINH_THUC_SS040]');
+      } else if (soNgauNhien == 5) {
+        trangThaiVienDan.getMoHinh?.caiDatMaDinhDanh(value: '[HINH_THUC_SS050]');
+      } else if (soNgauNhien == 6) {
+        trangThaiVienDan.getMoHinh?.caiDatMaDinhDanh(value: '[HINH_THUC_SS060]');
+      }
+
       /// -----
       /// TODO:
       /// -----
-      trangThaiVienDan?.getMoHinh?.caiDatMaDinhDanh(value: '[VIEN_DAN_THONG_MINH_SS$index]_[$timestamp]');
+      // trangThaiVienDan?.getMoHinh?.caiDatMaDinhDanh(value: '[VIEN_DAN_THONG_MINH_SS$index]_[$timestamp]');
       trangThaiVienDan?.getMoHinh?.caiDatChieuRongThan(value: 50.0);
       trangThaiVienDan?.getMoHinh?.caiDatChieuCaoThan(value: 60.0);
       trangThaiVienDan?.getMoHinh?.caiDatChieuRongManHinhPhiVatLy(value: getThietLapTongQuat?.getChieuRongManHinhPhiVatLy);

@@ -20,6 +20,8 @@ dependencies:
     path: ../pkg_dinh_nghia_ss022
   pkg_dinh_nghia_ss028a:
     path: ../pkg_dinh_nghia_ss028a
+  pkg_dinh_nghia_ss032:
+    path: ../pkg_dinh_nghia_ss032
   pkg_dinh_nghia_ss050:
     path: ../pkg_dinh_nghia_ss050
   pkg_dinh_nghia_ss054:
