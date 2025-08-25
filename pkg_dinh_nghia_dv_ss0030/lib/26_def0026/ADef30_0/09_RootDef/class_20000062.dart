@@ -1,7 +1,11 @@
 import 'package:pkg_dinh_nghia_ss020/pkg_dinh_nghia_ss020_exp.dart';
+import 'package:pkg_dinh_nghia_dv_ss2000/pkg_dinh_nghia_dv_ss2000_exp.dart';
 import 'package:pkg_dinh_nghia_dv_ss0030/pkg_dinh_nghia_dv_ss0030_exp.dart';
 
-class KHOTAINGUYENDONGVANGCHUAN with CauTrucThucThiCoBan {
+class KHOTAINGUYENDONGVANGCHUAN with CauTrucThucThiCoBan, CauTrucCoSoDuLieuCoBan {
+
+  static const String constKhoaBanGhiDuLieuKhoTaiNguyenDongVangChuan = '[KHO_TAI_NGUYEN_DONG_VANG_CHUAN]';
+
   /// -----
   /// TODO: Attach Root
   /// -----
@@ -123,6 +127,79 @@ class KHOTAINGUYENDONGVANGCHUAN with CauTrucThucThiCoBan {
   /// -----
   @override
   Future<void> onResetRootForSubCom() async {
+    ///
+    return;
+  }
+
+  /// -----
+  /// TODO: Đồng Bộ Hóa Bản Ghi Dữ Liệu
+  /// -----
+  @override
+  Future<void> onDongBoHoaBanGhiDuLieu() async {
+    /// -----
+    /// TODO:
+    /// -----
+    await getBanGhiDuLieu?.onDongBoHoaBanGhiDuLieu(
+      onThucThiSauHoanTat: ({KHUNGDULIEUCOBAN? duLieu}) async {
+
+        if (duLieu?.getGiaTriBanGhiDuLieu == '[GIA_TRI_BAN_GHI_DU_LIEU_NGUYEN_BAN]') {
+          await getBanGhiDuLieu?.onCapNhatBanGhiDuLieu(
+            giaTriBanGhiDuLieuCapNhat: '5000',
+            onThucThiSauHoanTat: ({KHUNGDULIEUCOBAN? duLieu}) async {
+
+              await getGoiTaiNguyenChuanHienHanh?.getGoiTaiNguyenChuanChinhThuc?.getDonViSoLuong?.caiDatTongSoLuong(
+                value: int.tryParse(duLieu?.getGiaTriBanGhiDuLieu ?? '0'),
+                caiDatUuTien: true,
+              );
+            },
+          );
+        } else {
+          await getGoiTaiNguyenChuanHienHanh?.getGoiTaiNguyenChuanChinhThuc?.getDonViSoLuong?.caiDatTongSoLuong(
+            value: int.tryParse(duLieu?.getGiaTriBanGhiDuLieu ?? '0'),
+            caiDatUuTien: true,
+          );
+
+          await caiDatDonViTongSoLuongNguyenBan(value: duLieu?.getGiaTriBanGhiDuLieu ?? '0');
+        }
+      },
+    );
+
+    ///
+    return;
+  }
+
+  String? _donViTongSoLuongNguyenBan;
+  String? get getDonViTongSoLuongNguyenBan => _donViTongSoLuongNguyenBan;
+  Future<void> caiDatDonViTongSoLuongNguyenBan({required String? value, bool? caiDatUuTien}) async {
+    if (caiDatUuTien == true) {
+      _donViTongSoLuongNguyenBan = value;
+    } else {
+      _donViTongSoLuongNguyenBan ??= value;
+    }
+
+    ///
+    return;
+  }
+
+  /// -----
+  /// TODO: Cập Nhật Bản Ghi Dữ Liệu
+  /// -----
+  @override
+  Future<void> onCapNhatBanGhiDuLieu() async {
+    /// -----
+    /// TODO:
+    /// -----
+    await getBanGhiDuLieu?.onCapNhatBanGhiDuLieu(
+      giaTriBanGhiDuLieuCapNhat: getGoiTaiNguyenChuanHienHanh?.getGoiTaiNguyenChuanChinhThuc?.getDonViSoLuong?.getTongSoLuong?.toString() ?? (getDonViTongSoLuongNguyenBan ?? '0'),
+      onThucThiSauHoanTat: ({KHUNGDULIEUCOBAN? duLieu}) async {
+
+        await getGoiTaiNguyenChuanHienHanh?.getGoiTaiNguyenChuanChinhThuc?.getDonViSoLuong?.caiDatTongSoLuong(
+          value: int.tryParse(duLieu?.getGiaTriBanGhiDuLieu ?? '0'),
+          caiDatUuTien: true,
+        );
+      },
+    );
+
     ///
     return;
   }

@@ -140,6 +140,11 @@ class QUANLYTONGKHOTAINGUYENTRAODOIGIATRI with CauTrucThucThiCoBan {
     /// -----
     await getKhoTaiNguyenDiemNangCap?.onInitRoot();
 
+    /// -----
+    /// TODO:
+    /// -----
+    await getKhoTaiNguyenDongVang?.onDongBoHoaBanGhiDuLieu();
+
     ///
     return;
   }
