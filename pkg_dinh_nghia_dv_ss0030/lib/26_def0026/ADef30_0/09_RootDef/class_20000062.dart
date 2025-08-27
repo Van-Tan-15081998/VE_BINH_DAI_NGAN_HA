@@ -45,6 +45,11 @@ class KHOTAINGUYENDONGVANGCHUAN with CauTrucThucThiCoBan, CauTrucCoSoDuLieuCoBan
     /// -----
     /// TODO:
     /// -----
+    await caiDatBanGhiDuLieu(value: BANGHIDULIEUCOBAN(), caiDatUuTien: true);
+
+    /// -----
+    /// TODO:
+    /// -----
     await caiDatGoiTaiNguyenChuanHienHanh(value: GOIDONGVANGCHUANHIENHANH(), caiDatUuTien: true);
 
     /// -----
@@ -80,6 +85,12 @@ class KHOTAINGUYENDONGVANGCHUAN with CauTrucThucThiCoBan, CauTrucCoSoDuLieuCoBan
   /// -----
   @override
   Future<void> onAttachRootForSubCom({required dynamic attachValue}) async {
+
+    /// -----
+    /// TODO:
+    /// -----
+    await getBanGhiDuLieu?.onAttachRoot(attachValue: attachValue);
+
     ///
     return;
   }
@@ -89,6 +100,12 @@ class KHOTAINGUYENDONGVANGCHUAN with CauTrucThucThiCoBan, CauTrucCoSoDuLieuCoBan
   /// -----
   @override
   Future<void> onSetupRootForSubCom() async {
+
+    /// -----
+    /// TODO:
+    /// -----
+    await getBanGhiDuLieu?.onSetupRoot();
+
     /// -----
     /// TODO:
     /// -----
@@ -99,6 +116,8 @@ class KHOTAINGUYENDONGVANGCHUAN with CauTrucThucThiCoBan, CauTrucCoSoDuLieuCoBan
     /// -----
     await getDichVuKhoTaiNguyen?.onSetupRoot();
 
+    await onCaiDatKhoaBanGhiDuLieu(value: KHOTAINGUYENDONGVANGCHUAN.constKhoaBanGhiDuLieuKhoTaiNguyenDongVangChuan, caiDatUuTien: true);
+
     ///
     return;
   }
@@ -108,6 +127,12 @@ class KHOTAINGUYENDONGVANGCHUAN with CauTrucThucThiCoBan, CauTrucCoSoDuLieuCoBan
   /// -----
   @override
   Future<void> onInitRootForSubCom() async {
+
+    /// -----
+    /// TODO:
+    /// -----
+    await getBanGhiDuLieu?.onInitRoot();
+
     /// -----
     /// TODO:
     /// -----
@@ -142,9 +167,9 @@ class KHOTAINGUYENDONGVANGCHUAN with CauTrucThucThiCoBan, CauTrucCoSoDuLieuCoBan
     await getBanGhiDuLieu?.onDongBoHoaBanGhiDuLieu(
       onThucThiSauHoanTat: ({KHUNGDULIEUCOBAN? duLieu}) async {
 
-        if (duLieu?.getGiaTriBanGhiDuLieu == '[GIA_TRI_BAN_GHI_DU_LIEU_NGUYEN_BAN]') {
+        if (duLieu?.getGiaTriBanGhiDuLieu == '[GIA_TRI_BAN_GHI_DU_LIEU_NGUYEN_BAN]' || duLieu?.getGiaTriBanGhiDuLieu == null) {
           await getBanGhiDuLieu?.onCapNhatBanGhiDuLieu(
-            giaTriBanGhiDuLieuCapNhat: '5000',
+            giaTriBanGhiDuLieuCapNhat: '50000',
             onThucThiSauHoanTat: ({KHUNGDULIEUCOBAN? duLieu}) async {
 
               await getGoiTaiNguyenChuanHienHanh?.getGoiTaiNguyenChuanChinhThuc?.getDonViSoLuong?.caiDatTongSoLuong(

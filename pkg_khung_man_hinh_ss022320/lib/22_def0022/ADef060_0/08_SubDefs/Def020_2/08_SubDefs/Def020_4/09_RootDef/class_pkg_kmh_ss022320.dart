@@ -36,7 +36,7 @@ class CARDNHIEMVUSS00A001MAPSS00A extends CARDNHIEMVUCHIENDAUCOBAN {
   }
 
   @override
-  void onThucThi() async {
+  Future<void> onThucThi() async {
     await getGlobalStateManagementSystem?.getBanDoChienDau?.getNhiemVuChienDauChonChiDinh?.onCaiDatMoHinh(value: getNhiemVuChienDau?.getMoHinh, caiDatUuTien: true);
   }
 

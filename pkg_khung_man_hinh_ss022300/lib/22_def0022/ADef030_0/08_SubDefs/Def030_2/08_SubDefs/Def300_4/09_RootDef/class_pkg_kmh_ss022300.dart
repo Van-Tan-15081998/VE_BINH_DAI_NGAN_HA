@@ -30,15 +30,37 @@ class NUTBAMCHONCHIENDAU extends THANHPHANNUTBAMTHUOCCAPTHUANKICHHOAT {
     /// TODO: Chỉ Thực Thi Khi Chọn Chiến Đấu Cơ Đã Sở Hữu
     /// -----
     if (getGlobalStateManagementSystem
-            ?.getChienDauCoTongQuat
-            ?.getChienDauCoTrucTiepThucThiChienDau
-            ?.getTrangThai
-            ?.getMoHinh
-            ?.getThuocTinhSoHuuChienDauCo
-            ?.getSoHuuTheoThoiGianVinhVien
-            ?.getTrangThaiSoHuuTheoThoiGianVinhVien
-            ?.getSoHuu ==
-        true || true) {
+                ?.getChienDauCoTongQuat
+                ?.getChienDauCoChiDinhThucThiThongTin
+                ?.getTrangThai
+                ?.getMoHinh
+                ?.getThuocTinhSoHuuChienDauCo
+                ?.getSoHuuTheoThoiGianVinhVien
+                ?.getTrangThaiSoHuuTheoThoiGianVinhVien
+                ?.getSoHuu ==
+            true ||
+        true) {
+      /// -----
+      /// TODO: Cài Đặt Chiến Đấu Cơ Chỉ Định Thực Thi Và Chiến Đấu Cơ Trực Tiếp Thực Thi Chiến Đấu Và Thực Thi Thông Tin
+      /// -----
+      await getGlobalStateManagementSystem?.getChienDauCoTongQuat?.getChiDinhChienDauCoThucThiChienDau?.getTrangThai?.caiDatMoHinh(
+        value: getGlobalStateManagementSystem?.getChienDauCoTongQuat?.getChienDauCoChiDinhThucThiThongTin?.getTrangThaiChienDauCoChonSuDungChienDau?.getMoHinh,
+      );
+
+      await getGlobalStateManagementSystem?.getChienDauCoTongQuat?.getChienDauCoTrucTiepThucThiChienDau?.getTrangThai?.caiDatMoHinh(
+        value: getGlobalStateManagementSystem?.getChienDauCoTongQuat?.getChienDauCoChiDinhThucThiThongTin?.getTrangThaiChienDauCoChonSuDungChienDau?.getMoHinh,
+      );
+
+      /// -----
+      /// TODO: Cài Đặt Vị Trí Cho Chiến Đấu Cơ Trực Tiếp Thực Thi Chiến Đấu
+      /// -----
+      await getGlobalStateManagementSystem?.getChienDauCoTongQuat?.getChienDauCoTrucTiepThucThiChienDau?.getTrangThai?.getMoHinh?.getPhuongThuc?.getPhuongThucBay?.caiDatViTri(
+        value: getGlobalStateManagementSystem?.getChienDauCoTongQuat?.getDieuKhienDiChuyenChienDauCo?.getViTriChienDauCo,
+      );
+      await getGlobalStateManagementSystem?.getChienDauCoTongQuat?.getDieuKhienDiChuyenChienDauCo?.onCapNhatKichThuocChienDauCo(
+        chienDauCo: getGlobalStateManagementSystem?.getChienDauCoTongQuat?.getChienDauCoTrucTiepThucThiChienDau?.getTrangThai?.getMoHinh,
+      );
+
       await getGameController?.onKichHoatKhungManHinhThuocCapSS300100();
     }
 

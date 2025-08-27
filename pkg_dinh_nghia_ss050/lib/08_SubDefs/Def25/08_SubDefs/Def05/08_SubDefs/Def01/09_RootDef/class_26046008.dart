@@ -1,4 +1,4 @@
-import 'package:pkg_dinh_nghia_ss028/chien_dau_co_define.dart';
+import 'package:package_export/package_export.dart';
 
 /// -----
 /// TODO:
@@ -19,5 +19,15 @@ class TrangThaiChienDauCoChiDinhThucThiThongTin {
   /// -----
   TrangThaiChienDauCoChiDinhThucThiThongTin({required MoHinhChienDauCoTongQuat? moHinh}) {
     caiDatMoHinh(value: moHinh);
+  }
+
+  /// -----
+  /// TODO:
+  /// -----
+  SpriteAnimationCoBan? _spriteChienDauCo;
+  SpriteAnimationCoBan? get getSpriteChienDauCo => _spriteChienDauCo;
+  void onVoidCaiDatSpriteChienDauCo({required SpriteAnimationCoBan? value}) {
+    _spriteChienDauCo = value;
+    return;
   }
 }

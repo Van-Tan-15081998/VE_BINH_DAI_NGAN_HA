@@ -488,7 +488,7 @@ class QUANLYTHANHPHANNUTBAMTHUOCCAP extends QUANLYTHANHPHANNUTBAMTHUOCCAPCOBAN {
     await getNutBamChuyenTabSS020?.onKichHoatThanhPhanThuocCap(kichHoatUuTien: true);
     await getNutBamChuyenTabSS030?.onHuyKichHoatThanhPhanThuocCap();
 
-    if (getGlobalStateManagementSystem?.getChienDauCoTongQuat?.getChiDinhChienDauCoThucThiChienDau?.getTrangThai?.getMoHinh != null) {
+    if (getGlobalStateManagementSystem?.getChienDauCoTongQuat?.getChienDauCoChiDinhThucThiThongTin?.getTrangThaiChienDauCoChonSuDungChienDau?.getMoHinh != null) {
       /// Chon Tab 1 Làm Mặc Định
       await onThucThiChonTabSS020();
     } else {
@@ -502,7 +502,7 @@ class QUANLYTHANHPHANNUTBAMTHUOCCAP extends QUANLYTHANHPHANNUTBAMTHUOCCAPCOBAN {
     await getNutBamChuyenTabSS020?.onHuyKichHoatThanhPhanThuocCap();
     await getNutBamChuyenTabSS030?.onKichHoatThanhPhanThuocCap(kichHoatUuTien: true);
 
-    if (getGlobalStateManagementSystem?.getChienDauCoTongQuat?.getChiDinhChienDauCoThucThiChienDau?.getTrangThai?.getMoHinh != null) {
+    if (getGlobalStateManagementSystem?.getChienDauCoTongQuat?.getChienDauCoChiDinhThucThiThongTin?.getTrangThaiChienDauCoChonSuDungChienDau?.getMoHinh != null) {
       /// Chon Tab 1 Làm Mặc Định
       await onThucThiChonTabSS030();
     } else {

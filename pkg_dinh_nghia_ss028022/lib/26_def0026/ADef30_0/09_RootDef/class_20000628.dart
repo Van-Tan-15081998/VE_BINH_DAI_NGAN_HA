@@ -1,12 +1,13 @@
 import 'package:pkg_dinh_nghia_dv_ss2000/pkg_dinh_nghia_dv_ss2000_exp.dart';
 import 'package:pkg_dinh_nghia_dv_ss0030/pkg_dinh_nghia_dv_ss0030_exp.dart';
 import 'package:pkg_dinh_nghia_ss020/pkg_dinh_nghia_ss020_exp.dart';
+import 'package:pkg_dinh_nghia_ss050/pkg_dinh_nghia_ss050_exp.dart';
 import 'package:pkg_dinh_nghia_ss028022/pkg_dinh_nghia_ss028022_exp.dart';
 
 /// -----
 /// TODO: Thuộc Tính Sở Hữu Theo Thời Gian Vĩnh Viễn
 /// -----
-class THUOCTINHSOHUUTHEOTHOIGIANVINHVIEN with CauTrucThucThiCoBan, CauTrucCoSoDuLieuCoBan {
+class THUOCTINHSOHUUTHEOTHOIGIANVINHVIEN with CauTrucThucThiCoBan, CauTrucCoSoDuLieuCoBan, DanhSachQuanLyTrangThai {
   /// -----
   /// TODO: Danh Sách Mã Định Danh Sở Hữu Theo Thời Gian Vĩnh Viễn [Dùng Cho Key Database]
   /// -----
@@ -56,6 +57,11 @@ class THUOCTINHSOHUUTHEOTHOIGIANVINHVIEN with CauTrucThucThiCoBan, CauTrucCoSoDu
   /// -----
   @override
   Future<void> onAttachRoot({required dynamic attachValue}) async {
+
+    if (attachValue is GlobalStateManagementSystem) {
+      await caiDatDichVuMayPhatAmThanh(value: attachValue.getDichVuMayPhatAmThanh);
+    }
+
     /// -----
     /// TODO: Attach Root For SubCom
     /// -----
@@ -441,7 +447,15 @@ class THUOCTINHSOHUUTHEOTHOIGIANVINHVIEN with CauTrucThucThiCoBan, CauTrucCoSoDu
         goiTaiNguyenChuanThanhToan: getDieuKienSoHuuTheoThoiGianVinhVien?.getGoiTaiNguyenThanhToan,
         goiTaiNguyenChuanHienHanh: goiTaiNguyenChuanHienHanh,
         onThanhToanKhongThanhCong: onThanhToanKhongThanhCong,
-        onThanhToanThanhCong: onThanhToanThanhCong,
+        onThanhToanThanhCong: () async {
+          await onThanhToanThanhCong?.call();
+
+          await quanLyTongQuat?.getTongKhoTaiNguyen?.getKhoTaiNguyenDongVang?.onCapNhatBanGhiDuLieu();
+
+          await getDichVuMayPhatAmThanh?.getAmThanhHeThong?.getAmThanhHieuUngMuaChienDauCoThanhCong?.onPlay();
+
+          return;
+        },
         onDieuKienThanhToan: onDieuKienThanhToan,
       );
 

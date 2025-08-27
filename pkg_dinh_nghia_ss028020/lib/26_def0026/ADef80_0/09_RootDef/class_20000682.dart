@@ -1,12 +1,13 @@
 import 'package:pkg_dinh_nghia_dv_ss2000/pkg_dinh_nghia_dv_ss2000_exp.dart';
 import 'package:pkg_dinh_nghia_dv_ss0030/pkg_dinh_nghia_dv_ss0030_exp.dart';
 import 'package:pkg_dinh_nghia_ss020/pkg_dinh_nghia_ss020_exp.dart';
+import 'package:pkg_dinh_nghia_ss050/pkg_dinh_nghia_ss050_exp.dart';
 import 'package:pkg_dinh_nghia_ss028020/pkg_dinh_nghia_ss028020_exp.dart';
 
 /// -----
 /// TODO: Mô Hình Thuộc Tính Cấp Độ Chiến Đấu Cơ Theo Quy Chuẩn
 /// -----
-class MOHINHTHUOCTINHCAPDOCHIENDAUCOTHEOQUYCHUAN with CauTrucThucThiCoBan, CauTrucCoSoDuLieuCoBan {
+class MOHINHTHUOCTINHCAPDOCHIENDAUCOTHEOQUYCHUAN with CauTrucThucThiCoBan, CauTrucCoSoDuLieuCoBan, DanhSachQuanLyTrangThai {
 
   static const String constKhoaBanGhiDuLieuCapDoTheoQuyChuanChienDauCoDangCapSao00E03SS010 = '[CAP_DO_THEO_QUY_CHUAN_CHIEN_DAU_CO_DANG_CAP_SAO_00E03SS010]';
   static const String constKhoaBanGhiDuLieuCapDoTheoQuyChuanChienDauCoDangCapSao00E03SS020 = '[CAP_DO_THEO_QUY_CHUAN_CHIEN_DAU_CO_DANG_CAP_SAO_00E03SS020]';
@@ -68,6 +69,11 @@ class MOHINHTHUOCTINHCAPDOCHIENDAUCOTHEOQUYCHUAN with CauTrucThucThiCoBan, CauTr
   /// -----
   @override
   Future<void> onAttachRoot({required dynamic attachValue}) async {
+
+    if (attachValue is GlobalStateManagementSystem) {
+      await caiDatDichVuMayPhatAmThanh(value: attachValue.getDichVuMayPhatAmThanh);
+    }
+
     /// -----
     /// TODO: Attach Root For SubCom
     /// -----
@@ -716,7 +722,15 @@ class MOHINHTHUOCTINHCAPDOCHIENDAUCOTHEOQUYCHUAN with CauTrucThucThiCoBan, CauTr
         goiTaiNguyenChuanThanhToan: getCapDoChienDauCoTheoQuyChuanHienHanh?.getCapDoNoiSuyTiepTheo?.getDieuKienNangCap?.getGoiTaiNguyenThanhToan,
         goiTaiNguyenChuanHienHanh: quanLyTongQuat.getTongKhoTaiNguyen?.getKhoTaiNguyenDongVang?.getGoiTaiNguyenChuanHienHanh,
         onThanhToanKhongThanhCong: onThanhToanKhongThanhCong,
-        onThanhToanThanhCong: onThanhToanThanhCong,
+        onThanhToanThanhCong:() async {
+          await onThanhToanThanhCong?.call();
+
+          await quanLyTongQuat?.getTongKhoTaiNguyen?.getKhoTaiNguyenDongVang?.onCapNhatBanGhiDuLieu();
+
+          await getDichVuMayPhatAmThanh?.getAmThanhHeThong?.getAmThanhHieuUngNangCapChienDauCoThanhCong?.onPlay();
+
+          return;
+        },
         onDieuKienThanhToan: onDieuKienThanhToan,
       );
 

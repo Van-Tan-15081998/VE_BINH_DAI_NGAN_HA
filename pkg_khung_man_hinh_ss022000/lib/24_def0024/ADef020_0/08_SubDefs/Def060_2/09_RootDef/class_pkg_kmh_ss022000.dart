@@ -11,6 +11,8 @@ import 'package:pkg_khung_man_hinh_ss022000/22_def0022/ADef060_0/08_SubDefs/Def2
 import 'package:pkg_khung_man_hinh_ss022000/22_def0022/ADef060_0/08_SubDefs/Def260_2/09_RootDef/class_pkg_kmh_ss022000.dart';
 import 'package:pkg_khung_man_hinh_ss022000/22_def0022/ADef060_0/08_SubDefs/Def270_2/09_RootDef/class_pkg_kmh_ss022000.dart';
 
+import 'package:pkg_khung_man_hinh_ss022000/22_def0022/ADef060_0/08_SubDefs/Def200_2/09_RootDef/class_pkg_kmh_ss022000.dart';
+
 /// -----
 /// TODO: Quản Lý Thành Phần Tích Hợp Khung Màn Hình Chính
 /// -----
@@ -68,6 +70,19 @@ class QUANLYTHANHPHANTICHHOPKHUNGMANHINHCHINH extends QUANLYTHANHPHANTICHHOPTHUO
       _khungTichHopTaiNguyenDollarTraoDoi = value;
     } else {
       _khungTichHopTaiNguyenDollarTraoDoi ??= value;
+    }
+
+    ///
+    return;
+  }
+
+  CARDCHIENDAUCOCHONSUDUNGCHIENDAU? _cardChienDauCoChonSuDungChienDau;
+  CARDCHIENDAUCOCHONSUDUNGCHIENDAU? get getCardChienDauCoChonSuDungChienDau => _cardChienDauCoChonSuDungChienDau;
+  Future<void> onCaiDatCardChienDauCoChonSuDungChienDau({required CARDCHIENDAUCOCHONSUDUNGCHIENDAU? value, bool? caiDatUuTien}) async {
+    if (caiDatUuTien == true) {
+      _cardChienDauCoChonSuDungChienDau = value;
+    } else {
+      _cardChienDauCoChonSuDungChienDau ??= value;
     }
 
     ///
@@ -165,6 +180,7 @@ class QUANLYTHANHPHANTICHHOPKHUNGMANHINHCHINH extends QUANLYTHANHPHANTICHHOPTHUO
         onAddComponent(flameGame: flameGame, parentComponent: null, childComponent: getKhungTichHopTaiNguyenVangTraoDoi).catchError((e) => null),
         onAddComponent(flameGame: flameGame, parentComponent: null, childComponent: getKhungTichHopTaiNguyenNgocTraoDoi).catchError((e) => null),
         onAddComponent(flameGame: flameGame, parentComponent: null, childComponent: getKhungTichHopTaiNguyenDollarTraoDoi).catchError((e) => null),
+        onAddComponent(flameGame: flameGame, parentComponent: null, childComponent: getCardChienDauCoChonSuDungChienDau).catchError((e) => null),
         onAddComponent(flameGame: flameGame, parentComponent: null, childComponent: getCardNhiemVuChienDauChongXamNhapSS010).catchError((e) => null),
         onAddComponent(flameGame: flameGame, parentComponent: null, childComponent: getCardNhiemVuChienDauChongXamNhapSS020).catchError((e) => null),
         onAddComponent(flameGame: flameGame, parentComponent: null, childComponent: getCardNhiemVuChienDauChongXamNhapSS030).catchError((e) => null),
@@ -198,6 +214,7 @@ class QUANLYTHANHPHANTICHHOPKHUNGMANHINHCHINH extends QUANLYTHANHPHANTICHHOPTHUO
         getKhungTichHopTaiNguyenVangTraoDoi?.onAddRoot(flameGame: flameGame, component: component).catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onAddRootForSubCom'),
         getKhungTichHopTaiNguyenNgocTraoDoi?.onAddRoot(flameGame: flameGame, component: component).catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onAddRootForSubCom'),
         getKhungTichHopTaiNguyenDollarTraoDoi?.onAddRoot(flameGame: flameGame, component: component).catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onAddRootForSubCom'),
+        getCardChienDauCoChonSuDungChienDau?.onAddRoot(flameGame: flameGame, component: component).catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onAddRootForSubCom'),
         getCardNhiemVuChienDauChongXamNhapSS010?.onAddRoot(flameGame: flameGame, component: component).catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onAddRootForSubCom'),
         getCardNhiemVuChienDauChongXamNhapSS020?.onAddRoot(flameGame: flameGame, component: component).catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onAddRootForSubCom'),
         getCardNhiemVuChienDauChongXamNhapSS030?.onAddRoot(flameGame: flameGame, component: component).catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onAddRootForSubCom'),
@@ -225,6 +242,7 @@ class QUANLYTHANHPHANTICHHOPKHUNGMANHINHCHINH extends QUANLYTHANHPHANTICHHOPTHUO
       /// TODO:
       /// -----
       double chieuRongManHinhVatLy = (getGlobalStateManagementSystem?.getThietLapTongQuat?.getChieuRongManHinhVatLy ?? 100.0);
+      double chieuCaoManHinhVatLy = (getGlobalStateManagementSystem?.getThietLapTongQuat?.getChieuCaoManHinhVatLy ?? 100.0);
 
       double donViChieuRong = (getGlobalStateManagementSystem?.getThietLapTongQuat?.getChieuRongManHinhVatLy ?? 100.0) / 36;
 
@@ -281,6 +299,29 @@ class QUANLYTHANHPHANTICHHOPKHUNGMANHINHCHINH extends QUANLYTHANHPHANTICHHOPTHUO
             onTapDownEvent: null,
             onTapUpEvent: () {
               ///
+            },
+          ),
+          caiDatUuTien: true,
+        ).catchError((e) => null),
+
+        ///
+        /// TODO:
+        ///
+        onCaiDatCardChienDauCoChonSuDungChienDau(
+          value: CARDCHIENDAUCOCHONSUDUNGCHIENDAU(
+            globalStateManagementSystem: getGlobalStateManagementSystem,
+            gameController: getGameController,
+            thanhPhanQuanLyThuocCapTrucTiep: getThanhPhanQuanLyThuocCapTrucTiep,
+            sizeDx: donViChieuRong * 3.0,
+            sizeDy: donViChieuRong * 3.0,
+            positionDx: chieuRongManHinhVatLy / 2.0,
+            positionDy: chieuCaoManHinhVatLy * 4/5,
+            onTapCancelEvent: null,
+            onTapDownEvent: null,
+            onTapUpEvent: () async {
+              ///
+              await getGameController?.onKichHoatKhungManHinhThuocCapSS223100();
+
             },
           ),
           caiDatUuTien: true,
@@ -479,6 +520,7 @@ class QUANLYTHANHPHANTICHHOPKHUNGMANHINHCHINH extends QUANLYTHANHPHANTICHHOPTHUO
         getKhungTichHopTaiNguyenVangTraoDoi?.onSetupRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onSetupRootForSubCom'),
         getKhungTichHopTaiNguyenNgocTraoDoi?.onSetupRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onSetupRootForSubCom'),
         getKhungTichHopTaiNguyenDollarTraoDoi?.onSetupRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onSetupRootForSubCom'),
+        getCardChienDauCoChonSuDungChienDau?.onSetupRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onSetupRootForSubCom'),
         getCardNhiemVuChienDauChongXamNhapSS010?.onSetupRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onSetupRootForSubCom'),
         getCardNhiemVuChienDauChongXamNhapSS020?.onSetupRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onSetupRootForSubCom'),
         getCardNhiemVuChienDauChongXamNhapSS030?.onSetupRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onSetupRootForSubCom'),
@@ -509,6 +551,7 @@ class QUANLYTHANHPHANTICHHOPKHUNGMANHINHCHINH extends QUANLYTHANHPHANTICHHOPTHUO
         getKhungTichHopTaiNguyenVangTraoDoi?.onInitRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onInitRootForSubCom'),
         getKhungTichHopTaiNguyenNgocTraoDoi?.onInitRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onInitRootForSubCom'),
         getKhungTichHopTaiNguyenDollarTraoDoi?.onInitRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onInitRootForSubCom'),
+        getCardChienDauCoChonSuDungChienDau?.onInitRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onInitRootForSubCom'),
         getCardNhiemVuChienDauChongXamNhapSS010?.onInitRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onInitRootForSubCom'),
         getCardNhiemVuChienDauChongXamNhapSS020?.onInitRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onInitRootForSubCom'),
         getCardNhiemVuChienDauChongXamNhapSS030?.onInitRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onInitRootForSubCom'),
@@ -544,6 +587,7 @@ class QUANLYTHANHPHANTICHHOPKHUNGMANHINHCHINH extends QUANLYTHANHPHANTICHHOPTHUO
         onRemoveComponent(component: getKhungTichHopTaiNguyenVangTraoDoi).catchError((e) => null),
         onRemoveComponent(component: getKhungTichHopTaiNguyenNgocTraoDoi).catchError((e) => null),
         onRemoveComponent(component: getKhungTichHopTaiNguyenDollarTraoDoi).catchError((e) => null),
+        onRemoveComponent(component: getCardChienDauCoChonSuDungChienDau).catchError((e) => null),
         onRemoveComponent(component: getCardNhiemVuChienDauChongXamNhapSS010).catchError((e) => null),
         onRemoveComponent(component: getCardNhiemVuChienDauChongXamNhapSS020).catchError((e) => null),
         onRemoveComponent(component: getCardNhiemVuChienDauChongXamNhapSS030).catchError((e) => null),
@@ -659,6 +703,8 @@ class QUANLYTHANHPHANTICHHOPKHUNGMANHINHCHINH extends QUANLYTHANHPHANTICHHOPTHUO
       /// TODO:
       /// -----
 
+      // await getCardChienDauCoChonSuDungChienDau?.onGiaiPhongTaiNguyen();
+
       await getCardNhiemVuChienDauChongXamNhapSS010?.onGiaiPhongTaiNguyen();
       await getCardNhiemVuChienDauChongXamNhapSS020?.onGiaiPhongTaiNguyen();
       await getCardNhiemVuChienDauChongXamNhapSS030?.onGiaiPhongTaiNguyen();
@@ -670,6 +716,7 @@ class QUANLYTHANHPHANTICHHOPKHUNGMANHINHCHINH extends QUANLYTHANHPHANTICHHOPTHUO
         onRemoveComponent(component: getKhungTichHopTaiNguyenVangTraoDoi).catchError((e) => null),
         onRemoveComponent(component: getKhungTichHopTaiNguyenNgocTraoDoi).catchError((e) => null),
         onRemoveComponent(component: getKhungTichHopTaiNguyenDollarTraoDoi).catchError((e) => null),
+        onRemoveComponent(component: getCardChienDauCoChonSuDungChienDau).catchError((e) => null),
         onRemoveComponent(component: getCardNhiemVuChienDauChongXamNhapSS010).catchError((e) => null),
         onRemoveComponent(component: getCardNhiemVuChienDauChongXamNhapSS020).catchError((e) => null),
         onRemoveComponent(component: getCardNhiemVuChienDauChongXamNhapSS030).catchError((e) => null),
@@ -708,6 +755,7 @@ class QUANLYTHANHPHANTICHHOPKHUNGMANHINHCHINH extends QUANLYTHANHPHANTICHHOPTHUO
         onAddComponent(flameGame: getGameController, parentComponent: null, childComponent: getKhungTichHopTaiNguyenVangTraoDoi).catchError((e) => null),
         onAddComponent(flameGame: getGameController, parentComponent: null, childComponent: getKhungTichHopTaiNguyenNgocTraoDoi).catchError((e) => null),
         onAddComponent(flameGame: getGameController, parentComponent: null, childComponent: getKhungTichHopTaiNguyenDollarTraoDoi).catchError((e) => null),
+        onAddComponent(flameGame: getGameController, parentComponent: null, childComponent: getCardChienDauCoChonSuDungChienDau).catchError((e) => null),
         onAddComponent(flameGame: getGameController, parentComponent: null, childComponent: getCardNhiemVuChienDauChongXamNhapSS010).catchError((e) => null),
         onAddComponent(flameGame: getGameController, parentComponent: null, childComponent: getCardNhiemVuChienDauChongXamNhapSS020).catchError((e) => null),
         onAddComponent(flameGame: getGameController, parentComponent: null, childComponent: getCardNhiemVuChienDauChongXamNhapSS030).catchError((e) => null),

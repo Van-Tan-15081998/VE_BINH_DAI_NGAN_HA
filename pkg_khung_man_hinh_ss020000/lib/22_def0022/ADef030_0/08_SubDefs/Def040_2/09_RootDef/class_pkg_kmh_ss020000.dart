@@ -233,7 +233,7 @@ abstract class THANHPHANNUTBAMTICHHOPTHUOCCAP extends PositionComponent with Tap
     onVoidCaiDatPositionDy(value: positionDy, caiDatUuTien: true);
   }
 
-  void onThucThi() {
+  Future<void> onThucThi() async {
     ///
     return;
   }
@@ -568,8 +568,8 @@ abstract class THANHPHANNUTBAMTICHHOPTHUOCCAP extends PositionComponent with Tap
   /// -----
   /// TODO: Kích Hoạt
   /// -----
-  void onVoidKichHoat() {
-    onThucThi();
+  void onVoidKichHoat() async {
+    await onThucThi();
     getSpriteAnimationComponentKichHoat?.onVoidCaiDatKiemTraHienThi(value: true);
     getSpriteAnimationComponentKichHoat2?.onVoidCaiDatKiemTraHienThi(value: true);
     getSpriteAnimationComponentHuyKichHoat?.onVoidCaiDatKiemTraHienThi(value: false);
@@ -579,7 +579,7 @@ abstract class THANHPHANNUTBAMTICHHOPTHUOCCAP extends PositionComponent with Tap
   /// -----
   /// TODO: Hủy Kích Hoạt
   /// -----
-  void onVoidHuyKichHoat() {
+  void onVoidHuyKichHoat() async {
     getSpriteAnimationComponentKichHoat?.onVoidCaiDatKiemTraHienThi(value: false);
     getSpriteAnimationComponentKichHoat2?.onVoidCaiDatKiemTraHienThi(value: false);
     getSpriteAnimationComponentHuyKichHoat?.onVoidCaiDatKiemTraHienThi(value: true);

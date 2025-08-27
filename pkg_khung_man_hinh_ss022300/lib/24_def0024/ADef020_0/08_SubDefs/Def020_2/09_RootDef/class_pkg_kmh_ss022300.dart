@@ -324,7 +324,7 @@ class QUANLYTHANHPHANMANHINHTHUOCCAP extends QUANLYTHANHPHANMANHINHTHUOCCAPCOBAN
   Future<void> onKichHoatKhungManHinhThuocCapTabSS030() async {
     await super.onKichHoatKhungManHinhThuocCapTabSS030();
 
-    if (getGlobalStateManagementSystem?.getChienDauCoTongQuat?.getChiDinhChienDauCoThucThiChienDau?.getTrangThai?.getMoHinh != null) {
+    if (getGlobalStateManagementSystem?.getChienDauCoTongQuat?.getChienDauCoChiDinhThucThiThongTin?.getTrangThaiChienDauCoChonSuDungChienDau?.getMoHinh != null) {
       await getKhungManHinhTabSS010?.onHuyKichHoatThanhPhanManHinhThuocCap();
       await getKhungManHinhTabSS020?.onKichHoatThanhPhanManHinhThuocCap(kichHoatUuTien: true);
       await getKhungManHinhTabSS030?.onHuyKichHoatThanhPhanManHinhThuocCap();
@@ -334,19 +334,71 @@ class QUANLYTHANHPHANMANHINHTHUOCCAP extends QUANLYTHANHPHANMANHINHTHUOCCAPCOBAN
       await getKhungManHinhTabSS020?.onHuyKichHoatThanhPhanManHinhThuocCap();
       await getKhungManHinhTabSS030?.onHuyKichHoatThanhPhanManHinhThuocCap();
       await getKhungManHinhSS223100?.onHuyKichHoatThanhPhanManHinhThuocCap();
+    }
 
-      /// -----
-      /// TODO: Chọn Mặc Định
-      /// -----
+    /// -----
+    /// TODO: Chọn Mặc Định Chiến Đấu Cơ Sử Dụng Chiến Đấu
+    /// -----
+    if (getGlobalStateManagementSystem?.getChienDauCoTongQuat?.getChienDauCoChiDinhThucThiThongTin?.getTrangThaiChienDauCoChonSuDungChienDau?.getMoHinh?.getThuocTinh?.getMaDinhDanhChienDauCo ==
+        getGlobalStateManagementSystem?.getHangarChienDauCoTongQuat?.getChienDauCoDangCapSao00E03SS01?.getThuocTinh?.getMaDinhDanhChienDauCo) {
+      await getGameController?.onChonChiDinhChienDauCo00E03SS01();
+    } else if (getGlobalStateManagementSystem?.getChienDauCoTongQuat?.getChienDauCoChiDinhThucThiThongTin?.getTrangThaiChienDauCoChonSuDungChienDau?.getMoHinh?.getThuocTinh?.getMaDinhDanhChienDauCo ==
+        getGlobalStateManagementSystem?.getHangarChienDauCoTongQuat?.getChienDauCoDangCapSao00E03SS02?.getThuocTinh?.getMaDinhDanhChienDauCo) {
+      await getGameController?.onChonChiDinhChienDauCo00E03SS02();
+    } else if (getGlobalStateManagementSystem?.getChienDauCoTongQuat?.getChienDauCoChiDinhThucThiThongTin?.getTrangThaiChienDauCoChonSuDungChienDau?.getMoHinh?.getThuocTinh?.getMaDinhDanhChienDauCo ==
+        getGlobalStateManagementSystem?.getHangarChienDauCoTongQuat?.getChienDauCoDangCapSao00E03SS03?.getThuocTinh?.getMaDinhDanhChienDauCo) {
+      await getGameController?.onChonChiDinhChienDauCo00E03SS03();
+    } else if (getGlobalStateManagementSystem?.getChienDauCoTongQuat?.getChienDauCoChiDinhThucThiThongTin?.getTrangThaiChienDauCoChonSuDungChienDau?.getMoHinh?.getThuocTinh?.getMaDinhDanhChienDauCo ==
+        getGlobalStateManagementSystem?.getHangarChienDauCoTongQuat?.getChienDauCoDangCapSao00D04SS01?.getThuocTinh?.getMaDinhDanhChienDauCo) {
+      await getGameController?.onChonChiDinhChienDauCo00D04SS01();
+    } else if (getGlobalStateManagementSystem?.getChienDauCoTongQuat?.getChienDauCoChiDinhThucThiThongTin?.getTrangThaiChienDauCoChonSuDungChienDau?.getMoHinh?.getThuocTinh?.getMaDinhDanhChienDauCo ==
+        getGlobalStateManagementSystem?.getHangarChienDauCoTongQuat?.getChienDauCoDangCapSao00C05SS01?.getThuocTinh?.getMaDinhDanhChienDauCo) {
+      await getGameController?.onChonChiDinhChienDauCo00C05SS01();
+    } else if (getGlobalStateManagementSystem?.getChienDauCoTongQuat?.getChienDauCoChiDinhThucThiThongTin?.getTrangThaiChienDauCoChonSuDungChienDau?.getMoHinh?.getThuocTinh?.getMaDinhDanhChienDauCo ==
+        getGlobalStateManagementSystem?.getHangarChienDauCoTongQuat?.getChienDauCoDangCapSao00B06SS01?.getThuocTinh?.getMaDinhDanhChienDauCo) {
+      await getGameController?.onChonChiDinhChienDauCo00B06SS01();
+    } else if (getGlobalStateManagementSystem?.getChienDauCoTongQuat?.getChienDauCoChiDinhThucThiThongTin?.getTrangThaiChienDauCoChonSuDungChienDau?.getMoHinh?.getThuocTinh?.getMaDinhDanhChienDauCo ==
+        getGlobalStateManagementSystem?.getHangarChienDauCoTongQuat?.getChienDauCoDangCapSao00A07SS01?.getThuocTinh?.getMaDinhDanhChienDauCo) {
+      await getGameController?.onChonChiDinhChienDauCo00A07SS01();
+    } else if (getGlobalStateManagementSystem?.getChienDauCoTongQuat?.getChienDauCoChiDinhThucThiThongTin?.getTrangThaiChienDauCoChonSuDungChienDau?.getMoHinh?.getThuocTinh?.getMaDinhDanhChienDauCo ==
+        getGlobalStateManagementSystem?.getHangarChienDauCoTongQuat?.getChienDauCoDangCapSao00S08SS01?.getThuocTinh?.getMaDinhDanhChienDauCo) {
+      await getGameController?.onChonChiDinhChienDauCo00S08SS01();
+    } else if (getGlobalStateManagementSystem?.getChienDauCoTongQuat?.getChienDauCoChiDinhThucThiThongTin?.getTrangThaiChienDauCoChonSuDungChienDau?.getMoHinh?.getThuocTinh?.getMaDinhDanhChienDauCo ==
+        getGlobalStateManagementSystem?.getHangarChienDauCoTongQuat?.getChienDauCoDangCapSao0SS09SS01?.getThuocTinh?.getMaDinhDanhChienDauCo) {
+      await getGameController?.onChonChiDinhChienDauCo0SS09SS01();
+    } else if (getGlobalStateManagementSystem?.getChienDauCoTongQuat?.getChienDauCoChiDinhThucThiThongTin?.getTrangThaiChienDauCoChonSuDungChienDau?.getMoHinh?.getThuocTinh?.getMaDinhDanhChienDauCo ==
+        getGlobalStateManagementSystem?.getHangarChienDauCoTongQuat?.getChienDauCoDangCapSao0SS09SS02?.getThuocTinh?.getMaDinhDanhChienDauCo) {
+      await getGameController?.onChonChiDinhChienDauCo0SS09SS02();
+    } else if (getGlobalStateManagementSystem?.getChienDauCoTongQuat?.getChienDauCoChiDinhThucThiThongTin?.getTrangThaiChienDauCoChonSuDungChienDau?.getMoHinh?.getThuocTinh?.getMaDinhDanhChienDauCo ==
+        getGlobalStateManagementSystem?.getHangarChienDauCoTongQuat?.getChienDauCoDangCapSao0SS09SS03?.getThuocTinh?.getMaDinhDanhChienDauCo) {
+      await getGameController?.onChonChiDinhChienDauCo0SS09SS03();
+    } else if (getGlobalStateManagementSystem?.getChienDauCoTongQuat?.getChienDauCoChiDinhThucThiThongTin?.getTrangThaiChienDauCoChonSuDungChienDau?.getMoHinh?.getThuocTinh?.getMaDinhDanhChienDauCo ==
+        getGlobalStateManagementSystem?.getHangarChienDauCoTongQuat?.getChienDauCoDangCapSaoSSS10SS01?.getThuocTinh?.getMaDinhDanhChienDauCo) {
+      await getGameController?.onChonChiDinhChienDauCoSSS10SS01();
+    } else if (getGlobalStateManagementSystem?.getChienDauCoTongQuat?.getChienDauCoChiDinhThucThiThongTin?.getTrangThaiChienDauCoChonSuDungChienDau?.getMoHinh?.getThuocTinh?.getMaDinhDanhChienDauCo ==
+        getGlobalStateManagementSystem?.getHangarChienDauCoTongQuat?.getChienDauCoDangCapSaoSSS10SS02?.getThuocTinh?.getMaDinhDanhChienDauCo) {
+      await getGameController?.onChonChiDinhChienDauCoSSS10SS02();
+    } else if (getGlobalStateManagementSystem?.getChienDauCoTongQuat?.getChienDauCoChiDinhThucThiThongTin?.getTrangThaiChienDauCoChonSuDungChienDau?.getMoHinh?.getThuocTinh?.getMaDinhDanhChienDauCo ==
+        getGlobalStateManagementSystem?.getHangarChienDauCoTongQuat?.getChienDauCoDangCapSaoSSS10SS03?.getThuocTinh?.getMaDinhDanhChienDauCo) {
+      await getGameController?.onChonChiDinhChienDauCoSSS10SS03();
+    } else if (getGlobalStateManagementSystem?.getChienDauCoTongQuat?.getChienDauCoChiDinhThucThiThongTin?.getTrangThaiChienDauCoChonSuDungChienDau?.getMoHinh?.getThuocTinh?.getMaDinhDanhChienDauCo ==
+        getGlobalStateManagementSystem?.getHangarChienDauCoTongQuat?.getChienDauCoDangCapSaoSSS10SS04?.getThuocTinh?.getMaDinhDanhChienDauCo) {
+      await getGameController?.onChonChiDinhChienDauCoSSS10SS04();
+    } else if (getGlobalStateManagementSystem?.getChienDauCoTongQuat?.getChienDauCoChiDinhThucThiThongTin?.getTrangThaiChienDauCoChonSuDungChienDau?.getMoHinh?.getThuocTinh?.getMaDinhDanhChienDauCo ==
+        getGlobalStateManagementSystem?.getHangarChienDauCoTongQuat?.getChienDauCoDangCapSaoSSS10SS05?.getThuocTinh?.getMaDinhDanhChienDauCo) {
+      await getGameController?.onChonChiDinhChienDauCoSSS10SS05();
+    } else {
       await getGameController?.onChonChiDinhChienDauCo00E03SS01();
     }
+
+    return;
   }
 
   @override
   Future<void> onKichHoatKhungManHinhThuocCapTabSS030TruongHopSS020() async {
     await super.onKichHoatKhungManHinhThuocCapTabSS030TruongHopSS020();
 
-    if (getGlobalStateManagementSystem?.getChienDauCoTongQuat?.getChiDinhChienDauCoThucThiChienDau?.getTrangThai?.getMoHinh != null) {
+    if (getGlobalStateManagementSystem?.getChienDauCoTongQuat?.getChienDauCoChiDinhThucThiThongTin?.getTrangThaiChienDauCoChonSuDungChienDau?.getMoHinh != null) {
       await getKhungManHinhTabSS010?.onHuyKichHoatThanhPhanManHinhThuocCap();
       await getKhungManHinhTabSS020?.onHuyKichHoatThanhPhanManHinhThuocCap();
       await getKhungManHinhTabSS030?.onKichHoatThanhPhanManHinhThuocCap(kichHoatUuTien: true);
@@ -356,11 +408,63 @@ class QUANLYTHANHPHANMANHINHTHUOCCAP extends QUANLYTHANHPHANMANHINHTHUOCCAPCOBAN
       await getKhungManHinhTabSS020?.onHuyKichHoatThanhPhanManHinhThuocCap();
       await getKhungManHinhTabSS030?.onHuyKichHoatThanhPhanManHinhThuocCap();
       await getKhungManHinhSS223100?.onHuyKichHoatThanhPhanManHinhThuocCap();
+    }
 
-      /// -----
-      /// TODO: Chọn Mặc Định
-      /// -----
+    /// -----
+    /// TODO: Chọn Mặc Định Chiến Đấu Cơ Sử Dụng Chiến Đấu
+    /// -----
+    if (getGlobalStateManagementSystem?.getChienDauCoTongQuat?.getChienDauCoChiDinhThucThiThongTin?.getTrangThaiChienDauCoChonSuDungChienDau?.getMoHinh?.getThuocTinh?.getMaDinhDanhChienDauCo ==
+        getGlobalStateManagementSystem?.getHangarChienDauCoTongQuat?.getChienDauCoDangCapSao00E03SS01?.getThuocTinh?.getMaDinhDanhChienDauCo) {
+      await getGameController?.onChonChiDinhChienDauCo00E03SS01();
+    } else if (getGlobalStateManagementSystem?.getChienDauCoTongQuat?.getChienDauCoChiDinhThucThiThongTin?.getTrangThaiChienDauCoChonSuDungChienDau?.getMoHinh?.getThuocTinh?.getMaDinhDanhChienDauCo ==
+        getGlobalStateManagementSystem?.getHangarChienDauCoTongQuat?.getChienDauCoDangCapSao00E03SS02?.getThuocTinh?.getMaDinhDanhChienDauCo) {
+      await getGameController?.onChonChiDinhChienDauCo00E03SS02();
+    } else if (getGlobalStateManagementSystem?.getChienDauCoTongQuat?.getChienDauCoChiDinhThucThiThongTin?.getTrangThaiChienDauCoChonSuDungChienDau?.getMoHinh?.getThuocTinh?.getMaDinhDanhChienDauCo ==
+        getGlobalStateManagementSystem?.getHangarChienDauCoTongQuat?.getChienDauCoDangCapSao00E03SS03?.getThuocTinh?.getMaDinhDanhChienDauCo) {
+      await getGameController?.onChonChiDinhChienDauCo00E03SS03();
+    } else if (getGlobalStateManagementSystem?.getChienDauCoTongQuat?.getChienDauCoChiDinhThucThiThongTin?.getTrangThaiChienDauCoChonSuDungChienDau?.getMoHinh?.getThuocTinh?.getMaDinhDanhChienDauCo ==
+        getGlobalStateManagementSystem?.getHangarChienDauCoTongQuat?.getChienDauCoDangCapSao00D04SS01?.getThuocTinh?.getMaDinhDanhChienDauCo) {
+      await getGameController?.onChonChiDinhChienDauCo00D04SS01();
+    } else if (getGlobalStateManagementSystem?.getChienDauCoTongQuat?.getChienDauCoChiDinhThucThiThongTin?.getTrangThaiChienDauCoChonSuDungChienDau?.getMoHinh?.getThuocTinh?.getMaDinhDanhChienDauCo ==
+        getGlobalStateManagementSystem?.getHangarChienDauCoTongQuat?.getChienDauCoDangCapSao00C05SS01?.getThuocTinh?.getMaDinhDanhChienDauCo) {
+      await getGameController?.onChonChiDinhChienDauCo00C05SS01();
+    } else if (getGlobalStateManagementSystem?.getChienDauCoTongQuat?.getChienDauCoChiDinhThucThiThongTin?.getTrangThaiChienDauCoChonSuDungChienDau?.getMoHinh?.getThuocTinh?.getMaDinhDanhChienDauCo ==
+        getGlobalStateManagementSystem?.getHangarChienDauCoTongQuat?.getChienDauCoDangCapSao00B06SS01?.getThuocTinh?.getMaDinhDanhChienDauCo) {
+      await getGameController?.onChonChiDinhChienDauCo00B06SS01();
+    } else if (getGlobalStateManagementSystem?.getChienDauCoTongQuat?.getChienDauCoChiDinhThucThiThongTin?.getTrangThaiChienDauCoChonSuDungChienDau?.getMoHinh?.getThuocTinh?.getMaDinhDanhChienDauCo ==
+        getGlobalStateManagementSystem?.getHangarChienDauCoTongQuat?.getChienDauCoDangCapSao00A07SS01?.getThuocTinh?.getMaDinhDanhChienDauCo) {
+      await getGameController?.onChonChiDinhChienDauCo00A07SS01();
+    } else if (getGlobalStateManagementSystem?.getChienDauCoTongQuat?.getChienDauCoChiDinhThucThiThongTin?.getTrangThaiChienDauCoChonSuDungChienDau?.getMoHinh?.getThuocTinh?.getMaDinhDanhChienDauCo ==
+        getGlobalStateManagementSystem?.getHangarChienDauCoTongQuat?.getChienDauCoDangCapSao00S08SS01?.getThuocTinh?.getMaDinhDanhChienDauCo) {
+      await getGameController?.onChonChiDinhChienDauCo00S08SS01();
+    } else if (getGlobalStateManagementSystem?.getChienDauCoTongQuat?.getChienDauCoChiDinhThucThiThongTin?.getTrangThaiChienDauCoChonSuDungChienDau?.getMoHinh?.getThuocTinh?.getMaDinhDanhChienDauCo ==
+        getGlobalStateManagementSystem?.getHangarChienDauCoTongQuat?.getChienDauCoDangCapSao0SS09SS01?.getThuocTinh?.getMaDinhDanhChienDauCo) {
+      await getGameController?.onChonChiDinhChienDauCo0SS09SS01();
+    } else if (getGlobalStateManagementSystem?.getChienDauCoTongQuat?.getChienDauCoChiDinhThucThiThongTin?.getTrangThaiChienDauCoChonSuDungChienDau?.getMoHinh?.getThuocTinh?.getMaDinhDanhChienDauCo ==
+        getGlobalStateManagementSystem?.getHangarChienDauCoTongQuat?.getChienDauCoDangCapSao0SS09SS02?.getThuocTinh?.getMaDinhDanhChienDauCo) {
+      await getGameController?.onChonChiDinhChienDauCo0SS09SS02();
+    } else if (getGlobalStateManagementSystem?.getChienDauCoTongQuat?.getChienDauCoChiDinhThucThiThongTin?.getTrangThaiChienDauCoChonSuDungChienDau?.getMoHinh?.getThuocTinh?.getMaDinhDanhChienDauCo ==
+        getGlobalStateManagementSystem?.getHangarChienDauCoTongQuat?.getChienDauCoDangCapSao0SS09SS03?.getThuocTinh?.getMaDinhDanhChienDauCo) {
+      await getGameController?.onChonChiDinhChienDauCo0SS09SS03();
+    } else if (getGlobalStateManagementSystem?.getChienDauCoTongQuat?.getChienDauCoChiDinhThucThiThongTin?.getTrangThaiChienDauCoChonSuDungChienDau?.getMoHinh?.getThuocTinh?.getMaDinhDanhChienDauCo ==
+        getGlobalStateManagementSystem?.getHangarChienDauCoTongQuat?.getChienDauCoDangCapSaoSSS10SS01?.getThuocTinh?.getMaDinhDanhChienDauCo) {
+      await getGameController?.onChonChiDinhChienDauCoSSS10SS01();
+    } else if (getGlobalStateManagementSystem?.getChienDauCoTongQuat?.getChienDauCoChiDinhThucThiThongTin?.getTrangThaiChienDauCoChonSuDungChienDau?.getMoHinh?.getThuocTinh?.getMaDinhDanhChienDauCo ==
+        getGlobalStateManagementSystem?.getHangarChienDauCoTongQuat?.getChienDauCoDangCapSaoSSS10SS02?.getThuocTinh?.getMaDinhDanhChienDauCo) {
+      await getGameController?.onChonChiDinhChienDauCoSSS10SS02();
+    } else if (getGlobalStateManagementSystem?.getChienDauCoTongQuat?.getChienDauCoChiDinhThucThiThongTin?.getTrangThaiChienDauCoChonSuDungChienDau?.getMoHinh?.getThuocTinh?.getMaDinhDanhChienDauCo ==
+        getGlobalStateManagementSystem?.getHangarChienDauCoTongQuat?.getChienDauCoDangCapSaoSSS10SS03?.getThuocTinh?.getMaDinhDanhChienDauCo) {
+      await getGameController?.onChonChiDinhChienDauCoSSS10SS03();
+    } else if (getGlobalStateManagementSystem?.getChienDauCoTongQuat?.getChienDauCoChiDinhThucThiThongTin?.getTrangThaiChienDauCoChonSuDungChienDau?.getMoHinh?.getThuocTinh?.getMaDinhDanhChienDauCo ==
+        getGlobalStateManagementSystem?.getHangarChienDauCoTongQuat?.getChienDauCoDangCapSaoSSS10SS04?.getThuocTinh?.getMaDinhDanhChienDauCo) {
+      await getGameController?.onChonChiDinhChienDauCoSSS10SS04();
+    } else if (getGlobalStateManagementSystem?.getChienDauCoTongQuat?.getChienDauCoChiDinhThucThiThongTin?.getTrangThaiChienDauCoChonSuDungChienDau?.getMoHinh?.getThuocTinh?.getMaDinhDanhChienDauCo ==
+        getGlobalStateManagementSystem?.getHangarChienDauCoTongQuat?.getChienDauCoDangCapSaoSSS10SS05?.getThuocTinh?.getMaDinhDanhChienDauCo) {
+      await getGameController?.onChonChiDinhChienDauCoSSS10SS05();
+    } else {
       await getGameController?.onChonChiDinhChienDauCo00E03SS01();
     }
+
+    return;
   }
 }

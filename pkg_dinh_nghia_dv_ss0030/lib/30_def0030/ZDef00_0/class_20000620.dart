@@ -74,6 +74,9 @@ class QUANLYTRANGTHAITAINGUYENTRAODOIGIATRI with CauTrucThucThiCoBan {
   /// -----
   @override
   Future<void> onAttachRootForSubCom({required dynamic attachValue}) async {
+
+    await getTongKhoTaiNguyen?.onAttachRoot(attachValue: attachValue);
+
     ///
     return;
   }

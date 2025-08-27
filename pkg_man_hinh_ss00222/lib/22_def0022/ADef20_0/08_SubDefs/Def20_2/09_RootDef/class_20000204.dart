@@ -17,9 +17,9 @@ class CHIENDAUCOCHONCHIDINH extends SpriteAnimationCoBan {
   /// -----
   /// TODO:
   /// -----
-  TrangThaiChienDauCoChiDinhThucThiChienDau? _trangThai;
-  TrangThaiChienDauCoChiDinhThucThiChienDau? get getTrangThai => _trangThai;
-  Future<void> caiDatTrangThai({required TrangThaiChienDauCoChiDinhThucThiChienDau? value}) async {
+  TrangThaiChienDauCoChiDinhThucThiThongTin? _trangThai;
+  TrangThaiChienDauCoChiDinhThucThiThongTin? get getTrangThai => _trangThai;
+  Future<void> caiDatTrangThai({required TrangThaiChienDauCoChiDinhThucThiThongTin? value}) async {
     _trangThai ??= value;
     return;
   }
@@ -51,7 +51,7 @@ class CHIENDAUCOCHONCHIDINH extends SpriteAnimationCoBan {
   Future<void> caiDatMoHinhChiTiet() async {
     await caiDatMoHinh(value: getTrangThaiTongQuat?.getChienDauCoTongQuat?.getDieuKhienDiChuyenChienDauCo?.getViTriChienDauCo);
 
-    await caiDatTrangThai(value: getTrangThaiTongQuat?.getChienDauCoTongQuat?.getChiDinhChienDauCoThucThiChienDau?.getTrangThai);
+    await caiDatTrangThai(value: getTrangThaiTongQuat?.getChienDauCoTongQuat?.getChienDauCoChiDinhThucThiThongTin?.getTrangThai);
 
     getTrangThai?.onVoidCaiDatSpriteChienDauCo(value: this);
 
@@ -117,6 +117,7 @@ class CHIENDAUCOCHONCHIDINH extends SpriteAnimationCoBan {
   @override
   void onVoidCaiDatHoatAnhChiTiet() {
     if (getDonViSprite?.getMaDinhDanh != getTrangThai?.getMoHinh?.getMaDinhDanhChienDauCo) {
+
       animation = null;
       getDonViSprite?.onVoidCaiDatMaDinhDanh(value: getTrangThai?.getMoHinh?.getMaDinhDanhChienDauCo);
       getDonViSprite?.onVoidCaiDatSpriteAnimation(value: getTrangThai?.getMoHinh?.getThuocTinh?.getThuocTinhHinhAnhSprite?.getDonViSpriteNgoaiHinhThanChienDauCo?.getSpriteAnimation);
@@ -149,8 +150,8 @@ class CHIENDAUCOCHONCHIDINH extends SpriteAnimationCoBan {
       ///
       dx = getMoHinh?.getDxTrongTamNotNull ?? 1.0;
       dy = getMoHinh?.getDyTrongTamNotNull ?? 1.0;
-      chieuCaoThan = (getMoHinh?.getChieuCaoThan ?? 1.0) * 1.0;
-      chieuRongThan = (getMoHinh?.getChieuRongThan ?? 1.0) * 1.0;
+      chieuCaoThan = (getTrangThai?.getMoHinh?.getThuocTinh?.getThuocTinhKichThuoc?.getChieuCaoThan ?? 10.0) * 1.0;
+      chieuRongThan = (getTrangThai?.getMoHinh?.getThuocTinh?.getThuocTinhKichThuoc?.getChieuRongThan ?? 10.0) * 1.0;
 
       ///
       /// TODO:

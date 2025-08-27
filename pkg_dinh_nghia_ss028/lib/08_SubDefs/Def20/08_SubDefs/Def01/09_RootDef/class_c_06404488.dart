@@ -107,6 +107,21 @@ class MoHinhThuocTinhChienDauCoTongQuat {
   }
 
   /// -----
+  /// TODO: Mã Định Danh Chiến Đấu Cơ
+  /// -----
+  String? _maDinhDanhChienDauCo;
+  String? get getMaDinhDanhChienDauCo => _maDinhDanhChienDauCo;
+  Future<void> caiDatMaDinhDanhChienDauCo({required String? value, bool? caiDatUuTien}) async {
+    if (caiDatUuTien == true) {
+      _maDinhDanhChienDauCo = value;
+    } else {
+      _maDinhDanhChienDauCo ??= value;
+    }
+
+    return;
+  }
+
+  /// -----
   /// TODO: Tên Chiến Đấu Cơ
   /// -----
   String? _tenChienDauCo;

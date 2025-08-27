@@ -152,13 +152,19 @@ class TinhToanSatThuongHuongDenChienDauCo with CauTrucThucThiCoBan, DanhSachQuan
     }
 
     if (phuongTien is MOHINHPHUONGTIENVATPHAMPHANTHUONG) {
-      // phuongTien.getTrangThaiTrongChienDau?.getTrangThaiTonTai?.onVoidCaiDatHuyHoanTat();
-      phuongTien.onVoidCaiDatTrangThaiChienDauHuyTonTai();
-      phuongTien.getDuLieuJsonLamPhang['[VAT_PHAM_TON_TAI_SAN_SANG]'] = true;
-      phuongTien.getDuLieuJsonLamPhang['[VAT_PHAM_TON_TAI_HIEN_THI]'] = false;
+      if (phuongTien.getDuLieuJsonLamPhang['[DI_CHUYEN_HIEN_THI]'] == true) {
+        // phuongTien.getTrangThaiTrongChienDau?.getTrangThaiTonTai?.onVoidCaiDatHuyHoanTat();
+        phuongTien.onVoidCaiDatTrangThaiChienDauHuyTonTai();
+        phuongTien.getDuLieuJsonLamPhang['[VAT_PHAM_TON_TAI_SAN_SANG]'] = true;
+        phuongTien.getDuLieuJsonLamPhang['[VAT_PHAM_TON_TAI_HIEN_THI]'] = false;
 
-      await getDichVuMayPhatAmThanh?.getHieuUngAmThanhSuKienVaChamTrongChienDau?.getSuKienVaChamVatPhamPhanThuong?.getHieuUngAmThanhVaChamCoBanSS01?.onPlay();
-    } else {
+        await getDichVuMayPhatAmThanh?.getHieuUngAmThanhSuKienVaChamTrongChienDau?.getSuKienVaChamVatPhamPhanThuong?.getHieuUngAmThanhVaChamCoBanSS01?.onPlay();
+
+      } else {
+        return;
+      }
+
+      } else {
       double chiSoMauToiDa = getTrungTamVanHanhThuocTinhChienDauTheoQuyChuan?.getCapDoMauToiDaHienHanh?.getCapDoChuanChinhThuc?.getChiSoTheoCapDo?.getChiSoMauToiDa ?? 0;
       double chiSoMauToiDaVanHanh = getTrungTamVanHanhThuocTinhChienDauTheoQuyChuan?.getCapDoMauToiDaHienHanh?.getCapDoChuanChinhThuc?.getChiSoTheoCapDo?.getChiSoMauToiDaVanHanh ?? 0;
 

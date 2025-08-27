@@ -27,6 +27,11 @@ class NUTBAMCHONQUAYVETRANGCHU extends THANHPHANNUTBAMTHUOCCAPTHUANKICHHOAT {
   @override
   void onThucThi() async {
 
+    /// -----
+    /// TODO: Cập Nhật Tài Nguyên Phần Thưởng
+    /// -----
+    await getGlobalStateManagementSystem?.getTaiNguyenTraoDoiTongQuat?.getTongKhoTaiNguyen?.getKhoTaiNguyenDongVang?.onCapNhatBanGhiDuLieu();
+
     await getGameController?.onHuyKichHoatKhungManHinhThuocCapSS300400ChienThang();
 
     await getGameController?.onTroVeTrangChu();

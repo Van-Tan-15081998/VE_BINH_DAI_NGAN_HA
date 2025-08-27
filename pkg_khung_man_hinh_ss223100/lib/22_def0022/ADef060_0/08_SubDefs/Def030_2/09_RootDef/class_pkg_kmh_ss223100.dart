@@ -22,36 +22,52 @@ class CARDCHIENDAUCOCHONCHIDINH extends THANHPHANNUTBAMTICHHOPTHUOCCAP {
     required super.onTapCancelEvent, //
     required super.onTapDownEvent, //
     required super.onTapUpEvent, //
-  });
+  }) {
+    caiDatTrangThai(value: getGlobalStateManagementSystem?.getChienDauCoTongQuat?.getChienDauCoChiDinhThucThiThongTin?.getTrangThai);
+  }
 
   /// -----
   /// TODO:
   /// -----
-  TrangThaiChienDauCoChiDinhThucThiChienDau? _trangThai;
-  TrangThaiChienDauCoChiDinhThucThiChienDau? get getTrangThai => _trangThai;
-  Future<void> caiDatTrangThai({required TrangThaiChienDauCoChiDinhThucThiChienDau? value}) async {
+  TrangThaiChienDauCoChiDinhThucThiThongTin? _trangThai;
+  TrangThaiChienDauCoChiDinhThucThiThongTin? get getTrangThai => _trangThai;
+  Future<void> caiDatTrangThai({required TrangThaiChienDauCoChiDinhThucThiThongTin? value}) async {
     _trangThai ??= value;
     return;
   }
-
-  CHIENDAUCOCHONCHIDINH? _spriteChienDauCoChonChiDinh;
 
   @override
   void onTapUp(TapUpEvent event) async {
     super.onTapUp(event);
   }
 
-  @override
-  Future<void> onCaiDatChiTietThanhPhanGameUI() async {
-    _spriteChienDauCoChonChiDinh = CHIENDAUCOCHONCHIDINH(trangThaiTongQuat: getGlobalStateManagementSystem, capNhatViTri: false);
-
-    if (_spriteChienDauCoChonChiDinh != null && _spriteChienDauCoChonChiDinh?.isMounted == false) {
-      add(_spriteChienDauCoChonChiDinh!);
-      _spriteChienDauCoChonChiDinh?.position.setValues((getSizeDx ?? 0) / 2, (getSizeDy ?? 0) / 2);
+  /// -----
+  /// TODO:
+  /// -----
+  String? _giaTriChiSoVanHanh;
+  String? get getGiaTriChiSoVanHanh => _giaTriChiSoVanHanh;
+  Future<void> onCaiDatGiaTriChiSoVanHanh({required String? value, bool? caiDatUuTien}) async {
+    if (caiDatUuTien == true) {
+      _giaTriChiSoVanHanh = value;
+    } else {
+      _giaTriChiSoVanHanh ??= value;
     }
 
-    // await onCaiDatThanhPhanGameUIKichHoat(value: GAMEUINUTBAMCHONTABCHIENDAUCOKICHHOAT(), caiDatUuTien: true);
-    // await onCaiDatThanhPhanGameUIHuyKichHoat(value: GAMEUINUTBAMCHONTABCHIENDAUCOKHONGKICHHOAT(), caiDatUuTien: true);
+    ///
+    return;
+  }
+
+  @override
+  Future<void> onCaiDatChiTietThanhPhanGameUI() async {
+    // _spriteChienDauCoChonChiDinh = CHIENDAUCOCHONCHIDINH(trangThaiTongQuat: getGlobalStateManagementSystem, capNhatViTri: false);
+    //
+    // if (_spriteChienDauCoChonChiDinh != null && _spriteChienDauCoChonChiDinh?.isMounted == false) {
+    //   _spriteChienDauCoChonChiDinh?.onCaiDatParentComponent(value: this);
+    //
+    //   add(_spriteChienDauCoChonChiDinh!);
+    //   _spriteChienDauCoChonChiDinh?.position.setValues((getSizeDx ?? 0) / 2, (getSizeDy ?? 0) / 2);
+    // }
+
     await onCaiDatThanhPhanGameUIKichHoat(value: null, caiDatUuTien: true);
     await onCaiDatThanhPhanGameUIHuyKichHoat(value: null, caiDatUuTien: true);
 
@@ -65,4 +81,66 @@ class CARDCHIENDAUCOCHONCHIDINH extends THANHPHANNUTBAMTICHHOPTHUOCCAP {
 
     return;
   }
+
+  double sizeDxCapNhat = 0;
+  double sizeDyCapNhat = 0;
+
+  @override
+  Future<void> onCapNhatChiTietSpriteAnimationComponentOnLayerSS010() async {
+    sizeDxCapNhat = (getTrangThai?.getMoHinh?.getThuocTinh?.getThuocTinhKichThuoc?.getChieuRongThan ?? 50.0);
+    sizeDyCapNhat = (getTrangThai?.getMoHinh?.getThuocTinh?.getThuocTinhKichThuoc?.getChieuCaoThan ?? 50.0);
+
+    getSpriteAnimationComponentOnLayerSS01?.onVoidCaiDatSizeDx(value: sizeDxCapNhat, caiDatUuTien: true);
+    getSpriteAnimationComponentOnLayerSS01?.onVoidCaiDatSizeDy(value: sizeDyCapNhat, caiDatUuTien: true);
+
+    /// -----
+    /// TODO: Cài Đặt Liên Kết
+    /// -----
+    // await getGlobalStateManagementSystem?.onGetEntityResourceManagement?.getQuanLyTrangThaiHangarChienDauCo?.onTruyXuatHinhAnhNgoaiHinhChienDauCo00E03SS010(
+    //   spriteAnimationComponent: getSpriteAnimationComponentOnLayerSS01,
+    // );
+
+    await onRemoveThanhPhanKhongHoatDong();
+
+    ///
+    return;
+  }
+
+  @override
+  void update(double dt) {
+    // TODO: implement update
+    super.update(dt);
+
+    if (getGiaTriChiSoVanHanh != getTrangThai?.getMoHinh?.getThuocTinh?.getTenChienDauCo) {
+      onCaiDatGiaTriChiSoVanHanh(value: getTrangThai?.getMoHinh?.getThuocTinh?.getTenChienDauCo ?? '[]', caiDatUuTien: true);
+
+      sizeDxCapNhat = (getTrangThai?.getMoHinh?.getThuocTinh?.getThuocTinhKichThuoc?.getChieuRongThan ?? 50.0);
+      sizeDyCapNhat = (getTrangThai?.getMoHinh?.getThuocTinh?.getThuocTinhKichThuoc?.getChieuCaoThan ?? 50.0);
+
+      getSpriteAnimationComponentOnLayerSS01?.onVoidCaiDatSizeDx(value: sizeDxCapNhat, caiDatUuTien: true);
+      getSpriteAnimationComponentOnLayerSS01?.onVoidCaiDatSizeDy(value: sizeDyCapNhat, caiDatUuTien: true);
+
+      getSpriteAnimationComponentOnLayerSS01?.animation = getTrangThai?.getMoHinh?.getThuocTinh?.getThuocTinhHinhAnhSprite?.getDonViSpriteNgoaiHinhThanChienDauCo?.getSpriteAnimation;
+    }
+
+    if (getSpriteAnimationComponentOnLayerSS01?.animation != null) {
+      getSpriteAnimationComponentOnLayerSS01?.onVoidCaiDatKiemTraHienThi(value: true);
+    } else if (getSpriteAnimationComponentOnLayerSS01?.animation == null) {
+      getSpriteAnimationComponentOnLayerSS01?.animation = getTrangThai?.getMoHinh?.getThuocTinh?.getThuocTinhHinhAnhSprite?.getDonViSpriteNgoaiHinhThanChienDauCo?.getSpriteAnimation;
+
+      getSpriteAnimationComponentOnLayerSS01?.onVoidCaiDatKiemTraHienThi(value: true);
+
+      onCapNhatChiTietSpriteAnimationComponentOnLayerSS010();
+    }
+  }
+
+  /// TODO: Chạy Bất Cứ Khi Nào Bị RemoveFromParent (Kể Cả Khi Parent bị RemoveFromParent)
+  @override
+  void onRemove() {
+    super.onRemove();
+
+    onCaiDatGiaTriChiSoVanHanh(value: '[]', caiDatUuTien: true);
+    getSpriteAnimationComponentOnLayerSS01?.animation = null;
+  }
 }
+

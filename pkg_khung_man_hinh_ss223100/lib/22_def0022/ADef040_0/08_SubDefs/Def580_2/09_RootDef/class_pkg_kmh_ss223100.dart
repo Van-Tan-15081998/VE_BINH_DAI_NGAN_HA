@@ -18,15 +18,15 @@ class VANBANGIATRICHISOSATTHUONGBAOKICHSUNGCHINH extends THANHPHANVANBANTHUANTHU
     required super.positionDx, //
     required super.positionDy, //
   }) {
-    caiDatTrangThai(value: getGlobalStateManagementSystem?.getChienDauCoTongQuat?.getChiDinhChienDauCoThucThiChienDau?.getTrangThai);
+    caiDatTrangThai(value: getGlobalStateManagementSystem?.getChienDauCoTongQuat?.getChienDauCoChiDinhThucThiThongTin?.getTrangThai);
   }
 
   /// -----
   /// TODO:
   /// -----
-  TrangThaiChienDauCoChiDinhThucThiChienDau? _trangThai;
-  TrangThaiChienDauCoChiDinhThucThiChienDau? get getTrangThai => _trangThai;
-  Future<void> caiDatTrangThai({required TrangThaiChienDauCoChiDinhThucThiChienDau? value}) async {
+  TrangThaiChienDauCoChiDinhThucThiThongTin? _trangThai;
+  TrangThaiChienDauCoChiDinhThucThiThongTin? get getTrangThai => _trangThai;
+  Future<void> caiDatTrangThai({required TrangThaiChienDauCoChiDinhThucThiThongTin? value}) async {
     _trangThai ??= value;
     return;
   }
@@ -95,7 +95,7 @@ class VANBANGIATRICHISOSATTHUONGBAOKICHSUNGCHINH extends THANHPHANVANBANTHUANTHU
               ?.getCapDoChuanChinhThuc
               ?.getChiSoTheoCapDo
               ?.getChiSoSatThuongVanHanh ??
-              0;
+          0;
 
       onCaiDatGiaTriChiSoVanHanh(value: giaTriChiSoVanHanh, caiDatUuTien: true);
 

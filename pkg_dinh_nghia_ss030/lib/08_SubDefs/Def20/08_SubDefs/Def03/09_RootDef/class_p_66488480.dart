@@ -31,6 +31,9 @@ class MoHinhTrangThaiTrongChienDauPhuongTien with CauTrucThucThiCoBan {
 
     await caiDatTrangThaiPhuongTienNhanSatThuong(value: MoHinhTrangThaiPhuongTienNhanSatThuong());
 
+    onVoidCaiDatTrangThaiCanhBaoNhamMucTieuDenChienDauCo(value: true);
+    onVoidCaiDatTrangThaiCanhBaoTiepCanGanMucTieuDenChienDauCo(value: true);
+
     onVoidCaiDatVienDanThongMinhVaChamSS010(value: TrangThaiVienDanThongMinh(moHinh: null));
     onVoidCaiDatVienDanThongMinhVaChamSS020(value: TrangThaiVienDanThongMinh(moHinh: null));
     onVoidCaiDatVienDanThongMinhVaChamSS030(value: TrangThaiVienDanThongMinh(moHinh: null));
@@ -132,6 +135,26 @@ class MoHinhTrangThaiTrongChienDauPhuongTien with CauTrucThucThiCoBan {
   String? get getSoThuTuPhuongTienTrongDanhSach => _soThuTuPhuongTienTrongDanhSach;
   Future<void> caiDatSoThuTuPhuongTienTrongDanhSach({required String? value}) async {
     _soThuTuPhuongTienTrongDanhSach = value;
+    return;
+  }
+
+  /// -----
+  /// TODO:
+  /// -----
+  bool? _trangThaiCanhBaoNhamMucTieuDenChienDauCo;
+  bool? get getTrangThaiCanhBaoNhamMucTieuDenChienDauCo => _trangThaiCanhBaoNhamMucTieuDenChienDauCo;
+  void onVoidCaiDatTrangThaiCanhBaoNhamMucTieuDenChienDauCo({required bool? value}) async {
+    _trangThaiCanhBaoNhamMucTieuDenChienDauCo = value;
+    return;
+  }
+
+  /// -----
+  /// TODO:
+  /// -----
+  bool? _trangThaiCanhBaoTiepCanGanMucTieuDenChienDauCo;
+  bool? get getTrangThaiCanhBaoTiepCanGanMucTieuDenChienDauCo => _trangThaiCanhBaoTiepCanGanMucTieuDenChienDauCo;
+  void onVoidCaiDatTrangThaiCanhBaoTiepCanGanMucTieuDenChienDauCo({required bool? value}) async {
+    _trangThaiCanhBaoTiepCanGanMucTieuDenChienDauCo = value;
     return;
   }
 

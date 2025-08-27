@@ -20,7 +20,7 @@ class THUOCTINHHIEUUNGAMTHANHHATVACHAMVATPHAMTANGCUONGHOIMAU extends THUOCTINHHI
     await caiDatNguonAmThanh(
       value:
           'packages/pkg_dinh_nghia_dv_ss0020/lib/26_def0026/ADef40_0/08_SubDefs/Def40_2/08_SubDefs/Def70_4/06_SoundSrcs/'
-              'hat_va_cham_vat_pham_tang_cuong_hoi_mau.mp3.mp3',
+              'hat_va_cham_vat_pham_tang_cuong_hoi_mau.mp3',
     );
 
     /// -----

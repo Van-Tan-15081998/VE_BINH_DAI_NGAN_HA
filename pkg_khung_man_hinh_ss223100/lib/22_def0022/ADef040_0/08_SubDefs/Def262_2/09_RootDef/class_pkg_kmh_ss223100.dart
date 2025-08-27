@@ -18,15 +18,15 @@ class VANBANGIATRICAPDOCHIENDAUCOCHONCHIDINH extends THANHPHANVANBANTHUANTHUOCCA
     required super.positionDx, //
     required super.positionDy, //
   }) {
-    caiDatTrangThai(value: getGlobalStateManagementSystem?.getChienDauCoTongQuat?.getChiDinhChienDauCoThucThiChienDau?.getTrangThai);
+    caiDatTrangThai(value: getGlobalStateManagementSystem?.getChienDauCoTongQuat?.getChienDauCoChiDinhThucThiThongTin?.getTrangThai);
   }
 
   /// -----
   /// TODO:
   /// -----
-  TrangThaiChienDauCoChiDinhThucThiChienDau? _trangThai;
-  TrangThaiChienDauCoChiDinhThucThiChienDau? get getTrangThai => _trangThai;
-  Future<void> caiDatTrangThai({required TrangThaiChienDauCoChiDinhThucThiChienDau? value}) async {
+  TrangThaiChienDauCoChiDinhThucThiThongTin? _trangThai;
+  TrangThaiChienDauCoChiDinhThucThiThongTin? get getTrangThai => _trangThai;
+  Future<void> caiDatTrangThai({required TrangThaiChienDauCoChiDinhThucThiThongTin? value}) async {
     _trangThai ??= value;
     return;
   }
@@ -60,7 +60,8 @@ class VANBANGIATRICAPDOCHIENDAUCOCHONCHIDINH extends THANHPHANVANBANTHUANTHUOCCA
     // TODO: implement update
     super.update(dt);
 
-    if (getGiaTriChiSoVanHanh != getTrangThai?.getMoHinh?.getThuocTinhChienDauTheoQuyChuan?.getThuocTinhCapDoChienDauCoTheoQuyChuan?.getCapDoChienDauCoTheoQuyChuanHienHanh?.getCapDoChuanChinhThuc?.getMaDinhDanh) {
+    if (getGiaTriChiSoVanHanh !=
+        getTrangThai?.getMoHinh?.getThuocTinhChienDauTheoQuyChuan?.getThuocTinhCapDoChienDauCoTheoQuyChuan?.getCapDoChienDauCoTheoQuyChuanHienHanh?.getCapDoChuanChinhThuc?.getMaDinhDanh) {
       onCaiDatGiaTriChiSoVanHanh(
         value:
             getTrangThai?.getMoHinh?.getThuocTinhChienDauTheoQuyChuan?.getThuocTinhCapDoChienDauCoTheoQuyChuan?.getCapDoChienDauCoTheoQuyChuanHienHanh?.getCapDoChuanChinhThuc?.getMaDinhDanh ??

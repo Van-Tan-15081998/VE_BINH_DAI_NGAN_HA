@@ -24,6 +24,8 @@ abstract class BANGDIEUKHIENDOIHINHCOBAN with CauTrucThucThiCoBan, DanhSachQuanL
       await caiDatSuKienVaChamTrongChienDau(value: attachValue.getSuKienVaChamTrongChienDau);
 
       await caiDatDichVuThanhTichChienDau(value: attachValue.getDichVuThanhTichChienDau);
+      await caiDatTaiNguyenTraoDoiTongQuat(value: attachValue.getTaiNguyenTraoDoiTongQuat);
+      await caiDatDichVuMayPhatAmThanh(value: attachValue.getDichVuMayPhatAmThanh);
 
       await onCaiDatViTriChienDauCo(
         value: attachValue.getChienDauCoTongQuat?.getChienDauCoTrucTiepThucThiChienDau?.getTrangThai?.getMoHinh?.getPhuongThuc?.getPhuongThucBay?.getViTri,
@@ -413,6 +415,8 @@ abstract class BANGDIEUKHIENDOIHINHCOBAN with CauTrucThucThiCoBan, DanhSachQuanL
       await trangThai?.getMoHinh?.caiDatSuKienVaChamTrongChienDau(value: getSuKienVaChamTrongChienDau);
 
       await trangThai?.getMoHinh?.onCaiDatDichVuThanhTichChienDau(value: getDichVuThanhTichChienDau);
+      await trangThai?.getMoHinh?.onCaiDatTaiNguyenTraoDoiTongQuat(value: getTaiNguyenTraoDoiTongQuat);
+      await trangThai?.getMoHinh?.onCaiDatDichVuMayPhatAmThanh(value: getDichVuMayPhatAmThanh);
 
       await trangThai?.getMoHinh?.onCaiDatViTriChienDauCo(value: getViTriChienDauCo);
     }
@@ -487,6 +491,8 @@ abstract class BANGDIEUKHIENDOIHINHCOBAN with CauTrucThucThiCoBan, DanhSachQuanL
       await trangThai?.getMoHinh?.caiDatSuKienVaChamTrongChienDau(value: getSuKienVaChamTrongChienDau);
 
       await trangThai?.getMoHinh?.onCaiDatDichVuThanhTichChienDau(value: getDichVuThanhTichChienDau);
+      await trangThai?.getMoHinh?.onCaiDatTaiNguyenTraoDoiTongQuat(value: getTaiNguyenTraoDoiTongQuat);
+      await trangThai?.getMoHinh?.onCaiDatDichVuMayPhatAmThanh(value: getDichVuMayPhatAmThanh);
 
       await trangThai?.getMoHinh?.onCaiDatViTriChienDauCo(value: getViTriChienDauCo);
     }
@@ -561,6 +567,8 @@ abstract class BANGDIEUKHIENDOIHINHCOBAN with CauTrucThucThiCoBan, DanhSachQuanL
       await trangThai?.getMoHinh?.caiDatSuKienVaChamTrongChienDau(value: getSuKienVaChamTrongChienDau);
 
       await trangThai?.getMoHinh?.onCaiDatDichVuThanhTichChienDau(value: getDichVuThanhTichChienDau);
+      await trangThai?.getMoHinh?.onCaiDatTaiNguyenTraoDoiTongQuat(value: getTaiNguyenTraoDoiTongQuat);
+      await trangThai?.getMoHinh?.onCaiDatDichVuMayPhatAmThanh(value: getDichVuMayPhatAmThanh);
 
       await trangThai?.getMoHinh?.onCaiDatViTriChienDauCo(value: getViTriChienDauCo);
     }

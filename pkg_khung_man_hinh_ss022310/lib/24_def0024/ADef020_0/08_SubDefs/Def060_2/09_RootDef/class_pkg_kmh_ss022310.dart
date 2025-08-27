@@ -74,6 +74,8 @@ import 'package:pkg_khung_man_hinh_ss022310/22_def0022/ADef060_0/08_SubDefs/Def0
 import 'package:pkg_khung_man_hinh_ss022310/22_def0022/ADef060_0/08_SubDefs/Def060_2/08_SubDefs/Def200_4/08_SubDefs/Def050_6/09_RootDef/class_pkg_kmh_ss022310.dart';
 import 'package:pkg_khung_man_hinh_ss022310/22_def0022/ADef060_0/08_SubDefs/Def060_2/08_SubDefs/Def200_4/08_SubDefs/Def060_6/09_RootDef/class_pkg_kmh_ss022310.dart';
 
+import 'package:pkg_khung_man_hinh_ss022310/22_def0022/ADef030_0/08_SubDefs/Def030_2/08_SubDefs/Def040_4/09_RootDef/class_pkg_kmh_ss022310.dart';
+
 /// -----
 /// TODO: Quản Lý Thành Phần Tích Hợp
 /// -----
@@ -115,6 +117,22 @@ class QUANLYTHANHPHANTICHHOPTHUOCCAP extends QUANLYTHANHPHANTICHHOPTHUOCCAPCOBAN
       _nutBamChuyenChonChiDinhPhai = value;
     } else {
       _nutBamChuyenChonChiDinhPhai ??= value;
+    }
+
+    ///
+    return;
+  }
+
+  /// -----
+  /// TODO:
+  /// -----
+  NUTBAMCHONSUDUNGCHIENDAUCO? _nutBamChonSuDungChienDauCo;
+  NUTBAMCHONSUDUNGCHIENDAUCO? get getNutBamChonSuDungChienDauCo => _nutBamChonSuDungChienDauCo;
+  Future<void> onCaiDatNutBamChonSuDungChienDauCo({required NUTBAMCHONSUDUNGCHIENDAUCO? value, bool? caiDatUuTien}) async {
+    if (caiDatUuTien == true) {
+      _nutBamChonSuDungChienDauCo = value;
+    } else {
+      _nutBamChonSuDungChienDauCo ??= value;
     }
 
     ///
@@ -1228,6 +1246,9 @@ class QUANLYTHANHPHANTICHHOPTHUOCCAP extends QUANLYTHANHPHANTICHHOPTHUOCCAPCOBAN
         onAddComponent(flameGame: null, parentComponent: component, childComponent: getKHUNGNUTBAMMUACHIENDAUCOCHONCHIDINHDANGCAPSAOSSS10SS05).catchError((e) => null),
 
         ///
+        onAddComponent(flameGame: null, parentComponent: component, childComponent: getNutBamChonSuDungChienDauCo).catchError((e) => null),
+
+        ///
         onAddComponent(flameGame: null, parentComponent: component, childComponent: getKhungDcsChienDauCo00E03SS01).catchError((e) => null),
         onAddComponent(flameGame: null, parentComponent: component, childComponent: getKhungDcsChienDauCo00E03SS02).catchError((e) => null),
         onAddComponent(flameGame: null, parentComponent: component, childComponent: getKhungDcsChienDauCo00E03SS03).catchError((e) => null),
@@ -1328,6 +1349,9 @@ class QUANLYTHANHPHANTICHHOPTHUOCCAP extends QUANLYTHANHPHANTICHHOPTHUOCCAPCOBAN
         getKHUNGNUTBAMMUACHIENDAUCOCHONCHIDINHDANGCAPSAOSSS10SS03?.onAddRoot(flameGame: null, component: component).catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onAddRootForSubCom'),
         getKHUNGNUTBAMMUACHIENDAUCOCHONCHIDINHDANGCAPSAOSSS10SS04?.onAddRoot(flameGame: null, component: component).catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onAddRootForSubCom'),
         getKHUNGNUTBAMMUACHIENDAUCOCHONCHIDINHDANGCAPSAOSSS10SS05?.onAddRoot(flameGame: null, component: component).catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onAddRootForSubCom'),
+
+        ///
+        getNutBamChonSuDungChienDauCo?.onAddRoot(flameGame: null, component: component).catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onAddRootForSubCom'),
 
         ///
         getKhungDcsChienDauCo00E03SS01?.onAddRoot(flameGame: null, component: component).catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onAddRootForSubCom'),
@@ -2222,6 +2246,22 @@ class QUANLYTHANHPHANTICHHOPTHUOCCAP extends QUANLYTHANHPHANTICHHOPTHUOCCAPCOBAN
           caiDatUuTien: true,
         ).catchError((e) => null),
 
+        onCaiDatNutBamChonSuDungChienDauCo(
+          value: NUTBAMCHONSUDUNGCHIENDAUCO(
+            globalStateManagementSystem: getGlobalStateManagementSystem,
+            gameController: getGameController,
+            thanhPhanQuanLyThuocCapTrucTiep: getThanhPhanQuanLyThuocCapTrucTiep,
+            sizeDx: 90.0,
+            sizeDy: 30.0,
+            positionDx: sizeDxKhungManHinh - ((sizeDxCost / 2.0) + 15.0),
+            positionDy: sizeDyKhungManHinh - (donViChieuRong * 8.5),
+            onTapCancelEvent: null,
+            onTapDownEvent: null,
+            onTapUpEvent: null,
+          ),
+          caiDatUuTien: true,
+        ).catchError((e) => null),
+
         ///
         ///
         ///
@@ -2570,6 +2610,9 @@ class QUANLYTHANHPHANTICHHOPTHUOCCAP extends QUANLYTHANHPHANTICHHOPTHUOCCAPCOBAN
         getKHUNGNUTBAMMUACHIENDAUCOCHONCHIDINHDANGCAPSAOSSS10SS05?.onSetupRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onSetupRootForSubCom'),
 
         ///
+        getNutBamChonSuDungChienDauCo?.onSetupRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onSetupRootForSubCom'),
+
+        ///
         getKhungDcsChienDauCo00E03SS01?.onSetupRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onSetupRootForSubCom'),
         getKhungDcsChienDauCo00E03SS02?.onSetupRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onSetupRootForSubCom'),
         getKhungDcsChienDauCo00E03SS03?.onSetupRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onSetupRootForSubCom'),
@@ -2669,6 +2712,9 @@ class QUANLYTHANHPHANTICHHOPTHUOCCAP extends QUANLYTHANHPHANTICHHOPTHUOCCAPCOBAN
         getKHUNGNUTBAMMUACHIENDAUCOCHONCHIDINHDANGCAPSAOSSS10SS05?.onInitRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onInitRootForSubCom'),
 
         ///
+        getNutBamChonSuDungChienDauCo?.onInitRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onInitRootForSubCom'),
+
+        ///
         getKhungDcsChienDauCo00E03SS01?.onInitRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onInitRootForSubCom'),
         getKhungDcsChienDauCo00E03SS02?.onInitRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onInitRootForSubCom'),
         getKhungDcsChienDauCo00E03SS03?.onInitRoot().catchError((e) => null) ?? onReportRootIssue(nameFunction: 'onInitRootForSubCom'),
@@ -2696,6 +2742,8 @@ class QUANLYTHANHPHANTICHHOPTHUOCCAP extends QUANLYTHANHPHANTICHHOPTHUOCCAPCOBAN
 
     await getNutBamChuyenChonChiDinhTrai?.onKichHoatThanhPhanThuocCap();
     await getNutBamChuyenChonChiDinhPhai?.onKichHoatThanhPhanThuocCap();
+
+    await getNutBamChonSuDungChienDauCo?.onKichHoatThanhPhanThuocCap();
 
     // /// -----
     // /// TODO: Chọn Mặc Định

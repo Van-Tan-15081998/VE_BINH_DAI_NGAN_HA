@@ -28,7 +28,7 @@ class ChienDauCoDangCapSao0SS09SS01 extends MoHinhChienDauCoDangCapSao0SS09 {
     await caiDatThuocTinhChienDauTheoQuyChuan(value: THUOCTINHCHIENDAUTHEOQUYCHUAN0SS09SS010(), caiDatUuTien: true);
     await getThuocTinhChienDauTheoQuyChuan?.onSetupRoot();
 
-    await caiDatMaDinhDanhChienDauCo(value: maDinhDanhChienDauCo);
+    await caiDatMaDinhDanhChienDauCo(value: getMaDinhDanhChienDauCo);
 
     /// -----
     /// TODO: Cài Đặt Kích Thước
@@ -82,6 +82,7 @@ class ChienDauCoDangCapSao0SS09SS01 extends MoHinhChienDauCoDangCapSao0SS09 {
     getThuocTinh?.getThuocTinhTanCong?.onVoidCaiDatMaDinhDanhHinhThucDuongBayVienDanDacHuu(value: '[HINH_THUC_SS090]');
 
 
+    getThuocTinh?.caiDatMaDinhDanhChienDauCo(value: '[0SS09SS01]', caiDatUuTien: true);
     getThuocTinh?.caiDatTenChienDauCo(value: '0SS09SS01', caiDatUuTien: true);
     getThuocTinh?.caiDatMaDinhDanhDangCapSao(value: '[0SS09SS01]', caiDatUuTien: true);
 
@@ -97,7 +98,8 @@ class ChienDauCoDangCapSao0SS09SS01 extends MoHinhChienDauCoDangCapSao0SS09 {
     return;
   }
 
-  static const String maDinhDanhChienDauCo = '${MoHinhChienDauCoDangCapSao0SS09.maDinhDanhDangCapSao}_[DANG_CAP_SAO_0SS09_SS01]';
+  String get getMaDinhDanhChienDauCo => _maDinhDanhChienDauCo;
+String _maDinhDanhChienDauCo = '[0SS09SS01]';
 
   /// -----
   /// TODO:

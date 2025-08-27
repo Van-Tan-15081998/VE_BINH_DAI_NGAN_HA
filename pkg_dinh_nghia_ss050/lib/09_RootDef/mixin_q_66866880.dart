@@ -3,6 +3,7 @@ import 'package:pkg_dinh_nghia_ss032/pkg_dinh_nghia_ss032_exp.dart';
 import 'package:pkg_dinh_nghia_ss050/pkg_dinh_nghia_ss050_exp.dart';
 import 'package:pkg_dinh_nghia_ss054/pkg_dinh_nghia_ss054_exp.dart';
 import 'package:pkg_dinh_nghia_dv_ss0020/pkg_dinh_nghia_dv_ss0020_exp.dart';
+import 'package:pkg_dinh_nghia_dv_ss0030/pkg_dinh_nghia_dv_ss0030_exp.dart';
 import 'package:pkg_dinh_nghia_dv_ss0060/pkg_dinh_nghia_dv_ss0060_exp.dart';
 import 'package:pkg_dinh_nghia_ss030020/pkg_dinh_nghia_ss030020_exp.dart';
 import 'package:pkg_dinh_nghia_ss030050/pkg_dinh_nghia_ss030050_exp.dart';
@@ -164,6 +165,16 @@ mixin DanhSachQuanLyTrangThai {
   QUANLYTRANGTHAIDICHVUTHANHTICHCHIENDAU? get getDichVuThanhTichChienDau => _dichVuThanhTichChienDau;
   Future<void> caiDatDichVuThanhTichChienDau({required QUANLYTRANGTHAIDICHVUTHANHTICHCHIENDAU? value}) async {
     _dichVuThanhTichChienDau ??= value;
+    return;
+  }
+
+  /// -----
+  /// TODO:
+  /// -----
+  QUANLYTRANGTHAITAINGUYENTRAODOIGIATRI? _taiNguyenTraoDoiTongQuat;
+  QUANLYTRANGTHAITAINGUYENTRAODOIGIATRI? get getTaiNguyenTraoDoiTongQuat => _taiNguyenTraoDoiTongQuat;
+  Future<void> caiDatTaiNguyenTraoDoiTongQuat({required QUANLYTRANGTHAITAINGUYENTRAODOIGIATRI? value}) async {
+    _taiNguyenTraoDoiTongQuat ??= value;
     return;
   }
 

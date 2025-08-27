@@ -31,10 +31,10 @@ class QUANLYTONGKHOTAINGUYENTRAODOIGIATRI with CauTrucThucThiCoBan {
     /// -----
     /// TODO: Khởi Tạo Cấp Tài Nguyên Phục Vụ Thử Nghiệm
     /// -----
-    await getKhoTaiNguyenDongVang?.getGoiTaiNguyenChuanHienHanh?.getGoiTaiNguyenChuanChinhThuc?.getDonViSoLuong?.caiDatTongSoLuong(
-      value: 500000,
-      caiDatUuTien: true,
-    );
+    // await getKhoTaiNguyenDongVang?.getGoiTaiNguyenChuanHienHanh?.getGoiTaiNguyenChuanChinhThuc?.getDonViSoLuong?.caiDatTongSoLuong(
+    //   value: 500000,
+    //   caiDatUuTien: true,
+    // );
     await getKhoTaiNguyenDongNgoc?.getGoiTaiNguyenChuanHienHanh?.getGoiTaiNguyenChuanChinhThuc?.getDonViSoLuong?.caiDatTongSoLuong(
       value: 1000,
       caiDatUuTien: true,
@@ -92,6 +92,9 @@ class QUANLYTONGKHOTAINGUYENTRAODOIGIATRI with CauTrucThucThiCoBan {
   /// -----
   @override
   Future<void> onAttachRootForSubCom({required dynamic attachValue}) async {
+
+    await getKhoTaiNguyenDongVang?.onAttachRoot(attachValue: attachValue);
+
     ///
     return;
   }

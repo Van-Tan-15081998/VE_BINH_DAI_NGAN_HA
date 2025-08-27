@@ -6,12 +6,24 @@ import 'package:pkg_dinh_nghia_ss050/pkg_dinh_nghia_ss050_exp.dart';
 /// -----
 class QuanLyTrangThaiChienDauCoTongQuat with KhungThucThiCoBan {
   /// -----
+  /// TODO:
+  /// -----
+  QuanLyTrangThaiHangarChienDauCoTongQuat? _hangarChienDauCoTongQuat;
+  QuanLyTrangThaiHangarChienDauCoTongQuat? get getHangarChienDauCoTongQuat => _hangarChienDauCoTongQuat;
+  Future<void> caiDatHangarChienDauCoTongQuat({required QuanLyTrangThaiHangarChienDauCoTongQuat? value}) async {
+    _hangarChienDauCoTongQuat ??= value;
+    return;
+  }
+
+  /// -----
   /// TODO: Attach Root
   /// -----
   @override
   Future<void> onAttachRoot({required dynamic attachValue}) async {
     if (attachValue is GlobalStateManagementSystem) {
       ///
+
+      caiDatHangarChienDauCoTongQuat(value: attachValue.getHangarChienDauCoTongQuat);
     }
 
     /// -----
@@ -111,6 +123,73 @@ class QuanLyTrangThaiChienDauCoTongQuat with KhungThucThiCoBan {
     await getDieuKhienDiChuyenChienDauCo?.onInitRoot();
 
     await getChienDauCoChiDinhThucThiThongTin?.onInitRoot();
+    await getChienDauCoChiDinhThucThiThongTin?.onDongBoHoaBanGhiDuLieu();
+
+    if (getChienDauCoChiDinhThucThiThongTin?.getMaDinhDanhChienDauCoChonSuDung == getHangarChienDauCoTongQuat?.getChienDauCoDangCapSao00E03SS01?.getMaDinhDanhChienDauCo) {
+      ///
+      await getChienDauCoChiDinhThucThiThongTin?.getTrangThaiChienDauCoChonSuDungChienDau?.caiDatMoHinh(value: getHangarChienDauCoTongQuat?.getChienDauCoDangCapSao00E03SS01);
+      await getChienDauCoChiDinhThucThiThongTin?.getTrangThai?.caiDatMoHinh(value: getHangarChienDauCoTongQuat?.getChienDauCoDangCapSao00E03SS01);
+    } else if (getChienDauCoChiDinhThucThiThongTin?.getMaDinhDanhChienDauCoChonSuDung == getHangarChienDauCoTongQuat?.getChienDauCoDangCapSao00E03SS02?.getMaDinhDanhChienDauCo) {
+      ///
+      await getChienDauCoChiDinhThucThiThongTin?.getTrangThaiChienDauCoChonSuDungChienDau?.caiDatMoHinh(value: getHangarChienDauCoTongQuat?.getChienDauCoDangCapSao00E03SS02);
+      await getChienDauCoChiDinhThucThiThongTin?.getTrangThai?.caiDatMoHinh(value: getHangarChienDauCoTongQuat?.getChienDauCoDangCapSao00E03SS02);
+    } else if (getChienDauCoChiDinhThucThiThongTin?.getMaDinhDanhChienDauCoChonSuDung == getHangarChienDauCoTongQuat?.getChienDauCoDangCapSao00E03SS03?.getMaDinhDanhChienDauCo) {
+      ///
+      await getChienDauCoChiDinhThucThiThongTin?.getTrangThaiChienDauCoChonSuDungChienDau?.caiDatMoHinh(value: getHangarChienDauCoTongQuat?.getChienDauCoDangCapSao00E03SS03);
+      await getChienDauCoChiDinhThucThiThongTin?.getTrangThai?.caiDatMoHinh(value: getHangarChienDauCoTongQuat?.getChienDauCoDangCapSao00E03SS03);
+    } else if (getChienDauCoChiDinhThucThiThongTin?.getMaDinhDanhChienDauCoChonSuDung == getHangarChienDauCoTongQuat?.getChienDauCoDangCapSao00D04SS01?.getMaDinhDanhChienDauCo) {
+      ///
+      await getChienDauCoChiDinhThucThiThongTin?.getTrangThaiChienDauCoChonSuDungChienDau?.caiDatMoHinh(value: getHangarChienDauCoTongQuat?.getChienDauCoDangCapSao00D04SS01);
+      await getChienDauCoChiDinhThucThiThongTin?.getTrangThai?.caiDatMoHinh(value: getHangarChienDauCoTongQuat?.getChienDauCoDangCapSao00D04SS01);
+    } else if (getChienDauCoChiDinhThucThiThongTin?.getMaDinhDanhChienDauCoChonSuDung == getHangarChienDauCoTongQuat?.getChienDauCoDangCapSao00C05SS01?.getMaDinhDanhChienDauCo) {
+      ///
+      await getChienDauCoChiDinhThucThiThongTin?.getTrangThaiChienDauCoChonSuDungChienDau?.caiDatMoHinh(value: getHangarChienDauCoTongQuat?.getChienDauCoDangCapSao00C05SS01);
+      await getChienDauCoChiDinhThucThiThongTin?.getTrangThai?.caiDatMoHinh(value: getHangarChienDauCoTongQuat?.getChienDauCoDangCapSao00C05SS01);
+    } else if (getChienDauCoChiDinhThucThiThongTin?.getMaDinhDanhChienDauCoChonSuDung == getHangarChienDauCoTongQuat?.getChienDauCoDangCapSao00B06SS01?.getMaDinhDanhChienDauCo) {
+      ///
+      await getChienDauCoChiDinhThucThiThongTin?.getTrangThaiChienDauCoChonSuDungChienDau?.caiDatMoHinh(value: getHangarChienDauCoTongQuat?.getChienDauCoDangCapSao00B06SS01);
+      await getChienDauCoChiDinhThucThiThongTin?.getTrangThai?.caiDatMoHinh(value: getHangarChienDauCoTongQuat?.getChienDauCoDangCapSao00B06SS01);
+    } else if (getChienDauCoChiDinhThucThiThongTin?.getMaDinhDanhChienDauCoChonSuDung == getHangarChienDauCoTongQuat?.getChienDauCoDangCapSao00A07SS01?.getMaDinhDanhChienDauCo) {
+      ///
+      await getChienDauCoChiDinhThucThiThongTin?.getTrangThaiChienDauCoChonSuDungChienDau?.caiDatMoHinh(value: getHangarChienDauCoTongQuat?.getChienDauCoDangCapSao00A07SS01);
+      await getChienDauCoChiDinhThucThiThongTin?.getTrangThai?.caiDatMoHinh(value: getHangarChienDauCoTongQuat?.getChienDauCoDangCapSao00A07SS01);
+    } else if (getChienDauCoChiDinhThucThiThongTin?.getMaDinhDanhChienDauCoChonSuDung == getHangarChienDauCoTongQuat?.getChienDauCoDangCapSao00S08SS01?.getMaDinhDanhChienDauCo) {
+      ///
+      await getChienDauCoChiDinhThucThiThongTin?.getTrangThaiChienDauCoChonSuDungChienDau?.caiDatMoHinh(value: getHangarChienDauCoTongQuat?.getChienDauCoDangCapSao00S08SS01);
+      await getChienDauCoChiDinhThucThiThongTin?.getTrangThai?.caiDatMoHinh(value: getHangarChienDauCoTongQuat?.getChienDauCoDangCapSao00S08SS01);
+    } else if (getChienDauCoChiDinhThucThiThongTin?.getMaDinhDanhChienDauCoChonSuDung == getHangarChienDauCoTongQuat?.getChienDauCoDangCapSao0SS09SS01?.getMaDinhDanhChienDauCo) {
+      ///
+      await getChienDauCoChiDinhThucThiThongTin?.getTrangThaiChienDauCoChonSuDungChienDau?.caiDatMoHinh(value: getHangarChienDauCoTongQuat?.getChienDauCoDangCapSao0SS09SS01);
+      await getChienDauCoChiDinhThucThiThongTin?.getTrangThai?.caiDatMoHinh(value: getHangarChienDauCoTongQuat?.getChienDauCoDangCapSao0SS09SS01);
+    } else if (getChienDauCoChiDinhThucThiThongTin?.getMaDinhDanhChienDauCoChonSuDung == getHangarChienDauCoTongQuat?.getChienDauCoDangCapSao0SS09SS02?.getMaDinhDanhChienDauCo) {
+      ///
+      await getChienDauCoChiDinhThucThiThongTin?.getTrangThaiChienDauCoChonSuDungChienDau?.caiDatMoHinh(value: getHangarChienDauCoTongQuat?.getChienDauCoDangCapSao0SS09SS02);
+      await getChienDauCoChiDinhThucThiThongTin?.getTrangThai?.caiDatMoHinh(value: getHangarChienDauCoTongQuat?.getChienDauCoDangCapSao0SS09SS02);
+    } else if (getChienDauCoChiDinhThucThiThongTin?.getMaDinhDanhChienDauCoChonSuDung == getHangarChienDauCoTongQuat?.getChienDauCoDangCapSao0SS09SS03?.getMaDinhDanhChienDauCo) {
+      ///
+      await getChienDauCoChiDinhThucThiThongTin?.getTrangThaiChienDauCoChonSuDungChienDau?.caiDatMoHinh(value: getHangarChienDauCoTongQuat?.getChienDauCoDangCapSao0SS09SS03);
+      await getChienDauCoChiDinhThucThiThongTin?.getTrangThai?.caiDatMoHinh(value: getHangarChienDauCoTongQuat?.getChienDauCoDangCapSao0SS09SS03);
+    } else if (getChienDauCoChiDinhThucThiThongTin?.getMaDinhDanhChienDauCoChonSuDung == getHangarChienDauCoTongQuat?.getChienDauCoDangCapSaoSSS10SS01?.getMaDinhDanhChienDauCo) {
+      ///
+      await getChienDauCoChiDinhThucThiThongTin?.getTrangThaiChienDauCoChonSuDungChienDau?.caiDatMoHinh(value: getHangarChienDauCoTongQuat?.getChienDauCoDangCapSaoSSS10SS01);
+      await getChienDauCoChiDinhThucThiThongTin?.getTrangThai?.caiDatMoHinh(value: getHangarChienDauCoTongQuat?.getChienDauCoDangCapSaoSSS10SS01);
+    } else if (getChienDauCoChiDinhThucThiThongTin?.getMaDinhDanhChienDauCoChonSuDung == getHangarChienDauCoTongQuat?.getChienDauCoDangCapSaoSSS10SS02?.getMaDinhDanhChienDauCo) {
+      ///
+      await getChienDauCoChiDinhThucThiThongTin?.getTrangThaiChienDauCoChonSuDungChienDau?.caiDatMoHinh(value: getHangarChienDauCoTongQuat?.getChienDauCoDangCapSaoSSS10SS02);
+      await getChienDauCoChiDinhThucThiThongTin?.getTrangThai?.caiDatMoHinh(value: getHangarChienDauCoTongQuat?.getChienDauCoDangCapSaoSSS10SS02);
+    } else if (getChienDauCoChiDinhThucThiThongTin?.getMaDinhDanhChienDauCoChonSuDung == getHangarChienDauCoTongQuat?.getChienDauCoDangCapSaoSSS10SS03?.getMaDinhDanhChienDauCo) {
+      ///
+      await getChienDauCoChiDinhThucThiThongTin?.getTrangThaiChienDauCoChonSuDungChienDau?.caiDatMoHinh(value: getHangarChienDauCoTongQuat?.getChienDauCoDangCapSaoSSS10SS03);
+      await getChienDauCoChiDinhThucThiThongTin?.getTrangThai?.caiDatMoHinh(value: getHangarChienDauCoTongQuat?.getChienDauCoDangCapSaoSSS10SS03);
+    } else if (getChienDauCoChiDinhThucThiThongTin?.getMaDinhDanhChienDauCoChonSuDung == getHangarChienDauCoTongQuat?.getChienDauCoDangCapSaoSSS10SS04?.getMaDinhDanhChienDauCo) {
+      ///
+      await getChienDauCoChiDinhThucThiThongTin?.getTrangThaiChienDauCoChonSuDungChienDau?.caiDatMoHinh(value: getHangarChienDauCoTongQuat?.getChienDauCoDangCapSaoSSS10SS04);
+      await getChienDauCoChiDinhThucThiThongTin?.getTrangThai?.caiDatMoHinh(value: getHangarChienDauCoTongQuat?.getChienDauCoDangCapSaoSSS10SS04);
+    } else if (getChienDauCoChiDinhThucThiThongTin?.getMaDinhDanhChienDauCoChonSuDung == getHangarChienDauCoTongQuat?.getChienDauCoDangCapSaoSSS10SS05?.getMaDinhDanhChienDauCo) {
+      ///
+      await getChienDauCoChiDinhThucThiThongTin?.getTrangThaiChienDauCoChonSuDungChienDau?.caiDatMoHinh(value: getHangarChienDauCoTongQuat?.getChienDauCoDangCapSaoSSS10SS05);
+      await getChienDauCoChiDinhThucThiThongTin?.getTrangThai?.caiDatMoHinh(value: getHangarChienDauCoTongQuat?.getChienDauCoDangCapSaoSSS10SS05);
+    }
 
     return;
   }

@@ -14,7 +14,7 @@ class ChienDauCoDangCapSao00C05SS03 extends MoHinhChienDauCoDangCapSao00C05 {
   Future<void> onSetupRoot() async {
     await super.onSetupRoot();
 
-    await caiDatMaDinhDanhChienDauCo(value: maDinhDanhChienDauCo);
+    await caiDatMaDinhDanhChienDauCo(value: getMaDinhDanhChienDauCo);
 
     /// -----
     /// TODO: Cài Đặt Kích Thước

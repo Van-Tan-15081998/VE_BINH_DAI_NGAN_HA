@@ -36,6 +36,19 @@ export '26_def0026/ADef20_0/08_SubDefs/Def42_2/09_RootDef/class_20002208.dart';
 /// TODO: 0_____[THUOC_TINH_AM_THANH_HIEU_UNG_QUA_TRINH_CHIEN_DAU]_____
 export '26_def0026/ADef20_0/08_SubDefs/Def50_2/09_RootDef/class_20002208.dart';
 
+/// TODO:
+export '26_def0026/ADef20_0/08_SubDefs/Def60_2/09_RootDef/class_20002208.dart';
+
+/// TODO:
+export '26_def0026/ADef20_0/08_SubDefs/Def62_2/09_RootDef/class_20002208.dart';
+
+/// TODO:
+export '26_def0026/ADef20_0/08_SubDefs/Def70_2/09_RootDef/class_20002208.dart';
+
+/// TODO:
+export '26_def0026/ADef20_0/08_SubDefs/Def72_2/09_RootDef/class_20002208.dart';
+
+
 /// TODO: _____[THUOC_TINH_HIEU_UNG_AM_THANH_CHIEN_DAU_CO]_____
 export '26_def0026/ADef30_0/09_RootDef/class_20002828.dart';
 
