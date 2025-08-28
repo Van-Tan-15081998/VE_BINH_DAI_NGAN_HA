@@ -2,6 +2,7 @@ import 'package:flame/components.dart';
 import 'package:flame/game.dart';
 import 'package:pkg_khung_man_hinh_ss020000/pkg_khung_man_hinh_ss020000_exp.dart';
 import 'package:pkg_khung_man_hinh_ss022400/22_def0022/ADef040_0/08_SubDefs/Def020_2/09_RootDef/class_pkg_kmh_ss022400.dart';
+import 'package:pkg_khung_man_hinh_ss022400/22_def0022/ADef040_0/08_SubDefs/Def022_2/09_RootDef/class_pkg_kmh_ss022400.dart';
 
 /// -----
 /// TODO: Quản Lý Thành Phần Văn Bản Thuộc Cấp
@@ -38,6 +39,23 @@ class QUANLYTHANHPHANVANBANTHUOCCAP extends QUANLYTHANHPHANVANBANTHUOCCAPCOBAN {
     return;
   }
 
+  VANBANMOKHOAKHUNGMANHINH? _vanBanMoKhoaKhungManHinh;
+  VANBANMOKHOAKHUNGMANHINH? get getVanBanMoKhoaKhungManHinh =>
+      _vanBanMoKhoaKhungManHinh;
+  Future<void> onCaiDatVanBanMoKhoaKhungManHinh({
+    required VANBANMOKHOAKHUNGMANHINH? value,
+    bool? caiDatUuTien,
+  }) async {
+    if (caiDatUuTien == true) {
+      _vanBanMoKhoaKhungManHinh = value;
+    } else {
+      _vanBanMoKhoaKhungManHinh ??= value;
+    }
+
+    ///
+    return;
+  }
+
   /// -----
   /// TODO: Add Comp Root
   /// -----
@@ -51,6 +69,11 @@ class QUANLYTHANHPHANVANBANTHUOCCAP extends QUANLYTHANHPHANVANBANTHUOCCAPCOBAN {
         flameGame: null,
         parentComponent: component,
         childComponent: getVanBanDinhDanhKhungManHinh,
+      ).catchError((e) => null),
+      onAddComponent(
+        flameGame: null,
+        parentComponent: component,
+        childComponent: getVanBanMoKhoaKhungManHinh,
       ).catchError((e) => null),
     ]);
 
@@ -75,6 +98,10 @@ class QUANLYTHANHPHANVANBANTHUOCCAP extends QUANLYTHANHPHANVANBANTHUOCCAPCOBAN {
       getVanBanDinhDanhKhungManHinh
               ?.onAddRoot(flameGame: null, component: component)
               .catchError((e) => null) ??
+          onReportRootIssue(nameFunction: ''),
+      getVanBanMoKhoaKhungManHinh
+          ?.onAddRoot(flameGame: null, component: component)
+          .catchError((e) => null) ??
           onReportRootIssue(nameFunction: ''),
     ]);
 
@@ -105,6 +132,19 @@ class QUANLYTHANHPHANVANBANTHUOCCAP extends QUANLYTHANHPHANVANBANTHUOCCAPCOBAN {
         ),
         caiDatUuTien: true,
       ).catchError((e) => null),
+
+      onCaiDatVanBanMoKhoaKhungManHinh(
+        value: VANBANMOKHOAKHUNGMANHINH(
+          globalStateManagementSystem: getGlobalStateManagementSystem,
+          gameController: getGameController,
+          thanhPhanQuanLyThuocCapTrucTiep: getThanhPhanQuanLyThuocCapTrucTiep,
+          sizeDx: sizeDxManHinhVatLy,
+          sizeDy: sizeDyManHinhVatLy,
+          positionDx: sizeDxManHinhVatLy / 2,
+          positionDy: sizeDyManHinhVatLy / 2,
+        ),
+        caiDatUuTien: true,
+      ).catchError((e) => null),
     ]);
 
     /// -----
@@ -112,6 +152,8 @@ class QUANLYTHANHPHANVANBANTHUOCCAP extends QUANLYTHANHPHANVANBANTHUOCCAPCOBAN {
     /// -----
     await Future.wait([
       getVanBanDinhDanhKhungManHinh?.onSetupRoot().catchError((e) => null) ??
+          onReportRootIssue(nameFunction: ''),
+      getVanBanMoKhoaKhungManHinh?.onSetupRoot().catchError((e) => null) ??
           onReportRootIssue(nameFunction: ''),
     ]);
 
@@ -131,6 +173,8 @@ class QUANLYTHANHPHANVANBANTHUOCCAP extends QUANLYTHANHPHANVANBANTHUOCCAPCOBAN {
     /// -----
     await Future.wait([
       getVanBanDinhDanhKhungManHinh?.onInitRoot().catchError((e) => null) ??
+          onReportRootIssue(nameFunction: ''),
+      getVanBanMoKhoaKhungManHinh?.onInitRoot().catchError((e) => null) ??
           onReportRootIssue(nameFunction: ''),
     ]);
 

@@ -3,15 +3,15 @@ import 'package:pkg_khung_man_hinh_ss020000/pkg_khung_man_hinh_ss020000_exp.dart
 /// -----
 /// TODO: Văn Bản Định Danh Khung Màn Hình
 /// -----
-class VANBANDINHDANHKHUNGMANHINH extends THANHPHANVANBANTHUANTHUOCCAP {
+class VANBANMOKHOAKHUNGMANHINH extends THANHPHANVANBANTHUANTHUOCCAP {
   /// -----
   /// TODO:
   /// -----
-  VANBANDINHDANHKHUNGMANHINH({
-    required super.globalStateManagementSystem, //
+  VANBANMOKHOAKHUNGMANHINH({
+    required super.globalStateManagementSystem,
     required super.gameController,
     required super.thanhPhanQuanLyThuocCapTrucTiep,
-    required super.sizeDx, //
+    required super.sizeDx,
     required super.sizeDy, //
     required super.positionDx, //
     required super.positionDy, //
@@ -19,7 +19,7 @@ class VANBANDINHDANHKHUNGMANHINH extends THANHPHANVANBANTHUANTHUOCCAP {
 
   @override
   Future<void> onCaiDatChiTietThanhPhanVanBan() async {
-    onVoidCaiDatVanBan(value: 'Đang tải...', caiDatUuTien: true);
+    onVoidCaiDatVanBan(value: 'Đạt cấp độ 10 để mở khóa', caiDatUuTien: true);
 
     return;
   }

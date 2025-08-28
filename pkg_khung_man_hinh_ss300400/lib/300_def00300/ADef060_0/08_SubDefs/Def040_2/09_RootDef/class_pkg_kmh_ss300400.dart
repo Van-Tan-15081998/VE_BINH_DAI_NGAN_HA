@@ -35,9 +35,9 @@ class NGOISAOTHANHTICHCHIENDAUSS020 extends THANHPHANNUTBAMTICHHOPTHUOCCAP {
 
   @override
   Future<void> onCaiDatChiTietThanhPhanGameUI() async {
-    await onCaiDatThanhPhanGameUIKichHoat(value: GAMEUITHANHTICHNHIEMVUCHIENDAUSS020KICHHOAT(), caiDatUuTien: true);
+    await onCaiDatThanhPhanGameUIKichHoat(value: GAMEUITHANHTICHNHIEMVUCHIENDAUSS020HUYKICHHOAT(), caiDatUuTien: true);
 
-    await onCaiDatThanhPhanGameUIHuyKichHoat(value: GAMEUITHANHTICHNHIEMVUCHIENDAUSS020KICHHOAT(), caiDatUuTien: true);
+    await onCaiDatThanhPhanGameUIHuyKichHoat(value: GAMEUITHANHTICHNHIEMVUCHIENDAUSS020HUYKICHHOAT(), caiDatUuTien: true);
 
     await getThanhPhanGameUIKichHoat?.onSetupRoot();
     await getThanhPhanGameUIHuyKichHoat?.onSetupRoot();

@@ -25,7 +25,6 @@ class NUTBAMSS030000SS010 extends THANHPHANNUTBAMTHUOCCAPTHUANKICHHOAT {
 
   @override
   void onThucThi() async {
-
     await getGlobalStateManagementSystem?.getTienTrinhTongQuat?.getTienTrinhThucThiChienDau?.getTrangThai?.getMoHinh?.caiDatDangTamDungThucThi();
 
     await getGameController?.onKichHoatKhungManHinhThuocCapSS300200();
@@ -49,17 +48,10 @@ class NUTBAMSS030000SS010 extends THANHPHANNUTBAMTHUOCCAPTHUANKICHHOAT {
     return;
   }
 
-
   @override
   Future<void> onCaiDatChiTietThanhPhanGameUI() async {
-    await onCaiDatThanhPhanGameUIKichHoat(
-      value: GAMEUINUTBAMTAMDUNGKICHHOAT(),
-      caiDatUuTien: true,
-    );
-    await onCaiDatThanhPhanGameUIHuyKichHoat(
-      value: GAMEUINUTBAMTAMDUNGHUYKICHHOAT(),
-      caiDatUuTien: true,
-    );
+    await onCaiDatThanhPhanGameUIKichHoat(value: GAMEUINUTBAMTAMDUNGKICHHOAT(), caiDatUuTien: true);
+    await onCaiDatThanhPhanGameUIHuyKichHoat(value: GAMEUINUTBAMTAMDUNGHUYKICHHOAT(), caiDatUuTien: true);
 
     await getThanhPhanGameUIKichHoat?.onSetupRoot();
     await getThanhPhanGameUIHuyKichHoat?.onSetupRoot();
@@ -91,13 +83,18 @@ class NUTBAMSS030000SS010 extends THANHPHANNUTBAMTHUOCCAPTHUANKICHHOAT {
         isVisible = true;
       }
 
-
+      getSpriteAnimationComponentKichHoat?.onVoidCaiDatKiemTraHienThi(value: false);
+      getSpriteAnimationComponentKichHoat2?.onVoidCaiDatKiemTraHienThi(value: false);
+      getSpriteAnimationComponentHuyKichHoat?.onVoidCaiDatKiemTraHienThi(value: true);
 
     } else {
       if (isVisible == true) {
         isVisible = false;
       }
+
+      getSpriteAnimationComponentKichHoat?.onVoidCaiDatKiemTraHienThi(value: true);
+      getSpriteAnimationComponentKichHoat2?.onVoidCaiDatKiemTraHienThi(value: true);
+      getSpriteAnimationComponentHuyKichHoat?.onVoidCaiDatKiemTraHienThi(value: false);
     }
   }
-
 }

@@ -19,7 +19,7 @@ class VANBANDINHDANHKHUNGMANHINH extends THANHPHANVANBANTHUANTHUOCCAP {
 
   @override
   Future<void> onCaiDatChiTietThanhPhanVanBan() async {
-    onVoidCaiDatVanBan(value: 'Mission Loading...', caiDatUuTien: true);
+    onVoidCaiDatVanBan(value: 'Đang tải...', caiDatUuTien: true);
 
     return;
   }

@@ -81,16 +81,17 @@ class VANBANGIATRICHISODIEUKIENNANGCAPCHIENDAUCO extends THANHPHANVANBANTHUANTHU
       }
     } else if (getTrangThai?.getMoHinh?.getThuocTinhSoHuuChienDauCo?.getSoHuuTheoThoiGianVinhVien?.getTrangThaiSoHuuTheoThoiGianVinhVien?.getSoHuu == true) {
       if (getGiaTriChiSoVanHanh !=
-          getTrangThai
-              ?.getMoHinh
-              ?.getThuocTinhChienDauTheoQuyChuan
-              ?.getThuocTinhCapDoChienDauCoTheoQuyChuan
-              ?.getCapDoChienDauCoTheoQuyChuanHienHanh
-              ?.getCapDoNoiSuyTiepTheo
-              ?.getDieuKienNangCap
-              ?.getGoiTaiNguyenThanhToan
-              ?.getDonViSoLuong
-              ?.getTongSoLuong) {
+              getTrangThai
+                  ?.getMoHinh
+                  ?.getThuocTinhChienDauTheoQuyChuan
+                  ?.getThuocTinhCapDoChienDauCoTheoQuyChuan
+                  ?.getCapDoChienDauCoTheoQuyChuanHienHanh
+                  ?.getCapDoNoiSuyTiepTheo
+                  ?.getDieuKienNangCap
+                  ?.getGoiTaiNguyenThanhToan
+                  ?.getDonViSoLuong
+                  ?.getTongSoLuong ||
+          getVanBan?.isEmpty == true) {
         onCaiDatGiaTriChiSoVanHanh(
           value:
               getTrangThai

@@ -389,7 +389,7 @@ class QUANLYTHANHPHANNUTBAMTHUOCCAP extends QUANLYTHANHPHANNUTBAMTHUOCCAPCOBAN {
             onTapDownEvent: null,
             onTapUpEvent: () async {
               // await getGameController?.onHuyKichHoatKhungManHinhThuocCapSS223100();
-              await getGlobalStateManagementSystem?.getChienDauCoTongQuat?.getChienDauCoTrucTiepThucThiChienDau?.getTrangThai?.getMoHinh
+              await getGlobalStateManagementSystem?.getChienDauCoTongQuat?.getChienDauCoChiDinhThucThiThongTin?.getTrangThai?.getMoHinh
                 ?.getThuocTinhChienDauTheoQuyChuan
                 ?.onNangCapCapDoChienDauCoTheoQuyChuan(
                   quanLyTongQuat: getGlobalStateManagementSystem?.getTaiNguyenTraoDoiTongQuat,
